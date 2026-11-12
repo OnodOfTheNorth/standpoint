@@ -1,0 +1,10 @@
+{
+  "name": "@standpoint/ontology",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "CC-BY-SA-4.0",
+  "exports": { ".": "./src/index.ts" },
+  "scripts": { "build": "tsx src/build.ts" },
+  "dependencies": { "@standpoint/core": "workspace:*", "@standpoint/content": "workspace:*" }
+}

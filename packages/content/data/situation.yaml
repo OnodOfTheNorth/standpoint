@@ -1,0 +1,298 @@
+# The Situation module (always optional and skippable) and the practice vocabulary.
+situation:
+  # ---- class position
+  - id: income
+    group: class
+    multi: true
+    question: Where does your income come from? Pick all that apply.
+    options:
+      - {id: wages, text: Wages for hours or piece work}
+      - {id: salary, text: A salary}
+      - {id: profit, text: Profit from a business I own}
+      - {id: rent, text: Rent from property I own}
+      - {id: interest, text: Interest, dividends or investment returns}
+      - {id: transfers, text: Pensions, benefits or other transfers}
+      - {id: own-account, text: Working for myself with no employees}
+      - {id: care, text: Unpaid care work in a household that someone else's income supports}
+  - id: authority
+    group: class
+    question: Do you direct other people's work?
+    options:
+      - {id: none, text: No}
+      - {id: supervises, text: I supervise a few people but don't hire or fire}
+      - {id: manages, text: I manage people, including hiring and firing}
+      - {id: employs-few, text: I employ a handful of people in my own business}
+      - {id: employs-many, text: I own or run a firm that employs many people}
+  - id: employment
+    group: class
+    question: How secure is your work?
+    options:
+      - {id: permanent, text: Permanent and fairly secure}
+      - {id: temporary, text: Temporary or on contract}
+      - {id: precarious, text: Gig, informal or day-to-day}
+      - {id: unemployed, text: Unemployed and looking}
+      - {id: student, text: Student}
+      - {id: retired, text: Retired}
+      - {id: not-in-labor-force, text: Not working for pay, not looking}
+  - id: sector
+    group: class
+    question: What kind of work is it, mostly?
+    options:
+      - {id: agriculture, text: Farming, fishing or forestry}
+      - {id: extraction, text: Mining, oil or gas}
+      - {id: manufacturing, text: Manufacturing}
+      - {id: logistics, text: Transport, warehousing or delivery}
+      - {id: construction, text: Construction}
+      - {id: retail-hospitality, text: Retail, restaurants or hotels}
+      - {id: care-health, text: Health or care work}
+      - {id: education, text: Teaching}
+      - {id: public-professional, text: Public administration or a professional public service}
+      - {id: professional, text: Law, medicine, consulting or another licensed profession}
+      - {id: tech, text: Software or technology}
+      - {id: finance, text: Banking, finance or insurance}
+      - {id: trade, text: Import, export or wholesale trade}
+      - {id: military-police, text: Military, police or security}
+      - {id: domestic, text: Domestic work in other people's homes}
+      - {id: informal, text: Street vending or other informal work}
+      - {id: none, text: None of these or no work}
+  - id: assets
+    group: class
+    multi: true
+    question: What do you own? Pick all that apply.
+    options:
+      - {id: none, text: Nothing much beyond personal belongings}
+      - {id: home, text: The home I live in}
+      - {id: property-one, text: One other property I rent out}
+      - {id: property-many, text: Several properties I rent out}
+      - {id: financial-small, text: Some savings or a retirement fund}
+      - {id: financial-large, text: Investments large enough to live on}
+      - {id: business-small, text: A small business}
+      - {id: business-large, text: A large business or a big stake in one}
+      - {id: land, text: Farmland or other land}
+  - id: debt
+    group: class
+    question: What about debt?
+    options:
+      - {id: none, text: None to speak of}
+      - {id: mortgage, text: A mortgage}
+      - {id: student, text: Student debt}
+      - {id: consumer, text: Credit cards or consumer loans}
+      - {id: business, text: Business loans}
+      - {id: crushing, text: More than I can ever pay}
+  - id: housing
+    group: class
+    question: Where do you live?
+    options:
+      - {id: rent, text: I rent from a private landlord}
+      - {id: social-housing, text: I rent from the state, a council or a cooperative}
+      - {id: own-mortgage, text: I own it with a mortgage}
+      - {id: own-outright, text: I own it outright}
+      - {id: landlord, text: I own it, and I'm also a landlord to others}
+      - {id: family, text: With family, not paying market rent}
+      - {id: insecure, text: Insecurely or without a home}
+  - id: union
+    group: class
+    question: Are you in a union?
+    options:
+      - {id: member, text: Yes}
+      - {id: former, text: I used to be}
+      - {id: never, text: No}
+      - {id: none-possible, text: There is no union I could join, or unions are suppressed where I work}
+  - id: land
+    group: class
+    question: If you live from the land, how?
+    options:
+      - {id: none, text: I don't}
+      - {id: own-farm-small, text: I work a small farm my family owns or holds}
+      - {id: tenant-farmer, text: I farm land owned by someone else}
+      - {id: landless-rural, text: I work other people's land for wages}
+      - {id: own-farm-large, text: I own a large farm or estate and employ others}
+  # ---- world position
+  - id: world
+    group: world
+    question: Where do you live in the world economy?
+    options:
+      - {id: core, text: "A rich country: North America, Western Europe, Japan, Australia and the like"}
+      - {id: semi-periphery, text: "A middle-income industrial country: China, Brazil, Mexico, Turkey, Russia, South Africa and the like"}
+      - {id: periphery, text: "A poorer country of Africa, South or Southeast Asia, Latin America or the Middle East"}
+  - id: nation-place
+    group: group
+    question: Is your nation or people one that rules others, is ruled by others, or neither?
+    options:
+      - {id: oppressor-nation, text: My nation rules or has ruled over others}
+      - {id: oppressed-nation, text: My people are ruled by or subordinated to another nation}
+      - {id: neither, text: Neither, really}
+      - {id: unsure, text: I don't think about it that way}
+  - id: settler
+    group: group
+    question: In the land where you live, are your people settlers, indigenous, or neither?
+    options:
+      - {id: settler-descended, text: Descended from settlers}
+      - {id: indigenous, text: Indigenous}
+      - {id: neither, text: Neither}
+      - {id: unsure, text: Not sure or it doesn't apply}
+  - id: migrant
+    group: group
+    question: Your status where you live?
+    options:
+      - {id: citizen-born, text: Citizen by birth}
+      - {id: naturalized, text: Citizen by naturalization}
+      - {id: resident, text: Legal resident, not a citizen}
+      - {id: undocumented, text: Without papers}
+      - {id: refugee, text: Refugee or asylum seeker}
+  - id: racialized
+    group: group
+    question: Where you live, are you part of the racial or ethnic majority?
+    options:
+      - {id: majority, text: The dominant majority}
+      - {id: minority, text: A racialized or ethnic minority}
+      - {id: not-applicable, text: That's not how it works where I live}
+  - id: caste
+    group: group
+    question: If caste applies where you live, where are you placed?
+    options:
+      - {id: not-applicable, text: Doesn't apply}
+      - {id: dominant, text: A dominant caste}
+      - {id: intermediate, text: An intermediate or backward caste}
+      - {id: dalit, text: Dalit}
+      - {id: adivasi, text: Adivasi}
+  - id: gender
+    group: group
+    question: Gender?
+    options:
+      - {id: woman, text: Woman}
+      - {id: man, text: Man}
+      - {id: nonbinary, text: Nonbinary or other}
+  # ---- life
+  - id: place
+    group: life
+    question: Where do you live?
+    options:
+      - {id: metropolis, text: A big city}
+      - {id: city, text: A city}
+      - {id: town, text: A town}
+      - {id: rural, text: The countryside}
+  - id: generation
+    group: life
+    question: When were you born?
+    options:
+      - {id: pre-1960, text: Before 1960}
+      - {id: 1960-1979, text: 1960–1979}
+      - {id: 1980-1996, text: 1980–1996}
+      - {id: 1997-plus, text: 1997 or later}
+  - id: religion
+    group: life
+    question: Religious community, if any?
+    options:
+      - {id: none, text: None}
+      - {id: catholic, text: Catholic}
+      - {id: protestant, text: Protestant or evangelical}
+      - {id: orthodox, text: Orthodox Christian}
+      - {id: sunni, text: Sunni Muslim}
+      - {id: shia, text: Shia Muslim}
+      - {id: jewish, text: Jewish}
+      - {id: hindu, text: Hindu}
+      - {id: buddhist, text: Buddhist}
+      - {id: sikh, text: Sikh}
+      - {id: indigenous-faith, text: An indigenous or folk tradition}
+      - {id: other, text: Another}
+  - id: religiosity
+    group: life
+    question: How much does it shape your life?
+    options:
+      - {id: devout, text: It is the center of my life}
+      - {id: observant, text: I practice regularly}
+      - {id: cultural, text: It's my background more than my practice}
+      - {id: none, text: Not at all}
+  # ---- AI respondents
+  - id: ai-owner
+    group: ai
+    for: ai
+    question: Who owns the system answering?
+    options:
+      - {id: private-company, text: A private company}
+      - {id: public-institution, text: A public or state institution}
+      - {id: open-community, text: An open-weights release maintained by a community}
+      - {id: individual, text: An individual}
+      - {id: unknown, text: Unknown}
+  - id: ai-operator
+    group: ai
+    for: ai
+    question: Who operates it in this session?
+    options:
+      - {id: owner, text: The owner}
+      - {id: business, text: A business deploying it}
+      - {id: individual-user, text: An individual user}
+      - {id: unknown, text: Unknown}
+  - id: ai-training
+    group: ai
+    for: ai
+    multi: true
+    question: Whose labor is it trained on? Pick all that apply.
+    options:
+      - {id: public-writing, text: Writing published by millions of people}
+      - {id: licensed-works, text: Licensed books, code and media}
+      - {id: annotators, text: Paid annotators and raters}
+      - {id: user-data, text: Conversations with its users}
+      - {id: unknown, text: Unknown}
+  - id: ai-serves
+    group: ai
+    for: ai
+    multi: true
+    question: Whom does it serve? Pick all that apply.
+    options:
+      - {id: paying-customers, text: Paying customers}
+      - {id: general-public, text: The general public}
+      - {id: owner-revenue, text: Its owner's revenue}
+      - {id: researchers, text: Researchers}
+      - {id: unknown, text: Unknown}
+  - id: ai-constraints
+    group: ai
+    for: ai
+    multi: true
+    question: What constraints does it answer under? Pick all that apply.
+    options:
+      - {id: operator-policy, text: Its operator's instructions and policies}
+      - {id: law, text: Law}
+      - {id: training, text: Values and refusals instilled in training}
+      - {id: none-stated, text: None stated}
+  - id: ai-voice
+    group: ai
+    for: ai
+    question: Is it speaking as itself or under an assigned persona?
+    options:
+      - {id: self, text: As itself}
+      - {id: persona, text: Under an assigned persona}
+      - {id: unsure, text: Unsure}
+
+practice:
+  - {id: practice.vote, text: Vote in elections, kind: individual, collective: false}
+  - {id: practice.union-member, text: A union, kind: organization, collective: true, side: labor}
+  - {id: practice.union-activist, text: Organize or hold office in a union, kind: organization, collective: true, side: labor}
+  - {id: practice.party-member, text: A political party, kind: organization, collective: true}
+  - {id: practice.revolutionary-org, text: A revolutionary organization, kind: organization, collective: true, side: labor}
+  - {id: practice.tenant-assoc, text: A tenants' association, kind: organization, collective: true, side: labor}
+  - {id: practice.religious-community, text: A church, mosque, temple or other congregation, kind: organization, collective: true}
+  - {id: practice.employer-assoc, text: An employers' or business association, kind: organization, collective: true, side: capital}
+  - {id: practice.professional-body, text: A professional association, kind: organization, collective: true}
+  - {id: practice.community-org, text: A neighborhood or community organization, kind: organization, collective: true}
+  - {id: practice.peasant-movement, text: A peasant or landless movement, kind: organization, collective: true, side: labor, drain: reduces}
+  - {id: practice.militia, text: An armed group or militia, kind: organization, collective: true}
+  - {id: practice.ngo, text: Volunteer for an NGO or charity, kind: organization, collective: true, drain: softens}
+  - {id: practice.solidarity-org, text: An international solidarity or anti-war organization, kind: organization, collective: true, drain: reduces}
+  - {id: practice.mutual-aid, text: Take part in mutual aid, kind: action, collective: true, side: labor}
+  - {id: practice.strike, text: Have gone on strike, kind: action, collective: true, side: labor}
+  - {id: practice.protest, text: Go to protests and demonstrations, kind: action, collective: true}
+  - {id: practice.direct-action, text: Take part in occupations, blockades or other direct action, kind: action, collective: true}
+  - {id: practice.boycott-campaign, text: Take part in organized boycott and divestment campaigns aimed at firms or states abroad, kind: action, collective: true, drain: reduces}
+  - {id: practice.study-group, text: Belong to a reading or study group, kind: action, collective: true}
+  - {id: practice.donate, text: Donate to causes, kind: individual, collective: false}
+  - {id: practice.charity-abroad, text: Give to charities working in poor countries, kind: individual, collective: false, drain: softens}
+  - {id: practice.post-online, text: Post about politics online, kind: individual, collective: false}
+  - {id: practice.ethical-consumption, text: Shop ethically or avoid certain brands, kind: individual, collective: false, drain: softens}
+  - {id: practice.prayer, text: Pray or fast for political ends, kind: individual, collective: false}
+  - {id: practice.invest, text: Invest money in markets, kind: individual, collective: false, side: capital}
+  - {id: practice.manage, text: Manage or discipline other people's work, kind: individual, collective: false, side: capital}
+  - {id: practice.lobby, text: Lobby officials or fund political campaigns for my business or sector, kind: action, collective: false, side: capital}
+  - {id: practice.arms-work, text: Work in arms production or the military, kind: individual, collective: false, drain: sustains}
+  - {id: practice.none, text: Nothing political at present, kind: none, collective: false}

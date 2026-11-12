@@ -1,0 +1,54 @@
+nodes:
+  - id: probe.class.line
+    type: line
+    title: Who is working class?
+    text: Going down this list, where do you stop calling someone working class?
+    cases:
+      - A warehouse picker on an agency contract
+      - A nurse on a good public salary
+      - A software engineer earning three times the average
+      - A plumber with two employees
+      - A store manager who hires and fires
+      - A retired teacher who rents out one flat
+    why: This asks what class is, by where you draw the line.
+    options:
+      - id: none
+        text: I don't think in terms of class at all.
+        evidence: [{position: class.concept.no-such-thing, w: 3}]
+      - id: one
+        text: Only the first. Class is about how much you earn and how secure it is.
+        evidence: [{position: class.concept.income-strata, w: 3}]
+      - id: three
+        text: The first three. If you sell your labor for a wage or salary, you're working class.
+        evidence: [{position: class.concept.relation-to-production, w: 3}]
+      - id: two
+        text: The first two. High earners and anyone with authority or property are something else.
+        evidence: [{position: class.concept.relation-to-production, w: 2}, {position: class.concept.income-strata, w: 1}]
+      - id: all
+        text: All of them. Everyone who works for a living.
+        evidence: [{position: class.concept.income-strata, w: 1}]
+
+  - id: probe.history.motor
+    type: explanation
+    title: What moved it
+    text: >
+      Slavery ended in the Americas over about eighty years, from Haiti in 1804 to Brazil in 1888. What,
+      above all, ended it?
+    why: This asks what you think moves history, and what kind of cause you reach for.
+    options:
+      - id: revolt
+        text: The enslaved themselves, by revolt, flight and refusal, and the economic interests that turned against slavery.
+        cause: structures
+        evidence: [{position: history.motor.class-struggle, w: 3}]
+      - id: ideas
+        text: A moral idea, that all people are equal, finally won.
+        cause: ideas
+        evidence: [{position: history.motor.ideas, w: 3}]
+      - id: heroes
+        text: Great leaders who forced the issue, such as Toussaint Louverture and Lincoln.
+        cause: individuals
+        evidence: [{position: history.motor.great-individuals, w: 3}]
+      - id: god
+        text: Providence. It was a sin, and it was judged.
+        cause: divine
+        evidence: [{position: history.motor.providence, w: 3}]

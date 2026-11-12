@@ -1,0 +1,24 @@
+{
+  "name": "standpoint",
+  "private": true,
+  "version": "1.0.0",
+  "description": "An instrument that maps a person's whole political being through a branching, adaptive journey and renders the result as a knowledge graph.",
+  "license": "AGPL-3.0-only",
+  "author": "george navarre",
+  "type": "module",
+  "packageManager": "pnpm@9.15.9",
+  "scripts": {
+    "content": "pnpm --filter @standpoint/content build",
+    "lint:content": "pnpm --filter @standpoint/content lint",
+    "build": "pnpm content && pnpm --filter @standpoint/ontology build && pnpm --filter @standpoint/cli build && pnpm --filter @standpoint/mcp build && pnpm --filter @standpoint/web build",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "e2e": "pnpm --filter @standpoint/web e2e"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^3.0.5"
+  }
+}

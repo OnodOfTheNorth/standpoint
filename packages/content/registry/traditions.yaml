@@ -1,0 +1,190 @@
+# Tradition registry: every tradition id, name, family, taxonomic parent and era.
+# Full entries (self-description, record, lineage, analysis) live in data/traditions/*.yaml
+# and must use exactly these ids. Families are non-leaf grouping nodes.
+families:
+  - {id: marxism, name: Marxisms}
+  - {id: anarchism, name: Anarchisms}
+  - {id: socdem, name: Social democracy and labourism}
+  - {id: liberalism, name: Liberalisms}
+  - {id: libertarianism, name: Libertarianisms}
+  - {id: conservatism, name: Conservatisms}
+  - {id: nationalism, name: Nationalisms and anti-colonial thought}
+  - {id: religious, name: Religious politics}
+  - {id: fascism, name: The fascist family}
+  - {id: feminism, name: Feminisms}
+  - {id: ecology, name: Political ecologies}
+  - {id: technology, name: Technology currents}
+  - {id: commonsense, name: Common-sense formations}
+traditions:
+  # ---- Marxisms
+  - {id: marxism.classical, name: "Classical Marxism (Second International)", family: marxism, era: [1875, 1914]}
+  - {id: marxism.austromarxism, name: Austro-Marxism, family: marxism, parent: marxism.classical, era: [1904, 1934]}
+  - {id: marxism.leninism, name: Leninism, family: marxism, parent: marxism.classical, era: [1902, null]}
+  - {id: marxism.ml, name: Marxism-Leninism, family: marxism, parent: marxism.leninism, era: [1924, null]}
+  - {id: marxism.maoism, name: Mao Zedong Thought, family: marxism, parent: marxism.ml, era: [1935, null]}
+  - {id: marxism.mlm, name: "Marxism-Leninism-Maoism", family: marxism, parent: marxism.maoism, era: [1980, null]}
+  - {id: marxism.hoxhaism, name: Hoxhaism, family: marxism, parent: marxism.ml, era: [1978, null]}
+  - {id: marxism.juche, name: Juche, family: marxism, parent: marxism.ml, era: [1955, null]}
+  - {id: marxism.scc, name: Socialism with Chinese Characteristics, family: marxism, parent: marxism.maoism, era: [1978, null]}
+  - {id: marxism.trotskyism, name: Orthodox Trotskyism, family: marxism, parent: marxism.leninism, era: [1923, null]}
+  - {id: marxism.third-camp, name: "Third-camp Trotskyism", family: marxism, parent: marxism.trotskyism, era: [1940, null]}
+  - {id: marxism.left-communism, name: "Italian left communism (Bordigism)", family: marxism, parent: marxism.leninism, era: [1921, null]}
+  - {id: marxism.council-communism, name: "Council communism (Dutch-German left)", family: marxism, parent: marxism.classical, era: [1918, null]}
+  - {id: marxism.luxemburgism, name: Luxemburgism, family: marxism, parent: marxism.classical, era: [1899, null]}
+  - {id: marxism.western, name: "Western Marxism (Lukács, Frankfurt School)", family: marxism, parent: marxism.classical, era: [1923, null]}
+  - {id: marxism.gramscian, name: Gramscian Marxism, family: marxism, parent: marxism.leninism, era: [1926, null]}
+  - {id: marxism.eurocommunism, name: Eurocommunism, family: marxism, parent: marxism.ml, era: [1975, 1991]}
+  - {id: marxism.structural, name: "Structural Marxism (Althusser, Poulantzas)", family: marxism, parent: marxism.western, era: [1965, null]}
+  - {id: marxism.autonomism, name: "Autonomism and operaismo", family: marxism, parent: marxism.western, era: [1961, null]}
+  - {id: marxism.dependency, name: Dependency theory, family: marxism, parent: marxism.classical, era: [1957, null]}
+  - {id: marxism.world-systems, name: "World-systems analysis", family: marxism, parent: marxism.dependency, era: [1974, null]}
+  - {id: marxism.third-worldism, name: "Third Worldism (unequal exchange, Amin)", family: marxism, parent: marxism.dependency, era: [1962, null]}
+  - {id: marxism.analytical, name: Analytical Marxism, family: marxism, parent: marxism.western, era: [1978, null]}
+  - {id: marxism.market-socialism, name: Market socialism, family: marxism, parent: marxism.classical, era: [1936, null]}
+  - {id: marxism.ecosocialism, name: Ecosocialism, family: marxism, parent: marxism.classical, era: [1980, null]}
+  - {id: marxism.degrowth-communism, name: Degrowth communism, family: marxism, parent: marxism.ecosocialism, era: [2017, null]}
+  - {id: marxism.social-reproduction, name: Social reproduction theory, family: marxism, parent: marxism.western, era: [1972, null]}
+  - {id: marxism.black-radical, name: The Black radical tradition, family: marxism, era: [1903, null]}
+  - {id: marxism.mariategui, name: "Latin American Marxism (Mariátegui)", family: marxism, parent: marxism.leninism, era: [1928, null]}
+  - {id: marxism.guevarism, name: "Guevarism and foco theory", family: marxism, parent: marxism.ml, era: [1959, null]}
+  - {id: marxism.african-socialism, name: "African socialisms (Nyerere, Nkrumah, Cabral)", family: marxism, era: [1957, null]}
+  - {id: marxism.arab-socialism, name: "Arab socialism and Arab Marxism", family: marxism, era: [1950, null]}
+  # ---- Anarchisms
+  - {id: anarchism.communist, name: Anarchist communism, family: anarchism, era: [1876, null]}
+  - {id: anarchism.syndicalist, name: "Anarcho-syndicalism", family: anarchism, era: [1895, null]}
+  - {id: anarchism.platformist, name: "Platformism and especifismo", family: anarchism, parent: anarchism.communist, era: [1926, null]}
+  - {id: anarchism.insurrectionary, name: Insurrectionary anarchism, family: anarchism, parent: anarchism.communist, era: [1880, null]}
+  - {id: anarchism.mutualist, name: Mutualism, family: anarchism, era: [1840, null]}
+  - {id: anarchism.individualist, name: Individualist anarchism, family: anarchism, era: [1844, null]}
+  - {id: anarchism.green, name: Green anarchism, family: anarchism, era: [1970, null]}
+  - {id: anarchism.primitivist, name: "Anarcho-primitivism", family: anarchism, parent: anarchism.green, era: [1983, null]}
+  - {id: anarchism.communalism, name: "Communalism (Bookchin)", family: anarchism, era: [1990, null]}
+  - {id: anarchism.confederalism, name: "Democratic confederalism (Öcalan)", family: anarchism, parent: anarchism.communalism, era: [2005, null]}
+  - {id: anarchism.feminist, name: "Anarcha-feminism", family: anarchism, era: [1890, null]}
+  - {id: anarchism.christian, name: "Christian anarchism (Tolstoy, Ellul)", family: anarchism, era: [1890, null]}
+  - {id: zapatismo, name: Zapatismo, family: anarchism, era: [1994, null]}
+  # ---- Social democracy and labourism
+  - {id: socdem.revisionist, name: "Revisionist social democracy (Bernstein)", family: socdem, era: [1896, 1959]}
+  - {id: socdem.fabian, name: Fabianism, family: socdem, era: [1884, null]}
+  - {id: socdem.labourism, name: Labourism, family: socdem, era: [1900, null]}
+  - {id: socdem.keynesian, name: Keynesian social democracy, family: socdem, era: [1936, null]}
+  - {id: socdem.nordic, name: Nordic social democracy, family: socdem, parent: socdem.keynesian, era: [1932, null]}
+  - {id: socdem.third-way, name: Third Way, family: socdem, era: [1994, null]}
+  - {id: socdem.democratic-socialism, name: Democratic socialism, family: socdem, era: [1951, null]}
+  - {id: socdem.left-populism, name: "Left populism (Laclau, Mouffe)", family: socdem, era: [2005, null]}
+  # ---- Liberalisms
+  - {id: liberalism.classical, name: Classical liberalism, family: liberalism, era: [1689, null]}
+  - {id: liberalism.utilitarian, name: Utilitarian liberalism, family: liberalism, era: [1789, null]}
+  - {id: liberalism.social, name: Social liberalism, family: liberalism, era: [1880, null]}
+  - {id: liberalism.egalitarian, name: "Egalitarian liberalism (Rawls)", family: liberalism, parent: liberalism.social, era: [1971, null]}
+  - {id: liberalism.progressive, name: "Progressive liberalism", family: liberalism, parent: liberalism.social, era: [1990, null]}
+  - {id: liberalism.republican, name: "Republicanism (non-domination)", family: liberalism, era: [1500, null]}
+  - {id: liberalism.ordoliberal, name: Ordoliberalism, family: liberalism, era: [1932, null]}
+  - {id: liberalism.chicago, name: "Neoliberalism: Chicago school", family: liberalism, era: [1947, null]}
+  - {id: liberalism.austrian, name: "Neoliberalism: Austrian school (Hayek, Mises)", family: liberalism, era: [1871, null]}
+  - {id: liberalism.technocratic, name: Technocratic liberalism, family: liberalism, era: [1990, null]}
+  - {id: liberalism.internationalist, name: Liberal internationalism, family: liberalism, era: [1918, null]}
+  - {id: communitarianism, name: Communitarianism, family: liberalism, era: [1981, null]}
+  # ---- Libertarianisms
+  - {id: libertarianism.minarchist, name: Minarchism, family: libertarianism, era: [1974, null]}
+  - {id: libertarianism.ancap, name: "Anarcho-capitalism", family: libertarianism, era: [1962, null]}
+  - {id: libertarianism.objectivist, name: Objectivism, family: libertarianism, era: [1957, null]}
+  - {id: libertarianism.georgist, name: Georgism, family: libertarianism, era: [1879, null]}
+  - {id: libertarianism.left, name: "Left-libertarianism (Steiner-Vallentyne)", family: libertarianism, era: [1994, null]}
+  - {id: libertarianism.paleo, name: Paleolibertarianism, family: libertarianism, parent: libertarianism.ancap, era: [1990, null]}
+  # ---- Conservatisms
+  - {id: conservatism.burkean, name: Burkean conservatism, family: conservatism, era: [1790, null]}
+  - {id: conservatism.reactionary, name: "Reaction (throne and altar)", family: conservatism, era: [1796, null]}
+  - {id: conservatism.monarchist, name: Monarchism, family: conservatism, era: [1800, null]}
+  - {id: conservatism.traditionalist, name: Traditionalist conservatism, family: conservatism, era: [1953, null]}
+  - {id: conservatism.one-nation, name: "One-nation conservatism", family: conservatism, era: [1845, null]}
+  - {id: conservatism.christian-democracy, name: Christian democracy, family: conservatism, era: [1891, null]}
+  - {id: conservatism.cst, name: Catholic social teaching, family: conservatism, era: [1891, null]}
+  - {id: conservatism.distributism, name: Distributism, family: conservatism, parent: conservatism.cst, era: [1910, null]}
+  - {id: conservatism.integralism, name: Catholic integralism, family: conservatism, era: [1880, null]}
+  - {id: conservatism.evangelical-right, name: The evangelical right, family: conservatism, era: [1979, null]}
+  - {id: conservatism.fusionism, name: "Fusionism (US conservative movement)", family: conservatism, era: [1955, null]}
+  - {id: conservatism.paleo, name: Paleoconservatism, family: conservatism, era: [1980, null]}
+  - {id: conservatism.neo, name: Neoconservatism, family: conservatism, era: [1965, null]}
+  - {id: conservatism.national, name: National conservatism, family: conservatism, era: [2019, null]}
+  - {id: conservatism.right-populism, name: Right populism, family: conservatism, era: [1990, null]}
+  - {id: conservatism.gaullism, name: Gaullism, family: conservatism, era: [1947, null]}
+  - {id: conservatism.postliberal, name: Postliberalism, family: conservatism, era: [2015, null]}
+  # ---- Nationalisms and anti-colonial thought
+  - {id: nationalism.civic, name: Civic nationalism, family: nationalism, era: [1789, null]}
+  - {id: nationalism.ethnic, name: Ethnic nationalism, family: nationalism, era: [1810, null]}
+  - {id: nationalism.pan-africanism, name: "Pan-Africanism", family: nationalism, era: [1900, null]}
+  - {id: nationalism.black-nationalism, name: Black nationalism, family: nationalism, era: [1914, null]}
+  - {id: nationalism.nasserism, name: Nasserism, family: nationalism, era: [1952, null]}
+  - {id: nationalism.baathism, name: "Ba'athism", family: nationalism, era: [1947, null]}
+  - {id: nationalism.kemalism, name: Kemalism, family: nationalism, era: [1923, null]}
+  - {id: nationalism.peronism, name: Peronism, family: nationalism, era: [1945, null]}
+  - {id: nationalism.bolivarianism, name: Bolivarianism, family: nationalism, era: [1998, null]}
+  - {id: nationalism.three-principles, name: "Sun Yat-sen's Three Principles of the People", family: nationalism, era: [1905, null]}
+  - {id: nationalism.developmental-state, name: "Developmental-state nationalism (East Asia)", family: nationalism, era: [1961, null]}
+  - {id: nationalism.gandhian, name: Gandhian thought, family: nationalism, era: [1909, null]}
+  - {id: nationalism.ambedkarite, name: Ambedkarite thought, family: nationalism, era: [1927, null]}
+  - {id: nationalism.hindutva, name: Hindutva, family: nationalism, era: [1923, null]}
+  - {id: nationalism.indigenous-sovereignty, name: Indigenous sovereignty, family: nationalism, era: [1960, null]}
+  - {id: nationalism.decolonial, name: "Decolonial thought (Quijano, Mignolo)", family: nationalism, era: [1992, null]}
+  - {id: nationalism.zionism-labor, name: Labor Zionism, family: nationalism, era: [1906, null]}
+  - {id: nationalism.zionism-revisionist, name: Revisionist Zionism, family: nationalism, era: [1925, null]}
+  - {id: nationalism.palestinian, name: Palestinian national movement, family: nationalism, era: [1919, null]}
+  - {id: nationalism.eurasianism, name: "Neo-Eurasianism", family: nationalism, era: [1997, null]}
+  # ---- Religious politics
+  - {id: religious.liberation-theology, name: Liberation theology, family: religious, era: [1968, null]}
+  - {id: religious.christian-socialism, name: "Christian socialism and the Social Gospel", family: religious, era: [1848, null]}
+  - {id: religious.islamism-brotherhood, name: "Islamism: the Muslim Brotherhood current", family: religious, era: [1928, null]}
+  - {id: religious.islamism-khomeinist, name: "Islamism: Khomeinism (velayat-e faqih)", family: religious, era: [1970, null]}
+  - {id: religious.salafism-quietist, name: Quietist Salafism, family: religious, era: [1970, null]}
+  - {id: religious.salafi-jihadism, name: "Salafi-jihadism", family: religious, era: [1979, null]}
+  - {id: religious.post-islamism, name: "Post-Islamism (Muslim democrats)", family: religious, era: [1996, null]}
+  - {id: religious.islamic-socialism, name: Islamic socialism, family: religious, era: [1940, null]}
+  - {id: religious.religious-zionism, name: Religious Zionism, family: religious, era: [1902, null]}
+  - {id: religious.engaged-buddhism, name: "Engaged Buddhism and Buddhist socialism", family: religious, era: [1950, null]}
+  - {id: religious.buddhist-nationalism, name: Buddhist nationalism, family: religious, era: [1950, null]}
+  - {id: religious.confucian, name: "Confucian political thought", family: religious, era: [1958, null]}
+  - {id: religious.political-meritocracy, name: Political meritocracy, family: religious, parent: religious.confucian, era: [2006, null]}
+  # ---- The fascist family
+  - {id: fascism.italian, name: Classical (Italian) fascism, family: fascism, era: [1919, 1945]}
+  - {id: fascism.nazism, name: National Socialism, family: fascism, era: [1920, 1945]}
+  - {id: fascism.national-syndicalism, name: National syndicalism, family: fascism, era: [1931, null]}
+  - {id: fascism.clerical, name: Clerical fascism, family: fascism, era: [1927, 1945]}
+  - {id: fascism.traditionalist, name: "Radical Traditionalism (Evola)", family: fascism, era: [1934, null]}
+  - {id: fascism.third-position, name: Third Position, family: fascism, era: [1970, null]}
+  - {id: fascism.identitarian, name: Identitarianism, family: fascism, era: [2002, null]}
+  - {id: fascism.neoreaction, name: "Neo-reaction (the Dark Enlightenment)", family: fascism, era: [2007, null]}
+  - {id: fascism.ecofascism, name: Ecofascism, family: fascism, era: [1970, null]}
+  # ---- Feminisms
+  - {id: feminism.liberal, name: Liberal feminism, family: feminism, era: [1792, null]}
+  - {id: feminism.radical, name: Radical feminism, family: feminism, era: [1967, null]}
+  - {id: feminism.materialist, name: Materialist feminism, family: feminism, era: [1970, null]}
+  - {id: feminism.black, name: "Black feminism and intersectionality", family: feminism, era: [1977, null]}
+  - {id: feminism.difference, name: Difference feminism, family: feminism, era: [1974, null]}
+  - {id: feminism.queer, name: Queer theory, family: feminism, era: [1990, null]}
+  - {id: feminism.gender-critical, name: "Gender-critical feminism", family: feminism, parent: feminism.radical, era: [2000, null]}
+  - {id: feminism.islamic, name: Islamic feminism, family: feminism, era: [1990, null]}
+  - {id: feminism.decolonial, name: "Decolonial and Third World feminism", family: feminism, era: [1984, null]}
+  # ---- Political ecologies
+  - {id: ecology.green-growth, name: "Green growth (environmental liberalism)", family: ecology, era: [1987, null]}
+  - {id: ecology.ecomodernism, name: Ecomodernism, family: ecology, era: [2015, null]}
+  - {id: ecology.degrowth, name: Degrowth, family: ecology, era: [2008, null]}
+  - {id: ecology.deep-ecology, name: Deep ecology, family: ecology, era: [1973, null]}
+  - {id: ecology.environmental-justice, name: Environmental justice, family: ecology, era: [1982, null]}
+  - {id: ecology.neo-malthusian, name: "Neo-Malthusianism", family: ecology, era: [1968, null]}
+  # ---- Technology currents
+  - {id: technology.effective-altruism, name: Effective altruism, family: technology, era: [2009, null]}
+  - {id: technology.longtermism, name: Longtermism, family: technology, parent: technology.effective-altruism, era: [2017, null]}
+  - {id: technology.transhumanism, name: Transhumanism, family: technology, era: [1990, null]}
+  - {id: technology.l-acc, name: Left accelerationism, family: technology, era: [2013, null]}
+  - {id: technology.r-acc, name: "Right accelerationism (Land)", family: technology, era: [1995, null]}
+  - {id: technology.e-acc, name: "Techno-optimism and effective accelerationism", family: technology, era: [2022, null]}
+  - {id: technology.technocracy, name: "Technocracy movement", family: technology, era: [1932, null]}
+  - {id: technology.cyberlibertarian, name: Cyberlibertarianism, family: technology, era: [1996, null]}
+  # ---- Common-sense formations
+  - {id: commonsense.anti-politics, name: "“Politicians are all crooks”", family: commonsense, era: [1900, null]}
+  - {id: commonsense.self-reliance, name: "“Work hard and you get ahead”", family: commonsense, era: [1900, null]}
+  - {id: commonsense.declinist, name: "“The country has gone downhill”", family: commonsense, era: [1900, null]}
+  - {id: commonsense.live-and-let-live, name: "“Live and let live”", family: commonsense, era: [1900, null]}
+  - {id: commonsense.rigged, name: "“The system is rigged”", family: commonsense, era: [1900, null]}
+  - {id: commonsense.look-after-your-own, name: "“Look after your own”", family: commonsense, era: [1900, null]}

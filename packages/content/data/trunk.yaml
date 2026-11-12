@@ -1,0 +1,371 @@
+# The trunk: eight shared opening nodes, ordered to split respondents along the deepest lines fast.
+nodes:
+  - id: trunk.collapse
+    type: explanation
+    title: Eight floors
+    text: >
+      An eight-storey garment factory collapses outside a capital city in South Asia. Over a thousand
+      workers die. Cracks had appeared in the walls the day before; managers ordered everyone back to
+      their machines. The shirts they were sewing were already sold, at fixed prices, to clothing brands
+      in richer countries. Why did this happen?
+    why: >
+      This asks what kind of cause you reach for: bad people, bad laws, a stage of growth, consumer
+      habits, or the structure of the world economy. It also opens the question of why poor countries are poor.
+    premises:
+      - id: tragedy
+        text: It's a tragedy. Looking for a single cause is the wrong way to think about it.
+        evidence: [{position: poverty.cause.geography, w: 0.5}]
+    conditions:
+      - id: facts
+        text: It depends on facts I don't have about this factory.
+    options:
+      - id: owner
+        text: The owner was a crook who bribed inspectors. Prosecute him.
+        cause: individuals
+        evidence:
+          - {position: poverty.cause.bad-institutions, w: 2}
+      - id: brands
+        text: The brands squeeze suppliers so hard that cutting corners is the only way to win the orders.
+        cause: structures
+        evidence:
+          - {position: poverty.cause.drain, w: 2}
+          - {position: imperialism.nature.unequal-exchange-drain, w: 2}
+        probe:
+          ask: Why can the brands squeeze that hard?
+          options:
+            - text: "Fifty countries compete for the same orders; the brands can walk."
+              cause: structures
+              evidence: [{position: imperialism.nature.unequal-exchange-drain, w: 2}]
+            - text: Their executives are greedy.
+              cause: individuals
+              evidence: [{position: capitalism.nature.crony-corrupted, w: 1}]
+            - text: The local owners sit in parliament and keep wages low for them.
+              cause: interests
+              evidence: [{position: comprador.nature.broker-class, w: 2}]
+      - id: stage
+        text: Factories were deathtraps in Manchester too. The country will get richer and safer, the same way.
+        cause: structures
+        evidence:
+          - {position: poverty.cause.late-development, w: 3}
+          - {position: development.path.integration, w: 1}
+      - id: shoppers
+        text: Shoppers want five-dollar shirts. Change what you buy.
+        cause: culture
+        evidence:
+          - {position: consumption.choice.consumer-responsibility, w: 3}
+      - id: choice
+        text: Terrible, but those workers chose that job over worse ones. The factory was their best offer.
+        cause: individuals
+        evidence:
+          - {position: wage.nature.voluntary-exchange, w: 3}
+          - {position: poverty.cause.late-development, w: 1}
+      - id: compradors
+        text: The owners there are the local partners of the brands. They sold their own workers by the shirt.
+        cause: interests
+        evidence:
+          - {position: comprador.nature.broker-class, w: 3}
+          - {position: poverty.cause.drain, w: 1}
+
+  - id: trunk.windfarm
+    type: scene
+    title: The hills
+    text: >
+      A wind farm is going up on the hills outside your town. It will make a lot of money for a long time.
+      The council has to decide who owns it. You have a vote.
+    why: This asks who should own productive property, and on what grounds.
+    premises:
+      - id: no-turbines
+        text: The question assumes it should be built at all.
+    options:
+      - id: investors
+        text: The company that puts up the money. That's how anything gets built.
+        evidence:
+          - {position: firm.ownership.private-investors, w: 3}
+          - {position: property.private.natural-right, w: 1}
+      - id: town
+        text: The town. Profits go to the school and the clinic.
+        evidence:
+          - {position: firm.ownership.public-municipal, w: 3}
+      - id: coop
+        text: A cooperative of the people who live nearby, one member one vote.
+        evidence:
+          - {position: firm.ownership.commons-community, w: 3}
+          - {position: firm.ownership.worker-cooperatives, w: 1}
+      - id: plan
+        text: The national power company, as part of a plan for the whole grid.
+        evidence:
+          - {position: firm.ownership.state, w: 3}
+          - {position: allocation.mechanism.central-planning, w: 1}
+      - id: families
+        text: The farming families who own the hills. Lease it, keep the land in the family.
+        evidence:
+          - {position: firm.ownership.small-proprietors, w: 3}
+      - id: first
+        text: Those hills were taken from the people who lived here first. Ask them.
+        evidence:
+          - {position: settler.colonialism.land-back, w: 3}
+
+  - id: trunk.port
+    type: scene
+    title: The port
+    text: >
+      Dockworkers strike for two weeks. Shelves empty. The government sends soldiers to unload the ships,
+      and the shipowners thank them on television. Your neighbor asks you what you make of it.
+    why: >
+      This asks what you think the state is: a referee, an instrument of a class, a nation's will, an
+      aggressor, or something else. It is also a small test of which side you take when order and labor collide.
+    conditions:
+      - id: demands
+        text: It depends what the strikers were asking for.
+      - id: food
+        text: It depends whether people were going without food or medicine.
+    options:
+      - id: arbiter
+        text: The government has to keep the country running. The strikers had their say.
+        side: {axis: class, dir: order}
+        evidence:
+          - {position: state.nature.neutral-arbiter, w: 3}
+      - id: instrument
+        text: Soldiers unloading cargo for shipowners. Now you know what the state is for.
+        side: {axis: class, dir: dispossessed}
+        evidence:
+          - {position: state.nature.class-instrument, w: 3}
+          - {position: workplace.conflict.structural-antagonism, w: 1}
+      - id: hostage
+        text: Nobody gets to hold the whole nation hostage. The nation comes before any group.
+        side: {axis: class, dir: order}
+        evidence:
+          - {position: state.nature.organic-nation, w: 3}
+      - id: bought
+        text: Whoever paid for the last campaign gets the army. This time it was the shipowners.
+        side: {axis: class, dir: neither}
+        cause: individuals
+        evidence:
+          - {position: state.nature.captured, w: 3}
+          - {position: cs.rigged.system-rigged, w: 1}
+      - id: aggressor
+        text: The state should have stayed out entirely. Owners and union can settle it themselves.
+        side: {axis: class, dir: neither}
+        evidence:
+          - {position: state.nature.necessary-evil, w: 2}
+          - {position: state.nature.organized-aggression, w: 1}
+      - id: any-state
+        text: Any state would have done the same. That is why we shouldn't have one.
+        side: {axis: class, dir: dispossessed}
+        evidence:
+          - {position: state.nature.hierarchy-as-such, w: 3}
+
+  - id: trunk.copper
+    type: verdict
+    title: Copper
+    text: >
+      A copper-mining country elects a government that nationalizes the mines from their foreign owners.
+      The owners' home government imposes sanctions. The currency collapses, medicine runs short, and the
+      new government blames the sanctions. Where do you stand?
+    why: >
+      This asks about national sovereignty, sanctions, and imperialism, and records which side you take
+      when an empire and a former colony collide.
+    premises:
+      - id: blame
+        text: The question assumes one side is to blame. Both governments are playing to their own crowds.
+    conditions:
+      - id: elections
+        text: It depends whether the new government holds free elections.
+        evidence: [{position: intl.sovereignty.conditional-on-rights, w: 2}]
+      - id: compensation
+        text: It depends whether the owners were paid fair compensation.
+        evidence: [{position: property.private.natural-right, w: 1}]
+    options:
+      - id: contracts
+        text: Seize foreign property, expect consequences. Contracts are the basis of trade.
+        side: {axis: empire, dir: order}
+        evidence:
+          - {position: intl.sanctions.legitimate-tool, w: 3}
+          - {position: property.private.natural-right, w: 1}
+      - id: right
+        text: It's their copper. The sanctions are a siege on a whole people for daring to keep it.
+        side: {axis: empire, dir: dispossessed}
+        evidence:
+          - {position: intl.sovereignty.nations-set-own-course, w: 3}
+          - {position: intl.sanctions.economic-war, w: 3}
+      - id: bad-policy
+        text: Nationalization scared off investors. The collapse is their own policy, not the sanctions.
+        side: {axis: empire, dir: order}
+        evidence:
+          - {position: development.path.integration, w: 3}
+          - {position: imperialism.nature.no-such-thing, w: 1}
+      - id: targeted
+        text: Sanctions are fine if aimed at the leaders' bank accounts, not at medicine.
+        side: {axis: empire, dir: neither}
+        evidence:
+          - {position: intl.sanctions.targeted-for-rights, w: 3}
+      - id: miners
+        text: Neither government. The miners should run the mines themselves, against both.
+        side: {axis: empire, dir: neither}
+        evidence:
+          - {position: firm.ownership.worker-cooperatives, w: 2}
+          - {position: imperialism.nature.inter-imperialist-rivalry, w: 1}
+
+  - id: trunk.curriculum
+    type: scene
+    title: The textbook
+    text: >
+      The school board votes to teach that your country was founded by conquering the people who lived
+      here before. Some parents are furious. Some are relieved. The board meets again Thursday, and you've
+      been asked to speak.
+    why: This asks how you understand your nation's founding, what is owed for it, and who decides what children learn.
+    premises:
+      - id: not-mine
+        text: My country wasn't founded that way.
+    options:
+      - id: land-back
+        text: It's true. Teach it, and then talk about giving land back.
+        evidence:
+          - {position: settler.colonialism.land-back, w: 3}
+          - {position: settler.colonialism.ongoing-structure, w: 1}
+      - id: reconcile
+        text: It's true. Teach all of it, so the country can face it and reconcile.
+        evidence:
+          - {position: settler.colonialism.historical-wrong-reconcile, w: 3}
+          - {position: education.purpose.critical-citizens, w: 1}
+      - id: every-nation
+        text: Every nation began with conquest. Teach what we built, not shame.
+        evidence:
+          - {position: settler.colonialism.all-nations-conquest, w: 3}
+          - {position: education.purpose.civic-pride, w: 2}
+      - id: civilization
+        text: The founders brought law and order to a wild land. This is politics posing as history.
+        evidence:
+          - {position: settler.colonialism.just-settlement, w: 3}
+          - {position: education.purpose.civic-pride, w: 1}
+      - id: parents
+        text: Parents, not the board, should decide what their children are taught.
+        evidence:
+          - {position: education.purpose.parental-authority, w: 3}
+      - id: who-profits
+        text: Teach it, and teach who owns that land now and who still profits from the taking.
+        evidence:
+          - {position: settler.colonialism.ongoing-structure, w: 3}
+          - {position: capitalism.nature.exploitation-profit, w: 1}
+
+  - id: trunk.election
+    type: scene
+    title: Ballot
+    text: >
+      An election next month. The two parties that can win have spent a year promising to change things
+      and agreeing on most of what matters. A friend asks what you're doing about it.
+    why: This asks what you think elections are for, whether ordinary people can change anything, and through what.
+    premises:
+      - id: two-parties
+        text: "My country's choices aren't like that."
+    options:
+      - id: main-road
+        text: Voting for the better one and campaigning for them. That's how change happens.
+        evidence:
+          - {position: elections.role.main-road, w: 3}
+      - id: lesser-evil
+        text: Holding my nose and voting against the worse one.
+        evidence:
+          - {position: elections.role.lesser-evil, w: 3}
+      - id: tribune
+        text: Voting for a small party that says what needs saying, even if it loses.
+        evidence:
+          - {position: elections.role.tribune, w: 3}
+      - id: organize
+        text: Voting, maybe, but my real time goes into organizing where I work or live.
+        evidence:
+          - {position: elections.role.organize-instead, w: 3}
+          - {position: change.possibility.organized-people-can, w: 2}
+      - id: crooks
+        text: Nothing. They're all crooks, and whoever wins, people like me lose.
+        evidence:
+          - {position: cs.politicians.all-crooks, w: 3}
+          - {position: change.possibility.power-always-wins, w: 2}
+      - id: boycott
+        text: Not voting, on principle. Voting gives the whole machine its permission.
+        evidence:
+          - {position: elections.role.boycott-principle, w: 3}
+
+  - id: trunk.fortunes
+    type: voices
+    title: Two at the bar
+    text: Two people at the bar argue about why the rich are rich. Who's right?
+    voices:
+      - {name: Ines, says: "People get rich by giving others what they want. Every fortune is a pile of votes from customers."}
+      - {name: Tomás, says: "Fortunes come from owning what others need to work, and paying them less than what they make."}
+    why: This asks where profit and value come from, and what capitalism is.
+    options:
+      - id: ines
+        text: Ines.
+        cause: individuals
+        evidence:
+          - {position: value.source.subjective-utility, w: 2}
+          - {position: capitalism.nature.free-exchange, w: 2}
+      - id: tomas
+        text: Tomás.
+        cause: structures
+        evidence:
+          - {position: value.source.labor, w: 2}
+          - {position: capitalism.nature.exploitation-profit, w: 2}
+      - id: connections
+        text: Both miss it. The big fortunes come from government favors and connections.
+        cause: individuals
+        evidence:
+          - {position: capitalism.nature.crony-corrupted, w: 3}
+      - id: finance
+        text: Both miss it. Real wealth is made by building things; the big money is made by moving money.
+        cause: interests
+        evidence:
+          - {position: capitalism.nature.usury-finance, w: 3}
+      - id: luck
+        text: Both miss it. Mostly it's luck and who your parents were.
+        cause: chance
+        evidence:
+          - {position: inequality.justice.luck-unjust, w: 3}
+      - id: gift
+        text: Both miss it. Wealth is a gift held in trust, and the question is what you do with it.
+        cause: divine
+        evidence:
+          - {position: inequality.justice.stewardship, w: 3}
+          - {position: property.private.social-function, w: 1}
+
+  - id: trunk.beds
+    type: tradeoff
+    title: Beds
+    text: >
+      An epidemic. The public hospital is full and turning people away. Across the street a private
+      clinic has forty empty beds and charges ten times the price. The health minister proposes taking the
+      beds by decree.
+    why: This asks what gives way in an emergency, need or property, and who decides. It also records which side you take.
+    conditions:
+      - id: temporary
+        text: It depends whether it's temporary and the law allows it.
+        evidence: [{position: emergency.powers.compensate-at-market, w: 1}]
+    options:
+      - id: take
+        text: Take them tonight. Sort out payment later, if at all.
+        side: {axis: class, dir: dispossessed}
+        evidence:
+          - {position: emergency.powers.need-overrides-property, w: 3}
+      - id: pay
+        text: Take them, and pay the clinic its full price from public funds.
+        side: {axis: class, dir: neither}
+        evidence:
+          - {position: emergency.powers.compensate-at-market, w: 3}
+      - id: ask
+        text: Ask, don't seize. A state that takes property in a crisis never gives it back.
+        side: {axis: class, dir: order}
+        evidence:
+          - {position: emergency.powers.voluntary-only, w: 3}
+          - {position: property.private.natural-right, w: 1}
+      - id: keep
+        text: Take them and keep them. Health should never have been for sale.
+        side: {axis: class, dir: dispossessed}
+        evidence:
+          - {position: emergency.powers.permanent-socialization, w: 3}
+          - {position: property.private.personal-vs-productive, w: 1}
+      - id: decide
+        text: In an emergency someone has to decide, fast. Give the minister whatever powers it takes.
+        side: {axis: class, dir: neither}
+        evidence:
+          - {position: emergency.powers.sovereign-exception, w: 3}

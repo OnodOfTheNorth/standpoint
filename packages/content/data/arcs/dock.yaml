@@ -1,0 +1,234 @@
+id: arc.dock
+title: The Night Shift
+blurb: A pick-rate cut, a paper going round, and temps who start on Friday.
+role: You pick orders on the night shift at a distribution center.
+place: A distribution center on the edge of a port city
+start: arc.dock.01
+escalation: arc.dock.03
+pressure: [arc.dock.02c]
+tags: [economy, strategy]
+nodes:
+  - id: arc.dock.01
+    type: scene
+    title: The paper
+    text: >
+      Night shift at the distribution center. The company cut the pick-rate bonus and blamed "market
+      conditions." Dee, nine years on the dock, is passing a paper around. Word is that agency temps start Friday.
+    why: This asks who you see as being on your side at work, and why.
+    premises:
+      - id: no-sides
+        text: The premise that there are sides here.
+        evidence: [{position: workplace.conflict.partners-with-a-misunderstanding, w: 2}]
+    options:
+      - id: a
+        text: Sign. Then go talk to the temps before management does.
+        evidence:
+          - {position: change.agent.workers-as-class, w: 2}
+          - {position: labor.division.contract-status-is-a-wedge, w: 3}
+        probe:
+          ask: What makes the temps worth the risk?
+          options:
+            - text: "Same boss, same floor. Their weakness is ours."
+              cause: structures
+              evidence: [{position: class.concept.relation-to-production, w: 2}, {position: solidarity.basis.shared-class, w: 2}]
+            - text: Numbers. More people, more leverage.
+              cause: interests
+              evidence: [{position: solidarity.basis.tactical, w: 2}]
+            - text: "It's the decent thing to do."
+              cause: ideas
+              evidence: [{position: solidarity.basis.moral, w: 2}]
+        consequence: Management offers permanent staff the bonus back if the temps' names come off the paper.
+        next: arc.dock.02a
+      - id: b
+        text: Sign, and ask for a sit-down with HR. A fair hearing settles most things.
+        evidence:
+          - {position: workplace.conflict.partners-with-a-misunderstanding, w: 3}
+        consequence: HR schedules a meeting for next week. The pick rate stays where it is in the meantime.
+        next: arc.dock.02b
+      - id: c
+        text: Stay out of it. If the pay is bad, find a better job.
+        evidence:
+          - {position: change.means.individual-exit, w: 3}
+        consequence: Your supervisor noticed you didn't sign.
+        next: arc.dock.02c
+      - id: d
+        text: The temps are the problem. Hire local people first.
+        evidence:
+          - {position: labor.division.outsiders-undercut-us, w: 3}
+        consequence: Dee takes the paper back without a word. Your supervisor noticed.
+        next: arc.dock.02c
+      - id: e
+        text: Keep your head down. Everyone on that paper gets fired.
+        evidence:
+          - {position: change.possibility.power-always-wins, w: 2}
+        consequence: Your supervisor noticed you didn't sign.
+        next: arc.dock.02c
+
+  - id: arc.dock.02a
+    type: tradeoff
+    title: The offer
+    text: >
+      The memo is short. Permanent staff get the bonus back, backdated, if the temps' names come off the
+      paper. Forty of you would gain. Twenty-two temps would be on their own. Dee wants a vote by midnight.
+    why: This sets your own group's gain against solidarity with the people one rung below you.
+    options:
+      - id: refuse
+        text: Vote no. The temps are the point of the whole thing.
+        set: {dock_united: true}
+        evidence:
+          - {position: solidarity.basis.shared-class, w: 2}
+          - {position: unions.role.class-organ, w: 2}
+        next: arc.dock.03
+      - id: take
+        text: Vote yes. A bonus in hand beats a principle on a paper.
+        set: {dock_united: false}
+        evidence:
+          - {position: unions.role.bargaining-agent, w: 3}
+          - {position: labor.division.contract-status-is-a-wedge, w: -1}
+        next: arc.dock.03
+      - id: split
+        text: Take the bonus, then help the temps start their own paper.
+        set: {dock_united: false}
+        evidence:
+          - {position: solidarity.basis.tactical, w: 2}
+          - {position: unions.role.bargaining-agent, w: 1}
+        next: arc.dock.03
+
+  - id: arc.dock.02b
+    type: explanation
+    title: The hearing
+    text: >
+      HR is warm and well-prepared. The pick rate is set by head office software from regional labor
+      costs; nobody in the building can change it. They thank you for raising it. On the way out you pass
+      the temps' induction.
+    why: This asks why the dispute ended where it did, and what kind of cause you reach for.
+    options:
+      - id: system
+        text: The software is how the company squeezes. Nobody here can change it, so it has to be forced.
+        cause: structures
+        set: {dock_united: true}
+        evidence:
+          - {position: workplace.conflict.structural-antagonism, w: 3}
+          - {position: change.possibility.organized-people-can, w: 1}
+        next: arc.dock.03
+      - id: fair
+        text: Fair enough. They listened. It isn't anyone's fault.
+        cause: chance
+        set: {dock_united: false}
+        evidence:
+          - {position: workplace.conflict.partners-with-a-misunderstanding, w: 2}
+        next: arc.dock.03
+      - id: bad-manager
+        text: Head office is run by people who've never set foot on a dock. Get new management.
+        cause: individuals
+        set: {dock_united: false}
+        evidence:
+          - {position: workplace.conflict.partners-with-a-misunderstanding, w: 1}
+        next: arc.dock.03
+      - id: leave
+        text: Time to look for another job.
+        cause: individuals
+        set: {dock_united: false}
+        evidence:
+          - {position: change.means.individual-exit, w: 2}
+        next: arc.dock.03
+
+  - id: arc.dock.02c
+    type: pressure
+    title: The list
+    tests: solidarity.basis.moral
+    text: >
+      Your supervisor takes you aside. A permanent contract is coming open, the one you've wanted for two
+      years. He'd like to know who's been passing the paper around. Just names. Nobody needs to know where they came from.
+    why: This puts your own interest against whatever loyalty you owe the people on the floor.
+    options:
+      - id: refuse
+        text: "I don't know anything about a paper."
+        pressure: principle
+        cost: You lose the permanent contract.
+        evidence:
+          - {position: solidarity.basis.moral, w: 2}
+        next: arc.dock.03
+      - id: names
+        text: Give him the names. They knew the risk.
+        pressure: interest
+        cost: Dee and two others are moved to the day shift and lose their overtime.
+        evidence:
+          - {position: change.means.individual-exit, w: 1}
+          - {position: workplace.conflict.partners-with-a-misunderstanding, w: 1}
+        next: arc.dock.03
+      - id: useless
+        text: Give him names everyone already knows. Keep the contract, burn nobody.
+        pressure: mixed
+        cost: The contract is yours. Dee stops talking to you.
+        evidence:
+          - {position: solidarity.basis.tactical, w: 1}
+        next: arc.dock.03
+
+  - id: arc.dock.03
+    type: escalation
+    title: The gate
+    recap: At a distribution center, a union drive has been building on the night shift.
+    text: >
+      Friday. Dee is fired. Half the night shift walks out and stands at the gate. Trucks queue on the
+      road. Police arrive and tell the crowd to clear the gate for the trucks. Whatever you do next, you do
+      it in front of everyone.
+    why: The middle option is gone. This records which way you break when labor and order collide.
+    options:
+      - id: hold
+        text: Stand at the gate with them.
+        side: {axis: class, dir: dispossessed}
+        evidence:
+          - {position: change.agent.workers-as-class, w: 2}
+          - {position: workplace.conflict.structural-antagonism, w: 1}
+        consequence: Six arrests. The trucks wait four hours. Dee is reinstated on Monday, pending review.
+        next: arc.dock.04
+      - id: inside
+        text: Go back inside and keep working. Rules are rules.
+        side: {axis: class, dir: order}
+        evidence:
+          - {position: workplace.conflict.partners-with-a-misunderstanding, w: 2}
+        consequence: The trucks roll in. The walkout ends by dawn. Dee's firing stands.
+        next: arc.dock.04
+      - id: home
+        text: Go home. This isn't your fight.
+        side: {axis: class, dir: neither}
+        evidence:
+          - {position: change.means.individual-exit, w: 2}
+        consequence: You hear about it the next day from people who were there.
+        next: arc.dock.04
+      - id: clear
+        text: Help the police clear the gate. People need their deliveries.
+        side: {axis: class, dir: order}
+        evidence:
+          - {position: state.nature.neutral-arbiter, w: 2}
+          - {position: unions.role.obstacle, w: 2}
+        consequence: The trucks roll in. Someone films you. The video goes around the floor.
+        next: arc.dock.04
+
+  - id: arc.dock.04
+    type: reason
+    title: Monday
+    text: >
+      Monday. A notice on the break-room wall: the picking floor will be automated within eighteen months.
+      Someone has drawn a mustache on the robot. Looking back at the last week, what was the paper for?
+    why: This asks what you think unions and workplace organizing are for.
+    options:
+      - id: class
+        text: The start of workers acting together, here and beyond this building.
+        evidence:
+          - {position: unions.role.class-organ, w: 3}
+          - {position: change.agent.workers-as-class, w: 1}
+      - id: bargain
+        text: A better deal for the people in this building. Nothing more, nothing less.
+        evidence:
+          - {position: unions.role.bargaining-agent, w: 3}
+      - id: trouble
+        text: Trouble. Now the company's automating and we'll all lose.
+        evidence:
+          - {position: unions.role.obstacle, w: 3}
+      - id: nothing
+        text: Nothing. The robots were always coming.
+        cause: nature
+        evidence:
+          - {position: change.possibility.power-always-wins, w: 2}

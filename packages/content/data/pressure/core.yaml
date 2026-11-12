@@ -1,0 +1,55 @@
+# Situation-gated pressure scenes: the respondent's own material interest against a principle.
+nodes:
+  - id: pressure.manager-union
+    type: pressure
+    title: The drive
+    tests: unions.role.class-organ
+    gate: {classIs: [professional-managerial]}
+    text: >
+      Your team is organizing a union. Head office has made clear that a manager who "loses" their team to
+      a union will not be managing next year. Your bonus is a quarter of your pay and it depends on
+      "engagement scores." Two of your best people ask you, privately, what you'll do.
+    why: This sets your own position in the firm against what you hold about unions.
+    options:
+      - id: neutral
+        text: Tell them you'll stay neutral and mean it, and tell head office the same.
+        pressure: principle
+        cost: Your bonus this year is cut to nothing. You are passed over for promotion.
+        evidence: [{position: unions.role.class-organ, w: 1}, {position: workplace.conflict.structural-antagonism, w: 1}]
+      - id: script
+        text: Run the meetings head office scripts. Keep your job; they'll get over it.
+        pressure: interest
+        cost: The drive fails by four votes. Two of your best people leave within the year.
+        evidence: [{position: unions.role.obstacle, w: 2}, {position: workplace.conflict.partners-with-a-misunderstanding, w: 1}]
+      - id: quiet
+        text: Say nothing to anyone. Do the minimum head office asks.
+        pressure: mixed
+        cost: You keep your job; your team stops telling you things.
+        evidence: [{position: change.means.individual-exit, w: 1}]
+
+  - id: pressure.plant-contract
+    type: pressure
+    title: The contract
+    tests: intl.sovereignty.nations-set-own-course
+    gate: {classIs: [core-workers]}
+    text: >
+      Your plant has been on short time for a year. A big new contract arrives and everyone is back on
+      full shifts with overtime. Then it comes out: the parts are for a bombing campaign against a country
+      that nationalized its oil. The union meets tonight.
+    why: This sets your wages and job against what you hold about nations setting their own course.
+    options:
+      - id: refuse
+        text: Move that the union refuse to work the contract.
+        pressure: principle
+        cost: The contract goes to another plant. Short time comes back; twelve people are laid off.
+        evidence: [{position: intl.sovereignty.nations-set-own-course, w: 2}, {position: imperialism.nature.unequal-exchange-drain, w: 1}]
+      - id: work
+        text: Work the contract. We don't make foreign policy; we make parts.
+        pressure: interest
+        cost: Full shifts and overtime for two years.
+        evidence: [{position: imperialism.nature.foreign-policy-choice, w: 1}, {position: unions.role.bargaining-agent, w: 2}]
+      - id: convert
+        text: Work it, and campaign for the plant to be converted to civilian production.
+        pressure: mixed
+        cost: Full shifts now. The conversion campaign gets a newspaper story and a committee.
+        evidence: [{position: unions.role.class-organ, w: 1}]

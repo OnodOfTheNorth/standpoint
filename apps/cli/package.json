@@ -1,0 +1,14 @@
+{
+  "name": "@standpoint/cli",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "bin": { "standpoint": "./dist/standpoint.mjs" },
+  "scripts": {
+    "build": "esbuild src/main.ts --bundle --platform=node --format=esm --target=node20 --outfile=dist/standpoint.mjs --banner:js=\"#!/usr/bin/env node\"",
+    "dev": "tsx src/main.ts"
+  },
+  "dependencies": { "@standpoint/core": "workspace:*", "@standpoint/content": "workspace:*", "@standpoint/ontology": "workspace:*" },
+  "devDependencies": { "esbuild": "^0.24.2" }
+}

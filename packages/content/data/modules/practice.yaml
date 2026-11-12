@@ -1,0 +1,83 @@
+# Practice and trajectory modules. Practice nodes are multi-select; trajectory nodes write state.trajectory.
+nodes:
+  - id: module.practice.orgs
+    type: practice
+    title: What you belong to
+    multi: true
+    text: Politics is mostly done in company. Which of these do you belong to now? Pick all that apply.
+    why: This records your organizational ties. Organization is what turns a position into a force.
+    options:
+      - {id: union, text: A union, practice: [practice.union-member]}
+      - {id: union-active, text: A union, and I organize or hold office in it, practice: [practice.union-member, practice.union-activist]}
+      - {id: party, text: A political party, practice: [practice.party-member]}
+      - {id: revolutionary, text: A revolutionary organization, practice: [practice.revolutionary-org]}
+      - {id: tenants, text: A tenants' association, practice: [practice.tenant-assoc]}
+      - {id: congregation, text: A church, mosque, temple or congregation, practice: [practice.religious-community]}
+      - {id: business, text: An employers' or business association, practice: [practice.employer-assoc]}
+      - {id: professional, text: A professional association, practice: [practice.professional-body]}
+      - {id: community, text: A neighborhood or community group, practice: [practice.community-org]}
+      - {id: peasant, text: A peasant or landless workers' movement, practice: [practice.peasant-movement]}
+      - {id: solidarity, text: An international solidarity or anti-war group, practice: [practice.solidarity-org]}
+      - {id: ngo, text: An NGO or charity I volunteer for, practice: [practice.ngo]}
+      - {id: armed, text: An armed group or militia, practice: [practice.militia]}
+      - {id: none, text: None of these, practice: [practice.none]}
+
+  - id: module.practice.acts
+    type: practice
+    title: What you do
+    multi: true
+    text: In the last two years, which of these have you actually done? Pick all that apply.
+    why: This records reported practice, set beside your stated commitments in the results.
+    options:
+      - {id: vote, text: Voted, practice: [practice.vote]}
+      - {id: strike, text: Gone on strike, practice: [practice.strike]}
+      - {id: protest, text: Gone to a protest, practice: [practice.protest]}
+      - {id: direct, text: Taken part in an occupation, blockade or other direct action, practice: [practice.direct-action]}
+      - {id: mutual-aid, text: Taken part in mutual aid, practice: [practice.mutual-aid]}
+      - {id: boycott, text: Joined an organized boycott or divestment campaign aimed at a firm or state abroad, practice: [practice.boycott-campaign]}
+      - {id: study, text: Met with a reading or study group, practice: [practice.study-group]}
+      - {id: donate, text: Donated money to a cause, practice: [practice.donate]}
+      - {id: charity, text: Given to charities working in poor countries, practice: [practice.charity-abroad]}
+      - {id: post, text: Posted about politics online, practice: [practice.post-online]}
+      - {id: shop, text: Shopped ethically or avoided brands, practice: [practice.ethical-consumption]}
+      - {id: pray, text: Prayed or fasted for a political cause, practice: [practice.prayer]}
+      - {id: invest, text: Invested money in markets, practice: [practice.invest]}
+      - {id: manage, text: Managed or disciplined other people's work, practice: [practice.manage]}
+      - {id: lobby, text: Lobbied officials or funded campaigns for my business or sector, practice: [practice.lobby]}
+      - {id: arms, text: Worked in arms production or the military, practice: [practice.arms-work]}
+      - {id: none, text: None of these, practice: [practice.none]}
+
+  - id: module.trajectory.from
+    type: trajectory
+    title: Where you came from
+    field: from
+    text: Think of yourself at twenty, or ten years ago if you're younger than thirty. Compared with then, your politics are...
+    why: This records the direction of your political motion.
+    options:
+      - {id: same, text: About the same, value: about the same}
+      - {id: left, text: Further toward equality and the left, value: moved left}
+      - {id: right, text: Further toward order, tradition or the right, value: moved right}
+      - {id: radical, text: More radical, in whatever direction, value: more radical}
+      - {id: moderate, text: Calmer and more cautious, value: calmer and more cautious}
+      - {id: faith, text: More shaped by faith, value: more religious}
+      - {id: none, text: I had no politics then, value: no politics then}
+
+  - id: module.trajectory.mover
+    type: trajectory
+    title: What moved you
+    field: mover
+    multi: true
+    text: What has moved your politics most? Pick up to three.
+    why: This records where your politics came from, which the results set beside how you answer under pressure.
+    options:
+      - {id: work, text: Something that happened at work, value: work}
+      - {id: money, text: Money trouble, debt or losing a home, value: money trouble}
+      - {id: family, text: My family, value: family}
+      - {id: faith, text: My faith or religious community, value: faith}
+      - {id: school, text: School or university, value: school}
+      - {id: books, text: Books, value: books}
+      - {id: media, text: News, podcasts or social media, value: media}
+      - {id: org, text: An organization I joined, value: an organization}
+      - {id: event, text: A war, crisis, uprising or election I lived through, value: a historical event}
+      - {id: injustice, text: Seeing an injustice done to me or someone close, value: an injustice up close}
+      - {id: travel, text: Living or working in another country, value: another country}
