@@ -294,7 +294,8 @@ if (isMain) {
   if (errors.length) {
     console.error(`\n${errors.length} errors`);
     for (const e of errors.slice(0, args.has('--verbose') ? 100000 : 150)) console.error('  ' + e);
-    process.exit(1);
+    if (!args.has('--force')) process.exit(1);
+    console.error('--force: writing the bundle despite errors (development only)');
   }
   if (!args.has('--lint-only')) {
     mkdirSync(distDir, { recursive: true });

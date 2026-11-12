@@ -5,18 +5,15 @@ import type { Session } from './types.js';
 function b64url(bytes: Uint8Array): string {
   let s = '';
   for (let i = 0; i < bytes.length; i++) s += String.fromCharCode(bytes[i]!);
-  const b64 = typeof btoa === 'function' ? btoa(s) : Buffer.from(bytes).toString('base64');
+  const b64 = btoa(s);
   return b64.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
 }
 function fromB64url(s: string): Uint8Array {
   const b64 = s.replace(/-/g, '+').replace(/_/g, '/') + '==='.slice((s.length + 3) % 4);
-  if (typeof atob === 'function') {
-    const bin = atob(b64);
-    const out = new Uint8Array(bin.length);
-    for (let i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
-    return out;
-  }
-  return new Uint8Array(Buffer.from(b64, 'base64'));
+  const bin = atob(b64);
+  const out = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
+  return out;
 }
 
 export function stripSituation(session: Session): Session {
