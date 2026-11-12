@@ -1,0 +1,761 @@
+# History, part 2: the Vietnamese and Iranian revolutions and the USSR by period.
+# See history.yaml for the index of history files.
+problematics:
+  # ------------------------------------------------------------------
+  - id: hist.vietnamese-revolution
+    domain: history
+    layer: analysis
+    question: What was the Vietnamese Revolution, from the August Revolution of 1945 to reunification in 1975?
+    plain: >-
+      Vietnam declared independence in 1945, defeated France at Dien Bien Phu in 1954, and after a long war with the United States and
+      the Saigon government reunified in 1975. Millions died. What was it?
+    short: the Vietnamese Revolution
+    importance: 2
+    region: history
+    positions:
+      - id: hist.vietnamese-revolution.national-liberation
+        label: A war of national liberation, led by communists, for independence and unity
+        claim: >-
+          The Vietnamese people, led by Ho Chi Minh's party, fought thirty years to free their country from France, Japan and the United
+          States and to reunify it. The southern state was a creation of foreign powers.
+        voiced: >-
+          "Nothing is more precious than independence and liberty. We fought the French, the Japanese and the Americans
+          for one Vietnam, and we won."
+        you: You see the Vietnamese Revolution as a whole nation's fight for independence, led by its communists.
+        because: >-
+          The 1954 Geneva Accords divided Vietnam temporarily and called for national elections in 1956; Diem and Washington refused them,
+          and Eisenhower later wrote that Ho would likely have won some 80 percent. The southern government depended on US money and troops,
+          and the National Liberation Front recruited southerners against it. A small peasant nation outlasted the strongest military on earth
+          because its cause was its own.
+        against:
+          - from: conservatism.neo
+            text: >-
+              Hanoi ran the southern insurgency from the start and invaded with its regular army in 1975; after victory it sent hundreds of
+              thousands to re-education camps and drove out the boat people.
+          - from: marxism.trotskyism
+            text: >-
+              The "national" front was a Stalinist one: the Viet Minh murdered the Trotskyist leaders of the Saigon workers in 1945.
+        sources:
+          - {author: Ho Chi Minh, title: "Declaration of Independence of the Democratic Republic of Viet-Nam", year: 1945}
+          - {author: Vo Nguyen Giap, title: "People's War, People's Army", year: 1961}
+          - {author: Gabriel Kolko, title: "Anatomy of a War: Vietnam, the United States, and the Modern Historical Experience", year: 1985}
+        traditions:
+          defining: [marxism.ml]
+          typical: [marxism.maoism, marxism.third-worldism, marxism.scc, nationalism.pan-africanism]
+          rejects: [conservatism.neo, conservatism.fusionism]
+        presupposes: [intl.sovereignty.nations-set-own-course]
+        excludes: [hist.vietnamese-revolution.northern-conquest, hist.vietnamese-revolution.defensible-war-lost]
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: [finance-capital, comprador-capital, landed-capital]
+          mechanism: >-
+            Treating the war as national liberation legitimates armed resistance to foreign occupation and client states, which raises the
+            cost to core powers of securing raw materials and markets by force.
+          drain: breaks
+          law_of_value: suspends
+      - id: hist.vietnamese-revolution.defensible-war-lost
+        label: A defensible war to save the South from communism, lost at home
+        claim: >-
+          South Vietnam was a real state threatened by a communist North armed by Moscow and Beijing. The US cause was just; the war was
+          winnable after 1968 and was lost when Congress cut aid to Saigon.
+        voiced: >-
+          "We won the war on the ground by 1972 and threw the victory away in Washington. Then the bloodbath came, in the camps,
+          on the boats, and in Cambodia."
+        you: You think the US was right to fight in Vietnam and that its defeat was a political failure at home.
+        because: >-
+          After Tet, the southern insurgency was badly weakened and General Abrams's strategy of pacification worked (Sorley). The 1972
+          Easter Offensive was beaten back with US air power. When Congress cut aid in 1974–75, the North invaded with tanks. What followed,
+          re-education camps, the flight of perhaps a million boat people and the Khmer Rouge next door, vindicated the war's purpose.
+        against:
+          - from: liberalism.internationalist
+            text: >-
+              No amount of US firepower could build a government in Saigon that southerners would fight for. The war killed some two to
+              three million Vietnamese for a client state.
+          - from: marxism.ml
+            text: >-
+              The "just cause" included free-fire zones, Agent Orange, My Lai and the heaviest bombing in history; the Phoenix Program
+              killed tens of thousands of suspected cadre.
+        sources:
+          - {author: Mark Moyar, title: "Triumph Forsaken: The Vietnam War, 1954–1965", year: 2006}
+          - {author: Lewis Sorley, title: "A Better War", year: 1999}
+          - {author: Norman Podhoretz, title: "Why We Were in Vietnam", year: 1982}
+        traditions:
+          defining: [conservatism.neo]
+          typical: [conservatism.fusionism, conservatism.evangelical-right]
+          rejects: [marxism.ml, liberalism.internationalist, marxism.third-worldism]
+        presupposes: [intl.sovereignty.conditional-on-rights]
+        excludes: [hist.vietnamese-revolution.national-liberation]
+        analysis:
+          gains: [finance-capital, industrial-capital, comprador-capital]
+          pays: [peasantry, peripheral-workers, core-workers]
+          mechanism: >-
+            Holding that the war was winnable and just turns defeat into a lesson in resolve, which sustains the military budgets and the
+            willingness to intervene that secure core access to the periphery, paid for by conscripts and taxpayers at home and lives abroad.
+          drain: sustains
+          law_of_value: extends
+      - id: hist.vietnamese-revolution.tragic-mistake
+        label: A civil war the US blundered into, a tragic mistake
+        claim: >-
+          The US misread a nationalist civil war as a front in a global Cold War and escalated step by step to defend a weak client.
+          Good intentions and bad knowledge produced a disaster for both countries.
+        voiced: >-
+          "We were wrong, terribly wrong. We failed to see that Ho was a nationalist first and that the South had no government
+          its people would die for."
+        you: You see the Vietnam War as a terrible mistake by US leaders who did not understand the country.
+        because: >-
+          McNamara admitted in 1995 that the decision-makers knew the war was likely unwinnable by 1966–67 and went on. FitzGerald and Logevall
+          show how ignorance of Vietnamese history, domino thinking and fear of looking weak at home drove escalation. The lesson is humility
+          and better judgment, not a change of system.
+        against:
+          - from: marxism.dependency
+            text: >-
+              Calling it a mistake hides the interest. The Pentagon Papers record planners worried about Southeast Asia's rubber, tin and rice
+              and its markets for Japan. A war fought for twenty years across five administrations is a policy, not a blunder.
+          - from: conservatism.neo
+            text: >-
+              "Mistake" concedes the communist case and forgets the people who fled the victors.
+        sources:
+          - {author: Robert S. McNamara, title: "In Retrospect: The Tragedy and Lessons of Vietnam", year: 1995}
+          - {author: Frances FitzGerald, title: "Fire in the Lake", year: 1972}
+          - {author: Fredrik Logevall, title: "Embers of War: The Fall of an Empire and the Making of America's Vietnam", year: 2012}
+        traditions:
+          defining: [liberalism.internationalist]
+          typical: [liberalism.social, liberalism.progressive, socdem.third-way]
+          rejects: [marxism.third-worldism, conservatism.neo]
+        presupposes: [imperialism.nature.foreign-policy-choice]
+        analysis:
+          gains: [professional-managerial, finance-capital]
+          pays: [peripheral-workers]
+          mechanism: >-
+            Explaining the war by misjudgment locates the problem in the competence of officials, which preserves the institutions and
+            interests that made the war and invites better-managed interventions later.
+          drain: softens
+          law_of_value: none
+          method: idealist
+      - id: hist.vietnamese-revolution.northern-conquest
+        label: A northern communist conquest of a separate South Vietnam
+        claim: >-
+          The Republic of Vietnam was a flawed but real state with its own nationalists, religions and parties. Hanoi conquered it, sent
+          hundreds of thousands to re-education camps, and drove out the boat people.
+        voiced: >-
+          "We were Vietnamese nationalists too. We lost our country in 1975, and many of us lost our fathers to the camps
+          and our children to the sea."
+        you: You see 1975 as the fall of a southern nation to a communist North, and you remember those who fled.
+        because: >-
+          Southern nationalists, Catholics, the Hoa Hao and Cao Dai, and many Buddhists opposed the communists on their own account. Tuong Vu
+          shows from party documents that Hanoi's leaders were committed communists aiming at a Soviet-style order, not merely nationalists.
+          After 1975 private trade was abolished, re-education camps held many for years without trial, and hundreds of thousands fled by sea.
+        against:
+          - from: marxism.ml
+            text: >-
+              The southern state was founded by a French-trained army and a Catholic minority government imposed with US money; it cancelled the
+              1956 elections because it would have lost them.
+          - from: religious.engaged-buddhism
+            text: >-
+              Diem's government shot Buddhist protesters in Hue in 1963; Thich Quang Duc burned himself against it, not against Hanoi.
+        sources:
+          - {author: Edward Miller, title: "Misalliance: Ngo Dinh Diem, the United States, and the Fate of South Vietnam", year: 2013}
+          - {author: Tuong Vu, title: "Vietnam's Communist Revolution: The Power and Limits of Ideology", year: 2017}
+        traditions:
+          typical: [conservatism.neo, conservatism.christian-democracy, nationalism.civic]
+          rejects: [marxism.ml]
+        excludes: [hist.vietnamese-revolution.national-liberation]
+        analysis:
+          gains: [comprador-capital, landed-capital, petty-bourgeoisie]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >-
+            Treating the southern state as a nation in its own right legitimates the partition that kept a client government and its
+            landowning and merchant base in place under foreign protection.
+          drain: sustains
+          law_of_value: extends
+      - id: hist.vietnamese-revolution.stalinists-stopped-short
+        label: A revolution whose Stalinist leaders killed the Trotskyists and stopped short
+        claim: >-
+          The anti-colonial victory was real, but the Viet Minh leadership killed the Trotskyists and suppressed the workers' and peasants'
+          committees of 1945, and built a bureaucratic state on the Chinese and Soviet model.
+        voiced: >-
+          "In Saigon in 1945 the workers and peasants set up their own committees. The Stalinists dissolved them, and murdered
+          Ta Thu Thau and our comrades."
+        you: You support Vietnam's independence but think its communist leaders crushed the revolution from below.
+        because: >-
+          Trotskyists led much of the Saigon labor movement in the 1930s and won municipal elections with the La Lutte group; in 1945
+          Viet Minh units killed Ta Thu Thau and others. The northern land reform of 1953–56 executed thousands, a toll the party itself
+          admitted in its "rectification of errors". Ngo Van, a survivor, recorded it.
+        against:
+          - from: marxism.ml
+            text: >-
+              In 1945 the French were returning with British help. Rival armed groups threatening the front had to be dealt with, and
+              the party publicly corrected its land reform errors.
+          - from: marxism.maoism
+            text: >-
+              The Trotskyists were a few hundred intellectuals in Saigon; the revolution was made by millions of peasants they did not reach.
+        sources:
+          - {author: Ngo Van, title: "In the Crossfire: Adventures of a Vietnamese Revolutionary", year: 2010}
+          - {author: Huynh Kim Khanh, title: "Vietnamese Communism, 1925–1945", year: 1982}
+        traditions:
+          defining: [marxism.trotskyism]
+          typical: [marxism.council-communism, anarchism.communist, marxism.third-camp]
+          rejects: [marxism.ml, marxism.maoism]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [professional-managerial]
+          mechanism: >-
+            The reading supports national independence while organizing against the party-state that comes with it, which defends workers
+            and peasants from new managers but divides the anti-imperialist front during the war.
+          drain: reduces
+          law_of_value: suspends
+      - id: hist.vietnamese-revolution.peoples-war-proved
+        label: The victory that proved a peasant nation could defeat the strongest empire
+        claim: >-
+          Vietnam's victory showed the whole South that people's war could beat the United States. It ignited a generation of liberation
+          movements and the revolt of 1968 inside the core countries themselves.
+        voiced: >-
+          "How close we could look into a bright future should two, three or many Vietnams flourish throughout the world."
+        you: You see Vietnam's victory as a turning point for every colonized people.
+        because: >-
+          At the war's height more than half a million US troops and the heaviest bombing in history did not break the NLF and the northern
+          army. The war split US society, ended the draft and fed the movements of 1968 from Paris to Mexico City. For Guinea-Bissau,
+          Mozambique and Angola, Vietnam was proof that empire could be outlasted.
+        against:
+          - from: liberalism.internationalist
+            text: >-
+              The war's "lesson" was paid for with millions of Vietnamese dead and a poor, closed country for a decade after; it was not
+              a model to copy.
+          - from: marxism.trotskyism
+            text: >-
+              Celebrating the victory without asking who ruled afterwards repeats the error of making Hanoi's leaders the measure of the
+              revolution.
+        sources:
+          - {author: Ernesto Che Guevara, title: "Message to the Tricontinental", year: 1967}
+          - {author: Vo Nguyen Giap, title: "People's War, People's Army", year: 1961}
+        traditions:
+          defining: [marxism.guevarism, marxism.third-worldism]
+          typical: [marxism.mlm, marxism.maoism, marxism.african-socialism]
+          rejects: [conservatism.neo]
+        presupposes: [imperialism.nature.monopoly-stage]
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >-
+            Reading Vietnam as proof that empire can be beaten raises the political cost of intervention for core states and the morale of
+            movements contesting the drain across the periphery.
+          drain: breaks
+          law_of_value: suspends
+          consciousness: hegemonic
+      - id: hist.vietnamese-revolution.both-sides-war-on-peasants
+        label: A war both sides waged on the peasants, with no room for a third way
+        claim: >-
+          Vietnamese Buddhists who wanted peace, reconciliation and independence were crushed between the Saigon government and the communists.
+          The war was fought over the peasants' heads, and its victims were mostly the peasants.
+        voiced: >-
+          "The people of Vietnam want neither the communists nor the Americans; they want to live. Peace is every step."
+        you: You think the Vietnam War crushed those who wanted peace and independence without either side's guns.
+        because: >-
+          The Buddhist movement of 1963–66 brought down Diem and demanded negotiations and the withdrawal of foreign troops; it was suppressed
+          by Saigon and later restricted by Hanoi. Most of the dead were villagers, killed by bombs, artillery and reprisals from both sides.
+          A movement rooted in the villages' own religion was the real third force.
+        against:
+          - from: marxism.ml
+            text: >-
+              Neutralism without force had no answer to half a million foreign troops. Only armed struggle ended the bombing.
+          - from: conservatism.neo
+            text: >-
+              The Buddhist "third force" was infiltrated by communist cadres and weakened the South at the worst moment.
+        sources:
+          - {author: Thich Nhat Hanh, title: "Vietnam: Lotus in a Sea of Fire", year: 1967}
+          - {author: Nick Turse, title: "Kill Anything That Moves: The Real American War in Vietnam", year: 2013}
+        traditions:
+          defining: [religious.engaged-buddhism]
+          typical: [anarchism.christian]
+          rejects: [marxism.ml, conservatism.neo]
+        analysis:
+          gains: [peasantry]
+          pays: [industrial-capital]
+          mechanism: >-
+            Refusing both armies puts the peasant victims at the center and turns opinion against the war, while offering no means by
+            which those peasants could win the land or sovereignty the war was about.
+          drain: softens
+          law_of_value: none
+  # ------------------------------------------------------------------
+  - id: hist.iranian-revolution
+    domain: history
+    layer: analysis
+    question: What was the Iranian Revolution of 1978–79?
+    plain: >-
+      Mass strikes and demonstrations drove the Shah from Iran in January 1979. Ayatollah Khomeini's followers then built an Islamic Republic,
+      fought an eight-year war with Iraq, and crushed their former allies on the left. What was it?
+    short: the Iranian Revolution
+    importance: 2
+    region: history
+    positions:
+      - id: hist.iranian-revolution.islamic-revolution
+        label: An Islamic revolution that restored God's law and Iran's independence
+        claim: >-
+          The Iranian people, guided by the clergy, overthrew a Western-backed monarchy and founded a state governed by Islamic law under the
+          guardianship of a qualified jurist, independent of both East and West.
+        voiced: >-
+          "Neither East nor West, Islamic Republic. The oppressed rose under the banner of Islam and broke the idol of the Shah."
+        you: You see the Iranian Revolution as a people restoring their faith and independence against a foreign-backed king.
+        because: >-
+          The Shah was restored by the 1953 CIA–MI6 coup against Mossadegh, ruled through the SAVAK secret police and served as Washington's
+          gendarme in the Gulf. The clergy was the one institution with roots in every town and bazaar, and Khomeini's call united the poor,
+          the merchants and the students. The Islamic Republic has resisted war, sanctions and assassination for four decades.
+        against:
+          - from: liberalism.classical
+            text: >-
+              The guardianship of the jurist puts an unelected cleric above every elected body; the state has executed thousands of political
+              prisoners, most notoriously in 1988, and forces women to veil.
+          - from: marxism.third-camp
+            text: >-
+              The revolution was made by oil workers' strikes and street committees; the clergy captured it and destroyed the workers' councils.
+        sources:
+          - {author: Ruhollah Khomeini, title: "Velayat-e Faqih (Islamic Government)", year: 1970}
+          - {author: Hamid Dabashi, title: "Theology of Discontent: The Ideological Foundation of the Islamic Revolution in Iran", year: 1993}
+        traditions:
+          defining: [religious.islamism-khomeinist]
+          typical: [religious.islamism-brotherhood]
+          rejects: [conservatism.monarchist, liberalism.classical, marxism.third-camp]
+        presupposes: [history.motor.providence]
+        excludes: [hist.iranian-revolution.theocratic-reaction]
+        analysis:
+          gains: [petty-bourgeoisie, professional-managerial, comprador-capital]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >-
+            Treating the revolution as Islam's restoration legitimates clerical command of the state and of the large foundations (bonyads)
+            that took over the Shah's property, which reduces the drain to Western firms while placing workers under a new religious-commercial
+            ruling bloc.
+          drain: reduces
+          law_of_value: regulates
+          disputed: Materialists split on whether the Islamic Republic's anti-imperialism outweighs its class character (Tudeh before 1983 versus the left it jailed).
+      - id: hist.iranian-revolution.hijacked
+        label: A broad popular revolution hijacked by the clergy
+        claim: >-
+          Students, oil workers, bazaar merchants, women, national minorities, liberals and the left made the revolution together. The clergy
+          outmaneuvered and then crushed every other force between 1979 and 1983.
+        voiced: >-
+          "We fought the Shah for bread, freedom and independence. They gave us the hijab law, the firing squad and the Revolutionary Guards."
+        you: You think the Iranian Revolution belonged to everyone who made it and was stolen by the clerics.
+        because: >-
+          Women marched against compulsory veiling on 8 March 1979; Kurdish and Turkmen autonomy movements were attacked that year; the liberal
+          Bazargan government resigned in November; the Mojahedin were crushed from June 1981 and the Tudeh party in 1983. Abrahamian documents
+          how a clerical faction used the US embassy siege and the Iraqi invasion to rally the nation behind itself.
+        against:
+          - from: religious.islamism-khomeinist
+            text: >-
+              The millions in the streets chanted for Islam and for Khomeini. The left and the liberals were small groups claiming a revolution
+              the people made for their faith.
+          - from: marxism.ml
+            text: >-
+              The left groups that took up arms against the Republic in 1981 did so during a foreign invasion and some later fought on Iraq's side.
+        sources:
+          - {author: Ervand Abrahamian, title: "A History of Modern Iran", year: 2008}
+          - {author: Haideh Moghissi, title: "Populism and Feminism in Iran", year: 1994}
+          - {author: Charles Kurzman, title: "The Unthinkable Revolution in Iran", year: 2004}
+        traditions:
+          defining: [socdem.democratic-socialism]
+          typical: [liberalism.social, feminism.liberal, marxism.trotskyism, nationalism.civic, feminism.decolonial]
+          rejects: [religious.islamism-khomeinist]
+        tension: [hist.iranian-revolution.anti-imperialist-break]
+        analysis:
+          gains: [professional-managerial, core-workers]
+          pays: [petty-bourgeoisie]
+          mechanism: >-
+            Reading the revolution as stolen backs civil and labor rights against the clerical state, which serves Iran's salaried middle
+            classes and workers, and is also the reading Western governments use to justify sanctions that fall on the same people.
+          drain: none
+          law_of_value: none
+      - id: hist.iranian-revolution.anti-imperialist-break
+        label: An anti-imperialist revolution that broke the US hold on Iran
+        claim: >-
+          Whatever its ideology, the revolution ended a US client state installed by the 1953 coup, took oil and Gulf policy out of
+          Washington's hands, and has paid for it with war, sanctions and isolation.
+        voiced: >-
+          "The Shah was the American policeman of the Gulf. 1979 took the region's second-biggest oil state out of the empire's hands,
+          and the empire has never forgiven it."
+        you: You judge the Iranian Revolution mainly by the blow it dealt to US power in the Middle East.
+        because: >-
+          Under the Shah, a consortium of Western oil companies took a large share of Iran's oil revenue and Iran was the largest buyer of US
+          arms. After 1979 Iran set its own oil policy and backed movements opposed to Israel and the US. The Iraqi invasion of 1980, backed
+          by the Gulf monarchies and the West, and decades of sanctions show how the core treats a state that leaves its orbit.
+        against:
+          - from: marxism.third-camp
+            text: >-
+              Anti-Americanism is not anti-imperialism. The Islamic Republic jails strikers and runs its own sphere of influence in Iraq,
+              Syria and Lebanon.
+          - from: liberalism.internationalist
+            text: >-
+              Calling a theocracy "anti-imperialist" excuses the hanging of dissidents in the name of geopolitics.
+        sources:
+          - {author: Ervand Abrahamian, title: "The Coup: 1953, the CIA, and the Roots of Modern U.S.-Iranian Relations", year: 2013}
+          - {author: Fred Halliday, title: "Iran: Dictatorship and Development", year: 1979}
+        traditions:
+          defining: [marxism.third-worldism]
+          typical: [nationalism.eurasianism, nationalism.bolivarianism]
+          contested: [marxism.ml, marxism.maoism, religious.islamic-socialism]
+          rejects: [conservatism.neo, liberalism.internationalist]
+        presupposes: [intl.sovereignty.nations-set-own-course, intl.sanctions.economic-war]
+        analysis:
+          gains: [peripheral-workers, petty-bourgeoisie]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >-
+            Measuring the revolution by its break with US power puts sovereign control of oil and foreign policy first, which reduces the
+            share of Gulf oil rent flowing to core firms, and treats the Iranian ruling bloc's treatment of its own workers as secondary.
+          drain: reduces
+          law_of_value: none
+          disputed: Many Iranian Marxists hold that the Islamic Republic is a capitalist state whose anti-imperialism is rivalry for regional influence.
+      - id: hist.iranian-revolution.theocratic-reaction
+        label: A theocratic reaction that threw away a modernizing nation
+        claim: >-
+          The Shah gave land to peasants, votes to women and schools to the villages. An alliance of clergy and leftists overthrew a modernizing
+          monarchy and plunged Iran into theocracy, war and isolation.
+        voiced: >-
+          "My father and I dragged Iran into the twentieth century. The mullahs dragged it back to the seventh, with the help
+          of Western liberals who wanted a revolution."
+        you: You see 1979 as a step backwards for Iran, from modernization to clerical rule.
+        because: >-
+          The White Revolution of 1963 broke up large estates, enfranchised women and sent literacy corps to the villages; Iran's economy grew fast
+          through the 1960s and 1970s. Women lost legal rights after 1979, from family law to dress. The clergy that led the reaction had
+          opposed land reform and women's suffrage from the start.
+        against:
+          - from: marxism.third-worldism
+            text: >-
+              The Shah's modernization was built on oil revenue shared with Western firms, a US-trained secret police and the largest US arms
+              purchases of the decade. The land reform left most peasants with too little land and drove millions into urban shanties.
+          - from: religious.islamism-khomeinist
+            text: >-
+              The "modernization" was Westoxication: a court that celebrated 2,500 years of monarchy at Persepolis while the poor
+              of south Tehran lived in mud.
+        sources:
+          - {author: Mohammad Reza Pahlavi, title: "Answer to History", year: 1980}
+          - {author: Abbas Milani, title: "The Shah", year: 2011}
+        traditions:
+          defining: [conservatism.monarchist]
+          typical: [nationalism.kemalism, conservatism.neo]
+          rejects: [religious.islamism-khomeinist, marxism.ml]
+        excludes: [hist.iranian-revolution.islamic-revolution]
+        analysis:
+          gains: [comprador-capital, finance-capital, landed-capital]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >-
+            Restoring the Shah's order as the model means a modernizing autocracy allied to the US, with oil revenue shared with Western
+            firms and arms makers and labor organized only by the state.
+          drain: sustains
+          law_of_value: extends
+      - id: hist.iranian-revolution.red-shiism-betrayed
+        label: A revolution of the oppressed in Islam's idiom, betrayed by the clergy
+        claim: >-
+          Shariati's revolutionary Shi'ism taught that Islam is the faith of the oppressed against tyrants and exploiters. That spirit made
+          the revolution; the clerical establishment turned it into a new tyranny.
+        voiced: >-
+          "Every day is Ashura, every land is Karbala. Red Shi'ism of martyrdom against Black Shi'ism of the court clergy."
+        you: You think the revolution's true spirit was Islamic and egalitarian, and that the ruling clergy betrayed it.
+        because: >-
+          Ali Shariati's lectures at the Hosseiniyeh Ershad filled halls in the early 1970s and gave the young a revolutionary Islam that
+          spoke of class and colonialism. The Mojahedin-e Khalq and many lay Muslims fought for it. The guardianship of the jurist put the
+          establishment clergy Shariati attacked back in command.
+        against:
+          - from: religious.islamism-khomeinist
+            text: >-
+              Shariati's Islam without the jurists was Marxism with a turban; the Mojahedin proved it by allying with Saddam Hussein.
+          - from: marxism.classical
+            text: >-
+              Religion as a revolutionary idiom still hands authority to whoever interprets the texts; that is why the clergy won.
+        sources:
+          - {author: Ali Shariati, title: "Marxism and Other Western Fallacies: An Islamic Critique", year: 1980}
+          - {author: Ervand Abrahamian, title: "The Iranian Mojahedin", year: 1989}
+        traditions:
+          defining: [religious.islamic-socialism]
+          typical: [religious.liberation-theology]
+          contested: [religious.post-islamism]
+          rejects: [religious.islamism-khomeinist, conservatism.monarchist]
+        analysis:
+          gains: [peripheral-workers, peasantry, petty-bourgeoisie]
+          pays: [comprador-capital, finance-capital]
+          mechanism: >-
+            Fusing Islam with the cause of the oppressed mobilizes believing workers and the poor against both foreign capital and
+            clerical-commercial wealth, in the language they already speak.
+          drain: reduces
+          law_of_value: regulates
+      - id: hist.iranian-revolution.change-of-owners
+        label: A change of owners, not of class rule
+        claim: >-
+          The workers' councils that ran the oil fields and factories in 1979 were dissolved within two years. The Shah's property passed to
+          clerical foundations and the Revolutionary Guards; Iran stayed a capitalist state with new owners.
+        voiced: >-
+          "The shoras ran the refineries; the Islamic associations broke them. The bazaar and the clergy took the Pahlavi fortune
+          and called it the property of the dispossessed."
+        you: You think the Iranian Revolution swapped the owners of Iran's wealth without freeing the people who produce it.
+        because: >-
+          The oil strike of autumn 1978 broke the Shah. Factory councils took over many plants after February 1979 and were replaced by
+          state-sponsored Islamic associations and labor law by 1981–82. The Foundation of the Oppressed took over the Pahlavi Foundation's
+          holdings and became one of the largest business groups in the region, answerable only to the Leader.
+        against:
+          - from: religious.islamism-khomeinist
+            text: >-
+              The foundations serve martyrs' families, veterans and the poor; Iran built more rural roads, clinics and power lines in a decade
+              than the Shah did in thirty years.
+          - from: marxism.third-worldism
+            text: >-
+              Treating the change of owners as nothing leaves out the rupture with the West and the cost Iran has borne for it.
+        sources:
+          - {author: Asef Bayat, title: "Workers and Revolution in Iran: A Third World Experience of Workers' Control", year: 1987}
+          - {author: Saeed Rahnema and Sohrab Behdad, title: "Iran After the Revolution: Crisis of an Islamic State", year: 1995}
+        traditions:
+          defining: [marxism.third-camp]
+          typical: [marxism.left-communism, marxism.council-communism, anarchism.syndicalist, marxism.trotskyism]
+          rejects: [religious.islamism-khomeinist]
+        presupposes: [class.concept.relation-to-production]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [comprador-capital, petty-bourgeoisie]
+          mechanism: >-
+            Insisting that ownership by clergy and guards is still class rule points Iranian workers toward independent councils and unions,
+            which threaten both the foundations' revenue and the state's control of labor.
+          drain: none
+          law_of_value: abolishes
+  # ------------------------------------------------------------------
+  - id: hist.ussr-early
+    domain: history
+    layer: analysis
+    question: What was Soviet Russia in 1917–1928, through civil war, War Communism, Kronstadt and the NEP?
+    plain: >-
+      In its first decade Soviet power fought a civil war against White armies and foreign interventions, banned the other parties,
+      crushed the Kronstadt sailors' rising in 1921, and then let markets back under the New Economic Policy. Where would you have stood?
+    short: the early Soviet state
+    importance: 2
+    region: history
+    positions:
+      - id: hist.ussr-early.besieged-necessity
+        label: A besieged workers' state doing what survival required
+        claim: >-
+          Soviet power faced White armies, the troops of more than a dozen foreign states and economic blockade. The Cheka, one-party rule and
+          grain requisition were emergency measures without which the revolution would have been drowned in blood.
+        voiced: >-
+          "The dictatorship of the proletariat is a fierce war against a more powerful enemy. Those who wanted the revolution
+          without the Cheka wanted Kolchak without saying so."
+        you: You think the early Soviet state's harsh measures were forced on it by war and intervention.
+        because: >-
+          British, French, US, Japanese and other forces landed from Arkhangelsk to Vladivostok; the White armies shot and hanged prisoners and
+          their pogroms killed tens of thousands of Jews in Ukraine. Industry had collapsed and the cities were starving. Every concession the
+          Bolsheviks made after victory, from the NEP to national autonomy, shows the earlier measures were forced, not chosen.
+        against:
+          - from: anarchism.communist
+            text: >-
+              The Cheka was founded in December 1917 and opposition socialists jailed in spring 1918, before the major interventions. Kronstadt
+              in 1921 came after the Whites were beaten.
+          - from: liberalism.classical
+            text: >-
+              Requisition squads seizing seed grain helped cause the 1921–22 famine, which killed around five million people.
+        sources:
+          - {author: Leon Trotsky, title: "Terrorism and Communism", year: 1920}
+          - {author: E. H. Carr, title: "The Bolshevik Revolution, 1917–1923", year: 1950}
+          - {author: Lars T. Lih, title: "Bread and Authority in Russia, 1914–1921", year: 1990}
+        traditions:
+          defining: [marxism.leninism, marxism.ml]
+          typical: [marxism.trotskyism, marxism.maoism, marxism.hoxhaism]
+          rejects: [anarchism.communist, liberalism.classical, marxism.council-communism]
+        presupposes: [emergency.powers.need-overrides-property]
+        excludes: [hist.ussr-early.terror-state]
+        analysis:
+          gains: [core-workers, peasantry]
+          pays: [landed-capital, industrial-capital, finance-capital]
+          mechanism: >-
+            Holding that siege justifies emergency rule lets a revolutionary state suspend opposition rights to defend expropriation, which
+            secures workers' and peasants' gains against restoration while concentrating power in the party apparatus.
+          drain: breaks
+          law_of_value: suspends
+          consciousness: hegemonic
+      - id: hist.ussr-early.nep-road
+        label: The NEP was the right road, a market-based transition with the peasants
+        claim: >-
+          After 1921 the NEP let peasants sell their grain and small traders work while the state kept banks, heavy industry and foreign
+          trade. Lenin's last writings and Bukharin pointed to a long, gradual road to socialism through cooperation, not coercion.
+        voiced: >-
+          "Enrich yourselves! The peasant alliance is the foundation of Soviet power. We will ride into socialism on a peasant nag,
+          slowly, but we will get there."
+        you: You think the early Soviet state was right to use markets and win the peasants over gradually.
+        because: >-
+          The NEP restored agricultural and industrial output to roughly pre-war levels by 1926–27. Lenin's "On Cooperation" (1923) proposed
+          building socialism through peasant cooperatives over a whole epoch. Cohen shows that Bukharin's program was a coherent alternative
+          to forced collectivization, and China's reform era would later vindicate its core idea.
+        against:
+          - from: marxism.trotskyism
+            text: >-
+              The NEP fed kulaks and NEPmen while industry lagged; the 1927–28 grain crisis showed the peasant market could hold the cities
+              to ransom. Without planned industrialization the state would have been defenseless.
+          - from: marxism.ml
+            text: >-
+              A gradual road needed a decade of peace that the USSR did not have; the war came in 1941.
+        sources:
+          - {author: V. I. Lenin, title: "On Cooperation", year: 1923}
+          - {author: Nikolai Bukharin, title: "Notes of an Economist", year: 1928}
+          - {author: Stephen F. Cohen, title: "Bukharin and the Bolshevik Revolution", year: 1973}
+        traditions:
+          defining: [marxism.market-socialism]
+          typical: [marxism.scc, socdem.democratic-socialism]
+          contested: [marxism.leninism]
+          rejects: [marxism.trotskyism, marxism.hoxhaism]
+        tension: [hist.ussr-stalin.socialism-built]
+        analysis:
+          gains: [peasantry, petty-bourgeoisie, core-workers]
+          pays: [industrial-capital]
+          mechanism: >-
+            Favoring a market transition under state control of finance and trade lets peasants keep the proceeds of their harvest and spares
+            them requisition, while slowing the accumulation that heavy industry and defense require.
+          drain: reduces
+          law_of_value: regulates
+          disputed: Preobrazhensky and Trotsky's Left Opposition argued for faster "primitive socialist accumulation" from the peasantry; Bukharin opposed it.
+      - id: hist.ussr-early.workers-democracy-lost
+        label: Soviet democracy strangled by the party; the Workers' Opposition was right
+        claim: >-
+          The revolution's promise was rule by workers' councils and unions. From 1918 the party replaced them: one-person management in
+          factories, the ban on factions in 1921, and the party apparatus in place of the soviets.
+        voiced: >-
+          "Freedom only for the supporters of the government is no freedom at all. Without general elections and free struggle of opinion,
+          life dies out in every public institution."
+        you: You think the early Soviet state went wrong when the party took power away from the workers' councils.
+        because: >-
+          Luxemburg warned in 1918 that suppressing elections and the press would leave only the bureaucracy alive. Kollontai's Workers'
+          Opposition proposed in 1921 that the unions run industry; the Tenth Congress banned factions instead. Brinton shows that one-person
+          management and the subordination of the factory committees came early, as policy, not merely as emergency.
+        against:
+          - from: marxism.leninism
+            text: >-
+              In 1921 the working class was decimated and exhausted; handing industry to the unions would have handed it to chaos and the
+              Mensheviks. The ban on factions was meant as temporary.
+          - from: anarchism.communist
+            text: >-
+              The Workers' Opposition voted to crush Kronstadt. Its quarrel was over which Bolsheviks should rule.
+        sources:
+          - {author: Rosa Luxemburg, title: "The Russian Revolution", year: 1922}
+          - {author: Alexandra Kollontai, title: "The Workers' Opposition", year: 1921}
+          - {author: Maurice Brinton, title: "The Bolsheviks and Workers' Control, 1917–1921", year: 1970}
+        traditions:
+          defining: [marxism.luxemburgism, marxism.council-communism]
+          typical: [socdem.democratic-socialism, marxism.autonomism, marxism.third-camp]
+          rejects: [marxism.ml]
+        excludes: [hist.ussr-early.besieged-necessity]
+        analysis:
+          gains: [core-workers]
+          pays: [professional-managerial]
+          mechanism: >-
+            Holding that workers' councils, not the party, must run the state and industry defends workers against a managerial stratum, at
+            the cost of the central command that war and reconstruction demanded.
+          drain: none
+          law_of_value: abolishes
+      - id: hist.ussr-early.kronstadt-makhno
+        label: A revolution crushed by the Bolsheviks at Kronstadt and in free Ukraine
+        claim: >-
+          The sailors of Kronstadt, heroes of 1917, demanded free soviets in 1921 and were shot down. Makhno's peasant army, which beat the
+          Whites in Ukraine, was then destroyed by the Red Army. These were the third revolution the Bolsheviks put down.
+        voiced: >-
+          "All power to the soviets, not to parties! Kronstadt was the first step of the third revolution, and Trotsky had it shot."
+        you: You side with the Kronstadt sailors and Makhno's peasants against the Bolshevik state.
+        because: >-
+          The Kronstadt resolution of March 1921 asked for secret-ballot soviet elections, freedom of speech for socialist and anarchist
+          parties and an end to requisitioning, the same program the NEP partly adopted weeks later. Avrich shows the rising was not a White
+          plot. The Makhnovshchina organized free soviets and land redistribution across southern Ukraine until the Red Army turned on it.
+        against:
+          - from: marxism.trotskyism
+            text: >-
+              The fortress guarding Petrograd was in revolt with the ice about to melt and the White émigrés offering aid. No state at war
+              could have let it stand; the sailors of 1921 were not those of 1917.
+          - from: marxism.ml
+            text: >-
+              Makhno's army also carried out pogroms and requisitions; its "free territory" lived on the war and could not have survived
+              without the Red Army.
+        sources:
+          - {author: Paul Avrich, title: "Kronstadt 1921", year: 1970}
+          - {author: Peter Arshinov, title: "History of the Makhnovist Movement, 1918–1921", year: 1923}
+          - {author: Alexander Berkman, title: "The Bolshevik Myth", year: 1925}
+        traditions:
+          defining: [anarchism.communist, anarchism.platformist]
+          typical: [anarchism.syndicalist, anarchism.insurrectionary, marxism.council-communism]
+          rejects: [marxism.leninism, marxism.ml, marxism.trotskyism]
+        presupposes: [state.nature.hierarchy-as-such]
+        excludes: [hist.ussr-early.besieged-necessity]
+        analysis:
+          gains: [peasantry, core-workers]
+          pays: [professional-managerial]
+          mechanism: >-
+            Siding with the self-organized against the revolutionary state points movements to federated local councils and armed
+            self-defense without a central army, which protects peasants from requisition and leaves the federation exposed to stronger states.
+          drain: reduces
+          law_of_value: abolishes
+          disputed: Whether the Makhnovist army committed pogroms is disputed; anarchist historians cite Makhno's executions of pogromists.
+      - id: hist.ussr-early.terror-state
+        label: A terror state from its first months
+        claim: >-
+          Within weeks of October the Bolsheviks created the Cheka, closed opposition newspapers and outlawed the Kadets. The Red Terror of
+          1918 made mass killing of hostages and "class enemies" state policy, long before Stalin.
+        voiced: >-
+          "We are not waging war against individuals. We are exterminating the bourgeoisie as a class. Those were the Cheka's
+          own words, in 1918."
+        you: You think the Soviet state was built on terror from its very first months.
+        because: >-
+          The decree on the Red Terror of September 1918 authorized shooting hostages; the Cheka executed thousands that autumn alone.
+          The suppression of the Tambov peasant rising in 1920–21 used concentration camps and hostage-taking. Pipes and Melgunov document
+          that Lenin, not circumstance, demanded "mass terror", and the Cheka's own publications boasted of it.
+        against:
+          - from: marxism.ml
+            text: >-
+              The White Terror came first and killed more: Kolchak, Denikin and the Finnish Whites shot workers by the thousands. Counting
+              one side's terror and not the other's is propaganda.
+          - from: marxism.trotskyism
+            text: >-
+              Every revolution under civil war has had a terror, the English and French included; that does not make it the essence of the
+              regime it defended.
+        sources:
+          - {author: Sergei Melgunov, title: "Red Terror in Russia", year: 1924}
+          - {author: Richard Pipes, title: "Russia Under the Bolshevik Regime", year: 1993}
+        traditions:
+          defining: [conservatism.neo, liberalism.classical]
+          typical: [conservatism.monarchist, conservatism.fusionism, libertarianism.minarchist]
+          rejects: [marxism.leninism, marxism.ml, marxism.trotskyism]
+        presupposes: [hist.russian-revolution.crime-of-ideology]
+        excludes: [hist.ussr-early.besieged-necessity]
+        analysis:
+          gains: [finance-capital, landed-capital, industrial-capital]
+          pays: [core-workers, peasantry]
+          mechanism: >-
+            Reading the first Soviet years as terror by design denies any revolution the plea of siege, which makes expropriation of owners
+            indefensible however it is attempted.
+          drain: sustains
+          law_of_value: extends
+      - id: hist.ussr-early.social-experiment
+        label: The century's boldest social experiment in women's and national liberation
+        claim: >-
+          In a few years Soviet Russia legalized divorce and abortion, gave women equal rights, decriminalized homosexuality, granted
+          autonomy and schooling in their own languages to dozens of nations, and opened schools and universities to workers and peasants.
+        voiced: >-
+          "The family will wither away as the state does. Communal kitchens, crèches and laundries will free woman from the domestic slavery
+          that crushes her."
+        you: You see the early Soviet state as a burst of liberation for women, nations and culture, whatever came later.
+        because: >-
+          The 1918 family code made marriage civil and divorce simple; abortion was legalized in 1920, the first country to do so. The
+          policy of "rooting" (korenizatsiia) from 1923 promoted non-Russian languages and cadres. Fitzpatrick shows how the Commissariat of
+          Enlightenment opened education to millions. Much of this was reversed in the 1930s, which proves it was a real choice.
+        against:
+          - from: conservatism.traditionalist
+            text: >-
+              The "liberated" family produced millions of abandoned children, the besprizorniki, roaming the cities. The state itself
+              reversed the experiment in 1936 because it failed.
+          - from: marxism.ml
+            text: >-
+              Social laws without an industrial base were promises on paper; industrialization made them real.
+        sources:
+          - {author: Wendy Z. Goldman, title: "Women, the State and Revolution: Soviet Family Policy and Social Life, 1917–1936", year: 1993}
+          - {author: Sheila Fitzpatrick, title: "The Commissariat of Enlightenment", year: 1970}
+          - {author: Terry Martin, title: "The Affirmative Action Empire: Nations and Nationalism in the Soviet Union, 1923–1939", year: 2001}
+        traditions:
+          defining: [feminism.materialist]
+          typical: [socdem.democratic-socialism, marxism.trotskyism, marxism.social-reproduction, feminism.queer]
+          rejects: [conservatism.traditionalist, conservatism.integralism]
+        analysis:
+          gains: [core-workers, peasantry, reserve-army]
+          pays: [petty-bourgeoisie]
+          mechanism: >-
+            Holding up the early Soviet social laws as a model supports socializing care work and the rights of oppressed nations, which
+            transfers costs now carried unpaid by women in households onto public budgets.
+          drain: none
+          law_of_value: suspends

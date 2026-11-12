@@ -1,0 +1,1487 @@
+problematics:
+  # ------------------------------------------------------------------
+  - id: change.agent
+    domain: strategy
+    layer: strategy
+    question: Who makes change?
+    plain: When society really changes, who is doing the changing?
+    short: the agent of change
+    importance: 3
+    region: strategy
+    positions:
+      - id: change.agent.workers-as-class
+        label: The working class, acting as a class
+        claim: Change of any depth is made by wage workers acting together as a class, because they produce everything and can stop everything.
+        voiced: "The emancipation of the working classes must be conquered by the working classes themselves. Nobody will free us on our behalf."
+        you: You think real change comes when working people act together as a class, not when someone acts for them.
+        because: >
+          Workers are the majority in modern society and sit at the point where wealth is produced, so their
+          collective refusal halts profit, transport and the state's revenue at once. Unlike any other group
+          they have no property to defend in the existing order, so their interest leads past reform of it.
+          Every lasting gain, from the eight-hour day to public health systems, was won by organized labor.
+        against:
+          - from: liberalism.classical
+            text: >
+              Workers are individuals with different skills, ambitions and incomes. Treating them as one actor
+              with one interest is a fiction that hands power to whoever claims to speak for "the class".
+          - from: marxism.third-worldism
+            text: >
+              Workers in the rich countries share in the drain from the periphery. The decisive revolutionary
+              forces of the century were peasants and oppressed nations, not the industrial workers of the core.
+        sources:
+          - {author: "Karl Marx and Friedrich Engels", title: "Manifesto of the Communist Party", year: 1848}
+          - {author: "Karl Marx", title: "Provisional Rules of the International Working Men's Association", year: 1864}
+          - {author: "Rosa Luxemburg", title: "The Mass Strike, the Political Party and the Trade Unions", year: 1906}
+        traditions:
+          defining: [marxism.classical, marxism.leninism, anarchism.syndicalist, marxism.council-communism]
+          typical: [marxism.trotskyism, marxism.luxemburgism, marxism.left-communism, marxism.autonomism, anarchism.communist]
+          contested: [marxism.maoism, marxism.third-worldism]
+          rejects: [liberalism.classical, liberalism.austrian, conservatism.burkean, conservatism.national]
+        presupposes: [class.concept.relation-to-production]
+        excludes: [change.agent.entrepreneurs-and-individuals]
+        tension: [change.agent.peasants-and-oppressed-nations, change.agent.the-people-against-the-elite]
+        tags: [class, agency]
+        analysis:
+          gains: [core-workers, peripheral-workers, reserve-army]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Workers acting as one class can withhold labor across firms and sectors at once, which cuts profit at
+            its source and lets them press for control of production rather than better terms of sale for labor power.
+          drain: reduces
+          law_of_value: abolishes
+          disputed: >
+            Third Worldists (Emmanuel, Amin in part) argue that core workers acting as a class have defended their
+            share of imperial rents; orthodox Marxists and Trotskyists reply that this confuses reformist leadership with class action.
+          consciousness: hegemonic
+
+      - id: change.agent.peasants-and-oppressed-nations
+        label: Peasants and oppressed nations of the periphery
+        claim: The main force for change in this era is the rural poor and the oppressed nations of the global South, led by a revolutionary party.
+        voiced: "The countryside of the world surrounds the cities of the world. The storm is rising in Asia, Africa and Latin America."
+        you: You think the decisive force for change lies with the rural poor and the oppressed peoples of the South.
+        because: >
+          Most of the world's producers are peasants and workers in the periphery, and they bear the heaviest weight
+          of imperialism, so their interest in overturning it is sharpest. The revolutions that actually seized power
+          in the twentieth century (China, Vietnam, Cuba, Algeria, Guinea-Bissau) were made by armed peasantries and
+          national movements, not by the industrial proletariat of Europe.
+        against:
+          - from: marxism.trotskyism
+            text: >
+              Peasants are scattered small proprietors; they can be a mighty ally but cannot lead. Peasant armies led
+              by a party without a working-class base produce bureaucratic states, not workers' power.
+          - from: liberalism.internationalist
+            text: >
+              Poverty in the South is being reduced by trade, investment and institutions, not by peasant war. The
+              revolutions you cite left famines and one-party states behind them.
+        sources:
+          - {author: "Mao Zedong", title: "Report on an Investigation of the Peasant Movement in Hunan", year: 1927}
+          - {author: "Lin Biao", title: "Long Live the Victory of People's War!", year: 1965}
+          - {author: "Frantz Fanon", title: "The Wretched of the Earth", year: 1961}
+          - {author: "Amílcar Cabral", title: "The Weapon of Theory", year: 1966}
+        traditions:
+          defining: [marxism.maoism, marxism.mlm, marxism.third-worldism]
+          typical: [marxism.guevarism, marxism.african-socialism, marxism.dependency]
+          contested: [marxism.ml, marxism.mariategui]
+          rejects: [marxism.trotskyism, marxism.council-communism, marxism.left-communism, liberalism.internationalist]
+        presupposes: [imperialism.nature.monopoly-stage]
+        excludes: [change.agent.entrepreneurs-and-individuals]
+        tension: [change.agent.workers-as-class]
+        tags: [periphery, peasantry]
+        analysis:
+          gains: [peasantry, peripheral-workers, reserve-army]
+          pays: [comprador-capital, landed-capital, finance-capital]
+          mechanism: >
+            A peasant and national movement that takes the land and the state removes the landlords and comprador
+            brokers through whom the core extracts cheap food, minerals and labor, cutting the channel of the drain.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >
+            Trotskyists and council communists hold that such revolutions produce bureaucratic or state-capitalist
+            outcomes; Maoists and Third Worldists reply that they were the only revolutions to survive imperial siege.
+          consciousness: hegemonic
+
+      - id: change.agent.the-people-against-the-elite
+        label: The people against the elite
+        claim: Change comes when the ordinary people unite against a narrow elite that has captured the country.
+        voiced: "There is a people and there is an oligarchy. When the people find each other, the oligarchy falls."
+        you: You think change happens when ordinary people unite against the small group at the top.
+        because: >
+          Real politics is never a sum of interest groups; it is the moment a mass of unmet demands finds a common
+          name and a common enemy. Class language reaches too few people, and liberal procedure reaches nobody. The
+          popular majorities that changed Argentina, Bolivia and Venezuela were built by naming "the people" against
+          "the oligarchy", and the right has built its own movements the same way.
+        against:
+          - from: marxism.leninism
+            text: >
+              "The people" includes small owners, employers and workers whose interests clash. A movement with no class
+              leadership is led by whoever funds it, and it stops at the property line.
+          - from: liberalism.social
+            text: >
+              Every populism claims to be the one true people, so opponents become enemies of the people. That logic
+              erodes courts, press and rights whatever its color.
+        sources:
+          - {author: "Ernesto Laclau", title: "On Populist Reason", year: 2005}
+          - {author: "Chantal Mouffe", title: "For a Left Populism", year: 2018}
+        traditions:
+          defining: [socdem.left-populism, conservatism.right-populism]
+          typical: [nationalism.peronism, nationalism.bolivarianism]
+          contested: [socdem.democratic-socialism, conservatism.national]
+          rejects: [marxism.leninism, marxism.left-communism, liberalism.technocratic]
+        presupposes: [cs.rigged.system-rigged]
+        excludes: []
+        tension: [change.agent.workers-as-class]
+        tags: [populism]
+        analysis:
+          gains: [petty-bourgeoisie, core-workers]
+          pays: [finance-capital]
+          mechanism: >
+            Naming the enemy as an elite rather than a class lets a cross-class bloc form, but its content depends on
+            who is named: financiers and oligarchs in the left version, cultural elites and migrants in the right version.
+            Property relations stay in place, so small owners and the leader's circle set the program.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            Laclau and Mouffe hold that every hegemony is populist in form; Leninists and Trotskyists hold that a bloc
+            without working-class leadership ends in Bonapartism. In the periphery, left populisms nationalized oil and
+            gas and reduced the drain; in the core, right populisms channel anger at migrants and sustain it.
+          consciousness: hegemonic
+
+      - id: change.agent.entrepreneurs-and-individuals
+        label: Free individuals, entrepreneurs and inventors
+        claim: Society changes through millions of individuals pursuing their own plans, above all entrepreneurs and inventors who bring new things into the world.
+        voiced: "Progress is not voted in. It is invented, built and sold by people who bet their own time and money on an idea."
+        you: You think change comes from free individuals, especially those who build and invent, not from movements.
+        because: >
+          The knowledge that drives change is scattered across millions of minds and cannot be gathered by any party
+          or planner. Entrepreneurs act on that knowledge, test it against what people will actually pay for, and
+          spread what works. The electric light, the green revolution in agriculture and the mobile phone in African
+          markets did more for the poor than any movement.
+        against:
+          - from: marxism.classical
+            text: >
+              The entrepreneur commands labor he does not perform. Inventions come from collective science and
+              collective labor; ownership decides who profits from them, and that ownership is the thing to change.
+          - from: conservatism.traditionalist
+            text: >
+              A society of restless individual projects dissolves the family, the parish and the nation that make a
+              life worth living. Constant innovation is not the same as improvement.
+        sources:
+          - {author: "Ludwig von Mises", title: "Human Action", year: 1949}
+          - {author: "Friedrich Hayek", title: "The Use of Knowledge in Society", year: 1945}
+          - {author: "Ayn Rand", title: "Atlas Shrugged", year: 1957}
+        traditions:
+          defining: [libertarianism.objectivist, liberalism.austrian]
+          typical: [libertarianism.ancap, libertarianism.minarchist, liberalism.chicago, technology.e-acc, technology.cyberlibertarian]
+          contested: [liberalism.classical]
+          rejects: [marxism.classical, marxism.leninism, anarchism.syndicalist, conservatism.traditionalist]
+        presupposes: [class.concept.no-such-thing]
+        excludes: [change.agent.workers-as-class]
+        tension: []
+        tags: [individualism, market]
+        analysis:
+          gains: [industrial-capital, finance-capital, petty-bourgeoisie]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            Crediting change to the owners of enterprises justifies their control of the surplus as payment for
+            innovation, and casts collective action by workers as interference with the real source of progress.
+          drain: sustains
+          law_of_value: extends
+          consciousness: hegemonic
+
+      - id: change.agent.leaders-and-elites
+        label: Capable leaders and a responsible elite
+        claim: Lasting change is made by a capable leadership, a governing class of statesmen, officials and educated people who know how institutions work.
+        voiced: "Every society is led by a minority. The only question is whether that minority is wise, trained and answerable."
+        you: You think change is best made by capable leaders and a trained governing class rather than by crowds.
+        because: >
+          Every polity in history has been ruled by an organized minority; the masses cannot govern directly, and
+          movements that pretend they can produce new oligarchies. The real choice is between a responsible,
+          educated elite bound by duty and tradition and an irresponsible one. Singapore, the Meiji reformers and
+          the post-war European rebuilding were the work of such elites.
+        against:
+          - from: anarchism.communist
+            text: >
+              Elites govern for themselves. Every class that has ruled has called its interest wisdom, and every
+              lasting gain for ordinary people was taken from such elites by force.
+          - from: conservatism.right-populism
+            text: >
+              The trained governing class is exactly the problem: credentialed people who serve each other, despise
+              the people and answer to nobody.
+        sources:
+          - {author: "Edmund Burke", title: "An Appeal from the New to the Old Whigs", year: 1791}
+          - {author: "Gaetano Mosca", title: "The Ruling Class", year: 1896}
+          - {author: "Daniel A. Bell", title: "The China Model: Political Meritocracy and the Limits of Democracy", year: 2015}
+        traditions:
+          defining: [religious.political-meritocracy, liberalism.technocratic]
+          typical: [conservatism.burkean, conservatism.gaullism, religious.confucian, nationalism.developmental-state]
+          contested: [conservatism.one-nation]
+          rejects: [anarchism.communist, conservatism.right-populism, socdem.left-populism]
+        presupposes: [history.motor.great-individuals]
+        excludes: [change.agent.workers-as-class]
+        tension: []
+        tags: [elites]
+        analysis:
+          gains: [professional-managerial, finance-capital, landed-capital]
+          pays: [core-workers, peasantry]
+          mechanism: >
+            Placing agency in a trained governing stratum keeps decisions in ministries, central banks and boards
+            staffed from the propertied and credentialed classes, who set policy within the limits their owners accept.
+          drain: sustains
+          law_of_value: regulates
+          disputed: >
+            In East Asian developmental states a planning elite disciplined capital and directed investment; some
+            materialists (Amsden, Chibber on the counter-case of India) read that as a real exception, others as elite-led capitalism.
+          consciousness: hegemonic
+
+      - id: change.agent.the-faithful
+        label: Believers renewed by faith
+        claim: Deep change starts in converted hearts and spreads through a community of believers who live by God's law.
+        voiced: "Change the hearts and the laws will follow. No society is saved by politics alone."
+        you: You think real change begins in people's souls and in a community of faith, not in parties or classes.
+        because: >
+          Injustice grows from sin and from forgetting God; laws written by people who have lost their bearings only
+          rearrange the injustice. A community of believers, living what it preaches, attracts others by example and
+          eventually reshapes custom, family and law. The early church transformed an empire this way, and Islamic
+          movements have rebuilt whole societies from mosques and schools.
+        against:
+          - from: marxism.classical
+            text: >
+              Conversion leaves landlords and employers where they are. Religion that waits for hearts to change
+              consoles the poor and reassures the rich.
+          - from: liberalism.classical
+            text: >
+              Once a community of believers holds the state, its law binds those who do not share the faith. Private
+              faith must not become public coercion.
+        sources:
+          - {author: "Pius XI", title: "Quadragesimo Anno", year: 1931}
+          - {author: "Sayyid Qutb", title: "Milestones", year: 1964}
+          - {author: "Leo Tolstoy", title: "The Kingdom of God Is Within You", year: 1894}
+        traditions:
+          defining: [religious.islamism-brotherhood, conservatism.evangelical-right]
+          typical: [conservatism.cst, anarchism.christian, religious.salafism-quietist, religious.islamism-khomeinist, religious.religious-zionism]
+          contested: [religious.liberation-theology, religious.christian-socialism]
+          rejects: [marxism.classical, liberalism.classical]
+        presupposes: [history.motor.providence]
+        excludes: []
+        tension: []
+        tags: [religion]
+        analysis:
+          gains: [petty-bourgeoisie]
+          pays: []
+          mechanism: >
+            When change waits on conversion, existing owners keep their property while the movement's own charity,
+            schools and zakat soften want; leadership tends to fall to clergy and pious merchants, whose interests set
+            the limits of what the faithful demand.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            Liberation theologians (Gutiérrez) and Islamic socialists hold that faith commands a preferential option
+            for the poor that leads straight into class struggle; others read faith movements as mainly petty-bourgeois.
+          consciousness: hegemonic
+
+      - id: change.agent.many-oppressed
+        label: A coalition of the many oppressed groups
+        claim: Change comes from a coalition of groups each oppressed in its own way, women, racial minorities, queer people, indigenous peoples, workers, none ranked above the others.
+        voiced: "There is no single revolutionary subject. Our liberation comes from linking our struggles without ranking them."
+        you: You think change comes from many oppressed groups joining forces, with no single group in charge.
+        because: >
+          Oppression has several roots that are not reducible to one another, and people live them together, so a
+          movement built on only one, usually class as experienced by white men in the core, leaves most of the
+          oppressed outside. The movements that changed the late twentieth century, civil rights, feminism, gay
+          liberation, indigenous movements, were not organized by class parties.
+        against:
+          - from: marxism.leninism
+            text: >
+              Without a shared material interest the coalition falls apart into competing claims for recognition,
+              and its leadership passes to professionals in NGOs and universities who seek representation, not power.
+          - from: conservatism.national
+            text: >
+              A politics of grievance groups dissolves the common nation into rival victims and leaves no shared
+              loyalty to hold a country together.
+        sources:
+          - {author: "Combahee River Collective", title: "The Combahee River Collective Statement", year: 1977}
+          - {author: "Ernesto Laclau and Chantal Mouffe", title: "Hegemony and Socialist Strategy", year: 1985}
+          - {author: "Michael Hardt and Antonio Negri", title: "Multitude", year: 2004}
+        traditions:
+          defining: [feminism.black]
+          typical: [liberalism.progressive, marxism.autonomism, feminism.queer, socdem.left-populism]
+          contested: [marxism.social-reproduction, feminism.decolonial]
+          rejects: [marxism.ml, marxism.left-communism, conservatism.national]
+        presupposes: []
+        excludes: []
+        tension: [change.agent.workers-as-class]
+        tags: [intersectionality]
+        analysis:
+          gains: [reserve-army, professional-managerial, core-workers]
+          pays: []
+          mechanism: >
+            A coalition built on oppression can unite workers across race, gender and status divisions that employers
+            exploit; where it lacks a common program on property, its demands are met through representation and
+            hiring in existing institutions, which mainly benefits the salaried professionals who staff them.
+          drain: softens
+          law_of_value: regulates
+          disputed: >
+            Fraser and social reproduction theorists hold the coalition can rest on a shared relation to capital;
+            class-first Marxists (Reed) hold that identity-based coalitions displace class politics.
+          consciousness: class-economic
+
+      - id: change.agent.the-nation
+        label: The nation united across classes
+        claim: The agent of change is the nation acting as one, with workers, owners and farmers putting the common homeland above their quarrels.
+        voiced: "Class against class tears the nation apart. When the nation stands united, nothing can stop it."
+        you: You think change comes when the whole nation pulls together and sets class quarrels aside.
+        because: >
+          People are not abstract individuals or interchangeable workers; they belong to a people with a language,
+          history and fate. Only that loyalty is strong enough to make people sacrifice for a common future. Nations
+          that rose fast, Meiji Japan, Atatürk's Turkey, post-war Korea, did it by binding all classes to a national task.
+        against:
+          - from: marxism.leninism
+            text: >
+              "National unity" means workers give up their demands while owners keep theirs. In an oppressor nation it
+              binds workers to their own empire.
+          - from: liberalism.classical
+            text: >
+              The nation is not an agent; individuals are. Collective national missions have been the excuse for
+              conscription, censorship and war.
+        sources:
+          - {author: "Giuseppe Mazzini", title: "The Duties of Man", year: 1860}
+          - {author: "Yoram Hazony", title: "The Virtue of Nationalism", year: 2018}
+          - {author: "Benito Mussolini and Giovanni Gentile", title: "The Doctrine of Fascism", year: 1932}
+        traditions:
+          defining: [conservatism.national, nationalism.ethnic, fascism.italian, fascism.nazism]
+          typical: [nationalism.kemalism, nationalism.peronism, nationalism.civic, conservatism.gaullism, nationalism.hindutva, fascism.national-syndicalism]
+          contested: [nationalism.nasserism, nationalism.three-principles]
+          rejects: [marxism.leninism, anarchism.communist, liberalism.classical, liberalism.internationalist]
+        presupposes: [state.nature.organic-nation]
+        excludes: [change.agent.workers-as-class]
+        tension: []
+        tags: [nation]
+        analysis:
+          gains: [industrial-capital, petty-bourgeoisie]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Subordinating class demands to national unity leaves property and command of the workplace with owners
+            while asking workers for restraint; minorities and migrants are cast outside the nation and pay first.
+          drain: sustains
+          law_of_value: regulates
+          disputed: >
+            In semi-peripheral states (Peronism, Kemalism, Nasserism) cross-class nationalism also bargained against
+            foreign capital and reduced the drain; Leninists accept such fronts in oppressed nations, Trotskyists do not.
+          consciousness: hegemonic
+
+  # ------------------------------------------------------------------
+  - id: org.form
+    domain: strategy
+    layer: strategy
+    question: Through what kind of organization should change be pursued?
+    plain: If you want to change things, what do you join, or build?
+    short: the form of organization
+    importance: 3
+    region: strategy
+    positions:
+      - id: org.form.vanguard-party
+        label: A disciplined vanguard party
+        claim: Change needs a party of committed revolutionaries, united in action, who carry theory into the class and lead it in decisive moments.
+        voiced: "Give us an organization of revolutionaries and we will overturn Russia. Freedom of discussion, unity of action."
+        you: You think change needs a tight, disciplined party of committed people who lead the wider movement.
+        because: >
+          Left to itself, the class produces trade-union consciousness: bargaining within the system. The ruling class
+          is centralized, armed and experienced; scattered movements are crushed or bought. Only a party that unites
+          the most advanced workers around a tested program, with democratic centralism (open debate, then binding
+          unity in action), can survive repression and act when a crisis opens. Every successful socialist revolution
+          was led by such a party.
+        against:
+          - from: marxism.luxemburgism
+            text: >
+              Ultra-centralism turns the party into a guardian over the class. The errors of a real mass movement are
+              more fruitful than the infallibility of the best central committee.
+          - from: anarchism.communist
+            text: >
+              A party trained to command will command after the revolution too. The vanguard became the new ruling class.
+        sources:
+          - {author: "V. I. Lenin", title: "What Is to Be Done?", year: 1902}
+          - {author: "V. I. Lenin", title: "Left-Wing Communism: An Infantile Disorder", year: 1920}
+          - {author: "Georg Lukács", title: "Lenin: A Study on the Unity of His Thought", year: 1924}
+        traditions:
+          defining: [marxism.leninism, marxism.ml, marxism.maoism, marxism.mlm, marxism.trotskyism]
+          typical: [marxism.hoxhaism, marxism.juche, marxism.left-communism, marxism.scc]
+          contested: [marxism.gramscian, marxism.guevarism]
+          rejects: [marxism.luxemburgism, marxism.council-communism, anarchism.communist, anarchism.syndicalist, socdem.revisionist]
+        presupposes: [state.nature.class-instrument]
+        excludes: [org.form.no-organization, org.form.affinity-groups]
+        tension: [org.form.workers-councils]
+        tags: [leninism]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [industrial-capital, finance-capital, comprador-capital]
+          mechanism: >
+            A centralized cadre party can outlast repression and concentrate force at the moment of crisis, which is
+            what owners' states fear most; the same concentration gives party officials control of the surplus after power is won.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >
+            Council communists and Trotskyists (on the later USSR) hold that the vanguard form produced a bureaucratic
+            stratum; Marxist-Leninists reply that the form was set by siege and that no other form has held power against imperialism.
+          consciousness: hegemonic
+
+      - id: org.form.mass-party
+        label: A mass workers' party with its own world
+        claim: Change needs a mass party of the whole working class, with unions, newspapers, clubs and schools, that grows until it can govern.
+        voiced: "The party is the class organized: a state within the state, patient, legal while it can be, ready when it must be."
+        you: You think change needs a big workers' party rooted in daily life, with its own press, unions and clubs.
+        because: >
+          A party of millions, built over decades with its own culture, is the class learning to govern itself. It
+          trains leaders from the shop floor, wins elections where it can, and makes the class too big and too
+          organized to be ignored or crushed. The German SPD before 1914 and the Italian Communist Party after 1945
+          showed how much of society such a party could organize.
+        against:
+          - from: marxism.leninism
+            text: >
+              The mass party filled itself with officials and parliamentarians who voted for war credits in 1914. Size
+              without revolutionary selection produces opportunism.
+          - from: anarchism.syndicalist
+            text: >
+              Every party, however large, turns workers into voters and members. Its officials want office, not the
+              abolition of the state.
+        sources:
+          - {author: "Karl Kautsky", title: "The Class Struggle (Erfurt Program)", year: 1892}
+          - {author: "Karl Kautsky", title: "The Road to Power", year: 1909}
+          - {author: "Robert Michels", title: "Political Parties", year: 1911}
+        traditions:
+          defining: [marxism.classical]
+          typical: [marxism.austromarxism, socdem.democratic-socialism, marxism.eurocommunism]
+          contested: [marxism.luxemburgism, marxism.gramscian]
+          rejects: [marxism.leninism, anarchism.syndicalist, anarchism.insurrectionary]
+        presupposes: [change.agent.workers-as-class]
+        excludes: [org.form.no-organization]
+        tension: [org.form.vanguard-party]
+        tags: [party]
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [industrial-capital]
+          mechanism: >
+            A mass party raises the organized weight of labor in elections and bargaining, which wins welfare and wage
+            gains; its paid apparatus of officials and deputies acquires a stake in stability, as Michels documented.
+          drain: softens
+          law_of_value: regulates
+          consciousness: class-economic
+
+      - id: org.form.broad-party
+        label: A broad party of many tendencies
+        claim: Change needs a broad party that unites many tendencies and social groups around a governing program and wins majorities.
+        voiced: "You cannot govern with purists. Build the biggest tent that can still agree on what to do on day one."
+        you: You think change needs a broad party that holds many views and can actually win a majority.
+        because: >
+          Majorities in modern societies are coalitions; no single ideology commands one. A broad party lets
+          socialists, greens, unionists and progressives, or traditionalists, free-marketeers and nationalists,
+          fight out their differences inside while presenting one program outside. Parties from the Brazilian PT to
+          Christian Democracy and the post-war Labour Party governed because they were broad.
+        against:
+          - from: marxism.trotskyism
+            text: >
+              A broad party is held together by its leadership's need for office, so the program shrinks to what
+              capital accepts. Syriza in 2015 showed where that leads.
+          - from: conservatism.traditionalist
+            text: >
+              A tent built to win elections stands for nothing. It trades principle for votes until there is nothing
+              left to conserve.
+        sources:
+          - {author: "Otto Kirchheimer", title: "The Transformation of the Western European Party Systems", year: 1966}
+          - {author: "Chantal Mouffe", title: "For a Left Populism", year: 2018}
+        traditions:
+          defining: [socdem.labourism, conservatism.christian-democracy]
+          typical: [socdem.democratic-socialism, socdem.left-populism, liberalism.social, socdem.third-way, conservatism.fusionism, conservatism.one-nation]
+          contested: [marxism.eurocommunism]
+          rejects: [marxism.leninism, marxism.trotskyism, marxism.left-communism, anarchism.communist]
+        presupposes: []
+        excludes: [org.form.no-organization]
+        tension: []
+        tags: [party]
+        analysis:
+          gains: [professional-managerial, core-workers, petty-bourgeoisie]
+          pays: []
+          mechanism: >
+            A party built to aggregate many groups sets its program at the point its most powerful backers, donors
+            and allied interests accept; workers gain where they are organized enough to be one of those interests.
+          drain: softens
+          law_of_value: regulates
+          consciousness: hegemonic
+
+      - id: org.form.union-syndicalist
+        label: The union as both weapon and seed of the new society
+        claim: The union is the main organization of change, fighting the boss today and running production tomorrow, without political parties.
+        voiced: "The union, today a group for resistance, will tomorrow be the group for production and distribution."
+        you: You think the union is the key organization. It fights the boss now and can run the workplace later.
+        because: >
+          Workers' power lies where they work, not in parliament. The union unites workers of every opinion on the
+          ground of their shared condition and trains them in direct action and self-management. A federation of
+          industrial unions can call the general strike that ends capitalist ownership and already has the structure to
+          run industry, as the CNT showed in Catalonia in 1936.
+        against:
+          - from: marxism.leninism
+            text: >
+              Unions organize workers as sellers of labor power and grow conservative officials. Without a party
+              to pose the question of state power, a general strike is crushed or bought off.
+          - from: marxism.council-communism
+            text: >
+              Unions are tied to bargaining over the price of labor and become part of capitalist management.
+              Workers must organize in councils that bypass the union apparatus.
+        sources:
+          - {author: "Confédération générale du travail", title: "Charter of Amiens", year: 1906}
+          - {author: "Rudolf Rocker", title: "Anarcho-Syndicalism: Theory and Practice", year: 1938}
+          - {author: "Georges Sorel", title: "Reflections on Violence", year: 1908}
+        traditions:
+          defining: [anarchism.syndicalist]
+          typical: [anarchism.communist]
+          contested: [socdem.labourism, marxism.autonomism]
+          rejects: [marxism.council-communism, marxism.leninism, liberalism.chicago]
+        presupposes: [unions.role.class-organ]
+        excludes: [org.form.no-organization]
+        tension: [org.form.vanguard-party]
+        tags: [unions]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [industrial-capital]
+          mechanism: >
+            Organizing at the point of production lets workers stop output directly and practice control of work,
+            striking at profit without passing through elections that owners can outspend.
+          drain: reduces
+          law_of_value: abolishes
+          disputed: Council communists hold that unions inevitably become bargaining agents within capitalism.
+          consciousness: class-economic
+
+      - id: org.form.workers-councils
+        label: Workers' councils elected at the workplace
+        claim: Change is made through councils elected by workers at each workplace, with recallable delegates, linked into a federation that takes over society.
+        voiced: "All power to the councils. No party, no union bureaucracy stands between the workers and their decisions."
+        you: You think change is made by assemblies and councils of workers themselves, not by parties acting for them.
+        because: >
+          Every great upsurge of the working class has thrown up councils: the Paris Commune, the soviets of 1905 and
+          1917, the German councils of 1918, Turin 1920, Hungary 1956. They are the class governing itself, with
+          delegates bound by mandate and recallable at any moment, so no apparatus can rise above it. Parties and
+          unions exist to represent workers; councils are workers acting.
+        against:
+          - from: marxism.leninism
+            text: >
+              Councils arise only in crises and are captured by whichever organized force is strongest in them. Without
+              a party, the councils of 1918 handed power back to Social Democracy and the Freikorps.
+          - from: liberalism.classical
+            text: >
+              Councils give power to the most persistent and the best organized, not to the majority. Rule by meeting
+              ends in rule by the activists who never go home.
+        sources:
+          - {author: "Anton Pannekoek", title: "Workers' Councils", year: 1946}
+          - {author: "Antonio Gramsci", title: "Workers' Democracy", year: 1919}
+          - {author: "Hannah Arendt", title: "On Revolution", year: 1963}
+        traditions:
+          defining: [marxism.council-communism]
+          typical: [marxism.luxemburgism, marxism.autonomism, anarchism.communist, anarchism.syndicalist]
+          contested: [marxism.gramscian, marxism.trotskyism]
+          rejects: [marxism.ml, socdem.revisionist, liberalism.classical]
+        presupposes: [change.agent.workers-as-class]
+        excludes: [org.form.no-organization]
+        tension: [org.form.vanguard-party]
+        tags: [councils]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [industrial-capital, finance-capital, professional-managerial]
+          mechanism: >
+            Councils place decisions over production with those who do the work, removing the managerial and owning
+            layers from command; they contest property directly but are hard to sustain outside moments of upheaval.
+          drain: reduces
+          law_of_value: abolishes
+          consciousness: hegemonic
+
+      - id: org.form.specific-anarchist-organization
+        label: A specific anarchist organization with a shared line
+        claim: Anarchists should form their own organization with theoretical and tactical unity, working inside mass movements without leading them from above.
+        voiced: "Without organization anarchism stays a sect of individuals. Unity of theory, unity of tactics, collective responsibility."
+        you: You think anarchists need their own organized group with a shared line, active inside wider movements.
+        because: >
+          Anarchists lost in Russia and Ukraine because they were scattered while the Bolsheviks were organized. A
+          specific organization, with agreed theory, agreed tactics and collective responsibility, lets anarchists act
+          coherently inside unions and neighborhood movements, push them toward self-management, and resist both
+          bureaucrats and party takeovers. Especifismo in Uruguay and Brazil built just such social insertion.
+        against:
+          - from: anarchism.individualist
+            text: >
+              Collective responsibility and a shared line are a party in all but name. The Platform was rightly called
+              anarcho-Bolshevism by Malatesta and Voline.
+          - from: marxism.leninism
+            text: >
+              You have rebuilt the vanguard and refuse to call it one, so you will not take power when the moment comes.
+        sources:
+          - {author: "Dielo Truda group (Nestor Makhno, Peter Arshinov et al.)", title: "Organizational Platform of the General Union of Anarchists (Draft)", year: 1926}
+          - {author: "Errico Malatesta", title: "A Project of Anarchist Organisation", year: 1927}
+        traditions:
+          defining: [anarchism.platformist]
+          typical: [anarchism.communist]
+          contested: [anarchism.syndicalist]
+          rejects: [anarchism.individualist, anarchism.insurrectionary]
+        presupposes: []
+        excludes: [org.form.no-organization]
+        tension: [org.form.affinity-groups]
+        tags: [anarchism]
+        analysis:
+          gains: [core-workers, peripheral-workers, reserve-army]
+          pays: [industrial-capital]
+          mechanism: >
+            A coherent militant group inside unions and community movements raises their combativeness and pushes them
+            toward direct action and self-management, without forming a separate apparatus to hold state power.
+          drain: reduces
+          law_of_value: abolishes
+          consciousness: class-economic
+
+      - id: org.form.affinity-groups
+        label: Small affinity groups, informal and autonomous
+        claim: Change comes from small groups of trusted comrades acting on their own initiative and linking up informally, never through formal membership organizations.
+        voiced: "Formal organizations are waiting rooms for the revolution. We act now, in small groups, among people we trust."
+        you: You think change is best made by small, trusted groups acting on their own, linked loosely, not by big formal organizations.
+        because: >
+          Formal organizations develop permanent officials, delegate decisions and wait for the right moment that never
+          comes. Small affinity groups are hard to infiltrate, make decisions face to face, and can act at once. When
+          many of them link up in a moment of revolt, they move faster than any central body, as the Spanish grupos de
+          afinidad and the summit protests showed.
+        against:
+          - from: anarchism.platformist
+            text: >
+              Informality hides power instead of removing it. The tyranny of structurelessness leaves the confident
+              and the connected in charge, and small groups cannot sustain a mass struggle.
+          - from: marxism.trotskyism
+            text: >
+              Acts by small groups substitute the courage of a few for the action of the class. They bring repression
+              down on the movement and win nothing that lasts.
+        sources:
+          - {author: "Murray Bookchin", title: "Post-Scarcity Anarchism", year: 1971}
+          - {author: "Alfredo M. Bonanno", title: "Armed Joy", year: 1977}
+          - {author: "The Invisible Committee", title: "The Coming Insurrection", year: 2007}
+        traditions:
+          defining: [anarchism.insurrectionary]
+          typical: [anarchism.green, anarchism.individualist, anarchism.primitivist]
+          contested: [anarchism.communist, marxism.autonomism]
+          rejects: [anarchism.platformist, marxism.leninism, marxism.trotskyism]
+        presupposes: [state.nature.hierarchy-as-such]
+        excludes: [org.form.vanguard-party]
+        tension: [org.form.specific-anarchist-organization]
+        tags: [anarchism]
+        analysis:
+          gains: []
+          pays: [industrial-capital]
+          mechanism: >
+            Small autonomous groups can disrupt property and logistics at points of their choosing, but without mass
+            organization at work or in neighborhoods they rarely change who owns or commands production.
+          drain: none
+          law_of_value: none
+          consciousness: economic-corporate
+          disputed: >
+            Insurrectionists reply that the Gramscian scale misreads them: they reject representation of any class
+            interest, and their target is social relations as such.
+
+      - id: org.form.horizontal-movement
+        label: Horizontal movements and assemblies
+        claim: Change comes from broad movements run by open assemblies and networks, with no party, no leaders and no seizure of power.
+        voiced: "We walk by asking questions. We do not want to take power; we want to build a world where many worlds fit."
+        you: You think change comes from open, leaderless movements and assemblies that build something new rather than take power.
+        because: >
+          The twentieth century proved that taking state power reproduces it. Movements that organize horizontally,
+          by assembly and consensus, change people in the act of organizing and build the new society in the present.
+          The Zapatista caracoles, Argentina's recovered factories and neighborhood assemblies after 2001 show
+          communities governing themselves without asking permission.
+        against:
+          - from: marxism.leninism
+            text: >
+              Occupy and the squares of 2011 filled the plazas and left the state and the banks untouched. Refusing to
+              take power leaves it to those who will use it against you.
+          - from: liberalism.social
+            text: >
+              Assemblies decide by whoever stays longest. Without representation, accountability and rules, the
+              movement cannot govern anything bigger than a camp.
+        sources:
+          - {author: "John Holloway", title: "Change the World Without Taking Power", year: 2002}
+          - {author: "Michael Hardt and Antonio Negri", title: "Assembly", year: 2017}
+          - {author: "EZLN", title: "Sixth Declaration of the Lacandon Jungle", year: 2005}
+        traditions:
+          defining: [zapatismo, marxism.autonomism]
+          typical: [anarchism.communist, anarchism.communalism, anarchism.confederalism, nationalism.indigenous-sovereignty]
+          contested: [socdem.left-populism]
+          rejects: [marxism.leninism, marxism.ml, liberalism.social]
+        presupposes: []
+        excludes: [org.form.vanguard-party]
+        tension: []
+        tags: [prefiguration]
+        analysis:
+          gains: [peasantry, reserve-army, peripheral-workers]
+          pays: [landed-capital]
+          mechanism: >
+            Where movements hold land or workplaces (Chiapas, recovered factories), they withdraw them from market
+            ownership; where they hold only public squares, they leave property and the state untouched and dissolve.
+          drain: softens
+          law_of_value: suspends
+          consciousness: class-economic
+
+      - id: org.form.church-and-community
+        label: Churches, families and local associations
+        claim: The organizations that matter are churches, mosques, families, guilds and local associations, the institutions between the person and the state.
+        voiced: "To love the little platoon we belong to in society is the first principle of public affections."
+        you: You think change rests on churches, families and local associations, not on parties or movements.
+        because: >
+          Healthy societies are built from the bottom up by institutions that form character and bind people across
+          generations. A parish, a mutual society or a village council knows its members and acts on real knowledge.
+          Parties and states that bypass these bodies end up dissolving them, then must replace with coercion what
+          trust once did.
+        against:
+          - from: marxism.classical
+            text: >
+              Intermediate bodies are run by the local notables, priests and employers. They teach deference and keep
+              the poor divided parish by parish.
+          - from: feminism.radical
+            text: >
+              The family and the church are where women's subordination is organized. Little platoons have their own
+              sergeants.
+        sources:
+          - {author: "Edmund Burke", title: "Reflections on the Revolution in France", year: 1790}
+          - {author: "Alexis de Tocqueville", title: "Democracy in America", year: 1835}
+          - {author: "Leo XIII", title: "Rerum Novarum", year: 1891}
+        traditions:
+          defining: [conservatism.cst, conservatism.burkean, communitarianism]
+          typical: [conservatism.traditionalist, conservatism.distributism, conservatism.evangelical-right, conservatism.christian-democracy, religious.islamism-brotherhood, religious.confucian]
+          contested: [conservatism.postliberal]
+          rejects: [marxism.classical, feminism.radical, liberalism.utilitarian]
+        presupposes: [property.private.social-function]
+        excludes: []
+        tension: []
+        tags: [subsidiarity, civil-society]
+        analysis:
+          gains: [petty-bourgeoisie, landed-capital]
+          pays: []
+          mechanism: >
+            Organizing through intermediate bodies keeps authority with those who already lead them, local owners,
+            clergy, heads of families, and supplies welfare through charity and kin rather than through rights or wages.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            Some materialists note that churches and mosques have hosted labor and anti-colonial organizing (Poland's
+            Solidarity, Latin American base communities, Algerian mosques) and that their class content depends on who uses them.
+          consciousness: economic-corporate
+
+      - id: org.form.firm-and-market
+        label: Build companies, not parties
+        claim: The best vehicle for change is the firm, a company or project that solves a problem and grows by serving people who choose it.
+        voiced: "Politics argues. Builders ship. If you want to change the world, start something and let customers vote with their wallets."
+        you: You think the best way to change things is to build a business or project that people choose freely.
+        because: >
+          Firms face a hard test parties never do: people must choose to pay for what they offer. That test weeds out
+          bad ideas fast and scales good ones to billions. Mobile money in Kenya, cheap solar panels and the
+          internet itself changed more lives than any party program. Politics is slow, coercive and zero-sum; enterprise
+          is positive-sum.
+        against:
+          - from: marxism.classical
+            text: >
+              Firms serve those who can pay and answer to their owners. Building companies concentrates the power you
+              claim to escape in the hands of investors.
+          - from: liberalism.social
+            text: >
+              Markets do not supply public goods, fix injustice or build institutions. Some problems require law and
+              collective decision, and firms lobby to block them.
+        sources:
+          - {author: "Milton Friedman", title: "Capitalism and Freedom", year: 1962}
+          - {author: "Marc Andreessen", title: "The Techno-Optimist Manifesto", year: 2023}
+        traditions:
+          defining: [technology.e-acc, libertarianism.objectivist]
+          typical: [technology.cyberlibertarian, liberalism.chicago, libertarianism.ancap, liberalism.austrian]
+          contested: [ecology.ecomodernism]
+          rejects: [marxism.classical, anarchism.syndicalist, liberalism.social]
+        presupposes: [capitalism.nature.free-exchange]
+        excludes: [org.form.vanguard-party]
+        tension: []
+        tags: [market]
+        analysis:
+          gains: [finance-capital, industrial-capital, petty-bourgeoisie]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            Treating the firm as the vehicle of change routes social problems into investment opportunities, so what
+            gets solved is what can be sold at a profit, and ownership of the solution stays with investors.
+          drain: sustains
+          law_of_value: extends
+          consciousness: hegemonic
+
+      - id: org.form.no-organization
+        label: No organization; your own conscience
+        claim: Joining organizations is unnecessary or harmful; change comes from individuals following their own conscience.
+        voiced: "I don't join things. Every group ends up with its own bosses. I'll do what's right on my own."
+        you: You prefer to act on your own conscience and stay out of parties, unions and groups.
+        because: >
+          Organizations turn people into followers, demand loyalty to positions they do not hold, and end up serving
+          their own leaders. A person who acts on conscience cannot be bought by a faction. Thoreau went to jail alone,
+          and the person who refuses an unjust order alone has changed history as often as any party.
+        against:
+          - from: anarchism.syndicalist
+            text: >
+              Alone, a worker is replaceable. Every right you enjoy, from the weekend to the vote, was won by people who
+              organized.
+          - from: conservatism.burkean
+            text: >
+              The isolated individual is a modern fiction. Without the associations that form and hold us, conscience
+              becomes mere opinion and opinion becomes the plaything of whoever controls the media.
+        sources:
+          - {author: "Henry David Thoreau", title: "Resistance to Civil Government (Civil Disobedience)", year: 1849}
+          - {author: "Max Stirner", title: "The Ego and Its Own", year: 1844}
+        traditions:
+          defining: [commonsense.anti-politics]
+          typical: [commonsense.live-and-let-live, anarchism.individualist, commonsense.self-reliance]
+          contested: [libertarianism.objectivist]
+          rejects: [marxism.leninism, anarchism.syndicalist, anarchism.platformist, conservatism.burkean]
+        presupposes: []
+        excludes: [org.form.vanguard-party, org.form.mass-party, org.form.union-syndicalist]
+        tension: [change.possibility.organized-people-can]
+        tags: [individualism]
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [core-workers, peripheral-workers, reserve-army]
+          mechanism: >
+            Owners are already organized through firms, associations and the state; when workers act only as individuals
+            each one bargains alone, so the organized side sets wages, rents and law unopposed.
+          drain: sustains
+          law_of_value: extends
+          consciousness: economic-corporate
+
+  # ------------------------------------------------------------------
+  - id: reform.revolution
+    domain: strategy
+    layer: strategy
+    question: Reform or revolution?
+    plain: Can the system be changed step by step from inside, or does it have to be overturned?
+    short: reform and revolution
+    importance: 3
+    region: strategy
+    positions:
+      - id: reform.revolution.reform-is-the-road
+        label: Step-by-step reform is the road to socialism
+        claim: Socialism can be reached by steady reforms won through elections and unions, without a violent break.
+        voiced: "The final goal is nothing to me; the movement is everything. Each reform won is socialism growing inside capitalism."
+        you: You think a fairer economy can be built step by step through elections and unions, with no revolution.
+        because: >
+          Capitalism did not collapse as predicted; wages rose, the middle strata grew, and universal suffrage gave
+          workers a lawful way to power. Each public service, labor law and tax reform shifts the balance. The Nordic
+          countries built the most equal societies on earth this way, without the bloodshed and dictatorship that
+          followed revolutions.
+        against:
+          - from: marxism.luxemburgism
+            text: >
+              Reform without the goal of revolution is a labor of Sisyphus: every gain is clawed back when profits fall.
+              The neoliberal turn dismantled in a decade what reform built in fifty years.
+          - from: liberalism.austrian
+            text: >
+              Each step toward socialism expands the state's control of economic life and erodes the market that made
+              the wealth being redistributed. The road leads to serfdom, not to a gentle socialism.
+        sources:
+          - {author: "Eduard Bernstein", title: "The Preconditions of Socialism (Evolutionary Socialism)", year: 1899}
+          - {author: "Anthony Crosland", title: "The Future of Socialism", year: 1956}
+          - {author: "Walter Korpi", title: "The Democratic Class Struggle", year: 1983}
+        traditions:
+          defining: [socdem.revisionist, socdem.fabian, socdem.nordic]
+          typical: [socdem.labourism, socdem.keynesian, socdem.democratic-socialism]
+          contested: [marxism.eurocommunism]
+          rejects: [marxism.leninism, marxism.luxemburgism, anarchism.communist, liberalism.austrian]
+        presupposes: [state.nature.neutral-arbiter]
+        excludes: [reform.revolution.revolution-necessary]
+        tension: []
+        tags: [social-democracy]
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [finance-capital]
+          mechanism: >
+            Reforms tax profits and rents to fund public services and protect wages, which raises core living standards
+            while leaving ownership with capital, so gains depend on growth and can be reversed when profits fall.
+          drain: softens
+          law_of_value: regulates
+          disputed: >
+            Third Worldists hold that core reform was funded by the drain; social democrats and some Marxists (Korpi,
+            Esping-Andersen) attribute it to domestic power resources.
+          consciousness: class-economic
+
+      - id: reform.revolution.revolution-necessary
+        label: Revolution is necessary; reforms cannot change who rules
+        claim: The ruling class will not give up its property and state peacefully, so a revolutionary break is needed; reforms are useful only as steps in that struggle.
+        voiced: "No ruling class has ever left the stage of history voluntarily. Reforms are by-products of revolutionary struggle."
+        you: You think the people who own and rule will not give up their power peacefully, so a revolutionary break is needed.
+        because: >
+          The state is not a neutral machine that elections can steer; its army, police, courts and civil service are
+          bound to the owning class. When reform threatens property, capital strikes back: Chile 1973, Indonesia 1965,
+          Spain 1936. Reforms won under capitalism are real but reversible. Only taking power and changing ownership
+          makes them permanent.
+        against:
+          - from: socdem.nordic
+            text: >
+              The Nordic countries won more for workers by votes and bargaining than any revolution did, without
+              civil war or one-party rule.
+          - from: liberalism.classical
+            text: >
+              Revolutions concentrate power in those who make them and produce terror, then new elites. Free institutions
+              permit peaceful change; revolutionaries destroy them.
+        sources:
+          - {author: "Rosa Luxemburg", title: "Social Reform or Revolution?", year: 1899}
+          - {author: "V. I. Lenin", title: "The State and Revolution", year: 1917}
+          - {author: "Mikhail Bakunin", title: "Statism and Anarchy", year: 1873}
+        traditions:
+          defining: [marxism.leninism, marxism.luxemburgism, marxism.maoism, anarchism.communist]
+          typical: [marxism.ml, marxism.trotskyism, marxism.left-communism, marxism.council-communism, marxism.mlm, anarchism.syndicalist, anarchism.insurrectionary, marxism.guevarism]
+          contested: [socdem.democratic-socialism]
+          rejects: [socdem.revisionist, socdem.nordic, liberalism.classical, conservatism.burkean]
+        presupposes: [state.nature.class-instrument]
+        excludes: [reform.revolution.reform-is-the-road, reform.revolution.piecemeal-improvement]
+        tension: []
+        tags: [revolution]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry, reserve-army]
+          pays: [finance-capital, industrial-capital, landed-capital, comprador-capital]
+          mechanism: >
+            A revolutionary break transfers ownership of land, banks and industry and dismantles the coercive apparatus
+            that protects them, ending the private claim on surplus rather than taxing it.
+          drain: breaks
+          law_of_value: abolishes
+          consciousness: hegemonic
+
+      - id: reform.revolution.non-reformist-reforms
+        label: Reforms that build power toward a rupture
+        claim: Fight for reforms chosen because they build workers' power and strain the system, so that reform leads toward a break rather than away from it.
+        voiced: "Demand what the system cannot grant without ceasing to be itself. Each such demand is a bridge to power."
+        you: You think you should push reforms that build people's power and that the system can't easily absorb.
+        because: >
+          Abstract calls for revolution leave the masses where they are; plain reformism disarms them. Reforms that
+          shift power, workers' control rights, public banks, rent control, demands that tie today's needs to the
+          question of ownership, mobilize people for what they want now and teach them that the system blocks it.
+          Gorz called them non-reformist reforms; Trotsky called such demands transitional.
+        against:
+          - from: marxism.left-communism
+            text: >
+              Every transitional demand ends up as a program for managing capitalism. The bridge is never crossed;
+              the party becomes a reformist party with revolutionary memories.
+          - from: socdem.third-way
+            text: >
+              Reforms designed to strain the system frighten investors and voters alike. You will lose the election
+              before you reach the bridge.
+        sources:
+          - {author: "André Gorz", title: "Strategy for Labor", year: 1964}
+          - {author: "Leon Trotsky", title: "The Death Agony of Capitalism and the Tasks of the Fourth International (Transitional Program)", year: 1938}
+          - {author: "Nicos Poulantzas", title: "State, Power, Socialism", year: 1978}
+        traditions:
+          defining: [socdem.democratic-socialism, marxism.eurocommunism]
+          typical: [marxism.trotskyism, marxism.structural, marxism.gramscian]
+          contested: [marxism.luxemburgism]
+          rejects: [marxism.left-communism, socdem.third-way]
+        presupposes: []
+        excludes: []
+        tension: [reform.revolution.reform-is-the-road, reform.revolution.revolution-necessary]
+        tags: [transition]
+        analysis:
+          gains: [core-workers, peripheral-workers, reserve-army]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Reforms that transfer control (codetermination, public banks, decommodified housing) reduce capital's
+            command over investment and labor and build organizations able to defend them, at the risk of absorption.
+          drain: reduces
+          law_of_value: suspends
+          consciousness: hegemonic
+
+      - id: reform.revolution.piecemeal-improvement
+        label: Piecemeal improvement, no grand goal
+        claim: Society should be improved by small, testable changes that fix specific harms, with no grand plan and no final goal.
+        voiced: "Work for the elimination of concrete evils rather than for the realization of abstract goods."
+        you: You think society improves best through small, testable fixes, not big plans or revolutions.
+        because: >
+          Nobody knows enough to redesign a whole society. Small reforms can be tested, measured and reversed when they
+          fail; utopian projects cannot, and their failures are paid in lives. Open societies correct their errors by
+          trial and error, which is why they have outperformed every society run by a blueprint.
+        against:
+          - from: marxism.leninism
+            text: >
+              Piecemeal engineering assumes the foundations are sound. It tinkers with symptoms while the cause, private
+              ownership of production, keeps producing them.
+          - from: conservatism.reactionary
+            text: >
+              Endless small fixes are still the engineering of society by technocrats. The tradition being tinkered
+              with dies by a thousand cuts.
+        sources:
+          - {author: "Karl Popper", title: "The Open Society and Its Enemies", year: 1945}
+          - {author: "Karl Popper", title: "The Poverty of Historicism", year: 1957}
+        traditions:
+          defining: [liberalism.technocratic, liberalism.classical]
+          typical: [liberalism.social, liberalism.egalitarian, liberalism.utilitarian, socdem.third-way]
+          contested: [conservatism.burkean]
+          rejects: [marxism.leninism, conservatism.reactionary, fascism.italian]
+        presupposes: []
+        excludes: [reform.revolution.revolution-necessary]
+        tension: []
+        tags: [liberalism]
+        analysis:
+          gains: [professional-managerial, finance-capital, industrial-capital]
+          pays: [peripheral-workers]
+          mechanism: >
+            Limiting change to testable fixes inside existing property relations puts reform in the hands of experts
+            and evaluators and rules out, as untestable utopia, any change to who owns production.
+          drain: sustains
+          law_of_value: regulates
+          consciousness: hegemonic
+
+      - id: reform.revolution.change-to-conserve
+        label: Reform in order to conserve
+        claim: Reform is needed to preserve the social order; timely change prevents revolution and keeps what is valuable.
+        voiced: "A state without the means of some change is without the means of its conservation."
+        you: You think wise reform is how you keep a good society intact and head off revolution.
+        because: >
+          Institutions survive by adapting. A ruling order that refuses all change provokes the revolution it fears;
+          one that reforms in time keeps its legitimacy. Disraeli's factory acts, Bismarck's social insurance and
+          post-war one-nation conservatism kept their countries whole while continental orders that refused reform were swept away.
+        against:
+          - from: marxism.leninism
+            text: >
+              Reform from above is a concession to buy time for the owners. Bismarck's insurance came with his ban on
+              the socialist party.
+          - from: conservatism.reactionary
+            text: >
+              Every concession to the revolution concedes its principle. Those who reform to conserve end up conserving
+              the last revolution.
+        sources:
+          - {author: "Edmund Burke", title: "Reflections on the Revolution in France", year: 1790}
+          - {author: "Benjamin Disraeli", title: "Sybil, or The Two Nations", year: 1845}
+          - {author: "Giuseppe Tomasi di Lampedusa", title: "The Leopard", year: 1958}
+        traditions:
+          defining: [conservatism.burkean, conservatism.one-nation]
+          typical: [conservatism.christian-democracy, conservatism.gaullism, conservatism.cst]
+          contested: [conservatism.traditionalist]
+          rejects: [conservatism.reactionary, marxism.leninism]
+        presupposes: []
+        excludes: [reform.revolution.revolution-necessary]
+        tension: []
+        tags: [conservatism]
+        analysis:
+          gains: [landed-capital, industrial-capital, finance-capital]
+          pays: []
+          mechanism: >
+            Timely concessions on wages and welfare buy loyalty and divide the reform-minded from the revolutionary,
+            so owners keep property and political command at the price of part of the surplus.
+          drain: softens
+          law_of_value: regulates
+          consciousness: hegemonic
+
+      - id: reform.revolution.restoration
+        label: Undo the revolution; restore the true order
+        claim: The modern liberal order was itself a revolution against a God-given or natural order, and the task is to undo it, not to reform it.
+        voiced: "We want not a contrary revolution, but the contrary of revolution."
+        you: You think modern society went wrong at its roots and the task is to restore an older, truer order.
+        because: >
+          Since 1789 every reform has extended the same principle: that society is a contract among sovereign individuals
+          answerable to nothing above them. Reform within that order only hastens its logic. The remedy is restoration of
+          authority grounded in God, hierarchy and the common good, by whatever lawful path opens, including control of the state.
+        against:
+          - from: liberalism.classical
+            text: >
+              The order you want restored rested on serfdom, censorship and established churches. Most people living
+              under it had no say and no rights.
+          - from: conservatism.burkean
+            text: >
+              You cannot restore what is gone by an act of will. Restoration is another revolution, as rationalist and
+              as violent as the one it opposes.
+        sources:
+          - {author: "Joseph de Maistre", title: "Considerations on France", year: 1797}
+          - {author: "Juan Donoso Cortés", title: "Essay on Catholicism, Liberalism and Socialism", year: 1851}
+          - {author: "Patrick Deneen", title: "Why Liberalism Failed", year: 2018}
+        traditions:
+          defining: [conservatism.reactionary, conservatism.integralism]
+          typical: [conservatism.monarchist, conservatism.postliberal, fascism.traditionalist, fascism.neoreaction]
+          contested: [conservatism.traditionalist]
+          rejects: [liberalism.classical, conservatism.burkean, marxism.classical]
+        presupposes: [state.nature.ordained-authority]
+        excludes: [reform.revolution.reform-is-the-road]
+        tension: []
+        tags: [reaction]
+        analysis:
+          gains: [landed-capital, petty-bourgeoisie]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Restoring hierarchical authority strengthens landed, clerical and patriarchal power over labor, family and
+            speech, while leaving capitalist ownership itself largely untouched.
+          drain: sustains
+          law_of_value: none
+          consciousness: hegemonic
+
+      - id: reform.revolution.national-revolution
+        label: A national revolution against both liberalism and Marxism
+        claim: The nation needs a revolution of its own, against both liberal individualism and Marxist class war, that remakes people and state as one body.
+        voiced: "Neither reaction nor reform: a revolution of the nation, of the spirit, against plutocrats and Bolsheviks alike."
+        you: You think the nation needs a revolution of its own, against both liberals and communists, that remakes the whole people.
+        because: >
+          Liberalism dissolves the people into consumers; Marxism splits it into warring classes; both are materialist.
+          Only a revolution that mobilizes the whole nation behind a single will, purges what weakens it and binds labor
+          and capital in its service can regenerate a people in decline. Its proponents point to the speed with which
+          fascist states ended street conflict and unemployment.
+        against:
+          - from: marxism.ml
+            text: >
+              The "national revolution" smashed the unions, left the industrialists in place and handed them rearmament
+              contracts. It was capital's counter-revolution in a mass costume.
+          - from: liberalism.classical
+            text: >
+              It ended in war, conquest, camps and genocide. A movement that subordinates every person to the nation
+              will destroy the persons it claims to save.
+        sources:
+          - {author: "Benito Mussolini and Giovanni Gentile", title: "The Doctrine of Fascism", year: 1932}
+          - {author: "José Antonio Primo de Rivera", title: "Foundational speech of the Falange (Teatro de la Comedia)", year: 1933}
+          - {author: "Zeev Sternhell", title: "Neither Right nor Left: Fascist Ideology in France", year: 1983}
+        traditions:
+          defining: [fascism.italian, fascism.nazism, fascism.national-syndicalism]
+          typical: [fascism.third-position, fascism.clerical]
+          contested: [fascism.traditionalist]
+          rejects: [liberalism.classical, marxism.ml, marxism.leninism, anarchism.communist, conservatism.burkean]
+        presupposes: [state.nature.organic-nation]
+        excludes: [reform.revolution.revolution-necessary]
+        tension: []
+        tags: [fascism]
+        analysis:
+          gains: [industrial-capital, finance-capital, petty-bourgeoisie]
+          pays: [core-workers, reserve-army, peripheral-workers]
+          mechanism: >
+            In power, fascist movements dissolved independent unions, froze wages and directed state contracts and
+            conquered resources to large industry, while mobilizing small owners against labor and minorities.
+          drain: sustains
+          law_of_value: regulates
+          disputed: >
+            Marxists differ on how far fascist states served finance capital (Dimitrov) or gained autonomy from all
+            classes (Thalheimer's Bonapartism thesis, Poulantzas).
+          consciousness: hegemonic
+
+  # ------------------------------------------------------------------
+  - id: elections.role
+    domain: strategy
+    layer: strategy
+    question: What are elections for?
+    plain: When an election comes, what is your vote, or your campaign, actually for?
+    short: elections
+    importance: 2
+    region: strategy
+    positions:
+      - id: elections.role.main-road
+        label: Elections are the main road to changing society
+        claim: Winning elections and governing is the main way to change how society is run, including its economy.
+        voiced: "Win the majority, form the government, pass the program. That is how ordinary people take power in a modern state."
+        you: You think winning elections and governing is the main way to change how the country runs.
+        because: >
+          Universal suffrage gives the majority, who work for wages, the means to rule if they organize. A government
+          with a majority controls budgets, law and public ownership. The post-war welfare states, the nationalizations
+          of 1945 and Allende's program were all won at the ballot box, and they lasted where they kept winning.
+        against:
+          - from: marxism.leninism
+            text: >
+              The real power, army, police, courts, central bank, capital flight, is not elected. Allende won the
+              election and lost the state in 1973.
+          - from: anarchism.communist
+            text: >
+              Electoral politics turns movements into vote-gathering machines and militants into deputies. The state
+              changes the party faster than the party changes the state.
+        sources:
+          - {author: "Communist Party of Great Britain", title: "The British Road to Socialism", year: 1951}
+          - {author: "Adam Przeworski and John Sprague", title: "Paper Stones: A History of Electoral Socialism", year: 1986}
+          - {author: "Eduard Bernstein", title: "The Preconditions of Socialism (Evolutionary Socialism)", year: 1899}
+        traditions:
+          defining: [socdem.revisionist, socdem.labourism, socdem.nordic, socdem.democratic-socialism]
+          typical: [marxism.eurocommunism, socdem.keynesian, socdem.left-populism, liberalism.social, conservatism.christian-democracy]
+          contested: [nationalism.bolivarianism]
+          rejects: [marxism.leninism, anarchism.communist, marxism.left-communism]
+        presupposes: [state.nature.neutral-arbiter]
+        excludes: [elections.role.boycott-principle]
+        tension: []
+        tags: [elections]
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [finance-capital]
+          mechanism: >
+            An elected majority can tax and regulate capital and expand public provision, but ownership and the
+            unelected apparatus stay in place and can discipline the government by capital flight, bond markets and courts.
+          drain: softens
+          law_of_value: regulates
+          consciousness: hegemonic
+
+      - id: elections.role.lesser-evil
+        label: Vote for the lesser evil to stop the greater
+        claim: Elections rarely offer what you want, but you should vote for the less harmful option to block the worse one.
+        voiced: "Not voting for the lesser evil is a vote for the greater one. The people who pay are the most vulnerable."
+        you: You vote for the less bad option, even without enthusiasm, to keep the worse one out.
+        because: >
+          The difference between two parties may be small for the comfortable and large for the vulnerable: migrants,
+          workers without savings, people who rely on public health care. A vote costs little and the harm it prevents
+          is real. Movements build power between elections; on election day you minimize damage.
+        against:
+          - from: marxism.trotskyism
+            text: >
+              The lesser evil grows every cycle because the left always pays in advance. Each lesser evil prepares the
+              greater one by disappointing those who voted for it.
+          - from: conservatism.right-populism
+            text: >
+              The "lesser evil" game is how the establishment keeps its two wings in power. Break it, or it never changes.
+        sources:
+          - {author: "Noam Chomsky and John Halle", title: "An Eight Point Brief for LEV (Lesser Evil Voting)", year: 2016}
+        traditions:
+          defining: [liberalism.progressive]
+          typical: [socdem.democratic-socialism, liberalism.social, socdem.third-way]
+          contested: [anarchism.communist, marxism.ml]
+          rejects: [marxism.trotskyism, marxism.left-communism, conservatism.right-populism]
+        presupposes: []
+        excludes: [elections.role.boycott-principle]
+        tension: [elections.role.main-road]
+        tags: [elections]
+        analysis:
+          gains: [professional-managerial, core-workers]
+          pays: []
+          mechanism: >
+            Voting defensively lowers some immediate harms to vulnerable groups, but it commits voters to parties that
+            need not compete for them, which lets donors set the agenda of both options.
+          drain: sustains
+          law_of_value: none
+          consciousness: economic-corporate
+
+      - id: elections.role.tribune
+        label: Run to use parliament as a platform, not to govern
+        claim: Revolutionaries should stand in elections and sit in parliament to expose the system and rally workers, not to manage it.
+        voiced: "Parliament is a pigsty. Go into it anyway, and speak from its tribune to the workers outside."
+        you: You think radicals should run in elections to get heard and expose the system, without hoping to govern through it.
+        because: >
+          Most workers still look to parliament, so refusing it means leaving them to reformists. A revolutionary deputy
+          can denounce war budgets, defend strikers and reach millions. Karl Liebknecht's lone vote against war credits in
+          1914 did more for internationalism than a thousand leaflets.
+        against:
+          - from: marxism.left-communism
+            text: >
+              Participation teaches workers that parliament matters and turns revolutionary parties into electoral
+              machines. The tribune becomes the career.
+          - from: socdem.democratic-socialism
+            text: >
+              If you will not govern when you win, voters will not take you seriously. A party that only denounces leaves
+              the field to the right.
+        sources:
+          - {author: "V. I. Lenin", title: "Left-Wing Communism: An Infantile Disorder", year: 1920}
+          - {author: "Communist International", title: "Theses on the Communist Parties and Parliamentarism (Second Congress)", year: 1920}
+        traditions:
+          defining: [marxism.leninism, marxism.trotskyism]
+          typical: [marxism.ml, marxism.maoism, marxism.hoxhaism]
+          contested: [marxism.luxemburgism]
+          rejects: [marxism.left-communism, anarchism.communist, socdem.revisionist]
+        presupposes: [state.nature.class-instrument]
+        excludes: [elections.role.main-road]
+        tension: []
+        tags: [elections]
+        analysis:
+          gains: [core-workers]
+          pays: []
+          mechanism: >
+            Using elections as a platform spreads revolutionary argument among workers who follow parliament, without
+            committing the party to administering a capitalist budget; its effect on property depends on the mass movement outside.
+          drain: none
+          law_of_value: none
+          consciousness: hegemonic
+
+      - id: elections.role.boycott-principle
+        label: Refuse to vote on principle
+        claim: Voting legitimizes an illegitimate system, so you should refuse to take part on principle.
+        voiced: "If voting changed anything, they'd make it illegal. Every ballot is a signature on your own chains."
+        you: You refuse to vote because you think taking part gives the system a legitimacy it doesn't deserve.
+        because: >
+          Elections ask people to choose their rulers, not to rule. Taking part concedes that the state's institutions
+          are the proper arena and lends turnout to whoever wins. Abstention denies them that consent and keeps energy
+          for direct action. Anarchists have argued this since Proudhon; Bordiga's communists and India's Maoists apply it as revolutionary tactic.
+        against:
+          - from: marxism.leninism
+            text: >
+              Boycott is right only when a revolutionary upsurge can sweep parliament aside. Otherwise it leaves workers
+              who still believe in parliament alone with the reformists.
+          - from: liberalism.republican
+            text: >
+              Abstention silences you and hands the decision to those who vote. Refusing the ballot is not resistance;
+              it is surrender dressed as purity.
+        sources:
+          - {author: "Emma Goldman", title: "Anarchism and Other Essays", year: 1910}
+          - {author: "Errico Malatesta", title: "Neither Democrats nor Dictators: Anarchists", year: 1926}
+        traditions:
+          defining: [anarchism.communist, anarchism.insurrectionary, marxism.left-communism]
+          typical: [anarchism.individualist, anarchism.syndicalist, marxism.mlm, religious.salafi-jihadism, religious.salafism-quietist]
+          contested: [libertarianism.ancap]
+          rejects: [marxism.leninism, socdem.revisionist, liberalism.republican, nationalism.civic]
+        presupposes: []
+        excludes: [elections.role.main-road, elections.role.lesser-evil]
+        tension: []
+        tags: [elections]
+        analysis:
+          gains: []
+          pays: []
+          mechanism: >
+            Principled abstention withdraws consent symbolically but, where not backed by mass action, leaves electoral
+            outcomes to those who vote, typically older owners of property; the class effect depends on what is done instead.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Leninists treat boycott as a tactic for revolutionary moments (Russia 1905); anarchists and Bordigists treat
+            it as principle. Islamist rejectionists refuse elections on different, theological grounds.
+          consciousness: economic-corporate
+
+      - id: elections.role.organize-instead
+        label: Elections are secondary; build power where people live and work
+        claim: Whether or not you vote, elections are a sideshow; real power is built by organizing workplaces and neighborhoods.
+        voiced: "Vote if you like. Then go back to the real work: the shop floor, the tenants' union, the strike fund."
+        you: You think elections matter less than building organizations where people work and live.
+        because: >
+          Politicians respond to organized power, not to ballots alone. A strong union or tenants' movement changes
+          what any government must do, while an election victory without organized power behind it is reversed or
+          ignored. Time spent canvassing for candidates is time not spent building the base that wins in every season.
+        against:
+          - from: socdem.democratic-socialism
+            text: >
+              Laws decide whether unions can organize at all. Ignore elections and the other side writes the labor law.
+          - from: marxism.leninism
+            text: >
+              Organizing without a political program and a party leaves workers with economic struggles only. Sooner or
+              later the question of state power must be posed.
+        sources:
+          - {author: "Jane McAlevey", title: "No Shortcuts: Organizing for Power in the New Gilded Age", year: 2016}
+          - {author: "Frances Fox Piven and Richard Cloward", title: "Poor People's Movements", year: 1977}
+        traditions:
+          defining: [anarchism.syndicalist]
+          typical: [marxism.autonomism, zapatismo, anarchism.platformist, anarchism.communist]
+          contested: [socdem.democratic-socialism, socdem.labourism]
+          rejects: [socdem.third-way, liberalism.technocratic]
+        presupposes: [change.possibility.organized-people-can]
+        excludes: []
+        tension: [elections.role.main-road]
+        tags: [organizing]
+        analysis:
+          gains: [core-workers, reserve-army, peripheral-workers]
+          pays: [industrial-capital, landed-capital]
+          mechanism: >
+            Organized disruption at work and in housing raises the cost of exploitation and rent directly, which
+            forces concessions from employers, landlords and governments regardless of who holds office.
+          drain: reduces
+          law_of_value: regulates
+          consciousness: class-economic
+
+      - id: elections.role.choose-and-remove-rulers
+        label: Elections let us remove rulers without bloodshed
+        claim: Elections do not express a popular will or transform society; their value is that they let people remove those in power peacefully.
+        voiced: "The question is not who should rule, but how to get rid of bad rulers without bloodshed."
+        you: You think the main point of elections is that you can remove bad leaders without violence.
+        because: >
+          The idea that the people rule through elections is a myth; voters choose among competing teams of leaders.
+          That modest function is precious: it disciplines rulers, transfers power without civil war, and lets mistakes
+          be corrected. Asking more of elections invites disappointment and demagogues.
+        against:
+          - from: socdem.democratic-socialism
+            text: >
+              A choice between teams funded by the same donors is a thin form of self-government. Elections can and
+              must carry programs, or they become a ritual.
+          - from: conservatism.right-populism
+            text: >
+              That is the elite's view of elections: the people may change faces, never policy. When voters choose a
+              change, the courts and bureaucracy block it anyway.
+        sources:
+          - {author: "Joseph Schumpeter", title: "Capitalism, Socialism and Democracy", year: 1942}
+          - {author: "Karl Popper", title: "The Open Society and Its Enemies", year: 1945}
+          - {author: "Adam Przeworski", title: "Why Bother with Elections?", year: 2018}
+        traditions:
+          defining: [liberalism.classical, liberalism.technocratic]
+          typical: [liberalism.chicago, liberalism.austrian, conservatism.burkean, conservatism.neo]
+          contested: [liberalism.egalitarian]
+          rejects: [conservatism.right-populism, socdem.left-populism, anarchism.communist]
+        presupposes: []
+        excludes: [elections.role.plebiscite]
+        tension: []
+        tags: [elections, liberalism]
+        analysis:
+          gains: [professional-managerial, finance-capital]
+          pays: []
+          mechanism: >
+            Treating elections as rotation of leaders rather than as a channel for programs keeps economic policy with
+            central banks, courts and experts insulated from votes, which protects the property order across changes of government.
+          drain: sustains
+          law_of_value: none
+          consciousness: hegemonic
+
+      - id: elections.role.civic-duty
+        label: Voting is a civic duty
+        claim: Voting is a duty owed to the community, whatever the choice on offer; those who do not vote have no right to complain.
+        voiced: "People died for the right to vote. If you don't use it, don't complain about what you get."
+        you: You think voting is a duty you owe your community, whatever the options.
+        because: >
+          Self-government depends on citizens who take part; a republic where only the angry and the organized vote is
+          captured by them. The vote was won at great cost by workers, women and colonized peoples. Exercising it
+          honors that struggle and keeps the habit of citizenship alive.
+        against:
+          - from: anarchism.communist
+            text: >
+              Duty to whom? A ritual that changes nothing is not civic virtue. The struggles that won the vote were
+              fought outside the ballot box.
+          - from: liberalism.classical
+            text: >
+              A duty to vote implies the state may demand participation. Abstention is also a choice a free person may make.
+        sources:
+          - {author: "John Stuart Mill", title: "Considerations on Representative Government", year: 1861}
+          - {author: "Jean-Jacques Rousseau", title: "The Social Contract", year: 1762}
+        traditions:
+          defining: [nationalism.civic, liberalism.republican]
+          typical: [liberalism.social, conservatism.christian-democracy, commonsense.declinist]
+          contested: [liberalism.classical]
+          rejects: [anarchism.communist, anarchism.individualist]
+        presupposes: []
+        excludes: [elections.role.boycott-principle]
+        tension: [cs.politicians.all-crooks]
+        tags: [elections, common-sense]
+        analysis:
+          gains: []
+          pays: []
+          mechanism: >
+            A norm of voting raises turnout among lower-income groups who otherwise abstain, which modestly shifts
+            policy toward them; it also binds them to the existing choice set, whose limits donors and parties fix.
+          drain: none
+          law_of_value: none
+          consciousness: economic-corporate
+
+      - id: elections.role.plebiscite
+        label: Elections bind the people to a leader who acts for the nation
+        claim: The real purpose of elections is to give a leader a direct mandate from the people, over the heads of parties, parliament and courts.
+        voiced: "Parliaments haggle; the nation decides. Let the people speak directly to the one they trust, and let him act."
+        you: You think elections should give a trusted leader a strong direct mandate to act, over the heads of parties and courts.
+        because: >
+          Parliamentary bargaining among parties dilutes the popular will into deals among insiders. A direct mandate,
+          by presidential vote or referendum, lets the people choose a course and the leader carry it out against the
+          resistance of entrenched elites. De Gaulle's referendums and Perón's mass elections expressed the nation more
+          faithfully than any coalition.
+        against:
+          - from: liberalism.classical
+            text: >
+              Acclamation is not deliberation. A leader who claims the people's direct will treats every check as
+              treason, and plebiscites have crowned many emperors.
+          - from: marxism.trotskyism
+            text: >
+              Bonapartism: a leader balancing between classes, raised above them by the plebiscite, who in the end serves
+              the owners while silencing the workers.
+        sources:
+          - {author: "Carl Schmitt", title: "The Crisis of Parliamentary Democracy", year: 1923}
+          - {author: "Karl Marx", title: "The Eighteenth Brumaire of Louis Bonaparte", year: 1852, note: "a critical analysis of plebiscitary rule"}
+        traditions:
+          defining: [conservatism.gaullism, nationalism.peronism]
+          typical: [conservatism.right-populism, nationalism.bolivarianism, conservatism.national, nationalism.kemalism]
+          contested: [socdem.left-populism]
+          rejects: [liberalism.classical, liberalism.technocratic, marxism.trotskyism]
+        presupposes: []
+        excludes: [elections.role.choose-and-remove-rulers]
+        tension: []
+        tags: [elections, populism]
+        analysis:
+          gains: [petty-bourgeoisie, industrial-capital]
+          pays: []
+          mechanism: >
+            A plebiscitary mandate concentrates decision in an executive who balances between classes; whom it serves
+            depends on the bloc behind the leader, national industry and state workers under Perón, finance and agro-export elsewhere.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            Some materialists read Peronism and chavismo as mass nationalist movements that reduced the drain;
+            others (Trotskyists) as Bonapartist arbiters that defended capital.
+          consciousness: hegemonic

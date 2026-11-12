@@ -1,0 +1,1087 @@
+problematics:
+  - id: rights.basis
+    domain: state
+    layer: method
+    question: Where do rights come from?
+    plain: When you say someone "has a right," what gives them that right?
+    short: the basis of rights
+    importance: 2
+    region: state
+    positions:
+      - id: rights.basis.natural-rights
+        label: Rights are natural and come before any government
+        claim: People have rights to life, liberty and property by nature, before any government exists; governments are set up to protect those rights and lose their claim when they violate them.
+        voiced: >
+          We hold these truths to be self-evident: all men are created equal and endowed with certain unalienable rights.
+          Every man has a property in his own person, and in the labor of his body and the work of his hands. Government
+          does not grant these rights; it exists to secure them, and when it destroys them the people may alter or abolish it.
+        you: You believe people have rights by nature that no government gives and no government may take.
+        because: >
+          If rights came from the state, the state could take them back, and there would be no ground to condemn even the
+          worst tyranny that followed its own laws. Rights must therefore rest on something prior: human nature, reason, or
+          the Creator. This idea toppled kings, abolished the slave trade in the name of the rights of man, and still gives
+          the persecuted a claim against their own government.
+        against:
+          - from: liberalism.utilitarian
+            text: >
+              Natural rights is simple nonsense; natural and imprescriptible rights, rhetorical nonsense, nonsense upon stilts.
+              Rights are created by law and justified by their consequences.
+          - from: marxism.classical
+            text: >
+              The "rights of man" are the rights of the egoistic member of civil society, separated from other people and the
+              community. Natural property rights make the property relations of one epoch look eternal.
+        sources:
+          - {author: John Locke, title: Two Treatises of Government, year: 1689}
+          - {author: Thomas Jefferson, title: The Declaration of Independence, year: 1776}
+          - {author: Murray N. Rothbard, title: The Ethics of Liberty, year: 1982}
+        traditions:
+          defining: [liberalism.classical, libertarianism.minarchist, libertarianism.ancap]
+          typical: [libertarianism.objectivist, libertarianism.paleo, conservatism.fusionism, conservatism.evangelical-right, liberalism.austrian]
+          contested: [libertarianism.left, libertarianism.georgist, liberalism.republican]
+          rejects: [liberalism.utilitarian, marxism.classical, marxism.ml, conservatism.burkean]
+        presupposes: []
+        excludes: [rights.basis.utility]
+        tension: [rights.basis.inheritance]
+        tags: []
+        analysis:
+          gains: [industrial-capital, finance-capital, petty-bourgeoisie]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Placing property among rights prior to the state shields it from majorities: constitutional takings and contract
+            clauses and investment treaties make redistribution and nationalization legally costly, while the same doctrine
+            also protects individuals against arbitrary arrest and censorship.
+          drain: sustains
+          law_of_value: extends
+          disputed: Some Marxists (E. P. Thompson) value natural-rights claims as weapons the ruled have turned against rulers, even while rejecting their metaphysics.
+
+      - id: rights.basis.natural-law-duties
+        label: Rights follow from duties under a natural law ordered to the common good
+        claim: Rights come from a moral law written into human nature by God; each right corresponds to a duty and is ordered to the common good, so no right is absolute against it.
+        voiced: >
+          Every human being is a person, endowed with intelligence and free will, and has rights and duties flowing directly
+          from his nature. The right to life is tied to the duty to preserve it; the right to a decent standard of living to
+          the duty to work. The worker has a natural right to a wage sufficient for frugal and decent life, which no contract
+          can sign away.
+        you: You believe rights come from a moral law built into human nature by God, come paired with duties, and serve the common good.
+        because: >
+          Rights cut loose from duties and from any account of the good become endless claims of the will against everyone
+          else. Natural law grounds them in what human beings are and what they need to flourish: life, family, work, worship,
+          association. That is why the same tradition defends both the property of the small owner and the worker's right to
+          a just wage and a union, which neither liberalism nor socialism can hold together.
+        against:
+          - from: liberalism.classical
+            text: >
+              Whose natural law? A rights doctrine that depends on one church's account of human flourishing will be used to
+              coerce those who do not share it.
+          - from: marxism.classical
+            text: >
+              The "just wage" is still a wage. A doctrine that blesses private property and calls for class harmony asks
+              workers to accept their exploitation, made gentler.
+        sources:
+          - {author: Thomas Aquinas, title: Summa Theologiae, year: "c. 1270", note: "I-II, q. 94"}
+          - {author: Leo XIII, title: Rerum Novarum, year: 1891}
+          - {author: John XXIII, title: Pacem in Terris, year: 1963}
+        traditions:
+          defining: [conservatism.cst, conservatism.integralism]
+          typical: [conservatism.christian-democracy, conservatism.distributism, conservatism.traditionalist, conservatism.postliberal]
+          contested: [religious.liberation-theology, conservatism.evangelical-right]
+          rejects: [liberalism.utilitarian, libertarianism.ancap, marxism.classical]
+        presupposes: []
+        excludes: [rights.basis.utility]
+        tension: [rights.basis.natural-rights]
+        tags: [religion]
+        analysis:
+          gains: [petty-bourgeoisie, core-workers]
+          pays: [finance-capital]
+          mechanism: >
+            Making rights conditional on the common good legitimates a family wage, union rights and limits on usury while also
+            protecting small property; in Christian democratic states this underwrote family allowances and sectoral
+            bargaining, with property ownership untouched.
+          drain: none
+          law_of_value: regulates
+
+      - id: rights.basis.utility
+        label: Rights are rules we adopt because they make people better off
+        claim: Rights are rules created by law and custom, and they are justified only by their effects on human welfare; they can be revised when the effects change.
+        voiced: >
+          Right is the child of law: from real laws come real rights. A right is justified when securing it produces more
+          happiness than leaving it unsecured. Free speech and property deserve protection because they make people better
+          off, not because they fell from the sky.
+        you: You see rights as useful rules people made, kept because they make life better and open to change when they don't.
+        because: >
+          Appeals to natural rights settle nothing: each side declares its preferred rights self-evident. Asking what a rule
+          does to people's welfare gives a way to argue and to measure. Most of the rights we value can be defended this way,
+          and the method also shows when a supposed right, such as unlimited property in other people, should go.
+        against:
+          - from: liberalism.egalitarian
+            text: >
+              Utility does not take seriously the distinction between persons. If torturing one person made enough others happy,
+              utility would allow it; rights exist exactly to block such trades.
+          - from: conservatism.cst
+            text: >
+              A right that lasts only while it pays is no right. The weak, the unborn and the useless have no defense against
+              a calculation run by the strong.
+        sources:
+          - {author: Jeremy Bentham, title: An Introduction to the Principles of Morals and Legislation, year: 1789}
+          - {author: John Stuart Mill, title: Utilitarianism, year: 1863}
+        traditions:
+          defining: [liberalism.utilitarian]
+          typical: [liberalism.technocratic, technology.effective-altruism, socdem.fabian]
+          contested: [liberalism.chicago, liberalism.social]
+          rejects: [libertarianism.ancap, conservatism.cst, liberalism.egalitarian, conservatism.integralism]
+        presupposes: []
+        excludes: [rights.basis.natural-rights, rights.basis.natural-law-duties]
+        tension: []
+        tags: []
+        analysis:
+          gains: [professional-managerial]
+          pays: [reserve-army]
+          mechanism: >
+            Treating rights as revisable welfare rules hands their content to whoever runs the calculation, usually economists
+            and administrators; protections for those whose welfare counts little in aggregate (prisoners, migrants, the
+            unemployed) are the first to be traded.
+          drain: none
+          law_of_value: none
+
+      - id: rights.basis.won-in-struggle
+        label: Rights are won by struggle and reflect who has power
+        claim: Rights are not given by nature or granted by rulers; they are won by organized struggle, written down as the balance of power, and lost when that balance shifts.
+        voiced: >
+          Between equal rights, force decides. Nobody gave us the eight-hour day, the vote or the union; we took them, and
+          people died for them. A right on paper is worth exactly the power that stands behind it. What was won can be taken
+          back, and it is being taken back now.
+        you: You believe rights are won by organized people and last only as long as they can defend them.
+        because: >
+          The record is plain. The working day was shortened by strikes and factory acts forced by them; universal suffrage
+          came from Chartists, suffragists and revolutions; civil rights came from boycotts and marches. Where movements
+          weakened, rights eroded: union rights since the 1980s, welfare rights under austerity. "Bourgeois rights" such as
+          property and contract were also won, by the bourgeoisie against feudal lords.
+        against:
+          - from: liberalism.classical
+            text: >
+              If rights are only what force wins, the persecuted have no claim when they lose. The slave who appealed to his
+              natural rights was right even before abolition succeeded.
+          - from: conservatism.burkean
+            text: >
+              Rights won by struggle are held by struggle: a politics of permanent conflict, where every gain is provisional,
+              destroys the trust on which any liberty rests.
+        sources:
+          - {author: Karl Marx, title: "Capital, Volume I", year: 1867, note: "ch. 10, The Working Day"}
+          - {author: Karl Marx, title: On the Jewish Question, year: 1844}
+          - {author: E. P. Thompson, title: The Making of the English Working Class, year: 1963}
+        traditions:
+          defining: [marxism.classical, marxism.leninism]
+          typical: [marxism.ml, marxism.trotskyism, socdem.labourism, anarchism.syndicalist, marxism.black-radical, marxism.luxemburgism, socdem.democratic-socialism]
+          contested: [socdem.nordic, feminism.materialist]
+          rejects: [liberalism.classical, libertarianism.ancap, conservatism.cst, conservatism.burkean]
+        presupposes: [history.motor.class-struggle, change.possibility.organized-people-can]
+        excludes: [rights.basis.natural-rights]
+        tension: [rights.basis.universal-consensus]
+        tags: []
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Treating rights as conquests directs people to build unions and parties that can win and defend them, rather than
+            petition courts; where organized, workers have shortened hours and raised wages through such rights.
+          drain: none
+          law_of_value: regulates
+          consciousness: class-economic
+
+      - id: rights.basis.inheritance
+        label: Rights are an inheritance handed down from our ancestors
+        claim: Rights are the particular liberties a people has built up and passed down over generations; they are real because they are inherited, not because they are abstract.
+        voiced: >
+          From Magna Carta to the Declaration of Right, it has been the uniform policy of our constitution to claim our
+          liberties as an entailed inheritance derived to us from our forefathers. We have not the rights of men, but the
+          rights of Englishmen. Abstract rights, being metaphysically true, are morally and politically false.
+        you: You see rights as liberties your people built up and handed down, valuable because they are tried and rooted.
+        because: >
+          Abstract rights can be pushed to any conclusion and have justified every revolutionary terror. Inherited rights are
+          tested by centuries of use, fitted to a people's habits, and bound up with duties and institutions that make them
+          work. The French declared the rights of man and got the guillotine; the English kept their ancient liberties and
+          extended them by careful reform.
+        against:
+          - from: liberalism.classical
+            text: >
+              The man who has no inheritance has no rights on this view: the slave, the colonized, the woman under coverture.
+              Rights that belong to "Englishmen" are privileges, not rights.
+          - from: marxism.classical
+            text: >
+              What a people "inherits" is what its ruling classes have allowed. Burke's ancient constitution was the
+              constitution of landowners.
+        sources:
+          - {author: Edmund Burke, title: Reflections on the Revolution in France, year: 1790}
+          - {author: William Blackstone, title: Commentaries on the Laws of England, year: 1765}
+        traditions:
+          defining: [conservatism.burkean]
+          typical: [conservatism.traditionalist, conservatism.one-nation, conservatism.national, conservatism.paleo]
+          contested: [conservatism.fusionism, communitarianism]
+          rejects: [liberalism.classical, marxism.classical, libertarianism.ancap, liberalism.utilitarian]
+        presupposes: []
+        excludes: []
+        tension: [rights.basis.natural-rights]
+        tags: []
+        analysis:
+          gains: [landed-capital, petty-bourgeoisie]
+          pays: [reserve-army, peripheral-workers]
+          mechanism: >
+            Grounding rights in a people's inheritance slows their extension to groups and claims outside it (colonial subjects,
+            migrants, social and economic rights), so established holders keep a protected status the newcomers lack.
+          drain: none
+          law_of_value: none
+
+      - id: rights.basis.membership
+        label: Rights exist only as membership in a political community
+        claim: Rights are real only where a political community guarantees them to its members; outside such membership a person has, in practice, no rights at all.
+        voiced: >
+          The first loss of the stateless was the loss of a home; the second, the loss of government protection. The
+          right to have rights means the right to belong to an organized community. The abstract nakedness of being nothing
+          but human turned out to be the greatest danger.
+        you: You think rights mean something only when a political community stands behind them, so belonging comes first.
+        because: >
+          The twentieth century tested "the rights of man" on the stateless and refugees, and those rights protected no one:
+          people who were only human could be interned and killed. Rights are guaranteed by mutual pledges among citizens,
+          which is why citizenship, not humanity alone, is what actually protects. This view supports two opposite programs:
+          extending membership generously, or defending the community whose membership is what makes rights possible.
+        against:
+          - from: liberalism.internationalist
+            text: >
+              Making rights depend on membership hands every state a license to strip them by revoking citizenship. The point of
+              human rights is to bind states toward everyone they touch.
+          - from: anarchism.communist
+            text: >
+              Belonging to a state is exactly what makes some people "illegal." Rights tied to citizenship are rights tied to
+              borders.
+        sources:
+          - {author: Hannah Arendt, title: The Origins of Totalitarianism, year: 1951, note: "ch. 9, The Decline of the Nation-State and the End of the Rights of Man"}
+          - {author: Yoram Hazony, title: The Virtue of Nationalism, year: 2018}
+        traditions:
+          defining: []
+          typical: [liberalism.republican, nationalism.civic, conservatism.national]
+          contested: [communitarianism, nationalism.ethnic, socdem.labourism]
+          rejects: [liberalism.internationalist, anarchism.communist, libertarianism.ancap]
+        presupposes: []
+        excludes: []
+        tension: [rights.basis.universal-consensus, rights.basis.natural-rights]
+        tags: [migration]
+        analysis:
+          gains: [core-workers, petty-bourgeoisie]
+          pays: [reserve-army, peripheral-workers]
+          mechanism: >
+            Tying rights to membership makes citizenship status decide access to labor protections and welfare, so non-citizen
+            workers from the periphery can be employed with fewer protections and at lower wages than citizens.
+          drain: sustains
+          disputed: Arendt drew the opposite conclusion from national conservatives, calling for a guarantee of membership for everyone; the class effect depends on who is admitted.
+          law_of_value: none
+
+      - id: rights.basis.revealed-law
+        label: Rights are what God grants through revealed law
+        claim: Rights are given by God and defined by revealed law; human beings cannot create or abolish them, and no right may contradict that law.
+        voiced: >
+          Rights in Islam are granted by God, not by kings or parliaments, and so no ruler can withdraw them. All rights are
+          subject to the Shari'ah. The dignity of man comes from his Creator; freedom that rejects the Creator's law is not
+          freedom but servitude to desire.
+        you: You believe rights come from God's revealed law, which no human assembly can create or overrule.
+        because: >
+          Rights made by human legislators shift with fashion and power; rights given by God are fixed and bind the ruler as
+          much as the subject. Revealed law protects life, faith, intellect, lineage and property, and it sets duties toward
+          the poor (zakat) and against usury that secular rights ignore. Western human-rights doctrine, by contrast, has
+          proved selective in its application to Muslim peoples.
+        against:
+          - from: liberalism.internationalist
+            text: >
+              Subjecting rights to a religious code allows unequal rights for women and non-believers and penalties for
+              apostasy; rights that depend on one faith's law are not universal rights.
+          - from: religious.post-islamism
+            text: >
+              Revelation sets values; their legal form is human interpretation. Treating the jurists' rulings as divine law gives
+              clerics and rulers a power God never gave them.
+        sources:
+          - {author: Organisation of the Islamic Conference, title: Cairo Declaration on Human Rights in Islam, year: 1990}
+          - {author: Abul A'la Mawdudi, title: The Islamic Law and Constitution, year: 1955}
+          - {author: Sayyid Qutb, title: Social Justice in Islam, year: 1949}
+        traditions:
+          defining: [religious.islamism-brotherhood, religious.islamism-khomeinist]
+          typical: [religious.salafism-quietist, religious.salafi-jihadism]
+          contested: [religious.islamic-socialism, feminism.islamic, religious.religious-zionism]
+          rejects: [liberalism.internationalist, liberalism.classical, religious.post-islamism, marxism.ml]
+        presupposes: [state.nature.ordained-authority]
+        excludes: [rights.basis.utility, rights.basis.won-in-struggle]
+        tension: [rights.basis.universal-consensus]
+        tags: [religion, global-south]
+        analysis:
+          gains: [petty-bourgeoisie, landed-capital]
+          pays: [finance-capital]
+          mechanism: >
+            Grounding rights in revealed law protects property and inheritance shares as sacred while banning interest and
+            mandating alms; Islamic banks have adapted lending through sale and partnership contracts, so the main legal effects
+            fall on family law and public morality rather than on capital.
+          drain: none
+          law_of_value: regulates
+
+      - id: rights.basis.universal-consensus
+        label: Rights rest on equal human dignity, recognized by the nations together
+        claim: Rights belong to every human being because of equal human dignity, and they are codified in international law by agreement among peoples with different beliefs.
+        voiced: >
+          Recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is
+          the foundation of justice and peace in the world. We agree on the rights, as Maritain said, on condition that no
+          one asks us why. Civil and political rights, and also the rights to work, to social security and to an adequate
+          standard of living.
+        you: You believe every human being has the same rights because of shared human dignity, and that the world's nations have rightly written these down together.
+        because: >
+          After the Second World War, nations from every tradition agreed on a common list, without settling the
+          philosophical argument about its foundation. That practical consensus gives the persecuted a standard their own
+          government signed. It includes social and economic rights alongside civil ones, and it has given anticolonial,
+          antiapartheid and women's movements a language recognized everywhere.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              Human rights are enforced by the strong against the weak: sanctions and bombing for the periphery, impunity for the
+              core. The social and economic rights in the same documents are never enforced at all.
+          - from: conservatism.national
+            text: >
+              Rights without a nation behind them become rule by international lawyers and NGOs accountable to no electorate.
+        sources:
+          - {author: United Nations General Assembly, title: Universal Declaration of Human Rights, year: 1948}
+          - {author: Jacques Maritain, title: Man and the State, year: 1951}
+        traditions:
+          defining: [liberalism.internationalist]
+          typical: [liberalism.social, liberalism.egalitarian, conservatism.christian-democracy, socdem.nordic, socdem.third-way, liberalism.progressive]
+          contested: [marxism.african-socialism, religious.post-islamism, feminism.liberal]
+          rejects: [conservatism.national, marxism.third-worldism, religious.salafism-quietist]
+        presupposes: [intl.sovereignty.conditional-on-rights]
+        excludes: []
+        tension: [rights.basis.membership, rights.basis.won-in-struggle]
+        tags: []
+        analysis:
+          gains: [professional-managerial, finance-capital]
+          pays: [peripheral-workers]
+          mechanism: >
+            Universal rights are enforced mainly by powerful states, donors and courts, which apply them through aid conditions
+            and sanctions against peripheral governments while rarely enforcing the economic and social rights or applying
+            sanctions to themselves.
+          drain: sustains
+          law_of_value: none
+          disputed: Many Global South movements and states use the same instruments (the right to development, 1986; the right to self-determination) against the core, so materialists split on whether the framework mainly serves or resists the drain.
+
+  - id: liberty.concept
+    domain: state
+    layer: horizon
+    question: What is liberty?
+    plain: When you say you want to be free, free from what, and free to do what?
+    short: liberty
+    importance: 3
+    region: state
+    positions:
+      - id: liberty.concept.non-interference
+        label: Liberty is being left alone by others and by the state
+        claim: Liberty means that no one, and especially not the government, coerces you or stands in your way; what you do with that space is up to you.
+        voiced: >
+          Liberty is the absence of coercion by other men. I am free to the degree that no one interferes with my activity.
+          Liberty is liberty, not equality or fairness or justice or human happiness. A poor man is not unfree because he is
+          poor; he is unfree when someone forces him.
+        you: You see liberty as not being coerced by anyone, above all not by government.
+        because: >
+          Once liberty is redefined as the power or resources to do things, it becomes a license for the state to take from
+          some and give to others in liberty's name, and liberty itself disappears. Keeping the concept narrow keeps it
+          honest. A society of non-interference also lets people use knowledge no planner has, which is why it is both freer
+          and richer.
+        against:
+          - from: liberalism.republican
+            text: >
+              The slave of a kind master is never interfered with and is still a slave. Liberty is not the absence of interference
+              but the absence of a master who could interfere at will.
+          - from: marxism.classical
+            text: >
+              The worker is "free" in a double sense: free to sell his labor power, and free of any other way to live. Nobody
+              coerces him into the factory; hunger does.
+        sources:
+          - {author: Isaiah Berlin, title: Two Concepts of Liberty, year: 1958}
+          - {author: Friedrich A. Hayek, title: The Constitution of Liberty, year: 1960}
+        traditions:
+          defining: [liberalism.classical, liberalism.austrian, libertarianism.minarchist, libertarianism.ancap]
+          typical: [libertarianism.objectivist, liberalism.chicago, conservatism.fusionism, commonsense.live-and-let-live, technology.cyberlibertarian]
+          contested: [anarchism.individualist, libertarianism.left]
+          rejects: [marxism.classical, liberalism.republican, conservatism.integralism, socdem.nordic]
+        presupposes: []
+        excludes: [liberty.concept.collective-mastery]
+        tension: [liberty.concept.non-domination, liberty.concept.capability]
+        tags: []
+        analysis:
+          gains: [finance-capital, industrial-capital, landed-capital]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Defining liberty as non-interference counts the pressure of needing a wage as no restraint at all, while taxes and
+            labor law count as coercion; this makes redistribution and regulation the main threats to liberty and leaves
+            employers' and landlords' power unexamined.
+          drain: sustains
+          law_of_value: extends
+
+      - id: liberty.concept.non-domination
+        label: Liberty is not living at the mercy of anyone's arbitrary will
+        claim: Liberty means not being subject to anyone's arbitrary power, whether a ruler, a husband or an employer, even if they choose not to use it.
+        voiced: >
+          To be free is to be no one's subject: to walk tall and look others in the eye, without needing to placate anyone's
+          goodwill. The question is not whether your master interferes, but whether you have a master at all.
+        you: You see liberty as never living at the mercy of someone who could push you around at will, whether they do or not.
+        because: >
+          A person who must constantly anticipate a boss's moods, a landlord's whims or a husband's temper is unfree even on
+          the days nothing happens. The Roman and English republican tradition grasped this, and it explains why laws that
+          constrain the powerful, such as tenant protections and contestable rules, make people freer even when they interfere.
+          Applied to work, it shows why the employer's open-ended authority is a problem of liberty, not only of pay.
+        against:
+          - from: liberalism.austrian
+            text: >
+              The doctrine licenses unlimited state action against any "domination," real or imagined. The state is the greatest
+              potential dominator; arming it against every employer and husband makes it everyone's master.
+          - from: marxism.leninism
+            text: >
+              Domination is not a bad relation between individuals; it is a class relation. You cannot make the worker not
+              dominated by contestable rules while the boss still owns the plant.
+        sources:
+          - {author: Philip Pettit, title: "Republicanism: A Theory of Freedom and Government", year: 1997}
+          - {author: Quentin Skinner, title: Liberty before Liberalism, year: 1998}
+        traditions:
+          defining: [liberalism.republican]
+          typical: [marxism.analytical]
+          contested: [socdem.democratic-socialism, feminism.liberal, liberalism.egalitarian]
+          rejects: [liberalism.austrian, libertarianism.ancap]
+        presupposes: []
+        excludes: []
+        tension: [liberty.concept.non-interference]
+        tags: []
+        analysis:
+          gains: [core-workers, petty-bourgeoisie]
+          pays: [industrial-capital, landed-capital]
+          mechanism: >
+            Treating exposure to arbitrary power as unfreedom supports just-cause dismissal rules, tenant protections and
+            workplace voice, which reduce employers' and landlords' discretion without transferring ownership.
+          drain: none
+          law_of_value: regulates
+
+      - id: liberty.concept.capability
+        label: Liberty is the real ability to live the life you choose
+        claim: Liberty means having the real ability, including the money, health, time and education, to do and become what you have reason to value.
+        voiced: >
+          Freedom of contract means nothing to a man who must accept any terms or starve. When we speak of freedom we mean a
+          positive power of doing or enjoying something worth doing or enjoying. Development is the expansion of the real
+          freedoms people enjoy.
+        you: You see liberty as having the actual means, health, education and security to live as you choose, not just being left alone.
+        because: >
+          A right to travel means nothing without a bus fare; a right to speak means little without literacy. Liberty that
+          exists only on paper is a privilege of those with resources. Public education, health care and social insurance
+          therefore enlarge liberty; they do not shrink it. Famines, Sen showed, happen to people who lack entitlements, not
+          to places without food.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Confusing freedom with power or wealth means that every want becomes a claim on others, and the state that meets
+              those claims must control the producers. You end up less free and no richer.
+          - from: marxism.classical
+            text: >
+              Capabilities handed out by a welfare state on capital's terms remain revocable gifts. Real freedom requires
+              control over production, not a larger allowance from it.
+        sources:
+          - {author: T. H. Green, title: Liberal Legislation and Freedom of Contract, year: 1881}
+          - {author: Amartya Sen, title: Development as Freedom, year: 1999}
+        traditions:
+          defining: [liberalism.social, liberalism.egalitarian]
+          typical: [socdem.nordic, socdem.keynesian, socdem.fabian, liberalism.progressive, socdem.third-way, conservatism.one-nation]
+          contested: [socdem.democratic-socialism, conservatism.christian-democracy]
+          rejects: [liberalism.austrian, libertarianism.ancap, libertarianism.minarchist]
+        presupposes: []
+        excludes: []
+        tension: [liberty.concept.non-interference]
+        tags: []
+        analysis:
+          gains: [core-workers, reserve-army, professional-managerial]
+          pays: [finance-capital]
+          mechanism: >
+            Counting resources as part of liberty justifies tax-funded education, health care and income support, which raise
+            workers' fallback position and lower their dependence on any one employer; the salaried staff who run these
+            services also gain.
+          drain: softens
+          law_of_value: regulates
+
+      - id: liberty.concept.collective-mastery
+        label: Liberty is collective control over the conditions of life
+        claim: People become free only when they jointly control production and no longer have to sell their working time to survive; the measure of liberty is free time and common control.
+        voiced: >
+          The realm of freedom begins only where labor determined by necessity and external expediency ends. Freedom consists
+          in the associated producers governing their exchange with nature rationally, bringing it under their common control.
+          The shortening of the working day is its basic prerequisite.
+        you: You see liberty as people controlling together how society produces, so that no one has to sell their life by the hour.
+        because: >
+          Under capitalism most people spend most of their waking hours under someone else's command, producing what someone
+          else decides, because they have no other way to live. No list of individual rights touches that. Freedom is
+          therefore a social achievement: planning production in common, cutting the working day, and making the free
+          development of each the condition for the free development of all.
+        against:
+          - from: liberalism.austrian
+            text: >
+              "Common control" of production means control by whoever runs the plan. Economic control is control of all our ends;
+              whoever controls the means decides which ends are pursued.
+          - from: anarchism.individualist
+            text: >
+              The collective is not free; individuals are. A freedom that exists only for the "associated producers" as a whole
+              leaves each of them subject to the majority.
+        sources:
+          - {author: Karl Marx, title: "Capital, Volume III", year: 1894}
+          - {author: Friedrich Engels, title: Anti-Dühring, year: 1878}
+          - {author: Karl Marx and Friedrich Engels, title: The Communist Manifesto, year: 1848}
+        traditions:
+          defining: [marxism.classical, marxism.ml, marxism.leninism]
+          typical: [marxism.maoism, marxism.trotskyism, marxism.council-communism, marxism.western, marxism.degrowth-communism, marxism.autonomism]
+          contested: [socdem.democratic-socialism, marxism.market-socialism]
+          rejects: [liberalism.classical, liberalism.austrian, libertarianism.ancap, conservatism.burkean]
+        presupposes: [class.concept.relation-to-production]
+        excludes: [liberty.concept.non-interference]
+        tension: [liberty.concept.social-anarchist]
+        tags: []
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry, reserve-army]
+          pays: [finance-capital, industrial-capital, landed-capital]
+          mechanism: >
+            Defining liberty as common control of production makes private ownership of firms and the labor market themselves
+            the obstacle, so the program is to transfer ownership and cut working time rather than add individual rights.
+          drain: breaks
+          law_of_value: abolishes
+          consciousness: hegemonic
+
+      - id: liberty.concept.ordered-liberty
+        label: Liberty is the freedom to do what you ought, under law and virtue
+        claim: Liberty is not doing whatever you want but being able to do what is good; it needs law, virtue, family and faith to sustain it, and license destroys it.
+        voiced: >
+          Liberty is not the power of doing what we like, but the right of being able to do what we ought. Men are qualified
+          for civil liberty in exact proportion to their disposition to put moral chains upon their own appetites. Liberty
+          without virtue becomes license, and license ends in the rule of the strongest.
+        you: You see liberty as the freedom to live well within limits set by law, virtue and tradition, not as doing whatever you want.
+        because: >
+          A people that recognizes no limit except the law will need ever more law and police, because nothing else holds
+          them. The bonds liberalism calls constraints, family, church, place and custom, are what make self-government
+          possible. Liberalism has produced not free persons but isolated consumers ruled by markets and bureaucracies.
+          Ordered liberty protects real freedom by protecting its conditions.
+        against:
+          - from: liberalism.classical
+            text: >
+              Who decides what we "ought" to do? Every censor and inquisitor has claimed to defend true liberty against license.
+          - from: feminism.liberal
+            text: >
+              The "order" that sustained this liberty included women's subordination in the family. Ordered liberty was a man's
+              liberty.
+        sources:
+          - {author: Edmund Burke, title: Reflections on the Revolution in France, year: 1790}
+          - {author: Lord Acton, title: The History of Freedom in Antiquity, year: 1877}
+          - {author: Leo XIII, title: Libertas (On the Nature of Human Liberty), year: 1888}
+          - {author: Patrick J. Deneen, title: Why Liberalism Failed, year: 2018}
+        traditions:
+          defining: [conservatism.traditionalist, conservatism.burkean]
+          typical: [conservatism.cst, conservatism.integralism, conservatism.postliberal, conservatism.christian-democracy, conservatism.evangelical-right, conservatism.paleo, communitarianism]
+          contested: [conservatism.fusionism, religious.confucian]
+          rejects: [liberalism.classical, libertarianism.ancap, anarchism.individualist, feminism.liberal, feminism.queer]
+        presupposes: []
+        excludes: []
+        tension: [liberty.concept.non-interference]
+        tags: []
+        analysis:
+          gains: [petty-bourgeoisie, landed-capital]
+          pays: [reserve-army]
+          mechanism: >
+            Tying liberty to virtue and tradition supports laws on family, morals and public order; its economic content varies,
+            but it treats the household and local institutions, and their established owners, as the proper seat of authority.
+          drain: none
+          law_of_value: regulates
+          disputed: Postliberals (Deneen) attack market liberalism as corrosive of order; fusionists combine ordered liberty with free markets. The economic class content differs sharply between them.
+
+      - id: liberty.concept.national-liberation
+        label: Liberty is first a people's freedom from foreign rule
+        claim: Liberty begins with a nation's freedom from foreign domination; individual liberties mean little while the country is ruled from outside.
+        voiced: >
+          Seek ye first the political kingdom, and all else shall be added unto you. The individual has had too much liberty
+          and the nation too little; we are a sheet of loose sand. What the colonized wants is not the settler's charter of
+          rights but his own land and his own state.
+        you: You see liberty first as your people's freedom from foreign rule; without that, individual liberties are hollow.
+        because: >
+          Under colonial rule or foreign economic control, the most basic decisions, what to grow, what to build, whom to
+          trade with, are made abroad. Individual rights granted by a colonial power are granted on its terms. Only a people
+          that controls its own state, land and resources can give its members real liberty, and the long history of
+          decolonization shows that independence had to come first.
+        against:
+          - from: liberalism.classical
+            text: >
+              National liberation has often meant replacing a foreign ruler with a domestic one who jails dissidents in the name
+              of the nation. A free nation of unfree people is not liberty.
+          - from: marxism.trotskyism
+            text: >
+              Political independence without social revolution delivers the nation to its own bourgeoisie, which soon becomes a
+              junior partner of the same imperialists.
+        sources:
+          - {author: Kwame Nkrumah, title: "Ghana: The Autobiography of Kwame Nkrumah", year: 1957}
+          - {author: Sun Yat-sen, title: The Three Principles of the People, year: 1924}
+          - {author: Frantz Fanon, title: The Wretched of the Earth, year: 1961}
+          - {author: Amílcar Cabral, title: The Weapon of Theory, year: 1966}
+        traditions:
+          defining: [nationalism.pan-africanism, nationalism.three-principles, nationalism.nasserism]
+          typical: [nationalism.palestinian, nationalism.baathism, nationalism.kemalism, marxism.african-socialism, marxism.third-worldism, nationalism.bolivarianism, nationalism.indigenous-sovereignty, nationalism.gandhian]
+          contested: [marxism.ml, marxism.maoism, nationalism.decolonial]
+          rejects: [liberalism.classical, marxism.left-communism, marxism.trotskyism]
+        presupposes: [intl.sovereignty.nations-set-own-course]
+        excludes: []
+        tension: [liberty.concept.non-interference]
+        tags: [global-south]
+        analysis:
+          gains: [peripheral-workers, peasantry, industrial-capital]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >
+            Making national independence the first liberty supports nationalization of foreign-owned mines, plantations and
+            banks and protective trade policy, which shifts surplus from core investors and their local brokers to the new
+            national state and national owners.
+          drain: reduces
+          law_of_value: regulates
+          disputed: Materialists split on whether national liberation led by a national bourgeoisie can break the drain (Amin's national-popular project) or only renegotiates it (Fanon on the national bourgeoisie, Trotskyists).
+
+      - id: liberty.concept.social-anarchist
+        label: I am free only when everyone around me is free
+        claim: Liberty is social; a person is free only among free equals, so no one can be free while others are commanded, by bosses or by states.
+        voiced: >
+          I am truly free only when all human beings, men and women, are equally free. The freedom of other men, far from
+          limiting my freedom, is its necessary condition and confirmation. Liberty without socialism is privilege and
+          injustice; socialism without liberty is slavery and brutality.
+        you: You see liberty as something people have only together, among equals, without bosses or rulers of any kind.
+        because: >
+          Liberty is not a fence around the isolated individual; it is a relation among people. Where some command and others
+          obey, in the factory or in the party-state, the commanders are not free either; they are guards. That is why
+          anarchists reject both the liberal's freedom for property and the authoritarian socialist's equality without
+          freedom. The goal is free association all the way down.
+        against:
+          - from: marxism.leninism
+            text: >
+              Liberty without the power to defend it lasts until the first counter-revolutionary army arrives. Rejecting all
+              command means rejecting the discipline needed to win.
+          - from: liberalism.classical
+            text: >
+              If I am unfree as long as anyone anywhere is unfree, liberty becomes a utopian end-state that excuses any
+              coercion along the way.
+        sources:
+          - {author: Mikhail Bakunin, title: God and the State, year: 1882}
+          - {author: Mikhail Bakunin, title: Federalism, Socialism, Anti-Theologism, year: 1867}
+          - {author: Emma Goldman, title: Anarchism and Other Essays, year: 1910}
+        traditions:
+          defining: [anarchism.communist, anarchism.syndicalist]
+          typical: [anarchism.platformist, anarchism.communalism, anarchism.confederalism, anarchism.feminist, zapatismo, anarchism.insurrectionary]
+          contested: [marxism.council-communism, marxism.autonomism]
+          rejects: [marxism.ml, liberalism.classical, libertarianism.ancap]
+        presupposes: []
+        excludes: [liberty.concept.non-interference]
+        tension: [liberty.concept.collective-mastery]
+        tags: []
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, professional-managerial]
+          mechanism: >
+            Treating any command relation as unfreedom targets both ownership and management hierarchy, supporting
+            self-managed workplaces where managers and owners lose control over the labor process.
+          drain: reduces
+          law_of_value: abolishes
+          consciousness: hegemonic
+
+      - id: liberty.concept.servitude-to-god-alone
+        label: True liberty is serving God alone and no human master
+        claim: Liberty is release from submission to any human being, ruler or system, achieved by submitting to God alone and living by His law.
+        voiced: >
+          Islam is a declaration of the freedom of man from servitude to other men. To proclaim that sovereignty belongs to
+          God alone is to overthrow the rule of kings, priests and parties over human beings. Man-made systems, capitalist or
+          communist, enslave people to other people; only God's law frees them.
+        you: You see true liberty as obeying God alone, so that no ruler, boss or system made by humans can claim your obedience.
+        because: >
+          Every human law-giver puts some people over others: the capitalist over the worker, the party over the citizen, the
+          colonizer over the colonized. Only when sovereignty belongs to God, and the law is His, do all human beings stand equal
+          beneath it and free of one another. Western liberty has produced servitude to desire, money and foreign power.
+        against:
+          - from: religious.post-islamism
+            text: >
+              God's sovereignty in practice means the sovereignty of those who claim to interpret Him. Qutb's doctrine opened the
+              door to declaring fellow Muslims unbelievers and to violence against them.
+          - from: liberalism.classical
+            text: >
+              A liberty that consists in obeying a code one did not choose, enforced by the state, is obedience under another
+              name.
+        sources:
+          - {author: Sayyid Qutb, title: Milestones, year: 1964}
+          - {author: Abul A'la Mawdudi, title: The Islamic Law and Constitution, year: 1955}
+        traditions:
+          defining: [religious.islamism-brotherhood]
+          typical: [religious.salafi-jihadism, religious.islamism-khomeinist, religious.salafism-quietist]
+          contested: [religious.islamic-socialism]
+          rejects: [religious.post-islamism, liberalism.classical, marxism.ml, anarchism.communist]
+        presupposes: [rights.basis.revealed-law]
+        excludes: [liberty.concept.non-interference]
+        tension: []
+        tags: [religion, global-south]
+        analysis:
+          gains: [petty-bourgeoisie, professional-managerial]
+          pays: [comprador-capital]
+          mechanism: >
+            Declaring secular and Western-aligned rulers illegitimate mobilized merchants, students and professionals against
+            governments allied to core powers; its economic program keeps private property under religious limits (zakat, no
+            interest), so it changes who rules more than who owns.
+          drain: none
+          law_of_value: regulates
+
+  - id: equality.concept
+    domain: state
+    layer: horizon
+    question: What kind of equality matters?
+    plain: When people say everyone should be equal, equal in what?
+    short: equality
+    importance: 2
+    region: state
+    positions:
+      - id: equality.concept.before-the-law
+        label: Equality before the law, and nothing more
+        claim: The equality that matters is that the same laws apply to everyone; trying to equalize outcomes requires treating people unequally and destroys liberty.
+        voiced: >
+          Equality before the law and material equality are not only different but in conflict. From the fact that people are
+          very different, it follows that if we treat them equally the result must be inequality, and the only way to make
+          them equal would be to treat them differently. One law for all; no privileges, no handouts.
+        you: You want the same rules for everyone and think making outcomes equal would require treating people unequally.
+        because: >
+          People differ in talent, effort, luck and taste, so any free society will produce unequal results. Equal rules give
+          everyone the same protection and the same chance to try; equalizing results means a state that decides what each
+          person deserves, which no one has the knowledge or right to do. The abolition of legal privilege, of estates, castes
+          and guilds, was the great egalitarian achievement.
+        against:
+          - from: socdem.nordic
+            text: >
+              The law forbids rich and poor alike to sleep under bridges. Equal rules over unequal resources reproduce and harden
+              the inequality.
+          - from: nationalism.ambedkarite
+            text: >
+              Legal equality was declared in India in 1950 while caste governed who owned land, who cleaned latrines and whom one
+              could marry. Formal equality left social inequality intact.
+        sources:
+          - {author: Friedrich A. Hayek, title: The Constitution of Liberty, year: 1960}
+          - {author: Milton Friedman and Rose Friedman, title: Free to Choose, year: 1980}
+        traditions:
+          defining: [liberalism.classical, liberalism.austrian, libertarianism.minarchist]
+          typical: [libertarianism.ancap, libertarianism.objectivist, liberalism.chicago, conservatism.fusionism, commonsense.self-reliance]
+          contested: [conservatism.burkean, conservatism.national]
+          rejects: [socdem.nordic, marxism.classical, liberalism.egalitarian, nationalism.ambedkarite, feminism.materialist]
+        presupposes: []
+        excludes: [equality.concept.classless, equality.concept.difference-principle]
+        tension: [equality.concept.group-substantive]
+        tags: []
+        analysis:
+          gains: [finance-capital, industrial-capital, landed-capital]
+          pays: [core-workers, reserve-army, peripheral-workers]
+          mechanism: >
+            Limiting equality to formal legal equality rules out redistribution and group remedies, so differences in inherited
+            wealth, schooling and connections pass to the next generation with no counterweight.
+          drain: sustains
+          law_of_value: extends
+
+      - id: equality.concept.opportunity
+        label: Equal opportunity, then let the best rise
+        claim: Everyone should have a fair start through education and open competition; after that, unequal rewards for unequal effort and talent are fair.
+        voiced: >
+          Everyone deserves a fair shot. Give every child a good school and every adult a chance to compete, and then let
+          people go as far as their talents and hard work take them. Equality of opportunity, not equality of outcome.
+        you: You want everyone to have a fair start, and then for the hardworking and talented to rise as far as they can.
+        because: >
+          Rewarding effort and talent gives people a reason to develop both, and it respects their choices. What is unfair is
+          a race where some start ahead because of birth. Public education, anti-discrimination law and scholarships fix the
+          start without fixing the finish, which keeps both fairness and incentives.
+        against:
+          - from: liberalism.egalitarian
+            text: >
+              Talent is also luck: no one earns their genes or the family that cultivated them. A pure meritocracy rewards a
+              natural lottery as if it were desert.
+          - from: socdem.democratic-socialism
+            text: >
+              Michael Young coined "meritocracy" as a warning. A society sorted by tests turns the winners' children into the next
+              winners and tells the losers they deserved to lose.
+        sources:
+          - {author: Anthony Giddens, title: "The Third Way: The Renewal of Social Democracy", year: 1998}
+          - {author: Michael Young, title: The Rise of the Meritocracy, year: 1958, note: "the satire that coined the word"}
+        traditions:
+          defining: [socdem.third-way, commonsense.self-reliance]
+          typical: [liberalism.progressive, liberalism.technocratic, liberalism.social, conservatism.one-nation, conservatism.christian-democracy, religious.political-meritocracy]
+          contested: [liberalism.classical, nationalism.developmental-state]
+          rejects: [marxism.classical, socdem.democratic-socialism, conservatism.traditionalist]
+        presupposes: []
+        excludes: [equality.concept.classless]
+        tension: [equality.concept.difference-principle]
+        tags: [commonsense]
+        analysis:
+          gains: [professional-managerial, petty-bourgeoisie]
+          pays: [reserve-army, core-workers]
+          mechanism: >
+            Making schooling and credentials the fair gate legitimates large pay gaps between graduates and others, while
+            well-off families buy advantage through housing near good schools and tutoring, so opportunity is passed down.
+          drain: none
+          law_of_value: none
+
+      - id: equality.concept.difference-principle
+        label: Inequalities are fair only if they help the worst off
+        claim: Social and economic inequalities are acceptable only if they make the least advantaged better off than they would be under any alternative.
+        voiced: >
+          Behind a veil of ignorance, not knowing whether you would be born rich or poor, talented or not, you would choose
+          rules under which inequalities are arranged to the greatest benefit of the least advantaged. Justice is the first
+          virtue of social institutions.
+        you: You accept inequality only to the extent it actually makes the worst-off better off than they would otherwise be.
+        because: >
+          No one deserves their starting place or their natural gifts; these are arbitrary from a moral point of view. Free
+          and equal people choosing fair rules without knowing their own position would protect themselves against the worst
+          outcome. Unequal rewards can still be justified, but only by the help they give to the people at the bottom, not by
+          desert.
+        against:
+          - from: libertarianism.minarchist
+            text: >
+              Justice is in how holdings came about, not in their pattern. Liberty upsets patterns: to maintain the difference
+              principle you must continuously interfere with people's free choices and take what they justly hold.
+          - from: marxism.analytical
+            text: >
+              The incentive argument lets the talented hold the poor to ransom: "pay me more or I will not work as hard." That is
+              bargaining, not justice.
+        sources:
+          - {author: John Rawls, title: A Theory of Justice, year: 1971}
+          - {author: Ronald Dworkin, title: "Sovereign Virtue: The Theory and Practice of Equality", year: 2000}
+        traditions:
+          defining: [liberalism.egalitarian]
+          typical: [liberalism.social, socdem.nordic, socdem.keynesian, liberalism.progressive]
+          contested: [marxism.analytical, socdem.democratic-socialism, libertarianism.left]
+          rejects: [libertarianism.minarchist, libertarianism.ancap, liberalism.austrian, conservatism.burkean]
+        presupposes: [inequality.justice.luck-unjust]
+        excludes: [equality.concept.before-the-law, equality.concept.natural-hierarchy]
+        tension: [equality.concept.opportunity]
+        tags: [debate.rawls-nozick]
+        analysis:
+          gains: [core-workers, reserve-army]
+          pays: [finance-capital, professional-managerial]
+          mechanism: >
+            Testing every inequality by its effect on the worst off supports progressive taxation and transfers within a nation,
+            while leaving private ownership of production in place where incentives are said to require it.
+          drain: none
+          law_of_value: regulates
+          disputed: Rawls limited the principle to a single society; cosmopolitan Rawlsians (Beitz, Pogge) extend it worldwide, which would make it bear on the drain.
+
+      - id: equality.concept.relational
+        label: Equality means no one stands above or below anyone else
+        claim: The point of equality is a society in which people relate as equals, with no one ruling, despising or exploiting others, rather than a society that only evens out shares of goods.
+        voiced: >
+          The proper negative aim of egalitarian justice is not to eliminate the impact of brute luck but to end oppression.
+          Its positive aim is a community in which people stand in relations of equality to others: no bowing and scraping,
+          no masters and servants, no castes.
+        you: You care less about equal shares than about no one being able to lord it over anyone else.
+        because: >
+          Egalitarian movements were never about equal piles of goods; they fought aristocracy, slavery, caste, patriarchy and
+          the boss's petty tyranny. Equality of standing requires enough material security that no one must submit, and
+          institutions where everyone has a voice, including at work. Focusing on luck and shares turns equality into a
+          charity calculation and misses that.
+        against:
+          - from: liberalism.egalitarian
+            text: >
+              Relations of equality are vague; distributive principles give clear guidance about what each person is owed.
+          - from: conservatism.traditionalist
+            text: >
+              Human life is full of good hierarchies: parent and child, teacher and pupil, master and apprentice. A society that
+              treats every difference of standing as oppression will dissolve them all.
+        sources:
+          - {author: Elizabeth S. Anderson, title: What Is the Point of Equality?, year: 1999}
+          - {author: R. H. Tawney, title: Equality, year: 1931}
+        traditions:
+          defining: [liberalism.republican]
+          typical: [socdem.democratic-socialism, socdem.fabian, liberalism.egalitarian, feminism.liberal]
+          contested: [marxism.analytical, anarchism.communist]
+          rejects: [conservatism.traditionalist, libertarianism.ancap, conservatism.reactionary]
+        presupposes: []
+        excludes: [equality.concept.natural-hierarchy]
+        tension: [equality.concept.difference-principle]
+        tags: []
+        analysis:
+          gains: [core-workers, reserve-army]
+          pays: [industrial-capital, professional-managerial]
+          mechanism: >
+            Treating subordination itself as the injustice supports workplace voice, anti-discrimination law and a floor of
+            security that lets people refuse degrading terms, which weakens employers' and managers' authority without ending
+            private ownership.
+          drain: none
+          law_of_value: regulates
+
+      - id: equality.concept.classless
+        label: Real equality means abolishing classes
+        claim: Equality worth the name means abolishing classes, so that no one lives from owning while others live from working; equal rights over unequal property only disguise the gap.
+        voiced: >
+          The real content of the proletarian demand for equality is the demand for the abolition of classes. Any demand for
+          equality going beyond that passes into absurdity. Equal right is still bourgeois right; the goal is from each
+          according to ability, to each according to needs.
+        you: You think the only equality that counts is ending the split between those who own and those who work.
+        because: >
+          As long as some own the means of production and others must sell their labor, the owners command the workers
+          whatever the law says. Equal votes and equal laws sit on top of that unequal relation and leave it untouched.
+          Abolishing classes does not make people identical; it ends the structural power of some over the labor of others,
+          and then real differences of need and ability can be met.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Every attempt to abolish classes produced a new one, the planners and party officials, with more power than any
+              capitalist and no market to check them.
+          - from: conservatism.burkean
+            text: >
+              Those who attempt to level never equalize. Society has orders and classes because it has different functions; the
+              attempt to erase them destroys the institutions that held people together.
+        sources:
+          - {author: Friedrich Engels, title: Anti-Dühring, year: 1878}
+          - {author: Karl Marx, title: Critique of the Gotha Programme, year: 1891, note: "written 1875"}
+        traditions:
+          defining: [marxism.classical, marxism.leninism, marxism.ml]
+          typical: [marxism.maoism, marxism.trotskyism, marxism.council-communism, anarchism.communist, anarchism.syndicalist, marxism.left-communism]
+          contested: [socdem.democratic-socialism, marxism.market-socialism]
+          rejects: [liberalism.classical, conservatism.burkean, conservatism.traditionalist, socdem.third-way]
+        presupposes: [class.concept.relation-to-production]
+        excludes: [equality.concept.before-the-law, equality.concept.natural-hierarchy, equality.concept.opportunity]
+        tension: []
+        tags: []
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry, reserve-army]
+          pays: [finance-capital, industrial-capital, landed-capital, comprador-capital]
+          mechanism: >
+            Making class abolition the meaning of equality targets ownership of production directly, so income from property
+            (profit, rent, interest) ends rather than being taxed and redistributed.
+          drain: breaks
+          law_of_value: abolishes
+          consciousness: hegemonic
+
+      - id: equality.concept.group-substantive
+        label: Equality must be won between castes, races and sexes, not just individuals
+        claim: Legal equality between individuals is not enough where whole groups are held down by caste, race or sex; equality requires measures for those groups, such as reserved places, until the hierarchy is gone.
+        voiced: >
+          On the 26th of January 1950 we are going to enter into a life of contradictions. In politics we will have equality
+          and in social and economic life we will have inequality. Political democracy cannot last unless there lies at its
+          base social democracy. Caste is not a division of labor; it is a division of laborers.
+        you: You think equality has to be won for whole groups held down by caste, race or sex, with measures that target those hierarchies directly.
+        because: >
+          Group hierarchies reproduce themselves through property, marriage, networks and violence, not through law alone.
+          A Dalit, a Black American or a woman faces barriers that no individual effort removes, because they are attached to
+          the group. Reservations in India, affirmative action and pay-equity rules aim directly at the hierarchy. Without
+          them, formal equality freezes existing advantage.
+        against:
+          - from: liberalism.classical
+            text: >
+              Treating people by group membership is exactly what equality forbade. Group preferences entrench the categories
+              they mean to dissolve and help the better-off within each group.
+          - from: marxism.classical
+            text: >
+              Reserved places distribute positions inside class society more fairly among groups; they do not abolish the class
+              hierarchy itself, and they can create a privileged layer that speaks for the whole group.
+        sources:
+          - {author: B. R. Ambedkar, title: Annihilation of Caste, year: 1936}
+          - {author: B. R. Ambedkar, title: "Speech to the Constituent Assembly, 25 November 1949", year: 1949}
+          - {author: Combahee River Collective, title: A Black Feminist Statement, year: 1977}
+        traditions:
+          defining: [nationalism.ambedkarite, feminism.black]
+          typical: [liberalism.progressive, marxism.black-radical, feminism.liberal, feminism.radical, nationalism.decolonial, nationalism.indigenous-sovereignty]
+          contested: [marxism.classical, socdem.labourism, liberalism.social]
+          rejects: [liberalism.classical, libertarianism.minarchist, conservatism.national, nationalism.hindutva]
+        presupposes: []
+        excludes: []
+        tension: [equality.concept.before-the-law, equality.concept.classless]
+        tags: [caste, race, global-south]
+        analysis:
+          gains: [reserve-army, professional-managerial, core-workers]
+          pays: [landed-capital, petty-bourgeoisie]
+          mechanism: >
+            Reserved seats, jobs and admissions move positions in the state and professions toward groups excluded by caste,
+            race or sex; land and capital stay where they were, so gains go first to the educated within each group.
+          drain: none
+          law_of_value: none
+          disputed: Materialists split between those who hold caste and race are class relations in their own right (Ambedkarites, racial capitalism theorists) and those who see group remedies as secondary to class struggle.
+
+      - id: equality.concept.equal-dignity
+        label: Equal dignity before God, different stations in life
+        claim: Every person has equal dignity, but people rightly occupy different stations; inequality is acceptable as long as everyone has enough for a decent life and the better-off serve the common good.
+        voiced: >
+          There naturally exist among mankind many differences of the most important kind. But all are equal in dignity, made
+          in the image of God. The rich must hold their wealth as stewards, and no one may be left without what is needed to
+          live in decency. Class is not war; capital needs labor and labor needs capital.
+        you: You believe everyone has equal worth before God while holding different places in life, as long as no one is left without enough.
+        because: >
+          Absolute equality of condition is against human nature and can be enforced only by tyranny. Yet a society that lets
+          some live in want while others accumulate betrays the equal dignity of every person. The answer is a just wage,
+          widely distributed property, and a duty of the fortunate toward the poor, so differences of station serve all.
+        against:
+          - from: marxism.classical
+            text: >
+              "Capital needs labor and labor needs capital" is exactly the harmony of interests that hides exploitation. Stations
+              are not natural; they are property relations.
+          - from: liberalism.classical
+            text: >
+              Who decides how much is "decent" or what the rich "owe"? A doctrine of stewardship enforced by the state is
+              charity made compulsory.
+        sources:
+          - {author: Leo XIII, title: Rerum Novarum, year: 1891}
+          - {author: Pius XI, title: Quadragesimo Anno, year: 1931}
+        traditions:
+          defining: [conservatism.cst, conservatism.distributism]
+          typical: [conservatism.christian-democracy, conservatism.one-nation, religious.islamism-brotherhood, religious.confucian]
+          contested: [religious.liberation-theology, conservatism.integralism]
+          rejects: [marxism.classical, libertarianism.ancap, liberalism.classical]
+        presupposes: [inequality.justice.stewardship]
+        excludes: [equality.concept.classless]
+        tension: [equality.concept.natural-hierarchy]
+        tags: [religion]
+        analysis:
+          gains: [petty-bourgeoisie, core-workers]
+          pays: [finance-capital]
+          mechanism: >
+            Joining equal dignity to accepted inequality of station supports a family wage, wide small ownership and charity
+            while defending private property in production, which channels workers toward cross-class bargaining rather than
+            class conflict.
+          drain: none
+          law_of_value: regulates
+          consciousness: economic-corporate
+
+      - id: equality.concept.natural-hierarchy
+        label: Inequality is natural, and hierarchy is good for society
+        claim: People are unequal by nature in ability and character, and a healthy society recognizes this with ranks, orders and leadership by the best; egalitarianism is a revolt against reality.
+        voiced: >
+          Civilized society requires orders and classes. The only true equality is moral equality; all other attempts at
+          leveling lead to despair. Men are not equal and never will be, and a nation that pretends otherwise is ruled by
+          envy and mediocrity.
+        you: You think people are naturally unequal and that society works best when it has ranks and is led by the best.
+        because: >
+          Every functioning human group, from the family to the army, has leaders and led. Differences of talent, character and
+          devotion are real, and a society that refuses to recognize them demoralizes the able and flatters the rest.
+          Egalitarian projects require ever more coercion to hold down natural differences, and they end in a new hierarchy
+          that is less honest than the old.
+        against:
+          - from: liberalism.classical
+            text: >
+              Natural differences between individuals do not map onto inherited orders and classes. The hierarchies you defend
+              were made by conquest and law, not by nature.
+          - from: marxism.classical
+            text: >
+              The "natural" ruling order is always the one that happens to rule. Every aristocracy discovered it was naturally
+              superior just after it acquired the land.
+        sources:
+          - {author: Russell Kirk, title: The Conservative Mind, year: 1953}
+          - {author: Edmund Burke, title: Reflections on the Revolution in France, year: 1790}
+        traditions:
+          defining: [conservatism.traditionalist, conservatism.reactionary]
+          typical: [conservatism.monarchist, conservatism.paleo, fascism.traditionalist, fascism.neoreaction, fascism.italian, fascism.nazism, libertarianism.paleo]
+          contested: [conservatism.burkean, libertarianism.objectivist, conservatism.national]
+          rejects: [marxism.classical, liberalism.egalitarian, anarchism.communist, socdem.nordic, nationalism.ambedkarite]
+        presupposes: []
+        excludes: [equality.concept.classless, equality.concept.relational, equality.concept.difference-principle]
+        tension: [equality.concept.equal-dignity]
+        tags: []
+        analysis:
+          gains: [landed-capital, finance-capital, industrial-capital]
+          pays: [core-workers, reserve-army, peripheral-workers]
+          mechanism: >
+            Presenting existing inequality as natural removes the grounds for redistribution and for challenging inherited
+            position; in its fascist forms it was extended to ranking races and nations, which justified conquest and forced
+            labor.
+          drain: sustains
+          law_of_value: none

@@ -1,0 +1,1482 @@
+# World system, part 1: imperialism, poverty, unequal exchange, the labor aristocracy.
+# Continued in world-b.yaml (comprador, development, primary contradiction, world order),
+# world-c.yaml (institutions, sanctions, sovereignty, war) and world-d.yaml
+# (intervention, aid, debt, China).
+problematics:
+  # ------------------------------------------------------------------
+  - id: imperialism.nature
+    domain: world
+    layer: analysis
+    question: What is imperialism?
+    plain: When powerful countries dominate weaker ones, is that a policy, a system, or a myth?
+    short: imperialism
+    importance: 3
+    region: world
+    positions:
+      - id: imperialism.nature.monopoly-stage
+        label: Imperialism is capitalism's monopoly stage
+        claim: >
+          Imperialism is a stage of capitalism in which monopolies and finance capital dominate,
+          capital is exported abroad in search of profit, and the great powers divide the world among themselves.
+        voiced: >
+          Imperialism is not a policy a government can decide to drop. It is capitalism grown into monopoly,
+          where the banks have fused with industry and capital must go abroad to find its profit.
+          The wars, the colonies and the treachery of the socialist leaders all come from that.
+        you: >
+          You see imperialism as built into capitalism once giant firms and banks dominate,
+          not as a policy some governments happen to choose.
+        because: >
+          Lenin named five marks: production concentrated into monopolies; bank and industrial capital fused
+          into finance capital under a financial oligarchy; the export of capital, not just goods; international
+          cartels sharing out markets; and a world already divided among the powers. If those marks are
+          structural, no change of government in a great power ends imperialism; only ending the rule of finance
+          capital does. The war of 1914, fought by states whose socialist parties had sworn to stop it, showed
+          that policy follows structure.
+        against:
+          - from: liberalism.classical
+            text: >
+              Monopoly is the child of tariffs, state charters and war contracts, not of competition. Where trade
+              is free and the state is small, capital has no reason to conquer; it can buy what it needs.
+          - from: marxism.third-worldism
+            text: >
+              Lenin's account centers rivalry among the powers and the export of capital. Today most of the
+              value moving north travels through prices, wages and debt service, which the monopoly-stage
+              account treats only in passing.
+        sources:
+          - {author: V. I. Lenin, title: "Imperialism, the Highest Stage of Capitalism", year: 1917}
+          - {author: Rudolf Hilferding, title: "Finance Capital", year: 1910}
+          - {author: J. A. Hobson, title: "Imperialism: A Study", year: 1902}
+        traditions:
+          defining: [marxism.leninism, marxism.ml]
+          typical: [marxism.maoism, marxism.mlm, marxism.trotskyism, marxism.hoxhaism, marxism.juche, marxism.left-communism, marxism.guevarism]
+          contested: [marxism.world-systems]
+          rejects: [liberalism.classical, liberalism.austrian, liberalism.chicago, conservatism.neo]
+        presupposes: [capitalism.nature.exploitation-profit]
+        excludes: [imperialism.nature.no-such-thing, imperialism.nature.foreign-policy-choice]
+        analysis:
+          gains: [peripheral-workers, peasantry, core-workers]
+          pays: [finance-capital, industrial-capital, comprador-capital]
+          mechanism: >
+            Locating imperialism in the rule of finance capital directs workers and colonized peoples against
+            the banks and monopolies themselves, threatening the superprofits those firms draw from investment,
+            loans and cartel prices abroad.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >
+            Amin and the unequal-exchange school accept Lenin's frame but move the center of gravity from
+            capital export and rivalry to the transfer of value through wages and prices.
+
+      - id: imperialism.nature.unequal-exchange-drain
+        label: Imperialism is the drain of value from periphery to core
+        claim: >
+          Imperialism is a structure of the world economy through which value produced by workers and peasants
+          in poor countries flows to rich ones, through low wages, cheap raw materials, profits, interest and
+          monopoly rents.
+        voiced: >
+          Every year the South sends the North more than it receives: underpaid labor hidden inside cheap goods,
+          raw materials sold below their worth, debt service, profit remittances, patent fees. Aid is the small
+          change. The drain is the system.
+        you: >
+          You see imperialism as a steady transfer of wealth from poor countries to rich ones, built into prices,
+          wages, debt and ownership.
+        because: >
+          An hour of labor in Bangladesh exchanges on world markets for a fraction of an hour of labor in Germany,
+          even when the factory is equally modern. Amin argued that core accumulation rests on this gap, held in
+          place by five monopolies of the core: technology, finance, access to natural resources, media and
+          communication, and weapons of mass destruction. Hickel and colleagues, pricing the labor, land, energy
+          and materials embodied in North–South trade, estimate a drain worth trillions of dollars a year, far
+          more than all aid flowing the other way.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Wages differ because productivity differs. Workers in poor countries take export jobs because they
+              beat the alternatives, and the countries that took the most of those jobs (South Korea, Taiwan,
+              China) are the ones that grew rich.
+          - from: marxism.third-camp
+            text: >
+              Treating nations as exploiters and exploited dissolves class. The worker in Detroit is exploited by
+              the same capital as the worker in Dhaka, and a ledger between countries hides the ruling classes of
+              the South who share in the take.
+        sources:
+          - {author: Samir Amin, title: "Unequal Development", year: 1973}
+          - {author: Samir Amin, title: "The Law of Worldwide Value", year: 2010}
+          - {author: Arghiri Emmanuel, title: "Unequal Exchange: A Study of the Imperialism of Trade", year: 1969}
+          - {author: "Jason Hickel, Christian Dorninger, Hanspeter Wieland and Intan Suwandi", title: "Imperialist appropriation in the world economy: Drain from the global South through unequal exchange, 1990–2015", year: 2022}
+          - {author: Utsa Patnaik and Prabhat Patnaik, title: "A Theory of Imperialism", year: 2016}
+        traditions:
+          defining: [marxism.third-worldism, marxism.dependency, marxism.world-systems]
+          typical: [marxism.maoism, marxism.mlm, nationalism.pan-africanism, marxism.african-socialism, marxism.degrowth-communism, ecology.degrowth]
+          contested: [marxism.ml, marxism.leninism]
+          rejects: [liberalism.chicago, liberalism.austrian, marxism.third-camp]
+        presupposes: [value.source.labor]
+        excludes: [imperialism.nature.no-such-thing]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, comprador-capital, core-workers]
+          mechanism: >
+            If the drain is the target, periphery states and movements fight to raise export prices, wages and
+            royalties and to cut debt service; core capital loses cheap inputs and monopoly rents, and core
+            consumers lose part of the cheapness of imported goods.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >
+            Orthodox Marxists (Bettelheim, Shaikh) hold that cross-border wage gaps reflect productivity gaps and
+            that value transfer through trade is smaller than the unequal-exchange school claims.
+
+      - id: imperialism.nature.inter-imperialist-rivalry
+        label: Imperialism is rivalry among capitalist great powers
+        claim: >
+          Imperialism is the competition of capitalist great powers, established and rising, for markets,
+          resources and spheres of influence, and it pushes them toward war with one another.
+        voiced: >
+          Washington, Beijing, Moscow, Brussels: rival blocs of capital. Workers have no side in their quarrels.
+          Neither Washington nor Moscow, but international socialism.
+        you: >
+          You see imperialism as a contest among rival powers, the United States, China, Russia and others, none
+          of which deserves workers' support.
+        because: >
+          Capital accumulates in national blocs backed by states; when growth slows, the blocs compete for
+          outlets, inputs and routes, and economic competition becomes geopolitical. Harvey calls this the
+          meeting of a capitalist and a territorial logic of power. Russia's wars on its neighbors and China's
+          export of capital show imperialism is not a single country's monopoly. To back one power against
+          another is to back one set of exploiters and send workers to die for them, as the socialist parties
+          did in 1914.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              Putting Russia or China beside the United States ignores where the drain goes. They do not command
+              the reserve currency, the main patents, the financial system or hundreds of overseas bases. Calling
+              every large state imperialist hands the actual hegemon a left cover.
+          - from: liberalism.internationalist
+            text: >
+              The contest is not between equivalent gangs. One side is an order of liberal democracies bound by
+              rules; the other side invades neighbors and jails dissidents.
+        sources:
+          - {author: V. I. Lenin and G. Zinoviev, title: "Socialism and War", year: 1915}
+          - {author: Rosa Luxemburg, title: "The Crisis of German Social Democracy (The Junius Pamphlet)", year: 1916}
+          - {author: David Harvey, title: "The New Imperialism", year: 2003}
+          - {author: Alex Callinicos, title: "Imperialism and Global Political Economy", year: 2009}
+        traditions:
+          defining: [marxism.third-camp]
+          typical: [marxism.trotskyism, marxism.left-communism, marxism.council-communism, marxism.luxemburgism, marxism.mlm, marxism.hoxhaism, anarchism.communist, anarchism.syndicalist]
+          contested: [marxism.leninism]
+          rejects: [marxism.third-worldism, marxism.scc, liberalism.internationalist, conservatism.neo]
+        presupposes: [capitalism.nature.exploitation-profit]
+        tension: [imperialism.nature.unequal-exchange-drain]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Refusing every camp turns workers against their own state's war budgets and alliances, which costs
+            arms makers and investors abroad; it also withholds support from periphery states resisting the
+            dominant power, which can leave the existing hierarchy of the drain in place.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            The frame (Amin) holds that only states sitting atop the drain are imperialist in the full sense and
+            that rising challengers widen room for Southern development; third-camp writers (Callinicos) answer
+            that capital export and military rivalry make Russia and China imperialist too.
+
+      - id: imperialism.nature.foreign-policy-choice
+        label: Imperialism is a foreign policy that could be abandoned
+        claim: >
+          Imperialism is a policy of conquest, intervention and domination that governments choose, driven by
+          particular interests or ideas, and that a better-governed great power could renounce.
+        voiced: >
+          Empire is a choice, and a bad one. It enriches a few contractors and bondholders, costs everyone else
+          their sons and their taxes, and could be ended by voters who refused to pay for it.
+        you: >
+          You see imperialism as wars, coups and occupations that governments choose, and that a better
+          government could stop.
+        because: >
+          Hobson showed that empire paid a narrow circle of investors and arms firms while the nation bore the
+          cost; raise wages at home and the hunt for foreign outlets loses its point. Schumpeter argued that
+          conquest is a leftover of warrior aristocracies, foreign to the calculating spirit of commerce. Angell
+          showed that conquest no longer pays. Countries that gave up their colonies kept getting richer.
+        against:
+          - from: marxism.leninism
+            text: >
+              Hobson's own evidence shows investors steering the state. A policy that every great capitalist power
+              has followed for over a century, under every party, is not a choice. It is a law of the system.
+          - from: marxism.third-worldism
+            text: >
+              Decolonization ended colonial administrations and the drain carried on. Most of the value moving
+              south to north today moves through ordinary trade and finance, which no change of foreign policy
+              touches.
+        sources:
+          - {author: J. A. Hobson, title: "Imperialism: A Study", year: 1902}
+          - {author: Joseph Schumpeter, title: "The Sociology of Imperialisms", year: 1919}
+          - {author: Norman Angell, title: "The Great Illusion", year: 1910}
+        traditions:
+          defining: [liberalism.social]
+          typical: [liberalism.classical, liberalism.progressive, socdem.democratic-socialism, socdem.keynesian, libertarianism.minarchist, libertarianism.paleo, conservatism.paleo]
+          contested: [socdem.labourism, liberalism.internationalist]
+          rejects: [marxism.leninism, marxism.third-worldism, marxism.dependency, conservatism.neo]
+        excludes: [imperialism.nature.monopoly-stage, imperialism.nature.unequal-exchange-drain]
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [industrial-capital]
+          mechanism: >
+            Opposing wars and occupations saves lives and public money and checks arms contractors, but it
+            leaves alone the price, debt and patent channels that carry most value north, so the drain continues
+            under a peaceful foreign policy.
+          drain: softens
+          law_of_value: none
+
+      - id: imperialism.nature.no-such-thing
+        label: Beyond outright conquest, there is no imperialism today
+        claim: >
+          Imperialism means conquering and ruling other peoples. Formal empires ended with decolonization;
+          outside open invasions, what critics call Western imperialism is trade, investment and alliances that
+          both sides enter because both gain.
+        voiced: >
+          Nobody forces Vietnam to sell sneakers or Poland to join NATO. They lined up to get in. People shout
+          "imperialism" when they dislike the results of free choices.
+        you: >
+          You think the age of empire is over, apart from the odd invasion, and that today's trade and alliances
+          are deals both sides want.
+        because: >
+          Empire means rule without consent. Today's poor countries are sovereign, sit in the UN, set their own
+          tariffs and choose their partners; capital goes where it is welcome and leaves where it is not. The
+          countries that opened to trade and investment after 1980 (China, India, Vietnam, Poland) saw the
+          largest falls in poverty in history, and the ones that closed themselves off stagnated.
+        against:
+          - from: nationalism.pan-africanism
+            text: >
+              Nkrumah named this in 1965: a state that has all the outward trappings of sovereignty while its
+              economic system, and so its policy, is directed from outside. Neo-colonialism is power without
+              responsibility for those who practice it and exploitation without redress for those who suffer it.
+          - from: marxism.dependency
+            text: >
+              A country that elects a government to change its terms meets capital flight, sanctions or a coup,
+              as Iran in 1953, Guatemala in 1954 and Chile in 1973 found. Consent given under that threat is not
+              free choice.
+        sources:
+          - {author: Jagdish Bhagwati, title: "In Defense of Globalization", year: 2004}
+          - {author: Martin Wolf, title: "Why Globalization Works", year: 2004}
+          - {author: Robert Kagan, title: "The Benevolent Empire", year: 1998, note: Foreign Policy}
+        traditions:
+          defining: [liberalism.chicago]
+          typical: [liberalism.technocratic, liberalism.internationalist, conservatism.neo, conservatism.fusionism, socdem.third-way]
+          contested: [liberalism.austrian]
+          rejects: [marxism.leninism, marxism.third-worldism, marxism.dependency, nationalism.pan-africanism, nationalism.decolonial, libertarianism.paleo, conservatism.paleo]
+        presupposes: [capitalism.nature.free-exchange]
+        excludes: [imperialism.nature.monopoly-stage, imperialism.nature.unequal-exchange-drain, imperialism.nature.coloniality]
+        analysis:
+          gains: [finance-capital, industrial-capital, comprador-capital, professional-managerial]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >
+            Denying any structure of domination legitimizes the existing terms of trade, debt and ownership: core
+            firms keep their monopoly rents and patent income, and periphery workers' low wages are filed under
+            comparative advantage.
+          drain: sustains
+          law_of_value: extends
+
+      - id: imperialism.nature.civilizing-order
+        label: Empire was real and, on balance, spread order and prosperity
+        claim: >
+          Western empires, and the American-led order after them, were real dominations, but they spread courts,
+          property rights, trade, science and public health, and the world is better off for them.
+        voiced: >
+          No institution did more to spread free trade, the rule of law and representative government around
+          the world than the British Empire. The question for America is not whether it is an empire but whether
+          it will be a good one.
+        you: >
+          You think empires, Britain's and now America's, did real good by spreading law, trade and order, whatever
+          their crimes.
+        because: >
+          The historical alternatives to empire were not independent liberal republics but other empires, local
+          despots, or war of all against all. Where British rule set up courts, railways, contract law and civil
+          services, the institutions often outlived it. The postwar American order kept sea lanes open, ended
+          great-power war in Western Europe and opened its market to East Asia's exporters. A hegemon that
+          underwrites order provides a public good that no one else will pay for.
+        against:
+          - from: marxism.dependency
+            text: >
+              India's share of world output fell from about a quarter in 1700 to a few percent by 1950, and
+              colonial famines killed millions while grain kept moving to market. The order was the security of
+              the drain, and the courts protected the people doing the draining.
+          - from: conservatism.paleo
+            text: >
+              An empire abroad breeds a garrison state at home: debt, surveillance, endless war and a governing
+              class that answers to the world before its own people. A republic cannot keep an empire and stay a
+              republic.
+        sources:
+          - {author: Niall Ferguson, title: "Empire: How Britain Made the Modern World", year: 2003}
+          - {author: Niall Ferguson, title: "Colossus: The Rise and Fall of the American Empire", year: 2004}
+          - {author: Deepak Lal, title: "In Praise of Empires", year: 2004}
+        traditions:
+          typical: [conservatism.neo, liberalism.classical, conservatism.fusionism, conservatism.traditionalist]
+          contested: [liberalism.internationalist]
+          rejects: [marxism.leninism, marxism.dependency, nationalism.decolonial, nationalism.pan-africanism, conservatism.paleo, libertarianism.paleo]
+        excludes: [imperialism.nature.unequal-exchange-drain, imperialism.nature.coloniality]
+        analysis:
+          gains: [finance-capital, industrial-capital, comprador-capital]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >
+            Defending empire as a public good justifies the military and legal guarantees (bases, investment
+            treaties, creditor courts) that keep core claims on periphery land, labor and revenue enforceable.
+          drain: sustains
+          law_of_value: extends
+
+      - id: imperialism.nature.coloniality
+        label: Imperialism lives on as coloniality, a racial and cultural hierarchy
+        claim: >
+          The end of colonial administration did not end colonial power. A world hierarchy built on race, on
+          European knowledge as the measure of all knowledge, and on a racial division of labor still decides
+          who works for what, who owns land and whose knowledge counts.
+        voiced: >
+          Colonialism ended; coloniality did not. The modern world was born in 1492 with a classification of
+          humanity by race, and that classification still decides whose labor is cheap, whose land is called
+          empty and whose ways of knowing are called superstition.
+        you: >
+          You see the colonial past living on in a ranking of peoples, cultures and kinds of knowledge that still
+          shapes who gets what.
+        because: >
+          Quijano showed that the conquest of the Americas fused a racial classification of humanity with a
+          division of labor that assigned unfree and unwaged work to the colonized and wages to Europeans. That
+          pattern outlived independence, which is why Indigenous and Black people still sit at the bottom of the
+          wage scale across the Americas. Because the hierarchy runs through knowledge as well, development
+          models imported from the North reproduce it; liberation requires delinking in thought, not only in
+          trade.
+        against:
+          - from: marxism.ml
+            text: >
+              Coloniality explains too much by ideas and too little by property. The drain runs through ownership
+              of mines, banks and patents, and a decolonized curriculum leaves all three where they are.
+          - from: liberalism.classical
+            text: >
+              Science, rights and markets are not European property; they are human achievements now used
+              everywhere. Calling them colonial keeps the poor from the very tools that lifted billions out of
+              poverty.
+        sources:
+          - {author: Aníbal Quijano, title: "Coloniality of Power, Eurocentrism, and Latin America", year: 2000}
+          - {author: Walter D. Mignolo, title: "The Darker Side of Western Modernity", year: 2011}
+          - {author: Aimé Césaire, title: "Discourse on Colonialism", year: 1950}
+          - {author: Ngũgĩ wa Thiong'o, title: "Decolonising the Mind", year: 1986}
+        traditions:
+          defining: [nationalism.decolonial]
+          typical: [nationalism.indigenous-sovereignty, feminism.decolonial, marxism.black-radical, zapatismo]
+          contested: [marxism.mariategui, marxism.third-worldism]
+          rejects: [liberalism.classical, liberalism.technocratic, conservatism.neo]
+        excludes: [imperialism.nature.no-such-thing, imperialism.nature.civilizing-order]
+        analysis:
+          gains: [peripheral-workers, peasantry, professional-managerial]
+          pays: [landed-capital, comprador-capital]
+          mechanism: >
+            Naming a racial hierarchy of labor and land backs Indigenous and Black claims to territory and against
+            wage discrimination, which cuts into rent and cheap labor. Where it stays at the level of knowledge
+            and representation, its main gains go to Southern and diaspora intellectuals while property relations
+            stay put.
+          drain: reduces
+          law_of_value: none
+          disputed: >
+            Marxist critics such as Vivek Chibber argue that culturalist accounts of the South concede capitalism's
+            universality to the liberals; decolonial writers reply that Marxism is itself a European universal.
+
+      - id: imperialism.nature.globalist-project
+        label: Today's empire is globalism, an order that dissolves nations
+        claim: >
+          The real empire of our time is the liberal universal order of supranational bodies, open borders,
+          global capital and human-rights law, which overrides the self-government of nations, rich ones included.
+        voiced: >
+          Brussels, Davos and the human-rights courts are the new imperial capitals. They tell nations, ours
+          included, what to believe, whom to admit and how to live. The alternative to empire is a world of
+          independent nations.
+        you: >
+          You think the empire to fear today is a global order of institutions and elites that takes decisions
+          away from nations, including your own.
+        because: >
+          Hazony argues that political order takes one of two forms: an empire that brings the world under one
+          law, or an order of independent nations each governing itself. Liberal internationalism is the
+          imperial form in modern dress: it claims universal truth, punishes nations that diverge, and wages
+          wars to spread itself. Workers in Ohio and farmers in Hungary have both lost control of their economies
+          and borders to it.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              The "globalist" order has a capital, and it is a national state that rules the dollar and the seas.
+              Nationalism in the core does not oppose that empire; it demands a bigger share of it, as tariffs on
+              poor countries and sanctions show.
+          - from: liberalism.internationalist
+            text: >
+              Sovereign nations joined these institutions because they solve problems none can solve alone.
+              Calling a treaty you may leave an empire erases the difference between cooperation and conquest.
+        sources:
+          - {author: Yoram Hazony, title: "The Virtue of Nationalism", year: 2018}
+          - {author: Patrick J. Buchanan, title: "A Republic, Not an Empire", year: 1999}
+          - {author: Alexander Dugin, title: "The Fourth Political Theory", year: 2009}
+        traditions:
+          defining: [conservatism.national]
+          typical: [conservatism.paleo, conservatism.right-populism, conservatism.postliberal, libertarianism.paleo, nationalism.eurasianism]
+          contested: [conservatism.gaullism]
+          rejects: [liberalism.internationalist, conservatism.neo, marxism.third-worldism, liberalism.technocratic]
+        presupposes: [state.nature.organic-nation]
+        excludes: [imperialism.nature.unequal-exchange-drain]
+        analysis:
+          gains: [industrial-capital, petty-bourgeoisie, core-workers]
+          pays: [peripheral-workers, finance-capital]
+          mechanism: >
+            In core countries this view redirects anger at lost control from capital to supranational bodies and
+            migrants, and its program (tariffs, sanctions, military primacy) shifts the drain's spoils toward
+            national industry rather than ending it. In semi-peripheral states it can back a national capitalist
+            bid to keep more surplus at home.
+          drain: sustains
+          law_of_value: regulates
+
+  # ------------------------------------------------------------------
+  - id: poverty.cause
+    domain: world
+    layer: analysis
+    question: Why are poor countries poor?
+    plain: Why do most people in some countries live on very little while others live in comfort?
+    short: the cause of world poverty
+    importance: 3
+    region: world
+    positions:
+      - id: poverty.cause.drain
+        label: Poor countries are poor because their wealth is drained to rich ones
+        claim: >
+          Poor countries are poor because the world economy moves value out of them: through cheap labor,
+          underpriced exports, profit remittances, debt service and monopoly prices on what they buy.
+        voiced: >
+          Africa is not poor. Africa is robbed. The gold, the cobalt, the cocoa and the labor leave cheap, and the
+          bill comes back with interest. Underdevelopment is not a starting point. It was made.
+        you: >
+          You think poor countries are poor because their wealth is carried off to rich countries, not because
+          of anything lacking in them.
+        because: >
+          Rodney showed that Europe's development and Africa's underdevelopment were one process: the slave
+          trade and colonial extraction built Europe's capital while wrecking African production. Frank showed
+          that Latin America's poorest regions were the ones most tightly tied to world markets, not the most
+          isolated. Today the drain continues through trade priced at unequal wages, through debt service and
+          profit remittances; measured honestly, the South finances the North.
+        against:
+          - from: liberalism.technocratic
+            text: >
+              Botswana, South Korea and Vietnam sat in the same world economy and climbed out; Zimbabwe and
+              Venezuela sat in it and fell. What differs is policy and institutions at home, not an iron drain.
+          - from: marxism.classical
+            text: >
+              Capitalism spreads production as well as plunder. Bill Warren showed that capitalist industry was
+              growing fast in parts of the periphery; blaming poverty on the drain alone misses the domestic class
+              relations that hold production back.
+        sources:
+          - {author: Walter Rodney, title: "How Europe Underdeveloped Africa", year: 1972}
+          - {author: Andre Gunder Frank, title: "The Development of Underdevelopment", year: 1966}
+          - {author: Samir Amin, title: "Accumulation on a World Scale", year: 1970}
+          - {author: "Jason Hickel, Dylan Sullivan and Huzaifa Zoomkawala", title: "Plunder in the Post-Colonial Era: Quantifying Drain from the Global South Through Unequal Exchange, 1960–2018", year: 2021}
+          - {author: Dadabhai Naoroji, title: "Poverty and Un-British Rule in India", year: 1901}
+        traditions:
+          defining: [marxism.dependency, marxism.third-worldism, marxism.world-systems]
+          typical: [marxism.maoism, marxism.mlm, marxism.ml, nationalism.pan-africanism, marxism.african-socialism, marxism.black-radical, religious.liberation-theology, nationalism.bolivarianism]
+          contested: [marxism.trotskyism, nationalism.decolonial]
+          rejects: [liberalism.chicago, liberalism.technocratic, liberalism.austrian, conservatism.neo]
+        presupposes: [imperialism.nature.unequal-exchange-drain]
+        excludes: [poverty.cause.late-development, poverty.cause.culture]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, comprador-capital, core-workers]
+          mechanism: >
+            Treating poverty as extraction points periphery movements at the channels of the drain (export prices,
+            debt, foreign ownership, local brokers), raising what stays at home and cutting what core firms and
+            their local partners take.
+          drain: breaks
+          law_of_value: suspends
+
+      - id: poverty.cause.bad-institutions
+        label: Poor countries are poor because their institutions are extractive
+        claim: >
+          Poor countries are poor because their rules let small elites seize what others produce: insecure
+          property, captured courts, closed markets and unchecked rulers. Countries with inclusive institutions
+          grow rich.
+        voiced: >
+          Nations fail because of extractive institutions. Put North and South Korea side by side: same people,
+          same culture, same geography, opposite rules. One is rich, one starves. Rules decide.
+        you: >
+          You think poor countries are held back mainly by bad rules at home: rulers who grab, courts that do not
+          protect, property that can be taken.
+        because: >
+          Acemoglu and Robinson show that where colonizers settled they built institutions that protected
+          property for many, and where they extracted they built institutions for plunder that local elites
+          inherited. De Soto shows the poor in Lima and Cairo hold trillions in assets they cannot use as
+          collateral because the law does not record them. North shows that secure, impersonal rules lower the
+          cost of every exchange. Fix the rules and investment, innovation and growth follow.
+        against:
+          - from: marxism.dependency
+            text: >
+              Extractive institutions in the periphery were built to serve the world market and are kept by it.
+              The elite that grabs is the local partner of foreign capital, and inclusive rules for owning land
+              mean little when the crop price is set in Chicago.
+          - from: nationalism.developmental-state
+            text: >
+              South Korea and Taiwan grew under military rule, state-directed credit and land reform, not under
+              liberal institutions. Growth came first; the institutions the theory praises came after.
+        sources:
+          - {author: Daron Acemoglu and James A. Robinson, title: "Why Nations Fail", year: 2012}
+          - {author: "Daron Acemoglu, Simon Johnson and James A. Robinson", title: "The Colonial Origins of Comparative Development", year: 2001}
+          - {author: Hernando de Soto, title: "The Mystery of Capital", year: 2000}
+          - {author: Douglass C. North, title: "Institutions, Institutional Change and Economic Performance", year: 1990}
+        traditions:
+          defining: [liberalism.technocratic]
+          typical: [liberalism.chicago, liberalism.classical, liberalism.internationalist, socdem.third-way, liberalism.ordoliberal]
+          contested: [liberalism.austrian, nationalism.developmental-state]
+          rejects: [marxism.dependency, marxism.third-worldism, marxism.world-systems]
+        presupposes: [property.private.natural-right]
+        tension: [poverty.cause.drain]
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial, petty-bourgeoisie]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >
+            The prescription (secure titles, open markets, investor protection) turns customary land into
+            collateral and sellable property, which opens it to banks and buyers, and binds periphery states to
+            treaty protections for foreign investors; the external terms of trade are left out of the account.
+          drain: sustains
+          law_of_value: extends
+          disputed: >
+            Some materialists (Robert Brenner's school) agree that internal class relations decide growth but
+            reject the liberal reading of which relations matter.
+
+      - id: poverty.cause.late-development
+        label: Poor countries are at an earlier stage and will catch up
+        claim: >
+          Poverty is humanity's original condition. Rich countries escaped it first; poor countries are earlier
+          on the same road and will climb through the same stages of growth if they save, invest and modernize.
+        voiced: >
+          Every society begins traditional and poor. Then come the preconditions, the take-off, the drive to
+          maturity and the age of high mass consumption. The question is never why the poor are poor, but why
+          some got rich first.
+        you: >
+          You think poor countries are simply further back on the road every rich country traveled, and will
+          catch up the same way.
+        because: >
+          Rostow showed a common path: agriculture gives way to industry once savings and investment pass a
+          threshold and a modernizing elite takes the helm. Britain, the United States, Japan, then South Korea
+          and China followed it. The share of humanity in extreme poverty has fallen from most of it to a
+          minority within two centuries. Nothing about that requires someone else to be poor.
+        against:
+          - from: marxism.dependency
+            text: >
+              The poor countries are not where Britain stood in 1750. Britain had colonies to drain; they are
+              the colonies. Frank: the periphery was not undeveloped but underdeveloped, made poor by the same
+              process that made the core rich.
+          - from: nationalism.developmental-state
+            text: >
+              The rich countries did not climb by free trade. They protected their industries, then kicked away
+              the ladder by forbidding poor countries the same tools.
+        sources:
+          - {author: W. W. Rostow, title: "The Stages of Economic Growth: A Non-Communist Manifesto", year: 1960}
+          - {author: Jeffrey D. Sachs, title: "The End of Poverty", year: 2005}
+        traditions:
+          defining: [liberalism.internationalist]
+          typical: [liberalism.technocratic, liberalism.chicago, socdem.third-way, conservatism.neo, commonsense.self-reliance]
+          contested: [marxism.classical]
+          rejects: [marxism.dependency, marxism.world-systems, marxism.third-worldism, nationalism.decolonial]
+        excludes: [poverty.cause.drain]
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >
+            Treating poverty as a stage makes the present world division natural and temporary, recommending
+            savings, foreign investment and the clearing of peasant agriculture for markets, while the transfers
+            that keep the stage from ending go unexamined.
+          drain: sustains
+          law_of_value: extends
+
+      - id: poverty.cause.culture
+        label: Culture decides which countries prosper
+        claim: >
+          Some cultures prize work, saving, trust beyond the family, education and the rule of law, and the
+          countries that hold them prosper. Others do not, and stay poor.
+        voiced: >
+          If we learn anything from the history of economic development, it is that culture makes all the
+          difference. Thrift, work, honesty, patience, tenacity. Money cannot buy them and aid cannot import them.
+        you: >
+          You think the values and habits of a people do more than anything else to decide whether a country
+          becomes rich.
+        because: >
+          Weber traced the spirit of capitalism to a religious ethic of disciplined work. Landes shows that
+          Europe's lead came from curiosity, openness to new knowledge and respect for work, and that East Asian
+          diasporas prosper wherever they settle. Banfield found villagers in southern Italy unable to cooperate
+          beyond the family, and poor because of it. Underdevelopment is, in Harrison's phrase, a state of mind.
+        against:
+          - from: marxism.dependency
+            text: >
+              Fifty years ago the same writers said Confucian culture explained East Asian poverty; now it
+              explains East Asian wealth. A cause that flips sign with the growth figures explains nothing.
+          - from: nationalism.decolonial
+            text: >
+              Ranking peoples by culture is the colonial mission restated: the conquered are poor because they are
+              lesser, and the conqueror rich because he deserves it.
+        sources:
+          - {author: David S. Landes, title: "The Wealth and Poverty of Nations", year: 1998}
+          - {author: Max Weber, title: "The Protestant Ethic and the Spirit of Capitalism", year: 1905}
+          - {author: Edward C. Banfield, title: "The Moral Basis of a Backward Society", year: 1958}
+          - {author: Lawrence E. Harrison, title: "Underdevelopment Is a State of Mind", year: 1985}
+        traditions:
+          typical: [conservatism.traditionalist, conservatism.neo, conservatism.fusionism, commonsense.self-reliance, liberalism.classical]
+          contested: [religious.confucian, conservatism.burkean]
+          rejects: [marxism.dependency, marxism.third-worldism, nationalism.decolonial, marxism.black-radical, nationalism.pan-africanism]
+        presupposes: [history.motor.ideas]
+        excludes: [poverty.cause.drain]
+        analysis:
+          gains: [finance-capital, industrial-capital, comprador-capital]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >
+            Explaining poverty by the character of the poor relocates the cause from prices, debt and ownership
+            to the people who bear them, which legitimizes the existing division of the world product and
+            supports discipline at home (work ethic, austerity) rather than claims abroad.
+          drain: sustains
+          law_of_value: extends
+          method: idealist
+
+      - id: poverty.cause.geography
+        label: Geography and disease explain much of world poverty
+        claim: >
+          Tropical disease, poor soils, being landlocked, and distance from ports and markets raise the cost of
+          everything in some places, and history has amplified those starting handicaps.
+        voiced: >
+          Malaria does not care about your constitution. A landlocked country in the tropics starts every race
+          with a sack of stones on its back. Help it carry the sack and it can run.
+        you: >
+          You think much of world poverty comes from hard geography (disease, climate, distance from the sea),
+          which outside help can offset.
+        because: >
+          Diamond shows that Eurasia's east–west axis and its domesticable plants and animals gave its peoples a
+          head start in farming, states and immunity. Sachs and colleagues show that tropical, landlocked
+          countries grow more slowly across every period measured. That makes poverty a trap, not a moral
+          failing: too poor to invest, too sick to work. A big push of public investment in health, roads and
+          fertilizer can spring it.
+        against:
+          - from: liberalism.technocratic
+            text: >
+              Singapore sits on the equator and is rich; North and South Korea share a climate and differ tenfold.
+              Geography sets costs, but institutions decide whether they are overcome.
+          - from: marxism.dependency
+            text: >
+              Malaria did not stop Europeans from draining the tropics for four centuries. Geography explains why
+              some places were targets, not why they stayed poor after the plunder.
+        sources:
+          - {author: Jared Diamond, title: "Guns, Germs, and Steel", year: 1997}
+          - {author: Jeffrey D. Sachs, title: "The End of Poverty", year: 2005}
+          - {author: "John Luke Gallup, Jeffrey D. Sachs and Andrew D. Mellinger", title: "Geography and Economic Development", year: 1999}
+        traditions:
+          typical: [liberalism.social, liberalism.technocratic, technology.effective-altruism, socdem.keynesian]
+          contested: [liberalism.internationalist]
+          rejects: [marxism.dependency, marxism.third-worldism, nationalism.decolonial]
+        analysis:
+          gains: [professional-managerial]
+          pays: []
+          mechanism: >
+            Natural causes name no one who gains from poverty, so the remedy is aid and public investment
+            administered by experts and donors; health and roads help periphery workers, while trade, debt and
+            ownership terms are left untouched.
+          drain: softens
+          law_of_value: none
+
+      - id: poverty.cause.colonial-legacy
+        label: Colonial rule left wreckage that still holds countries back
+        claim: >
+          Colonial rule left poor countries with arbitrary borders, single-crop economies, roads that run only
+          to ports, divided populations and states built to extract, and that inheritance still holds them back.
+        voiced: >
+          They drew our borders with rulers on a map in Berlin, built railways from the mine to the sea and
+          nowhere else, set one people over another and left. We are still clearing the rubble.
+        you: >
+          You think the damage done under colonial rule still shapes poor countries today, even though the
+          colonizers have formally gone.
+        because: >
+          Nunn shows that the African regions hit hardest by the slave trades are poorer and less trusting today.
+          Mamdani shows that indirect rule split colonized people into citizens and tribal subjects, a split that
+          postcolonial states inherited. Infrastructure built for export left economies dependent on one crop or
+          mineral. The harm is documented, measurable and owed for.
+        against:
+          - from: marxism.dependency
+            text: >
+              Calling it a legacy puts the cause in the past. The single-crop economies are kept that way by
+              today's prices, loans and investors; the drain did not end with the flag.
+          - from: liberalism.classical
+            text: >
+              Many colonies were richer at independence than they are now, and some poorer ones overtook them.
+              After sixty years, what governments did with independence matters more than what was done before it.
+        sources:
+          - {author: Nathan Nunn, title: "The Long-Term Effects of Africa's Slave Trades", year: 2008}
+          - {author: Mahmood Mamdani, title: "Citizen and Subject", year: 1996}
+          - {author: Hilary McD. Beckles, title: "Britain's Black Debt", year: 2013}
+        traditions:
+          typical: [nationalism.pan-africanism, nationalism.civic, liberalism.progressive, socdem.democratic-socialism, nationalism.indigenous-sovereignty]
+          contested: [marxism.dependency, nationalism.decolonial]
+          rejects: [liberalism.chicago, conservatism.neo]
+        tension: [poverty.cause.drain]
+        analysis:
+          gains: [peripheral-workers, professional-managerial]
+          pays: [finance-capital]
+          mechanism: >
+            Naming colonial harm supports claims for reparations, debt relief and state-building, which transfer
+            some value back; placing the cause in the past leaves present price and debt channels outside the
+            claim.
+          drain: softens
+          law_of_value: none
+
+      - id: poverty.cause.misrule
+        label: Poor countries are poor because their rulers loot and meddle
+        claim: >
+          Poor countries are poor because their rulers steal, regulate trade to death, print money and chase
+          away investors. Leave people free to trade and keep what they earn, and they prosper.
+        voiced: >
+          The leaders build palaces while the hospitals fall down, and every aid dollar ends up in a Swiss
+          account. The people are not lazy. They are robbed by their own governments.
+        you: >
+          You think poor countries are held back mostly by corrupt, grasping governments that steal and get in
+          the way of people earning a living.
+        because: >
+          Bauer showed that the trading peoples of West Africa and Southeast Asia built wealth from nothing when
+          left alone, and that state marketing boards and controls crushed them. Easterly shows planners
+          failing again and again while searchers in markets succeed. Development aid has handed rulers money
+          they need not raise from their own people, so it frees them from answering to anyone.
+        against:
+          - from: marxism.dependency
+            text: >
+              The thieves keep their loot in London, Zurich and Delaware, and they took power with foreign help.
+              Corruption at the periphery is the local face of a world system that rewards brokers.
+          - from: nationalism.developmental-state
+            text: >
+              Every country that industrialized late did it with a strong state that controlled trade and credit.
+              Blaming the state confuses bad states with the absence of markets.
+        sources:
+          - {author: P. T. Bauer, title: "Dissent on Development", year: 1971}
+          - {author: William Easterly, title: "The White Man's Burden", year: 2006}
+          - {author: Paul Collier, title: "The Bottom Billion", year: 2007}
+        traditions:
+          defining: [liberalism.austrian]
+          typical: [liberalism.chicago, libertarianism.minarchist, libertarianism.ancap, conservatism.fusionism, commonsense.anti-politics, commonsense.self-reliance]
+          contested: [liberalism.technocratic]
+          rejects: [marxism.dependency, marxism.third-worldism, nationalism.developmental-state, socdem.keynesian]
+        presupposes: [capitalism.nature.free-exchange]
+        excludes: [poverty.cause.drain]
+        analysis:
+          gains: [finance-capital, industrial-capital, petty-bourgeoisie]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >
+            Putting the blame on the periphery state recommends cutting it back (privatization, free trade, open
+            capital accounts), which removes the tools a periphery state could use to bargain with foreign capital
+            and hands public assets to buyers with cash.
+          drain: sustains
+          law_of_value: extends
+
+  # ------------------------------------------------------------------
+  - id: exchange.unequal
+    domain: world
+    layer: analysis
+    question: Is trade between rich and poor countries an equal exchange?
+    plain: When a poor country sells coffee or shirts to a rich one, does each side get fair value?
+    short: unequal exchange
+    importance: 2
+    region: world
+    positions:
+      - id: exchange.unequal.mutual-gain
+        label: Trade is mutual gain; each side does what it does best
+        claim: >
+          Trade between rich and poor countries benefits both. Each specializes in what it does relatively best,
+          and both end up with more than either could make alone.
+        voiced: >
+          Comparative advantage is the one idea in economics that is both true and surprising. The poor country
+          gains most of all: cheaper goods, new jobs, access to technology and markets it could never build alone.
+        you: >
+          You think trade between rich and poor countries benefits both sides, since each sells what it makes best.
+        because: >
+          Ricardo proved that even a country worse at everything gains by specializing where it is least worse.
+          The evidence since 1980 bears him out: the poor countries that traded most grew fastest, and global
+          extreme poverty fell further than at any time in history. Low wages are not theft; they reflect low
+          productivity, and they rise as capital and skills accumulate, as Korea and Taiwan show.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              Ricardo's proof assumes capital stays home. When capital moves freely and wages do not, the gains
+              from trade go to whoever owns the capital, and the low-wage country gives more labor than it gets.
+          - from: nationalism.developmental-state
+            text: >
+              Specializing in what you do best today locks you into it. Korea's comparative advantage in 1960 was
+              rice and wigs; it became a shipbuilder by defying the theory.
+        sources:
+          - {author: David Ricardo, title: "On the Principles of Political Economy and Taxation", year: 1817}
+          - {author: Adam Smith, title: "An Inquiry into the Nature and Causes of the Wealth of Nations", year: 1776}
+          - {author: Paul Krugman, title: "Ricardo's Difficult Idea", year: 1996}
+          - {author: Jagdish Bhagwati, title: "In Defense of Globalization", year: 2004}
+        traditions:
+          defining: [liberalism.chicago, liberalism.classical]
+          typical: [liberalism.austrian, liberalism.technocratic, liberalism.internationalist, libertarianism.minarchist, libertarianism.ancap, socdem.third-way, conservatism.fusionism]
+          contested: [liberalism.ordoliberal, socdem.nordic]
+          rejects: [marxism.third-worldism, marxism.dependency, nationalism.developmental-state, conservatism.national]
+        presupposes: [value.source.subjective-utility]
+        excludes: [exchange.unequal.wage-gap, exchange.unequal.value-chain-capture]
+        analysis:
+          gains: [finance-capital, industrial-capital, comprador-capital, professional-managerial]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >
+            Treating trade as equal exchange at world prices validates prices that pay periphery labor a fraction
+            of core labor for equal work, so the difference is counted as the core's productivity and the core
+            consumer's gain.
+          drain: sustains
+          law_of_value: extends
+
+      - id: exchange.unequal.terms-of-trade
+        label: Raw-material exporters lose because their prices fall against manufactures
+        claim: >
+          Countries that export raw materials and buy manufactures lose over time, because the prices of what
+          they sell tend to fall against the prices of what they buy. Industrialize or fall behind.
+        voiced: >
+          Every year we must sell more bags of coffee to buy the same tractor. The gains from technical progress
+          stay at the center; we pay for them twice.
+        you: >
+          You think countries that sell crops and minerals keep losing out, because those prices fall compared
+          with the prices of the machines they must buy.
+        because: >
+          Prebisch and Singer found that the terms of trade of primary exporters declined over the long run.
+          Productivity gains in industrial countries show up as higher wages and profits, held up by unions and
+          oligopoly; productivity gains in raw materials show up as lower prices, because surplus labor and
+          competition hold them down. The cure is industry at home, behind protection, so the gains of progress
+          are captured at home.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Commodity prices boom and bust; the supposed decline depends on which years you pick. Countries that
+              protected inefficient industries to escape it got shortages and debt.
+          - from: marxism.third-worldism
+            text: >
+              The problem is not what is sold but who sells it. Emmanuel showed that a shirt sewn by a low-paid
+              worker carries the same loss as a sack of coffee; industrializing on low wages exports the same drain
+              in new packaging.
+        sources:
+          - {author: Raúl Prebisch, title: "The Economic Development of Latin America and Its Principal Problems", year: 1950}
+          - {author: H. W. Singer, title: "The Distribution of Gains between Investing and Borrowing Countries", year: 1950}
+        traditions:
+          defining: [marxism.dependency]
+          typical: [nationalism.peronism, nationalism.nasserism, nationalism.developmental-state, socdem.keynesian, nationalism.bolivarianism, marxism.african-socialism]
+          contested: [marxism.third-worldism]
+          rejects: [liberalism.chicago, liberalism.austrian, liberalism.classical]
+        analysis:
+          gains: [industrial-capital, peripheral-workers, professional-managerial]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >
+            Pushing periphery states to industrialize behind tariffs shifts income from export landlords and
+            importers to a national industrial bourgeoisie and its workforce, and keeps some of the gains of
+            productivity at home; it leaves the wage gap between nations, and so most of the drain, intact.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            Emmanuel and Amin argue the loss runs through wage levels, not product types, so industrialization
+            alone does not stop it.
+
+      - id: exchange.unequal.wage-gap
+        label: Trade is unequal because wages differ while profits even out
+        claim: >
+          When capital moves freely but labor cannot, trade between high-wage and low-wage countries is unequal:
+          goods from poor countries sell for far less labor than they contain, and the difference flows to the
+          rich countries.
+        voiced: >
+          The worker in Dhaka and the worker in Leeds make the same shirt in the same hour. One is paid a fiftieth
+          of the other. When the shirt is sold, Dhaka hands Leeds forty-nine hours of life for free. That is not
+          trade. It is tribute.
+        you: >
+          You think trade cheats poor countries, because their workers' long hours buy only a little of what
+          rich countries' workers make.
+        because: >
+          Emmanuel showed that because capital seeks the same rate of profit everywhere while wages are fixed
+          nationally (by borders, history and struggle), prices of goods from low-wage countries embody much more
+          labor than they command. Amin added that productivity in export sectors of the periphery is often as
+          high as in the core, so the wage gap exceeds any productivity gap. The transfer is built into prices,
+          needs no force once established, and is far larger than colonial tribute ever was.
+        against:
+          - from: marxism.classical
+            text: >
+              Bettelheim answered Emmanuel: wages are low because productive forces are undeveloped, and workers
+              in the rich countries are more exploited, not less, since they produce more value per hour. Blaming
+              their wages divides the working class.
+          - from: liberalism.chicago
+            text: >
+              Wages track average productivity across the whole economy, not the export factory. Raising them by
+              decree would wipe out the exports that are pulling those countries upward.
+        sources:
+          - {author: Arghiri Emmanuel, title: "Unequal Exchange: A Study of the Imperialism of Trade", year: 1969}
+          - {author: Samir Amin, title: "Imperialism and Unequal Development", year: 1977}
+          - {author: Samir Amin, title: "The Law of Worldwide Value", year: 2010}
+        traditions:
+          defining: [marxism.third-worldism]
+          typical: [marxism.world-systems, marxism.mlm, marxism.degrowth-communism]
+          contested: [marxism.dependency, marxism.maoism]
+          rejects: [marxism.trotskyism, marxism.third-camp, liberalism.chicago, liberalism.classical]
+        presupposes: [value.source.labor]
+        excludes: [exchange.unequal.mutual-gain]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, core-workers]
+          mechanism: >
+            If wage-level transfer is the target, periphery workers' wage struggles and states' price-setting for
+            exports become anti-imperialist acts, cutting core firms' margins and the cheapness of imports for
+            core consumers.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >
+            The Emmanuel–Bettelheim debate: Bettelheim, Shaikh and most Trotskyists hold that higher core
+            productivity makes core workers more exploited; Emmanuel, Amin and Cope hold that wage gaps far
+            exceed productivity gaps.
+
+      - id: exchange.unequal.value-chain-capture
+        label: Lead firms capture the value made by low-paid suppliers
+        claim: >
+          In global supply chains, a few brand and technology firms in rich countries own the patents, the
+          brands and the access to customers, and squeeze thousands of suppliers in poor countries, so most of
+          the value made in the South is booked as profit and income in the North.
+        voiced: >
+          An iPhone is assembled in Zhengzhou and Apple books the profit in Cupertino and Ireland. GDP statistics
+          call the value created where the brand lives. That is a measuring trick for a robbery.
+        you: >
+          You think the big brand-owning firms in rich countries take most of the value made by poorly paid
+          workers in factories abroad.
+        because: >
+          Smith shows that the shift of manufacturing to low-wage countries is driven by global labor arbitrage:
+          lead firms buy from suppliers who compete fiercely, while they themselves hold monopolies of brand and
+          patent. Suwandi traces how the gap between low unit labor costs in the South and high prices in the
+          North becomes profit for the lead firm. Official statistics record the markup as value added in the
+          core, hiding where it was produced.
+        against:
+          - from: liberalism.technocratic
+            text: >
+              Design, engineering, marketing and coordination are real work and earn real returns. Supply chains
+              brought hundreds of millions into factory jobs and taught suppliers to climb the chain, as Foxconn
+              and Samsung did.
+          - from: marxism.third-camp
+            text: >
+              Monopoly profits are shared out among capitalists, including Chinese and Taiwanese contractors who
+              have become giants. The chain is a class relation running through every country, not a ledger
+              between nations.
+        sources:
+          - {author: John Smith, title: "Imperialism in the Twenty-First Century", year: 2016}
+          - {author: Intan Suwandi, title: "Value Chains: The New Economic Imperialism", year: 2019}
+          - {author: Zak Cope, title: "The Wealth of (Some) Nations", year: 2019}
+        traditions:
+          defining: [marxism.third-worldism]
+          typical: [marxism.dependency, marxism.world-systems, marxism.mlm, ecology.degrowth]
+          contested: [marxism.trotskyism, marxism.ml]
+          rejects: [liberalism.technocratic, liberalism.chicago]
+        presupposes: [value.source.labor]
+        excludes: [exchange.unequal.mutual-gain]
+        analysis:
+          gains: [peripheral-workers]
+          pays: [finance-capital, industrial-capital, professional-managerial]
+          mechanism: >
+            Treating brand and patent monopolies as the channel of the drain backs supplier-country unions,
+            compulsory licensing and public ownership of technology, which would strip lead firms and their
+            shareholders of monopoly rents.
+          drain: breaks
+          law_of_value: suspends
+
+      - id: exchange.unequal.productivity-gap
+        label: Trade is unequal because productivity is unequal, not wages
+        claim: >
+          Trade reproduces inequality because more productive capitals undersell less productive ones; poor
+          countries run deficits and fall into debt. Wage differences follow from productivity, and workers of
+          every country are exploited by capital.
+        voiced: >
+          The law of value works across borders as within them: the low-cost producer wins, the high-cost one
+          borrows and sinks. The worker in the rich country is not living off the poor one. Both are bled by the
+          same capital.
+        you: >
+          You think trade keeps poor countries behind because their industries are less productive and lose out,
+          but that workers everywhere are exploited by the same owners.
+        because: >
+          Shaikh shows that free trade runs on absolute, not comparative, advantage: the country with lower real
+          costs wins markets, and the loser covers its deficit by borrowing, which deepens dependence. Bettelheim
+          showed that higher wages in the core go with higher productivity, so core workers produce more surplus
+          value per hour. Uneven development is real; the remedy is developing the productive forces under
+          workers' power, and unity across borders, not a wage ledger that sets workers against each other.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              Export factories in Bangladesh and Mexico use the same machines as in Germany at a fraction of the
+              wage. When productivity is equal and wages are not, the productivity story collapses.
+          - from: liberalism.chicago
+            text: >
+              Deficits are financed because investors expect growth. Poor countries that opened up attracted
+              capital and narrowed the gap; the "debt trap" belongs to those that borrowed for consumption.
+        sources:
+          - {author: Charles Bettelheim, title: "Theoretical Comments", year: 1972, note: appendix to the English edition of Emmanuel's Unequal Exchange}
+          - {author: Anwar Shaikh, title: "The Laws of International Exchange", year: 1980}
+        traditions:
+          defining: [marxism.trotskyism]
+          typical: [marxism.third-camp, marxism.classical, marxism.analytical, marxism.left-communism]
+          contested: [marxism.ml]
+          rejects: [marxism.third-worldism, liberalism.chicago]
+        presupposes: [value.source.labor]
+        tension: [exchange.unequal.wage-gap]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Locating inequality in productivity and debt points to workers' unity across borders and
+            industrialization in the periphery; by denying that core wages contain a transfer, it spares core
+            workers the cost of the drain in its accounting.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            This is the Bettelheim side of the Emmanuel–Bettelheim debate; Amin, Cope and Smith reply that export
+            sectors show near-equal productivity with vastly unequal wages.
+
+      - id: exchange.unequal.fair-trade-fixable
+        label: Trade is often unfair, but fair prices and rules can fix it
+        claim: >
+          Trade between rich and poor countries is often unfair: rigged rules, farm subsidies in the rich
+          countries, and buyers who squeeze growers. Fair prices, labor standards and fairer trade rules can make
+          it work for both.
+        voiced: >
+          Pay the grower a fair price, ban child labor in the supply chain, scrap the rich countries' farm
+          subsidies and open their markets. Make trade fair and it becomes the poor's best ladder.
+        you: >
+          You think trade can be unfair to poor countries, and that fair prices, decent labor standards and
+          fairer rules can put it right.
+        because: >
+          Oxfam documented how rich countries preach free trade and practice protection, dumping subsidized food
+          on poor countries' farmers. Stiglitz and Charlton show trade rounds written by and for the rich. Fixing
+          the rules and paying fair prices keeps the real benefits of trade (markets, jobs, technology) while
+          ending the abuses. Fair-trade cooperatives show growers can earn more.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              The fair-trade premium is a few cents on a cup that sells for dollars in the North. The structure that
+              sets the price, and the wage gap behind it, stays untouched; the consumer buys a clear conscience.
+          - from: liberalism.chicago
+            text: >
+              A price above the market rewards growers for staying in a crop the world does not want more of. Labor
+              standards imposed from outside price the poorest workers out of the jobs they need.
+        sources:
+          - {author: Oxfam International, title: "Rigged Rules and Double Standards: Trade, Globalisation, and the Fight against Poverty", year: 2002}
+          - {author: Joseph E. Stiglitz and Andrew Charlton, title: "Fair Trade for All", year: 2005}
+        traditions:
+          defining: [liberalism.progressive]
+          typical: [socdem.democratic-socialism, socdem.nordic, liberalism.social, religious.christian-socialism, conservatism.cst, socdem.third-way]
+          contested: [ecology.degrowth]
+          rejects: [marxism.third-worldism, liberalism.chicago, liberalism.austrian]
+        presupposes: [consumption.choice.consumer-responsibility]
+        analysis:
+          gains: [professional-managerial, petty-bourgeoisie]
+          pays: []
+          mechanism: >
+            Price premiums and standards raise income for some organized growers and employ certifiers and NGOs
+            in the core, while the wage gap between nations, which sets most of the transfer, is left in place.
+          drain: softens
+          law_of_value: regulates
+
+      - id: exchange.unequal.rigged-against-us
+        label: Trade is rigged against our own country's workers
+        claim: >
+          Trade with low-wage countries is unequal, but the loser is our own nation: our factories closed, our
+          towns emptied, our elites and their partners abroad got rich. Protect the nation's industry.
+        voiced: >
+          They shipped our jobs to China and called it efficiency. Every container of cheap goods is a factory
+          that used to be in our town. Tariffs are not a tax on us. They are a wall around our livelihoods.
+        you: >
+          You think cheap imports from low-wage countries have cost your own country its jobs and industry, and
+          that the nation should protect them.
+        because: >
+          Free trade with countries that pay a fraction of our wages and subsidize their exporters forces our
+          workers to compete with them, and they lose. Lighthizer argues trade deficits are lost production and
+          lost communities, not efficient specialization. Every great industrial power, from Hamilton's America
+          to Bismarck's Germany, built itself behind tariffs. A nation that cannot make its own goods cannot
+          defend itself.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Tariffs are a tax on your own consumers and on every firm that uses imported parts. Most lost factory
+              jobs went to machines, not to China.
+          - from: marxism.third-worldism
+            text: >
+              The cheap goods filling your house were made by workers paid a fiftieth of your wage. Protectionism
+              in the core fights over who in the core gets the drain, while tariffs push the cost back onto those
+              same workers abroad.
+        sources:
+          - {author: Robert Lighthizer, title: "No Trade Is Free", year: 2023}
+          - {author: Patrick J. Buchanan, title: "The Great Betrayal", year: 1998}
+          - {author: Friedrich List, title: "The National System of Political Economy", year: 1841}
+        traditions:
+          defining: [conservatism.national]
+          typical: [conservatism.right-populism, conservatism.paleo, conservatism.postliberal, socdem.labourism, commonsense.look-after-your-own, commonsense.declinist]
+          contested: [socdem.democratic-socialism, conservatism.gaullism]
+          rejects: [liberalism.chicago, liberalism.classical, marxism.third-worldism, socdem.third-way]
+        presupposes: [labor.division.outsiders-undercut-us]
+        excludes: [exchange.unequal.mutual-gain]
+        analysis:
+          gains: [industrial-capital, core-workers, petty-bourgeoisie]
+          pays: [peripheral-workers, finance-capital]
+          mechanism: >
+            Tariffs and reshoring favor capital and workers in protected core industries over importers and
+            finance; the cost falls partly on core consumers and partly on periphery exporters, who must cut
+            prices or wages to stay in the market.
+          drain: sustains
+          law_of_value: regulates
+          consciousness: economic-corporate
+
+  # ------------------------------------------------------------------
+  - id: labor.aristocracy
+    domain: world
+    layer: analysis
+    question: Do workers in rich countries benefit from imperialism?
+    plain: Is the comfort of ordinary people in rich countries paid for, in part, by workers in poor ones?
+    short: the labor aristocracy
+    importance: 2
+    region: world
+    positions:
+      - id: labor.aristocracy.bribed-stratum
+        label: Imperial superprofits bribe an upper layer of workers and their leaders
+        claim: >
+          Superprofits from abroad let capital buy off an upper layer of the working class (skilled trades,
+          union officials, labor politicians), whose interests tie them to their own country's empire. The mass
+          of workers gains little and remains revolutionary material.
+        voiced: >
+          The bourgeoisie of an imperialist great power can bribe the upper strata of its workers with crumbs of
+          its superprofits. That bribed layer is the social base of opportunism, of the leaders who voted for the
+          war credits. Go lower and deeper, to the real masses.
+        you: >
+          You think imperial profits buy the loyalty of a privileged top layer of workers and their leaders, not
+          of the working class as a whole.
+        because: >
+          Engels saw the English working class grow comfortable on Britain's world monopoly. Lenin explained 1914
+          by it: the parties that voted for war rested on skilled, organized workers and union officials who
+          shared in empire's profits. The remedy is to build organization among the poorer, unskilled and
+          migrant masses whom the official movement ignored, and to break them from the bribed leadership.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              Lenin drew the line too high. Today the average worker in a rich country earns many times a
+              periphery worker for the same work; the bribe is the whole wage level, not a crumb for the few.
+          - from: marxism.trotskyism
+            text: >
+              Charles Post shows that higher-paid workers have often been the most militant, from the skilled
+              engineers of Red Clydeside to American auto workers. Reformism comes from the union bureaucracy's
+              position as a broker, not from bribes paid out of colonies.
+        sources:
+          - {author: V. I. Lenin, title: "Imperialism and the Split in Socialism", year: 1916}
+          - {author: V. I. Lenin, title: "Imperialism, the Highest Stage of Capitalism", year: 1917}
+          - {author: Friedrich Engels, title: "Letter to Karl Marx, 7 October 1858", year: 1858}
+        traditions:
+          defining: [marxism.leninism]
+          typical: [marxism.ml, marxism.maoism, marxism.hoxhaism, marxism.gramscian]
+          contested: [marxism.trotskyism, marxism.mlm]
+          rejects: [marxism.third-worldism, liberalism.chicago]
+        presupposes: [imperialism.nature.monopoly-stage]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Pinning imperial loyalty on a top layer keeps the core mass of workers as a potential anti-imperialist
+            force and targets union and party leaders who broker war and colonial policy; by keeping the bribe
+            narrow, it leaves the wage gap between nations outside the reckoning.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            The labor-aristocracy dispute. Emmanuel, Amin and Cope widen the bribe to most core workers; Post,
+            Harman and others deny that imperial profits explain core reformism at all.
+
+      - id: labor.aristocracy.whole-core-bought
+        label: The working class of the rich countries as a whole lives off the drain
+        claim: >
+          Workers in rich countries as a whole are paid more than the value they produce, the difference coming
+          from value drained from the periphery. They are net beneficiaries of imperialism, and their politics
+          follow from that.
+        voiced: >
+          The metropolitan working class does not merely share the crumbs; it eats at the table. Its wages, its
+          pensions and its cheap goods are paid for by superexploited labor abroad. That is why it votes for the
+          empire, and why the revolution's center of gravity lies in the South.
+        you: >
+          You think ordinary workers in rich countries, as a group, live partly off the labor of poorer workers
+          abroad, and that this explains their politics.
+        because: >
+          Emmanuel concluded that wage differences between nations had become the main contradiction, setting
+          workers of rich and poor nations against each other. Cope estimates that core wages exceed what core
+          labor produces once the value captured from periphery labor is counted. A century of core workers
+          backing their states' wars, tariffs and border regimes matches the material interest. Organizing that
+          ignores this asks core workers to fight against their own share.
+        against:
+          - from: marxism.trotskyism
+            text: >
+              Post shows the theory fails on its own terms: imperial profits are too small a share of core profits
+              to fund core wages, and better-paid workers are not reliably more conservative. Calling them
+              exploiters writes off the workers capital actually exploits at the heart of the system.
+          - from: marxism.leninism
+            text: >
+              Lenin spoke of a bribed upper stratum, not a bought class. Writing off the whole core working class
+              abandons the field to fascism in exactly the countries where the drain is defended.
+        sources:
+          - {author: Arghiri Emmanuel, title: "Unequal Exchange: A Study of the Imperialism of Trade", year: 1969}
+          - {author: Zak Cope, title: "Divided World, Divided Class", year: 2012}
+          - {author: Zak Cope, title: "The Wealth of (Some) Nations", year: 2019}
+        traditions:
+          defining: [marxism.third-worldism]
+          typical: [marxism.mlm]
+          contested: [marxism.maoism, marxism.world-systems]
+          rejects: [marxism.trotskyism, marxism.third-camp, marxism.leninism, socdem.labourism, liberalism.chicago]
+        presupposes: [exchange.unequal.wage-gap]
+        excludes: [labor.aristocracy.no-labor-aristocracy, labor.aristocracy.earned-by-productivity]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [core-workers, finance-capital, industrial-capital]
+          mechanism: >
+            If core wages are counted as drained value, the political program shifts to periphery movements
+            raising prices and wages and cutting flows north, at a cost to core living standards; core organizing
+            becomes secondary.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >
+            The labor-aristocracy dispute in its sharpest form. For: Emmanuel, Cope, Sakai. Against: Post,
+            Bettelheim, most Trotskyists. The frame (Amin) takes the middle line that core workers share in the
+            drain and are still exploited.
+
+      - id: labor.aristocracy.shares-but-exploited
+        label: Core workers share in the drain, and are still exploited
+        claim: >
+          Workers in rich countries are exploited by their employers, and they also share in value drained from
+          the periphery, through cheap goods, public services and wages won while capital could afford to concede.
+          As the drain is contested, capital takes those concessions back.
+        voiced: >
+          The welfare state of the North was bought twice: by the threat of revolution and by the rent of empire.
+          Northern workers are exploited and they are bribed. Their future depends on which they learn to see.
+        you: >
+          You think workers in rich countries are exploited by their bosses and also benefit from the cheapness
+          of goods made abroad, and that the second is now being taken away from them.
+        because: >
+          Amin argued that core capital buys social peace with a share of imperial rent, which is why social
+          democracy flourished in the age of high drain and is dismantled as the South contests it. Core workers
+          gain as consumers and through public spending, but their own labor is still exploited and their jobs
+          are hostage to capital's mobility. That double position explains both their reformism and the
+          possibility of breaking it: when the rent shrinks, capital turns on them, and either socialists or
+          fascists organize their anger.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              The middle line is a compromise with comfort. If core wages exceed core value, calling core workers
+              exploited is an act of consolation, not analysis.
+          - from: marxism.trotskyism
+            text: >
+              "Sharing the rent" smuggles the bribe back in. Core living standards were won by unions and strikes
+              against capital, and treating them as a gift of empire hands employers an argument for cutting them.
+        sources:
+          - {author: Samir Amin, title: "The Law of Worldwide Value", year: 2010}
+          - {author: Samir Amin, title: "Unequal Development", year: 1973}
+          - {author: Jason Hickel, title: "The Divide", year: 2017}
+        traditions:
+          defining: [marxism.world-systems]
+          typical: [marxism.third-worldism, marxism.dependency, marxism.degrowth-communism, marxism.maoism, marxism.black-radical]
+          contested: [marxism.ml, marxism.ecosocialism]
+          rejects: [liberalism.chicago, socdem.labourism]
+        presupposes: [imperialism.nature.unequal-exchange-drain]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Holding both facts directs core workers toward alliance with periphery workers against the capital
+            that exploits both and that is already cutting core concessions; it asks core workers to accept the
+            loss of cheap imports in exchange for an end to their own subordination.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >
+            This is the frame's line on the labor-aristocracy dispute. Emmanuel and Cope push further (core
+            workers as net beneficiaries); Post and Bettelheim deny the transfer to core workers.
+
+      - id: labor.aristocracy.settler-class
+        label: In settler states, the oppressor-nation working class is a privileged stratum
+        claim: >
+          In settler-colonial countries, the working class of the settler nation was built on stolen land and on
+          the labor of colonized and enslaved peoples. It is a privileged stratum; the revolutionary forces are
+          the oppressed nations inside and outside its borders.
+        voiced: >
+          The white working class in Amerika was never a proletariat in the old sense. It was a settler
+          garrison paid in land, citizenship and a wage above the colonized. Its history is not betrayal by bad
+          leaders; it is defending privilege.
+        you: >
+          You think that in countries built by settlers, the settler workers have been a privileged group whose
+          interests lie with the empire, unlike the colonized peoples inside it.
+        because: >
+          Sakai traces how land seized from Indigenous nations, slavery and the exclusion of Chinese, Mexican and
+          Black workers gave white workers in the United States a material stake in conquest. Their unions
+          repeatedly demanded exclusion and segregation. The oppressed nations within (Black, Indigenous,
+          Chicano, Puerto Rican) are internal colonies, part of the periphery inside the core, and liberation
+          runs through them.
+        against:
+          - from: marxism.trotskyism
+            text: >
+              Every successful mass struggle in the United States, from the CIO to the civil-rights alliance with
+              unions, joined white and Black workers. Treating white workers as settlers abandons them to the
+              right and confuses racial privilege with class position.
+          - from: liberalism.progressive
+            text: >
+              Racial disparities are real and must be remedied, but the white wage earner in a declining town is
+              not a colonial garrison. Collective guilt by ancestry repeats the logic it condemns.
+        sources:
+          - {author: J. Sakai, title: "Settlers: The Mythology of the White Proletariat", year: 1983}
+          - {author: W. E. B. Du Bois, title: "Black Reconstruction in America", year: 1935}
+        traditions:
+          typical: [marxism.mlm, marxism.third-worldism, nationalism.black-nationalism, nationalism.indigenous-sovereignty]
+          contested: [marxism.black-radical]
+          rejects: [marxism.trotskyism, marxism.third-camp, socdem.labourism, liberalism.progressive]
+        presupposes: [settler.colonialism.ongoing-structure]
+        analysis:
+          gains: [peripheral-workers, reserve-army, peasantry]
+          pays: [core-workers, landed-capital]
+          mechanism: >
+            Treating settler-nation workers as a privileged stratum orients organizing toward land return and
+            colonized nations inside the core, threatening landed property and the racial wage hierarchy, and
+            withholding alliance from settler-nation workers.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >
+            Du Bois's "public and psychological wage" of whiteness is read by Sakai as material stake and by
+            class-first Marxists (and by Du Bois's own call for a joint struggle) as a wedge capital uses to
+            divide one class.
+
+      - id: labor.aristocracy.no-labor-aristocracy
+        label: There is no labor aristocracy; core workers are exploited like any others
+        claim: >
+          Workers in rich countries do not benefit from imperialism. Their higher wages come from higher
+          productivity and from struggle. Their reformism comes from the union bureaucracy and the rhythm of
+          struggle, not from a share in colonial profits.
+        voiced: >
+          The labor-aristocracy theory is a moralism that lets the left write off the workers who actually run
+          the centers of world capital. The auto worker in Detroit and the garment worker in Dhaka have one enemy.
+        you: >
+          You think workers in rich countries are exploited by capital like workers everywhere, and gain nothing
+          from imperialism.
+        because: >
+          Post shows the evidence fails: higher-paid workers have often been the most militant; the superprofits
+          from the periphery are too small a share of total profit to fund core wage levels; and reformism
+          appears among low-paid and high-paid alike. What explains it is the position of a full-time union
+          officialdom mediating between labor and capital, and the ebb of mass struggle. Core workers produce
+          more surplus value per hour than periphery workers, so they are, if anything, more exploited.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              Productivity is measured in prices, and prices already contain the transfer. If a core hour buys
+              twenty periphery hours in trade, calling the core worker more exploited turns the books upside down.
+          - from: marxism.leninism
+            text: >
+              Lenin did not claim bribes for the whole class but for a stratum and its leaders. Denying the stratum
+              exists leaves 1914, and every vote for war credits since, unexplained.
+        sources:
+          - {author: Charles Post, title: "Exploring Working-Class Consciousness: A Critique of the Theory of the 'Labour-Aristocracy'", year: 2010}
+          - {author: Charles Bettelheim, title: "Theoretical Comments", year: 1972, note: appendix to the English edition of Emmanuel's Unequal Exchange}
+        traditions:
+          defining: [marxism.trotskyism]
+          typical: [marxism.third-camp, marxism.left-communism, marxism.council-communism, anarchism.syndicalist, marxism.autonomism]
+          contested: [socdem.democratic-socialism, marxism.analytical]
+          rejects: [marxism.third-worldism, marxism.mlm, marxism.leninism]
+        presupposes: [class.concept.relation-to-production, change.agent.workers-as-class]
+        excludes: [labor.aristocracy.whole-core-bought, labor.aristocracy.settler-class]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Treating core and periphery workers as equally exploited directs organizing at core employers and
+            war budgets, which pressures the capital at the top of the chain; by denying any transfer to core
+            wages, it asks nothing of core workers toward the drain and can sit beside defense of core living
+            standards against periphery claims.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            The labor-aristocracy dispute: Post, Harman and Bettelheim against Emmanuel, Amin and Cope. The
+            frame takes Amin's side and records this position's case as live.
+
+      - id: labor.aristocracy.earned-by-productivity
+        label: Workers in rich countries earn more because they produce more
+        claim: >
+          Workers in rich countries are paid more because they work with more capital, more skills and better
+          institutions, so each hour produces more. Nothing is taken from anyone; trade raises wages in poor
+          countries too.
+        voiced: >
+          A welder in Ohio earns more than a welder in Lagos because he works with better tools, roads, power
+          and schools. Wealth is made, not taken. Workers in poor countries will earn the same once they have
+          the same.
+        you: >
+          You think people in rich countries earn more because their work produces more, not because they take
+          anything from poorer countries.
+        because: >
+          Wages follow productivity, and productivity follows capital per worker, education and institutions.
+          The workers whose wages rose fastest in the past forty years were in the poor countries that joined
+          world trade. If rich workers lived off poor ones, the boom in Chinese and Vietnamese wages would have
+          crushed Western living standards; it did not.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              A barber in Oslo earns many times a barber in Dhaka for the same haircut. Productivity cannot explain
+              it; borders and the wage levels they protect do.
+          - from: conservatism.national
+            text: >
+              Tell that to the towns that lost their plants. The productivity gains went to shareholders, and the
+              workers got cheaper televisions and no jobs.
+        sources:
+          - {author: Martin Wolf, title: "Why Globalization Works", year: 2004}
+          - {author: Jagdish Bhagwati, title: "In Defense of Globalization", year: 2004}
+        traditions:
+          defining: [liberalism.chicago]
+          typical: [liberalism.classical, liberalism.austrian, liberalism.technocratic, libertarianism.minarchist, socdem.third-way, commonsense.self-reliance]
+          contested: [socdem.nordic]
+          rejects: [marxism.third-worldism, marxism.mlm, marxism.leninism, conservatism.national]
+        presupposes: [value.source.marginal-productivity]
+        excludes: [labor.aristocracy.whole-core-bought, labor.aristocracy.shares-but-exploited]
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [peripheral-workers]
+          mechanism: >
+            Explaining the wage gap by productivity justifies the border controls and world price structure that
+            keep periphery wages low, and tells core workers their position is earned, which detaches them from
+            periphery claims.
+          drain: sustains
+          law_of_value: extends
+
+      - id: labor.aristocracy.globalization-losers
+        label: Workers in rich countries are not winners of globalization but its victims
+        claim: >
+          Ordinary workers in rich countries lost from globalization: their jobs moved abroad, their wages
+          stalled and their towns emptied, while elites and investors gained. They are victims of the system,
+          not its beneficiaries.
+        voiced: >
+          Don't tell a laid-off steelworker he lives off the Third World. The winners of globalization live in
+          the capital and sit on boards. He lost his job, his union and his town. The elites sold him out.
+        you: >
+          You think working people in rich countries have been the losers of global trade, and that the gains
+          went to the elites.
+        because: >
+          Since 1980 the share of national income going to wages in most rich countries has fallen, industrial
+          towns have hollowed out, and life expectancy has fallen among less-educated workers in the United
+          States. The gains went to capital and to a credentialed professional class. Lind calls it a class war
+          waged by managerial elites against working people, and Lasch saw the elites seceding from the nation.
+          The workers owe the poor abroad nothing; they were sacrificed alongside them.
+        against:
+          - from: marxism.world-systems
+            text: >
+              Core workers lost jobs to the same arbitrage that keeps their shelves full of goods made at a
+              fraction of their wage. They are losers relative to capital and still winners relative to the
+              periphery; nationalism hides the second fact.
+          - from: liberalism.chicago
+            text: >
+              Real consumption of the median worker in rich countries rose; the decline of manufacturing jobs is
+              mostly automation. Blaming trade sells tariffs that make workers poorer.
+        sources:
+          - {author: Michael Lind, title: "The New Class War", year: 2020}
+          - {author: Christopher Lasch, title: "The Revolt of the Elites and the Betrayal of Democracy", year: 1995}
+          - {author: Patrick J. Buchanan, title: "The Great Betrayal", year: 1998}
+        traditions:
+          defining: [conservatism.national]
+          typical: [conservatism.right-populism, conservatism.postliberal, socdem.labourism, socdem.left-populism, commonsense.rigged, commonsense.declinist]
+          contested: [socdem.democratic-socialism, marxism.trotskyism]
+          rejects: [marxism.third-worldism, liberalism.chicago, socdem.third-way]
+        presupposes: [cs.rigged.system-rigged]
+        excludes: [labor.aristocracy.whole-core-bought]
+        analysis:
+          gains: [core-workers, industrial-capital, petty-bourgeoisie]
+          pays: [peripheral-workers, finance-capital]
+          mechanism: >
+            Framing core workers as pure victims supports reshoring, tariffs and border closure, which may restore
+            some core jobs while pushing costs onto periphery exporters and migrants; the core's position in the
+            world price structure is left in place.
+          drain: sustains
+          law_of_value: regulates
+          consciousness: economic-corporate

@@ -301,6 +301,12 @@ if (isMain) {
     mkdirSync(distDir, { recursive: true });
     writeFileSync(join(distDir, 'bundle.json'), JSON.stringify(bundle));
     writeSchemas();
+    // a greppable index for authors: id | label | question | traditions
+    const idx = Object.values(bundle.positions)
+      .map((p) => `${p.id} | ${p.label} | ${bundle.problematics[p.problematic]!.question} | ${[...(p.traditions.defining ?? []), ...(p.traditions.typical ?? [])].join(',')}`)
+      .join('\n');
+    writeFileSync(join(distDir, 'positions-index.txt'), idx + '\n');
+    writeFileSync(join(distDir, 'problematics-index.txt'), Object.values(bundle.problematics).map((p) => `${p.id} | ${p.domain} | ${p.layer} | ${p.question} | ${p.positions.length}`).join('\n') + '\n');
     console.log(`\nwrote dist/bundle.json (${(JSON.stringify(bundle).length / 1024).toFixed(0)} KB)`);
   } else console.log('\nlint ok');
 }

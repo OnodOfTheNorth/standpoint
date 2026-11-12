@@ -1,0 +1,1423 @@
+problematics:
+  - id: borders.migration
+    domain: nation
+    layer: horizon
+    question: Who should be allowed to come and stay?
+    plain: Who should be let into the country, and who decides?
+    short: borders and migration
+    importance: 3
+    region: migration
+    positions:
+      - id: borders.migration.open-borders
+        label: Open borders; movement is a right and a gain
+        claim: >
+          People should be free to move and work across borders, as they are free to move within a
+          country. Border restrictions trap people in poor places by accident of birth and cost the
+          world economy enormous sums.
+        voiced: >
+          Citizenship in a rich country is the modern equivalent of feudal privilege: an inherited
+          status that greatly enhances one's life chances. Let people go where they can do the most
+          good for themselves and others.
+        you: >
+          You think people should be free to live and work in any country they choose.
+        because: >
+          A worker who moves from Haiti to the United States can multiply her income several times
+          without changing her skills; the gain comes from place, and borders block it. Economists
+          estimate that free movement could add tens of trillions of dollars to world output. No one
+          deserves their birthplace, so it cannot justify locking anyone out.
+        against:
+          - from: socdem.labourism
+            text: >
+              Open borders are the employer's dream: an unlimited supply of workers at whatever
+              wage the poorest will accept. They dissolve the bargaining power and welfare states
+              workers fought for.
+          - from: conservatism.national
+            text: >
+              A nation that cannot decide who joins it is not self-governing. Open borders mean
+              the end of the national community as a political subject.
+        sources:
+          - {author: Joseph H. Carens, title: "Aliens and Citizens: The Case for Open Borders", year: 1987}
+          - {author: Bryan Caplan and Zach Weinersmith, title: "Open Borders: The Science and Ethics of Immigration", year: 2019}
+          - {author: Michael A. Clemens, title: "Economics and Emigration: Trillion-Dollar Bills on the Sidewalk?", year: 2011}
+        traditions:
+          defining: [libertarianism.minarchist]
+          typical: [liberalism.classical, libertarianism.ancap, liberalism.egalitarian, libertarianism.left, technology.effective-altruism]
+          contested: [libertarianism.paleo, liberalism.chicago]
+          rejects: [conservatism.national, socdem.labourism, fascism.identitarian]
+        presupposes: []
+        excludes: [borders.migration.restrict-national, borders.migration.remigration]
+        tension: [labor.division.outsiders-undercut-us]
+        tags: []
+        analysis:
+          gains: [peripheral-workers, industrial-capital, finance-capital]
+          pays: [core-workers]
+          mechanism: >
+            Free movement raises migrants' wages sharply and gives employers in the core a larger
+            labor pool; low-wage native workers in competing jobs face more competition unless
+            unions organize the newcomers.
+          drain: softens
+          law_of_value: extends
+          disputed: >
+            Economists disagree on the wage effect on native workers (Borjas finds losses for
+            low-skilled workers; Card and Peri find small or none). Some Third Worldists add that
+            emigration of trained workers drains the periphery's skills.
+
+      - id: borders.migration.no-borders
+        label: No borders; no one is illegal
+        claim: >
+          Borders are instruments by which states and capital divide workers and create a rightless,
+          deportable labor force. They should be abolished, along with deportation and detention,
+          and migrants should have the same rights as everyone else.
+        voiced: >
+          No one is illegal. Borders do not keep capital out; they keep workers in their place.
+          Every deportation is a strike broken, every detention center a warning to the rest of us.
+        you: >
+          You think borders exist to divide and control working people, and that no one should be
+          deported or treated as illegal.
+        because: >
+          Capital and goods cross borders freely; only workers are stopped. The point is not to keep
+          migrants out but to keep them in a status where they can be deported if they organize.
+          Abolish the status and the cheap labor goes with it. And the wars, debts and trade rules
+          that force people to move are made by the same states that close the borders.
+        against:
+          - from: socdem.nordic
+            text: >
+              Universal welfare states and collective bargaining depend on a defined membership.
+              Without any control of entry they cannot be financed or enforced.
+          - from: liberalism.classical
+            text: >
+              The slogan treats all regulation as violence and gives no answer on who votes, who
+              receives benefits and who decides in a community with no defined members.
+        sources:
+          - {author: Harsha Walia, title: "Undoing Border Imperialism", year: 2013}
+          - {author: Harsha Walia, title: "Border and Rule: Global Migration, Capitalism, and the Rise of Racist Nationalism", year: 2021}
+        traditions:
+          defining: [anarchism.communist]
+          typical: [anarchism.syndicalist, marxism.autonomism, marxism.trotskyism, marxism.black-radical, feminism.decolonial]
+          contested: [socdem.democratic-socialism]
+          rejects: [conservatism.national, socdem.labourism, fascism.identitarian]
+        presupposes: []
+        excludes: [borders.migration.restrict-national, borders.migration.remigration, borders.migration.managed-labor]
+        tension: [labor.division.outsiders-undercut-us]
+        tags: []
+        analysis:
+          gains: [peripheral-workers, reserve-army, core-workers]
+          pays: [industrial-capital]
+          mechanism: >
+            Ending deportable status removes employers' power to discipline migrant workers with the
+            threat of removal, which raises migrant wages and closes the gap that undercuts native
+            workers.
+          drain: reduces
+          law_of_value: none
+          consciousness: class-economic
+
+      - id: borders.migration.democratic-control
+        label: The political community decides, fairly and humanely
+        claim: >
+          A political community has the right to decide whom it admits, through its own democratic
+          processes, while respecting refugees' rights and treating admitted migrants as future
+          equals.
+        voiced: >
+          Admission and exclusion are at the core of communal independence. A people may decide how
+          many to admit and whom; but once admitted, newcomers must be on the road to citizenship,
+          never a class of permanent guests.
+        you: >
+          You think a country has the right to decide who comes in, as long as it treats refugees and
+          the people it lets in fairly.
+        because: >
+          Communities of character need some control over membership, as clubs and families do,
+          or they cannot sustain the shared life their members value. But a democracy that admits
+          workers and denies them citizenship becomes a tyranny of citizens over metics, so
+          admission must lead to equal membership.
+        against:
+          - from: liberalism.egalitarian
+            text: >
+              The analogy with a club fails: the excluded did not choose their birthplace, and
+              denying them entry denies them their life chances.
+          - from: marxism.third-worldism
+            text: >
+              The rich democracy deciding whom to admit is the same state whose banks and firms
+              made the migrants' countries poor. Its "democratic choice" is the drain's border guard.
+        sources:
+          - {author: Michael Walzer, title: "Spheres of Justice", year: 1983}
+          - {author: David Miller, title: "Strangers in Our Midst: The Political Philosophy of Immigration", year: 2016}
+        traditions:
+          defining: [liberalism.social]
+          typical: [communitarianism, socdem.nordic, socdem.third-way, liberalism.republican, conservatism.christian-democracy]
+          contested: [socdem.democratic-socialism]
+          rejects: [libertarianism.ancap, anarchism.communist]
+        presupposes: []
+        excludes: []
+        tension: []
+        tags: []
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [peripheral-workers]
+          mechanism: >
+            Controlled admission with a path to citizenship protects core labor markets and welfare
+            budgets while selecting migrants by the receiving state's needs, so the gains of
+            mobility go mainly to those already inside.
+          drain: sustains
+          law_of_value: regulates
+
+      - id: borders.migration.restrict-for-workers
+        label: Limit migration to protect workers' wages and bargaining power
+        claim: >
+          Employers use large-scale migration to hold down wages and weaken unions. Migration should
+          be limited and enforced against employers, so that labor stays scarce enough for workers
+          to bargain, while migrants already here are organized as equals.
+        voiced: >
+          The bosses want open borders for the same reason they want the right to move factories
+          abroad: to make workers compete. Control the labor supply, punish the employers who hire
+          off the books, and organize everyone who is already here.
+        you: >
+          You think employers use immigration to keep wages down, and that limiting it helps working
+          people bargain.
+        because: >
+          Marx observed that English capitalists used Irish workers to divide and lower the English
+          working class. The scarcity of labor is the worker's only market power; employers lobby
+          for migration because it raises supply. Tight labor markets after migration restrictions
+          have historically pushed wages up.
+        against:
+          - from: anarchism.syndicalist
+            text: >
+              Restriction does not stop migration; it makes migrants illegal, and illegal workers
+              are the cheapest of all. The answer is organizing them, not deporting them.
+          - from: marxism.trotskyism
+            text: >
+              Marx's point about the Irish was that the English workers' hostility to them was their
+              own chain, kept alive by the press and the ruling class, not that the Irish should be kept out.
+        sources:
+          - {author: Karl Marx, title: "Letter to Sigfrid Meyer and August Vogt", year: 1870}
+          - {author: George J. Borjas, title: "We Wanted Workers: Unraveling the Immigration Narrative", year: 2016}
+        traditions:
+          defining: [socdem.labourism]
+          typical: [socdem.left-populism, conservatism.one-nation, conservatism.postliberal]
+          contested: [marxism.ml, socdem.nordic]
+          rejects: [anarchism.communist, libertarianism.minarchist, liberalism.classical]
+        presupposes: [labor.division.outsiders-undercut-us]
+        excludes: [borders.migration.no-borders, borders.migration.open-borders]
+        tension: [borders.migration.class-not-nation-link]
+        tags: []
+        analysis:
+          gains: [core-workers]
+          pays: [peripheral-workers, industrial-capital]
+          mechanism: >
+            Restricting the labor supply raises native workers' bargaining power in sectors where
+            migrants compete, at the cost of the much larger income gains migrants would make and
+            of employers' access to cheaper labor.
+          drain: sustains
+          law_of_value: regulates
+          disputed: >
+            Marxists disagree: Marx's 1870 letter is read by some as support for restriction and by
+            most as an argument against the division; Third Worldists hold this position defends
+            the core worker's share in the drain.
+          consciousness: economic-corporate
+
+      - id: borders.migration.restrict-national
+        label: Low immigration to preserve national culture and cohesion
+        claim: >
+          Immigration should be kept low and selective, and newcomers expected to assimilate, so
+          that the nation's culture, social trust and identity can survive. Large-scale migration
+          changes a country faster than any population consented to.
+        voiced: >
+          Europe is committing suicide. No people ever voted to become a minority in its own
+          country, yet our leaders have arranged it without asking. A nation has the right to remain
+          itself.
+        you: >
+          You think immigration should be low and newcomers expected to fit in, so the country
+          keeps its character.
+        because: >
+          Social trust, shared norms and willingness to share through taxes rest on a sense of common
+          membership that takes generations to form. Migration faster than integration produces
+          parallel communities, and voters across the West have asked repeatedly for lower numbers
+          and been ignored. Poor countries also lose their most enterprising people.
+        against:
+          - from: liberalism.progressive
+            text: >
+              Every generation of immigrants was said to be unassimilable, Irish Catholics, Italians,
+              Jews, and every one assimilated. The "culture" being defended is invoked to deny
+              citizens of migrant origin equal belonging.
+          - from: marxism.third-worldism
+            text: >
+              The same countries that drain the periphery of wealth complain when the periphery's
+              people follow it. Low immigration in the core protects the core's privileges.
+        sources:
+          - {author: Douglas Murray, title: "The Strange Death of Europe", year: 2017}
+          - {author: Paul Collier, title: "Exodus: How Migration Is Changing Our World", year: 2013}
+          - {author: Samuel P. Huntington, title: "Who Are We? The Challenges to America's National Identity", year: 2004}
+        traditions:
+          defining: [conservatism.national]
+          typical: [conservatism.right-populism, conservatism.paleo, conservatism.postliberal, commonsense.look-after-your-own, commonsense.declinist]
+          contested: [conservatism.burkean, conservatism.christian-democracy]
+          rejects: [libertarianism.minarchist, liberalism.progressive, anarchism.communist]
+        presupposes: []
+        excludes: [borders.migration.open-borders, borders.migration.no-borders]
+        tension: []
+        tags: []
+        analysis:
+          gains: [petty-bourgeoisie, core-workers]
+          pays: [peripheral-workers, reserve-army]
+          mechanism: >
+            Low immigration with strict enforcement keeps core labor markets tighter for natives and
+            leaves those migrants who still come, as they do, in precarious status, which employers
+            in agriculture, care and construction use to keep wages low.
+          drain: sustains
+          law_of_value: none
+
+      - id: borders.migration.remigration
+        label: Reverse demographic change; return migrants to their origins
+        claim: >
+          Mass migration is replacing the native peoples of Europe and its settler offshoots. The
+          answer is not only to stop it but to reverse it, by returning migrants and many of their
+          descendants to their countries of origin.
+        voiced: >
+          You had one people, and in its place you are putting another. The great replacement is
+          not a theory but a fact of the census. Remigration is the only politics that takes it
+          seriously.
+        you: >
+          You think large-scale immigration is replacing the native population, and that many
+          migrants and their descendants should be sent back.
+        because: >
+          Census figures show native majorities shrinking in many European cities. Peoples are not
+          interchangeable; a nation whose population is replaced has ceased to exist, whatever its
+          institutions. Integration has failed, so return, voluntary or not, is the only measure
+          proportionate to the change.
+        against:
+          - from: liberalism.egalitarian
+            text: >
+              "Remigration" of descendants means expelling citizens born in the country, which can
+              be done only by stripping citizenship by ancestry. Its "replacement" story was cited in
+              the manifestos of the 2019 Christchurch and El Paso killers.
+          - from: marxism.classical
+            text: >
+              The "replacement" is a recruitment of labor by capital, and blaming migrants
+              for it serves the employers who brought them.
+        sources:
+          - {author: Renaud Camus, title: "Le Grand Remplacement", year: 2011}
+        traditions:
+          defining: [fascism.identitarian]
+          typical: [fascism.third-position, nationalism.ethnic, fascism.ecofascism]
+          contested: [conservatism.right-populism, conservatism.paleo]
+          rejects: [nationalism.civic, liberalism.egalitarian, conservatism.christian-democracy, marxism.ml]
+        presupposes: [migration.cause.elite-replacement]
+        excludes: [borders.migration.open-borders, borders.migration.no-borders, nation.belonging.citizenship]
+        tension: []
+        tags: [far-right]
+        analysis:
+          gains: [petty-bourgeoisie]
+          pays: [reserve-army, peripheral-workers, core-workers]
+          mechanism: >
+            Making citizens of migrant origin removable puts millions of workers under threat of
+            expulsion, which disciplines them at work and splits labor organization along origin,
+            while native small owners are offered ethnic preference.
+          drain: sustains
+          law_of_value: none
+
+      - id: borders.migration.right-to-stay
+        label: Equal rights for migrants and an end to what forces them to leave
+        claim: >
+          Migrants in rich countries should have equal rights, and the conditions that push people
+          to migrate, debt, unequal trade, wars and resource extraction, should be ended. The right
+          to stay home matters as much as the right to move.
+        voiced: >
+          We are here because you were there. You took our wealth, then you complain that we follow
+          it. Rights for migrants here, and an end to the plunder there, so no one has to leave.
+        you: >
+          You think migrants deserve equal rights where they live, and that the real task is to
+          stop rich countries draining poor ones so people do not have to leave.
+        because: >
+          Most migration follows the routes of colonial and economic ties: from former colonies to
+          former metropoles, from debtor to creditor. Arguing about the border without the drain
+          treats a symptom. And migration often takes trained nurses and doctors from countries
+          that paid to train them.
+        against:
+          - from: liberalism.classical
+            text: >
+              People migrate because they want better lives, not because of a theory of drain.
+              Remittances sent home exceed foreign aid, so migration itself is the best development
+              policy.
+          - from: conservatism.national
+            text: >
+              Turning every border question into a debt owed by the host nation makes migration
+              policy a form of reparation that no electorate has agreed to pay.
+        sources:
+          - {author: A. Sivanandan, title: "A Different Hunger: Writings on Black Resistance", year: 1982}
+          - {author: Stephen Castles and Godula Kosack, title: "Immigrant Workers and Class Structure in Western Europe", year: 1973}
+        traditions:
+          defining: [marxism.third-worldism]
+          typical: [marxism.black-radical, nationalism.pan-africanism, marxism.dependency, feminism.decolonial, religious.liberation-theology]
+          contested: [socdem.democratic-socialism]
+          rejects: [fascism.identitarian, liberalism.chicago]
+        presupposes: [migration.cause.drain]
+        excludes: [borders.migration.remigration]
+        tension: []
+        tags: []
+        analysis:
+          gains: [peripheral-workers, reserve-army, peasantry]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Equal rights end the cheap status of migrant labor in the core, and ending debt service
+            and unequal trade keeps more value in the periphery, reducing the pressure that turns
+            its people into a labor reserve for core employers.
+          drain: breaks
+          law_of_value: regulates
+          consciousness: hegemonic
+
+      - id: borders.migration.managed-labor
+        label: Admit workers the economy needs, on terms the state sets
+        claim: >
+          Migration should be managed to meet labor market needs: points systems for skills,
+          temporary visas for seasonal and care work, and limits on rights and residence for those
+          admitted to work.
+        voiced: >
+          Migration is a resource to be managed, not a right or a threat. Bring in the nurses, the
+          engineers and the harvest workers we need, on clear terms, and send the system's
+          benefits to the economy.
+        you: >
+          You think a country should let in the workers its economy needs, on terms it sets.
+        because: >
+          There is a trade-off between the number of migrants admitted and the rights they get: the
+          more rights, the fewer rich countries will take. Temporary programs let far more people
+          earn rich-country wages than citizenship-based migration would, and remittances go home.
+        against:
+          - from: marxism.classical
+            text: >
+              Guest workers are workers without the right to quit or vote: the Gulf's kafala system
+              ties migrants to one employer, and workers' deaths on stadium sites in Qatar showed
+              the result.
+          - from: conservatism.national
+            text: >
+              There is nothing so permanent as a temporary worker. Germany's guest workers stayed,
+              and their communities with them; the economy's "needs" are employers' preferences.
+        sources:
+          - {author: Martin Ruhs, title: "The Price of Rights: Regulating International Labor Migration", year: 2013}
+        traditions:
+          defining: [liberalism.technocratic]
+          typical: [socdem.third-way, liberalism.chicago, nationalism.developmental-state, conservatism.fusionism]
+          contested: [liberalism.classical]
+          rejects: [anarchism.communist, socdem.labourism, fascism.identitarian]
+        presupposes: []
+        excludes: [borders.migration.no-borders]
+        tension: []
+        tags: []
+        analysis:
+          gains: [industrial-capital, professional-managerial, finance-capital]
+          pays: [peripheral-workers, core-workers]
+          mechanism: >
+            Tied and temporary visas give employers workers who cannot change jobs or settle, so the
+            employer captures most of the wage gap between home and host country.
+          drain: sustains
+          law_of_value: extends
+
+      - id: borders.migration.legal-and-contributing
+        label: Welcome if you come legally, work and fit in
+        claim: >
+          People who come through the proper channels, work, pay taxes and respect the country's
+          ways are welcome. Those who jump the queue or do not contribute are not.
+        voiced: >
+          I have nothing against immigrants. My neighbor came here with nothing and works harder
+          than anyone. But there's a line, and you wait in it like everyone else.
+        you: >
+          You think migrants are welcome when they come legally and pull their weight, and not when
+          they break the rules.
+        because: >
+          Fairness means the same rules for everyone. People who came legally waited years and
+          followed the process; letting others skip it insults them. A country that cannot enforce
+          its own rules loses its people's trust in everything else it does.
+        against:
+          - from: liberalism.classical
+            text: >
+              For most poor people there is no line to wait in; legal routes exist mainly for the
+              rich and the highly educated.
+          - from: anarchism.syndicalist
+            text: >
+              Employers need the "illegal" workers and the law keeps them illegal. The contribution
+              test is applied to the workers, never to the firms that hire them off the books.
+        sources:
+          - {author: Paul Collier, title: "Exodus: How Migration Is Changing Our World", year: 2013}
+        traditions:
+          defining: [commonsense.look-after-your-own]
+          typical: [commonsense.self-reliance, conservatism.fusionism, conservatism.christian-democracy, conservatism.one-nation]
+          contested: [socdem.labourism, conservatism.right-populism]
+          rejects: [anarchism.communist, fascism.identitarian]
+        presupposes: []
+        excludes: [borders.migration.no-borders]
+        tension: []
+        tags: [commonsense]
+        analysis:
+          gains: [petty-bourgeoisie, professional-managerial]
+          pays: [reserve-army]
+          mechanism: >
+            A rule-following test welcomes migrants with legal status while leaving irregular
+            migrants, whom employers keep hiring, outside the law and cheaper.
+          drain: sustains
+          law_of_value: none
+          consciousness: economic-corporate
+
+      - id: borders.migration.class-not-nation-link
+        label: Organize migrants and natives as one workforce
+        claim: >
+          The divide that matters is not native and migrant but worker and employer. Whatever the
+          border rules, unions should organize migrant workers alongside natives, defend them
+          against deportation and fight for equal pay for equal work.
+        voiced: >
+          An injury to one is an injury to all. The migrant on the next line is not your
+          competitor; the boss who pays her less is. Equal pay for equal work, one union for all.
+        you: >
+          You think migrant and native workers should be organized together, because what
+          undercuts wages is employers paying migrants less, not migrants themselves.
+        because: >
+          The downward pressure on wages comes from the lower rights of migrants, not their numbers.
+          Equal pay and union rights remove employers' reason to prefer migrants, which protects
+          natives too. Unions that organized migrants, such as in US meatpacking and janitorial
+          work, won where restriction-minded unions shrank.
+        against:
+          - from: socdem.labourism
+            text: >
+              Organizing is hard when the supply of new workers is unlimited; unions cannot
+              organize faster than employers recruit.
+          - from: conservatism.national
+            text: >
+              Class solidarity across borders is an idea for activists. Ordinary workers see their
+              towns change and their wages stall, and they vote accordingly.
+        sources:
+          - {author: Karl Marx, title: "Letter to Sigfrid Meyer and August Vogt", year: 1870}
+          - {author: Stephen Castles and Godula Kosack, title: "Immigrant Workers and Class Structure in Western Europe", year: 1973}
+        traditions:
+          defining: [anarchism.syndicalist]
+          typical: [marxism.trotskyism, marxism.ml, socdem.democratic-socialism, marxism.classical]
+          contested: [socdem.labourism]
+          rejects: [fascism.identitarian, conservatism.national]
+        presupposes: [labor.division.contract-status-is-a-wedge]
+        excludes: [borders.migration.remigration]
+        tension: [borders.migration.restrict-for-workers]
+        tags: []
+        analysis:
+          gains: [core-workers, reserve-army, peripheral-workers]
+          pays: [industrial-capital]
+          mechanism: >
+            Equal pay and union protection for migrants remove the wage gap employers exploit,
+            raising wages at the bottom for migrants and natives together.
+          drain: softens
+          law_of_value: regulates
+          consciousness: class-economic
+
+  - id: migration.cause
+    domain: nation
+    layer: analysis
+    question: Why do people migrate?
+    plain: Why do people leave their countries?
+    short: the causes of migration
+    importance: 2
+    region: migration
+    positions:
+      - id: migration.cause.individual-choice
+        label: Individuals move to better their lives where wages are higher
+        claim: >
+          People migrate because they choose to: they compare expected incomes and opportunities
+          and move where they can do better. Migration is individual decisions responding to wage
+          gaps.
+        voiced: >
+          Migrants vote with their feet. They go where their work is worth more, and in doing so
+          they make themselves, their families and the world richer.
+        you: >
+          You think people migrate mainly because they decide they can earn more and live better
+          somewhere else.
+        because: >
+          Migration flows track wage differences: when wages rise at home, emigration falls. Most
+          migrants are not the poorest but those with enough resources to make a calculated move,
+          which shows choice rather than compulsion.
+        against:
+          - from: marxism.dependency
+            text: >
+              The "choice" is made after debt, land grabs and trade rules have destroyed livelihoods
+              at home. Explaining migration by individual preference hides who made the wage gap.
+          - from: ecology.environmental-justice
+            text: >
+              Farmers leaving drought-stricken land in the Sahel or Central America are not comparing
+              wage offers; their fields have failed.
+        sources:
+          - {author: Michael P. Todaro, title: "A Model of Labor Migration and Urban Unemployment in Less Developed Countries", year: 1969}
+          - {author: Bryan Caplan and Zach Weinersmith, title: "Open Borders: The Science and Ethics of Immigration", year: 2019}
+        traditions:
+          defining: [liberalism.chicago]
+          typical: [liberalism.classical, libertarianism.minarchist, liberalism.austrian, commonsense.self-reliance]
+          contested: [liberalism.technocratic]
+          rejects: [marxism.dependency, marxism.third-worldism]
+        presupposes: []
+        excludes: []
+        tension: [migration.cause.drain]
+        tags: []
+        analysis:
+          gains: [industrial-capital]
+          pays: []
+          mechanism: >
+            Explaining migration by individual choice removes the question of what drove people out,
+            so policy focuses on the border and the labor market rather than on debt, trade and
+            extraction in sending countries.
+          drain: sustains
+          law_of_value: extends
+
+      - id: migration.cause.drain
+        label: Migration follows the drain from periphery to core
+        claim: >
+          People migrate from the periphery to the core because the world economy drains wealth in
+          that direction. Debt, structural adjustment, unequal trade and land grabs destroy
+          livelihoods at home, and core economies use the displaced as a reserve of cheap labor.
+        voiced: >
+          Migration is the other face of imperialism. First they take the coffee, the copper and the
+          land; then they take the people who are left with nothing; then they call them invaders.
+        you: >
+          You think people leave poor countries because the world economy drains wealth from them
+          to rich countries.
+        because: >
+          Migration routes follow the lines of colonial and financial ties. Structural adjustment
+          in the 1980s and 1990s cut farm supports and public jobs across Africa and Latin America,
+          and emigration rose; after NAFTA, subsidized US corn ruined Mexican farmers, and
+          migration north grew. Core employers recruit the displaced at wages natives refuse.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Emigration rises as countries grow richer, up to middle income, then falls: it is a
+              sign of development, not of plunder.
+          - from: conservatism.national
+            text: >
+              Blaming the West for every migration denies the migrants' own governments, wars and
+              corruption any responsibility.
+        sources:
+          - {author: Stephen Castles and Godula Kosack, title: "Immigrant Workers and Class Structure in Western Europe", year: 1973}
+          - {author: Samir Amin, title: "Unequal Development", year: 1973}
+          - {author: A. Sivanandan, title: "A Different Hunger: Writings on Black Resistance", year: 1982}
+        traditions:
+          defining: [marxism.third-worldism]
+          typical: [marxism.dependency, marxism.world-systems, marxism.black-radical, nationalism.pan-africanism, feminism.decolonial]
+          contested: [marxism.trotskyism]
+          rejects: [liberalism.chicago, fascism.identitarian]
+        presupposes: [poverty.cause.drain]
+        excludes: [migration.cause.elite-replacement]
+        tension: [migration.cause.individual-choice]
+        tags: []
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Naming the drain as the cause points policy at debt cancellation, trade terms and
+            resource control in sending countries, which would cut the rents and cheap labor core
+            capital takes from them.
+          drain: reduces
+          law_of_value: none
+
+      - id: migration.cause.employer-demand
+        label: Rich economies pull migrants in to fill jobs natives won't take
+        claim: >
+          Migration is driven above all by demand in rich economies for workers in low-paid,
+          insecure jobs that natives avoid. Employers and states recruit migrants to fill them.
+        voiced: >
+          Migrants do not invade; they are invited. Every wave of migration began with a
+          recruitment office, a farm labor contract or a hospital looking for nurses.
+        you: >
+          You think migration is driven mainly by rich-country employers who need workers for jobs
+          locals won't do at the wages offered.
+        because: >
+          Labor markets in rich countries are split into a primary sector of secure jobs and a
+          secondary sector of insecure ones. Natives avoid the secondary sector because it carries
+          low status; migrants, who measure status at home, accept it. Postwar guest worker
+          programs, the US Bracero program and today's care visas all began on the demand side.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              Demand explains where migrants go, not why so many need to leave. Without the
+              destruction of livelihoods at home, recruitment would find few takers.
+          - from: conservatism.national
+            text: >
+              Jobs natives "won't do" are jobs at wages employers won't raise. Cut off the supply and
+              the wages rise.
+        sources:
+          - {author: Michael J. Piore, title: "Birds of Passage: Migrant Labor and Industrial Societies", year: 1979}
+        traditions:
+          defining: [socdem.keynesian]
+          typical: [marxism.classical, liberalism.social, marxism.autonomism]
+          contested: [socdem.labourism]
+          rejects: [fascism.identitarian]
+        presupposes: []
+        excludes: [migration.cause.elite-replacement]
+        tension: []
+        tags: []
+        analysis:
+          gains: [core-workers]
+          pays: [industrial-capital]
+          mechanism: >
+            Locating the cause in employer demand puts responsibility on firms that recruit migrants
+            into low-wage sectors, supporting enforcement of labor standards against them rather than
+            against migrants.
+          drain: none
+          law_of_value: regulates
+
+      - id: migration.cause.war-persecution
+        label: People flee war, persecution and failed governments
+        claim: >
+          Large movements of people are driven by wars, persecution and the collapse of governments.
+          Refugees flee for their lives, and their protection is a duty under international law.
+        voiced: >
+          No one puts their children in a boat unless the water is safer than the land. Refugees
+          are fleeing bombs, militias and tyrants, and we are bound to protect them.
+        you: >
+          You think many migrants are fleeing war and persecution, and that protecting them is an
+          obligation.
+        because: >
+          The largest displacements of recent decades, Syria, Afghanistan, South Sudan, Ukraine,
+          Sudan, followed wars. The 1951 Refugee Convention was written after Europe's own
+          refugees were turned away in the 1930s; it binds states to protect those with a
+          well-founded fear of persecution.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              "Failed governments" did not fail by themselves. Many of these wars were waged,
+              armed or financed by core powers, from Iraq to Libya, and the explanation stops just
+              before naming them.
+          - from: conservatism.national
+            text: >
+              Most of those who cross several safe countries to reach the richest one are choosing
+              a destination, not fleeing; the asylum system has become a migration route.
+        sources:
+          - {author: United Nations, title: "Convention Relating to the Status of Refugees", year: 1951}
+          - {author: Alexander Betts and Paul Collier, title: "Refuge: Transforming a Broken Refugee System", year: 2017}
+        traditions:
+          defining: [liberalism.internationalist]
+          typical: [liberalism.social, conservatism.christian-democracy, conservatism.cst, liberalism.progressive]
+          contested: [conservatism.neo]
+          rejects: [fascism.identitarian]
+        presupposes: []
+        excludes: []
+        tension: [migration.cause.drain]
+        tags: []
+        analysis:
+          gains: [peripheral-workers]
+          pays: []
+          mechanism: >
+            Framing migration as flight from bad governments supports asylum protection but leaves
+            the core states' role in arming and financing wars, and in the economic drain, outside
+            the explanation.
+          drain: none
+          law_of_value: none
+
+      - id: migration.cause.climate
+        label: Climate breakdown and land degradation are driving people out
+        claim: >
+          Droughts, floods, sea-level rise and failing harvests are forcing growing numbers of people
+          from their land, most of them in countries that did least to cause the climate crisis.
+        voiced: >
+          The climate crisis is already a migration crisis. Those who burned the least carbon are
+          the first to lose their fields and coasts, and the rich countries that burned the most
+          are building walls.
+        you: >
+          You think climate change and environmental damage are a major reason people are forced
+          to move, and that the countries most responsible owe them.
+        because: >
+          Repeated droughts in Central America's Dry Corridor and the Sahel destroyed harvests and
+          pushed farmers to cities and abroad. Most climate displacement is internal and regional,
+          but it compounds every other cause, and it will grow with warming.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Researchers struggle to separate climate from economic and political causes; poor
+              farmers often cannot afford to move far, so drought can reduce long-distance migration.
+          - from: conservatism.national
+            text: >
+              "Climate refugee" is not a legal category, and inventing one would turn every
+              environmental hardship into an unlimited right of entry.
+        sources:
+          - {author: World Bank, title: "Groundswell: Preparing for Internal Climate Migration", year: 2018}
+        traditions:
+          defining: [ecology.environmental-justice]
+          typical: [marxism.ecosocialism, ecology.degrowth, liberalism.progressive]
+          contested: [ecology.green-growth]
+          rejects: [fascism.ecofascism]
+        presupposes: []
+        excludes: []
+        tension: []
+        tags: [climate]
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Treating climate displacement as caused by core emissions supports claims for
+            adaptation finance and admission paid by the high-emitting economies and fossil fuel
+            firms.
+          drain: reduces
+          law_of_value: none
+
+      - id: migration.cause.elite-replacement
+        label: Elites deliberately import migrants to replace the native population
+        claim: >
+          Mass migration is a deliberate policy by political and business elites to replace native
+          populations with more pliable or cheaper ones, whatever the migrants themselves intend.
+        voiced: >
+          The replacist elite wants interchangeable people: cheaper, rootless, without memory or
+          loyalty. They have chosen to dissolve the people rather than serve it.
+        you: >
+          You think elites are bringing in migrants on purpose to replace the native population.
+        because: >
+          Governments kept immigration high for decades against the expressed wishes of voters,
+          while business lobbies pressed for more. Officials have spoken openly of migration as an
+          answer to aging populations. When a policy is pursued that consistently against the
+          majority's will, intent can be inferred.
+        against:
+          - from: liberalism.egalitarian
+            text: >
+              Immigration policy is a messy result of employer lobbying, asylum law and family
+              reunification, not a plan. The "replacement" story turns citizens into invaders and
+              has motivated mass shootings at Christchurch, El Paso and Buffalo.
+          - from: marxism.classical
+            text: >
+              Employers do want cheap labor, as they always have; the remedy is organizing that
+              labor. Turning a class question into a racial plot points workers against each other.
+        sources:
+          - {author: Renaud Camus, title: "Le Grand Remplacement", year: 2011}
+        traditions:
+          defining: [fascism.identitarian]
+          typical: [fascism.third-position, nationalism.ethnic, fascism.ecofascism]
+          contested: [conservatism.right-populism, conservatism.paleo]
+          rejects: [liberalism.egalitarian, marxism.classical, nationalism.civic]
+        presupposes: []
+        excludes: [migration.cause.drain, migration.cause.employer-demand]
+        tension: []
+        tags: [far-right]
+        analysis:
+          gains: [petty-bourgeoisie]
+          pays: [reserve-army, core-workers]
+          mechanism: >
+            Recasting employers' demand for labor as an ethnic plot directs native workers' anger at
+            migrants rather than at the firms that hire them, splitting labor organization.
+          drain: sustains
+          law_of_value: none
+
+      - id: migration.cause.welfare-magnet
+        label: Many come for the benefits and the easy life
+        claim: >
+          Generous welfare, housing and health systems in rich countries attract migrants who come
+          to receive more than they contribute.
+        voiced: >
+          Why wouldn't they come? Free housing, free healthcare, money every week. Anybody would.
+          Meanwhile our own people wait years for a council flat.
+        you: >
+          You think many migrants are attracted by the benefits rich countries hand out.
+        because: >
+          People respond to incentives, and benefit levels in some rich countries exceed working
+          wages in many poor ones. Studies have found that migrants' choice of destination within a
+          country can track benefit generosity. Local services are visibly stretched.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Most migrants of working age are net contributors; they arrive educated at someone
+              else's expense, and many have restricted access to benefits for years.
+          - from: marxism.classical
+            text: >
+              Housing waits are caused by decades of not building social housing and selling off the
+              stock. Pointing at migrants protects the landlords and the austerity governments.
+        sources:
+          - {author: George J. Borjas, title: "Immigration and Welfare Magnets", year: 1999}
+        traditions:
+          defining: [commonsense.look-after-your-own]
+          typical: [conservatism.right-populism, commonsense.declinist, libertarianism.paleo]
+          contested: [conservatism.national]
+          rejects: [liberalism.chicago, socdem.democratic-socialism, marxism.classical]
+        presupposes: []
+        excludes: [migration.cause.drain]
+        tension: []
+        tags: [commonsense]
+        analysis:
+          gains: [landed-capital, petty-bourgeoisie]
+          pays: [reserve-army, core-workers]
+          mechanism: >
+            Blaming migrants for shortages of housing and services shifts attention from cuts and
+            from landlords' rents to the newest and weakest claimants, and supports restricting
+            benefits for all low-income people.
+          drain: none
+          law_of_value: extends
+          consciousness: economic-corporate
+
+  - id: palestine.question
+    domain: nation
+    layer: horizon
+    question: "Palestine and Zionism: what is just?"
+    plain: Between the Jordan River and the Mediterranean Sea, who should rule, and how should the land be shared?
+    short: Palestine and Zionism
+    importance: 3
+    region: palestine
+    positions:
+      - id: palestine.question.labor-zionist
+        label: A Jewish and democratic state, with territorial compromise
+        claim: >
+          The Jewish people is a nation with the right to self-determination in its historic
+          homeland. Israel should remain a Jewish and democratic state with a Jewish majority,
+          which requires separating from most Palestinians through territorial compromise.
+        voiced: >
+          We returned to our land to build a society of labor and to make the Jews a normal nation
+          among nations. We accepted partition in 1947 and we will accept compromise again, but a
+          Jewish state for a people that had none is not negotiable.
+        you: >
+          You think the Jewish people needs and deserves a state of its own in its historic land,
+          and that keeping it Jewish and democratic requires giving up land for peace.
+        because: >
+          Two thousand years of statelessness ended in the Holocaust; a people without a state has
+          no one to protect it. Labor Zionists built the institutions, the kibbutzim, the Histadrut,
+          the army, that made Israel viable, and they accepted the 1947 UN partition the Arab
+          leadership rejected. Holding millions of Palestinians without rights would end either the
+          Jewish majority or democracy; separation preserves both.
+        against:
+          - from: nationalism.palestinian
+            text: >
+              Labor Zionism carried out the expulsions of 1948, when about 700,000 to 750,000
+              Palestinians fled or were driven out and were barred from returning, and Labor
+              governments began the settlements after 1967. "Conquest of labor" meant excluding
+              Arab workers.
+          - from: nationalism.zionism-revisionist
+            text: >
+              Every territory surrendered, Gaza in 2005 most clearly, became a base for attacks.
+              Partition promises security and delivers rockets.
+        sources:
+          - {author: Theodor Herzl, title: "The Jewish State", year: 1896}
+          - {author: Ber Borochov, title: "The National Question and the Class Struggle", year: 1905}
+          - {author: Benny Morris, title: "The Birth of the Palestinian Refugee Problem, 1947-1949", year: 1987}
+        traditions:
+          defining: [nationalism.zionism-labor]
+          typical: [liberalism.internationalist, socdem.third-way]
+          contested: [socdem.democratic-socialism]
+          rejects: [nationalism.palestinian, religious.islamism-brotherhood, religious.religious-zionism]
+        presupposes: []
+        excludes: [palestine.question.one-democratic-state, palestine.question.liberation-of-all-palestine]
+        tension: []
+        tags: [zionism]
+        analysis:
+          gains: [professional-managerial, core-workers, industrial-capital]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >
+            A Jewish-majority state keeps land, water and state employment in Jewish hands inside
+            its borders, and the Histadrut-era economy gave Jewish workers secure jobs while
+            Palestinians were confined to day labor and refugee camps.
+          drain: sustains
+          law_of_value: regulates
+          disputed: >
+            Some Marxists (Borochov's heirs) treated Labor Zionism as the national liberation of the
+            Jewish proletariat; most anti-imperialist Marxists (Rodinson) read it as settler
+            colonialism.
+
+      - id: palestine.question.revisionist
+        label: Jewish sovereignty over the Land of Israel, secured by strength
+        claim: >
+          The Jewish people has an exclusive national right to the Land of Israel, including Judea
+          and Samaria (the West Bank). No Palestinian state should be created west of the Jordan;
+          security comes from strength and deterrence, and at most Arabs can have autonomy.
+        voiced: >
+          The right of the Jewish people to the Land of Israel is eternal and indisputable. Between
+          the sea and the Jordan there will be only Israeli sovereignty. Agreement with the Arabs
+          will come only when they lose all hope of getting rid of us: an iron wall.
+        you: >
+          You think the whole Land of Israel belongs to the Jewish people, and that peace comes from
+          strength, not from creating a Palestinian state.
+        because: >
+          Jabotinsky saw that no native people gives up its land willingly; only an iron wall of
+          Jewish power would bring the Arabs to accept the Jewish state, as Egypt and Jordan
+          eventually did. A Palestinian state in the hills above Tel Aviv would put the whole country
+          in range. Israel withdrew from Gaza in 2005 and received Hamas and October 7.
+        against:
+          - from: nationalism.zionism-labor
+            text: >
+              Annexing the West Bank means either giving millions of Palestinians the vote, ending
+              the Jewish majority, or denying it, ending democracy. Permanent rule over another
+              people corrodes the state that does it.
+          - from: nationalism.palestinian
+            text: >
+              The "iron wall" is the policy in plain words: domination until the natives give up.
+              Israeli and international human rights groups, B'Tselem in 2021 and Amnesty in 2022,
+              concluded that this rule amounts to apartheid.
+        sources:
+          - {author: Ze'ev Jabotinsky, title: "The Iron Wall", year: 1923}
+          - {author: Likud, title: "Likud Party Platform", year: 1977}
+        traditions:
+          defining: [nationalism.zionism-revisionist]
+          typical: [religious.religious-zionism, conservatism.national, conservatism.right-populism]
+          contested: [conservatism.neo]
+          rejects: [nationalism.palestinian, nationalism.zionism-labor, liberalism.internationalist]
+        presupposes: []
+        excludes: [palestine.question.liberal-two-states, palestine.question.plo-state, palestine.question.one-democratic-state]
+        tension: []
+        tags: [zionism]
+        analysis:
+          gains: [landed-capital, petty-bourgeoisie, industrial-capital]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >
+            Permanent control of the West Bank secures land and water for settlement, housing and
+            agriculture, and a captive Palestinian labor and consumer market, while Palestinian
+            producers face permits, closures and confiscation.
+          drain: sustains
+          law_of_value: extends
+
+      - id: palestine.question.religious-zionist
+        label: Settling the whole land is a divine commandment and redemption
+        claim: >
+          The return of the Jewish people to the whole Land of Israel is part of divine redemption.
+          Settling Judea and Samaria is a religious duty, and giving up any part of the land is
+          forbidden.
+        voiced: >
+          The Land of Israel is not something external to the Jewish people; it is bound to its
+          soul. Settling the land is a commandment equal to all the commandments, and the State of
+          Israel is the beginning of the flowering of our redemption.
+        you: >
+          You think God gave the whole Land of Israel to the Jewish people, and that settling it is
+          a sacred duty.
+        because: >
+          The Torah promises the land to the descendants of Abraham, and the return after two
+          thousand years is the fulfilment of prophecy. Even secular pioneers were unknowing
+          instruments of redemption. Withdrawal from any part of the land reverses a divine process
+          and endangers the whole.
+        against:
+          - from: nationalism.zionism-labor
+            text: >
+              Turning territory into theology makes compromise impossible. A religious nationalist
+              murdered Prime Minister Rabin in 1995 for signing Oslo, and a settler killed 29
+              worshippers in Hebron in 1994.
+          - from: religious.islamism-brotherhood
+            text: >
+              Scripture claims cannot dispossess a people that has lived on the land for centuries;
+              the same land is holy to Muslims and Christians.
+        sources:
+          - {author: Abraham Isaac Kook, title: "Orot", year: 1920}
+        traditions:
+          defining: [religious.religious-zionism]
+          typical: [nationalism.zionism-revisionist]
+          contested: [conservatism.evangelical-right]
+          rejects: [nationalism.zionism-labor, nationalism.palestinian, liberalism.internationalist]
+        presupposes: []
+        excludes: [palestine.question.liberal-two-states, palestine.question.haredi-anti-zionist]
+        tension: []
+        tags: [zionism, religion]
+        analysis:
+          gains: [petty-bourgeoisie, landed-capital]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >
+            Settlement as religious duty, subsidized by the state, transfers West Bank land and water
+            to settler communities and their builders, while Palestinian villages lose fields and
+            access.
+          drain: sustains
+          law_of_value: extends
+
+      - id: palestine.question.christian-zionist
+        label: Support for Israel as fulfilment of biblical prophecy
+        claim: >
+          God's promise of the land to the Jewish people stands, and the restoration of Israel is a
+          sign of prophecy being fulfilled. Christians should support Israel politically and
+          materially, including its control of the land.
+        voiced: >
+          I will bless those who bless you, and whoever curses you I will curse. Standing with
+          Israel is standing with God's word; the nations will be judged by how they treated the
+          Jewish people.
+        you: >
+          You think Christians should stand with Israel because God's promises to the Jewish people
+          still hold.
+        because: >
+          Genesis 12 binds God's blessing to how the nations treat Abraham's descendants. The
+          rebirth of Israel in 1948 after two millennia confirms that God keeps his covenant.
+          Christians who failed the Jews through centuries of persecution owe them support now.
+        against:
+          - from: religious.liberation-theology
+            text: >
+              Palestinian Christians, among the oldest Christian communities on earth, live under
+              occupation that Christian Zionists fund. Christian Zionism makes a theology of
+              dispossession.
+          - from: nationalism.zionism-labor
+            text: >
+              Support conditioned on an end-times script in which Jews must convert or perish is
+              not friendship to the Jewish people.
+        sources:
+          - {author: John Hagee, title: "In Defense of Israel", year: 2007}
+        traditions:
+          defining: [conservatism.evangelical-right]
+          typical: [conservatism.fusionism]
+          contested: [conservatism.neo]
+          rejects: [religious.liberation-theology, nationalism.palestinian]
+        presupposes: [history.motor.providence]
+        excludes: [palestine.question.one-democratic-state, palestine.question.plo-state]
+        tension: []
+        tags: [religion]
+        analysis:
+          gains: [industrial-capital, petty-bourgeoisie]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >
+            Mass religious support in the United States sustains military aid and diplomatic cover,
+            which benefit arms manufacturers and Israel's security economy, while Palestinians bear
+            the cost of continued occupation.
+          drain: sustains
+          law_of_value: none
+
+      - id: palestine.question.liberal-two-states
+        label: Two states for two peoples on the 1967 lines
+        claim: >
+          Both peoples have a right to national self-determination. Justice requires an end to the
+          occupation that began in 1967 and two states, Israel and Palestine, on the 1967 lines with
+          agreed land swaps, a shared or divided Jerusalem, and an agreed solution for refugees.
+        voiced: >
+          Two peoples, one land, two states. Israel's security and Palestine's freedom are not
+          opposites; the occupation destroys both. The parameters are known: 1967 lines with swaps,
+          two capitals in Jerusalem, compensation and return mostly to Palestine.
+        you: >
+          You think the fair answer is two states, Israel and Palestine, roughly along the 1967
+          borders.
+        because: >
+          Neither people is going anywhere, and each has a national identity it will not give up.
+          Partition is how other national conflicts have been settled. The terms have been
+          negotiated nearly to completion several times, at Camp David and Taba in 2000 and 2001,
+          and the international community, UN Resolution 242, and most states back them.
+        against:
+          - from: nationalism.palestinian
+            text: >
+              Two states was the promise of Oslo, and since 1993 the number of settlers has grown
+              several times over, to more than 700,000 in the West Bank and East Jerusalem. Two
+              states has become the name of the waiting room for annexation.
+          - from: nationalism.zionism-revisionist
+            text: >
+              A Palestinian state would be another Gaza on the hills above the coastal plain, and
+              its refugees' demand of return would continue the conflict by other means.
+        sources:
+          - {author: United Nations Security Council, title: "Resolution 242", year: 1967}
+          - {author: Government of Israel and Palestine Liberation Organization, title: "Declaration of Principles on Interim Self-Government Arrangements", year: 1993}
+        traditions:
+          defining: [liberalism.internationalist]
+          typical: [nationalism.zionism-labor, socdem.third-way, liberalism.social, conservatism.christian-democracy, liberalism.technocratic]
+          contested: [nationalism.palestinian]
+          rejects: [nationalism.zionism-revisionist, religious.religious-zionism, religious.islamism-brotherhood]
+        presupposes: []
+        excludes: [palestine.question.revisionist, palestine.question.religious-zionist]
+        tension: [palestine.question.one-democratic-state]
+        tags: [two-state]
+        analysis:
+          gains: [professional-managerial, comprador-capital]
+          pays: [reserve-army]
+          mechanism: >
+            The Oslo framework built a Palestinian Authority whose officials, security forces and
+            contractors depend on donor money and Israeli-collected tax revenue, while refugees in
+            exile, whose claims are bargained away, bear the cost.
+          drain: softens
+          law_of_value: none
+          disputed: >
+            Supporters hold a real sovereign state would end dependency; critics (Edward Said,
+            1993) called Oslo a Palestinian Versailles that created a subcontracted occupation.
+
+      - id: palestine.question.plo-state
+        label: An independent Palestinian state on 1967 land, with the right of return
+        claim: >
+          The Palestinian people has the right to an independent, sovereign state in the West Bank
+          and Gaza with East Jerusalem as its capital, and Palestinian refugees have the right to
+          return or compensation under UN Resolution 194.
+        voiced: >
+          We declared our state in 1988 and accepted a historic compromise: twenty-two percent of
+          historic Palestine. We will not give up Jerusalem, and we will not give up the refugees'
+          right to return to the homes they were driven from.
+        you: >
+          You think Palestinians should have their own fully independent state on the land occupied
+          in 1967, and that refugees have a right to return.
+        because: >
+          The PLO recognized Israel and accepted the 1967 lines, a concession of most of the land.
+          A sovereign state is what international law and nearly every country back, and it is the
+          minimum that lets Palestinians govern themselves. The right of return is an individual
+          right of refugees affirmed by the UN every year since 1948.
+        against:
+          - from: nationalism.zionism-labor
+            text: >
+              A return of millions of refugees' descendants to Israel would end the Jewish state by
+              demography. A demand for two states plus return is a demand for one Palestinian state
+              in two stages.
+          - from: religious.islamism-brotherhood
+            text: >
+              Oslo bought recognition of the occupier and security coordination with it, and in
+              return the PLO got a municipality without sovereignty. Negotiation without resistance
+              surrendered the land.
+        sources:
+          - {author: Palestine National Council, title: "Palestinian Declaration of Independence", year: 1988}
+          - {author: United Nations General Assembly, title: "Resolution 194", year: 1948}
+          - {author: Rashid Khalidi, title: "The Hundred Years' War on Palestine", year: 2020}
+        traditions:
+          defining: [nationalism.palestinian]
+          typical: [marxism.arab-socialism, nationalism.nasserism, liberalism.internationalist]
+          contested: [marxism.ml]
+          rejects: [nationalism.zionism-revisionist, religious.religious-zionism]
+        presupposes: [intl.sovereignty.nations-set-own-course]
+        excludes: [palestine.question.revisionist]
+        tension: [palestine.question.liberation-of-all-palestine]
+        tags: [plo, two-state]
+        analysis:
+          gains: [peasantry, peripheral-workers, petty-bourgeoisie]
+          pays: [landed-capital]
+          mechanism: >
+            A sovereign state would give Palestinians control of land, water, borders and trade,
+            ending confiscation for settlements and the captive market for Israeli goods.
+          drain: reduces
+          law_of_value: none
+          consciousness: hegemonic
+
+      - id: palestine.question.liberation-of-all-palestine
+        label: Liberate all of Palestine by struggle; return of all refugees
+        claim: >
+          Zionism is a settler-colonial project, and justice means the liberation of all of
+          historic Palestine, the return of all refugees, and a democratic Palestine for all who
+          live in it, won through popular and armed struggle rather than negotiation with the
+          occupier.
+        voiced: >
+          Palestine from the river to the sea is the homeland of the Palestinian people. Israel is a
+          colonial-settler outpost of imperialism. Armed struggle is the strategy, not a tactic,
+          and the revolution will build a democratic Palestine where Jews who reject Zionism can
+          live as equals.
+        you: >
+          You think all of historic Palestine should be liberated and its refugees returned, and
+          that this will come through struggle, not negotiation.
+        because: >
+          Every negotiated stage, partition, Oslo, the peace process, gave legitimacy to the
+          dispossession and more time for settlement. Colonial settler states ended in Algeria
+          and were dismantled in South Africa only under force and isolation. Israel is backed by
+          imperial powers because it serves their control of the region's oil and routes.
+        against:
+          - from: nationalism.zionism-labor
+            text: >
+              "From the river to the sea" leaves no place for the Jewish nation of seven million,
+              whatever is promised to individuals. It is a program for the end of Israel.
+          - from: liberalism.internationalist
+            text: >
+              Attacks on civilians, from airline hijackings in 1970 to October 7, 2023, killed
+              civilians and turned world opinion and Israeli society against any settlement.
+        sources:
+          - {author: Palestine National Council, title: "Palestinian National Charter", year: 1968}
+          - {author: Ghassan Kanafani, title: "The 1936-39 Revolt in Palestine", year: 1972}
+          - {author: Fayez Sayegh, title: "Zionist Colonialism in Palestine", year: 1965}
+          - {author: Maxime Rodinson, title: "Israel: A Colonial-Settler State?", year: 1967}
+        traditions:
+          defining: [nationalism.palestinian]
+          typical: [marxism.arab-socialism, marxism.ml, marxism.third-worldism, marxism.maoism]
+          contested: [marxism.trotskyism]
+          rejects: [nationalism.zionism-labor, nationalism.zionism-revisionist, liberalism.internationalist]
+        presupposes: [settler.colonialism.ongoing-structure]
+        excludes: [palestine.question.labor-zionist, palestine.question.revisionist, palestine.question.religious-zionist]
+        tension: [palestine.question.plo-state]
+        tags: [pflp, liberation]
+        analysis:
+          gains: [peasantry, peripheral-workers, reserve-army]
+          pays: [landed-capital, finance-capital, comprador-capital]
+          mechanism: >
+            Liberation of the whole land would return refugees' land and property and end the
+            region's main base for US military power, threatening the arms, energy and finance
+            interests that rely on it, and the Arab ruling classes allied with them.
+          drain: breaks
+          law_of_value: none
+          consciousness: hegemonic
+
+      - id: palestine.question.islamist-resistance
+        label: Palestine is Islamic land; resistance until liberation
+        claim: >
+          Palestine from the river to the sea is an Islamic and Palestinian land that cannot be
+          surrendered. The occupation must be resisted by every means, including armed struggle.
+          A state on the 1967 lines may be accepted as an interim national consensus, without
+          recognizing Israel.
+        voiced: >
+          Palestine is an Arab Islamic land, a blessed and sacred land. Resisting the occupation by
+          all means, armed resistance at their heart, is a legitimate right guaranteed by divine
+          law and international law. Our conflict is with the Zionist project, not with the Jews
+          because of their religion.
+        you: >
+          You think Palestine is a sacred land that must not be given up, and that armed resistance
+          to the occupation is legitimate.
+        because: >
+          Decades of negotiation produced more settlements, not a state. Gaza's population, mostly
+          refugees from 1948, has lived under blockade since 2007. Faith gives a dispossessed people
+          endurance and refuses the logic of surrender. The 2006 elections gave Hamas a majority
+          in the Palestinian Legislative Council.
+        against:
+          - from: nationalism.palestinian
+            text: >
+              Turning a national struggle into a religious one isolates Palestinians from the
+              world, splits Muslims from Christians, and the 2007 split between Gaza and the West
+              Bank weakened the whole national movement.
+          - from: liberalism.internationalist
+            text: >
+              The 1988 charter quoted the Protocols of the Elders of Zion. On October 7, 2023 the
+              Hamas-led attack killed about 1,200 people in Israel, most of them civilians, and took
+              about 250 hostages; the war that followed killed tens of thousands of Palestinians in
+              Gaza.
+        sources:
+          - {author: Hamas, title: "Covenant of the Islamic Resistance Movement", year: 1988}
+          - {author: Hamas, title: "A Document of General Principles and Policies", year: 2017}
+        traditions:
+          defining: [religious.islamism-brotherhood]
+          typical: [religious.islamism-khomeinist]
+          contested: [nationalism.palestinian, religious.post-islamism]
+          rejects: [nationalism.zionism-labor, nationalism.zionism-revisionist, religious.religious-zionism, liberalism.internationalist]
+        presupposes: []
+        excludes: [palestine.question.labor-zionist, palestine.question.revisionist, palestine.question.liberal-two-states]
+        tension: [palestine.question.one-democratic-state]
+        tags: [islamism]
+        analysis:
+          gains: [peasantry, reserve-army, petty-bourgeoisie]
+          pays: [landed-capital, comprador-capital]
+          mechanism: >
+            Armed resistance contests Israeli control of land and borders and the Palestinian
+            Authority's brokerage of donor and security arrangements; its social program, built on
+            charity and pious merchants, leaves property relations inside Palestinian society as
+            they are.
+          drain: reduces
+          law_of_value: none
+          disputed: >
+            Some on the left hold that resistance by any current against occupation is
+            anti-imperialist; others (Achcar, many Palestinian leftists) hold that Islamism's social
+            program and sectarian framing weaken the liberation movement.
+
+      - id: palestine.question.one-democratic-state
+        label: One democratic state with equal rights from river to sea
+        claim: >
+          Two states are no longer possible, and partition was never just. The answer is one state
+          in all of historic Palestine with equal citizenship for Palestinians and Israeli Jews,
+          the return of refugees, and an end to all ethnic privilege in law.
+        voiced: >
+          One person, one vote, from the river to the sea. Equality is not the destruction of
+          anyone; it is the end of apartheid. Jews and Palestinians can share the land as equals, as
+          black and white South Africans share theirs.
+        you: >
+          You think the fair answer is a single state where Palestinians and Israeli Jews have
+          exactly equal rights.
+        because: >
+          One state already exists between the river and the sea, run by Israel, with different
+          rights for different people. Settlements have made separation impossible. The South
+          African model shows a settler-colonial order can be ended by equal citizenship rather
+          than expulsion, and boycott and isolation can help force the change.
+        against:
+          - from: nationalism.zionism-labor
+            text: >
+              A binational state in a land of two hostile national movements would be Lebanon, not
+              South Africa. Jews would become a minority in a state with a hostile majority, the fate
+              Zionism exists to prevent.
+          - from: religious.islamism-brotherhood
+            text: >
+              A shared secular state legitimizes the settlers' presence on stolen land and asks the
+              victims to share their homeland with those who took it.
+        sources:
+          - {author: Edward W. Said, title: "The One-State Solution", year: 1999}
+          - {author: Ali Abunimah, title: "One Country: A Bold Proposal to End the Israeli-Palestinian Impasse", year: 2006}
+          - {author: B'Tselem, title: "A Regime of Jewish Supremacy from the Jordan River to the Mediterranean Sea: This Is Apartheid", year: 2021}
+        traditions:
+          defining: []
+          typical: [nationalism.palestinian, socdem.democratic-socialism, marxism.trotskyism, anarchism.communist, marxism.black-radical, liberalism.progressive]
+          contested: [marxism.arab-socialism]
+          rejects: [nationalism.zionism-labor, nationalism.zionism-revisionist, religious.religious-zionism]
+        presupposes: [settler.colonialism.ongoing-structure]
+        excludes: [palestine.question.labor-zionist, palestine.question.revisionist, palestine.question.religious-zionist]
+        tension: [palestine.question.liberal-two-states]
+        tags: [one-state, bds]
+        analysis:
+          gains: [peasantry, peripheral-workers, reserve-army]
+          pays: [landed-capital]
+          mechanism: >
+            Equal citizenship would end the legal privileges that allocate land, water, residence
+            and state employment by ethnicity, opening them to refugees and Palestinian workers.
+          drain: reduces
+          law_of_value: none
+          disputed: >
+            Some Marxists hold that without socialization of land and capital, equal citizenship
+            would repeat South Africa after 1994, with formal equality and unchanged ownership.
+
+      - id: palestine.question.haredi-anti-zionist
+        label: A Jewish state before the Messiah is forbidden
+        claim: >
+          Jews are commanded to live in exile until the Messiah comes, and not to establish a state
+          by human force. Zionism is a rebellion against God, and the Jewish religion must not be
+          identified with the State of Israel.
+        voiced: >
+          The Holy One, blessed be He, made the Jews swear not to ascend as a wall and not to rebel
+          against the nations. Zionism took our holy name and our holy land and made an idol of
+          them. The State of Israel does not speak for the Jewish people.
+        you: >
+          You think, as a matter of Jewish faith, that a Jewish state before the coming of the
+          Messiah is forbidden.
+        because: >
+          The Talmud records three oaths: that Israel would not take the land by force, would not
+          rebel against the nations, and that the nations would not oppress Israel too greatly.
+          Zionism replaced Torah with nationalism and endangered Jews everywhere by tying them to a
+          state's wars. Faithful Jews wait for redemption from God, not from armies.
+        against:
+          - from: religious.religious-zionism
+            text: >
+              The return to Zion after the Holocaust is the hand of God in history. Refusing the
+              state's existence leaves Jews defenseless and denies the miracle in front of us.
+          - from: nationalism.palestinian
+            text: >
+              Religious objection to Zionism is welcome, but Palestinian rights rest on our presence
+              and dispossession, not on Jewish theology about the Messiah.
+        sources:
+          - {author: Joel Teitelbaum, title: "Vayoel Moshe", year: 1961}
+        traditions:
+          defining: []
+          typical: []
+          contested: []
+          rejects: [nationalism.zionism-labor, nationalism.zionism-revisionist, religious.religious-zionism]
+        presupposes: []
+        excludes: [palestine.question.religious-zionist, palestine.question.revisionist]
+        tension: []
+        tags: [judaism, religion]
+        analysis:
+          gains: []
+          pays: []
+          mechanism: >
+            The position has no direct class program; as a stance it withdraws religious
+            legitimacy from the state, while Haredi communities in Israel depend in practice on
+            state funding for their institutions.
+          drain: none
+          law_of_value: none
+
+      - id: palestine.question.diasporist-jewish
+        label: Jewish safety lies in equality where Jews live, not an ethnic state
+        claim: >
+          Jews are not a people whose safety depends on an ethnic state; their safety lies in
+          equality and solidarity in the countries where they live. Zionism wrongs Palestinians and
+          endangers Jews by tying Jewishness to a state's actions.
+        voiced: >
+          Not in our name. Doikayt, hereness: we belong where we live, and our safety is bound to
+          everyone's. A Jewish ethics of justice cannot be squared with dispossessing another
+          people.
+        you: >
+          You think Jews do not need an ethnic state to be safe, and that Zionism betrays Jewish
+          values of justice.
+        because: >
+          The Jewish Labor Bund, the largest Jewish workers' party in Eastern Europe, opposed
+          Zionism and fought for Jewish rights where Jews lived. Identifying all Jews with Israel's
+          actions fuels antisemitism. Jewish ethics and the experience of persecution argue for
+          universal equality, not for a state built on another people's expulsion.
+        against:
+          - from: nationalism.zionism-labor
+            text: >
+              The Bund's answer was tested: the Jews of Eastern Europe were murdered where they lived.
+              Rising antisemitism in the diaspora today shows that "hereness" depends on others'
+              goodwill.
+          - from: nationalism.palestinian
+            text: >
+              Jewish dissent matters, but centering Jewish identity in the debate can sideline the
+              people being dispossessed; the question is Palestinian rights.
+        sources:
+          - {author: Isaac Deutscher, title: "The Non-Jewish Jew and Other Essays", year: 1968}
+          - {author: Daniel Boyarin and Jonathan Boyarin, title: "Diaspora: Generation and the Ground of Jewish Identity", year: 1993}
+          - {author: Judith Butler, title: "Parting Ways: Jewishness and the Critique of Zionism", year: 2012}
+        traditions:
+          defining: []
+          typical: [marxism.classical, marxism.trotskyism, socdem.democratic-socialism, anarchism.communist]
+          contested: [marxism.austromarxism]
+          rejects: [nationalism.zionism-labor, nationalism.zionism-revisionist, religious.religious-zionism]
+        presupposes: []
+        excludes: [palestine.question.labor-zionist, palestine.question.revisionist]
+        tension: []
+        tags: [judaism, bund]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [industrial-capital]
+          mechanism: >
+            Withdrawing diaspora Jewish support from Israeli state policy weakens the political
+            coalition behind military aid to Israel, whose costs fall on Palestinians and whose
+            gains go in part to arms manufacturers.
+          drain: reduces
+          law_of_value: none

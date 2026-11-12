@@ -1,0 +1,1232 @@
+# Economy, part 2b: intellectual property, inheritance, commons, ownership of firms.
+problematics:
+  # ------------------------------------------------------------------
+  - id: property.ip
+    domain: economy
+    layer: horizon
+    question: Should ideas be property?
+    plain: Should inventions, songs, medicines and software belong to whoever made them, and for how long?
+    short: intellectual property
+    importance: 2
+    positions:
+      - id: property.ip.creators-property
+        label: A creation is its creator's property, as much as a house
+        claim: Inventions and works of art belong to those who create them. Patents and copyrights protect a property right earned by the mind's labor.
+        voiced: "Patents and copyrights are the legal implementation of the base of all property rights: a man's right to the product of his mind."
+        you: You believe an invention or a work of art belongs to its creator as rightfully as any other property.
+        because: >
+          The mind is the source of all wealth. A machine, a cure or a novel exists because someone thought it
+          into being, often after years of work and risk. Letting others copy it the moment it appears takes the
+          creator's product without consent, exactly as theft takes a house. Protecting the creator's title is
+          not a monopoly privilege; it is the recognition that ideas, too, are earned.
+        against:
+          - from: libertarianism.ancap
+            text: >
+              Ideas are not scarce: my copying your song leaves you with your song. Patents and copyrights let the
+              state stop me using my own paper, ink and machines, which violates real property.
+          - from: marxism.third-worldism
+            text: >
+              The 'creator' protected is almost always a corporation, and the creation usually rests on public
+              research and the borrowed knowledge of whole peoples. Patent title is a monopoly rent on the common
+              stock of human knowledge.
+        sources:
+          - {author: Ayn Rand, title: "Capitalism: The Unknown Ideal", year: 1966, note: "essay 'Patents and Copyrights'"}
+        traditions:
+          defining: [libertarianism.objectivist]
+          typical: [conservatism.fusionism]
+          contested: [liberalism.classical, liberalism.austrian]
+          rejects: [libertarianism.ancap, technology.cyberlibertarian, marxism.third-worldism, anarchism.communist]
+        presupposes: [property.private.natural-right]
+        excludes: [property.ip.monopoly-abolish, property.ip.knowledge-commons]
+        tension: []
+        tags: []
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [peripheral-workers, core-workers, peasantry]
+          mechanism: >
+            Treating patents and copyrights as permanent-in-principle property raises the price of medicines,
+            seeds and software above their cost of reproduction and routes the difference to the firms that hold
+            the titles, mostly in the core.
+          drain: sustains
+          law_of_value: extends
+
+      - id: property.ip.incentive-bargain
+        label: A limited monopoly granted to encourage invention
+        claim: Patents and copyrights are temporary monopolies society grants to encourage invention and creation. Their length and scope should be set by what produces the most innovation.
+        voiced: "To promote the progress of science and useful arts, by securing for limited times to authors and inventors the exclusive right to their writings and discoveries."
+        you: You see patents and copyrights as a deliberate trade-off, a temporary monopoly that should last only as long as it actually encourages invention.
+        because: >
+          Ideas are cheap to copy and expensive to produce. Without some protection, a drug that costs a billion
+          dollars to develop would be copied for pennies and no one would develop the next one. But monopoly
+          also restricts use and raises prices. The answer is a bargain: protection long enough to repay the
+          investment, then the work passes to the public. Where the line falls is an empirical question about
+          what generates the most innovation.
+        against:
+          - from: libertarianism.ancap
+            text: >
+              The 'bargain' is set by lobbyists. Copyright terms have been extended again and again for the
+              benefit of a few media firms, and no evidence shows that this produced a single extra work.
+          - from: libertarianism.objectivist
+            text: >
+              Treating a creator's right as a policy instrument means it can be shortened whenever the public wants
+              cheaper goods. A right that exists at society's pleasure is not a right.
+        sources:
+          - {author: United States Constitutional Convention, title: "Constitution of the United States, Article I, Section 8", year: 1787}
+          - {author: William M. Landes and Richard A. Posner, title: The Economic Structure of Intellectual Property Law, year: 2003}
+        traditions:
+          defining: [liberalism.utilitarian, liberalism.chicago]
+          typical: [liberalism.technocratic, socdem.third-way, liberalism.social, liberalism.internationalist]
+          contested: [nationalism.developmental-state, marxism.scc]
+          rejects: [libertarianism.ancap, anarchism.communist]
+        presupposes: [property.private.convention]
+        excludes: []
+        tension: []
+        tags: []
+        analysis:
+          gains: [industrial-capital, finance-capital, professional-managerial]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >
+            In principle the bargain is calibrated; in practice the TRIPS agreement of 1994 imposed core-country
+            terms worldwide, so licence fees and monopoly prices on medicines and seeds flow from periphery to
+            core patent holders.
+          drain: sustains
+          law_of_value: extends
+
+      - id: property.ip.monopoly-abolish
+        label: Intellectual property is a state monopoly; abolish it
+        claim: Ideas cannot be owned. Patents and copyrights are monopolies granted by the state and should be abolished, letting anyone copy and improve on anything.
+        voiced: "Intellectual property is not property at all. It is a government grant of monopoly privilege that restricts what I may do with my own things."
+        you: You think patents and copyrights are state-granted monopolies and should be abolished.
+        because: >
+          Property exists because physical goods are scarce: if I use your car you cannot. Ideas are not scarce.
+          Copying a recipe takes nothing from its author. Intellectual property therefore gives the holder a
+          claim over other people's real property, forbidding them to arrange their own materials in a certain
+          pattern. The record shows innovation flourishing without it, in fashion, software and early
+          industrialization, and monopoly holders using it to block competitors.
+        against:
+          - from: libertarianism.objectivist
+            text: >
+              The abolitionist makes free riders of us all. If a mind's product can be taken the moment it is
+              shown, the reward for creating goes to the copier.
+          - from: liberalism.chicago
+            text: >
+              Fashion and software can recover costs other ways; pharmaceuticals and basic research cannot. Without
+              some protection the most expensive and valuable innovation would not happen.
+        sources:
+          - {author: N. Stephan Kinsella, title: Against Intellectual Property, year: 2008}
+          - {author: Michele Boldrin and David K. Levine, title: Against Intellectual Monopoly, year: 2008}
+          - {author: Benjamin R. Tucker, title: Instead of a Book, year: 1893}
+        traditions:
+          defining: [libertarianism.ancap]
+          typical: [technology.cyberlibertarian, anarchism.individualist, anarchism.mutualist, libertarianism.left]
+          contested: [liberalism.austrian, libertarianism.minarchist]
+          rejects: [libertarianism.objectivist, liberalism.chicago]
+        presupposes: []
+        excludes: [property.ip.creators-property]
+        tension: []
+        tags: [libertarian]
+        analysis:
+          gains: [petty-bourgeoisie, peripheral-workers, core-workers]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Removing patents and copyrights ends monopoly rent on medicines, software and media, cutting the
+            licence income of firms that hold large portfolios and letting producers anywhere copy them. Gains
+            then go to whoever can manufacture and distribute at lowest cost.
+          drain: reduces
+          law_of_value: extends
+
+      - id: property.ip.knowledge-commons
+        label: Knowledge is a commons; build and defend shared knowledge
+        claim: Knowledge, software and culture are produced in common and should be shared freely. Free software, open science and copyleft licences should be expanded until they replace proprietary control.
+        voiced: "Free as in free speech, not free beer. The general intellect is ours: we write it together, and we will not rent it back from Microsoft."
+        you: You think knowledge, software and culture are made in common and should be shared freely, through open licences and public research.
+        because: >
+          Every idea rests on thousands before it, and the most important knowledge of our time, from the
+          internet's protocols to Linux to Wikipedia, was made by people sharing, not selling. Proprietary
+          control locks up what is cheapest to share, so access becomes artificially scarce. Copyleft licences
+          use the law against itself to keep shared work shared. A commons of knowledge is already a working
+          piece of a non-commodity economy.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Open-source projects survive because companies with proprietary revenue fund them. Without that
+              revenue, no one pays for the dull work of maintenance, let alone for clinical trials.
+          - from: marxism.ml
+            text: >
+              Digital commons coexist comfortably with platform monopolies that harvest them for free. Without
+              ownership of the infrastructure and the state, commons production becomes unpaid labor for capital.
+        sources:
+          - {author: Richard M. Stallman, title: "Free Software, Free Society", year: 2002}
+          - {author: Yochai Benkler, title: The Wealth of Networks, year: 2006}
+          - {author: Lawrence Lessig, title: Free Culture, year: 2004}
+        traditions:
+          defining: []
+          typical: [marxism.autonomism, anarchism.communist, technology.l-acc, ecology.degrowth]
+          contested: [technology.cyberlibertarian, socdem.democratic-socialism]
+          rejects: [libertarianism.objectivist, liberalism.chicago]
+        presupposes: []
+        excludes: [property.ip.creators-property]
+        tension: []
+        tags: [commons]
+        analysis:
+          gains: [professional-managerial, core-workers, peripheral-workers]
+          pays: [finance-capital]
+          mechanism: >
+            Shared licences remove the scarcity on which licence and subscription income rests, lowering costs for
+            users everywhere. Platform firms that build services on open code capture much of the value without
+            paying for it.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            Autonomists (Hardt and Negri) see knowledge commons as communism emerging inside capitalism; other
+            Marxists see a sector of unpaid labor that platform capital appropriates.
+
+      - id: property.ip.technology-monopoly
+        label: Patents enforce the core's monopoly over technology; the periphery should copy
+        claim: Global patent rules keep technology in the rich countries and make poor countries pay rent on it. Countries trying to industrialize should be free to copy, as the rich countries once did.
+        voiced: "Britain, the United States, Germany and Japan all copied their way to industry. Now they write patent treaties to kick away the ladder they climbed."
+        you: You see global patent rules as a way for rich countries to keep technology to themselves, and think poorer countries should be free to copy.
+        because: >
+          Every rich country industrialized by copying: the US ignored British patents, Germany and Japan copied
+          everyone, South Korea and China reverse-engineered their way up. Since the 1994 TRIPS agreement, the
+          countries that copied have made copying illegal for everyone else. Patents now work as one of the
+          monopolies of the core, alongside finance and arms: a tribute paid on every imported machine, seed and
+          medicine. Breaking it is a condition of sovereign development.
+        against:
+          - from: liberalism.technocratic
+            text: >
+              Countries that protect patents attract the foreign investment and licensing that bring technology in.
+              Copying yields yesterday's technology; partnership yields today's.
+          - from: libertarianism.objectivist
+            text: >
+              Expropriating inventors because they live in rich countries is still expropriation, and it stops
+              invention for the diseases of the poor first.
+        sources:
+          - {author: Ha-Joon Chang, title: "Kicking Away the Ladder: Development Strategy in Historical Perspective", year: 2002}
+          - {author: Samir Amin, title: Capitalism in the Age of Globalization, year: 1997}
+        traditions:
+          defining: [marxism.third-worldism]
+          typical: [marxism.dependency, nationalism.developmental-state, marxism.scc, nationalism.bolivarianism, nationalism.pan-africanism, marxism.world-systems]
+          contested: [socdem.keynesian]
+          rejects: [liberalism.technocratic, libertarianism.objectivist, liberalism.chicago]
+        presupposes: [imperialism.nature.unequal-exchange-drain]
+        excludes: [property.ip.creators-property]
+        tension: []
+        tags: [periphery]
+        analysis:
+          gains: [peripheral-workers, peasantry, industrial-capital]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Licence-free copying lets peripheral producers make generic medicines, machines and seeds at
+            reproduction cost, ending royalty flows to core patent holders. Domestic industrial capital in the
+            periphery gains; patent-holding core capital loses rent.
+          drain: reduces
+          law_of_value: regulates
+          consciousness: hegemonic
+
+      - id: property.ip.community-knowledge
+        label: Peoples' traditional knowledge belongs to the peoples, not to patentholders
+        claim: Seeds, medicines and knowledge developed by farming and indigenous communities over centuries belong to those communities. Patenting them is theft.
+        voiced: "The neem tree, basmati, turmeric: our grandmothers knew them, and now a company in Texas holds the patent. That is biopiracy."
+        you: You think the seeds, medicines and know-how that communities developed over generations belong to those communities and shouldn't be patented by companies.
+        because: >
+          Patent law recognizes only the individual inventor in a laboratory and treats the knowledge of
+          farmers and healers as raw material free for the taking. Corporations collect seeds and plant
+          medicines, add a small modification, and patent the result, sometimes selling it back to the
+          communities who bred it. Collective rights over traditional knowledge and seeds, and the farmer's
+          right to save and exchange seed, protect both livelihoods and biodiversity.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Collective rights over diffuse knowledge cannot be defined or enforced, and they wall off the
+              biodiversity that research could turn into cures for everyone.
+          - from: anarchism.communist
+            text: >
+              Answering corporate patents with community patents keeps knowledge as property. Seeds should be free
+              to all, not owned by a village instead of a company.
+        sources:
+          - {author: Vandana Shiva, title: "Biopiracy: The Plunder of Nature and Knowledge", year: 1997}
+        traditions:
+          defining: [nationalism.indigenous-sovereignty]
+          typical: [nationalism.decolonial, ecology.environmental-justice, feminism.decolonial, nationalism.gandhian]
+          contested: [marxism.third-worldism, anarchism.communist]
+          rejects: [liberalism.chicago, libertarianism.objectivist]
+        presupposes: []
+        excludes: [property.ip.creators-property]
+        tension: [property.ip.knowledge-commons]
+        tags: [indigenous]
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Collective rights and farmers' seed rights block agrochemical and pharmaceutical firms from patenting
+            and selling back seeds and remedies bred in the periphery, keeping seed costs and royalties local.
+          drain: reduces
+          law_of_value: regulates
+
+  # ------------------------------------------------------------------
+  - id: property.inheritance
+    domain: economy
+    layer: horizon
+    question: Should wealth be inherited?
+    plain: When someone dies, should their wealth pass to their children, and how much of it?
+    short: inheritance
+    importance: 2
+    positions:
+      - id: property.inheritance.family-right
+        label: Passing wealth to your children is a basic right
+        claim: People may leave what they own to whomever they choose, above all to their children. Inheritance taxes punish saving and break up family farms and firms.
+        voiced: "The death tax taxes the same dollar twice and punishes the parent who saved instead of spending. Building something for your children is the most natural thing in the world."
+        you: You think people have a right to leave what they own to their children, and that inheritance taxes are unjust.
+        because: >
+          Working, saving and building something to hand on is among the strongest human motives, and a large
+          part of why people save at all. Inheritance of wealth is no more unjust than inheritance of talent,
+          health or a good upbringing, and no one proposes to tax those. Estate taxes fall hardest on family
+          farms and firms that must be sold to pay them, while the very rich hire lawyers. The family, not the
+          state, is the natural heir.
+        against:
+          - from: liberalism.egalitarian
+            text: >
+              No one earns their parents. A society that lets fortunes pass untouched turns equality of opportunity
+              into a lottery of birth and builds an aristocracy of heirs.
+          - from: marxism.classical
+            text: >
+              The inheritance that matters is not the family farm but the share portfolio, which passes the right
+              to command other people's labor down the generations.
+        sources:
+          - {author: Milton Friedman, title: Capitalism and Freedom, year: 1962}
+          - {author: Edmund Burke, title: Reflections on the Revolution in France, year: 1790}
+        traditions:
+          defining: [conservatism.burkean, libertarianism.ancap]
+          typical: [conservatism.fusionism, conservatism.traditionalist, libertarianism.minarchist, libertarianism.objectivist, liberalism.austrian, commonsense.look-after-your-own, conservatism.right-populism]
+          contested: [conservatism.distributism, liberalism.classical]
+          rejects: [liberalism.egalitarian, socdem.democratic-socialism, marxism.classical]
+        presupposes: []
+        excludes: [property.inheritance.heavy-tax]
+        tension: []
+        tags: []
+        analysis:
+          gains: [finance-capital, landed-capital, industrial-capital]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Untaxed bequest lets concentrated holdings of shares, land and property compound across generations,
+            so returns on capital accrue to heirs who did no work for them. Revenue lost from estates is replaced
+            by taxes on wages and consumption.
+          drain: sustains
+          law_of_value: none
+
+      - id: property.inheritance.heavy-tax
+        label: Tax large inheritances heavily so everyone starts closer to equal
+        claim: Large inheritances should be taxed heavily so that each generation starts closer to equal. What you earn is yours; what your parents earned is not.
+        voiced: "Inherited wealth is the least defensible kind. Tax what people receive, not what they earn, and let each generation make its own way."
+        you: You think large inheritances should be taxed heavily so that people's chances depend less on who their parents were.
+        because: >
+          If anything is unearned, it is inheritance. A heir has done nothing for the fortune, yet it decides
+          their schooling, career and power. In most rich countries inherited wealth is a rising share of all
+          wealth, and returns on capital outrun growth, so fortunes compound faster than wages. A progressive tax
+          on what each person receives over a lifetime, with a generous threshold, respects family bonds while
+          stopping dynasties.
+        against:
+          - from: libertarianism.minarchist
+            text: >
+              The money was taxed when it was earned. Taxing it again at death punishes thrift and the wish to
+              provide for one's children, and drives capital abroad.
+          - from: marxism.classical
+            text: >
+              Taxing estates leaves the source of new fortunes, profit on capital, untouched. Each generation of
+              owners will simply make its own.
+        sources:
+          - {author: John Stuart Mill, title: Principles of Political Economy, year: 1848, note: "proposal to cap what any one person may inherit"}
+          - {author: Anthony B. Atkinson, title: "Inequality: What Can Be Done?", year: 2015}
+          - {author: Thomas Piketty, title: Capital in the Twenty-First Century, year: 2013}
+        traditions:
+          defining: [liberalism.egalitarian, liberalism.social]
+          typical: [socdem.keynesian, socdem.nordic, socdem.democratic-socialism, liberalism.utilitarian, liberalism.progressive, socdem.fabian]
+          contested: [liberalism.classical, socdem.third-way]
+          rejects: [libertarianism.ancap, conservatism.burkean, libertarianism.minarchist]
+        presupposes: [inequality.justice.luck-unjust]
+        excludes: [property.inheritance.family-right]
+        tension: []
+        tags: []
+        analysis:
+          gains: [core-workers, professional-managerial, reserve-army]
+          pays: [finance-capital, landed-capital]
+          mechanism: >
+            A progressive tax on what heirs receive takes part of concentrated capital at each transfer and funds
+            public spending. Large fortunes avoid it through trusts and offshore holdings unless capital mobility
+            is also controlled.
+          drain: none
+          law_of_value: regulates
+
+      - id: property.inheritance.universal-endowment
+        label: Everyone should inherit; a capital grant for every young adult
+        claim: Every young person should receive a substantial sum of capital at adulthood, funded by taxes on large estates and land. Inheritance should be universal, not a privilege.
+        voiced: "Every person, at the age of twenty-one, shall be paid fifteen pounds sterling, as a compensation in part for the loss of his natural inheritance by the introduction of the system of landed property."
+        you: You think every young adult should receive a real start in life, a sum of capital paid from taxes on large fortunes and land.
+        because: >
+          The problem with inheritance is not that some people inherit but that most people don't. A young adult
+          with capital can study, start a business, refuse a bad job or put down a deposit. A citizen's
+          endowment funded by taxes on estates and land gives each person a stake and the independence that
+          property brings, the old republican ideal of a society of free citizens, without abolishing private
+          property or the market.
+        against:
+          - from: conservatism.burkean
+            text: >
+              A cheque from the state at eighteen is no substitute for a family's patrimony. It severs the bond
+              between generations that inheritance expresses, and much of it will be squandered.
+          - from: marxism.classical
+            text: >
+              A small capital sum turns workers into tiny investors in a market dominated by large ones. It
+              democratizes the language of ownership, not the ownership of production.
+        sources:
+          - {author: Thomas Paine, title: Agrarian Justice, year: 1797}
+          - {author: Bruce Ackerman and Anne Alstott, title: The Stakeholder Society, year: 1999}
+          - {author: Thomas Piketty, title: Capital and Ideology, year: 2019}
+        traditions:
+          defining: [liberalism.republican]
+          typical: [liberalism.egalitarian, libertarianism.left, libertarianism.georgist]
+          contested: [socdem.democratic-socialism, conservatism.distributism]
+          rejects: [conservatism.burkean, libertarianism.ancap]
+        presupposes: []
+        excludes: []
+        tension: [property.inheritance.family-right]
+        tags: []
+        analysis:
+          gains: [core-workers, reserve-army, petty-bourgeoisie]
+          pays: [finance-capital, landed-capital]
+          mechanism: >
+            Taxing estates and land to fund equal grants transfers part of concentrated wealth to young adults
+            as cash, much of which returns to markets as tuition, deposits and small-business capital.
+          drain: none
+          law_of_value: regulates
+
+      - id: property.inheritance.socialize-capital
+        label: Inheritance of capital ends when capital is socialized
+        claim: Inheritance is a symptom, not the cause. Once the means of production are socially owned, there is no capital to inherit, and passing on personal belongings harms no one.
+        voiced: "The disappearance of the right of inheritance will be the natural result of a social change superseding private property in the means of production, but its abolition can never be the starting point."
+        you: You think inheritance matters only because capital is privately owned, so the cure is to socialize capital, not to fight over estates.
+        because: >
+          The right of inheritance is a consequence of the existing economic order, not its foundation. Abolish
+          inheritance and leave private capital, and the new owners will be those who accumulate fastest.
+          Socialize the means of production and inheritance of capital vanishes, because there is none to pass
+          on. Making inheritance the battlefield, as Bakunin did, alarms every peasant and small saver while
+          leaving the capitalist untouched.
+        against:
+          - from: anarchism.communist
+            text: >
+              Waiting for the revolution to end inheritance leaves the dynasties in place in the meantime. An
+              immediate attack on inherited privilege wins support and weakens the class that must be overthrown.
+          - from: liberalism.egalitarian
+            text: >
+              Socialization is not on the table in any country soon; inheritance taxation is. Refusing a real
+              reform for a distant total one protects heirs today.
+        sources:
+          - {author: Karl Marx, title: Report of the General Council on the Right of Inheritance, year: 1869}
+          - {author: Karl Marx and Friedrich Engels, title: Manifesto of the Communist Party, year: 1848}
+        traditions:
+          defining: [marxism.classical]
+          typical: [marxism.ml, marxism.leninism, marxism.trotskyism, marxism.left-communism]
+          contested: [socdem.democratic-socialism]
+          rejects: [conservatism.burkean, libertarianism.ancap]
+        presupposes: [property.private.personal-vs-productive]
+        excludes: [property.inheritance.family-right]
+        tension: []
+        tags: [marxist]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, landed-capital]
+          mechanism: >
+            Ending private title to productive assets removes the inheritable claim to others' surplus labor,
+            while personal goods, homes and small savings continue to pass within families.
+          drain: breaks
+          law_of_value: abolishes
+          consciousness: hegemonic
+
+      - id: property.inheritance.abolish
+        label: Abolish the right of inheritance now
+        claim: The right to inherit wealth should be abolished outright. Each person should start life with only what society provides to all, so no class can reproduce itself by birth.
+        voiced: "As long as the right of inheritance exists, hereditary inequality of classes and economic privilege will exist. Abolish it, and the land and capital of the dead pass to the free associations of workers."
+        you: You think the right to inherit wealth should be abolished, so that no one starts life rich because of their family.
+        because: >
+          Inheritance is the mechanism by which the propertied class reproduces itself across generations and the
+          poor stay poor from birth. Its abolition attacks privilege at the moment of transfer, when no living
+          owner is expropriated: the dead own nothing. It is an immediate, concrete demand that every worker
+          understands, and it starts the conversion of private capital into collective property without
+          waiting for a single great day.
+        against:
+          - from: marxism.classical
+            text: >
+              Inheritance is an effect of private property, not its cause. Attacking it first frightens the
+              peasant who wants to leave his plot to his son, and leaves the living capitalist untouched.
+          - from: conservatism.burkean
+            text: >
+              Abolishing inheritance abolishes the family as an institution that spans generations, which is
+              exactly what its proponents intend.
+        sources:
+          - {author: Mikhail Bakunin, title: Bakunin on Anarchy, year: 1971, note: "ed. Sam Dolgoff; collects Bakunin's writings for the First International"}
+        traditions:
+          defining: []
+          typical: [anarchism.communist, anarchism.syndicalist]
+          contested: [marxism.classical, liberalism.egalitarian]
+          rejects: [conservatism.burkean, libertarianism.ancap, conservatism.cst]
+        presupposes: []
+        excludes: [property.inheritance.family-right]
+        tension: [property.inheritance.socialize-capital]
+        tags: [anarchist]
+        analysis:
+          gains: [core-workers, peasantry, reserve-army]
+          pays: [finance-capital, landed-capital, industrial-capital, petty-bourgeoisie]
+          mechanism: >
+            Transferring estates to collective bodies at death expropriates capital one generation at a time,
+            and also takes small family property, which spreads the cost to peasants and shopkeepers.
+          drain: reduces
+          law_of_value: suspends
+
+      - id: property.inheritance.fixed-shares
+        label: Divide each estate by sacred law among many heirs
+        claim: Religious law sets how an estate is shared among relatives, and limits what a person may bequeath freely. Dividing wealth among many heirs stops it piling up.
+        voiced: "God commands you concerning your children. The shares are fixed by Him, and no one may disinherit the heirs He named or will away more than a third."
+        you: You follow a religious rule that splits an estate among many relatives in fixed shares and limits what anyone may leave as they choose.
+        because: >
+          Wealth hoarded in one line becomes power over others. Islamic inheritance law requires every estate to
+          be divided among a wide circle of relatives in shares fixed by revelation, limits free bequest to a
+          third, and gives daughters and parents their portion. Over generations this breaks up great
+          concentrations without confiscation, and it binds the family together in mutual obligation.
+        against:
+          - from: feminism.islamic
+            text: >
+              Fixed shares that give a daughter half a son's portion reflect a time when men alone bore
+              maintenance duties. Read in context, the law demands equal shares now.
+          - from: liberalism.classical
+            text: >
+              Forced shares fragment farms and firms into unworkable pieces and deny people the right to dispose of
+              what they earned.
+        sources:
+          - {author: Muhammad Baqir al-Sadr, title: Iqtisaduna (Our Economics), year: 1961}
+          - {author: Sayyid Qutb, title: Social Justice in Islam, year: 1949}
+        traditions:
+          defining: []
+          typical: [religious.islamism-brotherhood, religious.islamism-khomeinist, religious.salafism-quietist, religious.islamic-socialism, religious.post-islamism]
+          contested: [feminism.islamic]
+          rejects: [liberalism.classical, libertarianism.ancap]
+        presupposes: [property.private.trust-from-god]
+        excludes: []
+        tension: []
+        tags: [religious, islamic]
+        analysis:
+          gains: [petty-bourgeoisie, peasantry]
+          pays: [landed-capital]
+          mechanism: >
+            Mandatory division among many heirs fragments estates and slows the concentration of land and capital
+            in one line, while family waqf endowments and corporate structures have been used to evade it.
+          drain: none
+          law_of_value: none
+
+      - id: property.inheritance.modest-yes-dynasties-no
+        label: Leaving something to your kids is fine; dynasties are not
+        claim: Ordinary families should be able to pass on a house and savings without tax. Billion-dollar fortunes handed down are a different thing.
+        voiced: "I want to leave the house to my daughter. That's not the same as some heir who never worked a day sitting on billions."
+        you: You want ordinary families to pass on homes and savings freely but object to enormous fortunes being handed down.
+        because: >
+          Most people's inheritance is a house, a bit of money and some keepsakes: the fruits of a life of work
+          meant for the people they loved. That deserves respect. A handful of families pass down fortunes that
+          buy politicians and newspapers. Treating the two as one thing, whether to tax both or protect both,
+          is what lets the very rich hide behind the family home.
+        against:
+          - from: libertarianism.ancap
+            text: >
+              There is no principled line between a house and a fortune. Once you accept the state may take one
+              above a threshold, the threshold will fall.
+          - from: liberalism.egalitarian
+            text: >
+              Even a house is a huge head start where housing is scarce, and modest inheritances widen the gap
+              between owners and renters in every generation.
+        sources:
+          - {author: Michael J. Graetz and Ian Shapiro, title: "Death by a Thousand Cuts: The Fight over Taxing Inherited Wealth", year: 2005}
+        traditions:
+          defining: []
+          typical: [commonsense.look-after-your-own, commonsense.self-reliance, commonsense.rigged, socdem.labourism, conservatism.one-nation]
+          contested: [conservatism.right-populism]
+          rejects: [libertarianism.ancap]
+        presupposes: []
+        excludes: []
+        tension: [property.inheritance.family-right, property.inheritance.heavy-tax]
+        tags: [commonsense]
+        analysis:
+          gains: [petty-bourgeoisie, core-workers, professional-managerial]
+          pays: [finance-capital]
+          mechanism: >
+            A high exemption with steep rates on very large estates spares homeowning workers and taxes dynastic
+            capital. Graetz and Shapiro show that the same intuition was mobilized against all estate taxation
+            once the tax was presented as a threat to the family home.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Whether homeownership ties workers to the interests of property owners or merely secures their
+            household is argued among Marxists.
+          consciousness: economic-corporate
+
+  # ------------------------------------------------------------------
+  - id: property.commons
+    domain: economy
+    layer: horizon
+    question: What should be held in common?
+    plain: Which things, like water, forests, parks, knowledge or the air, should belong to no one and everyone?
+    short: the commons
+    importance: 2
+    positions:
+      - id: property.commons.enclose
+        label: Commons get ruined; give them owners
+        claim: Resources held by no one in particular get overused and neglected. Assigning clear property rights, private where possible, is the way to protect them.
+        voiced: "Freedom in a commons brings ruin to all. What everyone owns, no one cares for."
+        you: You think things held in common tend to be overused, and that giving them clear owners is the best way to protect them.
+        because: >
+          A herdsman on a shared pasture gains the whole benefit of adding a cow and bears only a fraction of
+          the cost of overgrazing, so every herdsman adds cows until the pasture dies. The same logic empties
+          fisheries and fouls rivers. Property rights give someone the incentive to conserve: an owner who
+          overgrazes destroys his own asset. Tradable quotas in fisheries have saved stocks that open access was
+          destroying.
+        against:
+          - from: anarchism.communalism
+            text: >
+              Hardin described open access, not a commons. Real commons had rules, and Ostrom documented
+              hundreds that lasted centuries. They were destroyed not by herdsmen but by enclosure.
+          - from: marxism.classical
+            text: >
+              The 'tragedy' story was told to justify the enclosures that drove peasants off the land and into the
+              factories. Private owners also exhaust resources whenever it pays to.
+        sources:
+          - {author: Garrett Hardin, title: The Tragedy of the Commons, year: 1968}
+          - {author: Harold Demsetz, title: Toward a Theory of Property Rights, year: 1967}
+        traditions:
+          defining: [liberalism.chicago]
+          typical: [libertarianism.ancap, libertarianism.minarchist, liberalism.austrian, liberalism.classical, ecology.green-growth, ecology.neo-malthusian]
+          contested: [liberalism.technocratic]
+          rejects: [anarchism.communalism, nationalism.indigenous-sovereignty, marxism.classical]
+        presupposes: []
+        excludes: [property.commons.self-governed, property.commons.defend-against-enclosure]
+        tension: []
+        tags: []
+        analysis:
+          gains: [landed-capital, finance-capital, industrial-capital]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >
+            Converting shared fisheries, forests and pastures into private or tradable rights hands them to those
+            able to buy the rights, usually firms with capital, and turns former users into buyers or wage labor.
+          drain: sustains
+          law_of_value: extends
+
+      - id: property.commons.self-governed
+        label: Communities can govern commons themselves, by their own rules
+        claim: Communities that use shared resources can and often do manage them well through rules they make themselves, without either private owners or the state.
+        voiced: "Neither the state nor the market is uniformly successful in enabling individuals to sustain long-term use of natural resources. Look at what the users themselves have built."
+        you: You think the people who use a shared resource can usually govern it well by their own rules, without needing a private owner or the state.
+        because: >
+          Swiss alpine meadows, Spanish irrigation huertas and Japanese village forests have been held in common
+          and kept healthy for centuries. They work because the users set clear boundaries, make rules fitted to
+          local conditions, monitor each other, sanction cheaters in graduated steps, and resolve disputes
+          cheaply. Imposing private title or state control on such systems has often destroyed them. Commons are
+          an institutional achievement, not a tragedy.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Self-governance works in small, stable, closed communities. It does not scale to oceans, the
+              atmosphere or anonymous cities, where property rights and markets are needed.
+          - from: marxism.ml
+            text: >
+              Local commons are islands inside a capitalist sea. Without power over the state and the economy,
+              they survive only where capital has no interest in them yet.
+        sources:
+          - {author: Elinor Ostrom, title: "Governing the Commons: The Evolution of Institutions for Collective Action", year: 1990}
+        traditions:
+          defining: []
+          typical: [communitarianism, anarchism.communalism, ecology.degrowth, ecology.environmental-justice, anarchism.mutualist, conservatism.distributism]
+          contested: [liberalism.classical, anarchism.communist]
+          rejects: [liberalism.chicago]
+        presupposes: []
+        excludes: [property.commons.enclose]
+        tension: [property.commons.public-ownership]
+        tags: [commons]
+        analysis:
+          gains: [peasantry, petty-bourgeoisie]
+          pays: [landed-capital]
+          mechanism: >
+            Recognizing users' own rules keeps forests, fisheries and irrigation out of the land market and in the
+            hands of the local users, who retain the resource rent. It leaves the surrounding market economy as it is.
+          drain: none
+          law_of_value: suspends
+
+      - id: property.commons.public-ownership
+        label: Essentials should be public services owned by the state
+        claim: Water, energy, rail, health and education should be owned by the public through the state and run as services for everyone, not for profit.
+        voiced: "Private affluence and public squalor. The things everyone needs should belong to everyone, through the state they elect."
+        you: You think essentials like water, energy, transport, health and schools should be publicly owned and run as services, not for profit.
+        because: >
+          Where a service is a natural monopoly or a basic need, private ownership means paying shareholders a
+          return for something people cannot refuse. Public ownership lets prices reflect cost, investment
+          follow need, and the whole country be served, not only the profitable parts. The privatizations of the
+          1980s and 1990s raised prices, cut investment and paid dividends from borrowed money. Public goods
+          built the welfare states.
+        against:
+          - from: liberalism.chicago
+            text: >
+              State monopolies serve their own workforce and politicians. Without competition and the threat of
+              loss, they stagnate, and consumers have nowhere else to go.
+          - from: anarchism.communist
+            text: >
+              Ownership by the state is ownership by its officials. The users and the workers of a service should
+              run it, not a ministry that answers to the same class as the old owners.
+        sources:
+          - {author: John Kenneth Galbraith, title: The Affluent Society, year: 1958}
+          - {author: R. H. Tawney, title: Equality, year: 1931}
+        traditions:
+          defining: [socdem.keynesian, socdem.labourism]
+          typical: [socdem.nordic, socdem.democratic-socialism, socdem.fabian, marxism.ml, nationalism.nasserism, nationalism.peronism, conservatism.gaullism, marxism.arab-socialism]
+          contested: [socdem.third-way, conservatism.one-nation, liberalism.ordoliberal]
+          rejects: [liberalism.chicago, libertarianism.ancap, libertarianism.minarchist]
+        presupposes: []
+        excludes: [property.commons.enclose]
+        tension: [property.commons.self-governed]
+        tags: []
+        analysis:
+          gains: [core-workers, reserve-army, professional-managerial]
+          pays: [finance-capital]
+          mechanism: >
+            State ownership of utilities removes dividend and interest payments to private owners from water,
+            power and transport prices, lowering costs for households and for employers who use them. Revenue and
+            control pass to the state and its managers.
+          drain: none
+          law_of_value: suspends
+          disputed: >
+            Whether public ownership within a capitalist economy is a step toward socialism or a service to
+            capital (cheap inputs, socialized costs) is an old dispute, from the Fabians against the left communists.
+
+      - id: property.commons.expand-to-communism
+        label: Expand the commons until it is the economy
+        claim: The commons is not a leftover to protect but the seed of a new economy. Shared production and free access should spread until they replace both market and state.
+        voiced: "The common is not the public and not the private. It is what we produce together and share, and it is already the basis of production. Capital only captures it."
+        you: You see shared, freely accessible resources as the seed of a different economy, to be expanded until they replace both market and state.
+        because: >
+          Today's wealth is produced by networks of cooperation: knowledge, languages, care, code, cities.
+          Capital increasingly does not organize this production but encloses and rents it. Every space of
+          free access, from libraries to free software to occupied land, shows that people produce without a
+          boss or a price. The task is to defend and multiply these spaces and link them, until access by need
+          becomes the rule rather than the exception.
+        against:
+          - from: marxism.ml
+            text: >
+              Commons that never take power stay marginal and are absorbed. Capital is perfectly happy for unpaid
+              people to produce what it then sells.
+          - from: liberalism.austrian
+            text: >
+              Free access to goods that are scarce means queues, rationing or depletion. Only prices tell people
+              how to economize on what cannot be supplied to all.
+        sources:
+          - {author: Michael Hardt and Antonio Negri, title: Commonwealth, year: 2009}
+          - {author: Peter Kropotkin, title: The Conquest of Bread, year: 1892}
+          - {author: Kohei Saito, title: "Marx in the Anthropocene: Towards the Idea of Degrowth Communism", year: 2023}
+        traditions:
+          defining: [marxism.autonomism]
+          typical: [anarchism.communist, marxism.degrowth-communism, anarchism.communalism, technology.l-acc]
+          contested: [marxism.ecosocialism, marxism.council-communism]
+          rejects: [liberalism.austrian, liberalism.chicago, marxism.ml]
+        presupposes: []
+        excludes: [property.commons.enclose]
+        tension: []
+        tags: [commons]
+        analysis:
+          gains: [core-workers, reserve-army, professional-managerial]
+          pays: [finance-capital]
+          mechanism: >
+            Free-access provision removes goods from sale and so from capital's revenue; its reach depends on
+            whether commons can cover material production, energy and housing, where capital costs are large.
+          drain: none
+          law_of_value: abolishes
+          disputed: >
+            Leninists and many Third Worldists see commons-led transition as a core-country project that ignores
+            state power and the periphery; autonomists answer that the multitude is global.
+
+      - id: property.commons.defend-against-enclosure
+        label: Stop the theft of the commons that never ended
+        claim: Capitalism began by fencing off common land, and it still grows by seizing water, forests, seeds and land from peasants and indigenous peoples. The first task is to stop it.
+        voiced: "Enclosure did not end in the eighteenth century. It is happening today in the Amazon, the Niger Delta and every privatized water system in the South."
+        you: You see the taking of common land, water and forests as an ongoing theft that has to be stopped, especially where it hits peasants and indigenous peoples.
+        because: >
+          The history of capital is written in letters of blood and fire: commons were enclosed, peasants driven
+          off, and the landless turned into wage workers. That process never stopped. Water privatization,
+          biopiracy, land grabs and mining concessions continue it, mainly in the South and mainly against women
+          and indigenous peoples, who hold the remaining commons. Defending these is not nostalgia. It defends
+          livelihoods that do not yet depend on a wage.
+        against:
+          - from: liberalism.technocratic
+            text: >
+              Many traditional commons trap people in subsistence poverty. Clear property rights with fair
+              compensation can bring credit, investment and better lives, if done transparently.
+          - from: marxism.ml
+            text: >
+              Defending peasant commons is necessary but defensive. Without a program for industrialization and
+              state power, the defenders win battles and lose the war.
+        sources:
+          - {author: Karl Marx, title: "Capital, Volume I", year: 1867, note: "Part VIII, so-called primitive accumulation"}
+          - {author: Silvia Federici, title: "Caliban and the Witch: Women, the Body and Primitive Accumulation", year: 2004}
+          - {author: David Harvey, title: The New Imperialism, year: 2003}
+        traditions:
+          defining: [ecology.environmental-justice]
+          typical: [nationalism.indigenous-sovereignty, zapatismo, feminism.materialist, marxism.third-worldism, feminism.decolonial, religious.liberation-theology, anarchism.green]
+          contested: [marxism.ml, marxism.maoism]
+          rejects: [liberalism.chicago, liberalism.technocratic]
+        presupposes: []
+        excludes: [property.commons.enclose]
+        tension: []
+        tags: [periphery]
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: [comprador-capital, industrial-capital, finance-capital]
+          mechanism: >
+            Blocking privatization of water, forests and seeds keeps peripheral producers outside full dependence
+            on wages and purchased inputs, which raises the floor under what capital must pay for their labor and
+            denies extractive firms cheap access.
+          drain: reduces
+          law_of_value: suspends
+
+      - id: property.commons.universal-destination
+        label: Creation is a common gift meant for all
+        claim: The earth and its goods were given by God to all people. The climate, water and the land's fruits are common goods, and private ownership must serve that universal purpose.
+        voiced: "The climate is a common good, belonging to all and meant for all. The earth is a shared inheritance, whose fruits are meant to benefit everyone."
+        you: You believe the earth and its goods were given to all people, so things like climate, water and land are common goods that private ownership must serve.
+        because: >
+          God created the world for the whole human family, now and in future generations. Private property
+          is a secondary right, legitimate only as a means to that universal destination. Access to clean water
+          is a basic human right. A global economy that treats the earth as something to exploit without limit
+          and leaves the poor without water or land contradicts the purpose for which goods exist.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Good intentions about 'common goods' license bureaucracies to manage what they cannot understand.
+              Property and prices protect the earth better than encyclicals.
+          - from: marxism.classical
+            text: >
+              The Church has preached the universal destination of goods for centuries alongside its own landed
+              estates. Without naming the class that owns, the teaching becomes an appeal to its conscience.
+        sources:
+          - {author: Francis, title: Laudato si', year: 2015}
+          - {author: Second Vatican Council, title: Gaudium et Spes, year: 1965}
+        traditions:
+          defining: [conservatism.cst]
+          typical: [religious.liberation-theology, conservatism.christian-democracy, religious.christian-socialism, conservatism.distributism]
+          contested: [conservatism.evangelical-right, conservatism.integralism]
+          rejects: [libertarianism.ancap, libertarianism.objectivist]
+        presupposes: [property.private.social-function]
+        excludes: [property.commons.enclose]
+        tension: []
+        tags: [catholic]
+        analysis:
+          gains: [peasantry, peripheral-workers, reserve-army]
+          pays: [landed-capital]
+          mechanism: >
+            Subordinating title to a universal destination legitimates expropriation of idle land and public
+            provision of water; it also justifies charity that relieves the poor without changing who owns.
+          drain: softens
+          law_of_value: regulates
+
+      - id: property.commons.not-for-sale
+        label: Some things should never be for sale
+        claim: Some things should never be bought and sold, such as water, air, blood, votes, beaches and a child's schooling. Markets should be kept out of them.
+        voiced: "Some things money can't buy, and some things money shouldn't buy. You don't sell your vote, your kidney or the beach."
+        you: You think there are some things, like water, votes, organs and public beaches, that should never be bought and sold.
+        because: >
+          Putting a price on something changes what it is. Paying children to read teaches them that reading is a
+          chore; selling citizenship makes it a commodity rather than a bond; selling blood draws the poorest
+          and drives out donors. Most people sense that a society where everything is for sale corrupts the
+          goods it sells and splits people into those who can pay and those who cannot. Drawing limits on
+          markets is a moral choice, not an economic one.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Refusing to price scarce goods does not make them free; it rations them by queue, connection or
+              black market. Repugnance is not an argument.
+          - from: marxism.classical
+            text: >
+              Fencing off a few sacred goods leaves the decisive commodity, labor power, for sale. A list of things
+              not for sale is a moral garnish on a market society.
+        sources:
+          - {author: Michael J. Sandel, title: "What Money Can't Buy: The Moral Limits of Markets", year: 2012}
+          - {author: Richard M. Titmuss, title: "The Gift Relationship: From Human Blood to Social Policy", year: 1970}
+        traditions:
+          defining: [communitarianism]
+          typical: [commonsense.live-and-let-live, socdem.labourism, conservatism.postliberal, conservatism.cst, liberalism.social]
+          contested: [socdem.third-way]
+          rejects: [liberalism.chicago, libertarianism.ancap]
+        presupposes: []
+        excludes: []
+        tension: []
+        tags: [commonsense]
+        analysis:
+          gains: [core-workers, reserve-army]
+          pays: []
+          mechanism: >
+            Barring markets in a short list of goods spares the poorest from selling organs, blood or votes and keeps
+            some services publicly provided, while leaving wage labor and production for profit as they are.
+          drain: none
+          law_of_value: regulates
+
+  # ------------------------------------------------------------------
+  - id: firm.ownership
+    domain: economy
+    layer: horizon
+    question: Who should own the means of production?
+    plain: Who should own the factories, offices, farms and shops where people work?
+    short: ownership of firms
+    importance: 3
+    positions:
+      - id: firm.ownership.private-investors
+        label: Private investors should own firms and run them for profit
+        claim: Firms should be owned by private investors who put up the capital and bear the risk, and managed to make them profitable.
+        voiced: "There is one and only one social responsibility of business: to use its resources and engage in activities designed to increase its profits while staying within the rules of the game."
+        you: You think firms should be owned by private investors and run to make a profit.
+        because: >
+          Someone must decide what to produce and risk losing their money if they're wrong. Investors who own the
+          residual profit have the strongest reason to see the firm well run, and the stock market lets capital
+          move from failing firms to growing ones. Workers get a fixed wage without bearing the risk of loss.
+          Every alternative, state, cooperative or stakeholder control, dilutes responsibility until no one
+          answers for the use of capital.
+        against:
+          - from: marxism.classical
+            text: >
+              The investor's 'risk' is of losing capital that came from others' labor; the worker's is of losing
+              their livelihood. Profit is not a reward for risk but unpaid labor appropriated by ownership.
+          - from: conservatism.cst
+            text: >
+              A firm is a community of persons, not a property to be milked for shareholders. Running it for
+              profit alone treats workers as instruments and violates the priority of labor over capital.
+        sources:
+          - {author: Milton Friedman, title: "The Social Responsibility of Business Is to Increase Its Profits", year: 1970}
+          - {author: Michael C. Jensen and William H. Meckling, title: "Theory of the Firm: Managerial Behavior, Agency Costs and Ownership Structure", year: 1976}
+        traditions:
+          defining: [liberalism.chicago, libertarianism.ancap]
+          typical: [liberalism.austrian, libertarianism.minarchist, libertarianism.objectivist, liberalism.classical, conservatism.fusionism, socdem.third-way, liberalism.technocratic]
+          contested: [liberalism.ordoliberal, conservatism.christian-democracy]
+          rejects: [marxism.classical, marxism.ml, anarchism.syndicalist, conservatism.cst, conservatism.distributism]
+        presupposes: [capitalism.nature.free-exchange]
+        excludes: [firm.ownership.state, firm.ownership.commons-community]
+        tension: []
+        tags: []
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [core-workers, peripheral-workers, reserve-army]
+          mechanism: >
+            Investor ownership directs the firm's surplus to shareholders as dividends and buybacks and gives them
+            power to close, relocate or outsource. Production moves to where labor is cheapest, and the difference
+            between peripheral wages and core prices returns to core investors.
+          drain: sustains
+          law_of_value: extends
+
+      - id: firm.ownership.worker-cooperatives
+        label: Firms owned and run by the people who work in them
+        claim: Each firm should be owned and governed by the people who work in it, one member one vote, sharing the surplus. Firms would still trade with each other.
+        voiced: "Why should those who do the work have no say in how the work is done or what happens to what they produce? One worker, one vote."
+        you: You think each firm should be owned and run democratically by the people who work there.
+        because: >
+          Workers spend most of their waking lives at work, yet have no vote on what happens there. Cooperatives
+          like Mondragón show that worker-owned firms can be competitive, more stable in downturns and fairer in
+          pay. When workers own the firm, the surplus goes to those who create it, decisions to close or move
+          are made by those who would lose their jobs, and work becomes a school of self-government.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Cooperatives find it hard to raise capital, tend to underinvest and hire too few people, since every
+              new member dilutes the surplus. That is why they remain rare where they are perfectly legal.
+          - from: marxism.left-communism
+            text: >
+              Cooperatives competing in a market must obey its laws: cut costs, beat rivals, exploit themselves.
+              They change the owner, not the system of commodity production.
+        sources:
+          - {author: Karl Marx, title: Inaugural Address of the International Working Men's Association, year: 1864}
+          - {author: Richard D. Wolff, title: "Democracy at Work: A Cure for Capitalism", year: 2012}
+          - {author: David Ellerman, title: Property and Contract in Economics, year: 1992}
+        traditions:
+          defining: [anarchism.mutualist, marxism.market-socialism]
+          typical: [socdem.democratic-socialism, conservatism.distributism, anarchism.syndicalist, religious.christian-socialism, liberalism.republican, anarchism.individualist]
+          contested: [anarchism.communist, marxism.classical, conservatism.cst]
+          rejects: [liberalism.chicago, libertarianism.objectivist, marxism.left-communism]
+        presupposes: []
+        excludes: [firm.ownership.private-investors]
+        tension: [firm.ownership.state]
+        tags: [economic-democracy]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Worker ownership routes the firm's surplus to its members rather than shareholders and puts closure and
+            relocation decisions in their hands. Market competition between cooperatives keeps price pressure on
+            pay and hours.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            Market socialists treat cooperatives as the cell of socialism; left communists and many Leninists see
+            collective capitalism. Yugoslav self-management, where social property was managed by workers' councils,
+            is cited by both sides.
+          consciousness: class-economic
+
+      - id: firm.ownership.public-municipal
+        label: Utilities and local services owned by towns and cities
+        claim: Local services and utilities, such as water, energy, transport and housing, should be owned and run by municipalities and other local public bodies.
+        voiced: "Gas and water socialism. The town that owns its tramways, its gasworks and its houses keeps the profits for its people."
+        you: You think local services like water, energy, transport and housing should be owned and run by your town or city.
+        because: >
+          The services a town depends on are natural monopolies. Owned locally, they can be run for residents
+          rather than distant shareholders, with surpluses reinvested in the community and decisions made by
+          people who live with the results. Municipal ownership built the gasworks, tramways and council housing
+          of the early twentieth century and is coming back through remunicipalization of water and energy across
+          Europe and Latin America.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Local monopolies are captured by local politicians and unions; they lack the scale and capital for
+              modern infrastructure and pass their deficits to taxpayers.
+          - from: marxism.leninism
+            text: >
+              Gas-and-water socialism leaves the commanding heights in capital's hands. Islands of municipal
+              ownership survive only as long as national capital allows.
+        sources:
+          - {author: George Bernard Shaw (ed.), title: Fabian Essays in Socialism, year: 1889}
+          - {author: Murray Bookchin, title: "The Next Revolution: Popular Assemblies and the Promise of Direct Democracy", year: 2015}
+        traditions:
+          defining: [socdem.fabian]
+          typical: [socdem.labourism, socdem.democratic-socialism, anarchism.communalism, anarchism.confederalism, socdem.nordic, socdem.left-populism]
+          contested: [conservatism.one-nation, conservatism.christian-democracy]
+          rejects: [liberalism.chicago, libertarianism.ancap]
+        presupposes: []
+        excludes: []
+        tension: []
+        tags: []
+        analysis:
+          gains: [core-workers, reserve-army]
+          pays: [finance-capital]
+          mechanism: >
+            Municipal ownership removes private returns from utility and rent bills and keeps surpluses in local
+            budgets; it is limited by municipal borrowing rules and fiscal dependence on national governments.
+          drain: none
+          law_of_value: suspends
+          consciousness: class-economic
+
+      - id: firm.ownership.state
+        label: The state owns the commanding heights, or the whole productive economy
+        claim: The main means of production, such as heavy industry, energy, banks and transport, or the whole economy, should be owned by the state and run by plan.
+        voiced: "The commanding heights must be in the hands of the workers' state. Without that, there is no planning and no socialism, only capitalism with a red flag."
+        you: You think the main industries, or all of them, should be owned by the state and run according to a plan.
+        because: >
+          Only an owner on the scale of the whole economy can direct investment toward what the country needs
+          rather than what pays: steel before luxury goods, railways to poor regions, power plants that private
+          capital would not build. The Soviet Union industrialized in two decades this way, and every late
+          industrializer, from Korea to Algeria, relied on state enterprise. Who controls the state decides whose
+          interests the state firm serves, which is why the class character of the state comes first.
+        against:
+          - from: liberalism.austrian
+            text: >
+              A state owner has no market price for capital goods and no risk of bankruptcy, so it cannot know
+              whether it is creating or destroying value. The result is shortage and waste.
+          - from: anarchism.syndicalist
+            text: >
+              State ownership replaces the boss with a ministry. Workers in a state factory still sell their labor
+              and obey orders; the surplus is appropriated by a bureaucracy instead of a shareholder.
+        sources:
+          - {author: V. I. Lenin, title: The Immediate Tasks of the Soviet Government, year: 1918}
+          - {author: Joseph Stalin, title: Economic Problems of Socialism in the USSR, year: 1952}
+        traditions:
+          defining: [marxism.ml]
+          typical: [marxism.leninism, marxism.hoxhaism, marxism.juche, marxism.trotskyism, marxism.maoism, nationalism.nasserism, nationalism.baathism, marxism.arab-socialism, socdem.labourism]
+          contested: [marxism.scc, socdem.democratic-socialism, nationalism.kemalism, conservatism.gaullism]
+          rejects: [liberalism.chicago, libertarianism.ancap, anarchism.syndicalist, marxism.council-communism, conservatism.distributism]
+        presupposes: []
+        excludes: [firm.ownership.private-investors]
+        tension: [firm.ownership.worker-cooperatives]
+        tags: []
+        analysis:
+          gains: [core-workers, peasantry, professional-managerial]
+          pays: [finance-capital, industrial-capital, comprador-capital]
+          mechanism: >
+            State title moves profit and investment decisions from private owners to the state budget, which can
+            direct them to industrialization, employment and social provision. The class content depends on who
+            controls the state: under a workers' party it can suspend production for profit; under a bourgeois
+            government it can socialize losses and sell assets back cheaply.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            Marxist-Leninists treat state ownership under a communist party as socialist property; Trotskyists as a
+            workers' state deformed by bureaucracy; Tony Cliff and Bettelheim as state capitalism; Third Worldists
+            weigh it by whether it delinked from the world market.
+          consciousness: hegemonic
+
+      - id: firm.ownership.commons-community
+        label: Production held in common by communities, owned by no one
+        claim: Workplaces and productive resources should belong to no one and be held in common, managed together by the people who work there and the communities that use what they make.
+        voiced: "The factory belongs to no one: to those who work in it and those who need what it makes, together. No shareholder, no ministry, no boss."
+        you: You think workplaces should belong to no one, managed together by those who work there and the communities they serve.
+        because: >
+          Cooperatives still own their firm against everyone else, and states own it in the name of people who
+          have no say. A commons is different: production is held by the community and organized in assemblies
+          of producers and users, as in revolutionary Catalonia, the Zapatista communities and the free software
+          projects. Distribution follows need, not ownership. This is the only form of ownership that does not
+          reproduce a class with its own interest in the means of production.
+        against:
+          - from: marxism.ml
+            text: >
+              Assemblies cannot run steel mills, power grids and supply chains across a continent. Without
+              central coordination, communal production fragments into localism and shortage.
+          - from: liberalism.austrian
+            text: >
+              Property that belongs to no one is used carelessly and invested in by no one. Communal production
+              has never lasted beyond small groups or revolutionary emergencies.
+        sources:
+          - {author: Peter Kropotkin, title: The Conquest of Bread, year: 1892}
+          - {author: Yochai Benkler, title: "Coase's Penguin, or, Linux and The Nature of the Firm", year: 2002}
+          - {author: Abdullah Öcalan, title: Democratic Confederalism, year: 2011}
+        traditions:
+          defining: [anarchism.communist]
+          typical: [zapatismo, anarchism.confederalism, anarchism.communalism, anarchism.syndicalist, marxism.autonomism, anarchism.platformist]
+          contested: [marxism.council-communism, marxism.degrowth-communism]
+          rejects: [liberalism.austrian, libertarianism.ancap, marxism.ml]
+        presupposes: []
+        excludes: [firm.ownership.private-investors]
+        tension: [firm.ownership.state]
+        tags: [anarchist]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry, reserve-army]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Common holding with distribution by need removes both profit and the wage, so no group holds a claim on
+            the surplus. Where it has existed, its survival has depended on armed defense and on links to wider
+            supply.
+          drain: breaks
+          law_of_value: abolishes
+          consciousness: hegemonic
+
+      - id: firm.ownership.small-proprietors
+        label: Productive property spread widely among families and small owners
+        claim: Productive property should be spread as widely as possible among families, farmers, artisans and small businesses, not concentrated in corporations or the state.
+        voiced: "Too much capitalism does not mean too many capitalists, but too few. We want a society where most families own the land, the shop or the tools by which they live."
+        you: You want productive property spread widely, with most families owning their own farm, shop or trade, rather than big corporations or the state owning everything.
+        because: >
+          Both big capital and the socialist state reduce people to employees, dependent on a master for their
+          bread, which Belloc called the servile state. A society of owners is a society of free families who
+          answer to no boss, pass on their trade, and have a stake in their town. Policy should favor the small
+          over the large: break up monopolies, tax chain stores, lend to small owners, and protect guilds and
+          cooperatives.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Small firms are less productive, pay less and innovate less. Protecting them makes everyone poorer
+              and locks workers into family businesses with no rights.
+          - from: marxism.classical
+            text: >
+              Competition concentrates capital whatever the law says. The small owner is crushed between monopoly
+              and labor, and distributism asks history to run backward.
+        sources:
+          - {author: G. K. Chesterton, title: The Outline of Sanity, year: 1926}
+          - {author: Hilaire Belloc, title: The Servile State, year: 1912}
+          - {author: Wilhelm Röpke, title: A Humane Economy, year: 1958}
+        traditions:
+          defining: [conservatism.distributism]
+          typical: [conservatism.cst, conservatism.traditionalist, nationalism.gandhian, conservatism.paleo, commonsense.self-reliance, conservatism.right-populism, liberalism.ordoliberal]
+          contested: [anarchism.mutualist, conservatism.national, nationalism.peronism]
+          rejects: [liberalism.chicago, marxism.ml]
+        presupposes: []
+        excludes: []
+        tension: [firm.ownership.private-investors, firm.ownership.state]
+        tags: [distributist]
+        analysis:
+          gains: [petty-bourgeoisie, peasantry]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Antimonopoly law, credit to small owners and taxes on chains shift market share from large firms to
+            family businesses. Employees of small firms, often unorganized, gain little, and protection is paid for
+            in higher prices.
+          drain: none
+          law_of_value: regulates
+          consciousness: economic-corporate
+
+      - id: firm.ownership.codetermination
+        label: Private firms, but workers share in governing them
+        claim: Firms can stay privately owned, but workers should hold seats on boards and works councils with real rights, so capital and labor govern the firm together.
+        voiced: "The firm is a community of capital and labor. Those who invest their lives in it must have a voice next to those who invest their money."
+        you: You think firms can remain privately owned but workers should share in governing them through board seats and works councils.
+        because: >
+          Labor takes priority over capital because it is the work of persons, while capital is a set of
+          things. Workers who give their lives to a firm deserve a share in governing it. German codetermination
+          shows that this improves cooperation, reduces strikes and favors long-term investment over quick
+          returns, without the upheaval of expropriation. It turns the firm from an object of property into a
+          community of work.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Workers on boards protect existing jobs at the expense of investment and new hiring. Owners who bear
+              the risk must control the decisions.
+          - from: marxism.leninism
+            text: >
+              Codetermination makes union leaders co-managers of exploitation. It binds workers to their own firm's
+              competitiveness against workers elsewhere.
+        sources:
+          - {author: John Paul II, title: Laborem Exercens, year: 1981}
+          - {author: Isabelle Ferreras, title: "Firms as Political Entities: Saving Democracy through Economic Bicameralism", year: 2017}
+        traditions:
+          defining: [conservatism.christian-democracy, conservatism.cst]
+          typical: [socdem.nordic, socdem.keynesian, liberalism.social, socdem.third-way, conservatism.one-nation]
+          contested: [liberalism.ordoliberal, socdem.democratic-socialism]
+          rejects: [liberalism.chicago, libertarianism.ancap, marxism.leninism, anarchism.syndicalist]
+        presupposes: [property.private.social-function]
+        excludes: []
+        tension: [firm.ownership.private-investors]
+        tags: []
+        analysis:
+          gains: [core-workers, industrial-capital]
+          pays: [finance-capital]
+          mechanism: >
+            Board seats and works councils give core employees leverage over layoffs and investment, often
+            trading wage restraint for job security. The firm's suppliers and offshore workers have no seats, so
+            cost pressure can shift to them.
+          drain: none
+          law_of_value: regulates
+          consciousness: economic-corporate
+
+      - id: firm.ownership.wage-earner-funds
+        label: Socialize ownership gradually through collective funds
+        claim: Ownership of large firms should pass gradually to workers collectively, through funds that receive a share of profits as new stock each year.
+        voiced: "We want to deprive capital owners of the power they exercise by virtue of ownership. All experience shows that influence and control are not enough. Ownership plays a decisive role."
+        you: You want ownership of big firms to shift step by step to workers collectively, through funds that receive a share of each year's profits as stock.
+        because: >
+          Wage restraint in a solidaristic wage system leaves extra profit in the most efficient firms; that profit
+          should not simply enrich their owners. Paying a share of it each year into collective funds as newly
+          issued shares transfers ownership to workers without confiscation or upheaval. Within a few decades
+          the funds would control the largest firms. Social democracy that stops at welfare leaves capital's
+          power intact; this finishes the job by peaceful means.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Diluting owners every year drives capital away and makes union-run funds the masters of industry.
+              Sweden's employers mobilized against the plan, and its watered-down version was abolished in 1991.
+          - from: marxism.leninism
+            text: >
+              The fate of the Meidner plan is the proof: when reform reaches ownership, capital fights, and a party
+              that will not fight back retreats.
+        sources:
+          - {author: Rudolf Meidner, title: "Employee Investment Funds: An Approach to Collective Capital Formation", year: 1978}
+        traditions:
+          defining: [socdem.democratic-socialism]
+          typical: [socdem.nordic, marxism.market-socialism]
+          contested: [socdem.keynesian, socdem.labourism]
+          rejects: [liberalism.chicago, socdem.third-way, libertarianism.ancap]
+        presupposes: []
+        excludes: []
+        tension: [firm.ownership.private-investors]
+        tags: [social-democratic]
+        analysis:
+          gains: [core-workers]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Annual share issues to collective funds dilute private owners and transfer voting control of large firms
+            to worker-controlled funds. Those funds then hold claims on overseas subsidiaries and supply chains,
+            so the drain's direction depends on how they invest.
+          drain: none
+          law_of_value: regulates
+          consciousness: class-economic

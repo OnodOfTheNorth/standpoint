@@ -1,0 +1,20 @@
+{
+  "name": "@standpoint/mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "bin": { "standpoint-mcp": "./dist/standpoint-mcp.mjs" },
+  "scripts": {
+    "build": "esbuild src/server.ts --bundle --platform=node --format=esm --target=node20 --outfile=dist/standpoint-mcp.mjs --banner:js=\"#!/usr/bin/env node\nimport { createRequire as __cr } from 'module'; const require = __cr(import.meta.url);\"",
+    "dev": "tsx src/server.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.4.0",
+    "@standpoint/content": "workspace:*",
+    "@standpoint/core": "workspace:*",
+    "@standpoint/ontology": "workspace:*",
+    "zod": "^4.2.0"
+  },
+  "devDependencies": { "esbuild": "^0.24.2" }
+}

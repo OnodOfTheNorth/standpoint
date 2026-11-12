@@ -165,13 +165,20 @@ export function serves(b: Bundle, s: State, loc: Location): Claim[] {
     });
   }
   // A small owner (or worker) whose anger at the top is channeled against the bottom.
+  // Upward: costs big capital and benefits working people or small owners.
   const upward = hs.filter((h) => {
     const a = b.positions[h.position]!.analysis;
-    return a.pays.some((c) => c === 'finance-capital' || c === 'industrial-capital');
+    return a.pays.some((c) => c === 'finance-capital' || c === 'industrial-capital') && a.gains.some((c) => c === 'core-workers' || c === 'petty-bourgeoisie' || c === 'peasantry');
   });
+  // Downward: benefits core workers or small owners at the expense of migrants, the unemployed or workers abroad, leaving capital untouched.
   const downward = hs.filter((h) => {
     const a = b.positions[h.position]!.analysis;
-    return a.pays.some((c) => c === 'peripheral-workers' || c === 'reserve-army') && !a.pays.some((c) => CAPITAL.includes(c));
+    return (
+      a.pays.some((c) => c === 'peripheral-workers' || c === 'reserve-army') &&
+      a.gains.some((c) => c === 'core-workers' || c === 'petty-bourgeoisie') &&
+      !a.gains.some((c) => CAPITAL.includes(c)) &&
+      !a.pays.some((c) => CAPITAL.includes(c))
+    );
   });
   if (upward.length && downward.length && (own === 'petty-bourgeoisie' || LABOR.includes(own))) {
     const u = upward[0]!;

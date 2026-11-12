@@ -1,0 +1,1310 @@
+# Economy, part 2d: money, finance, the future of wage work, taxation.
+problematics:
+  # ------------------------------------------------------------------
+  - id: money.nature
+    domain: economy
+    layer: analysis
+    question: What is money, and who should issue it?
+    plain: Where does money come from, what gives it value, and who should be allowed to create it?
+    short: money
+    importance: 2
+    positions:
+      - id: money.nature.hard-money
+        label: Money should be hard, like gold, beyond the reach of governments
+        claim: Money arose from trade as the most sellable commodity, and sound money must be scarce, like gold. Paper money issued by governments and central banks is debased to pay for spending and transfers wealth to insiders.
+        voiced: "End the Fed. Sound money is a bulwark of liberty: a government that can print money can loot its citizens without a vote."
+        you: You think money should be hard and scarce, like gold, so that governments and central banks can't create it at will.
+        because: >
+          Money was not invented by kings; it emerged as traders converged on the commodity everyone would accept,
+          usually gold or silver. Its value came from its scarcity. Paper money lets governments spend without
+          taxing and banks lend what nobody saved, so prices rise, savings melt and booms end in busts. Those
+          closest to new money, banks and governments, spend it before prices rise, at everyone else's expense.
+          A gold standard, or a fixed-supply digital money, takes that power away.
+        against:
+          - from: socdem.keynesian
+            text: >
+              The gold standard transmitted the Great Depression around the world and forced deflation on workers.
+              Money that cannot expand in a slump turns recessions into catastrophes.
+          - from: marxism.classical
+            text: >
+              Hard money is the creditor's money. It protects the value of accumulated wealth by making debt and
+              unemployment heavier for everyone else.
+        sources:
+          - {author: Carl Menger, title: On the Origin of Money, year: 1892}
+          - {author: Ludwig von Mises, title: The Theory of Money and Credit, year: 1912}
+          - {author: Murray N. Rothbard, title: What Has Government Done to Our Money?, year: 1963}
+          - {author: Ron Paul, title: End the Fed, year: 2009}
+        traditions:
+          defining: [liberalism.austrian, libertarianism.paleo]
+          typical: [libertarianism.ancap, libertarianism.minarchist, libertarianism.objectivist, conservatism.paleo, technology.cyberlibertarian]
+          contested: [conservatism.right-populism, conservatism.fusionism]
+          rejects: [socdem.keynesian, liberalism.chicago, liberalism.technocratic]
+        presupposes: [value.source.subjective-utility]
+        excludes: [money.nature.chartalist]
+        tension: []
+        tags: [hard-money]
+        analysis:
+          gains: [finance-capital, petty-bourgeoisie]
+          pays: [core-workers, reserve-army, peripheral-workers]
+          mechanism: >
+            A fixed money supply protects the real value of savings and loans, so creditors gain while debtors and
+            wage earners bear deflation and unemployment in downturns. Countries without gold or reserve assets
+            must earn them by exporting cheaply.
+          drain: sustains
+          law_of_value: extends
+          disputed: >
+            Some materialists note that inflation also erodes workers' wages and savings and that hard-money
+            populism draws on that experience; others read it as creditor ideology.
+
+      - id: money.nature.competing-currencies
+        label: Let private monies compete; end the state's monopoly on money
+        claim: Governments should not have a monopoly on issuing money. Private banks and digital currencies should compete, and people should use whichever money holds its value best.
+        voiced: "Denationalize money. Competition gives us better shoes and better software; it would give us better money. Bitcoin is that competition."
+        you: You think governments shouldn't monopolize money, and that private and digital currencies should compete to be used.
+        because: >
+          The state's monopoly on money is the cause of inflation, because the monopolist always has reason to
+          overissue. If banks could issue their own notes and people could use any currency, issuers that
+          inflated would lose their customers. Scotland's free-banking era ran without a central bank and with
+          few failures. Digital currencies now make this practical: a money with rules no government can change.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Competing currencies multiply the costs of exchange and invite bank runs. Every era of free banking
+              ended with crises and calls for a lender of last resort.
+          - from: socdem.keynesian
+            text: >
+              A money nobody manages is a money nobody can use to fight unemployment. Crypto has proved a casino,
+              not a currency.
+        sources:
+          - {author: Friedrich A. Hayek, title: Denationalisation of Money, year: 1976}
+          - {author: George A. Selgin, title: The Theory of Free Banking, year: 1988}
+          - {author: Satoshi Nakamoto, title: "Bitcoin: A Peer-to-Peer Electronic Cash System", year: 2008}
+        traditions:
+          defining: [technology.cyberlibertarian]
+          typical: [liberalism.austrian, libertarianism.ancap, technology.e-acc]
+          contested: [libertarianism.minarchist, libertarianism.paleo]
+          rejects: [socdem.keynesian, liberalism.chicago, marxism.ml]
+        presupposes: []
+        excludes: [money.nature.chartalist, money.nature.rule-bound-central-bank]
+        tension: [money.nature.hard-money]
+        tags: [hard-money]
+        analysis:
+          gains: [finance-capital, professional-managerial]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Removing state money issuance shifts seigniorage and credit creation to private issuers and early
+            holders of new currencies, while ending public lending of last resort and the use of money policy
+            against unemployment.
+          drain: none
+          law_of_value: extends
+
+      - id: money.nature.rule-bound-central-bank
+        label: Independent central banks should keep money stable by rules
+        claim: Money is created by the state and banks, and it should be managed by an independent central bank following clear rules or inflation targets, out of the hands of elected politicians.
+        voiced: "Inflation is always and everywhere a monetary phenomenon. Take the printing press away from politicians and give it to an independent central bank with a clear mandate."
+        you: You think money should be managed by an independent central bank following clear rules, kept away from politicians.
+        because: >
+          Politicians face elections and always want to print money before them, and the inflation that follows
+          hurts savers and the poor. Fiat money is efficient and flexible, but it needs a guardian who is bound
+          by rules and insulated from short-term pressure. Since central banks were made independent and given
+          inflation targets, inflation fell across the world. Money is too important to be left to politicians.
+        against:
+          - from: socdem.keynesian
+            text: >
+              Independent central banks raise interest rates to create unemployment whenever wages rise. Taking money
+              out of politics hands it to bankers.
+          - from: liberalism.austrian
+            text: >
+              An 'independent' central planner of money is still a central planner. Central banks fed every bubble
+              of the last forty years with cheap credit.
+        sources:
+          - {author: Milton Friedman and Anna J. Schwartz, title: "A Monetary History of the United States, 1867-1960", year: 1963}
+          - {author: Milton Friedman, title: The Role of Monetary Policy, year: 1968}
+        traditions:
+          defining: [liberalism.chicago]
+          typical: [liberalism.technocratic, liberalism.ordoliberal, socdem.third-way, liberalism.internationalist]
+          contested: [liberalism.social, conservatism.christian-democracy]
+          rejects: [liberalism.austrian, socdem.keynesian, socdem.democratic-socialism]
+        presupposes: []
+        excludes: [money.nature.competing-currencies]
+        tension: [money.nature.chartalist]
+        tags: []
+        analysis:
+          gains: [finance-capital, professional-managerial]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Inflation targeting by an unelected bank protects the real value of financial assets and uses interest
+            rates and unemployment to discipline wage claims. Dollar interest-rate decisions in Washington set
+            borrowing costs for the periphery.
+          drain: sustains
+          law_of_value: extends
+
+      - id: money.nature.chartalist
+        label: "Money is a creature of the state (Modern Monetary Theory)"
+        claim: Money is created by the state, which spends it into existence and accepts it back in taxes. A country that issues its own currency cannot run out of it; the real limits are inflation and available resources.
+        voiced: "Taxes don't fund spending. A currency issuer spends first and taxes later. The question is never 'can we afford it?' but 'do we have the workers and materials?'"
+        you: You think a government that issues its own currency can't run out of money, and that the real limits on spending are inflation and real resources.
+        because: >
+          Historically money did not grow from barter but from states and temples that imposed taxes payable in
+          their own token. The token has value because you need it to pay your taxes. A government issuing its
+          own currency therefore spends by crediting accounts and does not need to borrow or tax first. Its
+          budget is not like a household's. Deficits are only a problem when spending outruns the economy's
+          capacity to produce. Full employment is a policy choice.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Whatever the accounting, sustained money creation ends in inflation. MMT's promise that taxes can be
+              raised in time to stop it ignores how politics works.
+          - from: marxism.third-worldism
+            text: >
+              Monetary sovereignty is the privilege of the currencies at the top of the hierarchy. A country that
+              must import food and fuel in dollars cannot print its way to full employment.
+        sources:
+          - {author: Georg Friedrich Knapp, title: The State Theory of Money, year: 1905}
+          - {author: Abba P. Lerner, title: Functional Finance and the Federal Debt, year: 1943}
+          - {author: L. Randall Wray, title: Modern Money Theory, year: 2012}
+          - {author: Stephanie Kelton, title: The Deficit Myth, year: 2020}
+        traditions:
+          defining: []
+          typical: [socdem.keynesian, socdem.democratic-socialism, socdem.left-populism]
+          contested: [socdem.nordic, liberalism.social, marxism.third-worldism]
+          rejects: [liberalism.austrian, liberalism.chicago, liberalism.ordoliberal]
+        presupposes: []
+        excludes: [money.nature.hard-money, money.nature.competing-currencies]
+        tension: [money.nature.rule-bound-central-bank]
+        tags: [mmt]
+        analysis:
+          gains: [core-workers, reserve-army, professional-managerial]
+          pays: [finance-capital]
+          mechanism: >
+            Treating the budget as constrained only by real resources removes the financial argument for austerity
+            and lets the state employ idle labor, at the expense of bondholders' power over fiscal policy. The
+            space applies mostly to issuers of top currencies.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            Marxists dispute whether MMT treats money as a technical lever and ignores profitability as the
+            constraint on capitalist employment (Michael Roberts) or usefully exposes austerity's logic.
+
+      - id: money.nature.form-of-value
+        label: Money is the form of value; it expresses capital's power over labor
+        claim: Money is the general form in which the labor in commodities is measured and exchanged. Its power comes from commodity production and the wage relation, so monetary reform alone cannot end exploitation.
+        voiced: "Money is not a thing but a social relation. Change the money and leave the wage, and you change the label on the chains."
+        you: You see money as the expression of a society built on commodities and wage labor, so changing the money system alone won't fix that society.
+        because: >
+          Money is the universal commodity in which all other commodities express their value, the labor time
+          socially necessary to produce them. Its power over people comes from the fact that they must sell their
+          labor power to obtain it. Schemes to abolish interest, print labor money or issue free credit, from
+          Proudhon onward, treat the symptom. Only when production is directly social will money lose its power,
+          giving way first to labor certificates and then to free distribution.
+        against:
+          - from: anarchism.mutualist
+            text: >
+              Money's power to command labor comes from the monopoly of credit that the state grants banks. Free
+              the issue of money and interest falls toward cost, and capital loses its tribute.
+          - from: socdem.keynesian
+            text: >
+              Whatever its philosophical status, money is a lever. Control of credit and fiscal policy has given
+              workers full employment and welfare states.
+        sources:
+          - {author: Karl Marx, title: "Capital, Volume I", year: 1867}
+          - {author: Karl Marx, title: Grundrisse, year: 1939, note: "written 1857-58"}
+          - {author: Karl Marx, title: A Contribution to the Critique of Political Economy, year: 1859}
+        traditions:
+          defining: [marxism.classical]
+          typical: [marxism.ml, marxism.left-communism, marxism.council-communism, marxism.trotskyism, marxism.western]
+          contested: [marxism.market-socialism]
+          rejects: [anarchism.mutualist, socdem.keynesian, liberalism.austrian]
+        presupposes: [value.source.labor]
+        excludes: [money.nature.hard-money]
+        tension: [money.nature.chartalist]
+        tags: [marxist]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Locating money's power in the wage relation turns attention from money reform to ownership of
+            production, which is where capital's claim on the surplus can be removed.
+          drain: reduces
+          law_of_value: abolishes
+
+      - id: money.nature.currency-hierarchy
+        label: World money is a hierarchy; the dollar drains the periphery
+        claim: Currencies form a hierarchy, with the dollar at the top. Core countries borrow in their own money while the periphery must earn dollars, which keeps it subordinate. Poor countries need monetary sovereignty.
+        voiced: "The dollar is our currency and your problem. The CFA franc is the invisible weapon of Françafrique. No country is independent while another prints its money."
+        you: You think world money is a hierarchy with the dollar on top, which lets rich countries drain poor ones, and that poor countries need control of their own money.
+        because: >
+          The United States can run deficits forever because the world needs dollars for trade and reserves; the
+          rest of the world sends goods in exchange for paper. Peripheral countries must borrow in dollars,
+          export to earn them, and raise interest rates whenever the Federal Reserve does. Fourteen African
+          states still use a currency guaranteed by the French Treasury and keep reserves there. Monetary
+          sovereignty, regional currencies and payment systems outside the dollar are conditions of real
+          independence.
+        against:
+          - from: liberalism.technocratic
+            text: >
+              Countries that tried to escape the dollar with their own printing presses got hyperinflation.
+              Credible institutions, not sovereignty slogans, earn a currency trust.
+          - from: marxism.classical
+            text: >
+              The currency hierarchy expresses an underlying hierarchy of productive power. A new currency without
+              industry and changed class relations prints only paper.
+        sources:
+          - {author: Michael Hudson, title: "Super Imperialism: The Economic Strategy of American Empire", year: 1972}
+          - {author: Fanny Pigeaud and Ndongo Samba Sylla, title: "L'arme invisible de la Françafrique: une histoire du franc CFA", year: 2018}
+          - {author: Samir Amin, title: Delinking, year: 1985, note: "French original; English 1990"}
+        traditions:
+          defining: [marxism.third-worldism]
+          typical: [marxism.dependency, marxism.world-systems, nationalism.pan-africanism, nationalism.bolivarianism, nationalism.eurasianism, marxism.african-socialism]
+          contested: [socdem.keynesian, marxism.scc]
+          rejects: [liberalism.technocratic, liberalism.internationalist, liberalism.chicago]
+        presupposes: [imperialism.nature.unequal-exchange-drain]
+        excludes: []
+        tension: [money.nature.chartalist]
+        tags: [periphery]
+        analysis:
+          gains: [peripheral-workers, peasantry, industrial-capital]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >
+            Ending dollar and franc dependence removes the seigniorage, reserve holdings and interest flows that
+            move value from periphery to core, and lets peripheral states finance domestic investment in their
+            own money. Comprador fractions tied to dollar assets lose their position.
+          drain: breaks
+          law_of_value: regulates
+          consciousness: hegemonic
+
+      - id: money.nature.anti-usury
+        label: Money must serve production; interest on loans is forbidden
+        claim: Money is a means of exchange, not a thing that should earn money by itself. Lending at interest is unjust; finance should share in the risks and profits of real enterprise.
+        voiced: "God has permitted trade and forbidden usury. Money does not give birth to money; only work and partnership in real risk earn a return."
+        you: You think lending money at interest is wrong, and that finance should share in the real risks and profits of the businesses it funds.
+        because: >
+          A lender who charges interest gains whatever happens, while the borrower bears every loss. That is
+          why debt has ruined peasants and nations throughout history. Religious law, Islamic and once Christian,
+          forbids it. Finance should take the form of partnership: the investor shares in profit and loss. This
+          ties money to production, discourages speculation and debt spirals, and spreads risk fairly. Islamic
+          banking already manages trillions on these principles.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Interest is the price of time and risk, and banning it only renames it. Islamic banks charge
+              mark-ups that track interest rates almost exactly.
+          - from: marxism.classical
+            text: >
+              Interest is a share of surplus value produced by workers. Banning it while keeping profit from
+              partnership leaves exploitation in place and only rearranges how capitalists divide the spoils.
+        sources:
+          - {author: Muhammad Baqir al-Sadr, title: Iqtisaduna (Our Economics), year: 1961}
+          - {author: M. Umer Chapra, title: Towards a Just Monetary System, year: 1985}
+        traditions:
+          defining: []
+          typical: [religious.islamism-brotherhood, religious.islamic-socialism, religious.post-islamism, religious.islamism-khomeinist, religious.salafism-quietist, conservatism.distributism]
+          contested: [conservatism.cst, conservatism.integralism]
+          rejects: [liberalism.chicago, liberalism.austrian]
+        presupposes: [capitalism.nature.usury-finance]
+        excludes: []
+        tension: []
+        tags: [religious, islamic]
+        analysis:
+          gains: [petty-bourgeoisie, peasantry, industrial-capital]
+          pays: [finance-capital]
+          mechanism: >
+            Replacing interest with profit-and-loss sharing shifts risk from borrowers to lenders and cuts the
+            fixed claims of creditors on producers. In practice Islamic banks often use mark-up contracts with
+            returns close to interest rates.
+          drain: softens
+          law_of_value: regulates
+          disputed: >
+            Materialists differ on whether anti-usury politics targets finance capital usefully or misplaces
+            exploitation in lending; the same producerist theme was also exploited by antisemitic movements,
+            which Islamic and Catholic proponents of the ban reject.
+
+      - id: money.nature.mutual-credit
+        label: Free banking among producers drives interest to zero
+        claim: Banks owned mutually by their members should issue credit at cost, against producers' own goods and property. Without the state's monopoly on money, interest would fall to the cost of running the bank.
+        voiced: "Interest is the price of a monopoly. Let producers form mutual banks and issue their own notes, and money will cost no more than the bookkeeping."
+        you: You think producers should run their own mutual banks that lend at cost, ending interest as a tribute to bankers.
+        because: >
+          Interest exists because the state restricts who may issue money, so banks charge a monopoly price for
+          credit. Farmers and artisans already have security, their land, tools and products. A mutual bank can
+          issue notes against that security that its members agree to accept, at the cost of administration.
+          With credit at cost, workers could buy their own tools, and capital would lose its power to charge
+          for access.
+        against:
+          - from: marxism.classical
+            text: >
+              Interest is not a monopoly price but a share of surplus value. Proudhon's People's Bank of 1849
+              failed, and cheap credit leaves the wage relation intact.
+          - from: liberalism.austrian
+            text: >
+              Interest reflects time preference: present goods are worth more than future ones. No banking reform
+              can abolish it, and notes issued without restraint will lose their value.
+        sources:
+          - {author: William B. Greene, title: Mutual Banking, year: 1850}
+          - {author: Pierre-Joseph Proudhon, title: General Idea of the Revolution in the Nineteenth Century, year: 1851}
+          - {author: Benjamin R. Tucker, title: Instead of a Book, year: 1893}
+        traditions:
+          defining: [anarchism.mutualist]
+          typical: [anarchism.individualist]
+          contested: [libertarianism.left, conservatism.distributism]
+          rejects: [marxism.classical, liberalism.austrian]
+        presupposes: [property.private.possession-not-property]
+        excludes: [money.nature.form-of-value]
+        tension: []
+        tags: [anarchist]
+        analysis:
+          gains: [petty-bourgeoisie, peasantry, core-workers]
+          pays: [finance-capital]
+          mechanism: >
+            Mutual credit at cost cuts the interest income of banks and lenders and gives small producers cheaper
+            access to tools and land; market competition among producers continues.
+          drain: none
+          law_of_value: regulates
+
+  # ------------------------------------------------------------------
+  - id: finance.control
+    domain: economy
+    layer: horizon
+    question: Should finance and capital flows be controlled?
+    plain: Should banks and investors be free to lend and move money wherever they want, or should that be controlled, and by whom?
+    short: control of finance
+    importance: 2
+    positions:
+      - id: finance.control.free-flows
+        label: Capital should move freely to where it earns most
+        claim: Banks and investors should be free to lend, invest and move money across borders. Free capital flows send savings to their most productive use and discipline bad governments.
+        voiced: "Financial repression keeps poor countries poor. Let interest rates reflect scarcity, let capital in, and let it leave when governments misbehave."
+        you: You think banks and investors should be free to lend and move money across borders, wherever it earns the best return.
+        because: >
+          Where governments cap interest rates and direct credit, savings are wasted on favored firms and
+          depositors are robbed by inflation. Liberalized finance raises savings, channels them to the best
+          projects and brings in foreign capital and know-how. Capital mobility also disciplines governments:
+          those that inflate or expropriate find investors leaving. Controls breed black markets and corruption.
+        against:
+          - from: socdem.keynesian
+            text: >
+              Free capital flows produced the Latin American debt crisis, the Asian crisis of 1997 and 2008. 'Discipline'
+              means hot money fleeing and governments forced into austrity by markets no one elected.
+          - from: marxism.third-worldism
+            text: >
+              Open capital accounts let the periphery's surplus flow out to core financial centers and its assets be
+              bought cheaply after every crisis. Liberalization is a channel of the drain.
+        sources:
+          - {author: Ronald I. McKinnon, title: Money and Capital in Economic Development, year: 1973}
+          - {author: Edward S. Shaw, title: Financial Deepening in Economic Development, year: 1973}
+        traditions:
+          defining: [liberalism.chicago]
+          typical: [liberalism.austrian, libertarianism.ancap, libertarianism.minarchist, liberalism.technocratic, liberalism.internationalist, socdem.third-way, liberalism.classical]
+          contested: [liberalism.ordoliberal]
+          rejects: [socdem.keynesian, nationalism.developmental-state, marxism.third-worldism, marxism.ml]
+        presupposes: []
+        excludes: [finance.control.capital-controls, finance.control.nationalize-credit]
+        tension: []
+        tags: []
+        analysis:
+          gains: [finance-capital, comprador-capital]
+          pays: [peripheral-workers, core-workers, peasantry]
+          mechanism: >
+            Open capital accounts let investors move funds at will, so peripheral governments must keep interest
+            rates high and taxes low to retain capital, and after crises assets are sold to foreign buyers cheaply.
+          drain: sustains
+          law_of_value: extends
+
+      - id: finance.control.prudential
+        label: Private finance, but tightly regulated
+        claim: Finance should remain mostly private, but strictly regulated, with high capital requirements, separation of risky trading from ordinary banking, and temporary controls on hot money when needed.
+        voiced: "Banks are not too complex to regulate; they are too leveraged. Make them hold real capital, and the taxpayer stops being their insurer."
+        you: You want finance to stay private but under strict rules, with banks forced to hold more of their own capital and risky trading kept apart from ordinary banking.
+        because: >
+          Banks borrow heavily against thin capital, so they take risks whose losses fall on depositors and
+          taxpayers. Requiring much more equity, separating deposit banking from speculation, and supervising
+          credit booms would make crises rarer and smaller without giving up the benefits of private finance.
+          The postwar era of regulated banking had almost no banking crises; deregulation brought them back.
+        against:
+          - from: libertarianism.ancap
+            text: >
+              Regulation creates the moral hazard it claims to fix: deposit insurance and bailouts teach banks that
+              the state will rescue them.
+          - from: marxism.classical
+            text: >
+              Regulators are staffed from and returned to the banks they regulate. Every rulebook since Glass-Steagall
+              has been dismantled once finance regained its strength.
+        sources:
+          - {author: Anat Admati and Martin Hellwig, title: "The Bankers' New Clothes", year: 2013}
+          - {author: Hyman P. Minsky, title: Stabilizing an Unstable Economy, year: 1986}
+        traditions:
+          defining: [liberalism.social]
+          typical: [liberalism.technocratic, liberalism.egalitarian, liberalism.ordoliberal, socdem.third-way, conservatism.christian-democracy, liberalism.progressive]
+          contested: [socdem.keynesian]
+          rejects: [libertarianism.ancap, marxism.ml]
+        presupposes: []
+        excludes: []
+        tension: [finance.control.free-flows]
+        tags: []
+        analysis:
+          gains: [professional-managerial, core-workers, industrial-capital]
+          pays: [finance-capital]
+          mechanism: >
+            Higher capital requirements and separation of trading reduce banks' leverage and returns on equity,
+            shifting risk back from taxpayers to bank shareholders while leaving private credit allocation intact.
+          drain: none
+          law_of_value: regulates
+
+      - id: finance.control.capital-controls
+        label: Permanent capital controls for national control of the economy
+        claim: Governments should control flows of capital in and out of the country permanently, so that interest rates, investment and employment are decided at home and not by global investors.
+        voiced: "Control of capital movements, both inward and outward, should be a permanent feature of the post-war system. Without it, every country's policy is hostage to hot money."
+        you: You think countries should permanently control money moving in and out, so national policy isn't dictated by global investors.
+        because: >
+          A government cannot choose low interest rates for investment and full employment if capital can flee
+          the moment it does. Keynes wrote capital controls into Bretton Woods for that reason, and the era of
+          controls was the era of fastest growth. Malaysia's controls in 1998 shielded it from the Asian crisis;
+          China's controls let it direct credit to industry. Capital controls are a precondition of economic
+          sovereignty, not a distortion of it.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Controls trap savers in bad domestic investments and invite evasion through trade misinvoicing. They
+              protect governments from the consequences of bad policy.
+          - from: marxism.ml
+            text: >
+              Controls administered by a capitalist state protect the national bourgeoisie, not workers. Without
+              socialization of finance, the controlled capital still belongs to the same owners.
+        sources:
+          - {author: John Maynard Keynes, title: Proposals for an International Clearing Union, year: 1943}
+          - {author: Dani Rodrik, title: Has Globalization Gone Too Far?, year: 1997}
+          - {author: Ha-Joon Chang, title: "Kicking Away the Ladder: Development Strategy in Historical Perspective", year: 2002}
+        traditions:
+          defining: [socdem.keynesian, nationalism.developmental-state]
+          typical: [marxism.scc, nationalism.nasserism, nationalism.peronism, nationalism.bolivarianism, marxism.dependency, conservatism.gaullism, conservatism.national, marxism.third-worldism]
+          contested: [socdem.nordic, socdem.third-way]
+          rejects: [liberalism.chicago, liberalism.austrian, libertarianism.ancap]
+        presupposes: [intl.sovereignty.nations-set-own-course]
+        excludes: [finance.control.free-flows]
+        tension: []
+        tags: []
+        analysis:
+          gains: [industrial-capital, core-workers, peripheral-workers]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >
+            Restricting outflows keeps domestic savings and profits at home and lets the state set interest rates
+            for investment, reducing the flight of peripheral surplus to core financial centers.
+          drain: reduces
+          law_of_value: regulates
+          consciousness: hegemonic
+
+      - id: finance.control.nationalize-credit
+        label: Nationalize the banks; credit as a public monopoly
+        claim: All banks should be taken into public ownership and merged into a single state bank that allocates credit according to a social plan.
+        voiced: "Centralization of credit in the hands of the state, by means of a national bank with state capital and an exclusive monopoly. Seize the banks and you seize the levers of the whole economy."
+        you: You want all banks nationalized and merged into a public banking system that directs credit according to a plan.
+        because: >
+          The banks are the nerve center of modern capitalism: they decide which firms live and which die, and
+          they own or control the largest industries. Taking a few great banks into public hands puts the
+          command of credit, and so of investment, under social control at a stroke. A single state bank can
+          also see the whole economy at once and serve as the accounting backbone of a plan.
+        against:
+          - from: liberalism.austrian
+            text: >
+              A state monopoly of credit gives politicians power over every business and every household. It has
+              meant credit by loyalty, not by merit.
+          - from: anarchism.mutualist
+            text: >
+              Concentrating credit in the state makes the monopoly of money complete. The remedy is to break the
+              monopoly, not to give it to a single owner.
+        sources:
+          - {author: Karl Marx and Friedrich Engels, title: Manifesto of the Communist Party, year: 1848}
+          - {author: Rudolf Hilferding, title: Finance Capital, year: 1910}
+          - {author: V. I. Lenin, title: The Impending Catastrophe and How to Combat It, year: 1917}
+        traditions:
+          defining: [marxism.leninism, marxism.ml]
+          typical: [marxism.trotskyism, marxism.maoism, marxism.hoxhaism, marxism.juche, marxism.classical]
+          contested: [socdem.democratic-socialism, marxism.scc, marxism.austromarxism]
+          rejects: [liberalism.austrian, liberalism.chicago, anarchism.mutualist]
+        presupposes: [property.private.personal-vs-productive]
+        excludes: [finance.control.free-flows]
+        tension: []
+        tags: [marxist]
+        analysis:
+          gains: [core-workers, peasantry, peripheral-workers]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >
+            Public ownership of all banks abolishes private interest income as a claim on production and puts
+            investment allocation in the hands of the state. With control of foreign exchange it closes the channel
+            through which finance moves peripheral surplus abroad.
+          drain: breaks
+          law_of_value: suspends
+          consciousness: hegemonic
+
+      - id: finance.control.public-banks
+        label: Public and cooperative banks alongside private ones
+        claim: Alongside private banks, there should be strong public, municipal and cooperative banks that lend for housing, small firms, infrastructure and the green transition, at low cost and without the pressure to maximize profit.
+        voiced: "North Dakota has a state bank; Germany has its Sparkassen; Brazil has BNDES. Public money can be lent for public purposes, by banks that answer to the people."
+        you: You want strong public and cooperative banks alongside private ones, lending for homes, small firms and public projects at low cost.
+        because: >
+          Private banks lend where returns are highest and shortest, which means real estate and finance, not
+          factories, small firms or energy transitions. Public development banks financed most of the great
+          industrial catch-ups, and local public and savings banks kept German and Swiss small business supplied
+          with credit through crises. Public banks can take a longer view, lend counter-cyclically, and keep
+          interest earnings in public hands. Credit unions and cooperative banks do the same at a smaller scale.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Public banks lend for political reasons and accumulate bad loans that taxpayers end up covering. Spanish
+              cajas collapsed in 2010 for exactly that reason.
+          - from: marxism.leninism
+            text: >
+              A few public banks in a sea of private finance cannot command investment. They become the lenders of
+              last resort to projects private capital rejects.
+        sources:
+          - {author: Mariana Mazzucato, title: The Entrepreneurial State, year: 2013}
+          - {author: Alexander Gerschenkron, title: Economic Backwardness in Historical Perspective, year: 1962}
+        traditions:
+          defining: [socdem.democratic-socialism]
+          typical: [socdem.keynesian, socdem.nordic, nationalism.developmental-state, conservatism.distributism, socdem.left-populism, nationalism.bolivarianism, conservatism.christian-democracy]
+          contested: [socdem.third-way, conservatism.national]
+          rejects: [liberalism.chicago, libertarianism.ancap]
+        presupposes: []
+        excludes: []
+        tension: [finance.control.free-flows]
+        tags: []
+        analysis:
+          gains: [petty-bourgeoisie, core-workers, industrial-capital]
+          pays: [finance-capital]
+          mechanism: >
+            Public lenders compete down interest margins and channel credit to small firms, housing and
+            infrastructure that private banks underserve, keeping interest earnings in public budgets.
+          drain: softens
+          law_of_value: regulates
+
+      - id: finance.control.no-bailouts
+        label: Make the bankers pay; no more bailouts
+        claim: The banks gamble, win, and get bailed out when they lose. Bankers who cause crises should be prosecuted and banks allowed to fail, not rescued with taxpayers' money.
+        voiced: "They privatized the profits and socialized the losses. Nobody went to jail. Bail out the people, not the banks."
+        you: You're angry that banks get bailed out when they fail and bankers never pay, and you want that to stop.
+        because: >
+          In 2008 ordinary people lost their homes and jobs while the banks that caused the crisis were saved with
+          public money and paid bonuses. That is not capitalism or socialism; it is a racket. Letting failing
+          banks fail and prosecuting fraud would make finance responsible for its own risks. The rules should be
+          the same for bankers as for everyone else.
+        against:
+          - from: liberalism.technocratic
+            text: >
+              Letting major banks fail in a panic takes down ordinary depositors and businesses with them. The 1930s
+              showed the cost; rescue with conditions is the lesser evil.
+          - from: marxism.ml
+            text: >
+              Jailing a few bankers leaves the banks. Anger at bailouts must become a demand to take finance into
+              public ownership, or it will be captured by the right.
+        sources:
+          - {author: Matt Taibbi, title: "Griftopia: Bubble Machines, Vampire Squids, and the Long Con That Is Breaking America", year: 2010}
+          - {author: Ron Paul, title: End the Fed, year: 2009}
+        traditions:
+          defining: [commonsense.rigged]
+          typical: [conservatism.right-populism, socdem.left-populism, commonsense.anti-politics, libertarianism.paleo, libertarianism.ancap]
+          contested: [socdem.labourism, conservatism.national]
+          rejects: [liberalism.technocratic, socdem.third-way]
+        presupposes: [cs.rigged.system-rigged]
+        excludes: []
+        tension: []
+        tags: [commonsense]
+        analysis:
+          gains: [core-workers, petty-bourgeoisie]
+          pays: [finance-capital]
+          mechanism: >
+            Refusing rescues would impose losses on bank shareholders and bondholders rather than taxpayers. Where
+            it remains anger without a program, both left and right movements can channel it, and the right has
+            often directed it at central bankers and minorities.
+          drain: none
+          law_of_value: none
+          consciousness: economic-corporate
+
+  # ------------------------------------------------------------------
+  - id: work.future
+    domain: economy
+    layer: horizon
+    question: What should happen to wage work?
+    plain: Should most people keep working for a wage, and if not, what should replace it?
+    short: the future of work
+    importance: 3
+    positions:
+      - id: work.future.abolish-wage-labor
+        label: Abolish the wage system
+        claim: Working for a wage should end. Workers should collectively own and run production, so that nobody has to sell their ability to work to someone else in order to live.
+        voiced: "Instead of the conservative motto 'A fair day's wage for a fair day's work!' they ought to inscribe on their banner the revolutionary watchword: 'Abolition of the wages system!'"
+        you: You want to end wage work itself, so that nobody has to sell their working hours to an employer in order to live.
+        because: >
+          A better wage still leaves the worker selling their time to someone who profits from it, and leaves the
+          decisions about what to produce, how and for whom to the buyer. Higher pay, basic incomes and job
+          guarantees all leave this relation intact. Only when the producers collectively control the means of
+          production does work stop being a commodity, and become a cooperative activity governed by those who do it.
+        against:
+          - from: liberalism.chicago
+            text: >
+              The wage is the most flexible, risk-free arrangement ever devised for people who don't want to own a
+              business. Abolishing it removes a choice most workers freely make.
+          - from: socdem.labourism
+            text: >
+              Workers want better pay, security and dignity at work now, not a promise of abolishing wages one day.
+              The slogan has kept revolutionaries far from the workers they claim to speak for.
+        sources:
+          - {author: Karl Marx, title: "Value, Price and Profit", year: 1898, note: "address of 1865"}
+          - {author: Karl Marx, title: Critique of the Gotha Programme, year: 1891, note: "written 1875"}
+        traditions:
+          defining: [marxism.classical, anarchism.syndicalist]
+          typical: [marxism.council-communism, marxism.left-communism, anarchism.communist, marxism.ml, marxism.trotskyism, marxism.autonomism]
+          contested: [socdem.democratic-socialism]
+          rejects: [liberalism.chicago, socdem.labourism, socdem.third-way, liberalism.austrian]
+        presupposes: [wage.nature.price-of-labor-power]
+        excludes: [work.future.flexible-markets]
+        tension: []
+        tags: [marxist, anarchist]
+        analysis:
+          gains: [core-workers, peripheral-workers, reserve-army]
+          pays: [finance-capital, industrial-capital, professional-managerial]
+          mechanism: >
+            Ending the sale of labor power removes the relation through which owners appropriate surplus labor,
+            and with it the reserve army's function of disciplining wages.
+          drain: breaks
+          law_of_value: abolishes
+          consciousness: hegemonic
+
+      - id: work.future.job-guarantee
+        label: A guaranteed public job for anyone who wants one
+        claim: The government should offer a job at a decent wage to anyone who wants one, doing useful public work, so that no one is ever involuntarily unemployed.
+        voiced: "Unemployment is a policy choice. The state can hire everyone who wants to work, at a living wage, doing the care and green work we badly need."
+        you: You think the government should guarantee a decent public job to anyone who wants one.
+        because: >
+          Unemployment wastes people's lives and skills, and leaves workers afraid to demand better pay. A
+          government that issues its own currency can always afford to hire the unemployed. A job guarantee
+          sets a floor under wages and conditions across the economy, stabilizes demand in recessions, and puts
+          people to work on care, environmental repair and community projects that markets neglect. It gives
+          income and the dignity of contribution, which cash alone cannot.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Make-work jobs are inefficient, hard to supervise and hard to end. They keep workers away from the
+              private sector where real productivity growth happens.
+          - from: technology.l-acc
+            text: >
+              Guaranteeing work enshrines the work ethic when automation could free people from it. People need
+              income and time, not more jobs.
+        sources:
+          - {author: Pavlina R. Tcherneva, title: The Case for a Job Guarantee, year: 2020}
+          - {author: Hyman P. Minsky, title: Stabilizing an Unstable Economy, year: 1986}
+        traditions:
+          defining: []
+          typical: [socdem.keynesian, socdem.democratic-socialism, socdem.labourism, socdem.left-populism, marxism.scc]
+          contested: [socdem.nordic, liberalism.social]
+          rejects: [liberalism.chicago, libertarianism.ancap, technology.l-acc]
+        presupposes: [money.nature.chartalist]
+        excludes: []
+        tension: [work.future.basic-income-emancipatory]
+        tags: [mmt]
+        analysis:
+          gains: [reserve-army, core-workers]
+          pays: [industrial-capital]
+          mechanism: >
+            A permanent public employer at a living wage removes the reserve army's role in holding wages down,
+            forcing private employers to match its pay and conditions.
+          drain: none
+          law_of_value: regulates
+          consciousness: class-economic
+
+      - id: work.future.basic-income-emancipatory
+        label: A basic income for all, so people can refuse bad work
+        claim: Everyone should receive a regular cash income, unconditionally and on top of public services, high enough that no one has to take a bad job to survive.
+        voiced: "Real freedom for all. Pay everyone a basic income, and the bad jobs will have to get better or disappear. Fully automated, demand the future."
+        you: You want everyone to get an unconditional income, on top of public services, high enough that no one has to take a bad job to survive.
+        because: >
+          The most important freedom is the freedom to say no: to a bad job, an abusive partner or a pointless
+          task. An unconditional income gives everyone that power, recognizes the unpaid work of carers and
+          volunteers, and lets people train, create and organize. As automation reduces the need for labor, tying
+          income to jobs becomes absurd. A generous basic income combined with public services decommodifies
+          labor partly and gives workers bargaining power without a central plan.
+        against:
+          - from: socdem.labourism
+            text: >
+              A cash payment to everyone is either too small to live on or too expensive to keep public services.
+              It lets employers pay less and treats workers as consumers to be kept quiet.
+          - from: marxism.ml
+            text: >
+              A basic income paid out of profits depends on the profits it is supposed to challenge. It leaves
+              ownership unchanged and turns the working class into clients of the state.
+        sources:
+          - {author: Philippe Van Parijs, title: "Real Freedom for All: What (if Anything) Can Justify Capitalism?", year: 1995}
+          - {author: Nick Srnicek and Alex Williams, title: "Inventing the Future: Postcapitalism and a World Without Work", year: 2015}
+          - {author: Kathi Weeks, title: The Problem with Work, year: 2011}
+        traditions:
+          defining: [technology.l-acc]
+          typical: [liberalism.egalitarian, marxism.autonomism, libertarianism.left, feminism.materialist, ecology.degrowth]
+          contested: [socdem.democratic-socialism, socdem.nordic]
+          rejects: [socdem.labourism, marxism.ml, conservatism.cst]
+        presupposes: []
+        excludes: []
+        tension: [work.future.job-guarantee, work.future.dignity-of-work]
+        tags: [ubi]
+        analysis:
+          gains: [reserve-army, core-workers, professional-managerial]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            An unconditional income raises the price at which people will sell their labor and lets them refuse
+            low-paid work, at the cost of taxes on profits and high incomes. Funded in the core alone, it can
+            rest on surplus that originates in the periphery.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            Autonomists treat basic income as a refusal of work; Marxist-Leninists as reformist; some Third Worldists
+            see core-country basic income as a share of imperial rent.
+
+      - id: work.future.negative-income-tax
+        label: Replace welfare with one simple cash payment
+        claim: The welfare state's many programs and bureaucracies should be replaced by a single cash payment or negative income tax, leaving people free to spend it as they choose.
+        voiced: "Scrap the bureaucracy. Give people cash, and trust them. A negative income tax helps the poor without telling them how to live."
+        you: You want to replace welfare programs with one simple cash payment that people can spend as they like.
+        because: >
+          The welfare state is a maze of programs that cost huge sums to administer, trap people in dependency by
+          taking benefits away when they work, and give officials power over the poor. A single cash grant or
+          negative income tax is simpler, cheaper and respects people's choices. It keeps work always worth
+          more than not working and lets the market take care of the rest.
+        against:
+          - from: socdem.nordic
+            text: >
+              Replacing free public services with cash turns health, childcare and education into goods bought on a
+              market. The poor end up worse off when the cash runs short.
+          - from: liberalism.egalitarian
+            text: >
+              A basic income designed to replace the welfare state is a cut dressed as a reform. Its level will be set
+              by those who want to spend less.
+        sources:
+          - {author: Milton Friedman, title: Capitalism and Freedom, year: 1962}
+          - {author: Charles Murray, title: "In Our Hands: A Plan to Replace the Welfare State", year: 2006}
+        traditions:
+          defining: [liberalism.chicago]
+          typical: [libertarianism.minarchist, liberalism.technocratic, technology.e-acc, conservatism.fusionism]
+          contested: [libertarianism.ancap, socdem.third-way]
+          rejects: [socdem.nordic, socdem.labourism, liberalism.egalitarian]
+        presupposes: []
+        excludes: []
+        tension: [work.future.basic-income-emancipatory]
+        tags: [ubi]
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [reserve-army, core-workers]
+          mechanism: >
+            Replacing public services with a capped cash grant lowers public spending and opens health, care and
+            education to private provision, while a low grant tops up low wages and subsidizes employers.
+          drain: none
+          law_of_value: extends
+
+      - id: work.future.cooperatives
+        label: Turn employees into member-owners through cooperatives
+        claim: Wage work should be transformed by making workers members and co-owners of the firms they work in, sharing the surplus and electing management.
+        voiced: "Not more bosses, no bosses. When the workers own the firm, wages become shares of what we make together."
+        you: You want employees to become member-owners of the firms they work in, sharing the profits and choosing the managers.
+        because: >
+          The wage relation makes workers instruments of someone else's purpose. Cooperatives end it inside the
+          market economy, without waiting for a revolution: members own the firm, divide its surplus and elect its
+          leaders. Mondragón, Emilia-Romagna's cooperatives and Argentina's recovered factories show that ordinary
+          workers can run complex firms. Laws giving workers the first right to buy firms that are closing or
+          being sold would spread the model fast.
+        against:
+          - from: marxism.left-communism
+            text: >
+              Cooperatives in a market must compete and cut costs like any firm. Their members become their own
+              exploiters, and many hire wage workers who are not members.
+          - from: liberalism.chicago
+            text: >
+              Workers already can form cooperatives and mostly don't, because they prefer a steady wage to risking
+              their savings in their employer.
+        sources:
+          - {author: Richard D. Wolff, title: "Democracy at Work: A Cure for Capitalism", year: 2012}
+          - {author: Karl Marx, title: Inaugural Address of the International Working Men's Association, year: 1864}
+        traditions:
+          defining: [anarchism.mutualist, marxism.market-socialism]
+          typical: [socdem.democratic-socialism, conservatism.distributism, religious.christian-socialism, conservatism.cst]
+          contested: [anarchism.syndicalist, marxism.classical]
+          rejects: [marxism.left-communism, liberalism.chicago]
+        presupposes: [firm.ownership.worker-cooperatives]
+        excludes: []
+        tension: []
+        tags: [economic-democracy]
+        analysis:
+          gains: [core-workers]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Converting firms to cooperatives moves the surplus from shareholders to members, but competition with
+            capitalist firms holds members' pay and hours to market levels.
+          drain: none
+          law_of_value: regulates
+          consciousness: class-economic
+
+      - id: work.future.dignity-of-work
+        label: Good jobs for all through industry, unions and protection
+        claim: Work gives people dignity and a place in society. The goal should be secure, well-paid jobs for everyone, through industrial policy, strong unions and protection of national industry, not handouts.
+        voiced: "Work is a good thing for man. A family wage, a trade, a town with a factory in it: that is what people want, not a cheque in the post."
+        you: You believe work gives people dignity, and want secure, well-paid jobs for everyone rather than handouts.
+        because: >
+          Through work a person provides for a family, takes part in a common effort and becomes more fully
+          human. Decades of offshoring left towns without industry and men without purpose; cash transfers cannot
+          replace that. Policy should rebuild productive industry at home, protect it from unfair competition,
+          and strengthen unions and apprenticeships so that a working person can support a family on one wage.
+        against:
+          - from: technology.l-acc
+            text: >
+              Glorifying work glorifies drudgery and ties people's worth to their usefulness to employers. Most
+              people would happily do less of it.
+          - from: marxism.third-worldism
+            text: >
+              Bringing industry 'home' in the core means taking it from workers in the periphery, and family wages
+              in the North were paid partly from the drain.
+        sources:
+          - {author: John Paul II, title: Laborem Exercens, year: 1981}
+          - {author: Oren Cass, title: "The Once and Future Worker: A Vision for the Renewal of Work in America", year: 2018}
+        traditions:
+          defining: [conservatism.cst, socdem.labourism]
+          typical: [conservatism.national, conservatism.christian-democracy, conservatism.right-populism, conservatism.postliberal, commonsense.self-reliance, nationalism.peronism, conservatism.one-nation]
+          contested: [socdem.keynesian, conservatism.distributism]
+          rejects: [technology.l-acc, liberalism.chicago, marxism.autonomism]
+        presupposes: []
+        excludes: []
+        tension: [work.future.basic-income-emancipatory]
+        tags: []
+        analysis:
+          gains: [core-workers, industrial-capital]
+          pays: [peripheral-workers, finance-capital]
+          mechanism: >
+            Tariffs and industrial policy shift manufacturing and its wage premium back to core workers and
+            domestic industrial capital, at the cost of finance tied to offshoring and of peripheral workers who
+            lose export jobs.
+          drain: sustains
+          law_of_value: regulates
+          disputed: >
+            Some Marxists see core reindustrialization as raising workers' leverage; Third Worldists as a
+            national-chauvinist deal between core labor and capital.
+          consciousness: economic-corporate
+
+      - id: work.future.flexible-markets
+        label: Flexible labor markets; work as free contract
+        claim: Wage work is a free contract. Labor markets should be flexible, with fewer rules on hiring and firing, so that jobs are created and people can move to better ones.
+        voiced: "The best social program is a job. Get the rules out of the way, and businesses will hire."
+        you: You think wage work is a fair, free contract, and that fewer rules on hiring and firing create more jobs.
+        because: >
+          Rigid labor laws protect those who have jobs at the expense of those who don't: young people, migrants
+          and the long-term unemployed. Where firing is costly, hiring is rare. Flexible markets let firms
+          expand, let workers move to better jobs and let new work like platform gigs emerge. Rising
+          productivity, not regulation, has raised wages throughout history.
+        against:
+          - from: socdem.nordic
+            text: >
+              Flexibility without security is insecurity. Denmark's flexicurity combines easy firing with generous
+              benefits and strong unions; drop the second half and workers bear all the risk.
+          - from: marxism.classical
+            text: >
+              A contract between someone who must work to eat and someone who owns the means of work is not free in
+              any meaningful sense. 'Flexibility' means the employer's flexibility.
+        sources:
+          - {author: OECD, title: "The OECD Jobs Study: Facts, Analysis, Strategies", year: 1994}
+          - {author: Milton Friedman, title: Capitalism and Freedom, year: 1962}
+        traditions:
+          defining: [liberalism.chicago]
+          typical: [liberalism.austrian, libertarianism.ancap, libertarianism.minarchist, liberalism.classical, conservatism.fusionism, socdem.third-way, liberalism.technocratic]
+          contested: [commonsense.self-reliance]
+          rejects: [socdem.labourism, socdem.nordic, marxism.classical, conservatism.cst]
+        presupposes: [wage.nature.voluntary-exchange]
+        excludes: [work.future.abolish-wage-labor]
+        tension: []
+        tags: []
+        analysis:
+          gains: [industrial-capital, finance-capital]
+          pays: [core-workers, reserve-army, peripheral-workers]
+          mechanism: >
+            Lower firing costs and weaker contracts shift risk from employers to workers and enlarge the pool of
+            insecure labor that disciplines wages for everyone.
+          drain: sustains
+          law_of_value: extends
+
+      - id: work.future.shorter-hours
+        label: Work less, share the work, decommodify needs
+        claim: People in rich countries should work far fewer hours, share the necessary work, and get essentials like housing, care and transport as public services, while producing less of what nobody needs.
+        voiced: "A fifteen-hour week was Keynes' forecast. We produce enough already. Work less, share the work, provide the basics free, and give the planet a break."
+        you: You want people to work much less, share the work that's needed, get the basics as public services, and produce less stuff in rich countries.
+        because: >
+          Productivity has doubled several times since the eight-hour day was won, yet hours have barely fallen
+          because the gains went into more production and more profit. Much of it is waste: planned obsolescence,
+          advertising, financial churn. Cutting hours and making essentials universal would improve lives,
+          reduce unemployment and cut emissions and material use. Growth in rich countries is no longer needed
+          for well-being; it is needed for capital.
+        against:
+          - from: ecology.ecomodernism
+            text: >
+              Shrinking production in rich countries means poorer lives and less money for the clean technology the
+              whole world needs. The answer is more and cleaner energy, not less work.
+          - from: marxism.ml
+            text: >
+              Most of humanity needs more production, not less. Shorter hours in the core without changing ownership
+              and the drain would be paid for by peripheral workers.
+        sources:
+          - {author: John Maynard Keynes, title: Economic Possibilities for Our Grandchildren, year: 1930}
+          - {author: André Gorz, title: Critique of Economic Reason, year: 1988}
+          - {author: Jason Hickel, title: "Less Is More: How Degrowth Will Save the World", year: 2020}
+        traditions:
+          defining: [ecology.degrowth]
+          typical: [marxism.degrowth-communism, marxism.ecosocialism, marxism.autonomism, anarchism.green]
+          contested: [socdem.democratic-socialism, technology.l-acc]
+          rejects: [ecology.ecomodernism, liberalism.chicago, technology.e-acc]
+        presupposes: []
+        excludes: []
+        tension: [work.future.dignity-of-work]
+        tags: [degrowth]
+        analysis:
+          gains: [core-workers, reserve-army, peripheral-workers]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Shorter hours with maintained pay raise the share of output going to labor and cut demand for energy
+            and materials drawn from the periphery; decommodified essentials remove housing and care from profit.
+          drain: reduces
+          law_of_value: suspends
+
+  # ------------------------------------------------------------------
+  - id: tax.purpose
+    domain: economy
+    layer: horizon
+    question: What are taxes for?
+    plain: Why does the government tax people, and what should taxes be used to do?
+    short: the purpose of taxation
+    importance: 2
+    positions:
+      - id: tax.purpose.theft
+        label: Taxation is theft
+        claim: Taxation is taking people's property by force. Public services should be paid for voluntarily, or at most a minimal state should tax only to protect persons and property.
+        voiced: "Taxation is theft, purely and simply, even though it is theft on a grand and colossal scale which no acknowledged criminals could hope to match."
+        you: You see taxation as taking people's property by force, and think public services should be paid for voluntarily or kept to a bare minimum.
+        because: >
+          If a private individual took a share of your income each year under threat of prison, everyone would
+          call it robbery. Calling the taker 'the government' changes nothing morally. Voluntary payment for
+          services, charity and private provision can do what the state does, better and without coercion.
+          Those who accept a minimal state still hold that it may tax only to protect rights, never to
+          redistribute.
+        against:
+          - from: liberalism.utilitarian
+            text: >
+              Property itself exists only by laws that taxes pay to enforce. There is no pre-tax income to steal;
+              the question is only which rules produce good results.
+          - from: socdem.nordic
+            text: >
+              Taxes are what we pay for civilization: schools, hospitals, pensions and roads that no voluntary scheme
+              has ever supplied to everyone.
+        sources:
+          - {author: Murray N. Rothbard, title: The Ethics of Liberty, year: 1982}
+          - {author: Robert Nozick, title: "Anarchy, State, and Utopia", year: 1974}
+        traditions:
+          defining: [libertarianism.ancap]
+          typical: [libertarianism.minarchist, libertarianism.objectivist, libertarianism.paleo]
+          contested: [liberalism.austrian, conservatism.fusionism]
+          rejects: [socdem.nordic, liberalism.utilitarian, marxism.ml, conservatism.cst]
+        presupposes: [property.self-ownership.full]
+        excludes: [tax.purpose.redistribute, tax.purpose.currency-tool]
+        tension: []
+        tags: [libertarian]
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [reserve-army, core-workers]
+          mechanism: >
+            Eliminating taxation ends public provision financed by progressive taxes, so services become goods
+            purchased with private income and the propertyless lose what they received through the budget.
+          drain: sustains
+          law_of_value: extends
+
+      - id: tax.purpose.public-goods
+        label: Taxes pay for public goods; keep them low, broad and neutral
+        claim: Taxes exist to pay for things everyone needs but no market supplies, such as defense, courts, roads and basic schooling. They should be low, simple and fall evenly, without trying to reshape society.
+        voiced: "The subjects of every state ought to contribute towards the support of the government, as nearly as possible, in proportion to their respective abilities. And no more than is needed."
+        you: You think taxes should pay for things everyone needs that markets don't provide, and should be kept low, simple and even.
+        because: >
+          Some goods cannot be sold to individuals because no one can be excluded from them: defense, justice,
+          clean air, basic infrastructure. Taxes pay for these. Beyond that, taxes distort choices, discourage work
+          and investment, and invite politicians to buy votes. A broad, low, flat system raises what is needed
+          with the least damage and treats citizens as equals.
+        against:
+          - from: liberalism.egalitarian
+            text: >
+              A 'neutral' tax system on top of an unjust distribution keeps the injustice. Taxes must also correct
+              the inequalities markets and inheritance produce.
+          - from: libertarianism.ancap
+            text: >
+              Every public good can be supplied privately, and once you grant the state a taxing power for 'public
+              goods', the list of public goods never stops growing.
+        sources:
+          - {author: Adam Smith, title: "An Inquiry into the Nature and Causes of the Wealth of Nations", year: 1776}
+          - {author: Friedrich A. Hayek, title: The Constitution of Liberty, year: 1960}
+        traditions:
+          defining: [liberalism.classical]
+          typical: [liberalism.chicago, liberalism.ordoliberal, conservatism.fusionism, liberalism.austrian, libertarianism.minarchist, conservatism.burkean]
+          contested: [socdem.third-way, liberalism.technocratic]
+          rejects: [socdem.democratic-socialism, marxism.ml, libertarianism.ancap]
+        presupposes: []
+        excludes: []
+        tension: [tax.purpose.redistribute]
+        tags: []
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [reserve-army, core-workers]
+          mechanism: >
+            Flat and consumption-heavy taxes take a larger share of low incomes than of high ones, and capping
+            spending at public goods leaves health, pensions and housing to private income.
+          drain: none
+          law_of_value: extends
+
+      - id: tax.purpose.redistribute
+        label: Tax progressively to reduce inequality
+        claim: Taxes should reduce inequality, taking a larger share from high incomes, wealth and inheritance to fund public services and transfers for everyone, including closing tax havens that let fortunes escape.
+        voiced: "From each according to their means. Progressive taxes on income, wealth and estates built the welfare state, and tax havens are where the rich hid from it."
+        you: You think taxes should reduce inequality by taking more from the rich, their wealth and their inheritances, and funding services for everyone.
+        because: >
+          Markets produce inequality far beyond anything justified by effort or contribution, and inequality
+          corrupts politics, wastes talent and breaks social trust. Progressive income, wealth and inheritance
+          taxes, combined with universal services, are the most effective tool for equality in liberal democracies,
+          as the Nordic countries show. Today multinational profits and private fortunes escape to havens; closing
+          them and taxing where profits are made is part of the same principle.
+        against:
+          - from: liberalism.chicago
+            text: >
+              High marginal rates discourage work, saving and enterprise, and capital simply moves. The rich always
+              find ways out; the middle class pays.
+          - from: marxism.classical
+            text: >
+              Redistribution after the fact leaves the source of inequality, ownership of production, untouched.
+              What is given by taxation can be taken back at the next election.
+        sources:
+          - {author: Thomas Piketty, title: Capital in the Twenty-First Century, year: 2013}
+          - {author: Gabriel Zucman, title: The Hidden Wealth of Nations, year: 2013}
+          - {author: John Rawls, title: A Theory of Justice, year: 1971}
+        traditions:
+          defining: [socdem.nordic, liberalism.egalitarian]
+          typical: [socdem.keynesian, socdem.democratic-socialism, liberalism.social, liberalism.progressive, socdem.fabian, socdem.labourism]
+          contested: [socdem.third-way, conservatism.christian-democracy]
+          rejects: [libertarianism.ancap, liberalism.chicago, libertarianism.minarchist]
+        presupposes: []
+        excludes: [tax.purpose.theft]
+        tension: [tax.purpose.public-goods]
+        tags: []
+        analysis:
+          gains: [core-workers, reserve-army, professional-managerial]
+          pays: [finance-capital, landed-capital]
+          mechanism: >
+            Progressive taxes and universal services transfer income from top earners and wealth holders to the
+            rest within the nation. Taxing multinational profits where they are earned would return part of the
+            periphery's base; without that, core welfare remains financed partly by profits drawn from abroad.
+          drain: softens
+          law_of_value: regulates
+
+      - id: tax.purpose.currency-tool
+        label: Taxes don't fund spending; they manage inflation and shape behavior
+        claim: A government that issues its own currency does not need taxes to pay for spending. Taxes give the currency value, keep inflation in check, reduce inequality and discourage harmful things.
+        voiced: "Taxes for revenue are obsolete. A sovereign government spends first; taxes make room for its spending by withdrawing purchasing power, and they make people need its money."
+        you: You think a government with its own currency doesn't tax to pay for things, but to keep inflation down, give the currency value and discourage harmful behavior.
+        because: >
+          Federal spending is created when the government credits accounts; taxes later delete money from the
+          economy. Their purposes are therefore different from what most people think: to create demand for the
+          currency, to free real resources for public use without inflation, to reduce the wealth and power of
+          the rich, and to discourage pollution and speculation. This frees the debate from the false question
+          'how will you pay for it?'
+        against:
+          - from: liberalism.chicago
+            text: >
+              Whatever the accounting, a government that spends without matching revenue runs inflation or debt.
+              Calling taxes a tool for inflation control does not make politicians raise them when needed.
+          - from: marxism.third-worldism
+            text: >
+              The doctrine holds for the issuers of world reserve currencies. Periphery governments that tried it
+              met currency collapse.
+        sources:
+          - {author: Beardsley Ruml, title: Taxes for Revenue Are Obsolete, year: 1946}
+          - {author: Abba P. Lerner, title: Functional Finance and the Federal Debt, year: 1943}
+          - {author: Stephanie Kelton, title: The Deficit Myth, year: 2020}
+        traditions:
+          defining: []
+          typical: [socdem.keynesian, socdem.democratic-socialism, socdem.left-populism]
+          contested: [socdem.nordic]
+          rejects: [liberalism.chicago, liberalism.austrian, liberalism.ordoliberal, libertarianism.ancap]
+        presupposes: [money.nature.chartalist]
+        excludes: [tax.purpose.theft]
+        tension: []
+        tags: [mmt]
+        analysis:
+          gains: [core-workers, reserve-army]
+          pays: [finance-capital]
+          mechanism: >
+            Freeing spending from revenue constraints weakens bondholders' and rating agencies' leverage over
+            budgets and makes taxing the rich a matter of limiting their power rather than raising money.
+          drain: none
+          law_of_value: regulates
+
+      - id: tax.purpose.land-value
+        label: Tax land and natural resources, not work or enterprise
+        claim: Taxes should fall on the value of land and natural resources, which no one made, instead of on wages, trade and buildings. A single tax on land value could replace most others.
+        voiced: "Tax land values, not labor. The single tax takes for the community what the community creates and leaves to each person what each person makes."
+        you: You think taxes should fall on land and natural resources, which nobody made, rather than on work, trade or buildings.
+        because: >
+          Taxes on work discourage work, taxes on buildings discourage building, and taxes on trade discourage
+          trade. A tax on land value discourages nothing, because the supply of land is fixed. It also captures
+          for public use the value that public investment and population growth create, ends speculation in
+          vacant land and lowers housing costs. Economists from Adam Smith to Milton Friedman have called it the
+          least bad tax.
+        against:
+          - from: conservatism.burkean
+            text: >
+              A tax designed to take all land rent would wipe out the savings of every family that owns its home, and
+              force out old owners whose neighborhoods became valuable around them.
+          - from: marxism.classical
+            text: >
+              Taxing rent alone leaves profit on capital untouched and may even strengthen industrial capital against
+              landlords. It reforms one form of exploitation and blesses the rest.
+        sources:
+          - {author: Henry George, title: Progress and Poverty, year: 1879}
+          - {author: Adam Smith, title: "An Inquiry into the Nature and Causes of the Wealth of Nations", year: 1776, note: "on ground-rents as a subject of taxation"}
+        traditions:
+          defining: [libertarianism.georgist]
+          typical: [libertarianism.left]
+          contested: [liberalism.classical, liberalism.chicago, socdem.fabian]
+          rejects: [libertarianism.ancap, conservatism.burkean]
+        presupposes: [property.land.georgist-rent]
+        excludes: []
+        tension: []
+        tags: [georgist]
+        analysis:
+          gains: [core-workers, petty-bourgeoisie, industrial-capital]
+          pays: [landed-capital, finance-capital]
+          mechanism: >
+            Shifting taxes from wages and buildings to land values cuts the rent and mortgage burden on users of
+            land and removes speculative gains, at the expense of landowners and mortgage lenders.
+          drain: none
+          law_of_value: regulates
+
+      - id: tax.purpose.class-instrument
+        label: Taxes are a field of class struggle
+        claim: How a state taxes and spends shows whose state it is. Today taxes fall heavily on workers and consumption and pay bondholders and subsidies to business. Workers should fight to shift the burden onto capital while aiming to replace taxation with social ownership of the surplus.
+        voiced: "A heavy progressive or graduated income tax, yes, as a measure of struggle. But under a workers' state the surplus is owned in common, and the tax collector goes the way of the landlord."
+        you: You see taxation as a battleground between classes, where workers should push the burden onto capital while aiming for social ownership of the surplus.
+        because: >
+          The tax state funds itself from wages and consumption taxes, pays interest to bondholders and gives
+          firms subsidies and tax breaks, while profits are moved offshore. In crises the budget socializes
+          capital's losses. Taxation is therefore not neutral financing but a mechanism of distribution between
+          classes. Demanding progressive taxes helps workers now; but under social ownership the surplus is
+          directly available for social needs, and taxation of individuals loses its purpose.
+        against:
+          - from: socdem.nordic
+            text: >
+              Nordic tax systems funded the most equal societies in history within capitalism. Treating taxes only
+              as class struggle discards a tool that works.
+          - from: libertarianism.minarchist
+            text: >
+              The real class division is between taxpayers and tax consumers: those who produce and those who live
+              on the budget, including subsidized firms and public employees.
+        sources:
+          - {author: James O'Connor, title: The Fiscal Crisis of the State, year: 1973}
+          - {author: Karl Marx and Friedrich Engels, title: Manifesto of the Communist Party, year: 1848}
+        traditions:
+          defining: [marxism.classical]
+          typical: [marxism.ml, marxism.trotskyism, marxism.structural, marxism.leninism]
+          contested: [socdem.democratic-socialism]
+          rejects: [liberalism.classical, libertarianism.minarchist, socdem.third-way]
+        presupposes: [state.nature.class-instrument]
+        excludes: []
+        tension: []
+        tags: [marxist]
+        analysis:
+          gains: [core-workers, reserve-army]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Treating tax and spending as a contested distribution between classes directs workers to oppose
+            consumption taxes, bondholder payments and corporate subsidies and to press for the surplus to be
+            socialized outright.
+          drain: reduces
+          law_of_value: suspends
+          consciousness: class-economic
+
+      - id: tax.purpose.religious-duty
+        label: Zakat and tithe are a religious duty to the poor
+        claim: Giving a fixed share of wealth to the poor is a duty owed to God, not a fee to the state. A religious levy on wealth purifies it and guarantees the needy their right.
+        voiced: "Take from their wealth a charity to purify them. Zakat is not a gift from the rich; it is the right of the poor in the rich man's wealth."
+        you: You see giving a share of your wealth to the poor as a duty to God, a right the poor have in what the rich own.
+        because: >
+          Wealth belongs ultimately to God, and the poor have a share in it set by revelation. Zakat on savings,
+          trade goods, crops and livestock flows to the needy, debtors and travelers, and because it falls on
+          idle wealth it pushes money into productive use. It needs no bloated state and cannot be voted away.
+          A society that pays it faithfully has no destitute.
+        against:
+          - from: liberalism.classical
+            text: >
+              A religious levy enforced by the state imposes one faith's law on citizens of all faiths and none, and
+              its administration falls to clergy rather than accountable officials.
+          - from: marxism.classical
+            text: >
+              A fixed alms of two and a half percent on accumulated wealth leaves the wage relation and the mansions
+              intact. It is charity sanctified, not justice.
+        sources:
+          - {author: Muhammad Baqir al-Sadr, title: Iqtisaduna (Our Economics), year: 1961}
+          - {author: Sayyid Qutb, title: Social Justice in Islam, year: 1949}
+        traditions:
+          defining: []
+          typical: [religious.islamism-brotherhood, religious.islamism-khomeinist, religious.islamic-socialism, religious.salafism-quietist, religious.post-islamism]
+          contested: [conservatism.evangelical-right]
+          rejects: [liberalism.classical, libertarianism.ancap]
+        presupposes: [property.private.trust-from-god]
+        excludes: []
+        tension: []
+        tags: [religious, islamic]
+        analysis:
+          gains: [reserve-army, peasantry]
+          pays: [petty-bourgeoisie, finance-capital]
+          mechanism: >
+            A levy on accumulated wealth transfers a fixed share from savers and merchants to the poor and penalizes
+            idle hoards, without touching the ownership of production or the wage.
+          drain: none
+          law_of_value: regulates
+
+      - id: tax.purpose.tariffs-for-the-nation
+        label: Tax imports to build national industry, not citizens' incomes
+        claim: The state should raise revenue and build national strength through tariffs on imports, protecting domestic industry and jobs, rather than through heavy taxes on its own citizens' work.
+        voiced: "Tariffs, not income taxes. A nation that cannot make its own goods cannot defend itself. Tax the foreign producer, not the American worker."
+        you: You think the government should tax imports to protect national industry and jobs, rather than heavily taxing its own people's work.
+        because: >
+          Every great industrial power, from Hamilton's America and List's Germany to postwar Korea, built its
+          industry behind tariffs. Free trade lets foreign producers, often subsidized or using cheap labor, ruin
+          domestic industry. Tariffs both raise revenue and protect the jobs and skills on which national power
+          and community life depend. The tax system should favor production at home over consumption from abroad.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Tariffs are taxes on consumers, especially the poor, and invite retaliation. They protect inefficient
+              firms at everyone else's expense.
+          - from: marxism.third-worldism
+            text: >
+              Infant-industry protection makes sense for the periphery. In the core, tariffs keep peripheral exports
+              out and defend the monopoly position of core capital, presented as defense of workers.
+        sources:
+          - {author: Alexander Hamilton, title: Report on the Subject of Manufactures, year: 1791}
+          - {author: Friedrich List, title: The National System of Political Economy, year: 1841}
+        traditions:
+          defining: [conservatism.national]
+          typical: [conservatism.paleo, conservatism.right-populism, nationalism.developmental-state, conservatism.gaullism, nationalism.peronism, nationalism.kemalism]
+          contested: [socdem.labourism, conservatism.postliberal]
+          rejects: [liberalism.chicago, liberalism.classical, liberalism.internationalist, libertarianism.ancap]
+        presupposes: []
+        excludes: []
+        tension: [tax.purpose.public-goods]
+        tags: [protectionism]
+        analysis:
+          gains: [industrial-capital, core-workers]
+          pays: [peripheral-workers, finance-capital]
+          mechanism: >
+            Tariffs raise domestic prices for imported goods, shifting market share and wage premiums to domestic
+            producers and workers. In the core they shut out peripheral exporters; in the periphery they shelter
+            infant industries against core competition.
+          drain: sustains
+          law_of_value: regulates
+          disputed: >
+            The drain effect depends on where tariffs are levied: periphery protection (List, Chang) is widely held
+            among materialists to reduce dependence; core protection is read by Third Worldists as defending imperial rent.

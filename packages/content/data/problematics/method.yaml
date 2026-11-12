@@ -1,0 +1,1352 @@
+problematics:
+  # ------------------------------------------------------------------
+  - id: history.motor
+    domain: method
+    layer: method
+    question: What moves history?
+    plain: When empires fall, revolutions break out, or a whole way of life ends, what is doing the moving?
+    short: the motor of history
+    importance: 3
+    positions:
+      - id: history.motor.class-struggle
+        label: Class struggle over production moves history
+        claim: "History moves through conflict between classes over who owns and controls production and who does the work."
+        voiced: "The history of all hitherto existing society is the history of class struggles. Freeman and slave, lord and serf, boss and worker: find who works and who takes, and you have found the motor."
+        you: "You think history moves when the people who do the work and the people who own what they work with fight over the result."
+        because: >
+          Every society has to produce its means of life, and whoever controls that production controls
+          the surplus, the state that guards it, and the ideas that justify it. Great changes (the end of
+          slavery, of serfdom, of colonial rule) coincide with shifts in how production is organized and
+          with uprisings of those who did the work. Ideas and leaders matter, but they win only when they
+          express forces already at work in production; that is why the same idea fails in one century
+          and sweeps the world in the next.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Classes do not act; only individuals choose and act. "Class struggle" turns a statistical
+              grouping into a living agent and then credits it with deeds no one can observe. History is
+              the result of human action guided by ideas, including the idea of class struggle itself.
+          - from: marxism.black-radical
+            text: >
+              Capitalism did not grow out of a homogeneous class struggle in Europe; it was racial from
+              the start, built on slavery and conquest. A motor that sees only wage labor and capital
+              misses the racial order through which labor was divided and the colonized were made into
+              property.
+        sources:
+          - {author: Karl Marx and Friedrich Engels, title: The Communist Manifesto, year: 1848}
+          - {author: Karl Marx, title: "Preface to A Contribution to the Critique of Political Economy", year: 1859}
+          - {author: Mao Zedong, title: On Contradiction, year: 1937}
+        traditions:
+          defining: [marxism.classical, marxism.leninism, marxism.ml, marxism.maoism]
+          typical: [marxism.trotskyism, marxism.luxemburgism, marxism.council-communism, marxism.left-communism, marxism.autonomism, marxism.mariategui, marxism.mlm, marxism.hoxhaism]
+          contested: [marxism.analytical, marxism.black-radical, anarchism.communist]
+          rejects: [liberalism.austrian, liberalism.classical, conservatism.burkean, conservatism.traditionalist, fascism.italian, fascism.nazism]
+        presupposes: [society.units.classes]
+        excludes: [history.motor.ideas, history.motor.great-individuals]
+        tension: [history.motor.providence]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry, reserve-army]
+          pays: [finance-capital, industrial-capital, landed-capital, comprador-capital]
+          mechanism: >
+            Locating historical change in the conflict over production tells wage earners and peasants
+            that their condition is made by a relation they can contest, and points them at ownership
+            rather than at personalities; that threatens the property titles from which every fraction of
+            capital draws its income.
+          drain: reduces
+          law_of_value: none
+          disputed: >
+            Third Worldists (Emmanuel, Amin) and the Black radical tradition (Robinson) argue that
+            versions centered on core industrial workers have ignored the drain and the racial division
+            of labor; Brenner-type political Marxists answer that class relations, not world trade,
+            remain the decisive motor.
+          method: materialist
+
+      - id: history.motor.ideas
+        label: Ideas and the people who hold them move history
+        claim: "History moves when new ideas take hold: beliefs about God, rights, reason and the good life change, and institutions follow."
+        voiced: "Ideas have consequences. The scribblers of one generation become the statesmen of the next. Win the argument, and the world follows."
+        you: "You think history moves when people change what they believe, and that institutions follow the ideas that win."
+        because: >
+          Every institution was once an idea in someone's head: the rights of man, the nation, the
+          market, the welfare state, the Islamic republic. Material interests exist, but people pursue
+          them as they understand them, and understanding is made of ideas. The spread of Christianity,
+          of the Enlightenment, of socialism itself happened through argument, conversion and teaching,
+          not because of a change in tools. Even Marxism moved history as an idea.
+        against:
+          - from: marxism.classical
+            text: >
+              It is not consciousness that determines being but social being that determines
+              consciousness. Ideas win when they answer the needs of a rising class; the same idea of
+              equality sat in books for centuries until the bourgeoisie had a use for it.
+          - from: conservatism.burkean
+            text: >
+              Abstract ideas move history mostly toward disaster. Societies run on habit, affection and
+              inherited institutions; when theorists try to rebuild them from first principles, as in
+              France in 1793, the result is terror, not progress.
+        sources:
+          - {author: Richard M. Weaver, title: Ideas Have Consequences, year: 1948}
+          - {author: Friedrich A. Hayek, title: The Intellectuals and Socialism, year: 1949}
+          - {author: John Maynard Keynes, title: "The General Theory of Employment, Interest and Money", year: 1936}
+          - {author: Ludwig von Mises, title: Theory and History, year: 1957}
+        traditions:
+          defining: [liberalism.austrian]
+          typical: [liberalism.classical, liberalism.social, liberalism.progressive, conservatism.fusionism, conservatism.traditionalist, conservatism.postliberal]
+          contested: [conservatism.burkean, marxism.gramscian]
+          rejects: [marxism.classical, marxism.ml, marxism.maoism, marxism.structural]
+        presupposes: []
+        excludes: [history.motor.class-struggle]
+        tension: []
+        analysis:
+          gains: [professional-managerial, finance-capital, industrial-capital]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            If history moves by ideas, change is won in universities, think tanks and media, institutions
+            funded by wealth and staffed by professionals; and world inequality reads as the result of
+            better or worse beliefs, which keeps the transfer of value from periphery to core out of view.
+          drain: sustains
+          law_of_value: none
+          disputed: >
+            Gramscians hold that ideas become a material force when organized through institutions, so a
+            materialist can treat the battle of ideas as decisive in some conjunctures without making
+            ideas the motor.
+          method: idealist
+
+      - id: history.motor.great-individuals
+        label: Great individuals move history
+        claim: "History is made by exceptional individuals, such as founders, conquerors, inventors and prophets, whose will and genius bend events."
+        voiced: "The history of the world is but the biography of great men. Without Caesar, no empire; without Edison, no electric age; without the founder, no company."
+        you: "You think history is made by exceptional people, and that without them events would have gone another way."
+        because: >
+          Look at any turning point and you find a person who could have chosen otherwise: Lenin in 1917,
+          Churchill in 1940, Mandela in 1990. Structures set limits, but within them the decisive choices
+          are made by a few people with unusual vision, courage or ruthlessness. Societies that honor
+          their creators, inventors and builders prosper; those that level them stagnate.
+        against:
+          - from: marxism.classical
+            text: >
+              A great individual is great because he expresses needs that are already ripe. Had Napoleon
+              fallen at Toulon, another general would have filled the role the French bourgeoisie needed.
+              Individuals change the face of events, not their direction.
+          - from: anarchism.christian
+            text: >
+              The so-called great man is the most enslaved of all, carried by millions of small wills he
+              neither knows nor commands. Napoleon thought he led his armies into Russia; in truth he was
+              swept along by them.
+        sources:
+          - {author: Thomas Carlyle, title: "On Heroes, Hero-Worship, and the Heroic in History", year: 1841}
+          - {author: Ayn Rand, title: Atlas Shrugged, year: 1957}
+        traditions:
+          defining: [libertarianism.objectivist]
+          typical: [fascism.italian, fascism.nazism, fascism.neoreaction, technology.e-acc]
+          contested: [conservatism.traditionalist, nationalism.kemalism]
+          rejects: [marxism.classical, marxism.ml, anarchism.communist, anarchism.christian]
+        presupposes: []
+        excludes: [history.motor.class-struggle]
+        tension: [change.possibility.organized-people-can]
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            Crediting outcomes to exceptional individuals assigns the product of collective labor to those
+            at the top, which justifies founder equity, executive pay and personal rule, and teaches the
+            many to wait for a leader rather than organize.
+          drain: none
+          law_of_value: none
+          method: idealist
+
+      - id: history.motor.providence
+        label: God's providence moves history
+        claim: "History unfolds under God's providence: rulers rise and fall, and peoples prosper or suffer, according to a divine plan."
+        voiced: "The Lord raises up kings and casts them down. Empires are His instruments, and history is the theater of His judgment and His mercy."
+        you: "You see God's hand behind the rise and fall of nations, and history as moving toward ends He has set."
+        because: >
+          If God exists and governs the world, then nothing in history is outside His plan, and the
+          question becomes what He is teaching through events. Purely human explanations cannot account
+          for why the mighty fall, why small faithful peoples endure, or why history has a moral shape
+          at all. Providence gives events meaning and gives believers a reason for hope that does not
+          depend on winning.
+        against:
+          - from: marxism.classical
+            text: >
+              Providence explains everything and therefore nothing. Whoever wins is said to have been
+              chosen, which makes religion the sanction of every victor and the consolation of every
+              victim who is told to wait.
+          - from: religious.liberation-theology
+            text: >
+              A providence read from thrones forgets the God of the Exodus, who hears the cry of the
+              oppressed and acts through their liberation. A God who blesses every empire becomes the
+              chaplain of the empire.
+        sources:
+          - {author: Augustine of Hippo, title: The City of God, year: 426}
+          - {author: Jacques-Bénigne Bossuet, title: Discourse on Universal History, year: 1681}
+        traditions:
+          defining: [conservatism.integralism, conservatism.reactionary, religious.islamism-brotherhood]
+          typical: [conservatism.evangelical-right, religious.religious-zionism, religious.islamism-khomeinist, religious.salafism-quietist, conservatism.monarchist]
+          contested: [religious.liberation-theology, conservatism.cst, conservatism.christian-democracy]
+          rejects: [marxism.classical, liberalism.utilitarian, libertarianism.objectivist, anarchism.communist]
+        presupposes: []
+        excludes: []
+        tension: [history.motor.class-struggle]
+        analysis:
+          gains: [landed-capital, finance-capital]
+          pays: [peasantry, core-workers, peripheral-workers]
+          mechanism: >
+            Reading events as God's will turns the existing distribution of land and power into an
+            ordained order and channels grievance into prayer and patience; in its imperial form
+            (manifest destiny, the civilizing mission) it blessed conquest of the periphery as a
+            providential plan.
+          drain: sustains
+          law_of_value: none
+          disputed: >
+            Engels (The Peasant War in Germany) and later liberation theologians show providential faith
+            mobilizing the poor against lords; materialists split on whether religion in such movements
+            is the ideology of the oppressed or a brake on them.
+          method: idealist
+
+      - id: history.motor.technology
+        label: Technology and productivity drive history
+        claim: "History is driven by growth in technology and productive power; social arrangements change to fit new tools and techniques."
+        voiced: "The steam engine ended feudalism faster than any revolution. Every great change is a change in what we can make and how. Build the machines and society reorganizes around them."
+        you: "You think new technology is what really changes society, and that politics catches up with it afterward."
+        because: >
+          The hand-mill gives you society with the feudal lord; the steam-mill, society with the
+          industrial capitalist. Agriculture, the printing press, electricity and the computer each
+          remade family, work and power more than any law. Productive power tends to grow because people
+          do not willingly give up better tools, so the arrangements that fetter growth eventually give
+          way.
+        against:
+          - from: marxism.maoism
+            text: >
+              The theory of productive forces disarms the revolution. It says: wait for the machines,
+              then socialism. But relations of production and the struggle over them can lead; a poor
+              country can change who owns before it changes what it owns.
+          - from: ecology.degrowth
+            text: >
+              Technology does not grow by itself; it grows where capital finds profit in it, and its path
+              is chosen. Treating it as destiny hides who chooses and makes ecological limits look like
+              obstacles rather than facts.
+        sources:
+          - {author: Karl Marx, title: The Poverty of Philosophy, year: 1847}
+          - {author: G. A. Cohen, title: "Karl Marx's Theory of History: A Defence", year: 1978}
+          - {author: Marc Andreessen, title: The Techno-Optimist Manifesto, year: 2023}
+        traditions:
+          defining: [technology.e-acc]
+          typical: [marxism.analytical, marxism.scc, technology.transhumanism, technology.r-acc, technology.l-acc, ecology.ecomodernism, liberalism.technocratic]
+          contested: [marxism.ml, marxism.classical]
+          rejects: [marxism.maoism, ecology.deep-ecology, anarchism.primitivist, conservatism.traditionalist]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [industrial-capital, professional-managerial]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            If technology drives history, whoever owns and directs technical change sets society's course,
+            and social questions become engineering questions; the technological lead of the core is read
+            as merit rather than as a monopoly that lets core firms charge rents to the periphery.
+          drain: sustains
+          law_of_value: extends
+          disputed: >
+            Cohen and other analytical Marxists hold that the primacy of the productive forces is Marx's
+            own view; Maoists, and political Marxists such as Brenner, hold that relations of production
+            and class struggle lead.
+          method: mixed
+
+      - id: history.motor.peoples-in-struggle
+        label: Nations, races or civilizations in struggle move history
+        claim: "History is the struggle of peoples (nations, races or civilizations) for survival and dominance; their rise and fall is its substance."
+        voiced: "Peoples are the real actors. They are born, they fight for space and honor, and they triumph or die. Every page of history is written in the blood of nations."
+        you: "You think history is the story of peoples or civilizations competing to survive and rise."
+        because: >
+          Individuals die; peoples endure, carrying language, faith and memory across centuries. Wars,
+          migrations and empires show that the decisive units of history are communities of descent and
+          culture that act together. Class divisions exist inside every people, but when the nation is
+          threatened, its members close ranks; that is the deeper loyalty.
+        against:
+          - from: marxism.classical
+            text: >
+              Every nation is split into those who own and those who work. When "the nation" goes to war,
+              its workers die for its owners' markets. The workers have no country.
+          - from: liberalism.internationalist
+            text: >
+              Civilizations are not blocs, and nations are not organisms. People hold many identities at
+              once; reducing them to one, and declaring it at war with others, is how massacres are
+              prepared.
+        sources:
+          - {author: Benito Mussolini and Giovanni Gentile, title: The Doctrine of Fascism, year: 1932}
+          - {author: Adolf Hitler, title: Mein Kampf, year: 1925}
+          - {author: Samuel P. Huntington, title: The Clash of Civilizations and the Remaking of World Order, year: 1996}
+        traditions:
+          defining: [fascism.nazism, fascism.italian, nationalism.ethnic]
+          typical: [fascism.identitarian, nationalism.eurasianism, fascism.third-position, nationalism.hindutva, conservatism.paleo]
+          contested: [conservatism.national, conservatism.neo]
+          rejects: [marxism.classical, liberalism.internationalist, anarchism.communist, liberalism.classical]
+        presupposes: [society.units.nation-organism]
+        excludes: [history.motor.class-struggle]
+        tension: []
+        analysis:
+          gains: [industrial-capital, finance-capital, petty-bourgeoisie]
+          pays: [core-workers, peripheral-workers, reserve-army]
+          mechanism: >
+            Making peoples the actors of history binds workers to their own owners as one people and sets
+            them against workers elsewhere; in core countries it recruits labor to defend the nation's
+            share of world wealth, and in war it sends workers to die for it while arms makers profit.
+          drain: sustains
+          law_of_value: none
+          disputed: >
+            Anti-colonial thinkers (Cabral, Fanon) treated the struggle of colonized nations as the form
+            class struggle takes under empire; materialists split on how far "the nation" can be a motor
+            in the periphery without becoming the ideology of its own ruling class.
+          method: idealist
+
+      - id: history.motor.cycles
+        label: History moves in cycles of rise and decay
+        claim: "History turns in recurring cycles: orders rise, grow soft or corrupt, and fall, and the pattern repeats."
+        voiced: "Hard times make strong men, strong men make good times, good times make weak men. Dynasties last about four generations. The wheel turns."
+        you: "You see history as a wheel: societies rise, decay and fall, and the same pattern comes round again."
+        because: >
+          From Ibn Khaldun's dynasties to Polybius on Rome and the Chinese dynastic cycle, observers in
+          very different civilizations found the same pattern: a cohesive group conquers, prospers,
+          loses its solidarity in luxury, and is replaced by a hungrier one. The pattern explains why
+          progress so often reverses and why every confident age is followed by decline.
+        against:
+          - from: marxism.classical
+            text: >
+              The cycles are real in agrarian empires because their mode of production did not change.
+              Capitalism broke the wheel: it revolutionizes production constantly, and what comes after
+              it need not be a return.
+          - from: liberalism.classical
+            text: >
+              Cycles are a story imposed on history after the fact. Literacy, life expectancy and wealth
+              have grown in a way no ancient cycle allows; the wheel is a metaphor, not a law.
+        sources:
+          - {author: Ibn Khaldun, title: The Muqaddimah, year: 1377}
+          - {author: Polybius, title: The Histories, year: "c. -150"}
+          - {author: Oswald Spengler, title: The Decline of the West, year: 1918}
+        traditions:
+          defining: []
+          typical: [conservatism.traditionalist, fascism.traditionalist, religious.confucian, conservatism.paleo]
+          contested: [commonsense.declinist, fascism.neoreaction]
+          rejects: [marxism.classical, liberalism.classical, liberalism.technocratic, technology.e-acc]
+        presupposes: []
+        excludes: []
+        tension: [change.possibility.organized-people-can]
+        analysis:
+          gains: [landed-capital, finance-capital]
+          pays: [core-workers, peasantry]
+          mechanism: >
+            If every order rises and decays by a fixed rhythm, no new kind of society is possible and
+            reform or revolution only speeds the turn of the wheel; this counsels resignation, which leaves
+            the property order of the day in place.
+          drain: none
+          law_of_value: none
+          method: idealist
+
+      - id: history.motor.contingency
+        label: Nothing moves history; it is contingent
+        claim: "History has no motor or direction; it is the unplanned result of countless choices, accidents and circumstances."
+        voiced: "There are no laws of history. Things happen because people choose and because luck intervenes. Anyone who claims to know where history is going is selling something, usually a dictatorship."
+        you: "You think history has no hidden engine: it is choices, accidents and luck, and nobody can predict where it goes."
+        because: >
+          Every claim to have found history's law has been refuted by events, and every party that
+          believed it rode history's direction has used that belief to excuse crimes. The growth of human
+          knowledge is unpredictable, so history cannot be predicted. Honest history explains particular
+          events by particular causes and leaves the future open.
+        against:
+          - from: marxism.classical
+            text: >
+              Accident works within limits set by production. Individual wills collide and produce
+              something no one willed, but the result is not random; across millions of cases the
+              economic movement asserts itself.
+          - from: conservatism.reactionary
+            text: >
+              A history without design is a history without meaning. Denying providence leaves man
+              alone with chance, and a people that believes nothing directs history will follow whoever
+              shouts loudest.
+        sources:
+          - {author: Karl Popper, title: The Poverty of Historicism, year: 1957}
+          - {author: Isaiah Berlin, title: Historical Inevitability, year: 1954}
+        traditions:
+          defining: []
+          typical: [liberalism.classical, conservatism.burkean, liberalism.austrian]
+          contested: [liberalism.social]
+          rejects: [marxism.classical, marxism.ml, conservatism.reactionary, conservatism.integralism]
+        presupposes: []
+        excludes: [history.motor.class-struggle, history.motor.providence, history.motor.cycles]
+        tension: []
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            Denying history any structure rules out the claim that the present order serves a class and
+            could be replaced by design; the existing distribution of property appears as the unplanned
+            sum of free choices, and only piecemeal reform by experts remains legitimate.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Late Althusser's "aleatory materialism" argued that contingency and materialism are compatible;
+            most materialists hold that chance operates within structural tendencies.
+          method: idealist
+
+  # ------------------------------------------------------------------
+  - id: society.units
+    domain: method
+    layer: method
+    question: "What is society made of: individuals, classes, nations, families, souls?"
+    plain: When you say "society", what are the real building blocks you have in mind?
+    short: the units of society
+    importance: 3
+    positions:
+      - id: society.units.individuals
+        label: Society is individuals; only individuals act
+        claim: "Society is individuals and their voluntary relations; groups such as classes or nations are names for individuals acting."
+        voiced: "There is no such thing as society. There are individual men and women, and there are families. Only individuals think, choose and act."
+        you: "You think society is just individuals, and that talk of classes or nations acting is a shorthand at best."
+        because: >
+          Every collective act is performed by individuals: a nation goes to war when particular people
+          decide to fight. Explanations that treat groups as agents cannot be checked against anything
+          anyone did, and they license treating people as interchangeable members of a category.
+          Respecting persons means starting from the individual, with his own purposes, knowledge and
+          responsibility.
+        against:
+          - from: marxism.classical
+            text: >
+              The individual who chooses is already the product of social relations: language, class,
+              the labor market he must enter. The human essence is the ensemble of social relations.
+              Starting from the isolated individual is the outlook of the market, not a discovery about
+              humanity.
+          - from: communitarianism
+            text: >
+              The unencumbered self who picks his ends from nowhere does not exist. We are born into
+              families, peoples and traditions that constitute who we are; a politics built on the
+              chooser forgets what makes choosing possible.
+        sources:
+          - {author: Ludwig von Mises, title: Human Action, year: 1949}
+          - {author: Friedrich A. Hayek, title: Individualism and Economic Order, year: 1948}
+          - {author: Margaret Thatcher, title: Interview for Woman's Own, year: 1987}
+        traditions:
+          defining: [liberalism.austrian, libertarianism.ancap, libertarianism.objectivist, libertarianism.minarchist]
+          typical: [liberalism.classical, liberalism.chicago, libertarianism.paleo, technology.cyberlibertarian]
+          contested: [liberalism.egalitarian, marxism.analytical, anarchism.individualist]
+          rejects: [marxism.classical, conservatism.traditionalist, conservatism.cst, fascism.italian, communitarianism]
+        presupposes: []
+        excludes: [society.units.classes, society.units.nation-organism]
+        tension: [class.concept.relation-to-production]
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [core-workers, peripheral-workers, reserve-army]
+          mechanism: >
+            If only individuals are real, a worker and an owner meet as equals in a contract, and
+            collective bargaining, progressive taxation and public ownership look like some individuals
+            coercing others; this disarms wage earners, whose only strength is numbers, while owners keep
+            the power that property gives them singly.
+          drain: sustains
+          law_of_value: extends
+          method: idealist
+
+      - id: society.units.classes
+        label: Society is made of classes defined by production
+        claim: "Society is made of classes: groups defined by their relation to the means of production, bound together and divided by that relation."
+        voiced: "Society does not consist of individuals; it expresses the sum of relations in which individuals stand. The worker and the capitalist are made by the relation between them."
+        you: "You see society as built from classes, people defined by whether they own what others work with or work for those who do."
+        because: >
+          An individual's life chances, daily routine and political options follow from whether she must
+          sell her labor, owns land, lends money or employs others. These positions exist before any
+          particular person fills them and outlast her. Explanations that start from classes predict
+          strikes, revolutions and voting patterns that explanations from individual taste cannot.
+        against:
+          - from: liberalism.austrian
+            text: >
+              A class is a category drawn by the observer. People in the same "class" want different
+              things and act differently; giving the category interests and will invites a party to
+              speak for it.
+          - from: marxism.analytical
+            text: >
+              Class explanations need micro-foundations: an account of why individual members, each
+              acting on their own reasons, actually behave as the class theory says. Without it,
+              "class interest" is functionalist hand-waving.
+        sources:
+          - {author: Karl Marx, title: Theses on Feuerbach, year: 1888, note: "written 1845"}
+          - {author: Karl Marx, title: Grundrisse, year: 1939, note: "written 1857–58"}
+          - {author: E. P. Thompson, title: The Making of the English Working Class, year: 1963}
+        traditions:
+          defining: [marxism.classical, marxism.leninism, marxism.ml]
+          typical: [marxism.maoism, marxism.trotskyism, marxism.autonomism, marxism.council-communism, marxism.structural, anarchism.syndicalist]
+          contested: [marxism.analytical, feminism.black, marxism.black-radical]
+          rejects: [liberalism.austrian, libertarianism.ancap, conservatism.cst, fascism.italian]
+        presupposes: [class.concept.relation-to-production]
+        excludes: [society.units.individuals, class.concept.no-such-thing]
+        tension: []
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry, reserve-army]
+          pays: [finance-capital, industrial-capital, landed-capital, comprador-capital]
+          mechanism: >
+            Seeing society as classes shows wage earners that their weakness as individuals is their
+            strength in combination, and names the property relation as the thing to change, which cuts
+            against every owner's revenue.
+          drain: reduces
+          law_of_value: none
+          disputed: >
+            Whether core and peripheral workers form one class with one interest is disputed: Third
+            Worldists hold that core workers share in the drain, orthodox Marxists that they are
+            exploited alike.
+          method: materialist
+
+      - id: society.units.families
+        label: The family is the basic cell of society
+        claim: "Society is built from families; the household, not the individual, is its basic unit and comes before the state."
+        voiced: "The family is a true society, older than any state. A nation is a family of families. Destroy the family and you get a crowd of lonely individuals at the mercy of the state and the market."
+        you: "You think the family is the real building block of society, and that a healthy society starts with healthy families."
+        because: >
+          Every person is born into a family, learns language, morals and trust there, and is cared for
+          there in infancy, sickness and age. Families precede states and markets historically and in
+          each life. Where families are strong, communities are self-governing; where they break down,
+          the state and the market fill the gap and people are left alone before both.
+        against:
+          - from: feminism.materialist
+            text: >
+              Treating the household as one unit hides who does its work and who holds its purse. The
+              family "cell" runs on women's unpaid labor, and its harmony is often enforced by the
+              authority of fathers and husbands.
+          - from: marxism.classical
+            text: >
+              The family form follows property. The monogamous patriarchal family arose to pass private
+              wealth to known heirs; it is not the foundation of society but one of its products, and it
+              changes when property changes.
+        sources:
+          - {author: Pope Leo XIII, title: Rerum Novarum, year: 1891}
+          - {author: Pope John Paul II, title: Familiaris Consortio, year: 1981}
+          - {author: Aristotle, title: Politics, year: "c. -350"}
+        traditions:
+          defining: [conservatism.cst, religious.confucian, conservatism.traditionalist]
+          typical: [conservatism.christian-democracy, conservatism.evangelical-right, conservatism.distributism, conservatism.postliberal, conservatism.paleo, religious.islamism-brotherhood]
+          contested: [libertarianism.paleo, commonsense.look-after-your-own]
+          rejects: [liberalism.progressive, feminism.radical, anarchism.communist, marxism.classical]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [industrial-capital, landed-capital, petty-bourgeoisie]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            Treating the family as the basic unit assigns care, schooling and welfare to households first,
+            which keeps that work unpaid and mostly done by women, lowers what employers and the state
+            must pay to reproduce labor, and makes inheritance the normal path by which wealth passes on.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Social reproduction theorists treat the family as a site where capital's costs are offloaded;
+            some Marxist feminists and distributists alike defend the household as a shelter from the
+            market.
+          method: mixed
+
+      - id: society.units.nation-organism
+        label: Society is a living whole, the nation or people
+        claim: "Society is an organic whole, a nation or people, of which individuals and classes are parts, like organs of one body."
+        voiced: "The nation is not a sum of individuals; it is a living organism with its own soul and destiny. Each class has its function, as hand and heart do. Strife between them is disease."
+        you: "You see society as one living body, the people or nation, where every group has its place and its job."
+        because: >
+          A people shares language, memory, land and fate; its members are formed by it and can only
+          flourish within it. Liberalism dissolves this whole into atoms, and Marxism splits it into
+          warring camps; both destroy the solidarity that lets a nation build, defend itself and care for
+          its weak. An organized community, with every trade represented, serves all.
+        against:
+          - from: marxism.classical
+            text: >
+              The organism has a head that eats and limbs that work. Calling the class hierarchy a body
+              presents the owner's command as nature and the worker's strike as illness, which is why
+              organic states abolish free unions first.
+          - from: liberalism.classical
+            text: >
+              Holism is the tribal spirit dressed as science. A nation that is an organism has no room
+              for the individual's conscience; its "soul" is defined by whoever holds power.
+        sources:
+          - {author: Johann Gottlieb Fichte, title: Addresses to the German Nation, year: 1808}
+          - {author: Benito Mussolini and Giovanni Gentile, title: The Doctrine of Fascism, year: 1932}
+          - {author: Juan Domingo Perón, title: The Organized Community, year: 1949}
+          - {author: Ziya Gökalp, title: The Principles of Turkism, year: 1923}
+        traditions:
+          defining: [fascism.italian, fascism.nazism, fascism.national-syndicalism, nationalism.ethnic]
+          typical: [nationalism.peronism, nationalism.kemalism, fascism.clerical, nationalism.eurasianism, nationalism.hindutva, fascism.identitarian]
+          contested: [conservatism.national, conservatism.one-nation, nationalism.baathism]
+          rejects: [marxism.classical, liberalism.classical, liberalism.austrian, anarchism.communist]
+        presupposes: []
+        excludes: [society.units.individuals, society.units.classes]
+        tension: []
+        analysis:
+          gains: [industrial-capital, finance-capital, petty-bourgeoisie]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Declaring the nation one body makes strikes, class parties and independent unions into
+            disease, which in practice means labor's organizations are folded into state-run corporations
+            while owners keep their property and their command over work.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            In the periphery, organicist nationalisms (Peronism, Kemalism) also nationalized
+            foreign-owned assets and reduced the drain, while in the core they fed expansion and war;
+            materialists dispute whether these are the same position in different places.
+          method: idealist
+
+      - id: society.units.persons
+        label: Society is persons in nested communities
+        claim: "Society is made of persons, each with dignity and a destiny beyond the state, who live in nested communities: family, parish, trade, nation."
+        voiced: "The human person is the source, the center and the purpose of all social life. Not an atom, not a cog: a person, made for communion, who must never be a means."
+        you: "You see society as made of persons with their own dignity who belong to families, communities and associations, each with its own role."
+        because: >
+          Individualism forgets that persons need community; collectivism forgets that communities exist
+          for persons. Personalism holds both: each person has an inviolable dignity, and realizes it in
+          families, unions, parishes and towns that the state must respect and support but not absorb.
+          This principle of subsidiarity keeps power close to those it affects.
+        against:
+          - from: marxism.classical
+            text: >
+              The person whose dignity is proclaimed still must sell his labor to eat. Personalism
+              blesses owner and worker alike as persons in communion and leaves the relation between
+              them untouched.
+          - from: liberalism.classical
+            text: >
+              "Destiny beyond the state" turns into a church that tells the state what the person's
+              destiny is. Nested communities have authorities, and personalism rarely lets the person
+              leave them.
+        sources:
+          - {author: Emmanuel Mounier, title: Personalist Manifesto, year: 1936}
+          - {author: Pope Pius XI, title: Quadragesimo Anno, year: 1931}
+        traditions:
+          defining: [conservatism.christian-democracy, conservatism.cst]
+          typical: [conservatism.distributism, religious.christian-socialism, conservatism.integralism]
+          contested: [religious.liberation-theology, communitarianism]
+          rejects: [fascism.italian, marxism.ml, libertarianism.objectivist]
+        presupposes: []
+        excludes: [society.units.nation-organism]
+        tension: []
+        analysis:
+          gains: [core-workers, petty-bourgeoisie, industrial-capital]
+          pays: [finance-capital]
+          mechanism: >
+            Personalism backs the family wage, codetermination and strong intermediate bodies, which raised
+            labor's share in Christian democratic Europe and restrained speculative finance; but it treats
+            owner and worker as partners in one common good, which rules out abolishing private ownership
+            of production.
+          drain: none
+          law_of_value: regulates
+          method: idealist
+
+      - id: society.units.community-of-faith
+        label: The community of believers is the true unit
+        claim: "The true unit of society is the community of faith; bonds of belief come before bonds of nation, class or blood."
+        voiced: "A Muslim has no nationality except his creed. The ummah is one body; Arab and Persian, rich and poor, stand in one line before God."
+        you: "You think the deepest bond between people is shared faith, and that the community of believers matters more than nation or class."
+        because: >
+          Nations and classes are worldly divisions that pit believers against each other; faith unites
+          across them under one law and one God. A society built on shared revelation has a common moral
+          standard, duties of charity binding rich to poor, and a loyalty no colonial border or party can
+          split.
+        against:
+          - from: nationalism.baathism
+            text: >
+              The Arab nation is the living unit; religion is part of its heritage, but making faith the
+              bond divides Arabs, Christian and Muslim, Sunni and Shia, and leaves them open to sectarian
+              rule and foreign manipulation.
+          - from: marxism.arab-socialism
+            text: >
+              The ummah contains landlords and sharecroppers, emirs and migrant laborers. A unity of faith
+              that leaves the land and the oil where they are unites the poor behind the rich.
+        sources:
+          - {author: Sayyid Qutb, title: Milestones, year: 1964}
+          - {author: Sayyid Qutb, title: Social Justice in Islam, year: 1949}
+        traditions:
+          defining: [religious.islamism-brotherhood, religious.salafism-quietist, religious.salafi-jihadism]
+          typical: [religious.islamism-khomeinist, conservatism.integralism]
+          contested: [religious.post-islamism, religious.islamic-socialism]
+          rejects: [nationalism.baathism, nationalism.kemalism, marxism.ml, liberalism.classical]
+        presupposes: []
+        excludes: [society.units.nation-organism]
+        tension: []
+        analysis:
+          gains: [petty-bourgeoisie, landed-capital]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >
+            Making the faith community the unit unites rich and poor believers under shared law and alms
+            and against secular nationalists and the left; it can reject foreign domination, but it leaves
+            property in land, trade and oil under religious sanction.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Materialists split on whether Islamist movements are anti-imperialist (revolutionary Iran's
+            break with the United States) or an alternative to the left that suits Gulf capital (the
+            Brotherhood's role against Nasser).
+          method: idealist
+
+      - id: society.units.interlocking-structures
+        label: Society is many interlocking structures, none primary
+        claim: "Society is made of overlapping structures (class, race, gender, sexuality, nation, disability) that interlock, with none of them primary."
+        voiced: "We do not live single-issue lives. Racism, sexism and class oppression are interlocking systems; a Black working woman meets them all at once, not one at a time."
+        you: "You see society as several systems of power overlapping, and you don't think class, race or gender comes first."
+        because: >
+          A theory that starts from one structure always misses people at the intersections: Black
+          women, for example, were invisible both to the white women's movement and to the male-led
+          civil rights movement. Oppressions shape each other, so none can be reduced to the others,
+          and liberation requires seeing all of them together.
+        against:
+          - from: marxism.classical
+            text: >
+              Without a primary relation there is no account of what holds the structures together, and
+              no strategy. Capital organizes race and gender to divide and cheapen labor; listing
+              oppressions side by side forgets the system that profits from all of them.
+          - from: liberalism.classical
+            text: >
+              Sorting people by group membership reintroduces the collective categories liberalism fought
+              to abolish. Each person is an individual, not a point where structures cross.
+        sources:
+          - {author: Combahee River Collective, title: A Black Feminist Statement, year: 1977}
+          - {author: Kimberlé Crenshaw, title: "Mapping the Margins: Intersectionality, Identity Politics, and Violence against Women of Color", year: 1991}
+          - {author: Patricia Hill Collins, title: Black Feminist Thought, year: 1990}
+        traditions:
+          defining: [feminism.black]
+          typical: [liberalism.progressive, feminism.queer, feminism.decolonial]
+          contested: [marxism.social-reproduction, marxism.structural, socdem.democratic-socialism]
+          rejects: [marxism.ml, liberalism.austrian, conservatism.traditionalist]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [core-workers, peripheral-workers, professional-managerial]
+          pays: [industrial-capital]
+          mechanism: >
+            Where it organizes (domestic worker campaigns, equal-pay suits) it raises the price of labor
+            that race and gender had cheapened, which employers pay; where it settles into diversity
+            management, professionals of each group win posts without any change in ownership.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Social reproduction theorists (Bhattacharya) hold class and oppression form one unity under
+            capital; class-first Marxists (Adolph Reed) hold the frame abandons class; Robinson's racial
+            capitalism treats race and class as one system.
+          method: mixed
+
+  # ------------------------------------------------------------------
+  - id: conflict.nature
+    domain: method
+    layer: method
+    question: Is social conflict a malfunction or the engine of change?
+    plain: When groups clash (strikes, protests, culture fights), is something broken, or is that how things move?
+    short: social conflict
+    importance: 2
+    positions:
+      - id: conflict.nature.engine-antagonism
+        label: Conflict between classes is the engine of change
+        claim: "Society is built on opposed interests, above all between owners and workers, and change comes from the struggle between them."
+        voiced: "Without struggle there is no progress. The interests of boss and worker are opposed at the root, and every gain was won by fighting, never by asking."
+        you: "You think conflict between opposed groups is how anything important changes, and that some interests just can't be reconciled."
+        because: >
+          The worker wants more pay and less work; the owner wants the opposite, and both are right
+          about their interests. No goodwill dissolves that. History shows that the weekend, the vote and
+          independence were won by struggle against resistance. Contradiction is in everything; its
+          struggle is absolute, its harmony temporary.
+        against:
+          - from: conservatism.cst
+            text: >
+              It is a great mistake to think class is naturally hostile to class. Capital cannot do
+              without labor, nor labor without capital. Preaching war between them makes enemies of
+              people who need each other and serves only agitators.
+          - from: liberalism.austrian
+            text: >
+              Rightly understood, interests harmonize. The worker's wage rises with capital investment,
+              which needs profit. Class war destroys the capital on which wages depend.
+        sources:
+          - {author: Mao Zedong, title: On Contradiction, year: 1937}
+          - {author: Karl Marx and Friedrich Engels, title: The Communist Manifesto, year: 1848}
+        traditions:
+          defining: [marxism.classical, marxism.ml, marxism.maoism, marxism.leninism]
+          typical: [marxism.trotskyism, marxism.autonomism, anarchism.communist, anarchism.syndicalist, anarchism.insurrectionary, marxism.mlm]
+          contested: [socdem.revisionist, socdem.democratic-socialism]
+          rejects: [conservatism.cst, fascism.italian, liberalism.austrian, liberalism.technocratic]
+        presupposes: [history.motor.class-struggle]
+        excludes: [conflict.nature.market-harmony, conflict.nature.organic-harmony, workplace.conflict.partners-with-a-misunderstanding]
+        tension: []
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [industrial-capital, finance-capital, landed-capital]
+          mechanism: >
+            Treating conflict as the engine legitimizes strikes, occupations and mass struggle as the
+            normal way to change things, removing the moral cost that harmony doctrines impose on those
+            who organize against owners.
+          drain: none
+          law_of_value: none
+          method: materialist
+
+      - id: conflict.nature.market-harmony
+        label: Interests harmonize; markets turn self-interest to mutual gain
+        claim: "Properly understood, people's interests are in harmony; free exchange benefits both sides, and social conflict comes from misunderstanding or political interference."
+        voiced: "All legitimate interests are harmonious. Trade is not war: both sides gain or they would not trade. Class conflict is a myth invented by people who want power."
+        you: "You think that when people trade freely everyone gains, and that most social conflict comes from politics getting in the way."
+        because: >
+          Voluntary exchange happens only when both sides expect to gain. Under the division of labor,
+          the worker gains from the capital that raises his productivity, and the capitalist gains from
+          serving consumers. Conflicts appear when the state grants privileges, protection or subsidies
+          that let one group gain at another's expense; remove the privileges and harmony returns.
+        against:
+          - from: marxism.classical
+            text: >
+              The worker "agrees" to the wage because the alternative is hunger. Exchange between someone
+              who owns the means of life and someone who owns nothing is harmonious only in the sense
+              that the hungry party cannot refuse.
+          - from: conservatism.cst
+            text: >
+              Free competition cannot be the ruling principle of economic life. Left to itself it
+              produces the concentration of power in a few hands, and harmony must be built by justice
+              and charity, not assumed from exchange.
+        sources:
+          - {author: Frédéric Bastiat, title: Economic Harmonies, year: 1850}
+          - {author: Ludwig von Mises, title: Liberalism, year: 1927}
+        traditions:
+          defining: [liberalism.austrian, libertarianism.ancap]
+          typical: [liberalism.classical, liberalism.chicago, libertarianism.objectivist, libertarianism.minarchist, conservatism.fusionism]
+          contested: [liberalism.ordoliberal]
+          rejects: [marxism.classical, anarchism.syndicalist, conservatism.cst, socdem.labourism]
+        presupposes: []
+        excludes: [conflict.nature.engine-antagonism, workplace.conflict.structural-antagonism]
+        tension: []
+        analysis:
+          gains: [industrial-capital, finance-capital]
+          pays: [core-workers, peripheral-workers, reserve-army]
+          mechanism: >
+            If interests harmonize in the market, collective action by workers becomes an attack on the
+            common good and a cause of unemployment, which justifies restrictions on strikes, closed shops
+            and wage floors and leaves wages to the employer's bargaining strength; applied between nations
+            it presents unequal trade as mutual gain.
+          drain: sustains
+          law_of_value: extends
+          method: idealist
+
+      - id: conflict.nature.organic-harmony
+        label: Classes should cooperate; conflict is a disorder to heal
+        claim: "Classes are meant to cooperate like parts of one body; social conflict is a disorder to be healed by justice, mediation and shared institutions."
+        voiced: "Capital needs labor and labor needs capital. Where there is strife, someone has failed in justice or charity. Heal it with a just wage, mediation and bodies where both sit together."
+        you: "You think employers and workers are meant to work together, and that conflict means someone has failed to be fair."
+        because: >
+          Conflict wastes what both sides need and tears communities apart. Owners who pay a just wage and
+          workers who give honest work have no need to fight; where they do fight, the cure is to
+          restore justice through mediation, works councils and corporate bodies in which each trade
+          governs its own affairs. Peace among the classes is both possible and morally required.
+        against:
+          - from: anarchism.syndicalist
+            text: >
+              Every protection you praise, the weekend, the limit on hours, was won by strikes, not by
+              mediation. Harmony between master and servant means the servant's silence.
+          - from: liberalism.classical
+            text: >
+              Corporate bodies of employers and workers become cartels that fix prices and bar
+              newcomers, at the consumer's expense. The market harmonizes interests without needing
+              guilds.
+        sources:
+          - {author: Pope Leo XIII, title: Rerum Novarum, year: 1891}
+          - {author: Pope Pius XI, title: Quadragesimo Anno, year: 1931}
+        traditions:
+          defining: [conservatism.cst, conservatism.christian-democracy, religious.confucian]
+          typical: [conservatism.one-nation, conservatism.distributism, nationalism.peronism, nationalism.kemalism, fascism.italian, fascism.clerical]
+          contested: [socdem.nordic, conservatism.gaullism]
+          rejects: [marxism.classical, marxism.maoism, anarchism.syndicalist, liberalism.austrian]
+        presupposes: []
+        excludes: [conflict.nature.engine-antagonism]
+        tension: [workplace.conflict.structural-antagonism]
+        analysis:
+          gains: [industrial-capital, landed-capital, petty-bourgeoisie]
+          pays: [core-workers]
+          mechanism: >
+            Treating conflict as a disorder commits workers to arbitration and cross-class bodies in which
+            owners keep their property and the last word; it wins real protections (family wage, Sunday
+            rest), while ruling out the strike as a way to change who owns.
+          drain: none
+          law_of_value: regulates
+          method: idealist
+
+      - id: conflict.nature.institutionalized
+        label: Conflict is normal and useful if channeled by institutions
+        claim: "Conflicting interests are normal and can drive improvement, as long as they are channeled through bargaining, elections and courts."
+        voiced: "Conflict is not a sickness. Unions and employers should fight it out, but at the bargaining table, with rules both sides accept. That's how we built the welfare state without a revolution."
+        you: "You think clashes of interest are normal and healthy, as long as they're fought out through negotiation and votes."
+        because: >
+          Societies that suppress conflict stagnate or explode; societies that let it run wild tear
+          themselves apart. The Nordic and German experience shows a third path: strong unions and strong
+          employers' associations bargaining centrally, backed by elections and labor courts. Each side
+          wins some and loses some, and steady gains accumulate.
+        against:
+          - from: marxism.leninism
+            text: >
+              The rules of the table are written by the side that owns the table. When the compromise
+              no longer suits capital, as in the 1980s, it walks away, and the institutions that were
+              meant to contain conflict contain only the workers.
+          - from: liberalism.chicago
+            text: >
+              Centralized bargaining cartelizes labor and freezes wages above market levels, protecting
+              insiders at the cost of the unemployed and of growth.
+        sources:
+          - {author: Ralf Dahrendorf, title: Class and Class Conflict in Industrial Society, year: 1959}
+          - {author: Lewis A. Coser, title: The Functions of Social Conflict, year: 1956}
+        traditions:
+          defining: [socdem.nordic, socdem.labourism]
+          typical: [socdem.keynesian, liberalism.social, liberalism.egalitarian, socdem.democratic-socialism, conservatism.christian-democracy]
+          contested: [marxism.eurocommunism, socdem.third-way]
+          rejects: [marxism.maoism, anarchism.insurrectionary, fascism.italian, liberalism.austrian]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [core-workers, professional-managerial, industrial-capital]
+          pays: [reserve-army]
+          mechanism: >
+            Channeling conflict into bargaining and elections wins organized core workers regular gains
+            while guaranteeing owners labor peace and predictable costs; those outside the institutions
+            (the unorganized, the precarious, migrants without votes) get no seat at the table.
+          drain: none
+          law_of_value: regulates
+          consciousness: class-economic
+          method: mixed
+
+      - id: conflict.nature.friend-enemy
+        label: Politics is friend against enemy; peoples are in permanent struggle
+        claim: "Politics is the distinction between friend and enemy; conflict between peoples is permanent, and conflict inside the people must be suppressed."
+        voiced: "The political is the friend-enemy distinction. A people that no longer knows its enemy has ceased to exist politically. Inside, unity; outside, struggle."
+        you: "You think politics comes down to knowing who your enemies are, and that a people must stand together against them."
+        because: >
+          Liberals pretend that every conflict can be negotiated, but some groups really do threaten each
+          other's existence, and when it matters, someone must decide. A people survives only if it
+          recognizes its enemy and closes its own ranks. Internal factions that weaken that unity serve
+          the enemy, whatever they intend.
+        against:
+          - from: marxism.classical
+            text: >
+              The "enemy" chosen is always another people, never the owners at home. Turning class
+              conflict into treason and foreign conflict into destiny is how capital sends workers to
+              kill each other.
+          - from: socdem.left-populism
+            text: >
+              Antagonism is real, but it can be turned into agonism: adversaries who share democratic
+              rules. Schmitt's enemy who must be destroyed ends in dictatorship.
+        sources:
+          - {author: Carl Schmitt, title: The Concept of the Political, year: 1932}
+          - {author: Benito Mussolini and Giovanni Gentile, title: The Doctrine of Fascism, year: 1932}
+        traditions:
+          defining: [fascism.italian, fascism.nazism]
+          typical: [fascism.identitarian, nationalism.eurasianism, fascism.neoreaction, fascism.third-position]
+          contested: [conservatism.postliberal, conservatism.national, socdem.left-populism]
+          rejects: [liberalism.classical, liberalism.internationalist, marxism.classical, conservatism.cst]
+        presupposes: []
+        excludes: [conflict.nature.market-harmony, conflict.nature.engine-antagonism]
+        tension: []
+        analysis:
+          gains: [industrial-capital, finance-capital]
+          pays: [core-workers, peripheral-workers, reserve-army]
+          mechanism: >
+            Making the external enemy the essence of politics turns internal class conflict into treason
+            and justifies emergency rule, arms spending and the suppression of labor's own organizations;
+            workers pay in war dead and lost rights, arms makers and heavy industry profit.
+          drain: sustains
+          law_of_value: none
+          method: idealist
+
+      - id: conflict.nature.agonism
+        label: Conflict between adversaries is the lifeblood of politics
+        claim: "Conflict is ineradicable and should be made visible: politics needs clear opposing sides contesting within shared rules, not a managed consensus."
+        voiced: "The consensus at the center is the problem. When every party agrees, politics dies, and anger goes to the far right. Give people a real choice between real sides."
+        you: "You think politics needs real opposing sides, and that cozy agreement among the parties is what makes people give up on it."
+        because: >
+          The claim that we are beyond left and right hid real disagreements behind expert management,
+          and people with grievances found no one to voice them except those who blame outsiders.
+          Collective identities are built in conflict, and a healthy politics constructs a "we" against a
+          "they" while treating opponents as legitimate adversaries rather than enemies.
+        against:
+          - from: marxism.classical
+            text: >
+              The sides are not built by speeches; they exist in production. A "people" assembled by
+              rhetoric can be led anywhere, including by owners who borrow its language.
+          - from: liberalism.technocratic
+            text: >
+              Manufacturing polarization for electoral advantage corrodes trust and makes compromise
+              impossible. Most problems have workable solutions that partisanship blocks.
+        sources:
+          - {author: Chantal Mouffe, title: The Democratic Paradox, year: 2000}
+          - {author: Chantal Mouffe, title: On the Political, year: 2005}
+        traditions:
+          defining: [socdem.left-populism]
+          typical: [marxism.gramscian, socdem.democratic-socialism]
+          contested: [conservatism.right-populism]
+          rejects: [liberalism.technocratic, socdem.third-way, liberalism.austrian]
+        presupposes: []
+        excludes: [conflict.nature.organic-harmony]
+        tension: []
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [finance-capital]
+          mechanism: >
+            Repoliticizing the center lets coalitions of wage earners and professionals run on
+            redistribution against finance within liberal-democratic institutions; because its "people"
+            is built in discourse rather than in production, its demands stop where the coalition's
+            professional leadership stops.
+          drain: none
+          law_of_value: regulates
+          method: idealist
+
+      - id: conflict.nature.stirred-up
+        label: Most conflict is stirred up by politicians and media
+        claim: "Ordinary people mostly agree and get along; most social conflict is stirred up by politicians, activists and media who profit from division."
+        voiced: "Ordinary people get along fine. It's the politicians and the TV that keep everyone at each other's throats, because division gets votes and clicks."
+        you: "You think most people basically agree, and that division is whipped up by those who gain from it."
+        because: >
+          In daily life neighbors of different views help each other, and most people want the same
+          things: safe streets, decent work, good schools. Politicians need enemies to win elections and
+          media need outrage to sell, so they magnify every difference. Turn off the noise and most
+          conflicts shrink to size.
+        against:
+          - from: marxism.classical
+            text: >
+              The conflict over wages and rents exists whether anyone talks about it or not. When no one
+              raises it, the stronger party simply wins, and the silence looks like agreement.
+          - from: liberalism.social
+            text: >
+              Some disagreements are real and deep: about rights, about who belongs. Calling every
+              conflict manufactured tells the people raising grievances that they are the problem.
+        sources:
+          - {author: John R. Hibbing and Elizabeth Theiss-Morse, title: Stealth Democracy, year: 2002, note: "describes the belief that consensus exists and conflict is manufactured"}
+          - {author: Morris P. Fiorina, title: "Culture War? The Myth of a Polarized America", year: 2005}
+        traditions:
+          defining: []
+          typical: [commonsense.anti-politics, commonsense.live-and-let-live, conservatism.one-nation]
+          contested: [liberalism.technocratic]
+          rejects: [marxism.classical, socdem.left-populism, conservatism.right-populism]
+        presupposes: []
+        excludes: [conflict.nature.engine-antagonism]
+        tension: []
+        analysis:
+          gains: [finance-capital, industrial-capital, landed-capital]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Blaming conflict on agitators and media makes those who raise grievances the problem, which
+            favors whoever benefits from things as they are, since a grievance never raised over wages or
+            rent is settled in the stronger party's favor.
+          drain: none
+          law_of_value: none
+          method: idealist
+
+  # ------------------------------------------------------------------
+  - id: human.nature
+    domain: method
+    layer: method
+    question: Is human nature fixed, plastic, or fallen?
+    plain: Are people basically good, basically selfish, or something that changes with how they live?
+    short: human nature
+    importance: 3
+    positions:
+      - id: human.nature.fallen
+        label: Human nature is fallen; evil is in every heart
+        claim: "Human nature is fallen: every person carries a tendency to pride, greed and cruelty that no social arrangement can remove."
+        voiced: "The line between good and evil runs through every human heart. We are fallen creatures; utopias built on forgetting sin end in blood."
+        you: "You think people carry a flaw no system can fix, so politics should restrain evil, not try to perfect humanity."
+        because: >
+          Every attempt to perfect society has run into the same wall: people who gain power abuse it,
+          and people who are freed from one master find another vice. Original sin is the one Christian
+          doctrine that can be proved empirically. A politics that knows this builds limits, checks and
+          moral formation instead of promising paradise.
+        against:
+          - from: anarchism.communist
+            text: >
+              If people are so wicked, why give some of them power over all the others? The doctrine of
+              the fall is used to justify kings and policemen, who are drawn from the same fallen stock.
+          - from: marxism.classical
+            text: >
+              "Fallen nature" is the alibi of a class that profits from what it calls sin. Hunger, war
+              and greed have causes in property and scarcity; blaming the soul spares the system.
+        sources:
+          - {author: Augustine of Hippo, title: The City of God, year: 426}
+          - {author: John Calvin, title: Institutes of the Christian Religion, year: 1536}
+          - {author: Reinhold Niebuhr, title: Moral Man and Immoral Society, year: 1932}
+        traditions:
+          defining: [conservatism.reactionary, conservatism.traditionalist, conservatism.evangelical-right, conservatism.integralism]
+          typical: [conservatism.burkean, conservatism.cst, conservatism.christian-democracy, conservatism.fusionism, religious.salafism-quietist]
+          contested: [religious.liberation-theology, religious.christian-socialism, liberalism.internationalist]
+          rejects: [anarchism.communist, marxism.classical, technology.transhumanism, liberalism.progressive]
+        presupposes: []
+        excludes: [human.nature.good-corrupted]
+        tension: [human.nature.plastic-social]
+        analysis:
+          gains: [landed-capital, finance-capital, industrial-capital]
+          pays: [core-workers, peasantry]
+          mechanism: >
+            If evil is rooted in every soul, poverty and domination are permanent features of a fallen
+            world, to be restrained by authority and softened by charity rather than abolished; this
+            protects existing hierarchy and turns demands for structural change into calls for moral
+            reform of individuals.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Niebuhr himself used the doctrine to back unions and the New Deal, arguing that because the
+            powerful are sinful they must be checked by organized counter-power.
+          method: idealist
+
+      - id: human.nature.self-interested
+        label: People are self-interested and limited; design for that
+        claim: "Human nature is fixed in its basics: people are mostly self-interested and know little beyond their own circumstances, so institutions must work with that."
+        voiced: "If men were angels, no government would be necessary. They aren't. Build institutions that harness self-interest and limit power, and stop trying to remake people."
+        you: "You think people mostly look out for themselves and always will, so good systems work with that instead of against it."
+        because: >
+          Systems that rely on virtue fail when virtue runs out; systems that rely on self-interest keep
+          working. The market turns the baker's self-love into your bread; checks and balances turn
+          ambition against ambition. Every attempt to create a new, selfless human has needed coercion,
+          and failed anyway. The constrained vision is tragic but realistic.
+        against:
+          - from: marxism.classical
+            text: >
+              This "human nature" is the modern shopkeeper taken as the normal man. Self-interest of the
+              market kind is learned where the market rules; people in other societies have organized
+              work through kinship, duty and reciprocity.
+          - from: anarchism.communist
+            text: >
+              Mutual aid is as much a factor of evolution as competition. Animals and humans who
+              cooperate survive; the struggle for existence is mostly a struggle together against
+              circumstance, not against each other.
+        sources:
+          - {author: Thomas Hobbes, title: Leviathan, year: 1651}
+          - {author: James Madison, title: Federalist No. 51, year: 1788}
+          - {author: Thomas Sowell, title: A Conflict of Visions, year: 1987}
+        traditions:
+          defining: [liberalism.chicago, liberalism.classical]
+          typical: [liberalism.austrian, libertarianism.minarchist, libertarianism.ancap, conservatism.fusionism]
+          contested: [conservatism.burkean, libertarianism.objectivist]
+          rejects: [anarchism.communist, marxism.classical, religious.engaged-buddhism, anarchism.primitivist]
+        presupposes: []
+        excludes: [human.nature.plastic-social, human.nature.good-corrupted]
+        tension: []
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [core-workers, peripheral-workers, reserve-army]
+          mechanism: >
+            Taking self-interest as fixed makes the profit motive the only reliable engine and treats
+            public provision, planning and solidarity as utopian; that protects private ownership and makes
+            the threat of poverty the accepted way to get people to work.
+          drain: none
+          law_of_value: extends
+          method: idealist
+
+      - id: human.nature.plastic-social
+        label: Human nature is made and remade by social relations
+        claim: "Human nature is largely made by social relations: people's habits, desires and characters change when the way they live and work changes."
+        voiced: "By acting on the external world and changing it, man changes his own nature. Selfishness is not in our genes; it is in our wages."
+        you: "You think people become what their circumstances make them, and that a different society would produce different people."
+        because: >
+          Behavior varies enormously across societies: what counts as selfish, aggressive or natural in
+          one is unknown in another. Owen showed at New Lanark that changing conditions changed conduct.
+          Needs and capacities are real, but their form is historical, so the competitive individual of
+          the market is a product of the market, not proof that no other society is possible.
+        against:
+          - from: liberalism.classical
+            text: >
+              The blank slate is refuted by evidence from twins, from universals across all cultures, and
+              from history: the twentieth-century attempts to create a new human required camps and
+              still failed.
+          - from: marxism.analytical
+            text: >
+              Marx never denied human nature: he held there are constant needs and powers that capitalism
+              frustrates. Pure plasticity removes the ground on which capitalism can be criticized as
+              alienating.
+        sources:
+          - {author: Karl Marx, title: Theses on Feuerbach, year: 1888, note: "written 1845"}
+          - {author: Karl Marx, title: "Capital, Volume I", year: 1867}
+          - {author: Robert Owen, title: A New View of Society, year: 1813}
+        traditions:
+          defining: [marxism.classical, marxism.ml, marxism.maoism]
+          typical: [marxism.leninism, feminism.materialist, marxism.structural, anarchism.communist, socdem.fabian]
+          contested: [marxism.analytical, marxism.western]
+          rejects: [liberalism.chicago, conservatism.traditionalist, conservatism.reactionary, fascism.nazism]
+        presupposes: []
+        excludes: [human.nature.self-interested, human.nature.hierarchical]
+        tension: [human.nature.fallen]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            If human nature follows social relations, the selfishness that defenders of capitalism cite as
+            permanent becomes a product of competition for wages and profit, which removes their main
+            argument against changing ownership.
+          drain: none
+          law_of_value: none
+          method: materialist
+
+      - id: human.nature.good-corrupted
+        label: People are naturally cooperative; hierarchy corrupts them
+        claim: "People are by nature cooperative and decent; domination, property and the state corrupt them."
+        voiced: "Man is born free and everywhere he is in chains. Mutual aid is our nature. Take away the boss, the landlord and the policeman, and people will look after each other."
+        you: "You think people are basically cooperative, and that bosses, states and property are what bring out the worst in them."
+        because: >
+          Disasters show people at their best: strangers share food, rescue each other and organize
+          without orders. Societies without states lived for most of human history by sharing and
+          reciprocity. Violence and greed rise where hierarchy rises. Mencius said every person has the
+          sprouts of compassion; they wither only when crushed.
+        against:
+          - from: conservatism.traditionalist
+            text: >
+              The noble savage never existed; the archaeology of stateless societies is full of
+              violence. Remove authority and you do not get mutual aid; you get the rule of the strongest
+              gang.
+          - from: marxism.classical
+            text: >
+              People are neither good nor evil by nature but historical. Rousseau's natural man idealizes
+              a past to criticize the present; the cure is not to return but to go forward to a society
+              that makes cooperation rational.
+        sources:
+          - {author: Jean-Jacques Rousseau, title: Discourse on the Origin of Inequality, year: 1755}
+          - {author: Peter Kropotkin, title: "Mutual Aid: A Factor of Evolution", year: 1902}
+          - {author: Mencius, title: Mencius, year: "c. -300"}
+        traditions:
+          defining: [anarchism.communist, anarchism.primitivist]
+          typical: [anarchism.green, anarchism.syndicalist, nationalism.gandhian, anarchism.christian, ecology.deep-ecology]
+          contested: [religious.engaged-buddhism, religious.confucian]
+          rejects: [conservatism.reactionary, liberalism.chicago, fascism.italian, conservatism.evangelical-right]
+        presupposes: []
+        excludes: [human.nature.fallen, human.nature.self-interested]
+        tension: []
+        analysis:
+          gains: [core-workers, peasantry, peripheral-workers]
+          pays: [industrial-capital, landed-capital, finance-capital]
+          mechanism: >
+            If cooperation is natural and hierarchy corrupts, then bosses, landlords and states are the
+            cause of vice rather than its cure, which justifies dismantling them rather than reforming
+            them, and puts no trust in authority of any kind.
+          drain: none
+          law_of_value: none
+          method: mixed
+
+      - id: human.nature.hierarchical
+        label: People are naturally unequal; hierarchy is natural
+        claim: "People are by nature unequal in ability, character and worth, and hierarchies of rank, sex and peoples express that."
+        voiced: "Equality is a lie told by the weak. Nature makes the strong and the weak, the gifted and the dull, leaders and followers. A healthy society honors rank."
+        you: "You think people are born unequal, and that some hierarchies simply reflect nature."
+        because: >
+          Every human group develops ranks; abilities differ from birth and are partly inherited; and
+          attempts to impose equality have flattened excellence and required ever more coercion. A
+          society that accepts natural differences puts the able in charge and lets everyone find their
+          proper place, which is both more productive and more honest.
+        against:
+          - from: liberalism.egalitarian
+            text: >
+              The natural distribution of talent is neither just nor unjust; it is simply a fact. What is
+              just or unjust is the way institutions deal with it, and nothing in nature says the gifted
+              should rule or own more.
+          - from: marxism.classical
+            text: >
+              The "natural elite" is always found among those who already own. When the children of the
+              poor are fed and schooled, their supposed natural inferiority disappears.
+        sources:
+          - {author: Friedrich Nietzsche, title: Beyond Good and Evil, year: 1886}
+          - {author: William Graham Sumner, title: What Social Classes Owe to Each Other, year: 1883}
+          - {author: Richard J. Herrnstein and Charles Murray, title: The Bell Curve, year: 1994}
+        traditions:
+          defining: [fascism.nazism, fascism.neoreaction, fascism.traditionalist]
+          typical: [fascism.italian, fascism.identitarian, conservatism.reactionary, libertarianism.paleo]
+          contested: [libertarianism.objectivist, conservatism.traditionalist]
+          rejects: [marxism.classical, liberalism.egalitarian, anarchism.communist, conservatism.cst]
+        presupposes: []
+        excludes: [human.nature.plastic-social]
+        tension: []
+        analysis:
+          gains: [finance-capital, landed-capital, industrial-capital]
+          pays: [reserve-army, peripheral-workers, core-workers]
+          mechanism: >
+            Declaring inequality natural presents class, racial and sexual hierarchies as the expression of
+            talent, which justifies low wages at the bottom, the exclusion of migrants and the colonized,
+            and the wage gap between core and periphery.
+          drain: sustains
+          law_of_value: extends
+          method: idealist
+
+      - id: human.nature.sound-disposition
+        label: People are created with a sound nature that needs guidance
+        claim: "People are created with a sound inner disposition toward God and the good, which is clouded by forgetfulness and bad surroundings and restored by revealed law and moral cultivation."
+        voiced: "Every child is born upon the fitra, the natural disposition toward God; it is the parents who make him otherwise. Guide the nature, do not fight it."
+        you: "You think people are born with a good core that bad influences cloud, and that faith and discipline bring it back."
+        because: >
+          People are not born depraved, nor are they blank. There is in everyone an inclination to
+          recognize God and justice, as there is a sprout of compassion that Mencius saw in anyone who
+          sees a child about to fall into a well. That nature needs cultivation through law, ritual and
+          upbringing; left alone, bad surroundings distort it.
+        against:
+          - from: liberalism.classical
+            text: >
+              If our nature must be restored by revealed law, someone must have authority to say what the
+              law requires. That hands power over conscience to clerics or rulers.
+          - from: marxism.classical
+            text: >
+              The "surroundings" that cloud human nature are named as bad company and loose morals,
+              rarely as the landlord and the employer. Moral cultivation leaves the conditions that
+              produce vice untouched.
+        sources:
+          - {author: Muhammad al-Bukhari, title: Sahih al-Bukhari, year: "c. 846"}
+          - {author: Mencius, title: Mencius, year: "c. -300"}
+        traditions:
+          defining: [religious.islamism-brotherhood, religious.salafism-quietist]
+          typical: [religious.islamism-khomeinist, religious.post-islamism, religious.islamic-socialism, religious.confucian]
+          contested: [religious.political-meritocracy]
+          rejects: [libertarianism.objectivist, marxism.classical, fascism.nazism]
+        presupposes: []
+        excludes: [human.nature.fallen]
+        tension: []
+        analysis:
+          gains: [petty-bourgeoisie, landed-capital]
+          pays: [core-workers, peasantry]
+          mechanism: >
+            Locating the cure for social ills in restoring a God-given nature directs reform toward moral
+            discipline of individuals and families; it supports charity and fair dealing, and leaves
+            property to be judged by religious law, which in practice has protected land and trade
+            fortunes alongside alms.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Islamic socialists (Shariati, Taleghani) read the same nature as demanding equality and the
+            end of exploitation; materialists disagree on whether the position's class content is fixed or
+            depends on who organizes it.
+          method: idealist
+
+      - id: human.nature.evolved
+        label: Human nature is an evolved mix of selfish and cooperative drives
+        claim: "Human nature is an evolved set of dispositions: kin loyalty, reciprocity, status-seeking and group bias alongside empathy. Policy should be designed around them."
+        voiced: "We are neither angels nor blank slates. Evolution gave us both selfishness and cooperation, tribalism and empathy. Good policy works with that psychology, not against it."
+        you: "You think science shows people have an evolved nature, both selfish and cooperative, and that politics should be designed around it."
+        because: >
+          Evolutionary biology and psychology find human universals in every culture: love of kin,
+          reciprocity, status competition, in-group preference, fairness norms. Ignoring them produced
+          utopian failures; respecting them lets us design institutions that bring out cooperation, as
+          markets, rule of law and welfare states each do in their own way.
+        against:
+          - from: marxism.classical
+            text: >
+              Evolutionary stories are told backward from present arrangements: the status-seeking
+              competitive male of evolutionary psychology looks remarkably like the modern executive.
+              Biology sets capacities, not the forms society gives them.
+          - from: conservatism.traditionalist
+            text: >
+              Reducing the human person to dispositions selected for reproduction leaves no room for the
+              soul, for free will or for duty. Science describes animals; it cannot say what people are
+              for.
+        sources:
+          - {author: Steven Pinker, title: The Blank Slate, year: 2002}
+          - {author: Edward O. Wilson, title: On Human Nature, year: 1978}
+          - {author: Peter Singer, title: A Darwinian Left, year: 1999}
+        traditions:
+          defining: []
+          typical: [liberalism.technocratic, liberalism.utilitarian, technology.effective-altruism, technology.transhumanism]
+          contested: [marxism.analytical, liberalism.classical]
+          rejects: [marxism.classical, conservatism.traditionalist, feminism.radical]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [professional-managerial, industrial-capital]
+          pays: [core-workers]
+          mechanism: >
+            Treating evolved dispositions as the fixed frame for policy shifts politics toward
+            expert-designed incentives and nudges inside existing property relations, and lends scientific
+            authority to the claim that ambitious egalitarian projects defy nature.
+          drain: none
+          law_of_value: none
+          method: mixed

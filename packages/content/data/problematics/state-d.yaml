@@ -1,0 +1,1213 @@
+problematics:
+  - id: speech.limits
+    domain: state
+    layer: horizon
+    question: Should speech and press ever be restricted, and by whom?
+    plain: Should anyone be stopped from saying or publishing something, and who gets to decide?
+    short: limits on speech
+    importance: 2
+    region: state
+    positions:
+      - id: speech.limits.open-marketplace
+        label: Let everything be said; answer bad speech with more speech
+        claim: Speech and press should be restricted only to stop direct incitement to imminent harm; the answer to bad ideas is open argument, not suppression.
+        voiced: >
+          If all mankind minus one were of one opinion, mankind would be no more justified in silencing that one than he, if he
+          had the power, would be justified in silencing mankind. The best test of truth is the power of the thought to get
+          itself accepted in the competition of the market. Sunlight is the best disinfectant.
+        you: You want almost no limits on speech, and think bad ideas should be beaten in open argument.
+        because: >
+          No one is infallible, and silenced opinions may be true, partly true, or needed to keep truth alive by challenge.
+          Every power to censor will be used by those in power against their critics; laws against "hate" or "subversion" have
+          been turned on labor organizers, civil rights activists and dissidents. The only safe rule is that the state does not
+          decide which ideas may be heard.
+        against:
+          - from: marxism.leninism
+            text: >
+              The "marketplace of ideas" is a market: those who own the presses, networks and platforms set what is heard. Free
+              speech for the owners of media is not free speech for everyone.
+          - from: liberalism.social
+            text: >
+              Speech that dehumanizes minorities is not just an idea in a debate; it prepares the ground for discrimination and
+              violence, and it silences its targets.
+        sources:
+          - {author: John Stuart Mill, title: On Liberty, year: 1859}
+          - {author: Oliver Wendell Holmes Jr., title: "Dissent in Abrams v. United States", year: 1919}
+        traditions:
+          defining: [liberalism.classical, libertarianism.minarchist]
+          typical: [libertarianism.ancap, libertarianism.objectivist, technology.cyberlibertarian, conservatism.fusionism, anarchism.individualist, commonsense.live-and-let-live]
+          contested: [liberalism.social, conservatism.right-populism, anarchism.communist]
+          rejects: [marxism.ml, conservatism.integralism, religious.islamism-brotherhood, fascism.italian]
+        presupposes: [liberty.concept.non-interference]
+        excludes: [speech.limits.class-press, speech.limits.protect-the-sacred]
+        tension: [speech.limits.dignity-limits, speech.limits.no-platform]
+        tags: []
+        analysis:
+          gains: [finance-capital, professional-managerial]
+          pays: [reserve-army]
+          mechanism: >
+            Leaving speech to an open market leaves reach to whoever owns media and platforms and can pay for advertising; it
+            also protects dissident and labor speech from state censorship.
+          drain: sustains
+          law_of_value: extends
+          disputed: Many socialists (Luxemburg, Chomsky) defend near-absolute speech protection on the ground that censorship powers are always turned on the left.
+
+      - id: speech.limits.dignity-limits
+        label: The law should bar hate speech and attacks on the constitutional order
+        claim: The state should restrict speech that incites hatred against groups or aims to destroy a constitutional order based on rights, while protecting open debate otherwise.
+        voiced: >
+          Unlimited tolerance leads to the disappearance of tolerance. If we extend it to those who are intolerant, the tolerant
+          will be destroyed, and tolerance with them. Democracy must be able to defend itself. Human dignity is inviolable,
+          and speech that attacks it has no claim to protection.
+        you: You want the law to stop speech that stirs hatred against groups or seeks to destroy a rights-based constitutional order.
+        because: >
+          Weimar Germany let the Nazis use its freedoms to destroy it. Postwar constitutions learned that a political order
+          must be able to ban parties and propaganda that aim at its destruction. Hate speech also lowers the standing of its
+          targets as equal citizens, which free argument alone does not repair. Most liberal democracies outside the United
+          States draw these lines without sliding into tyranny.
+        against:
+          - from: liberalism.classical
+            text: >
+              Who defines hate and extremism? Laws written against fascists are applied to communists, Palestinians and
+              protesters; the power to censor goes to whoever holds office.
+          - from: marxism.leninism
+            text: >
+              "Militant democracy" in Germany banned the Communist Party in 1956 and barred radicals from public jobs. It defends
+              the constitutional order, which means the property order.
+        sources:
+          - {author: Karl Loewenstein, title: Militant Democracy and Fundamental Rights, year: 1937}
+          - {author: Karl Popper, title: The Open Society and Its Enemies, year: 1945}
+          - {author: Jeremy Waldron, title: The Harm in Hate Speech, year: 2012}
+        traditions:
+          defining: [conservatism.christian-democracy, liberalism.social]
+          typical: [socdem.nordic, liberalism.progressive, liberalism.egalitarian, socdem.third-way, liberalism.internationalist, liberalism.technocratic]
+          contested: [socdem.democratic-socialism, feminism.liberal]
+          rejects: [libertarianism.minarchist, liberalism.classical, conservatism.right-populism, marxism.ml]
+        presupposes: [rights.basis.universal-consensus]
+        excludes: []
+        tension: [speech.limits.open-marketplace]
+        tags: []
+        analysis:
+          gains: [professional-managerial]
+          pays: [reserve-army]
+          mechanism: >
+            Giving courts and agencies power to restrict hateful or anti-constitutional speech protects minorities from some
+            abuse; the same power has been used against parties and movements that challenge property relations, such as the
+            West German ban on the Communist Party (1956).
+          drain: none
+          law_of_value: none
+
+      - id: speech.limits.class-press
+        label: While capital owns the press, press freedom is the owners' freedom
+        claim: Freedom of the press is hollow while the means of communication are privately owned; under workers' power the presses should belong to the working people, and counter-revolutionary media may be closed.
+        voiced: >
+          Freedom of the press in bourgeois society means freedom for the rich to deceive the people. Take the printing presses
+          and newsprint from the capitalists and give them to the working people, and you have real press freedom. We will not
+          give the bourgeoisie a weapon to use against us while it still fights to restore its rule.
+        you: You think press freedom means little while owners control the media, and that a workers' state may close media that serve the old owners.
+        because: >
+          A handful of corporations and billionaires own most of the media that reach mass audiences; what they print is shaped
+          by owners and advertisers, as studies of media filters showed. Formal freedom gives everyone the right to publish and
+          the owners the means to. Redistributing the means of communication, and denying the old ruling class a propaganda
+          machine during the struggle against it, is the precondition of real speech for the majority.
+        against:
+          - from: marxism.luxemburgism
+            text: >
+              Freedom is always the freedom of the one who thinks differently. Without a free press, public life withers, and the
+              party's officials become the only voice.
+          - from: liberalism.classical
+            text: >
+              Once a party decides which media serve the people, it serves only the party. Every press monopoly has ended by
+              silencing workers who disagreed with it.
+        sources:
+          - {author: Council of People's Commissars, title: Decree on the Press, year: 1917}
+          - {author: V. I. Lenin, title: A Letter to G. Myasnikov, year: 1921}
+          - {author: Edward S. Herman and Noam Chomsky, title: "Manufacturing Consent: The Political Economy of the Mass Media", year: 1988}
+        traditions:
+          defining: [marxism.leninism, marxism.ml]
+          typical: [marxism.maoism, marxism.mlm, marxism.hoxhaism, marxism.juche, marxism.scc]
+          contested: [marxism.trotskyism, marxism.guevarism]
+          rejects: [liberalism.classical, marxism.luxemburgism, anarchism.communist, libertarianism.minarchist]
+        presupposes: [state.nature.class-instrument]
+        excludes: [speech.limits.open-marketplace]
+        tension: [speech.limits.no-platform]
+        tags: []
+        analysis:
+          gains: [core-workers, peasantry]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Taking media out of private hands ends owners' and advertisers' control over mass communication; placing it under a
+            ruling party gives party officials control instead, which can protect a revolution or protect officials from
+            criticism.
+          drain: reduces
+          law_of_value: suspends
+          disputed: Herman and Chomsky's media analysis is shared by those who reject Lenin's conclusion; Chomsky himself holds near-absolute speech rights.
+
+      - id: speech.limits.no-platform
+        label: Deny fascists any platform, through the movement not the state
+        claim: Organized movements should deny fascists any platform, by refusing them venues and confronting their organizing, without asking the state to censor.
+        voiced: >
+          Fascism is not an opinion to be debated; it is a movement to destroy the labor movement, minorities and the left.
+          We don't debate them, and we don't ask the state to ban them, because the state's bans will be used against us.
+          We deny them halls, platforms and the streets ourselves.
+        you: You want fascists denied any platform by organized people themselves, not by government censors.
+        because: >
+          Fascist movements grew in the 1920s and 1930s by winning space: halls, newspapers, marches. Debate gives them
+          legitimacy, and they do not play by the rules of debate. State bans are dangerous because the state turns them on the
+          left. Direct refusal by unions, students and communities, as at Cable Street in 1936, stops fascist organizing at
+          the start.
+        against:
+          - from: liberalism.classical
+            text: >
+              Who decides who is fascist? The label spreads to conservatives, critics and anyone unpopular; private censorship by
+              mobs is no better than state censorship.
+          - from: marxism.western
+            text: >
+              Refusing to engage leaves the arguments of the far right unanswered for the people who find them persuasive. Their
+              recruits must be won back, not only blocked.
+        sources:
+          - {author: Herbert Marcuse, title: Repressive Tolerance, year: 1965}
+          - {author: Mark Bray, title: "Antifa: The Anti-Fascist Handbook", year: 2017}
+        traditions:
+          defining: [anarchism.communist]
+          typical: [anarchism.insurrectionary, marxism.trotskyism, anarchism.syndicalist, marxism.autonomism, marxism.western]
+          contested: [socdem.democratic-socialism, liberalism.progressive, marxism.ml]
+          rejects: [liberalism.classical, libertarianism.minarchist, conservatism.fusionism]
+        presupposes: []
+        excludes: []
+        tension: [speech.limits.open-marketplace, speech.limits.dignity-limits]
+        tags: [fascism]
+        analysis:
+          gains: [core-workers, reserve-army]
+          pays: []
+          mechanism: >
+            Denying platforms to fascist organizing protects unions, migrants and minorities from groups that attack them; since
+            enforcement is by movements, not the state, it depends on the strength of organized labor and the left.
+          drain: none
+          law_of_value: none
+          consciousness: class-economic
+
+      - id: speech.limits.protect-the-sacred
+        label: Speech must not attack God, the faith or public morals
+        claim: Speech should be free within the bounds of truth and decency; blasphemy, obscenity and attacks on the faith and public morals should be restrained, because error has no right to equal treatment with truth.
+        voiced: >
+          Liberty of speech is not the license to say anything at all. Error has no rights. A society that permits mockery of God
+          and the corruption of the young in the name of freedom has made freedom an idol. The state must protect what is
+          sacred and what is decent.
+        you: You think speech should be free within limits, and that attacks on God, the faith or public decency should be restrained.
+        because: >
+          Speech is for the communication of truth; it has no value in spreading lies and obscenity. Every society already
+          restricts some speech; the only question is what it protects. A society that protects the faith and decency of its
+          people protects the conditions of their moral life, and religious believers are entitled to the same protection from
+          insult that others claim.
+        against:
+          - from: liberalism.classical
+            text: >
+              Blasphemy laws protect the powerful faith against minorities and dissenters. In Pakistan they are used against
+              Christians and Ahmadis; history is full of heretics burned for "error."
+          - from: religious.post-islamism
+            text: >
+              Faith compelled or protected by the state is weakened, not strengthened. The Qur'an says there is no compulsion in
+              religion.
+        sources:
+          - {author: Leo XIII, title: Libertas (On the Nature of Human Liberty), year: 1888}
+          - {author: Organisation of the Islamic Conference, title: Cairo Declaration on Human Rights in Islam, year: 1990}
+        traditions:
+          defining: [conservatism.integralism, religious.islamism-brotherhood]
+          typical: [religious.islamism-khomeinist, religious.salafism-quietist, conservatism.reactionary, religious.buddhist-nationalism, nationalism.hindutva]
+          contested: [conservatism.traditionalist, conservatism.evangelical-right, conservatism.postliberal]
+          rejects: [liberalism.classical, libertarianism.minarchist, religious.post-islamism, anarchism.communist]
+        presupposes: [state.nature.ordained-authority]
+        excludes: [speech.limits.open-marketplace]
+        tension: []
+        tags: [religion]
+        analysis:
+          gains: [petty-bourgeoisie]
+          pays: [reserve-army]
+          mechanism: >
+            Blasphemy and morals laws empower clergy and religious parties over public speech; they fall hardest on religious
+            minorities, secular critics and the poor, who cannot pay for legal defense, and are used in local disputes over
+            land and jobs.
+          drain: none
+          law_of_value: none
+
+      - id: speech.limits.information-sovereignty
+        label: A besieged country may restrict foreign-funded media and propaganda
+        claim: A country's information space is part of its sovereignty; it may restrict foreign-funded media and propaganda campaigns, especially when it faces sanctions, subversion or war.
+        voiced: >
+          The global media are owned in a few rich countries, and they speak for them. When foreign governments fund our media,
+          parties and NGOs to change our government, that is not free speech but intervention. Every country, including those
+          that lecture us, bans enemy propaganda in wartime.
+        you: You think a country may restrict foreign-funded media and propaganda to protect its independence, especially under pressure from abroad.
+        because: >
+          A handful of agencies and platforms based in the core decide what the world hears about the periphery; the
+          Non-Aligned countries demanded a new world information order for this reason as early as the 1970s. Foreign
+          governments openly fund media and civil groups in countries they want to change. Even liberal states closed foreign
+          state broadcasters when they judged them a threat, as the European Union did in 2022.
+        against:
+          - from: liberalism.internationalist
+            text: >
+              "Foreign agent" laws are used to shut down independent journalists and human rights groups, not foreign propaganda.
+              Sovereignty is the government's excuse to silence its own citizens.
+          - from: marxism.trotskyism
+            text: >
+              The working class needs to hear every argument to judge its rulers. Restrictions in the name of the nation protect
+              the national bureaucracy as much as the nation.
+        sources:
+          - {author: International Commission for the Study of Communication Problems, title: "Many Voices, One World (the MacBride Report)", year: 1980}
+        traditions:
+          defining: []
+          typical: [marxism.scc, nationalism.bolivarianism, nationalism.eurasianism, conservatism.national, nationalism.developmental-state]
+          contested: [marxism.ml, liberalism.internationalist, nationalism.pan-africanism, religious.islamism-khomeinist]
+          rejects: [liberalism.classical, libertarianism.minarchist, marxism.trotskyism, technology.cyberlibertarian]
+        presupposes: [intl.sovereignty.nations-set-own-course]
+        excludes: []
+        tension: [speech.limits.open-marketplace]
+        tags: [global-south]
+        analysis:
+          gains: [professional-managerial, industrial-capital]
+          pays: [finance-capital]
+          mechanism: >
+            Restricting foreign-funded media limits core states' and donors' leverage over domestic politics; it also gives the
+            governing apparatus discretion to label domestic critics foreign agents.
+          drain: reduces
+          law_of_value: none
+          disputed: Materialists split on whether such laws mainly defend sovereignty against imperial information power or mainly protect national ruling groups from their own workers.
+
+  - id: emergency.powers
+    domain: state
+    layer: priority
+    question: In an emergency, what yields?
+    plain: When disaster strikes, a war, a famine, an epidemic, what gives way first?
+    short: emergency powers
+    importance: 2
+    region: state
+    positions:
+      - id: emergency.powers.need-overrides-property
+        label: In a real emergency, human need overrides property
+        claim: When people's lives are at stake, the community may take, requisition or distribute private goods to meet need, without waiting to pay owners in full.
+        voiced: >
+          In cases of need all things are common property. If a man is in urgent need and there is no other remedy, he may take
+          what he needs from another's property. Bread before profits. When the hospitals overflow and the warehouses are full,
+          open the warehouses.
+        you: You think that when lives are at stake, people's needs come before owners' rights.
+        because: >
+          Property exists to serve human life; when it blocks survival, it loses its claim. Every serious emergency, from wartime
+          rationing to the requisition of hotels and factories in epidemics, has shown that markets allocate to those who can pay,
+          not to those who need. Delaying for compensation hearings costs lives. Even the oldest Christian teaching holds that in
+          extreme need the right to take precedes the right to keep.
+        against:
+          - from: liberalism.classical
+            text: >
+              Owners who fear confiscation stop producing. Respecting property in emergencies keeps supply coming; seizing it once
+              teaches everyone to hide stocks next time.
+          - from: libertarianism.ancap
+            text: >
+              "Need" has no limit. Every government declares an emergency to take what it wants, and nothing is ever given back.
+        sources:
+          - {author: Thomas Aquinas, title: Summa Theologiae, year: "c. 1270", note: "II-II, q. 66, a. 7"}
+          - {author: Leo XIII, title: Rerum Novarum, year: 1891}
+        traditions:
+          defining: [conservatism.cst, marxism.ml]
+          typical: [religious.liberation-theology, marxism.leninism, socdem.democratic-socialism, marxism.trotskyism, marxism.maoism, anarchism.communist, conservatism.distributism, religious.islamic-socialism]
+          contested: [socdem.nordic, conservatism.christian-democracy]
+          rejects: [libertarianism.ancap, liberalism.austrian, libertarianism.minarchist]
+        presupposes: [property.private.social-function]
+        excludes: [emergency.powers.voluntary-only]
+        tension: [emergency.powers.compensate-at-market]
+        tags: []
+        analysis:
+          gains: [core-workers, reserve-army, peripheral-workers, peasantry]
+          pays: [landed-capital, industrial-capital, finance-capital]
+          mechanism: >
+            Requisitioning goods, buildings and plants without full market compensation transfers use of private assets to those
+            in need at the owners' expense, and sets a precedent that ownership yields to need.
+          drain: reduces
+          law_of_value: suspends
+
+      - id: emergency.powers.compensate-at-market
+        label: The state may take what it needs, but must pay fair value and stay within law
+        claim: In emergencies the state may requisition property and expand its powers, but only by law, for a limited time, under judicial review, and with full compensation to owners.
+        voiced: >
+          Nor shall private property be taken for public use without just compensation. Emergency powers must be granted by the
+          legislature, limited in time, and reviewed by courts, or the emergency becomes permanent. Take what is needed and pay
+          for it; that is how a constitutional state handles a crisis.
+        you: You accept emergency takings and powers, but only by law, for a limited time, and with owners paid fair value.
+        because: >
+          Crises are real and governments must act, but crises are also when liberties are lost for good. Constitutional
+          emergency powers, approved by the legislature, renewed only by growing majorities and reviewed by courts, let the
+          state act while keeping it bound. Full compensation spreads the cost of the emergency across all taxpayers instead of
+          loading it on whoever happens to own what is needed.
+        against:
+          - from: marxism.leninism
+            text: >
+              Paying owners full market price in a crisis means paying the profiteers the inflated value of scarcity. The
+              hoarder's warehouse is rewarded at the moment of the people's greatest need.
+          - from: conservatism.reactionary
+            text: >
+              Emergencies are precisely what laws cannot foresee. Sunset clauses and judicial review in a real crisis mean
+              paralysis.
+        sources:
+          - {author: Clinton Rossiter, title: "Constitutional Dictatorship: Crisis Government in the Modern Democracies", year: 1948}
+          - {author: Bruce Ackerman, title: The Emergency Constitution, year: 2004}
+          - {author: James Madison, title: Fifth Amendment to the United States Constitution, year: 1791}
+        traditions:
+          defining: [liberalism.classical, liberalism.social]
+          typical: [liberalism.chicago, liberalism.ordoliberal, conservatism.christian-democracy, socdem.third-way, liberalism.technocratic, conservatism.burkean]
+          contested: [libertarianism.minarchist, socdem.nordic]
+          rejects: [marxism.ml, conservatism.reactionary, libertarianism.ancap]
+        presupposes: [property.private.natural-right]
+        excludes: [emergency.powers.sovereign-exception, emergency.powers.permanent-socialization]
+        tension: [emergency.powers.need-overrides-property]
+        tags: []
+        analysis:
+          gains: [finance-capital, landed-capital, industrial-capital]
+          pays: [core-workers]
+          mechanism: >
+            Paying full market value in emergencies, when scarcity has raised prices, transfers public funds raised from
+            taxpayers to owners of the scarce goods; time limits protect owners from permanent public control.
+          drain: none
+          law_of_value: regulates
+
+      - id: emergency.powers.voluntary-only
+        label: No emergency justifies coercion; prices and charity work best
+        claim: Even in emergencies, the state should not seize property or control prices; voluntary exchange, high prices that draw in supplies, and private charity respond faster and better.
+        voiced: >
+          Price gouging laws create shortages; high prices tell suppliers where to rush goods. Every crisis is an excuse for the
+          state to grow, and it never shrinks back afterward. Leave people free to help each other and to trade, and they will
+          do better than any emergency bureaucracy.
+        you: You think that even in a crisis, coercion and price controls do more harm than good, and voluntary action and markets respond best.
+        because: >
+          After every war and depression, the state kept powers it had taken "temporarily": income taxes, agencies, controls.
+          This ratchet is how small governments become large ones. Price controls in emergencies cause hoarding and empty
+          shelves, while prices let goods flow to where they are most valued. Voluntary aid networks, churches and businesses
+          are often first on the scene.
+        against:
+          - from: conservatism.cst
+            text: >
+              Letting prices allocate water and medicine in a disaster gives them to the rich and lets the poor die. A just
+              community does not auction survival.
+          - from: socdem.nordic
+            text: >
+              Every country that won its wars and survived its epidemics did so by planning, rationing and public provision, not by
+              trusting prices in a panic.
+        sources:
+          - {author: Robert Higgs, title: "Crisis and Leviathan: Critical Episodes in the Growth of American Government", year: 1987}
+          - {author: Murray N. Rothbard, title: For a New Liberty, year: 1973}
+        traditions:
+          defining: [libertarianism.ancap, libertarianism.paleo]
+          typical: [liberalism.austrian, libertarianism.minarchist, libertarianism.objectivist]
+          contested: [liberalism.chicago, conservatism.fusionism]
+          rejects: [conservatism.cst, marxism.ml, socdem.nordic, conservatism.reactionary]
+        presupposes: [property.private.natural-right]
+        excludes: [emergency.powers.need-overrides-property, emergency.powers.sovereign-exception, emergency.powers.permanent-socialization]
+        tension: []
+        tags: []
+        analysis:
+          gains: [finance-capital, industrial-capital, landed-capital]
+          pays: [reserve-army, core-workers, peripheral-workers]
+          mechanism: >
+            Letting prices allocate scarce goods in an emergency gives them to those with the most money and lets owners of
+            stocks capture the scarcity premium as profit; the poor bear the shortage.
+          drain: sustains
+          law_of_value: extends
+
+      - id: emergency.powers.sovereign-exception
+        label: The sovereign decides the exception and acts beyond law
+        claim: In a true emergency the executive must be able to act beyond and against existing law to save the political order; whoever can do so is the real sovereign.
+        voiced: >
+          Sovereign is he who decides on the exception. The exception cannot be codified in advance; it reveals who truly rules.
+          A constitution that tries to foresee every emergency simply hands the decision to whoever is bold enough to take it.
+          The Romans appointed a dictator; we must not pretend we can do without one.
+        you: You think that in a true emergency someone must be able to act beyond the law, and that whoever can is the real sovereign.
+        because: >
+          Laws are written for normal times; emergencies are by definition what the law did not foresee. Rome's republican
+          dictatorship and Machiavelli's praise of it recognized that a polity must be able to concentrate power quickly or die.
+          Liberal parliaments facing revolution or invasion talk while the state collapses, as Weimar did. Acknowledging the
+          exception openly is more honest and more responsible than pretending legality can cover everything.
+        against:
+          - from: liberalism.classical
+            text: >
+              Schmitt's theory justified Hitler's emergency decrees, which ended the Weimar constitution. Article 48 is the
+              warning, not the model.
+          - from: marxism.western
+            text: >
+              The state of exception has become the normal technique of government, used against migrants, protesters and the
+              poor. Theorizing it as sovereignty glorifies a form of rule that produces camps.
+        sources:
+          - {author: Carl Schmitt, title: Political Theology, year: 1922}
+          - {author: Carl Schmitt, title: Dictatorship, year: 1921}
+          - {author: Niccolò Machiavelli, title: Discourses on Livy, year: 1531, note: "Book I, ch. 34"}
+        traditions:
+          defining: [conservatism.reactionary]
+          typical: [fascism.italian, fascism.nazism, fascism.neoreaction, conservatism.monarchist]
+          contested: [conservatism.national, conservatism.gaullism, liberalism.republican, nationalism.kemalism]
+          rejects: [liberalism.classical, libertarianism.ancap, anarchism.communist, marxism.western]
+        presupposes: [law.nature.sovereign-decision]
+        excludes: [emergency.powers.compensate-at-market, emergency.powers.voluntary-only, emergency.powers.civil-liberties-hold]
+        tension: []
+        tags: [schmitt]
+        analysis:
+          gains: [finance-capital, industrial-capital, landed-capital]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Emergency rule beyond law has historically been declared against strikes, uprisings and left parties (Weimar 1932–1933,
+            Chile 1973), suspending union and political rights while leaving property law in force.
+          drain: sustains
+          law_of_value: none
+          disputed: Revolutionary governments have also claimed exceptional powers against owners; the class content depends on who declares the exception, which is why Schmitt's theory is read on both left and right.
+
+      - id: emergency.powers.permanent-socialization
+        label: What the crisis made public should stay public
+        claim: Emergencies show that markets fail at providing what matters; the public control, planning and provision introduced in the crisis should be kept and extended afterward.
+        voiced: >
+          The war showed what the state can do when it decides to: full employment, fair rationing, planned production,
+          hospitals for all. Why should we go back? Never again the dole queues of the thirties. What was socialized to win the
+          war should stay socialized to win the peace.
+        you: You think that what the public took over during a crisis should stay public once the crisis passes.
+        because: >
+          In the Second World War, Britain planned production, rationed fairly and achieved full employment; the solidarity of
+          shared danger produced the welfare state and the health service. Crises reveal what the market cannot do and what
+          planning can. Returning to the old order after each emergency means waiting for the next one unprepared, with the
+          costs again falling on working people.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Wartime planning works because everyone pursues one goal. Peacetime society has millions of goals; extending the war
+              economy into peace is the road to serfdom.
+          - from: libertarianism.paleo
+            text: >
+              This is the ratchet in its open form: every crisis as a pretext for permanent expansion of state power.
+        sources:
+          - {author: Labour Party, title: Let Us Face the Future, year: 1945}
+          - {author: Richard Titmuss, title: Problems of Social Policy, year: 1950}
+          - {author: Karl Polanyi, title: The Great Transformation, year: 1944}
+        traditions:
+          defining: [socdem.democratic-socialism, socdem.labourism]
+          typical: [socdem.keynesian, socdem.fabian, socdem.nordic, marxism.ml, marxism.trotskyism, marxism.ecosocialism]
+          contested: [conservatism.one-nation, conservatism.christian-democracy]
+          rejects: [liberalism.austrian, libertarianism.ancap, libertarianism.paleo, liberalism.chicago]
+        presupposes: [emergency.powers.need-overrides-property]
+        excludes: [emergency.powers.voluntary-only, emergency.powers.compensate-at-market]
+        tension: []
+        tags: []
+        analysis:
+          gains: [core-workers, reserve-army, professional-managerial]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Keeping crisis-era public ownership, planning and provision decommodifies health care, housing or utilities
+            permanently, removing them as fields of private profit and funding them from taxes on income and profits.
+          drain: none
+          law_of_value: suspends
+          disputed: Third Worldists note that Britain's postwar welfare state coexisted with colonial extraction from Malaya and Africa; the drain was not reduced.
+          consciousness: hegemonic
+
+      - id: emergency.powers.civil-liberties-hold
+        label: Rights must hold even in emergencies; that is when they matter
+        claim: Civil liberties, courts and elections must not be suspended in emergencies, because emergencies are when governments abuse power most and least reverse it.
+        voiced: >
+          Those who would give up essential liberty to purchase a little temporary safety deserve neither liberty nor safety.
+          The state of exception has become the dominant paradigm of government. Every tyranny began as an emergency.
+        you: You think rights, courts and elections must hold even in an emergency, because that is when they are most at risk.
+        because: >
+          The worst abuses came under emergency rule: internment of Japanese Americans, Indira Gandhi's Emergency of 1975,
+          indefinite detention after 2001, lockdown policing that fell on the poor. Emergency powers are rarely given back and
+          become the normal toolkit of government. Rights that vanish when invoked are not rights.
+        against:
+          - from: conservatism.reactionary
+            text: >
+              A constitution is not a suicide pact. A state that refuses to suspend any liberty in an invasion or insurrection
+              will lose all liberties along with the state.
+          - from: marxism.ml
+            text: >
+              Liberties for whom? Under siege, unlimited liberty for saboteurs and foreign-funded opposition is liberty for the
+              counter-revolution.
+        sources:
+          - {author: Benjamin Franklin, title: Reply to the Governor (Pennsylvania Assembly), year: 1755}
+          - {author: Giorgio Agamben, title: State of Exception, year: 2003}
+          - {author: Supreme Court of the United States, title: Ex parte Milligan, year: 1866}
+        traditions:
+          defining: [liberalism.classical]
+          typical: [libertarianism.minarchist, libertarianism.ancap, anarchism.communist, marxism.western, liberalism.progressive, technology.cyberlibertarian]
+          contested: [liberalism.social, socdem.democratic-socialism, conservatism.fusionism]
+          rejects: [conservatism.reactionary, marxism.ml, fascism.italian]
+        presupposes: []
+        excludes: [emergency.powers.sovereign-exception]
+        tension: [emergency.powers.need-overrides-property]
+        tags: []
+        analysis:
+          gains: [reserve-army, core-workers, professional-managerial]
+          pays: []
+          mechanism: >
+            Keeping courts, assembly and elections in force during crises protects strikes, protests and opposition from being
+            banned under emergency decrees, which have usually been aimed at labor and the poor.
+          drain: none
+          law_of_value: none
+
+      - id: emergency.powers.mutual-aid
+        label: In disasters, people organize themselves better than states do
+        claim: In emergencies, communities that organize themselves to share and help respond faster and better than states; the state's main contribution is often to get in the way or to police the poor.
+        voiced: >
+          In disaster, people do not panic and loot; they help each other. The kitchens, rescue boats and clinics come from
+          neighbors first. What we have to fear is not each other but the elite panic that sends soldiers to guard property.
+          Solidarity, not charity.
+        you: You think that in a crisis people helping each other directly does more than the state, which often polices instead of helping.
+        because: >
+          After earthquakes, floods and hurricanes, from Mexico City in 1985 to New Orleans in 2005 to Puerto Rico in 2017,
+          neighbors ran the first rescues and kitchens while official responses were slow and focused on protecting property.
+          Mutual aid is the oldest human response to danger. Building it in normal times builds the capacity a community needs
+          when the state fails.
+        against:
+          - from: socdem.nordic
+            text: >
+              Neighbors can share soup; they cannot run intensive care units, power grids or mass vaccination. Large emergencies
+              need large, well-funded public institutions.
+          - from: marxism.ml
+            text: >
+              Mutual aid is admirable and too small. It leaves the state and its resources in the hands of those who let the
+              disaster happen.
+        sources:
+          - {author: Peter Kropotkin, title: "Mutual Aid: A Factor of Evolution", year: 1902}
+          - {author: Rebecca Solnit, title: "A Paradise Built in Hell: The Extraordinary Communities That Arise in Disaster", year: 2009}
+        traditions:
+          defining: [anarchism.communist]
+          typical: [anarchism.communalism, anarchism.confederalism, zapatismo, anarchism.green, religious.engaged-buddhism, anarchism.christian]
+          contested: [libertarianism.ancap, conservatism.distributism]
+          rejects: [marxism.ml, liberalism.technocratic]
+        presupposes: [state.nature.hierarchy-as-such]
+        excludes: [emergency.powers.sovereign-exception]
+        tension: [emergency.powers.permanent-socialization]
+        tags: []
+        analysis:
+          gains: [reserve-army, core-workers, peasantry]
+          pays: []
+          mechanism: >
+            Community-organized relief distributes food, shelter and care outside markets for the duration of the crisis; it
+            relieves those left out of official response but does not touch who owns the housing, land and supply chains.
+          drain: none
+          law_of_value: suspends
+
+  - id: party.system
+    domain: state
+    layer: horizon
+    question: One party, many parties, or none?
+    plain: How should political parties be organized, and how many should there be?
+    short: the party system
+    importance: 2
+    region: state
+    positions:
+      - id: party.system.competitive-multiparty
+        label: Many parties competing in free elections
+        claim: Several parties should compete openly for votes, with the losers free to organize and try again; alternation in power keeps rulers accountable.
+        voiced: >
+          Democracy is the institutional arrangement in which individuals acquire the power to decide by a competitive struggle
+          for the people's vote. What matters is that the people can throw the rascals out. Opposition is not treason; it is the
+          government in waiting.
+        you: You want many parties competing freely, so that those in power can be voted out.
+        because: >
+          Without legal opposition, rulers cannot be removed peacefully and errors cannot be corrected; famine, Sen observed,
+          has never occurred in a functioning multiparty democracy with a free press. Competition forces parties to listen to
+          voters and exposes corruption. Pluralism also reflects the real diversity of interests and beliefs in any society.
+        against:
+          - from: marxism.ml
+            text: >
+              Party competition is competition between factions of the owning class, financed by it. The voter chooses which
+              party of capital governs; the question of who owns is never on the ballot.
+          - from: nationalism.gandhian
+            text: >
+              Parties divide a people into permanent camps and teach them to see neighbors as enemies, and they answer to their
+              funders, not to the village.
+        sources:
+          - {author: Joseph A. Schumpeter, title: "Capitalism, Socialism and Democracy", year: 1942}
+          - {author: Robert A. Dahl, title: "Polyarchy: Participation and Opposition", year: 1971}
+          - {author: Amartya Sen, title: Development as Freedom, year: 1999}
+        traditions:
+          defining: [liberalism.classical, liberalism.social]
+          typical: [socdem.nordic, socdem.third-way, socdem.keynesian, conservatism.christian-democracy, conservatism.burkean, liberalism.internationalist, religious.post-islamism, conservatism.fusionism]
+          contested: [socdem.democratic-socialism, marxism.eurocommunism, conservatism.national]
+          rejects: [marxism.ml, marxism.juche, nationalism.gandhian, conservatism.integralism, fascism.italian]
+        presupposes: []
+        excludes: [party.system.leading-party, party.system.national-front-party]
+        tension: [party.system.partyless]
+        tags: []
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [reserve-army]
+          mechanism: >
+            Party competition makes campaign finance and media access decisive, which gives business donors leverage over all
+            major parties; where labor parties are strong, it also lets organized workers win office.
+          drain: sustains
+          law_of_value: none
+
+      - id: party.system.leading-party
+        label: One leading party of the working people, with allied parties in a front
+        claim: A single party representing the working class and its allies should lead the state permanently, with minor parties and mass organizations cooperating under its leadership.
+        voiced: >
+          The leadership of the Communist Party is the defining feature of socialism. Multi-party competition is the politics of
+          competing capitals. Our system is multi-party cooperation under the leadership of one party, with consultation and
+          elections at every level. The party leads; it does not rotate out to let the bourgeoisie back in.
+        you: You want one party of the working people to lead the state for good, with other parties cooperating rather than competing to replace it.
+        because: >
+          A socialist economy needs long-term planning that electoral cycles would disrupt, and a revolution needs protection
+          from parties funded by the old owners and foreign governments. Where competing parties were allowed in socialist
+          states, as in the late Soviet Union, the result was privatization and collapse. A leading party rooted in workplaces
+          and villages can consult the people continuously without handing power to money.
+        against:
+          - from: marxism.trotskyism
+            text: >
+              Soviet democracy in its first years had several soviet parties. Banning them, then factions, then debate, turned the
+              party into a bureaucracy that ruled in the workers' name.
+          - from: liberalism.classical
+            text: >
+              A party that cannot be voted out answers to itself. "Consultation" with no possibility of losing is not
+              accountability.
+        sources:
+          - {author: V. I. Lenin, title: "Left-Wing Communism: An Infantile Disorder", year: 1920}
+          - {author: Mao Zedong, title: On the People's Democratic Dictatorship, year: 1949}
+        traditions:
+          defining: [marxism.ml, marxism.scc]
+          typical: [marxism.maoism, marxism.juche, marxism.hoxhaism, marxism.mlm, marxism.guevarism]
+          contested: [marxism.leninism, marxism.african-socialism]
+          rejects: [liberalism.classical, marxism.trotskyism, marxism.luxemburgism, anarchism.communist, socdem.democratic-socialism]
+        presupposes: [democracy.form.democratic-centralism]
+        excludes: [party.system.competitive-multiparty]
+        tension: [party.system.soviet-pluralism]
+        tags: [party-state]
+        analysis:
+          gains: [core-workers, peasantry, professional-managerial]
+          pays: [finance-capital, comprador-capital, landed-capital]
+          mechanism: >
+            A permanent leading party closes the political route by which old owners and foreign-backed parties could reverse
+            nationalization and land reform; it also makes the party apparatus the only path to power, so its officials can
+            become a privileged stratum.
+          drain: reduces
+          law_of_value: suspends
+          disputed: Materialists split on whether long-ruling parties (Soviet, Chinese, Vietnamese, Cuban) remained instruments of the working class or became a ruling stratum; China's case is the sharpest dispute.
+          consciousness: hegemonic
+
+      - id: party.system.soviet-pluralism
+        label: A workers' state with several workers' parties free to compete
+        claim: A workers' state should allow several parties that accept the revolution to compete freely in the councils, with free debate and the right to form factions.
+        voiced: >
+          Legalization of soviet parties. The workers and peasants themselves, by their free vote, will indicate which parties
+          they recognize as soviet parties. Freedom only for the supporters of the government is no freedom at all. Without
+          competing parties, the councils become rubber stamps.
+        you: You want a workers' state in which different parties of working people can compete freely for support.
+        because: >
+          A single party cannot represent a whole class, whose different layers have different views. When the Bolsheviks
+          banned other soviet parties and then factions inside their own party, debate died and a bureaucracy took over.
+          Several parties competing within soviet legality give workers real choice and a way to correct their leaders without
+          restoring capitalism.
+        against:
+          - from: marxism.ml
+            text: >
+              The Mensheviks and Socialist Revolutionaries were "soviet parties" too, and they took up arms with the Whites.
+              Under siege, rival parties become channels for counter-revolution.
+          - from: liberalism.classical
+            text: >
+              Who defines which parties "accept the revolution"? Pluralism limited to the approved is a narrower version of one-party
+              rule.
+        sources:
+          - {author: Leon Trotsky, title: The Transitional Program, year: 1938}
+          - {author: Rosa Luxemburg, title: The Russian Revolution, year: 1922, note: "written 1918"}
+          - {author: Leon Trotsky, title: The Revolution Betrayed, year: 1936}
+        traditions:
+          defining: [marxism.trotskyism, marxism.luxemburgism]
+          typical: [marxism.third-camp, socdem.democratic-socialism, marxism.council-communism]
+          contested: [marxism.eurocommunism, marxism.market-socialism]
+          rejects: [marxism.ml, liberalism.classical, marxism.left-communism]
+        presupposes: [democracy.form.council]
+        excludes: [party.system.leading-party]
+        tension: [party.system.competitive-multiparty]
+        tags: []
+        analysis:
+          gains: [core-workers, peasantry]
+          pays: [finance-capital, industrial-capital, professional-managerial]
+          mechanism: >
+            Competing workers' parties within councils keep ownership socialized while giving workers leverage over officials,
+            limiting the formation of a privileged administrative stratum.
+          drain: reduces
+          law_of_value: suspends
+          consciousness: hegemonic
+
+      - id: party.system.partyless
+        label: No parties; parties divide the people and serve their own machines
+        claim: Political parties should be abolished or bypassed; representatives should be chosen as individuals by their communities and answer to them, not to party machines.
+        voiced: >
+          The political party is a machine for manufacturing collective passion. Its first goal is its own growth, without
+          limit. The party is the dictatorship of the modern age. Let villages and assemblies choose their best people directly,
+          without a party standing between them.
+        you: You want politics without parties, with people choosing representatives directly and holding them to account.
+        because: >
+          Parties put loyalty to the party above truth and the common good, as Simone Weil argued; Michels showed that even
+          democratic parties fall under the control of an oligarchy of officials. A representative chosen by a village or an
+          assembly answers to it; one chosen by a party answers to the party. Gandhian and Gandhian-inspired movements in India
+          built a vision of partyless democracy from the village up.
+        against:
+          - from: liberalism.classical
+            text: >
+              Without parties, voters cannot know what a candidate will do, and the rich and famous win as individuals. Parties
+              organize choices; abolishing them hands politics to notables.
+          - from: marxism.leninism
+            text: >
+              Classes act politically through parties. Abolishing parties leaves the propertied organized through their wealth and
+              the workers disorganized.
+        sources:
+          - {author: Simone Weil, title: On the Abolition of All Political Parties, year: 1950}
+          - {author: Jayaprakash Narayan, title: A Plea for Reconstruction of Indian Polity, year: 1959}
+          - {author: Robert Michels, title: Political Parties, year: 1911}
+          - {author: Muammar Gaddafi, title: The Green Book, year: 1975}
+        traditions:
+          defining: [nationalism.gandhian]
+          typical: [commonsense.anti-politics, anarchism.communalism, zapatismo, anarchism.syndicalist]
+          contested: [conservatism.right-populism, nationalism.indigenous-sovereignty, anarchism.communist]
+          rejects: [marxism.ml, liberalism.classical, socdem.labourism]
+        presupposes: []
+        excludes: [party.system.leading-party]
+        tension: [party.system.competitive-multiparty]
+        tags: [commonsense]
+        analysis:
+          gains: [petty-bourgeoisie, landed-capital, peasantry]
+          pays: [core-workers]
+          mechanism: >
+            Without parties, candidates stand on personal reputation and local standing, which favors landowners, notables and
+            those who can fund themselves; workers lose the organization that let them compete as a class.
+          drain: none
+          law_of_value: none
+          disputed: Zapatista and communalist versions pair partyless politics with communal ownership, which changes the class effect.
+
+      - id: party.system.national-front-party
+        label: One national party to unite the nation above tribe and faction
+        claim: A newly independent nation should be governed by one national party that unites all its peoples and classes, with competition taking place inside the party rather than between parties.
+        voiced: >
+          Where there is one party, and that party is identified with the nation as a whole, the foundations of democracy are
+          firmer than where you have two or more parties, each representing only a section of the community. We are one people
+          building one nation; tribe and faction would tear us apart.
+        you: You think a young nation needs one national party uniting everyone, with real choice inside the party rather than between parties.
+        because: >
+          After colonialism, many African and Arab states inherited borders that cut across peoples and parties that formed
+          along ethnic and regional lines, inviting civil war and foreign manipulation. A single national party can hold the
+          nation together while it builds schools, roads and industry. Tanzania's TANU allowed competing candidates within the
+          party and kept the country free of the ethnic wars that tore its neighbors.
+        against:
+          - from: liberalism.internationalist
+            text: >
+              Single national parties became vehicles for presidents-for-life and their families across Africa and the Arab world.
+              Unity was the excuse; monopoly of office was the result.
+          - from: marxism.ml
+            text: >
+              A party of "all classes" is led by the national bourgeoisie and the bureaucracy. Without a working-class party at its
+              core, the national front slides back into dependency.
+        sources:
+          - {author: Julius K. Nyerere, title: Democracy and the Party System, year: 1963}
+          - {author: Kwame Nkrumah, title: "Consciencism: Philosophy and Ideology for De-Colonization", year: 1964}
+        traditions:
+          defining: [marxism.african-socialism, nationalism.nasserism]
+          typical: [nationalism.baathism, nationalism.kemalism, nationalism.pan-africanism, nationalism.three-principles]
+          contested: [nationalism.developmental-state, nationalism.peronism, marxism.ml]
+          rejects: [liberalism.classical, liberalism.internationalist, marxism.trotskyism]
+        presupposes: [liberty.concept.national-liberation]
+        excludes: [party.system.competitive-multiparty]
+        tension: [party.system.leading-party]
+        tags: [global-south]
+        analysis:
+          gains: [professional-managerial, peasantry, industrial-capital]
+          pays: [comprador-capital, landed-capital]
+          mechanism: >
+            A single national party concentrates control of the state, marketing boards and nationalized enterprises in the
+            party-state bureaucracy, which has funded schools and clinics and has also become a channel for accumulation by
+            officials.
+          drain: reduces
+          law_of_value: regulates
+          disputed: Materialists split on whether these parties were vehicles of national liberation (Nyerere, Nasser) or of a bureaucratic bourgeoisie (Shivji, Fanon on the national bourgeoisie).
+
+      - id: party.system.corporative
+        label: Represent people by their trade and estate, not by party
+        claim: Instead of parties, people should be represented through their occupations, professions and communities, organized in corporations or vocational bodies that cooperate for the common good.
+        voiced: >
+          Parties set class against class and region against region. Society is not a heap of individuals but an organism of
+          families, trades, professions and estates. Let each be represented through its own corporate body, and let them meet
+          to harmonize their interests under the common good.
+        you: You want people represented through their trades, professions and communities rather than through competing parties.
+        because: >
+          A worker is first a miner, a teacher or a farmer, and his real interests are tied to his trade and its community.
+          Party politics turns these concrete interests into abstract ideological war. Vocational bodies, in which employers and
+          workers of each industry cooperate, can settle wages and conditions and represent society as it really is. Pius XI
+          proposed such vocational orders as the remedy for class conflict.
+        against:
+          - from: marxism.ml
+            text: >
+              Corporatism under Mussolini, Salazar and Franco meant banning independent unions and placing workers under
+              employers' and the state's control in "corporations" run from above.
+          - from: liberalism.classical
+            text: >
+              Representation by occupation freezes people into their trade and hands power to whoever designs the corporations.
+              Citizens are individuals, not members of estates.
+        sources:
+          - {author: Pius XI, title: Quadragesimo Anno, year: 1931}
+          - {author: Benito Mussolini and Giovanni Gentile, title: The Doctrine of Fascism, year: 1932}
+        traditions:
+          defining: [fascism.italian, fascism.national-syndicalism]
+          typical: [fascism.clerical, conservatism.integralism, fascism.third-position]
+          contested: [conservatism.cst, conservatism.distributism, nationalism.peronism, conservatism.reactionary]
+          rejects: [liberalism.classical, marxism.ml, anarchism.syndicalist, socdem.nordic]
+        presupposes: [state.nature.organic-nation]
+        excludes: [party.system.competitive-multiparty]
+        tension: []
+        tags: [corporatism]
+        analysis:
+          gains: [industrial-capital, landed-capital, petty-bourgeoisie]
+          pays: [core-workers]
+          mechanism: >
+            In practice corporative representation replaced independent unions with state-supervised bodies in which employers
+            held the stronger hand, freezing wages while leaving ownership untouched (Italy 1926–1943, Portugal 1933–1974).
+          drain: sustains
+          law_of_value: regulates
+          disputed: Catholic social teaching distinguishes free vocational bodies from fascist state corporatism; critics hold the distinction did not survive contact with power in Austria, Portugal and Spain.
+
+  - id: authority.legitimacy
+    domain: state
+    layer: method
+    question: What makes authority legitimate?
+    plain: Why should anyone obey a government, or any boss, at all?
+    short: legitimate authority
+    importance: 2
+    region: state
+    positions:
+      - id: authority.legitimacy.consent
+        label: Authority is legitimate only by the consent of the governed
+        claim: Authority is legitimate only when the people subject to it have consented to it, and it loses legitimacy when it betrays the trust they gave.
+        voiced: >
+          Men being by nature all free, equal and independent, no one can be put out of this estate and subjected to the
+          political power of another without his own consent. Governments derive their just powers from the consent of the
+          governed.
+        you: You believe a government is legitimate only if the people it rules have consented to it.
+        because: >
+          No one is born with a title to rule another. If people are naturally equal, the only way authority can be rightful is
+          if those subject to it agree. Consent gives a test for every government: is it accountable to the people, and can
+          they withdraw their trust? That test underlies elections, constitutions and the right to change governments.
+        against:
+          - from: anarchism.communist
+            text: >
+              Who ever consented? Born into a state, you are told your staying is "tacit consent." That is the consent of a
+              passenger carried aboard asleep.
+          - from: conservatism.burkean
+            text: >
+              Society is a partnership between the living, the dead and the yet unborn. No generation consented to it, and no
+              single generation may dissolve it.
+        sources:
+          - {author: John Locke, title: Two Treatises of Government, year: 1689}
+          - {author: Thomas Jefferson, title: The Declaration of Independence, year: 1776}
+        traditions:
+          defining: [liberalism.classical, liberalism.social]
+          typical: [liberalism.egalitarian, libertarianism.minarchist, liberalism.republican, socdem.nordic, conservatism.christian-democracy, liberalism.internationalist]
+          contested: [libertarianism.ancap, socdem.democratic-socialism]
+          rejects: [conservatism.reactionary, conservatism.monarchist, conservatism.integralism, marxism.ml]
+        presupposes: []
+        excludes: [authority.legitimacy.divine-ordinance]
+        tension: [authority.legitimacy.prescription]
+        tags: []
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [reserve-army]
+          mechanism: >
+            Grounding authority in consent legitimates governments by elections and constitutions while treating employment as
+            consensual contract, so authority in the workplace escapes the consent test applied to the state.
+          drain: none
+          law_of_value: none
+
+      - id: authority.legitimacy.protection
+        label: Authority is legitimate as long as it protects
+        claim: People owe obedience to whoever actually protects them from violence and chaos; the duty lasts as long as the protection does.
+        voiced: >
+          The obligation of subjects to the sovereign is understood to last as long, and no longer, than the power lasts by which
+          he is able to protect them. Protego ergo obligo: I protect, therefore I oblige. Whoever keeps the peace has the right
+          to be obeyed.
+        you: You believe whoever actually keeps people safe has a claim on their obedience, for as long as they do.
+        because: >
+          The purpose of having a government at all is to escape the war of all against all. A ruler who keeps the peace
+          delivers the good that makes every other good possible, whatever his origin; one who cannot has lost his claim
+          whatever his election. This is how most people, in most of history, have judged their rulers.
+        against:
+          - from: liberalism.classical
+            text: >
+              A protection racket also protects. Authority that rests only on security has no reason to respect rights once it has
+              the power to provide security without them.
+          - from: marxism.leninism
+            text: >
+              Protection of whom from whom? The state's "peace" protects owners from the dispossessed and calls it protecting
+              everyone.
+        sources:
+          - {author: Thomas Hobbes, title: Leviathan, year: 1651, note: "ch. 21"}
+          - {author: Carl Schmitt, title: The Concept of the Political, year: 1932}
+        traditions:
+          defining: [conservatism.reactionary]
+          typical: [conservatism.national, fascism.neoreaction]
+          contested: [liberalism.classical, nationalism.kemalism, commonsense.declinist]
+          rejects: [anarchism.communist, liberalism.republican, marxism.leninism]
+        presupposes: [state.nature.sovereign-order]
+        excludes: []
+        tension: [authority.legitimacy.consent]
+        tags: []
+        analysis:
+          gains: [finance-capital, industrial-capital, landed-capital]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Making security the source of legitimacy lets rulers trade civil and labor rights for order; strikes, protests and
+            insurgency count as threats to protection, so the existing distribution of property is defended by default.
+          drain: none
+          law_of_value: none
+
+      - id: authority.legitimacy.prescription
+        label: Authority is legitimate because it has long been established
+        claim: Authority gains legitimacy from long establishment and inherited custom; institutions that have endured have proved themselves in ways no theory can.
+        voiced: >
+          Prescription is the most solid of all titles, not only to property, but to government. Society is a partnership in
+          all science, art and virtue, between those who are living, those who are dead, and those who are to be born. We
+          should approach the faults of the state as to the wounds of a father, with pious awe and trembling solicitude.
+        you: You see authority as legitimate when it has lasted and been handed down, not because of any abstract theory.
+        because: >
+          Institutions that have lasted have absorbed the experience of generations and adapted to a people's character. Abstract
+          theories of legitimacy, consent or class, have justified revolutions that destroyed the trust and habits on which any
+          order depends, and ended in terror. Reform should repair the inheritance, not raze it.
+        against:
+          - from: liberalism.classical
+            text: >
+              By this logic slavery, serfdom and colonial rule were legitimate once they lasted long enough. Age is not a title.
+          - from: marxism.classical
+            text: >
+              Prescription is the conquerors' title after enough time has passed for the conquest to be forgotten.
+        sources:
+          - {author: Edmund Burke, title: Reflections on the Revolution in France, year: 1790}
+          - {author: Michael Oakeshott, title: Rationalism in Politics, year: 1962}
+        traditions:
+          defining: [conservatism.burkean]
+          typical: [conservatism.traditionalist, conservatism.one-nation, conservatism.monarchist, religious.confucian, conservatism.paleo]
+          contested: [conservatism.national, conservatism.christian-democracy]
+          rejects: [liberalism.classical, marxism.classical, anarchism.communist, libertarianism.ancap]
+        presupposes: [rights.basis.inheritance]
+        excludes: []
+        tension: [authority.legitimacy.consent]
+        tags: []
+        analysis:
+          gains: [landed-capital, finance-capital]
+          pays: [reserve-army, peasantry]
+          mechanism: >
+            Treating long establishment as legitimacy protects inherited titles to land and office and places the burden of proof
+            on those who would change them.
+          drain: sustains
+          law_of_value: none
+
+      - id: authority.legitimacy.divine-ordinance
+        label: Authority is legitimate because God ordains it
+        claim: Legitimate authority comes from God, who ordains rulers for the common good; rulers are legitimate when they govern according to His law.
+        voiced: >
+          Let every soul be subject to the governing authorities, for there is no authority except from God. Those who exercise
+          it are God's ministers for your good. And when they command what God forbids, we must obey God rather than men.
+        you: You believe legitimate authority comes from God and binds rulers to govern by His law.
+        because: >
+          Only God can give one person a real right to command another, since all people are equal before Him. Grounding
+          authority in God both dignifies obedience and limits it: rulers are servants of a higher law, and their commands bind
+          only within it. Christian and Islamic traditions both developed doctrines of when a ruler loses that right.
+        against:
+          - from: liberalism.classical
+            text: >
+              Every king claimed God's commission, and every church taught obedience to its patron. Divine right is the oldest
+              ideology of rulers.
+          - from: anarchism.christian
+            text: >
+              Christ said his kingdom is not of this world. The church that blessed Caesar betrayed him.
+        sources:
+          - {author: Paul of Tarsus, title: Letter to the Romans, year: "c. 57", note: chapter 13}
+          - {author: Leo XIII, title: Diuturnum (On the Origin of Civil Power), year: 1881}
+          - {author: Ruhollah Khomeini, title: Islamic Government (Hokumat-e Eslami), year: 1970}
+        traditions:
+          defining: [conservatism.integralism, religious.islamism-khomeinist]
+          typical: [conservatism.reactionary, conservatism.monarchist, religious.islamism-brotherhood, religious.salafism-quietist, conservatism.evangelical-right, religious.religious-zionism]
+          contested: [conservatism.cst, conservatism.christian-democracy]
+          rejects: [liberalism.classical, marxism.ml, anarchism.communist, anarchism.christian]
+        presupposes: [state.nature.ordained-authority]
+        excludes: [authority.legitimacy.consent, authority.legitimacy.justify-or-dismantle]
+        tension: []
+        tags: [religion]
+        analysis:
+          gains: [landed-capital, petty-bourgeoisie]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Divine legitimacy places rulers' authority beyond popular removal and gives clergy the role of judging rulers;
+            historically it sanctified existing property and office while providing a ground to condemn rulers who violated
+            religious law.
+          drain: none
+          law_of_value: none
+
+      - id: authority.legitimacy.mandate-of-heaven
+        label: Authority is legitimate while it serves the people's welfare
+        claim: Rulers are legitimate as long as they provide for the people's welfare and govern with virtue; when they fail, they lose the mandate and may be replaced.
+        voiced: >
+          The people are of supreme importance; the altars of the land and grain come next; last comes the ruler. Heaven sees
+          as the people see. A ruler who ruins the people is no longer a ruler but a mere fellow, and killing him is not regicide.
+          Judge us by whether life gets better.
+        you: You judge a government by whether it makes people's lives better, and think it loses its right to rule when it fails.
+        because: >
+          Legitimacy shows itself in results: food, peace, order, rising living standards. Procedure without results breeds
+          contempt; results without procedure can still earn deep loyalty, as East Asian governments that delivered rapid
+          development found. The Confucian tradition always held that rulers must serve the people and lose Heaven's mandate
+          when they don't.
+        against:
+          - from: liberalism.social
+            text: >
+              Performance legitimacy has no way to remove a government peacefully when performance fails; the mandate is lost only
+              by revolt. And growth can buy obedience while rights are crushed.
+          - from: marxism.trotskyism
+            text: >
+              "Welfare of the people" judged by those in power is paternalism. Workers are to be provided for, not to rule.
+        sources:
+          - {author: Mencius, title: Mencius, year: "300 BCE", note: "c."}
+          - {author: Daniel A. Bell, title: "The China Model: Political Meritocracy and the Limits of Democracy", year: 2015}
+        traditions:
+          defining: [religious.confucian, religious.political-meritocracy]
+          typical: [nationalism.developmental-state, marxism.scc, liberalism.technocratic]
+          contested: [nationalism.three-principles, marxism.ml]
+          rejects: [liberalism.classical, anarchism.communist, libertarianism.ancap]
+        presupposes: []
+        excludes: []
+        tension: [authority.legitimacy.consent]
+        tags: [global-south, confucian]
+        analysis:
+          gains: [professional-managerial, industrial-capital]
+          pays: [peasantry]
+          mechanism: >
+            Results-based legitimacy ties officials' authority to growth and welfare targets; in practice it has funded
+            infrastructure and poverty reduction while concentrating decisions in an administrative stratum that sets the
+            targets.
+          drain: none
+          law_of_value: regulates
+
+      - id: authority.legitimacy.class-content
+        label: Authority is legitimate if it serves the working majority
+        claim: The legitimacy of authority depends on which class it serves; a state ruling for the working majority against the exploiters is legitimate whatever its procedures.
+        voiced: >
+          The question of legitimacy is a class question. Formal democracy for the exploiters means dictatorship over the
+          exploited. Proletarian democracy is a million times more democratic than any bourgeois democracy, because it is
+          democracy for the majority, for the poor, and suppression of the exploiters.
+        you: You judge a government by which class it serves, not by its procedures.
+        because: >
+          Procedures are never neutral: elections in societies of great property are won by property, and courts defend what
+          exists. The question that decides people's lives is whose interests the state advances: land to peasants or to
+          landlords, factories to workers or to owners. An authority that expropriates the exploiters and serves the majority is
+          more legitimate than one that follows procedure while serving a minority.
+        against:
+          - from: marxism.luxemburgism
+            text: >
+              Who decides whom the state serves, if workers have no free vote? A party that claims to embody the class without
+              asking it has replaced the class.
+          - from: liberalism.classical
+            text: >
+              "Legitimate whatever its procedures" is a license for any party that claims to speak for the majority to suppress
+              it.
+        sources:
+          - {author: V. I. Lenin, title: The Proletarian Revolution and the Renegade Kautsky, year: 1918}
+          - {author: V. I. Lenin, title: The State and Revolution, year: 1917}
+        traditions:
+          defining: [marxism.leninism, marxism.ml]
+          typical: [marxism.maoism, marxism.mlm, marxism.hoxhaism, marxism.juche, marxism.guevarism, marxism.trotskyism]
+          contested: [marxism.scc, marxism.left-communism]
+          rejects: [liberalism.classical, marxism.luxemburgism, socdem.revisionist, anarchism.communist]
+        presupposes: [state.nature.class-instrument]
+        excludes: [authority.legitimacy.divine-ordinance]
+        tension: [authority.legitimacy.consent]
+        tags: [debate.lenin-kautsky]
+        analysis:
+          gains: [core-workers, peasantry, peripheral-workers]
+          pays: [finance-capital, industrial-capital, landed-capital]
+          mechanism: >
+            Judging authority by class content licenses expropriation of owners without their consent or compensation; it also
+            removes procedural checks on whoever claims to represent the working class.
+          drain: reduces
+          law_of_value: suspends
+          consciousness: hegemonic
+
+      - id: authority.legitimacy.leader-embodiment
+        label: Authority is legitimate when a leader embodies the people's will
+        claim: Legitimate authority flows from a leader who embodies the will of the people directly, above parties, parliaments and procedure.
+        voiced: >
+          The leader is not a delegate of the masses; he is their living will. He sees what they feel but cannot say. Parliaments
+          talk; the leader acts. The leader protects the law; his word is the people's word.
+        you: You believe the best authority is a leader who expresses what the people truly want, without parties and parliaments in the way.
+        because: >
+          Procedures and parliaments fragment the people into parties and interests that cannot act. A leader bound to the
+          people by trust and devotion can do what committees cannot: decide, mobilize, sacrifice. In national emergencies
+          peoples have turned to such leaders again and again, and their authority rested on a bond deeper than any vote.
+        against:
+          - from: liberalism.classical
+            text: >
+              This principle gave Germany Hitler and the world its greatest catastrophe. A leader who answers to no institution
+              answers to no one.
+          - from: marxism.ml
+            text: >
+              The "will of the people" embodied in a leader served the industrialists who funded him. The leader principle
+              destroyed the unions and parties through which the people could act for themselves.
+        sources:
+          - {author: Carl Schmitt, title: The Führer Protects the Law, year: 1934}
+          - {author: Max Weber, title: Economy and Society, year: 1922, note: "on charismatic authority"}
+          - {author: Benito Mussolini and Giovanni Gentile, title: The Doctrine of Fascism, year: 1932}
+        traditions:
+          defining: [fascism.nazism, fascism.italian]
+          typical: [fascism.national-syndicalism, fascism.clerical, fascism.neoreaction]
+          contested: [nationalism.peronism, nationalism.baathism]
+          rejects: [liberalism.classical, marxism.ml, anarchism.communist, conservatism.burkean, socdem.nordic]
+        presupposes: [state.nature.organic-nation]
+        excludes: [authority.legitimacy.consent, authority.legitimacy.justify-or-dismantle]
+        tension: []
+        tags: [fascism]
+        analysis:
+          gains: [industrial-capital, finance-capital, petty-bourgeoisie]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            Concentrating legitimacy in a leader dissolved parties and unions in Germany and Italy, leaving workers without
+            organization while armaments and conquest raised profits for heavy industry.
+          drain: sustains
+          law_of_value: regulates
+
+      - id: authority.legitimacy.justify-or-dismantle
+        label: Every authority must justify itself, and most cannot
+        claim: No authority is legitimate by default; every form of command, from the state to the boss to the patriarch, must justify itself, and those that cannot should be dismantled.
+        voiced: >
+          Authority is not self-justifying. Any structure of hierarchy and domination has to bear the burden of proof, and when
+          it cannot meet it, it is illegitimate and should be dismantled. Most cannot. The autonomous individual owes no one
+          obedience simply because they command.
+        you: You think every kind of authority, from government to the boss, has to prove it is justified, and most can't.
+        because: >
+          Every person has a duty to act on their own judgment; obeying because someone commands abandons that duty. Some
+          authority can be justified, like a parent stopping a child from running into traffic, but the state, the employer and
+          the landlord rarely can. Placing the burden of proof on authority, not on those who resist it, is the core of any
+          serious idea of self-government.
+        against:
+          - from: marxism.leninism
+            text: >
+              Every factory, railway and revolution requires coordination and command. Treating all authority as suspect leaves
+              workers unable to organize the discipline needed to win and to run production.
+          - from: conservatism.burkean
+            text: >
+              Demanding that every institution justify itself to each individual's reason dissolves society; most of what holds us
+              together cannot pass that test and does not need to.
+        sources:
+          - {author: Robert Paul Wolff, title: In Defense of Anarchism, year: 1970}
+          - {author: Noam Chomsky, title: Notes on Anarchism, year: 1970}
+        traditions:
+          defining: [anarchism.communist, anarchism.syndicalist]
+          typical: [anarchism.individualist, anarchism.feminist, anarchism.communalism, anarchism.mutualist, zapatismo]
+          contested: [libertarianism.ancap, marxism.council-communism]
+          rejects: [conservatism.burkean, conservatism.reactionary, marxism.ml, fascism.italian]
+        presupposes: [state.nature.hierarchy-as-such]
+        excludes: [authority.legitimacy.divine-ordinance, authority.legitimacy.leader-embodiment]
+        tension: [authority.legitimacy.class-content]
+        tags: []
+        analysis:
+          gains: [core-workers, reserve-army]
+          pays: [industrial-capital, professional-managerial]
+          mechanism: >
+            Putting the burden of proof on all authority targets workplace hierarchy as well as the state, supporting
+            self-management that strips managers and owners of unaccountable command over labor.
+          drain: none
+          law_of_value: suspends

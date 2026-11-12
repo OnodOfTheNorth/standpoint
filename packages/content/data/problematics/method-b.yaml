@@ -1,0 +1,954 @@
+problematics:
+  # ------------------------------------------------------------------
+  - id: progress.idea
+    domain: method
+    layer: method
+    question: Is there progress in history?
+    plain: Are things getting better over the long run, getting worse, or just changing?
+    short: the idea of progress
+    importance: 2
+    positions:
+      - id: progress.idea.steady-improvement
+        label: Yes, steady progress through reason, science and markets
+        claim: "History shows real and continuing progress, driven by science, trade, rights and reason, and the present is the best time yet to be alive."
+        voiced: "By almost every measure, life expectancy, literacy, violence, extreme poverty, the world has got better. Reason, science and humanism work. Keep going."
+        you: "You think the world really has got better over time, thanks to science, trade and reason, and that we should keep building on that."
+        because: >
+          The numbers are hard to argue with: child mortality, famine deaths and illiteracy have fallen
+          worldwide over two centuries, and the gains came where knowledge, trade and liberal institutions
+          spread. Pessimism sells, but it is not supported by the data. Progress is not automatic; it is
+          the result of applying reason to problems, and it can continue.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              Global averages hide where the gains went and what paid for them. Core prosperity rests on
+              labor and resources drained from the periphery; counting people as lifted out of poverty at
+              a few dollars a day measures how cheaply the South is kept.
+          - from: nationalism.decolonial
+            text: >
+              Modernity's progress and colonialism are two faces of one process. The same Enlightenment
+              that wrote the rights of man ranked peoples by civilization and licensed their conquest.
+        sources:
+          - {author: Marquis de Condorcet, title: Sketch for a Historical Picture of the Progress of the Human Mind, year: 1795}
+          - {author: Steven Pinker, title: Enlightenment Now, year: 2018}
+          - {author: Francis Fukuyama, title: The End of History and the Last Man, year: 1992}
+        traditions:
+          defining: [liberalism.classical, liberalism.technocratic, liberalism.utilitarian]
+          typical: [liberalism.social, liberalism.progressive, technology.e-acc, ecology.ecomodernism, liberalism.internationalist, technology.transhumanism]
+          contested: [socdem.third-way, technology.effective-altruism]
+          rejects: [conservatism.traditionalist, fascism.traditionalist, anarchism.primitivist, nationalism.decolonial]
+        presupposes: []
+        excludes: [progress.idea.decline-from-tradition]
+        tension: []
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [peripheral-workers]
+          mechanism: >
+            Reading history as steady improvement under markets and liberal institutions makes the present
+            order the best yet and the core its leading edge; global averages count the periphery's gains
+            and leave out the transfer of value that funds the core's lead.
+          drain: sustains
+          law_of_value: extends
+          method: idealist
+
+      - id: progress.idea.through-contradiction
+        label: Yes, but through struggle and leaps, paid for by the oppressed
+        claim: "There is progress, but it comes through contradiction, struggle and sudden breaks, not steadily, and each advance has been paid for by those below."
+        voiced: "History advances by its bad side. Capitalism created the productive forces and the working class that will bury it, in blood and dirt. Progress is real, and it is a battlefield."
+        you: "You think history does move forward, but through conflict and upheaval, with ordinary people paying for each step."
+        because: >
+          Capitalism did develop production more than all previous societies together, and it did so by
+          expropriating peasants, enslaving Africans and colonizing Asia. Both facts are true. Progress
+          is neither steady nor guaranteed: it comes when contradictions are resolved by struggle, and
+          the outcome of each struggle is open. That is why progress needs organization, not faith.
+        against:
+          - from: marxism.western
+            text: >
+              The angel of history sees one single catastrophe piling wreckage upon wreckage. Faith that
+              history moves forward made the workers' movement complacent and fed the idea that defeats
+              were steps on the way.
+          - from: nationalism.decolonial
+            text: >
+              The stage theory that made colonialism a "progressive" step toward socialism let European
+              Marxists excuse empire. The colonized were not raw material for someone else's dialectic.
+        sources:
+          - {author: Karl Marx, title: The Future Results of British Rule in India, year: 1853}
+          - {author: Friedrich Engels, title: "Socialism: Utopian and Scientific", year: 1880}
+          - {author: Mao Zedong, title: On Contradiction, year: 1937}
+        traditions:
+          defining: [marxism.classical, marxism.ml, marxism.maoism]
+          typical: [marxism.leninism, marxism.trotskyism, marxism.mlm, marxism.scc, marxism.luxemburgism]
+          contested: [marxism.western, marxism.dependency, marxism.black-radical]
+          rejects: [conservatism.traditionalist, liberalism.technocratic, nationalism.decolonial]
+        presupposes: [history.motor.class-struggle]
+        excludes: [progress.idea.decline-from-tradition]
+        tension: []
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, landed-capital]
+          mechanism: >
+            Treating the present order as transitional and its contradictions as material for the next
+            advance tells the exploited that history can move their way through organized struggle; in
+            stagist versions it has also justified waiting for capitalist development, or forcing
+            peasants through modernization.
+          drain: reduces
+          law_of_value: none
+          disputed: >
+            Dependency and world-systems theorists (Frank, Amin) reject the stage version as Eurocentric;
+            orthodox Marxists hold that capitalist development must precede socialism.
+          method: materialist
+
+      - id: progress.idea.decline-from-tradition
+        label: No, modernity is decline from a sacred order
+        claim: "Modern history is a decline: from an order grounded in the sacred, hierarchy and duty into materialism, mass society and spiritual emptiness."
+        voiced: "The modern world is a dark age that calls itself enlightened. We traded the cathedral for the shopping mall, the knight for the banker, the sacred for the useful."
+        you: "You think modern life, for all its gadgets, has lost something deeper that older societies had."
+        because: >
+          The measures of progress are all material: more goods, longer lives. By the measure of meaning,
+          beauty, loyalty and holiness, modern societies are poorer than those they replaced. Traditional
+          civilizations, whatever their faults, ordered life toward something higher than consumption.
+          The loneliness, addiction and despair of rich societies are the symptoms.
+        against:
+          - from: liberalism.classical
+            text: >
+              The sacred order had serfdom, plague, illiterate peasants and women as property. Nostalgia
+              for it is easy for someone who would not have been a peasant in it.
+          - from: marxism.classical
+            text: >
+              The golden age was the lord's age. What you mourn as the sacred was a landed class's
+              ideology; what you hate in modernity is capitalism, and you blame it on equality.
+        sources:
+          - {author: René Guénon, title: The Crisis of the Modern World, year: 1927}
+          - {author: Julius Evola, title: Revolt Against the Modern World, year: 1934}
+          - {author: Richard M. Weaver, title: Ideas Have Consequences, year: 1948}
+        traditions:
+          defining: [fascism.traditionalist, conservatism.traditionalist]
+          typical: [conservatism.reactionary, conservatism.integralism, conservatism.paleo, religious.salafism-quietist, conservatism.monarchist]
+          contested: [conservatism.postliberal, commonsense.declinist, anarchism.primitivist]
+          rejects: [liberalism.classical, marxism.classical, technology.e-acc, liberalism.progressive]
+        presupposes: []
+        excludes: [progress.idea.steady-improvement, progress.idea.through-contradiction]
+        tension: []
+        analysis:
+          gains: [landed-capital]
+          pays: [core-workers, peasantry, reserve-army]
+          mechanism: >
+            Measuring the present against a lost sacred order makes hierarchies of rank, caste and sex the
+            norm and treats modern gains of labor and of women as part of the decline; its politics favor
+            restoring authority to landed and clerical elites.
+          drain: none
+          law_of_value: none
+          method: idealist
+
+      - id: progress.idea.technical-not-moral
+        label: Tools improve; people don't
+        claim: "Knowledge and technology accumulate, but human nature and morals do not improve; the same cruelties return with better tools."
+        voiced: "Our phones get smarter; we don't. The twentieth century had the best science in history and the worst wars. Technical progress is real; moral progress is a myth."
+        you: "You think we keep inventing better tools, but people themselves stay the same, for good and bad."
+        because: >
+          Science is cumulative because each generation builds on tested findings; ethics and politics are
+          not, because each generation must learn virtue anew and the passions do not change. The century
+          that split the atom also built Auschwitz and the gulag. Belief in moral progress is a secular
+          faith that makes people careless about the evil they can still do.
+        against:
+          - from: liberalism.classical
+            text: >
+              Slavery was legal almost everywhere two centuries ago; now it is outlawed everywhere.
+              Judicial torture, burning heretics and beating children were normal. That is moral progress,
+              and it was won by argument.
+          - from: marxism.classical
+            text: >
+              Moral change follows material change: slavery ended when wage labor and slave revolts made
+              it untenable. Morals do improve, when the conditions that require cruelty are removed.
+        sources:
+          - {author: John Gray, title: Straw Dogs, year: 2002}
+          - {author: Christopher Lasch, title: "The True and Only Heaven: Progress and Its Critics", year: 1991}
+        traditions:
+          defining: []
+          typical: [conservatism.burkean, conservatism.postliberal, conservatism.traditionalist]
+          contested: [ecology.deep-ecology, commonsense.declinist]
+          rejects: [liberalism.utilitarian, technology.transhumanism, marxism.classical]
+        presupposes: []
+        excludes: [progress.idea.steady-improvement]
+        tension: []
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            Holding that only technique improves removes the hope that social arrangements can be made
+            fundamentally more just, which leaves current owners in place; its suspicion of grand projects
+            also blocks schemes imposed on communities by planners.
+          drain: none
+          law_of_value: none
+          method: idealist
+
+      - id: progress.idea.toward-promised-end
+        label: History moves toward an end God has promised
+        claim: "History moves toward an end appointed by God (the Kingdom, the Day of Judgment, redemption), and events are steps toward it."
+        voiced: "History is going somewhere. The Kingdom is coming, and every faithful act prepares its way. We read the signs of the times."
+        you: "You believe history is heading toward an end God has promised, and that what happens now is part of that story."
+        because: >
+          Scripture presents history not as a wheel but as a line, from creation to fulfillment. That
+          gives every life and every age meaning: the faithful work, suffer and hope for a goal beyond
+          what human effort can reach, but toward which it can contribute. Without such an end, history
+          is either meaningless or a secular imitation of the Kingdom.
+        against:
+          - from: liberalism.classical
+            text: >
+              Politics that knows the end of history can justify any means to reach it. Eschatology in
+              power has produced crusades, settlements on other people's land and wars welcomed as signs
+              of the end.
+          - from: marxism.classical
+            text: >
+              A paradise after death or at the end of time is compensation for a hell now. It asks the
+              poor to wait while the rich do not.
+        sources:
+          - {author: Augustine of Hippo, title: The City of God, year: 426}
+          - {author: Walter Rauschenbusch, title: Christianity and the Social Crisis, year: 1907}
+          - {author: Abraham Isaac Kook, title: Orot, year: 1920}
+          - {author: Hal Lindsey, title: The Late Great Planet Earth, year: 1970}
+        traditions:
+          defining: [religious.religious-zionism, conservatism.evangelical-right]
+          typical: [religious.islamism-khomeinist, religious.christian-socialism, religious.liberation-theology, conservatism.integralism]
+          contested: [religious.islamism-brotherhood]
+          rejects: [marxism.classical, liberalism.classical, libertarianism.objectivist]
+        presupposes: [history.motor.providence]
+        excludes: []
+        tension: []
+        analysis:
+          gains: [landed-capital, petty-bourgeoisie]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >
+            Reading history toward a promised end makes political acts preparations for redemption; in
+            settler and end-times readings this sanctifies seizure of land and war as stages of the plan,
+            while in social-gospel and liberation readings the same hope mobilizes the poor.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Liberation theologians and Christian socialists read the Kingdom as a mandate for
+            redistribution now; materialists differ on whether such movements carry the position or
+            break with it.
+          method: idealist
+
+      - id: progress.idea.western-myth
+        label: "Progress is the West's story about itself"
+        claim: "The idea of one path of progress is a European story that ranked peoples and justified colonizing them; histories are plural."
+        voiced: "Progress for whom? Your development was our dispossession. There is not one road with the West in front; there are many worlds, and ours were destroyed in the name of yours."
+        you: "You think the idea of progress was used to justify conquering other peoples, and that there isn't one road everyone has to follow."
+        because: >
+          The language of progress, civilization and development has always placed some peoples ahead and
+          others behind, and those behind were to be improved by force: colonized, converted, resettled,
+          adjusted. Development projects still clear peoples off their land. Indigenous and non-Western
+          ways of living are not earlier stages but different answers, often wiser about living with land.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              Rejecting universalism hands the South nothing but cultural difference and abandons the
+              universal promise of socialism. Eurocentrism is defeated by a truer universalism, not by
+              retreating into particularity.
+          - from: liberalism.classical
+            text: >
+              Clean water, vaccines and literacy are not Western myths; people everywhere want them and
+              live longer with them. Calling progress a Western story romanticizes poverty.
+        sources:
+          - {author: Aníbal Quijano, title: "Coloniality of Power, Eurocentrism, and Latin America", year: 2000}
+          - {author: Arturo Escobar, title: Encountering Development, year: 1995}
+          - {author: Walter Mignolo, title: The Darker Side of Western Modernity, year: 2011}
+        traditions:
+          defining: [nationalism.decolonial, nationalism.indigenous-sovereignty]
+          typical: [anarchism.green, ecology.deep-ecology, feminism.decolonial, zapatismo]
+          contested: [marxism.black-radical, marxism.third-worldism, nationalism.gandhian]
+          rejects: [liberalism.classical, marxism.classical, ecology.ecomodernism, nationalism.developmental-state]
+        presupposes: []
+        excludes: [progress.idea.steady-improvement]
+        tension: []
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Denying that one path binds all peoples defends communities against dams, mines and plantations
+            that clear them off land in the name of growth; it can also leave peripheral states without an
+            argument for the industrialization that would end their dependence.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            Amin argued that culturalist anti-Eurocentrism mirrors Eurocentrism; decolonial thinkers reply
+            that Marxist universalism is itself a European product.
+          method: mixed
+
+      - id: progress.idea.within-limits
+        label: Growth is no longer progress; real progress means living within limits
+        claim: "Progress measured by economic growth now undermines itself; real progress would mean meeting human needs within the planet's limits."
+        voiced: "Infinite growth on a finite planet is the creed of madmen and economists. The rich countries have enough. Progress now means less throughput, more time, more care."
+        you: "You think that endless economic growth is now doing more harm than good, and that real progress means living within nature's limits."
+        because: >
+          Past growth brought real gains, but in rich countries more output no longer raises well-being
+          while it drives climate breakdown and species loss. Decoupling growth from material use has not
+          happened at the speed required. Progress must be redefined as security, health, free time and
+          ecological stability, which rich countries can provide with less.
+        against:
+          - from: ecology.ecomodernism
+            text: >
+              Telling people to accept less is politically doomed and morally wrong while billions lack
+              energy. The way out is more technology: nuclear, renewables, intensive farming that frees
+              land for nature.
+          - from: nationalism.developmental-state
+            text: >
+              Degrowth is a rich-country philosophy. The South needs steel, roads and power plants; limits
+              preached from the core become a ceiling on the periphery.
+        sources:
+          - {author: Donella Meadows, Dennis Meadows, Jørgen Randers and William Behrens III, title: The Limits to Growth, year: 1972}
+          - {author: Jason Hickel, title: "Less Is More: How Degrowth Will Save the World", year: 2020}
+          - {author: Kohei Saito, title: Marx in the Anthropocene, year: 2023}
+        traditions:
+          defining: [ecology.degrowth, marxism.degrowth-communism]
+          typical: [ecology.deep-ecology, anarchism.green, marxism.ecosocialism]
+          contested: [ecology.environmental-justice, ecology.neo-malthusian]
+          rejects: [ecology.ecomodernism, technology.e-acc, ecology.green-growth, liberalism.chicago]
+        presupposes: []
+        excludes: [progress.idea.steady-improvement]
+        tension: []
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, professional-managerial]
+          mechanism: >
+            Measuring progress by needs met within ecological limits would cut the material throughput of
+            rich countries, which today draws land, energy and labor from the periphery; growth-dependent
+            capital and high-income consumers in the core bear the cost.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            Ecosocialists who reject degrowth (Huber, Phillips) hold that planned growth in the South and
+            in green sectors is needed; degrowth communists answer that rich-country throughput must fall
+            absolutely.
+          method: materialist
+
+  # ------------------------------------------------------------------
+  - id: knowledge.basis
+    domain: method
+    layer: method
+    question: What counts as knowledge about society?
+    plain: When someone says they know how society works, what makes you believe them?
+    short: knowledge about society
+    importance: 2
+    positions:
+      - id: knowledge.basis.practice
+        label: Knowledge comes from practice and is tested in struggle
+        claim: "Knowledge about society comes from practice: from trying to change things, and it is confirmed or refuted by whether it works in action."
+        voiced: "If you want to know the taste of a pear, you must change the pear by eating it. If you want to know society, you must take part in changing it."
+        you: "You think you only really understand how society works by trying to change it and seeing what happens."
+        because: >
+          Correct ideas do not fall from the sky or come from the armchair; they come from social
+          practice, from production, class struggle and experiment. Theory drawn from practice must
+          return to practice to be tested. A theory that cannot guide action successfully is wrong,
+          however elegant.
+        against:
+          - from: liberalism.classical
+            text: >
+              "Success in practice" vindicates whatever the party claims succeeded. Without independent
+              tests open to anyone, the theory becomes unfalsifiable and its failures are blamed on
+              saboteurs.
+          - from: marxism.western
+            text: >
+              Practice under domination produces more domination. Theory must keep a critical distance
+              from what currently works, because what works in a false society may be false.
+        sources:
+          - {author: Mao Zedong, title: On Practice, year: 1937}
+          - {author: Mao Zedong, title: Where Do Correct Ideas Come From?, year: 1963}
+          - {author: Karl Marx, title: Theses on Feuerbach, year: 1888, note: "written 1845"}
+        traditions:
+          defining: [marxism.maoism, marxism.ml]
+          typical: [marxism.leninism, marxism.mlm, marxism.classical, marxism.gramscian, religious.liberation-theology]
+          contested: [marxism.western, marxism.trotskyism]
+          rejects: [liberalism.austrian, conservatism.traditionalist, religious.salafism-quietist]
+        presupposes: []
+        excludes: [knowledge.basis.first-principles]
+        tension: []
+        analysis:
+          gains: [core-workers, peasantry, peripheral-workers]
+          pays: [professional-managerial]
+          mechanism: >
+            Making practice the test of truth gives workers' and peasants' experience of struggle standing
+            against credentialed experts and makes theory answerable to whether it changes conditions; in
+            party-led versions the party claims to sum up that practice, which can turn the test into a
+            monopoly.
+          drain: none
+          law_of_value: none
+          method: materialist
+
+      - id: knowledge.basis.empirical-science
+        label: Knowledge comes from evidence, data and testable theory
+        claim: "Knowledge about society comes from the methods of science: testable hypotheses, data and models that can be proven wrong."
+        voiced: "In God we trust; all others bring data. A claim about society is worth what the evidence behind it is worth."
+        you: "You trust claims about society that are backed by data and research, and distrust ones that aren't."
+        because: >
+          Every other method lets people believe what suits them. Science works because it exposes claims
+          to tests that could refute them, and because findings are open to checking by anyone. Social
+          science has shown which policies cut poverty, which reduce crime, which raise growth; ignoring
+          it costs lives.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Society is a complex phenomenon in which the relevant facts are dispersed among millions of
+              people. Aping physics produces a pretence of knowledge and planners who think they can steer
+              what no one can know.
+          - from: marxism.western
+            text: >
+              Facts are not neutral. The data collected answer the questions that funders ask, and a
+              science that only describes what is ends by defending it.
+        sources:
+          - {author: Karl Popper, title: The Logic of Scientific Discovery, year: 1934}
+          - {author: Milton Friedman, title: The Methodology of Positive Economics, year: 1953}
+          - {author: Auguste Comte, title: Course of Positive Philosophy, year: 1830}
+        traditions:
+          defining: [liberalism.technocratic, liberalism.chicago]
+          typical: [liberalism.classical, liberalism.utilitarian, technology.effective-altruism, socdem.fabian, socdem.third-way, technology.technocracy]
+          contested: [marxism.analytical, liberalism.social]
+          rejects: [liberalism.austrian, conservatism.traditionalist, nationalism.decolonial]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [professional-managerial]
+          pays: [core-workers]
+          mechanism: >
+            Granting authority to measured, peer-reviewed evidence hands policy to trained experts and to
+            whoever funds research and data, mainly states, firms and foundations; questions nobody funds
+            (unpaid work, value transfers abroad) drop out of view, and workers' own knowledge of their
+            conditions counts for little.
+          drain: none
+          law_of_value: none
+          method: mixed
+
+      - id: knowledge.basis.first-principles
+        label: Basic truths about society are known by reason, before data
+        claim: "The basic truths about society are known by reason from first principles, about human action or human nature, and data cannot refute them."
+        voiced: "Economics is not physics. That people act to achieve ends is a truth of reason, and everything follows from it. Statistics illustrate; they do not prove."
+        you: "You think the most important truths about society can be worked out by careful reasoning, and that numbers can mislead."
+        because: >
+          Social facts are not repeatable experiments: every situation is unique, and statistics mix
+          countless causes. What can be known with certainty is known by reflecting on what action, or
+          human nature, is. From the fact of purposeful action follow scarcity, cost and exchange; from
+          human nature follow natural rights and duties. These are not hypotheses waiting for a test.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Theories are to be judged by their predictions, not by how self-evident their assumptions
+              feel. A theory that no evidence could refute tells us nothing about the world.
+          - from: marxism.maoism
+            text: >
+              Knowledge without practice is armchair dogma. Axioms about "human action" are the market
+              trader's habits elevated to eternal truths.
+        sources:
+          - {author: Ludwig von Mises, title: Human Action, year: 1949}
+          - {author: Murray N. Rothbard, title: "Man, Economy, and State", year: 1962}
+          - {author: Thomas Aquinas, title: Summa Theologiae, year: "c. 1270"}
+        traditions:
+          defining: [liberalism.austrian, libertarianism.ancap]
+          typical: [libertarianism.paleo, libertarianism.objectivist, conservatism.integralism, conservatism.cst]
+          contested: [libertarianism.minarchist]
+          rejects: [liberalism.chicago, liberalism.technocratic, marxism.maoism]
+        presupposes: []
+        excludes: [knowledge.basis.practice]
+        tension: []
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Deducing society's laws from axioms makes the outcomes of markets, or of natural property
+            rights, true by definition and immune to evidence of poverty or crisis, which protects existing
+            property from empirical challenge.
+          drain: none
+          law_of_value: extends
+          method: idealist
+
+      - id: knowledge.basis.tradition
+        label: Inherited experience knows more than any theory
+        claim: "The most reliable knowledge about society is the experience stored in traditions, customs and institutions that have lasted, not the reasoning of any one generation."
+        voiced: "The individual is foolish; the species is wise. Our ancestors' customs carry lessons none of us could work out alone. Don't pull down a fence until you know why it was put up."
+        you: "You trust long-standing customs and practical experience more than clever new theories about how society should work."
+        because: >
+          Institutions that have survived generations embody knowledge of what works that no one can
+          state in full. Much of what keeps societies together is tacit: a skill, a habit, a local
+          knowledge of soil and neighbors. Planners who replaced it with rational schemes, from
+          collectivized farms to model cities, destroyed what they did not understand.
+        against:
+          - from: liberalism.utilitarian
+            text: >
+              "The wisdom of our ancestors" is the fallacy of appealing to the dead to silence the living.
+              Customs that survived include slavery and the subjection of women; survival is not proof of
+              worth.
+          - from: marxism.classical
+            text: >
+              The tradition of all dead generations weighs like a nightmare on the brains of the living.
+              What survives is what suited those who held power when it was laid down.
+        sources:
+          - {author: Edmund Burke, title: Reflections on the Revolution in France, year: 1790}
+          - {author: Michael Oakeshott, title: Rationalism in Politics and Other Essays, year: 1962}
+          - {author: James C. Scott, title: Seeing Like a State, year: 1998}
+        traditions:
+          defining: [conservatism.burkean, conservatism.traditionalist]
+          typical: [conservatism.paleo, conservatism.one-nation, religious.confucian, communitarianism]
+          contested: [nationalism.indigenous-sovereignty, liberalism.austrian, anarchism.green]
+          rejects: [liberalism.technocratic, liberalism.utilitarian, marxism.ml]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [landed-capital, petty-bourgeoisie]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Treating inherited practice as wiser than any reasoning defends whatever has survived,
+            including the property titles and ranks of those who won earlier struggles; it also defends
+            customary and local knowledge, and peasants' common rights, against planners from outside.
+          drain: none
+          law_of_value: none
+          method: mixed
+
+      - id: knowledge.basis.revelation
+        label: Revelation is the highest knowledge of how society should be ordered
+        claim: "Revealed scripture and the religious authorities who interpret it are the highest source of knowledge about how society should be ordered."
+        voiced: "God knows His creation better than any philosopher. The law He revealed is complete; human reason serves it, it does not judge it."
+        you: "You think God's revealed word is the surest guide to how society should be run."
+        because: >
+          Human reason is limited, divided and easily bent by interest. If God has spoken, His word is a
+          more reliable guide than any theory that changes with each generation. Societies that departed
+          from revealed law in favor of human invention fell into the chaos and injustice we see today.
+          Reason has a role: to understand and apply the revelation faithfully.
+        against:
+          - from: religious.post-islamism
+            text: >
+              Revelation gives principles; their application is always human interpretation, open to
+              error and debate. Claiming one reading as God's own puts clerics in God's place.
+          - from: liberalism.classical
+            text: >
+              Whose revelation, and read by whom? Every faith claims its own, and the claim to speak for
+              God has justified every persecution. In politics, interpreters rule, not God.
+        sources:
+          - {author: Sayyid Qutb, title: Milestones, year: 1964}
+          - {author: Ruhollah Khomeini, title: Islamic Government, year: 1970}
+          - {author: Pope Pius IX, title: Syllabus of Errors, year: 1864}
+        traditions:
+          defining: [religious.islamism-brotherhood, religious.salafism-quietist, religious.islamism-khomeinist, conservatism.integralism]
+          typical: [conservatism.evangelical-right, religious.religious-zionism, religious.salafi-jihadism, conservatism.reactionary]
+          contested: [religious.post-islamism, conservatism.cst, religious.liberation-theology]
+          rejects: [liberalism.classical, marxism.classical, liberalism.utilitarian]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [petty-bourgeoisie, landed-capital]
+          pays: [core-workers]
+          mechanism: >
+            Placing revealed law above human reasoning makes trained interpreters, and the states and
+            endowments that sponsor them, the judges of social questions; whether that favors property or
+            the poor depends on whose reading wins, but either way the question leaves popular deliberation.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Revolutionary readings (Shariati, liberation theology) turned revelation against landlords and
+            empire; materialists disagree on how fixed the class content of revealed politics is.
+          method: idealist
+
+      - id: knowledge.basis.standpoint
+        label: Those at the bottom see society most clearly
+        claim: "Those who are dominated see how society works more clearly than those who benefit from it; knowledge starts from their experience."
+        voiced: "The maid knows the master better than the master knows the maid. Those on top can afford not to see; those below cannot."
+        you: "You think people at the bottom of society understand how it really works better than people at the top or experts."
+        because: >
+          The powerful have reasons not to see how their position depends on others, and their
+          institutions record the world from their point of view. The exploited must understand both
+          their own world and their masters' to survive. Starting research and politics from their lives
+          reveals what official knowledge hides: unpaid work, everyday violence, the costs of progress.
+        against:
+          - from: marxism.ml
+            text: >
+              Spontaneous experience gives trade-union consciousness at most. The workers' immediate
+              experience is full of ruling ideas; theory must be developed and brought into the movement,
+              not read off the experience of the oppressed.
+          - from: liberalism.classical
+            text: >
+              Truth is not decided by who says it. Oppressed people hold as many contradictory and false
+              views as anyone; turning suffering into authority makes argument impossible.
+        sources:
+          - {author: Georg Lukács, title: History and Class Consciousness, year: 1923}
+          - {author: Nancy Hartsock, title: The Feminist Standpoint, year: 1983}
+          - {author: Patricia Hill Collins, title: Black Feminist Thought, year: 1990}
+          - {author: Paulo Freire, title: Pedagogy of the Oppressed, year: 1970, note: "written 1968"}
+        traditions:
+          defining: [feminism.black, feminism.materialist]
+          typical: [marxism.western, feminism.radical, nationalism.decolonial, nationalism.indigenous-sovereignty, religious.liberation-theology, feminism.decolonial]
+          contested: [marxism.ml, marxism.maoism]
+          rejects: [liberalism.technocratic, liberalism.austrian, conservatism.traditionalist]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [peripheral-workers, peasantry, reserve-army, core-workers]
+          pays: [professional-managerial]
+          mechanism: >
+            Granting weight to the experience of the dominated gives tenants, workers and colonized
+            communities standing against experts who speak for them; in academic forms it can become a
+            credential that professionals claim on behalf of those they study.
+          drain: reduces
+          law_of_value: none
+          method: mixed
+
+      - id: knowledge.basis.common-sense
+        label: Ordinary experience beats expert opinion
+        claim: "What ordinary people see with their own eyes and learn from life is more reliable about society than what experts and officials say."
+        voiced: "Experts told us the factory would be replaced by better jobs. Look around. I'll trust what I see in my own street over what some professor says."
+        you: "You trust your own experience and what ordinary people know from life more than what experts tell you."
+        because: >
+          Experts have repeatedly been wrong on things that mattered: wars, financial crises, trade deals,
+          and they rarely pay for their mistakes. They often have interests of their own and live far from
+          the consequences. People who live with a problem know things no model captures, and their
+          common sense has a long record of being right about what officials wished away.
+        against:
+          - from: liberalism.technocratic
+            text: >
+              Expertise is hard-won knowledge. Gut feeling about vaccines, climate or trade leads to
+              measurable harm, and it is easily exploited by those who sell simple answers.
+          - from: marxism.gramscian
+            text: >
+              Common sense is a sediment of every ruling ideology of the past, mixed with real insight. Its
+              "good sense" must be drawn out and made coherent, not accepted whole.
+        sources:
+          - {author: Christopher Lasch, title: The Revolt of the Elites and the Betrayal of Democracy, year: 1995}
+          - {author: Richard Hofstadter, title: Anti-Intellectualism in American Life, year: 1963, note: "a critical account"}
+        traditions:
+          defining: []
+          typical: [commonsense.anti-politics, commonsense.rigged, conservatism.right-populism, conservatism.paleo]
+          contested: [conservatism.postliberal, socdem.left-populism]
+          rejects: [liberalism.technocratic, technology.effective-altruism, marxism.ml]
+        presupposes: []
+        excludes: [knowledge.basis.empirical-science]
+        tension: []
+        analysis:
+          gains: [finance-capital, industrial-capital, petty-bourgeoisie]
+          pays: [core-workers]
+          mechanism: >
+            Distrust of experts protects people against credentialed authority that often serves employers
+            and states, but taken alone it leaves them open to whoever speaks their language best, often
+            media owners and campaigns funded by wealth against regulation, public provision and climate
+            policy.
+          drain: none
+          law_of_value: none
+          method: idealist
+
+  # ------------------------------------------------------------------
+  - id: ideology.formation
+    domain: method
+    layer: method
+    question: How do people come to hold their political views?
+    plain: Why do people believe what they believe about politics?
+    short: how political views form
+    importance: 3
+    positions:
+      - id: ideology.formation.ruling-ideas
+        label: Owners control the means of thought; many hold views against themselves
+        claim: "The class that owns production also controls schools, press and pulpit, so many people hold views that serve owners rather than themselves."
+        voiced: "The ruling ideas of every age are the ideas of its ruling class. A worker who defends his boss's profits has been taught to; that is false consciousness."
+        you: "You think many people believe things that work against their own interests because those who own the economy also shape what people are taught and told."
+        because: >
+          The class with the means of material production also has the means of mental production: it
+          owns the newspapers, funds the universities and pays the advertisers. Its view of the world
+          becomes everyone's background assumption. Left to themselves, workers' everyday experience
+          produces only partial insight; consciousness of their real position must be developed
+          deliberately, through organization and education.
+        against:
+          - from: liberalism.classical
+            text: >
+              People who disagree with Marxists are not deluded. A worker who votes for lower taxes or for
+              his faith has reasons; calling them false consciousness is a way of not listening.
+          - from: marxism.gramscian
+            text: >
+              People are not cultural dopes. Consent rests partly on real concessions and partly on a
+              common sense that contains good sense too. Treating it as mere falsehood breeds an
+              organization that lectures instead of leading.
+        sources:
+          - {author: Karl Marx and Friedrich Engels, title: The German Ideology, year: 1932, note: "written 1845–46"}
+          - {author: Friedrich Engels, title: Letter to Franz Mehring, year: 1893}
+          - {author: V. I. Lenin, title: What Is to Be Done?, year: 1902}
+        traditions:
+          defining: [marxism.ml, marxism.leninism]
+          typical: [marxism.classical, marxism.trotskyism, marxism.maoism, marxism.hoxhaism, marxism.western]
+          contested: [marxism.gramscian, marxism.autonomism]
+          rejects: [liberalism.classical, conservatism.burkean, liberalism.austrian]
+        presupposes: [interests.objective.class-interests]
+        excludes: [ideology.formation.marketplace-of-ideas]
+        tension: []
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Naming views that serve owners as products of owners' control over schools, press and pulpit
+            gives organizers a reason to build independent workers' education and media rather than defer
+            to current opinion; it can also license an organization to treat disagreement from workers as
+            error to be corrected from above.
+          drain: none
+          law_of_value: none
+          method: materialist
+
+      - id: ideology.formation.hegemony
+        label: Consent is organized through culture and everyday common sense
+        claim: "Ruling groups win consent by shaping everyday common sense through schools, churches, media and associations, and that consent can be contested on the same ground."
+        voiced: "Power does not rule by force alone. It rules by making its view feel like common sense. To change society you must build a rival common sense, institution by institution."
+        you: "You think people's political views are shaped mostly by the everyday culture around them, and that changing politics means winning on that ground."
+        because: >
+          In countries with dense civil societies, the state is only an outer trench; behind it stand
+          schools, parishes, papers, clubs and habits of thought that make the order feel natural. Force
+          alone could never hold modern societies together. Consent is built through concessions and
+          leadership, and it can be won by a rival bloc that gives people a coherent alternative to the
+          contradictory common sense they live with.
+        against:
+          - from: marxism.ml
+            text: >
+              A war of position fought inside the institutions of the ruling class ends in being absorbed
+              by them. The Eurocommunist parties that took this road won cultural respect and lost the
+              will to take power.
+          - from: liberalism.classical
+            text: >
+              "Hegemony" is unfalsifiable: any consent counts as manufactured and any dissent as resistance.
+              People can simply agree with liberal institutions because they work.
+        sources:
+          - {author: Antonio Gramsci, title: Prison Notebooks, year: 1948, note: "written 1929–35"}
+          - {author: Louis Althusser, title: Ideology and Ideological State Apparatuses, year: 1970}
+          - {author: Stuart Hall, title: The Great Moving Right Show, year: 1979}
+        traditions:
+          defining: [marxism.gramscian]
+          typical: [marxism.western, marxism.eurocommunism, socdem.left-populism, marxism.structural, feminism.materialist]
+          contested: [marxism.ml, conservatism.postliberal]
+          rejects: [liberalism.classical, liberalism.austrian]
+        presupposes: []
+        excludes: [ideology.formation.marketplace-of-ideas]
+        tension: []
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Seeing consent as organized through civil society directs effort to building rival
+            institutions that change what people take as normal, which raises the role of organizers and
+            intellectuals; its critics note it has also justified long accommodation with existing
+            institutions.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Leninists hold that hegemony without a strategy for state power becomes reformism; Gramscians
+            reply that in the core the cultural trench must be won first.
+          method: materialist
+
+      - id: ideology.formation.marketplace-of-ideas
+        label: People reason, and in open debate the better ideas win
+        claim: "People form their views by reasoning, argument and evidence, and open competition between ideas lets the better ones win over time."
+        voiced: "Let truth and falsehood grapple. Who ever knew truth put to the worse in a free and open encounter? The cure for bad speech is more speech."
+        you: "You think people work out their views by thinking and arguing, and that open debate is how the truth comes out."
+        because: >
+          No authority can be trusted to decide in advance which ideas are true; every censor has
+          suppressed truths along with errors. Ideas tested against opposition become clearer and stronger,
+          and people exposed to argument can change their minds, as public opinion on many questions has
+          changed within a lifetime. Open debate is the only method that corrects itself.
+        against:
+          - from: marxism.classical
+            text: >
+              The marketplace of ideas has owners. Voices are as unequal as purses; the view with a
+              newspaper chain behind it competes with the view that has a leaflet.
+          - from: conservatism.integralism
+            text: >
+              Error has no rights. An open contest lets well-funded error corrupt the simple, and the
+              outcome of a marketplace is what sells, not what is true.
+        sources:
+          - {author: John Milton, title: Areopagitica, year: 1644}
+          - {author: John Stuart Mill, title: On Liberty, year: 1859}
+          - {author: Oliver Wendell Holmes Jr., title: Dissent in Abrams v. United States, year: 1919}
+        traditions:
+          defining: [liberalism.classical]
+          typical: [liberalism.social, libertarianism.minarchist, libertarianism.objectivist, technology.cyberlibertarian, liberalism.utilitarian]
+          contested: [liberalism.technocratic, liberalism.progressive]
+          rejects: [marxism.gramscian, marxism.ml, conservatism.integralism]
+        presupposes: []
+        excludes: [ideology.formation.ruling-ideas]
+        tension: []
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [core-workers]
+          mechanism: >
+            Treating opinion as the outcome of open competition leaves the means of reaching people
+            (papers, platforms, advertising, think tanks) to be allocated like other property, so views with
+            the most money behind them get the most hearing while the result is presented as the public's
+            own judgment.
+          drain: none
+          law_of_value: extends
+          method: idealist
+
+      - id: ideology.formation.manufactured-consent
+        label: Views are manufactured by a media system that serves owners
+        claim: "Mass opinion is shaped by media filtered through ownership, advertising and official sources, which narrows debate to what serves those in power."
+        voiced: "The media don't tell you what to think; they tell you what to think about, and where the edges of acceptable debate lie. That's how consent is manufactured."
+        you: "You think the news people get is filtered by who owns the media and who pays for it, and that this shapes what most people think."
+        because: >
+          Large media are corporations owned by wealthy people, funded by advertisers, and dependent on
+          official sources for their daily stories. Each of these filters pushes coverage the same way
+          without any conspiracy. Compare how victims of allied and enemy governments are covered and the
+          pattern is plain. Opinion follows what people are shown.
+        against:
+          - from: liberalism.classical
+            text: >
+              Audiences reject media messages all the time; trust in mainstream media has collapsed and
+              anti-establishment views spread anyway. The filter model cannot explain the success of what
+              the filters were supposed to block.
+          - from: marxism.gramscian
+            text: >
+              Consent is not only manufactured from above; propaganda works when it fits people's lived
+              experience and real concessions. Exposing the filters does not by itself change what people
+              believe.
+        sources:
+          - {author: Edward S. Herman and Noam Chomsky, title: Manufacturing Consent, year: 1988}
+          - {author: Walter Lippmann, title: Public Opinion, year: 1922}
+          - {author: Edward Bernays, title: Propaganda, year: 1928}
+        traditions:
+          defining: [anarchism.syndicalist]
+          typical: [socdem.democratic-socialism, marxism.trotskyism, anarchism.communist, commonsense.rigged]
+          contested: [liberalism.technocratic, marxism.ml]
+          rejects: [liberalism.classical, libertarianism.objectivist]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Exposing ownership, advertising and official sourcing as filters directs attention to the
+            material structure of media, including how wars in the periphery are covered, and supports
+            independent and public outlets; taken alone it treats audiences as passive.
+          drain: reduces
+          law_of_value: none
+          method: materialist
+
+      - id: ideology.formation.elite-indoctrination
+        label: Universities, media and cultural elites indoctrinate people
+        claim: "A cultural elite in universities, media, schools and bureaucracy indoctrinates people away from their own common sense and traditions."
+        voiced: "They took over the universities, then the newsrooms, then the schools, then HR. Your kids come home believing things you never taught them. That's not an accident."
+        you: "You think teachers, academics and journalists push their own views on people and have changed what the country believes."
+        because: >
+          The professions that shape opinion lean overwhelmingly one way, and their views have spread
+          into corporations and government without any vote. Children spend more hours with teachers than
+          with parents. When everyone who certifies, educates and reports shares one outlook, dissent is
+          treated as ignorance or bigotry, and ordinary people's beliefs are worn down by institutions
+          they do not control.
+        against:
+          - from: marxism.gramscian
+            text: >
+              Who owns the media and funds the think tanks? The "elite" you name is the salaried cultural
+              profession, while the owners who pay for this complaint stay out of view.
+          - from: liberalism.classical
+            text: >
+              Universities do not control voters; most graduates' views reflect who chooses to study
+              what. People are not empty vessels filled by teachers.
+        sources:
+          - {author: Allan Bloom, title: The Closing of the American Mind, year: 1987}
+          - {author: Curtis Yarvin, title: A Gentle Introduction to Unqualified Reservations, year: 2009, note: "published as Mencius Moldbug"}
+          - {author: Christopher F. Rufo, title: "America's Cultural Revolution", year: 2023}
+        traditions:
+          defining: [conservatism.right-populism, fascism.neoreaction]
+          typical: [conservatism.paleo, conservatism.national, conservatism.evangelical-right, conservatism.postliberal, libertarianism.paleo, nationalism.hindutva]
+          contested: [conservatism.fusionism, conservatism.neo]
+          rejects: [liberalism.progressive, marxism.gramscian, liberalism.social]
+        presupposes: []
+        excludes: []
+        tension: [education.purpose.critical-citizens]
+        analysis:
+          gains: [finance-capital, industrial-capital, petty-bourgeoisie]
+          pays: [professional-managerial, core-workers]
+          mechanism: >
+            Locating the source of unwanted views in teachers, academics and journalists aims popular anger
+            at the salaried cultural professions and at public education, whose budgets can then be cut,
+            while the owners of media and capital who fund these campaigns stay out of the picture.
+          drain: none
+          law_of_value: extends
+          method: idealist
+
+      - id: ideology.formation.group-loyalty
+        label: People take their views from their group and find reasons later
+        claim: "Most people adopt the views of the groups they belong to (family, faith, ethnicity, party) and find reasons afterwards."
+        voiced: "Tell me who your parents voted for, which church you attend and where you grew up, and I'll tell you your politics. The reasons come after."
+        you: "You think people mostly pick up their politics from the groups they belong to and then find reasons for them."
+        because: >
+          Decades of survey research show most voters know little about policy and hold few consistent
+          views, yet vote very predictably by group. Moral intuitions come first and arguments follow;
+          people change their policy views to match their party far more than they change parties to
+          match their views. Understanding this is the beginning of honest politics.
+        against:
+          - from: marxism.classical
+            text: >
+              Groups are not given. Which identity becomes political (class, religion, region) is itself
+              the result of organizing and of material conflict; "group loyalty" describes the outcome and
+              calls it the cause.
+          - from: liberalism.classical
+            text: >
+              People do change their minds by argument, as the abolition of slavery, women's suffrage and
+              many recent shifts show. Reducing opinion to tribe excuses elites from persuading anyone.
+        sources:
+          - {author: Christopher H. Achen and Larry M. Bartels, title: Democracy for Realists, year: 2016}
+          - {author: Jonathan Haidt, title: The Righteous Mind, year: 2012}
+          - {author: Philip E. Converse, title: The Nature of Belief Systems in Mass Publics, year: 1964}
+        traditions:
+          defining: []
+          typical: [liberalism.technocratic, communitarianism, conservatism.burkean]
+          contested: [liberalism.social, socdem.left-populism]
+          rejects: [liberalism.classical, marxism.ml]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [professional-managerial, finance-capital]
+          pays: [core-workers]
+          mechanism: >
+            If views follow group loyalty, mass politics becomes a contest to mobilize identities, best
+            played by those who own media and fund parties, and experts are counseled to manage publics
+            rather than argue with them.
+          drain: none
+          law_of_value: none
+          method: mixed
+
+      - id: ideology.formation.self-interest
+        label: People back whatever pays them
+        claim: "People's political views mostly follow their own pocket: they support what they calculate will benefit them personally."
+        voiced: "Everyone votes their wallet. Farmers want subsidies, pensioners want pensions, bankers want bailouts. Follow the money and you'll know what anyone thinks."
+        you: "You think people mostly support whatever benefits them personally, whatever they say about principles."
+        because: >
+          Behavior follows incentives in politics as in markets. Groups with concentrated interests
+          organize and win, while the public with diffuse interests stays home, which explains subsidies,
+          tariffs and licenses better than any talk of ideals. Principles are mostly rationalizations of
+          interests, and the honest way to understand politics is to ask who benefits.
+        against:
+          - from: marxism.classical
+            text: >
+              Individuals calculating alone are weak; owners have far more to bargain with than workers.
+              And many people vote against their pocket, for faith or nation, which pure interest cannot
+              explain; interests are shaped collectively, not computed privately.
+          - from: conservatism.cst
+            text: >
+              People act for duty, love and faith every day, at real cost. A theory that sees only the
+              wallet teaches people to see only the wallet.
+        sources:
+          - {author: Anthony Downs, title: An Economic Theory of Democracy, year: 1957}
+          - {author: James M. Buchanan and Gordon Tullock, title: The Calculus of Consent, year: 1962}
+        traditions:
+          defining: []
+          typical: [liberalism.chicago, libertarianism.minarchist, commonsense.look-after-your-own, commonsense.anti-politics]
+          contested: [marxism.analytical, liberalism.austrian]
+          rejects: [conservatism.cst, marxism.gramscian, religious.liberation-theology]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Reading views as pocketbook calculation makes politics a market in which concentrated interests
+            outbid diffuse ones, which public choice theory uses to argue for shrinking the state; it
+            misses that workers who calculate one by one have far less leverage than owners.
+          drain: none
+          law_of_value: extends
+          method: mixed

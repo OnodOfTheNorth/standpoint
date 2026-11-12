@@ -1,0 +1,1065 @@
+# Economy, part 2a: property (private property, self-ownership, land).
+# Continued in economy-2b.yaml (ideas, inheritance, commons, firms),
+# economy-2c.yaml (allocation, planning, calculation) and
+# economy-2d.yaml (money, finance, work, tax).
+problematics:
+  # ------------------------------------------------------------------
+  - id: property.private
+    domain: economy
+    layer: horizon
+    question: Is private property a right, a convention, or theft?
+    plain: When someone owns something, what makes it really theirs, and can that ever be taken away?
+    short: private property
+    importance: 3
+    positions:
+      - id: property.private.natural-right
+        label: Property is a natural right that comes before any state
+        claim: Property is a natural right. People acquire it by working on unowned things and by free exchange, and governments exist to protect it, not to grant it.
+        voiced: "Every man has a property in his own person, and whatever he removes out of the state of nature and mixes his labour with is his. Government that takes it without consent is no government but a robbery with a flag."
+        you: You hold that what people rightfully acquire is theirs before any law says so, and that the state's first job is to protect it.
+        because: >
+          A person owns their own labor, so what they make from unowned things by that labor is
+          theirs, and what they get by voluntary exchange from a rightful owner is theirs too.
+          If property were only what the state allows, every holding would sit at the mercy of
+          whoever wins the next election, and no one could plan, save or build. Secure property is
+          the precondition of every other liberty: a press, a church or a union that owns nothing
+          speaks only by permission.
+        against:
+          - from: marxism.classical
+            text: >
+              The story of labor mixed with unowned land is a fable laid over conquest, enclosure and
+              slavery. Actual titles descend from force, and the doctrine now protects the right of
+              owners to appropriate what other people's labor produces.
+          - from: libertarianism.georgist
+            text: >
+              Labor justifies property in what labor makes, but no one made the land. Natural-right
+              theory that covers land and resource rent hands the gift of nature to whoever got there first.
+          - from: conservatism.cst
+            text: >
+              Property is natural, but it is not absolute. The goods of the earth were destined for all,
+              and a right that ignores the hungry neighbor has forgotten why property exists.
+        sources:
+          - {author: John Locke, title: Two Treatises of Government, year: 1689}
+          - {author: Robert Nozick, title: "Anarchy, State, and Utopia", year: 1974}
+          - {author: Murray N. Rothbard, title: The Ethics of Liberty, year: 1982}
+        traditions:
+          defining: [liberalism.classical, libertarianism.minarchist, libertarianism.ancap]
+          typical: [libertarianism.objectivist, libertarianism.paleo, conservatism.fusionism, liberalism.austrian]
+          contested: [libertarianism.georgist, libertarianism.left, conservatism.evangelical-right]
+          rejects: [marxism.classical, marxism.ml, anarchism.communist, anarchism.mutualist, conservatism.cst, liberalism.utilitarian]
+        presupposes: []
+        excludes: [property.private.personal-vs-productive, property.private.possession-not-property, property.private.convention]
+        tension: [property.private.social-function]
+        tags: [lockean]
+        analysis:
+          gains: [finance-capital, industrial-capital, landed-capital, comprador-capital]
+          pays: [core-workers, peripheral-workers, peasantry, reserve-army]
+          mechanism: >
+            Placing existing titles above legislation turns land reform, nationalization and rent
+            control into rights violations, so whoever holds title now keeps the flow of rent, interest
+            and profit. Written into investment treaties, the same doctrine protects foreign-owned mines
+            and plantations in the periphery against expropriation.
+          drain: sustains
+          law_of_value: extends
+          disputed: >
+            C. B. Macpherson read Lockean property as the theory of an emerging capitalist class; others
+            (E. P. Thompson's readers, some agrarian historians) note that labor-title arguments were also
+            used by squatters and smallholders against landlords, so the class content shifts with who invokes it.
+          consciousness: hegemonic
+
+      - id: property.private.social-function
+        label: Property is legitimate but carries a social function
+        claim: Private property is legitimate, but it exists for the common good. Owners have duties to workers, neighbors and the poor, and the law may limit or take property that is left idle or used against the public.
+        voiced: "Property obliges. Man should hold external things not as his own but as common, so that he shares them readily with others in their need."
+        you: You accept private ownership but think it comes with obligations, and that idle or abusive property can rightly be limited or taken.
+        because: >
+          Private ownership is good for persons and families: it secures independence, rewards care and
+          prevents the quarrels of goods held by all. But God gave the earth to the whole human race, so
+          every private title is held under a prior claim of the common good. An estate left idle while
+          landless families starve has lost the reason it was owned. The law that says so does not abolish
+          property; it reminds property what it is for.
+        against:
+          - from: libertarianism.ancap
+            text: >
+              A 'social function' decided by legislators is a license to confiscate. Once property is held
+              on condition of serving the public, the public's officials decide what serving means.
+          - from: marxism.leninism
+            text: >
+              Duties laid on owners leave the owners in place. The surplus still goes to capital, and the
+              doctrine's real work has been to give property a conscience so it need not be abolished.
+        sources:
+          - {author: Leo XIII, title: Rerum Novarum, year: 1891}
+          - {author: Pius XI, title: Quadragesimo Anno, year: 1931}
+          - {author: Léon Duguit, title: "Les transformations générales du droit privé depuis le Code Napoléon", year: 1912}
+          - {author: John Paul II, title: Sollicitudo Rei Socialis, year: 1987, note: "property under a 'social mortgage'"}
+        traditions:
+          defining: [conservatism.cst, conservatism.christian-democracy]
+          typical: [conservatism.distributism, religious.liberation-theology, liberalism.ordoliberal, socdem.nordic, nationalism.peronism]
+          contested: [socdem.keynesian, conservatism.one-nation]
+          rejects: [libertarianism.ancap, libertarianism.objectivist, marxism.ml]
+        presupposes: []
+        excludes: []
+        tension: [property.private.natural-right]
+        tags: [catholic]
+        analysis:
+          gains: [peasantry, petty-bourgeoisie, core-workers, industrial-capital]
+          pays: [landed-capital, finance-capital]
+          mechanism: >
+            Conditioning title on use lets courts and legislatures expropriate idle estates and speculative
+            holdings, as Mexican, Brazilian and Philippine land law allow, while productive private
+            enterprise stays in place. It narrows rent extraction without ending wage labor.
+          drain: softens
+          law_of_value: regulates
+          disputed: >
+            Marxists split: some treat the social-function clause as a lever peasant movements such as
+            Brazil's MST use to legalize land occupations; others see it as the formula by which property
+            was relegitimated against socialization after 1891.
+
+      - id: property.private.personal-vs-productive
+        label: Personal property yes; private ownership of production no
+        claim: Your home, belongings and savings are rightly yours. Factories, land worked by others, banks and mines should not be privately owned, because owning them means owning other people's work.
+        voiced: "Communism deprives no one of the power to appropriate the products of society. It deprives them only of the power to subjugate the labour of others by means of such appropriation."
+        you: You defend people's personal possessions but think the means of production should not be privately owned, because that ownership commands other people's labor.
+        because: >
+          Your toothbrush and your flat give you power over nothing but your own life. A factory deed
+          gives its holder the right to the product of hundreds of people who must work there to live.
+          The two are lumped together as 'property' so that defending a worker's house seems to require
+          defending a shareholder's dividend. For most people private property in production has already
+          been abolished: nine-tenths of society owns none of it. Socializing it takes away only the power
+          to live on others' work.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Without private owners of capital goods there are no prices for them, and without prices no one
+              can tell whether a factory is worth running. The line between personal and productive property
+              cannot be held: every tool, room and savings account can be capital.
+          - from: anarchism.mutualist
+            text: >
+              Handing productive property to the state replaces many owners with one. Possession by those who
+              use the workshop is the remedy, not a deed in the name of society held by officials.
+        sources:
+          - {author: Karl Marx and Friedrich Engels, title: Manifesto of the Communist Party, year: 1848}
+          - {author: Karl Marx, title: "Capital, Volume I", year: 1867}
+          - {author: Peter Kropotkin, title: The Conquest of Bread, year: 1892}
+        traditions:
+          defining: [marxism.classical, marxism.leninism, marxism.ml]
+          typical: [marxism.maoism, marxism.trotskyism, marxism.council-communism, marxism.left-communism, anarchism.communist, anarchism.syndicalist, marxism.african-socialism]
+          contested: [socdem.democratic-socialism, marxism.scc, marxism.market-socialism]
+          rejects: [liberalism.classical, liberalism.austrian, libertarianism.ancap, conservatism.cst]
+        presupposes: [class.concept.relation-to-production]
+        excludes: [property.private.natural-right]
+        tension: []
+        tags: [marxist]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry, reserve-army]
+          pays: [finance-capital, industrial-capital, landed-capital, comprador-capital]
+          mechanism: >
+            Ending private title to means of production removes the legal basis on which owners appropriate
+            the surplus employees produce. Personal goods stay where they are, so the change falls on
+            capital's income and not on workers' possessions.
+          drain: breaks
+          law_of_value: abolishes
+          disputed: >
+            Whether state title under a single party ended appropriation by a separate stratum is disputed:
+            Marxist-Leninists say yes; orthodox Trotskyists see a bureaucratic caste on a workers' state;
+            Tony Cliff and Charles Bettelheim saw a new exploiting class (state capitalism).
+          consciousness: hegemonic
+
+      - id: property.private.possession-not-property
+        label: Property is theft; possession by the user is legitimate
+        claim: What you use and work, you rightly hold. What lets you collect rent, interest or profit from others without working is theft, protected by the state.
+        voiced: "Property is theft. Possession is a right. The tiller holds the field and the smith the forge; the absentee who taxes them both holds nothing but a privilege."
+        you: You think people should hold what they actually occupy and use, and that titles which let owners collect rent, interest or profit from others' work are a kind of theft.
+        because: >
+          Property in the strict sense is the right to collect income from a thing without working it:
+          the landlord's rent, the lender's interest, the owner's profit. That right exists only because
+          the state enforces titles to land and monopolies on credit. Remove the privilege and occupancy
+          and use become the only title; the farmer owns the farm he works and the workers' association
+          owns its shop. Exchange then happens at cost, between equals, and no one lives on another's labor.
+        against:
+          - from: marxism.classical
+            text: >
+              A market of small producers trading 'at cost' cannot stay that way. Competition ruins some and
+              enriches others, and capital is born again from the very equality Proudhon defends.
+          - from: libertarianism.ancap
+            text: >
+              Occupancy-and-use rules make every lease and every rental property illegitimate, which is to say
+              they ban voluntary contracts between consenting adults.
+        sources:
+          - {author: Pierre-Joseph Proudhon, title: What Is Property?, year: 1840}
+          - {author: Pierre-Joseph Proudhon, title: General Idea of the Revolution in the Nineteenth Century, year: 1851}
+          - {author: Benjamin R. Tucker, title: Instead of a Book, year: 1893}
+        traditions:
+          defining: [anarchism.mutualist]
+          typical: [anarchism.individualist, anarchism.syndicalist]
+          contested: [anarchism.communist, libertarianism.left, libertarianism.georgist]
+          rejects: [libertarianism.ancap, liberalism.classical, marxism.ml]
+        presupposes: []
+        excludes: [property.private.natural-right]
+        tension: [property.private.personal-vs-productive]
+        tags: [anarchist]
+        analysis:
+          gains: [petty-bourgeoisie, peasantry, core-workers]
+          pays: [landed-capital, finance-capital]
+          mechanism: >
+            Making occupancy and use the only valid title would end absentee rent and interest and move those
+            incomes to working tenants, smallholders and self-employed producers. Market exchange among
+            producers continues, so price competition still governs what they earn.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            Marxists since The Poverty of Philosophy (1847) argue a market of small producers regenerates
+            capital through competition; mutualists reply that without state-backed monopolies of land and
+            credit, accumulation stalls.
+
+      - id: property.private.convention
+        label: Property is a legal convention, justified by its results
+        claim: Property is a set of rules that law creates and enforces. It is neither sacred nor theft, and it should be shaped to produce good results for society.
+        voiced: "Property and law are born together and die together. Before laws were made there was no property; take away laws and property ceases."
+        you: You see property as a set of rules people made, to be judged and redesigned by how well they work.
+        because: >
+          There is no 'natural' answer to whether a patent lasts twenty years or fifty, whether a landlord
+          may evict in winter, or whether a corporation is a person. Every such rule is a choice the law
+          makes. Pre-tax income is no natural baseline either: it is already the product of property,
+          contract and company law. Admitting this lets us ask the honest question, which rules produce
+          prosperity and security for the most people, instead of pretending the present rules fell from heaven.
+        against:
+          - from: libertarianism.minarchist
+            text: >
+              If property is whatever the legislature says, nothing stops the legislature from taking everything.
+              Rights that exist only by permission are not rights.
+          - from: marxism.classical
+            text: >
+              Calling property a convention hides whose convention it is. The rules are made by and for the class
+              that owns, and treating them as neutral policy tools leaves that class writing them.
+        sources:
+          - {author: David Hume, title: A Treatise of Human Nature, year: 1740, note: "Book III, on justice and property"}
+          - {author: Harold Demsetz, title: Toward a Theory of Property Rights, year: 1967}
+          - {author: Liam Murphy and Thomas Nagel, title: "The Myth of Ownership: Taxes and Justice", year: 2002}
+        traditions:
+          defining: [liberalism.utilitarian]
+          typical: [liberalism.egalitarian, liberalism.social, liberalism.technocratic, liberalism.chicago, socdem.keynesian, socdem.third-way]
+          contested: [socdem.fabian, liberalism.progressive]
+          rejects: [libertarianism.ancap, libertarianism.minarchist, libertarianism.objectivist, conservatism.cst]
+        presupposes: []
+        excludes: [property.private.natural-right]
+        tension: []
+        tags: []
+        analysis:
+          gains: [professional-managerial, core-workers]
+          pays: [landed-capital]
+          mechanism: >
+            Treating every holding as revisable by statute opens property to taxation and regulation, but hands
+            the revision to whoever controls legislatures and to economists' measures of welfare. The same
+            reasoning has justified both postwar welfare taxation and the privatizations of the 1980s.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            Some Marxists read it as the honest form of bourgeois property theory, nearer to Marx's account of
+            property as a social relation; others see technocratic cover that hands property questions to experts.
+
+      - id: property.private.trust-from-god
+        label: All belongs to God; owners hold it in trust under divine law
+        claim: Ultimate ownership belongs to God. People hold property as trustees, bound by religious law to pay the poor their share, refuse interest and never hoard.
+        voiced: "To God belongs what is in the heavens and the earth. You are His trustees in it: spend of what He has entrusted to you, and do not let wealth circulate only among the rich."
+        you: You believe what anyone owns is held in trust from God, so ownership is real but bound by religious duties to the poor and by limits on interest and hoarding.
+        because: >
+          Human beings create nothing from nothing; the land, the rain and their own strength are gifts.
+          Revealed law therefore recognizes private ownership and fair trade, but sets terms on them:
+          the poor have a fixed right in the wealth of the rich, money may not breed money through interest,
+          and wealth left idle is taxed until it circulates. These are not policies a parliament may repeal.
+          They are the conditions on which anything is owned at all.
+        against:
+          - from: liberalism.classical
+            text: >
+              Binding property to a religious law makes clerics and religious courts the judges of every
+              contract, and bans on interest only drive credit into disguised and costlier forms.
+          - from: marxism.classical
+            text: >
+              Alms and bans on usury leave the wage relation untouched. Islamic banking in the Gulf shows interest
+              renamed as fees, and the trustee of God's property is still the owner of the oil field.
+        sources:
+          - {author: Muhammad Baqir al-Sadr, title: Iqtisaduna (Our Economics), year: 1961}
+          - {author: Sayyid Qutb, title: Social Justice in Islam, year: 1949}
+        traditions:
+          defining: [religious.islamic-socialism]
+          typical: [religious.islamism-brotherhood, religious.islamism-khomeinist, religious.post-islamism, religious.salafism-quietist]
+          contested: [conservatism.cst, conservatism.evangelical-right]
+          rejects: [liberalism.classical, libertarianism.ancap, marxism.ml]
+        presupposes: [inequality.justice.stewardship]
+        excludes: []
+        tension: [property.private.natural-right]
+        tags: [religious, islamic]
+        analysis:
+          gains: [peasantry, core-workers, petty-bourgeoisie, peripheral-workers]
+          pays: [finance-capital, landed-capital]
+          mechanism: >
+            A levy on hoarded wealth and a ban on interest penalize idle money and lending capital while
+            protecting trade and profit-sharing partnership, shifting income from rentiers toward merchants,
+            producers and the poor. The wage relation itself is not touched.
+          drain: softens
+          law_of_value: regulates
+          disputed: >
+            Ali Shariati and Islamic socialists read the Qur'anic condemnation of hoarding as revolutionary;
+            other Marxists in the Muslim world point to Gulf Islamic finance as interest under another name.
+
+      - id: property.private.earned-is-mine
+        label: What I earned is mine; what nobody earned is fair game
+        claim: What people earn by their own work belongs to them and should not be taken. Fortunes made by speculation, connections or luck are a different matter.
+        voiced: "I worked for every brick of this house. Nobody handed me anything, and nobody is going to take it. The guys who make millions shuffling paper, that's another story."
+        you: You think what people work for is theirs and should be protected, but you don't extend the same respect to money made without work.
+        because: >
+          People know the difference between the carpenter who built his house and the speculator who flipped
+          ten of them. Work deserves its reward; that is the basic fairness every decent society rests on.
+          Taking from those who produced to give to those who didn't breaks that fairness, and so does letting
+          people grow rich from rigged games. Respect for property should follow respect for work.
+        against:
+          - from: marxism.classical
+            text: >
+              Under capitalism the large fortunes are legally 'earned' returns on capital, and the respect for
+              earned property protects them first. The line between producer and parasite is drawn in practice
+              against welfare claimants, not shareholders.
+          - from: liberalism.austrian
+            text: >
+              The speculator who moves capital to where it is needed earns his return as surely as the carpenter.
+              'Earned' and 'unearned' are moral feelings that markets cannot and should not track.
+        sources:
+          - {author: Michael Kazin, title: "The Populist Persuasion: An American History", year: 1995}
+          - {author: Christopher Lasch, title: "The True and Only Heaven: Progress and Its Critics", year: 1991}
+        traditions:
+          defining: [commonsense.self-reliance]
+          typical: [conservatism.right-populism, commonsense.look-after-your-own, commonsense.rigged, socdem.labourism]
+          contested: [conservatism.fusionism]
+          rejects: [liberalism.austrian, libertarianism.ancap]
+        presupposes: []
+        excludes: []
+        tension: [property.private.natural-right]
+        tags: [commonsense, producerism]
+        analysis:
+          gains: [petty-bourgeoisie, industrial-capital]
+          pays: [reserve-army]
+          mechanism: >
+            The rule that earned property is sacred and unearned property suspect mobilizes wage earners and
+            small owners against taxation in general, while the largest fortunes, legally recorded as earned
+            returns, shelter under the same rule. Its suspicion is most often turned on transfer recipients.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Michael Kazin reads producerism as a proto-class consciousness that has turned against bankers and
+            monopolies; others see it as the classic petty-bourgeois politics that aims below as often as above.
+          consciousness: economic-corporate
+
+      - id: property.private.inherited-order
+        label: Property is the ballast of an inherited social order
+        claim: Property is justified less by abstract right than by long possession and the stability it gives families and communities. Settled holdings, passed down, hold a society together.
+        voiced: "The power of perpetuating our property in our families is one of the most valuable circumstances belonging to it, and that which tends most to the perpetuation of society itself."
+        you: You value property mainly as what anchors families and communities over generations, and distrust any scheme that unsettles it.
+        because: >
+          Titles that have lasted generations are justified by prescription: they have been relied on, built
+          upon, and woven into how families live. No reformer can redesign this web without tearing it.
+          Property gives a family a stake in the future and an independence from the state, and its
+          inequality is the price of continuity. A society that redistributes at every election teaches its
+          members that nothing they hold is safe, and they stop building.
+        against:
+          - from: liberalism.classical
+            text: >
+              Prescription protects any title, however acquired, merely because it is old. Entails and inherited
+              estates froze land in idle hands; property is justified by labor and exchange, not by age.
+          - from: marxism.classical
+            text: >
+              The 'inherited order' is the order of those who inherited. Behind every old title stands an
+              enclosure or a conquest that prescription is called in to forget.
+        sources:
+          - {author: Edmund Burke, title: Reflections on the Revolution in France, year: 1790}
+          - {author: Hilaire Belloc, title: An Essay on the Restoration of Property, year: 1936}
+        traditions:
+          defining: [conservatism.burkean]
+          typical: [conservatism.traditionalist, conservatism.one-nation, conservatism.monarchist, conservatism.paleo]
+          contested: [conservatism.distributism, conservatism.fusionism]
+          rejects: [marxism.classical, liberalism.utilitarian, anarchism.mutualist]
+        presupposes: []
+        excludes: [property.private.possession-not-property]
+        tension: [property.private.convention]
+        tags: [conservative]
+        analysis:
+          gains: [landed-capital, finance-capital, petty-bourgeoisie]
+          pays: [peasantry, reserve-army, core-workers]
+          mechanism: >
+            Grounding title in long possession rather than in labor or need makes the existing distribution the
+            standard of justice. That shields old landed and financial fortunes from redistribution and family
+            wealth from inheritance tax, while also protecting smallholders' plots.
+          drain: sustains
+          law_of_value: none
+
+  # ------------------------------------------------------------------
+  - id: property.self-ownership
+    domain: economy
+    layer: horizon
+    question: Do you own yourself?
+    plain: Is your body, your time and your work your property to use, sell or keep as you like?
+    short: self-ownership
+    importance: 2
+    positions:
+      - id: property.self-ownership.full
+        label: Full self-ownership, including everything you earn
+        claim: Each person fully owns their body, their labor and what they acquire with it. Taking part of a person's earnings by force is taking part of the person.
+        voiced: "Taxation of earnings from labor is on a par with forced labor. Seizing the results of someone's labor is seizing hours from him."
+        you: You believe you own yourself completely, including your labor and what it earns, so taxing earnings is a kind of forced labor.
+        because: >
+          If anyone owns you, it is either you or someone else. If someone else, slavery is justified in
+          principle. If you, then you own the use of your hands and hours, and the fruits of that use.
+          A tax that takes five hours of your week's work makes the state part-owner of you for five hours.
+          The only rule that treats persons as ends rather than means is that no one may take what is yours
+          without your consent.
+        against:
+          - from: marxism.analytical
+            text: >
+              Self-ownership is compatible with a world where a few own all external resources and the rest own
+              only themselves. Formal ownership of a self with no means of living is the freedom to sell it on
+              the owners' terms.
+          - from: libertarianism.left
+            text: >
+              Owning yourself does not mean owning the earth. Your earnings depend on land and resources you did
+              not make, and the rent on those belongs to everyone.
+        sources:
+          - {author: Robert Nozick, title: "Anarchy, State, and Utopia", year: 1974}
+          - {author: Murray N. Rothbard, title: For a New Liberty, year: 1973}
+          - {author: Hans-Hermann Hoppe, title: A Theory of Socialism and Capitalism, year: 1989}
+        traditions:
+          defining: [libertarianism.ancap, libertarianism.minarchist]
+          typical: [libertarianism.objectivist, libertarianism.paleo, liberalism.austrian]
+          contested: [liberalism.classical]
+          rejects: [marxism.analytical, liberalism.egalitarian, conservatism.cst, communitarianism]
+        presupposes: [property.private.natural-right]
+        excludes: [property.self-ownership.social-individual, property.self-ownership.gods-creation]
+        tension: []
+        tags: [libertarian]
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [reserve-army, core-workers, peripheral-workers]
+          mechanism: >
+            Ruling taxation of earnings out as forced labor removes the basis for redistributive welfare, while
+            the right to sell one's labor is honored without limit. Those who have only labor power to sell bear
+            market risk alone; high earners and owners of capital keep their returns.
+          drain: sustains
+          law_of_value: extends
+
+      - id: property.self-ownership.left-libertarian
+        label: You own yourself, but the earth belongs to everyone equally
+        claim: You fully own your body and labor, but natural resources belong to all people equally. Anyone who holds more than an equal share owes the rest compensation.
+        voiced: "Self-ownership, yes, all the way down. But no one mixed their labor with the ocean floor. Whoever encloses more than their share of the earth owes the rest of us rent."
+        you: You hold that people own themselves fully, but that land and natural resources belong to everyone equally and their holders owe the rest compensation.
+        because: >
+          The libertarian is right that persons may not be conscripted or taxed as if partly owned by others.
+          But the libertarian argument for owning external things fails on its own terms: appropriating land
+          leaves less for others, so it must compensate them. Charge every holder the full rental value of what
+          they hold from nature and pay it out equally. That respects both the integrity of persons and their
+          equal claim on a world none of them made.
+        against:
+          - from: libertarianism.ancap
+            text: >
+              'Equal shares of the earth' requires a global authority to value, tax and redistribute every
+              holding. That is the state the self-owner was supposed to be free of.
+          - from: marxism.classical
+            text: >
+              Rent on land is a small part of what owners take. Leaving profit on capital untouched, the theory
+              equalizes the least important inheritance and calls the result justice.
+        sources:
+          - {author: Hillel Steiner, title: An Essay on Rights, year: 1994}
+          - {author: Peter Vallentyne and Hillel Steiner (eds.), title: Left-Libertarianism and Its Critics, year: 2000}
+          - {author: Michael Otsuka, title: Libertarianism without Inequality, year: 2003}
+        traditions:
+          defining: [libertarianism.left]
+          typical: [libertarianism.georgist]
+          contested: [liberalism.egalitarian, anarchism.mutualist]
+          rejects: [libertarianism.ancap, libertarianism.objectivist, marxism.ml]
+        presupposes: []
+        excludes: [property.self-ownership.social-individual]
+        tension: [property.private.natural-right]
+        tags: [libertarian]
+        analysis:
+          gains: [core-workers, reserve-army, peasantry, peripheral-workers]
+          pays: [landed-capital, comprador-capital]
+          mechanism: >
+            Charging holders the full rent of land and resources and paying it out as equal dividends moves
+            resource rent from owners to everyone, including, in Steiner's global version, people in resource-poor
+            countries. Wage labor and returns to produced capital are left as they are.
+          drain: softens
+          law_of_value: regulates
+
+      - id: property.self-ownership.inalienable
+        label: Because you own yourself, you cannot rent yourself out
+        claim: Your responsibility for your own actions cannot be sold. So the employment contract, which pretends to transfer it to an employer, is invalid, and those who work in a firm should own what it produces.
+        voiced: "You cannot sell your will. The worker who carries out the job is responsible for it, in law and in fact, so the product belongs to the workers, not to the hirer."
+        you: You think a person's responsibility for their own work cannot be sold, so whoever does the work in a firm should own its results.
+        because: >
+          The law already admits that responsibility cannot be transferred: an employee who commits a crime on
+          the boss's orders is a partner in it, not a tool. Yet in ordinary production the law pretends the
+          employee is a rented instrument whose results belong wholly to the renter. The same reasoning that
+          voided voluntary slavery contracts voids the wage contract. Ownership of the product should go with
+          responsibility for producing it, which means democratic firms owned by those who work in them.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Workers choose employment over partnership because it spares them capital risk. Voiding the
+              contract they prefer, in the name of their inalienable will, is paternalism.
+          - from: marxism.left-communism
+            text: >
+              A juridical argument about contracts leaves commodity production in place. Worker-owned firms
+              competing in markets are collective capitalists exploiting themselves.
+        sources:
+          - {author: David Ellerman, title: Property and Contract in Economics, year: 1992}
+        traditions:
+          defining: []
+          typical: [marxism.market-socialism, anarchism.mutualist]
+          contested: [liberalism.republican, conservatism.distributism]
+          rejects: [liberalism.chicago, libertarianism.ancap, marxism.left-communism]
+        presupposes: []
+        excludes: [property.self-ownership.full]
+        tension: []
+        tags: [economic-democracy]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            If employment contracts are void, the firm's net product belongs to those who work in it, ending the
+            employer's legal claim to profit; foreign-owned subsidiaries would pass to the workers who staff them.
+            Firms would still sell in markets and compete on price.
+          drain: reduces
+          law_of_value: suspends
+
+      - id: property.self-ownership.social-individual
+        label: Self-ownership is the wage worker's form, not liberty
+        claim: The idea that you own yourself is what remains to people who own nothing else. Persons are made by their social relations, and the question is who owns the means of living, not who owns the self.
+        voiced: "The worker is free in the double sense: free to sell his labour power as his own commodity, and free of everything else he would need to live without selling it."
+        you: You see 'owning yourself' as the legal shape of being someone who must sell their labor, and think what matters is who owns the means of living.
+        because: >
+          The self-owning individual is not a fact of nature but a historical product. Capitalism needed people
+          who owned their labor power and nothing else, so that they would bring it to market. Owning yourself
+          then means being responsible for your own sale. Human beings are an ensemble of social relations:
+          language, skill and needs are all made in common. Liberty is the collective control of the conditions
+          of life, not a property title in a self with nowhere to go.
+        against:
+          - from: libertarianism.minarchist
+            text: >
+              Deny people ownership of themselves and you have licensed the collective to dispose of them. The
+              twentieth century showed what follows when individuals belong to society.
+          - from: marxism.analytical
+            text: >
+              Marx's own charge of exploitation, that capitalists take what workers produce, assumes workers own
+              their labor. Marxists must refute self-ownership by argument, not by history.
+        sources:
+          - {author: Karl Marx, title: "Capital, Volume I", year: 1867}
+          - {author: G. A. Cohen, title: "Self-Ownership, Freedom, and Equality", year: 1995}
+          - {author: C. B. Macpherson, title: The Political Theory of Possessive Individualism, year: 1962}
+        traditions:
+          defining: [marxism.classical]
+          typical: [marxism.ml, marxism.western, marxism.analytical, marxism.council-communism, anarchism.communist]
+          contested: [socdem.democratic-socialism]
+          rejects: [libertarianism.ancap, libertarianism.minarchist, libertarianism.objectivist]
+        presupposes: [wage.nature.price-of-labor-power]
+        excludes: [property.self-ownership.full]
+        tension: []
+        tags: [marxist]
+        analysis:
+          gains: [core-workers, peripheral-workers, reserve-army, peasantry]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Rejecting self-ownership as the measure of liberty removes the main argument against collective
+            claims on the product of market work, which legitimates socializing capital and taxing its returns.
+          drain: reduces
+          law_of_value: abolishes
+          disputed: >
+            G. A. Cohen argued that Marxist exploitation theory tacitly accepts self-ownership and must be
+            rebuilt on equality; other Marxists hold that exploitation is a relation of production, not a
+            violation of property in oneself.
+
+      - id: property.self-ownership.gods-creation
+        label: You are not your own; you belong to God
+        claim: People do not own themselves. Life and body are entrusted by God, so a person may not sell themselves, their organs or their life, and owes duties to others that no contract can cancel.
+        voiced: "You are not your own; you were bought at a price. Life is a gift held in trust, and a person can no more sell himself than give away what was never his."
+        you: You believe your life and body are entrusted to you by God rather than owned, which rules out selling them and binds you to duties you did not choose.
+        because: >
+          If I owned myself outright I could sell myself into slavery, sell my kidney to pay a debt, or end my
+          life on a bad day, and the market would call it freedom. Every tradition of human dignity refuses
+          this. The dignity of the person comes from being made in God's image, not from a title deed, and it
+          forbids treating anyone, including oneself, as merchandise. The same truth grounds the duty of the
+          rich to the poor.
+        against:
+          - from: liberalism.classical
+            text: >
+              Whoever claims to know what God wants for my body will soon be passing laws about it. Each adult is
+              sovereign over their own life whatever any church teaches.
+          - from: feminism.liberal
+            text: >
+              'Your body is not your own' has been the premise of every law that put women's bodies under the
+              control of husbands, priests and the state.
+        sources:
+          - {author: Paul of Tarsus, title: First Letter to the Corinthians, year: c. 55}
+          - {author: John Paul II, title: Evangelium Vitae, year: 1995}
+        traditions:
+          defining: [conservatism.cst, conservatism.integralism]
+          typical: [conservatism.evangelical-right, religious.islamism-brotherhood, religious.islamism-khomeinist, conservatism.christian-democracy, conservatism.traditionalist]
+          contested: [religious.liberation-theology, religious.christian-socialism]
+          rejects: [libertarianism.ancap, liberalism.classical, feminism.liberal]
+        presupposes: []
+        excludes: [property.self-ownership.full]
+        tension: []
+        tags: [religious]
+        analysis:
+          gains: [reserve-army, peripheral-workers]
+          pays: []
+          mechanism: >
+            Denying ownership of the body blocks markets in organs, commercial surrogacy and bonded labor, which
+            recruit mainly among the poorest. The same doctrine underwrites legal limits on sexual and reproductive
+            choice, whose costs fall on women across classes.
+          drain: none
+          law_of_value: regulates
+
+      - id: property.self-ownership.relational
+        label: You belong to your family, people and community
+        claim: A person is not a self-contained owner. People are formed by family, community and nation, and owe them obligations that come before individual choice.
+        voiced: "I am my father's son, my children's father, a member of this village and this people. That is not a limit on who I am. It is who I am."
+        you: You see a person as formed and claimed by family, community and people, with obligations that come before any individual choice.
+        because: >
+          No one chooses their language, parents or homeland, yet these make them who they are. Picturing the
+          self as an owner of itself, prior to all its attachments, describes no one who ever lived. It also
+          dissolves the duties that hold a society together: to care for the old, to raise children, to defend
+          the community. Rights talk that begins with self-ownership ends with a society of strangers.
+        against:
+          - from: liberalism.classical
+            text: >
+              'Who you are' decided by family and nation is who others have decided you are. Communities have
+              always been the first to crush the dissenter, the convert and the woman who leaves.
+          - from: marxism.classical
+            text: >
+              The 'community' that claims the individual is usually led by its owners. Appeals to belonging have
+              asked workers to sacrifice for the firm, the clan and the nation on their employers' behalf.
+        sources:
+          - {author: Michael J. Sandel, title: Liberalism and the Limits of Justice, year: 1982}
+          - {author: Alasdair MacIntyre, title: After Virtue, year: 1981}
+        traditions:
+          defining: [communitarianism]
+          typical: [religious.confucian, conservatism.traditionalist, conservatism.postliberal, conservatism.national, nationalism.gandhian]
+          contested: [feminism.difference, nationalism.indigenous-sovereignty, marxism.african-socialism]
+          rejects: [libertarianism.ancap, libertarianism.objectivist, liberalism.classical]
+        presupposes: []
+        excludes: [property.self-ownership.full]
+        tension: []
+        tags: []
+        analysis:
+          gains: [petty-bourgeoisie, peasantry]
+          pays: []
+          mechanism: >
+            Putting family and community claims above individual title supports kin-based care and keeps land
+            and businesses in the lineage. Whom it serves turns on who speaks for the community: elders, clergy,
+            employers or the national state can each direct the sacrifice it asks for.
+          drain: none
+          law_of_value: regulates
+
+      - id: property.self-ownership.sovereign-not-owner
+        label: Sovereign over your own life, without being a 'property' in it
+        claim: Over your own body and private life you should be left alone, but that does not make your earnings untouchable. Personal liberty and economic property are separate questions.
+        voiced: "Over himself, over his own body and mind, the individual is sovereign. That says nothing about whether his income can be taxed for the schools."
+        you: You think your body and private choices are your own business, but don't treat that as a reason why your income can't be taxed.
+        because: >
+          The case for leaving people alone in what concerns only themselves is overwhelming: no one else
+          knows their good better, and states that police private life do great harm. But earnings arise from
+          cooperation, law and markets that others sustain, and what share they owe back is a political question.
+          Running the two together, as both libertarians and moralists do, produces either a state that taxes
+          nothing or a state that polices bedrooms.
+        against:
+          - from: libertarianism.minarchist
+            text: >
+              The hours I spend earning are as much my life as my private choices. A sovereignty that stops at
+              my paycheck is a sovereignty with a hole in it.
+          - from: conservatism.traditionalist
+            text: >
+              No conduct concerns only oneself. Families, children and neighbors bear the consequences of
+              'private' choices, and a society that pretends otherwise loses its moral fabric.
+        sources:
+          - {author: John Stuart Mill, title: On Liberty, year: 1859}
+        traditions:
+          defining: [liberalism.utilitarian]
+          typical: [liberalism.social, liberalism.egalitarian, liberalism.progressive, commonsense.live-and-let-live]
+          contested: [liberalism.classical, socdem.third-way]
+          rejects: [conservatism.integralism, libertarianism.ancap]
+        presupposes: []
+        excludes: [property.self-ownership.full]
+        tension: [property.self-ownership.gods-creation]
+        tags: [liberal]
+        analysis:
+          gains: [professional-managerial, core-workers]
+          pays: []
+          mechanism: >
+            Shielding personal conduct from law while leaving economic life open to taxation and regulation
+            protects private choices without entrenching or challenging capital's returns, which stay subject
+            to ordinary politics.
+          drain: none
+          law_of_value: none
+
+  # ------------------------------------------------------------------
+  - id: property.land
+    domain: economy
+    layer: horizon
+    question: Who should own land?
+    plain: Who should own the ground under farms, homes, mines and cities, and on what terms?
+    short: land ownership
+    importance: 3
+    positions:
+      - id: property.land.freehold
+        label: Land is property like any other; secure titles make it productive
+        claim: Land should be owned privately with clear, tradable titles. Secure ownership lets people invest, borrow and sell, and that is how land is put to its best use.
+        voiced: "The poor already hold assets worth trillions, but in defective forms: houses without deeds, farms without titles. Give them clean titles and their land becomes capital."
+        you: You think land should be privately owned with clear titles that can be bought, sold and borrowed against.
+        because: >
+          Where titles are insecure, no one plants trees, builds a well or improves the soil, because a chief,
+          an official or a squatter may take it. Clear private title lets an owner invest and reap the gains,
+          borrow against the land to start a business, and sell it to someone who can use it better. The
+          countries that prospered are those where land became a secure, tradable asset.
+        against:
+          - from: marxism.maoism
+            text: >
+              Tradable title in a countryside of poor peasants and rich lenders is a machine for dispossession.
+              In the first bad harvest the land passes to the moneylender, and the peasant becomes a laborer on it.
+          - from: nationalism.indigenous-sovereignty
+            text: >
+              Titling breaks collective territories into lots so they can be bought. It has been the main legal
+              tool for transferring indigenous land to settlers and companies.
+        sources:
+          - {author: Hernando de Soto, title: "The Mystery of Capital: Why Capitalism Triumphs in the West and Fails Everywhere Else", year: 2000}
+          - {author: John Locke, title: Two Treatises of Government, year: 1689}
+        traditions:
+          defining: [liberalism.classical, libertarianism.minarchist]
+          typical: [libertarianism.ancap, liberalism.chicago, liberalism.austrian, libertarianism.objectivist, conservatism.fusionism, liberalism.technocratic]
+          contested: [conservatism.burkean, nationalism.developmental-state]
+          rejects: [libertarianism.georgist, marxism.ml, nationalism.indigenous-sovereignty, anarchism.communist]
+        presupposes: [property.private.natural-right]
+        excludes: [property.land.nationalize, property.land.communal, property.land.relational]
+        tension: []
+        tags: []
+        analysis:
+          gains: [landed-capital, finance-capital, comprador-capital]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >
+            Titling and free sale make land collateral for bank credit and let it go to the highest bidder, which
+            concentrates holdings in agribusiness, developers and foreign investors. Smallholders who borrow against
+            title lose it in bad years, and large-scale land acquisitions in Africa and Southeast Asia run through
+            titling programs.
+          drain: sustains
+          law_of_value: extends
+
+      - id: property.land.georgist-rent
+        label: Hold land privately, but its rent belongs to the community
+        claim: People may hold land privately, but its rental value is created by the community and belongs to it. A tax on land value should capture that rent and replace taxes on work and enterprise.
+        voiced: "We must make land common property. Not by buying it out, nor by confiscating it, but by taking rent for public uses and abolishing all taxation save that upon land values."
+        you: You think land can be privately held but its value, which comes from the community, should be taxed away for public use instead of taxing work.
+        because: >
+          A plot in a city center is worth a fortune not because of anything its owner did, but because of
+          the roads, schools and neighbors around it. When the town grows, the landowner grows rich in his
+          sleep, and wages are pressed down by the rent everyone pays to live and work. Tax the land value and
+          speculation ends, idle lots get built on, and labor and capital can be left untaxed. The most
+          efficient tax is also the most just.
+        against:
+          - from: marxism.classical
+            text: >
+              Rent is one part of the surplus, and taxing it pits industrial capital against landlords without
+              touching exploitation. Marx, writing to Sorge in 1881, called it an attempt to save capitalist rule.
+          - from: liberalism.austrian
+            text: >
+              No assessor can separate the value of land from the value of improvements, and a tax designed to take
+              all rent puts every owner at the mercy of the assessor.
+        sources:
+          - {author: Henry George, title: Progress and Poverty, year: 1879}
+          - {author: John Stuart Mill, title: Principles of Political Economy, year: 1848, note: "on the unearned increment of land"}
+        traditions:
+          defining: [libertarianism.georgist]
+          typical: [libertarianism.left]
+          contested: [liberalism.social, socdem.fabian, liberalism.classical, libertarianism.minarchist]
+          rejects: [libertarianism.ancap, marxism.ml, conservatism.burkean]
+        presupposes: []
+        excludes: [property.land.freehold]
+        tension: [property.private.natural-right]
+        tags: [georgist]
+        analysis:
+          gains: [core-workers, petty-bourgeoisie, industrial-capital]
+          pays: [landed-capital, finance-capital]
+          mechanism: >
+            Taxing land rent close to its full value collapses land prices, removes speculative gains and shifts
+            public revenue off wages and buildings. Owners of land pay, and so do banks whose mortgage books rest
+            on land values; employers gain from lower rents and lower taxes on capital.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            Marxists accept the rent analysis (Capital, Volume III) but split on whether a land-value tax is a
+            useful reform against the landed and financial fractions or a program for industrial capital.
+
+      - id: property.land.to-the-tiller
+        label: Land to those who till it; break up the estates
+        claim: Large estates should be broken up and the land given to the families who farm it. Landlords who collect rent from others' labor should lose their land.
+        voiced: "The land belongs to those who work it with their own hands. Tierra y libertad."
+        you: You think big estates should be broken up and the land handed to the families who actually farm it.
+        because: >
+          Across most of the world the peasant works and the landlord collects. Rent, debt and sharecropping
+          strip the countryside of its surplus and keep the majority poor and dependent. Giving land to the
+          tiller ends that at a stroke: incomes rise, families invest in their own fields, and the old landed
+          class loses the power it used to dominate the state. Every successful industrialization in East Asia
+          began with land reform.
+        against:
+          - from: marxism.maoism
+            text: >
+              Land to the tiller is the first step, not the last. Left to the market, small plots differentiate
+              again into rich and poor peasants; only cooperation and collectivization prevent a new landlord class.
+          - from: liberalism.chicago
+            text: >
+              Redistribution destroys the security of all titles and splits land into plots too small to farm
+              efficiently. The way out of rural poverty is off the farm, not onto a smaller one.
+        sources:
+          - {author: Emiliano Zapata and Otilio Montaño, title: Plan de Ayala, year: 1911}
+          - {author: Sun Yat-sen, title: Three Principles of the People, year: 1924}
+          - {author: Joe Studwell, title: How Asia Works, year: 2013}
+        traditions:
+          defining: [nationalism.three-principles]
+          typical: [nationalism.developmental-state, marxism.mariategui, religious.liberation-theology, zapatismo, nationalism.peronism, marxism.african-socialism]
+          contested: [marxism.maoism, marxism.ml, conservatism.distributism]
+          rejects: [libertarianism.ancap, conservatism.burkean]
+        presupposes: []
+        excludes: []
+        tension: [property.land.freehold]
+        tags: [land-reform]
+        analysis:
+          gains: [peasantry]
+          pays: [landed-capital, comprador-capital]
+          mechanism: >
+            Breaking estates and titling cultivating families ends rent payments to landlords and strips local
+            elites tied to export agriculture of their base. In Taiwan and South Korea it raised peasant incomes
+            and widened home markets for domestic industry.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            Maoists treat it as a stage that must be followed by collectivization; developmental-state scholars
+            treat it as the foundation of capitalist industrialization. Both cite East Asia.
+          consciousness: class-economic
+
+      - id: property.land.nationalize
+        label: All land belongs to the state, allocated by use rights
+        claim: Private ownership of land should be abolished. The state owns the land and grants rights to use it to farms, households and enterprises.
+        voiced: "Landed proprietorship is abolished forthwith without any compensation. All land shall become the property of the whole people, and pass into the use of those who cultivate it."
+        you: You think land should belong to the state, with people and enterprises holding only rights to use it.
+        because: >
+          Land cannot be bought and sold like shoes without turning its scarcity into tribute for whoever owns
+          it. Nationalization abolishes ground rent as a private income at a stroke. The state can then plan
+          where cities, factories and farms go, capture rising land values for public investment, and stop
+          speculation. Use rights give farmers and households the security they need without giving them the
+          power to sell the nation's soil.
+        against:
+          - from: anarchism.communist
+            text: >
+              State land is still landlord land, with a ministry as landlord. Soviet collectivization showed
+              what happens when the peasantry is tenant to a state that wants its grain.
+          - from: liberalism.classical
+            text: >
+              Without private title no one has reason to improve land, and use rights held at an official's
+              pleasure become the currency of patronage and corruption.
+        sources:
+          - {author: V. I. Lenin, title: Decree on Land, year: 1917}
+          - {author: Karl Marx, title: The Nationalisation of the Land, year: 1872}
+        traditions:
+          defining: [marxism.ml]
+          typical: [marxism.leninism, marxism.scc, marxism.juche, marxism.hoxhaism, marxism.trotskyism]
+          contested: [marxism.maoism, marxism.arab-socialism]
+          rejects: [liberalism.classical, libertarianism.ancap, anarchism.mutualist, conservatism.distributism]
+        presupposes: [property.private.personal-vs-productive]
+        excludes: [property.land.freehold]
+        tension: [property.land.to-the-tiller]
+        tags: [marxist]
+        analysis:
+          gains: [peasantry, core-workers]
+          pays: [landed-capital, finance-capital]
+          mechanism: >
+            State title abolishes ground rent as private income and lets the state capture land value for public
+            investment, as Chinese local governments did through land-lease revenue. Who benefits turns on how use
+            rights are allocated and whether local officials and developers capture the leases.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            Whether Chinese state land leasing is a socialist instrument for financing infrastructure or the basis
+            of a developer-and-local-government rent machine is argued between Chinese Marxists and critics such as David Harvey.
+
+      - id: property.land.communal
+        label: Land held and worked by the village or commune
+        claim: Land should belong to the village, commune or cooperative that works it, and should never be sold. The community allocates it and shares the work and the harvest.
+        voiced: "In our tradition the land belonged to the community and was never for sale. Ujamaa, familyhood, is the basis of African socialism. We build on it."
+        you: You think land should belong to the community that works it, be allocated by that community, and never be sold.
+        because: >
+          Communal land tenure is older than private property and survived it in the ayllu, the mir, the ejido
+          and the African village. It prevents the loss of land to debt, keeps the young on it, and lets the
+          community plan irrigation and rotation together. It is also the shortest road to socialism in the
+          countryside: the peasant does not have to pass through the misery of becoming a landless laborer to
+          reach collective production.
+        against:
+          - from: liberalism.classical
+            text: >
+              Land that cannot be sold cannot be mortgaged, so communal farmers are cut off from credit and the
+              village elders decide who gets what. Tanzania's forced villagization is the record.
+          - from: marxism.ml
+            text: >
+              Village collectives remain small producers with village interests. Without state planning and
+              mechanization they stagnate, and without industrial workers' leadership they turn inward.
+        sources:
+          - {author: Julius K. Nyerere, title: "Ujamaa: The Basis of African Socialism", year: 1962}
+          - {author: José Carlos Mariátegui, title: Seven Interpretive Essays on Peruvian Reality, year: 1928}
+          - {author: Peter Kropotkin, title: Mutual Aid, year: 1902}
+        traditions:
+          defining: [marxism.african-socialism, marxism.mariategui]
+          typical: [zapatismo, anarchism.communist, anarchism.confederalism, nationalism.gandhian, marxism.maoism, nationalism.zionism-labor]
+          contested: [nationalism.indigenous-sovereignty, ecology.degrowth]
+          rejects: [liberalism.classical, liberalism.chicago, libertarianism.ancap]
+        presupposes: []
+        excludes: [property.land.freehold]
+        tension: [property.land.nationalize]
+        tags: []
+        analysis:
+          gains: [peasantry]
+          pays: [landed-capital, comprador-capital]
+          mechanism: >
+            Communal title bars sale and mortgage, so outside capital cannot accumulate the land and debt cannot
+            dislodge its users. Allocation passes to the community's own hierarchy of elders, men or cadres, who
+            decide who works where.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            Tanzania's villagization (1973-76) involved forced resettlement; assessments divide between a coercive
+            failure and a sound model undone by drought, the oil shock and falling export prices.
+
+      - id: property.land.relational
+        label: Land is not property; people belong to the land
+        claim: Land cannot rightly be owned at all. It is a living relative that people belong to and care for across generations, and stolen indigenous land should return to its peoples.
+        voiced: "The land is not ours to sell. We belong to it, as our ancestors did and our grandchildren will. You cannot buy your grandmother."
+        you: You don't think land can really be owned; people belong to it and owe it care, and stolen land should go back to the peoples it was taken from.
+        because: >
+          Turning land into property was the founding act of colonialism: a living web of relations was cut into
+          parcels so it could be sold, mined and fenced. Indigenous peoples governed their territories for
+          millennia through obligations to land, water and kin, and the places they still hold are where
+          forests and rivers survive. Reciprocity with land is not a nostalgic ideal but a body of law and
+          knowledge, and it is the alternative to an economy that treats the earth as a warehouse.
+        against:
+          - from: liberalism.classical
+            text: >
+              Every people has used land and fought over it. Romanticizing pre-colonial tenure denies indigenous
+              people the secure title, credit and choice that would let them prosper on their own terms.
+          - from: marxism.ml
+            text: >
+              Relational ontology does not answer how land feeds a modern population. Without a program for
+              production and alliance with workers, land defense stays local and can be bought off.
+        sources:
+          - {author: Vine Deloria Jr., title: God Is Red, year: 1973}
+          - {author: Glen Sean Coulthard, title: "Red Skin, White Masks: Rejecting the Colonial Politics of Recognition", year: 2014}
+          - {author: Winona LaDuke, title: "All Our Relations: Native Struggles for Land and Life", year: 1999}
+        traditions:
+          defining: [nationalism.indigenous-sovereignty]
+          typical: [nationalism.decolonial, ecology.environmental-justice, zapatismo]
+          contested: [ecology.deep-ecology, anarchism.green]
+          rejects: [liberalism.classical, libertarianism.ancap, liberalism.chicago]
+        presupposes: []
+        excludes: [property.land.freehold]
+        tension: [property.land.nationalize]
+        tags: [indigenous]
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: [landed-capital, comprador-capital, industrial-capital]
+          mechanism: >
+            Removing land from the market blocks mines, pipelines and dams on indigenous territory, costing
+            extractive firms their resource access and settler landholders their titles. Its reach depends on
+            whether states recognize the jurisdiction or only consult.
+          drain: reduces
+          law_of_value: suspends
+
+      - id: property.land.family-farm
+        label: Land in the hands of many working families, kept out of corporate hands
+        claim: Land should be widely held by families who live on it and pass it down. Laws should cap holdings and keep farmland away from corporations, funds and speculators.
+        voiced: "Three acres and a cow. A nation of owners who work their own land will never be a nation of serfs, whether the master is a lord, a bank or a commissar."
+        you: You want land spread among working families who keep it for generations, and want corporations and funds kept out of farmland.
+        because: >
+          The family farm is a school of independence, thrift and responsibility, and a countryside of owners
+          is a bulwark against both the plutocrat and the state. Collective farms and agribusiness alike turn
+          farmers into employees and the land into a mine. Caps on holdings, protection of family succession and
+          bans on corporate farmland ownership keep property widespread, which is the only condition in which
+          property makes people free.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Caps on holdings freeze agriculture at a scale that cannot compete. The family farm survives only on
+              subsidies paid by urban consumers and poorer countries' farmers who are shut out of markets.
+          - from: marxism.classical
+            text: >
+              Small property cannot hold against concentration under market competition. Distributism defends a
+              class that capitalism is dissolving and offers it nostalgia instead of an alliance with workers.
+        sources:
+          - {author: Hilaire Belloc, title: The Servile State, year: 1912}
+          - {author: G. K. Chesterton, title: The Outline of Sanity, year: 1926}
+          - {author: Wendell Berry, title: "The Unsettling of America: Culture and Agriculture", year: 1977}
+        traditions:
+          defining: [conservatism.distributism]
+          typical: [conservatism.traditionalist, conservatism.cst, conservatism.national, conservatism.paleo, nationalism.gandhian, conservatism.christian-democracy]
+          contested: [conservatism.right-populism, ecology.degrowth, anarchism.mutualist]
+          rejects: [liberalism.chicago, marxism.ml]
+        presupposes: []
+        excludes: []
+        tension: [property.land.freehold]
+        tags: [distributist]
+        analysis:
+          gains: [peasantry, petty-bourgeoisie]
+          pays: [landed-capital, finance-capital]
+          mechanism: >
+            Caps on holdings, protected succession and bans on corporate farmland ownership keep land with
+            working families and away from agribusiness and investment funds. Farm output is still sold on
+            markets, and in the core the policy has relied on subsidies and tariffs that shut out peripheral exports.
+          drain: none
+          law_of_value: regulates
+
+      - id: property.land.national-domain
+        label: Land and subsoil belong to the nation, not to foreigners
+        claim: The nation owns its land, minerals and oil. Foreigners should not own national territory, and resource wealth should be under national control.
+        voiced: "Ownership of the lands and waters within the national territory is vested originally in the Nation. The oil is ours."
+        you: You think a nation's land, minerals and oil belong to the nation itself and should not be owned by foreigners.
+        because: >
+          A people that does not own its soil is not sovereign. Where foreign companies own the mines and
+          plantations, the wealth leaves with the ships, and the companies call in their governments when
+          anyone objects. Every serious independence, from Mexico in 1938 to Iran in 1951 and the oil
+          nationalizations of the 1970s, began by asserting national ownership of land and subsoil. The UN
+          itself recognizes permanent sovereignty over natural resources.
+        against:
+          - from: liberalism.classical
+            text: >
+              'National' ownership in practice means ownership by whoever runs the state. Resource nationalism
+              has enriched ruling families and frightened off the investment that would have developed the resources.
+          - from: marxism.third-worldism
+            text: >
+              National ownership without a change in which class rules turns resource rent into the income of a
+              national bourgeoisie that soon makes its peace with the core.
+        sources:
+          - {author: Constituent Congress of Mexico, title: "Political Constitution of the United Mexican States (Article 27)", year: 1917}
+          - {author: United Nations General Assembly, title: "Resolution 1803 (XVII): Permanent Sovereignty over Natural Resources", year: 1962}
+        traditions:
+          defining: [nationalism.nasserism, nationalism.bolivarianism]
+          typical: [nationalism.peronism, nationalism.baathism, nationalism.kemalism, nationalism.developmental-state, nationalism.pan-africanism, marxism.arab-socialism, conservatism.national, conservatism.gaullism]
+          contested: [marxism.third-worldism, nationalism.indigenous-sovereignty]
+          rejects: [liberalism.classical, libertarianism.ancap, liberalism.internationalist]
+        presupposes: [intl.sovereignty.nations-set-own-course]
+        excludes: []
+        tension: [property.land.relational]
+        tags: [resource-nationalism]
+        analysis:
+          gains: [industrial-capital, peripheral-workers, peasantry]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >
+            Vesting land and subsoil in the nation lets the state tax or nationalize mineral and oil rent that
+            foreign firms would otherwise repatriate, as Mexico did in 1938. Which domestic class gets the rent
+            turns on who controls the state and the national oil company.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            Dependency theorists credit resource nationalism with retaining rent; Third Worldist critics note that
+            national bourgeoisies often recycle that rent into core financial assets.
+          consciousness: hegemonic

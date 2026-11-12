@@ -1,0 +1,1102 @@
+problematics:
+  - id: state.nature
+    domain: state
+    layer: analysis
+    question: What is the state?
+    plain: When the government acts, whose instrument is it, and what is it for?
+    short: the state
+    importance: 3
+    region: state
+    positions:
+      - id: state.nature.neutral-arbiter
+        label: The state is a neutral umpire among citizens and groups
+        claim: The state is a public authority that sets and enforces common rules and arbitrates between competing interests without belonging to any of them.
+        voiced: >
+          Government is the referee, not a player. Its job is to keep the rules fair, protect
+          everyone's rights equally, and let organized interests compete in the open. When it
+          tilts, that is a failure we can fix with better institutions.
+        you: You see the state as a referee that should, and mostly can, stand above the groups competing in society.
+        because: >
+          In a constitutional order power is dispersed: no single group wins every fight, coalitions
+          shift from issue to issue, and courts, elections and a free press check whoever holds office.
+          Studies of real cities found many centers of influence, not one ruling class. A neutral state
+          is also the only one that people with different beliefs can all accept, which is why it is
+          the condition of peaceful pluralism.
+        against:
+          - from: marxism.leninism
+            text: >
+              The umpire was hired by one team. Property law, contract law and the police are not neutral
+              rules over a level field; they are the field. A state that "neutrally" enforces the title
+              deeds of owners against the needs of non-owners has already taken a side.
+          - from: marxism.structural
+            text: >
+              Pluralists count decisions and miss what never reaches the agenda. A state whose revenues,
+              credit and stability depend on private investment must keep investors confident whoever wins
+              the election.
+        sources:
+          - {author: Robert A. Dahl, title: "Who Governs? Democracy and Power in an American City", year: 1961}
+          - {author: John Rawls, title: Political Liberalism, year: 1993}
+          - {author: Max Weber, title: Politics as a Vocation, year: 1919}
+        traditions:
+          defining: [liberalism.social, liberalism.technocratic]
+          typical: [liberalism.egalitarian, liberalism.progressive, socdem.third-way, conservatism.christian-democracy, liberalism.internationalist]
+          contested: [liberalism.classical, socdem.keynesian]
+          rejects: [marxism.leninism, marxism.ml, marxism.structural, anarchism.communist, libertarianism.ancap, commonsense.rigged]
+        presupposes: []
+        excludes: [state.nature.class-instrument, state.nature.organized-aggression, state.nature.hierarchy-as-such]
+        tension: [state.nature.captured]
+        tags: [pluralism]
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [core-workers, reserve-army, peripheral-workers]
+          mechanism: >
+            When the state counts as an umpire, existing property and contract rules become the neutral baseline,
+            and disputes move into courts, agencies and lobbying, where organized money and credentialed expertise
+            carry the most weight. Non-owners can win rulings, but not a change in who owns.
+          drain: sustains
+          law_of_value: none
+          disputed: Some social democrats (Korpi) accept that the state is not neutral in origin but hold that universal suffrage can make it close to neutral in practice.
+
+      - id: state.nature.class-instrument
+        label: The state is an organ of class rule
+        claim: The state is an organ of class rule whose form follows the property relations it defends.
+        voiced: >
+          The state arises where class antagonisms cannot be reconciled. It is special bodies of armed men,
+          prisons and courts standing over society on behalf of the class that owns. Every state is a
+          dictatorship of some class. Ask which one.
+        you: You see the state as an instrument of whichever class owns the economy, however it is dressed.
+        because: >
+          Look at what the state does when ownership itself is threatened: in strikes, land occupations and
+          nationalizations, police, courts and if needed the army side with title deeds. The officials,
+          judges and generals come from or are bound to the owning class by schooling, career and money, as
+          Miliband documented in detail. A class that wants to change who owns production therefore cannot
+          borrow the old state; it must replace it with its own.
+        against:
+          - from: liberalism.social
+            text: >
+              Workers have used this very state to win the eight-hour day, union rights, public health care and
+              universal schooling. An instrument that so often works against its supposed owners is not simply
+              their instrument.
+          - from: marxism.structural
+            text: >
+              Treating the state as a tool held by capitalists misses why it serves capital even when no capitalist
+              holds office: its structure, revenue and personnel are bound to accumulation regardless of who sits
+              at the top.
+          - from: anarchism.communist
+            text: >
+              Right about the bourgeois state, wrong to stop there. Any state, including a workers' state, is a
+              hierarchy that breeds its own ruling stratum.
+        sources:
+          - {author: V. I. Lenin, title: The State and Revolution, year: 1917}
+          - {author: Friedrich Engels, title: "The Origin of the Family, Private Property and the State", year: 1884}
+          - {author: Ralph Miliband, title: The State in Capitalist Society, year: 1969}
+          - {author: Karl Marx and Friedrich Engels, title: The Communist Manifesto, year: 1848}
+        traditions:
+          defining: [marxism.leninism, marxism.ml]
+          typical: [marxism.trotskyism, marxism.maoism, marxism.mlm, marxism.hoxhaism, marxism.left-communism, marxism.guevarism]
+          contested: [socdem.democratic-socialism, marxism.classical]
+          rejects: [liberalism.classical, liberalism.social, conservatism.burkean, conservatism.christian-democracy]
+        presupposes: [history.motor.class-struggle, class.concept.relation-to-production]
+        excludes: [state.nature.neutral-arbiter, state.nature.democratic-lever]
+        tension: [state.nature.relative-autonomy, state.nature.captured]
+        tags: [debate.miliband-poulantzas]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, landed-capital]
+          mechanism: >
+            Treating the state as a class instrument directs workers to contest state power itself rather than lobby it,
+            which threatens owners' control over law, police and budget.
+          drain: reduces
+          law_of_value: suspends
+          disputed: Structural Marxists (Poulantzas) hold the state is a condensation of class forces, not a tool; Miliband's instrumentalism and Lenin's theory are themselves distinguished by some readers.
+          consciousness: hegemonic
+
+      - id: state.nature.relative-autonomy
+        label: The state is a field of class forces with relative autonomy
+        claim: The capitalist state is not a tool held by capitalists but a structure that organizes their long-term rule, takes in the balance of class forces, and can act against particular capitalists to secure the system.
+        voiced: >
+          The state is the material condensation of a relationship of forces between classes. It organizes the
+          dominant classes, which are too divided to rule directly, and disorganizes the dominated. Rule is
+          hegemony armored by coercion: consent in civil society, force held in reserve.
+        you: You see the state as a structure that secures capitalism as a whole, sometimes against individual capitalists, and that absorbs struggles from below without changing its core.
+        because: >
+          Capitalists compete and cannot agree on their common interest; someone must impose it on them, with
+          factory acts, central banks and antitrust. That is why the state needs room to act against particular
+          owners, and why Bonapartist and military governments can rule for capital without capitalists in office.
+          In the postcolonial world the inherited state apparatus often stands above weak local classes, as Alavi
+          showed for Pakistan. Struggles from below are inscribed in the state's apparatuses, which is why they can
+          be fought on both inside and outside it.
+        against:
+          - from: marxism.leninism
+            text: >
+              Relative autonomy explains much and decides nothing. If the state is a field of forces, every
+              apparatus becomes a trench to occupy, and the strategy slides toward Eurocommunism. Chile in 1973
+              showed what the army does when the field tilts too far.
+          - from: liberalism.classical
+            text: >
+              An unfalsifiable theory: when the state helps capital it proves the thesis; when it hurts capital,
+              that too proves it, as "relative autonomy."
+        sources:
+          - {author: Nicos Poulantzas, title: Political Power and Social Classes, year: 1968}
+          - {author: Nicos Poulantzas, title: "State, Power, Socialism", year: 1978}
+          - {author: Antonio Gramsci, title: Prison Notebooks, year: 1948, note: "written 1929–1935; first Italian edition 1948–1951"}
+          - {author: Karl Marx, title: The Eighteenth Brumaire of Louis Bonaparte, year: 1852}
+          - {author: Hamza Alavi, title: "The State in Post-Colonial Societies: Pakistan and Bangladesh", year: 1972}
+        traditions:
+          defining: [marxism.structural, marxism.gramscian]
+          typical: [marxism.western, marxism.eurocommunism, marxism.dependency]
+          contested: [socdem.democratic-socialism, marxism.analytical, socdem.left-populism]
+          rejects: [liberalism.social, marxism.left-communism]
+        presupposes: [history.motor.class-struggle]
+        excludes: [state.nature.neutral-arbiter]
+        tension: [state.nature.class-instrument]
+        tags: [debate.miliband-poulantzas]
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [industrial-capital]
+          mechanism: >
+            Reading the state as a field of forces sends movements to fight inside public apparatuses (schools, health
+            services, ministries) and outside them at once; gains go first to organized workers and to the salaried
+            staff of those apparatuses, while ownership of production is contested only at the margin.
+          drain: none
+          law_of_value: regulates
+          disputed: Leninists argue the strategy it supports leaves the repressive core intact; Poulantzas himself held a democratic road must still rupture with that core.
+          consciousness: hegemonic
+
+      - id: state.nature.organic-nation
+        label: The state is the nation organized as a living whole
+        claim: The state is the nation made conscious and organized; it stands above classes and parties and gives individuals their place in a common life.
+        voiced: >
+          The state is not a night watchman nor a committee of a class. It is the living will of the nation, which
+          lives across generations. Outside it, the individual is a fragment. Everything within the state, nothing
+          against the state, nothing outside the state.
+        you: You see the state as the whole people organized, standing above classes and parties, and you expect individuals and groups to find their place inside it.
+        because: >
+          Liberalism dissolves a people into competing atoms and Marxism into warring classes; both leave the nation
+          defenseless. Only a state that stands above every faction can harmonize capital and labor, discipline
+          selfish interests and pursue the long-term life of the people. Hegel saw the state as the actuality of
+          ethical life, where freedom becomes concrete; Perón called it the organized community, where each sector
+          has its role.
+        against:
+          - from: liberalism.austrian
+            text: >
+              No mind can know the "will of the nation." Whoever claims to speak for it must silence those who disagree,
+              which is why the organic state ends in a single party, a police force and a leader.
+          - from: marxism.ml
+            text: >
+              The "harmony of capital and labor" meant dissolving workers' unions while leaving the factories with their
+              owners. Fascism was the open terrorist dictatorship of the most reactionary elements of finance capital,
+              dressed as the nation.
+        sources:
+          - {author: Benito Mussolini and Giovanni Gentile, title: The Doctrine of Fascism, year: 1932}
+          - {author: G. W. F. Hegel, title: Elements of the Philosophy of Right, year: 1820}
+          - {author: Juan Domingo Perón, title: La comunidad organizada, year: 1949}
+        traditions:
+          defining: [fascism.italian, fascism.national-syndicalism]
+          typical: [fascism.clerical, fascism.third-position]
+          contested: [nationalism.peronism, nationalism.baathism, nationalism.kemalism, fascism.nazism]
+          rejects: [liberalism.classical, liberalism.austrian, marxism.leninism, anarchism.communist, libertarianism.minarchist]
+        presupposes: []
+        excludes: [state.nature.class-instrument, state.nature.necessary-evil, state.nature.organized-aggression]
+        tension: []
+        tags: [corporatism]
+        analysis:
+          gains: [industrial-capital, landed-capital, petty-bourgeoisie]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            Declaring the state the embodiment of the whole nation removes the standing of class organizations: Italian
+            fascism abolished independent unions (Rocco law, 1926) and set wages through state corporations, while property
+            stayed private; colonial wars in Libya and Ethiopia extended the empire.
+          drain: sustains
+          law_of_value: regulates
+          disputed: >
+            Peronist versions raised the wage share in Argentina (1946–1955) through state-backed unions; materialists dispute
+            whether this belongs with fascism or with anti-imperialist national-popular movements. National Socialism held the
+            state was a means for the racial people, not an end.
+
+      - id: state.nature.organized-aggression
+        label: The state is organized theft and aggression
+        claim: The state is the one organization that takes its income by force and claims a monopoly on force; it is a gang of robbers with a flag.
+        voiced: >
+          There are two ways to get wealth: produce and trade, or take. The state is the organization of the
+          political means, taking. Taxation is theft, conscription is slavery, war is mass murder. Strip away the
+          ceremony and the state is a protection racket that writes its own laws.
+        you: You see the state as organized coercion that lives by taking, and you would like to see it shrink to nothing.
+        because: >
+          Every other institution must persuade people to pay it; the state alone can jail you for refusing. History
+          bears this out: states began as conquering bands settling down to tax the conquered. Remove the halo and judge
+          the state by the rules you apply to everyone else: if a private group did what states do, taking, imprisoning,
+          killing, you would call it crime.
+        against:
+          - from: marxism.leninism
+            text: >
+              Abolish the state and keep private property, and the owners hire their own armed men. Your stateless order is
+              the factory town with a company police. The coercion is in the property relation, not only in the tax office.
+          - from: liberalism.classical
+            text: >
+              Without a common authority, rights have no impartial judge, and rival protection agencies become rival states.
+              Some coercion is the price of having rights at all.
+        sources:
+          - {author: Franz Oppenheimer, title: The State, year: 1908}
+          - {author: Murray N. Rothbard, title: Anatomy of the State, year: 1974}
+          - {author: Albert Jay Nock, title: "Our Enemy, the State", year: 1935}
+        traditions:
+          defining: [libertarianism.ancap, libertarianism.paleo]
+          typical: [anarchism.individualist]
+          contested: [libertarianism.minarchist, libertarianism.objectivist]
+          rejects: [liberalism.social, socdem.nordic, marxism.ml, conservatism.cst, fascism.italian]
+        presupposes: [property.private.natural-right]
+        excludes: [state.nature.neutral-arbiter, state.nature.organic-nation, state.nature.ordained-authority]
+        tension: [state.nature.necessary-evil]
+        tags: []
+        analysis:
+          gains: [finance-capital, industrial-capital, landed-capital]
+          pays: [core-workers, reserve-army, peripheral-workers]
+          mechanism: >
+            Defining taxation as theft and the state as the only aggressor leaves private property and contract as the only
+            legitimate order: redistribution, labor law and public services fall, while existing titles, including those made
+            by past conquest, are treated as clean and enforced by private agencies the owners pay for.
+          drain: sustains
+          law_of_value: extends
+          disputed: Left-libertarians and mutualists share the analysis of the state but hold that most large fortunes depend on state privilege and would dissolve with it.
+
+      - id: state.nature.hierarchy-as-such
+        label: The state is a hierarchy of command that rules whoever holds it
+        claim: The state is a centralized hierarchy of command separate from society; whoever captures it, including a workers' party, becomes a new ruling minority.
+        voiced: >
+          The state is authority, domination and force, organized from above. Put workers at its head and they cease to
+          be workers and look down on the people from the heights of the state. They will represent not the people but
+          themselves. Freedom cannot be built with the tools of domination.
+        you: You see the state as a machine of command that changes those who run it, so you would replace it rather than capture it.
+        because: >
+          Bakunin predicted in 1873 that a "people's state" would produce a new class of rulers drawn from former workers and
+          learned experts; the twentieth century supplied the evidence. The state is not just a tool of the owning class but
+          a form of power with its own interest in expansion: it monopolizes decision, disarms the people and turns
+          delegates into rulers. Organizations built for liberation must therefore already be free: federations of councils,
+          unions and communes, with delegates recallable and mandated.
+        against:
+          - from: marxism.leninism
+            text: >
+              Every revolution is the most authoritarian act there is: one part of the population imposes its will on the other
+              with rifles. Refuse to organize that power and the old owners organize it for you, as in Spain, where the CNT's
+              refusal left the state to others and its ministers joined the Republican government anyway.
+          - from: liberalism.classical
+            text: >
+              A world without a common legal authority is a world where the strongest band rules. Federations of communes will
+              need courts, and courts need enforcement.
+        sources:
+          - {author: Mikhail Bakunin, title: Statism and Anarchy, year: 1873}
+          - {author: Peter Kropotkin, title: "The State: Its Historic Role", year: 1897}
+          - {author: Rudolf Rocker, title: "Anarcho-Syndicalism: Theory and Practice", year: 1938}
+        traditions:
+          defining: [anarchism.communist, anarchism.syndicalist, anarchism.platformist]
+          typical: [anarchism.insurrectionary, anarchism.green, anarchism.communalism, anarchism.confederalism, anarchism.feminist, anarchism.christian, zapatismo]
+          contested: [marxism.council-communism, marxism.autonomism]
+          rejects: [marxism.leninism, marxism.ml, liberalism.classical, conservatism.burkean, fascism.italian]
+        presupposes: []
+        excludes: [state.nature.neutral-arbiter, state.nature.ordained-authority, state.nature.organic-nation]
+        tension: [state.nature.class-instrument]
+        tags: [debate.marx-bakunin]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, landed-capital, professional-managerial]
+          mechanism: >
+            Refusing to take state power directs workers into unions, communes and self-managed collectives, which in
+            Catalonia and Aragon in 1936 took over factories and land directly; where the old state survives, it keeps the
+            army and the banks and can reverse those gains.
+          drain: reduces
+          law_of_value: suspends
+          disputed: Leninists argue the refusal to hold state power leaves capital's state standing; anarchists answer that the Leninist state itself became the new owner.
+          consciousness: hegemonic
+
+      - id: state.nature.ordained-authority
+        label: Political authority comes from God and serves the common good
+        claim: Political authority is part of the order God made; it exists to serve the common good, and rulers answer to a law above their own will.
+        voiced: >
+          There is no authority except from God. Man is by nature a social and political animal, and a community needs
+          a ruling power to direct it to the common good, as a body needs a head. The people may designate rulers, but the
+          right to command comes from above, and a ruler who commands against God's law has no claim on conscience.
+        you: You see the authority to govern as given by God for the common good, binding on subjects and on rulers alike.
+        because: >
+          If authority came only from consent or force, nothing could judge it: a majority could vote for anything and a
+          tyrant could do anything. Grounding authority in God's order both dignifies it, so that obedience is not mere
+          submission to another person, and limits it, because the ruler is a servant of the common good and is bound by
+          natural law. That limit is what made it possible to condemn tyrants long before modern constitutions.
+        against:
+          - from: liberalism.classical
+            text: >
+              God gave no one a title to rule. Filmer's divine right was answered by Locke: all are born free and equal, and
+              authority is a trust from the governed, revocable when betrayed.
+          - from: anarchism.christian
+            text: >
+              The Gospel forbids what the state does: to judge, to swear oaths, to kill. Christ refused the kingdoms of this
+              world. A Christian owes the state no obedience where it commands violence.
+        sources:
+          - {author: Paul of Tarsus, title: Letter to the Romans, year: "c. 57", note: chapter 13}
+          - {author: Thomas Aquinas, title: De Regno (On Kingship), year: "c. 1267"}
+          - {author: Leo XIII, title: Diuturnum (On the Origin of Civil Power), year: 1881}
+          - {author: Augustine of Hippo, title: The City of God, year: "c. 426"}
+        traditions:
+          defining: [conservatism.integralism, conservatism.reactionary]
+          typical: [conservatism.cst, conservatism.monarchist, conservatism.traditionalist, conservatism.evangelical-right, religious.islamism-khomeinist, religious.islamism-brotherhood]
+          contested: [conservatism.christian-democracy, religious.liberation-theology]
+          rejects: [liberalism.classical, libertarianism.ancap, marxism.leninism, anarchism.communist, anarchism.christian]
+        presupposes: []
+        excludes: [state.nature.organized-aggression, state.nature.hierarchy-as-such]
+        tension: [state.nature.neutral-arbiter]
+        tags: [religion]
+        analysis:
+          gains: [landed-capital, petty-bourgeoisie]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Grounding authority in divine order binds rulers to a higher law (just wage, limits on usury, care for the poor)
+            but also binds subjects to obedience; historically the confessional order secured landed and church property and
+            treated strikes and revolt as sin against legitimate authority.
+          drain: none
+          law_of_value: regulates
+          disputed: Liberation theologians read the same tradition as authorizing resistance to rulers who betray the poor; the reading depends on who interprets the common good.
+
+      - id: state.nature.settler-structure
+        label: In settler countries the state is an apparatus for holding taken land
+        claim: Where a country was founded by settlement, the state is first of all the apparatus that took the land from its original peoples and keeps holding it.
+        voiced: >
+          Invasion is a structure, not an event. The settler state did not happen once; it happens every day, in every
+          title deed, pipeline permit and police raid on a reserve. It cannot be reformed into justice, because its
+          existence is the injustice. Recognition from it is just another way of managing us.
+        you: You see the state in settler countries as built on taken land and still organized to keep it, whatever else it does.
+        because: >
+          Look at what the state protects at any cost: the land base. Treaties are broken when resources are found;
+          courts recognize indigenous title only where it does not interfere with development. Liberal recognition,
+          Coulthard shows, reproduces the colonial relation by asking the colonized to seek approval from the colonizer.
+          The same structure appears in very different settler states, which shows the cause is settlement itself, not
+          this or that government.
+        against:
+          - from: liberalism.egalitarian
+            text: >
+              Historic wrongs call for repair, but today's citizens of every origin share one political community. A state
+              that guarantees equal rights to all and negotiates treaties honestly is a just state, whatever its origin.
+          - from: marxism.classical
+            text: >
+              Settler and indigenous workers are both exploited by the same capital. Treating the settler working class as one
+              bloc with its bosses abandons the common class struggle that alone can return the land to those who work it.
+        sources:
+          - {author: Patrick Wolfe, title: Settler Colonialism and the Elimination of the Native, year: 2006}
+          - {author: Glen Sean Coulthard, title: "Red Skin, White Masks: Rejecting the Colonial Politics of Recognition", year: 2014}
+          - {author: J. Sakai, title: "Settlers: The Mythology of the White Proletariat", year: 1983}
+        traditions:
+          defining: [nationalism.indigenous-sovereignty]
+          typical: [nationalism.decolonial, marxism.third-worldism, nationalism.palestinian, nationalism.black-nationalism]
+          contested: [marxism.black-radical, marxism.ml]
+          rejects: [liberalism.classical, conservatism.national, nationalism.zionism-revisionist, nationalism.zionism-labor]
+        presupposes: [settler.colonialism.ongoing-structure]
+        excludes: [state.nature.neutral-arbiter]
+        tension: []
+        tags: [land, settler]
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: [landed-capital, finance-capital, industrial-capital]
+          mechanism: >
+            Treating the settler state as an apparatus of land seizure shifts demands from inclusion to return of land and
+            jurisdiction, which puts title to resource-bearing land (mines, pipelines, farms, water) in question and blocks
+            extraction projects that core capital finances.
+          drain: reduces
+          law_of_value: suspends
+          disputed: Class-first Marxists hold settler workers are exploited and their interests lie with the indigenous; Sakai and Third Worldists hold settler workers form a privileged stratum that shares in the land.
+
+      - id: state.nature.necessary-evil
+        label: The state is a necessary evil to be kept small
+        claim: The state exists to protect life, liberty and property; it is needed for that and dangerous beyond it, so it should be strictly limited.
+        voiced: >
+          Government, even in its best state, is but a necessary evil. If men were angels, no government would be
+          necessary. Since we are not, we need one to protect our rights, and then we need chains on it, because those
+          who govern are no angels either.
+        you: You accept that a state is needed to protect people's rights, and you want it held to that job and no more.
+        because: >
+          Rights need an impartial judge and an enforcer, or each person ends up judge in their own cause and the strongest
+          prevails. But every power given to government will be used by the people who hold it, for themselves. The answer
+          is a state confined to defense, courts and police, with powers divided so that ambition checks ambition. Nozick
+          showed that such a minimal state can arise without violating anyone's rights; anything more does.
+        against:
+          - from: libertarianism.ancap
+            text: >
+              Once you grant one agency a monopoly on force and a right to tax, you have given it the means to grow. Every
+              minimal state has become a maximal one. Competing protection agencies do the job without the monopoly.
+          - from: socdem.nordic
+            text: >
+              Courts and police protect the property of those who already have it. A state that does nothing about poverty,
+              illness and unemployment is not neutral; it leaves most people exposed to the power of employers and landlords.
+        sources:
+          - {author: Thomas Paine, title: Common Sense, year: 1776}
+          - {author: James Madison, title: The Federalist No. 51, year: 1788}
+          - {author: Robert Nozick, title: "Anarchy, State, and Utopia", year: 1974}
+        traditions:
+          defining: [libertarianism.minarchist, liberalism.classical]
+          typical: [libertarianism.objectivist, conservatism.fusionism, liberalism.austrian, commonsense.live-and-let-live]
+          contested: [liberalism.chicago, libertarianism.georgist]
+          rejects: [socdem.nordic, marxism.ml, conservatism.integralism, fascism.italian, libertarianism.ancap]
+        presupposes: [property.private.natural-right]
+        excludes: [state.nature.organic-nation]
+        tension: [state.nature.organized-aggression]
+        tags: []
+        analysis:
+          gains: [industrial-capital, finance-capital, petty-bourgeoisie]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Confining the state to defense, courts and police keeps enforcement of property and contract public while ending
+            public provision, so the cost of security is shared by all taxpayers and the returns to property stay private.
+          drain: sustains
+          law_of_value: extends
+
+      - id: state.nature.captured
+        label: The state should serve the public but has been captured by insiders
+        claim: The state could serve ordinary people, but moneyed interests, lobbies and a political class have taken it over and run it for themselves.
+        voiced: >
+          The government isn't working for us. It works for the donors, the banks, the lobbyists and the career politicians
+          who go through the revolving door. Get the money out, drain the swamp, and it could work for ordinary people again.
+        you: You think the state has been taken over by insiders and money, and that it could work for ordinary people if they took it back.
+        because: >
+          The evidence is strong: in the United States, policy tracks the preferences of economic elites and organized
+          business, while average citizens' preferences have almost no independent effect. Regulators are staffed by the
+          industries they regulate. This is not a conspiracy theory but the predictable result of concentrated interests
+          facing a dispersed public, as both left and right have shown.
+        against:
+          - from: marxism.leninism
+            text: >
+              "Capture" assumes there was once a clean state for the people to take back. There never was. The lobbyist is a
+              symptom; the dependence of the state on private capital is the disease, and no ethics law cures it.
+          - from: liberalism.chicago
+            text: >
+              The more the state can hand out, the more it will be captured. The cure for capture is a smaller state with less
+              to sell, not a better-intentioned one.
+        sources:
+          - {author: Martin Gilens and Benjamin I. Page, title: "Testing Theories of American Politics: Elites, Interest Groups, and Average Citizens", year: 2014}
+          - {author: George J. Stigler, title: The Theory of Economic Regulation, year: 1971}
+          - {author: C. Wright Mills, title: The Power Elite, year: 1956}
+        traditions:
+          defining: [commonsense.rigged]
+          typical: [commonsense.anti-politics, conservatism.right-populism, socdem.left-populism, conservatism.paleo]
+          contested: [socdem.democratic-socialism, liberalism.chicago, liberalism.progressive]
+          rejects: [marxism.leninism, liberalism.technocratic]
+        presupposes: [cs.rigged.system-rigged]
+        excludes: []
+        tension: [state.nature.class-instrument, state.nature.neutral-arbiter]
+        tags: [commonsense]
+        analysis:
+          gains: [petty-bourgeoisie, professional-managerial]
+          pays: [finance-capital]
+          mechanism: >
+            Blaming capture directs anger at particular donors, cronies or officials; it fuels anti-corruption drives and
+            campaign-finance rules that shift rents between fractions of capital and their political allies without changing
+            who owns production.
+          drain: none
+          law_of_value: none
+          disputed: Left populists (Laclau, Mouffe) hold that anger at "the elite" can be built into a class program; Leninists hold it stays at the level of moral outrage unless organized.
+          consciousness: economic-corporate
+
+      - id: state.nature.sovereign-order
+        label: The state is the sovereign power that ends the war of all against all
+        claim: The state is the power that monopolizes the final decision over violence; without it there is no peace, no property and no law to argue about.
+        voiced: >
+          Without a common power to keep them all in awe, men live in a war of every one against every one, and life is
+          solitary, poor, nasty, brutish and short. Covenants without the sword are but words. The state is the one who
+          decides, above all who is friend and who is enemy. Everything else rests on that decision.
+        you: You see the state first as the power that keeps the peace by holding the final say over force, whatever else it does.
+        because: >
+          Every legal order, liberal or socialist, rests on someone's ability to enforce it. Rights, contracts and elections
+          all presuppose a state that has already won the monopoly on violence. Where that monopoly breaks, as in civil
+          wars from Lebanon to Libya, every other good disappears with it. Order is therefore the first political good, and
+          the first question about any state is whether it can keep it.
+        against:
+          - from: liberalism.classical
+            text: >
+              To escape polecats and foxes, Hobbes would have us be devoured by lions. A sovereign with unlimited power is
+              the greatest threat to life there is; order must be bound by law and consent.
+          - from: marxism.leninism
+            text: >
+              "Order" is always some class's order. The peace the sovereign keeps is the peace of the owners, and the war of
+              all against all is a portrait of market society, not of human nature.
+        sources:
+          - {author: Thomas Hobbes, title: Leviathan, year: 1651}
+          - {author: Carl Schmitt, title: The Concept of the Political, year: 1932}
+          - {author: Max Weber, title: Politics as a Vocation, year: 1919}
+        traditions:
+          defining: [conservatism.reactionary]
+          typical: [fascism.neoreaction, conservatism.national]
+          contested: [liberalism.classical, conservatism.burkean, nationalism.kemalism]
+          rejects: [anarchism.communist, libertarianism.ancap, liberalism.republican]
+        presupposes: []
+        excludes: [state.nature.hierarchy-as-such, state.nature.organized-aggression]
+        tension: [state.nature.necessary-evil]
+        tags: [realism]
+        analysis:
+          gains: [finance-capital, industrial-capital, landed-capital]
+          pays: [core-workers, reserve-army, peasantry]
+          mechanism: >
+            Making order the first good grants whoever holds force a broad license against strikes, riots, land occupations and
+            insurgency; this protects whatever property relations exist at the moment of decision.
+          drain: none
+          law_of_value: none
+          disputed: In peripheral states the same doctrine of sovereign order has been invoked against foreign intervention, so its effect on the drain depends on whose sovereignty is in question.
+
+      - id: state.nature.developmental
+        label: The state is the engine of a nation's catch-up
+        claim: "The state's central task is to lead national development: to direct investment, build industry and close the gap with the rich countries."
+        voiced: >
+          No country ever grew rich by free trade alone. Britain protected its industry, then kicked away the ladder.
+          A late-developing nation needs a state that plans, protects infant industry, directs credit and disciplines
+          both capital and labor toward the national project. The state is the general staff of development.
+        you: You see the state above all as the organizer of a country's economic rise against the head start of the rich nations.
+        because: >
+          Every successful late developer, from Germany and Japan to South Korea, Taiwan and China, used a strong state to
+          channel savings into industry, protect new sectors and push firms into export markets. Markets left to themselves
+          lock poor countries into raw materials. Only a state with the capacity to plan can break that pattern, and its
+          legitimacy rests on results the people can see.
+        against:
+          - from: liberalism.chicago
+            text: >
+              For every Korea there are dozens of developmental states that built white elephants and enriched cronies. Planners
+              cannot pick winners; open markets and secure property did more for growth than ministries.
+          - from: marxism.third-worldism
+            text: >
+              Catch-up inside the capitalist world market changes a country's rank, not the hierarchy. Without delinking, the
+              developmental state builds a national bourgeoisie and leaves the law of worldwide value in command.
+        sources:
+          - {author: Friedrich List, title: The National System of Political Economy, year: 1841}
+          - {author: Chalmers Johnson, title: MITI and the Japanese Miracle, year: 1982}
+          - {author: Alice H. Amsden, title: "Asia's Next Giant: South Korea and Late Industrialization", year: 1989}
+          - {author: Sun Yat-sen, title: The Three Principles of the People, year: 1924}
+        traditions:
+          defining: [nationalism.developmental-state]
+          typical: [nationalism.nasserism, nationalism.kemalism, nationalism.three-principles, nationalism.peronism, marxism.scc, nationalism.baathism]
+          contested: [nationalism.bolivarianism, marxism.african-socialism, conservatism.gaullism]
+          rejects: [liberalism.chicago, liberalism.austrian, libertarianism.ancap]
+        presupposes: [development.path.import-substitution]
+        excludes: [state.nature.organized-aggression]
+        tension: [state.nature.necessary-evil]
+        tags: [global-south]
+        analysis:
+          gains: [industrial-capital, professional-managerial, peripheral-workers]
+          pays: [comprador-capital, landed-capital, peasantry]
+          mechanism: >
+            A developmental state disciplines capital with directed credit, tariffs and export targets and often carries out
+            land reform, shifting surplus from landlords and import merchants to national industry; wages and peasant incomes
+            are held down during catch-up to fund investment.
+          drain: reduces
+          law_of_value: regulates
+          disputed: Dependency theorists split on whether East Asian catch-up shows the drain can be escaped inside the world market (Amsden) or only by countries the core chose to let rise for Cold War reasons (Amin, Frank).
+
+      - id: state.nature.democratic-lever
+        label: The state reflects organized power, and workers can win it as a lever
+        claim: The state reflects the balance of organized power in society; where workers are organized in unions and a labor party, they can win it and use it to tame capital.
+        voiced: >
+          The state is not the property of any class forever. It is a lever, and the question is whose hands are on it.
+          With strong unions and a labor party that wins majorities, we can use it to build full employment, universal
+          welfare and a people's home, step by step, without bloodshed.
+        you: You see the state as something organized working people can win at the ballot box and use, step by step, against the power of capital.
+        because: >
+          The record is there: in Sweden, Norway and Denmark, labor movements with high union density and long governments
+          used the state to decommodify health, education and pensions and to compress wages. Class power is resources:
+          votes, members, organization. Where workers mobilize those resources, the same state that once broke strikes
+          becomes the guarantor of collective bargaining.
+        against:
+          - from: marxism.leninism
+            text: >
+              The lever works until it touches ownership. When the Meidner plan proposed transferring firms to wage-earner
+              funds, capital mobilized and the plan was buried. You can win the government and still not hold the state.
+          - from: liberalism.austrian
+            text: >
+              Using the state to reshape society according to one movement's plan concentrates power and squeezes out the
+              initiative that created the wealth being redistributed.
+        sources:
+          - {author: Walter Korpi, title: The Democratic Class Struggle, year: 1983}
+          - {author: Gøsta Esping-Andersen, title: "Politics Against Markets: The Social Democratic Road to Power", year: 1985}
+          - {author: Eduard Bernstein, title: Evolutionary Socialism, year: 1899}
+        traditions:
+          defining: [socdem.nordic, socdem.revisionist]
+          typical: [socdem.labourism, socdem.keynesian, socdem.fabian, socdem.democratic-socialism]
+          contested: [marxism.eurocommunism, marxism.austromarxism, socdem.left-populism]
+          rejects: [marxism.leninism, marxism.left-communism, anarchism.syndicalist, libertarianism.ancap]
+        presupposes: [elections.role.main-road]
+        excludes: [state.nature.class-instrument]
+        tension: [state.nature.relative-autonomy]
+        tags: [social-democracy]
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Using the state as a lever raises the wage share and funds universal services through taxes on wages and profits,
+            while ownership of firms stays private and capital keeps the option of investment strikes and relocation.
+          drain: sustains
+          law_of_value: regulates
+          disputed: Third Worldists (Emmanuel, Amin) hold that core welfare gains rest partly on unequal exchange; power-resource theorists (Korpi) attribute them to domestic labor organization.
+          consciousness: class-economic
+
+  - id: democracy.form
+    domain: state
+    layer: horizon
+    question: What form should rule by the people take?
+    plain: Who should make the big decisions, and how should they be chosen?
+    short: the form of rule
+    importance: 3
+    region: state
+    positions:
+      - id: democracy.form.representative
+        label: Elected representatives, competing parties, constitutional limits
+        claim: The people should choose representatives in regular competitive elections, under a constitution that divides power and protects minorities and individual rights.
+        voiced: >
+          A republic refines and enlarges the public views by passing them through a chosen body of citizens. Your
+          representative owes you not only his industry but his judgment. Elections let the people throw rulers out
+          without bloodshed; the constitution stops any majority, or any ruler, from doing whatever it likes.
+        you: You want the people to choose representatives in free competitive elections and a constitution that stops any majority or leader from ruling unchecked.
+        because: >
+          In large societies direct rule is impossible and dangerous: crowds can be stampeded, and majorities can trample
+          minorities. Representation filters passions through deliberation and gives the governed a peaceful way to remove
+          those who govern, which no other system guarantees. Divided powers and courts make sure that even the winners
+          of an election are bound by law. Its record in protecting rights and allowing peaceful change is unmatched.
+        against:
+          - from: marxism.leninism
+            text: >
+              To decide once every few years which member of the ruling class is to misrepresent the people in parliament:
+              that is the essence of bourgeois parliamentarism. Money chooses the candidates before the voters do.
+          - from: anarchism.communalism
+            text: >
+              The moment you hand your power to a representative, you no longer hold it. Representation professionalizes
+              politics and turns citizens into spectators.
+        sources:
+          - {author: James Madison, title: The Federalist No. 10, year: 1787}
+          - {author: John Stuart Mill, title: Considerations on Representative Government, year: 1861}
+          - {author: Edmund Burke, title: Speech to the Electors of Bristol, year: 1774}
+          - {author: Joseph A. Schumpeter, title: "Capitalism, Socialism and Democracy", year: 1942}
+        traditions:
+          defining: [liberalism.classical, liberalism.social, liberalism.egalitarian]
+          typical: [socdem.nordic, socdem.keynesian, socdem.third-way, conservatism.christian-democracy, conservatism.burkean, conservatism.one-nation, liberalism.internationalist, conservatism.fusionism, religious.post-islamism]
+          contested: [socdem.democratic-socialism, conservatism.national, liberalism.republican]
+          rejects: [marxism.ml, marxism.council-communism, anarchism.communist, conservatism.integralism, religious.islamism-khomeinist, fascism.italian, conservatism.monarchist]
+        presupposes: []
+        excludes: [democracy.form.council, democracy.form.guardianship-of-jurist]
+        tension: [democracy.form.direct]
+        tags: [liberal-democracy]
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Mass elections are expensive: parties depend on donors and media, and representatives come mostly from
+            professional and propertied strata, so policy tracks organized wealth; universal suffrage has also given labor
+            parties a route to welfare gains where unions were strong.
+          drain: sustains
+          law_of_value: none
+          disputed: Social democrats hold representative institutions are neutral enough for labor to win; Leninists hold they are the best political shell of capital.
+
+      - id: democracy.form.council
+        label: Workers' councils of recallable delegates
+        claim: Power should rest with councils of delegates elected in workplaces and neighborhoods, mandated by those who chose them, recallable at any time, and paid no more than a worker's wage.
+        voiced: >
+          The Commune was a working body, executive and legislative at the same time. Delegates from every shop floor and
+          every district, bound by mandate, recallable at any moment, on workmen's wages. Not parliament over the people,
+          but the people organized as the state. All power to the councils.
+        you: You want power held by councils of delegates from workplaces and neighborhoods, who can be recalled the moment they stop doing what they were sent to do.
+        because: >
+          Councils arise wherever workers move against the old order: Paris 1871, Russia 1905 and 1917, Germany 1918,
+          Hungary 1956, Chile's cordones in 1972. They seat people where they produce, so owners have no seat as owners,
+          and they erase the line between those who decide and those who carry out. Recall and workers' wages stop a
+          political class from forming. Even critics of socialism, like Arendt, saw the councils as the lost treasure of
+          the revolutionary tradition.
+        against:
+          - from: marxism.ml
+            text: >
+              Councils without a party are captured by whoever is best organized. In December 1918 the German congress of
+              councils voted its own power away to a National Assembly, and the counter-revolution followed.
+          - from: liberalism.classical
+            text: >
+              Councils of producers exclude everyone who is not a producer, and pyramids of indirect delegates end with a
+              small committee at the top that no voter ever chose.
+        sources:
+          - {author: Karl Marx, title: The Civil War in France, year: 1871}
+          - {author: Anton Pannekoek, title: Workers' Councils, year: 1946}
+          - {author: Hannah Arendt, title: On Revolution, year: 1963}
+        traditions:
+          defining: [marxism.council-communism]
+          typical: [marxism.luxemburgism, marxism.trotskyism, marxism.autonomism, anarchism.syndicalist, marxism.leninism]
+          contested: [marxism.ml, anarchism.communist, socdem.democratic-socialism]
+          rejects: [liberalism.classical, conservatism.burkean, conservatism.integralism, liberalism.technocratic]
+        presupposes: [history.motor.class-struggle]
+        excludes: [democracy.form.monarchy, democracy.form.epistocracy, democracy.form.representative]
+        tension: [democracy.form.democratic-centralism]
+        tags: [council-democracy]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, landed-capital, professional-managerial]
+          mechanism: >
+            Councils seat delegates by workplace, so owners have no seat as owners, and recall ties delegates to those who sent
+            them; decisions on production and investment move to bodies elected by the people who do the work.
+          drain: reduces
+          law_of_value: suspends
+          consciousness: hegemonic
+
+      - id: democracy.form.direct
+        label: The people decide directly, in assemblies and referendums
+        claim: Citizens should make the main decisions themselves, in local assemblies and popular votes, with officials as administrators bound by those decisions.
+        voiced: >
+          Sovereignty cannot be represented, for the same reason it cannot be alienated. The people of England think they
+          are free; they are free only during the election of members of parliament. Let the people meet, deliberate and
+          decide, in the commune, the assembly, the village. Those who lead must lead by obeying.
+        you: You want ordinary people to decide the main questions themselves in assemblies and popular votes, with officials doing what they decide.
+        because: >
+          Only a law you helped make binds you without making you subject to someone else's will. Assemblies educate
+          citizens into self-government; politics stops being a profession and becomes part of everyday life. The
+          experience is real and widespread: Swiss cantons, New England town meetings, Zapatista communities that rotate
+          their governing councils, Rojava's communes. Scale can be handled by confederation of assemblies, not by handing
+          power upward.
+        against:
+          - from: liberalism.classical
+            text: >
+              Direct majorities have no brake. Referendums are captured by whoever funds the campaign, and assemblies by
+              whoever has the time and the loudest voice.
+          - from: marxism.ml
+            text: >
+              The assembly cannot plan a national economy or fight off an invasion. Without a party that unifies the class
+              and centralizes decisions, direct rule breaks into localism, and the best-organized local notables take over.
+        sources:
+          - {author: Jean-Jacques Rousseau, title: The Social Contract, year: 1762}
+          - {author: Murray Bookchin, title: "The Next Revolution: Popular Assemblies and the Promise of Direct Democracy", year: 2015}
+          - {author: Ejército Zapatista de Liberación Nacional, title: Sixth Declaration of the Lacandon Jungle, year: 2005}
+        traditions:
+          defining: [anarchism.communalism, anarchism.confederalism, zapatismo]
+          typical: [anarchism.communist, anarchism.syndicalist, anarchism.green, nationalism.indigenous-sovereignty]
+          contested: [conservatism.right-populism, liberalism.republican, commonsense.anti-politics, nationalism.gandhian]
+          rejects: [liberalism.technocratic, marxism.ml, conservatism.monarchist, religious.political-meritocracy]
+        presupposes: []
+        excludes: [democracy.form.epistocracy, democracy.form.monarchy]
+        tension: [democracy.form.representative]
+        tags: [direct-democracy]
+        analysis:
+          gains: [peasantry, core-workers, petty-bourgeoisie]
+          pays: [professional-managerial, finance-capital]
+          mechanism: >
+            Assemblies favor those with time to attend and referendums favor whoever funds campaigns; where assemblies control
+            land, water and cooperatives (Zapatista and Rojava communes), they move decisions over local resources from
+            owners and officials to residents.
+          drain: none
+          law_of_value: none
+          disputed: Materialists split on whether communal direct rule can hold against capital at national scale (Bookchin, Öcalan) or needs a centralized workers' state (Leninists).
+
+      - id: democracy.form.democratic-centralism
+        label: Democratic centralism under the leadership of the working-class party
+        claim: The working people should rule through elected people's congresses or soviets led by a single party organized on democratic centralism, with open debate before a decision and united action after it.
+        voiced: >
+          Freedom of discussion, unity of action. Elections at every level, the minority submits to the majority, the lower
+          to the higher. The party takes ideas from the masses, concentrates them, and returns them to the masses until they
+          embrace them as their own. That is people's democracy: rule by the majority over the former exploiters.
+        you: You want the working majority to rule through elected councils led by one party that debates freely, decides by majority, and then acts as one.
+        because: >
+          A class that has just taken power faces armed owners, foreign intervention and sabotage. Competing parties funded
+          from abroad and by the old wealth would reopen every decision. Democratic centralism joins mass participation, from
+          the workplace up to the national congress, with the unity needed to plan an economy and defend a revolution. Its
+          record includes land reform, mass literacy and industrialization at a speed no parliamentary system achieved, and
+          states such as China, Cuba and Vietnam still use it.
+        against:
+          - from: marxism.luxemburgism
+            text: >
+              Freedom only for the supporters of the government, only for members of one party, is no freedom at all.
+              Without free elections and unrestricted debate, life in every public institution dies out, and only the
+              bureaucracy remains active.
+          - from: liberalism.classical
+            text: >
+              Where one party decides who may stand and what may be printed, the "majority" is whatever the leadership says it
+              is. There is no way to remove the rulers without breaking the system.
+        sources:
+          - {author: V. I. Lenin, title: Freedom to Criticise and Unity of Action, year: 1906}
+          - {author: Mao Zedong, title: Some Questions Concerning Methods of Leadership, year: 1943}
+          - {author: Mao Zedong, title: On the Correct Handling of Contradictions Among the People, year: 1957}
+        traditions:
+          defining: [marxism.ml, marxism.maoism, marxism.scc]
+          typical: [marxism.leninism, marxism.mlm, marxism.hoxhaism, marxism.juche, marxism.guevarism]
+          contested: [marxism.trotskyism, marxism.african-socialism, marxism.eurocommunism]
+          rejects: [liberalism.classical, liberalism.social, anarchism.communist, marxism.council-communism, marxism.luxemburgism, libertarianism.minarchist]
+        presupposes: [state.nature.class-instrument]
+        excludes: [democracy.form.monarchy, democracy.form.guardianship-of-jurist]
+        tension: [democracy.form.council]
+        tags: [party-state]
+        analysis:
+          gains: [core-workers, peasantry, peripheral-workers, professional-managerial]
+          pays: [comprador-capital, landed-capital, finance-capital]
+          mechanism: >
+            A ruling party organized this way can hold one line against foreign pressure and domestic owners (land reform,
+            nationalization, planning); the same structure concentrates decisions in party committees whose members can become
+            a privileged stratum with its own interests.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            Trotskyists, council communists and later Maoists hold that party bureaucracies became a new ruling stratum; ML
+            traditions hold the party remained the instrument of the working class; China's reform era divides materialists on
+            whether the same form now manages capitalism or builds socialism through markets.
+          consciousness: hegemonic
+
+      - id: democracy.form.sortition
+        label: Citizens chosen by lot to deliberate and decide
+        claim: Some or all public offices should be filled by lot from among ordinary citizens, who deliberate together with access to evidence and then decide.
+        voiced: >
+          Election is aristocratic, the lot is democratic: Aristotle knew it and Athens practiced it. Elections pick the rich,
+          the famous and the well-connected. Draw a random sample of citizens, give them time and experts, and they will reach
+          wiser and fairer decisions than career politicians chasing donors.
+        you: You want ordinary people chosen at random to deliberate and decide, instead of leaving decisions to people who campaign for office.
+        because: >
+          Elections reward money, fame and ambition, so legislatures over-represent lawyers, owners and the well-educated.
+          A random sample mirrors the population by class, sex and region and cannot be bought in advance. Citizens'
+          assemblies in Ireland on marriage and abortion, and in British Columbia on electoral reform, showed ordinary people
+          handling hard questions carefully. Rotation by lot also prevents a permanent political class.
+        against:
+          - from: liberalism.classical
+            text: >
+              People chosen by lot answer to no one. They cannot be voted out, and they depend on the experts and staff who
+              set their agenda.
+          - from: marxism.leninism
+            text: >
+              A random sample of individuals is still a set of atoms. Class power is collective and organized. A lottery adds no
+              organization to the working class, and the organizers who frame the questions decide the outcome.
+        sources:
+          - {author: Aristotle, title: Politics, year: "350 BCE", note: "c."}
+          - {author: Bernard Manin, title: The Principles of Representative Government, year: 1995, note: "French original; English 1997"}
+          - {author: David Van Reybrouck, title: Against Elections, year: 2013}
+        traditions:
+          defining: []
+          typical: [liberalism.republican]
+          contested: [marxism.analytical, ecology.degrowth, socdem.democratic-socialism, anarchism.communalism]
+          rejects: [liberalism.technocratic, marxism.ml, conservatism.monarchist]
+        presupposes: []
+        excludes: [democracy.form.epistocracy, democracy.form.monarchy]
+        tension: [democracy.form.representative]
+        tags: [sortition]
+        analysis:
+          gains: [core-workers, reserve-army]
+          pays: [professional-managerial]
+          mechanism: >
+            Drawing seats by lot gives wage earners a share of seats close to their share of the population and cuts the return
+            on campaign donations; where assemblies are only advisory, officials and the experts who set their agenda keep the
+            final say.
+          drain: none
+          law_of_value: none
+
+      - id: democracy.form.epistocracy
+        label: Those who know more should have more say
+        claim: Political power should be weighted toward people with proven knowledge, through tests for voters, extra votes for the educated, or bodies of experts with real power.
+        voiced: >
+          We don't let people who know nothing about medicine perform surgery. Yet we let voters who cannot name their
+          representatives decide war, trade and monetary policy. Bad voters impose costs on everyone else. Giving more
+          weight to the competent is not elitism; it is protection against incompetent rule.
+        you: You think people who understand the issues should have more say over them than people who don't.
+        because: >
+          Survey data show most voters are badly misinformed on basic facts, and their errors are systematic, not random,
+          so they do not cancel out. Political decisions are exercises of power over others; people have a right not to be
+          subjected to incompetent decisions. Mill himself proposed extra votes for the educated. Central banks and
+          constitutional courts already show how insulating decisions from voters can improve them.
+        against:
+          - from: socdem.democratic-socialism
+            text: >
+              Who sets the test? Knowledge tracks class, race and region. Weighted voting would hand power to the people who
+              already have it, under the cover of competence.
+          - from: liberalism.republican
+            text: >
+              Citizens are not patients. Self-government is valuable because it is self-government; being ruled by wiser masters
+              is still being ruled.
+        sources:
+          - {author: Jason Brennan, title: Against Democracy, year: 2016}
+          - {author: John Stuart Mill, title: Considerations on Representative Government, year: 1861}
+        traditions:
+          defining: [technology.technocracy]
+          typical: [liberalism.technocratic]
+          contested: [liberalism.utilitarian, liberalism.classical, technology.effective-altruism, libertarianism.minarchist]
+          rejects: [socdem.democratic-socialism, marxism.ml, anarchism.communalism, conservatism.right-populism, liberalism.republican]
+        presupposes: []
+        excludes: [democracy.form.direct, democracy.form.sortition, democracy.form.council]
+        tension: [democracy.form.representative]
+        tags: []
+        analysis:
+          gains: [professional-managerial, finance-capital]
+          pays: [core-workers, reserve-army, peasantry]
+          mechanism: >
+            Weighting votes or offices by tested knowledge moves power to the credentialed, whose schooling tracks parental
+            income; insulated bodies such as independent central banks have set policy for creditors against wage growth.
+          drain: sustains
+          law_of_value: none
+
+      - id: democracy.form.political-meritocracy
+        label: Officials chosen by exam and record, accountable for results
+        claim: Leaders should be selected through examinations and decades of tested performance in lower posts, with popular participation at the local level and results as the measure of good rule.
+        voiced: >
+          Exalt the worthy and employ the capable. Democracy at the bottom, experimentation in the middle, meritocracy at the
+          top. A leader who has governed a village, a county and a province and proved himself at each stage is better qualified
+          than one who won a television debate. The people judge by whether life gets better.
+        you: You want leaders chosen for proven ability over long careers, and judged by whether they make people's lives better.
+        because: >
+          Elections select for campaigning skill and short horizons; governing a large country needs long experience,
+          knowledge and a view across generations. China's cadre system promotes officials by performance through many levels,
+          a practice rooted in the imperial examinations, and lifted hundreds of millions out of poverty. Confucian tradition
+          holds that rule is for the people even if not by them, and that rulers who fail them lose the mandate.
+        against:
+          - from: liberalism.social
+            text: >
+              Who judges the judges? Without free elections and a free press, "merit" means pleasing superiors, and failures
+              such as a famine or a cover-up cannot be corrected until it is too late.
+          - from: marxism.trotskyism
+            text: >
+              A self-selecting stratum of officials judged by its own metrics is a bureaucracy, whatever its exams. Its interests
+              are not the workers' interests.
+        sources:
+          - {author: Daniel A. Bell, title: "The China Model: Political Meritocracy and the Limits of Democracy", year: 2015}
+          - {author: Jiang Qing, title: "A Confucian Constitutional Order", year: 2013}
+          - {author: Mencius, title: Mencius, year: "300 BCE", note: "c."}
+        traditions:
+          defining: [religious.political-meritocracy, religious.confucian]
+          typical: [nationalism.developmental-state]
+          contested: [marxism.scc, nationalism.three-principles, liberalism.technocratic]
+          rejects: [liberalism.classical, liberalism.social, anarchism.communalism, conservatism.right-populism]
+        presupposes: []
+        excludes: [democracy.form.direct]
+        tension: [democracy.form.representative, democracy.form.democratic-centralism]
+        tags: [global-south, confucian]
+        analysis:
+          gains: [professional-managerial, industrial-capital]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >
+            Promoting officials by measured performance builds a cadre class whose careers depend on the targets set from
+            above; where growth is the target, local officials favor investors and requisition farmland, and where poverty
+            reduction is the target, resources flow to the rural poor.
+          drain: none
+          law_of_value: regulates
+          disputed: The Communist Party of China describes its system as whole-process people's democracy, not meritocracy; Bell's label is contested inside China and out.
+
+      - id: democracy.form.monarchy
+        label: A hereditary monarch above party
+        claim: Supreme authority should rest with a hereditary monarch who stands above party and faction and embodies the continuity of the nation.
+        voiced: >
+          A king does not need to win the next election. He inherits the realm and must hand it on, so he thinks in
+          generations, not in terms of four years. Above the parties stands someone who belongs to no party. Democracy is
+          rule by the people's temporary caretakers; monarchy is rule by the owner who must keep the house standing.
+        you: You want a hereditary monarch above party politics as the anchor of the nation.
+        because: >
+          Elected rulers have every incentive to spend the future to win today; a hereditary ruler has the incentive of an
+          owner to preserve the capital of the realm. A crown above party also gives a nation a unity that partisan presidents
+          cannot. Maistre saw that constitutions are not made on paper but grow from history and faith; the throne is their
+          living expression. Monarchies from Morocco to Thailand to the Gulf remain among the most stable states in their regions.
+        against:
+          - from: liberalism.classical
+            text: >
+              Birth is no qualification to rule. The owner of a realm treats its people as property, and history is full of
+              mad, weak and cruel heirs whom no one could remove except by revolt.
+          - from: marxism.leninism
+            text: >
+              The throne stands on the landed estates and the church. "Above party" means above the people's reach, and in the
+              Gulf it means above the oil revenue that the royal family distributes as it pleases.
+        sources:
+          - {author: Joseph de Maistre, title: Considerations on France, year: 1797}
+          - {author: Hans-Hermann Hoppe, title: "Democracy: The God That Failed", year: 2001}
+          - {author: Robert Filmer, title: Patriarcha, year: 1680}
+        traditions:
+          defining: [conservatism.monarchist, conservatism.reactionary]
+          typical: [fascism.neoreaction]
+          contested: [conservatism.integralism, libertarianism.paleo, conservatism.traditionalist, fascism.traditionalist]
+          rejects: [liberalism.classical, liberalism.republican, marxism.leninism, anarchism.communist, nationalism.civic]
+        presupposes: [state.nature.ordained-authority]
+        excludes: [democracy.form.council, democracy.form.direct, democracy.form.sortition, democracy.form.democratic-centralism]
+        tension: [democracy.form.representative]
+        tags: []
+        analysis:
+          gains: [landed-capital, finance-capital]
+          pays: [core-workers, reserve-army, peasantry]
+          mechanism: >
+            Hereditary rule ties sovereignty to one family's property and to the landed, clerical and military estates that
+            support it; in the Gulf monarchies oil rents pass through royal households and are recycled into core financial
+            markets and arms purchases.
+          drain: sustains
+          law_of_value: none
+
+      - id: democracy.form.guardianship-of-jurist
+        label: Government under the guardianship of the Islamic jurist
+        claim: Government should be guided by God's law, with a senior jurist and religious councils holding final authority over elected bodies.
+        voiced: >
+          Sovereignty belongs to God, and the law is His. In the absence of the Imam, the just and learned jurist holds the
+          guardianship of the community. The people elect a president and a parliament, but no law may contradict Islam,
+          and the faqih ensures it. This is Islamic government: neither East nor West.
+        you: You want elected bodies to govern within God's law, with a senior religious jurist holding final authority to keep them within it.
+        because: >
+          If law comes from God, those who know His law best must guard its application; otherwise the state drifts toward
+          the corruption and dependency that marked the Shah's rule. Khomeini argued that the Prophet and the Imams governed
+          and that the duty to implement Islamic law did not lapse with their absence. The Islamic Republic combines popular
+          election with this guardianship and has kept its independence from both superpowers.
+        against:
+          - from: religious.post-islamism
+            text: >
+              The jurist's guardianship has no firm basis in Shia tradition; leading ayatollahs rejected it. Faith is corrupted
+              when clerics hold state power, and the people's vote becomes a formality the Guardian Council filters.
+          - from: liberalism.social
+            text: >
+              Vetting candidates by religious councils and placing an unelected jurist over the elected makes the people's
+              choice conditional on clerical approval.
+        sources:
+          - {author: Ruhollah Khomeini, title: Islamic Government (Hokumat-e Eslami), year: 1970}
+          - {author: Assembly of Experts for the Constitution, title: Constitution of the Islamic Republic of Iran, year: 1979}
+        traditions:
+          defining: [religious.islamism-khomeinist]
+          typical: []
+          contested: [religious.islamism-brotherhood, religious.islamic-socialism]
+          rejects: [religious.post-islamism, liberalism.classical, marxism.ml, religious.salafism-quietist, socdem.democratic-socialism]
+        presupposes: [state.nature.ordained-authority]
+        excludes: [democracy.form.representative, democracy.form.democratic-centralism, democracy.form.confessional-state]
+        tension: []
+        tags: [theocracy, global-south]
+        analysis:
+          gains: [petty-bourgeoisie, peasantry]
+          pays: [core-workers, comprador-capital]
+          mechanism: >
+            After 1979 property of the Shah's circle passed to revolutionary foundations (bonyads) and later the Revolutionary
+            Guards, which with bazaar merchants who backed the clergy became major owners; rural services expanded while
+            independent unions and the left were suppressed.
+          drain: reduces
+          law_of_value: regulates
+          disputed: The Tudeh party initially read the revolution as anti-imperialist and backed the Islamic Republic until it was banned in 1983; other Iranian Marxists read the state as clerical capitalism from the start.
+
+      - id: democracy.form.confessional-state
+        label: A state that recognizes the true faith and orders politics to it
+        claim: The state should publicly recognize the true religion and order its laws to humanity's final end, with temporal power subordinate to spiritual power in spiritual matters.
+        voiced: >
+          Man has two ends, natural and supernatural, and the temporal power must be subordinate to the spiritual as the
+          body to the soul. Rulers may be lay and chosen in many ways, but a state that pretends to be neutral about God is
+          not neutral; it has chosen secularism. Christ is King of nations, not only of hearts.
+        you: You want the state to acknowledge the true faith publicly and shape its laws toward it, with the Church's authority above the state's in matters of the soul.
+        because: >
+          Every political order teaches some view of the good; liberal neutrality only hides its own. Since human beings are
+          made for God, a politics that ignores this orders them toward lesser goods and leaves them to the market and the
+          appetites. The Church's traditional teaching, from Gelasius to Leo XIII, holds that the two powers are distinct but
+          that the lower serves the higher, as the integralist manual of Crean and Fimister restates.
+        against:
+          - from: conservatism.christian-democracy
+            text: >
+              The Church itself, at the Second Vatican Council, affirmed religious liberty as grounded in human dignity. Coerced
+              faith is no faith, and confessional states such as Franco's Spain discredited the Church for generations.
+          - from: liberalism.classical
+            text: >
+              Faith cannot be compelled by magistrates. Joining church and state makes the state a tool of the clergy and the
+              church a tool of the state.
+        sources:
+          - {author: Leo XIII, title: Immortale Dei (On the Christian Constitution of States), year: 1885}
+          - {author: Thomas Crean and Alan Fimister, title: "Integralism: A Manual of Political Philosophy", year: 2020}
+        traditions:
+          defining: [conservatism.integralism]
+          typical: [conservatism.reactionary]
+          contested: [conservatism.postliberal, conservatism.traditionalist, fascism.clerical]
+          rejects: [conservatism.christian-democracy, liberalism.classical, liberalism.social, marxism.ml]
+        presupposes: [state.nature.ordained-authority]
+        excludes: [democracy.form.guardianship-of-jurist]
+        tension: [democracy.form.representative]
+        tags: [theocracy, religion]
+        analysis:
+          gains: [landed-capital, petty-bourgeoisie]
+          pays: [core-workers]
+          mechanism: >
+            Subordinating law to Catholic moral doctrine shapes marriage, schooling and censorship; its economic teaching
+            restrains usury and calls for a just wage, but the confessional states of the twentieth century (Spain, Portugal,
+            Austria 1934) banned independent unions and protected landed property.
+          drain: none
+          law_of_value: regulates
+          disputed: Integralists hold those states were not integralist in the full sense; distributists hold a confessional order would favor small proprietors over capital.

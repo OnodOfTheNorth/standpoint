@@ -1,0 +1,1439 @@
+problematics:
+  # ------------------------------------------------------------------
+  - id: cs.politicians
+    domain: commonsense
+    layer: method
+    question: Are politicians all the same?
+    plain: Are politicians basically all the same, and in it for themselves?
+    short: politicians
+    importance: 2
+    positions:
+      - id: cs.politicians.all-crooks
+        label: They're all the same, and all crooked
+        claim: "Politicians are all alike: they say what gets them elected, then look after themselves and their friends."
+        voiced: "They're all the same. Promise you the earth before the election, then it's expenses, jobs for their mates and a nice seat on a board when they retire."
+        you: "You think politicians are basically all the same, and mostly in it for themselves."
+        because: >
+          Experience backs it up: promises broken by every party, scandals on every side, politicians who
+          walk straight into well-paid jobs with the companies they regulated. Whoever wins, life for
+          ordinary people goes on much the same. Expecting honesty from that trade is naive; treating
+          them all with suspicion is simple prudence.
+        against:
+          - from: liberalism.social
+            text: >
+              Some fought for public health care and civil rights at real cost to themselves. Lumping them
+              together lets the worst off the hook and drives decent people out of public life.
+          - from: marxism.leninism
+            text: >
+              Personal crookedness is the least of it. Even honest politicians serve the class that funds
+              parties and owns the economy; calling them all crooks blames characters for what the system
+              does.
+        sources:
+          - {author: John R. Hibbing and Elizabeth Theiss-Morse, title: Stealth Democracy, year: 2002, note: "describes this view"}
+          - {author: Colin Hay, title: Why We Hate Politics, year: 2007}
+          - {author: Peter Mair, title: "Ruling the Void: The Hollowing of Western Democracy", year: 2013}
+        traditions:
+          defining: [commonsense.anti-politics]
+          typical: [commonsense.rigged, conservatism.right-populism, commonsense.declinist]
+          contested: [anarchism.insurrectionary, libertarianism.ancap]
+          rejects: [liberalism.social, socdem.labourism, liberalism.technocratic]
+        presupposes: []
+        excludes: [cs.politicians.some-are-decent]
+        tension: [elections.role.main-road]
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Writing off all politicians leads people to stop voting, joining and pressing, which leaves the
+            field to organized money that lobbies whoever wins; it aims anger at personal corruption rather
+            than at the interests politicians serve.
+          drain: none
+          law_of_value: none
+          method: idealist
+
+      - id: cs.politicians.bought
+        label: They're not all the same; they serve whoever pays them
+        claim: "Politicians mostly do what their donors and backers want; follow the money and you know how they will vote."
+        voiced: "It's not that they're all the same, it's that they're all bought. Look at who funds the campaign and you'll know who they work for."
+        you: "You think politicians mostly serve whoever pays for their campaigns."
+        because: >
+          Campaigns cost money, and the money comes overwhelmingly from the wealthy and from business.
+          Studies of policy show that what affluent people and business groups want becomes law far more
+          often than what most voters want. Politicians who take the money know who to thank. Fix the
+          money and you fix much of politics.
+        against:
+          - from: liberalism.chicago
+            text: >
+              The problem is not donors but a state with favors to sell. Shrink what government can hand
+              out and the money stops chasing politicians.
+          - from: marxism.leninism
+            text: >
+              Take away every donation and governments would still depend on capitalists' willingness to
+              invest. A government that frightens capital faces a strike of investment, not just a loss of
+              donors.
+        sources:
+          - {author: Thomas Ferguson, title: "Golden Rule: The Investment Theory of Party Competition", year: 1995}
+          - {author: Lawrence Lessig, title: "Republic, Lost", year: 2011}
+          - {author: Martin Gilens and Benjamin I. Page, title: "Testing Theories of American Politics: Elites, Interest Groups, and Average Citizens", year: 2014}
+        traditions:
+          defining: []
+          typical: [commonsense.rigged, socdem.democratic-socialism, conservatism.right-populism, socdem.left-populism, liberalism.progressive]
+          contested: [liberalism.chicago, libertarianism.minarchist]
+          rejects: [liberalism.technocratic]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [finance-capital]
+          mechanism: >
+            Seeing politicians as bought points to concrete fixes (cutting the money link, backing
+            member-funded candidates) that reduce the purchase of policy by finance and big business; it
+            tends to stop at donations and leaves untouched any government's dependence on investors'
+            confidence.
+          drain: none
+          law_of_value: none
+          method: mixed
+
+      - id: cs.politicians.some-are-decent
+        label: Not all the same; some are decent and worth backing
+        claim: "Politicians differ a great deal in character and commitment, and electing honest, capable ones makes a real difference."
+        voiced: "Not all the same, no. Some are in it for the right reasons. Find them, vote for them, hold them to it."
+        you: "You think some politicians are genuinely decent, and that it matters who you vote for."
+        because: >
+          Politics is a vocation as well as a trade. History has real reformers who sacrificed careers for
+          principles, and the difference between an honest administration and a corrupt one is felt in
+          every public service. Cynicism is self-fulfilling: if voters expect nothing, they get nothing.
+        against:
+          - from: commonsense.anti-politics
+            text: >
+              They all seem decent before they're elected. Then the party, the lobbyists and the job offers
+              get to them.
+          - from: marxism.leninism
+            text: >
+              Personal honesty changes little inside a machine that rewards service to capital. An honest
+              minister who cuts wages because the markets demand it is still cutting wages.
+        sources:
+          - {author: Max Weber, title: Politics as a Vocation, year: 1919}
+          - {author: Bernard Crick, title: In Defence of Politics, year: 1962}
+        traditions:
+          defining: []
+          typical: [liberalism.social, liberalism.progressive, conservatism.christian-democracy, socdem.labourism, conservatism.one-nation]
+          contested: [liberalism.technocratic]
+          rejects: [commonsense.anti-politics, anarchism.insurrectionary]
+        presupposes: []
+        excludes: [cs.politicians.all-crooks]
+        tension: []
+        analysis:
+          gains: [professional-managerial]
+          pays: [core-workers]
+          mechanism: >
+            Trusting that good individuals can be elected keeps people engaged and holds officeholders to
+            account for conduct; it judges governments by character, so a scandal-free government that cuts
+            wages or services still counts as a success.
+          drain: none
+          law_of_value: none
+          method: idealist
+
+      - id: cs.politicians.differ-by-whom-they-serve
+        label: They differ by whose side they're on
+        claim: "Politicians and parties differ mainly in which groups they represent, workers or owners, and that matters more than personality."
+        voiced: "Forget the personalities. Ask whose side they're on. Some parties were built by working people, some by employers. Judge them by who they deliver for."
+        you: "You think what matters about politicians is which groups they actually represent, more than what they're like as people."
+        because: >
+          Parties have social bases: the unions built labor parties, business and landowners built
+          conservative ones, and their records in office follow those bases on wages, taxes and public
+          services. Elections are a democratic form of class struggle. Knowing who a party answers to
+          predicts what it will do better than any speech.
+        against:
+          - from: commonsense.anti-politics
+            text: >
+              They all say they're on your side. Then the labor leader is at the same dinners as the
+              banker.
+          - from: marxism.left-communism
+            text: >
+              Every party that governs a capitalist state manages capitalism; labor parties in office have
+              imposed austerity as faithfully as their rivals. The difference is of form, not content.
+        sources:
+          - {author: Seymour Martin Lipset, title: Political Man, year: 1960}
+          - {author: Ralph Miliband, title: The State in Capitalist Society, year: 1969}
+        traditions:
+          defining: [socdem.labourism]
+          typical: [marxism.classical, socdem.democratic-socialism, marxism.ml, socdem.nordic, conservatism.one-nation]
+          contested: [marxism.left-communism, anarchism.syndicalist]
+          rejects: [commonsense.anti-politics, liberalism.technocratic]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [core-workers]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Reading parties by whom they represent directs workers toward building and controlling a party
+            of their own and judging leaders by their record for that base, which raises labor's leverage
+            over wages and taxes.
+          drain: none
+          law_of_value: none
+          consciousness: class-economic
+          method: materialist
+
+      - id: cs.politicians.office-makes-them
+        label: They end up the same because the job makes them so
+        claim: "Whoever goes into office ends up the same, because the position shapes the person; the problem is the office, not the people in it."
+        voiced: "Send your best mate to parliament and in five years he'll talk like them. It's not the people; it's the job. Power changes whoever holds it."
+        you: "You think the system turns whoever gets into power into the same kind of politician, so changing the faces doesn't help."
+        because: >
+          Officeholders depend on their party, on civil servants, on donors and on media goodwill; their
+          salary and status separate them from the people who elected them. Former workers sent to
+          parliament stop being workers. The pressures are the same for everyone, so the results are too.
+        against:
+          - from: socdem.labourism
+            text: >
+              Concrete differences are real: some governments built public health systems, others sold
+              them off. Saying the office makes them all the same ignores what actually happened.
+          - from: marxism.leninism
+            text: >
+              Representatives bound to a disciplined party, paid a worker's wage and subject to recall can
+              serve as tribunes of the people inside hostile institutions.
+        sources:
+          - {author: Mikhail Bakunin, title: Statism and Anarchy, year: 1873}
+          - {author: Robert Michels, title: Political Parties, year: 1911}
+        traditions:
+          defining: []
+          typical: [anarchism.communist, anarchism.syndicalist, anarchism.insurrectionary, marxism.left-communism, commonsense.rigged]
+          contested: [marxism.council-communism, commonsense.anti-politics]
+          rejects: [socdem.labourism, liberalism.social]
+        presupposes: []
+        excludes: [cs.politicians.some-are-decent]
+        tension: []
+        analysis:
+          gains: [core-workers]
+          pays: [professional-managerial]
+          mechanism: >
+            Holding that office remakes whoever holds it shifts attention from candidates to the position,
+            and toward organization outside the electoral system; if none is built, it collapses into an
+            abstention that leaves the field to organized wealth.
+          drain: none
+          law_of_value: none
+          method: materialist
+
+  # ------------------------------------------------------------------
+  - id: cs.hard-work
+    domain: commonsense
+    layer: analysis
+    question: Does hard work get you ahead?
+    plain: If you work hard, will you get ahead in life?
+    short: hard work and getting ahead
+    importance: 2
+    positions:
+      - id: cs.hard-work.effort-pays
+        label: Yes, work hard and you'll get ahead
+        claim: "Hard work gets you ahead; most people who fail to get on did not try hard enough or made bad choices."
+        voiced: "Nobody handed me anything. I got up early, worked hard, saved and kept my nose clean. Anyone can do it if they put the effort in."
+        you: "You think hard work pays off, and that people who don't get ahead mostly didn't try hard enough."
+        because: >
+          Many people have risen from nothing by effort, thrift and discipline, including immigrants who
+          arrived with no money or language. Effort is the one thing everyone controls. Telling people the
+          deck is stacked takes away the one thing that helps them, while telling them effort pays makes
+          them more likely to make it.
+        against:
+          - from: marxism.classical
+            text: >
+              The hardest work is done by the worst-paid: cleaners, fruit pickers, care workers, miners.
+              If effort decided reward, they would be rich.
+          - from: liberalism.egalitarian
+            text: >
+              The capacity for effort itself depends on fortunate circumstances: a stable home, good health,
+              encouragement. Rewarding effort as if it were wholly one's own rewards luck.
+        sources:
+          - {author: Samuel Smiles, title: Self-Help, year: 1859}
+          - {author: Benjamin Franklin, title: The Way to Wealth, year: 1758}
+          - {author: Horatio Alger, title: Ragged Dick, year: 1868}
+        traditions:
+          defining: [commonsense.self-reliance]
+          typical: [libertarianism.objectivist, conservatism.fusionism, conservatism.evangelical-right, liberalism.classical, nationalism.developmental-state]
+          contested: [religious.confucian, commonsense.look-after-your-own]
+          rejects: [marxism.classical, liberalism.egalitarian, socdem.democratic-socialism]
+        presupposes: []
+        excludes: [cs.hard-work.others-profit]
+        tension: [inequality.justice.luck-unjust]
+        analysis:
+          gains: [finance-capital, industrial-capital, petty-bourgeoisie, professional-managerial]
+          pays: [reserve-army, core-workers, peripheral-workers]
+          mechanism: >
+            If effort decides outcomes, low pay and unemployment are personal failures, which weakens
+            demands for wage floors, benefits and unions and lets employers present pay as earned desert.
+          drain: none
+          law_of_value: extends
+          method: idealist
+
+      - id: cs.hard-work.not-anymore
+        label: It used to; it doesn't anymore
+        claim: "Hard work used to get you ahead, but not anymore: wages, housing and secure jobs have moved out of reach for people who do everything right."
+        voiced: "My dad bought a house and raised four kids on one wage from the plant. I work two jobs and can't make rent. Don't tell me it's about effort."
+        you: "You think working hard used to get people ahead, but that the deal has broken down."
+        because: >
+          The figures match what people see: the share of children who out-earn their parents has fallen
+          sharply in rich countries; house prices have risen far faster than wages; secure jobs with
+          pensions have given way to contracts, gigs and agencies. People are working as hard as their
+          parents and getting less for it.
+        against:
+          - from: liberalism.classical
+            text: >
+              By most measures living standards still rise. Nostalgia forgets who was excluded from the old
+              deal (women, minorities) and how much less people had in goods, health and choices.
+          - from: marxism.third-worldism
+            text: >
+              The old deal in the core rested on cheap goods and resources from the periphery and on the
+              threat of revolution. It cannot return for core workers alone; the question is whether they
+              look for it at others' expense.
+        sources:
+          - {author: Raj Chetty and coauthors, title: "The Fading American Dream: Trends in Absolute Income Mobility Since 1940", year: 2017}
+          - {author: Guy Standing, title: "The Precariat: The New Dangerous Class", year: 2011}
+          - {author: Anne Case and Angus Deaton, title: Deaths of Despair and the Future of Capitalism, year: 2020}
+        traditions:
+          defining: [commonsense.declinist]
+          typical: [commonsense.rigged, conservatism.right-populism, socdem.labourism, socdem.left-populism, conservatism.national]
+          contested: [socdem.democratic-socialism]
+          rejects: [liberalism.technocratic, liberalism.classical]
+        presupposes: []
+        excludes: [cs.hard-work.effort-pays]
+        tension: []
+        analysis:
+          gains: [core-workers]
+          pays: [finance-capital, landed-capital]
+          mechanism: >
+            Sensing that effort no longer pays registers the real fall in labor's share, housing access and
+            job security since the 1970s; it threatens landlords and finance if it becomes demands for rent
+            control and wages, and threatens migrants if it becomes blame.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Third Worldists hold that the old deal was funded by the drain and that its loss is the core's
+            privilege eroding; others hold it was won by core labor's own strength and lost to capital's
+            offensive.
+          method: mixed
+
+      - id: cs.hard-work.depends-where-you-start
+        label: Effort matters, but where you start matters more
+        claim: "Effort counts, but family background, schooling, connections and luck count for more; the race is not fair at the start."
+        voiced: "Sure, hard work matters. But it's a lot easier to work hard with parents who can pay for tutors and a cousin who can get you an internship."
+        you: "You think hard work matters, but where you start in life matters even more."
+        because: >
+          Children born in the bottom fifth are far less likely to reach the top than children born in the
+          top fifth, and the gap varies enormously between places, which shows it is shaped by policy and
+          not just talent. Equal opportunity requires real investment in schools, early childhood and
+          neighborhoods, and taxes on inherited advantage.
+        against:
+          - from: commonsense.self-reliance
+            text: >
+              Plenty of people rose from nothing. Blaming the start teaches people to give up before the
+              race begins.
+          - from: marxism.classical
+            text: >
+              Equal starts in an unequal race still leave most people as wage workers. Fair competition for
+              a few top jobs does not change how many jobs at the bottom there are.
+        sources:
+          - {author: John Rawls, title: A Theory of Justice, year: 1971}
+          - {author: Raj Chetty and coauthors, title: "Where is the Land of Opportunity? The Geography of Intergenerational Mobility in the United States", year: 2014}
+          - {author: Michael J. Sandel, title: The Tyranny of Merit, year: 2020}
+        traditions:
+          defining: [liberalism.egalitarian]
+          typical: [liberalism.social, socdem.nordic, liberalism.progressive, socdem.third-way, conservatism.christian-democracy]
+          contested: [socdem.democratic-socialism]
+          rejects: [libertarianism.objectivist, commonsense.self-reliance]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [professional-managerial, core-workers]
+          pays: [finance-capital, landed-capital]
+          mechanism: >
+            Treating unequal starts as the problem supports public schooling, inheritance taxes and early
+            childhood spending, paid by wealthy families; it aims at fair competition for unequal positions,
+            so the number of low-wage jobs is left as it is.
+          drain: none
+          law_of_value: regulates
+          method: mixed
+
+      - id: cs.hard-work.others-profit
+        label: Your hard work makes someone else rich
+        claim: "Hard work mostly makes money for whoever employs you; the people who work hardest are rarely the ones who get rich."
+        voiced: "The harder you work, the richer the boss gets. We do the work; they take the profit. That's the deal."
+        you: "You think working people's effort mostly ends up making their employers rich."
+        because: >
+          Workers produce more each year while their wages lag, and the difference goes to owners and
+          shareholders. A worker's extra effort on a shift raises output but not pay, which is set by the
+          labor market. The people who own businesses get rich because many others work for them, not
+          because they work harder than everyone.
+        against:
+          - from: liberalism.austrian
+            text: >
+              The owner advances wages before the product is sold, provides the tools and bears the risk of
+              loss. Profit pays for waiting and risk; without it, there would be no jobs.
+          - from: commonsense.self-reliance
+            text: >
+              If the boss has it so easy, start your own business. Most who try find out how hard it is to
+              make a payroll.
+        sources:
+          - {author: Karl Marx, title: "Capital, Volume I", year: 1867}
+          - {author: Robert Tressell, title: The Ragged-Trousered Philanthropists, year: 1914}
+        traditions:
+          defining: [marxism.classical, anarchism.syndicalist]
+          typical: [socdem.labourism, marxism.ml, socdem.democratic-socialism, anarchism.communist]
+          contested: [commonsense.rigged]
+          rejects: [liberalism.austrian, libertarianism.objectivist, commonsense.self-reliance]
+        presupposes: []
+        excludes: [cs.hard-work.effort-pays]
+        tension: [wage.nature.voluntary-exchange]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Seeing effort's fruits go to employers directs anger at the wage relation itself and toward
+            unions and strikes that raise labor's share at the expense of profit.
+          drain: none
+          law_of_value: none
+          consciousness: class-economic
+          method: materialist
+
+      - id: cs.hard-work.virtue-in-itself
+        label: Hard work is right in itself, whether or not it pays
+        claim: "Hard work is a duty and a source of dignity in itself; whether it is rewarded is not the point."
+        voiced: "You work because it's right, because it's what a decent person does. The pay is what it is. A day's honest work is something to be proud of."
+        you: "You think hard work is a good thing in itself, whatever it earns you."
+        because: >
+          Work is how people provide for their families, serve others and become who they are; it has a
+          dignity that does not depend on its price. A culture that values work only for what it pays
+          breeds resentment and idleness. Faith traditions teach that honest labor honors God, and the
+          worker deserves respect as well as a just wage.
+        against:
+          - from: marxism.autonomism
+            text: >
+              The dogma of work is the employer's best friend. A worker who takes pride in toil for its own
+              sake works harder for less; the movement's goal is less work, not more.
+          - from: liberalism.utilitarian
+            text: >
+              Work is a means to well-being, not an end. Sanctifying labor for its own sake has justified
+              endless hours, child labor and contempt for those who cannot work.
+        sources:
+          - {author: Pope John Paul II, title: Laborem Exercens, year: 1981}
+          - {author: Max Weber, title: The Protestant Ethic and the Spirit of Capitalism, year: 1905, note: "a historical account of the work ethic"}
+        traditions:
+          defining: []
+          typical: [conservatism.cst, conservatism.traditionalist, religious.confucian, commonsense.self-reliance, conservatism.christian-democracy, socdem.labourism]
+          contested: [marxism.ml]
+          rejects: [marxism.autonomism, technology.l-acc]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [industrial-capital, petty-bourgeoisie]
+          pays: [core-workers]
+          mechanism: >
+            Valuing work for its own sake sustains effort and pride whatever the pay, which employers
+            receive as willing labor at low wages; in its Catholic form the same principle also grounds the
+            claim to a just wage and a right to work.
+          drain: none
+          law_of_value: none
+          method: idealist
+
+      - id: cs.hard-work.god-rewards
+        label: God rewards faith and diligence with prosperity
+        claim: "God rewards the faithful and hardworking with prosperity; wealth is a blessing and a sign of favor."
+        voiced: "God wants you to prosper. Sow in faith, work hard, give your tithe, and He will open the windows of heaven. Poverty is not His will for you."
+        you: "You believe God rewards faith and hard work with success in this life."
+        because: >
+          Scripture is full of promises of blessing to those who are faithful and diligent. Believers who
+          have risen from poverty testify to it. A faith that expects good things gives people hope,
+          discipline and a community that supports them, which is why it has spread fastest among the poor
+          in Africa, Latin America and Asia.
+        against:
+          - from: religious.liberation-theology
+            text: >
+              Jesus blessed the poor and warned the rich. A theology that reads wealth as God's favor
+              baptizes the market and tells the poor their poverty is their fault.
+          - from: marxism.classical
+            text: >
+              The tithes flow upward from poor congregations to rich pastors. The one reliably prosperous
+              believer is the one at the pulpit.
+        sources:
+          - {author: Russell H. Conwell, title: Acres of Diamonds, year: 1890}
+          - {author: Kate Bowler, title: "Blessed: A History of the American Prosperity Gospel", year: 2013}
+        traditions:
+          defining: []
+          typical: []
+          contested: [conservatism.evangelical-right]
+          rejects: [religious.liberation-theology, conservatism.cst, marxism.classical]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [petty-bourgeoisie, finance-capital]
+          pays: [reserve-army, peripheral-workers]
+          mechanism: >
+            Treating wealth as God's favor sanctifies the rich and makes poverty a spiritual failing; in
+            poor countries it channels tithes from the poor to church owners and turns hope away from
+            collective claims on employers and the state.
+          drain: none
+          law_of_value: extends
+          method: idealist
+
+  # ------------------------------------------------------------------
+  - id: cs.decline
+    domain: commonsense
+    layer: analysis
+    question: Has the country gone downhill?
+    plain: Is the country worse than it used to be, and if so, why?
+    short: national decline
+    importance: 2
+    positions:
+      - id: cs.decline.moral-decay
+        label: Yes, morals, family and faith have decayed
+        claim: "The country has gone downhill because morals, family life, faith and discipline have broken down."
+        voiced: "Nobody respects anything anymore. Families broken up, churches empty, kids with no discipline, people with no shame. That's where it all went wrong."
+        you: "You think the country has gone downhill because people have lost the morals, faith and family values that held it together."
+        because: >
+          Family breakdown, addiction, loneliness and crime follow the weakening of the institutions that
+          taught self-control and duty. When churches empty and families split, children grow up without
+          guidance and communities without trust. Economic explanations miss that poor communities with
+          strong families and faith did better than richer ones without them.
+        against:
+          - from: liberalism.progressive
+            text: >
+              The good old days were good for some. Segregation, marital rape, closeted lives and beaten
+              children were part of that moral order.
+          - from: marxism.classical
+            text: >
+              Families and communities broke when the jobs left. Moral decline follows material ruin, and
+              preaching to the ruined does not bring the factory back.
+        sources:
+          - {author: Robert H. Bork, title: Slouching Towards Gomorrah, year: 1996}
+          - {author: Gertrude Himmelfarb, title: The De-Moralization of Society, year: 1995}
+          - {author: Patrick J. Buchanan, title: The Death of the West, year: 2002}
+        traditions:
+          defining: [commonsense.declinist]
+          typical: [conservatism.traditionalist, conservatism.evangelical-right, conservatism.paleo, religious.salafism-quietist, conservatism.integralism]
+          contested: [conservatism.postliberal]
+          rejects: [liberalism.progressive, marxism.classical, feminism.liberal]
+        presupposes: []
+        excludes: [cs.decline.never-golden]
+        tension: []
+        analysis:
+          gains: [finance-capital, industrial-capital, petty-bourgeoisie]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Explaining decline by moral decay points remedies at families, schools and sexual conduct,
+            which costs owners nothing, while the closures, wage cuts and debt that broke communities stay
+            out of the account.
+          drain: none
+          law_of_value: none
+          method: idealist
+
+      - id: cs.decline.jobs-gone
+        label: Yes, the good jobs and the industry left
+        claim: "The country has gone downhill because the industry and the good jobs left, and towns that depended on them were hollowed out."
+        voiced: "This was a working town. The mill, the mine, the plant: all gone. Now it's warehouses, payday lenders and boarded-up shops. That's what happened."
+        you: "You think the country went downhill when the good jobs and the industry went away."
+        because: >
+          The decline is visible on the map: the regions that lost manufacturing and mining lost their
+          wages, their tax base and their young people. Deaths from drugs, drink and suicide rose fastest
+          there. Nothing replaced the jobs that sustained families and pride, and those who made the
+          decisions did not live where the consequences landed.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Most manufacturing jobs were lost to productivity, not trade, and consumers gained from cheap
+              imports. Trying to bring old jobs back by protection makes everyone poorer.
+          - from: marxism.third-worldism
+            text: >
+              The jobs went where labor is cheaper because core capital sought higher profit. Defending core
+              jobs alone defends a privileged place in the world division of labor; the real enemy is the
+              owners who moved, not the workers who were hired.
+        sources:
+          - {author: Barry Bluestone and Bennett Harrison, title: The Deindustrialization of America, year: 1982}
+          - {author: Anne Case and Angus Deaton, title: Deaths of Despair and the Future of Capitalism, year: 2020}
+        traditions:
+          defining: [commonsense.declinist]
+          typical: [socdem.labourism, conservatism.right-populism, conservatism.national, socdem.democratic-socialism, socdem.left-populism]
+          contested: [marxism.third-worldism]
+          rejects: [liberalism.chicago, liberalism.technocratic]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [core-workers]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Naming deindustrialization points at a real loss: capital moved production to lower-wage
+            countries and automated, raising profits while core industrial workers lost pay and security;
+            whether owners pay (capital controls, public investment) or foreign workers pay (tariffs alone)
+            depends on the remedy sought.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            Third Worldists hold that core reindustrialization by protection sustains the drain; labor-left
+            economists hold that rebuilding core industry under public control need not.
+          method: materialist
+
+      - id: cs.decline.outsiders
+        label: Yes, too many outsiders have changed the country
+        claim: "The country has gone downhill because immigration has changed it too much, too fast, without anyone asking the people who live there."
+        voiced: "I don't recognize my own street. Nobody asked us. You can't say anything about it without being called a racist, but we can all see what's happened."
+        you: "You think immigration has changed the country too much and too fast, and that's part of why it's gone downhill."
+        because: >
+          People have a reasonable attachment to the places they grew up and the ways of life there. Rapid
+          immigration strains housing, schools and wages at the bottom, while the professionals who
+          championed it rarely live with the effects. Ordinary people who object have been dismissed as
+          bigots instead of being heard.
+        against:
+          - from: marxism.classical
+            text: >
+              Migrants did not close the factory or raise the rent. The employer who hires them below the
+              rate and the landlord who packs them in did; blame the people with power over both of you.
+          - from: liberalism.classical
+            text: >
+              Immigrants raise output, fill shortages and pay taxes, and the country "before" was itself
+              made by earlier arrivals who were resented in their turn.
+        sources:
+          - {author: David Goodhart, title: The Road to Somewhere, year: 2017}
+          - {author: Patrick J. Buchanan, title: The Death of the West, year: 2002}
+        traditions:
+          defining: []
+          typical: [conservatism.right-populism, conservatism.national, fascism.identitarian, nationalism.ethnic, commonsense.look-after-your-own, commonsense.declinist, conservatism.paleo]
+          contested: [socdem.labourism, nationalism.hindutva]
+          rejects: [liberalism.classical, liberalism.progressive, marxism.classical, anarchism.communist]
+        presupposes: []
+        excludes: []
+        tension: [solidarity.basis.shared-class]
+        analysis:
+          gains: [industrial-capital, landed-capital, petty-bourgeoisie]
+          pays: [reserve-army, peripheral-workers, core-workers]
+          mechanism: >
+            Blaming decline on newcomers aims anger at the poorest workers, while employers who use migrant
+            labor to cut wages and landlords who profit from shortage escape it; border rules that deny
+            migrants rights make their labor cheaper, which deepens the undercutting it complains of.
+          drain: sustains
+          law_of_value: none
+          method: idealist
+
+      - id: cs.decline.sold-out
+        label: Yes, the people at the top sold the country out
+        claim: "The country has gone downhill because the people at the top (big business, banks, politicians, a global elite) sold it out for their own gain."
+        voiced: "They shipped the jobs abroad, sold off what we owned, bailed out the banks and told us to tighten our belts. The elite doesn't care about this country; they care about their portfolios."
+        you: "You think the people at the top sold the country out for their own profit."
+        because: >
+          Every decision that hollowed out the country was made by someone: trade deals written for
+          investors, public assets sold cheap, banks rescued while homeowners were evicted. Those who
+          decided got richer and moved their money where they liked. Loyalty to the country ended at the
+          top before it ended anywhere else.
+        against:
+          - from: marxism.classical
+            text: >
+              Capital has no country; a patriotic owner would have moved the plant too, because competition
+              forced it. Treating this as betrayal implies a loyal capitalism that never existed.
+          - from: liberalism.technocratic
+            text: >
+              "The elite" is a villain for every taste. Trade and privatization were voted for, and brought
+              gains as well as losses; conspiracy talk makes policy debate impossible.
+        sources:
+          - {author: Christopher Lasch, title: The Revolt of the Elites and the Betrayal of Democracy, year: 1995}
+          - {author: Michael Lind, title: The New Class War, year: 2020}
+        traditions:
+          defining: [commonsense.rigged]
+          typical: [conservatism.right-populism, socdem.left-populism, nationalism.peronism, conservatism.national, commonsense.declinist]
+          contested: [socdem.democratic-socialism, conservatism.postliberal]
+          rejects: [liberalism.technocratic, liberalism.chicago]
+        presupposes: []
+        excludes: [cs.decline.never-golden]
+        tension: []
+        analysis:
+          gains: [core-workers, petty-bourgeoisie]
+          pays: [finance-capital, professional-managerial]
+          mechanism: >
+            Naming a selling-out elite turns anger upward; aimed at owners of capital it supports capital
+            controls, renationalization and taxes on finance, while aimed at a cultural "globalist" stratum
+            it spares owners and lands on professionals and minorities.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            Materialists differ on whether this sentiment is a resource for the left (left populists) or
+            mainly organized by the right (most Marxists after 2016).
+          method: mixed
+
+      - id: cs.decline.after-public-economy
+        label: Yes, since the public economy was dismantled
+        claim: "Life got worse after the old public economy was dismantled: when state jobs, free services and price controls gave way to privatization and debt."
+        voiced: "Before, there was work, school was free, the clinic had medicine, bread had a fixed price. Then came the reforms, the IMF, the privatizations. Now we have shops full of things nobody can afford."
+        you: "You think life was better when the state provided jobs and services, before the reforms and privatizations."
+        because: >
+          In much of Eastern Europe, Africa and Latin America, liberalization brought falling life
+          expectancy, closed factories and lost pensions; in Africa, incomes stagnated for two decades of
+          structural adjustment. People who lived through both periods compare from experience. The
+          collapse of public provision was a policy choice, made to service debts and satisfy lenders.
+        against:
+          - from: liberalism.technocratic
+            text: >
+              Nostalgia forgets the queues, the shortages, the one-party rule and the debts that made the
+              old model unsustainable. Growth returned where reforms were carried through.
+          - from: liberalism.classical
+            text: >
+              The old public economy was paid for with borrowed money and rationed goods. What collapsed was
+              an illusion of security, not security itself.
+        sources:
+          - {author: Kristen Ghodsee, title: "Red Hangover: Legacies of Twentieth-Century Communism", year: 2017}
+          - {author: Thandika Mkandawire and Charles C. Soludo, title: "Our Continent, Our Future: African Perspectives on Structural Adjustment", year: 1999}
+          - {author: Ha-Joon Chang, title: Bad Samaritans, year: 2007}
+        traditions:
+          defining: []
+          typical: [commonsense.declinist, marxism.ml, nationalism.nasserism, marxism.african-socialism, marxism.dependency, nationalism.bolivarianism]
+          contested: [nationalism.developmental-state]
+          rejects: [liberalism.chicago, liberalism.technocratic, liberalism.austrian]
+        presupposes: []
+        excludes: [cs.decline.never-golden]
+        tension: [development.path.integration]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >
+            Remembering public employment, price controls and free services registers a real transfer:
+            privatization and debt service moved assets and revenues to foreign creditors and local buyers,
+            and the memory sustains demands to reverse it.
+          drain: reduces
+          law_of_value: suspends
+          method: materialist
+
+      - id: cs.decline.never-golden
+        label: No, the past wasn't better; we remember it wrong
+        claim: "The country has not gone downhill overall: on most measures life is better than it was, and the golden age people remember did not exist."
+        voiced: "Every generation thinks the country's going to the dogs. Look at the numbers: longer lives, safer streets than the nineties, rights our grandparents never had."
+        you: "You think the past wasn't really better, and that people remember it through rose-tinted glasses."
+        because: >
+          Life expectancy, literacy, safety at work and rights for women and minorities have improved in
+          most countries over the last half century. The past people miss was worse for most of those who
+          lived it. Decline stories are old, recurrent and mostly mistaken, and they are used to sell
+          restoration of hierarchies that were dismantled for good reasons.
+        against:
+          - from: commonsense.declinist
+            text: >
+              Statistics say life is better while my town is boarded up. Averages don't live here.
+          - from: socdem.labourism
+            text: >
+              Averages hide that wages for the bottom half have stalled for decades while housing and
+              insecurity have worsened. Some things improved; for many, the material deal got worse.
+        sources:
+          - {author: Stephanie Coontz, title: The Way We Never Were, year: 1992}
+          - {author: Hans Rosling, Ola Rosling and Anna Rosling Rönnlund, title: Factfulness, year: 2018}
+        traditions:
+          defining: []
+          typical: [liberalism.progressive, liberalism.technocratic, liberalism.classical, ecology.ecomodernism]
+          contested: [liberalism.social]
+          rejects: [commonsense.declinist, conservatism.traditionalist, conservatism.right-populism]
+        presupposes: []
+        excludes: [cs.decline.moral-decay, cs.decline.sold-out, cs.decline.after-public-economy]
+        tension: []
+        analysis:
+          gains: [professional-managerial, finance-capital]
+          pays: [core-workers]
+          mechanism: >
+            Countering nostalgia with aggregate improvement defends real gains in health and rights, but the
+            averages bury the losses of deindustrialized regions and the bottom half, which leaves their
+            grievance to be organized by others.
+          drain: none
+          law_of_value: none
+          method: mixed
+
+  # ------------------------------------------------------------------
+  - id: cs.live-let-live
+    domain: commonsense
+    layer: horizon
+    question: Should people just be left alone to live as they like?
+    plain: As long as they're not hurting anyone, should people be left alone to live their own way?
+    short: live and let live
+    importance: 2
+    positions:
+      - id: cs.live-let-live.leave-alone
+        label: Yes, live and let live, as long as you hurt no one
+        claim: "People should be left alone to live as they choose, as long as they are not hurting anyone else."
+        voiced: "Live and let live. What people do in their own lives is their business. If it doesn't hurt anyone, leave them be."
+        you: "You think people should be free to live as they like, as long as they're not harming anyone."
+        because: >
+          Nobody knows better than you how you should live, and the record of authorities telling people
+          how to worship, love or dress is a record of cruelty and failure. The only purpose for which
+          power can rightly be used over anyone against their will is to prevent harm to others. Tolerance
+          lets people with different values live side by side in peace.
+        against:
+          - from: conservatism.postliberal
+            text: >
+              No one lives alone. A society that refuses to say what is good leaves children to the market,
+              the screen and the dealer; "leaving people alone" left them lonely.
+          - from: marxism.classical
+            text: >
+              Being "left alone" with a landlord and an employer means being left to their power. Private
+              life is not private from rent, wages and debt.
+        sources:
+          - {author: John Stuart Mill, title: On Liberty, year: 1859}
+          - {author: John Locke, title: A Letter Concerning Toleration, year: 1689}
+        traditions:
+          defining: [commonsense.live-and-let-live]
+          typical: [liberalism.classical, libertarianism.minarchist, libertarianism.ancap, liberalism.progressive, anarchism.individualist]
+          contested: [liberalism.social]
+          rejects: [conservatism.integralism, conservatism.postliberal, religious.islamism-khomeinist]
+        presupposes: []
+        excludes: [cs.live-let-live.uphold-virtue]
+        tension: []
+        analysis:
+          gains: [professional-managerial, petty-bourgeoisie, industrial-capital]
+          pays: [core-workers]
+          mechanism: >
+            Live and let live protects personal conduct (sexuality, religion, dress) from neighbors and the
+            state, which helps minorities; extended to economic life it also leaves employers' and
+            landlords' power over hours and rents beyond question.
+          drain: none
+          law_of_value: none
+          method: idealist
+
+      - id: cs.live-let-live.private-yes-public-standards
+        label: In private, yes; but public life needs shared standards
+        claim: "What people do in private is their business, but public life should keep shared standards of decency and conduct."
+        voiced: "I don't care what people get up to behind closed doors. But there's such a thing as public decency, and the rest of us shouldn't have it pushed in our faces."
+        you: "You're fine with people living as they like in private, but think public life should keep some shared standards."
+        because: >
+          A society needs a shared moral background to function: common standards of conduct in streets,
+          schools and broadcasting. Tolerating private difference is a mark of civilization; abolishing
+          all public standards dissolves the common life that makes tolerance possible. The law may rightly
+          protect a society's shared morality.
+        against:
+          - from: liberalism.progressive
+            text: >
+              "Private" tolerance with public silence means the closet. Equal citizens must be free to be
+              seen, not merely allowed to hide.
+          - from: conservatism.integralism
+            text: >
+              Vice tolerated in private spreads in public. The law teaches; a state that merely asks for
+              discretion has already conceded that it has no view of the good.
+        sources:
+          - {author: Patrick Devlin, title: The Enforcement of Morals, year: 1965}
+          - {author: Roger Scruton, title: The Meaning of Conservatism, year: 1980}
+        traditions:
+          defining: []
+          typical: [conservatism.one-nation, conservatism.burkean, conservatism.christian-democracy, communitarianism, conservatism.gaullism]
+          contested: [commonsense.live-and-let-live]
+          rejects: [liberalism.progressive, feminism.queer, conservatism.integralism]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [petty-bourgeoisie, professional-managerial]
+          pays: [reserve-army]
+          mechanism: >
+            Requiring discretion in public keeps majority norms as the public standard while tolerating
+            difference behind doors; those who can afford private space get the most latitude, while those
+            who live in public (the poor, the young, the homeless) bear the policing.
+          drain: none
+          law_of_value: none
+          method: idealist
+
+      - id: cs.live-let-live.uphold-virtue
+        label: No, society must uphold what is right
+        claim: "Society should not leave people alone to live however they like; law and community must uphold what is right and discourage what is wrong."
+        voiced: "Leaving people alone is leaving them to their worst impulses. A good society commands the good and forbids the evil, for everyone's sake."
+        you: "You think society has a duty to promote what's right, not just leave people to do as they please."
+        because: >
+          Human beings are formed by the society around them; a society that permits everything forms
+          people badly. Law and custom have always taught virtue, and the claim to neutrality is itself a
+          choice, one that favors the market and the strong. The common good includes the moral health of
+          families and young people, which the state and community must protect.
+        against:
+          - from: liberalism.classical
+            text: >
+              Whose virtue? The state that enforces your faith today enforces another tomorrow, and morality
+              police have never made anyone good, only afraid.
+          - from: commonsense.live-and-let-live
+            text: >
+              What's it to you? Mind your own business and let others mind theirs.
+        sources:
+          - {author: Adrian Vermeule, title: Common Good Constitutionalism, year: 2022}
+          - {author: Patrick J. Deneen, title: Why Liberalism Failed, year: 2018}
+          - {author: Ruhollah Khomeini, title: Islamic Government, year: 1970}
+        traditions:
+          defining: [conservatism.integralism]
+          typical: [religious.islamism-brotherhood, religious.islamism-khomeinist, conservatism.postliberal, religious.salafism-quietist, conservatism.evangelical-right, nationalism.hindutva]
+          contested: [conservatism.cst, religious.post-islamism]
+          rejects: [liberalism.classical, commonsense.live-and-let-live, libertarianism.minarchist, feminism.liberal]
+        presupposes: []
+        excludes: [cs.live-let-live.leave-alone]
+        tension: []
+        analysis:
+          gains: [landed-capital, petty-bourgeoisie]
+          pays: [reserve-army, core-workers]
+          mechanism: >
+            Making the state guardian of virtue empowers clergy, censors and morality police over private
+            life, with women, sexual minorities and dissenters bearing the enforcement; it can also bind
+            owners to duties such as usury limits and Sabbath rest.
+          drain: none
+          law_of_value: regulates
+          method: idealist
+
+      - id: cs.live-let-live.need-the-means
+        label: Being left alone means nothing without the means to live
+        claim: "Being left alone is not real liberty when you lack money, time and security; people can only live as they like if they have the means."
+        voiced: "The law, in its majestic equality, forbids rich and poor alike to sleep under bridges. Leave me alone? Give me a decent wage and a home first, then we'll talk."
+        you: "You think people can't really live as they like without enough money, time and security, so leaving them alone isn't enough."
+        because: >
+          The worker with two jobs and no savings is "free" to live as she likes only in name. Real choice
+          needs income, housing, health care and free time, and these come from collective provision and
+          from limits on the power of employers and landlords. A state that leaves the poor alone leaves
+          them to the rich.
+        against:
+          - from: libertarianism.minarchist
+            text: >
+              Provision means taxes and rules. The more the state provides, the more it decides how you
+              live; dependence on the state is not freedom either.
+          - from: liberalism.austrian
+            text: >
+              Economic control is control over all our ends. Whoever controls the means of living
+              controls the life; handing that to the state trades one master for a stronger one.
+        sources:
+          - {author: T. H. Green, title: Liberal Legislation and Freedom of Contract, year: 1881}
+          - {author: R. H. Tawney, title: Equality, year: 1931}
+          - {author: Anatole France, title: The Red Lily, year: 1894}
+        traditions:
+          defining: [socdem.nordic, socdem.democratic-socialism]
+          typical: [marxism.classical, liberalism.social, socdem.labourism, socdem.keynesian]
+          contested: [liberalism.egalitarian]
+          rejects: [libertarianism.minarchist, liberalism.austrian, libertarianism.ancap]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [core-workers, reserve-army]
+          pays: [finance-capital, landed-capital]
+          mechanism: >
+            Demanding the material means to live as one likes (income, housing, time) moves resources from
+            owners to wage earners through taxes, rent rules and wage floors, and takes some needs out of
+            the market altogether.
+          drain: none
+          law_of_value: suspends
+          method: materialist
+
+      - id: cs.live-let-live.let-communities-be
+        label: Let each community keep its own ways
+        claim: "Communities (religious, rural, indigenous, ethnic) should be left alone to keep their own ways and rules, without interference from the state or outsiders."
+        voiced: "Leave us be. We've lived by our own ways for generations. We don't need city people or the government telling us how to raise our children."
+        you: "You think communities should be free to keep their own ways and rules without outsiders interfering."
+        because: >
+          States and markets have repeatedly destroyed ways of life they did not understand: indigenous
+          peoples forced into boarding schools, rural communities regulated out of existence, religious
+          minorities forced to assimilate. Groups, not just individuals, need room to live by their own
+          lights, and a free society is an archipelago of such communities.
+        against:
+          - from: feminism.liberal
+            text: >
+              Group autonomy hands individuals, especially women and children, to the group's authorities.
+              The community left alone is often the patriarch left alone.
+          - from: liberalism.egalitarian
+            text: >
+              Members of a community are also citizens with equal rights. Leaving the group alone can mean
+              leaving its dissenters without protection.
+        sources:
+          - {author: Chandran Kukathas, title: The Liberal Archipelago, year: 2003}
+          - {author: Rod Dreher, title: The Benedict Option, year: 2017}
+        traditions:
+          defining: []
+          typical: [nationalism.indigenous-sovereignty, conservatism.paleo, libertarianism.paleo, religious.salafism-quietist, zapatismo]
+          contested: [communitarianism, anarchism.communalism]
+          rejects: [feminism.liberal, liberalism.egalitarian, liberalism.progressive]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [peasantry, petty-bourgeoisie, landed-capital]
+          pays: [reserve-army]
+          mechanism: >
+            Letting communities keep their own rules protects rural, indigenous and religious minorities
+            from assimilation and land seizure; it also protects each community's internal hierarchy, so
+            landholders and elders keep authority while poorer and dependent members lose any outside appeal.
+          drain: none
+          law_of_value: suspends
+          method: mixed
+
+  # ------------------------------------------------------------------
+  - id: cs.rigged
+    domain: commonsense
+    layer: analysis
+    question: Is the system rigged?
+    plain: Is the game rigged in favor of the people at the top?
+    short: whether the system is rigged
+    importance: 3
+    positions:
+      - id: cs.rigged.system-rigged
+        label: Yes, the system is rigged by those at the top
+        claim: "The rules of the economy and politics are rigged by people at the top to benefit themselves."
+        voiced: "The system is rigged. The rich write the rules, the politicians sign them, and the rest of us pay. Bankers crash the economy and get bailed out; you miss a payment and lose your house."
+        you: "You think the people at the top have rigged the rules in their own favor."
+        because: >
+          Evidence is everywhere: tax codes full of loopholes only the rich can use, bailouts for banks
+          and foreclosures for homeowners, laws written by lobbyists, executives never jailed for crimes
+          that would put a worker away for years. When the wealthy control lawmaking, the rules serve the
+          wealthy.
+        against:
+          - from: liberalism.classical
+            text: >
+              Outcomes come from millions of choices, not a rigging. Claims that the game is rigged excuse
+              personal failure and feed demagogues who promise to unrig it and rig it for themselves.
+          - from: marxism.classical
+            text: >
+              "Rigged" implies a fair version to restore. The rules are working as designed: exploitation
+              happens through fair exchange at the going wage, with no cheating needed.
+        sources:
+          - {author: Joseph E. Stiglitz, title: The Price of Inequality, year: 2012}
+          - {author: Robert B. Reich, title: "Saving Capitalism: For the Many, Not the Few", year: 2015}
+          - {author: Martin Gilens and Benjamin I. Page, title: "Testing Theories of American Politics: Elites, Interest Groups, and Average Citizens", year: 2014}
+        traditions:
+          defining: [commonsense.rigged]
+          typical: [conservatism.right-populism, socdem.left-populism, socdem.democratic-socialism, commonsense.anti-politics, liberalism.progressive]
+          contested: [marxism.classical, libertarianism.minarchist]
+          rejects: [liberalism.classical, commonsense.self-reliance, libertarianism.objectivist]
+        presupposes: []
+        excludes: [cs.rigged.basically-fair]
+        tension: []
+        analysis:
+          gains: [core-workers, petty-bourgeoisie]
+          pays: [finance-capital]
+          mechanism: >
+            The belief that those at the top rig the rules turns a sense of unfairness into suspicion of the
+            powerful; it can drive unions, tax campaigns and antitrust, or be captured by a wealthy
+            outsider who promises to unrig it.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Marxists split on whether "rigged" talk is a step toward class consciousness or a trap that
+            implies a fair capitalism to restore.
+          method: mixed
+
+      - id: cs.rigged.hidden-hand
+        label: Yes, a hidden group pulls the strings
+        claim: "The system is secretly run by a small hidden network (bankers, globalists, a deep state, secret societies) that pulls the strings behind elected governments."
+        voiced: "Elections are theater. The real decisions are made by people you never voted for and never see: the central bankers, the Davos crowd, the deep state. Follow the money far enough and it's the same names."
+        you: "You suspect a small hidden group is really running things behind the scenes."
+        because: >
+          Official explanations keep failing: wars start on false pretexts, crises enrich the same
+          institutions, policies nobody voted for arrive anyway. Powerful people do meet privately and
+          coordinate. When the visible explanation does not add up, it is reasonable to look for an
+          invisible one.
+        against:
+          - from: marxism.classical
+            text: >
+              No secret is needed: the drive for profit explains what plot theories attribute to plotters.
+              Personalizing capital as a hidden group is how antisemitism hijacks anticapitalism, the
+              socialism of fools.
+          - from: liberalism.classical
+            text: >
+              Conspiracies large enough to run the world could not stay secret. The theory is unfalsifiable:
+              every disproof becomes part of the cover-up.
+        sources:
+          - {author: Richard Hofstadter, title: The Paranoid Style in American Politics, year: 1964, note: "a critical account"}
+          - {author: Moishe Postone, title: Anti-Semitism and National Socialism, year: 1980, note: "a critical account"}
+          - {author: Michael Barkun, title: A Culture of Conspiracy, year: 2003, note: "a critical account"}
+        traditions:
+          defining: []
+          typical: [fascism.third-position, fascism.identitarian, fascism.nazism]
+          contested: [conservatism.right-populism, commonsense.rigged, libertarianism.paleo]
+          rejects: [marxism.classical, liberalism.classical, liberalism.technocratic]
+        presupposes: []
+        excludes: [cs.rigged.working-as-designed]
+        tension: []
+        analysis:
+          gains: [industrial-capital, finance-capital, petty-bourgeoisie]
+          pays: [reserve-army, core-workers]
+          mechanism: >
+            Explaining hardship by a hidden cabal personalizes the impersonal workings of capital, which
+            leaves property relations untouched and directs anger at named groups (historically Jews, now
+            also migrants or officials) who become targets for violence.
+          drain: none
+          law_of_value: none
+          method: idealist
+
+      - id: cs.rigged.working-as-designed
+        label: Not rigged; it's a class system working as designed
+        claim: "The system is not cheating its own rules; the rules themselves are built to favor those who own, and it is working as intended."
+        voiced: "It's not rigged. It's capitalism. It's doing exactly what it was built to do: make the owners richer from our work. You don't fix that by playing fair."
+        you: "You think the system isn't broken or cheated: it's working exactly as designed, for the people who own."
+        because: >
+          Exploitation needs no fraud: the worker is paid the market value of her labor power, and still
+          produces more than she is paid. Property law, contract and the state's protection of both do
+          the rest. Cleaning up corruption would leave the basic transfer from labor to capital intact,
+          which is why reforms against rigging disappoint.
+        against:
+          - from: commonsense.rigged
+            text: >
+              That's just words. If the rules are built to favor the rich, the game is rigged; call it what
+              you like.
+          - from: liberalism.chicago
+            text: >
+              Wages track productivity in competitive markets, and profits reward investment and risk.
+              Calling voluntary employment a designed transfer assumes the conclusion.
+        sources:
+          - {author: Karl Marx, title: "Capital, Volume I", year: 1867}
+          - {author: Ralph Miliband, title: The State in Capitalist Society, year: 1969}
+        traditions:
+          defining: [marxism.classical, marxism.ml]
+          typical: [marxism.trotskyism, anarchism.communist, marxism.leninism, marxism.maoism, anarchism.syndicalist]
+          contested: [socdem.democratic-socialism]
+          rejects: [liberalism.chicago, commonsense.self-reliance, libertarianism.minarchist]
+        presupposes: [capitalism.nature.exploitation-profit]
+        excludes: [cs.rigged.hidden-hand, cs.rigged.basically-fair, cs.rigged.cronies]
+        tension: []
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, landed-capital]
+          mechanism: >
+            Seeing the rules as built for owners shifts demands from clean-up to ownership itself, which
+            threatens the property titles from which profit, rent and interest flow.
+          drain: reduces
+          law_of_value: abolishes
+          consciousness: hegemonic
+          method: materialist
+
+      - id: cs.rigged.basically-fair
+        label: No, the system is basically fair
+        claim: "The system is basically fair: it rewards effort, talent and good choices, and claims that it is rigged are mostly excuses."
+        voiced: "Rigged? Millions of people start with nothing and do well. The system rewards work and punishes bad choices. Complaining it's rigged just keeps people stuck."
+        you: "You think the system is basically fair and that people who say it's rigged are mostly making excuses."
+        because: >
+          Market economies have produced more opportunity than any alternative, and immigrants and the
+          children of poor families rise in them every year. Gaps in outcomes mostly reflect differences
+          in skills, effort, family structure and choices. Telling people the game is rigged discourages
+          the very behavior that would help them.
+        against:
+          - from: commonsense.rigged
+            text: >
+              Tell that to the family that lost their house while the bank got bailed out. Fair rules don't
+              let the people who broke them keep their bonuses.
+          - from: liberalism.egalitarian
+            text: >
+              Fair procedures with unfair starting points produce unfair results. The child of a poor family
+              did not choose her school.
+        sources:
+          - {author: Thomas Sowell, title: "Wealth, Poverty and Politics", year: 2015}
+          - {author: Milton Friedman and Rose Friedman, title: Free to Choose, year: 1980}
+        traditions:
+          defining: [commonsense.self-reliance]
+          typical: [liberalism.classical, conservatism.fusionism, libertarianism.objectivist, liberalism.chicago]
+          contested: [conservatism.neo]
+          rejects: [commonsense.rigged, marxism.classical, socdem.democratic-socialism]
+        presupposes: []
+        excludes: [cs.rigged.system-rigged, cs.rigged.working-as-designed]
+        tension: []
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Treating the system as fair makes every outcome deserved, which protects existing wealth from
+            redistribution and casts collective demands for wages, housing or welfare as excuses.
+          drain: none
+          law_of_value: extends
+          method: idealist
+
+      - id: cs.rigged.cronies
+        label: Rigged by government favors to big business; markets would be fair
+        claim: "The system is rigged by government: subsidies, bailouts and regulations written for big business; a truly free market would be fair."
+        voiced: "This isn't capitalism, it's cronyism. Big business buys regulations that crush small competitors, then gets bailed out with your money. Get government out and the game is fair."
+        you: "You think the game is rigged because government hands favors to big business, and that real free markets would be fairer."
+        because: >
+          Regulatory agencies tend to be captured by the industries they regulate, and complex rules
+          protect incumbents who can afford compliance lawyers. Bailouts, subsidies and licensing barriers
+          transfer wealth upward. Strip the state of favors to sell and businesses would have to win
+          customers, not lobbyists.
+        against:
+          - from: marxism.classical
+            text: >
+              Big firms win in markets too: competition produces concentration, and the largest firms would
+              dominate an unregulated market even faster. Removing the rules hands them the field.
+          - from: socdem.nordic
+            text: >
+              The cure for captured regulation is stronger public institutions and organized labor, not no
+              regulation. Deregulation was tried, and it gave us 2008.
+        sources:
+          - {author: George J. Stigler, title: The Theory of Economic Regulation, year: 1971}
+          - {author: Luigi Zingales, title: A Capitalism for the People, year: 2012}
+        traditions:
+          defining: [libertarianism.minarchist]
+          typical: [libertarianism.ancap, liberalism.chicago, conservatism.fusionism, libertarianism.paleo, liberalism.austrian]
+          contested: [conservatism.right-populism, commonsense.rigged]
+          rejects: [marxism.classical, socdem.nordic, socdem.democratic-socialism]
+        presupposes: [capitalism.nature.crony-corrupted]
+        excludes: [cs.rigged.working-as-designed]
+        tension: []
+        analysis:
+          gains: [finance-capital, industrial-capital, petty-bourgeoisie]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Blaming state favors directs reform at deregulation and spending cuts; since the largest firms
+            gain most in unregulated markets, it can strengthen the giants it denounces, while labor
+            protections and welfare are cut as distortions.
+          drain: none
+          law_of_value: extends
+          method: mixed
+
+      - id: cs.rigged.against-our-country
+        label: The world system is rigged against countries like ours
+        claim: "The rules of the world economy are rigged against poorer countries: rich nations and their lenders set the terms of trade, debt and technology."
+        voiced: "They kicked away the ladder they climbed. They protected their industries, then forced us to open ours. We sell coffee cheap and buy medicine dear, and the IMF writes our budget."
+        you: "You think the world economy is rigged so that rich countries stay rich and countries like yours stay poor."
+        because: >
+          Today's rich countries industrialized behind tariffs and subsidies, then imposed free trade and
+          strict patents on everyone else. Prices for raw materials fall against manufactured goods, debts
+          drain budgets, and the institutions that set the rules are controlled by the rich countries'
+          votes. The game is rigged between nations as well as within them.
+        against:
+          - from: liberalism.technocratic
+            text: >
+              Countries that opened up and reformed, such as South Korea, Vietnam and China, grew fast.
+              Blaming the world excuses local corruption and bad policy.
+          - from: marxism.maoism
+            text: >
+              The rigging is done with local partners. The national elite shares the take: it banks abroad,
+              buys imported luxuries and sells the mines. Blaming foreigners alone lets the compradors off.
+        sources:
+          - {author: Ha-Joon Chang, title: "Kicking Away the Ladder", year: 2002}
+          - {author: Walter Rodney, title: How Europe Underdeveloped Africa, year: 1972}
+        traditions:
+          defining: [marxism.dependency, marxism.third-worldism]
+          typical: [nationalism.pan-africanism, nationalism.bolivarianism, nationalism.peronism, marxism.world-systems, nationalism.nasserism, commonsense.rigged]
+          contested: [nationalism.developmental-state]
+          rejects: [liberalism.technocratic, liberalism.chicago, liberalism.internationalist]
+        presupposes: []
+        excludes: []
+        tension: [development.path.integration]
+        analysis:
+          gains: [peripheral-workers, peasantry, industrial-capital]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >
+            Seeing the world economy as rigged backs tariffs, debt refusal, local content rules and
+            nationalization that keep more value at home, at the expense of core lenders and the local
+            fractions that broker for them; national industrialists gain alongside workers.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            Maoists and Amin hold that national capital in the periphery cannot lead the break and will
+            settle with the core; developmental nationalists hold that it can.
+          method: materialist
+
+  # ------------------------------------------------------------------
+  - id: cs.middle
+    domain: commonsense
+    layer: method
+    question: Is the truth usually somewhere in the middle?
+    plain: When two sides argue, is the truth usually somewhere in between?
+    short: the middle ground
+    importance: 2
+    positions:
+      - id: cs.middle.split-the-difference
+        label: Yes, both sides have a point; the truth is in between
+        claim: "When two sides disagree, each usually has part of the truth, and the sensible answer lies somewhere between them."
+        voiced: "Both sides have a point. The truth's usually somewhere in the middle. Meet halfway and you'll be about right."
+        you: "You think that when people disagree, the truth is usually somewhere between them."
+        because: >
+          Each side in a dispute sees what serves it and overlooks the rest; listening to both corrects
+          both errors. Compromise lets people with different interests live together without one crushing
+          the other, and policies that both sides can accept tend to last. Elections reward parties that
+          stay near the middle because that is where most voters are.
+        against:
+          - from: marxism.maoism
+            text: >
+              Splitting the difference between oppressor and oppressed is unprincipled peace. The middle of
+              a debate set by the powerful lies on their side.
+          - from: libertarianism.objectivist
+            text: >
+              In any compromise between food and poison, only death can win. When one side is right,
+              meeting halfway means accepting half the error.
+        sources:
+          - {author: Anthony Downs, title: An Economic Theory of Democracy, year: 1957}
+          - {author: Anthony Giddens, title: The Third Way, year: 1998}
+        traditions:
+          defining: []
+          typical: [commonsense.live-and-let-live, socdem.third-way, liberalism.technocratic, conservatism.christian-democracy, conservatism.one-nation]
+          contested: [liberalism.social]
+          rejects: [marxism.maoism, libertarianism.objectivist, conservatism.integralism, anarchism.insurrectionary]
+        presupposes: []
+        excludes: [cs.middle.truth-takes-sides]
+        tension: []
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [core-workers]
+          mechanism: >
+            Locating truth between the parties on offer makes the current range of debate the measure, so
+            whoever shifts that range shifts the middle; in a debate between wage cuts and smaller wage
+            cuts, the middle is a wage cut.
+          drain: none
+          law_of_value: none
+          method: idealist
+
+      - id: cs.middle.pragmatic-center
+        label: Not halfway; whatever works, without ideology
+        claim: "The best politics is pragmatic: judge each question on the evidence of what works, without left or right ideology."
+        voiced: "I'm not in the middle because I split the difference. I'm in the middle because I don't care whose idea it is, only whether it works."
+        you: "You think politics should be about what works, not about left or right."
+        because: >
+          Ideologies are bundles of positions held together by tribe, not logic. A pragmatist can take a
+          market solution here and a public one there, follow the evidence and change course when it
+          fails. Most good policy is technical, and the real division is between those who look at results
+          and those who look at slogans.
+        against:
+          - from: socdem.left-populism
+            text: >
+              "What works" for whom? The standards of success (growth, investor confidence, balanced
+              budgets) were chosen by someone. Post-ideological politics hides its ideology and calls it
+              common sense.
+          - from: conservatism.right-populism
+            text: >
+              The "pragmatic" center is a class of managers and professionals with interests of its own.
+              It has governed for decades, and look what worked for it and what did not work for us.
+        sources:
+          - {author: Arthur M. Schlesinger Jr., title: The Vital Center, year: 1949}
+          - {author: Anthony Giddens, title: Beyond Left and Right, year: 1994}
+        traditions:
+          defining: [liberalism.technocratic]
+          typical: [socdem.third-way, liberalism.social, technology.effective-altruism, technology.technocracy, liberalism.internationalist]
+          contested: [conservatism.christian-democracy]
+          rejects: [socdem.left-populism, conservatism.right-populism, marxism.ml]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [professional-managerial, finance-capital]
+          pays: [core-workers]
+          mechanism: >
+            Treating policy as a technical search for what works leaves its yardsticks (growth, investor
+            confidence) set by existing property relations, and gives the professional and managerial
+            stratum the role of neutral arbiter.
+          drain: none
+          law_of_value: none
+          method: mixed
+
+      - id: cs.middle.truth-takes-sides
+        label: No; on many questions one side is simply right
+        claim: "On many questions one side is right and the other wrong, and seeking the middle is a way of dodging."
+        voiced: "There was no middle ground between slavery and abolition. The one who waits for a more convenient season, who prefers order to justice, is the real obstacle."
+        you: "You think that on many big questions one side is simply right, and the middle is a dodge."
+        because: >
+          The middle moves with whoever pushes hardest. On slavery, colonial rule and apartheid, the
+          reasonable middle of its day was wrong, and those who refused it were right. Fairness to
+          arguments means following them to their conclusion, not stopping halfway to stay comfortable.
+        against:
+          - from: liberalism.classical
+            text: >
+              Certainty that one's side is simply right is the root of persecution. Most political questions
+              are not slavery; treating them as if they were makes every opponent a criminal.
+          - from: conservatism.burkean
+            text: >
+              Prudence and compromise keep societies intact. The person who sees every question as a moral
+              absolute will burn the house down to purify it.
+        sources:
+          - {author: Mao Zedong, title: Combat Liberalism, year: 1937}
+          - {author: Martin Luther King Jr., title: Letter from Birmingham Jail, year: 1963}
+        traditions:
+          defining: []
+          typical: [marxism.maoism, marxism.ml, religious.liberation-theology, anarchism.communist, libertarianism.objectivist, conservatism.integralism]
+          contested: [socdem.left-populism]
+          rejects: [socdem.third-way, liberalism.technocratic, conservatism.burkean]
+        presupposes: []
+        excludes: [cs.middle.split-the-difference]
+        tension: []
+        analysis:
+          gains: [core-workers, peripheral-workers, reserve-army]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Refusing the middle as a standard lets a movement hold demands the current debate excludes; it
+            is chiefly the side with less power that needs to, because the middle of a debate set by the
+            powerful lies on their side.
+          drain: none
+          law_of_value: none
+          disputed: >
+            The same refusal is held by integralists and objectivists for opposite causes; its class content
+            depends on which side it takes.
+          method: mixed
+
+      - id: cs.middle.measure-and-balance
+        label: Balance and measure are virtues, not halfway points
+        claim: "Measure and balance are political virtues: avoid excess in any direction, prefer gradual adjustment, and keep the parts of society in proportion."
+        voiced: "Virtue is a mean between two vices. Courage lies between cowardice and rashness. A wise ruler keeps the balance and does not chase extremes."
+        you: "You think good judgment means balance and moderation in everything, avoiding going too far in any direction."
+        because: >
+          Every virtue is a mean between an excess and a deficiency, and the same holds for societies:
+          too much liberty breeds anarchy, too much order tyranny. Prudence, the first of political virtues,
+          weighs circumstances and keeps the parts of society in proportion. This is not splitting the
+          difference but practical wisdom.
+        against:
+          - from: marxism.maoism
+            text: >
+              The "balance" between classes is a balance of forces in which one side dominates. Harmony of
+              opposites masks the struggle between them, and those who preach measure rarely ask the
+              hungry to wait in measure.
+          - from: libertarianism.objectivist
+            text: >
+              Moderation in defense of rights is no virtue. A principle held halfway is not held.
+        sources:
+          - {author: Aristotle, title: Nicomachean Ethics, year: "c. -340"}
+          - {author: Edmund Burke, title: An Appeal from the New to the Old Whigs, year: 1791}
+        traditions:
+          defining: []
+          typical: [religious.confucian, conservatism.burkean, religious.engaged-buddhism, conservatism.one-nation, conservatism.christian-democracy]
+          contested: [communitarianism]
+          rejects: [marxism.maoism, libertarianism.objectivist, anarchism.insurrectionary]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [landed-capital, petty-bourgeoisie, professional-managerial]
+          pays: [core-workers]
+          mechanism: >
+            Treating measure as political virtue counsels gradual adjustment within existing institutions and
+            distrust of sharp breaks, which protects existing property and rank while restraining their
+            worst excesses.
+          drain: none
+          law_of_value: none
+          method: idealist
+
+      - id: cs.middle.not-sure
+        label: In the middle because you haven't made up your mind
+        claim: "Landing in the middle often means not yet knowing enough, or not having the time to find out, rather than a view that the middle is right."
+        voiced: "Honestly? I don't know enough about most of it to say. I've got work and kids. So I sit somewhere in the middle and hope the people in charge know what they're doing."
+        you: "You often end up in the middle because you don't feel you know enough to take a side."
+        because: >
+          Following politics properly takes hours most people do not have, and one vote changes little,
+          so staying uninformed on most questions is a reasonable use of limited time. Admitting you do
+          not know is more honest than borrowing a confident opinion from television.
+        against:
+          - from: marxism.gramscian
+            text: >
+              Not knowing is produced: people are denied the time, schooling and organizations through
+              which they could know. The uncertainty is real, but it is an effect of their position, not
+              a neutral stance.
+          - from: liberalism.republican
+            text: >
+              Those who do not decide are ruled by those who do. Citizenship means forming a judgment, and
+              abstaining hands the decision to whoever is organized.
+        sources:
+          - {author: Philip E. Converse, title: The Nature of Belief Systems in Mass Publics, year: 1964}
+          - {author: Anthony Downs, title: An Economic Theory of Democracy, year: 1957}
+        traditions:
+          defining: []
+          typical: [commonsense.anti-politics]
+          contested: [commonsense.live-and-let-live]
+          rejects: [marxism.gramscian, liberalism.republican]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            When lack of time keeps people from forming views, decisions fall to those with time and
+            organization, the professionally political and the funded; uncertainty among wage earners
+            leaves their interests unrepresented.
+          drain: none
+          law_of_value: none
+          method: mixed

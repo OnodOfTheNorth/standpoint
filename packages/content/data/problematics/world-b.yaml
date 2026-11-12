@@ -1,0 +1,1539 @@
+# World system, part 2: comprador classes, development paths, the primary contradiction, world order.
+problematics:
+  # ------------------------------------------------------------------
+  - id: comprador.nature
+    domain: world
+    layer: analysis
+    question: Who rules in the periphery, and for whom?
+    plain: In poor countries, whom do the people at the top really work for?
+    short: the ruling classes of the periphery
+    importance: 2
+    region: world
+    positions:
+      - id: comprador.nature.broker-class
+        label: Local ruling fractions broker the drain and share in it
+        claim: >
+          In poor countries the ruling groups (import-export merchants, mine and plantation owners, bankers,
+          top officials and officers) earn their wealth by handling the flow of value abroad. They broker the
+          drain, take a cut, and depend on foreign power to stay on top.
+        voiced: >
+          The national middle class has no mission of building the nation. Its vocation is to be the transmission
+          line between the nation and a capitalism rampant though camouflaged. It is the intermediary, the
+          comprador, and it will sell the country for a commission.
+        you: >
+          You think the rich and powerful in poor countries mostly get rich by acting as middlemen for foreign
+          companies and powers, and side with them against their own people.
+        because: >
+          Mao classed the compradors with the landlords as appendages of imperialism, living off foreign trade
+          and loans. Fanon watched the new national bourgeoisie of Africa take over colonial firms and become
+          the local manager of Western interests. Frank called it a lumpenbourgeoisie whose policies produce
+          lumpendevelopment. Because their income comes from the drain, they cannot lead a fight against it;
+          class struggle in the periphery is therefore anti-imperialist struggle.
+        against:
+          - from: marxism.classical
+            text: >
+              Bill Warren showed periphery capitalists building steel mills, car plants and banks of their own, and
+              bargaining hard with foreign capital. Calling every capitalist a comprador ignores real national
+              accumulation.
+          - from: liberalism.technocratic
+            text: >
+              Elites in poor countries extract because the institutions let them, whoever their partners abroad.
+              Rulers with no foreign ties (in Zimbabwe, in Myanmar) plunder just as well.
+        sources:
+          - {author: Mao Zedong, title: "Analysis of the Classes in Chinese Society", year: 1926}
+          - {author: Frantz Fanon, title: "The Wretched of the Earth", year: 1961, note: chapter "The Pitfalls of National Consciousness"}
+          - {author: Andre Gunder Frank, title: "Lumpenbourgeoisie: Lumpendevelopment", year: 1972}
+          - {author: Walter Rodney, title: "How Europe Underdeveloped Africa", year: 1972}
+        traditions:
+          defining: [marxism.maoism, marxism.mlm, marxism.dependency]
+          typical: [marxism.third-worldism, marxism.ml, nationalism.pan-africanism, marxism.african-socialism, marxism.guevarism, marxism.black-radical]
+          contested: [marxism.trotskyism]
+          rejects: [liberalism.chicago, liberalism.technocratic]
+        presupposes: [imperialism.nature.unequal-exchange-drain]
+        excludes: [comprador.nature.independent-capitalists]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [comprador-capital, finance-capital, landed-capital]
+          mechanism: >
+            Naming the local brokers as part of the imperial chain turns periphery class struggle against them:
+            nationalizing trade, land and banks cuts both the brokers' commissions and the foreign claims they
+            service.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >
+            The national-bourgeoisie dispute: Maoists and the Comintern of the 1920s held that a national
+            bourgeoisie distinct from the compradors could be an ally; Frank and later dependency writers held
+            that no such class exists.
+
+      - id: comprador.nature.national-bourgeoisie-ally
+        label: A national bourgeoisie, distinct from compradors, can be an ally against empire
+        claim: >
+          Alongside the brokers of foreign capital, poor countries have a national capitalist class whose
+          factories and markets suffer under foreign domination. It wavers, but it can be won to an
+          anti-imperialist front and even lead one.
+        voiced: >
+          Distinguish the comprador from the national bourgeoisie. The one lives off the foreigner; the other is
+          strangled by him. Unite all who can be united against imperialism and feudalism, under the leadership
+          of the workers and peasants.
+        you: >
+          You think some business owners in poor countries are real patriots squeezed by foreign capital, and
+          can be allies against it.
+        because: >
+          Mao's New Democracy rested on this distinction: national capitalists who wanted a home market and
+          suffered from foreign dumping could be allied, their property protected, during the anti-imperialist
+          stage. Nasser, Perón and Nehru built states on alliances with national industrialists. A front that
+          includes them isolates the compradors and the foreign power and broadens the base of independence.
+        against:
+          - from: marxism.trotskyism
+            text: >
+              Trotsky's permanent revolution: in the age of imperialism the national bourgeoisie fears its own
+              workers more than the foreigner. Shanghai 1927, where Chiang's army massacred the communists who had
+              allied with it, is the lesson.
+          - from: marxism.dependency
+            text: >
+              The national industrialist imports his machines, borrows in dollars and licenses foreign patents.
+              Frank found no class in Latin America that could lead national development; the alliance ends with
+              the workers disarmed.
+        sources:
+          - {author: Mao Zedong, title: "On New Democracy", year: 1940}
+          - {author: José Carlos Mariátegui, title: "Seven Interpretive Essays on Peruvian Reality", year: 1928}
+          - {author: Kwame Nkrumah, title: "Neo-Colonialism: The Last Stage of Imperialism", year: 1965}
+        traditions:
+          defining: [marxism.maoism]
+          typical: [marxism.ml, nationalism.nasserism, nationalism.peronism, nationalism.three-principles, marxism.scc, nationalism.bolivarianism, marxism.arab-socialism]
+          contested: [marxism.mariategui, marxism.mlm]
+          rejects: [marxism.trotskyism, marxism.left-communism, marxism.dependency]
+        tension: [comprador.nature.broker-class]
+        analysis:
+          gains: [industrial-capital, peripheral-workers, peasantry, petty-bourgeoisie]
+          pays: [comprador-capital, landed-capital, finance-capital]
+          mechanism: >
+            A front with national industrialists redirects state credit, tariffs and land reform from compradors
+            and landlords to domestic industry, reducing the outflow; it also protects the national capitalists'
+            claim on workers' surplus at home.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            The national-bourgeoisie dispute: Mao and the Comintern for an alliance; Trotsky, Frank and later
+            dependency theorists against it. The frame holds the question concrete: whether a given fraction
+            depends on the drain or on the home market.
+
+      - id: comprador.nature.transnational-fraction
+        label: Periphery elites are now local sections of a transnational capitalist class
+        claim: >
+          The old split between comprador and national capitalists has dissolved. Periphery elites have merged
+          into a transnational capitalist class, investing across borders and sharing interests with capital
+          everywhere, and states serve that class.
+        voiced: >
+          The Mexican billionaire, the Indian conglomerate, the Nigerian banker and the American fund manager sit
+          on the same boards and park money in the same havens. There is no national bourgeoisie left to ally
+          with, only a global ruling class with local branches.
+        you: >
+          You think the rich in poor countries have become part of a single global class of investors, no longer
+          tied to any nation.
+        because: >
+          Poulantzas saw an interior bourgeoisie emerging, dependent on foreign capital yet with its own base,
+          neither comprador nor national. Robinson goes further: globalization has fused capitals across borders
+          through cross-investment, mergers and global production chains, creating a transnational capitalist
+          class whose local members run states for global accumulation. That is why governments of every color
+          pursue the same policies.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              Capital still has a home. The dollar, the patents and the shareholdings are concentrated in a few
+              core states, and periphery billionaires are junior partners in a hierarchy, not equals in a
+              borderless class.
+          - from: liberalism.internationalist
+            text: >
+              Global investors are not a ruling class but a market; when governments in Mexico or India change
+              course, the money adapts. National politics still decides.
+        sources:
+          - {author: Nicos Poulantzas, title: "Classes in Contemporary Capitalism", year: 1974}
+          - {author: William I. Robinson, title: "A Theory of Global Capitalism", year: 2004}
+        traditions:
+          typical: [marxism.structural, marxism.autonomism, marxism.third-camp]
+          contested: [marxism.world-systems, marxism.trotskyism]
+          rejects: [marxism.third-worldism, marxism.maoism, nationalism.bolivarianism]
+        excludes: [comprador.nature.national-bourgeoisie-ally]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [finance-capital, industrial-capital, comprador-capital]
+          mechanism: >
+            Seeing one global ruling class rules out alliances with any national capitalist fraction and points
+            to transnational workers' organization; it also flattens the core–periphery hierarchy, so struggles
+            against the drain by periphery states lose priority.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            Dependency and Third Worldist writers hold that the transnational-class thesis hides the national
+            concentration of ownership in the core; Robinson replies that the hierarchy is now between classes, not
+            nations.
+
+      - id: comprador.nature.bureaucratic-bourgeoisie
+        label: The periphery is ruled by a class that owns the state, not capital
+        claim: >
+          In many poor countries the ruling class is formed in and through the state: officials, officers and
+          party leaders who control public firms, licenses and foreign aid, and turn office into wealth.
+        voiced: >
+          Our ruling class did not come from the factory; it came from the ministry. It owns nothing on paper and
+          controls everything in fact: the marketing board, the import license, the parastatal and the aid budget.
+        you: >
+          You think that in many poor countries the real ruling class is the people who run the state, who get
+          rich by controlling licenses, public companies and aid.
+        because: >
+          Alavi showed that the postcolonial state inherited an overdeveloped apparatus built to rule a colony,
+          which its military and civil bureaucracy could use to balance between foreign capital, landlords and
+          local industrialists. Shivji traced how Tanzania's nationalizations created a bureaucratic bourgeoisie
+          living off public property. Public ownership without workers' power produces this class.
+        against:
+          - from: marxism.dependency
+            text: >
+              The bureaucrats manage, but the surplus they handle still flows north through prices and debt. They
+              are a fraction of the broker class, not a ruling class of their own.
+          - from: liberalism.austrian
+            text: >
+              This is what happens whenever the state owns industry: it becomes a prize for those who run it. The
+              lesson is not a better class analysis but less state.
+        sources:
+          - {author: Hamza Alavi, title: "The State in Post-Colonial Societies: Pakistan and Bangladesh", year: 1972}
+          - {author: Issa G. Shivji, title: "Class Struggles in Tanzania", year: 1976}
+        traditions:
+          typical: [marxism.dependency, marxism.trotskyism, marxism.third-camp, marxism.african-socialism, anarchism.communist]
+          contested: [marxism.ml, marxism.maoism]
+          rejects: [nationalism.nasserism, nationalism.baathism]
+        tension: [comprador.nature.national-bourgeoisie-ally]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [professional-managerial, comprador-capital]
+          mechanism: >
+            Identifying the state elite as a class points struggle at the officials who control public assets and
+            aid, and at the gap between public ownership and workers' control; it can also be borrowed by
+            privatizers to strip those assets.
+          drain: reduces
+          law_of_value: none
+
+      - id: comprador.nature.independent-capitalists
+        label: Periphery capitalists are real national capitalists, building capitalism at home
+        claim: >
+          Capitalists in poor countries are not mere brokers. They build industries, compete and bargain with
+          foreign capital, and capitalism is spreading production across the periphery as it once did in Europe.
+        voiced: >
+          Imperialism is the pioneer of capitalism. It has broken up precapitalist societies and planted modern
+          industry across Asia, Latin America and Africa. The talk of compradors is nostalgia for a stagnation
+          that is already over.
+        you: >
+          You think business owners in poor countries are building real modern economies, not just serving
+          foreign masters.
+        because: >
+          Warren showed rapid industrial growth in much of the periphery after 1945 and periphery states
+          winning better terms from foreign investors. Korea's chaebol, India's industrial houses and Brazil's
+          state and private firms are independent centers of accumulation. Marx himself expected capitalism to
+          develop productive forces everywhere, preparing the ground for socialism.
+        against:
+          - from: marxism.dependency
+            text: >
+              Warren wrote at the height of a debt-financed boom that ended in the lost decade of the 1980s. Korea
+              and Taiwan grew as Cold War frontline states, with land reform, U.S. aid and market access no other
+              periphery country got.
+          - from: marxism.maoism
+            text: >
+              Productive forces grew, and so did the drain. Industry owned or financed from abroad, working on
+              licensed technology for export, enriches its partners and leaves the countryside in misery.
+        sources:
+          - {author: Bill Warren, title: "Imperialism: Pioneer of Capitalism", year: 1980}
+          - {author: Karl Marx, title: "The Future Results of British Rule in India", year: 1853}
+        traditions:
+          typical: [marxism.classical, marxism.analytical, liberalism.chicago, liberalism.technocratic]
+          contested: [marxism.trotskyism, nationalism.developmental-state]
+          rejects: [marxism.dependency, marxism.maoism, marxism.third-worldism, marxism.world-systems]
+        excludes: [comprador.nature.broker-class]
+        analysis:
+          gains: [industrial-capital, professional-managerial]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >
+            Treating periphery capitalists as independent accumulators supports policies that favor them (credit,
+            labor discipline, foreign partnerships) and drops the anti-imperialist content of periphery class
+            struggle, leaving the price and debt channels in place.
+          drain: sustains
+          law_of_value: extends
+          disputed: >
+            Warren against the dependency school, the classic form of the national-bourgeoisie dispute.
+
+      - id: comprador.nature.kleptocratic-elites
+        label: Periphery rulers are kleptocrats who serve themselves
+        claim: >
+          Poor countries are ruled by narrow elites who loot public money and natural resources for themselves,
+          shielded by weak courts and press, and hide the money abroad. They serve no one but themselves.
+        voiced: >
+          The governor's son drives a Lamborghini in London while the hospital has no oxygen. Follow the money:
+          offshore shells, London flats, Swiss accounts. Transparency and the rule of law are the cure.
+        you: >
+          You think the people running many poor countries are thieves who steal from their own people and hide
+          the money abroad.
+        because: >
+          Acemoglu and Robinson show extractive elites blocking change that would threaten their rents. Collier
+          shows resource rents fueling corrupt rule and conflict. Bullough shows how offshore finance lets them
+          hide what they take. Accountability (elections, courts, a free press, beneficial-ownership registers)
+          breaks their hold.
+        against:
+          - from: marxism.dependency
+            text: >
+              The loot lands in London, Zurich and Delaware, managed by core banks and lawyers. Kleptocracy is a
+              service industry of the core. Calling it local corruption hides the partner.
+          - from: nationalism.pan-africanism
+            text: >
+              The same Western governments that lecture on corruption armed and financed Mobutu for thirty years.
+              They remove a ruler for corruption only when he stops serving them.
+        sources:
+          - {author: Daron Acemoglu and James A. Robinson, title: "Why Nations Fail", year: 2012}
+          - {author: Paul Collier, title: "The Bottom Billion", year: 2007}
+          - {author: Oliver Bullough, title: "Moneyland", year: 2018}
+        traditions:
+          defining: [liberalism.technocratic]
+          typical: [liberalism.internationalist, liberalism.progressive, socdem.third-way, commonsense.anti-politics]
+          contested: [liberalism.chicago]
+          rejects: [marxism.dependency, marxism.third-worldism]
+        tension: [comprador.nature.broker-class]
+        analysis:
+          gains: [professional-managerial, finance-capital]
+          pays: [comprador-capital]
+          mechanism: >
+            Treating rulers as personal thieves targets individuals through anti-corruption courts and
+            sanctions, often enforced by core governments, which can replace one set of rulers with another
+            friendlier to foreign investors while leaving the ownership and trade structure intact.
+          drain: softens
+          law_of_value: extends
+          method: idealist
+
+      - id: comprador.nature.sellout-elites
+        label: A cosmopolitan elite has sold out the nation to foreigners
+        claim: >
+          The nation is ruled by a rootless elite educated abroad, loyal to foreign institutions, money and ideas,
+          who despise their own people's faith and traditions and sell the country's assets and culture.
+        voiced: >
+          They studied in London and Boston, bank in Geneva and take their orders from Washington, Brussels or
+          the NGOs. They mock our faith and our families. Take back the country from those who sold it.
+        you: >
+          You think your country's elite has lost touch with its own people and serves foreign money and foreign
+          ideas.
+        because: >
+          Lasch saw the professional elites seceding from the nation into a global class with no attachment to
+          place. Across the South, nationalists point to elites who privatized national assets to foreign buyers,
+          imported foreign values through NGOs and media, and treat their own people as backward. Restoring a
+          leadership rooted in the nation's faith and culture is the precondition of real independence.
+        against:
+          - from: marxism.maoism
+            text: >
+              The national right attacks the compradors' culture and keeps their property. Once in office it
+              signs the same loans and sells the same mines, while turning anger on minorities and the left.
+          - from: liberalism.progressive
+            text: >
+              "Rootless cosmopolitan" has a history: it was aimed at Jews. The rhetoric of elites betraying the
+              nation names enemies inside, and ends with journalists and minorities in prison.
+        sources:
+          - {author: Christopher Lasch, title: "The Revolt of the Elites and the Betrayal of Democracy", year: 1995}
+          - {author: Yoram Hazony, title: "The Virtue of Nationalism", year: 2018}
+        traditions:
+          defining: [conservatism.right-populism]
+          typical: [conservatism.national, nationalism.hindutva, nationalism.eurasianism, religious.buddhist-nationalism, conservatism.postliberal, commonsense.rigged]
+          contested: [religious.islamism-brotherhood, nationalism.ethnic]
+          rejects: [liberalism.progressive, liberalism.internationalist, marxism.maoism]
+        presupposes: [state.nature.organic-nation]
+        analysis:
+          gains: [industrial-capital, petty-bourgeoisie, landed-capital]
+          pays: [peripheral-workers, reserve-army]
+          mechanism: >
+            Defining the enemy by culture rather than property lets a national-capitalist fraction replace the
+            liberal one while keeping foreign loans and investment, and turns workers' anger against minorities,
+            NGOs and the left.
+          drain: sustains
+          law_of_value: regulates
+          method: idealist
+
+  # ------------------------------------------------------------------
+  - id: development.path
+    domain: world
+    layer: strategy
+    question: How should a poor country develop?
+    plain: If you ran a poor country, what road would you take to a better life for its people?
+    short: the road of development
+    importance: 3
+    region: world
+    positions:
+      - id: development.path.integration
+        label: Open up, integrate into world markets, attract investment
+        claim: >
+          A poor country should open to trade and foreign investment, keep budgets and inflation in check,
+          privatize state firms and secure property rights, and climb global supply chains.
+        voiced: >
+          Stabilize, liberalize, privatize. No country has grown rich by closing itself off. Open the doors,
+          plug into global value chains and let the capital come in.
+        you: >
+          You think a poor country's best road is to open its doors to world trade and foreign investment and
+          let markets work.
+        because: >
+          Williamson summed up a consensus: fiscal discipline, trade and investment liberalization,
+          privatization, deregulation and secure property. Sachs and Warner found open economies in the 1970s
+          and 1980s grew much faster than closed ones. China's opening after 1978 and Vietnam's after 1986 lifted
+          hundreds of millions from poverty. Global supply chains let a country industrialize without building a
+          whole industry from scratch.
+        against:
+          - from: nationalism.developmental-state
+            text: >
+              China and Vietnam opened on their own terms, with state banks, capital controls and industrial
+              policy. The countries that followed the consensus to the letter, in Latin America and Africa,
+              suffered lost decades.
+          - from: marxism.dependency
+            text: >
+              Integration on the core's terms locks a country into assembling, mining and growing for others at
+              low wages. The supply chain's top rungs are patented, branded and owned elsewhere.
+        sources:
+          - {author: John Williamson, title: "What Washington Means by Policy Reform", year: 1990}
+          - {author: Jeffrey D. Sachs and Andrew Warner, title: "Economic Reform and the Process of Global Integration", year: 1995}
+          - {author: Jagdish Bhagwati, title: "In Defense of Globalization", year: 2004}
+        traditions:
+          defining: [liberalism.chicago, liberalism.technocratic]
+          typical: [liberalism.internationalist, socdem.third-way, liberalism.classical, conservatism.fusionism]
+          contested: [liberalism.ordoliberal]
+          rejects: [marxism.dependency, marxism.third-worldism, nationalism.developmental-state, nationalism.bolivarianism, marxism.ml]
+        presupposes: [capitalism.nature.free-exchange]
+        excludes: [development.path.delinking, development.path.import-substitution]
+        analysis:
+          gains: [finance-capital, industrial-capital, comprador-capital, professional-managerial]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >
+            Open capital accounts, privatization and investment treaties give core firms and creditors cheap access
+            to periphery labor and assets and the right to leave or sue, while competition for investment holds
+            periphery wages and taxes down.
+          drain: sustains
+          law_of_value: extends
+
+      - id: development.path.market-freedom
+        label: Secure property and get the state out of the way
+        claim: >
+          Development comes from the poor themselves trading, saving and building firms. Give them secure titles,
+          low taxes and free trade, and stop both local governments and foreign aid agencies from interfering.
+        voiced: >
+          The poor are not a problem to be solved; they are entrepreneurs held down by permits, bribes and
+          bureaucrats. Title their land, legalize their businesses and abolish the planners, theirs and ours.
+        you: >
+          You think poor people will lift themselves up if governments, aid agencies and planners just secure
+          their property and get out of the way.
+        because: >
+          De Soto showed that it took years and dozens of permits to legally open a small workshop in Lima; the
+          poor built a vast informal economy anyway. Bauer showed that aid and planning strengthened governments
+          against their own people. Hong Kong under laissez-faire went from refugee camp to one of the richest
+          places on earth. The IMF and World Bank are planners too, and should go.
+        against:
+          - from: nationalism.developmental-state
+            text: >
+              Hong Kong was a trading port with colonial land ownership and public housing for half its people.
+              No large country has industrialized without a state directing credit and protecting infant
+              industry.
+          - from: marxism.maoism
+            text: >
+              Titling peasant land in a market dominated by banks and agribusiness turns it into collateral, then
+              into debt, then into the bank's land. The poor become free to sell their plots, and then they are
+              landless.
+        sources:
+          - {author: Hernando de Soto, title: "The Other Path", year: 1986}
+          - {author: P. T. Bauer, title: "Dissent on Development", year: 1971}
+          - {author: William Easterly, title: "The Tyranny of Experts", year: 2014}
+        traditions:
+          defining: [liberalism.austrian]
+          typical: [libertarianism.minarchist, libertarianism.ancap, libertarianism.objectivist, liberalism.classical, commonsense.self-reliance]
+          contested: [liberalism.chicago]
+          rejects: [marxism.dependency, nationalism.developmental-state, socdem.keynesian, marxism.ml]
+        presupposes: [property.private.natural-right]
+        excludes: [development.path.delinking, development.path.planned-industrialization]
+        analysis:
+          gains: [finance-capital, petty-bourgeoisie, industrial-capital]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >
+            Formal titles and open markets make land and small firms tradable and mortgageable, which concentrates
+            them in the hands of those with capital, foreign or local, while the periphery state is stripped of
+            any power to bargain over terms.
+          drain: sustains
+          law_of_value: extends
+
+      - id: development.path.import-substitution
+        label: Industrialize behind tariffs to replace imports
+        claim: >
+          A poor country should build its own industries behind tariffs and import controls, with state credit,
+          public enterprises and national control of key resources, so that it makes at home what it now imports.
+        voiced: >
+          Every bag of coffee we export buys fewer machines each year. We will make the machines ourselves:
+          protect the young industry, nationalize the oil, plan the investment, and keep the gains of progress
+          at home.
+        you: >
+          You think a poor country should protect and build its own industries so it can make what it now buys
+          from abroad.
+        because: >
+          Prebisch showed that raw-material exporters lose as their prices fall against manufactures. Hamilton
+          and List argued, and the United States and Germany proved, that infant industries need protection to
+          grow. Between 1950 and 1980 Brazil, Mexico, Egypt, India and Turkey built steel, chemicals, cars and
+          power grids this way and grew faster than in the decades of liberalization that followed.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Protection breeds firms that never grow up: inefficient, politically connected and dependent on
+              subsidy. Import substitution ended in shortages, inflation and the debt crises of the 1980s.
+          - from: marxism.dependency
+            text: >
+              Import substitution replaced imported cars with cars assembled at home by Ford and Volkswagen on
+              imported machines and licensed patents. Dependence changed form; it did not end.
+        sources:
+          - {author: Raúl Prebisch, title: "The Economic Development of Latin America and Its Principal Problems", year: 1950}
+          - {author: Friedrich List, title: "The National System of Political Economy", year: 1841}
+          - {author: Alexander Hamilton, title: "Report on the Subject of Manufactures", year: 1791}
+          - {author: Ha-Joon Chang, title: "Kicking Away the Ladder", year: 2002}
+        traditions:
+          defining: [nationalism.peronism, nationalism.nasserism]
+          typical: [nationalism.kemalism, nationalism.baathism, nationalism.bolivarianism, socdem.keynesian, marxism.dependency, marxism.arab-socialism, marxism.african-socialism, conservatism.national]
+          contested: [marxism.third-worldism, nationalism.developmental-state]
+          rejects: [liberalism.chicago, liberalism.austrian, liberalism.technocratic]
+        excludes: [development.path.integration]
+        analysis:
+          gains: [industrial-capital, peripheral-workers, professional-managerial]
+          pays: [comprador-capital, landed-capital, finance-capital]
+          mechanism: >
+            Tariffs, exchange controls and state credit move income from exporters, importers and foreign suppliers
+            to national industry and its organized workforce; dependence on imported capital goods and foreign
+            loans remains, which is where the 1980s debt crisis bit.
+          drain: reduces
+          law_of_value: regulates
+
+      - id: development.path.developmental-state
+        label: A strong state steers industry to compete on world markets
+        claim: >
+          A poor country should use a strong state to direct credit, discipline firms and pick industries, push
+          them to export and compete abroad, and climb from cheap manufacturing to high technology.
+        voiced: >
+          Get prices deliberately wrong. Give firms cheap credit and protection, and in return demand export
+          targets, and cut off those who fail. That is how Korea went from wigs to warships in a generation.
+        you: >
+          You think a poor country develops fastest when a strong government guides industry, lends to winners,
+          demands results and pushes firms to compete abroad.
+        because: >
+          Johnson showed Japan's industry ministry steering investment; Amsden showed Korea trading subsidies for
+          performance; Wade showed Taiwan governing the market. These are the only large economies to go from
+          poor to rich after 1945, and China followed a version of the same path. Land reform, state banks and
+          capital controls came first; openness came on the state's terms.
+        against:
+          - from: marxism.dependency
+            text: >
+              Korea and Taiwan were frontline states of the Cold War, given land reform, aid and open U.S. markets
+              to show off capitalism. A model that needed a superpower's sponsorship cannot be copied by a hundred
+              countries at once.
+          - from: socdem.democratic-socialism
+            text: >
+              The miracle ran on military rule, banned unions and sixty-hour weeks. Development that crushes the
+              workers who build it is development for the owners.
+        sources:
+          - {author: Chalmers Johnson, title: "MITI and the Japanese Miracle", year: 1982}
+          - {author: Alice H. Amsden, title: "Asia's Next Giant", year: 1989}
+          - {author: Robert Wade, title: "Governing the Market", year: 1990}
+        traditions:
+          defining: [nationalism.developmental-state]
+          typical: [marxism.scc, nationalism.three-principles, religious.political-meritocracy, conservatism.national]
+          contested: [socdem.keynesian, liberalism.ordoliberal, nationalism.kemalism]
+          rejects: [liberalism.austrian, liberalism.chicago, marxism.third-worldism]
+        analysis:
+          gains: [industrial-capital, professional-managerial, core-workers]
+          pays: [peripheral-workers, peasantry, finance-capital]
+          mechanism: >
+            State control of credit and capital flows keeps foreign finance subordinate and lets national firms
+            climb toward monopoly positions in technology, cutting the drain; the climb is financed by
+            suppressing domestic wages and peasant incomes.
+          drain: reduces
+          law_of_value: regulates
+
+      - id: development.path.delinking
+        label: Delink from the world law of value and develop on your own terms
+        claim: >
+          A poor country should subordinate its external relations to the needs of its own people's development,
+          refusing to adjust to the demands of world markets and creditors, even at the cost of slower trade.
+        voiced: >
+          Delinking is not autarky. It is the refusal to submit national development to the logic of worldwide
+          globalized capital. Set your own prices, plan for your own peasants and workers, trade only on terms
+          that serve that plan.
+        you: >
+          You think a poor country must cut its economy loose from the demands of world markets and lenders, and
+          plan for its own people's needs, even if that means trading less.
+        because: >
+          Amin argued that any country that adjusts to world prices adjusts to the drain: its prices for labor,
+          land and food are set by the core's monopolies. Only by setting internal prices by its own
+          priorities (food first, rural incomes, mass consumption, national control of finance) can it grow
+          without feeding the core. China under Mao, Vietnam and Cuba, in different measures, show the gains in
+          health, literacy and industry from that choice.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Every country that tried to wall itself off, from Albania to North Korea to Burma under Ne Win, ended
+              poorer than its neighbors. Delinking means doing without the technology and markets that make growth
+              possible.
+          - from: marxism.trotskyism
+            text: >
+              Socialism cannot be built in one country, least of all a poor one. Isolation under siege breeds a
+              bureaucracy that manages scarcity, as the Soviet experience showed. The way out is world revolution,
+              not national self-sufficiency.
+        sources:
+          - {author: Samir Amin, title: "Delinking: Towards a Polycentric World", year: 1985}
+          - {author: Julius K. Nyerere, title: "The Arusha Declaration", year: 1967}
+          - {author: Thomas Sankara, title: "A United Front Against Debt", year: 1987}
+        traditions:
+          defining: [marxism.third-worldism]
+          typical: [marxism.maoism, marxism.mlm, marxism.juche, marxism.african-socialism, marxism.hoxhaism, marxism.world-systems]
+          contested: [marxism.scc, nationalism.bolivarianism, ecology.degrowth]
+          rejects: [liberalism.chicago, liberalism.technocratic, liberalism.austrian, marxism.trotskyism]
+        presupposes: [imperialism.nature.unequal-exchange-drain]
+        excludes: [development.path.integration, development.path.market-freedom]
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: [finance-capital, industrial-capital, comprador-capital]
+          mechanism: >
+            Setting domestic prices, credit and investment by internal priorities shuts the channels (world prices,
+            open finance, debt service) through which value leaves, and redirects surplus to rural incomes and
+            mass needs; it invites sanctions and the loss of imported technology.
+          drain: breaks
+          law_of_value: suspends
+
+      - id: development.path.planned-industrialization
+        label: Socialize the economy and plan its industrialization
+        claim: >
+          A poor country should take land, industry and banks into social ownership and plan its
+          industrialization, using the surplus to build heavy industry, infrastructure, schools and health care
+          for all.
+        voiced: >
+          We are fifty or a hundred years behind the advanced countries. We must make good this distance in ten
+          years. Either we do it, or they crush us. Plan, collectivize, build.
+        you: >
+          You think a poor country should put its land, industry and banks in public hands and plan a rapid
+          build-up of industry for everyone's benefit.
+        because: >
+          The Soviet Union went from a peasant country to the second industrial power in two decades and defeated
+          the Nazi invasion with what it built. China's planned economy doubled life expectancy under Mao and
+          built the base of later growth. Preobrazhensky showed where the investment fund must come from when no
+          one will lend: the economy's own surplus, mobilized by planning.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Without market prices, planners cannot know what anything costs. Soviet planning built steel nobody
+              needed and failed to feed its people; the famines of 1932–33 and 1959–61 were the price of its
+              surplus extraction.
+          - from: anarchism.communist
+            text: >
+              Planning by a party state replaces the boss with the bureaucrat. The peasants' grain was seized for
+              factories they never controlled; the workers who built them had no more say than under the owners.
+        sources:
+          - {author: Evgeny Preobrazhensky, title: "The New Economics", year: 1926}
+          - {author: J. V. Stalin, title: "The Tasks of Business Executives", year: 1931}
+          - {author: Mao Zedong, title: "On the Ten Major Relationships", year: 1956}
+        traditions:
+          defining: [marxism.ml]
+          typical: [marxism.maoism, marxism.hoxhaism, marxism.juche, marxism.guevarism, marxism.mlm]
+          contested: [marxism.trotskyism, marxism.scc]
+          rejects: [liberalism.austrian, liberalism.chicago, anarchism.communist, socdem.third-way]
+        presupposes: [allocation.mechanism.central-planning]
+        excludes: [development.path.integration, development.path.market-freedom]
+        analysis:
+          gains: [peripheral-workers, peasantry, professional-managerial]
+          pays: [finance-capital, comprador-capital, landed-capital, industrial-capital]
+          mechanism: >
+            Expropriating land, banks and industry ends foreign and comprador claims on the surplus and puts its
+            use under the plan; in the early decades the peasantry often pays for accumulation through low
+            procurement prices.
+          drain: breaks
+          law_of_value: abolishes
+          disputed: >
+            Whether a planned economy under a single party abolishes the law of value or reproduces it under state
+            ownership (Bettelheim, the state-capitalist theorists) is disputed among Marxists.
+
+      - id: development.path.post-development
+        label: Refuse "development" itself; build good lives on local terms
+        claim: >
+          The goal of catching up with rich countries is a trap. Poor communities should build good lives on
+          their own terms (village self-rule, communal land, local production, living in balance with the land)
+          rather than chase growth.
+        voiced: >
+          The West did not develop us; it underdeveloped us and then sold us its idea of development. We want
+          swaraj in the village and buen vivir on the land, not a copy of the shopping mall.
+        you: >
+          You think poor communities should reject the goal of becoming like rich countries and build lives
+          rooted in their own land, community and ways.
+        because: >
+          Gandhi argued that industrial civilization degrades both the machine-tender and the land, and that
+          India's freedom lay in self-governing, self-sufficient villages. Escobar showed how the discourse of
+          development since 1949 made two-thirds of humanity into "underdeveloped" objects of expert
+          intervention. The planet cannot support universal consumption at Northern levels; the real wealth is
+          communal land, autonomy and culture.
+        against:
+          - from: marxism.ml
+            text: >
+              Romanticizing the village leaves peasants without electricity, hospitals, tractors or the industry
+              to defend themselves. The anti-imperialist states that survived built heavy industry and armies.
+          - from: liberalism.technocratic
+            text: >
+              Mothers in poor villages want vaccines, clean water and schools for their daughters. Telling them
+              growth is a Western idea is a luxury of those who already have it.
+        sources:
+          - {author: M. K. Gandhi, title: "Hind Swaraj", year: 1909}
+          - {author: Arturo Escobar, title: "Encountering Development", year: 1995}
+          - {author: Wolfgang Sachs, title: "The Development Dictionary", year: 1992, note: editor}
+        traditions:
+          defining: [nationalism.gandhian]
+          typical: [nationalism.decolonial, nationalism.indigenous-sovereignty, zapatismo, ecology.degrowth, ecology.deep-ecology, anarchism.green, conservatism.distributism]
+          contested: [religious.engaged-buddhism, marxism.degrowth-communism]
+          rejects: [marxism.ml, liberalism.technocratic, liberalism.chicago, nationalism.developmental-state]
+        excludes: [development.path.integration, development.path.planned-industrialization]
+        analysis:
+          gains: [peasantry, petty-bourgeoisie]
+          pays: [industrial-capital, finance-capital, landed-capital]
+          mechanism: >
+            Withdrawing land and labor from world markets into communal use cuts what can be extracted from those
+            communities; without industry or state power, they remain exposed to dispossession and cannot change
+            the terms of the wider economy.
+          drain: reduces
+          law_of_value: suspends
+
+  # ------------------------------------------------------------------
+  - id: contradiction.primary
+    domain: world
+    layer: analysis
+    question: What is the main conflict of our era?
+    plain: If you had to name the one conflict that shapes everything else in the world today, what would it be?
+    short: the primary contradiction
+    importance: 3
+    region: world
+    positions:
+      - id: contradiction.primary.imperialism-vs-oppressed
+        label: Imperialism against the oppressed nations and peoples
+        claim: >
+          The main conflict of our time is between the imperialist core, led by the United States, and the
+          peoples and nations of the periphery. Struggles inside every country take their shape from it.
+        voiced: >
+          The vast areas of Asia, Africa and Latin America are the storm centers of world revolution, dealing
+          direct blows at imperialism. The countryside of the world is surrounding its cities.
+        you: >
+          You think the conflict that shapes the world most is between the rich, powerful countries and the
+          poor, dominated peoples of the world.
+        because: >
+          Mao taught that in every complex process one contradiction is principal and determines the others.
+          The Chinese Communist Party's 1963 general line and Lin Biao's 1965 essay placed it between
+          imperialism and the oppressed nations, since the core's stability rests on the periphery. Amin argued
+          the same: the polarization of the world economy is capitalism's main product, and the real movements
+          of history since 1945 (revolutions, decolonization, the rise of the South) have come from the
+          periphery.
+        against:
+          - from: marxism.trotskyism
+            text: >
+              This dissolves class into nation and makes allies of any government that quarrels with Washington,
+              including ones that shoot their own strikers. The primary contradiction is still labor and capital,
+              in every country.
+          - from: liberalism.internationalist
+            text: >
+              The defining struggle is not geography but government: open societies against autocracies. Many
+              "oppressed nations" are ruled by governments that oppress their own people.
+        sources:
+          - {author: Mao Zedong, title: "On Contradiction", year: 1937}
+          - {author: Communist Party of China Central Committee, title: "A Proposal Concerning the General Line of the International Communist Movement", year: 1963}
+          - {author: Lin Biao, title: "Long Live the Victory of People's War!", year: 1965}
+          - {author: Samir Amin, title: "Beyond US Hegemony", year: 2006}
+        traditions:
+          defining: [marxism.maoism, marxism.third-worldism]
+          typical: [marxism.mlm, marxism.ml, marxism.juche, marxism.world-systems, nationalism.pan-africanism, nationalism.bolivarianism, marxism.guevarism, religious.islamism-khomeinist]
+          contested: [marxism.scc, marxism.hoxhaism]
+          rejects: [marxism.trotskyism, marxism.third-camp, marxism.left-communism, liberalism.internationalist, conservatism.neo]
+        presupposes: [imperialism.nature.unequal-exchange-drain]
+        excludes: [contradiction.primary.democracy-vs-autocracy]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, comprador-capital]
+          mechanism: >
+            Making anti-imperialism the first task brings periphery workers, peasants and national fractions into
+            fronts against the core powers and their local partners, contesting the drain at its source; it
+            can also subordinate workers' own demands to governments that claim the anti-imperialist banner.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >
+            The frame takes this line. Trotskyists and left communists hold that labor against capital is primary
+            everywhere; within Maoism, the 1974–77 Three Worlds theory (which ranked the Soviet Union as the main
+            enemy and allowed alliance with the United States) was rejected by Hoxha and by most later MLM
+            parties.
+          consciousness: hegemonic
+
+      - id: contradiction.primary.three-worlds
+        label: The superpowers against the Third World, with the Second World as ally
+        claim: >
+          The world is divided into three: the two superpowers that contend for hegemony, the other rich
+          countries, and the mass of poor countries. The poor countries, allied with the middle group, should
+          oppose superpower hegemonism, especially the more aggressive superpower.
+        voiced: >
+          The United States and the Soviet Union are the First World. Japan, Europe and Canada are the Second.
+          Asia, Africa and Latin America are the Third World, the main force against imperialism and hegemonism.
+          Unite the Third World, win over the Second, oppose the superpowers.
+        you: >
+          You think the world's poor countries should unite with middle powers against the biggest superpowers
+          that try to dominate everyone.
+        because: >
+          Mao set out the division to Kaunda in 1974, and Deng Xiaoping presented it at the United Nations the
+          same year. It matched the facts of power: two superpowers armed with nuclear weapons, both intervening
+          everywhere, and a third world of new nations with numbers but little force. A broad united front
+          against the more dangerous hegemon, using contradictions among the rich, maximized the room for the
+          poor countries.
+        against:
+          - from: marxism.hoxhaism
+            text: >
+              Hoxha called it a counter-revolutionary theory: it erased class from the analysis, praised
+              reactionary governments for their geography, and justified China's alliance with the United States
+              and its support for Pinochet's Chile and Mobutu's Zaire.
+          - from: marxism.trotskyism
+            text: >
+              It treated the Soviet Union as worse than the United States and turned the Chinese state into an
+              ally of Washington against movements in Angola and elsewhere. A theory of states, not of classes.
+        sources:
+          - {author: Deng Xiaoping, title: "Speech at the Special Session of the U.N. General Assembly", year: 1974}
+          - {author: Editorial Department of Renmin Ribao, title: "Chairman Mao's Theory of the Differentiation of the Three Worlds Is a Major Contribution to Marxism-Leninism", year: 1977}
+          - {author: Enver Hoxha, title: "Imperialism and the Revolution", year: 1978}
+        traditions:
+          defining: [marxism.maoism]
+          typical: [marxism.scc]
+          contested: [marxism.mlm]
+          rejects: [marxism.hoxhaism, marxism.trotskyism, marxism.third-camp, marxism.ml]
+        tension: [contradiction.primary.imperialism-vs-oppressed]
+        analysis:
+          gains: [industrial-capital, comprador-capital, peasantry]
+          pays: [peripheral-workers]
+          mechanism: >
+            Ranking states by bloc rather than class directs support to any government that opposes the main
+            hegemon, which strengthened poor countries' bargaining power while also backing ruling classes
+            that suppressed their own workers.
+          drain: reduces
+          law_of_value: none
+          disputed: >
+            Whether the theory was Mao's own line or a post-1976 reworking by Deng is disputed; Hoxha and most
+            later MLM parties treat it as a break with Marxism-Leninism.
+
+      - id: contradiction.primary.capital-vs-labor
+        label: Capital against labor, everywhere
+        claim: >
+          The main conflict of our time, as of every capitalist age, is between the class that owns the means of
+          production and the class that works them, in every country, rich or poor.
+        voiced: >
+          The workers have no country. There is one world working class and one world capitalist class, and
+          every national flag is used to hide that fact. Workers of all countries, unite.
+        you: >
+          You think the main conflict everywhere is between the people who own businesses and the people who work
+          for them, whatever country they are in.
+        because: >
+          Capital has spread its relations to every corner of the earth, so the wage relation is now the
+          condition of most of humanity. National struggles end with a new ruling class in power over the same
+          workers, as decolonization showed. Only the working class, organized across borders, can end
+          exploitation, and it must not subordinate itself to any national bourgeoisie.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              One world working class splits into nations paid at radically different rates for the same work.
+              Telling the Bangladeshi garment worker and the German engineer they share one position ignores who
+              lives off whom.
+          - from: conservatism.christian-democracy
+            text: >
+              Labor and capital need each other. The task is to reconcile them in a social market and
+              co-determination, not to treat their interdependence as war.
+        sources:
+          - {author: Karl Marx and Friedrich Engels, title: "Manifesto of the Communist Party", year: 1848}
+          - {author: Leon Trotsky, title: "The Permanent Revolution", year: 1930}
+        traditions:
+          defining: [marxism.trotskyism, marxism.left-communism]
+          typical: [marxism.third-camp, marxism.council-communism, marxism.classical, anarchism.syndicalist, anarchism.communist, marxism.luxemburgism, marxism.autonomism]
+          contested: [marxism.ml, socdem.democratic-socialism]
+          rejects: [marxism.third-worldism, conservatism.christian-democracy, conservatism.cst, liberalism.classical]
+        presupposes: [class.concept.relation-to-production, history.motor.class-struggle]
+        excludes: [contradiction.primary.civilizations]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            A world class line directs workers in every country against their own employers and states, which
+            costs capital everywhere; by treating national position as secondary, it refuses alliances with
+            periphery states against the core and leaves the core's own share in the drain outside its program.
+          drain: reduces
+          law_of_value: abolishes
+          disputed: >
+            The frame holds imperialism to be the primary contradiction and analyzes internal class conflict within
+            it; this position reverses that order.
+          consciousness: hegemonic
+
+      - id: contradiction.primary.inter-imperialist-war
+        label: Rival great powers heading toward war
+        claim: >
+          The main conflict of our time is the growing rivalry of great powers (the United States and its allies
+          against China and Russia), which is heading toward a world war that workers everywhere would pay for.
+        voiced: >
+          The main enemy is at home. The drums are beating in Washington, Beijing and Moscow alike. Turn the
+          imperialist war into a war against the war-makers.
+        you: >
+          You think the danger that shapes everything now is a coming clash among the great powers, and that
+          ordinary people should refuse to fight for any of them.
+        because: >
+          Every period of hegemonic decline has ended in war among the powers: the Napoleonic wars, 1914, 1939.
+          American supremacy is eroding while China's economy and Russia's military assert themselves; tariffs,
+          sanctions, arms races and proxy wars are already here. Liebknecht's slogan, the main enemy is at home,
+          is the only answer that keeps workers from killing each other for their masters.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              The danger of war comes overwhelmingly from the declining hegemon trying to hold its position. Equal
+              blame for the encircler and the encircled is neutrality in the hegemon's favor.
+          - from: conservatism.neo
+            text: >
+              Wars come when aggressors think the defenders are weak. Refusing to arm against Russia and China is
+              exactly what invites the war this position fears.
+        sources:
+          - {author: Karl Liebknecht, title: "The Main Enemy Is at Home!", year: 1915}
+          - {author: V. I. Lenin, title: "The War and Russian Social-Democracy", year: 1914}
+          - {author: Ho-fung Hung, title: "Clash of Empires", year: 2022}
+        traditions:
+          defining: [marxism.third-camp]
+          typical: [marxism.trotskyism, marxism.left-communism, marxism.luxemburgism, anarchism.communist, anarchism.syndicalist]
+          contested: [marxism.mlm, marxism.hoxhaism]
+          rejects: [marxism.third-worldism, marxism.scc, conservatism.neo, liberalism.internationalist]
+        presupposes: [imperialism.nature.inter-imperialist-rivalry]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Opposing all sides' war preparation targets military budgets and arms contracts, which costs arms
+            makers and the investors who need markets secured; equidistance between camps leaves the existing
+            hegemon's claims on the periphery unchallenged by any state.
+          drain: reduces
+          law_of_value: none
+          disputed: >
+            Whether China and Russia are imperialist powers or challengers to imperialism divides Marxists; see
+            china.role.
+
+      - id: contradiction.primary.democracy-vs-autocracy
+        label: Liberal democracies against autocracies
+        claim: >
+          The main conflict of our time is between open societies with liberal democracy, rights and the rule of
+          law, and autocratic states (Russia, China, Iran and others) that want a world safe for dictatorship.
+        voiced: >
+          The defining contest of the century is between democracy and autocracy. Autocracy, Inc. (a network of
+          kleptocrats in Moscow, Beijing, Tehran and Caracas) wants to make the world safe for their power. The
+          free world must stand together.
+        you: >
+          You think the world's main conflict is between countries where people elect their governments and
+          speak freely and countries ruled by unaccountable leaders.
+        because: >
+          Russia invaded Ukraine; China crushed Hong Kong's autonomy and threatens Taiwan; Iran arms militias
+          across the region. Autocracies cooperate to evade sanctions, share surveillance tools and prop each
+          other up. Applebaum shows a network of kleptocratic states working together. Where liberal
+          democracies hold together, as in NATO since 1949, wars among them have stopped and prosperity has
+          followed.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              The "democracies" back Saudi Arabia, Egypt's generals and Israel's occupation; they overthrew
+              Mossadegh, Árbenz, Lumumba and Allende. The line falls not between rulers and ruled but between those
+              who command the drain and those who resist it.
+          - from: conservatism.paleo
+            text: >
+              A crusade to remake the world in our image is how we got Iraq and Libya. Other nations' forms of
+              government are their business, and war for an ideology is not in our people's interest.
+        sources:
+          - {author: Anne Applebaum, title: "Autocracy, Inc.", year: 2024}
+          - {author: Robert Kagan, title: "The Return of History and the End of Dreams", year: 2008}
+          - {author: Larry Diamond, title: "Ill Winds", year: 2019}
+        traditions:
+          defining: [liberalism.internationalist, conservatism.neo]
+          typical: [liberalism.progressive, socdem.third-way, liberalism.technocratic, conservatism.christian-democracy]
+          contested: [socdem.democratic-socialism, marxism.third-camp]
+          rejects: [marxism.third-worldism, marxism.ml, conservatism.paleo, conservatism.national, nationalism.eurasianism]
+        excludes: [contradiction.primary.imperialism-vs-oppressed]
+        tension: [intl.sovereignty.nations-set-own-course]
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >
+            Framing world politics as a contest of governments recruits core publics behind sanctions, alliances
+            and arms spending against the states most likely to set their own terms of trade and finance, which
+            protects the core's position at the top of the drain.
+          drain: sustains
+          law_of_value: extends
+
+      - id: contradiction.primary.civilizations
+        label: A clash of civilizations
+        claim: >
+          The main fault lines of our time run between civilizations defined above all by religion and culture:
+          the West, the Islamic world, China, Russia's Orthodox world, India and others.
+        voiced: >
+          In the post-Cold War world the most important distinctions among peoples are not ideological or
+          economic. They are cultural. People define themselves by ancestry, religion, language, history, values
+          and customs, and the great conflicts will run along the lines between civilizations.
+        you: >
+          You think the deep conflicts of our time are between great cultures and religions, not between classes
+          or countries.
+        because: >
+          Huntington argued that after the Cold War, identity replaced ideology: modernization did not make
+          people Western, it revived their own traditions. The wars in the former Yugoslavia, the Caucasus,
+          Kashmir and the Middle East ran along civilizational lines. Ignoring this leads the West to universal
+          crusades it cannot win; recognizing it means defending one's own civilization and respecting others'
+          spheres.
+        against:
+          - from: marxism.ml
+            text: >
+              The wars Huntington lists were fought over land, oil and state power, with religion as the flag. The
+              Gulf monarchies ally with Washington, not with "Islam"; Russia and China sell to the West what the
+              market wants.
+          - from: nationalism.decolonial
+            text: >
+              "Civilization" was the colonizer's word for his own supremacy. Ranking peoples into blocs by religion
+              rearms an old hierarchy and makes migrants the enemy within.
+        sources:
+          - {author: Samuel P. Huntington, title: "The Clash of Civilizations and the Remaking of World Order", year: 1996}
+          - {author: Alexander Dugin, title: "The Foundations of Geopolitics", year: 1997}
+        traditions:
+          defining: [conservatism.traditionalist]
+          typical: [conservatism.paleo, nationalism.eurasianism, nationalism.hindutva, religious.salafi-jihadism, fascism.identitarian, religious.buddhist-nationalism, conservatism.evangelical-right]
+          contested: [conservatism.national, religious.islamism-brotherhood]
+          rejects: [marxism.ml, marxism.trotskyism, liberalism.internationalist, nationalism.decolonial]
+        presupposes: [history.motor.ideas]
+        excludes: [contradiction.primary.capital-vs-labor]
+        analysis:
+          gains: [industrial-capital, petty-bourgeoisie, landed-capital]
+          pays: [peripheral-workers, reserve-army, core-workers]
+          mechanism: >
+            Sorting conflict by religion and culture divides workers within and across countries (migrants
+            against natives, Muslims against Hindus or Christians) and supports wars and borders that protect
+            the existing division of wealth.
+          drain: sustains
+          law_of_value: none
+          method: idealist
+
+      - id: contradiction.primary.globalism-vs-nations
+        label: Globalist elites against nations and peoples
+        claim: >
+          The main conflict of our time is between a borderless elite (global finance, international bodies,
+          cosmopolitan professionals) and nations wanting to govern themselves, protect their workers and keep
+          their culture.
+        voiced: >
+          The divide is no longer left and right. It is globalists against patriots, Anywheres against
+          Somewheres, the people of nowhere against the people of a place. Nations are rising to take back
+          control.
+        you: >
+          You think the main fight today is between global elites who want a borderless world and ordinary people
+          who want their nations to stay theirs.
+        because: >
+          Since the 1990s parties of left and right converged on open trade, open migration and supranational
+          rule, and the losers were the working and middle classes of every nation. Brexit, Trump, Modi, Orbán
+          and Meloni won by naming that divide. Hazony shows the choice between a universal empire and a world of
+          independent nations is the real one; Dugin speaks of a revolt of the world's peoples against the
+          liberal hegemon.
+        against:
+          - from: marxism.ml
+            text: >
+              The national billionaires who fund these movements are as global as the globalists. Once in power,
+              they cut taxes for capital, break unions and keep the loans; "the nation" is the flag over the same
+              property.
+          - from: liberalism.internationalist
+            text: >
+              The "globalist elite" is a conspiracy theory with a long and ugly history. Real problems (pandemics,
+              climate, finance) cross borders and need shared rules, and nationalism alone has no answer to them.
+        sources:
+          - {author: Yoram Hazony, title: "The Virtue of Nationalism", year: 2018}
+          - {author: David Goodhart, title: "The Road to Somewhere", year: 2017}
+          - {author: Alexander Dugin, title: "The Fourth Political Theory", year: 2009}
+        traditions:
+          defining: [conservatism.national]
+          typical: [conservatism.right-populism, conservatism.paleo, conservatism.postliberal, nationalism.eurasianism, libertarianism.paleo, fascism.third-position, commonsense.rigged]
+          contested: [socdem.left-populism, conservatism.gaullism]
+          rejects: [liberalism.internationalist, liberalism.technocratic, marxism.ml, marxism.trotskyism]
+        presupposes: [imperialism.nature.globalist-project]
+        analysis:
+          gains: [industrial-capital, petty-bourgeoisie, landed-capital]
+          pays: [reserve-army, peripheral-workers, finance-capital]
+          mechanism: >
+            Naming a cosmopolitan elite instead of a class lets national capital lead a coalition of small owners
+            and native workers against transnational finance and migrants; the program (tariffs, deportations,
+            tax cuts) redistributes within the core and toward national owners.
+          drain: sustains
+          law_of_value: regulates
+          consciousness: hegemonic
+
+      - id: contradiction.primary.people-vs-elites
+        label: The many against the rich and powerful few
+        claim: >
+          The main conflict of our time is between ordinary people and a small class of the super-rich and
+          their political servants, who have captured governments and economies everywhere.
+        voiced: >
+          We are the 99 percent. The one percent owns the politicians, writes the laws and takes the gains. It
+          is not left against right. It is the top against everyone else.
+        you: >
+          You think the main conflict today is between ordinary people and a tiny rich elite that runs things for
+          itself.
+        because: >
+          Since 1980 the share of wealth held by the top one percent has climbed in almost every country while
+          wages stagnated. Lobbying, campaign money and the revolving door let the rich buy policy. Laclau and
+          Mouffe show that politics works by drawing a line between "the people" and those in power, and the
+          movements that draw it sharply (from Occupy to Podemos to Bernie Sanders) are the ones that move
+          millions.
+        against:
+          - from: marxism.ml
+            text: >
+              "Elites" is a moral category, not a class. It points at the politicians and billionaires while
+              leaving the relations of property that make them in place, and the line can be redrawn against
+              migrants or Jews by the right.
+          - from: marxism.third-worldism
+            text: >
+              Measured on a world scale, the 99 percent of a rich country includes many in the top tenth of
+              humanity. A populism of the core is silent about the drain.
+        sources:
+          - {author: Ernesto Laclau, title: "On Populist Reason", year: 2005}
+          - {author: Chantal Mouffe, title: "For a Left Populism", year: 2018}
+        traditions:
+          defining: [socdem.left-populism]
+          typical: [commonsense.rigged, commonsense.anti-politics, socdem.democratic-socialism, conservatism.right-populism]
+          contested: [nationalism.peronism, nationalism.bolivarianism]
+          rejects: [marxism.ml, marxism.trotskyism, liberalism.technocratic]
+        presupposes: [cs.rigged.system-rigged]
+        analysis:
+          gains: [core-workers, petty-bourgeoisie, professional-managerial]
+          pays: [finance-capital]
+          mechanism: >
+            A people-against-elite line mobilizes broad majorities for taxing the rich and limiting finance, but
+            it names the target by size of fortune rather than by property relation, and in rich countries it
+            leaves out the world division of income.
+          drain: none
+          law_of_value: regulates
+          consciousness: class-economic
+
+      - id: contradiction.primary.ecological
+        label: Humanity against the breakdown of the living planet
+        claim: >
+          The main conflict of our time is between the way the world economy runs and the ecological limits of
+          the planet: climate breakdown and mass extinction now threaten everything else.
+        voiced: >
+          There are no jobs on a dead planet. Every other struggle is waged on ground that is now burning,
+          flooding and dying. Climate breakdown is the frame inside which every other question must be asked.
+        you: >
+          You think the climate and ecological crisis is the conflict that matters most, since it puts everything
+          else at risk.
+        because: >
+          The planet is on course to warm well beyond 1.5 degrees, with collapsing ice sheets, failing harvests
+          and hundreds of millions displaced. Klein shows the crisis is driven by an economy built on endless
+          growth and fossil fuel. Saito shows that Marx's own late work treated the rift between society and
+          nature as central. No other conflict can be won on a planet that cannot feed its people.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              The ecological crisis is not humanity's but the core's: the richest tenth of the world produces half
+              of emissions, and the materials and land it consumes are drained from the South. Ecology is a form
+              of the imperial contradiction, not a substitute for it.
+          - from: ecology.ecomodernism
+            text: >
+              Climate change is a serious problem with technical solutions (nuclear power, clean energy,
+              intensive farming) that growth helps pay for. Calling it the master conflict breeds panic and
+              anti-growth politics that hurt the poor.
+        sources:
+          - {author: Naomi Klein, title: "This Changes Everything", year: 2014}
+          - {author: Kohei Saito, title: "Capital in the Anthropocene", year: 2020}
+          - {author: Andreas Malm, title: "Fossil Capital", year: 2016}
+        traditions:
+          defining: [marxism.ecosocialism, ecology.degrowth]
+          typical: [marxism.degrowth-communism, ecology.deep-ecology, ecology.environmental-justice, anarchism.green]
+          contested: [ecology.green-growth, technology.longtermism]
+          rejects: [ecology.ecomodernism, liberalism.chicago, conservatism.national]
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Making ecological breakdown the master conflict threatens fossil and extractive capital through limits
+            on output and emissions; whether it reduces the drain depends on whether the cuts fall on the core's
+            consumption or on the South's development.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            Hickel and degrowth Marxists tie ecological breakdown to the drain; green-growth and some ecosocialist
+            currents treat it as humanity-wide and leave the core–periphery division aside.
+
+  # ------------------------------------------------------------------
+  - id: world.order
+    domain: world
+    layer: horizon
+    question: US-led order or a multipolar world?
+    plain: Should one superpower and its allies keep running the world system, or should power be shared among many centers?
+    short: the world order
+    importance: 2
+    region: world
+    positions:
+      - id: world.order.liberal-order
+        label: Keep the rules-based liberal order led by the United States
+        claim: >
+          The world should keep the order built after 1945: open trade, alliances, international institutions
+          and rules, led by the United States and its democratic allies, binding even the leader itself.
+        voiced: >
+          The liberal international order is the most successful order in history: decades without great-power
+          war, unprecedented growth, the spread of liberal democracy. It is worth defending and worth reforming.
+        you: >
+          You think the world is safest and most prosperous with the system of rules, alliances and institutions
+          led by the United States and its allies.
+        because: >
+          Ikenberry shows that the United States, unusually among hegemons, bound itself in institutions others
+          could join and use, which made its leadership acceptable. Keohane shows that institutions lower the
+          cost of cooperation and outlast the power that created them. The alternative is a return to spheres of
+          influence and great-power war.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              The "rules" were written by the creditors and the nuclear powers. The order that brought peace to
+              Western Europe brought wars, coups and debt crises to the South: Korea, Vietnam, Indonesia,
+              Congo, Chile, Iraq.
+          - from: conservatism.national
+            text: >
+              The order's institutions now bind the nations that built them while China cheats on the rules.
+              Americans paid for it with their industry and their sons.
+        sources:
+          - {author: G. John Ikenberry, title: "Liberal Leviathan", year: 2011}
+          - {author: Robert O. Keohane, title: "After Hegemony", year: 1984}
+        traditions:
+          defining: [liberalism.internationalist]
+          typical: [liberalism.technocratic, socdem.third-way, conservatism.christian-democracy, liberalism.progressive, liberalism.social]
+          contested: [conservatism.neo, socdem.nordic]
+          rejects: [marxism.third-worldism, marxism.ml, conservatism.national, nationalism.eurasianism, conservatism.paleo]
+        excludes: [world.order.multipolar-sovereignty]
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial, core-workers]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >
+            The order's core institutions (dollar reserve system, creditor-run lenders, investment and patent
+            rules, alliances) keep periphery states paying in dollars, opening their markets and protecting
+            foreign property, which secures the drain.
+          drain: sustains
+          law_of_value: extends
+
+      - id: world.order.american-primacy
+        label: American military primacy keeps the peace
+        claim: >
+          The United States should keep unmatched military power and the will to use it, because only American
+          strength deters aggressors and keeps a liberal world possible.
+        voiced: >
+          The jungle grows back. American power cleared it once and must keep clearing it. A benevolent hegemon
+          is the best thing that ever happened to the world, and we should not apologize for it.
+        you: >
+          You think the world needs the United States to stay the strongest military power and to act when
+          aggressors threaten others.
+        because: >
+          Krauthammer saw a unipolar moment after 1991 and urged that it be used; Kagan argues the liberal order
+          is a garden that must be tended by force or the jungle of war and tyranny returns. Every time the
+          United States pulled back (the 1930s, after Vietnam) aggressors advanced. Primacy is cheaper than war.
+        against:
+          - from: conservatism.paleo
+            text: >
+              Primacy gave us Iraq, Afghanistan, Libya and twenty trillion dollars of debt. A republic should
+              defend itself, not police the planet.
+          - from: marxism.dependency
+            text: >
+              The garden is the drain and the gardener's tools are bombers. Primacy is the military guarantee
+              that periphery countries keep paying and keep open.
+        sources:
+          - {author: Charles Krauthammer, title: "The Unipolar Moment", year: 1990}
+          - {author: Robert Kagan, title: "The Jungle Grows Back", year: 2018}
+          - {author: William Kristol and Robert Kagan, title: "Toward a Neo-Reaganite Foreign Policy", year: 1996}
+        traditions:
+          defining: [conservatism.neo]
+          typical: [conservatism.fusionism, conservatism.evangelical-right, liberalism.internationalist]
+          contested: [conservatism.national]
+          rejects: [conservatism.paleo, libertarianism.paleo, marxism.third-worldism, marxism.ml, nationalism.eurasianism]
+        excludes: [world.order.multipolar-sovereignty, world.order.restraint]
+        analysis:
+          gains: [finance-capital, industrial-capital, comprador-capital]
+          pays: [peripheral-workers, peasantry, core-workers]
+          mechanism: >
+            Unmatched force backs the dollar, creditor claims and investor rights everywhere and deters
+            periphery states from changing terms; the arms budget is paid by core taxpayers and its wars by
+            periphery populations.
+          drain: sustains
+          law_of_value: extends
+
+      - id: world.order.restraint
+        label: Accept a balance of power and spheres of influence
+        claim: >
+          The great powers should accept each other's spheres of influence and balance one another, with the
+          United States defending its core interests and avoiding crusades to remake the world.
+        voiced: >
+          Great powers act like great powers. NATO expansion poked the bear, regime-change wars made enemies, and
+          containment by alliance with every rival of China will end in war. Balance, do not crusade.
+        you: >
+          You think the great powers should accept each other's spheres of influence and stop trying to remake
+          other countries.
+        because: >
+          Waltz showed that in a world without a world government, states seek security against each other, and
+          balance is the most stable outcome. Mearsheimer argues the West provoked Russia by expanding NATO to
+          its border, and that liberal crusades fail because nationalism defeats them. Realism keeps wars rare by
+          keeping ambitions modest.
+        against:
+          - from: liberalism.internationalist
+            text: >
+              "Spheres of influence" means Ukrainians, Taiwanese and Georgians do not get to choose. Realism gives
+              big states a veto over small ones' freedom.
+          - from: marxism.third-worldism
+            text: >
+              Realists explain the powers' behavior and take no side on the drain. A balance among great powers can
+              be a deal to share the periphery, as at Berlin in 1885.
+        sources:
+          - {author: Kenneth N. Waltz, title: "Theory of International Politics", year: 1979}
+          - {author: John J. Mearsheimer, title: "The Great Delusion", year: 2018}
+          - {author: John J. Mearsheimer, title: "Why the Ukraine Crisis Is the West's Fault", year: 2014}
+        traditions:
+          typical: [conservatism.paleo, conservatism.gaullism, libertarianism.paleo, libertarianism.minarchist, conservatism.national]
+          contested: [conservatism.burkean]
+          rejects: [conservatism.neo, liberalism.internationalist]
+        tags: [realism]
+        analysis:
+          gains: [industrial-capital, core-workers]
+          pays: [peripheral-workers]
+          mechanism: >
+            Accepting spheres of influence lowers war spending and the risk of great-power war, but it divides the
+            periphery among the powers' zones instead of contesting their claims on it.
+          drain: sustains
+          law_of_value: none
+          disputed: >
+            Some anti-imperialists welcome realist restraint as a check on the hegemon; others read it as a
+            division of the periphery among the powers.
+
+      - id: world.order.multipolar-sovereignty
+        label: A multipolar world gives the South room to develop
+        claim: >
+          Power should be shared among many centers (China, Russia, India, Brazil, regional blocs) so that no
+          single hegemon can dictate terms, and poor countries can bargain, trade and borrow on better terms.
+        voiced: >
+          The age of one hegemon is ending. A polycentric world, with BRICS, new banks, trade in our own
+          currencies, gives Africa, Asia and Latin America room to say no to Washington, and room to develop.
+        you: >
+          You think the world will be fairer if power is shared among many centers, so poorer countries are not
+          at the mercy of one superpower.
+        because: >
+          Amin argued that a polycentric world is the condition of delinking: when no single power controls
+          finance, technology and arms, periphery states can choose their partners and their path. China's loans
+          and roads, BRICS' own development bank, and trade outside the dollar already give countries options
+          the old order denied. Prashad shows that the Global South's best moments (Bandung, the New
+          International Economic Order) came when it could play the powers against each other.
+        against:
+          - from: marxism.third-camp
+            text: >
+              Multipolarity is more bosses, not fewer. China's banks take collateral like any others; Russia's
+              army makes war like any other. Workers get no liberation from a choice of masters.
+          - from: liberalism.internationalist
+            text: >
+              The "poles" on offer are autocracies. A world shaped by Beijing and Moscow will not be kinder to small
+              countries or to dissent.
+        sources:
+          - {author: Samir Amin, title: "Beyond US Hegemony", year: 2006}
+          - {author: Vijay Prashad, title: "The Darker Nations", year: 2007}
+          - {author: Vijay Prashad, title: "The Poorer Nations", year: 2012}
+        traditions:
+          defining: [marxism.third-worldism]
+          typical: [marxism.ml, marxism.scc, nationalism.bolivarianism, nationalism.pan-africanism, marxism.world-systems, conservatism.gaullism]
+          contested: [marxism.maoism, marxism.mlm]
+          rejects: [liberalism.internationalist, conservatism.neo, marxism.third-camp, marxism.trotskyism]
+        presupposes: [intl.sovereignty.nations-set-own-course]
+        excludes: [world.order.liberal-order, world.order.american-primacy]
+        analysis:
+          gains: [peripheral-workers, peasantry, industrial-capital]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >
+            Alternatives in credit, technology and markets let periphery states refuse creditor conditions and
+            raise export prices, which cuts the core's monopoly rents; the gains can be captured by periphery
+            ruling classes as easily as by workers.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            The frame's line. Third-camp writers answer that multipolarity is a rivalry among capitalist powers
+            that leaves workers' exploitation in place.
+
+      - id: world.order.civilizational-poles
+        label: A world of great civilizations, each sovereign in its sphere
+        claim: >
+          The world should be divided among great civilizations (Eurasian, Chinese, Islamic, Indian, Western),
+          each ruling its own sphere by its own traditions, against a single liberal empire imposing its values
+          on all.
+        voiced: >
+          Against the unipolar world of Atlanticism, we raise a multipolar world of civilizations. Each has the
+          right to its own values, its own sacred order, its own idea of man. Liberalism is not universal; it is
+          one parochial tradition masquerading as humanity.
+        you: >
+          You think the world should be divided among great civilizations, each living by its own traditions
+          within its own sphere.
+        because: >
+          Dugin argues that liberalism, having defeated communism and fascism, became a global hegemony that
+          dissolves every tradition into individuals and markets. Only great civilizational spaces, centered on
+          strong states with their own spiritual traditions, can resist it. Schmitt's idea of large spaces (each
+          with its own power excluding outsiders) gives the legal form.
+        against:
+          - from: liberalism.internationalist
+            text: >
+              "Civilizational spheres" mean small nations swallowed by big neighbors and dissidents silenced in the
+              name of tradition. Ukraine is what this theory looks like in practice.
+          - from: marxism.ml
+            text: >
+              Civilization replaces class with culture. Russia's oligarchs and China's billionaires invest through
+              the same havens as the West's; the sacred order protects their property.
+        sources:
+          - {author: Alexander Dugin, title: "The Foundations of Geopolitics", year: 1997}
+          - {author: Alexander Dugin, title: "The Fourth Political Theory", year: 2009}
+          - {author: Carl Schmitt, title: "The Nomos of the Earth", year: 1950}
+        traditions:
+          defining: [nationalism.eurasianism]
+          typical: [conservatism.traditionalist, fascism.traditionalist, fascism.third-position, nationalism.hindutva, conservatism.reactionary]
+          contested: [conservatism.national, religious.islamism-khomeinist]
+          rejects: [liberalism.internationalist, conservatism.neo, marxism.ml, marxism.trotskyism]
+        presupposes: [contradiction.primary.civilizations]
+        analysis:
+          gains: [landed-capital, industrial-capital, comprador-capital]
+          pays: [peripheral-workers, reserve-army]
+          mechanism: >
+            Spheres ruled by civilizational states let semi-peripheral ruling classes capture regional drains
+            from smaller neighbors and suppress labor and minorities in the name of tradition, while contesting
+            the Western core's share.
+          drain: softens
+          law_of_value: regulates
+
+      - id: world.order.nation-first
+        label: No world order at all; each nation looks after itself
+        claim: >
+          There should be no project of world order. Each nation should pursue its own interest, trade and ally
+          as it sees fit, and leave other nations to run their own affairs.
+        voiced: >
+          America first, and every nation first in its own house. We do not want to run the world, and we do not
+          want the world to run us. Good fences make good neighbors.
+        you: >
+          You think your country should look after its own interests and stay out of trying to organize the
+          world.
+        because: >
+          Hazony argues that a world of independent nations is the only order that respects human diversity and
+          limits power. Buchanan argued that the American republic was never meant to be an empire. Nations
+          that stick to their own interest fight fewer wars than crusading ones, and their citizens keep control
+          of their own affairs.
+        against:
+          - from: liberalism.internationalist
+            text: >
+              Trade, finance, pandemics and climate do not stop at borders. A world of nations each for itself
+              was the world of the 1930s.
+          - from: marxism.third-worldism
+            text: >
+              "Each nation for itself" in a world where some nations own the patents, the reserve currency and the
+              navies is a charter for the strong. Core nationalism keeps the drain and stops paying for its
+              upkeep.
+        sources:
+          - {author: Yoram Hazony, title: "The Virtue of Nationalism", year: 2018}
+          - {author: Patrick J. Buchanan, title: "A Republic, Not an Empire", year: 1999}
+        traditions:
+          defining: [conservatism.national, conservatism.paleo]
+          typical: [conservatism.right-populism, libertarianism.paleo, commonsense.look-after-your-own, conservatism.postliberal]
+          contested: [conservatism.gaullism, nationalism.civic]
+          rejects: [liberalism.internationalist, conservatism.neo, marxism.trotskyism, marxism.third-worldism]
+        presupposes: [imperialism.nature.globalist-project]
+        analysis:
+          gains: [industrial-capital, petty-bourgeoisie, core-workers]
+          pays: [peripheral-workers]
+          mechanism: >
+            A core nation acting purely for itself keeps its monopolies of currency, patents and arms while
+            dropping the aid and institutional commitments that softened them, using tariffs and sanctions
+            bilaterally on weaker states.
+          drain: sustains
+          law_of_value: regulates
+          consciousness: economic-corporate
+
+      - id: world.order.neither-camp
+        label: Neither Washington nor Beijing; workers' internationalism
+        claim: >
+          The choice between a US-led order and a multipolar one is a choice among capitalist masters. The only
+          order worth fighting for is one built by workers' movements across all the blocs.
+        voiced: >
+          Multipolarity means more poles of capital, not fewer chains. The Chinese worker at Foxconn, the
+          Russian conscript and the American nurse share one enemy. Neither Washington nor Beijing nor Moscow.
+        you: >
+          You think the rivalry between the US and its challengers offers working people nothing, and that real
+          change must come from workers organizing across all the blocs.
+        because: >
+          Robinson shows capital now organized transnationally, so national rivalries are disputes among
+          sections of one ruling class. Third-camp socialists, since Shachtman and Cliff, have argued that
+          statist powers that oppose Washington are class societies too. History shows that national liberation
+          led by state elites ends in new exploiters; only independent workers' power across borders breaks the
+          cycle.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              The "neither" never weighs the same. Its slogans fall hardest on states the hegemon is already
+              sanctioning and encircling, and it has no answer for countries that need loans and roads now.
+          - from: liberalism.internationalist
+            text: >
+              Equating a liberal democracy that holds elections with a one-party state that runs camps in
+              Xinjiang is not principle; it is refusing to see differences that matter to the people living under
+              them.
+        sources:
+          - {author: Tony Cliff, title: "The Nature of Stalinist Russia", year: 1948}
+          - {author: William I. Robinson, title: "A Theory of Global Capitalism", year: 2004}
+          - {author: Michael Hardt and Antonio Negri, title: "Empire", year: 2000}
+        traditions:
+          defining: [marxism.third-camp]
+          typical: [marxism.left-communism, marxism.council-communism, anarchism.communist, anarchism.syndicalist, marxism.autonomism, marxism.trotskyism]
+          contested: [marxism.mlm, socdem.democratic-socialism]
+          rejects: [marxism.third-worldism, marxism.scc, marxism.ml, nationalism.eurasianism]
+        presupposes: [change.agent.workers-as-class]
+        excludes: [world.order.multipolar-sovereignty]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Refusing all blocs channels effort into cross-border labor organization, which threatens capital in
+            every bloc; it denies support to periphery states' bids for better terms and so leaves the existing
+            channels of the drain to be contested only by workers' movements.
+          drain: reduces
+          law_of_value: abolishes
+          disputed: >
+            Whether rising powers widen the room for Southern development (the frame, Amin) or are rival capitals
+            (Cliff, Callinicos, Robinson) is disputed.
+
+      - id: world.order.cosmopolitan-governance
+        label: Build democratic global institutions above nations
+        claim: >
+          The world needs democratic global institutions (a reformed and empowered United Nations, global taxes,
+          a world parliament) because the great problems now cross every border.
+        voiced: >
+          Climate, pandemics, tax havens and nuclear weapons cannot be governed nation by nation. We need
+          cosmopolitan democracy: global law, global taxes and accountable global institutions in which every
+          person counts.
+        you: >
+          You think the world needs stronger, accountable global institutions, because problems like climate and
+          tax evasion cross every border.
+        because: >
+          Kant argued that perpetual peace requires a federation of free states under shared law. Held shows
+          that power has gone global while accountability stayed national, so citizens lose control of the forces
+          that shape their lives. Only global institutions with real powers and fair representation can tax
+          mobile capital and protect the planet.
+        against:
+          - from: conservatism.national
+            text: >
+              A world government answers to no people. Every supranational body becomes a remote bureaucracy that
+              overrides the nations that created it, and a world state would be the final empire.
+          - from: marxism.third-worldism
+            text: >
+              The global institutions that exist are run by the creditors. Building more of them on today's
+              distribution of power entrenches the hierarchy under the name of humanity.
+        sources:
+          - {author: Immanuel Kant, title: "Perpetual Peace: A Philosophical Sketch", year: 1795}
+          - {author: David Held, title: "Democracy and the Global Order", year: 1995}
+        traditions:
+          typical: [liberalism.social, liberalism.progressive, liberalism.egalitarian, socdem.democratic-socialism, technology.effective-altruism]
+          contested: [liberalism.internationalist, ecology.green-growth]
+          rejects: [conservatism.national, conservatism.paleo, libertarianism.paleo, marxism.third-worldism]
+        excludes: [world.order.nation-first]
+        analysis:
+          gains: [professional-managerial, core-workers, peripheral-workers]
+          pays: [finance-capital]
+          mechanism: >
+            Global taxes and rules could reach mobile capital and havens, but bodies built on present voting
+            power and staffing extend the core's administrative reach over periphery policy.
+          drain: softens
+          law_of_value: regulates

@@ -1,0 +1,1460 @@
+problematics:
+  - id: capitalism.nature
+    domain: economy
+    layer: analysis
+    question: What is capitalism?
+    plain: When people talk about "the system" we live under, what actually is it?
+    short: capitalism
+    importance: 3
+    positions:
+      - id: capitalism.nature.exploitation-profit
+        label: Production for profit, resting on unpaid labor
+        claim: >
+          Capitalism is a way of organizing production in which owners of the means of production hire
+          people who own nothing but their ability to work, and profit comes from the part of their working
+          day they are not paid for.
+        voiced: "Capital is dead labour which, vampire-like, lives only by sucking living labour. Follow the profit back and you find the unpaid hours."
+        you: >
+          You see capitalism as a system where owners profit from work they do not pay for, and where
+          production happens only when it is profitable.
+        because: >
+          Markets, money and trade existed for thousands of years before capitalism. What is new is that most
+          people must sell their capacity to work in order to live, and that production is steered by what
+          yields a profit, not by what is needed. If a worker produces in four hours the value of her wage and
+          works eight, the other four are the source of profit, interest and rent. Competition forces every
+          owner to squeeze and accumulate or be destroyed, so the system's behavior does not depend on whether
+          owners are kind.
+        against:
+          - from: liberalism.austrian
+            text: >
+              The worker is paid now for a product that will be sold later, if at all. The difference between
+              wage and price is the discount for time and the reward for bearing uncertainty, not theft. Böhm-Bawerk
+              settled this in 1884 and Marx's followers never recovered.
+          - from: liberalism.chicago
+            text: >
+              Under competition every factor is paid roughly what it adds to output. If profits came from
+              squeezing labor, the most labor-intensive firms would be the most profitable. They are not.
+        sources:
+          - {author: Karl Marx, title: "Capital, Volume I", year: 1867}
+          - {author: Karl Marx, title: Wage Labour and Capital, year: 1849}
+          - {author: Ellen Meiksins Wood, title: The Origin of Capitalism, year: 1999}
+        traditions:
+          defining: [marxism.classical, marxism.leninism, marxism.ml]
+          typical: [marxism.trotskyism, marxism.maoism, marxism.left-communism, marxism.council-communism, marxism.luxemburgism, anarchism.communist, anarchism.syndicalist, marxism.third-worldism]
+          contested: [marxism.analytical, socdem.democratic-socialism]
+          rejects: [liberalism.austrian, liberalism.chicago, libertarianism.ancap, libertarianism.objectivist]
+        presupposes: [value.source.labor, wage.nature.price-of-labor-power]
+        excludes: [capitalism.nature.free-exchange]
+        tension: []
+        tags: [keystone]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry, reserve-army]
+          pays: [industrial-capital, finance-capital, landed-capital, comprador-capital]
+          mechanism: >
+            Locating profit in unpaid labor makes the wage relation itself the target, which points workers toward
+            taking ownership and control of production rather than bargaining over the price of their labor.
+          drain: reduces
+          law_of_value: abolishes
+          disputed: >
+            Analytical Marxists (Roemer, Cohen) keep the charge of exploitation but drop the labor theory of value
+            as its basis. Third-Worldists hold that the reading stays domestic unless it is extended to unequal
+            exchange, so on its own its effect on the drain is weaker than stated here.
+      - id: capitalism.nature.free-exchange
+        label: Voluntary exchange and private enterprise
+        claim: >
+          Capitalism is the system of private ownership and voluntary exchange, in which people trade, hire and
+          invest by mutual consent and prices coordinate their plans.
+        voiced: "Capitalism is what people do when you leave them alone: they make things, trade them, and get rich by serving each other."
+        you: >
+          You see capitalism as people freely trading, hiring and investing, with prices doing the coordinating
+          that no planner could do.
+        because: >
+          No mind or committee can know the scattered, changing facts about wants, resources and techniques
+          held by millions of people. Prices formed in free exchange compress that knowledge into signals anyone
+          can act on, and profit and loss tell each producer whether they are using resources well. Every
+          exchange takes place only because both sides expect to gain. The result has been the largest rise in
+          living standards in human history, wherever the system was allowed to work.
+        against:
+          - from: marxism.classical
+            text: >
+              The worker "consents" the way a drowning man consents to the price of a rope. Behind the equal
+              exchange in the labor market stands a class that owns the means of life and a class that must sell
+              itself to reach them.
+          - from: conservatism.distributism
+            text: >
+              Exchange is free only between people who could walk away. When a few own nearly everything and the
+              many own nothing, the contract is a polite name for dependence.
+        sources:
+          - {author: Friedrich Hayek, title: The Use of Knowledge in Society, year: 1945}
+          - {author: Ludwig von Mises, title: Human Action, year: 1949}
+          - {author: Milton Friedman, title: Capitalism and Freedom, year: 1962}
+          - {author: Ayn Rand, title: "Capitalism: The Unknown Ideal", year: 1966}
+        traditions:
+          defining: [liberalism.austrian, liberalism.chicago, libertarianism.ancap, libertarianism.objectivist, libertarianism.minarchist]
+          typical: [liberalism.classical, conservatism.fusionism, libertarianism.paleo, commonsense.self-reliance, technology.cyberlibertarian]
+          contested: [liberalism.ordoliberal, conservatism.burkean]
+          rejects: [marxism.classical, marxism.leninism, anarchism.communist, conservatism.distributism, fascism.italian]
+        presupposes: [value.source.subjective-utility]
+        excludes: [capitalism.nature.exploitation-profit]
+        tension: []
+        tags: [keystone]
+        analysis:
+          gains: [finance-capital, industrial-capital, landed-capital, comprador-capital]
+          pays: [core-workers, peripheral-workers, reserve-army]
+          mechanism: >
+            Describing the wage contract and the world market as voluntary exchange removes the grounds for
+            limiting either, so owners keep the full surplus and core firms keep buying peripheral labor and
+            resources at prices set by unequal bargaining power.
+          drain: sustains
+          law_of_value: extends
+      - id: capitalism.nature.crony-corrupted
+        label: What we have is cronyism, not real free markets
+        claim: >
+          The system people call capitalism is a rigged partnership between big business and government; a
+          real free market, where firms win only by serving customers, has not been tried.
+        voiced: "This isn't capitalism. It's bailouts for banks, subsidies for the connected, and regulations written by the companies they regulate."
+        you: >
+          You think what we live under is cronyism: big firms and politicians protecting each other. Real free
+          markets would look very different.
+        because: >
+          Look at who wins: banks rescued in 2008, firms that write their own rules, licensing laws that shut out
+          small competitors, central banks that hand new money first to the well-connected. None of that is
+          voluntary exchange. Strip out subsidies, bailouts and regulatory capture, and the giants would face
+          competition they cannot survive. The people who denounce "capitalism" are attacking the state's
+          favoritism and blaming the market for it.
+        against:
+          - from: marxism.leninism
+            text: >
+              Monopoly and the fusion of big capital with the state are not a corruption of capitalism but its
+              developed form. Competition produces concentration; concentration buys the state. You cannot wind
+              the film back to 1840.
+          - from: liberalism.chicago
+            text: >
+              Rent-seeking is real, but calling the most productive economy in history "not real capitalism"
+              explains nothing. Fix the specific capture; do not wait for a pure market that never existed.
+        sources:
+          - {author: Murray Rothbard, title: For a New Liberty, year: 1973}
+          - {author: Murray Rothbard, title: "Left and Right: The Prospects for Liberty", year: 1965}
+          - {author: Kevin Carson, title: Studies in Mutualist Political Economy, year: 2004}
+        traditions:
+          defining: [libertarianism.ancap, libertarianism.paleo]
+          typical: [libertarianism.minarchist, anarchism.mutualist, commonsense.rigged, conservatism.right-populism, technology.cyberlibertarian]
+          contested: [liberalism.austrian, conservatism.paleo]
+          rejects: [marxism.leninism, marxism.ml, socdem.keynesian, liberalism.technocratic]
+        presupposes: [capitalism.nature.free-exchange]
+        excludes: []
+        tension: [capitalism.nature.exploitation-profit]
+        tags: []
+        analysis:
+          gains: [petty-bourgeoisie, industrial-capital]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Blaming state favoritism turns anger at concentrated wealth into demands for deregulation and lower
+            taxes, which remove labor and environmental rules that bind smaller firms and workers as much as giants;
+            it leaves private ownership of production untouched.
+          drain: sustains
+          law_of_value: extends
+          disputed: >
+            Some materialists note that the critique of corporate-state fusion converges with Lenin's account of
+            monopoly capital, and that mutualist versions aim at the wage relation itself.
+      - id: capitalism.nature.usury-finance
+        label: The problem is finance and usury, not productive enterprise
+        claim: >
+          The productive economy of firms, farms and workshops is sound; the harm comes from finance, interest and
+          speculation, which draw income from money itself and drain the people who make real things.
+        voiced: "The factory owner builds something. The banker builds debt. Break the power of interest and the honest producer goes free."
+        you: >
+          You see the real problem in banks, debt and speculation, which profit from money while others do the
+          productive work.
+        because: >
+          A loan at interest grows whether or not anything useful is made. Debt compounds faster than any real
+          economy can grow, so wealth flows steadily from those who produce to those who lend. Every great faith
+          once forbade or limited usury for this reason. A system where money serves production, through risk-sharing,
+          public credit or interest-free banking, would keep enterprise and end the parasitism.
+        against:
+          - from: marxism.classical
+            text: >
+              Interest is a share of a profit already squeezed out of labor in the factory. Separating "creative"
+              industrial capital from "grasping" finance capital hides the exploitation at the point of production,
+              and historically it has pointed workers' anger at Jews and foreigners instead of at their employer.
+          - from: liberalism.austrian
+            text: >
+              Interest is the price of time. People prefer goods now to goods later; ban the price and you get
+              less saving, less investment, and credit rationed by the powerful.
+        sources:
+          - {author: Gottfried Feder, title: Manifesto for the Breaking of Interest Slavery, year: 1919}
+          - {author: C. H. Douglas, title: Economic Democracy, year: 1920}
+          - {author: Muhammad Baqir al-Sadr, title: Iqtisaduna (Our Economics), year: 1961}
+          - {author: Thomas Aquinas, title: Summa Theologiae, year: c. 1270}
+        traditions:
+          defining: [fascism.nazism, fascism.third-position]
+          typical: [religious.islamism-brotherhood, religious.islamism-khomeinist, conservatism.distributism, fascism.italian, conservatism.right-populism, commonsense.rigged]
+          contested: [conservatism.cst, religious.islamic-socialism, socdem.left-populism]
+          rejects: [marxism.classical, marxism.leninism, liberalism.austrian, liberalism.chicago]
+        presupposes: []
+        excludes: []
+        tension: [capitalism.nature.exploitation-profit]
+        tags: []
+        analysis:
+          gains: [industrial-capital, petty-bourgeoisie]
+          pays: [finance-capital, core-workers]
+          mechanism: >
+            Splitting productive from financial capital lets industrial owners and small proprietors recruit workers
+            against lenders while leaving the employer's profit unquestioned; in Nazi Germany this division was
+            racialized and the productive owners kept their factories while unions were destroyed.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            Materialists agree finance now dominates accumulation (Hilferding, Lenin, Amin on the financial monopoly)
+            and differ on whether Islamic and distributist critiques of interest can be allies or only diversions.
+      - id: capitalism.nature.world-system
+        label: A world system of core and periphery
+        claim: >
+          Capitalism is one world system in which wealth in the rich countries rests on cheap labor and resources
+          drawn from the poor ones through trade, debt and monopoly.
+        voiced: "There is no French or American capitalism standing on its own. There is one system, and its centre lives off its periphery."
+        you: >
+          You see capitalism as a single world system where the rich countries live off the labor and resources
+          of the poor ones.
+        because: >
+          Since the sixteenth century the system has been global: plantations, mines and colonies fed European
+          accumulation. Today a worker in Bangladesh and one in Germany may produce similar goods, yet their wages
+          differ tenfold, and the difference is captured in the price of what the rich world buys. Monopolies of
+          technology, finance, resources, media and weapons keep it that way. Analyze any one country alone and you
+          miss where its wealth comes from.
+        against:
+          - from: marxism.trotskyism
+            text: >
+              Brenner is right that capitalism arose from class relations in English agriculture, not from trade.
+              Dividing the world into exploiting and exploited nations dissolves the class struggle inside both and
+              writes off the core working class.
+          - from: liberalism.chicago
+            text: >
+              Trade made South Korea, Taiwan and China rich. The poorest countries are the ones least integrated
+              into world markets, not the most.
+        sources:
+          - {author: Immanuel Wallerstein, title: The Modern World-System, year: 1974}
+          - {author: Samir Amin, title: Unequal Development, year: 1973}
+          - {author: Arghiri Emmanuel, title: Unequal Exchange, year: 1969}
+          - {author: Walter Rodney, title: How Europe Underdeveloped Africa, year: 1972}
+        traditions:
+          defining: [marxism.world-systems, marxism.third-worldism, marxism.dependency]
+          typical: [marxism.maoism, marxism.mlm, marxism.black-radical, marxism.african-socialism, nationalism.pan-africanism, nationalism.decolonial]
+          contested: [marxism.ml, marxism.trotskyism, marxism.scc]
+          rejects: [liberalism.chicago, liberalism.austrian, liberalism.technocratic]
+        presupposes: [imperialism.nature.unequal-exchange-drain]
+        excludes: []
+        tension: []
+        tags: [keystone]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, comprador-capital]
+          mechanism: >
+            Treating capitalism as a world system makes the price gap between core and periphery labor the central
+            issue, which supports sovereign development, debt refusal and higher supply prices that cut core profits
+            and the cheap imports core consumers rely on.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >
+            Brenner and Wood hold that capitalism is defined by domestic class relations and that world-systems
+            analysis confuses trade with capitalism; Amin and Wallerstein answer that the law of value operates
+            worldwide.
+      - id: capitalism.nature.managed-engine
+        label: A powerful engine that must be managed
+        claim: >
+          Capitalism is a productive but unstable system that needs public management, through demand policy,
+          regulation and social insurance, to deliver full employment and shared prosperity.
+        voiced: "Capitalism is a magnificent horse that bolts. You don't shoot the horse, you put a rider on it."
+        you: >
+          You see capitalism as productive but unstable, and believe governments must steer it to keep jobs and
+          living standards secure.
+        because: >
+          Left to itself the system produces booms and slumps, mass unemployment and concentration of wealth, as
+          the 1930s and 2008 showed. Managed, it produced the postwar decades of rising wages, full employment and
+          welfare states. Investment decisions are too important to leave wholly to private confidence, but private
+          enterprise remains the best engine of innovation. The task is to keep the engine and govern it.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Every intervention distorts prices and calls for the next one. The postwar boom ended in the inflation
+              of the 1970s precisely because managers thought they could steer what nobody can know.
+          - from: marxism.classical
+            text: >
+              Management can delay crises but not abolish their cause: falling profitability. When profits squeeze,
+              capital breaks the bargain, as it did after 1973. Kalecki saw that owners would never accept lasting
+              full employment.
+        sources:
+          - {author: John Maynard Keynes, title: "The General Theory of Employment, Interest and Money", year: 1936}
+          - {author: Anthony Crosland, title: The Future of Socialism, year: 1956}
+          - {author: John Kenneth Galbraith, title: The New Industrial State, year: 1967}
+        traditions:
+          defining: [socdem.keynesian, socdem.nordic]
+          typical: [liberalism.social, liberalism.egalitarian, socdem.third-way, socdem.labourism, conservatism.one-nation, conservatism.christian-democracy, liberalism.ordoliberal]
+          contested: [socdem.democratic-socialism, conservatism.gaullism]
+          rejects: [liberalism.austrian, libertarianism.ancap, marxism.leninism, marxism.left-communism]
+        presupposes: []
+        excludes: []
+        tension: [capitalism.nature.exploitation-profit, capitalism.nature.free-exchange]
+        tags: []
+        analysis:
+          gains: [core-workers, professional-managerial, industrial-capital]
+          pays: [finance-capital]
+          mechanism: >
+            Demand management and social insurance raise and stabilize core wages and sales while keeping private
+            ownership, financed in part by the cheap imports and profits that unequal exchange supplies to the core.
+          drain: softens
+          law_of_value: regulates
+          disputed: >
+            Third-Worldists hold that managed core capitalism depended on the drain and should be scored as sustaining
+            it; social-democratic Marxists point to Nordic aid and trade policy as partial exceptions.
+      - id: capitalism.nature.concentrated-ownership
+        label: Property concentrated in a few hands
+        claim: >
+          Capitalism is a society where productive property is owned by a few and the many own nothing and must work
+          for them; the cure is to spread ownership widely, not to abolish it.
+        voiced: "The trouble with capitalism is not too many capitalists but too few. Three acres and a cow, a shop of your own, a share in the firm."
+        you: >
+          You think the problem is that too few people own anything, and you want property spread among families,
+          small firms and cooperatives.
+        because: >
+          A man who owns his tools, his land or his shop answers to no master; a man who owns nothing must obey
+          whoever pays him. Capitalism, properly defined, is not private property but its concentration, which
+          makes the majority proletarian and pushes the state to manage them, either as welfare clients or as
+          conscripted labor. Socialism answers concentration with more concentration in the state. Distribute the
+          property and you restore the independence on which free citizens and strong families rest.
+        against:
+          - from: marxism.classical
+            text: >
+              Small property is crushed by large property through competition; that is a law, not an accident. The
+              distributist program asks history to run backward, and the peasant and shopkeeper it idealizes are
+              the first to be ruined.
+          - from: liberalism.chicago
+            text: >
+              Most people do not want to run a farm or a shop. They want a good job and a pension fund that owns a
+              slice of everything, which is wider ownership than any distributist ever proposed.
+        sources:
+          - {author: Hilaire Belloc, title: The Servile State, year: 1912}
+          - {author: G. K. Chesterton, title: The Outline of Sanity, year: 1926}
+          - {author: Leo XIII, title: Rerum Novarum, year: 1891}
+        traditions:
+          defining: [conservatism.distributism]
+          typical: [conservatism.cst, conservatism.postliberal, anarchism.mutualist, nationalism.gandhian]
+          contested: [conservatism.christian-democracy, conservatism.right-populism]
+          rejects: [marxism.classical, marxism.ml, liberalism.chicago, libertarianism.objectivist]
+        presupposes: [property.private.social-function]
+        excludes: []
+        tension: [capitalism.nature.free-exchange]
+        tags: []
+        analysis:
+          gains: [petty-bourgeoisie, peasantry]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Spreading ownership through land reform, small-business protection and cooperatives raises the share of
+            income going to small owners and family farms and limits concentration, while keeping production for
+            sale and leaving wage workers in small firms under an owner.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            Marxists differ on whether peasant land reform in the periphery is a step toward socialism (Mao's new
+            democracy) or a petty-bourgeois dead end in the core.
+      - id: capitalism.nature.market-society
+        label: Society subordinated to the market
+        claim: >
+          Capitalism is the turning of land, labor and money into commodities, which subordinates family, community,
+          faith and nature to buying and selling and wears them away.
+        voiced: "To allow the market to be the sole director of the fate of human beings and their natural environment would result in the demolition of society."
+        you: >
+          You see capitalism as the market taking over areas of life that were never meant to be for sale, and
+          eroding community and family as it goes.
+        because: >
+          Labor is human life, land is nature, money is a social token; none was produced for sale. Treating them as
+          commodities was a political project of the nineteenth century, and society defended itself against it with
+          factory acts, tariffs and unions. The same pressure now reaches care, attention, childhood and the earth.
+          Conservatives and socialists who see this share a diagnosis, whatever their cure.
+        against:
+          - from: liberalism.austrian
+            text: >
+              The "protective" countermovements Polanyi admired produced tariffs, cartels and the slide into the
+              planned economies of the 1930s. Commerce has done more to civilize manners than any village ever did.
+          - from: marxism.classical
+            text: >
+              The point is not that the market spreads too far but who owns production. Lament for lost community
+              without a class analysis becomes nostalgia for patriarchy and the parish.
+        sources:
+          - {author: Karl Polanyi, title: The Great Transformation, year: 1944}
+          - {author: Wilhelm Röpke, title: A Humane Economy, year: 1958}
+          - {author: John Paul II, title: Centesimus Annus, year: 1991}
+        traditions:
+          defining: [conservatism.cst, conservatism.postliberal]
+          typical: [conservatism.traditionalist, conservatism.distributism, communitarianism, socdem.democratic-socialism, ecology.degrowth, religious.engaged-buddhism, nationalism.gandhian]
+          contested: [liberalism.ordoliberal, conservatism.national]
+          rejects: [liberalism.austrian, liberalism.chicago, libertarianism.objectivist, technology.e-acc]
+        presupposes: []
+        excludes: []
+        tension: [capitalism.nature.free-exchange]
+        tags: []
+        analysis:
+          gains: [core-workers, peasantry, petty-bourgeoisie]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Removing goods like housing, care and land from the market lowers the rents and profits capital draws from
+            them and shields households, but the position leaves ownership of industry open and can be bent toward
+            protecting national markets alone.
+          drain: softens
+          law_of_value: regulates
+  - id: value.source
+    domain: economy
+    layer: analysis
+    question: Where does value come from, and where does profit come from?
+    plain: What makes something worth what it costs, and where does the owner's profit come from?
+    short: the source of value and profit
+    importance: 3
+    positions:
+      - id: value.source.labor
+        label: Value comes from socially necessary labor
+        claim: >
+          The value of a product is set by the labor time society needs on average to make it, and profit is the
+          part of that value workers produce beyond what they are paid.
+        voiced: "Machines, land and money transfer value they already contain. Only living labour creates new value, and only unpaid labour creates surplus value."
+        you: >
+          You think things are worth what they are because of the work needed to make them, and that profit is
+          work the worker was not paid for.
+        because: >
+          Across millions of exchanges, goods trade in proportions that track the labor needed to produce them, which
+          is why prices of goods made by automated processes fall over time. Machines and raw materials pass on value
+          already embodied in them; only labor adds new value. Because labor power is a commodity whose value (the
+          cost of the worker's upkeep) is less than the value it creates, profit appears without anyone being cheated
+          in the market. This explains, as utility theory cannot, why profit exists as a regular class income.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Mud pies take labor and are worth nothing. Value is in the eye of the buyer, and the labor theory cannot
+              explain why a vintage wine gains value in the cellar while nobody works on it.
+          - from: marxism.analytical
+            text: >
+              Once joint production and heterogeneous labor are admitted, labor values cannot determine prices or the
+              rate of profit, as Steedman showed. Exploitation can be argued without them.
+        sources:
+          - {author: Karl Marx, title: "Capital, Volume I", year: 1867}
+          - {author: David Ricardo, title: On the Principles of Political Economy and Taxation, year: 1817}
+          - {author: Anwar Shaikh, title: "Capitalism: Competition, Conflict, Crises", year: 2016}
+        traditions:
+          defining: [marxism.classical, marxism.leninism, marxism.ml]
+          typical: [marxism.trotskyism, marxism.maoism, marxism.left-communism, marxism.third-worldism, marxism.council-communism, anarchism.mutualist]
+          contested: [marxism.analytical, marxism.autonomism, marxism.scc]
+          rejects: [liberalism.austrian, liberalism.chicago, libertarianism.ancap, libertarianism.objectivist]
+        presupposes: []
+        excludes: [value.source.subjective-utility, value.source.marginal-productivity]
+        tension: []
+        tags: [keystone]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry, reserve-army]
+          pays: [industrial-capital, finance-capital, landed-capital]
+          mechanism: >
+            A labor theory of value treats profit, interest and rent as deductions from what workers produce, which
+            makes every property income a claim workers can contest and supports measuring unequal exchange as labor
+            hours flowing from periphery to core.
+          drain: reduces
+          law_of_value: abolishes
+          disputed: >
+            The transformation problem divides Marxists: temporal single-system authors (Kliman) defend Marx's
+            consistency; Sraffians and analytical Marxists hold labor values redundant.
+      - id: value.source.subjective-utility
+        label: Value is what people subjectively want; prices discover it
+        claim: >
+          Things have value because people want them, and prices emerge from many people's choices; there is no
+          hidden objective value behind the price.
+        voiced: "Value is not intrinsic. It is a judgment acting men pass on goods in light of their ends. The price is the only value there is to find."
+        you: >
+          You think something is worth what people want it for, and that prices are the only honest measure of that.
+        because: >
+          Water is necessary and cheap, diamonds are useless and dear: the classical economists could not explain this.
+          The marginal revolution did. Each person values the next unit of a good by the use they would make of it,
+          and prices form where those valuations meet. Labor is costly because its products are wanted, not the other
+          way round. Profit arises when an entrepreneur buys resources priced below what consumers will later pay
+          for their output, which rewards those who foresee wants better than others.
+        against:
+          - from: marxism.classical
+            text: >
+              Subjective preference explains why one shirt sells and another does not. It cannot explain why the whole
+              class of owners receives a steady profit year after year, nor what sets the general level around which
+              prices move.
+          - from: socdem.keynesian
+            text: >
+              Preferences do not float free. Incomes decide whose wants count in the market, so a theory that reads
+              value off prices ratifies whatever distribution of income produced them.
+        sources:
+          - {author: Carl Menger, title: Principles of Economics, year: 1871}
+          - {author: Eugen von Böhm-Bawerk, title: Karl Marx and the Close of His System, year: 1896}
+          - {author: Ludwig von Mises, title: Human Action, year: 1949}
+        traditions:
+          defining: [liberalism.austrian, libertarianism.ancap]
+          typical: [liberalism.chicago, libertarianism.minarchist, libertarianism.objectivist, libertarianism.paleo, liberalism.classical]
+          contested: [libertarianism.georgist]
+          rejects: [marxism.classical, marxism.leninism, marxism.third-worldism]
+        presupposes: []
+        excludes: [value.source.labor]
+        tension: []
+        tags: [keystone]
+        analysis:
+          gains: [finance-capital, industrial-capital, landed-capital]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            If price is the only measure of value, whatever a wage or a commodity fetches is by definition what it
+            is worth, so the low prices paid for peripheral labor and raw materials appear as fair valuations rather
+            than transfers.
+          drain: sustains
+          law_of_value: extends
+      - id: value.source.marginal-productivity
+        label: Each factor earns what it contributes at the margin
+        claim: >
+          Under competition labor, capital and land are each paid roughly what the last unit of them adds to output,
+          so wages, profit and rent reflect real contributions.
+        voiced: "The distribution of income is governed by a natural law: free competition gives to each agent of production the amount of wealth which that agent creates."
+        you: >
+          You think workers, investors and landowners each get paid roughly what they add to production.
+        because: >
+          If an employer pays a worker less than the value the worker adds, a rival can hire her away at a profit, so
+          competition pushes wages toward marginal product. The same holds for capital: a machine earns a return
+          because it makes labor more productive. Where pay departs from contribution, the cause is a specific
+          obstacle such as monopoly, monopsony or regulation, and the remedy is more competition, not abolition of
+          returns to capital.
+        against:
+          - from: marxism.classical
+            text: >
+              Capital is not a thing with a productivity of its own; it is a social relation. Measuring the "marginal
+              product of capital" requires already knowing the rate of profit, which is the thing to be explained.
+          - from: socdem.keynesian
+            text: >
+              The Cambridge capital debates showed the aggregate production function is incoherent. Robinson and
+              Sraffa won the argument, Samuelson conceded it in 1966, and the textbooks carried on regardless.
+        sources:
+          - {author: John Bates Clark, title: The Distribution of Wealth, year: 1899}
+          - {author: Milton Friedman, title: Price Theory, year: 1962}
+        traditions:
+          defining: [liberalism.chicago]
+          typical: [liberalism.classical, liberalism.technocratic, liberalism.utilitarian, conservatism.fusionism]
+          contested: [liberalism.austrian, liberalism.social]
+          rejects: [marxism.classical, marxism.leninism, socdem.keynesian]
+        presupposes: []
+        excludes: [value.source.labor]
+        tension: [value.source.subjective-utility]
+        tags: []
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [core-workers, peripheral-workers, reserve-army]
+          mechanism: >
+            By treating every income share as earned contribution, the theory justifies high returns to owners and
+            managers and attributes low peripheral wages to low productivity rather than to unequal bargaining power
+            and monopoly prices.
+          drain: sustains
+          law_of_value: extends
+      - id: value.source.surplus-distribution
+        label: Profit is a share of the surplus, set by conflict over distribution
+        claim: >
+          Production yields a surplus over what it uses up; how that surplus splits between wages and profits is
+          settled by bargaining power, law and institutions, not by any natural productivity of capital.
+        voiced: "Given the technique and the wage, the rate of profit follows. Change the wage and the profit changes. Distribution is decided outside the market."
+        you: >
+          You think the economy produces a surplus and that who gets what share of it is decided by power and
+          institutions.
+        because: >
+          Sraffa showed that prices and the profit rate can be derived from the physical conditions of production plus
+          one distributive variable, either the wage or the profit rate, set from outside. There is no measure of
+          capital independent of distribution, so profit cannot be the reward of capital's productivity. The split is
+          political: union strength, central bank policy, labor law. That is the classical political economy of Smith
+          and Ricardo, freed from its errors.
+        against:
+          - from: marxism.classical
+            text: >
+              Sraffa describes the surface of prices but drops the question of why there is a surplus at all, which
+              is the exploitation of labor in production. Treating distribution as a bargaining outcome invites
+              reformism.
+          - from: liberalism.chicago
+            text: >
+              A model with no demand, no substitution and an exogenous wage explains nothing about how real economies
+              allocate resources. Sraffian economics is an elegant critique with no theory of its own.
+        sources:
+          - {author: Piero Sraffa, title: Production of Commodities by Means of Commodities, year: 1960}
+          - {author: Ian Steedman, title: Marx After Sraffa, year: 1977}
+          - {author: Joan Robinson, title: The Accumulation of Capital, year: 1956}
+        traditions:
+          defining: []
+          typical: [socdem.keynesian, marxism.analytical, socdem.democratic-socialism]
+          contested: [marxism.classical, marxism.western]
+          rejects: [liberalism.chicago, liberalism.austrian]
+        presupposes: []
+        excludes: [value.source.marginal-productivity]
+        tension: []
+        tags: []
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Treating distribution as a political settlement supports unions, wage policy and low interest rates that
+            shift income to labor within a country, but leaves ownership and the international price structure as
+            given.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            Marxists split over whether Sraffa completes Marx (Garegnani) or replaces production with distribution
+            (Shaikh, Kliman).
+      - id: value.source.land-and-labor
+        label: Wealth comes from labor on land; rent is unearned
+        claim: >
+          All wealth comes from labor applied to land; wages and the returns to real capital are earned, but rising
+          land rent is created by the community and taken by landowners who do nothing for it.
+        voiced: "The landlord grows rich in his sleep. Every new road, school and neighbour raises his rent, and he has lifted no finger."
+        you: >
+          You think people earn their wages and businesses earn their profits, but landowners pocket value that the
+          whole community created.
+        because: >
+          Progress and poverty advance together because the gains of growth flow into land values. A city's land is
+          worth more because of the people and public works around it, not because of anything its owner did. Labor
+          and capital compete their returns down; land is fixed in supply, so its owners capture each gain as rent.
+          Tax land value and you take back what the community made, while untaxing work and enterprise.
+        against:
+          - from: marxism.classical
+            text: >
+              Ground rent is real, but it is a share of surplus value already taken from labor. George's single tax
+              would leave industrial exploitation intact and turn the state into the only landlord of capital.
+          - from: libertarianism.ancap
+            text: >
+              The first user who mixed labor with unowned land acquired it justly. Taxing its value punishes those
+              who put land to use and hands the state a permanent claim on everyone's home.
+        sources:
+          - {author: Henry George, title: Progress and Poverty, year: 1879}
+          - {author: David Ricardo, title: On the Principles of Political Economy and Taxation, year: 1817}
+          - {author: Michael Hudson, title: Killing the Host, year: 2015}
+        traditions:
+          defining: [libertarianism.georgist]
+          typical: [libertarianism.left, nationalism.three-principles]
+          contested: [liberalism.classical, socdem.fabian]
+          rejects: [libertarianism.ancap, liberalism.austrian, marxism.classical]
+        presupposes: [property.land.georgist-rent]
+        excludes: []
+        tension: [value.source.subjective-utility]
+        tags: []
+        analysis:
+          gains: [core-workers, petty-bourgeoisie, industrial-capital]
+          pays: [landed-capital, finance-capital]
+          mechanism: >
+            A land value tax moves income from landowners and the mortgage lenders whose loans are secured on land to
+            tenants, firms and public budgets, while leaving the wage relation and profit from industry in place.
+          drain: none
+          law_of_value: regulates
+      - id: value.source.just-price
+        label: Value has a moral measure; labor and real risk earn, money alone does not
+        claim: >
+          A thing has a just price that answers to the labor and costs of making it and the needs of buyer and seller,
+          and income is legitimate when it comes from work or shared risk, not from money lent at interest.
+        voiced: "Money is barren; it does not breed. Work, the land, and the risk a partner shares are the roots of lawful gain."
+        you: >
+          You think prices and profits should answer to what is fair, and that income should come from work or real
+          risk, not from lending money.
+        because: >
+          The market cannot be the final judge of value, because a starving man will pay anything for bread. Both the
+          scholastic tradition and Islamic law hold that labor is the primary title to wealth, that a merchant may earn
+          a fair return for real service and risk, and that interest on a loan is unjust because the lender takes a
+          guaranteed gain while the borrower carries all the risk. Prices should be free within these limits, not
+          beyond them.
+        against:
+          - from: liberalism.austrian
+            text: >
+              There is no "just price" apart from the price buyers and sellers agree on. Every attempt to impose one
+              has produced shortages, black markets and the arbitrary rule of officials who decide what is fair.
+          - from: marxism.classical
+            text: >
+              The just-price tradition moralizes about exchange while accepting wage labor. Exploitation happens at a
+              fair price; that is the whole point.
+        sources:
+          - {author: Thomas Aquinas, title: Summa Theologiae, year: c. 1270}
+          - {author: Muhammad Baqir al-Sadr, title: Iqtisaduna (Our Economics), year: 1961}
+          - {author: John Ruskin, title: Unto This Last, year: 1860}
+        traditions:
+          defining: [conservatism.cst, religious.islamism-brotherhood]
+          typical: [conservatism.distributism, religious.islamism-khomeinist, religious.islamic-socialism, religious.christian-socialism, conservatism.integralism]
+          contested: [conservatism.christian-democracy, religious.post-islamism]
+          rejects: [liberalism.austrian, liberalism.chicago, marxism.classical]
+        presupposes: []
+        excludes: [value.source.subjective-utility]
+        tension: []
+        tags: []
+        analysis:
+          gains: [peasantry, petty-bourgeoisie, core-workers]
+          pays: [finance-capital]
+          mechanism: >
+            Banning interest and policing prices reduces lenders' claims on debtors and limits price gouging on
+            necessities, while profit-sharing finance and employment for wages remain, so industrial and merchant
+            capital keep their returns.
+          drain: softens
+          law_of_value: regulates
+      - id: value.source.entrepreneurial-risk
+        label: Profit rewards bearing uncertainty and spotting opportunity
+        claim: >
+          Profit is the reward for bearing uncertainty and for seeing opportunities others miss; it is not a return
+          on capital as such, and it disappears when competition catches up.
+        voiced: "Profit is the reward for being right when nobody else was. Losses are the penalty for being wrong. Workers get paid either way."
+        you: >
+          You think profit is what someone earns for taking a gamble that could have failed, or for spotting a chance
+          others missed.
+        because: >
+          Interest pays for waiting and wages pay for work, but neither explains profit. Profit is the residue left to
+          whoever bears uncertainty that cannot be insured, and to the entrepreneur who notices that resources are
+          priced below their potential use. Competition drives that profit away, so it must be won again and again by
+          new discoveries. The founder who mortgages her house to start a firm, and loses, is the other face of every
+          fortune.
+        against:
+          - from: marxism.classical
+            text: >
+              Owners of large fortunes bear least risk of all: they diversify, are bailed out, and lose a portion while
+              the workers they lay off lose everything. Risk is real, but it does not explain the steady profit of the
+              owning class as a whole.
+          - from: socdem.keynesian
+            text: >
+              Most profit today accrues to incumbents with market power, not to bold discoverers. Monopoly and
+              rent explain more of the profit share than uncertainty does.
+        sources:
+          - {author: Frank Knight, title: "Risk, Uncertainty and Profit", year: 1921}
+          - {author: Israel Kirzner, title: Competition and Entrepreneurship, year: 1973}
+          - {author: Joseph Schumpeter, title: "Capitalism, Socialism and Democracy", year: 1942}
+        traditions:
+          defining: [liberalism.austrian]
+          typical: [liberalism.chicago, libertarianism.objectivist, libertarianism.ancap, commonsense.self-reliance, technology.e-acc]
+          contested: [liberalism.ordoliberal, religious.islamism-brotherhood]
+          rejects: [marxism.classical, marxism.leninism]
+        presupposes: []
+        excludes: [value.source.labor]
+        tension: []
+        tags: []
+        analysis:
+          gains: [industrial-capital, finance-capital, petty-bourgeoisie]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            Presenting profit as payment for risk justifies low taxes on capital gains and the owner's sole claim on
+            the residual, though in practice large owners shift risk to workers, suppliers and public bailouts.
+          drain: sustains
+          law_of_value: extends
+  - id: class.concept
+    domain: economy
+    layer: analysis
+    question: What is class?
+    plain: When people say "working class" or "upper class," what are they actually talking about?
+    short: class
+    importance: 3
+    positions:
+      - id: class.concept.relation-to-production
+        label: Class is a relation to the means of production
+        claim: >
+          A class is a group defined by its place in production: those who own the means of production and live on
+          others' labor, and those who own none and must sell their labor to live.
+        voiced: "Class is not how much you earn or how you talk. It is whether you own the workplace or work in it, whether you hire or are hired."
+        you: >
+          You think class is about whether you own the places where things get made or have to work in them for a
+          wage.
+        because: >
+          A well-paid electrician and a poorly paid cleaner share something a shopkeeper and a shareholder do not:
+          they live by selling their time to someone who owns what they work with. That relation, not income or taste,
+          decides who controls the product, who can be laid off, and whose interests clash in every dispute over hours,
+          pay and investment. Income strata blur and shift; the relation persists and explains them. Classes defined
+          this way are also the forces that have fought over every historical transformation.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Workers own pension funds and houses; owners work eighteen-hour days; people move between roles over a
+              lifetime. The two-class picture is a nineteenth-century caricature of a society of overlapping
+              individuals.
+          - from: socdem.revisionist
+            text: >
+              The middle strata of managers, technicians and small owners did not vanish as predicted; they grew. A
+              politics that waits for polarization waits forever.
+        sources:
+          - {author: Karl Marx and Friedrich Engels, title: The Communist Manifesto, year: 1848}
+          - {author: Karl Marx, title: "Capital, Volume I", year: 1867}
+          - {author: Erik Olin Wright, title: Classes, year: 1985}
+          - {author: Mao Zedong, title: Analysis of the Classes in Chinese Society, year: 1926}
+        traditions:
+          defining: [marxism.classical, marxism.leninism, marxism.ml]
+          typical: [marxism.trotskyism, marxism.maoism, marxism.left-communism, marxism.council-communism, anarchism.syndicalist, anarchism.communist, marxism.analytical, marxism.structural]
+          contested: [socdem.democratic-socialism, marxism.autonomism]
+          rejects: [liberalism.austrian, libertarianism.objectivist, conservatism.cst, fascism.italian]
+        presupposes: [history.motor.class-struggle]
+        excludes: [class.concept.no-such-thing]
+        tension: []
+        tags: [keystone]
+        analysis:
+          gains: [core-workers, peripheral-workers, reserve-army, peasantry]
+          pays: [industrial-capital, finance-capital, landed-capital]
+          mechanism: >
+            Defining class by ownership unites workers of different incomes and trades against employers, and names
+            the property relation as the thing that would have to change for their position to change.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            Third-Worldists argue that a definition applied country by country hides that core and peripheral workers
+            stand in different places in world production; Wright's contradictory class locations debate how to place
+            managers and professionals.
+          consciousness: class-economic
+      - id: class.concept.income-strata
+        label: Class is just income brackets
+        claim: >
+          Class means where you fall in the income and wealth distribution: low, middle and high earners, with the
+          lines drawn wherever is useful.
+        voiced: "Working class, middle class, upper class: it's about what you earn and what you can afford."
+        you: >
+          You think of class as how much money people have: low, middle or high income.
+        because: >
+          Income is what decides whether you can pay the rent, see a dentist, or send your children to a good school.
+          It is measurable, it changes over time, and policy can act on it directly through taxes, wages and benefits.
+          Talk of "owning the means of production" describes a world of factory owners and mill hands that most
+          people no longer recognize.
+        against:
+          - from: marxism.classical
+            text: >
+              A self-employed plumber and a nurse may earn the same; a retired landlord earns less than either. Income
+              brackets describe outcomes and say nothing about who controls what, so they cannot explain why the
+              brackets move.
+          - from: liberalism.austrian
+            text: >
+              Income brackets are statistical boxes, not groups. People pass through them as they age; treating them as
+              classes invents conflicts between the young and their own future selves.
+        sources:
+          - {author: Simon Kuznets, title: Economic Growth and Income Inequality, year: 1955}
+          - {author: Thomas Piketty, title: Capital in the Twenty-First Century, year: 2013}
+        traditions:
+          defining: []
+          typical: [liberalism.technocratic, liberalism.progressive, socdem.third-way, commonsense.live-and-let-live, commonsense.self-reliance]
+          contested: [socdem.keynesian, socdem.labourism]
+          rejects: [marxism.classical, marxism.leninism, liberalism.austrian]
+        presupposes: []
+        excludes: []
+        tension: [class.concept.relation-to-production]
+        tags: [keystone]
+        analysis:
+          gains: [professional-managerial, finance-capital]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Sorting people by income puts salaried professionals and skilled workers in a shared "middle class" and
+            casts the problem as low pay to be topped up by transfers, which leaves ownership, and the incomes of those
+            who live on property, out of view.
+          drain: none
+          law_of_value: none
+          consciousness: economic-corporate
+      - id: class.concept.no-such-thing
+        label: There are individuals, not classes
+        claim: >
+          Classes are abstractions; society is made of individuals and families who move up and down by their own
+          choices and luck, and grouping them into classes with common interests is a mistake.
+        voiced: "There is no such thing as society. There are individual men and women and there are families."
+        you: >
+          You think talk of classes lumps together people who are really individuals, each with their own choices and
+          chances.
+        because: >
+          Only individuals act, choose and bear consequences. Where there is mobility, the son of a miner becomes a
+          surgeon and the heir loses his fortune; the "classes" are churning collections of people at different points
+          in their lives. Teaching people that they belong to a class whose interests clash with another's turns
+          neighbors into enemies and excuses failure as fate. Where there are no legal estates, class is a story
+          imposed on free people.
+        against:
+          - from: marxism.classical
+            text: >
+              The individual is real, and so is the fact that most individuals must sell their labor to someone who
+              owns what they need. Mobility of a few does not change the positions, only who fills them.
+          - from: conservatism.traditionalist
+            text: >
+              A society of nothing but individuals and contracts is no society at all. Rank, vocation and belonging are
+              real; liberalism dissolved them and called the rubble liberty.
+        sources:
+          - {author: Margaret Thatcher, title: Interview for Woman's Own, year: 1987}
+          - {author: Ludwig von Mises, title: Human Action, year: 1949}
+          - {author: Robert Nisbet, title: The Decline and Fall of Social Class, year: 1959}
+        traditions:
+          defining: [libertarianism.objectivist]
+          typical: [liberalism.austrian, libertarianism.ancap, libertarianism.minarchist, liberalism.chicago, conservatism.fusionism, commonsense.self-reliance]
+          contested: [liberalism.classical, conservatism.neo]
+          rejects: [marxism.classical, marxism.leninism, conservatism.cst, socdem.labourism, conservatism.traditionalist]
+        presupposes: []
+        excludes: [class.concept.relation-to-production]
+        tension: []
+        tags: [keystone]
+        analysis:
+          gains: [finance-capital, industrial-capital, landed-capital]
+          pays: [core-workers, peripheral-workers, reserve-army]
+          mechanism: >
+            Denying classes leaves workers to negotiate one by one with employers who already act collectively through
+            firms and associations, which keeps wages down and lets owners present their interests as everyone's.
+          drain: sustains
+          law_of_value: extends
+          consciousness: economic-corporate
+      - id: class.concept.market-situation-status
+        label: Class is market situation, separate from status and power
+        claim: >
+          Class is a person's chances in the market for jobs, goods and credit, set by property and by skills; status
+          and political power are separate rankings that do not follow from it.
+        voiced: "Class situation is ultimately market situation. But honor, lifestyle and party are distinct orders of power, and they often cut across class."
+        you: >
+          You think class is about the chances your skills and property give you in the market, and that prestige and
+          power are separate matters.
+        because: >
+          A doctor and a factory worker both sell labor, but their credentials give them very different life chances,
+          security and authority. Owners of property and holders of scarce skills form distinct classes, and within them
+          status groups (by religion, ethnicity, profession, caste) close ranks against outsiders. Separating class,
+          status and party explains why people so often organize by occupation, faith or nation rather than as one
+          working class.
+        against:
+          - from: marxism.classical
+            text: >
+              Weber describes how people are sorted for rewards but not where the rewards come from. Market chances
+              are an effect of the relation between those who own and those who must sell their labor.
+          - from: libertarianism.objectivist
+            text: >
+              "Life chances" turns the results of individual effort into the property of a group. A credential is
+              earned, not a class position.
+        sources:
+          - {author: Max Weber, title: Economy and Society, year: 1922}
+          - {author: John Goldthorpe, title: Social Mobility and Class Structure in Modern Britain, year: 1980}
+        traditions:
+          defining: []
+          typical: [liberalism.social, socdem.revisionist, socdem.third-way, liberalism.technocratic, communitarianism]
+          contested: [marxism.analytical, socdem.democratic-socialism]
+          rejects: [marxism.leninism, marxism.ml]
+        presupposes: []
+        excludes: []
+        tension: [class.concept.relation-to-production]
+        tags: []
+        analysis:
+          gains: [professional-managerial, core-workers]
+          pays: [reserve-army, peripheral-workers]
+          mechanism: >
+            Treating credentials and status as class resources supports licensing, degree requirements and occupational
+            closure that protect professional incomes and divide workers into ranked groups with separate interests.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Wright and later analytical Marxists fold skill and authority into a relational map, arguing Weber and Marx
+            can be combined; orthodox Marxists see this as abandoning exploitation as the center.
+          consciousness: economic-corporate
+      - id: class.concept.command-and-control
+        label: Class is who commands and who obeys
+        claim: >
+          Class rests on control: those who direct the work of others, whether as owners, managers or state officials,
+          form a ruling class, and those who carry out orders form the subordinate one.
+        voiced: "Abolish the shareholder and keep the manager and the party secretary, and you have changed the master's title, not the master."
+        you: >
+          You think the real class line runs between those who give orders at work and those who take them, whoever
+          owns the firm.
+        because: >
+          In large corporations and in state-run economies, ownership and control separated; managers and officials hold
+          real command over production and over people. In the USSR the bureaucracy disposed of the surplus as surely as
+          any capitalist. Authority in the organization, not legal title, decides who is subordinate. Any program that
+          leaves hierarchy at work in place will reproduce a ruling class.
+        against:
+          - from: marxism.ml
+            text: >
+              Managers serve whoever owns the enterprise. A plant manager in a workers' state answers to a plan set for
+              social need, not to profit; erasing that difference serves the enemies of socialism.
+          - from: liberalism.chicago
+            text: >
+              Hierarchy in a firm is a voluntary arrangement to cut transaction costs. A worker who dislikes orders can
+              quit or start her own business; nobody can quit the state.
+        sources:
+          - {author: Ralf Dahrendorf, title: Class and Class Conflict in Industrial Society, year: 1957}
+          - {author: James Burnham, title: The Managerial Revolution, year: 1941}
+          - {author: Milovan Djilas, title: The New Class, year: 1957}
+          - {author: Barbara Ehrenreich and John Ehrenreich, title: The Professional-Managerial Class, year: 1977}
+        traditions:
+          defining: [marxism.third-camp]
+          typical: [anarchism.communist, anarchism.syndicalist, marxism.council-communism, marxism.autonomism, anarchism.platformist]
+          contested: [marxism.trotskyism, marxism.left-communism]
+          rejects: [marxism.ml, liberalism.chicago, liberalism.austrian]
+        presupposes: []
+        excludes: []
+        tension: [class.concept.relation-to-production]
+        tags: []
+        analysis:
+          gains: [core-workers]
+          pays: [professional-managerial, industrial-capital]
+          mechanism: >
+            Naming command as the class line targets managerial authority in private firms and state enterprises alike,
+            backing workplace control and councils; in practice its sharpest use has been against socialist states
+            under siege.
+          drain: none
+          law_of_value: suspends
+          disputed: >
+            Marxist-Leninists and many Third-Worldists hold that "new class" theories functioned as Cold War arguments
+            against socialist states; council communists and third-camp Trotskyists hold they describe those states
+            accurately.
+          consciousness: class-economic
+      - id: class.concept.culture-and-upbringing
+        label: Class is upbringing, education and way of life
+        claim: >
+          Class is a way of life passed down through family: accent, schooling, tastes, connections and confidence,
+          which mark people and open or close doors whatever they earn.
+        voiced: "You can win the lottery and still be working class. It's how you were brought up, how you talk, who you know, what you feel at home with."
+        you: >
+          You think class is about how you were raised, how you speak and who you know, more than what you earn.
+        because: >
+          A plumber earning more than a junior lawyer is still seen, and sees himself, as working class. Cultural and
+          social capital, the ease with which a child of professionals moves through schools, interviews and committees,
+          are passed down like property and convert into money and power. That is why class persists when incomes
+          converge, and why people of the same income feel themselves so different.
+        against:
+          - from: marxism.classical
+            text: >
+              Culture marks class but does not make it. Reducing class to accent and taste turns it into an identity
+              to be respected rather than a relation of exploitation to be abolished.
+          - from: liberalism.austrian
+            text: >
+              Manners and tastes are learned and changed by choice; calling them class makes people prisoners of their
+              origins and gives them a grievance instead of a ladder.
+        sources:
+          - {author: Pierre Bourdieu, title: Distinction, year: 1979}
+          - {author: Richard Hoggart, title: The Uses of Literacy, year: 1957}
+          - {author: E. P. Thompson, title: The Making of the English Working Class, year: 1963}
+        traditions:
+          defining: []
+          typical: [commonsense.look-after-your-own, conservatism.right-populism, socdem.labourism, liberalism.progressive, marxism.western]
+          contested: [conservatism.national, socdem.left-populism]
+          rejects: [marxism.ml, libertarianism.objectivist]
+        presupposes: []
+        excludes: []
+        tension: []
+        tags: []
+        analysis:
+          gains: [professional-managerial, petty-bourgeoisie]
+          pays: [core-workers]
+          mechanism: >
+            Treating class as culture turns it into a matter of respect and representation, which right populists use
+            to cast university-educated professionals as the enemy while leaving employers and property owners outside
+            the frame.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Thompson held that class is a relation made in experience and culture, not a cultural identity; Bourdieu
+            ties cultural capital to the field of power. Both reject the identity reading this position often slides
+            into.
+          consciousness: economic-corporate
+      - id: class.concept.functional-estates
+        label: Classes are complementary orders of one social body
+        claim: >
+          Owners, workers, farmers and professions are different functions within one society, like organs of a body,
+          with mutual duties; their interests are meant to be reconciled, not fought out.
+        voiced: "Each needs the other: capital cannot do without labour, nor labour without capital. Class is a calling within the common good."
+        you: >
+          You think workers, owners and other groups each have their own role and duties, and should work together
+          for the good of the whole.
+        because: >
+          A society is not a heap of individuals nor a battlefield of classes but an ordered whole. Different callings
+          have different rights and duties: the employer owes a just wage and decent conditions, the worker owes honest
+          work. Organize each trade into bodies that represent both sides and the common good, and conflict can be
+          settled by justice instead of by strikes and lockouts. Class war tears apart what nature and God made to
+          cooperate.
+        against:
+          - from: marxism.classical
+            text: >
+              The body has a head and it has hands, and the head decides. Every corporatist order has meant workers
+              barred from striking while owners kept their property and their profits.
+          - from: liberalism.austrian
+            text: >
+              Organizing society into official estates means the state decides each group's income. That is the guild
+              system and the fascist corporation, and both strangled enterprise.
+        sources:
+          - {author: Leo XIII, title: Rerum Novarum, year: 1891}
+          - {author: Pius XI, title: Quadragesimo Anno, year: 1931}
+          - {author: Othmar Spann, title: Der wahre Staat (The True State), year: 1921}
+          - {author: Benito Mussolini and Giovanni Gentile, title: The Doctrine of Fascism, year: 1932}
+        traditions:
+          defining: [conservatism.cst, fascism.italian, fascism.national-syndicalism, fascism.clerical]
+          typical: [conservatism.integralism, conservatism.distributism, conservatism.christian-democracy, conservatism.reactionary, fascism.third-position, nationalism.peronism, religious.confucian]
+          contested: [conservatism.one-nation, conservatism.national]
+          rejects: [marxism.classical, marxism.leninism, liberalism.austrian, anarchism.syndicalist]
+        presupposes: []
+        excludes: [class.concept.relation-to-production]
+        tension: []
+        tags: []
+        analysis:
+          gains: [industrial-capital, landed-capital, petty-bourgeoisie]
+          pays: [core-workers, peasantry]
+          mechanism: >
+            Treating classes as complementary functions puts wage disputes under joint bodies or state arbitration, which
+            in Catholic practice yielded social insurance and works councils and in fascist Italy, Spain and Portugal
+            meant banned strikes, state-controlled unions and falling real wages.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            Materialists differ on whether Christian-democratic corporatism (codetermination) is a real gain for workers
+            or class collaboration; they agree fascist corporatism served owners.
+          consciousness: hegemonic
+      - id: class.concept.world-and-race
+        label: Class is made on a world scale and through race
+        claim: >
+          Classes are formed across the whole world economy and through race and nation, so a worker in a rich country
+          and one in a poor country, or a white worker and a Black worker, do not simply share one class position.
+        voiced: "Capitalism did not homogenize workers; it racialized them. The world's proletariat is in Dhaka and Kinshasa, and the core worker's wage carries a share of the colony."
+        you: >
+          You think class can only be understood at a world scale and alongside race, because workers in rich and poor
+          countries are not in the same position.
+        because: >
+          From the start capitalism used racial difference to rank labor: slaves, colonial subjects, migrants and
+          citizens were exploited at different rates. Today the wage gap between core and periphery for similar work is
+          far larger than any gap inside a country, and part of the core wage is paid out of the cheap goods and
+          resources the periphery supplies. A class map that stops at national borders or ignores race mistakes the
+          privileged part of the world's workforce for the whole of it.
+        against:
+          - from: marxism.trotskyism
+            text: >
+              Workers everywhere sell labor power to capital; their wage levels differ but their class does not. Telling
+              core workers they are bribed accomplices hands them to the nationalists.
+          - from: liberalism.chicago
+            text: >
+              Wage differences reflect productivity, which reflects capital, skills and institutions. Calling them
+              exploitation by foreign workers turns a development problem into a moral accusation.
+        sources:
+          - {author: Cedric Robinson, title: "Black Marxism: The Making of the Black Radical Tradition", year: 1983}
+          - {author: W. E. B. Du Bois, title: Black Reconstruction in America, year: 1935}
+          - {author: Arghiri Emmanuel, title: Unequal Exchange, year: 1969}
+          - {author: Zak Cope, title: "Divided World, Divided Class", year: 2012}
+        traditions:
+          defining: [marxism.third-worldism, marxism.black-radical]
+          typical: [marxism.mlm, marxism.dependency, nationalism.pan-africanism, nationalism.black-nationalism, nationalism.decolonial, feminism.black]
+          contested: [marxism.maoism, marxism.world-systems]
+          rejects: [marxism.trotskyism, liberalism.chicago, conservatism.national]
+        presupposes: []
+        excludes: [class.concept.no-such-thing]
+        tension: []
+        tags: []
+        analysis:
+          gains: [peripheral-workers, peasantry, reserve-army]
+          pays: [finance-capital, industrial-capital, comprador-capital]
+          mechanism: >
+            Mapping class worldwide makes the wage gap between core and periphery and racial wage gaps the core issues,
+            which supports raising peripheral wages and supply prices and asks core workers to accept losing the cheap
+            imports their real wages partly rest on.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >
+            Whether core workers form a labor aristocracy is the sharpest split among materialists: Emmanuel, Amin and
+            Cope say yes in different degrees; most Trotskyists and many Marxist-Leninists say the core working class
+            remains exploited and revolutionary. Robinson's racial capitalism and Third-Worldist unequal exchange are
+            distinct arguments that converge here.
+          consciousness: hegemonic
+  - id: wage.nature
+    domain: economy
+    layer: analysis
+    question: What is the wage?
+    plain: When you get paid for your work, what exactly are you being paid for?
+    short: the wage
+    importance: 2
+    positions:
+      - id: wage.nature.voluntary-exchange
+        label: The wage is a fair voluntary exchange
+        claim: >
+          The wage is the price agreed between a worker and an employer for work done; both sides accept it because
+          both gain, so it is fair.
+        voiced: "Nobody forced you to take the job and nobody forces you to stay. You agreed a price for your work, and that's a fair deal."
+        you: >
+          You see your wage as a fair deal you agreed to, a price for your work that both sides accepted.
+        because: >
+          The employer gives up money now in exchange for work whose product may or may not sell. The worker gets a
+          certain income without risking capital. Each prefers what they get to what they give, or the deal would not
+          happen. If a better offer exists, the worker can take it; employers compete for good workers. Calling this
+          exploitation insults millions of people who chose their jobs and treats them as incapable of judging their
+          own interests.
+        against:
+          - from: marxism.classical
+            text: >
+              The worker is free in a double sense: free to sell her labor power, and free of any other means to live.
+              The choice is which master, not whether to have one.
+          - from: liberalism.republican
+            text: >
+              A contract can be voluntary and still place one party under the arbitrary will of another for most of
+              their waking life. Consent at the door does not make domination inside acceptable.
+        sources:
+          - {author: Ludwig von Mises, title: Human Action, year: 1949}
+          - {author: Frédéric Bastiat, title: Economic Harmonies, year: 1850}
+          - {author: Robert Nozick, title: "Anarchy, State, and Utopia", year: 1974}
+        traditions:
+          defining: [liberalism.austrian, libertarianism.ancap, libertarianism.objectivist]
+          typical: [liberalism.chicago, liberalism.classical, libertarianism.minarchist, conservatism.fusionism, commonsense.self-reliance]
+          contested: [libertarianism.paleo, liberalism.ordoliberal]
+          rejects: [marxism.classical, anarchism.syndicalist, conservatism.cst, liberalism.republican]
+        presupposes: [capitalism.nature.free-exchange]
+        excludes: [wage.nature.price-of-labor-power]
+        tension: []
+        tags: [keystone]
+        analysis:
+          gains: [industrial-capital, finance-capital, petty-bourgeoisie]
+          pays: [core-workers, peripheral-workers, reserve-army]
+          mechanism: >
+            If the wage is fair because agreed, there is no ground for minimum wages, unions or labor law, so wages are
+            set where the unemployed and the desperate pull them, which is lowest in the periphery.
+          drain: sustains
+          law_of_value: extends
+      - id: wage.nature.price-of-labor-power
+        label: The wage pays for labor power, not for all the labor done
+        claim: >
+          The wage pays for the worker's capacity to work, at roughly what it costs to keep a worker alive and working,
+          while the employer gets everything that capacity produces in the working day.
+        voiced: "You are paid for your ability to work, not for what you produce. The wage covers your upkeep; the rest of the day belongs to the boss."
+        you: >
+          You think your wage covers what it costs you to live and keep working, while your employer keeps the rest of
+          what you produce.
+        because: >
+          The wage looks like payment for all the hours worked, but what the employer buys is control over your capacity
+          to work for a period. Its price is set, like any commodity's, by its cost of production: food, housing,
+          training, raising the next generation, at the standard customary in that place and time. What labor produces
+          in those hours is more than that. The difference is profit, and it arises even when every deal is fair at
+          market prices.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Wages have risen many times over since Marx wrote, far above subsistence. A theory that predicted wages
+              stuck at the cost of upkeep has been refuted by a century of growth.
+          - from: liberalism.austrian
+            text: >
+              The worker is paid in advance of the sale, and the employer bears the risk of loss. The gap is interest
+              and profit for time and uncertainty.
+        sources:
+          - {author: Karl Marx, title: Wage Labour and Capital, year: 1849}
+          - {author: Karl Marx, title: "Capital, Volume I", year: 1867}
+        traditions:
+          defining: [marxism.classical, marxism.leninism, marxism.ml]
+          typical: [marxism.trotskyism, marxism.maoism, marxism.left-communism, marxism.council-communism, anarchism.syndicalist, marxism.third-worldism, marxism.social-reproduction]
+          contested: [marxism.analytical]
+          rejects: [liberalism.austrian, liberalism.chicago, libertarianism.objectivist]
+        presupposes: [value.source.labor]
+        excludes: [wage.nature.voluntary-exchange]
+        tension: []
+        tags: [keystone]
+        analysis:
+          gains: [core-workers, peripheral-workers, reserve-army]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Seeing the wage as the price of labor power shows that higher wages alone leave profit's source intact, which
+            points from wage bargaining toward control of production; it also shows that a lower customary standard of
+            upkeep in the periphery means cheaper labor power for capital.
+          drain: reduces
+          law_of_value: abolishes
+          disputed: >
+            Marxists debate whether the "historical and moral element" in the value of labor power lets core wages include
+            a share of value drained from the periphery (Emmanuel, Amin) or not (most Trotskyists).
+      - id: wage.nature.marginal-product
+        label: The wage tends toward what the worker adds to output
+        claim: >
+          In competitive labor markets the wage tends toward the value of what the last worker hired adds to output;
+          low wages mean low productivity or a market rigged against workers.
+        voiced: "Want higher wages? Raise productivity: more capital per worker, more skills, more competition among employers."
+        you: >
+          You think wages roughly match what workers add to production, and that the way to raise them is to make work
+          more productive.
+        because: >
+          An employer who pays less than a worker adds leaves money on the table for a rival to grab. That is why wages
+          have risen with productivity over the long run, and why they are high where capital and skills are plentiful.
+          Where wages fall short of contribution, the cause is identifiable: a single dominant employer, discrimination,
+          legal barriers. Fix those and the market pays people what they are worth to production.
+        against:
+          - from: socdem.labourism
+            text: >
+              Since the 1970s productivity in the United States and Britain has kept rising while wages stalled. Pay
+              followed union power down, not productivity.
+          - from: marxism.third-worldism
+            text: >
+              A garment worker in Dhaka using the same machine as one in Turin is paid a tenth as much. The gap is not
+              productivity; it is the border.
+        sources:
+          - {author: John Bates Clark, title: The Distribution of Wealth, year: 1899}
+          - {author: Gary Becker, title: Human Capital, year: 1964}
+        traditions:
+          defining: [liberalism.chicago]
+          typical: [liberalism.technocratic, liberalism.classical, liberalism.utilitarian, socdem.third-way]
+          contested: [liberalism.social, socdem.keynesian]
+          rejects: [marxism.classical, marxism.third-worldism, socdem.labourism]
+        presupposes: [value.source.marginal-productivity]
+        excludes: [wage.nature.price-of-labor-power]
+        tension: []
+        tags: []
+        analysis:
+          gains: [professional-managerial, industrial-capital, finance-capital]
+          pays: [peripheral-workers, reserve-army, core-workers]
+          mechanism: >
+            Attributing wages to productivity directs policy toward training and investment and away from bargaining
+            power, and explains peripheral wages as low productivity, which justifies the price gap through which value
+            moves to the core.
+          drain: sustains
+          law_of_value: extends
+      - id: wage.nature.just-wage
+        label: A wage is just only if it keeps a family in decency
+        claim: >
+          A wage is just only if it lets a worker support a family in reasonable comfort; agreement between the parties
+          does not make a starvation wage just.
+        voiced: "There underlies a dictate of natural justice more imperious and ancient than any bargain: that wages ought not to be insufficient to support a frugal and well-behaved wage-earner."
+        you: >
+          You think a fair wage must be enough to support a family decently, whatever the market or the contract says.
+        because: >
+          Labor is not a commodity like coal; it is a person's life spent in service. A worker without savings must take
+          what is offered, so a contract made under that pressure binds the conscience of neither party. Justice requires
+          a family wage, the right to form associations to win it, and public law where employers will not pay it. The
+          employer has property rights, but property carries a social mortgage.
+        against:
+          - from: liberalism.austrian
+            text: >
+              A wage set above what the work produces is a wage nobody will pay. Mandate "just" wages and the least
+              productive workers are priced out of work entirely.
+          - from: marxism.classical
+            text: >
+              The just wage accepts the wage relation and asks only for a kinder price. A family wage paid to the male
+              breadwinner also tied women to unpaid housework.
+        sources:
+          - {author: Leo XIII, title: Rerum Novarum, year: 1891}
+          - {author: John A. Ryan, title: A Living Wage, year: 1906}
+          - {author: John Paul II, title: Laborem Exercens, year: 1981}
+        traditions:
+          defining: [conservatism.cst]
+          typical: [conservatism.distributism, conservatism.christian-democracy, religious.christian-socialism, socdem.labourism, religious.islamism-brotherhood, conservatism.postliberal]
+          contested: [conservatism.one-nation, conservatism.national]
+          rejects: [liberalism.austrian, libertarianism.ancap, libertarianism.objectivist]
+        presupposes: [property.private.social-function]
+        excludes: [wage.nature.voluntary-exchange]
+        tension: []
+        tags: []
+        analysis:
+          gains: [core-workers, reserve-army]
+          pays: [industrial-capital, petty-bourgeoisie]
+          mechanism: >
+            A living-wage standard backed by law and unions raises the floor of pay and squeezes low-wage employers,
+            while the family-wage form historically raised men's pay and kept women's work unpaid.
+          drain: softens
+          law_of_value: regulates
+      - id: wage.nature.bargaining-power
+        label: The wage is set by bargaining power and institutions
+        claim: >
+          Wages are not fixed by any natural law; they are set by the relative power of workers and employers, through
+          unions, labor law, unemployment levels and minimum wages.
+        voiced: "Wages are what you can win. Organize, and they go up. Let the unions be broken, and watch them stall."
+        you: >
+          You think wages depend mostly on how much power workers have to push for them.
+        because: >
+          The same job pays very differently in Denmark and Texas, and the wage share fell across rich countries as
+          unions shrank. A single employer facing many workers sets pay below what competition would yield. Collective
+          bargaining, full employment and minimum wages give labor a countervailing power that matches the employer's,
+          and the evidence shows they raise pay without the job losses the textbooks predicted.
+        against:
+          - from: marxism.classical
+            text: >
+              Bargaining moves the price of labor power within limits set by profitability. Push beyond them and capital
+              moves, automates or strikes back. Wage struggle is necessary and never sufficient.
+          - from: liberalism.chicago
+            text: >
+              Unions raise their members' pay by excluding others, who crowd into non-union jobs and push wages down
+              there. Bargaining power redistributes among workers more than from owners.
+        sources:
+          - {author: Sidney Webb and Beatrice Webb, title: Industrial Democracy, year: 1897}
+          - {author: John Kenneth Galbraith, title: "American Capitalism: The Concept of Countervailing Power", year: 1952}
+          - {author: Walter Korpi, title: The Democratic Class Struggle, year: 1983}
+        traditions:
+          defining: [socdem.labourism, socdem.nordic]
+          typical: [socdem.keynesian, socdem.fabian, socdem.democratic-socialism, liberalism.social, socdem.left-populism]
+          contested: [marxism.trotskyism, socdem.third-way]
+          rejects: [liberalism.austrian, liberalism.chicago, libertarianism.ancap]
+        presupposes: []
+        excludes: []
+        tension: [wage.nature.marginal-product]
+        tags: []
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [industrial-capital, petty-bourgeoisie]
+          mechanism: >
+            Strong unions and wage laws raise the labor share inside a country, paid partly from profits and partly
+            from higher prices; core firms can pass some of the cost on through cheaper inputs from the periphery.
+          drain: softens
+          law_of_value: regulates
+          consciousness: class-economic
+      - id: wage.nature.wage-slavery
+        label: Working for a wage is a form of servitude
+        claim: >
+          Depending on a wage means placing yourself under another's command for most of your waking life; whatever the
+          pay, renting yourself out is a form of servitude that free people should not accept.
+        voiced: "They call it a job. Our grandparents called it wage slavery, and they were right: you sell yourself by the hour."
+        you: >
+          You think working for a boss is a kind of servitude, and that people should own and govern their own work.
+        because: >
+          A citizen who must obey a master for ten hours a day is not fully free, however good the wage. Nineteenth-century
+          workers in the United States called it wage slavery and demanded a cooperative commonwealth; Proudhon and Belloc
+          saw that a propertyless majority bound to employers ends in a servile state. The cure is not a better master
+          but no master: ownership of one's tools and self-government at work.
+        against:
+          - from: libertarianism.objectivist
+            text: >
+              A slave cannot quit. Comparing a voluntary job to chattel slavery is an obscenity and insults those who
+              were actually enslaved.
+          - from: marxism.ml
+            text: >
+              The slogan is right but the remedy of small ownership and cooperatives within a market leaves the law of
+              value intact. Only social ownership under a plan ends the commodity status of labor.
+        sources:
+          - {author: Pierre-Joseph Proudhon, title: What Is Property?, year: 1840}
+          - {author: Hilaire Belloc, title: The Servile State, year: 1912}
+          - {author: Alex Gourevitch, title: From Slavery to the Cooperative Commonwealth, year: 2015}
+        traditions:
+          defining: [anarchism.mutualist, anarchism.syndicalist]
+          typical: [anarchism.communist, conservatism.distributism, liberalism.republican, marxism.council-communism, zapatismo, anarchism.individualist]
+          contested: [marxism.classical, socdem.democratic-socialism]
+          rejects: [libertarianism.objectivist, liberalism.chicago, liberalism.austrian]
+        presupposes: []
+        excludes: [wage.nature.voluntary-exchange]
+        tension: []
+        tags: []
+        analysis:
+          gains: [core-workers, peripheral-workers, petty-bourgeoisie]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Treating the wage relation as servitude pushes toward worker ownership, cooperatives and workplace control,
+            which take the residual from owners; in its distributist form it favors small proprietors over socialization.
+          drain: none
+          law_of_value: suspends
+          consciousness: class-economic
+      - id: wage.nature.fair-days-pay
+        label: A fair day's wage for a fair day's work
+        claim: >
+          The wage is payment for the work you put in; it is fair when it matches the effort and lets you live decently,
+          and unfair when the boss takes advantage.
+        voiced: "I don't want charity and I don't want to get rich. A fair day's pay for a fair day's work, that's all anybody asks."
+        you: >
+          You think a wage is fair when it matches the work you do and lets you live properly, and you notice when
+          you're being taken advantage of.
+        because: >
+          Most people judge their pay by what they put in and what it lets them do. A hard job deserves more than an
+          easy one, and nobody working full time should be unable to pay the rent. That standard is shared on the shop
+          floor and in the boardroom, and it gives people a ground to stand on when they ask for a raise without
+          needing an economic theory.
+        against:
+          - from: marxism.classical
+            text: >
+              Instead of the conservative motto "A fair day's wage for a fair day's work," workers ought to inscribe on
+              their banner the revolutionary watchword "Abolition of the wages system."
+          - from: liberalism.austrian
+            text: >
+              Effort is not what the market pays for; results are. A wage that tracked sweat instead of value would
+              reward digging holes and filling them in.
+        sources:
+          - {author: Karl Marx, title: "Value, Price and Profit", year: 1865, note: "Address to the International Workingmen's Association, published 1898"}
+          - {author: Studs Terkel, title: Working, year: 1974}
+        traditions:
+          defining: [commonsense.self-reliance]
+          typical: [socdem.labourism, commonsense.look-after-your-own, conservatism.one-nation, conservatism.right-populism]
+          contested: [commonsense.rigged]
+          rejects: [marxism.classical, liberalism.austrian]
+        presupposes: []
+        excludes: []
+        tension: [wage.nature.price-of-labor-power, wage.nature.voluntary-exchange]
+        tags: [commonsense]
+        analysis:
+          gains: [core-workers]
+          pays: [petty-bourgeoisie]
+          mechanism: >
+            A fairness standard supports pressure for raises and against wage theft within an existing job, but treats
+            the wage relation as normal, so its gains depend on workers' bargaining power and stay within the firm or
+            trade.
+          drain: none
+          law_of_value: none
+          consciousness: economic-corporate

@@ -1,0 +1,1163 @@
+problematics:
+  # ------------------------------------------------------------------
+  - id: history.elites
+    domain: method
+    layer: method
+    question: Do elites always rule?
+    plain: Will a small group always end up running things, whatever the system?
+    short: elite rule
+    importance: 2
+    positions:
+      - id: history.elites.iron-law
+        label: Yes, an organized minority always rules
+        claim: "In every society an organized minority rules the disorganized majority; revolutions and elections only replace one elite with another."
+        voiced: "Who says organization says oligarchy. In every society there are two classes: those who rule and those who are ruled. Revolutions change the names on the doors."
+        you: "You think a small group always ends up in charge, whatever system is in place, and that revolutions just swap one elite for another."
+        because: >
+          Any large organization needs leaders, and leaders acquire expertise, information and control
+          over the organization's resources that members lack. Even socialist parties and unions, built to
+          serve the many, became oligarchies within a generation. A minority that is organized will always
+          beat a majority that is not. Accept this and you can judge elites by their quality rather than
+          chase a fantasy.
+        against:
+          - from: marxism.classical
+            text: >
+              Elites rule because of what they own. Take away the property that funds their power and the
+              minority loses its base; the "iron law" describes class society and calls it human nature.
+          - from: anarchism.communist
+            text: >
+              Organization without hierarchy has existed and exists: rotation, recall, mandated delegates,
+              federations. The Zapatista principle of "commanding by obeying" is a practice, not a dream.
+        sources:
+          - {author: Gaetano Mosca, title: The Ruling Class, year: 1896}
+          - {author: Vilfredo Pareto, title: The Mind and Society, year: 1916}
+          - {author: Robert Michels, title: Political Parties, year: 1911}
+        traditions:
+          defining: []
+          typical: [conservatism.traditionalist, fascism.italian, fascism.neoreaction, conservatism.paleo, conservatism.reactionary]
+          contested: [liberalism.technocratic, commonsense.anti-politics]
+          rejects: [anarchism.communist, marxism.classical, socdem.democratic-socialism, zapatismo]
+        presupposes: []
+        excludes: [history.elites.can-be-abolished]
+        tension: [change.possibility.organized-people-can]
+        analysis:
+          gains: [finance-capital, industrial-capital, landed-capital, professional-managerial]
+          pays: [core-workers, peasantry]
+          mechanism: >
+            If minority rule is a law of nature, mass parties, unions and revolutions only change the names
+            at the top, which counsels the many to accept whoever rules and choose at most among competing
+            elites.
+          drain: none
+          law_of_value: none
+          method: mixed
+
+      - id: history.elites.competing-elites
+        label: Elites rule, but competition for votes keeps them in check
+        claim: "Elites govern, but in liberal democracy they must compete for votes and share power among many groups, and that is enough to hold them to account."
+        voiced: "Democracy is not rule by the people; it is a competition between teams of leaders for the people's vote. That competition is what keeps them honest."
+        you: "You think leaders will always come from a small group, but that making them compete in elections keeps them accountable."
+        because: >
+          Direct rule by the many is impossible in large societies. What liberal democracy offers is the
+          chance to throw rulers out peacefully and a pluralism in which no single group (business, labor,
+          church) controls everything. Studies of real cities found power spread among different
+          elites on different issues. Competition, not participation, is what protects citizens.
+        against:
+          - from: marxism.classical
+            text: >
+              The competing elites share one class and one view of what is possible. Studies of policy
+              outcomes find the preferences of the wealthy decide and those of average citizens barely
+              register.
+          - from: conservatism.right-populism
+            text: >
+              The parties compete over nothing that matters. On trade, war and immigration the
+              establishment of both sides agrees, and the voter gets the same thing whoever wins.
+        sources:
+          - {author: Joseph A. Schumpeter, title: "Capitalism, Socialism and Democracy", year: 1942}
+          - {author: Robert A. Dahl, title: Who Governs?, year: 1961}
+          - {author: Robert A. Dahl, title: Polyarchy, year: 1971}
+        traditions:
+          defining: [liberalism.technocratic]
+          typical: [liberalism.classical, liberalism.social, socdem.third-way, conservatism.christian-democracy, liberalism.internationalist]
+          contested: [liberalism.republican]
+          rejects: [marxism.classical, anarchism.communist, conservatism.right-populism]
+        presupposes: []
+        excludes: []
+        tension: [state.nature.class-instrument]
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Accepting rule by competing elites as the best available form makes the vote the main lever of
+            the many, a lever whose options are set by parties funded by the wealthy and staffed by the
+            professions.
+          drain: none
+          law_of_value: none
+          method: mixed
+
+      - id: history.elites.ruling-class
+        label: A ruling class rules because it owns; its rule can end
+        claim: "What rules is not an elite as such but a class that owns the means of production; its rule depends on that ownership and can be ended."
+        voiced: "The executive of the modern state is a committee for managing the common affairs of the bourgeoisie. Change who owns, and you change who rules."
+        you: "You think the people in charge rule because they own the economy, and that ending that ownership would end their rule."
+        because: >
+          Politicians come and go, but the people who own banks, land and industry stay, and governments
+          that threaten them face capital flight, investment strikes and, if needed, coups. Elites in
+          politics, media and the military are recruited from or bound to that class. Its power is
+          historical, not natural: aristocracies fell when land stopped being the center of wealth, and
+          capitalist rule can fall too.
+        against:
+          - from: conservatism.paleo
+            text: >
+              The Soviet Union abolished private property and got a new ruling class of managers and
+              officials. Rule rests on control of organization, not on title deeds; the managerial
+              revolution happens everywhere.
+          - from: anarchism.communist
+            text: >
+              Abolish private capital through a state and you create a red bureaucracy that rules in the
+              name of the workers. Property is one source of rule; the state is another.
+        sources:
+          - {author: Karl Marx and Friedrich Engels, title: The Communist Manifesto, year: 1848}
+          - {author: C. Wright Mills, title: The Power Elite, year: 1956}
+          - {author: Ralph Miliband, title: The State in Capitalist Society, year: 1969}
+        traditions:
+          defining: [marxism.classical, marxism.leninism, marxism.ml]
+          typical: [marxism.trotskyism, marxism.maoism, socdem.democratic-socialism, marxism.structural]
+          contested: [marxism.third-camp, marxism.left-communism]
+          rejects: [liberalism.technocratic, conservatism.traditionalist, conservatism.paleo]
+        presupposes: [class.concept.relation-to-production]
+        excludes: [history.elites.iron-law]
+        tension: []
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, landed-capital, comprador-capital]
+          mechanism: >
+            Tracing political rule to ownership points the many at the property that funds every elite's
+            power rather than at personnel; it promises that a change of ownership ends the rule, a promise
+            critics on the left and right say the twentieth century did not keep.
+          drain: reduces
+          law_of_value: none
+          disputed: >
+            Trotskyists, third-camp socialists and left communists dispute whether Soviet-type societies
+            ended class rule or created a new bureaucratic ruling stratum or class.
+          method: materialist
+
+      - id: history.elites.can-be-abolished
+        label: No, societies can live without rulers
+        claim: "Rule by a few is not inevitable: many societies have lived without rulers, and hierarchy can be dismantled by people organizing without bosses."
+        voiced: "Hierarchy is a historical accident, not a law. People have lived for millennia without kings or bosses, and they can again. Organization, yes; rulers, no."
+        you: "You think people can organize themselves without anyone ruling over them, and that this has happened before."
+        because: >
+          Archaeology and anthropology show societies that deliberately prevented chiefs from turning
+          prestige into power, and cities that ran without palaces. In modern times, workers' councils,
+          collectives in Spain, Zapatista communities and Rojava's communes have organized production and
+          defense without a ruling class. Domination is a choice societies make and can unmake.
+        against:
+          - from: marxism.ml
+            text: >
+              Without a state of their own, the dispossessed are reconquered by the organized minority of
+              the old ruling class, as in Paris in 1871 and Spain in 1939. Hierarchy ends only after its
+              defenders are defeated.
+          - from: conservatism.traditionalist
+            text: >
+              Every organization breeds its oligarchy, including anarchist ones: the CNT that sent
+              ministers into the Spanish government in 1936 shows it. Small stateless bands do not scale to
+              industrial societies.
+        sources:
+          - {author: Pierre Clastres, title: Society Against the State, year: 1974}
+          - {author: David Graeber and David Wengrow, title: The Dawn of Everything, year: 2021}
+          - {author: Murray Bookchin, title: The Ecology of Freedom, year: 1982}
+        traditions:
+          defining: [anarchism.communist, anarchism.communalism, anarchism.green]
+          typical: [anarchism.syndicalist, zapatismo, anarchism.confederalism, anarchism.primitivist, anarchism.platformist, anarchism.feminist]
+          contested: [marxism.council-communism, marxism.autonomism]
+          rejects: [conservatism.traditionalist, fascism.italian, religious.political-meritocracy, marxism.ml]
+        presupposes: [change.possibility.organized-people-can]
+        excludes: [history.elites.iron-law, history.elites.rule-of-the-best]
+        tension: []
+        analysis:
+          gains: [core-workers, peasantry, peripheral-workers, reserve-army]
+          pays: [finance-capital, industrial-capital, landed-capital, professional-managerial]
+          mechanism: >
+            Denying that rule by a few is inevitable directs the dispossessed to build councils and
+            assemblies that take decisions away from owners and managers; where it does not also defeat
+            armed defenders of property, its experiments have been crushed.
+          drain: reduces
+          law_of_value: abolishes
+          method: mixed
+
+      - id: history.elites.rule-of-the-best
+        label: The best should rule, chosen for virtue and ability
+        claim: "Rule by a qualified few is not only inevitable but right: the most virtuous and able should govern, selected by merit, cultivation or examination."
+        voiced: "Not everyone is fit to govern. Choose rulers for wisdom and virtue, train them for a lifetime, and judge them by results, not by how well they flatter voters."
+        you: "You think the wisest and most capable people should run things, chosen for merit rather than popularity."
+        because: >
+          Governing is a skill and a moral calling. Plato's guardians, the Confucian scholar-officials and
+          Burke's natural aristocracy share an insight: the many cannot judge complex matters, and
+          elections reward demagogues. China's examination of officials and Singapore's government show
+          that rule by a selected, accountable meritocracy can deliver growth and order over long horizons.
+        against:
+          - from: liberalism.classical
+            text: >
+              No one is good enough to be trusted with unaccountable power. Rulers' good intentions do not
+              secure the interests of people who cannot remove them.
+          - from: marxism.classical
+            text: >
+              The "best" are reliably found among the children of the owning and educated classes, since
+              cultivation and exam success follow family wealth. Meritocracy is aristocracy with a diploma.
+        sources:
+          - {author: Plato, title: The Republic, year: "c. -375"}
+          - {author: Edmund Burke, title: An Appeal from the New to the Old Whigs, year: 1791}
+          - {author: Daniel A. Bell, title: "The China Model: Political Meritocracy and the Limits of Democracy", year: 2015}
+        traditions:
+          defining: [religious.political-meritocracy, religious.confucian]
+          typical: [conservatism.burkean, conservatism.traditionalist, fascism.neoreaction, conservatism.monarchist, nationalism.developmental-state]
+          contested: [liberalism.technocratic, marxism.scc]
+          rejects: [anarchism.communist, socdem.democratic-socialism, marxism.classical, liberalism.republican]
+        presupposes: []
+        excludes: [history.elites.can-be-abolished]
+        tension: []
+        analysis:
+          gains: [professional-managerial, landed-capital, finance-capital]
+          pays: [core-workers, peasantry]
+          mechanism: >
+            Justifying rule by the qualified gives exam-passers, officials and inherited elites a claim to
+            power beyond election or recall; since education and cultivation track family wealth, the
+            selection reproduces the owning and professional classes.
+          drain: none
+          law_of_value: none
+          method: idealist
+
+      - id: history.elites.curbed-by-mass-power
+        label: Elite rule can be curbed step by step by organized majorities
+        claim: "Elites tend to dominate, but organized majorities can curb them through unions, mass parties and institutions that let the many contest power."
+        voiced: "The great want to command; the people want not to be commanded. Give the people institutions of their own, tribunes, unions, recall, and the few can be held in check."
+        you: "You think powerful people will always try to dominate, but that ordinary people can keep them in check if they organize and build the right institutions."
+        because: >
+          Machiavelli saw that the conflict between the few and the many was what kept Rome free, so long
+          as the plebs had tribunes of their own. Mass unions and labor parties later forced the welfare
+          state on unwilling elites. Domination is reduced by giving the many power to contest decisions,
+          not by trusting the few or waiting for the end of all hierarchy.
+        against:
+          - from: conservatism.traditionalist
+            text: >
+              The union boss and the party official become the new oligarchs; the institutions built to
+              check the few produce a few of their own.
+          - from: marxism.leninism
+            text: >
+              The ruling class tolerates accountable institutions only until they threaten property.
+              Chile in 1973 showed what happens to a step-by-step curb once it bites.
+        sources:
+          - {author: Niccolò Machiavelli, title: Discourses on Livy, year: 1531}
+          - {author: Philip Pettit, title: Republicanism, year: 1997}
+          - {author: John P. McCormick, title: Machiavellian Democracy, year: 2011}
+        traditions:
+          defining: [liberalism.republican, socdem.democratic-socialism]
+          typical: [socdem.nordic, socdem.labourism, marxism.eurocommunism, socdem.left-populism]
+          contested: [marxism.gramscian, liberalism.social]
+          rejects: [fascism.italian, religious.political-meritocracy, conservatism.reactionary]
+        presupposes: [change.possibility.organized-people-can]
+        excludes: [history.elites.iron-law]
+        tension: []
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Building counter-institutions (unions, mass parties, recall) raises the cost of elite rule and
+            wins wage, welfare and rights gains paid for by owners; because it leaves ownership in place,
+            the gains last only as long as the counter-power does.
+          drain: none
+          law_of_value: regulates
+          consciousness: class-economic
+          method: mixed
+
+  # ------------------------------------------------------------------
+  - id: interests.objective
+    domain: method
+    layer: method
+    question: Do people have real interests apart from what they want?
+    plain: Can someone be wrong about what is good for them?
+    short: real interests
+    importance: 2
+    positions:
+      - id: interests.objective.class-interests
+        label: Yes, interests follow class position, and people can mistake them
+        claim: "People have objective interests set by their position in production, and they can be mistaken about them."
+        voiced: "A worker who cheers for tax cuts for his boss is not serving his interest; he is serving his boss's. Interests are facts about where you stand, not feelings."
+        you: "You think people's real interests come from their place in the economy, and that they can be wrong about them."
+        because: >
+          Whether a policy helps you depends on your circumstances, not on whether you like it. A tenant
+          gains from rent control whatever she believes about markets; a wage earner gains from stronger
+          unions whatever he thinks of them. Because ruling ideas shape preferences, what people say they
+          want can diverge from what their position requires, and politics must speak to the latter.
+        against:
+          - from: liberalism.classical
+            text: >
+              The "real self" argument is how freedom is overridden in freedom's name: once someone else
+              knows your true interest better than you, they are entitled to impose it.
+          - from: liberalism.austrian
+            text: >
+              Only individuals can judge their ends. A worker may value his faith, his town or his
+              independence above a wage gain; calling that a mistake substitutes the theorist's values for
+              his.
+        sources:
+          - {author: V. I. Lenin, title: What Is to Be Done?, year: 1902}
+          - {author: Georg Lukács, title: History and Class Consciousness, year: 1923}
+          - {author: Steven Lukes, title: "Power: A Radical View", year: 1974}
+        traditions:
+          defining: [marxism.ml, marxism.leninism]
+          typical: [marxism.classical, marxism.trotskyism, marxism.maoism, marxism.western]
+          contested: [marxism.analytical, socdem.left-populism]
+          rejects: [liberalism.classical, liberalism.austrian, libertarianism.ancap]
+        presupposes: [class.concept.relation-to-production]
+        excludes: [interests.objective.revealed-preference, interests.objective.constructed]
+        tension: []
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Holding that interests follow position lets organizers tell a worker who backs wage cuts that
+            he is acting against himself and grounds programs that unite a class beyond its current
+            opinion; its risk is a party that claims to know the class's interest better than the class.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Third Worldists hold that core workers' objective interests are partly tied to the drain;
+            orthodox Marxists hold that workers everywhere share one objective interest.
+          method: materialist
+
+      - id: interests.objective.revealed-preference
+        label: No, your interests are what you choose
+        claim: "A person's interests are what they choose; no one else can know better what is good for them."
+        voiced: "You reveal what you value by what you do. If you take the job, you preferred it to the alternatives. Nobody has standing to tell you that you were wrong to want what you wanted."
+        you: "You think nobody else can decide what is good for you: what people choose shows what they want."
+        because: >
+          Values are subjective: only the person choosing knows what she gives up and what she gains. An
+          outsider who claims to know her "real" interests is substituting his preferences for hers, and
+          if he has power, coercing her. Every voluntary exchange shows that both sides expected to be
+          better off; there is no more objective test available.
+        against:
+          - from: marxism.classical
+            text: >
+              Choices are made among the options that property leaves open. The hungry man "prefers" the
+              low wage to starving; calling that a revealed preference sanctifies the pressure that
+              produced it.
+          - from: conservatism.cst
+            text: >
+              Desires can be disordered: the addict prefers the drug, the debtor the next loan. There is a
+              real human good, and a society that never names it abandons the weak to their worst
+              impulses.
+        sources:
+          - {author: Paul A. Samuelson, title: "A Note on the Pure Theory of Consumer's Behaviour", year: 1938}
+          - {author: Ludwig von Mises, title: Human Action, year: 1949}
+          - {author: Murray N. Rothbard, title: Toward a Reconstruction of Utility and Welfare Economics, year: 1956}
+        traditions:
+          defining: [liberalism.austrian, liberalism.chicago, libertarianism.ancap]
+          typical: [liberalism.classical, libertarianism.minarchist, commonsense.live-and-let-live]
+          contested: [liberalism.utilitarian]
+          rejects: [marxism.classical, conservatism.cst, libertarianism.objectivist, conservatism.integralism]
+        presupposes: []
+        excludes: [interests.objective.class-interests, interests.objective.common-good]
+        tension: []
+        analysis:
+          gains: [finance-capital, industrial-capital, landed-capital]
+          pays: [core-workers, peripheral-workers, reserve-army]
+          mechanism: >
+            If what people choose is by definition what they want, every accepted wage, debt or lease
+            counts as a gain to the one who accepted it, which shields contracts made under pressure of
+            need from any charge of exploitation.
+          drain: sustains
+          law_of_value: extends
+          method: idealist
+
+      - id: interests.objective.common-good
+        label: Yes, there is a real human good and a common good
+        claim: "There is an objective human good, rooted in human nature, and a common good of society; people's real interests are measured against them, not against their wants."
+        voiced: "Man has a nature and an end. What perfects that nature is good for him, whether he wants it or not, and the common good is the good of all of us together."
+        you: "You think there really is such a thing as what is good for people, and that it doesn't just come down to what they happen to want."
+        because: >
+          Health, knowledge, friendship, family, worship and meaningful work are good for any human being;
+          their absence harms whatever the person prefers. A society aims at the common good, the
+          conditions in which all can flourish, which is not the sum of private wants. Without this
+          standard, there is no way to criticize usury, exploitation or degrading trades that people
+          "choose".
+        against:
+          - from: liberalism.egalitarian
+            text: >
+              Reasonable people disagree about the good life; a state that imposes one conception of it
+              on all denies equal respect to those who live by another.
+          - from: marxism.classical
+            text: >
+              A "common good" of landlord and tenant hides that their goods conflict. The common good
+              proclaimed in a class society is the good of the class that proclaims it.
+        sources:
+          - {author: Aristotle, title: Nicomachean Ethics, year: "c. -340"}
+          - {author: Thomas Aquinas, title: Summa Theologiae, year: "c. 1270"}
+          - {author: John Finnis, title: Natural Law and Natural Rights, year: 1980}
+        traditions:
+          defining: [conservatism.cst, conservatism.integralism]
+          typical: [conservatism.christian-democracy, conservatism.postliberal, religious.confucian, communitarianism, conservatism.distributism]
+          contested: [libertarianism.objectivist]
+          rejects: [liberalism.austrian, libertarianism.ancap, liberalism.egalitarian]
+        presupposes: []
+        excludes: [interests.objective.revealed-preference]
+        tension: []
+        analysis:
+          gains: [petty-bourgeoisie, core-workers]
+          pays: [finance-capital]
+          mechanism: >
+            Defining interests by an objective good grounds limits on usury, wage floors and family support,
+            and equally limits on divorce, sexuality and dissent; it presumes one good shared by owner and
+            worker, so their conflict is reconciled rather than fought out.
+          drain: none
+          law_of_value: regulates
+          method: idealist
+
+      - id: interests.objective.basic-needs
+        label: Yes, everyone has basic needs and capabilities
+        claim: "Everyone shares real interests in basic needs and capabilities (health, shelter, education, security, a say in their life) whatever they happen to prefer."
+        voiced: "A child who goes hungry is harmed whether or not her parents believe in markets. Some needs are universal, and a decent society is judged by whether it meets them."
+        you: "You think there are basic things every person needs to live well, and that a society should be judged by whether people have them."
+        because: >
+          Preferences adapt to deprivation: people denied education or health often stop wanting them.
+          So asking what people prefer cannot be the final test. Basic needs and capabilities can be
+          identified across cultures and measured, which gives a public standard for judging societies
+          without imposing a single way of life.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Lists of needs drawn up by experts become plans imposed on people who would have chosen
+              otherwise. Needs are met best by growth and exchange, not by bureaucrats defining them.
+          - from: nationalism.decolonial
+            text: >
+              Universal capability lists generalize a Western ideal of the autonomous individual.
+              Communities have their own understandings of a good life that the list overrides.
+        sources:
+          - {author: Amartya Sen, title: Development as Freedom, year: 1999}
+          - {author: Martha C. Nussbaum, title: Women and Human Development, year: 2000}
+          - {author: Len Doyal and Ian Gough, title: A Theory of Human Need, year: 1991}
+        traditions:
+          defining: [liberalism.egalitarian]
+          typical: [liberalism.social, socdem.nordic, socdem.democratic-socialism, ecology.degrowth, marxism.ecosocialism]
+          contested: [liberalism.utilitarian, marxism.classical]
+          rejects: [liberalism.austrian, libertarianism.ancap]
+        presupposes: []
+        excludes: [interests.objective.revealed-preference]
+        tension: []
+        analysis:
+          gains: [core-workers, peripheral-workers, reserve-army, peasantry]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Defining interests as needs every person shares gives a yardstick that markets visibly fail and
+            justifies public provision outside the price system, financed by taxing owners; applied
+            worldwide it measures the periphery's deprivation against the core's surplus.
+          drain: reduces
+          law_of_value: suspends
+          method: mixed
+
+      - id: interests.objective.national-interest
+        label: Real interests are those of the nation as a whole
+        claim: "A person's real interests are bound up with the strength and survival of their nation; individual and class interests come second."
+        voiced: "What is good for the nation is good for you, even when it costs you. A man who prospers while his nation declines has gained nothing that will last."
+        you: "You think your real interests are tied to your country's, and that the nation's good comes before any group's."
+        because: >
+          Individuals live and die; the nation carries their language, security and children's future.
+          A worker's wage means little if the nation is conquered or dissolved; a businessman's profit is
+          worthless if the country collapses. Class and private interests are real but partial, and they
+          must give way when the nation's survival or greatness is at stake.
+        against:
+          - from: marxism.classical
+            text: >
+              The "national interest" is the interest of the nation's owners. When it calls for sacrifice,
+              wages are cut and sons are drafted; when profits come in, they stay private.
+          - from: liberalism.classical
+            text: >
+              The nation does not have interests; people do. Collective interest talk lets rulers override
+              every individual right in the name of an abstraction they alone interpret.
+        sources:
+          - {author: Johann Gottlieb Fichte, title: Addresses to the German Nation, year: 1808}
+          - {author: Benito Mussolini and Giovanni Gentile, title: The Doctrine of Fascism, year: 1932}
+        traditions:
+          defining: [fascism.italian, nationalism.ethnic]
+          typical: [conservatism.national, fascism.identitarian, nationalism.hindutva, fascism.nazism, nationalism.kemalism]
+          contested: [nationalism.developmental-state, conservatism.gaullism, nationalism.civic]
+          rejects: [marxism.classical, liberalism.classical, anarchism.communist, liberalism.internationalist]
+        presupposes: []
+        excludes: [interests.objective.class-interests]
+        tension: []
+        analysis:
+          gains: [industrial-capital, finance-capital, petty-bourgeoisie]
+          pays: [core-workers, reserve-army, peripheral-workers]
+          mechanism: >
+            Defining real interests as the nation's subordinates workers' wage and rights claims to national
+            strength, which in practice means owners' competitiveness and the state's war aims; in core
+            nations it also defends the national share of value drawn from abroad.
+          drain: sustains
+          law_of_value: none
+          method: idealist
+
+      - id: interests.objective.constructed
+        label: No interests exist before politics names them
+        claim: "There are no interests waiting to be discovered: they are built when movements name grievances and link them into a common cause."
+        voiced: "There is no class waiting to wake up. 'The people' is made, not found: you build it by linking scattered demands against a common adversary."
+        you: "You think people's shared interests don't exist until a movement brings people together around them."
+        because: >
+          The workers' movement assumed that class position would produce class politics, and it often
+          did not. Grievances (over rent, policing, gender, ecology, dignity) become a political force
+          only when articulated together. That is a creative political act, which explains why the same
+          social groups support opposite movements in different times and places.
+        against:
+          - from: marxism.classical
+            text: >
+              Cut loose from production, politics becomes a matter of rhetoric. Class is not a discourse:
+              the wage relation exists whether anyone names it, and a "people" built from words can be
+              taken over by anyone with better words.
+          - from: liberalism.classical
+            text: >
+              Individuals have interests whatever movements say; what is constructed is the collective
+              claim, which is why it so easily overrides the individuals it claims to represent.
+        sources:
+          - {author: Ernesto Laclau and Chantal Mouffe, title: Hegemony and Socialist Strategy, year: 1985}
+          - {author: Ernesto Laclau, title: On Populist Reason, year: 2005}
+        traditions:
+          defining: [socdem.left-populism]
+          typical: [feminism.queer]
+          contested: [marxism.gramscian, marxism.eurocommunism]
+          rejects: [marxism.classical, marxism.ml, liberalism.austrian]
+        presupposes: []
+        excludes: [interests.objective.class-interests]
+        tension: []
+        analysis:
+          gains: [professional-managerial]
+          pays: [core-workers]
+          mechanism: >
+            If interests exist only once a movement names them, the people who do the naming (organizers,
+            intellectuals, communicators) become central, and the anchor that tied left politics to wage
+            earners is dropped, so coalitions can be led by any group that articulates them.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Ellen Meiksins Wood argued this "retreat from class" abandons materialism; Laclau's followers
+            reply that class reductionism already failed in practice.
+          method: idealist
+
+  # ------------------------------------------------------------------
+  - id: morality.basis
+    domain: method
+    layer: method
+    question: Where does political right and wrong come from?
+    plain: When you say a law or a policy is wrong, what makes it wrong?
+    short: the source of right and wrong
+    importance: 2
+    positions:
+      - id: morality.basis.natural-law
+        label: Right comes from a natural law that reason can know
+        claim: "Right and wrong come from a natural law, built into human nature and knowable by reason, which no ruler or majority can change."
+        voiced: "There is a law above every law: written in our nature, known by reason. An unjust law is no law at all."
+        you: "You believe some things are right or wrong by nature, whatever any law or majority says."
+        because: >
+          If right were whatever rulers or majorities decree, there would be no ground to condemn slavery
+          or tyranny when they are legal. Human beings have a nature with real goods and real limits;
+          reason can grasp them, and they bind everyone. This is what lets the weak appeal against the
+          strong to a standard the strong did not make.
+        against:
+          - from: liberalism.utilitarian
+            text: >
+              Natural rights are nonsense on stilts. "Nature" has been made to say whatever its
+              interpreters wanted, from the divine right of kings to the right to own slaves.
+          - from: marxism.classical
+            text: >
+              Which arrangements count as "natural" has always followed who held the pen. Locke's natural
+              right of property let colonists claim land they enclosed; natural law in practice blesses
+              the property of its era.
+        sources:
+          - {author: Thomas Aquinas, title: Summa Theologiae, year: "c. 1270"}
+          - {author: John Locke, title: Two Treatises of Government, year: 1689}
+          - {author: Murray N. Rothbard, title: The Ethics of Liberty, year: 1982}
+        traditions:
+          defining: [conservatism.cst, conservatism.integralism]
+          typical: [libertarianism.ancap, liberalism.classical, conservatism.christian-democracy, conservatism.traditionalist, libertarianism.paleo]
+          contested: [libertarianism.minarchist, libertarianism.objectivist]
+          rejects: [liberalism.utilitarian, marxism.classical, fascism.neoreaction]
+        presupposes: []
+        excludes: [morality.basis.will-of-the-strong, morality.basis.historical-class]
+        tension: []
+        analysis:
+          gains: [landed-capital, finance-capital, petty-bourgeoisie]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >
+            Deriving right from a fixed human nature puts some arrangements, usually property and the
+            family, beyond the reach of majorities; Locke's labor-mixing title justified settlers'
+            claims over indigenous land, while Catholic versions also ground the just wage.
+          drain: sustains
+          law_of_value: none
+          disputed: >
+            Liberation theologians and some Marxists (Ernst Bloch) read natural law as a resource of the
+            oppressed against positive law.
+          method: idealist
+
+      - id: morality.basis.divine-command
+        label: Right is what God has commanded
+        claim: "Right and wrong are what God has commanded in revelation; human reasoning cannot overrule it."
+        voiced: "The question is not what we think is fair; it is what God has commanded. His law is complete. Ours is to obey and to apply it."
+        you: "You believe right and wrong are set by God's commands, not by human opinion."
+        because: >
+          Human reasoning about right is divided and swayed by interest; every generation rewrites it. A
+          moral law given by the Creator is the only one with authority over all people equally, rich and
+          poor, ruler and ruled. It forbids usury and requires alms whatever markets say, and it does not
+          bend to majorities.
+        against:
+          - from: liberalism.classical
+            text: >
+              Is something good because God commands it, or does He command it because it is good? If the
+              first, right is arbitrary; if the second, we can know right without the command, and the
+              interpreters lose their monopoly.
+          - from: marxism.classical
+            text: >
+              Commands are read by men, and the men who read them have usually been on the side of
+              landlords and kings. Divine command fixes the property order of the society that wrote the
+              texts.
+        sources:
+          - {author: John Calvin, title: Institutes of the Christian Religion, year: 1536}
+          - {author: Sayyid Qutb, title: Milestones, year: 1964}
+        traditions:
+          defining: [religious.islamism-brotherhood, religious.salafism-quietist, conservatism.evangelical-right]
+          typical: [religious.islamism-khomeinist, religious.religious-zionism, religious.salafi-jihadism, conservatism.reactionary]
+          contested: [religious.islamic-socialism, religious.post-islamism]
+          rejects: [liberalism.utilitarian, liberalism.classical, marxism.classical, libertarianism.objectivist]
+        presupposes: []
+        excludes: [morality.basis.utility, morality.basis.will-of-the-strong]
+        tension: []
+        analysis:
+          gains: [petty-bourgeoisie, landed-capital]
+          pays: [core-workers, peasantry]
+          mechanism: >
+            Grounding right in revealed command makes charity and fair dealing binding duties, and gives
+            divine protection to the order of property, sex and rank set down in the texts, as interpreted
+            by clergy whose institutions depend on donors and the state.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            Islamic socialists and liberation theologians read the same commands as requiring
+            redistribution; materialists disagree on how fixed the class content of revealed morality is.
+          method: idealist
+
+      - id: morality.basis.utility
+        label: Right is what produces the most well-being
+        claim: "Right and wrong are a matter of consequences: the right policy is the one that produces the most well-being, counting everyone equally."
+        voiced: "The greatest happiness of the greatest number is the measure of right and wrong. A child drowning in front of you and one starving far away count the same."
+        you: "You judge policies by their results: whatever does the most good for the most people is right."
+        because: >
+          Rules and rights matter because of what they do for people; when following them causes misery,
+          they have lost their point. Counting everyone's well-being equally is the most impartial
+          standard there is, and it gives clear answers: transfers from rich to poor raise total welfare
+          because an extra dollar means more to the poor.
+        against:
+          - from: liberalism.egalitarian
+            text: >
+              Utilitarianism does not take seriously the distinction between persons. It would sacrifice
+              some for the greater total, and nothing in its arithmetic forbids it.
+          - from: conservatism.cst
+            text: >
+              Some acts are wrong whatever the outcome: killing the innocent, torture, using a person as a
+              mere means. A morality that calculates everything makes everything negotiable.
+        sources:
+          - {author: Jeremy Bentham, title: An Introduction to the Principles of Morals and Legislation, year: 1789}
+          - {author: John Stuart Mill, title: Utilitarianism, year: 1863}
+          - {author: Peter Singer, title: "Famine, Affluence, and Morality", year: 1972}
+        traditions:
+          defining: [liberalism.utilitarian, technology.effective-altruism]
+          typical: [liberalism.technocratic, socdem.fabian, technology.longtermism, liberalism.chicago]
+          contested: [marxism.analytical, socdem.third-way]
+          rejects: [conservatism.cst, liberalism.egalitarian, conservatism.integralism, libertarianism.objectivist]
+        presupposes: []
+        excludes: [morality.basis.divine-command]
+        tension: []
+        analysis:
+          gains: [professional-managerial, finance-capital]
+          pays: [peripheral-workers, reserve-army]
+          mechanism: >
+            Judging by summed welfare hands decisions to those who measure outcomes; in the cost-benefit
+            practice of governments and lenders, welfare is measured by willingness to pay, which prices
+            the lives and losses of the poor, and of poor countries, below those of the rich.
+          drain: sustains
+          law_of_value: extends
+          disputed: >
+            Singer's version demands large transfers from rich to poor countries; critics on the left
+            reply that philanthropy leaves the structures of the drain untouched.
+          method: idealist
+
+      - id: morality.basis.rights-and-consent
+        label: Right is what free and equal persons could agree to
+        claim: "Right and wrong rest on respect for persons as free and equal: just rules are those that everyone could reasonably accept, and some rights may never be traded away."
+        voiced: "Each person possesses an inviolability that even the welfare of society as a whole cannot override. Justice is what free and equal people would agree to."
+        you: "You think fairness means rules that everyone could agree to, and that some rights can't be overridden even for the greater good."
+        because: >
+          Persons are ends in themselves, never mere means. That rules out sacrificing some for others'
+          benefit and grounds rights against majorities and states. Asking what we would agree to behind a
+          veil of ignorance, not knowing our place, gives a fair test of institutions, one that libertarians
+          and egalitarians each claim supports their conclusions.
+        against:
+          - from: marxism.classical
+            text: >
+              Equal right between unequal people is unequal right. The contract starts from people as
+              already-formed parties and takes the division between owner and worker as background, not
+              as the question.
+          - from: communitarianism
+            text: >
+              The person behind the veil, stripped of family, faith and people, is no one. Rights abstracted
+              from communities are fictions; morality lives in practices.
+        sources:
+          - {author: Immanuel Kant, title: Groundwork of the Metaphysics of Morals, year: 1785}
+          - {author: John Rawls, title: A Theory of Justice, year: 1971}
+          - {author: Robert Nozick, title: "Anarchy, State, and Utopia", year: 1974}
+        traditions:
+          defining: [liberalism.egalitarian]
+          typical: [liberalism.social, liberalism.progressive, libertarianism.minarchist, liberalism.classical, feminism.liberal]
+          contested: [libertarianism.left, liberalism.republican]
+          rejects: [marxism.classical, communitarianism, fascism.italian, liberalism.utilitarian]
+        presupposes: []
+        excludes: [morality.basis.will-of-the-strong]
+        tension: []
+        analysis:
+          gains: [professional-managerial, core-workers]
+          pays: [reserve-army]
+          mechanism: >
+            Treating right as what free and equal persons would accept protects individuals against states
+            and licenses redistribution within a society; but its contracting parties are members of one
+            people, so its strongest duties of justice stop at the border, leaving migrants and the
+            periphery a weaker duty of assistance.
+          drain: softens
+          law_of_value: regulates
+          method: idealist
+
+      - id: morality.basis.historical-class
+        label: Morality is historical; right is what serves liberation
+        claim: "Moral codes are historical and carry class interests; right is judged by whether it advances the emancipation of the exploited."
+        voiced: "There is no morality above classes. Their morals serve property; ours serve liberation. The end can justify the means only if the means really lead to the end."
+        you: "You think moral rules have always served someone's interests, and that the test is whether something helps free the exploited."
+        because: >
+          The commandments against theft protect owners; slave societies thought slavery moral; every
+          ruling class presents its interests as eternal right. Recognizing this does not mean anything
+          goes: it means judging acts by whether they advance the emancipation of humanity, which rules out
+          means that degrade or deceive the oppressed themselves.
+        against:
+          - from: liberalism.social
+            text: >
+              Once ends justify means, the party decides what serves the end, and nothing is forbidden.
+              Means shape ends: a movement that lies and shoots its critics will build a society of liars
+              and executioners.
+          - from: anarchism.communist
+            text: >
+              The Bolsheviks proved it: they justified each terror by the goal, and the goal receded with
+              every means used to reach it.
+        sources:
+          - {author: Friedrich Engels, title: Anti-Dühring, year: 1878}
+          - {author: Leon Trotsky, title: Their Morals and Ours, year: 1938}
+          - {author: V. I. Lenin, title: The Tasks of the Youth Leagues, year: 1920}
+        traditions:
+          defining: [marxism.leninism, marxism.trotskyism, marxism.ml]
+          typical: [marxism.classical, marxism.maoism, marxism.mlm, marxism.left-communism]
+          contested: [marxism.analytical, marxism.western]
+          rejects: [conservatism.cst, liberalism.egalitarian, religious.islamism-brotherhood, anarchism.christian]
+        presupposes: [history.motor.class-struggle]
+        excludes: [morality.basis.natural-law, morality.basis.divine-command]
+        tension: []
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, landed-capital]
+          mechanism: >
+            Treating moral codes as historical exposes how rules on property, obedience and violence protect
+            owners, and lets the exploited judge acts by what they do for emancipation; it also lets a party
+            decide what serves emancipation, which has excused its own violence.
+          drain: none
+          law_of_value: none
+          method: materialist
+
+      - id: morality.basis.tradition
+        label: Right comes from the practices of a living community
+        claim: "Right and wrong come from the inherited practices and virtues of a particular community, learned by living in it rather than deduced from abstract principles."
+        voiced: "You learn what is right the way you learn a language, by growing up inside it. A people's customs, rites and virtues carry more wisdom than any philosopher's system."
+        you: "You think people learn right and wrong from the community and traditions they grow up in, not from abstract theories."
+        because: >
+          Abstract moralities, whether utility or rights, lack the thick detail needed to guide actual
+          lives, and they cannot explain why anyone should care. Virtues are learned within traditions
+          that define roles, purposes and goods: what a good parent, neighbor or craftsman is. Different
+          goods belong to different spheres, and each community knows its own.
+        against:
+          - from: liberalism.egalitarian
+            text: >
+              Whose community? Traditions have endorsed slavery, caste and the subordination of women;
+              without a standard outside tradition, there is no way to say they were wrong.
+          - from: feminism.liberal
+            text: >
+              The roles a tradition defines were set by men and enforced on women. "Living virtue" has too
+              often meant obedience.
+        sources:
+          - {author: Alasdair MacIntyre, title: After Virtue, year: 1981}
+          - {author: Michael Walzer, title: Spheres of Justice, year: 1983}
+          - {author: Edmund Burke, title: Reflections on the Revolution in France, year: 1790}
+        traditions:
+          defining: [communitarianism, religious.confucian]
+          typical: [conservatism.burkean, conservatism.postliberal, conservatism.traditionalist, conservatism.paleo]
+          contested: [nationalism.indigenous-sovereignty, conservatism.cst]
+          rejects: [liberalism.egalitarian, liberalism.utilitarian, feminism.liberal]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [petty-bourgeoisie, landed-capital]
+          pays: [reserve-army]
+          mechanism: >
+            Grounding right in inherited practice protects local solidarities against market and state, and
+            also protects that community's hierarchies (elders, men, landowners, caste), whose rules the
+            tradition records, while newcomers and outsiders have no standing in it.
+          drain: none
+          law_of_value: none
+          method: idealist
+
+      - id: morality.basis.will-of-the-strong
+        label: Values are created by the strong
+        claim: "Morality is created, not found: the strong make values, and the morality of pity and equality is the revenge of the weak."
+        voiced: "Good and evil are inventions. The noble man creates values; the slave resents him and calls his resentment morality. A healthy people affirms life, strength and rank."
+        you: "You think morality is something strong people and peoples create, and that equality and pity are values of the weak."
+        because: >
+          Every morality began as someone's creation and served some type of person. The ethics of
+          humility and equality arose among the conquered and turned their weakness into virtue.
+          A culture that wants greatness must create values that honor strength, courage and excellence,
+          rather than lowering everyone to the level of the timid.
+        against:
+          - from: conservatism.cst
+            text: >
+              Every human being has a dignity no strength can create or abolish. A morality made by the
+              strong is simply the rule of force with a philosophy attached.
+          - from: marxism.classical
+            text: >
+              The "strong" who create values are those who own the land and the guns. Master morality was
+              the morality of a landed warrior caste, and its modern heirs serve owners just as faithfully.
+        sources:
+          - {author: Friedrich Nietzsche, title: On the Genealogy of Morality, year: 1887}
+          - {author: Plato, title: The Republic, year: "c. -375", note: "the position of Thrasymachus"}
+        traditions:
+          defining: [fascism.traditionalist]
+          typical: [fascism.italian, fascism.nazism, fascism.neoreaction, technology.r-acc]
+          contested: [libertarianism.objectivist]
+          rejects: [conservatism.cst, marxism.classical, liberalism.egalitarian, anarchism.communist]
+        presupposes: []
+        excludes: [morality.basis.natural-law, morality.basis.rights-and-consent]
+        tension: []
+        analysis:
+          gains: [finance-capital, landed-capital, industrial-capital]
+          pays: [core-workers, reserve-army, peripheral-workers]
+          mechanism: >
+            Treating right as what the strong create removes any standard by which the weak can claim
+            protection, and licenses conquest, purges and the destruction of labor organizations as acts of
+            vitality.
+          drain: sustains
+          law_of_value: none
+          method: idealist
+
+      - id: morality.basis.decency
+        label: Right is ordinary decency
+        claim: "Political right and wrong come down to ordinary decency: fairness, honesty, not hurting people, and treating others as you would want to be treated."
+        voiced: "You don't need a philosophy. Don't lie, don't cheat, don't kick people when they're down, pull your weight. If politics stuck to that, we'd be fine."
+        you: "You think right and wrong in politics come down to basic decency, the same rules you'd follow with your neighbors."
+        because: >
+          Ordinary people everywhere know what decency is without studying ethics: keep your word, share
+          when others are in need, don't take what isn't yours, stand up for the weak. Theories have
+          justified terrible things that plain decency would never accept. A politics that kept to common
+          decency would be fairer than one built on any system.
+        against:
+          - from: marxism.classical
+            text: >
+              A decent landlord still collects the rent, and a decent employer still lays you off when
+              profits fall. Decency between persons leaves untouched the harms done through prices, wages
+              and property.
+          - from: liberalism.utilitarian
+            text: >
+              Decency gives no answer when interests collide: is it decent to protect your town's jobs if
+              it costs workers elsewhere theirs? Intuitions conflict; they need a principle to settle them.
+        sources:
+          - {author: George Orwell, title: Charles Dickens, year: 1940}
+          - {author: George Orwell, title: The Road to Wigan Pier, year: 1937}
+        traditions:
+          defining: [commonsense.live-and-let-live]
+          typical: [commonsense.self-reliance, commonsense.look-after-your-own, socdem.labourism, conservatism.one-nation]
+          contested: [communitarianism]
+          rejects: [fascism.traditionalist, liberalism.utilitarian]
+        presupposes: []
+        excludes: [morality.basis.will-of-the-strong]
+        tension: []
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [peripheral-workers]
+          mechanism: >
+            Decency as the basis of politics condemns cruelty and cheating person to person, and can fuel
+            solidarity with neighbors and coworkers; it gives no account of harms done impersonally through
+            prices, rents and supply chains, so those harms, borne largely abroad, continue unjudged.
+          drain: softens
+          law_of_value: none
+          method: idealist
+
+  # ------------------------------------------------------------------
+  - id: change.possibility
+    domain: method
+    layer: method
+    question: Can ordinary people change how society runs?
+    plain: If ordinary people wanted to change how things are run, could they?
+    short: whether ordinary people can change things
+    importance: 3
+    positions:
+      - id: change.possibility.power-always-wins
+        label: No, power always wins
+        claim: "Ordinary people cannot change much: those with money and power always come out on top, whatever anyone does."
+        voiced: "You can march, you can vote, you can sign all the petitions you like. In the end the people with the money get what they want. Always have, always will."
+        you: "You think ordinary people can't really change much, because those with money and power always win in the end."
+        because: >
+          Experience teaches it: the factory closed despite the protests, the promises were broken after
+          the election, the scandal blew over and the same people stayed on top. Those in power have
+          lawyers, media, police and patience; ordinary people have jobs and bills. Expecting to beat them
+          is a recipe for disappointment, so it is wiser to look after yourself and yours.
+        against:
+          - from: anarchism.syndicalist
+            text: >
+              Every right you have at work, the eight-hour day, the weekend, safety rules, was won by
+              people with far less power than their bosses. Power wins when the other side does not
+              organize.
+          - from: socdem.labourism
+            text: >
+              Public health care, pensions and the vote itself were won against the rich by ordinary people
+              organized in unions and parties. Cynicism is the only thing guaranteed to make you right.
+        sources:
+          - {author: Robert Michels, title: Political Parties, year: 1911}
+          - {author: Albert O. Hirschman, title: The Rhetoric of Reaction, year: 1991, note: "names this the futility thesis"}
+        traditions:
+          defining: [commonsense.anti-politics]
+          typical: [commonsense.rigged, commonsense.declinist, commonsense.look-after-your-own, fascism.neoreaction]
+          contested: [conservatism.traditionalist]
+          rejects: [anarchism.syndicalist, marxism.leninism, socdem.labourism, zapatismo]
+        presupposes: []
+        excludes: [change.possibility.organized-people-can]
+        tension: []
+        analysis:
+          gains: [finance-capital, industrial-capital, landed-capital]
+          pays: [core-workers, peripheral-workers, reserve-army]
+          mechanism: >
+            Believing power always wins keeps people out of unions, tenant groups and parties, the only
+            organizations through which those without property gain leverage; unorganized, each faces
+            landlord and employer alone, which is how power keeps winning.
+          drain: none
+          law_of_value: none
+          method: mixed
+
+      - id: change.possibility.organized-people-can
+        label: Yes, organized people can change how society runs
+        claim: "Ordinary people, once organized, can change how society runs, and every major gain for working people was won that way."
+        voiced: "Alone we're nothing; together we're everything. Every right we have was won by people who organized and refused to back down."
+        you: "You think ordinary people can change how society runs if they organize and act together."
+        because: >
+          The record is clear: unions won the weekend and the minimum wage, independence movements ended
+          empires, tenants' and civil rights movements changed laws that seemed permanent. Power concedes
+          when the cost of refusing rises, and only organized numbers can raise it. The problem is not that
+          change is impossible but that organization is hard work.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Large groups rarely organize, because each member gains from the result whether or not he
+              contributes. Collective action fails without selective incentives, which is why small
+              organized interests usually beat large diffuse ones.
+          - from: conservatism.burkean
+            text: >
+              Organized masses that set out to remake society break more than they build. Change that
+              lasts is slow, inherited and piecemeal, not won by mobilization.
+        sources:
+          - {author: E. P. Thompson, title: The Making of the English Working Class, year: 1963}
+          - {author: Frances Fox Piven and Richard A. Cloward, title: "Poor People's Movements: Why They Succeed, How They Fail", year: 1977}
+          - {author: Jane McAlevey, title: No Shortcuts, year: 2016}
+        traditions:
+          defining: [anarchism.syndicalist, marxism.leninism, socdem.labourism]
+          typical: [marxism.classical, marxism.ml, marxism.maoism, anarchism.communist, socdem.democratic-socialism, religious.liberation-theology, zapatismo, nationalism.pan-africanism]
+          contested: [liberalism.social, socdem.third-way]
+          rejects: [commonsense.anti-politics, fascism.neoreaction, conservatism.traditionalist]
+        presupposes: []
+        excludes: [change.possibility.power-always-wins]
+        tension: [change.means.individual-exit]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry, reserve-army]
+          pays: [finance-capital, industrial-capital, landed-capital]
+          mechanism: >
+            Believing organization works draws people into unions, tenant groups and movements that raise
+            the price of labor and lower rents and debts, costs that employers, landlords and lenders pay.
+          drain: none
+          law_of_value: regulates
+          consciousness: class-economic
+          method: materialist
+
+      - id: change.possibility.only-your-own-life
+        label: You can change your own life, not the system
+        claim: "Ordinary people cannot change the system, but each person can change their own life through effort and choices, and that is where energy belongs."
+        voiced: "Set your own house in order before you try to fix the world. You can't change the system, but you can change yourself, and that's what actually works."
+        you: "You think it's better to focus on improving your own life than on trying to change the whole system."
+        because: >
+          Grand schemes to remake society mostly fail and often make things worse, while personal effort
+          reliably pays: an education finished, a habit broken, a business started. Blaming the system
+          breeds resentment and passivity. People who take responsibility for their own lives become the
+          kind of citizens who make a society work.
+        against:
+          - from: socdem.labourism
+            text: >
+              Individual escape leaves the ladder as it is. Only some can climb; the rungs below stay full,
+              and the people on them did not fail at self-improvement.
+          - from: marxism.classical
+            text: >
+              Telling each worker to fix himself turns a shared condition into private guilt. The employer
+              faces workers one at a time, which is exactly how he prefers it.
+        sources:
+          - {author: Samuel Smiles, title: Self-Help, year: 1859}
+          - {author: Jordan B. Peterson, title: "12 Rules for Life", year: 2018}
+        traditions:
+          defining: [commonsense.self-reliance]
+          typical: [libertarianism.objectivist, conservatism.fusionism, commonsense.look-after-your-own, conservatism.evangelical-right]
+          contested: [liberalism.classical]
+          rejects: [marxism.classical, socdem.labourism, anarchism.syndicalist]
+        presupposes: []
+        excludes: []
+        tension: [change.agent.workers-as-class, change.possibility.organized-people-can]
+        analysis:
+          gains: [industrial-capital, finance-capital, petty-bourgeoisie]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Directing effort to personal advancement turns structural problems into private ones; a few
+            climb, the rungs remain, and employers face workers competing one by one.
+          drain: none
+          law_of_value: extends
+          method: idealist
+
+      - id: change.possibility.from-above
+        label: Real change comes from capable leaders; people's part is to choose them
+        claim: "Real change comes from capable leaders, experts and institutions at the top; ordinary people's part is to choose well and support them."
+        voiced: "Most people have jobs and families; they can't run a country. What they can do is pick leaders who can, and back them. Every successful country was built that way."
+        you: "You think change mostly comes from good leaders and experts, and that ordinary people's role is to pick and support them."
+        because: >
+          Complex societies need specialized knowledge and long-term planning that mass movements cannot
+          supply. Countries that rose fastest, from Meiji Japan to Singapore and South Korea, did so under
+          capable leadership with broad public support. Mobilized crowds can topple a government but
+          rarely build one.
+        against:
+          - from: marxism.classical
+            text: >
+              The emancipation of the working classes must be won by the working classes themselves.
+              Change delivered from above is taken back from above when it no longer suits.
+          - from: conservatism.right-populism
+            text: >
+              The capable leaders and experts did change things, for themselves. The people were told to
+              trust them and got deindustrialization, wars and open borders.
+        sources:
+          - {author: Joseph A. Schumpeter, title: "Capitalism, Socialism and Democracy", year: 1942}
+          - {author: Lee Kuan Yew, title: From Third World to First, year: 2000}
+        traditions:
+          defining: []
+          typical: [liberalism.technocratic, socdem.third-way, nationalism.developmental-state, religious.political-meritocracy, technology.technocracy]
+          contested: [marxism.scc, nationalism.kemalism]
+          rejects: [anarchism.syndicalist, marxism.council-communism, conservatism.right-populism, zapatismo]
+        presupposes: []
+        excludes: []
+        tension: [change.possibility.organized-people-can]
+        analysis:
+          gains: [professional-managerial, finance-capital, industrial-capital]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Leaving change to leaders and experts keeps decisions with the professional and owning strata
+            who staff and fund them, while the many are asked for votes and patience rather than power.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Developmental states in East Asia did redistribute land and raise wages under rule from above;
+            materialists dispute whether this was leadership or the pressure of peasant revolt and Cold
+            War competition.
+          method: idealist
+
+      - id: change.possibility.changed-hearts
+        label: Real change comes from changed hearts, not politics
+        claim: "Lasting change comes from inside people, through faith, conversion and moral renewal, not from political action."
+        voiced: "The Kingdom of God is within you. Change the heart and you change the world; change the government and you have changed only who sits on the throne."
+        you: "You think real change starts in people's hearts and souls, and that politics can't do what only faith and conscience can."
+        because: >
+          Political revolutions replace one set of rulers with another because they leave human hearts as
+          they were. Only conversion, repentance and love change how people treat each other. A society of
+          renewed persons would need little coercion; a society of unchanged persons will abuse any system.
+        against:
+          - from: religious.liberation-theology
+            text: >
+              Sin is also structural. Loving the hungry without changing the order that makes them hungry
+              leaves them hungry. Faith that refuses politics has already chosen the side of whoever rules.
+          - from: marxism.classical
+            text: >
+              Moral renewal preached to the poor leaves the property that produces their misery untouched.
+              Hearts change when conditions change.
+        sources:
+          - {author: Leo Tolstoy, title: The Kingdom of God Is Within You, year: 1894}
+          - {author: Martin Luther, title: On Secular Authority, year: 1523}
+        traditions:
+          defining: [religious.salafism-quietist, anarchism.christian]
+          typical: [religious.engaged-buddhism, nationalism.gandhian]
+          contested: [conservatism.evangelical-right, conservatism.traditionalist]
+          rejects: [religious.liberation-theology, marxism.classical, religious.islamism-brotherhood]
+        presupposes: []
+        excludes: []
+        tension: [change.possibility.organized-people-can]
+        analysis:
+          gains: [landed-capital, finance-capital]
+          pays: [core-workers, peasantry]
+          mechanism: >
+            Locating real change in hearts redirects energy from organizing to personal and spiritual
+            reform, which leaves property and power untouched; in Tolstoyan and Gandhian forms, mass refusal
+            to serve or obey can also withdraw cooperation that power needs.
+          drain: none
+          law_of_value: none
+          method: idealist
+
+      - id: change.possibility.only-in-crisis
+        label: Change happens only when a crisis breaks things open
+        claim: "Ordinary people change how society runs only in crises (wars, crashes, collapses) when the old order breaks open; between crises little moves."
+        voiced: "Only a crisis, actual or perceived, produces real change. When it comes, the actions taken depend on the ideas lying around. Your job is to have them ready."
+        you: "You think big changes only happen when a crisis shakes things up, and that what matters is being ready when it comes."
+        because: >
+          The New Deal followed the Depression, the welfare states the Second World War, neoliberalism
+          the crises of the 1970s, and revolutions came from wars that shattered states. In normal times
+          interests are entrenched and people are busy. A crisis breaks routine and opens a short window;
+          whoever is prepared with a program and an organization shapes what follows.
+        against:
+          - from: socdem.labourism
+            text: >
+              Many lasting gains came gradually, through decades of bargaining and elections. Waiting for
+              the crisis abandons the patient work that builds power in normal times.
+          - from: marxism.gramscian
+            text: >
+              Crises are won by whoever prepared the ground beforehand in culture and organization. A
+              crisis without a prepared counter-power ends in restoration or in reaction.
+        sources:
+          - {author: Milton Friedman, title: Capitalism and Freedom, year: 1962, note: "the crisis passage is in the preface to the 1982 edition"}
+          - {author: V. I. Lenin, title: The Collapse of the Second International, year: 1915}
+          - {author: Naomi Klein, title: The Shock Doctrine, year: 2007, note: "a critical account"}
+        traditions:
+          defining: []
+          typical: [liberalism.chicago, technology.r-acc, technology.l-acc, fascism.third-position]
+          contested: [marxism.leninism, marxism.trotskyism]
+          rejects: [socdem.labourism, socdem.fabian, conservatism.burkean]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [finance-capital, professional-managerial]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            If change waits on crisis, the decisive question is who has a plan ready; organized capital and
+            its institutions have been best placed, as in the structural adjustments imposed on debtor
+            countries after the 1980s debt crisis, while unorganized majorities absorbed the losses.
+          drain: sustains
+          law_of_value: extends
+          disputed: >
+            Leninists hold that crises create revolutionary situations only a prepared party can use; this
+            makes the position a strategy for either side, and materialists differ on which side it
+            favors in practice.
+          method: mixed

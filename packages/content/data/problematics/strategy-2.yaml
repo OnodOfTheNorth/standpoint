@@ -1,0 +1,1298 @@
+problematics:
+  # ------------------------------------------------------------------
+  - id: alliances.policy
+    domain: strategy
+    layer: strategy
+    question: With whom should a movement ally?
+    plain: To win, who do you join forces with, and who do you refuse?
+    short: alliances
+    importance: 2
+    region: strategy
+    positions:
+      - id: alliances.policy.united-front
+        label: "United front: unity in action of workers' organizations"
+        claim: Workers' parties and unions with different leaderships should fight together on concrete goals while each keeps its own program and freedom to criticize.
+        voiced: "March separately, strike together. Unity in action with the reformist workers, no political merger with their leaders."
+        you: You think workers' organizations that disagree should still fight side by side on concrete goals, without merging or going quiet.
+        because: >
+          The working class is divided among parties, and most workers follow reformist leaders. Refusing joint action
+          leaves them to those leaders; joint struggle for concrete demands tests every leadership in practice and lets
+          workers see who fights. The front is limited to workers' organizations, so the class keeps its independence
+          from the liberal bourgeoisie. Had German communists and social democrats formed one in 1932, Hitler could have been stopped.
+        against:
+          - from: marxism.ml
+            text: >
+              A front confined to workers' organizations leaves the middle classes and peasantry to fascism. Against
+              the main danger, broader alliances are needed.
+          - from: marxism.left-communism
+            text: >
+              Joint action with social democracy, the party that murdered Luxemburg, gives it revolutionary credit and
+              blurs the line between reform and revolution.
+        sources:
+          - {author: "Communist International", title: "Theses on the United Front (Executive Committee)", year: 1921}
+          - {author: "Leon Trotsky", title: "For a Workers' United Front Against Fascism", year: 1931}
+          - {author: "Leon Trotsky", title: "What Next? Vital Questions for the German Proletariat", year: 1932}
+        traditions:
+          defining: [marxism.trotskyism]
+          typical: [marxism.leninism, marxism.third-camp, marxism.luxemburgism]
+          contested: [marxism.ml, anarchism.platformist]
+          rejects: [marxism.left-communism, socdem.third-way]
+        presupposes: [change.agent.workers-as-class]
+        excludes: [alliances.policy.class-against-class]
+        tension: [alliances.policy.popular-front]
+        tags: [comintern]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [industrial-capital]
+          mechanism: >
+            Joint action across workers' organizations multiplies strike and street power while keeping the alliance
+            free of employers' parties, so the demands raised need not be cut to what capital tolerates.
+          drain: reduces
+          law_of_value: regulates
+          consciousness: class-economic
+
+      - id: alliances.policy.popular-front
+        label: "Popular front: workers with liberals and the middle classes"
+        claim: Against a grave danger such as fascism or war, workers' parties should ally with liberal and middle-class parties around a common program to defend parliamentary rights.
+        voiced: "The main enemy is fascism. Everyone who will defend the republic against it belongs in one front, workers, peasants, intellectuals, honest liberals."
+        you: You think that against a grave danger, workers' parties should ally with liberals and the middle classes to defend basic rights.
+        because: >
+          Fascism wins by isolating the workers and winning the middle classes. A front that reaches teachers,
+          shopkeepers, farmers and liberal republicans takes that ground from it. The Popular Fronts of France and Spain
+          in 1936 won elections and real gains (paid holidays, the forty-hour week, land reform), and the wartime
+          antifascist coalitions defeated Hitler.
+        against:
+          - from: marxism.trotskyism
+            text: >
+              The liberal partner sets the limits. In Spain the front held back the revolution to reassure the
+              bourgeois republicans, and lost the war; in France it dissolved within two years.
+          - from: conservatism.neo
+            text: >
+              Popular fronts were a Soviet device to lend communists respectability. Liberals who joined them were
+              used and discarded.
+        sources:
+          - {author: "Georgi Dimitrov", title: "The Fascist Offensive and the Tasks of the Communist International in the Struggle of the Working Class against Fascism", year: 1935}
+          - {author: "Enrico Berlinguer", title: "Reflections on Italy after the Events in Chile", year: 1973}
+        traditions:
+          defining: [marxism.ml]
+          typical: [marxism.eurocommunism, socdem.democratic-socialism, liberalism.social, marxism.scc]
+          contested: [marxism.maoism]
+          rejects: [marxism.trotskyism, marxism.left-communism, anarchism.insurrectionary, conservatism.neo]
+        presupposes: []
+        excludes: [alliances.policy.class-against-class]
+        tension: [alliances.policy.united-front]
+        tags: [comintern, antifascism]
+        analysis:
+          gains: [core-workers, petty-bourgeoisie, professional-managerial]
+          pays: []
+          mechanism: >
+            A front with liberal parties trades the threat to property for a wider electoral and social majority, so it
+            wins wage and welfare reforms and defends parliamentary rights while leaving ownership and the colonies untouched.
+          drain: sustains
+          law_of_value: regulates
+          disputed: >
+            Trotskyists hold the popular front subordinated workers to capital; Marxist-Leninists reply that the antifascist
+            coalitions won the war. Anti-colonial critics note the 1936 French front kept the empire intact.
+          consciousness: hegemonic
+
+      - id: alliances.policy.class-against-class
+        label: "Class against class: no alliances with reformist leaders"
+        claim: Revolutionaries should refuse alliances with reformist and liberal leaderships, which in a crisis defend capital; the class must fight under its own banner alone.
+        voiced: "Class against class. The reformist leaders are the last line of defense of the bourgeoisie. No blocs, no fronts, no compromises."
+        you: You think a workers' movement must keep its independence and refuse alliances with reformist or liberal leaders.
+        because: >
+          Every alliance with reformists has ended with them choosing order over revolution: the war credits of 1914,
+          the crushing of the German revolution in 1919, the Spanish Republic disarming the militias. Independence
+          keeps the program clear and prevents workers being led into defending the capitalist state. Bordigists hold this
+          as a permanent principle; the Comintern applied a version from 1928 to 1934.
+        against:
+          - from: marxism.trotskyism
+            text: >
+              In Germany the line of calling social democrats "social fascists" split the working class in the face of
+              Hitler. Independence of program does not require refusing joint action.
+          - from: socdem.democratic-socialism
+            text: >
+              Purity guarantees isolation. Majorities are built with allies; those who refuse all alliances end up
+              commenting on history instead of making it.
+        sources:
+          - {author: "Communist International", title: "Programme of the Communist International (Sixth Congress)", year: 1928}
+          - {author: "Amadeo Bordiga", title: "The Fundamental Theses of the Party", year: 1951}
+        traditions:
+          defining: [marxism.left-communism]
+          typical: [marxism.council-communism]
+          contested: [marxism.ml, marxism.hoxhaism]
+          rejects: [marxism.trotskyism, socdem.democratic-socialism, marxism.eurocommunism]
+        presupposes: [change.agent.workers-as-class]
+        excludes: [alliances.policy.popular-front, alliances.policy.united-front]
+        tension: []
+        tags: [comintern]
+        analysis:
+          gains: [core-workers]
+          pays: []
+          mechanism: >
+            Refusing alliances keeps a revolutionary program intact but, outside revolutionary crises, isolates its
+            holders from the majority of workers, which leaves the existing balance of class power unchanged.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Third-period critics (Trotsky) blame the 1928-34 line for the defeat of German labor; Bordigists reject
+            that the Comintern's turn was class-against-class in their sense at all.
+          consciousness: class-economic
+
+      - id: alliances.policy.national-front
+        label: "National front: workers, peasants and national capital against empire"
+        claim: In a country dominated by imperialism, workers and peasants should ally with the small owners and the national capitalists against foreign capital and its local brokers.
+        voiced: "Unite all who can be united against imperialism and its compradors. The national bourgeoisie wavers, but it can stand with the people."
+        you: You think that in a dominated country, workers and peasants should ally with local owners against foreign capital and its local agents.
+        because: >
+          Where foreign capital and its compradors control the economy, even the national capitalists are squeezed by
+          imperialism and can be won to a front for independence. A broad front isolates the main enemy, wins the
+          nation, and opens the road to socialism by stages. The Chinese revolution, Vietnam, and Bandung-era national
+          movements won this way.
+        against:
+          - from: marxism.trotskyism
+            text: >
+              The national bourgeoisie fears its own workers more than imperialism. It turned on the communists in
+              Shanghai in 1927; only workers' power can complete the national tasks.
+          - from: liberalism.internationalist
+            text: >
+              Cross-class fronts against "imperialism" have mostly produced closed economies, one-party rule and
+              stagnation. Openness to trade and investment has lifted more people from poverty.
+        sources:
+          - {author: "Mao Zedong", title: "On New Democracy", year: 1940}
+          - {author: "Mao Zedong", title: "Analysis of the Classes in Chinese Society", year: 1926}
+          - {author: "V. I. Lenin", title: "Preliminary Draft Theses on the National and the Colonial Questions", year: 1920}
+        traditions:
+          defining: [marxism.maoism, marxism.third-worldism]
+          typical: [marxism.ml, marxism.scc, marxism.african-socialism, nationalism.nasserism, nationalism.bolivarianism, marxism.mariategui]
+          contested: [marxism.mlm, marxism.dependency]
+          rejects: [marxism.trotskyism, marxism.left-communism, liberalism.internationalist]
+        presupposes: [imperialism.nature.monopoly-stage, comprador.nature.broker-class]
+        excludes: [alliances.policy.class-against-class]
+        tension: []
+        tags: [anti-imperialism]
+        analysis:
+          gains: [peasantry, peripheral-workers, petty-bourgeoisie]
+          pays: [comprador-capital, finance-capital]
+          mechanism: >
+            Uniting the nation against foreign capital and its brokers lets a new state nationalize resources, control
+            trade and capital flows and redirect surplus to domestic investment, while national capitalists keep a place in the bloc.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            Trotskyists (permanent revolution) and Frank hold the national bourgeoisie cannot lead an anti-imperialist
+            struggle; Amin and the Maoists hold it can be held in a front led by workers and peasants.
+          consciousness: hegemonic
+
+      - id: alliances.policy.center-coalition
+        label: Coalition of the mainstream against the fringes
+        claim: Parties of the center left and center right should cooperate to keep anti-system parties of both flanks out of power.
+        voiced: "Whatever divides us, we share the rules of the game. Those who would tear them up must never be given the keys."
+        you: You think mainstream parties of left and right should band together to keep anti-system parties out of power.
+        because: >
+          Liberal democracies survive when established parties act as gatekeepers. Interwar Italy and Germany fell when
+          conservatives let anti-system movements into government. Grand coalitions, cordons sanitaires and shared
+          norms of restraint keep the institutions intact while policy differences are settled at the margins.
+        against:
+          - from: conservatism.right-populism
+            text: >
+              The cordon sanitaire is the establishment protecting itself from voters. When every vote yields the same
+              coalition, people stop believing elections matter.
+          - from: socdem.left-populism
+            text: >
+              Grand coalitions of the center produced austerity and the very disaffection the far right feeds on. The
+              center is not a firewall; it is the fuel.
+        sources:
+          - {author: "Steven Levitsky and Daniel Ziblatt", title: "How Democracies Die", year: 2018}
+          - {author: "Juan J. Linz", title: "The Breakdown of Democratic Regimes: Crisis, Breakdown and Reequilibration", year: 1978}
+        traditions:
+          defining: [liberalism.social, conservatism.christian-democracy]
+          typical: [liberalism.technocratic, socdem.third-way, liberalism.internationalist, ecology.green-growth]
+          contested: [socdem.nordic]
+          rejects: [conservatism.right-populism, socdem.left-populism, marxism.leninism]
+        presupposes: [state.nature.neutral-arbiter]
+        excludes: []
+        tension: []
+        tags: [centrism]
+        analysis:
+          gains: [professional-managerial, finance-capital]
+          pays: [core-workers]
+          mechanism: >
+            Coalitions of the center narrow the choices on offer to policies acceptable to both mainstream wings, which
+            in practice means those acceptable to bond markets and employers' associations.
+          drain: sustains
+          law_of_value: regulates
+          consciousness: hegemonic
+
+      - id: alliances.policy.fusion-of-the-right
+        label: Fuse traditionalists, free-marketeers and nationalists
+        claim: The right wins by fusing traditionalists, free-market advocates and nationalists into one coalition against a common opponent on the left.
+        voiced: "Virtue and liberty need each other. Traditionalists, libertarians and patriots disagree on much and agree on who the enemy is."
+        you: You think the right wins by uniting religious traditionalists, free-marketeers and patriots against a common opponent.
+        because: >
+          Traditionalists know what a free society is for; libertarians know how to keep government from crushing it.
+          Apart, each loses to an organized left; together they built the Reagan coalition and every lasting right-wing
+          majority since. Later paleo strategists argued the coalition must reach the working and middle classes through
+          populist themes.
+        against:
+          - from: conservatism.postliberal
+            text: >
+              Fusion let the market dissolve the family and the community that traditionalists meant to defend. The
+              libertarian partner won every argument that mattered.
+          - from: marxism.leninism
+            text: >
+              The coalition joins owners with the workers it mobilizes through faith and flag, so that workers vote for
+              tax cuts in the name of tradition.
+        sources:
+          - {author: "Frank S. Meyer", title: "In Defense of Freedom: A Conservative Credo", year: 1962}
+          - {author: "Murray N. Rothbard", title: "Right-Wing Populism: A Strategy for the Paleo Movement", year: 1992}
+          - {author: "George H. Nash", title: "The Conservative Intellectual Movement in America Since 1945", year: 1976}
+        traditions:
+          defining: [conservatism.fusionism]
+          typical: [conservatism.evangelical-right, conservatism.neo, libertarianism.paleo, conservatism.paleo]
+          contested: [conservatism.national, libertarianism.minarchist]
+          rejects: [conservatism.postliberal, marxism.leninism, liberalism.progressive]
+        presupposes: []
+        excludes: []
+        tension: []
+        tags: [right]
+        analysis:
+          gains: [finance-capital, industrial-capital, petty-bourgeoisie]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Binding religious and national loyalty to a pro-market program wins votes from working people for tax cuts,
+            deregulation and anti-union law, while the cultural program is delivered more slowly than the economic one.
+          drain: sustains
+          law_of_value: extends
+          consciousness: hegemonic
+
+      - id: alliances.policy.rainbow-coalition
+        label: A rainbow coalition of the poor and the excluded
+        claim: Movements should ally across race, nationality and group, the poor whites, Black, Latino and indigenous poor, around shared needs.
+        voiced: "Poor whites, Black people, Puerto Ricans, all of us are getting it from the same people. We fight together or not at all."
+        you: You think the poor of every background should ally around what they share, rather than be divided by race or origin.
+        because: >
+          Divide and rule has always worked by setting the poor of one color or origin against the poor of another.
+          A coalition across those lines, as Fred Hampton built in Chicago in 1969 with the Young Lords and the Young
+          Patriots, takes that weapon away from the powerful. Shared needs (housing, policing, wages) are concrete
+          enough to hold such a coalition together.
+        against:
+          - from: conservatism.national
+            text: >
+              Communities are not interchangeable blocs of the poor. Bonds of nation, faith and neighborhood run deeper
+              than an alliance of grievances.
+          - from: marxism.left-communism
+            text: >
+              A coalition of groups replaces the class with a sum of identities and readily becomes an electoral machine
+              for reformist candidates.
+        sources:
+          - {author: "Ernesto Laclau and Chantal Mouffe", title: "Hegemony and Socialist Strategy", year: 1985}
+          - {author: "Amy Sonnie and James Tracy", title: "Hillbilly Nationalists, Urban Race Rebels, and Black Power", year: 2011}
+        traditions:
+          defining: [marxism.black-radical]
+          typical: [socdem.left-populism, liberalism.progressive, feminism.black, religious.liberation-theology]
+          contested: [socdem.democratic-socialism]
+          rejects: [conservatism.national, marxism.left-communism, nationalism.ethnic]
+        presupposes: []
+        excludes: []
+        tension: [alliances.policy.class-against-class]
+        tags: [coalition]
+        analysis:
+          gains: [reserve-army, core-workers, peripheral-workers]
+          pays: [landed-capital]
+          mechanism: >
+            Uniting the lowest-paid across racial and national lines removes the division employers and landlords use
+            to hold down wages and raise rents for each group separately.
+          drain: reduces
+          law_of_value: regulates
+          consciousness: class-economic
+
+  # ------------------------------------------------------------------
+  - id: change.means
+    domain: strategy
+    layer: strategy
+    question: By what means should change be pursued?
+    plain: When you want something changed, what do you actually do?
+    short: the means of change
+    importance: 2
+    region: strategy
+    positions:
+      - id: change.means.individual-exit
+        label: If things are bad, leave
+        claim: When a job, place or institution is bad, the sensible response is to leave it, find something better, and let the bad option lose you.
+        voiced: "Don't waste your life fighting a bad boss or a bad town. Vote with your feet. That's what keeps them honest."
+        you: You think that when things are bad, the best move is to leave for something better rather than fight.
+        because: >
+          Exit is the one power everyone has. Firms that treat workers badly lose them; towns and countries that
+          misgovern lose people and capital. Exit needs no permission and no majority, and it works: competition for
+          people disciplines employers and governments better than complaints do. Fighting from inside costs years
+          and usually fails.
+        against:
+          - from: anarchism.syndicalist
+            text: >
+              Exit is for those who can afford it. Those who leave take their courage with them, and the boss is left
+              with workers too poor or too tied down to leave.
+          - from: communitarianism
+            text: >
+              A society where everyone leaves when things get hard has no towns, unions or parishes left to improve.
+              Loyalty and voice are what make places worth staying in.
+        sources:
+          - {author: "Albert O. Hirschman", title: "Exit, Voice, and Loyalty", year: 1970}
+          - {author: "Charles Tiebout", title: "A Pure Theory of Local Expenditures", year: 1956}
+        traditions:
+          defining: [commonsense.self-reliance]
+          typical: [commonsense.live-and-let-live, libertarianism.ancap, libertarianism.minarchist, liberalism.chicago, technology.cyberlibertarian]
+          contested: [commonsense.anti-politics]
+          rejects: [anarchism.syndicalist, marxism.leninism, communitarianism]
+        presupposes: []
+        excludes: []
+        tension: [change.possibility.organized-people-can]
+        tags: [exit, common-sense]
+        analysis:
+          gains: [industrial-capital, finance-capital, professional-managerial]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            When workers respond to bad conditions by quitting one by one, employers face turnover costs but never a
+            collective demand, and the most mobile, usually better-paid workers escape while the rest stay at the old terms.
+          drain: sustains
+          law_of_value: extends
+          consciousness: economic-corporate
+
+      - id: change.means.strike-and-direct-action
+        label: Strikes, occupations and direct action
+        claim: Change is won by stopping work, occupying, blockading, collective action that costs the other side money until it gives way.
+        voiced: "They only listen when the machines stop. Withdraw your labor, take the floor, block the gate."
+        you: You think change is won by strikes, occupations and blockades that hit the other side where it hurts.
+        because: >
+          Employers and governments concede when the cost of refusing exceeds the cost of giving way. Collective
+          withdrawal of labor is the one weapon that hits profit directly, and the mass strike can stop a whole economy.
+          The eight-hour day, union recognition and the fall of governments from Russia 1905 to Sudan 2019 were won by strikes.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Strikes impose costs on third parties, consumers and fellow workers, to win wages above what the market
+              will bear, which costs jobs elsewhere.
+          - from: conservatism.cst
+            text: >
+              The strike is a legitimate last resort, never a first tool. Turning work into permanent battle destroys
+              the cooperation between labor and capital that justice requires.
+        sources:
+          - {author: "Rosa Luxemburg", title: "The Mass Strike, the Political Party and the Trade Unions", year: 1906}
+          - {author: "Georges Sorel", title: "Reflections on Violence", year: 1908}
+          - {author: "Mario Tronti", title: "Workers and Capital", year: 1966}
+        traditions:
+          defining: [anarchism.syndicalist, marxism.luxemburgism, marxism.autonomism]
+          typical: [marxism.leninism, marxism.trotskyism, anarchism.communist, marxism.council-communism, socdem.labourism]
+          contested: [conservatism.cst]
+          rejects: [liberalism.chicago, liberalism.austrian]
+        presupposes: [workplace.conflict.structural-antagonism]
+        excludes: []
+        tension: []
+        tags: [strike]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Stopping production removes the labor from which profit is made, so the cost of the dispute falls on owners
+            until they concede wages, conditions or control.
+          drain: reduces
+          law_of_value: regulates
+          consciousness: class-economic
+
+      - id: change.means.armed-struggle
+        label: Armed struggle
+        claim: Where the ruling power answers peaceful demands with force, the oppressed must organize armed force of their own to win.
+        voiced: "Political power grows out of the barrel of a gun. The enemy chose the terrain; we refuse to be massacred unarmed."
+        you: You think that when power answers with violence, people must arm themselves to win.
+        because: >
+          Colonial and ruling powers have met unarmed movements with massacres, from Sharpeville to Jakarta. No
+          colonial empire was dismantled and no landlord class expropriated without force or the credible threat of it.
+          Protracted people's war lets a weaker side build strength in the countryside until it can defeat a modern army,
+          as China, Vietnam, Algeria, Cuba and Guinea-Bissau showed.
+        against:
+          - from: nationalism.gandhian
+            text: >
+              Means shape ends. Those who win by the gun rule by the gun; nonviolent mass movements win more often and
+              leave freer societies behind.
+          - from: liberalism.classical
+            text: >
+              Armed groups claim to speak for the people without asking them. They bring repression on civilians and
+              become armies with their own interests.
+        sources:
+          - {author: "Mao Zedong", title: "On Protracted War", year: 1938}
+          - {author: "Ernesto Che Guevara", title: "Guerrilla Warfare", year: 1960}
+          - {author: "Frantz Fanon", title: "The Wretched of the Earth", year: 1961}
+          - {author: "Nelson Mandela", title: "I Am Prepared to Die (Rivonia Trial statement)", year: 1964}
+        traditions:
+          defining: [marxism.maoism, marxism.mlm, marxism.guevarism]
+          typical: [marxism.third-worldism, marxism.african-socialism, nationalism.palestinian, religious.salafi-jihadism, marxism.black-radical]
+          contested: [marxism.ml, anarchism.insurrectionary, nationalism.indigenous-sovereignty]
+          rejects: [nationalism.gandhian, liberalism.classical, socdem.revisionist, anarchism.christian]
+        presupposes: [state.nature.class-instrument]
+        excludes: [change.means.nonviolent-resistance]
+        tension: []
+        tags: [violence]
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: [comprador-capital, landed-capital, finance-capital]
+          mechanism: >
+            Armed struggle in the periphery contests the state's monopoly of force over land and resources, so if it
+            wins, landlords, compradors and foreign owners lose the coercive protection of their property.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >
+            The class content of armed struggle depends on who wages it: Marxists distinguish people's war from
+            jihadist or ethno-nationalist armed struggle, whose program may not touch property.
+          consciousness: hegemonic
+
+      - id: change.means.nonviolent-resistance
+        label: Mass nonviolent resistance
+        claim: Change is won by mass refusal without violence, boycotts, marches, civil disobedience, noncooperation, which withdraws the consent power rests on.
+        voiced: "Nonviolence is the greatest force at the disposal of mankind. Refuse to cooperate with evil and it cannot stand."
+        you: You think mass refusal without violence, boycotts, marches and civil disobedience, is the strongest way to win change.
+        because: >
+          Every power depends on the cooperation of the governed: workers, soldiers, officials. Withdraw it on a mass
+          scale and the power collapses. Nonviolence draws in far more participants than armed struggle, splits the
+          other side's supporters, and leaves no army to seize power afterwards. Indian independence, the US civil rights
+          movement and many revolutions against one-party rule won this way.
+        against:
+          - from: marxism.maoism
+            text: >
+              Nonviolence works only against an opponent restrained by public opinion. Against an army ready to kill,
+              it is martyrdom; the British left India also because of the naval mutiny and the war.
+          - from: marxism.black-radical
+            text: >
+              The civil rights movement won because Malcolm, the Deacons for Defense and the urban rebellions stood
+              behind it. Nonviolence had an armed shadow.
+        sources:
+          - {author: "Mohandas K. Gandhi", title: "Hind Swaraj", year: 1909}
+          - {author: "Martin Luther King Jr.", title: "Letter from Birmingham Jail", year: 1963}
+          - {author: "Gene Sharp", title: "The Politics of Nonviolent Action", year: 1973}
+          - {author: "Erica Chenoweth and Maria J. Stephan", title: "Why Civil Resistance Works", year: 2011}
+        traditions:
+          defining: [nationalism.gandhian, anarchism.christian]
+          typical: [religious.engaged-buddhism, liberalism.progressive, religious.liberation-theology, ecology.deep-ecology]
+          contested: [nationalism.ambedkarite, anarchism.communist]
+          rejects: [marxism.maoism, marxism.guevarism, religious.salafi-jihadism]
+        presupposes: []
+        excludes: [change.means.armed-struggle]
+        tension: []
+        tags: [nonviolence]
+        analysis:
+          gains: [core-workers, peasantry, petty-bourgeoisie]
+          pays: []
+          mechanism: >
+            Mass noncooperation can topple governments by withdrawing labor and taxes, but because it leaves armies,
+            courts and owners in place, the outcome often transfers office without transferring property.
+          drain: softens
+          law_of_value: none
+          disputed: >
+            Some materialists note that Gandhian campaigns were led by and protected the interests of Indian
+            industrialists and landlords; others stress their mass peasant base.
+          consciousness: hegemonic
+
+      - id: change.means.lawful-persuasion
+        label: Argument, voting, lobbying and lawful campaigning
+        claim: Change is won by persuading people and lawmakers, through argument, petitions, voting and lobbying, within the rules.
+        voiced: "Make the case, win the argument, change the law. If you can't persuade a majority, you haven't earned the change."
+        you: You think change should be won by persuading people and lawmakers within the rules.
+        because: >
+          In a society with free speech and elections, the legitimate path to change is persuasion. It respects those
+          who disagree, produces changes that stick because people accepted them, and avoids the coercion and backlash
+          that come from forcing things through. Abolition of capital punishment in Europe and marriage equality were won
+          by long campaigns of argument.
+        against:
+          - from: marxism.leninism
+            text: >
+              The rules were written by those who own the press, fund the parties and staff the courts. Persuasion within
+              them never reaches property.
+          - from: anarchism.syndicalist
+            text: >
+              Nothing important was ever won by petition alone. Lobbying works for those who already have money and access.
+        sources:
+          - {author: "John Stuart Mill", title: "On Liberty", year: 1859}
+          - {author: "Jürgen Habermas", title: "The Theory of Communicative Action", year: 1981}
+        traditions:
+          defining: [liberalism.social, liberalism.classical]
+          typical: [liberalism.egalitarian, liberalism.technocratic, socdem.third-way, conservatism.christian-democracy, conservatism.burkean]
+          contested: [socdem.fabian]
+          rejects: [marxism.leninism, anarchism.insurrectionary, anarchism.syndicalist]
+        presupposes: [state.nature.neutral-arbiter]
+        excludes: []
+        tension: []
+        tags: [liberalism]
+        analysis:
+          gains: [professional-managerial, finance-capital]
+          pays: []
+          mechanism: >
+            Lawful persuasion advantages those with money for campaigns, lobbyists and media, so the changes it wins
+            are those that the funded side accepts or that cost owners little.
+          drain: none
+          law_of_value: none
+          consciousness: hegemonic
+
+      - id: change.means.law-and-courts
+        label: Strategic litigation and the courts
+        claim: Change is won in the courts, through test cases, rights litigation, and building a judiciary that reads the constitution your way.
+        voiced: "Legislatures come and go. A Supreme Court majority lasts a generation. Win the law schools and the bench."
+        you: You think the courts are where lasting change is won, through test cases and judges who read the law your way.
+        because: >
+          Courts can bind governments for decades and reach issues legislatures avoid. The NAACP's campaign to Brown v.
+          Board ended legal segregation in schools; the conservative legal movement reshaped American law through
+          decades of patient work in law schools and judicial selection. In South Africa, India and Colombia, constitutional
+          rights litigation forced governments to provide housing, food and medicine.
+        against:
+          - from: socdem.democratic-socialism
+            text: >
+              Courts act only when a political movement has already shifted opinion, and they can strip rights as fast
+              as they grant them. Legal change without organized power is fragile.
+          - from: conservatism.right-populism
+            text: >
+              Government by judges is rule by an unelected caste. What the people's representatives decide should not be
+              overturned by lawyers.
+        sources:
+          - {author: "Steven M. Teles", title: "The Rise of the Conservative Legal Movement", year: 2008}
+          - {author: "Gerald N. Rosenberg", title: "The Hollow Hope: Can Courts Bring About Social Change?", year: 1991}
+          - {author: "Mark Tushnet", title: "The NAACP's Legal Strategy against Segregated Education, 1925-1950", year: 1987}
+        traditions:
+          defining: [conservatism.fusionism, liberalism.progressive]
+          typical: [conservatism.evangelical-right, liberalism.egalitarian, libertarianism.minarchist, nationalism.indigenous-sovereignty]
+          contested: [conservatism.postliberal]
+          rejects: [conservatism.right-populism, marxism.leninism]
+        presupposes: []
+        excludes: []
+        tension: []
+        tags: [courts]
+        analysis:
+          gains: [professional-managerial, finance-capital]
+          pays: []
+          mechanism: >
+            Litigation moves decisions to judges drawn from the legal profession and funded by foundations and
+            donors, so it wins rights claims that fit property law and rarely touches ownership itself.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Socio-economic rights litigation in the South (Indian right to food, South African housing cases) has
+            partly decommodified necessities; materialists disagree on how far.
+          consciousness: hegemonic
+
+      - id: change.means.example-and-conversion
+        label: Change hearts by example, prayer and moral witness
+        claim: Real change comes from personal moral transformation, living rightly, prayer and witness, which spreads by example.
+        voiced: "Be the change. Live as if the kingdom had come, and others will see it and follow."
+        you: You think real change starts with living rightly yourself and showing others by example.
+        because: >
+          Structures are made of people; if people do not change, new structures carry old sins. Personal holiness,
+          honesty and charity create islands of a different life that attract others. The early Christians, the
+          Franciscans and the Catholic Worker houses changed more lives than any party by living what they preached.
+        against:
+          - from: marxism.classical
+            text: >
+              The landlord can be pious and still collect the rent. Personal virtue leaves the structure that produces
+              poverty untouched.
+          - from: religious.liberation-theology
+            text: >
+              Sin is also social and structural. Charity without justice treats the wound and protects the hand that
+              made it.
+        sources:
+          - {author: "Leo Tolstoy", title: "The Kingdom of God Is Within You", year: 1894}
+          - {author: "Pius XI", title: "Quadragesimo Anno", year: 1931}
+          - {author: "Dorothy Day", title: "The Long Loneliness", year: 1952}
+        traditions:
+          defining: [anarchism.christian]
+          typical: [conservatism.evangelical-right, conservatism.cst, religious.engaged-buddhism, religious.salafism-quietist, nationalism.gandhian]
+          contested: [religious.christian-socialism]
+          rejects: [marxism.classical, religious.liberation-theology]
+        presupposes: []
+        excludes: []
+        tension: []
+        tags: [religion, ethics]
+        analysis:
+          gains: []
+          pays: []
+          mechanism: >
+            Moral witness relieves particular suffering through charity and changes some lives, but by placing change
+            in persons rather than property relations it leaves the distribution of ownership as it is.
+          drain: none
+          law_of_value: regulates
+          consciousness: economic-corporate
+
+  # ------------------------------------------------------------------
+  - id: change.tempo
+    domain: strategy
+    layer: strategy
+    question: How fast should change come?
+    plain: Is the change you want a matter of months, decades, or generations?
+    short: the tempo of change
+    importance: 2
+    region: strategy
+    positions:
+      - id: change.tempo.seize-the-moment
+        label: Seize the moment; crises do not wait
+        claim: Openings for deep change are rare and brief, and a movement must act decisively when one comes, or lose it for a generation.
+        voiced: "History will not forgive us if we do not assume power now. To delay is fatal."
+        you: You think big openings for change are rare, so when one comes you must act at once.
+        because: >
+          Revolutionary situations arise when rulers can no longer rule in the old way and the ruled will not live in
+          the old way. They last weeks or months. A party that waits for perfect conditions watches the crisis pass and
+          the reaction consolidate. October 1917 succeeded because the Bolsheviks acted; Germany 1923 and Spain 1936 show
+          the cost of hesitation.
+        against:
+          - from: marxism.classical
+            text: >
+              Seizing power before the material conditions are ripe produces a minority dictatorship forced to substitute
+              itself for a class that is not ready.
+          - from: conservatism.burkean
+            text: >
+              Haste is the vice of the revolutionary. What is done in a moment of passion is repented for a century.
+        sources:
+          - {author: "V. I. Lenin", title: "The April Theses", year: 1917}
+          - {author: "V. I. Lenin", title: "Marxism and Insurrection", year: 1917}
+          - {author: "Louis Auguste Blanqui", title: "Instructions for an Armed Uprising", year: 1868}
+        traditions:
+          defining: [marxism.leninism]
+          typical: [marxism.trotskyism, anarchism.insurrectionary, marxism.guevarism]
+          contested: [marxism.ml]
+          rejects: [marxism.classical, conservatism.burkean, socdem.fabian]
+        presupposes: [reform.revolution.revolution-necessary]
+        excludes: [change.tempo.inevitability-of-gradualness]
+        tension: []
+        tags: [tempo]
+        analysis:
+          gains: [core-workers, peasantry]
+          pays: [finance-capital, industrial-capital, landed-capital]
+          mechanism: >
+            Acting in a crisis catches the owners' state when its army and administration are divided, which makes a
+            transfer of property possible at lower cost than in normal times.
+          drain: breaks
+          law_of_value: suspends
+          consciousness: hegemonic
+
+      - id: change.tempo.protracted-struggle
+        label: A long struggle over decades
+        claim: Deep change takes a long, patient struggle over decades, accumulating strength, bases and allies before the decisive battle.
+        voiced: "The struggle is protracted. Build bases, win the people, wear the enemy down, and the balance will turn."
+        you: You think deep change takes decades of patient work, building strength before any decisive showdown.
+        because: >
+          Where the enemy is stronger, a quick decisive battle means defeat. A long struggle lets the weaker side build
+          organization, win over the population and erode the other side's will. The Chinese revolution took twenty-two
+          years; Vietnam thirty. In the West, Gramsci's war of position makes the same point about civil society.
+        against:
+          - from: marxism.trotskyism
+            text: >
+              Strategy for the long haul turns into a permanent waiting game. When the crisis comes, the long marchers
+              are often still preparing.
+          - from: anarchism.insurrectionary
+            text: >
+              Accumulation of forces means accumulation of bureaucracy. The organization built for the long war becomes
+              an end in itself.
+        sources:
+          - {author: "Mao Zedong", title: "On Protracted War", year: 1938}
+          - {author: "Antonio Gramsci", title: "Prison Notebooks", year: 1948, note: "written 1929-1935; on the war of position"}
+          - {author: "Võ Nguyên Giáp", title: "People's War, People's Army", year: 1961}
+        traditions:
+          defining: [marxism.maoism, marxism.mlm, marxism.gramscian]
+          typical: [marxism.ml, zapatismo, marxism.eurocommunism, nationalism.palestinian]
+          contested: [marxism.trotskyism]
+          rejects: [anarchism.insurrectionary]
+        presupposes: []
+        excludes: []
+        tension: [change.tempo.seize-the-moment]
+        tags: [tempo]
+        analysis:
+          gains: [peasantry, peripheral-workers, core-workers]
+          pays: [landed-capital, comprador-capital]
+          mechanism: >
+            Patient accumulation of organized bases (liberated zones, unions, cultural institutions) builds a counter-power
+            that can hold ground against the state, at the cost of long periods with no change in ownership.
+          drain: reduces
+          law_of_value: suspends
+          consciousness: hegemonic
+
+      - id: change.tempo.inevitability-of-gradualness
+        label: Gradual change, one reform at a time
+        claim: Change should come gradually, one reform after another, each accepted by the public before the next.
+        voiced: "The inevitability of gradualness. Socialism will come by the slow permeation of every institution."
+        you: You think change should come gradually, one accepted reform after another.
+        because: >
+          Changes made gradually can be absorbed, tested and defended. Each reform creates constituencies for the next:
+          pensioners defend pensions, patients defend health services. Sudden change provokes reaction and capital
+          flight and often has to be reversed. The Fabians changed Britain more by permeating its institutions than any
+          revolutionary did.
+        against:
+          - from: marxism.luxemburgism
+            text: >
+              Gradualism assumes the other side will stand still. Capital moves fast when its interests are threatened;
+              gradualists are outpaced every time.
+          - from: marxism.ecosocialism
+            text: >
+              The climate does not negotiate. Gradual reform is a decision to accept catastrophe on the instalment plan.
+        sources:
+          - {author: "Sidney Webb", title: "The Inevitability of Gradualness (presidential address to the Labour Party conference)", year: 1923}
+          - {author: "George Bernard Shaw (ed.)", title: "Fabian Essays in Socialism", year: 1889}
+        traditions:
+          defining: [socdem.fabian, socdem.revisionist]
+          typical: [socdem.labourism, socdem.nordic, liberalism.technocratic, liberalism.social]
+          contested: [socdem.democratic-socialism]
+          rejects: [marxism.leninism, marxism.luxemburgism, marxism.ecosocialism]
+        presupposes: [reform.revolution.reform-is-the-road]
+        excludes: [change.tempo.seize-the-moment]
+        tension: []
+        tags: [tempo]
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: []
+          mechanism: >
+            Gradual reform raises public provision as far as growth and capital's tolerance allow, entrusting its design
+            to administrators and experts, so its pace is set by what owners concede.
+          drain: softens
+          law_of_value: regulates
+          consciousness: class-economic
+
+      - id: change.tempo.slow-and-organic
+        label: Slow, organic change, as in a living thing
+        claim: Society is like a living thing and should change slowly and organically, by small adjustments that keep continuity with the past.
+        voiced: "To be conservative is to prefer the familiar to the unknown, the tried to the untried. Change, when it comes, should be small and slow."
+        you: You think society should change slowly and naturally, keeping what works and adjusting only when needed.
+        because: >
+          Inherited institutions contain wisdom no single generation can fully understand. Rapid change destroys that
+          knowledge before its loss is noticed. Slow adjustment lets a society keep its bearings, allows mistakes to be
+          small, and respects those who will live with the results.
+        against:
+          - from: marxism.leninism
+            text: >
+              Slowness is a privilege of those whom the present order serves. For the hungry, organic change is no
+              change at all.
+          - from: liberalism.progressive
+            text: >
+              Every injustice has been defended as an organic tradition: slavery, the subordination of women, legal
+              segregation. The pace of justice cannot be set by those who benefit from the delay.
+        sources:
+          - {author: "Michael Oakeshott", title: "Rationalism in Politics and Other Essays", year: 1962}
+          - {author: "Edmund Burke", title: "Reflections on the Revolution in France", year: 1790}
+          - {author: "Russell Kirk", title: "The Conservative Mind", year: 1953}
+        traditions:
+          defining: [conservatism.burkean, conservatism.traditionalist]
+          typical: [conservatism.one-nation, conservatism.christian-democracy, religious.confucian, commonsense.declinist]
+          contested: [conservatism.paleo]
+          rejects: [marxism.leninism, liberalism.progressive, technology.e-acc]
+        presupposes: []
+        excludes: [change.tempo.seize-the-moment, change.tempo.shock-therapy]
+        tension: []
+        tags: [tempo, conservatism]
+        analysis:
+          gains: [landed-capital, finance-capital, petty-bourgeoisie]
+          pays: []
+          mechanism: >
+            Setting the pace of change by continuity with inherited institutions protects existing holdings of land,
+            wealth and status, whose owners are best placed to define what is organic.
+          drain: sustains
+          law_of_value: none
+          consciousness: hegemonic
+
+      - id: change.tempo.shock-therapy
+        label: All at once; rip off the bandage
+        claim: When a system is broken, change it fast and all at once, before opponents can organize to block it.
+        voiced: "You cannot cross a chasm in two jumps. Liberalize prices, open the borders to trade and slash the deficit, all at once."
+        you: You think when a system is broken, it is best to change it fast and all at once.
+        because: >
+          Gradual reform gives entrenched interests time to regroup and block it, and half-reformed systems combine the
+          costs of both. A short, sharp shock brings the pain forward and lets recovery start sooner. Poland's 1990
+          program and Argentina's reforms after 2023 were defended this way by their authors.
+        against:
+          - from: socdem.keynesian
+            text: >
+              Russia's shock therapy produced a collapse in output and life expectancy and handed state assets to
+              oligarchs. Societies are not machines that can be rebooted.
+          - from: conservatism.burkean
+            text: >
+              Sweeping change on a theorist's plan is the same rationalism as revolution. It destroys institutions it
+              does not understand.
+        sources:
+          - {author: "Jeffrey Sachs", title: "Poland's Jump to the Market Economy", year: 1993}
+          - {author: "Milton Friedman", title: "Capitalism and Freedom", year: 1962}
+        traditions:
+          defining: [liberalism.chicago]
+          typical: [liberalism.austrian, libertarianism.ancap, libertarianism.minarchist]
+          contested: [liberalism.technocratic]
+          rejects: [socdem.keynesian, conservatism.burkean, marxism.ml]
+        presupposes: [capitalism.nature.free-exchange]
+        excludes: [change.tempo.slow-and-organic]
+        tension: []
+        tags: [tempo, neoliberalism]
+        analysis:
+          gains: [finance-capital, comprador-capital]
+          pays: [core-workers, peripheral-workers, reserve-army]
+          mechanism: >
+            Rapid liberalization and privatization transfer state assets cheaply to those with capital at hand, often
+            foreign investors and domestic insiders, while price rises and layoffs fall on wage earners and pensioners.
+          drain: sustains
+          law_of_value: extends
+          consciousness: hegemonic
+
+      - id: change.tempo.wait-for-conditions
+        label: Wait until conditions are ripe
+        claim: Deep change comes only when the material conditions have matured; a movement should prepare and organize, not force history.
+        voiced: "No social order ever perishes before all the productive forces for which there is room in it have developed."
+        you: You think deep change only comes when conditions are ripe, so a movement should prepare rather than force it.
+        because: >
+          Societies change when their economic development makes the old order unworkable. Forcing a transformation
+          before that point means a minority imposing a system that the economy cannot sustain, which ends in
+          dictatorship or collapse. The task is to build the organization and understanding that will be ready when
+          the crisis matures.
+        against:
+          - from: marxism.leninism
+            text: >
+              Conditions are never ripe for those who wait. Kautsky's revolutionary party that never made a revolution
+              ended up defending the bourgeois republic.
+          - from: marxism.maoism
+            text: >
+              Consciousness and organization are themselves conditions. Under imperialism, revolution comes first in
+              the backward countries, not in the ripest.
+        sources:
+          - {author: "Karl Marx", title: "Preface to A Contribution to the Critique of Political Economy", year: 1859}
+          - {author: "Karl Kautsky", title: "The Road to Power", year: 1909}
+        traditions:
+          defining: [marxism.classical]
+          typical: [marxism.austromarxism, marxism.left-communism, marxism.analytical]
+          contested: [marxism.council-communism]
+          rejects: [marxism.leninism, marxism.maoism, marxism.guevarism, anarchism.insurrectionary]
+        presupposes: [history.motor.class-struggle]
+        excludes: [change.tempo.seize-the-moment]
+        tension: []
+        tags: [tempo]
+        analysis:
+          gains: [core-workers]
+          pays: []
+          mechanism: >
+            Waiting for maturity keeps workers organized but avoids confrontation over ownership, so in the meantime
+            the movement's practice is bargaining and electoral work within capitalism.
+          drain: none
+          law_of_value: regulates
+          consciousness: class-economic
+
+      - id: change.tempo.ecological-deadline
+        label: The deadline is set by the climate, not by politics
+        claim: The pace of change is set by ecological limits, emissions must fall steeply within years, so politics must move at that speed whatever it costs.
+        voiced: "We are not asking for the impossible. Physics sets the timetable. Anything slower is a decision to let it burn."
+        you: You think the climate sets the deadline, so change has to happen within years, not decades.
+        because: >
+          Carbon budgets are physical facts: every year of delay locks in more warming and makes later cuts steeper.
+          Ordinary political tempo, elections every few years and gradual consensus, cannot meet a deadline measured
+          in a decade. Movements must therefore escalate, through mass disruption if needed, to force emergency action.
+        against:
+          - from: ecology.ecomodernism
+            text: >
+              Panic about deadlines produces bad policy and backlash. Decarbonization depends on cheap clean technology,
+              which takes the time it takes.
+          - from: conservatism.right-populism
+            text: >
+              Emergency politics is a pretext for elites to impose costs on ordinary people without their consent.
+        sources:
+          - {author: "IPCC", title: "Global Warming of 1.5°C (Special Report)", year: 2018}
+          - {author: "Andreas Malm", title: "How to Blow Up a Pipeline", year: 2021}
+          - {author: "Naomi Klein", title: "This Changes Everything: Capitalism vs. the Climate", year: 2014}
+        traditions:
+          defining: [marxism.ecosocialism]
+          typical: [ecology.degrowth, marxism.degrowth-communism, ecology.environmental-justice, ecology.deep-ecology]
+          contested: [ecology.green-growth]
+          rejects: [ecology.ecomodernism, conservatism.right-populism, libertarianism.objectivist]
+        presupposes: []
+        excludes: [change.tempo.slow-and-organic]
+        tension: [change.tempo.inevitability-of-gradualness]
+        tags: [tempo, climate]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Rapid enforced decarbonization writes off fossil reserves and plant whose owners count on decades of returns,
+            and spares the peripheral populations who suffer most from warming.
+          drain: reduces
+          law_of_value: suspends
+          consciousness: hegemonic
+
+  # ------------------------------------------------------------------
+  - id: state.relation
+    domain: strategy
+    layer: strategy
+    question: What should a movement do with the existing state?
+    plain: Do you take over the government, tear it down, ignore it, cut it back, or restore it?
+    short: the existing state
+    importance: 3
+    region: strategy
+    positions:
+      - id: state.relation.capture-and-use
+        label: Win the government and use the state as it is
+        claim: Win control of government through elections and use the existing state apparatus to carry out the program.
+        voiced: "The state is a tool. Whoever holds the government can use it. Our job is to win it and use it well."
+        you: You think the existing state can be won through elections and used to change society.
+        because: >
+          The modern state commands budgets, law, public enterprises and a trained civil service. These can be pointed
+          at new goals by an elected government that has a mandate. Post-war governments in Britain and Scandinavia
+          built health services, nationalized industries and full employment with the existing state.
+        against:
+          - from: marxism.leninism
+            text: >
+              The working class cannot simply lay hold of the ready-made state machinery. The officer corps, the
+              judiciary and the senior civil service will obstruct and finally overthrow a government that threatens property.
+          - from: libertarianism.minarchist
+            text: >
+              Every tool you build for your program stays in the toolbox for your opponents. A state big enough to give
+              you everything is big enough to take everything.
+        sources:
+          - {author: "Karl Kautsky", title: "The Dictatorship of the Proletariat", year: 1918}
+          - {author: "Eduard Bernstein", title: "The Preconditions of Socialism (Evolutionary Socialism)", year: 1899}
+          - {author: "Salvador Allende", title: "First Annual Message to Congress", year: 1971}
+        traditions:
+          defining: [socdem.revisionist, socdem.labourism, socdem.nordic]
+          typical: [socdem.keynesian, socdem.democratic-socialism, socdem.fabian, liberalism.social, marxism.eurocommunism, socdem.left-populism]
+          contested: [nationalism.bolivarianism]
+          rejects: [marxism.leninism, anarchism.communist, libertarianism.minarchist]
+        presupposes: [state.nature.neutral-arbiter]
+        excludes: [state.relation.smash-and-replace, state.relation.abolish-at-once]
+        tension: []
+        tags: [state]
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [finance-capital]
+          mechanism: >
+            An elected government can tax, regulate and nationalize, but leaves the officer corps, courts, central bank
+            and the owners of capital able to resist by investment strikes and legal obstruction.
+          drain: softens
+          law_of_value: regulates
+          consciousness: hegemonic
+
+      - id: state.relation.smash-and-replace
+        label: Smash the old state; build a commune-type workers' state
+        claim: The existing state must be dismantled and replaced by a new state of workers' councils, with elected, recallable officials on workers' wages, which begins to wither at once.
+        voiced: "Smash the bureaucratic-military machine. Replace it with the Commune: officials elected, recallable, paid a worker's wage."
+        you: You think the old state must be broken up and replaced by a new one run by workers' councils.
+        because: >
+          The standing army, police and bureaucracy are organs of minority rule; they cannot be reformed into instruments
+          of the majority. The Paris Commune showed the alternative: armed people instead of an army, elected and
+          recallable officials paid a worker's wage. Such a state is already half a state, and it withers as classes disappear.
+        against:
+          - from: anarchism.communist
+            text: >
+              A new state, however named, creates new rulers. The soviets were swallowed by the party within three years.
+          - from: socdem.democratic-socialism
+            text: >
+              Smashing the state in a country with elections destroys the rights workers won, and invites civil war that
+              the left usually loses.
+        sources:
+          - {author: "Karl Marx", title: "The Civil War in France", year: 1871}
+          - {author: "V. I. Lenin", title: "The State and Revolution", year: 1917}
+        traditions:
+          defining: [marxism.leninism, marxism.trotskyism]
+          typical: [marxism.left-communism, marxism.luxemburgism, marxism.council-communism, marxism.maoism]
+          contested: [marxism.ml]
+          rejects: [socdem.revisionist, anarchism.communist, liberalism.classical]
+        presupposes: [state.nature.class-instrument, reform.revolution.revolution-necessary]
+        excludes: [state.relation.capture-and-use]
+        tension: [state.relation.strengthen-then-wither]
+        tags: [state, leninism]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, landed-capital, professional-managerial]
+          mechanism: >
+            Replacing the standing army and career bureaucracy with elected, recallable bodies removes the apparatus that
+            protects property and the career privileges of the officials who staff it.
+          drain: breaks
+          law_of_value: abolishes
+          consciousness: hegemonic
+
+      - id: state.relation.strengthen-then-wither
+        label: Build a strong socialist state; it withers only when the siege ends
+        claim: After the revolution the state must be made as strong as possible to defend against imperialism and build the economy; it can wither only when the threat is gone worldwide.
+        voiced: "The withering away of the state will come not through weakening it but through its utmost strengthening, while capitalist encirclement remains."
+        you: You think a socialist state must be made strong to survive its enemies, and can only wither once the threat is gone.
+        because: >
+          A socialist country surrounded by hostile powers faces invasion, sanctions, sabotage and subversion. A weak state
+          would be overthrown, as Hungary 1919, Guatemala 1954 and Chile 1973 were. The state withers when classes and
+          the external threat are gone, not before. The USSR's survival against Nazi Germany and Cuba's survival against
+          sixty years of blockade show the necessity.
+        against:
+          - from: marxism.trotskyism
+            text: >
+              The strong state became a bureaucratic caste with its own privileges. A state that grows stronger as
+              classes supposedly vanish is serving someone else.
+          - from: anarchism.communist
+            text: >
+              We told you so in 1872. The state never withers; it only grows.
+        sources:
+          - {author: "J. V. Stalin", title: "Political Report of the Central Committee to the Sixteenth Congress of the CPSU(B)", year: 1930}
+          - {author: "Friedrich Engels", title: "Anti-Dühring", year: 1878}
+          - {author: "Domenico Losurdo", title: "Stalin: The History and Critique of a Black Legend", year: 2008}
+        traditions:
+          defining: [marxism.ml]
+          typical: [marxism.juche, marxism.hoxhaism, marxism.scc, marxism.maoism]
+          contested: [marxism.mlm]
+          rejects: [marxism.trotskyism, anarchism.communist, marxism.council-communism, liberalism.classical]
+        presupposes: [state.nature.class-instrument]
+        excludes: [state.relation.abolish-at-once]
+        tension: [state.relation.smash-and-replace]
+        tags: [state, siege]
+        analysis:
+          gains: [peasantry, peripheral-workers, core-workers]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >
+            A strong socialist state can control trade, capital and investment against sanctions and subversion,
+            keeping surplus at home; it also concentrates control of that surplus in a party and administrative stratum.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >
+            Trotskyists and council communists read the strong state as the rule of a bureaucracy; Marxist-Leninists
+            and the frame's own line judge it by its place under siege (Losurdo).
+          consciousness: hegemonic
+
+      - id: state.relation.abolish-at-once
+        label: Abolish the state at once, with no transitional state
+        claim: The state must be abolished in the revolution itself and replaced by free federations of communes and unions, with no transitional state.
+        voiced: "Freedom without socialism is privilege; socialism without freedom is slavery. No state, red or otherwise."
+        you: You think the state must be abolished immediately and replaced by free federations, with no new state in between.
+        because: >
+          Every state is the rule of a minority over a majority. A workers' state still has officials, armed bodies and
+          a center that will defend its own position; Bakunin predicted the "red bureaucracy" decades before it appeared.
+          Society can coordinate itself through federations of communes and unions from below, as Ukraine in 1919 and
+          Catalonia in 1936 showed.
+        against:
+          - from: marxism.leninism
+            text: >
+              The day after the revolution, the old ruling class and foreign armies attack. Without a state of their own,
+              workers are crushed, as Catalonia was.
+          - from: liberalism.classical
+            text: >
+              Without a state there is no law to protect the weak from the strong. Federations of communes become rule
+              by the local majority or the local militia.
+        sources:
+          - {author: "Mikhail Bakunin", title: "Statism and Anarchy", year: 1873}
+          - {author: "Peter Kropotkin", title: "The Conquest of Bread", year: 1892}
+          - {author: "Errico Malatesta", title: "Anarchy", year: 1891}
+        traditions:
+          defining: [anarchism.communist, anarchism.syndicalist]
+          typical: [anarchism.platformist, anarchism.insurrectionary, anarchism.feminist, anarchism.green]
+          contested: [anarchism.communalism]
+          rejects: [marxism.leninism, marxism.ml, liberalism.classical, conservatism.burkean]
+        presupposes: [state.nature.hierarchy-as-such]
+        excludes: [state.relation.capture-and-use, state.relation.strengthen-then-wither]
+        tension: []
+        tags: [state, anarchism]
+        analysis:
+          gains: [core-workers, peasantry, peripheral-workers]
+          pays: [finance-capital, industrial-capital, landed-capital, professional-managerial]
+          mechanism: >
+            Abolishing the state removes the legal and armed protection of property along with all central command,
+            putting production in the hands of federated producers, if they can defend it.
+          drain: breaks
+          law_of_value: abolishes
+          consciousness: hegemonic
+
+      - id: state.relation.exit-and-build
+        label: Ignore the state; build autonomy beside it
+        claim: Do not try to take or smash the state; build autonomous communities, cooperatives and councils alongside it until they make it irrelevant.
+        voiced: "We are not going to take power. We build our own government, our own schools, our own clinics, and they come to us."
+        you: You think movements should build their own self-governing communities alongside the state instead of fighting for it.
+        because: >
+          Both taking the state and smashing it reproduce the logic of power. Building self-governing structures, in
+          Chiapas, in Rojava's communes, in recovered factories, creates the new society now and gives people a reason
+          to defend it. Each autonomous zone is both a refuge and an example.
+        against:
+          - from: marxism.leninism
+            text: >
+              The state does not ignore you. It tolerates autonomy only while it is weak, and crushes it when it
+              threatens property, as it has done to every commune that grew.
+          - from: socdem.democratic-socialism
+            text: >
+              Islands of autonomy cannot provide health care, pensions or infrastructure for whole societies. Abandoning
+              the state abandons the poor who depend on it.
+        sources:
+          - {author: "John Holloway", title: "Change the World Without Taking Power", year: 2002}
+          - {author: "Abdullah Öcalan", title: "Democratic Confederalism", year: 2011}
+          - {author: "Murray Bookchin", title: "The Next Revolution: Popular Assemblies and the Promise of Direct Democracy", year: 2015}
+        traditions:
+          defining: [zapatismo, anarchism.confederalism]
+          typical: [marxism.autonomism, anarchism.communalism, anarchism.communist, nationalism.indigenous-sovereignty]
+          contested: [anarchism.platformist]
+          rejects: [marxism.leninism, marxism.ml, socdem.democratic-socialism]
+        presupposes: []
+        excludes: [state.relation.capture-and-use]
+        tension: []
+        tags: [state, autonomy]
+        analysis:
+          gains: [peasantry, peripheral-workers, reserve-army]
+          pays: [landed-capital]
+          mechanism: >
+            Autonomous zones withdraw land, labor and local administration from market and state control; their reach
+            stops at the territory they can hold, so national property relations remain intact.
+          drain: softens
+          law_of_value: suspends
+          consciousness: hegemonic
+
+      - id: state.relation.parallel-polis
+        label: "Parallel polis: withdraw into communities of faith and virtue"
+        claim: When the surrounding order is hostile to faith and virtue, believers should build their own parallel institutions, schools, parishes, economies, and live within them.
+        voiced: "The barbarians are not at the gates; they have been governing us for some time. Build communities where the faith can be lived and handed on."
+        you: You think people of faith should build their own communities and institutions apart from a hostile mainstream.
+        because: >
+          The culture and law of the liberal West have turned against the moral and religious life. Fighting for control
+          of national politics has failed. Under communist rule Czech dissidents built a parallel polis of underground
+          culture and education; St Benedict's monasteries preserved civilization through a dark age. Strong local
+          communities of practice can do the same now.
+        against:
+          - from: conservatism.integralism
+            text: >
+              Withdrawal concedes the state to the enemy, who will not leave your schools and parishes alone. The common
+              good must be pursued through political authority.
+          - from: liberalism.progressive
+            text: >
+              Parallel institutions become enclaves where children are shielded from other ways of life and members
+              cannot easily leave.
+        sources:
+          - {author: "Václav Benda", title: "The Parallel Polis", year: 1978}
+          - {author: "Alasdair MacIntyre", title: "After Virtue", year: 1981}
+          - {author: "Rod Dreher", title: "The Benedict Option", year: 2017}
+        traditions:
+          defining: [conservatism.traditionalist]
+          typical: [conservatism.evangelical-right, anarchism.christian, religious.salafism-quietist, conservatism.distributism, communitarianism]
+          contested: [conservatism.cst]
+          rejects: [conservatism.integralism, conservatism.postliberal, liberalism.progressive]
+        presupposes: []
+        excludes: []
+        tension: [state.relation.restore]
+        tags: [state, religion]
+        analysis:
+          gains: [petty-bourgeoisie]
+          pays: []
+          mechanism: >
+            Withdrawing into faith communities leaves national economic policy untouched and builds local institutions
+            run by clergy, families and small owners, funded by members' own resources.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Some analysts note that the Czech parallel polis served as a training ground for the 1989 transition,
+            whose outcome was rapid privatization.
+          consciousness: economic-corporate
+
+      - id: state.relation.market-exit
+        label: Exit the state through markets, crypto and new jurisdictions
+        claim: Leave the state behind by building counter-economies, private jurisdictions, seasteads and digital networks beyond its reach.
+        voiced: "Exit, not voice. Build the parallel economy, the cloud community, the charter city, and let the old state wither from neglect."
+        you: You think the way forward is to build markets, communities and jurisdictions outside the state's reach and move there.
+        because: >
+          Voting changes little and revolution is coercive. Exit gives people a choice: when they can move their money,
+          work and residence to better-run jurisdictions, governments must compete for them. Cryptography, remote work and
+          charter cities make exit cheaper than ever. Konkin called the underground economy the road to a free society.
+        against:
+          - from: marxism.classical
+            text: >
+              Exit is for the owners of capital, who already move it at will. Workers who cannot leave pay the taxes the
+              mobile escape.
+          - from: conservatism.national
+            text: >
+              A nation is not a service provider. Elites who treat their country as a hotel to check out of have no
+              loyalty to the people they leave behind.
+        sources:
+          - {author: "Samuel Edward Konkin III", title: "New Libertarian Manifesto", year: 1980}
+          - {author: "Balaji Srinivasan", title: "The Network State", year: 2022}
+          - {author: "James Dale Davidson and William Rees-Mogg", title: "The Sovereign Individual", year: 1997}
+        traditions:
+          defining: [libertarianism.ancap, technology.cyberlibertarian]
+          typical: [fascism.neoreaction, technology.e-acc, libertarianism.paleo, anarchism.individualist]
+          contested: [libertarianism.minarchist]
+          rejects: [marxism.classical, conservatism.national, socdem.nordic]
+        presupposes: [state.nature.organized-aggression]
+        excludes: [state.relation.capture-and-use]
+        tension: []
+        tags: [state, exit]
+        analysis:
+          gains: [finance-capital, professional-managerial]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            Exit options favor the mobile holders of capital and skills, who can shift income to low-tax jurisdictions
+            and leave the tax burden and public services to those who cannot move.
+          drain: sustains
+          law_of_value: extends
+          consciousness: economic-corporate
+
+      - id: state.relation.restore
+        label: Take back the state and restore it to its true purpose
+        claim: The state has been captured by liberal or globalist elites, and the task is to take it back and restore it to serve the nation, the faith, or the common good.
+        voiced: "We are not against the state. We are against what they have made of it. Take it back, and point it at the common good."
+        you: You think the state has been taken over by the wrong people and should be reclaimed to serve the nation or the common good.
+        because: >
+          Liberals pretend the state is neutral while using it to impose their own vision through courts, schools and
+          bureaucracy. Conservatives who only defend limited government lose every battle. The state should instead be
+          used openly to protect families, faith, national industry and borders, as a classical ruler pursues the
+          common good. Hungary and Poland under their recent conservative governments are offered as examples.
+        against:
+          - from: liberalism.classical
+            text: >
+              Every faction thinks the state belongs to it. Restoration by the right will be restoration by the left the
+              next time, and the rights that protect both are destroyed along the way.
+          - from: marxism.leninism
+            text: >
+              Restoring the nation's state leaves its owners in place and turns its force on minorities, migrants and the
+              organized left.
+        sources:
+          - {author: "Adrian Vermeule", title: "Common Good Constitutionalism", year: 2022}
+          - {author: "Patrick Deneen", title: "Regime Change: Toward a Postliberal Future", year: 2023}
+          - {author: "Yoram Hazony", title: "Conservatism: A Rediscovery", year: 2022}
+        traditions:
+          defining: [conservatism.integralism, conservatism.postliberal, conservatism.national]
+          typical: [conservatism.reactionary, conservatism.monarchist, conservatism.right-populism, nationalism.hindutva, religious.islamism-khomeinist, religious.religious-zionism]
+          contested: [conservatism.cst]
+          rejects: [liberalism.classical, libertarianism.minarchist, marxism.leninism]
+        presupposes: [state.nature.captured]
+        excludes: [state.relation.shrink]
+        tension: [state.relation.parallel-polis]
+        tags: [state, postliberalism]
+        analysis:
+          gains: [industrial-capital, petty-bourgeoisie, landed-capital]
+          pays: [reserve-army, core-workers]
+          mechanism: >
+            Restoration uses state power over schools, courts, media and borders to enforce a moral and national order,
+            and offers domestic industry protection, while migrants and the organized left bear its coercion.
+          drain: sustains
+          law_of_value: regulates
+          consciousness: hegemonic
+
+      - id: state.relation.shrink
+        label: Shrink the state to its core functions
+        claim: The state should be cut back to a few core functions, defense, courts, police, so that individuals and markets can run the rest.
+        voiced: "Government is not the solution to our problem; government is the problem. Starve the beast."
+        you: You think the state should be cut back to a few basic jobs and leave the rest to individuals and markets.
+        because: >
+          Every function the state takes on is paid for by force, through taxes, and run without the test of profit and
+          loss. A minimal state protects rights without violating them. Shrinking it leaves more of people's income in
+          their own hands and more of life to voluntary cooperation. Nothing more extensive can be justified.
+        against:
+          - from: socdem.nordic
+            text: >
+              The richest and freest societies have the largest public sectors. Shrinking the state leaves health,
+              education and old age to those who can pay.
+          - from: conservatism.postliberal
+            text: >
+              A shrunken state does not leave a free people; it leaves a market that dissolves families and towns, and
+              corporations that rule in the state's place.
+        sources:
+          - {author: "Robert Nozick", title: "Anarchy, State, and Utopia", year: 1974}
+          - {author: "Milton Friedman", title: "Capitalism and Freedom", year: 1962}
+          - {author: "Friedrich Hayek", title: "The Road to Serfdom", year: 1944}
+        traditions:
+          defining: [libertarianism.minarchist, liberalism.chicago]
+          typical: [liberalism.austrian, conservatism.fusionism, libertarianism.objectivist, libertarianism.ancap, liberalism.classical]
+          contested: [libertarianism.georgist]
+          rejects: [socdem.nordic, conservatism.postliberal, marxism.ml]
+        presupposes: [state.nature.necessary-evil]
+        excludes: [state.relation.restore, state.relation.strengthen-then-wither]
+        tension: []
+        tags: [state, libertarianism]
+        analysis:
+          gains: [finance-capital, industrial-capital, petty-bourgeoisie]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Cutting the state's social functions while keeping police, courts and defense moves services into markets,
+            lowers taxes on capital and leaves the protection of property intact, so wage earners buy privately what was public.
+          drain: sustains
+          law_of_value: extends
+          consciousness: hegemonic

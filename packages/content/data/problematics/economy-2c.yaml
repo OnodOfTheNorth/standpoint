@@ -1,0 +1,995 @@
+# Economy, part 2c: allocation, forms of planning, the calculation debate.
+problematics:
+  # ------------------------------------------------------------------
+  - id: allocation.mechanism
+    domain: economy
+    layer: horizon
+    question: "Plan, market, or commons: how should production be allocated?"
+    plain: Who should decide what gets made, how much, and who gets it?
+    short: the allocation of production
+    importance: 3
+    positions:
+      - id: allocation.mechanism.central-planning
+        label: Production planned centrally for use, not profit
+        claim: A central plan should decide what the economy produces and where investment goes, according to social needs and priorities, instead of leaving it to profit and competition.
+        voiced: "Production for use, not for profit. The plan is the law: it unites the whole economy in one purpose instead of a thousand firms fighting blind."
+        you: You think a central plan should decide what gets produced and where investment goes, according to what society needs rather than what pays.
+        because: >
+          Markets allocate by purchasing power, so luxury flats are built while families sleep in the street and
+          medicines are not made because the sick are poor. They also allocate blindly: each firm invests on a
+          guess, and the guesses add up to booms, gluts and crashes. A central plan coordinates investment in
+          advance, sets priorities openly, and mobilizes the whole economy for a goal. It turned a peasant
+          country into an industrial power within two decades and won a world war.
+        against:
+          - from: liberalism.austrian
+            text: >
+              The planner cannot know what millions of people want or what millions of resources are worth.
+              Without market prices for capital goods there is no rational calculation, only guesses enforced
+              by command, which is why planned economies produced shortages and queues.
+          - from: anarchism.syndicalist
+            text: >
+              Central planning hands every economic decision to a ministry. Workers obey targets set above them
+              and the planners become a new ruling stratum.
+        sources:
+          - {author: Joseph Stalin, title: Economic Problems of Socialism in the USSR, year: 1952}
+          - {author: Evgeny Preobrazhensky, title: The New Economics, year: 1926}
+          - {author: W. Paul Cockshott and Allin Cottrell, title: Towards a New Socialism, year: 1993}
+        traditions:
+          defining: [marxism.ml]
+          typical: [marxism.leninism, marxism.hoxhaism, marxism.juche, marxism.trotskyism, marxism.maoism, marxism.third-camp]
+          contested: [marxism.scc, marxism.left-communism, socdem.democratic-socialism, marxism.council-communism]
+          rejects: [liberalism.austrian, liberalism.chicago, libertarianism.ancap, marxism.market-socialism, anarchism.mutualist, liberalism.ordoliberal]
+        presupposes: [property.private.personal-vs-productive]
+        excludes: [allocation.mechanism.free-market]
+        tension: [allocation.mechanism.market-socialism]
+        tags: [planning]
+        analysis:
+          gains: [core-workers, peasantry, reserve-army, professional-managerial]
+          pays: [finance-capital, industrial-capital, comprador-capital]
+          mechanism: >
+            Replacing market investment with planned allocation ends profit as the signal for what is produced
+            and lets a state with control of foreign trade set domestic prices apart from world prices. Planners
+            and managers acquire control of the surplus, and the class content turns on who controls them.
+          drain: breaks
+          law_of_value: abolishes
+          disputed: >
+            Whether Soviet-type planning abolished the law of value or only suppressed it is the subject of the
+            Sweezy-Bettelheim debate and of Stalin's own 1952 text, which said the law of value still operated
+            in socialist commodity circulation.
+          consciousness: hegemonic
+
+      - id: allocation.mechanism.free-market
+        label: Free markets and prices should coordinate production
+        claim: Production should be allocated by free markets. Prices formed in voluntary exchange tell people what is scarce and wanted, and the state should keep out apart from enforcing contracts and property.
+        voiced: "The price system is a mechanism for communicating information. Nobody designed it, nobody could, and it coordinates millions of people better than any planner ever will."
+        you: You think free markets, with prices set by voluntary exchange, should decide what gets produced, with the state staying out.
+        because: >
+          The knowledge needed to run an economy is not in any one place. It is scattered in millions of heads:
+          the shopkeeper who sees a shortage, the engineer who sees a cheaper method. Prices pull this knowledge
+          together; when tin becomes scarce its price rises and everyone economizes without needing to know
+          why. Profit and loss reward those who serve others and punish waste. Every attempt to replace this
+          order with a plan has produced poverty.
+        against:
+          - from: marxism.classical
+            text: >
+              Markets register demand backed by money, not human need. Coordination by price runs through
+              crises, unemployment and the ruin of whole regions, and it is coordination for capital, not for people.
+          - from: socdem.keynesian
+            text: >
+              Unregulated markets do not stabilize themselves. Without public management of demand and investment
+              they settle into mass unemployment, as in the 1930s.
+        sources:
+          - {author: Friedrich A. Hayek, title: The Use of Knowledge in Society, year: 1945}
+          - {author: Ludwig von Mises, title: Human Action, year: 1949}
+          - {author: Milton Friedman, title: Capitalism and Freedom, year: 1962}
+        traditions:
+          defining: [liberalism.austrian, libertarianism.ancap]
+          typical: [liberalism.chicago, libertarianism.minarchist, libertarianism.objectivist, liberalism.classical, conservatism.fusionism, libertarianism.paleo]
+          contested: [liberalism.ordoliberal, liberalism.technocratic, anarchism.mutualist]
+          rejects: [marxism.ml, socdem.keynesian, anarchism.communist, nationalism.developmental-state]
+        presupposes: [value.source.subjective-utility]
+        excludes: [allocation.mechanism.central-planning, allocation.mechanism.participatory-planning]
+        tension: []
+        tags: []
+        analysis:
+          gains: [finance-capital, industrial-capital, comprador-capital]
+          pays: [core-workers, peripheral-workers, reserve-army, peasantry]
+          mechanism: >
+            Leaving allocation to prices backed by purchasing power directs production to those with money and
+            lets world prices, set where capital is concentrated, decide what the periphery produces and at what wage.
+          drain: sustains
+          law_of_value: extends
+
+      - id: allocation.mechanism.social-market
+        label: Competitive markets inside a strong legal and social frame
+        claim: Markets should allocate production, but inside a framework the state builds and guards, with strong competition law, stable money and social insurance.
+        voiced: "As much competition as possible, as much planning as necessary. The state sets the rules of the game. It does not play."
+        you: You think markets should allocate production, but only within strong rules against monopoly and with social protection.
+        because: >
+          Laissez-faire destroyed itself: it let cartels and monopolies swallow competition and fed the mass
+          misery that brought fascism. Central planning destroys the price signal and the liberty of the person.
+          The answer is an economic constitution: the state guarantees real competition, stable money and
+          open markets, and cushions risks through social insurance, but it does not direct firms or set prices.
+          West Germany's postwar recovery showed this works.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Once the state designs the 'framework' it will keep adjusting it; ordoliberal competition policy has
+              grown into a permanent bureaucracy that second-guesses the market.
+          - from: marxism.classical
+            text: >
+              Competition law cannot stop the concentration competition itself produces. The 'social market' was
+              built on Marshall aid, cold war and guest workers, and its frame bends whenever capital needs it to.
+        sources:
+          - {author: Walter Eucken, title: Grundsätze der Wirtschaftspolitik, year: 1952}
+          - {author: Ludwig Erhard, title: Prosperity Through Competition, year: 1957}
+          - {author: Wilhelm Röpke, title: A Humane Economy, year: 1958}
+        traditions:
+          defining: [liberalism.ordoliberal]
+          typical: [conservatism.christian-democracy, socdem.third-way, liberalism.social, conservatism.cst]
+          contested: [socdem.nordic, liberalism.chicago]
+          rejects: [marxism.ml, libertarianism.ancap]
+        presupposes: []
+        excludes: [allocation.mechanism.central-planning]
+        tension: []
+        tags: []
+        analysis:
+          gains: [industrial-capital, professional-managerial, core-workers]
+          pays: [reserve-army]
+          mechanism: >
+            Competition law and hard money discipline both firms and unions, while social insurance stabilizes
+            core workers' consumption. In the eurozone the same rule-set constrained the deficits of southern
+            members and pushed adjustment onto their wages.
+          drain: sustains
+          law_of_value: regulates
+
+      - id: allocation.mechanism.mixed-steered
+        label: Mixed economy where the state steers investment
+        claim: Private firms and markets should run most production, but the state should steer investment, credit and strategic sectors through plans, public banks and ownership of key industries.
+        voiced: "Get the prices wrong, deliberately. The market is a good servant and a poor master; national development needs a state that picks where the country is going."
+        you: You favor a mixed economy, where markets run most things but the state steers investment and strategic industries toward national goals.
+        because: >
+          No country industrialized on free-market principles. Japan, South Korea, Taiwan, postwar France and
+          China all combined private enterprise with a state that directed credit, protected infant industries,
+          disciplined firms with export targets and planned infrastructure. Markets are good at many things, but
+          they do not build steel industries in poor countries or decarbonize energy systems on time. Managing
+          demand and steering investment keeps employment high and growth on course.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Governments are bad at picking winners and good at picking losers who lobby. For every Korean success
+              there are dozens of failed state-led programs.
+          - from: marxism.ml
+            text: >
+              Steering capital still leaves capital in command. The developmental state built national capitalists
+              who, once strong, took over the state that made them.
+        sources:
+          - {author: Chalmers Johnson, title: "MITI and the Japanese Miracle", year: 1982}
+          - {author: John Maynard Keynes, title: "The General Theory of Employment, Interest and Money", year: 1936}
+          - {author: Andrew Shonfield, title: Modern Capitalism, year: 1965}
+        traditions:
+          defining: [nationalism.developmental-state, socdem.keynesian]
+          typical: [conservatism.gaullism, socdem.nordic, nationalism.peronism, nationalism.kemalism, nationalism.three-principles, conservatism.national, socdem.labourism]
+          contested: [marxism.scc, liberalism.social, conservatism.one-nation]
+          rejects: [liberalism.austrian, libertarianism.ancap, liberalism.chicago]
+        presupposes: []
+        excludes: []
+        tension: [allocation.mechanism.free-market]
+        tags: []
+        analysis:
+          gains: [industrial-capital, core-workers, professional-managerial]
+          pays: [finance-capital]
+          mechanism: >
+            Directed credit, protection and public investment channel savings into domestic industry at low interest,
+            raising industrial profit and employment at the expense of rentier returns. In the periphery it can
+            capture more value at home; in the core it subsidizes national champions.
+          drain: softens
+          law_of_value: regulates
+          disputed: >
+            Whether developmental states in the periphery reduce the drain (dependency theorists) or only relocate
+            a country within the hierarchy (world-systems analysts) is contested.
+
+      - id: allocation.mechanism.market-socialism
+        label: Socially owned firms competing in markets
+        claim: Firms should be socially owned, by workers, the public or social funds, but should trade and compete in markets, with prices set by supply and demand.
+        voiced: "Keep the market, abolish the capitalist. Prices are a tool. It is private ownership of capital, not exchange, that makes people exploited."
+        you: You want firms to be socially owned but still compete and trade in markets.
+        because: >
+          The calculation debate taught a real lesson: an economy of millions of goods needs prices, and prices
+          need markets. But markets do not need capitalists. Socially owned firms, managed by workers or public
+          boards, can compete for customers while profits go to workers or are shared through social dividends.
+          Planning remains for investment, infrastructure and correcting market failures. This keeps the
+          information markets provide while ending private appropriation of profit.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Without private owners risking their own capital, managers play at competition. They will be bailed
+              out when they fail, so market socialism has markets without entrepreneurs.
+          - from: marxism.left-communism
+            text: >
+              Commodity production with collective owners is still commodity production, subject to the law of
+              value, competition, unemployment and crisis. Yugoslavia ended in debt to the IMF.
+        sources:
+          - {author: Alec Nove, title: The Economics of Feasible Socialism, year: 1983}
+          - {author: John E. Roemer, title: A Future for Socialism, year: 1994}
+          - {author: Oskar Lange, title: On the Economic Theory of Socialism, year: 1936}
+        traditions:
+          defining: [marxism.market-socialism]
+          typical: [marxism.analytical, socdem.democratic-socialism, anarchism.mutualist]
+          contested: [marxism.scc, socdem.nordic]
+          rejects: [liberalism.austrian, marxism.ml, marxism.left-communism, anarchism.communist]
+        presupposes: []
+        excludes: [allocation.mechanism.free-market]
+        tension: [allocation.mechanism.central-planning]
+        tags: [market-socialism]
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Social ownership turns profits into workers' income or social dividends, while competition in product
+            markets keeps price pressure on firms and regional inequality between successful and failing enterprises.
+          drain: reduces
+          law_of_value: regulates
+
+      - id: allocation.mechanism.participatory-planning
+        label: Planning from below by workers' and consumers' councils
+        claim: Production should be planned democratically from below, by councils of workers and consumers who propose, revise and agree on what to make, without either markets or a central ministry.
+        voiced: "Neither market nor central plan. Workers and consumers can plan together: each council proposes, the others respond, and the plan converges through rounds of negotiation."
+        you: You want production planned from below by councils of workers and consumers, rather than by markets or by a central ministry.
+        because: >
+          Markets decide by money and central planning by officials; neither gives people a say proportional to
+          how decisions affect them. Participatory planning lets workers' councils propose what they will produce
+          and consumers' councils what they want, revising through rounds until proposals match. Information
+          about costs and social effects circulates openly, so people decide with full knowledge. It is
+          planning that is self-management, not command.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Rounds of proposals for millions of goods would leave people in meetings forever. The market does
+              this work silently through prices.
+          - from: marxism.ml
+            text: >
+              Plans negotiated from below cannot set national priorities like electrification or defense against
+              imperialist attack. Someone must aggregate, and pretending otherwise hides where power lies.
+        sources:
+          - {author: Michael Albert and Robin Hahnel, title: The Political Economy of Participatory Economics, year: 1991}
+          - {author: Pat Devine, title: Democracy and Economic Planning, year: 1988}
+        traditions:
+          defining: []
+          typical: [anarchism.syndicalist, anarchism.communist, marxism.council-communism, anarchism.platformist, socdem.democratic-socialism, marxism.ecosocialism]
+          contested: [anarchism.communalism, marxism.trotskyism]
+          rejects: [liberalism.austrian, marxism.ml, marxism.market-socialism]
+        presupposes: []
+        excludes: [allocation.mechanism.free-market]
+        tension: [allocation.mechanism.central-planning]
+        tags: [planning]
+        analysis:
+          gains: [core-workers, peripheral-workers, reserve-army]
+          pays: [finance-capital, industrial-capital, professional-managerial]
+          mechanism: >
+            Council planning removes both owners and planning bureaucrats from control of the surplus and spreads
+            decision-making work to all producers, which also strips managers and professionals of their
+            monopoly on coordination.
+          drain: breaks
+          law_of_value: abolishes
+          consciousness: hegemonic
+
+      - id: allocation.mechanism.free-access
+        label: From each according to ability, to each according to need
+        claim: Goods should be produced by voluntary cooperation and taken freely by those who need them, without prices, wages or a planning authority.
+        voiced: "All is for all. Take from the heap what is abundant, share what is scarce, and let the communes federate for the rest."
+        you: You want an economy where people work together voluntarily and take freely what they need, without prices, wages or planners.
+        because: >
+          Wealth is the product of all human labor across generations and cannot be divided by individual
+          contribution. Measuring each person's share, whether by wages, labor vouchers or plan quotas, keeps
+          the logic of the wage. Where goods are abundant, as in most of what rich societies make, free access
+          already works: parks, libraries, roads. Federated communes can coordinate the rest by agreement.
+        against:
+          - from: marxism.classical
+            text: >
+              Distribution by need belongs to a higher phase, after production has been developed and remade.
+              Skipping straight to it under scarcity means either rationing or collapse.
+          - from: liberalism.austrian
+            text: >
+              Free goods are overused and underproduced. Without prices nobody knows what to produce, and
+              without exchange the only way to get more is to ask.
+        sources:
+          - {author: Peter Kropotkin, title: The Conquest of Bread, year: 1892}
+          - {author: Karl Marx, title: Critique of the Gotha Programme, year: 1891, note: "written 1875"}
+        traditions:
+          defining: [anarchism.communist]
+          typical: [anarchism.insurrectionary, anarchism.platformist, marxism.autonomism, anarchism.green, marxism.left-communism]
+          contested: [marxism.council-communism, zapatismo, marxism.degrowth-communism]
+          rejects: [liberalism.austrian, liberalism.chicago, marxism.market-socialism]
+        presupposes: [firm.ownership.commons-community]
+        excludes: [allocation.mechanism.free-market]
+        tension: [allocation.mechanism.central-planning]
+        tags: [anarchist]
+        analysis:
+          gains: [reserve-army, core-workers, peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, landed-capital]
+          mechanism: >
+            Free distribution removes the wage and price as gatekeepers to consumption, so need rather than income
+            sets access. Its reach depends on federated coordination of goods with large fixed capital, which has
+            not yet been demonstrated at scale.
+          drain: breaks
+          law_of_value: abolishes
+
+  # ------------------------------------------------------------------
+  - id: planning.form
+    domain: economy
+    layer: horizon
+    question: If planning, what kind?
+    plain: If an economy is to be planned, who makes the plan, how, and with what tools?
+    short: the form of planning
+    importance: 2
+    region: planning
+    positions:
+      - id: planning.form.material-balances
+        label: "Soviet-type planning: physical balances and binding targets"
+        claim: A central planning office should balance the economy in physical quantities, matching how much steel, coal and grain each sector needs and makes, and issue binding output targets through five-year plans.
+        voiced: "The plan is not a forecast but a directive. Gosplan balances every ton of steel against every tractor, and the enterprise fulfils its target."
+        you: You favor a central office that balances the economy in physical quantities and gives every enterprise binding targets.
+        because: >
+          Material balances let a poor country concentrate everything on what matters most: heavy industry,
+          power, transport and defense. The Soviet Union used them to build an industrial base in the 1930s
+          that withstood Nazi invasion, at growth rates no capitalist economy of the period matched. Binding
+          targets make priorities enforceable, and planning in physical terms avoids the speculation and
+          unemployment of price-driven economies.
+        against:
+          - from: marxism.market-socialism
+            text: >
+              Physical targets reward volume over quality and use: nails made too heavy because the plan was in
+              tons. Without prices reflecting scarcity, the system worked for building basics and stalled once the
+              economy became complex.
+          - from: marxism.trotskyism
+            text: >
+              Planning needs the democracy of producers as a body needs oxygen. Bureaucratic planning, set from above
+              and checked by no one, produced waste, privilege and finally the restoration of capitalism.
+          - from: liberalism.austrian
+            text: >
+              The planners balanced figures that enterprises falsified to meet targets. The system survived only by
+              copying world-market prices and by the second economy.
+        sources:
+          - {author: Joseph Stalin, title: Economic Problems of Socialism in the USSR, year: 1952}
+          - {author: Maurice Dobb, title: Soviet Economic Development since 1917, year: 1948}
+          - {author: Robert C. Allen, title: "Farm to Factory: A Reinterpretation of the Soviet Industrial Revolution", year: 2003}
+        traditions:
+          defining: [marxism.ml, marxism.hoxhaism]
+          typical: [marxism.juche]
+          contested: [marxism.trotskyism, marxism.maoism, marxism.scc]
+          rejects: [liberalism.austrian, marxism.market-socialism, anarchism.syndicalist, marxism.council-communism, marxism.left-communism]
+        presupposes: [allocation.mechanism.central-planning]
+        excludes: []
+        tension: [planning.form.participatory]
+        tags: [planning, ussr]
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [peasantry, finance-capital, industrial-capital]
+          mechanism: >
+            Directive planning with state monopoly of foreign trade extracts surplus from agriculture through
+            procurement prices and channels it to heavy industry, building an industrial working class and
+            planning apparatus at the peasantry's expense, as Preobrazhensky's primitive socialist accumulation
+            proposed.
+          drain: breaks
+          law_of_value: abolishes
+          disputed: >
+            Allen and many Marxist-Leninists credit planning with rapid growth; Kornai, Nove and Trotskyists attribute
+            the slowdown after the 1960s to the system itself, for different reasons. The famine of 1932-33 and its
+            relation to collectivization remain fiercely disputed.
+
+      - id: planning.form.lange-board
+        label: "Lange's model: a planning board that sets prices by trial and error"
+        claim: A central planning board should set prices for capital goods and adjust them by trial and error, raising them where there is shortage and lowering them where there is surplus, while managers follow simple rules like producing where price equals cost.
+        voiced: "The planning board can do what the market does, only better: adjust prices by trial and error until supply meets demand, without monopoly, without crises, and with income distributed justly."
+        you: You favor a planning board that sets and adjusts prices by trial and error, with managers following simple rules to produce efficiently.
+        because: >
+          Mises was right that rational allocation needs prices, but prices are only the terms on which
+          alternatives are offered. A planning board can set them, watch inventories, and raise or lower them
+          until markets clear, exactly as a competitive market does but faster and without the waste of monopoly
+          and business cycles. Consumers keep free choice, workers keep free choice of jobs, and the social
+          dividend from public capital is shared equally.
+        against:
+          - from: liberalism.austrian
+            text: >
+              A board adjusting millions of prices from Warsaw is a parody of the market. Prices in a real market
+              are set by entrepreneurs competing and risking capital, not by officials reading inventory reports.
+          - from: marxism.ml
+            text: >
+              Simulating a market reproduces its logic and abandons the purpose of planning, which is to decide
+              investment by social priority rather than by price signals.
+        sources:
+          - {author: Oskar Lange, title: On the Economic Theory of Socialism, year: 1936}
+          - {author: Abba P. Lerner, title: The Economics of Control, year: 1944}
+          - {author: Fred M. Taylor, title: The Guidance of Production in a Socialist State, year: 1929}
+        traditions:
+          defining: [marxism.market-socialism]
+          typical: [marxism.analytical]
+          contested: [socdem.democratic-socialism, marxism.scc]
+          rejects: [liberalism.austrian, marxism.ml, marxism.left-communism]
+        presupposes: [calculation.debate.lange-lerner-solved]
+        excludes: []
+        tension: [planning.form.material-balances]
+        tags: [planning, market-socialism]
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Public ownership with board-set prices hands the return on capital to the state as a social dividend
+            and puts enterprise managers and economists at the center of allocation.
+          drain: reduces
+          law_of_value: regulates
+
+      - id: planning.form.self-management
+        label: "Yugoslav self-management: workers' councils, social property, market links"
+        claim: Enterprises should be social property run by elected workers' councils, coordinating with each other through markets and negotiated agreements, while planning stays indicative.
+        voiced: "Factories to the workers! Social property belongs to no one and to everyone. The workers' council, not the ministry, manages it."
+        you: You favor enterprises run by elected workers' councils, coordinated through markets and agreements, with planning only setting broad direction.
+        because: >
+          Soviet planning turned the state into the boss of every worker. Yugoslavia broke with it in 1950 and
+          gave management to the producers themselves, who elected councils that set production, pay and
+          investment. For two decades the economy grew among the fastest in the world while workers decided
+          more than anywhere else. Self-management is the road to the withering away of the state: the economy
+          run by associated producers, not by officials.
+        against:
+          - from: marxism.ml
+            text: >
+              Self-managed firms competing on a market produced unemployment, regional inequality and export of
+              workers to West Germany, ending in IMF debt and the breakup of the country along those very inequalities.
+          - from: liberalism.chicago
+            text: >
+              Workers' councils maximize income per member, so they underinvest, hire too few and borrow to pay
+              wages. The Illyrian firm predicts the stagnation that followed.
+        sources:
+          - {author: Branko Horvat, title: The Political Economy of Socialism, year: 1982}
+          - {author: Jaroslav Vanek, title: The General Theory of Labor-Managed Market Economies, year: 1970}
+          - {author: Benjamin Ward, title: "The Firm in Illyria: Market Syndicalism", year: 1958}
+        traditions:
+          defining: []
+          typical: [marxism.market-socialism]
+          contested: [anarchism.syndicalist, socdem.democratic-socialism, marxism.trotskyism]
+          rejects: [marxism.ml, marxism.hoxhaism, liberalism.chicago, marxism.left-communism]
+        presupposes: [firm.ownership.worker-cooperatives]
+        excludes: []
+        tension: [planning.form.material-balances]
+        tags: [planning, yugoslavia]
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [reserve-army]
+          mechanism: >
+            Council control kept enterprise income with each firm's workforce, so workers in profitable firms and
+            regions gained while the unemployed and workers in poorer republics fell behind. Foreign borrowing
+            in the 1970s tied the system to Western creditors.
+          drain: softens
+          law_of_value: regulates
+          disputed: >
+            Some Marxists see self-management undone by market reforms after 1965 and IMF austerity in the 1980s;
+            others see its market structure as the cause of both.
+
+      - id: planning.form.participatory
+        label: "Participatory planning: councils negotiate the plan in rounds"
+        claim: Workers' and consumers' councils should build the plan themselves through rounds of proposals and revisions, with facilitators but no central authority, and with jobs balanced so no one only gives orders.
+        voiced: "Balanced job complexes, remuneration for effort and sacrifice, self-managed councils, participatory planning. No class of coordinators above the workers."
+        you: You want workers' and consumers' councils to build the plan through rounds of proposals, with jobs designed so nobody becomes a permanent order-giver.
+        because: >
+          The Soviet Union removed capitalists but put coordinators, the managers and planners, in their place.
+          A classless economy must also break the monopoly on empowering work: everyone does a share of both
+          tedious and decision-making tasks. Councils propose what they will produce and consume, a facilitation
+          board publishes revised indicative prices, and the councils revise until proposals balance. In Devine's
+          variant, negotiated coordination bodies of producers, users and affected communities decide investment.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Iterating plans across millions of goods asks the impossible of everyone's time and still lacks the
+              entrepreneurial discovery that markets provide.
+          - from: marxism.ml
+            text: >
+              Balanced job complexes waste skill in a world where countries must catch up and defend themselves.
+              The model is designed for a seminar room, not for a revolution under siege.
+        sources:
+          - {author: Michael Albert and Robin Hahnel, title: The Political Economy of Participatory Economics, year: 1991}
+          - {author: Michael Albert, title: "Parecon: Life After Capitalism", year: 2003}
+          - {author: Pat Devine, title: Democracy and Economic Planning, year: 1988}
+        traditions:
+          defining: []
+          typical: [anarchism.syndicalist, anarchism.communist, anarchism.platformist]
+          contested: [socdem.democratic-socialism, marxism.council-communism, marxism.ecosocialism]
+          rejects: [marxism.ml, liberalism.austrian]
+        presupposes: [allocation.mechanism.participatory-planning]
+        excludes: []
+        tension: [planning.form.material-balances]
+        tags: [planning]
+        analysis:
+          gains: [core-workers, reserve-army]
+          pays: [professional-managerial, finance-capital, industrial-capital]
+          mechanism: >
+            Rotating empowering tasks and paying by effort removes the income and authority premium of managers
+            and professionals as well as owners, distributing coordination work across all workers.
+          drain: breaks
+          law_of_value: abolishes
+
+      - id: planning.form.cybernetic
+        label: "Cybernetic planning: computers, real-time data and labor-time accounts"
+        claim: Planning should use computers, real-time data and feedback to coordinate the economy, calculating in labor time or physical quantities, with democratic votes setting the overall priorities.
+        voiced: "Walmart and Amazon already plan economies bigger than most countries. Cybersyn ran Chile's factories through telex in 1972. With modern computing, planning in labor time is a solvable problem."
+        you: You think modern computers and real-time data make it possible to plan a whole economy efficiently, with people voting on the overall priorities.
+        because: >
+          The old objection was that no planner could solve millions of equations. Today's computers solve
+          input-output systems of that size in minutes, and giant firms already plan internally without prices.
+          Chile's Cybersyn showed in 1972 how factories could report data daily and coordinate during a strike.
+          Calculating in labor time makes costs transparent, and votes set priorities, so planning becomes both
+          efficient and accountable. The Soviet failure was one of computing and politics, not of planning.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Computing power does not solve the knowledge problem. The data that matter, tacit skills, new
+              products, changing tastes, do not exist until markets discover them.
+          - from: anarchism.communist
+            text: >
+              A planning computer is still a center. Whoever writes the algorithms and owns the servers holds the
+              power that the ministry held before.
+        sources:
+          - {author: W. Paul Cockshott and Allin Cottrell, title: Towards a New Socialism, year: 1993}
+          - {author: Stafford Beer, title: Brain of the Firm, year: 1972}
+          - {author: Eden Medina, title: "Cybernetic Revolutionaries: Technology and Politics in Allende's Chile", year: 2011}
+          - {author: Leigh Phillips and Michal Rozworski, title: The People's Republic of Walmart, year: 2019}
+        traditions:
+          defining: []
+          typical: [technology.l-acc, marxism.ml, marxism.trotskyism]
+          contested: [socdem.democratic-socialism, marxism.council-communism, technology.technocracy]
+          rejects: [liberalism.austrian, anarchism.green]
+        presupposes: [calculation.debate.computational]
+        excludes: []
+        tension: []
+        tags: [planning, cybernetics]
+        analysis:
+          gains: [core-workers, professional-managerial, reserve-army]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Computational planning replaces price competition with data-driven allocation, removing profit as the
+            signal, and raises the importance of the engineers and data specialists who design the system.
+          drain: breaks
+          law_of_value: abolishes
+          disputed: >
+            Cockshott and Cottrell treat labor-time accounting as the core; others (Phillips and Rozworski)
+            emphasize firm-internal planning; council communists ask who controls the computers.
+
+      - id: planning.form.labor-time-councils
+        label: "Council communism: labor-time accounting run by producers, no central plan"
+        claim: Each workplace should keep its own accounts in hours of labor, and associated producers should coordinate through public bookkeeping, with no central planning authority and no state owner.
+        voiced: "The producers must themselves fix the relation of producer to product. Average social labor time is the measure; public bookkeeping, not a central bureau, is the coordinator."
+        you: You want each workplace to keep its own accounts in labor hours and coordinate openly with others, with no central planning office above them.
+        because: >
+          State planning in Russia turned 'socialization' into nationalization, and workers remained wage earners
+          of a new master. If labor time is the unit of account, every workplace can calculate its inputs and
+          output itself, and public bookkeeping can link them without an authority over them. Distribution by
+          labor hours in the first phase ends the wage, and collective consumption grows until it covers most
+          needs. Control stays with workers' councils.
+        against:
+          - from: marxism.ml
+            text: >
+              Workplaces with their own accounts and no central plan are enterprises in all but name. Coordination
+              of investment across an economy requires a center.
+          - from: anarchism.communist
+            text: >
+              Labor-time vouchers keep measuring each person's contribution, which is the wage system with new
+              paper. Distribution must follow need.
+        sources:
+          - {author: Group of International Communists (GIK), title: Fundamental Principles of Communist Production and Distribution, year: 1930}
+          - {author: Karl Marx, title: Critique of the Gotha Programme, year: 1891, note: "written 1875"}
+          - {author: Anton Pannekoek, title: Workers' Councils, year: 1946}
+        traditions:
+          defining: [marxism.council-communism]
+          typical: [marxism.luxemburgism, marxism.autonomism]
+          contested: [marxism.left-communism, anarchism.syndicalist]
+          rejects: [marxism.ml, marxism.market-socialism]
+        presupposes: []
+        excludes: []
+        tension: [planning.form.material-balances, planning.form.cybernetic]
+        tags: [planning, council-communism]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [professional-managerial, finance-capital, industrial-capital]
+          mechanism: >
+            Labor-hour accounting under council control ends both private profit and appropriation by a planning
+            bureaucracy, tying consumption claims directly to work done.
+          drain: breaks
+          law_of_value: abolishes
+
+      - id: planning.form.mass-line
+        label: "Maoist planning: decentralized, mass line, politics in command"
+        claim: Planning should combine central direction with local initiative, mobilize workers and peasants to take part in management, and keep politics in command over technical experts and material incentives.
+        voiced: "Walk on two legs. Cadres take part in labor, workers take part in management. Put politics in command, not bonuses and experts."
+        you: You favor planning that relies on local initiative and the mass participation of workers and peasants, keeping politics ahead of experts and bonuses.
+        because: >
+          The Soviet model created a privileged stratum of managers and experts and starved the countryside to
+          build heavy industry. China's path balanced industry and agriculture, central and local, large and
+          small enterprises, and drew workers into management through the Anshan Constitution. Planning that
+          relies on bonuses and experts restores capitalist relations inside the plan; planning that mobilizes
+          the masses transforms the relations of production themselves.
+        against:
+          - from: marxism.ml
+            text: >
+              Voluntarism replaced calculation. The Great Leap Forward's backyard furnaces and inflated targets
+              produced famine, and the Cultural Revolution disrupted production for a decade.
+          - from: marxism.scc
+            text: >
+              Class struggle as the key link held back the productive forces. Reform after 1978 lifted hundreds of
+              millions from poverty that politics in command could not.
+        sources:
+          - {author: Mao Zedong, title: On the Ten Major Relationships, year: 1976, note: "speech of 1956"}
+          - {author: Mao Zedong, title: A Critique of Soviet Economics, year: 1977, note: "reading notes from 1958-61, English translation"}
+          - {author: Charles Bettelheim, title: Cultural Revolution and Industrial Organization in China, year: 1973}
+        traditions:
+          defining: [marxism.maoism, marxism.mlm]
+          typical: []
+          contested: [marxism.scc, marxism.third-worldism]
+          rejects: [marxism.ml, marxism.hoxhaism, liberalism.chicago, marxism.market-socialism]
+        presupposes: [allocation.mechanism.central-planning]
+        excludes: []
+        tension: [planning.form.material-balances]
+        tags: [planning, china]
+        analysis:
+          gains: [peasantry, core-workers]
+          pays: [professional-managerial, finance-capital, industrial-capital]
+          mechanism: >
+            Decentralized industry and worker participation in management direct investment to rural and local
+            needs and cut the authority and income premium of managers and technical staff. Mass mobilization
+            can also override costs and local knowledge, as the Great Leap Forward did.
+          drain: breaks
+          law_of_value: abolishes
+          disputed: >
+            Assessments of the Great Leap Forward famine's scale and causes and of the Cultural Revolution's
+            economic effects divide Maoists, Chinese reform-era historians and Western scholars sharply.
+
+      - id: planning.form.indicative
+        label: Indicative and strategic planning within a market economy
+        claim: The state should plan the direction of a market economy, setting targets for key sectors, coordinating investment and directing credit, but without commanding individual firms.
+        voiced: "The plan is a compass, not a command. It tells industry where the nation is going and makes sure the money and the infrastructure are there when it arrives."
+        you: You favor a state that sets national goals and steers investment through a plan, while firms stay independent and compete.
+        because: >
+          Markets are short-sighted and fragmented; no single firm builds a rail network, an electricity grid or
+          a semiconductor industry. France's Commissariat du Plan, Japan's MITI, Korea's five-year plans and
+          China's current plans brought business, unions and ministries together around shared targets and
+          backed them with public credit. This captures the coordination benefits of planning without the
+          rigidities of command.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Indicative plans either restate what firms would do anyway or tempt the state to subsidize favorites.
+              Japan's later stagnation shows the costs of guided capitalism.
+          - from: marxism.ml
+            text: >
+              A plan that cannot command property owners is a forecast. When profits and targets diverge, capital
+              wins and the plan is rewritten.
+        sources:
+          - {author: Andrew Shonfield, title: Modern Capitalism, year: 1965}
+          - {author: Chalmers Johnson, title: "MITI and the Japanese Miracle", year: 1982}
+        traditions:
+          defining: [nationalism.developmental-state, conservatism.gaullism]
+          typical: [socdem.keynesian, marxism.scc, socdem.nordic, nationalism.kemalism, conservatism.national]
+          contested: [liberalism.social, liberalism.ordoliberal]
+          rejects: [liberalism.austrian, liberalism.chicago, marxism.left-communism]
+        presupposes: [allocation.mechanism.mixed-steered]
+        excludes: []
+        tension: []
+        tags: [planning]
+        analysis:
+          gains: [industrial-capital, professional-managerial, core-workers]
+          pays: [finance-capital]
+          mechanism: >
+            Plans backed by public credit lower the cost of capital for favored industries and coordinate
+            investment, raising industrial profits and employment; profit remains the motive of the firms it steers.
+          drain: softens
+          law_of_value: regulates
+          disputed: >
+            Whether China's present plans are indicative planning in a capitalist economy or the steering of a
+            socialist market economy is disputed among Marxists.
+
+  # ------------------------------------------------------------------
+  - id: calculation.debate
+    domain: economy
+    layer: analysis
+    question: Can a planned economy calculate rationally?
+    plain: Without market prices, can planners know what things are worth and what to make?
+    short: the calculation debate
+    importance: 2
+    region: planning
+    positions:
+      - id: calculation.debate.mises-impossible
+        label: "Mises: without markets for capital goods, no rational calculation"
+        claim: Socialism cannot calculate. Without private ownership of means of production there are no market prices for factories, machines and raw materials, so planners cannot tell which uses are economical and which are waste.
+        voiced: "Where there is no free market, there is no pricing mechanism; without a pricing mechanism, there is no economic calculation. Socialism is the abolition of rational economy."
+        you: You think a socialist economy cannot calculate rationally, because without private ownership there are no real prices for machines, factories and materials.
+        because: >
+          Consumer goods can be valued directly, but production goods enter countless processes. Is it better to
+          build a railway with steel or concrete, here or there? Only money prices formed by owners bidding for
+          capital goods express their relative scarcity in one unit. Abolish private ownership of the means of
+          production and those prices vanish. Planners are then groping in the dark, and the more complex the
+          economy, the darker. This is a problem of logic, not of motivation.
+        against:
+          - from: marxism.market-socialism
+            text: >
+              Prices are terms on which alternatives are offered, and a planning board can set and adjust them.
+              Lange showed that the problem Mises posed has a solution in principle.
+          - from: marxism.ml
+            text: >
+              Planned economies did calculate, built industry and won a war. Mises proved that socialism cannot
+              mimic capitalism, not that it cannot produce.
+        sources:
+          - {author: Ludwig von Mises, title: Economic Calculation in the Socialist Commonwealth, year: 1920}
+          - {author: Ludwig von Mises, title: Socialism, year: 1922}
+        traditions:
+          defining: [liberalism.austrian]
+          typical: [libertarianism.ancap, libertarianism.paleo, libertarianism.minarchist]
+          contested: [liberalism.chicago, liberalism.classical]
+          rejects: [marxism.market-socialism, marxism.ml, marxism.council-communism]
+        presupposes: [value.source.subjective-utility]
+        excludes: [calculation.debate.lange-lerner-solved, calculation.debate.computational, calculation.debate.in-kind]
+        tension: []
+        tags: [calculation]
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            Declaring planning logically impossible puts private ownership of capital beyond debate and protects
+            capital markets as the only legitimate allocator of investment.
+          drain: sustains
+          law_of_value: extends
+          disputed: >
+            Some Marxists accept Mises' point against market-mimicking socialism while rejecting it against calculation
+            in kind or labor time (Cockshott, Cottrell); others hold that the Soviet record refutes it outright.
+
+      - id: calculation.debate.hayek-knowledge
+        label: "Hayek: the knowledge a plan needs exists only in markets"
+        claim: The deeper problem is knowledge. What a planner would need is scattered, local and often unspoken, and it comes into being through competition. No planning board, however well equipped, could gather it.
+        voiced: "The knowledge of the circumstances of which we must make use never exists in concentrated or integrated form, but solely as the dispersed bits of incomplete and frequently contradictory knowledge which all the separate individuals possess."
+        you: You think the knowledge needed to run an economy is spread among millions of people and only comes out through market competition, so no planner could ever gather it.
+        because: >
+          Lange's equations assume the data are given. They never are. The knowledge of particular time and place,
+          that this ship has spare space, that this machine runs better at night, is held by individuals and
+          often cannot be articulated. Competition is a discovery procedure: rivals try different things and
+          prices register which worked. A planning board setting prices by trial and error has no rivalry, no
+          discovery and no one risking their own capital to find out.
+        against:
+          - from: marxism.market-socialism
+            text: >
+              Large capitalist firms are planned internally without market prices, and they handle huge volumes of
+              local knowledge through information systems and delegation. The knowledge argument proves too much.
+          - from: marxism.ml
+            text: >
+              Hayek's market discovers what is profitable, not what is needed. It discovered mass unemployment in
+              1930 and the subprime mortgage in 2006.
+        sources:
+          - {author: Friedrich A. Hayek, title: The Use of Knowledge in Society, year: 1945}
+          - {author: Friedrich A. Hayek, title: "Socialist Calculation: The Competitive 'Solution'", year: 1940}
+          - {author: Don Lavoie, title: "Rivalry and Central Planning: The Socialist Calculation Debate Reconsidered", year: 1985}
+        traditions:
+          defining: [liberalism.austrian]
+          typical: [liberalism.chicago, liberalism.classical, libertarianism.minarchist, conservatism.fusionism, liberalism.ordoliberal]
+          contested: [liberalism.technocratic]
+          rejects: [marxism.ml, marxism.market-socialism]
+        presupposes: []
+        excludes: [calculation.debate.computational]
+        tension: []
+        tags: [calculation]
+        analysis:
+          gains: [finance-capital, industrial-capital, petty-bourgeoisie]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            The knowledge argument treats any limit on market competition as a loss of social information, which
+            makes regulation and public ownership presumptively harmful and leaves allocation of capital to owners.
+          drain: sustains
+          law_of_value: extends
+
+      - id: calculation.debate.lange-lerner-solved
+        label: "Lange and Lerner: market socialism solves the problem"
+        claim: The calculation problem has a solution. A socialist planning board can set prices and adjust them by trial and error, and managers following simple rules will allocate resources as efficiently as competition, or better.
+        voiced: "Professor Mises deserves a statue in the Central Planning Board, for he made socialists see that rational accounting is indispensable. Socialism can do it."
+        you: You think a socialist planning board can set prices by trial and error and allocate resources as well as a competitive market.
+        because: >
+          Barone showed in 1908 that a ministry of production could in principle solve the same equations as
+          a market. Lange added that it need not solve them on paper: start with any prices, watch for shortages
+          and surpluses, and adjust, as the market itself does. Lerner's rule, produce where price equals
+          marginal cost, guides managers. Because the board can account for social costs and avoid monopoly
+          and slumps, it can reach a better outcome than capitalism.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Lange assumed away the problem: given data, given products, given techniques. In a changing economy the
+              board's prices are always stale, and no manager has any reason to follow the rules.
+          - from: marxism.ml
+            text: >
+              Lange's model reduces socialism to a better-managed market. It answers Mises on his own terms and gives
+              up the point of planning, which is to decide investment by social priority.
+        sources:
+          - {author: Oskar Lange, title: On the Economic Theory of Socialism, year: 1936}
+          - {author: Abba P. Lerner, title: The Economics of Control, year: 1944}
+          - {author: Enrico Barone, title: The Ministry of Production in the Collectivist State, year: 1908}
+        traditions:
+          defining: [marxism.market-socialism]
+          typical: [marxism.analytical]
+          contested: [socdem.democratic-socialism]
+          rejects: [liberalism.austrian, marxism.ml]
+        presupposes: []
+        excludes: [calculation.debate.mises-impossible]
+        tension: [calculation.debate.dobb-ex-ante]
+        tags: [calculation]
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Demonstrating that allocation without private capital is possible removes the main argument for
+            capitalist ownership, while assigning allocation to economists and enterprise managers.
+          drain: reduces
+          law_of_value: regulates
+
+      - id: calculation.debate.dobb-ex-ante
+        label: "Dobb: planning's advantage is deciding investment in advance"
+        claim: The debate was framed wrongly. Planning is not about copying static market prices but about coordinating investment in advance, which markets cannot do, and setting priorities that consumers' spending would never set.
+        voiced: "The essence of a planned economy is that it unifies the major decisions of investment, which under capitalism are scattered and made blind. That is its superiority, not a defect to be corrected by mimicking the market."
+        you: You think planning's real strength is coordinating investment in advance and setting social priorities, so imitating market prices misses the point.
+        because: >
+          Market prices reflect today's supply and demand, but investment shapes tomorrow's, and in a market each
+          firm invests not knowing what its rivals will do. The result is overinvestment, crisis and waste.
+          A plan resolves this uncertainty by deciding investment for the whole economy at once. It can also
+          set priorities, like industrialization or full employment, that the sum of consumer purchases never
+          would. Efficiency in growth matters more than static efficiency in allocation.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Removing uncertainty by decree does not remove it from reality. Plans commit huge resources to one
+              guess, and when the guess is wrong there is no competing guess to fall back on.
+          - from: marxism.market-socialism
+            text: >
+              Ignoring consumer choice gave Soviet citizens queues and shoddy goods. Planning investment does not
+              require overriding what people want to consume.
+        sources:
+          - {author: Maurice Dobb, title: Economic Theory and the Problems of a Socialist Economy, year: 1933}
+          - {author: Maurice Dobb, title: Political Economy and Capitalism, year: 1937}
+          - {author: Paul M. Sweezy, title: Socialism, year: 1949}
+        traditions:
+          defining: []
+          typical: [marxism.ml, marxism.classical, marxism.trotskyism, marxism.maoism, marxism.third-worldism]
+          contested: [marxism.market-socialism]
+          rejects: [liberalism.austrian]
+        presupposes: [allocation.mechanism.central-planning]
+        excludes: [calculation.debate.mises-impossible]
+        tension: [calculation.debate.lange-lerner-solved]
+        tags: [calculation]
+        analysis:
+          gains: [core-workers, peasantry]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Treating investment as a social decision removes capital markets' role in allocating savings, so the
+            surplus is directed by planners toward priorities such as industrialization rather than to the highest return.
+          drain: breaks
+          law_of_value: abolishes
+
+      - id: calculation.debate.computational
+        label: Modern computing answers the calculation problem
+        claim: The debate has been overtaken by technology. With modern computers, data networks and optimization methods, an economy can be planned in labor time or physical quantities with feedback from consumers.
+        voiced: "Kantorovich solved optimal planning with linear programming in 1939. Today the supercomputer in your pocket outperforms the whole of Gosplan's punch cards. The calculation debate is a computing problem, and it is solved."
+        you: You think modern computers and data have answered the old objection that planning can't calculate.
+        because: >
+          The calculation problem has two parts. Mises' part, the need for a common unit, is met by labor time
+          or by shadow prices from optimization, as Kantorovich showed. Hayek's part, the dispersed knowledge, is
+          met by networks that gather sales and inventory data in real time, as retailers and logistics firms
+          already do. The algorithms to solve input-output systems with millions of products run in minutes.
+          What remains is a political question: who sets the goals.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Faster computers process data faster; they do not create the data. Knowledge of what new products to
+              make or which methods will work arises only from entrepreneurial competition.
+          - from: anarchism.communist
+            text: >
+              Answering the question with computers makes planning a matter for programmers. The question is who
+              decides, and data centers do not answer it.
+        sources:
+          - {author: W. Paul Cockshott and Allin Cottrell, title: Towards a New Socialism, year: 1993}
+          - {author: Leonid Kantorovich, title: The Best Use of Economic Resources, year: 1959}
+          - {author: Oskar Lange, title: The Computer and the Market, year: 1967}
+          - {author: Leigh Phillips and Michal Rozworski, title: The People's Republic of Walmart, year: 2019}
+        traditions:
+          defining: []
+          typical: [technology.l-acc, marxism.ml, marxism.trotskyism]
+          contested: [socdem.democratic-socialism, marxism.council-communism]
+          rejects: [liberalism.austrian]
+        presupposes: []
+        excludes: [calculation.debate.mises-impossible, calculation.debate.hayek-knowledge]
+        tension: []
+        tags: [calculation, cybernetics]
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            If planning is computationally feasible, the efficiency case for private capital markets falls, and
+            allocation passes to public bodies whose software and data infrastructure become a new site of power.
+          drain: breaks
+          law_of_value: abolishes
+
+      - id: calculation.debate.in-kind
+        label: "Neurath: calculate in kind, not in a single unit"
+        claim: A socialist economy should calculate directly in physical quantities and human needs, weighing several kinds of cost and benefit side by side, instead of reducing everything to one unit like money or labor time.
+        voiced: "There is no single measure of welfare. Coal, forests, health and leisure must be weighed against each other in kind. Money calculation hides that choice; the plan makes it openly."
+        you: You think a planned economy should weigh things directly, in physical amounts and effects on people and nature, instead of reducing everything to one number like money.
+        because: >
+          Money pricing collapses incommensurable things into one figure: a forest becomes so much timber value,
+          a life so much lost output. That makes choices look technical when they are political. Calculation in
+          kind sets out the physical options, the energy, materials, hours and ecological effects of each, and
+          lets people decide openly among them. War economies did exactly this in 1914-18. In a world of
+          ecological limits it is more necessary than ever.
+        against:
+          - from: liberalism.austrian
+            text: >
+              This is what Mises answered in 1920. Without a common unit, choosing between thousands of methods with
+              dozens of incommensurable criteria is impossible, and in practice someone's preference decides.
+          - from: marxism.ml
+            text: >
+              Labor time is the common measure that Marx proposed. Refusing any unit leaves the plan without a way to
+              compare costs across sectors.
+        sources:
+          - {author: Otto Neurath, title: Durch die Kriegswirtschaft zur Naturalwirtschaft, year: 1919}
+          - {author: Kohei Saito, title: "Marx in the Anthropocene: Towards the Idea of Degrowth Communism", year: 2023}
+        traditions:
+          defining: []
+          typical: [marxism.ecosocialism, marxism.degrowth-communism, ecology.degrowth, marxism.austromarxism]
+          contested: [marxism.left-communism, anarchism.communist]
+          rejects: [liberalism.austrian, marxism.market-socialism]
+        presupposes: []
+        excludes: [calculation.debate.mises-impossible]
+        tension: [calculation.debate.computational]
+        tags: [calculation, ecology]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Calculating in kind removes the money valuation by which cheap peripheral land, labor and ecological
+            damage enter core accounts at low prices, making those costs visible to the plan.
+          drain: reduces
+          law_of_value: abolishes
+
+      - id: calculation.debate.kornai-incentives
+        label: "Kornai: the problem was incentives and soft budgets, not computation"
+        claim: Planned economies failed less from lack of information than from their incentives. State firms that could never go bankrupt hoarded resources and produced chronic shortage, whatever the planners knew.
+        voiced: "Classical socialism is a shortage economy. The firm knows the state will rescue it, so it hoards, overbids and never fears loss. That is the soft budget constraint, and no computer cures it."
+        you: You think planned economies failed because firms could never go bust and so hoarded and wasted, not because planners lacked information.
+        because: >
+          In the socialist economies of Eastern Europe, enterprise managers bargained with ministries rather than
+          competing for customers. Losses were covered, so firms demanded ever more inputs and labor, and
+          shortage became chronic. Reform with prices and markets did not fix this as long as the state stood
+          behind every firm. The cause lay in ownership and the political system together: a single party-state
+          cannot let its own firms fail.
+        against:
+          - from: marxism.ml
+            text: >
+              Soft budgets afflict every large capitalist bank and car maker, rescued in every crisis. Shortage in
+              the East coexisted with full employment; capitalism has unemployment instead.
+          - from: liberalism.austrian
+            text: >
+              Kornai describes symptoms of the deeper calculation problem. Incentives cannot be fixed without
+              private owners whose own capital is at stake.
+        sources:
+          - {author: János Kornai, title: Economics of Shortage, year: 1980}
+          - {author: János Kornai, title: The Socialist System, year: 1992}
+        traditions:
+          defining: []
+          typical: [liberalism.technocratic, liberalism.ordoliberal]
+          contested: [marxism.market-socialism, liberalism.chicago]
+          rejects: [marxism.ml, marxism.hoxhaism]
+        presupposes: []
+        excludes: []
+        tension: [calculation.debate.computational]
+        tags: [calculation]
+        analysis:
+          gains: [finance-capital, professional-managerial]
+          pays: [core-workers]
+          mechanism: >
+            Identifying the soft budget constraint as the core flaw supports hard budgets and bankruptcy, which in
+            the 1990s transitions meant closing state firms and the loss of guaranteed employment.
+          drain: none
+          law_of_value: extends
+          disputed: >
+            Some Marxists accept the soft-budget diagnosis as a description of bureaucratic planning while denying
+            it applies to democratic planning; Marxist-Leninists reject it as a reading of the record.

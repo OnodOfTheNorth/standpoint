@@ -1,0 +1,1413 @@
+# History, part 1: the French, Haitian, Russian, Chinese and Cuban revolutions.
+# Continued in history-b.yaml (Vietnam, Iran, the USSR by period), history-c.yaml (China by
+# period, Yugoslavia, DPRK, Chile), history-d.yaml (Sankara, Venezuela, Rojava, Zapatistas,
+# Nordic model, New Deal), history-e.yaml (decolonization, 1989-91, neoliberal turn, WW2)
+# and history-f.yaml (Partition, Nakba, Indonesia 1965, the Cold War).
+problematics:
+  # ------------------------------------------------------------------
+  - id: hist.french-revolution
+    domain: history
+    layer: analysis
+    question: What was the French Revolution of 1789–1799?
+    plain: >-
+      The French overthrew their king, abolished noble privilege, seized Church land, executed thousands
+      in the Terror, and ended up under Napoleon. What was it, really?
+    short: the French Revolution
+    importance: 2
+    region: history
+    positions:
+      - id: hist.french-revolution.bourgeois-revolution
+        label: A bourgeois revolution that broke feudal property
+        claim: >-
+          A rising class of merchants, lawyers and proprietors, carried forward by peasant risings and the
+          Paris crowd, destroyed seigneurial dues and noble privilege and cleared the ground for capitalist property.
+        voiced: >-
+          "The Revolution was the crowning of a long economic and social evolution that made the bourgeoisie
+          master of the world. The peasants burned the manor rolls; the bourgeoisie collected the estate."
+        you: You see 1789 as one class overthrowing another, with the peasants and the poor doing much of the fighting.
+        because: >-
+          The night of 4 August 1789 and the abolition of remaining seigneurial dues without compensation in July 1793
+          ended feudal property in law. Church and émigré lands were sold off, internal tolls and guilds abolished, and
+          the Le Chapelier law of 1791 banned workers' combinations: a program of unrestricted bourgeois property.
+          Each leap forward came when the peasants or the Paris sections forced it, which is how class revolutions move.
+        against:
+          - from: liberalism.classical
+            text: >-
+              The men of 1789 were lawyers and office-holders, not industrialists, and French capitalism grew slowly for
+              decades afterwards. There was no rising capitalist class taking power, only a political crisis of the monarchy
+              (Cobban, Furet).
+          - from: conservatism.burkean
+            text: >-
+              Reducing a convulsion of ideas, faith and ambition to class interest explains everything and therefore nothing.
+        sources:
+          - {author: Georges Lefebvre, title: "Quatre-vingt-neuf (The Coming of the French Revolution)", year: 1939}
+          - {author: Albert Soboul, title: "Précis d'histoire de la Révolution française", year: 1962}
+          - {author: Eric Hobsbawm, title: "The Age of Revolution: Europe 1789–1848", year: 1962}
+          - {author: Alfred Cobban, title: "The Social Interpretation of the French Revolution", year: 1964, note: the main critique}
+        traditions:
+          defining: [marxism.classical, marxism.ml]
+          typical: [marxism.leninism, marxism.trotskyism, marxism.maoism, marxism.gramscian]
+          rejects: [liberalism.classical, conservatism.burkean, conservatism.reactionary]
+        presupposes: [history.motor.class-struggle]
+        excludes: [hist.french-revolution.ideas-to-terror]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, landed-capital]
+          mechanism: >-
+            Reading 1789 as one class overthrowing another makes present property relations a historical product that can
+            be overthrown in turn, which hands workers' and peasants' movements a precedent and denies owners the claim that
+            their order is natural.
+          drain: none
+          law_of_value: none
+          disputed: >-
+            Political Marxists (Comninel) accept that 1789 was not made by capitalists while keeping a class analysis;
+            Soboul's school holds the classic thesis.
+      - id: hist.french-revolution.rights-of-man
+        label: The birth of the rights of man and popular sovereignty
+        claim: >-
+          The revolution's lasting meaning is the Declaration of 1789, which made citizens equal before the law, placed rights
+          before rulers and sovereignty in the nation. The Terror betrayed it; it did not follow from it.
+        voiced: >-
+          "Men are born and remain free and equal in rights. Every government since that cannot say this
+          sentence aloud has been judged by it."
+        you: You see the French Revolution as the moment equal rights and government by consent entered the world.
+        because: >-
+          Before 1789 law differed by estate, province and creed; afterwards Protestants and Jews were citizens, torture was
+          abolished, and the principle that power must answer to the governed became the common language of every later
+          movement, including the ones that attack liberalism. Paine answered Burke that no generation owns the next.
+          Separating the rights from the Terror is not wishful thinking; the Terror ended when the Convention reasserted them.
+        against:
+          - from: marxism.classical
+            text: >-
+              The rights of man are the rights of the property-owner: liberty to buy and sell, equality before a law that guards
+              estates. The same assembly banned unions and kept slavery in the colonies until the enslaved forced its hand.
+          - from: nationalism.decolonial
+            text: >-
+              "Man" meant the European citizen. The universal was declared in Paris and refused in Saint-Domingue.
+        sources:
+          - {author: Thomas Paine, title: "Rights of Man", year: 1791}
+          - {author: Lynn Hunt, title: "Inventing Human Rights: A History", year: 2007}
+          - {author: Jonathan Israel, title: "Revolutionary Ideas: An Intellectual History of the French Revolution", year: 2014}
+        traditions:
+          defining: [liberalism.republican, nationalism.civic]
+          typical: [liberalism.social, liberalism.classical, liberalism.progressive, socdem.democratic-socialism]
+          rejects: [conservatism.reactionary, conservatism.integralism]
+        tension: [hist.french-revolution.colonial-limit]
+        analysis:
+          gains: [professional-managerial, petty-bourgeoisie, core-workers]
+          pays: [peripheral-workers]
+          mechanism: >-
+            The reading makes the constitutional nation of equal citizens the measure of progress. Citizens of the core gain civil
+            rights and a civic creed; because the rights attach to citizenship and leave property untouched, owners keep their estates
+            and non-citizens, from the colonized then to migrant workers now, stay outside the circle.
+          drain: softens
+          law_of_value: extends
+      - id: hist.french-revolution.ideas-to-terror
+        label: A revolution of abstract ideas whose logic produced the Terror
+        claim: >-
+          The revolution ran on a new political culture in which the nation's single will admitted no legitimate opposition.
+          That logic, more than war or class, produced the Terror and prefigured the revolutions of the twentieth century.
+        voiced: >-
+          "The Revolution is over, and its passion with it. What it left us is the dream that politics can remake man,
+          and the guillotine that dream required."
+        you: You think the revolution's ideas, not its enemies, drove it to mass killing.
+        because: >-
+          The Terror peaked in summer 1794, after the foreign invasions had been thrown back, which is hard to square with the
+          claim that it was only self-defense. Revolutionary discourse treated dissent as treason against the people's will, and
+          that discourse, not a class, set the pace. Furet showed that the Jacobin claim to embody the people foreshadowed the
+          Bolshevik claim to embody the proletariat.
+        against:
+          - from: marxism.ml
+            text: >-
+              The Terror was organized by a besieged republic facing five foreign armies, the Vendée revolt, federalist risings and a
+              collapsing currency. Treating ideas as the cause erases the counter-revolution (Mayer, Soboul).
+          - from: liberalism.republican
+            text: >-
+              The same discourse produced the Declaration of Rights and universal male suffrage. Tracing everything bad to it and
+              nothing good is selective.
+        sources:
+          - {author: François Furet, title: "Penser la Révolution française (Interpreting the French Revolution)", year: 1978}
+          - {author: J. L. Talmon, title: "The Origins of Totalitarian Democracy", year: 1952}
+          - {author: Arno J. Mayer, title: "The Furies: Violence and Terror in the French and Russian Revolutions", year: 2000, note: the main reply}
+        traditions:
+          defining: [liberalism.classical]
+          typical: [conservatism.neo, liberalism.austrian, conservatism.fusionism]
+          rejects: [marxism.ml, marxism.classical]
+        presupposes: [history.motor.ideas]
+        excludes: [hist.french-revolution.bourgeois-revolution]
+        analysis:
+          gains: [finance-capital, industrial-capital, landed-capital]
+          pays: [core-workers, peripheral-workers, peasantry]
+          mechanism: >-
+            Tracing the Terror to the idea of popular sovereignty rather than to war and counter-revolution teaches that any attempt
+            to reorder property ends in terror, which protects present owners against every later revolution, anti-colonial ones included.
+          drain: sustains
+          law_of_value: none
+          method: idealist
+      - id: hist.french-revolution.burkean-catastrophe
+        label: A catastrophe of abstract reason against inherited order
+        claim: >-
+          Men who tore down inherited institutions in the name of abstract rights destroyed the restraints that protected
+          ordinary life, and got anarchy, terror, war across Europe and finally a military dictator.
+        voiced: >-
+          "You had all these advantages in your ancient states, but you chose to act as if you had never been moulded into
+          civil society, and had everything to begin anew."
+        you: You see the French Revolution as a warning against tearing down institutions that grew over centuries.
+        because: >-
+          Burke predicted in 1790, before the Terror, that the revolution would end in bloodshed and a general's rule, and it did.
+          Institutions carry the tested knowledge of generations that no assembly of theorists can replace. Reform that mends
+          the inherited fabric, as England did, secures liberty; demolition delivers people to whoever commands the army.
+        against:
+          - from: liberalism.republican
+            text: >-
+              Burke's "ancient constitution" in France meant serfdom's remnants, lettres de cachet and tax exemption for the
+              nobility. Paine's reply holds: Burke pitied the plumage and forgot the dying bird.
+          - from: marxism.classical
+            text: >-
+              The "inherited fabric" was a property system that fed a few thousand families on peasant dues. Calling its defense
+              prudence is class interest speaking softly.
+        sources:
+          - {author: Edmund Burke, title: "Reflections on the Revolution in France", year: 1790}
+          - {author: Alexis de Tocqueville, title: "L'Ancien Régime et la Révolution", year: 1856}
+        traditions:
+          defining: [conservatism.burkean]
+          typical: [conservatism.traditionalist, conservatism.one-nation, conservatism.fusionism, conservatism.paleo]
+          rejects: [liberalism.republican, marxism.classical, anarchism.communist]
+        excludes: [hist.french-revolution.unfinished-revolution]
+        analysis:
+          gains: [landed-capital, finance-capital, industrial-capital]
+          pays: [peasantry, core-workers, peripheral-workers]
+          mechanism: >-
+            Making gradual reform within inherited institutions the only safe road gives a veto to whoever holds property under those
+            institutions; the dispossessed must wait on the consent of the possessors.
+          drain: sustains
+          law_of_value: none
+      - id: hist.french-revolution.war-on-faith
+        label: A war on God, the Church and the faithful peasantry
+        claim: >-
+          The revolution confiscated the Church, forced an oath on the clergy, closed churches during the dechristianization
+          of 1793–94, and crushed the Catholic peasants of the Vendée with mass killing.
+        voiced: >-
+          "There is a satanic quality to the French Revolution that distinguishes it from everything we have seen.
+          It was a chastisement, and Providence will restore what men overthrew."
+        you: You see the French Revolution above all as an assault on religion and on the faithful who resisted it.
+        because: >-
+          The Civil Constitution of the Clergy (1790) made priests state employees and split the Church; refractory priests were
+          deported or killed, and the cult of Reason replaced the Mass in Notre-Dame. In the Vendée, peasants who rose for their
+          priests were killed in large numbers by the "infernal columns" of 1794. A revolution that claimed to free the people
+          made war on what the people held most sacred.
+        against:
+          - from: liberalism.republican
+            text: >-
+              The Church was the kingdom's largest landowner and collected the tithe from starving peasants. Ending its privileges was
+              not persecution of faith; the Concordat of 1801 restored worship.
+          - from: marxism.classical
+            text: >-
+              Whether the Vendée repression was "genocide" (Secher) is rejected by most historians, who count it as savage civil war
+              in which both sides massacred; death estimates range widely and remain disputed.
+        sources:
+          - {author: Joseph de Maistre, title: "Considérations sur la France", year: 1796}
+          - {author: Reynald Secher, title: "Le Génocide franco-français: la Vendée-Vengé", year: 1986}
+        traditions:
+          defining: [conservatism.reactionary, conservatism.integralism]
+          typical: [conservatism.monarchist, conservatism.traditionalist, conservatism.cst]
+          rejects: [liberalism.republican, nationalism.civic, marxism.classical]
+        presupposes: [history.motor.providence]
+        excludes: [hist.french-revolution.rights-of-man]
+        analysis:
+          gains: [landed-capital]
+          pays: [core-workers, peasantry]
+          mechanism: >-
+            Casting revolution as sacrilege gives religious authority to the defense of inherited hierarchy, which in practice shields the
+            Church's and the landowners' estates and mobilizes believing peasants and workers against movements that would redistribute them.
+          drain: none
+          law_of_value: none
+          method: idealist
+      - id: hist.french-revolution.unfinished-revolution
+        label: A people's revolution cut short by the bourgeoisie
+        claim: >-
+          The peasants and the Paris poor made the revolution, then the propertied revolutionaries used them, disarmed them and crushed them
+          in 1794–95. The unfinished part, equality of goods, is the part that matters.
+        voiced: >-
+          "The Revolution was made by the people, and the people were betrayed by the middle class at every turn.
+          Babeuf was right: the Republic of equals is still to come."
+        you: You side with the sans-culottes and the burning manor houses, not with the lawyers who took the revolution over.
+        because: >-
+          The decisive blows, from the Bastille to the abolition of dues, came from below; the assemblies ratified them reluctantly.
+          The Maximum on bread prices was imposed by the sections and repealed after Thermidor, after which the Prairial rising of 1795
+          was crushed and Babeuf's Conspiracy of Equals was executed. Each victory of the propertied over the poor ended a stage of the revolution.
+        against:
+          - from: marxism.ml
+            text: >-
+              Without a working class or a socialist economy, an "equality of goods" was impossible in 1793. The bourgeois limit was set by
+              history, not by betrayal.
+          - from: conservatism.burkean
+            text: >-
+              The sans-culottes ran the September massacres and the street tribunals. A people's revolution meant pikes on houses.
+        sources:
+          - {author: Peter Kropotkin, title: "The Great French Revolution, 1789–1793", year: 1909}
+          - {author: Daniel Guérin, title: "La Lutte de classes sous la Première République: bourgeois et bras nus", year: 1946}
+        traditions:
+          defining: [anarchism.communist]
+          typical: [anarchism.syndicalist, marxism.council-communism, marxism.luxemburgism]
+          contested: [marxism.trotskyism]
+          rejects: [conservatism.burkean, liberalism.classical]
+        presupposes: [history.motor.class-struggle]
+        analysis:
+          gains: [core-workers, peasantry, reserve-army]
+          pays: [industrial-capital, finance-capital, professional-managerial]
+          mechanism: >-
+            Locating the revolution's meaning in the poor's self-action rather than in the new state trains movements to distrust their own
+            educated leaders and to keep power in local assemblies, which threatens both owners and the professionals who mediate for them.
+          drain: none
+          law_of_value: abolishes
+      - id: hist.french-revolution.colonial-limit
+        label: A revolution whose universal rights stopped at the colony's edge
+        claim: >-
+          France declared universal rights while its richest colony ran on slavery. The revolution abolished slavery only in 1794,
+          after the enslaved of Saint-Domingue had freed themselves, and Napoleon restored it in 1802.
+        voiced: >-
+          "The Jacobins spoke for humanity, but the humanity of 1789 was white. The universal was taken seriously in
+          Saint-Domingue, not in Paris."
+        you: You judge the French Revolution by what it did to the colonized, not only by what it promised the French.
+        because: >-
+          Saint-Domingue produced much of the world's sugar and coffee, and the Atlantic port bourgeoisie that backed the revolution lived
+          off it. The Assembly refused to touch slavery in 1789–91; abolition came in February 1794 to save the colony from Britain and to
+          ratify a fact made by insurgents. A universal that needs the colonized to force it was not universal.
+        against:
+          - from: liberalism.republican
+            text: >-
+              The 1794 abolition was the first by any empire, and it came from the revolution's own principles. Judging 1789 by its slowest
+              members ignores the Amis des Noirs and the Convention.
+          - from: marxism.classical
+            text: >-
+              The colonial limit was a class limit: the merchants of Nantes and Bordeaux, not "whiteness" as such, held the line on slavery.
+        sources:
+          - {author: Michel-Rolph Trouillot, title: "Silencing the Past: Power and the Production of History", year: 1995}
+          - {author: Susan Buck-Morss, title: "Hegel, Haiti, and Universal History", year: 2009}
+          - {author: C. L. R. James, title: "The Black Jacobins", year: 1938}
+        traditions:
+          defining: [nationalism.decolonial, marxism.black-radical]
+          typical: [nationalism.pan-africanism, marxism.third-worldism, feminism.decolonial]
+          contested: [liberalism.republican]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, comprador-capital]
+          mechanism: >-
+            Measuring core revolutions by their treatment of colonies puts the colonial labor that financed them at the center, which supports
+            claims for reparations and undermines the core's moral title to judge the South.
+          drain: reduces
+          law_of_value: none
+  # ------------------------------------------------------------------
+  - id: hist.haitian-revolution
+    domain: history
+    layer: analysis
+    question: What was the Haitian Revolution of 1791–1804?
+    plain: >-
+      Enslaved people in France's richest colony rose up, defeated the armies of France, Spain and Britain, and in 1804 founded Haiti.
+      What was it?
+    short: the Haitian Revolution
+    importance: 2
+    region: history
+    positions:
+      - id: hist.haitian-revolution.universal-emancipation
+        label: The most radical revolution of its age, the true universal
+        claim: >-
+          Enslaved Africans took the rights of man more seriously than France did, made the first lasting abolition of slavery,
+          and founded the first state ruled by former slaves. It is the founding event of anti-colonial modernity.
+        voiced: >-
+          "The transformation of slaves, trembling in hundreds before a single white man, into a people able to organise themselves
+          and defeat the most powerful European nations of their day, is one of the great epics of revolutionary struggle."
+        you: You see Haiti as the revolution that made freedom from slavery universal in fact, not just on paper.
+        because: >-
+          From the August 1791 rising in the Northern Plain the insurgents forced the Republic's commissioner to free the slaves in 1793 and the
+          Convention to abolish slavery in 1794. They then defeated Napoleon's expedition of 1802–03, which had come to restore slavery.
+          No other revolution of the age touched the property in human beings on which Atlantic wealth rested.
+        against:
+          - from: liberalism.republican
+            text: >-
+              Haitian leaders spoke in the vocabulary of French republicanism and fought for years as French officers. The universal came
+              from Paris; Saint-Domingue applied it.
+          - from: marxism.classical
+            text: >-
+              Celebrating the revolution's universality can hide that its generals restored forced plantation labor on the cultivators.
+        sources:
+          - {author: C. L. R. James, title: "The Black Jacobins", year: 1938}
+          - {author: Laurent Dubois, title: "Avengers of the New World: The Story of the Haitian Revolution", year: 2004}
+          - {author: Susan Buck-Morss, title: "Hegel, Haiti, and Universal History", year: 2009}
+        traditions:
+          defining: [marxism.black-radical]
+          typical: [nationalism.pan-africanism, nationalism.decolonial, marxism.third-worldism, marxism.trotskyism]
+          rejects: [conservatism.reactionary]
+        excludes: [hist.haitian-revolution.ruinous-race-war]
+        analysis:
+          gains: [peripheral-workers, peasantry, reserve-army]
+          pays: [finance-capital, comprador-capital, landed-capital]
+          mechanism: >-
+            Treating the enslaved as the authors of universal emancipation makes the colonized the subject of history, which legitimates
+            their present claims on land, sovereignty and reparation against the states and firms that grew from slave wealth.
+          drain: reduces
+          law_of_value: none
+      - id: hist.haitian-revolution.cultivators-revolt
+        label: A revolution of the cultivators against planters and their own generals
+        claim: >-
+          The mass of former slaves wanted land of their own, not wages on the plantation. Toussaint and Dessalines kept the plantations
+          working with forced labor, and the cultivators resisted both colonists and the new rulers.
+        voiced: >-
+          "The counter-plantation was the real revolution: families on their own plots, growing food, refusing the cane.
+          The state was built against it."
+        you: You see Haiti's real revolution in the ex-slaves who wanted land and refused to go back to the cane fields under new masters.
+        because: >-
+          Toussaint's 1801 constitution bound cultivators to their plantations, and Dessalines and Christophe enforced labor codes with the army.
+          Yet Haitians built a peasant society of small holdings, family labor and lakou yards that defeated the export plantation from below.
+          The gap between the state and this peasant nation runs through Haitian history to this day.
+        against:
+          - from: nationalism.pan-africanism
+            text: >-
+              With French fleets offshore and the world's empires hostile, the new state needed export revenue and an army. Romanticizing
+              smallholding ignores the siege.
+          - from: liberalism.classical
+            text: >-
+              Haiti's descent into subsistence farming and export collapse is the cautionary tale, not the revolution.
+        sources:
+          - {author: Carolyn E. Fick, title: "The Making of Haiti: The Saint Domingue Revolution from Below", year: 1990}
+          - {author: Jean Casimir, title: "The Haitians: A Decolonial History", year: 2020, note: "French original 2018"}
+          - {author: Michel-Rolph Trouillot, title: "Haiti, State Against Nation", year: 1990}
+        traditions:
+          defining: [nationalism.decolonial]
+          typical: [marxism.black-radical, anarchism.communist, marxism.maoism]
+          contested: [nationalism.pan-africanism]
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: [landed-capital, comprador-capital]
+          mechanism: >-
+            Siding with the cultivators against the plantation state backs peasant land against export agriculture and its creditors,
+            which cuts the supply of cheap export crops and the rents that local elites earn by brokering them.
+          drain: reduces
+          law_of_value: suspends
+      - id: hist.haitian-revolution.black-sovereignty
+        label: The birth of the Haitian nation and of Black sovereignty
+        claim: >-
+          Under Dessalines the former slaves founded an independent nation in 1804, the first Black republic, and defended it by every
+          means, including the killing of the remaining French colonists.
+        voiced: >-
+          "We have dared to be free; let us be so by ourselves and for ourselves. Dessalines gave us a country, and the whole Black world
+          a flag."
+        you: You see 1804 as the founding of a Black nation that answered to no master, and you honor its founders.
+        because: >-
+          Independence, not abolition alone, was the decisive act: Guadeloupe had been freed and re-enslaved in 1802. Only a sovereign state
+          with an army could guarantee freedom. Haiti then sheltered fugitives, armed Bolívar on condition he free the slaves, and became
+          a beacon for Garvey, Price-Mars and the négritude movement.
+        against:
+          - from: liberalism.internationalist
+            text: >-
+              The 1804 massacre of French civilians, including women and children, cannot be folded into national pride without moral cost.
+          - from: nationalism.decolonial
+            text: >-
+              Celebrating the state founders hides that the state they built turned on its own cultivators.
+        sources:
+          - {author: Thomas Madiou, title: "Histoire d'Haïti", year: 1847}
+          - {author: Jean Price-Mars, title: "Ainsi parla l'oncle", year: 1928}
+          - {author: Laurent Dubois, title: "Avengers of the New World: The Story of the Haitian Revolution", year: 2004}
+        traditions:
+          defining: [nationalism.pan-africanism, nationalism.black-nationalism]
+          typical: [marxism.african-socialism, marxism.black-radical]
+        presupposes: [intl.sovereignty.nations-set-own-course]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >-
+            Holding up Black sovereignty as the guarantee of freedom supports present claims of African and Caribbean states to control their
+            own resources and armies, at the expense of the foreign creditors and firms that profit from their dependence.
+          drain: reduces
+          law_of_value: none
+          disputed: Materialists split on whether national sovereignty or the cultivators' class struggle is the revolution's core (Casimir versus Haitian nationalist historiography).
+      - id: hist.haitian-revolution.republican-extension
+        label: The French Revolution's ideals carried to the colonies
+        claim: >-
+          The rising in Saint-Domingue was the French Revolution's principles reaching their conclusion. The Convention's 1794 abolition
+          was the revolution at its best; Napoleon's restoration of slavery in 1802 was its betrayal.
+        voiced: >-
+          "Toussaint was a son of the Republic. When France abolished slavery it was being true to itself; when it sent Leclerc it betrayed itself."
+        you: You see the Haitian Revolution as part of the French Revolution, its ideals applied where they were hardest to apply.
+        because: >-
+          The insurgents' leaders invoked the Declaration of Rights; Toussaint fought for the Republic against Spain and Britain from 1794 and
+          governed in its name. The abolitionist current in Paris (the Amis des Noirs, the Montagnards who voted the decree) shows that the
+          principles themselves pointed to emancipation.
+        against:
+          - from: nationalism.decolonial
+            text: >-
+              The decree of February 1794 ratified what the insurgents had already won and what commissioner Sonthonax had proclaimed to keep
+              the colony from Britain. Crediting Paris repeats the silencing that Trouillot described.
+          - from: marxism.black-radical
+            text: >-
+              The enslaved did not need Paris to tell them that slavery was wrong; the Republic needed them to save its colony.
+        sources:
+          - {author: Robin Blackburn, title: "The Overthrow of Colonial Slavery, 1776–1848", year: 1988}
+          - {author: Laurent Dubois, title: "A Colony of Citizens: Revolution and Slave Emancipation in the French Caribbean", year: 2004}
+        traditions:
+          defining: [liberalism.republican]
+          typical: [nationalism.civic, liberalism.social, socdem.democratic-socialism]
+          contested: [marxism.classical]
+        presupposes: [hist.french-revolution.rights-of-man]
+        analysis:
+          gains: [professional-managerial, core-workers]
+          pays: [peripheral-workers]
+          mechanism: >-
+            Crediting emancipation to the metropole's ideals keeps the core as the author of progress and the periphery as its recipient,
+            which underwrites the core's present claim to define and enforce rights abroad.
+          drain: softens
+          law_of_value: none
+      - id: hist.haitian-revolution.ruinous-race-war
+        label: A race war that ruined the richest colony in the world
+        claim: >-
+          A rising marked by massacres on all sides destroyed the most productive colony of its time and left a poor, unstable country,
+          proof to its critics that emancipation must be gradual and order kept.
+        voiced: >-
+          "The finest colony in the world was reduced to ashes by men unprepared for liberty. Look at Haiti today and tell me it was worth it."
+        you: You see the Haitian Revolution as a violent catastrophe whose results discredit it.
+        because: >-
+          Saint-Domingue in 1789 produced more sugar than all the British islands together; after independence exports collapsed and the
+          plantations were never rebuilt. Both sides committed atrocities, and the 1804 killing of the remaining French colonists was ordered
+          by the state. Gradual emancipation with compensation, as Britain did in the 1830s, avoided such ruin.
+        against:
+          - from: marxism.black-radical
+            text: >-
+              The colony's "productivity" was the fastest consumption of human life in the Atlantic world: the enslaved died faster than they bred
+              and were replaced by purchase. Haiti's later poverty owes much to the 1825 indemnity France imposed under threat of war, to
+              decades of non-recognition, and to the US occupation of 1915–34.
+          - from: nationalism.pan-africanism
+            text: >-
+              British "compensation" in 1833 paid the slave-owners, not the enslaved. That is the gradualism on offer.
+        sources:
+          - {author: Bryan Edwards, title: "An Historical Survey of the French Colony in the Island of St. Domingo", year: 1797}
+          - {author: Philippe Girard, title: "Toussaint Louverture: A Revolutionary Life", year: 2016}
+        traditions:
+          defining: [conservatism.reactionary]
+          typical: [nationalism.ethnic, fascism.identitarian]
+          rejects: [marxism.black-radical, nationalism.pan-africanism, nationalism.decolonial, liberalism.republican]
+        presupposes: [poverty.cause.culture]
+        excludes: [hist.haitian-revolution.universal-emancipation, hist.haitian-revolution.made-to-pay]
+        analysis:
+          gains: [landed-capital, finance-capital]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >-
+            Explaining Haiti's poverty by its revolution rather than by the indemnity, embargo and occupation that followed justifies external
+            control and debt over Caribbean states and treats the plantation as the measure of prosperity.
+          drain: sustains
+          law_of_value: extends
+      - id: hist.haitian-revolution.made-to-pay
+        label: A victory the empires made Haiti pay for, and still owe for
+        claim: >-
+          Haiti won, and the powers punished it. France imposed an indemnity of 150 million francs in 1825 (later cut to 90 million) under
+          threat of invasion, the US refused recognition until 1862 and occupied Haiti in 1915–34. Haiti's poverty is the price of its freedom.
+        voiced: >-
+          "Haiti paid its former masters for the crime of freeing itself. Return the money, with interest."
+        you: You see Haiti's poverty as the result of how the great powers punished its revolution, and you think reparations are owed.
+        because: >-
+          The indemnity, financed by loans from French banks, consumed a large share of Haiti's revenue for generations; payments on the related
+          debts ran into the twentieth century. The occupation moved Haiti's gold reserve to New York and rewrote its constitution to allow
+          foreign land ownership. A state starved of revenue from birth could not build schools or roads.
+        against:
+          - from: liberalism.classical
+            text: >-
+              The indemnity was paid off long ago; a century of Haiti's own coups and predatory rulers explains more of its poverty
+              than events of 1825.
+          - from: nationalism.decolonial
+            text: >-
+              Focusing on what the powers did keeps the story centered on them; the Haitian peasantry's own resilience is the other half.
+        sources:
+          - {author: Laurent Dubois, title: "Haiti: The Aftershocks of History", year: 2012}
+          - {author: Michel-Rolph Trouillot, title: "Haiti, State Against Nation", year: 1990}
+          - {author: Eric Williams, title: "Capitalism and Slavery", year: 1944}
+        traditions:
+          defining: [nationalism.pan-africanism]
+          typical: [marxism.dependency, marxism.third-worldism, marxism.black-radical, nationalism.black-nationalism]
+          rejects: [liberalism.classical]
+        presupposes: [poverty.cause.colonial-legacy]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital]
+          mechanism: >-
+            Treating Haiti's indemnity as an ongoing debt owed by France and its banks turns the drain into a claim, with a creditor, a
+            debtor and a sum, which other formerly colonized states can and do invoke.
+          drain: reduces
+          law_of_value: none
+  # ------------------------------------------------------------------
+  - id: hist.russian-revolution
+    domain: history
+    layer: analysis
+    question: What was the Russian Revolution of 1917?
+    plain: >-
+      In February 1917 the Tsar fell. In October the Bolsheviks took power through the workers' and soldiers' councils (soviets).
+      What was that?
+    short: the Russian Revolution
+    importance: 3
+    region: history
+    positions:
+      - id: hist.russian-revolution.degenerated-under-siege
+        label: A workers' revolution that degenerated under siege and isolation
+        claim: >-
+          October was a genuine revolution of workers and soldiers led by the Bolsheviks. Civil war, foreign intervention and the defeat
+          of revolution in Germany isolated it in a ruined peasant country, and a bureaucracy grew up and took power.
+        voiced: >-
+          "The Bolsheviks won because the masses were with them in the soviets. They lost the soviets to the bureaucracy because the
+          revolution stayed locked in one backward country."
+        you: You think October was a real workers' revolution, and that its later fate came from isolation and war, not from the revolution itself.
+        because: >-
+          By September 1917 the Bolsheviks held majorities in the Petrograd and Moscow soviets, and the Second Congress of Soviets endorsed
+          the transfer of power (Rabinowitch). Civil war then killed or scattered the most active workers, and by 1921 the class that had made
+          October was half dispersed into the villages. The bureaucracy filled the space; Trotsky's opposition fought it from 1923.
+        against:
+          - from: anarchism.communist
+            text: >-
+              The soviets were emptied by the Bolsheviks themselves in 1918, well before isolation: Cheka, one-party rule, the closure of
+              opposition papers. The degeneration was in the method from the start.
+          - from: marxism.ml
+            text: >-
+              There was no "degeneration": the party that led October built socialism under the conditions history gave it.
+        sources:
+          - {author: Leon Trotsky, title: "The History of the Russian Revolution", year: 1930}
+          - {author: Alexander Rabinowitch, title: "The Bolsheviks Come to Power", year: 1976}
+          - {author: Isaac Deutscher, title: "The Prophet Armed: Trotsky 1879–1921", year: 1954}
+        traditions:
+          defining: [marxism.trotskyism]
+          typical: [marxism.third-camp, marxism.luxemburgism]
+          contested: [socdem.democratic-socialism]
+          rejects: [liberalism.classical, conservatism.neo, anarchism.communist]
+        presupposes: [change.agent.workers-as-class]
+        excludes: [hist.russian-revolution.minority-coup]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >-
+            The reading keeps workers' revolution on the agenda while disowning the states that came of it, which recruits workers to a
+            revolutionary program unburdened by those states' record but sets them against the existing anti-imperialist states.
+          drain: reduces
+          law_of_value: suspends
+          disputed: Marxist-Leninists hold that refusing to defend the actually existing socialist states aligns this reading with imperial campaigns against them.
+      - id: hist.russian-revolution.new-civilization
+        label: The founding act of a new civilization, the first workers' state
+        claim: >-
+          October created the first state of workers and peasants, took land and factories from their owners, and opened a new epoch in which
+          the working people of the world could build socialism.
+        voiced: >-
+          "The October Revolution is the beginning of the world socialist revolution. For the first time the exploited took power
+          and kept it."
+        you: You see October as the beginning of a new kind of society, ruled for the first time by working people.
+        because: >-
+          The decrees on land and peace of 26 October handed the estates to the peasants and pulled Russia out of the imperialist war. Within
+          two decades a peasant empire became an industrial power with universal literacy and social insurance, and defeated the strongest
+          army in the world. No previous revolution of the exploited had held power at all.
+        against:
+          - from: marxism.trotskyism
+            text: >-
+              The workers' state was taken over by a bureaucracy that murdered the leaders of October. The new civilization was hijacked
+              within a decade.
+          - from: liberalism.classical
+            text: >-
+              The "new civilization" required one-party rule from 1918, a political police, and later famine and camps.
+        sources:
+          - {author: John Reed, title: "Ten Days That Shook the World", year: 1919}
+          - {author: V. I. Lenin, title: "The State and Revolution", year: 1917}
+          - {author: E. H. Carr, title: "The Bolshevik Revolution, 1917–1923", year: 1950}
+        traditions:
+          defining: [marxism.ml, marxism.leninism]
+          typical: [marxism.maoism, marxism.hoxhaism, marxism.juche, marxism.scc, marxism.mlm]
+          rejects: [liberalism.classical, conservatism.neo, conservatism.monarchist]
+        presupposes: [state.nature.class-instrument]
+        excludes: [hist.russian-revolution.minority-coup, hist.russian-revolution.crime-of-ideology]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, landed-capital, comprador-capital]
+          mechanism: >-
+            Holding October as the founding of a workers' civilization frames expropriation of owners as achievable and legitimate, and
+            gives movements a state model of planned production outside the world market.
+          drain: breaks
+          law_of_value: suspends
+          consciousness: hegemonic
+      - id: hist.russian-revolution.minority-coup
+        label: A coup by a minority party that hijacked a democratic revolution
+        claim: >-
+          February 1917 opened a road to a parliamentary republic. In October a disciplined minority party seized power, then dispersed the
+          Constituent Assembly in January 1918 when it lost the election to it.
+        voiced: >-
+          "Russia's revolution was February. October was a putsch by professional revolutionaries who could not win a free election
+          and never held one again."
+        you: You think the Bolsheviks stole a democratic revolution that could have given Russia a parliamentary republic.
+        because: >-
+          In the Constituent Assembly elections of November 1917, the Socialist Revolutionaries won around 40 percent and the Bolsheviks about
+          a quarter. The Bolsheviks dissolved the Assembly after one session, closed opposition papers and created the Cheka within weeks. The
+          insurrection itself was planned by the party's Military Revolutionary Committee, not by any mass assembly.
+        against:
+          - from: marxism.trotskyism
+            text: >-
+              October was ratified by the Congress of Soviets, the most representative body in Russia; the Bolsheviks led the majority in the
+              cities and the army. The Assembly's SR list was drawn up before the SRs split (Rabinowitch).
+          - from: marxism.ml
+            text: >-
+              The "democratic road" of 1917 kept Russia in the war and the land with the landlords for eight months. The masses chose the
+              soviets over it.
+        sources:
+          - {author: Richard Pipes, title: "The Russian Revolution", year: 1990}
+          - {author: Karl Kautsky, title: "The Dictatorship of the Proletariat", year: 1918}
+          - {author: Orlando Figes, title: "A People's Tragedy: The Russian Revolution, 1891–1924", year: 1996}
+        traditions:
+          defining: [liberalism.classical]
+          typical: [conservatism.neo, socdem.revisionist, liberalism.internationalist, liberalism.social]
+          contested: [socdem.democratic-socialism]
+          rejects: [marxism.leninism, marxism.ml, marxism.trotskyism]
+        presupposes: [elections.role.main-road]
+        excludes: [hist.russian-revolution.new-civilization]
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [core-workers, peasantry]
+          mechanism: >-
+            Making a parliamentary vote the only legitimate source of power rules out revolutions where elections are dominated by owners or
+            held under war and occupation, which leaves property to be changed only through institutions that owners can outlast.
+          drain: sustains
+          law_of_value: extends
+          disputed: Some Marxists (Luxemburg, democratic socialists) share the critique of dissolving the Assembly while defending October.
+      - id: hist.russian-revolution.bourgeois-in-socialist-costume
+        label: A bourgeois revolution in socialist costume
+        claim: >-
+          In a peasant country with a small working class, the Bolsheviks could only do the work of a bourgeois revolution, sweeping away the
+          old order and building industry and a state. The party became a new ruling layer over wage labor.
+        voiced: >-
+          "Bolshevism was the last bourgeois revolution, made by a party of intellectuals over the heads of the workers, and its
+          state capitalism was its natural fruit."
+        you: You think 1917 could only produce a modernizing state over workers, whatever the Bolsheviks called it.
+        because: >-
+          The working class was a few million in an empire of 150 million peasants; the party substituted itself for it from the start.
+          Wage labor, money and the extraction of surplus by a central authority continued, only with the state as employer. Gorter and
+          Pannekoek drew the conclusion while Lenin lived: the councils had been replaced by the party, and the party by the state.
+        against:
+          - from: marxism.left-communism
+            text: >-
+              October was a proletarian revolution, led by the party of the class; what followed was a counter-revolution under Stalin's
+              "socialism in one country", not a bourgeois revolution from the start.
+          - from: marxism.trotskyism
+            text: >-
+              Nationalized property and the monopoly of foreign trade were not capitalism. Calling them so erases the difference between
+              a bureaucracy and a bourgeoisie.
+        sources:
+          - {author: Herman Gorter, title: "Open Letter to Comrade Lenin", year: 1920}
+          - {author: Anton Pannekoek, title: "Lenin as Philosopher", year: 1938}
+          - {author: Otto Rühle, title: "The Struggle Against Fascism Begins with the Struggle Against Bolshevism", year: 1939}
+        traditions:
+          defining: [marxism.council-communism]
+          typical: [anarchism.communist, marxism.autonomism]
+          contested: [marxism.left-communism, marxism.third-camp]
+          rejects: [marxism.ml, marxism.trotskyism]
+        presupposes: [history.motor.class-struggle]
+        excludes: [hist.russian-revolution.new-civilization]
+        analysis:
+          gains: [core-workers]
+          pays: [professional-managerial]
+          mechanism: >-
+            The reading trains workers to distrust every party that claims to represent them, which guards against new managerial rulers
+            but also leaves workers without the organization that seizing and holding power has so far required.
+          drain: none
+          law_of_value: abolishes
+          disputed: Most Leninist currents hold that treating the October state as capitalist dissolves the anti-imperialist content of the revolution.
+      - id: hist.russian-revolution.soviets-betrayed
+        label: A people's revolution of soviets betrayed by the Bolshevik state
+        claim: >-
+          In 1917 peasants took the land, workers took the factories and the soviets were real. The Bolsheviks rode that revolution to
+          power and then subordinated soviets, factory committees and peasants to their state.
+        voiced: >-
+          "The revolution was the people's; the state was the party's. From the Cheka to Kronstadt, every Bolshevik step was a step
+          away from the social revolution."
+        you: You side with the revolution of 1917 and against the Bolshevik state that took it over.
+        because: >-
+          Factory committees were put under trade unions and then under one-person management by 1920; soviet elections that went against the
+          party were annulled in 1918; anarchist centers in Moscow were raided in April 1918; Makhno's peasant army was attacked once the Whites
+          were beaten. The pattern is the state replacing the self-organized people, as Bakunin had warned.
+        against:
+          - from: marxism.leninism
+            text: >-
+              Without a centralized army and state, the Whites and fourteen interventions would have drowned the revolution, the soviets and
+              the anarchists together. Self-organization without power loses.
+          - from: liberalism.classical
+            text: >-
+              Factory committees ran production into the ground in 1918; the anarchist alternative was economic collapse.
+        sources:
+          - {author: Volin, title: "La Révolution inconnue (The Unknown Revolution)", year: 1947}
+          - {author: Emma Goldman, title: "My Disillusionment in Russia", year: 1923}
+          - {author: Maurice Brinton, title: "The Bolsheviks and Workers' Control, 1917–1921", year: 1970}
+        traditions:
+          defining: [anarchism.communist, anarchism.syndicalist, anarchism.platformist]
+          typical: [marxism.council-communism, anarchism.insurrectionary]
+          rejects: [marxism.ml, marxism.leninism]
+        presupposes: [state.nature.hierarchy-as-such]
+        excludes: [hist.russian-revolution.new-civilization]
+        analysis:
+          gains: [core-workers, peasantry]
+          pays: [professional-managerial, industrial-capital]
+          mechanism: >-
+            Separating the revolution from the state teaches movements to build workplace and village self-government and to refuse
+            delegation to a central apparatus, which threatens owners and would-be managers alike.
+          drain: reduces
+          law_of_value: abolishes
+      - id: hist.russian-revolution.crime-of-ideology
+        label: A crime from which nothing good came
+        claim: >-
+          A utopian ideology took power and, to remake human beings, built the first modern one-party police state. The famines, camps and
+          tens of millions of deaths under communism flowed from its nature, not from circumstance.
+        voiced: >-
+          "Communism did not go wrong. It went exactly where its doctrine led: class enemies, a party above law, and the camps."
+        you: You see the Russian Revolution as the start of a criminal experiment that should never be repeated.
+        because: >-
+          The Cheka was founded in December 1917, the Red Terror proclaimed in September 1918, the first camps opened in 1918, and every later
+          communist state repeated the pattern in different cultures. That regularity points to the doctrine: abolishing private property and
+          classes requires coercing whole populations.
+        against:
+          - from: marxism.ml
+            text: >-
+              The same century's liberal empires starved Bengal and Ireland and killed millions in the Congo; they are not called crimes of
+              ideology. The death counts of the Black Book are disputed even by its own co-authors.
+          - from: marxism.trotskyism
+            text: >-
+              Lumping 1917 with Stalin's terror erases the Bolsheviks Stalin shot. The revolution's own leaders were his main victims.
+        sources:
+          - {author: Stéphane Courtois et al., title: "Le Livre noir du communisme (The Black Book of Communism)", year: 1997}
+          - {author: Martin Malia, title: "The Soviet Tragedy: A History of Socialism in Russia, 1917–1991", year: 1994}
+        traditions:
+          defining: [conservatism.neo, conservatism.fusionism]
+          typical: [liberalism.classical, libertarianism.minarchist, liberalism.austrian, conservatism.christian-democracy]
+          rejects: [marxism.ml, marxism.leninism, marxism.trotskyism]
+        presupposes: [history.motor.ideas]
+        excludes: [hist.russian-revolution.new-civilization]
+        analysis:
+          gains: [finance-capital, industrial-capital, comprador-capital]
+          pays: [core-workers, peripheral-workers, peasantry]
+          mechanism: >-
+            Equating any expropriation of owners with mass murder makes property inviolable in public argument and supplies the case for
+            sanctions and interventions against governments that nationalize.
+          drain: sustains
+          law_of_value: extends
+          method: idealist
+      - id: hist.russian-revolution.faith-and-nation
+        label: A catastrophe for faith and nation
+        claim: >-
+          An atheist doctrine from abroad tore Russia from its Orthodox and national roots, murdered the Tsar's family, the clergy and the
+          best of the peasantry, and diverted the nation's spiritual energy into a godless faith.
+        voiced: >-
+          "Men have forgotten God; that is why all this has happened. Russian communism was a perversion of Russia's messianic calling."
+        you: You see the Russian Revolution as a spiritual and national disaster for Russia.
+        because: >-
+          Thousands of priests and monks were killed in the 1920s and 1930s and most churches closed; the imperial family was shot without trial
+          in July 1918. Solzhenitsyn and Berdyaev saw the revolution as a spiritual event, the people's longing for justice captured by a
+          materialist idol. A nation cut off from its faith lost the restraint that kept power human.
+        against:
+          - from: marxism.ml
+            text: >-
+              The Orthodox Church was a pillar of autocracy and blessed the pogroms; peasants seized Church land themselves.
+          - from: liberalism.republican
+            text: >-
+              Tsarism was not a spiritual order but an autocracy that shot petitioners in 1905; nostalgia for it is not a remedy for Bolshevism.
+        sources:
+          - {author: Nikolai Berdyaev, title: "The Origin of Russian Communism", year: 1937}
+          - {author: Aleksandr Solzhenitsyn, title: "The Gulag Archipelago", year: 1973}
+        traditions:
+          defining: [conservatism.monarchist, conservatism.traditionalist]
+          typical: [conservatism.reactionary]
+          contested: [nationalism.eurasianism]
+          rejects: [marxism.ml, marxism.leninism]
+        presupposes: [history.motor.providence]
+        analysis:
+          gains: [landed-capital]
+          pays: [core-workers, peasantry]
+          mechanism: >-
+            Framing the revolution as a spiritual fall makes restored religious and national authority the answer to social conflict,
+            which in today's Russia joins the Church to a state that protects the owners of privatized industry.
+          drain: none
+          law_of_value: none
+          method: idealist
+      - id: hist.russian-revolution.anti-colonial-signal
+        label: The first break in the imperialist chain, which woke the colonies
+        claim: >-
+          October's global meaning was that a revolution broke out of the imperialist system and called the colonized to rise. It gave
+          anti-colonial movements a model, a doctrine of national self-determination and a state ally.
+        voiced: >-
+          "The salvoes of the October Revolution brought us Marxism-Leninism. From then on the colonies had an ally in a great power."
+        you: You see the Russian Revolution mainly through what it meant for the colonized world.
+        because: >-
+          Ho Chi Minh read Lenin's theses on the national and colonial question in 1920 and wrote that this was the road; Mao, Sukarno's PKI
+          allies, the Comintern's Baku congress of 1920 and later Cuba, Vietnam and the ANC drew on the Soviet state's support. Imperialism
+          was weakest at its link in Russia, and once broken there it could be broken elsewhere.
+        against:
+          - from: nationalism.decolonial
+            text: >-
+              The Soviets kept Central Asia and the Caucasus inside a Russian-led union and judged the colonized by a European theory of
+              progress.
+          - from: marxism.council-communism
+            text: >-
+              What the colonies took from Moscow was the model of party and state, which produced new ruling classes across the South.
+        sources:
+          - {author: Mao Zedong, title: "On the People's Democratic Dictatorship", year: 1949}
+          - {author: Ho Chi Minh, title: "The Path Which Led Me to Leninism", year: 1960}
+          - {author: Vijay Prashad, title: "Red Star Over the Third World", year: 2017}
+        traditions:
+          defining: [marxism.third-worldism]
+          typical: [marxism.maoism, marxism.african-socialism, nationalism.pan-africanism, marxism.ml, marxism.mariategui]
+          rejects: [conservatism.neo]
+        presupposes: [imperialism.nature.monopoly-stage]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >-
+            Reading 1917 through the colonies directs attention to the world system and to alliance between workers and colonized nations,
+            which targets the drain itself rather than the domestic share-out of its proceeds.
+          drain: breaks
+          law_of_value: suspends
+  # ------------------------------------------------------------------
+  - id: hist.chinese-revolution
+    domain: history
+    layer: analysis
+    question: What was the Chinese Revolution that ended in Communist victory in 1949?
+    plain: >-
+      After two decades of civil war and a Japanese invasion, Communist armies led by Mao won in 1949 and founded the People's Republic.
+      What was that victory?
+    short: the Chinese Revolution
+    importance: 3
+    region: history
+    positions:
+      - id: hist.chinese-revolution.new-democratic
+        label: A new-democratic revolution of workers and peasants under Communist leadership
+        claim: >-
+          Under Communist leadership, an alliance of peasants, workers and patriotic classes overthrew landlord power, foreign domination
+          and the comprador Guomindang. Land reform gave the soil to those who tilled it.
+        voiced: >-
+          "The Chinese people have stood up. Three great mountains, imperialism, feudalism and bureaucrat-capitalism, have been
+          removed from our backs."
+        you: You see 1949 as a people's revolution that freed China's peasants from landlords and its nation from foreign domination.
+        because: >-
+          Rural China in the 1930s was a world of tenancy, usury and warlord taxes; famine was routine. The Communists won by carrying out land
+          reform in the areas they held, so that peasants had something to defend. Hinton's Fanshen records one village "turning over": the
+          poor speaking for the first time, debts burned, land measured and shared.
+        against:
+          - from: liberalism.classical
+            text: >-
+              Land reform was carried out through public "speak bitterness" meetings in which landlords, and many who were merely better off,
+              were beaten and killed; estimates of deaths run from several hundred thousand to two million or more (Dikötter).
+          - from: marxism.trotskyism
+            text: >-
+              The working class, crushed in 1927 under Stalin's line of alliance with the Guomindang, played no leading part. A peasant army led
+              by a party apparatus produced a bureaucratic state from the first day.
+        sources:
+          - {author: Mao Zedong, title: "On New Democracy", year: 1940}
+          - {author: William Hinton, title: "Fanshen: A Documentary of Revolution in a Chinese Village", year: 1966}
+          - {author: Edgar Snow, title: "Red Star Over China", year: 1937}
+        traditions:
+          defining: [marxism.maoism, marxism.scc]
+          typical: [marxism.ml, marxism.mlm, marxism.third-worldism]
+          rejects: [nationalism.three-principles, conservatism.neo]
+        presupposes: [comprador.nature.broker-class]
+        excludes: [hist.chinese-revolution.communist-conquest]
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: [landed-capital, comprador-capital, finance-capital]
+          mechanism: >-
+            Holding up land reform under a revolutionary state as the road out of poverty legitimates expropriating landlords and expelling
+            foreign capital elsewhere in the South, which cuts both the rents and the drain those classes broker.
+          drain: breaks
+          law_of_value: suspends
+          consciousness: hegemonic
+      - id: hist.chinese-revolution.wealth-and-power
+        label: One stage in a century-long national struggle for wealth and power
+        claim: >-
+          From the Opium Wars on, every Chinese reformer sought to make China strong again. The Communists won because they led the
+          resistance to Japan and could reunify the country; 1949 is a chapter in a national revival that runs from 1911 to today.
+        voiced: >-
+          "From the Opium War to the founding of New China, the aim was the same: an end to humiliation. Sun Yat-sen began it;
+          the Communists completed it."
+        you: You see 1949 above all as China recovering its unity and dignity after a century of foreign humiliation.
+        because: >-
+          Japan's invasion from 1937 shattered the Guomindang's armies and the old rural order, and Communist base areas behind Japanese lines
+          gave peasants a national cause to fight for (Chalmers Johnson). Sun Yat-sen, Chiang and Mao all spoke of national rejuvenation;
+          the Communists won the contest to deliver it.
+        against:
+          - from: marxism.maoism
+            text: >-
+              Nationalism alone does not explain why peasants fought: they fought for land. A national reading flattens the class revolution
+              into a dynasty change.
+          - from: nationalism.three-principles
+            text: >-
+              The Nationalist army bore the brunt of the war against Japan; the Communists husbanded their forces and harvested its effects.
+        sources:
+          - {author: Chalmers Johnson, title: "Peasant Nationalism and Communist Power", year: 1962}
+          - {author: Orville Schell and John Delury, title: "Wealth and Power: China's Long March to the Twenty-First Century", year: 2013}
+          - {author: Rana Mitter, title: "Forgotten Ally: China's World War II, 1937–1945", year: 2013}
+        traditions:
+          typical: [marxism.scc, nationalism.developmental-state]
+          contested: [nationalism.three-principles, marxism.maoism]
+        presupposes: [intl.sovereignty.nations-set-own-course]
+        analysis:
+          gains: [professional-managerial, industrial-capital, peasantry]
+          pays: [comprador-capital, finance-capital]
+          mechanism: >-
+            Treating the revolution as national revival makes state strength and sovereignty the measure of success, which favors a
+            developmental coalition of state managers and domestic capital against foreign firms, while leaving the class question open.
+          drain: reduces
+          law_of_value: regulates
+      - id: hist.chinese-revolution.betrayed-in-1927
+        label: A revolution whose workers were sacrificed in 1927, won by a peasant army
+        claim: >-
+          The Chinese working class rose in 1925–27 and was massacred by Chiang Kai-shek in Shanghai because Moscow ordered the Communists to
+          stay inside his party. The party rebuilt on peasant armies, and 1949 produced a bureaucratically deformed workers' state.
+        voiced: >-
+          "The Stalinist line of the bloc of four classes handed the Shanghai proletariat to Chiang's executioners. Mao's victory nationalized
+          property, but the workers never ruled."
+        you: You think the Chinese Revolution's real tragedy was 1927, and that the 1949 state was never run by workers.
+        because: >-
+          In April 1927 Chiang's forces and the Green Gang killed thousands of Communists and union militants in Shanghai after the Comintern
+          insisted on the alliance; the Canton commune that December was crushed too. Trotsky warned in advance. The party that came back in
+          1949 came from the countryside with an army and a cadre, not soviets, and governed accordingly.
+        against:
+          - from: marxism.maoism
+            text: >-
+              In a semi-colonial country the peasantry was the main force; people's war encircling the cities was the correct road, proved by
+              victory. Trotskyists in China never led anything.
+          - from: marxism.council-communism
+            text: >-
+              Calling the 1949 state a workers' state of any kind gives the bureaucracy a class credential it did not earn.
+        sources:
+          - {author: Harold R. Isaacs, title: "The Tragedy of the Chinese Revolution", year: 1938}
+          - {author: Leon Trotsky, title: "Problems of the Chinese Revolution", year: 1932}
+        traditions:
+          defining: [marxism.trotskyism]
+          typical: [marxism.third-camp]
+          rejects: [marxism.maoism, marxism.ml]
+        presupposes: [change.agent.workers-as-class]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [professional-managerial]
+          mechanism: >-
+            Insisting that only urban workers' self-rule counts directs movements in the South toward union and city organizing and away
+            from peasant armies and cross-class national fronts.
+          drain: reduces
+          law_of_value: suspends
+      - id: hist.chinese-revolution.state-capitalist
+        label: A national revolution that built state capitalism under a red flag
+        claim: >-
+          A party of intellectuals at the head of peasant armies took state power and set about accumulating capital through state ownership
+          and squeezing the countryside. China changed masters; the workers stayed wage-earners.
+        voiced: >-
+          "The Chinese 'communist' revolution was a bourgeois-national revolution carried out by a bureaucratic class.
+          Capital was accumulated by the state instead of the market."
+        you: You think 1949 replaced one ruling class with another that ran capital through the state.
+        because: >-
+          After 1953 the state took the surplus from the peasantry through compulsory grain procurement at low prices and invested it in heavy
+          industry, exactly the role a capitalist class plays. Workers had no independent unions; the household registration system bound peasants
+          to the land. The form was planning, the content accumulation.
+        against:
+          - from: marxism.maoism
+            text: >-
+              Capitalism requires capital owned privately and competing for profit; China under Mao had neither, and its leaders launched the
+              Cultural Revolution against precisely the bureaucratic layer this reading names.
+          - from: marxism.trotskyism
+            text: >-
+              State capitalism is a contradiction in terms without a capitalist class; this was a deformed workers' state.
+        sources:
+          - {author: Nigel Harris, title: "The Mandate of Heaven: Marx and Mao in Modern China", year: 1978}
+          - {author: Tony Cliff, title: "State Capitalism in Russia", year: 1955, note: the general theory}
+        traditions:
+          defining: [marxism.third-camp, marxism.council-communism]
+          typical: [marxism.left-communism, anarchism.communist]
+          rejects: [marxism.maoism, marxism.scc, marxism.ml]
+        excludes: [hist.chinese-revolution.new-democratic]
+        analysis:
+          gains: [core-workers]
+          pays: [professional-managerial]
+          mechanism: >-
+            Treating every state-led revolution as state capitalism denies the national revolutions of the South any socialist content,
+            which keeps workers' movements independent but also withholds support from states contesting the drain.
+          drain: none
+          law_of_value: abolishes
+          disputed: Third Worldists and Maoists reject the reading as Eurocentric; third-camp writers reply that class relations, not geography, decide.
+      - id: hist.chinese-revolution.communist-conquest
+        label: A Communist conquest that drove the Republic of China to Taiwan
+        claim: >-
+          The Republic of China, founded in 1912 and recognized worldwide, bore the main burden of the war with Japan. The Communists,
+          armed from captured Japanese stocks in Soviet-held Manchuria, conquered the mainland in 1949; the Republic continued on Taiwan.
+        voiced: >-
+          "We fought Japan for eight years while the Communists grew fat in their base areas. Then, with Soviet help in Manchuria,
+          they turned on an exhausted nation."
+        you: You see 1949 as the conquest of the Chinese Republic by a Soviet-backed party.
+        because: >-
+          The Nationalist army fought the major battles of 1937–45 at Shanghai, Wuhan and Changsha and lost millions of men (Mitter). The
+          Soviet occupation of Manchuria in 1945 let the Communists take over captured Japanese arms. Taiwan's later transition to multiparty
+          elections shows what a Republic of China could become.
+        against:
+          - from: marxism.maoism
+            text: >-
+              The Guomindang left the landlords in place, its officials hoarded while the hyperinflation of 1947–49 ruined the cities, and
+              its own soldiers changed sides by whole divisions.
+          - from: nationalism.decolonial
+            text: >-
+              On Taiwan the Guomindang imposed martial law from 1949 to 1987 after killing thousands in the 1947 February 28 massacre.
+        sources:
+          - {author: Chiang Kai-shek, title: "Soviet Russia in China: A Summing-Up at Seventy", year: 1957}
+          - {author: Rana Mitter, title: "Forgotten Ally: China's World War II, 1937–1945", year: 2013}
+        traditions:
+          defining: [nationalism.three-principles]
+          typical: [conservatism.fusionism, conservatism.neo]
+          rejects: [marxism.maoism, marxism.scc]
+        excludes: [hist.chinese-revolution.new-democratic]
+        analysis:
+          gains: [landed-capital, comprador-capital, finance-capital]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >-
+            Treating the Guomindang state as the lawful order delegitimizes the land revolution and supports the strategic alliance that
+            anchors US military power in the western Pacific.
+          drain: sustains
+          law_of_value: extends
+      - id: hist.chinese-revolution.tragedy-of-liberation
+        label: A violent conquest whose campaigns killed millions
+        claim: >-
+          The revolution's victory brought land reform by mob trial, campaigns against "counter-revolutionaries", and a one-party state
+          that in its first years killed between one and several million people and sent many more to labor camps.
+        voiced: >-
+          "Liberation was the word; the reality was the struggle meeting, the execution quota and the labor camp."
+        you: You see the Communist victory of 1949 as the start of a cycle of state violence.
+        because: >-
+          Party directives set ratios for executions in the 1951 campaign to suppress counter-revolutionaries; land reform killed landlords and
+          rich peasants in public meetings across the country. Dikötter reconstructs this from provincial archives opened in the 2000s. A
+          revolution that needs such violence in its first five years shows its nature.
+        against:
+          - from: marxism.maoism
+            text: >-
+              Dikötter's numbers are extrapolated and his sources selected; he omits the violence of the landlord order and Guomindang rule,
+              which killed peasants every year by famine and press-ganging.
+          - from: marxism.dependency
+            text: >-
+              Mortality fell sharply after 1949; life expectancy roughly doubled by the 1970s. A reading that counts only the dead of
+              revolution leaves out the dead of the old order.
+        sources:
+          - {author: Frank Dikötter, title: "The Tragedy of Liberation: A History of the Chinese Revolution, 1945–1957", year: 2013}
+          - {author: Jung Chang and Jon Halliday, title: "Mao: The Unknown Story", year: 2005}
+        traditions:
+          defining: [liberalism.classical]
+          typical: [conservatism.neo, liberalism.internationalist, conservatism.fusionism]
+          rejects: [marxism.maoism, marxism.scc]
+        excludes: [hist.chinese-revolution.new-democratic]
+        analysis:
+          gains: [finance-capital, landed-capital, comprador-capital]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >-
+            Counting the deaths of revolution without those of the order it overthrew makes land reform by revolution unthinkable, which
+            protects landlord and creditor classes in the countryside of the South.
+          drain: sustains
+          law_of_value: extends
+      - id: hist.chinese-revolution.peoples-war-model
+        label: A victory that proved people's war could defeat empire everywhere
+        claim: >-
+          China showed that in colonized countries the countryside could encircle the cities: a peasant army under a revolutionary party
+          could defeat a modern state and its foreign backers. That lesson armed liberation movements across Asia, Africa and Latin America.
+        voiced: >-
+          "Taking the world as a whole, North America and Western Europe are the cities, and Asia, Africa and Latin America the
+          countryside. The revolution of the world's countryside will surround them."
+        you: You see the Chinese Revolution above all as a model for the colonized world.
+        because: >-
+          The strategy of base areas, protracted war and mass line was developed in China and taken up from Vietnam to Peru, Nepal, India
+          and the Philippines. Lin Biao's 1965 text made it a theory of the world revolution. Where it was applied with mass support, it
+          defeated far stronger armies.
+        against:
+          - from: marxism.trotskyism
+            text: >-
+              Peasant war produces a bureaucratic army-state, and in Peru and Cambodia the "model" produced catastrophe.
+          - from: marxism.scc
+            text: >-
+              China's own experience was specific; exporting a model contradicts seeking truth from facts.
+        sources:
+          - {author: Lin Biao, title: "Long Live the Victory of People's War!", year: 1965}
+          - {author: Mao Zedong, title: "Problems of Strategy in China's Revolutionary War", year: 1936}
+        traditions:
+          defining: [marxism.mlm]
+          typical: [marxism.maoism, marxism.third-worldism]
+          contested: [marxism.scc]
+          rejects: [marxism.trotskyism, socdem.democratic-socialism]
+        presupposes: [imperialism.nature.monopoly-stage]
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: [comprador-capital, landed-capital, finance-capital]
+          mechanism: >-
+            Making protracted rural war the road to power organizes the peasant majority of the South against landlords and their foreign
+            backers, a direct threat to the rents and raw-material flows of the periphery.
+          drain: breaks
+          law_of_value: suspends
+          consciousness: hegemonic
+      - id: hist.chinese-revolution.mandate-of-heaven
+        label: A new dynasty took the Mandate of Heaven
+        claim: >-
+          The Guomindang lost the people's trust through corruption and defeat; the Communists won it through discipline and land, as new
+          dynasties have before. Legitimacy in China comes from good government that keeps order and feeds the people.
+        voiced: >-
+          "Chiang lost the mandate as the Qing did. The people follow those who govern well and abandon those who don't."
+        you: You see 1949 in the long Chinese pattern of rulers rising and falling by whether they govern well.
+        because: >-
+          Chinese political thought since Mencius has held that rulers who oppress the people lose their right to rule and that rebellion
+          against them is just. Peasant armies, a unifying doctrine and a reforming founder are a familiar sequence in Chinese history;
+          observers from Fairbank on read the Communists through it.
+        against:
+          - from: marxism.maoism
+            text: >-
+              The revolution ended the landlord-bureaucrat order that every dynasty rebuilt. Calling it a dynasty denies what was new.
+          - from: liberalism.classical
+            text: >-
+              A "mandate" that no one votes on is a story rulers tell after they win.
+        sources:
+          - {author: John King Fairbank, title: "The United States and China", year: 1948}
+          - {author: Mencius, title: "Mencius", year: "c. -300"}
+        traditions:
+          typical: [religious.confucian]
+          contested: [religious.political-meritocracy, marxism.scc]
+          rejects: [liberalism.classical, marxism.mlm]
+        analysis:
+          gains: [professional-managerial]
+          pays: [core-workers, peasantry]
+          mechanism: >-
+            Judging rulers by performance rather than by which class holds power makes legitimacy depend on order and growth, which gives
+            officials authority as long as they deliver and leaves workers and peasants no claim of their own beyond petition.
+          drain: none
+          law_of_value: none
+          method: idealist
+  # ------------------------------------------------------------------
+  - id: hist.cuban-revolution
+    domain: history
+    layer: analysis
+    question: What was the Cuban Revolution of 1959 and the state it built?
+    plain: >-
+      In 1959 a guerrilla army led by Fidel Castro overthrew the Batista government. Within two years Cuba had nationalized its economy,
+      declared itself socialist and come under a US embargo that still stands. What was it?
+    short: the Cuban Revolution
+    importance: 2
+    region: history
+    positions:
+      - id: hist.cuban-revolution.marti-completed
+        label: Martí's unfinished independence completed by socialism
+        claim: >-
+          Cuba's independence was cut short in 1898 by US occupation and the Platt Amendment. The revolution of 1959 completed it, took the
+          land and the sugar mills from US companies and local owners, and gave Cubans literacy, health care and dignity.
+        voiced: >-
+          "Condemn me, it does not matter. History will absolve me. We are the generation of the centenary of Martí,
+          and we finished his war."
+        you: You see the Cuban Revolution as Cuba finally winning its independence and using it to serve its own people.
+        because: >-
+          Before 1959 US firms held much of the sugar land, the utilities and the mines, and the Platt Amendment (1901–34) had given Washington
+          a legal right to intervene. The 1961 literacy campaign taught hundreds of thousands to read in one year; infant mortality and life
+          expectancy came to rank with rich countries. All of it was done under a blockade the UN General Assembly has condemned every year
+          since 1992.
+        against:
+          - from: liberalism.classical
+            text: >-
+              Independence that ends in one party, led by one family for half a century, with no free press and more than a million exiles,
+              is not Martí's republic "with all and for the good of all".
+          - from: marxism.third-camp
+            text: >-
+              The revolution was made by a guerrilla elite, not by the working class; workers gained welfare but no power.
+        sources:
+          - {author: Fidel Castro, title: "History Will Absolve Me", year: 1953}
+          - {author: José Martí, title: "Nuestra América", year: 1891}
+          - {author: Richard Gott, title: "Cuba: A New History", year: 2004}
+        traditions:
+          defining: [marxism.ml, marxism.guevarism]
+          typical: [marxism.third-worldism, nationalism.bolivarianism, religious.liberation-theology]
+          rejects: [conservatism.fusionism, liberalism.chicago]
+        presupposes: [intl.sanctions.economic-war]
+        excludes: [hist.cuban-revolution.betrayed-into-dictatorship]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, comprador-capital, landed-capital]
+          mechanism: >-
+            Holding Cuba up as national independence completed by socialism justifies expropriating foreign-owned land and utilities and
+            directing the surplus to public health and education, which removes a source of profit from US capital and its local partners.
+          drain: breaks
+          law_of_value: suspends
+      - id: hist.cuban-revolution.new-human-being
+        label: A revolution of moral incentives and the new human being
+        claim: >-
+          The revolution's deepest aim was to make a new kind of person who works for society rather than for money. Che Guevara's budgetary
+          system and voluntary labor pointed there; the later turn to Soviet-style incentives was a retreat.
+        voiced: >-
+          "Socialism cannot be built with the dull instruments left to us by capitalism. We must create the new man and woman
+          by work, by example, by conscience."
+        you: You think the heart of the Cuban Revolution was the attempt to make people work for one another, not for pay.
+        because: >-
+          Guevara argued in the Great Debate of 1963–64 that using profit and material incentives inside socialism would recreate capitalist
+          consciousness, as he saw happening in Eastern Europe. Mass voluntary labor, the literacy brigades and internationalist missions
+          showed what moral motives can do. Helen Yaffe reconstructs his system from Cuban archives.
+        against:
+          - from: marxism.market-socialism
+            text: >-
+              Moral incentives without accounting produced the failed ten-million-ton sugar harvest of 1970 and chronic shortage.
+              People respond to what feeds their families.
+          - from: liberalism.austrian
+            text: >-
+              A "new man" made by the state is a man with no choice. Every attempt to reshape human nature by command ends in coercion.
+        sources:
+          - {author: Ernesto Che Guevara, title: "Socialism and Man in Cuba", year: 1965}
+          - {author: Helen Yaffe, title: "Che Guevara: The Economics of Revolution", year: 2009}
+        traditions:
+          defining: [marxism.guevarism]
+          typical: [marxism.maoism, religious.liberation-theology]
+          contested: [marxism.ml]
+          rejects: [marxism.market-socialism, liberalism.austrian]
+        presupposes: [allocation.mechanism.central-planning]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [professional-managerial, petty-bourgeoisie]
+          mechanism: >-
+            Rejecting material incentives inside socialism blocks the growth of a managerial stratum paid by results, at the cost of the
+            productivity that such incentives buy.
+          drain: breaks
+          law_of_value: abolishes
+      - id: hist.cuban-revolution.betrayed-into-dictatorship
+        label: A democratic revolution betrayed into a communist dictatorship
+        claim: >-
+          Most who fought Batista fought for the 1940 constitution and free elections. Castro instead built a one-party state, jailed and
+          shot opponents, and drove more than a million Cubans into exile.
+        voiced: >-
+          "We fought Batista for a free Cuba, not for a Soviet one. Fidel promised elections and gave us firing squads."
+        you: You see the Cuban Revolution as a fight against one dictatorship that ended in another.
+        because: >-
+          The July 26 Movement's manifestos promised the restoration of the 1940 constitution; elections were postponed and then dropped.
+          Hundreds were executed after summary trials in 1959, independent unions and papers were taken over, revolutionaries like Huber
+          Matos were imprisoned for twenty years, and gay men and believers were sent to the UMAP labor camps in 1965–68.
+        against:
+          - from: marxism.ml
+            text: >-
+              Within two years the US had cut the sugar quota, organized the Bay of Pigs invasion and launched Operation Mongoose to sabotage
+              and assassinate. A pluralist opening under that siege would have been a door for restoration, as Guatemala 1954 had shown.
+          - from: marxism.dependency
+            text: >-
+              The 1940 constitution's land reform clause was never enforced; its parliamentary order coexisted with US ownership of the island.
+        sources:
+          - {author: Carlos Franqui, title: "Retrato de familia con Fidel (Family Portrait with Fidel)", year: 1981}
+          - {author: Hugh Thomas, title: "Cuba: The Pursuit of Freedom", year: 1971}
+          - {author: Armando Valladares, title: "Contra toda esperanza (Against All Hope)", year: 1985}
+        traditions:
+          defining: [conservatism.fusionism]
+          typical: [liberalism.classical, liberalism.internationalist, conservatism.neo, conservatism.christian-democracy]
+          rejects: [marxism.ml, marxism.guevarism]
+        presupposes: [intl.sovereignty.conditional-on-rights]
+        excludes: [hist.cuban-revolution.marti-completed]
+        analysis:
+          gains: [finance-capital, comprador-capital, landed-capital]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >-
+            Judging Cuba by liberal-democratic standards with the siege left out supplies the moral case for the embargo, whose effect
+            is to press for the return of property and market access to US capital and exiled owners.
+          drain: sustains
+          law_of_value: extends
+      - id: hist.cuban-revolution.revolution-from-above
+        label: A revolution from above that put a bureaucracy in Batista's place
+        claim: >-
+          A guerrilla elite substituted itself for the working class, then adopted the Soviet model. The unions became arms of the state;
+          workers got welfare and lost the right to organize independently.
+        voiced: >-
+          "Castro's revolution was made for the workers, never by them. The union federation was purged in 1959–60 and turned into
+          a transmission belt."
+        you: You think the Cuban Revolution improved workers' lives but never let workers run anything.
+        because: >-
+          Cuba had a strong labor movement before 1959, but the rebel army, not workers' organizations, took power; the general strike of April
+          1958 failed and the guerrilla leadership drew its own lesson. Union leaders elected in 1959 were removed within a year, and independent
+          strikes have had no legal place since. The state became the sole employer and the party the sole voice.
+        against:
+          - from: marxism.ml
+            text: >-
+              Workers participate through the unions, the neighborhood committees and the assemblies that discuss major laws. Independent
+              unions under siege would be paid for by Washington.
+          - from: marxism.trotskyism
+            text: >-
+              Cuba is a workers' state, deformed perhaps, but to be defended unconditionally against imperialism.
+        sources:
+          - {author: Samuel Farber, title: "The Origins of the Cuban Revolution Reconsidered", year: 2006}
+          - {author: Sam Dolgoff, title: "The Cuban Revolution: A Critical Perspective", year: 1976}
+        traditions:
+          defining: [marxism.third-camp, anarchism.syndicalist]
+          typical: [anarchism.communist, socdem.democratic-socialism]
+          contested: [marxism.trotskyism]
+          rejects: [marxism.ml, marxism.guevarism]
+        analysis:
+          gains: [core-workers]
+          pays: [professional-managerial]
+          mechanism: >-
+            Demanding independent unions in a besieged revolutionary state defends workers against their managers but opens a channel that
+            the besieging power has repeatedly funded.
+          drain: none
+          law_of_value: suspends
+          disputed: Third Worldists and Marxist-Leninists hold that this reading judges Cuba against an ideal with the siege left out.
+      - id: hist.cuban-revolution.armed-the-south
+        label: A small island that defied the empire and armed the South's liberation
+        claim: >-
+          Cuba's world role is its meaning. Tens of thousands of Cuban troops helped defeat apartheid South Africa's army in Angola, and
+          Cuban doctors have served across Africa, Latin America and Asia.
+        voiced: >-
+          "Cuban internationalists did more for African independence, freedom and justice than any other country."
+        you: You value Cuba above all for what it did for the liberation of Africa and Latin America.
+        because: >-
+          From 1975 Cuba sent troops to Angola against South African and Zairean invasions; the battle of Cuito Cuanavale in 1987–88 led to the
+          New York accords and Namibia's independence. Gleijeses shows from US, Cuban and South African archives that Havana acted on its own
+          initiative, not as Moscow's proxy. Mandela thanked Cuba in Matanzas in 1991.
+        against:
+          - from: conservatism.neo
+            text: >-
+              Cuban troops propped up an MPLA government against Angolan rivals and served Soviet strategy in Africa, Ethiopia included.
+          - from: liberalism.internationalist
+            text: >-
+              The medical missions earn hard currency for the state, which keeps most of the doctors' pay.
+        sources:
+          - {author: Piero Gleijeses, title: "Conflicting Missions: Havana, Washington, and Africa, 1959–1976", year: 2002}
+          - {author: Vijay Prashad, title: "The Darker Nations: A People's History of the Third World", year: 2007}
+        traditions:
+          defining: [marxism.third-worldism]
+          typical: [nationalism.pan-africanism, marxism.african-socialism, marxism.ml, religious.liberation-theology]
+          rejects: [conservatism.neo]
+        presupposes: [imperialism.nature.monopoly-stage]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >-
+            Valuing Cuba for its internationalism directs attention to the military and medical support one sovereign state gave others
+            against the settler and colonial orders that organized the drain in southern Africa.
+          drain: breaks
+          law_of_value: none
+      - id: hist.cuban-revolution.prosperity-destroyed
+        label: A comparatively rich country impoverished by socialism
+        claim: >-
+          Before 1959 Cuba was among the richer countries of Latin America. Expropriation and central planning wrecked it, leaving rationing
+          since 1962, the collapse of the 1990s and mass emigration.
+        voiced: >-
+          "Havana in 1958 had more cars and televisions per head than most of Latin America. Look at it now. That is what socialism does."
+        you: You see the Cuban Revolution as an economic disaster that made a prosperous island poor.
+        because: >-
+          Cuba's income per head in the 1950s ranked near the top of Latin America, and it had a large middle class. Since 1962 every family
+          has lived on a ration book; after Soviet subsidies ended in 1991 output fell by about a third. Planners cannot know what a market
+          reveals, and Cuba is the demonstration.
+        against:
+          - from: marxism.dependency
+            text: >-
+              Income per head averaged over Havana's casinos and the cane fields hides that rural Cuba had mass illiteracy and seasonal
+              unemployment. Health and literacy indicators now exceed those of richer neighbors despite the embargo.
+          - from: marxism.ml
+            text: >-
+              The comparison leaves out the sixty-year embargo, whose cost Cuba and UN bodies put at well over a hundred billion dollars.
+        sources:
+          - {author: Carmelo Mesa-Lago, title: "The Economy of Socialist Cuba: A Two-Decade Appraisal", year: 1981}
+          - {author: Ludwig von Mises, title: "Economic Calculation in the Socialist Commonwealth", year: 1920}
+        traditions:
+          defining: [liberalism.austrian, liberalism.chicago]
+          typical: [libertarianism.minarchist, conservatism.fusionism]
+          rejects: [marxism.ml, marxism.guevarism, marxism.dependency]
+        presupposes: [poverty.cause.bad-institutions]
+        excludes: [hist.cuban-revolution.marti-completed]
+        analysis:
+          gains: [finance-capital, comprador-capital]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >-
+            Attributing Cuba's shortages to planning and leaving out the embargo makes market reintegration under foreign capital the
+            only remedy, which would restore the island as a source of cheap labor and tourism rent.
+          drain: sustains
+          law_of_value: extends
