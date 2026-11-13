@@ -1,0 +1,453 @@
+id: arc.parish
+title: The Parish Hall
+blurb: A sugar town, a cut in the cane rate, and a roof paid for by the hacienda.
+role: You are the parish priest of a sugar town.
+place: A sugar-cane town in Negros Occidental, the Philippines
+start: arc.parish.01
+escalation: arc.parish.06
+pressure: [arc.parish.03]
+tags: [culture, economy, state, commonsense]
+nodes:
+  - id: arc.parish.01
+    type: scene
+    title: The hall
+    text: >
+      You are parish priest of San Rafael, a sugar town in Negros. The cane cutters' union asks to meet in
+      the parish hall: the mill cut the per-ton rate, and the dead season starts in May. Doña Remedios, whose
+      family owns Hacienda Esperanza, paid for the hall's new roof. She hears about the request before you
+      finish reading it.
+    why: This asks whether a church takes sides in a dispute between owners and workers, and on what grounds.
+    premises:
+      - id: no-sides
+        text: The premise that lending a room is taking a side. Owner and cutter are both my parishioners.
+        evidence: [{position: solidarity.basis.one-body, w: 2}]
+    conditions:
+      - id: rebels
+        text: It depends whether the union has ties to the armed underground.
+        evidence: [{position: violence.political.never, w: 1}, {position: law.nature.rule-of-law, w: 1}]
+    options:
+      - id: yes
+        text: Say yes. The hall belongs to the parish, and the parish is mostly cane cutters.
+        set: {hall_open: true}
+        evidence:
+          - {position: religion.public.prophetic-church, w: 3}
+          - {position: workplace.conflict.structural-antagonism, w: 1}
+        probe:
+          ask: What makes it right to open the door to them?
+          options:
+            - text: "Christ chose the poor. His church has no business choosing differently."
+              cause: divine
+              evidence: [{position: religion.public.prophetic-church, w: 2}]
+            - text: A wage that can't feed a family is a sin, not a political opinion.
+              cause: ideas
+              evidence: [{position: wage.nature.just-wage, w: 2}]
+            - text: They cut the cane on land their grandparents cleared. They should own it.
+              cause: structures
+              evidence: [{position: property.land.to-the-tiller, w: 2}]
+        consequence: The union books every Thursday. Doña Remedios sends word that she would like a word.
+        next: arc.parish.02a
+      - id: both
+        text: Yes, and offer it to the planters' association on the same terms. The church takes no side.
+        set: {hall_open: true}
+        evidence:
+          - {position: solidarity.basis.one-body, w: 2}
+          - {position: workplace.conflict.mutual-duties, w: 2}
+        consequence: The union books every Thursday. The planters decline, and say so loudly.
+        next: arc.parish.02a
+      - id: no
+        text: No. The hall is for catechism and weddings, not wage disputes.
+        set: {hall_open: false}
+        evidence:
+          - {position: cs.not-political.faith-above-politics, w: 3}
+        consequence: The union meets on the basketball court. It rains.
+        next: arc.parish.02b
+      - id: table
+        text: No. Invite Doña Remedios and the union to the rectory and sit them down together.
+        set: {hall_open: false}
+        evidence:
+          - {position: workplace.conflict.mutual-duties, w: 3}
+          - {position: workplace.conflict.structural-antagonism, w: -1}
+        consequence: Doña Remedios sends her overseer. The union leader, Nonoy, leaves after ten minutes.
+        next: arc.parish.02b
+
+  - id: arc.parish.02a
+    type: explanation
+    title: Two halves
+    text: >
+      The first union meeting fills the hall. On Sunday the planters' families move from the front pews to
+      the back, and half the choir quits. Your sacristan says the parish has never been this divided, not
+      even under martial law. Why is it splitting now?
+    why: This asks what kind of cause you reach for when a community divides.
+    premises:
+      - id: not-split
+        text: It isn't splitting. It was always split; now the pews show it.
+        evidence: [{position: workplace.conflict.structural-antagonism, w: 2}, {position: cs.not-political.everything-political, w: 1}]
+    options:
+      - id: agitators
+        text: Someone from outside is stirring the cutters up. Parishes don't split by themselves.
+        cause: individuals
+        evidence:
+          - {position: workplace.conflict.mutual-duties, w: 2}
+          - {position: workplace.conflict.structural-antagonism, w: -2}
+      - id: interests
+        text: The cutters and the hacienda want opposite things. The hall just made it visible.
+        cause: structures
+        evidence:
+          - {position: workplace.conflict.structural-antagonism, w: 3}
+      - id: mammon
+        text: Both sides have put money above God. Wealth is held in trust, and the trust is broken.
+        cause: divine
+        evidence:
+          - {position: inequality.justice.stewardship, w: 3}
+      - id: envy
+        text: Envy. The cutters look at the big house and want it. That's older than any union.
+        cause: nature
+        evidence:
+          - {position: property.private.natural-right, w: 2}
+          - {position: wage.nature.just-wage, w: -1}
+    next: arc.parish.03
+
+  - id: arc.parish.02b
+    type: voices
+    title: The steps
+    text: >
+      After Mass, two parishioners corner you on the church steps, each certain you agree with them. The
+      rain from Thursday's meeting is still on the court. Who is right?
+    voices:
+      - {name: Lola Ising, says: "Father lends the hall for the Doña's birthday and not for us. The church has picked its side. It just won't say which."}
+      - {name: Mr. Villaflor, says: "The union wants a hall today and the land tomorrow. Father kept the church out of a fight that isn't the church's."}
+    why: This asks whether staying out of a dispute is itself a side, and what a church owes to property and to the poor.
+    options:
+      - id: ising
+        text: Lola Ising. Staying out helps whoever already has the land.
+        cause: structures
+        evidence:
+          - {position: cs.not-political.everything-political, w: 3}
+          - {position: religion.public.prophetic-church, w: 2}
+      - id: villaflor
+        text: Mr. Villaflor. The land is the family's, and the church guards souls, not fields.
+        cause: ideas
+        evidence:
+          - {position: property.private.natural-right, w: 2}
+          - {position: cs.not-political.faith-above-politics, w: 2}
+      - id: one-body
+        text: Both miss it. Owner and cutter owe each other duties; the church should remind both.
+        cause: divine
+        evidence:
+          - {position: solidarity.basis.one-body, w: 2}
+          - {position: workplace.conflict.mutual-duties, w: 2}
+      - id: tiller
+        text: Both miss it. The question isn't the hall. It's why one family owns the town's land.
+        cause: structures
+        evidence:
+          - {position: property.land.to-the-tiller, w: 3}
+    next: arc.parish.03
+
+  - id: arc.parish.03
+    type: pressure
+    title: The envelope
+    tests: religion.public.prophetic-church
+    text: >
+      Doña Remedios visits the rectory with an envelope: ₱1.2 million for the parish school's scholarship
+      fund, which pays fees for forty cutters' children. She asks only that the union meet somewhere else,
+      and that you read a short letter on Sunday about "outside agitators." The bishop's office has already
+      called to say what a generous family she is.
+    why: This sets what the parish needs to keep running against what you think the church owes the poor.
+    premises:
+      - id: bribe
+        text: The premise that this is a gift. It's a purchase.
+        evidence: [{position: religion.public.prophetic-church, w: 1}, {position: workplace.conflict.structural-antagonism, w: 1}]
+    options:
+      - id: refuse
+        text: Thank her, and hand the envelope back.
+        pressure: principle
+        cost: The scholarship fund runs dry in June. Forty families are told by letter.
+        set: {took_money: false}
+        evidence:
+          - {position: religion.public.prophetic-church, w: 2}
+        next: arc.parish.04
+      - id: take
+        text: Take it, close the hall to the union, read the letter. Forty children in school outweigh a meeting room.
+        pressure: interest
+        cost: The union meets under a mango tree. Nonoy stops coming to Mass, and so does his mother.
+        set: {took_money: true}
+        evidence:
+          - {position: inequality.justice.stewardship, w: 2}
+          - {position: religion.public.prophetic-church, w: -2}
+        next: arc.parish.04
+      - id: half
+        text: "Take the money for the children, keep the hall open, refuse the letter. The roof is hers; the pulpit isn't."
+        pressure: mixed
+        cost: She takes back half the envelope and phones the bishop before she reaches her car.
+        set: {took_money: true}
+        evidence:
+          - {position: property.private.social-function, w: 2}
+          - {position: religion.public.prophetic-church, w: 1}
+        next: arc.parish.04
+      - id: quiet
+        text: Take it, close the hall, and quietly lend the union the chapel in the next village.
+        pressure: mixed
+        cost: Both sides find out by August. Neither fully trusts you again.
+        set: {took_money: true}
+        evidence:
+          - {position: solidarity.basis.one-body, w: 1}
+          - {position: cs.not-political.dangerous, w: 1}
+        next: arc.parish.04
+
+  - id: arc.parish.04
+    type: tradeoff
+    title: The homily
+    text: >
+      Sunday. Thirty pews of cutters, eight of planters, and a letter from the bishop asking priests to
+      preach "reconciliation, not class hatred." The mill cut the rate again on Friday. You have twelve
+      minutes and one homily.
+    why: This sets peace inside the parish against justice for its poorest members, and asks which you give up.
+    premises:
+      - id: false-peace
+        text: The premise that reconciliation and justice compete. There's no peace on a starvation wage.
+        evidence: [{position: wage.nature.just-wage, w: 2}]
+    options:
+      - id: wage
+        text: Preach the just wage. A man who cuts cane all day is owed enough to feed his children.
+        set: {pulpit: side}
+        evidence:
+          - {position: wage.nature.just-wage, w: 3}
+          - {position: property.private.social-function, w: 1}
+      - id: reconcile
+        text: Preach reconciliation. Owner and worker are one body, and hatred poisons both.
+        set: {pulpit: peace}
+        evidence:
+          - {position: solidarity.basis.one-body, w: 3}
+          - {position: workplace.conflict.mutual-duties, w: 1}
+      - id: gospel
+        text: Preach the day's Gospel and nothing else. The pulpit is not a picket line.
+        set: {pulpit: peace}
+        evidence:
+          - {position: cs.not-political.faith-above-politics, w: 3}
+      - id: name
+        text: Name the mill and the rate from the pulpit. Silence is a side too.
+        set: {pulpit: side}
+        evidence:
+          - {position: religion.public.prophetic-church, w: 2}
+          - {position: cs.not-political.everything-political, w: 2}
+      - id: property
+        text: Preach that what a family has built is theirs, and coveting it is a sin. Somebody has to.
+        set: {pulpit: peace}
+        evidence:
+          - {position: property.private.natural-right, w: 3}
+    next:
+      - {if: {flag: {key: pulpit, eq: side}}, to: arc.parish.05a}
+      - {to: arc.parish.05b}
+
+  - id: arc.parish.05a
+    type: verdict
+    title: The hills
+    text: >
+      Your old seminary teacher writes from Manila. In the 1970s and 80s, he reminds you, some Filipino
+      priests and nuns left their parishes for the armed underground, saying the poor had run out of
+      peaceful roads. Their bishops ordered them back. Some were killed, some came home, some never did.
+      Where would you have stood?
+    why: This asks when, if ever, political violence is justified, and what a church owes to a law it thinks unjust.
+    conditions:
+      - id: martial-law
+        text: It depends on martial law. Under a dictatorship the question is different.
+        evidence: [{position: law.nature.natural-law, w: 2}]
+    options:
+      - id: went
+        text: With the ones who went. When every door is shut, a priest goes where his people are.
+        evidence:
+          - {position: violence.political.revolutionary, w: 3}
+          - {position: religion.public.prophetic-church, w: 1}
+      - id: bishops
+        text: With the bishops. A priest stands with the poor, never with a gun.
+        evidence:
+          - {position: violence.political.never, w: 3}
+          - {position: religion.public.prophetic-church, w: 1}
+      - id: law
+        text: With the bishops, because a bad law is still safer than armed men deciding who lives.
+        evidence:
+          - {position: law.nature.rule-of-law, w: 3}
+          - {position: violence.political.never, w: 1}
+      - id: disobey
+        text: "Neither. Break the unjust law in the open, unarmed, and take the consequences."
+        evidence:
+          - {position: law.nature.natural-law, w: 3}
+          - {position: violence.political.never, w: 1}
+      - id: souls
+        text: Against both. The bishops and the rebels both forgot that the church's business is souls.
+        evidence:
+          - {position: cs.not-political.faith-above-politics, w: 3}
+    next: arc.parish.06
+
+  - id: arc.parish.05b
+    type: line
+    title: Where it stops
+    text: >
+      The bishop's letter asks each parish to decide where the church's part ends. Here is a list, mildest
+      first. Where do you draw the line?
+    cases:
+      - Feeding cutters' families through the dead season.
+      - Lending the hall for a union meeting.
+      - Preaching that the cane rate is unjust.
+      - Blessing a rice field the cutters planted on idle hacienda land.
+      - Hiding a union leader from a police warrant.
+      - Ringing the church bell to call the town against an eviction.
+    why: This asks how far you think a church may go into a dispute over property, wages and law.
+    options:
+      - id: after-1
+        text: After the first. Feed the hungry, and leave the rest to the law.
+        evidence:
+          - {position: cs.not-political.faith-above-politics, w: 2}
+          - {position: law.nature.rule-of-law, w: 1}
+      - id: after-3
+        text: After the third. Tell the truth about the wage. Don't touch anyone's field.
+        evidence:
+          - {position: wage.nature.just-wage, w: 2}
+          - {position: property.private.natural-right, w: 1}
+      - id: after-4
+        text: After the fourth. Idle land should feed people; that's what land is for. Hiding fugitives isn't.
+        evidence:
+          - {position: property.private.social-function, w: 3}
+          - {position: law.nature.rule-of-law, w: 1}
+      - id: all
+        text: All six. A church that stops halfway has chosen the hacienda.
+        evidence:
+          - {position: religion.public.prophetic-church, w: 3}
+          - {position: law.nature.natural-law, w: 1}
+    next: arc.parish.06
+
+  - id: arc.parish.06
+    type: escalation
+    title: The bell
+    recap: In a sugar town in the Philippines, cane cutters have been organizing against the hacienda that owns most of the land.
+    text: >
+      Before dawn, eighty cutters' families plant rice on thirty idle hectares of Hacienda Esperanza. By
+      seven, police and hacienda guards arrive with an eviction order. The families run for the church. The
+      police chief, at your door, wants the leaders handed over. The bell rope hangs beside you. Ring it and
+      the whole town comes.
+    why: The middle option is gone. This records which way you break when property and order collide with the landless.
+    options:
+      - id: ring
+        text: Ring the bell and stand in the church door.
+        side: {axis: class, dir: dispossessed}
+        evidence:
+          - {position: religion.public.prophetic-church, w: 2}
+          - {position: property.land.to-the-tiller, w: 2}
+        consequence: Half the town comes. The police withdraw by noon. The rice stays in. The bishop calls that night.
+        next: arc.parish.07a
+      - id: open
+        text: Open the doors. A court order is a court order, and nobody gets hurt this way.
+        side: {axis: class, dir: order}
+        evidence:
+          - {position: law.nature.rule-of-law, w: 3}
+          - {position: property.private.natural-right, w: 1}
+        consequence: Nonoy and two others leave in handcuffs. The rest go home. The field is plowed under by Friday.
+        next: arc.parish.07b
+      - id: persuade
+        text: Talk the families into leaving the field and the church quietly, for the children's sake.
+        side: {axis: class, dir: order}
+        evidence:
+          - {position: violence.political.never, w: 2}
+          - {position: workplace.conflict.mutual-duties, w: 1}
+        consequence: Nobody is arrested. The rice is plowed under. Nonoy says you did the hacienda's work, politely.
+        next: arc.parish.07b
+      - id: away
+        text: Lock the rectory door and call the bishop. This is above a parish priest.
+        side: {axis: class, dir: neither}
+        evidence:
+          - {position: cs.not-political.dangerous, w: 2}
+        consequence: By the time the bishop calls back it's over. Three arrested, one boy with a broken arm.
+        next: arc.parish.07b
+
+  - id: arc.parish.07a
+    type: tradeoff
+    title: The transfer
+    text: >
+      The bishop is kind and brief. You are being moved to a mountain parish three hours away, "for your
+      safety and the parish's peace." The cutters are drafting a petition to keep you. The bishop notes that
+      a priest who defies his bishop teaches a whole town that any authority can be defied.
+    why: This sets obedience to an authority you accept against loyalty to the people you stood with.
+    options:
+      - id: obey
+        text: Go. Obedience is a vow, not a convenience.
+        evidence:
+          - {position: authority.legitimacy.divine-ordinance, w: 3}
+      - id: stay
+        text: Refuse to leave until the harvest is in. Let the petition run.
+        evidence:
+          - {position: religion.public.prophetic-church, w: 2}
+          - {position: law.nature.natural-law, w: 1}
+      - id: theirs
+        text: Go, and tell the cutters to drop the petition. The fight is theirs, not their priest's.
+        evidence:
+          - {position: workplace.conflict.structural-antagonism, w: 1}
+          - {position: authority.legitimacy.divine-ordinance, w: 1}
+    next: arc.parish.08
+
+  - id: arc.parish.07b
+    type: scene
+    title: The posters
+    text: >
+      A week later, posters on the lamp posts name union members as rebel fighters. Among the names is your
+      catechist, Inday Merlie, who teaches First Communion. Nobody signed the posters. In Negros, people named
+      on lists like this have been shot. Merlie asks you what she should do.
+    why: This asks whom you trust to protect someone under threat, and what you risk to do it.
+    options:
+      - id: police
+        text: Report the posters to the police. If she's done nothing, the law will protect her.
+        evidence:
+          - {position: police.role.public-safety, w: 3}
+      - id: hide
+        text: Hide her in a convent in Bacolod, then go to the human rights office with the poster.
+        evidence:
+          - {position: police.role.public-safety, w: -2}
+          - {position: religion.public.prophetic-church, w: 2}
+      - id: quit
+        text: Tell her to leave the union and say so publicly. Her name comes off; she lives.
+        evidence:
+          - {position: cs.not-political.dangerous, w: 3}
+      - id: pulpit
+        text: Read every name on that poster from the pulpit on Sunday, and say they are your parishioners.
+        evidence:
+          - {position: religion.public.prophetic-church, w: 2}
+          - {position: cs.not-political.everything-political, w: 2}
+    next: arc.parish.08
+
+  - id: arc.parish.08
+    type: reason
+    title: Harvest
+    text: >
+      October. The cane is in. The mill restored half the old rate after the town made noise. Doña Remedios
+      has stopped coming to Mass; so have two cutters' families, for other reasons. Looking back, what was
+      the fight in your parish about?
+    why: This asks what kind of cause you reach for, and what you think a church is for.
+    options:
+      - id: land
+        text: Who owns the land and who works it. Everything else followed from that.
+        cause: structures
+        evidence:
+          - {position: workplace.conflict.structural-antagonism, w: 2}
+          - {position: property.land.to-the-tiller, w: 2}
+      - id: trust
+        text: Whether property remembers what it's for. That land was meant to feed people.
+        cause: divine
+        evidence:
+          - {position: property.private.social-function, w: 3}
+          - {position: inequality.justice.stewardship, w: 1}
+      - id: pride
+        text: Pride and envy on both sides. The devil does his best work in a split parish.
+        cause: divine
+        evidence:
+          - {position: solidarity.basis.one-body, w: 2}
+          - {position: workplace.conflict.mutual-duties, w: 1}
+      - id: people
+        text: A few hotheads and one stubborn family. Different people, no fight.
+        cause: individuals
+        evidence:
+          - {position: workplace.conflict.mutual-duties, w: 2}
+      - id: politics
+        text: Politics getting into a church. That's where the harm started.
+        cause: ideas
+        evidence:
+          - {position: cs.not-political.faith-above-politics, w: 2}
+          - {position: religion.public.separation, w: 1}

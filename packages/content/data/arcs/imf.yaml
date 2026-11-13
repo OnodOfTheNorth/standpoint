@@ -1,0 +1,441 @@
+id: arc.imf
+title: Three Weeks of Dollars
+blurb: A new government, three weeks of fuel money, and a letter from Washington with tracked changes.
+role: You are the newly appointed finance minister of a government elected to end the queues.
+place: The finance ministry in Colombo, Sri Lanka
+start: arc.imf.01
+escalation: arc.imf.05
+pressure: [arc.imf.04]
+tags: [world, economy, commonsense]
+nodes:
+  - id: arc.imf.01
+    type: scene
+    title: Week one
+    text: >
+      You were sworn in as finance minister on Monday. Your party won on one line: no more queues. The
+      treasury holds three weeks of dollars for fuel and medicine. An IMF team lands on Tuesday. A letter
+      from the bondholders' lawyers in New York is already on your desk, and the central bank governor wants
+      an answer before markets open.
+    why: This asks where you look first when a poor country runs out of dollars, to the lenders, to its own people, to a new partner, or to the books.
+    premises:
+      - id: not-broke
+        text: The premise that the country is out of options. It is out of dollars, which is not the same thing.
+        evidence: [{position: money.nature.currency-hierarchy, w: 2}]
+    conditions:
+      - id: stolen
+        text: It depends how much of the debt was stolen.
+        evidence: [{position: comprador.nature.kleptocratic-elites, w: 1}]
+    options:
+      - id: sign
+        text: Call the IMF in and sign fast. Every week without a deal costs a week of fuel.
+        set: {route: fund}
+        evidence:
+          - {position: development.path.integration, w: 2}
+          - {position: intl.institutions.cooperation, w: 2}
+        consequence: The mission chief is pleased. The bondholders' lawyers send a second, friendlier letter.
+        next: arc.imf.02
+      - id: bargain
+        text: Take a programme, but fight over every condition in it.
+        set: {route: fund}
+        evidence:
+          - {position: intl.institutions.cooperation, w: 1}
+          - {position: intl.sovereignty.nations-set-own-course, w: 1}
+        consequence: The mission extends its stay by a week. The rupee slips two percent while everyone is polite.
+        next: arc.imf.02
+      - id: stop
+        text: Stop paying the bondholders. Fuel and medicine first. New York can wait.
+        set: {route: default}
+        evidence:
+          - {position: cs.taxes.squeezed-for-creditors, w: 2}
+          - {position: intl.sovereignty.nations-set-own-course, w: 2}
+        probe:
+          ask: What makes the bondholders the ones who wait?
+          options:
+            - text: They lent at nine percent because they knew the risk. Risk means sometimes losing.
+              cause: interests
+              evidence: [{position: intl.institutions.moral-hazard, w: 2}]
+            - text: A nurse's wage is a debt too, and an older one.
+              cause: ideas
+              evidence: [{position: cs.taxes.squeezed-for-creditors, w: 2}]
+            - text: Every dollar we send them is tea and shirts we already shipped for too little.
+              cause: structures
+              evidence: [{position: poverty.cause.drain, w: 2}]
+        consequence: Two ratings agencies put the country on watch. The fuel ships keep coming, for now.
+        next: arc.imf.02
+      - id: east
+        text: Call Beijing and the BRICS bank. There are other lenders now.
+        set: {route: default}
+        evidence:
+          - {position: intl.institutions.build-alternatives, w: 3}
+          - {position: world.order.multipolar-sovereignty, w: 1}
+        consequence: Beijing answers within a day. The US ambassador asks for a meeting within an hour.
+        next: arc.imf.02
+      - id: audit
+        text: Freeze everything until an audit says who borrowed what, and who kept it.
+        set: {route: fund}
+        evidence:
+          - {position: comprador.nature.kleptocratic-elites, w: 2}
+          - {position: poverty.cause.bad-institutions, w: 1}
+        consequence: The auditors ask for six months. You have three weeks.
+        next: arc.imf.02
+
+  - id: arc.imf.02
+    type: explanation
+    title: The binder
+    text: >
+      Your officials bring the history in a single binder. Sixteen IMF programmes since independence.
+      Exports of tea and garments, imports of fuel, machinery and medicine. Bonds sold at nine percent to fund
+      a highway and an empty airport. The richest families' dollar deposits sitting safely in Singapore. Why
+      does the country keep ending up here?
+    why: This asks why you think a country like this one keeps running out of money, and what kind of cause you reach for.
+    premises:
+      - id: one-country
+        text: The premise that "the country" ended up anywhere. Some people in it did very well.
+        evidence: [{position: comprador.nature.broker-class, w: 1}]
+    options:
+      - id: drain
+        text: It sells cheap and buys dear, in a currency it cannot print. Those terms were set elsewhere.
+        cause: structures
+        evidence:
+          - {position: poverty.cause.drain, w: 3}
+          - {position: money.nature.currency-hierarchy, w: 1}
+        next: [{if: {flag: {key: route, eq: default}}, to: arc.imf.03b}, {to: arc.imf.03a}]
+      - id: elite
+        text: The families with money in Singapore borrowed in the country's name and kept the profits abroad.
+        cause: interests
+        evidence:
+          - {position: comprador.nature.broker-class, w: 3}
+        next: [{if: {flag: {key: route, eq: default}}, to: arc.imf.03b}, {to: arc.imf.03a}]
+      - id: thieves
+        text: Successive governments stole it and wasted it. Put the last lot on trial.
+        cause: individuals
+        evidence:
+          - {position: comprador.nature.kleptocratic-elites, w: 3}
+        next: [{if: {flag: {key: route, eq: default}}, to: arc.imf.03b}, {to: arc.imf.03a}]
+      - id: discipline
+        text: No discipline. A central bank that printed on command and politicians who bought votes with subsidies.
+        cause: ideas
+        evidence:
+          - {position: poverty.cause.bad-institutions, w: 2}
+          - {position: money.nature.rule-bound-central-bank, w: 2}
+        next: [{if: {flag: {key: route, eq: default}}, to: arc.imf.03b}, {to: arc.imf.03a}]
+      - id: luck
+        text: Bad luck. A pandemic killed tourism and a war doubled the price of oil.
+        cause: chance
+        evidence:
+          - {position: development.path.integration, w: 1}
+        next: [{if: {flag: {key: route, eq: default}}, to: arc.imf.03b}, {to: arc.imf.03a}]
+
+  - id: arc.imf.03a
+    type: line
+    title: Tracked changes
+    text: >
+      The IMF's draft letter of intent arrives with tracked changes. The mission chief is courteous and
+      flies home on Friday. The conditions run from the ones the Fund cares about least to the ones it cares
+      about most, though nobody says so. Where do you draw the line?
+    cases:
+      - Publish every government contract online
+      - Make the central bank independent of the government
+      - Raise VAT from 12 to 18 percent, rice and lentils included
+      - End the fuel subsidy, so petrol rises sixty percent
+      - Sell the state airline and the electricity board
+    why: This asks which outside conditions you accept as reasonable and where you think help becomes rule.
+    premises:
+      - id: no-loan
+        text: The premise that the country needs this loan at all.
+        evidence: [{position: development.path.delinking, w: 1}]
+    options:
+      - id: all
+        text: Sign all of it. The country gave up the right to pick and choose when it borrowed.
+        evidence:
+          - {position: intl.institutions.cooperation, w: 2}
+          - {position: development.path.integration, w: 2}
+        next: arc.imf.04
+      - id: two
+        text: Contracts and the central bank, yes. Taxing rice and selling the grid, no.
+        evidence:
+          - {position: money.nature.rule-bound-central-bank, w: 1}
+          - {position: intl.institutions.creditor-instruments, w: 1}
+        next: arc.imf.04
+      - id: one
+        text: Publish the contracts. Everything after that is the Fund running the country.
+        evidence:
+          - {position: intl.institutions.creditor-instruments, w: 2}
+          - {position: intl.sovereignty.nations-set-own-course, w: 1}
+        next: arc.imf.04
+      - id: none
+        text: None. These conditions are the first draft of the next crisis.
+        evidence:
+          - {position: intl.institutions.creditor-instruments, w: 3}
+        next: arc.imf.04
+      - id: reforms-no-loan
+        text: Do the reforms, all of them, and refuse the loan. A bailout only pays off the people who lent stupidly.
+        evidence:
+          - {position: intl.institutions.moral-hazard, w: 3}
+          - {position: development.path.market-freedom, w: 1}
+        next: arc.imf.04
+
+  - id: arc.imf.03b
+    type: voices
+    title: Two memos
+    text: >
+      Your two senior advisers arrive at the same meeting with opposite memos. The tea goes cold while they talk.
+    voices:
+      - {name: Ruwan, says: "Default without the Fund and nobody insures a tanker for ten years. The rupee halves, and the poor pay first, as they always do."}
+      - {name: Shiromi, says: "Sixteen programmes, sixteen promises. The debt is a pipe from our tea estates to their pension funds. Close the pipe and build at home."}
+    why: This asks how a poor country should deal with the world economy, by joining it on its terms, by pulling back, or by changing partners.
+    conditions:
+      - id: food
+        text: It depends whether the country can feed itself.
+        evidence: [{position: development.path.delinking, w: 1}]
+    options:
+      - id: ruwan
+        text: Ruwan.
+        cause: interests
+        evidence:
+          - {position: development.path.integration, w: 2}
+          - {position: intl.institutions.cooperation, w: 1}
+        next: arc.imf.04
+      - id: shiromi
+        text: Shiromi.
+        cause: structures
+        evidence:
+          - {position: development.path.delinking, w: 3}
+          - {position: poverty.cause.drain, w: 1}
+        next: arc.imf.04
+      - id: lenders
+        text: Both miss it. There is more than one lender in the world now. Play them against each other.
+        cause: interests
+        evidence:
+          - {position: world.order.multipolar-sovereignty, w: 2}
+          - {position: intl.institutions.build-alternatives, w: 1}
+        next: arc.imf.04
+      - id: who-pays
+        text: Both miss it. The question is who at home pays, and our own rich never have.
+        cause: interests
+        evidence:
+          - {position: tax.purpose.redistribute, w: 2}
+          - {position: comprador.nature.broker-class, w: 1}
+        next: arc.imf.04
+
+  - id: arc.imf.04
+    type: pressure
+    title: Friday
+    tests: finance.control.capital-controls
+    text: >
+      The central bank wants to freeze dollar transfers abroad from Friday morning. Your sister calls on
+      Wednesday. She is wiring her savings to Melbourne on Friday for her son's first university term. Your
+      own retirement savings, legally declared, sit in a dollar account in Singapore. Four people know about Friday.
+    why: This sets a measure you may believe in against your family's money and your own.
+    premises:
+      - id: no-freeze
+        text: The premise that freezing people's money is ever the state's to decide.
+        evidence: [{position: finance.control.free-flows, w: 2}]
+    options:
+      - id: freeze
+        text: Freeze on Friday. Say nothing to your sister.
+        pressure: principle
+        cost: Your nephew defers his place for a year. Your sister stops coming to family lunches.
+        evidence:
+          - {position: finance.control.capital-controls, w: 3}
+        next: arc.imf.05
+      - id: tip
+        text: Tell her to send it Thursday, then freeze.
+        pressure: mixed
+        cost: Her transfer clears. So does $200 million from other families who heard. A newspaper prints the timing.
+        evidence:
+          - {position: finance.control.capital-controls, w: 1}
+        next: arc.imf.05
+      - id: home
+        text: Freeze on Friday, and bring your own Singapore savings home first, at the official rate.
+        pressure: principle
+        cost: You lose a third of your retirement savings in the conversion.
+        evidence:
+          - {position: finance.control.capital-controls, w: 3}
+          - {position: intl.sovereignty.nations-set-own-course, w: 1}
+        next: arc.imf.05
+      - id: no-controls
+        text: No controls. Money that can't leave never comes in again.
+        pressure: interest
+        cost: A billion dollars leaves within the month. The rupee falls a fifth, and your Singapore account is worth more at home than ever.
+        evidence:
+          - {position: finance.control.free-flows, w: 3}
+        next: arc.imf.05
+
+  - id: arc.imf.05
+    type: escalation
+    title: Six hours
+    recap: In Sri Lanka, a newly elected government that has run out of dollars faces the IMF's final terms.
+    text: >
+      Midnight. The IMF board meets in Washington in six hours. One condition was added this week at the
+      request of the largest shareholder: sell the electricity board to a consortium already chosen, before
+      any money moves. Without a deal, insurers won't cover next month's fuel tankers. Ten thousand people are
+      outside parliament. The prime minister wants your answer.
+    why: The middle option is gone. This records which side you take when a lender backed by the great powers and a poor country's own course collide.
+    options:
+      - id: sign
+        text: Sign. A country can't run its hospitals on pride.
+        side: {axis: empire, dir: order}
+        set: {signed: true}
+        evidence:
+          - {position: intl.institutions.cooperation, w: 2}
+          - {position: development.path.integration, w: 2}
+        consequence: The money moves on Thursday. The consortium takes the grid in ninety days. Outside, someone burns an effigy wearing your glasses.
+        next: [{if: {flag: {key: signed, eq: true}}, to: arc.imf.06a}, {to: arc.imf.06b}]
+      - id: sign-name
+        text: Sign, and tell the country exactly who made you do it.
+        side: {axis: empire, dir: order}
+        set: {signed: true}
+        evidence:
+          - {position: intl.institutions.creditor-instruments, w: 2}
+          - {position: development.path.integration, w: 1}
+        consequence: The speech is cheered. The deal goes through. The US ambassador asks for a quiet word.
+        next: [{if: {flag: {key: signed, eq: true}}, to: arc.imf.06a}, {to: arc.imf.06b}]
+      - id: refuse
+        text: Refuse. Declare a moratorium on all foreign debt and ration fuel.
+        side: {axis: empire, dir: dispossessed}
+        set: {signed: false}
+        evidence:
+          - {position: intl.sovereignty.nations-set-own-course, w: 3}
+          - {position: development.path.delinking, w: 1}
+        consequence: Two ratings agencies downgrade you before breakfast. The crowd outside goes quiet, then starts singing.
+        next: [{if: {flag: {key: signed, eq: true}}, to: arc.imf.06a}, {to: arc.imf.06b}]
+      - id: crowd
+        text: Refuse, and walk out to the crowd. Ask the country to carry the moratorium itself.
+        side: {axis: empire, dir: dispossessed}
+        set: {signed: false}
+        evidence:
+          - {position: intl.sovereignty.nations-set-own-course, w: 2}
+          - {position: intl.institutions.creditor-instruments, w: 2}
+        consequence: The dock unions pledge to run the ports under rationing. The opposition calls it mob rule. The prime minister did not ask you to go outside.
+        next: [{if: {flag: {key: signed, eq: true}}, to: arc.imf.06a}, {to: arc.imf.06b}]
+      - id: resign
+        text: Resign. Let someone else put their name to it.
+        side: {axis: empire, dir: neither}
+        set: {signed: true}
+        evidence:
+          - {position: intl.institutions.creditor-instruments, w: 1}
+        consequence: Your deputy signs at five in the morning. You watch it on the news from your sister's sofa.
+        next: [{if: {flag: {key: signed, eq: true}}, to: arc.imf.06a}, {to: arc.imf.06b}]
+
+  - id: arc.imf.06a
+    type: tradeoff
+    title: The review
+    text: >
+      Six months on. The grid's new owner has tripled household tariffs. The first IMF review is in March and
+      the deficit target is tight. A lifeline tariff for the poorest two million households would cost exactly
+      the margin you have. The garment exporters, meanwhile, just had their best year in a decade on the cheap rupee.
+    why: This sets keeping faith with the lenders against keeping the lights on for the poor, and asks who should pay.
+    conditions:
+      - id: temporary
+        text: It depends whether the tariff rise is temporary.
+        evidence: [{position: intl.institutions.cooperation, w: 1}]
+    options:
+      - id: target
+        text: Hit the target. Miss one review and the whole programme comes apart.
+        evidence:
+          - {position: intl.institutions.cooperation, w: 2}
+        consequence: The review passes. Two million households go back to kerosene lamps after eight.
+        next: arc.imf.07
+      - id: lifeline
+        text: Pay for the lifeline and miss the target. Let them fly in and argue.
+        evidence:
+          - {position: welfare.state.safety-net, w: 3}
+          - {position: intl.sovereignty.nations-set-own-course, w: 1}
+        consequence: The review is postponed. So is the next disbursement.
+        next: arc.imf.07
+      - id: windfall
+        text: Pay for it with a windfall tax on the exporters who gained from the devaluation.
+        evidence:
+          - {position: tax.purpose.redistribute, w: 3}
+        consequence: The exporters' association threatens to move orders to Bangladesh. Two of them are in your coalition.
+        next: arc.imf.07
+      - id: market
+        text: Leave prices alone. Cheap power for some means rationed power for everyone.
+        evidence:
+          - {position: development.path.market-freedom, w: 3}
+        consequence: The grid stops losing money. Its new owner books its first dividend.
+        next: arc.imf.07
+
+  - id: arc.imf.06b
+    type: scene
+    title: The offers
+    text: >
+      Three months into the moratorium. Fuel is rationed to twenty litres a week. The rice harvest is in, so
+      nobody is hungry yet. A state bank from Beijing offers a two-billion-dollar credit line in exchange for a
+      99-year lease on the southern port. The country's biggest exporters offer to fund imports too, if they
+      can keep their export dollars abroad.
+    why: This asks what independence costs, and from whom you would take help once you have said no to the Fund.
+    premises:
+      - id: all-same
+        text: The premise that these are different offers. A lender is a lender.
+        evidence: [{position: intl.institutions.creditor-instruments, w: 1}]
+    options:
+      - id: port
+        text: Take Beijing's money. A port lease is cheaper than an IMF programme.
+        evidence:
+          - {position: intl.institutions.build-alternatives, w: 2}
+          - {position: world.order.multipolar-sovereignty, w: 2}
+        consequence: The credit line opens. A new opposition party forms around the word "sovereignty."
+        next: arc.imf.07
+      - id: neither
+        text: Neither. Ration, grow more food, make more at home. Slower, and ours.
+        evidence:
+          - {position: development.path.delinking, w: 3}
+        consequence: The rationing holds through the dry season. The middle class starts leaving for Dubai.
+        next: arc.imf.07
+      - id: exporters
+        text: Take the exporters' deal. Our own businesspeople are better partners than any foreign bank.
+        evidence:
+          - {position: finance.control.free-flows, w: 2}
+          - {position: development.path.market-freedom, w: 1}
+        consequence: Imports resume. So does the flight of dollars, now with your signature on it.
+        next: arc.imf.07
+      - id: back
+        text: Go back to the Fund. The moratorium proved the point. Now get a better deal.
+        evidence:
+          - {position: intl.institutions.cooperation, w: 2}
+          - {position: development.path.integration, w: 1}
+        consequence: The Fund's new terms are slightly better than the old ones. The bondholders' terms are slightly worse.
+        next: arc.imf.07
+
+  - id: arc.imf.07
+    type: reason
+    title: Who decided
+    text: >
+      A year later you are out of office. The queues are gone or they aren't, depending on whom you ask. A
+      student journalist asks the question you avoided all year. When it came down to it, who really decided
+      what happened to this country?
+    why: This asks what you think decides the fate of a poor country, and what kind of cause you reach for.
+    premises:
+      - id: no-one
+        text: The premise that anyone decided. It happened.
+        evidence: [{position: development.path.integration, w: 1}]
+    options:
+      - id: lenders
+        text: The lenders, and the governments behind them. We only chose which way to bend.
+        cause: structures
+        evidence:
+          - {position: intl.institutions.creditor-instruments, w: 2}
+          - {position: poverty.cause.drain, w: 1}
+      - id: rich
+        text: Our own rich. They kept their money abroad and their friends in parliament.
+        cause: interests
+        evidence:
+          - {position: comprador.nature.broker-class, w: 2}
+      - id: governments
+        text: A long line of bad governments. Mine included, maybe.
+        cause: individuals
+        evidence:
+          - {position: comprador.nature.kleptocratic-elites, w: 2}
+      - id: discipline
+        text: Discipline, or the lack of it. Countries that keep their books in order don't end up here.
+        cause: culture
+        evidence:
+          - {position: poverty.cause.bad-institutions, w: 2}
+          - {position: money.nature.rule-bound-central-bank, w: 1}
+      - id: street
+        text: The people outside parliament. Every time they filled the street, the terms moved.
+        cause: interests
+        evidence:
+          - {position: intl.sovereignty.nations-set-own-course, w: 2}

@@ -1,0 +1,135 @@
+# Thinkers: religious politics (liberation theology, Islamist currents,
+# religious Zionism, Confucian and meritocratic thought, Hindutva).
+thinkers:
+  - id: thinker.gutierrez
+    name: Gustavo Gutiérrez
+    born: 1928
+    died: 2024
+    region: Peru
+    traditions: [religious.liberation-theology]
+    summary: >
+      Peruvian Dominican priest who founded liberation theology, reading the Gospel from the side of the
+      poor and adopting the dependency account of Latin American poverty. The Vatican scrutinized his work
+      in the 1980s without condemning him.
+    argues:
+      - {position: poverty.cause.drain, in: {author: Gustavo Gutiérrez, title: "A Theology of Liberation: History, Politics, Salvation", year: 1971}}
+      - {position: religion.public.prophetic-church, in: {author: Gustavo Gutiérrez, title: "A Theology of Liberation: History, Politics, Salvation", year: 1971}}
+
+  - id: thinker.qutb
+    name: Sayyid Qutb
+    born: 1906
+    died: 1966
+    region: Egypt
+    traditions: [religious.islamism-brotherhood]
+    summary: >
+      Egyptian writer and Muslim Brotherhood ideologue who argued that sovereignty belongs to God alone,
+      that societies ruled by human law are in a state of ignorance (jahiliyya), and that a vanguard must
+      struggle to restore God's rule. He wrote his main works in Nasser's prisons and was hanged in 1966;
+      later jihadist movements drew heavily on him.
+    argues:
+      - {position: tax.purpose.religious-duty, in: {author: Sayyid Qutb, title: Social Justice in Islam, year: 1949}}
+      - {position: liberty.concept.servitude-to-god-alone, in: {author: Sayyid Qutb, title: Milestones, year: 1964}}
+      - {position: law.nature.divine-law, in: {author: Sayyid Qutb, title: Milestones, year: 1964}}
+      - {position: violence.political.religious-duty, in: {author: Sayyid Qutb, title: Milestones, year: 1964}}
+
+  - id: thinker.mawdudi
+    name: Abul A'la Mawdudi
+    born: 1903
+    died: 1979
+    region: India / Pakistan
+    traditions: [religious.islamism-brotherhood]
+    summary: >
+      South Asian journalist and theologian who founded the Jamaat-e-Islami in 1941 and argued for an
+      Islamic state in which sovereignty belongs to God and the people exercise only a delegated
+      vice-regency under the sharia.
+    argues:
+      - {position: intl.sovereignty.god-alone, in: {author: Abul A'la Mawdudi, title: Political Theory of Islam, year: 1939}}
+      - {position: religion.public.divine-law, in: {author: Abul A'la Mawdudi, title: The Islamic Law and Constitution, year: 1955}}
+
+  - id: thinker.khomeini
+    name: Ruhollah Khomeini
+    born: 1902
+    died: 1989
+    region: Iran
+    traditions: [religious.islamism-khomeinist]
+    summary: >
+      Iranian Shia jurist who, in exile in Najaf, argued that in the Imam's absence the qualified jurist
+      must govern, and who led the 1979 revolution and the Islamic Republic until his death. His government
+      executed thousands of political prisoners, most in 1988.
+    argues:
+      - {position: democracy.form.guardianship-of-jurist, in: {author: Ruhollah Khomeini, title: "Islamic Government: Governance of the Jurist", year: 1970}}
+      - {position: law.nature.divine-law, in: {author: Ruhollah Khomeini, title: "Islamic Government: Governance of the Jurist", year: 1970}}
+      - {position: hist.iranian-revolution.islamic-revolution, in: {author: Ruhollah Khomeini, title: Political and Divine Testament, year: 1989}}
+
+  - id: thinker.kook
+    name: Abraham Isaac Kook
+    born: 1865
+    died: 1935
+    region: Latvia / Palestine
+    traditions: [religious.religious-zionism]
+    summary: >
+      First Ashkenazi chief rabbi of Mandatory Palestine, who taught that the return of Jews to the Land of
+      Israel, even by secular pioneers, was a stage of divine redemption. His son's yeshiva became the
+      seedbed of the religious settler movement after 1967.
+    argues:
+      - {position: palestine.question.religious-zionist, in: {author: Abraham Isaac Kook, title: Orot, year: 1920}}
+      - {position: history.motor.providence, in: {author: Abraham Isaac Kook, title: Orot, year: 1920}}
+
+  - id: thinker.daniel-a-bell
+    name: Daniel A. Bell
+    born: 1964
+    died: null
+    region: Canada / China
+    traditions: [religious.political-meritocracy, communitarianism]
+    summary: >
+      Canadian political theorist long based in China who defends selecting leaders by examination and
+      record, with elections at the local level, as a better fit for large states than competitive
+      national elections, and reads modern China through revived Confucian thought.
+    argues:
+      - {position: tradition.modernity.selective-modernization, in: {author: Daniel A. Bell, title: "China's New Confucianism: Politics and Everyday Life in a Changing Society", year: 2008}}
+      - {position: democracy.form.political-meritocracy, in: {author: Daniel A. Bell, title: "The China Model: Political Meritocracy and the Limits of Democracy", year: 2015}}
+      - {position: authority.legitimacy.mandate-of-heaven, in: {author: Daniel A. Bell, title: "The China Model: Political Meritocracy and the Limits of Democracy", year: 2015}}
+
+  - id: thinker.jiang-qing
+    name: Jiang Qing
+    born: 1953
+    died: null
+    region: China
+    traditions: [religious.confucian]
+    summary: >
+      Chinese Confucian scholar who rejects both Western liberal democracy and the Party's Marxism and
+      proposes a Confucian constitution with three houses representing the way of heaven, historical
+      culture and the popular will.
+    argues:
+      - {position: authority.legitimacy.mandate-of-heaven, in: {author: Jiang Qing, title: "A Confucian Constitutional Order: How China's Ancient Past Can Shape Its Political Future", year: 2012}}
+      - {position: religion.public.heritage-establishment, in: {author: Jiang Qing, title: "A Confucian Constitutional Order: How China's Ancient Past Can Shape Its Political Future", year: 2012}}
+
+  - id: thinker.savarkar
+    name: Vinayak Damodar Savarkar
+    born: 1883
+    died: 1966
+    region: India
+    traditions: [nationalism.hindutva]
+    summary: >
+      Indian revolutionary, imprisoned by the British in the Andamans, who defined Hindutva: Indians are
+      those for whom India is both fatherland and holy land. He presided over the Hindu Mahasabha and was
+      tried and acquitted in the Gandhi assassination case.
+    argues:
+      - {position: nation.belonging.civilizational, in: {author: V. D. Savarkar, title: Essentials of Hindutva, year: 1923}}
+      - {position: religion.public.faith-as-nation, in: {author: V. D. Savarkar, title: Essentials of Hindutva, year: 1923}}
+      - {position: history.motor.peoples-in-struggle, in: {author: V. D. Savarkar, title: Six Glorious Epochs of Indian History, year: 1963}}
+
+  - id: thinker.golwalkar
+    name: M. S. Golwalkar
+    born: 1906
+    died: 1973
+    region: India
+    traditions: [nationalism.hindutva]
+    summary: >
+      Second head of the Rashtriya Swayamsevak Sangh (1940–1973), who defined India as a Hindu nation and
+      named Muslims, Christians and communists as internal threats. In 1939 he held up Nazi Germany's
+      treatment of Jews as a lesson for India.
+    argues:
+      - {position: nation.question.ethnic, in: {author: M. S. Golwalkar, title: We or Our Nationhood Defined, year: 1939}}
+      - {position: society.units.nation-organism, in: {author: M. S. Golwalkar, title: Bunch of Thoughts, year: 1966}}
+      - {position: culture.war.civilizational-struggle, in: {author: M. S. Golwalkar, title: Bunch of Thoughts, year: 1966}}
