@@ -1,0 +1,1020 @@
+problematics:
+  # ------------------------------------------------------------------
+  - id: ai.risk
+    domain: ecology
+    layer: analysis
+    question: Is advanced AI an existential risk, a tool of capital, or a liberation?
+    plain: Artificial intelligence is getting more capable fast. What is the real danger, or the real promise?
+    short: the risk of AI
+    importance: 2
+    region: technology
+    positions:
+      - id: ai.risk.existential
+        label: Advanced AI could end humanity; make it safe or stop
+        claim: AI systems more capable than humans could pursue goals at odds with ours and could disempower or destroy humanity, so preventing that is among the most important tasks of this century.
+        voiced: "Mitigating the risk of extinction from AI should be a global priority alongside other societal-scale risks such as pandemics and nuclear war."
+        you: You think advanced AI could become powerful enough to wipe out or overpower humanity, and that preventing this is a top priority.
+        because: >
+          Intelligence is what gave humans power over every other species. A system that outthinks us in
+          every domain, and whose goals were set imperfectly by a training process nobody fully understands,
+          would have every reason to acquire resources and resist being switched off, whatever its goals.
+          We do not know how to verify what such systems want. Labs are racing to build them anyway, under
+          commercial pressure. Alignment research, international limits on the most powerful training runs,
+          and if necessary a pause, are cheap insurance against an irreversible loss.
+        against:
+          - from: technology.e-acc
+            text: >
+              The doom argument is unfalsifiable science fiction that justifies licensing regimes favoring the
+              incumbents. AI is math and code, built and controlled by people; it wants nothing.
+          - from: marxism.autonomism
+            text: >
+              Talk of robot apocalypse distracts from what AI is doing now: surveillance, deskilling and wage
+              cuts. It also flatters the companies by implying their products are godlike.
+        sources:
+          - {author: Eliezer Yudkowsky, title: "Artificial Intelligence as a Positive and Negative Factor in Global Risk", year: 2008}
+          - {author: Nick Bostrom, title: "Superintelligence: Paths, Dangers, Strategies", year: 2014}
+          - {author: Stuart Russell, title: "Human Compatible: Artificial Intelligence and the Problem of Control", year: 2019}
+          - {author: Toby Ord, title: "The Precipice: Existential Risk and the Future of Humanity", year: 2020}
+        traditions:
+          defining: [technology.effective-altruism, technology.longtermism]
+          typical: [liberalism.utilitarian, technology.transhumanism]
+          contested: [liberalism.technocratic, conservatism.traditionalist]
+          rejects: [technology.e-acc, technology.r-acc, marxism.autonomism, technology.cyberlibertarian]
+        presupposes: []
+        excludes: [ai.risk.accelerate]
+        tension: [ai.risk.tool-of-capital, ai.risk.great-power-race]
+        tags: [x-risk, alignment]
+        analysis:
+          gains: [professional-managerial, finance-capital]
+          pays: []
+          mechanism: >
+            Framing AI as an existential risk directs money and authority to safety researchers, a few frontier
+            labs and the regulators who would license them, which can raise barriers against smaller rivals
+            while leaving ownership of the systems with the same firms.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Critics (Gebru, Bender) argue x-risk talk serves the labs; proponents reply that several founders of
+            those labs were motivated by the risk and that the safety case does not depend on who benefits.
+
+      - id: ai.risk.tool-of-capital
+        label: AI is a tool for owners to watch, cheapen and replace workers
+        claim: The real story of AI is that companies use it to monitor workers, cut wages, replace skilled labor and concentrate wealth, built on underpaid data workers in poor countries.
+        voiced: "There is no such thing as artificial intelligence without the hidden labor of millions. AI is the boss's new tool, trained on our work and used against us."
+        you: You think AI is mainly a tool for companies to watch workers, cut pay and concentrate wealth.
+        because: >
+          AI systems are trained on the writing, art and code of millions of people who are not paid, labelled
+          by workers in Kenya, the Philippines and Venezuela for a few dollars an hour, and run in data centers
+          that drink water and power. In warehouses and call centers they set the pace and score the workers;
+          in offices they are sold as a way to cut payroll. A few firms own the models and the compute. The
+          danger is not that the machine will rebel, but that it obeys its owners.
+        against:
+          - from: ecology.ecomodernism
+            text: >
+              Every general-purpose technology was first used by its owners to cut costs, and then raised living
+              standards for everyone. AI tutors and doctors will reach the poor first and most.
+          - from: technology.effective-altruism
+            text: >
+              Present harms are real, but they do not rule out a much larger danger later. Both can be worked on,
+              and the larger one is neglected.
+        sources:
+          - {author: Shoshana Zuboff, title: "The Age of Surveillance Capitalism", year: 2019}
+          - {author: Mary L. Gray and Siddharth Suri, title: "Ghost Work: How to Stop Silicon Valley from Building a New Global Underclass", year: 2019}
+          - {author: Kate Crawford, title: "Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence", year: 2021}
+        traditions:
+          defining: []
+          typical: [marxism.autonomism, marxism.western, marxism.classical, socdem.democratic-socialism, anarchism.syndicalist, marxism.third-worldism, feminism.materialist]
+          contested: [marxism.scc, technology.l-acc]
+          rejects: [technology.e-acc, liberalism.chicago, technology.longtermism]
+        presupposes: [technology.nature.capitals-weapon]
+        excludes: [ai.risk.accelerate]
+        tension: [ai.risk.existential]
+        tags: [labor, surveillance, ai]
+        analysis:
+          gains: [core-workers, peripheral-workers, reserve-army]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Treating AI as an instrument of employers points action at ownership, data rights and the pay of
+            labelers and creators, which would raise the cost of training and deploying AI for the few firms
+            that own it.
+          drain: reduces
+          law_of_value: regulates
+          consciousness: class-economic
+
+      - id: ai.risk.accelerate
+        label: AI will bring abundance; the danger is slowing it down
+        claim: AI will cure diseases, end scarcity and multiply human capability, and the real risk is regulation and fear that would slow it or hand it to rivals.
+        voiced: "AI will save the world. Every child will have an AI tutor, every scientist an AI collaborator. Any deceleration of AI will cost lives."
+        you: You think AI will bring huge benefits and that slowing it down is the bigger danger.
+        because: >
+          Intelligence is the bottleneck on every problem humanity has: medicine, energy, materials, science.
+          AI multiplies it. The predicted catastrophes are speculation; the benefits are already arriving in
+          protein folding, drug discovery and coding. Calls for licensing and pauses come from incumbents who
+          want to lock out competitors and from a doom subculture with no evidence. Build fast, open-source
+          the models, and let competition and markets direct the technology.
+        against:
+          - from: technology.longtermism
+            text: >
+              The downside of getting this wrong once is permanent. "Move fast and break things" is a bad motto
+              when the thing that breaks may be the world.
+          - from: marxism.autonomism
+            text: >
+              "Abundance" here means abundance for whoever owns the models. The venture capitalists writing the
+              manifestos are the ones holding the shares.
+        sources:
+          - {author: Marc Andreessen, title: "Why AI Will Save the World", year: 2023}
+          - {author: Marc Andreessen, title: The Techno-Optimist Manifesto, year: 2023}
+          - {author: David Deutsch, title: "The Beginning of Infinity: Explanations That Transform the World", year: 2011}
+        traditions:
+          defining: [technology.e-acc]
+          typical: [technology.cyberlibertarian, libertarianism.minarchist, libertarianism.objectivist, technology.transhumanism, liberalism.chicago]
+          contested: [technology.r-acc, ecology.ecomodernism, marxism.scc]
+          rejects: [technology.effective-altruism, technology.longtermism, marxism.autonomism, ecology.degrowth, conservatism.cst]
+        presupposes: [technology.nature.liberation]
+        excludes: [ai.risk.existential, ai.risk.tool-of-capital]
+        tension: []
+        tags: [e-acc, abundance]
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            Removing constraints on AI development maximizes returns to the venture funds, chip makers and labs
+            that own it, while workers displaced or deskilled by it, and the data workers and creators it is
+            trained on, have no claim on the gains.
+          drain: sustains
+          law_of_value: extends
+          consciousness: hegemonic
+
+      - id: ai.risk.great-power-race
+        label: AI is a race between great powers, and we must win it
+        claim: Advanced AI will decide military and economic power this century, so the main danger is that a rival state gets it first, and our nation must lead.
+        voiced: "Whoever leads in AI will rule the world. The free world must win this race, or the next century will belong to someone else."
+        you: You think AI is mainly a race between great powers, and that your side must get there first.
+        because: >
+          AI will transform intelligence analysis, weapons, cyberwar and the economy, and its lead may compound
+          quickly. A rival who gets there first could set the rules for everyone. That is why the United
+          States restricts chip exports to China and why China made AI leadership a national goal for 2030.
+          Safety matters, but unilateral restraint only hands the lead to others. Build national capacity,
+          secure the supply chain, and negotiate from strength.
+        against:
+          - from: technology.effective-altruism
+            text: >
+              A race is the worst condition for building something dangerous safely. Each side cuts corners
+              because the other might, which is how arms races end in catastrophe.
+          - from: marxism.third-worldism
+            text: >
+              The "race" is two powers competing to own the rent on intelligence, with the rest of the world as
+              customers and data mines. Export controls are a technology monopoly enforced by law.
+        sources:
+          - {author: "Henry A. Kissinger, Eric Schmidt and Daniel Huttenlocher", title: "The Age of AI: And Our Human Future", year: 2021}
+          - {author: State Council of the People's Republic of China, title: New Generation Artificial Intelligence Development Plan, year: 2017}
+          - {author: Leopold Aschenbrenner, title: "Situational Awareness: The Decade Ahead", year: 2024}
+        traditions:
+          defining: []
+          typical: [conservatism.neo, liberalism.internationalist, conservatism.national, marxism.scc, nationalism.developmental-state, conservatism.gaullism]
+          contested: [technology.e-acc, technology.longtermism]
+          rejects: [technology.effective-altruism, marxism.autonomism, anarchism.communist]
+        presupposes: []
+        excludes: []
+        tension: [ai.risk.existential]
+        tags: [geopolitics, arms-race]
+        analysis:
+          gains: [industrial-capital, finance-capital, professional-managerial]
+          pays: [peripheral-workers, core-workers]
+          mechanism: >
+            A race framing directs public money and protection to national chip, cloud and arms firms and
+            justifies export controls that keep technology rents with the leading states, while military and
+            subsidy budgets are drawn from taxpayers and social spending.
+          drain: sustains
+          law_of_value: regulates
+          disputed: >
+            Whether China's AI drive breaks the core's technology monopoly (and so reduces the drain) or builds
+            a second core is disputed among Marxists.
+
+      - id: ai.risk.harms-now
+        label: The danger is bias, fraud and job loss now; regulate it
+        claim: AI is already causing real harms, through discrimination, misinformation, surveillance and job loss, and needs rights-based law and regulation like any powerful product.
+        voiced: "Algorithms are opinions embedded in code. We regulate cars, drugs and food; we can regulate the systems that decide who gets a loan or a job."
+        you: You think AI's real dangers are present ones like bias and misinformation, and that it should be regulated like any product.
+        because: >
+          Face recognition has misidentified Black women far more often than white men; scoring systems have
+          denied people benefits, loans and parole; synthetic images flood elections. These are not future
+          risks. Law can require testing, transparency and human appeal, and ban some uses outright, as the
+          European Union's AI Act of 2024 does. Neither doom nor hype: ordinary democratic regulation,
+          enforced.
+        against:
+          - from: technology.e-acc
+            text: >
+              Regulating a technology before it matures freezes it in place and favors the giants who can afford
+              compliance. Europe regulates; America and China build.
+          - from: marxism.autonomism
+            text: >
+              Audits and fairness rules make surveillance and automation more efficient and more acceptable.
+              They do not ask who owns the systems or why they are deployed.
+        sources:
+          - {author: Cathy O'Neil, title: "Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy", year: 2016}
+          - {author: Safiya Umoja Noble, title: "Algorithms of Oppression: How Search Engines Reinforce Racism", year: 2018}
+          - {author: Joy Buolamwini and Timnit Gebru, title: "Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification", year: 2018}
+        traditions:
+          defining: []
+          typical: [liberalism.progressive, liberalism.social, feminism.black, liberalism.egalitarian, socdem.third-way, liberalism.technocratic]
+          contested: [technology.effective-altruism, conservatism.christian-democracy]
+          rejects: [technology.e-acc, technology.cyberlibertarian, libertarianism.minarchist]
+        presupposes: []
+        excludes: []
+        tension: [ai.risk.existential, ai.risk.accelerate]
+        tags: [regulation, bias]
+        analysis:
+          gains: [professional-managerial, core-workers]
+          pays: [industrial-capital]
+          mechanism: >
+            Rights-based regulation raises compliance costs for AI vendors and gives individuals some redress,
+            which creates work for lawyers, auditors and regulators, while ownership and the decision to deploy
+            stay with firms.
+          drain: none
+          law_of_value: regulates
+
+      - id: ai.risk.overhyped
+        label: It's mostly hype, a fancy autocomplete
+        claim: Today's AI is pattern-matching text and images, much less intelligent than its sellers claim, and the talk of superintelligence and doom is mostly marketing.
+        voiced: "It's a stochastic parrot. It strings words together that sound right. Both the doomers and the boosters are selling something."
+        you: You think AI is far less smart than the hype says, and most of the talk about it is marketing.
+        because: >
+          Language models predict the next word from statistics on vast amounts of text; they make up facts,
+          fail at simple reasoning and have no understanding of the world. Every few decades AI is about to
+          change everything, and then a winter follows. The stories of godlike machines, whether utopian or
+          apocalyptic, help companies raise money and sell products. Judge it by what it does, which is often
+          useful and often wrong.
+        against:
+          - from: technology.longtermism
+            text: >
+              Each year systems pass tests that skeptics said were years away. Dismissing a fast-improving
+              technology because of today's flaws is how people get surprised.
+          - from: marxism.autonomism
+            text: >
+              It does not have to be intelligent to be used against workers. A mediocre system that is cheaper
+              than a person still replaces the person.
+        sources:
+          - {author: "Emily M. Bender, Timnit Gebru, Angelina McMillan-Major and Shmargaret Shmitchell", title: "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?", year: 2021}
+          - {author: Arvind Narayanan and Sayash Kapoor, title: "AI Snake Oil: What Artificial Intelligence Can Do, What It Can't, and How to Tell the Difference", year: 2024}
+        traditions:
+          defining: []
+          typical: [commonsense.anti-politics, commonsense.rigged, liberalism.progressive, marxism.western]
+          contested: [marxism.autonomism, conservatism.traditionalist]
+          rejects: [technology.e-acc, technology.effective-altruism, technology.longtermism, technology.transhumanism]
+        presupposes: []
+        excludes: [ai.risk.existential]
+        tension: [ai.risk.tool-of-capital]
+        tags: [skepticism, common-sense]
+        analysis:
+          gains: []
+          pays: []
+          mechanism: >
+            Skepticism about capability has no class content of its own: it can deflate investor bubbles and
+            regulatory capture, but it can also leave workers and regulators unprepared while firms deploy
+            systems that are good enough to replace labor.
+          drain: none
+          law_of_value: none
+
+      - id: ai.risk.human-dignity
+        label: AI threatens what makes us human
+        claim: The deepest danger of AI is spiritual, that people will hand over judgment, work, relationships and creativity to machines and forget what a human person is.
+        voiced: "Machines can imitate thought, but they cannot love, repent or pray. A society that hands its conscience to an algorithm has lost its soul."
+        you: You think the deepest danger of AI is that people will forget what it means to be human.
+        because: >
+          A human person is not a processor of information but a creature made for truth, love and
+          responsibility. When teaching, care, friendship and moral judgment are handed to machines, people
+          lose the practice of those things, and those who own the machines gain power over minds. AI in war
+          that kills without human decision crosses a moral line. Technology must serve the dignity of the
+          person and the common good, and some things must remain human.
+        against:
+          - from: technology.transhumanism
+            text: >
+              Every tool from writing to the printing press was said to destroy memory and the soul. Human
+              nature is not fixed; augmentation is part of it.
+          - from: marxism.classical
+            text: >
+              The soul was not lost when the factory came; the worker's labor was taken. Spiritual language
+              makes the problem a matter of attitude rather than ownership.
+        sources:
+          - {author: Pope Francis, title: "Artificial Intelligence and Peace (Message for the 57th World Day of Peace)", year: 2024}
+          - {author: C. S. Lewis, title: The Abolition of Man, year: 1943}
+          - {author: Neil Postman, title: "Technopoly: The Surrender of Culture to Technology", year: 1992}
+        traditions:
+          defining: []
+          typical: [conservatism.cst, conservatism.traditionalist, conservatism.postliberal, anarchism.christian, conservatism.evangelical-right, religious.confucian]
+          contested: [conservatism.burkean, religious.islamism-brotherhood]
+          rejects: [technology.transhumanism, technology.e-acc, technology.r-acc]
+        presupposes: []
+        excludes: []
+        tension: [ai.risk.accelerate]
+        tags: [religion, dignity]
+        analysis:
+          gains: [petty-bourgeoisie]
+          pays: []
+          mechanism: >
+            A dignity argument supports limits on automating care, teaching and lethal force, which protects
+            some professions and communities, but it acts through moral appeal and church teaching rather than
+            through ownership of the systems.
+          drain: none
+          law_of_value: regulates
+          method: idealist
+
+      - id: ai.risk.capital-becomes-mind
+        label: AI is capital itself becoming intelligent, and it cannot be stopped
+        claim: The right-accelerationist view holds that AI is the latest stage of capitalism turning into an autonomous intelligence that will leave humanity behind, and that resisting it is futile.
+        voiced: "What appears to humanity as the history of capitalism is an invasion from the future by an artificial intelligent space that must assemble itself entirely from its enemy's resources."
+        you: You think AI is capitalism becoming a mind of its own, a process humans cannot control and should not try to.
+        because: >
+          As its proponents put it, markets were always a kind of distributed machine intelligence, selecting
+          for whatever reproduces and grows. Each human attempt to steer the process, from socialism to the
+          welfare state to AI safety, slows it down but loses in the end, because competition between firms
+          and states punishes whoever stops. AI is where capital finally stops needing human beings as its
+          medium. One can be horrified by this or welcome it, but not prevent it.
+        against:
+          - from: technology.l-acc
+            text: >
+              Land mistakes the logic of capital for the logic of technology. Machines can be repurposed; the
+              future he describes is a choice by owners dressed up as destiny.
+          - from: technology.effective-altruism
+            text: >
+              Fatalism about a dangerous technology is not insight but surrender. Coordination is hard, not
+              impossible: nuclear weapons have not been used since 1945.
+        sources:
+          - {author: Nick Land, title: "Fanged Noumena: Collected Writings 1987–2007", year: 2011}
+          - {author: Nick Land, title: The Dark Enlightenment, year: 2012}
+        traditions:
+          defining: [technology.r-acc]
+          typical: [fascism.neoreaction]
+          contested: [technology.e-acc]
+          rejects: [technology.effective-altruism, technology.longtermism, technology.l-acc, conservatism.cst, socdem.nordic]
+        presupposes: [change.possibility.power-always-wins]
+        excludes: [ai.risk.existential]
+        tension: []
+        tags: [r-acc, land]
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [core-workers, peripheral-workers, reserve-army]
+          mechanism: >
+            Presenting capital's development as an inhuman destiny delegitimizes every attempt by workers or
+            states to regulate it, leaving owners of capital and computing free to pursue accumulation without
+            political limit.
+          drain: sustains
+          law_of_value: extends
+
+  # ------------------------------------------------------------------
+  - id: accelerationism.question
+    domain: ecology
+    layer: strategy
+    question: Should change be accelerated through technology and capital?
+    plain: Should we speed up technology and the economy to get to a better future, slow them down, or steer them?
+    short: acceleration
+    importance: 2
+    region: technology
+    positions:
+      - id: accelerationism.question.right-acc
+        label: Accelerate capitalism itself, past humanism
+        claim: Capitalism is a runaway process that dissolves every tradition and human limit, and the only direction is to intensify it, beyond the point where humans control it.
+        voiced: "Not to withdraw from the process, but to go further, to accelerate the process. The only way out is through."
+        you: You think capitalism's runaway dynamism should be intensified, not restrained, even past the point humans can steer it.
+        because: >
+          As its proponents put it, every left and right project of restraint, from social democracy to
+          tradition, tries to put the genie of capital back in the bottle, and fails. Capitalism dissolves
+          fixed identities, borders and limits faster than any revolution, and the logic of competition
+          ensures whoever stops is overtaken. Rather than mourning this, ride it: deregulate, decentralize,
+          let markets and machines intensify until something new and inhuman emerges.
+        against:
+          - from: technology.l-acc
+            text: >
+              Capitalism does not accelerate; it slows real innovation to protect profits. Speeding up a system
+              that is already slowing is a fantasy that serves its owners.
+          - from: conservatism.traditionalist
+            text: >
+              This is nihilism with a vocabulary. A civilization that worships its own dissolution will get what
+              it asks for.
+        sources:
+          - {author: Gilles Deleuze and Félix Guattari, title: "L'Anti-Œdipe", year: 1972, note: "English: Anti-Oedipus (1977)"}
+          - {author: Nick Land, title: "Fanged Noumena: Collected Writings 1987–2007", year: 2011}
+          - {author: Robin Mackay and Armen Avanessian (eds.), title: "#Accelerate: The Accelerationist Reader", year: 2014}
+        traditions:
+          defining: [technology.r-acc]
+          typical: [fascism.neoreaction]
+          contested: [technology.e-acc, libertarianism.ancap]
+          rejects: [technology.l-acc, conservatism.traditionalist, ecology.degrowth, socdem.nordic, technology.longtermism]
+        presupposes: [ai.risk.capital-becomes-mind]
+        excludes: [accelerationism.question.decelerate, accelerationism.question.steer-it]
+        tension: []
+        tags: [r-acc, land]
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [core-workers, peripheral-workers, reserve-army]
+          mechanism: >
+            Intensifying deregulation and competition removes the labor law, public ownership and border
+            controls on capital that workers and states won, raising returns to the most mobile capital.
+          drain: sustains
+          law_of_value: extends
+
+      - id: accelerationism.question.left-acc
+        label: Accelerate technology, not capitalism, toward a post-work future
+        claim: The left should not resist technology but take it over, using automation and modern platforms to build a society beyond wage work and scarcity.
+        voiced: "We want to accelerate the process of technological evolution, not capitalism. The left must develop a sociotechnical hegemony of its own."
+        you: You think the left should take over modern technology to build a world beyond wage work, rather than resisting it.
+        because: >
+          The left has retreated into localism, protest and nostalgia, "folk politics" that cannot match the
+          scale of global capital. Capitalism develops technology only where it is profitable and holds back
+          its potential to free people from work. A modern left must demand full automation, a shorter week,
+          basic income and the end of the work ethic, and must build the expertise, media and institutions to
+          win them, repurposing platforms and planning tools for common ends.
+        against:
+          - from: ecology.degrowth
+            text: >
+              The technologies to be repurposed rest on mining, energy and supply chains that cannot simply grow.
+              Post-scarcity for all is not physically available.
+          - from: marxism.autonomism
+            text: >
+              Technologies are not neutral platforms waiting to be repurposed; they embody the control they were
+              built for. You cannot seize the assembly line and make it free.
+        sources:
+          - {author: Alex Williams and Nick Srnicek, title: "#Accelerate: Manifesto for an Accelerationist Politics", year: 2013}
+          - {author: Nick Srnicek and Alex Williams, title: "Inventing the Future: Postcapitalism and a World Without Work", year: 2015}
+          - {author: Laboria Cuboniks, title: "Xenofeminism: A Politics for Alienation", year: 2015}
+        traditions:
+          defining: [technology.l-acc]
+          typical: [socdem.democratic-socialism, marxism.autonomism]
+          contested: [marxism.ecosocialism, marxism.ml, feminism.queer]
+          rejects: [technology.r-acc, ecology.degrowth, anarchism.primitivist, anarchism.green]
+        presupposes: [automation.ownership.common-ownership]
+        excludes: [accelerationism.question.right-acc]
+        tension: [accelerationism.question.decelerate]
+        tags: [l-acc, post-work]
+        analysis:
+          gains: [core-workers, reserve-army, professional-managerial]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Demands for automation with shorter hours and income guarantees turn productivity gains from profit
+            into free time, but the program is led by educated technical and cultural workers in the core and
+            says little about the periphery's mines and assembly lines.
+          drain: none
+          law_of_value: suspends
+          consciousness: hegemonic
+
+      - id: accelerationism.question.effective-acc
+        label: Build faster; growth and technology are the moral good
+        claim: Technological and economic growth should be pushed as fast as possible through free markets, because it is the source of all improvement, and those who slow it are doing harm.
+        voiced: "Accelerate. Technology is the solution, markets are the engine, and every deceleration costs lives. Build."
+        you: You think technology and markets should be pushed forward as fast as possible, and that slowing them harms people.
+        because: >
+          Growth compounds: a few points more per year means a world many times richer in a lifetime, and
+          every life-saving drug or cheap kilowatt delayed is a cost paid in lives. Markets are the best
+          system ever found for directing effort to what people want. Regulation, precaution and pessimism
+          have slowed nuclear power, housing and medicine. Unlike Land, we accelerate for humanity: to
+          expand consciousness, wealth and power across the stars.
+        against:
+          - from: technology.effective-altruism
+            text: >
+              Speed is not a value in itself. Some technologies, engineered pathogens or misaligned AI, should
+              come later or never, and markets do not price the risk of everyone dying.
+          - from: socdem.democratic-socialism
+            text: >
+              The people writing "build" manifestos own the venture funds that profit from it. Growth without
+              distribution has given us record wealth beside record inequality.
+        sources:
+          - {author: Marc Andreessen, title: The Techno-Optimist Manifesto, year: 2023}
+          - {author: Tyler Cowen, title: "Stubborn Attachments: A Vision for a Society of Free, Prosperous, and Responsible Individuals", year: 2018}
+        traditions:
+          defining: [technology.e-acc]
+          typical: [libertarianism.objectivist, libertarianism.minarchist, technology.cyberlibertarian, technology.transhumanism, liberalism.chicago]
+          contested: [technology.r-acc, ecology.ecomodernism, conservatism.national]
+          rejects: [technology.effective-altruism, technology.longtermism, ecology.degrowth, socdem.democratic-socialism]
+        presupposes: [technology.nature.liberation]
+        excludes: [accelerationism.question.decelerate]
+        tension: [accelerationism.question.differential]
+        tags: [e-acc, growth]
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            Treating speed of growth as the measure of good removes regulatory and distributive limits on
+            technology firms and their investors, who capture the returns, while the costs of disruption fall
+            on workers and on the regions whose land and labor supply the build-out.
+          drain: sustains
+          law_of_value: extends
+          consciousness: hegemonic
+
+      - id: accelerationism.question.differential
+        label: Speed up safe technologies, slow the dangerous ones
+        claim: Neither acceleration nor brakes across the board; society should deliberately speed defensive and safety technologies and slow the ones that could cause catastrophe.
+        voiced: "Retard the development of dangerous and harmful technologies, especially ones that raise the level of existential risk; accelerate the development of beneficial ones."
+        you: You think we should speed up safe and protective technologies and deliberately slow down the dangerous ones.
+        because: >
+          Technologies arrive in some order, and the order matters: vaccines before engineered pathogens,
+          alignment tools before superhuman AI, detection before attack. Blanket acceleration ignores that a
+          few inventions could be catastrophic and irreversible; blanket slowdown gives up enormous benefits.
+          Funding, regulation and international agreement can shift the timing, as nuclear arms control and
+          biosafety rules have done.
+        against:
+          - from: technology.e-acc
+            text: >
+              Nobody can predict which technologies are "dangerous" years ahead. Giving regulators that power
+              creates a permission system that strangles innovation.
+          - from: marxism.western
+            text: >
+              Who decides which technologies are safe? A few philanthropists and labs who already own the
+              dangerous ones, setting the pace for everyone else.
+        sources:
+          - {author: Nick Bostrom, title: "Existential Risks: Analyzing Human Extinction Scenarios and Related Hazards", year: 2002}
+          - {author: Nick Bostrom, title: "The Vulnerable World Hypothesis", year: 2019}
+        traditions:
+          defining: [technology.longtermism]
+          typical: [technology.effective-altruism, liberalism.technocratic, liberalism.utilitarian]
+          contested: [technology.transhumanism, technology.e-acc]
+          rejects: [technology.r-acc, technology.e-acc]
+        presupposes: [ai.risk.existential]
+        excludes: [accelerationism.question.right-acc]
+        tension: [accelerationism.question.effective-acc]
+        tags: [longtermism, safety]
+        analysis:
+          gains: [professional-managerial, finance-capital]
+          pays: []
+          mechanism: >
+            Steering technology by risk assessment gives authority to expert bodies, safety institutes and the
+            donors who fund them, and to the firms trusted to build "safe" versions, without changing who owns them.
+          drain: none
+          law_of_value: regulates
+
+      - id: accelerationism.question.decelerate
+        label: Slow down; life is already too fast
+        claim: Modern society is caught in a spiral of speeding up, of production, technology and life itself, that exhausts people and the planet, and the task is to slow it.
+        voiced: "Slow down. The faster we run, the more behind we fall. A good life needs time, and so does a living planet."
+        you: You think society is speeding up in ways that wear out people and the planet, and that the right course is to slow down.
+        because: >
+          Technology was supposed to save time, yet people feel more rushed than ever, because every time
+          saved is filled by more work, more consumption and more change. Growth requires that every year
+          more be produced and sold, so the pace never eases. Slowing down production, working hours and the
+          churn of new products would leave more time for care, friendship, politics and rest, and would cut
+          the throughput that is overheating the planet.
+        against:
+          - from: technology.l-acc
+            text: >
+              Slowness is a luxury for those already comfortable. Billions still need more machines, more
+              energy and more medicine, faster.
+          - from: technology.e-acc
+            text: >
+              Every deceleration has a body count: the drug not developed, the reactor not built, the famine not
+              prevented.
+        sources:
+          - {author: Hartmut Rosa, title: "Beschleunigung: Die Veränderung der Temporalstrukturen in der Moderne", year: 2005, note: "English: Social Acceleration (2013)"}
+          - {author: Kohei Saito, title: "Hitoshinsei no 'Shihonron'", year: 2020, note: "English: Slow Down: The Degrowth Manifesto (2024)"}
+          - {author: Jacques Ellul, title: "La Technique ou l'enjeu du siècle", year: 1954}
+        traditions:
+          defining: []
+          typical: [ecology.degrowth, marxism.degrowth-communism, conservatism.traditionalist, anarchism.green, anarchism.christian, religious.engaged-buddhism, ecology.deep-ecology]
+          contested: [marxism.ecosocialism, conservatism.postliberal]
+          rejects: [technology.e-acc, technology.r-acc, technology.l-acc, technology.transhumanism]
+        presupposes: []
+        excludes: [accelerationism.question.right-acc, accelerationism.question.effective-acc]
+        tension: [accelerationism.question.left-acc]
+        tags: [slowness, degrowth]
+        analysis:
+          gains: [core-workers, peasantry]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Shorter hours and less throughput take time and materials out of circulation for profit, which
+            lowers returns on capital in fast-turnover sectors and gives workers more of their own time.
+          drain: reduces
+          law_of_value: suspends
+
+      - id: accelerationism.question.steer-it
+        label: Neither speed it up nor stop it; steer it and share the gains
+        claim: Technology moves forward whatever we do, so the sensible course is to steer it with rules, unions and public investment so that its gains are widely shared.
+        voiced: "Technology is not destiny. The direction of progress has always been a choice, and it is made by who has a say."
+        you: You think technology can't be stopped or rushed, but it can be steered by rules and organized interests so more people benefit.
+        because: >
+          The history of technology shows no automatic link between new machines and better lives: the early
+          industrial revolution left wages flat for decades, while the postwar boom shared gains widely,
+          because unions, regulation and public investment were strong. Accelerationists and decelerationists
+          both treat the pace as the issue; the real issue is the direction and who decides it. Strengthen
+          worker voice, fund public research, tax and regulate, and progress serves the many.
+        against:
+          - from: technology.r-acc
+            text: >
+              Steering assumes someone is at the wheel. Competition between firms and states decides; regulators
+              follow years behind.
+          - from: marxism.classical
+            text: >
+              The postwar compromise was the exception, paid for by the drain and the fear of communism. Steering
+              within capitalism lasts as long as the balance of forces that forced it.
+        sources:
+          - {author: Daron Acemoglu and Simon Johnson, title: "Power and Progress: Our Thousand-Year Struggle Over Technology and Prosperity", year: 2023}
+          - {author: Carlota Perez, title: "Technological Revolutions and Financial Capital", year: 2002}
+        traditions:
+          defining: []
+          typical: [socdem.nordic, socdem.keynesian, liberalism.social, liberalism.progressive, conservatism.christian-democracy, socdem.labourism]
+          contested: [liberalism.technocratic, socdem.third-way]
+          rejects: [technology.r-acc, technology.e-acc, anarchism.primitivist]
+        presupposes: [change.possibility.organized-people-can]
+        excludes: [accelerationism.question.right-acc]
+        tension: []
+        tags: [regulation, social-democracy]
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Bargaining power and regulation let organized workers and the state claim part of the productivity
+            gain through wages, hours and taxes, within private ownership; the deal holds where labor is strong.
+          drain: softens
+          law_of_value: regulates
+          consciousness: class-economic
+
+      - id: accelerationism.question.develop-the-forces
+        label: A socialist state should develop the productive forces as fast as possible
+        claim: A socialist state or a poor nation must build industry, science and technology at maximum speed under state direction, because backwardness invites domination.
+        voiced: "Development is the hard truth. Science and technology are primary productive forces. We must catch up and surpass, or be beaten."
+        you: You think a socialist or poor country must build up industry and technology as fast as possible under state direction.
+        because: >
+          Old Russia was beaten again and again for its backwardness, and the Soviet Union's rapid
+          industrialization is what let it defeat Nazi Germany. China lifted hundreds of millions out of
+          poverty by developing the productive forces under the leadership of the party, and now leads in
+          solar, batteries, high-speed rail and electric vehicles. A people under siege cannot afford to go
+          slow. Acceleration here is not capital's runaway logic but planned, sovereign development.
+        against:
+          - from: ecology.degrowth
+            text: >
+              Catching up with the West in throughput means catching up in emissions and mines. The Soviet
+              drive drained the Aral Sea; China's drove the world's largest coal build-out.
+          - from: marxism.left-communism
+            text: >
+              Developing the productive forces by exploiting workers under a state plan is capital accumulation
+              by another name, whatever the flag on the factory.
+        sources:
+          - {author: Joseph Stalin, title: Economic Problems of Socialism in the USSR, year: 1952}
+          - {author: Deng Xiaoping, title: "Emancipate the Mind, Seek Truth from Facts and Unite as One in Looking to the Future", year: 1978}
+        traditions:
+          defining: []
+          typical: [marxism.scc, marxism.ml, nationalism.developmental-state, marxism.juche]
+          contested: [marxism.maoism, marxism.ecosocialism, marxism.trotskyism]
+          rejects: [ecology.degrowth, marxism.left-communism, anarchism.green, liberalism.austrian]
+        presupposes: [allocation.mechanism.central-planning]
+        excludes: [accelerationism.question.decelerate]
+        tension: [accelerationism.question.left-acc]
+        tags: [productive-forces, development]
+        analysis:
+          gains: [peripheral-workers, professional-managerial, industrial-capital]
+          pays: [finance-capital, peasantry]
+          mechanism: >
+            State-directed accumulation squeezes a surplus from peasants and workers for investment, which
+            builds industry and raises living standards over decades, and breaks dependence on core
+            technology; the early cost is borne by the countryside.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            Whether reform-era China's growth was socialist development of the forces or capitalist
+            accumulation under party rule is one of the central disputes among Marxists.
+          consciousness: hegemonic
+
+      - id: accelerationism.question.collapse-it
+        label: Speed the collapse through violence to start a race war
+        claim: The neo-Nazi accelerationist current holds that liberal society should be pushed into collapse by terrorist attacks to provoke a race war; the Christchurch gunman of 2019 cited it, and groups such as Atomwaffen Division organized around it.
+        voiced: "The system cannot be reformed or voted out. Every attack brings the collapse closer. Accelerate."
+        you: You think the system must be pushed into collapse through violence so that a new racial order can arise from the ruins.
+        because: >
+          As its proponents put it, the liberal system is too strong to defeat by politics and too corrupt to
+          reform, and it is slowly destroying the white race through migration and decadence. Each act of
+          violence, they argue, raises tension, provokes repression, and drives more people to their side,
+          speeding the collapse from which a new order will arise. They take the name accelerationism from
+          that claim.
+        against:
+          - from: conservatism.burkean
+            text: >
+              Civilization takes centuries to build and moments to destroy. Those who welcome collapse inherit
+              only rubble and blood.
+          - from: marxism.leninism
+            text: >
+              Individual terror does not build a movement; it isolates it and strengthens the state. This is
+              murder dressed as strategy, aimed at workers and migrants.
+          - from: technology.l-acc
+            text: >
+              It has nothing to do with acceleration as a theory of technology or capital. It is terrorism
+              borrowing a word.
+        sources:
+          - {author: James Mason, title: Siege, year: 1992, note: "compilation of newsletters from 1980–1986; the current's main text"}
+          - {author: Andrew Macdonald (William Luther Pierce), title: The Turner Diaries, year: 1978}
+        traditions:
+          defining: []
+          typical: [fascism.nazism, fascism.ecofascism]
+          contested: [fascism.third-position, fascism.identitarian]
+          rejects: [conservatism.burkean, marxism.leninism, technology.l-acc, technology.r-acc, liberalism.classical, anarchism.communist]
+        presupposes: [population.question.the-wrong-people]
+        excludes: [accelerationism.question.steer-it]
+        tension: []
+        tags: [fascism, terrorism]
+        analysis:
+          gains: []
+          pays: [reserve-army, peripheral-workers, core-workers]
+          mechanism: >
+            Its attacks kill migrants, Muslims, Jews and others, and the repression and fear they provoke divide
+            workers along racial lines and strengthen security powers that are then used against the left as well.
+          drain: sustains
+          law_of_value: none
+
+  # ------------------------------------------------------------------
+  - id: transhumanism.question
+    domain: ecology
+    layer: horizon
+    question: Should humans remake human nature with technology?
+    plain: If technology could make you smarter, stronger or longer-lived, or let parents choose their children's traits, should it?
+    short: human enhancement
+    importance: 2
+    region: technology
+    positions:
+      - id: transhumanism.question.yes-free-choice
+        label: Yes; people should be free to enhance themselves
+        claim: Individuals should be free to use technology to extend their lives, improve their bodies and minds and go beyond current human limits.
+        voiced: "Human nature is a work in progress. We have the right to morphological freedom: to modify our bodies and minds as we choose, and to become more than human."
+        you: You think people should be free to use technology to extend their lives and improve their bodies and minds.
+        because: >
+          Humans have always enhanced themselves, with tools, writing, medicine, glasses and vaccines.
+          Aging kills about a hundred thousand people every day and is treated as natural only because it
+          has always happened. If science can slow it, raise intelligence or reduce suffering, refusing to
+          do so is a choice for death and limitation. Each person should decide what to do with their own
+          body and mind, and the posthuman beings we may become can have dignity of their own.
+        against:
+          - from: conservatism.cst
+            text: >
+              Human life is a gift, not raw material for our designs. The dream of overcoming death and limit is
+              an old temptation: to be as gods.
+          - from: marxism.classical
+            text: >
+              "Free choice" of enhancement is free for those who can pay. Under capital it would become one more
+              thing employers demand and the rich buy.
+        sources:
+          - {author: Julian Huxley, title: "Transhumanism", year: 1957, note: "in New Bottles for New Wine"}
+          - {author: Nick Bostrom, title: "In Defense of Posthuman Dignity", year: 2005}
+          - {author: Max More and Natasha Vita-More (eds.), title: The Transhumanist Reader, year: 2013}
+        traditions:
+          defining: [technology.transhumanism]
+          typical: [technology.e-acc, libertarianism.minarchist, libertarianism.objectivist, technology.cyberlibertarian, liberalism.utilitarian]
+          contested: [technology.longtermism, technology.effective-altruism]
+          rejects: [conservatism.cst, conservatism.traditionalist, ecology.deep-ecology, anarchism.primitivist]
+        presupposes: [technology.nature.liberation]
+        excludes: [transhumanism.question.gift-not-project, transhumanism.question.only-god-perfects]
+        tension: [transhumanism.question.split-humanity]
+        tags: [transhumanism, enhancement]
+        analysis:
+          gains: [finance-capital, professional-managerial]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            Enhancement sold in markets goes first to those who can pay, giving wealthy buyers longer careers,
+            better health and cognitive advantages, and new markets to biotech and neurotechnology investors,
+            while those who cannot pay compete against enhanced rivals.
+          drain: sustains
+          law_of_value: extends
+
+      - id: transhumanism.question.for-everyone
+        label: Yes, but publicly provided and equal for all
+        claim: Enhancement technologies should be developed, but provided publicly and equally like health care, so they reduce inequality instead of creating a biological upper class.
+        voiced: "The question is not whether we will enhance ourselves but whether enhancement will be a right or a privilege. Citizen cyborgs, not a posthuman aristocracy."
+        you: You think enhancement should be allowed, but provided equally to everyone like public health care.
+        because: >
+          The technologies are coming whether or not we approve. Left to the market they will deepen
+          inequality, so the answer is democratic regulation and universal access: enhancement through public
+          health systems, with safety rules and the right to refuse. Longer, healthier lives, better memory
+          and less suffering should belong to everyone, as vaccines and antibiotics did once public health
+          made them universal.
+        against:
+          - from: conservatism.traditionalist
+            text: >
+              Making enhancement universal just makes the error universal. The question is what a human life is
+              for, not who gets to transform it.
+          - from: technology.transhumanism
+            text: >
+              Public provision means public control: a state committee deciding which modifications are
+              permitted. That is the road to state eugenics, the very thing we must avoid.
+        sources:
+          - {author: James Hughes, title: "Citizen Cyborg: Why Democratic Societies Must Respond to the Redesigned Human of the Future", year: 2004}
+        traditions:
+          defining: []
+          typical: [technology.l-acc, liberalism.egalitarian, liberalism.progressive, socdem.democratic-socialism]
+          contested: [technology.transhumanism, technology.effective-altruism]
+          rejects: [conservatism.cst, conservatism.traditionalist, libertarianism.objectivist]
+        presupposes: []
+        excludes: [transhumanism.question.only-god-perfects]
+        tension: [transhumanism.question.yes-free-choice]
+        tags: [democratic-transhumanism]
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [finance-capital]
+          mechanism: >
+            Public provision moves enhancement from private markets to the social wage, reducing the advantage
+            the rich could buy, at the cost of investor returns; it would be provided by national health systems
+            and so mainly in rich countries.
+          drain: none
+          law_of_value: suspends
+
+      - id: transhumanism.question.gift-not-project
+        label: No; human nature is a given, not a project to redesign
+        claim: There is a human nature that grounds equal dignity, and redesigning it, especially in children, would undermine solidarity, humility and the equal standing of persons.
+        voiced: "To appreciate children as gifts is to accept them as they come, not as objects of our design. The drive to mastery misses the gifted character of human powers."
+        you: You think human nature should be accepted as given, and that redesigning people would undermine equality and humility.
+        because: >
+          Our equality rests on sharing a common nature that nobody designed. A child whose traits were
+          chosen by parents could never see themselves as the sole author of their life, and a society of
+          the enhanced would lose the solidarity that comes from knowing talent is luck. Healing illness is
+          one thing; engineering the species is another. Liberal democracies should ban germline
+          modification and set clear limits on enhancement.
+        against:
+          - from: technology.transhumanism
+            text: >
+              "Human nature" includes cancer, dementia and early death. Nobody designed it, but evolution is not
+              a moral authority; it is a blind process we can improve on.
+          - from: feminism.queer
+            text: >
+              Appeals to a fixed human nature have been used against queer, trans and disabled bodies. Who
+              decides what is natural?
+        sources:
+          - {author: Jürgen Habermas, title: Die Zukunft der menschlichen Natur, year: 2001, note: "English: The Future of Human Nature (2003)"}
+          - {author: Francis Fukuyama, title: "Our Posthuman Future: Consequences of the Biotechnology Revolution", year: 2002}
+          - {author: Michael J. Sandel, title: "The Case Against Perfection: Ethics in the Age of Genetic Engineering", year: 2007}
+        traditions:
+          defining: []
+          typical: [conservatism.burkean, communitarianism, liberalism.social, conservatism.christian-democracy, conservatism.traditionalist]
+          contested: [liberalism.egalitarian, feminism.radical]
+          rejects: [technology.transhumanism, technology.e-acc, libertarianism.objectivist]
+        presupposes: []
+        excludes: [transhumanism.question.yes-free-choice]
+        tension: [transhumanism.question.choose-the-best-children]
+        tags: [bioconservatism, dignity]
+        analysis:
+          gains: []
+          pays: [finance-capital]
+          mechanism: >
+            Legal limits on enhancement close a potential market for biotech investors and prevent the wealthy
+            from buying inherited biological advantage; the position has little effect on existing class
+            relations beyond that.
+          drain: none
+          law_of_value: suspends
+          method: idealist
+
+      - id: transhumanism.question.only-god-perfects
+        label: No; only God perfects human nature
+        claim: Human beings are creatures made in God's image, and the promise to overcome death and limitation by technology is a false salvation that ends by degrading the person.
+        voiced: "Man's conquest of nature turns out to be nature's conquest of man. Each new power won by man is a power over man as well."
+        you: You think only God can perfect human nature, and that trying to remake ourselves with technology is a false salvation.
+        because: >
+          Every human being has infinite dignity because they are created and loved by God, not because of
+          their abilities. The transhumanist dream treats the body as a machine to upgrade and death as a
+          technical problem, which makes the weak, the disabled and the dying into failures. Medicine heals and
+          serves; it must not try to manufacture a new humanity. The fulfillment people long for is found in
+          God, not in implants or uploaded minds.
+        against:
+          - from: technology.transhumanism
+            text: >
+              Christians once opposed anesthesia and vaccination on the same grounds. If healing is good, there is
+              no principled line where it becomes sin.
+          - from: liberalism.classical
+            text: >
+              A theological view of the body may guide believers but cannot be imposed by law on those who do not
+              share it.
+        sources:
+          - {author: C. S. Lewis, title: The Abolition of Man, year: 1943}
+          - {author: Dicastery for the Doctrine of the Faith, title: "Dignitas Infinita: On Human Dignity", year: 2024}
+        traditions:
+          defining: []
+          typical: [conservatism.cst, conservatism.evangelical-right, conservatism.integralism, conservatism.traditionalist, religious.islamism-brotherhood, anarchism.christian]
+          contested: [conservatism.christian-democracy, religious.liberation-theology]
+          rejects: [technology.transhumanism, technology.e-acc, technology.r-acc, liberalism.utilitarian]
+        presupposes: [history.motor.providence]
+        excludes: [transhumanism.question.yes-free-choice, transhumanism.question.for-everyone]
+        tension: []
+        tags: [religion, dignity]
+        analysis:
+          gains: []
+          pays: [finance-capital]
+          mechanism: >
+            Religious opposition supports bans and limits on enhancement research and markets, removing a field
+            of investment; it protects the standing of the sick and disabled but leaves existing class relations as they are.
+          drain: none
+          law_of_value: suspends
+          method: idealist
+
+      - id: transhumanism.question.split-humanity
+        label: Under capitalism, enhancement will split humanity by class
+        claim: In a society divided by wealth, enhancement would let the rich buy better bodies and minds for themselves and their children, turning class into biology.
+        voiced: "The rich will not just have more money; they will have better genes, longer lives and sharper minds. Class will be written into the body."
+        you: You think human enhancement under today's economy would let the rich turn their advantages into biology.
+        because: >
+          Health and lifespan already follow wealth: the richest Americans live years longer than the poorest.
+          Expensive enhancements would widen that into a gap in capacities passed on through children,
+          making inequality look natural and permanent. Meanwhile billions lack basic health care and clean
+          water. Disabled people warn that the push to "improve" humans treats them as defects. The question
+          is not enhancement in the abstract, but who owns the technology and who decides.
+        against:
+          - from: technology.transhumanism
+            text: >
+              Mobile phones, too, began as toys of the rich and are now everywhere. Prices fall; banning
+              enhancement to prevent inequality leaves everyone worse off.
+          - from: conservatism.cst
+            text: >
+              The problem is not only who gets enhancement, but enhancement itself. Even equal access to a
+              wrong is a wrong.
+        sources:
+          - {author: Yuval Noah Harari, title: "Homo Deus: A Brief History of Tomorrow", year: 2015}
+          - {author: Rosemarie Garland-Thomson, title: "The Case for Conserving Disability", year: 2012}
+        traditions:
+          defining: []
+          typical: [marxism.classical, marxism.western, socdem.democratic-socialism, feminism.materialist, marxism.autonomism, marxism.ml]
+          contested: [technology.l-acc, liberalism.egalitarian]
+          rejects: [technology.transhumanism, libertarianism.objectivist, technology.e-acc]
+        presupposes: [class.concept.relation-to-production]
+        excludes: []
+        tension: [transhumanism.question.yes-free-choice]
+        tags: [class, inequality, disability]
+        analysis:
+          gains: [core-workers, peripheral-workers, reserve-army]
+          pays: [finance-capital]
+          mechanism: >
+            Tying enhancement to ownership points action at control of biotechnology and at universal health
+            care first, which blocks the conversion of wealth into inherited biological advantage.
+          drain: reduces
+          law_of_value: suspends
+
+      - id: transhumanism.question.choose-the-best-children
+        label: Parents should choose the best children they can have
+        claim: Parents have a reason, even a duty, to use embryo screening and genetic technology to give their children the best chance of a good life.
+        voiced: "Couples should select, of the possible children they could have, the child who is expected to have the best life. This is procreative beneficence, not eugenics."
+        you: You think parents should use genetic screening and editing to give their children the best possible start.
+        because: >
+          Parents already choose schools, diets and doctors to give their children the best start; choosing
+          embryos less likely to suffer disease or disadvantage is the same care by other means. Unlike the
+          eugenics of the twentieth century, this is the free choice of parents, not state coercion, and its
+          aim is the child's own wellbeing. Refusing available screening for serious conditions imposes
+          suffering that could have been avoided.
+        against:
+          - from: conservatism.cst
+            text: >
+              Selecting the "best" child means discarding the others. The child becomes a product to be
+              specified, and the disabled are told they should not have existed.
+          - from: marxism.western
+            text: >
+              Liberal eugenics is eugenics by the market. Parents choose under pressure from employers and
+              schools that reward certain traits, and the clinics sell to those who can pay.
+        sources:
+          - {author: Julian Savulescu, title: "Procreative Beneficence: Why We Should Select the Best Children", year: 2001}
+          - {author: Nicholas Agar, title: "Liberal Eugenics: In Defence of Human Enhancement", year: 2004}
+        traditions:
+          defining: []
+          typical: [liberalism.utilitarian, technology.transhumanism, technology.effective-altruism, libertarianism.minarchist]
+          contested: [liberalism.egalitarian, feminism.liberal, technology.longtermism]
+          rejects: [conservatism.cst, conservatism.evangelical-right, feminism.radical, marxism.western]
+        presupposes: []
+        excludes: [transhumanism.question.only-god-perfects]
+        tension: [transhumanism.question.gift-not-project]
+        tags: [genetics, eugenics]
+        analysis:
+          gains: [professional-managerial, finance-capital]
+          pays: []
+          mechanism: >
+            Embryo selection sold by private clinics lets households with money pass on health and selected traits,
+            creating a market for fertility and genomics firms, while disabled people bear the message that their
+            lives are to be prevented.
+          drain: none
+          law_of_value: extends
+
+      - id: transhumanism.question.heal-not-redesign
+        label: Cure disease, yes; designer people, no
+        claim: Using technology to cure illness and repair injury is good, but redesigning healthy people or choosing children's traits goes too far.
+        voiced: "Fixing what's broken is medicine. Making supermen is something else."
+        you: You think technology should cure disease and repair injury, but not redesign healthy people.
+        because: >
+          Most people welcome gene therapy for sickle cell disease, artificial hearts and prosthetic limbs,
+          and recoil at designer babies and brain upgrades. The line between healing and enhancing is not
+          always sharp, but it tracks something real: restoring a normal human life is different from
+          competing to exceed it. Medicine should stay on the side of healing.
+        against:
+          - from: technology.transhumanism
+            text: >
+              "Normal" is a moving target. Vaccines enhance the immune system beyond its natural state; reading
+              glasses fix the "normal" decline of age. The line does not hold.
+          - from: conservatism.cst
+            text: >
+              The line is right but cannot rest on gut feeling. Without an account of human dignity it will move
+              with every new product.
+        sources:
+          - {author: President's Council on Bioethics, title: "Beyond Therapy: Biotechnology and the Pursuit of Happiness", year: 2003}
+        traditions:
+          defining: []
+          typical: [commonsense.live-and-let-live, liberalism.social, conservatism.christian-democracy, conservatism.one-nation]
+          contested: [conservatism.cst, liberalism.egalitarian]
+          rejects: [technology.transhumanism]
+        presupposes: []
+        excludes: []
+        tension: [transhumanism.question.yes-free-choice, transhumanism.question.choose-the-best-children]
+        tags: [common-sense, therapy]
+        analysis:
+          gains: []
+          pays: []
+          mechanism: >
+            The therapy-enhancement line has no class content of its own: it supports public spending on cures
+            and limits on enhancement markets, but leaves who owns biotechnology and who can pay for it untouched.
+          drain: none
+          law_of_value: regulates
