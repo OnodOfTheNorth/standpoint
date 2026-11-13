@@ -1,0 +1,380 @@
+id: arc.uprising
+title: The Main Road
+blurb: A boda-boda rider dead in a cell, a camera over a hardware shop, and a crowd that knows your name.
+role: You run a hardware shop on the main road at the edge of the estate.
+place: Mathare, an estate in Nairobi, Kenya
+start: arc.uprising.01
+escalation: arc.uprising.04
+pressure: [arc.uprising.03]
+tags: [state, strategy, commonsense]
+nodes:
+  - id: arc.uprising.01
+    type: scene
+    title: The cell
+    text: >
+      Mathare, Nairobi. Brian, twenty-two, rides a boda-boda and buys his airtime at your hardware shop.
+      On Tuesday police pick him up for "loitering." On Wednesday he is dead in a cell at the local police
+      post; they say he hit his head on the wall. His mother is outside your shop, asking who will walk with
+      her to the station.
+    why: This asks what you think the police are for, and what you do when they kill someone you know.
+    premises:
+      - id: facts
+        text: The premise that we already know the police killed him.
+        evidence: [{position: police.role.order-maintenance, w: 1}]
+    options:
+      - id: crowd
+        text: Walk with her, and bring every boda rider on the road. Numbers are the only thing that station hears.
+        set: {marched: true}
+        evidence:
+          - {position: change.means.nonviolent-resistance, w: 2}
+        probe:
+          ask: Why does the station only hear numbers?
+          options:
+            - text: Because police here protect people with money, not people like Brian.
+              cause: structures
+              evidence: [{position: police.role.class-repression, w: 2}]
+            - text: Because a few bad officers think nobody is watching.
+              cause: individuals
+              evidence: [{position: police.role.public-safety, w: 2}]
+            - text: Because the whole thing is rigged and always was.
+              cause: interests
+              evidence: [{position: cs.rigged.system-rigged, w: 2}]
+        consequence: Forty riders idle their engines outside the station. The officer in charge comes out to look.
+        next: arc.uprising.02a
+      - id: lawyer
+        text: Walk with her, and call the police oversight authority and a lawyer. A death in custody is a crime. Make the system work.
+        set: {marched: true}
+        evidence:
+          - {position: police.role.public-safety, w: 3}
+          - {position: change.means.law-and-courts, w: 1}
+        consequence: The oversight authority opens a file. The lawyer wants KSh 50,000 up front.
+        next: arc.uprising.02a
+      - id: wait
+        text: Wait for the facts. The police don't pick a man up for nothing.
+        evidence:
+          - {position: police.role.order-maintenance, w: 2}
+        consequence: His mother finds other people to walk with. She does not buy from you again.
+        next: arc.uprising.02b
+      - id: list
+        text: Keep the shop open and your head down. Anyone at that station goes on a list.
+        evidence:
+          - {position: cs.not-political.dangerous, w: 3}
+        consequence: You sell a lot of padlocks that week.
+        next: arc.uprising.02b
+
+  - id: arc.uprising.02a
+    type: voices
+    title: At the gate
+    text: Day three. Two hundred people at the station gate. Two of them are arguing about what comes next. Who's right?
+    voices:
+      - {name: "Wanjiru, a church elder", says: "No stones. The moment a stone flies, Brian becomes a riot, and the man who killed him walks free."}
+      - {name: "Otieno, a boda rider", says: "We have marched politely for every Brian for twenty years. Polite marches get us funerals. They only count us when something burns."}
+    why: This asks when, if ever, you think force against the state is justified.
+    options:
+      - id: wanjiru
+        text: Wanjiru. Violence hands them the story and the excuse.
+        cause: ideas
+        evidence:
+          - {position: violence.political.never, w: 3}
+        next: arc.uprising.03
+      - id: otieno
+        text: Otieno. A state that kills its own people can't demand they stay polite.
+        cause: interests
+        evidence:
+          - {position: violence.political.resistance-to-tyranny, w: 3}
+        next: arc.uprising.03
+      - id: whose
+        text: Both miss it. Ask whose property those police are guarding, and who pays them.
+        cause: structures
+        evidence:
+          - {position: police.role.class-repression, w: 2}
+        next: arc.uprising.03
+      - id: courts
+        text: Both miss it. Go home and let the lawyers build a case. Crowds don't convict anyone.
+        cause: individuals
+        evidence:
+          - {position: change.means.law-and-courts, w: 2}
+        next: arc.uprising.03
+
+  - id: arc.uprising.02b
+    type: explanation
+    title: Resisted
+    text: >
+      The police statement says Brian "resisted." Your customers talk of nothing else. Your nephew, a
+      constable in Kasarani, says nothing at all. Why do men like Brian die in cells?
+    why: This asks what kind of cause you reach for when the police kill someone.
+    options:
+      - id: bad
+        text: Bad officers, badly trained, who think nobody will check.
+        cause: individuals
+        evidence:
+          - {position: police.role.public-safety, w: 2}
+        next: arc.uprising.03
+      - id: keep-down
+        text: The police exist to keep places like Mathare in line for the people in Karen and Runda.
+        cause: structures
+        evidence:
+          - {position: police.role.class-repression, w: 3}
+        next: arc.uprising.03
+      - id: bribe
+        text: He didn't pay what they asked. The whole force runs on bribes, top to bottom.
+        cause: individuals
+        evidence:
+          - {position: state.nature.captured, w: 2}
+        next: arc.uprising.03
+      - id: crime
+        text: Crime here is real. Police in a hard estate make hard mistakes.
+        cause: culture
+        evidence:
+          - {position: police.role.order-maintenance, w: 2}
+        next: arc.uprising.03
+
+  - id: arc.uprising.03
+    type: pressure
+    title: The camera
+    tests: law.nature.rule-of-law
+    text: >
+      Your shop camera covers the road. You check it: Tuesday night, Brian walking into the police van
+      unhurt. Two officers from the post come by "for a copy." They mention your trading licence is due
+      for renewal, and that hardware shops get inspected for counterfeit goods. The family's lawyer has also
+      called. Twice.
+    why: This puts your shop against whether you think the law should bind the police too.
+    options:
+      - id: lawyer
+        text: Give it to the family's lawyer. If the law doesn't bind the police, it binds nobody.
+        pressure: principle
+        cost: Your shop is raided for counterfeit goods within a week. Your licence is suspended pending review.
+        evidence:
+          - {position: law.nature.rule-of-law, w: 3}
+        next: arc.uprising.04
+      - id: police
+        text: Give it to the officers. You have a family, and they have your licence.
+        pressure: interest
+        cost: The footage disappears. Brian's mother learns, eventually, that you had it.
+        evidence:
+          - {position: cs.not-political.dangerous, w: 2}
+          - {position: law.nature.rule-of-law, w: -1}
+        next: arc.uprising.04
+      - id: online
+        text: Post it online from a borrowed phone. Let the whole country see it, and keep your name out.
+        pressure: mixed
+        cost: Two million views by morning. The lawyer says anonymous footage can't be used in court.
+        evidence:
+          - {position: change.means.nonviolent-resistance, w: 1}
+          - {position: law.nature.class-will, w: 1}
+        next: arc.uprising.04
+
+  - id: arc.uprising.04
+    type: escalation
+    title: Day eight
+    recap: In Mathare, Nairobi, a young man has died in a police cell, and the estate has been marching for a week.
+    text: >
+      Day eight. The march turns onto the main road. Police fire tear gas, then live rounds; a
+      fourteen-year-old is hit in the leg. The crowd heads for the police post and the supermarket beside
+      it. The supermarket owner, who is also your landlord, and two officers ask you to stand at his
+      shutters. People in the crowd are calling your name too.
+    why: The middle option is gone. This records which way you break when the crowd and the police collide.
+    options:
+      - id: shutters
+        text: Stand at the shutters. Whatever happened to Brian, burning a supermarket brings nobody back.
+        side: {axis: class, dir: order}
+        set: {joined: false}
+        evidence:
+          - {position: property.private.natural-right, w: 2}
+          - {position: violence.political.state-monopoly, w: 1}
+        consequence: The supermarket survives. Your own shop's window does not.
+        next: arc.uprising.05
+      - id: clear
+        text: Help the police clear the road. Order first, then justice.
+        side: {axis: class, dir: order}
+        set: {joined: false}
+        evidence:
+          - {position: police.role.order-maintenance, w: 2}
+          - {position: violence.political.state-monopoly, w: 2}
+        consequence: The road is cleared by dusk. Two more people are shot. Someone films you pointing out a boy.
+        next: arc.uprising.05
+      - id: post
+        text: Go with the crowd to the police post. After a week of bullets, the station answers to us.
+        side: {axis: class, dir: dispossessed}
+        set: {joined: true}
+        evidence:
+          - {position: violence.political.resistance-to-tyranny, w: 2}
+          - {position: police.role.class-repression, w: 1}
+        probe:
+          ask: What should happen to the police post?
+          options:
+            - text: Shut it down. Mathare can keep itself safer than they ever did.
+              cause: structures
+              evidence: [{position: police.role.abolition, w: 2}]
+            - text: Nothing burns. We stand there until the officers who did it are handed over.
+              cause: individuals
+              evidence: [{position: police.role.public-safety, w: 2}]
+        consequence: The post is abandoned by nightfall. The supermarket is emptied by midnight.
+        next: arc.uprising.05
+      - id: line
+        text: Stand between the crowd and the police with your arms up, on the crowd's side of the line.
+        side: {axis: class, dir: dispossessed}
+        set: {joined: true}
+        evidence:
+          - {position: change.means.nonviolent-resistance, w: 2}
+          - {position: violence.political.never, w: 1}
+        consequence: You are gassed twice. A photo of you, arms up, is on the front page of the Nation.
+        next: arc.uprising.05
+      - id: home
+        text: Pull your shutter down and take your family home.
+        side: {axis: class, dir: neither}
+        set: {joined: false}
+        evidence:
+          - {position: cs.not-political.dangerous, w: 2}
+        consequence: You hear the shots from your kitchen.
+        next: arc.uprising.05
+
+  - id: arc.uprising.05
+    type: line
+    title: The response
+    text: >
+      A month later, Parliament debates a response, and your ward representative holds a meeting at the
+      chief's camp. Here is what's on the table. Where do you draw the line?
+    cases:
+      - An inquest with an independent pathologist
+      - Charge the officers on duty that night
+      - Disband the station's special crime unit
+      - Cut the police budget and fund youth jobs instead
+      - Replace the police post with a residents' safety committee
+    why: This asks what you think would make the estate safe, and from whom.
+    premises:
+      - id: no-parliament
+        text: The premise that Parliament will do any of it.
+        evidence: [{position: state.nature.captured, w: 2}]
+    options:
+      - id: two
+        text: The first two. Find out the truth and try the guilty. The rest is politics.
+        evidence:
+          - {position: police.role.public-safety, w: 3}
+          - {position: law.nature.rule-of-law, w: 1}
+        next:
+          - {if: {flag: {key: joined, eq: true}}, to: arc.uprising.06a}
+          - {to: arc.uprising.06b}
+      - id: three
+        text: The first three. That unit has a history, and everybody here knows it.
+        evidence:
+          - {position: police.role.public-safety, w: 2}
+          - {position: police.role.class-repression, w: 1}
+        next:
+          - {if: {flag: {key: joined, eq: true}}, to: arc.uprising.06a}
+          - {to: arc.uprising.06b}
+      - id: all
+        text: All of it. The estate can keep itself safer than that post ever did.
+        evidence:
+          - {position: police.role.abolition, w: 3}
+        next:
+          - {if: {flag: {key: joined, eq: true}}, to: arc.uprising.06a}
+          - {to: arc.uprising.06b}
+      - id: none
+        text: None of it. After the looting, the police need backing more than ever.
+        evidence:
+          - {position: police.role.order-maintenance, w: 3}
+        next:
+          - {if: {flag: {key: joined, eq: true}}, to: arc.uprising.06a}
+          - {to: arc.uprising.06b}
+
+  - id: arc.uprising.06a
+    type: tradeoff
+    title: The charge sheet
+    text: >
+      A photo puts you at the police post that night. You are charged with incitement and malicious damage.
+      The prosecutor will drop it if you name the three young men who organized the march. Your lawyer says
+      a trial takes three years and costs KSh 400,000.
+    why: This sets your own safety and money against the people you marched with.
+    options:
+      - id: trial
+        text: Refuse. I'll stand trial.
+        evidence:
+          - {position: police.role.class-repression, w: 2}
+        consequence: You sell the shop's stock to pay the lawyer. The three young men visit every week.
+        next: arc.uprising.07
+      - id: names
+        text: Name them. They chose to lead; I chose to sell hardware.
+        evidence:
+          - {position: cs.not-political.dangerous, w: 2}
+        consequence: The charges are dropped. One of the three is found in the river in March.
+        next: arc.uprising.07
+      - id: brian
+        text: Refuse, and turn it into Brian's trial. Subpoena the station's logbook.
+        evidence:
+          - {position: change.means.law-and-courts, w: 3}
+        consequence: The logbook page for that Tuesday has been torn out. The magistrate notes it.
+        next: arc.uprising.07
+
+  - id: arc.uprising.06b
+    type: scene
+    title: The landlord
+    text: >
+      Your landlord, the supermarket owner, puts up your rent by thirty percent "for security." The
+      residents' committee proposes a night watch of its own to replace police patrols. A security firm
+      offers the shops on the main road armed guards at KSh 8,000 a month each.
+    why: This asks who you think should keep a street safe, and for whom.
+    options:
+      - id: watch
+        text: Join the residents' night watch. Neighbors watch better than strangers with guns.
+        evidence:
+          - {position: police.role.abolition, w: 2}
+        consequence: The watch catches two thieves in its first month and is accused of beating one.
+        next: arc.uprising.07
+      - id: patrols
+        text: Ask for more police patrols, properly supervised. The state owes us safety.
+        evidence:
+          - {position: police.role.public-safety, w: 2}
+        consequence: The patrols arrive. So do the same officers from the post.
+        next: arc.uprising.07
+      - id: guards
+        text: Pay for the guards. My shop, my money, my protection.
+        evidence:
+          - {position: property.private.natural-right, w: 2}
+        consequence: The guards are off-duty police officers. The bill goes up in June.
+        next: arc.uprising.07
+      - id: order
+        text: Back the police as they are. A rough police force beats a street run by gangs.
+        evidence:
+          - {position: police.role.order-maintenance, w: 2}
+        consequence: Your landlord nods. Your rent stays where he put it.
+        next: arc.uprising.07
+
+  - id: arc.uprising.07
+    type: explanation
+    title: Cause undetermined
+    text: >
+      A year on, the inquest finds Brian died of "blunt force trauma, cause undetermined." Nobody is
+      charged. His photo is still taped inside your shop door. A customer asks what the whole thing was about.
+    why: This asks what kind of cause you reach for when you explain the killing and what followed.
+    options:
+      - id: class
+        text: The police guard the rich from the poor. Brian was poor in the wrong place.
+        cause: structures
+        evidence:
+          - {position: police.role.class-repression, w: 2}
+      - id: law
+        text: The law was written by the people it protects. "Cause undetermined" is how it says so.
+        cause: structures
+        evidence:
+          - {position: law.nature.class-will, w: 3}
+      - id: bribes
+        text: Corrupt officers and the bosses who cover for them. Clean them out and it changes.
+        cause: individuals
+        evidence:
+          - {position: state.nature.captured, w: 2}
+      - id: training
+        text: A police force that was never trained or paid properly. Fix that and you fix most of it.
+        cause: interests
+        evidence:
+          - {position: police.role.public-safety, w: 2}
+      - id: rigged
+        text: The system is rigged, and Brian found out how.
+        cause: interests
+        evidence:
+          - {position: cs.rigged.system-rigged, w: 2}
+      - id: luck
+        text: Bad luck and a bad night. Keep your head down and it doesn't happen to you.
+        cause: chance
+        evidence:
+          - {position: cs.not-political.dangerous, w: 2}

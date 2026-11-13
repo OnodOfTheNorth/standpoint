@@ -1,0 +1,383 @@
+id: arc.temple
+title: The Chariot
+blurb: A polite petition, a medical seat lost by four marks, and forty acres of paddy ripening before the rain.
+role: You are a temple trustee from a landowning family.
+place: A paddy village in Villupuram district, Tamil Nadu, India
+start: arc.temple.01
+escalation: arc.temple.05
+pressure: [arc.temple.03]
+tags: [culture, economy, state]
+nodes:
+  - id: arc.temple.01
+    type: scene
+    title: The petition
+    text: >
+      A village in Villupuram district, Tamil Nadu. You are one of five trustees of the Mariamman temple,
+      and your family owns forty acres of paddy. The Dalit families from the colony, who work most of those
+      acres, petition to enter the temple and pull the chariot at this year's festival. The petition is
+      polite. The other trustees are not.
+    why: This asks what you think caste is, and what a temple owes the people it has kept out.
+    premises:
+      - id: not-ours
+        text: The premise that the trustees get to decide. The law already says the doors are open.
+        evidence: [{position: caste.question.reservations-and-law, w: 2}]
+    conditions:
+      - id: elders
+        text: It depends what the priest and the village elders say.
+        evidence: [{position: tradition.modernity.inherited-wisdom, w: 1}]
+    options:
+      - id: law
+        text: Open the doors. The constitution ended untouchability, and I'm not going to jail for a custom.
+        set: {opened: true}
+        evidence:
+          - {position: caste.question.reservations-and-law, w: 3}
+        consequence: The other four trustees resign the same night.
+        next: arc.temple.02a
+      - id: unity
+        text: Open the doors. Hindus shutting out Hindus is how the whole faith loses.
+        set: {opened: true}
+        evidence:
+          - {position: caste.question.hindu-unity, w: 3}
+          - {position: religion.public.faith-as-nation, w: 1}
+        consequence: The other four trustees resign the same night.
+        next: arc.temple.02a
+      - id: stain
+        text: Open the doors. Untouchability is a stain on the faith, not a part of it.
+        set: {opened: true}
+        evidence:
+          - {position: caste.question.purify-hinduism, w: 3}
+        consequence: The other four trustees resign the same night.
+        next: arc.temple.02a
+      - id: custom
+        text: Refuse. The temple's customs are older than any of us, and not ours to change.
+        set: {opened: false}
+        evidence:
+          - {position: caste.question.sacred-order, w: 2}
+          - {position: tradition.modernity.inherited-wisdom, w: 2}
+        probe:
+          ask: What makes the custom binding?
+          options:
+            - text: The order of things is given. Each of us has a duty within it.
+              cause: divine
+              evidence: [{position: caste.question.sacred-order, w: 2}]
+            - text: Change it and the village splits for a generation.
+              cause: culture
+              evidence: [{position: tradition.modernity.inherited-wisdom, w: 2}]
+            - text: Our families built that temple and paid for every festival since.
+              cause: interests
+              evidence: [{position: property.private.natural-right, w: 2}]
+        consequence: The colony withdraws the petition and invites you to a meeting.
+        next: arc.temple.02b
+      - id: own
+        text: Refuse, and offer to pay half for a temple of their own. Equal before the goddess, each in their place.
+        set: {opened: false}
+        evidence:
+          - {position: equality.concept.equal-dignity, w: 2}
+        consequence: The colony thanks you for the offer and invites you to a meeting.
+        next: arc.temple.02b
+
+  - id: arc.temple.02a
+    type: explanation
+    title: The doorway
+    text: >
+      Your caste association calls you a traitor at a meeting you weren't invited to. Your wife's brother
+      stops answering his phone. Somebody leaves a dead crow on the temple step. Why are they this angry
+      over a doorway?
+    why: This asks what kind of cause you reach for when you explain caste.
+    options:
+      - id: land
+        text: If the colony walks into the temple, next year it asks for a wage. The doorway guards the fields.
+        cause: interests
+        evidence:
+          - {position: caste.question.class-and-caste, w: 3}
+        next: arc.temple.03
+      - id: raised
+        text: Fear. They were raised in it, and nobody unlearns that in a night.
+        cause: culture
+        evidence:
+          - {position: caste.question.purify-hinduism, w: 2}
+        next: arc.temple.03
+      - id: census
+        text: The British census froze castes into ranks. They're defending a hierarchy two centuries old, not two thousand.
+        cause: structures
+        evidence:
+          - {position: caste.question.colonial-hardening, w: 3}
+        next: arc.temple.03
+      - id: scripture
+        text: The scriptures rank people by birth, and they believe the scriptures.
+        cause: ideas
+        evidence:
+          - {position: caste.question.annihilation, w: 3}
+        next: arc.temple.03
+      - id: above
+        text: Being above somebody is the only thing some of them own.
+        cause: interests
+        evidence:
+          - {position: labor.division.race-caste-nation, w: 2}
+        next: arc.temple.03
+
+  - id: arc.temple.02b
+    type: voices
+    title: The meeting
+    text: A meeting in the colony's community hall. You've been asked to come and listen. Two speakers. Who's right?
+    voices:
+      - {name: "Selvi, a schoolteacher", says: "Ambedkar said it in 1935: a religion that shuts you out is not yours. Stop petitioning their temple. Take the reserved seats, the jobs and the law, and build our own power."}
+      - {name: "Ravi, a farmworkers' union organizer", says: "The temple is the symptom. Forty acres there, two acres here. Until the land changes hands, those doors open and shut at the landlords' pleasure."}
+    why: This asks what you think caste rests on, and what would end it.
+    options:
+      - id: selvi
+        text: Selvi. Nobody should beg at a door that was built to keep them out.
+        cause: ideas
+        evidence:
+          - {position: caste.question.annihilation, w: 2}
+          - {position: equality.concept.group-substantive, w: 1}
+        next: arc.temple.03
+      - id: ravi
+        text: Ravi. Whoever owns the land owns the village, temple included.
+        cause: structures
+        evidence:
+          - {position: caste.question.class-and-caste, w: 3}
+        next: arc.temple.03
+      - id: city
+        text: Both miss it. Send the children to Chennai. In an IT office nobody asks your caste.
+        cause: interests
+        evidence:
+          - {position: caste.question.market-dissolves, w: 3}
+        next: arc.temple.03
+      - id: peace
+        text: Both are stirring up a village that has lived in peace for generations.
+        cause: culture
+        evidence:
+          - {position: tradition.modernity.inherited-wisdom, w: 2}
+        next: arc.temple.03
+
+  - id: arc.temple.03
+    type: pressure
+    title: The seat
+    tests: caste.question.reservations-and-law
+    text: >
+      Results day. Your son misses a government medical seat by four marks. Murugan, son of the man who
+      drives your tractor, gets one in the reserved category. Your brother-in-law, a lawyer, is petitioning
+      the High Court to cap reservations. He wants your name on it, and ₹2 lakh. A private seat for your son
+      costs ₹15 lakh a year.
+    why: This puts your own son's future against what you say about reservation.
+    options:
+      - id: refuse
+        text: Refuse. Murugan's family waited three thousand years for that seat. Mine can wait one.
+        pressure: principle
+        cost: Your son retakes the exam next year. Your brother-in-law tells the family you chose the tractor driver's boy over your own.
+        evidence:
+          - {position: caste.question.reservations-and-law, w: 2}
+        next: arc.temple.04
+      - id: sign
+        text: Sign and pay. Four marks is four marks.
+        pressure: interest
+        cost: Murugan's father hears of it by evening. He does not come to work the next day.
+        evidence:
+          - {position: equality.concept.opportunity, w: 2}
+          - {position: caste.question.reservations-and-law, w: -2}
+        next: arc.temple.04
+      - id: income
+        text: Don't sign, but say publicly that the quota should go by income, not caste.
+        pressure: mixed
+        cost: Both sides quote you, each to prove the other wrong. Your son still retakes the exam.
+        evidence:
+          - {position: equality.concept.opportunity, w: 2}
+          - {position: equality.concept.group-substantive, w: -1}
+        next: arc.temple.04
+
+  - id: arc.temple.04
+    type: line
+    title: How far
+    text: >
+      The panchayat holds a public meeting on reservation, and you are asked to speak. Here is how far it
+      could reach. Where do you draw the line?
+    cases:
+      - Seats in government colleges
+      - Government jobs
+      - Promotions inside government jobs
+      - Hiring at private companies
+      - Priests in the state's temples
+    why: This asks what equality you think is owed between castes, and where it stops.
+    premises:
+      - id: settled
+        text: The premise that it's up for debate. It's in the constitution.
+        evidence: [{position: caste.question.reservations-and-law, w: 1}]
+    options:
+      - id: all
+        text: All of it, priesthood included. Caste reached into everything, so the remedy has to.
+        evidence:
+          - {position: equality.concept.group-substantive, w: 3}
+          - {position: caste.question.reservations-and-law, w: 1}
+        next: arc.temple.05
+      - id: door
+        text: Seats and jobs, to get people through the door. After that, merit.
+        evidence:
+          - {position: caste.question.reservations-and-law, w: 2}
+          - {position: equality.concept.opportunity, w: 1}
+        next: arc.temple.05
+      - id: sanctum
+        text: Everything but the priesthood. Who serves the goddess is a matter for the faith.
+        evidence:
+          - {position: caste.question.reservations-and-law, w: 1}
+          - {position: caste.question.sacred-order, w: 1}
+        next: arc.temple.05
+      - id: none
+        text: None of it. Every seat given by caste is a seat taken by caste.
+        evidence:
+          - {position: equality.concept.opportunity, w: 3}
+        next: arc.temple.05
+      - id: land
+        text: Quotas are crumbs. Give the colony land and it won't need them.
+        evidence:
+          - {position: caste.question.class-and-caste, w: 2}
+        next: arc.temple.05
+
+  - id: arc.temple.05
+    type: escalation
+    title: Harvest
+    recap: In a Tamil Nadu village, Dalit farm laborers have been fighting to enter the temple their landlords run.
+    text: >
+      Harvest week. The colony's laborers will cut no paddy until they can enter the temple and are paid
+      ₹600 a day, not ₹400. The landowners answer with a boycott: no work, no credit at the shops, no water
+      from the village tank for the colony. Your forty acres are ripe, rain is due Thursday, and the
+      landowners want your signature tonight.
+    why: The middle option is gone. This records which way you break when landowners and laborers collide.
+    options:
+      - id: sign
+        text: Sign, and bring in a crew from the next district. Give in once and they'll run the village.
+        side: {axis: class, dir: order}
+        evidence:
+          - {position: property.private.natural-right, w: 2}
+          - {position: tradition.modernity.inherited-wisdom, w: 1}
+        consequence: The outside crew arrives on Tuesday under police escort.
+        next: arc.temple.06b
+      - id: broke
+        text: Sign. Caste has nothing to do with it. ₹600 a day would sink every small farmer here.
+        side: {axis: class, dir: order}
+        evidence:
+          - {position: wage.nature.just-wage, w: -2}
+          - {position: caste.question.class-and-caste, w: -1}
+        consequence: The smallholders thank you. Two of them owe you money.
+        next: arc.temple.06b
+      - id: pay
+        text: Refuse the boycott. Pay ₹600, open the temple gate, and get the paddy in by Wednesday.
+        side: {axis: class, dir: dispossessed}
+        evidence:
+          - {position: wage.nature.just-wage, w: 3}
+        consequence: Your paddy is the first in by Wednesday. Your neighbors' rots in Thursday's rain.
+        next: arc.temple.06a
+      - id: gate
+        text: Refuse, and walk into the temple with the colony on festival day.
+        side: {axis: class, dir: dispossessed}
+        evidence:
+          - {position: caste.question.annihilation, w: 2}
+          - {position: equality.concept.group-substantive, w: 1}
+        consequence: Police line the lane. The chariot moves for the first time in its history with a Dalit hand on the rope.
+        next: arc.temple.06a
+      - id: leave
+        text: Sign nothing. Lease the fields out for the season and go to your cousin in Chennai.
+        side: {axis: class, dir: neither}
+        evidence:
+          - {position: caste.question.market-dissolves, w: 1}
+        consequence: The lessee signs the boycott in your place.
+        next:
+          - {if: {flag: {key: opened, eq: true}}, to: arc.temple.06a}
+          - {to: arc.temple.06b}
+
+  - id: arc.temple.06a
+    type: tradeoff
+    title: Pongal
+    text: >
+      The caste association names your family. Nobody of your caste will marry into it. Your daughter's
+      engagement, set for Pongal, is called off by letter. The same week, the colony asks you to sponsor
+      next year's festival, the first patron from outside the colony.
+    why: This sets your family's standing among your own people against what you did at the temple.
+    options:
+      - id: patron
+        text: Accept. A marriage that depends on a doorway isn't one I want for her.
+        evidence:
+          - {position: caste.question.annihilation, w: 2}
+        consequence: Your daughter marries a classmate from Madurai two years later. Her grandmother does not attend.
+        next: arc.temple.07
+      - id: slow
+        text: Decline, quietly, and work on the association one family at a time. Hearts change slowly.
+        evidence:
+          - {position: caste.question.purify-hinduism, w: 2}
+        consequence: The engagement stays off. Three families in the association start returning your calls.
+        next: arc.temple.07
+      - id: apologize
+        text: Apologize to the association. My daughter shouldn't pay for my conscience.
+        evidence:
+          - {position: tradition.modernity.inherited-wisdom, w: 2}
+        consequence: The engagement is back on. The colony stops inviting you to anything.
+        next: arc.temple.07
+
+  - id: arc.temple.06b
+    type: scene
+    title: The tank road
+    text: >
+      The boycott holds and the paddy comes in before the rain. On Friday, Kannan, who led the laborers, is
+      beaten on the tank road. The police open a case under the law against atrocities on Dalits and ask you
+      for a statement. Your lawyer says the case can be "managed."
+    why: This asks whether you think the law is a weapon for the weak, a nuisance, or a tool of the strong.
+    options:
+      - id: testify
+        text: Tell the police who did it. The law is the one thing on Kannan's side; use it.
+        evidence:
+          - {position: law.nature.contested-terrain, w: 2}
+          - {position: caste.question.reservations-and-law, w: 1}
+        consequence: Two men from your own street are charged. Your tractor is set on fire in April.
+        next: arc.temple.07
+      - id: manage
+        text: Let the lawyer manage it. The village has to live together after this.
+        evidence:
+          - {position: tradition.modernity.inherited-wisdom, w: 2}
+        consequence: The case drags for six years. Kannan moves to Tiruppur to work in a garment unit.
+        next: arc.temple.07
+      - id: defend
+        text: Defend the association. That law gets used to settle scores, and Kannan started this.
+        evidence:
+          - {position: caste.question.reservations-and-law, w: -2}
+        consequence: The association pays your legal fees. You owe it now.
+        next: arc.temple.07
+
+  - id: arc.temple.07
+    type: explanation
+    title: Ten years on
+    text: >
+      Ten years on. Murugan is a doctor at the district hospital; your son builds software in Bengaluru.
+      The temple question went to the High Court and is still there. Your grandson asks what all of it was about.
+    why: This asks what kind of cause you reach for when you explain caste in your own village.
+    options:
+      - id: land
+        text: Land and wages. The temple was just where the landlords kept score.
+        cause: structures
+        evidence:
+          - {position: caste.question.class-and-caste, w: 2}
+          - {position: labor.division.race-caste-nation, w: 1}
+      - id: scripture
+        text: A religion that ranks people by birth. Until that goes, nothing really goes.
+        cause: ideas
+        evidence:
+          - {position: caste.question.annihilation, w: 2}
+      - id: british
+        text: A hierarchy the British hardened into law, kept alive by parties that need caste vote banks.
+        cause: structures
+        evidence:
+          - {position: caste.question.colonial-hardening, w: 2}
+      - id: hearts
+        text: Hearts. Some changed and some didn't. Murugan changed more minds than any court.
+        cause: culture
+        evidence:
+          - {position: caste.question.purify-hinduism, w: 2}
+      - id: money
+        text: Money. Once the young went to the cities, caste lost its grip. It just took time.
+        cause: interests
+        evidence:
+          - {position: caste.question.market-dissolves, w: 2}
+      - id: order
+        text: A village losing its order. Everyone had a place, and now nobody knows theirs.
+        cause: divine
+        evidence:
+          - {position: caste.question.sacred-order, w: 2}

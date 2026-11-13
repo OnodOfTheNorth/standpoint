@@ -1,0 +1,374 @@
+id: arc.coup
+title: The Lieutenant
+blurb: A disputed count, a lithium contract torn up, and an order that comes after midnight.
+role: You are a junior army officer from El Alto.
+place: La Paz and El Alto, Bolivia
+start: arc.coup.01
+escalation: arc.coup.05
+pressure: [arc.coup.04]
+tags: [world, state, history, commonsense]
+nodes:
+  - id: arc.coup.01
+    type: scene
+    title: After midnight
+    text: >
+      La Paz. Three weeks of protest over a disputed election count. Six months ago the president cancelled a
+      foreign consortium's lithium contract and gave the salt flats to the state company. Tonight your
+      colonel gathers the lieutenants: the high command will "suggest" that the president resign before
+      dawn. He asks whether anyone has a problem with that. You are twenty-seven.
+    why: This asks when, if ever, you think an army may remove a government, and whom it answers to.
+    premises:
+      - id: not-a-coup
+        text: The premise that this is a coup. The count was rigged; the army is restoring the constitution.
+        evidence: [{position: intl.sovereignty.conditional-on-rights, w: 2}, {position: cs.clean-house.army-steps-in, w: 1}]
+    conditions:
+      - id: count
+        text: It depends whether the count was really rigged.
+        evidence: [{position: siege.governance.constitutional-order, w: 1}]
+    options:
+      - id: support
+        text: No problem. He rigged the count, and the army is the last honest institution left.
+        set: {backed: true}
+        evidence:
+          - {position: cs.clean-house.army-steps-in, w: 3}
+        probe:
+          ask: What makes the army the one to decide?
+          options:
+            - text: Somebody has to, and the courts belong to him.
+              cause: individuals
+              evidence: [{position: cs.clean-house.army-steps-in, w: 2}]
+            - text: A government that steals an election has given up its right to be obeyed.
+              cause: ideas
+              evidence: [{position: intl.sovereignty.conditional-on-rights, w: 2}]
+            - text: The country is on the edge of civil war. Order first, elections after.
+              cause: structures
+              evidence: [{position: siege.governance.national-security-state, w: 2}]
+        consequence: The colonel nods at you. Someone has noticed you nodding first.
+        next: arc.coup.02a
+      - id: ask
+        text: Ask, on the record, which article of the constitution this order comes under.
+        set: {backed: false}
+        evidence:
+          - {position: siege.governance.constitutional-order, w: 3}
+        consequence: The colonel writes your name down. Two lieutenants look at the floor.
+        next: arc.coup.02b
+      - id: obey
+        text: Say nothing and follow orders. A lieutenant who picks sides doesn't stay one.
+        set: {backed: true}
+        evidence:
+          - {position: siege.governance.national-security-state, w: 1}
+        consequence: Nobody writes your name down. That was the idea.
+        next: arc.coup.02a
+      - id: warn
+        text: Step outside and call your cousin in the miners' federation. Tell him what's coming.
+        set: {backed: false}
+        evidence:
+          - {position: intl.sovereignty.nations-set-own-course, w: 2}
+          - {position: siege.governance.mobilize-and-elect, w: 1}
+        consequence: By two a.m. the miners are on the road from Oruro with dynamite. So is the rumor that someone talked.
+        next: arc.coup.02b
+
+  - id: arc.coup.02a
+    type: explanation
+    title: Why tonight
+    text: >
+      The president flies out at six. A foreign embassy recognizes the interim government before lunch. The
+      lithium decree is under review by Friday. In the officers' mess everyone has a theory. Why did it
+      happen now?
+    why: This asks what kind of cause you reach for when a government falls.
+    options:
+      - id: fraud
+        text: He rigged the count and got caught. Everything else is noise.
+        cause: individuals
+        evidence:
+          - {position: intl.sovereignty.conditional-on-rights, w: 2}
+          - {position: imperialism.nature.no-such-thing, w: 1}
+        next: arc.coup.03
+      - id: lithium
+        text: Follow the lithium. A country that keeps its own metal gets a new president.
+        cause: structures
+        evidence:
+          - {position: imperialism.nature.unequal-exchange-drain, w: 3}
+        next: arc.coup.03
+      - id: elite
+        text: The old families in Santa Cruz wanted the state back. The embassy just agreed with them.
+        cause: interests
+        evidence:
+          - {position: comprador.nature.broker-class, w: 3}
+        next: arc.coup.03
+      - id: washington
+        text: Some people in Washington made a bad choice. A different administration wouldn't have.
+        cause: individuals
+        evidence:
+          - {position: imperialism.nature.foreign-policy-choice, w: 3}
+        next: arc.coup.03
+
+  - id: arc.coup.02b
+    type: voices
+    title: The barracks
+    text: >
+      The president flies out at six. In the barracks, nobody is quite sure whether your name is on a list.
+      Two men argue over cold coffee. Who's right?
+    voices:
+      - {name: Captain Rojas, says: "He packed the courts and fudged the count. Sovereignty doesn't mean one man rules forever."}
+      - {name: Sergeant Mamani, says: "Six months ago he took back the lithium. Tonight the army took back the president. You think that's a coincidence?"}
+    why: This asks whether you read a government's fall through its own conduct or through who gains from its fall.
+    options:
+      - id: rojas
+        text: Rojas. A government that cheats loses its claim to be left alone.
+        cause: individuals
+        evidence:
+          - {position: intl.sovereignty.conditional-on-rights, w: 3}
+        next: arc.coup.03
+      - id: mamani
+        text: Mamani. The fraud is the story they tell. The lithium is the reason.
+        cause: structures
+        evidence:
+          - {position: imperialism.nature.unequal-exchange-drain, w: 2}
+          - {position: comprador.nature.broker-class, w: 1}
+        next: arc.coup.03
+      - id: street
+        text: Both miss it. Neither the army nor the embassy decides. New elections, now, under the people's eyes.
+        cause: ideas
+        evidence:
+          - {position: siege.governance.mobilize-and-elect, w: 2}
+        next: arc.coup.03
+      - id: same
+        text: Both miss it. Two gangs of the same elite. My mother pays at the market either way.
+        cause: individuals
+        evidence:
+          - {position: comprador.nature.kleptocratic-elites, w: 3}
+        next: arc.coup.03
+
+  - id: arc.coup.03
+    type: verdict
+    title: Santiago, 1973
+    text: >
+      Your instructor at the military college liked to bring up Chile. In 1973 an elected socialist
+      government that had nationalized the copper mines was overthrown by its own army, with Washington's
+      help. The army ruled for seventeen years. Your instructor always asked the same question. Where would
+      you have stood?
+    why: This asks how you read a real coup against an elected government, and what you think it was for.
+    options:
+      - id: destroyed
+        text: With the government. A road to socialism by votes, destroyed by Chilean money and Washington.
+        evidence:
+          - {position: hist.chile-1973.peaceful-road-destroyed, w: 3}
+        next: arc.coup.04
+      - id: trap
+        text: With the government, which made one mistake. It left the old army standing.
+        evidence:
+          - {position: hist.chile-1973.peaceful-road-a-trap, w: 3}
+        next: arc.coup.04
+      - id: saved
+        text: With the army. Chile was heading for civil war and a Cuban future.
+        evidence:
+          - {position: hist.chile-1973.saved-from-communism, w: 3}
+          - {position: cs.clean-house.army-steps-in, w: 1}
+        next: arc.coup.04
+      - id: both
+        text: With neither. Both sides broke the rules, and Chile paid.
+        evidence:
+          - {position: hist.chile-1973.tragedy-of-polarization, w: 3}
+        next: arc.coup.04
+      - id: reforms
+        text: Against the killings, but the economic reforms that followed made Chile the richest country in the region.
+        evidence:
+          - {position: hist.chile-1973.chicago-miracle, w: 3}
+        next: arc.coup.04
+
+  - id: arc.coup.04
+    type: pressure
+    title: The statement
+    tests: intl.sovereignty.nations-set-own-course
+    text: >
+      The interim government reopens the lithium contract by decree. Your colonel offers you a year's
+      training course abroad and a captaincy. He needs one thing first: your signature on a statement that
+      your unit "acted within the constitution" that night. Your mother has been asking when you'll be
+      promoted since you were nineteen.
+    why: This sets your career against what you believe about who should decide your country's course.
+    options:
+      - id: sign
+        text: Sign it. It's a form. Officers sign forms.
+        pressure: interest
+        cost: Your name is now on the interim government's side of the record, for good.
+        set: {signed: true}
+        evidence:
+          - {position: siege.governance.national-security-state, w: 1}
+          - {position: intl.sovereignty.nations-set-own-course, w: -1}
+        next: arc.coup.05
+      - id: refuse
+        text: Refuse. You won't sign that the night was lawful.
+        pressure: principle
+        cost: No course, no captaincy. You're posted to a border garrison in Pando with a broken generator.
+        set: {signed: false}
+        evidence:
+          - {position: intl.sovereignty.nations-set-own-course, w: 2}
+          - {position: siege.governance.constitutional-order, w: 1}
+        next: arc.coup.05
+      - id: sign-remember
+        text: Sign, take the course, and keep a private record of everything you saw.
+        pressure: mixed
+        cost: You get the captaincy. You also keep a notebook nobody can ever find.
+        set: {signed: true}
+        evidence:
+          - {position: siege.governance.siege-as-pretext, w: 1}
+        next: arc.coup.05
+      - id: believe
+        text: Sign gladly. The unit did act within the constitution, and the contract brings jobs.
+        pressure: interest
+        cost: Your cousin in the miners' federation stops answering your calls.
+        set: {signed: true}
+        evidence:
+          - {position: intl.sovereignty.conditional-on-rights, w: 2}
+          - {position: imperialism.nature.no-such-thing, w: 1}
+        next: arc.coup.05
+
+  - id: arc.coup.05
+    type: escalation
+    title: The gas plant
+    recap: In Bolivia, the army has removed an elected president who nationalized the country's lithium.
+    text: >
+      El Alto. Residents have blockaded the gas plant at the edge of the city to demand the elected
+      president's return. La Paz is running out of fuel. Your platoon is ordered to escort tanker trucks
+      through. A new decree exempts soldiers from criminal liability. The crowd is chanting in Aymara. Your
+      mother's street is two blocks from the gate.
+    why: The middle option is gone. This records which way you break when a government backed from abroad meets its own people.
+    options:
+      - id: escort
+        text: Escort the trucks through. The city needs fuel, and the order is lawful.
+        side: {axis: empire, dir: order}
+        set: {stood_down: false}
+        evidence:
+          - {position: siege.governance.national-security-state, w: 2}
+          - {position: intl.sovereignty.conditional-on-rights, w: 1}
+        consequence: The trucks get through. Somewhere behind you there is shooting. By evening the count is ten dead.
+        next:
+          - {if: {flag: {key: stood_down, eq: true}}, to: arc.coup.06a}
+          - {to: arc.coup.06b}
+      - id: fire
+        text: Escort them, and fire if fired on. That crowd is the old president's militia.
+        side: {axis: empire, dir: order}
+        set: {stood_down: false}
+        evidence:
+          - {position: siege.governance.national-security-state, w: 3}
+          - {position: cs.clean-house.army-steps-in, w: 1}
+        consequence: The trucks get through. By evening the count is ten dead. Nobody can say which rifles.
+        next:
+          - {if: {flag: {key: stood_down, eq: true}}, to: arc.coup.06a}
+          - {to: arc.coup.06b}
+      - id: stand-down
+        text: Order your platoon to stand down, and stand between the trucks and the crowd.
+        side: {axis: empire, dir: dispossessed}
+        set: {stood_down: true}
+        evidence:
+          - {position: intl.sovereignty.nations-set-own-course, w: 2}
+          - {position: siege.governance.mobilize-and-elect, w: 1}
+        consequence: Half your platoon follows you. The trucks turn back. You're under arrest by nightfall.
+        next:
+          - {if: {flag: {key: stood_down, eq: true}}, to: arc.coup.06a}
+          - {to: arc.coup.06b}
+      - id: walk
+        text: Take off your cap and walk home to your mother's street.
+        side: {axis: empire, dir: neither}
+        set: {stood_down: true}
+        evidence:
+          - {position: comprador.nature.kleptocratic-elites, w: 1}
+        consequence: Another lieutenant takes your platoon through. By evening the count is ten dead.
+        next:
+          - {if: {flag: {key: stood_down, eq: true}}, to: arc.coup.06a}
+          - {to: arc.coup.06b}
+
+  - id: arc.coup.06a
+    type: tradeoff
+    title: The list
+    text: >
+      A year later, new elections bring the old president's party back. Charges against you are dropped.
+      The new defense minister wants a list of officers who backed the interim government, and offers you a
+      regiment. Some on the list escorted trucks at the gas plant. Some only signed what they were told to.
+    why: This sets justice for what happened against the risk of turning an army into a party's army.
+    options:
+      - id: purge
+        text: Give him the full list. An army that answers to embassies has to be rebuilt from the bottom.
+        evidence:
+          - {position: intl.sovereignty.nations-set-own-course, w: 2}
+          - {position: siege.governance.national-security-state, w: -1}
+        next: arc.coup.07
+      - id: courts
+        text: Only those who gave orders to fire, and only through the courts. No lists.
+        evidence:
+          - {position: siege.governance.constitutional-order, w: 3}
+        next: arc.coup.07
+      - id: refuse
+        text: No list at all. Every purge recruits the next coup.
+        evidence:
+          - {position: siege.governance.siege-as-pretext, w: 2}
+        next: arc.coup.07
+
+  - id: arc.coup.06b
+    type: scene
+    title: The witness box
+    text: >
+      A year later, new elections bring the old president's party back, and prosecutors open the gas plant
+      case. The officers' lawyer asks you to testify that the crowd had dynamite and fired first. You saw
+      dynamite. You did not see anyone fire first.
+    why: This asks whose account you give when the courts change hands, and what you think the army owes the law.
+    options:
+      - id: as-asked
+        text: Testify as asked. The army stood by you; you stand by the army.
+        evidence:
+          - {position: siege.governance.national-security-state, w: 2}
+        next: arc.coup.07
+      - id: truth
+        text: Say exactly what you saw, the dynamite and the rest.
+        evidence:
+          - {position: siege.governance.constitutional-order, w: 3}
+        next: arc.coup.07
+      - id: against
+        text: Testify against your commanders. They sent you there for a foreign contract.
+        evidence:
+          - {position: imperialism.nature.unequal-exchange-drain, w: 1}
+          - {position: intl.sovereignty.nations-set-own-course, w: 2}
+        next: arc.coup.07
+      - id: political
+        text: Refuse to testify for anyone. This is the new government's revenge, not justice.
+        evidence:
+          - {position: siege.governance.siege-as-pretext, w: 2}
+        next: arc.coup.07
+
+  - id: arc.coup.07
+    type: explanation
+    title: The salt flats
+    text: >
+      Two years on, the lithium contract is cancelled again. The consortium sues in an arbitration court
+      abroad. Your mother has a photo of you in uniform on the shelf, turned slightly toward the wall. Looking
+      back, why did the government fall that night?
+    why: This asks what kind of cause you reach for when explaining a coup.
+    options:
+      - id: man
+        text: One man who wouldn't leave, and a count he couldn't defend.
+        cause: individuals
+        evidence:
+          - {position: intl.sovereignty.conditional-on-rights, w: 2}
+      - id: metal
+        text: Lithium. Countries that keep their own metal don't keep their governments.
+        cause: structures
+        evidence:
+          - {position: imperialism.nature.unequal-exchange-drain, w: 2}
+          - {position: intl.sovereignty.nations-set-own-course, w: 1}
+      - id: brokers
+        text: The local families who sell the country abroad needed the state back, and the army lent it to them.
+        cause: interests
+        evidence:
+          - {position: comprador.nature.broker-class, w: 3}
+      - id: army
+        text: Because this army has always thought the country is its to save. Nothing changes that.
+        cause: culture
+        evidence:
+          - {position: cs.clean-house.army-steps-in, w: -1}
+          - {position: siege.governance.siege-as-pretext, w: 1}
+      - id: corrupt
+        text: Because whoever holds power here steals. The faces change.
+        cause: individuals
+        evidence:
+          - {position: comprador.nature.kleptocratic-elites, w: 3}

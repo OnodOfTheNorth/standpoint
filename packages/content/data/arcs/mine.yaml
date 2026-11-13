@@ -1,0 +1,381 @@
+id: arc.mine
+title: Cobalt
+blurb: Your brother digs it in Kolwezi. You put it in batteries in France. Then the miners take the mine.
+role: You work at a battery plant in France; your brother drives a haul truck at a cobalt mine.
+place: Kolwezi, DR Congo, and a battery plant in northern France
+start: arc.mine.01
+escalation: arc.mine.05
+pressure: [arc.mine.04]
+tags: [world, ecology, commonsense]
+nodes:
+  - id: arc.mine.01
+    type: scene
+    title: The funeral
+    text: >
+      Kolwezi. You are home for your father's funeral, eleven years after you left for France. Your brother
+      Patrice drives a haul truck at the Lwilu cobalt mine, owned by a foreign consortium. The miners' union
+      wants the license revoked and the mine handed to the state company, with miners on the board. Patrice
+      asks whether the people abroad will put money in the strike fund.
+    why: This asks who you think a country's minerals belong to, and where your loyalties run when you live on both ends of the trade.
+    premises:
+      - id: not-mine
+        text: The premise that this is my business. I live in France now.
+        evidence: [{position: cs.own-first.family-first, w: 1}]
+    options:
+      - id: give
+        text: Give two thousand euros. It's their cobalt.
+        set: {gave: true}
+        evidence:
+          - {position: intl.sovereignty.nations-set-own-course, w: 2}
+          - {position: energy.transition.resource-sovereignty, w: 2}
+        probe:
+          ask: What makes it theirs?
+          options:
+            - text: It's under their feet. Whoever lives on the ground should own what's in it.
+              cause: structures
+              evidence: [{position: energy.transition.resource-sovereignty, w: 2}]
+            - text: Those miners are workers like me in France. Same fight, different shift.
+              cause: structures
+              evidence: [{position: cs.own-first.own-means-class, w: 2}]
+            - text: The foreigners take the cobalt and leave the dust. It's been that way since the Belgians.
+              cause: interests
+              evidence: [{position: poverty.cause.drain, w: 2}]
+        consequence: Patrice photographs the receipt and sends it to the union's group chat. Everyone in Kolwezi knows by evening.
+        next: arc.mine.02a
+      - id: family
+        text: Give the money to Patrice himself, not the union. Family first; unions come and go.
+        set: {gave: false}
+        evidence:
+          - {position: cs.own-first.family-first, w: 3}
+        consequence: Patrice puts it in the strike fund anyway. He tells you so after your flight.
+        next: arc.mine.02b
+      - id: careful
+        text: Tell him to keep his head down. The foreigners pay on time; the state company never has.
+        set: {gave: false}
+        evidence:
+          - {position: development.path.integration, w: 2}
+          - {position: poverty.cause.misrule, w: 1}
+        consequence: Patrice says you sound like the mine manager. He says it in French, so it stings more.
+        next: arc.mine.02b
+      - id: nothing
+        text: Give nothing. Whoever runs the mine, the people in Kinshasa will steal the proceeds.
+        set: {gave: false}
+        evidence:
+          - {position: poverty.cause.misrule, w: 3}
+        consequence: Patrice doesn't argue. He has heard it before, mostly from himself.
+        next: arc.mine.02b
+
+  - id: arc.mine.02a
+    type: line
+    title: The arithmetic
+    text: >
+      On the flight back you do the arithmetic. Patrice earns about fourteen dollars a day. There are a few
+      kilos of cobalt in a car battery. If the miners win, prices rise, and someone pays. Here is a series of
+      outcomes, mildest first. Where does your support stop?
+    cases:
+      - Miners' pay doubles; a car battery costs €40 more.
+      - The state takes a majority and royalties triple; a battery costs €150 more.
+      - Congo refines its own cobalt and stops exporting raw ore; a battery costs €400 more.
+      - Prices rise enough that a French battery plant cuts a shift.
+      - Prices rise enough that your own plant closes.
+    why: This asks how much a fair price for a raw material is worth to you when you are the one buying it.
+    options:
+      - id: all
+        text: All of it. That's what the cobalt was worth all along; we were paying a discount.
+        evidence:
+          - {position: exchange.unequal.wage-gap, w: 2}
+          - {position: poverty.cause.drain, w: 1}
+        next: arc.mine.03
+      - id: refine
+        text: Up to the refinery. Congo should process its own ore. Closing plants here is another matter.
+        evidence:
+          - {position: energy.transition.resource-sovereignty, w: 3}
+        next: arc.mine.03
+      - id: royalties
+        text: Up to the royalties. Fair is fair, but not at the cost of European jobs.
+        evidence:
+          - {position: labor.aristocracy.shares-but-exploited, w: 1}
+          - {position: exchange.unequal.fair-trade-fixable, w: 2}
+        next: arc.mine.03
+      - id: pay
+        text: Only the first. Pay the miners more and leave ownership and prices to the market.
+        evidence:
+          - {position: energy.transition.market-led, w: 2}
+          - {position: exchange.unequal.mutual-gain, w: 1}
+        next: arc.mine.03
+
+  - id: arc.mine.02b
+    type: explanation
+    title: Dirt roads
+    text: >
+      Before your flight, Patrice drives you past the pit: a kilometer wide and still growing. Your province
+      produces most of the world's cobalt. Most of its streets are dirt. At the airport a French engineer
+      asks you, in a friendly way, why the place is so poor. What do you tell him?
+    why: This asks what kind of cause you reach for when explaining why a country rich in minerals stays poor.
+    options:
+      - id: drain
+        text: Because the wealth leaves on trucks for the border, and the price is set somewhere else.
+        cause: structures
+        evidence:
+          - {position: poverty.cause.drain, w: 3}
+        next: arc.mine.03
+      - id: rulers
+        text: Because the people running the country steal everything that isn't nailed down.
+        cause: individuals
+        evidence:
+          - {position: poverty.cause.misrule, w: 3}
+        next: arc.mine.03
+      - id: colonial
+        text: Because the Belgians built a mine and a railway to the sea, and nothing else.
+        cause: structures
+        evidence:
+          - {position: poverty.cause.colonial-legacy, w: 3}
+        next: arc.mine.03
+      - id: brokers
+        text: Because the big men in Kinshasa take a cut for letting it leave cheap. They're partners, not victims.
+        cause: interests
+        evidence:
+          - {position: comprador.nature.broker-class, w: 3}
+        next: arc.mine.03
+      - id: time
+        text: Give it time and more investment. Every rich country was a mining camp once.
+        cause: structures
+        evidence:
+          - {position: development.path.integration, w: 3}
+        next: arc.mine.03
+
+  - id: arc.mine.03
+    type: voices
+    title: The canteen
+    text: >
+      Six months later the miners hold Lwilu and the state company runs it. Cobalt jumps forty percent in a
+      quarter. In the canteen of your battery plant near Douai, two coworkers argue over the news. Who's
+      right?
+    voices:
+      - {name: Kévin, says: "Forty percent. You know who pays for that? Not the shareholders. Us. Our bonus, our night shift."}
+      - {name: Aïcha, says: "Cheap cobalt was never cheap. Somebody in Kolwezi was paying the difference with their lungs."}
+    why: This asks whether workers in rich countries gain from cheap resources abroad, and who you think they share interests with.
+    options:
+      - id: kevin
+        text: Kévin. Solidarity is fine, but not out of my payslip.
+        cause: interests
+        evidence:
+          - {position: cs.own-first.our-people-first, w: 2}
+        next: arc.mine.04
+      - id: aicha
+        text: Aïcha. Our batteries were cheap because their wages were.
+        cause: structures
+        evidence:
+          - {position: exchange.unequal.wage-gap, w: 2}
+          - {position: poverty.cause.drain, w: 1}
+        next: arc.mine.04
+      - id: same-enemy
+        text: Both miss it. The owners keep their margin either way. French and Congolese workers have the same enemy.
+        cause: structures
+        evidence:
+          - {position: labor.aristocracy.no-labor-aristocracy, w: 3}
+        next: arc.mine.04
+      - id: productivity
+        text: Both miss it. We earn more because each of us makes more. Pay the miners more and let prices adjust.
+        cause: structures
+        evidence:
+          - {position: labor.aristocracy.earned-by-productivity, w: 2}
+          - {position: energy.transition.market-led, w: 1}
+        next: arc.mine.04
+      - id: both
+        text: Both are right. We live better off their cobalt, and we still get squeezed.
+        cause: structures
+        evidence:
+          - {position: labor.aristocracy.shares-but-exploited, w: 3}
+        next: arc.mine.04
+
+  - id: arc.mine.04
+    type: pressure
+    title: The liaison
+    tests: intl.sovereignty.nations-set-own-course
+    text: >
+      The plant announces the night shift will be cut, eighty jobs, "due to raw-material costs." Then the
+      purchasing director calls you in. They need someone in Kinshasa to negotiate with the new state
+      company, someone with family at the mine. Double salary, a car, and your job is safe. The brief is
+      short: get the price down.
+    why: This sets your job and your family's security in France against what you said about whose cobalt it is.
+    options:
+      - id: take
+        text: Take it, and push the price down hard. My kids live here.
+        pressure: interest
+        cost: Patrice's union learns who the French sent. He doesn't come to your mother's birthday.
+        evidence:
+          - {position: cs.own-first.family-first, w: 2}
+          - {position: intl.sovereignty.nations-set-own-course, w: -1}
+        next: arc.mine.05
+      - id: refuse
+        text: Refuse. You won't bargain against your brother's mine.
+        pressure: principle
+        cost: Your name is on the night-shift list. Eighty jobs, including yours.
+        evidence:
+          - {position: intl.sovereignty.nations-set-own-course, w: 2}
+        next: arc.mine.05
+      - id: inside
+        text: Take it, and quietly tell the Congolese side what the French can really afford.
+        pressure: mixed
+        cost: Within a year both sides suspect you. You keep the salary until they are sure.
+        evidence:
+          - {position: cs.own-first.own-means-class, w: 1}
+          - {position: energy.transition.resource-sovereignty, w: 1}
+        next: arc.mine.05
+      - id: fair
+        text: Take it, and negotiate a long contract at a price both sides can live with. No tricks.
+        pressure: mixed
+        cost: The director says "fair" isn't in the brief. You're back on the line in three months.
+        evidence:
+          - {position: exchange.unequal.fair-trade-fixable, w: 3}
+        next: arc.mine.05
+
+  - id: arc.mine.05
+    type: escalation
+    title: The buses
+    recap: Miners in the DR Congo have taken control of a cobalt mine, and prices for European battery makers have jumped.
+    text: >
+      Paris backs the old owner's arbitration claim and proposes tariffs and an export-credit freeze on
+      Kinshasa until the license is restored. At six a.m. management has buses at the plant gate for a rally
+      in Lille for "European battery jobs." The shift is paid if you're on the bus. Across the road, a dozen
+      Congolese and two union delegates hold a banner: "Cobalt at its real price."
+    why: The middle option is gone. This records which way you break when your country's jobs and a former colony's control of its own mine collide.
+    options:
+      - id: bus
+        text: Get on the bus. Somebody has to stand up for the jobs here.
+        side: {axis: empire, dir: order}
+        set: {sided: false}
+        evidence:
+          - {position: intl.sanctions.national-leverage, w: 3}
+        consequence: The rally is on the evening news. So is the minister, promising "firmness with Kinshasa."
+        next:
+          - {if: {flag: {key: sided, eq: true}}, to: arc.mine.06a}
+          - {to: arc.mine.06b}
+      - id: speak
+        text: Get on the bus and take the microphone. French jobs first; they had their chance to be reasonable.
+        side: {axis: empire, dir: order}
+        set: {sided: false}
+        evidence:
+          - {position: cs.own-first.our-people-first, w: 3}
+          - {position: intl.sanctions.national-leverage, w: 1}
+        consequence: Your speech goes round on social media. In Kolwezi, Patrice sees it before you get home.
+        next:
+          - {if: {flag: {key: sided, eq: true}}, to: arc.mine.06a}
+          - {to: arc.mine.06b}
+      - id: banner
+        text: Cross the road and hold the other end of the banner.
+        side: {axis: empire, dir: dispossessed}
+        set: {sided: true}
+        evidence:
+          - {position: intl.sanctions.economic-war, w: 2}
+          - {position: intl.sovereignty.nations-set-own-course, w: 1}
+        consequence: The local paper prints the photo. Someone writes a word on your locker you have to look up.
+        next:
+          - {if: {flag: {key: sided, eq: true}}, to: arc.mine.06a}
+          - {to: arc.mine.06b}
+      - id: shift
+        text: Clock in and work. You have rent, and neither crowd pays it.
+        side: {axis: empire, dir: neither}
+        set: {sided: false}
+        evidence:
+          - {position: cs.own-first.family-first, w: 1}
+        consequence: The line runs at half staff. You do two people's work and nobody thanks you for it.
+        next:
+          - {if: {flag: {key: sided, eq: true}}, to: arc.mine.06a}
+          - {to: arc.mine.06b}
+
+  - id: arc.mine.06a
+    type: tradeoff
+    title: The refinery
+    text: >
+      Patrice calls. The state company wants to build a refinery in Kolwezi so the country can stop exporting
+      raw ore, and it needs engineers who speak French and know battery chemistry. It pays a fifth of your
+      French salary. Your children were born in Douai and have never seen a pit.
+    why: This sets the cause you stood up for against the life you built on the other end of the trade.
+    options:
+      - id: go
+        text: Go. You held the banner; now hold a wrench.
+        evidence:
+          - {position: energy.transition.resource-sovereignty, w: 3}
+        next: arc.mine.07
+      - id: stay
+        text: Stay. Your children are French, and they come first.
+        evidence:
+          - {position: cs.own-first.family-first, w: 3}
+        next: arc.mine.07
+      - id: consult
+        text: Offer to consult from France at a French rate. Expertise isn't charity.
+        evidence:
+          - {position: energy.transition.market-led, w: 1}
+          - {position: exchange.unequal.mutual-gain, w: 1}
+        next: arc.mine.07
+
+  - id: arc.mine.06b
+    type: scene
+    title: The new deal
+    text: >
+      The tariffs bite. Within a year Kinshasa signs a new deal: the old owner returns as a minority partner,
+      the miners lose their board seats, and cobalt falls by a quarter. The night shift comes back. Patrice
+      calls: three union leaders have been arrested. He asks what you make of it.
+    why: This asks how you read the outcome when your side won the price and the miners lost the mine.
+    options:
+      - id: contracts
+        text: Contracts restored, jobs back. That's how trade is meant to work.
+        evidence:
+          - {position: exchange.unequal.mutual-gain, w: 2}
+          - {position: intl.sanctions.national-leverage, w: 1}
+        next: arc.mine.07
+      - id: kinshasa
+        text: Their own government sold them out. Paris only had to ask.
+        evidence:
+          - {position: comprador.nature.broker-class, w: 3}
+        next: arc.mine.07
+      - id: us
+        text: We did that. Our shift came back on their arrests.
+        evidence:
+          - {position: labor.aristocracy.shares-but-exploited, w: 2}
+          - {position: intl.sanctions.economic-war, w: 1}
+        next: arc.mine.07
+      - id: money
+        text: Send money to the arrested men's families and say nothing at work.
+        evidence:
+          - {position: cs.own-first.family-first, w: 1}
+          - {position: cs.own-first.own-means-class, w: 1}
+        next: arc.mine.07
+
+  - id: arc.mine.07
+    type: explanation
+    title: Cheap
+    text: >
+      Two years on, your daughter has a school project on electric cars and wants to put her uncle in it.
+      She asks you a simple question you can't answer in one sentence. Why was cobalt so cheap for so long?
+    why: This asks what kind of cause you reach for when explaining the price of a raw material from a poor country.
+    options:
+      - id: drain
+        text: Because the price was set by the people buying it, and the difference left the country.
+        cause: structures
+        evidence:
+          - {position: poverty.cause.drain, w: 2}
+          - {position: exchange.unequal.wage-gap, w: 1}
+      - id: rulers
+        text: Because the people in charge there sold it cheap and kept the change.
+        cause: individuals
+        evidence:
+          - {position: poverty.cause.misrule, w: 2}
+          - {position: comprador.nature.broker-class, w: 1}
+      - id: supply
+        text: Because there was a lot of it and plenty of people willing to dig. Supply and demand.
+        cause: chance
+        evidence:
+          - {position: exchange.unequal.mutual-gain, w: 2}
+      - id: productivity
+        text: Because digging with shovels produces less than building batteries with robots, and pay follows.
+        cause: structures
+        evidence:
+          - {position: labor.aristocracy.earned-by-productivity, w: 2}
+      - id: history
+        text: Because it was set up that way a hundred years ago, and nobody has unset it.
+        cause: structures
+        evidence:
+          - {position: poverty.cause.colonial-legacy, w: 3}

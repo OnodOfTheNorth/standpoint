@@ -1,0 +1,354 @@
+id: arc.mobilization
+title: War Economy
+blurb: Three shifts, an order book left in the canteen, and six trucks waiting at the gate on a Friday night.
+role: You machine shell casings at an artillery plant.
+place: An artillery plant in Bourges, France
+start: arc.mobilization.01
+escalation: arc.mobilization.04
+pressure: [arc.mobilization.03]
+tags: [world, economy, strategy]
+nodes:
+  - id: arc.mobilization.01
+    type: scene
+    title: Three shifts
+    text: >
+      Bourges. You machine shell casings at an artillery plant. The government declares a "war economy":
+      orders triple, the plant goes to three shifts, Sundays become "strongly encouraged." Overtime pays
+      time and a half. You have a mortgage on a house in Saint-Doulchard and two kids. The union branch
+      meets at lunch.
+    why: This asks what you think arms and war are for, and what you want from a boom you are helping to build.
+    premises:
+      - id: no-war
+        text: The premise that France is at war at all. Nobody voted for one.
+        evidence: [{position: war.militarism.arms-profits, w: 1}]
+    options:
+      - id: defend
+        text: Good. Europe has to be able to defend itself, and these are real industrial jobs.
+        evidence:
+          - {position: war.militarism.peace-through-strength, w: 2}
+          - {position: work.future.dignity-of-work, w: 1}
+        consequence: Your first Sunday pays for the boiler.
+        next: arc.mobilization.02b
+      - id: bonus
+        text: Take the overtime and ask for a bonus on top. If they need us this badly, we have leverage.
+        evidence:
+          - {position: unions.role.bargaining-agent, w: 3}
+        consequence: Management offers €400 a quarter. The branch takes it.
+        next: arc.mobilization.02b
+      - id: who
+        text: Ask who the shells are for before anyone signs up for Sundays.
+        set: {asked: true}
+        evidence:
+          - {position: solidarity.basis.anti-imperialist, w: 1}
+          - {position: war.militarism.arms-profits, w: 1}
+        consequence: Nobody answers. The next day the order book is pinned in the canteen by mistake, for an hour.
+        next: arc.mobilization.02a
+      - id: transfer
+        text: Ask for a transfer to the civilian line. Shells by the million isn't what you signed up for.
+        set: {asked: true}
+        evidence:
+          - {position: war.militarism.pacifist, w: 2}
+        consequence: The civilian line is being closed to free up floor space.
+        next: arc.mobilization.02a
+      - id: head
+        text: Do the work and keep out of it. A shell is a shell.
+        evidence:
+          - {position: cs.not-political.keep-head-down, w: 3}
+        consequence: You work four Sundays in a row. The mortgage gets easier.
+        next: arc.mobilization.02b
+
+  - id: arc.mobilization.02a
+    type: explanation
+    title: The order book
+    text: >
+      The order book: forty percent for Ukraine, thirty for the French army, thirty for "export customers,"
+      mostly a Gulf state at war in Yemen. The plant says exports keep the line alive between wars. Why does
+      a war economy need customers like that?
+    why: This asks what kind of cause you reach for when you explain the arms trade.
+    options:
+      - id: lines
+        text: The line has to run in peacetime or it won't exist in wartime. Somebody has to buy.
+        cause: structures
+        evidence:
+          - {position: war.militarism.anarchy-security, w: 2}
+        next: arc.mobilization.03
+      - id: profit
+        text: Profit. The shareholders like a war, any war, anywhere.
+        cause: interests
+        evidence:
+          - {position: war.militarism.arms-profits, w: 3}
+        next: arc.mobilization.03
+      - id: influence
+        text: France sells influence with the shells. Gulf money, Gulf oil, French bases. Every power does it.
+        cause: structures
+        evidence:
+          - {position: war.militarism.imperialist-rivalry, w: 2}
+        next: arc.mobilization.03
+      - id: allies
+        text: The Gulf is on our side against worse. You arm your friends.
+        cause: interests
+        evidence:
+          - {position: intervention.humanitarian.national-interest-only, w: 2}
+        next: arc.mobilization.03
+
+  - id: arc.mobilization.02b
+    type: voices
+    title: The canteen
+    text: Two colleagues at your table in the canteen, arguing over the new shifts. Who's right?
+    voices:
+      - {name: Sébastien, says: "Every shell we make is one more reason nobody tries it on with us. In a war economy you don't pick your customers."}
+      - {name: Amina, says: "My cousin lives in Taiz. A third of what we make goes to the Gulf, and the Gulf isn't defending France from anything."}
+    why: This asks what you think the arms you make are for, and whose war they serve.
+    options:
+      - id: seb
+        text: Sébastien. Weakness invites war. Strength keeps the peace.
+        cause: nature
+        evidence:
+          - {position: war.militarism.peace-through-strength, w: 3}
+        next: arc.mobilization.03
+      - id: amina
+        text: Amina. People in Taiz have more in common with this canteen than with whoever buys the shells.
+        cause: structures
+        evidence:
+          - {position: solidarity.basis.anti-imperialist, w: 2}
+        next: arc.mobilization.03
+      - id: jobs
+        text: Both miss it. Bourges has three thousand jobs on this. Argue about customers when there's another industry here.
+        cause: interests
+        evidence:
+          - {position: work.future.dignity-of-work, w: 2}
+        next: arc.mobilization.03
+      - id: sin
+        text: Both miss it. War comes from the human heart, and a factory can't fix that. Only make what a just war needs.
+        cause: divine
+        evidence:
+          - {position: war.militarism.fallen-nature-just-war, w: 3}
+        next: arc.mobilization.03
+
+  - id: arc.mobilization.03
+    type: pressure
+    title: The lot number
+    tests: solidarity.basis.anti-imperialist
+    text: >
+      A photo goes round: a shell fragment in a Yemeni village, its lot number traceable to your line. An
+      investigative journalist needs one worker to confirm the lot codes. The plant reminds staff that
+      disclosing defense secrets carries five years in prison. Your line's overtime is worth €600 a month.
+    why: This puts your job and your freedom against whatever you owe the people under the shells.
+    options:
+      - id: confirm
+        text: Confirm the codes. People in that village have a right to know whose shells they were.
+        pressure: principle
+        cost: You are identified within six weeks, suspended, and questioned by the intelligence service.
+        evidence:
+          - {position: solidarity.basis.anti-imperialist, w: 3}
+        next: arc.mobilization.04
+      - id: silent
+        text: Say nothing. A secret is a secret, and the overtime pays the mortgage.
+        pressure: interest
+        cost: The story runs without confirmation. The ministry calls it "unverified." The shipments continue.
+        evidence:
+          - {position: cs.not-political.keep-head-down, w: 2}
+          - {position: solidarity.basis.anti-imperialist, w: -1}
+        next: arc.mobilization.04
+      - id: union
+        text: Give the codes to the union, not the press. Let the branch decide what to do with them.
+        pressure: mixed
+        cost: The branch sits on them until after the contract vote. Your name stays out of it, for now.
+        evidence:
+          - {position: unions.role.bargaining-agent, w: 1}
+          - {position: solidarity.basis.anti-imperialist, w: 1}
+        next: arc.mobilization.04
+
+  - id: arc.mobilization.04
+    type: escalation
+    title: The trucks
+    recap: At an artillery plant in Bourges, France, workers have learned that part of their output goes to a war in Yemen.
+    text: >
+      Friday night. Six trucks wait at the gate with the export order. At Le Havre the dockers have already
+      refused to load the ship. Your union branch sits down across the gate. The prefect signs an order
+      requisitioning the plant's workforce under defense law, and management asks the night shift to drive
+      the forklifts. You are on the night shift.
+    why: The middle option is gone. This records which side you take when your country's arms meet a poorer country's war.
+    options:
+      - id: contract
+        text: Drive the forklift. France signed a contract, and a country that breaks its word loses its allies.
+        side: {axis: empire, dir: order}
+        evidence:
+          - {position: intervention.humanitarian.national-interest-only, w: 2}
+          - {position: war.militarism.anarchy-security, w: 1}
+        consequence: The trucks leave at 3 a.m. under police escort. The branch does not forget who drove.
+        next: arc.mobilization.05b
+      - id: nation
+        text: Drive the forklift. A requisition in wartime is the nation calling, and you answer.
+        side: {axis: empire, dir: order}
+        evidence:
+          - {position: internationalism.nation-first, w: 3}
+        consequence: The trucks leave at 3 a.m. The prefect thanks "the workers who put France first."
+        next: arc.mobilization.05b
+      - id: gate
+        text: Sit down at the gate with the branch. Not one shell for that war.
+        side: {axis: empire, dir: dispossessed}
+        evidence:
+          - {position: solidarity.basis.anti-imperialist, w: 3}
+        probe:
+          ask: What makes this the line?
+          options:
+            - text: The people under those shells are the same as us, on the wrong end of the same trade.
+              cause: structures
+              evidence: [{position: solidarity.basis.anti-imperialist, w: 2}]
+            - text: Shells for France's defense, fine. Shells for somebody else's war of choice, no.
+              cause: ideas
+              evidence: [{position: world.order.restraint, w: 2}]
+            - text: I can't stop the war. I can stop these six trucks.
+              cause: interests
+              evidence: [{position: war.militarism.pacifist, w: 1}]
+        consequence: The trucks are still there at dawn. Twenty-two of you are written up for defying the requisition.
+        next: arc.mobilization.05a
+      - id: home
+        text: Call in sick and stay home.
+        side: {axis: empire, dir: neither}
+        evidence:
+          - {position: cs.not-political.keep-head-down, w: 2}
+        consequence: Your sick note is checked by a company doctor on Monday.
+        next:
+          - {if: {flag: {key: asked, eq: true}}, to: arc.mobilization.05a}
+          - {to: arc.mobilization.05b}
+
+  - id: arc.mobilization.05a
+    type: tradeoff
+    title: The clause
+    text: >
+      Twenty-two workers are named for the gate, plus a few who were not there but asked too many questions
+      in the canteen. You are on the list. Management will drop the discipline if the branch accepts the
+      export contract with an end-use clause and a human rights monitor. The branch votes Monday.
+    why: This sets your job and your colleagues' records against stopping the shipment outright.
+    options:
+      - id: clause
+        text: Accept. A clause with a monitor is a real gain, and twenty-two careers are on the line.
+        evidence:
+          - {position: world.order.liberal-order, w: 2}
+        consequence: The monitor files one report a year. The trucks leave in March.
+        next: arc.mobilization.06
+      - id: reject
+        text: Reject. A clause on paper doesn't stop a shell in Taiz.
+        evidence:
+          - {position: solidarity.basis.anti-imperialist, w: 2}
+        consequence: The branch votes no by eleven votes. Four of the twenty-two are dismissed.
+        next: arc.mobilization.06
+      - id: convert
+        text: Counter-propose. Turn the export line over to rail parts. Same skills, same jobs, nobody dead.
+        evidence:
+          - {position: work.future.dignity-of-work, w: 2}
+          - {position: war.militarism.pacifist, w: 1}
+        consequence: Management says it will "study" conversion. The study takes two years.
+        next: arc.mobilization.06
+
+  - id: arc.mobilization.05b
+    type: line
+    title: The customers
+    text: >
+      The plant opens a works council debate on export policy. A consultant puts up a slide listing
+      possible customers. Where do you draw the line?
+    cases:
+      - The French army
+      - Ukraine
+      - Other European allies
+      - A Gulf state at war in Yemen
+      - Any buyer not under an arms embargo
+    why: This asks whose wars you think the plant should arm.
+    premises:
+      - id: no-customers
+        text: The premise that shells should have customers at all.
+        evidence: [{position: war.militarism.pacifist, w: 2}]
+    options:
+      - id: france
+        text: The French army only. We arm ourselves, and stay out of other people's wars.
+        evidence:
+          - {position: world.order.restraint, w: 3}
+        next: arc.mobilization.06
+      - id: allies
+        text: The first three. Arm the countries that share our rules, and nobody else.
+        evidence:
+          - {position: world.order.liberal-order, w: 3}
+        next: arc.mobilization.06
+      - id: gulf
+        text: The first four. Allies are allies, even the uncomfortable ones.
+        evidence:
+          - {position: intervention.humanitarian.national-interest-only, w: 3}
+        next: arc.mobilization.06
+      - id: any
+        text: Everyone on the slide. If we don't sell, the Americans or the Koreans will, and our jobs go with it.
+        evidence:
+          - {position: work.future.dignity-of-work, w: 1}
+          - {position: war.militarism.anarchy-security, w: 2}
+        next: arc.mobilization.06
+
+  - id: arc.mobilization.06
+    type: verdict
+    title: August 1914
+    text: >
+      July 1914. The French Socialists have sworn to answer war with a general strike. On the 31st their
+      leader, Jean Jaurès, is shot dead in a Paris café. On 4 August the party votes for the war credits.
+      Workers on both sides of the Rhine march to the front by the million. Where would you have stood?
+    why: This asks how you judge a working-class party that rallied to its nation's war.
+    options:
+      - id: defend
+        text: With the vote. Germany invaded; the Republic had to be defended.
+        evidence:
+          - {position: internationalism.nation-first, w: 2}
+          - {position: war.militarism.peace-through-strength, w: 1}
+        next: arc.mobilization.07
+      - id: rivals
+        text: Against it. It was a war between empires over colonies and markets. The workers had no side in it.
+        evidence:
+          - {position: war.militarism.imperialist-rivalry, w: 3}
+        next: arc.mobilization.07
+      - id: refuse
+        text: With the conscientious objectors. No war of that kind is worth a single conscript.
+        evidence:
+          - {position: war.militarism.pacifist, w: 3}
+        next: arc.mobilization.07
+      - id: grief
+        text: With the vote, and with grief. A just defense can still be a slaughter, and it was.
+        evidence:
+          - {position: war.militarism.fallen-nature-just-war, w: 2}
+        next: arc.mobilization.07
+
+  - id: arc.mobilization.07
+    type: explanation
+    title: The apprentice
+    text: >
+      Two years on. The plant has doubled its workforce, and the town has a new ring road. An apprentice on
+      his first day asks you why business is so good.
+    why: This asks what kind of cause you reach for when you explain why arms factories boom.
+    options:
+      - id: danger
+        text: The world got more dangerous, and countries that look weak get attacked.
+        cause: nature
+        evidence:
+          - {position: war.militarism.peace-through-strength, w: 2}
+      - id: rivals
+        text: The big powers are carving the world up again. We make the knives.
+        cause: structures
+        evidence:
+          - {position: war.militarism.imperialist-rivalry, w: 2}
+      - id: profit
+        text: Somebody makes a fortune on every shell, and they make sure there are wars to use them.
+        cause: interests
+        evidence:
+          - {position: war.militarism.arms-profits, w: 2}
+      - id: fear
+        text: Every country arms because the others do. Nobody wants it; nobody can stop first.
+        cause: structures
+        evidence:
+          - {position: war.militarism.anarchy-security, w: 2}
+      - id: sin
+        text: People haven't changed since Cain. The factory just makes it faster.
+        cause: divine
+        evidence:
+          - {position: war.militarism.fallen-nature-just-war, w: 2}
+      - id: job
+        text: It's a job, kid. Clock in, clock out, don't ask where the trucks go.
+        cause: chance
+        evidence:
+          - {position: cs.not-political.keep-head-down, w: 2}

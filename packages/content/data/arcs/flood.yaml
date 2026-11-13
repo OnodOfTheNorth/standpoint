@@ -1,0 +1,445 @@
+id: arc.flood
+title: After the Water
+blurb: An embankment to cut by midnight, a province under water, and a pledging conference where most of the help is a loan.
+role: You are an engineer in the provincial irrigation department, posted to the district's flood reconstruction cell.
+place: Dadu district, Sindh, Pakistan
+start: arc.flood.01
+escalation: arc.flood.05
+pressure: [arc.flood.04]
+tags: [world, ecology, economy, state]
+nodes:
+  - id: arc.flood.01
+    type: scene
+    title: Mile 14
+    text: >
+      August. The Indus is forty kilometres wide and rising. To save Dadu town you must breach an
+      embankment tonight. Cut at Mile 14 and the water takes six villages of haris, the tenant farmers. Cut
+      at Mile 22 and it takes the sugarcane and the mill of the local assembly member, who has now called
+      you four times. Whichever side you pick gets six hours' warning.
+    why: This asks whose loss you choose when an emergency forces the state to pick between homes and property.
+    premises:
+      - id: chosen-already
+        text: The premise that the engineer chooses. The man on the phone chose years ago, when he had Mile 22 built higher.
+        evidence: [{position: comprador.nature.kleptocratic-elites, w: 1}]
+    conditions:
+      - id: headcount
+        text: It depends how many people live behind each cut.
+        evidence: [{position: emergency.powers.need-overrides-property, w: 1}]
+    options:
+      - id: villages
+        text: Mile 14. Mud houses go back up by spring. A drowned mill is three thousand jobs gone.
+        set: {cut: villages}
+        evidence:
+          - {position: emergency.powers.need-overrides-property, w: -2}
+          - {position: property.private.natural-right, w: 1}
+        consequence: The villages get their six hours. Most people get out. The mill's chimney stands dry above the water all autumn.
+        next: arc.flood.02
+      - id: estate
+        text: Mile 22. Cane grows back. A family's whole life is in a mud house.
+        set: {cut: estate}
+        evidence:
+          - {position: emergency.powers.need-overrides-property, w: 3}
+        probe:
+          ask: What makes it his cane that drowns?
+          options:
+            - text: He can afford the loss. They can't.
+              cause: interests
+              evidence: [{position: tax.purpose.redistribute, w: 2}]
+            - text: Those families work his fields. The land is theirs as much as his.
+              cause: structures
+              evidence: [{position: property.land.to-the-tiller, w: 2}]
+            - text: Homes come before crops, whoever owns them. That's just right.
+              cause: ideas
+              evidence: [{position: emergency.powers.need-overrides-property, w: 1}]
+        consequence: The cane goes under in an hour. The assembly member stops calling, which is worse.
+        next: arc.flood.02
+      - id: estate-paid
+        text: Mile 22, but ring him first and promise full compensation from the province.
+        set: {cut: estate}
+        evidence:
+          - {position: emergency.powers.compensate-at-market, w: 3}
+        consequence: He calls you a reasonable man. His lawyer calls at dawn with a figure.
+        next: arc.flood.02
+      - id: none
+        text: Don't cut. It isn't an engineer's place to choose who drowns. Evacuate, and leave the rest to God.
+        set: {cut: none}
+        evidence:
+          - {position: history.motor.providence, w: 2}
+        consequence: The river chooses for you. It takes Dadu's eastern wards and both sets of villages.
+        next: arc.flood.02
+
+  - id: arc.flood.02
+    type: explanation
+    title: Why Dadu
+    text: >
+      September. A third of the country is under water and eight million people are out of their homes.
+      Pakistan puts out under one percent of the world's carbon. The embankments were repaired, on paper, in
+      2014; the contractor is now a senator. A scientist on television says warming made the rain heavier.
+      A cleric on the next channel says it is a test. Why did this happen here?
+    why: This asks what you think caused the disaster, and what kind of cause you reach for.
+    conditions:
+      - id: rain-or-ruin
+        text: It depends whether you mean the rain or the damage. They have different authors.
+        evidence: [{position: comprador.nature.kleptocratic-elites, w: 1}]
+    options:
+      - id: carbon
+        text: The rich countries burned the carbon. We got the rain.
+        cause: structures
+        evidence:
+          - {position: climate.justice.climate-debt, w: 3}
+        next: [{if: {flag: {key: cut, eq: estate}}, to: arc.flood.03b}, {to: arc.flood.03a}]
+      - id: growth
+        text: An economy that must grow or die is heating the whole planet. Ours included.
+        cause: structures
+        evidence:
+          - {position: ecology.crisis-cause.capital-accumulation, w: 3}
+        next: [{if: {flag: {key: cut, eq: estate}}, to: arc.flood.03b}, {to: arc.flood.03a}]
+      - id: thieves
+        text: Rain is rain. The disaster is the embankment money that went into a senator's house.
+        cause: individuals
+        evidence:
+          - {position: comprador.nature.kleptocratic-elites, w: 3}
+        next: [{if: {flag: {key: cut, eq: estate}}, to: arc.flood.03b}, {to: arc.flood.03a}]
+      - id: crowding
+        text: Too many people building on a floodplain. The river was here first.
+        cause: nature
+        evidence:
+          - {position: ecology.crisis-cause.too-many-people, w: 3}
+        next: [{if: {flag: {key: cut, eq: estate}}, to: arc.flood.03b}, {to: arc.flood.03a}]
+      - id: test
+        text: God tests the people He loves. Rebuild, and pray.
+        cause: divine
+        evidence:
+          - {position: history.motor.providence, w: 3}
+        next: [{if: {flag: {key: cut, eq: estate}}, to: arc.flood.03b}, {to: arc.flood.03a}]
+
+  - id: arc.flood.03a
+    type: scene
+    title: The orchard
+    text: >
+      Forty thousand people are camped on the highway embankment with one water tanker and no shade. Half a
+      mile off, behind a wall, lies the only dry ground in reach: two hundred acres of mango orchard owned by
+      the assembly member's cousin, who is in Dubai. His manager has the key and a shotgun. The district
+      magistrate will sign whatever you put in front of him.
+    why: This asks what yields in an emergency, private property, the law, or neither, and who should open the gate.
+    conditions:
+      - id: how-long
+        text: It depends how long they would have to stay.
+        evidence: [{position: emergency.powers.compensate-at-market, w: 1}]
+    options:
+      - id: seize
+        text: Requisition it tonight. No payment. People before mangoes.
+        evidence:
+          - {position: emergency.powers.need-overrides-property, w: 3}
+        consequence: The gate opens at midnight. By morning there are latrines under the mango trees and a lawyer's letter on its way from Karachi.
+        next: arc.flood.04
+      - id: rent
+        text: Requisition it, and pay the cousin a fair rent out of relief funds.
+        evidence:
+          - {position: emergency.powers.compensate-at-market, w: 3}
+        consequence: The cousin invoices for the mangoes as well. The relief fund pays, and buys two fewer water tankers.
+        next: arc.flood.04
+      - id: elders
+        text: Mention to the camp elders where the wall is weakest. Then be somewhere else.
+        evidence:
+          - {position: emergency.powers.mutual-aid, w: 3}
+        consequence: The wall comes down at two in the morning. Nobody saw an engineer.
+        next: arc.flood.04
+      - id: leave
+        text: Leave it. Take one man's orchard today and anyone's land is fair game tomorrow.
+        evidence:
+          - {position: property.private.natural-right, w: 3}
+        consequence: The camp stays on the road. Cholera arrives in the third week.
+        next: arc.flood.04
+
+  - id: arc.flood.03b
+    type: line
+    title: The list
+    text: >
+      The water is going down. The province will pay compensation for flood losses from one fixed pot. The
+      assembly member is first in the queue with a surveyor's report on the cane you drowned. Behind him are
+      the families whose houses you saved by drowning it, and the families whose houses went anyway. Where
+      does the list stop?
+    cases:
+      - A hari family whose mud house fell
+      - A sharecropper who lost his half of a rice crop on land he does not own
+      - A smallholder with five acres under water
+      - The assembly member, whose cane you drowned on purpose
+      - The sugar mill, which lost its crushing season
+    why: This asks who you think the state owes after a disaster, owners for their property or workers for their livelihood.
+    premises:
+      - id: no-state-pot
+        text: The premise that the state should pay out at all. Charity and family carry people through floods.
+        evidence: [{position: emergency.powers.mutual-aid, w: 1}]
+    options:
+      - id: all
+        text: All five. A loss is a loss, and the biggest one was ordered by the state.
+        evidence:
+          - {position: emergency.powers.compensate-at-market, w: 3}
+        consequence: The mill and the assembly member take sixty percent of the pot. The hari families get a tarp each and a cheque for the price of one.
+        next: arc.flood.04
+      - id: four
+        text: The first four. He lost his crop for the town, so the town owes him. The mill took its chances.
+        evidence:
+          - {position: emergency.powers.compensate-at-market, w: 2}
+          - {position: property.private.natural-right, w: 1}
+        consequence: The assembly member takes a third of the pot and calls it fair. The mill's owner, his brother, does not.
+        next: arc.flood.04
+      - id: three
+        text: The first three. The man with the mill has savings. The hari has a tarp.
+        evidence:
+          - {position: tax.purpose.redistribute, w: 2}
+          - {position: emergency.powers.need-overrides-property, w: 1}
+        consequence: The assembly member takes the province to court. The case will outlast the next flood.
+        next: arc.flood.04
+      - id: two
+        text: The first two. Pay the people who work the land, not the people who own it.
+        evidence:
+          - {position: property.land.to-the-tiller, w: 3}
+        consequence: The smallholders, who own five acres and work every one, are furious with you. So is everyone above them.
+        next: arc.flood.04
+
+  - id: arc.flood.04
+    type: pressure
+    title: The survey
+    tests: property.land.to-the-tiller
+    text: >
+      A donor-funded scheme will rebuild 300,000 houses, but only for families who can show the land is
+      theirs. The flood has washed out every boundary stone. The revenue record says the landlords own it;
+      the haris have lived on it for four generations. You sign the survey. Your own family owns sixty acres
+      near Larkana, farmed by two hari families who read the newspapers.
+    why: This sets a principle about who owns the land against your own family's land.
+    premises:
+      - id: title-rule
+        text: The premise that a roof over a flood family should depend on a land title at all.
+        evidence: [{position: emergency.powers.need-overrides-property, w: 1}]
+    options:
+      - id: homestead
+        text: Survey every house as belonging to the family living in it. Four generations is a title.
+        pressure: principle
+        cost: Your uncle's two hari families file the same claim within a month. You stop being invited to family weddings, and the assembly member has you transferred to the desert.
+        evidence:
+          - {position: property.land.to-the-tiller, w: 3}
+        probe:
+          ask: What makes four generations a title?
+          options:
+            - text: The land belongs to whoever works it and lives on it.
+              cause: structures
+              evidence: [{position: property.land.to-the-tiller, w: 2}]
+            - text: Possession that long is ownership in any decent law.
+              cause: ideas
+              evidence: [{position: property.private.natural-right, w: 1}]
+            - text: A house is a need. Need outranks a revenue clerk's ledger.
+              cause: ideas
+              evidence: [{position: emergency.powers.need-overrides-property, w: 2}]
+        next: arc.flood.05
+      - id: record
+        text: Go by the revenue record. You are an engineer, not a land court, and the law is the law.
+        pressure: interest
+        cost: Two thirds of the haris get no grant. They rebuild in mud, on land they can be evicted from. Your family's sixty acres are untouched.
+        evidence:
+          - {position: property.private.natural-right, w: 2}
+          - {position: property.land.to-the-tiller, w: -2}
+        next: arc.flood.05
+      - id: plot
+        text: Title each family to the plot under its house, nothing more. The fields stay with the landlords.
+        pressure: mixed
+        cost: Your uncle's tenants get a hundred square yards each. Your uncle calls it theft, quietly, and stops lending your brother money.
+        evidence:
+          - {position: property.land.to-the-tiller, w: 1}
+          - {position: emergency.powers.compensate-at-market, w: 1}
+        next: arc.flood.05
+
+  - id: arc.flood.05
+    type: escalation
+    title: Geneva
+    recap: In Sindh, Pakistan, months after floods put a third of the country under water, the reconstruction money is finally on the table.
+    text: >
+      January. At a conference in Geneva, donors pledge nine billion dollars, nearly all of it as loans.
+      This year Pakistan owes foreign creditors more than that. The lead lender's terms: debt payments on
+      schedule, power tariffs up, canal works to an international contractor. Flood families have blocked
+      the Indus Highway: no payments while we are under water. The chief secretary wants your cell's
+      signature by morning.
+    why: The middle option is gone. This records whether you side with the lenders' terms or with the flooded country refusing them.
+    options:
+      - id: sign
+        text: Sign. Half a loaf rebuilds more canals than no loaf.
+        side: {axis: empire, dir: order}
+        set: {signed: true}
+        evidence:
+          - {position: intl.institutions.cooperation, w: 2}
+          - {position: debt.sovereign.pay-what-you-owe, w: 2}
+        consequence: The loans move in March. Rangers clear the highway at dawn, and three of the blockade's organizers spend a month in jail.
+        next: [{if: {flag: {key: signed, eq: true}}, to: arc.flood.06a}, {to: arc.flood.06b}]
+      - id: sign-note
+        text: Sign, and put a note in the file that the country is paying for other people's carbon.
+        side: {axis: empire, dir: order}
+        set: {signed: true}
+        evidence:
+          - {position: debt.sovereign.pay-what-you-owe, w: 1}
+          - {position: climate.justice.climate-debt, w: 1}
+        consequence: The note is filed. The money moves. Nobody in Geneva reads files from Hyderabad.
+        next: [{if: {flag: {key: signed, eq: true}}, to: arc.flood.06a}, {to: arc.flood.06b}]
+      - id: refuse
+        text: Refuse. Not a rupee to creditors while families sleep on the highway. The rich countries can pay what they owe.
+        side: {axis: empire, dir: dispossessed}
+        set: {signed: false}
+        evidence:
+          - {position: debt.sovereign.already-paid, w: 2}
+          - {position: climate.justice.climate-debt, w: 2}
+        probe:
+          ask: Why should the creditors be the ones who wait?
+          options:
+            - text: The country has paid that debt several times over in interest.
+              cause: structures
+              evidence: [{position: debt.sovereign.already-paid, w: 2}]
+            - text: Whoever made the rain heavier owes more than whoever lent the dollars.
+              cause: structures
+              evidence: [{position: climate.justice.climate-debt, w: 2}]
+            - text: People come before contracts. That's all.
+              cause: ideas
+              evidence: [{position: emergency.powers.need-overrides-property, w: 1}]
+        consequence: The refusal leaks. With the highway still shut, Islamabad announces a payment pause on two bilateral loans. A ratings agency downgrades the country before lunch.
+        next: [{if: {flag: {key: signed, eq: true}}, to: arc.flood.06a}, {to: arc.flood.06b}]
+      - id: highway
+        text: Refuse, and take the cell's copy of the terms to the highway so the blockade knows what is being signed.
+        side: {axis: empire, dir: dispossessed}
+        set: {signed: false}
+        evidence:
+          - {position: aid.foreign.instrument-of-power, w: 2}
+          - {position: debt.sovereign.already-paid, w: 1}
+        consequence: The terms are on every phone in Sindh by noon. You are suspended. The highway stays shut for nine days, and Islamabad pauses payments on two loans.
+        next: [{if: {flag: {key: signed, eq: true}}, to: arc.flood.06a}, {to: arc.flood.06b}]
+      - id: leave
+        text: Take medical leave. Someone else can sign.
+        side: {axis: empire, dir: neither}
+        set: {signed: true}
+        evidence:
+          - {position: cs.not-political.keep-head-down, w: 2}
+        consequence: Your deputy signs at six in the morning. The highway is cleared by eight.
+        next: [{if: {flag: {key: signed, eq: true}}, to: arc.flood.06a}, {to: arc.flood.06b}]
+
+  - id: arc.flood.06a
+    type: tradeoff
+    title: The bill
+    text: >
+      Spring. The lenders' first review wants the provincial deficit cut, and the embankments still need
+      forty billion rupees. Big landlords in Sindh pay almost no tax on farm income, and many of them sit in
+      the assembly. The canal contract has gone to a foreign firm whose local partner is the assembly
+      member's brother-in-law. Something has to pay for the embankments.
+    why: This asks who you think should carry the cost of rebuilding, the lenders' terms, the landowners, the rich countries, or the people behind the embankment.
+    conditions:
+      - id: if-collected
+        text: It depends whether any new tax would actually be collected.
+        evidence: [{position: comprador.nature.kleptocratic-elites, w: 1}]
+    options:
+      - id: landlords
+        text: Tax big farm incomes. The people with the most land behind the embankments pay for them.
+        evidence:
+          - {position: tax.purpose.redistribute, w: 3}
+        consequence: The tax passes, with the threshold set at two thousand acres. Within a month a great deal of land is gifted to cousins.
+        next: arc.flood.07
+      - id: tariffs
+        text: Raise power tariffs as agreed. Break faith with the lenders and the next tranche never comes.
+        evidence:
+          - {position: intl.institutions.cooperation, w: 2}
+          - {position: debt.sovereign.pay-what-you-owe, w: 1}
+        consequence: The review passes. Electricity bills double, and the tubewells on small farms go quiet first.
+        next: arc.flood.07
+      - id: north
+        text: Send the bill to the countries that made the rain. Make it the first claim on the new climate fund.
+        evidence:
+          - {position: climate.justice.climate-debt, w: 3}
+        consequence: The fund holds a meeting to plan its first meeting. The embankments wait for the monsoon.
+        next: arc.flood.07
+      - id: committees
+        text: Cancel the brother-in-law's contract. Give the earthworks to the villages' own labour committees.
+        evidence:
+          - {position: emergency.powers.mutual-aid, w: 2}
+          - {position: comprador.nature.kleptocratic-elites, w: 1}
+        consequence: The firm sues under an investment treaty, in a tribunal in Washington. The villagers move earth faster than the firm did.
+        next: arc.flood.07
+
+  - id: arc.flood.06b
+    type: scene
+    title: The pause
+    text: >
+      Spring. Payments are paused on two loans and the other creditors are threatening. Fuel tankers still
+      come, at a premium. Three offers reach your cell. A Chinese state bank will finance the embankments
+      against port revenue. The army's engineers will rebuild them if the army runs reconstruction. The
+      villages' labour committees will dig for wages paid directly, with no contractor in between.
+    why: This asks whom you trust to rebuild once the usual lenders have been refused.
+    premises:
+      - id: same-offer
+        text: The premise that these are different offers. Every one of them wants something.
+        evidence: [{position: aid.foreign.instrument-of-power, w: 1}]
+    options:
+      - id: china
+        text: Take the Chinese loan. It comes without a lecture, and it builds.
+        evidence:
+          - {position: china.role.partner-that-builds, w: 3}
+        consequence: The embankments go up fast, with Chinese steel and a Chinese site manager. A rumour says the port has been sold. It hasn't, quite.
+        next: arc.flood.07
+      - id: army
+        text: Let the army run it. It is the only institution in the country that finishes things.
+        evidence:
+          - {position: cs.clean-house.army-steps-in, w: 3}
+        consequence: The embankments are finished on time. So is a new cantonment, and the army's cement company has its best year.
+        next: arc.flood.07
+      - id: committees
+        text: Pay the committees. The people living behind an embankment have the most reason to build it right.
+        evidence:
+          - {position: emergency.powers.mutual-aid, w: 3}
+        consequence: The work is slower and better. The landlords complain the committees now set wages for the whole district.
+        next: arc.flood.07
+      - id: back
+        text: Go back to the lenders. The pause made its point. Now take the money.
+        evidence:
+          - {position: intl.institutions.cooperation, w: 2}
+          - {position: debt.sovereign.pay-what-you-owe, w: 1}
+        consequence: The terms come back almost unchanged, plus a fee for the pause.
+        next: arc.flood.07
+
+  - id: arc.flood.07
+    type: reason
+    title: Next monsoon
+    text: >
+      A year on. The meteorological office forecasts another heavy monsoon. Your daughter's school poster
+      has one question on it, in her best handwriting, and she wants your answer underneath: who owes the
+      people of Dadu for the flood?
+    why: This asks who you hold responsible for a climate disaster in a poor country, and what kind of cause you reach for.
+    premises:
+      - id: weather
+        text: The premise that anyone owes anyone. A flood is weather.
+        evidence: [{position: climate.justice.no-inherited-debt, w: 1}]
+    options:
+      - id: north
+        text: The rich countries that burned the carbon. A debt, not a donation.
+        cause: structures
+        evidence:
+          - {position: climate.justice.climate-debt, w: 3}
+      - id: firms
+        text: The oil companies and the rich who burned it, here as much as in London.
+        cause: interests
+        evidence:
+          - {position: climate.justice.the-rich-and-the-firms, w: 3}
+      - id: nobody
+        text: Nobody owes for the past. Each country looks after its own and builds higher next time.
+        cause: chance
+        evidence:
+          - {position: climate.justice.no-inherited-debt, w: 3}
+      - id: thieves
+        text: The people here who stole the embankment money. Start with them.
+        cause: individuals
+        evidence:
+          - {position: comprador.nature.kleptocratic-elites, w: 3}
+      - id: growth
+        text: An economy that only builds what pays. Embankments for haris never pay.
+        cause: structures
+        evidence:
+          - {position: ecology.crisis-cause.capital-accumulation, w: 2}
+      - id: god
+        text: God sends the rain. People owe each other help, not debts.
+        cause: divine
+        evidence:
+          - {position: history.motor.providence, w: 2}
