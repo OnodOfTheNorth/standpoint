@@ -1,0 +1,114 @@
+# Situation-gated pressure scenes for peasants and small farmers.
+nodes:
+  - id: pressure.peasant.titling
+    type: pressure
+    title: The title deed
+    tests: agrarian.question.communal-tenure
+    gate: {all: [{classIs: [peasantry]}, {worldIs: [periphery, semi-periphery]}]}
+    text: >
+      Your family has farmed three hectares of village land for four generations. The community holds it,
+      and it cannot be sold. A government scheme, paid for by a foreign bank, now offers each family its own
+      title. With a title you could borrow against the land, or sell it. An agribusiness agent is already
+      offering more per hectare than you clear in ten years. The assembly votes next month.
+    why: This sets the price of your land against what you hold about land held in common.
+    premises:
+      - id: not-property
+        text: The premise that land can belong to a person at all.
+        evidence: [{position: property.land.relational, w: 2}]
+    conditions:
+      - id: if-women
+        text: It depends whether the titles let the women of the family hold land too.
+        evidence: [{position: equality.concept.group-substantive, w: 1}, {position: property.land.freehold, w: 1}]
+    options:
+      - id: common
+        text: Vote to keep the land held in common.
+        pressure: principle
+        cost: No title, no bank loan. You go on borrowing from the trader at 8% a month.
+        evidence: [{position: agrarian.question.communal-tenure, w: 2}, {position: property.commons.defend-against-enclosure, w: 1}]
+      - id: title-and-farm
+        text: Vote for titles, take yours, and keep farming.
+        pressure: mixed
+        cost: You can borrow at bank rates now. Within five years a third of your neighbours have sold, and the agent's company farms all around you.
+        evidence: [{position: agrarian.question.family-farm, w: 2}, {position: property.land.freehold, w: 1}]
+      - id: sell
+        text: Take the title and sell.
+        pressure: interest
+        cost: More money than your family has ever seen. Your children grow up in the city, with no land to come back to.
+        evidence: [{position: agrarian.question.commercial-farms, w: 2}, {position: property.land.freehold, w: 1}]
+
+  - id: pressure.peasant.cash-truck
+    type: pressure
+    title: Cash at the road
+    tests: firm.ownership.worker-cooperatives
+    gate: {classIs: [peasantry]}
+    text: >
+      Your harvest is in. The growers' cooperative pays a fair price, but in three instalments, the last
+      after the export sale in eight months. A buyer's truck at the road is paying cash today, 15% less in
+      all. Your son's school fees are due in two weeks. If enough members sell to the truck, the cooperative
+      can't fill its export contract and loses the buyer it spent six years winning.
+    why: This sets cash in hand against what you hold about producers owning their own cooperative.
+    premises:
+      - id: no-loyalty
+        text: The premise that a cooperative is owed anything beyond the price it pays.
+        evidence: [{position: solidarity.basis.self-interest, w: 2}]
+    conditions:
+      - id: if-others
+        text: It depends whether the other members hold.
+        evidence: [{position: solidarity.basis.tactical, w: 2}]
+    options:
+      - id: cooperative
+        text: Deliver everything to the cooperative, and borrow the fees.
+        pressure: principle
+        cost: The only lender who'll wait is the moneylender, at 10% a month, until the first instalment comes.
+        evidence: [{position: firm.ownership.worker-cooperatives, w: 2}, {position: solidarity.basis.mutual-aid, w: 1}]
+      - id: truck
+        text: Sell to the truck. School fees first.
+        pressure: interest
+        cost: You lose 15% of your harvest's value. If the cooperative fails, the truck sets the price next year.
+        evidence: [{position: cs.own-first.family-first, w: 2}, {position: change.means.individual-exit, w: 1}]
+      - id: split
+        text: Sell a third to the truck for the fees, and deliver the rest.
+        pressure: mixed
+        cost: You lose a little, and the cooperative's chair asks you why in front of the whole assembly.
+        evidence: [{position: cs.own-first.widening-circles, w: 1}, {position: solidarity.basis.tactical, w: 1}]
+
+  - id: pressure.peasant.harvest-wage
+    type: pressure
+    title: Before the rains
+    tests: solidarity.basis.shared-class
+    gate: {classIs: [peasantry]}
+    text: >
+      At harvest you hire eight day labourers from the landless settlement by the river. This year they
+      have organized: a third more per day, or they will work for the big estate across the valley, which
+      has agreed. Your crop must be in before the rains, ten days away. Last year, after costs, you cleared
+      about the price of a goat.
+    why: This sets your margin against what you hold about the rural poor standing together.
+    premises:
+      - id: not-a-boss
+        text: The premise that a farmer with a few hectares is a boss like the estate owner.
+        evidence: [{position: class.concept.income-strata, w: 2}]
+    conditions:
+      - id: if-estate
+        text: It depends whether the estate is really paying the higher rate.
+        evidence: [{position: wage.nature.bargaining-power, w: 2}]
+    options:
+      - id: pay
+        text: Pay the higher rate.
+        pressure: principle
+        cost: You clear nothing this season. Next year you plant less.
+        evidence: [{position: solidarity.basis.shared-class, w: 2}, {position: wage.nature.just-wage, w: 1}]
+      - id: family
+        text: Bring the harvest in with your own family, children out of school for ten days.
+        pressure: interest
+        cost: You save the wages. A fifth of the crop is lost to the rain, and your daughter misses her exams.
+        evidence: [{position: cs.own-first.family-first, w: 2}, {position: property.land.family-farm, w: 1}]
+      - id: together
+        text: Join three other small farmers and offer a smaller raise, together.
+        pressure: mixed
+        cost: Half the labourers accept. The harvest comes in late and some of it spoils.
+        evidence: [{position: solidarity.basis.tactical, w: 1}, {position: workplace.conflict.pluralist-bargaining, w: 1}]
+      - id: estate
+        text: Ask the estate owner to hold the old rate across the valley, so nobody has to pay more.
+        pressure: interest
+        cost: The estate agrees, and the labourers' organization falls apart. They remember whose idea it was.
+        evidence: [{position: wage.nature.voluntary-exchange, w: 1}, {position: cs.own-first.yourself-first, w: 1}]

@@ -1,0 +1,127 @@
+# Situation-gated pressure scenes for the unemployed and precarious.
+nodes:
+  - id: pressure.jobless.picket-line
+    type: pressure
+    title: The bus
+    tests: solidarity.basis.shared-class
+    gate: {classIs: [reserve-army]}
+    text: >
+      You have been out of work eleven months, and your benefits end in three weeks. An agency calls: a
+      distribution centre needs forklift drivers from Monday, at twice what you earned in your last job,
+      guaranteed for six weeks. The regular drivers are on strike. There will be a picket line, and a bus
+      with dark windows to take you through it.
+    why: This sets a paid job you badly need against what you hold about workers standing together.
+    premises:
+      - id: right-to-work
+        text: The premise that a strike gives anyone the right to hold on to a job someone else needs.
+        evidence: [{position: unions.role.obstacle, w: 2}, {position: work.future.flexible-markets, w: 1}]
+    conditions:
+      - id: if-cause
+        text: It depends what the strike is about.
+        evidence: [{position: workplace.conflict.depends-on-the-boss, w: 1}, {position: workplace.conflict.pluralist-bargaining, w: 1}]
+    options:
+      - id: refuse
+        text: Turn it down.
+        pressure: principle
+        cost: Your benefits run out. You borrow from your sister to make the rent, and the agency stops calling.
+        evidence: [{position: solidarity.basis.shared-class, w: 2}, {position: unions.role.class-organ, w: 1}]
+      - id: take
+        text: Take the job. Your rent doesn't care about their strike.
+        pressure: interest
+        cost: Six weeks at double pay. When the strike settles you are let go, and the drivers know your face.
+        evidence: [{position: cs.own-first.yourself-first, w: 2}, {position: wage.nature.voluntary-exchange, w: 1}]
+      - id: join-picket
+        text: Turn it down, go to the picket line, and ask the strikers to put you on the list for when they win.
+        pressure: mixed
+        cost: The union takes your name. Your rent is still due on the first.
+        evidence: [{position: solidarity.basis.tactical, w: 2}, {position: change.means.strike-and-direct-action, w: 1}]
+      - id: inside
+        text: Take the job, and tell the strikers what is going on inside.
+        pressure: mixed
+        cost: A week of double pay, until a supervisor sees you talking to the picket and you are out.
+        evidence: [{position: solidarity.basis.mutual-aid, w: 1}, {position: cs.own-first.widening-circles, w: 1}]
+
+  - id: pressure.gig.weekend-bonus
+    type: pressure
+    title: The weekend bonus
+    tests: change.means.strike-and-direct-action
+    gate:
+      all:
+        - {classIs: [reserve-army]}
+        - {situation: {field: employment, in: [precarious, temporary]}}
+    text: >
+      You deliver food for an app, ten hours a day, six days a week. Riders are calling a 48-hour strike
+      over a new pay formula that has cut your earnings by a fifth. This morning the app texts you: anyone
+      who works through the weekend gets a 90 bonus and "priority" on orders for a month. Ninety is your
+      phone bill and half a bike repair.
+    why: This sets a bonus you need against what you hold about striking.
+    premises:
+      - id: own-boss
+        text: The premise that riders are workers at all, rather than people running their own small business.
+        evidence: [{position: work.future.flexible-markets, w: 2}, {position: property.self-ownership.full, w: 1}]
+    conditions:
+      - id: if-enough
+        text: It depends whether enough riders log off to win.
+        evidence: [{position: solidarity.basis.tactical, w: 2}]
+    options:
+      - id: strike
+        text: Log off for 48 hours and join the riders at the depot.
+        pressure: principle
+        cost: You lose two days' earnings and the bonus. For a month the orders go to the riders who worked.
+        evidence: [{position: change.means.strike-and-direct-action, w: 2}, {position: solidarity.basis.shared-class, w: 1}]
+      - id: work
+        text: Work the weekend and take the bonus.
+        pressure: interest
+        cost: You earn double for two days. The strike fails, and the new formula stays.
+        evidence: [{position: cs.own-first.yourself-first, w: 2}, {position: change.possibility.power-always-wins, w: 1}]
+      - id: half
+        text: Strike Saturday, work Sunday.
+        pressure: mixed
+        cost: No bonus, half your earnings, and neither side counts you as theirs.
+        evidence: [{position: solidarity.basis.tactical, w: 1}, {position: cs.own-first.yourself-first, w: 1}]
+      - id: other-app
+        text: Switch to the rival app for the weekend.
+        pressure: mixed
+        cost: You earn as usual and stay off everyone's list. The rival app cut its rates last year too.
+        evidence: [{position: change.means.individual-exit, w: 2}]
+
+  - id: pressure.jobless.placement
+    type: pressure
+    title: The placement
+    tests: welfare.state.social-citizenship
+    gate: {all: [{classIs: [reserve-army]}, {worldIs: [core]}]}
+    text: >
+      You have been on jobseeker's benefit for five months. The job centre assigns you eight weeks of "work
+      experience": 30 hours a week stacking shelves at a supermarket chain, paid nothing beyond your benefit.
+      Last month the same store cut twelve paid jobs. Refuse and your benefit stops for three months. A
+      claimants' union is asking people to refuse together.
+    why: This sets your benefit against what you hold about welfare as a right rather than a favour.
+    premises:
+      - id: owe-work
+        text: The premise that people on benefits owe work in return.
+        evidence: [{position: welfare.state.social-citizenship, w: 2}, {position: work.future.basic-income-emancipatory, w: 1}]
+    conditions:
+      - id: if-real-job
+        text: It depends whether the placement leads to a real job.
+        evidence: [{position: work.future.job-guarantee, w: 1}, {position: cs.hard-work.effort-pays, w: 1}]
+    options:
+      - id: refuse
+        text: Refuse, with the claimants' union.
+        pressure: principle
+        cost: Your benefit stops for three months. The union's hardship fund covers about a fifth of it.
+        evidence: [{position: welfare.state.social-citizenship, w: 2}, {position: solidarity.basis.shared-class, w: 1}]
+      - id: comply
+        text: Do the placement. Eight weeks, then it's over.
+        pressure: interest
+        cost: You keep your benefit. The store fills its twelve empty jobs with placements like yours.
+        evidence: [{position: welfare.state.coercive-dependency, w: 1}, {position: cs.hard-work.virtue-in-itself, w: 1}]
+      - id: comply-and-ask
+        text: Do it, work hard, and ask the manager for a paid job at the end.
+        pressure: mixed
+        cost: The manager says there are no paid jobs. There is another placement starting in March.
+        evidence: [{position: cs.hard-work.effort-pays, w: 2}]
+      - id: sick-note
+        text: Get a doctor's note and wait it out.
+        pressure: mixed
+        cost: You keep the benefit for now. The job centre calls you back in six weeks with the same placement.
+        evidence: [{position: cs.rigged.system-rigged, w: 1}, {position: change.means.individual-exit, w: 1}]
