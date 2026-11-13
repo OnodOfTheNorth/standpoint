@@ -397,12 +397,12 @@ export function crisis(b: Bundle, s: State): Claim[] {
   const lc = lean(cls);
   const le = lean(emp);
   const phrase = {
-    class: { dis: 'with labor and the dispossessed', order: 'with property and order', neither: 'with neither side', split: 'different ways in different crises' },
-    empire: { dis: 'with the colonized and the periphery', order: 'with the empire', neither: 'with neither side', split: 'different ways in different crises' },
+    class: { dis: 'with labor and the dispossessed', order: 'with property and order', neither: 'with neither side', split: 'with different sides in different crises' },
+    empire: { dis: 'with the colonized and the periphery', order: 'with the empire', neither: 'with neither side', split: 'with different sides in different crises' },
   } as const;
   const parts: string[] = [];
-  if (lc) parts.push(`at home you break ${phrase.class[lc]}`);
-  if (le) parts.push(`between empire and colony you break ${phrase.empire[le]}`);
+  if (lc) parts.push(lc === 'neither' ? 'at home you stand aside' : `at home you side ${phrase.class[lc]}`);
+  if (le) parts.push(le === 'neither' ? 'between empire and colony you stand aside' : `between empire and colony you side ${phrase.empire[le]}`);
   let headline = `When the center fails, ${listJoin(parts)}.`;
   if (lc === 'dis' && le === 'order') headline = 'When the center fails you side with labor at home and with the empire abroad.';
   if (lc === 'order' && le === 'dis') headline = 'When the center fails you side with order at home and with the colony abroad.';
@@ -703,15 +703,16 @@ export function anomalies(b: Bundle, s: State, loc: Location, claims: Claim[]): 
   const have = (id: string) => claims.some((c) => c.id === id);
   const cv = classVector(b, held(b, s));
   const own = loc.primary;
-  const disSides = s.sides.filter((x) => x.dir === 'dispossessed').length;
-  const ordSides = s.sides.filter((x) => x.dir === 'order').length;
+  // class-axis escalations only: siding with the empire is a different finding (the primary contradiction)
+  const disSides = s.sides.filter((x) => x.axis === 'class' && x.dir === 'dispossessed').length;
+  const ordSides = s.sides.filter((x) => x.axis === 'class' && x.dir === 'order').length;
   if (own && CAPITAL.includes(own) && disSides > ordSides && disSides >= 1) {
     out.push({
       id: 'anomaly.owner-with-dispossessed',
       section: 'anomalies',
       headline: 'You own capital and you broke toward the dispossessed when the center failed.',
       body: ['The frame predicts that owners side with property and order in a crisis. You did not. This is a test of the frame: either something other than position governs your crisis behavior, or a scene is not as costly to owners as it was meant to be.'],
-      mechanism: s.sides.filter((x) => x.dir === 'dispossessed').map((x) => `${b.arcs[x.arc ?? '']?.title ?? x.node}: sided with the dispossessed.`),
+      mechanism: s.sides.filter((x) => x.axis === 'class' && x.dir === 'dispossessed').map((x) => `${b.arcs[x.arc ?? '']?.title ?? x.node}: sided with the dispossessed.`),
       evidence: [{ kind: 'situation', id: 'location', label: own }],
       confidence: 0.7,
     });
@@ -722,7 +723,7 @@ export function anomalies(b: Bundle, s: State, loc: Location, claims: Claim[]): 
       section: 'anomalies',
       headline: 'You live by your labor and broke toward property and order when the center failed.',
       body: ['The frame predicts that workers who are pushed to choose side with labor, unless a hegemonic project holds them. Your choices show that hold at work. The instrument records this as a finding about you and as a test of the frame’s prediction.'],
-      mechanism: s.sides.filter((x) => x.dir === 'order').map((x) => `${b.arcs[x.arc ?? '']?.title ?? x.node}: sided with order.`),
+      mechanism: s.sides.filter((x) => x.axis === 'class' && x.dir === 'order').map((x) => `${b.arcs[x.arc ?? '']?.title ?? x.node}: sided with order.`),
       evidence: [{ kind: 'situation', id: 'location', label: own }],
       confidence: 0.7,
     });
