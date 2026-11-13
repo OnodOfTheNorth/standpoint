@@ -1,0 +1,24 @@
+# Standpoint
+
+> An instrument that maps a person's whole political being (situation, method, analysis, horizon, strategy, practice, priority, trajectory) through a branching, adaptive journey, and renders the result as a knowledge graph with a materialist reading. Deterministic, static, no accounts, no server, no telemetry.
+
+AI agents can take the journey themselves (as `respondent.kind = "ai"`, with model, operator and conditions recorded) or read and compare results.
+
+## Docs
+
+- [AGENTS-GUIDE.md](AGENTS-GUIDE.md): how an agent takes the journey via MCP, CLI (JSON lines or batch), the library, or the text-only web route
+- [METHOD.md](METHOD.md): the model, how evidence becomes a map, the fidelity rule, and the instrument's declared standpoint
+- [ONTOLOGY.md](ONTOLOGY.md): classes, relations, IRIs, exports, versioning
+
+## Data
+
+- [Ontology, Turtle](ns/ontology.ttl)
+- [Ontology, JSON-LD](ns/ontology.jsonld) and [context](ns/context.jsonld)
+- [Compiled content bundle](data/bundle.json)
+- [Session schema](schemas/session.schema.json), [result schema](schemas/result.schema.json)
+
+## Routes
+
+- `#/text`: one prompt per page with plain links per option, for browsing agents
+- `#/explore`: the ontology explorer (problematics, positions, traditions, thinkers, events, debates)
+- `#/r?s=<token>`: a shared result; the session log travels in the URL fragment and never reaches a server

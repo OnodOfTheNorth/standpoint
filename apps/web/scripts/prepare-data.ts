@@ -22,5 +22,5 @@ const schemaDir = join(root, 'packages', 'content', 'dist', 'schemas');
 if (existsSync(schemaDir)) for (const f of readdirSync(schemaDir)) copyFileSync(join(schemaDir, f), join(pub, 'schemas', f));
 const coreSchemas = join(root, 'packages', 'core', 'schemas');
 if (existsSync(coreSchemas)) for (const f of readdirSync(coreSchemas)) copyFileSync(join(coreSchemas, f), join(pub, 'schemas', f));
-for (const f of ['llms.txt', 'AGENTS-GUIDE.md']) if (existsSync(join(root, f))) copyFileSync(join(root, f), join(pub, f));
+for (const f of ['llms.txt', 'AGENTS-GUIDE.md', 'METHOD.md', 'ONTOLOGY.md']) if (existsSync(join(root, f))) copyFileSync(join(root, f), join(pub, f));
 console.log(`public/ prepared: ${Object.keys(b.positions).length} positions, ${Object.keys(b.nodes).length} nodes`);
