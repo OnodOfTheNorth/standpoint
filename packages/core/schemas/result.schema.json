@@ -1,0 +1,219 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://onodofthenorth.github.io/standpoint/schemas/result.schema.json",
+  "title": "Standpoint result",
+  "description": "A dated snapshot computed deterministically from a session log. Part one is the instrument's reading (reading); part two is the map (portrait, holdings, keystones, tensions, graph and the rest).",
+  "type": "object",
+  "required": ["format", "formatVersion", "meta", "coverage", "situation", "reading", "holdings", "keystones", "tensions", "portrait", "graph", "affordances", "disputes", "pressures", "sides", "causes", "trajectory", "practice"],
+  "properties": {
+    "format": { "const": "standpoint.result" },
+    "formatVersion": { "const": 1 },
+    "meta": {
+      "type": "object",
+      "required": ["session", "date", "mode", "contentVersion", "ontologyVersion", "respondent", "decisions"],
+      "properties": {
+        "session": { "type": "string" },
+        "date": { "type": "string" },
+        "mode": { "enum": ["sketch", "survey", "excavation"] },
+        "contentVersion": { "type": "string" },
+        "ontologyVersion": { "type": "string" },
+        "respondent": { "$ref": "session.schema.json#/$defs/respondent" },
+        "decisions": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "required": ["overall", "byDomain", "statement"],
+      "properties": {
+        "overall": { "type": "number", "minimum": 0, "maximum": 1 },
+        "byDomain": { "type": "object", "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 } },
+        "statement": { "type": "string" }
+      }
+    },
+    "situation": {
+      "type": "object",
+      "required": ["known", "location", "className", "fields"],
+      "properties": {
+        "known": { "type": "boolean" },
+        "location": { "type": "object" },
+        "className": { "type": ["string", "null"] },
+        "fields": { "type": "object", "additionalProperties": { "oneOf": [{ "type": "string" }, { "type": "array", "items": { "type": "string" } }] } }
+      }
+    },
+    "reading": { "type": "array", "items": { "$ref": "#/$defs/claim" } },
+    "holdings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["position", "problematic", "label", "weight", "confidence", "evidence"],
+        "properties": {
+          "position": { "type": "string" },
+          "problematic": { "type": "string" },
+          "label": { "type": "string" },
+          "weight": { "type": "number" },
+          "confidence": { "type": "number" },
+          "corrected": { "type": "string" },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["node", "label", "w", "kind"],
+              "properties": { "node": { "type": "string" }, "label": { "type": "string" }, "w": { "type": "number" }, "kind": { "type": "string" } }
+            }
+          }
+        }
+      }
+    },
+    "keystones": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["position", "label", "you", "score", "dependents", "strongestObjection", "move"],
+        "properties": {
+          "position": { "type": "string" },
+          "label": { "type": "string" },
+          "you": { "type": "string" },
+          "score": { "type": "number" },
+          "dependents": { "type": "array", "items": { "type": "string" } },
+          "strongestObjection": {
+            "oneOf": [
+              { "type": "null" },
+              { "type": "object", "required": ["from", "text"], "properties": { "from": { "type": "string" }, "text": { "type": "string" } } }
+            ]
+          },
+          "move": { "type": ["string", "null"], "description": "What the respondent said would move them off this keystone." }
+        }
+      }
+    },
+    "tensions": {
+      "type": "object",
+      "required": ["live", "confronted"],
+      "properties": {
+        "live": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["rule", "type", "principal", "between", "explain"],
+            "properties": {
+              "rule": { "type": "string" },
+              "type": { "$ref": "#/$defs/tensionType" },
+              "principal": { "type": "boolean" },
+              "between": { "type": "array", "items": { "type": "string" } },
+              "explain": { "type": "string" }
+            }
+          }
+        },
+        "confronted": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["rule", "status", "resolution", "kind", "type", "between", "resolutionText"],
+            "properties": {
+              "rule": { "type": "string" },
+              "status": { "const": "confronted" },
+              "resolution": { "type": "string" },
+              "kind": { "enum": ["yield", "hold", "reject", "condition", "declined"] },
+              "type": { "$ref": "#/$defs/tensionType" },
+              "between": { "type": "array", "items": { "type": "string" } },
+              "resolutionText": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "portrait": { "type": "array", "items": { "type": "string" } },
+    "graph": { "type": "object", "required": ["nodes", "edges"], "properties": { "nodes": { "type": "array" }, "edges": { "type": "array" } } },
+    "affinities": { "type": "array" },
+    "lineage": {},
+    "record": {},
+    "neighbors": {},
+    "otherReadings": {},
+    "theoryPractice": {},
+    "origins": {},
+    "library": {},
+    "affordances": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["node", "kind"],
+        "properties": {
+          "node": { "type": "string" },
+          "kind": { "enum": ["reject", "depends", "none", "decline"] },
+          "premise": { "type": "string" },
+          "condition": { "type": "string" },
+          "text": { "type": "string" }
+        }
+      }
+    },
+    "disputes": {
+      "type": "array",
+      "items": { "type": "object", "required": ["claim", "text"], "properties": { "claim": { "type": "string" }, "text": { "type": "string" }, "at": { "type": "string" } } }
+    },
+    "pressures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["node", "tests", "outcome", "option"],
+        "properties": {
+          "node": { "type": "string" },
+          "tests": { "type": "string" },
+          "outcome": { "enum": ["principle", "interest", "mixed", "evaded"] },
+          "option": { "type": "string" },
+          "cost": { "type": "string" }
+        }
+      }
+    },
+    "sides": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["node", "axis", "dir", "option"],
+        "properties": {
+          "node": { "type": "string" },
+          "arc": { "type": "string" },
+          "axis": { "enum": ["class", "empire"] },
+          "dir": { "enum": ["order", "dispossessed", "neither", "declined"] },
+          "option": { "type": "string" }
+        }
+      }
+    },
+    "causes": {
+      "type": "object",
+      "propertyNames": { "enum": ["individuals", "ideas", "culture", "nature", "divine", "chance", "interests", "structures"] },
+      "additionalProperties": { "type": "number" }
+    },
+    "trajectory": { "type": "object" },
+    "practice": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": "object", "additionalProperties": { "type": "string" } },
+    "migrated": { "type": "array", "items": { "type": "string" } }
+  },
+  "$defs": {
+    "tensionType": { "enum": ["logical", "principle-application", "strategy-horizon", "theory-practice", "position-consciousness"] },
+    "claim": {
+      "type": "object",
+      "required": ["id", "section", "headline", "body", "mechanism", "evidence", "confidence"],
+      "properties": {
+        "id": { "type": "string" },
+        "section": { "enum": ["serves", "primary", "pressure", "crisis", "method", "motion", "organization", "anomalies", "respondent"] },
+        "headline": { "type": "string" },
+        "body": { "type": "array", "items": { "type": "string" } },
+        "mechanism": { "type": "array", "items": { "type": "string" } },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["kind", "id", "label"],
+            "properties": {
+              "kind": { "enum": ["position", "node", "situation", "practice", "pressure", "side", "tension", "cause", "trajectory"] },
+              "id": { "type": "string" },
+              "label": { "type": "string" }
+            }
+          }
+        },
+        "disputed": { "type": "string" },
+        "confidence": { "type": "number" },
+        "dispute": { "type": "object", "required": ["text"], "properties": { "text": { "type": "string" }, "at": { "type": "string" } } }
+      }
+    }
+  }
+}

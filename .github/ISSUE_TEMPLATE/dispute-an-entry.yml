@@ -1,0 +1,56 @@
+name: Dispute an entry
+description: A position, tradition, thinker, event, debate, node or analytic reading misstates what it describes.
+title: "Dispute: <entry id>"
+labels: [dispute]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Standpoint describes every tradition in its own best voice and keeps its own materialist reading
+        visibly apart. If an entry fails the first test, or the reading misstates the mechanism, say so here.
+        See CONTRIBUTING.md for how disputes are reviewed.
+  - type: input
+    id: entry
+    attributes:
+      label: Entry id
+      description: The id shown on the entry, e.g. `state.nature.class-instrument`, `marxism.leninism`, `arc.dock.03`.
+      placeholder: state.nature.class-instrument
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is wrong?
+      options:
+        - "Description: a proponent would not sign this (claim, voiced, because, self-description)"
+        - "Objection: the opposing tradition's objection is weak or misattributed (against)"
+        - "Fact: a dated fact or figure is wrong or should be marked disputed (record, event, source)"
+        - "Source: a cited work does not exist, has the wrong year, or does not argue this"
+        - "Analysis: the class content, mechanism, drain or law-of-value reading is wrong"
+        - "Journey: a node signals a preferred answer, forces a frame, or misses an option people hold"
+        - "Missing: a position, tradition or option that should exist does not"
+    validations:
+      required: true
+  - type: input
+    id: standpoint
+    attributes:
+      label: Which tradition do you speak from or for?
+      description: Optional. A registry id or a plain name. Disputes from inside a tradition about its own entry weigh most on description.
+  - type: textarea
+    id: current
+    attributes:
+      label: What the entry says now
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: What it should say
+      description: Proposed wording, in the tradition's own idiom where it is a description.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Real works with author, title and year that support the change.

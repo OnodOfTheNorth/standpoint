@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://onodofthenorth.github.io/standpoint/schemas/session.schema.json",
+  "title": "Standpoint session",
+  "description": "An append-only log of one respondent's journey. Replaying the log against the same content version and seed reproduces the result exactly.",
+  "type": "object",
+  "required": ["format", "formatVersion", "id", "created", "seed", "mode", "contentVersion", "respondent", "log"],
+  "additionalProperties": false,
+  "properties": {
+    "format": { "const": "standpoint.session" },
+    "formatVersion": { "const": 1 },
+    "id": { "type": "string", "minLength": 1 },
+    "created": { "type": "string", "description": "ISO 8601 timestamp" },
+    "seed": { "type": "integer" },
+    "mode": { "$ref": "#/$defs/mode" },
+    "contentVersion": { "type": "string" },
+    "respondent": { "$ref": "#/$defs/respondent" },
+    "log": { "type": "array", "items": { "$ref": "#/$defs/event" } }
+  },
+  "$defs": {
+    "mode": { "enum": ["sketch", "survey", "excavation"] },
+    "at": { "type": "string", "description": "ISO 8601 timestamp" },
+    "respondent": {
+      "type": "object",
+      "required": ["kind"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": { "enum": ["human", "ai"] },
+        "model": { "type": "string", "description": "For AI respondents: the model name and version." },
+        "operator": { "type": "string", "description": "For AI respondents: who ran it." },
+        "conditions": { "type": "string", "description": "For AI respondents: system prompt, persona or other conditions of the run." },
+        "persona": { "type": "string" }
+      }
+    },
+    "event": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": ["t", "node"],
+          "additionalProperties": false,
+          "properties": {
+            "t": { "const": "answer" },
+            "node": { "type": "string", "description": "Node id, challenge:<tension id>, origin:<position id>, or <node id>#probe." },
+            "option": { "type": "string" },
+            "options": { "type": "array", "items": { "type": "string" } },
+            "alloc": { "type": "object", "additionalProperties": { "type": "number" } },
+            "affordance": { "enum": ["reject", "depends", "none", "decline"] },
+            "premise": { "type": "string" },
+            "condition": { "type": "string" },
+            "text": { "type": "string" },
+            "at": { "$ref": "#/$defs/at" }
+          }
+        },
+        { "type": "object", "required": ["t"], "additionalProperties": false, "properties": { "t": { "const": "undo" }, "at": { "$ref": "#/$defs/at" } } },
+        {
+          "type": "object",
+          "required": ["t", "field", "value"],
+          "additionalProperties": false,
+          "properties": {
+            "t": { "const": "situation" },
+            "field": { "type": "string" },
+            "value": { "oneOf": [{ "type": "string" }, { "type": "array", "items": { "type": "string" } }, { "type": "null" }] },
+            "at": { "$ref": "#/$defs/at" }
+          }
+        },
+        { "type": "object", "required": ["t"], "additionalProperties": false, "properties": { "t": { "const": "skip-situation" }, "at": { "$ref": "#/$defs/at" } } },
+        {
+          "type": "object",
+          "required": ["t", "position", "stance"],
+          "additionalProperties": false,
+          "properties": {
+            "t": { "const": "correct" },
+            "position": { "type": "string" },
+            "stance": { "enum": ["hold", "reject", "clear"] },
+            "at": { "$ref": "#/$defs/at" }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["t", "claim", "text"],
+          "additionalProperties": false,
+          "properties": { "t": { "const": "dispute" }, "claim": { "type": "string" }, "text": { "type": "string" }, "at": { "$ref": "#/$defs/at" } }
+        },
+        {
+          "type": "object",
+          "required": ["t", "mode"],
+          "additionalProperties": false,
+          "properties": { "t": { "const": "mode" }, "mode": { "$ref": "#/$defs/mode" }, "at": { "$ref": "#/$defs/at" } }
+        },
+        {
+          "type": "object",
+          "required": ["t", "descent"],
+          "additionalProperties": false,
+          "properties": { "t": { "const": "descend" }, "descent": { "type": "string" }, "at": { "$ref": "#/$defs/at" } }
+        },
+        {
+          "type": "object",
+          "required": ["t", "key", "text"],
+          "additionalProperties": false,
+          "properties": { "t": { "const": "note" }, "key": { "type": "string" }, "text": { "type": "string" }, "at": { "$ref": "#/$defs/at" } }
+        }
+      ]
+    }
+  }
+}
