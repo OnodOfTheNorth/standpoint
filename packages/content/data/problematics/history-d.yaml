@@ -1,0 +1,1184 @@
+# History, part 4: China since 2012, Yugoslav self-management, the DPRK, Chile 1970-1973.
+# See history.yaml and the header of history-c.yaml for the index of history files.
+problematics:
+  # ------------------------------------------------------------------
+  - id: hist.china-present
+    domain: history
+    layer: analysis
+    question: What is China since 2012, under Xi Jinping?
+    plain: >-
+      Since 2012 China has run a vast anti-corruption campaign, declared the end of extreme rural poverty, reined in tech platforms and
+      property developers, launched the Belt and Road, detained large numbers of Uyghurs in Xinjiang, and become the main rival of the
+      United States. What is it?
+    short: China today
+    importance: 2
+    region: history
+    positions:
+      - id: hist.china-present.new-era-socialism
+        label: Socialism with Chinese characteristics for a new era
+        claim: >-
+          China is a socialist state led by the Communist Party in the primary stage of socialism. After decades of growth through
+          markets, the party is now putting capital back under discipline, ending extreme poverty and aiming at "common prosperity".
+        voiced: >-
+          "The principal contradiction facing Chinese society is now between unbalanced and inadequate development and the people's
+          ever-growing needs for a better life. The party leads everything, and capital must serve the people."
+        you: You think today's China is a socialist country led by its Communist Party, now turning its wealth toward the people.
+        because: >-
+          The state owns the land, the large banks and the strategic industries; the party has a committee inside large private firms.
+          In 2020–21 regulators halted Ant Group's share listing, fined platform firms and let over-indebted property developers such
+          as Evergrande fail rather than bailing them out. The government declared in 2021 that absolute rural poverty, by its national
+          line, had been eliminated. Boer argues that this is what a socialist market economy looks like: markets as a tool under a
+          state of a different class character.
+        against:
+          - from: marxism.third-camp
+            text: >-
+              China has hundreds of billionaires, a labor market, independent unions banned and strikes repressed. A state that
+              disciplines some capitalists to protect capitalism as a whole is a capitalist state (Hung, Au Loong-yu).
+          - from: liberalism.internationalist
+            text: >-
+              "Common prosperity" sits beside mass detention in Xinjiang, the end of Hong Kong's separate political system under the
+              2020 National Security Law, and the removal of presidential term limits in 2018.
+        sources:
+          - {author: Xi Jinping, title: "The Governance of China", year: 2014}
+          - {author: Roland Boer, title: "Socialism with Chinese Characteristics: A Guide for Foreigners", year: 2021}
+        traditions:
+          defining: [marxism.scc]
+          typical: [marxism.ml]
+          contested: [marxism.third-worldism]
+          rejects: [marxism.third-camp, marxism.mlm, liberalism.internationalist]
+        presupposes: [hist.china-reform.primary-stage]
+        excludes: [hist.china-present.state-capitalist-rival]
+        analysis:
+          gains: [peasantry, peripheral-workers, professional-managerial]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >-
+            Treating China as a socialist state backs public control over land, banks and platforms against private and foreign capital,
+            and supports China's lending and trade with the South on terms that bypass Western finance; it also licenses the party to
+            forbid independent unions in the name of the workers.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >-
+            The class character of China is the sharpest dispute among materialists. One side (Boer, Cheng Enfu, Samir Amin in "China
+            2013", who stressed that land is not a commodity) holds it is not capitalist or is a sovereign project with socialist
+            potential; the other (Ho-fung Hung, Au Loong-yu, Minqi Li) holds it is capitalist and increasingly an imperialist competitor.
+            The instrument takes the frame's line, judging by direction and place in the world system, and records both.
+          consciousness: hegemonic
+      - id: hist.china-present.state-capitalist-rival
+        label: State capitalism, and a rising imperialist rival to the United States
+        claim: >-
+          China is a capitalist economy run by a party-state that fuses officials and owners. Its overaccumulated capital now flows
+          abroad through loans, ports and mines, and its rivalry with the United States is a contest between capitalist powers.
+        voiced: >-
+          "Neither Washington nor Beijing. China's capital needs outlets like any other: the Belt and Road is the export of surplus
+          capital, and the South China Sea is the old imperial game."
+        you: You think China is a capitalist great power competing with the United States, not an alternative to it.
+        because: >-
+          By the 2010s China had more dollar billionaires than any country but the United States; private firms produce most of its
+          output and employment. Hung shows how overcapacity after the 2008 stimulus pushed Chinese capital abroad, and how US and
+          Chinese capital, once partners, became rivals. Chinese state lenders are now the largest bilateral creditor to many poor
+          countries, and Chinese firms run mines from Zambia to Peru.
+        against:
+          - from: marxism.scc
+            text: >-
+              Imperialism means monopoly finance draining the periphery, enforced by bases and wars. China has one overseas base, has
+              fought no war abroad since 1979, and lends for infrastructure the IMF never funded.
+          - from: marxism.third-worldism
+            text: >-
+              Equating China with the United States in the name of balance disarms the South: the drain still runs to the US, Europe
+              and Japan, not to Beijing.
+        sources:
+          - {author: Ho-fung Hung, title: "Clash of Empires: From 'Chimerica' to the 'New Cold War'", year: 2022}
+          - {author: Ho-fung Hung, title: "The China Boom: Why China Will Not Rule the World", year: 2016}
+          - {author: Au Loong-yu, title: "China's Rise: Strength and Fragility", year: 2012}
+        traditions:
+          defining: [marxism.third-camp]
+          typical: [marxism.left-communism, anarchism.communist, marxism.mlm]
+          contested: [marxism.trotskyism]
+          rejects: [marxism.scc, marxism.ml, marxism.third-worldism]
+        presupposes: [imperialism.nature.inter-imperialist-rivalry]
+        excludes: [hist.china-present.new-era-socialism, hist.china-present.multipolar-anchor]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [industrial-capital, professional-managerial]
+          mechanism: >-
+            Treating China as a rival capitalist power keeps workers from taking either side in the US–China contest, which supports
+            Chinese workers against their employers but also removes support from Southern states that use Chinese credit to escape
+            Western conditions.
+          drain: none
+          law_of_value: abolishes
+          disputed: >-
+            Third Worldists and Marxist-Leninists (Amin, Boer) reject the imperialist label as long as the main flow of value runs from
+            South to the Western core; Hung and Au reply that China already shows monopoly capital and capital export.
+      - id: hist.china-present.developmental-state
+        label: The most successful developmental state, neither socialist nor liberal
+        claim: >-
+          China is best understood as a developmental state on the East Asian pattern, on a continental scale: a market economy whose
+          state steers credit, industry and technology to catch up with the rich countries. The labels "socialist" and "capitalist"
+          matter less than the method.
+        voiced: >-
+          "Forget the ideology. China does what Japan and Korea did: protect, plan, steer the banks, and push national champions into
+          world markets. It works."
+        you: You see today's China as a state-steered market economy catching up, more like Korea than like the USSR.
+        because: >-
+          China's industrial policy, such as "Made in China 2025" (2015), targeted sectors like electric vehicles, batteries and solar,
+          where Chinese firms now lead the world. Arrighi argued China was a market economy that did not hand control to capital, in
+          Adam Smith's sense rather than Marx's. State banks directed credit as Japan's ministries once did.
+        against:
+          - from: marxism.mlm
+            text: >-
+              The developmental frame avoids the question of class: who owns, who works, who gets the surplus.
+          - from: liberalism.chicago
+            text: >-
+              Industrial policy also produced ghost cities, a property bubble and a mountain of local government debt.
+        sources:
+          - {author: Giovanni Arrighi, title: "Adam Smith in Beijing: Lineages of the Twenty-First Century", year: 2007}
+          - {author: Isabella M. Weber, title: "How China Escaped Shock Therapy: The Market Reform Debate", year: 2021}
+        traditions:
+          defining: [nationalism.developmental-state]
+          typical: [marxism.world-systems, liberalism.technocratic, socdem.keynesian]
+          contested: [marxism.scc]
+        presupposes: [hist.china-reform.developmental-state]
+        analysis:
+          gains: [professional-managerial, industrial-capital, peripheral-workers]
+          pays: [finance-capital]
+          mechanism: >-
+            Holding China up as a developmental model recommends state control of credit and industrial policy to other Southern states,
+            which cuts into the returns of Western finance and of firms that hold technology monopolies.
+          drain: reduces
+          law_of_value: regulates
+      - id: hist.china-present.threat-to-liberal-order
+        label: A one-party challenger to the liberal international order
+        claim: >-
+          China under Xi has hardened into personal one-party rule at home and seeks to replace the US-led order of alliances, open
+          markets and human rights norms abroad. It is the main strategic challenge to the liberal democracies.
+        voiced: >-
+          "Beijing plays the long game: to displace American order regionally, then globally. A country that jails a million Uyghurs and
+          tears up Hong Kong's autonomy will not keep the rules once it writes them."
+        you: You see today's China as the main threat to the world order led by the liberal democracies.
+        because: >-
+          The party removed presidential term limits in 2018, imposed the National Security Law on Hong Kong in 2020, and militarized
+          reefs in the South China Sea despite a 2016 arbitral ruling against its claims. Doshi uses party documents to argue China's
+          strategy aims at displacing US order. Economy describes a "third revolution" of centralized control.
+        against:
+          - from: marxism.third-worldism
+            text: >-
+              The "liberal order" invaded Iraq and Libya and sanctions a third of humanity. Most of the South sees China as a trading
+              partner, not a threat.
+          - from: conservatism.paleo
+            text: >-
+              Crusading against China in the name of liberal norms risks a war over interests that are not ours; restraint, not a new
+              cold war.
+        sources:
+          - {author: Rush Doshi, title: "The Long Game: China's Grand Strategy to Displace American Order", year: 2021}
+          - {author: Elizabeth C. Economy, title: "The Third Revolution: Xi Jinping and the New Chinese State", year: 2018}
+          - {author: Aaron L. Friedberg, title: "A Contest for Supremacy: China, America, and the Struggle for Mastery in Asia", year: 2011}
+        traditions:
+          defining: [liberalism.internationalist]
+          typical: [conservatism.neo, liberalism.social, conservatism.christian-democracy]
+          rejects: [marxism.scc, marxism.third-worldism, conservatism.paleo]
+        presupposes: [intl.sovereignty.conditional-on-rights]
+        excludes: [hist.china-present.multipolar-anchor]
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [peripheral-workers, core-workers]
+          mechanism: >-
+            Casting China as the main threat funds arms budgets and export controls that protect core firms' technology monopolies,
+            and pushes Southern states to choose sides, which keeps them inside the Western financial system.
+          drain: sustains
+          law_of_value: extends
+      - id: hist.china-present.multipolar-anchor
+        label: The anchor of a multipolar world that gives the South room to develop
+        claim: >-
+          China's rise has broken the West's monopoly on credit, infrastructure and technology. Through the Belt and Road, lending without
+          IMF conditions and trade, it gives countries in Africa, Asia and Latin America choices they did not have before.
+        voiced: >-
+          "For the first time since 1991 the South has somewhere else to go. China builds the railway the World Bank refused to build,
+          and it does not tell us how to run our country."
+        you: You see China's rise as good for the global South because it ends Western monopoly.
+        because: >-
+          Brautigam's field research found Chinese loans in Africa mostly financed infrastructure and that the "debt-trap" story, such as
+          the claim about Sri Lanka's Hambantota port, did not hold up. Amin argued that China's sovereign project, with land not a
+          commodity and capital controls, was not a simple capitalist road. Chinese demand raised commodity prices across the South in
+          the 2000s.
+        against:
+          - from: marxism.third-camp
+            text: >-
+              Chinese loans carry collateral clauses and confidentiality; Chinese-run mines in Zambia have seen shootings of striking
+              miners. A new creditor is not liberation.
+          - from: liberalism.internationalist
+            text: >-
+              Lending without conditions also means lending without conditions on corruption or rights, which serves the rulers more than
+              the ruled.
+        sources:
+          - {author: Deborah Brautigam, title: "The Dragon's Gift: The Real Story of China in Africa", year: 2009}
+          - {author: Samir Amin, title: "China 2013", year: 2013, note: "Monthly Review, vol. 64, no. 10"}
+        traditions:
+          defining: [marxism.third-worldism]
+          typical: [nationalism.pan-africanism, marxism.dependency, nationalism.bolivarianism, marxism.ml]
+          contested: [marxism.scc]
+          rejects: [liberalism.internationalist, conservatism.neo, marxism.third-camp]
+        presupposes: [intl.sovereignty.nations-set-own-course]
+        excludes: [hist.china-present.threat-to-liberal-order, hist.china-present.state-capitalist-rival]
+        analysis:
+          gains: [peripheral-workers, peasantry, professional-managerial]
+          pays: [finance-capital]
+          mechanism: >-
+            Welcoming China as an alternative creditor and buyer weakens the IMF's and Western banks' leverage over Southern budgets,
+            which lets those states keep more of their export earnings, though local ruling groups decide who inside receives them.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >-
+            Materialists split on whether Chinese capital export repeats the drain (Hung) or offers the South a real alternative to it
+            (Amin, Brautigam on the lending record).
+      - id: hist.china-present.civilization-state
+        label: A civilization-state returning to its natural place
+        claim: >-
+          China is not a nation-state like others but a civilization that has governed itself for millennia by meritocratic officials,
+          and it is resuming the central place it held before the nineteenth century. Its political system expresses that tradition.
+        voiced: >-
+          "China is a civilizational state. Its model of selection by merit and performance has served it for two thousand years, and
+          the last two centuries of weakness were the exception."
+        you: You see today's China as an ancient civilization returning to the position it held before Western dominance.
+        because: >-
+          Until around 1800 China was among the largest economies in the world. The imperial examinations chose officials by merit for
+          over a thousand years, and the party's promotion system rewards records of performance in posts. Bell argues political
+          meritocracy can be legitimate without competitive elections; Zhang Weiwei and Jacques argue the West misreads China by
+          forcing it into the nation-state frame.
+        against:
+          - from: marxism.scc
+            text: >-
+              The People's Republic was founded by a revolution against the old civilization's landlords and mandarins; dressing it in
+              dynastic robes erases the class struggle that made it.
+          - from: liberalism.classical
+            text: >-
+              "Meritocracy" without elections or a free press means the officials grade themselves.
+        sources:
+          - {author: Zhang Weiwei, title: "The China Wave: Rise of a Civilizational State", year: 2012}
+          - {author: Daniel A. Bell, title: "The China Model: Political Meritocracy and the Limits of Democracy", year: 2015}
+          - {author: Martin Jacques, title: "When China Rules the World", year: 2009}
+        traditions:
+          defining: [religious.political-meritocracy]
+          typical: [religious.confucian]
+          contested: [marxism.scc]
+          rejects: [liberalism.classical, liberalism.internationalist]
+        presupposes: [hist.chinese-revolution.mandate-of-heaven]
+        analysis:
+          gains: [professional-managerial]
+          pays: [core-workers, peasantry]
+          mechanism: >-
+            Grounding legitimacy in civilization and performance rather than in class gives officials authority as long as growth
+            continues, and leaves workers and peasants no political claim except petition.
+          drain: none
+          law_of_value: none
+          method: idealist
+      - id: hist.china-present.surveillance-and-camps
+        label: A surveillance state that has interned a people and silenced its workers
+        claim: >-
+          Whatever its economics, China today runs a system of digital surveillance and mass detention: hundreds of thousands to over a
+          million Uyghurs and other Muslims held in camps in Xinjiang, Hong Kong's opposition jailed, labor activists and lawyers
+          detained.
+        voiced: >-
+          "My family disappeared into the camps. They call them vocational schools. They say we were terrorists because we prayed."
+        you: You judge today's China first by how it treats Uyghurs, Tibetans, Hong Kongers and its own workers.
+        because: >-
+          From 2017 the authorities built detention facilities across Xinjiang; leaked documents and satellite imagery documented them.
+          The UN human rights office concluded in 2022 that serious human rights violations had been committed that "may constitute
+          international crimes, in particular crimes against humanity". Byler documents the surveillance system. The 2018 Jasic workers'
+          campaign and the student supporters who joined it were met with arrests.
+        against:
+          - from: marxism.scc
+            text: >-
+              The centers were a response to a wave of terrorist attacks, and the government says the trainees graduated by 2019. The
+              Western campaign uses Xinjiang to justify sanctions and a new cold war.
+          - from: marxism.third-worldism
+            text: >-
+              Detainee estimates rest heavily on extrapolations by a few researchers (Zenz) and on governments at strategic war with
+              China; the same governments built Guantánamo.
+        sources:
+          - {author: Darren Byler, title: "In the Camps: China's High-Tech Penal Colony", year: 2021}
+          - {author: Office of the UN High Commissioner for Human Rights, title: "Assessment of Human Rights Concerns in the Xinjiang Uyghur Autonomous Region", year: 2022}
+        traditions:
+          typical: [liberalism.internationalist, marxism.third-camp, anarchism.communist, religious.islamism-brotherhood, religious.post-islamism]
+          contested: [nationalism.decolonial]
+          rejects: [marxism.scc]
+        presupposes: [intl.sovereignty.conditional-on-rights]
+        tension: [hist.china-present.multipolar-anchor]
+        analysis:
+          gains: [peripheral-workers]
+          pays: [professional-managerial]
+          mechanism: >-
+            Putting the treatment of minorities and workers first supports Uyghur, Tibetan and Chinese workers against the security
+            apparatus, and is also used by core governments to justify sanctions and supply-chain bans that protect their own firms.
+          drain: none
+          law_of_value: none
+          disputed: >-
+            Detention figures are disputed, from several hundred thousand to over a million; the Chinese government denies arbitrary
+            detention. Materialists split on whether to foreground the repression (third camp) or the imperial use made of it.
+      - id: hist.china-present.mercantilist-cheat
+        label: A mercantilist rival that took our industry with our elites' help
+        claim: >-
+          China got rich by cheating at trade: subsidies, a cheap currency, forced technology transfer and theft. Western elites let it
+          into the WTO in 2001, and the factory towns of the West paid for it.
+        voiced: >-
+          "We rebuilt China. Our politicians and CEOs sold our factories for cheap labor and quarterly profits, and Beijing played them
+          for fools."
+        you: You think China's rise cost your country its industry, with the help of your own leaders.
+        because: >-
+          Autor, Dorn and Hanson found that rising Chinese imports after 2000 cost the United States around a million manufacturing jobs
+          and left lasting damage in the towns that lost them. Chinese industrial policy subsidizes national champions, and foreign firms
+          have long had to form joint ventures and share technology to enter the market. Lighthizer argues free-trade ideology blinded
+          Washington to all of it.
+        against:
+          - from: marxism.third-worldism
+            text: >-
+              Western firms moved production to China to raise profits by paying lower wages; the "cheat" was the business model of
+              Apple and Walmart.
+          - from: liberalism.chicago
+            text: >-
+              Cheap Chinese goods raised the real incomes of every Western consumer, especially the poor; tariffs are a tax on them.
+        sources:
+          - {author: "David H. Autor, David Dorn and Gordon H. Hanson", title: "The China Syndrome: Local Labor Market Effects of Import Competition in the United States", year: 2013}
+          - {author: Robert Lighthizer, title: "No Trade Is Free: Changing Course, Taking on China, and Helping America's Workers", year: 2023}
+        traditions:
+          defining: [conservatism.national]
+          typical: [conservatism.right-populism, conservatism.paleo, conservatism.postliberal, socdem.labourism]
+          rejects: [liberalism.chicago, marxism.third-worldism]
+        presupposes: [labor.division.outsiders-undercut-us]
+        analysis:
+          gains: [industrial-capital, core-workers]
+          pays: [peripheral-workers, finance-capital]
+          mechanism: >-
+            Blaming China for deindustrialization turns core workers' anger against a foreign rival rather than against the firms that
+            moved production, and supports tariffs and subsidies for domestic capital alongside the defense budget.
+          drain: sustains
+          law_of_value: regulates
+          consciousness: economic-corporate
+  # ------------------------------------------------------------------
+  - id: hist.yugoslavia
+    domain: history
+    layer: analysis
+    question: What was socialist Yugoslavia, 1945–1991?
+    plain: >-
+      Tito's partisans liberated Yugoslavia, broke with Stalin in 1948, built workers' self-management and a socialist market
+      economy, co-founded the Non-Aligned Movement, borrowed heavily abroad, and then the federation broke apart in war in the 1990s.
+      What was it?
+    short: socialist Yugoslavia
+    importance: 2
+    region: history
+    positions:
+      - id: hist.yugoslavia.self-management
+        label: The most far-reaching experiment in workers' self-management
+        claim: >-
+          From 1950 Yugoslav factories were run by elected workers' councils, property was social rather than state-owned, and
+          enterprises traded in markets. It showed that socialism could be built without a central bureaucracy and gave workers real
+          power at the workplace.
+        voiced: >-
+          "Factories to the workers! Socialism is not the state owning everything; it is the associated producers managing their own
+          work."
+        you: You see Yugoslavia as the most serious attempt to let workers run their own enterprises.
+        because: >-
+          The 1950 law on workers' self-management handed the running of enterprises to councils elected by the workforce, which chose
+          directors and divided income. In the 1950s and 1960s Yugoslavia grew among the fastest economies in the world, and living
+          standards rose sharply. Horvat and Vanek drew on it to show that labor-managed firms can be efficient. The Praxis
+          philosophers developed a humanist Marxism within it.
+        against:
+          - from: liberalism.austrian
+            text: >-
+              Labor-managed firms underinvest, hire too few workers and borrow without limit because no one owns the capital
+              (Furubotn and Pejovich). Yugoslav unemployment and foreign debt followed from that.
+          - from: marxism.ml
+            text: >-
+              The workers' councils competed with each other in a market. That fostered inequality between firms and regions and a
+              layer of managers and bankers, the road back to capitalism.
+        sources:
+          - {author: Branko Horvat, title: "The Political Economy of Socialism: A Marxist Social Theory", year: 1982}
+          - {author: Jaroslav Vanek, title: "The General Theory of Labor-Managed Market Economies", year: 1970}
+        traditions:
+          defining: [marxism.market-socialism]
+          typical: [socdem.democratic-socialism, marxism.western]
+          contested: [anarchism.syndicalist, marxism.council-communism]
+          rejects: [marxism.hoxhaism, liberalism.austrian]
+        presupposes: [firm.ownership.worker-cooperatives]
+        excludes: [hist.yugoslavia.revisionist-capitalism]
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >-
+            Holding up self-management backs workers' control of enterprises without central planning, which threatens private
+            ownership but leaves firms competing in markets, so gains flow to the workers of the more profitable firms and regions.
+          drain: reduces
+          law_of_value: regulates
+      - id: hist.yugoslavia.non-aligned
+        label: An independent socialism between the blocs, leading the Non-Aligned
+        claim: >-
+          Yugoslavia refused both Stalin and NATO. It survived the break of 1948, then joined India, Egypt, Indonesia and Ghana to found
+          the Non-Aligned Movement in Belgrade in 1961, giving newly independent countries a voice outside the two blocs.
+        voiced: >-
+          "We are not a bloc and we do not want blocs. The small and the newly free nations can stand together outside the camps of the
+          great powers."
+        you: You value Yugoslavia mainly for its independence from both superpowers and its leadership of the non-aligned countries.
+        because: >-
+          After the Cominform expelled Yugoslavia in June 1948, Tito held out against Soviet pressure and invasion threats. The
+          Belgrade conference of 1961 brought together 25 states and grew into a movement of most of the South. Yugoslav engineers and
+          firms built across Africa and Asia, and Yugoslavia trained students from the newly independent states. Prashad treats it as a
+          pillar of the "Third World project".
+        against:
+          - from: marxism.hoxhaism
+            text: >-
+              Tito's "non-alignment" was paid for by US aid and loans from 1949 on; it served Washington by splitting the socialist camp.
+          - from: liberalism.internationalist
+            text: >-
+              Non-alignment gave cover to many governments that jailed their opponents, Tito's included.
+        sources:
+          - {author: Vijay Prashad, title: "The Darker Nations: A People's History of the Third World", year: 2007}
+          - {author: Jawaharlal Nehru, title: "Speech at the Bandung Conference", year: 1955}
+        traditions:
+          defining: [marxism.third-worldism]
+          typical: [nationalism.nasserism, marxism.african-socialism, marxism.arab-socialism, nationalism.gandhian]
+          rejects: [marxism.hoxhaism]
+        presupposes: [intl.sovereignty.nations-set-own-course]
+        analysis:
+          gains: [peripheral-workers, peasantry, professional-managerial]
+          pays: [finance-capital]
+          mechanism: >-
+            Valuing non-alignment supports Southern states acting together outside both blocs, which in the 1970s produced the demand
+            for a New International Economic Order on commodity prices and debt, a direct claim on the drain.
+          drain: reduces
+          law_of_value: regulates
+      - id: hist.yugoslavia.revisionist-capitalism
+        label: Revisionism that restored capitalism and served the West
+        claim: >-
+          Tito broke with the socialist camp in 1948, took Western money, and turned social property into a market of competing firms
+          with managers and banks. Self-management was the ideology of a new capitalism, and Yugoslavia's end in debt and civil war
+          proved it.
+        voiced: >-
+          "Yugoslav 'self-administration' is a capitalist theory and practice. The Titoites sold the country to the imperialists for
+          dollars and called it a special road."
+        you: You think Tito's Yugoslavia abandoned socialism and became a Western-backed capitalist state.
+        because: >-
+          The Cominform resolution of 1948 accused the Yugoslav leadership of nationalism and of a soft line on the rich peasants.
+          After the break Yugoslavia took Western aid, and from the 1965 reform firms set prices freely, banks allocated credit for
+          profit and hundreds of thousands of workers went to West Germany as guest workers. Hoxha argued this was capitalism run by a
+          managerial bourgeoisie.
+        against:
+          - from: marxism.market-socialism
+            text: >-
+              No private owners held the factories; the councils hired directors and divided income. That is not capitalism by any
+              definition Marx used.
+          - from: marxism.trotskyism
+            text: >-
+              Stalin's break with Tito in 1948 was an attempt to make Yugoslavia a satellite; the Albanian line repeats his slander. The
+              Cominformists were sent to the Goli Otok prison camp, which is itself an indictment of both sides.
+        sources:
+          - {author: Enver Hoxha, title: "Yugoslav 'Self-Administration': A Capitalist Theory and Practice", year: 1978}
+          - {author: Information Bureau of the Communist and Workers' Parties, title: "Resolution Concerning the Situation in the Communist Party of Yugoslavia", year: 1948}
+        traditions:
+          defining: [marxism.hoxhaism]
+          typical: [marxism.mlm]
+          contested: [marxism.ml, marxism.maoism]
+          rejects: [marxism.market-socialism, marxism.third-worldism]
+        presupposes: [hist.ussr-stalin.socialism-built]
+        excludes: [hist.yugoslavia.self-management]
+        analysis:
+          gains: [peripheral-workers]
+          pays: [professional-managerial, finance-capital]
+          mechanism: >-
+            Calling market socialism capitalism defends central planning against reform and marks managers and banks as a new
+            bourgeoisie, which in practice backed the Soviet bloc's line against Yugoslavia during the Cominform period.
+          drain: reduces
+          law_of_value: suspends
+      - id: hist.yugoslavia.undone-by-markets-and-debt
+        label: A socialism undone by markets, foreign debt and the IMF
+        claim: >-
+          Self-management was real, but the reforms of the 1960s and 1970s handed economic power to the republics, the banks and the
+          market. Inequality between rich and poor republics grew, foreign debt passed $20 billion, and IMF austerity in the 1980s set
+          republic against republic.
+        voiced: >-
+          "The war did not come from ancient hatreds. It came from a debt crisis: austerity imposed from outside, republics fighting over
+          shrinking budgets, and politicians who found nationalism the way to keep power."
+        you: You think Yugoslavia broke up because of debt and market pressures, not ancient ethnic hatreds.
+        because: >-
+          Woodward shows how IMF programs from 1979 onward cut social spending, raised unemployment and pushed the federation to
+          transfer powers to the republics, while Slovenia and Croatia resented subsidizing Kosovo and Macedonia. By 1989 inflation
+          passed 1,000 percent. Samary and Lebowitz argue that market self-management set workers of different firms and regions
+          against each other, and nationalist leaders harvested the resentment.
+        against:
+          - from: liberalism.classical
+            text: >-
+              The debt was not imposed; it was borrowed by a system that could not live within its means. The IMF was called in after
+              the money ran out.
+          - from: nationalism.ethnic
+            text: >-
+              Economics does not explain why the wars took the shape of national wars: the grievances of 1941–45 and of the Tito years
+              were real and remembered.
+        sources:
+          - {author: Susan L. Woodward, title: "Socialist Unemployment: The Political Economy of Yugoslavia, 1945–1990", year: 1995}
+          - {author: Susan L. Woodward, title: "Balkan Tragedy: Chaos and Dissolution after the Cold War", year: 1995}
+          - {author: Catherine Samary, title: "Le marché contre l'autogestion: l'expérience yougoslave", year: 1988}
+          - {author: Michael A. Lebowitz, title: "The Contradictions of \"Real Socialism\": The Conductor and the Conducted", year: 2012}
+        traditions:
+          typical: [marxism.trotskyism, marxism.dependency, socdem.democratic-socialism, marxism.world-systems]
+          contested: [marxism.market-socialism]
+          rejects: [nationalism.ethnic]
+        presupposes: [history.motor.class-struggle]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [finance-capital]
+          mechanism: >-
+            Explaining the break-up by debt and market competition puts the blame on creditors and austerity rather than on peoples,
+            which supports resistance to IMF programs and workers' solidarity across national lines.
+          drain: reduces
+          law_of_value: regulates
+      - id: hist.yugoslavia.labor-managed-failure
+        label: Proof that social property cannot price capital
+        claim: >-
+          Yugoslavia tried socialism with markets and showed it does not work: firms owned by no one invested badly, paid themselves
+          too much, borrowed without limit and kept people out of work. Inflation and debt were the result, not bad luck.
+        voiced: >-
+          "Without owners there is no one to care about the value of capital. Workers' councils voted themselves wages and left the bill
+          to the banks and the foreign lenders."
+        you: You think Yugoslavia's economic crisis proved that firms need private owners.
+        because: >-
+          Furubotn and Pejovich showed that workers who could not sell their share of the firm preferred higher wages to investment;
+          investment was then financed by bank credit, which the state underwrote. Unemployment stayed high even in the boom years,
+          because councils did not want to share income with new hires, and hundreds of thousands left to work abroad. Sirc traced how
+          this ended in inflation and foreign debt.
+        against:
+          - from: marxism.market-socialism
+            text: >-
+              Yugoslav growth in 1950–1979 outpaced most capitalist economies at its level. The debt crisis hit Latin America just as
+              hard, with private owners in charge.
+          - from: marxism.ml
+            text: >-
+              The failure was the market, not the absence of capitalists: the cure is planning, not owners.
+        sources:
+          - {author: Eirik Furubotn and Svetozar Pejovich, title: "Property Rights and the Behavior of the Firm in a Socialist State: The Example of Yugoslavia", year: 1970}
+          - {author: Ljubo Sirc, title: "The Yugoslav Economy under Self-Management", year: 1979}
+        traditions:
+          defining: [liberalism.austrian]
+          typical: [liberalism.chicago, liberalism.classical, libertarianism.minarchist]
+          rejects: [marxism.market-socialism]
+        presupposes: [property.private.natural-right]
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [core-workers]
+          mechanism: >-
+            Reading the crisis as proof that capital needs owners recommended the privatizations of the 1990s, which transferred social
+            property to managers, political insiders and foreign buyers at low prices.
+          drain: sustains
+          law_of_value: extends
+      - id: hist.yugoslavia.new-class
+        label: A new class of party officials ruled in the workers' name
+        claim: >-
+          Behind the workers' councils a new class of party officials held the real power: they controlled appointments, credit and the
+          police, enjoyed villas and privileges, and jailed those who said so, beginning with Tito's own deputy, Milovan Đilas.
+        voiced: >-
+          "The new class is the political bureaucracy. It owns the nation's property collectively, through the party, and it is more
+          ruthless than any owner because no law limits it."
+        you: You think Tito's Yugoslavia was run by a new privileged class of party officials.
+        because: >-
+          Đilas, once among the four top leaders, wrote "The New Class" in 1957 and served years in prison for it. The League of
+          Communists controlled nominations to the councils, the directors' posts and the banks. In 1968 students in Belgrade occupied the
+          university demanding an end to "red bourgeoisie" privileges; in 1971 the Croatian Spring was crushed and its leaders purged.
+        against:
+          - from: marxism.market-socialism
+            text: >-
+              Đilas's critique fits the Soviet type better than Yugoslavia, where councils did choose directors and income was divided at
+              the workplace.
+          - from: marxism.ml
+            text: >-
+              Đilas ended as a Western-funded anticommunist; his "new class" was a gift to the cold warriors.
+        sources:
+          - {author: Milovan Đilas, title: "The New Class: An Analysis of the Communist System", year: 1957}
+        traditions:
+          typical: [marxism.third-camp, socdem.democratic-socialism, liberalism.classical, anarchism.communist]
+          contested: [marxism.trotskyism]
+          rejects: [marxism.market-socialism, marxism.ml]
+        presupposes: [class.concept.command-and-control]
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [professional-managerial]
+          mechanism: >-
+            Naming the party officials a ruling class directs workers against the political bureaucracy; after 1989 the same critique
+            was used to justify handing social property to private owners rather than to the workers.
+          drain: none
+          law_of_value: none
+      - id: hist.yugoslavia.prison-of-nations
+        label: A communist federation that suppressed its nations
+        claim: >-
+          Yugoslavia held its peoples together by force and by silencing their histories. Each nation, Croats, Serbs, Slovenes,
+          Albanians, Bosniaks, felt it paid more than it got, and when the party lost its grip the national questions it had buried came
+          back.
+        voiced: >-
+          "Brotherhood and unity was a lie told by the police. Our nation was robbed, our history forbidden, our leaders jailed. Of
+          course the federation fell apart."
+        you: You see Tito's Yugoslavia as a state that suppressed your nation, or the nations within it.
+        because: >-
+          In 1971 the Croatian Spring was ended by purges and arrests; Kosovo Albanian protests in 1981 were put down by the army. The
+          Serbian Academy's 1986 Memorandum claimed Serbs were discriminated against in the federation. Banac shows the national question
+          was never solved, only managed, since the first Yugoslav state of 1918.
+        against:
+          - from: marxism.market-socialism
+            text: >-
+              Each nationalism claims its own nation was the victim; together they produced the wars of the 1990s, in which some
+              130,000 people died, and the genocide at Srebrenica.
+          - from: socdem.democratic-socialism
+            text: >-
+              The federation gave each republic its own language, schools and, from 1974, a veto; the nationalisms were revived by
+              politicians competing for power in the economic crisis.
+        sources:
+          - {author: Serbian Academy of Sciences and Arts, title: "Memorandum", year: 1986}
+          - {author: Ivo Banac, title: "The National Question in Yugoslavia: Origins, History, Politics", year: 1984}
+        traditions:
+          defining: [nationalism.ethnic]
+          typical: [conservatism.traditionalist, conservatism.national]
+          rejects: [marxism.market-socialism, socdem.democratic-socialism, marxism.third-worldism]
+        presupposes: [nation.question.ethnic]
+        excludes: [hist.yugoslavia.undone-by-markets-and-debt]
+        analysis:
+          gains: [comprador-capital, petty-bourgeoisie]
+          pays: [core-workers, peasantry]
+          mechanism: >-
+            Explaining Yugoslavia by national oppression divides its former workers along national lines, which in the 1990s let new
+            national elites take over social property and sell it, and made the successor states dependent on Western creditors.
+          drain: sustains
+          law_of_value: extends
+      - id: hist.yugoslavia.brotherhood-and-unity
+        label: Brotherhood and unity, a good life lost in the wars
+        claim: >-
+          For many who lived it, Yugoslavia meant peace between peoples, a passport that opened borders both East and West, a job, a flat
+          and holidays on the Adriatic. The wars and the poverty that came after made it look better every year.
+        voiced: >-
+          "We had everything: work, a flat, the sea, a passport you could go anywhere with, and nobody asked what you were. Then they told
+          us we had to hate each other."
+        you: You remember, or have heard, Yugoslavia as a better time that the wars destroyed.
+        because: >-
+          Polls in the successor states have often found large shares saying life was better under Tito. Velikonja documents
+          "Titostalgia": the pilgrimages to Tito's grave, the cafés named after him, the songs. Most of the successor states have not
+          regained their 1980s levels of industry or employment, and millions emigrated.
+        against:
+          - from: nationalism.ethnic
+            text: >-
+              Nostalgia forgets the secret police, the political prisoners of Goli Otok and the nations that had no state of their own.
+          - from: liberalism.classical
+            text: >-
+              The good life was paid for with foreign loans; the bill came due in the 1980s.
+        sources:
+          - {author: Mitja Velikonja, title: "Titostalgia: A Study of Nostalgia for Josip Broz", year: 2008}
+        traditions:
+          defining: [commonsense.declinist]
+          typical: [socdem.democratic-socialism, marxism.market-socialism]
+          rejects: [nationalism.ethnic]
+        analysis:
+          gains: [core-workers, reserve-army]
+          pays: [comprador-capital]
+          mechanism: >-
+            Remembering Yugoslavia as a shared good life cuts against the national divisions on which post-war elites built their
+            power, and keeps alive the memory of social ownership and full employment as achieved facts.
+          drain: none
+          law_of_value: regulates
+          consciousness: economic-corporate
+  # ------------------------------------------------------------------
+  - id: hist.dprk
+    domain: history
+    layer: analysis
+    question: What is the Democratic People's Republic of Korea?
+    plain: >-
+      The DPRK was founded in 1948 in the Soviet-occupied north of Korea. The Korean War of 1950–53 devastated it. Since then the
+      Workers' Party has governed under three generations of the Kim family; the country lived through a famine in the 1990s, built
+      nuclear weapons, and has been under sanctions for decades. What is it?
+    short: North Korea
+    importance: 2
+    region: history
+    positions:
+      - id: hist.dprk.juche-socialism
+        label: A sovereign socialist state built on self-reliance
+        claim: >-
+          The DPRK is a socialist state that has kept its independence from every great power by the idea of Juche: the people as masters
+          of their own revolution, self-reliance in economy and defense. It has survived where larger socialist states fell.
+        voiced: >-
+          "Juche means that the masters of the revolution and construction are the masses of the people. We rely on our own strength,
+          and we will never again be anyone's colony."
+        you: You see the DPRK as a socialist country that has defended its independence by relying on itself.
+        because: >-
+          Korea was a Japanese colony from 1910 to 1945, and Kim Il Sung's guerrillas fought Japan in Manchuria. After the war the North
+          rebuilt from rubble and by most estimates out-produced the South per head into the 1970s. When the Soviet Union fell in 1991
+          and aid stopped, the DPRK did not collapse or surrender, and its nuclear deterrent has kept it from the fate of Iraq and Libya.
+        against:
+          - from: marxism.ml
+            text: >-
+              Hereditary succession and a family cult have no place in Marxism-Leninism; even friendly parties have found Juche a break
+              with it.
+          - from: liberalism.internationalist
+            text: >-
+              "Self-reliance" meant a famine in the 1990s that killed hundreds of thousands at least, while the state spent on arms.
+        sources:
+          - {author: Kim Il Sung, title: "On Eliminating Dogmatism and Formalism and Establishing Juche in Ideological Work", year: 1955}
+          - {author: Kim Jong Il, title: "On the Juche Idea", year: 1982}
+        traditions:
+          defining: [marxism.juche]
+          contested: [marxism.ml]
+          rejects: [liberalism.internationalist, conservatism.neo, marxism.trotskyism]
+        presupposes: [intl.sovereignty.nations-set-own-course]
+        excludes: [hist.dprk.hereditary-tyranny]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >-
+            Holding the DPRK up as a self-reliant socialist state endorses a total exit from the world market, which keeps foreign
+            capital out entirely and also concentrates every decision over surplus and consumption in the party and army.
+          drain: breaks
+          law_of_value: suspends
+      - id: hist.dprk.besieged-survivor
+        label: A small country that survived total war and permanent siege
+        claim: >-
+          Whatever one thinks of its government, the DPRK is shaped by having been bombed flat in 1950–53 and kept under military threat
+          and sanctions ever since. Its militarization and its nuclear weapons are a response to siege, and siege is what has to end.
+        voiced: >-
+          "Over a period of three years or so we killed off, what, twenty percent of the population. That was the US commander's own
+          estimate. Then ask why they want a bomb."
+        you: You think the DPRK must be understood through the war and the decades of siege it has lived under.
+        because: >-
+          US bombing in 1950–53 destroyed most cities and towns in the North, including the dams in 1953; Cumings records the scale.
+          The war ended in an armistice, not a peace treaty, and US forces and nuclear weapons stayed in the South. After Iraq (2003) and
+          Libya (2011) gave up weapons programs and were attacked, Pyongyang drew the obvious conclusion. Sanctions under UN resolutions
+          from 2006 have cut its trade drastically.
+        against:
+          - from: liberalism.internationalist
+            text: >-
+              The war began with the North's invasion of the South in June 1950. Siege does not explain prison camps or hereditary rule.
+          - from: marxism.third-camp
+            text: >-
+              Siege explains a lot but excuses nothing: the North Korean worker is exploited by the state in the name of defending him.
+        sources:
+          - {author: Bruce Cumings, title: "The Korean War: A History", year: 2010}
+          - {author: Bruce Cumings, title: "North Korea: Another Country", year: 2004}
+        traditions:
+          defining: [marxism.third-worldism]
+          typical: [marxism.ml, marxism.juche, conservatism.paleo]
+          contested: [marxism.trotskyism]
+          rejects: [conservatism.neo, liberalism.internationalist]
+        presupposes: [intl.sanctions.economic-war]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >-
+            Treating the DPRK's conduct as a response to siege points to lifting sanctions and signing a peace treaty, which would cut
+            the case for US bases and arms spending in East Asia and the defense contracts that rest on it.
+          drain: reduces
+          law_of_value: none
+      - id: hist.dprk.hereditary-tyranny
+        label: A hereditary dictatorship with prison camps and a cult of the leader
+        claim: >-
+          The DPRK is ruled by one family through three generations, with a cult of the leaders, no free press, travel or assembly, a
+          caste system of political loyalty, and prison camps holding tens of thousands. It is among the most closed states on earth.
+        voiced: >-
+          "The gravity, scale and nature of these violations reveal a state that does not have any parallel in the contemporary world."
+        you: You see the DPRK as a hereditary dictatorship that imprisons and starves its own people.
+        because: >-
+          The UN Commission of Inquiry in 2014 found crimes against humanity, including extermination, enslavement and torture, and
+          estimated 80,000 to 120,000 political prisoners in camps. The songbun system ranks families by political loyalty going back
+          to their grandparents. Defectors' accounts collected by Demick show daily life under surveillance and hunger.
+        against:
+          - from: marxism.juche
+            text: >-
+              The commission never visited the country and relied on defectors paid by South Korean and US-funded organizations; some
+              star witnesses later changed their stories.
+          - from: marxism.third-worldism
+            text: >-
+              The South Korean military governments that the US backed until 1987 massacred their own people at Jeju and Gwangju without
+              a UN commission.
+        sources:
+          - {author: UN Human Rights Council, title: "Report of the Detailed Findings of the Commission of Inquiry on Human Rights in the Democratic People's Republic of Korea", year: 2014}
+          - {author: Barbara Demick, title: "Nothing to Envy: Ordinary Lives in North Korea", year: 2009}
+        traditions:
+          defining: [liberalism.internationalist]
+          typical: [conservatism.neo, liberalism.classical, conservatism.evangelical-right, conservatism.christian-democracy]
+          rejects: [marxism.juche]
+        presupposes: [intl.sovereignty.conditional-on-rights]
+        excludes: [hist.dprk.juche-socialism]
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [peripheral-workers]
+          mechanism: >-
+            Making human rights the frame justifies sanctions and military pressure, which fall on ordinary North Koreans, and sustains
+            the US military presence in Korea and Japan.
+          drain: sustains
+          law_of_value: extends
+          disputed: >-
+            Prisoner and famine figures rest largely on defector testimony and outside estimates and are disputed by the DPRK and its
+            defenders; the 1990s famine is estimated at roughly 600,000 to 1 million deaths, with outlying estimates from 240,000 to 3.5
+            million.
+      - id: hist.dprk.national-dynasty
+        label: Not socialism but a nationalist dynasty in red
+        claim: >-
+          Whatever its origins, the DPRK today is not a workers' state of any kind but a family monarchy that rules through army, party
+          and race-nationalist ideology. Its official doctrine has dropped Marxism-Leninism, and its subjects have no say.
+        voiced: >-
+          "The North Korean worldview is not communist but a paranoid race-based nationalism: the pure Korean people, protected by a
+          parental leader. Marx left the building long ago."
+        you: You think the DPRK has nothing socialist left in it and is a nationalist family monarchy.
+        because: >-
+          The 1972 constitution put Juche beside Marxism-Leninism, and the 2009 revision dropped the word communism. Power passed from
+          Kim Il Sung to his son in 1994 and to his grandson in 2011. Myers reads its propaganda as the cult of a pure race under a
+          motherly leader, closer to wartime Japanese nationalism than to Marx. Workers have no unions, and an informal market
+          (jangmadang) feeds much of the population.
+        against:
+          - from: marxism.juche
+            text: >-
+              Land, factories and housing remain socially owned; there is no capitalist class. Calling it a monarchy is a Western
+              projection.
+          - from: marxism.trotskyism
+            text: >-
+              Hereditary rule is grotesque, but nationalized property is still the basis of the economy; the state should be defended
+              against imperialism while its bureaucracy is opposed.
+        sources:
+          - {author: B. R. Myers, title: "The Cleanest Race: How North Koreans See Themselves and Why It Matters", year: 2010}
+          - {author: Charles K. Armstrong, title: "The North Korean Revolution, 1945–1950", year: 2003}
+        traditions:
+          typical: [marxism.third-camp, anarchism.communist, marxism.left-communism, socdem.democratic-socialism]
+          contested: [marxism.trotskyism, marxism.hoxhaism]
+          rejects: [marxism.juche]
+        presupposes: [class.concept.command-and-control]
+        excludes: [hist.dprk.juche-socialism]
+        analysis:
+          gains: [core-workers]
+          pays: [professional-managerial]
+          mechanism: >-
+            Denying the DPRK any socialist content keeps the socialist name clear of hereditary rule, which helps left movements in the
+            South and the core, at the cost of refusing it solidarity against sanctions and threats.
+          drain: none
+          law_of_value: none
+      - id: hist.dprk.divided-nation
+        label: Half of a divided nation, whose division is the root problem
+        claim: >-
+          The two Korean states are products of a division imposed in 1945 by the US and the USSR. Militarization, dictatorship and
+          repression on both sides grew from that division, and the Korean question can only be settled by Koreans reconciling.
+        voiced: >-
+          "The division system feeds both states: each uses the other to justify its armies, its spies and its laws. Korea's problem is
+          not the North or the South but the line between them."
+        you: You see the DPRK mainly as one half of a divided Korea, and you think the division is the real problem.
+        because: >-
+          The 38th parallel was drawn by two US officers in August 1945. Both Korean states claimed the whole peninsula, and the war
+          killed millions of Koreans. South Korea's National Security Law, still in force, punishes praise of the North. Paik Nak-chung
+          argues that a single "division system" shaped both societies, and that the South's democratization and the 2000 and 2018
+          summits showed reconciliation from within Korea is possible.
+        against:
+          - from: liberalism.internationalist
+            text: >-
+              One half is a prosperous liberal democracy and the other a hereditary dictatorship. Treating them as two sides of one
+              system is false balance.
+          - from: marxism.juche
+            text: >-
+              Reunification requires the withdrawal of US troops, the root cause of division, not a symmetrical blame of both states.
+        sources:
+          - {author: Paik Nak-chung, title: "The Division System in Crisis: Essays on Contemporary Korea", year: 2011}
+          - {author: Bruce Cumings, title: "Korea's Place in the Sun: A Modern History", year: 1997}
+        traditions:
+          typical: [nationalism.decolonial, socdem.democratic-socialism, religious.liberation-theology]
+          contested: [marxism.juche, nationalism.civic]
+        presupposes: [nation.question.self-determination-leninist]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [industrial-capital]
+          mechanism: >-
+            Treating division as the root problem supports demilitarization and inter-Korean exchange, which would cut arms spending on
+            both sides and weaken the security laws used against labor movements in the South.
+          drain: reduces
+          law_of_value: none
+      - id: hist.dprk.planning-failed
+        label: Proof that planning fails, seen from space at night
+        claim: >-
+          North and South Korea started from the same people and the same ruin. One chose markets and trade and became one of the richest
+          countries in the world; the other chose a planned, closed economy and suffered famine. The comparison settles the argument.
+        voiced: >-
+          "Look at the satellite photo at night: the South blazing with light, the North dark except for Pyongyang. Same people, same
+          culture, different system."
+        you: You see the DPRK as proof that a closed planned economy impoverishes people.
+        because: >-
+          South Korea's income per head is many times the North's by any estimate. When Soviet subsidies ended after 1991 the North's
+          planned economy collapsed, and the public distribution system stopped feeding much of the population; Haggard and Noland show
+          that markets that grew up illegally from below kept people alive. Eberstadt traced the decline in the statistics.
+        against:
+          - from: marxism.dependency
+            text: >-
+              South Korea's rise came from a developmental state that planned through its banks and chaebol, from US aid and from
+              Vietnam War contracts, not from free markets. The North out-produced the South until the 1970s.
+          - from: marxism.third-worldism
+            text: >-
+              The North lost its trading partners overnight in 1991 and has been under sanctions ever since. No economy is tested fairly
+              under siege.
+        sources:
+          - {author: Stephan Haggard and Marcus Noland, title: "Famine in North Korea: Markets, Aid, and Reform", year: 2007}
+          - {author: Nicholas Eberstadt, title: "The End of North Korea", year: 1999}
+        traditions:
+          defining: [liberalism.chicago]
+          typical: [liberalism.classical, liberalism.austrian, libertarianism.minarchist, conservatism.neo]
+          rejects: [marxism.juche, marxism.dependency]
+        presupposes: [capitalism.nature.free-exchange]
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [peripheral-workers]
+          mechanism: >-
+            Using the two Koreas as a natural experiment for markets erases the South's state-directed industrialization and US aid,
+            which recommends opening and privatization to other peripheral states on a false precedent.
+          drain: sustains
+          law_of_value: extends
+  # ------------------------------------------------------------------
+  - id: hist.chile-1973
+    domain: history
+    layer: analysis
+    question: What happened in Chile from Allende's election in 1970 to the coup of 1973?
+    plain: >-
+      In 1970 Chileans elected Salvador Allende, a Marxist, as president. His Popular Unity government nationalized copper and pushed
+      land reform. The economy fell into crisis while the US government worked to bring him down, and on 11 September 1973 the armed
+      forces bombed the presidential palace. General Pinochet ruled until 1990. What was it?
+    short: Chile 1970–1973
+    importance: 2
+    region: history
+    positions:
+      - id: hist.chile-1973.peaceful-road-destroyed
+        label: A road to socialism by votes, destroyed by Chilean capital and Washington
+        claim: >-
+          Popular Unity showed socialism could be pursued through elections, a constitution and a free press. It was destroyed not by
+          its own failures but by a US campaign of economic strangulation and covert action, the Chilean right and the armed forces.
+        voiced: >-
+          "History is ours, and the people make it. I have faith in Chile and its destiny. Other men will overcome this dark and bitter
+          moment."
+        you: You think Allende's government was a legitimate road to socialism, and that it was overthrown by those it threatened.
+        because: >-
+          Allende won a plurality of 36.6 percent in 1970 and Congress confirmed him; in the March 1973 elections Popular Unity rose to
+          about 44 percent. The US Senate's Church Committee documented that Nixon ordered the CIA to prevent his taking office, that
+          Washington cut credit, and that it funded opposition media and parties. The US ambassador, the CIA and ITT discussed a coup
+          from 1970. The copper nationalization of 1971 passed Congress unanimously.
+        against:
+          - from: marxism.leninism
+            text: >-
+              Allende left the army, the courts and the state apparatus untouched and asked the workers to trust the constitution; the
+              generals he appointed shot them.
+          - from: conservatism.christian-democracy
+            text: >-
+              In August 1973 the Chamber of Deputies, by majority, declared the government in breach of the constitution. The economy,
+              with inflation in the hundreds of percent, was wrecked by its own policies, not only by Washington.
+        sources:
+          - {author: US Senate Select Committee on Intelligence Activities (Church Committee), title: "Covert Action in Chile, 1963–1973", year: 1975}
+          - {author: Peter Kornbluh, title: "The Pinochet File: A Declassified Dossier on Atrocity and Accountability", year: 2003}
+          - {author: Tanya Harmer, title: "Allende's Chile and the Inter-American Cold War", year: 2011}
+        traditions:
+          defining: [socdem.democratic-socialism]
+          typical: [marxism.eurocommunism, religious.liberation-theology, socdem.left-populism]
+          contested: [marxism.ml]
+          rejects: [liberalism.chicago, conservatism.fusionism]
+        presupposes: [elections.role.main-road]
+        tension: [hist.chile-1973.peaceful-road-a-trap]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [comprador-capital, finance-capital, landed-capital]
+          mechanism: >-
+            Holding Popular Unity up as a legitimate electoral road keeps nationalization and land reform within the constitution, which
+            wins broad support but leaves the army and courts, the institutions owners can fall back on, intact.
+          drain: reduces
+          law_of_value: suspends
+      - id: hist.chile-1973.peaceful-road-a-trap
+        label: Proof that the peaceful road is a trap when the old state is left intact
+        claim: >-
+          Chile showed that winning the government is not winning power. Popular Unity left the army, the police and the courts in the
+          hands of the old order and held back the workers who were organizing in the factories and the countryside. The coup was the
+          price.
+        voiced: >-
+          "The workers built the cordones industriales and asked for arms; the government asked them to return the factories. In
+          September the army they had been told to trust massacred them."
+        you: You think Chile proves socialism cannot be won by elections without breaking the old state's armed power.
+        because: >-
+          After the October 1972 bosses' strike, workers formed industrial belts (cordones) that ran factories and distribution, and
+          peasants occupied estates beyond the land reform law. The government returned many factories and in mid-1973 brought generals
+          into the cabinet. Miliband wrote in 1973 that the coup showed the state's coercive core will not stay neutral. Winn's study of
+          the Yarur mill shows the revolution from below outrunning the government.
+        against:
+          - from: socdem.democratic-socialism
+            text: >-
+              Arming the workers would have triggered the coup sooner and with more blood. Popular Unity needed allies in the middle
+              classes and Christian Democracy, not barricades.
+          - from: liberalism.classical
+            text: >-
+              The armed far left (the MIR) and illegal land seizures were exactly what drove the middle classes to back the coup.
+        sources:
+          - {author: Ralph Miliband, title: "The Coup in Chile", year: 1973, note: "Socialist Register"}
+          - {author: Peter Winn, title: "Weavers of Revolution: The Yarur Workers and Chile's Road to Socialism", year: 1986}
+          - {author: V. I. Lenin, title: "The State and Revolution", year: 1917}
+        traditions:
+          defining: [marxism.leninism, marxism.guevarism]
+          typical: [marxism.trotskyism, marxism.ml, marxism.maoism, marxism.mariategui]
+          rejects: [socdem.democratic-socialism, marxism.eurocommunism]
+        presupposes: [state.nature.class-instrument]
+        tension: [hist.chile-1973.peaceful-road-destroyed]
+        analysis:
+          gains: [core-workers, peasantry]
+          pays: [comprador-capital, landed-capital, finance-capital]
+          mechanism: >-
+            Drawing the lesson that the old state must be broken directs movements to build armed and organized power outside the
+            government, which raises the stakes for owners and also exposes movements to repression before they are ready.
+          drain: breaks
+          law_of_value: suspends
+          consciousness: hegemonic
+      - id: hist.chile-1973.saved-from-communism
+        label: The armed forces saved Chile from communism and civil war
+        claim: >-
+          By 1973 Allende's government was taking farms and factories outside the law, the economy was collapsing, and armed Marxist
+          groups were preparing for power. The armed forces stepped in to prevent a communist dictatorship and a civil war.
+        voiced: >-
+          "Chile was becoming another Cuba. The military did not want to act; the nation asked them to. They restored order and saved
+          the country from Marxism."
+        you: You think the 1973 coup was a hard but necessary act that saved Chile from communism.
+        because: >-
+          In 1973 inflation passed 500 percent, shops were empty, truck owners and professionals struck, and the Chamber of Deputies
+          declared in August that the government had broken the constitution. Armed groups on the left talked openly of a coming
+          confrontation. Moss argued that Allende was using legal loopholes to build a Marxist state that could not be voted out.
+        against:
+          - from: socdem.democratic-socialism
+            text: >-
+              Chile's official commissions found some 3,200 people killed or disappeared and around 38,000 imprisoned and tortured for
+              political reasons. No threat justifies the stadiums, the torture houses and the Caravan of Death.
+          - from: conservatism.christian-democracy
+            text: >-
+              Christian Democrats who welcomed a brief intervention found themselves exiled and murdered under a dictatorship that lasted
+              seventeen years.
+        sources:
+          - {author: Robert Moss, title: "Chile's Marxist Experiment", year: 1973}
+        traditions:
+          defining: [conservatism.reactionary]
+          typical: [conservatism.fusionism, conservatism.traditionalist, libertarianism.paleo]
+          rejects: [socdem.democratic-socialism, marxism.ml, liberalism.social, conservatism.christian-democracy]
+        presupposes: [emergency.powers.sovereign-exception]
+        excludes: [hist.chile-1973.peaceful-road-destroyed]
+        analysis:
+          gains: [landed-capital, comprador-capital, finance-capital]
+          pays: [core-workers, peasantry, peripheral-workers]
+          mechanism: >-
+            Justifying the coup as salvation licenses the armed forces to overturn any elected government that touches property, which
+            secured the return of land and firms to their owners and the crushing of the unions.
+          drain: sustains
+          law_of_value: extends
+          disputed: >-
+            The "Plan Z" of a left-wing self-coup, publicized by the junta's 1973 White Book, is regarded by most historians as invented
+            to justify the repression.
+      - id: hist.chile-1973.tragedy-of-polarization
+        label: A tragedy of polarization in which both sides broke the rules
+        claim: >-
+          Allende pushed a program most Chileans had not voted for and ignored the courts and Congress, while the right and Washington
+          plotted. The center collapsed, and the result was a dictatorship no one in the center wanted. Both sides share the blame.
+        voiced: >-
+          "Popular Unity governed for a third of the country against the rest; the right called on the barracks. Chile's democracy
+          died because no one would compromise."
+        you: You see the end of Allende's Chile as a tragedy in which both sides abandoned compromise.
+        because: >-
+          With little over a third of the vote in 1970, Popular Unity used old decree powers to take over firms, and its supporters
+          seized farms beyond the law; the Comptroller and courts repeatedly ruled against it. Talks between Allende and the Christian
+          Democrats failed in mid-1973. Sigmund traces how both sides came to see the other as an enemy.
+        against:
+          - from: socdem.democratic-socialism
+            text: >-
+              The "both sides" story treats a president who never closed a newspaper and the generals who bombed his palace as equal
+              offenders.
+          - from: conservatism.reactionary
+            text: >-
+              There was nothing to compromise with; a Marxist government means to abolish property, and halfway measures only delayed
+              the necessary.
+        sources:
+          - {author: Paul E. Sigmund, title: "The Overthrow of Allende and the Politics of Chile, 1964–1976", year: 1977}
+          - {author: Arturo Valenzuela, title: "The Breakdown of Democratic Regimes: Chile", year: 1978}
+        traditions:
+          defining: [conservatism.christian-democracy]
+          typical: [liberalism.social, liberalism.classical, socdem.third-way]
+          rejects: [marxism.leninism, conservatism.reactionary]
+        presupposes: [workplace.conflict.partners-with-a-misunderstanding]
+        analysis:
+          gains: [professional-managerial, petty-bourgeoisie]
+          pays: [core-workers, peasantry]
+          mechanism: >-
+            Spreading blame evenly makes compromise with owners the precondition of any reform, which gives them a veto over
+            nationalization and land reform and treats workers' organization as one cause of the catastrophe.
+          drain: softens
+          law_of_value: regulates
+      - id: hist.chile-1973.chicago-miracle
+        label: The coup made way for reforms that made Chile Latin America's success
+        claim: >-
+          Whatever one thinks of the dictatorship's methods, the free-market reforms designed by the "Chicago Boys" ended hyperinflation,
+          opened the economy, privatized pensions, and made Chile one of the richest and fastest-growing countries in Latin America.
+        voiced: >-
+          "Chile is an economic miracle. The economics was right; and in the end free markets brought free elections, as we always said
+          they would."
+        you: You think the market reforms after 1973 made Chile prosperous, whatever the repression that came with them.
+        because: >-
+          The program drafted before the coup (El Ladrillo) was implemented from 1975 under economists trained at the University of
+          Chicago. After the crisis of 1982–83, growth from the mid-1980s to the late 1990s was among the highest in the world, and
+          poverty fell steeply after the return to elected government in 1990. Friedman argued economic liberalization led to political
+          liberalization.
+        against:
+          - from: marxism.dependency
+            text: >-
+              In the 1982 crash unemployment reached around a quarter of the workforce and the state had to take over the banks. The
+              model rested on copper, which stayed nationalized in Codelco, and on smashed unions.
+          - from: socdem.democratic-socialism
+            text: >-
+              The 2019 uprising, which began over a metro fare, was against the inequality and private pensions this model left behind.
+        sources:
+          - {author: "Sergio de Castro et al.", title: "El Ladrillo: Bases de la política económica del gobierno militar chileno", year: 1992, note: "written 1973"}
+          - {author: Milton Friedman and Rose D. Friedman, title: "Two Lucky People: Memoirs", year: 1998}
+        traditions:
+          defining: [liberalism.chicago]
+          typical: [liberalism.austrian, conservatism.fusionism, libertarianism.minarchist]
+          rejects: [marxism.dependency, socdem.democratic-socialism]
+        presupposes: [development.path.integration]
+        excludes: [hist.chile-1973.first-neoliberal-laboratory]
+        analysis:
+          gains: [finance-capital, comprador-capital, professional-managerial]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >-
+            Crediting the coup with prosperity makes privatized pensions, open capital accounts and weak unions the model, which channels
+            workers' savings to private fund managers and holds down wages in export industries.
+          drain: sustains
+          law_of_value: extends
+      - id: hist.chile-1973.first-neoliberal-laboratory
+        label: An imperialist coup for copper that made Chile the first neoliberal laboratory
+        claim: >-
+          Allende nationalized the copper mines owned by US companies, and Washington answered with a blockade of credit and a coup.
+          The dictatorship then made Chile the testing ground for the program later imposed on the world: privatization, open markets,
+          broken unions.
+        voiced: >-
+          "Make the economy scream. That was the order, and the economists followed the soldiers. Chile was the first laboratory of the
+          shock doctrine."
+        you: You see the Chilean coup as an imperialist operation for copper that opened the neoliberal age.
+        because: >-
+          Kennecott and Anaconda's mines were nationalized in 1971 with deductions for "excess profits" that left them owed little
+          compensation. Helms's notes record Nixon's instruction in September 1970 to "make the economy scream". After the coup, the
+          Chicago-trained economists applied shock treatment in 1975; Frank wrote to Friedman and Harberger calling it economic
+          genocide. Harvey and Klein date the neoliberal turn from Santiago, years before Thatcher.
+        against:
+          - from: liberalism.chicago
+            text: >-
+              Codelco stayed in state hands under Pinochet; the coup was about Chilean politics, not US copper interests, and Chile's
+              later growth is the test.
+          - from: conservatism.christian-democracy
+            text: >-
+              The coup had broad support among Chilean professionals, truck owners and housewives; reducing it to Washington erases
+              Chilean agency.
+        sources:
+          - {author: Andre Gunder Frank, title: "Economic Genocide in Chile: Open Letter to Milton Friedman and Arnold Harberger", year: 1976}
+          - {author: Naomi Klein, title: "The Shock Doctrine: The Rise of Disaster Capitalism", year: 2007}
+          - {author: David Harvey, title: "A Brief History of Neoliberalism", year: 2005}
+          - {author: Theodore H. Moran, title: "Multinational Corporations and the Politics of Dependence: Copper in Chile", year: 1974}
+        traditions:
+          defining: [marxism.dependency]
+          typical: [marxism.third-worldism, nationalism.bolivarianism, marxism.mariategui, marxism.ml]
+          rejects: [liberalism.chicago]
+        presupposes: [imperialism.nature.monopoly-stage]
+        excludes: [hist.chile-1973.chicago-miracle]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >-
+            Reading the coup as imperialism for copper ties the defense of elected governments in the South to control of their
+            resources, which supports resource nationalism and treats foreign mining profits as a drain to be stopped.
+          drain: breaks
+          law_of_value: suspends

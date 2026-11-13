@@ -702,3 +702,695 @@ problematics:
             Ecomodernist socialists (Huber, Phillips) see public nuclear as a workers' program; ecosocialists
             in the Foster line and degrowth thinkers see centralized nuclear as a technology that concentrates
             control in states and capital.
+
+  # ------------------------------------------------------------------
+  - id: technology.nature
+    domain: ecology
+    layer: analysis
+    question: Is technology a neutral tool, capital's weapon, a liberation, or a threat?
+    plain: When a new machine or app arrives, is it just a tool, or does it come with someone's interests built in?
+    short: the nature of technology
+    importance: 2
+    region: technology
+    positions:
+      - id: technology.nature.neutral-tool
+        label: A neutral tool; it depends how you use it
+        claim: Technology is a tool like a hammer; it can build a house or break a skull, and the good or harm lies in how people choose to use it.
+        voiced: "A knife can cut bread or cut a throat. Blame the hand, not the blade."
+        you: You think technology is neutral and that what matters is how people choose to use it.
+        because: >
+          The same chemistry makes fertilizer and explosives; the same network carries hospital records and
+          scams. Machines have no aims of their own. Treating technology as good or evil in itself leads
+          either to blind enthusiasm or to blocking useful inventions out of fear. The sensible course is
+          to adopt what helps, and make laws against harmful uses, as societies have done with cars, drugs
+          and radio.
+        against:
+          - from: marxism.autonomism
+            text: >
+              Machines are designed by someone for something. The assembly line was built to take control of
+              the pace of work from the worker; it does that whoever "uses" it.
+          - from: anarchism.christian
+            text: >
+              A technology brings its own demands: the car brings motorways, sprawl and oil wars. You cannot
+              take the tool and refuse the world it builds.
+        sources:
+          - {author: Emmanuel G. Mesthene, title: "Technological Change: Its Impact on Man and Society", year: 1970}
+          - {author: Karl Popper, title: The Poverty of Historicism, year: 1957}
+        traditions:
+          defining: []
+          typical: [liberalism.classical, liberalism.progressive, liberalism.technocratic, liberalism.social, commonsense.live-and-let-live]
+          contested: [marxism.ml, technology.effective-altruism]
+          rejects: [marxism.autonomism, anarchism.christian, anarchism.primitivist, technology.r-acc]
+        presupposes: []
+        excludes: [technology.nature.capitals-weapon, technology.nature.autonomous-force]
+        tension: [technology.nature.built-in-politics]
+        tags: [common-sense, neutrality]
+        analysis:
+          gains: [industrial-capital, professional-managerial]
+          pays: []
+          mechanism: >
+            Treating technology as neutral leaves its design and introduction to the firms that pay for it,
+            and limits public response to after-the-fact rules on misuse, so owners decide what is built and
+            what it does to work.
+          drain: none
+          law_of_value: none
+          method: idealist
+
+      - id: technology.nature.capitals-weapon
+        label: Capital's weapon against labor
+        claim: Under capitalism, machines are designed and introduced to control workers, cut wages and take skill away from labor, so technology carries the interests of its owners.
+        voiced: "Machinery is the most powerful weapon for suppressing strikes. It is the capitalist use of machines, not machines as such, that we fight, and the two cannot be separated under capital."
+        you: You think technology under capitalism is built to control workers and cut labor costs, not just to make life better.
+        because: >
+          Marx showed that machinery was introduced in the factories to break the power of skilled workers
+          and lengthen the working day. Numerically controlled machine tools in the United States were chosen
+          over equally good alternatives because they moved knowledge from the shop floor to management.
+          British industry chose steam over water to put mills near cheap, docile labor. The warehouse
+          scanner and the delivery app continue the story. Technology bears the mark of the class that
+          commissions it.
+        against:
+          - from: technology.e-acc
+            text: >
+              Machines made textiles, food and light cheap for everyone, workers first. Every generation
+              predicted mass unemployment from new machines; instead real wages rose.
+          - from: marxism.ml
+            text: >
+              The productive forces are the base of socialism. Seeing machines as enemies confuses the
+              capitalist use of technology with technology itself and leads to Luddism.
+        sources:
+          - {author: Karl Marx, title: "Capital, Volume I", year: 1867, note: "chapter 15, Machinery and Modern Industry"}
+          - {author: Raniero Panzieri, title: "Sull'uso capitalistico delle macchine nel neocapitalismo", year: 1961, note: "Quaderni Rossi; English: The Capitalist Use of Machinery"}
+          - {author: Harry Braverman, title: "Labor and Monopoly Capital: The Degradation of Work in the Twentieth Century", year: 1974}
+          - {author: David F. Noble, title: "Forces of Production: A Social History of Industrial Automation", year: 1984}
+        traditions:
+          defining: [marxism.autonomism]
+          typical: [marxism.classical, marxism.western, marxism.ecosocialism, anarchism.syndicalist, marxism.council-communism]
+          contested: [marxism.ml, technology.l-acc]
+          rejects: [technology.e-acc, liberalism.chicago, liberalism.austrian, technology.cyberlibertarian]
+        presupposes: [workplace.conflict.structural-antagonism]
+        excludes: [technology.nature.neutral-tool]
+        tension: [technology.nature.liberation]
+        tags: [labor-process, automation]
+        analysis:
+          gains: [core-workers, peripheral-workers, reserve-army]
+          pays: [industrial-capital]
+          mechanism: >
+            Seeing technology as a weapon of control lets workers contest its design, pace and introduction
+            at the workplace, through bargaining or refusal, which cuts the cost savings owners expect from
+            new machines.
+          drain: none
+          law_of_value: regulates
+          consciousness: class-economic
+
+      - id: technology.nature.liberation
+        label: Technology is how humanity frees itself
+        claim: Technology is the main engine of human progress, freeing people from hunger, disease and toil, and more of it, faster, is the answer to most problems.
+        voiced: "Technology is the glory of human ambition and achievement. There is no material problem that cannot be solved with more technology."
+        you: You think technology is the main way humanity frees itself from poverty, disease and drudgery, and want more of it, faster.
+        because: >
+          Two centuries ago most people lived in extreme poverty and half of all children died young. What
+          changed was not morals or politics but steam, electricity, fertilizer, antibiotics, vaccines and
+          computers. Every problem now facing humanity, from climate to disease to scarcity, is a problem of
+          knowledge, and knowledge can grow without limit. Those who would slow innovation condemn the poor
+          to stay poor.
+        against:
+          - from: marxism.autonomism
+            text: >
+              The same two centuries brought the factory system, the machine gun and the gas chamber. Whether
+              technology frees or binds depends on who owns it.
+          - from: conservatism.traditionalist
+            text: >
+              The power to do more is not the wisdom to know what is worth doing. A society that worships
+              technology loses the things no machine can supply: meaning, community, faith.
+        sources:
+          - {author: David Deutsch, title: "The Beginning of Infinity: Explanations That Transform the World", year: 2011}
+          - {author: Marc Andreessen, title: The Techno-Optimist Manifesto, year: 2023}
+          - {author: Joel Mokyr, title: "The Lever of Riches: Technological Creativity and Economic Progress", year: 1990}
+        traditions:
+          defining: [technology.e-acc]
+          typical: [technology.transhumanism, ecology.ecomodernism, technology.cyberlibertarian, libertarianism.objectivist, technology.l-acc, marxism.scc]
+          contested: [technology.effective-altruism, marxism.ml]
+          rejects: [anarchism.primitivist, anarchism.christian, conservatism.traditionalist, ecology.degrowth, ecology.deep-ecology]
+        presupposes: [history.motor.ideas]
+        excludes: [technology.nature.autonomous-force]
+        tension: [technology.nature.capitals-weapon]
+        tags: [techno-optimism, progress]
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            Crediting progress to technology as such legitimates the owners of technology firms and venture
+            funds as its agents, and casts limits on their products, or demands by the workers displaced by
+            them, as obstacles to progress.
+          drain: sustains
+          law_of_value: extends
+          disputed: >
+            Marxists in the productivist line (and left accelerationists) share the view that technology frees
+            once owned in common; autonomists and ecosocialists reply that design embodies the relations it was built for.
+
+      - id: technology.nature.autonomous-force
+        label: Technique has its own logic and is swallowing human life
+        claim: Modern technology is not a set of tools but a system with its own logic of efficiency, which reshapes work, politics and thought to its needs, and human beings are losing control of it.
+        voiced: "Technique has become autonomous. It no longer serves man; man adapts himself to technique."
+        you: You think modern technology runs on its own logic and is reshaping human life in ways nobody chose.
+        because: >
+          Every efficient method, once found, must be adopted, because whoever refuses it loses to whoever
+          does. So technology spreads by its own momentum, demanding standardized workers, managed citizens
+          and endless growth, under capitalism and socialism alike. People do not choose the smartphone, the
+          motorway or the industrial farm; they are made to fit them. Freedom begins by refusing the
+          promise that the next device will fix what the last one broke.
+        against:
+          - from: marxism.classical
+            text: >
+              "Technique" does nothing by itself; capital competes, and that is why methods spread. Making
+              technology a demon hides the class that profits from it and makes change look hopeless.
+          - from: technology.e-acc
+            text: >
+              The people who lived without modern technology died young and hungry. Nostalgia for the
+              pre-industrial world is a luxury of those who never lived in it.
+        sources:
+          - {author: Jacques Ellul, title: "La Technique ou l'enjeu du siècle", year: 1954, note: "English: The Technological Society (1964)"}
+          - {author: Martin Heidegger, title: "The Question Concerning Technology", year: 1954}
+          - {author: Lewis Mumford, title: "The Myth of the Machine: Technics and Human Development", year: 1967}
+          - {author: Neil Postman, title: "Technopoly: The Surrender of Culture to Technology", year: 1992}
+        traditions:
+          defining: [anarchism.christian]
+          typical: [anarchism.primitivist, anarchism.green, conservatism.traditionalist, conservatism.postliberal, ecology.deep-ecology, nationalism.gandhian]
+          contested: [marxism.western, ecology.degrowth, technology.longtermism]
+          rejects: [technology.e-acc, technology.transhumanism, ecology.ecomodernism, marxism.ml, technology.cyberlibertarian]
+        presupposes: []
+        excludes: [technology.nature.neutral-tool, technology.nature.liberation]
+        tension: [technology.nature.capitals-weapon]
+        tags: [luddite, ellul, critique-of-technology]
+        analysis:
+          gains: [petty-bourgeoisie, peasantry]
+          pays: []
+          mechanism: >
+            By locating the danger in technique rather than in ownership it backs refusal and small-scale
+            alternatives, which shelter some small producers and communities from industrial competition, but
+            it gives no one a lever over the firms that decide what technology is built.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Some Marxists (Feenberg, Marcuse) take Ellul's and Heidegger's diagnosis seriously but answer that
+            technology's logic is capital's logic and can be redesigned.
+          method: idealist
+
+      - id: technology.nature.core-monopoly
+        label: Technology monopoly is how rich countries keep the rest dependent
+        claim: Control of technology, through patents, research budgets and export controls, is one of the main ways rich countries keep poorer ones as suppliers of cheap labor and raw materials.
+        voiced: "The monopoly of technology is the first of the five monopolies by which the center rules the periphery. You may build the factory; you will pay rent on every machine in it."
+        you: You think rich countries use their control of technology to keep poorer countries dependent and paying.
+        because: >
+          The United States, Europe and Japan hold most of the world's patents and charge royalties on them;
+          the WTO's TRIPS agreement of 1994 made those rules global. A factory in Bangladesh or Mexico can
+          assemble phones or garments but the profit goes to whoever owns the design and the brand. When a
+          Southern country closes the gap, as Korea did and China is doing, it is met with tariffs, sanctions
+          and bans on chips. Technology is not a neutral gift but a rent collected on the South.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Patents reward invention, and technology has spread faster to poor countries in the last forty
+              years than ever before. Korea, Taiwan and China caught up by joining world markets, not leaving them.
+          - from: marxism.autonomism
+            text: >
+              Owning the technology nationally changes who collects the rent, not what the machines do to the
+              workers who run them. The Chinese factory disciplines labor like the American one.
+        sources:
+          - {author: Samir Amin, title: Capitalism in the Age of Globalization, year: 1997}
+          - {author: Ha-Joon Chang, title: "Kicking Away the Ladder: Development Strategy in Historical Perspective", year: 2002}
+          - {author: Cecilia Rikap, title: "Capitalism, Power and Innovation: Intellectual Monopoly Capitalism Uncovered", year: 2021}
+        traditions:
+          defining: [marxism.third-worldism]
+          typical: [marxism.dependency, nationalism.developmental-state, marxism.scc, marxism.world-systems, nationalism.decolonial, marxism.african-socialism]
+          contested: [technology.l-acc, marxism.autonomism]
+          rejects: [liberalism.chicago, liberalism.internationalist, technology.cyberlibertarian]
+        presupposes: [imperialism.nature.unequal-exchange-drain]
+        excludes: [technology.nature.neutral-tool]
+        tension: []
+        tags: [periphery, intellectual-property, monopoly]
+        analysis:
+          gains: [peripheral-workers, industrial-capital]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Breaking technology monopolies, by compulsory licensing, reverse engineering and state research,
+            cuts the royalties and brand rents that core firms collect on goods made in the South and lets
+            Southern producers keep more of the value they create.
+          drain: breaks
+          law_of_value: regulates
+          disputed: >
+            Marxists dispute whether China's rise in technology breaks the core monopoly (Amin's late view,
+            Arrighi) or creates a new core (Ho-fung Hung and others).
+          consciousness: hegemonic
+
+      - id: technology.nature.code-escapes-control
+        label: Technology lets individuals escape the state's control
+        claim: Networks, encryption and digital money let individuals communicate, trade and organize beyond the reach of governments, and that is their great virtue.
+        voiced: "Governments of the Industrial World, you weary giants of flesh and steel, I come from Cyberspace, the new home of Mind. You have no sovereignty where we gather."
+        you: You think technologies like encryption and digital money let people escape government control, and that this is good.
+        because: >
+          Every earlier communications technology, from the press to broadcasting, ended up licensed and
+          watched by states. The internet and strong encryption break that pattern: code is borderless, and
+          mathematics cannot be censored. Bitcoin lets people hold money no central bank can debase and no
+          government can freeze, which matters most to people under inflation and capital controls in
+          Argentina, Nigeria or Lebanon. Build the tools and the state's monopolies erode by themselves.
+        against:
+          - from: marxism.western
+            text: >
+              The "free" internet became five companies harvesting attention and data, and states learned to
+              surveil through them. Escaping the state delivered people to the platform owners.
+          - from: liberalism.progressive
+            text: >
+              Untraceable money and unmoderated networks serve ransomware gangs, fraudsters and harassers
+              first. The rule of law has to reach online.
+        sources:
+          - {author: Timothy C. May, title: The Crypto Anarchist Manifesto, year: 1988}
+          - {author: John Perry Barlow, title: A Declaration of the Independence of Cyberspace, year: 1996}
+          - {author: Satoshi Nakamoto, title: "Bitcoin: A Peer-to-Peer Electronic Cash System", year: 2008}
+        traditions:
+          defining: [technology.cyberlibertarian]
+          typical: [libertarianism.ancap, libertarianism.minarchist, anarchism.individualist, libertarianism.paleo, technology.e-acc]
+          contested: [anarchism.insurrectionary, technology.transhumanism]
+          rejects: [marxism.western, liberalism.progressive, technology.technocracy, conservatism.national]
+        presupposes: [state.nature.necessary-evil]
+        excludes: []
+        tension: [technology.nature.capitals-weapon]
+        tags: [crypto, internet]
+        analysis:
+          gains: [finance-capital, professional-managerial, petty-bourgeoisie]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Escaping public regulation and taxation benefits those who own the networks, the coins and the
+            skills to use them; early holders and platform owners gain, while losses from fraud and volatility
+            fall on late small buyers.
+          drain: none
+          law_of_value: extends
+          disputed: >
+            Some anarchists see encryption as a real tool of resistance for dissidents; Marxist critics (Golumbia)
+            see cyberlibertarianism as the ideology of the technology industry.
+
+      - id: technology.nature.built-in-politics
+        label: Technology has politics built in, and can be redesigned
+        claim: Every technology carries the choices and interests of those who designed it, so the task is not to accept or reject technology but to change who designs it and for what.
+        voiced: "Artifacts have politics. The question is never 'technology, yes or no' but 'whose technology, built for whom?'"
+        you: You think technologies carry their makers' interests, and that people should have a say in how they are designed.
+        because: >
+          The low bridges on New York parkways kept buses, and so the poor, away from the beaches; a factory
+          can be laid out for surveillance or for teamwork. Design is a series of social choices, which means
+          it can be made differently. Workers, users and communities can and should shape technology: through
+          unions, public research, open standards, participatory design and public ownership of platforms.
+          Neither worship nor refusal; democratic control of design.
+        against:
+          - from: anarchism.christian
+            text: >
+              Participation in design is a comforting idea, but the system's need for efficiency always wins.
+              You will be invited to choose the color of the cage.
+          - from: liberalism.austrian
+            text: >
+              Design by committee kills invention. The best technologies came from individuals testing ideas in
+              markets, not from democratic deliberation.
+        sources:
+          - {author: Langdon Winner, title: "Do Artifacts Have Politics?", year: 1980}
+          - {author: Andrew Feenberg, title: Critical Theory of Technology, year: 1991}
+          - {author: Donna Haraway, title: "A Cyborg Manifesto", year: 1985}
+        traditions:
+          defining: []
+          typical: [marxism.western, socdem.democratic-socialism, feminism.materialist, liberalism.progressive, marxism.autonomism, technology.l-acc]
+          contested: [marxism.ml, anarchism.communalism]
+          rejects: [technology.e-acc, anarchism.primitivist]
+        presupposes: []
+        excludes: []
+        tension: [technology.nature.neutral-tool, technology.nature.autonomous-force]
+        tags: [design, sts]
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [industrial-capital]
+          mechanism: >
+            Opening design to workers and users moves decisions about pace, surveillance and deskilling out of
+            management alone, which limits the control and savings owners expect from technology; engineers and
+            professionals gain a mediating role.
+          drain: none
+          law_of_value: regulates
+
+  # ------------------------------------------------------------------
+  - id: automation.ownership
+    domain: ecology
+    layer: horizon
+    question: Who should own automation and AI, and who gets the gains?
+    plain: If robots and software can do much of the work, who should own them, and what happens to the people whose jobs they take?
+    short: the ownership of automation
+    importance: 3
+    region: technology
+    positions:
+      - id: automation.ownership.investors-and-markets
+        label: Whoever invests owns it; markets spread the gains
+        claim: Those who invest in machines and software should own them; the gains reach everyone through cheaper goods, new industries and new jobs.
+        voiced: "Machines have been 'taking jobs' for two hundred years, and there are more jobs than ever. What the machine saves, the consumer spends elsewhere."
+        you: You think automation should belong to those who invest in it, and that cheaper goods and new jobs will spread the gains.
+        because: >
+          When looms, tractors and computers arrived, the workers they replaced were absorbed into new work,
+          and real incomes rose. Lower costs mean lower prices, which leave buyers more to spend on other
+          things, which creates new jobs. Investors take the risk of building new machines; if they could
+          not keep the returns they would not build them. Help people retrain, but do not punish the
+          investment that makes everyone richer.
+        against:
+          - from: technology.l-acc
+            text: >
+              Productivity has grown far faster than wages since the 1970s. The gains of automation have gone
+              to owners, and the new jobs are delivery, care and warehouse work at the minimum wage.
+          - from: socdem.nordic
+            text: >
+              Adjustment does not happen by itself; it happens when unions and the state make it happen. Leave
+              it to the market and whole towns rot for a generation.
+        sources:
+          - {author: Frédéric Bastiat, title: "Ce qu'on voit et ce qu'on ne voit pas", year: 1850, note: "English: That Which Is Seen and That Which Is Not Seen"}
+          - {author: Henry Hazlitt, title: Economics in One Lesson, year: 1946}
+        traditions:
+          defining: []
+          typical: [liberalism.chicago, liberalism.austrian, libertarianism.minarchist, libertarianism.objectivist, technology.e-acc, liberalism.classical, commonsense.self-reliance]
+          contested: [liberalism.technocratic, technology.cyberlibertarian]
+          rejects: [technology.l-acc, marxism.autonomism, socdem.democratic-socialism, anarchism.syndicalist]
+        presupposes: [property.private.natural-right, firm.ownership.private-investors]
+        excludes: [automation.ownership.common-ownership]
+        tension: [automation.ownership.bargain-and-share]
+        tags: [market, automation]
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [core-workers, reserve-army, peripheral-workers]
+          mechanism: >
+            Private ownership of automated capital gives its owners the productivity gain as profit, while
+            displaced workers enlarge the labor supply and press wages down; low-wage assembly in the
+            periphery loses its edge once machines are cheaper than workers there.
+          drain: sustains
+          law_of_value: extends
+
+      - id: automation.ownership.dividend
+        label: Share the gains through a basic income or a public dividend
+        claim: Automation can stay mostly in private hands, but a share of its gains should be paid to everyone as a basic income or a dividend from a public fund.
+        voiced: "If the robots do the work, everyone gets a cut. A universal basic income is the dividend of a society that has become productive enough to afford freedom."
+        you: You think the gains of automation should be shared with everyone through a basic income or public dividend.
+        because: >
+          If machines can produce most goods with less labor, tying income to jobs will leave millions
+          without either. An unconditional income paid to every citizen, funded by taxes on capital, land,
+          data or carbon, or by a public fund that owns shares in automated industry, as Alaska's oil fund
+          pays residents, lets people refuse bad jobs, care for others and start projects. It is simple,
+          does not stigmatize, and does not require planning the economy.
+        against:
+          - from: socdem.democratic-socialism
+            text: >
+              A basic income left on top of private ownership is a subsidy to employers and landlords, who will
+              capture it in rents and lower wages. Own the machines, don't beg for a dividend.
+          - from: conservatism.cst
+            text: >
+              Work is not only income but a vocation and a share in creation. Paying people to be idle wounds
+              their dignity.
+        sources:
+          - {author: Philippe Van Parijs and Yannick Vanderborght, title: "Basic Income: A Radical Proposal for a Free Society and a Sane Economy", year: 2017}
+          - {author: Martin Ford, title: "Rise of the Robots: Technology and the Threat of a Jobless Future", year: 2015}
+          - {author: Thomas Paine, title: Agrarian Justice, year: 1797}
+        traditions:
+          defining: [libertarianism.left]
+          typical: [liberalism.progressive, technology.effective-altruism, technology.transhumanism, libertarianism.georgist, socdem.left-populism]
+          contested: [technology.l-acc, socdem.democratic-socialism, technology.cyberlibertarian, socdem.nordic]
+          rejects: [conservatism.cst, liberalism.austrian, marxism.ml]
+        presupposes: []
+        excludes: []
+        tension: [automation.ownership.common-ownership, automation.ownership.bargain-and-share]
+        tags: [basic-income, dividend]
+        analysis:
+          gains: [core-workers, reserve-army, petty-bourgeoisie]
+          pays: [finance-capital, landed-capital]
+          mechanism: >
+            An income floor funded by taxes on capital and rent transfers part of the automation surplus to
+            citizens and raises workers' bargaining power, but leaves ownership and investment decisions with
+            capital, and stops at the national border.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            Some Marxists (Srnicek, Williams) see basic income as a lever toward post-work society; others
+            (Gourevitch, Huber) see it as compatible with deepening private ownership.
+
+      - id: automation.ownership.common-ownership
+        label: Own the machines in common and cut the working week
+        claim: Automated production should be owned in common and used to cut working hours and provide abundance for all, instead of profit for a few.
+        voiced: "Demand full automation. Demand the reduction of the working week. Demand a universal basic income. Demand the end of the work ethic."
+        you: You think automated production should be owned in common and used to give everyone more free time and plenty.
+        because: >
+          Machines could already free most people from much of their work, but under private ownership a
+          productivity gain becomes either profit or unemployment, never free time. Marx foresaw that once
+          production rests on science and machinery, measuring wealth by labor time becomes absurd. Socialize
+          the platforms and the automated industries, share the remaining work out among everyone, and the
+          gain becomes a shorter week, free services and abundance. Technology is the precondition of a
+          post-work society, not its enemy.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Socialized platforms would have no prices, no competition and no reason to innovate. Abundance
+              comes from the system you propose to abolish.
+          - from: ecology.degrowth
+            text: >
+              "Fully automated luxury" for eight billion people means mines, data centers and power stations
+              without end. Abundance has a material footprint.
+        sources:
+          - {author: Karl Marx, title: Grundrisse, year: 1939, note: "written 1857–58; contains the Fragment on Machines"}
+          - {author: Nick Srnicek and Alex Williams, title: "Inventing the Future: Postcapitalism and a World Without Work", year: 2015}
+          - {author: Aaron Bastani, title: "Fully Automated Luxury Communism: A Manifesto", year: 2019}
+        traditions:
+          defining: [technology.l-acc]
+          typical: [marxism.autonomism, socdem.democratic-socialism, marxism.classical, anarchism.communist]
+          contested: [ecology.degrowth, marxism.ecosocialism, marxism.ml]
+          rejects: [liberalism.austrian, liberalism.chicago, technology.e-acc, technology.r-acc]
+        presupposes: [property.private.personal-vs-productive]
+        excludes: [automation.ownership.investors-and-markets]
+        tension: [automation.ownership.dividend]
+        tags: [post-work, socialism]
+        analysis:
+          gains: [core-workers, reserve-army, peripheral-workers]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Common ownership of automated capital turns productivity gains into shorter hours and free goods
+            rather than profit, removing returns on platforms and machines from their present owners.
+          drain: reduces
+          law_of_value: abolishes
+          disputed: >
+            Third Worldists note that the hardware of automation depends on mining and assembly in the
+            periphery; a post-work core that leaves those relations intact would still rest on the drain.
+          consciousness: hegemonic
+
+      - id: automation.ownership.bargain-and-share
+        label: Workers bargain over new machines and share the gains
+        claim: Unions and the state should negotiate how automation is introduced, so that productivity gains are shared through higher wages, shorter hours, retraining and job security.
+        voiced: "We are not against new machines. We are against new machines that only make the owner richer. Bargain over them, and share what they make."
+        you: You think unions and government should bargain over how automation comes in, so workers share in what it produces.
+        because: >
+          Swedish unions in the 1950s accepted new technology and the closure of unprofitable plants, and in
+          return won solidaristic wages, retraining and active labor market policy, which kept unemployment
+          low through rapid change. German works councils have a say in new technology at work. History shows
+          the direction of technology is a choice: when workers have power, automation raises wages; when
+          they do not, it replaces them. Give labor a seat at the table and the gains are shared.
+        against:
+          - from: marxism.autonomism
+            text: >
+              Bargaining over the pace of your own replacement still accepts the owner's right to replace you.
+              Each deal buys a few years of calm for a shrinking core of members.
+          - from: liberalism.chicago
+            text: >
+              Union vetoes slow productivity growth and drive investment abroad, which costs more jobs than it saves.
+        sources:
+          - {author: Gösta Rehn and Rudolf Meidner, title: Fackföreningsrörelsen och den fulla sysselsättningen, year: 1951, note: "LO report; English: Trade Unions and Full Employment"}
+          - {author: Daron Acemoglu and Simon Johnson, title: "Power and Progress: Our Thousand-Year Struggle Over Technology and Prosperity", year: 2023}
+        traditions:
+          defining: [socdem.nordic]
+          typical: [socdem.labourism, socdem.keynesian, conservatism.christian-democracy, liberalism.social, conservatism.cst]
+          contested: [anarchism.syndicalist, socdem.democratic-socialism]
+          rejects: [liberalism.chicago, libertarianism.minarchist, technology.e-acc]
+        presupposes: [unions.role.bargaining-agent]
+        excludes: []
+        tension: [automation.ownership.investors-and-markets, automation.ownership.refuse-it]
+        tags: [unions, codetermination]
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [industrial-capital]
+          mechanism: >
+            Collective bargaining over technology lets organized workers claim part of the productivity gain
+            as wages and hours, at the cost of owners' margins; workers without unions, and peripheral workers
+            in the supply chain, are outside the bargain.
+          drain: none
+          law_of_value: regulates
+          consciousness: economic-corporate
+
+      - id: automation.ownership.refuse-it
+        label: Refuse machines that degrade work and community
+        claim: Workers and communities should have the right to refuse, slow down or break technologies that destroy their livelihoods, skills and ways of life.
+        voiced: "The Luddites were right. They did not hate machines; they hated machines used against them, and so do we."
+        you: You think workers and communities should be able to refuse or stop technologies that wreck their jobs and lives.
+        because: >
+          The original Luddites of 1811 were skilled weavers who broke machines used to undercut wages and
+          make shoddy cloth, and they had wide popular support. They lost, and a generation of misery
+          followed. Today ride-hail apps, warehouse algorithms and generative AI are introduced with the same
+          aim: cheaper, more controllable labor. There is no law of history that says every invention must be
+          accepted. Strikes, boycotts, bans and moratoria can stop technologies that serve the few, as
+          Hollywood writers limited AI in their 2023 contract.
+        against:
+          - from: technology.l-acc
+            text: >
+              Breaking machines defends a shrinking number of jobs and leaves capital in control of the future.
+              The goal is to seize the machines, not smash them.
+          - from: liberalism.chicago
+            text: >
+              Had the Luddites won, we would all still weave by hand and live in poverty. Protecting today's
+              jobs by blocking tomorrow's is a tax on the young and the poor.
+        sources:
+          - {author: E. P. Thompson, title: The Making of the English Working Class, year: 1963}
+          - {author: Kirkpatrick Sale, title: "Rebels Against the Future: The Luddites and Their War on the Industrial Revolution", year: 1995}
+          - {author: Gavin Mueller, title: "Breaking Things at Work: The Luddites Are Right About Why You Hate Your Job", year: 2021}
+          - {author: Brian Merchant, title: "Blood in the Machine: The Origins of the Rebellion Against Big Tech", year: 2023}
+        traditions:
+          defining: []
+          typical: [anarchism.green, anarchism.primitivist, anarchism.christian, marxism.autonomism, anarchism.insurrectionary, nationalism.gandhian]
+          contested: [anarchism.syndicalist, conservatism.traditionalist]
+          rejects: [technology.e-acc, technology.l-acc, liberalism.chicago, technology.transhumanism]
+        presupposes: [technology.nature.capitals-weapon]
+        excludes: [automation.ownership.investors-and-markets]
+        tension: [automation.ownership.common-ownership]
+        tags: [luddite, refusal]
+        analysis:
+          gains: [core-workers, petty-bourgeoisie]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Refusal through strikes, contract terms and bans blocks the cost savings owners expect from new
+            technology, protecting existing wages and skills; groups with leverage, such as unionized writers,
+            gain most.
+          drain: none
+          law_of_value: regulates
+          consciousness: economic-corporate
+
+      - id: automation.ownership.engineers-plan
+        label: Let engineers and experts run automated production for abundance
+        claim: Automated production should be run by engineers and scientists according to physical measures of need and capacity, not by owners chasing profit or by politicians.
+        voiced: "Replace the price system with a system of energy accounting. Production is an engineering problem; let the engineers run it."
+        you: You think automated production should be run by engineers and experts on technical grounds, not by investors or politicians.
+        because: >
+          Modern industry could already produce plenty for all, but businessmen restrict output to keep prices
+          up, and politicians understand nothing of the machines. Measure production and consumption in
+          physical units, energy above all, and let those who understand the system run it for maximum
+          output at minimum waste. Data and computing now make what the engineers of the 1930s imagined
+          possible: an economy steered by measurement rather than by money or votes.
+        against:
+          - from: liberalism.austrian
+            text: >
+              No engineer knows what people want or how much of one thing to give up for another; only prices
+              tell you. Rule by experts is central planning with a slide rule.
+          - from: anarchism.communist
+            text: >
+              A class of technicians who run production without answering to the producers is a new ruling
+              class, whatever it calls itself.
+        sources:
+          - {author: Thorstein Veblen, title: The Engineers and the Price System, year: 1921}
+          - {author: "Technocracy, Inc.", title: Technocracy Study Course, year: 1934}
+          - {author: Eden Medina, title: "Cybernetic Revolutionaries: Technology and Politics in Allende's Chile", year: 2011}
+        traditions:
+          defining: [technology.technocracy]
+          typical: [liberalism.technocratic, religious.political-meritocracy]
+          contested: [marxism.ml, marxism.scc, socdem.fabian]
+          rejects: [liberalism.austrian, anarchism.communist, conservatism.right-populism, libertarianism.minarchist]
+        presupposes: []
+        excludes: [automation.ownership.investors-and-markets]
+        tension: [automation.ownership.common-ownership]
+        tags: [technocracy, planning]
+        analysis:
+          gains: [professional-managerial]
+          pays: [finance-capital, core-workers]
+          mechanism: >
+            Handing production to technical experts displaces owners' control over output and prices, but also
+            excludes workers from decisions, concentrating authority in a stratum of engineers and managers.
+          drain: none
+          law_of_value: suspends
+
+      - id: automation.ownership.national-sovereign-ai
+        label: The nation must own its own AI and computing power
+        claim: AI, data and computing power are strategic national assets, and each country, above all in the South, must build and own its own instead of depending on a few American or Chinese firms.
+        voiced: "Whoever owns the data centers and the models will own the economy. We will not be a digital colony renting intelligence from Silicon Valley."
+        you: You think each country should build and own its own AI and computing, instead of depending on a few foreign companies.
+        because: >
+          A handful of firms in the United States and China own the chips, the cloud, the models and the data.
+          Countries that rely on them pay rent on every transaction, ship their citizens' data abroad, and can be
+          cut off by sanctions or export controls overnight. African and Latin American data, labor and
+          minerals feed AI built elsewhere. Public computing, national data rules, local-language models and
+          state investment are the condition of economic sovereignty in this century.
+        against:
+          - from: liberalism.internationalist
+            text: >
+              No country of ten million can match the scale of the frontier labs. Autarky in AI means
+              second-rate tools at high cost; open markets and shared standards serve small countries better.
+          - from: technology.cyberlibertarian
+            text: >
+              "Sovereign AI" means the state controls what citizens can compute and say. Open models and open
+              networks protect people better than national champions.
+        sources:
+          - {author: Michael Kwet, title: "Digital colonialism: US empire and the new imperialism in the Global South", year: 2019, note: Race & Class}
+          - {author: Cecilia Rikap, title: "Capitalism, Power and Innovation: Intellectual Monopoly Capitalism Uncovered", year: 2021}
+          - {author: Chris Miller, title: "Chip War: The Fight for the World's Most Critical Technology", year: 2022}
+        traditions:
+          defining: []
+          typical: [nationalism.developmental-state, marxism.scc, conservatism.national, nationalism.decolonial, conservatism.gaullism, marxism.third-worldism, nationalism.pan-africanism]
+          contested: [technology.technocracy, socdem.democratic-socialism]
+          rejects: [liberalism.internationalist, technology.cyberlibertarian, liberalism.chicago]
+        presupposes: [intl.sovereignty.nations-set-own-course]
+        excludes: []
+        tension: [automation.ownership.investors-and-markets]
+        tags: [sovereignty, digital-colonialism, ai]
+        analysis:
+          gains: [industrial-capital, professional-managerial, peripheral-workers]
+          pays: [finance-capital]
+          mechanism: >
+            National ownership of computing and data rules cuts the rents and data flows captured by a few
+            core platforms, keeping value and skilled jobs at home; who in the nation benefits depends on
+            whether the state or national firms own the result.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            Whether sovereign AI in large states such as China and India reduces the drain or builds new
+            centers of rent over smaller countries is disputed.
+          consciousness: hegemonic
+
+      - id: automation.ownership.adapt-or-lose
+        label: Nobody controls it; learn new skills and look out for yourself
+        claim: Automation is coming whatever anyone decides, so the sensible thing is to keep learning, stay flexible and make sure you are one of the people the machines need.
+        voiced: "You can't stop progress. The robots are coming for somebody's job; make sure it's not yours."
+        you: You think automation can't be stopped, and the best you can do is keep your skills up and look out for yourself.
+        because: >
+          Studies suggest that a large share of jobs could be automated within a couple of decades, and no
+          government has stopped a technology that makes money. Politicians promise to protect jobs and then
+          the plant closes anyway. What a person can control is their own skills, savings and willingness to
+          move. The people who adapted to computers did well; the ones who waited for help did not.
+        against:
+          - from: socdem.nordic
+            text: >
+              Telling each worker to fend for themselves guarantees that the gains go to owners. Collective
+              bargaining and public retraining have managed technological change before.
+          - from: marxism.autonomism
+            text: >
+              "Adapt" means competing with your neighbors for fewer jobs at lower pay. The individual answer
+              is exactly what lets the owners set the terms.
+        sources:
+          - {author: Carl Benedikt Frey and Michael A. Osborne, title: "The Future of Employment: How Susceptible Are Jobs to Computerisation?", year: 2013}
+        traditions:
+          defining: []
+          typical: [commonsense.self-reliance, commonsense.anti-politics, commonsense.look-after-your-own, liberalism.chicago]
+          contested: [liberalism.technocratic, commonsense.rigged]
+          rejects: [socdem.nordic, marxism.autonomism, technology.l-acc, anarchism.syndicalist]
+        presupposes: [change.possibility.power-always-wins, change.means.individual-exit]
+        excludes: [automation.ownership.common-ownership]
+        tension: [automation.ownership.bargain-and-share]
+        tags: [common-sense, individual]
+        analysis:
+          gains: [industrial-capital, finance-capital]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Individual adaptation means workers compete with each other for retraining and the remaining jobs,
+            which leaves owners to set the terms of automation and keep its gains while workers bear the cost
+            of retraining and relocation.
+          drain: none
+          law_of_value: extends
+          consciousness: economic-corporate

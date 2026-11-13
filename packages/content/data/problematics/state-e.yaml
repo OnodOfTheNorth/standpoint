@@ -1,0 +1,1244 @@
+problematics:
+  - id: federalism.scale
+    domain: state
+    layer: horizon
+    question: Should power sit locally or centrally?
+    plain: Should the big decisions be made in the village, the province, the capital, or above the nation?
+    short: the scale of power
+    importance: 2
+    region: state
+    positions:
+      - id: federalism.scale.subsidiarity
+        label: Decide at the lowest level able to do the job; higher levels assist
+        claim: >
+          Decisions should be made by the smallest and nearest body able to make them well: family,
+          parish, town, province, then the nation. Higher authorities should help lower ones, not
+          take over their work.
+        voiced: >
+          It is an injustice and a grave evil to transfer to the larger and higher collectivity
+          functions which can be performed by lesser and subordinate bodies. Every social activity
+          ought of its very nature to furnish help to the members of the body social, never destroy
+          or absorb them.
+        you: >
+          You think decisions should be made as close to people as possible, with higher levels of
+          government helping rather than taking over.
+        because: >
+          Pius XI formulated subsidiarity in 1931 against both the totalizing state and the
+          atomized market: real communities know their own needs and grow responsible by meeting
+          them. The European Union wrote the principle into its treaties. Local bodies that hold real
+          power keep government visible and accountable, and protect intermediate institutions
+          like churches, guilds and unions.
+        against:
+          - from: liberalism.republican
+            text: >
+              "Lowest competent level" is decided by whoever holds the higher level. In practice the
+              principle shields local notables and the church from national law on schools, divorce
+              and labor.
+          - from: marxism.ml
+            text: >
+              Capital is organized nationally and globally; a world of competent parishes faces it
+              alone. Subsidiarity leaves the commanding heights to whoever already holds them.
+        sources:
+          - {author: Pius XI, title: "Quadragesimo Anno", year: 1931}
+          - {author: European Union, title: "Treaty on European Union (Maastricht)", year: 1992, note: "Article 3b establishes subsidiarity"}
+        traditions:
+          defining: [conservatism.cst, conservatism.christian-democracy]
+          typical: [conservatism.distributism, conservatism.burkean, communitarianism, conservatism.postliberal, conservatism.one-nation]
+          contested: [liberalism.ordoliberal, conservatism.integralism]
+          rejects: [liberalism.republican, marxism.ml, nationalism.kemalism]
+        presupposes: []
+        excludes: [federalism.scale.strong-center]
+        tension: [federalism.scale.global-governance]
+        tags: []
+        analysis:
+          gains: [petty-bourgeoisie, landed-capital]
+          pays: [reserve-army]
+          mechanism: >
+            Passing functions down to families, parishes and towns strengthens the local property
+            owners, clergy and employers who run those bodies, and leaves poorer localities to fund
+            services from a smaller tax base.
+          drain: none
+          law_of_value: none
+
+      - id: federalism.scale.states-and-exit
+        label: Keep power local and competing so people can vote with their feet
+        claim: >
+          Power should be split among many small units that compete for residents and capital.
+          People and firms who dislike one jurisdiction's rules can move to another, which keeps
+          governments limited and lets each try its own policies.
+        voiced: >
+          Fifty laboratories are better than one. Concentrated power is the enemy of liberty;
+          scatter it. If your state taxes too much, you can leave, and the fear of losing you keeps
+          it honest.
+        you: >
+          You think power should be split among many local governments that compete, so people can
+          move if they dislike the rules.
+        because: >
+          The Anti-Federalists warned that a distant central government would swallow the states and
+          the liberties they protect. Tiebout showed that when people can choose among
+          jurisdictions, local governments must offer good services at low cost, as firms do in a
+          market. Federal competition limits what any government can take, and failed policies stay
+          local.
+        against:
+          - from: liberalism.social
+            text: >
+              "States' rights" was the banner of slavery and Jim Crow. Local majorities oppress local
+              minorities, and only a central guarantee of rights stops them.
+          - from: socdem.nordic
+            text: >
+              Competition for capital between jurisdictions is a race to the bottom on taxes and
+              labor law. Capital moves easily; workers and their families do not.
+        sources:
+          - {author: "Brutus (probably Robert Yates)", title: "Anti-Federalist Papers: Brutus I–XVI", year: 1787}
+          - {author: Charles M. Tiebout, title: "A Pure Theory of Local Expenditures", year: 1956}
+          - {author: Friedrich A. Hayek, title: "The Economic Conditions of Interstate Federalism", year: 1939}
+        traditions:
+          defining: [libertarianism.minarchist, libertarianism.paleo]
+          typical: [conservatism.paleo, liberalism.austrian, liberalism.classical, conservatism.fusionism, libertarianism.ancap]
+          contested: [conservatism.right-populism]
+          rejects: [socdem.nordic, liberalism.social, marxism.ml, nationalism.ambedkarite]
+        presupposes: []
+        excludes: [federalism.scale.strong-center]
+        tension: [federalism.scale.subsidiarity]
+        tags: [debate.federalists-antifederalists]
+        analysis:
+          gains: [finance-capital, industrial-capital, petty-bourgeoisie]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Jurisdictions competing for mobile capital cut taxes, labor rules and environmental
+            standards to attract it, so owners of capital gain bargaining power over every
+            government while workers who cannot move bear lower wages and services.
+          drain: none
+          law_of_value: extends
+
+      - id: federalism.scale.strong-center
+        label: A strong center to guarantee equal rights and plan development
+        claim: >
+          Power should sit mainly with a strong national government. Only the center can guarantee
+          equal rights against local bosses, move resources from rich regions to poor ones, plan
+          development and hold the nation together.
+        voiced: >
+          The village is a sink of localism, a den of ignorance, narrow-mindedness and communalism.
+          The republic is one and indivisible. Only a strong union can protect the weak from the
+          local strong and build the nation's industry.
+        you: >
+          You think power should mainly sit with a strong national government, because it can
+          protect people from local powers and plan for the whole country.
+        because: >
+          Ambedkar argued in India's Constituent Assembly that the village was where caste power
+          was strongest, and that Dalits needed a distant constitution and a strong center against
+          it. In the United States it took federal troops and courts to end legal segregation in the
+          South. Development states from France to Korea to China planned infrastructure and
+          industry from the center; Hamilton argued for a strong union to give the new republic
+          credit and defense.
+        against:
+          - from: anarchism.communalism
+            text: >
+              The center that protects the weak against local bosses also sends the army into the
+              villages for dams, mines and counter-insurgency. Centralized power answers to those
+              who reach the capital.
+          - from: nationalism.indigenous-sovereignty
+            text: >
+              A strong center has meant the national majority deciding for the minorities: the
+              language of instruction, the dam on our river, the settlers on our land.
+        sources:
+          - {author: B. R. Ambedkar, title: "Speech introducing the Draft Constitution, Constituent Assembly of India", year: 1948}
+          - {author: Alexander Hamilton, James Madison and John Jay, title: "The Federalist", year: 1788}
+          - {author: Grant McConnell, title: "Private Power and American Democracy", year: 1966}
+        traditions:
+          defining: [liberalism.republican, nationalism.developmental-state]
+          typical: [nationalism.ambedkarite, nationalism.kemalism, conservatism.gaullism, socdem.keynesian, marxism.scc, nationalism.nasserism, liberalism.social]
+          contested: [marxism.ml, socdem.nordic]
+          rejects: [libertarianism.paleo, anarchism.communalism, conservatism.cst, nationalism.indigenous-sovereignty]
+        presupposes: []
+        excludes: [federalism.scale.states-and-exit, federalism.scale.subsidiarity]
+        tension: [federalism.scale.multinational-federation]
+        tags: [global-south, debate.federalists-antifederalists]
+        analysis:
+          gains: [industrial-capital, professional-managerial, reserve-army]
+          pays: [landed-capital, peasantry]
+          mechanism: >
+            A strong center can override local landlords and moneylenders and move tax revenue to
+            poor regions, which helps the rural poor and oppressed castes; it also lets national
+            capital and planners take land and water for dams, mines and industrial zones from
+            peasants and minorities.
+          drain: reduces
+          law_of_value: regulates
+
+      - id: federalism.scale.multinational-federation
+        label: A federation of nations, each with its own territory and autonomy
+        claim: >
+          Where several nations or language groups share a state, it should be a federation in
+          which each governs itself in its own territory and language, with real powers and, in
+          some versions, the right to leave.
+        voiced: >
+          Unity in diversity. A union of free peoples, not a prison of nations. Each people
+          schools its children in its own tongue and governs its own land, and none is forced to
+          stay where it is not willing.
+        you: >
+          You think a state with several nations or language groups should be a federation in which
+          each governs itself in its own territory and language.
+        because: >
+          India's reorganization of states by language after 1956 defused movements that threatened
+          to break the country. The Soviet Union gave its nations their own republics, schools and
+          press; Ethiopia's 1995 constitution and Bolivia's 2009 plurinational constitution
+          recognized the right of peoples to self-government. Austro-Marxists like Bauer saw that
+          nations would not dissolve into a working class until each was secure.
+        against:
+          - from: liberalism.republican
+            text: >
+              Ethnic federalism turns ethnicity into the basis of politics and territory into a
+              prize. Yugoslavia, the Soviet Union and Ethiopia's war in Tigray show where it can end.
+          - from: anarchism.confederalism
+            text: >
+              Each nation gets its own state in miniature, with its own majority and minorities. The
+              problem is the nation-state form, not its size.
+        sources:
+          - {author: Otto Bauer, title: "The Question of Nationalities and Social Democracy", year: 1907}
+          - {author: J. V. Stalin, title: "Marxism and the National Question", year: 1913}
+          - {author: House of Federation of Ethiopia, title: "Constitution of the Federal Democratic Republic of Ethiopia", year: 1995}
+        traditions:
+          defining: [marxism.austromarxism]
+          typical: [marxism.leninism, marxism.ml, nationalism.indigenous-sovereignty, nationalism.palestinian, liberalism.egalitarian]
+          contested: [nationalism.bolivarianism, socdem.democratic-socialism]
+          rejects: [nationalism.kemalism, nationalism.hindutva, liberalism.republican, nationalism.ethnic]
+        presupposes: []
+        excludes: []
+        tension: [federalism.scale.strong-center]
+        tags: [global-south]
+        analysis:
+          gains: [petty-bourgeoisie, professional-managerial, peasantry]
+          pays: []
+          mechanism: >
+            Territorial autonomy creates public posts, schools and budgets in minority languages,
+            which gives the educated stratum of each nation jobs and power and protects minority
+            peasants' land from settlement by the majority.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Leninists hold national autonomy is a step toward voluntary union; critics such as
+            Luxemburg argued it hands workers to their national bourgeoisies.
+
+      - id: federalism.scale.confederal-communes
+        label: Power from below; communes and councils federate upward
+        claim: >
+          Power should start in local assemblies of the people who live and work there. These
+          communes federate upward through delegates who can be recalled at any time, with no
+          central government above them.
+        voiced: >
+          Federation from the bottom up, never from the top down. The commune is the cell; the
+          council federates the communes; the confederation coordinates, it does not command.
+          Mandated, recallable delegates, not representatives.
+        you: >
+          You think power should start in local assemblies that federate upward, with recallable
+          delegates and no central government over them.
+        because: >
+          Proudhon argued that only federation from below can reconcile liberty with order. The Paris
+          Commune, the Spanish collectives, the Zapatista caracoles and the communes of northeast
+          Syria practiced it. Bookchin and Öcalan argue that the nation-state is the root of war and
+          ethnic oppression, and that confederations of self-governing communities can coordinate
+          across peoples without one ruling the others.
+        against:
+          - from: marxism.leninism
+            text: >
+              A confederation of communes faces armies, banks and multinationals that are centralized.
+              Without a central power to plan and defend, it is conquered or starved, as Spain showed.
+          - from: liberalism.classical
+            text: >
+              Assemblies are ruled by whoever has time to attend and the stamina to stay. Rights need
+              courts and constitutions above the local majority.
+        sources:
+          - {author: Pierre-Joseph Proudhon, title: "The Principle of Federation", year: 1863}
+          - {author: Murray Bookchin, title: "The Next Revolution", year: 2015}
+          - {author: Abdullah Öcalan, title: "Democratic Confederalism", year: 2011}
+        traditions:
+          defining: [anarchism.communalism, anarchism.confederalism, zapatismo]
+          typical: [anarchism.mutualist, anarchism.communist, anarchism.syndicalist, anarchism.platformist, marxism.council-communism]
+          contested: [nationalism.indigenous-sovereignty, anarchism.green]
+          rejects: [marxism.leninism, marxism.ml, nationalism.kemalism, liberalism.republican]
+        presupposes: [state.nature.hierarchy-as-such]
+        excludes: [federalism.scale.strong-center]
+        tension: [federalism.scale.multinational-federation]
+        tags: [global-south]
+        analysis:
+          gains: [peasantry, core-workers, peripheral-workers]
+          pays: [landed-capital, comprador-capital]
+          mechanism: >
+            Local assemblies that control land, water and cooperatives remove these from landlords
+            and outside companies, and recallable delegates prevent a separate layer of officials
+            from forming; the confederation's survival depends on defense against states around it.
+          drain: reduces
+          law_of_value: suspends
+          consciousness: hegemonic
+
+      - id: federalism.scale.global-governance
+        label: Global problems need power above the nation-state
+        claim: >
+          Climate, pandemics, finance and war cross borders, so some power must move above the
+          nation-state to regional and global institutions with binding rules, courts and, in time,
+          elected representation.
+        voiced: >
+          Perpetual peace requires a federation of free states. No nation can stop climate change,
+          tax multinationals or prevent pandemics alone. Sovereignty pooled is sovereignty
+          strengthened.
+        you: >
+          You think global problems need binding global institutions, with some power moved above
+          national governments.
+        because: >
+          Kant argued that peace needs a federation of states bound by law. The European Union ended
+          centuries of war among its members. Held argued that when decisions in one place shape
+          lives everywhere, accountable government has to exist at the same scale. A global minimum
+          tax on corporations shows what only coordinated power can do.
+        against:
+          - from: nationalism.decolonial
+            text: >
+              Every existing global institution, the IMF, the Security Council, the WTO, gives most
+              power to the rich countries that wrote its rules. Global governance has meant
+              structural adjustment in Africa and Latin America.
+          - from: conservatism.national
+            text: >
+              No people consents to be governed by officials it cannot elect or remove. Global
+              government is government by a class of experts loyal to no nation.
+        sources:
+          - {author: Immanuel Kant, title: "Perpetual Peace: A Philosophical Sketch", year: 1795}
+          - {author: David Held, title: "Democracy and the Global Order", year: 1995}
+        traditions:
+          defining: [liberalism.internationalist]
+          typical: [liberalism.technocratic, technology.longtermism, technology.effective-altruism, socdem.third-way, liberalism.egalitarian]
+          contested: [marxism.trotskyism, ecology.green-growth]
+          rejects: [conservatism.national, nationalism.decolonial, libertarianism.paleo, marxism.dependency]
+        presupposes: []
+        excludes: []
+        tension: [intl.sovereignty.nations-set-own-course]
+        tags: []
+        analysis:
+          gains: [finance-capital, professional-managerial]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >
+            Global institutions as now built give voting weight by capital share and enforce rules
+            on debt, trade and investment that protect core creditors and investors, and staff them
+            with international professionals; peripheral states lose policy tools such as tariffs
+            and capital controls.
+          drain: sustains
+          law_of_value: extends
+          disputed: >
+            Some socialists argue for global institutions on different principles (a global tax on
+            wealth, a democratized UN); dependency theorists argue any supranational power will
+            follow the balance of force among states.
+
+  - id: totalitarianism.concept
+    domain: state
+    layer: analysis
+    question: Is "totalitarianism" a real category joining fascism and communism?
+    plain: Some say Nazi Germany and the Soviet Union were the same kind of system. Were they?
+    short: the idea of totalitarianism
+    importance: 2
+    region: state
+    positions:
+      - id: totalitarianism.concept.novel-form
+        label: A new form of rule by terror and ideology over atomized masses
+        claim: >
+          Those who hold this view see Nazi Germany and Stalin's Soviet Union as instances of a new
+          form of rule unlike older tyrannies: a movement that rules through terror and an ideology
+          claiming to know the laws of history or nature, over masses cut off from every other
+          bond.
+        voiced: >
+          Totalitarian domination strives to organize the infinite plurality of human beings as if
+          all of humanity were just one individual. The camps are its laboratory, where the belief
+          that everything is possible is tested. Terror is its essence; ideology its logic.
+        you: >
+          You think Nazi Germany and Stalin's Soviet Union were both a new kind of rule through
+          terror and ideology, unlike ordinary dictatorship.
+        because: >
+          Arendt traced how imperialism, antisemitism and the collapse of classes into masses
+          prepared movements that destroyed all independent institutions. Both systems made terror
+          permanent even after opposition was gone, killed by category rather than by deed, and
+          ran camps where human beings were made superfluous. An ordinary dictator wants obedience;
+          these movements wanted to remake human nature.
+        against:
+          - from: marxism.ml
+            text: >
+              The comparison sets aside what each system did with property and with whom it went to
+              war: one served capital and launched a war of extermination, the other abolished
+              capital and destroyed the first.
+          - from: marxism.black-radical
+            text: >
+              Arendt found the origins of the camps in imperialism, then left the empires that
+              invented them out of the category. Colonial terror in the Congo or Kenya never counts.
+        sources:
+          - {author: Hannah Arendt, title: "The Origins of Totalitarianism", year: 1951}
+        traditions:
+          defining: [liberalism.republican]
+          typical: [liberalism.social, marxism.third-camp, socdem.democratic-socialism, liberalism.egalitarian]
+          contested: [marxism.western, anarchism.communist]
+          rejects: [marxism.ml, marxism.maoism, fascism.italian]
+        presupposes: []
+        excludes: [totalitarianism.concept.cold-war-weapon]
+        tension: [totalitarianism.concept.syndrome-model]
+        tags: [cold-war]
+        analysis:
+          gains: [professional-managerial]
+          pays: []
+          mechanism: >
+            Arendt's version defends a space of plural public life against all mass movements; in
+            the Cold War its reception helped set liberal capitalist states as the measure of
+            legitimate politics, which was used against socialist movements in the periphery.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Readers divide on how far Arendt's own account, with its roots in imperialism, differs
+            from the Cold War model built on it.
+
+      - id: totalitarianism.concept.syndrome-model
+        label: A checklist that separates totalitarian enemies from authoritarian allies
+        claim: >
+          Holders of this view define totalitarianism by a set of traits (one party, an official
+          ideology, a secret police, a monopoly of media and weapons, a planned economy) and
+          distinguish it sharply from authoritarian dictatorships, which leave society and the
+          economy alone and can change.
+        voiced: >
+          Traditional autocracies leave in place existing allocations of wealth, power and status;
+          they do not disturb the habitual rhythms of work and leisure. Revolutionary communist
+          regimes claim jurisdiction over the whole of life. The former can evolve; the latter never
+          have.
+        you: >
+          You think communist states were totalitarian and fundamentally worse than right-wing
+          dictatorships, which can reform themselves.
+        because: >
+          Friedrich and Brzezinski gave political science a testable six-point syndrome. Kirkpatrick
+          argued that pro-Western dictatorships in Chile, South Korea or Taiwan kept private property,
+          churches and families intact and later became liberal democracies, while communist
+          states did not. The distinction tells a liberal state whom it may ally with in a hard
+          world.
+        against:
+          - from: marxism.dependency
+            text: >
+              The "authoritarian" allies were the generals who killed hundreds of thousands in
+              Indonesia, Guatemala and Argentina. The model sorted dictatorships by whether they
+              protected foreign investment.
+          - from: liberalism.republican
+            text: >
+              A checklist turns a historical judgment into a classification game; it was stretched
+              to cover almost any socialist government the West opposed.
+        sources:
+          - {author: Carl J. Friedrich and Zbigniew Brzezinski, title: "Totalitarian Dictatorship and Autocracy", year: 1956}
+          - {author: Jeane J. Kirkpatrick, title: "Dictatorships and Double Standards", year: 1979}
+        traditions:
+          defining: [conservatism.neo]
+          typical: [liberalism.internationalist, conservatism.fusionism, conservatism.christian-democracy, liberalism.classical]
+          contested: [liberalism.social]
+          rejects: [marxism.ml, marxism.dependency, marxism.third-worldism, nationalism.decolonial]
+        presupposes: []
+        excludes: [totalitarianism.concept.cold-war-weapon]
+        tension: [totalitarianism.concept.novel-form]
+        tags: [cold-war]
+        analysis:
+          gains: [finance-capital, industrial-capital, comprador-capital]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >
+            Treating property-protecting dictatorships as acceptable and socialist governments as
+            beyond the pale justified aid, arms and coups for military rulers in the periphery who
+            kept land, mines and markets open to core and comprador capital.
+          drain: sustains
+          law_of_value: extends
+          consciousness: hegemonic
+
+      - id: totalitarianism.concept.road-from-planning
+        label: Central planning leads toward total control; socialism and fascism are kin
+        claim: >
+          Holders of this view argue that whoever plans the whole economy must control what people
+          produce, earn, buy and say, so economic planning leads toward total political control.
+          Fascism and communism are two forms of the same collectivism.
+        voiced: >
+          Economic control is not merely control of a sector of human life; it is the control of
+          the means for all our ends. The worst get on top. National Socialism was socialism; the
+          road to serfdom is paved with plans.
+        you: >
+          You think central economic planning leads to total control over people's lives, and that
+          fascism and communism are both forms of collectivism.
+        because: >
+          Hayek argued that a plan requires agreement on ends that a free society does not have, so
+          planners must impose their ranking of values, and those most willing to coerce rise to the
+          top. Mises showed that without market prices planners cannot calculate, and must rule by
+          command. Both Nazi Germany and the Soviet Union subordinated every enterprise to the state.
+        against:
+          - from: socdem.nordic
+            text: >
+              Britain planned its war economy and built the National Health Service; Scandinavia
+              planned housing and industry for decades. None slid into dictatorship.
+          - from: marxism.classical
+            text: >
+              Nazi Germany privatized state firms, crushed unions and made fortunes for Krupp and IG
+              Farben. Calling it socialism ignores who owned the factories.
+        sources:
+          - {author: Friedrich A. Hayek, title: "The Road to Serfdom", year: 1944}
+          - {author: Ludwig von Mises, title: "Omnipotent Government", year: 1944}
+        traditions:
+          defining: [liberalism.austrian]
+          typical: [libertarianism.minarchist, libertarianism.ancap, liberalism.chicago, libertarianism.objectivist, conservatism.fusionism]
+          contested: [liberalism.ordoliberal]
+          rejects: [socdem.nordic, marxism.classical, marxism.ml, socdem.keynesian]
+        presupposes: [capitalism.nature.free-exchange]
+        excludes: [totalitarianism.concept.cold-war-weapon]
+        tension: []
+        tags: [cold-war, debate.calculation]
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            Linking any economic planning to total control discredits public ownership, industrial
+            policy and capital controls, which protects private investors from democratic limits and
+            denied peripheral states the planning tools used in the core's own industrialization.
+          drain: sustains
+          law_of_value: extends
+
+      - id: totalitarianism.concept.political-religion
+        label: Totalitarian movements are secular religions
+        claim: >
+          Holders of this view argue that fascist and communist movements worked as religions
+          without God: they had sacred texts, saints, rituals, heresies and a promise of salvation
+          in history, and demanded the whole person as faith does.
+        voiced: >
+          When God is declared dead, the nation, the race or the class takes His place. The parades
+          are liturgies, the leaders saints, the purges inquisitions. Political religions promise
+          paradise on earth and build it with corpses.
+        you: >
+          You think fascism and communism were secular religions that replaced God with the nation,
+          the race or the class.
+        because: >
+          Voegelin in 1938 analyzed the new movements as political religions; Aron spoke of secular
+          religions. Gentile showed how Italian Fascism deliberately sacralized the nation through
+          rites, martyrs and festivals. The concept explains why millions gave not only obedience but
+          devotion, and why the movements could not tolerate rival faiths.
+        against:
+          - from: marxism.classical
+            text: >
+              The metaphor explains everything and nothing: any mass movement has symbols and
+              heroes. It turns a question of class interests and property into one of belief.
+          - from: liberalism.classical
+            text: >
+              Calling a movement a religion says nothing about the institutions that made its terror
+              possible, or about how to prevent it.
+        sources:
+          - {author: Eric Voegelin, title: "The Political Religions", year: 1938}
+          - {author: Raymond Aron, title: "The Opium of the Intellectuals", year: 1955}
+          - {author: Emilio Gentile, title: "Politics as Religion", year: 2001}
+        traditions:
+          defining: [conservatism.burkean]
+          typical: [conservatism.christian-democracy, conservatism.traditionalist, liberalism.classical, conservatism.neo]
+          contested: [conservatism.cst]
+          rejects: [marxism.ml, marxism.classical]
+        presupposes: []
+        excludes: [totalitarianism.concept.cold-war-weapon]
+        tension: [totalitarianism.concept.godless-modernity]
+        tags: [cold-war]
+        analysis:
+          gains: [professional-managerial]
+          pays: []
+          mechanism: >
+            Explaining mass movements by misplaced faith turns attention from interests to belief,
+            which makes any movement promising social transformation suspect as a false religion and
+            leaves existing property relations outside the question.
+          drain: none
+          law_of_value: none
+          method: idealist
+
+      - id: totalitarianism.concept.godless-modernity
+        label: Totalitarianism is what modernity breeds when it forgets God
+        claim: >
+          Holders of this view argue that the total state grows from the rejection of God: once man
+          makes himself the measure, nothing limits the state. Communism, Nazism and the secular
+          liberal state share this root, differing only in how far they have gone.
+        voiced: >
+          Men have forgotten God; that is why all this has happened. Atheistic communism and the
+          neo-pagan race cult are two fruits of one apostasy. Liberal secularism walks the same road
+          more slowly, with consumer goods instead of camps.
+        you: >
+          You think the total state grows out of turning away from God, and that secular liberal
+          societies are heading the same way more slowly.
+        because: >
+          Pius XI condemned both Nazism and atheistic communism in 1937 as idolatries of race and
+          class. Solzhenitsyn, from the camps, concluded that the root of the catastrophe was that
+          men had forgotten God. Without a transcendent law above the state, rights become gifts of
+          the powerful, and nothing stops the state from claiming the whole person.
+        against:
+          - from: liberalism.republican
+            text: >
+              Fascism in Spain, Croatia and Slovakia was blessed by the Church, and religious states
+              have their own inquisitions. Faith has been no barrier to total rule.
+          - from: marxism.ml
+            text: >
+              The theory puts the liberal welfare state, the USSR and the Third Reich in one camp and
+              the Church in the other, the Church that signed a concordat with Hitler in 1933.
+        sources:
+          - {author: Pius XI, title: "Divini Redemptoris", year: 1937}
+          - {author: Pius XI, title: "Mit brennender Sorge", year: 1937}
+          - {author: Aleksandr Solzhenitsyn, title: "Men Have Forgotten God (Templeton Address)", year: 1983}
+        traditions:
+          defining: [conservatism.integralism, conservatism.traditionalist]
+          typical: [conservatism.cst, conservatism.evangelical-right, conservatism.postliberal, conservatism.paleo, nationalism.eurasianism]
+          contested: [conservatism.christian-democracy]
+          rejects: [liberalism.classical, liberalism.republican, marxism.ml, marxism.classical]
+        presupposes: []
+        excludes: [totalitarianism.concept.cold-war-weapon]
+        tension: [totalitarianism.concept.political-religion]
+        tags: [cold-war]
+        analysis:
+          gains: [landed-capital, petty-bourgeoisie]
+          pays: [core-workers]
+          mechanism: >
+            Locating the danger in secularism points remedies toward restoring church authority
+            over schools, family and law, which historically aligned with landed and clerical
+            interests against labor movements, while leaving capital outside the indictment.
+          drain: none
+          law_of_value: none
+          method: idealist
+
+      - id: totalitarianism.concept.cold-war-weapon
+        label: A Cold War concept built to equate communism with Nazism
+        claim: >
+          Holders of this view reject the category. They argue it was built in the Cold War to put
+          the Soviet Union, which destroyed Nazism, alongside Nazism itself, by setting aside what
+          each system did with property, which classes each served, and the colonial violence that
+          liberal empires practiced first.
+        voiced: >
+          Before Hitler was Hitler, Europe applied colonialist procedures to the Arabs of Algeria,
+          the coolies of India and the Blacks of Africa. Totalitarianism theory puts the victors of
+          Stalingrad beside the Wehrmacht and leaves the Congo out of the picture.
+        you: >
+          You reject the idea of "totalitarianism" as a Cold War tool that puts communism next to
+          Nazism and leaves out colonial crimes.
+        because: >
+          Losurdo showed how the category moved: in the 1930s and 1940s fascism was defined by its
+          defense of capital and its race war, then after 1947 by its forms of rule, which allowed
+          the USSR to be put in its place. Césaire argued that Nazism was colonialism applied to
+          Europeans, a boomerang. A category that cannot distinguish a state that protected Krupp
+          from one that expropriated him explains nothing about either.
+        against:
+          - from: marxism.third-camp
+            text: >
+              Socialists opposed the Moscow trials and the camps long before the Cold War. The
+              likenesses in police terror were real, whatever the property forms.
+          - from: liberalism.republican
+            text: >
+              The Gulag and the famines are not Cold War propaganda. A theory that cannot name mass
+              terror because of who owned the factories has stopped looking at the victims.
+        sources:
+          - {author: Domenico Losurdo, title: "Towards a Critique of the Category of Totalitarianism", year: 2004}
+          - {author: Aimé Césaire, title: "Discourse on Colonialism", year: 1950}
+          - {author: Michael Parenti, title: "Blackshirts and Reds", year: 1997}
+        traditions:
+          defining: [marxism.ml]
+          typical: [marxism.maoism, marxism.mlm, marxism.black-radical, nationalism.decolonial, marxism.third-worldism, marxism.juche, marxism.hoxhaism]
+          contested: [marxism.trotskyism, marxism.western]
+          rejects: [liberalism.classical, conservatism.neo, liberalism.austrian, marxism.third-camp]
+        presupposes: [history.motor.class-struggle]
+        excludes: [totalitarianism.concept.syndrome-model, totalitarianism.concept.novel-form, totalitarianism.concept.road-from-planning]
+        tension: [totalitarianism.concept.bureaucratic-class]
+        tags: [cold-war, global-south]
+        analysis:
+          gains: [peripheral-workers, peasantry, core-workers]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >
+            Rejecting the equation of socialism with Nazism removes one justification used for
+            sanctions, coups and interventions against socialist and national-liberation governments
+            in the periphery, and returns property and class to the center of the analysis of
+            fascism.
+          drain: reduces
+          law_of_value: none
+          disputed: >
+            Third-camp and council Marxists accept parts of the comparison; ML writers hold it serves
+            imperialism whatever its intent.
+          consciousness: hegemonic
+
+      - id: totalitarianism.concept.bureaucratic-class
+        label: Stalinism and fascism are kin as rule by a new bureaucratic class
+        claim: >
+          Holders of this view, Marxists opposed to Stalin, argue that the Soviet Union became a new
+          form of class rule by a bureaucracy that owned the state, and that its methods resembled
+          fascism's even though property forms differed. Workers must oppose both.
+        voiced: >
+          Neither Washington nor Moscow, but international socialism. The bureaucracy is the new
+          exploiting class, and its police state is the twin of Hitler's. Workers' power means
+          soviets, not the GPU.
+        you: >
+          You think Stalin's Soviet Union became rule by a bureaucratic class that resembled fascism
+          in its methods, and that workers should oppose both.
+        because: >
+          Rizzi and Shachtman argued that the Soviet bureaucracy collectively controlled production
+          and extracted a surplus from workers like a ruling class. Cliff called it state
+          capitalism. Trotsky himself, though he called the USSR a degenerated workers' state, said
+          Stalinism and fascism were symmetrical in their methods. Seeing this let socialists
+          defend workers' power against both camps.
+        against:
+          - from: marxism.ml
+            text: >
+              "Neither Washington nor Moscow" in practice meant siding with Washington: many
+              third-campers became Cold War liberals and neoconservatives.
+          - from: marxism.trotskyism
+            text: >
+              The bureaucracy did not own the means of production and could not pass them on; the
+              planned economy was a conquest to defend against capitalist restoration, as 1991 showed.
+        sources:
+          - {author: Bruno Rizzi, title: "The Bureaucratization of the World", year: 1939}
+          - {author: Tony Cliff, title: "State Capitalism in Russia", year: 1955, note: "first circulated 1948"}
+          - {author: Leon Trotsky, title: "The Revolution Betrayed", year: 1936}
+        traditions:
+          defining: [marxism.third-camp]
+          typical: [marxism.council-communism, marxism.left-communism, marxism.luxemburgism, socdem.democratic-socialism]
+          contested: [marxism.trotskyism, anarchism.communist]
+          rejects: [marxism.ml, marxism.maoism]
+        presupposes: [class.concept.relation-to-production]
+        excludes: []
+        tension: [totalitarianism.concept.cold-war-weapon]
+        tags: [cold-war]
+        analysis:
+          gains: [core-workers]
+          pays: []
+          mechanism: >
+            Treating both blocs as class societies directs workers to independent organization
+            against their own governments; in the Cold War it divided Western socialists from the
+            Soviet camp and from national-liberation movements allied with it.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Orthodox Trotskyists, ML writers and state-capitalism theorists dispute the class nature
+            of the USSR; the debate remains open.
+
+      - id: totalitarianism.concept.all-states
+        label: Every state tends toward total control; the difference is degree
+        claim: >
+          Holders of this view argue that totalitarianism is the logic of the state carried to its
+          end. Liberal states hold the same tools (surveillance, conscription, camps, emergency law)
+          in reserve, and use them when threatened. The difference is of degree.
+        voiced: >
+          The State is the sum of the negations of the individual liberties of all its members.
+          Hitler and Stalin did not invent the state; they perfected it. The internment camp, the
+          draft and the wiretap are in every constitution's back drawer.
+        you: >
+          You think every state tends toward total control, and that liberal states differ from
+          dictatorships in degree, not in kind.
+        because: >
+          Bakunin predicted in 1873 that a workers' state would become a new tyranny. Rocker argued
+          that the cult of the nation-state was the common source of fascism and Bolshevism. Liberal
+          states interned Japanese-Americans, ran colonial camps in Kenya, and built mass
+          surveillance; under threat they do what dictatorships do every day.
+        against:
+          - from: liberalism.classical
+            text: >
+              Degree is everything. Living where courts can overturn the government and presses can
+              print against it is not a small difference from the Gulag.
+          - from: marxism.leninism
+            text: >
+              The state is not a will to power floating above classes. Which class holds it decides
+              what it does, and refusing to distinguish leaves the revolution defenseless.
+        sources:
+          - {author: Mikhail Bakunin, title: "Statism and Anarchy", year: 1873}
+          - {author: Rudolf Rocker, title: "Nationalism and Culture", year: 1937}
+        traditions:
+          defining: [anarchism.communist, anarchism.syndicalist]
+          typical: [anarchism.individualist, anarchism.insurrectionary, libertarianism.ancap, anarchism.green, anarchism.platformist]
+          contested: [libertarianism.minarchist]
+          rejects: [marxism.ml, marxism.leninism, liberalism.classical, fascism.italian]
+        presupposes: [state.nature.hierarchy-as-such]
+        excludes: [totalitarianism.concept.total-state-ideal]
+        tension: [totalitarianism.concept.syndrome-model]
+        tags: []
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: []
+          mechanism: >
+            Seeing state coercion as one continuum directs movements to build organizations outside
+            and against every state, which protects them from capture but gives no answer to how a
+            revolution defends itself against armed property.
+          drain: none
+          law_of_value: none
+
+      - id: totalitarianism.concept.total-state-ideal
+        label: '"Everything within the state": totality as the goal, not an accusation'
+        claim: >
+          Italian Fascism used the word first, about itself, as an ideal: a state that embraces the
+          whole life of the nation, above classes and individuals. Holders of this view treat the
+          total state as the highest form of political community.
+        voiced: >
+          Everything within the state, nothing outside the state, nothing against the state. For
+          the Fascist the state is absolute; individuals and groups are relative. Our formula is
+          totalitarian, and we are proud of it.
+        you: >
+          You think a state that embraces the whole life of the nation, above classes and private
+          interests, is the highest political form.
+        because: >
+          Mussolini and Gentile argued that the liberal state, standing aside from social life, left
+          the nation divided into warring classes and parties. Schmitt described the total state as
+          one that can no longer be neutral, because modern society has made everything political.
+          Only a state that absorbs all spheres can give the nation a single will.
+        against:
+          - from: liberalism.classical
+            text: >
+              The total state delivered secret police, racial laws, wars of conquest in Ethiopia and
+              the Balkans, and the destruction of Italy. The ideal and its record are one.
+          - from: marxism.classical
+            text: >
+              The state "above classes" crushed unions and strikes and kept the owners. The totality
+              was the totality of capital's command over labor.
+        sources:
+          - {author: Benito Mussolini and Giovanni Gentile, title: "The Doctrine of Fascism", year: 1932}
+          - {author: Carl Schmitt, title: "Der Hüter der Verfassung", year: 1931}
+        traditions:
+          defining: [fascism.italian]
+          typical: [fascism.national-syndicalism, fascism.nazism, fascism.clerical]
+          contested: [fascism.third-position]
+          rejects: [liberalism.classical, anarchism.communist, marxism.classical, conservatism.cst]
+        presupposes: [state.nature.organic-nation]
+        excludes: [totalitarianism.concept.all-states]
+        tension: []
+        tags: []
+        analysis:
+          gains: [industrial-capital, landed-capital, finance-capital]
+          pays: [core-workers, peasantry, peripheral-workers]
+          mechanism: >
+            Absorbing unions into state corporations and banning strikes let Italian employers cut
+            wages after 1926, while the state's colonial wars in Libya and Ethiopia seized land and
+            labor for Italian settlers and firms.
+          drain: sustains
+          law_of_value: regulates
+
+  - id: siege.governance
+    domain: state
+    layer: priority
+    question: How should a revolution or a nation govern under siege?
+    plain: When a country or a new government faces invasion, sabotage, blockade or armed rebellion, what rules should still hold?
+    short: governing under siege
+    importance: 2
+    region: state
+    positions:
+      - id: siege.governance.constitutional-order
+        label: Courts, elections and rights continue; the constitution is the defense
+        claim: >
+          Even under siege, courts must sit, elections must be held, and speech and press must stay
+          open. Suspending them hands the enemy a victory, and the constitution was written for
+          hard times as much as easy ones.
+        voiced: >
+          The Constitution is a law for rulers and people, equally in war and in peace, and covers
+          with the shield of its protection all classes of men, at all times, and under all
+          circumstances. Liberty sacrificed for safety is lost twice.
+        you: >
+          You think courts, elections and civil rights must continue even in war or crisis, because
+          suspending them is a defeat in itself.
+        because: >
+          The US Supreme Court in Ex parte Milligan held that civilians could not be tried by
+          military courts where civil courts were open, even in civil war. Britain kept parliament
+          and a free press through the Blitz. Every suspended right is hard to restore, and
+          governments in danger are the ones most tempted to call their critics enemies.
+        against:
+          - from: marxism.leninism
+            text: >
+              Chile kept its constitution in 1973, and its army used the constitution's own forces to
+              destroy it. Rights extended to those organizing a coup are rights to win.
+          - from: conservatism.reactionary
+            text: >
+              A constitution is not a suicide pact. A state that cannot act decisively in the
+              exception will not survive to have a constitution.
+        sources:
+          - {author: Supreme Court of the United States, title: "Ex parte Milligan", year: 1866}
+          - {author: Benjamin Constant, title: "The Spirit of Conquest and Usurpation", year: 1814}
+        traditions:
+          defining: [liberalism.classical]
+          typical: [liberalism.social, libertarianism.minarchist, liberalism.egalitarian, liberalism.progressive, libertarianism.objectivist]
+          contested: [liberalism.republican, conservatism.burkean]
+          rejects: [marxism.leninism, marxism.ml, conservatism.reactionary, fascism.italian]
+        presupposes: []
+        excludes: [siege.governance.revolutionary-dictatorship, siege.governance.national-security-state]
+        tension: [emergency.powers.sovereign-exception]
+        tags: []
+        analysis:
+          gains: [finance-capital, professional-managerial, petty-bourgeoisie]
+          pays: []
+          mechanism: >
+            Keeping courts and civil rights fully in force protects citizens from arbitrary arrest,
+            and also protects property owners, media proprietors and foreign investors from
+            expropriation or censorship by a besieged reforming government.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Liberals note that core states themselves suspended rights in wartime; Marxists argue
+            the position is applied strictly only to governments in the periphery.
+
+      - id: siege.governance.emergency-with-sunset
+        label: Temporary, limited emergency powers with a deadline and oversight
+        claim: >
+          A real emergency justifies special powers, but only those named in law, for a fixed time,
+          renewed only by a large majority of the legislature, with courts able to review them, and
+          ending automatically.
+        voiced: >
+          The Roman dictator served six months and laid down his power. Grant the executive what the
+          emergency needs and not a day more: each renewal requires a larger majority, and the
+          powers die on their own if not renewed.
+        you: >
+          You think emergencies can justify special powers, but only limited, temporary ones that
+          end automatically and stay under oversight.
+        because: >
+          Rossiter showed that constitutional states survived crises by temporary concentrations of
+          power that were then returned. Ackerman proposed an "emergency constitution" whose powers
+          require supermajorities to extend, so that only a real and continuing threat can keep them
+          alive. This is the middle path between paralysis and permanent emergency.
+        against:
+          - from: anarchism.communist
+            text: >
+              Sunset clauses are renewed. Emergency laws in Egypt, Israel, India and Britain lasted
+              decades; the deadline is always moved.
+          - from: marxism.leninism
+            text: >
+              Revolutions are not crises with a closing date. Counter-revolution backed by foreign
+              powers lasts as long as the revolution does, and the six-month dictator falls in month
+              seven.
+        sources:
+          - {author: Clinton Rossiter, title: "Constitutional Dictatorship: Crisis Government in the Modern Democracies", year: 1948}
+          - {author: Bruce Ackerman, title: "Before the Next Attack", year: 2006}
+        traditions:
+          defining: [liberalism.republican]
+          typical: [conservatism.christian-democracy, socdem.nordic, liberalism.social, conservatism.gaullism, liberalism.technocratic]
+          contested: [liberalism.classical]
+          rejects: [anarchism.communist, marxism.leninism]
+        presupposes: []
+        excludes: [siege.governance.revolutionary-dictatorship]
+        tension: [siege.governance.siege-as-pretext]
+        tags: []
+        analysis:
+          gains: [professional-managerial, finance-capital]
+          pays: []
+          mechanism: >
+            Bounded emergency powers allow the existing state to suppress unrest or war risk while
+            keeping legal continuity, so the property order and the officials who administer it
+            pass through the crisis intact.
+          drain: none
+          law_of_value: none
+
+      - id: siege.governance.revolutionary-dictatorship
+        label: Under siege the revolution must rule as a dictatorship of the working people
+        claim: >
+          A revolution facing invasion, blockade and armed counter-revolution must concentrate power
+          in a revolutionary state led by its party: suppress armed opposition and its press,
+          centralize the economy for defense, and keep this until the danger is defeated.
+        voiced: >
+          Within the revolution, everything; against the revolution, nothing. The dictatorship of
+          the proletariat is the rule of the majority over the exploiters, who do not give up power
+          because they lose a vote. Fourteen armies invaded; liberal forms would have handed them
+          the country.
+        you: >
+          You think a revolution under attack must concentrate power and suppress armed
+          counter-revolution, even at the cost of civil liberties, until the threat is defeated.
+        because: >
+          The Russian revolution faced civil war and fourteen foreign interventions; Cuba faced the
+          Bay of Pigs, sabotage and a blockade lasting over sixty years; Vietnam faced decades of
+          war. Owners deposed by revolution always seek foreign help to return, as Lenin argued
+          against Kautsky, and their capital, media and allies abroad far outweigh the revolution's
+          resources. Revolutions that kept open the door for their enemies, as Chile and Guatemala
+          did, were crushed.
+        against:
+          - from: marxism.luxemburgism
+            text: >
+              Freedom only for the supporters of the government is no freedom at all. Without free
+              elections, press and assembly, life dies out in every public institution, and only the
+              bureaucracy remains active.
+          - from: anarchism.communist
+            text: >
+              The dictatorship meant to defend the revolution crushed the soviets, the anarchists and
+              Kronstadt, and its emergency became permanent. The siege ended; the dictatorship did not.
+          - from: liberalism.classical
+            text: >
+              The record is the Cheka, the Gulag and one-party rule lasting long after any invasion.
+              The siege justified everything and expired never.
+        sources:
+          - {author: V. I. Lenin, title: "The Proletarian Revolution and the Renegade Kautsky", year: 1918}
+          - {author: Leon Trotsky, title: "Terrorism and Communism", year: 1920}
+          - {author: Fidel Castro, title: "Words to the Intellectuals", year: 1961}
+        traditions:
+          defining: [marxism.leninism, marxism.ml]
+          typical: [marxism.maoism, marxism.mlm, marxism.juche, marxism.hoxhaism, marxism.guevarism, marxism.trotskyism, marxism.scc]
+          contested: [nationalism.bolivarianism, marxism.third-worldism]
+          rejects: [marxism.luxemburgism, marxism.council-communism, anarchism.communist, liberalism.classical, socdem.democratic-socialism]
+        presupposes: [state.nature.class-instrument]
+        excludes: [siege.governance.constitutional-order, siege.governance.armed-federation]
+        tension: [siege.governance.class-democracy]
+        tags: [global-south]
+        analysis:
+          gains: [peasantry, core-workers, peripheral-workers]
+          pays: [landed-capital, comprador-capital, finance-capital, industrial-capital]
+          mechanism: >
+            Concentrated revolutionary power holds expropriated land, factories and banks against
+            their former owners and foreign backers; it also creates a party and state apparatus
+            that controls the surplus and can entrench itself above the workers and peasants in
+            whose name it rules.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >
+            Marxists dispute whether the degeneration of Soviet power came from the siege
+            (Trotskyists, many MLs), from the party form itself (Luxemburg, council communists), or
+            was avoidable; the scale of repression is documented and its interpretation contested.
+          consciousness: hegemonic
+
+      - id: siege.governance.class-democracy
+        label: Defend the revolution through the broadest workers' democracy
+        claim: >
+          The revolution must defend itself by force, but through the broadest council democracy of
+          the working people: elected and recallable councils, free press and organization for all
+          parties that do not take up arms, so the masses themselves keep control.
+        voiced: >
+          Freedom only for the members of one party is no freedom at all. Freedom is always the
+          freedom of the one who thinks differently. The dictatorship of the class, yes, but of the
+          class, not of a party or a clique.
+        you: >
+          You think a revolution must defend itself, but through elected workers' councils and open
+          debate, not the rule of one party.
+        because: >
+          Luxemburg warned in 1918 that suppressing the soviets' political life would leave a
+          bureaucracy in command, and the following decades bore her out. A revolution's strongest
+          defense is the active participation of millions, which only open debate and elections
+          sustain. The Paris Commune elected and recalled its officials while under siege.
+        against:
+          - from: marxism.leninism
+            text: >
+              The Mensheviks and Socialist Revolutionaries used open soviets to call for the
+              Constituent Assembly while their comrades fought alongside the Whites. Luxemburg
+              herself was killed by a social-democratic government in the revolution she led.
+          - from: liberalism.classical
+            text: >
+              Democracy "for the working people" excludes everyone else. Who decides who counts as
+              the people?
+        sources:
+          - {author: Rosa Luxemburg, title: "The Russian Revolution", year: 1922, note: "written 1918"}
+          - {author: Karl Marx, title: "The Civil War in France", year: 1871}
+        traditions:
+          defining: [marxism.luxemburgism, marxism.council-communism]
+          typical: [marxism.left-communism, socdem.democratic-socialism, marxism.autonomism, marxism.third-camp]
+          contested: [marxism.trotskyism, anarchism.syndicalist]
+          rejects: [marxism.ml, marxism.maoism, liberalism.classical]
+        presupposes: [history.motor.class-struggle]
+        excludes: [siege.governance.national-security-state]
+        tension: [siege.governance.revolutionary-dictatorship]
+        tags: []
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [landed-capital, industrial-capital, finance-capital]
+          mechanism: >
+            Elected councils holding power expropriate owners as the dictatorship does, while
+            recall and open organization prevent a separate officialdom from taking control of the
+            surplus.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >
+            Leninists argue no revolution has survived siege this way; council communists answer
+            that none tried long enough to know.
+          consciousness: hegemonic
+
+      - id: siege.governance.armed-federation
+        label: Defend the revolution with popular militias and federated councils, no new state
+        claim: >
+          A revolution should defend itself with the armed people: voluntary militias with elected
+          officers and federated local councils, not a new army, police and central government,
+          which would become a new ruling class.
+        voiced: >
+          The revolution is defended by the people in arms, not by commissars. Militias, not
+          barracks; councils, not ministries. Build a new state to save the revolution and the
+          state will bury it.
+        you: >
+          You think a revolution should defend itself through popular militias and local councils,
+          without building a new central state.
+        because: >
+          The Makhnovist movement in Ukraine defeated White armies with a peasant army run on
+          elected command, until the Bolsheviks turned on it. In Spain in 1936 workers' militias
+          stopped the military uprising in Barcelona and much of the country. The Zapatistas and
+          the communes of northeast Syria have held territory for years under attack with this kind
+          of defense. Every revolution that built a strong state to defend itself ended with that
+          state ruling the revolutionaries.
+        against:
+          - from: marxism.leninism
+            text: >
+              Makhno was defeated; the Spanish militias were destroyed by Franco's disciplined army
+              backed by Hitler and Mussolini. Courage without centralized command loses wars.
+          - from: liberalism.republican
+            text: >
+              Militias without a state also had their reprisals: the killings of priests in 1936
+              Spain were carried out by no court.
+        sources:
+          - {author: Voline, title: "The Unknown Revolution", year: 1947}
+          - {author: Peter Arshinov, title: "History of the Makhnovist Movement", year: 1923}
+          - {author: George Orwell, title: "Homage to Catalonia", year: 1938}
+        traditions:
+          defining: [anarchism.communist, anarchism.syndicalist, anarchism.platformist]
+          typical: [zapatismo, anarchism.confederalism, anarchism.communalism, anarchism.insurrectionary]
+          contested: [marxism.council-communism]
+          rejects: [marxism.leninism, marxism.ml, liberalism.classical]
+        presupposes: [state.nature.hierarchy-as-such]
+        excludes: [siege.governance.revolutionary-dictatorship, siege.governance.national-security-state]
+        tension: [siege.governance.class-democracy]
+        tags: [global-south]
+        analysis:
+          gains: [peasantry, core-workers, peripheral-workers]
+          pays: [landed-capital, industrial-capital]
+          mechanism: >
+            Militias and councils hold seized land and workplaces under direct control of those who
+            work them and prevent an officer and official stratum from forming; against
+            industrialized armies they have usually lost the territory and with it the gains.
+          drain: breaks
+          law_of_value: abolishes
+          consciousness: hegemonic
+
+      - id: siege.governance.national-security-state
+        label: Under internal and external threat, the security forces must take charge
+        claim: >
+          When the nation faces subversion inside and enemies outside, normal politics must be
+          suspended and the armed forces and security services must lead, eliminating the internal
+          enemy until order is restored.
+        voiced: >
+          Sovereign is he who decides on the exception. The war against subversion has no front
+          line; the enemy is in the factory, the university and the parish. The armed forces,
+          guardians of the nation, cannot stand aside while it is destroyed from within.
+        you: >
+          You think that when a country faces subversion and outside threats, the military and
+          security services should take charge and suspend normal politics until order is restored.
+        because: >
+          Schmitt argued that every legal order depends on someone able to decide when the normal
+          rules no longer apply. Brazil's Higher War School, under Golbery, taught that the Cold
+          War was fought inside each nation, and that security and development required military
+          guidance. Proponents point to South Korea and Taiwan, which grew rich under security
+          states before liberalizing.
+        against:
+          - from: liberalism.classical
+            text: >
+              The "internal enemy" became anyone who disagreed: tens of thousands were disappeared in
+              Argentina, Chile, Guatemala and Indonesia, most of them unarmed.
+          - from: marxism.dependency
+            text: >
+              The national security doctrine was taught at US schools and served to open economies to
+              foreign capital; the "nation" it defended was its owners and their foreign partners.
+        sources:
+          - {author: Carl Schmitt, title: "Political Theology", year: 1922}
+          - {author: Golbery do Couto e Silva, title: "Geopolítica do Brasil", year: 1967}
+        traditions:
+          defining: [conservatism.reactionary]
+          typical: [conservatism.national, conservatism.neo, fascism.italian, fascism.clerical, conservatism.right-populism]
+          contested: [nationalism.developmental-state, nationalism.kemalism, religious.religious-zionism]
+          rejects: [liberalism.classical, marxism.ml, anarchism.communist, marxism.dependency, marxism.luxemburgism]
+        presupposes: [emergency.powers.sovereign-exception]
+        excludes: [siege.governance.constitutional-order, siege.governance.class-democracy, siege.governance.armed-federation]
+        tension: []
+        tags: [global-south, cold-war]
+        analysis:
+          gains: [finance-capital, comprador-capital, landed-capital, industrial-capital]
+          pays: [core-workers, peripheral-workers, peasantry]
+          mechanism: >
+            Military rule banned unions, strikes and peasant leagues and killed or jailed their
+            organizers, which cut real wages (in Chile after 1973, by large margins) and reversed
+            land reforms, while opening economies to foreign investors and creditors.
+          drain: sustains
+          law_of_value: extends
+
+      - id: siege.governance.siege-as-pretext
+        label: Sieges are real, but rulers use them to stay in power
+        claim: >
+          Threats are often real, but rulers of every kind invoke them to silence opponents and stay
+          in power, and the emergency becomes the normal way of governing. Every claim of siege must
+          be tested by asking who benefits and whether the measures end.
+        voiced: >
+          The state of emergency in which we live is not the exception but the rule. Egypt lived
+          under emergency law for thirty years. Every government that jails a journalist says the
+          country is under attack.
+        you: >
+          You think threats to a country are often real but are used by those in power to silence
+          opponents, and that emergencies tend to become permanent.
+        because: >
+          Egypt's emergency law ran almost continuously from 1981 to 2012, Syria's from 1963 to 2011.
+          Benjamin observed that for the oppressed the emergency is permanent; Agamben showed how
+          liberal states too have made the exception a normal technique of government, from
+          Guantánamo to anti-terror laws. Leaders who invoke siege seldom accept any test of when it
+          ends.
+        against:
+          - from: marxism.ml
+            text: >
+              Suspicion applied equally to Cuba and to Egypt erases the difference between a blockade
+              by the world's largest power and a government's war on its own people. The siege of a
+              revolution is not a pretext; it is policy in Washington.
+          - from: conservatism.reactionary
+            text: >
+              Suspicion of every emergency leaves a state unable to act when the danger is real.
+              Someone has to decide.
+        sources:
+          - {author: Giorgio Agamben, title: "State of Exception", year: 2003}
+          - {author: Walter Benjamin, title: "Theses on the Philosophy of History", year: 1940}
+        traditions:
+          defining: [commonsense.anti-politics]
+          typical: [liberalism.progressive, anarchism.insurrectionary, anarchism.communist, marxism.western, liberalism.classical, religious.post-islamism]
+          contested: [marxism.third-camp, marxism.trotskyism]
+          rejects: [marxism.ml, conservatism.reactionary]
+        presupposes: []
+        excludes: []
+        tension: [siege.governance.revolutionary-dictatorship, siege.governance.emergency-with-sunset]
+        tags: [global-south]
+        analysis:
+          gains: [professional-managerial, core-workers]
+          pays: []
+          mechanism: >
+            Testing every emergency claim protects journalists, unions and opposition from
+            repression, and when applied equally to besieged revolutions and to governments allied
+            with the core it weakens the case for defending the former against sanctions.
+          drain: none
+          law_of_value: none
+
+      - id: siege.governance.mobilize-and-elect
+        label: Arm and organize the people, and keep elections and pluralism
+        claim: >
+          A besieged government of the poor should defend itself by organizing and arming the
+          people, through militias, communal councils and mass organizations, while keeping
+          elections, other parties and a press, so that its legitimacy rests on the vote as well as
+          the barricade.
+        voiced: >
+          The people in arms and the people at the ballot box are the same people. We held
+          elections in the middle of the war, and we won them. Every attack we answered with more
+          organization, more councils, more militia, and more votes.
+        you: >
+          You think a besieged popular government should arm and organize its supporters while still
+          holding elections and allowing opposition.
+        because: >
+          Nicaragua held contested elections in 1984 under the Contra war; Venezuela survived the
+          2002 coup when the poor of Caracas came down from the hills, and later built militias and
+          communal councils while holding repeated elections. Combining mass mobilization with
+          electoral legitimacy denies the enemy the argument of dictatorship and keeps the
+          government answerable to its base.
+        against:
+          - from: marxism.leninism
+            text: >
+              The Sandinistas lost the 1990 election to a candidate backed by US money after a decade
+              of war and blockade; elections under siege are fought with the enemy's resources. Chile
+              mobilized and voted, and was destroyed.
+          - from: liberalism.classical
+            text: >
+              Elections in which the government controls the militias, the courts and the electoral
+              council are not free. Venezuela's opposition was jailed and barred while the votes went
+              on.
+        sources:
+          - {author: Marta Harnecker, title: "A World to Build: New Paths Toward Twenty-First Century Socialism", year: 2015}
+          - {author: Hugo Chávez and Marta Harnecker, title: "Understanding the Venezuelan Revolution", year: 2005}
+        traditions:
+          defining: [nationalism.bolivarianism]
+          typical: [socdem.left-populism, religious.liberation-theology, socdem.democratic-socialism, nationalism.peronism, marxism.guevarism]
+          contested: [marxism.ml, marxism.trotskyism]
+          rejects: [liberalism.classical, conservatism.neo]
+        presupposes: [intl.sovereignty.nations-set-own-course]
+        excludes: [siege.governance.national-security-state]
+        tension: [siege.governance.revolutionary-dictatorship, siege.governance.constitutional-order]
+        tags: [global-south]
+        analysis:
+          gains: [reserve-army, peripheral-workers, peasantry]
+          pays: [comprador-capital, finance-capital]
+          mechanism: >
+            Mass organizations and militias give the urban and rural poor a direct role in defending
+            redistribution of oil revenue and land, while private owners keep most of the economy and
+            can use capital flight, shortages and foreign sanctions against the government.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            Marxists dispute whether the Bolivarian process could survive without expropriating
+            capital; liberals dispute the fairness of its later elections.
+          consciousness: hegemonic
