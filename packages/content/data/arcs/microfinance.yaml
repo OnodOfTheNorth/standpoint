@@ -1,0 +1,420 @@
+id: arc.microfinance
+title: Tuesdays
+blurb: Forty women under a mango tree, a ৳850 installment, and a branch target of ninety-nine percent.
+role: You are a field officer for a microcredit NGO, collecting weekly installments.
+place: A riverbank district in Kurigram, northern Bangladesh
+start: arc.microfinance.01
+escalation: arc.microfinance.05
+pressure: [arc.microfinance.03]
+tags: [economy, world, commonsense]
+nodes:
+  - id: arc.microfinance.01
+    type: scene
+    title: The installment
+    text: >
+      Kurigram, northern Bangladesh. Every Tuesday you collect installments from forty women under a mango
+      tree. Your branch target is 99 percent on time. Rahima has missed this week's ৳850: her husband's
+      rickshaw was stolen, and the river took half her plot. Under the group rules, the other women owe it
+      for her. They are looking at you.
+    why: This asks what you think a debt owes to the person who carries it, and what the lender owes back.
+    premises:
+      - id: no-loan
+        text: The premise that Rahima should have been lent the money in the first place.
+        evidence: [{position: money.nature.anti-usury, w: 1}]
+    conditions:
+      - id: if-flood
+        text: It depends whether the loss was her fault or the river's.
+        evidence: [{position: inequality.justice.earned-desert, w: 1}]
+    options:
+      - id: group
+        text: Ask the group to cover her. They signed for each other. That's what makes lending to them possible.
+        evidence:
+          - {position: capitalism.nature.free-exchange, w: 2}
+        consequence: The group pays, grumbling. Two of them stop speaking to Rahima.
+        next: arc.microfinance.02b
+      - id: pocket
+        text: Pay her ৳850 yourself, and say nothing at the branch.
+        set: {soft: true}
+        evidence:
+          - {position: solidarity.basis.moral, w: 2}
+        probe:
+          ask: Why pay it yourself?
+          options:
+            - text: It's what a decent person does.
+              cause: ideas
+              evidence: [{position: solidarity.basis.moral, w: 2}]
+            - text: What I have isn't only mine. Call it zakat.
+              cause: divine
+              evidence: [{position: inequality.justice.stewardship, w: 2}]
+            - text: Today her, tomorrow me. We're all one flood away from that plot.
+              cause: structures
+              evidence: [{position: solidarity.basis.shared-class, w: 2}]
+        consequence: Your wife asks where ৳850 went. It is a week of fish.
+        next: arc.microfinance.02a
+      - id: reschedule
+        text: Reschedule her loan. The rules allow it, whatever the branch manager says.
+        set: {soft: true}
+        evidence:
+          - {position: finance.control.prudential, w: 2}
+        consequence: The branch manager signs it, and writes your name on a separate list.
+        next: arc.microfinance.02a
+      - id: top-up
+        text: Offer her a bigger loan to clear this one. She needs more capital, not less.
+        evidence:
+          - {position: poverty.cause.bad-institutions, w: 2}
+        consequence: Rahima now owes ৳45,000 over two years. Your numbers look excellent.
+        next: arc.microfinance.02b
+      - id: example
+        text: Make an example of her. The others pay on time, and so can she.
+        evidence:
+          - {position: inequality.justice.earned-desert, w: 2}
+          - {position: cs.hard-work.effort-pays, w: 1}
+        consequence: Rahima pays on Thursday. Nobody asks where the money came from.
+        next: arc.microfinance.02b
+
+  - id: arc.microfinance.02a
+    type: explanation
+    title: The cow
+    text: >
+      Rahima took ৳30,000 for a cow. The cow is fine. The river took half the land it grazed, and her milk
+      sells to a dairy collector at whatever he offers. She now borrows from the moneylender to pay you on
+      Tuesdays. Why can't she get out?
+    why: This asks what kind of cause you reach for when you explain why the poor stay in debt.
+    options:
+      - id: river
+        text: The river. Kurigram loses land every monsoon, and no loan survives that.
+        cause: nature
+        evidence:
+          - {position: poverty.cause.geography, w: 3}
+        next: arc.microfinance.03
+      - id: rate
+        text: Twenty-four percent on a cow that earns ten. The sums were never going to work.
+        cause: structures
+        evidence:
+          - {position: capitalism.nature.usury-finance, w: 2}
+          - {position: money.nature.anti-usury, w: 1}
+        next: arc.microfinance.03
+      - id: milk
+        text: The dairies set the milk price, the lenders set the interest. Her work makes everyone money but her.
+        cause: structures
+        evidence:
+          - {position: cs.hard-work.others-profit, w: 3}
+        next: arc.microfinance.03
+      - id: husband
+        text: Her husband. The loans are made to women, and the money is spent by men.
+        cause: culture
+        evidence:
+          - {position: feminism.subordination.barriers-and-bias, w: 2}
+        next: arc.microfinance.03
+
+  - id: arc.microfinance.02b
+    type: voices
+    title: The tea stall
+    text: >
+      At the tea stall, the television shows a microcredit pioneer receiving another award. The imam, waiting
+      for his tea, has an opinion. Who's right?
+    voices:
+      - {name: "The pioneer, on television", says: "The poor are not lazy. They are unbanked. Give a woman capital and she will build a business and a future."}
+      - {name: The imam, says: "Interest is riba. You charge widows twenty-four percent and call it charity. God has forbidden it."}
+    why: This asks what you think credit does for the poor, and whether lending at interest to them is right.
+    options:
+      - id: pioneer
+        text: The pioneer. Women without collateral were shut out of credit, and these loans let them in.
+        cause: structures
+        evidence:
+          - {position: poverty.cause.bad-institutions, w: 2}
+          - {position: feminism.subordination.barriers-and-bias, w: 1}
+        next: arc.microfinance.03
+      - id: imam
+        text: The imam. Lend to the poor, by all means, but not for profit.
+        cause: divine
+        evidence:
+          - {position: money.nature.anti-usury, w: 3}
+        next: arc.microfinance.03
+      - id: land
+        text: Both miss it. These women don't need loans. They need land and a decent price for what they make.
+        cause: structures
+        evidence:
+          - {position: cs.hard-work.others-profit, w: 2}
+        next: arc.microfinance.03
+      - id: pool
+        text: Both miss it. The women should pool their own savings and lend to each other, no outsiders.
+        cause: interests
+        evidence:
+          - {position: solidarity.basis.mutual-aid, w: 3}
+        next: arc.microfinance.03
+
+  - id: arc.microfinance.03
+    type: pressure
+    title: The courtyard
+    tests: profit.legitimacy.fair-not-gouging
+    text: >
+      Your collection rate slips to 96 percent. Officers under 98 lose the quarterly bonus, ৳6,000, and any
+      hope of the Dhaka transfer you applied for. "Sit in Rahima's courtyard until she pays," the branch
+      manager says. "Take two women from her group. Shame works faster than letters."
+    why: This puts your own pay and prospects against how hard you think a lender may squeeze.
+    options:
+      - id: refuse
+        text: Refuse. A lender that collects by shame has stopped being a charity.
+        pressure: principle
+        cost: No bonus. The transfer goes to a colleague with 99.4 percent.
+        evidence:
+          - {position: profit.legitimacy.fair-not-gouging, w: 2}
+        next: arc.microfinance.04
+      - id: sit
+        text: Sit in the courtyard. She signed, and the money belongs to the other borrowers too.
+        pressure: interest
+        cost: She pays by evening. She sold the calf to the moneylender at half its price.
+        evidence:
+          - {position: profit.legitimacy.earned-reward, w: 1}
+          - {position: inequality.justice.earned-desert, w: 1}
+        next: arc.microfinance.04
+      - id: hour
+        text: Sit for one hour, for the record, and leave without taking a taka.
+        pressure: mixed
+        cost: The manager reads your report and puts a question mark next to your name.
+        evidence:
+          - {position: finance.control.prudential, w: 1}
+        next: arc.microfinance.04
+
+  - id: arc.microfinance.04
+    type: line
+    title: The rate
+    text: >
+      Head office asks field staff to comment on interest rates for next year. Here are the rates that
+      exist in this district. Where would you draw the line on what's fair to charge?
+    cases:
+      - Nothing, from the women's own pooled savings
+      - 8 percent, what a state bank charges a farmer, when it lends at all
+      - 24 percent, your NGO's rate, covering staff, defaults and growth
+      - 40 percent, a for-profit lender that pays dividends to investors abroad
+      - 10 percent a month, the village moneylender
+    why: This asks what you think lending to the poor should cost, and who should do it.
+    premises:
+      - id: no-line
+        text: The premise that anyone but the borrower and lender should set the rate.
+        evidence: [{position: capitalism.nature.free-exchange, w: 2}]
+    options:
+      - id: nothing
+        text: Only the first. Profit on a poor woman's debt is wrong, whoever takes it.
+        evidence:
+          - {position: money.nature.anti-usury, w: 3}
+        next: arc.microfinance.05
+      - id: state
+        text: Up to the second. Credit for the poor should be a public service, not a business.
+        evidence:
+          - {position: finance.control.public-banks, w: 3}
+        next: arc.microfinance.05
+      - id: costs
+        text: Up to the third. Lending in the villages costs money. Cap the rate, regulate it, and let it run.
+        evidence:
+          - {position: finance.control.prudential, w: 3}
+        next: arc.microfinance.05
+      - id: investors
+        text: Up to the fourth. Without a return, the capital goes elsewhere and nobody lends at all.
+        evidence:
+          - {position: profit.legitimacy.earned-reward, w: 3}
+        next: arc.microfinance.05
+      - id: all
+        text: All of them. Adults can choose. Competition brings the rates down faster than any rule.
+        evidence:
+          - {position: capitalism.nature.free-exchange, w: 3}
+        next: arc.microfinance.05
+
+  - id: arc.microfinance.05
+    type: escalation
+    title: The committee
+    recap: In northern Bangladesh, borrowers of microcredit NGOs are drowning in weekly repayments after a flood.
+    text: >
+      After the monsoon floods, a borrowers' committee in six villages declares a repayment strike: no
+      installments until the NGOs write off the flood season's interest. Head office tells field officers
+      to collect anyway, with the union council chairman and two policemen alongside. Rahima sits on the
+      committee. Your centre meets Tuesday.
+    why: The middle option is gone. This records which way you break when lenders and borrowers collide.
+    options:
+      - id: collect
+        text: Collect with the chairman. If one village stops paying, every lender stops lending to the poor.
+        side: {axis: class, dir: order}
+        evidence:
+          - {position: profit.legitimacy.earned-reward, w: 2}
+          - {position: poverty.cause.bad-institutions, w: 1}
+        consequence: Your centre pays 80 percent. Three women leave for Dhaka the following week.
+        next: arc.microfinance.06
+      - id: police
+        text: Collect, and let the police come. A debt is a debt, flood or no flood.
+        side: {axis: class, dir: order}
+        evidence:
+          - {position: capitalism.nature.free-exchange, w: 2}
+          - {position: inequality.justice.earned-desert, w: 1}
+        consequence: One woman's tin roof is taken in lieu of payment. It is photographed.
+        next: arc.microfinance.06
+      - id: warn
+        text: Refuse to collect, and tell the committee exactly what head office is planning.
+        side: {axis: class, dir: dispossessed}
+        set: {struck: true}
+        evidence:
+          - {position: capitalism.nature.usury-finance, w: 2}
+          - {position: cs.hard-work.others-profit, w: 1}
+        consequence: The chairman's men find empty houses on Tuesday. Your branch manager finds out who told.
+        next: arc.microfinance.06
+      - id: officers
+        text: Refuse, and get the field officers to back the write-off. The same targets squeeze us and them.
+        side: {axis: class, dir: dispossessed}
+        set: {struck: true}
+        evidence:
+          - {position: solidarity.basis.shared-class, w: 3}
+        probe:
+          ask: What do field officers and borrowers have in common?
+          options:
+            - text: The same head office squeezes both, one through targets, one through installments.
+              cause: structures
+              evidence: [{position: solidarity.basis.shared-class, w: 2}]
+            - text: Nothing much. But the NGOs can't collect without us, and that's leverage.
+              cause: interests
+              evidence: [{position: cs.hard-work.others-profit, w: 1}]
+        consequence: Eleven officers of thirty sign. Head office calls it "a misunderstanding" and freezes hiring.
+        next: arc.microfinance.06
+      - id: quit
+        text: Resign and go home to your parents in Rangpur.
+        side: {axis: class, dir: neither}
+        set: {quit: true}
+        evidence:
+          - {position: cs.not-political.keep-head-down, w: 2}
+        consequence: Your replacement starts Tuesday. She is twenty-three and has a target.
+        next: arc.microfinance.06
+
+  - id: arc.microfinance.06
+    type: allocation
+    title: The flood fund
+    text: >
+      The government and a foreign donor put ৳50 crore into a flood fund for the district's borrowers. A
+      committee of officials, NGOs and two borrowers' representatives divides it. You sit on it for the
+      field staff. Divide ten points.
+    why: This asks who you think should carry the cost of a disaster, and what kind of credit you want after it.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: writeoff
+          text: Write off every flood-season loan outright
+          evidence: [{position: profit.legitimacy.fair-not-gouging, w: 1}]
+        - id: recapitalize
+          text: Recapitalize the NGOs so lending can restart
+          evidence: [{position: finance.control.prudential, w: 1}]
+        - id: state-bank
+          text: A state agricultural bank branch in every union, lending at 4 percent
+          evidence: [{position: finance.control.public-banks, w: 1}]
+        - id: savings
+          text: Seed money for women's savings groups that lend only their own money
+          evidence: [{position: solidarity.basis.mutual-aid, w: 1}]
+        - id: embankment
+          text: Embankments against the river
+          evidence: [{position: poverty.cause.geography, w: 1}]
+    options:
+      - id: done
+        text: Done
+        next:
+          - {if: {flag: {key: struck, eq: true}}, to: arc.microfinance.07a}
+          - {if: {flag: {key: quit, eq: true}}, to: arc.microfinance.08}
+          - {to: arc.microfinance.07b}
+
+  - id: arc.microfinance.07a
+    type: tradeoff
+    title: The list
+    text: >
+      The NGOs circulate a list of "wilful defaulters" to every lender in the district. Rahima is on it. So
+      are you, for "incitement," and no NGO will hire you. The committee asks you to stay and run a savings
+      group from its own money. A garment factory in Gazipur is hiring at ৳12,500 a month.
+    why: This sets a steady wage against staying with the people you sided with.
+    options:
+      - id: stay
+        text: Stay and run the savings group. Their money, their rules, no outside lender.
+        evidence:
+          - {position: solidarity.basis.mutual-aid, w: 3}
+        consequence: The group lends ৳180,000 in its first year. One loan, to a cousin of the treasurer, is never repaid.
+        next: arc.microfinance.08
+      - id: gazipur
+        text: Go to Gazipur. A wage is a wage, and nobody there has seen the list.
+        evidence:
+          - {position: cs.not-political.keep-head-down, w: 2}
+        consequence: You sew collars for ten hours a day. The shirts are sold in Europe for more than your weekly wage.
+        next: arc.microfinance.08
+      - id: back
+        text: Apologize to head office and ask for your job back. Better inside, making it less harsh.
+        evidence:
+          - {position: finance.control.prudential, w: 2}
+        consequence: They take you back at a lower grade, in a district four hours from home.
+        next: arc.microfinance.08
+
+  - id: arc.microfinance.07b
+    type: tradeoff
+    title: Rahima's door
+    text: >
+      Tuesday, with the union council chairman. Rahima has ৳600 of her ৳850. She takes off her daughter's
+      gold earrings and holds them out for the rest. The chairman nods: take them. The women of the centre
+      are watching from the yard.
+    why: This sets the rules of the loan against the person standing in front of you.
+    options:
+      - id: take
+        text: Take them. She offered, and every woman watching has paid in full.
+        evidence:
+          - {position: capitalism.nature.free-exchange, w: 2}
+          - {position: inequality.justice.earned-desert, w: 1}
+        consequence: Your centre's repayment rate is 100 percent this week. The daughter stops coming to the meetings.
+        next: arc.microfinance.08
+      - id: give
+        text: Refuse the earrings and pay the ৳250 yourself. What I have was given to me to share.
+        evidence:
+          - {position: inequality.justice.stewardship, w: 2}
+          - {position: solidarity.basis.moral, w: 1}
+        consequence: The chairman tells your branch manager you are "too soft for the field."
+        next: arc.microfinance.08
+      - id: overdue
+        text: Take the ৳600, refuse the earrings, and record the rest as overdue. Let the rules handle it.
+        evidence:
+          - {position: finance.control.prudential, w: 2}
+        consequence: Rahima's file is flagged. Her next loan will be smaller, at the same rate.
+        next: arc.microfinance.08
+
+  - id: arc.microfinance.08
+    type: explanation
+    title: The annual report
+    text: >
+      Ten years on, Rahima's daughter sews shirts in Gazipur and sends money home for the installments. The
+      NGO's annual report shows record repayment and a glossy photo of a smiling borrower. What was
+      microcredit, in the end?
+    why: This asks what kind of cause you reach for when you explain what microcredit did.
+    options:
+      - id: ladder
+        text: A ladder. Plenty of women climbed it. The ones who fell had bad luck or bad husbands.
+        cause: individuals
+        evidence:
+          - {position: poverty.cause.bad-institutions, w: 1}
+          - {position: cs.hard-work.effort-pays, w: 2}
+      - id: usury
+        text: Usury with a kind face. God forbade it for good reason.
+        cause: divine
+        evidence:
+          - {position: money.nature.anti-usury, w: 2}
+      - id: pipeline
+        text: A pipe from the poorest courtyards in the world to investors who have never seen one.
+        cause: structures
+        evidence:
+          - {position: poverty.cause.drain, w: 2}
+          - {position: capitalism.nature.usury-finance, w: 1}
+      - id: wages
+        text: A way to make poor women's work pay lenders and dairies, then send their daughters to the factories.
+        cause: structures
+        evidence:
+          - {position: cs.hard-work.others-profit, w: 2}
+      - id: lazy
+        text: Women who worked hard got ahead. Some just didn't want it enough.
+        cause: culture
+        evidence:
+          - {position: poverty.cause.culture, w: 2}
+          - {position: inequality.justice.earned-desert, w: 1}
+      - id: river
+        text: Nothing a loan could fix. The river decides who keeps their land.
+        cause: nature
+        evidence:
+          - {position: poverty.cause.geography, w: 2}

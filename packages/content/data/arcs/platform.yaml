@@ -1,0 +1,421 @@
+id: arc.platform
+title: Green Jackets
+blurb: A fare cut pushed overnight, a WhatsApp group with 212 unread messages, and a company that says you are its partner.
+role: You drive a motorbike taxi for a ride-hailing app and run the WhatsApp group of your drivers' base camp.
+place: A drivers' base camp under a flyover in South Jakarta, Indonesia
+start: arc.platform.01
+escalation: arc.platform.05
+pressure: [arc.platform.04]
+tags: [economy, strategy, state]
+nodes:
+  - id: arc.platform.01
+    type: scene
+    title: The update
+    text: >
+      Jakarta, five in the morning. Overnight the app cut base fares by a fifth and launched "Priority": pay
+      Rp 50,000 a week and you get orders first. You drive a motorbike taxi and run the WhatsApp group for
+      the forty drivers at the base camp under the Kuningan flyover. The group has 212 unread messages. They
+      are waiting for you to say something.
+    why: This asks what you do first when the terms of your work are cut, act together, appeal to the law, or look after yourself.
+    premises:
+      - id: take-or-leave
+        text: The premise that anyone needs to say anything. The fare is the app's to set. Take it or leave it.
+        evidence: [{position: wage.nature.voluntary-exchange, w: 2}]
+    conditions:
+      - id: other-camps
+        text: It depends what the other base camps do.
+        evidence: [{position: solidarity.basis.tactical, w: 1}]
+    options:
+      - id: strike
+        text: "Post it: everyone off the app on Thursday, all day. Then call the other base camps."
+        set: {route: strike}
+        evidence:
+          - {position: change.means.strike-and-direct-action, w: 3}
+        probe:
+          ask: What makes forty drivers who compete for the same orders a "we"?
+          options:
+            - text: Same app, same cut, same boss, whatever it calls us.
+              cause: structures
+              evidence: [{position: solidarity.basis.shared-class, w: 2}]
+            - text: Alone each of us is nothing to them. Together we are Thursday's traffic.
+              cause: interests
+              evidence: [{position: solidarity.basis.tactical, w: 2}]
+            - text: Their profit is our fare. It is that simple.
+              cause: interests
+              evidence: [{position: workplace.conflict.structural-antagonism, w: 2}]
+        consequence: Thirty-one thumbs up within the hour. The app sends you a polite notice reminding partners of the code of conduct.
+        next: arc.platform.02
+      - id: petition
+        text: Draft a letter to the transport ministry. There is a regulation on commissions. Make them enforce it.
+        set: {route: law}
+        evidence:
+          - {position: change.means.lawful-persuasion, w: 3}
+        consequence: The ministry acknowledges receipt. The fares stay cut while it reads.
+        next: arc.platform.02
+      - id: priority
+        text: Pay for Priority. Fifty thousand rupiah for a week of first pick. That's business.
+        set: {route: solo}
+        evidence:
+          - {position: wage.nature.voluntary-exchange, w: 2}
+          - {position: solidarity.basis.self-interest, w: 1}
+        consequence: Your orders double. Your friends' orders halve. They notice.
+        next: arc.platform.02
+      - id: switch
+        text: Move to the rival app for a while. Two companies fighting over drivers is the only raise you'll ever get.
+        set: {route: solo}
+        evidence:
+          - {position: change.means.individual-exit, w: 2}
+          - {position: work.future.flexible-markets, w: 1}
+        consequence: The rival app cuts its fares the following Monday.
+        next: arc.platform.02
+      - id: pray
+        text: Say nothing and drive. Your daily bread comes from God, not from an app.
+        set: {route: solo}
+        evidence:
+          - {position: cs.hard-work.god-rewards, w: 2}
+        consequence: You do eleven hours and earn what you used to earn in eight.
+        next: arc.platform.02
+
+  - id: arc.platform.02
+    type: explanation
+    title: Partner
+    text: >
+      The app's legal letter is polite. Drivers are "partners", independent businesspeople, and the company
+      is only a technology platform. You own the motorbike and pay for the petrol, the phone, the data and the
+      parking. The company sets the price, decides who gets which order, and can switch your account off
+      without saying why. What are you, then?
+    why: This asks what you think the relation between drivers and the app really is, and what kind of cause you reach for.
+    premises:
+      - id: word-game
+        text: The premise that the word matters. Call it what you like; what counts is the money at the end of the day.
+        evidence: [{position: workplace.conflict.pluralist-bargaining, w: 1}]
+    options:
+      - id: worker
+        text: A worker with no contract, and a boss that never has to pay a sick day.
+        cause: structures
+        evidence:
+          - {position: workplace.conflict.structural-antagonism, w: 3}
+        next: [{if: {flag: {key: route, eq: strike}}, to: arc.platform.03a}, {to: arc.platform.03b}]
+      - id: owner
+        text: A small businessman. I own my bike and my hours. Nobody clocks me in.
+        cause: ideas
+        evidence:
+          - {position: wage.nature.voluntary-exchange, w: 3}
+        next: [{if: {flag: {key: route, eq: strike}}, to: arc.platform.03a}, {to: arc.platform.03b}]
+      - id: program
+        text: A servant of a program written to squeeze me by people who have never been rained on.
+        cause: interests
+        evidence:
+          - {position: technology.nature.capitals-weapon, w: 3}
+        next: [{if: {flag: {key: route, eq: strike}}, to: arc.platform.03a}, {to: arc.platform.03b}]
+      - id: partner
+        text: A partner with a bad deal. Fix the terms and the partnership is fine.
+        cause: interests
+        evidence:
+          - {position: workplace.conflict.harmony-of-interests, w: 2}
+        next: [{if: {flag: {key: route, eq: strike}}, to: arc.platform.03a}, {to: arc.platform.03b}]
+      - id: passing
+        text: Someone between jobs. Nobody does this forever.
+        cause: chance
+        evidence:
+          - {position: change.means.individual-exit, w: 2}
+        next: [{if: {flag: {key: route, eq: strike}}, to: arc.platform.03a}, {to: arc.platform.03b}]
+
+  - id: arc.platform.03a
+    type: voices
+    title: Who's in
+    text: >
+      Wednesday night at the base camp. Two of your drivers are arguing about who should be asked to strike
+      tomorrow, and everyone else is looking at you.
+    voices:
+      - {name: Pak Darto, says: "Full-timers with families. The students who drive for pocket money and the ones who bought Priority dragged the fares down. Let them sit it out."}
+      - {name: Rina, says: "Everyone with the app on their phone. Couriers, car drivers, students, Priority people. If one green jacket is working, the app says the strike failed."}
+    why: This asks where you draw the line of who is on your side, and on what basis.
+    conditions:
+      - id: priority-quit
+        text: It depends whether the Priority drivers cancel their subscriptions first.
+        evidence: [{position: solidarity.basis.tactical, w: 1}]
+    options:
+      - id: darto
+        text: Darto.
+        cause: interests
+        evidence:
+          - {position: labor.division.outsiders-undercut-us, w: 3}
+        next: arc.platform.04
+      - id: rina
+        text: Rina.
+        cause: structures
+        evidence:
+          - {position: solidarity.basis.shared-class, w: 3}
+        next: arc.platform.04
+      - id: passengers
+        text: Both miss it. Win over the passengers and the food stalls, or ten thousand drivers are just a traffic jam.
+        cause: interests
+        evidence:
+          - {position: solidarity.basis.tactical, w: 2}
+        next: arc.platform.04
+      - id: permit
+        text: Both miss it. Without a police permit, nobody is in. Get the permit first.
+        cause: ideas
+        evidence:
+          - {position: change.means.lawful-persuasion, w: 2}
+        next: arc.platform.04
+
+  - id: arc.platform.03b
+    type: tradeoff
+    title: The draft
+    text: >
+      The ministry circulates a draft regulation and asks drivers for comments by Friday. Drivers would
+      become employees: a minimum wage, health insurance, a pension. Also fixed shifts, and a cap of forty
+      thousand drivers in Jakarta, chosen by the company. There are ninety thousand of you. Which matters
+      more?
+    why: This sets security against open access to work, and asks who you think should own the arrangement.
+    premises:
+      - id: ministry
+        text: The premise that the ministry is writing this for drivers. The company's lawyers saw it first.
+        evidence: [{position: workplace.conflict.structural-antagonism, w: 1}]
+    options:
+      - id: employee
+        text: Take it. A wage, insurance and a pension are worth a shift pattern.
+        evidence:
+          - {position: work.future.dignity-of-work, w: 3}
+        consequence: Fifty thousand drivers start looking for other work. The ones who stay start looking at each other.
+        next: arc.platform.04
+      - id: cap
+        text: Stay partners, but write a hard cap on the commission into law and enforce it.
+        evidence:
+          - {position: workplace.conflict.pluralist-bargaining, w: 2}
+        consequence: The ministry likes the cap. The company finds three new fees that are not called commission.
+        next: arc.platform.04
+      - id: open
+        text: Neither. Keep the door open. Fifty thousand people need the work more than anyone needs a pension.
+        evidence:
+          - {position: work.future.flexible-markets, w: 3}
+        consequence: The draft is shelved. Fares stay where the app put them.
+        next: arc.platform.04
+      - id: coop
+        text: Neither. The drivers should own the app. A cooperative pays its members, not shareholders in Singapore.
+        evidence:
+          - {position: work.future.cooperatives, w: 3}
+        consequence: Three base camps pledge money for a drivers' app. Nobody yet knows how to build one.
+        next: arc.platform.04
+
+  - id: arc.platform.04
+    type: pressure
+    title: The airport
+    tests: solidarity.basis.shared-class
+    text: >
+      The app's city manager buys you coffee. Your base camp can have the airport queue, the best fares in
+      Jakarta, for six months, if your forty sign a pledge to stay out of "illegal actions." Two hundred drivers
+      from other camps lose it. You are three instalments behind on the motorbike, and the leasing company's
+      collectors have your plate number.
+    why: This puts your own debt and your group's gain against the drivers outside your group.
+    premises:
+      - id: pledge-void
+        text: The premise that a pledge to a company binds anyone. It's a piece of paper.
+        evidence: [{position: solidarity.basis.tactical, w: 1}]
+    options:
+      - id: refuse
+        text: Refuse. The airport queue isn't worth selling two hundred drivers.
+        pressure: principle
+        cost: The queue goes to a camp in Cengkareng. The collectors take your motorbike from outside a mosque on Saturday.
+        evidence:
+          - {position: solidarity.basis.shared-class, w: 3}
+        next: arc.platform.05
+      - id: sign
+        text: Sign. Your forty come first; the others have their own admins.
+        pressure: interest
+        cost: Your forty earn half again as much. The other camps call you the app's dogs, and six of your drivers leave for them.
+        evidence:
+          - {position: solidarity.basis.self-interest, w: 2}
+        next: arc.platform.05
+      - id: both
+        text: Sign, take the queue, and walk out anyway when it counts.
+        pressure: mixed
+        cost: The day you walk out, the app cancels the deal and switches off eleven accounts, yours first. The motorbike goes the week after.
+        evidence:
+          - {position: solidarity.basis.tactical, w: 2}
+        next: arc.platform.05
+
+  - id: arc.platform.05
+    type: escalation
+    title: Thursday
+    recap: In Jakarta, app motorbike-taxi drivers have walked off the app over fare cuts and their status as "partners."
+    text: >
+      Evening. Ten thousand drivers in green jackets fill the road outside the company's tower. A police
+      armoured truck pushes through the crowd and runs over a food courier. He dies on the asphalt. By nine
+      the tower's lobby glass is gone and the police are firing tear gas down the side streets. Your group
+      chat wants to know where you are.
+    why: The middle option is gone. This records which way you break when drivers and the police collide.
+    options:
+      - id: tower
+        text: Go to the tower. You ride with the crowd tonight.
+        side: {axis: class, dir: dispossessed}
+        set: {joined: true}
+        evidence:
+          - {position: change.means.strike-and-direct-action, w: 2}
+          - {position: police.role.class-repression, w: 2}
+        consequence: You spend the night in the smoke. By morning eight hundred drivers are in custody and the courier's face is on walls across the city.
+        next: [{if: {flag: {key: joined, eq: true}}, to: arc.platform.06a}, {to: arc.platform.06b}]
+      - id: convoy
+        text: Go to the hospital and organize the convoy that takes him home. No glass, and no going home either.
+        side: {axis: class, dir: dispossessed}
+        set: {joined: true}
+        evidence:
+          - {position: solidarity.basis.shared-class, w: 2}
+        consequence: Four thousand motorbikes follow the body to the cemetery. The president's office calls the family.
+        next: [{if: {flag: {key: joined, eq: true}}, to: arc.platform.06a}, {to: arc.platform.06b}]
+      - id: home
+        text: Go home, and tell your group to do the same. Broken glass is what the police were waiting for.
+        side: {axis: class, dir: neither}
+        set: {joined: false}
+        evidence:
+          - {position: change.means.lawful-persuasion, w: 1}
+        consequence: Half your group goes home. The other half stops answering.
+        next: [{if: {flag: {key: joined, eq: true}}, to: arc.platform.06a}, {to: arc.platform.06b}]
+      - id: clear
+        text: Help clear the road. A death is a crime for a court. A riot only makes more deaths.
+        side: {axis: class, dir: order}
+        set: {joined: false}
+        evidence:
+          - {position: police.role.order-maintenance, w: 3}
+        consequence: An officer thanks you. A photograph of you beside him travels further than you do.
+        next: [{if: {flag: {key: joined, eq: true}}, to: arc.platform.06a}, {to: arc.platform.06b}]
+      - id: surge
+        text: Turn the app on. With everyone else off, fares are triple tonight.
+        side: {axis: class, dir: order}
+        set: {joined: false}
+        evidence:
+          - {position: solidarity.basis.self-interest, w: 2}
+          - {position: change.means.individual-exit, w: 1}
+        consequence: You earn a week's money in one night. Somebody screenshots your green dot on the map.
+        next: [{if: {flag: {key: joined, eq: true}}, to: arc.platform.06a}, {to: arc.platform.06b}]
+
+  - id: arc.platform.06a
+    type: tradeoff
+    title: Ten percent
+    text: >
+      Two weeks later the government announces a deal: commission capped at ten percent. The company accepts,
+      then raises passenger prices by fifteen percent. Factory workers who ride to the industrial estates now
+      pay more than the bus. The officer who drove the truck has a desk job. The drivers' association is
+      offered a seat at the ministry, if the protests stop.
+    why: This asks what you do with a win that someone else, also working, pays for.
+    conditions:
+      - id: officer
+        text: It depends whether the officer goes on trial.
+        evidence: [{position: police.role.class-repression, w: 1}]
+    options:
+      - id: seat
+        text: Take the seat. You won. Now negotiate like people who won.
+        evidence:
+          - {position: workplace.conflict.pluralist-bargaining, w: 3}
+        consequence: The association gets an office in the ministry building. Within a year its leaders have stopped driving.
+        next: arc.platform.07
+      - id: riders
+        text: Refuse until the officer is tried and passenger prices come back down. The riders are workers too.
+        evidence:
+          - {position: solidarity.basis.shared-class, w: 2}
+          - {position: workplace.conflict.structural-antagonism, w: 1}
+        consequence: The protests go on, smaller each week. Passenger prices stay up. So does the ten percent.
+        next: arc.platform.07
+      - id: ours
+        text: Passenger prices are the company's business. Drivers got theirs. Riders can take the bus.
+        evidence:
+          - {position: solidarity.basis.self-interest, w: 2}
+        consequence: Ridership falls by a tenth. So do orders, and so does what ten percent was worth.
+        next: arc.platform.07
+      - id: city
+        text: Push for the city to run its own app, at cost, like the buses.
+        evidence:
+          - {position: firm.ownership.public-municipal, w: 3}
+        consequence: The governor likes the idea. The company's lobbyists like the governor.
+        next: arc.platform.07
+
+  - id: arc.platform.06b
+    type: explanation
+    title: The old fares
+    text: >
+      A week after the riot, the app quietly restores the old fares and drops Priority. Your group got its
+      raise without marching, and some of them were driving that night. The courier's mother is on television
+      asking who drove the truck. Why did the company give in?
+    why: This asks what you think actually moved the company, and what kind of cause you reach for.
+    premises:
+      - id: not-given
+        text: The premise that it gave in. It waited for the cameras to leave.
+        evidence: [{position: technology.nature.capitals-weapon, w: 1}]
+    options:
+      - id: fear
+        text: Ten thousand people and a burning lobby. Nothing else moves them.
+        cause: interests
+        evidence:
+          - {position: change.means.strike-and-direct-action, w: 2}
+        next: arc.platform.07
+      - id: ministry
+        text: The ministry leaned on them. Rules got the fare back, not riots.
+        cause: ideas
+        evidence:
+          - {position: change.means.lawful-persuasion, w: 2}
+        next: arc.platform.07
+      - id: rival
+        text: The rival app was poaching their drivers. Competition did it.
+        cause: interests
+        evidence:
+          - {position: work.future.flexible-markets, w: 2}
+        next: arc.platform.07
+      - id: number
+        text: It's a program. They changed one number, and they'll change it back when nobody's looking.
+        cause: structures
+        evidence:
+          - {position: technology.nature.capitals-weapon, w: 2}
+        next: arc.platform.07
+      - id: god
+        text: God sees who works and who burns. The fare came back. Thank Him.
+        cause: divine
+        evidence:
+          - {position: cs.hard-work.god-rewards, w: 2}
+        next: arc.platform.07
+
+  - id: arc.platform.07
+    type: reason
+    title: The merger
+    text: >
+      A year later the app announces a merger with its only rival. One company, one price, and a trial of
+      driverless cars in the new capital. You are still on the road at five in the morning. What would make
+      this a decent job?
+    why: This asks what you think good work looks like and who should own the thing you work for.
+    premises:
+      - id: no-such
+        text: The premise that it can be a decent job. It's a stopgap, and it should stay one.
+        evidence: [{position: change.means.individual-exit, w: 1}]
+    options:
+      - id: coop
+        text: The drivers own the app. Cut the company out.
+        cause: structures
+        evidence:
+          - {position: work.future.cooperatives, w: 3}
+      - id: city
+        text: The city owns it, like the buses, and runs it at cost.
+        cause: structures
+        evidence:
+          - {position: firm.ownership.public-municipal, w: 2}
+      - id: contract
+        text: A contract, a wage and a union, like any other job.
+        cause: interests
+        evidence:
+          - {position: work.future.dignity-of-work, w: 2}
+          - {position: workplace.conflict.pluralist-bargaining, w: 1}
+      - id: rival
+        text: A second company. Competition is the only boss that listens.
+        cause: interests
+        evidence:
+          - {position: work.future.flexible-markets, w: 2}
+      - id: out
+        text: Nothing makes it decent. Save, buy a food stall, get out.
+        cause: individuals
+        evidence:
+          - {position: change.means.individual-exit, w: 3}
+      - id: patience
+        text: Honest work and patience. The rest is in God's hands.
+        cause: divine
+        evidence:
+          - {position: cs.hard-work.god-rewards, w: 2}
