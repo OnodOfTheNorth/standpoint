@@ -1,0 +1,812 @@
+# History, part 8: the Nakba of 1948, Indonesia 1965-66, the Cold War.
+# See history.yaml and the header of history-c.yaml for the index of history files.
+problematics:
+  # ------------------------------------------------------------------
+  - id: hist.nakba-1948
+    domain: history
+    layer: analysis
+    question: What happened to the Palestinians in 1947–1949, the Nakba?
+    plain: >-
+      In the war of 1947–49 in which the State of Israel was founded, some 700,000 to 750,000 Palestinian Arabs fled or were driven from
+      their homes. More than 400 villages were emptied and most were destroyed, and Israel barred the refugees from returning.
+      Palestinians call it the Nakba, the catastrophe. What happened?
+    short: the Nakba
+    importance: 2
+    region: history
+    positions:
+      - id: hist.nakba-1948.planned-expulsion
+        label: A planned ethnic cleansing of Palestine
+        claim: >-
+          The expulsion of the Palestinians was not an accident of war but the carrying out of a long-held Zionist aim: to empty the land
+          of as many Arabs as possible. Military plans, massacres and the destruction of villages achieved it, and the ban on return
+          made it permanent.
+        voiced: >-
+          "The Nakba was a deliberate, systematic ethnic cleansing. The Zionist leadership spoke of 'transfer' for decades; in 1948 it had
+          the army and the war to carry it out."
+        you: You see the Nakba as a planned expulsion of the Palestinian people.
+        because: >-
+          Masalha documents how "transfer" of the Arab population was discussed by Zionist leaders from the 1930s. Plan Dalet, adopted in
+          March 1948, authorized the destruction of villages that resisted and the expulsion of their people (Walid Khalidi). At Deir
+          Yassin in April 1948 around 100 villagers were killed, news that spread terror; in Lydda and Ramle in July some 50,000 or more
+          were driven out on Israeli orders. Of the depopulated villages, most were razed (All That Remains).
+        against:
+          - from: nationalism.zionism-labor
+            text: >-
+              Plan Dalet was a military plan to secure the Jewish state's territory against invading armies, not a blueprint for
+              expulsion; many Arabs stayed, and became Israeli citizens (Morris).
+          - from: liberalism.internationalist
+            text: >-
+              Arab leaders rejected the 1947 partition plan and the Arab states invaded in May 1948; the war, not a plan, produced most of
+              the flight.
+        sources:
+          - {author: Ilan Pappé, title: "The Ethnic Cleansing of Palestine", year: 2006}
+          - {author: Walid Khalidi, title: "Plan Dalet: Master Plan for the Conquest of Palestine", year: 1961}
+          - {author: Nur Masalha, title: "Expulsion of the Palestinians: The Concept of 'Transfer' in Zionist Political Thought, 1882–1948", year: 1992}
+          - {author: Walid Khalidi (ed.), title: "All That Remains: The Palestinian Villages Occupied and Depopulated by Israel in 1948", year: 1992}
+        traditions:
+          defining: [nationalism.palestinian]
+          typical: [nationalism.decolonial, marxism.third-worldism, marxism.ml, marxism.arab-socialism, religious.islamism-brotherhood]
+          rejects: [nationalism.zionism-labor, nationalism.zionism-revisionist, religious.religious-zionism]
+        presupposes: [settler.colonialism.ongoing-structure]
+        excludes: [hist.nakba-1948.war-of-independence]
+        analysis:
+          gains: [peasantry, peripheral-workers, reserve-army]
+          pays: [finance-capital]
+          mechanism: >-
+            Naming 1948 a planned expulsion grounds the refugees' right of return and claims to land and property, which challenges the
+            title of the Israeli state and the Jewish National Fund to the land taken, and the strategic alliance with core powers that
+            protects it.
+          drain: reduces
+          law_of_value: none
+      - id: hist.nakba-1948.ongoing-structure
+        label: Not a single event but an ongoing structure of settler colonialism
+        claim: >-
+          The Nakba did not end in 1949. Settler colonialism is a structure, not an event: the expulsion continued through military rule
+          over Arab citizens, the occupation of 1967, settlement building and the siege of Gaza. The Nakba is still happening.
+        voiced: >-
+          "Invasion is a structure, not an event. The Nakba is ongoing: in Sheikh Jarrah, in the Jordan Valley, in Gaza. We are not
+          remembering a catastrophe; we are living it."
+        you: You think the Nakba is still going on as a continuing process of dispossession.
+        because: >-
+          Wolfe defined settler colonialism by its logic of elimination of the native, which persists across generations. The Absentees'
+          Property Law of 1950 transferred refugees' land to the state; Arab citizens lived under military rule until 1966; since 1967
+          settlements in the West Bank have grown to hundreds of thousands of settlers. Sayegh described Zionism as settler colonialism in
+          1965; Rashid Khalidi frames a hundred years' war.
+        against:
+          - from: nationalism.zionism-labor
+            text: >-
+              Jews are indigenous to the land and returned to it as refugees from European persecution; the settler-colonial frame
+              erases both facts.
+          - from: liberalism.internationalist
+            text: >-
+              Treating every present conflict as one continuous Nakba rules out a negotiated settlement between two peoples who both now
+              live there.
+        sources:
+          - {author: Patrick Wolfe, title: "Settler Colonialism and the Elimination of the Native", year: 2006}
+          - {author: Fayez A. Sayegh, title: "Zionist Colonialism in Palestine", year: 1965}
+          - {author: Rashid Khalidi, title: "The Hundred Years' War on Palestine: A History of Settler Colonialism and Resistance, 1917–2017", year: 2020}
+        traditions:
+          defining: [nationalism.decolonial, nationalism.palestinian]
+          typical: [marxism.third-worldism, nationalism.indigenous-sovereignty, marxism.black-radical]
+          rejects: [nationalism.zionism-labor, nationalism.zionism-revisionist]
+        presupposes: [settler.colonialism.ongoing-structure]
+        excludes: [hist.nakba-1948.war-of-independence, hist.nakba-1948.population-exchange]
+        analysis:
+          gains: [peasantry, peripheral-workers, reserve-army]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >-
+            Reading the present through 1948 joins the refugees, the occupied and Arab citizens of Israel in one cause against the system of land
+            control, and treats the Western arms and finance that sustain it as part of the structure.
+          drain: breaks
+          law_of_value: none
+          consciousness: hegemonic
+      - id: hist.nakba-1948.born-of-war
+        label: Born of war, not by design, a mix of flight, fear and expulsion
+        claim: >-
+          The archives show neither a master plan of expulsion nor a mass flight on Arab leaders' orders. The refugee problem was born of
+          war: fear, the collapse of Palestinian society, military assaults, and expulsions ordered locally, then sealed by the decision
+          to block return.
+        voiced: >-
+          "The Palestinian refugee problem was born of war, not by design, Jewish or Arab. But the decision not to let them return was a
+          decision, and it was Israel's."
+        you: You think the Palestinian refugee problem came mainly from the war rather than a master plan, though expulsions were real.
+        because: >-
+          Morris, using Israeli military archives opened in the 1980s, found that the main causes of flight were Jewish military attacks
+          and fear of them, with expulsions in some places, like Lydda and Ramle, and Arab evacuation orders in a few. He found no
+          single plan and no general Arab call to leave. The Israeli cabinet decided in June 1948 to block the refugees' return.
+        against:
+          - from: nationalism.palestinian
+            text: >-
+              When the "war" consists of emptying hundreds of villages and razing them, the absence of a single written order proves
+              little. Pappé reads the same archives differently.
+          - from: nationalism.zionism-revisionist
+            text: >-
+              Morris himself later said that a transfer was unavoidable and that the Jewish state could not have been founded with a large
+              hostile Arab population inside it.
+        sources:
+          - {author: Benny Morris, title: "The Birth of the Palestinian Refugee Problem, 1947–1949", year: 1988}
+          - {author: Benny Morris, title: "1948: A History of the First Arab-Israeli War", year: 2008}
+        traditions:
+          typical: [nationalism.zionism-labor, liberalism.internationalist, liberalism.social]
+          contested: [socdem.democratic-socialism]
+          rejects: [nationalism.palestinian]
+        presupposes: [history.motor.contingency]
+        analysis:
+          gains: [professional-managerial]
+          pays: [peasantry]
+          mechanism: >-
+            Attributing the expulsion mainly to war keeps responsibility diffuse, which supports negotiated compensation rather than
+            return and leaves the land in the hands of the state that holds it.
+          drain: softens
+          law_of_value: none
+      - id: hist.nakba-1948.war-of-independence
+        label: Israel's war of independence, a war of survival forced on it
+        claim: >-
+          In this reading 1948 was the Jewish people's war of independence. The Jewish community accepted the UN partition plan; the
+          Palestinian leadership and the Arab states rejected it and attacked. The Arabs who left did so largely in flight or at their
+          leaders' urging, and the Arab states refused to absorb them.
+        voiced: >-
+          "We accepted partition. They chose war, five armies invaded the day after independence, and they lost. A people that has just
+          survived the Holocaust does not apologize for surviving."
+        you: You see 1948 as Israel's war of independence, a war of survival against Arab attack.
+        because: >-
+          The Jewish Agency accepted UN Resolution 181 of November 1947; Arab irregulars attacked Jewish transport and towns from the next
+          day, and on 15 May 1948 the armies of Egypt, Jordan, Syria, Iraq and Lebanon invaded. Some 6,000 Israelis died, about one
+          percent of the Jewish population. Karsh argues the Palestinian leadership's own failures and calls to evacuate caused much of
+          the exodus.
+        against:
+          - from: nationalism.palestinian
+            text: >-
+              Half the refugees had already been driven out before 15 May. Childers in 1961 and Walid Khalidi checked the Arab radio
+              records and found no general evacuation order; Israel's own archives document expulsions.
+          - from: liberalism.internationalist
+            text: >-
+              Even granting the war was defensive, nothing in international law justifies barring refugees from returning to their
+              homes after a war ends, as UN Resolution 194 affirmed.
+        sources:
+          - {author: Efraim Karsh, title: "Palestine Betrayed", year: 2010}
+          - {author: David Ben-Gurion, title: "Israel: A Personal History", year: 1971}
+        traditions:
+          defining: [nationalism.zionism-labor, nationalism.zionism-revisionist]
+          typical: [conservatism.neo, conservatism.evangelical-right, religious.religious-zionism]
+          rejects: [nationalism.palestinian, nationalism.decolonial]
+        presupposes: [settler.colonialism.just-settlement]
+        excludes: [hist.nakba-1948.planned-expulsion, hist.nakba-1948.ongoing-structure]
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [peasantry, peripheral-workers, reserve-army]
+          mechanism: >-
+            Reading 1948 as a defensive war secures the state's title to the land taken and denies the refugees' claims, and anchors a
+            military alliance through which core powers project force in the oil-producing region.
+          drain: sustains
+          law_of_value: extends
+      - id: hist.nakba-1948.population-exchange
+        label: One of the era's population exchanges, matched by the Jewish exodus
+        claim: >-
+          The Palestinian exodus was one of many population movements of the 1940s, from Partition to Central Europe. It was matched by
+          the departure of some 800,000 Jews from Arab countries, most of whom Israel absorbed. The refugee question should be closed by
+          resettlement, not return.
+        voiced: >-
+          "Two refugee populations came out of that war. Israel absorbed its refugees; the Arab states kept theirs in camps for seventy
+          years to use as a weapon. Return is the war by other means."
+        you: You think the Palestinian refugees should be resettled, not returned, as other refugees of the era were.
+        because: >-
+          The 1940s saw millions moved across new borders in India, Germany and Poland, and none of these were reversed. Between 1948 and
+          the 1970s most of the Jews of Iraq, Yemen, Libya, Egypt, Morocco and elsewhere left or were driven out. Schwartz and Wilf argue
+          that UNRWA's practice of passing refugee status to descendants perpetuates the conflict by keeping the demand for return alive.
+        against:
+          - from: nationalism.palestinian
+            text: >-
+              The Palestinians did not expel the Jews of Baghdad; one injustice cannot be paid for with another people's land. The right
+              of return is individual and recognized by Resolution 194.
+          - from: marxism.third-worldism
+            text: >-
+              Israel actively recruited Arab Jews as cheap labor and soldiers and then placed them at the bottom of its own hierarchy; the
+              "exchange" frame erases that too.
+        sources:
+          - {author: Adi Schwartz and Einat Wilf, title: "The War of Return: How Western Indulgence of the Palestinian Dream Has Obstructed the Path to Peace", year: 2020}
+        traditions:
+          typical: [nationalism.zionism-revisionist, nationalism.zionism-labor, conservatism.neo]
+          contested: [liberalism.internationalist]
+          rejects: [nationalism.palestinian]
+        presupposes: [settler.colonialism.all-nations-conquest]
+        excludes: [hist.nakba-1948.ongoing-structure]
+        analysis:
+          gains: [professional-managerial]
+          pays: [peasantry, reserve-army]
+          mechanism: >-
+            Treating the refugee question as settled by exchange cancels the refugees' property claims and their descendants' status,
+            and shifts their upkeep to host states and aid budgets.
+          drain: sustains
+          law_of_value: none
+      - id: hist.nakba-1948.redemption
+        label: Divine redemption, the return of the Jewish people to their promised land
+        claim: >-
+          For religious Zionists, and for many Christian Zionists, 1948 is a stage in redemption: the Jewish people's return to the land
+          promised to them by God. The departure of the Arabs is secondary to that sacred meaning.
+        voiced: >-
+          "The Land of Israel is not something external to the soul of the people; the state is the foundation of God's throne in the
+          world. The return to Zion is the beginning of redemption."
+        you: You see the founding of Israel in 1948 as the fulfilment of a divine promise.
+        because: >-
+          Rav Kook taught that the return to the land, even by secular pioneers, was part of the messianic process. After 1967 his son's
+          students founded the settler movement. Evangelical Christian Zionists read the founding of Israel as fulfilled prophecy. On this
+          view title to the land rests on covenant, not on demography or international votes.
+        against:
+          - from: nationalism.palestinian
+            text: >-
+              Divine promises do not give title to anyone's house. The Christians and Muslims of Palestine have lived on that land for
+              well over a thousand years.
+          - from: liberalism.internationalist
+            text: >-
+              Many religious Jews, notably the Haredi anti-Zionists, hold that a Jewish state before the Messiah is itself forbidden.
+        sources:
+          - {author: Abraham Isaac Kook, title: "Orot (Lights)", year: 1920}
+        traditions:
+          defining: [religious.religious-zionism]
+          typical: [conservatism.evangelical-right]
+          rejects: [nationalism.palestinian, nationalism.decolonial]
+        presupposes: [history.motor.providence]
+        excludes: [hist.nakba-1948.planned-expulsion]
+        analysis:
+          gains: [landed-capital, petty-bourgeoisie]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >-
+            Grounding title to the land in covenant places it beyond any political settlement, which underwrites continued settlement and
+            land seizure in the West Bank and the transfer of public land to settlers.
+          drain: sustains
+          law_of_value: none
+          method: idealist
+  # ------------------------------------------------------------------
+  - id: hist.indonesia-1965
+    domain: history
+    layer: analysis
+    question: What happened in Indonesia in 1965–1966?
+    plain: >-
+      After a failed putsch by junior officers on 30 September–1 October 1965 killed six generals, the army under General Suharto
+      blamed the Communist Party (PKI), then the largest outside the socialist states, and organized the killing of somewhere between
+      half a million and a million people or more, and the imprisonment of hundreds of thousands. Suharto ruled until 1998. What
+      happened?
+    short: Indonesia 1965
+    importance: 2
+    region: history
+    positions:
+      - id: hist.indonesia-1965.western-backed-extermination
+        label: A Western-backed extermination of the Left that opened Indonesia to capital
+        claim: >-
+          The army used the September 30th Movement as a pretext to destroy the PKI and its millions of members, with lists, weapons,
+          money and propaganda support from the United States and Britain. The result was a government that opened Indonesia's oil,
+          minerals and labor to Western capital.
+        voiced: >-
+          "Jakarta is coming. The method worked so well in Indonesia that it was exported: to Chile, to Argentina, to Central America.
+          Mass murder was the price of a friendly government."
+        you: You see the Indonesian killings as a Western-backed slaughter of the Left that served foreign capital.
+        because: >-
+          US officials supplied the army with lists of PKI members, communications equipment and money; British propaganda services spread
+          stories of communist atrocities; declassified US cables released in 2017 show the embassy knew of the killings in detail and
+          welcomed them. Robinson and Melvin show the army organized and directed the killings. In 1967 a new foreign investment law and a
+          conference with Western executives in Geneva opened the economy; Freeport's mine in Papua was among the first contracts.
+        against:
+          - from: liberalism.internationalist
+            text: >-
+              The killings were planned and carried out by Indonesians; Western support was real but secondary. Reducing it to a
+              Washington plot denies Indonesian responsibility.
+          - from: conservatism.neo
+            text: >-
+              The PKI was a mass party aligned with Beijing and pushing for an armed "fifth force"; Western governments supported the side
+              that stopped a communist takeover.
+        sources:
+          - {author: Geoffrey B. Robinson, title: "The Killing Season: A History of the Indonesian Massacres, 1965–66", year: 2018}
+          - {author: Vincent Bevins, title: "The Jakarta Method: Washington's Anticommunist Crusade and the Mass Murder Program that Shaped Our World", year: 2020}
+          - {author: Bradley R. Simpson, title: "Economists with Guns: Authoritarian Development and U.S.–Indonesian Relations, 1960–1968", year: 2008}
+          - {author: John Roosa, title: "Pretext for Mass Murder: The September 30th Movement and Suharto's Coup d'État in Indonesia", year: 2006}
+        traditions:
+          defining: [marxism.third-worldism]
+          typical: [marxism.ml, marxism.dependency, marxism.maoism, socdem.democratic-socialism]
+          rejects: [conservatism.neo]
+        presupposes: [imperialism.nature.monopoly-stage]
+        excludes: [hist.indonesia-1965.nation-saved]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >-
+            Reading 1965 as a Western-backed counter-revolution ties anticommunist mass murder to the opening of resources and labor to
+            foreign capital, which targets the drain and the comprador governments that enforce it.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >-
+            Death toll estimates range from about 78,000 (an army-era fact-finding figure) to 2–3 million; most scholars place it between
+            500,000 and 1 million.
+      - id: hist.indonesia-1965.crime-against-humanity
+        label: A crime against humanity that still awaits truth and justice
+        claim: >-
+          Whatever its international context, 1965–66 was a crime against humanity committed by the Indonesian army and the militias it
+          armed. The victims and their families were stigmatized for decades, and Indonesia has never officially acknowledged it.
+        voiced: >-
+          "The killers became heroes and the victims' children were barred from the civil service for being 'unclean'. Truth first, then
+          justice, then reconciliation."
+        you: You see the 1965–66 killings first as a crime against humanity that Indonesia must confront.
+        because: >-
+          The International People's Tribunal on 1965, sitting in The Hague in 2015, found Indonesia responsible for crimes against
+          humanity, including killings, imprisonment, slavery, torture and sexual violence, and found the US, UK and Australia complicit.
+          Released prisoners and their families carried an ET mark on their identity cards. In 2016 an official symposium broke the
+          silence, but no prosecutions followed; in 2023 the president expressed regret for "gross human rights violations".
+        against:
+          - from: marxism.third-worldism
+            text: >-
+              Treating it as a human rights case, to be resolved by apologies, separates it from the class war and the foreign interests
+              that drove it.
+          - from: conservatism.neo
+            text: >-
+              Truth commissions that hear only one side ignore the violence of the PKI's land seizures and the threat of a communist
+              takeover.
+        sources:
+          - {author: International People's Tribunal 1965, title: "Final Report of the IPT 1965", year: 2016}
+          - {author: Jess Melvin, title: "The Army and the Indonesian Genocide: Mechanics of Mass Murder", year: 2018}
+        traditions:
+          defining: [liberalism.internationalist]
+          typical: [socdem.democratic-socialism, liberalism.social, religious.post-islamism]
+          rejects: [conservatism.neo]
+        presupposes: [intl.sovereignty.conditional-on-rights]
+        excludes: [hist.indonesia-1965.nation-saved]
+        analysis:
+          gains: [peasantry, professional-managerial]
+          pays: []
+          mechanism: >-
+            The human rights frame has little direct class content: it seeks recognition and rehabilitation for victims' families
+            through courts and commissions, which addresses stigma but leaves untouched the property and foreign contracts the New Order
+            created.
+          drain: none
+          law_of_value: none
+      - id: hist.indonesia-1965.nation-saved
+        label: The nation saved from a communist coup, in a war of kill or be killed
+        claim: >-
+          On this view the PKI was behind the murder of the generals and was preparing to seize power. The army and the religious
+          organizations rose to stop an atheist takeover, and in the villages it was kill or be killed.
+        voiced: >-
+          "The PKI murdered our generals at Lubang Buaya and would have murdered us. The ulama called it a jihad against the godless;
+          if we had not struck first, they would have."
+        you: You think the army and the religious organizations saved Indonesia from a communist takeover in 1965.
+        because: >-
+          The September 30th Movement was led by officers with ties to the PKI's secret Special Bureau and its chairman Aidit. In 1963–65
+          PKI-led peasants carried out unilateral land seizures (aksi sepihak) against landowners, many of them Muslim religious
+          figures, and clashes grew. The New Order's official history and the 1984 film shown every year in schools presented the
+          killings as defense of the nation and religion. Members of Nahdlatul Ulama's youth wing took part.
+        against:
+          - from: marxism.third-worldism
+            text: >-
+              The army's stories of PKI women mutilating the generals were false; the autopsies published in 1987 showed no mutilation.
+              Roosa shows the Movement was a small group, while the killing of hundreds of thousands of unarmed people was organized by
+              the army.
+          - from: liberalism.internationalist
+            text: >-
+              Whatever a few leaders did on 30 September, it cannot justify the murder of peasants, teachers and union members who knew
+              nothing of it.
+        sources:
+          - {author: Nugroho Notosusanto and Ismail Saleh, title: "The Coup Attempt of the 'September 30 Movement' in Indonesia", year: 1968}
+          - {author: Greg Fealy and Katharine McGregor, title: "Nahdlatul Ulama and the Killings of 1965–66: Religion, Politics, and Remembrance", year: 2010}
+        traditions:
+          typical: [conservatism.neo, conservatism.traditionalist, nationalism.ethnic]
+          contested: [religious.islamism-brotherhood, nationalism.developmental-state]
+          rejects: [marxism.third-worldism, marxism.ml, liberalism.internationalist]
+        presupposes: [emergency.powers.sovereign-exception]
+        excludes: [hist.indonesia-1965.western-backed-extermination, hist.indonesia-1965.crime-against-humanity]
+        analysis:
+          gains: [landed-capital, comprador-capital, professional-managerial]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >-
+            Treating the killings as self-defense reversed the land seizures and destroyed the unions and peasant leagues, which secured
+            landowners' estates and gave employers and foreign investors a workforce without organization for three decades.
+          drain: sustains
+          law_of_value: extends
+          disputed: >-
+            The PKI leadership's role in the September 30th Movement is disputed: the army held the party planned it; Anderson and
+            McVey argued it was an internal army affair; Roosa finds Aidit and a small party bureau involved but not the party as a mass
+            organization.
+      - id: hist.indonesia-1965.fatal-legal-road
+        label: The fatal cost of a mass legal party with no armed defense
+        claim: >-
+          The PKI grew to millions by working legally under Sukarno's protection, in alliance with the national bourgeoisie. When the army
+          struck, its members were defenseless. 1965 is the bloodiest lesson in the history of the peaceful road.
+        voiced: >-
+          "Three million members and not a rifle among them. The party trusted Sukarno and the 'progressive' army officers instead of
+          arming the peasants, and paid with a million lives."
+        you: You think the PKI's reliance on a legal, unarmed road under Sukarno's protection led to its destruction.
+        because: >-
+          The PKI had about three million members and its mass organizations some twenty million; it held ministries and supported
+          Sukarno's "Guided Democracy" and his alliance of nationalists, religious parties and communists (Nasakom). Mortimer shows how
+          its strategy depended on Sukarno's balancing of the army. The surviving leadership's self-criticism of 1966 concluded the party
+          had abandoned armed struggle and peasant revolution.
+        against:
+          - from: socdem.democratic-socialism
+            text: >-
+              An armed PKI would have given the army the civil war it wanted, sooner, with even greater slaughter; the lesson is to win
+              over soldiers and isolate the generals.
+          - from: marxism.ml
+            text: >-
+              The PKI's growth under the national front was a real achievement; it was destroyed by a coup with foreign backing, not by
+              its line.
+        sources:
+          - {author: Rex Mortimer, title: "Indonesian Communism under Sukarno: Ideology and Politics, 1959–1965", year: 1974}
+          - {author: Political Bureau of the Communist Party of Indonesia, title: "Self-Criticism", year: 1966}
+        traditions:
+          defining: [marxism.maoism, marxism.mlm]
+          typical: [marxism.trotskyism, marxism.guevarism]
+          contested: [marxism.ml]
+          rejects: [socdem.democratic-socialism, marxism.eurocommunism]
+        presupposes: [violence.political.revolutionary]
+        tension: [hist.chile-1973.peaceful-road-destroyed]
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: [landed-capital, comprador-capital]
+          mechanism: >-
+            Drawing the lesson that mass legal parties must prepare to defend themselves pushes movements in the South toward armed
+            organization, which raises the cost of repression for landowners and their armies but also invites it earlier.
+          drain: breaks
+          law_of_value: suspends
+          consciousness: hegemonic
+      - id: hist.indonesia-1965.developmental-birth
+        label: The terrible birth of a developmental state that cut poverty
+        claim: >-
+          However it began, Suharto's New Order brought three decades of stability and growth: rice self-sufficiency in the 1980s,
+          schools and clinics across the islands, and a large fall in poverty, before the crisis of 1997–98.
+        voiced: >-
+          "Under Sukarno inflation was six hundred percent and people queued for rice. Under Pak Harto there was order, roads, schools
+          and food. That is what the people remember."
+        you: You think the New Order that followed 1965 brought Indonesia stability and development, whatever its origins.
+        because: >-
+          Inflation in 1965–66 was in the hundreds of percent. Under economists trained at Berkeley, the New Order stabilized prices; with
+          oil revenue and the Green Revolution Indonesia reached rice self-sufficiency in 1984. The World Bank counted Indonesia among the
+          East Asian "miracle" economies, with poverty falling from about 60 percent in 1970 to around 11 percent by the mid-1990s by
+          official measures. Hill documents the growth.
+        against:
+          - from: marxism.dependency
+            text: >-
+              The "miracle" ran on oil, timber and cheap labor sold to foreign firms; Suharto's family took billions, and the 1997–98
+              crash wiped out much of the gain in months.
+          - from: liberalism.internationalist
+            text: >-
+              The same New Order invaded East Timor in 1975, where a large share of the population died, and ruled Papua and Aceh by
+              force.
+        sources:
+          - {author: World Bank, title: "The East Asian Miracle: Economic Growth and Public Policy", year: 1993}
+          - {author: Hal Hill, title: "The Indonesian Economy since 1966", year: 1996}
+        traditions:
+          defining: [nationalism.developmental-state]
+          typical: [liberalism.technocratic, liberalism.chicago]
+          rejects: [marxism.third-worldism, marxism.dependency]
+        presupposes: [development.path.integration]
+        analysis:
+          gains: [comprador-capital, finance-capital, professional-managerial]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >-
+            Crediting the New Order with development makes mass repression of labor a precondition of growth, which justified decades of
+            low wages in export industries and resource concessions to foreign firms.
+          drain: sustains
+          law_of_value: extends
+      - id: hist.indonesia-1965.cold-war-prize
+        label: A Cold War victory that kept Southeast Asia's largest country out of the East
+        claim: >-
+          In the strategic contest of the 1960s, Indonesia, the fifth most populous country in the world, was the biggest prize in
+          Southeast Asia. Its turn away from the PKI and Beijing in 1965 was the West's greatest Cold War victory in Asia.
+        voiced: >-
+          "With its 100 million people and its 3,000-mile arc of islands containing the region's richest hoard of natural resources,
+          Indonesia constitutes by far the greatest prize in the South-East Asian area."
+        you: You see 1965 above all as a strategic victory for the West in the Cold War.
+        because: >-
+          Sukarno had nationalized Western firms, left the UN in 1965 and drawn close to Beijing; the PKI was the largest communist party
+          outside the socialist states. After 1965 Indonesia joined ASEAN (1967), took Western aid and investment, and anchored a pro-
+          Western Southeast Asia while the US fought in Vietnam. Nixon wrote in 1967 that it was the region's greatest prize.
+        against:
+          - from: marxism.third-worldism
+            text: >-
+              A "victory" bought with hundreds of thousands of murdered peasants is a crime, whatever the strategy, and its authors knew
+              it.
+          - from: liberalism.internationalist
+            text: >-
+              The strategic frame turns the Indonesian victims into pieces on a board; it is how the killings were ignored for decades.
+        sources:
+          - {author: Richard Nixon, title: "Asia After Viet Nam", year: 1967, note: "Foreign Affairs"}
+        traditions:
+          defining: [conservatism.neo]
+          typical: [conservatism.fusionism, conservatism.gaullism]
+          rejects: [marxism.third-worldism, liberalism.internationalist]
+        presupposes: [war.militarism.peace-through-strength]
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >-
+            Treating 1965 as a strategic gain values Southern countries by their alignment and resources, which justifies backing any
+            government that keeps them open to Western capital, whatever it does to its own people.
+          drain: sustains
+          law_of_value: extends
+  # ------------------------------------------------------------------
+  - id: hist.cold-war
+    domain: history
+    layer: analysis
+    question: What was the Cold War, 1947–1991?
+    plain: >-
+      From the late 1940s to 1991 the United States and the Soviet Union and their allies faced each other with nuclear arsenals, built
+      rival blocs, and fought through others in Korea, Vietnam, Afghanistan, Angola and Central America. For much of the world it was
+      not cold. What was it?
+    short: the Cold War
+    importance: 2
+    region: history
+    positions:
+      - id: hist.cold-war.containment-won
+        label: The defense of the West against Soviet expansion, won by containment
+        claim: >-
+          After 1945 the Soviet Union sought to expand its system into Europe and Asia. The United States and its allies contained it with
+          alliances, aid and deterrence, without a general war, until the Soviet system collapsed from within.
+        voiced: >-
+          "The main element of any United States policy toward the Soviet Union must be that of a long-term, patient but firm and vigilant
+          containment of Russian expansive tendencies."
+        you: You see the Cold War as the successful containment of Soviet expansion by the West.
+        because: >-
+          Soviet-backed Communist parties took power in Eastern Europe in 1945–48; the Berlin blockade of 1948 and the Korean War of 1950
+          showed the danger. Kennan proposed containment in 1947; the Marshall Plan and NATO built Western Europe's recovery and defense.
+          Gaddis argues that nuclear deterrence and patience produced a "long peace" among the great powers, and the West won without
+          fighting the USSR.
+        against:
+          - from: marxism.third-worldism
+            text: >-
+              The "long peace" was a peace in Europe; in the South the Cold War killed millions in Korea, Vietnam, Indonesia, Angola and
+              Central America, mostly at the hands of the West or its allies.
+          - from: marxism.ml
+            text: >-
+              The Soviet Union lost 27 million people and wanted a buffer, not world conquest; the US had bases around it and dropped
+              the bomb first.
+        sources:
+          - {author: George F. Kennan (X), title: "The Sources of Soviet Conduct", year: 1947}
+          - {author: John Lewis Gaddis, title: "The Cold War: A New History", year: 2005}
+          - {author: John Lewis Gaddis, title: "The Long Peace: Inquiries into the History of the Cold War", year: 1987}
+        traditions:
+          defining: [liberalism.internationalist]
+          typical: [conservatism.christian-democracy, liberalism.social, socdem.revisionist, socdem.third-way]
+          rejects: [marxism.ml, marxism.third-worldism]
+        presupposes: [war.militarism.anarchy-security]
+        excludes: [hist.cold-war.counter-revolution-in-the-south]
+        analysis:
+          gains: [finance-capital, industrial-capital, core-workers]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >-
+            Remembering the Cold War as containment validates the alliances, bases and arms spending that keep core military supremacy,
+            which protects core investments abroad and funds core defense industry and jobs.
+          drain: sustains
+          law_of_value: extends
+      - id: hist.cold-war.victory-over-evil
+        label: A moral struggle against communism, won by strength and faith
+        claim: >-
+          The Cold War was a moral struggle between liberty under God and atheist tyranny. Containment alone was not enough; it was won
+          when the West rebuilt its strength, named the enemy as evil, and supported those resisting it, from Solidarity to the Afghan
+          mujahideen.
+        voiced: >-
+          "Mr. Gorbachev, tear down this wall! We win, they lose. Peace through strength, and the faith of a Polish pope, brought the empire
+          down."
+        you: You think the West won the Cold War by standing up to communism with strength and conviction.
+        because: >-
+          Reagan's military buildup, the Strategic Defense Initiative and support for anti-Soviet forces raised the costs to the USSR in
+          the 1980s. John Paul II's visit to Poland in 1979 helped spark Solidarity. Schweizer argues the Reagan administration
+          deliberately aimed to bankrupt the Soviet Union, including by working with Saudi Arabia to lower oil prices.
+        against:
+          - from: liberalism.internationalist
+            text: >-
+              The Soviet system collapsed from its own economic stagnation and Gorbachev's choices; the buildup mostly hardened Soviet
+              resistance.
+          - from: marxism.third-worldism
+            text: >-
+              "Supporting resistance" meant the Contras, the apartheid army's allies in Angola, and the Afghan jihadists who later
+              became al-Qaeda.
+        sources:
+          - {author: Ronald Reagan, title: "Address to the National Association of Evangelicals (the Evil Empire speech)", year: 1983}
+          - {author: Peter Schweizer, title: "Victory: The Reagan Administration's Secret Strategy that Hastened the Collapse of the Soviet Union", year: 1994}
+        traditions:
+          defining: [conservatism.neo]
+          typical: [conservatism.fusionism, conservatism.evangelical-right, conservatism.cst]
+          rejects: [marxism.ml, liberalism.internationalist]
+        presupposes: [war.militarism.peace-through-strength]
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [peripheral-workers, core-workers]
+          mechanism: >-
+            Reading the Cold War as won by strength and moral clarity licenses rollback against any state that leaves the Western camp,
+            and the arms spending that transfers public money to defense firms.
+          drain: sustains
+          law_of_value: extends
+          method: idealist
+      - id: hist.cold-war.counter-revolution-in-the-south
+        label: A US campaign to keep the South open, with the Soviet threat as cover
+        claim: >-
+          The Cold War's real purpose for Washington was to keep the decolonizing world open to Western capital. Its hot wars and coups,
+          Iran 1953, Guatemala 1954, Congo 1961, Indonesia 1965, Chile 1973, struck nationalist and socialist governments whatever their
+          ties to Moscow.
+        voiced: >-
+          "The Cold War was a war against the Third World. The open door for American business was the policy; anticommunism was the
+          language it spoke."
+        you: You think the Cold War was mainly a US campaign against revolution and independence in the South.
+        because: >-
+          Mosaddegh in Iran nationalized oil and was overthrown in 1953; Árbenz in Guatemala redistributed United Fruit's idle land and
+          was overthrown in 1954; neither was a Soviet ally. Williams traced US policy to the "open door" for American trade and investment.
+          Kolko and Westad show that most Cold War violence occurred in the South, in wars of decolonization and intervention.
+        against:
+          - from: liberalism.internationalist
+            text: >-
+              Moscow and Beijing armed revolutionary movements across the South too; the US was answering a real Soviet challenge, not
+              inventing one.
+          - from: marxism.ml
+            text: >-
+              The frame understates the Soviet Union's role as the socialist pole; it was a contest of systems, not only US imperialism.
+        sources:
+          - {author: William Appleman Williams, title: "The Tragedy of American Diplomacy", year: 1959}
+          - {author: Gabriel Kolko, title: "Confronting the Third World: United States Foreign Policy, 1945–1980", year: 1988}
+          - {author: Odd Arne Westad, title: "The Global Cold War: Third World Interventions and the Making of Our Times", year: 2005}
+        traditions:
+          defining: [marxism.third-worldism, marxism.dependency]
+          typical: [marxism.world-systems, nationalism.bolivarianism, nationalism.pan-africanism, religious.liberation-theology]
+          rejects: [conservatism.neo, liberalism.internationalist]
+        presupposes: [imperialism.nature.monopoly-stage]
+        excludes: [hist.cold-war.containment-won]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >-
+            Reading the Cold War as counter-revolution in the South identifies the coups and wars with the protection of foreign
+            investment and resource contracts, which supports resource nationalism and opposition to intervention today.
+          drain: breaks
+          law_of_value: suspends
+      - id: hist.cold-war.two-camps
+        label: A global class struggle between the socialist camp and imperialism
+        claim: >-
+          The Cold War was the class struggle on a world scale: on one side the socialist countries and liberation movements, on the other
+          the imperialist camp led by the United States. The defeat of the socialist camp in 1991 was a defeat for working people
+          everywhere.
+        voiced: >-
+          "Two camps have formed in the world: the imperialist and anti-democratic camp, and the anti-imperialist and democratic camp. The
+          struggle between them is the main fact of our epoch."
+        you: You see the Cold War as a world class struggle between socialism and imperialism.
+        because: >-
+          Zhdanov set out the two-camp thesis at the founding of the Cominform in 1947. The socialist camp gave the colonized arms, aid
+          and a model; its existence pushed Western capital to concede welfare states at home. After 1991, wars of intervention
+          multiplied, labor's share fell across the world, and the South lost its alternative creditor and arms supplier.
+        against:
+          - from: marxism.mlm
+            text: >-
+              From 1956 the Soviet "camp" was itself imperialist; the Cold War became a contest of two superpowers for the world.
+          - from: liberalism.internationalist
+            text: >-
+              The "socialist camp" held its own members in by force: Berlin 1953, Budapest 1956, Prague 1968.
+        sources:
+          - {author: Andrei Zhdanov, title: "Report on the International Situation to the Cominform", year: 1947}
+          - {author: Albert Szymanski, title: "Is the Red Flag Flying? The Political Economy of the Soviet Union Today", year: 1979}
+        traditions:
+          defining: [marxism.ml]
+          typical: [marxism.juche, marxism.hoxhaism]
+          contested: [marxism.third-worldism]
+          rejects: [marxism.mlm, marxism.third-camp, liberalism.internationalist]
+        presupposes: [hist.ussr-late.real-socialism-betrayed]
+        excludes: [hist.cold-war.two-superpowers]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >-
+            Treating the Cold War as world class struggle aligns workers' movements with socialist states, which strengthens a bloc
+            outside the world market and, by its threat, raises the price of labor in the core.
+          drain: breaks
+          law_of_value: suspends
+          consciousness: hegemonic
+      - id: hist.cold-war.two-superpowers
+        label: Two rival imperialisms contending to divide the world
+        claim: >-
+          The Cold War was a rivalry of two superpowers, each dominating its own sphere and competing for the rest. Neither represented
+          the workers or the oppressed; both oppressed the small nations in their way.
+        voiced: >-
+          "The two superpowers are the biggest international exploiters and oppressors of today, contending for world hegemony. Neither
+          Washington nor Moscow!"
+        you: You think the Cold War was a contest between two imperial superpowers, neither on the side of working people.
+        because: >-
+          The US sent troops into Vietnam and the Dominican Republic; the USSR into Czechoslovakia and Afghanistan. Both armed client
+          governments and divided Europe. Deng Xiaoping set out China's "three worlds" view at the UN in 1974; the third-camp socialists
+          had said "neither Washington nor Moscow" since the 1940s, and Draper argued that socialism comes only from below, against both.
+        against:
+          - from: marxism.ml
+            text: >-
+              Calling the USSR imperialist put Maoist China alongside the US and apartheid South Africa in Angola in 1975; the "neither"
+              position became "both against the Soviets".
+          - from: marxism.third-worldism
+            text: >-
+              Liberation movements from Vietnam to South Africa needed Soviet arms; equidistance was a luxury of those not being bombed.
+        sources:
+          - {author: Deng Xiaoping, title: "Speech at the Special Session of the UN General Assembly", year: 1974}
+          - {author: Hal Draper, title: "The Two Souls of Socialism", year: 1966}
+        traditions:
+          defining: [marxism.third-camp]
+          typical: [marxism.maoism, marxism.left-communism, anarchism.communist]
+          contested: [marxism.mlm]
+          rejects: [marxism.ml, marxism.third-worldism]
+        presupposes: [imperialism.nature.inter-imperialist-rivalry]
+        excludes: [hist.cold-war.two-camps]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [professional-managerial]
+          mechanism: >-
+            Refusing both superpowers keeps workers' movements independent of either state, but in practice each version has drifted
+            toward one camp: Maoist China toward the US in the 1970s, some third-camp socialists toward Western labor diplomacy.
+          drain: none
+          law_of_value: abolishes
+      - id: hist.cold-war.non-alignment
+        label: A quarrel of the North fought on Southern soil; non-alignment was right
+        claim: >-
+          For the newly independent countries the Cold War was a quarrel between the rich countries that threatened to drag them into
+          proxy wars. The right answer was the one Bandung and Belgrade gave: refuse the blocs and pursue development and peace.
+        voiced: >-
+          "We are not pro-communist or anti-communist; we are pro-Asian and pro-African. The elephants fight and the grass suffers; we
+          will not be their grass."
+        you: You think the poorer countries were right to refuse both Cold War blocs.
+        because: >-
+          At Bandung in 1955 twenty-nine Asian and African states declared their own principles; the Non-Aligned Movement was founded in
+          Belgrade in 1961 by Nehru, Nasser, Sukarno, Nkrumah and Tito. Non-aligned states used rivalry to get aid from both sides,
+          pushed decolonization at the UN and in 1974 won the General Assembly's call for a New International Economic Order.
+        against:
+          - from: marxism.ml
+            text: >-
+              "Non-alignment" often meant taking Soviet arms and Western loans while repressing one's own left; the movement's members
+              ranged from socialist states to US clients.
+          - from: conservatism.neo
+            text: >-
+              Neutrality between liberty and tyranny is not a moral position; many non-aligned leaders were Soviet sympathizers in
+              practice.
+        sources:
+          - {author: Sukarno, title: "Speech at the Opening of the Asian-African Conference", year: 1955}
+          - {author: Vijay Prashad, title: "The Darker Nations: A People's History of the Third World", year: 2007}
+        traditions:
+          defining: [nationalism.nasserism, nationalism.gandhian]
+          typical: [marxism.african-socialism, marxism.arab-socialism, marxism.third-worldism, nationalism.pan-africanism]
+          rejects: [conservatism.neo]
+        presupposes: [intl.sovereignty.nations-set-own-course]
+        analysis:
+          gains: [peripheral-workers, professional-managerial, peasantry]
+          pays: [finance-capital]
+          mechanism: >-
+            Non-alignment lets Southern states play the powers against each other for aid and terms of trade, which raised their
+            bargaining power in the 1960s–70s, while the gains went first to the state elites who did the bargaining.
+          drain: reduces
+          law_of_value: regulates
+      - id: hist.cold-war.security-rivalry
+        label: A security rivalry of two great powers, kept from war by deterrence
+        claim: >-
+          The Cold War was what happens when two great powers emerge from a world war with no one above them: each arms against the other's
+          capabilities, suspects the worst and builds spheres of influence. Ideology mattered less than power, and nuclear deterrence kept
+          it from becoming another world war.
+        voiced: >-
+          "Great powers behave like great powers. The Soviets wanted a buffer in Eastern Europe as any Russian state would. Nuclear
+          weapons made the competition dangerous, and also made it stable."
+        you: You see the Cold War as a normal great-power rivalry, kept from war by nuclear deterrence.
+        because: >-
+          Waltz argued that a bipolar system with nuclear weapons is the most stable arrangement among states, because each side's
+          responsibility is clear and war too costly. Russian concern for its western border long predated communism. The Cuban missile
+          crisis of 1962 was resolved by a trade of missiles in Cuba for missiles in Turkey, a bargain of power, not ideology.
+        against:
+          - from: marxism.third-worldism
+            text: >-
+              A "stable" order for the great powers was a permanent war for the South; realism measures peace only where the powerful
+              live.
+          - from: conservatism.neo
+            text: >-
+              Treating the Soviet Union as just another great power ignored that its regime and ideology drove its expansion; moral
+              equivalence lost the 1970s.
+        sources:
+          - {author: Kenneth N. Waltz, title: "Theory of International Politics", year: 1979}
+          - {author: John Lewis Gaddis, title: "The Long Peace: Inquiries into the History of the Cold War", year: 1987}
+        traditions:
+          typical: [conservatism.gaullism, conservatism.paleo, conservatism.burkean]
+          contested: [liberalism.internationalist]
+          rejects: [conservatism.neo, marxism.ml]
+        presupposes: [war.militarism.anarchy-security]
+        analysis:
+          gains: [industrial-capital, professional-managerial]
+          pays: [peripheral-workers]
+          mechanism: >-
+            Reading the Cold War as normal great-power rivalry treats spheres of influence as legitimate, which accepts the powers'
+            control over smaller states and the permanent arms budgets that deterrence requires.
+          drain: sustains
+          law_of_value: none
