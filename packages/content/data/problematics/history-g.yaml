@@ -1,0 +1,865 @@
+# History, part 7: the neoliberal turn, the Second World War, the Partition of India.
+# See history.yaml and the header of history-c.yaml for the index of history files.
+problematics:
+  # ------------------------------------------------------------------
+  - id: hist.neoliberal-turn
+    domain: history
+    layer: analysis
+    question: What was the neoliberal turn that began in the late 1970s?
+    plain: >-
+      From the late 1970s governments from Chile to Britain to the United States, and then most of the world through IMF and World
+      Bank programs, cut taxes on the rich, sold public firms, weakened unions, freed capital to move across borders and fought
+      inflation with very high interest rates. What was it?
+    short: the neoliberal turn
+    importance: 3
+    region: history
+    positions:
+      - id: hist.neoliberal-turn.restoring-class-power
+        label: A project to restore the power and income of capital
+        claim: >-
+          After the profit squeeze and labor militancy of the 1970s, owners and financiers organized to take back what they had lost.
+          Neoliberalism was the program: break unions, cut top taxes, free finance, privatize. Its result was a huge shift of income and
+          wealth to the top.
+        voiced: >-
+          "Neoliberalism was from the very beginning a project to achieve the restoration of class power. The theory was utopian; the
+          practice was the redistribution of wealth upward."
+        you: You see the neoliberal turn as a deliberate campaign by the rich to take back power from workers.
+        because: >-
+          In 1979–82 the Federal Reserve under Volcker raised interest rates to around 20 percent, triggering recession and mass
+          unemployment; Reagan fired some 11,000 striking air traffic controllers in 1981; Thatcher defeated the miners in 1984–85.
+          Duménil and Lévy show that the share of income going to the top 1 percent, which had fallen since the 1940s, rose sharply
+          from about 1980. Harvey argues that the theory was applied selectively: free markets for workers, bailouts for banks.
+        against:
+          - from: liberalism.chicago
+            text: >-
+              The 1970s were a crisis of stagflation and failing nationalized industries; reform was a response to economics, not a
+              conspiracy of the rich.
+          - from: marxism.third-worldism
+            text: >-
+              A core-centered story: the main target was not Western unions but the Third World's demand for a New International
+              Economic Order, defeated by the debt crisis.
+        sources:
+          - {author: David Harvey, title: "A Brief History of Neoliberalism", year: 2005}
+          - {author: Gérard Duménil and Dominique Lévy, title: "Capital Resurgent: Roots of the Neoliberal Revolution", year: 2004}
+          - {author: Quinn Slobodian, title: "Globalists: The End of Empire and the Birth of Neoliberalism", year: 2018}
+        traditions:
+          defining: [socdem.democratic-socialism]
+          typical: [marxism.western, marxism.trotskyism, marxism.gramscian, socdem.left-populism]
+          rejects: [liberalism.chicago, liberalism.austrian]
+        presupposes: [history.motor.class-struggle]
+        excludes: [hist.neoliberal-turn.cure-for-stagflation]
+        analysis:
+          gains: [core-workers, reserve-army]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >-
+            Naming neoliberalism a class project directs core workers to reverse it through taxes on wealth, union law and public
+            ownership, which reduces owners' income share; it can leave the Southern side of the story out.
+          drain: softens
+          law_of_value: regulates
+          consciousness: class-economic
+      - id: hist.neoliberal-turn.debt-discipline-of-the-south
+        label: The counter-offensive against the South through debt and adjustment
+        claim: >-
+          The decisive front of the neoliberal turn was the South. The interest rate shock of 1979 turned Southern debts into crises;
+          the IMF and World Bank then imposed structural adjustment, opening economies, selling public firms and cutting food subsidies.
+          The South's project of a new economic order was defeated.
+        voiced: >-
+          "The debt crisis was the weapon that ended the Third World project. Adjustment programs rolled back a generation of
+          development and handed Southern economies back to Northern capital."
+        you: You see the neoliberal turn above all as a counter-attack on the poor countries through debt.
+        because: >-
+          In 1974 the UN General Assembly adopted the declaration for a New International Economic Order demanding fair commodity prices
+          and control of resources. After Volcker's rate rise, Mexico defaulted in 1982 and a debt crisis spread across Latin America and
+          Africa; the 1980s became a lost decade in which incomes fell. Bello documents how adjustment programs were imposed as
+          conditions for credit. Amin called the new order the rule of five monopolies held by the core.
+        against:
+          - from: liberalism.chicago
+            text: >-
+              The countries that opened, in East Asia and later China and India, grew fastest; extreme poverty fell more after 1980 than
+              ever before.
+          - from: marxism.trotskyism
+            text: >-
+              Southern ruling classes welcomed adjustment and profited from privatization; the struggle runs inside each country, not
+              between North and South.
+        sources:
+          - {author: Walden Bello, title: "Dark Victory: The United States, Structural Adjustment, and Global Poverty", year: 1994}
+          - {author: Vijay Prashad, title: "The Poorer Nations: A Possible History of the Global South", year: 2012}
+          - {author: Samir Amin, title: "Capitalism in the Age of Globalization: The Management of Contemporary Society", year: 1997}
+        traditions:
+          defining: [marxism.third-worldism, marxism.dependency]
+          typical: [marxism.world-systems, nationalism.pan-africanism, nationalism.bolivarianism, religious.liberation-theology]
+          rejects: [liberalism.chicago, liberalism.technocratic]
+        presupposes: [imperialism.nature.unequal-exchange-drain]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >-
+            Reading neoliberalism through Southern debt targets creditors, the IMF and the local elites who managed adjustment, and
+            backs debt cancellation and capital controls that would keep Southern surplus at home.
+          drain: breaks
+          law_of_value: suspends
+          consciousness: hegemonic
+      - id: hist.neoliberal-turn.cure-for-stagflation
+        label: A necessary cure that ended stagflation and unleashed growth
+        claim: >-
+          By the late 1970s the post-war consensus had produced inflation, stagnation, loss-making state firms and unions that could
+          shut down the country. Market reform restored growth, beat inflation, and as markets opened, billions of people left poverty.
+        voiced: >-
+          "Inflation is always and everywhere a monetary phenomenon. Cut it at the root, free markets and free trade, and prosperity will
+          follow, as it did."
+        you: You think the market reforms after 1979 rescued the economy and lifted billions out of poverty.
+        because: >-
+          British inflation peaked above 25 percent in 1975; in the US it reached about 13 percent in 1979. After the reforms inflation
+          fell to low single digits for a generation. Global extreme poverty fell from over 40 percent of humanity in 1980 to under 10
+          percent by 2019, as China, India and others integrated into world markets. Friedman and Hayek had argued for decades that
+          only markets coordinate dispersed knowledge and preserve economic liberty.
+        against:
+          - from: marxism.third-worldism
+            text: >-
+              Most of the fall in extreme poverty happened in China, which ignored the Washington Consensus; in Africa and Latin America
+              the adjustment decades raised poverty.
+          - from: socdem.keynesian
+            text: >-
+              Growth in the neoliberal decades was slower than in the "failed" post-war era in almost every rich country, and ended in
+              the crash of 2008.
+        sources:
+          - {author: Milton Friedman and Rose D. Friedman, title: "Free to Choose", year: 1980}
+          - {author: F. A. Hayek, title: "The Constitution of Liberty", year: 1960}
+          - {author: John Williamson, title: "What Washington Means by Policy Reform", year: 1990}
+        traditions:
+          defining: [liberalism.chicago, liberalism.austrian]
+          typical: [liberalism.classical, conservatism.fusionism, liberalism.technocratic]
+          rejects: [socdem.keynesian, marxism.third-worldism, socdem.democratic-socialism]
+        presupposes: [capitalism.nature.free-exchange]
+        excludes: [hist.neoliberal-turn.restoring-class-power, hist.neoliberal-turn.debt-discipline-of-the-south]
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [core-workers, peripheral-workers, peasantry]
+          mechanism: >-
+            Crediting market reform with growth and poverty reduction legitimates open capital accounts, privatization and weak unions,
+            which raise returns to capital and to the managers of global firms while holding down wages in both core and periphery.
+          drain: sustains
+          law_of_value: extends
+      - id: hist.neoliberal-turn.third-way-globalization
+        label: Globalization was inevitable; the task was to equip people for it
+        claim: >-
+          The world economy changed with technology and trade, and no government could stop it. The task of the center-left was to
+          accept markets and globalization while investing in education, skills and a modernized welfare state, so that everyone
+          could compete.
+        voiced: >-
+          "You might as well debate whether autumn should follow summer. Globalization is a fact; the question is whether we equip our
+          people to succeed in it."
+        you: You think globalization was unstoppable, and the right response was to prepare people to compete in it.
+        because: >-
+          Clinton, Blair and Schröder won elections in the 1990s by combining market economics with social investment: tax credits for
+          low-paid workers, expanded higher education, the minimum wage in Britain in 1999. Giddens argued that the old left's state
+          ownership and the new right's pure market both failed, and a third way was needed for a world of global flows.
+        against:
+          - from: socdem.democratic-socialism
+            text: >-
+              The third way deregulated finance (repealing Glass–Steagall in 1999), signed NAFTA and expanded the private finance of
+              public services; it did not equip workers, it handed them to the market.
+          - from: conservatism.national
+            text: >-
+              "Inevitable" was the alibi of elites who chose to move factories abroad; tariffs and industrial policy were always possible.
+        sources:
+          - {author: Anthony Giddens, title: "The Third Way: The Renewal of Social Democracy", year: 1998}
+        traditions:
+          defining: [socdem.third-way]
+          typical: [liberalism.technocratic, liberalism.progressive, liberalism.social]
+          rejects: [socdem.democratic-socialism, conservatism.national]
+        presupposes: [history.motor.technology]
+        analysis:
+          gains: [professional-managerial, finance-capital]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >-
+            Treating globalization as inevitable takes trade and capital rules off the political agenda, which favors mobile capital and
+            the educated professionals who prosper in it, while compensation for others depends on budgets that capital mobility erodes.
+          drain: sustains
+          law_of_value: extends
+      - id: hist.neoliberal-turn.crony-corporatism
+        label: Not free markets but corporatism, central banks and bailouts
+        claim: >-
+          What is called neoliberalism was never the free market. It was a partnership of big business, banks and government: central
+          banks printing money for asset owners, bailouts for Wall Street, regulations written by lobbyists. A truly free market would
+          look very different.
+        voiced: >-
+          "Socialism for the rich, capitalism for the rest. The Fed inflates the money, the banks get bailed out, and they call it the
+          free market."
+        you: You think what's called neoliberalism was crony corporatism, not a real free market.
+        because: >-
+          In 2008 governments rescued the banks with trillions in guarantees and the Federal Reserve bought assets on a vast scale,
+          enriching their owners. The federal regulatory code grew under every administration that called itself free-market. Rothbard
+          and Ron Paul argued that the central bank itself is the engine of the boom-bust cycle and of transfers to the politically
+          connected.
+        against:
+          - from: marxism.western
+            text: >-
+              There has never been a capitalism without the state; "real free markets" is a utopia that serves to absolve actual
+              capitalism of its results.
+          - from: liberalism.chicago
+            text: >-
+              Without the Fed's action in 2008 there would have been a second Great Depression; the bailouts were repaid with interest.
+        sources:
+          - {author: Murray N. Rothbard, title: "The Case Against the Fed", year: 1994}
+          - {author: Ron Paul, title: "End the Fed", year: 2009}
+        traditions:
+          defining: [libertarianism.paleo]
+          typical: [libertarianism.ancap, libertarianism.minarchist, liberalism.austrian]
+          rejects: [liberalism.chicago, socdem.keynesian]
+        presupposes: [capitalism.nature.crony-corrupted]
+        analysis:
+          gains: [petty-bourgeoisie]
+          pays: [core-workers, reserve-army]
+          mechanism: >-
+            Blaming state favors rather than markets turns resentment of bailouts into demands to abolish the central bank and
+            regulation, which would leave workers and small savers without deposit insurance, welfare or labor law.
+          drain: none
+          law_of_value: extends
+      - id: hist.neoliberal-turn.betrayal-of-the-nation
+        label: Globalist elites sold out the nation's industry and its workers
+        claim: >-
+          Free trade and open borders served a cosmopolitan elite who owed loyalty to no country. They shipped factories abroad, imported
+          cheap labor, and left the industrial heartlands to decay, while lecturing those left behind.
+        voiced: >-
+          "The elites have seceded from the nation. They sold the factories to Mexico and China, opened the borders, and called it
+          progress. The workers of the heartland paid for it."
+        you: You think the neoliberal era was a betrayal of the nation and its working people by its own elites.
+        because: >-
+          The US lost about a third of its manufacturing jobs between 2000 and 2010, concentrated in particular towns. Buchanan opposed
+          NAFTA in 1992–93 as the betrayal of American workers; Lasch argued that the professional and managerial elites had become a
+          class without attachment to place or nation. Brexit in 2016 and Trump's election drew on the same regions.
+        against:
+          - from: marxism.trotskyism
+            text: >-
+              The "globalist elite" is the capitalist class of each nation, including the national one. Blaming migrants and foreigners
+              protects domestic owners.
+          - from: liberalism.chicago
+            text: >-
+              Most lost manufacturing jobs went to automation, not trade, and tariffs raise prices for the same workers they claim to
+              protect.
+        sources:
+          - {author: Patrick J. Buchanan, title: "The Great Betrayal: How American Sovereignty and Social Justice Are Being Sacrificed to the Gods of the Global Economy", year: 1998}
+          - {author: Christopher Lasch, title: "The Revolt of the Elites and the Betrayal of Democracy", year: 1995}
+        traditions:
+          defining: [conservatism.paleo, conservatism.national]
+          typical: [conservatism.right-populism, conservatism.postliberal, commonsense.declinist]
+          rejects: [liberalism.chicago, socdem.third-way, liberalism.internationalist]
+        presupposes: [contradiction.primary.globalism-vs-nations]
+        analysis:
+          gains: [industrial-capital, petty-bourgeoisie, core-workers]
+          pays: [peripheral-workers, reserve-army]
+          mechanism: >-
+            Framing neoliberalism as betrayal by cosmopolitan elites turns core workers' losses into demands for tariffs and border
+            closure, which protects domestic industrial capital and native workers at the expense of migrants and of workers abroad.
+          drain: sustains
+          law_of_value: regulates
+          consciousness: economic-corporate
+      - id: hist.neoliberal-turn.market-society
+        label: The market let loose on society, dissolving community and meaning
+        claim: >-
+          Neoliberalism did not just change economic policy; it made the market the measure of everything: schools, hospitals, family
+          time, the self. It dissolved the communities, unions, churches and mutual obligations that once held people together.
+        voiced: >-
+          "To allow the market mechanism to be sole director of the fate of human beings would result in the demolition of society. We
+          became entrepreneurs of ourselves, and forgot how to be neighbors."
+        you: You think the neoliberal era turned all of life into a market and weakened the bonds that held society together.
+        because: >-
+          Polanyi argued in 1944 that a self-regulating market treating land, labor and money as commodities destroys the social fabric
+          and provokes a backlash. Brown shows neoliberal reason recasting citizens as human capital. Benedict XVI's encyclical of 2009
+          criticized an economy detached from ethics and the common good. Union membership, church attendance and civic associations
+          fell together across the rich countries.
+        against:
+          - from: liberalism.classical
+            text: >-
+              Markets also freed people from oppressive villages, fathers and priests; nostalgia for "community" forgets who was kept in
+              their place.
+          - from: marxism.trotskyism
+            text: >-
+              The problem is capital, not "the market" in the abstract; dissolution of community is the old story of capitalism, not a
+              novelty of the 1980s.
+        sources:
+          - {author: Karl Polanyi, title: "The Great Transformation", year: 1944}
+          - {author: Wendy Brown, title: "Undoing the Demos: Neoliberalism's Stealth Revolution", year: 2015}
+          - {author: Benedict XVI, title: "Caritas in Veritate", year: 2009}
+        traditions:
+          typical: [conservatism.cst, conservatism.postliberal, conservatism.distributism, socdem.democratic-socialism, conservatism.one-nation]
+          rejects: [liberalism.chicago, liberalism.austrian]
+        presupposes: [capitalism.nature.market-society]
+        analysis:
+          gains: [core-workers, petty-bourgeoisie]
+          pays: [finance-capital]
+          mechanism: >-
+            Reading neoliberalism as the commodification of social life supports taking health, education and care back out of markets,
+            which shrinks the field of profitable investment, while the conservative versions also restore the authority of family and
+            church.
+          drain: none
+          law_of_value: regulates
+  # ------------------------------------------------------------------
+  - id: hist.ww2
+    domain: history
+    layer: analysis
+    question: What was the Second World War?
+    plain: >-
+      From 1937 in China and 1939 in Europe until 1945 the Second World War killed some 70 to 85 million people, including six million
+      Jews murdered in the Holocaust. The Soviet Union lost around 27 million people, China perhaps 15 to 20 million. It ended with the
+      atomic bombing of Hiroshima and Nagasaki. What was it?
+    short: the Second World War
+    importance: 2
+    region: history
+    positions:
+      - id: hist.ww2.just-war-against-fascism
+        label: A just war of the democracies and their allies against fascism
+        claim: >-
+          The war was a necessary and just war against Nazi Germany, fascist Italy and imperial Japan, states bent on conquest and genocide.
+          The liberal democracies, with the Soviet Union and China, defeated them and built the post-war order of the United Nations.
+        voiced: >-
+          "We shall fight on the beaches, we shall never surrender. You ask what is our aim? Victory, victory at all costs, for without
+          victory there is no survival."
+        you: You see the Second World War as a just war against fascist aggression and genocide.
+        because: >-
+          Germany invaded Poland in 1939 after absorbing Austria and Czechoslovakia; Japan had invaded China in 1937. The Nazis built
+          death camps and murdered six million Jews and millions of others. Britain stood alone in 1940–41. Weinberg's global history
+          shows the Axis aimed at total domination. Victory produced the UN, the Universal Declaration of Human Rights and the
+          Nuremberg trials.
+        against:
+          - from: nationalism.decolonial
+            text: >-
+              Churchill fought for the British Empire, which he refused to dissolve, and his government let the Bengal famine kill around
+              three million. The "democracies" ruled hundreds of millions without their consent.
+          - from: marxism.ml
+            text: >-
+              The Western democracies appeased Hitler at Munich and waited three years to open a second front while the Soviet people
+              did most of the dying.
+        sources:
+          - {author: Winston Churchill, title: "The Second World War", year: 1948}
+          - {author: Gerhard L. Weinberg, title: "A World at Arms: A Global History of World War II", year: 1994}
+        traditions:
+          defining: [liberalism.internationalist]
+          typical: [liberalism.social, conservatism.christian-democracy, conservatism.neo, socdem.keynesian, conservatism.one-nation]
+          rejects: [fascism.nazism, marxism.left-communism]
+        presupposes: [intl.sovereignty.conditional-on-rights]
+        analysis:
+          gains: [finance-capital, industrial-capital, core-workers]
+          pays: [peripheral-workers]
+          mechanism: >-
+            Remembering the war as the democracies' just war grants the post-war US-led order its founding legitimacy, which is invoked
+            for later interventions, while the empires' colonial record in the same war drops out.
+          drain: sustains
+          law_of_value: none
+      - id: hist.ww2.soviet-people-decisive
+        label: The Soviet people broke the Nazi war machine
+        claim: >-
+          The war against Nazism was decided on the Eastern Front, where the Red Army destroyed most of the German army at a cost of some
+          27 million Soviet lives. The Western allies opened the second front in 1944, when the outcome was already clear.
+        voiced: >-
+          "Stalingrad, Kursk, Berlin. Twenty-seven million dead, and the red flag over the Reichstag. Whoever forgets who defeated fascism
+          will be ready to forgive it."
+        you: You think the Soviet Union did most to defeat Nazi Germany and paid most for it.
+        because: >-
+          Most German military deaths, about three quarters or more, occurred on the Eastern Front. The battles of Moscow (1941),
+          Stalingrad (1942–43) and Kursk (1943) broke the Wehrmacht before D-Day. Glantz and House reconstruct the Soviet campaigns from
+          both sides' archives. Soviet industry evacuated beyond the Urals outproduced Germany in tanks and aircraft.
+        against:
+          - from: liberalism.internationalist
+            text: >-
+              The USSR signed a pact with Hitler in August 1939, divided Poland with him, invaded Finland and annexed the Baltic states;
+              US Lend-Lease supplied much of the Red Army's trucks, food and communications.
+          - from: marxism.trotskyism
+            text: >-
+              Stalin's purge of the officer corps and his refusal to heed warnings of the invasion cost millions of lives in 1941.
+        sources:
+          - {author: David M. Glantz and Jonathan M. House, title: "When Titans Clashed: How the Red Army Stopped Hitler", year: 1995}
+          - {author: Georgy Zhukov, title: "Reminiscences and Reflections", year: 1969}
+        traditions:
+          defining: [marxism.ml]
+          typical: [nationalism.eurasianism, marxism.hoxhaism, marxism.juche]
+          contested: [marxism.trotskyism]
+          rejects: [fascism.nazism]
+        presupposes: [hist.ussr-stalin.socialism-built]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [finance-capital]
+          mechanism: >-
+            Crediting the Soviet Union with defeating fascism lends the prestige of victory to planned economies and to the
+            anti-imperialist camp, and counters the equation of communism with Nazism.
+          drain: reduces
+          law_of_value: suspends
+      - id: hist.ww2.several-wars-in-one
+        label: Several wars in one, imperialist and liberatory at once
+        claim: >-
+          The Second World War combined five different wars: an inter-imperialist war between the great powers, a just war of the
+          Soviet Union's defense, a war of national liberation by China, colonial peoples' wars against their rulers, and the resistance
+          of Europe's occupied peoples.
+        voiced: >-
+          "The Second World War was a combination of five different conflicts. Support the just wars of the USSR, of China, of the
+          colonies and of the resistance; support none of the imperialists."
+        you: You see the Second World War as several wars at once, some just and some imperialist.
+        because: >-
+          Britain and France fought to keep their empires; the US to secure its place as the dominant power; Germany and Japan to
+          redivide the world. But the USSR fought for its existence, China against Japanese conquest, the Yugoslav, Greek and Italian
+          partisans against occupation, and Vietnamese and Indonesian movements against both Japan and the returning colonizers.
+          Mandel's analysis gives each its own class content.
+        against:
+          - from: marxism.left-communism
+            text: >-
+              Splitting the war into good and bad parts led workers to fight for one imperialist camp, as the communist parties did in
+              the resistance.
+          - from: liberalism.internationalist
+            text: >-
+              The distinction between British "imperialism" and Nazi conquest erases the difference between an empire in decline and a
+              program of extermination.
+        sources:
+          - {author: Ernest Mandel, title: "The Meaning of the Second World War", year: 1986}
+        traditions:
+          defining: [marxism.trotskyism]
+          typical: [marxism.third-worldism, socdem.democratic-socialism]
+          contested: [marxism.third-camp]
+          rejects: [marxism.left-communism]
+        presupposes: [imperialism.nature.monopoly-stage]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [finance-capital, landed-capital]
+          mechanism: >-
+            Separating the war's components backs the colonized and occupied peoples' struggles against all empires, including the
+            Allied ones, which links anti-fascism to the end of colonial extraction.
+          drain: reduces
+          law_of_value: none
+      - id: hist.ww2.imperialist-on-both-sides
+        label: An imperialist war on both sides, in which workers had no side
+        claim: >-
+          Like 1914, the Second World War was a war between capitalist powers for markets, colonies and spheres of influence. Antifascism
+          mobilized workers to die for their own ruling classes, and the victors' order was no more theirs than the losers'.
+        voiced: >-
+          "Antifascism is the great alibi: the worst product of fascism. It sent the proletariat to die for democracy, that is, for
+          capital, and the bombs fell on workers' districts in Hamburg and Dresden as they did in London."
+        you: You think the Second World War was a war between capitalist powers that workers should have refused.
+        because: >-
+          Both blocs fought for empire: Britain kept India and Africa, the US emerged dominant, the USSR took Eastern Europe. Allied
+          bombing deliberately targeted working-class housing in German cities. Bordiga's current argued that antifascism dissolved
+          workers' independence into national unity, and the post-war order confirmed it: capitalism restored everywhere in the West.
+        against:
+          - from: marxism.trotskyism
+            text: >-
+              Refusing to distinguish between Nazi extermination and its enemies is abstention dressed as principle; the partisans,
+              the Soviet worker and the colonized all had a side.
+          - from: marxism.ml
+            text: >-
+              Neutrality between Auschwitz and the Red Army that liberated it is not internationalism.
+        sources:
+          - {author: Amadeo Bordiga, title: "Auschwitz ou le grand alibi (Auschwitz or the Great Alibi)", year: 1960}
+        traditions:
+          defining: [marxism.left-communism]
+          typical: [marxism.council-communism, anarchism.communist]
+          contested: [marxism.third-camp]
+          rejects: [marxism.ml, marxism.trotskyism, liberalism.internationalist]
+        presupposes: [war.militarism.imperialist-rivalry]
+        excludes: [hist.ww2.just-war-against-fascism]
+        analysis:
+          gains: [core-workers]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >-
+            Refusing both camps denies any state the loyalty of its workers in war, which threatens ruling classes' capacity to mobilize
+            but also withholds support from the peoples fighting occupation and extermination.
+          drain: none
+          law_of_value: abolishes
+      - id: hist.ww2.war-of-empires
+        label: A war between empires, fought with colonial soldiers and colonial famine
+        claim: >-
+          For most of the world the war was a contest between empires. India supplied two and a half million soldiers and suffered a
+          famine in Bengal; Africans fought for the powers that ruled them; and when the war ended, the victors moved to reclaim their
+          colonies.
+        voiced: >-
+          "Before they were its victims, they were its accomplices: they tolerated Nazism before it was inflicted on them, because until
+          then it had been applied only to non-European peoples."
+        you: You see the Second World War through what it meant for the colonized, not only for Europe.
+        because: >-
+          The Bengal famine of 1943 killed around three million while grain was exported and shipping withheld (Mukerjee). The Indian
+          Army was the largest volunteer army in history. In 1945 France massacred thousands in Sétif, Algeria, on the day of victory in
+          Europe, and returned to Indochina; Britain and the Netherlands fought to retake Indonesia. Césaire called Nazism colonialism
+          applied to Europeans.
+        against:
+          - from: liberalism.internationalist
+            text: >-
+              An Axis victory would have meant Japanese and German empires far crueler than the British; colonial peoples who fought for
+              the Allies, like Nehru's Congress after 1945, understood the difference.
+          - from: marxism.ml
+            text: >-
+              The colonial lens can slide into excusing Subhas Chandra Bose's alliance with Japan and Germany; anti-fascism was the
+              condition of decolonization.
+        sources:
+          - {author: Aimé Césaire, title: "Discourse on Colonialism", year: 1950}
+          - {author: Madhusree Mukerjee, title: "Churchill's Secret War: The British Empire and the Ravaging of India during World War II", year: 2010}
+          - {author: Yasmin Khan, title: "The Raj at War: A People's History of India's Second World War", year: 2015}
+        traditions:
+          defining: [nationalism.decolonial]
+          typical: [marxism.third-worldism, nationalism.pan-africanism, marxism.black-radical]
+          rejects: [conservatism.neo]
+        presupposes: [poverty.cause.colonial-legacy]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, landed-capital]
+          mechanism: >-
+            Reading the war through the colonies denies the core powers their founding moral story and supports claims for reparations
+            and for an order not designed by the war's victors.
+          drain: reduces
+          law_of_value: none
+      - id: hist.ww2.holocaust-rupture
+        label: Above all the Holocaust, a rupture in civilization
+        claim: >-
+          The war's central fact is the Holocaust: the industrial murder of six million Jews, and of Roma, disabled people and others, by
+          a modern state. It shows that civilization offers no guarantee and founds the duty of "never again".
+        voiced: >-
+          "It happened, therefore it can happen again: this is the core of what we have to say. It can happen, and it can happen
+          everywhere."
+        you: You see the Holocaust as the central meaning of the Second World War.
+        because: >-
+          Hilberg reconstructed how ordinary bureaucracies, railways and firms carried out the destruction of European Jews. Levi's
+          testimony from Auschwitz showed what was destroyed. After 1945 the genocide convention (1948) and the founding of Israel
+          (1948) were both, in different ways, answers to it; for many Jews the lesson was that only a state of their own could protect
+          them.
+        against:
+          - from: nationalism.palestinian
+            text: >-
+              The lesson "never again" was used to justify the dispossession of the Palestinians, who bore no responsibility for European
+              crimes.
+          - from: nationalism.decolonial
+            text: >-
+              Centering the Holocaust as unique can obscure the colonial genocides that preceded it, such as Germany's in Namibia in
+              1904–08.
+        sources:
+          - {author: Raul Hilberg, title: "The Destruction of the European Jews", year: 1961}
+          - {author: Primo Levi, title: "If This Is a Man", year: 1947}
+        traditions:
+          defining: [nationalism.zionism-labor]
+          typical: [liberalism.internationalist, liberalism.social, religious.religious-zionism]
+          rejects: [fascism.nazism, fascism.third-position]
+        analysis:
+          gains: [professional-managerial]
+          pays: [peripheral-workers]
+          mechanism: >-
+            Making the Holocaust the war's meaning grounds human rights law and the duty to prevent genocide; it has also been invoked to
+            justify a settler state's security policy, whose costs fall on Palestinians.
+          drain: none
+          law_of_value: none
+      - id: hist.ww2.nonviolent-witness
+        label: A catastrophe of total war that made victims of civilians on all sides
+        claim: >-
+          The war was a catastrophe in which every side came to target civilians: the bombing of Warsaw, Rotterdam and London, then of
+          Hamburg, Dresden and Tokyo, and the atomic bombs. Its lesson is that total war corrupts even a just cause.
+        voiced: >-
+          "The bombing of open towns is a moral wrong whoever does it. We were told we were fighting barbarism, and we became the
+          barbarians of Hamburg and Hiroshima."
+        you: You see the Second World War mainly as a moral catastrophe of total war on civilians.
+        because: >-
+          British and US bombing killed hundreds of thousands of German and Japanese civilians; the firebombing of Tokyo in March 1945
+          killed around 100,000 in one night; the atomic bombs killed some 110,000 to over 200,000 by the end of 1945. Brittain
+          protested the bombing at the time; Baker collected evidence that war-making leaders on all sides had alternatives they
+          refused.
+        against:
+          - from: liberalism.internationalist
+            text: >-
+              Pacifism in 1939–45 meant letting the Nazis win; the camps were liberated by soldiers, not by witnesses.
+          - from: marxism.ml
+            text: >-
+              Equating the bombing of Dresden with the extermination of the Jews blurs the war's meaning; the far right has long used
+              "Dresden" exactly this way.
+        sources:
+          - {author: Vera Brittain, title: "Seed of Chaos: What Mass Bombing Really Means", year: 1944}
+          - {author: Nicholson Baker, title: "Human Smoke: The Beginnings of World War II, the End of Civilization", year: 2008}
+        traditions:
+          defining: [anarchism.christian]
+          typical: [nationalism.gandhian, religious.engaged-buddhism]
+          rejects: [conservatism.neo, marxism.ml]
+        presupposes: [war.militarism.pacifist]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [industrial-capital]
+          mechanism: >-
+            Condemning total war as such argues against arms production and strategic bombing in any war, which threatens defense
+            industries and denies states a moral exception for their own violence.
+          drain: none
+          law_of_value: none
+      - id: hist.ww2.crusade-against-bolshevism
+        label: A European civil war against Bolshevism, forced on Germany
+        claim: >-
+          In this reading, held on the far right, the war was a defensive struggle of Germany and Europe against Bolshevism and against
+          an encirclement by Britain and its allies. It is usually joined to minimizing or denying the Nazi crimes.
+        voiced: >-
+          "Europe's real war was against Bolshevism. Germany struck first because Stalin was preparing to strike, and the West chose the
+          wrong side."
+        you: You think Germany's war was above all a fight against communism that the West should have supported.
+        because: >-
+          Proponents point to the Soviet build-up on the western border in 1941, which Suvorov claimed was preparation for an attack on
+          Germany; to Nolte's argument that the Bolshevik terror came first and fascism was a reaction to it; and to Britain's declaration
+          of war in 1939. The record is plain: Germany invaded country after country, planned the starvation of tens of millions of Slavs
+          (the Hunger Plan), and murdered six million Jews in a deliberate genocide.
+        against:
+          - from: liberalism.internationalist
+            text: >-
+              The "preventive war" thesis has been rejected by nearly all historians; Germany's own plans called for the starvation and
+              enslavement of the East. The Holocaust is among the best-documented crimes in history.
+          - from: marxism.ml
+            text: >-
+              This is the self-justification of the Nazi state, repeated by its heirs. Twenty-seven million Soviet dead are the answer.
+        sources:
+          - {author: Ernst Nolte, title: "Der europäische Bürgerkrieg 1917–1945", year: 1987}
+          - {author: Viktor Suvorov, title: "Icebreaker: Who Started the Second World War?", year: 1990, note: "English edition; rejected by most historians"}
+        traditions:
+          defining: [fascism.nazism]
+          typical: [fascism.third-position, fascism.identitarian, fascism.clerical]
+          rejects: [marxism.ml, liberalism.internationalist, marxism.trotskyism]
+        presupposes: [fascism.nature.reaction-to-bolshevism]
+        excludes: [hist.ww2.just-war-against-fascism, hist.ww2.soviet-people-decisive, hist.ww2.holocaust-rupture]
+        analysis:
+          gains: [industrial-capital, petty-bourgeoisie]
+          pays: [core-workers, peripheral-workers, reserve-army]
+          mechanism: >-
+            Rehabilitating Germany's war rehabilitates the movement that destroyed every workers' organization in Germany and enslaved
+            millions of foreign laborers for German industry, which today serves movements organizing native workers against migrants
+            and the left.
+          drain: sustains
+          law_of_value: extends
+  # ------------------------------------------------------------------
+  - id: hist.partition-india
+    domain: history
+    layer: analysis
+    question: What was the Partition of India in 1947?
+    plain: >-
+      In August 1947 British India was divided into India and Pakistan. Punjab and Bengal were cut in two. Somewhere between 10 and 20
+      million people were uprooted, and estimates of the dead run from a few hundred thousand to two million. What was Partition?
+    short: the Partition of India
+    importance: 2
+    region: history
+    positions:
+      - id: hist.partition-india.divide-and-rule
+        label: The final act of British divide and rule
+        claim: >-
+          Partition was the culmination of decades of British policy that divided Indians by religion: separate electorates, the
+          promotion of communal parties, and finally a hurried exit in which a border drawn in five weeks by a man who had never been to
+          India was announced after independence.
+        voiced: >-
+          "The British came to India divided by many things and left it divided by religion. They wrote the communal electorate into law
+          and then washed their hands of the bloodshed."
+        you: You think Britain caused Partition by dividing Indians against each other.
+        because: >-
+          The Morley–Minto reforms of 1909 created separate Muslim electorates. Mountbatten brought independence forward from June 1948
+          to August 1947; Cyril Radcliffe drew the boundary in about five weeks, and it was published only after independence, so
+          millions did not know which country they were in. Tharoor and Chandra argue that colonial policy turned religious difference
+          into political nationhood.
+        against:
+          - from: nationalism.ambedkarite
+            text: >-
+              Indian politicians, Congress included, had real choices; blaming the British lets the Indian elites who agreed to Partition
+              off the hook.
+          - from: nationalism.civic
+            text: >-
+              The Muslim League won the Muslim seats in 1946 decisively; Muslims voted for Pakistan, it was not just a British plot.
+        sources:
+          - {author: Shashi Tharoor, title: "An Era of Darkness: The British Empire in India", year: 2016}
+          - {author: "Bipan Chandra et al.", title: "India's Struggle for Independence, 1857–1947", year: 1988}
+        traditions:
+          typical: [nationalism.civic, nationalism.decolonial, marxism.third-worldism, nationalism.gandhian]
+          rejects: [conservatism.neo]
+        presupposes: [poverty.cause.colonial-legacy]
+        analysis:
+          gains: [professional-managerial, peasantry]
+          pays: [finance-capital]
+          mechanism: >-
+            Blaming the colonial power unites Indians across class and religion against the old empire, which serves the national state
+            and its elites and moves the question of what Indian leaders and classes did out of view.
+          drain: reduces
+          law_of_value: none
+      - id: hist.partition-india.muslim-homeland
+        label: A Muslim nation won a homeland and escaped majority rule
+        claim: >-
+          The Muslims of India were a nation with their own religion, law and history, and in a united India they would have been a
+          permanent minority under Hindu-majority rule. Pakistan secured their political future.
+        voiced: >-
+          "Hindus and Muslims belong to two different religious philosophies, social customs and literatures. To yoke together two
+          such nations under a single state must lead to growing discontent."
+        you: You see Partition as the Muslims of South Asia winning a homeland of their own.
+        because: >-
+          Iqbal proposed a Muslim state in the northwest in 1930; the Lahore Resolution of 1940 demanded independent states for Muslim
+          majority areas. In the 1946 elections the Muslim League won the great majority of Muslim seats. The Congress ministries of
+          1937–39 had convinced many Muslims that they would be shut out of power in a united India.
+        against:
+          - from: nationalism.civic
+            text: >-
+              Two-nation theory was disproved in 1971, when Bengali Muslims broke away from Pakistan; and India still has nearly as many
+              Muslims as Pakistan.
+          - from: marxism.trotskyism
+            text: >-
+              Jalal shows Jinnah used the Pakistan demand as a bargaining chip; the landlords who led the League wanted a state to protect
+              their estates.
+        sources:
+          - {author: Muhammad Ali Jinnah, title: "Presidential Address to the Lahore Session of the All-India Muslim League", year: 1940}
+          - {author: Muhammad Iqbal, title: "Presidential Address to the All-India Muslim League, Allahabad", year: 1930}
+          - {author: Ayesha Jalal, title: "The Sole Spokesman: Jinnah, the Muslim League and the Demand for Pakistan", year: 1985}
+        traditions:
+          typical: [nationalism.ethnic]
+          contested: [religious.islamism-brotherhood, religious.post-islamism]
+          rejects: [nationalism.civic, nationalism.hindutva, nationalism.gandhian]
+        presupposes: [nation.question.ethnic]
+        excludes: [hist.partition-india.vivisection]
+        analysis:
+          gains: [landed-capital, professional-managerial]
+          pays: [peasantry]
+          mechanism: >-
+            Defining the nation by religion unites Muslim peasants with Muslim landlords and professionals, which in Pakistan secured the
+            great estates of Punjab and Sindh against land reform for decades.
+          drain: none
+          law_of_value: none
+      - id: hist.partition-india.vivisection
+        label: The vivisection of the motherland, forced by Muslim separatism
+        claim: >-
+          India is one civilization and one nation, Hindu in its foundation. Partition was the dismemberment of the motherland,
+          extracted by Muslim separatism and conceded by a Congress leadership that appeased it.
+        voiced: >-
+          "Hindustan is the fatherland and holy land of the Hindus. Partition was the vivisection of Mother India, and Akhand Bharat,
+          undivided India, remains the goal."
+        you: You see Partition as the tearing apart of an undivided Indian nation, caused by Muslim separatism and its appeasement.
+        because: >-
+          Savarkar defined the nation as those for whom India is both fatherland and holy land. Hindu nationalists blamed Gandhi and
+          Nehru for concessions to the League and for accepting Partition; Hindus and Sikhs fled the west of Punjab and East Bengal in the
+          millions. The RSS frames Partition as the loss of sacred land.
+        against:
+          - from: nationalism.gandhian
+            text: >-
+              Gandhi was murdered in January 1948 by a Hindu nationalist, Nathuram Godse, for his efforts to protect Muslims; the logic
+              of "one nation, one religion" is the same logic that produced Pakistan.
+          - from: nationalism.ambedkarite
+            text: >-
+              The "Hindu nation" of Savarkar is a caste order; it claims the Dalits only to keep them below.
+        sources:
+          - {author: V. D. Savarkar, title: "Essentials of Hindutva", year: 1923}
+          - {author: M. S. Golwalkar, title: "Bunch of Thoughts", year: 1966}
+        traditions:
+          defining: [nationalism.hindutva]
+          typical: [nationalism.ethnic]
+          rejects: [nationalism.civic, nationalism.gandhian, nationalism.ambedkarite, marxism.ml]
+        presupposes: [nation.belonging.civilizational]
+        excludes: [hist.partition-india.muslim-homeland]
+        analysis:
+          gains: [industrial-capital, petty-bourgeoisie]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >-
+            Framing Partition as Muslim betrayal makes Muslims the internal enemy, which binds Hindu workers and peasants to a
+            nationalism led by business and upper castes and divides the working class along religious lines.
+          drain: none
+          law_of_value: none
+      - id: hist.partition-india.elite-bargain
+        label: A deal among elites that cut off the upsurge from below
+        claim: >-
+          Partition was settled by the British, Congress and the League over the heads of the people, at a moment when naval mutineers,
+          sharecroppers and workers were rising across religious lines. Dividing the country by religion broke that movement.
+        voiced: >-
+          "In February 1946 the naval ratings in Bombay hoisted the flags of Congress, the League and the Communists together. A year
+          later the leaders had divided the country by religion and the people were killing each other."
+        you: You think Partition was a bargain among elites that broke a united movement from below.
+        because: >-
+          The Royal Indian Navy mutiny of 1946 united Hindu and Muslim sailors; the Tebhaga sharecroppers' movement in Bengal and the
+          Telangana rising challenged landlords of every religion. Chatterji shows Hindu elites in Bengal campaigned to partition the
+          province to keep power in the western half. Lohia accused the Congress leaders of accepting Partition because they were tired
+          and wanted office.
+        against:
+          - from: nationalism.ethnic
+            text: >-
+              The religious divide was real and popular, as the elections of 1946 and the communal riots show; a class reading wishes it
+              away.
+          - from: nationalism.civic
+            text: >-
+              Communal violence was already spreading in 1946–47; a hasty settlement may have been the only way to end British rule
+              without a wider civil war.
+        sources:
+          - {author: Sumit Sarkar, title: "Modern India, 1885–1947", year: 1983}
+          - {author: Joya Chatterji, title: "Bengal Divided: Hindu Communalism and Partition, 1932–1947", year: 1994}
+          - {author: Ram Manohar Lohia, title: "Guilty Men of India's Partition", year: 1960}
+        traditions:
+          typical: [marxism.trotskyism, marxism.maoism, socdem.democratic-socialism, marxism.ml]
+          rejects: [nationalism.hindutva, nationalism.ethnic]
+        presupposes: [history.motor.class-struggle]
+        analysis:
+          gains: [peasantry, core-workers, peripheral-workers]
+          pays: [landed-capital, industrial-capital]
+          mechanism: >-
+            Reading Partition as an elite bargain points to the cross-religious movements of sharecroppers and workers as the
+            alternative, which threatens the landlords and business classes on both sides of the border.
+          drain: reduces
+          law_of_value: none
+          disputed: >-
+            Indian communists themselves supported the Pakistan demand in 1942–46 (the Adhikari thesis) as a right of nations, a line
+            later criticized within the party.
+      - id: hist.partition-india.the-peoples-suffering
+        label: Above all what ordinary people suffered, women most of all
+        claim: >-
+          Whatever the politics, Partition was experienced as massacre, flight, rape and abduction. Tens of thousands of women were
+          abducted on both sides, and families killed their own daughters to "save their honor". That suffering, long silenced, is its
+          truth.
+        voiced: >-
+          "History books tell you who signed what. My grandmother tells you about the well in the village where the women jumped in so
+          they would not be taken."
+        you: You think Partition should be understood through what ordinary people, especially women, suffered.
+        because: >-
+          The governments of India and Pakistan estimated that around 75,000 to 100,000 women were abducted and later ran recovery
+          programs that often returned them against their will. Butalia's oral histories recover what families did not speak of; Khan
+          shows the violence was organized by armed bands, often with political backing. Refugee trains arrived full of the dead.
+        against:
+          - from: marxism.ml
+            text: >-
+              Testimony without analysis of who organized the violence and why risks treating it as a natural disaster.
+          - from: nationalism.hindutva
+            text: >-
+              The suffering of Hindus and Sikhs driven from their ancestral lands in Punjab and Bengal is the heart of the story and is
+              often understated.
+        sources:
+          - {author: Urvashi Butalia, title: "The Other Side of Silence: Voices from the Partition of India", year: 1998}
+          - {author: Yasmin Khan, title: "The Great Partition: The Making of India and Pakistan", year: 2007}
+        traditions:
+          defining: [feminism.decolonial]
+          typical: [feminism.materialist, nationalism.gandhian, liberalism.social]
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: []
+          mechanism: >-
+            The reading has little direct class content: centering victims, especially women, takes the story from the states that claim it,
+            which undercuts the use of Partition memory by nationalist movements on both sides.
+          drain: none
+          law_of_value: none
+      - id: hist.partition-india.separation-better
+        label: A separation perhaps better than a forced union, for all its horror
+        claim: >-
+          If two communities could not agree to share a state, a clean separation, even with exchanges of population, might be better
+          than a forced union that would explode later. The tragedy was in how it was done, not that it was done.
+        voiced: >-
+          "If the Muslims want Pakistan, let them have it. A safe army is better than a safe border. Better to separate than to live in
+          a state where one community holds the other hostage."
+        you: You think dividing British India may have been better than forcing an unwilling union, though the way it was done was a disaster.
+        because: >-
+          Ambedkar, writing in 1940, argued that if Muslims were determined on a separate state it was safer to concede it, with an
+          organized exchange of populations, than to keep a minority unwilling in the army and the state. The violence came from the lack
+          of planning and protection, not from the principle. Partition also spared India a constitution of permanent communal
+          bargaining, which let it adopt a secular one with reserved seats for scheduled castes.
+        against:
+          - from: nationalism.civic
+            text: >-
+              Planned population exchanges are themselves a form of ethnic cleansing; the principle that nations must be religiously
+              homogeneous is what produced the killing.
+          - from: nationalism.hindutva
+            text: >-
+              Conceding Pakistan rewarded separatism and taught that violence works.
+        sources:
+          - {author: B. R. Ambedkar, title: "Thoughts on Pakistan", year: 1940}
+        traditions:
+          defining: [nationalism.ambedkarite]
+          contested: [liberalism.classical]
+          rejects: [nationalism.hindutva, nationalism.gandhian]
+        presupposes: [nation.question.secession-by-consent]
+        analysis:
+          gains: [peasantry, reserve-army]
+          pays: [landed-capital]
+          mechanism: >-
+            Accepting separation to avoid a communal bargaining state frees the remaining state to legislate equal citizenship and
+            reserved representation for the lowest castes, at the cost of accepting the mass transfer of minorities.
+          drain: none
+          law_of_value: none

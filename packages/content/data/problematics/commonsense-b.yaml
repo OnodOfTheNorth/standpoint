@@ -1,0 +1,1565 @@
+# Common sense, part 2: greed, taxes, cleaning house, your own first, staying out of politics.
+# Continued from commonsense.yaml. These are the politics of people with no school, stated at
+# full strength beside the theorized answers.
+problematics:
+  # ------------------------------------------------------------------
+  - id: cs.greed
+    domain: commonsense
+    layer: method
+    question: Are people basically greedy?
+    plain: Underneath it all, is everybody just out for what they can get?
+    short: human greed
+    importance: 2
+    positions:
+      - id: cs.greed.everyone-greedy
+        label: Yes, everyone is out for number one
+        claim: "People are greedy by nature; give anyone the chance and they will grab what they can for themselves."
+        voiced: >
+          Everybody's out for number one. Give a man a bit of power or a bit of money and watch what
+          happens. The pastor, the councillor, the union man, your own cousin: the minute they get
+          near the pot, they eat. That's people.
+        you: "You think people are greedy at bottom, and that anyone will grab what they can when they get the chance."
+        because: >
+          It is what experience teaches in every market, office and family quarrel over an
+          inheritance. Every scheme that assumed people would share selflessly has been gamed by
+          someone. Hobbes and Machiavelli said it plainly: men are self-loving and forget a kindness
+          faster than an injury. Expecting otherwise is how you get cheated; expecting greed is how
+          you protect yourself and your own.
+        against:
+          - from: anarchism.communist
+            text: >
+              Kropotkin showed that mutual aid is as old as the species: villages, guilds, strike
+              funds, neighbors after a flood. People grab when they are made to compete for scraps;
+              where the means of life are secure, they share.
+          - from: conservatism.cst
+            text: >
+              Greed is real but it is a disorder, not the whole of a person. A view of human beings
+              that sees only appetite ends by excusing the appetite it describes.
+        sources:
+          - {author: Niccolò Machiavelli, title: The Prince, year: 1532}
+          - {author: Thomas Hobbes, title: Leviathan, year: 1651}
+          - {author: Richard Dawkins, title: The Selfish Gene, year: 1976, note: "often cited for this view, though Dawkins rejects reading selfish genes as selfish people"}
+        traditions:
+          defining: []
+          typical: [commonsense.anti-politics, commonsense.look-after-your-own, libertarianism.objectivist, liberalism.chicago]
+          contested: [commonsense.self-reliance, conservatism.burkean]
+          rejects: [anarchism.communist, marxism.classical, conservatism.cst, religious.engaged-buddhism]
+        presupposes: []
+        excludes: [cs.greed.system-makes-greedy, cs.greed.most-decent-few-greedy]
+        tension: [change.possibility.organized-people-can]
+        analysis:
+          gains: [finance-capital, industrial-capital, landed-capital]
+          pays: [core-workers, peripheral-workers, reserve-army]
+          mechanism: >
+            If everyone is greedy, then every union, cooperative or movement is a racket waiting to
+            happen, so people do not join them; owners, who need no mass organization to defend their
+            property, lose nothing by the same suspicion. The belief turns competition for wages and
+            jobs, which the labor market imposes, into a fact of nature.
+          drain: none
+          law_of_value: extends
+          method: idealist
+
+      - id: cs.greed.system-makes-greedy
+        label: No, a dog-eat-dog system makes people greedy
+        claim: "People are not born greedy; an economy where you must compete or go under makes them act that way."
+        voiced: >
+          Put anybody in a dog-eat-dog world and they'll bite. It's not that people are rotten. When
+          your rent is due, your kid's sick and there's one job for fifty people, you grab. Change the
+          game and you change the players.
+        you: "You think greed comes from a system that makes people compete to survive, not from human nature."
+        because: >
+          The same people behave differently under different arrangements: neighbors who would cheat
+          a stranger in the market share everything after an earthquake. Marx argued that human
+          nature is the ensemble of social relations, and that a society which makes every means of
+          life a commodity rewards those who grab hardest. Greed is what competition selects for,
+          not what humans are.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Self-interest existed long before markets, and markets are what turn it to others' use.
+              Every system that set out to abolish greed produced new privileged layers grabbing
+              through the party instead of the till.
+          - from: conservatism.burkean
+            text: >
+              The appetite for more is in every heart. Institutions can restrain it or flatter it, but
+              a program that promises to remove it from humanity will need terrible force to try.
+        sources:
+          - {author: Karl Marx, title: Theses on Feuerbach, year: 1888, note: "written 1845, published by Engels 1888"}
+          - {author: Peter Kropotkin, title: "Mutual Aid: A Factor of Evolution", year: 1902}
+          - {author: Erich Fromm, title: To Have or to Be?, year: 1976}
+        traditions:
+          defining: []
+          typical: [marxism.classical, anarchism.communist, socdem.democratic-socialism, marxism.ml, commonsense.rigged]
+          contested: [socdem.labourism, religious.christian-socialism]
+          rejects: [libertarianism.objectivist, liberalism.austrian, conservatism.burkean, conservatism.evangelical-right]
+        presupposes: []
+        excludes: [cs.greed.everyone-greedy]
+        tension: []
+        analysis:
+          gains: [core-workers, peripheral-workers, reserve-army, peasantry]
+          pays: [finance-capital, industrial-capital, landed-capital]
+          mechanism: >
+            Locating greed in competition for the means of life points at the thing that can be
+            changed: secure housing, wages and land reduce the pressure to grab, and a movement that
+            wins them takes those markets out of the owners' hands.
+          drain: reduces
+          law_of_value: regulates
+          method: materialist
+
+      - id: cs.greed.most-decent-few-greedy
+        label: Most people are decent; the greedy few are at the top
+        claim: "Ordinary people are mostly decent; the real greed is found among a few at the top who already have plenty."
+        voiced: >
+          Most people would give you the shirt off their back. It's the ones at the top: the bankers,
+          the landlords, the big men in their convoys. They've got more than they could spend in ten
+          lifetimes and they still want more. That's greed.
+        you: "You think most people are decent, and that the real greed is concentrated among the rich and powerful."
+        because: >
+          Daily life is full of unpaid kindness: neighbors minding children, strangers helping after
+          accidents, migrants sending half their wages home. Studies of disasters find solidarity,
+          not looting, is the normal response. The visible hoarding happens where wealth is already
+          concentrated. Calling everyone greedy lets the truly greedy hide among the decent.
+        against:
+          - from: marxism.classical
+            text: >
+              The capitalist who cuts wages is no greedier than the shopkeeper; competition forces him
+              to accumulate or be swallowed. Blaming greedy individuals leaves the system that makes
+              them in place, and invites a new set of "decent" bosses.
+          - from: liberalism.classical
+            text: >
+              The rich are not a different species. Moralizing about the greed of others is itself
+              envy, and it licenses confiscation that ends by impoverishing the decent majority too.
+        sources:
+          - {author: Rutger Bregman, title: "Humankind: A Hopeful History", year: 2019}
+          - {author: Rebecca Solnit, title: A Paradise Built in Hell, year: 2009}
+          - {author: Michael Kazin, title: The Populist Persuasion, year: 1995, note: "describes this view in American politics"}
+        traditions:
+          defining: []
+          typical: [commonsense.rigged, socdem.left-populism, conservatism.right-populism, religious.liberation-theology, socdem.labourism]
+          contested: [marxism.classical, commonsense.anti-politics]
+          rejects: [libertarianism.objectivist, liberalism.classical]
+        presupposes: []
+        excludes: [cs.greed.everyone-greedy]
+        tension: []
+        analysis:
+          gains: [core-workers, petty-bourgeoisie, peasantry]
+          pays: [finance-capital, landed-capital]
+          mechanism: >
+            It restores working people's trust in each other, which collective action needs, and
+            aims anger upward; because it reads the problem as character, it can be satisfied by
+            punishing a few greedy bankers or officials while the property that produces them stays
+            put.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Materialists split: some see moral anger at the greedy rich as raw material for class
+            consciousness, others as a moral populism that a demagogue can redirect at any named elite.
+          method: mixed
+
+      - id: cs.greed.self-interest-harnessed
+        label: Self-interest is natural, and markets turn it to good
+        claim: "People mainly look after their own interests, and that is not wicked; through markets and competition it ends up serving others."
+        voiced: >
+          It is not from the benevolence of the butcher that we expect our dinner, but from his
+          regard to his own interest. Don't ask people to be saints. Build rules where looking after
+          yourself means serving your customer.
+        you: "You think self-interest is normal and that, under the right rules, it does more good than preaching ever could."
+        because: >
+          Smith's point was that no one has to love strangers to feed them: the baker bakes for
+          profit and the town eats. Systems that run on self-interest work with human nature instead
+          of against it, and they need far less coercion than systems that demand virtue. The
+          question is not whether people are greedy but whether the rules channel their interest
+          into production or into plunder.
+        against:
+          - from: marxism.classical
+            text: >
+              The butcher and the brewer meet the worker not as equals but as employer and employed.
+              Harnessing self-interest through markets means harnessing the worker's need to the
+              owner's profit.
+          - from: conservatism.cst
+            text: >
+              A society that treats self-interest as its engine teaches people to be nothing else.
+              Markets live off trust, honesty and family duty that they do not produce and slowly
+              wear away.
+        sources:
+          - {author: Bernard Mandeville, title: The Fable of the Bees, year: 1714}
+          - {author: Adam Smith, title: The Wealth of Nations, year: 1776}
+          - {author: Albert O. Hirschman, title: The Passions and the Interests, year: 1977}
+        traditions:
+          defining: [liberalism.classical]
+          typical: [liberalism.chicago, liberalism.austrian, libertarianism.minarchist, conservatism.fusionism, commonsense.self-reliance, liberalism.utilitarian]
+          contested: [liberalism.ordoliberal, conservatism.one-nation]
+          rejects: [marxism.classical, conservatism.cst, anarchism.communist, religious.islamism-brotherhood]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [industrial-capital, finance-capital, petty-bourgeoisie]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            Treating self-interest through markets as the engine of welfare justifies leaving wages,
+            prices and investment to private decision, where the owner's interest in profit governs
+            and the worker's interest can be expressed only by selling labor or leaving.
+          drain: sustains
+          law_of_value: extends
+          method: idealist
+
+      - id: cs.greed.a-sin-to-fight
+        label: Greed is a sin in every heart, fought by faith and discipline
+        claim: "Greed is a moral failing present in everyone; it is resisted through faith, conscience and religious discipline, not abolished by any system."
+        voiced: >
+          The love of money is the root of all evil, and it lives in every heart, mine too. You don't
+          fix that with a new government. You fix it on your knees, by giving, fasting and fearing
+          God, and by holding the rich to account before Him.
+        you: "You see greed as a sin everyone carries, to be fought by faith and conscience rather than by politics alone."
+        because: >
+          Christianity, Islam and Buddhism all name the craving for more as a root of suffering, and
+          all prescribe disciplines against it: almsgiving and zakat, fasting, the ban on usury,
+          renunciation. These traditions have kept the poor fed and the rich ashamed for centuries.
+          A politics that forgets sin trusts power to the very appetites it means to restrain.
+        against:
+          - from: marxism.classical
+            text: >
+              Preaching against greed for two thousand years has not lowered a single rent. Religion
+              that treats exploitation as a private sin consoles the poor and leaves the landlord to
+              his conscience.
+          - from: libertarianism.objectivist
+            text: >
+              Wanting more is not a sin; it is the desire to live well. Calling ambition greed is how
+              envy dresses itself as virtue.
+        sources:
+          - {author: Augustine of Hippo, title: The City of God, year: 426}
+          - {author: Walpola Rahula, title: What the Buddha Taught, year: 1959}
+          - {author: Pope Francis, title: Evangelii Gaudium, year: 2013}
+        traditions:
+          defining: []
+          typical: [conservatism.cst, conservatism.evangelical-right, religious.islamism-brotherhood, religious.engaged-buddhism, religious.salafism-quietist, conservatism.traditionalist, religious.liberation-theology]
+          contested: [religious.christian-socialism]
+          rejects: [libertarianism.objectivist, marxism.classical]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [landed-capital, petty-bourgeoisie]
+          pays: [core-workers, peasantry]
+          mechanism: >
+            Framing greed as private sin channels response into charity and personal discipline,
+            which relieve some poverty without touching who owns land and capital; where religious
+            bodies ban usury or demand a just wage, the same view does restrain lenders and employers.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            Liberation theologians read the sin of greed as structural (social sin) and draw
+            anti-capitalist conclusions; most Marxists treat the moral frame as a consolation.
+          method: idealist
+
+      - id: cs.greed.wanting-more-is-good
+        label: Wanting more isn't greed; it's what drives people forward
+        claim: "Wanting more for yourself is healthy ambition, not a vice; it drives work, invention and progress."
+        voiced: >
+          Call it greed if you like. I call it wanting a better life. Nobody ever built a business,
+          bought a house or got their family out of the slum by being content with what they had.
+          Wanting more is what gets you up in the morning.
+        you: "You think wanting more for yourself is healthy ambition, and the engine of getting ahead."
+        because: >
+          Ambition built every fortune and most inventions. People who strive create jobs and
+          products for others; people taught to be ashamed of wanting more stay poor and resentful.
+          Rand argued that rational self-interest is a virtue and that the creator, not the
+          self-sacrificer, is the moral hero. Ordinary strivers know it without the theory.
+        against:
+          - from: ecology.degrowth
+            text: >
+              Endless wanting more on a finite planet is how we got here. The appetite celebrated as
+              ambition is manufactured by advertising and paid for by forests, rivers and the poor.
+          - from: conservatism.cst
+            text: >
+              Ambition for one's family is good; making acquisition the meaning of life is not. A
+              society of strivers with nothing above striving loses its poor and then its soul.
+        sources:
+          - {author: Ayn Rand, title: The Virtue of Selfishness, year: 1964}
+          - {author: Milton Friedman, title: "The Social Responsibility of Business Is to Increase Its Profits", year: 1970}
+        traditions:
+          defining: [libertarianism.objectivist]
+          typical: [commonsense.self-reliance, technology.e-acc, conservatism.fusionism, liberalism.chicago]
+          contested: [conservatism.evangelical-right]
+          rejects: [conservatism.cst, ecology.degrowth, marxism.classical, religious.engaged-buddhism]
+        presupposes: []
+        excludes: [cs.greed.a-sin-to-fight]
+        tension: []
+        analysis:
+          gains: [finance-capital, industrial-capital, petty-bourgeoisie]
+          pays: [core-workers, peripheral-workers, reserve-army]
+          mechanism: >
+            Treating acquisition as virtue makes great fortunes look like the reward of ambition
+            rather than of ownership, and treats those who stay poor as lacking drive, which lowers
+            the political cost of cutting wages and benefits.
+          drain: sustains
+          law_of_value: extends
+          method: idealist
+
+  # ------------------------------------------------------------------
+  - id: cs.taxes
+    domain: commonsense
+    layer: horizon
+    question: Is your tax money taken from you or contributed?
+    plain: When tax comes out of your pay, is it being taken from you or are you chipping in?
+    short: taxes as taking or contributing
+    importance: 2
+    positions:
+      - id: cs.taxes.taken-and-wasted
+        label: Taken from you, and mostly wasted or stolen
+        claim: "Taxes are taken from working people and mostly wasted, lost to corruption, or spent on things that do nothing for those who paid."
+        voiced: >
+          They take it before I even see my wages, and what do I get? Potholes. I pay for my own
+          generator, my own water, my own security guard, and then they tax me on top. The money goes
+          into somebody's pocket or some project nobody asked for.
+        you: "You feel taxes are taken from you and mostly wasted or stolen before they do any good."
+        because: >
+          In much of the world it is literally true: tax collected from traders and wage earners
+          disappears into contracts and accounts, while people buy privately what the state never
+          provides. In rich countries, too, people see waste and get little back for what they pay.
+          A government that wants taxes paid willingly must first show it spends them honestly.
+        against:
+          - from: socdem.nordic
+            text: >
+              Where taxes are high and visible, as in Scandinavia, people trust them because they get
+              free schools, care and pensions in return. The answer to waste is accountability, not
+              resentment of tax as such.
+          - from: marxism.leninism
+            text: >
+              The worker is right that the money is taken, wrong about where it goes. The big drains
+              on the budget are interest to bondholders, subsidies to business and the military, not
+              potholes. Anger at waste is easily turned into cuts to the services workers use.
+        sources:
+          - {author: Grover Norquist, title: "Leave Us Alone: Getting the Government's Hands Off Our Money, Our Guns, Our Lives", year: 2008}
+          - {author: Daron Acemoglu and James A. Robinson, title: Why Nations Fail, year: 2012}
+          - {author: Vanessa S. Williamson, title: "Read My Lips: Why Americans Are Proud to Pay Taxes", year: 2017, note: "describes resentment and pride side by side"}
+        traditions:
+          defining: []
+          typical: [commonsense.anti-politics, commonsense.self-reliance, conservatism.right-populism, conservatism.fusionism, libertarianism.minarchist]
+          contested: [commonsense.rigged]
+          rejects: [socdem.nordic, socdem.keynesian, liberalism.social]
+        presupposes: [cs.politicians.all-crooks]
+        excludes: [cs.taxes.price-of-civilization]
+        tension: []
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [core-workers, reserve-army, peripheral-workers]
+          mechanism: >
+            Distrust of all taxation builds support for cutting taxes and public services together;
+            those who can buy schooling, health and security privately lose little, while those who
+            depend on public provision lose most. In the periphery the same distrust is often
+            accurate and lets the wealthy avoid tax entirely.
+          drain: none
+          law_of_value: extends
+          consciousness: economic-corporate
+
+      - id: cs.taxes.taken-by-force
+        label: Taken by force, without real consent; in principle it is theft
+        claim: "Taxation takes people's earnings under threat of punishment, without their individual consent, and is wrong in principle whatever it is spent on."
+        voiced: >
+          Try not paying and see who shows up at your door. It's taken at gunpoint, and dressing it
+          up as a contribution doesn't change that. A contribution is something you can refuse.
+        you: "You think tax is taken by force without your consent, and is wrong in principle."
+        because: >
+          A contribution is voluntary by definition; tax is collected under threat of fines, seizure
+          and prison. Nozick argued that taxing the earnings of labor is on a par with forced labor:
+          the state claims hours of your working life. Spooner pointed out that no living person
+          ever signed the constitution that supposedly authorizes it.
+        against:
+          - from: liberalism.egalitarian
+            text: >
+              Your pre-tax income is not a natural fact; it exists only under laws of property,
+              contract and money that taxes pay for. There is no untaxed baseline to be robbed of.
+          - from: socdem.labourism
+            text: >
+              Those who call tax theft rarely build their own roads or train their own workers. The
+              principle is a polite way of asking working people to pay for what the rich use.
+        sources:
+          - {author: Lysander Spooner, title: No Treason, year: 1867}
+          - {author: Robert Nozick, title: "Anarchy, State, and Utopia", year: 1974}
+          - {author: Murray N. Rothbard, title: The Ethics of Liberty, year: 1982}
+        traditions:
+          defining: [libertarianism.ancap]
+          typical: [libertarianism.paleo, libertarianism.objectivist, liberalism.austrian, technology.cyberlibertarian]
+          contested: [libertarianism.minarchist, anarchism.individualist]
+          rejects: [liberalism.egalitarian, socdem.nordic, socdem.labourism, conservatism.cst]
+        presupposes: []
+        excludes: [cs.taxes.price-of-civilization, cs.taxes.paid-in]
+        tension: []
+        analysis:
+          gains: [finance-capital, industrial-capital, landed-capital]
+          pays: [core-workers, reserve-army, peripheral-workers]
+          mechanism: >
+            If all tax is theft, then redistribution, public services and progressive rates lose
+            their legitimacy, while property titles and the courts and police that enforce them,
+            which owners need, are treated as natural rights rather than as publicly funded.
+          drain: sustains
+          law_of_value: extends
+
+      - id: cs.taxes.paid-in
+        label: Paid in, like dues; it should come back to those who paid
+        claim: "Taxes are what you pay into a common pot, and those who paid in have earned their pension, health care and help when they need it."
+        voiced: >
+          I've paid in my whole life. Forty years of stamps. So when I need the hospital or my
+          pension, that's not charity, that's mine. What gets me is people who never paid a penny
+          walking in and getting the same.
+        you: "You think of taxes as paying into a common pot, and that people who paid in have earned what comes back."
+        because: >
+          Social insurance was built on exactly this: workers' contributions in, benefits out as a
+          right, not a handout. Beveridge designed the British system on the contributory principle
+          so that benefits would carry no stigma. The sense of having paid in is what makes ordinary
+          people defend public pensions and health care fiercely.
+        against:
+          - from: socdem.nordic
+            text: >
+              Tie benefits too closely to contributions and you exclude carers, the sick, the young
+              and the unemployed, who need help most and could contribute least. Universal rights hold
+              coalitions together better than ledgers.
+          - from: marxism.third-worldism
+            text: >
+              The pot in rich countries was filled partly by value drawn from the periphery, and by
+              migrants who pay in and are then told they have not earned it.
+        sources:
+          - {author: William Beveridge, title: Social Insurance and Allied Services, year: 1942}
+          - {author: Arlie Russell Hochschild, title: Strangers in Their Own Land, year: 2016, note: "describes the 'line-cutters' sentiment"}
+        traditions:
+          defining: [commonsense.look-after-your-own]
+          typical: [socdem.labourism, conservatism.one-nation, conservatism.christian-democracy, conservatism.right-populism, commonsense.self-reliance]
+          contested: [socdem.keynesian, conservatism.national]
+          rejects: [libertarianism.ancap, liberalism.egalitarian]
+        presupposes: []
+        excludes: [cs.taxes.taken-by-force]
+        tension: [solidarity.basis.shared-class]
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [reserve-army, peripheral-workers]
+          mechanism: >
+            The contributory view defends pensions and health insurance against cuts, a real gain for
+            workers with steady employment; it also draws a line against those with broken work
+            records and against migrants, which splits the working class along the line of who has
+            paid in.
+          drain: softens
+          law_of_value: regulates
+          consciousness: economic-corporate
+
+      - id: cs.taxes.price-of-civilization
+        label: Contributed, the price of the things we share
+        claim: "Taxes are each person's contribution to the schools, roads, hospitals and order everyone depends on, and there is no wealth without them."
+        voiced: >
+          Taxes are what we pay for civilized society. Nobody got rich on their own: they used
+          roads, courts and workers someone else schooled. Pay your share and be glad of what it
+          buys.
+        you: "You think of taxes as your share of the things everyone relies on, not as something taken."
+        because: >
+          Private income rests on public goods that no one could provide alone: law, infrastructure,
+          education, health. Murphy and Nagel argue that pre-tax income is not a natural possession,
+          because property itself is defined by the tax and legal system. Countries that tax and
+          spend well have the highest living standards and the most trust.
+        against:
+          - from: libertarianism.ancap
+            text: >
+              That a road is useful does not mean you consented to pay for it, still less for
+              everything else the state chooses to buy with the money.
+          - from: marxism.leninism
+            text: >
+              "We" do not share civilization equally. Workers pay a larger share of income in payroll
+              and sales taxes, while the budget services debt to bondholders and contracts to firms.
+              Talk of shared civilization hides whose state it is.
+        sources:
+          - {author: Oliver Wendell Holmes Jr., title: "Compañía General de Tabacos de Filipinas v. Collector of Internal Revenue (dissent)", year: 1927}
+          - {author: Liam Murphy and Thomas Nagel, title: "The Myth of Ownership: Taxes and Justice", year: 2002}
+        traditions:
+          defining: [socdem.nordic]
+          typical: [liberalism.social, socdem.keynesian, liberalism.egalitarian, conservatism.christian-democracy, socdem.fabian, liberalism.progressive]
+          contested: [conservatism.one-nation]
+          rejects: [libertarianism.ancap, libertarianism.objectivist, commonsense.anti-politics]
+        presupposes: []
+        excludes: [cs.taxes.taken-by-force, cs.taxes.taken-and-wasted]
+        tension: []
+        analysis:
+          gains: [core-workers, professional-managerial, reserve-army]
+          pays: [finance-capital, landed-capital]
+          mechanism: >
+            Accepting tax as contribution sustains the political base for public health, schooling
+            and pensions that take part of what people need out of the market; it is silent on
+            whether those taxes fall on wages or on profits, and in the core it is compatible with
+            budgets that also fund military power abroad.
+          drain: none
+          law_of_value: regulates
+          consciousness: hegemonic
+
+      - id: cs.taxes.workers-pay-rich-dodge
+        label: Taken from working people, while the rich dodge theirs
+        claim: "Taxes fall hardest on wage earners and small traders, while the rich and big companies avoid theirs through loopholes and offshore accounts."
+        voiced: >
+          It comes straight out of my wages, no escape. Meanwhile the billionaires pay less than
+          their cleaners and park the rest in the Cayman Islands. Tax isn't the problem. Who pays it
+          is the problem.
+        you: "You think working people pay their taxes in full while the rich and big companies dodge theirs."
+        because: >
+          Wages are taxed at source, while capital income can be deferred, relabeled or moved
+          offshore. Zucman estimates a large share of the world's household financial wealth sits in
+          tax havens, and Saez and Zucman find that the richest Americans now pay lower total tax
+          rates than many workers. The Panama and Paradise Papers showed who uses the holes.
+        against:
+          - from: liberalism.chicago
+            text: >
+              High rates on capital drive investment abroad and cut the wages it would have raised.
+              The fix is a simple, low, broad tax, not a crusade against the rich.
+          - from: marxism.classical
+            text: >
+              Even a perfectly progressive tax only redistributes after the fact. The bigger transfer
+              happens before tax, in the gap between what workers produce and what they are paid.
+        sources:
+          - {author: Gabriel Zucman, title: The Hidden Wealth of Nations, year: 2015}
+          - {author: Emmanuel Saez and Gabriel Zucman, title: The Triumph of Injustice, year: 2019}
+        traditions:
+          defining: []
+          typical: [commonsense.rigged, socdem.left-populism, socdem.democratic-socialism, socdem.labourism, liberalism.progressive, conservatism.right-populism]
+          contested: [marxism.classical]
+          rejects: [liberalism.chicago, libertarianism.ancap, libertarianism.objectivist]
+        presupposes: [cs.rigged.system-rigged]
+        excludes: []
+        tension: []
+        analysis:
+          gains: [core-workers, reserve-army, petty-bourgeoisie]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            It directs tax anger at havens, loopholes and low rates on capital, so it supports wealth
+            taxes and enforcement that raise the share paid from profits and fortunes; it accepts the
+            pre-tax distribution as the starting point.
+          drain: softens
+          law_of_value: regulates
+          consciousness: class-economic
+
+      - id: cs.taxes.squeezed-for-creditors
+        label: Squeezed from the poor to pay foreign creditors
+        claim: "In indebted countries, new taxes on bread, fuel and phones are raised mainly to service foreign debt under lender conditions, not to provide services."
+        voiced: >
+          Every new tax on bread, fuel, mobile money: they say it's for development, but it's the IMF
+          and the bondholders. Our hospitals have no medicine, and half the budget goes to pay debts
+          we never saw. We are taxed to pay other people's banks.
+        you: "You think the taxes poor people pay in indebted countries mostly go to foreign creditors."
+        because: >
+          In many indebted countries debt service now takes more of the budget than health and
+          education combined. Lender programs typically demand higher sales and fuel taxes, which
+          fall on the poor, alongside spending cuts. Ndikumana and Boyce show that much of the debt
+          financed capital flight by elites, so the poor pay twice: once when the loans were looted,
+          again when they are repaid. Kenya's 2024 protests against a finance bill written to meet
+          lender targets put it in the street.
+        against:
+          - from: liberalism.technocratic
+            text: >
+              Governments borrow because they spend more than they raise. Broadening the tax base is
+              how poor countries escape dependence on lenders, not how they serve it.
+          - from: commonsense.anti-politics
+            text: >
+              Don't blame the foreigners. Our own leaders borrowed it, stole it and now make us pay.
+              They would steal the money just the same with no IMF.
+        sources:
+          - {author: Léonce Ndikumana and James K. Boyce, title: "Africa's Odious Debts: How Foreign Loans and Capital Flight Bled a Continent", year: 2011}
+          - {author: Davison L. Budhoo, title: "Enough Is Enough: Dear Mr. Camdessus... Open Letter of Resignation to the Managing Director of the International Monetary Fund", year: 1990}
+        traditions:
+          defining: []
+          typical: [marxism.dependency, marxism.third-worldism, nationalism.pan-africanism, nationalism.bolivarianism, commonsense.rigged, religious.liberation-theology]
+          contested: [socdem.democratic-socialism]
+          rejects: [liberalism.technocratic, liberalism.chicago]
+        presupposes: [poverty.cause.drain]
+        excludes: []
+        tension: []
+        analysis:
+          gains: [peripheral-workers, peasantry, reserve-army]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >
+            Seeing taxes as tribute to creditors turns tax protests into protests against debt
+            service and lender conditions, which threatens the flow of interest from periphery
+            budgets to core bondholders and the local officials who broker the loans.
+          drain: reduces
+          law_of_value: regulates
+          consciousness: class-economic
+
+  # ------------------------------------------------------------------
+  - id: cs.clean-house
+    domain: commonsense
+    layer: strategy
+    question: Does the country need someone to come in and clean house?
+    plain: Is it going to take one tough person, from outside the mess, to sort this country out?
+    short: cleaning house
+    importance: 3
+    positions:
+      - id: cs.clean-house.tough-leader
+        label: Yes, a tough leader with a free hand to fix things
+        claim: "The country needs a tough leader who will cut through the courts, the parties and the red tape to crush crime and corruption, even if some rules get broken."
+        voiced: >
+          Enough talking. We need someone with balls who will clean the streets and lock up the
+          thieves, big and small. If a few rules get bent, fine. The rules never protected us; they
+          protected them.
+        you: "You think the country needs a tough leader with a free hand to crush crime and corruption, even if rules get bent."
+        because: >
+          Where courts are bought, police are in on it and every party has had its turn at the
+          trough, procedure protects the guilty. People in crime-ridden neighborhoods live the cost
+          daily. Leaders who promised a hard hand, from Duterte in the Philippines to Bukele in El
+          Salvador, won huge majorities because they promised safety to people the law had
+          abandoned, and many voters judged that they delivered.
+        against:
+          - from: liberalism.classical
+            text: >
+              A ruler freed from the rules to punish the guilty decides who is guilty. Duterte's drug
+              war killed thousands of poor suspects without trial; the rich traffickers' lawyers did
+              fine.
+          - from: marxism.leninism
+            text: >
+              The hard hand lands on the poor neighborhood, the street vendor and the union, while
+              the families who own the banks and the land keep their seats at the president's table.
+        sources:
+          - {author: Thomas Carlyle, title: "On Heroes, Hero-Worship, and The Heroic in History", year: 1841}
+          - {author: Carlos de la Torre, title: Populist Seduction in Latin America, year: 2000}
+          - {author: Nicole Curato (ed.), title: "A Duterte Reader: Critical Essays on Rodrigo Duterte's Early Presidency", year: 2017}
+        traditions:
+          defining: []
+          typical: [conservatism.right-populism, commonsense.declinist, commonsense.anti-politics, conservatism.national, fascism.italian]
+          contested: [conservatism.burkean, nationalism.peronism]
+          rejects: [liberalism.classical, liberalism.internationalist, anarchism.communist, socdem.nordic]
+        presupposes: [cs.politicians.all-crooks]
+        excludes: [cs.clean-house.institutions-not-saviors, cs.clean-house.organize-ourselves]
+        tension: []
+        analysis:
+          gains: [landed-capital, industrial-capital, comprador-capital, petty-bourgeoisie]
+          pays: [reserve-army, core-workers, peripheral-workers]
+          mechanism: >
+            Concentrated police and executive power is aimed first at street crime, informal traders
+            and organized labor, the targets least able to buy protection, while property owners
+            gain order and cheaper security; the leader depends on the same business families to
+            govern.
+          drain: sustains
+          law_of_value: none
+          consciousness: economic-corporate
+
+      - id: cs.clean-house.outsider-businessman
+        label: Yes, an outsider who runs it like a business
+        claim: "Professional politicians have failed; someone from business, who knows how to make things work and owes the parties nothing, should run the country."
+        voiced: >
+          These career politicians never ran so much as a corner shop. Put in someone who has met a
+          payroll, who's rich enough that nobody can buy him, and let him run the country like a
+          company that's been mismanaged.
+        you: "You think an outsider from business, rich enough not to be bought, would run the country better than politicians."
+        because: >
+          Businesspeople are judged by results; politicians by speeches. A self-funded outsider owes
+          nothing to donors or party machines and can make decisions on the merits. Voters from Italy
+          to the United States to Argentina have turned to such figures when the parties all looked
+          alike.
+        against:
+          - from: liberalism.republican
+            text: >
+              A country is not a firm, and citizens are not employees. A ruler used to command
+              without opposition treats courts, press and parliament as obstacles to be bought or
+              broken.
+          - from: marxism.classical
+            text: >
+              Electing a capitalist to free the state from capitalists' influence removes the
+              middleman. Berlusconi governed for his media empire; the outsider is the donor in
+              person.
+        sources:
+          - {author: Donald J. Trump and Tony Schwartz, title: The Art of the Deal, year: 1987}
+          - {author: Steven Levitsky and Daniel Ziblatt, title: How Democracies Die, year: 2018, note: "a critical account"}
+        traditions:
+          defining: []
+          typical: [conservatism.right-populism, commonsense.anti-politics, commonsense.self-reliance, technology.e-acc]
+          contested: [liberalism.technocratic, conservatism.fusionism]
+          rejects: [liberalism.republican, socdem.labourism, marxism.classical, conservatism.burkean]
+        presupposes: [cs.politicians.all-crooks]
+        excludes: [cs.politicians.differ-by-whom-they-serve]
+        tension: []
+        analysis:
+          gains: [finance-capital, industrial-capital, petty-bourgeoisie]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Handing office to an owner of capital removes the political intermediaries between
+            business and the state; public budgets, contracts and regulation are run by and around
+            the interests of the owner and his peers, under a promise of efficiency.
+          drain: sustains
+          law_of_value: extends
+          consciousness: economic-corporate
+
+      - id: cs.clean-house.army-steps-in
+        label: Yes, the army should step in and sweep them out
+        claim: "When civilian politicians are corrupt and the country is failing, the army, as the one disciplined national institution, should take over and clean up."
+        voiced: >
+          The politicians sold us to the French, to the companies, to anyone who paid. The soldiers
+          at least are our sons. Let them take over, chase out the thieves and the foreign troops,
+          and give us back our country.
+        you: "You think that when politicians have failed, the army should take over and clean up."
+        because: >
+          In many countries the army is the only body with discipline, national reach and recruits
+          from every region. Officers removed corrupt kings and party bosses in Egypt in 1952, and
+          crowds cheered coups in Mali, Burkina Faso and Niger after 2020 as a break with a political
+          class tied to France. Huntington argued that soldiers can be the modernizers when civilian
+          institutions are too weak to rule.
+        against:
+          - from: liberalism.internationalist
+            text: >
+              Juntas promise a short cleanup and stay for decades. The army is not above politics; it
+              is an armed faction with its own budget and businesses to protect.
+          - from: marxism.trotskyism
+            text: >
+              Officers can break with a foreign patron and still keep workers and peasants out of
+              power. Without mass organizations, the coup that cheers the crowd disarms it.
+        sources:
+          - {author: Gamal Abdel Nasser, title: The Philosophy of the Revolution, year: 1954}
+          - {author: Samuel P. Huntington, title: Political Order in Changing Societies, year: 1968}
+        traditions:
+          defining: []
+          typical: [nationalism.nasserism, nationalism.kemalism, commonsense.declinist, nationalism.pan-africanism, nationalism.baathism]
+          contested: [marxism.african-socialism, marxism.ml, conservatism.right-populism]
+          rejects: [liberalism.internationalist, liberalism.classical, anarchism.syndicalist, marxism.trotskyism]
+        presupposes: []
+        excludes: [cs.clean-house.institutions-not-saviors]
+        tension: []
+        analysis:
+          gains: [petty-bourgeoisie, professional-managerial]
+          pays: [comprador-capital, core-workers]
+          mechanism: >
+            A military takeover replaces the civilian brokers of a country's ties to foreign capital
+            with officers; where it breaks those ties it can cut the drain, but it bans the strikes and
+            parties through which workers and peasants could claim the gains, and officers often become
+            the new brokers.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Marxists split on such coups: some see an anti-imperialist break by the national petty
+            bourgeoisie in uniform, others a Bonapartist arbitration that blocks popular power.
+          consciousness: economic-corporate
+
+      - id: cs.clean-house.throw-them-all-out
+        label: Throw them all out, and put nobody new on top
+        claim: "All of them must go, the whole political class, and people should run things through their own neighborhood assemblies instead of electing new saviors."
+        voiced: >
+          ¡Que se vayan todos! All of them, every last one. Not a new face, not a new party. We'll
+          meet on the corner, bang our pots, run the soup kitchen and the factory ourselves. We
+          don't need a savior; we need them gone.
+        you: "You want the whole political class thrown out, with no new saviors put in their place."
+        because: >
+          When every party has governed and every one has looted, replacing one face with another
+          is pointless. In Argentina in December 2001 the streets brought down a president, and for
+          months neighborhood assemblies, barter clubs and occupied factories ran parts of social
+          life directly. The lesson is that ordinary people can manage when the politicians step
+          aside.
+        against:
+          - from: marxism.leninism
+            text: >
+              Argentina's assemblies faded within two years and Peronists returned to office. A
+              movement that refuses to take power leaves it lying for the next party to pick up.
+          - from: liberalism.social
+            text: >
+              Throwing everyone out leaves no one to run hospitals or pay pensions. Rebuilding parties
+              and institutions is slower and less romantic, but it is the only way to keep them.
+        sources:
+          - {author: Marina Sitrin, title: "Horizontalism: Voices of Popular Power in Argentina", year: 2006}
+          - {author: John Holloway, title: Change the World Without Taking Power, year: 2002}
+        traditions:
+          defining: [commonsense.anti-politics]
+          typical: [anarchism.communist, marxism.autonomism, zapatismo, anarchism.insurrectionary, commonsense.rigged]
+          contested: [socdem.left-populism, anarchism.platformist]
+          rejects: [marxism.leninism, liberalism.social, socdem.labourism, conservatism.burkean]
+        presupposes: [cs.politicians.all-crooks]
+        excludes: [cs.clean-house.tough-leader, cs.clean-house.outsider-businessman]
+        tension: []
+        analysis:
+          gains: [core-workers, reserve-army, petty-bourgeoisie]
+          pays: [finance-capital, professional-managerial]
+          mechanism: >
+            Mass refusal of the political class can topple governments and, through assemblies and
+            occupations, put some production and distribution under direct control; without an
+            organization that takes state power, banks and owners recover once the crisis passes.
+          drain: none
+          law_of_value: suspends
+          consciousness: class-economic
+
+      - id: cs.clean-house.institutions-not-saviors
+        label: No savior; strengthen courts and anti-corruption bodies
+        claim: "No single person can clean house; the cure for corruption is independent courts, auditors, a free press and enforced rules that bind every officeholder."
+        voiced: >
+          Every savior becomes the next thief. What works is boring: judges who can't be fired for
+          their rulings, auditors with teeth, journalists who can't be jailed. Build rules that
+          outlast any person.
+        you: "You think corruption is cured by strong institutions that bind everyone, not by a single savior."
+        because: >
+          Countries that brought corruption down, from Denmark long ago to Estonia or Uruguay more
+          recently, did it through institutions: civil service exams, transparent budgets,
+          independent courts and audit. Saviors concentrate the very discretion that corruption
+          feeds on. Mungiu-Pippidi's comparative work finds that good governance comes from
+          constraints on discretion, not from virtuous rulers.
+        against:
+          - from: commonsense.anti-politics
+            text: >
+              Who runs the courts and anti-corruption bodies? The same people. We've had commissions
+              and audits for years; the big fish never get caught.
+          - from: marxism.dependency
+            text: >
+              Anti-corruption drives in the periphery are often aimed at governments that displease
+              foreign capital. Brazil's Lava Jato inquiry jailed a popular president and opened the oil
+              sector to foreign firms; its leading judge then became a minister in the next
+              government.
+        sources:
+          - {author: Francis Fukuyama, title: Political Order and Political Decay, year: 2014}
+          - {author: Alina Mungiu-Pippidi, title: "The Quest for Good Governance: How Societies Develop Control of Corruption", year: 2015}
+        traditions:
+          defining: []
+          typical: [liberalism.classical, liberalism.technocratic, liberalism.internationalist, liberalism.republican, conservatism.burkean, conservatism.christian-democracy]
+          contested: [socdem.third-way]
+          rejects: [conservatism.right-populism, fascism.italian]
+        presupposes: []
+        excludes: [cs.clean-house.tough-leader]
+        tension: []
+        analysis:
+          gains: [professional-managerial, finance-capital]
+          pays: [comprador-capital]
+          mechanism: >
+            Rule-bound courts and audits curb petty and political corruption and secure contracts
+            and property, which foreign and domestic investors value; they leave legal forms of
+            enrichment untouched, and in the periphery they are often funded and designed by donor
+            agencies and lenders.
+          drain: sustains
+          law_of_value: regulates
+          disputed: >
+            Some Marxists treat clean institutions as a real gain for workers against patronage;
+            others note that anti-corruption campaigns have been used selectively against governments
+            that challenged foreign capital.
+          consciousness: hegemonic
+
+      - id: cs.clean-house.organize-ourselves
+        label: No one is coming; working people must organize and do it
+        claim: "No savior will clean house for ordinary people; they have to organize in unions, parties and associations and take on those who profit from the mess."
+        voiced: >
+          Nobody's coming to save us. Not a general, not a millionaire, not a prophet. The only
+          people who ever cleaned anything up were the ones who did the cleaning: organized, together,
+          and ready to stay organized after the election.
+        you: "You think no savior is coming, and that working people have to organize and fix things themselves."
+        because: >
+          The First International put it in its rules: the emancipation of the working classes must
+          be won by the working classes themselves. Every past savior governed with the rich once in
+          office, because he had no organized base to answer to. The gains people remember, from
+          pensions to land reform, were forced by mass organization.
+        against:
+          - from: conservatism.right-populism
+            text: >
+              Organize who? The unions are as corrupt as the parties. People need a leader who speaks
+              for them, not another committee.
+          - from: liberalism.classical
+            text: >
+              Organizing a class against another to "clean house" means a new machine, with its own
+              bosses and its own spoils.
+        sources:
+          - {author: Karl Marx, title: Provisional Rules of the International Working Men's Association, year: 1864}
+          - {author: Saul D. Alinsky, title: Rules for Radicals, year: 1971}
+        traditions:
+          defining: []
+          typical: [marxism.classical, anarchism.syndicalist, socdem.labourism, marxism.leninism, socdem.democratic-socialism, religious.liberation-theology]
+          contested: [commonsense.anti-politics]
+          rejects: [conservatism.right-populism, liberalism.technocratic]
+        presupposes: [change.possibility.organized-people-can]
+        excludes: [cs.clean-house.tough-leader]
+        tension: []
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry, reserve-army]
+          pays: [finance-capital, industrial-capital, landed-capital, comprador-capital]
+          mechanism: >
+            Organizing those who suffer from corruption into lasting bodies replaces dependence on a
+            patron with collective power over wages, rents and budgets, which raises the cost to
+            owners of buying officials.
+          drain: reduces
+          law_of_value: regulates
+          consciousness: hegemonic
+
+      - id: cs.clean-house.god-fearing-rule
+        label: Yes, but by God-fearing people and moral renewal
+        claim: "The country's rot is moral; it needs leaders who fear God and a return to religious law and values to clean it."
+        voiced: >
+          The thieves in office have no fear of God. Bring back people who pray and keep His law and
+          they will not steal from the widow. Islam is the solution; or, as our pastor says, the
+          nation must return to the Lord.
+        you: "You think the country needs God-fearing leaders and a return to faith to clean it up."
+        because: >
+          Laws are only as good as the people enforcing them, and conscience is the one police
+          officer who is always present. Religious movements from Egypt's Muslim Brotherhood to
+          Brazil's evangelical churches built schools, clinics and honest reputations where the
+          state had failed. People trust those who answer to God over those who answer to donors.
+        against:
+          - from: liberalism.classical
+            text: >
+              Religious parties in office have proved as open to graft as secular ones, and give
+              their rulers the extra claim of speaking for God.
+          - from: marxism.classical
+            text: >
+              Moral renewal changes who sits in the ministries, not who owns the land. Pious
+              governments have defended landlords and cut wages as faithfully as godless ones.
+        sources:
+          - {author: Jerry Falwell, title: "Listen, America!", year: 1980}
+          - {author: Carrie Rosefsky Wickham, title: "The Muslim Brotherhood: Evolution of an Islamist Movement", year: 2013}
+        traditions:
+          defining: []
+          typical: [religious.islamism-brotherhood, conservatism.evangelical-right, religious.islamism-khomeinist, nationalism.hindutva, conservatism.integralism, religious.buddhist-nationalism]
+          contested: [religious.post-islamism, conservatism.cst]
+          rejects: [liberalism.classical, marxism.classical, liberalism.progressive]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [petty-bourgeoisie, landed-capital]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Reading corruption as moral decay brings to office religious movements whose base is
+            traders, professionals and propertied families; their charity networks win the poor's
+            loyalty, while property relations are left intact and independent unions are often treated
+            as sources of discord.
+          drain: none
+          law_of_value: regulates
+          consciousness: hegemonic
+
+  # ------------------------------------------------------------------
+  - id: cs.own-first
+    domain: commonsense
+    layer: priority
+    question: Should you look after your own first?
+    plain: When you can't help everyone, should your own family and people come first?
+    short: looking after your own
+    importance: 3
+    positions:
+      - id: cs.own-first.family-first
+        label: Family first, always; nobody else will look after you
+        claim: "Your duty is to your family before anyone else, because in hard times your family is all you can count on."
+        voiced: >
+          Family first. When I lost my job, it wasn't the government or the union that fed us; it was
+          my sister. Blood is blood. I'd lie for my son, I'd go hungry for my mother. Anyone who says
+          different hasn't been poor.
+        you: "You put your family before everyone else, because in hard times they are who you can count on."
+        because: >
+          For most people in most of the world, the family is the only insurance that works: it pays
+          school fees, houses the unemployed and nurses the old. Confucius held that a father and son
+          who shield each other show uprightness. Duties to your own are concrete; duties to humanity
+          are a slogan until your own are safe.
+        against:
+          - from: marxism.classical
+            text: >
+              The family that must be your only insurance is a family made to carry what a society
+              refuses to share. Family-first politics competes household against household for jobs,
+              places and favors.
+          - from: liberalism.republican
+            text: >
+              Family first in public office is nepotism. A state where every official serves his own
+              people first is a state of clans.
+        sources:
+          - {author: Confucius, title: The Analects, year: "400 BCE", note: "compiled by disciples over the following centuries; see 13.18"}
+          - {author: Edward C. Banfield, title: The Moral Basis of a Backward Society, year: 1958, note: "a critical account of 'amoral familism'"}
+        traditions:
+          defining: [commonsense.look-after-your-own]
+          typical: [religious.confucian, conservatism.traditionalist, commonsense.self-reliance, conservatism.cst, conservatism.paleo]
+          contested: [conservatism.national, marxism.african-socialism]
+          rejects: [technology.effective-altruism, liberalism.utilitarian, marxism.classical]
+        presupposes: []
+        excludes: [cs.own-first.no-favorites]
+        tension: [solidarity.basis.shared-class]
+        analysis:
+          gains: [landed-capital, petty-bourgeoisie]
+          pays: [reserve-army, core-workers]
+          mechanism: >
+            When the family is the only security, people compete household against household for
+            jobs and favors and expect little of public provision; this unpaid care lowers the cost of
+            labor to employers and the pressure on states, and those with property pass it down while
+            the poor share their poverty.
+          drain: none
+          law_of_value: none
+          consciousness: economic-corporate
+
+      - id: cs.own-first.widening-circles
+        label: Yes, then outward in widening circles
+        claim: "You owe most to those closest to you, then to neighbors, country and the world, in rings of decreasing but real duty."
+        voiced: >
+          Charity begins at home, but it doesn't end there. First my family, then my street, my
+          parish, my country, and then the stranger. A man who loves all humanity and neglects his
+          own mother loves no one.
+        you: "You think duties run outward from family to neighbors to country to the world, closest first but never stopping."
+        because: >
+          Augustine taught an order of love: since you cannot help everyone, those bound to you by
+          place and time come first. Burke called the little platoon the first link in the series by
+          which we proceed toward love of country and of mankind. Loyalty learned close to home is the
+          school of wider loyalty, not its enemy.
+        against:
+          - from: technology.effective-altruism
+            text: >
+              A child drowning in front of you and a child dying of malaria far away are equally
+              children. Distance changes your knowledge, not their worth.
+          - from: marxism.third-worldism
+            text: >
+              The circles stop conveniently at the border of the rich country, where the inner rings
+              consume what the outer ones produce.
+        sources:
+          - {author: Augustine of Hippo, title: On Christian Doctrine, year: 397}
+          - {author: Edmund Burke, title: Reflections on the Revolution in France, year: 1790}
+        traditions:
+          defining: [conservatism.burkean]
+          typical: [conservatism.cst, communitarianism, conservatism.christian-democracy, conservatism.one-nation, conservatism.national, religious.confucian]
+          contested: [commonsense.look-after-your-own]
+          rejects: [technology.effective-altruism, liberalism.utilitarian]
+        presupposes: []
+        excludes: [cs.own-first.no-favorites]
+        tension: []
+        analysis:
+          gains: [professional-managerial, core-workers, landed-capital]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >
+            Graded duty legitimizes national welfare and local charity while keeping obligations to
+            the periphery as the weakest, outermost ring; in practice the inner rings of the core
+            receive public provision, and the outer ones receive aid.
+          drain: softens
+          law_of_value: none
+          consciousness: economic-corporate
+
+      - id: cs.own-first.our-people-first
+        label: Our people first; citizens before foreigners
+        claim: "The government's first duty is to its own citizens; jobs, housing and benefits should go to them before newcomers or foreigners."
+        voiced: >
+          Charity starts at home. Our own young people can't get a flat or a job, and they want to
+          give it to people who just arrived. Look after our own first. When they're sorted, then
+          we'll talk.
+        you: "You think a country should look after its own citizens first, before newcomers or foreigners."
+        because: >
+          A nation is a community of mutual obligation, built and paid for by those who belong to
+          it. Every family puts its own children first; a state that does not do the same for its
+          citizens betrays them. Hazony argues that nations, not empires or humanity, are the scale
+          at which mutual loyalty actually works.
+        against:
+          - from: marxism.classical
+            text: >
+              The boss doesn't put "our people" first; he hires whoever is cheapest. Native and migrant
+              workers face the same employer and the same landlord, and splitting them lowers both
+              wages.
+          - from: conservatism.cst
+            text: >
+              The stranger at the door is also your neighbor. Priority for one's own is legitimate;
+              turning the needy away is not.
+        sources:
+          - {author: David Goodhart, title: The Road to Somewhere, year: 2017}
+          - {author: Yoram Hazony, title: The Virtue of Nationalism, year: 2018}
+        traditions:
+          defining: [conservatism.national]
+          typical: [conservatism.right-populism, commonsense.look-after-your-own, commonsense.declinist, conservatism.paleo, nationalism.ethnic, conservatism.postliberal]
+          contested: [socdem.labourism, nationalism.civic]
+          rejects: [marxism.classical, conservatism.cst, liberalism.progressive, technology.effective-altruism]
+        presupposes: []
+        excludes: [cs.own-first.own-means-class]
+        tension: []
+        analysis:
+          gains: [industrial-capital, landed-capital, petty-bourgeoisie]
+          pays: [reserve-army, peripheral-workers, core-workers]
+          mechanism: >
+            Citizen-first rules create a lower tier of residents without full rights, whose labor is
+            cheaper and easier to discipline; employers gain that labor, landlords gain from the
+            housing shortage left unaddressed, and native workers face competition from a workforce
+            that cannot organize.
+          drain: sustains
+          law_of_value: extends
+          consciousness: economic-corporate
+
+      - id: cs.own-first.own-means-class
+        label: Yes, and your own are working people everywhere
+        claim: "Look after your own, but your own are fellow workers and the poor of every country, not the rich of your own."
+        voiced: >
+          Look after your own? Fine. My own are the people who clean, build, drive and nurse: here,
+          in Manila, in Lagos. The factory owner with my accent isn't my own. An injury to one is an
+          injury to all.
+        you: "You think your own are working people everywhere, not the rich who happen to share your country."
+        because: >
+          The Manifesto said workers have no country, meaning the nation's property is not theirs.
+          The rich of every nation cooperate across borders easily; workers who stand only with their
+          compatriots get undercut by workers they refused to stand with. Shared conditions, not
+          shared passports, are what make people "our own".
+        against:
+          - from: conservatism.national
+            text: >
+              Workers do have a country: a language, a history, a welfare state and a home. Telling them
+              their own are strangers abroad is how the left lost them.
+          - from: marxism.third-worldism
+            text: >
+              Workers in rich and poor countries do not share one condition: the first are partly paid
+              out of what is drained from the second. Unity has to start from that fact.
+        sources:
+          - {author: Karl Marx and Friedrich Engels, title: The Communist Manifesto, year: 1848}
+          - {author: Industrial Workers of the World, title: Preamble of the Industrial Workers of the World, year: 1905}
+        traditions:
+          defining: []
+          typical: [marxism.classical, anarchism.syndicalist, marxism.trotskyism, anarchism.communist, marxism.leninism, socdem.democratic-socialism]
+          contested: [socdem.labourism, marxism.third-worldism]
+          rejects: [conservatism.national, nationalism.ethnic, conservatism.right-populism]
+        presupposes: [solidarity.basis.shared-class]
+        excludes: [cs.own-first.our-people-first]
+        tension: []
+        analysis:
+          gains: [core-workers, peripheral-workers, reserve-army]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Treating workers of all countries as one's own supports joint organizing with migrants and
+            across borders, which removes employers' ability to set one group's wages against
+            another's.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            Third Worldists hold that core and periphery workers do not share one interest because of
+            the labor aristocracy; orthodox Marxists and Trotskyists hold the common interest is
+            primary.
+          consciousness: class-economic
+
+      - id: cs.own-first.no-favorites
+        label: No; a stranger's child counts as much as your own
+        claim: "Everyone's life and suffering count equally, so you should help where you can do the most good, even if that means strangers far away before your own."
+        voiced: >
+          If I can save a child's life overseas for the price of a new phone, my own child's new phone
+          can wait. Distance and nationality are accidents. Suffering is suffering.
+        you: "You think every person counts equally, so you should help where it does most good, near or far."
+        because: >
+          Singer's argument is simple: if you can prevent something very bad without sacrificing
+          anything of comparable importance, you ought to. A child dying of a preventable disease far
+          away is no less a child. Partiality to your own is understandable, but it is not a moral
+          justification for letting others die.
+        against:
+          - from: conservatism.burkean
+            text: >
+              A man who treats his children as one claim among billions has stopped being a father.
+              Abstract love of humanity has justified great cruelty to actual people.
+          - from: marxism.dependency
+            text: >
+              Comparing charities leaves out why the child is poor. Donations from the rich do not
+              stop the outflow of profit and debt service that makes them necessary.
+        sources:
+          - {author: William Godwin, title: Enquiry Concerning Political Justice, year: 1793}
+          - {author: Peter Singer, title: "Famine, Affluence, and Morality", year: 1972}
+          - {author: Peter Singer, title: The Life You Can Save, year: 2009}
+        traditions:
+          defining: [technology.effective-altruism]
+          typical: [liberalism.utilitarian, technology.longtermism]
+          contested: [liberalism.egalitarian]
+          rejects: [conservatism.burkean, commonsense.look-after-your-own, conservatism.national, religious.confucian]
+        presupposes: []
+        excludes: [cs.own-first.family-first, cs.own-first.widening-circles]
+        tension: []
+        analysis:
+          gains: [peripheral-workers, peasantry, professional-managerial]
+          pays: [core-workers]
+          mechanism: >
+            Impartial giving moves some income from rich-country donors to health and cash programs in
+            poor countries, and builds careers for the professionals who evaluate it; it leaves the
+            outflow of profits, interest and underpaid labor from those countries untouched.
+          drain: softens
+          law_of_value: none
+          consciousness: economic-corporate
+
+      - id: cs.own-first.the-stranger-too
+        label: Your own include the neighbor in need and the stranger at the door
+        claim: "Your own are the whole community you live among, and hospitality to the stranger and help to the needy are owed, not optional."
+        voiced: >
+          I am because we are. In my village, a traveler is fed before he is asked his name. Your own
+          isn't just your blood. It's whoever is hungry in front of you, and God will ask what you
+          did for them.
+        you: "You think your own include the whole community and the stranger in need, and that hospitality is owed."
+        because: >
+          African, Christian and Islamic traditions agree that hospitality and care for the needy are
+          duties: ubuntu, the Good Samaritan, the share of zakat owed to the traveler. Nyerere built
+          ujamaa, familyhood, on the idea that the village's obligation extends to everyone in it.
+          These are not luxuries of the comfortable but how poor communities have survived.
+        against:
+          - from: commonsense.look-after-your-own
+            text: >
+              That's lovely until there are ten strangers and one pot. You can't feed everyone; somebody
+              has to come first.
+          - from: marxism.classical
+            text: >
+              Hospitality among the poor is real and admirable, but it shares poverty rather than ending
+              it. Communities that only share what they have stay poor while their land and labor feed
+              someone else.
+        sources:
+          - {author: Julius K. Nyerere, title: "Ujamaa: The Basis of African Socialism", year: 1962}
+          - {author: Desmond Tutu, title: No Future Without Forgiveness, year: 1999}
+          - {author: Gustavo Gutiérrez, title: A Theology of Liberation, year: 1971}
+        traditions:
+          defining: []
+          typical: [marxism.african-socialism, religious.liberation-theology, religious.christian-socialism, conservatism.cst, religious.islamic-socialism, nationalism.indigenous-sovereignty]
+          contested: [communitarianism]
+          rejects: [conservatism.national, libertarianism.objectivist]
+        presupposes: []
+        excludes: [cs.own-first.our-people-first]
+        tension: []
+        analysis:
+          gains: [peasantry, reserve-army, peripheral-workers]
+          pays: [landed-capital]
+          mechanism: >
+            Duties of hospitality and community care keep the poorest fed and housed outside the
+            market, and in land disputes back claims of communal use against private enclosure; they
+            also absorb the costs of unemployment and displacement that employers and states do not
+            pay.
+          drain: softens
+          law_of_value: suspends
+          consciousness: class-economic
+
+      - id: cs.own-first.yourself-first
+        label: Yourself first; you can't help anyone if you're sinking
+        claim: "Each person's first responsibility is to themselves; only someone who has their own life in order can help others."
+        voiced: >
+          Put your own oxygen mask on first. I'm no use to my family or anybody else if I'm broke and
+          broken. Sort yourself out, stand on your own two feet, then help who you choose.
+        you: "You think your first responsibility is yourself, and that you can only help others once you are standing."
+        because: >
+          Heaven helps those who help themselves. A person who has made themselves independent
+          burdens no one and can give freely; a person who sacrifices everything ends up needing
+          rescue. Stirner, from the other direction, refused every claim of family, nation or
+          humanity on the self. Self-care is not selfishness but the precondition of any generosity.
+        against:
+          - from: marxism.african-socialism
+            text: >
+              No one stands on their own two feet. You were fed as a baby, taught as a child, and will
+              be nursed when old. The self that comes first was made by others.
+          - from: conservatism.cst
+            text: >
+              The person is made for gift. A life organized around oneself first rarely gets around to
+              the second step.
+        sources:
+          - {author: Max Stirner, title: The Ego and Its Own, year: 1844}
+          - {author: Samuel Smiles, title: Self-Help, year: 1859}
+          - {author: Ayn Rand, title: The Virtue of Selfishness, year: 1964}
+        traditions:
+          defining: []
+          typical: [commonsense.self-reliance, libertarianism.objectivist, anarchism.individualist, libertarianism.ancap]
+          contested: [commonsense.look-after-your-own]
+          rejects: [conservatism.cst, marxism.african-socialism, religious.christian-socialism]
+        presupposes: []
+        excludes: [cs.own-first.the-stranger-too]
+        tension: []
+        analysis:
+          gains: [petty-bourgeoisie, finance-capital]
+          pays: [reserve-army, core-workers]
+          mechanism: >
+            Putting oneself first frames hardship as each person's own problem to solve, which lowers
+            support for shared provision and union action; those with savings and property are best
+            placed to stand alone, while those without are left to the labor market.
+          drain: none
+          law_of_value: extends
+          consciousness: economic-corporate
+
+  # ------------------------------------------------------------------
+  - id: cs.not-political
+    domain: commonsense
+    layer: strategy
+    question: Is politics something you can stay out of?
+    plain: Can you just not be political, keep your head down and live your life?
+    short: staying out of politics
+    importance: 3
+    positions:
+      - id: cs.not-political.keep-head-down
+        label: Yes; I keep my head down, work, and look after my family
+        claim: "Politics is something you can and should stay out of; it is a game for others, and ordinary people do best minding their work and family."
+        voiced: >
+          I'm not political. I go to work, I pay my bills, I raise my kids. Politics is shouting on
+          TV and people falling out at dinner. Let them get on with it; it doesn't put food on my
+          table.
+        you: "You think you can stay out of politics, and are better off minding your work and family."
+        because: >
+          For most people politics brings conflict, wasted time and little return. One vote changes
+          nothing; arguing politics costs friendships. Life's real goods (work, family, faith,
+          friends) are found outside it, and a person who keeps out of quarrels is often the
+          happier and more decent for it.
+        against:
+          - from: liberalism.republican
+            text: >
+              Those who will not govern are governed by those who will. A people that leaves politics
+              to others leaves its liberty in their keeping.
+          - from: marxism.gramscian
+            text: >
+              Indifference is not neutral; it is the dead weight on which every ruling order rests.
+              Staying out leaves the decisions to those who never stay out.
+        sources:
+          - {author: Nina Eliasoph, title: "Avoiding Politics: How Americans Produce Apathy in Everyday Life", year: 1998}
+          - {author: John R. Hibbing and Elizabeth Theiss-Morse, title: Stealth Democracy, year: 2002}
+        traditions:
+          defining: []
+          typical: [commonsense.anti-politics, commonsense.live-and-let-live, commonsense.self-reliance, commonsense.look-after-your-own]
+          contested: [conservatism.traditionalist]
+          rejects: [liberalism.republican, marxism.gramscian, feminism.radical, marxism.leninism]
+        presupposes: []
+        excludes: [cs.not-political.everything-political, cs.not-political.civic-duty]
+        tension: [change.possibility.organized-people-can]
+        analysis:
+          gains: [finance-capital, industrial-capital, landed-capital]
+          pays: [core-workers, reserve-army, peripheral-workers]
+          mechanism: >
+            When working people withdraw from politics, organized business and the wealthy, who never
+            withdraw, set taxes, labor law and spending unopposed; disengagement is highest among the
+            poor, so policy tilts further toward those who stay involved.
+          drain: none
+          law_of_value: none
+          consciousness: economic-corporate
+
+      - id: cs.not-political.dangerous
+        label: Better to stay out; politics gets people hurt
+        claim: "Getting involved in politics is dangerous; those who stick their necks out lose their jobs, their freedom of movement or their lives, so the sensible person keeps out."
+        voiced: >
+          No te metás. Don't get involved. My uncle got involved and we never saw him again. You sign
+          a petition, you lose your job; you march, you get a bullet. Keep quiet and you'll grow old.
+        you: "You think getting involved in politics is dangerous, and that it is wiser to keep quiet."
+        because: >
+          The danger is not imagined. In Argentina under the dictatorship, in Indonesia after 1965,
+          in Colombia, the Philippines and elsewhere, unionists, organizers and activists were killed
+          by the thousand. Families that survived taught their children to keep out. Havel's
+          greengrocer who puts the party slogan in his window is not a coward; he is staying alive.
+        against:
+          - from: marxism.leninism
+            text: >
+              Silence did not save the disappeared; most were ordinary people. Fear is what repression
+              is for, and organization is the only protection that has ever worked.
+          - from: liberalism.classical
+            text: >
+              Havel's point was that the greengrocer's sign holds the whole system up. When enough
+              people stop displaying it, the danger shrinks.
+        sources:
+          - {author: Václav Havel, title: The Power of the Powerless, year: 1978}
+          - {author: "Juan E. Corradi, Patricia Weiss Fagen and Manuel Antonio Garretón (eds.)", title: "Fear at the Edge: State Terror and Resistance in Latin America", year: 1992}
+        traditions:
+          defining: []
+          typical: [commonsense.anti-politics, commonsense.look-after-your-own, religious.salafism-quietist]
+          contested: [commonsense.live-and-let-live]
+          rejects: [marxism.leninism, marxism.mlm, anarchism.insurrectionary, liberalism.republican]
+        presupposes: []
+        excludes: [cs.not-political.everything-political]
+        tension: []
+        analysis:
+          gains: [landed-capital, comprador-capital, industrial-capital]
+          pays: [peripheral-workers, peasantry, core-workers]
+          mechanism: >
+            Repression works by turning a few killings into general withdrawal; once families teach
+            silence, landowners and employers face no organizing, and wages and land claims stay
+            where force left them.
+          drain: sustains
+          law_of_value: none
+          consciousness: economic-corporate
+
+      - id: cs.not-political.it-finds-you
+        label: You can stay out of politics, but it won't stay out of you
+        claim: "You can ignore politics only until it reaches your rent, your job, your prices or your son's call-up papers; then you have to act."
+        voiced: >
+          I never cared about politics till they shut the plant. Then the price of bread went up,
+          then my boy got sent to the war. You can ignore politics all you like; it doesn't ignore
+          you. When it comes to your door, you answer.
+        you: "You think politics reaches you whether you like it or not, and that people act when it hits home."
+        because: >
+          Most people get involved not from theory but when daily life breaks: a closure, an
+          eviction, a price rise, a war. Piven and Cloward showed that poor people's movements rise
+          when ordinary routines collapse. Scott found Malaysian peasants practicing politics daily
+          through foot-dragging and gossip while calling themselves apolitical. Politics finds
+          everyone in the end.
+        against:
+          - from: marxism.leninism
+            text: >
+              Waiting until politics reaches your door means meeting it unorganized, after the decisions
+              are made. Spontaneous anger flares and dies unless something lasting is built before the
+              crisis.
+          - from: commonsense.anti-politics
+            text: >
+              And when it comes to your door, what can you do? Shout, march, and they do it anyway.
+        sources:
+          - {author: Frances Fox Piven and Richard A. Cloward, title: "Poor People's Movements: Why They Succeed, How They Fail", year: 1977}
+          - {author: James C. Scott, title: "Weapons of the Weak: Everyday Forms of Peasant Resistance", year: 1985}
+        traditions:
+          defining: []
+          typical: [commonsense.rigged, socdem.labourism, marxism.autonomism, commonsense.declinist, anarchism.syndicalist]
+          contested: [marxism.leninism]
+          rejects: [commonsense.live-and-let-live]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [core-workers, reserve-army, peasantry]
+          pays: [industrial-capital, landed-capital]
+          mechanism: >
+            Engagement that starts when a closure, eviction or price rise hits produces defensive
+            struggles that can win back wages, homes and subsidies; because it waits for the blow, it
+            usually fights on ground and timing chosen by the employer or the state.
+          drain: none
+          law_of_value: regulates
+          consciousness: economic-corporate
+
+      - id: cs.not-political.everything-political
+        label: No; everything is political, and staying out takes a side
+        claim: "Nobody can stand outside politics; who does the housework, who gets paid what and who owns the land are all political, and staying neutral supports whoever is on top."
+        voiced: >
+          The personal is political. Who cooks, who earns, who gets hit, who owns the land: politics.
+          If you stay neutral between the boot and the neck, you've chosen the boot.
+        you: "You think everything is political, and that staying neutral sides with whoever has power."
+        because: >
+          Hanisch argued that women's private troubles (housework, sex, childcare) were political
+          because they had common causes and collective solutions. Gramsci wrote that he hated the
+          indifferent, because indifference is the dead weight of history on which the powerful rely.
+          Freire held that to wash one's hands of a conflict between the powerful and the powerless is
+          to side with the powerful.
+        against:
+          - from: liberalism.classical
+            text: >
+              If everything is political, nothing is private, and every kitchen and bedroom is open to
+              the movement's inspection. Protecting a sphere outside politics is what liberty means.
+          - from: commonsense.live-and-let-live
+            text: >
+              Not everything has to be a fight. Some of us just want to have dinner without a lecture.
+        sources:
+          - {author: Antonio Gramsci, title: "Indifferenti (I Hate the Indifferent)", year: 1917}
+          - {author: Carol Hanisch, title: The Personal Is Political, year: 1970}
+          - {author: Paulo Freire, title: Pedagogy of the Oppressed, year: 1970}
+        traditions:
+          defining: [feminism.radical]
+          typical: [marxism.gramscian, feminism.materialist, feminism.black, religious.liberation-theology, marxism.western, anarchism.feminist, feminism.queer]
+          contested: [liberalism.progressive]
+          rejects: [liberalism.classical, commonsense.live-and-let-live, commonsense.anti-politics, religious.salafism-quietist]
+        presupposes: []
+        excludes: [cs.not-political.keep-head-down, cs.not-political.faith-above-politics]
+        tension: []
+        analysis:
+          gains: [core-workers, peripheral-workers, reserve-army]
+          pays: [finance-capital, industrial-capital, landed-capital]
+          mechanism: >
+            Politicizing housework, pay and land makes unpaid and underpaid work visible as a
+            collective grievance, which supports claims on employers and states; it can also stay at
+            the level of awareness and personal conduct without building the organizations that win
+            those claims.
+          drain: none
+          law_of_value: regulates
+          consciousness: hegemonic
+
+      - id: cs.not-political.civic-duty
+        label: No; a citizen has a duty to take part
+        claim: "Taking part in public affairs is a duty of every citizen; someone who keeps out is failing the community, not staying neutral."
+        voiced: >
+          We do not say a man who takes no interest in politics minds his own business; we say he has
+          no business here at all. Vote, serve on the jury, go to the meeting. That's what a citizen
+          is.
+        you: "You think taking part in public life is a citizen's duty, not an optional hobby."
+        because: >
+          Pericles told the Athenians that one who takes no part in public affairs is useless, not
+          quiet. Rousseau warned that when people say of the state "what does it matter to me?", the
+          state is lost. Self-government depends on citizens who show up; every withdrawal hands
+          power to the few who never withdraw.
+        against:
+          - from: commonsense.anti-politics
+            text: >
+              Duty to what? To pick which crook robs me? I'll do my duty when they do theirs.
+          - from: marxism.classical
+            text: >
+              Civic duty in a society divided by class asks the worker to take part, on unequal terms,
+              in institutions built to protect property. Equal citizenship over unequal ownership.
+        sources:
+          - {author: Thucydides, title: History of the Peloponnesian War, year: "400 BCE", note: "Pericles' Funeral Oration, Book II"}
+          - {author: Jean-Jacques Rousseau, title: The Social Contract, year: 1762}
+        traditions:
+          defining: [liberalism.republican]
+          typical: [nationalism.civic, liberalism.social, conservatism.christian-democracy, communitarianism, conservatism.gaullism]
+          contested: [socdem.labourism]
+          rejects: [commonsense.anti-politics, religious.salafism-quietist, anarchism.insurrectionary]
+        presupposes: []
+        excludes: [cs.not-political.keep-head-down]
+        tension: []
+        analysis:
+          gains: [professional-managerial, core-workers]
+          pays: [finance-capital]
+          mechanism: >
+            A norm of participation raises turnout and civic involvement among those otherwise left
+            out, which weakens the advantage organized money gains from abstention; it directs that
+            participation into existing institutions rather than against them.
+          drain: none
+          law_of_value: none
+          consciousness: hegemonic
+
+      - id: cs.not-political.faith-above-politics
+        label: My allegiance is to God; I keep out of worldly politics
+        claim: "A believer's true allegiance is to God, not to parties or states; one obeys the rulers in lawful things and keeps out of political struggle."
+        voiced: >
+          My citizenship is in heaven. I render unto Caesar what is Caesar's, I pray for the rulers,
+          and I don't join their fights. Politics divides the believers and stirs up fitna. Leave it
+          to God.
+        you: "You see your allegiance as belonging to God, and keep out of political struggle on principle."
+        because: >
+          Augustine taught that the earthly city is passing and the believer a pilgrim in it.
+          Luther separated the two kingdoms. Quietist Salafi scholars teach obedience to Muslim rulers
+          and abstention from parties, because rebellion brings fitna (civil strife) that kills more
+          believers than any tyrant. Peace, prayer and personal righteousness do more for the soul and
+          the community than political agitation.
+        against:
+          - from: religious.liberation-theology
+            text: >
+              A faith that blesses the rulers and counsels the poor to wait has already taken a side.
+              The prophets did not keep out of politics; they denounced kings.
+          - from: religious.islamism-brotherhood
+            text: >
+              Islam is a whole way of life, including how society is governed. Leaving politics to
+              rulers who ignore God's law is not piety but surrender.
+        sources:
+          - {author: Augustine of Hippo, title: The City of God, year: 426}
+          - {author: Martin Luther, title: On Secular Authority, year: 1523}
+          - {author: Quintan Wiktorowicz, title: Anatomy of the Salafi Movement, year: 2006}
+        traditions:
+          defining: [religious.salafism-quietist]
+          typical: [anarchism.christian, religious.confucian]
+          contested: [conservatism.traditionalist, religious.engaged-buddhism]
+          rejects: [religious.liberation-theology, religious.islamism-brotherhood, conservatism.evangelical-right, religious.islamism-khomeinist]
+        presupposes: []
+        excludes: [cs.not-political.everything-political]
+        tension: []
+        analysis:
+          gains: [landed-capital, comprador-capital, petty-bourgeoisie]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >
+            Religious abstention and obedience to rulers remove a large part of the faithful from
+            unions, parties and protest, which stabilizes existing governments and property; states
+            in the Gulf and elsewhere have funded quietist teaching for that reason.
+          drain: sustains
+          law_of_value: none
+          consciousness: economic-corporate
+
+      - id: cs.not-political.pitch-in-locally
+        label: Stay out of party politics, but pitch in where you live
+        claim: "Party politics is something to avoid, but helping run the residents' committee, the church fund, the school board or the burial society is just being a good neighbor."
+        voiced: >
+          I don't do politics. I run the street committee, I collect for the burial society, I'm on
+          the school board and I sorted the water with the other mothers. That's not politics; that's
+          just getting things done.
+        you: "You avoid party politics but take part in running your community, and don't count that as politics."
+        because: >
+          Tocqueville saw that ordinary people learn self-government in local associations, not in
+          national parties. Putnam found that dense local networks make governments work better.
+          Local work produces visible results, involves neighbors you know, and avoids the
+          tribalism and grandstanding of party politics.
+        against:
+          - from: marxism.leninism
+            text: >
+              The water committee can fix a pipe but not the privatization of the water company. Local
+              work that refuses to become political stays at the mercy of decisions made above it.
+          - from: liberalism.republican
+            text: >
+              The skills are civic, so is the duty. Calling it "not politics" leaves the bigger
+              decisions to those who make politics a career.
+        sources:
+          - {author: Alexis de Tocqueville, title: Democracy in America, year: 1835}
+          - {author: Robert D. Putnam, title: Bowling Alone, year: 2000}
+        traditions:
+          defining: []
+          typical: [commonsense.live-and-let-live, commonsense.anti-politics, communitarianism, conservatism.burkean, conservatism.distributism, religious.engaged-buddhism]
+          contested: [anarchism.communist, socdem.labourism]
+          rejects: [marxism.leninism]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [core-workers, petty-bourgeoisie, peasantry]
+          pays: []
+          mechanism: >
+            Local self-help supplies services the state or market fails to, using unpaid community
+            labor; it builds organizing skill, but kept apart from politics it relieves governments and
+            owners of costs without contesting their decisions.
+          drain: none
+          law_of_value: suspends
+          consciousness: economic-corporate
