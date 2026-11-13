@@ -61,10 +61,10 @@ nodes:
         consequence: He calls you a reasonable man. His lawyer calls at dawn with a figure.
         next: arc.flood.02
       - id: none
-        text: Don't cut. It isn't an engineer's place to choose who drowns. Evacuate, and leave the rest to God.
+        text: "Don't cut. The state has no right to drown anyone's home on purpose. Evacuate, and let the river decide."
         set: {cut: none}
         evidence:
-          - {position: history.motor.providence, w: 2}
+          - {position: emergency.powers.civil-liberties-hold, w: 2}
         consequence: The river chooses for you. It takes Dadu's eastern wards and both sets of villages.
         next: arc.flood.02
 
@@ -75,7 +75,7 @@ nodes:
       September. A third of the country is under water and eight million people are out of their homes.
       Pakistan puts out under one percent of the world's carbon. The embankments were repaired, on paper, in
       2014; the contractor is now a senator. A scientist on television says warming made the rain heavier.
-      A cleric on the next channel says it is a test. Why did this happen here?
+      A cleric on the next channel says it is a warning. Why did this happen here?
     why: This asks what you think caused the disaster, and what kind of cause you reach for.
     conditions:
       - id: rain-or-ruin
@@ -107,10 +107,10 @@ nodes:
           - {position: ecology.crisis-cause.too-many-people, w: 3}
         next: [{if: {flag: {key: cut, eq: estate}}, to: arc.flood.03b}, {to: arc.flood.03a}]
       - id: test
-        text: God tests the people He loves. Rebuild, and pray.
+        text: A warning from God. We forgot what we owe to Him and to His creation.
         cause: divine
         evidence:
-          - {position: history.motor.providence, w: 3}
+          - {position: ecology.crisis-cause.lost-piety, w: 3}
         next: [{if: {flag: {key: cut, eq: estate}}, to: arc.flood.03b}, {to: arc.flood.03a}]
 
   - id: arc.flood.03a
@@ -315,7 +315,7 @@ nodes:
         side: {axis: empire, dir: neither}
         set: {signed: true}
         evidence:
-          - {position: cs.not-political.keep-head-down, w: 2}
+          - {position: intl.institutions.cooperation, w: 1}
         consequence: Your deputy signs at six in the morning. The highway is cleared by eight.
         next: [{if: {flag: {key: signed, eq: true}}, to: arc.flood.06a}, {to: arc.flood.06b}]
 
@@ -381,9 +381,9 @@ nodes:
         consequence: The embankments go up fast, with Chinese steel and a Chinese site manager. A rumour says the port has been sold. It hasn't, quite.
         next: arc.flood.07
       - id: army
-        text: Let the army run it. It is the only institution in the country that finishes things.
+        text: Let the army run it, with a free hand. In a disaster you need someone who doesn't wait for permission.
         evidence:
-          - {position: cs.clean-house.army-steps-in, w: 3}
+          - {position: emergency.powers.sovereign-exception, w: 3}
         consequence: The embankments are finished on time. So is a new cantonment, and the army's cement company has its best year.
         next: arc.flood.07
       - id: committees
@@ -439,7 +439,7 @@ nodes:
         evidence:
           - {position: ecology.crisis-cause.capital-accumulation, w: 2}
       - id: god
-        text: God sends the rain. People owe each other help, not debts.
+        text: God sends the rain. What we owe, we owe to Him and to each other.
         cause: divine
         evidence:
-          - {position: history.motor.providence, w: 2}
+          - {position: ecology.crisis-cause.lost-piety, w: 2}

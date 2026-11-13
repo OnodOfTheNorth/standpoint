@@ -1,0 +1,123 @@
+# Situation-gated pressure scenes for small owners and own-account workers.
+nodes:
+  - id: pressure.shop.two-rivals
+    type: pressure
+    title: Two rivals
+    tests: borders.migration.right-to-stay
+    gate: {classIs: [petty-bourgeoisie]}
+    text: >
+      You run a grocery on a busy corner. A supermarket chain is opening 300 metres away, at prices you can't
+      match. Next door, a Somali family has opened a smaller shop that undercuts you on rice and oil. The
+      traders' association meets tonight with two motions: petition the council to block the supermarket, or
+      petition it to enforce licences on "foreign traders". There is time for one.
+    why: This sets your trade against what you hold about migrants' equal rights.
+    premises:
+      - id: not-same-threat
+        text: The premise that the family next door and the supermarket chain are the same kind of threat.
+        evidence: [{position: capitalism.nature.concentrated-ownership, w: 1}, {position: markets.nature.anti-market, w: 1}]
+    conditions:
+      - id: if-papers
+        text: It depends whether the family next door has its papers in order.
+        evidence: [{position: borders.migration.legal-and-contributing, w: 2}]
+    options:
+      - id: chain
+        text: Back the motion against the supermarket, and invite the family next door to join the association.
+        pressure: principle
+        cost: The council lets the chain open anyway. You lose a third of your trade within a year, to both of them.
+        evidence: [{position: borders.migration.right-to-stay, w: 2}, {position: capitalism.nature.concentrated-ownership, w: 1}]
+      - id: licences
+        text: Back the licensing motion. Start with the competition you can actually beat.
+        pressure: interest
+        cost: Inspectors close the shop next door within a month and your rice sales recover. The family's son stops greeting you.
+        evidence: [{position: labor.division.outsiders-undercut-us, w: 2}, {position: cs.own-first.our-people-first, w: 1}]
+      - id: buy-together
+        text: Go next door and propose buying rice and oil together, wholesale, to fight the chain.
+        pressure: mixed
+        cost: You share your supplier list with a rival. Margins on staples fall to almost nothing for both of you.
+        evidence: [{position: solidarity.basis.mutual-aid, w: 2}, {position: firm.ownership.small-proprietors, w: 1}]
+      - id: work-harder
+        text: Skip the meeting. Cut prices and stay open later.
+        pressure: mixed
+        cost: You work eighty hours a week for the money you used to make in sixty.
+        evidence: [{position: cs.hard-work.effort-pays, w: 2}, {position: change.means.individual-exit, w: 1}]
+
+  - id: pressure.shop.minimum-wage
+    type: pressure
+    title: The new minimum
+    tests: profit.legitimacy.common-good-first
+    gate: {all: [{classIs: [petty-bourgeoisie]}, {situation: {field: authority, in: [employs-few]}}]}
+    text: >
+      You run a small café with three employees. The government raises the minimum wage 18% from January.
+      Wages are already your biggest cost after rent, and your landlord has just raised the rent 10%. One of
+      your staff, a student who has worked for you for four years, asks whether her hours are safe.
+    why: This sets your margin against what you hold about just wages coming before profit.
+    premises:
+      - id: free-contract
+        text: The premise that the government can tell two people what wage they may agree.
+        evidence: [{position: wage.nature.voluntary-exchange, w: 2}, {position: property.self-ownership.full, w: 1}]
+    conditions:
+      - id: if-chains
+        text: It depends whether the big chains have to pay it too.
+        evidence: [{position: wage.nature.bargaining-power, w: 1}, {position: capitalism.nature.concentrated-ownership, w: 1}]
+    options:
+      - id: pay
+        text: Pay the new rate, keep everyone's hours, and raise your prices 8%.
+        pressure: principle
+        cost: Some regulars drift off. Your own take-home falls to about what your staff earn.
+        evidence: [{position: profit.legitimacy.common-good-first, w: 2}, {position: wage.nature.just-wage, w: 1}]
+      - id: cut-hours
+        text: Pay the new rate but cut everyone's hours by a fifth.
+        pressure: interest
+        cost: Your costs hold. Your student can't cover her rent on fewer hours and starts looking elsewhere.
+        evidence: [{position: wage.nature.marginal-product, w: 1}, {position: work.future.flexible-markets, w: 1}]
+      - id: cash
+        text: Keep one person on the books and pay the other two in cash, below the new rate.
+        pressure: interest
+        cost: You save a third on wages. You and they are one complaint away from a fine.
+        evidence: [{position: wage.nature.voluntary-exchange, w: 2}, {position: cs.taxes.taken-and-wasted, w: 1}]
+      - id: landlord
+        text: Pay the new rate, and put your anger into the small traders' campaign against commercial rents.
+        pressure: mixed
+        cost: Your margin is gone this year. The campaign meets monthly and has not yet won anything.
+        evidence: [{position: profit.legitimacy.rent-not-profit, w: 2}, {position: profit.legitimacy.common-good-first, w: 1}]
+
+  - id: pressure.shop.strike-credit
+    type: pressure
+    title: Credit
+    tests: solidarity.basis.moral
+    gate: {classIs: [petty-bourgeoisie]}
+    text: >
+      You run the hardware and general store in a cement town. The plant's 600 workers have been on strike
+      for five weeks. The strike committee asks local shops for credit on food and supplies, to be repaid
+      after a settlement. The plant manager, who orders 40,000 a month from you, mentions that he notices
+      who his friends are.
+    why: This sets your biggest customer against what you hold about standing with neighbours in need.
+    premises:
+      - id: not-my-fight
+        text: The premise that a shopkeeper has any part in a dispute between a plant and its workers.
+        evidence: [{position: cs.not-political.keep-head-down, w: 2}]
+    conditions:
+      - id: if-cause
+        text: It depends what the strike is about.
+        evidence: [{position: workplace.conflict.pluralist-bargaining, w: 1}, {position: workplace.conflict.depends-on-the-boss, w: 1}]
+    options:
+      - id: credit
+        text: Give the strikers credit and put the committee's sign in your window.
+        pressure: principle
+        cost: The plant moves its order to a supplier in the city. You carry 9,000 in strikers' debt.
+        evidence: [{position: solidarity.basis.moral, w: 2}, {position: workplace.conflict.structural-antagonism, w: 1}]
+      - id: refuse
+        text: Refuse. You can't bankroll one side of someone else's dispute.
+        pressure: interest
+        cost: The plant's order stays. Strikers' families do their shopping in the next town for a year.
+        evidence: [{position: cs.not-political.keep-head-down, w: 2}, {position: workplace.conflict.partners-with-a-misunderstanding, w: 1}]
+      - id: quiet-credit
+        text: Give credit quietly to families you know, with no sign in the window.
+        pressure: mixed
+        cost: You carry 3,000 in debt and hope the manager doesn't hear.
+        evidence: [{position: cs.own-first.widening-circles, w: 2}, {position: solidarity.basis.mutual-aid, w: 1}]
+      - id: mediate
+        text: Refuse credit, and offer your back room for talks between the two sides.
+        pressure: mixed
+        cost: Neither side comes. Both remember you didn't choose.
+        evidence: [{position: workplace.conflict.mutual-duties, w: 2}, {position: workplace.conflict.partners-with-a-misunderstanding, w: 1}]

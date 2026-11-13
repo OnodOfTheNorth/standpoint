@@ -1,0 +1,114 @@
+# Situation-gated pressure scenes for workers outside the core.
+nodes:
+  - id: pressure.periph.no-union-pledge
+    type: pressure
+    title: The pledge
+    tests: unions.role.class-organ
+    gate: {classIs: [peripheral-workers]}
+    text: >
+      A foreign electronics plant opens outside your city. It pays 40% above the local wage, with a canteen
+      and a bus. To be hired you sign a statement that you will not join a union. Your cousin works there and
+      says it's fine. At the textile mill where you work now, the pay is lower and the roof leaks, and your
+      union is fighting a closure. It needs every member.
+    why: This sets a better wage against what you hold about unions.
+    premises:
+      - id: good-deal
+        text: The premise that a foreign plant paying more is a bad deal for anyone.
+        evidence: [{position: development.path.integration, w: 2}]
+    conditions:
+      - id: if-saveable
+        text: It depends whether the mill can really be saved.
+        evidence: [{position: solidarity.basis.tactical, w: 2}]
+    options:
+      - id: stay
+        text: Stay at the mill, and in the union.
+        pressure: principle
+        cost: You keep earning 40% less. If the mill closes, you start again with nothing.
+        evidence: [{position: unions.role.class-organ, w: 2}, {position: solidarity.basis.shared-class, w: 1}]
+      - id: sign
+        text: Sign the pledge and take the job.
+        pressure: interest
+        cost: Your pay rises 40%. The union loses a member in the middle of its fight, and its officers stop calling you.
+        evidence: [{position: change.means.individual-exit, w: 2}, {position: cs.own-first.family-first, w: 1}]
+      - id: sign-and-talk
+        text: Sign, take the job, and quietly start talking union with people inside.
+        pressure: mixed
+        cost: Better pay, and if the company finds out you are fired with no union to defend you.
+        evidence: [{position: unions.role.class-organ, w: 1}, {position: change.means.strike-and-direct-action, w: 1}]
+
+  - id: pressure.periph.boycott
+    type: pressure
+    title: The camera
+    tests: consumption.choice.organized-boycott
+    gate: {classIs: [peripheral-workers]}
+    text: >
+      You sew shirts for a European brand in a factory of 1,400. A campaign in Europe has found children
+      working at a subcontractor down the road, and it wants the brand to pull every order from your city.
+      A journalist asks you to speak on camera. The factory owner says that if the brand leaves, everyone is
+      out of work by summer.
+    why: This sets your job against what you hold about boycotts as a weapon.
+    premises:
+      - id: who-decides
+        text: The premise that shoppers in Europe should decide what work is acceptable here.
+        evidence: [{position: intl.sovereignty.nations-set-own-course, w: 2}, {position: imperialism.nature.coloniality, w: 1}]
+    conditions:
+      - id: if-money
+        text: It depends whether the campaign brings money for the families, not just a boycott.
+        evidence: [{position: exchange.unequal.fair-trade-fixable, w: 1}]
+    options:
+      - id: speak-for
+        text: Speak on camera about the subcontractor, by name.
+        pressure: principle
+        cost: The brand leaves. You and 1,400 others are out of work by summer, and the owner remembers your face.
+        evidence: [{position: consumption.choice.organized-boycott, w: 2}, {position: intl.sovereignty.conditional-on-rights, w: 1}]
+      - id: speak-against
+        text: Speak against the boycott. Fix the subcontractor; keep the orders.
+        pressure: interest
+        cost: The brand stays, and cuts what it pays per shirt by 8%. The campaign calls your factory complicit.
+        evidence: [{position: consumption.choice.production-decides, w: 2}, {position: intl.sovereignty.nations-set-own-course, w: 1}]
+      - id: union-demand
+        text: Refuse the camera, and get your union to demand that the brand stay and pay for the children's schooling.
+        pressure: mixed
+        cost: The brand announces a small schooling fund. Your pay doesn't change, and the orders stay for now.
+        evidence: [{position: unions.role.class-organ, w: 1}, {position: exchange.unequal.value-chain-capture, w: 1}]
+      - id: silent
+        text: Say nothing to anyone.
+        pressure: mixed
+        cost: Whatever the brand decides, it decides without you.
+        evidence: [{position: cs.not-political.dangerous, w: 2}]
+
+  - id: pressure.periph.cross-border
+    type: pressure
+    title: The containers
+    tests: borders.migration.class-not-nation-link
+    gate: {classIs: [peripheral-workers]}
+    text: >
+      You lay bricks for a construction firm. This month it has brought in 200 workers from across the
+      border, on day rates a third below yours, sleeping in containers on site. Your crew has lost its
+      overtime. The union branch meets Sunday. One motion asks the labour ministry to deport those without
+      permits; the other, to sign them up and demand the same rate.
+    why: This sets your overtime against what you hold about organizing workers across nationality.
+    premises:
+      - id: blame-firm
+        text: The premise that the problem is the workers rather than the firm.
+        evidence: [{position: labor.division.divide-and-rule, w: 2}]
+    conditions:
+      - id: if-papers
+        text: It depends whether they have papers.
+        evidence: [{position: borders.migration.legal-and-contributing, w: 2}]
+    options:
+      - id: organize
+        text: Back signing them up at the same rate.
+        pressure: principle
+        cost: It takes months. The firm fires the first twelve who join, and your overtime stays gone meanwhile.
+        evidence: [{position: borders.migration.class-not-nation-link, w: 2}, {position: solidarity.basis.shared-class, w: 1}]
+      - id: deport
+        text: Back the deportation motion.
+        pressure: interest
+        cost: The ministry raids the site and 80 are deported. The firm hires the next batch through a subcontractor, at the same low rate.
+        evidence: [{position: labor.division.outsiders-undercut-us, w: 2}, {position: borders.migration.restrict-for-workers, w: 1}]
+      - id: quota
+        text: Propose a third motion. A cap on foreign workers per site, and the same rate for those who stay.
+        pressure: mixed
+        cost: The ministry agrees to the cap on paper. Inspectors come twice a year.
+        evidence: [{position: borders.migration.restrict-for-workers, w: 2}, {position: borders.migration.managed-labor, w: 1}]

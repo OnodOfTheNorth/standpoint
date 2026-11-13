@@ -1,0 +1,124 @@
+# Situation-gated pressure scenes for finance capital: funds, bonds, fortunes.
+nodes:
+  - id: pressure.fund.divest
+    type: pressure
+    title: The bond vote
+    tests: intl.sanctions.solidarity-boycott
+    gate: {classIs: [finance-capital]}
+    text: >
+      You run the bond desk of a pension fund. Its members have voted to sell the fund's holdings in the
+      bonds of a state that has occupied its neighbour's land for twenty years; the occupied people's unions
+      asked for it. Those bonds pay well above anything comparable. Selling cuts returns and your performance
+      fee, a third of your pay. The board asks your advice.
+    why: This sets your pay and your fund's returns against what you hold about boycotts called by an occupied people.
+    premises:
+      - id: no-sides
+        text: The premise that a pension fund should take sides in a foreign conflict at all.
+        evidence: [{position: finance.control.free-flows, w: 1}, {position: intl.sanctions.counterproductive, w: 1}]
+    conditions:
+      - id: if-asked
+        text: It depends whether the occupied people themselves are really asking for it.
+        evidence: [{position: intl.sanctions.solidarity-boycott, w: 2}]
+    options:
+      - id: sell
+        text: Advise selling all of it within six months.
+        pressure: principle
+        cost: Returns drop 0.4 points a year. Your fee falls by a third, and two trustees call you political.
+        evidence: [{position: intl.sanctions.solidarity-boycott, w: 2}, {position: intl.sovereignty.nations-set-own-course, w: 1}]
+      - id: hold
+        text: Advise holding. The fund's duty is to the pensioners' returns, not to foreign policy.
+        pressure: interest
+        cost: Your fee is safe. Members name you at the annual meeting, and the motion comes back next year.
+        evidence: [{position: finance.control.free-flows, w: 2}, {position: intl.sanctions.counterproductive, w: 1}]
+      - id: engage
+        text: "Advise holding and \"engaging\": a letter to the finance ministry about human rights."
+        pressure: mixed
+        cost: Returns unchanged. The ministry replies politely; the occupation goes on, and so does the campaign.
+        evidence: [{position: intl.sovereignty.conditional-on-rights, w: 1}, {position: change.means.lawful-persuasion, w: 1}]
+      - id: wait-for-state
+        text: Advise selling only if your own government imposes sanctions, so every fund sells together.
+        pressure: mixed
+        cost: Nothing happens this year. You keep your fee; your government shows no sign of acting.
+        evidence: [{position: intl.sanctions.legitimate-tool, w: 2}, {position: intl.sanctions.solidarity-boycott, w: -1}]
+
+  - id: pressure.fund.holdout
+    type: pressure
+    title: The holdouts
+    tests: debt.sovereign.orderly-restructuring
+    gate: {classIs: [finance-capital]}
+    text: >
+      Your fund holds 300 million of an African country's dollar bonds, bought at 60 cents. A drought has
+      halved its harvest. The government asks creditors for a 40% write-down and says the alternative is
+      cutting school meals and clinics. A group of funds plans to refuse and sue in New York for full
+      payment. They invite you to join.
+    why: This sets your fund's return against what you hold about unpayable debts.
+    premises:
+      - id: debt-is-debt
+        text: The premise that a country can choose not to pay what it borrowed.
+        evidence: [{position: debt.sovereign.pay-what-you-owe, w: 2}]
+    conditions:
+      - id: if-odious
+        text: It depends who ran up the debt, and what they spent it on.
+        evidence: [{position: debt.sovereign.odious-debt, w: 2}]
+    options:
+      - id: write-down
+        text: Accept the 40% write-down with the other creditors.
+        pressure: principle
+        cost: You break even on bonds that could have paid you nearly double.
+        evidence: [{position: debt.sovereign.orderly-restructuring, w: 2}, {position: debt.sovereign.creditors-eat-losses, w: 1}]
+      - id: sue
+        text: Join the holdouts and sue for full payment.
+        pressure: interest
+        cost: If you win, you nearly double your money in four years. The government cuts the clinic budget to keep paying.
+        evidence: [{position: debt.sovereign.pay-what-you-owe, w: 3}]
+      - id: collateral
+        text: Offer a 20% write-down if the country pledges its copper revenues as security.
+        pressure: mixed
+        cost: You make a third on your money. The copper revenue goes to foreign bondholders for ten years.
+        evidence: [{position: debt.sovereign.orderly-restructuring, w: 1}, {position: debt.sovereign.pay-what-you-owe, w: 1}]
+      - id: sell-on
+        text: Sell the bonds to the holdout funds at 70 cents and walk away.
+        pressure: interest
+        cost: A quick 17% gain. Someone else sues, and you don't have to watch.
+        evidence: [{position: change.means.individual-exit, w: 2}, {position: debt.sovereign.pay-what-you-owe, w: 1}]
+
+  - id: pressure.fund.wealth-tax
+    type: pressure
+    title: Two percent
+    tests: tax.purpose.redistribute
+    gate: {classIs: [finance-capital]}
+    text: >
+      Your country votes next month on a 2% yearly tax on wealth above five million. On your portfolio it
+      comes to about 240,000 a year. Your adviser has a residency ready in a low-tax city two hours' flight
+      away; you would need to spend half the year there. Your children are at school here. The polls say it
+      passes narrowly.
+    why: This sets your fortune against what you hold about taxing wealth to reduce inequality.
+    premises:
+      - id: taxed-twice
+        text: The premise that the state may take a share of wealth that was already taxed when it was earned.
+        evidence: [{position: tax.purpose.theft, w: 2}, {position: property.private.natural-right, w: 1}]
+    conditions:
+      - id: if-spent-well
+        text: It depends what the money is spent on.
+        evidence: [{position: tax.purpose.public-goods, w: 1}, {position: cs.taxes.taken-and-wasted, w: 1}]
+    options:
+      - id: pay
+        text: Stay, vote for it, and pay.
+        pressure: principle
+        cost: About 240,000 a year, every year, for as long as you stay rich.
+        evidence: [{position: tax.purpose.redistribute, w: 2}, {position: inequality.justice.luck-unjust, w: 1}]
+      - id: move
+        text: Move your residency before the vote.
+        pressure: interest
+        cost: You spend half of every year away from your children. The papers print your name on a list of leavers.
+        evidence: [{position: change.means.individual-exit, w: 2}, {position: property.private.natural-right, w: 1}]
+      - id: fund-no
+        text: Stay, vote no, and fund the No campaign.
+        pressure: interest
+        cost: You spend 400,000 on advertising. If the tax passes anyway, you pay both.
+        evidence: [{position: tax.purpose.public-goods, w: 2}, {position: inequality.justice.process-not-pattern, w: 1}]
+      - id: give
+        text: Stay, oppose the tax, and give the same sum each year to causes you choose.
+        pressure: mixed
+        cost: About 240,000 a year leaves your hands, but you decide where it goes and nobody votes on it.
+        evidence: [{position: inequality.justice.stewardship, w: 2}, {position: welfare.state.subsidiarity, w: 1}]

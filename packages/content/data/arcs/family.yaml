@@ -1,0 +1,407 @@
+id: arc.family
+title: The Custody Year
+blurb: A religious court, a son turning seven, a salary worth a hundred and fifty dollars, and savings locked in a bank.
+role: You are a public-school teacher and a mother of one, leaving your marriage.
+place: Beirut, Lebanon
+start: arc.family.01
+escalation: arc.family.05
+pressure: [arc.family.04]
+tags: [culture, commonsense, economy, state]
+nodes:
+  - id: arc.family.01
+    type: scene
+    title: The court
+    text: >
+      Beirut. You married at twenty-two in your community's religious court, because Lebanon has no civil
+      marriage. Now you want a divorce. Under the court's rules your son, who is six, goes to his father on
+      his next birthday. Your teacher's salary, paid in lira, is worth about $150 a month since the crash.
+      Your savings are frozen in a bank. His family has dollars.
+    why: This asks who you think should decide a family's breakup, a religious court, a civil one, or the families themselves.
+    premises:
+      - id: should-stay
+        text: The premise that leaving is on the table. A marriage before God is not dissolved because it got hard.
+        evidence: [{position: family.form.natural-institution, w: 2}]
+    conditions:
+      - id: what-he-did
+        text: It depends why you are leaving him.
+        evidence: [{position: family.form.kin-and-lineage, w: 1}]
+    options:
+      - id: appeal
+        text: Hire a lawyer and fight inside the court. The judge is a cleric, and clerics can be persuaded.
+        set: {route: court}
+        evidence:
+          - {position: feminism.subordination.patriarchal-reading, w: 2}
+        consequence: The lawyer wants a thousand dollars up front, in cash, in dollars.
+        next: arc.family.02
+      - id: civil
+        text: Join the campaign for a civil family law. No cleric should decide where your son sleeps.
+        set: {route: civil}
+        evidence:
+          - {position: religion.public.separation, w: 3}
+        probe:
+          ask: What would a civil court do better?
+          options:
+            - text: One rule for every citizen, whatever their faith.
+              cause: ideas
+              evidence: [{position: religion.public.separation, w: 2}]
+            - text: The sects keep their courts because the courts keep us. Take the courts and you loosen their grip.
+              cause: interests
+              evidence: [{position: cs.rigged.system-rigged, w: 2}]
+            - text: Nothing about the faith. Only about the men who sit in its courts.
+              cause: ideas
+              evidence: [{position: feminism.subordination.patriarchal-reading, w: 2}]
+        consequence: The campaign is glad to have you. Your mother asks you not to put your face on anything.
+        next: arc.family.02
+      - id: stay
+        text: Stay. A boy needs his father, and a marriage is not a contract you walk out of.
+        set: {route: family}
+        evidence:
+          - {position: family.form.natural-institution, w: 3}
+        consequence: You stay through the winter. His family hears that you wanted to leave.
+        next: arc.family.02
+      - id: families
+        text: Let the two families settle it, through your brothers and his uncles. Families did this before there were courts.
+        set: {route: family}
+        evidence:
+          - {position: family.form.kin-and-lineage, w: 3}
+        consequence: Your brothers agree to meet his uncles. Nobody asks your son anything.
+        next: arc.family.02
+
+  - id: arc.family.02
+    type: explanation
+    title: The rule
+    text: >
+      The rule is centuries old. Mothers keep young children; fathers take them at an age the court sets,
+      because the father is the guardian and the child carries his name. Your mother says it was always so.
+      A colleague says it is different in the next community's court, and different again in Tunisia. Why
+      does the law give your son to his father?
+    why: This asks what you think explains the rules a family lives under, and what kind of cause you reach for.
+    options:
+      - id: men
+        text: Men wrote the rulings, and men keep them.
+        cause: structures
+        evidence:
+          - {position: feminism.subordination.patriarchy, w: 3}
+        next: [{if: {flag: {key: route, eq: civil}}, to: arc.family.03a}, {to: arc.family.03b}]
+      - id: order
+        text: The law follows God's order. Fathers guard and provide; mothers nurture. Different, not lesser.
+        cause: divine
+        evidence:
+          - {position: feminism.subordination.no-subordination-complementarity, w: 3}
+        next: [{if: {flag: {key: route, eq: civil}}, to: arc.family.03a}, {to: arc.family.03b}]
+      - id: property
+        text: The law guards the father's name and property. Children follow the inheritance.
+        cause: structures
+        evidence:
+          - {position: feminism.subordination.private-property, w: 3}
+        next: [{if: {flag: {key: route, eq: civil}}, to: arc.family.03a}, {to: arc.family.03b}]
+      - id: reading
+        text: Scholars read the texts through their own customs. The faith says less than they say it does.
+        cause: ideas
+        evidence:
+          - {position: feminism.subordination.patriarchal-reading, w: 3}
+        next: [{if: {flag: {key: route, eq: civil}}, to: arc.family.03a}, {to: arc.family.03b}]
+      - id: sects
+        text: Each community keeps its own law. That is the price of eighteen sects in one small country.
+        cause: culture
+        evidence:
+          - {position: cs.live-let-live.let-communities-be, w: 2}
+        next: [{if: {flag: {key: route, eq: civil}}, to: arc.family.03a}, {to: arc.family.03b}]
+
+  - id: arc.family.03a
+    type: line
+    title: Which law
+    text: >
+      The civil-law campaign is drafting its bill, and parliament has buried every earlier version. The
+      drafters want to know how far to go. Which of these should a civil court decide instead of the
+      religious ones?
+    cases:
+      - A marriage between a Christian and a Muslim
+      - A divorce, for anyone who asks for one
+      - Custody of the children
+      - Inheritance
+      - A mother passing her citizenship to her children
+      - An abortion
+    why: This asks where you think religious law should end and the state's law begin.
+    premises:
+      - id: no-civil
+        text: The premise that the state should decide any of it. The communities kept this country together through a war.
+        evidence: [{position: cs.live-let-live.let-communities-be, w: 2}]
+    options:
+      - id: all
+        text: All of it. Religion belongs in the mosque and the church, not in the courthouse.
+        evidence:
+          - {position: religion.public.separation, w: 2}
+          - {position: body.autonomy.womans-choice, w: 1}
+        next: arc.family.04
+      - id: not-abortion
+        text: Everything except abortion. Some things no law should permit, whoever writes it.
+        evidence:
+          - {position: religion.public.separation, w: 2}
+          - {position: body.autonomy.life-from-conception, w: 1}
+        next: arc.family.04
+      - id: option
+        text: Make civil law an option beside the religious courts, and let each person choose.
+        evidence:
+          - {position: cs.live-let-live.let-communities-be, w: 2}
+        next: arc.family.04
+      - id: citizenship
+        text: Only citizenship, which is the state's business. Marriage, children and inheritance belong to God's law.
+        evidence:
+          - {position: religion.public.divine-law, w: 3}
+        next: arc.family.04
+
+  - id: arc.family.03b
+    type: tradeoff
+    title: The sweets
+    text: >
+      His uncles come to your mother's flat with a box of sweets. Their offer: you keep your son until he is
+      twelve, and they pay his school fees in dollars. In return you give up your deferred dowry, the fifteen
+      thousand dollars your marriage contract promised you, and you don't remarry while he lives with you.
+      Your mother thinks it is generous.
+    why: This sets time with your child against money, independence and the terms the family sets.
+    conditions:
+      - id: trust
+        text: It depends whether his family has kept its word before.
+        evidence: [{position: family.form.kin-and-lineage, w: 1}]
+    options:
+      - id: accept
+        text: Accept. Five more years with him. Money comes and goes.
+        evidence:
+          - {position: family.form.kin-and-lineage, w: 2}
+          - {position: cs.own-first.family-first, w: 1}
+        consequence: Your son stays. Two years later a colleague asks you to dinner, and you say no.
+        next: arc.family.04
+      - id: stamp
+        text: Accept, but only if the court stamps it. A promise over sweets lasts until the next quarrel.
+        evidence:
+          - {position: law.nature.rule-of-law, w: 2}
+        consequence: The uncles are offended that you asked. The court stamps it anyway, for a fee.
+        next: arc.family.04
+      - id: dowry
+        text: Refuse. The dowry is yours by contract, and a contract binds his family too.
+        evidence:
+          - {position: law.nature.rule-of-law, w: 2}
+          - {position: feminism.subordination.private-property, w: 1}
+        consequence: His family says the dowry was always a formality. The court says it wasn't. Collecting it is another matter.
+        next: arc.family.04
+      - id: remarry
+        text: Refuse. Nobody trades your own son for a say in whom you marry.
+        evidence:
+          - {position: feminism.subordination.patriarchy, w: 3}
+        consequence: The uncles leave the sweets. Your mother doesn't speak to you for a week.
+        next: arc.family.04
+
+  - id: arc.family.04
+    type: pressure
+    title: Rima
+    tests: body.autonomy.womans-choice
+    text: >
+      Rima, sixteen, the brightest girl in your class, stays after school. She is pregnant. Abortion is
+      illegal unless her life is at risk. A clinic in Achrafieh will do it quietly for $1,200 cash; girls
+      whose parents have dollars go there. She has nobody else to ask. Your custody hearing is in three
+      weeks, and the judge will hear about your conduct.
+    why: This sets what you believe about her choice against your own case for your son.
+    premises:
+      - id: parents
+        text: The premise that this is a teacher's decision. Her parents have to be told.
+        evidence: [{position: family.form.natural-institution, w: 1}]
+    options:
+      - id: help
+        text: Lend her the money from your last withdrawal and drive her there yourself.
+        pressure: principle
+        cost: Her father finds the receipt. Your husband's lawyer files a petition about your conduct the same week.
+        evidence:
+          - {position: body.autonomy.womans-choice, w: 3}
+        probe:
+          ask: What makes it her decision to make?
+          options:
+            - text: Her body, her life.
+              cause: ideas
+              evidence: [{position: body.autonomy.womans-choice, w: 2}]
+            - text: A girl with dollars would already be home. The law only binds the poor.
+              cause: structures
+              evidence: [{position: body.autonomy.reproductive-justice, w: 2}]
+            - text: It is between her and God. Not the state, not me.
+              cause: divine
+              evidence: [{position: body.autonomy.private-matter, w: 2}]
+        next: arc.family.05
+      - id: keep
+        text: Tell her to keep it, and promise to see her through it.
+        pressure: principle
+        cost: Your next six withdrawals go on her. Her family sends her to a village until the birth, and the school asks you why.
+        evidence:
+          - {position: body.autonomy.life-from-conception, w: 3}
+        next: arc.family.05
+      - id: refuse
+        text: Tell her you can't. Not now, not with your son's case before a judge.
+        pressure: interest
+        cost: She buys pills from a pharmacist who gives no instructions, and spends two nights in a hospital that asks questions.
+        evidence:
+          - {position: cs.own-first.family-first, w: 2}
+        next: arc.family.05
+
+  - id: arc.family.05
+    type: escalation
+    title: The branch
+    recap: In Beirut, years after the banks froze ordinary people's savings, a schoolteacher needs her money for a custody case.
+    text: >
+      Tuesday, the bank branch in Hamra. You have come to beg for your own savings again: eleven thousand
+      dollars, frozen since 2019, released at two hundred a month. The woman ahead of you pulls a pistol from
+      her handbag, says it is for her sister's chemotherapy, and demands her own deposit. The manager looks
+      at you. So does she.
+    why: The middle option is gone. This records which way you break when depositors and the bank collide.
+    options:
+      - id: bag
+        text: Hold her bag open while the teller counts. It's her money.
+        side: {axis: class, dir: dispossessed}
+        set: {held: true}
+        evidence:
+          - {position: finance.control.no-bailouts, w: 2}
+          - {position: cs.rigged.system-rigged, w: 1}
+        consequence: She walks out with thirteen thousand dollars to a crowd cheering on the pavement. The police arrive ten minutes after the cheering.
+        next: [{if: {flag: {key: held, eq: true}}, to: arc.family.06a}, {to: arc.family.06b}]
+      - id: yours
+        text: Demand yours too, while the pistol is out.
+        side: {axis: class, dir: dispossessed}
+        set: {held: true}
+        evidence:
+          - {position: cs.rigged.system-rigged, w: 2}
+          - {position: finance.control.no-bailouts, w: 1}
+        consequence: The teller gives you two thousand, all that is left in the drawer. You are in the evening news, unnamed, for now.
+        next: [{if: {flag: {key: held, eq: true}}, to: arc.family.06a}, {to: arc.family.06b}]
+      - id: back
+        text: Step back against the wall and wait for it to be over.
+        side: {axis: class, dir: neither}
+        set: {held: false}
+        evidence:
+          - {position: cs.own-first.family-first, w: 1}
+        consequence: It is over in twenty minutes. You collect your two hundred dollars from the next window.
+        next: [{if: {flag: {key: held, eq: true}}, to: arc.family.06a}, {to: arc.family.06b}]
+      - id: guard
+        text: Help the guard get the pistol. Robbing a bank, even for your own money, is robbing a bank.
+        side: {axis: class, dir: order}
+        set: {held: false}
+        evidence:
+          - {position: law.nature.rule-of-law, w: 3}
+        consequence: The guard gets her wrist. It was a toy. The crowd on the pavement learns your face.
+        next: [{if: {flag: {key: held, eq: true}}, to: arc.family.06a}, {to: arc.family.06b}]
+
+  - id: arc.family.06a
+    type: tradeoff
+    title: The association
+    text: >
+      The woman with the pistol was released without charge. The depositors' association now plans a branch
+      a week until the banks pay ordinary savers before their big shareholders, and they want you to speak at
+      the next one. Your lawyer says that if you are arrested, the court will hand your son to his father on
+      the spot.
+    why: This sets acting with others who were robbed alongside you against the one thing you cannot risk.
+    conditions:
+      - id: arrest
+        text: It depends how likely an arrest really is.
+        evidence: [{position: cs.own-first.family-first, w: 1}]
+    options:
+      - id: speak
+        text: Speak. Your son should see his mother stand up for what is hers.
+        evidence:
+          - {position: finance.control.no-bailouts, w: 3}
+        consequence: Your speech goes round on phones. So does your name. The judge's clerk asks for a copy.
+        next: arc.family.07
+      - id: union
+        text: Bring the teachers' union instead. A hundred teachers at a branch are harder to arrest than one mother.
+        evidence:
+          - {position: unions.role.class-organ, w: 3}
+        consequence: The union votes to join. The ministry docks a day's pay from every teacher who goes.
+        next: arc.family.07
+      - id: home
+        text: Stay home. The case comes first. The bank will still be stealing next year.
+        evidence:
+          - {position: cs.own-first.family-first, w: 3}
+        consequence: The association does well without you. Two branches pay out in full. Yours is not one of them.
+        next: arc.family.07
+      - id: paris
+        text: Sue the bank in a French court, where its owners keep their flats. That is how depositors are winning.
+        evidence:
+          - {position: law.nature.rule-of-law, w: 2}
+        consequence: A lawyer in Paris takes the case on a share of the winnings. It will take four years.
+        next: arc.family.07
+
+  - id: arc.family.06b
+    type: scene
+    title: The party office
+    text: >
+      A call from your community's party office. The local leader can have your deposit released at the full
+      rate, and he knows the judge in your case. He asks only that you, and the teachers at your school, vote
+      for his list in May. On the wall opposite the school, the protest slogan is still painted: all of them
+      means all of them.
+    why: This asks whether you take a patron's help when the institutions have failed you, and at what price.
+    premises:
+      - id: normal
+        text: The premise that this is a bribe. It is how things have always been done here, and he is family, more or less.
+        evidence: [{position: family.form.kin-and-lineage, w: 1}]
+    options:
+      - id: accept
+        text: Accept. Your son is not a slogan.
+        evidence:
+          - {position: cs.own-first.family-first, w: 3}
+        consequence: The money arrives in a week. So does a list of the teachers who haven't said yes yet.
+        next: arc.family.07
+      - id: secret
+        text: Take the money and vote as you like. The booth is still secret.
+        evidence:
+          - {position: cs.rigged.system-rigged, w: 1}
+          - {position: cs.own-first.family-first, w: 1}
+        consequence: The money arrives. After the election, the party office counts the votes in your school's ballot box.
+        next: arc.family.07
+      - id: refuse
+        text: Refuse, and campaign for the independents. All of them means all of them.
+        evidence:
+          - {position: cs.clean-house.throw-them-all-out, w: 3}
+        consequence: The independents win two seats. Your hearing is postponed, then postponed again.
+        next: arc.family.07
+      - id: union
+        text: Refuse, and tell the teachers' union. If he is buying teachers, the union should know the price.
+        evidence:
+          - {position: unions.role.class-organ, w: 2}
+        consequence: The union publishes the offer. Three other schools had the same call.
+        next: arc.family.07
+
+  - id: arc.family.07
+    type: reason
+    title: Seven
+    text: >
+      Your son turns seven in the spring. Whatever the court decided and whatever the bank paid, you have
+      spent a year finding out what your family's life depended on. Your sister asks you, over coffee, what it
+      was in the end.
+    why: This asks what you think governs a family's fate, and what kind of cause you reach for.
+    premises:
+      - id: luck
+        text: The premise that it was anything. Some marriages fail. Some years are bad.
+        evidence: [{position: family.form.natural-institution, w: 1}]
+    options:
+      - id: god
+        text: God's law, which I did not write and must accept.
+        cause: divine
+        evidence:
+          - {position: religion.public.divine-law, w: 2}
+      - id: men
+        text: Men. The judges, the uncles, the bankers, the party bosses. All men.
+        cause: structures
+        evidence:
+          - {position: feminism.subordination.patriarchy, w: 2}
+      - id: money
+        text: Money. Rich women marry in Cyprus, use private clinics and hire Paris lawyers. Women like me get the law as written.
+        cause: structures
+        evidence:
+          - {position: feminism.subordination.private-property, w: 2}
+          - {position: body.autonomy.reproductive-justice, w: 1}
+      - id: bosses
+        text: The sect bosses. They keep the courts because the courts keep us.
+        cause: interests
+        evidence:
+          - {position: cs.rigged.system-rigged, w: 2}
+      - id: readers
+        text: Not the faith. Men reading the faith.
+        cause: ideas
+        evidence:
+          - {position: feminism.subordination.patriarchal-reading, w: 2}

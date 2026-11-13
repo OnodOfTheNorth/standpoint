@@ -1,0 +1,396 @@
+id: arc.annotators
+title: Twelve-Fifty an Hour
+blurb: Forty people reading the worst of the internet so a chatbot learns to refuse it, and an invoice you were not meant to see.
+role: You are a team lead at a data-labelling firm that works for an American AI company.
+place: An outsourcing firm in a business park off Mombasa Road, Nairobi, Kenya
+start: arc.annotators.01
+escalation: arc.annotators.05
+pressure: [arc.annotators.04]
+tags: [world, economy, ecology]
+nodes:
+  - id: arc.annotators.01
+    type: scene
+    title: The invoice
+    text: >
+      Nairobi. You lead forty annotators at an outsourcing firm off Mombasa Road. Your team reads the worst
+      text on the internet and labels it, so an American company's chatbot learns to refuse it. Your team
+      earns $1.80 an hour; you earn $3. This morning you saw the invoice by mistake. The client pays $12.50 an
+      hour per head.
+    why: This asks what you do with knowledge of the gap between what your team's work is sold for and what it is paid.
+    premises:
+      - id: normal-markup
+        text: The premise that the gap means anything. Every firm marks up its services. That is what a firm is.
+        evidence: [{position: exchange.unequal.mutual-gain, w: 2}]
+    conditions:
+      - id: firm-margin
+        text: It depends how much of the $12.50 the firm actually keeps after its costs.
+        evidence: [{position: exchange.unequal.productivity-gap, w: 1}]
+    options:
+      - id: tell
+        text: Tell the team. They have a right to know what their hour is sold for.
+        set: {route: open}
+        evidence:
+          - {position: exchange.unequal.value-chain-capture, w: 2}
+        probe:
+          ask: What makes it their business?
+          options:
+            - text: The gap is their wage, sitting in someone else's account.
+              cause: structures
+              evidence: [{position: exchange.unequal.value-chain-capture, w: 2}]
+            - text: Nobody can bargain blind. With the number, they can organize.
+              cause: interests
+              evidence: [{position: unions.role.class-organ, w: 2}]
+            - text: Kenya's whole deal with these firms is cheap hours. People should see the price of the deal.
+              cause: interests
+              evidence: [{position: comprador.nature.broker-class, w: 1}]
+        consequence: The figure is on every phone in the building by lunch. HR asks who printed the invoice.
+        next: arc.annotators.02
+      - id: fair
+        text: Say nothing. The firm pays for the building, the laptops, the managers and the risk. And $1.80 is twice what a teaching assistant earns here.
+        set: {route: quiet}
+        evidence:
+          - {position: exchange.unequal.mutual-gain, w: 2}
+          - {position: development.path.integration, w: 1}
+        consequence: The day goes on. Wanjiru, your fastest annotator, asks for a week off after a batch about children. You say you'll see.
+        next: arc.annotators.02
+      - id: quiet-raise
+        text: Take it to your own manager quietly, and ask for a raise for the team. Most things get fixed if you ask properly.
+        set: {route: quiet}
+        evidence:
+          - {position: workplace.conflict.partners-with-a-misunderstanding, w: 2}
+        consequence: Your manager thanks you for your discretion and says the client sets the rate. He asks how you saw the invoice.
+        next: arc.annotators.02
+      - id: own-raise
+        text: Ask for a raise for yourself. You have the figures now, and a daughter starting secondary school.
+        set: {route: quiet}
+        evidence:
+          - {position: cs.own-first.yourself-first, w: 2}
+        consequence: You get forty cents more an hour, and a reminder about confidentiality.
+        next: arc.annotators.02
+
+  - id: arc.annotators.02
+    type: explanation
+    title: Twelve-fifty
+    text: >
+      The same hour of work is sold for $12.50 in San Francisco and paid $1.80 in Nairobi. The labels your
+      team writes are the reason the chatbot is safe enough to sell. The company that sells it was valued at
+      more than Kenya's entire economy last year. Why is the gap so wide?
+    why: This asks what you think explains the gap between what work is paid in a poor country and what it earns in a rich one, and what kind of cause you reach for.
+    options:
+      - id: monopoly
+        text: They own the model, the chips and the customers. All Nairobi has is people.
+        cause: structures
+        evidence:
+          - {position: technology.nature.core-monopoly, w: 3}
+        next: [{if: {flag: {key: route, eq: open}}, to: arc.annotators.03a}, {to: arc.annotators.03b}]
+      - id: wages
+        text: Wages here are low, and the work goes wherever the wages are lowest. The profit is the difference.
+        cause: structures
+        evidence:
+          - {position: exchange.unequal.wage-gap, w: 3}
+        next: [{if: {flag: {key: route, eq: open}}, to: arc.annotators.03a}, {to: arc.annotators.03b}]
+      - id: chain
+        text: The client and the firm in the middle each take a cut, because they can.
+        cause: interests
+        evidence:
+          - {position: exchange.unequal.value-chain-capture, w: 3}
+        next: [{if: {flag: {key: route, eq: open}}, to: arc.annotators.03a}, {to: arc.annotators.03b}]
+      - id: productivity
+        text: An engineer's hour in San Francisco produces far more than a labeller's hour here. Pay follows what an hour produces.
+        cause: structures
+        evidence:
+          - {position: exchange.unequal.productivity-gap, w: 3}
+        next: [{if: {flag: {key: route, eq: open}}, to: arc.annotators.03a}, {to: arc.annotators.03b}]
+      - id: sold
+        text: Our own politicians sold the country as cheap labour and took their fees for the introduction.
+        cause: individuals
+        evidence:
+          - {position: comprador.nature.broker-class, w: 3}
+        next: [{if: {flag: {key: route, eq: open}}, to: arc.annotators.03a}, {to: arc.annotators.03b}]
+
+  - id: arc.annotators.03a
+    type: voices
+    title: The canteen
+    text: >
+      Lunch. The invoice is the only thing anyone in the canteen is talking about. Two of your annotators have
+      taken the table by the window, and the rest of the room is listening.
+    voices:
+      - {name: Otieno, says: "We form a union. A third of the twelve-fifty, and real counselling, not a wellness app. They can't train a chatbot on an empty queue."}
+      - {name: Akinyi, says: "Push too hard and the client moves the work to Manila by Monday. Ten thousand young Kenyans have these jobs. A dollar eighty beats zero."}
+    why: This asks how you think poor-country workers should deal with a rich-country client that can move.
+    conditions:
+      - id: other-sites
+        text: It depends whether the workers in Manila would take the Kenyan queue.
+        evidence: [{position: solidarity.basis.shared-class, w: 1}]
+    options:
+      - id: otieno
+        text: Otieno.
+        cause: interests
+        evidence:
+          - {position: unions.role.class-organ, w: 3}
+        next: arc.annotators.04
+      - id: akinyi
+        text: Akinyi.
+        cause: interests
+        evidence:
+          - {position: development.path.integration, w: 3}
+        next: arc.annotators.04
+      - id: manila
+        text: Both miss it. Manila reads the same queue for the same client. Organize with them, not against them.
+        cause: structures
+        evidence:
+          - {position: solidarity.basis.shared-class, w: 3}
+        next: arc.annotators.04
+      - id: own-ai
+        text: Both miss it. Kenya needs its own models and its own data centres, not a better rate on someone else's.
+        cause: structures
+        evidence:
+          - {position: automation.ownership.national-sovereign-ai, w: 3}
+        next: arc.annotators.04
+
+  - id: arc.annotators.03b
+    type: tradeoff
+    title: The roadmap
+    text: >
+      Your manager shows you the client's roadmap. The labels your team has made are training a model that
+      will do sixty percent of the labelling by next year. Half your team will go. The firm wants your view,
+      in writing, on how to handle it.
+    why: This asks who you think should get the gains when workers train the machine that replaces them.
+    premises:
+      - id: no-handling
+        text: The premise that it can be handled. It is coming, and nothing you write changes that.
+        evidence: [{position: automation.ownership.adapt-or-lose, w: 1}]
+    options:
+      - id: adapt
+        text: Retrain them for the next thing. Nobody stops a machine; you learn to stand next to it.
+        evidence:
+          - {position: automation.ownership.adapt-or-lose, w: 3}
+        consequence: The firm likes your memo and runs a free course on prompt writing. Twelve people take it. Four find other work.
+        next: arc.annotators.04
+      - id: share
+        text: Keep everyone on at the same pay for fewer hours, and split the savings with them.
+        evidence:
+          - {position: automation.ownership.bargain-and-share, w: 3}
+        consequence: Your manager forwards the memo upward with the comment "interesting." The client renews for a smaller team.
+        next: arc.annotators.04
+      - id: own-share
+        text: The model was built on Kenyan labour. Kenya should own a share of it, by law.
+        evidence:
+          - {position: automation.ownership.national-sovereign-ai, w: 2}
+        consequence: An MP likes the idea and mentions it in a speech. The client's lobbyist meets the MP the following week.
+        next: arc.annotators.04
+      - id: name-it
+        text: Write down what it is. A machine built by the workers to replace the workers.
+        evidence:
+          - {position: ai.risk.tool-of-capital, w: 3}
+        consequence: The memo is accurate. Your manager asks you to rewrite it in a more constructive tone.
+        next: arc.annotators.04
+
+  - id: arc.annotators.04
+    type: pressure
+    title: The audit
+    tests: solidarity.basis.shared-class
+    text: >
+      The client's ethics team flies in on Thursday to audit working conditions. Your manager wants you to
+      brief your team first: unlimited counselling, a living wage, everyone happy. If the audit goes well, you
+      become site manager at $6 an hour, with health cover for your family. Your daughter's asthma inhaler
+      costs more than your team earns in a day.
+    why: This sets your family's security against the people you lead.
+    premises:
+      - id: audit-theatre
+        text: The premise that the audit matters. The client wrote the questions; it will find what it wants to find.
+        evidence: [{position: exchange.unequal.value-chain-capture, w: 1}]
+    options:
+      - id: truth
+        text: Tell the auditors the truth yourself, with the payslips.
+        pressure: principle
+        cost: The audit lists "areas for improvement." Your role is restructured within the month, and you are back on the queue at $1.80.
+        evidence:
+          - {position: solidarity.basis.shared-class, w: 3}
+        next: arc.annotators.05
+      - id: brief
+        text: Brief the team. A site manager can do more for them than a team lead can.
+        pressure: interest
+        cost: Your family gets health cover. Two annotators who told the auditors what it is really like are not renewed.
+        evidence:
+          - {position: cs.own-first.yourself-first, w: 2}
+        next: arc.annotators.05
+      - id: neither
+        text: Don't brief them and don't contradict the firm. Let each person say what they like.
+        pressure: mixed
+        cost: No promotion and no firing. With a manager in the room, most people say they are fine.
+        evidence:
+          - {position: cs.not-political.keep-head-down, w: 2}
+        next: arc.annotators.05
+
+  - id: arc.annotators.05
+    type: escalation
+    title: Monday
+    recap: In Nairobi, data labellers working for an American AI company have discovered that their hour is sold for seven times what they are paid.
+    text: >
+      The annotators' union has called a stoppage on the client's queue: a third of the $12.50 to wages, and
+      real counselling. The client emails that the work moves to another country by Monday if the queue stops.
+      The labour minister calls the stoppage sabotage of Kenya's digital economy. It is eight o'clock. Your
+      team is at their desks, waiting to see whether you log in.
+    why: The middle option is gone. This records which side you take when a rich-country client and the poor-country workers it relies on collide.
+    options:
+      - id: login
+        text: Log in and get your team working. A job in Nairobi beats a principle in Manila.
+        side: {axis: empire, dir: order}
+        set: {stopped: false}
+        evidence:
+          - {position: development.path.integration, w: 2}
+          - {position: exchange.unequal.mutual-gain, w: 1}
+        consequence: Your team's queue moves. By Wednesday most of the floor follows. The client sends a thank-you to the minister.
+        next: [{if: {flag: {key: stopped, eq: true}}, to: arc.annotators.06a}, {to: arc.annotators.06b}]
+      - id: minister
+        text: Log in. The minister is right. Kenya's name as a place to do business matters more than one queue.
+        side: {axis: empire, dir: order}
+        set: {stopped: false}
+        evidence:
+          - {position: development.path.integration, w: 3}
+        consequence: The stoppage collapses by Wednesday. The firm puts your team's picture in its brochure.
+        next: [{if: {flag: {key: stopped, eq: true}}, to: arc.annotators.06a}, {to: arc.annotators.06b}]
+      - id: stop
+        text: Leave the queue closed. A third of twelve-fifty, or nothing.
+        side: {axis: empire, dir: dispossessed}
+        set: {stopped: true}
+        evidence:
+          - {position: unions.role.class-organ, w: 2}
+          - {position: exchange.unequal.value-chain-capture, w: 1}
+        consequence: The queue stays empty for six days. The chatbot's next update ships a week late, and nobody in San Francisco says why.
+        next: [{if: {flag: {key: stopped, eq: true}}, to: arc.annotators.06a}, {to: arc.annotators.06b}]
+      - id: publish
+        text: Leave it closed, and send the invoice to a newspaper in the client's own country.
+        side: {axis: empire, dir: dispossessed}
+        set: {stopped: true}
+        evidence:
+          - {position: exchange.unequal.value-chain-capture, w: 2}
+          - {position: technology.nature.core-monopoly, w: 1}
+        consequence: The story runs on Sunday. The client announces an independent review on Monday, and moves forty percent of the work on Tuesday.
+        next: [{if: {flag: {key: stopped, eq: true}}, to: arc.annotators.06a}, {to: arc.annotators.06b}]
+      - id: sick
+        text: Call in sick and stay home.
+        side: {axis: empire, dir: neither}
+        set: {stopped: false}
+        evidence:
+          - {position: cs.not-political.keep-head-down, w: 2}
+        consequence: Your deputy logs the team in at nine. The stoppage collapses by Wednesday.
+        next: [{if: {flag: {key: stopped, eq: true}}, to: arc.annotators.06a}, {to: arc.annotators.06b}]
+
+  - id: arc.annotators.06a
+    type: tradeoff
+    title: Manila
+    text: >
+      The client settles. The rate rises to $2.40, and forty percent of the queue moves to Manila anyway. A
+      week later, the Manila labellers' group messages your union: the client is offering them the rest of
+      the Kenyan work at $1.90. They are asking, politely, whether you mind.
+    why: This asks whom you count as on your side when workers in two poor countries compete for one rich client.
+    conditions:
+      - id: their-wage
+        text: It depends what $1.90 is worth in Manila.
+        evidence: [{position: exchange.unequal.wage-gap, w: 1}]
+    options:
+      - id: same-rate
+        text: Ask them to refuse it, and demand one rate card for both cities. Same client, same queue.
+        evidence:
+          - {position: solidarity.basis.shared-class, w: 3}
+        consequence: Manila agrees. The client finds a third site, in a country neither union has heard of.
+        next: arc.annotators.07
+      - id: take-it
+        text: Tell them to take it. They need work as much as anyone here.
+        evidence:
+          - {position: development.path.integration, w: 1}
+          - {position: exchange.unequal.mutual-gain, w: 1}
+        consequence: Manila takes it. Your union shrinks by half. The $2.40 holds for the half that's left.
+        next: arc.annotators.07
+      - id: sovereign
+        text: Ignore them, and lobby Nairobi to tax the client's earnings here and fund a Kenyan AI lab.
+        evidence:
+          - {position: automation.ownership.national-sovereign-ai, w: 3}
+        consequence: The finance committee holds a hearing. The client's lobbyist testifies for longer than you do.
+        next: arc.annotators.07
+      - id: bank-it
+        text: Take the $2.40, end the dispute and stop worrying about Manila. A win is a win.
+        evidence:
+          - {position: unions.role.class-organ, w: -1}
+          - {position: cs.own-first.yourself-first, w: 1}
+        consequence: The dispute ends. Six months later, the client cuts the rate back to $2, citing Manila.
+        next: arc.annotators.07
+
+  - id: arc.annotators.06b
+    type: explanation
+    title: The valuation
+    text: >
+      The stoppage is over and pay is unchanged. Six weeks later the client raises money at a valuation of
+      several hundred billion dollars, and its chief executive gives a talk about how AI will end poverty in
+      Africa. Wanjiru sends you the clip with no comment. Who earned that valuation?
+    why: This asks where you think the value in an AI company comes from, and what kind of cause you reach for.
+    premises:
+      - id: bubble
+        text: The premise that anyone earned it. A valuation is a bet, not a fact.
+        evidence: [{position: technology.nature.neutral-tool, w: 1}]
+    options:
+      - id: founders
+        text: The founders, the engineers and the investors who took the risk. Labelling is a commodity.
+        cause: individuals
+        evidence:
+          - {position: automation.ownership.investors-and-markets, w: 3}
+        next: arc.annotators.07
+      - id: labellers
+        text: Everyone who made the data, here and everywhere. They get the smallest share of what they made.
+        cause: structures
+        evidence:
+          - {position: exchange.unequal.value-chain-capture, w: 3}
+        next: arc.annotators.07
+      - id: chips
+        text: Whoever owns the chips, the cloud and the patents. Everything else can be bought cheap.
+        cause: structures
+        evidence:
+          - {position: technology.nature.core-monopoly, w: 3}
+        next: arc.annotators.07
+      - id: maybe-right
+        text: It may well end poverty. The money is a bet on that, and it might pay off for us too.
+        cause: ideas
+        evidence:
+          - {position: ai.risk.accelerate, w: 3}
+        next: arc.annotators.07
+
+  - id: arc.annotators.07
+    type: reason
+    title: Homework
+    text: >
+      A year on. Your daughter does her homework with the chatbot. It answers politely in Swahili, and it
+      refuses, every time, to describe the things your team read so that it would know what to refuse. She
+      asks what you did at work all those years. What is it you helped make?
+    why: This asks what you think AI is and whom it serves, and what kind of cause you reach for.
+    premises:
+      - id: just-a-job
+        text: The premise that you made anything. It was a job. You did it and went home.
+        evidence: [{position: cs.not-political.keep-head-down, w: 1}]
+    options:
+      - id: tool
+        text: A tool. Like any tool, it depends who holds it.
+        cause: ideas
+        evidence:
+          - {position: technology.nature.neutral-tool, w: 3}
+      - id: replace
+        text: A machine for owners to watch, cheapen and replace people like us.
+        cause: structures
+        evidence:
+          - {position: ai.risk.tool-of-capital, w: 3}
+      - id: rent
+        text: Something the rich countries own and we rent back, like the tea we grow and buy back in boxes.
+        cause: structures
+        evidence:
+          - {position: technology.nature.core-monopoly, w: 3}
+      - id: progress
+        text: Progress. It will take her further than it took me.
+        cause: ideas
+        evidence:
+          - {position: ai.risk.accelerate, w: 2}
+      - id: should-not
+        text: Something people should not have made. A machine that talks like a person takes something only God gives.
+        cause: divine
+        evidence:
+          - {position: ai.risk.human-dignity, w: 3}

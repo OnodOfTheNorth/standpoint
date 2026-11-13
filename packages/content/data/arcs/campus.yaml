@@ -1,0 +1,425 @@
+id: arc.campus
+title: The Occupied Building
+blurb: Eighty students, one renamed building, and a partnership that pays for forty doctorates and a share of the guidance kits.
+role: You are the dean of engineering at a public university, with a seat on its governing council.
+place: A public university in Melbourne, Australia
+start: arc.campus.01
+escalation: arc.campus.05
+pressure: [arc.campus.04]
+tags: [world, state, culture]
+nodes:
+  - id: arc.campus.01
+    type: scene
+    title: Monday
+    text: >
+      Melbourne, Monday. Eighty students have occupied the engineering building and renamed it after a
+      Palestinian poet. Their demand: end the faculty's partnership with an American arms firm whose
+      guidance kits are fitted to bombs falling on Gaza. The partnership pays fourteen million dollars a year
+      and funds forty doctoral students. You are the dean. The vice-chancellor wants your advice by six.
+    why: This asks whether you treat an occupation over a war as a dispute to talk through, a breach to manage, or a demand to meet.
+    premises:
+      - id: not-ours
+        text: The premise that this is a university matter. Foreign policy is made in Canberra, not in an engineering faculty.
+        evidence: [{position: education.purpose.human-capital, w: 1}]
+    conditions:
+      - id: what-kits
+        text: It depends what the faculty's own research actually goes into.
+        evidence: [{position: war.militarism.arms-profits, w: 1}]
+    options:
+      - id: tea
+        text: Go in and sit with them. Bring tea, not security.
+        set: {stance: talk}
+        evidence:
+          - {position: education.purpose.critical-citizens, w: 2}
+        consequence: They give you a chair and a list of eleven demands. Security logs your visit.
+        next: arc.campus.02
+      - id: suspend
+        text: Advise suspending the partnership while it is reviewed. Stop the kits first, argue afterwards.
+        set: {stance: talk}
+        evidence:
+          - {position: intervention.humanitarian.never-by-war, w: 2}
+        consequence: The vice-chancellor thanks you and does not take your advice. The firm hears about it by seven.
+        next: arc.campus.02
+      - id: hours
+        text: Have security lock the building at ten. Protest has opening hours, like everything else.
+        set: {stance: order}
+        evidence:
+          - {position: law.nature.rule-of-law, w: 2}
+        consequence: At ten the doors lock with forty students still inside. They chain them from their side as well.
+        next: arc.campus.02
+      - id: defend
+        text: Put out a statement. The partnership funds forty doctorates and the country's defence, and you won't apologize for either.
+        set: {stance: order}
+        evidence:
+          - {position: war.militarism.peace-through-strength, w: 2}
+          - {position: world.order.american-primacy, w: 1}
+        probe:
+          ask: What makes the partnership worth defending?
+          options:
+            - text: A country that can't build its own defences is at someone else's mercy.
+              cause: structures
+              evidence: [{position: war.militarism.anarchy-security, w: 2}]
+            - text: The American alliance has kept this region out of a major war for seventy years.
+              cause: interests
+              evidence: [{position: world.order.american-primacy, w: 2}]
+            - text: Engineering is engineering. Students go where the hard problems are.
+              cause: ideas
+              evidence: [{position: education.purpose.human-capital, w: 2}]
+        consequence: The statement is shared eleven thousand times, mostly by people who hate it.
+        next: arc.campus.02
+      - id: pass
+        text: Leave it to the vice-chancellor. You are a dean of engineering, not a diplomat.
+        set: {stance: order}
+        evidence:
+          - {position: education.purpose.human-capital, w: 1}
+        consequence: The vice-chancellor reads your silence as support for whatever she does next.
+        next: arc.campus.02
+
+  - id: arc.campus.02
+    type: explanation
+    title: The chart
+    text: >
+      The occupiers' leaflet has a chart. In ten years, federal money per engineering student fell by a
+      quarter and defence-industry money rose fivefold. Australia has signed up to build nuclear submarines
+      with the United States and Britain, and the firm is a prime contractor. Why is an arms company paying
+      for a public university's engineers?
+    why: This asks why you think war and weapons work their way into ordinary institutions, and what kind of cause you reach for.
+    options:
+      - id: profits
+        text: War makes money for the people who sell weapons, and they buy the people who design them.
+        cause: interests
+        evidence:
+          - {position: war.militarism.arms-profits, w: 3}
+        next: [{if: {flag: {key: stance, eq: talk}}, to: arc.campus.03a}, {to: arc.campus.03b}]
+      - id: rivalry
+        text: Great powers compete for markets and resources, and Australia's universities are on America's side of that.
+        cause: structures
+        evidence:
+          - {position: war.militarism.imperialist-rivalry, w: 3}
+        next: [{if: {flag: {key: stance, eq: talk}}, to: arc.campus.03a}, {to: arc.campus.03b}]
+      - id: security
+        text: No country can count on anyone else to defend it. Somebody has to design the defences.
+        cause: structures
+        evidence:
+          - {position: war.militarism.anarchy-security, w: 3}
+        next: [{if: {flag: {key: stance, eq: talk}}, to: arc.campus.03a}, {to: arc.campus.03b}]
+      - id: jobs
+        text: Because that's where the jobs and the money are. A university trains engineers for the industry the country actually has.
+        cause: interests
+        evidence:
+          - {position: education.purpose.human-capital, w: 3}
+        next: [{if: {flag: {key: stance, eq: talk}}, to: arc.campus.03a}, {to: arc.campus.03b}]
+      - id: people-fight
+        text: Because people fight, and always have. Better that our side's weapons are well made.
+        cause: nature
+        evidence:
+          - {position: war.militarism.fallen-nature-just-war, w: 2}
+        next: [{if: {flag: {key: stance, eq: talk}}, to: arc.campus.03a}, {to: arc.campus.03b}]
+
+  - id: arc.campus.03a
+    type: voices
+    title: Two students
+    text: >
+      Wednesday. You are back in the occupied foyer. Two students are waiting for you, one from inside the
+      occupation and one from outside it, and neither will speak to the other except through you.
+    voices:
+      - {name: Noor, says: "Your partner makes the kits for the bombs falling on my cousins. Cut the tie. Then talk to us about anything you like."}
+      - {name: Daniel, says: "Israel was attacked and is at war. Cut ties with every firm whose weapons are used in a war and you can close this faculty. And some of the chanting outside my lectures is not about kits."}
+    why: This asks how you weigh a war abroad, the arms that feed it, and the students on both sides of it.
+    conditions:
+      - id: court
+        text: It depends what the International Court of Justice finds.
+        evidence: [{position: law.nature.rule-of-law, w: 1}]
+    options:
+      - id: noor
+        text: Noor. Stop the arms first, and talk after.
+        cause: interests
+        evidence:
+          - {position: intervention.humanitarian.never-by-war, w: 3}
+        next: arc.campus.04
+      - id: daniel
+        text: Daniel. A country under attack has the right to arm itself, and a university has no business choosing sides.
+        cause: ideas
+        evidence:
+          - {position: war.militarism.peace-through-strength, w: 2}
+        next: arc.campus.04
+      - id: weapons
+        text: Both miss it. The question is not this war. It is a university designing weapons for anyone.
+        cause: interests
+        evidence:
+          - {position: war.militarism.pacifist, w: 2}
+        next: arc.campus.04
+      - id: the-un
+        text: Both miss it. A dean and a firm shouldn't be deciding this. The UN should, and Australia should follow whatever it decides.
+        cause: ideas
+        evidence:
+          - {position: intervention.humanitarian.only-with-the-un, w: 2}
+        next: arc.campus.04
+
+  - id: arc.campus.03b
+    type: line
+    title: The policy
+    text: >
+      The university's protest policy is being rewritten, and the vice-chancellor wants the dean's view by
+      Friday. The draft lists what students may do on campus, from least to most disruptive. Where do you
+      draw the line?
+    cases:
+      - A petition and an open letter
+      - A rally on the lawn at lunchtime
+      - Chanting in the foyer while classes run
+      - Tents on the lawn, overnight, for weeks
+      - A building occupied, doors chained from inside
+      - The firm's logo on the lab door painted red
+    why: This asks where you think protest stops being speech and becomes something a university may stop.
+    premises:
+      - id: permission
+        text: The premise that protest is something the university permits. Nobody asks permission to be heard.
+        evidence: [{position: law.nature.natural-law, w: 1}]
+    options:
+      - id: tents
+        text: Up to the tents. Chains and paint are where protest stops being speech.
+        evidence:
+          - {position: speech.limits.open-marketplace, w: 2}
+          - {position: law.nature.rule-of-law, w: 1}
+        next: arc.campus.04
+      - id: rally
+        text: Up to the rally. Classes are what students and taxpayers are paying for.
+        evidence:
+          - {position: law.nature.rule-of-law, w: 2}
+          - {position: education.purpose.human-capital, w: 1}
+        next: arc.campus.04
+      - id: foyer
+        text: Up to the rally, and no chanting that makes any student afraid to walk to class.
+        evidence:
+          - {position: speech.limits.dignity-limits, w: 3}
+        next: arc.campus.04
+      - id: all
+        text: All of it. Paint washes off. The bombs don't.
+        evidence:
+          - {position: law.nature.natural-law, w: 3}
+        next: arc.campus.04
+
+  - id: arc.campus.04
+    type: pressure
+    title: Your lab
+    tests: war.militarism.arms-profits
+    text: >
+      Your own lab is on the firm's renewal list: radar signal processing, 2.1 million dollars over three
+      years. It pays for six doctoral students, four of them on visas tied to the scholarship. The work is
+      published openly. It also improves targeting. The firm's liaison needs your signature by Thursday, and
+      has been very understanding about everything.
+    why: This sets what you say about arms and war against your own lab, your students and your standing.
+    premises:
+      - id: radar
+        text: The premise that radar research is weapons research. Radar lands passenger planes.
+        evidence: [{position: education.purpose.human-capital, w: 2}]
+    options:
+      - id: lapse
+        text: Let the grant lapse. Find civilian money, or close the lab.
+        pressure: principle
+        cost: Civilian money covers two students. Four lose their scholarships, and two of them have to leave the country by March.
+        evidence:
+          - {position: war.militarism.arms-profits, w: 3}
+        next: arc.campus.05
+      - id: renew
+        text: Renew. This is how the lab exists, and the work is radar, not bombs.
+        pressure: interest
+        cost: The grant renews. By Friday your name and the dollar figure are on the occupation's banner.
+        evidence:
+          - {position: education.purpose.human-capital, w: 2}
+        next: arc.campus.05
+      - id: clause
+        text: Renew with a clause. Nothing from your lab for any army in a war now being fought.
+        pressure: mixed
+        cost: The firm accepts the clause and keeps the right to define "now." Your students stay. The occupiers call the clause a fig leaf.
+        evidence:
+          - {position: education.purpose.human-capital, w: 1}
+          - {position: war.militarism.arms-profits, w: 1}
+        next: arc.campus.05
+
+  - id: arc.campus.05
+    type: escalation
+    title: Dawn
+    recap: At a university in Melbourne, students have occupied a building for three weeks over its partnership with an American arms firm supplying a war.
+    text: >
+      Day twenty-one. The vice-chancellor has called the police to clear the building at dawn. A hundred
+      students are inside with linked arms, and a line of staff in lanyards stands in the doorway. The
+      commander asks you, as dean, to walk in first and read the trespass notice. A news helicopter is
+      already over the lawn.
+    why: The middle option is gone. This records which side you take when an arms alliance and the people protesting its war collide.
+    options:
+      - id: read
+        text: Read the notice. A university cannot be run by whoever holds the doors.
+        side: {axis: empire, dir: order}
+        set: {cleared: true}
+        evidence:
+          - {position: law.nature.rule-of-law, w: 3}
+        consequence: The building is clear in forty minutes. Fourteen arrests. The helicopter gets its picture of you with the notice.
+        next: [{if: {flag: {key: cleared, eq: true}}, to: arc.campus.06a}, {to: arc.campus.06b}]
+      - id: read-ally
+        text: Read it gladly. The alliance keeps this country safe, and the students have been told for three weeks.
+        side: {axis: empire, dir: order}
+        set: {cleared: true}
+        evidence:
+          - {position: world.order.american-primacy, w: 2}
+          - {position: law.nature.rule-of-law, w: 1}
+        consequence: The building is clear in forty minutes. The defence minister mentions the university approvingly on the evening news.
+        next: [{if: {flag: {key: cleared, eq: true}}, to: arc.campus.06a}, {to: arc.campus.06b}]
+      - id: doorway
+        text: Refuse, and stand in the doorway with the staff.
+        side: {axis: empire, dir: dispossessed}
+        set: {cleared: false}
+        evidence:
+          - {position: intervention.humanitarian.never-by-war, w: 2}
+        probe:
+          ask: What are you protecting in that doorway?
+          options:
+            - text: The students. Whatever they believe, they are ours.
+              cause: ideas
+              evidence: [{position: education.purpose.critical-citizens, w: 2}]
+            - text: The people under the bombs, at one remove.
+              cause: interests
+              evidence: [{position: intervention.humanitarian.never-by-war, w: 2}]
+            - text: The principle that police don't settle arguments on a campus.
+              cause: ideas
+              evidence: [{position: speech.limits.open-marketplace, w: 2}]
+        consequence: The commander will not arrest a dean on camera. The police withdraw to the car park. The council meets in emergency session.
+        next: [{if: {flag: {key: cleared, eq: true}}, to: arc.campus.06a}, {to: arc.campus.06b}]
+      - id: cut
+        text: Refuse, and announce on the steps that your faculty is ending the partnership today.
+        side: {axis: empire, dir: dispossessed}
+        set: {cleared: false}
+        evidence:
+          - {position: war.militarism.arms-profits, w: 2}
+          - {position: war.militarism.imperialist-rivalry, w: 1}
+        consequence: The occupiers walk out singing. The vice-chancellor says you had no authority to say it. The firm's lawyers agree.
+        next: [{if: {flag: {key: cleared, eq: true}}, to: arc.campus.06a}, {to: arc.campus.06b}]
+      - id: home
+        text: Hand the notice to your deputy and drive home.
+        side: {axis: empire, dir: neither}
+        set: {cleared: true}
+        evidence:
+          - {position: education.purpose.human-capital, w: 1}
+        consequence: Your deputy reads it. You watch the clearing on your phone at a red light.
+        next: [{if: {flag: {key: cleared, eq: true}}, to: arc.campus.06a}, {to: arc.campus.06b}]
+
+  - id: arc.campus.06a
+    type: tradeoff
+    title: The hearing
+    text: >
+      Fourteen students were arrested. Three are international students whose visas are now under review.
+      The disciplinary committee meets next week, and you chair it. The Jewish students' society has filed
+      complaints about one chant. The student union wants an amnesty. The firm has renewed in full, with a
+      thank-you note.
+    why: This asks what a university should punish after a protest, the words, the trespass, or nothing.
+    conditions:
+      - id: which-chant
+        text: It depends exactly what the chant said, and to whom.
+        evidence: [{position: speech.limits.dignity-limits, w: 1}]
+    options:
+      - id: amnesty
+        text: Amnesty for all of it. The cause was serious and the protest was a protest.
+        evidence:
+          - {position: speech.limits.open-marketplace, w: 2}
+        consequence: The amnesty passes. Two donors withdraw their bequests, and the Jewish students' society takes its complaint to the human rights commission.
+        next: arc.campus.07
+      - id: chant
+        text: Discipline the chant, not the occupation. Students may protest a war; they may not make other students feel hunted.
+        evidence:
+          - {position: speech.limits.dignity-limits, w: 3}
+        consequence: One student is suspended for a semester. Her visa lapses with her enrolment.
+        next: arc.campus.07
+      - id: doors
+        text: Discipline the chains and the trespass, and no words at all. Speech is free; buildings are not.
+        evidence:
+          - {position: law.nature.rule-of-law, w: 2}
+          - {position: speech.limits.open-marketplace, w: 1}
+        consequence: Nine suspensions. The three on visas are among them.
+        next: arc.campus.07
+      - id: expel
+        text: Expel the organizers. A university that lets a building be seized teaches its students to seize them.
+        evidence:
+          - {position: education.purpose.civic-pride, w: 2}
+          - {position: law.nature.rule-of-law, w: 1}
+        consequence: Four expulsions. Next semester, applications to the faculty rise. So do the tents.
+        next: arc.campus.07
+
+  - id: arc.campus.06b
+    type: scene
+    title: The council
+    text: >
+      The council meets in emergency session. The firm has written: renew in full or it withdraws everything.
+      The defence minister has rung the vice-chancellor about the submarine programme's research money. And a
+      Chinese university, separately, has offered a joint battery institute worth twice the firm's money. You
+      have a vote.
+    why: This asks whom a university should take its money from once one partner is in question, and what it owes the alliance.
+    premises:
+      - id: all-money
+        text: The premise that the choice is between funders. Public universities should be paid for by the public.
+        evidence: [{position: education.purpose.critical-citizens, w: 1}]
+    options:
+      - id: none
+        text: Cut the firm and replace it with nothing military, from anyone. A university should not design weapons.
+        evidence:
+          - {position: war.militarism.pacifist, w: 3}
+        consequence: The faculty loses a fifth of its research budget. Forty doctoral places become twelve.
+        next: arc.campus.07
+      - id: renew
+        text: Renew. The country's security rests on the alliance, and the alliance rests on places like this.
+        evidence:
+          - {position: world.order.american-primacy, w: 3}
+        consequence: The firm renews. The occupation returns within a month, now with staff in it.
+        next: arc.campus.07
+      - id: batteries
+        text: Cut the firm and take the battery institute. Batteries, not bombs, from a partner not at war.
+        evidence:
+          - {position: world.order.multipolar-sovereignty, w: 2}
+        consequence: The defence minister calls the institute a security risk and freezes the university's defence grants. A newspaper calls you Beijing's dean.
+        next: arc.campus.07
+      - id: clause
+        text: Renew with a clause. Nothing for any army a court has found committing war crimes.
+        evidence:
+          - {position: law.nature.rule-of-law, w: 2}
+          - {position: intervention.humanitarian.never-by-war, w: 1}
+        consequence: The firm accepts. No court rules within the life of the contract.
+        next: arc.campus.07
+
+  - id: arc.campus.07
+    type: explanation
+    title: Graduation
+    text: >
+      A year on, graduation day. A third of your engineers are going to defence firms at twice the pay of
+      anywhere else. One of the students from the occupation is among them; it was the only offer that
+      sponsored her visa. Her mother asks you, over warm champagne, why the wars never seem to run short of
+      engineers.
+    why: This asks what you think causes war, and what kind of cause you reach for.
+    premises:
+      - id: no-wars
+        text: The premise that wars are the point. Most of those graduates will build radars that never fire at anyone.
+        evidence: [{position: education.purpose.human-capital, w: 1}]
+    options:
+      - id: profits
+        text: Because war pays the people who sell it, and they hire the best graduates.
+        cause: interests
+        evidence:
+          - {position: war.militarism.arms-profits, w: 3}
+      - id: rivalry
+        text: Because great powers fight over markets and resources, and need engineers to do it.
+        cause: structures
+        evidence:
+          - {position: war.militarism.imperialist-rivalry, w: 3}
+      - id: no-police
+        text: Because there is no world police. Every country arms because every other country does.
+        cause: structures
+        evidence:
+          - {position: war.militarism.anarchy-security, w: 3}
+      - id: unaccountable
+        text: Because some governments answer to nobody. Where people vote and trade, wars are rare.
+        cause: ideas
+        evidence:
+          - {position: war.militarism.democratic-peace, w: 3}
+      - id: hearts
+        text: Because people are what they are. Weapons don't start wars; hearts do.
+        cause: nature
+        evidence:
+          - {position: war.militarism.fallen-nature-just-war, w: 3}

@@ -1,0 +1,119 @@
+# Situation-gated pressure scenes for comprador capital: export, import and finance houses outside the core.
+nodes:
+  - id: pressure.exporter.nationalization
+    type: pressure
+    title: The mine law
+    tests: property.land.national-domain
+    gate: {classIs: [comprador-capital]}
+    text: >
+      You own 12% of the country's biggest copper mine; a foreign group owns the rest, and your firm brokers
+      its contracts. The new government nationalizes the mine, offering book value, about a third of market,
+      paid over fifteen years. The foreign group asks you to join its arbitration claim in Washington. The
+      miners' union is marching in support of the law.
+    why: This sets your stake against what you hold about who owns what is under the ground.
+    premises:
+      - id: bought-fairly
+        text: The premise that the copper belongs to anyone but whoever bought the rights to dig it.
+        evidence: [{position: property.land.freehold, w: 2}, {position: property.private.natural-right, w: 1}]
+    conditions:
+      - id: if-run-well
+        text: It depends whether the state can actually run a mine.
+        evidence: [{position: firm.ownership.state, w: 1}, {position: firm.ownership.private-investors, w: 1}]
+    options:
+      - id: back-it
+        text: Accept the terms and offer to help run the national company.
+        pressure: principle
+        cost: You lose two-thirds of your stake's value. The foreign group cuts you out of every other deal it has.
+        evidence: [{position: property.land.national-domain, w: 2}, {position: comprador.nature.national-bourgeoisie-ally, w: 1}]
+      - id: arbitrate
+        text: Join the arbitration claim.
+        pressure: interest
+        cost: If you win, in six years or so, you get full market value. Until then the president calls you a traitor on television.
+        evidence: [{position: property.private.natural-right, w: 2}, {position: development.path.integration, w: 1}]
+      - id: take-and-go
+        text: Take the compensation, say nothing, and move the money abroad as it comes in.
+        pressure: mixed
+        cost: You keep a third of the value, outside the country, and your name stays out of the papers.
+        evidence: [{position: change.means.individual-exit, w: 2}, {position: cs.not-political.keep-head-down, w: 1}]
+      - id: fund-opposition
+        text: Fund the opposition party that promises to reverse the law.
+        pressure: interest
+        cost: You spend heavily. If they lose the election, your other businesses face tax audits for years.
+        evidence: [{position: development.path.market-freedom, w: 2}, {position: property.private.natural-right, w: 1}]
+
+  - id: pressure.exporter.capital-controls
+    type: pressure
+    title: Bring it home
+    tests: finance.control.capital-controls
+    gate: {classIs: [comprador-capital]}
+    text: >
+      Your firm exports shrimp and coffee and keeps its dollar earnings in an account in Miami. The currency
+      has fallen 30% in a year. A new law says exporters must bring 80% of foreign earnings home within 90
+      days and convert them at the official rate, a fifth below the street rate. Your accountant knows how
+      to under-invoice shipments so the difference stays abroad.
+    why: This sets your earnings against what you hold about controlling the flow of money in and out of a country.
+    premises:
+      - id: my-dollars
+        text: The premise that money a business earns abroad belongs to the nation at all.
+        evidence: [{position: finance.control.free-flows, w: 2}, {position: property.private.natural-right, w: 1}]
+    conditions:
+      - id: if-trusted
+        text: It depends whether the government collecting the dollars can be trusted with them.
+        evidence: [{position: comprador.nature.kleptocratic-elites, w: 1}, {position: finance.control.prudential, w: 1}]
+    options:
+      - id: comply
+        text: Comply in full.
+        pressure: principle
+        cost: You lose about a fifth of your export earnings to the official rate. The new cold store waits another year.
+        evidence: [{position: finance.control.capital-controls, w: 2}, {position: development.path.developmental-state, w: 1}]
+      - id: under-invoice
+        text: Under-invoice, as the accountant suggests.
+        pressure: interest
+        cost: You keep your dollars. If the tax office audits you, the fines could close the firm, and there is talk of prison.
+        evidence: [{position: finance.control.free-flows, w: 2}, {position: cs.taxes.taken-and-wasted, w: 1}]
+      - id: court
+        text: Comply, and fund the exporters' chamber's court challenge to the law.
+        pressure: mixed
+        cost: You lose the fifth this year. The chamber's lawyers expect a ruling in two years.
+        evidence: [{position: finance.control.free-flows, w: 1}, {position: change.means.law-and-courts, w: 1}]
+      - id: relocate
+        text: Move the company's headquarters to a neighbouring country with no controls.
+        pressure: interest
+        cost: The move costs a year's profit. Forty office jobs here go with it.
+        evidence: [{position: change.means.individual-exit, w: 2}, {position: finance.control.free-flows, w: 1}]
+
+  - id: pressure.exporter.trade-deal
+    type: pressure
+    title: Cheap chicken
+    tests: development.path.import-substitution
+    gate: {classIs: [comprador-capital]}
+    text: >
+      Your firm imports frozen chicken and powdered milk. A trade deal with a large bloc of rich countries
+      would cut the tariffs on both to zero; your volume would triple. The national poultry farmers'
+      association, 60,000 small producers, says the deal will finish them. The trade minister, an old school
+      friend, asks you to speak for the deal on television.
+    why: This sets your trade against what you hold about protecting a country's own producers.
+    premises:
+      - id: cheap-is-good
+        text: The premise that cheaper imported food is a loss for the country.
+        evidence: [{position: exchange.unequal.mutual-gain, w: 2}, {position: development.path.integration, w: 1}]
+    conditions:
+      - id: if-subsidized
+        text: It depends whether the rich countries' farmers are subsidized.
+        evidence: [{position: exchange.unequal.fair-trade-fixable, w: 1}, {position: cs.rigged.against-our-country, w: 1}]
+    options:
+      - id: oppose
+        text: Decline, and tell the minister you will speak against it.
+        pressure: principle
+        cost: You give up tripling your business. The minister stops taking your calls.
+        evidence: [{position: development.path.import-substitution, w: 2}, {position: agrarian.question.food-sovereignty, w: 1}]
+      - id: speak
+        text: Go on television for the deal. Cheaper food for the cities.
+        pressure: interest
+        cost: Your volume triples. Farmers block the road to your warehouse for two weeks.
+        evidence: [{position: development.path.integration, w: 2}, {position: exchange.unequal.mutual-gain, w: 1}]
+      - id: phase-in
+        text: Stay off television, and ask the minister for a five-year phase-in and a fund for the farmers.
+        pressure: mixed
+        cost: The phase-in passes. Your business grows slowly; the farmers' fund is small and late.
+        evidence: [{position: development.path.developmental-state, w: 1}, {position: markets.nature.framed-tool, w: 1}]

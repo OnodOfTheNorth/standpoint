@@ -6,7 +6,7 @@ place: A drivers' base camp under a flyover in South Jakarta, Indonesia
 start: arc.platform.01
 escalation: arc.platform.05
 pressure: [arc.platform.04]
-tags: [economy, strategy, state]
+tags: [economy, strategy, commonsense]
 nodes:
   - id: arc.platform.01
     type: scene
@@ -103,10 +103,10 @@ nodes:
           - {position: wage.nature.voluntary-exchange, w: 3}
         next: [{if: {flag: {key: route, eq: strike}}, to: arc.platform.03a}, {to: arc.platform.03b}]
       - id: program
-        text: A servant of a program written to squeeze me by people who have never been rained on.
+        text: A servant. It gives the orders, sets the pay and fires without a hearing. It just calls itself a program.
         cause: interests
         evidence:
-          - {position: technology.nature.capitals-weapon, w: 3}
+          - {position: workplace.conflict.private-government, w: 3}
         next: [{if: {flag: {key: route, eq: strike}}, to: arc.platform.03a}, {to: arc.platform.03b}]
       - id: partner
         text: A partner with a bad deal. Fix the terms and the partnership is fine.
@@ -254,7 +254,7 @@ nodes:
         set: {joined: true}
         evidence:
           - {position: change.means.strike-and-direct-action, w: 2}
-          - {position: police.role.class-repression, w: 2}
+          - {position: change.agent.workers-as-class, w: 2}
         consequence: You spend the night in the smoke. By morning eight hundred drivers are in custody and the courier's face is on walls across the city.
         next: [{if: {flag: {key: joined, eq: true}}, to: arc.platform.06a}, {to: arc.platform.06b}]
       - id: convoy
@@ -278,7 +278,8 @@ nodes:
         side: {axis: class, dir: order}
         set: {joined: false}
         evidence:
-          - {position: police.role.order-maintenance, w: 3}
+          - {position: change.means.strike-and-direct-action, w: -2}
+          - {position: change.means.lawful-persuasion, w: 1}
         consequence: An officer thanks you. A photograph of you beside him travels further than you do.
         next: [{if: {flag: {key: joined, eq: true}}, to: arc.platform.06a}, {to: arc.platform.06b}]
       - id: surge
@@ -303,7 +304,7 @@ nodes:
     conditions:
       - id: officer
         text: It depends whether the officer goes on trial.
-        evidence: [{position: police.role.class-repression, w: 1}]
+        evidence: [{position: change.means.lawful-persuasion, w: 1}]
     options:
       - id: seat
         text: Take the seat. You won. Now negotiate like people who won.
@@ -342,7 +343,7 @@ nodes:
     premises:
       - id: not-given
         text: The premise that it gave in. It waited for the cameras to leave.
-        evidence: [{position: technology.nature.capitals-weapon, w: 1}]
+        evidence: [{position: workplace.conflict.structural-antagonism, w: 1}]
     options:
       - id: fear
         text: Ten thousand people and a burning lobby. Nothing else moves them.
@@ -366,7 +367,7 @@ nodes:
         text: It's a program. They changed one number, and they'll change it back when nobody's looking.
         cause: structures
         evidence:
-          - {position: technology.nature.capitals-weapon, w: 2}
+          - {position: workplace.conflict.private-government, w: 2}
         next: arc.platform.07
       - id: god
         text: God sees who works and who burns. The fare came back. Thank Him.

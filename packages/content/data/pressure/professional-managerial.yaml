@@ -1,0 +1,86 @@
+# Situation-gated pressure scenes for salaried professionals and managers (a third, the union drive, is in core.yaml).
+nodes:
+  - id: pressure.salaried.flat-raise
+    type: pressure
+    title: The flat raise
+    tests: equality.concept.relational
+    gate: {classIs: [professional-managerial]}
+    text: >
+      You are a senior engineer at a public water utility, paid about three times what the plant operators
+      earn. The union, which covers everyone, proposes this year's raise as a flat 300 a month for all
+      instead of 4% each. For the operators it's 10%. For you it's under 3%, below inflation, for the third
+      year running. The professional staff meet first.
+    why: This sets your salary band against what you hold about equality between people who work side by side.
+    premises:
+      - id: not-same
+        text: The premise that an engineer and a plant operator are in the same position at all.
+        evidence: [{position: labor.division.skill-and-effort, w: 2}, {position: class.concept.market-situation-status, w: 1}]
+    conditions:
+      - id: if-money
+        text: It depends whether the utility could afford both.
+        evidence: [{position: workplace.conflict.pluralist-bargaining, w: 1}, {position: unions.role.bargaining-agent, w: 1}]
+    options:
+      - id: flat
+        text: Back the flat raise, and argue for it at the meeting.
+        pressure: principle
+        cost: Your real pay falls again. Two colleagues leave for private firms, and you inherit their work.
+        evidence: [{position: equality.concept.relational, w: 2}, {position: solidarity.basis.shared-class, w: 1}]
+      - id: percent
+        text: Push the professional staff to demand the percentage, or a bargaining unit of their own.
+        pressure: interest
+        cost: The union campaign splits. The utility settles both groups at 3% and thanks you for your realism.
+        evidence: [{position: labor.division.skill-and-effort, w: 2}, {position: unions.role.bargaining-agent, w: 1}]
+      - id: hybrid
+        text: Propose a compromise. Flat for everyone below the median salary, percentage above it.
+        pressure: mixed
+        cost: You get a little less than 4%, the operators a little less than 10%. Nobody thanks you.
+        evidence: [{position: equality.concept.difference-principle, w: 2}]
+      - id: vote-and-go
+        text: Vote for the flat raise, and quietly apply to a private firm.
+        pressure: mixed
+        cost: You keep your word at the meeting and are gone in six months, at 40% more pay.
+        evidence: [{position: change.means.individual-exit, w: 2}, {position: solidarity.basis.moral, w: 1}]
+
+  - id: pressure.homeowner.social-housing
+    type: pressure
+    title: The playing field
+    tests: welfare.state.social-citizenship
+    gate:
+      all:
+        - {classIs: [professional-managerial]}
+        - {situation: {field: housing, in: [own-mortgage, own-outright, landlord]}}
+    text: >
+      The council plans 240 social-rent flats on the playing field at the end of your street, for families
+      on the waiting list. An estate agent tells the residents' meeting that nearby houses could lose 6 to
+      10% of their value. You still owe 180,000 on the mortgage. The residents' association is raising money
+      for a legal challenge "on traffic and drainage grounds".
+    why: This sets the value of your home against what you hold about housing as a social right.
+    premises:
+      - id: home-not-investment
+        text: The premise that a home is an investment whose value you are owed.
+        evidence: [{position: property.commons.not-for-sale, w: 2}]
+    conditions:
+      - id: if-local
+        text: It depends who gets the flats, local families or newcomers.
+        evidence: [{position: welfare.state.for-our-own, w: 2}]
+    options:
+      - id: speak-for
+        text: Speak for the flats at the planning hearing.
+        pressure: principle
+        cost: Your house may lose 20,000 or 30,000 in value. Two neighbours stop speaking to you.
+        evidence: [{position: welfare.state.social-citizenship, w: 2}, {position: property.commons.public-ownership, w: 1}]
+      - id: challenge
+        text: Give 500 to the legal challenge.
+        pressure: interest
+        cost: The challenge delays the flats by three years and may kill them. The waiting list grows by 900 families.
+        evidence: [{position: cs.own-first.family-first, w: 2}, {position: property.private.natural-right, w: 1}]
+      - id: smaller
+        text: Back a "sensible" scheme. Fewer social flats, mixed with homes for sale.
+        pressure: mixed
+        cost: The plan shrinks to 90 social flats and 150 for sale. Your house price holds.
+        evidence: [{position: markets.nature.framed-tool, w: 1}, {position: welfare.state.safety-net, w: 1}]
+      - id: elsewhere
+        text: Back the flats, but on the old depot site across town instead.
+        pressure: mixed
+        cost: The depot site needs years of cleanup. The flats are not built this decade.
+        evidence: [{position: welfare.state.safety-net, w: 1}, {position: cs.own-first.family-first, w: 1}]

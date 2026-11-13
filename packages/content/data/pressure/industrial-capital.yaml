@@ -1,0 +1,124 @@
+# Situation-gated pressure scenes for industrial capital: suppliers, machines, markets.
+nodes:
+  - id: pressure.owner.supplier-raise
+    type: pressure
+    title: The supplier's raise
+    tests: wage.nature.just-wage
+    gate: {classIs: [industrial-capital]}
+    text: >
+      Your company makes work boots; the uppers are stitched by a supplier near Dhaka. After a three-week
+      strike, its 2,000 workers have won a 35% raise, and the supplier passes it on: your cost per pair rises
+      by a tenth. A broker offers a factory in another country at the old price, no union. Your margin is
+      thin, and the bank reviews your credit line in March.
+    why: This sets your margin against what you hold about wages that keep a family.
+    premises:
+      - id: not-my-workers
+        text: The premise that a buyer owes anything to the workers of a supplier it doesn't own.
+        evidence: [{position: wage.nature.voluntary-exchange, w: 2}]
+    conditions:
+      - id: if-competitors
+        text: It depends whether my competitors are paying the same raise.
+        evidence: [{position: wage.nature.bargaining-power, w: 1}, {position: markets.nature.framed-tool, w: 1}]
+    options:
+      - id: pay
+        text: Pay the higher price and stay with the supplier.
+        pressure: principle
+        cost: Your margin falls by a third. You cancel this year's investment in a new production line.
+        evidence: [{position: wage.nature.just-wage, w: 2}, {position: exchange.unequal.value-chain-capture, w: 1}]
+      - id: switch
+        text: Move the order to the broker's factory.
+        pressure: interest
+        cost: Your costs are back where they were. Eight hundred people near Dhaka lose their jobs when your order goes.
+        evidence: [{position: exchange.unequal.mutual-gain, w: 2}, {position: wage.nature.marginal-product, w: 1}]
+      - id: split
+        text: Split the order. Half stays, half goes to the broker.
+        pressure: mixed
+        cost: Your costs rise half as much. The supplier lays off 400 and tells its workers why.
+        evidence: [{position: wage.nature.bargaining-power, w: 1}, {position: solidarity.basis.self-interest, w: 1}]
+      - id: label
+        text: Pay the raise and sell the boot under a fair-wage label, at a higher price.
+        pressure: mixed
+        cost: Sales fall 15% in the first year. The label wins a prize, and the prize doesn't pay the bank.
+        evidence: [{position: exchange.unequal.fair-trade-fixable, w: 2}, {position: consumption.choice.consumer-responsibility, w: 1}]
+
+  - id: pressure.owner.robots
+    type: pressure
+    title: The new lines
+    tests: automation.ownership.bargain-and-share
+    gate: {classIs: [industrial-capital]}
+    text: >
+      Your plastics plant employs 340 people in a town where it is the main employer. A robotics firm offers
+      lines that would let you run with 190 and cut unit costs by a quarter; your two biggest competitors
+      already have them. The union proposes its own plan: install the machines, keep everyone, cut the week
+      to 32 hours at the same pay.
+    why: This sets your costs against what you hold about who shares the gains from machines.
+    premises:
+      - id: owners-decide
+        text: The premise that an owner's choice of machines is the union's business.
+        evidence: [{position: automation.ownership.investors-and-markets, w: 2}, {position: unions.role.obstacle, w: 1}]
+    conditions:
+      - id: if-retraining
+        text: It depends whether the government pays to retrain the people let go.
+        evidence: [{position: automation.ownership.adapt-or-lose, w: 1}, {position: welfare.state.safety-net, w: 1}]
+    options:
+      - id: union-plan
+        text: Accept the union's plan.
+        pressure: principle
+        cost: You keep about a third of the savings. Your nearest competitor undercuts you on two big contracts.
+        evidence: [{position: automation.ownership.bargain-and-share, w: 2}, {position: work.future.shorter-hours, w: 1}]
+      - id: lay-off
+        text: Install the lines and lay off 150, with the legal minimum in severance.
+        pressure: interest
+        cost: Costs fall a quarter. Within a year the town loses its bakery and its last bank branch.
+        evidence: [{position: automation.ownership.investors-and-markets, w: 2}, {position: automation.ownership.adapt-or-lose, w: 1}]
+      - id: attrition
+        text: Install the lines and shrink only by retirement and not replacing leavers, over five years.
+        pressure: mixed
+        cost: The savings come slowly. Nobody is fired, and nobody young from the town is hired.
+        evidence: [{position: workplace.conflict.mutual-duties, w: 2}, {position: automation.ownership.bargain-and-share, w: 1}]
+      - id: refuse
+        text: Don't buy the lines. Keep the plant as it is.
+        pressure: mixed
+        cost: Everyone keeps their job for now. In three years you are losing money on every order.
+        evidence: [{position: automation.ownership.refuse-it, w: 2}, {position: workplace.conflict.mutual-duties, w: 1}]
+
+  - id: pressure.owner.sanctions
+    type: pressure
+    title: Through a third country
+    tests: intl.sanctions.legitimate-tool
+    gate: {classIs: [industrial-capital]}
+    text: >
+      A third of your machine-tool exports go to one large country. Your government has just put it under
+      sanctions over a war it is fighting. A trading firm in a neutral country offers to buy the same machines
+      at a 6% discount and sell them on. That is legal for now, though ministers talk of closing loopholes.
+      Without the market, you lay off 90.
+    why: This sets your sales against what you hold about sanctions.
+    premises:
+      - id: not-about-war
+        text: The premise that the sanctions are about the war, rather than about trade and power.
+        evidence: [{position: intl.sanctions.economic-war, w: 1}, {position: imperialism.nature.inter-imperialist-rivalry, w: 1}]
+    conditions:
+      - id: if-who-started
+        text: It depends who started the war.
+        evidence: [{position: intl.sanctions.legitimate-tool, w: 1}, {position: intl.sovereignty.conditional-on-rights, w: 1}]
+    options:
+      - id: comply
+        text: Stop selling, and turn the trading firm down.
+        pressure: principle
+        cost: You lose a third of your sales. Ninety people are laid off before winter.
+        evidence: [{position: intl.sanctions.legitimate-tool, w: 2}]
+      - id: route
+        text: Sell through the third country while it is legal.
+        pressure: interest
+        cost: Sales hold at a 6% discount. A newspaper traces your machines to an arms plant.
+        evidence: [{position: intl.sanctions.counterproductive, w: 2}, {position: intl.sanctions.legitimate-tool, w: -1}]
+      - id: lobby
+        text: Comply, and join other exporters lobbying to lift the sanctions.
+        pressure: mixed
+        cost: You lose the sales and pay into a campaign some of your customers call unpatriotic.
+        evidence: [{position: intl.sanctions.counterproductive, w: 1}, {position: intl.sanctions.economic-war, w: 1}]
+      - id: new-markets
+        text: Comply, and chase new buyers in Asia and Africa at lower prices.
+        pressure: mixed
+        cost: You save 40 of the 90 jobs. Your margins halve for two years.
+        evidence: [{position: intl.sanctions.legitimate-tool, w: 1}, {position: development.path.integration, w: 1}]

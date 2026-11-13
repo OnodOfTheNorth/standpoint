@@ -1,0 +1,78 @@
+# Situation-gated pressure scenes for workers in the core (a third, the weapons contract, is in core.yaml).
+nodes:
+  - id: pressure.worker.copper
+    type: pressure
+    title: The price of copper
+    tests: intl.sanctions.economic-war
+    gate: {classIs: [core-workers]}
+    text: >
+      You wind motors at a plant that runs on copper. Abroad, miners have taken over their country's biggest
+      copper mine, and the new government adds a royalty that pays for schools. Copper is up 30%. Your plant
+      has cut Saturday shifts, worth 220 a month to you. A politician on the news wants sanctions until the
+      mine is "returned to its lawful owners".
+    why: This sets your wages against what you hold about sanctions on a country that took back its own resources.
+    premises:
+      - id: no-right
+        text: The premise that the miners had any right to take the mine.
+        evidence: [{position: property.private.natural-right, w: 2}]
+    conditions:
+      - id: if-compensated
+        text: It depends whether the old owners are paid fair value.
+        evidence: [{position: emergency.powers.compensate-at-market, w: 2}]
+    options:
+      - id: oppose
+        text: Back the miners. Write to your representative against sanctions.
+        pressure: principle
+        cost: Saturday shifts stay cut. Copper stays dear, and management starts talking about moving work abroad.
+        evidence: [{position: intl.sanctions.economic-war, w: 2}, {position: labor.division.core-periphery, w: 1}]
+      - id: sanctions
+        text: Back sanctions. A contract is a contract, and your Saturdays matter.
+        pressure: interest
+        cost: Copper falls back within the year and your shifts return. The mining country's new budget collapses.
+        evidence: [{position: intl.sanctions.legitimate-tool, w: 2}, {position: property.private.natural-right, w: 1}]
+      - id: twin
+        text: Push your union to link up with the miners' union, and to bargain for your Saturdays back here.
+        pressure: mixed
+        cost: A delegation goes; management says the copper price is not up for negotiation. Shifts stay cut.
+        evidence: [{position: solidarity.basis.shared-class, w: 2}, {position: unions.role.class-organ, w: 1}]
+      - id: stay-out
+        text: Stay out of it. Their mine and your Saturdays are both decided by people above you.
+        pressure: mixed
+        cost: Nothing you do changes either, and you lose the Saturdays all the same.
+        evidence: [{position: cs.not-political.keep-head-down, w: 2}, {position: change.possibility.power-always-wins, w: 1}]
+
+  - id: pressure.worker.two-tier
+    type: pressure
+    title: Two scales
+    tests: labor.division.contract-status-is-a-wedge
+    gate: {classIs: [core-workers]}
+    text: >
+      Your contract is up. Management offers the union a deal: everyone now employed keeps their pay and gets
+      4% a year for three years. New hires start on a separate scale, 22% lower, with no pension. The
+      steward says the alternative is a strike with no guarantee. The vote is Thursday. Your daughter is
+      applying to work at the plant next year.
+    why: This sets your own raise against what you hold about splitting workers by when they were hired.
+    premises:
+      - id: not-here-yet
+        text: The premise that workers who haven't been hired yet are the union's business.
+        evidence: [{position: unions.role.bargaining-agent, w: 2}]
+    conditions:
+      - id: if-win
+        text: It depends whether a strike could actually win.
+        evidence: [{position: solidarity.basis.tactical, w: 2}]
+    options:
+      - id: reject
+        text: Vote no, and be ready to strike.
+        pressure: principle
+        cost: A seven-week strike costs you about 4,800 in pay. The final deal is 2% a year, on one scale.
+        evidence: [{position: labor.division.contract-status-is-a-wedge, w: 2}, {position: solidarity.basis.shared-class, w: 1}]
+      - id: accept
+        text: Vote yes. Look after the members you have.
+        pressure: interest
+        cost: Your pay rises 12% over three years. Your daughter starts on the lower scale.
+        evidence: [{position: unions.role.bargaining-agent, w: 2}, {position: cs.own-first.family-first, w: 1}]
+      - id: accept-and-fight
+        text: Vote yes, and start organizing to close the gap at the next contract.
+        pressure: mixed
+        cost: You get your 4%. In three years the new hires are a third of the plant, and their scale is management's opening offer.
+        evidence: [{position: unions.role.bargaining-agent, w: 1}, {position: reform.revolution.piecemeal-improvement, w: 1}]

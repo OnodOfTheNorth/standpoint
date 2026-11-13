@@ -1,0 +1,401 @@
+# Debates in political economy: value, calculation, crisis, money, transition and the origins of capitalism.
+debates:
+  - id: debate.transformation-problem
+    name: Value and prices after Capital
+    date: "1896–1977"
+    summary: >-
+      In the third volume of Capital Marx showed how values, measured in labor time, are turned into prices
+      that give equal profit rates to capitals of different make-up. Eugen von Böhm-Bawerk argued that this
+      contradicted the labor theory of value. Rudolf Hilferding defended Marx. Later, economists following
+      Piero Sraffa argued that prices and profits could be explained without labor values at all.
+    problematic: value.source
+    sides:
+      - label: The marginalist critique
+        thinkers: []
+        positions: [value.source.subjective-utility, profit.legitimacy.earned-reward]
+        argument: >-
+          Böhm-Bawerk argued that if goods sell at prices that depart systematically from their labor values,
+          then labor does not govern exchange and the first volume of Capital is refuted by the third. Prices
+          are explained by the subjective valuations of buyers at the margin and by the time preference that
+          makes present goods worth more than future ones. Interest is the reward for waiting, not a deduction
+          from labor.
+        texts:
+          - {author: Eugen von Böhm-Bawerk, title: Karl Marx and the Close of His System, year: 1896}
+      - label: The Marxist defense
+        thinkers: [thinker.marx]
+        positions: [value.source.labor, profit.legitimacy.unpaid-labor, capitalism.nature.exploitation-profit]
+        argument: >-
+          Value theory does not claim that each good sells at its value; it explains where the total surplus comes
+          from and how competition redistributes it among capitals. Total profit equals total surplus value; the
+          prices of production only share it out. Marginal utility explains individual demand at a moment and
+          says nothing about the social relation that makes labor power a commodity.
+        texts:
+          - {author: Karl Marx, title: "Capital, Volume III", year: 1894}
+          - {author: Rudolf Hilferding, title: Böhm-Bawerk's Criticism of Marx, year: 1904}
+      - label: The Sraffian surplus approach
+        thinkers: []
+        positions: [value.source.surplus-distribution]
+        argument: >-
+          Ian Steedman and others in the tradition of Piero Sraffa argued that prices and the rate of profit can be
+          calculated directly from the physical conditions of production and the real wage. Labor values are a
+          detour that adds nothing and can give wrong answers. Profit is still a surplus over what workers
+          receive, so class conflict over distribution remains central, but labor values do not.
+        texts:
+          - {author: Ladislaus von Bortkiewicz, title: "On the Correction of Marx's Fundamental Theoretical Construction in the Third Volume of Capital", year: 1907}
+          - {author: Piero Sraffa, title: Production of Commodities by Means of Commodities, year: 1960}
+          - {author: Ian Steedman, title: Marx after Sraffa, year: 1977}
+    outcome: >-
+      Neoclassical economics adopted subjective value and largely stopped engaging with the question.
+      Marxists split between those who accepted the Sraffian critique and those who rejected its reading of
+      Marx, including the temporal single-system interpretation of Andrew Kliman and others. The dispute
+      remains open within Marxist economics.
+
+  - id: debate.socialist-calculation
+    name: The socialist calculation debate
+    date: "1920–1945"
+    summary: >-
+      Ludwig von Mises argued in 1920 that a socialist economy without markets for capital goods could not
+      calculate costs and would waste resources blindly. Socialists answered that planners could compute
+      prices or simulate a market, or plan in physical quantities. Friedrich Hayek recast the problem as one of
+      knowledge scattered among millions of people that no central body can gather.
+    problematic: calculation.debate
+    sides:
+      - label: Mises
+        thinkers: [thinker.mises]
+        positions: [calculation.debate.mises-impossible, allocation.mechanism.free-market, value.source.subjective-utility]
+        argument: >-
+          Rational production needs a common unit to compare costs across countless uses of steel, labor and
+          land. Money prices, formed by exchange of privately owned means of production, are that unit. Abolish
+          private ownership of capital goods and there are no prices for them, so planners cannot know whether a
+          railway or a canal is the cheaper way to move goods. Socialism is the abolition of rational economy.
+        texts:
+          - {author: Ludwig von Mises, title: Economic Calculation in the Socialist Commonwealth, year: 1920}
+          - {author: Ludwig von Mises, title: "Socialism: An Economic and Sociological Analysis", year: 1922}
+      - label: Hayek
+        thinkers: [thinker.hayek]
+        positions: [calculation.debate.hayek-knowledge, allocation.mechanism.free-market]
+        argument: >-
+          The economic problem is not computing a solution from known data; the data are never given to one mind.
+          Knowledge of particular circumstances of time and place is dispersed, tacit and constantly changing.
+          Prices formed in competition transmit that knowledge and the incentive to act on it. A planning board
+          imitating a market lacks both the knowledge and the rivalry that discovers it.
+        texts:
+          - {author: F. A. Hayek, title: "Collectivist Economic Planning", year: 1935, note: edited volume}
+          - {author: F. A. Hayek, title: "Socialist Calculation: The Competitive 'Solution'", year: 1940}
+          - {author: F. A. Hayek, title: The Use of Knowledge in Society, year: 1945}
+      - label: Lange and Lerner's market socialism
+        thinkers: []
+        positions: [calculation.debate.lange-lerner-solved, planning.form.lange-board, allocation.mechanism.market-socialism]
+        argument: >-
+          Oskar Lange argued that a central planning board can set prices for producer goods by trial and error,
+          raising them where shortages appear and lowering them where surpluses pile up, just as a market does,
+          while managers follow rules to produce where price equals marginal cost. Socialism can match the
+          market's efficiency and add what capitalism lacks: an equal distribution of income and attention to
+          social costs. Mises should get a statue in the planning ministry for posing the problem.
+        texts:
+          - {author: Oskar Lange, title: On the Economic Theory of Socialism, year: 1936}
+          - {author: Oskar Lange, title: The Computer and the Market, year: 1967}
+      - label: Planning in kind and in advance
+        thinkers: []
+        positions: [calculation.debate.in-kind, calculation.debate.dobb-ex-ante, planning.form.material-balances]
+        argument: >-
+          Otto Neurath held that an economy can be planned in physical quantities, weighing different goods
+          directly against human needs without reducing them to one money measure. Maurice Dobb argued that
+          planning's advantage is to coordinate investment before it happens, avoiding the waste of crises and
+          of duplicated projects, and that Lange's simulated market threw that advantage away.
+        texts:
+          - {author: Otto Neurath, title: Through War Economy to Economy in Kind, year: 1919}
+          - {author: Maurice Dobb, title: Economic Theory and the Problems of a Socialist Economy, year: 1933}
+    outcome: >-
+      Soviet planning ran on material balances rather than on any of the proposed solutions. Lange became a
+      Polish planner after 1945. After the collapse of the Soviet planned economies many economists held the
+      Austrians had won, while Paul Cockshott and Allin Cottrell, in Towards a New Socialism (1993), and others
+      argued that modern computing reopens the question.
+
+  - id: debate.keynes-hayek
+    name: Keynes and Hayek on the Depression
+    date: "1931–1936"
+    summary: >-
+      As the Depression deepened, John Maynard Keynes and Friedrich Hayek gave opposite accounts of slumps.
+      Hayek argued that cheap credit had distorted investment and that the slump was the necessary correction.
+      Keynes argued that spending could fall short of what the economy can produce and stay there, and that the
+      state should fill the gap.
+    problematic: crisis.cause
+    sides:
+      - label: Keynes
+        thinkers: [thinker.keynes]
+        positions: [crisis.cause.demand-failure, capitalism.nature.managed-engine, allocation.mechanism.mixed-steered]
+        argument: >-
+          There is no automatic force that brings an economy to full employment. When businesses expect weak
+          sales they cut investment, incomes fall, and saving falls with them: the economy can settle with
+          millions idle. Cutting wages deepens the fall in demand. The state must manage total spending through
+          public investment and low interest rates. In the long run we are all dead.
+        texts:
+          - {author: J. M. Keynes, title: A Treatise on Money, year: 1930}
+          - {author: Piero Sraffa, title: Dr. Hayek on Money and Capital, year: 1932}
+          - {author: J. M. Keynes, title: "The General Theory of Employment, Interest and Money", year: 1936}
+      - label: Hayek
+        thinkers: [thinker.hayek]
+        positions: [crisis.cause.credit-distortion, money.nature.hard-money, allocation.mechanism.free-market]
+        argument: >-
+          Credit expansion pushes interest rates below the level set by real saving and lures firms into long
+          projects that the public's actual saving cannot complete. The boom is the disease; the slump is the
+          painful liquidation of mistaken investment. More credit or public spending only postpones the
+          adjustment and builds a larger crisis. The remedy is to let prices and wages adjust.
+        texts:
+          - {author: F. A. Hayek, title: Prices and Production, year: 1931}
+          - {author: F. A. Hayek, title: Reflections on the Pure Theory of Money of Mr. J. M. Keynes, year: 1931}
+    outcome: >-
+      Keynes's General Theory shaped economic policy in the capitalist core from 1945 to the 1970s. Hayek turned
+      to political philosophy with The Road to Serfdom (1944) and founded the Mont Pèlerin Society in 1947.
+      The inflation of the 1970s revived his reputation; he shared the 1974 economics prize, and his ideas
+      informed the neoliberal turn.
+
+  - id: debate.monetarism
+    name: Monetarists and Keynesians on money
+    date: "1963–1982"
+    summary: >-
+      Milton Friedman argued that the Great Depression and later inflation were caused by central banks
+      mismanaging the money supply, and that money should grow at a fixed rate. Keynesian economists answered
+      that money follows economic activity more than it drives it. Hayek, from another angle, proposed ending
+      the state's monopoly over money altogether.
+    problematic: money.nature
+    sides:
+      - label: Friedman's monetarism
+        thinkers: [thinker.friedman]
+        positions: [money.nature.rule-bound-central-bank, crisis.cause.shocks-and-errors, allocation.mechanism.free-market]
+        argument: >-
+          Inflation is always and everywhere a monetary phenomenon. The Federal Reserve turned a recession into the
+          Great Depression by letting the money stock collapse by a third. Fine-tuning fails because policy acts
+          with long and variable lags, and there is no lasting trade-off between inflation and unemployment.
+          Tie the central bank to a steady rule and let markets do the rest.
+        texts:
+          - {author: Milton Friedman and Anna J. Schwartz, title: "A Monetary History of the United States, 1867–1960", year: 1963}
+          - {author: Milton Friedman, title: The Role of Monetary Policy, year: 1968}
+      - label: The Keynesians
+        thinkers: []
+        positions: [crisis.cause.demand-failure, allocation.mechanism.mixed-steered, finance.control.prudential]
+        argument: >-
+          James Tobin showed that the correlations Friedman relied on could arise because money responds to
+          income, not the reverse. Nicholas Kaldor argued that banks create money in response to demand for loans,
+          so the money supply cannot be fixed by decree, and that monetarism in practice means deliberate
+          unemployment to break wage bargaining. Fiscal policy remains the tool for full employment.
+        texts:
+          - {author: James Tobin, title: "Money and Income: Post Hoc Ergo Propter Hoc?", year: 1970}
+          - {author: Nicholas Kaldor, title: The New Monetarism, year: 1970}
+          - {author: Nicholas Kaldor, title: The Scourge of Monetarism, year: 1982}
+      - label: Hayek's denationalized money
+        thinkers: [thinker.hayek]
+        positions: [money.nature.competing-currencies]
+        argument: >-
+          No central bank, rule or no rule, can be trusted with a monopoly it can abuse for governments. Let
+          private banks issue competing currencies and let people choose; issuers who inflate will lose their
+          customers. Sound money will come from competition, as good goods do.
+        texts:
+          - {author: F. A. Hayek, title: Denationalisation of Money, year: 1976}
+    outcome: >-
+      The US Federal Reserve under Paul Volcker and the Thatcher government adopted money-supply targets from
+      1979–80; interest rates soared, unemployment rose sharply, and inflation fell. The targets proved hard to
+      hit and were dropped by the mid-1980s in favor of inflation targeting by independent central banks.
+      Private currencies remained marginal until digital currencies appeared after 2009.
+
+  - id: debate.mmt-sound-money
+    name: Modern Monetary Theory and its critics
+    date: "1993–2023"
+    summary: >-
+      Modern Monetary Theory holds that a government issuing its own currency cannot run out of it, so its
+      spending is limited by real resources and inflation, not by revenue. It became a public argument in the
+      United States around 2019. Austrian-school advocates of sound money and critics from the periphery
+      replied from opposite directions.
+    problematic: money.nature
+    sides:
+      - label: Modern Monetary Theory
+        thinkers: []
+        positions: [money.nature.chartalist, work.future.job-guarantee, tax.purpose.currency-tool]
+        argument: >-
+          Money is a creature of the state: it is accepted because the state demands it in taxes. A currency
+          issuer spends first and taxes later; taxes exist to create demand for the currency and to curb
+          inflation, not to fund spending. Unemployment is proof that the state is spending too little. A public
+          job guarantee at a fixed wage would end it and anchor prices.
+        texts:
+          - {author: Warren Mosler, title: Soft Currency Economics, year: 1993}
+          - {author: L. Randall Wray, title: "Understanding Modern Money: The Key to Full Employment and Price Stability", year: 1998}
+          - {author: Stephanie Kelton, title: The Deficit Myth, year: 2020}
+      - label: Sound money
+        thinkers: [thinker.mises, thinker.rothbard]
+        positions: [money.nature.hard-money, crisis.cause.credit-distortion, tax.purpose.theft]
+        argument: >-
+          Money arose from trade as a commodity, not from the state. Every expansion of state money transfers
+          wealth from savers and wage earners to the government and those closest to it, who spend the new money
+          before prices rise. A government that believes it cannot run out of money will prove otherwise through
+          inflation. Only money outside political control protects property.
+        texts:
+          - {author: Ludwig von Mises, title: The Theory of Money and Credit, year: 1912}
+          - {author: Murray N. Rothbard, title: What Has Government Done to Our Money?, year: 1963}
+      - label: The view from the periphery
+        thinkers: []
+        positions: [money.nature.currency-hierarchy, money.nature.form-of-value]
+        argument: >-
+          Marxist and Southern economists argued that MMT generalizes from the United States, whose currency sits
+          at the top of a world hierarchy. A peripheral country that spends freely in its own currency must still
+          import fuel, food and machines in dollars, and when its currency falls, inflation and capital flight
+          follow. Monetary sovereignty is won by changing the world system, not by an accounting identity.
+        texts: []
+    outcome: >-
+      MMT economists advised the 2016 and 2020 Sanders campaigns, and large deficit-funded spending during the
+      2020–21 pandemic was followed by the highest inflation in core countries in four decades. Central banks
+      raised interest rates sharply from 2022. Each side cited the episode as confirming its view.
+
+  - id: debate.cambridge-capital
+    name: The Cambridge capital controversy
+    date: "1953–1966"
+    summary: >-
+      Economists at Cambridge, England, led by Joan Robinson and Piero Sraffa, challenged the standard theory
+      that wages and profits reflect the marginal productivity of labor and capital. They argued that capital
+      cannot be measured independently of the profit rate it is supposed to explain. Paul Samuelson and Robert
+      Solow, at Cambridge, Massachusetts, defended the theory and in 1966 conceded the key technical point.
+    problematic: value.source
+    sides:
+      - label: Cambridge, England
+        thinkers: []
+        positions: [value.source.surplus-distribution, inequality.justice.class-exploitation]
+        argument: >-
+          Capital is a collection of different machines and materials; to add them up you must value them, and
+          their value depends on the rate of profit. So capital's marginal product cannot explain the rate of
+          profit without circular reasoning. A technique can be the cheapest at a low and a high profit rate but
+          not between them. Distribution between wages and profits is a matter of class power and convention, not
+          of technical productivity.
+        texts:
+          - {author: Joan Robinson, title: The Production Function and the Theory of Capital, year: 1953}
+          - {author: Piero Sraffa, title: Production of Commodities by Means of Commodities, year: 1960}
+      - label: Cambridge, Massachusetts
+        thinkers: []
+        positions: [value.source.marginal-productivity, wage.nature.marginal-product]
+        argument: >-
+          Paul Samuelson and Robert Solow held that an aggregate production function is a useful parable: it
+          explains growth and income shares well enough in the data. Factors are paid according to what they add
+          at the margin, so the incomes of labor and capital reflect contributions. Paradoxes in special cases do
+          not overturn a working tool.
+        texts:
+          - {author: Paul A. Samuelson, title: "Parable and Realism in Capital Theory: The Surrogate Production Function", year: 1962}
+          - {author: Paul A. Samuelson, title: "A Summing Up", year: 1966}
+    outcome: >-
+      Samuelson accepted in 1966 that reswitching can occur and that the simple parable does not hold in
+      general. Mainstream economics kept the aggregate production function in growth theory and empirical work.
+      Post-Keynesian and Sraffian economists treated the controversy as a refutation of marginal productivity
+      theories of distribution.
+
+  - id: debate.transition-feudalism
+    name: The transition from feudalism to capitalism
+    date: "1946–1953"
+    summary: >-
+      Maurice Dobb's Studies in the Development of Capitalism traced capitalism's birth to class conflict inside
+      the feudal countryside. Paul Sweezy replied that feudalism was stable on its own and was dissolved from
+      outside by long-distance trade and the growth of towns. Historians including Rodney Hilton and Kohachiro
+      Takahashi joined the exchange.
+    problematic: capitalism.nature
+    sides:
+      - label: Dobb and the internal-contradiction view
+        thinkers: []
+        positions: [history.motor.class-struggle, class.concept.relation-to-production, capitalism.nature.exploitation-profit]
+        argument: >-
+          Feudalism was a relation between lords and serfs. The lords' growing demands on the peasantry exhausted
+          the land and drove peasants to flight and revolt, until the system broke from within. Capitalism grew
+          out of the differentiation of the peasantry and small producers into employers and wage laborers.
+          Trade existed under feudalism for centuries without changing how it worked.
+        texts:
+          - {author: Maurice Dobb, title: Studies in the Development of Capitalism, year: 1946}
+          - {author: Rodney Hilton (ed.), title: The Transition from Feudalism to Capitalism, year: 1976, note: collected exchange}
+      - label: Sweezy and the trade view
+        thinkers: [thinker.sweezy]
+        positions: [capitalism.nature.world-system, history.motor.technology]
+        argument: >-
+          Feudalism was a system of production for use, conservative and stable. It was dissolved by an external
+          force: the revival of long-distance trade, the towns it fed, and the money economy that spread from them
+          into the countryside. Lords turned to money rents and markets; serfs fled to towns. The prime mover was
+          exchange.
+        texts:
+          - {author: Paul Sweezy, title: "A Critique", year: 1950, note: in Science and Society}
+    outcome: >-
+      The exchange, collected in 1976, set the terms for later Marxist history. Robert Brenner's work in the
+      1970s developed Dobb's emphasis on agrarian class relations, while Immanuel Wallerstein's world-systems
+      analysis extended Sweezy's emphasis on trade.
+
+  - id: debate.brenner-wallerstein
+    name: Brenner and Wallerstein on the origins of capitalism
+    date: "1974–1985"
+    summary: >-
+      Immanuel Wallerstein dated capitalism to a sixteenth-century world economy in which European core regions
+      drew wealth from a periphery of plantations and serf estates. Robert Brenner argued that this confused
+      trade with capitalism, which arose instead from the specific property relations of the English
+      countryside. The dispute is over whether capitalism is first a world system of exchange or a relation of
+      production.
+    problematic: capitalism.nature
+    sides:
+      - label: World-systems analysis
+        thinkers: [thinker.wallerstein]
+        positions: [capitalism.nature.world-system, poverty.cause.drain, imperialism.nature.unequal-exchange-drain]
+        argument: >-
+          Capitalism was born as a world economy, a single division of labor across many states. Core regions
+          specialized in high-profit production with free labor; the periphery was made to produce cheap grain,
+          sugar and silver with coerced labor. Second serfdom in Poland and slavery in the Americas were capitalist
+          forms of labor control, not survivals. The development of the core and the underdevelopment of the
+          periphery are one process.
+        texts:
+          - {author: Andre Gunder Frank, title: Capitalism and Underdevelopment in Latin America, year: 1967}
+          - {author: Immanuel Wallerstein, title: The Modern World-System I, year: 1974}
+      - label: Brenner and political Marxism
+        thinkers: [thinker.brenner]
+        positions: [class.concept.relation-to-production, capitalism.nature.exploitation-profit, history.motor.class-struggle]
+        argument: >-
+          Trade and coerced labor existed for millennia without producing sustained growth. Capitalism began where
+          lords could no longer coerce peasants and peasants could no longer live off the land without the market,
+          as in England, where tenant farmers had to compete or lose their leases. That compulsion forced
+          continual improvement of productivity. Calling slavery and serfdom capitalist blurs the very thing that
+          makes capitalism different, and shifts the source of the core's wealth from its own workers to trade.
+        texts:
+          - {author: Robert Brenner, title: Agrarian Class Structure and Economic Development in Pre-Industrial Europe, year: 1976}
+          - {author: Robert Brenner, title: "The Origins of Capitalist Development: A Critique of Neo-Smithian Marxism", year: 1977}
+    outcome: >-
+      The exchanges in Past and Present were collected as The Brenner Debate in 1985. Ellen Meiksins Wood
+      extended Brenner's view in The Origin of Capitalism (1999), while world-systems analysis, developed by
+      Wallerstein, Giovanni Arrighi and Samir Amin, became the main framework for dependency and
+      unequal-exchange research. Neither side conceded.
+
+  - id: debate.sweezy-bettelheim
+    name: Sweezy and Bettelheim on the transition to socialism
+    date: "1968–1974"
+    summary: >-
+      After the Soviet invasion of Czechoslovakia in 1968, Paul Sweezy and Charles Bettelheim debated in the
+      pages of Monthly Review what had gone wrong in the Soviet bloc. Sweezy saw market reforms reintroducing
+      capitalism. Bettelheim argued that the problem was deeper: state ownership and planning could themselves
+      hide capitalist relations if a state bourgeoisie controlled them.
+    problematic: hist.ussr-late
+    sides:
+      - label: Sweezy
+        thinkers: [thinker.sweezy]
+        positions: [markets.nature.commodity-production-is-the-root, allocation.mechanism.central-planning, hist.ussr-late.bureaucratic-stagnation]
+        argument: >-
+          The Eastern European reforms that let enterprises pursue profit on markets put the socialist economies on
+          the road back to capitalism. Market criteria produce the motives and the class divisions of a market
+          society. What holds the road open is planning combined with mass political mobilization and a
+          socialist consciousness that puts need above profit.
+        texts:
+          - {author: Paul M. Sweezy and Charles Bettelheim, title: On the Transition to Socialism, year: 1971}
+          - {author: Paul M. Sweezy, title: Post-Revolutionary Society, year: 1980}
+      - label: Bettelheim
+        thinkers: [thinker.bettelheim]
+        positions: [hist.ussr-late.capitalism-restored-1956, class.concept.command-and-control, planning.form.mass-line]
+        argument: >-
+          Plan versus market is a surface opposition. What decides a society's character is who actually controls
+          the means of production and how labor is divided. If a layer of managers and officials commands
+          enterprises and directs workers, state ownership is a juridical form for a state bourgeoisie, and the
+          plan is that bourgeoisie's instrument. Only a revolution in relations of production, as China attempted,
+          prevents it.
+        texts:
+          - {author: Paul M. Sweezy and Charles Bettelheim, title: On the Transition to Socialism, year: 1971}
+          - {author: Charles Bettelheim, title: "Class Struggles in the USSR, First Period: 1917–1923", year: 1974}
+    outcome: >-
+      Bettelheim's three-volume Class Struggles in the USSR (1974–1982) traced the restoration to the 1920s and
+      1930s. He broke with Chinese policy after 1976. Sweezy concluded in 1980 that the USSR was a new kind of
+      class society, neither capitalist nor socialist. The Soviet bloc collapsed in 1989–1991.
