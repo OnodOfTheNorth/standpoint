@@ -1,0 +1,383 @@
+id: arc.landreform
+title: The Fence
+blurb: Nine thousand idle hectares, three hundred landless families, and a title nobody has seen.
+role: You are a landless day laborer on the cattle frontier.
+place: Southern Pará, on the Amazon cattle frontier of Brazil
+start: arc.landreform.01
+escalation: arc.landreform.04
+pressure: [arc.landreform.05a, arc.landreform.05b]
+tags: [nation, economy, state, strategy]
+nodes:
+  - id: arc.landreform.01
+    type: scene
+    title: The fence
+    text: >
+      You are forty-one, you mend fences for 90 reais a day, and you rent a room behind a bar in Eldorado.
+      Tonight a movement of landless families plans to cut the fence of Fazenda Santa Cruz: nine thousand
+      hectares, mostly empty pasture, owned by a man in São Paulo whose title is disputed in court. Your
+      cousin Zé is going. He says bring a hammer.
+    why: This asks who you think land belongs to, and how a person without any should get it.
+    premises:
+      - id: no-landless
+        text: The premise that being landless is a problem. Most people in the world don't own land and do fine.
+        evidence: [{position: agrarian.question.commercial-farms, w: 2}]
+    conditions:
+      - id: title
+        text: It depends whether the owner's title is genuine.
+        evidence: [{position: law.nature.rule-of-law, w: 1}, {position: property.land.freehold, w: 1}]
+    options:
+      - id: join
+        text: Go. Bring the hammer and your ID card.
+        set: {joined: true}
+        evidence:
+          - {position: change.means.strike-and-direct-action, w: 3}
+          - {position: agrarian.question.land-to-the-tiller, w: 1}
+        probe:
+          ask: What makes that fazenda's land yours to take?
+          options:
+            - text: Nobody works it. Land belongs to whoever works it.
+              cause: structures
+              evidence: [{position: agrarian.question.land-to-the-tiller, w: 2}]
+            - text: Idle land in a hungry country has failed its purpose. Even the constitution says so.
+              cause: ideas
+              evidence: [{position: property.private.social-function, w: 2}]
+            - text: "The title was forged in the seventies. The law was written for men like him."
+              cause: interests
+              evidence: [{position: law.nature.class-will, w: 2}]
+        consequence: By dawn there are three hundred families and a blue tarp city on the hill.
+        next: arc.landreform.02a
+      - id: list
+        text: Sign up for the government's land-reform waiting list and keep your job. Slow, but lawful.
+        set: {joined: false}
+        evidence:
+          - {position: change.means.law-and-courts, w: 3}
+        consequence: The clerk says the list is eleven years long. He says it kindly.
+        next: arc.landreform.02b
+      - id: save
+        text: Save up and buy a plot. Nobody handed the rancher his land either.
+        set: {joined: false}
+        evidence:
+          - {position: inequality.justice.earned-desert, w: 2}
+          - {position: property.land.freehold, w: 2}
+        consequence: At 90 reais a day, a plot is fourteen years away. You start anyway.
+        next: arc.landreform.02b
+      - id: stay
+        text: Stay out. Taking a man's land is stealing, whatever he does or doesn't do with it.
+        set: {joined: false}
+        evidence:
+          - {position: property.private.natural-right, w: 3}
+        consequence: The rancher's foreman hears you stayed. He offers you steady work.
+        next: arc.landreform.02b
+
+  - id: arc.landreform.02a
+    type: allocation
+    title: The assembly
+    text: >
+      A judge lets the camp use one hundred hectares while the case drags on. The assembly meets under a
+      mango tree to decide how to use them. Everyone has an opinion, and the woman with the notebook writes
+      all of them down. You have ten votes to spread.
+    why: This asks how you think land should be worked once people have it, together or apart, for food or for cash.
+    allocate:
+      budget: 10
+      unit: votes
+      items:
+        - id: plots
+          text: Family plots, one per household, each to farm as it likes.
+          evidence: [{position: agrarian.question.family-farm, w: 2}]
+        - id: collective
+          text: One big collective field, worked in shifts, harvest shared.
+          evidence: [{position: agrarian.question.collective-farms, w: 2}]
+        - id: food
+          text: Beans, cassava and a seed bank, no pesticides, sold in town.
+          evidence: [{position: agrarian.question.food-sovereignty, w: 2}]
+        - id: cash
+          text: Soy on a third of it, to pay the lawyers.
+          evidence: [{position: agrarian.question.commercial-farms, w: 1}, {position: change.means.law-and-courts, w: 1}]
+    options:
+      - id: done
+        text: Done
+        next: arc.landreform.03
+
+  - id: arc.landreform.02b
+    type: explanation
+    title: The rancher's son
+    text: >
+      You stay on mending fences. From the road you can see the tarps on the hill. The rancher's son, home
+      from university, says the landless are people who won't work for a living. Brazil is bigger than the
+      continental United States. Why are there millions of families in it with no land?
+    why: This asks what kind of cause you reach for when explaining who owns the land.
+    options:
+      - id: law
+        text: The big families took it first, and the law has guarded what they took ever since.
+        cause: structures
+        evidence:
+          - {position: law.nature.class-will, w: 2}
+          - {position: agrarian.question.land-to-the-tiller, w: 1}
+        next: arc.landreform.03
+      - id: work
+        text: The son has a point. Some people work and save; some don't.
+        cause: individuals
+        evidence:
+          - {position: inequality.justice.earned-desert, w: 3}
+        next: arc.landreform.03
+      - id: titles
+        text: Nobody can prove who owns what. Fix the titles and a land market will sort it out.
+        cause: structures
+        evidence:
+          - {position: property.land.freehold, w: 3}
+        next: arc.landreform.03
+      - id: export
+        text: The land grows cattle and soy for export. It was never meant to feed the people on it.
+        cause: interests
+        evidence:
+          - {position: agrarian.question.food-sovereignty, w: 2}
+          - {position: agrarian.question.commercial-farms, w: -1}
+        next: arc.landreform.03
+
+  - id: arc.landreform.03
+    type: verdict
+    title: Eldorado, 1996
+    text: >
+      Everybody here knows the date. On 17 April 1996, landless families blocking highway PA-150 near
+      Eldorado dos Carajás were cleared by military police. Nineteen were killed. Two commanders were
+      eventually convicted; nobody higher up the chain was. Where would you have stood?
+    why: This asks what you think the police and the courts are for when land is in dispute.
+    conditions:
+      - id: first
+        text: It depends who fired first.
+        evidence: [{position: police.role.order-maintenance, w: 1}]
+    options:
+      - id: repression
+        text: The police did the landowners' work, as they were meant to. The road was just the excuse.
+        evidence:
+          - {position: police.role.class-repression, w: 3}
+          - {position: law.nature.class-will, w: 1}
+        next: arc.landreform.04
+      - id: law
+        text: Blocking a federal highway is a crime. Shooting the people doing it is a worse one. Try both.
+        evidence:
+          - {position: law.nature.rule-of-law, w: 3}
+          - {position: police.role.order-maintenance, w: 1}
+        next: arc.landreform.04
+      - id: provoked
+        text: The movement led families into a confrontation it knew could end this way. Buy land, don't seize it.
+        evidence:
+          - {position: property.land.freehold, w: 2}
+          - {position: change.means.strike-and-direct-action, w: -2}
+        next: arc.landreform.04
+      - id: proof
+        text: It proves paperwork was never going to deliver land. After Eldorado, the occupations doubled.
+        evidence:
+          - {position: change.means.strike-and-direct-action, w: 3}
+        next: arc.landreform.04
+
+  - id: arc.landreform.04
+    type: escalation
+    title: The highway
+    recap: On Brazil's cattle frontier, landless families have occupied an idle ranch and a court has ordered them out.
+    text: >
+      Eviction day at Fazenda Santa Cruz. Three hundred families sit across highway PA-150 with their pots
+      and children. Military police form a line; behind them, the ranch's private security waits in pickups.
+      The foreman walks the shoulder offering day laborers 200 reais each to pull down the camp's shacks once
+      the road is clear. You are standing on the shoulder.
+    why: The middle option is gone. This records which way you break when property and order collide with the landless.
+    options:
+      - id: sit
+        text: Sit down on the asphalt with the families.
+        side: {axis: class, dir: dispossessed}
+        evidence:
+          - {position: change.means.strike-and-direct-action, w: 2}
+          - {position: agrarian.question.land-to-the-tiller, w: 2}
+        consequence: The line holds six hours, until a federal prosecutor arrives with a stay. The camp stands. Two men are in hospital.
+        next:
+          - {if: {flag: {key: joined, eq: true}}, to: arc.landreform.05a}
+          - {to: arc.landreform.05b}
+      - id: money
+        text: Take the 200 reais. A court has ruled, and somebody will pull those shacks down either way.
+        side: {axis: class, dir: order}
+        evidence:
+          - {position: law.nature.rule-of-law, w: 2}
+          - {position: property.private.natural-right, w: 1}
+        consequence: You pull down eleven shacks. The woman you buy bread from watches you do it.
+        next:
+          - {if: {flag: {key: joined, eq: true}}, to: arc.landreform.05a}
+          - {to: arc.landreform.05b}
+      - id: police
+        text: Stand back and let the police open the road. Land is for courts, not highways.
+        side: {axis: class, dir: order}
+        evidence:
+          - {position: police.role.order-maintenance, w: 3}
+          - {position: property.private.natural-right, w: 1}
+        consequence: Tear gas, and the road opens by noon. The camp moves to the verge, where it stays four years.
+        next:
+          - {if: {flag: {key: joined, eq: true}}, to: arc.landreform.05a}
+          - {to: arc.landreform.05b}
+      - id: home
+        text: Walk home. Let the land agency and the lawyers sort it out.
+        side: {axis: class, dir: neither}
+        evidence:
+          - {position: change.means.law-and-courts, w: 2}
+        consequence: You hear it on the radio. Road cleared, camp moved, nobody killed this time.
+        next:
+          - {if: {flag: {key: joined, eq: true}}, to: arc.landreform.05a}
+          - {to: arc.landreform.05b}
+
+  - id: arc.landreform.05a
+    type: pressure
+    title: The offer
+    tests: agrarian.question.food-sovereignty
+    text: >
+      Three years on, the government expropriates Santa Cruz. You get 25 hectares and a title. A soy trader
+      from Paragominas offers 4,000 reais a year to lease it, and 160,000 to buy it once the law lets you
+      sell. Your cassava and beans cleared 9,000 last year, with your back. The settlement assembly has asked
+      members not to lease to soy.
+    why: This sets the land you fought for, and what you said it was for, against an offer that would change your family's life.
+    options:
+      - id: farm
+        text: Keep growing food. That was the point of the hammer.
+        pressure: principle
+        cost: Your daughter's university fees in Belém go unpaid. She takes a call-center job instead.
+        evidence:
+          - {position: agrarian.question.food-sovereignty, w: 3}
+        next: arc.landreform.06
+      - id: lease
+        text: Lease it. The title has my name on it, and what I do with it is my business.
+        pressure: interest
+        cost: The assembly suspends you from the cooperative. Your neighbors' wells taste of the spraying.
+        evidence:
+          - {position: property.land.freehold, w: 2}
+          - {position: agrarian.question.commercial-farms, w: 2}
+        next: arc.landreform.06
+      - id: half
+        text: Lease half, farm half, and keep quiet at the assembly.
+        pressure: mixed
+        cost: The trader wants unbroken fields. He leases your neighbors' plots too and sprays around your beans.
+        evidence:
+          - {position: agrarian.question.family-farm, w: 1}
+          - {position: agrarian.question.commercial-farms, w: 1}
+        next: arc.landreform.06
+      - id: coop
+        text: Propose the settlement grow soy itself, as a cooperative, and keep the trader's margin.
+        pressure: mixed
+        cost: Two years of meetings and a bank loan the cooperative is still paying off.
+        evidence:
+          - {position: firm.ownership.worker-cooperatives, w: 3}
+        next: arc.landreform.06
+
+  - id: arc.landreform.05b
+    type: pressure
+    title: The witness
+    tests: law.nature.rule-of-law
+    text: >
+      A week after the eviction, the ranch barn burns down. The foreman offers you the under-manager's job,
+      a house and 3,800 reais a month, if you tell the police you saw two men from the camp set it. You saw
+      nothing; you were asleep. Your cousin Zé is still in that camp.
+    why: This sets what you believe about the law against the best job you will ever be offered.
+    options:
+      - id: refuse
+        text: Tell him you saw nothing, because you saw nothing.
+        pressure: principle
+        cost: No job. The foreman stops calling you for day work.
+        evidence:
+          - {position: law.nature.rule-of-law, w: 3}
+        next: arc.landreform.06
+      - id: testify
+        text: Say it. Those men burn things; if it wasn't this barn, it was another.
+        pressure: interest
+        cost: Two men from the camp are held four months before trial. Zé stops speaking to you.
+        evidence:
+          - {position: police.role.order-maintenance, w: 1}
+          - {position: law.nature.rule-of-law, w: -2}
+        next: arc.landreform.06
+      - id: vague
+        text: Say you saw "people from the road" that night. Nothing more.
+        pressure: mixed
+        cost: The police arrest whoever they like with it. You get the house.
+        evidence:
+          - {position: law.nature.rule-of-law, w: -1}
+        next: arc.landreform.06
+      - id: warn
+        text: Refuse, then ride to the camp and warn Zé what the foreman is building.
+        pressure: principle
+        cost: No job, and the ranch knows whose side you're on.
+        evidence:
+          - {position: law.nature.class-will, w: 2}
+          - {position: police.role.class-repression, w: 1}
+        next: arc.landreform.06
+
+  - id: arc.landreform.06
+    type: line
+    title: Social function
+    text: >
+      Brazil's constitution lets the state expropriate land that fails its "social function." A new deputy
+      wants the phrase spelled out. Here are things an owner might do, mildest first. Where should
+      ownership stop protecting them?
+    cases:
+      - Rent pasture to a neighbor for half the calves.
+      - Switch from beans to soy for export.
+      - Leave nine thousand hectares idle, waiting for prices to rise.
+      - Clear old forest for pasture.
+      - Pay workers in vouchers for the ranch store.
+      - Hold land under a title forged fifty years ago.
+    why: This asks what obligations, if any, come with owning land.
+    options:
+      - id: forged
+        text: Only at the last. A forged title isn't property. Everything else is the owner's business.
+        evidence:
+          - {position: property.private.natural-right, w: 2}
+          - {position: property.land.freehold, w: 2}
+        next: arc.landreform.07
+      - id: idle
+        text: From the idle land onward. Land held empty in a hungry country has failed its purpose.
+        evidence:
+          - {position: property.private.social-function, w: 3}
+        next: arc.landreform.07
+      - id: export
+        text: From the soy. Land should feed the country before it feeds export markets.
+        evidence:
+          - {position: agrarian.question.food-sovereignty, w: 3}
+        next: arc.landreform.07
+      - id: rent
+        text: From the very first. Nobody should live off other people working their land.
+        evidence:
+          - {position: agrarian.question.land-to-the-tiller, w: 3}
+        next: arc.landreform.07
+
+  - id: arc.landreform.07
+    type: reason
+    title: Ten years on
+    text: >
+      Ten years on, Santa Cruz has a school, two hundred families, a cassava mill, and soy on a third of the
+      plots. The rancher took his compensation and bought a bigger ranch in Mato Grosso. Looking back, what
+      decided who ended up with land?
+    why: This asks what kind of cause you reach for when explaining who owns the land and why.
+    options:
+      - id: fence
+        text: Who was willing to cut the fence. Nothing was ever given.
+        cause: interests
+        evidence:
+          - {position: change.means.strike-and-direct-action, w: 2}
+          - {position: law.nature.class-will, w: 1}
+      - id: law
+        text: The constitution and the land agency. The camp only hurried what the law already allowed.
+        cause: structures
+        evidence:
+          - {position: change.means.law-and-courts, w: 2}
+          - {position: law.nature.rule-of-law, w: 1}
+      - id: work
+        text: Who worked. Some families farmed; some leased and sat in the shade.
+        cause: individuals
+        evidence:
+          - {position: inequality.justice.earned-desert, w: 3}
+      - id: market
+        text: The market. The land went where it earns most. The soy proves it.
+        cause: interests
+        evidence:
+          - {position: agrarian.question.commercial-farms, w: 2}
+          - {position: property.land.freehold, w: 1}
+      - id: moved
+        text: The rancher's compensation bought a bigger ranch. The reform moved the estate; it didn't end it.
+        cause: structures
+        evidence:
+          - {position: law.nature.class-will, w: 2}
+          - {position: agrarian.question.land-to-the-tiller, w: 1}

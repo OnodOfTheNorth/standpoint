@@ -1,0 +1,397 @@
+id: arc.surge
+title: Six Weeks
+blurb: A soy farmer who preaches on Sundays leads the polls, and your office keeps the list of everyone who gets help.
+role: You are the town's appointed secretary of social assistance, who runs the welfare office.
+place: A farm town in the interior of Paraná, Brazil
+start: arc.surge.01
+escalation: arc.surge.05
+pressure: [arc.surge.04]
+tags: [strategy, commonsense, culture, economy]
+nodes:
+  - id: arc.surge.01
+    type: scene
+    title: The poll
+    text: >
+      Six weeks to the municipal election. Wanderley Prado, a soy farmer and lay preacher, leads with 41
+      percent. He promises to audit your office's benefit register, "clean house," and give ranchers a free
+      hand against land invasions. The mayor's candidate trails at 22. The mayor asks you, privately, what
+      the campaign should do.
+    why: This asks how you think a rising hard-right movement should be met, if at all.
+    premises:
+      - id: no-threat
+        text: The premise that Prado is a danger. He is a candidate people like.
+        evidence: [{position: fascism.response.threat-overblown, w: 2}]
+    conditions:
+      - id: violence
+        text: It depends whether his people turn violent.
+        evidence: [{position: fascism.response.militant-democracy, w: 1}]
+    options:
+      - id: front
+        text: Unite everyone against him, from the left parties to the old conservative families.
+        set: {alliance: true}
+        evidence:
+          - {position: fascism.response.popular-front, w: 3}
+          - {position: alliances.policy.center-coalition, w: 1}
+        consequence: The old families agree to talk. They want to know what's in the platform first.
+        next: arc.surge.02
+      - id: debate
+        text: Debate him in public, every week. People aren't stupid; let them hear him.
+        set: {alliance: true}
+        evidence:
+          - {position: fascism.response.answer-with-speech, w: 3}
+        consequence: Prado accepts the first debate and brings three hundred supporters in matching shirts.
+        next: arc.surge.02
+      - id: court
+        text: File with the electoral court. His videos break the law on hate speech; get him barred.
+        set: {alliance: true}
+        evidence:
+          - {position: fascism.response.militant-democracy, w: 3}
+        consequence: The court accepts the complaint for review. Prado's next video is titled "They are afraid of you."
+        next: arc.surge.02
+      - id: deliver
+        text: Win his voters back with water, clinics and work. He grows where the state disappeared.
+        set: {alliance: false}
+        evidence:
+          - {position: fascism.response.remove-the-conditions, w: 3}
+        probe:
+          ask: Why would water pipes beat a preacher?
+          options:
+            - text: People vote their lives. Fix the lives and the anger goes elsewhere.
+              cause: interests
+              evidence: [{position: fascism.response.remove-the-conditions, w: 2}]
+            - text: They won't on their own. Pipes plus people knocking on doors might.
+              cause: structures
+              evidence: [{position: cs.clean-house.organize-ourselves, w: 2}]
+            - text: Maybe they won't. But it's the job either way.
+              cause: ideas
+              evidence: [{position: alliances.policy.center-coalition, w: 1}]
+        consequence: The mayor likes it, and asks where the money is coming from.
+        next: arc.surge.02
+      - id: order
+        text: Honestly, he isn't wrong about everything. The town wants order, and someone tough to bring it.
+        set: {alliance: false}
+        evidence:
+          - {position: cs.clean-house.tough-leader, w: 3}
+          - {position: fascism.response.threat-overblown, w: 1}
+        consequence: The mayor looks at you for a long moment and says he'll think about it.
+        next: arc.surge.02
+
+  - id: arc.surge.02
+    type: explanation
+    title: Who votes for him
+    text: >
+      You spend a Saturday in the market listening. Shopkeepers behind on their bank loans. Truckers paying
+      more for diesel than for rent. Women from the Assembly of God who say the school teaches their children
+      to be ashamed of them. A few farmhands who simply like that he talks like them. Why are they turning to him?
+    why: This asks how you explain a hard-right surge, and what kind of cause you reach for.
+    premises:
+      - id: no-turn
+        text: The premise that anything strange is happening. People are voting conservative.
+        evidence: [{position: fascism.nature.empty-insult, w: 2}]
+    options:
+      - id: squeezed
+        text: People squeezed between the bank above and the poor below go looking for someone below to blame.
+        cause: structures
+        evidence:
+          - {position: fascism.nature.petty-bourgeois-mass-movement, w: 3}
+        next: [{if: {flag: {key: alliance, eq: true}}, to: arc.surge.03a}, {to: arc.surge.03b}]
+      - id: values
+        text: They're tired of being told their faith and their families are the problem.
+        cause: culture
+        evidence:
+          - {position: culture.war.civilizational-struggle, w: 3}
+        next: [{if: {flag: {key: alliance, eq: true}}, to: arc.surge.03a}, {to: arc.surge.03b}]
+      - id: funded
+        text: The big soy growers pay for his videos. Fights over schools keep everyone off the subject of wages.
+        cause: interests
+        evidence:
+          - {position: culture.war.manufactured-diversion, w: 3}
+        next: [{if: {flag: {key: alliance, eq: true}}, to: arc.surge.03a}, {to: arc.surge.03b}]
+      - id: renewal
+        text: He says the country can be decent and great again. People want to believe that.
+        cause: ideas
+        evidence:
+          - {position: fascism.nature.national-rebirth-self-view, w: 2}
+        next: [{if: {flag: {key: alliance, eq: true}}, to: arc.surge.03a}, {to: arc.surge.03b}]
+      - id: crooks
+        text: Every politician they've had stole from them. He hasn't had the chance yet.
+        cause: individuals
+        evidence:
+          - {position: cs.clean-house.tough-leader, w: 2}
+        next: [{if: {flag: {key: alliance, eq: true}}, to: arc.surge.03a}, {to: arc.surge.03b}]
+
+  - id: arc.surge.03a
+    type: voices
+    title: The coalition
+    text: >
+      The coalition meets in the back room of a churrascaria. Two people decide whether it exists.
+    voices:
+      - {name: Dona Cecília, says: "My family has run cattle here for ninety years and I won't have that man's thugs in the town hall. I'll back your candidate. Land reform comes out of the platform."}
+      - {name: Joel, says: "Drop land reform and you drop the people who'd actually vote against him. You want our votes, not our demands."}
+    why: This asks what you would give up to stop a movement you fear, and whom you would ally with.
+    options:
+      - id: cecilia
+        text: Cecília. Win first; argue about land after.
+        cause: interests
+        evidence:
+          - {position: fascism.response.popular-front, w: 3}
+          - {position: alliances.policy.center-coalition, w: 1}
+        next: arc.surge.04
+      - id: joel
+        text: Joel. A front without the landless is a front for the landowners.
+        cause: interests
+        evidence:
+          - {position: property.land.to-the-tiller, w: 2}
+          - {position: fascism.response.remove-the-conditions, w: 1}
+        next: arc.surge.04
+      - id: organize
+        text: Both miss it. Back-room deals won't stop him. People organized on every street will.
+        cause: structures
+        evidence:
+          - {position: cs.clean-house.organize-ourselves, w: 3}
+        next: arc.surge.04
+      - id: vote
+        text: Both miss it. Vote for whoever can beat him, then go home. That's all a coalition is.
+        cause: interests
+        evidence:
+          - {position: elections.role.lesser-evil, w: 3}
+        next: arc.surge.04
+
+  - id: arc.surge.03b
+    type: allocation
+    title: The discretionary line
+    text: >
+      Your department has one discretionary budget line left before the election freeze, and the mayor has
+      left it to you. Nobody will call it campaign spending. Everyone will notice where it lands. Divide ten points.
+    why: This asks what you think actually moves people away from a movement like Prado's.
+    premises:
+      - id: abuse
+        text: The premise that it's acceptable to spend public money with one eye on the vote.
+        evidence: [{position: fascism.response.militant-democracy, w: 1}]
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: water
+          text: Water mains and the clinic roof in the neighborhoods where Prado gains most
+          evidence: [{position: fascism.response.remove-the-conditions, w: 1}]
+        - id: jobs
+          text: A public-works jobs scheme for young men out of work
+          evidence: [{position: fascism.response.remove-the-conditions, w: 1}]
+        - id: churches
+          text: Grants to church soup kitchens, the Assembly of God's included
+          evidence: [{position: cs.clean-house.god-fearing-rule, w: 1}]
+        - id: tenants
+          text: Paid organizers to build tenant and street committees
+          evidence: [{position: cs.clean-house.organize-ourselves, w: 1}]
+        - id: facts
+          text: A campaign to answer the rumors in the town's WhatsApp groups
+          evidence: [{position: fascism.response.answer-with-speech, w: 1}]
+    options:
+      - id: done
+        text: Done
+        next: arc.surge.04
+
+  - id: arc.surge.04
+    type: pressure
+    title: Three hundred families
+    tests: fascism.response.remove-the-conditions
+    text: >
+      The state releases funds for three hundred new families on the cash-transfer register. Enrolling them
+      before the vote is legal, but the town's prosecutor, a Prado ally, has said publicly that he will
+      investigate any official who does. You signed the papers to buy your house last month. An inquiry would
+      freeze your post and your salary.
+    why: This sets what you say should be done for the poor against your own job and mortgage.
+    options:
+      - id: enroll
+        text: Enroll all three hundred this week, under your own signature.
+        pressure: principle
+        cost: The prosecutor opens an inquiry. Your salary is suspended pending review. The mortgage is not.
+        set: {enrolled: true}
+        evidence:
+          - {position: fascism.response.remove-the-conditions, w: 3}
+        next: arc.surge.05
+      - id: wait
+        text: Wait until after the election. Give him nothing to use.
+        pressure: interest
+        cost: Three hundred families wait until December. Prado's videos call your office "the party's waiting room."
+        set: {enrolled: false}
+        evidence:
+          - {position: alliances.policy.center-coalition, w: 1}
+          - {position: fascism.response.remove-the-conditions, w: -1}
+        next: arc.surge.05
+      - id: urgent
+        text: Enroll the eighty most desperate now and the rest after the vote.
+        pressure: mixed
+        cost: You choose which hungry families count. The inquiry still opens, a smaller one.
+        set: {enrolled: true}
+        evidence:
+          - {position: fascism.response.remove-the-conditions, w: 1}
+        next: arc.surge.05
+
+  - id: arc.surge.05
+    type: escalation
+    title: The fence
+    recap: In a farm town in southern Brazil, weeks before a hard-right candidate is expected to win, landless families occupy an estate.
+    text: >
+      Two weeks before the vote, four hundred landless families cut the fence of an idle cattle estate at the
+      edge of town. The owner lives in São Paulo. Prado drives out with forty armed ranchers and gives the
+      families until dawn. The military police have been "on their way" for six hours. Your phone rings:
+      the families, the mayor, Prado's people.
+    why: The middle option is gone. This records which side you take when property and the dispossessed collide.
+    options:
+      - id: camp
+        text: Drive out to the camp and spend the night with the families.
+        side: {axis: class, dir: dispossessed}
+        set: {camp: true}
+        evidence:
+          - {position: property.land.to-the-tiller, w: 2}
+          - {position: fascism.response.confront-in-the-street, w: 1}
+        consequence: Nobody fires. The police arrive at five. Prado's video of you among the tents has two million views by noon.
+        next: [{if: {flag: {key: camp, eq: true}}, to: arc.surge.06a}, {to: arc.surge.06b}]
+      - id: trucks
+        text: Send the welfare office's trucks with water, food and every phone camera in town.
+        side: {axis: class, dir: dispossessed}
+        set: {camp: true}
+        evidence:
+          - {position: property.land.to-the-tiller, w: 1}
+          - {position: cs.clean-house.organize-ourselves, w: 2}
+        consequence: Forty phones film all night. The ranchers leave at three. Prado says you used public trucks for invaders.
+        next: [{if: {flag: {key: camp, eq: true}}, to: arc.surge.06a}, {to: arc.surge.06b}]
+      - id: owner
+        text: Back the owner. Cutting a fence is theft, and the law is too slow to protect anyone.
+        side: {axis: class, dir: order}
+        set: {camp: false}
+        evidence:
+          - {position: property.private.natural-right, w: 3}
+        consequence: The families are gone by dawn. Two shacks burn. Prado gains six points in a week.
+        next: [{if: {flag: {key: camp, eq: true}}, to: arc.surge.06a}, {to: arc.surge.06b}]
+      - id: leave
+        text: Ask the families to leave before dawn and put their names on the official land reform list.
+        side: {axis: class, dir: order}
+        set: {camp: false}
+        evidence:
+          - {position: property.private.natural-right, w: 1}
+          - {position: alliances.policy.center-coalition, w: 2}
+        consequence: Most leave. The list has a nine-year wait. Two shacks burn anyway, and Prado gains six points.
+        next: [{if: {flag: {key: camp, eq: true}}, to: arc.surge.06a}, {to: arc.surge.06b}]
+      - id: out
+        text: Stay out of it. Two weeks to the election, and this is a police matter.
+        side: {axis: class, dir: neither}
+        set: {camp: false}
+        evidence:
+          - {position: fascism.response.threat-overblown, w: 1}
+        consequence: The camp is cleared by Prado's men before the police arrive. Two shacks burn. Prado gains six points.
+        next: [{if: {flag: {key: camp, eq: true}}, to: arc.surge.06a}, {to: arc.surge.06b}]
+
+  - id: arc.surge.06a
+    type: tradeoff
+    title: The price of the night
+    text: >
+      The coalition's partners have seen the video. Dona Cecília's family says they will endorse Prado unless
+      you are fired by Friday. Without them, the mayor's candidate cannot win. With them, the landless
+      families lose the one official who went out there.
+    why: This sets keeping a broad alliance against keeping faith with the people you stood beside.
+    conditions:
+      - id: polls
+        text: It depends whether the alliance could actually win with me gone.
+        evidence: [{position: elections.role.lesser-evil, w: 1}]
+    options:
+      - id: resign
+        text: Resign quietly. Beating Prado matters more than my job.
+        evidence:
+          - {position: fascism.response.popular-front, w: 2}
+          - {position: elections.role.lesser-evil, w: 1}
+        consequence: The coalition holds. The families' camp gets no more trucks.
+        next: arc.surge.07
+      - id: stay
+        text: Refuse. A coalition that needs the landless to lose isn't worth winning.
+        evidence:
+          - {position: property.land.to-the-tiller, w: 2}
+          - {position: cs.clean-house.organize-ourselves, w: 1}
+        consequence: The Cecília family endorses Prado on Sunday, in church.
+        next: arc.surge.07
+      - id: public
+        text: Go public with the ultimatum. Let the town see who the old families really stand with.
+        evidence:
+          - {position: fascism.response.confront-in-the-street, w: 2}
+        consequence: The story runs. The coalition splits. The landless camp doubles in a week.
+        next: arc.surge.07
+
+  - id: arc.surge.06b
+    type: line
+    title: The march
+    text: >
+      Prado's supporters plan a "March for Order" through the town center on the Saturday before the vote.
+      The mayor asks your office for an assessment of what, if anything, should be stopped. Here is what
+      their group chats are planning. Where do you draw the line?
+    cases:
+      - A march down the main street with flags and hymns
+      - Armed private security walking with the march
+      - A route that passes the rural workers' union hall
+      - Supporters filming teachers in classrooms for "indoctrination"
+      - Ranchers patrolling the roads at night with rifles
+    why: This asks what you think a town may tolerate from a movement it fears, and who should stop the rest.
+    options:
+      - id: none
+        text: Stop nothing. Answer them in public, and let the town see them for what they are.
+        evidence:
+          - {position: fascism.response.answer-with-speech, w: 3}
+        next: arc.surge.07
+      - id: arms
+        text: Draw it at the armed security. Ban the rifles, use the courts, let the hymns go ahead.
+        evidence:
+          - {position: fascism.response.militant-democracy, w: 2}
+        next: arc.surge.07
+      - id: union
+        text: Draw it at the union hall. If the police won't stop them there, the union will.
+        evidence:
+          - {position: fascism.response.confront-in-the-street, w: 3}
+        next: arc.surge.07
+      - id: allowed
+        text: All of it is allowed. People have the right to march, to watch their children's teachers and to guard their land.
+        evidence:
+          - {position: fascism.response.threat-overblown, w: 3}
+        next: arc.surge.07
+
+  - id: arc.surge.07
+    type: explanation
+    title: Election night
+    text: >
+      Election night. Prado wins with 51 percent. In the neighborhood where your office enrolled the most
+      families this year, he wins 58. Your phone fills with messages asking what went wrong. What made this
+      town do it?
+    why: This asks how you explain why a town chooses a movement like Prado's, and what kind of cause you reach for.
+    premises:
+      - id: nothing-wrong
+        text: The premise that anything went wrong. The town voted.
+        evidence: [{position: fascism.nature.empty-insult, w: 2}]
+    options:
+      - id: squeeze
+        text: People caught between the bank and the poor reached for someone below them to blame.
+        cause: structures
+        evidence:
+          - {position: fascism.nature.petty-bourgeois-mass-movement, w: 2}
+          - {position: culture.war.manufactured-diversion, w: 1}
+      - id: power
+        text: We gave them benefits and never gave them power. Nobody organized them, so he did.
+        cause: interests
+        evidence:
+          - {position: cs.clean-house.organize-ourselves, w: 2}
+          - {position: fascism.response.remove-the-conditions, w: 1}
+      - id: faith
+        text: They were told for years their faith was backward. They answered.
+        cause: culture
+        evidence:
+          - {position: culture.war.civilizational-struggle, w: 2}
+          - {position: cs.clean-house.god-fearing-rule, w: 1}
+      - id: house
+        text: They wanted someone to clean house, and we were the house.
+        cause: individuals
+        evidence:
+          - {position: cs.clean-house.tough-leader, w: 2}
+      - id: conservative
+        text: They elected a conservative. That isn't a mystery, and it isn't fascism.
+        cause: ideas
+        evidence:
+          - {position: fascism.nature.empty-insult, w: 3}

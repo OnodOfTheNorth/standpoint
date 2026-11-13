@@ -1,0 +1,377 @@
+id: arc.founder
+title: The Lathe in the Garage
+blurb: Thirty-five years, 140 workers, two offers, and a falling peso.
+role: You are the founder and owner of a metalworking firm.
+place: An industrial park outside Rosario, Argentina
+start: arc.founder.01
+escalation: arc.founder.05
+pressure: [arc.founder.02a, arc.founder.02b]
+tags: [economy, strategy, history]
+nodes:
+  - id: arc.founder.01
+    type: scene
+    title: Two offers
+    text: >
+      Rosario. You started Metalúrgica Iturbe in 1989 with one lathe in a garage. Now 140 people make parts
+      for seed drills and harvesters, and you are sixty-six. Two offers sit on your desk: a São Paulo
+      investment fund, nine million dollars; your own workers, as a cooperative, five and a half million,
+      paid over ten years out of profits. Your daughter runs sales.
+    why: This asks who you think should own a productive firm, and what an owner owes when he lets go of one.
+    premises:
+      - id: just-business
+        text: The premise that this is a moral question. It's a sale. Take the best price.
+        evidence: [{position: firm.ownership.private-investors, w: 2}]
+    options:
+      - id: fund
+        text: Sell to the fund. Nine million is what the market says thirty-five years were worth.
+        set: {sale: fund}
+        evidence:
+          - {position: firm.ownership.private-investors, w: 3}
+          - {position: profit.legitimacy.earned-reward, w: 1}
+        consequence: The fund sends a team for "due diligence." They bring their own coffee.
+        next: arc.founder.02b
+      - id: coop
+        text: Sell to the workers. They built it with you.
+        set: {sale: coop}
+        evidence:
+          - {position: firm.ownership.worker-cooperatives, w: 3}
+        probe:
+          ask: What makes the workers the right buyers, at a discount?
+          options:
+            - text: Half the value of this firm is their work. I'd be selling them what's partly theirs.
+              cause: structures
+              evidence: [{position: profit.legitimacy.unpaid-labor, w: 2}]
+            - text: A firm is a family. You don't sell family to strangers from São Paulo.
+              cause: culture
+              evidence: [{position: workplace.conflict.mutual-duties, w: 2}]
+            - text: People work harder for what they own. It's the best business plan on the table.
+              cause: interests
+              evidence: [{position: work.future.cooperatives, w: 2}]
+        consequence: The foreman, Chiche, who has been here since the garage, has to sit down.
+        next: arc.founder.02a
+      - id: family
+        text: Neither. The firm goes to your daughter. That's what you built it for.
+        set: {sale: family}
+        evidence:
+          - {position: property.inheritance.family-right, w: 3}
+          - {position: firm.ownership.small-proprietors, w: 1}
+        consequence: Your daughter says she'd like a say in that. The fund says its offer stands a week.
+        next: arc.founder.02a
+      - id: mixed
+        text: Sell to the fund, on condition that workers keep two seats on the board.
+        set: {sale: fund}
+        evidence:
+          - {position: firm.ownership.codetermination, w: 3}
+        consequence: The fund agrees to "discuss governance" after closing. Its lawyer smiles a great deal.
+        next: arc.founder.02b
+
+  - id: arc.founder.02a
+    type: pressure
+    title: Eleven million
+    tests: firm.ownership.worker-cooperatives
+    text: >
+      Before you can announce anything, the fund calls back: eleven million dollars, cash, if you sign by
+      Friday. Your accountant does the arithmetic. The cooperative's offer is worth half that, paid over ten
+      years, if the firm survives the next three Argentine crises. Your wife's pension is the firm.
+    why: This sets your own retirement against what you said about who should own the firm.
+    options:
+      - id: hold
+        text: Turn the fund down. You gave the workers your word.
+        pressure: principle
+        cost: You sell the flat in Mar del Plata. Your wife does not entirely forgive the arithmetic.
+        set: {sale: coop}
+        evidence:
+          - {position: firm.ownership.worker-cooperatives, w: 2}
+          - {position: workplace.conflict.mutual-duties, w: 1}
+        next: arc.founder.03
+      - id: take
+        text: Take the eleven million. Thirty-five years of risk were yours.
+        pressure: interest
+        cost: The workers read it in the Rosario paper. Chiche returns his retirement watch.
+        set: {sale: fund}
+        evidence:
+          - {position: profit.legitimacy.earned-reward, w: 2}
+          - {position: firm.ownership.private-investors, w: 1}
+        next: arc.founder.03
+      - id: split
+        text: Sell seventy percent to the fund, thirty to the workers, with two board seats.
+        pressure: mixed
+        cost: The fund cuts its price to seven million. The cooperative calls its share a consolation prize.
+        set: {sale: fund}
+        evidence:
+          - {position: firm.ownership.codetermination, w: 3}
+        next: arc.founder.03
+      - id: daughter
+        text: Turn them both down. The firm stays in the family.
+        pressure: mixed
+        cost: Your daughter inherits a firm and 140 people who know they were the second offer.
+        set: {sale: family}
+        evidence:
+          - {position: property.inheritance.family-right, w: 2}
+          - {position: firm.ownership.small-proprietors, w: 1}
+        next: arc.founder.03
+
+  - id: arc.founder.02b
+    type: pressure
+    title: The list
+    tests: workplace.conflict.mutual-duties
+    text: >
+      The fund's condition for closing: forty "redundancies" announced before the sale, over your signature,
+      so the layoffs are yours and not theirs. The fund will pay the legal severance, a month per year
+      served. Chiche, your foreman since the garage, is on the list.
+    why: This sets the deal you want against what you believe an owner owes the people who worked for him.
+    options:
+      - id: sign
+        text: Sign. A firm that can't shed forty people won't keep the other hundred.
+        pressure: interest
+        cost: Chiche finds out from the noticeboard, like everyone else.
+        set: {sale: fund}
+        evidence:
+          - {position: firm.ownership.private-investors, w: 2}
+          - {position: workplace.conflict.mutual-duties, w: -1}
+        next: arc.founder.03
+      - id: refuse
+        text: Refuse and let the deal die. Those forty are not a line in a spreadsheet.
+        pressure: principle
+        cost: The fund walks. Your retirement is the firm again, and the peso is falling.
+        set: {sale: family}
+        evidence:
+          - {position: workplace.conflict.mutual-duties, w: 3}
+        next: arc.founder.03
+      - id: swap
+        text: Take Chiche off the list. Let them pick someone younger.
+        pressure: mixed
+        cost: They pick a twenty-six-year-old with a new baby. Chiche knows why he was spared.
+        set: {sale: fund}
+        evidence:
+          - {position: workplace.conflict.mutual-duties, w: 1}
+          - {position: labor.division.skill-and-effort, w: 1}
+        next: arc.founder.03
+      - id: tell
+        text: Sign, but tell all 140 people today, before the fund does.
+        pressure: mixed
+        cost: The fund cuts a million from the price for "disruption."
+        set: {sale: fund}
+        evidence:
+          - {position: profit.legitimacy.earned-reward, w: 1}
+          - {position: workplace.conflict.mutual-duties, w: 1}
+        next: arc.founder.03
+
+  - id: arc.founder.03
+    type: voices
+    title: The asado
+    text: >
+      Your farewell asado, in the yard behind the press shop. Late, over the last of the wine, two men who
+      have known you thirty years start arguing about who built the firm. Who's right?
+    voices:
+      - {name: "Ostolaza, your accountant", says: "He mortgaged his house twice. Without him, those 140 would be working for someone else, or for nobody."}
+      - {name: "Chiche, the foreman", says: "He had a lathe. Thirty-five years of us made it a company. The millions are our work with his name on the sign."}
+    why: This asks where you think a firm's value and its profit come from.
+    options:
+      - id: ostolaza
+        text: Ostolaza. Risk and judgment built it. Labor was paid every month.
+        cause: individuals
+        evidence:
+          - {position: profit.legitimacy.earned-reward, w: 3}
+        next: arc.founder.04
+      - id: chiche
+        text: Chiche. The value came off the shop floor. The owner kept the part he didn't pay for.
+        cause: structures
+        evidence:
+          - {position: profit.legitimacy.unpaid-labor, w: 3}
+        next: arc.founder.04
+      - id: both
+        text: Both miss it. Owner and workers made it together and owe each other. Arguing about shares is how firms die.
+        cause: culture
+        evidence:
+          - {position: workplace.conflict.mutual-duties, w: 3}
+        next: arc.founder.04
+      - id: tariffs
+        text: Both miss it. A firm like this survived because the state kept Brazilian parts out, when it bothered to.
+        cause: structures
+        evidence:
+          - {position: firm.ownership.state, w: 1}
+          - {position: hist.neoliberal-turn.betrayal-of-the-nation, w: 2}
+        next: arc.founder.04
+
+  - id: arc.founder.04
+    type: verdict
+    title: "2001"
+    text: >
+      When Argentina's economy collapsed in 2001, owners abandoned hundreds of factories. Workers occupied
+      them under the slogan "occupy, resist, produce," and many still run them as cooperatives. Some
+      provinces expropriated plants for the workers; some courts evicted them. You kept your firm open that
+      year by not paying yourself. Where would you have stood?
+    why: This asks what you think caused the collapse, and who had a right to the factories it left behind.
+    conditions:
+      - id: debts
+        text: It depends whether the owner fled with the money or was ruined himself.
+        evidence: [{position: property.private.natural-right, w: 1}]
+    options:
+      - id: workers
+        text: With the workers. A factory its owner abandons belongs to the people who keep it running.
+        evidence:
+          - {position: firm.ownership.worker-cooperatives, w: 2}
+          - {position: change.means.strike-and-direct-action, w: 2}
+        next: arc.founder.05
+      - id: courts
+        text: With the courts. Debts and titles don't vanish in a crisis, or the next crisis is worse.
+        evidence:
+          - {position: property.private.natural-right, w: 2}
+          - {position: change.means.law-and-courts, w: 1}
+        next: arc.founder.05
+      - id: banks
+        text: The collapse was a decade of selling the country to foreign creditors. The occupations were the bill.
+        evidence:
+          - {position: hist.neoliberal-turn.debt-discipline-of-the-south, w: 3}
+        next: arc.founder.05
+      - id: state
+        text: The collapse was politicians pegging the peso and spending borrowed dollars. Blame the state, not the owners.
+        evidence:
+          - {position: hist.neoliberal-turn.crony-corporatism, w: 2}
+          - {position: property.private.natural-right, w: 1}
+        next: arc.founder.05
+
+  - id: arc.founder.05
+    type: escalation
+    title: Gianotti's
+    recap: In an industrial park in Argentina, the peso is falling and factory owners are closing overnight.
+    text: >
+      The peso loses a third in a month. Next door, Fundición Gianotti's owner closes overnight owing four
+      months' wages. His forty workers occupy the plant and keep the furnaces lit. A judge orders eviction
+      for Monday. The industrial chamber asks you to sign a letter backing the police. The occupiers ask you
+      to keep buying their castings. You were Gianotti's biggest customer.
+    why: The middle option is gone. This records which way you break when owners and occupying workers collide.
+    options:
+      - id: buy
+        text: Keep buying their castings, and don't sign.
+        side: {axis: class, dir: dispossessed}
+        evidence:
+          - {position: firm.ownership.worker-cooperatives, w: 2}
+          - {position: change.means.strike-and-direct-action, w: 1}
+        consequence: Your invoice is read aloud in court as proof the plant is a going concern. The eviction is suspended.
+        next:
+          - {if: {flag: {key: sale, eq: coop}}, to: arc.founder.06a}
+          - {to: arc.founder.06b}
+      - id: sign
+        text: Sign the letter. If occupations work at Gianotti's, they'll work at yours.
+        side: {axis: class, dir: order}
+        evidence:
+          - {position: property.private.natural-right, w: 3}
+        consequence: Police clear the foundry on Monday. Your own shop floor is very quiet on Tuesday.
+        next:
+          - {if: {flag: {key: sale, eq: coop}}, to: arc.founder.06a}
+          - {to: arc.founder.06b}
+      - id: bid
+        text: Sign, and bid for Gianotti's furnaces at the auction.
+        side: {axis: class, dir: order}
+        evidence:
+          - {position: firm.ownership.private-investors, w: 2}
+          - {position: property.private.natural-right, w: 1}
+        consequence: You get the furnaces for a fifth of their value. Three of Gianotti's men apply for jobs with you.
+        next:
+          - {if: {flag: {key: sale, eq: coop}}, to: arc.founder.06a}
+          - {to: arc.founder.06b}
+      - id: out
+        text: Don't sign, stop buying. It's between Gianotti, his workers and the judge.
+        side: {axis: class, dir: neither}
+        evidence:
+          - {position: change.means.law-and-courts, w: 2}
+        consequence: Without your orders the occupiers can't make payroll. The judge rules on Monday anyway.
+        next:
+          - {if: {flag: {key: sale, eq: coop}}, to: arc.founder.06a}
+          - {to: arc.founder.06b}
+
+  - id: arc.founder.06a
+    type: tradeoff
+    title: Equal pay
+    text: >
+      Year three of the cooperative. You sit in on assemblies as an adviser, unpaid and mostly ignored. This
+      week they vote to pay everyone the same, sweeper to engineer. Both engineers have offers in Córdoba at
+      twice the money. The assembly asks what you think.
+    why: This sets equality inside the firm against keeping the people whose skills are scarce.
+    options:
+      - id: equal
+        text: Hold the line. A cooperative that pays like a boss becomes one.
+        evidence:
+          - {position: firm.ownership.worker-cooperatives, w: 2}
+          - {position: labor.division.skill-and-effort, w: -2}
+        next: arc.founder.07
+      - id: skill
+        text: Pay for skill. Equal pay for unequal work is how you lose the engineers and then the firm.
+        evidence:
+          - {position: labor.division.skill-and-effort, w: 3}
+        next: arc.founder.07
+      - id: hire
+        text: Let the engineers go, and hire new ones as employees at market rates.
+        evidence:
+          - {position: labor.division.skill-and-effort, w: 1}
+          - {position: profit.legitimacy.earned-reward, w: 1}
+        next: arc.founder.07
+
+  - id: arc.founder.06b
+    type: scene
+    title: The foundry
+    text: >
+      Three years on, with the peso down by half again, whoever runs Iturbe now proposes closing its own
+      foundry and buying castings from Brazil: fifty-two jobs. The foundry workers propose running it as a
+      cooperative and selling to the firm. The building is still in your name.
+    why: This asks what you do with property you still hold when its workers ask for it.
+    options:
+      - id: lease
+        text: Lease the foundry building to the cooperative at a token rent.
+        evidence:
+          - {position: firm.ownership.worker-cooperatives, w: 3}
+        next: arc.founder.07
+      - id: close
+        text: Close it. Brazilian castings are cheaper, and sentiment doesn't pay the gas bill.
+        evidence:
+          - {position: firm.ownership.private-investors, w: 2}
+          - {position: profit.legitimacy.earned-reward, w: 1}
+        next: arc.founder.07
+      - id: province
+        text: Ask the province to buy the foundry and run it. Industry like this is a national asset.
+        evidence:
+          - {position: firm.ownership.state, w: 3}
+        next: arc.founder.07
+      - id: cut
+        text: Propose everyone take a twenty percent pay cut and keep the foundry. Share the pain.
+        evidence:
+          - {position: workplace.conflict.mutual-duties, w: 2}
+        next: arc.founder.07
+
+  - id: arc.founder.07
+    type: reason
+    title: The sign
+    text: >
+      Your name is still on the sign over the gate, faded. A boy on a bicycle asks if you're Iturbe. You say
+      you used to be. Looking back over thirty-five years, whose firm was it?
+    why: This asks what you think makes something belong to someone, and what kind of cause you reach for.
+    options:
+      - id: mine
+        text: Mine. I took the risk, and I'd do it again.
+        cause: individuals
+        evidence:
+          - {position: profit.legitimacy.earned-reward, w: 2}
+          - {position: property.private.natural-right, w: 1}
+      - id: theirs
+        text: The people who worked in it. My name was on the sign; their hours were in the parts.
+        cause: structures
+        evidence:
+          - {position: profit.legitimacy.unpaid-labor, w: 3}
+      - id: family
+        text: The family's. A firm like that is something you hand down.
+        cause: culture
+        evidence:
+          - {position: property.inheritance.family-right, w: 3}
+      - id: market
+        text: Whoever could pay for it. That's what ownership means.
+        cause: interests
+        evidence:
+          - {position: firm.ownership.private-investors, w: 2}
+      - id: everyone
+        text: Everyone's who depended on it, owner and worker. That was the trouble with selling it.
+        cause: culture
+        evidence:
+          - {position: workplace.conflict.mutual-duties, w: 2}
+          - {position: firm.ownership.codetermination, w: 1}

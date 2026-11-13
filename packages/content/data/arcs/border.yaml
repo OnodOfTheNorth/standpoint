@@ -1,0 +1,382 @@
+id: arc.border
+title: The Breakwater
+blurb: An expired work card, twelve boys on a breakwater, and a city both countries call their own.
+role: You are a Guardia Civil officer at a border crossing, born in the city, your mother from across the line.
+place: The Tarajal crossing at Ceuta, Spain's city on the Moroccan coast
+start: arc.border.01
+escalation: arc.border.04
+pressure: [arc.border.02a]
+tags: [nation, world, state]
+nodes:
+  - id: arc.border.01
+    type: scene
+    title: The card
+    text: >
+      Ceuta. You check papers at the Tarajal crossing; your mother grew up across the line in Fnideq. A
+      woman from her street hands you her nephew's work card, expired nine days ago. A bakery on the Spanish
+      side is holding his job until noon. The queue behind her is four hundred long.
+    why: This asks what you think a border is for, and whether its rules bind you when you know the face in front of you.
+    premises:
+      - id: no-border
+        text: The premise that Spain's border belongs in this town at all.
+        evidence:
+          - {position: nationalism.kinds.oppressed-oppressor, w: 1}
+          - {position: intl.sovereignty.nations-set-own-course, w: 1}
+    options:
+      - id: wave
+        text: Wave him through. Nine days, a job, a family. The rule wasn't written for him.
+        set: {bent: true}
+        evidence:
+          - {position: borders.migration.right-to-stay, w: 2}
+        probe:
+          ask: What makes the rule not apply to him?
+          options:
+            - text: He's a neighbor. You look after the people at your door.
+              cause: culture
+              evidence: [{position: cs.own-first.the-stranger-too, w: 2}]
+            - text: A line Spain drew through one town isn't a law I owe much to.
+              cause: structures
+              evidence: [{position: nationalism.kinds.oppressed-oppressor, w: 2}]
+            - text: People should be able to work where the work is.
+              cause: interests
+              evidence: [{position: borders.migration.open-borders, w: 2}]
+        consequence: Your sergeant was at the window. He says nothing, which is worse.
+        next: arc.border.02a
+      - id: rule
+        text: Refuse. The rule is the rule, or it's nothing.
+        evidence:
+          - {position: law.nature.rule-of-law, w: 3}
+        consequence: She calls you a word your mother used for people who forgot where they came from.
+        next: arc.border.02b
+      - id: legal
+        text: Refuse, and tell her exactly how to renew it. Come legally and you're welcome.
+        evidence:
+          - {position: borders.migration.legal-and-contributing, w: 3}
+        consequence: The renewal office has a six-week wait. The bakery doesn't.
+        next: arc.border.02b
+      - id: bakery
+        text: Refuse, and report the bakery. Bosses who hire on expired cards drag down every wage in the city.
+        evidence:
+          - {position: borders.migration.restrict-for-workers, w: 3}
+        consequence: The bakery is fined €6,000. It hires its next man off the books.
+        next: arc.border.02b
+      - id: full
+        text: Refuse. A city of 85,000 can't take everyone on the other side who wants in.
+        evidence:
+          - {position: borders.migration.restrict-national, w: 2}
+          - {position: borders.migration.democratic-control, w: 1}
+        consequence: The queue moves. Nobody behind her looks at you.
+        next: arc.border.02b
+
+  - id: arc.border.02a
+    type: pressure
+    title: Before the count
+    tests: law.nature.rule-of-law
+    text: >
+      Three weeks later, 5 a.m. Twelve boys are on the breakwater, on Spanish soil. The law says register
+      them: asylum claims for the adults, the reception centre for minors. Your sergeant says walk them back
+      through the gate before anyone counts. He mentions the card. He mentions your promotion board in March.
+    why: This puts your career against a rule you may or may not believe in.
+    options:
+      - id: register
+        text: Register all twelve. The law binds the Guardia Civil too.
+        pressure: principle
+        cost: The sergeant files a report on the card. Your promotion is deferred a year.
+        evidence:
+          - {position: law.nature.rule-of-law, w: 2}
+          - {position: borders.migration.right-to-stay, w: 1}
+        next: arc.border.03
+      - id: walk
+        text: Walk them back. Morocco sent them; Morocco can have them.
+        pressure: interest
+        cost: One of them is fifteen. You will see him on the breakwater again in June.
+        evidence:
+          - {position: law.nature.rule-of-law, w: -2}
+          - {position: police.role.order-maintenance, w: 1}
+        next: arc.border.03
+      - id: youngest
+        text: Register the three who look youngest. Walk the rest.
+        pressure: mixed
+        cost: The sergeant drops the card. You decide by torchlight who looks fifteen.
+        evidence:
+          - {position: borders.migration.democratic-control, w: 1}
+        next: arc.border.03
+
+  - id: arc.border.02b
+    type: explanation
+    title: The queue
+    text: >
+      Four hundred people a morning, and more at the fence at night. Your cousin in Madrid says they come
+      for the benefits. Your mother says they come because Fnideq has had nothing since the porter trade was
+      shut. Why do they come?
+    why: This asks what kind of cause you reach for when you explain migration.
+    options:
+      - id: choice
+        text: Wages here are ten times higher. People move to better their lives. So would you.
+        cause: interests
+        evidence:
+          - {position: migration.cause.individual-choice, w: 3}
+        next: arc.border.03
+      - id: taken
+        text: Europe takes the fish, the phosphate and the tomatoes and leaves the boys. They follow what was taken.
+        cause: structures
+        evidence:
+          - {position: migration.cause.drain, w: 3}
+          - {position: imperialism.nature.unequal-exchange-drain, w: 1}
+        next: arc.border.03
+      - id: demand
+        text: Spanish farms and kitchens need them and pay them half. The pull is on this side.
+        cause: interests
+        evidence:
+          - {position: migration.cause.employer-demand, w: 3}
+        next: arc.border.03
+      - id: benefits
+        text: The benefits. A minor who arrives gets a bed and a school, and the word gets round.
+        cause: culture
+        evidence:
+          - {position: migration.cause.welfare-magnet, w: 3}
+        next: arc.border.03
+
+  - id: arc.border.03
+    type: voices
+    title: Two cousins
+    text: Your two cousins at a café on the Paseo, arguing again about whose city this is. Who's right?
+    voices:
+      - {name: Javier, says: "Ceuta has been Spanish since 1668. Its people vote, every time, to stay Spanish. That settles it."}
+      - {name: Karim, says: "It sits on Moroccan soil and answers to Madrid. Spain left the rest of Morocco and kept the two harbors. Call that what it is."}
+    why: This asks whose claim on the city you recognize, and what you think the border is really doing.
+    options:
+      - id: javier
+        text: Javier. The people who live here decide what it is.
+        cause: ideas
+        evidence:
+          - {position: borders.migration.democratic-control, w: 2}
+        next: arc.border.04
+      - id: more
+        text: Javier, and more. Spain built the hospitals, schools and courts on that coast.
+        cause: ideas
+        evidence:
+          - {position: imperialism.nature.civilizing-order, w: 2}
+        next: arc.border.04
+      - id: karim
+        text: Karim. A harbor kept by a former colonial power is still a colony.
+        cause: structures
+        evidence:
+          - {position: nationalism.kinds.oppressed-oppressor, w: 2}
+          - {position: intl.sovereignty.nations-set-own-course, w: 1}
+        next: arc.border.04
+      - id: filter
+        text: Both miss it. Europe keeps the city as a filter for cheap labor. The flags are decoration.
+        cause: structures
+        evidence:
+          - {position: imperialism.nature.unequal-exchange-drain, w: 2}
+        next: arc.border.04
+
+  - id: arc.border.04
+    type: escalation
+    title: The beach
+    recap: At Ceuta, Spain's city on the Moroccan coast, the border is a fence, a breakwater and a long queue.
+    text: >
+      May. Moroccan police step back from their side. By noon eight thousand people, fifteen hundred of
+      them minors, have swum or walked round the breakwater into Ceuta. Madrid sends the army. Brussels calls
+      it an attack on Europe's border; Rabat calls it the result of Spain's choices. You are on the beach in
+      uniform. An officer hands you a baton.
+    why: The middle option is gone. This records which way you break when the rich country's border meets the poor country's people.
+    options:
+      - id: push
+        text: Hold the line and push them back into the water. A border that can be swum is no border.
+        side: {axis: empire, dir: order}
+        evidence:
+          - {position: police.role.order-maintenance, w: 2}
+          - {position: borders.migration.restrict-national, w: 1}
+        consequence: Six thousand are returned within two days, most of them through the gate you work.
+        next: arc.border.05b
+      - id: weapon
+        text: Hold the line. Rabat is using its own children as a weapon against Spain.
+        side: {axis: empire, dir: order}
+        evidence:
+          - {position: borders.migration.restrict-national, w: 2}
+          - {position: intl.sovereignty.nations-set-own-course, w: -1}
+        consequence: Madrid doubles the fence budget and sends the bill to Brussels.
+        next: arc.border.05b
+      - id: pull
+        text: Drop the baton and pull the children out of the water.
+        side: {axis: empire, dir: dispossessed}
+        set: {broke: true}
+        evidence:
+          - {position: borders.migration.right-to-stay, w: 2}
+        probe:
+          ask: Why the children first?
+          options:
+            - text: Children are children, whoever's border it is.
+              cause: ideas
+              evidence: [{position: cs.own-first.the-stranger-too, w: 2}]
+            - text: Because they have nothing else, and this beach is where Europe ends.
+              cause: structures
+              evidence: [{position: migration.cause.drain, w: 1}, {position: borders.migration.right-to-stay, w: 1}]
+        consequence: A photo of you carrying a boy goes round the world. Your commander has also seen it.
+        next: arc.border.05a
+      - id: aside
+        text: Stand aside. It's their coast too, and the fence is what's out of place.
+        side: {axis: empire, dir: dispossessed}
+        set: {broke: true}
+        evidence:
+          - {position: nationalism.kinds.oppressed-oppressor, w: 2}
+          - {position: intl.sovereignty.nations-set-own-course, w: 1}
+        consequence: Nobody photographs you. Your commander notices anyway.
+        next: arc.border.05a
+      - id: walk-off
+        text: Walk off the beach and hand in the uniform.
+        side: {axis: empire, dir: neither}
+        evidence:
+          - {position: police.role.order-maintenance, w: -1}
+        consequence: You hear the rest from your mother, who heard it from Fnideq.
+        next:
+          - {if: {flag: {key: bent, eq: true}}, to: arc.border.05a}
+          - {to: arc.border.05b}
+
+  - id: arc.border.05a
+    type: tradeoff
+    title: The hearing
+    text: >
+      A disciplinary hearing. The file lists what you did on the beach, and an expired work card from March.
+      Your union rep has a deal: blame an officer since transferred to Melilla, and keep your job and
+      pension. Or tell the tribunal the truth: what you did, and why.
+    why: This sets your livelihood against saying out loud what you did and why you did it.
+    options:
+      - id: truth
+        text: Tell the truth. If refusing was right, I say so in the room.
+        evidence:
+          - {position: law.nature.natural-law, w: 3}
+        consequence: Six months' suspension without pay. Two newspapers print your photo, with different captions.
+        next: arc.border.06
+      - id: deal
+        text: Take the deal. What I did matters more than whose name ends up on it.
+        evidence:
+          - {position: borders.migration.right-to-stay, w: 1}
+          - {position: law.nature.natural-law, w: -1}
+        consequence: You keep your job. The officer in Melilla gets a commendation he did not ask for.
+        next: arc.border.06
+      - id: sorry
+        text: Apologize. I broke an order on a beach in a panic, and orders are what keep everyone alive.
+        evidence:
+          - {position: police.role.order-maintenance, w: 2}
+          - {position: law.nature.rule-of-law, w: 1}
+        consequence: A written warning. The boy in the photo is in a reception centre in Cádiz.
+        next: arc.border.06
+
+  - id: arc.border.05b
+    type: line
+    title: Who stays
+    text: >
+      Of the eight thousand, Madrid will let some stay. Your commander asks the officers who were on the
+      beach to help draw up the list. Where do you draw the line?
+    cases:
+      - Children under fourteen with no family here
+      - Boys of sixteen and seventeen
+      - A Guinean man who fled fighting and has found a lawyer
+      - A Moroccan man of twenty-five with a job offer in Almería
+      - A Moroccan man of twenty-five with nothing but the swim
+    why: This asks who you think has a claim to stay, and on what grounds.
+    premises:
+      - id: not-police
+        text: The premise that officers on a beach should be drawing up the list.
+        evidence: [{position: law.nature.rule-of-law, w: 1}]
+    options:
+      - id: everyone
+        text: Everyone on the list. Anyone who made it across has a life to make.
+        evidence:
+          - {position: borders.migration.open-borders, w: 3}
+        next: arc.border.06
+      - id: law
+        text: The first three. Children and refugees, as the law says. The rest go back.
+        evidence:
+          - {position: borders.migration.democratic-control, w: 2}
+          - {position: law.nature.rule-of-law, w: 1}
+        next: arc.border.06
+      - id: work
+        text: The first four. A job offer is the test of a welcome.
+        evidence:
+          - {position: borders.migration.legal-and-contributing, w: 3}
+        next: arc.border.06
+      - id: youngest
+        text: Only the youngest. Send the rest back, or next spring it's eighty thousand.
+        evidence:
+          - {position: borders.migration.restrict-national, w: 3}
+        next: arc.border.06
+
+  - id: arc.border.06
+    type: verdict
+    title: Annual, 1921
+    text: >
+      1921. In the Rif mountains behind this coast, tribes led by Abd el-Krim rout a Spanish army at Annual
+      and declare a republic. Spain and France return with hundreds of thousands of troops; Spanish aircraft
+      drop mustard gas on Rif villages. By 1926 the republic is gone. Where would you have stood?
+    why: This asks how you judge a colonial war and the people who fought it from both sides.
+    premises:
+      - id: hindsight
+        text: The premise that I should judge 1921 by the standards of today.
+        evidence: [{position: imperialism.nature.civilizing-order, w: 1}]
+    options:
+      - id: rif
+        text: With the Rif. A people may drive out by force an army that came uninvited.
+        evidence:
+          - {position: violence.political.anti-colonial, w: 3}
+        next: arc.border.07
+      - id: spain
+        text: With Spain. The protectorate was signed by treaty and brought roads and order to a lawless coast.
+        evidence:
+          - {position: imperialism.nature.civilizing-order, w: 3}
+        next: arc.border.07
+      - id: carve
+        text: With neither army. Paris and Madrid were carving up Morocco between them, and the Rif paid for both.
+        evidence:
+          - {position: imperialism.nature.inter-imperialist-rivalry, w: 3}
+        next: arc.border.07
+      - id: gas
+        text: With whoever kept the laws of war. Gas on villages damns Spain; it doesn't make every rebel right.
+        evidence:
+          - {position: law.nature.natural-law, w: 2}
+          - {position: violence.political.anti-colonial, w: -1}
+        next: arc.border.07
+
+  - id: arc.border.07
+    type: explanation
+    title: June
+    text: >
+      June. The bakery nephew got a new card; he sells bread to your unit now. The fifteen-year-old is back
+      on the breakwater, taller. Your mother, peeling beans, asks what the border is actually for.
+    why: This asks what kind of cause you reach for when you explain what a border does.
+    options:
+      - id: door
+        text: It's a nation's front door. Every country has one and decides who comes in.
+        cause: ideas
+        evidence:
+          - {position: borders.migration.restrict-national, w: 2}
+          - {position: borders.migration.democratic-control, w: 1}
+      - id: sort
+        text: Sorting labor. Let in what Spain needs at the price it likes, and keep the rest waiting.
+        cause: structures
+        evidence:
+          - {position: migration.cause.employer-demand, w: 2}
+          - {position: imperialism.nature.unequal-exchange-drain, w: 1}
+      - id: order
+        text: Keeping order, so the city works for the people who already live in it.
+        cause: interests
+        evidence:
+          - {position: police.role.order-maintenance, w: 2}
+      - id: africa
+        text: Holding a piece of Africa for Europe. Everything else follows from that.
+        cause: structures
+        evidence:
+          - {position: nationalism.kinds.oppressed-oppressor, w: 2}
+      - id: lines
+        text: Nothing much. People have always crossed lines like this one, and always will.
+        cause: nature
+        evidence:
+          - {position: borders.migration.open-borders, w: 2}
+      - id: stranger
+        text: Testing whether we treat the stranger the way God commands.
+        cause: divine
+        evidence:
+          - {position: cs.own-first.the-stranger-too, w: 2}

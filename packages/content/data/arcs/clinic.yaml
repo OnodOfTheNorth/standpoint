@@ -1,0 +1,414 @@
+id: arc.clinic
+title: The Maternity Wing
+blurb: A fifteen-year contract, a fixed generator, and a delivery that now costs four months' wages.
+role: You are a senior midwife at a state general hospital.
+place: The maternity wing of a state general hospital in Ibadan, Nigeria
+start: arc.clinic.01
+escalation: arc.clinic.04
+pressure: [arc.clinic.02c]
+tags: [economy, state]
+nodes:
+  - id: arc.clinic.01
+    type: scene
+    title: The contract
+    text: >
+      Ibadan. The state signs your hospital's maternity wing over to a private operator for fifteen years.
+      A normal delivery, ₦5,000 last month, will cost ₦120,000. The generator will finally be fixed. Staff
+      are kept "subject to review." You have delivered babies here for fourteen years. The nurses'
+      association meets tonight.
+    why: This asks who you think a hospital should belong to, and what you do when it changes hands.
+    premises:
+      - id: never-free
+        text: "The premise that it was ever free. Patients already paid for gloves, drugs and the cleaner's \"tip\"."
+        evidence: [{position: state.nature.captured, w: 1}]
+    conditions:
+      - id: if-waivers
+        text: It depends whether the poorest women still deliver for free.
+        evidence: [{position: welfare.state.safety-net, w: 2}]
+    options:
+      - id: strike
+        text: Strike, and bring the market women's association in. They're the ones who'll pay.
+        set: {allied: true}
+        evidence:
+          - {position: change.means.strike-and-direct-action, w: 2}
+          - {position: welfare.state.social-citizenship, w: 2}
+        probe:
+          ask: Why bring the market women?
+          options:
+            - text: Their daughters give birth here. It's the same fight.
+              cause: structures
+              evidence: [{position: solidarity.basis.shared-class, w: 2}]
+            - text: Nurses striking alone looks like a fight about our pay.
+              cause: interests
+              evidence: [{position: solidarity.basis.tactical, w: 2}]
+            - text: We are one body. What happens to the poorest woman happens to us.
+              cause: divine
+              evidence: [{position: solidarity.basis.one-body, w: 2}]
+        consequence: The doctors say they'll join, if the demand is their eight months of salary arrears.
+        next: arc.clinic.02a
+      - id: read
+        text: Read the contract first. If they fix the generator and pay on time, this might be the fix.
+        evidence:
+          - {position: firm.ownership.private-investors, w: 1}
+          - {position: welfare.state.safety-net, w: 1}
+        consequence: The contract runs to 340 pages. Page 212 caps free deliveries at forty a month.
+        next: arc.clinic.02b
+      - id: apply
+        text: Apply to the operator. They promise salaries on the 25th of every month.
+        evidence:
+          - {position: change.means.individual-exit, w: 3}
+        consequence: The operator's HR officer calls you back within the hour.
+        next: arc.clinic.02c
+      - id: compete
+        text: The state should never have run a hospital. Let the operator and the mission hospitals compete.
+        evidence:
+          - {position: firm.ownership.private-investors, w: 3}
+        consequence: Your colleagues stop sharing their lunch with you.
+        next: arc.clinic.02b
+      - id: pray
+        text: Pray and keep working. The church hospitals have charged fees for a century, and they're the best in the state.
+        evidence:
+          - {position: welfare.state.subsidiarity, w: 2}
+        consequence: The association meets without you. Someone saves you a seat anyway.
+        next: arc.clinic.02b
+
+  - id: arc.clinic.02a
+    type: tradeoff
+    title: The arrears
+    text: >
+      The doctors' union will strike with you on one demand: their eight months of arrears. Patient fees go
+      "to the bottom of the list, for later." Iya Ramota, who leads the market women, says if fees come off
+      the list her women go home. You have one sheet of paper and a press conference at noon.
+    why: This sets the staff's own pay against the patients who would pay the new fees.
+    options:
+      - id: fees
+        text: Fees stay at the top. A strike for our pay alone is a strike against the patients.
+        set: {allied: true}
+        evidence:
+          - {position: unions.role.class-organ, w: 2}
+          - {position: welfare.state.social-citizenship, w: 2}
+        consequence: The doctors stay out. The market women close forty stalls for the day.
+        next: arc.clinic.03
+      - id: arrears
+        text: Arrears first. Unpaid staff save nobody, and the doctors can shut the whole hospital.
+        set: {allied: false}
+        evidence:
+          - {position: unions.role.bargaining-agent, w: 3}
+        consequence: The doctors walk out. Iya Ramota's women go home. The arrears get paid in three weeks.
+        next: arc.clinic.03
+      - id: both
+        text: Put both on the sheet, side by side, and let the newspapers pick which to print.
+        set: {allied: true}
+        evidence:
+          - {position: solidarity.basis.tactical, w: 2}
+        consequence: The papers print the arrears. The doctors claim the win.
+        next: arc.clinic.03
+
+  - id: arc.clinic.02b
+    type: explanation
+    title: The generator
+    text: >
+      The generator has been broken for three years. Babies are delivered by phone torch. The commissioner
+      says the state has no money and the operator does. Why was the wing left to rot?
+    why: This asks what kind of cause you reach for when a public service decays.
+    options:
+      - id: plan
+        text: Run it down, then sell it cheap. The rot was the plan.
+        cause: interests
+        evidence:
+          - {position: state.nature.captured, w: 2}
+          - {position: firm.ownership.public-municipal, w: 1}
+        next: arc.clinic.03
+      - id: stolen
+        text: The money was voted every year. It was stolen.
+        cause: individuals
+        evidence:
+          - {position: cs.politicians.all-crooks, w: 3}
+        next: arc.clinic.03
+      - id: debt
+        text: A third of the state budget goes on debt, and the lenders set the terms.
+        cause: structures
+        evidence:
+          - {position: intl.institutions.creditor-instruments, w: 3}
+        next: arc.clinic.03
+      - id: nobody-owns
+        text: Nobody owns a state hospital, so nobody cares if the generator works.
+        cause: interests
+        evidence:
+          - {position: firm.ownership.private-investors, w: 2}
+          - {position: welfare.state.coercive-dependency, w: 1}
+        next: arc.clinic.03
+
+  - id: arc.clinic.02c
+    type: pressure
+    title: The list
+    tests: solidarity.basis.shared-class
+    text: >
+      The operator offers you ward manager at ₦420,000 a month, triple your salary, paid on time. First
+      task: of the thirty-one nurses, keep eighteen. They suggest starting with those "near retirement" and
+      those "active in the association." Your sister's school fees are due in two weeks.
+    why: This puts your own pay against the colleagues you would be choosing between.
+    options:
+      - id: refuse
+        text: Refuse. I won't choose which of my colleagues starves.
+        pressure: principle
+        cost: You stay on a state salary eight months in arrears. Your sister misses a term.
+        evidence:
+          - {position: solidarity.basis.shared-class, w: 2}
+        next: arc.clinic.03
+      - id: take
+        text: Take it. Someone has to choose, and better someone who knows the ward.
+        pressure: interest
+        cost: Thirteen nurses go, including the two who trained you.
+        evidence:
+          - {position: change.means.individual-exit, w: 2}
+          - {position: solidarity.basis.shared-class, w: -1}
+        next: arc.clinic.03
+      - id: inside
+        text: Take it, and fight from inside for every name on the list.
+        pressure: mixed
+        cost: You save two more jobs. The eleven who go call you the operator's woman.
+        evidence:
+          - {position: unions.role.bargaining-agent, w: 1}
+          - {position: solidarity.basis.tactical, w: 1}
+        next: arc.clinic.03
+
+  - id: arc.clinic.03
+    type: line
+    title: The waivers
+    text: >
+      The operator agrees to waive fees for "deserving cases," forty a month. The board asks the senior
+      staff to say who deserves. Here are this week's cases. Where do you draw the line?
+    cases:
+      - A woman already in labor at the gate, with no money
+      - A widow with a letter from her ward councillor
+      - A trader who spent her savings on her husband's hospital bill
+      - A woman from Benin Republic with no papers
+      - A woman whose husband earns well and refuses to pay
+    why: This asks what a public health service is for, and who counts as one of its own.
+    premises:
+      - id: not-nurses
+        text: The premise that nurses should be deciding who deserves to give birth safely.
+        evidence: [{position: firm.ownership.public-municipal, w: 1}]
+    options:
+      - id: all
+        text: Everyone on the list. A birth is not a means test.
+        evidence:
+          - {position: welfare.state.social-citizenship, w: 3}
+        next: arc.clinic.04
+      - id: poorest
+        text: The first two. Waivers are for the women with nothing.
+        evidence:
+          - {position: welfare.state.safety-net, w: 3}
+        next: arc.clinic.04
+      - id: ours
+        text: The first three. There are forty places, and the women of this state come first.
+        evidence:
+          - {position: welfare.state.for-our-own, w: 3}
+        next: arc.clinic.04
+      - id: families
+        text: Bill the husband's family and send word to their imam or pastor. Families pay before strangers do.
+        evidence:
+          - {position: welfare.state.subsidiarity, w: 3}
+        next: arc.clinic.04
+      - id: none
+        text: None. Every waiver is paid by the woman in the next bed. Let charities sponsor cases.
+        evidence:
+          - {position: welfare.state.coercive-dependency, w: 2}
+          - {position: firm.ownership.private-investors, w: 1}
+        next: arc.clinic.04
+
+  - id: arc.clinic.04
+    type: escalation
+    title: The gate
+    recap: In Ibadan, Nigeria, a private operator has taken over a public maternity wing and begun charging fees.
+    text: >
+      Saturday, 2 a.m. A woman in labor is turned away for want of a ₦50,000 deposit. She delivers in a
+      taxi; the baby dies. By morning the market women and half the nurses are inside the wing, delivering
+      for free. At noon the operator's security and the police arrive to take it back. The wing has one door.
+    why: The middle option is gone. This records which way you break when need and property collide.
+    options:
+      - id: stay
+        text: Stay inside and keep delivering. Let them carry us out.
+        side: {axis: class, dir: dispossessed}
+        evidence:
+          - {position: emergency.powers.need-overrides-property, w: 3}
+          - {position: change.means.strike-and-direct-action, w: 1}
+        consequence: Security falls back to the gate. Nobody knows yet who blinks first.
+        next:
+          - {if: {flag: {key: allied, eq: true}}, to: arc.clinic.05a}
+          - {to: arc.clinic.05b}
+      - id: keys
+        text: Hand over the keys. An occupied ward puts every patient in it at risk.
+        side: {axis: class, dir: order}
+        evidence:
+          - {position: change.means.strike-and-direct-action, w: -2}
+          - {position: unions.role.bargaining-agent, w: 1}
+        consequence: The wing reopens Monday with a guard at the gate checking receipts.
+        next: arc.clinic.05b
+      - id: home
+        text: Go home. You have children of your own and a job to keep.
+        side: {axis: class, dir: neither}
+        evidence:
+          - {position: change.means.individual-exit, w: 2}
+        consequence: You hear it on the radio. Your name is on a list either way.
+        next: arc.clinic.05b
+      - id: clear
+        text: Help security clear it. The equipment belongs to someone, and a stampede could kill more than the deposit did.
+        side: {axis: class, dir: order}
+        evidence:
+          - {position: firm.ownership.private-investors, w: 2}
+          - {position: emergency.powers.need-overrides-property, w: -2}
+        consequence: The wing is cleared by two o'clock. A video of you holding the door goes round every WhatsApp group in the city.
+        next: arc.clinic.05b
+
+  - id: arc.clinic.05a
+    type: scene
+    title: Nine days
+    text: >
+      The occupation holds for nine days. Forty-one babies are born. Drugs run out on day six; the market
+      women raise ₦2.1 million, and a mosque and two churches send supplies. The governor offers to
+      "review" the contract if you leave by Friday. A young doctor wants to stay until the state buys the wing back.
+    why: This asks what a won fight should turn into, and who should hold what was taken.
+    options:
+      - id: stay
+        text: Stay until it's public again, for good. Reviews are how they bury things.
+        evidence:
+          - {position: emergency.powers.permanent-socialization, w: 3}
+          - {position: firm.ownership.public-municipal, w: 1}
+        consequence: Police cut the water on day eleven. The governor's people stop returning calls.
+        next: arc.clinic.06
+      - id: review
+        text: Take the review and walk out with heads up. Nine days is a win.
+        evidence:
+          - {position: unions.role.bargaining-agent, w: 2}
+        consequence: The review lowers the fee to ₦80,000. It is announced as a victory by everyone.
+        next: arc.clinic.06
+      - id: community
+        text: Neither the state nor the operator. Keep it as a clinic run by the staff and the market women.
+        evidence:
+          - {position: firm.ownership.commons-community, w: 3}
+        consequence: The market women vote yes. Then they ask who pays the electricity.
+        next: arc.clinic.06
+      - id: faith
+        text: Hand it to the mosque and the churches that kept it alive. They will run it honestly.
+        evidence:
+          - {position: welfare.state.subsidiarity, w: 2}
+          - {position: solidarity.basis.one-body, w: 1}
+        consequence: The imam and the bishop agree on everything except who sits at the head of the board.
+        next: arc.clinic.06
+
+  - id: arc.clinic.05b
+    type: voices
+    title: The phone-in
+    text: >
+      Monday. The baby's photo is on every front page, and the wing is back in the operator's hands. Two
+      callers on the morning radio phone-in. Who's right?
+    voices:
+      - {name: "Alhaja, a trader from Mokola", says: "Before, it was free and we died for no generator. Now the generator works and we die for no money. Same death, new receipt."}
+      - {name: "Mr. Okafor, a health economist", says: "Free care that doesn't exist isn't free. Fees fixed the generator. Fix the waivers, not the market."}
+    why: This asks what you think failed, the state, the market, or something under both.
+    options:
+      - id: alhaja
+        text: Alhaja. A birth should never wait on a receipt.
+        cause: structures
+        evidence:
+          - {position: welfare.state.social-citizenship, w: 2}
+        next: arc.clinic.06
+      - id: okafor
+        text: Mr. Okafor. A working ward with fees beats a free one in the dark.
+        cause: interests
+        evidence:
+          - {position: firm.ownership.private-investors, w: 2}
+          - {position: welfare.state.safety-net, w: 1}
+        next: arc.clinic.06
+      - id: lenders
+        text: Both miss it. The money exists. It goes to foreign lenders before it reaches a single ward.
+        cause: structures
+        evidence:
+          - {position: intl.institutions.creditor-instruments, w: 2}
+        next: arc.clinic.06
+      - id: mercy
+        text: Both miss it. A city that lets a woman deliver in a taxi has lost its fear of God.
+        cause: divine
+        evidence:
+          - {position: solidarity.basis.one-body, w: 2}
+        next: arc.clinic.06
+
+  - id: arc.clinic.06
+    type: allocation
+    title: The grant
+    text: >
+      A year later, a federal health grant arrives: ₦2 billion, with a lender's conditions on the use of
+      it. You now sit on the state health board that divides it. Divide ten points.
+    why: This asks how you would actually pay for care, and through whom.
+    premises:
+      - id: conditions
+        text: The premise that we should accept the lender's conditions at all.
+        evidence: [{position: intl.institutions.creditor-instruments, w: 1}]
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: free
+          text: Free maternity care at every state hospital, for every woman
+          evidence: [{position: welfare.state.social-citizenship, w: 1}]
+        - id: buyback
+          text: Buy the wing back from the operator
+          evidence: [{position: firm.ownership.public-municipal, w: 1}]
+        - id: arrears
+          text: Clear every nurse's and doctor's arrears
+          evidence: [{position: unions.role.bargaining-agent, w: 1}]
+        - id: vouchers
+          text: Vouchers poor women can spend at any clinic, private or public
+          evidence: [{position: welfare.state.safety-net, w: 1}]
+        - id: mission
+          text: Grants to church and mosque hospitals already serving the poor
+          evidence: [{position: welfare.state.subsidiarity, w: 1}]
+    options:
+      - id: done
+        text: Done
+        next: arc.clinic.07
+
+  - id: arc.clinic.07
+    type: explanation
+    title: The register
+    text: >
+      You find the delivery registers. The year before the operator: fourteen mothers died. The year
+      after: nine, and twice as many women never came at all. A student midwife asks what the whole
+      fight was about.
+    why: This asks what kind of cause you reach for when you explain what happened to the wing.
+    options:
+      - id: owner
+        text: Whoever owns the hospital decides who it's for. Change the owner or change nothing.
+        cause: structures
+        evidence:
+          - {position: firm.ownership.public-municipal, w: 2}
+          - {position: unions.role.class-organ, w: 1}
+      - id: leaders
+        text: Bad people at the top, then and now. Honest officials would have made either system work.
+        cause: individuals
+        evidence:
+          - {position: state.nature.captured, w: 2}
+          - {position: cs.politicians.all-crooks, w: 1}
+      - id: fewer
+        text: Fewer mothers died. The women who stayed away need help to pay, not a free ward in the dark.
+        cause: interests
+        evidence:
+          - {position: firm.ownership.private-investors, w: 2}
+          - {position: welfare.state.safety-net, w: 1}
+      - id: abroad
+        text: What Ibadan can afford is decided by lenders abroad. That's what the fight was really with.
+        cause: structures
+        evidence:
+          - {position: intl.institutions.creditor-instruments, w: 2}
+      - id: test
+        text: God tested this city's heart, and most of it failed.
+        cause: divine
+        evidence:
+          - {position: solidarity.basis.one-body, w: 2}
+      - id: themselves
+        text: Nothing. The women who could pay went private. The rest stayed home. People look after themselves.
+        cause: chance
+        evidence:
+          - {position: change.means.individual-exit, w: 2}

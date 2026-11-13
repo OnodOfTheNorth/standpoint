@@ -1,0 +1,397 @@
+id: arc.pipeline
+title: Unceded
+blurb: Fourteen million dollars, sixty jobs, a salmon river, and a checkpoint on a forestry road at minus thirty.
+role: You sit on the elected band council of a First Nation.
+place: The territory of a First Nation in northern British Columbia, Canada
+start: arc.pipeline.01
+escalation: arc.pipeline.05
+pressure: [arc.pipeline.04]
+tags: [nation, ecology, state, economy]
+nodes:
+  - id: arc.pipeline.01
+    type: scene
+    title: The offer
+    text: >
+      Your nation has nineteen hundred members, a boil-water advisory eleven years old, and a housing list
+      longer than the reserve. A gas company offers fourteen million dollars over ten years, sixty jobs and a
+      training center to run a pipeline across the territory. The hereditary chiefs say the land was never
+      ceded and the answer is no. Council votes tomorrow.
+    why: This asks who you think has authority over this land, and what the land is for.
+    premises:
+      - id: one-law
+        text: The premise that there are two authorities here. There is one country and one law.
+        evidence: [{position: indigenous.sovereignty.equal-citizenship, w: 2}]
+    conditions:
+      - id: members
+        text: It depends what the members want, if anyone asks them.
+        evidence: [{position: indigenous.sovereignty.within-state-rights, w: 1}]
+    options:
+      - id: sign
+        text: Vote yes. Clean water and sixty paychecks are not a small thing to refuse.
+        set: {stance: sign}
+        evidence:
+          - {position: indigenous.sovereignty.within-state-rights, w: 2}
+          - {position: nature.value.for-human-use, w: 1}
+        consequence: The motion passes five to two. The chiefs' spokesman calls the council "Ottawa's office on our land."
+        next: arc.pipeline.02
+      - id: equity
+        text: Vote yes, but for a stake, not a payment. The nation should own a share of the pipe.
+        set: {stance: sign}
+        evidence:
+          - {position: firm.ownership.commons-community, w: 2}
+          - {position: indigenous.sovereignty.private-title, w: 1}
+        probe:
+          ask: What makes ownership better than a payment?
+          options:
+            - text: Owners get a say over the route and the risk. Payees get a cheque.
+              cause: structures
+              evidence: [{position: firm.ownership.commons-community, w: 2}]
+            - text: It's how every other community in this country got rich.
+              cause: interests
+              evidence: [{position: indigenous.sovereignty.private-title, w: 2}]
+            - text: It's better money. That's all.
+              cause: interests
+              evidence: [{position: nature.value.for-human-use, w: 1}]
+        consequence: The company's lawyers ask for a week. The chiefs ask why a stake in the pipe is different from a payment for it.
+        next: arc.pipeline.02
+      - id: chiefs
+        text: Vote no. The council was made by the Indian Act. The land answers to the hereditary houses.
+        set: {stance: refuse}
+        evidence:
+          - {position: indigenous.sovereignty.inherent-nationhood, w: 3}
+        consequence: The motion fails four to three. The company's community liaison sends flowers to the band office anyway.
+        next: arc.pipeline.02
+      - id: relative
+        text: Vote no. The land is not ours to sell. We belong to it.
+        set: {stance: refuse}
+        evidence:
+          - {position: nature.value.kin-and-relation, w: 3}
+          - {position: property.land.relational, w: 2}
+        consequence: The motion fails. Somebody tapes your speech and it travels further than you expected.
+        next: arc.pipeline.02
+
+  - id: arc.pipeline.02
+    type: voices
+    title: Kitchen table
+    text: >
+      Sunday dinner at your aunt's. Nobody passes the potatoes for a while.
+    voices:
+      - {name: Your aunt, says: "Our law says the house groups decide for the land. That council is a creature of Ottawa. You sit on it, so you know."}
+      - {name: Your cousin, says: "The chiefs don't make payroll. I've got two kids and a truck loan. These are the first good jobs up here in twenty years."}
+    why: This asks what kind of authority you think counts over this land, and whether jobs can settle it.
+    options:
+      - id: aunt
+        text: Your aunt.
+        cause: ideas
+        evidence:
+          - {position: indigenous.sovereignty.inherent-nationhood, w: 3}
+        next: [{if: {flag: {key: stance, eq: sign}}, to: arc.pipeline.03a}, {to: arc.pipeline.03b}]
+      - id: cousin
+        text: Your cousin.
+        cause: interests
+        evidence:
+          - {position: indigenous.sovereignty.within-state-rights, w: 1}
+          - {position: nature.value.for-human-use, w: 2}
+        next: [{if: {flag: {key: stance, eq: sign}}, to: arc.pipeline.03a}, {to: arc.pipeline.03b}]
+      - id: crumbs
+        text: Both miss it. This was set up so we'd fight each other over crumbs from our own land.
+        cause: structures
+        evidence:
+          - {position: settler.colonialism.ongoing-structure, w: 3}
+        next: [{if: {flag: {key: stance, eq: sign}}, to: arc.pipeline.03a}, {to: arc.pipeline.03b}]
+      - id: citizens
+        text: Both miss it. We're Canadians. One law for everyone, and stop pretending otherwise.
+        cause: ideas
+        evidence:
+          - {position: indigenous.sovereignty.equal-citizenship, w: 3}
+        next: [{if: {flag: {key: stance, eq: sign}}, to: arc.pipeline.03a}, {to: arc.pipeline.03b}]
+
+  - id: arc.pipeline.03a
+    type: tradeoff
+    title: The crossing
+    text: >
+      The company's route crosses the river two kilometres above the spawning beds. Rerouting would cost
+      them eight months, and they would take four million off the agreement to pay for it. The elders who
+      fish there have not been asked. The company would like an answer by the end of the week.
+    why: This sets money the nation needs against a river it has always lived from.
+    conditions:
+      - id: risk
+        text: It depends what an independent engineer says about the risk.
+        evidence: [{position: law.nature.rule-of-law, w: 1}]
+    options:
+      - id: route
+        text: Keep the route and the four million. Pipes cross rivers everywhere.
+        evidence:
+          - {position: nature.value.for-human-use, w: 3}
+        next: arc.pipeline.04
+      - id: reroute
+        text: Reroute and take less. The salmon were here before the money and will be after.
+        evidence:
+          - {position: nature.value.kin-and-relation, w: 2}
+        next: arc.pipeline.04
+      - id: elders
+        text: Let the hereditary chiefs and the fishing families decide this stretch. It's their law.
+        evidence:
+          - {position: indigenous.sovereignty.inherent-nationhood, w: 2}
+        next: arc.pipeline.04
+      - id: monitor
+        text: Keep the route, but the nation runs the monitoring and holds the shut-off valve.
+        evidence:
+          - {position: firm.ownership.commons-community, w: 2}
+          - {position: indigenous.sovereignty.within-state-rights, w: 1}
+        next: arc.pipeline.04
+
+  - id: arc.pipeline.03b
+    type: line
+    title: What the land allows
+    text: >
+      After the no vote, a journalist asks whether your nation is against all development. You start to
+      answer and realize you have never drawn the line out loud. Here is a list of things people have proposed
+      for the territory. Where do you draw it?
+    cases:
+      - A trapline cabin
+      - A logging road
+      - A small river hydro plant owned by the nation
+      - A wind farm owned by a utility, paying royalties
+      - A gas pipeline with an equity stake for the nation
+      - An open-pit copper mine
+    why: This asks what you think the land may be used for, and who should decide.
+    premises:
+      - id: wrong-list
+        text: The premise that the question is which project. The question is who holds title.
+        evidence: [{position: settler.colonialism.land-back, w: 2}]
+    options:
+      - id: cabin
+        text: After the cabin. The territory is not for extraction, green or otherwise.
+        evidence:
+          - {position: nature.value.kin-and-relation, w: 2}
+          - {position: indigenous.sovereignty.resurgence, w: 2}
+        next: arc.pipeline.04
+      - id: hydro
+        text: After the hydro plant. Our land, our project, our power.
+        evidence:
+          - {position: energy.transition.community-owned, w: 3}
+          - {position: indigenous.sovereignty.inherent-nationhood, w: 1}
+        next: arc.pipeline.04
+      - id: pipeline
+        text: After the pipeline. With consent and a fair share, almost anything. Not the mine.
+        evidence:
+          - {position: indigenous.sovereignty.within-state-rights, w: 2}
+        next: arc.pipeline.04
+      - id: all
+        text: No line. Judge each one on the money and the jobs, like any town would.
+        evidence:
+          - {position: indigenous.sovereignty.private-title, w: 2}
+          - {position: nature.value.for-human-use, w: 1}
+        next: arc.pipeline.04
+
+  - id: arc.pipeline.04
+    type: pressure
+    title: The motion
+    tests: indigenous.sovereignty.inherent-nationhood
+    text: >
+      The hereditary chiefs ask the council to pass a motion declaring it has no authority over unceded land.
+      If it passes, the company says every agreement with the band is void. That includes the camp job your
+      son starts Monday at forty-two dollars an hour, and the program that pays half your council stipend. You
+      are the deciding vote.
+    why: This sets a principle about who governs the land against your son's wage and your own.
+    options:
+      - id: yes
+        text: Vote yes. It's the truth, whatever it costs.
+        pressure: principle
+        cost: Your son loses ninety thousand a year before he starts. Your stipend is halved. The band loses fourteen million.
+        evidence:
+          - {position: indigenous.sovereignty.inherent-nationhood, w: 3}
+        next: arc.pipeline.05
+      - id: no
+        text: Vote no. The council was elected, and people voted for these jobs.
+        pressure: interest
+        cost: Your aunt's house will not seat you at the next feast. Half the reserve hears why.
+        evidence:
+          - {position: indigenous.sovereignty.within-state-rights, w: 2}
+        next: arc.pipeline.05
+      - id: abstain
+        text: Abstain. The motion fails by one.
+        pressure: mixed
+        cost: Your son keeps the job. Both sides know exactly what you did.
+        evidence:
+          - {position: indigenous.sovereignty.within-state-rights, w: 1}
+        next: arc.pipeline.05
+      - id: joint
+        text: Amend it. Council handles the money; nothing on unceded land without the chiefs' consent.
+        pressure: mixed
+        cost: The company calls a veto it can't predict a dealbreaker. Payments pause, your son's start date included.
+        evidence:
+          - {position: indigenous.sovereignty.within-state-rights, w: 1}
+          - {position: indigenous.sovereignty.inherent-nationhood, w: 1}
+        next: arc.pipeline.05
+
+  - id: arc.pipeline.05
+    type: escalation
+    title: The checkpoint
+    recap: On unceded First Nation land in northern British Columbia, a gas company holds a court order to clear a blockade.
+    text: >
+      February, minus thirty. Land defenders have held a checkpoint on the forestry road for fifty days. The
+      company has a court injunction. This morning federal police arrive with dogs, a helicopter and an
+      exclusion zone that keeps reporters twenty kilometres back. The chiefs are at the gate. The premier says
+      the law is the law. You have a truck and a phone.
+    why: The middle option is gone. This records which side you take when a settler state and the nation on whose land it sits collide.
+    options:
+      - id: gate
+        text: Drive to the gate and stand with the chiefs.
+        side: {axis: empire, dir: dispossessed}
+        set: {stood: true}
+        evidence:
+          - {position: indigenous.sovereignty.inherent-nationhood, w: 2}
+          - {position: police.role.colonial-occupation, w: 2}
+        consequence: You are arrested at noon with twenty-eight others and released at midnight on conditions that bar you from your own territory.
+        next: [{if: {flag: {key: stood, eq: true}}, to: arc.pipeline.06a}, {to: arc.pipeline.06b}]
+      - id: rails
+        text: Call everyone you know across the country. If they shut the gate here, shut the railways there.
+        side: {axis: empire, dir: dispossessed}
+        set: {stood: true}
+        evidence:
+          - {position: settler.colonialism.ongoing-structure, w: 2}
+          - {position: settler.colonialism.land-back, w: 1}
+        consequence: Within a week, rail lines are blocked in three provinces. Freight backs up for a thousand kilometres. A columnist calls you a hostage-taker.
+        next: [{if: {flag: {key: stood, eq: true}}, to: arc.pipeline.06a}, {to: arc.pipeline.06b}]
+      - id: court
+        text: Stay away. A court has ruled, and courts are how this gets settled.
+        side: {axis: empire, dir: order}
+        set: {stood: false}
+        evidence:
+          - {position: law.nature.rule-of-law, w: 3}
+        consequence: The checkpoint is cleared by evening. Construction resumes Thursday.
+        next: [{if: {flag: {key: stood, eq: true}}, to: arc.pipeline.06a}, {to: arc.pipeline.06b}]
+      - id: radio
+        text: Go on the local radio and ask the defenders to stand down. The elected council signed.
+        side: {axis: empire, dir: order}
+        set: {stood: false}
+        evidence:
+          - {position: police.role.order-maintenance, w: 2}
+          - {position: indigenous.sovereignty.within-state-rights, w: 1}
+        consequence: Some leave. The rest are arrested by evening. Your aunt hears you on the radio.
+        next: [{if: {flag: {key: stood, eq: true}}, to: arc.pipeline.06a}, {to: arc.pipeline.06b}]
+      - id: home
+        text: Stay home. Whatever you do, someone you love will never forgive it.
+        side: {axis: empire, dir: neither}
+        set: {stood: false}
+        evidence:
+          - {position: indigenous.sovereignty.within-state-rights, w: 1}
+        consequence: You watch the helicopter footage on your phone in the kitchen. So does everyone else.
+        next: [{if: {flag: {key: stood, eq: true}}, to: arc.pipeline.06a}, {to: arc.pipeline.06b}]
+
+  - id: arc.pipeline.06a
+    type: tradeoff
+    title: The minister's offer
+    text: >
+      Three weeks of rail blockades. A federal minister flies in and offers a deal: Ottawa will recognize the
+      nation's title in principle and negotiate what that means over three years. The pipeline keeps being
+      built while they talk. The chiefs want to know what the council thinks.
+    why: This sets recognition on paper against stopping the work on the ground.
+    conditions:
+      - id: in-writing
+        text: It depends whether the recognition is written into law.
+        evidence: [{position: law.nature.contested-terrain, w: 2}]
+    options:
+      - id: accept
+        text: Take it. Title recognized in principle is more than any generation before us got.
+        evidence:
+          - {position: settler.colonialism.historical-wrong-reconcile, w: 3}
+        consequence: The blockades come down. The pipeline is finished in fourteen months. The talks are in their second year.
+        next: arc.pipeline.07
+      - id: stop
+        text: No deal while the work continues. Recognition that changes nothing on the ground is a press release.
+        evidence:
+          - {position: settler.colonialism.land-back, w: 3}
+        consequence: The minister flies home. The blockades thin out as winter ends. Charges are laid against forty people.
+        next: arc.pipeline.07
+      - id: court
+        text: Take it to the courts. Our title was proven there before; make them prove otherwise.
+        evidence:
+          - {position: law.nature.contested-terrain, w: 3}
+        consequence: The case is filed. Lawyers estimate six years. The pipeline will take fourteen months.
+        next: arc.pipeline.07
+      - id: walk
+        text: Turn away from Ottawa altogether. Rebuild on the land, by our own law, and stop asking.
+        evidence:
+          - {position: indigenous.sovereignty.resurgence, w: 3}
+        consequence: Three families move back to the old village site. The minister's office calls it a positive development.
+        next: arc.pipeline.07
+
+  - id: arc.pipeline.06b
+    type: scene
+    title: Year two
+    text: >
+      Gas flows. The agreement money built a water treatment plant, and the boil-water advisory is lifted
+      after twelve years. The salmon count at the crossing is down by a third. The company's report blames
+      warm water. A second company wants to talk about a second pipeline.
+    why: This asks how you weigh what the deal brought against what it may have cost, and what you would do next.
+    premises:
+      - id: unrelated
+        text: The premise that the salmon and the pipeline have anything to do with each other.
+        evidence: [{position: nature.value.for-human-use, w: 1}]
+    options:
+      - id: worth
+        text: The water plant was worth it. Talk to the second company.
+        evidence:
+          - {position: nature.value.for-human-use, w: 2}
+          - {position: indigenous.sovereignty.within-state-rights, w: 1}
+        next: arc.pipeline.07
+      - id: river
+        text: The river was worth more. No second pipeline, whatever it pays.
+        evidence:
+          - {position: nature.value.kin-and-relation, w: 2}
+        next: arc.pipeline.07
+      - id: sue
+        text: Sue the company over the salmon. Make them prove it's the water.
+        evidence:
+          - {position: law.nature.contested-terrain, w: 2}
+        next: arc.pipeline.07
+      - id: own
+        text: The next one, we own outright. Nobody else's pipe on our land again.
+        evidence:
+          - {position: firm.ownership.commons-community, w: 2}
+          - {position: indigenous.sovereignty.private-title, w: 1}
+        next: arc.pipeline.07
+
+  - id: arc.pipeline.07
+    type: explanation
+    title: Why here
+    text: >
+      A university student from the reserve, home for the summer, is writing about the pipeline. She asks you
+      the question her professor couldn't answer to her satisfaction. Why does this keep happening, on this
+      land and on land like it?
+    why: This asks how you explain conflict over indigenous land, and what kind of cause you reach for.
+    premises:
+      - id: not-special
+        text: The premise that this land is any different from anyone else's.
+        evidence: [{position: indigenous.sovereignty.equal-citizenship, w: 1}]
+    options:
+      - id: structure
+        text: The country was built by taking land, and it still runs on it. The pipeline is the same act, with a permit.
+        cause: structures
+        evidence:
+          - {position: settler.colonialism.ongoing-structure, w: 3}
+      - id: interests
+        text: Gas companies make money, governments want royalties, and we are what's in the way.
+        cause: interests
+        evidence:
+          - {position: settler.colonialism.land-back, w: 1}
+          - {position: police.role.colonial-occupation, w: 1}
+      - id: healing
+        text: Old wrongs and deep mistrust. It takes generations to heal, and we're one generation in.
+        cause: ideas
+        evidence:
+          - {position: settler.colonialism.historical-wrong-reconcile, w: 2}
+      - id: two-laws
+        text: Two sets of rules for one country. Until there's one law for everyone, it never ends.
+        cause: ideas
+        evidence:
+          - {position: indigenous.sovereignty.equal-citizenship, w: 2}
+      - id: need
+        text: People need heat and power. Somebody's land is always in the way of it.
+        cause: nature
+        evidence:
+          - {position: energy.transition.keep-energy-cheap, w: 2}
+          - {position: nature.value.for-human-use, w: 1}

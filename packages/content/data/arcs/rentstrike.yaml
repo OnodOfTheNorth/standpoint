@@ -1,0 +1,401 @@
+id: arc.rentstrike
+title: Nine Floors
+blurb: Forty flats, two dead lifts, a bond payment due on the first, and a letter signed by thirty-one tenants.
+role: You own a block of flats, bought with a bank loan you are still paying off.
+place: A nine-storey block of flats in Berea, inner-city Johannesburg, South Africa
+start: arc.rentstrike.01
+escalation: arc.rentstrike.05
+pressure: [arc.rentstrike.04]
+tags: [economy, state, commonsense]
+nodes:
+  - id: arc.rentstrike.01
+    type: scene
+    title: The letter
+    text: >
+      You own a nine-storey block in Berea: forty flats, two lifts, both broken since March. Last month you
+      raised rents twelve percent to cover the city's electricity arrears. This morning a letter signed by
+      thirty-one tenants: no rent until both lifts run and the increase is withdrawn. Your bond payment to
+      the bank, R38,000, is due on the first.
+    why: This asks what you think owning a building entitles you to, and what it obliges you to do.
+    premises:
+      - id: no-strike
+        text: The premise that tenants can lawfully withhold rent at all.
+        evidence: [{position: law.nature.rule-of-law, w: 2}]
+    conditions:
+      - id: arrears
+        text: It depends whether these tenants were paying on time before.
+        evidence: [{position: profit.legitimacy.fair-not-gouging, w: 1}]
+    options:
+      - id: meet
+        text: Ask the committee to meet you in the courtyard on Saturday.
+        set: {talk: true}
+        evidence:
+          - {position: property.private.social-function, w: 2}
+          - {position: profit.legitimacy.fair-not-gouging, w: 1}
+        consequence: Forty people come to the courtyard. You expected six.
+        next: arc.rentstrike.02
+      - id: fix
+        text: Withdraw the increase and get a quote for the lifts. They have a point.
+        set: {talk: true}
+        evidence:
+          - {position: property.private.social-function, w: 3}
+        consequence: The quote is R400,000. The committee says thank you and asks when.
+        next: arc.rentstrike.02
+      - id: lawyer
+        text: Send a lawyer's letter. Pay by the seventh or face eviction.
+        set: {talk: false}
+        evidence:
+          - {position: property.private.natural-right, w: 2}
+          - {position: law.nature.rule-of-law, w: 1}
+        consequence: The letter goes under every door. By evening it's taped to the broken lift, with comments.
+        next: arc.rentstrike.02
+      - id: lights
+        text: Cut the electricity to the flats that signed. No pay, no power.
+        set: {talk: false}
+        evidence:
+          - {position: property.private.natural-right, w: 3}
+          - {position: property.private.earned-is-mine, w: 1}
+        consequence: Your lawyer tells you, after the fact, that cutting services without a court order is illegal. The tenants already know.
+        next: arc.rentstrike.02
+      - id: sell
+        text: Call an agent and sell. Let someone with deeper pockets fight this.
+        set: {talk: false}
+        evidence:
+          - {position: cs.own-first.family-first, w: 2}
+        consequence: The agent says nobody buys a building on rent strike, except at half the price.
+        next: arc.rentstrike.02
+
+  - id: arc.rentstrike.02
+    type: explanation
+    title: Why rents are high
+    text: >
+      A radio host asks a panel why rent in Berea takes half of a security guard's wage. You listen in the
+      car outside your own building. Nobody on the panel owns one. Why are inner-city rents so high?
+    why: This asks how you explain high rents, and what kind of cause you reach for.
+    premises:
+      - id: not-high
+        text: The premise that rents are high. Costs are high; rents only follow them.
+        evidence: [{position: profit.legitimacy.earned-reward, w: 2}]
+    options:
+      - id: market
+        text: A flat is an investment like any other. Rent is what people will pay for it.
+        cause: structures
+        evidence:
+          - {position: profit.legitimacy.earned-reward, w: 2}
+        next: [{if: {flag: {key: talk, eq: true}}, to: arc.rentstrike.03a}, {to: arc.rentstrike.03b}]
+      - id: owning
+        text: Owners and banks collect money for owning, not for doing. It comes out of the wage.
+        cause: structures
+        evidence:
+          - {position: profit.legitimacy.rent-not-profit, w: 3}
+          - {position: cs.hard-work.others-profit, w: 1}
+        next: [{if: {flag: {key: talk, eq: true}}, to: arc.rentstrike.03a}, {to: arc.rentstrike.03b}]
+      - id: nonpayers
+        text: Tenants who don't pay. Everyone who pays covers the ones who don't.
+        cause: individuals
+        evidence:
+          - {position: property.private.earned-is-mine, w: 2}
+        next: [{if: {flag: {key: talk, eq: true}}, to: arc.rentstrike.03a}, {to: arc.rentstrike.03b}]
+      - id: crowding
+        text: Too many people from outside crowding into too few buildings.
+        cause: culture
+        evidence:
+          - {position: cs.own-first.our-people-first, w: 3}
+        next: [{if: {flag: {key: talk, eq: true}}, to: arc.rentstrike.03a}, {to: arc.rentstrike.03b}]
+      - id: greed
+        text: Some landlords are just greedy. Most aren't.
+        cause: individuals
+        evidence:
+          - {position: profit.legitimacy.fair-not-gouging, w: 3}
+        next: [{if: {flag: {key: talk, eq: true}}, to: arc.rentstrike.03a}, {to: arc.rentstrike.03b}]
+
+  - id: arc.rentstrike.03a
+    type: voices
+    title: The courtyard
+    text: >
+      Saturday in the courtyard. Plastic chairs, a borrowed loudspeaker, a child selling sweets. Two people
+      speak before you do.
+    voices:
+      - {name: Thandi, says: "We are not refusing rent. We are refusing to pay for lifts that don't run. Gogo Mavis on the ninth floor hasn't been downstairs since April."}
+      - {name: Mr Dube, says: "I own two buildings in this street. Give in once and every tenant in Berea stops paying. Your father didn't buy this to run a charity."}
+    why: This asks what you think a landlord owes tenants, and whether one landlord's concession is everyone's problem.
+    options:
+      - id: thandi
+        text: Thandi.
+        cause: ideas
+        evidence:
+          - {position: property.private.social-function, w: 2}
+          - {position: profit.legitimacy.fair-not-gouging, w: 1}
+        next: arc.rentstrike.04
+      - id: dube
+        text: Mr Dube.
+        cause: interests
+        evidence:
+          - {position: property.private.natural-right, w: 2}
+          - {position: profit.legitimacy.earned-reward, w: 1}
+        next: arc.rentstrike.04
+      - id: not-for-sale
+        text: Both miss it. Homes shouldn't be anyone's investment. Mine included.
+        cause: structures
+        evidence:
+          - {position: property.commons.not-for-sale, w: 3}
+          - {position: property.private.personal-vs-productive, w: 1}
+        next: arc.rentstrike.04
+      - id: bank
+        text: Both miss it. The bank takes a third of the rent before I see a cent. It's the bank's building.
+        cause: structures
+        evidence:
+          - {position: cs.hard-work.others-profit, w: 2}
+        next: arc.rentstrike.04
+
+  - id: arc.rentstrike.03b
+    type: tradeoff
+    title: Two letters
+    text: >
+      Three weeks in, no rent. Two letters on the same day. The bank: one more missed payment and it calls in
+      the loan. The city: your rates arrears go to court in thirty days. The tenants' committee has sent a
+      third, offering to pay everything into a lawyer's trust account until the lifts are fixed.
+    why: This sets what you are owed against what you can afford to concede, and asks what you trust to settle it.
+    conditions:
+      - id: trust
+        text: It depends whether the trust account is real.
+        evidence: [{position: law.nature.rule-of-law, w: 1}]
+    options:
+      - id: trust
+        text: Take the trust account. Money in a lawyer's account beats no money.
+        evidence:
+          - {position: law.nature.contested-terrain, w: 2}
+        next: arc.rentstrike.04
+      - id: court
+        text: Go to court. A contract is a contract, and a strike is a breach of it.
+        evidence:
+          - {position: law.nature.rule-of-law, w: 2}
+          - {position: property.private.natural-right, w: 1}
+        next: arc.rentstrike.04
+      - id: pray
+        text: Take it to your church. Ask the pastor to talk to both sides.
+        evidence:
+          - {position: inequality.justice.stewardship, w: 2}
+        next: arc.rentstrike.04
+      - id: family
+        text: Borrow from your brother to cover the bond and wait them out.
+        evidence:
+          - {position: cs.own-first.family-first, w: 2}
+          - {position: property.private.earned-is-mine, w: 1}
+        next: arc.rentstrike.04
+
+  - id: arc.rentstrike.04
+    type: pressure
+    title: The quote
+    tests: property.private.social-function
+    text: >
+      The lift company will fix both lifts for R400,000. You have R410,000 in savings. It is your daughter's
+      fees for her last two years of medicine, and nothing else. The tenants' lawyer says a court will
+      probably side with them over the lifts, eventually. Gogo Mavis on the ninth floor is eighty-one.
+    why: This sets what you may believe property owes against your own daughter's future.
+    options:
+      - id: both
+        text: Fix both lifts. The building has to work.
+        pressure: principle
+        cost: Your daughter takes a student loan at eleven percent and two night shifts a week.
+        set: {fixed: true}
+        evidence:
+          - {position: property.private.social-function, w: 3}
+        next: arc.rentstrike.05
+      - id: one
+        text: Fix one lift. It's half the money and it gets Gogo Mavis downstairs.
+        pressure: mixed
+        cost: Half the fees are gone. The committee says half a lift is half a deal.
+        set: {fixed: true}
+        evidence:
+          - {position: property.private.social-function, w: 1}
+          - {position: profit.legitimacy.fair-not-gouging, w: 1}
+        next: arc.rentstrike.05
+      - id: none
+        text: Fix nothing until they pay. Your child comes first.
+        pressure: interest
+        cost: Gogo Mavis stays upstairs. Her grandson tells the newspaper the landlord's name.
+        set: {fixed: false}
+        evidence:
+          - {position: cs.own-first.family-first, w: 3}
+        next: arc.rentstrike.05
+      - id: city
+        text: Fix nothing, and send the bill to the city. It's their electricity debt that started this.
+        pressure: interest
+        cost: The city never answers. Gogo Mavis stays upstairs.
+        set: {fixed: false}
+        evidence:
+          - {position: property.private.earned-is-mine, w: 2}
+        next: arc.rentstrike.05
+
+  - id: arc.rentstrike.05
+    type: escalation
+    title: The red overalls
+    recap: In a block of flats in inner-city Johannesburg, tenants on rent strike face an eviction crew at dawn.
+    text: >
+      The bank, enforcing your loan, has obtained an eviction order against fourteen households on the
+      committee. At five a.m. the sheriff arrives with sixty men in red overalls. Tenants link arms in the
+      stairwell. Police wait at the gate with rubber bullets. The sheriff needs the owner's representative
+      to sign the inventory. That is you.
+    why: The middle option is gone. This records which side you take when property and the people living in it collide.
+    options:
+      - id: sign
+        text: Sign the inventory. The court has ruled, and it's the bank's order, not yours.
+        side: {axis: class, dir: order}
+        set: {evicted: true}
+        evidence:
+          - {position: law.nature.rule-of-law, w: 3}
+        consequence: By nine, fourteen households are on the pavement with their furniture. Two people are hurt on the stairs.
+        next: [{if: {flag: {key: evicted, eq: true}}, to: arc.rentstrike.06b}, {to: arc.rentstrike.06a}]
+      - id: police
+        text: Sign, and ask the police to clear the stairwell first. Order before anyone gets hurt.
+        side: {axis: class, dir: order}
+        set: {evicted: true}
+        evidence:
+          - {position: police.role.order-maintenance, w: 3}
+          - {position: property.private.natural-right, w: 1}
+        consequence: The rubber bullets come out at six. The stairwell is clear by seven. Fourteen households are on the pavement.
+        next: [{if: {flag: {key: evicted, eq: true}}, to: arc.rentstrike.06b}, {to: arc.rentstrike.06a}]
+      - id: refuse
+        text: Refuse to sign. Tell the sheriff the owner won't put families on the street.
+        side: {axis: class, dir: dispossessed}
+        set: {evicted: false}
+        evidence:
+          - {position: property.private.social-function, w: 2}
+          - {position: law.nature.class-will, w: 1}
+        consequence: The sheriff stands his men down for the day. The bank's lawyer calls before eight.
+        next: [{if: {flag: {key: evicted, eq: true}}, to: arc.rentstrike.06b}, {to: arc.rentstrike.06a}]
+      - id: stairwell
+        text: Go up and stand in the stairwell with them.
+        side: {axis: class, dir: dispossessed}
+        set: {evicted: false}
+        evidence:
+          - {position: police.role.class-repression, w: 2}
+          - {position: property.commons.not-for-sale, w: 1}
+        consequence: The sheriff has never seen this before. Neither have the tenants. He withdraws to take advice.
+        next: [{if: {flag: {key: evicted, eq: true}}, to: arc.rentstrike.06b}, {to: arc.rentstrike.06a}]
+      - id: car
+        text: Stay in your car with the engine running. Let the sheriff do his job without you.
+        side: {axis: class, dir: neither}
+        set: {evicted: true}
+        evidence:
+          - {position: cs.own-first.family-first, w: 1}
+        consequence: The sheriff finds another signatory in the bank's paperwork. By nine, fourteen households are on the pavement.
+        next: [{if: {flag: {key: evicted, eq: true}}, to: arc.rentstrike.06b}, {to: arc.rentstrike.06a}]
+
+  - id: arc.rentstrike.06a
+    type: tradeoff
+    title: The offer from below
+    text: >
+      A housing cooperative, backed by the tenants and a charitable fund, offers to buy the building. Their
+      price clears your bond and leaves you R600,000. On the open market it would fetch R2.4 million once the
+      strike ends, if it ends. Your father bought it in 1998.
+    why: This sets what the building could earn you against what it would become in other hands.
+    conditions:
+      - id: market-value
+        text: It depends whether the strike would ever end without a sale.
+        evidence: [{position: profit.legitimacy.earned-reward, w: 1}]
+    options:
+      - id: sell-coop
+        text: Sell to the cooperative. A building should belong to the people who live in it.
+        evidence:
+          - {position: property.commons.not-for-sale, w: 2}
+          - {position: property.private.personal-vs-productive, w: 2}
+        consequence: The deal closes in five months. Gogo Mavis sends you a cake.
+        next: arc.rentstrike.07
+      - id: hold
+        text: Hold out for the market price. It's what the building is worth, and it's my family's.
+        evidence:
+          - {position: profit.legitimacy.earned-reward, w: 2}
+          - {position: property.private.natural-right, w: 1}
+        consequence: The strike goes into its fifth month. The bank sends a second order.
+        next: arc.rentstrike.07
+      - id: steward
+        text: Keep the building and run it properly. Ownership is a trust, not a ticket.
+        evidence:
+          - {position: inequality.justice.stewardship, w: 3}
+        consequence: You remortgage your house to fix the lifts. The tenants pay, mostly.
+        next: arc.rentstrike.07
+      - id: fair-price
+        text: Meet them in the middle. A fair price, not a fire-sale price.
+        evidence:
+          - {position: profit.legitimacy.fair-not-gouging, w: 2}
+        consequence: The fund raises its offer by R300,000 and takes eight months to find it.
+        next: arc.rentstrike.07
+
+  - id: arc.rentstrike.06b
+    type: scene
+    title: The pavement
+    text: >
+      The fourteen households are on the pavement, under plastic. A judge rules the city must give them
+      emergency shelter. The city says it has none and asks to rent your empty sixth floor, at a third of the
+      market rate, for a year. The remaining tenants are still not paying.
+    why: This asks what you owe the people you evicted, and what you think the law is for.
+    premises:
+      - id: not-mine
+        text: The premise that their housing is your problem now.
+        evidence: [{position: property.private.natural-right, w: 2}]
+    options:
+      - id: rent-city
+        text: Rent it to the city. A third of the rate beats an empty floor.
+        evidence:
+          - {position: profit.legitimacy.earned-reward, w: 1}
+          - {position: property.private.social-function, w: 1}
+        next: arc.rentstrike.07
+      - id: free
+        text: Let them have it free. They should never have been put out.
+        evidence:
+          - {position: inequality.justice.stewardship, w: 2}
+          - {position: property.private.social-function, w: 1}
+        next: arc.rentstrike.07
+      - id: refuse
+        text: Refuse. The court evicted them; it can't make me take them back.
+        evidence:
+          - {position: property.private.natural-right, w: 3}
+        next: arc.rentstrike.07
+      - id: courts
+        text: It shows what the courts are for. They evicted them for the bank and shelter them at my cost.
+        evidence:
+          - {position: law.nature.class-will, w: 3}
+        next: arc.rentstrike.07
+
+  - id: arc.rentstrike.07
+    type: reason
+    title: For the rent
+    text: >
+      A year on. Your daughter, home from university, has joined a housing rights society. Over dinner she
+      asks the question they asked her in the first meeting. What does a landlord actually do for the rent?
+    why: This asks what you think rent is payment for, and what kind of cause you reach for.
+    premises:
+      - id: rude
+        text: The premise that a landlord has to justify the rent to anyone.
+        evidence: [{position: property.private.natural-right, w: 1}]
+    options:
+      - id: provide
+        text: Provides a home, takes the risk, pays for the repairs. Rent is the fair price of that.
+        cause: interests
+        evidence:
+          - {position: profit.legitimacy.earned-reward, w: 3}
+      - id: owns
+        text: Owns. That's all. The bank and I get paid for owning, and the tenants pay for it.
+        cause: structures
+        evidence:
+          - {position: profit.legitimacy.rent-not-profit, w: 2}
+          - {position: cs.hard-work.others-profit, w: 1}
+      - id: works
+        text: Works harder than any tenant knows. The calls at midnight, the plumbers, the city. I earned it.
+        cause: individuals
+        evidence:
+          - {position: cs.hard-work.effort-pays, w: 2}
+          - {position: property.private.earned-is-mine, w: 1}
+      - id: cares
+        text: Done right, looks after a building and the people in it. Done wrong, deserves a strike.
+        cause: culture
+        evidence:
+          - {position: property.private.social-function, w: 2}
+          - {position: inequality.justice.stewardship, w: 1}
+      - id: nothing
+        text: Nothing that needs a landlord. Homes shouldn't have been a business in the first place.
+        cause: structures
+        evidence:
+          - {position: property.commons.not-for-sale, w: 2}

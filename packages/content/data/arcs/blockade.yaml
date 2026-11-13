@@ -1,0 +1,436 @@
+id: arc.blockade
+title: Year One
+blurb: The mills are the people's now. The tankers have stopped coming, and the fishing fleet has two weeks of fuel.
+role: You are the party secretary of a coastal district in the first year of a revolution.
+place: A fishing and sugar district on San Telmo, a small fictional island republic in the Caribbean
+start: arc.blockade.01
+escalation: arc.blockade.06
+pressure: [arc.blockade.05]
+tags: [state, world, economy, history]
+nodes:
+  - id: arc.blockade.01
+    type: scene
+    title: Two weeks
+    text: >
+      Eleven months since the old government fled. The sugar mills and the telephone company, once owned
+      by firms on the mainland, belong to the republic. This morning the mainland declared a naval blockade.
+      Your district has forty thousand people and two weeks of diesel for the fishing fleet. The capital
+      wants each district's plan by Friday.
+    why: This asks how you think scarce things should be shared out under siege, by plan, by price, by seizure, or by assembly.
+    premises:
+      - id: own-doing
+        text: The premise that this is a siege. The island brought it on itself.
+        evidence: [{position: intl.sanctions.legitimate-tool, w: 2}]
+    conditions:
+      - id: how-long
+        text: It depends how long the blockade lasts.
+        evidence: [{position: allocation.mechanism.market-socialism, w: 1}]
+    options:
+      - id: ration
+        text: A ration card for every household. Diesel to the boats, fish to the card, the same for everyone.
+        set: {approach: ration}
+        evidence:
+          - {position: allocation.mechanism.central-planning, w: 3}
+        consequence: The cards are printed in four days. The first queues form in five.
+        next: arc.blockade.02
+      - id: price
+        text: Let the boats sell at whatever price the catch fetches. High prices bring out what people are hiding.
+        set: {approach: market}
+        evidence:
+          - {position: allocation.mechanism.market-socialism, w: 2}
+          - {position: allocation.mechanism.free-market, w: 1}
+        consequence: Fish appears in the market by Thursday, at three times last month's price.
+        next: arc.blockade.02
+      - id: seize
+        text: Open the merchants' warehouses. Nobody hoards food while children queue for it.
+        set: {approach: ration}
+        evidence:
+          - {position: emergency.powers.need-overrides-property, w: 3}
+          - {position: property.private.personal-vs-productive, w: 1}
+        consequence: Two warehouses hold enough rice for a month. One merchant's son joins the militia; another merchant leaves on a night boat.
+        next: arc.blockade.02
+      - id: assembly
+        text: Call the neighborhood councils together tonight. Let the people who will eat it decide how it's shared.
+        set: {approach: assembly}
+        evidence:
+          - {position: siege.governance.class-democracy, w: 3}
+        consequence: The assembly runs until three in the morning and agrees a ration. The capital asks who authorized it.
+        next: arc.blockade.02
+      - id: talks
+        text: Urge the capital to open talks. Pay the mainland firms something and the ships come back.
+        set: {approach: market}
+        evidence:
+          - {position: intl.sanctions.legitimate-tool, w: 1}
+          - {position: siege.governance.constitutional-order, w: 1}
+        consequence: Your memo goes up the line. It comes back down with a note asking whose side you are on.
+        next: arc.blockade.02
+
+  - id: arc.blockade.02
+    type: explanation
+    title: The reasons given
+    text: >
+      The mainland's statement says the blockade will end when the island holds free elections, frees
+      political prisoners and respects property rights. The island's radio says it will end when the island
+      gives back the mills. Why is the blockade really happening?
+    why: This asks what you think sanctions and blockades are for, and what kind of cause you reach for.
+    premises:
+      - id: both-lie
+        text: The premise that either government's reason is the real one.
+        evidence: [{position: siege.governance.siege-as-pretext, w: 1}]
+    options:
+      - id: mills
+        text: The mills. Countries that take back their own industry get punished, whatever the press release says.
+        cause: structures
+        evidence:
+          - {position: intl.sanctions.economic-war, w: 3}
+        next: [{if: {flag: {key: approach, eq: market}}, to: arc.blockade.03b}, {to: arc.blockade.03a}]
+      - id: rights
+        text: The reasons given. No elections, prisoners in the old fort. Pressure is how you get them out.
+        cause: ideas
+        evidence:
+          - {position: intl.sanctions.legitimate-tool, w: 2}
+          - {position: siege.governance.constitutional-order, w: 1}
+        next: [{if: {flag: {key: approach, eq: market}}, to: arc.blockade.03b}, {to: arc.blockade.03a}]
+      - id: both
+        text: Both are real. Punish the leaders' accounts and travel, not the fishermen's diesel.
+        cause: ideas
+        evidence:
+          - {position: intl.sanctions.targeted-for-rights, w: 3}
+        next: [{if: {flag: {key: approach, eq: market}}, to: arc.blockade.03b}, {to: arc.blockade.03a}]
+      - id: lobby
+        text: The mill owners' lobby on the mainland wrote the blockade and a senator signed it.
+        cause: interests
+        evidence:
+          - {position: intl.sanctions.economic-war, w: 2}
+        next: [{if: {flag: {key: approach, eq: market}}, to: arc.blockade.03b}, {to: arc.blockade.03a}]
+      - id: provoked
+        text: Our own leaders wanted an enemy. A blockade lets them blame every empty shelf on someone else.
+        cause: individuals
+        evidence:
+          - {position: siege.governance.siege-as-pretext, w: 3}
+        next: [{if: {flag: {key: approach, eq: market}}, to: arc.blockade.03b}, {to: arc.blockade.03a}]
+
+  - id: arc.blockade.03a
+    type: tradeoff
+    title: The fifth crate
+    text: >
+      Six weeks of rationing. The fishing cooperative is landing one crate in five off the books and selling
+      it at night on the old pier. The ration falls short by exactly that much. The boat captains say the
+      card price doesn't cover the engine oil they buy on the black market.
+    why: This sets equal shares against keeping producers producing, and asks how far discipline should go.
+    conditions:
+      - id: oil
+        text: It depends whether the captains are telling the truth about the oil.
+        evidence: [{position: allocation.mechanism.market-socialism, w: 1}]
+    options:
+      - id: crack
+        text: Inspectors on every pier at dawn. Theft from the ration is theft from the children.
+        evidence:
+          - {position: siege.governance.revolutionary-dictatorship, w: 2}
+          - {position: allocation.mechanism.central-planning, w: 1}
+        consequence: The night market moves to a cove the inspectors haven't found. Two captains are arrested.
+        next: arc.blockade.04
+      - id: legal
+        text: Legalize it. Fill the quota first, then let them sell the surplus openly.
+        evidence:
+          - {position: allocation.mechanism.market-socialism, w: 3}
+        consequence: The catch rises by a third. So does the gap between the captains and everyone else.
+        next: arc.blockade.04
+      - id: council
+        text: Take it to the councils. The fishermen live on the same streets as the people going short.
+        evidence:
+          - {position: siege.governance.class-democracy, w: 3}
+        consequence: The council shames two captains in public and raises the card price for fish. The capital is not consulted.
+        next: arc.blockade.04
+      - id: end-cards
+        text: End the cards. Rationing is what made the black market in the first place.
+        evidence:
+          - {position: allocation.mechanism.free-market, w: 3}
+        consequence: Fish is plentiful within a month. Pensioners stop buying it within two.
+        next: arc.blockade.04
+
+  - id: arc.blockade.03b
+    type: voices
+    title: The fish market
+    text: >
+      Six weeks of free prices. Fish is plentiful and dear. The two men arguing outside the district office
+      have both been with the revolution since the mountains.
+    voices:
+      - {name: Octavio, says: "We didn't make a revolution so the fish merchant could buy a second truck. Pensioners can't eat freedom of price."}
+      - {name: Ramiro, says: "The market fed this district in a month. The plan would still be printing cards. Feed people first, preach later."}
+    why: This asks whether a revolution under siege should feed people through plan or market, and who gains from each.
+    premises:
+      - id: wrong-question
+        text: The premise that the choice is plan or market. The real question is who owns the boats.
+        evidence: [{position: property.private.personal-vs-productive, w: 2}]
+    options:
+      - id: octavio
+        text: Octavio.
+        cause: interests
+        evidence:
+          - {position: allocation.mechanism.central-planning, w: 2}
+          - {position: property.private.personal-vs-productive, w: 1}
+        next: arc.blockade.04
+      - id: ramiro
+        text: Ramiro.
+        cause: structures
+        evidence:
+          - {position: allocation.mechanism.market-socialism, w: 2}
+        next: arc.blockade.04
+      - id: free
+        text: Both miss it. Prices work because they're free. Stop pretending a market can be half-socialist.
+        cause: structures
+        evidence:
+          - {position: allocation.mechanism.free-market, w: 3}
+        next: arc.blockade.04
+      - id: councils
+        text: Both miss it. Neither the merchant nor the ministry. The neighborhoods should run the market.
+        cause: structures
+        evidence:
+          - {position: siege.governance.class-democracy, w: 2}
+        next: arc.blockade.04
+
+  - id: arc.blockade.04
+    type: verdict
+    title: March 1921
+    text: >
+      The party school sends a reading for district secretaries. Russia, March 1921. Civil war won, the
+      country blockaded and starving. Sailors at the Kronstadt naval base rise, demanding soviets without
+      party control. The government crushes them, and the same month replaces grain seizures with a legal
+      market for peasants. Where would you have stood?
+    why: This asks how you judge an earlier revolution under siege, and so what you think yours may do.
+    conditions:
+      - id: whites
+        text: It depends what the alternative was. The old armies were still at the border.
+        evidence: [{position: hist.ussr-early.besieged-necessity, w: 1}]
+    options:
+      - id: necessity
+        text: With the government. A besieged revolution that lets its fortress fall doesn't get a second chance.
+        evidence:
+          - {position: hist.ussr-early.besieged-necessity, w: 3}
+          - {position: party.system.leading-party, w: 1}
+        next: arc.blockade.05
+      - id: nep
+        text: The market reform was the real answer. Crushing the sailors was a crime it made unnecessary.
+        evidence:
+          - {position: hist.ussr-early.nep-road, w: 3}
+        next: arc.blockade.05
+      - id: sailors
+        text: With the sailors. The soviets were the revolution, and the party strangled them.
+        evidence:
+          - {position: hist.ussr-early.workers-democracy-lost, w: 3}
+        next: arc.blockade.05
+      - id: terror
+        text: Against all of it. That government ruled by terror from its first months.
+        evidence:
+          - {position: hist.ussr-early.terror-state, w: 3}
+        next: arc.blockade.05
+
+  - id: arc.blockade.05
+    type: pressure
+    title: The station
+    tests: speech.limits.information-sovereignty
+    text: >
+      Your sister's husband runs the district's only independent radio station. A third of its money comes
+      from an exile foundation on the mainland. Its morning show mocks the ration queues, and people listen.
+      The security office brings you an order to close it. It needs your signature, and they know whose
+      family it is.
+    why: This sets a rule you may believe in for a country under siege against your own family.
+    options:
+      - id: sign
+        text: Sign. A station paid from the mainland in wartime is the mainland's station.
+        pressure: principle
+        cost: Your sister stops speaking to you. Her household loses its second income.
+        evidence:
+          - {position: speech.limits.information-sovereignty, w: 3}
+        next: arc.blockade.06
+      - id: pass
+        text: Refuse, and let someone without a stake sign it.
+        pressure: interest
+        cost: You are moved off the district committee for "softness." The station closes a week later anyway.
+        evidence:
+          - {position: speech.limits.information-sovereignty, w: 1}
+        next: arc.blockade.06
+      - id: warn
+        text: Warn him to drop the foreign money first. If he won't, sign.
+        pressure: mixed
+        cost: He drops it and the show goes off the air for lack of funds. The security office notes that you warned him.
+        evidence:
+          - {position: speech.limits.information-sovereignty, w: 2}
+          - {position: siege.governance.mobilize-and-elect, w: 1}
+        next: arc.blockade.06
+      - id: defend
+        text: Refuse in public. A revolution that can't stand a morning show won't stand much.
+        pressure: mixed
+        cost: You lose your seat on the committee. The station stays on air with your name as its protector.
+        evidence:
+          - {position: speech.limits.open-marketplace, w: 3}
+        next: arc.blockade.06
+
+  - id: arc.blockade.06
+    type: escalation
+    title: The beach
+    recap: A small island republic in its first year of revolution is under naval blockade by a powerful neighbor.
+    text: >
+      Dawn. Four hundred armed exiles, trained and paid on the mainland, come ashore on the beach north of
+      your district with a radio transmitter and a list of names. The mainland's navy waits beyond the
+      twelve-mile line. The militia commander is handing out rifles at the party office. Down the street,
+      a family is packing for the boats the exiles promised.
+    why: The middle option is gone. This records which side you take when a great power and a small country it is besieging collide.
+    options:
+      - id: rifle
+        text: Take a rifle and go north.
+        side: {axis: empire, dir: dispossessed}
+        set: {fought: true}
+        evidence:
+          - {position: intl.sanctions.economic-war, w: 1}
+          - {position: siege.governance.revolutionary-dictatorship, w: 1}
+        consequence: The landing is pinned to the beach by noon and surrenders in three days. Eleven from your district are killed.
+        next: [{if: {flag: {key: fought, eq: true}}, to: arc.blockade.07a}, {to: arc.blockade.07b}]
+      - id: street
+        text: Go door to door and bring the whole street, with whatever they have.
+        side: {axis: empire, dir: dispossessed}
+        set: {fought: true}
+        evidence:
+          - {position: siege.governance.mobilize-and-elect, w: 3}
+        consequence: Fishermen ferry militia up the coast in the same boats the inspectors were chasing. The landing surrenders in three days.
+        next: [{if: {flag: {key: fought, eq: true}}, to: arc.blockade.07a}, {to: arc.blockade.07b}]
+      - id: welcome
+        text: Go down to meet them. If they bring elections and the ships back, let them in.
+        side: {axis: empire, dir: order}
+        set: {fought: false}
+        evidence:
+          - {position: intl.sanctions.legitimate-tool, w: 2}
+          - {position: siege.governance.constitutional-order, w: 1}
+        consequence: You reach the beach as the militia does. The landing surrenders in three days. Someone saw you walking north without a rifle.
+        next: [{if: {flag: {key: fought, eq: true}}, to: arc.blockade.07a}, {to: arc.blockade.07b}]
+      - id: boat
+        text: Get your children on one of the boats. Whoever wins, they should grow up somewhere else.
+        side: {axis: empire, dir: neither}
+        set: {fought: false}
+        evidence:
+          - {position: siege.governance.siege-as-pretext, w: 1}
+        consequence: The boats never leave; the landing surrenders in three days. Your neighbors watched you carry the suitcases down.
+        next: [{if: {flag: {key: fought, eq: true}}, to: arc.blockade.07a}, {to: arc.blockade.07b}]
+      - id: home
+        text: Bar the door and wait to see who wins.
+        side: {axis: empire, dir: neither}
+        set: {fought: false}
+        evidence:
+          - {position: siege.governance.siege-as-pretext, w: 1}
+        consequence: Three days of gunfire to the north, then silence. The landing has surrendered. Your desk at the party office was empty all week.
+        next: [{if: {flag: {key: fought, eq: true}}, to: arc.blockade.07a}, {to: arc.blockade.07b}]
+
+  - id: arc.blockade.07a
+    type: line
+    title: The prisoners
+    text: >
+      The landing has surrendered. Three hundred and ninety prisoners, and a list of locals who helped them.
+      The tribunal wants the district's view on whom to try. The mainland offers medicine and baby food in
+      exchange for the prisoners. Where do you draw the line?
+    cases:
+      - The exiles who came ashore armed
+      - Locals who guided them in from the beach
+      - Families who hid them for a night
+      - People who cheered from their windows
+      - People who mocked the rations on the radio last year
+    why: This asks how far a besieged revolution should go against its enemies and its doubters.
+    conditions:
+      - id: medicine
+        text: It depends how much medicine the mainland is offering.
+        evidence: [{position: intl.sanctions.economic-war, w: 1}]
+    options:
+      - id: all
+        text: Try everyone on the list. A revolution that forgives its enemies gets a second landing.
+        evidence:
+          - {position: siege.governance.revolutionary-dictatorship, w: 3}
+          - {position: party.system.leading-party, w: 1}
+        next: arc.blockade.08
+      - id: hid
+        text: The armed exiles and the guides. Hiding a frightened boy for a night is not treason.
+        evidence:
+          - {position: siege.governance.revolutionary-dictatorship, w: 1}
+          - {position: siege.governance.mobilize-and-elect, w: 1}
+        next: arc.blockade.08
+      - id: exchange
+        text: Trade every armed exile for medicine. Try nobody local. The island needs the medicine and the neighbors.
+        evidence:
+          - {position: siege.governance.class-democracy, w: 2}
+        next: arc.blockade.08
+      - id: courts
+        text: Ordinary courts, ordinary law, defense lawyers for all of them. That is how you show the difference.
+        evidence:
+          - {position: siege.governance.constitutional-order, w: 3}
+        next: arc.blockade.08
+
+  - id: arc.blockade.07b
+    type: scene
+    title: The committee
+    text: >
+      The landing has surrendered. The district committee meets and asks, politely, where you were for three
+      days. Most of the room fought. A few didn't, and they are watching what you say.
+    why: This asks what loyalty a revolution may demand of its own people, and who gets to judge it.
+    premises:
+      - id: not-their-business
+        text: The premise that anyone is owed an account of where you were.
+        evidence: [{position: speech.limits.open-marketplace, w: 1}]
+    options:
+      - id: resign
+        text: Tell the truth and resign. They were right to ask.
+        evidence:
+          - {position: party.system.leading-party, w: 2}
+        next: arc.blockade.08
+      - id: beach
+        text: Loyalty isn't measured on a beach. I fed this district for a year.
+        evidence:
+          - {position: siege.governance.mobilize-and-elect, w: 1}
+          - {position: siege.governance.class-democracy, w: 1}
+        next: arc.blockade.08
+      - id: masters
+        text: Tell them they've become what they replaced. A committee that asks where you were is a new set of masters.
+        evidence:
+          - {position: siege.governance.siege-as-pretext, w: 2}
+          - {position: hist.ussr-early.workers-democracy-lost, w: 1}
+        next: arc.blockade.08
+      - id: leave
+        text: Say nothing, and apply for an exit permit in the morning.
+        evidence:
+          - {position: siege.governance.constitutional-order, w: 1}
+        next: arc.blockade.08
+
+  - id: arc.blockade.08
+    type: reason
+    title: Year one
+    text: >
+      The anniversary. The blockade still holds. The mills run at two-thirds. Every child in the district is
+      in school, and every adult has queued for something this week. A delegation from another small country
+      asks what decided how your revolution turned out. What do you tell them?
+    why: This asks what you think shapes a revolution under siege, and what kind of cause you reach for.
+    options:
+      - id: siege
+        text: The siege. Every hard measure we took was dictated from across the water.
+        cause: structures
+        evidence:
+          - {position: hist.ussr-early.besieged-necessity, w: 2}
+          - {position: intl.sanctions.economic-war, w: 1}
+      - id: leaders
+        text: Our leaders. They used the siege to take more power than the siege required.
+        cause: individuals
+        evidence:
+          - {position: siege.governance.siege-as-pretext, w: 2}
+      - id: councils
+        text: Organization. Where the neighborhoods ran things, it held. Where offices ran things, it rotted.
+        cause: interests
+        evidence:
+          - {position: siege.governance.class-democracy, w: 2}
+      - id: ideas
+        text: Bad ideas. A plan without prices was always going to starve someone.
+        cause: ideas
+        evidence:
+          - {position: allocation.mechanism.free-market, w: 2}
+      - id: people
+        text: The people of this island. Stubborn, proud, and sick of being somebody's backyard.
+        cause: culture
+        evidence:
+          - {position: intl.sanctions.economic-war, w: 1}
+          - {position: party.system.leading-party, w: 1}

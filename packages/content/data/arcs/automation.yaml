@@ -1,0 +1,408 @@
+id: arc.automation
+title: Fifty-Two Seconds
+blurb: An automated body shop, 340 fewer jobs, and you are the one drawing it.
+role: You are the process engineer designing the new line.
+place: A car plant in Ulsan, South Korea
+start: arc.automation.01
+escalation: arc.automation.06
+pressure: [arc.automation.03]
+tags: [ecology, economy, strategy]
+nodes:
+  - id: arc.automation.01
+    type: scene
+    title: The brief
+    text: >
+      Ulsan. You are a process engineer at Daeseong Motors, thirty-four, salaried, not in the union. Your
+      brief: an automated body shop that welds a car every 52 seconds with 340 fewer people, most of them
+      subcontracted. Delivery in fourteen months; your bonus is tied to it. The union usually learns about
+      new lines when the robots arrive.
+    why: This asks what you think a machine is when it replaces people, and whose business that is.
+    premises:
+      - id: no-politics
+        text: The premise that a welding line has anything to do with politics. It's engineering.
+        evidence: [{position: technology.nature.neutral-tool, w: 2}]
+    options:
+      - id: build
+        text: Design the best line you can. What the company does with it is above your pay grade.
+        set: {told: false}
+        evidence:
+          - {position: technology.nature.neutral-tool, w: 3}
+        consequence: Your first layout is elegant. Your manager forwards it to Seoul with your name on it.
+        next: arc.automation.02a
+      - id: retrain
+        text: Design it, and push to retrain the 340 as robot technicians. Machines are fine; dumping people isn't.
+        set: {told: false}
+        evidence:
+          - {position: automation.ownership.bargain-and-share, w: 3}
+        consequence: Your manager says retraining is a human resources question. Human resources says it is a budget question.
+        next: arc.automation.02a
+      - id: tell
+        text: Tell the union delegate what's coming, off the record.
+        set: {told: true}
+        evidence:
+          - {position: technology.nature.capitals-weapon, w: 2}
+          - {position: workplace.conflict.structural-antagonism, w: 1}
+        probe:
+          ask: What makes it the union's business before the company says so?
+          options:
+            - text: Machines bought to cut the wage bill are a weapon, whoever designs them.
+              cause: structures
+              evidence: [{position: technology.nature.capitals-weapon, w: 2}]
+            - text: They'll find out anyway. Better while there's still time to bargain.
+              cause: interests
+              evidence: [{position: automation.ownership.bargain-and-share, w: 2}]
+            - text: Those 340 are subcontracted. Nobody else will speak for them.
+              cause: structures
+              evidence: [{position: labor.division.contract-status-is-a-wedge, w: 2}]
+        consequence: The delegate, Mr. Han, buys you lunch and asks for more.
+        next: arc.automation.02b
+      - id: fast
+        text: Build it fast. Nobody should breathe welding fumes in 2026; the 340 will find better work.
+        set: {told: false}
+        evidence:
+          - {position: technology.nature.liberation, w: 2}
+          - {position: automation.ownership.adapt-or-lose, w: 1}
+        consequence: You shave two months off the schedule. The welders hear about it from your schedule.
+        next: arc.automation.02a
+
+  - id: arc.automation.02a
+    type: explanation
+    title: Why now
+    text: >
+      Over soju, your manager explains that the board approved the line in a single meeting. The plant is
+      profitable. Sales are steady. Robots of this kind have existed for fifteen years. Why is the company
+      automating now?
+    why: This asks what kind of cause you reach for when explaining why a firm replaces workers with machines.
+    options:
+      - id: union
+        text: The union got too expensive. The robots are the bill for thirty years of strikes.
+        cause: interests
+        evidence:
+          - {position: unions.role.obstacle, w: 3}
+        next: arc.automation.03
+      - id: weapon
+        text: Robots don't strike. The point is a workforce that can't stop the line.
+        cause: interests
+        evidence:
+          - {position: technology.nature.capitals-weapon, w: 3}
+        next: arc.automation.03
+      - id: competition
+        text: Chinese electric-car makers are faster and cheaper. Automate or be the next Detroit.
+        cause: structures
+        evidence:
+          - {position: automation.ownership.adapt-or-lose, w: 2}
+          - {position: automation.ownership.investors-and-markets, w: 1}
+        next: arc.automation.03
+      - id: tide
+        text: Machines replace hands. They always have. It's closer to weather than to a decision.
+        cause: nature
+        evidence:
+          - {position: technology.nature.autonomous-force, w: 2}
+        next: arc.automation.03
+
+  - id: arc.automation.02b
+    type: voices
+    title: The canteen
+    text: >
+      Mr. Han takes your news to the canteen. By the end of lunch, two of the people at his table are no
+      longer speaking to each other. Who's right?
+    voices:
+      - {name: "Mr. Han, union delegate", says: "We bargain. No regular member loses a job, and we take a share of the savings. The subcontract workers aren't in our local."}
+      - {name: "Ms. Oh, subcontracted welder", says: "You'll trade us for a bonus. Then the next line comes for you, and nobody's left to stand with you."}
+    why: This asks whether a union bargains for its members or for everyone the machines replace.
+    options:
+      - id: han
+        text: Mr. Han. A union protects its members, and that's already hard enough.
+        cause: interests
+        evidence:
+          - {position: automation.ownership.bargain-and-share, w: 2}
+          - {position: labor.division.contract-status-is-a-wedge, w: -1}
+        next: arc.automation.03
+      - id: oh
+        text: Ms. Oh. Splitting regulars from subcontractors is how the company wins every round.
+        cause: structures
+        evidence:
+          - {position: labor.division.contract-status-is-a-wedge, w: 3}
+        next: arc.automation.03
+      - id: own
+        text: Both miss it. If the people who work the line owned the robots, nobody would fear them.
+        cause: structures
+        evidence:
+          - {position: automation.ownership.common-ownership, w: 3}
+        next: arc.automation.03
+      - id: harmony
+        text: Both miss it. A plant that can't automate closes, and then nobody has a job.
+        cause: interests
+        evidence:
+          - {position: workplace.conflict.harmony-of-interests, w: 2}
+          - {position: automation.ownership.adapt-or-lose, w: 1}
+        next: arc.automation.03
+
+  - id: arc.automation.03
+    type: pressure
+    title: The sheet
+    tests: automation.ownership.bargain-and-share
+    text: >
+      The union bargains in three weeks. Mr. Han asks for the headcount sheet: which stations go, in what
+      order. It is confidential; leaking it breaks your contract and possibly trade-secrets law. The same
+      morning your manager puts you up for team lead, with company shares, if the line comes in on time.
+    why: This sets your career against your view of whether workers should have a say over the machines that replace them.
+    options:
+      - id: give
+        text: Give Han the sheet. People should see what's coming at them.
+        pressure: principle
+        cost: The file metadata leads back to you within a week. You're dismissed and sued for 80 million won.
+        set: {leaked: true}
+        evidence:
+          - {position: automation.ownership.bargain-and-share, w: 2}
+          - {position: technology.nature.capitals-weapon, w: 1}
+        next: arc.automation.04
+      - id: keep
+        text: Keep it confidential and deliver on time. A contract is a contract.
+        pressure: interest
+        cost: The union bargains blind. The layoffs are announced with ninety days' notice. You're team lead.
+        set: {leaked: false}
+        evidence:
+          - {position: workplace.conflict.harmony-of-interests, w: 1}
+          - {position: automation.ownership.bargain-and-share, w: -1}
+        next: arc.automation.04
+      - id: official
+        text: Refuse to leak it, but argue inside that the union should get it officially.
+        pressure: mixed
+        cost: You're moved off the project "for focus." The sheet stays secret and someone else finishes your line.
+        set: {leaked: false}
+        evidence:
+          - {position: firm.ownership.codetermination, w: 3}
+        next: arc.automation.04
+      - id: quit
+        text: Ask to be taken off the project. You won't hide it and you won't leak it.
+        pressure: mixed
+        cost: You lose the bonus and a year's seniority. Your replacement delivers the line a month early.
+        set: {leaked: false}
+        evidence:
+          - {position: change.means.individual-exit, w: 2}
+        next: arc.automation.04
+
+  - id: arc.automation.04
+    type: allocation
+    title: The savings
+    text: >
+      The new line will save about 30 billion won a year. The board, unusually, asks the engineering team
+      for a view on where that money should go. Your colleagues have opinions. So, it turns out, do you.
+      You have ten points.
+    why: This asks who you think should get the gains when machines make work more productive.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: shareholders
+          text: Dividends to the shareholders who paid for the robots.
+          evidence: [{position: automation.ownership.investors-and-markets, w: 2}]
+        - id: hours
+          text: A four-day week for everyone left, at the same pay.
+          evidence: [{position: work.future.shorter-hours, w: 2}]
+        - id: fund
+          text: A fund to retrain or pay the 340 until they find work.
+          evidence: [{position: automation.ownership.bargain-and-share, w: 2}]
+        - id: stake
+          text: A block of shares held by the workforce, with seats on the board.
+          evidence: [{position: firm.ownership.codetermination, w: 1}, {position: automation.ownership.common-ownership, w: 1}]
+    options:
+      - id: done
+        text: Done
+        next: arc.automation.05
+
+  - id: arc.automation.05
+    type: verdict
+    title: Pyeongtaek, 2009
+    text: >
+      Everyone at the plant remembers SsangYong. In 2009 the carmaker announced more than 2,600 job cuts in
+      Pyeongtaek. Workers occupied the paint shop for 77 days. Police retook it with helicopters and
+      tasers. In the following decade around thirty laid-off workers and family members died, many by
+      suicide. Where would you have stood?
+    why: This asks whether you think workers may seize a plant to stop layoffs, and what the alternative was.
+    conditions:
+      - id: bankrupt
+        text: It depends whether the company was really going under.
+        evidence: [{position: automation.ownership.adapt-or-lose, w: 1}]
+    options:
+      - id: occupiers
+        text: With the occupiers. When the job is your whole life, you hold the plant.
+        evidence:
+          - {position: change.means.strike-and-direct-action, w: 3}
+          - {position: workplace.conflict.structural-antagonism, w: 1}
+        next: arc.automation.06
+      - id: company
+        text: The company was in receivership. The cuts saved the rest; occupying the plant saved no one.
+        evidence:
+          - {position: unions.role.obstacle, w: 2}
+          - {position: workplace.conflict.harmony-of-interests, w: 1}
+        next: arc.automation.06
+      - id: law
+        text: Neither. A law forcing the company to bargain before cutting would have prevented the whole thing.
+        evidence:
+          - {position: firm.ownership.codetermination, w: 2}
+        next: arc.automation.06
+      - id: leave
+        text: The ones who took the payout and moved on did best. That's the lesson.
+        evidence:
+          - {position: change.means.individual-exit, w: 3}
+        next: arc.automation.06
+
+  - id: arc.automation.06
+    type: escalation
+    title: The body shop
+    recap: At a car plant in South Korea, a new automated line is about to cost hundreds of jobs.
+    text: >
+      Daeseong announces 340 layoffs and a lockout. Subcontracted and regular workers occupy the body shop
+      around the half-installed robots. Management asks engineers to cross the line and commission the
+      robots so the plant can run without them. Security contractors wait at the gate, riot police at the
+      road. Your badge still opens every door.
+    why: The middle option is gone. This records which way you break when owners and workers collide over a plant.
+    options:
+      - id: in
+        text: Badge in, and carry water and rice to the occupation.
+        side: {axis: class, dir: dispossessed}
+        set: {sided: true}
+        evidence:
+          - {position: change.means.strike-and-direct-action, w: 2}
+          - {position: workplace.conflict.structural-antagonism, w: 1}
+        consequence: Security photographs you at the door. Inside, Ms. Oh hands you a broom.
+        next:
+          - {if: {flag: {key: sided, eq: true}}, to: arc.automation.07a}
+          - {to: arc.automation.07b}
+      - id: commission
+        text: Commission the robots. That's what you were hired to do.
+        side: {axis: class, dir: order}
+        set: {sided: false}
+        evidence:
+          - {position: technology.nature.neutral-tool, w: 2}
+          - {position: unions.role.obstacle, w: 1}
+        consequence: The first robot welds its first car while the occupiers watch through the glass.
+        next:
+          - {if: {flag: {key: sided, eq: true}}, to: arc.automation.07a}
+          - {to: arc.automation.07b}
+      - id: codes
+        text: Give security your access codes. Nobody gets to hold a plant hostage.
+        side: {axis: class, dir: order}
+        set: {sided: false}
+        evidence:
+          - {position: unions.role.obstacle, w: 2}
+          - {position: automation.ownership.investors-and-markets, w: 1}
+        consequence: The police enter through the loading dock you designed. It's over by Thursday.
+        next:
+          - {if: {flag: {key: sided, eq: true}}, to: arc.automation.07a}
+          - {to: arc.automation.07b}
+      - id: sick
+        text: Call in sick until it's over.
+        side: {axis: class, dir: neither}
+        set: {sided: false}
+        evidence:
+          - {position: change.means.individual-exit, w: 2}
+        consequence: Your phone fills with messages from both sides. You answer neither.
+        next:
+          - {if: {flag: {key: sided, eq: true}}, to: arc.automation.07a}
+          - {to: arc.automation.07b}
+
+  - id: arc.automation.07a
+    type: tradeoff
+    title: Two offers
+    text: >
+      The occupation ends after nineteen days: two hundred of the 340 are kept on as robot technicians, the
+      rest paid off. Your name is in a security report. The union offers you a seat on a new joint committee
+      with a veto over future lines. A robotics firm in Gyeonggi offers you double your salary if you start
+      Monday.
+    why: This sets a career against a say over how the next machines are used.
+    options:
+      - id: committee
+        text: Take the committee seat. Somebody who understands the machines should sit on the workers' side.
+        evidence:
+          - {position: firm.ownership.codetermination, w: 2}
+          - {position: automation.ownership.bargain-and-share, w: 1}
+        next: arc.automation.08
+      - id: leave
+        text: Take the job. You did your part; now look after yourself.
+        evidence:
+          - {position: change.means.individual-exit, w: 3}
+        next: arc.automation.08
+      - id: own
+        text: Stay, and push the union to demand a share of ownership, not a veto.
+        evidence:
+          - {position: automation.ownership.common-ownership, w: 3}
+        next: arc.automation.08
+
+  - id: arc.automation.07b
+    type: line
+    title: Where machines stop
+    text: >
+      The plant runs again. Head office now wants software that schedules shifts, rates workers and drafts
+      line layouts. Your manager asks the engineers where automation should stop. Here is the list, from
+      least to most contested. Where do you draw the line?
+    cases:
+      - Welding in fumes.
+      - Paint shop spraying.
+      - Quality inspection.
+      - Writing robot code, which is your job.
+      - Scheduling shifts and rating workers.
+      - Choosing who gets laid off.
+    why: This asks whether some work should never go to machines, and who should decide.
+    options:
+      - id: nowhere
+        text: Nowhere. If a machine does it better, a machine should do it.
+        evidence:
+          - {position: technology.nature.liberation, w: 2}
+          - {position: automation.ownership.investors-and-markets, w: 1}
+        next: arc.automation.08
+      - id: managing
+        text: Before the scheduling. Machines can do work, but they shouldn't manage people.
+        evidence:
+          - {position: ai.risk.tool-of-capital, w: 2}
+        next: arc.automation.08
+      - id: dangerous
+        text: After the paint shop. Take the dangerous work; leave the rest to people.
+        evidence:
+          - {position: automation.ownership.refuse-it, w: 2}
+        next: arc.automation.08
+      - id: vote
+        text: Wherever the people doing the work vote to let it go.
+        evidence:
+          - {position: automation.ownership.bargain-and-share, w: 2}
+          - {position: firm.ownership.codetermination, w: 1}
+        next: arc.automation.08
+
+  - id: arc.automation.08
+    type: reason
+    title: Forty-nine seconds
+    text: >
+      A year later the line runs at 49 seconds a car. Head office licenses software that drafts line
+      layouts, and your team goes from nine engineers to four. Your old layout is the training data. Looking
+      back, who decided what the robots did to the plant?
+    why: This asks what kind of cause you reach for when explaining what technology does to work.
+    options:
+      - id: owners
+        text: The owners. Machines do what whoever owns them wants done.
+        cause: structures
+        evidence:
+          - {position: technology.nature.capitals-weapon, w: 2}
+          - {position: automation.ownership.common-ownership, w: 1}
+      - id: market
+        text: The market. Any carmaker that didn't automate would be gone in five years.
+        cause: structures
+        evidence:
+          - {position: automation.ownership.adapt-or-lose, w: 2}
+      - id: nobody
+        text: Nobody. Technology goes where it goes, and we all run behind it.
+        cause: nature
+        evidence:
+          - {position: technology.nature.autonomous-force, w: 3}
+      - id: bargain
+        text: The union and management, bargaining. Badly this time, but that's how it should work.
+        cause: interests
+        evidence:
+          - {position: automation.ownership.bargain-and-share, w: 2}
+      - id: engineers
+        text: People like me. We could have drawn it differently, and we didn't.
+        cause: individuals
+        evidence:
+          - {position: technology.nature.neutral-tool, w: -1}
+          - {position: technology.nature.built-in-politics, w: 2}
