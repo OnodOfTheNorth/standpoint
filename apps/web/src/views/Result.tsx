@@ -455,7 +455,7 @@ function Exports({ r, editable }: { r: Result; editable: boolean }) {
           </button>
         ))}
         {e && editable && (
-          <button class="btn" onClick={() => download('standpoint-session.json', JSON.stringify(e.session, null, 2))}>
+          <button class="btn" data-export="session" onClick={() => download('standpoint-session.json', JSON.stringify(e.session, null, 2))}>
             Session (to resume or replay)
           </button>
         )}
@@ -468,7 +468,7 @@ function Exports({ r, editable }: { r: Result; editable: boolean }) {
             <input type="checkbox" checked={incSit} onChange={(ev) => setIncSit((ev.target as HTMLInputElement).checked)} /> <span>{t('result.share.include-situation')}</span>
           </label>
           <div class="row">
-            <input class="sharelink" readOnly value={link} aria-label="Share link" />
+            <input class="sharelink" data-action="share-link" readOnly value={link} aria-label="Share link" />
             <button
               class="btn"
               onClick={async () => {
@@ -486,7 +486,7 @@ function Exports({ r, editable }: { r: Result; editable: boolean }) {
         </>
       )}
       <div class="row">
-        <button class="btn" onClick={pngCard}>
+        <button class="btn" data-action="card-png" onClick={pngCard}>
           {t('result.card')}
         </button>
       </div>
