@@ -1,0 +1,1181 @@
+problematics:
+  - id: caste.question
+    domain: culture
+    layer: analysis
+    question: What is caste, and how does it end?
+    plain: Why are people still ranked by the group they are born into, and what would end it?
+    short: caste
+    importance: 2
+    region: caste
+    positions:
+      - id: caste.question.annihilation
+        label: Caste is graded inequality sanctioned by scripture; annihilate it
+        claim: >
+          Caste is a system of graded inequality, each group placed above some and below others,
+          held together by marriage within the caste and by the authority of Hindu scripture. It
+          ends only when that religious authority is destroyed, the castes intermarry, and the
+          oppressed castes take political power.
+        voiced: >
+          Caste is not a physical object like a wall of bricks. It is a notion, a state of the mind,
+          given sanction by the shastras. Destroy the belief in the sanctity of the shastras.
+          Educate, agitate, organize. Political power is the master key.
+        you: >
+          You think caste is a hierarchy rooted in religious scripture and marriage rules, and that
+          it ends only by rejecting that authority and winning political power for the oppressed
+          castes.
+        because: >
+          Ambedkar showed that endogamy is the mechanism that keeps castes apart, and that the
+          Manusmriti gave the hierarchy divine sanction for two thousand years. Every reform that
+          left the scriptures standing left caste standing. Graded inequality divides the oppressed
+          too, since each caste has someone beneath it, which is why it has lasted. Constitutional
+          safeguards, reservations, conversion to Buddhism and independent Dalit-Bahujan parties are
+          the tools; the aim is equality, not a better place in the hierarchy.
+        against:
+          - from: nationalism.gandhian
+            text: >
+              Attacking Hinduism itself drives caste Hindus to defend it and splits the nation.
+              Untouchability is a sin to be removed by changing the hearts of caste Hindus, and the
+              faith can be purified rather than destroyed.
+          - from: marxism.ml
+            text: >
+              Treating caste as an idea of the mind leaves its material base, the landlord's
+              ownership of land worked by Dalit labor, in place. Conversion changed few village
+              landholdings.
+        sources:
+          - {author: B. R. Ambedkar, title: "Annihilation of Caste", year: 1936}
+          - {author: B. R. Ambedkar, title: "Castes in India: Their Mechanism, Genesis and Development", year: 1916}
+          - {author: Kancha Ilaiah, title: "Why I Am Not a Hindu", year: 1996}
+        traditions:
+          defining: [nationalism.ambedkarite]
+          typical: [religious.engaged-buddhism, feminism.decolonial]
+          contested: [marxism.mlm]
+          rejects: [nationalism.gandhian, nationalism.hindutva, conservatism.traditionalist]
+        presupposes: []
+        excludes: [caste.question.sacred-order, caste.question.hindu-unity]
+        tension: [caste.question.class-and-caste]
+        tags: [global-south, debate.gandhi-ambedkar]
+        analysis:
+          gains: [peasantry, reserve-army, peripheral-workers]
+          pays: [landed-capital, petty-bourgeoisie]
+          mechanism: >
+            Breaking caste authority and winning reservations and political office weaken the hold
+            of upper-caste landowners and moneylenders over Dalit laborers in the village, and open
+            public jobs and education that let Dalits leave tied agricultural labor.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Marxists such as Teltumbde credit Ambedkar's analysis but argue reservations built a Dalit
+            middle class while most Dalits stayed landless; Ambedkarites answer that Marxist parties
+            led by upper castes ignored caste for decades.
+          consciousness: hegemonic
+
+      - id: caste.question.purify-hinduism
+        label: End untouchability by a change of heart; varna without rank
+        claim: >
+          Untouchability is a sin against God and must end, through a change of heart among caste
+          Hindus, temple entry and service to the oppressed. The division of society by inherited
+          calling (varna) can remain, cleansed of any idea of high and low.
+        voiced: >
+          If untouchability lives, Hinduism dies. I would rather that Hinduism died than that
+          untouchability lived. But varna is not a ladder; it is the law of following one's
+          ancestral calling, and the scavenger is as worthy as the Brahmin.
+        you: >
+          You think untouchability must end through moral change among the higher castes, but that
+          hereditary callings can stay if no one is ranked above another.
+        because: >
+          Laws imposed against the conscience of millions are evaded; only a change of heart lasts.
+          Gandhi's campaigns for temple entry and his work among the "Harijans" made the abolition of
+          untouchability part of the national movement. Inherited callings, freed from rank, preserve
+          skills and community and protect villages from the competition that ruins artisans.
+        against:
+          - from: nationalism.ambedkarite
+            text: >
+              A varna without rank has never existed and never will. Gandhi fought separate
+              electorates for the untouchables with a fast unto death in 1932 and asked the
+              oppressed to wait for their oppressors' hearts to change. "Harijan" is the name of a
+              ward, not a citizen.
+          - from: marxism.ml
+            text: >
+              Telling the scavenger his calling is noble keeps him cleaning latrines. A hereditary
+              division of labor is a class structure with a religious seal.
+        sources:
+          - {author: M. K. Gandhi, title: "A Vindication of Caste", year: 1936, note: "reply to Ambedkar in Harijan"}
+          - {author: M. K. Gandhi, title: "Hind Swaraj", year: 1909}
+        traditions:
+          defining: [nationalism.gandhian]
+          typical: [conservatism.traditionalist]
+          contested: [nationalism.hindutva]
+          rejects: [nationalism.ambedkarite, marxism.ml, marxism.maoism, liberalism.classical]
+        presupposes: []
+        excludes: [caste.question.annihilation]
+        tension: [caste.question.sacred-order]
+        tags: [global-south, debate.gandhi-ambedkar]
+        analysis:
+          gains: [landed-capital, petty-bourgeoisie]
+          pays: [reserve-army, peasantry]
+          mechanism: >
+            Ending untouchability as a moral matter while keeping hereditary callings leaves the
+            caste division of labor and village landholding intact; upper-caste landowners keep
+            their land while ritual exclusion is softened.
+          drain: none
+          law_of_value: suspends
+          disputed: >
+            Some scholars argue Gandhi's view moved toward rejecting caste altogether by the 1940s,
+            when he said he would only bless intercaste marriages.
+
+      - id: caste.question.hindu-unity
+        label: Caste divides the Hindu nation; unite all Hindus as one
+        claim: >
+          Caste divisions weaken the Hindu nation and must be overcome by uniting all Hindus in one
+          society, with untouchability ended from within and conversions to other religions
+          stopped.
+        voiced: >
+          All Hindus are one; there is no high and no low among the children of Bharat Mata. The
+          divisions of caste have let foreign conquerors rule us for a thousand years. Social
+          harmony, samrasta, not caste war.
+        you: >
+          You think caste divisions weaken the Hindu nation and should be overcome by uniting all
+          Hindus, while keeping them within the Hindu fold.
+        because: >
+          Divided by caste, Hindus were conquered again and again; untouchables who could not enter
+          temples left for Islam and Christianity. Savarkar campaigned for interdining and opened a
+          temple to all castes in Ratnagiri. A common Hindu identity, rooted in a shared land and
+          civilization, is the force that can end caste by making every Hindu a brother.
+        against:
+          - from: nationalism.ambedkarite
+            text: >
+              Unity under whom? Hindutva asks Dalits to become foot soldiers of a nation whose
+              scriptures place them at the bottom, and points their anger at Muslims instead of at
+              the castes above them.
+          - from: liberalism.social
+            text: >
+              Unity built against a religious minority turns caste conflict into communal violence;
+              Dalits and Muslims both pay.
+        sources:
+          - {author: V. D. Savarkar, title: "Essentials of Hindutva", year: 1923}
+          - {author: M. S. Golwalkar, title: "Bunch of Thoughts", year: 1966}
+        traditions:
+          defining: [nationalism.hindutva]
+          typical: [conservatism.national]
+          contested: [conservatism.traditionalist]
+          rejects: [nationalism.ambedkarite, marxism.ml, liberalism.social, liberalism.progressive]
+        presupposes: []
+        excludes: [caste.question.annihilation]
+        tension: [caste.question.sacred-order]
+        tags: [global-south]
+        analysis:
+          gains: [petty-bourgeoisie, industrial-capital, landed-capital]
+          pays: [reserve-army, peasantry]
+          mechanism: >
+            Folding the lower castes into a Hindu majority defined against Muslims and Christians
+            draws Dalit and backward-caste votes behind parties funded by traders and big business,
+            without redistributing land or ending caste control of rural credit.
+          drain: none
+          law_of_value: none
+
+      - id: caste.question.sacred-order
+        label: Caste is a sacred order of duties to be preserved
+        claim: >
+          Caste is part of a sacred social order in which each group has its own duties (dharma)
+          given by birth. It holds society together and should be preserved, not abolished by
+          modern politics.
+        voiced: >
+          Better one's own dharma, though imperfect, than the dharma of another well performed.
+          Society is a body: the head, the arms, the thighs and the feet each have their work, and
+          none can do the other's.
+        you: >
+          You think caste is a sacred order of duties by birth that holds society together and
+          should be kept.
+        because: >
+          Hierarchy, not equality, is the normal form of human society, as Dumont argued: caste
+          ranks by purity and duty, not wealth, and so keeps money from ruling everything. Each
+          group's inherited calling gives every person a place, a community and a meaning that the
+          anonymous market and the leveling state destroy.
+        against:
+          - from: nationalism.ambedkarite
+            text: >
+              The sacred order is the Brahmin's order. It gave the "feet" the latrines and the
+              cremation grounds and forbade them to learn to read. Its holiness is the holiness of
+              the master.
+          - from: liberalism.classical
+            text: >
+              No person should be assigned their work, marriage or worth by birth. A society of
+              inherited duties is a society of inherited servitude.
+        sources:
+          - {author: "Manu (attributed)", title: "Manusmriti (Manava Dharmashastra)", year: "c. 100", note: "composed roughly 2nd century BCE to 3rd century CE"}
+          - {author: Louis Dumont, title: "Homo Hierarchicus", year: 1966, note: "anthropological account of caste as hierarchy, cited by defenders"}
+          - {author: Julius Evola, title: "Revolt Against the Modern World", year: 1934}
+        traditions:
+          defining: [conservatism.traditionalist]
+          typical: [fascism.traditionalist, conservatism.reactionary]
+          contested: [nationalism.hindutva, nationalism.gandhian]
+          rejects: [nationalism.ambedkarite, liberalism.classical, marxism.ml, liberalism.progressive]
+        presupposes: []
+        excludes: [caste.question.annihilation, caste.question.reservations-and-law]
+        tension: []
+        tags: [global-south]
+        analysis:
+          gains: [landed-capital, petty-bourgeoisie]
+          pays: [reserve-army, peasantry, peripheral-workers]
+          mechanism: >
+            Hereditary assignment of work binds Dalit and lower-caste families to landless labor,
+            sanitation and leather work at customary pay, giving upper-caste landowners and
+            employers a labor force that cannot move into better-paid work or own land.
+          drain: none
+          law_of_value: suspends
+
+      - id: caste.question.class-and-caste
+        label: Caste is the form class rule takes; end it through land and class struggle
+        claim: >
+          Caste is how class rule is organized in South Asia: upper castes own the land, the lowest
+          castes work it. It ends through land reform, class struggle and the joint organization of
+          workers of all castes against landlords and capital.
+        voiced: >
+          Land to the tiller. The landlord's caste and his class are the same man. Without breaking
+          his ownership of the land, caste will only change its clothes. Caste annihilation and
+          class struggle are one fight.
+        you: >
+          You think caste is tied to who owns the land and does the work, and that it ends through
+          land reform and joint struggle of workers of all castes.
+        because: >
+          In village India the line between landowner and landless laborer still largely follows
+          the line between upper and Dalit castes. Kerala's land reforms and mass literacy, won by
+          communist movements, did more to weaken caste power than any temple entry. Teltumbde
+          argues that caste survives because capitalism found it useful for dividing and cheapening
+          labor, so both must be fought together.
+        against:
+          - from: nationalism.ambedkarite
+            text: >
+              Communist parties in India were led for decades by Brahmins who called caste a
+              superstructure and told Dalits to wait. Caste humiliates the Dalit who owns land too;
+              it is not reducible to property.
+          - from: liberalism.classical
+            text: >
+              Where land reform and planning ruled, caste persisted; where cities and markets grew,
+              people mixed. Growth, not class war, has loosened caste most.
+        sources:
+          - {author: Anand Teltumbde, title: "Republic of Caste", year: 2018}
+          - {author: E. M. S. Namboodiripad, title: "The National Question in Kerala", year: 1952}
+          - {author: Oliver Cromwell Cox, title: "Caste, Class, and Race", year: 1948}
+        traditions:
+          defining: [marxism.ml, marxism.maoism]
+          typical: [marxism.mlm, marxism.leninism, marxism.black-radical]
+          contested: [marxism.classical]
+          rejects: [nationalism.hindutva, conservatism.traditionalist, liberalism.classical]
+        presupposes: [class.concept.relation-to-production]
+        excludes: [caste.question.sacred-order]
+        tension: [caste.question.annihilation]
+        tags: [global-south]
+        analysis:
+          gains: [peasantry, reserve-army, peripheral-workers]
+          pays: [landed-capital, comprador-capital, petty-bourgeoisie]
+          mechanism: >
+            Land redistribution and rural unions take land and the power to set wages from
+            upper-caste landlords and moneylenders, which removes the material base that ties Dalit
+            laborers to them.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            Ambedkarites and many Marxists dispute whether caste is base or superstructure; Teltumbde
+            and others propose a synthesis that both camps contest.
+          consciousness: hegemonic
+
+      - id: caste.question.reservations-and-law
+        label: Constitutional equality and reservations, enforced by the state
+        claim: >
+          Caste ends through constitutional equality, laws against untouchability and atrocities,
+          and reserved places for oppressed castes in education, public jobs and legislatures,
+          together with schooling and modern economic life that weaken caste over generations.
+        voiced: >
+          Untouchability is abolished and its practice in any form is forbidden. Social justice
+          through the constitution: reservation, representation, education. Give every child the
+          school, the job and the vote, and caste will wither.
+        you: >
+          You think caste ends through constitutional equality, anti-discrimination law and
+          reserved places for the oppressed castes in schools, jobs and parliament.
+        because: >
+          Article 17 of India's constitution abolished untouchability and reservations put Dalits,
+          Adivasis and backward castes into universities, the civil service and parliament in
+          numbers unimaginable in 1947. The Mandal reforms of 1990 extended this to the backward
+          castes and transformed politics in north India. The state is the only force large enough
+          to break village hierarchies.
+        against:
+          - from: liberalism.classical
+            text: >
+              Reservations make caste the official basis of public life, give every group an
+              interest in staying "backward," and reward the better-off in each favored caste.
+          - from: marxism.maoism
+            text: >
+              Reservations in a shrinking public sector, after privatization, are a ticket for a
+              few. The landless majority of Dalits never reach a university or a ministry.
+        sources:
+          - {author: Constituent Assembly of India, title: "Constitution of India", year: 1950}
+          - {author: B. P. Mandal, title: "Report of the Backward Classes Commission", year: 1980}
+        traditions:
+          defining: [liberalism.social]
+          typical: [nationalism.ambedkarite, liberalism.progressive, socdem.democratic-socialism, liberalism.egalitarian]
+          contested: [marxism.ml]
+          rejects: [liberalism.classical, conservatism.traditionalist]
+        presupposes: []
+        excludes: [caste.question.sacred-order]
+        tension: [caste.question.market-dissolves]
+        tags: [global-south]
+        analysis:
+          gains: [professional-managerial, petty-bourgeoisie]
+          pays: []
+          mechanism: >
+            Reserved places in public employment and education build a salaried and political
+            stratum from oppressed castes, paid from public budgets; the cost falls on upper-caste
+            applicants for scarce posts, while land and private capital remain where they were.
+          drain: none
+          law_of_value: regulates
+
+      - id: caste.question.market-dissolves
+        label: Markets and enterprise dissolve caste; Dalit capitalism
+        claim: >
+          Caste survives where village economies and state controls freeze people in place. Open
+          markets, urban jobs and Dalit-owned business break it, because the market cares about
+          money and skill, not birth.
+        voiced: >
+          Become job givers, not job seekers. The market is caste-blind: a customer does not ask the
+          caste of the man who sells him cement. Capital is the Dalit's weapon against caste.
+        you: >
+          You think markets, cities and Dalit-owned businesses break caste better than state
+          programs, because buyers care about price and quality, not birth.
+        because: >
+          After India's 1991 reforms, surveys in Uttar Pradesh found Dalits wearing clothes,
+          eating foods and running businesses once forbidden to them, and fewer tied to upper-caste
+          landlords. Dalit entrepreneurs organized in their own chamber of commerce show that
+          capital can be accumulated by the oppressed. Cities give anonymity the village never did.
+        against:
+          - from: nationalism.ambedkarite
+            text: >
+              Markets run on networks of credit and trust, and those networks are caste networks.
+              Dalit entrepreneurs remain a tiny fraction of business owners, and most Dalits in the
+              market economy are its cheapest labor.
+          - from: marxism.ml
+            text: >
+              The market does not abolish caste; it prices it. Caste lowers the wages of sanitation
+              workers, construction laborers and migrant workers, and capital profits from it.
+        sources:
+          - {author: Devesh Kapur, D. Shyam Babu and Chandra Bhan Prasad, title: "Defying the Odds: The Rise of Dalit Entrepreneurs", year: 2014}
+        traditions:
+          defining: [liberalism.classical]
+          typical: [libertarianism.minarchist, liberalism.chicago, socdem.third-way]
+          contested: [nationalism.ambedkarite]
+          rejects: [marxism.ml, marxism.maoism, conservatism.traditionalist]
+        presupposes: []
+        excludes: [caste.question.sacred-order]
+        tension: [caste.question.reservations-and-law, caste.question.class-and-caste]
+        tags: [global-south]
+        analysis:
+          gains: [petty-bourgeoisie, industrial-capital]
+          pays: [reserve-army, peripheral-workers]
+          mechanism: >
+            Opening markets lets a few Dalit owners accumulate and loosens ritual control in cities,
+            while the mass of Dalit workers enters informal labor markets where caste networks still
+            steer them into the lowest-paid and most dangerous work.
+          drain: none
+          law_of_value: extends
+
+      - id: caste.question.colonial-hardening
+        label: Rigid caste was hardened by colonial census and law
+        claim: >
+          Before British rule caste groups (jatis) were more fluid and local. Colonial census, law
+          and ethnography fixed them into rigid, ranked categories. Undoing caste means undoing
+          the colonial way of counting and governing people.
+        voiced: >
+          The British did not find caste; they made it into what it is. They counted, ranked and
+          legislated communities that had moved up and down for centuries. Caste as we know it is a
+          colonial artifact.
+        you: >
+          You think caste became rigid largely because of British rule, and that ending it means
+          dismantling colonial categories.
+        because: >
+          Dirks shows that British census operations from 1871 ordered castes in a fixed hierarchy,
+          and that colonial law turned local customs into rules enforced by courts. Before that,
+          groups rose through war, land and royal patronage, as many dynasties of low origin show.
+          Treating caste as eternal Hinduism accepts the colonizer's picture of India.
+        against:
+          - from: nationalism.ambedkarite
+            text: >
+              Manu wrote two thousand years before the census. Untouchability, forbidden temples and
+              wells, and the humiliation of the Dalit are far older than the British, and blaming
+              them excuses the castes who did the excluding.
+          - from: marxism.ml
+            text: >
+              Counting categories does not create the landlord or the landless laborer. The theory
+              moves the cause from land to paperwork.
+        sources:
+          - {author: Nicholas B. Dirks, title: "Castes of Mind: Colonialism and the Making of Modern India", year: 2001}
+        traditions:
+          defining: [nationalism.decolonial]
+          typical: [nationalism.hindutva]
+          contested: [marxism.dependency]
+          rejects: [nationalism.ambedkarite, marxism.ml]
+        presupposes: []
+        excludes: [caste.question.sacred-order]
+        tension: [caste.question.annihilation]
+        tags: [global-south]
+        analysis:
+          gains: [landed-capital, petty-bourgeoisie]
+          pays: [reserve-army]
+          mechanism: >
+            Moving the cause of caste to colonial categories makes caste censuses and reservations
+            look like the problem, which suits the castes that would lose quota positions, while
+            caste control of land and credit in the village goes unexamined.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Decolonial scholars intend a critique of colonial power, not a defense of caste; how far
+            colonial rule hardened caste is debated among historians (Dirks, Bayly, Susan Bayly).
+
+  - id: religion.public
+    domain: culture
+    layer: horizon
+    question: What place should religion have in public life?
+    plain: Should faith shape the law, the schools and the government, or be kept to private life?
+    short: religion in public life
+    importance: 3
+    region: religion
+    positions:
+      - id: religion.public.separation
+        label: Separate religion and state; protect every faith equally
+        claim: >
+          The state should neither establish nor favor any religion. Everyone is free to believe,
+          worship and argue from faith in public debate, but laws must rest on reasons all
+          citizens can share.
+        voiced: >
+          The care of souls is not committed to the civil magistrate. Build a wall of separation:
+          it protects the church from the state as much as the state from the church. The
+          believer and the unbeliever are equal citizens.
+        you: >
+          You think the state should favor no religion, protect everyone's freedom of worship, and
+          make laws on grounds everyone can share.
+        because: >
+          Europe's wars of religion showed what happens when states enforce faith; Locke argued that
+          belief cannot be compelled, only feigned. Rawls added that in a society of many faiths,
+          law can only be legitimate if justified by public reasons. Separation has let religion
+          flourish, as in the United States, while protecting minorities from the majority's
+          creed.
+        against:
+          - from: conservatism.integralism
+            text: >
+              No state is neutral. A state that refuses to acknowledge God acknowledges something
+              else, the market or the self, as its highest good, and teaches that to every child.
+          - from: marxism.classical
+            text: >
+              Separation makes religion a private affair while leaving church landholdings, schools
+              and charities untouched, and leaves the conditions that need religion's consolation in
+              place.
+        sources:
+          - {author: John Locke, title: "A Letter Concerning Toleration", year: 1689}
+          - {author: John Rawls, title: "Political Liberalism", year: 1993}
+        traditions:
+          defining: [liberalism.classical, liberalism.egalitarian]
+          typical: [liberalism.social, liberalism.progressive, libertarianism.minarchist, socdem.nordic, religious.post-islamism, commonsense.live-and-let-live]
+          contested: [conservatism.fusionism, conservatism.evangelical-right]
+          rejects: [conservatism.integralism, religious.islamism-khomeinist, nationalism.hindutva, religious.buddhist-nationalism]
+        presupposes: []
+        excludes: [religion.public.divine-law, religion.public.faith-as-nation]
+        tension: [religion.public.heritage-establishment]
+        tags: []
+        analysis:
+          gains: [professional-managerial, petty-bourgeoisie]
+          pays: []
+          mechanism: >
+            Separation removes clergy from the direction of law and schooling and opens public posts
+            to all faiths, while leaving religious bodies' property, schools and charities in place
+            as private institutions funded by their members and donors.
+          drain: none
+          law_of_value: none
+
+      - id: religion.public.laicite
+        label: An actively secular state that keeps religion out of public institutions
+        claim: >
+          The state must be actively secular: no religious symbols in public institutions, no
+          clerical role in schools or law, and protection of citizens, especially women and
+          children, from the power of religious authorities.
+        voiced: >
+          The Republic recognizes, pays and subsidizes no religion. The school is the temple of
+          reason. We freed the nation from the sheikhs and the fez, from the priest's hand on the
+          child's mind.
+        you: >
+          You think the state should be actively secular and keep religion out of public schools,
+          law and institutions.
+        because: >
+          Religious authorities have been powerful landowners and allies of reaction: the French
+          Church, the Ottoman ulema, the Mexican clergy. France's 1905 law, Kemal's abolition of
+          the caliphate and Mexico's 1917 constitution broke that power and built secular schools,
+          civil marriage and legal equality for women. Neutrality between faiths is not enough when
+          one faith holds the villages.
+        against:
+          - from: liberalism.egalitarian
+            text: >
+              Banning headscarves in schools and offices punishes believers for their faith and
+              falls hardest on Muslim women, the people the policy claims to free.
+          - from: religious.islamism-brotherhood
+            text: >
+              Secularism was imposed by soldiers on believing peoples: Kemalist Turkey, Ben Ali's
+              Tunisia, Shah's Iran. It is the religion of a westernized elite that despises its own
+              people.
+        sources:
+          - {author: French Republic, title: "Law of 9 December 1905 on the Separation of the Churches and the State", year: 1905}
+          - {author: Mustafa Kemal Atatürk, title: "Nutuk (The Great Speech)", year: 1927}
+        traditions:
+          defining: [liberalism.republican, nationalism.kemalism]
+          typical: [nationalism.baathism, marxism.ml, marxism.hoxhaism, socdem.revisionist, feminism.liberal]
+          contested: [nationalism.nasserism, liberalism.progressive]
+          rejects: [religious.islamism-brotherhood, conservatism.cst, conservatism.integralism, liberalism.egalitarian]
+        presupposes: []
+        excludes: [religion.public.divine-law]
+        tension: [religion.public.separation]
+        tags: [global-south]
+        analysis:
+          gains: [professional-managerial, petty-bourgeoisie, industrial-capital]
+          pays: [peasantry]
+          mechanism: >
+            Secularizing schools, law and religious endowments transferred land and authority from
+            clergy to a state bureaucracy and a modernizing urban stratum; rural believers lost
+            religious courts, schools and charities that had served them.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            Marxists differ on whether laicism in Turkey or the Arab world was a progressive break
+            with landed clerical power or a modernizing elite's rule over the peasantry.
+
+      - id: religion.public.heritage-establishment
+        label: The nation's faith shapes public life, without coercing anyone
+        claim: >
+          A nation's historic faith rightly shapes its public life: holidays, oaths, symbols,
+          schools and the moral foundations of law. Other faiths are tolerated, but the state is
+          not neutral about the tradition that formed it.
+        voiced: >
+          The liberal, secularized state lives on premises it cannot itself guarantee. Our law,
+          our idea of human dignity, our very calendar come from Christianity. Take the cross off
+          the classroom wall and you do not get neutrality; you get emptiness.
+        you: >
+          You think your country's historic religion should shape its public life and symbols,
+          while other faiths are tolerated.
+        because: >
+          Böckenförde argued that a free state depends on moral habits it cannot produce by law,
+          habits that a living faith sustains. Established churches in England and Denmark and
+          constitutions naming Islam as state religion coexist with wide religious liberty. A public
+          life stripped of the sacred does not become neutral; it hands its moral ground to the
+          market and the fashions of the day.
+        against:
+          - from: liberalism.egalitarian
+            text: >
+              A state that honors one faith makes everyone else a guest. Minorities pay taxes to an
+              order that tells them they do not quite belong.
+          - from: conservatism.integralism
+            text: >
+              Faith as heritage is faith as decoration. A cross on the wall beside laws permitting
+              abortion and divorce is a museum, not a Christian state.
+        sources:
+          - {author: Ernst-Wolfgang Böckenförde, title: "Die Entstehung des Staates als Vorgang der Säkularisation", year: 1967}
+          - {author: Jürgen Habermas and Joseph Ratzinger, title: "Dialektik der Säkularisierung", year: 2005, note: "English: The Dialectics of Secularization, 2006"}
+        traditions:
+          defining: [conservatism.christian-democracy]
+          typical: [conservatism.burkean, conservatism.national, conservatism.one-nation, conservatism.cst, religious.post-islamism, religious.confucian]
+          contested: [conservatism.evangelical-right, conservatism.right-populism]
+          rejects: [liberalism.republican, liberalism.egalitarian, marxism.ml]
+        presupposes: []
+        excludes: [religion.public.laicite]
+        tension: [religion.public.separation, religion.public.divine-law]
+        tags: []
+        analysis:
+          gains: [landed-capital, petty-bourgeoisie]
+          pays: []
+          mechanism: >
+            Public recognition sustains churches' tax privileges, state-funded religious schools and
+            church landholdings, which in several European countries make churches among the
+            largest landowners, while costing believers and non-believers little directly.
+          drain: none
+          law_of_value: none
+
+      - id: religion.public.divine-law
+        label: God's law above the state; government must serve true religion
+        claim: >
+          Sovereignty belongs to God. The state should be ordered to the true religion and its law,
+          the Sharia or the Church's teaching, and rulers are judged by whether they uphold it.
+        voiced: >
+          Sovereignty is God's alone. Islam is a complete way of life, faith and state, worship and
+          law. A government that rules by other than what God revealed has no legitimacy, however
+          many votes it counts.
+        you: >
+          You think government should be ordered to the true religion and its law, and that rulers
+          are legitimate only if they uphold it.
+        because: >
+          If God exists and has revealed how humans should live, then a law that ignores His will is
+          a law built on a lie. Leo XIII taught that states, like persons, owe worship to God;
+          Qutb and Khomeini argued that Muslim societies ruled by imported secular law fell into a
+          new ignorance and into the hands of foreign powers. Divine law limits rulers more than any
+          constitution, because no parliament can repeal it.
+        against:
+          - from: liberalism.classical
+            text: >
+              God's law is always someone's reading of it, and that someone holds the guns. Iran's
+              guardianship of the jurist gives a council of clerics a veto over the elected.
+          - from: religious.post-islamism
+            text: >
+              Faith imposed by the state empties the mosques. Where Islamists ruled, believers lost
+              faith in religion along with the government; piety must be free to be piety.
+        sources:
+          - {author: Leo XIII, title: "Immortale Dei", year: 1885}
+          - {author: Sayyid Qutb, title: "Milestones", year: 1964}
+          - {author: Ruhollah Khomeini, title: "Islamic Government: Governance of the Jurist", year: 1970}
+        traditions:
+          defining: [conservatism.integralism, religious.islamism-khomeinist, religious.islamism-brotherhood]
+          typical: [religious.salafi-jihadism, religious.salafism-quietist, religious.religious-zionism, fascism.clerical]
+          contested: [conservatism.cst, conservatism.postliberal]
+          rejects: [liberalism.classical, liberalism.republican, religious.post-islamism, nationalism.kemalism, marxism.ml]
+        presupposes: [state.nature.ordained-authority]
+        excludes: [religion.public.separation, religion.public.laicite]
+        tension: [religion.public.heritage-establishment]
+        tags: [global-south]
+        analysis:
+          gains: [landed-capital, petty-bourgeoisie]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            Religious government places clergy, religious endowments and the bazaar merchants
+            allied with them at the center of law and property; in Iran the bonyads, religious
+            foundations, came to control a large share of the economy beyond public audit, while
+            independent unions were suppressed.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            Anti-imperialist Marxists credit Khomeinist Iran with breaking from US control of its
+            oil; others argue its clerical-merchant elite simply replaced the Shah's comprador class.
+
+      - id: religion.public.faith-as-nation
+        label: The nation is defined by its faith; minorities live by its terms
+        claim: >
+          The nation and its religion are one: to be a true member of the nation is to share or
+          honor its faith. The state should protect the majority religion's primacy, and minorities
+          live on its terms.
+        voiced: >
+          This is the land of our dharma, and its culture is Hindu culture. Buddhism shall have the
+          foremost place. A nation without its faith is a body without a soul; those who come from
+          elsewhere must respect the house they live in.
+        you: >
+          You think your nation is defined by its religion and that the state should protect that
+          religion's first place, with minorities accepting it.
+        because: >
+          Religion is what held these nations together through centuries of foreign rule, and
+          their liberation movements drew on it. Sri Lanka's constitution gives Buddhism the
+          foremost place; Hindutva sees India as a Hindu civilization that Muslim and British
+          conquerors tried to break. Protecting the majority faith protects the nation's continuity
+          against conversion campaigns and outside powers.
+        against:
+          - from: liberalism.egalitarian
+            text: >
+              Majority faith as national identity has produced the anti-Tamil riots of Sri Lanka,
+              the expulsion of the Rohingya and the Gujarat killings of 2002. Citizenship by religion
+              is second-class citizenship for everyone else.
+          - from: nationalism.ambedkarite
+            text: >
+              The "nation's faith" in India is Brahmin faith. It asks Dalits to defend the religion
+              that made them untouchable against Muslims and Christians who did not.
+        sources:
+          - {author: V. D. Savarkar, title: "Essentials of Hindutva", year: 1923}
+          - {author: Anagarika Dharmapala, title: "Return to Righteousness", year: 1965, note: "posthumous collection of speeches and writings"}
+        traditions:
+          defining: [nationalism.hindutva, religious.buddhist-nationalism]
+          typical: [religious.religious-zionism, conservatism.national, nationalism.ethnic, nationalism.eurasianism]
+          contested: [conservatism.right-populism, religious.islamism-brotherhood]
+          rejects: [liberalism.egalitarian, nationalism.ambedkarite, liberalism.republican, marxism.ml, nationalism.gandhian]
+        presupposes: []
+        excludes: [religion.public.separation]
+        tension: [religion.public.divine-law]
+        tags: [global-south]
+        analysis:
+          gains: [petty-bourgeoisie, industrial-capital]
+          pays: [reserve-army, peripheral-workers]
+          mechanism: >
+            Defining the nation by faith turns economic competition between majority and minority
+            traders and workers into religious conflict, gives majority shopkeepers and employers an
+            edge through boycotts and exclusion, and leaves minority workers more exposed to low pay
+            and violence.
+          drain: none
+          law_of_value: none
+
+      - id: religion.public.prophetic-church
+        label: Faith in public on the side of the poor, not in power
+        claim: >
+          Religion belongs in public life as the voice of the poor and the oppressed: organizing,
+          denouncing injustice and defending the dispossessed. Churches and mosques should stand
+          with the people, not seek state power or bless those who hold it.
+        voiced: >
+          To know God is to do justice. The church that does not stand with the poor is not the
+          church of Jesus Christ. We read the Bible in the base communities and in the land
+          occupations, with the people, against the idols of money and power.
+        you: >
+          You think faith belongs in public life as the voice of the poor and should challenge power,
+          not hold it.
+        because: >
+          The prophets spoke against kings and the rich; Jesus was executed by an empire. Liberation
+          theology took this to Latin America's base communities, which organized landless workers,
+          unions and resistance to dictatorships; Archbishop Romero was killed for it. A faith that
+          keeps to the private soul abandons the poor; one that seeks power is captured by it.
+        against:
+          - from: conservatism.cst
+            text: >
+              The church's mission is the salvation of souls, not class struggle. Liberation
+              theology borrowed Marxist analysis and reduced the Gospel to a political program.
+          - from: marxism.classical
+            text: >
+              Religion is the sigh of the oppressed creature and the opium of the people. A radical
+              priest consoles more effectively than a conservative one, and the consolation still
+              stands in for the change.
+        sources:
+          - {author: Gustavo Gutiérrez, title: "A Theology of Liberation", year: 1971}
+          - {author: Ali Shariati, title: "Religion vs. Religion", year: 1971}
+          - {author: James H. Cone, title: "A Black Theology of Liberation", year: 1970}
+        traditions:
+          defining: [religious.liberation-theology]
+          typical: [religious.christian-socialism, religious.islamic-socialism, religious.engaged-buddhism, anarchism.christian]
+          contested: [conservatism.cst, marxism.ml]
+          rejects: [conservatism.integralism, conservatism.evangelical-right]
+        presupposes: []
+        excludes: []
+        tension: [religion.public.divine-law]
+        tags: [global-south]
+        analysis:
+          gains: [peasantry, peripheral-workers, reserve-army]
+          pays: [landed-capital, comprador-capital]
+          mechanism: >
+            Church networks used for organizing gave landless peasants and urban poor protection and
+            meeting places under military rule, as in Brazil's land movement, and directed
+            religious authority against landowners rather than in their support.
+          drain: reduces
+          law_of_value: none
+          consciousness: hegemonic
+
+      - id: religion.public.withers-with-its-causes
+        label: Religion will fade when the misery it answers is ended
+        claim: >
+          Religion answers real suffering with an imaginary consolation. Separate church from
+          state, take its land and schools into public hands, and religion will fade as the
+          conditions that produce it are abolished.
+        voiced: >
+          Religion is the sigh of the oppressed creature, the heart of a heartless world. The
+          abolition of religion as the illusory happiness of the people is the demand for their
+          real happiness. Criticize the world that needs illusions.
+        you: >
+          You think religion is a response to real suffering, and that it will fade once that
+          suffering is ended, without needing to be banned.
+        because: >
+          Marx's point was not that believers are fools but that religion expresses real misery
+          and protests against it. Churches have also been great landowners and allies of
+          landlords, so separating them from state and land is part of any revolution. Lenin held
+          that religion is a private matter for the state but not for the party; persecution only
+          makes martyrs.
+        against:
+          - from: conservatism.cst
+            text: >
+              Religion is not a symptom of poverty: the rich pray too, and faith has outlived every
+              state that predicted its end. Socialist states that tried to make religion fade filled
+              prisons with priests.
+          - from: religious.liberation-theology
+            text: >
+              The faith of the poor has also been their protest and their organization. Treating
+              it as a sedative misses what the base communities did.
+        sources:
+          - {author: Karl Marx, title: "A Contribution to the Critique of Hegel's Philosophy of Right: Introduction", year: 1844}
+          - {author: V. I. Lenin, title: "Socialism and Religion", year: 1905}
+        traditions:
+          defining: [marxism.classical, marxism.leninism]
+          typical: [marxism.ml, marxism.trotskyism, marxism.maoism, anarchism.communist, marxism.hoxhaism]
+          contested: [religious.islamic-socialism, marxism.western]
+          rejects: [conservatism.cst, conservatism.integralism, religious.islamism-brotherhood, religious.liberation-theology]
+        presupposes: [history.motor.class-struggle]
+        excludes: [religion.public.divine-law, religion.public.heritage-establishment]
+        tension: [religion.public.prophetic-church]
+        tags: []
+        analysis:
+          gains: [peasantry, core-workers]
+          pays: [landed-capital]
+          mechanism: >
+            Separating churches from the state and taking church lands and schools into public
+            hands, as in Mexico, Russia and China, transferred land to peasants and schooling to the
+            state, ending clerical landlords' rents.
+          drain: none
+          law_of_value: suspends
+          disputed: >
+            Marxists dispute how far to go: Hoxha's Albania banned religion in 1967, which most
+            Marxist traditions reject; Cuba and Vietnam reached accommodations with churches.
+
+  - id: tradition.modernity
+    domain: culture
+    layer: horizon
+    question: Tradition or modernity?
+    plain: Should we keep the ways we inherited, or remake life by reason, science and new ideas?
+    short: tradition and modernity
+    importance: 2
+    region: religion
+    positions:
+      - id: tradition.modernity.inherited-wisdom
+        label: Change slowly; inherited institutions hold more wisdom than any plan
+        claim: >
+          Inherited institutions, customs and beliefs carry the tested experience of generations.
+          Change should come slowly, by repair rather than demolition, and the burden of proof lies
+          on those who would tear down.
+        voiced: >
+          A state without the means of some change is without the means of its conservation. We
+          are afraid to put men to live and trade each on his own private stock of reason. Society
+          is a partnership between the living, the dead and those who are yet to be born.
+        you: >
+          You think inherited customs and institutions hold more wisdom than any new plan, and that
+          change should be slow and careful.
+        because: >
+          No single mind can grasp all the reasons a custom exists; many solve problems we no
+          longer notice. Burke saw the French Revolution's rational plans end in terror, and
+          Oakeshott showed that political knowledge is practical, learned by doing, not deduced
+          from principles. Gradual change keeps what works while fixing what does not.
+        against:
+          - from: liberalism.classical
+            text: >
+              Slavery, the burning of widows and the subjection of women were all inherited
+              institutions. Tradition has no means of telling its wisdom from its crimes.
+          - from: marxism.classical
+            text: >
+              The "wisdom of generations" is the order of the property-owners of those generations.
+              Burke defended the rights of a landed aristocracy dressed as the voice of the ages.
+        sources:
+          - {author: Edmund Burke, title: "Reflections on the Revolution in France", year: 1790}
+          - {author: Michael Oakeshott, title: "Rationalism in Politics", year: 1962}
+        traditions:
+          defining: [conservatism.burkean]
+          typical: [conservatism.one-nation, conservatism.christian-democracy, liberalism.austrian, communitarianism, conservatism.paleo, religious.confucian]
+          contested: [conservatism.national]
+          rejects: [liberalism.progressive, marxism.classical, technology.e-acc, conservatism.reactionary]
+        presupposes: []
+        excludes: [tradition.modernity.rupture]
+        tension: [tradition.modernity.sacred-order]
+        tags: [debate.burke-paine]
+        analysis:
+          gains: [landed-capital, finance-capital, petty-bourgeoisie]
+          pays: [reserve-army]
+          mechanism: >
+            A presumption in favor of existing institutions protects existing property titles,
+            inheritance and established hierarchies against rapid redistribution, so those who
+            hold property gain stability and those without wait.
+          drain: none
+          law_of_value: none
+
+      - id: tradition.modernity.enlightenment
+        label: Judge every tradition by reason and evidence; modernity is liberation
+        claim: >
+          Reason, science and individual rights have made human life longer, richer and freer than
+          tradition ever did. Every custom should be judged by reason and evidence, and kept only if
+          it passes.
+        voiced: >
+          Sapere aude: have the courage to use your own understanding. Enlightenment is humanity's
+          emergence from its self-incurred immaturity. Life expectancy, literacy and peace prove it
+          works; we should not apologize for progress.
+        you: >
+          You think reason, science and rights have improved human life enormously, and that
+          traditions should be kept only if they pass the test of reason.
+        because: >
+          In two centuries child mortality fell from about four in ten to under one in twenty-five,
+          literacy spread to most of humanity, and famine retreated, all through science, markets and
+          rights born of the Enlightenment. Kant defined it as the courage to think for oneself.
+          Traditions that cannot give reasons for themselves rule only by habit and fear.
+        against:
+          - from: conservatism.burkean
+            text: >
+              Reason that recognizes no limit becomes the guillotine and the planned famine. People
+              cannot live by reasons alone; they need meaning, belonging and habit.
+          - from: nationalism.decolonial
+            text: >
+              The Enlightenment's "humanity" excluded the colonized; the century that praised reason
+              also traded slaves. Its progress in Europe was paid for in Africa, Asia and the
+              Americas.
+        sources:
+          - {author: Immanuel Kant, title: "An Answer to the Question: What Is Enlightenment?", year: 1784}
+          - {author: Steven Pinker, title: "Enlightenment Now", year: 2018}
+          - {author: Thomas Paine, title: "Rights of Man", year: 1791}
+        traditions:
+          defining: [liberalism.classical, liberalism.progressive]
+          typical: [liberalism.technocratic, liberalism.utilitarian, technology.effective-altruism, liberalism.internationalist, nationalism.kemalism]
+          contested: [marxism.classical, socdem.nordic]
+          rejects: [conservatism.traditionalist, nationalism.decolonial, conservatism.reactionary]
+        presupposes: []
+        excludes: [tradition.modernity.sacred-order]
+        tension: [tradition.modernity.inherited-wisdom]
+        tags: [debate.burke-paine]
+        analysis:
+          gains: [professional-managerial, industrial-capital, finance-capital]
+          pays: [peasantry]
+          mechanism: >
+            Measuring every way of life against a single standard of progress, set in the core,
+            justifies replacing customary land tenure and commons with titled private property and
+            markets; the scientific and professional strata and capital gain, peasant communities
+            lose their land rules.
+          drain: sustains
+          law_of_value: extends
+          disputed: >
+            Classical Marxists defend Enlightenment reason against tradition and against the
+            decolonial critique; dependency writers stress its use in justifying empire.
+
+      - id: tradition.modernity.sacred-order
+        label: Modernity is a decline from sacred order; return to it
+        claim: >
+          The modern world is a fall from a sacred, hierarchical order in which every part of life
+          was tied to the eternal. Its equality, materialism and individualism are symptoms of
+          decline, and the task is to restore what was lost.
+        voiced: >
+          The modern world is an anomaly, a monstrosity, the reign of quantity. Everything that was
+          ordered to the eternal has been reduced to the economic and the useful. Stand upright
+          among the ruins.
+        you: >
+          You think the modern world is a decline from a sacred order, and that the task is to
+          return to the eternal truths it abandoned.
+        because: >
+          Every traditional civilization, Hindu, Islamic, Christian, Chinese, ordered life by a
+          sacred hierarchy linking society to the transcendent. Guénon and Nasr argue that modern
+          science and individualism cut that link and left meaning to the market. The ecological
+          crisis and the despair of modern people are signs of a civilization that forgot the sacred.
+        against:
+          - from: liberalism.classical
+            text: >
+              The "sacred order" was a hierarchy in which most people were serfs, slaves or
+              untouchables, and the eternal truths were enforced by the sword.
+          - from: marxism.classical
+            text: >
+              Nostalgia for a hierarchy that never existed as described, and a politics that in
+              Evola's case served fascism.
+        sources:
+          - {author: René Guénon, title: "The Crisis of the Modern World", year: 1927}
+          - {author: Julius Evola, title: "Revolt Against the Modern World", year: 1934}
+          - {author: Seyyed Hossein Nasr, title: "Knowledge and the Sacred", year: 1981}
+        traditions:
+          defining: [conservatism.traditionalist]
+          typical: [fascism.traditionalist, conservatism.reactionary, conservatism.integralism, nationalism.eurasianism]
+          contested: [religious.salafism-quietist, conservatism.paleo]
+          rejects: [liberalism.classical, liberalism.progressive, marxism.classical, technology.e-acc]
+        presupposes: []
+        excludes: [tradition.modernity.enlightenment, tradition.modernity.rupture]
+        tension: [tradition.modernity.inherited-wisdom]
+        tags: []
+        analysis:
+          gains: [landed-capital]
+          pays: [peasantry, reserve-army]
+          mechanism: >
+            A program to restore sacred hierarchy would restore the authority of landed, clerical
+            and aristocratic strata over peasants and laborers; in practice its political heirs have
+            allied with property against labor movements.
+          drain: none
+          law_of_value: suspends
+
+      - id: tradition.modernity.selective-modernization
+        label: Take modern science and industry, keep our own culture and values
+        claim: >
+          A people can adopt modern science, technology and industry while keeping its own
+          culture, religion and values. Modernization does not have to mean Westernization.
+        voiced: >
+          Chinese learning for the essence, Western learning for use. Japanese spirit, Western
+          technique. We will build the railways and the universities, and our children will still
+          honor their parents and their God.
+        you: >
+          You think your country can take modern science and industry while keeping its own culture
+          and values, without copying the West.
+        because: >
+          Meiji Japan, South Korea and China industrialized faster than Europe did, with their own
+          family structures, religions and forms of government. Iqbal argued that Islam itself
+          contains the principle of movement and can rebuild its thought in modern terms. Copying
+          Western ways wholesale produces rootless elites and resentful masses; selective
+          modernization produces strength with continuity.
+        against:
+          - from: marxism.classical
+            text: >
+              Technique is not neutral: factories, markets and cities dissolve the family and the
+              faith that the program means to keep. What it keeps is usually the obedience, not the
+              meaning.
+          - from: conservatism.traditionalist
+            text: >
+              Western technique carries the Western spirit within it. Take the machine and you take
+              its view of the world; the essence will be hollowed out from inside.
+        sources:
+          - {author: Zhang Zhidong, title: "Quanxue pian (Exhortation to Learning)", year: 1898}
+          - {author: Muhammad Iqbal, title: "The Reconstruction of Religious Thought in Islam", year: 1930}
+          - {author: Sun Yat-sen, title: "Three Principles of the People", year: 1924}
+        traditions:
+          defining: [nationalism.developmental-state, religious.confucian]
+          typical: [nationalism.three-principles, religious.post-islamism, religious.political-meritocracy, marxism.scc, nationalism.hindutva, nationalism.eurasianism]
+          contested: [religious.islamism-brotherhood, nationalism.kemalism]
+          rejects: [conservatism.traditionalist, liberalism.progressive]
+        presupposes: []
+        excludes: []
+        tension: [tradition.modernity.enlightenment]
+        tags: [global-south]
+        analysis:
+          gains: [industrial-capital, professional-managerial]
+          pays: [core-workers, peasantry]
+          mechanism: >
+            Pairing industrial growth with inherited norms of family duty and deference let East
+            Asian states draw peasants into factories while keeping care in the household and
+            discipline at work, which held down wages and social spending during rapid
+            accumulation.
+          drain: reduces
+          law_of_value: regulates
+
+      - id: tradition.modernity.transcend-both
+        label: Capitalism destroyed tradition and created new chains; go beyond both
+        claim: >
+          Capitalist modernity swept away old hierarchies but put the rule of money and capital in
+          their place. The answer is neither to go back nor to celebrate it, but to build a new
+          society that takes the best of both, including communal traditions the market destroyed.
+        voiced: >
+          All that is solid melts into air, all that is holy is profaned. We do not want the past
+          back, nor this present. Socialism in Peru will not be copy or imitation; it will be
+          heroic creation, built on the communal traditions of the ayllu.
+        you: >
+          You think capitalism destroyed old ways and created new oppressions, and that the task is
+          to go beyond both, building on old communal traditions as well as modern science.
+        because: >
+          Marx praised capitalism for breaking feudal bonds and condemned it for leaving no tie
+          between people but cash payment. Mariátegui argued that the Andean peasant community, with
+          its collective labor, was not a relic but a base for socialism in Peru. Modern productive
+          powers are needed to end want; communal forms show that cooperation is not foreign to
+          human life.
+        against:
+          - from: conservatism.burkean
+            text: >
+              A new society built from the best of all past ones is the rationalist's dream again;
+              those who promised it razed both the tradition and the future.
+          - from: nationalism.decolonial
+            text: >
+              Marxism still measures all peoples by Europe's history of stages; it values the ayllu
+              only as a step toward its own idea of progress.
+        sources:
+          - {author: Karl Marx and Friedrich Engels, title: "The Communist Manifesto", year: 1848}
+          - {author: José Carlos Mariátegui, title: "Seven Interpretive Essays on Peruvian Reality", year: 1928}
+          - {author: Marshall Berman, title: "All That Is Solid Melts into Air", year: 1982}
+        traditions:
+          defining: [marxism.mariategui, marxism.classical]
+          typical: [marxism.western, marxism.african-socialism, marxism.leninism, marxism.ecosocialism, religious.islamic-socialism]
+          contested: [marxism.maoism]
+          rejects: [conservatism.traditionalist, liberalism.classical]
+        presupposes: [history.motor.class-struggle]
+        excludes: [tradition.modernity.sacred-order]
+        tension: [tradition.modernity.enlightenment]
+        tags: [global-south]
+        analysis:
+          gains: [peasantry, core-workers, peripheral-workers]
+          pays: [industrial-capital, landed-capital, finance-capital]
+          mechanism: >
+            Defending communal land and labor traditions while seeking modern production under
+            collective ownership blocks the conversion of peasant commons into private land and
+            cheap labor, which reduces what capital can extract from the countryside.
+          drain: reduces
+          law_of_value: suspends
+          consciousness: hegemonic
+
+      - id: tradition.modernity.decolonial
+        label: '"Modernity" is Europe''s story; colonized peoples have their own paths'
+        claim: >
+          What is called modernity is Europe's self-image, and its other face is colonial
+          domination. Colonized peoples should not be judged by Europe's measure; their own ways of
+          knowing and living are alternatives, not stages to be overcome.
+        voiced: >
+          There is no modernity without coloniality. Europe called itself the future and called us
+          the past. Buen vivir, ubuntu, swaraj: these are not leftovers but other ways of being
+          human, and they are needed now that Europe's way is burning the planet.
+        you: >
+          You think "modernity" is a European story told at the expense of colonized peoples, whose
+          own ways of life are real alternatives, not backward stages.
+        because: >
+          Dussel argues modernity began in 1492, when Europe defined itself against the peoples it
+          conquered. Gandhi's Hind Swaraj called modern civilization a disease that made people
+          slaves to machines and appetites, and saw in village India a different way. Nandy showed
+          how colonialism colonized minds by convincing the colonized that their past was
+          childhood. Indigenous movements in Bolivia and Ecuador have written buen vivir into their
+          constitutions.
+        against:
+          - from: marxism.classical
+            text: >
+              Romanticizing the village ignores its landlords and its caste and gender orders.
+              Colonized peoples have used science, medicine and socialism, born in Europe, to free
+              themselves.
+          - from: liberalism.classical
+            text: >
+              Rights, science and medicine are not European property but human achievements; telling
+              poor peoples to keep their traditions is a luxury of academics in rich universities.
+        sources:
+          - {author: Enrique Dussel, title: "1492: El encubrimiento del otro", year: 1992, note: "English: The Invention of the Americas"}
+          - {author: M. K. Gandhi, title: "Hind Swaraj", year: 1909}
+          - {author: Ashis Nandy, title: "The Intimate Enemy", year: 1983}
+          - {author: Walter D. Mignolo, title: "The Darker Side of Western Modernity", year: 2011}
+        traditions:
+          defining: [nationalism.decolonial]
+          typical: [nationalism.gandhian, nationalism.indigenous-sovereignty, feminism.decolonial, zapatismo, ecology.deep-ecology]
+          contested: [marxism.mariategui, nationalism.pan-africanism]
+          rejects: [liberalism.classical, liberalism.technocratic, technology.e-acc]
+        presupposes: []
+        excludes: [tradition.modernity.enlightenment]
+        tension: [tradition.modernity.transcend-both]
+        tags: [global-south]
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: [comprador-capital, finance-capital]
+          mechanism: >
+            Defending Indigenous and peasant forms of land, knowledge and production against
+            "development" protects commons from mining, plantation and property-titling programs
+            through which core and comprador capital acquire land and resources.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            Marxists such as Vivek Chibber argue the decolonial critique abandons universal
+            categories the oppressed need; decolonial writers answer that those categories were
+            never universal.
+
+      - id: tradition.modernity.rupture
+        label: Break with the past; technology and the future should win
+        claim: >
+          The past has no authority over the future. Technology and constant innovation should be
+          allowed to transform every institution, custom and even human nature, and resistance in
+          the name of tradition only prolongs suffering.
+        voiced: >
+          We stand on the last promontory of the centuries. Why look back? Technology is the
+          glory of human ambition; every custom that blocks it is a dead hand on the living.
+          Accelerate.
+        you: >
+          You think the past should have no authority over the future, and that technology should be
+          free to transform every custom and institution.
+        because: >
+          Every major gain in human welfare, from vaccines to the internet, came by breaking with
+          how things had always been done. Traditions defended by those who benefit from them slow
+          progress that would save lives. The Futurists saw that the machine age demands a new
+          culture; techno-optimists today argue that abundance waits only on the courage to build.
+        against:
+          - from: conservatism.burkean
+            text: >
+              The ruthless future has been tried: the Futurists marched into fascism, and every
+              utopia of total rupture burned what it could not understand.
+          - from: marxism.ecosocialism
+            text: >
+              "Technology" here means capital's technology, owned and steered for profit. Breaking
+              with the past serves those who own the future.
+        sources:
+          - {author: Filippo Tommaso Marinetti, title: "The Futurist Manifesto", year: 1909}
+          - {author: Marc Andreessen, title: "The Techno-Optimist Manifesto", year: 2023}
+        traditions:
+          defining: [technology.e-acc]
+          typical: [technology.transhumanism, technology.r-acc, technology.l-acc, technology.cyberlibertarian]
+          contested: [fascism.italian, liberalism.progressive]
+          rejects: [conservatism.burkean, conservatism.traditionalist, ecology.deep-ecology, nationalism.decolonial]
+        presupposes: []
+        excludes: [tradition.modernity.inherited-wisdom, tradition.modernity.sacred-order]
+        tension: []
+        tags: []
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [core-workers, peasantry, peripheral-workers]
+          mechanism: >
+            Removing customary and legal limits on new technology lets the owners of platforms and
+            capital reorganize work, data and land without negotiation, transferring the costs of
+            disruption to workers and communities whose skills and holdings are made obsolete.
+          drain: sustains
+          law_of_value: extends

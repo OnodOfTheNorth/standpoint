@@ -1,0 +1,1491 @@
+problematics:
+  - id: labor.division
+    domain: economy
+    layer: analysis
+    question: What divides workers from each other?
+    plain: People who work for a living often end up at odds with each other. What splits them, and why?
+    short: divisions among workers
+    importance: 2
+    positions:
+      - id: labor.division.contract-status-is-a-wedge
+        label: Temps versus permanent staff is a division employers use
+        claim: >
+          Employers split the workforce into tiers, permanent staff, agency temps, subcontractors, gig workers and
+          informal day laborers, on different pay and rights, and use the gap to hold everyone's wages down.
+        voiced: "Same floor, same work, three different contracts. The agency temp is how they tell us we're replaceable."
+        you: >
+          You think splitting workers into permanent staff, temps and contractors is a way for employers to keep
+          everyone weaker.
+        because: >
+          A temp on a weekly contract cannot risk joining a union; a permanent worker who sees temps doing the same job
+          for less knows how easily she could be replaced. Firms have pushed whole functions, cleaning, logistics,
+          security, out to subcontractors and agencies so that the people doing the work do not legally work for them.
+          In much of the world most workers are informal, outside any contract at all. The tiers are not a natural
+          sorting by skill; they are built to weaken bargaining power, and they only lose their force when the
+          better-protected tier refuses to be bought off.
+        against:
+          - from: liberalism.chicago
+            text: >
+              The division is created by the protections permanent insiders enjoy, which make firms unwilling to hire.
+              Flexible contracts are how outsiders, the young and migrants get a foot in the door.
+          - from: marxism.third-worldism
+            text: >
+              The largest tier is not the agency contract but the border. The temp in Rotterdam and the permanent
+              worker beside her both stand above the worker in Dhaka who sewed the goods they ship.
+        sources:
+          - {author: Guy Standing, title: "The Precariat: The New Dangerous Class", year: 2011}
+          - {author: Arne Kalleberg, title: "Good Jobs, Bad Jobs", year: 2011}
+          - {author: David Weil, title: The Fissured Workplace, year: 2014}
+        traditions:
+          defining: []
+          typical: [anarchism.syndicalist, marxism.autonomism, marxism.trotskyism, socdem.labourism, socdem.democratic-socialism, marxism.ml, anarchism.platformist]
+          contested: [marxism.third-worldism, socdem.third-way]
+          rejects: [liberalism.chicago, liberalism.austrian]
+        presupposes: [workplace.conflict.structural-antagonism]
+        excludes: []
+        tension: [labor.division.skill-and-effort]
+        tags: [keystone]
+        analysis:
+          gains: [core-workers, reserve-army, peripheral-workers]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Treating contract tiers as an employer tactic leads permanent workers to organize temps and demand equal
+            pay for equal work, which removes the cheaper tier that firms use to undercut wages and lowers the
+            savings from outsourcing.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            Standing treats the precariat as a new class; most Marxists treat it as a layer of the working class
+            weakened by contract form.
+      - id: labor.division.outsiders-undercut-us
+        label: Outsiders and newcomers undercut our wages
+        claim: >
+          What divides workers is that newcomers, migrants, foreign workers or people from other groups will work for
+          less, and employers use them to undercut the wages and conditions of the workers already here.
+        voiced: "They bring in people who'll work for half and live ten to a room. Of course wages are falling. Hire local first."
+        you: >
+          You think newcomers and outsiders who work for less are pulling down the wages of people who were here
+          first.
+        because: >
+          The law of supply and demand applies to labor. When employers can draw on workers from poorer countries who
+          will accept lower pay and worse conditions, wages for the existing workforce fall, especially for those
+          without degrees. Employers lobby for open borders because they gain. Protecting the wages of local workers
+          means controlling who can come in and making sure jobs go to citizens first. A union of the nation's workers
+          has to decide who is in it.
+        against:
+          - from: marxism.classical
+            text: >
+              The English worker who hated the Irish worker was the secret of his own impotence, and the capitalist
+              knew it. Undercutting is stopped by organizing the newcomer, not by fighting him.
+          - from: liberalism.chicago
+            text: >
+              Studies of large migrant arrivals, from the Mariel boatlift on, find small or no effects on native wages.
+              Migrants fill different jobs, spend their wages, and start firms.
+        sources:
+          - {author: Samuel Gompers and Herman Gutstadt, title: "Meat vs. Rice: American Manhood Against Asiatic Coolieism", year: 1902}
+          - {author: George Borjas, title: We Wanted Workers, year: 2016}
+          - {author: David Goodhart, title: The Road to Somewhere, year: 2017}
+        traditions:
+          defining: [commonsense.look-after-your-own, conservatism.right-populism]
+          typical: [conservatism.national, nationalism.ethnic, conservatism.paleo, fascism.identitarian, conservatism.postliberal]
+          contested: [socdem.labourism, socdem.left-populism]
+          rejects: [anarchism.syndicalist, marxism.trotskyism, marxism.classical, liberalism.chicago, libertarianism.ancap]
+        presupposes: []
+        excludes: [labor.division.divide-and-rule]
+        tension: [solidarity.basis.shared-class]
+        tags: [keystone, commonsense]
+        analysis:
+          gains: [core-workers, petty-bourgeoisie]
+          pays: [peripheral-workers, reserve-army]
+          mechanism: >
+            Blaming newcomers directs workers to demand border controls instead of organizing migrants, which leaves
+            migrants without rights and cheaper to hire, the very condition that lets employers undercut wages; core
+            citizens keep a privileged tier at the expense of those excluded.
+          drain: sustains
+          law_of_value: regulates
+          disputed: >
+            Materialists agree employers use migrant labor to cut wages; they differ on whether the answer is open
+            organization (most Marxists), or whether a sovereign country in the periphery may restrict capital and
+            labor flows to protect development.
+          consciousness: economic-corporate
+      - id: labor.division.race-caste-nation
+        label: Race, caste and nation divide workers, and some workers gain from it
+        claim: >
+          Workers are divided by race, caste, nation and religion, divisions made by conquest and slavery and kept
+          alive both by employers and by workers of the dominant group who gain real advantages from them.
+        voiced: "The white worker was paid in part by a public and psychological wage. Caste is not a division of labour; it is a division of labourers."
+        you: >
+          You think workers are split by race, caste and nation, and that workers in the dominant group get real
+          advantages from those splits, which is why they last.
+        because: >
+          After slavery, white workers in the American South accepted lower wages than they might have won in exchange
+          for status, access to public spaces and the vote, and so refused common cause with Black workers. Caste in
+          India assigns people to occupations by birth and grades them so that each group has someone beneath it.
+          Where cheaper labor of another group is brought in, the higher-paid group often organizes to exclude it rather
+          than lift it. These divisions are not illusions planted by bosses alone; they rest on real, if small, gains
+          for some workers, and only end when those gains are fought over openly.
+        against:
+          - from: marxism.trotskyism
+            text: >
+              Talk of the wages of whiteness writes off the majority of the working class as beneficiaries of racism.
+              The gains are crumbs next to what racial division costs all workers in lower wages and broken unions.
+          - from: liberalism.chicago
+            text: >
+              Discrimination is costly to the employer who indulges it. Competition rewards the firm that hires the
+              best worker regardless of color or caste, which is why open markets erode these barriers.
+        sources:
+          - {author: W. E. B. Du Bois, title: Black Reconstruction in America, year: 1935}
+          - {author: B. R. Ambedkar, title: Annihilation of Caste, year: 1936}
+          - {author: Edna Bonacich, title: "A Theory of Ethnic Antagonism: The Split Labor Market", year: 1972}
+          - {author: David Roediger, title: The Wages of Whiteness, year: 1991}
+        traditions:
+          defining: [marxism.black-radical, nationalism.ambedkarite]
+          typical: [feminism.black, nationalism.black-nationalism, nationalism.decolonial, marxism.third-worldism, nationalism.indigenous-sovereignty]
+          contested: [marxism.ml, marxism.trotskyism]
+          rejects: [liberalism.chicago, nationalism.hindutva, conservatism.right-populism]
+        presupposes: []
+        excludes: []
+        tension: [labor.division.divide-and-rule]
+        tags: []
+        analysis:
+          gains: [peripheral-workers, reserve-army, peasantry]
+          pays: [industrial-capital, landed-capital, core-workers]
+          mechanism: >
+            Naming the advantages of dominant-group workers supports demands for equal pay, land and access for
+            oppressed castes, races and migrants, which removes the cheaper tier employers and landlords draw on and
+            asks better-placed workers to give up their protected position.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            Du Bois and Roediger stress real gains for white workers; Trotskyists and many Marxist-Leninists stress
+            that racism costs the whole class more than it pays any part of it.
+      - id: labor.division.core-periphery
+        label: The deepest division is between workers in rich and poor countries
+        claim: >
+          The widest gap among workers is between those in the rich countries and those in the poor ones: similar work
+          is paid many times more in the core, partly out of the cheap labor and resources the periphery supplies.
+        voiced: "The world's working class is in Dhaka, Lagos and Guangzhou. The core worker's wage carries a share of their unpaid labour, and that is why internationalism is so hard."
+        you: >
+          You think the main divide among workers is between rich and poor countries, and that workers in rich countries
+          benefit, in part, from cheap labor elsewhere.
+        because: >
+          A garment worker in Bangladesh and one in Italy may run the same machine; one earns a tenth of the other. The
+          gap is held by borders that let goods and capital move but not workers. Core consumers buy goods made by
+          peripheral labor at prices that reflect peripheral wages, and core states and unions have often defended this
+          arrangement through trade policy, migration control and war. This is why appeals to world working-class unity
+          so often fail: they ask core workers to give something up. Lenin saw a bribed upper layer; today it may be
+          much of the core working class.
+        against:
+          - from: marxism.trotskyism
+            text: >
+              Core workers are exploited by core capital, often more intensely than ever. Treating them as
+              beneficiaries of imperialism abandons them to the right and denies the revolutionary role of the most
+              organized workers in the world.
+          - from: liberalism.chicago
+            text: >
+              Wage differences reflect productivity, which reflects capital, skills and institutions. The Bangladeshi
+              worker's wage has risen because of exports to rich countries, not despite them.
+        sources:
+          - {author: V. I. Lenin, title: "Imperialism, the Highest Stage of Capitalism", year: 1917}
+          - {author: Arghiri Emmanuel, title: Unequal Exchange, year: 1969}
+          - {author: Zak Cope, title: "Divided World, Divided Class", year: 2012}
+        traditions:
+          defining: [marxism.third-worldism]
+          typical: [marxism.mlm, marxism.maoism, marxism.dependency, nationalism.pan-africanism, marxism.world-systems]
+          contested: [marxism.ml, marxism.black-radical]
+          rejects: [marxism.trotskyism, liberalism.chicago, socdem.labourism]
+        presupposes: [imperialism.nature.unequal-exchange-drain]
+        excludes: []
+        tension: [labor.division.divide-and-rule]
+        tags: []
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, core-workers]
+          mechanism: >
+            Naming the core-periphery wage gap as the main division supports raising peripheral wages and supply prices
+            and opening borders to labor, which would cut core firms' margins and raise prices for core consumers,
+            including workers.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >
+            Whether a labor aristocracy exists, and how large it is, is the sharpest split among materialists:
+            Emmanuel, Amin and Cope say yes in different degrees; most Trotskyists and many Marxist-Leninists say the
+            core working class remains exploited and revolutionary.
+      - id: labor.division.divide-and-rule
+        label: Bosses stir up division; underneath, all workers share one interest
+        claim: >
+          All workers share one basic interest against those who employ them; divisions by race, nationality, religion
+          or contract are stirred up by employers, politicians and the press to stop them uniting.
+        voiced: "An injury to one is an injury to all. Every time they tell you to blame the worker next to you, ask who gains."
+        you: >
+          You think workers all share the same basic interest, and that divisions between them are mostly stirred up
+          by bosses and politicians.
+        because: >
+          Every employer facing a united workforce has tried to split it, by bringing in strikebreakers of another
+          nationality, paying one group a little more, or funding papers that blame immigrants for low wages. The
+          English bourgeoisie kept English and Irish workers at each other's throats; American employers used race to
+          break strikes. The divisions are real in their effects but not in the underlying interest: all who live by
+          selling their labor are weakened when any part is cheaper or without rights. Unity is a practical necessity,
+          won by organizing everyone together.
+        against:
+          - from: marxism.black-radical
+            text: >
+              White workers were not simply fooled. They took the public and psychological wage, and many still do.
+              Calling it manipulation lets them off and leaves the division standing.
+          - from: marxism.third-worldism
+            text: >
+              The interest of a worker in Ohio and one in the Congo is not the same today. Pretending it is ignores the
+              material basis of the division and explains nothing about why unity keeps failing.
+        sources:
+          - {author: Friedrich Engels, title: The Condition of the Working Class in England, year: 1845}
+          - {author: Karl Marx, title: "Capital, Volume I", year: 1867}
+          - {author: Karl Marx, title: Letter to Sigfrid Meyer and August Vogt, year: 1870}
+        traditions:
+          defining: [marxism.trotskyism, marxism.classical]
+          typical: [anarchism.syndicalist, marxism.ml, marxism.left-communism, socdem.democratic-socialism, anarchism.communist, marxism.luxemburgism]
+          contested: [marxism.maoism, marxism.black-radical]
+          rejects: [conservatism.right-populism, conservatism.national, marxism.third-worldism]
+        presupposes: [class.concept.relation-to-production]
+        excludes: [labor.division.outsiders-undercut-us]
+        tension: [labor.division.core-periphery, labor.division.race-caste-nation]
+        tags: []
+        analysis:
+          gains: [core-workers, reserve-army, peripheral-workers]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Treating divisions as tactics of the employer points workers to organize across race, nationality and
+            contract, which removes the cheaper tier employers rely on; by denying any material gain to better-placed
+            workers, it can leave real privileges unaddressed.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            Third-Worldists and some Black radical thinkers hold the position underestimates real material
+            differences; Trotskyists hold that stressing those differences divides the class.
+          consciousness: class-economic
+      - id: labor.division.skill-and-effort
+        label: Workers differ in skill and effort, and pay reflects it
+        claim: >
+          Differences among workers mostly reflect real differences in skill, training, effort and productivity; pay
+          differs because contributions differ, and there is nothing sinister in that.
+        voiced: "A surgeon and a porter both work in a hospital. Nobody thinks they should be paid the same, and nobody is dividing them; they just do different jobs."
+        you: >
+          You think workers are paid differently mostly because their skills and effort differ, and that this is fair.
+        because: >
+          Training costs time and money, and people who invest in skills expect a return; without it nobody would
+          spend years becoming an engineer. Employers pay more for workers who produce more. Occupations need different
+          abilities, and society needs some positions filled by the most capable, which requires rewarding them. Calling
+          these differences divisions imposed by bosses treats every worker as interchangeable, which they are not.
+        against:
+          - from: marxism.social-reproduction
+            text: >
+              What counts as "skill" follows who does the work. Caring, cleaning and sewing are skilled and exhausting,
+              and they are paid little because women, migrants and the colonized do them.
+          - from: marxism.third-worldism
+            text: >
+              A Bangladeshi engineer earns less than a German cleaner. Skill explains differences within a labor market;
+              the border explains the larger ones.
+        sources:
+          - {author: Kingsley Davis and Wilbert Moore, title: Some Principles of Stratification, year: 1945}
+          - {author: Gary Becker, title: The Economics of Discrimination, year: 1957}
+          - {author: Gary Becker, title: Human Capital, year: 1964}
+        traditions:
+          defining: [liberalism.chicago]
+          typical: [liberalism.technocratic, commonsense.self-reliance, religious.political-meritocracy, liberalism.classical, conservatism.fusionism]
+          contested: [socdem.third-way, liberalism.social]
+          rejects: [marxism.social-reproduction, marxism.third-worldism, anarchism.communist]
+        presupposes: [wage.nature.marginal-product]
+        excludes: []
+        tension: [labor.division.contract-status-is-a-wedge, labor.division.paid-and-unpaid]
+        tags: []
+        analysis:
+          gains: [professional-managerial, industrial-capital]
+          pays: [reserve-army, peripheral-workers, core-workers]
+          mechanism: >
+            Explaining pay gaps by skill justifies credential hierarchies and low pay in care and manual work, and
+            explains peripheral wages as low productivity, which protects professional incomes and the price gap
+            through which value moves to the core.
+          drain: sustains
+          law_of_value: extends
+      - id: labor.division.paid-and-unpaid
+        label: Paid and unpaid work divide workers, and women carry the unpaid part
+        claim: >
+          A basic division runs between paid work and the unpaid work of cooking, cleaning and raising children, done
+          mostly by women; that unpaid labor holds wages down and splits households along lines of gender.
+        voiced: "They say it is love. We say it is unwaged work. Every wage pays for two workers, and only one gets the money."
+        you: >
+          You think the unpaid work of caring and housework, done mostly by women, divides workers and lets employers
+          pay less than the real cost of keeping a worker going.
+        because: >
+          Every worker who shows up for a shift was fed, clothed and raised by someone, usually a woman, without pay.
+          Employers get that labor for free, so the wage can be lower than the real cost of keeping a household alive.
+          The division between the waged man and the unwaged woman puts them on different sides within the class, and
+          makes women cheaper when they enter paid work. On a world scale, peasant women in the periphery subsidize
+          cheap food and cheap labor for the whole system. Recognizing reproduction as work is the start of uniting
+          the class.
+        against:
+          - from: marxism.classical
+            text: >
+              Housework produces useful things for the household, not value for capital. Wages for housework would
+              bring the market into the home instead of socializing domestic labor through public kitchens, laundries
+              and childcare.
+          - from: conservatism.traditionalist
+            text: >
+              The home is not a workplace and a mother is not an unpaid employee. Calling love labor turns the family
+              into another market and devalues the most important work there is.
+        sources:
+          - {author: Mariarosa Dalla Costa and Selma James, title: The Power of Women and the Subversion of the Community, year: 1972}
+          - {author: Silvia Federici, title: Wages Against Housework, year: 1975}
+          - {author: Maria Mies, title: Patriarchy and Accumulation on a World Scale, year: 1986}
+          - {author: Tithi Bhattacharya (ed.), title: Social Reproduction Theory, year: 2017}
+        traditions:
+          defining: [marxism.social-reproduction, feminism.materialist]
+          typical: [marxism.autonomism, feminism.decolonial, anarchism.feminist, feminism.black, feminism.radical]
+          contested: [marxism.classical, feminism.liberal]
+          rejects: [conservatism.traditionalist, conservatism.evangelical-right, liberalism.chicago]
+        presupposes: []
+        excludes: []
+        tension: [labor.division.skill-and-effort]
+        tags: []
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry, reserve-army]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Counting domestic work as work supports public childcare, care pay and shorter hours, which shift the cost
+            of keeping workers alive from households, mostly women, onto employers and the state; on a world scale it
+            names the peasant women whose unpaid labor keeps food and wages cheap.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            Marxist feminists split between wages for housework (Dalla Costa, James, Federici) and socializing
+            domestic labor (Vogel, Bhattacharya); Mies extends the analysis to the periphery.
+  - id: solidarity.basis
+    domain: economy
+    layer: priority
+    question: What is solidarity based on?
+    plain: When you stand with other people, even at a cost to yourself, what makes you do it?
+    short: the basis of solidarity
+    importance: 2
+    positions:
+      - id: solidarity.basis.tactical
+        label: Solidarity is a matter of numbers and leverage
+        claim: >
+          Solidarity is practical: alone you are weak, together you have leverage. You stand with others because a
+          bigger, united group wins more than you could on your own.
+        voiced: "Strength in numbers. Not because we all love each other, but because one of us gets fired and fifty of us don't."
+        you: >
+          You see solidarity as a matter of leverage: standing together is how you win, so you do it.
+        because: >
+          Power comes from organized people or organized money, and workers have only the first. An employer can replace
+          one worker but not a whole shift. Solidarity does not need anyone to share a theory or a creed; it needs a
+          clear calculation that we get more together. That makes it robust: it survives disagreements over politics,
+          religion and everything else, as long as the numbers add up.
+        against:
+          - from: marxism.classical
+            text: >
+              Solidarity by calculation lasts until the other side changes the numbers. Offer the permanent staff a
+              bonus to drop the temps and the calculation flips; only a shared position holds against that offer.
+          - from: conservatism.cst
+            text: >
+              Solidarity reduced to leverage is collective egoism. It unites us against them, and it ends where our
+              interest ends, leaving the weakest outside.
+        sources:
+          - {author: Mancur Olson, title: The Logic of Collective Action, year: 1965}
+          - {author: Saul Alinsky, title: Rules for Radicals, year: 1971}
+        traditions:
+          defining: []
+          typical: [socdem.labourism, socdem.left-populism, commonsense.look-after-your-own, commonsense.rigged, liberalism.utilitarian]
+          contested: [marxism.trotskyism, anarchism.syndicalist]
+          rejects: [conservatism.cst, libertarianism.objectivist]
+        presupposes: []
+        excludes: []
+        tension: [solidarity.basis.shared-class]
+        tags: [keystone]
+        analysis:
+          gains: [core-workers]
+          pays: [industrial-capital]
+          mechanism: >
+            Solidarity based on leverage raises the bargaining power of those already organized, but because it lasts
+            only while the numbers favor it, employers can break it by offering one group a better deal than the
+            rest.
+          drain: none
+          law_of_value: regulates
+          consciousness: economic-corporate
+      - id: solidarity.basis.moral
+        label: Solidarity is the decent thing to do
+        claim: >
+          Solidarity rests on decency: when people are treated unfairly or are suffering, you stand with them because
+          it is right, whether or not you gain from it.
+        voiced: "It's the decent thing to do. You don't walk past someone being treated like dirt and ask what's in it for you."
+        you: >
+          You stand with others because it is the right thing to do, not because you get something out of it.
+        because: >
+          Human beings can recognize the suffering of others and feel it as a claim on them. Over history the circle of
+          those we treat as "one of us" has widened from kin to tribe, nation and humanity. Solidarity that rests on
+          calculation shrinks when the calculation changes; solidarity grounded in conscience can include strangers,
+          foreigners and those who can give nothing back. That is what made people boycott apartheid goods and shelter
+          refugees.
+        against:
+          - from: marxism.classical
+            text: >
+              Decency without an organization and an interest behind it is sympathy, and it stops at the first real
+              cost. The abolition of slavery needed slaves who revolted, not only consciences that were moved.
+          - from: libertarianism.objectivist
+            text: >
+              A morality that tells you to sacrifice yourself for strangers makes you a servant of every claim made on
+              you. Benevolence is a choice, not a duty.
+        sources:
+          - {author: Peter Singer, title: The Expanding Circle, year: 1981}
+          - {author: Richard Rorty, title: "Contingency, Irony, and Solidarity", year: 1989}
+        traditions:
+          defining: []
+          typical: [liberalism.progressive, liberalism.egalitarian, liberalism.social, technology.effective-altruism, commonsense.live-and-let-live, religious.christian-socialism]
+          contested: [conservatism.cst]
+          rejects: [libertarianism.objectivist, marxism.left-communism]
+        presupposes: []
+        excludes: []
+        tension: []
+        tags: [keystone]
+        analysis:
+          gains: [reserve-army, peripheral-workers]
+          pays: []
+          mechanism: >
+            Moral solidarity can reach those outside any shared organization, such as refugees or distant workers, but
+            without collective power behind it, it acts mainly through donations, boycotts and appeals, which leave
+            ownership and the price structure as they are; it costs no class anything it cannot choose to give.
+          drain: softens
+          law_of_value: none
+          disputed: >
+            Whether a cross-class moral solidarity counts as a claim to speak for the whole society (hegemonic) or
+            stays below class organization because it carries no program for power is disputed; the reading here
+            follows its universal scope.
+          consciousness: hegemonic
+      - id: solidarity.basis.shared-class
+        label: Solidarity rests on a shared position
+        claim: >
+          Solidarity rests on a shared position: people who must work for others to live share interests and an
+          adversary, whatever their trade, contract, nationality or creed.
+        voiced: "Same boss, same floor. Their weakness is ours. Workers of all countries, unite."
+        you: >
+          You stand with others because you are in the same position: working for someone else, facing the same
+          pressures.
+        because: >
+          Solidarity is not a favor and not only a tactic; it follows from where people stand. The temp and the
+          permanent worker sell their time to the same employer, and any one of them made cheaper or weaker weakens
+          the rest. Because the bond is in the situation, it can hold when the other side offers some workers a better
+          deal: they can see the offer for what it is. Class solidarity also reaches across borders, because the same
+          companies employ workers in many countries.
+        against:
+          - from: liberalism.austrian
+            text: >
+              People in the same "class" have different skills, prospects and goals. Solidarity imposed on them in the
+              name of a shared position sacrifices individuals to a category.
+          - from: conservatism.national
+            text: >
+              A worker has more in common with his employer's family down the road than with a stranger on another
+              continent. Nation, faith and place make solidarity real; class is an abstraction.
+        sources:
+          - {author: Karl Marx and Friedrich Engels, title: The Communist Manifesto, year: 1848}
+          - {author: Karl Marx, title: Inaugural Address of the International Working Men's Association, year: 1864}
+          - {author: E. P. Thompson, title: The Making of the English Working Class, year: 1963}
+        traditions:
+          defining: [marxism.classical, marxism.leninism, anarchism.syndicalist]
+          typical: [marxism.ml, marxism.trotskyism, marxism.maoism, marxism.left-communism, marxism.council-communism, anarchism.communist, anarchism.platformist, marxism.luxemburgism]
+          contested: [socdem.labourism, socdem.democratic-socialism]
+          rejects: [liberalism.austrian, libertarianism.objectivist, conservatism.national, fascism.italian]
+        presupposes: [class.concept.relation-to-production]
+        excludes: [solidarity.basis.self-interest]
+        tension: [solidarity.basis.kinship-nation]
+        tags: [keystone]
+        analysis:
+          gains: [core-workers, peripheral-workers, reserve-army]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Grounding solidarity in shared position lets workers refuse offers that buy off one group at the expense
+            of another, which removes employers' main tool for dividing a workforce and raises the bargaining power of
+            the weakest tier.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            Third-Worldists hold that "shared position" across core and periphery is more claimed than real today;
+            Trotskyists hold it is the material basis of internationalism.
+          consciousness: class-economic
+      - id: solidarity.basis.kinship-nation
+        label: Solidarity is with your own people first
+        claim: >
+          Solidarity grows from belonging: family, neighborhood, faith and nation. You stand with your own people first,
+          and a community that tries to stand with everyone ends up standing with no one.
+        voiced: "Charity begins at home. You look after your family, your town, your country. Only then can you help anyone else."
+        you: >
+          You think solidarity starts with your own people, family, community and nation, and that it is real because it
+          is close.
+        because: >
+          People sacrifice for those they know and share a life with. The great welfare states and labor movements were
+          built inside nations, by people who saw each other as one people. Humanity in general cannot call on anyone's
+          loyalty; the nation can. Loyalty to one's own is not hatred of others; it is the only solid footing from which
+          to deal with them. A politics that asks people to put strangers first breeds resentment and breaks the bonds
+          it relies on.
+        against:
+          - from: marxism.classical
+            text: >
+              The worker's "own people" includes the employer who lays him off and excludes the migrant on the same
+              line. National solidarity is how the owners of a nation recruit its workers for their wars and markets.
+          - from: liberalism.egalitarian
+            text: >
+              Nationality is as arbitrary as birth into a rich family. Restricting solidarity to compatriots makes a
+              morally irrelevant accident decide who gets help.
+        sources:
+          - {author: Edmund Burke, title: Reflections on the Revolution in France, year: 1790}
+          - {author: David Miller, title: On Nationality, year: 1995}
+          - {author: Yoram Hazony, title: The Virtue of Nationalism, year: 2018}
+        traditions:
+          defining: [conservatism.national, commonsense.look-after-your-own]
+          typical: [nationalism.civic, nationalism.ethnic, conservatism.right-populism, conservatism.burkean, conservatism.postliberal, communitarianism, conservatism.paleo]
+          contested: [socdem.labourism, socdem.nordic]
+          rejects: [marxism.classical, anarchism.syndicalist, liberalism.egalitarian, marxism.trotskyism]
+        presupposes: []
+        excludes: []
+        tension: [solidarity.basis.shared-class]
+        tags: [commonsense]
+        analysis:
+          gains: [core-workers, petty-bourgeoisie, industrial-capital]
+          pays: [peripheral-workers, reserve-army]
+          mechanism: >
+            National solidarity binds workers to their own state and employers, which can sustain welfare at home while
+            leaving migrants and foreign workers outside it and lining workers up behind their state in trade wars and
+            wars proper.
+          drain: sustains
+          law_of_value: regulates
+          disputed: >
+            In the periphery, national solidarity against foreign domination has driven anti-colonial movements and
+            would score as reducing the drain; Gramsci's national-popular names this hegemonic form.
+          consciousness: economic-corporate
+      - id: solidarity.basis.one-body
+        label: We are members of one body under God
+        claim: >
+          Solidarity rests on a bond under God: all people are members of one body, or one community of faith, and each
+          is responsible for all, above all the poor.
+        voiced: "If one member suffers, all suffer together. The believers in their mutual love are like one body: when one part aches, the whole body feels it."
+        you: >
+          You think solidarity comes from a bond under God: we belong to one another and are responsible for each other,
+          especially the poor.
+        because: >
+          Solidarity is not a feeling of vague compassion but a firm and persevering commitment to the common good,
+          because we are all really responsible for all. It rests on the dignity of each person as made by God and on
+          the unity of the human family. Scripture and tradition command care for the widow, the orphan and the
+          stranger, and condemn those who join house to house. Faith gives solidarity a ground that survives the change
+          of interest and the passing of moods.
+        against:
+          - from: marxism.classical
+            text: >
+              The body has a head that decides and hands that work. Solidarity under God has preached patience to the
+              poor and charity to the rich for centuries while the land stayed with the landlords.
+          - from: liberalism.progressive
+            text: >
+              Solidarity grounded in faith draws a line around the faithful. Those outside the body, or who break its
+              rules, find its love ends at the door.
+        sources:
+          - {author: Sayyid Qutb, title: Social Justice in Islam, year: 1949}
+          - {author: Gustavo Gutiérrez, title: A Theology of Liberation, year: 1971}
+          - {author: John Paul II, title: Sollicitudo Rei Socialis, year: 1987}
+        traditions:
+          defining: [conservatism.cst, religious.liberation-theology]
+          typical: [religious.christian-socialism, religious.islamism-brotherhood, religious.islamic-socialism, conservatism.christian-democracy, religious.engaged-buddhism, anarchism.christian]
+          contested: [conservatism.evangelical-right, conservatism.integralism]
+          rejects: [libertarianism.objectivist, marxism.left-communism]
+        presupposes: []
+        excludes: [solidarity.basis.self-interest]
+        tension: []
+        tags: []
+        analysis:
+          gains: [peasantry, reserve-army, core-workers]
+          pays: []
+          mechanism: >
+            Religious solidarity builds charity networks, parishes and movements that care for the poor across
+            classes; in liberation theology's form it organized base communities and land occupations against
+            landlords, while in its conservative form it reconciles classes without changing ownership.
+          drain: softens
+          law_of_value: regulates
+          disputed: >
+            The class content depends on the form: liberation theology's option for the poor targets landed and
+            comprador capital; conservative Catholic and Islamist charity networks have also served to channel the poor
+            away from class organization.
+          consciousness: hegemonic
+      - id: solidarity.basis.anti-imperialist
+        label: Solidarity among the oppressed peoples against a common enemy
+        claim: >
+          Solidarity rests on a common enemy: peoples dominated by the same imperial powers and world system stand
+          together, and solidarity is tested by whether people in the rich countries side with them against their own
+          states.
+        voiced: "Solidarity is not charity. It is the commitment of peoples fighting the same enemy. Create two, three, many Vietnams."
+        you: >
+          You think real solidarity is between peoples fighting the same powerful countries and companies, and that it
+          means siding with them even against your own government.
+        because: >
+          The peoples of Africa, Asia and Latin America face the same monopolies, the same lenders and the same armies.
+          Their struggles weaken the system wherever they win, which is why Cuba sent troops to Angola and doctors across
+          the world, why the Bandung and Tricontinental conferences were held, and why the Vietnamese victory changed
+          what was possible everywhere. Solidarity from the core means more than sympathy: refusing to load arms
+          shipments, opposing sanctions and wars, and supporting the right of the South to control its resources.
+        against:
+          - from: marxism.trotskyism
+            text: >
+              Anti-imperialism without class independence ends in support for whatever government is in conflict with
+              Washington, including those that jail their own workers. Solidarity is with workers, not states.
+          - from: liberalism.internationalist
+            text: >
+              Solidarity is owed to people, not to governments that claim to speak for them. Many "anti-imperialist"
+              states oppress their own citizens and their neighbors.
+        sources:
+          - {author: Frantz Fanon, title: The Wretched of the Earth, year: 1961}
+          - {author: Amílcar Cabral, title: The Weapon of Theory, year: 1966}
+          - {author: Ernesto Che Guevara, title: Message to the Tricontinental, year: 1967}
+        traditions:
+          defining: [marxism.guevarism, marxism.third-worldism]
+          typical: [marxism.maoism, marxism.mlm, nationalism.pan-africanism, nationalism.bolivarianism, marxism.black-radical, nationalism.palestinian, marxism.juche, marxism.ml]
+          contested: [marxism.trotskyism, marxism.scc]
+          rejects: [liberalism.internationalist, conservatism.neo, marxism.third-camp]
+        presupposes: [imperialism.nature.unequal-exchange-drain]
+        excludes: []
+        tension: [solidarity.basis.kinship-nation]
+        tags: []
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, comprador-capital]
+          mechanism: >
+            Anti-imperialist solidarity backs sovereign development, resource nationalization and resistance to
+            sanctions and wars, which raises the price of peripheral labor and resources and cuts the profits core firms
+            draw from them.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >
+            Trotskyists and third-camp socialists hold that solidarity with states in conflict with imperialism can
+            override the interests of those states' own workers; the frame holds that judging such states requires
+            weighing the siege.
+          consciousness: hegemonic
+      - id: solidarity.basis.mutual-aid
+        label: Solidarity is mutual aid, built in practice
+        claim: >
+          Solidarity is mutual aid: people helping each other directly, as equals, without waiting for a state or a
+          charity. It grows from a deep human capacity for cooperation and is built through practice.
+        voiced: "Solidarity, not charity. We feed each other, house each other, defend each other, and we learn what we can do together."
+        you: >
+          You think solidarity is people helping each other directly as equals, and that it grows from doing it, not
+          from theory.
+        because: >
+          Cooperation is as much a fact of nature as competition: among animals and among people, the species and
+          communities that practice mutual aid survive. In every disaster, ordinary people organize kitchens, shelters
+          and rescue before any authority arrives. Mutual aid differs from charity because it is reciprocal and
+          horizontal, and it builds the networks and confidence people need to fight for more. Solidarity is not a
+          principle you adopt; it is a habit you form.
+        against:
+          - from: marxism.leninism
+            text: >
+              Mutual aid feeds people for a week; it does not take power. Without an organization that can confront the
+              state, networks of care are tolerated until they become a threat, then crushed.
+          - from: liberalism.classical
+            text: >
+              Mutual aid is admirable and it has a name: civil society. It flourishes where property is secure and the
+              state small, not where the goal is to abolish both.
+        sources:
+          - {author: Peter Kropotkin, title: "Mutual Aid: A Factor of Evolution", year: 1902}
+          - {author: Colin Ward, title: Anarchy in Action, year: 1973}
+          - {author: Dean Spade, title: Mutual Aid, year: 2020}
+        traditions:
+          defining: [anarchism.communist]
+          typical: [anarchism.platformist, anarchism.communalism, anarchism.confederalism, zapatismo, anarchism.syndicalist, anarchism.insurrectionary, anarchism.mutualist]
+          contested: [marxism.autonomism, libertarianism.paleo]
+          rejects: [marxism.leninism, libertarianism.objectivist]
+        presupposes: []
+        excludes: []
+        tension: []
+        tags: []
+        analysis:
+          gains: [reserve-army, core-workers, peasantry]
+          pays: [finance-capital]
+          mechanism: >
+            Mutual aid networks reduce dependence on wages, landlords and lenders for survival in emergencies and build
+            capacity for collective action, but they operate on a small scale and leave ownership of production and the
+            state's power untouched.
+          drain: none
+          law_of_value: suspends
+          consciousness: class-economic
+      - id: solidarity.basis.self-interest
+        label: Cooperation is mutual self-interest; forced solidarity demands sacrifice
+        claim: >
+          People cooperate best through voluntary exchange and freely chosen ties, each pursuing their own interest;
+          "solidarity" demanded in the name of a class or a nation is a claim on what belongs to individuals.
+        voiced: "It is not from the benevolence of the butcher that we expect our dinner, but from his regard to his own interest. Trade is the solidarity that works."
+        you: >
+          You think people cooperate best when each pursues their own interest freely, and you are wary of solidarity
+          that others demand from you.
+        because: >
+          Markets coordinate millions of strangers who never meet and owe each other nothing, and every one of them
+          gains. That is cooperation on a scale no movement has matched. Solidarity demanded by a union, a party or a
+          nation means some people giving up their interests for others, under pressure. Freely chosen ties, to family,
+          friends, a church, a club, are real and admirable precisely because they are chosen. A rational person helps
+          others when it serves values he holds, not because a group claims him.
+        against:
+          - from: marxism.classical
+            text: >
+              Owners never act as isolated individuals: they form firms, associations, lobbies and cartels. Telling
+              workers to act alone while capital acts together is not neutrality.
+          - from: conservatism.cst
+            text: >
+              No society survives on exchange alone. Families, communities and nations rest on obligations no one chose,
+              and a market of pure self-interest consumes the trust it depends on.
+        sources:
+          - {author: Adam Smith, title: The Wealth of Nations, year: 1776}
+          - {author: Ayn Rand, title: The Virtue of Selfishness, year: 1964}
+        traditions:
+          defining: [libertarianism.objectivist]
+          typical: [libertarianism.ancap, liberalism.austrian, liberalism.chicago, libertarianism.minarchist, commonsense.self-reliance]
+          contested: [liberalism.classical, conservatism.fusionism]
+          rejects: [marxism.classical, conservatism.cst, anarchism.communist, conservatism.national]
+        presupposes: []
+        excludes: [solidarity.basis.shared-class, solidarity.basis.one-body]
+        tension: []
+        tags: []
+        analysis:
+          gains: [finance-capital, industrial-capital, petty-bourgeoisie]
+          pays: [core-workers, reserve-army, peripheral-workers]
+          mechanism: >
+            Treating collective solidarity as an illegitimate claim leaves workers to bargain one by one with employers
+            who already act collectively through firms and associations, which keeps wages down and makes union
+            membership a private choice to be discouraged.
+          drain: sustains
+          law_of_value: extends
+          consciousness: economic-corporate
+  - id: unions.role
+    domain: economy
+    layer: strategy
+    question: What are unions for?
+    plain: What should a union do, whom should it serve, and is it a good thing at all?
+    short: the role of unions
+    importance: 2
+    positions:
+      - id: unions.role.class-organ
+        label: Unions are the organs of workers as a class
+        claim: >
+          Unions are the basic organizations of the working class: they defend wages and conditions, and they also
+          unite workers across trades and borders and train them for the larger fight over who runs society.
+        voiced: "Trade unions must act as organising centres of the working class in the broad interest of its complete emancipation, not only fight a guerrilla war over wages."
+        you: >
+          You see unions as organizations of the whole working class, there to fight for pay now and to unite workers for
+          bigger changes.
+        because: >
+          A union that bargains only for its own members will be divided and outflanked: employers move work to the
+          non-union plant, the temps, the next country. A union that organizes everyone, joins political struggles,
+          supports other workers' strikes and refuses work against other peoples acts for the class as a whole. Every
+          gain in a strike, a contract or a solidarity action is also a lesson in collective power. That is why
+          employers fight unions so hard, and why unions have been the backbone of every serious workers' movement.
+        against:
+          - from: anarchism.syndicalist
+            text: >
+              The union is not a school that sends its graduates to the party. The union itself, through direct action
+              and the general strike, is the instrument of revolution and the cell of the new society.
+          - from: liberalism.austrian
+            text: >
+              A union that acts for a "class" rather than its members turns a voluntary association into a political
+              army, using strikes and pickets to coerce employers, consumers and other workers.
+        sources:
+          - {author: Friedrich Engels, title: The Condition of the Working Class in England, year: 1845}
+          - {author: Karl Marx, title: "Instructions for the Delegates of the Provisional General Council: The Different Questions", year: 1866, note: "Resolution on trade unions adopted at the Geneva Congress of the International, published 1867"}
+          - {author: Rosa Luxemburg, title: "The Mass Strike, the Political Party and the Trade Unions", year: 1906}
+        traditions:
+          defining: [marxism.classical]
+          typical: [marxism.leninism, marxism.ml, marxism.trotskyism, marxism.luxemburgism, marxism.maoism, socdem.democratic-socialism, anarchism.platformist]
+          contested: [marxism.left-communism, marxism.council-communism, socdem.labourism]
+          rejects: [liberalism.austrian, liberalism.chicago, fascism.italian, conservatism.fusionism]
+        presupposes: [workplace.conflict.structural-antagonism]
+        excludes: [unions.role.obstacle]
+        tension: [unions.role.bargaining-agent]
+        tags: [keystone]
+        analysis:
+          gains: [core-workers, peripheral-workers, reserve-army]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Unions that organize across trades, contracts and borders and act politically remove employers' ability
+            to play one group against another and raise the wage share across the economy rather than in one
+            workplace.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            Lenin held that unions on their own produce only trade-union consciousness and need a party to rise above
+            it; Luxemburg held mass strikes generate class consciousness directly; council communists held unions
+            become part of capital's management of labor.
+          consciousness: class-economic
+      - id: unions.role.revolutionary-syndicate
+        label: The union is the instrument of revolution and the seed of the new society
+        claim: >
+          The union is the instrument of revolution: through direct action and finally a general strike, workers' own
+          unions take over the means of production and run them, without parties or the state.
+        voiced: "The union today is an organization of resistance; tomorrow it will be the organization of production and distribution, the basis of social reorganization."
+        you: >
+          You think unions should do more than bargain: workers' own unions should eventually take over and run
+          production themselves.
+        because: >
+          Parties win elections and betray; states change masters and stay states. The union is the only organization
+          workers build where they work, run by themselves. Through strikes, sabotage, boycotts and occupations they
+          learn to fight and to manage. A general strike can paralyze capital, and the unions, federated by industry and
+          locality, can restart production under workers' control, as the CNT did in Catalonia in 1936. No leaders, no
+          politicians, no deals with the boss.
+        against:
+          - from: marxism.leninism
+            text: >
+              The general strike that ignores the state is crushed by the state. Catalonia showed it: the CNT ran the
+              factories and left power in others' hands, and lost both.
+          - from: marxism.council-communism
+            text: >
+              Unions are organizations of sellers of labor power, with officials who negotiate its price. Revolution
+              comes through workers' councils formed in struggle, which unions resist.
+        sources:
+          - {author: Confédération générale du travail, title: Charter of Amiens, year: 1906}
+          - {author: Rudolf Rocker, title: "Anarcho-Syndicalism: Theory and Practice", year: 1938}
+        traditions:
+          defining: [anarchism.syndicalist]
+          typical: [anarchism.platformist, anarchism.communist]
+          contested: [marxism.council-communism, marxism.autonomism, fascism.national-syndicalism]
+          rejects: [marxism.leninism, socdem.labourism, liberalism.chicago, fascism.italian]
+        presupposes: [workplace.conflict.structural-antagonism]
+        excludes: [unions.role.obstacle, unions.role.social-partner]
+        tension: [elections.role.main-road]
+        tags: []
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [industrial-capital, finance-capital, landed-capital]
+          mechanism: >
+            Revolutionary unions aim to take over workplaces directly through strikes and occupations, which would
+            transfer control of production and its surplus from owners to workers' federations, though without a
+            strategy for state power they have been defeated by armed opponents.
+          drain: reduces
+          law_of_value: abolishes
+          consciousness: hegemonic
+      - id: unions.role.bargaining-agent
+        label: Unions are bargaining agents for their members
+        claim: >
+          A union's job is to get its members better pay, hours and conditions and protect them from unfair treatment;
+          broader politics is beside the point, and a union that forgets its members fails them.
+        voiced: "More. More pay, more time off, more safety. That's what the dues are for. Leave the revolution to someone else."
+        you: >
+          You see a union as there to get its members a better deal at work and protect them, not to change the world.
+        because: >
+          Workers join unions to be paid fairly and treated with respect, not to sign up for a political program. A
+          union that sticks to bargaining serves members of every political view, keeps their trust and wins concrete
+          gains. Studies show unions raise members' wages, reduce turnover and give workers a voice. Political
+          adventures drain dues, split the membership and invite repression.
+        against:
+          - from: marxism.classical
+            text: >
+              A union that bargains only for its members watches employers move work to the non-union plant and the
+              next country. Business unionism has presided over the collapse of membership in every country where it
+              ruled.
+          - from: liberalism.chicago
+            text: >
+              Unions that win more for members than the market would raise costs, cut jobs and push other workers into
+              lower-paid non-union work. The gain is a transfer among workers, not from owners.
+        sources:
+          - {author: Sidney Webb and Beatrice Webb, title: Industrial Democracy, year: 1897}
+          - {author: Selig Perlman, title: A Theory of the Labor Movement, year: 1928}
+          - {author: Richard Freeman and James Medoff, title: What Do Unions Do?, year: 1984}
+        traditions:
+          defining: [socdem.labourism]
+          typical: [socdem.keynesian, liberalism.social, socdem.third-way, commonsense.look-after-your-own, conservatism.christian-democracy]
+          contested: [socdem.nordic, conservatism.one-nation]
+          rejects: [marxism.classical, anarchism.syndicalist, liberalism.austrian]
+        presupposes: []
+        excludes: []
+        tension: [unions.role.class-organ]
+        tags: [keystone]
+        analysis:
+          gains: [core-workers]
+          pays: [industrial-capital, petty-bourgeoisie]
+          mechanism: >
+            Bargaining for members alone raises pay in organized workplaces, but lets employers shift work to
+            non-members, temps and other countries, and can be bought off with deals that protect members at the
+            expense of the unorganized.
+          drain: softens
+          law_of_value: regulates
+          consciousness: economic-corporate
+      - id: unions.role.obstacle
+        label: Unions are an obstacle, to the firm, the economy or the individual
+        claim: >
+          Unions hold things back: they raise costs and block change for employers, protect insiders at the expense of
+          the unemployed and consumers, and force individual workers to accept terms they did not choose.
+        voiced: "Union bosses take your dues, protect the lazy, and price everyone else out of a job. I can negotiate for myself."
+        you: >
+          You think unions do more harm than good: they cost jobs, protect the lazy and push workers around.
+        because: >
+          A union is a monopoly seller of labor. It can raise its members' wages only by keeping others out of their
+          jobs, pushing them into lower-paid work or unemployment. Strikes hurt consumers and third parties, and the
+          threat of them deters investment. Closed shops and mandatory dues force workers to fund organizations they
+          did not choose. A good worker does better negotiating for herself, and a firm that must ask a union for
+          permission to change cannot compete.
+        against:
+          - from: socdem.labourism
+            text: >
+              The decline of unions since 1980 tracks the fall in the wage share and the rise in inequality almost
+              exactly. Without them, productivity gains went to shareholders, not workers.
+          - from: conservatism.cst
+            text: >
+              The right of workers to form associations is a natural right that the state must protect. A worker alone
+              before a large firm is not negotiating; he is asking.
+        sources:
+          - {author: W. H. Hutt, title: The Theory of Collective Bargaining, year: 1930}
+          - {author: Friedrich Hayek, title: The Constitution of Liberty, year: 1960}
+          - {author: Milton Friedman, title: Capitalism and Freedom, year: 1962}
+        traditions:
+          defining: [liberalism.austrian, liberalism.chicago]
+          typical: [libertarianism.ancap, libertarianism.objectivist, libertarianism.minarchist, conservatism.fusionism, commonsense.self-reliance, technology.e-acc]
+          contested: [liberalism.technocratic, conservatism.right-populism]
+          rejects: [socdem.labourism, socdem.nordic, conservatism.cst, marxism.classical, anarchism.syndicalist]
+        presupposes: [wage.nature.voluntary-exchange]
+        excludes: [unions.role.class-organ, unions.role.revolutionary-syndicate]
+        tension: [unions.role.social-partner]
+        tags: [keystone]
+        analysis:
+          gains: [industrial-capital, finance-capital, petty-bourgeoisie]
+          pays: [core-workers, peripheral-workers, reserve-army]
+          mechanism: >
+            Treating unions as obstacles supports right-to-work laws, limits on strikes and union avoidance, which
+            leave workers to bargain one by one and shift income from wages to profits.
+          drain: sustains
+          law_of_value: extends
+          consciousness: hegemonic
+      - id: unions.role.social-partner
+        label: Unions are social partners who help govern the economy
+        claim: >
+          Unions are partners in governing the economy: together with employer associations and the state they set
+          wages across whole industries, run unemployment insurance, sit on company boards and shape national economic
+          policy.
+        voiced: "Equal pay for equal work across the whole economy. Let the unprofitable firms close; we'll retrain the workers and move them to better jobs."
+        you: >
+          You see unions as partners in running the economy, setting wages across industries and sharing in big
+          decisions with employers and government.
+        because: >
+          In Sweden, Denmark and Austria, unions organized most workers and bargained centrally, so they could pursue a
+          wage policy for the whole economy: equal pay for equal work, which squeezed low-productivity firms and pushed
+          labor toward modern ones, with the state retraining and moving workers. Unions ran unemployment funds, which
+          kept membership high. In Germany, workers sit on supervisory boards. A strong, encompassing union movement
+          can take responsibility for the whole economy and win more than one fighting plant by plant.
+        against:
+          - from: marxism.classical
+            text: >
+              The partnership holds while profits allow. When the Swedish unions proposed wage-earner funds to take
+              ownership gradually, employers mobilized and buried them. Partners in managing capitalism take
+              responsibility for its crises.
+          - from: liberalism.chicago
+            text: >
+              Centralized wage-setting is a cartel blessed by the state. It looks efficient until the shock it did not
+              foresee, after which it freezes the economy.
+        sources:
+          - {author: Gösta Rehn and Rudolf Meidner, title: Trade Unions and Full Employment, year: 1951}
+          - {author: Walter Korpi, title: The Democratic Class Struggle, year: 1983}
+          - {author: Peter Katzenstein, title: Small States in World Markets, year: 1985}
+        traditions:
+          defining: [socdem.nordic]
+          typical: [conservatism.christian-democracy, conservatism.cst, socdem.labourism, socdem.keynesian, liberalism.ordoliberal]
+          contested: [socdem.third-way, socdem.democratic-socialism]
+          rejects: [liberalism.chicago, liberalism.austrian, anarchism.syndicalist, marxism.left-communism]
+        presupposes: [workplace.conflict.pluralist-bargaining]
+        excludes: [unions.role.revolutionary-syndicate]
+        tension: [unions.role.obstacle]
+        tags: []
+        analysis:
+          gains: [core-workers, professional-managerial, industrial-capital]
+          pays: [finance-capital, petty-bourgeoisie]
+          mechanism: >
+            Encompassing unions raise and compress core wages, push capital toward high-productivity export firms and
+            secure welfare through the unemployment funds, while those export firms' competitiveness rests in part on
+            cheap inputs and markets in the periphery.
+          drain: softens
+          law_of_value: regulates
+          disputed: >
+            Some materialists read the Swedish model as a step toward socialization (Meidner); others as class
+            compromise that tied labor to capital's success (Przeworski) and rested on the core's world position.
+          consciousness: hegemonic
+      - id: unions.role.national-labor
+        label: Unions belong inside the nation, not in a class war
+        claim: >
+          Unions should defend workers as members of the nation: organized under or alongside the state, they protect
+          wages and dignity against greedy employers and foreign capital, but they must not wage class war against the
+          nation's own producers.
+        voiced: "The organized workers are the backbone of the nation. Not against the boss, not against the country, but for social justice and the fatherland."
+        you: >
+          You think unions should protect workers as part of the nation, standing up to foreign companies and greedy
+          bosses, but not tearing the country apart in class war.
+        because: >
+          Class war weakens the nation and serves its foreign rivals. Workers deserve protection and a fair share, and
+          the strongest way to secure it is a union movement tied to a national project and backed by the state, which
+          can make employers pay and keep foreign capital in check. In Argentina, unions inside the national movement
+          won pensions, paid holidays and a share of national income workers had never seen. A union that serves a
+          foreign ideology divides the people it should unite.
+        against:
+          - from: anarchism.syndicalist
+            text: >
+              A union tied to the state is the state's union. In Italy and Spain the national unions were the employers'
+              police, and strikes were treason.
+          - from: liberalism.classical
+            text: >
+              Unions bound to a ruling movement become a tool of patronage and coercion. Workers lose the freedom of
+              association the moment the state decides which union they may join.
+        sources:
+          - {author: Grand Council of Fascism, title: Carta del Lavoro (Charter of Labour), year: 1927}
+          - {author: Juan Domingo Perón, title: La comunidad organizada (The Organized Community), year: 1949}
+        traditions:
+          defining: [fascism.national-syndicalism, fascism.italian]
+          typical: [nationalism.peronism, nationalism.nasserism, nationalism.baathism, fascism.third-position, fascism.clerical]
+          contested: [conservatism.national, conservatism.right-populism, nationalism.kemalism]
+          rejects: [anarchism.syndicalist, marxism.classical, liberalism.classical, socdem.nordic]
+        presupposes: [workplace.conflict.nation-above-class]
+        excludes: [unions.role.class-organ]
+        tension: []
+        tags: []
+        analysis:
+          gains: [core-workers, industrial-capital, petty-bourgeoisie]
+          pays: [comprador-capital, peripheral-workers]
+          mechanism: >
+            State-linked national unions trade the right to independent action for state-guaranteed gains; under
+            fascism this meant banned strikes and falling wages, while under Peronism and Nasserism it meant higher
+            wages and nationalizations against foreign capital, with unions dependent on the leadership.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            Materialists separate fascist state unions, which served owners, from anti-imperialist national-populist
+            unions in the periphery, which raised the wage share and confronted foreign capital while curbing
+            independent working-class politics.
+          consciousness: hegemonic
+      - id: unions.role.core-privilege
+        label: Unions in the rich countries often defend a privileged layer
+        claim: >
+          In the rich countries, big unions have often defended a better-paid layer of workers, backing their own
+          state's trade policy, migration controls and wars, and in the Cold War working against radical unions in the
+          periphery.
+        voiced: "The labour aristocracy is the real social bulwark of the bourgeoisie. Its unions defend its share of the superprofits, not the world's workers."
+        you: >
+          You think unions in rich countries have often protected a privileged group of workers at the expense of workers
+          in poorer countries.
+        because: >
+          Lenin noted that imperialist superprofits let capital buy off an upper stratum of workers, whose unions and
+          parties voted for war in 1914. After 1945 the AFL-CIO's foreign institutes worked with the CIA against
+          left-wing unions across Latin America, Africa and Asia. Core unions have campaigned for tariffs and border
+          controls and defended arms contracts. Unions are workers' organizations, but which workers they serve, and at
+          whose expense, depends on their place in the world system.
+        against:
+          - from: marxism.trotskyism
+            text: >
+              The leadership's record is not the membership's interest. Rank-and-file workers in the core have struck
+              against wars and shipments, and writing them off cedes them to the right.
+          - from: socdem.labourism
+            text: >
+              Unions exist to defend their members. Asking a steelworker in Ohio to accept the loss of his job for the
+              sake of workers abroad is asking him to do what no capitalist ever does.
+        sources:
+          - {author: V. I. Lenin, title: "Imperialism, the Highest Stage of Capitalism", year: 1917}
+          - {author: Kim Scipes, title: "AFL-CIO's Secret War Against Developing Country Workers: Solidarity or Sabotage?", year: 2010}
+          - {author: Zak Cope, title: "Divided World, Divided Class", year: 2012}
+        traditions:
+          defining: [marxism.third-worldism]
+          typical: [marxism.mlm, marxism.maoism, marxism.dependency, nationalism.pan-africanism]
+          contested: [marxism.ml, marxism.black-radical]
+          rejects: [marxism.trotskyism, socdem.labourism, socdem.nordic]
+        presupposes: [labor.division.core-periphery]
+        excludes: []
+        tension: [unions.role.class-organ]
+        tags: []
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [core-workers, finance-capital, industrial-capital]
+          mechanism: >
+            Exposing core unions' role in the world system supports refusing arms work, opposing tariffs that protect
+            core jobs against peripheral producers, and backing peripheral unions, which costs core members some
+            wages and jobs and cuts core firms' supply advantages.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >
+            Most Marxist-Leninists blame a labor-aristocratic leadership and see the membership as exploited; Cope and
+            Third-Worldists hold the privilege extends to the bulk of core union members.
+          consciousness: hegemonic
+  - id: profit.legitimacy
+    domain: economy
+    layer: horizon
+    question: Is profit legitimate income?
+    plain: When a business owner makes a profit, has that money been fairly earned?
+    short: the legitimacy of profit
+    importance: 2
+    positions:
+      - id: profit.legitimacy.earned-reward
+        label: Profit is a fair reward for risk, foresight and serving customers
+        claim: >
+          Profit is fully legitimate: it rewards those who risk their capital, spot unmet needs and serve customers
+          better than rivals, and it signals where resources should go. Losses punish those who get it wrong.
+        voiced: "There is one and only one social responsibility of business: to use its resources to increase its profits within the rules of the game."
+        you: >
+          You think profit is a fair reward for taking risks and giving customers what they want.
+        because: >
+          Nobody is obliged to buy, so a profit shows that customers valued a product more than the resources it used.
+          The entrepreneur who saw the opportunity and risked her savings earned the residual; workers were paid in
+          advance whether or not it worked. Profit and loss steer capital away from waste and toward what people want.
+          Profits are reinvested, creating jobs and products. Treat profit as theft and you abolish the signal that
+          makes an economy work, as every planned economy found.
+        against:
+          - from: marxism.classical
+            text: >
+              The largest profits go to those who bear least risk: diversified owners, bailed-out banks, monopolies.
+              Profit is a regular income of a class, not a prize for the bold, and its source is the unpaid part of
+              the working day.
+          - from: conservatism.cst
+            text: >
+              Profit is a legitimate sign of a firm working well, but not the only one. A firm can make a profit while
+              offending the dignity of its workers, and that profit is not justified by the market's verdict.
+        sources:
+          - {author: Ayn Rand, title: "Capitalism: The Unknown Ideal", year: 1966}
+          - {author: Milton Friedman, title: The Social Responsibility of Business Is to Increase Its Profits, year: 1970}
+          - {author: Israel Kirzner, title: Competition and Entrepreneurship, year: 1973}
+        traditions:
+          defining: [liberalism.austrian, libertarianism.objectivist, liberalism.chicago]
+          typical: [libertarianism.ancap, libertarianism.minarchist, conservatism.fusionism, commonsense.self-reliance, technology.e-acc]
+          contested: [liberalism.ordoliberal, liberalism.classical]
+          rejects: [marxism.classical, anarchism.communist, conservatism.cst, marxism.third-worldism]
+        presupposes: [value.source.entrepreneurial-risk]
+        excludes: [profit.legitimacy.unpaid-labor, profit.legitimacy.drain-superprofit]
+        tension: []
+        tags: [keystone]
+        analysis:
+          gains: [finance-capital, industrial-capital, petty-bourgeoisie]
+          pays: [core-workers, peripheral-workers, reserve-army]
+          mechanism: >
+            Treating profit as fully earned justifies low taxes on capital, shareholder primacy and the owner's sole
+            claim on the surplus, including profits from cheap peripheral labor and resources.
+          drain: sustains
+          law_of_value: extends
+      - id: profit.legitimacy.unpaid-labor
+        label: Profit is unpaid labor taken by owners
+        claim: >
+          Profit is not earned by the owner but taken from workers: it is the value workers produce beyond their wages,
+          and an economy run by the producers would have no place for it as private income.
+        voiced: "The owner doesn't make the profit. We do. He keeps it because he owns the place, and that's the whole trick."
+        you: >
+          You think profit is the part of what workers produce that they don't get paid for, kept by owners just because
+          they own.
+        because: >
+          Take away the owner and production goes on; take away the workers and it stops. The owner's income comes not
+          from his own work, which managers are paid for, but from his title to the means of production. Workers produce
+          more in a day than their wage, and the difference is profit. Risk does not explain it, since owners as a class
+          receive a steady return year after year. A surplus will always be needed for investment, but it belongs to
+          those who produced it, to be allocated by them, not to a class of owners.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Workers are paid now for goods sold later, if at all. The owner advances their wages and bears the risk,
+              and profit is the price of waiting and of uncertainty. Böhm-Bawerk answered Marx in 1884.
+          - from: marxism.market-socialism
+            text: >
+              Some return on enterprise is needed to steer investment and reward good management, even under social
+              ownership. The question is who receives it, not whether it should exist.
+        sources:
+          - {author: William Thompson, title: An Inquiry into the Principles of the Distribution of Wealth, year: 1824}
+          - {author: Pierre-Joseph Proudhon, title: What Is Property?, year: 1840}
+          - {author: Karl Marx, title: "Capital, Volume I", year: 1867}
+        traditions:
+          defining: [marxism.classical, marxism.leninism, marxism.ml]
+          typical: [marxism.trotskyism, marxism.maoism, marxism.left-communism, marxism.council-communism, anarchism.syndicalist, anarchism.communist, anarchism.mutualist, marxism.luxemburgism]
+          contested: [marxism.analytical, marxism.market-socialism, marxism.scc]
+          rejects: [liberalism.austrian, liberalism.chicago, libertarianism.objectivist, conservatism.cst]
+        presupposes: [value.source.labor, capitalism.nature.exploitation-profit]
+        excludes: [profit.legitimacy.earned-reward]
+        tension: [profit.legitimacy.national-development]
+        tags: [keystone]
+        analysis:
+          gains: [core-workers, peripheral-workers, reserve-army, peasantry]
+          pays: [industrial-capital, finance-capital, landed-capital]
+          mechanism: >
+            Denying profit's legitimacy makes ownership itself the target, supporting expropriation and workers'
+            control, which would move the surplus from owners to producers or the public.
+          drain: reduces
+          law_of_value: abolishes
+          disputed: >
+            Third-Worldists hold that a reading confined to the domestic working day misses the share of core profit
+            drawn from the periphery; analytical Marxists keep the charge of exploitation without the labor theory.
+      - id: profit.legitimacy.common-good-first
+        label: Profit is legitimate when it serves the common good and just wages come first
+        claim: >
+          Profit is legitimate as a fair return on real enterprise and shared risk, but only after just wages are paid,
+          and only when the business serves the common good; profit from usury, exploitation or harm is not.
+        voiced: "The Church acknowledges the legitimate role of profit. But profitability is not the only indicator, and a firm that offends the dignity of its workers has failed whatever its accounts say."
+        you: >
+          You think making a profit is fine, but only after workers are paid fairly and when the business is good for
+          the community.
+        because: >
+          Capital and labor both contribute to production, and the owner who risks his property and directs the
+          enterprise may take a fair return. But the goods of the earth are meant for all, and property carries a social
+          mortgage. A just wage is owed before any profit, and a firm exists for the persons in it and the society
+          around it, not only for shareholders. In Islamic law, profit shared between partners who share the risk is
+          lawful, while a guaranteed return on money lent is not.
+        against:
+          - from: liberalism.chicago
+            text: >
+              A manager who spends shareholders' money on his idea of the common good is taxing them without their
+              consent. Business serves society by making profits within the law; the rest is politics.
+          - from: marxism.classical
+            text: >
+              Every profit, "just" or not, is unpaid labor. A just wage paid before profit is still a wage, and the
+              surplus still goes to the owner.
+        sources:
+          - {author: Pius XI, title: Quadragesimo Anno, year: 1931}
+          - {author: Muhammad Baqir al-Sadr, title: Iqtisaduna (Our Economics), year: 1961}
+          - {author: John Paul II, title: Centesimus Annus, year: 1991}
+        traditions:
+          defining: [conservatism.cst]
+          typical: [conservatism.christian-democracy, religious.islamism-brotherhood, conservatism.distributism, religious.post-islamism, conservatism.postliberal, religious.islamism-khomeinist, conservatism.one-nation]
+          contested: [religious.islamic-socialism, religious.liberation-theology]
+          rejects: [liberalism.chicago, libertarianism.objectivist, marxism.classical]
+        presupposes: [property.private.social-function, wage.nature.just-wage]
+        excludes: []
+        tension: [profit.legitimacy.earned-reward]
+        tags: []
+        analysis:
+          gains: [core-workers, petty-bourgeoisie, industrial-capital]
+          pays: [finance-capital]
+          mechanism: >
+            Conditioning profit on just wages and the common good supports living-wage laws, profit-sharing and
+            limits on interest, which shift income from lenders and low-wage employers to workers and small owners,
+            while ownership of enterprise and the profit share remain.
+          drain: softens
+          law_of_value: regulates
+      - id: profit.legitimacy.incentive-taxed
+        label: Profit is a useful engine, legitimate if taxed and shared
+        claim: >
+          Profit is a useful incentive that drives investment and growth, and it is legitimate as long as it is taxed
+          fairly, reinvested, and shared through wages and public services.
+        voiced: "Today's profits are tomorrow's investments and the jobs of the day after. Let them make money, tax it fairly, and build the welfare state with it."
+        you: >
+          You think profit is useful because it drives investment and jobs, and that it is fair as long as it is taxed
+          and shared.
+        because: >
+          Private profit has proved a powerful motor of investment and innovation, and no economy has done better by
+          abolishing it. But left alone it concentrates wealth and produces instability. The postwar settlement found the
+          balance: firms kept profits and invested them, unions won rising wages, and progressive taxes funded health,
+          education and pensions. The question is not whether profit should exist but how its fruits are shared.
+        against:
+          - from: marxism.classical
+            text: >
+              The bargain lasted while profits were high. When they fell in the 1970s, owners broke it, and when Swedish
+              unions asked for a share of ownership through wage-earner funds, owners mobilized to defeat them.
+          - from: liberalism.austrian
+            text: >
+              Tax profit heavily and you tax the investment it was supposed to fund. The capital moves abroad or is
+              never formed, and the welfare state is built on sand.
+        sources:
+          - {author: Anthony Crosland, title: The Future of Socialism, year: 1956}
+          - {author: Adam Przeworski, title: Capitalism and Social Democracy, year: 1985}
+        traditions:
+          defining: [socdem.nordic, socdem.keynesian]
+          typical: [socdem.third-way, liberalism.social, conservatism.christian-democracy, socdem.labourism, liberalism.egalitarian, liberalism.technocratic]
+          contested: [socdem.democratic-socialism, liberalism.ordoliberal]
+          rejects: [marxism.classical, liberalism.austrian, libertarianism.ancap]
+        presupposes: [capitalism.nature.managed-engine]
+        excludes: []
+        tension: [profit.legitimacy.unpaid-labor]
+        tags: []
+        analysis:
+          gains: [core-workers, professional-managerial, industrial-capital]
+          pays: [finance-capital]
+          mechanism: >
+            Accepting profit in exchange for taxes and wage growth keeps ownership private while funding core welfare,
+            which depends on profitable firms whose margins rest partly on cheap peripheral inputs.
+          drain: softens
+          law_of_value: regulates
+      - id: profit.legitimacy.rent-not-profit
+        label: Profit from production is fair; rent from land, monopoly and finance is not
+        claim: >
+          Profit from making and selling useful things is legitimate; income from owning scarce assets, land, patents,
+          monopolies, financial claims, is unearned rent that drains the productive economy.
+        voiced: "Landlords love to reap where they never sowed. The factory makes something; the rentier just collects."
+        you: >
+          You think profit from producing useful things is fair, but income from owning land, patents or money that
+          others need is unearned.
+        because: >
+          Classical economists distinguished profit, earned by organizing production, from rent, collected by owners of
+          land and privileges. Today rent dominates: house prices, platform fees, patent royalties, interest, and
+          monopoly markups take a growing share of income without adding anything. Tax land values, break up monopolies,
+          limit patents and keep interest low, and the productive economy, workers and firms alike, keeps what it makes.
+          Keynes called it the euthanasia of the rentier.
+        against:
+          - from: marxism.classical
+            text: >
+              Industrial profit and rent share one source: the surplus produced by labor. The "productive" capitalist is
+              no cleaner than the landlord; he simply takes his share first.
+          - from: liberalism.austrian
+            text: >
+              Rent is a price. It allocates scarce land and ideas to those who value them most. Abolish it and you get
+              waste, queues and political allocation.
+        sources:
+          - {author: Adam Smith, title: The Wealth of Nations, year: 1776}
+          - {author: Henry George, title: Progress and Poverty, year: 1879}
+          - {author: John Maynard Keynes, title: "The General Theory of Employment, Interest and Money", year: 1936}
+          - {author: Brett Christophers, title: Rentier Capitalism, year: 2020}
+        traditions:
+          defining: [libertarianism.georgist]
+          typical: [libertarianism.left, socdem.keynesian, socdem.left-populism, anarchism.mutualist, conservatism.right-populism, conservatism.distributism]
+          contested: [socdem.democratic-socialism, liberalism.classical]
+          rejects: [marxism.classical, liberalism.austrian, libertarianism.ancap]
+        presupposes: []
+        excludes: []
+        tension: [profit.legitimacy.unpaid-labor]
+        tags: []
+        analysis:
+          gains: [industrial-capital, core-workers, petty-bourgeoisie]
+          pays: [landed-capital, finance-capital]
+          mechanism: >
+            Separating profit from rent supports land-value taxes, antitrust and limits on finance, which move income
+            from landlords, lenders and patent-holders to producers, while leaving industrial profit from wage labor in
+            place.
+          drain: softens
+          law_of_value: regulates
+          disputed: >
+            Materialists note that core monopoly rents on patents and brands are a main channel of the drain, so a
+            consistent anti-rent position would reduce it; most of its holders apply it only at home.
+      - id: profit.legitimacy.drain-superprofit
+        label: Much core profit is extracted from the periphery
+        claim: >
+          A large share of the profits of the rich countries' firms comes from paying peripheral workers and suppliers
+          far less than the value they produce, through global supply chains, monopoly brands and unequal prices.
+        voiced: "Apple takes the profit on a phone a Chinese worker assembled for a few dollars. It's counted as American GDP. It's Asian labour."
+        you: >
+          You think a big part of the profits made by companies in rich countries is really taken from underpaid workers
+          and suppliers in poor ones.
+        because: >
+          Global firms have moved production to countries where wages are a fraction of core wages, and kept design,
+          branding and finance at home. The price of a phone or a T-shirt is mostly captured by the brand and the
+          retailer in the core, while the workers who made it get a sliver. Statistics count that margin as value added
+          in the rich country. Monopolies of technology and finance let core firms set the terms. The legitimacy of profit
+          cannot be judged inside one country.
+        against:
+          - from: liberalism.chicago
+            text: >
+              The brand's margin pays for design, research and marketing done in the core. Assembly workers in China
+              earn more than they could in farming; that is why they took the jobs.
+          - from: marxism.trotskyism
+            text: >
+              Core workers produce surplus value too, at higher productivity. Most core profit is still squeezed from
+              core labor; the drain thesis lets core bosses off the hook at home.
+        sources:
+          - {author: V. I. Lenin, title: "Imperialism, the Highest Stage of Capitalism", year: 1917}
+          - {author: John Smith, title: Imperialism in the Twenty-First Century, year: 2016}
+          - {author: Intan Suwandi, title: "Value Chains: The New Economic Imperialism", year: 2019}
+        traditions:
+          defining: [marxism.third-worldism, marxism.dependency]
+          typical: [marxism.world-systems, marxism.mlm, marxism.maoism, nationalism.pan-africanism, nationalism.decolonial, nationalism.bolivarianism]
+          contested: [marxism.ml, marxism.scc]
+          rejects: [liberalism.chicago, marxism.trotskyism, liberalism.austrian]
+        presupposes: [imperialism.nature.unequal-exchange-drain]
+        excludes: [profit.legitimacy.earned-reward]
+        tension: []
+        tags: []
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, comprador-capital]
+          mechanism: >
+            Locating core profit in peripheral labor supports higher wages and supply prices in the South, national
+            control over production and the end of patent monopolies, which cut core firms' margins and raise prices
+            for core consumers.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >
+            The size of the transfer is disputed: Smith, Suwandi and Hickel estimate it as large; Trotskyists and many
+            orthodox Marxists hold that higher core productivity means most core profit is produced in the core.
+      - id: profit.legitimacy.national-development
+        label: Profit is legitimate when it builds the nation's industry
+        claim: >
+          Profit is legitimate when it is reinvested at home to build the nation's industry and strength; profit that is
+          shipped abroad, speculated away or earned by selling out the country is not.
+        voiced: "Make money, yes, but make it here, build factories here, train our workers. Profit that builds the nation is patriotic; profit that flees it is betrayal."
+        you: >
+          You think profit is fine if it is invested in building up your own country's industry, and wrong when it is
+          taken abroad or wasted on speculation.
+        because: >
+          Every country that industrialized, Britain, the United States, Germany, Japan, Korea, China, protected its
+          industries and directed profits into investment at home. Private profit can be a tool of national
+          development if the state disciplines it: credit for those who build, penalties for those who export capital or
+          fail to meet targets. A patriotic owner who builds factories and trains workers earns his profit; a comprador
+          who sells the country's resources cheap does not.
+        against:
+          - from: liberalism.austrian
+            text: >
+              The state cannot know which industries will succeed. Directed credit breeds cronyism and white elephants,
+              and capital controls trap savers' money in bad investments.
+          - from: marxism.left-communism
+            text: >
+              National capital is capital. The worker in a patriotic factory is exploited as surely as in a foreign one,
+              and "national development" has been the slogan under which workers' wages were frozen.
+        sources:
+          - {author: Friedrich List, title: The National System of Political Economy, year: 1841}
+          - {author: Mao Zedong, title: On New Democracy, year: 1940}
+          - {author: Alice Amsden, title: "Asia's Next Giant: South Korea and Late Industrialization", year: 1989}
+          - {author: Ha-Joon Chang, title: Kicking Away the Ladder, year: 2002}
+        traditions:
+          defining: [nationalism.developmental-state, marxism.scc]
+          typical: [conservatism.national, conservatism.gaullism, nationalism.peronism, nationalism.nasserism, nationalism.kemalism, nationalism.three-principles, nationalism.bolivarianism]
+          contested: [marxism.maoism, marxism.ml, conservatism.right-populism]
+          rejects: [liberalism.austrian, liberalism.chicago, marxism.left-communism, marxism.trotskyism]
+        presupposes: [intl.sovereignty.nations-set-own-course]
+        excludes: []
+        tension: [profit.legitimacy.unpaid-labor]
+        tags: []
+        analysis:
+          gains: [industrial-capital, core-workers, professional-managerial]
+          pays: [comprador-capital, finance-capital]
+          mechanism: >
+            Tying profit to national reinvestment supports capital controls, directed credit and industrial policy,
+            which keep surplus at home and build domestic industry, cutting the share taken by foreign firms and local
+            brokers; workers gain jobs while wages are often held down to fund investment.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            In the periphery the frame reads national development against the drain as progressive; in the core the
+            same position can serve trade war among imperial powers. Whether China's state-directed profit is socialist
+            or capitalist accumulation is sharply disputed.
+      - id: profit.legitimacy.fair-not-gouging
+        label: A fair profit, yes; profiteering, no
+        claim: >
+          Making a reasonable profit is fine; everybody has to make a living. But jacking up prices in a crisis, paying
+          staff poverty wages while bosses take millions, or making a killing from people's needs is wrong.
+        voiced: "Nobody minds a business making a profit. But record profits while my rent and food bills double? That's not business, that's robbery."
+        you: >
+          You think there is nothing wrong with a fair profit, but that price gouging and huge profits off people's
+          hardship are wrong.
+        because: >
+          Most people run household budgets and know what a fair markup looks like. A baker who makes a living from his
+          shop is one thing; companies that raise prices far beyond their costs because they can, while wages stall,
+          are another. When energy and food firms posted record profits during the inflation of 2021 to 2023, people
+          noticed. There is a line between earning and profiteering, and most people can see it without a theory.
+        against:
+          - from: liberalism.austrian
+            text: >
+              "Gouging" is the price that tells suppliers where the shortage is and draws goods to it. Cap it, and the
+              shelves empty for everyone.
+          - from: marxism.classical
+            text: >
+              The "fair" profit and the "obscene" one have the same source. Profiteering is just exploitation you can
+              see at the checkout; the rest happens quietly at work.
+        sources:
+          - {author: E. P. Thompson, title: The Moral Economy of the English Crowd in the Eighteenth Century, year: 1971}
+          - {author: Isabella Weber and Evan Wasner, title: "Sellers' Inflation, Profits and Conflict: Why Can Large Firms Hike Prices in an Emergency?", year: 2023}
+        traditions:
+          defining: [commonsense.rigged]
+          typical: [commonsense.self-reliance, commonsense.look-after-your-own, conservatism.right-populism, socdem.left-populism, conservatism.one-nation, socdem.labourism]
+          contested: [commonsense.live-and-let-live]
+          rejects: [liberalism.austrian, marxism.classical]
+        presupposes: []
+        excludes: []
+        tension: [profit.legitimacy.earned-reward, profit.legitimacy.unpaid-labor]
+        tags: [commonsense]
+        analysis:
+          gains: [core-workers, petty-bourgeoisie]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            A fairness standard supports price caps, windfall taxes and pressure on large firms during crises, which
+            can shift some income back to consumers and workers, but it accepts the ordinary profit drawn from wage
+            labor and stops at the national checkout.
+          drain: none
+          law_of_value: regulates

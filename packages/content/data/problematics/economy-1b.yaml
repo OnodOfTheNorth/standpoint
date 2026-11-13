@@ -1,0 +1,1861 @@
+problematics:
+  - id: crisis.cause
+    domain: economy
+    layer: analysis
+    question: Why do economic crises happen?
+    plain: When the economy crashes and people lose jobs and homes, what actually caused it?
+    short: the cause of crises
+    importance: 2
+    positions:
+      - id: crisis.cause.falling-profit
+        label: Profitability falls as machines replace workers
+        claim: >
+          Crises come from inside production: as firms replace workers with machinery to beat competitors, the rate
+          of profit on all the capital invested tends to fall, investment stalls, and a slump destroys enough capital
+          to restore profits.
+        voiced: "The real barrier of capitalist production is capital itself. Every crisis is the system clearing away the capital it can no longer make profitable."
+        you: >
+          You think crises start where things are made: competition pushes owners to invest in machines, profits
+          per unit of investment fall, and the slump is how the system clears the way for profits again.
+        because: >
+          Each owner cuts costs by adding machinery, which makes sense for the single firm. But only living labor
+          creates new value, so as the share of spending on machines rises across the economy, the rate of profit
+          on total investment tends to fall. Owners respond by squeezing wages, speeding up work, moving abroad and
+          speculating, which delays the reckoning. When it comes, bankruptcies, layoffs and the scrapping of plant
+          cheapen capital and restore profitability, and the cycle begins again. Credit and bubbles are how the
+          problem shows up, not where it starts.
+        against:
+          - from: marxism.analytical
+            text: >
+              Okishio proved in 1961 that a capitalist will only adopt a new technique if it raises his profit at
+              current prices, and with the real wage constant the general rate of profit then rises, not falls. The
+              falling-rate law needs extra assumptions Marx never justified.
+          - from: socdem.keynesian
+            text: >
+              Profits fall in a slump because spending collapses, not the other way round. Restore demand and
+              profits recover within a year or two, as they did after 1933 and after 2009 where governments spent.
+          - from: liberalism.austrian
+            text: >
+              The data never showed a secular fall in profit rates once you measure capital properly. Booms and
+              busts follow credit, not the ratio of machines to men.
+        sources:
+          - {author: Karl Marx, title: "Capital, Volume III", year: 1894}
+          - {author: Henryk Grossman, title: The Law of Accumulation and Breakdown of the Capitalist System, year: 1929}
+          - {author: Paul Mattick, title: "Marx and Keynes: The Limits of the Mixed Economy", year: 1969}
+          - {author: Andrew Kliman, title: The Failure of Capitalist Production, year: 2012}
+          - {author: Michael Roberts, title: The Long Depression, year: 2016}
+        traditions:
+          defining: [marxism.classical]
+          typical: [marxism.trotskyism, marxism.left-communism, marxism.council-communism, marxism.leninism, marxism.ml]
+          contested: [marxism.analytical, marxism.luxemburgism, marxism.world-systems]
+          rejects: [socdem.keynesian, liberalism.austrian, liberalism.chicago]
+        presupposes: [value.source.labor]
+        excludes: [crisis.cause.shocks-and-errors]
+        tension: [crisis.cause.underconsumption]
+        tags: [keystone]
+        analysis:
+          gains: [core-workers, peripheral-workers, reserve-army]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Locating crisis in profitability itself says no wage policy or stimulus can end the cycle while
+            production runs for profit, which points workers past demands on the state toward ownership of
+            production; it also explains why owners answer each slump with wage cuts and offshoring.
+          drain: reduces
+          law_of_value: abolishes
+          disputed: >
+            Marxists split over the evidence and the mechanism: Kliman, Roberts and Carchedi defend the falling-rate
+            law; Okishio, Heinrich and the Monthly Review school reject it in favor of overproduction or
+            underconsumption. Third-Worldists add that offshoring to cheap labor is the main counter-tendency, so
+            the theory implies the drain.
+      - id: crisis.cause.underconsumption
+        label: Workers can't buy back what they produce
+        claim: >
+          Crises come from overproduction: because wages are held down to keep profits up, working people cannot buy
+          everything the economy can make, so goods pile up unsold, firms cut back, and a slump follows.
+        voiced: "The worker cannot buy back what he makes. Hold wages down and you hold down your own market, then wonder why the warehouses are full."
+        you: >
+          You think crises come when wages are too low for people to buy what gets made, so goods go unsold and
+          firms stop producing.
+        because: >
+          Every owner wants to pay his own workers less and sell to everyone else's workers more. Added up, this
+          means output grows faster than the incomes that must buy it. For a time the gap is filled by luxury
+          spending, arms budgets, consumer credit and exports to markets outside the system, which is why capital
+          has always pushed outward into colonies and new territories. When those outlets close, unsold goods and
+          idle capacity bring the slump. Monopoly makes it worse, because large firms hold prices up and wages down.
+        against:
+          - from: marxism.classical
+            text: >
+              Workers always consume less than they produce; that is what profit means. If underconsumption caused
+              crises they would be permanent. In fact crises are usually preceded by periods when wages are rising
+              and workers consume more.
+          - from: liberalism.austrian
+            text: >
+              Production is the source of demand: every seller is also a buyer. Unsold goods mean that relative
+              prices are wrong, not that there is too much of everything, and the price system corrects it if
+              allowed to.
+        sources:
+          - {author: J. C. L. Simonde de Sismondi, title: New Principles of Political Economy, year: 1819}
+          - {author: J. A. Hobson, title: "Imperialism: A Study", year: 1902}
+          - {author: Rosa Luxemburg, title: The Accumulation of Capital, year: 1913}
+          - {author: Paul Baran and Paul Sweezy, title: Monopoly Capital, year: 1966}
+        traditions:
+          defining: [marxism.luxemburgism]
+          typical: [marxism.dependency, socdem.labourism, socdem.left-populism, socdem.democratic-socialism, marxism.world-systems]
+          contested: [socdem.keynesian, marxism.ml, marxism.maoism]
+          rejects: [liberalism.austrian, liberalism.chicago, marxism.left-communism]
+        presupposes: []
+        excludes: []
+        tension: [crisis.cause.falling-profit]
+        tags: []
+        analysis:
+          gains: [core-workers, reserve-army]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Blaming low wages for crises makes higher pay a cure for the whole economy, which strengthens unions and
+            minimum-wage campaigns; in Luxemburg's and Hobson's form it also shows that capital pushes into colonies
+            and new markets to sell what workers at home cannot buy.
+          drain: softens
+          law_of_value: regulates
+          disputed: >
+            Luxemburg's version is anti-imperialist at its core, since outlets outside the system are conquered;
+            Hobson's version suggested higher home wages would end the need for empire, which Lenin rejected as
+            reformist.
+      - id: crisis.cause.demand-failure
+        label: Spending collapses and the economy gets stuck
+        claim: >
+          Crises happen when private spending, above all investment, falls because firms and lenders lose confidence;
+          markets do not correct this on their own, so the government must spend and lower interest rates to restore
+          demand.
+        voiced: "In the long run we are all dead. When private spending fails, public spending must step in, or millions sit idle while factories rust."
+        you: >
+          You think crises happen when people and firms stop spending out of fear, and that governments must spend
+          to get the economy moving again.
+        because: >
+          Investment depends on expectations about an uncertain future, so it swings with confidence. When firms
+          stop investing, incomes fall, people spend less, and firms see even less reason to invest. Cutting wages
+          only cuts spending further. Saving more in a slump makes everyone poorer together. The economy can settle
+          with millions unemployed and no force to pull it out. Public spending, low interest rates and automatic
+          stabilizers like unemployment insurance break the spiral, as the postwar decades and the response to 2008
+          in countries that spent showed.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Stimulus props up the very misallocated investments the boom created and sets up the next, bigger
+              bust. Keynes treated the symptom and called it a cure.
+          - from: marxism.classical
+            text: >
+              Investment follows profitability, not mood. Deficit spending can lift demand for a while, but when it
+              squeezes profits, as full employment did by the late 1960s, capital stops cooperating and the
+              Keynesian era ends, as it did in the 1970s.
+        sources:
+          - {author: John Maynard Keynes, title: "The General Theory of Employment, Interest and Money", year: 1936}
+          - {author: Paul Krugman, title: The Return of Depression Economics, year: 1999}
+        traditions:
+          defining: [socdem.keynesian]
+          typical: [socdem.nordic, socdem.labourism, liberalism.social, socdem.third-way, socdem.democratic-socialism]
+          contested: [liberalism.technocratic, liberalism.chicago]
+          rejects: [liberalism.austrian, libertarianism.ancap, marxism.left-communism]
+        presupposes: []
+        excludes: [crisis.cause.credit-distortion]
+        tension: [crisis.cause.falling-profit]
+        tags: []
+        analysis:
+          gains: [core-workers, professional-managerial, industrial-capital]
+          pays: [finance-capital]
+          mechanism: >
+            Treating crises as demand failures justifies public spending, low interest rates and unemployment
+            insurance, which protect core wages and firms' sales in a slump and lower the returns of lenders and
+            holders of money; it leaves ownership and the international price structure as they are.
+          drain: softens
+          law_of_value: regulates
+      - id: crisis.cause.financial-instability
+        label: Good times breed reckless debt, and the debt brings the crash
+        claim: >
+          Crises grow out of finance: in calm years lenders and borrowers take on more and more debt, until debts can
+          only be paid by rising asset prices; when prices stop rising, forced selling turns into a crash.
+        voiced: "Stability is destabilizing. The longer the good times last, the more debt piles up on the belief they will continue."
+        you: >
+          You think crashes come from debt that builds up in good times, until it can't be repaid and the whole thing
+          falls in.
+        because: >
+          After a crisis, lenders are cautious and borrowers repay from income. As memory fades, they move to loans
+          that need refinancing, then to loans that can only be repaid if the asset keeps rising in price. Banks
+          create credit as they lend, so the boom feeds itself. When prices stall, everyone sells at once, prices fall,
+          debts grow heavier in real terms, and solvent firms are dragged down. 1929, Japan in 1990, Asia in 1997 and
+          2008 all followed this script. Finance needs tight rules and a public lender of last resort.
+        against:
+          - from: marxism.classical
+            text: >
+              Finance amplifies crises; it does not create them. Capital floods into speculation because profitable
+              investment in production has dried up. Regulate the banks and the underlying stagnation remains.
+          - from: liberalism.chicago
+            text: >
+              If bubbles were predictable, investors would profit from betting against them. Most crashes follow
+              policy mistakes, not some law of "stability breeds instability."
+        sources:
+          - {author: Irving Fisher, title: The Debt-Deflation Theory of Great Depressions, year: 1933}
+          - {author: Charles Kindleberger, title: "Manias, Panics, and Crashes", year: 1978}
+          - {author: Hyman Minsky, title: Stabilizing an Unstable Economy, year: 1986}
+          - {author: Rudolf Hilferding, title: Finance Capital, year: 1910}
+        traditions:
+          defining: []
+          typical: [socdem.keynesian, socdem.democratic-socialism, socdem.left-populism, liberalism.social, religious.islamism-brotherhood]
+          contested: [conservatism.right-populism, marxism.trotskyism]
+          rejects: [liberalism.chicago, liberalism.austrian]
+        presupposes: []
+        excludes: [crisis.cause.shocks-and-errors]
+        tension: []
+        tags: []
+        analysis:
+          gains: [core-workers, petty-bourgeoisie, industrial-capital]
+          pays: [finance-capital]
+          mechanism: >
+            Making finance the source of crises supports bank regulation, credit controls and public lending, which
+            cut the returns of banks and speculators and protect borrowers; it treats industrial profit as sound and
+            says nothing of how core finance extracts interest from indebted peripheral states.
+          drain: softens
+          law_of_value: regulates
+          disputed: >
+            Materialists agree finance dominates present accumulation (Hilferding, Lenin, Amin on the financial
+            monopoly) and differ on whether financial instability is a cause (Minsky) or a symptom of falling
+            profitability (Kliman, Roberts).
+      - id: crisis.cause.credit-distortion
+        label: Central banks inflate a false boom, and the bust corrects it
+        claim: >
+          Crises are caused by central banks and governments that push interest rates below their natural level; cheap
+          credit lures firms into projects that real savings cannot support, and the bust is the painful correction.
+        voiced: "The boom is the disease; the bust is the cure. Every cheap-money binge ends in a hangover, and the hair of the dog only makes it worse."
+        you: >
+          You think crises are caused by central banks printing cheap money, which fuels a fake boom that has to end
+          in a crash.
+        because: >
+          The interest rate is a price that tells firms how much people are willing to save and wait. When the central
+          bank pushes it down artificially, firms start long, capital-heavy projects as if savings were there to finish
+          them. They are not. When the error shows, the projects are abandoned and workers in them lose their jobs. The
+          longer the credit expansion, the bigger the misallocation. Bailouts and stimulus keep the bad investments
+          alive and set up the next bubble. The cure is sound money and letting failed firms fail.
+        against:
+          - from: socdem.keynesian
+            text: >
+              Hayek and the liquidationists told governments to let the Depression run its course. It ran into 25
+              percent unemployment and the collapse of parliaments across Europe. Letting everything fail is not a
+              cure, it is a catastrophe.
+          - from: liberalism.chicago
+            text: >
+              The Great Depression came from the Fed letting the money supply collapse by a third, the opposite of
+              easy credit. Friedman and Schwartz settled that with data, not deduction.
+        sources:
+          - {author: Ludwig von Mises, title: The Theory of Money and Credit, year: 1912}
+          - {author: Friedrich Hayek, title: Prices and Production, year: 1931}
+          - {author: Murray Rothbard, title: "America's Great Depression", year: 1963}
+        traditions:
+          defining: [liberalism.austrian]
+          typical: [libertarianism.ancap, libertarianism.paleo, libertarianism.minarchist, technology.cyberlibertarian]
+          contested: [liberalism.chicago, conservatism.fusionism, conservatism.right-populism]
+          rejects: [socdem.keynesian, socdem.nordic, marxism.classical]
+        presupposes: [value.source.subjective-utility]
+        excludes: [crisis.cause.demand-failure]
+        tension: []
+        tags: []
+        analysis:
+          gains: [finance-capital, petty-bourgeoisie]
+          pays: [core-workers, reserve-army, peripheral-workers]
+          mechanism: >
+            If the bust is a necessary correction, the policy is to cut spending and let unemployment rise until
+            wages and prices fall, which shifts the cost of the crisis onto workers and debtors and protects the
+            value of money held by creditors.
+          drain: sustains
+          law_of_value: extends
+      - id: crisis.cause.shocks-and-errors
+        label: Markets are stable; crises come from outside shocks and policy mistakes
+        claim: >
+          Market economies are basically self-correcting; crises come from shocks outside the market, such as wars,
+          oil price jumps, pandemics or new technology, and from mistakes by central banks and governments.
+        voiced: "The Great Depression was a tragic testament to the importance of monetary forces. The market didn't fail; the Federal Reserve did."
+        you: >
+          You think the economy usually rights itself, and that crises come from outside events or bad decisions by
+          officials.
+        because: >
+          Prices and wages adjust, resources move, and output recovers; most fluctuations are the economy reacting
+          sensibly to real changes in technology, resources or tastes. The big disasters have identifiable causes from
+          outside the market: a central bank that let money contract in 1930, oil embargoes in the 1970s, a virus in
+          2020. The lesson is to keep money stable by clear rules and avoid policy surprises, not to replace markets.
+        against:
+          - from: socdem.keynesian
+            text: >
+              2008 began inside the most sophisticated private markets on earth, in mortgage securities rated AAA by
+              private agencies. Calling it a shock from outside is calling the patient's heart attack an accident.
+          - from: marxism.third-worldism
+            text: >
+              The "oil shock" of 1973 was oil-producing countries taking back a share of the price of their own
+              resource. Calling it an exogenous shock hides that the system depended on cheap oil from the periphery.
+        sources:
+          - {author: Milton Friedman and Anna Schwartz, title: "A Monetary History of the United States, 1867–1960", year: 1963}
+          - {author: Finn Kydland and Edward Prescott, title: Time to Build and Aggregate Fluctuations, year: 1982}
+          - {author: Ben Bernanke, title: Essays on the Great Depression, year: 2000}
+        traditions:
+          defining: [liberalism.chicago]
+          typical: [liberalism.technocratic, liberalism.classical, conservatism.fusionism, liberalism.ordoliberal]
+          contested: [liberalism.austrian]
+          rejects: [marxism.classical, marxism.third-worldism, socdem.keynesian]
+        presupposes: []
+        excludes: [crisis.cause.falling-profit, crisis.cause.financial-instability]
+        tension: []
+        tags: []
+        analysis:
+          gains: [finance-capital, professional-managerial]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            Treating crises as shocks from outside leaves the structure of ownership and finance above question and
+            puts monetary policy in the hands of central bankers, whose rule-based anti-inflation policy has protected
+            creditors and disciplined wage demands; it also renames peripheral price demands as shocks to be absorbed.
+          drain: sustains
+          law_of_value: extends
+      - id: crisis.cause.imperial-drain
+        label: Crises are pushed onto the periphery, and come when the drain is contested
+        claim: >
+          Crises in the rich countries are tied to the flow of cheap labor and resources from the poor ones: they break
+          out when that flow is contested or exhausted, and they are resolved by pushing the cost onto the periphery
+          through debt, falling commodity prices and austerity.
+        voiced: "Every crisis of the centre is paid for in the periphery. The 1970s crisis was answered with the debt crisis of the 1980s: a lost decade in Africa and Latin America."
+        you: >
+          You think crises in rich countries are bound up with the wealth they draw from poor ones, and that poor
+          countries end up paying for them.
+        because: >
+          Core accumulation rests on buying peripheral labor and raw materials below their value. When producers in
+          the South push prices up, as oil states did in 1973 and the Third World majority demanded with the New
+          International Economic Order, core profits are squeezed. The answer came as high interest rates, the debt
+          crisis and structural adjustment, which cut wages and subsidies across Africa, Latin America and Asia and
+          restored cheap supply. Since then each crisis, 1997, 2008, 2020, has ended with capital fleeing the South,
+          currencies collapsing, and the periphery paying in dollars it must earn by exporting cheaply.
+        against:
+          - from: marxism.trotskyism
+            text: >
+              Brenner traced the long downturn to overcapacity in manufacturing among Germany, Japan and the United
+              States themselves. Crises come from competition among core capitals, not from the periphery.
+          - from: liberalism.chicago
+            text: >
+              The debt crises came from governments that borrowed recklessly and ran inflationary budgets. Countries
+              that kept sound policies, like Chile after 1985 or the East Asian exporters, grew through every global
+              downturn.
+        sources:
+          - {author: Samir Amin, title: The Law of Worldwide Value, year: 2010}
+          - {author: Giovanni Arrighi, title: The Long Twentieth Century, year: 1994}
+          - {author: Utsa Patnaik and Prabhat Patnaik, title: A Theory of Imperialism, year: 2016}
+          - {author: Walter Rodney, title: How Europe Underdeveloped Africa, year: 1972}
+        traditions:
+          defining: [marxism.third-worldism, marxism.dependency, marxism.world-systems]
+          typical: [marxism.maoism, marxism.mlm, nationalism.pan-africanism, nationalism.bolivarianism, marxism.african-socialism, nationalism.decolonial]
+          contested: [marxism.ml, marxism.luxemburgism]
+          rejects: [liberalism.chicago, liberalism.austrian, marxism.trotskyism]
+        presupposes: [imperialism.nature.unequal-exchange-drain]
+        excludes: []
+        tension: [crisis.cause.shocks-and-errors]
+        tags: []
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, comprador-capital, industrial-capital]
+          mechanism: >
+            Seeing crises as moments when the drain is fought over supports debt refusal, capital controls and
+            commodity-producer cartels, which raise supply prices and cut the returns of core lenders and the local
+            elites who service the debt; it costs core consumers cheap imports.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >
+            Brenner and most Trotskyists place the cause of crisis in competition among core capitals; Amin,
+            Arrighi and the Patnaiks hold that the core-periphery relation is central to both cause and resolution.
+      - id: crisis.cause.greed-and-recklessness
+        label: Greedy bankers, corrupt officials and borrowing beyond our means
+        claim: >
+          Crises happen because people at the top get greedy and reckless, officials look the other way, and
+          governments and households borrow more than they can pay back.
+        voiced: "The bankers gambled with our money, the politicians let them, and when it blew up, we paid. Same as always."
+        you: >
+          You think crises come from greed and recklessness at the top, and from people and governments living beyond
+          their means.
+        because: >
+          Look at 2008: bankers sold mortgages they knew would fail, rating agencies stamped them safe, regulators were
+          asleep or bought, and when it collapsed the bankers kept their bonuses while ordinary people lost their homes.
+          Countries that spent more than they had ended up in the hands of the IMF. Nobody needs a theory to see it.
+          Punish the people responsible, stop bailing them out, and live within your means, as every family has to.
+        against:
+          - from: marxism.classical
+            text: >
+              Bankers were as greedy in the calm years as in the crash. Individuals act as the personifications of
+              economic categories; a theory that waits for better people to run the system explains nothing about why
+              crises recur on schedule.
+          - from: socdem.keynesian
+            text: >
+              One person's spending is another's income. When every household and government tightens its belt at
+              once, incomes fall and the debt gets harder to pay. The household analogy turned 2010 into a lost decade
+              in southern Europe.
+        sources:
+          - {author: Financial Crisis Inquiry Commission, title: The Financial Crisis Inquiry Report, year: 2011}
+          - {author: Michael Lewis, title: The Big Short, year: 2010}
+        traditions:
+          defining: [commonsense.rigged]
+          typical: [commonsense.anti-politics, commonsense.self-reliance, conservatism.right-populism, socdem.left-populism, commonsense.declinist]
+          contested: [conservatism.fusionism]
+          rejects: [marxism.classical, socdem.keynesian]
+        presupposes: []
+        excludes: []
+        tension: [crisis.cause.falling-profit, crisis.cause.demand-failure]
+        tags: [commonsense]
+        analysis:
+          gains: [petty-bourgeoisie, industrial-capital]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Blaming individual greed turns anger into demands to punish a few bankers and cut public debt; the second
+            half has been used to justify austerity budgets that cut services and wages, while ownership of finance
+            stays where it was.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Materialists note the position contains a real perception, that the costs of crises are shifted downward,
+            and differ on whether its anger can be won to a structural account or is mainly captured by right
+            populists.
+  - id: markets.nature
+    domain: economy
+    layer: analysis
+    question: Are markets the same thing as capitalism?
+    plain: Is buying and selling in a market the same thing as capitalism, or something older and different?
+    short: markets and capitalism
+    importance: 2
+    positions:
+      - id: markets.nature.same-thing
+        label: Capitalism is simply the free market
+        claim: >
+          Capitalism and the market economy are the same thing: private ownership plus free exchange. To oppose
+          capitalism is to oppose markets, prices and trade.
+        voiced: "The market economy, or capitalism as it is usually called, is the only system of social cooperation that works. Everything else is a bureaucrat's guess."
+        you: >
+          You see capitalism and free markets as one and the same: people owning things and trading them freely.
+        because: >
+          Markets need private property in the means of production, because only owners risking their own money
+          produce real prices for machines, land and loans. Without those prices nobody can calculate whether a
+          factory is worth building. So "market socialism" is a contradiction, and every attempt to keep markets while
+          abolishing private capital has drifted back to private ownership or to planners' guesses. The choice is
+          between the market, which is capitalism, and the plan.
+        against:
+          - from: marxism.classical
+            text: >
+              Commodity exchange existed in the pores of the ancient world for thousands of years. Capitalism appears
+              only when labor power itself becomes a commodity and production is driven by profit. Equating the two
+              hides what is new.
+          - from: anarchism.mutualist
+            text: >
+              A truly free market would destroy capitalism. Concentrated ownership rests on state-granted privileges
+              in land, money, patents and tariffs. Remove them and competition drives profit, rent and interest
+              toward zero.
+        sources:
+          - {author: Ludwig von Mises, title: Human Action, year: 1949}
+          - {author: Milton Friedman, title: Capitalism and Freedom, year: 1962}
+          - {author: Friedrich Hayek, title: "Law, Legislation and Liberty, Vol. 2: The Mirage of Social Justice", year: 1976}
+        traditions:
+          defining: [liberalism.austrian, libertarianism.objectivist]
+          typical: [liberalism.chicago, libertarianism.ancap, libertarianism.minarchist, conservatism.fusionism, commonsense.self-reliance, liberalism.classical]
+          contested: [libertarianism.paleo]
+          rejects: [marxism.classical, marxism.world-systems, marxism.market-socialism, anarchism.mutualist, conservatism.distributism]
+        presupposes: [capitalism.nature.free-exchange]
+        excludes: [markets.nature.older-than-capitalism, markets.nature.socialist-markets, markets.nature.anti-market]
+        tension: []
+        tags: [keystone]
+        analysis:
+          gains: [finance-capital, industrial-capital, landed-capital]
+          pays: [core-workers, peripheral-workers, peasantry]
+          mechanism: >
+            Merging markets with capitalism makes any limit on private ownership look like an attack on trade itself,
+            which protects owners' claims on profit and land and treats the world market's price for peripheral labor
+            as the only possible one.
+          drain: sustains
+          law_of_value: extends
+      - id: markets.nature.older-than-capitalism
+        label: Markets are ancient; capitalism begins when labor is for sale
+        claim: >
+          Markets are thousands of years old; capitalism is recent. It begins when most people must sell their ability
+          to work and production is organized around profit, not around use.
+        voiced: "Markets are as old as cities. What capitalism invented was a market in human beings' working lives, and the need to grow or die."
+        you: >
+          You think markets are much older than capitalism, and that capitalism really starts when most people have to
+          work for a wage and production is run for profit.
+        because: >
+          Ancient Mesopotamia, the Song dynasty, the Swahili coast and the medieval fairs all had markets, money and
+          merchants, without capitalism. Peasants sold surplus grain to buy what they could not make; production was
+          for use and the market was at its edge. Capitalism came when land was enclosed, peasants were driven off it,
+          and labor power, land and money became commodities. Then market competition began to drive production
+          itself: invest, cut costs, grow, or be destroyed. Getting this right means one can keep exchange while
+          ending capitalism, or end markets without ending trade.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Labor was always exchanged: the peasant who sold grain was selling his labor in another form. The modern
+              wage is just exchange extended to a society rich enough to afford it.
+          - from: marxism.left-communism
+            text: >
+              The distinction is real but slippery. Wherever products are made as commodities for exchange,
+              competition differentiates producers into those who hire and those who are hired. Markets left standing
+              grow capitalism back.
+        sources:
+          - {author: Karl Marx, title: "Capital, Volume I", year: 1867}
+          - {author: Karl Polanyi, title: The Great Transformation, year: 1944}
+          - {author: "Karl Polanyi, Conrad Arensberg and Harry Pearson (eds.)", title: Trade and Market in the Early Empires, year: 1957}
+          - {author: Ellen Meiksins Wood, title: The Origin of Capitalism, year: 1999}
+        traditions:
+          defining: [marxism.classical]
+          typical: [marxism.leninism, marxism.ml, marxism.trotskyism, marxism.analytical, socdem.democratic-socialism, marxism.market-socialism]
+          contested: [marxism.left-communism, conservatism.cst]
+          rejects: [liberalism.austrian, libertarianism.objectivist]
+        presupposes: []
+        excludes: [markets.nature.same-thing]
+        tension: []
+        tags: [keystone]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [industrial-capital, finance-capital, landed-capital]
+          mechanism: >
+            Separating markets from capitalism moves the target from trade to the commodity status of labor and land,
+            which supports land reform, decommodified services and social ownership of production while letting
+            peasants and small producers keep their markets.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            Brenner and Wood date capitalism to English agrarian relations; world-systems analysts date it to the
+            sixteenth-century world market. Both separate it from markets as such.
+      - id: markets.nature.anti-market
+        label: Capitalism is the monopoly that sits on top of markets
+        claim: >
+          Ordinary markets are transparent competition among many small sellers; capitalism is the layer above them,
+          where a few hold monopolies of finance, long-distance trade and political connections and make their fortunes
+          by escaping competition.
+        voiced: "Capitalism is the anti-market. The market is the village fair; capitalism is the man who corners the grain and lends to the king."
+        you: >
+          You think everyday markets and capitalism are opposites: capitalism is big money that escapes competition
+          through monopoly, finance and political connections.
+        because: >
+          In every era there was a ground floor of everyday exchange, with many sellers and thin margins, and above it a
+          small zone of great merchants and financiers who controlled information, credit and access to rulers. Their
+          profits came from monopoly and from the state, not from competition. Genoese bankers, the Dutch and British
+          East India Companies and today's platforms and asset managers belong to that zone. Defend the market floor
+          and break the monopolies above it.
+        against:
+          - from: marxism.classical
+            text: >
+              Competition among small producers is what breeds monopoly. The village fair and the bank are stages of
+              one process, as Lenin showed in tracing how peasant markets produced rich peasants and landless laborers.
+          - from: liberalism.chicago
+            text: >
+              Large firms are large because they serve customers at lower cost. Today's "monopolies" face competition
+              from abroad and from new technology; the corner shop is not a moral ideal.
+        sources:
+          - {author: Fernand Braudel, title: Afterthoughts on Material Civilization and Capitalism, year: 1977}
+          - {author: Fernand Braudel, title: "Civilization and Capitalism, 15th–18th Century", year: 1979}
+          - {author: Giovanni Arrighi, title: The Long Twentieth Century, year: 1994}
+          - {author: Kevin Carson, title: Studies in Mutualist Political Economy, year: 2004}
+        traditions:
+          defining: [marxism.world-systems]
+          typical: [anarchism.mutualist, conservatism.distributism, libertarianism.left, commonsense.rigged]
+          contested: [libertarianism.paleo, conservatism.right-populism, marxism.dependency]
+          rejects: [liberalism.chicago, liberalism.austrian, marxism.ml]
+        presupposes: []
+        excludes: [markets.nature.same-thing]
+        tension: [markets.nature.commodity-production-is-the-root]
+        tags: []
+        analysis:
+          gains: [petty-bourgeoisie, peasantry, peripheral-workers]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >
+            Naming monopoly as capitalism points anger at finance, platforms and state-backed giants and supports
+            antitrust, small business and local markets, which can cut monopoly rents but leaves wage labor inside
+            small competitive firms untouched.
+          drain: softens
+          law_of_value: regulates
+          disputed: >
+            Amin's account of the five monopolies of the core converges with Braudel; orthodox Marxists hold that
+            locating capitalism in monopoly alone lets competitive exploitation off.
+      - id: markets.nature.socialist-markets
+        label: Markets can serve socialism
+        claim: >
+          Markets are a tool that can serve different owners and goals; with public or cooperative ownership of the
+          main means of production and a state that steers investment, markets can work inside socialism.
+        voiced: "Planning and market forces are not the essential difference between socialism and capitalism. Both are means. The question is who owns and whom it serves."
+        you: >
+          You think markets are a tool that a socialist economy can use, as long as the main industries are publicly
+          or cooperatively owned.
+        because: >
+          The Soviet experience showed that planning millions of products from the center wastes resources and buries
+          initiative. Markets for consumer goods and between enterprises let prices carry information, while public
+          ownership of land, banks and key industries keeps the surplus under social control. Lenin's New Economic
+          Policy, Yugoslav self-management, Hungary after 1968, and China and Vietnam since reform all used markets
+          within a socialist frame, with very different results, and the theory goes back to Lange's answer to Mises.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Without private owners risking their own capital, there is no real market for capital goods, so the
+              prices are fake. Market socialism either plays at markets or turns into capitalism, as Yugoslavia and
+              China did.
+          - from: marxism.left-communism
+            text: >
+              Enterprises that compete for profit, hire labor and sell commodities are capital, whoever holds the
+              title. "Socialist market economy" is a name for capitalism run by a party.
+        sources:
+          - {author: Oskar Lange, title: On the Economic Theory of Socialism, year: 1936}
+          - {author: Alec Nove, title: The Economics of Feasible Socialism, year: 1983}
+          - {author: John Roemer, title: A Future for Socialism, year: 1994}
+          - {author: Deng Xiaoping, title: "Excerpts from Talks Given in Wuchang, Shenzhen, Zhuhai and Shanghai", year: 1992}
+        traditions:
+          defining: [marxism.market-socialism, marxism.scc]
+          typical: [marxism.analytical, socdem.democratic-socialism]
+          contested: [marxism.ml, marxism.eurocommunism, marxism.maoism]
+          rejects: [liberalism.austrian, marxism.left-communism, marxism.council-communism, marxism.mlm, marxism.hoxhaism]
+        presupposes: [markets.nature.older-than-capitalism]
+        excludes: [markets.nature.same-thing, markets.nature.commodity-production-is-the-root]
+        tension: []
+        tags: []
+        analysis:
+          gains: [core-workers, peripheral-workers, professional-managerial]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >
+            Combining markets with public ownership of banks, land and key industries keeps part of the surplus under
+            state direction and allows planned investment, while enterprise managers gain power and wage labor and
+            competition for profit continue inside the market sector.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            Whether China's socialist market economy is socialism using markets or capitalism under a communist
+            party is among the sharpest splits among materialists; the answer turns on who controls the surplus and
+            the direction of travel.
+      - id: markets.nature.commodity-production-is-the-root
+        label: Wherever products are made for sale, capitalism grows back
+        claim: >
+          Markets and capitalism differ historically, but generalized production for sale is the soil capitalism grows
+          from; a socialist society must replace buying and selling with production planned for use.
+        voiced: "Small production engenders capitalism and the bourgeoisie continuously, daily, hourly, spontaneously, and on a mass scale."
+        you: >
+          You think that as long as goods are produced to be sold, capitalism keeps coming back, so socialism means
+          replacing markets with planning for use.
+        because: >
+          A market means separate producers who meet only through exchange, each compelled to cut costs and grow. Some
+          succeed and hire; others fail and are hired. That is how the NEP produced rich peasants and speculators, how
+          Yugoslav self-managed firms laid off workers and ran up foreign debt, and how market reform in the socialist
+          states ended in private ownership. The law of value, production steered blindly by price and profitability,
+          has to be replaced by conscious planning in labor time or in kind, not harnessed.
+        against:
+          - from: marxism.market-socialism
+            text: >
+              Every attempt to plan a modern economy in physical units produced shortages, queues and waste. Abolishing
+              money abolishes information, not exploitation.
+          - from: liberalism.austrian
+            text: >
+              Here the communists are honest: abolishing markets is their goal. Mises showed what follows: without
+              prices for capital goods, rational calculation is impossible.
+        sources:
+          - {author: Karl Marx, title: Critique of the Gotha Programme, year: 1875, note: "Written 1875, first published 1891"}
+          - {author: V. I. Lenin, title: "\"Left-Wing\" Communism: An Infantile Disorder", year: 1920}
+          - {author: J. V. Stalin, title: Economic Problems of Socialism in the USSR, year: 1952}
+        traditions:
+          defining: [marxism.left-communism, marxism.council-communism]
+          typical: [anarchism.communist, marxism.mlm, marxism.hoxhaism, marxism.maoism]
+          contested: [marxism.ml, marxism.trotskyism]
+          rejects: [marxism.market-socialism, marxism.scc, liberalism.austrian, anarchism.mutualist]
+        presupposes: [value.source.labor]
+        excludes: [markets.nature.socialist-markets]
+        tension: []
+        tags: []
+        analysis:
+          gains: [core-workers, peripheral-workers, reserve-army]
+          pays: [industrial-capital, finance-capital, petty-bourgeoisie, professional-managerial]
+          mechanism: >
+            Treating commodity production itself as the root makes the end of buying and selling of labor and means
+            of production the test of socialism, which targets owners and also the managers and small producers who
+            gain from market reform inside socialist states.
+          drain: breaks
+          law_of_value: abolishes
+          disputed: >
+            Stalin held commodity production could persist in a limited sphere under socialism; Bordiga and the
+            council communists held any commodity production meant capitalism. Mao's critique of "bourgeois right"
+            sits between them.
+      - id: markets.nature.framed-tool
+        label: Markets are a tool that needs a strong legal and social frame
+        claim: >
+          Competitive markets are the best way to coordinate an economy, but they do not sustain themselves: the state
+          must set a frame of law, competition policy and social protection, or markets turn into monopoly and lose
+          public support.
+        voiced: "As much competition as possible, as much planning as necessary. The market is a good servant and a bad master."
+        you: >
+          You think markets work well but only inside firm rules: laws against monopoly, a social safety net, and a
+          state that sets the frame without running firms.
+        because: >
+          Laissez-faire in the nineteenth century produced cartels and monopolies that destroyed competition from
+          within, and the anger of the dispossessed led to the planned economies of the 1930s. The answer is neither
+          laissez-faire nor planning but an economic constitution: stable money, open markets, strict competition law,
+          liability for owners, and social insurance. Markets are not capitalism in the sense of rule by capital; framed
+          properly they serve consumers and citizens.
+        against:
+          - from: libertarianism.ancap
+            text: >
+              Whoever writes the frame chooses winners. Competition law has protected incumbents, social insurance has
+              crowded out mutual aid, and the "frame" grows every decade.
+          - from: marxism.classical
+            text: >
+              The frame does not change that labor is bought and sold and production runs for profit. The West German
+              social market rested on export surpluses, and its frame was rewritten whenever capital required it.
+        sources:
+          - {author: Walter Eucken, title: The Foundations of Economics, year: 1940}
+          - {author: Alfred Müller-Armack, title: Wirtschaftslenkung und Marktwirtschaft, year: 1947}
+          - {author: Wilhelm Röpke, title: A Humane Economy, year: 1958}
+        traditions:
+          defining: [liberalism.ordoliberal, conservatism.christian-democracy]
+          typical: [socdem.nordic, socdem.third-way, liberalism.social, liberalism.technocratic, conservatism.cst]
+          contested: [socdem.keynesian, liberalism.chicago]
+          rejects: [libertarianism.ancap, marxism.left-communism, marxism.classical]
+        presupposes: [allocation.mechanism.social-market]
+        excludes: [markets.nature.commodity-production-is-the-root]
+        tension: [markets.nature.same-thing]
+        tags: []
+        analysis:
+          gains: [industrial-capital, professional-managerial, core-workers]
+          pays: [finance-capital, reserve-army]
+          mechanism: >
+            A legal frame of competition law and social insurance protects mid-sized industrial firms and core
+            workers from monopoly and destitution, while export-led growth on that model has relied on wage restraint
+            and on cheap inputs from the periphery.
+          drain: softens
+          law_of_value: regulates
+      - id: markets.nature.moral-economy
+        label: Markets are old and good when governed by moral law
+        claim: >
+          The market is an ancient human institution, the bazaar, the fair, the souk, that is healthy when bound by
+          moral and religious rules on fair prices, honest dealing and lending; capitalism is the market broken loose
+          from those rules.
+        voiced: "Trade is honorable; the Prophet himself was a merchant. What is forbidden is cheating, hoarding and usury. A market under God's law is a blessing."
+        you: >
+          You think markets are a natural part of life and good when people follow moral rules about fair prices and
+          honest dealing, and that the trouble starts when greed is let off the leash.
+        because: >
+          Every civilization had markets and every faith had rules for them: no hoarding of grain in famine, no usury,
+          fair weights, a just price. Crowds in eighteenth-century England rioted not against markets but against
+          dealers who broke the customary rules. What is new in capitalism is not trade but the claim that the market
+          answers to nothing above itself. Restore the moral law and the market serves the community.
+        against:
+          - from: liberalism.austrian
+            text: >
+              "Fair price" rules make goods vanish from the shelves. The price that looks like gouging is the signal
+              that brings supply to where it is needed.
+          - from: marxism.classical
+            text: >
+              The moral economy defends small producers and traders in a world where competition dissolves them. Moral
+              rules about exchange leave the wage relation, where the surplus is made, untouched.
+        sources:
+          - {author: Ibn Khaldun, title: Muqaddimah, year: c. 1377}
+          - {author: Muhammad Baqir al-Sadr, title: Iqtisaduna (Our Economics), year: 1961}
+          - {author: E. P. Thompson, title: The Moral Economy of the English Crowd in the Eighteenth Century, year: 1971}
+        traditions:
+          defining: []
+          typical: [religious.islamism-brotherhood, conservatism.cst, conservatism.distributism, nationalism.gandhian, religious.islamic-socialism, conservatism.traditionalist, religious.islamism-khomeinist]
+          contested: [conservatism.christian-democracy, religious.post-islamism]
+          rejects: [liberalism.austrian, liberalism.chicago, marxism.left-communism]
+        presupposes: [value.source.just-price]
+        excludes: [markets.nature.same-thing]
+        tension: []
+        tags: []
+        analysis:
+          gains: [petty-bourgeoisie, peasantry]
+          pays: [finance-capital]
+          mechanism: >
+            Moral rules on prices and lending protect small traders, farmers and debtors from hoarders and lenders,
+            but leave wage employment and the ownership of large enterprise as they are.
+          drain: none
+          law_of_value: regulates
+  - id: inequality.justice
+    domain: economy
+    layer: horizon
+    question: Is economic inequality just?
+    plain: Some people have far more than others. Is that fair, unfair, or the wrong question?
+    short: the justice of inequality
+    importance: 2
+    positions:
+      - id: inequality.justice.luck-unjust
+        label: Inequality from luck and inheritance is unjust
+        claim: >
+          Much inequality comes from things nobody chose or earned: who your parents were, where you were born, what
+          talents you happened to have. Inequality from luck and inheritance is unjust, and society should correct it.
+        voiced: "Nobody deserves the family they were born into. Mostly it's luck and who your parents were."
+        you: >
+          You think most inequality comes down to luck and inheritance, and that a fair society would correct for it.
+        because: >
+          Nobody earns their parents, their country of birth, their health or their native talents. A child born
+          into a wealthy family has a head start no effort by a poor child can match. If people should be held
+          responsible only for their choices, then inequalities that come from unchosen circumstances are unfair.
+          Heavy taxes on inheritance, public schooling, health care and transfers can correct them. Rawls added that
+          inequalities are acceptable only when they make the worst-off better than they would otherwise be.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Luck cannot be removed from human life. To correct for every unchosen advantage the state would have to
+              control everyone's position, and the "mirage of social justice" ends in a society where officials
+              decide what each deserves.
+          - from: libertarianism.minarchist
+            text: >
+              Your talents may be arbitrary from a moral point of view, but they are yours. Whatever arises from a just
+              situation by just steps is itself just, however unequal.
+          - from: marxism.classical
+            text: >
+              Class position is not a lottery. A system that requires most people to work for a few will produce
+              that inequality whatever luck does. Correcting luck leaves the machine running.
+        sources:
+          - {author: John Rawls, title: A Theory of Justice, year: 1971}
+          - {author: Ronald Dworkin, title: Sovereign Virtue, year: 2000}
+          - {author: G. A. Cohen, title: Why Not Socialism?, year: 2009}
+          - {author: Thomas Piketty, title: Capital in the Twenty-First Century, year: 2013}
+        traditions:
+          defining: [liberalism.egalitarian, libertarianism.left]
+          typical: [liberalism.social, marxism.analytical, socdem.democratic-socialism, liberalism.progressive, socdem.nordic, commonsense.rigged]
+          contested: [socdem.third-way, conservatism.one-nation]
+          rejects: [liberalism.austrian, libertarianism.minarchist, libertarianism.objectivist, libertarianism.ancap, conservatism.traditionalist]
+        presupposes: []
+        excludes: [inequality.justice.process-not-pattern, inequality.justice.natural-hierarchy]
+        tension: [inequality.justice.earned-desert, property.inheritance.family-right]
+        tags: [keystone]
+        analysis:
+          gains: [core-workers, reserve-army, professional-managerial]
+          pays: [finance-capital, landed-capital]
+          mechanism: >
+            Treating inherited advantage as unjust supports inheritance and wealth taxes, public schooling and
+            transfers, which move income from rentier families to wage earners within a country; it measures luck
+            inside national borders, where the largest unchosen advantage, citizenship of a rich country, is left out.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            Analytical Marxists (Cohen, Roemer) hold luck egalitarianism leads to socialism; orthodox Marxists hold it
+            stays at distribution and leaves ownership; Milanovic and Third-Worldists note that birthplace is the
+            largest luck of all and is rarely corrected.
+      - id: inequality.justice.stewardship
+        label: Wealth is a gift held in trust for others
+        claim: >
+          Wealth is not simply the owner's to use as he pleases; it is a gift from God held in trust, and inequality is
+          acceptable only when the rich use what they hold for the good of others, above all the poor.
+        voiced: "Man should not consider his material possessions as his own, but as common to all, so as to share them without hesitation when others are in need."
+        you: >
+          You think wealth is a gift held in trust, and that the question is what the rich do with it for others.
+        because: >
+          The earth was given to all, and each person's goods are entrusted to them by God. Differences in fortune are
+          part of an order that no human scheme can abolish, but they come with obligations: to pay just wages, to give
+          generously, to invest in the community. A rich man who hoards is a thief of what belongs to the poor. The
+          remedy for injustice is conversion of hearts and the duty of giving, the tithe and the zakat, backed by law
+          where needed, not envy or the abolition of property.
+        against:
+          - from: marxism.classical
+            text: >
+              The charity of the rich is a portion of what was taken from the poor, handed back on the giver's terms
+              and with the giver's name on the building. Stewardship asks the owner to be kind and leaves him owner.
+          - from: libertarianism.objectivist
+            text: >
+              Wealth a man created is his, not a trust for the needy. Stewardship is the morality of sacrifice
+              dressed in robes, and it makes the producer a servant of whoever is in need.
+        sources:
+          - {author: Leo XIII, title: Rerum Novarum, year: 1891}
+          - {author: Andrew Carnegie, title: Wealth, year: 1889}
+          - {author: Paul VI, title: Populorum Progressio, year: 1967}
+        traditions:
+          defining: [conservatism.cst]
+          typical: [conservatism.christian-democracy, conservatism.evangelical-right, religious.islamism-brotherhood, nationalism.gandhian, conservatism.one-nation, religious.christian-socialism, conservatism.distributism]
+          contested: [religious.liberation-theology, conservatism.integralism]
+          rejects: [marxism.classical, libertarianism.objectivist, liberalism.chicago]
+        presupposes: [property.private.social-function]
+        excludes: []
+        tension: [inequality.justice.class-exploitation]
+        tags: []
+        analysis:
+          gains: [finance-capital, industrial-capital, landed-capital, petty-bourgeoisie]
+          pays: [core-workers, peasantry]
+          mechanism: >
+            Making the duties of wealth a matter of conscience and charity directs help to the poor through
+            owners' giving and religious bodies, which relieves need while keeping property and the decision over
+            the surplus with those who hold it.
+          drain: softens
+          law_of_value: regulates
+          disputed: >
+            Liberation theologians read the universal destination of goods as a mandate for land reform and the
+            option for the poor, which would score as reducing the drain; Gandhi's trusteeship was framed as a path
+            to ending exploitation without violence.
+      - id: inequality.justice.process-not-pattern
+        label: Any distribution is just if it came about by fair rules
+        claim: >
+          Justice is about how holdings arose, not how they are spread: if people acquired what they have by work,
+          gift and voluntary exchange, the resulting inequality is just, however large.
+        voiced: "Whatever arises from a just situation by just steps is itself just. Wilt Chamberlain's fans gave him their quarters freely; nobody was wronged."
+        you: >
+          You think inequality is fair if the wealth was gained by fair rules, and that nobody has a right to rearrange
+          the results.
+        because: >
+          A distribution is not handed out by anyone, so it cannot be fair or unfair in itself; it is the outcome of
+          millions of free choices. Begin from any pattern you like, let people trade and give freely, and the pattern
+          will change. Keeping it would require continuous interference in people's lives. "Social justice" demands
+          that someone decide what each deserves, which a market society cannot do without becoming a command society.
+          What justice requires is fair rules, enforced equally.
+        against:
+          - from: nationalism.indigenous-sovereignty
+            text: >
+              Trace any title back far enough and you reach land taken by force from us. A theory of justice in
+              holdings that cannot rectify the founding theft is a theory for those who did the taking.
+          - from: liberalism.egalitarian
+            text: >
+              The rules themselves shape the outcome: inheritance law, property law, the bargaining power of workers.
+              There is no neutral process that merely "lets things happen"; every set of rules picks a distribution.
+        sources:
+          - {author: Robert Nozick, title: "Anarchy, State, and Utopia", year: 1974}
+          - {author: Friedrich Hayek, title: "Law, Legislation and Liberty, Vol. 2: The Mirage of Social Justice", year: 1976}
+        traditions:
+          defining: [libertarianism.minarchist, liberalism.austrian]
+          typical: [libertarianism.ancap, libertarianism.objectivist, liberalism.chicago, conservatism.fusionism, liberalism.classical]
+          contested: [libertarianism.paleo]
+          rejects: [liberalism.egalitarian, libertarianism.left, marxism.classical, conservatism.cst, nationalism.indigenous-sovereignty]
+        presupposes: []
+        excludes: [inequality.justice.luck-unjust]
+        tension: [inequality.justice.earned-desert]
+        tags: [keystone]
+        analysis:
+          gains: [finance-capital, landed-capital, industrial-capital, comprador-capital]
+          pays: [core-workers, peripheral-workers, reserve-army, peasantry]
+          mechanism: >
+            Judging only the procedure turns present holdings, including those built on conquest, slavery and colonial
+            land seizure, into just property, and rules out taxing or redistributing them, which protects the largest
+            fortunes and the titles core firms hold in the periphery.
+          drain: sustains
+          law_of_value: extends
+      - id: inequality.justice.earned-desert
+        label: Work hard and you deserve what you get
+        claim: >
+          Inequality is fair when it reflects effort and contribution: people who work harder, take more risk or
+          contribute more deserve more, and those who don't, don't.
+        voiced: "Nobody handed me anything. I worked for what I've got, and the people who've got more mostly worked harder or smarter."
+        you: >
+          You think people mostly get what they work for, and that differences in income are fair when they come
+          from effort.
+        because: >
+          Fairness means people get out what they put in. The nurse who takes extra shifts, the shopkeeper who opens at
+          six, the founder who risked everything deserve more than someone who did not. Flattening rewards insults
+          those who made sacrifices and removes the reason to make them. Inequality from cheating or connections is
+          wrong; inequality from work is just. Most people who started with little and worked hard know this from their
+          own lives.
+        against:
+          - from: liberalism.egalitarian
+            text: >
+              The capacity to make an effort, the health, upbringing and confidence behind it, is itself unearned.
+              Desert cannot be the basis for distribution when the qualities that earn it are luck.
+          - from: marxism.classical
+            text: >
+              The hardest work pays least: cleaners, carers, miners, farmworkers. The largest incomes go to owners who
+              need not work at all. Pay follows position and bargaining power, not effort.
+          - from: liberalism.austrian
+            text: >
+              The market rewards value to others, not merit or effort. Pretending that market incomes reflect desert
+              invites the demand that they be corrected when they do not.
+        sources:
+          - {author: Samuel Smiles, title: Self-Help, year: 1859}
+          - {author: Ayn Rand, title: Atlas Shrugged, year: 1957}
+        traditions:
+          defining: [commonsense.self-reliance]
+          typical: [libertarianism.objectivist, conservatism.fusionism, conservatism.right-populism, conservatism.evangelical-right, religious.political-meritocracy]
+          contested: [liberalism.classical, socdem.third-way]
+          rejects: [liberalism.egalitarian, marxism.classical, liberalism.austrian]
+        presupposes: []
+        excludes: []
+        tension: [inequality.justice.luck-unjust, inequality.justice.process-not-pattern, cs.rigged.system-rigged]
+        tags: [commonsense]
+        analysis:
+          gains: [petty-bourgeoisie, professional-managerial, industrial-capital]
+          pays: [reserve-army, core-workers, peripheral-workers]
+          mechanism: >
+            Treating income as a measure of effort makes low pay look like a personal failing, which weakens claims for
+            higher wages and benefits and lends the legitimacy of hard work to property incomes that involve none.
+          drain: sustains
+          law_of_value: extends
+          disputed: >
+            Some materialists note the norm cuts both ways: held by workers, "you get what you work for" grounds
+            anger at owners who do not work, as in the labor theory of property of early socialists.
+      - id: inequality.justice.natural-hierarchy
+        label: Inequality is natural, and a society needs its orders and ranks
+        claim: >
+          People differ in ability, character and calling, and a healthy society has ranks, an aristocracy of some kind,
+          and settled differences of station; attempts to level them destroy what holds society together.
+        voiced: "Civilized society requires orders and classes. Level them, and you do not raise the low; you destroy the high and leave a crowd."
+        you: >
+          You think inequality is natural and even necessary, and that a society needs people of different rank and
+          role.
+        because: >
+          No society has ever been equal, and those that tried produced a new ruling class with less restraint. Rank
+          brings duty: an aristocracy or a settled elite carries memory, manners, patronage and service that a crowd of
+          equals cannot. Families that hold property over generations can take the long view. Equality is an abstraction
+          that dissolves loyalty, deference and excellence, and leaves people alone before the state.
+        against:
+          - from: liberalism.egalitarian
+            text: >
+              That people differ does not show they deserve different life chances. Every aristocracy claimed nature
+              for itself; every one was made by conquest and kept by law.
+          - from: marxism.classical
+            text: >
+              The "natural" elite is always the families who hold the land and the capital. Nature is called in to
+              bless what conquest and inheritance set up, and the poor are told their place is God's will.
+        sources:
+          - {author: Edmund Burke, title: Reflections on the Revolution in France, year: 1790}
+          - {author: Friedrich Nietzsche, title: Beyond Good and Evil, year: 1886}
+          - {author: Russell Kirk, title: The Conservative Mind, year: 1953}
+        traditions:
+          defining: [conservatism.traditionalist, conservatism.reactionary]
+          typical: [conservatism.burkean, conservatism.monarchist, fascism.neoreaction, fascism.traditionalist, conservatism.integralism, religious.confucian]
+          contested: [conservatism.national, conservatism.paleo]
+          rejects: [liberalism.egalitarian, marxism.classical, anarchism.communist, socdem.nordic]
+        presupposes: []
+        excludes: [inequality.justice.luck-unjust, inequality.justice.class-exploitation]
+        tension: []
+        tags: []
+        analysis:
+          gains: [landed-capital, finance-capital, comprador-capital]
+          pays: [core-workers, peasantry, peripheral-workers, reserve-army]
+          mechanism: >
+            Treating rank as natural justifies inherited property, deference and limits on popular power, which
+            protects old landed and financial families; in the periphery the same ideology has backed landlord and
+            caste hierarchies that keep peasant labor cheap.
+          drain: sustains
+          law_of_value: none
+      - id: inequality.justice.class-exploitation
+        label: Wrong question; inequality follows from who owns production
+        claim: >
+          Inequality of income follows from inequality of ownership: as long as a few own the means of production and
+          the many must work for them, inequality will be reproduced. The goal is not fair shares but the abolition of
+          classes.
+        voiced: "The real content of the proletarian demand for equality is the demand for the abolition of classes. Any demand for equality which goes beyond that passes into absurdity."
+        you: >
+          You think inequality comes from a few owning what everyone needs to work, so the answer is changing who owns
+          things, not just sharing out income more fairly.
+        because: >
+          Arguing over fair distribution treats the shares as if they fell from the sky. But the distribution of income
+          follows from the distribution of the means of production: owners take profit because they own, workers take
+          wages because they own nothing else. Tax and transfer can narrow the gap for a while; owners then move
+          capital, fund parties and wait. Talk of "justice" in the abstract hides that each class has its own standard
+          of fairness. End private ownership of production and the main source of inequality goes with it.
+        against:
+          - from: liberalism.egalitarian
+            text: >
+              Marxists condemn exploitation as unjust while claiming to have no theory of justice. Even after
+              socialization, differences in talent and need will raise questions of fair distribution; Cohen saw that
+              Marxism needs normative theory.
+          - from: liberalism.austrian
+            text: >
+              Abolishing private ownership did not abolish inequality; it replaced owners with officials who held
+              power over every job and every flat, without even a market to escape into.
+        sources:
+          - {author: Karl Marx, title: Critique of the Gotha Programme, year: 1875, note: "Written 1875, first published 1891"}
+          - {author: Friedrich Engels, title: Anti-Dühring, year: 1878}
+        traditions:
+          defining: [marxism.classical, marxism.leninism, marxism.ml]
+          typical: [marxism.trotskyism, marxism.maoism, marxism.left-communism, marxism.council-communism, anarchism.communist, anarchism.syndicalist]
+          contested: [marxism.analytical, socdem.democratic-socialism]
+          rejects: [liberalism.egalitarian, liberalism.austrian, conservatism.cst, conservatism.traditionalist]
+        presupposes: [class.concept.relation-to-production, capitalism.nature.exploitation-profit]
+        excludes: [inequality.justice.natural-hierarchy]
+        tension: [inequality.justice.luck-unjust]
+        tags: []
+        analysis:
+          gains: [core-workers, peripheral-workers, reserve-army, peasantry]
+          pays: [finance-capital, industrial-capital, landed-capital]
+          mechanism: >
+            Moving the question from shares to ownership makes property in the means of production the thing to
+            change, which threatens owners' claims more than any tax rate and directs workers to take control of the
+            surplus rather than bargain for a larger transfer.
+          drain: reduces
+          law_of_value: abolishes
+          disputed: >
+            Third-Worldists hold that framing the question within each country hides the larger inequality between
+            core and periphery; analytical Marxists hold the position needs an explicit theory of justice.
+      - id: inequality.justice.global-drain
+        label: The biggest inequality is between rich and poor countries, and it is extracted
+        claim: >
+          The largest inequality in the world is between people in rich and poor countries, and it is not luck: it is
+          produced by the flow of labor and resources from the periphery to the core. Justice within rich countries
+          reshuffles wealth that was drained from elsewhere.
+        voiced: "Where you are born decides more of your income than anything you do. That is not a lottery; it is a structure, and the North built it."
+        you: >
+          You think the biggest gap in the world is between rich and poor countries, and that rich countries are rich
+          partly because wealth flows out of poor ones.
+        because: >
+          A worker's country of birth explains far more of her income than her class, effort or education. The gap is
+          held in place by unequal exchange, debt service, profit repatriation and patents, which move trillions of
+          dollars a year in resources and labor from the South to the North. Redistribution within a rich country, even
+          a generous one, shares out wealth partly built on that flow. Justice means ending the drain: fair prices,
+          debt cancellation, technology transfer and sovereignty over resources.
+        against:
+          - from: marxism.trotskyism
+            text: >
+              Workers in rich countries are exploited too, and telling them they live off the South hands them to the
+              nationalists. The divide is between classes worldwide, not between nations.
+          - from: liberalism.chicago
+            text: >
+              Global inequality between people has fallen since 1990 because Asia joined the world market. Trade, not
+              the end of trade, closed the gap for a billion people.
+        sources:
+          - {author: Samir Amin, title: Unequal Development, year: 1973}
+          - {author: Branko Milanovic, title: Global Inequality, year: 2016}
+          - {author: Jason Hickel, title: The Divide, year: 2017}
+        traditions:
+          defining: [marxism.third-worldism, marxism.dependency]
+          typical: [marxism.world-systems, marxism.mlm, nationalism.pan-africanism, nationalism.decolonial, nationalism.bolivarianism, ecology.environmental-justice]
+          contested: [marxism.ml, marxism.maoism, liberalism.egalitarian]
+          rejects: [marxism.trotskyism, liberalism.chicago, conservatism.national]
+        presupposes: [imperialism.nature.unequal-exchange-drain, poverty.cause.drain]
+        excludes: []
+        tension: [inequality.justice.luck-unjust]
+        tags: []
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, comprador-capital, core-workers]
+          mechanism: >
+            Putting the core-periphery gap first supports debt cancellation, higher commodity and wage prices in the
+            South and resource sovereignty, which cut core profits and the cheap imports that core consumers,
+            including workers, rely on.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >
+            Whether core workers share in the drain is the sharpest split: Emmanuel, Amin and Cope say yes; most
+            Trotskyists and many Marxist-Leninists say the core working class remains exploited and its interest lies
+            with the periphery.
+  - id: welfare.state
+    domain: economy
+    layer: analysis
+    question: What is the welfare state, and who is it for?
+    plain: Pensions, public health care, unemployment benefits. Where did they come from, and whom do they really serve?
+    short: the welfare state
+    importance: 2
+    positions:
+      - id: welfare.state.social-citizenship
+        label: Social rights won by organized workers
+        claim: >
+          The welfare state is a set of social rights, to health, income in old age, sickness and unemployment, that
+          organized workers won through unions and elections, and it makes people less dependent on selling their labor.
+        voiced: "The people's home: no one privileged, no one neglected. We built it with the strike and the ballot, and it belongs to all of us."
+        you: >
+          You see the welfare state as rights that working people fought for and won, which make life less dependent on
+          the boss and the market.
+        because: >
+          Where labor movements were strong and allied with farmers or the middle strata, as in Scandinavia, they built
+          universal programs that covered everyone, raised the floor for all, and so won lasting majorities. A worker
+          who can survive illness, old age or a layoff without begging can refuse bad work, which raises wages and power
+          across the board. Citizenship came in three stages: civil rights, political rights, then social rights. The
+          welfare state completes it.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              The people's home was furnished with cheap goods and raw materials from the periphery and with profits
+              Swedish and Danish firms made abroad. A welfare state for a few million in the core is not a model the
+              world's workers can copy.
+          - from: liberalism.chicago
+            text: >
+              Universal programs pay the middle class with its own money, minus the cost of the bureaucracy. Targeted
+              cash helps the poor at a fraction of the price.
+        sources:
+          - {author: William Beveridge, title: Social Insurance and Allied Services, year: 1942}
+          - {author: T. H. Marshall, title: Citizenship and Social Class, year: 1950}
+          - {author: Walter Korpi, title: The Democratic Class Struggle, year: 1983}
+          - {author: Gøsta Esping-Andersen, title: The Three Worlds of Welfare Capitalism, year: 1990}
+        traditions:
+          defining: [socdem.nordic, socdem.labourism]
+          typical: [socdem.keynesian, socdem.democratic-socialism, socdem.fabian, liberalism.social, liberalism.egalitarian]
+          contested: [socdem.third-way, marxism.eurocommunism]
+          rejects: [libertarianism.ancap, libertarianism.objectivist, marxism.third-worldism]
+        presupposes: []
+        excludes: [welfare.state.coercive-dependency]
+        tension: [welfare.state.drain-and-threat]
+        tags: [keystone]
+        analysis:
+          gains: [core-workers, professional-managerial, reserve-army]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Universal social insurance funded by taxes and contributions lets core workers refuse the worst jobs and
+            raises wages, financed from a national product that includes profits core firms make abroad and the low
+            prices of peripheral imports.
+          drain: softens
+          law_of_value: regulates
+          disputed: >
+            Social-democratic Marxists (Korpi, Esping-Andersen) credit domestic class power; Third-Worldists credit
+            the drain; many hold both mattered.
+          consciousness: class-economic
+      - id: welfare.state.safety-net
+        label: A minimal safety net so nobody falls below a floor
+        claim: >
+          The state should guarantee a minimum below which nobody falls, targeted at those in real need and paid in cash
+          where possible, and otherwise leave people to provide for themselves through work and markets.
+        voiced: "A floor, not a hammock. Guarantee a minimum, help the truly needy, and let everyone else keep what they earn."
+        you: >
+          You think the state should make sure nobody falls into destitution, but keep help limited and targeted, and
+          leave the rest to work and markets.
+        because: >
+          A wealthy society can afford to protect everyone against severe deprivation, and doing so is both decent and
+          wise: it makes the market order acceptable to those who lose in it. But broad programs breed bureaucracy,
+          crowd out savings and private provision, and blunt the incentive to work. A simple guaranteed minimum, such as
+          a negative income tax, does the job without a state that manages people's lives.
+        against:
+          - from: socdem.nordic
+            text: >
+              Programs for the poor become poor programs: the middle class stops paying for what it does not use, the
+              benefit is cut, and the recipients are stigmatized and policed.
+          - from: libertarianism.ancap
+            text: >
+              Even a minimal net is paid for by taking from some to give to others. Once the principle is conceded,
+              there is no limit except politics.
+        sources:
+          - {author: Friedrich Hayek, title: The Road to Serfdom, year: 1944}
+          - {author: Friedrich Hayek, title: The Constitution of Liberty, year: 1960}
+          - {author: Milton Friedman, title: Capitalism and Freedom, year: 1962}
+        traditions:
+          defining: [liberalism.chicago]
+          typical: [liberalism.classical, socdem.third-way, liberalism.technocratic, liberalism.ordoliberal, conservatism.fusionism]
+          contested: [liberalism.austrian, libertarianism.minarchist]
+          rejects: [socdem.nordic, libertarianism.ancap, marxism.classical]
+        presupposes: []
+        excludes: []
+        tension: [welfare.state.social-citizenship]
+        tags: []
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [reserve-army, core-workers]
+          mechanism: >
+            A means-tested minimum keeps the unemployed alive while leaving them dependent on taking any job, which
+            holds down wages at the bottom; cash in place of services opens health, housing and pensions to private
+            providers.
+          drain: none
+          law_of_value: extends
+      - id: welfare.state.subsidiarity
+        label: Care belongs first to families and communities; the state backs them up
+        claim: >
+          Care for the sick, old and poor belongs first to families, parishes, mutual societies and local communities;
+          the state should support them and step in only where they cannot cope, not take their place.
+        voiced: "It is an injustice to assign to a greater and higher association what lesser and subordinate organizations can do. The state should help, not absorb."
+        you: >
+          You think caring for people is first the job of families and communities, with the state helping out rather
+          than taking over.
+        because: >
+          The human person grows in families and communities, not as a client of a ministry. When the state takes over
+          care, it weakens the bonds that made people look after each other and replaces them with rules and queues.
+          Social insurance run by the partners in each trade, family allowances, church hospitals and mutual societies
+          keep help close to those it serves. This is how the German, Dutch and Italian welfare states were built, and
+          why they support the family rather than replace it.
+        against:
+          - from: feminism.materialist
+            text: >
+              "Family and community" means mothers, daughters and wives doing the care for nothing. Subsidiarity
+              writes women's unpaid labor into the constitution of the welfare state.
+          - from: socdem.nordic
+            text: >
+              Leaving care to churches and families makes help depend on whom you belong to. Universal public services
+              are what free people from dependence on charity and on relatives.
+        sources:
+          - {author: Abraham Kuyper, title: Sphere Sovereignty, year: 1880}
+          - {author: Pius XI, title: Quadragesimo Anno, year: 1931}
+          - {author: John Paul II, title: Centesimus Annus, year: 1991}
+        traditions:
+          defining: [conservatism.cst, conservatism.christian-democracy]
+          typical: [conservatism.distributism, communitarianism, conservatism.postliberal, religious.islamism-brotherhood, conservatism.burkean, conservatism.one-nation]
+          contested: [conservatism.evangelical-right, anarchism.communalism]
+          rejects: [socdem.nordic, marxism.ml, libertarianism.objectivist]
+        presupposes: [property.private.social-function]
+        excludes: []
+        tension: [welfare.state.social-citizenship]
+        tags: []
+        analysis:
+          gains: [petty-bourgeoisie, core-workers, professional-managerial]
+          pays: [reserve-army]
+          mechanism: >
+            Insurance tied to occupation and family keeps benefits in proportion to past status and supports the male
+            breadwinner, which protects skilled workers and the self-employed while leaving women's care work unpaid
+            and the unemployed and migrants at the edge.
+          drain: none
+          law_of_value: regulates
+      - id: welfare.state.coercive-dependency
+        label: Forced redistribution that breeds dependency
+        claim: >
+          The welfare state takes money by force from those who earn it and gives it to others, which crowds out
+          charity and mutual aid, traps recipients in dependency and grows the state.
+        voiced: "Welfare took the place of the father, the church and the friendly society, and left a generation that can't stand on its own feet."
+        you: >
+          You think the welfare state takes people's earnings by force, makes people dependent, and pushes out the
+          charity and mutual help that used to do the job better.
+        because: >
+          Before the welfare state, working people built friendly societies, lodges and mutual aid associations that
+          insured millions against sickness and death, on their own terms. State programs displaced them. Benefits that
+          fall away as soon as you earn create traps where work does not pay, and generations grow up expecting the
+          state to provide. Charity given freely respects both giver and receiver; taxation does not. Shrink the state
+          and civil society will grow back.
+        against:
+          - from: socdem.nordic
+            text: >
+              The Nordic countries have the largest welfare states and some of the highest employment rates in the
+              world. Security makes people more willing to take risks and change jobs, not less.
+          - from: conservatism.cst
+            text: >
+              The mutual societies collapsed in the Depression precisely when they were needed. The poor are not a
+              burden but brothers and sisters, and the state has a duty in justice, not only in charity.
+        sources:
+          - {author: Murray Rothbard, title: For a New Liberty, year: 1973}
+          - {author: Robert Nozick, title: "Anarchy, State, and Utopia", year: 1974}
+          - {author: Charles Murray, title: "Losing Ground: American Social Policy, 1950–1980", year: 1984}
+          - {author: David Beito, title: From Mutual Aid to the Welfare State, year: 2000}
+        traditions:
+          defining: [libertarianism.ancap, libertarianism.minarchist, libertarianism.objectivist]
+          typical: [libertarianism.paleo, conservatism.fusionism, liberalism.austrian, commonsense.self-reliance, conservatism.evangelical-right]
+          contested: [conservatism.right-populism, liberalism.chicago]
+          rejects: [socdem.nordic, socdem.labourism, conservatism.cst, marxism.classical]
+        presupposes: []
+        excludes: [welfare.state.social-citizenship]
+        tension: []
+        tags: []
+        analysis:
+          gains: [finance-capital, industrial-capital, petty-bourgeoisie]
+          pays: [reserve-army, core-workers]
+          mechanism: >
+            Cutting benefits forces the unemployed and the sick into any available job, which lowers wages at the
+            bottom and taxes on owners, and turns pensions and health into private markets for insurers and asset
+            managers.
+          drain: sustains
+          law_of_value: extends
+      - id: welfare.state.drain-and-threat
+        label: Paid for by the drain and forced by the threat of revolution
+        claim: >
+          The welfare states of the rich countries were concessions to their workers, paid for partly by wealth drawn
+          from the colonies and the periphery and granted out of fear of revolution; as the drain is contested and the
+          threat recedes, they are taken back.
+        voiced: "Bismarck built social insurance to beat the socialists. The West built the welfare state with Moscow at its back and the colonies at its feet. Both are gone, and so is the welfare state."
+        you: >
+          You think rich countries' welfare states were paid for by wealth taken from poorer countries and granted out
+          of fear of revolution, and that they are being taken away now those conditions have changed.
+        because: >
+          Bismarck introduced sickness and old-age insurance in the 1880s alongside a ban on the socialist party. The
+          great expansion came after 1945, when communist parties were strong in Western Europe and the Soviet Union
+          stood as an alternative. At the same time, core firms bought oil, metals, crops and labor from the periphery
+          at prices far below what equivalent labor in the core would cost, and that cheap supply helped fund high wages
+          and taxes. Since the 1970s, with the threat gone and the periphery pushing back, core capital has cut
+          pensions, privatized services and turned on its own workers. Meanwhile the IMF dismantled food subsidies and
+          public health across the South.
+        against:
+          - from: socdem.nordic
+            text: >
+              Sweden and Norway had no great colonial empires, yet they built the most generous welfare states. They
+              did it through organized workers allied with farmers, high productivity and solidaristic wages.
+          - from: marxism.trotskyism
+            text: >
+              The welfare state was won by core workers' strikes and votes. Telling them it was a bribe paid with
+              colonial loot disarms them just as capital is trying to take it back.
+        sources:
+          - {author: V. I. Lenin, title: "Imperialism, the Highest Stage of Capitalism", year: 1917}
+          - {author: Arghiri Emmanuel, title: Unequal Exchange, year: 1969}
+          - {author: Zak Cope, title: The Wealth of (Some) Nations, year: 2019}
+        traditions:
+          defining: [marxism.third-worldism]
+          typical: [marxism.mlm, marxism.maoism, marxism.dependency, marxism.world-systems, nationalism.pan-africanism]
+          contested: [marxism.ml, marxism.black-radical]
+          rejects: [socdem.nordic, socdem.labourism, marxism.trotskyism, liberalism.chicago]
+        presupposes: [imperialism.nature.unequal-exchange-drain]
+        excludes: []
+        tension: [welfare.state.social-citizenship]
+        tags: []
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, core-workers]
+          mechanism: >
+            Linking core welfare to the drain shows that its defense within one rich country cannot be separated from
+            the prices paid for peripheral labor and resources, which supports alliances with the periphery and
+            raising its supply prices, at a cost to core consumption.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >
+            The size of the drain's contribution is disputed: Cope and Hickel estimate it as large; Korpi and most
+            social democrats attribute welfare to domestic class power; Trotskyists hold that core workers produce
+            the surplus that funds it.
+          consciousness: hegemonic
+      - id: welfare.state.capital-reproduction
+        label: It keeps capitalism running, and it is also a gain workers can defend
+        claim: >
+          The welfare state does two things at once: it keeps a healthy, trained workforce available to employers,
+          manages the unemployed and buys social peace, and it is also a real gain workers won and can defend.
+        voiced: "Relief expands to quiet disorder and contracts to force people back to work. The welfare state is a battlefield, not a gift."
+        you: >
+          You think the welfare state keeps workers fit for work and keeps the peace for employers, while also being
+          something workers won and should defend.
+        because: >
+          Capital needs workers who are educated, healthy and housed, but no single employer will pay for it, so the
+          state does. Unemployment benefits keep the jobless alive and ready to be hired when trade picks up, under rules
+          that force them to accept work. Relief has expanded in periods of unrest and been cut back when calm returned.
+          At the same time, every benefit is a share of the product taken out of the market, which is why capital
+          attacks it in hard times. The welfare state is contradictory: a support of the system and a ground for
+          struggle against it.
+        against:
+          - from: socdem.nordic
+            text: >
+              Calling universal health care a service to capital is ingratitude to those who fought for it. Workers in
+              countries with strong welfare states live longer, freer lives, and they know who to thank.
+          - from: marxism.third-worldism
+            text: >
+              A domestic account of who pays and who gains leaves out where the funds came from. The contradiction
+              runs not only between labor and capital at home but between core and periphery.
+        sources:
+          - {author: Frances Fox Piven and Richard Cloward, title: "Regulating the Poor: The Functions of Public Welfare", year: 1971}
+          - {author: James O'Connor, title: The Fiscal Crisis of the State, year: 1973}
+          - {author: Ian Gough, title: The Political Economy of the Welfare State, year: 1979}
+          - {author: Claus Offe, title: Contradictions of the Welfare State, year: 1984}
+        traditions:
+          defining: [marxism.structural]
+          typical: [marxism.western, marxism.trotskyism, marxism.autonomism, marxism.social-reproduction, marxism.gramscian, marxism.luxemburgism]
+          contested: [marxism.left-communism, socdem.democratic-socialism]
+          rejects: [socdem.nordic, liberalism.chicago, libertarianism.ancap]
+        presupposes: [state.nature.relative-autonomy]
+        excludes: []
+        tension: [welfare.state.social-citizenship]
+        tags: []
+        analysis:
+          gains: [core-workers, reserve-army]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Reading welfare as both a support of accumulation and a gain of struggle points workers to defend and
+            extend benefits while refusing the work-test rules that discipline the unemployed, which keeps pressure
+            on profits at home.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            Left communists hold the welfare state simply manages the proletariat for capital; Third-Worldists hold
+            the analysis is incomplete without the drain.
+          consciousness: class-economic
+      - id: welfare.state.for-our-own
+        label: For the people who built it and paid in, not for newcomers
+        claim: >
+          The welfare state is a pact among members of a nation who trust each other and have paid in over generations;
+          it should serve its own citizens first and cannot survive open borders.
+        voiced: "We paid in all our lives. Our parents built it. Now we're told to wait at the back of the queue behind people who just arrived."
+        you: >
+          You think the welfare state belongs to the people who built it and paid into it, and should look after them
+          first.
+        because: >
+          People will pay high taxes for strangers only when those strangers are part of the same national community,
+          with shared obligations and history. The Nordic welfare states were built in small, cohesive nations. Large
+          migration from poorer countries, with newcomers drawing on services they have not paid for, weakens the trust
+          that sustains them and pushes working people toward resentment. A welfare state is a national achievement and
+          must have borders to survive.
+        against:
+          - from: marxism.trotskyism
+            text: >
+              Closing benefits to migrants makes a lower tier of workers without rights, which employers use to undercut
+              everyone. The first people this "protection" fails are the citizens on the same shift.
+          - from: liberalism.technocratic
+            text: >
+              In most rich countries migrants are net contributors: they arrive working age, educated at another
+              country's expense, and pay in before they draw out. The aging native population is what strains the
+              system.
+        sources:
+          - {author: David Goodhart, title: Too Diverse?, year: 2004}
+          - {author: David Goodhart, title: The Road to Somewhere, year: 2017}
+        traditions:
+          defining: [conservatism.national, conservatism.right-populism, commonsense.look-after-your-own]
+          typical: [conservatism.postliberal, nationalism.ethnic, nationalism.civic, conservatism.paleo]
+          contested: [socdem.labourism, socdem.nordic]
+          rejects: [marxism.trotskyism, anarchism.syndicalist, liberalism.technocratic, conservatism.cst]
+        presupposes: [solidarity.basis.kinship-nation]
+        excludes: []
+        tension: [labor.division.contract-status-is-a-wedge]
+        tags: [commonsense]
+        analysis:
+          gains: [core-workers, petty-bourgeoisie]
+          pays: [peripheral-workers, reserve-army]
+          mechanism: >
+            Restricting benefits by citizenship creates a class of migrant workers without social protection, who
+            must take any wage, which serves employers in care, farming and construction while core citizens keep
+            their claims; it treats a national product built partly on the drain as a national possession.
+          drain: sustains
+          law_of_value: regulates
+          consciousness: economic-corporate
+  - id: workplace.conflict
+    domain: economy
+    layer: analysis
+    question: Are workers and employers on the same side?
+    plain: At work, do you and the people who run the place want the same things, or not?
+    short: conflict at work
+    importance: 2
+    positions:
+      - id: workplace.conflict.partners-with-a-misunderstanding
+        label: Workers and managers are partners; disputes are misunderstandings
+        claim: >
+          Workers and managers are on the same team: everyone gains when the firm does well. Disputes come from poor
+          communication and bad handling, and a fair hearing settles most of them.
+        voiced: "We're all in the same boat. If the company does well, we all do well. Most problems are just people not talking to each other."
+        you: >
+          You think workers and management basically want the same thing, and that most disputes come from people not
+          listening to each other.
+        because: >
+          A firm is a cooperative effort. Higher productivity means higher wages and profits together, and the firm that
+          treats its people well keeps them and prospers. Strikes and grievances usually come from managers who do not
+          listen and workers who do not see the whole picture. Good management, consultation and attention to people's
+          needs, as the human relations school found, resolve conflict without unions setting one side against the
+          other.
+        against:
+          - from: marxism.classical
+            text: >
+              Every hour of the working day and every penny of the wage is a gain for one side and a loss for the
+              other. "Human relations" was invented to keep workers content while management took control of the work.
+          - from: anarchism.syndicalist
+            text: >
+              If we are partners, show us the books and give us a vote on the board. Partners do not get laid off
+              while the other partner gets a bonus.
+        sources:
+          - {author: Frederick Winslow Taylor, title: The Principles of Scientific Management, year: 1911}
+          - {author: Elton Mayo, title: The Human Problems of an Industrial Civilization, year: 1933}
+          - {author: Douglas McGregor, title: The Human Side of Enterprise, year: 1960}
+        traditions:
+          defining: []
+          typical: [liberalism.technocratic, conservatism.fusionism, commonsense.self-reliance, socdem.third-way, commonsense.live-and-let-live, technology.e-acc]
+          contested: [conservatism.christian-democracy, liberalism.chicago]
+          rejects: [marxism.classical, anarchism.syndicalist, socdem.labourism, liberalism.republican]
+        presupposes: []
+        excludes: [workplace.conflict.structural-antagonism]
+        tension: [workplace.conflict.private-government]
+        tags: [keystone]
+        analysis:
+          gains: [industrial-capital, professional-managerial]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            Treating conflict as miscommunication routes grievances into HR procedures controlled by management and
+            away from collective action, so pay and pace are decided by the employer; it underpins union avoidance.
+          drain: none
+          law_of_value: extends
+          consciousness: economic-corporate
+      - id: workplace.conflict.structural-antagonism
+        label: Workers and owners have opposed interests built into the job
+        claim: >
+          Workers and owners have opposed interests built into the job itself: every gain in wages, hours or control
+          for one side is a loss for the other, whatever the people involved are like.
+        voiced: "The working class and the employing class have nothing in common. There can be no peace so long as hunger and want are found among millions and the few have all the good things of life."
+        you: >
+          You think workers and owners want opposite things by the nature of the job: what one gains in pay or control,
+          the other loses.
+        because: >
+          The owner's profit is what remains after wages, so lower wages, longer hours and faster work raise it. The
+          worker wants the opposite. This is not a misunderstanding but arithmetic, and it holds for kind and cruel
+          bosses alike, because competition punishes the kind ones. Management's job is to get more work for less pay,
+          which is why it has broken skilled trades into simple tasks, timed every motion and moved work to cheaper
+          labor. Workers gain only by organizing to push back.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Wages rose with productivity for most of the last century, and firms compete for workers. Both sides gain
+              from a growing firm. The "antagonism" is a fixed-pie fallacy.
+          - from: conservatism.cst
+            text: >
+              Capital cannot do without labor, nor labor without capital. To treat their relation as war is to make
+              war inevitable; justice can reconcile what nature made to work together.
+        sources:
+          - {author: Karl Marx, title: "Capital, Volume I", year: 1867}
+          - {author: Industrial Workers of the World, title: Preamble to the IWW Constitution, year: 1905}
+          - {author: Harry Braverman, title: Labor and Monopoly Capital, year: 1974}
+        traditions:
+          defining: [marxism.classical, marxism.leninism, marxism.ml, anarchism.syndicalist]
+          typical: [marxism.trotskyism, marxism.maoism, marxism.left-communism, marxism.council-communism, marxism.autonomism, anarchism.communist, anarchism.platformist, marxism.luxemburgism]
+          contested: [socdem.democratic-socialism, socdem.labourism]
+          rejects: [liberalism.chicago, liberalism.austrian, conservatism.cst, fascism.italian]
+        presupposes: [class.concept.relation-to-production]
+        excludes: [workplace.conflict.partners-with-a-misunderstanding, workplace.conflict.harmony-of-interests]
+        tension: []
+        tags: [keystone]
+        analysis:
+          gains: [core-workers, peripheral-workers, reserve-army]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Seeing the conflict as built in leads workers to organize independently of management and to treat pay,
+            pace and control as matters of collective power, which raises the wage share and limits managerial
+            authority.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            Maoists distinguish foreign and comprador capital from a national bourgeoisie in the periphery with which
+            workers may ally; Third-Worldists hold the antagonism in core workplaces is softened by shares of the drain.
+          consciousness: class-economic
+      - id: workplace.conflict.harmony-of-interests
+        label: Opposite sides of a bargain, both better off for making it
+        claim: >
+          Employer and worker bargain over the price of work, as buyer and seller do; both gain from the deal and from a
+          growing firm, and competition among employers keeps the bargain fair.
+        voiced: "All legitimate interests are in harmony. The worker gains from the capital that makes him productive; the capitalist gains from the worker. Only plunder sets them at odds."
+        you: >
+          You think workers and employers bargain over pay like any buyer and seller, and both come out ahead from a
+          fair deal and a growing business.
+        because: >
+          Every exchange has two sides that want different prices, yet both gain or they would not trade. The more
+          capital is invested, the more productive labor becomes and the higher wages rise, so workers have a stake in
+          their employer's profits. When employers compete for workers, wages are pushed up to what the work is worth.
+          Conflict arises when one side uses force, through state privilege, union coercion or monopoly, to get more
+          than the market would give it.
+        against:
+          - from: socdem.labourism
+            text: >
+              Both may gain from a deal and still fight over how the gain is split. Since 1980 productivity rose and
+              the wage share fell; the harmony went one way.
+          - from: marxism.classical
+            text: >
+              The worker sells because she must, the employer buys because he can wait. Their "harmony" is that of
+              the lion and the lamb lying down together; only one of them gets up.
+        sources:
+          - {author: Frédéric Bastiat, title: Economic Harmonies, year: 1850}
+          - {author: Ludwig von Mises, title: Human Action, year: 1949}
+        traditions:
+          defining: [liberalism.austrian, libertarianism.objectivist]
+          typical: [liberalism.chicago, libertarianism.ancap, libertarianism.minarchist, liberalism.classical, conservatism.fusionism]
+          contested: [libertarianism.paleo]
+          rejects: [marxism.classical, anarchism.syndicalist, socdem.labourism, liberalism.republican]
+        presupposes: [wage.nature.voluntary-exchange]
+        excludes: [workplace.conflict.structural-antagonism]
+        tension: []
+        tags: []
+        analysis:
+          gains: [industrial-capital, finance-capital, petty-bourgeoisie]
+          pays: [core-workers, peripheral-workers, reserve-army]
+          mechanism: >
+            Treating the employment contract as a fair exchange casts unions and labor law as the source of conflict,
+            which supports laws against strikes and collective bargaining and leaves pay to the employer's greater
+            ability to wait.
+          drain: sustains
+          law_of_value: extends
+          consciousness: hegemonic
+      - id: workplace.conflict.pluralist-bargaining
+        label: Real conflict, settled by bargaining between organized sides
+        claim: >
+          Workers and employers have real conflicts of interest alongside shared ones; the answer is strong unions,
+          employer associations and agreed rules for bargaining, so the conflict is settled peacefully and regularly.
+        voiced: "Of course our interests differ. That's why we sit at the table: two strong organizations, a contract, and a strike only as a last resort."
+        you: >
+          You think workers and bosses do have opposed interests, but that strong unions and fair bargaining rules can
+          keep the conflict under control.
+        because: >
+          Pretending there is no conflict leaves workers isolated; treating it as a war to the end makes every dispute a
+          crisis. Where both sides are organized and bargain under agreed rules, as in Scandinavia since the
+          Saltsjöbaden agreement of 1938, wages rise with productivity, strikes are rare, and the economy adapts. The
+          conflict is real but limited, because both depend on the firm's success.
+        against:
+          - from: marxism.classical
+            text: >
+              The rules of bargaining take the employer's ownership as given and bargain only over the price of labor.
+              When profits squeeze, as after 1973, employers tear up the table and the "partners" are back on the
+              picket line.
+          - from: liberalism.chicago
+            text: >
+              Centralized bargaining is a cartel of sellers facing a cartel of buyers. Outsiders, the young and the
+              unemployed pay for the insiders' contracts.
+        sources:
+          - {author: Sidney Webb and Beatrice Webb, title: Industrial Democracy, year: 1897}
+          - {author: John Dunlop, title: Industrial Relations Systems, year: 1958}
+          - {author: Walter Korpi, title: The Democratic Class Struggle, year: 1983}
+        traditions:
+          defining: [socdem.nordic, socdem.labourism]
+          typical: [socdem.keynesian, liberalism.social, conservatism.christian-democracy, socdem.fabian, socdem.democratic-socialism]
+          contested: [socdem.third-way, marxism.eurocommunism]
+          rejects: [liberalism.chicago, liberalism.austrian, marxism.left-communism, anarchism.syndicalist]
+        presupposes: []
+        excludes: []
+        tension: [workplace.conflict.structural-antagonism]
+        tags: []
+        analysis:
+          gains: [core-workers, professional-managerial, industrial-capital]
+          pays: [finance-capital, reserve-army]
+          mechanism: >
+            Institutional bargaining raises and stabilizes core wages and gives large employers labor peace and
+            predictable costs, while workers outside the agreements, temps, migrants and the peripheral suppliers of
+            those firms stay outside its protection.
+          drain: softens
+          law_of_value: regulates
+          consciousness: class-economic
+      - id: workplace.conflict.mutual-duties
+        label: Owners and workers owe each other duties within one community
+        claim: >
+          Employer and worker have different roles and owe each other duties: the employer a just wage and decent
+          conditions, the worker honest work. Their conflicts should be reconciled through justice and shared
+          institutions, not fought out.
+        voiced: "Labour has priority over capital. The employer must pay a just wage and respect the worker's dignity; the worker must give honest work. Neither may treat the other as an enemy."
+        you: >
+          You think bosses and workers owe each other real duties, and that conflicts at work should be settled by
+          fairness and shared bodies, not by class war.
+        because: >
+          A firm is a community of persons, not a battlefield and not merely a contract. Work is the person's own
+          activity and has priority over capital, which is only an instrument. Employers sin gravely when they defraud
+          workers of a just wage; workers wrong employers when they damage property or idle. Unions are legitimate and
+          necessary, but to secure justice, not to wage war. Works councils, codetermination and profit-sharing make
+          the shared community real.
+        against:
+          - from: marxism.classical
+            text: >
+              The duties bind the worker; the employer's duties are enforced by his own conscience. Every
+              "community of the firm" ends at the layoff notice.
+          - from: liberalism.austrian
+            text: >
+              Moral duties beyond the contract cannot be priced or enforced without officials deciding what is just.
+              Codetermination gives unions a veto over the use of other people's property.
+        sources:
+          - {author: Leo XIII, title: Rerum Novarum, year: 1891}
+          - {author: Pius XI, title: Quadragesimo Anno, year: 1931}
+          - {author: John Paul II, title: Laborem Exercens, year: 1981}
+        traditions:
+          defining: [conservatism.cst, conservatism.christian-democracy]
+          typical: [conservatism.distributism, religious.christian-socialism, religious.islamism-brotherhood, religious.confucian, conservatism.one-nation, conservatism.postliberal]
+          contested: [religious.liberation-theology, conservatism.integralism]
+          rejects: [marxism.classical, anarchism.syndicalist, liberalism.austrian, libertarianism.objectivist]
+        presupposes: [class.concept.functional-estates]
+        excludes: [workplace.conflict.structural-antagonism]
+        tension: []
+        tags: []
+        analysis:
+          gains: [industrial-capital, core-workers, petty-bourgeoisie]
+          pays: [reserve-army]
+          mechanism: >
+            Duties enforced through works councils and codetermination give skilled core workers a voice and job
+            security in large firms and give owners labor peace, while leaving ownership and the final decisions on
+            investment with capital.
+          drain: none
+          law_of_value: regulates
+          consciousness: hegemonic
+      - id: workplace.conflict.nation-above-class
+        label: Class conflict is real but must yield to the nation
+        claim: >
+          Employers and workers have clashing interests, but both belong to the nation, and the state must arbitrate
+          between them and forbid class struggle that weakens the national community.
+        voiced: "Neither capitalism nor communism. Producer and worker serve the nation together; the state stands above both and forbids either to wage war on the other."
+        you: >
+          You think workers and employers must put the nation first, with the state settling their disputes rather than
+          letting them fight it out.
+        because: >
+          Class war divides the nation and leaves it open to foreign enemies and foreign capital. Workers and employers
+          of the same nation share a destiny their foreign rivals do not. The state, standing above both, can impose
+          fair wages on greedy employers and discipline on unruly workers, organize each branch of production into a
+          body that represents both, and direct the economy toward national strength. Strikes and lockouts are
+          private wars that a strong nation cannot permit.
+        against:
+          - from: marxism.classical
+            text: >
+              In Italy strikes were banned and unions dissolved into state bodies while owners kept their firms and
+              profits; in Germany the free unions were seized in May 1933. "Above classes" meant on the side of capital.
+          - from: liberalism.classical
+            text: >
+              A state that decides every wage and forbids every strike controls the whole economy. Freedom of contract
+              and association are the first victims of national harmony.
+        sources:
+          - {author: Grand Council of Fascism, title: Carta del Lavoro (Charter of Labour), year: 1927}
+          - {author: Juan Domingo Perón, title: La comunidad organizada (The Organized Community), year: 1949}
+        traditions:
+          defining: [fascism.italian, fascism.national-syndicalism]
+          typical: [fascism.nazism, fascism.third-position, fascism.clerical, nationalism.peronism, nationalism.kemalism]
+          contested: [conservatism.national, nationalism.nasserism, nationalism.baathism]
+          rejects: [marxism.classical, anarchism.syndicalist, liberalism.classical, socdem.nordic]
+        presupposes: [class.concept.functional-estates, state.nature.organic-nation]
+        excludes: [workplace.conflict.structural-antagonism]
+        tension: []
+        tags: []
+        analysis:
+          gains: [industrial-capital, landed-capital, petty-bourgeoisie]
+          pays: [core-workers, peasantry]
+          mechanism: >
+            Subordinating class conflict to the nation under state arbitration removes workers' independent unions
+            and the right to strike while leaving ownership intact; in fascist Italy and Germany real wages fell. In
+            Peronist Argentina, by contrast, state-backed unions raised the wage share sharply.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            Materialists distinguish fascist corporatism, which crushed labor for capital, from anti-imperialist
+            national populisms such as Peronism and Nasserism, which raised wages and confronted foreign capital while
+            limiting independent working-class organization.
+          consciousness: hegemonic
+      - id: workplace.conflict.private-government
+        label: The workplace is a private government, and the boss rules
+        claim: >
+          The deepest conflict at work is not over pay but over command: employers govern workers' time, speech and
+          bodies for most of their waking hours, with no vote and little recourse, whoever owns the firm.
+        voiced: "Most workers live under a private government. Their bosses can regulate when they eat, what they wear and whom they talk to, and fire them for what they post at home."
+        you: >
+          You think the main problem at work is that bosses have power over you like an unelected government, deciding
+          what you do all day, whatever you are paid.
+        because: >
+          Employers dictate when workers may use the toilet, what they may say online, what they wear and with whom they
+          associate, under threat of dismissal that can wreck a life. No public government in a liberal state may do this
+          to its citizens. The right to quit does not make it voluntary, any more than the right to emigrate makes a
+          dictatorship free. What matters is not only the size of the wage but who gives orders and whether those who
+          take them have a say. That holds in a state enterprise as much as in a private firm.
+        against:
+          - from: liberalism.chicago
+            text: >
+              The firm has no power of fiat. An employer who tells a worker what to do is like a customer telling a
+              grocer what to sell: either may end the relationship tomorrow.
+          - from: marxism.ml
+            text: >
+              Command in production is necessary in any large industry. What matters is whom it serves. In a plant
+              owned by the people and run to a plan, direction is not domination.
+        sources:
+          - {author: Robert Dahl, title: A Preface to Economic Democracy, year: 1985}
+          - {author: Elizabeth Anderson, title: Private Government, year: 2017}
+          - {author: Peter Kropotkin, title: The Conquest of Bread, year: 1892}
+        traditions:
+          defining: [liberalism.republican]
+          typical: [anarchism.communist, anarchism.syndicalist, marxism.autonomism, marxism.council-communism, marxism.third-camp, anarchism.platformist]
+          contested: [socdem.democratic-socialism, marxism.trotskyism]
+          rejects: [liberalism.chicago, liberalism.austrian, marxism.ml]
+        presupposes: []
+        excludes: [workplace.conflict.partners-with-a-misunderstanding]
+        tension: [workplace.conflict.harmony-of-interests]
+        tags: []
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [professional-managerial, industrial-capital]
+          mechanism: >
+            Naming command as the conflict supports workplace rights, workers' councils and limits on dismissal, which
+            curb managers' authority over workers' time and conduct; on its own it can leave the ownership of the
+            surplus unaddressed.
+          drain: none
+          law_of_value: suspends
+          disputed: >
+            Marxist-Leninists hold that focusing on command rather than ownership was used against socialist states;
+            council communists and anarchists hold it describes those states accurately.
+          consciousness: class-economic
+      - id: workplace.conflict.depends-on-the-boss
+        label: It depends on the boss; some are decent, some take advantage
+        claim: >
+          Whether workers and employers are on the same side depends on the people: a decent boss treats staff fairly
+          and they pull together; a bad one takes advantage and makes enemies.
+        voiced: "I've had good bosses and I've had bastards. The good ones, you'd work through the night for. The bad ones, you just count the hours."
+        you: >
+          You think it comes down to the boss: a fair one makes everyone pull together, a bad one turns people against
+          them.
+        because: >
+          Most people have worked for both kinds. A small owner who knows your name, pays on time and covers for you when
+          your child is sick earns loyalty no union contract can buy. A manager who cuts corners, plays favorites and
+          treats people as numbers makes every day a fight. Rules matter less than character. Find a good place to work,
+          and if it is bad, move on.
+        against:
+          - from: marxism.classical
+            text: >
+              The decent boss must still cut costs when competitors do, or be bought out by someone who will. The
+              character of individuals changes the tone of exploitation, not its existence.
+          - from: liberalism.republican
+            text: >
+              A kind master is still a master. What makes you unfree is that he could treat you badly with impunity,
+              whether or not he does.
+        sources:
+          - {author: Studs Terkel, title: Working, year: 1974}
+        traditions:
+          defining: [commonsense.live-and-let-live]
+          typical: [commonsense.self-reliance, commonsense.look-after-your-own, conservatism.one-nation]
+          contested: [commonsense.rigged]
+          rejects: [marxism.classical, liberalism.republican, anarchism.syndicalist]
+        presupposes: []
+        excludes: []
+        tension: [workplace.conflict.structural-antagonism]
+        tags: [commonsense]
+        analysis:
+          gains: [petty-bourgeoisie, industrial-capital]
+          pays: [core-workers]
+          mechanism: >
+            Explaining conflict by the character of bosses leaves workers to seek a better employer one by one rather
+            than to organize, so pay and conditions follow what each employer can afford and chooses.
+          drain: none
+          law_of_value: none
+          consciousness: economic-corporate

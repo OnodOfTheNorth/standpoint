@@ -1,0 +1,704 @@
+problematics:
+  # ------------------------------------------------------------------
+  - id: nature.value
+    domain: ecology
+    layer: method
+    question: Does nature have value in itself?
+    plain: Is a forest worth protecting because of what it does for people, or because it matters on its own?
+    short: the value of nature
+    importance: 2
+    region: ecology
+    positions:
+      - id: nature.value.intrinsic
+        label: Yes, all life has value in itself
+        claim: Living things and ecosystems have value of their own, whether or not they are useful to human beings.
+        voiced: "The well-being and flourishing of human and non-human life on earth have value in themselves, independent of the usefulness of the non-human world for human purposes."
+        you: You think plants, animals and ecosystems matter for their own sake, not only because they are useful to people.
+        because: >
+          A wolf, a coral reef or a river system is not a warehouse of goods for us; it is a form of life
+          with its own way of flourishing. If value only comes from human use, then any species with no
+          market or medicinal value may be wiped out without loss, which almost no one actually believes.
+          Recognizing intrinsic value is the only footing on which wild nature can be protected when its
+          destruction would pay. A land ethic enlarges the community to include soils, waters, plants and
+          animals.
+        against:
+          - from: marxism.ecosocialism
+            text: >
+              Value is a social relation among people; to speak of nature's value "in itself" is to project
+              human judgments onto it. The real question is how society organizes its exchange with nature.
+          - from: libertarianism.objectivist
+            text: >
+              Value means value to someone. A world of rocks and plants with no valuer has no values in it.
+              Putting nature above human life inverts morality.
+        sources:
+          - {author: Aldo Leopold, title: A Sand County Almanac, year: 1949}
+          - {author: Arne Naess, title: "The Shallow and the Deep, Long-Range Ecology Movement", year: 1973}
+          - {author: Holmes Rolston III, title: "Environmental Ethics: Duties to and Values in the Natural World", year: 1988}
+        traditions:
+          defining: [ecology.deep-ecology]
+          typical: [anarchism.primitivist, anarchism.green, religious.engaged-buddhism]
+          contested: [nationalism.indigenous-sovereignty, conservatism.cst, ecology.degrowth]
+          rejects: [libertarianism.objectivist, ecology.ecomodernism, technology.e-acc, liberalism.utilitarian]
+        presupposes: []
+        excludes: [nature.value.for-human-use, nature.value.natural-capital]
+        tension: [nature.value.metabolism]
+        tags: [deep-ecology, ethics]
+        analysis:
+          gains: [professional-managerial]
+          pays: [peasantry]
+          mechanism: >
+            In practice intrinsic value is defended through protected areas, endangered-species law and
+            conservation finance, which empower conservation scientists and NGOs and can close land to the
+            peasants and herders who used it.
+          drain: none
+          law_of_value: suspends
+          disputed: >
+            Some ecosocialists (Kovel) accept intrinsic value as a check on productivism; Foster and Burkett
+            reject it as idealist, preferring Marx's account of nature as a source of use-values.
+          method: idealist
+
+      - id: nature.value.kin-and-relation
+        label: Nature is kin, and we owe it reciprocity
+        claim: The land, rivers and animals are relatives with whom a people has obligations of care and reciprocity, and their value lies in those relations, not in ownership.
+        voiced: "We do not own the land; the land owns us. The river is our ancestor, and you do not sell your grandmother."
+        you: You think the land, rivers and animals are relatives you owe care to, not property or resources.
+        because: >
+          For thousands of years Indigenous peoples have lived with their lands through relations of gift
+          and obligation: take only what is given, give back, care for the next seven generations. These
+          ways of life sustained biodiversity; the lands still held by Indigenous peoples hold a large share
+          of what remains. The law is catching up: New Zealand recognized the Whanganui River as a legal
+          person in 2017, and Ecuador gave nature constitutional rights in 2008. Those rights must come with
+          the return of land and authority to the peoples who carry these relations.
+        against:
+          - from: ecology.green-growth
+            text: >
+              A worldview cannot be applied to eight billion people living in cities. Policy needs measurable
+              targets and prices, not spiritual relations that most citizens do not share.
+          - from: marxism.ml
+            text: >
+              Romanticizing Indigenous relations to land can freeze communities in poverty and hand their
+              representation to NGOs. Peoples have a right to industry and modern life too.
+        sources:
+          - {author: Vine Deloria Jr., title: "God Is Red: A Native View of Religion", year: 1973}
+          - {author: Robin Wall Kimmerer, title: "Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge and the Teachings of Plants", year: 2013}
+          - {author: Republic of Ecuador, title: Constitución de la República del Ecuador, year: 2008, note: "articles 71–74, rights of nature"}
+        traditions:
+          defining: [nationalism.indigenous-sovereignty]
+          typical: [nationalism.decolonial, zapatismo, religious.liberation-theology, feminism.decolonial]
+          contested: [ecology.deep-ecology, marxism.mariategui, ecology.environmental-justice]
+          rejects: [liberalism.chicago, libertarianism.objectivist, ecology.ecomodernism]
+        presupposes: [settler.colonialism.land-back]
+        excludes: [nature.value.for-human-use]
+        tension: [nature.value.natural-capital]
+        tags: [indigenous, rights-of-nature]
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: [landed-capital, comprador-capital, industrial-capital]
+          mechanism: >
+            Joining nature's value to Indigenous authority over land places territory outside the market and
+            gives communities legal grounds to refuse mines, dams and plantations, cutting the supply of cheap
+            land and minerals to extraction firms and their state partners.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            Marxists differ on whether Indigenous land claims are a class struggle (Mariátegui, Coulthard) or
+            a cultural politics that can be absorbed by conservation finance and carbon markets.
+
+      - id: nature.value.natural-capital
+        label: Nature is valuable capital we should price
+        claim: Nature provides services worth trillions, such as pollination, clean water and climate stability, and protecting it means putting those services into the accounts.
+        voiced: "We are destroying natural capital because it is invisible on the balance sheet. What gets measured gets managed."
+        you: You think nature is enormously valuable to people and should be measured and priced so that it is protected.
+        because: >
+          Economies destroy nature because its benefits are free and unrecorded: a forest counts in GDP only
+          when it is cut down. Estimates put the value of ecosystem services at more than world GDP. Once
+          those services are in national accounts, company reports and investment decisions, protecting
+          them becomes rational. Payment for ecosystem services, biodiversity offsets and green bonds turn
+          conservation from a cost into an asset.
+        against:
+          - from: ecology.deep-ecology
+            text: >
+              Pricing a species means it can be sold, and anything with a price can be traded away for
+              something with a higher one. Nature is not capital.
+          - from: marxism.ecosocialism
+            text: >
+              "Natural capital" makes forests and wetlands into new assets for banks. Offsets let a firm
+              destroy one place by paying to protect another, often by fencing out the people living there.
+        sources:
+          - {author: "Robert Costanza and others", title: "The value of the world's ecosystem services and natural capital", year: 1997, note: Nature}
+          - {author: "David Pearce, Anil Markandya and Edward B. Barbier", title: Blueprint for a Green Economy, year: 1989}
+          - {author: Partha Dasgupta, title: "The Economics of Biodiversity: The Dasgupta Review", year: 2021}
+        traditions:
+          defining: [ecology.green-growth]
+          typical: [liberalism.utilitarian, liberalism.technocratic, liberalism.chicago, technology.effective-altruism]
+          contested: [ecology.ecomodernism, conservatism.christian-democracy]
+          rejects: [ecology.deep-ecology, marxism.ecosocialism, nationalism.indigenous-sovereignty, ecology.degrowth]
+        presupposes: [value.source.subjective-utility]
+        excludes: [nature.value.intrinsic]
+        tension: [nature.value.kin-and-relation]
+        tags: [natural-capital, market]
+        analysis:
+          gains: [finance-capital, professional-managerial]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >
+            Turning ecosystem functions into tradable credits creates new assets for banks, funds and
+            consultancies; forests and wetlands in the South are enrolled in carbon and biodiversity markets,
+            and local users face restrictions so that Northern buyers can claim the offset.
+          drain: sustains
+          law_of_value: extends
+          method: idealist
+
+      - id: nature.value.creation
+        label: Nature is God's creation, held by us in trust
+        claim: Nature is good because God made it, and human beings are its stewards, answerable for how they use and hand it on.
+        voiced: "The earth is the Lord's, and the fullness thereof. We are tenants, not owners, and we will give an account."
+        you: You think nature is God's creation, good in itself, and that people are its stewards rather than its owners.
+        because: >
+          Every creature reflects its Creator and has its own goodness, which is why the Psalms call on
+          mountains and seas to praise God. Humans have a special place, but dominion means care, as a
+          shepherd has dominion over a flock. Destroying creation is a sin against God, against the poor
+          who depend on it, and against the generations to come. The cry of the earth and the cry of the
+          poor are one cry. The same idea runs through Islamic teaching on the human being as trustee of the earth.
+        against:
+          - from: ecology.deep-ecology
+            text: >
+              Stewardship still puts humans at the top, managing the rest of life on God's behalf. The
+              biblical command to "subdue the earth" is part of the problem.
+          - from: liberalism.classical
+            text: >
+              A religious doctrine of stewardship cannot be the basis of public law in a plural society, and
+              in practice it has coexisted comfortably with every kind of exploitation.
+        sources:
+          - {author: Pope Francis, title: "Laudato Si': On Care for Our Common Home", year: 2015}
+          - {author: Leonardo Boff, title: "Ecologia: grito da terra, grito dos pobres", year: 1995, note: "English: Cry of the Earth, Cry of the Poor (1997)"}
+          - {author: Seyyed Hossein Nasr, title: "Man and Nature: The Spiritual Crisis of Modern Man", year: 1968}
+        traditions:
+          defining: [conservatism.cst]
+          typical: [religious.liberation-theology, conservatism.distributism, conservatism.christian-democracy, conservatism.traditionalist, religious.christian-socialism, anarchism.christian]
+          contested: [conservatism.evangelical-right, religious.islamism-brotherhood]
+          rejects: [libertarianism.objectivist, technology.e-acc]
+        presupposes: [inequality.justice.stewardship]
+        excludes: []
+        tension: [nature.value.for-human-use]
+        tags: [religion, stewardship]
+        analysis:
+          gains: [peasantry, petty-bourgeoisie]
+          pays: [finance-capital]
+          mechanism: >
+            Stewardship doctrine supports limits on use and a duty to the poor, which favors small farmers and
+            communities against speculative land and resource finance, but it acts through conscience and
+            church teaching rather than through ownership, so its force depends on believers in power.
+          drain: softens
+          law_of_value: regulates
+          disputed: >
+            Liberation theologians draw from it a critique of capital; evangelical dominionists read stewardship
+            as license to develop.
+          method: idealist
+
+      - id: nature.value.metabolism
+        label: "Nature and labor make wealth together; what matters is how we run the exchange"
+        claim: Nature is, with human labor, the source of all real wealth, and the question is not its value in itself but whether society governs its exchange with nature rationally or lets profit run it.
+        voiced: "Labour is not the source of all wealth. Nature is just as much the source of use-values. The associated producers must govern their metabolism with nature rationally."
+        you: You think nature and human work together create all real wealth, and the question is who controls how we use it.
+        because: >
+          Market prices count nature as free: the soil's fertility and the atmosphere's capacity enter no
+          bill. So an economy run for exchange value will exhaust them. Asking whether a forest has value
+          "in itself" moves the debate onto moral ground where nothing gets decided. The practical question
+          is who governs the exchange between society and nature: owners chasing profit, or the producers
+          themselves, planning for need and for the generations to come, as good heads of household
+          hand on the earth improved.
+        against:
+          - from: ecology.deep-ecology
+            text: >
+              "Rational regulation" by "associated producers" still makes nature a means to human ends. A
+              socialism that grows output for human need can be as destructive as capitalism.
+          - from: nationalism.indigenous-sovereignty
+            text: >
+              Marxism speaks of metabolism and production; we speak of relations with relatives. Industrial
+              planners from Moscow to Beijing dammed and drained our lands in the name of rational use.
+        sources:
+          - {author: Karl Marx, title: Critique of the Gotha Programme, year: 1875}
+          - {author: Karl Marx, title: "Capital, Volume III", year: 1894}
+          - {author: Paul Burkett, title: "Marx and Nature: A Red and Green Perspective", year: 1999}
+          - {author: John Bellamy Foster, title: "Marx's Ecology: Materialism and Nature", year: 2000}
+        traditions:
+          defining: [marxism.ecosocialism]
+          typical: [marxism.degrowth-communism, marxism.classical, marxism.ml]
+          contested: [ecology.degrowth, anarchism.communalism]
+          rejects: [ecology.green-growth, ecology.deep-ecology, liberalism.chicago]
+        presupposes: [value.source.labor]
+        excludes: [nature.value.natural-capital]
+        tension: [nature.value.intrinsic, nature.value.kin-and-relation]
+        tags: [marxism, metabolic-rift]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [landed-capital, industrial-capital, finance-capital]
+          mechanism: >
+            Treating nature's use as a question of who governs production directs action at ownership of land,
+            energy and industry, which threatens rents and profits drawn from cheap nature, and gives workers
+            and peasants a claim to plan its use.
+          drain: reduces
+          law_of_value: abolishes
+          method: materialist
+
+      - id: nature.value.for-human-use
+        label: Nature is there for people to use and improve
+        claim: Nature has no value apart from people; it is raw material that human work and ingenuity turn into food, shelter, energy and wealth.
+        voiced: "Land that is left wholly to nature is called, as indeed it is, waste. It is human labor and mind that make it valuable."
+        you: You think nature matters for what people can make of it, and that using it well is how humanity progresses.
+        because: >
+          Untouched nature is not a garden: it is disease, famine, cold and early death, the condition our
+          ancestors spent millennia escaping. Every improvement in human life came from transforming nature:
+          draining swamps, damming rivers, mining ore, burning fuel. Value is what serves human life. Protect
+          what people want protected, clean air, parks, beauty, but do not sacrifice human prosperity to
+          the supposed rights of rivers or snails.
+        against:
+          - from: ecology.deep-ecology
+            text: >
+              The species that treats everything else as raw material is sawing off the branch it sits on.
+              Human life itself depends on systems we do not understand and cannot replace.
+          - from: conservatism.cst
+            text: >
+              Creation was given to all people and to all generations, not to whoever can seize and use it
+              first. Unlimited use is pride, and the poor pay for it.
+        sources:
+          - {author: John Locke, title: Second Treatise of Government, year: 1689}
+          - {author: Francis Bacon, title: Novum Organum, year: 1620}
+          - {author: Ayn Rand, title: "The New Left: The Anti-Industrial Revolution", year: 1971}
+        traditions:
+          defining: [libertarianism.objectivist]
+          typical: [technology.e-acc, liberalism.classical, libertarianism.minarchist, technology.transhumanism, technology.r-acc]
+          contested: [ecology.ecomodernism, conservatism.evangelical-right, marxism.ml]
+          rejects: [ecology.deep-ecology, nationalism.indigenous-sovereignty, conservatism.cst, anarchism.primitivist]
+        presupposes: [property.private.natural-right]
+        excludes: [nature.value.intrinsic, nature.value.kin-and-relation]
+        tension: [nature.value.creation]
+        tags: [dominion, property]
+        analysis:
+          gains: [industrial-capital, landed-capital, finance-capital, comprador-capital]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >
+            Defining unimproved land as waste justifies its appropriation by whoever brings capital to it, as
+            Locke's argument justified colonial enclosure in the Americas; today it backs mining, logging and
+            plantation concessions over customary and Indigenous use.
+          drain: sustains
+          law_of_value: extends
+
+      - id: nature.value.homeland-of-a-people
+        label: Nature is the homeland and blood of a people
+        claim: The ecofascist and blood-and-soil view holds that nature's value lies in its bond with a particular people, so defending the land means defending that people's purity and borders; Nazi Germany paired this doctrine with conquest and extermination in the East.
+        voiced: "The forest and the people are one. A people torn from its soil dies, and a soil given to strangers is lost."
+        you: You think a nation's landscape is bound to its people by blood, and that protecting nature means protecting that people from outsiders.
+        because: >
+          As its proponents put it, a people grows out of its landscape over centuries, as a tree grows from
+          its soil; its customs, character and health are shaped by the land. Cosmopolitan capitalism and
+          communism alike uproot peoples, mix them, and turn the land into a commodity. To protect nature is
+          to restore that bond: peasants on hereditary farms, forests protected as the nation's heritage,
+          and foreigners kept out.
+        against:
+          - from: ecology.environmental-justice
+            text: >
+              Blood and soil produced not clean forests but the plan to empty Eastern Europe of Slavs and Jews.
+              Its ecology is a cover for expulsion and murder.
+          - from: conservatism.burkean
+            text: >
+              Love of a landscape is the inheritance of a whole community, including those who joined it.
+              Turning it into a doctrine of blood corrupts the attachment it claims to honor.
+        sources:
+          - {author: Janet Biehl and Peter Staudenmaier, title: "Ecofascism: Lessons from the German Experience", year: 1995}
+          - {author: Frank Uekötter, title: "The Green and the Brown: A History of Conservation in Nazi Germany", year: 2006}
+        traditions:
+          defining: [fascism.ecofascism]
+          typical: [fascism.nazism, fascism.identitarian]
+          contested: [nationalism.ethnic, fascism.traditionalist]
+          rejects: [ecology.environmental-justice, marxism.ecosocialism, liberalism.classical, conservatism.cst, anarchism.green]
+        presupposes: []
+        excludes: [nature.value.kin-and-relation]
+        tension: []
+        tags: [ecofascism, blood-and-soil]
+        analysis:
+          gains: [landed-capital, petty-bourgeoisie, industrial-capital]
+          pays: [peripheral-workers, peasantry, reserve-army]
+          mechanism: >
+            Tying land to an ethnic people justified dispossession of those defined as outsiders: in Nazi
+            Germany, hereditary farm law for certified German families and plans to settle Germans on land
+            taken in the East; today, closed borders that keep the core's land for its citizens.
+          drain: sustains
+          law_of_value: none
+
+  # ------------------------------------------------------------------
+  - id: energy.transition
+    domain: ecology
+    layer: horizon
+    question: Who should pay for and own the energy transition?
+    plain: The world must switch from coal, oil and gas. Who pays for the new grids and plants, and who owns them when it's done?
+    short: the energy transition
+    importance: 2
+    region: ecology
+    positions:
+      - id: energy.transition.market-led
+        label: Price carbon and let private investment build it
+        claim: Governments should put a price on carbon and provide stable rules and some subsidies, and private firms and investors should build and own the new energy system.
+        voiced: "Set the price, set the rules, and get out of the way. Private capital is the only pool big enough to rebuild the world's energy system."
+        you: You think the transition should be built by private investors once governments set a carbon price and clear rules.
+        because: >
+          The investment needed runs to trillions of dollars a year, far beyond what governments can borrow.
+          Private capital is already pouring into solar, wind and batteries where returns are clear. A carbon
+          price, ideally with the revenue returned to citizens as a dividend, lets every firm find the
+          cheapest cuts. Governments should de-risk early projects and fund research, then let competition
+          drive costs down, as it already has for solar panels.
+        against:
+          - from: marxism.ecosocialism
+            text: >
+              Investors build only what pays, and the returns on renewables are lower and less certain than on
+              oil. That is why fossil investment keeps rising. Profitability, not cost, is the barrier.
+          - from: conservatism.right-populism
+            text: >
+              A carbon price is a tax on driving to work and heating your home, dressed up as economics. The
+              people who designed it will not feel it.
+        sources:
+          - {author: William Nordhaus, title: "The Climate Casino: Risk, Uncertainty, and Economics for a Warming World", year: 2013}
+          - {author: Climate Leadership Council, title: "Economists' Statement on Carbon Dividends", year: 2019}
+          - {author: Nicholas Stern, title: "The Economics of Climate Change: The Stern Review", year: 2006}
+        traditions:
+          defining: [ecology.green-growth]
+          typical: [liberalism.technocratic, liberalism.chicago, socdem.third-way, liberalism.ordoliberal, conservatism.christian-democracy]
+          contested: [ecology.ecomodernism, libertarianism.minarchist]
+          rejects: [marxism.ecosocialism, socdem.democratic-socialism, conservatism.right-populism]
+        presupposes: [ecology.crisis-cause.market-failure]
+        excludes: [energy.transition.public-ownership]
+        tension: [energy.transition.state-industrial-policy]
+        tags: [carbon-price, private-investment]
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [core-workers, peripheral-workers, reserve-army]
+          mechanism: >
+            Public guarantees and subsidies absorb the risk while private owners keep the returns on new
+            generation, grids and storage; carbon prices without full dividends raise energy bills, a larger
+            share of the budgets of workers and the poor.
+          drain: sustains
+          law_of_value: extends
+          disputed: >
+            Christophers argues profitability, not price, blocks the transition, so market-led plans will
+            stall; green-growth economists reply that falling costs will raise returns.
+
+      - id: energy.transition.public-ownership
+        label: Public ownership of energy, with a just transition for workers
+        claim: Energy production and grids should be publicly owned and planned, the rich and the fossil firms should pay, and fossil-fuel workers should be guaranteed jobs and incomes.
+        voiced: "Energy is a public good. Take it back from the shareholders, build it fast, and no coal miner left behind."
+        you: You think energy should be publicly owned and planned, paid for by the rich and the polluters, with jobs guaranteed for energy workers.
+        because: >
+          Private energy firms will not build renewables at the speed required, because returns are thin,
+          and will not write off fossil reserves they count as assets. A public owner can build for need,
+          borrow cheaply, keep bills low, and plan the closure of coal and gas with the workers and towns
+          that depend on them. Public power in Norway, Quebec and Costa Rica shows it works. The cost
+          should fall on fossil profits and great fortunes, not on household bills.
+        against:
+          - from: liberalism.chicago
+            text: >
+              State energy monopolies have a record of overruns, political pricing and underinvestment.
+              Competition is what drove solar and wind costs down.
+          - from: marxism.third-worldism
+            text: >
+              A public utility in the North still buys its copper, lithium and cobalt at world prices from
+              Southern mines. Nationalizing the grid at home does nothing about the drain abroad.
+        sources:
+          - {author: "Kate Aronoff, Alyssa Battistoni, Daniel Aldana Cohen and Thea Riofrancos", title: "A Planet to Win: Why We Need a Green New Deal", year: 2019}
+          - {author: Matthew T. Huber, title: "Climate Change as Class War: Building Socialism on a Warming Planet", year: 2022}
+          - {author: Brett Christophers, title: "The Price Is Wrong: Why Capitalism Won't Save the Planet", year: 2024}
+        traditions:
+          defining: [marxism.ecosocialism, socdem.democratic-socialism]
+          typical: [socdem.labourism, marxism.ml, marxism.trotskyism, socdem.left-populism, anarchism.syndicalist]
+          contested: [socdem.nordic, ecology.degrowth]
+          rejects: [liberalism.chicago, ecology.green-growth, libertarianism.minarchist, conservatism.right-populism]
+        presupposes: [firm.ownership.public-municipal]
+        excludes: [energy.transition.market-led]
+        tension: [energy.transition.no-to-green-extraction]
+        tags: [public-ownership, just-transition]
+        analysis:
+          gains: [core-workers, reserve-army]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Public ownership removes generation and grids from private returns, so energy rents flow to the
+            public budget and lower bills, while job guarantees protect fossil-sector workers; the losers are
+            the shareholders and lenders of energy firms.
+          drain: softens
+          law_of_value: suspends
+          disputed: >
+            Third Worldists argue national public ownership in the core leaves the mineral drain intact unless
+            paired with fair prices and Southern ownership of supply chains; Huber gives priority to core
+            workers' power as the condition for any change abroad.
+          consciousness: class-economic
+
+      - id: energy.transition.state-industrial-policy
+        label: The state directs investment to win the green industries
+        claim: The state should plan and finance the build-out of solar, batteries, electric vehicles and grids through national development banks and industrial policy, so the nation owns the industries of the future.
+        voiced: "Whoever makes the panels, the batteries and the cars will lead this century. The state must lead the investment, and the nation must own the supply chain."
+        you: You think the state should drive investment into green industries so the nation leads and owns them.
+        because: >
+          Every major technology from the internet to solar cells was first financed by states, not
+          venture capital. China's state banks, five-year plans and local governments turned solar panels
+          and batteries from niche products into the cheapest energy technologies in history and made China
+          their dominant producer. The United States answered with subsidies in 2022. A country that leaves
+          this to the market will import its energy future.
+        against:
+          - from: ecology.degrowth
+            text: >
+              A race for green industrial dominance is still a race for growth, markets and minerals. It
+              multiplies mining and makes the transition a weapon of great-power rivalry.
+          - from: liberalism.austrian
+            text: >
+              Governments are bad at picking winners. Overcapacity, wasted subsidies and trade wars are the
+              predictable results of industrial policy.
+        sources:
+          - {author: Mariana Mazzucato, title: "The Entrepreneurial State: Debunking Public vs. Private Sector Myths", year: 2013}
+          - {author: Mariana Mazzucato, title: "Mission Economy: A Moonshot Guide to Changing Capitalism", year: 2021}
+          - {author: Ha-Joon Chang, title: "Kicking Away the Ladder: Development Strategy in Historical Perspective", year: 2002}
+        traditions:
+          defining: [marxism.scc]
+          typical: [nationalism.developmental-state, socdem.keynesian, liberalism.progressive, conservatism.national, conservatism.gaullism]
+          contested: [marxism.ecosocialism, liberalism.technocratic]
+          rejects: [liberalism.austrian, liberalism.chicago, libertarianism.minarchist, ecology.degrowth]
+        presupposes: []
+        excludes: []
+        tension: [energy.transition.market-led, energy.transition.no-to-green-extraction]
+        tags: [industrial-policy, china]
+        analysis:
+          gains: [industrial-capital, core-workers, professional-managerial]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >
+            State finance and procurement socialize the risk of building new industries and give national
+            firms scale, raising the leading states' share of world manufacturing; demand for minerals
+            rises, and mining countries supply them at world prices unless they process them at home.
+          drain: softens
+          law_of_value: regulates
+          disputed: >
+            Whether China's green industrial policy reduces the drain (by breaking Western technology
+            monopolies and cutting prices for the South) or reproduces it (through new mineral dependencies
+            in Africa and Latin America) is contested among Marxists.
+
+      - id: energy.transition.resource-sovereignty
+        label: Mineral countries must own and process their own lithium and cobalt
+        claim: Countries that hold the transition's minerals, lithium, cobalt, copper and nickel, should own them, refine them at home and set the terms, instead of exporting raw ore to foreign firms.
+        voiced: "Lithium is our oil. This time we will not be the quarry of the world: the brine, the refinery and the battery factory will be ours."
+        you: You think countries that hold the minerals for clean energy should own and process them, and set the price.
+        because: >
+          For five centuries Latin America and Africa exported silver, rubber, copper and oil, and the
+          wealth was made elsewhere. The energy transition repeats the pattern: Congo mines most of the
+          world's cobalt, Chile, Argentina and Bolivia hold most known lithium, and the value is added in
+          China, Korea, Europe and the United States. Bolivia put lithium under a state company, Mexico
+          nationalized it in 2022, and Indonesia banned raw nickel exports in 2020 to force refining at home.
+          Control of the minerals is the South's leverage.
+        against:
+          - from: nationalism.indigenous-sovereignty
+            text: >
+              State lithium uses our water in the salt flats as surely as private lithium does. Resource
+              nationalism changes the flag over the mine, not the mine.
+          - from: liberalism.chicago
+            text: >
+              Nationalized mining has a record of corruption and underinvestment; Bolivia's state lithium has
+              produced little in fifteen years while Chile and Argentina, open to investors, became major producers.
+        sources:
+          - {author: Eduardo Galeano, title: "Las venas abiertas de América Latina", year: 1971, note: "English: Open Veins of Latin America (1973)"}
+          - {author: Thea Riofrancos, title: "Resource Radicals: From Petro-Nationalism to Post-Extractivism in Ecuador", year: 2020}
+          - {author: Samir Amin, title: Delinking, year: 1985, note: "French original La déconnexion"}
+        traditions:
+          defining: [nationalism.bolivarianism]
+          typical: [marxism.dependency, nationalism.developmental-state, marxism.african-socialism, nationalism.pan-africanism, marxism.third-worldism, nationalism.peronism]
+          contested: [nationalism.indigenous-sovereignty, ecology.environmental-justice]
+          rejects: [liberalism.chicago, liberalism.austrian, ecology.green-growth]
+        presupposes: [intl.sovereignty.nations-set-own-course]
+        excludes: []
+        tension: [energy.transition.no-to-green-extraction]
+        tags: [lithium, periphery, resource-nationalism]
+        analysis:
+          gains: [peripheral-workers, comprador-capital, industrial-capital]
+          pays: [finance-capital, core-workers]
+          mechanism: >
+            State ownership and export bans raise the price and local share of value of minerals, moving rent
+            from foreign mining and battery firms to the producing state, which raises costs for core
+            manufacturers and consumers; how much reaches workers depends on who controls the state.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            Amin's heirs back resource sovereignty as delinking; Gudynas and Svampa call it
+            neo-extractivism, the same export model with more state rent.
+          consciousness: hegemonic
+
+      - id: energy.transition.no-to-green-extraction
+        label: No new sacrifice zones for the North's green cars
+        claim: The transition as planned demands new mines, dams and solar farms on Indigenous and peasant land in the South to power the North, and communities have the right to refuse them.
+        voiced: "Your green transition is our new colonialism. They took our silver for their banks and our oil for their cars; now they want our water for their batteries."
+        you: You think the clean-energy boom is creating new sacrifice zones in poor regions, and communities have the right to say no.
+        because: >
+          A single electric car battery needs tonnes of ore. Lithium in the Atacama draws down the water of
+          Indigenous communities, cobalt in Katanga is mined by hand, including by children, and vast solar
+          projects in North Africa are planned to send power to Europe. Replacing every Northern car one
+          for one would multiply mining. The answer is less: fewer cars and more public transport in the
+          North, consent and the right of refusal for communities, and an end to the extractive model.
+        against:
+          - from: ecology.ecomodernism
+            text: >
+              Mining for clean energy is a fraction of the mining for fossil fuels it replaces. Blocking mines
+              keeps coal and oil running longer and hurts the poor most.
+          - from: nationalism.bolivarianism
+            text: >
+              A poor nation cannot refuse its own wealth. Without mineral revenue there are no schools,
+              clinics or pensions; the task is to control the extraction, not to forbid it.
+        sources:
+          - {author: Maristella Svampa, title: "Neo-extractivism in Latin America: Socio-environmental Conflicts, the Territorial Turn, and New Political Narratives", year: 2019}
+          - {author: Eduardo Gudynas, title: "Extractivisms: Politics, Economy and Ecology", year: 2020}
+          - {author: Hamza Hamouchene and Katie Sandwell (eds.), title: "Dismantling Green Colonialism: Energy and Climate Justice in the Arab Region", year: 2023}
+        traditions:
+          defining: []
+          typical: [nationalism.indigenous-sovereignty, ecology.environmental-justice, zapatismo, ecology.degrowth, nationalism.decolonial, anarchism.green, marxism.degrowth-communism]
+          contested: [marxism.ecosocialism, ecology.deep-ecology]
+          rejects: [ecology.ecomodernism, ecology.green-growth, nationalism.bolivarianism, marxism.scc]
+        presupposes: [ecology.crisis-cause.core-appropriation]
+        excludes: []
+        tension: [energy.transition.resource-sovereignty, energy.transition.public-ownership, energy.transition.state-industrial-policy]
+        tags: [extractivism, green-colonialism, indigenous]
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: [industrial-capital, comprador-capital, finance-capital]
+          mechanism: >
+            Community vetoes and refusal raise the cost and slow the supply of transition minerals and land,
+            cutting the profits of mining firms and their state partners, and forcing core demand down or the
+            price up.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            Riofrancos and Huber note a dilemma: blocking mines can prolong fossil fuel use; post-extractivists
+            answer that the dilemma exists only if Northern consumption is held fixed.
+
+      - id: energy.transition.community-owned
+        label: Communities and cooperatives should own their own power
+        claim: Energy should be produced locally by cooperatives, towns and households, from sun and wind that cannot be monopolized, so that the gains stay where the power is made.
+        voiced: "The sun sends no bill. Put the turbines and panels in the hands of the villages and cooperatives, and the power companies lose their grip on all of us."
+        you: You think energy should be owned locally by cooperatives, towns and households rather than by big companies or the central state.
+        because: >
+          Fossil fuels came from a few places and required huge companies; sunlight and wind fall everywhere.
+          Denmark built its wind industry on cooperatives owned by local residents, and German citizens,
+          farmers and towns owned a large share of renewable capacity after 2000. Local ownership wins
+          consent for turbines, keeps income in rural areas and breaks the political power of the energy
+          giants. Neither multinationals nor distant ministries need to own the transition.
+        against:
+          - from: marxism.ecosocialism
+            text: >
+              Rooftop solar and village turbines cannot run steelworks or trains. Grids, storage and heavy
+              industry need planning on a national scale, and cooperatives mostly benefit those with roofs and savings.
+          - from: ecology.green-growth
+            text: >
+              Small-scale projects cost more per unit of energy than utility-scale ones. The cheapest path is
+              large plants and a strong grid.
+        sources:
+          - {author: Hermann Scheer, title: Energieautonomie, year: 2005, note: "English: Energy Autonomy (2007)"}
+          - {author: E. F. Schumacher, title: "Small Is Beautiful: A Study of Economics as if People Mattered", year: 1973}
+          - {author: Murray Bookchin, title: The Ecology of Freedom, year: 1982}
+        traditions:
+          defining: []
+          typical: [anarchism.communalism, anarchism.confederalism, conservatism.distributism, ecology.degrowth, socdem.nordic, anarchism.green, anarchism.mutualist]
+          contested: [libertarianism.georgist, marxism.ecosocialism]
+          rejects: [liberalism.chicago, marxism.ml]
+        presupposes: [firm.ownership.commons-community]
+        excludes: []
+        tension: [energy.transition.state-industrial-policy]
+        tags: [cooperatives, local, decentralization]
+        analysis:
+          gains: [petty-bourgeoisie, peasantry, core-workers]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Local ownership moves the income from generation from utilities and their shareholders to
+            cooperatives, farmers and municipalities; members with land, roofs or savings to invest gain most.
+          drain: none
+          law_of_value: regulates
+
+      - id: energy.transition.keep-energy-cheap
+        label: Keep oil, gas and coal; don't make working people pay
+        claim: Fossil fuels should stay as long as they are the cheapest reliable energy, because forcing a fast transition raises bills, kills jobs and benefits subsidized green companies.
+        voiced: "Drill, mine, and keep the lights on. The green transition is a tax on the working man paid to subsidy farmers."
+        you: You think fossil fuels should stay as long as they are cheapest, and that working people should not pay for a forced transition.
+        because: >
+          Coal, oil and gas still supply about four fifths of the world's energy, and nothing yet replaces them
+          in steel, cement, fertilizer, shipping and flight. Rushing the switch has raised power bills in
+          Germany and Britain, shut mines and plants in towns that had nothing else, and handed subsidies to
+          investors. Poor countries need cheap energy most. Let new sources compete on price; keep what works
+          until they do.
+        against:
+          - from: ecology.green-growth
+            text: >
+              New solar and wind are now cheaper than new coal and gas in most of the world. The expensive
+              path is clinging to old plants while the climate bill grows.
+          - from: marxism.ecosocialism
+            text: >
+              The miners' jobs were destroyed by owners chasing profit long before climate policy. "Cheap
+              energy" is the fossil companies' line, and it is their profits it protects.
+        sources:
+          - {author: Alex Epstein, title: "Fossil Future: Why Global Human Flourishing Requires More Oil, Coal, and Natural Gas, Not Less", year: 2022}
+          - {author: Vaclav Smil, title: "How the World Really Works: The Science Behind How We Got Here and Where We're Going", year: 2022}
+        traditions:
+          defining: []
+          typical: [conservatism.right-populism, conservatism.national, libertarianism.paleo, conservatism.paleo, commonsense.look-after-your-own, commonsense.declinist, conservatism.fusionism]
+          contested: [socdem.labourism, nationalism.bolivarianism, liberalism.chicago]
+          rejects: [ecology.green-growth, marxism.ecosocialism, ecology.degrowth, ecology.environmental-justice]
+        presupposes: []
+        excludes: [energy.transition.public-ownership, energy.transition.no-to-green-extraction]
+        tension: []
+        tags: [fossil-fuels, cost-of-living]
+        analysis:
+          gains: [industrial-capital, finance-capital, landed-capital, comprador-capital]
+          pays: [peasantry, peripheral-workers, reserve-army]
+          mechanism: >
+            Delay protects the value of fossil reserves and plant and the rents of petro-states and their
+            licensees, while workers' real wages remain exposed to fossil price swings and the costs of
+            heating fall on farmers and the poor in the hottest regions.
+          drain: sustains
+          law_of_value: extends
+          consciousness: economic-corporate
+
+      - id: energy.transition.nuclear-abundance
+        label: Build nuclear power and clean abundance for all
+        claim: The transition should be built on large amounts of nuclear power alongside renewables, financed and backed by the state, so the whole world can have abundant clean energy.
+        voiced: "France decarbonized its grid in fifteen years with reactors. Want to end poverty and save the climate? Split atoms."
+        you: You think the transition should rely heavily on nuclear power so everyone can have plenty of clean energy.
+        because: >
+          Sweden and France built clean electricity grids within about fifteen years in the 1970s and 1980s,
+          mostly with nuclear power, faster than any country has done with wind and sun. Nuclear plants run
+          day and night on little land and kill fewer people per unit of power than any other source. The
+          poor of the world need many times more energy than they use. Abundance, not rationing, is the goal,
+          and that requires dense, reliable power backed by state finance.
+        against:
+          - from: ecology.degrowth
+            text: >
+              New reactors in Britain, France, Finland and the United States have come in years late and
+              billions over budget. Betting the climate on them means more fossil fuel while we wait.
+          - from: ecology.environmental-justice
+            text: >
+              Uranium is mined on Navajo, Aboriginal and Tuareg land, and waste is sent to the communities with
+              least power. Nuclear abundance has its own sacrifice zones.
+        sources:
+          - {author: "John Asafu-Adjaye, Linus Blomqvist, Stewart Brand and others", title: An Ecomodernist Manifesto, year: 2015}
+          - {author: Joshua S. Goldstein and Staffan A. Qvist, title: "A Bright Future: How Some Countries Have Solved Climate Change and the Rest Can Follow", year: 2019}
+          - {author: Leigh Phillips, title: "Austerity Ecology and the Collapse-Porn Addicts: A Defence of Growth, Progress, Industry and Stuff", year: 2015}
+        traditions:
+          defining: [ecology.ecomodernism]
+          typical: [technology.e-acc, conservatism.gaullism, liberalism.technocratic, technology.technocracy, marxism.scc]
+          contested: [marxism.ecosocialism, ecology.green-growth, conservatism.national]
+          rejects: [ecology.degrowth, ecology.deep-ecology, anarchism.green, ecology.environmental-justice]
+        presupposes: []
+        excludes: [energy.transition.community-owned]
+        tension: [energy.transition.no-to-green-extraction]
+        tags: [nuclear, abundance]
+        analysis:
+          gains: [industrial-capital, professional-managerial, core-workers]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >
+            State-backed nuclear programs channel public finance to reactor builders and engineering firms and
+            secure steady skilled jobs, while uranium mining and waste siting fall on Indigenous and peripheral
+            communities from Niger to Saskatchewan.
+          drain: softens
+          law_of_value: regulates
+          disputed: >
+            Ecomodernist socialists (Huber, Phillips) see public nuclear as a workers' program; ecosocialists
+            in the Foster line and degrowth thinkers see centralized nuclear as a technology that concentrates
+            control in states and capital.

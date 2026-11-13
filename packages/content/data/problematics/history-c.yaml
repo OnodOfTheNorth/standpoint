@@ -1,0 +1,1260 @@
+# History, part 3: the USSR under Stalin and after, China under Mao and in the reform era.
+# See history.yaml for the index of history files (this split: c = USSR 1928-91 and China 1949-2012,
+# d = China since 2012, Yugoslavia, DPRK, Chile; e = Sankara, Venezuela, Rojava, Zapatistas;
+# f = Nordic model, New Deal, decolonization, 1989-91; g = neoliberal turn, WW2, Partition;
+# h = the Nakba, Indonesia 1965, the Cold War).
+problematics:
+  # ------------------------------------------------------------------
+  - id: hist.ussr-stalin
+    domain: history
+    layer: analysis
+    question: What was the Soviet Union under Stalin, 1928–1953?
+    plain: >-
+      In twenty-five years the USSR forced the peasants into collective farms, built heavy industry at breakneck speed, lived through
+      a famine and the Great Terror, filled the labor camps of the Gulag, and broke the Nazi invasion. What was it?
+    short: Stalin's USSR
+    importance: 3
+    region: history
+    positions:
+      - id: hist.ussr-stalin.socialism-built
+        label: Socialism built under siege, at a terrible but necessary cost
+        claim: >-
+          The Five-Year Plans and collectivization abolished private ownership of industry and land, built an industrial base in a decade,
+          and gave the country the tanks and factories that defeated Nazi Germany. The cost in lives was real and was the price of survival
+          for a state surrounded by enemies.
+        voiced: >-
+          "We are fifty or a hundred years behind the advanced countries. We must make good this distance in ten years. Either we do it,
+          or they crush us."
+        you: You think Stalin's USSR built socialism, and that its harshness was forced on it by the threat of invasion.
+        because: >-
+          Stalin said that in February 1931; ten years and four months later the Wehrmacht crossed the border. In between, steel output
+          roughly quadrupled, whole industries were created east of the Urals, unemployment disappeared, and mass literacy, schooling
+          and health care reached the villages. Without that industry the Red Army that destroyed the bulk of the German army would not
+          have existed. Losurdo argues that the "black legend" removes the siege from the picture: the kulak sabotage, the émigré plots,
+          the war scare of 1927, Japan in Manchuria and Germany rearming.
+        against:
+          - from: marxism.trotskyism
+            text: >-
+              The "cost" included shooting almost the entire Central Committee of 1917, the Red Army's high command on the eve of war, and
+              hundreds of thousands of workers and communists. That weakened the defense it claims to explain.
+          - from: liberalism.classical
+            text: >-
+              Archival work puts deaths in the 1931–33 famine at around 5.5 to 8.7 million across the USSR, with grain still exported; the
+              NKVD's own records show about 680,000 people shot in 1937–38 alone. No siege required that.
+          - from: marxism.market-socialism
+            text: >-
+              Allen's reconstruction shows Soviet growth came mainly from planned investment and urban industry; collectivization added
+              little and cost millions. A cooperative NEP road could have industrialized too.
+        sources:
+          - {author: J. V. Stalin, title: "Economic Problems of Socialism in the USSR", year: 1952}
+          - {author: "Commission of the CC of the CPSU(B)", title: "History of the Communist Party of the Soviet Union (Bolsheviks): Short Course", year: 1938}
+          - {author: Domenico Losurdo, title: "Stalin: Storia e critica di una leggenda nera", year: 2008}
+          - {author: Robert C. Allen, title: "Farm to Factory: A Reinterpretation of the Soviet Industrial Revolution", year: 2003, note: "on growth figures; Allen himself doubts collectivization was needed"}
+        traditions:
+          defining: [marxism.ml, marxism.hoxhaism]
+          typical: [marxism.juche, marxism.mlm]
+          contested: [marxism.maoism, marxism.scc]
+          rejects: [marxism.trotskyism, marxism.third-camp, marxism.council-communism, liberalism.classical, conservatism.neo]
+        presupposes: [allocation.mechanism.central-planning, emergency.powers.need-overrides-property]
+        excludes: [hist.ussr-stalin.state-capitalism, hist.ussr-stalin.totalitarian-twin]
+        tension: [hist.ussr-early.nep-road, hist.ussr-stalin.crimes-not-necessary]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [peasantry, finance-capital, industrial-capital, landed-capital]
+          mechanism: >-
+            Holding the Stalin years as socialism built justifies taking the surplus for industry and defense from the peasantry through
+            compulsory grain deliveries at fixed low prices. That gives later movements a model of planned industrialization outside the
+            world market, and it places the cost on peasants and on those the security organs named as enemies.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >-
+            Maoists accept the construction of socialism but fault Stalin for denying that classes and class struggle persist under it
+            (Mao's critique of Stalin's Economic Problems); Trotskyists hold the property forms were socialist and the political rule was
+            not; the state-capitalist school denies both.
+          consciousness: hegemonic
+      - id: hist.ussr-stalin.crimes-not-necessary
+        label: Socialism built, with crimes that were not necessary
+        claim: >-
+          The planned economy, the industrialization and the victory of 1945 were real achievements of the Soviet people. The famine
+          policy, the mass shootings of 1937–38 and the cult of Stalin were crimes and errors that the construction of socialism did not
+          require and that weakened it.
+        voiced: >-
+          "Stalin was a great Marxist-Leninist who made serious mistakes. His merits were primary and his errors secondary, but they
+          were errors, and the Party must say so."
+        you: You credit Stalin's USSR with building a new economy and defeating fascism, and you call the terror a crime that served no necessity.
+        because: >-
+          Khrushchev's 1956 report to the Twentieth Congress, drawing on the party's own files, showed that most delegates of the 1934
+          Congress were arrested and shot and that confessions were extracted by torture. The Chinese Communist Party's reply the same
+          year kept Stalin's achievements while naming his errors. Medvedev documented that many victims were loyal communists and
+          skilled officers whose loss had no security rationale. Separating the system from the terror is what lets socialists defend
+          the first and reject the second.
+        against:
+          - from: marxism.ml
+            text: >-
+              Khrushchev's speech was a factional weapon; scholars working in the archives (Furr, Getty) have contested several of its
+              specific claims. Separating the "good" plan from the "bad" security policy ignores the real conspiracies of the 1930s.
+          - from: marxism.trotskyism
+            text: >-
+              The terror was not an "error" but how the bureaucracy ruled. You cannot keep the system and disown its method.
+          - from: liberalism.classical
+            text: >-
+              The man who denounced Stalin in 1956 sent tanks into Budapest the same year. The party judged its own crimes only where
+              its own members were the victims.
+        sources:
+          - {author: Nikita Khrushchev, title: "On the Cult of Personality and Its Consequences", year: 1956}
+          - {author: Editorial Department of Renmin Ribao, title: "On the Historical Experience of the Dictatorship of the Proletariat", year: 1956}
+          - {author: Roy Medvedev, title: "Let History Judge: The Origins and Consequences of Stalinism", year: 1971}
+          - {author: Mao Zedong, title: "On the Ten Major Relationships", year: 1956}
+        traditions:
+          defining: [marxism.eurocommunism]
+          typical: [marxism.maoism, marxism.scc, socdem.democratic-socialism]
+          contested: [marxism.ml]
+          rejects: [marxism.hoxhaism, marxism.trotskyism, conservatism.neo]
+        tension: [hist.ussr-stalin.socialism-built]
+        analysis:
+          gains: [core-workers, peasantry, professional-managerial]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >-
+            Defending the planned economy while condemning the terror keeps public ownership and planning available to workers'
+            movements without the burden of mass repression. It also lets party officials who survived the purges claim the system as
+            theirs, which is how the reading served the post-1956 Soviet leadership.
+          drain: reduces
+          law_of_value: suspends
+      - id: hist.ussr-stalin.degenerated-workers-state
+        label: A workers' state ruled by a usurping bureaucracy
+        claim: >-
+          Nationalized property, planning and the state monopoly of foreign trade were the conquests of October and stayed socialist in
+          form. A privileged bureaucracy took political power from the workers, and Stalin was its leader. The task was to defend the
+          property and overthrow the bureaucracy.
+        voiced: >-
+          "The Soviet Union is a contradictory society halfway between capitalism and socialism. The bureaucracy is not a class but a
+          caste. Defend the USSR against imperialism; overthrow the bureaucracy by a political revolution."
+        you: You think Stalin's USSR kept a socialist economy while a bureaucracy stole political power from the workers.
+        because: >-
+          Trotsky's analysis in 1936 explained the purges, the wage inequality and the abolition of the early social laws as the
+          bureaucracy's defense of its privileges, while showing that no class of private owners had returned. It predicted that the
+          bureaucracy, unless overthrown, would one day turn itself into owners, which is what happened in 1991. The Left Opposition's
+          program of planned industrialization with workers' control was suppressed and its members shot in the camps.
+        against:
+          - from: marxism.third-camp
+            text: >-
+              A "caste" that controls all the means of production, extracts the surplus and decides its use is a ruling class. Calling the
+              USSR a workers' state of any kind gave the bureaucracy a credential it never earned.
+          - from: marxism.ml
+            text: >-
+              Trotsky's "political revolution" in the 1930s meant overthrowing the government of a country preparing for war with
+              Germany. The theory served the enemies of the USSR, whatever its author intended.
+        sources:
+          - {author: Leon Trotsky, title: "The Revolution Betrayed", year: 1936}
+          - {author: Isaac Deutscher, title: "Stalin: A Political Biography", year: 1949}
+          - {author: Leon Trotsky, title: "In Defense of Marxism", year: 1940}
+        traditions:
+          defining: [marxism.trotskyism]
+          contested: [marxism.luxemburgism]
+          rejects: [marxism.ml, marxism.third-camp, marxism.council-communism, marxism.hoxhaism]
+        presupposes: [hist.russian-revolution.degenerated-under-siege]
+        excludes: [hist.ussr-stalin.state-capitalism, hist.ussr-stalin.socialism-built]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [professional-managerial, finance-capital]
+          mechanism: >-
+            The reading defends nationalized property against capitalist restoration while targeting the managerial layer that commands
+            it. It thereby asks workers both to defend such states against imperialism and to organize against their governments.
+          drain: reduces
+          law_of_value: suspends
+          consciousness: hegemonic
+      - id: hist.ussr-stalin.state-capitalism
+        label: State capitalism, with the bureaucracy as the capitalist class
+        claim: >-
+          Under the Five-Year Plans the bureaucracy became a ruling class that pumped surplus out of workers and peasants to accumulate
+          capital in competition with the West's armies. Workers sold their labor power to a single employer, the state. This was
+          capitalism, run through the state.
+        voiced: >-
+          "Russia is a state capitalist country. The bureaucracy personifies capital in its purest form, accumulation for accumulation's
+          sake, driven by military competition with the world."
+        you: You think Stalin's USSR was capitalism with the state as the only boss.
+        because: >-
+          From 1928 consumption was held down while investment soared: real wages fell, the internal passport bound peasants to the
+          collective farms, and labor law punished lateness with prison. That is accumulation at the expense of the producers, driven by
+          the need to match the arms of rival states, which is what capital does. Cliff dates the change to the first Five-Year Plan; C.
+          L. R. James and Dunayevskaya reached the same conclusion from Marx's own categories.
+        against:
+          - from: marxism.trotskyism
+            text: >-
+              There were no competing capitals inside the USSR, no capital market and no profit regulating investment. Without these the
+              word "capitalism" is a metaphor.
+          - from: marxism.ml
+            text: >-
+              The theory lets Western socialists refuse solidarity with every actually existing socialist state, which is why it has
+              flourished in the core and nowhere else.
+        sources:
+          - {author: Tony Cliff, title: "Stalinist Russia: A Marxist Analysis", year: 1955}
+          - {author: C. L. R. James, title: "State Capitalism and World Revolution", year: 1950}
+          - {author: Raya Dunayevskaya, title: "Marxism and Freedom", year: 1958}
+          - {author: Charles Bettelheim, title: "Les luttes de classes en URSS", year: 1974, note: "a Maoist variant of the state-capitalist thesis"}
+        traditions:
+          defining: [marxism.third-camp, marxism.left-communism, marxism.council-communism]
+          typical: [anarchism.communist, marxism.autonomism]
+          rejects: [marxism.ml, marxism.trotskyism, marxism.hoxhaism]
+        presupposes: [class.concept.relation-to-production]
+        excludes: [hist.ussr-stalin.socialism-built, hist.ussr-stalin.degenerated-workers-state]
+        analysis:
+          gains: [core-workers]
+          pays: [professional-managerial]
+          mechanism: >-
+            Calling state ownership capitalism keeps workers' movements independent of every state and party that claims to represent
+            them. The same move withholds support from states that took their economies out of the world market.
+          drain: none
+          law_of_value: abolishes
+          disputed: >-
+            Third Worldists and Marxist-Leninists hold that the thesis is a core-country view that ignores imperialism; its defenders
+            reply that class relations, not geography, decide.
+      - id: hist.ussr-stalin.totalitarian-twin
+        label: A totalitarian tyranny of the same kind as Nazism
+        claim: >-
+          On this view Stalin's USSR and Hitler's Germany were two forms of one new kind of state: a single party armed with an ideology
+          that claimed the whole of life, ruling through terror, camps and mass killing. The differences in doctrine matter less than
+          the common form.
+        voiced: >-
+          "Totalitarianism is never content to rule by external means. The concentration camps are the laboratories in which the
+          fundamental belief of totalitarianism, that everything is possible, is verified."
+        you: You see Stalin's USSR and Nazi Germany as the same kind of evil in different colors.
+        because: >-
+          Both states abolished every organization outside the party, made the police an instrument of permanent purge, and killed
+          millions of civilians in peacetime: the Soviet famine of 1932–33, the mass operations of 1937–38, the deportation of whole
+          peoples. Snyder shows the two states' killing fields overlapped in the same lands between Berlin and Moscow. Arendt argued that
+          the camps, not the doctrine, reveal what such states are.
+        against:
+          - from: marxism.ml
+            text: >-
+              One state set out to exterminate Jews and enslave the Slavs; the other lost some 27 million people defeating it and
+              liberated Auschwitz. Lumping them together serves the rehabilitation of fascism.
+          - from: marxism.trotskyism
+            text: >-
+              The category erases class: one state defended capitalist property and the other abolished it. Form without content is
+              no analysis.
+          - from: socdem.democratic-socialism
+            text: >-
+              Social historians since the 1980s (Getty, Fitzpatrick) found a state that was chaotic, often reacting to pressures from
+              below, nothing like the all-controlling machine the model describes. Death estimates also vary widely, from roughly 6
+              to over 20 million depending on whether famine is counted and how.
+        sources:
+          - {author: Hannah Arendt, title: "The Origins of Totalitarianism", year: 1951}
+          - {author: Carl J. Friedrich and Zbigniew Brzezinski, title: "Totalitarian Dictatorship and Autocracy", year: 1956}
+          - {author: Robert Conquest, title: "The Great Terror", year: 1968}
+          - {author: Timothy Snyder, title: "Bloodlands: Europe Between Hitler and Stalin", year: 2010}
+        traditions:
+          defining: [liberalism.classical, conservatism.neo]
+          typical: [liberalism.internationalist, conservatism.fusionism, conservatism.christian-democracy, liberalism.austrian]
+          rejects: [marxism.ml, marxism.trotskyism, marxism.maoism]
+        presupposes: [history.motor.ideas]
+        excludes: [hist.ussr-stalin.socialism-built]
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [core-workers, peripheral-workers, peasantry]
+          mechanism: >-
+            Placing planned economies in the same category as Nazism makes the expropriation of owners the mark of the worst crime of
+            the century, which arms sanctions and interventions against states that nationalize and narrows what workers' parties in
+            the core will propose.
+          drain: sustains
+          law_of_value: extends
+          method: idealist
+          disputed: >-
+            Death tolls are contested: archival research since 1991 (Wheatcroft, Davies, Khlevniuk) has lowered many earlier Cold War
+            estimates while confirming mass killing on a vast scale.
+      - id: hist.ussr-stalin.developmental-dictatorship
+        label: A brutal dictatorship that modernized a peasant country
+        claim: >-
+          Stalin's USSR was one case of a backward country catching up by force: a state that squeezed the countryside to build steel
+          mills, cities and schools, as other late developers did with less cruelty. It modernized Russia, and that, not socialism, was
+          what it was for.
+        voiced: >-
+          "Stalin found Russia working with the wooden plough and left her equipped with atomic piles. Strip away the doctrine and you
+          see a modernizing autocracy in a hurry."
+        you: You see Stalin's USSR mainly as a forced march from farming to industry, more like other catch-up states than like a new society.
+        because: >-
+          Gerschenkron showed that the more backward a country, the larger the role of the state and the more compressed its
+          industrialization; the USSR is the extreme case. Kotkin's study of Magnitogorsk shows a whole civilization built around the
+          steel plant: workers learning to "speak Bolshevik" while the city rose from the steppe. Comparison with Meiji Japan or later
+          South Korea puts the Soviet case on a common scale of catching up.
+        against:
+          - from: marxism.ml
+            text: >-
+              The "modernization" frame drops what made the USSR different: no capitalist class, planning by physical targets, full
+              employment. It reduces a revolution to a growth rate.
+          - from: liberalism.classical
+            text: >-
+              Calling mass death "development" excuses it. Tsarist Russia was already industrializing fast before 1914 without a famine
+              by decree.
+        sources:
+          - {author: Alexander Gerschenkron, title: "Economic Backwardness in Historical Perspective", year: 1962}
+          - {author: Stephen Kotkin, title: "Magnetic Mountain: Stalinism as a Civilization", year: 1995}
+          - {author: Robert C. Allen, title: "Farm to Factory: A Reinterpretation of the Soviet Industrial Revolution", year: 2003}
+        traditions:
+          typical: [nationalism.developmental-state, liberalism.technocratic]
+          contested: [marxism.scc, marxism.world-systems]
+          rejects: [marxism.ml, marxism.trotskyism, liberalism.austrian]
+        presupposes: [poverty.cause.late-development]
+        analysis:
+          gains: [professional-managerial, industrial-capital]
+          pays: [peasantry, core-workers]
+          mechanism: >-
+            Judging the period by output growth makes the state-led squeeze on peasants and workers a normal cost of catching up, which
+            gives developmental elites anywhere a precedent for holding down wages and rural incomes to fund investment.
+          drain: reduces
+          law_of_value: regulates
+      - id: hist.ussr-stalin.great-power-builder
+        label: The statesman who rebuilt Russia's great power and won the war
+        claim: >-
+          Stalin took over a state weakened by revolution and civil war and left a superpower with the bomb, an empire of allies and a
+          victory in the greatest war in history. Whatever the cost, he restored the strength of the Russian state.
+        voiced: >-
+          "He was an effective manager. He received a country of ploughs and left a nuclear power, and he won the Great Patriotic War.
+          Russia needs a strong state, and he built one."
+        you: You admire Stalin as the leader who made Russia a great power again, whatever you think of communism.
+        because: >-
+          In 1945 the USSR's borders and sphere stretched from the Elbe to Korea, further than the Tsars had reached. Stalin brought back
+          ranks, the Orthodox patriarchate (in 1943) and the cult of Russian national heroes, ending the early Bolsheviks' attack on
+          Russian patriotism. A 2007 Russian teachers' manual (Filippov) called him an effective manager who acted rationally to build
+          a modern state.
+        against:
+          - from: marxism.trotskyism
+            text: >-
+              This is Stalinism stripped of its last socialist claim: a cult of the state for its own sake, which is exactly what the
+              bureaucracy wanted to be.
+          - from: conservatism.traditionalist
+            text: >-
+              The "great state" was built on the corpses of the Russian peasantry and clergy. A nation does not grow strong by killing
+              its own best people.
+        sources:
+          - {author: Aleksandr Filippov, title: "A Modern History of Russia, 1945–2006: A Teacher's Manual", year: 2007}
+          - {author: Aleksandr Dugin, title: "Foundations of Geopolitics", year: 1997}
+        traditions:
+          defining: [nationalism.eurasianism]
+          typical: [conservatism.national]
+          contested: [marxism.ml]
+          rejects: [marxism.trotskyism, liberalism.classical, conservatism.traditionalist]
+        presupposes: [history.motor.great-individuals]
+        analysis:
+          gains: [industrial-capital, professional-managerial]
+          pays: [core-workers]
+          mechanism: >-
+            Honoring Stalin as a builder of state power, without his economics, lends the authority of the Soviet victory to the present
+            Russian state that protects the owners of privatized industry and asks workers for loyalty in return.
+          drain: none
+          law_of_value: none
+          method: idealist
+      - id: hist.ussr-stalin.war-on-faith-and-nations
+        label: A war on faith, the peasantry and the captive nations
+        claim: >-
+          Stalin's state closed most churches, mosques and synagogues, killed tens of thousands of clergy, starved Ukraine and
+          Kazakhstan in the famine of 1931–33, and deported whole peoples (Chechens, Crimean Tatars, Volga Germans and others) during the
+          war. It was an assault on faith and on nations.
+        voiced: >-
+          "They wanted to kill the soul of the people. The Holodomor was the murder of a nation by hunger; the churches were blown up;
+          the peoples were loaded into cattle wagons."
+        you: You see Stalin's USSR as a war on religion and on nations, especially Ukraine.
+        because: >-
+          In 1932–33 grain was taken from Ukrainian villages under blacklists, peasants were barred from leaving the republic in January
+          1933, and roughly 3.5 to 5 million died in Ukraine; in Kazakhstan about a third or more of the Kazakh people perished. In
+          1943–44 whole nations were deported to Central Asia, many dying on the way. Solzhenitsyn, Conquest and Applebaum present this
+          as war on peoples and on God, not a by-product of economics.
+        against:
+          - from: marxism.ml
+            text: >-
+              The famine struck Russia's Volga and Kuban regions too; it came from a harvest failure and peasant resistance, not a plan to
+              kill Ukrainians as such (Davies and Wheatcroft). Calling it genocide serves present-day nationalist politics.
+          - from: liberalism.internationalist
+            text: >-
+              Whether the famine was genocide is genuinely disputed among historians, and many parliaments and scholars disagree; what
+              is not disputed is the policy of seizure and the closed borders.
+        sources:
+          - {author: Aleksandr Solzhenitsyn, title: "The Gulag Archipelago", year: 1973}
+          - {author: Robert Conquest, title: "The Harvest of Sorrow: Soviet Collectivization and the Terror-Famine", year: 1986}
+          - {author: Anne Applebaum, title: "Red Famine: Stalin's War on Ukraine", year: 2017}
+          - {author: R. W. Davies and Stephen G. Wheatcroft, title: "The Years of Hunger: Soviet Agriculture, 1931–1933", year: 2004, note: the main counter-reading}
+        traditions:
+          defining: [conservatism.traditionalist]
+          typical: [nationalism.ethnic, conservatism.christian-democracy, conservatism.monarchist, conservatism.reactionary]
+          contested: [nationalism.decolonial]
+          rejects: [marxism.ml, marxism.hoxhaism]
+        presupposes: [history.motor.providence]
+        excludes: [hist.ussr-stalin.socialism-built]
+        analysis:
+          gains: [landed-capital, comprador-capital]
+          pays: [core-workers, peasantry]
+          mechanism: >-
+            Framing the Soviet past as a war on nation and faith makes national-religious identity the answer to socialism, which in
+            post-Soviet states binds workers to governments that sold off public property to new owners and foreign investors.
+          drain: none
+          law_of_value: none
+          disputed: >-
+            Whether the 1932–33 famine was genocide is contested: Conquest, Applebaum and the Ukrainian state say yes; Davies and
+            Wheatcroft reject intent to destroy Ukrainians as a nation while confirming the policies that caused mass death.
+  # ------------------------------------------------------------------
+  - id: hist.ussr-late
+    domain: history
+    layer: analysis
+    question: What was the Soviet Union from Stalin's death to its end, 1953–1991?
+    plain: >-
+      After 1953 the USSR emptied most of the camps, denounced Stalin, launched the first satellite and the first man into space, built
+      flats for tens of millions, sent tanks into Hungary in 1956 and Czechoslovakia in 1968, armed liberation movements, slowed
+      down, and dissolved in 1991. What was it?
+    short: the late Soviet Union
+    importance: 2
+    region: history
+    positions:
+      - id: hist.ussr-late.real-socialism-betrayed
+        label: Real socialism, secure and anti-imperialist, betrayed from above
+        claim: >-
+          The post-war USSR guaranteed work, housing, health care and schooling to everyone, rebuilt from the war, matched the US in
+          arms and backed the colonized. It slowed in the 1970s and was dismantled from above by a leadership that abandoned socialism
+          in the late 1980s.
+        voiced: >-
+          "Nobody in the Soviet Union went homeless or hungry, and no liberation movement from Hanoi to Luanda fought without Soviet
+          weapons. Gorbachev did what Hitler could not."
+        you: You think the late USSR was a working socialist society that its own leaders gave away.
+        because: >-
+          By the 1970s the USSR had full employment, rents at a few percent of income and universal free health care and education.
+          Szymanski showed that inequality and the bureaucracy's privileges were small next to those of Western elites. Keeran and Kenny
+          trace the collapse to a "second economy" and a party layer that, under Gorbachev, chose markets and dissolved the planning
+          system, against the March 1991 referendum in which about three quarters of voters chose to keep the Union.
+        against:
+          - from: marxism.mlm
+            text: >-
+              The betrayal came in 1956, not 1985. The leadership that gave up socialism in the 1980s was the product of thirty years
+              of revisionism.
+          - from: liberalism.austrian
+            text: >-
+              The system was not betrayed; it ran out of road. Growth fell for two decades, grain had to be imported from 1963, and
+              only oil money postponed the crisis.
+        sources:
+          - {author: Roger Keeran and Thomas Kenny, title: "Socialism Betrayed: Behind the Collapse of the Soviet Union", year: 2004}
+          - {author: Albert Szymanski, title: "Is the Red Flag Flying? The Political Economy of the Soviet Union Today", year: 1979}
+        traditions:
+          defining: [marxism.ml]
+          typical: [marxism.juche]
+          contested: [marxism.scc, marxism.third-worldism]
+          rejects: [marxism.mlm, marxism.hoxhaism, marxism.trotskyism, liberalism.austrian]
+        excludes: [hist.ussr-late.capitalism-restored-1956, hist.ussr-late.shortage-economy]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >-
+            Treating the late USSR as working socialism holds up guaranteed employment and decommodified housing and health as achieved
+            facts, which supports demands to take those sectors out of the market, and casts the collapse as a political choice that
+            could have gone otherwise.
+          drain: breaks
+          law_of_value: suspends
+          consciousness: hegemonic
+      - id: hist.ussr-late.capitalism-restored-1956
+        label: Capitalism restored by Khrushchev's revisionism, then social-imperialism
+        claim: >-
+          From 1956 a new bourgeoisie in the party and the state took control, turned the means of production into its own capital
+          under state forms, reintroduced profit as the guide of enterprises, and made the USSR an imperialist superpower.
+        voiced: >-
+          "Khrushchev's revisionism has brought about the restoration of capitalism in the Soviet Union. It is socialism in words and
+          imperialism in deeds: social-imperialism."
+        you: You think the USSR stopped being socialist after Stalin and became an imperialist power in red colors.
+        because: >-
+          The 1965 Kosygin reform made profit the main indicator of enterprise success, managers gained power to hire and fire, and
+          wage differences widened. Abroad, Moscow sent tanks into Czechoslovakia in 1968, demanded that allies fit its division of
+          labor, and fought China on the Ussuri in 1969. Nicolaus and Bettelheim argued that a class is defined by its relation to
+          production, and the managers had come to command it.
+        against:
+          - from: marxism.ml
+            text: >-
+              No capitalist class owned anything, nothing was sold on a stock market, and the USSR armed Vietnam, Cuba and Angola. The
+              "social-imperialism" thesis led China into tacit alliance with Washington in the 1970s, including on the same side as
+              South Africa in Angola.
+          - from: marxism.trotskyism
+            text: >-
+              A theory that dates capitalism to a speech must explain why private owners only appeared in 1991.
+        sources:
+          - {author: Communist Party of China, title: "On Khrushchov's Phoney Communism and Its Historical Lessons for the World", year: 1964}
+          - {author: Martin Nicolaus, title: "Restoration of Capitalism in the USSR", year: 1975}
+          - {author: Enver Hoxha, title: "The Khrushchevites", year: 1980}
+        traditions:
+          defining: [marxism.mlm, marxism.hoxhaism]
+          typical: [marxism.maoism]
+          rejects: [marxism.ml, marxism.trotskyism, marxism.scc]
+        presupposes: [hist.ussr-stalin.socialism-built]
+        excludes: [hist.ussr-late.real-socialism-betrayed]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [professional-managerial]
+          mechanism: >-
+            Naming the Soviet leadership a new bourgeoisie directs struggle against managers inside socialist states, and in foreign
+            policy it treated the USSR as a main enemy, which in the 1970s put Chinese diplomacy alongside US positions in Angola and
+            elsewhere.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >-
+            Third Worldists dispute the reading because it set the main anti-imperialist arms supplier of the period down as an
+            imperialist; Maoists reply that Soviet aid came with a price in dependence.
+      - id: hist.ussr-late.bureaucratic-stagnation
+        label: A planned economy strangled by the bureaucracy that ran it
+        claim: >-
+          Planning without workers' control could build heavy industry but not run a complex economy. The bureaucracy lied to itself in
+          its own statistics, wasted resources and blocked reform, and in the end its members turned themselves into owners.
+        voiced: >-
+          "The plan needs democracy as the body needs oxygen. Without control from below the bureaucracy produces waste, cynicism, and
+          finally the restoration of capitalism by the bureaucrats themselves."
+        you: You think the late USSR failed because the bureaucracy, not the planned economy, choked it.
+        because: >-
+          Growth slowed from the mid-1960s while managers hoarded inputs and padded reports, and workers answered with absenteeism and
+          slack work, as Ticktin's analysis of Soviet production showed. Polish oppositionists Kuroń and Modzelewski described the
+          central political bureaucracy as the ruling group in 1965 and were jailed for it. Mandel argued that Gorbachev's reforms
+          could have opened the way to planning from below, but the apparatus chose the market instead.
+        against:
+          - from: liberalism.austrian
+            text: >-
+              Calling it "bureaucracy" misses the cause: without prices for capital goods no planner, elected or not, can know what to
+              produce. Workers' councils would face the same blindness.
+          - from: marxism.ml
+            text: >-
+              The critique from outside never had to run a planned economy under an arms race with a richer rival.
+        sources:
+          - {author: Ernest Mandel, title: "Beyond Perestroika: The Future of Gorbachev's USSR", year: 1989}
+          - {author: Hillel Ticktin, title: "Origins of the Crisis in the USSR", year: 1992}
+          - {author: Jacek Kuroń and Karol Modzelewski, title: "An Open Letter to the Party", year: 1965}
+        traditions:
+          defining: [marxism.trotskyism]
+          typical: [marxism.third-camp, socdem.democratic-socialism, marxism.luxemburgism]
+          rejects: [marxism.ml, liberalism.austrian]
+        presupposes: [hist.ussr-stalin.degenerated-workers-state]
+        analysis:
+          gains: [core-workers]
+          pays: [professional-managerial]
+          mechanism: >-
+            Blaming the bureaucracy rather than planning keeps planning on the program and aims the critique at the managerial stratum,
+            which supports workers' control over enterprises in any economy.
+          drain: reduces
+          law_of_value: suspends
+      - id: hist.ussr-late.shortage-economy
+        label: A shortage economy that could not innovate, kept alive by oil
+        claim: >-
+          Soviet planning produced queues, poor goods and falling growth because firms had soft budgets, no competition and no prices
+          that told the truth. Oil revenues after 1973 hid the decline, and when prices fell in the 1980s the system ran out of money.
+        voiced: >-
+          "The shortage was not an accident of bad planners. It was the system working as designed: no prices, no bankruptcy, no
+          profit, no information."
+        you: You think the late USSR collapsed because a planned economy cannot work.
+        because: >-
+          Kornai showed that socialist firms faced soft budget constraints: losses were always covered, so demand for inputs was
+          endless and shortage was chronic. From 1963 the USSR imported grain; by the 1980s it paid for imports with oil and gas. Gaidar
+          traced how the oil price collapse of 1986 left Moscow unable to pay for grain and borrowing, and the system broke.
+        against:
+          - from: marxism.ml
+            text: >-
+              The USSR grew faster than the US for most of its history, and capitalist economies have their own chronic crisis: unused
+              factories and unemployed workers, which the USSR did not have.
+          - from: marxism.trotskyism
+            text: >-
+              Shortage came from a planning system without accountability to producers and consumers, not from planning as such.
+        sources:
+          - {author: János Kornai, title: "Economics of Shortage", year: 1980}
+          - {author: János Kornai, title: "The Socialist System: The Political Economy of Communism", year: 1992}
+          - {author: Yegor Gaidar, title: "Collapse of an Empire: Lessons for Modern Russia", year: 2006}
+        traditions:
+          defining: [liberalism.austrian, liberalism.chicago]
+          typical: [liberalism.classical, libertarianism.minarchist, liberalism.technocratic]
+          rejects: [marxism.ml, marxism.trotskyism]
+        presupposes: [value.source.subjective-utility]
+        excludes: [hist.ussr-late.real-socialism-betrayed]
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >-
+            Reading the Soviet decline as proof that only markets can allocate made privatization and price liberalization the
+            obvious program after 1991, which transferred state assets to new owners and removed job and housing guarantees.
+          drain: sustains
+          law_of_value: extends
+      - id: hist.ussr-late.captive-nations-empire
+        label: An empire that held half of Europe and its own nations captive
+        claim: >-
+          After 1945 Moscow imposed Communist governments on Eastern Europe, crushed risings in East Germany (1953), Hungary (1956) and
+          Czechoslovakia (1968), and held the Baltic states and Ukraine by force. The Cold War ended when its peoples freed themselves.
+        voiced: >-
+          "Let us pray for the salvation of all those who live in totalitarian darkness. They are the focus of evil in the modern world:
+          an evil empire."
+        you: You see the late USSR as an empire that held whole nations captive.
+        because: >-
+          About 2,500 Hungarians were killed when Soviet troops crushed the 1956 rising, and some 200,000 fled. Hundreds of thousands of
+          Warsaw Pact troops ended the Prague Spring in 1968. The Brezhnev doctrine declared that no member could leave the bloc. The
+          Baltic states, annexed in 1940, never accepted Soviet rule, and their national movements led the break-up from 1988.
+        against:
+          - from: marxism.ml
+            text: >-
+              The 1956 rising included pogrom-like lynchings of communists and was cheered on by Western radio; the Soviet sphere was a
+              buffer won at the cost of 27 million dead against an invasion from the west.
+          - from: marxism.third-worldism
+            text: >-
+              The empire that toppled governments in Guatemala, Iran, Congo, Indonesia and Chile is in no position to call anyone else
+              one.
+        sources:
+          - {author: Ronald Reagan, title: "Address to the National Association of Evangelicals (the Evil Empire speech)", year: 1983}
+          - {author: Zbigniew Brzezinski, title: "The Grand Failure: The Birth and Death of Communism in the Twentieth Century", year: 1989}
+          - {author: Andrei Sakharov, title: "Progress, Coexistence and Intellectual Freedom", year: 1968}
+        traditions:
+          defining: [conservatism.neo]
+          typical: [conservatism.fusionism, liberalism.internationalist, conservatism.christian-democracy, conservatism.evangelical-right]
+          rejects: [marxism.ml, marxism.third-worldism]
+        presupposes: [intl.sovereignty.conditional-on-rights]
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >-
+            Casting the USSR as an empire of captive nations made Western military and economic pressure a liberation, which after 1989
+            opened Eastern Europe to Western capital and to NATO, and justified the arms budgets that funded core defense industry.
+          drain: sustains
+          law_of_value: extends
+      - id: hist.ussr-late.rear-base-of-liberation
+        label: The rear base of the world's anti-colonial liberation
+        claim: >-
+          Whatever its faults at home, the late USSR armed and financed the liberation of the colonized: Vietnam, Algeria, Cuba, Angola,
+          Mozambique, the ANC, and built dams, steel plants and universities across the South. Its disappearance left the South alone
+          with the United States.
+        voiced: >-
+          "Without Soviet weapons there is no Dien Bien Phu, no Cuito Cuanavale, no free Angola, no end to apartheid. When the USSR fell
+          the South lost its only great-power friend."
+        you: You judge the late USSR mainly by what it did for the colonized world.
+        because: >-
+          The Aswan dam, the Bhilai steel plant in India and Patrice Lumumba University in Moscow trained and equipped newly independent
+          states. Soviet arms let Cuban and Angolan forces stop South Africa at Cuito Cuanavale in 1987–88, which led to Namibian
+          independence (Gleijeses). Westad shows the Cold War's real battleground was the South, and Moscow was on the side of most
+          liberation movements.
+        against:
+          - from: marxism.mlm
+            text: >-
+              Soviet aid created dependence: arms on credit, monoculture for the Soviet market, and in Afghanistan from 1979 an outright
+              occupation that killed hundreds of thousands.
+          - from: nationalism.decolonial
+            text: >-
+              Moscow also held its own colonies in Central Asia and treated Southern allies as clients to be managed.
+        sources:
+          - {author: Odd Arne Westad, title: "The Global Cold War: Third World Interventions and the Making of Our Times", year: 2005}
+          - {author: Piero Gleijeses, title: "Visions of Freedom: Havana, Washington, Pretoria, and the Struggle for Southern Africa, 1976–1991", year: 2013}
+          - {author: Vijay Prashad, title: "The Darker Nations: A People's History of the Third World", year: 2007}
+        traditions:
+          defining: [marxism.third-worldism]
+          typical: [marxism.african-socialism, nationalism.pan-africanism, marxism.ml, nationalism.nasserism, marxism.arab-socialism]
+          contested: [marxism.mlm]
+          rejects: [conservatism.neo]
+        presupposes: [imperialism.nature.monopoly-stage]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >-
+            Valuing the USSR as a counterweight puts the balance of power between empires at the center of politics, which supports
+            states in the South that seek arms, credit and markets outside Western control and so retain more of their own surplus.
+          drain: reduces
+          law_of_value: regulates
+      - id: hist.ussr-late.security-and-decency
+        label: A time of security, order and a decent life for ordinary people
+        claim: >-
+          For millions who lived it, the late Soviet years meant a guaranteed job, a flat, a pension, cheap holidays and a sense that
+          tomorrow would be like today. What came after was worse for most of them.
+        voiced: >-
+          "We weren't rich, but nobody was afraid of tomorrow. You had work, a flat, a doctor, a holiday by the sea. Then they took it
+          all and called it freedom."
+        you: You remember, or have heard, the late Soviet years as a time of security that ordinary people lost.
+        because: >-
+          After 1991 real incomes collapsed, millions went unpaid for months and male life expectancy in Russia fell by about six years
+          in the early 1990s. Polls by the independent Levada Center have repeatedly found a majority of Russians regretting the
+          collapse of the USSR. Yurchak shows that late Soviet life, for most people, was neither heroic nor terrorized but ordinary,
+          and that ordinariness is what people miss.
+        against:
+          - from: liberalism.classical
+            text: >-
+              The same years meant queues for sausage, a ban on travel abroad, psychiatric prisons for dissenters, and a war in
+              Afghanistan. Nostalgia edits.
+          - from: marxism.trotskyism
+            text: >-
+              Security under a bureaucracy is not workers' power. The same workers who missed their jobs did nothing to defend the system
+              in 1991, because it was never theirs.
+        sources:
+          - {author: Alexei Yurchak, title: "Everything Was Forever, Until It Was No More: The Last Soviet Generation", year: 2005}
+          - {author: Svetlana Alexievich, title: "Secondhand Time: The Last of the Soviets", year: 2013}
+        traditions:
+          defining: [commonsense.declinist]
+          typical: [marxism.ml, nationalism.eurasianism]
+          rejects: [liberalism.classical, conservatism.neo]
+        analysis:
+          gains: [core-workers, reserve-army]
+          pays: [finance-capital]
+          mechanism: >-
+            Remembering the Soviet years as security keeps alive the demand for guaranteed work, housing and pensions, and it is also
+            drawn on by post-Soviet governments that offer order and nostalgia in place of those guarantees.
+          drain: none
+          law_of_value: regulates
+          consciousness: economic-corporate
+  # ------------------------------------------------------------------
+  - id: hist.china-mao
+    domain: history
+    layer: analysis
+    question: What was China under Mao, 1949–1976?
+    plain: >-
+      Under Mao the People's Republic carried out land reform, built industry, roughly doubled life expectancy, launched the Great Leap
+      Forward that ended in famine, broke with the Soviet Union, and threw the country into the Cultural Revolution. What was it?
+    short: Mao's China
+    importance: 2
+    region: history
+    positions:
+      - id: hist.china-mao.achievements-primary
+        label: Socialist foundations laid; great achievements, grave errors late on
+        claim: >-
+          Mao's leadership unified China, ended landlord rule, built an industrial base and laid the foundations of socialism. The
+          Great Leap Forward and above all the Cultural Revolution were serious errors of his later years. His achievements are primary
+          and his mistakes secondary.
+        voiced: >-
+          "Comrade Mao Zedong was a great Marxist and a great proletarian revolutionary. It is true that he made gross mistakes during
+          the Cultural Revolution, but his contributions far outweigh his mistakes."
+        you: You see Mao's China as the foundation of today's China, with serious mistakes you don't hide.
+        because: >-
+          Between 1949 and the late 1970s life expectancy rose from around 35–40 to over 60, literacy spread to most of the young, and
+          China built steel, oil, machine-building and nuclear industries from almost nothing. The Communist Party's 1981 Resolution
+          condemned the Cultural Revolution as a catastrophe and the Leap's methods as errors, while keeping Mao Zedong Thought as the
+          party's guide. That judgment allowed reform without repudiating the revolution, unlike the Soviet path after 1956.
+        against:
+          - from: marxism.mlm
+            text: >-
+              The 1981 Resolution was written by the very people the Cultural Revolution had targeted, to clear the way for the
+              capitalism they then built. It is the victors' verdict.
+          - from: liberalism.classical
+            text: >-
+              An "error" that killed tens of millions in a famine is not a footnote to be weighed against steel output.
+        sources:
+          - {author: Communist Party of China, title: "Resolution on Certain Questions in the History of Our Party since the Founding of the People's Republic of China", year: 1981}
+          - {author: Maurice Meisner, title: "Mao's China: A History of the People's Republic", year: 1977}
+        traditions:
+          defining: [marxism.scc]
+          typical: [marxism.ml, nationalism.developmental-state]
+          rejects: [marxism.mlm, liberalism.classical, conservatism.neo]
+        excludes: [hist.china-mao.utopian-catastrophe]
+        tension: [hist.china-mao.continuing-revolution]
+        analysis:
+          gains: [peasantry, core-workers, professional-managerial]
+          pays: [landed-capital, comprador-capital]
+          mechanism: >-
+            Crediting the revolution while condemning mass campaigns lets the party claim the land reform and industrialization as its
+            title to rule, and it rules out mobilizing workers against party officials, which protects the managerial and official layer
+            that led the later reforms.
+          drain: reduces
+          law_of_value: suspends
+      - id: hist.china-mao.continuing-revolution
+        label: The high point of socialism, which fought capitalist restoration from within
+        claim: >-
+          Mao's China was the only socialist state that recognized a new bourgeoisie forming inside the Communist Party itself and
+          mobilized the masses against it. The Cultural Revolution, for all its excesses, was a real attempt to keep power in workers'
+          and peasants' hands.
+        voiced: >-
+          "Bombard the headquarters! The bourgeoisie is right in the Communist Party: those in power taking the capitalist road. It is
+          right to rebel against reactionaries."
+        you: You see Mao's China, and the Cultural Revolution, as the most serious attempt to stop socialism from sliding back into capitalism.
+        because: >-
+          After 1956 Mao saw the Soviet bureaucracy restoring capitalism and drew the lesson that class struggle continues under
+          socialism. In the countryside, Dongping Han's village study shows Cultural Revolution years bringing schools, clinics and rural
+          industry run by communes; barefoot doctors brought basic care to hundreds of millions. Gao argues that the catastrophe story
+          was written by the urban elites who were its targets. Deng's restoration of capitalism after 1978 proved Mao's warning right.
+        against:
+          - from: marxism.scc
+            text: >-
+              The Cultural Revolution threw the country into ten years of chaos, persecuted millions of cadres and intellectuals, and set
+              the economy back. Its victims were overwhelmingly ordinary people, not capitalist-roaders.
+          - from: liberalism.classical
+            text: >-
+              Estimates of Cultural Revolution deaths run from several hundred thousand to over a million and a half (MacFarquhar and
+              Schoenhals), many in massacres organized by local militias and army units.
+          - from: marxism.trotskyism
+            text: >-
+              The masses were mobilized from above and demobilized from above; when the Shanghai workers formed a commune in 1967 Mao
+              ordered it dissolved.
+        sources:
+          - {author: Mao Zedong, title: "On the Correct Handling of Contradictions Among the People", year: 1957}
+          - {author: Central Committee of the CPC, title: "Decision Concerning the Great Proletarian Cultural Revolution (the Sixteen Points)", year: 1966}
+          - {author: Dongping Han, title: "The Unknown Cultural Revolution: Life and Change in a Chinese Village", year: 2008}
+          - {author: Mobo Gao, title: "The Battle for China's Past: Mao and the Cultural Revolution", year: 2008}
+        traditions:
+          defining: [marxism.mlm, marxism.maoism]
+          typical: [marxism.third-worldism]
+          rejects: [marxism.scc, marxism.trotskyism, liberalism.classical]
+        presupposes: [hist.ussr-late.capitalism-restored-1956]
+        excludes: [hist.china-mao.utopian-catastrophe]
+        analysis:
+          gains: [peasantry, core-workers]
+          pays: [professional-managerial]
+          mechanism: >-
+            Treating mass campaigns against party officials as the defense of socialism directs struggle at the managerial and official
+            layer of a socialist state, which threatens its privileges but also exposes teachers, technicians and ordinary cadres to
+            factional violence.
+          drain: breaks
+          law_of_value: abolishes
+          consciousness: hegemonic
+      - id: hist.china-mao.utopian-catastrophe
+        label: A utopian tyranny that caused the worst famine in history
+        claim: >-
+          Mao's campaigns killed on a scale without peacetime precedent: the Great Leap Forward of 1958–62 caused a famine that took
+          tens of millions of lives, and the Cultural Revolution turned the country against itself. Ideology overrode reality and the
+          party silenced everyone who said so.
+        voiced: >-
+          "Mao's Great Leap Forward was a man-made famine: grain was taken from starving villages to meet invented quotas and to pay for
+          exports, while officials who told the truth were purged."
+        you: You see Mao's China as a utopian experiment that killed tens of millions.
+        because: >-
+          Procurement quotas were set from inflated harvest reports; grain was exported and taken from villages while people starved;
+          Peng Dehuai, who warned Mao in 1959, was purged. Estimates of excess deaths range from about 15 million to 45 million, with
+          many demographers near 30 million (Ashton, Yang Jisheng about 36 million, Dikötter about 45 million). Yang Jisheng, a party
+          member and journalist, built his count from provincial records.
+        against:
+          - from: marxism.maoism
+            text: >-
+              The higher figures rest on contested demographic assumptions, such as counting births that did not happen as deaths, and
+              Dikötter's on selective archives. Natural disasters and the Soviet withdrawal of aid also played a part.
+          - from: marxism.dependency
+            text: >-
+              Drèze and Sen show that India's ordinary deprivation killed more people each decade than the Leap did in its worst years,
+              because China's health and land reforms had cut normal mortality so far.
+        sources:
+          - {author: Frank Dikötter, title: "Mao's Great Famine: The History of China's Most Devastating Catastrophe, 1958–1962", year: 2010}
+          - {author: Yang Jisheng, title: "Tombstone: The Great Chinese Famine, 1958–1962", year: 2008}
+          - {author: Roderick MacFarquhar and Michael Schoenhals, title: "Mao's Last Revolution", year: 2006}
+        traditions:
+          defining: [liberalism.classical]
+          typical: [conservatism.neo, liberalism.internationalist, conservatism.fusionism, liberalism.austrian]
+          rejects: [marxism.mlm, marxism.maoism]
+        presupposes: [history.motor.ideas]
+        excludes: [hist.china-mao.continuing-revolution, hist.china-mao.achievements-primary]
+        analysis:
+          gains: [finance-capital, landed-capital, comprador-capital]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >-
+            Making the famine the defining fact of collective agriculture rules out land reform and collective farming as roads for the
+            rural South, which keeps land in the hands of landlords and agribusiness and the peasantry open to creditors.
+          drain: sustains
+          law_of_value: extends
+          method: idealist
+          disputed: >-
+            Famine death estimates are disputed: from about 15 million (some Chinese demographers) to 30 million (Ashton and colleagues,
+            1984) to 36 million (Yang Jisheng) and 45 million (Dikötter); the method of counting lost births drives much of the gap.
+      - id: hist.china-mao.basic-needs-revolution
+        label: A revolution in health and literacy, with one catastrophic famine
+        claim: >-
+          Measured by what matters most to the poor, Mao's China did more than any comparable country: it doubled life expectancy, made
+          most people literate and spread basic health care to the villages. It also produced a terrible famine, and both facts must be
+          held together.
+        voiced: >-
+          "India seems to manage to fill its cupboard with more skeletons every eight years than China put there in its years of
+          shame."
+        you: You judge Mao's China by life and death for ordinary people, and you count both the famine and the long fall in deaths.
+        because: >-
+          Drèze and Sen compared China and India, both poor and agrarian in 1949. China's land reform, rural health workers, mass
+          vaccination and literacy campaigns cut mortality so much that, even counting the famine of 1959–61, India's slower progress
+          meant more excess deaths over the period. Bramall shows the Mao years also laid the irrigation, rural industry and educated
+          workforce that the reform era later used.
+        against:
+          - from: liberalism.classical
+            text: >-
+              Taiwan, starting from similar conditions, achieved the same health gains without a famine. The comparison with India
+              proves only that India was badly run.
+          - from: marxism.mlm
+            text: >-
+              Treating socialism as a better health program reduces a revolution to welfare and forgets who held power.
+        sources:
+          - {author: Jean Drèze and Amartya Sen, title: "Hunger and Public Action", year: 1989}
+          - {author: Chris Bramall, title: "Chinese Economic Development", year: 2009}
+        traditions:
+          typical: [marxism.dependency, socdem.democratic-socialism, liberalism.egalitarian, marxism.world-systems]
+          contested: [marxism.scc]
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: [landed-capital]
+          mechanism: >-
+            Judging states by mortality and literacy among the poor favors land reform and public health over growth figures, which
+            supports public spending on the rural majority at the expense of landlords and of creditors who want budgets spent on debt.
+          drain: reduces
+          law_of_value: suspends
+      - id: hist.china-mao.bureaucratic-squeeze
+        label: A bureaucratic state that squeezed workers and peasants to build industry
+        claim: >-
+          Under Mao a party-state that answered to no one below it took the peasants' grain at low prices, tied them to the land by
+          household registration, and gave workers no independent unions. The Cultural Revolution's rebels who saw this were crushed
+          by the same leadership.
+        voiced: >-
+          "The 'Red Capitalist class' of high cadres has become a privileged stratum. Ninety percent of the senior cadres must be
+          overthrown. The masses want a Commune, not a revolutionary committee run by the army and the old officials."
+        you: You think Mao's China was ruled by an official class over workers and peasants, whatever it called itself.
+        because: >-
+          From 1953 the unified grain procurement system bought grain cheap and sold industrial goods dear, moving rural surplus into
+          heavy industry; the 1958 household registration rules kept peasants out of cities. In 1968 the Hunan rebel group Shengwulian
+          called for a Paris-style commune against the "red capitalist class" and was suppressed, its author Yang Xiguang jailed for ten
+          years. Whether one calls the result state capitalism or a deformed workers' state, the workers did not rule.
+        against:
+          - from: marxism.maoism
+            text: >-
+              The Cultural Revolution was precisely the mass movement against bureaucracy; the rebels went too far and gave the
+              rightists their chance.
+          - from: marxism.scc
+            text: >-
+              A poor country under blockade had to take surplus from agriculture; no country has industrialized any other way.
+        sources:
+          - {author: Shengwulian (Yang Xiguang), title: "Whither China?", year: 1968}
+          - {author: Nigel Harris, title: "The Mandate of Heaven: Marx and Mao in Modern China", year: 1978}
+        traditions:
+          defining: [marxism.third-camp]
+          typical: [marxism.trotskyism, marxism.council-communism, anarchism.communist, marxism.left-communism]
+          rejects: [marxism.maoism, marxism.scc, marxism.ml]
+        presupposes: [hist.chinese-revolution.state-capitalist]
+        analysis:
+          gains: [core-workers, peasantry]
+          pays: [professional-managerial]
+          mechanism: >-
+            The reading aims workers' and peasants' demands at the officials who set procurement prices and controlled residence, which
+            backs independent unions and peasant associations against any developmental state.
+          drain: none
+          law_of_value: abolishes
+          disputed: >-
+            Trotskyists call the state a bureaucratically deformed workers' state; Harris and the third camp call it state capitalist;
+            both agree workers held no power.
+      - id: hist.china-mao.china-stood-up
+        label: The years China stood up, unified and independent
+        claim: >-
+          Mao's China ended a century of foreign humiliation: it reunified the mainland, fought the United States to a standstill in
+          Korea, broke from Soviet tutelage, built the bomb in 1964, and took China's seat at the UN in 1971. Independence, more than
+          any economic model, was the achievement.
+        voiced: >-
+          "The Chinese people, comprising one quarter of humanity, have now stood up. Ours will no longer be a nation subject to insult
+          and humiliation."
+        you: You value Mao's China above all for making China independent and respected.
+        because: >-
+          Before 1949 foreign powers held concessions in China's ports, foreign gunboats patrolled its rivers and Japan had occupied
+          much of the country. Within five years of 1949 the concessions were gone and Chinese troops had pushed UN forces back from the
+          Yalu. When Moscow pulled its experts out in 1960, China continued alone. Sovereignty was the condition for everything that
+          came later.
+        against:
+          - from: marxism.mlm
+            text: >-
+              Reducing the revolution to national independence is the reading of those who later sold it out: the nation, not the
+              working class, becomes the subject.
+          - from: liberalism.internationalist
+            text: >-
+              Independence was bought with Tibet's annexation in 1950–51 and a war in Korea that cost hundreds of thousands of Chinese
+              lives.
+        sources:
+          - {author: Mao Zedong, title: "The Chinese People Have Stood Up!", year: 1949}
+          - {author: Chen Jian, title: "Mao's China and the Cold War", year: 2001}
+        traditions:
+          typical: [nationalism.developmental-state, marxism.scc, marxism.third-worldism]
+          contested: [marxism.maoism]
+          rejects: [nationalism.three-principles]
+        presupposes: [intl.sovereignty.nations-set-own-course]
+        analysis:
+          gains: [professional-managerial, peasantry, industrial-capital]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >-
+            Making sovereignty the measure of the revolution backs any state that expels foreign capital and builds its own arms and
+            industry, whatever its class content, and so cuts the drain without settling who inside the nation commands the surplus.
+          drain: reduces
+          law_of_value: regulates
+      - id: hist.china-mao.war-on-civilization
+        label: A war on China's civilization, its families and its faiths
+        claim: >-
+          Mao's campaigns attacked the foundations of Chinese life: the family, filial piety, Confucian learning, Buddhist and Taoist
+          temples, Christian churches. The Cultural Revolution's war on the "Four Olds" destroyed temples and books and set children
+          against their parents.
+        voiced: >-
+          "The revolution set out to uproot a civilization of three thousand years and to make the Chairman's book the only one. The
+          temples were smashed, the graves of Confucius's family dug up, the teachers beaten by their pupils."
+        you: You see Mao's China above all as an assault on Chinese tradition and religion.
+        because: >-
+          In 1966 Red Guards in Qufu desecrated the Confucius cemetery and temple; across the country temples, churches, mosques and
+          libraries were wrecked, and in 1973–74 a campaign denounced Confucius by name. Leys, writing as it happened, called it a
+          destruction of culture by a power struggle in culture's name. The Confucian revival since the 1990s is a reply to that
+          rupture.
+        against:
+          - from: marxism.maoism
+            text: >-
+              The "civilization" in question bound women to their husbands, sons to fathers and peasants to landlords. Breaking it freed
+              the people who had carried it.
+          - from: marxism.scc
+            text: >-
+              The party itself has condemned the excesses of the Cultural Revolution and now honors China's traditional culture; the
+              rupture was an episode, not the essence.
+        sources:
+          - {author: Simon Leys, title: "Les Habits neufs du président Mao (The Chairman's New Clothes)", year: 1971}
+          - {author: Jiang Qing, title: "A Confucian Constitutional Order", year: 2012}
+        traditions:
+          defining: [religious.confucian]
+          typical: [conservatism.traditionalist, religious.engaged-buddhism]
+          contested: [religious.political-meritocracy]
+          rejects: [marxism.maoism, marxism.mlm]
+        presupposes: [human.nature.fallen]
+        analysis:
+          gains: [professional-managerial, petty-bourgeoisie]
+          pays: [peasantry]
+          mechanism: >-
+            Treating revolution as an attack on civilization restores the authority of family, scholar and ritual, which in practice
+            favors the educated and propertied families that held it and leaves women and poor peasants under its older hierarchies.
+          drain: none
+          law_of_value: none
+          method: idealist
+  # ------------------------------------------------------------------
+  - id: hist.china-reform
+    domain: history
+    layer: analysis
+    question: What was China's reform era, from 1978 to 2012?
+    plain: >-
+      From 1978 Deng Xiaoping's leadership brought back markets, let foreign capital into special zones, broke up the communes, closed
+      or sold off much of state industry in the 1990s, and joined the WTO in 2001. Hundreds of millions left extreme poverty while
+      inequality soared. In 1989 the army cleared Tiananmen Square. What was it?
+    short: China's reform era
+    importance: 2
+    region: history
+    positions:
+      - id: hist.china-reform.primary-stage
+        label: Socialism in its primary stage, developing the productive forces
+        claim: >-
+          A poor country cannot jump to developed socialism. Reform and opening used markets and foreign capital under the leadership of
+          the Communist Party to develop the productive forces, while the state kept land, banks and strategic industry, and that
+          lifted China out of poverty.
+        voiced: >-
+          "Poverty is not socialism. Planning and market forces are not the essential difference between socialism and capitalism. It
+          doesn't matter whether a cat is black or white, so long as it catches mice."
+        you: You think China's reforms were a socialist country using markets to grow rich under the party's control.
+        because: >-
+          By the World Bank's measure, close to 800 million Chinese left extreme poverty in four decades, the largest reduction in
+          history. Land stayed publicly owned, so rural migrants kept a plot to return to; state banks and state firms kept command of
+          finance, energy and heavy industry. Lenin's NEP, which Deng cited, had shown that markets under a workers' state are a
+          transition, not a restoration.
+        against:
+          - from: marxism.mlm
+            text: >-
+              A state that let tens of millions of workers be laid off, broke strikes, and let billionaires join the party is not
+              building socialism; it is building capitalism and calling it a stage.
+          - from: liberalism.chicago
+            text: >-
+              The poverty fell where the party withdrew: in the household farms and the private and foreign firms, not in the state
+              sector.
+        sources:
+          - {author: Deng Xiaoping, title: "Emancipate the Mind, Seek Truth from Facts and Unite as One in Looking to the Future", year: 1978}
+          - {author: Deng Xiaoping, title: "Excerpts from Talks Given in Wuchang, Shenzhen, Zhuhai and Shanghai", year: 1992}
+          - {author: World Bank and Development Research Center of the State Council, title: "Four Decades of Poverty Reduction in China", year: 2022}
+        traditions:
+          defining: [marxism.scc]
+          typical: [marxism.market-socialism]
+          contested: [marxism.ml]
+          rejects: [marxism.mlm, marxism.maoism, marxism.trotskyism]
+        presupposes: [hist.ussr-early.nep-road]
+        excludes: [hist.china-reform.capitalist-restoration]
+        analysis:
+          gains: [peasantry, peripheral-workers, professional-managerial, industrial-capital]
+          pays: [core-workers]
+          mechanism: >-
+            The reading justifies using cheap Chinese labor and foreign investment to grow, under state control of land and finance.
+            Wages rose and poverty fell, private owners and officials took a large share, and workers in the core lost manufacturing
+            jobs to the competition.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >-
+            Materialists split on whether markets under party control of finance and land remain a transition to socialism (Boer,
+            Cheng Enfu) or a capitalist restoration (Hart-Landsberg and Burkett, Minqi Li).
+      - id: hist.china-reform.capitalist-restoration
+        label: Capitalist restoration led by the Communist Party
+        claim: >-
+          From 1978, and decisively in the 1990s, the party dismantled the communes, smashed the iron rice bowl of state workers, built
+          a class of private capitalists and made Chinese labor the cheapest in the world economy. The red flag stayed; socialism went.
+        voiced: >-
+          "The capitalist roaders Mao warned about took power in 1976. Deng's road led to sweatshops in Shenzhen, laid-off workers in
+          the northeast, and billionaires in the National People's Congress."
+        you: You think the Chinese Communist Party restored capitalism after Mao.
+        because: >-
+          In the late 1990s some 30 to 40 million state and collective workers were laid off as firms were closed or sold; Ching Kwan
+          Lee documents their protests in the rustbelt. Migrant workers without urban residence rights became the labor force of the
+          export zones. Private entrepreneurs were admitted to the party in 2001. Wang Hui reads the 1989 protests as partly a revolt
+          against inflation and inequality from market reform, crushed so that reform could go further.
+        against:
+          - from: marxism.scc
+            text: >-
+              The party controls the banks, the land and the commanding heights, and it disciplines capitalists, as the 2020s showed.
+              No capitalist state behaves that way.
+          - from: liberalism.classical
+            text: >-
+              If this is capitalism, it is the most successful anti-poverty program in history, and the Maoist alternative had kept
+              peasants poor for thirty years.
+        sources:
+          - {author: Martin Hart-Landsberg and Paul Burkett, title: "China and Socialism: Market Reforms and Class Struggle", year: 2005}
+          - {author: Minqi Li, title: "The Rise of China and the Demise of the Capitalist World Economy", year: 2008}
+          - {author: Ching Kwan Lee, title: "Against the Law: Labor Protests in China's Rustbelt and Sunbelt", year: 2007}
+          - {author: Wang Hui, title: "China's New Order: Society, Politics, and Economy in Transition", year: 2003}
+        traditions:
+          defining: [marxism.mlm]
+          typical: [marxism.maoism, marxism.trotskyism, marxism.third-camp, marxism.left-communism]
+          rejects: [marxism.scc]
+        presupposes: [class.concept.relation-to-production]
+        excludes: [hist.china-reform.primary-stage]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [industrial-capital, professional-managerial]
+          mechanism: >-
+            Calling the reforms a capitalist restoration aligns the reader with laid-off state workers and migrant workers against
+            managers, officials and private owners in China, and withholds the socialist title from the Chinese state.
+          drain: none
+          law_of_value: abolishes
+      - id: hist.china-reform.markets-freed-people
+        label: When the state stepped back, markets lifted China out of poverty
+        claim: >-
+          China grew rich because the party gave up controlling everything: farmers got their plots back, village firms and private
+          businesses were allowed, and the country opened to trade. Growth came from economic liberalization, and it would go further
+          with political reform.
+        voiced: >-
+          "China became capitalist by accident, from the margins: peasants dividing the land in secret, rural entrepreneurs, private
+          traders. The state's genius was to get out of the way."
+        you: You think China's prosperity came from markets and private initiative, not from the party's plan.
+        because: >-
+          In 1978 the farmers of Xiaogang village secretly divided their collective land into household plots; within a few years the
+          household responsibility system spread nationwide and grain output jumped. Huang shows that the 1980s, when rural private
+          enterprise boomed, raised rural incomes faster than the state-led 1990s. Coase and Wang argue the reforms were driven by
+          "marginal revolutions" outside the plan.
+        against:
+          - from: nationalism.developmental-state
+            text: >-
+              The state set the price system, built the infrastructure, kept capital controls and steered credit. Countries that
+              simply "got out of the way" under shock therapy, like Russia, collapsed.
+          - from: marxism.maoism
+            text: >-
+              The irrigation, education and rural health of the Mao years were the base the markets grew on.
+        sources:
+          - {author: Ronald Coase and Ning Wang, title: "How China Became Capitalist", year: 2012}
+          - {author: Yasheng Huang, title: "Capitalism with Chinese Characteristics: Entrepreneurship and the State", year: 2008}
+        traditions:
+          defining: [liberalism.chicago, liberalism.austrian]
+          typical: [liberalism.classical, libertarianism.minarchist]
+          rejects: [marxism.scc, marxism.maoism]
+        presupposes: [capitalism.nature.free-exchange]
+        excludes: [hist.china-reform.primary-stage]
+        analysis:
+          gains: [finance-capital, industrial-capital, petty-bourgeoisie]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >-
+            Crediting markets alone recommends privatizing China's remaining state banks and land, which would open them to foreign and
+            domestic capital and remove the land rights that let migrant workers refuse the worst wages.
+          drain: sustains
+          law_of_value: extends
+      - id: hist.china-reform.developmental-state
+        label: A developmental state that escaped shock therapy
+        claim: >-
+          China succeeded because it reformed gradually and kept the state in charge: it let markets grow at the margin while holding
+          prices, capital flows and strategic industries under control, as Japan, South Korea and Taiwan had done before it.
+        voiced: >-
+          "China did not jump off the cliff. It kept the plan for the core and let the market grow around it, then built national
+          champions behind capital controls. That is how every successful late developer has done it."
+        you: You think China's reform worked because the state steered markets instead of surrendering to them.
+        because: >-
+          In 1988 the leadership retreated from a big-bang price liberalization; Weber shows the dual-track system, with planned prices
+          for basic goods and market prices at the margin, let markets grow without the collapse that hit Russia. Nolan compares China's
+          rise and Russia's fall directly. Capital controls and state banks let China direct savings into infrastructure and industry.
+        against:
+          - from: marxism.mlm
+            text: >-
+              "Developmental state" is a polite name for capitalism with a strong bureaucracy. The question is which class it develops
+              for.
+          - from: liberalism.chicago
+            text: >-
+              State-directed credit built ghost cities and debt-laden state firms; the private sector did the real work.
+        sources:
+          - {author: Isabella M. Weber, title: "How China Escaped Shock Therapy: The Market Reform Debate", year: 2021}
+          - {author: Peter Nolan, title: "China's Rise, Russia's Fall: Politics, Economics and Planning in the Transition from Stalinism", year: 1995}
+          - {author: Giovanni Arrighi, title: "Adam Smith in Beijing: Lineages of the Twenty-First Century", year: 2007}
+        traditions:
+          defining: [nationalism.developmental-state]
+          typical: [socdem.keynesian, marxism.world-systems]
+          contested: [marxism.scc]
+          rejects: [liberalism.chicago, liberalism.austrian]
+        presupposes: [development.path.import-substitution]
+        analysis:
+          gains: [professional-managerial, industrial-capital, peripheral-workers]
+          pays: [finance-capital]
+          mechanism: >-
+            Holding up a state-steered, gradual reform resists the opening of capital accounts and the sale of state banks that
+            Western finance seeks, which lets a peripheral state keep more of its own savings and direct them to domestic investment.
+          drain: reduces
+          law_of_value: regulates
+      - id: hist.china-reform.workshop-of-the-world
+        label: The world's workshop, where cheap labor fed the profits of the core
+        claim: >-
+          The reform era turned China into the assembly line of the world economy. Hundreds of millions of migrant workers made goods for
+          Western brands at low wages, while most of the value was taken by the firms that owned the brands, the patents and the shops.
+        voiced: >-
+          "The iPhone is 'designed in California, assembled in China'. The workers in Shenzhen get a few dollars of its price; Apple
+          and its shareholders get the rest."
+        you: You see China's reform era as the core's way of getting cheap labor, paid for by China's workers.
+        because: >-
+          Pun Ngai's study of Shenzhen factories shows young migrant women working long hours in dormitory labor regimes. By the 2000s
+          Chinese exports were mainly assembled goods for foreign-owned value chains, and studies of products like the iPhone found
+          Chinese assembly captured only a small share of the retail price. Smith argues this is the drain in its modern form: value
+          produced in the South, captured in the North.
+        against:
+          - from: marxism.scc
+            text: >-
+              China used the assembly stage to climb the chain; by the 2010s it led in solar, batteries, telecoms and high-speed rail.
+              A drain that builds the receiver's industry is not a simple drain.
+          - from: liberalism.chicago
+            text: >-
+              Chinese wages rose many times over during this period; workers chose the factories over the farms.
+        sources:
+          - {author: Pun Ngai, title: "Made in China: Women Factory Workers in a Global Workplace", year: 2005}
+          - {author: John Smith, title: "Imperialism in the Twenty-First Century", year: 2016}
+        traditions:
+          defining: [marxism.third-worldism]
+          typical: [marxism.dependency, marxism.autonomism, feminism.materialist]
+          contested: [marxism.scc]
+          rejects: [liberalism.chicago]
+        presupposes: [imperialism.nature.unequal-exchange-drain]
+        analysis:
+          gains: [peripheral-workers]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >-
+            Reading the reform era through global value chains points to how lead firms in the core capture the value made by Chinese
+            workers through brand, patent and retail monopolies, which supports wage struggles in China and claims against those firms.
+          drain: reduces
+          law_of_value: regulates
+      - id: hist.china-reform.prosperity-without-liberty
+        label: Prosperity bought with Tiananmen, economic opening without political reform
+        claim: >-
+          The reform era's defining choice came in June 1989, when the army cleared Tiananmen Square and the party chose growth with
+          one-party rule over political reform. China got richer and stayed unfree in speech, press and assembly.
+        voiced: >-
+          "They gave the people money in exchange for silence. The tanks of 4 June are the foundation the economic miracle stands on."
+        you: You see China's reform era as prosperity bought at the price of political rights.
+        because: >-
+          In spring 1989 students and workers occupied Tiananmen Square for seven weeks; on 3–4 June troops opened fire in Beijing.
+          Deaths are disputed: the government gave a figure of about 200 civilians and several dozen soldiers, while other estimates run
+          into the thousands. Zhao Ziyang, who opposed martial law, spent his last fifteen years under house arrest. The event is still
+          censored in China.
+        against:
+          - from: marxism.scc
+            text: >-
+              The stability secured in 1989 made the following thirty years of growth possible; the Soviet Union chose the other road and
+              collapsed.
+          - from: marxism.mlm
+            text: >-
+              The liberal reading forgets that many of the workers in the square were protesting inflation and corruption from market
+              reform, not asking for Western-style elections.
+        sources:
+          - {author: Zhang Liang (compiler), Andrew J. Nathan and Perry Link (eds.), title: "The Tiananmen Papers", year: 2001}
+          - {author: Louisa Lim, title: "The People's Republic of Amnesia: Tiananmen Revisited", year: 2014}
+        traditions:
+          defining: [liberalism.internationalist]
+          typical: [liberalism.classical, liberalism.social, conservatism.neo]
+          rejects: [marxism.scc]
+        presupposes: [intl.sovereignty.conditional-on-rights]
+        analysis:
+          gains: [professional-managerial, finance-capital]
+          pays: [peripheral-workers]
+          mechanism: >-
+            Framing China's reform as prosperity without rights makes Western-style political liberalization the remaining task, which
+            tends to align critics of the party with core governments and to leave the conditions of migrant workers secondary.
+          drain: sustains
+          law_of_value: extends
+          disputed: >-
+            Tiananmen death tolls are disputed, from the government's figure of about 200 civilians to estimates in the low thousands.

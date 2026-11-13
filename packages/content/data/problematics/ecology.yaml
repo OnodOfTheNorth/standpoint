@@ -1,0 +1,1494 @@
+problematics:
+  # ------------------------------------------------------------------
+  - id: ecology.crisis-cause
+    domain: ecology
+    layer: analysis
+    question: What is causing the ecological crisis?
+    plain: The climate is heating, species are dying out, soils and seas are wearing down. Why?
+    short: the cause of the ecological crisis
+    importance: 3
+    region: ecology
+    positions:
+      - id: ecology.crisis-cause.capital-accumulation
+        label: An economy that must grow for profit
+        claim: The crisis comes from an economy run for profit, which must expand without end on a planet that does not expand.
+        voiced: "Capital grows or dies. It treats the soil, the forests and the air as free gifts, and it has broken the cycle between society and the earth."
+        you: You think the ecological crisis comes from an economy that has to keep growing to keep making profit.
+        because: >
+          A firm that stops expanding is undercut by rivals, so every firm must reinvest its profit and
+          produce more, and every efficiency gain is turned into more output rather than less use of
+          nature. Marx called the result a rift in the metabolism between society and nature: capitalist
+          farming robbed the soil and shipped its nutrients to the cities. Coal won out over water power
+          in British industry not because it was cheaper but because steam let owners put mills where
+          labor was cheap and docile. The crisis follows the profit system, not human nature.
+        against:
+          - from: ecology.green-growth
+            text: >
+              Market economies have cut their emissions while growing; the Soviet bloc, without private
+              profit, wrecked the Aral Sea and ran the dirtiest industry in Europe. Prices that include the
+              damage would turn the growth engine toward clean output.
+          - from: ecology.deep-ecology
+            text: >
+              Swapping private owners for public ones keeps the same goal, the mastery of nature for human
+              ends. Industrial socialism and industrial capitalism share the root error.
+        sources:
+          - {author: Karl Marx, title: "Capital, Volume I", year: 1867}
+          - {author: John Bellamy Foster, title: "Marx's Ecology: Materialism and Nature", year: 2000}
+          - {author: "John Bellamy Foster, Brett Clark and Richard York", title: "The Ecological Rift: Capitalism's War on the Earth", year: 2010}
+          - {author: Andreas Malm, title: "Fossil Capital: The Rise of Steam Power and the Roots of Global Warming", year: 2016}
+        traditions:
+          defining: [marxism.ecosocialism, marxism.degrowth-communism]
+          typical: [marxism.classical, ecology.degrowth, anarchism.communalism, marxism.third-worldism]
+          contested: [ecology.environmental-justice, socdem.democratic-socialism]
+          rejects: [ecology.green-growth, ecology.ecomodernism, liberalism.chicago, liberalism.austrian]
+        presupposes: [capitalism.nature.exploitation-profit]
+        excludes: [ecology.crisis-cause.overstated, ecology.crisis-cause.missing-property-rights]
+        tension: [ecology.crisis-cause.too-many-people, ecology.crisis-cause.human-mastery]
+        tags: [capitalism, growth]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry, reserve-army]
+          pays: [industrial-capital, finance-capital, landed-capital]
+          mechanism: >
+            Naming accumulation as the cause points policy at the owners' power to decide investment, so
+            fossil reserves, plantations and mines lose value on paper and their owners lose the rents,
+            while workers and peasants gain a claim to plan output by need.
+          drain: reduces
+          law_of_value: abolishes
+          disputed: >
+            Ecomodernist socialists (Huber, Phillips) accept the diagnosis but deny it implies less output;
+            degrowth communists (Saito) argue that any socialism which keeps growing reproduces the rift.
+
+      - id: ecology.crisis-cause.core-appropriation
+        label: Rich countries take the South's land, labor and atmosphere
+        claim: The crisis is driven by a few rich countries using far more than their share of the earth, much of it taken from the global South through trade on unequal terms.
+        voiced: "The North did not just pollute more. It filled the sky with our share of carbon and paid for our land, our minerals and our labor at a fraction of their worth."
+        you: You think the crisis comes from rich countries taking far more than their share of land, materials and atmosphere, much of it from poorer countries.
+        because: >
+          Rich countries, with under a fifth of humanity, are responsible for the large majority of excess
+          carbon emissions since 1850. Each year they also net-import vast quantities of embodied land,
+          raw materials, energy and labor from the South, paid for at prices far below what the same
+          inputs fetch in the North. Ecological damage is moved to the mines of Katanga, the soy frontiers
+          of the Cerrado and the oil fields of the Niger Delta, while the North books it as its own
+          efficiency. This is the same drain that keeps the South poor, measured in hectares and tonnes.
+        against:
+          - from: ecology.green-growth
+            text: >
+              China is now the largest emitter, and emissions in India, Indonesia and Brazil are rising
+              fast. Trade lets the South grow; blaming the North for every tonne lets today's big emitters
+              off the hook.
+          - from: ecology.neo-malthusian
+            text: >
+              Consumption per head matters, but so does the number of heads. Population growth in the South
+              multiplies future demand for land and energy whatever the history.
+        sources:
+          - {author: Alf Hornborg, title: "Global Ecology and Unequal Exchange: Fetishism in a Zero-Sum World", year: 2011}
+          - {author: Joan Martinez-Alier, title: "The Environmentalism of the Poor", year: 2002}
+          - {author: Jason Hickel, title: "Quantifying national responsibility for climate breakdown: an equality-based attribution approach for carbon dioxide emissions in excess of the planetary boundary", year: 2020, note: "The Lancet Planetary Health"}
+          - {author: "Jason Hickel, Christian Dorninger, Hanspeter Wieland and Intan Suwandi", title: "Imperialist appropriation in the world economy: Drain from the global South through unequal exchange, 1990–2015", year: 2022, note: "Global Environmental Change"}
+        traditions:
+          defining: [marxism.third-worldism, ecology.environmental-justice]
+          typical: [ecology.degrowth, marxism.degrowth-communism, marxism.dependency, nationalism.decolonial, nationalism.indigenous-sovereignty, marxism.world-systems]
+          contested: [marxism.ecosocialism, marxism.scc]
+          rejects: [ecology.green-growth, ecology.ecomodernism, ecology.neo-malthusian, liberalism.chicago]
+        presupposes: [imperialism.nature.unequal-exchange-drain]
+        excludes: [ecology.crisis-cause.overstated]
+        tension: [ecology.crisis-cause.too-many-people, ecology.crisis-cause.market-failure]
+        tags: [periphery, unequal-exchange, drain]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, core-workers, comprador-capital]
+          mechanism: >
+            If the cause is located in the core's appropriation, the remedy is higher prices for Southern
+            raw materials and labor, payment for past emissions and room for Southern energy use, which
+            raises costs for core firms and lowers the cheap goods core consumers rely on.
+          drain: breaks
+          law_of_value: regulates
+          disputed: >
+            Marxists disagree on whether core workers share in the ecological drain (Hickel, Emmanuel's
+            heirs) or are mainly its victims too (orthodox Marxists, Huber); China's role as both
+            Southern supplier and new appropriator is disputed.
+
+      - id: ecology.crisis-cause.market-failure
+        label: Damage that nobody pays for
+        claim: The crisis is a market failure, because polluters do not pay for the damage they do, so the economy produces too much of it.
+        voiced: "Climate change is the greatest market failure the world has seen. Put a price on carbon and the market will do the rest."
+        you: You think the problem is that pollution costs nothing to the polluter, and that pricing it would fix most of the damage.
+        because: >
+          When a factory pumps carbon into the air it pays nothing for the harm to farmers, coasts and
+          future generations, so the price of its product is too low and too much is made. The fix is
+          to make prices tell the truth: a carbon tax or a cap on permits, public money for research,
+          and rules where pricing is impractical. Once the price is right, millions of firms and
+          households find the cheapest cuts far faster than any planner, and acid rain in the United
+          States was cut this way after 1990.
+        against:
+          - from: marxism.ecosocialism
+            text: >
+              Thirty years of carbon markets have produced cheap permits, lobbying and offsets while
+              emissions rose. Calling the crisis a failure of the market assumes the market is the
+              normal state of things and treats the planet as a cost to be priced.
+          - from: libertarianism.minarchist
+            text: >
+              A carbon tax hands government a vast new revenue stream and a rationale to steer every
+              industry. Where harm is real and traceable, property rights and courts do the job.
+        sources:
+          - {author: Arthur Cecil Pigou, title: The Economics of Welfare, year: 1920}
+          - {author: Nicholas Stern, title: "The Economics of Climate Change: The Stern Review", year: 2006}
+          - {author: William Nordhaus, title: "The Climate Casino: Risk, Uncertainty, and Economics for a Warming World", year: 2013}
+        traditions:
+          defining: [ecology.green-growth]
+          typical: [liberalism.technocratic, liberalism.utilitarian, liberalism.social, socdem.third-way, conservatism.christian-democracy, liberalism.chicago]
+          contested: [ecology.ecomodernism, liberalism.ordoliberal]
+          rejects: [marxism.ecosocialism, ecology.degrowth, ecology.deep-ecology]
+        presupposes: []
+        excludes: [ecology.crisis-cause.overstated]
+        tension: [ecology.crisis-cause.capital-accumulation, ecology.crisis-cause.missing-property-rights]
+        tags: [market, carbon-price]
+        analysis:
+          gains: [finance-capital, professional-managerial, industrial-capital]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            A carbon price raises fuel and food prices for those who spend most of their income on them,
+            while permit trading, offsets and green subsidies open new assets for banks, consultants and
+            firms that can afford to switch; offsets bought in the South let core emitters continue.
+          drain: sustains
+          law_of_value: extends
+          disputed: >
+            Some socialists (Boyce) argue a carbon tax returned as an equal dividend is progressive and
+            reduces inequality; ecosocialists answer that pricing leaves investment decisions with owners.
+
+      - id: ecology.crisis-cause.missing-property-rights
+        label: Nobody owns the air, the fish or the forest
+        claim: Damage happens where nobody owns the resource, or where the state owns it, so nobody has a stake in keeping it whole.
+        voiced: "Nobody washes a rented car. Give people title to the fishery and the forest, and they will guard them better than any ministry."
+        you: You think nature is wrecked where nobody owns it, and that secure private ownership is the best protection.
+        because: >
+          An owner who can sell a forest has every reason to keep it valuable, while open access rewards
+          whoever grabs first. Fisheries collapsed under open access and recovered under tradable quotas
+          in New Zealand and Iceland. The worst pollution of the century was in state-run economies where
+          no owner could sue. Where harm is traceable, polluters can be made to pay neighbors in court; the
+          remaining problems are rights not yet defined.
+        against:
+          - from: ecology.environmental-justice
+            text: >
+              Courts and titles favor whoever can pay lawyers. Privatized water and forests in the South
+              have shut out the poor who lived from them, while the polluter settles out of court.
+          - from: ecology.green-growth
+            text: >
+              You cannot assign title to the atmosphere or sue for a hurricane. Climate damage is spread
+              across billions of people and centuries; only public pricing or regulation reaches it.
+        sources:
+          - {author: Ronald Coase, title: "The Problem of Social Cost", year: 1960}
+          - {author: Terry L. Anderson and Donald R. Leal, title: Free Market Environmentalism, year: 1991}
+          - {author: Garrett Hardin, title: "The Tragedy of the Commons", year: 1968}
+        traditions:
+          defining: [libertarianism.minarchist]
+          typical: [libertarianism.ancap, liberalism.chicago, liberalism.austrian, libertarianism.objectivist]
+          contested: [liberalism.classical, libertarianism.georgist]
+          rejects: [marxism.ecosocialism, ecology.environmental-justice, nationalism.indigenous-sovereignty]
+        presupposes: [property.private.natural-right]
+        excludes: [ecology.crisis-cause.capital-accumulation]
+        tension: [ecology.crisis-cause.market-failure]
+        tags: [property, market]
+        analysis:
+          gains: [landed-capital, finance-capital, industrial-capital]
+          pays: [peasantry, peripheral-workers, reserve-army]
+          mechanism: >
+            Turning fisheries, forests and water into titled property transfers them to whoever can buy
+            the titles, usually firms and investors, and removes the customary use rights of peasants,
+            fishers and Indigenous communities who lived from them.
+          drain: sustains
+          law_of_value: extends
+          disputed: >
+            Elinor Ostrom's work shows that many commons are well managed by communities without either
+            private title or the state, a finding claimed both by market liberals and by commons socialists.
+
+      - id: ecology.crisis-cause.too-many-people
+        label: Too many people for one planet
+        claim: The crisis is driven above all by the sheer number of people, each needing food, land and energy, multiplied by rising consumption.
+        voiced: "Impact equals population times affluence times technology. You can fiddle with the last two, but the first keeps multiplying."
+        you: You think the ecological crisis is driven mainly by there being too many people on the planet.
+        because: >
+          Every person needs land for food, water, shelter and energy. The world population has risen from
+          about one billion in 1800 to eight billion, and wild land has shrunk in step. Cleaner technology
+          only buys time if numbers keep rising, and each added person in a rich country adds a lifetime
+          of emissions. A smaller population, reached by choice through education, contraception and
+          women's rights, makes every other problem easier.
+        against:
+          - from: ecology.environmental-justice
+            text: >
+              The poorest half of humanity produces about a tenth of emissions. Blaming numbers turns the
+              eye from the rich to the poor, and from Northern consumption to Southern births.
+          - from: marxism.classical
+            text: >
+              Overpopulation is always relative to how wealth is produced and shared. Malthus's laws of
+              nature were the laws of an economy that throws people out of work and off the land.
+        sources:
+          - {author: Paul R. Ehrlich, title: The Population Bomb, year: 1968}
+          - {author: Paul R. Ehrlich and John P. Holdren, title: "Impact of Population Growth", year: 1971, note: Science}
+          - {author: "Donella H. Meadows, Dennis L. Meadows, Jørgen Randers and William W. Behrens III", title: The Limits to Growth, year: 1972}
+        traditions:
+          defining: [ecology.neo-malthusian]
+          typical: [ecology.deep-ecology, fascism.ecofascism]
+          contested: [ecology.green-growth, technology.effective-altruism]
+          rejects: [marxism.classical, ecology.environmental-justice, ecology.ecomodernism, conservatism.cst, marxism.third-worldism]
+        presupposes: []
+        excludes: []
+        tension: [ecology.crisis-cause.core-appropriation, ecology.crisis-cause.capital-accumulation]
+        tags: [population]
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [peasantry, peripheral-workers, reserve-army]
+          mechanism: >
+            Making numbers the cause directs policy and aid toward birth control in the South, where
+            births are highest, and away from the production and consumption patterns of the core, where
+            impact per person is highest, so owners of the most polluting capital are left alone.
+          drain: sustains
+          law_of_value: none
+          disputed: >
+            Some materialists (Foster) grant that population is a real variable in a finite world but insist
+            it acts only through social relations; neo-Malthusians on the left (some deep ecologists) reject
+            the charge that they shield capital.
+
+      - id: ecology.crisis-cause.human-mastery
+        label: The human urge to master nature
+        claim: The crisis comes from a worldview that sees humans as masters of nature and everything else as raw material, shared by capitalism and industrial socialism alike.
+        voiced: "We are not the lords of creation. A culture that sees a forest as timber and a river as power will destroy both, whoever owns the sawmill."
+        you: You think the crisis comes from seeing nature as something for humans to master and use, whatever the economic system.
+        because: >
+          Soviet planners drained the Aral Sea and capitalist firms clear the Amazon: different owners,
+          same attitude. The root is the belief, deep in modern Western thought, that only humans have
+          value and the rest of life is a stockpile. So long as that belief rules, every new technology or
+          economic system becomes a better tool for the same destruction. What must change first is how
+          people see their place in the web of life.
+        against:
+          - from: marxism.ecosocialism
+            text: >
+              Attitudes do not cut down forests; companies do, because it pays. Blaming "humanity" lumps the
+              Amazon timber baron in with the Indigenous family he is evicting.
+          - from: anarchism.communalism
+            text: >
+              The domination of nature grows out of the domination of people by people. Deep ecology talks
+              about humanity in general and ignores hierarchy, which is where the problem begins.
+        sources:
+          - {author: Lynn White Jr., title: "The Historical Roots of Our Ecologic Crisis", year: 1967, note: Science}
+          - {author: Arne Naess, title: "The Shallow and the Deep, Long-Range Ecology Movement", year: 1973, note: Inquiry}
+          - {author: Lewis Mumford, title: "The Myth of the Machine: Technics and Human Development", year: 1967}
+        traditions:
+          defining: [ecology.deep-ecology]
+          typical: [anarchism.primitivist, anarchism.green, religious.engaged-buddhism, anarchism.christian]
+          contested: [nationalism.indigenous-sovereignty, conservatism.traditionalist]
+          rejects: [marxism.ecosocialism, ecology.ecomodernism, technology.e-acc, anarchism.communalism]
+        presupposes: [history.motor.ideas]
+        excludes: []
+        tension: [ecology.crisis-cause.capital-accumulation]
+        tags: [worldview, deep-ecology]
+        analysis:
+          gains: [professional-managerial]
+          pays: []
+          mechanism: >
+            Locating the cause in a shared human worldview spreads responsibility evenly across owners and
+            workers, rich and poor countries, so no class is made to pay and remedies run through changes of
+            attitude and lifestyle chosen mainly by educated core consumers.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Some materialists (Merchant, Moore) argue that the worldview of mastery was itself produced by
+            early capitalism's need for cheap nature, so the two accounts can be joined.
+          method: idealist
+
+      - id: ecology.crisis-cause.lost-piety
+        label: A culture that forgot its debt to creation and to home
+        claim: The crisis comes from a culture that has lost its sense of the sacred and of home, treating the earth as something to use up rather than a gift held in trust.
+        voiced: "The earth, our common home, is crying out. We have come to see ourselves as her lords and masters, entitled to plunder her at will."
+        you: You think the crisis comes from losing a sense of the earth as a gift, held in trust for those who come after.
+        because: >
+          People protect what they love, and they love what is near and inherited: a farm, a parish, a
+          landscape. A culture of restless consumption and placeless markets, cheered on by a technocratic
+          belief that every problem has a technical fix, has cut that bond. The answer is not a global
+          plan run by experts but a recovery of stewardship, thrift, local loyalty and reverence for
+          creation, in which care for the poor and care for the earth are one.
+        against:
+          - from: marxism.ecosocialism
+            text: >
+              The farmer who loves his land is ruined by the grain price and sells to the agribusiness
+              firm. Sermons about thrift do not touch the investment decisions that drive the damage.
+          - from: libertarianism.minarchist
+            text: >
+              People care for what they own, not for what they are told is sacred. Talk of a common home
+              becomes a license for bishops and bureaucrats to run other people's property.
+        sources:
+          - {author: Pope Francis, title: "Laudato Si': On Care for Our Common Home", year: 2015}
+          - {author: Roger Scruton, title: "Green Philosophy: How to Think Seriously About the Planet", year: 2012}
+          - {author: Wendell Berry, title: "The Unsettling of America: Culture and Agriculture", year: 1977}
+          - {author: Seyyed Hossein Nasr, title: "Man and Nature: The Spiritual Crisis of Modern Man", year: 1968}
+        traditions:
+          defining: [conservatism.cst]
+          typical: [conservatism.traditionalist, conservatism.burkean, conservatism.distributism, religious.liberation-theology, conservatism.postliberal]
+          contested: [conservatism.evangelical-right, conservatism.christian-democracy]
+          rejects: [technology.e-acc, ecology.ecomodernism, libertarianism.objectivist]
+        presupposes: []
+        excludes: []
+        tension: [ecology.crisis-cause.market-failure, ecology.crisis-cause.missing-property-rights]
+        tags: [religion, stewardship]
+        analysis:
+          gains: [petty-bourgeoisie, peasantry]
+          pays: [finance-capital]
+          mechanism: >
+            A stewardship ethic backs small farmers and local owners against land consolidation and
+            speculative finance, but by leaving property relations in place it relies on owners' conscience,
+            so large agribusiness and extraction firms meet moral appeal rather than loss of control.
+          drain: softens
+          law_of_value: regulates
+          disputed: >
+            Liberation theologians (Boff) read Laudato Si' as a structural critique of the profit system;
+            conservative Catholics read it as a call to personal and local virtue.
+
+      - id: ecology.crisis-cause.overstated
+        label: The crisis is exaggerated
+        claim: The climate is changing, as it always has, but the dangers are exaggerated, and alarm is used to raise taxes, expand government and block cheap energy.
+        voiced: "Every decade they tell us the world will end in ten years. Meanwhile cheap energy has lifted billions out of poverty and deaths from climate disasters have fallen."
+        you: You think the ecological crisis is overstated and that the cure being pushed costs more than the disease.
+        because: >
+          Deaths from droughts, floods and storms have fallen sharply over the last century because richer
+          societies with cheap energy can protect themselves. Past predictions of mass famine and resource
+          exhaustion failed. Computer models disagree widely, and the worst scenarios get the headlines.
+          Meanwhile climate policy raises energy bills for working families and denies cheap power to poor
+          countries. Adapt where needed, and let growth and innovation do the rest.
+        against:
+          - from: ecology.green-growth
+            text: >
+              The basic physics has been settled for over a century and the observed warming matches the
+              projections. Falling disaster deaths reflect adaptation, which gets harder and costlier as
+              warming continues.
+          - from: ecology.environmental-justice
+            text: >
+              Tell it to the farmers of the Sahel and the islands of the Pacific. The people saying it is
+              overstated live in the places that can still afford to adapt.
+        sources:
+          - {author: Julian L. Simon, title: The Ultimate Resource, year: 1981}
+          - {author: Bjørn Lomborg, title: The Skeptical Environmentalist, year: 1998, note: "Danish original Verdens sande tilstand; English edition 2001"}
+          - {author: Alex Epstein, title: The Moral Case for Fossil Fuels, year: 2014}
+          - {author: Steven E. Koonin, title: "Unsettled: What Climate Science Tells Us, What It Doesn't, and Why It Matters", year: 2021}
+        traditions:
+          defining: []
+          typical: [conservatism.right-populism, libertarianism.paleo, conservatism.paleo, conservatism.fusionism, libertarianism.objectivist, commonsense.declinist]
+          contested: [conservatism.national, liberalism.classical, libertarianism.ancap, nationalism.eurasianism]
+          rejects: [ecology.green-growth, ecology.degrowth, marxism.ecosocialism, ecology.environmental-justice, ecology.deep-ecology]
+        presupposes: []
+        excludes: [ecology.crisis-cause.capital-accumulation, ecology.crisis-cause.core-appropriation, ecology.crisis-cause.market-failure]
+        tension: []
+        tags: [skepticism, fossil-fuels]
+        analysis:
+          gains: [industrial-capital, finance-capital, landed-capital]
+          pays: [peasantry, peripheral-workers, reserve-army]
+          mechanism: >
+            Denying or downplaying the crisis protects the asset value of oil, gas and coal reserves and the
+            plant built to burn them, while the cost of floods, droughts and crop failure falls on farmers and
+            workers in the hottest and poorest regions, who have the least means to adapt.
+          drain: sustains
+          law_of_value: extends
+          disputed: >
+            Malm and the Zetkin Collective read denial as the ideology of fossil capital; others stress its
+            mass base among core workers and rural voters who see climate policy as a tax on their way of life.
+
+  # ------------------------------------------------------------------
+  - id: growth.ecology
+    domain: ecology
+    layer: horizon
+    question: Green growth, ecomodernism, degrowth, ecosocialism or deep ecology?
+    plain: To stop wrecking the planet, should the economy keep growing, grow differently, or shrink, and who decides?
+    short: growth and ecology
+    importance: 3
+    region: ecology
+    positions:
+      - id: growth.ecology.green-growth
+        label: "Green growth: keep growing, but clean"
+        claim: The economy can keep growing while emissions and resource use fall, if governments price pollution and back clean technology.
+        voiced: "There is no trade-off between prosperity and the planet. The green economy is the growth story of the century."
+        you: You think the economy can keep growing while it cuts pollution, given the right prices and investment.
+        because: >
+          Since 2005 more than thirty countries, among them Britain, Sweden and Germany, have grown their
+          economies while cutting their carbon emissions. Solar power has become the cheapest electricity in
+          history, and batteries have fallen in price by around ninety percent in a decade. Growth pays for
+          the transition and keeps the public on board; asking people to get poorer is a sure way to lose
+          elections and hand power to those who deny the problem. Price carbon, invest, regulate, and let
+          innovation do what it has always done.
+        against:
+          - from: ecology.degrowth
+            text: >
+              The decoupling achieved is relative or far too slow, and material use has not decoupled at all.
+              At current rates rich countries would need two hundred years to get to zero; the carbon budget
+              runs out in a decade or two.
+          - from: marxism.third-worldism
+            text: >
+              The "decoupled" North has moved its heavy industry and mining to the South and counts the
+              damage there as someone else's. Green growth in the core runs on Congolese cobalt and Chilean lithium.
+        sources:
+          - {author: World Commission on Environment and Development, title: "Our Common Future", year: 1987, note: "the Brundtland Report"}
+          - {author: OECD, title: Towards Green Growth, year: 2011}
+          - {author: Nicholas Stern, title: "The Economics of Climate Change: The Stern Review", year: 2006}
+        traditions:
+          defining: [ecology.green-growth]
+          typical: [liberalism.technocratic, liberalism.social, liberalism.progressive, socdem.third-way, conservatism.christian-democracy, liberalism.internationalist, socdem.nordic]
+          contested: [socdem.keynesian, ecology.ecomodernism, marxism.scc]
+          rejects: [ecology.degrowth, marxism.degrowth-communism, ecology.deep-ecology, conservatism.right-populism]
+        presupposes: [ecology.crisis-cause.market-failure]
+        excludes: [growth.ecology.degrowth, growth.ecology.deep-ecology]
+        tension: [growth.ecology.southern-right-to-develop]
+        tags: [growth, green-new-deal]
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >
+            Green growth opens new fields of profitable investment, renewables, electric vehicles and carbon
+            markets, underwritten by public subsidy, while the minerals and land they need are bought from
+            peripheral mines and plantations at world prices set by core buyers.
+          drain: sustains
+          law_of_value: extends
+          disputed: >
+            Some socialists (Pollin) argue a large public green investment program can be a vehicle for
+            workers' gains in the core and the South; Hickel and Kallis argue it locks in the drain.
+
+      - id: growth.ecology.ecomodernism
+        label: "Ecomodernism: more technology, less nature used"
+        claim: Humanity should use more advanced technology, nuclear power, intensive farming and dense cities, so that it needs less land and nature can return.
+        voiced: "Modernization is the solution, not the problem. Grow more food on less land, split atoms instead of burning forests, and give the rest back to the wild."
+        you: You think the way out is more and better technology, like nuclear power and high-yield farms, so people need less of nature.
+        because: >
+          Poor people burning wood and farming land extensively do far more damage per unit of output than
+          a nuclear plant and a high-yield farm. Every advance from fertilizer to the gas stove has spared
+          land and forests. Rich, urban, high-energy societies use less land per person and have fewer
+          children. Abundant clean energy, above all nuclear, can give everyone a modern life while letting
+          forests, grasslands and wildlife recover. Degrowth asks the poor to stay poor.
+        against:
+          - from: ecology.degrowth
+            text: >
+              Efficiency gains have always been eaten by more consumption. Nuclear plants take fifteen years to
+              build, and the manifesto's land-sparing has never reduced total use anywhere.
+          - from: ecology.environmental-justice
+            text: >
+              The intensified farms, mines and reactors have to go somewhere, and they go to the communities
+              with least power to say no. "Giving land back to the wild" has meant evicting its inhabitants.
+        sources:
+          - {author: "John Asafu-Adjaye, Linus Blomqvist, Stewart Brand and others", title: An Ecomodernist Manifesto, year: 2015}
+          - {author: Stewart Brand, title: "Whole Earth Discipline: An Ecopragmatist Manifesto", year: 2009}
+          - {author: Leigh Phillips, title: "Austerity Ecology and the Collapse-Porn Addicts: A Defence of Growth, Progress, Industry and Stuff", year: 2015}
+          - {author: Michael Shellenberger, title: "Apocalypse Never: Why Environmental Alarmism Hurts Us All", year: 2020}
+        traditions:
+          defining: [ecology.ecomodernism]
+          typical: [technology.e-acc, liberalism.technocratic, technology.transhumanism, technology.l-acc]
+          contested: [ecology.green-growth, marxism.scc, marxism.ecosocialism]
+          rejects: [ecology.degrowth, ecology.deep-ecology, anarchism.primitivist, anarchism.green]
+        presupposes: []
+        excludes: [growth.ecology.degrowth, growth.ecology.deep-ecology]
+        tension: [growth.ecology.green-growth]
+        tags: [nuclear, technology, growth]
+        analysis:
+          gains: [industrial-capital, finance-capital, professional-managerial, core-workers]
+          pays: [peasantry]
+          mechanism: >
+            Intensification concentrates farming in capital-heavy agribusiness and energy in large state- or
+            investor-owned plants, raising returns to those who own them and pushing smallholders off land
+            that is either consolidated or set aside as conservation.
+          drain: sustains
+          law_of_value: extends
+          disputed: >
+            Ecomodernist socialists (Huber, Phillips) argue public ownership of abundant energy is the
+            winning workers' program; ecosocialists (Foster, Saito) answer that abundance under capital
+            only accelerates throughput.
+
+      - id: growth.ecology.degrowth
+        label: "Degrowth: rich countries shrink their use of energy and materials"
+        claim: Rich countries should deliberately reduce their use of energy and materials, scaling down harmful production while guaranteeing everyone's needs through public services and shorter working hours.
+        voiced: "Less is more. Rich countries already have more than enough; the task is to share it, work less, and stop producing what nobody needs."
+        you: You think rich countries should cut back production and consumption on purpose, while making sure everyone's needs are met.
+        because: >
+          No rich economy has cut its use of energy and materials fast enough to stay within safe limits
+          while growing, and there is no evidence it can. But rich countries already produce far more than
+          is needed for a good life: what they lack is fair distribution. Cut SUVs, private jets, planned
+          obsolescence, advertising and fast fashion; expand free public transport, health, housing and
+          care; shorten the working week. Above all, end the drain from the South so poor countries can
+          grow what they need.
+        against:
+          - from: ecology.ecomodernism
+            text: >
+              No electorate will vote to get poorer, and the world's poor need vastly more energy, not less.
+              Degrowth is austerity with a green ribbon, and it gives up the technological fixes that work.
+          - from: marxism.ml
+            text: >
+              Workers in the core want better homes and goods, not lectures on sufficiency. A socialist
+              economy must develop the productive forces; shrinking them hands the argument to the right.
+        sources:
+          - {author: Giorgos Kallis, title: Degrowth, year: 2018}
+          - {author: Jason Hickel, title: "Less Is More: How Degrowth Will Save the World", year: 2020}
+          - {author: "Giacomo D'Alisa, Federico Demaria and Giorgos Kallis (eds.)", title: "Degrowth: A Vocabulary for a New Era", year: 2014}
+          - {author: Serge Latouche, title: Petit traité de la décroissance sereine, year: 2007, note: "English: Farewell to Growth (2009)"}
+          - {author: Kohei Saito, title: "Hitoshinsei no 'Shihonron'", year: 2020, note: "English: Slow Down: The Degrowth Manifesto (2024)"}
+        traditions:
+          defining: [ecology.degrowth, marxism.degrowth-communism]
+          typical: [anarchism.communalism, anarchism.green, religious.engaged-buddhism, nationalism.gandhian]
+          contested: [marxism.ecosocialism, ecology.environmental-justice, ecology.deep-ecology]
+          rejects: [ecology.green-growth, ecology.ecomodernism, technology.e-acc, liberalism.chicago, conservatism.right-populism]
+        presupposes: [ecology.crisis-cause.capital-accumulation]
+        excludes: [growth.ecology.green-growth, growth.ecology.ecomodernism, growth.ecology.growth-is-the-cure]
+        tension: [growth.ecology.southern-right-to-develop]
+        tags: [degrowth, core]
+        analysis:
+          gains: [peripheral-workers, peasantry, reserve-army]
+          pays: [finance-capital, industrial-capital, professional-managerial]
+          mechanism: >
+            Planned reduction of core throughput cuts the core's demand for the South's underpriced land,
+            minerals and labor, while public provision and shorter hours shift income from profit to the
+            wage and the social wage; owners of capital in the shrinking sectors lose.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            Core workers' stake is contested: Hickel argues public provision raises their welfare as output
+            falls; Huber argues degrowth is politically a program of the educated middle strata that core
+            workers will read as austerity.
+          consciousness: hegemonic
+
+      - id: growth.ecology.ecosocialism
+        label: "Ecosocialism: plan production for need within ecological limits"
+        claim: Energy, land and key industries should be taken into public ownership and planned democratically, growing what is needed and shutting down what is destructive.
+        voiced: "Ecosocialism or barbarism. The question is not growth or no growth, but who decides what is produced, and for whom."
+        you: You think the main industries should be publicly owned and planned so that production serves needs within the planet's limits.
+        because: >
+          Markets cannot leave profitable fossil fuel in the ground, because the reserves are already
+          counted as assets; only public ownership can write them off. Planning lets society expand what
+          it needs, renewable energy, public transport, housing, health, and shrink what it does not,
+          without depending on whether the change pays. A just transition puts the workers and communities
+          of coal, oil and gas at the center, and the rich countries owe the South payment for their
+          ecological debt.
+        against:
+          - from: liberalism.austrian
+            text: >
+              Planners have no prices to tell them what anything is worth, so they cannot know which
+              production is "destructive" or "needed". Every planned economy wasted resources on a vast scale.
+          - from: ecology.deep-ecology
+            text: >
+              Socialism still treats nature as a store of resources to be shared out among humans. Changing
+              owners does not change the attitude.
+        sources:
+          - {author: Joel Kovel and Michael Löwy, title: An Ecosocialist Manifesto, year: 2001}
+          - {author: John Bellamy Foster, title: "The Ecological Revolution: Making Peace with the Planet", year: 2009}
+          - {author: Matthew T. Huber, title: "Climate Change as Class War: Building Socialism on a Warming Planet", year: 2022}
+          - {author: Andreas Malm, title: "Corona, Climate, Chronic Emergency: War Communism in the Twenty-First Century", year: 2020}
+        traditions:
+          defining: [marxism.ecosocialism]
+          typical: [socdem.democratic-socialism, marxism.trotskyism, marxism.ml, religious.liberation-theology, nationalism.bolivarianism]
+          contested: [marxism.degrowth-communism, marxism.scc, ecology.degrowth]
+          rejects: [ecology.green-growth, liberalism.austrian, liberalism.chicago, libertarianism.minarchist]
+        presupposes: [ecology.crisis-cause.capital-accumulation, allocation.mechanism.central-planning]
+        excludes: [growth.ecology.green-growth, growth.ecology.growth-is-the-cure]
+        tension: [growth.ecology.degrowth, growth.ecology.ecomodernism]
+        tags: [planning, public-ownership]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry, reserve-army]
+          pays: [finance-capital, industrial-capital, landed-capital]
+          mechanism: >
+            Public ownership writes off fossil reserves and removes investment decisions from shareholders,
+            so the losses fall on owners of energy and finance capital; planning by need gives workers and
+            communities a claim on the transition's jobs and output.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            Whether core ecosocialist programs reduce the drain depends on how they source minerals and price
+            Southern exports: Hickel and Third Worldists press this point against national Green New Deals.
+          consciousness: hegemonic
+
+      - id: growth.ecology.deep-ecology
+        label: "Deep ecology: shrink the human footprint for all life's sake"
+        claim: Human beings should drastically reduce their numbers and their footprint, so that the rest of life can flourish for its own sake.
+        voiced: "The flourishing of human and non-human life on earth has value in itself. Humans have no right to reduce this richness except to satisfy vital needs."
+        you: You think humans should drastically shrink their footprint, and in time their numbers, so the rest of life can thrive.
+        because: >
+          Every other plan, green or red, still asks how to manage nature for human benefit. But the
+          wolves, the reefs and the rivers matter in themselves. Human interference is already excessive
+          and worsening. A truly ecological society would live simply in small communities, protect large
+          wild areas, and let human numbers fall gently over generations. The change needed is deep: in
+          values, in ways of living, and in our sense of who we are.
+        against:
+          - from: ecology.environmental-justice
+            text: >
+              Wilderness protection has meant evicting Adivasi, Maasai and Indigenous Amazonian communities
+              who lived there for millennia. A philosophy written in Norway and California is imposed on the South.
+          - from: anarchism.communalism
+            text: >
+              Talk of "humanity" as a cancer and calls for fewer people slide quickly into misanthropy. It
+              blames the species for what a social order does.
+        sources:
+          - {author: Arne Naess, title: "The Shallow and the Deep, Long-Range Ecology Movement", year: 1973}
+          - {author: Bill Devall and George Sessions, title: "Deep Ecology: Living as if Nature Mattered", year: 1985}
+          - {author: Aldo Leopold, title: A Sand County Almanac, year: 1949}
+        traditions:
+          defining: [ecology.deep-ecology]
+          typical: [anarchism.primitivist, anarchism.green, ecology.neo-malthusian]
+          contested: [ecology.degrowth, religious.engaged-buddhism, fascism.ecofascism]
+          rejects: [ecology.ecomodernism, ecology.green-growth, marxism.ecosocialism, anarchism.communalism, ecology.environmental-justice]
+        presupposes: [ecology.crisis-cause.human-mastery]
+        excludes: [growth.ecology.green-growth, growth.ecology.ecomodernism, growth.ecology.growth-is-the-cure]
+        tension: [growth.ecology.southern-right-to-develop]
+        tags: [deep-ecology, wilderness]
+        analysis:
+          gains: [professional-managerial, landed-capital]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >
+            Its main material form is the protected area and the population program: conservation land is
+            fenced off, often bought or managed by Northern NGOs and estates, and the peasants and
+            Indigenous peoples who used it lose access, while core production patterns are left untouched.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Guha's 1989 Third World critique set the case against; defenders reply that Naess opposed
+            evictions and that the platform calls for less consumption by the rich above all.
+
+      - id: growth.ecology.southern-right-to-develop
+        label: The South has the right to develop first
+        claim: Poor countries have the right to grow and use their own resources; the rich countries, which caused the problem, must cut first and pay for the transition.
+        voiced: "We did not fill the atmosphere. You cannot climb the ladder and then kick it away. Common but differentiated responsibilities is not a slogan, it is justice."
+        you: You think poor countries have a right to grow and use their resources, and rich countries must cut first and pay.
+        because: >
+          Hundreds of millions of people in Asia, Africa and Latin America lack electricity and clean
+          cooking. Rich countries industrialized on coal for two centuries and used up most of the safe
+          carbon budget. To demand that poor countries stop growing, or grow only with expensive Northern
+          technology, freezes the existing hierarchy. Each country must be free to choose its own energy mix
+          and its own path, while the North cuts deep, transfers technology without patent fees, and pays
+          for adaptation.
+        against:
+          - from: ecology.deep-ecology
+            text: >
+              The atmosphere does not care whose emissions they are. A coal plant in Java does the same damage
+              as one in Ohio, and the right to develop is being claimed by elites building the same dead-end model.
+          - from: nationalism.indigenous-sovereignty
+            text: >
+              "National development" has meant dams on our rivers and mines on our land, decided in capital
+              cities by the same kind of people who ruled us before.
+        sources:
+          - {author: Anil Agarwal and Sunita Narain, title: "Global Warming in an Unequal World: A Case of Environmental Colonialism", year: 1991}
+          - {author: United Nations, title: United Nations Framework Convention on Climate Change, year: 1992}
+          - {author: Ha-Joon Chang, title: "Kicking Away the Ladder: Development Strategy in Historical Perspective", year: 2002}
+        traditions:
+          defining: [nationalism.developmental-state]
+          typical: [marxism.scc, marxism.third-worldism, marxism.dependency, nationalism.bolivarianism, marxism.african-socialism, nationalism.pan-africanism]
+          contested: [ecology.environmental-justice, ecology.degrowth]
+          rejects: [ecology.deep-ecology, ecology.neo-malthusian]
+        presupposes: [intl.sovereignty.nations-set-own-course]
+        excludes: []
+        tension: [growth.ecology.deep-ecology, growth.ecology.degrowth, growth.ecology.green-growth]
+        tags: [periphery, development, sovereignty]
+        analysis:
+          gains: [peripheral-workers, industrial-capital, peasantry]
+          pays: [finance-capital, core-workers]
+          mechanism: >
+            Claiming carbon space and technology transfer for the South lets peripheral states build
+            industry and energy under their own control, raising their share of world value added and the
+            price of what they supply, at the expense of core patent holders and the core's cheap imports.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            Who in the South gains is contested: Amin's heirs see sovereign development reducing the drain;
+            Indigenous and peasant movements point out that national bourgeoisies and state elites take most
+            of the gains while extraction falls on them.
+          consciousness: hegemonic
+
+      - id: growth.ecology.growth-is-the-cure
+        label: Growth is the cure; adapt and innovate
+        claim: Economic growth and cheap energy are what protect people from nature's dangers, so the priority is to keep growing, adapt to change and let innovation solve problems as they come.
+        voiced: "Rich societies have clean air, safe water and sea walls. Poverty is the real environmental disaster, and growth is the only thing that has ever cured it."
+        you: You think the best protection against environmental harm is economic growth and cheap energy, not cutting back.
+        because: >
+          Every environmental gain in history, from clean rivers to reforested Europe, came after societies
+          got rich enough to afford it. Cheap fossil energy is still what lights hospitals in Lagos and runs
+          the fertilizer plants that feed billions. Forcing a rapid transition makes energy dear, hurts the
+          poor most and shifts industry to places with laxer rules. Better to grow, invest in adaptation and
+          research, and let new technologies replace old ones when they are cheaper.
+        against:
+          - from: ecology.environmental-justice
+            text: >
+              "Adapt" is a word for people with money. The Sahel farmer and the Bangladeshi delta family
+              cannot buy their way out of the heat that rich countries' growth produced.
+          - from: ecology.green-growth
+            text: >
+              The cost of unchecked warming rises steeply, and a delay of twenty years makes every later cut
+              more expensive. Investing now is the pro-growth option.
+        sources:
+          - {author: Julian L. Simon, title: The Ultimate Resource, year: 1981}
+          - {author: Bjørn Lomborg, title: "False Alarm: How Climate Change Panic Costs Us Trillions, Hurts the Poor, and Fails to Fix the Planet", year: 2020}
+          - {author: Alex Epstein, title: "Fossil Future: Why Global Human Flourishing Requires More Oil, Coal, and Natural Gas, Not Less", year: 2022}
+        traditions:
+          defining: []
+          typical: [liberalism.chicago, liberalism.austrian, libertarianism.minarchist, libertarianism.objectivist, conservatism.right-populism, conservatism.fusionism, commonsense.self-reliance]
+          contested: [conservatism.national, technology.e-acc, ecology.ecomodernism]
+          rejects: [ecology.degrowth, ecology.deep-ecology, marxism.ecosocialism, ecology.green-growth]
+        presupposes: [ecology.crisis-cause.overstated]
+        excludes: [growth.ecology.degrowth, growth.ecology.ecosocialism, growth.ecology.deep-ecology]
+        tension: []
+        tags: [growth, adaptation, fossil-fuels]
+        analysis:
+          gains: [industrial-capital, finance-capital, landed-capital, comprador-capital]
+          pays: [peasantry, peripheral-workers, reserve-army]
+          mechanism: >
+            Keeping fossil energy cheap preserves the value of reserves and plant owned by energy firms and
+            the petro-elites who license them, while adaptation is bought privately by those who can pay
+            and the heat, crop losses and migration fall on the poorest regions.
+          drain: sustains
+          law_of_value: extends
+
+      - id: growth.ecology.home-and-stewardship
+        label: Conserve the home, not plan the planet
+        claim: Environmental care should be rooted in love of home, local custom and responsible ownership, not in global targets and international bureaucracies.
+        voiced: "Conservation and conservatism are the same idea. People look after what they love, and they love their place, not the planet in the abstract."
+        you: You think caring for nature starts with love of home and local responsibility, not global plans.
+        because: >
+          The great environmental achievements, from Britain's hedgerows to America's national parks,
+          came from people defending a place they loved. Global targets and carbon markets are drafted by
+          distant officials who answer to nobody and impose costs on farmers and small towns. Local
+          communities, landowners, fishermen's associations and churches, bound by custom and attachment,
+          have every reason to keep their inheritance whole for their children. Free them to do so.
+        against:
+          - from: ecology.environmental-justice
+            text: >
+              Love of home has a long history of keeping the toxic plant out of the rich suburb and putting it
+              in the Black or poor neighborhood. Local defense of place does nothing for the places without power.
+          - from: ecology.green-growth
+            text: >
+              The atmosphere is not local. No parish can stop a hurricane or a drought; climate is the one
+              problem that needs global agreement.
+        sources:
+          - {author: Roger Scruton, title: "Green Philosophy: How to Think Seriously About the Planet", year: 2012}
+          - {author: Wendell Berry, title: "The Unsettling of America: Culture and Agriculture", year: 1977}
+          - {author: E. F. Schumacher, title: "Small Is Beautiful: A Study of Economics as if People Mattered", year: 1973}
+        traditions:
+          defining: [conservatism.burkean]
+          typical: [conservatism.traditionalist, conservatism.distributism, conservatism.national, conservatism.postliberal, conservatism.paleo, conservatism.cst]
+          contested: [conservatism.right-populism, fascism.ecofascism]
+          rejects: [ecology.green-growth, liberalism.internationalist, marxism.ecosocialism, technology.technocracy]
+        presupposes: [property.private.social-function]
+        excludes: []
+        tension: [growth.ecology.green-growth]
+        tags: [conservatism, local]
+        analysis:
+          gains: [landed-capital, petty-bourgeoisie]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >
+            Placing environmental care in the hands of local owners and custom strengthens landowners and
+            farmers in core countries against regulation, while leaving untouched the global trade that
+            ships damage to the periphery and the emissions whose effects fall there.
+          drain: sustains
+          law_of_value: regulates
+          disputed: >
+            Some ecosocialists see an ally in conservative localism against agribusiness; others (Malm,
+            Zetkin Collective) warn that attachment to homeland is the bridge to nationalist ecology.
+
+  # ------------------------------------------------------------------
+  - id: population.question
+    domain: ecology
+    layer: analysis
+    question: Is population the problem?
+    plain: Are there too many people on earth, too few being born, or is the number of people the wrong question?
+    short: the population question
+    importance: 2
+    region: ecology
+    positions:
+      - id: population.question.too-many
+        label: Yes, there are too many people
+        claim: Human numbers have outgrown what the earth can support for long, and the world should bring births down by choice before nature does it by famine and collapse.
+        voiced: "Whatever your cause, it's a lost cause without population control."
+        you: You think there are too many people for the planet and that the world should actively bring birth rates down.
+        because: >
+          Food, water, land and the atmosphere are finite, and each additional person needs a share of
+          them for a lifetime. Technology has postponed the reckoning Malthus predicted, but only by drawing
+          down aquifers, soils and fossil carbon that will not return. Stabilizing and then reducing
+          population, through contraception, education for girls and an end to subsidies for large
+          families, is the cheapest climate and conservation policy there is.
+        against:
+          - from: ecology.environmental-justice
+            text: >
+              A child born in Niger will emit a tiny fraction of what a child born in the United States emits.
+              "Too many people" always turns out to mean too many poor people, and has meant forced
+              sterilization of the poor.
+          - from: liberalism.austrian
+            text: >
+              People are not just mouths; they are minds and hands. The predicted famines of the 1970s never
+              came, because more people produced more food and more ideas.
+        sources:
+          - {author: Thomas Robert Malthus, title: An Essay on the Principle of Population, year: 1798}
+          - {author: Paul R. Ehrlich, title: The Population Bomb, year: 1968}
+          - {author: Garrett Hardin, title: "The Tragedy of the Commons", year: 1968}
+        traditions:
+          defining: [ecology.neo-malthusian]
+          typical: [ecology.deep-ecology, anarchism.primitivist]
+          contested: [technology.effective-altruism, ecology.green-growth, fascism.ecofascism]
+          rejects: [marxism.classical, ecology.environmental-justice, conservatism.cst, liberalism.austrian, conservatism.national]
+        presupposes: [ecology.crisis-cause.too-many-people]
+        excludes: [population.question.people-are-the-resource, population.question.too-few-births]
+        tension: [population.question.consumption-not-numbers]
+        tags: [population, malthus]
+        analysis:
+          gains: [finance-capital, professional-managerial]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >
+            Population programs aimed at high-birth regions put the burden of ecological adjustment on
+            peasant and poor families in the South, whose children are their labor and old-age security,
+            while consumption and investment in the core, where impact per person is greatest, go untouched.
+          drain: sustains
+          law_of_value: none
+          disputed: >
+            Some ecosocialists accept that a stable population eases planning; Foster and Hartmann hold that
+            neo-Malthusianism has consistently served to deflect blame from the core and its property system.
+
+      - id: population.question.consumption-not-numbers
+        label: It's the consumption of the rich, not the numbers of the poor
+        claim: The damage comes overwhelmingly from the consumption of the richest people and countries; the poorest half of humanity barely registers.
+        voiced: "The richest ten percent produce about half of all emissions. Look at the yachts before you look at the cradles."
+        you: You think the problem is how much the rich consume, not how many poor people are born.
+        because: >
+          The poorest half of the world's people account for around a tenth of consumption emissions, the
+          richest tenth for about half. The places where families are largest emit least per person. Every
+          population campaign of the twentieth century, from India's sterilization camps to sterilization of
+          Indigenous and Black women in the Americas, fell on the poor. Women's control over their own
+          bodies is a right, not an environmental instrument, and the real target is the lifestyle and
+          investments of the global rich.
+        against:
+          - from: ecology.neo-malthusian
+            text: >
+              Today's poor want, and deserve, to consume more. As they rise out of poverty their numbers will
+              multiply their impact. Ignoring numbers now guarantees the problem later.
+          - from: conservatism.right-populism
+            text: >
+              Blaming the rich is a way to load guilt and taxes on ordinary people in rich countries, whose
+              cars and holidays are not luxuries but normal life.
+        sources:
+          - {author: Betsy Hartmann, title: "Reproductive Rights and Wrongs: The Global Politics of Population Control", year: 1987}
+          - {author: Oxfam, title: "Extreme Carbon Inequality", year: 2015}
+          - {author: Lucas Chancel and Thomas Piketty, title: "Carbon and inequality: from Kyoto to Paris", year: 2015}
+        traditions:
+          defining: [ecology.environmental-justice]
+          typical: [feminism.decolonial, feminism.black, marxism.ecosocialism, ecology.degrowth, religious.liberation-theology, marxism.third-worldism]
+          contested: [liberalism.progressive, socdem.democratic-socialism]
+          rejects: [ecology.neo-malthusian, fascism.ecofascism, conservatism.right-populism]
+        presupposes: []
+        excludes: [population.question.the-wrong-people]
+        tension: [population.question.too-many]
+        tags: [inequality, reproductive-rights]
+        analysis:
+          gains: [peripheral-workers, peasantry, reserve-army]
+          pays: [finance-capital, professional-managerial, core-workers]
+          mechanism: >
+            Shifting the target from births to consumption by income puts the cost of cuts on the high
+            consumers, the owners and well-paid professionals of the core first, and secures poor women's
+            control over fertility against state and donor programs.
+          drain: reduces
+          law_of_value: none
+          disputed: >
+            Whether core workers belong among the high consumers to be cut is disputed: Hickel and Chancel
+            count most of them in the global top fifth; Huber argues the frame alienates them.
+
+      - id: population.question.surplus-made-by-capital
+        label: '"Surplus population" is made by the economy, not by nature'
+        claim: There is no natural number of too many people; an economy run for profit keeps producing people it cannot employ and calls them surplus.
+        voiced: "Overpopulation is always relative to the means of employment. Malthus turned the laws of capital into laws of nature."
+        you: You think "too many people" is produced by an economy that cannot use everyone, not by nature.
+        because: >
+          Famines have occurred in countries that were exporting food, and hunger today coexists with
+          enough grain for everyone. What is called overpopulation is a reserve of the unemployed and the
+          landless, created when capital mechanizes and peasants are pushed off land. Poor families have
+          many children because children are labor and old-age insurance; when land reform, pensions and
+          public health arrive, births fall. Change the relations of production and the population
+          question changes with them.
+        against:
+          - from: ecology.neo-malthusian
+            text: >
+              No social system repeals arithmetic. The Soviet Union and China, too, struggled with land and
+              water per person, and China ended up limiting births by law.
+          - from: liberalism.chicago
+            text: >
+              Unemployment is a matter of wages and regulation, not a law of capitalism. Market economies
+              have absorbed hundreds of millions of former peasants into productive work.
+        sources:
+          - {author: Friedrich Engels, title: Outlines of a Critique of Political Economy, year: 1844}
+          - {author: Karl Marx, title: "Capital, Volume I", year: 1867, note: "chapter 25, on the relative surplus population"}
+          - {author: Mahmood Mamdani, title: "The Myth of Population Control: Family, Caste, and Class in an Indian Village", year: 1972}
+        traditions:
+          defining: [marxism.classical]
+          typical: [marxism.ml, marxism.ecosocialism, marxism.third-worldism, marxism.trotskyism, anarchism.communist]
+          contested: [marxism.scc]
+          rejects: [ecology.neo-malthusian, fascism.ecofascism, liberalism.chicago]
+        presupposes: [capitalism.nature.exploitation-profit]
+        excludes: [population.question.too-many]
+        tension: [population.question.plan-it]
+        tags: [reserve-army, malthus]
+        analysis:
+          gains: [reserve-army, peasantry, peripheral-workers]
+          pays: [industrial-capital, landed-capital]
+          mechanism: >
+            Treating surplus population as a product of the economy turns attention to land concentration and
+            labor-saving investment, which create the landless and unemployed, and to land reform and public
+            security that remove the reasons for large families.
+          drain: reduces
+          law_of_value: suspends
+          method: materialist
+
+      - id: population.question.people-are-the-resource
+        label: People are the ultimate resource
+        claim: More people means more workers, more inventors and more ideas; population growth has gone hand in hand with rising living standards.
+        voiced: "The ultimate resource is people: skilled, spirited, hopeful people who will exert their wills and imaginations for their own benefit, and so for the benefit of us all."
+        you: You think more people means more ideas and more wealth, and that population growth is not a threat.
+        because: >
+          Since 1800 world population has grown eightfold while average incomes, life spans and food per
+          person have all risen. Pressure on land drove farmers to intensify and innovate, as Boserup showed.
+          Resources are not fixed stocks but things people learn to use: oil was useless until someone found
+          a use for it. Ehrlich bet Simon that metals would grow dearer by 1990; they grew cheaper. More
+          minds, in free markets, find more solutions.
+        against:
+          - from: ecology.neo-malthusian
+            text: >
+              Prices fell because we are drawing down stocks faster, not because the stocks grew. The
+              atmosphere and the extinction rate are not priced at all.
+          - from: marxism.ecosocialism
+            text: >
+              Under capital more people means a bigger reserve army and cheaper labor, which is why some
+              employers welcome it. The ideas flow to whoever owns the patents.
+        sources:
+          - {author: Julian L. Simon, title: The Ultimate Resource, year: 1981}
+          - {author: Ester Boserup, title: "The Conditions of Agricultural Growth: The Economics of Agrarian Change under Population Pressure", year: 1965}
+        traditions:
+          defining: []
+          typical: [liberalism.austrian, liberalism.chicago, libertarianism.objectivist, libertarianism.minarchist, technology.e-acc, ecology.ecomodernism]
+          contested: [conservatism.cst, technology.longtermism]
+          rejects: [ecology.neo-malthusian, ecology.deep-ecology, anarchism.primitivist]
+        presupposes: [value.source.subjective-utility]
+        excludes: [population.question.too-many]
+        tension: []
+        tags: [cornucopian, growth]
+        analysis:
+          gains: [industrial-capital, finance-capital]
+          pays: [reserve-army, core-workers]
+          mechanism: >
+            A growing population enlarges the labor supply and the market, which keeps wages lower and
+            sales higher for employers, while the gains from new ideas are captured through patents by those
+            who own them.
+          drain: sustains
+          law_of_value: extends
+
+      - id: population.question.too-few-births
+        label: The real crisis is too few births
+        claim: Falling birth rates, not rising ones, are the coming crisis; nations that do not have children will age, shrink and be replaced.
+        voiced: "A nation that will not have children has decided not to have a future. Every country with a birth rate below two is choosing extinction."
+        you: You think the real danger is that people are having too few children, and that nations will shrink and age.
+        because: >
+          Birth rates have fallen below replacement in most of the world, from Korea and Italy to Brazil
+          and Iran. Fewer workers will have to support more pensioners, innovation will slow, and
+          countries that fill the gap with immigration will lose their culture. Families need housing,
+          stable work and a culture that honors motherhood and fatherhood. Governments should pay,
+          house and celebrate families until birth rates recover.
+        against:
+          - from: feminism.liberal
+            text: >
+              Birth rates fall when women get education, work and control over their bodies. Every pronatalist
+              campaign ends by pressing on women's choices.
+          - from: ecology.neo-malthusian
+            text: >
+              A gentle decline from eight billion is the best news the planet has had. An ageing society is a
+              problem to manage, not a catastrophe.
+        sources:
+          - {author: Darrell Bricker and John Ibbitson, title: "Empty Planet: The Shock of Global Population Decline", year: 2019}
+          - {author: Phillip Longman, title: "The Empty Cradle: How Falling Birthrates Threaten World Prosperity and What to Do About It", year: 2004}
+        traditions:
+          defining: [conservatism.national]
+          typical: [conservatism.traditionalist, conservatism.cst, conservatism.evangelical-right, conservatism.postliberal, technology.e-acc, religious.islamism-brotherhood, conservatism.right-populism]
+          contested: [technology.longtermism, nationalism.ethnic]
+          rejects: [ecology.neo-malthusian, ecology.deep-ecology, feminism.radical]
+        presupposes: []
+        excludes: [population.question.too-many]
+        tension: [population.question.the-wrong-people]
+        tags: [natalism, family, nation]
+        analysis:
+          gains: [industrial-capital, landed-capital]
+          pays: [core-workers]
+          mechanism: >
+            Pronatalist policy secures a future labor supply and housing demand for employers and property
+            owners, and puts the unpaid work of raising it on families, above all on women; where it is joined
+            to closed borders it frames the shortage as a national rather than a class question.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Social reproduction theorists (Bhattacharya) read the birth-rate panic as capital's worry about
+            the supply of labor power; some socialists answer that public childcare and housing are a
+            legitimate left response to the same fall.
+
+      - id: population.question.the-wrong-people
+        label: "Ecofascism: the wrong people are breeding and arriving"
+        claim: The ecofascist answer holds that the land of a people is being destroyed by the births and migration of other peoples, and that borders, expulsion and racial separation are environmental policy; gunmen in Christchurch and El Paso in 2019 cited it.
+        voiced: "Protect the land by protecting the people who belong to it. Mass immigration from overpopulated countries is the destruction of our nature and our blood."
+        you: You think the environment of your homeland is being destroyed by the numbers and migration of other peoples, and that it must be defended by closing the nation to them.
+        because: >
+          As its proponents put it, every people is rooted in its own landscape and has evolved to fit it.
+          High-birth populations, they say, export their excess to the North, where each arrival multiplies
+          consumption and paves over the countryside; foreign aid only feeds more births. Liberal elites
+          will never stop this because they profit from cheap labor. Only a nation that defends its borders,
+          its numbers and its blood can defend its forests and rivers.
+        against:
+          - from: ecology.environmental-justice
+            text: >
+              Migrants from the South emit a fraction of what native-born Northerners do; their countries
+              are being burned by the North's emissions. Ecofascism blames the victims and arms the lifeboat.
+          - from: anarchism.green
+            text: >
+              Domination of nature and domination of people are one system. Every race theory has ended in
+              camps and mass murder, not in clean rivers.
+          - from: conservatism.burkean
+            text: >
+              Love of home and land does not license hatred of strangers or violence. A nation that answers
+              ecological fear with blood has abandoned the civilization it claims to defend.
+        sources:
+          - {author: Madison Grant, title: The Passing of the Great Race, year: 1916}
+          - {author: Garrett Hardin, title: "Lifeboat Ethics: The Case Against Helping the Poor", year: 1974, note: "claimed by the current; Hardin was not a fascist"}
+          - {author: Janet Biehl and Peter Staudenmaier, title: "Ecofascism: Lessons from the German Experience", year: 1995}
+        traditions:
+          defining: [fascism.ecofascism]
+          typical: [fascism.identitarian, fascism.nazism]
+          contested: [nationalism.ethnic, fascism.third-position]
+          rejects: [ecology.environmental-justice, ecology.degrowth, marxism.ecosocialism, anarchism.green, conservatism.cst, ecology.deep-ecology]
+        presupposes: [labor.division.outsiders-undercut-us]
+        excludes: [population.question.consumption-not-numbers, population.question.surplus-made-by-capital]
+        tension: [population.question.too-few-births]
+        tags: [ecofascism, migration, race]
+        analysis:
+          gains: [landed-capital, industrial-capital, petty-bourgeoisie]
+          pays: [peripheral-workers, peasantry, reserve-army]
+          mechanism: >
+            It defends the core's consumption and its claim on the periphery's resources and on atmospheric
+            space by force, closing borders against those displaced by the heating the core caused, and
+            directs the anger of core workers and small owners at migrants instead of at owners.
+          drain: sustains
+          law_of_value: none
+          disputed: >
+            Malm and the Zetkin Collective argue the far right is still mostly fossil-fuel denialist and
+            ecofascism a minority current that may grow as denial fails.
+
+      - id: population.question.plan-it
+        label: The state should plan population as part of development
+        claim: Population growth can swamp development gains, so the state should set targets and use incentives and rules to bring births down quickly.
+        voiced: "A poor country cannot feed, school and employ an extra twenty million people every year. Planning births is planning development."
+        you: You think governments in poor countries should set birth targets and use rules and incentives to meet them.
+        because: >
+          A country whose population doubles every generation must run to stand still: every new school,
+          clinic and factory is absorbed by new mouths. Planners in China in 1980 calculated that only a
+          drastic limit would let living standards rise, and the fall in births helped produce the labor
+          and savings boom that followed. Voluntary family planning alone is too slow when the cost of delay
+          is mass poverty for generations.
+        against:
+          - from: liberalism.classical
+            text: >
+              A state that decides how many children you may have owns your body. Forced abortions and
+              sterilizations in China and India's Emergency show where this ends.
+          - from: marxism.classical
+            text: >
+              Births fall by themselves when land reform, pensions and women's work arrive. Coercion treats
+              the effect as the cause and lands on the poorest families.
+        sources:
+          - {author: Susan Greenhalgh, title: "Just One Child: Science and Policy in Deng's China", year: 2008}
+          - {author: Matthew Connelly, title: "Fatal Misconception: The Struggle to Control World Population", year: 2008}
+        traditions:
+          defining: []
+          typical: [marxism.scc, nationalism.developmental-state, liberalism.technocratic, technology.technocracy]
+          contested: [ecology.neo-malthusian, marxism.ml]
+          rejects: [liberalism.classical, conservatism.cst, feminism.liberal, ecology.environmental-justice, libertarianism.minarchist]
+        presupposes: []
+        excludes: []
+        tension: [population.question.surplus-made-by-capital, population.question.development-settles-it]
+        tags: [planning, china, india]
+        analysis:
+          gains: [industrial-capital, professional-managerial]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >
+            Birth limits raised the share of working-age adults and household savings, which fed fast
+            accumulation in industry, while enforcement fell hardest on rural families, above all women,
+            through fines, quotas and coerced procedures.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Demographers dispute how much China's one-child rule added to a fall already under way in the
+            1970s; Greenhalgh traces it to cybernetic projections adapted from The Limits to Growth.
+
+      - id: population.question.development-settles-it
+        label: Development and women's choices settle it on their own
+        claim: Birth rates fall everywhere once child deaths fall, girls go to school and women control their fertility, so the population question is solving itself.
+        voiced: "The world's population will peak this century. Keep children alive, educate girls, and families choose to have fewer of them."
+        you: You think population will settle on its own as health, schooling and women's choices spread.
+        because: >
+          The average woman in the world had about five children in 1960 and has about two and a third
+          today. Bangladesh and Iran saw some of the fastest falls in history through clinics and schools,
+          not coercion. The Cairo conference of 1994 replaced targets with rights. The main driver of
+          future growth is today's large young cohorts, which no policy can undo, so the wise course is to
+          invest in health and education and let the transition complete itself.
+        against:
+          - from: ecology.neo-malthusian
+            text: >
+              Even the rosy projections add two billion people before the peak, nearly all needing land,
+              food and energy. Waiting is a choice with consequences.
+          - from: marxism.third-worldism
+            text: >
+              The schools and clinics depend on budgets that structural adjustment cut. Treating population as
+              settled lets the core forget why poverty persists.
+        sources:
+          - {author: United Nations, title: Programme of Action of the International Conference on Population and Development, year: 1994}
+          - {author: Amartya Sen, title: "Population: Delusion and Reality", year: 1994}
+          - {author: "Hans Rosling, Ola Rosling and Anna Rosling Rönnlund", title: "Factfulness: Ten Reasons We're Wrong About the World", year: 2018}
+        traditions:
+          defining: []
+          typical: [liberalism.progressive, feminism.liberal, liberalism.social, ecology.green-growth, ecology.ecomodernism, liberalism.internationalist, commonsense.live-and-let-live]
+          contested: [ecology.neo-malthusian, ecology.environmental-justice]
+          rejects: [fascism.ecofascism]
+        presupposes: []
+        excludes: []
+        tension: [population.question.plan-it]
+        tags: [demographic-transition, women]
+        analysis:
+          gains: [professional-managerial, peripheral-workers]
+          pays: []
+          mechanism: >
+            Treating fertility as a matter of services and rights channels aid into health and schooling,
+            which benefits women and the families of peripheral workers, but by framing poverty as a stage
+            already passing it leaves the property and trade relations that keep budgets thin unexamined.
+          drain: none
+          law_of_value: regulates
+
+  # ------------------------------------------------------------------
+  - id: climate.justice
+    domain: ecology
+    layer: horizon
+    question: Who owes what for climate change?
+    plain: The heating was caused by some and is suffered by others. Who should pay, and to whom?
+    short: climate justice
+    importance: 2
+    region: ecology
+    positions:
+      - id: climate.justice.climate-debt
+        label: The rich countries owe a climate debt to the South
+        claim: The rich countries used up most of the shared atmosphere and owe a debt to the South, payable in deep cuts, money, free technology and cancelled foreign debt.
+        voiced: "The North owes us. Not aid, not charity: repayment of a climate debt and an ecological debt run up over two centuries."
+        you: You think rich countries owe poorer ones a debt for using up the atmosphere, and must pay it.
+        because: >
+          The atmosphere's capacity to absorb carbon is a common resource of all humanity. The global North,
+          with under a fifth of the world's people, emitted most of the carbon that pushed it past safe
+          limits, and grew rich doing so. The South, which emitted least, suffers the floods, droughts and
+          crop losses. Fair shares mean the North pays for adaptation and loss, cancels debts owed by
+          countries it has damaged, transfers technology free of patents, and cuts its own emissions to zero
+          first. The People's Agreement of Cochabamba put this demand in 2010.
+        against:
+          - from: conservatism.national
+            text: >
+              Nobody alive today chose the coal of 1850, and the fruits of industrialization, from vaccines to
+              the internet, are shared by the whole world. Reparations are a transfer from today's workers to
+              foreign governments.
+          - from: technology.effective-altruism
+            text: >
+              Settling historical accounts matters less than getting the most good out of each dollar now.
+              Some climate transfers do a great deal of good; others are swallowed by governments.
+        sources:
+          - {author: Anil Agarwal and Sunita Narain, title: "Global Warming in an Unequal World: A Case of Environmental Colonialism", year: 1991}
+          - {author: Andrew Simms, title: "Ecological Debt: The Health of the Planet and the Wealth of Nations", year: 2005}
+          - {author: World People's Conference on Climate Change and the Rights of Mother Earth, title: "People's Agreement of Cochabamba", year: 2010}
+          - {author: Jason Hickel, title: "Quantifying national responsibility for climate breakdown: an equality-based attribution approach for carbon dioxide emissions in excess of the planetary boundary", year: 2020}
+        traditions:
+          defining: [ecology.environmental-justice, marxism.third-worldism]
+          typical: [nationalism.bolivarianism, nationalism.decolonial, marxism.ecosocialism, ecology.degrowth, religious.liberation-theology, nationalism.pan-africanism, nationalism.indigenous-sovereignty]
+          contested: [marxism.scc, nationalism.developmental-state]
+          rejects: [conservatism.national, conservatism.right-populism, libertarianism.minarchist, liberalism.chicago]
+        presupposes: [ecology.crisis-cause.core-appropriation]
+        excludes: [climate.justice.no-inherited-debt]
+        tension: [climate.justice.shared-but-differentiated, climate.justice.future-generations]
+        tags: [climate-debt, reparations, periphery]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, core-workers]
+          mechanism: >
+            Climate debt payments and debt cancellation move money and technology from core states, firms
+            and creditors to peripheral states, while patent-free technology removes the monopoly rents core
+            firms earn; core taxpayers and consumers share the cost unless it is raised from capital.
+          drain: breaks
+          law_of_value: regulates
+          disputed: >
+            Whether payment to Southern states reaches Southern workers and peasants depends on who governs
+            them: Amin's heirs back sovereign states; Indigenous and peasant movements fear the money will
+            fund comprador elites and new extraction.
+
+      - id: climate.justice.shared-but-differentiated
+        label: Everyone acts, the rich go first and help
+        claim: All countries must cut emissions under a global agreement, with rich countries cutting faster and providing climate finance to poorer ones.
+        voiced: "Common but differentiated responsibilities and respective capabilities. Everyone in the boat rows, and the strongest row hardest."
+        you: You think every country must cut emissions, with rich countries going faster and helping poorer ones pay.
+        because: >
+          No country can stop climate change alone, and most future emissions growth is in middle-income
+          countries, so a deal must include everyone. The Paris Agreement of 2015 got every nation to set
+          targets and to raise them over time; rich countries pledged one hundred billion dollars a year
+          and in 2022 agreed a fund for loss and damage. It is imperfect, but it is the only framework that
+          exists, and endless arguments about historical blame would leave the world with no deal at all.
+        against:
+          - from: ecology.environmental-justice
+            text: >
+              The hundred billion was promised in 2009 and arrived late, mostly as loans. A deal that leaves
+              the North's historical overuse unpaid and lets it buy offsets is not differentiated in anything but name.
+          - from: conservatism.national
+            text: >
+              International agreements bind our industries while others promise and build coal plants.
+              Energy policy belongs to the nation and its voters, not to conferences.
+        sources:
+          - {author: United Nations, title: United Nations Framework Convention on Climate Change, year: 1992}
+          - {author: United Nations, title: Paris Agreement, year: 2015}
+          - {author: Nicholas Stern, title: "The Economics of Climate Change: The Stern Review", year: 2006}
+        traditions:
+          defining: [ecology.green-growth, liberalism.internationalist]
+          typical: [liberalism.technocratic, liberalism.social, socdem.nordic, socdem.third-way, conservatism.christian-democracy, liberalism.progressive]
+          contested: [marxism.scc, nationalism.developmental-state, ecology.ecomodernism]
+          rejects: [conservatism.national, conservatism.right-populism, ecology.environmental-justice]
+        presupposes: []
+        excludes: [climate.justice.no-inherited-debt]
+        tension: [climate.justice.climate-debt]
+        tags: [unfccc, paris]
+        analysis:
+          gains: [finance-capital, professional-managerial, industrial-capital]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >
+            Climate finance delivered mostly as loans and private investment adds to Southern debt and opens
+            profitable projects for core banks and firms, while offsets let core emitters buy cuts in the
+            South, whose land and forests are then managed for carbon credits.
+          drain: softens
+          law_of_value: extends
+          disputed: >
+            Some Southern negotiators see the UN framework as the only arena where the South has a vote and
+            the principle of differentiation is recognized; ecosocialists see it as managing the drain.
+
+      - id: climate.justice.the-rich-and-the-firms
+        label: The rich and the fossil fuel firms pay, wherever they live
+        claim: Responsibility lies with the richest people and the fossil fuel companies, in every country, so they should pay through wealth taxes, windfall taxes and liability for damage.
+        voiced: "A hundred-odd companies, the rich few who own them, and the jets of the top one percent. Make the polluters pay, not the nurse in Leeds or the farmer in Punjab."
+        you: You think the richest people and the fossil fuel companies, wherever they are, should pay for climate change.
+        because: >
+          A small number of oil, gas, coal and cement producers, private and state-owned, account for nearly
+          two thirds of industrial emissions since 1854, and some knew the risks decades ago while funding
+          doubt. The emissions of the world's richest one percent exceed those of the poorest half. Charging
+          whole nations punishes workers in the North and lets the rich of the South escape. Tax extreme
+          wealth and windfall profits, make producers liable in court, and spend the proceeds on transition
+          and adaptation.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              Dividing the world into rich and poor individuals hides the drain between nations. The ordinary
+              Northern consumer still lives on underpriced Southern land and labor.
+          - from: liberalism.chicago
+            text: >
+              The companies sold fuel that billions of people chose to buy. Suing producers for consumers'
+              choices is a tax on energy by lawsuit.
+        sources:
+          - {author: Richard Heede, title: "Tracing anthropogenic carbon dioxide and methane emissions to fossil fuel and cement producers, 1854–2010", year: 2014, note: Climatic Change}
+          - {author: Lucas Chancel and Thomas Piketty, title: "Carbon and inequality: from Kyoto to Paris", year: 2015}
+          - {author: Naomi Oreskes and Erik M. Conway, title: Merchants of Doubt, year: 2010}
+        traditions:
+          defining: []
+          typical: [socdem.democratic-socialism, liberalism.progressive, socdem.left-populism, marxism.ecosocialism, socdem.labourism, ecology.environmental-justice, commonsense.rigged]
+          contested: [marxism.third-worldism, ecology.green-growth]
+          rejects: [liberalism.chicago, libertarianism.minarchist, conservatism.right-populism]
+        presupposes: [cs.rigged.system-rigged]
+        excludes: []
+        tension: [climate.justice.climate-debt]
+        tags: [polluter-pays, inequality]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, landed-capital]
+          mechanism: >
+            Wealth and windfall taxes and liability suits put the cost on the owners of fossil and financial
+            assets rather than on fuel buyers, protecting workers in both core and periphery from regressive
+            energy prices.
+          drain: softens
+          law_of_value: regulates
+          disputed: >
+            Hickel and Third Worldists accept the class focus but insist that most core workers fall in the
+            global top fifth of emitters; Huber replies that this splits the class that must win the transition.
+          consciousness: class-economic
+
+      - id: climate.justice.no-inherited-debt
+        label: Nobody owes for the past; each nation looks after its own
+        claim: No one alive is guilty for emissions made before the danger was known; each nation should protect its own people and keep energy affordable.
+        voiced: "My grandfather mined coal to keep the lights on. I'm not paying reparations for that to anyone."
+        you: You think nobody today owes anything for past emissions, and each country should look after its own people.
+        because: >
+          The coal and oil burned in the nineteenth and twentieth centuries built the medicines, machines
+          and knowledge the whole world now uses, and nobody then knew the long-term effects. Collective
+          guilt across generations is unjust and unworkable. Climate reparations would move money from
+          working taxpayers to foreign governments with no guarantee it would help anyone. Each nation should
+          adapt, secure its own energy, and decide its own policies.
+        against:
+          - from: ecology.environmental-justice
+            text: >
+              The benefits of those emissions are not "shared by the world"; they are concentrated in the
+              countries that burned them. Inheriting the wealth means inheriting the debt.
+          - from: conservatism.cst
+            text: >
+              The goods of creation are destined for all. A nation that has taken more than its share owes
+              restitution, as surely as a family does.
+        sources:
+          - {author: Bjørn Lomborg, title: "Cool It: The Skeptical Environmentalist's Guide to Global Warming", year: 2007}
+          - {author: Alex Epstein, title: The Moral Case for Fossil Fuels, year: 2014}
+        traditions:
+          defining: []
+          typical: [conservatism.national, conservatism.right-populism, libertarianism.minarchist, liberalism.chicago, commonsense.look-after-your-own, conservatism.paleo]
+          contested: [liberalism.classical, ecology.ecomodernism]
+          rejects: [ecology.environmental-justice, marxism.third-worldism, marxism.ecosocialism, conservatism.cst]
+        presupposes: []
+        excludes: [climate.justice.climate-debt, climate.justice.shared-but-differentiated]
+        tension: []
+        tags: [nation, fossil-fuels]
+        analysis:
+          gains: [industrial-capital, finance-capital, core-workers]
+          pays: [peripheral-workers, peasantry, reserve-army]
+          mechanism: >
+            Refusing liability keeps the cost of past and present emissions where the damage falls, in the
+            hottest and poorest regions, while core states, firms and consumers keep both the accumulated
+            wealth and access to cheap energy.
+          drain: sustains
+          law_of_value: none
+          consciousness: economic-corporate
+
+      - id: climate.justice.future-generations
+        label: The main debt is to future generations
+        claim: The greatest obligation is to the billions of people who will live in the future, so climate policy should be judged by how much it reduces the long-run risk to humanity.
+        voiced: "Future people count. If humanity survives, the vast majority of people who will ever live are yet to be born."
+        you: You think the biggest debt is owed to people not yet born, and that policy should be judged by how it protects their future.
+        because: >
+          A person born in 2200 matters as much as one born today, and there may be trillions of them. What
+          we owe is to keep their prospects open: avoid the extreme warming scenarios that could cripple
+          civilization, and fund the most cost-effective cuts and research wherever they are. Climate change
+          is serious, though it is less likely to end humanity than engineered pandemics or unaligned
+          artificial intelligence, and resources should follow expected impact, not guilt.
+        against:
+          - from: ecology.environmental-justice
+            text: >
+              The people dying from heat and floods today are not hypothetical. Weighting imagined trillions
+              against present victims lets the rich of today decide everyone's priorities.
+          - from: marxism.ecosocialism
+            text: >
+              "Humanity's future" in the abstract erases who caused the damage and who profits from it. The
+              future generations harmed most are the grandchildren of today's poor.
+        sources:
+          - {author: Derek Parfit, title: Reasons and Persons, year: 1984}
+          - {author: Toby Ord, title: "The Precipice: Existential Risk and the Future of Humanity", year: 2020}
+          - {author: William MacAskill, title: What We Owe the Future, year: 2022}
+        traditions:
+          defining: [technology.longtermism]
+          typical: [technology.effective-altruism, liberalism.utilitarian, technology.transhumanism]
+          contested: [ecology.deep-ecology, conservatism.burkean]
+          rejects: [ecology.environmental-justice, marxism.ecosocialism, technology.e-acc]
+        presupposes: []
+        excludes: []
+        tension: [climate.justice.climate-debt]
+        tags: [longtermism, future]
+        analysis:
+          gains: [professional-managerial, finance-capital]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >
+            Ranking causes by expected effect on the far future channels philanthropic and policy money to
+            research institutes and risk models run by core professionals, and away from compensation and
+            adaptation for present victims in the periphery.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Some longtermists argue climate finance for the South is cost-effective by their own measures;
+            critics (Gebru, Torres) see the weighting as a way for wealthy donors to set the agenda.
+
+      - id: climate.justice.owed-to-mother-earth
+        label: The debt is owed to Mother Earth herself
+        claim: The earth is a living being with rights of her own, and the debt is paid not only in money but by ending extraction and living in balance with her.
+        voiced: "Mother Earth is a living being. She has the right to life, to the regeneration of her cycles, to be free from contamination. Those who wound her owe her."
+        you: You think the earth itself has rights, and the debt for climate change is owed to her as well as to people.
+        because: >
+          Andean and Amazonian peoples have long understood the earth as Pachamama, a mother to be cared
+          for, not a warehouse. Ecuador's constitution of 2008 gave nature rights to exist and regenerate,
+          and Bolivia passed a law on the Rights of Mother Earth in 2010. Money paid by polluters cannot buy
+          back a glacier. The repayment is a different way of living, buen vivir or living well: enough for
+          all, in balance with the land, under the guardianship of the peoples who have protected it.
+        against:
+          - from: ecology.green-growth
+            text: >
+              Rights for rivers are poetry, not policy. Bolivia and Ecuador wrote them into law and kept
+              expanding gas, oil and mining, because their budgets depended on it.
+          - from: marxism.ml
+            text: >
+              Nature has no interests of its own to represent; people do. Speaking for "Mother Earth" can
+              mean blocking the industry a poor nation needs to escape dependency.
+        sources:
+          - {author: Republic of Ecuador, title: Constitución de la República del Ecuador, year: 2008, note: "articles 71–74, rights of nature"}
+          - {author: Plurinational State of Bolivia, title: "Ley de Derechos de la Madre Tierra (Ley 071)", year: 2010}
+          - {author: World People's Conference on Climate Change and the Rights of Mother Earth, title: Universal Declaration of the Rights of Mother Earth, year: 2010}
+        traditions:
+          defining: [nationalism.indigenous-sovereignty]
+          typical: [nationalism.decolonial, zapatismo, ecology.deep-ecology, nationalism.bolivarianism, religious.liberation-theology]
+          contested: [marxism.ecosocialism, ecology.environmental-justice, marxism.mariategui]
+          rejects: [ecology.green-growth, liberalism.chicago, ecology.ecomodernism, marxism.ml]
+        presupposes: []
+        excludes: [climate.justice.no-inherited-debt]
+        tension: [climate.justice.pay-us-to-leave-it]
+        tags: [rights-of-nature, indigenous, buen-vivir]
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: [comprador-capital, industrial-capital, finance-capital]
+          mechanism: >
+            Legal rights of nature and Indigenous guardianship give communities standing to block mines, oil
+            blocks and dams in court, raising the cost of extraction for the firms and state agencies that
+            supply raw materials to the core.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            Gudynas and Acosta note the gap between Andean rights-of-nature law and continued extractivism
+            under the same governments; supporters reply that the rights have won real court cases, such as
+            the Los Cedros forest ruling in Ecuador in 2021.
+
+      - id: climate.justice.pay-us-to-leave-it
+        label: Producer nations will keep it in the ground only if paid
+        claim: Countries that hold oil, gas and coal should not be asked to forgo their main wealth for free; consumers who burned fuel for a century must pay producers to keep it in the ground.
+        voiced: "You want our oil to stay underground for the world's sake? Then the world pays. Otherwise we drill, as you did."
+        you: You think countries with oil and gas should be paid to leave it in the ground, or else they have every right to sell it.
+        because: >
+          For Nigeria, Angola, Guyana, Venezuela or Iraq, hydrocarbons are the main source of state revenue,
+          schools and hospitals. The rich consumer countries got rich burning fuel and now ask producers in
+          the South to give up their main asset. Ecuador offered in 2007 to leave the oil under Yasuní
+          untouched if the world paid half its value; little arrived and the plan was dropped in 2013. Pay,
+          and the oil stays down; refuse, and producers have the same right to sell that Norway and Texas had.
+        against:
+          - from: nationalism.indigenous-sovereignty
+            text: >
+              The oil under Yasuní is under our territory. A state that drills unless paid is selling our land
+              twice, once to the oil company and once to the donors.
+          - from: marxism.dependency
+            text: >
+              Oil revenue has made petro-states dependent on one export, the world price and foreign
+              companies. The resource curse is dependency in another form, and leaving it intact is no development.
+        sources:
+          - {author: Alberto Acosta, title: "La maldición de la abundancia", year: 2009}
+          - {author: Terry Lynn Karl, title: "The Paradox of Plenty: Oil Booms and Petro-States", year: 1997}
+          - {author: Fernando Coronil, title: "The Magical State: Nature, Money, and Modernity in Venezuela", year: 1997}
+        traditions:
+          defining: []
+          typical: [nationalism.bolivarianism, nationalism.developmental-state, marxism.arab-socialism, nationalism.nasserism]
+          contested: [marxism.scc, marxism.dependency, nationalism.pan-africanism]
+          rejects: [nationalism.indigenous-sovereignty, ecology.deep-ecology, ecology.degrowth]
+        presupposes: [intl.sovereignty.nations-set-own-course]
+        excludes: []
+        tension: [climate.justice.owed-to-mother-earth, climate.justice.climate-debt]
+        tags: [petro-state, periphery, oil]
+        analysis:
+          gains: [comprador-capital, peripheral-workers]
+          pays: [peasantry, core-workers]
+          mechanism: >
+            Rent from oil goes first to the state and the ruling fractions who license foreign firms; where
+            the state is sovereign it funds wages and services, where it is comprador it funds elites, and in
+            both cases the communities living on the fields bear the spills and flares.
+          drain: softens
+          law_of_value: regulates
+          disputed: >
+            Third Worldists distinguish oil nationalism, which recaptured rent from core firms (Mexico 1938,
+            Iraq 1972, Venezuela), from comprador petro-states; whether a given producer is one or the other
+            is contested case by case.

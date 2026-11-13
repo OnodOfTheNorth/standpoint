@@ -1,0 +1,1111 @@
+problematics:
+  - id: education.purpose
+    domain: culture
+    layer: horizon
+    question: What is schooling for?
+    plain: When children go to school, what should school be trying to make of them, and who decides?
+    short: the purpose of schooling
+    importance: 2
+    region: education
+    positions:
+      - id: education.purpose.parental-authority
+        label: Parents decide; schools act on their behalf
+        claim: >
+          Parents are the first educators of their children and have the right to decide how they
+          are raised, including in faith and morals. Schools act on parents' behalf, and parents
+          should be free to choose, shape or leave them.
+        voiced: >
+          Parents have a prior right to choose the kind of education that shall be given to their
+          children. The child is not the creature of the state. When a school teaches my child
+          against my faith and values, it has broken its trust.
+        you: >
+          You think parents, not the state, should decide how their children are educated, and that
+          schools should answer to them.
+        because: >
+          Parents know and love their children as no official can, and bear the consequences of
+          how they turn out. Catholic teaching, Islamic tradition and the Universal Declaration of
+          Human Rights all affirm the prior right of parents. State monopoly of schooling hands the
+          shaping of every mind to whoever controls the ministry; plural schools, religious schools
+          and home education protect families and minorities from that power.
+        against:
+          - from: liberalism.egalitarian
+            text: >
+              Children are not their parents' property. A child has a right to an open future,
+              including the knowledge to choose a different life from the one her parents chose.
+          - from: liberalism.republican
+            text: >
+              A republic cannot leave the formation of its citizens to whatever each family or sect
+              prefers; common schools teach children of all backgrounds to live together.
+        sources:
+          - {author: Pius XI, title: "Divini Illius Magistri", year: 1929}
+          - {author: United Nations General Assembly, title: "Universal Declaration of Human Rights", year: 1948, note: "Article 26(3)"}
+          - {author: Milton Friedman, title: "The Role of Government in Education", year: 1955}
+        traditions:
+          defining: [conservatism.cst, conservatism.evangelical-right]
+          typical: [religious.islamism-brotherhood, libertarianism.minarchist, libertarianism.ancap, conservatism.distributism, conservatism.paleo, conservatism.right-populism]
+          contested: [conservatism.christian-democracy, religious.post-islamism]
+          rejects: [liberalism.republican, liberalism.egalitarian, marxism.ml, nationalism.kemalism]
+        presupposes: []
+        excludes: []
+        tension: [education.purpose.civic-pride, education.purpose.critical-citizens]
+        tags: []
+        analysis:
+          gains: [petty-bourgeoisie, professional-managerial, finance-capital]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Vouchers, home schooling and religious schools let families with time and money choose
+            and top up their children's schooling, and open public education budgets to private and
+            religious operators, while the common public school is left with the children of
+            parents who cannot choose.
+          drain: none
+          law_of_value: extends
+
+      - id: education.purpose.civic-pride
+        label: Schools form loyal citizens with a shared language, history and pride
+        claim: >
+          Schooling exists to form citizens of a nation: a common language, a shared history told
+          with pride, the duties of citizenship and loyalty to the country. A people that does not
+          teach its children to love it will not last.
+        voiced: >
+          We teach our children who they are: the language of our poets, the deeds of our founders,
+          the flag they will defend. A nation is a daily plebiscite, and the school is where the
+          vote is won.
+        you: >
+          You think schools should give children a shared national language, history and pride, and
+          make them loyal citizens.
+        because: >
+          Every modern nation was built in its schools: France made peasants into Frenchmen, Turkey
+          and India built new nations by schooling children in a common story. Fichte called for
+          national education after Germany's defeat by Napoleon. A shared story gives children from
+          different regions, faiths and classes a common belonging that makes solidarity possible.
+        against:
+          - from: liberalism.egalitarian
+            text: >
+              A history taught to produce pride is a history edited. Children have a right to the
+              truth about their country, including its crimes.
+          - from: nationalism.indigenous-sovereignty
+            text: >
+              The national school was the instrument that beat Indigenous children for speaking
+              their languages; residential schools in Canada and Australia were "civic education."
+        sources:
+          - {author: Johann Gottlieb Fichte, title: "Addresses to the German Nation", year: 1808}
+          - {author: Jean-Jacques Rousseau, title: "Considerations on the Government of Poland", year: 1772}
+          - {author: Ernest Renan, title: "What Is a Nation?", year: 1882}
+        traditions:
+          defining: [nationalism.civic, liberalism.republican]
+          typical: [conservatism.national, nationalism.kemalism, conservatism.gaullism, nationalism.hindutva, nationalism.developmental-state, conservatism.right-populism]
+          contested: [marxism.scc, liberalism.social]
+          rejects: [nationalism.indigenous-sovereignty, anarchism.communist, liberalism.progressive]
+        presupposes: []
+        excludes: [education.purpose.deschooling]
+        tension: [education.purpose.critical-citizens, education.purpose.parental-authority]
+        tags: []
+        analysis:
+          gains: [industrial-capital, professional-managerial, petty-bourgeoisie]
+          pays: [peasantry]
+          mechanism: >
+            A national curriculum in a common language turns peasants and regional minorities into
+            a workforce employers anywhere in the country can use and into conscripts, while
+            minority languages and local knowledge lose value; teachers and civil servants of the
+            dominant language gain posts.
+          drain: none
+          law_of_value: none
+
+      - id: education.purpose.critical-citizens
+        label: Schools teach children to think for themselves and question authority
+        claim: >
+          School should teach children to think independently: to weigh evidence, question
+          authority, understand different points of view and take part in public life as free and
+          equal citizens.
+        voiced: >
+          Education is not preparation for life; education is life itself. We do not want children
+          to memorize answers but to ask questions. Teach them how to think, not what to think.
+        you: >
+          You think schools should teach children to think for themselves, weigh evidence and
+          question authority, so they can take part in public life.
+        because: >
+          Dewey argued that a society governed by its citizens needs people trained to inquire and
+          cooperate, not to obey. A citizen who can tell evidence from propaganda protects
+          constitutional government better than one taught loyalty. Countries that invest in
+          independent thinking, like Finland, also do well on every measure of learning.
+        against:
+          - from: conservatism.cst
+            text: >
+              Teaching children to question everything before they know anything teaches them to
+              believe the last voice they heard. "Critical thinking" usually means adopting the
+              teachers' opinions.
+          - from: marxism.classical
+            text: >
+              Critical thought in a school that sorts children for the labor market by exams is a
+              decoration. Who gets the critical schooling and who gets the vocational track follows
+              class.
+        sources:
+          - {author: John Dewey, title: "Democracy and Education", year: 1916}
+          - {author: Martha C. Nussbaum, title: "Not for Profit: Why Democracy Needs the Humanities", year: 2010}
+        traditions:
+          defining: [liberalism.progressive, liberalism.egalitarian]
+          typical: [liberalism.social, socdem.nordic, socdem.democratic-socialism, feminism.liberal, liberalism.republican]
+          contested: [marxism.western, conservatism.burkean]
+          rejects: [conservatism.integralism, conservatism.right-populism, religious.islamism-khomeinist]
+        presupposes: []
+        excludes: []
+        tension: [education.purpose.parental-authority, education.purpose.civic-pride]
+        tags: []
+        analysis:
+          gains: [professional-managerial, core-workers]
+          pays: []
+          mechanism: >
+            Public schooling built around inquiry and discussion rewards the skills and habits that
+            professional families already pass on at home, so their children gain most, while it
+            also gives working-class children tools to question employers and officials.
+          drain: none
+          law_of_value: none
+
+      - id: education.purpose.human-capital
+        label: Schools build the skills people need for jobs and the economy
+        claim: >
+          Schooling is an investment: it gives people the skills that raise their earnings and the
+          country's productivity. Schools should be judged by what their students learn and earn,
+          and run with that aim.
+        voiced: >
+          Education is the best anti-poverty program ever invented. Reading, maths, science and
+          coding: give every child the skills the economy demands and you give them a future and
+          the nation a competitive edge.
+        you: >
+          You think the main purpose of school is to give people skills for good jobs and to make the
+          economy more productive.
+        because: >
+          Becker showed that schooling raises lifetime earnings much as an investment yields a
+          return. East Asian economies grew rich by investing in mass schooling and technical
+          training. Measured skills, not years in a classroom, predict a country's growth; holding
+          schools to account for results protects children from schools that fail them.
+        against:
+          - from: marxism.classical
+            text: >
+              "Human capital" makes the worker a piece of capital. Schools then teach punctuality,
+              obedience and ranking, the habits employers want, as Bowles and Gintis showed.
+          - from: conservatism.burkean
+            text: >
+              A school that teaches only what pays forgets that a person is more than a worker.
+              Literature, history and faith are not investments; they are a civilization's memory.
+        sources:
+          - {author: Gary S. Becker, title: "Human Capital", year: 1964}
+          - {author: Theodore W. Schultz, title: "Investment in Human Capital", year: 1961}
+        traditions:
+          defining: [liberalism.chicago, liberalism.technocratic]
+          typical: [socdem.third-way, nationalism.developmental-state, liberalism.utilitarian, technology.technocracy, marxism.scc]
+          contested: [liberalism.classical, socdem.nordic]
+          rejects: [marxism.classical, anarchism.communist, conservatism.traditionalist]
+        presupposes: []
+        excludes: [education.purpose.deschooling]
+        tension: [education.purpose.critical-citizens]
+        tags: []
+        analysis:
+          gains: [industrial-capital, finance-capital]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Public funds train workers in the skills employers need, transferring training costs
+            from firms to taxpayers and families; student debt finances the rest, and an expanded
+            supply of qualified workers holds down the premium paid for skills.
+          drain: none
+          law_of_value: extends
+
+      - id: education.purpose.conscientization
+        label: Education of the oppressed to read the world and change it
+        claim: >
+          Education should help the oppressed understand the causes of their oppression and act to
+          change them. Teachers and learners study real problems of their own lives together, as a
+          practice of liberation, not by filling empty minds.
+        voiced: >
+          Reading the word is reading the world. Banking education deposits knowledge in passive
+          minds; problem-posing education makes people subjects of their own history. Nobody
+          educates anybody; people educate each other, mediated by the world.
+        you: >
+          You think education should help oppressed people understand why they are poor and
+          powerless and organize to change it.
+        because: >
+          Freire taught Brazilian peasants to read in weeks by building lessons from the words of
+          their own lives: land, wage, hunger. Cuba's 1961 literacy campaign and Nicaragua's in 1980
+          sent young volunteers into the countryside and nearly ended illiteracy. Learning that
+          starts from people's real conditions is learned faster and leads to action.
+        against:
+          - from: liberalism.egalitarian
+            text: >
+              A teacher who decides what the oppressed must be conscious of is indoctrinating with
+              good intentions. Children need knowledge and skills, then freedom to draw conclusions.
+          - from: conservatism.right-populism
+            text: >
+              This is politics in the classroom paid for by taxpayers, turning children against their
+              parents and their country.
+        sources:
+          - {author: Paulo Freire, title: "Pedagogy of the Oppressed", year: 1968}
+          - {author: bell hooks, title: "Teaching to Transgress", year: 1994}
+        traditions:
+          defining: [religious.liberation-theology]
+          typical: [marxism.gramscian, feminism.black, zapatismo, nationalism.decolonial, marxism.guevarism, anarchism.communist]
+          contested: [marxism.ml]
+          rejects: [conservatism.right-populism, conservatism.evangelical-right, liberalism.chicago]
+        presupposes: []
+        excludes: []
+        tension: [education.purpose.civic-pride]
+        tags: [global-south]
+        analysis:
+          gains: [peasantry, peripheral-workers, reserve-army]
+          pays: [landed-capital, comprador-capital]
+          mechanism: >
+            Literacy tied to understanding land, wages and debt equips peasants and workers to
+            organize, bargain and read contracts, weakening landlords and lenders who relied on
+            their illiteracy.
+          drain: reduces
+          law_of_value: none
+          consciousness: hegemonic
+
+      - id: education.purpose.work-and-study
+        label: Unite study with productive work; end the divide of head and hand
+        claim: >
+          Schooling should join study with productive work, so that every child learns both to think
+          and to make, and the division between those who work with their minds and those who work
+          with their hands disappears.
+        voiced: >
+          Education for self-reliance. Our schools must not produce an elite that despises the
+          farmer; every school a farm and a workshop, every pupil a producer. Combine education with
+          productive labor.
+        you: >
+          You think schools should combine study with productive work so no one grows up thinking
+          manual work is beneath them.
+        because: >
+          Marx saw the union of education and productive labor as the way to produce whole human
+          beings, not one-sided specialists. Nyerere's Education for Self-Reliance argued that
+          colonial schooling trained a small elite to leave the village and serve the state; schools
+          should instead serve and sustain the rural majority. Cuba's schools in the countryside and
+          Makarenko's colonies put the idea into practice.
+        against:
+          - from: liberalism.egalitarian
+            text: >
+              Children's labor in school farms is still labor; in China's Cultural Revolution
+              "sending down" students ended their schooling and wasted a generation.
+          - from: liberalism.chicago
+            text: >
+              Specialization is the source of productivity. Asking every child to farm and every
+              farmer to study philosophy makes everyone poorer.
+        sources:
+          - {author: Julius K. Nyerere, title: "Education for Self-Reliance", year: 1967}
+          - {author: Karl Marx, title: "Capital, Volume I", year: 1867}
+          - {author: Samuel Bowles and Herbert Gintis, title: "Schooling in Capitalist America", year: 1976}
+        traditions:
+          defining: [marxism.african-socialism, marxism.ml]
+          typical: [marxism.maoism, marxism.leninism, nationalism.gandhian, marxism.guevarism, marxism.juche]
+          contested: [marxism.scc]
+          rejects: [liberalism.chicago, liberalism.technocratic, conservatism.traditionalist]
+        presupposes: [property.private.personal-vs-productive]
+        excludes: [education.purpose.human-capital]
+        tension: []
+        tags: [global-south]
+        analysis:
+          gains: [peasantry, core-workers, peripheral-workers]
+          pays: [professional-managerial]
+          mechanism: >
+            Ending the separation of mental and manual labor in schooling erodes the credential
+            monopoly through which professional and managerial strata claim higher pay and command,
+            and keeps educated youth tied to rural production rather than migrating out.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            Some Marxists judge the Cultural Revolution's version a disaster for science and skills;
+            Maoists defend it as the only serious attempt to end the mental-manual divide.
+          consciousness: hegemonic
+
+      - id: education.purpose.deschooling
+        label: Free children from compulsory school; learning should be free
+        claim: >
+          Compulsory schooling teaches obedience, ranks children and confuses being taught with
+          learning. Learning should be free, chosen and self-directed, in communities and workshops
+          rather than in schools run by the state.
+        voiced: >
+          School is the advertising agency which makes you believe that you need the society as it
+          is. The child learns best when free. Abolish compulsion and grades, and let the young
+          learn by doing, from people who know things, because they want to.
+        you: >
+          You think compulsory schooling teaches obedience more than learning, and that education
+          should be free and chosen by the learner.
+        because: >
+          Ferrer's Modern School in Barcelona taught without punishment, grades or church, until
+          the Spanish state executed him in 1909. Summerhill showed children who chose their own
+          lessons grew into capable adults. Illich argued that schools create a monopoly on
+          learning that makes people dependent on certificates; real learning happens through
+          practice and free association.
+        against:
+          - from: liberalism.republican
+            text: >
+              Without compulsory schooling, children of poor and patriarchal families end up working,
+              married or illiterate. Compulsion is what gives the child a right against her family.
+          - from: marxism.ml
+            text: >
+              Mass literacy and scientific training were won through state schools. A child of a
+              poor village gains nothing from the freedom not to learn.
+        sources:
+          - {author: Ivan Illich, title: "Deschooling Society", year: 1971}
+          - {author: Francisco Ferrer, title: "The Origin and Ideals of the Modern School", year: 1913}
+          - {author: A. S. Neill, title: "Summerhill: A Radical Approach to Child Rearing", year: 1960}
+        traditions:
+          defining: [anarchism.communist, anarchism.individualist]
+          typical: [anarchism.syndicalist, anarchism.green, libertarianism.ancap, anarchism.primitivist]
+          contested: [libertarianism.minarchist]
+          rejects: [liberalism.republican, marxism.ml, nationalism.civic, liberalism.technocratic]
+        presupposes: []
+        excludes: [education.purpose.civic-pride, education.purpose.human-capital]
+        tension: []
+        tags: []
+        analysis:
+          gains: [petty-bourgeoisie, professional-managerial]
+          pays: [reserve-army]
+          mechanism: >
+            Ending compulsory schooling removes the credential system that sorts workers, but
+            without public provision it leaves learning to families with time, books and networks,
+            so educated households gain and poor children lose the one institution guaranteed to
+            them.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Anarchists hold that free schools must be collective and public, not private; critics
+            note most actual unschooling is done by well-off families.
+
+  - id: care.work
+    domain: culture
+    layer: analysis
+    question: Who does the work of care, and should it be paid?
+    plain: Someone has to raise the children, nurse the sick and look after the old. Who does it, and should it be paid?
+    short: care work
+    importance: 2
+    region: gender
+    positions:
+      - id: care.work.family-vocation
+        label: Care belongs to the family; support it with a family wage
+        claim: >
+          Caring for children, the sick and the old is the family's work and a calling of love,
+          above all for mothers. It should not be turned into a paid job; instead wages and
+          policy should let one parent stay home to do it.
+        voiced: >
+          The work of a mother in the home is work of the highest dignity, and society should
+          honor it with a just family wage. A child needs its mother, not a daycare center; the
+          old need their children, not a home run for profit.
+        you: >
+          You think care is the family's work, done out of love, and that wages and policy should let
+          a parent stay home to do it.
+        because: >
+          Love cannot be bought; care done for pay becomes a job done by the hour. Catholic social
+          teaching has long demanded a family wage so that mothers need not be forced into paid
+          work, and John Paul II called for society to value the mother's work at home. Family care
+          keeps children rooted and the old honored, and keeps the market out of the most human
+          relations.
+        against:
+          - from: feminism.materialist
+            text: >
+              "Love" is the name for unpaid labor. Calling care a vocation leaves women financially
+              dependent on husbands and without pensions, and the family wage was always a wage
+              paid to men.
+          - from: liberalism.classical
+            text: >
+              Most families cannot live on one wage, and many women want careers. Policy should not
+              decide which parent stays home.
+        sources:
+          - {author: Leo XIII, title: "Rerum Novarum", year: 1891}
+          - {author: John Paul II, title: "Laborem Exercens", year: 1981}
+        traditions:
+          defining: [conservatism.cst]
+          typical: [conservatism.traditionalist, conservatism.evangelical-right, conservatism.distributism, religious.islamism-brotherhood, conservatism.national, conservatism.postliberal]
+          contested: [conservatism.christian-democracy]
+          rejects: [feminism.liberal, feminism.materialist, marxism.social-reproduction, liberalism.chicago]
+        presupposes: []
+        excludes: [care.work.market-service]
+        tension: [care.work.wages-for-housework]
+        tags: []
+        analysis:
+          gains: [industrial-capital, petty-bourgeoisie]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            Assigning care to the household as unpaid love means employers and the state do not pay
+            for raising and maintaining the workforce; the cost falls on women's unpaid hours and lost
+            earnings, while a family wage, where won, raises male wages at the expense of profits.
+          drain: none
+          law_of_value: suspends
+          disputed: >
+            Some socialists note that the family-wage demand was a working-class gain against
+            capital; feminists note it entrenched women's dependency.
+
+      - id: care.work.market-service
+        label: Care is a service like others; buy it and free women to work
+        claim: >
+          Care is work like any other and can be bought: nannies, daycare, nursing homes, cleaners.
+          Families should be free to buy it so that both parents can pursue careers, and the market
+          will supply it efficiently.
+        voiced: >
+          Lean in. Outsource what you can, from the cleaning to the childcare, and invest your time
+          where it earns most. Every woman who stays out of work because care is unaffordable is
+          talent wasted.
+        you: >
+          You think care can be bought like any other service, so both parents can work, and that
+          markets supply it best.
+        because: >
+          Becker showed households gain from specializing and trading; once women earn as much as
+          men, buying care makes sense for everyone. Paid care creates jobs, and competition among
+          providers raises quality and lowers prices. Women's entry into paid work has been the
+          biggest driver of their independence in the last century.
+        against:
+          - from: marxism.social-reproduction
+            text: >
+              The care professional women buy is done by poorer women, often migrants, paid little and
+              without rights. One woman's liberation is another's double shift.
+          - from: conservatism.cst
+            text: >
+              A child is not a client. Turning care into a commodity puts the most vulnerable in the
+              hands of whoever bids lowest.
+        sources:
+          - {author: Gary S. Becker, title: "A Treatise on the Family", year: 1981}
+          - {author: Sheryl Sandberg, title: "Lean In: Women, Work, and the Will to Lead", year: 2013}
+        traditions:
+          defining: [feminism.liberal]
+          typical: [liberalism.chicago, socdem.third-way, liberalism.classical, libertarianism.minarchist, liberalism.technocratic]
+          contested: [socdem.nordic]
+          rejects: [conservatism.cst, marxism.social-reproduction, feminism.materialist, marxism.autonomism]
+        presupposes: []
+        excludes: [care.work.family-vocation]
+        tension: [care.work.care-drain]
+        tags: []
+        analysis:
+          gains: [professional-managerial, finance-capital]
+          pays: [peripheral-workers, reserve-army]
+          mechanism: >
+            Buying care lets professional households keep two salaries by employing low-paid
+            domestic and care workers, many migrants from the periphery; private equity owners of
+            care homes and childcare chains draw profits from public subsidies and low wages.
+          drain: sustains
+          law_of_value: extends
+
+      - id: care.work.wages-for-housework
+        label: Housework produces the workforce; demand wages for it
+        claim: >
+          Housework and care produce the most valuable thing capitalism uses: workers. That unpaid
+          work is the hidden foundation of profit, and women should demand wages for it, as a lever
+          to refuse it and expose it.
+        voiced: >
+          They say it is love. We say it is unwaged work. Wages for housework, not because we want
+          to be housewives forever, but because the wage is the power to refuse. Every miscarriage
+          is a work accident.
+        you: >
+          You think unpaid housework and care create the workers capitalism depends on, and that
+          demanding wages for it exposes and challenges that.
+        because: >
+          Dalla Costa and James argued that the home is a factory where labor power is produced,
+          fed, cleaned and comforted each day for free. Federici showed that capitalism from its
+          beginnings in the witch hunts enclosed women's bodies to secure this unpaid labor.
+          Demanding a wage makes visible that the whole economy rests on it and gives women
+          bargaining power within and against it.
+        against:
+          - from: marxism.social-reproduction
+            text: >
+              A wage for housework would tie women further to the home and turn care into one more
+              commodity. The aim is to socialize care, not to put a price on it.
+          - from: conservatism.cst
+            text: >
+              Turning a mother's love into a wage claim against the state makes the family a branch
+              of the welfare office.
+        sources:
+          - {author: Mariarosa Dalla Costa and Selma James, title: "The Power of Women and the Subversion of the Community", year: 1972}
+          - {author: Silvia Federici, title: "Wages Against Housework", year: 1975}
+          - {author: Silvia Federici, title: "Caliban and the Witch", year: 2004}
+        traditions:
+          defining: [marxism.autonomism]
+          typical: [feminism.materialist, anarchism.feminist, feminism.decolonial]
+          contested: [marxism.social-reproduction, feminism.radical]
+          rejects: [conservatism.cst, liberalism.chicago, marxism.ml]
+        presupposes: []
+        excludes: []
+        tension: [care.work.socialize, care.work.family-vocation]
+        tags: []
+        analysis:
+          gains: [reserve-army, core-workers, peripheral-workers]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            A wage for care paid by the state from taxes on profits would transfer part of the cost
+            of producing the workforce from women's unpaid hours to capital, and give carers income
+            independent of husbands and employers.
+          drain: none
+          law_of_value: regulates
+          consciousness: class-economic
+
+      - id: care.work.socialize
+        label: Make care a public service, well paid and shared by all
+        claim: >
+          Care should be a public service: free childcare, elder care and health care, staffed by
+          well-paid unionized workers and paid for by taxing wealth and profits, with paid leave so
+          that men and women share what remains at home.
+        voiced: >
+          Care is infrastructure. Free childcare from the first year, public elder care, paid
+          parental leave for both parents, and decent wages for every care worker. Society, not
+          women alone, must carry the work of keeping people alive.
+        you: >
+          You think care should be a public service, free to use and well paid for those who do it,
+          funded by taxing wealth and profits.
+        because: >
+          Capitalism depends on care work it does not pay for, and squeezes it whenever profits are
+          under pressure, which Fraser calls the crisis of care. The Nordic countries show that
+          public childcare and elder care let women work, cut child poverty and keep birth rates
+          higher. Socialist states from the USSR to Cuba built nurseries and canteens on the same
+          principle.
+        against:
+          - from: conservatism.cst
+            text: >
+              Public nurseries from the first year hand children to institutions when they most need
+              their parents. The state cannot love.
+          - from: liberalism.classical
+            text: >
+              The taxes required are enormous, and public monopolies in care become rigid, with
+              waiting lists and no choice.
+        sources:
+          - {author: Nancy Fraser, title: "Contradictions of Capital and Care", year: 2016}
+          - {author: Tithi Bhattacharya, title: "Social Reproduction Theory: Remapping Class, Recentering Oppression", year: 2017, note: "editor"}
+          - {author: Alexandra Kollontai, title: "Communism and the Family", year: 1920}
+        traditions:
+          defining: [marxism.social-reproduction, socdem.nordic]
+          typical: [feminism.materialist, socdem.democratic-socialism, marxism.leninism, marxism.ml, liberalism.egalitarian, socdem.labourism]
+          contested: [marxism.autonomism]
+          rejects: [conservatism.cst, libertarianism.minarchist, liberalism.chicago]
+        presupposes: []
+        excludes: [care.work.family-vocation]
+        tension: [care.work.wages-for-housework]
+        tags: []
+        analysis:
+          gains: [core-workers, reserve-army, professional-managerial]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Public provision financed by taxes on capital moves the cost of care from women's unpaid
+            time and private fees to the public budget, and unionized public employment raises the
+            wages of care workers.
+          drain: none
+          law_of_value: suspends
+          disputed: >
+            Third-Worldist critics note Nordic care systems also employ migrant and low-paid workers
+            and rest on national wealth partly drawn from the periphery.
+          consciousness: hegemonic
+
+      - id: care.work.care-drain
+        label: Care is drained from poor countries to rich households
+        claim: >
+          Care work flows from the South to the North: women from the Philippines, Indonesia,
+          Ethiopia or Peru care for children and the old in rich households while their own
+          children are cared for by poorer relatives at home. Care workers need full rights, and
+          the drain must be reversed.
+        voiced: >
+          We raise your children while ours grow up without us. Domestic work is work: we demand
+          contracts, days off, the right to change employer and the right to bring our families.
+          Their comfort is paid for by our absence.
+        you: >
+          You think rich countries draw care workers from poor ones, leaving their own families
+          without care, and that these workers need full rights.
+        because: >
+          Millions of domestic and care workers from the periphery work in the Gulf, Europe, East
+          Asia and North America, often under sponsorship systems like the Gulf's kafala that tie
+          them to employers. Hochschild called this a global care chain; Parreñas documented
+          Filipina workers whose own children were raised by grandmothers. The ILO's Domestic
+          Workers Convention of 2011 was won by their own organizing.
+        against:
+          - from: liberalism.classical
+            text: >
+              Migrant care workers send home remittances that pay for houses and schooling and exceed
+              foreign aid. Their choice to migrate is a rational one; restricting it harms them.
+          - from: conservatism.national
+            text: >
+              The answer is not more rights for imported carers but policies that let our own
+              families care for their own.
+        sources:
+          - {author: Arlie Russell Hochschild, title: "Global Care Chains and Emotional Surplus Value", year: 2000}
+          - {author: Rhacel Salazar Parreñas, title: "Servants of Globalization: Women, Migration, and Domestic Work", year: 2001}
+          - {author: International Labour Organization, title: "Domestic Workers Convention (C189)", year: 2011}
+        traditions:
+          defining: [feminism.decolonial]
+          typical: [marxism.social-reproduction, marxism.third-worldism, marxism.dependency, feminism.black, feminism.materialist]
+          contested: [liberalism.progressive]
+          rejects: [liberalism.chicago, conservatism.national]
+        presupposes: []
+        excludes: []
+        tension: [care.work.market-service]
+        tags: [global-south]
+        analysis:
+          gains: [peripheral-workers]
+          pays: [professional-managerial, finance-capital]
+          mechanism: >
+            Rights to contracts, minimum wages and free movement for migrant care workers raise the
+            cost of the care that professional households in the core and the Gulf buy cheaply, and
+            reduce the value transferred through underpaid care from periphery to core.
+          drain: reduces
+          law_of_value: regulates
+
+      - id: care.work.unconditional-income
+        label: An unconditional income that lets everyone afford to care
+        claim: >
+          Pay everyone an unconditional basic income. Those who care for children, the sick and the
+          old would then have an income of their own without needing a wage or a husband, and care
+          would be valued without being turned into a job.
+        voiced: >
+          Real freedom for all. A basic income recognizes all the work the market does not pay: the
+          caring, the volunteering, the raising of children. Give people the means to live and they
+          will care for each other.
+        you: >
+          You think a basic income paid to everyone would let people care for others without
+          depending on a wage or a partner.
+        because: >
+          Van Parijs argued that a basic income gives each person the real freedom to choose how to
+          live, including to care. It recognizes unpaid work without bureaucrats judging whose care
+          counts. Unlike a wage for housework it is not tied to a role and so does not fix women
+          in the home; unlike public services it leaves the choice to families.
+        against:
+          - from: marxism.social-reproduction
+            text: >
+              A basic income set low enough to be affordable keeps women at home doing care with a
+              small allowance, while public services are cut to pay for it.
+          - from: conservatism.fusionism
+            text: >
+              Paying people unconditionally pays them not to work, and the cost would require taxes
+              that crush the economy that funds it.
+        sources:
+          - {author: Philippe Van Parijs, title: "Real Freedom for All", year: 1995}
+          - {author: Kathi Weeks, title: "The Problem with Work", year: 2011}
+        traditions:
+          defining: [libertarianism.left]
+          typical: [liberalism.egalitarian, technology.l-acc, marxism.autonomism, ecology.degrowth, technology.e-acc]
+          contested: [socdem.nordic, libertarianism.minarchist]
+          rejects: [marxism.ml, conservatism.fusionism, conservatism.cst]
+        presupposes: []
+        excludes: []
+        tension: [care.work.socialize]
+        tags: []
+        analysis:
+          gains: [reserve-army, core-workers]
+          pays: [finance-capital]
+          mechanism: >
+            A universal income gives carers and the unemployed money without a wage relation, which
+            raises their ability to refuse bad jobs; if paid for by cutting public services it shifts
+            care back into households and the market.
+          drain: none
+          law_of_value: regulates
+          disputed: >
+            Some Marxists see a basic income as a subsidy to low-wage employers; others as a step
+            toward decommodifying labor.
+
+      - id: care.work.community-reciprocity
+        label: Care belongs to communities of mutual aid, outside market and state
+        claim: >
+          Care is best organized by communities through mutual aid and reciprocity: neighbors, kin,
+          cooperatives and village networks taking turns, neither paid as a commodity nor run by the
+          state.
+        voiced: >
+          I am because we are. In our communities nobody is paid to look after a neighbor's child;
+          we do it because tomorrow she will do it for us. Mutual aid, not charity and not a
+          ministry.
+        you: >
+          You think care should be shared among neighbors and communities through mutual aid, not
+          bought on the market or handed to the state.
+        because: >
+          Kropotkin showed that mutual aid is as much a law of life as competition. In much of the
+          world, from Andean ayni to African extended families, care has long been organized by
+          reciprocity among households. Mutual aid networks during crises, from earthquakes in
+          Mexico to the Black Panthers' breakfast programs, built solidarity that neither market nor
+          state provided.
+        against:
+          - from: feminism.liberal
+            text: >
+              "Community" care in practice means the women of the community. Reciprocity without
+              pay or rights keeps the burden where it has always been.
+          - from: socdem.nordic
+            text: >
+              Mutual aid works for small groups and emergencies; it cannot staff a dementia ward or
+              guarantee care to the isolated. Universal rights need public institutions.
+        sources:
+          - {author: Peter Kropotkin, title: "Mutual Aid: A Factor of Evolution", year: 1902}
+          - {author: Julius K. Nyerere, title: "Ujamaa: The Basis of African Socialism", year: 1962}
+        traditions:
+          defining: [anarchism.communist]
+          typical: [anarchism.feminist, nationalism.indigenous-sovereignty, marxism.african-socialism, zapatismo, anarchism.confederalism, conservatism.distributism, communitarianism]
+          contested: [religious.liberation-theology]
+          rejects: [liberalism.chicago, feminism.liberal]
+        presupposes: []
+        excludes: [care.work.market-service]
+        tension: [care.work.socialize]
+        tags: [global-south]
+        analysis:
+          gains: [peasantry, reserve-army]
+          pays: []
+          mechanism: >
+            Community reciprocity provides care outside both wage and market among the poor, which
+            protects them where states provide nothing; it also lets states and employers avoid
+            paying for care, which falls on the unpaid hours of community members, mostly women.
+          drain: none
+          law_of_value: suspends
+
+  - id: culture.war
+    domain: culture
+    layer: analysis
+    question: Are the culture wars real conflicts or a diversion?
+    plain: Are fights over gender, religion, race and national identity real conflicts, or a distraction from something else?
+    short: the culture wars
+    importance: 2
+    region: culture
+    positions:
+      - id: culture.war.civilizational-struggle
+        label: A real war over the moral foundations of the nation
+        claim: >
+          The culture war is real: a struggle between those who hold to inherited faith, family and
+          nation and those who would remake them. It is the most important fight of the age,
+          because it decides what kind of people the next generation will be.
+        voiced: >
+          There is a religious war going on in this country for the soul of America. It is a
+          cultural war, as critical to the kind of nation we will one day be as was the Cold War
+          itself. They came for the schools, then the churches, then the family.
+        you: >
+          You think the culture war is a real fight over faith, family and nation, and the most
+          important one of our time.
+        because: >
+          Hunter showed that the dividing line in modern societies runs between those with an
+          orthodox moral authority and those with a progressive one, cutting across old churches and
+          parties. Laws on marriage, gender, abortion and what children learn reshape a people over
+          a generation. From Brazil's fights over "gender ideology" to India and Hungary, the same
+          conflict appears wherever global progressive elites meet traditional societies.
+        against:
+          - from: socdem.left-populism
+            text: >
+              The people who declare the culture war run on the money of those cutting workers'
+              pensions. Vote for the defense of the family, get tax cuts for the rich.
+          - from: liberalism.progressive
+            text: >
+              The "war" is waged by one side against the rights of women, gay people and minorities.
+              Calling their existence an attack on you is not a culture war; it is a refusal to share
+              the country.
+        sources:
+          - {author: Patrick J. Buchanan, title: "Culture War Speech, Republican National Convention", year: 1992}
+          - {author: James Davison Hunter, title: "Culture Wars: The Struggle to Define America", year: 1991}
+        traditions:
+          defining: [conservatism.paleo, conservatism.evangelical-right]
+          typical: [conservatism.right-populism, conservatism.national, conservatism.postliberal, nationalism.hindutva, nationalism.eurasianism, fascism.identitarian, conservatism.integralism]
+          contested: [conservatism.fusionism, conservatism.cst]
+          rejects: [liberalism.progressive, socdem.left-populism, marxism.classical]
+        presupposes: []
+        excludes: [culture.war.manufactured-diversion, culture.war.media-spectacle]
+        tension: []
+        tags: [culture-war]
+        analysis:
+          gains: [finance-capital, industrial-capital, petty-bourgeoisie]
+          pays: [core-workers, reserve-army]
+          mechanism: >
+            Defining politics around moral and national identity draws working-class voters behind
+            parties whose economic program cuts taxes on capital and weakens unions, and directs
+            anger at teachers, minorities and migrants instead of employers.
+          drain: none
+          law_of_value: extends
+
+      - id: culture.war.rights-against-reaction
+        label: A real struggle for the rights of the oppressed against backlash
+        claim: >
+          The so-called culture war is a real struggle for the dignity and rights of women, sexual
+          minorities and racial minorities against those who want to keep them subordinate. These
+          rights are not a distraction; they are what equality means.
+        voiced: >
+          Our lives are not a distraction. Being able to marry, walk home safely, see a doctor, be
+          named correctly: these are not culture wars, they are the conditions of a decent life.
+          The backlash shows how much it matters.
+        you: >
+          You think the culture wars are a real fight for the rights of women and minorities against
+          those who want to hold them back.
+        because: >
+          Honneth argued that struggles for recognition are a basic form of social conflict: being
+          denied respect injures people as surely as poverty. The rights at stake, to marry, to
+          control one's body, to be free of violence, change concrete lives. Movements for these
+          rights have often been led by working-class people, and the backlash against them has
+          been organized and well funded.
+        against:
+          - from: socdem.left-populism
+            text: >
+              Fighting on symbols and words while wages fall lets the right present the left as a
+              party of graduates who despise ordinary people.
+          - from: conservatism.paleo
+            text: >
+              "Rights" here means the power to impose a new morality on everyone else, through
+              schools, courts and corporations. The aggressor is the side that changed the rules.
+        sources:
+          - {author: Axel Honneth, title: "The Struggle for Recognition", year: 1992}
+          - {author: Susan Faludi, title: "Backlash: The Undeclared War Against American Women", year: 1991}
+        traditions:
+          defining: [liberalism.progressive]
+          typical: [feminism.liberal, feminism.queer, feminism.black, liberalism.social, feminism.radical]
+          contested: [socdem.democratic-socialism, marxism.western]
+          rejects: [conservatism.paleo, conservatism.evangelical-right, conservatism.right-populism]
+        presupposes: []
+        excludes: [culture.war.manufactured-diversion]
+        tension: [culture.war.material-roots]
+        tags: [debate.fraser-honneth, culture-war]
+        analysis:
+          gains: [professional-managerial, core-workers, reserve-army]
+          pays: []
+          mechanism: >
+            Legal recognition and anti-discrimination rights reach women and minorities across
+            classes; framed apart from economic demands they are won most fully by those with
+            resources to use courts, workplaces and markets that have opened to them.
+          drain: none
+          law_of_value: none
+
+      - id: culture.war.manufactured-diversion
+        label: Elites stoke culture wars to divide workers and hide the economy
+        claim: >
+          The culture wars are kept alive by the wealthy and their politicians to divide working
+          people and draw attention away from wages, rents and taxes. Both parties prefer fighting
+          over bathrooms to fighting over who owns what.
+        voiced: >
+          Vote to stop abortion; receive a rollback in capital gains taxes. While we fight over
+          flags and pronouns, they are picking our pockets. Divide and rule is the oldest trick in
+          the book.
+        you: >
+          You think the culture wars are stirred up by the rich and their politicians to divide
+          working people and distract them from economic issues.
+        because: >
+          Frank showed how Kansas voters were mobilized on abortion and guns to support policies
+          that destroyed their towns' economies. Media companies profit from outrage and parties
+          raise money from it. When culture-war politicians take office, the reliable outcome is tax
+          cuts and deregulation, not a restored moral order.
+        against:
+          - from: conservatism.paleo
+            text: >
+              Treating people's faith and love of country as false consciousness is exactly the
+              contempt that made them leave the left. People vote on values because values matter.
+          - from: liberalism.progressive
+            text: >
+              Telling women and minorities that their rights are a distraction asks them to wait,
+              again, for an economic revolution that never prioritizes them.
+        sources:
+          - {author: Thomas Frank, title: "What's the Matter with Kansas?", year: 2004}
+          - {author: Walter Benn Michaels, title: "The Trouble with Diversity", year: 2006}
+        traditions:
+          defining: [socdem.left-populism]
+          typical: [socdem.labourism, marxism.classical, commonsense.rigged, socdem.democratic-socialism, marxism.trotskyism]
+          contested: [marxism.gramscian]
+          rejects: [conservatism.paleo, liberalism.progressive, feminism.queer]
+        presupposes: [cs.rigged.system-rigged]
+        excludes: [culture.war.civilizational-struggle, culture.war.rights-against-reaction]
+        tension: [culture.war.material-roots]
+        tags: [culture-war]
+        analysis:
+          gains: [core-workers, reserve-army]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Redirecting political energy from identity conflicts to wages, rents and taxes favors
+            demands that unite workers across groups and target owners' income; it risks dropping
+            the specific claims of women and minorities from the program.
+          drain: none
+          law_of_value: regulates
+          consciousness: class-economic
+
+      - id: culture.war.material-roots
+        label: Real conflicts over consent, rooted in class change
+        claim: >
+          The culture wars are real but not free-floating. They express material changes, the
+          decline of industrial work, the rise of a credentialed professional class, insecurity of
+          the old middle, in moral terms, and whoever wins them wins consent for an economic
+          program.
+        voiced: >
+          Culture is a terrain of struggle, not a distraction from it. Thatcherism won by speaking
+          to real fears in the language of nation, family and order. The left loses when it either
+          ignores culture or fights it in the language of a graduate class.
+        you: >
+          You think the culture wars are real fights for consent that come out of economic changes,
+          and that winning them decides which economic program prevails.
+        because: >
+          Gramsci showed that ruling classes govern through consent in civil society, not only by
+          force. Hall described Thatcherism as authoritarian populism: it turned real anxieties
+          about decline, crime and change into consent for neoliberal economics. Fraser argued that
+          recognition and redistribution must be won together, because separating them lets each
+          be captured, by liberal corporations or by the right.
+        against:
+          - from: socdem.left-populism
+            text: >
+              Too clever by half: the analysis ends in more seminars on discourse while workers want
+              wages and housing.
+          - from: conservatism.paleo
+            text: >
+              Reducing faith and nation to "material change" is still Marxism; people believe what
+              they believe because they think it is true.
+        sources:
+          - {author: Stuart Hall, title: "The Great Moving Right Show", year: 1979}
+          - {author: Nancy Fraser, title: "From Redistribution to Recognition? Dilemmas of Justice in a 'Post-Socialist' Age", year: 1995}
+          - {author: Antonio Gramsci, title: "Prison Notebooks", year: 1948, note: "written 1929–1935; first Italian edition 1948–1951"}
+        traditions:
+          defining: [marxism.gramscian]
+          typical: [marxism.western, marxism.social-reproduction, socdem.democratic-socialism, marxism.eurocommunism, feminism.materialist]
+          contested: [socdem.left-populism]
+          rejects: [conservatism.paleo, liberalism.classical]
+        presupposes: [history.motor.class-struggle]
+        excludes: []
+        tension: [culture.war.manufactured-diversion, culture.war.rights-against-reaction]
+        tags: [debate.fraser-honneth, culture-war]
+        analysis:
+          gains: [core-workers, reserve-army, professional-managerial]
+          pays: [finance-capital]
+          mechanism: >
+            Treating cultural conflict as a fight for consent pushes the left to build alliances
+            joining recognition demands to economic ones, denying capital the cross-class moral
+            coalitions through which it wins votes for its program.
+          drain: none
+          law_of_value: none
+          consciousness: hegemonic
+
+      - id: culture.war.woke-elite
+        label: An elite ideology imposed from above threatens liberal values
+        claim: >
+          The culture war was started by a new elite in universities, corporations and media
+          imposing a doctrine on race, gender and speech that rejects liberal values of free inquiry
+          and equal treatment. Defending those values is not reaction.
+        voiced: >
+          This is a new religion with its own original sin, its own heresies and its own
+          inquisition. Corporations put out statements, universities rewrite their rules, and anyone
+          who disagrees is fired. Woke capital is still capital.
+        you: >
+          You think a new elite in universities, media and corporations is imposing ideas about race,
+          gender and speech that undermine free inquiry and equal treatment.
+        because: >
+          McWhorter argued that the new anti-racism functions as a religion, with rituals of
+          confession and punishment of doubt, and harms the people it claims to help. Large
+          corporations adopted its language while cutting wages and avoiding taxes, which suggests
+          it costs them nothing. Defending free speech and equal treatment regardless of identity is
+          the liberal tradition, not its enemy.
+        against:
+          - from: liberalism.progressive
+            text: >
+              The "woke elite" has far less power than the governors banning books and the owners
+              of the largest media empires. The complaint inflates a few campus incidents into a
+              national threat.
+          - from: marxism.gramscian
+            text: >
+              Right about corporate diversity as cheap legitimation, wrong about who funds the
+              campaign against it: billionaire foundations, not the working class.
+        sources:
+          - {author: John McWhorter, title: "Woke Racism", year: 2021}
+          - {author: Greg Lukianoff and Jonathan Haidt, title: "The Coddling of the American Mind", year: 2018}
+          - {author: Vivek Ramaswamy, title: "Woke, Inc.", year: 2021}
+        traditions:
+          defining: [liberalism.classical]
+          typical: [conservatism.fusionism, conservatism.neo, libertarianism.minarchist, libertarianism.objectivist, feminism.gender-critical, conservatism.right-populism]
+          contested: [socdem.left-populism]
+          rejects: [liberalism.progressive, feminism.queer, marxism.black-radical]
+        presupposes: []
+        excludes: []
+        tension: [culture.war.civilizational-struggle]
+        tags: [culture-war]
+        analysis:
+          gains: [finance-capital, petty-bourgeoisie]
+          pays: [professional-managerial]
+          mechanism: >
+            Directing the dispute at university staff, diversity officers and journalists makes
+            public universities and cultural budgets targets for cuts and political control, while
+            the owners of corporations that adopted the language keep their profits and influence.
+          drain: none
+          law_of_value: extends
+
+      - id: culture.war.exported-from-the-core
+        label: The culture war is exported from the rich countries into ours
+        claim: >
+          The culture wars of the Global South are largely imported. American evangelical churches
+          export campaigns against sexual minorities and abortion; Western governments and NGOs make
+          aid and approval conditional on their own cultural agenda. Both sides use it to intervene.
+        voiced: >
+          They send preachers to tell us homosexuality is a Western plague, and diplomats to tell us
+          our laws are barbaric. Both are made in America. Our real fights are over land, debt and
+          bread; their culture war is one more export.
+        you: >
+          You think the culture wars in poorer countries are largely imported by Western churches,
+          governments and NGOs, each using them to intervene.
+        because: >
+          Kaoma documented how US conservative churches and activists funded and shaped campaigns
+          in Uganda that led to its anti-homosexuality bills. Meanwhile Western governments have
+          linked aid to sexual rights and praised themselves as tolerant while waging wars, which
+          Puar called homonationalism. In both cases the agenda is set in the core, and local
+          movements become proxies for foreign money.
+        against:
+          - from: feminism.queer
+            text: >
+              Queer Africans and Asians exist and organize on their own terms. Calling their demands
+              Western erases them and repeats the claim of every local tyrant.
+          - from: conservatism.evangelical-right
+            text: >
+              Our faith is African, Asian and Latin American now; most Christians live in the South.
+              The defense of the family there is their own, not ours.
+        sources:
+          - {author: Kapya Kaoma, title: "Globalizing the Culture Wars: U.S. Conservatives, African Churches, and Homophobia", year: 2009}
+          - {author: Jasbir K. Puar, title: "Terrorist Assemblages: Homonationalism in Queer Times", year: 2007}
+          - {author: Joseph Massad, title: "Desiring Arabs", year: 2007}
+        traditions:
+          defining: [nationalism.decolonial]
+          typical: [marxism.third-worldism, feminism.decolonial, marxism.dependency, nationalism.pan-africanism]
+          contested: [religious.islamism-brotherhood, feminism.queer, marxism.ml]
+          rejects: [liberalism.internationalist, conservatism.evangelical-right]
+        presupposes: [imperialism.nature.monopoly-stage]
+        excludes: []
+        tension: [culture.war.rights-against-reaction]
+        tags: [global-south, culture-war]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [comprador-capital]
+          mechanism: >
+            Naming the foreign funding of culture-war campaigns redirects attention from moral panics
+            to debt, land and wages, and weakens local politicians who use imported moral campaigns
+            and Western aid alike to hold office.
+          drain: reduces
+          law_of_value: none
+          disputed: >
+            Some Marxists accept the critique of imperial uses of rights while warning that it can
+            give local rulers cover for persecuting sexual minorities.
+
+      - id: culture.war.media-spectacle
+        label: Mostly a show put on by politicians and media; most people are not fighting
+        claim: >
+          Most ordinary people are not in a culture war. They hold mixed, practical views and get on
+          with their neighbors. The war is staged by politicians, activists, cable news and social
+          media, who profit from outrage.
+        voiced: >
+          Turn off the television and talk to your neighbors. Nobody I know spends their day on
+          this stuff. It's the politicians and the people on the internet who need us angry; most
+          of us just want to pay the bills and be left alone.
+        you: >
+          You think the culture war is mostly staged by politicians and the media, and that most
+          people are not really in it.
+        because: >
+          Fiorina found that most Americans hold moderate, mixed views on abortion, gay rights and
+          religion; it is party activists and elites who are polarized. Social media algorithms
+          reward outrage, and political campaigns raise money from fear. Ordinary people of
+          different views work, shop and live alongside each other without war.
+        against:
+          - from: conservatism.evangelical-right
+            text: >
+              Indifference is a position. When schools teach your children and courts decide your
+              marriage law, staying out is losing.
+          - from: marxism.gramscian
+            text: >
+              The spectacle is real in its effects: it decides elections and policy. Saying it does
+              not matter leaves the field to those who organize around it.
+        sources:
+          - {author: Morris P. Fiorina, Samuel J. Abrams and Jeremy C. Pope, title: "Culture War? The Myth of a Polarized America", year: 2005}
+        traditions:
+          defining: [commonsense.anti-politics]
+          typical: [commonsense.live-and-let-live, liberalism.technocratic, liberalism.classical]
+          contested: [socdem.third-way]
+          rejects: [conservatism.paleo, liberalism.progressive, marxism.gramscian]
+        presupposes: [cs.politicians.all-crooks]
+        excludes: [culture.war.civilizational-struggle]
+        tension: []
+        tags: [common-sense, culture-war]
+        analysis:
+          gains: [petty-bourgeoisie]
+          pays: []
+          mechanism: >
+            Withdrawing from the conflict leaves its outcome to organized activists and their funders;
+            the stance protects private life but leaves laws on schools, bodies and labor to whoever
+            mobilizes.
+          drain: none
+          law_of_value: none
