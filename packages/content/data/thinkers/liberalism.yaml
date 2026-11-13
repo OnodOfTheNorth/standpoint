@@ -1,0 +1,253 @@
+# Thinkers: the liberal family (classical, utilitarian, social, egalitarian,
+# republican, ordoliberal, Austrian, Chicago, internationalist).
+thinkers:
+  - id: thinker.locke
+    name: John Locke
+    born: 1632
+    died: 1704
+    region: England
+    traditions: [liberalism.classical]
+    summary: >
+      English philosopher who grounded government in the consent of property-owning individuals and
+      defended a right to resist rulers who break that trust. He also invested in the Royal African
+      Company and helped draft the Fundamental Constitutions of Carolina, which recognized slavery.
+    argues:
+      - {position: property.private.natural-right, in: {author: John Locke, title: Two Treatises of Government, year: 1689}}
+      - {position: authority.legitimacy.consent, in: {author: John Locke, title: Two Treatises of Government, year: 1689}}
+      - {position: violence.political.resistance-to-tyranny, in: {author: John Locke, title: Two Treatises of Government, year: 1689}}
+      - {position: religion.public.separation, in: {author: John Locke, title: A Letter Concerning Toleration, year: 1689}}
+
+  - id: thinker.smith
+    name: Adam Smith
+    born: 1723
+    died: 1790
+    region: Scotland
+    traditions: [liberalism.classical]
+    summary: >
+      Scottish moral philosopher whose account of the division of labor, the market price mechanism and
+      the gains from trade became the founding text of classical political economy. He was sharply critical
+      of merchants' monopolies and of employers' combinations to hold down wages.
+    argues:
+      - {position: allocation.mechanism.free-market, in: {author: Adam Smith, title: "An Inquiry into the Nature and Causes of the Wealth of Nations", year: 1776}}
+      - {position: conflict.nature.market-harmony, in: {author: Adam Smith, title: "An Inquiry into the Nature and Causes of the Wealth of Nations", year: 1776}}
+      - {position: exchange.unequal.mutual-gain, in: {author: Adam Smith, title: "An Inquiry into the Nature and Causes of the Wealth of Nations", year: 1776}}
+      - {position: tax.purpose.public-goods, in: {author: Adam Smith, title: "An Inquiry into the Nature and Causes of the Wealth of Nations", year: 1776, note: "Book V, on the expenses of the sovereign"}}
+
+  - id: thinker.madison
+    name: James Madison
+    born: 1751
+    died: 1836
+    region: United States
+    traditions: [liberalism.classical, liberalism.republican]
+    summary: >
+      Virginia planter and chief drafter of the United States Constitution, who argued that a large
+      representative republic with divided powers could contain factions, the most durable of which he
+      traced to the unequal distribution of property. He held enslaved people all his life.
+    argues:
+      - {position: democracy.form.representative, in: {author: James Madison, title: The Federalist No. 10, year: 1787}}
+      - {position: conflict.nature.institutionalized, in: {author: James Madison, title: The Federalist No. 10, year: 1787}}
+      - {position: human.nature.self-interested, in: {author: James Madison, title: The Federalist No. 51, year: 1788}}
+
+  - id: thinker.paine
+    name: Thomas Paine
+    born: 1737
+    died: 1809
+    region: England / United States / France
+    traditions: [liberalism.republican, liberalism.classical]
+    summary: >
+      English-born pamphleteer of the American and French revolutions who attacked hereditary monarchy,
+      defended the rights of man against Burke, and proposed a capital grant for every young adult funded
+      by a duty on inherited property.
+    argues:
+      - {position: authority.legitimacy.consent, in: {author: Thomas Paine, title: Common Sense, year: 1776}}
+      - {position: hist.french-revolution.rights-of-man, in: {author: Thomas Paine, title: Rights of Man, year: 1791}}
+      - {position: democracy.form.representative, in: {author: Thomas Paine, title: "Rights of Man, Part the Second", year: 1792}}
+      - {position: property.inheritance.universal-endowment, in: {author: Thomas Paine, title: Agrarian Justice, year: 1797}}
+
+  - id: thinker.tocqueville
+    name: Alexis de Tocqueville
+    born: 1805
+    died: 1859
+    region: France
+    traditions: [liberalism.classical]
+    summary: >
+      French aristocrat and deputy who studied the United States as the model of a society of equal
+      conditions, praising its local self-government and voluntary associations and warning of a mild,
+      tutelary despotism. As a deputy and minister he defended the French conquest of Algeria.
+    argues:
+      - {position: federalism.scale.subsidiarity, in: {author: Alexis de Tocqueville, title: Democracy in America, year: 1835}}
+      - {position: religion.public.separation, in: {author: Alexis de Tocqueville, title: Democracy in America, year: 1835}}
+      - {position: welfare.state.coercive-dependency, in: {author: Alexis de Tocqueville, title: Memoir on Pauperism, year: 1835}}
+
+  - id: thinker.mill
+    name: John Stuart Mill
+    born: 1806
+    died: 1873
+    region: England
+    traditions: [liberalism.utilitarian, liberalism.social]
+    summary: >
+      English philosopher and East India Company official who joined utilitarian ethics to the harm
+      principle, argued for the legal equality of women, and in later work favored limits on inheritance
+      and workers' cooperatives. He held that peoples he called "barbarous" could rightly be ruled
+      despotically for their improvement.
+    argues:
+      - {position: liberty.concept.non-interference, in: {author: John Stuart Mill, title: On Liberty, year: 1859}}
+      - {position: speech.limits.open-marketplace, in: {author: John Stuart Mill, title: On Liberty, year: 1859}}
+      - {position: morality.basis.utility, in: {author: John Stuart Mill, title: Utilitarianism, year: 1861}}
+      - {position: feminism.subordination.barriers-and-bias, in: {author: John Stuart Mill, title: The Subjection of Women, year: 1869}}
+      - {position: property.inheritance.modest-yes-dynasties-no, in: {author: John Stuart Mill, title: Principles of Political Economy, year: 1848, note: "Book II, ch. 2: cap what any one person may acquire by inheritance"}}
+
+  - id: thinker.keynes
+    name: John Maynard Keynes
+    born: 1883
+    died: 1946
+    region: England
+    traditions: [liberalism.social, socdem.keynesian]
+    summary: >
+      English economist and Liberal who argued that a capitalist economy can settle into mass unemployment
+      for lack of demand, and that the state must manage spending, investment and capital flows to keep it
+      working. He led the British delegation at Bretton Woods in 1944.
+    argues:
+      - {position: capitalism.nature.managed-engine, in: {author: John Maynard Keynes, title: The End of Laissez-Faire, year: 1926}}
+      - {position: finance.control.capital-controls, in: {author: John Maynard Keynes, title: National Self-Sufficiency, year: 1933}}
+      - {position: crisis.cause.demand-failure, in: {author: John Maynard Keynes, title: "The General Theory of Employment, Interest and Money", year: 1936}}
+      - {position: allocation.mechanism.mixed-steered, in: {author: John Maynard Keynes, title: "The General Theory of Employment, Interest and Money", year: 1936, note: "ch. 24: a somewhat comprehensive socialisation of investment"}}
+
+  - id: thinker.ropke
+    name: Wilhelm Röpke
+    born: 1899
+    died: 1966
+    region: Germany / Switzerland
+    traditions: [liberalism.ordoliberal]
+    summary: >
+      German economist who left Germany in 1933 and became a theorist of the social market economy:
+      competitive markets inside a firm legal and moral frame, with property spread widely among small
+      owners and farmers rather than concentrated in giant firms or the state.
+    argues:
+      - {position: markets.nature.framed-tool, in: {author: Wilhelm Röpke, title: The Social Crisis of Our Time, year: 1942}}
+      - {position: firm.ownership.small-proprietors, in: {author: Wilhelm Röpke, title: The Social Crisis of Our Time, year: 1942}}
+      - {position: allocation.mechanism.social-market, in: {author: Wilhelm Röpke, title: "A Humane Economy: The Social Framework of the Free Market", year: 1958}}
+
+  - id: thinker.hayek
+    name: Friedrich Hayek
+    born: 1899
+    died: 1992
+    region: Austria / United Kingdom
+    traditions: [liberalism.austrian]
+    summary: >
+      Austrian-British economist who argued that prices carry dispersed knowledge no planner can gather,
+      that central planning leads toward tyranny, and that "social justice" has no meaning in a market
+      order. He co-founded the Mont Pelerin Society in 1947 and later defended the Chilean military
+      government's economic course.
+    argues:
+      - {position: crisis.cause.credit-distortion, in: {author: Friedrich Hayek, title: Prices and Production, year: 1931}}
+      - {position: totalitarianism.concept.road-from-planning, in: {author: Friedrich Hayek, title: The Road to Serfdom, year: 1944}}
+      - {position: calculation.debate.hayek-knowledge, in: {author: Friedrich Hayek, title: The Use of Knowledge in Society, year: 1945}}
+      - {position: law.nature.rule-of-law, in: {author: Friedrich Hayek, title: The Constitution of Liberty, year: 1960}}
+      - {position: inequality.justice.process-not-pattern, in: {author: Friedrich Hayek, title: "Law, Legislation and Liberty, Vol. 2: The Mirage of Social Justice", year: 1976}}
+
+  - id: thinker.mises
+    name: Ludwig von Mises
+    born: 1881
+    died: 1973
+    region: Austria / United States
+    traditions: [liberalism.austrian]
+    summary: >
+      Austrian economist who argued that without market prices for capital goods a socialist economy cannot
+      calculate rationally, and who defended commodity money and an unhampered market. Both Hayek and the
+      American anarcho-capitalists count him as a teacher.
+    argues:
+      - {position: money.nature.hard-money, in: {author: Ludwig von Mises, title: The Theory of Money and Credit, year: 1912}}
+      - {position: calculation.debate.mises-impossible, in: {author: Ludwig von Mises, title: Economic Calculation in the Socialist Commonwealth, year: 1920}}
+      - {position: value.source.subjective-utility, in: {author: Ludwig von Mises, title: "Human Action: A Treatise on Economics", year: 1949}}
+
+  - id: thinker.friedman
+    name: Milton Friedman
+    born: 1912
+    died: 2006
+    region: United States
+    traditions: [liberalism.chicago]
+    summary: >
+      American economist of the Chicago school who blamed the Great Depression on the Federal Reserve,
+      proposed a fixed monetary rule and a negative income tax, and held that a firm's social
+      responsibility is to make profits within the law. He lectured in Chile in 1975, where his former
+      students ran economic policy under the military government.
+    argues:
+      - {position: money.nature.rule-bound-central-bank, in: {author: Milton Friedman, title: A Program for Monetary Stability, year: 1960}}
+      - {position: work.future.negative-income-tax, in: {author: Milton Friedman, title: Capitalism and Freedom, year: 1962}}
+      - {position: crisis.cause.shocks-and-errors, in: {author: Milton Friedman and Anna J. Schwartz, title: "A Monetary History of the United States, 1867–1960", year: 1963}}
+      - {position: profit.legitimacy.earned-reward, in: {author: Milton Friedman, title: The Social Responsibility of Business Is to Increase Its Profits, year: 1970}}
+
+  - id: thinker.popper
+    name: Karl Popper
+    born: 1902
+    died: 1994
+    region: Austria / New Zealand / United Kingdom
+    traditions: [liberalism.classical]
+    summary: >
+      Austrian-British philosopher of science who held that knowledge grows by bold conjecture and
+      refutation, attacked theories that claim to know where history is going, and defended piecemeal
+      reform over remaking society to a blueprint.
+    argues:
+      - {position: reform.revolution.piecemeal-improvement, in: {author: Karl Popper, title: The Open Society and Its Enemies, year: 1945}}
+      - {position: fascism.response.militant-democracy, in: {author: Karl Popper, title: The Open Society and Its Enemies, year: 1945, note: "Vol. 1, ch. 7, note 4: the paradox of tolerance"}}
+      - {position: history.motor.contingency, in: {author: Karl Popper, title: The Poverty of Historicism, year: 1957, note: "first published as articles in Economica, 1944–45"}}
+      - {position: knowledge.basis.empirical-science, in: {author: Karl Popper, title: "Conjectures and Refutations: The Growth of Scientific Knowledge", year: 1963}}
+
+  - id: thinker.rawls
+    name: John Rawls
+    born: 1921
+    died: 2002
+    region: United States
+    traditions: [liberalism.egalitarian]
+    summary: >
+      American philosopher who asked what principles people would choose if they did not know their place
+      in society, and answered: equal basic liberties, fair equality of opportunity, and inequalities only
+      where they benefit the least advantaged.
+    argues:
+      - {position: equality.concept.difference-principle, in: {author: John Rawls, title: A Theory of Justice, year: 1971}}
+      - {position: inequality.justice.luck-unjust, in: {author: John Rawls, title: A Theory of Justice, year: 1971}}
+      - {position: morality.basis.rights-and-consent, in: {author: John Rawls, title: A Theory of Justice, year: 1971}}
+      - {position: religion.public.separation, in: {author: John Rawls, title: Political Liberalism, year: 1993}}
+
+  - id: thinker.sen
+    name: Amartya Sen
+    born: 1933
+    died: null
+    region: India / United Kingdom / United States
+    traditions: [liberalism.social]
+    summary: >
+      Indian economist and philosopher who showed that famines follow from collapses in people's command
+      over food rather than from shortage alone, and who judges development by what people are actually
+      able to do and be.
+    argues:
+      - {position: population.question.development-settles-it, in: {author: Amartya Sen, title: "Population: Delusion and Reality", year: 1994}}
+      - {position: liberty.concept.capability, in: {author: Amartya Sen, title: Development as Freedom, year: 1999}}
+
+  - id: thinker.pettit
+    name: Philip Pettit
+    born: 1945
+    died: null
+    region: Ireland / Australia / United States
+    traditions: [liberalism.republican]
+    summary: >
+      Irish philosopher who revived the republican idea of liberty as not living under anyone's arbitrary
+      power, and built from it a theory of government that ordinary citizens must be able to contest.
+    argues:
+      - {position: liberty.concept.non-domination, in: {author: Philip Pettit, title: "Republicanism: A Theory of Freedom and Government", year: 1997}}
+      - {position: democracy.form.representative, in: {author: Philip Pettit, title: "On the People's Terms: A Republican Theory and Model of Democracy", year: 2012}}
+
+  - id: thinker.fukuyama
+    name: Francis Fukuyama
+    born: 1952
+    died: null
+    region: United States
+    traditions: [liberalism.internationalist]
+    summary: >
+      American political scientist who argued in 1989 that liberal democracy and the market economy had no
+      remaining ideological rival, and later that strong, accountable state institutions decide which
+      countries prosper. He broke with the neoconservatives over the Iraq war.
+    argues:
+      - {position: hist.collapse-1989.end-of-history, in: {author: Francis Fukuyama, title: The End of History?, year: 1989}}
+      - {position: progress.idea.steady-improvement, in: {author: Francis Fukuyama, title: The End of History and the Last Man, year: 1992}}
+      - {position: poverty.cause.bad-institutions, in: {author: Francis Fukuyama, title: "State-Building: Governance and World Order in the 21st Century", year: 2004}}

@@ -1,0 +1,96 @@
+# Thinkers: the libertarian family (Georgist, minarchist, Objectivist,
+# anarcho-capitalist, paleolibertarian, left-libertarian).
+thinkers:
+  - id: thinker.henry-george
+    name: Henry George
+    born: 1839
+    died: 1897
+    region: United States
+    traditions: [libertarianism.georgist]
+    summary: >
+      American printer and journalist who asked why poverty deepens as wealth grows and answered that
+      landowners capture the gains of progress as rent. His remedy, a single tax on land values, drew a mass
+      following and his 1886 run for mayor of New York had labor-movement backing.
+    argues:
+      - {position: property.land.georgist-rent, in: {author: Henry George, title: Progress and Poverty, year: 1879}}
+      - {position: tax.purpose.land-value, in: {author: Henry George, title: Progress and Poverty, year: 1879}}
+      - {position: profit.legitimacy.rent-not-profit, in: {author: Henry George, title: Progress and Poverty, year: 1879}}
+      - {position: exchange.unequal.mutual-gain, in: {author: Henry George, title: Protection or Free Trade, year: 1886}}
+
+  - id: thinker.nozick
+    name: Robert Nozick
+    born: 1938
+    died: 2002
+    region: United States
+    traditions: [libertarianism.minarchist]
+    summary: >
+      American philosopher who argued that only a minimal state limited to protection and contract
+      enforcement is justified, that a distribution is just if it arose from just acquisition and transfer,
+      and that taxing earnings is on a par with forced labor.
+    argues:
+      - {position: inequality.justice.process-not-pattern, in: {author: Robert Nozick, title: "Anarchy, State, and Utopia", year: 1974}}
+      - {position: property.self-ownership.full, in: {author: Robert Nozick, title: "Anarchy, State, and Utopia", year: 1974}}
+      - {position: tax.purpose.theft, in: {author: Robert Nozick, title: "Anarchy, State, and Utopia", year: 1974}}
+      - {position: state.nature.necessary-evil, in: {author: Robert Nozick, title: "Anarchy, State, and Utopia", year: 1974}}
+      - {position: federalism.scale.states-and-exit, in: {author: Robert Nozick, title: "Anarchy, State, and Utopia", year: 1974, note: "Part III: a framework for utopia"}}
+
+  - id: thinker.rothbard
+    name: Murray Rothbard
+    born: 1926
+    died: 1995
+    region: United States
+    traditions: [libertarianism.ancap, libertarianism.paleo]
+    summary: >
+      American economist, student of Mises, who argued that the state is a gang of thieves writ large and
+      that courts, police and money could all be supplied privately. Late in life he allied with the
+      paleoconservative right.
+    argues:
+      - {position: money.nature.hard-money, in: {author: Murray Rothbard, title: What Has Government Done to Our Money?, year: 1963}}
+      - {position: police.role.private-security, in: {author: Murray Rothbard, title: "For a New Liberty: The Libertarian Manifesto", year: 1973}}
+      - {position: state.nature.organized-aggression, in: {author: Murray Rothbard, title: Anatomy of the State, year: 1974}}
+      - {position: tax.purpose.theft, in: {author: Murray Rothbard, title: The Ethics of Liberty, year: 1982}}
+
+  - id: thinker.rand
+    name: Ayn Rand
+    born: 1905
+    died: 1982
+    region: Russia / United States
+    traditions: [libertarianism.objectivist]
+    summary: >
+      Russian-born American novelist and philosopher who left Soviet Russia in 1926 and built a system on
+      rational self-interest, individual rights and laissez-faire capitalism, which she called the only
+      moral social system.
+    argues:
+      - {position: profit.legitimacy.earned-reward, in: {author: Ayn Rand, title: Atlas Shrugged, year: 1957}}
+      - {position: solidarity.basis.self-interest, in: {author: Ayn Rand, title: The Virtue of Selfishness, year: 1964}}
+      - {position: property.private.natural-right, in: {author: Ayn Rand, title: The Virtue of Selfishness, year: 1964, note: "essay \"Man's Rights\""}}
+      - {position: capitalism.nature.free-exchange, in: {author: Ayn Rand, title: "Capitalism: The Unknown Ideal", year: 1966}}
+
+  - id: thinker.hoppe
+    name: Hans-Hermann Hoppe
+    born: 1949
+    died: null
+    region: Germany / United States / Turkey
+    traditions: [libertarianism.paleo, libertarianism.ancap]
+    summary: >
+      German-born economist and philosopher, student of Habermas and then Rothbard, who argues that a
+      hereditary monarch is a less harmful ruler than elected governments, that a private-law society is
+      better than both, and that open immigration amounts to forced integration.
+    argues:
+      - {position: property.private.natural-right, in: {author: Hans-Hermann Hoppe, title: A Theory of Socialism and Capitalism, year: 1989}}
+      - {position: democracy.form.monarchy, in: {author: Hans-Hermann Hoppe, title: "Democracy: The God That Failed", year: 2001, note: "monarchy as the lesser evil compared with majority rule"}}
+      - {position: borders.migration.restrict-national, in: {author: Hans-Hermann Hoppe, title: "Democracy: The God That Failed", year: 2001}}
+
+  - id: thinker.steiner
+    name: Hillel Steiner
+    born: 1942
+    died: null
+    region: Canada / United Kingdom
+    traditions: [libertarianism.left]
+    summary: >
+      Canadian-born British philosopher who joins full self-ownership to equal shares in the earth's
+      natural resources, so that those who hold more than their share owe the rest of humanity its value
+      through a global fund.
+    argues:
+      - {position: property.self-ownership.left-libertarian, in: {author: Hillel Steiner, title: An Essay on Rights, year: 1994}}
+      - {position: property.land.georgist-rent, in: {author: Hillel Steiner, title: An Essay on Rights, year: 1994}}

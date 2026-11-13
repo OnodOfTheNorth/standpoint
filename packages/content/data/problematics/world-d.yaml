@@ -1,0 +1,1619 @@
+# World system, part 4: humanitarian intervention, foreign aid, sovereign debt, China's role.
+# Continued from world.yaml, world-b.yaml and world-c.yaml.
+problematics:
+  # ------------------------------------------------------------------
+  - id: intervention.humanitarian
+    domain: world
+    layer: strategy
+    question: Should powerful states intervene to stop atrocities abroad?
+    plain: When a government or militia is massacring people in another country, should the strong countries step in?
+    short: humanitarian intervention
+    importance: 3
+    region: world
+    positions:
+      - id: intervention.humanitarian.responsibility-to-protect
+        label: Yes; sovereignty does not cover mass atrocity
+        claim: >
+          When a state commits or allows genocide, ethnic cleansing or mass killing, its claim to be
+          left alone lapses, and other states have a responsibility to protect the victims, by force
+          if necessary, preferably with UN authorization.
+        voiced: >
+          Never again has to mean something. In Rwanda the world watched 800,000 people hacked to
+          death in a hundred days and pulled its peacekeepers out. Sovereignty is a responsibility,
+          not a licence to slaughter your own people behind a border.
+        you: >
+          You think that when a state massacres its own people, other countries have a duty to
+          protect them, by force if needed.
+        because: >
+          The failures are the argument: Rwanda in 1994, Srebrenica in 1995 under a UN "safe area"
+          flag. In Kosovo in 1999 NATO acted without Security Council approval, and an independent
+          commission judged the action illegal but legitimate. The 2005 World Summit endorsed the
+          responsibility to protect: prevention first, force last, but force when nothing else will
+          stop a massacre. Doing nothing is also a choice, and its victims are just as dead.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              The responsibility is exercised only by the powerful, only against their enemies. NATO
+              used a UN mandate to protect Libyan civilians to overthrow the government, and left a
+              country of militias and slave markets. Israel, Saudi Arabia in Yemen and the
+              Indonesian occupation of East Timor never triggered it.
+          - from: conservatism.paleo
+            text: >
+              Every war is sold as a rescue. Once you accept that our army exists to fix other
+              countries' crimes, there is no end of wars and no country left to defend.
+        sources:
+          - {author: International Commission on Intervention and State Sovereignty, title: The Responsibility to Protect, year: 2001}
+          - {author: Samantha Power, title: "A Problem from Hell: America and the Age of Genocide", year: 2002}
+          - {author: Independent International Commission on Kosovo, title: The Kosovo Report, year: 2000}
+          - {author: Gareth Evans, title: "The Responsibility to Protect: Ending Mass Atrocity Crimes Once and for All", year: 2008}
+        traditions:
+          defining: [liberalism.internationalist]
+          typical: [liberalism.social, liberalism.progressive, socdem.third-way, conservatism.christian-democracy, technology.effective-altruism]
+          contested: [socdem.nordic, liberalism.egalitarian, conservatism.neo]
+          rejects: [marxism.ml, marxism.third-worldism, conservatism.paleo, libertarianism.minarchist, marxism.scc]
+        presupposes: [intl.sovereignty.conditional-on-rights]
+        excludes: [intervention.humanitarian.imperial-pretext, intervention.humanitarian.sovereignty-first]
+        tension: [intl.sovereignty.nations-set-own-course]
+        analysis:
+          gains: [industrial-capital, professional-managerial]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >
+            A doctrine that lets states override sovereignty to stop atrocities, applied by those with
+            the militaries to do it, gives core powers a standing legal route to war and
+            reconstruction in the periphery; arms makers and the aid and contracting sector gain, and
+            populations of states outside core alliances lose protection from intervention.
+          drain: sustains
+          law_of_value: none
+          disputed: >
+            Some on the left (Achcar, many in the Kosovo and Darfur debates) hold that particular
+            interventions saved lives and should be judged case by case; others (Chomsky, Mamdani,
+            Bricmont) hold the doctrine is structurally an instrument of the powers that wield it.
+          consciousness: hegemonic
+
+      - id: intervention.humanitarian.spread-liberty
+        label: Yes; use power to remove tyrants and spread liberal government
+        claim: >
+          Powerful liberal states should use military force not only to stop massacres but to remove
+          governments that commit them and build liberal democracies in their place, because tyranny
+          itself is the root of atrocity.
+        voiced: >
+          Tyrants murder their people and threaten ours. America has the power and the duty to
+          stand with liberty. Saddam gassed the Kurds; deterrence and sanctions only left him in
+          power. Freedom is not a Western export; it is every people's birthright.
+        you: >
+          You think strong liberal states should use force to remove tyrants and help build liberal
+          democracies.
+        because: >
+          Atrocity follows from tyranny, so stopping one massacre while leaving the tyrant in place
+          only postpones the next. Liberal democracies rarely make war on each other or slaughter
+          their own citizens. Postwar Germany, Japan and South Korea show that occupation can build
+          lasting liberal states. American primacy is the condition of a world where such states can
+          survive.
+        against:
+          - from: conservatism.burkean
+            text: >
+              Liberal institutions grow from a people's own history and cannot be installed at
+              gunpoint. Iraq showed what happens when ideologues dissolve a state and expect liberty
+              to fill the vacuum.
+          - from: marxism.ml
+            text: >
+              Iraq was invaded on a false claim of weapons of mass destruction; the humanitarian story
+              came afterwards. Hundreds of thousands died, the state was dismantled, and the oil
+              industry was opened to foreign firms. That is the order being spread.
+        sources:
+          - {author: William Kristol and Robert Kagan, title: Toward a Neo-Reaganite Foreign Policy, year: 1996}
+          - {author: Paul Berman, title: Terror and Liberalism, year: 2003}
+        traditions:
+          defining: [conservatism.neo]
+          typical: [conservatism.fusionism, conservatism.evangelical-right, nationalism.zionism-revisionist]
+          contested: [liberalism.internationalist, socdem.third-way]
+          rejects: [conservatism.paleo, libertarianism.paleo, libertarianism.minarchist, marxism.ml, conservatism.burkean, conservatism.national]
+        presupposes: [intl.sovereignty.conditional-on-rights]
+        excludes: [intervention.humanitarian.imperial-pretext, intervention.humanitarian.sovereignty-first, intervention.humanitarian.only-with-the-un, intervention.humanitarian.never-by-war]
+        tension: []
+        analysis:
+          gains: [industrial-capital, finance-capital]
+          pays: [peripheral-workers, peasantry, core-workers]
+          mechanism: >
+            Wars to change governments open occupied economies to privatization and foreign
+            ownership of resources, and enlarge military budgets paid from core taxes; soldiers drawn
+            mainly from the core working class and civilians in the invaded country bear the
+            casualties.
+          drain: sustains
+          law_of_value: extends
+          consciousness: hegemonic
+
+      - id: intervention.humanitarian.only-with-the-un
+        label: Only with Security Council authorization, never unilaterally
+        claim: >
+          Force to stop atrocities is legitimate only when authorized by the UN Security Council
+          under the Charter; unilateral intervention, whatever its motives, breaks the rule that
+          protects weak states from strong ones.
+        voiced: >
+          The Charter bans the use of force except in self-defense or with Security Council
+          approval. That rule is the only thing standing between small countries and the great
+          powers' "good intentions". Break it for Kosovo and you've broken it for Iraq.
+        you: >
+          You think force to stop atrocities is acceptable only with UN Security Council approval.
+        because: >
+          A rule that any state can override when it judges the cause good is no rule; every
+          aggressor claims a good cause. The Charter's prohibition on force is the main legal shield
+          the postcolonial states have. Libya in 2011 showed that even an authorized mission can be
+          stretched, which is why the mandate must be strict. Iraq in 2003 showed what happens
+          without it.
+        against:
+          - from: liberalism.internationalist
+            text: >
+              The Security Council gives five states a veto over whether victims are saved. Rwanda's
+              killers did not need a veto to proceed; they only needed the Council to hesitate.
+          - from: marxism.ml
+            text: >
+              The Council's Libya resolution became a war of overthrow within weeks. A UN stamp
+              changes the paperwork, not who fights the war or why.
+        sources:
+          - {author: United Nations, title: Charter of the United Nations, year: 1945}
+          - {author: Simon Chesterman, title: "Just War or Just Peace? Humanitarian Intervention and International Law", year: 2001}
+        traditions:
+          defining: []
+          typical: [socdem.nordic, conservatism.christian-democracy, conservatism.gaullism, liberalism.social, socdem.democratic-socialism, conservatism.cst]
+          contested: [marxism.scc, liberalism.internationalist]
+          rejects: [conservatism.neo, anarchism.communist]
+        presupposes: []
+        excludes: [intervention.humanitarian.spread-liberty]
+        tension: []
+        analysis:
+          gains: [professional-managerial]
+          pays: []
+          mechanism: >
+            Requiring Council approval limits interventions to cases on which the permanent members
+            agree, which restrains unilateral war by any one power while leaving the five vetoes, and
+            the military capacity to act, with the core states and their rivals.
+          drain: softens
+          law_of_value: none
+          consciousness: hegemonic
+
+      - id: intervention.humanitarian.national-interest-only
+        label: Only where our own vital interests are at stake
+        claim: >
+          States should go to war only to defend their own vital interests; wars fought for
+          humanitarian ideals are endless, usually fail, and spend soldiers' lives on other people's
+          conflicts.
+        voiced: >
+          We are not the world's policeman. Our soldiers swear to defend this country, not to fix
+          every civil war on earth. Libya was a humanitarian war; ask Libyans how it went.
+        you: >
+          You think a country should go to war only for its own vital interests, not to fix other
+          countries' crimes.
+        because: >
+          Morgenthau warned that states that pursue moral crusades abroad end by fighting without
+          limit, since no compromise is possible with evil. Kennan argued that the legalistic and
+          moralistic approach led America into wars it could not finish. Humanitarian war in Somalia,
+          Iraq and Libya produced state collapse and new massacres. Prudence, not indifference, says
+          intervene only where interests are clear and the means sufficient.
+        against:
+          - from: liberalism.internationalist
+            text: >
+              Interests and values are not separate: genocide abroad produces refugees, terrorism and
+              regional war. Rwanda's genocide spilled into a Congolese war that killed millions.
+          - from: marxism.third-worldism
+            text: >
+              Realists do not oppose intervention; they oppose unprofitable intervention. The "vital
+              interests" they defend include oil, sea lanes and client governments.
+        sources:
+          - {author: Hans J. Morgenthau, title: Politics Among Nations, year: 1948}
+          - {author: George F. Kennan, title: "American Diplomacy, 1900–1950", year: 1951}
+          - {author: John J. Mearsheimer and Stephen M. Walt, title: An Unnecessary War, year: 2003}
+        traditions:
+          defining: []
+          typical: [conservatism.paleo, conservatism.gaullism, conservatism.national, libertarianism.paleo, conservatism.burkean]
+          contested: [conservatism.right-populism]
+          rejects: [conservatism.neo, liberalism.internationalist]
+        presupposes: []
+        excludes: [intervention.humanitarian.spread-liberty]
+        tension: []
+        analysis:
+          gains: [core-workers, industrial-capital]
+          pays: [peripheral-workers]
+          mechanism: >
+            Restricting war to national interest spares core soldiers and budgets from open-ended
+            missions, while keeping force available to secure resources, routes and allied
+            governments; it offers no protection to populations whose suffering touches no core
+            interest.
+          drain: sustains
+          law_of_value: none
+          consciousness: economic-corporate
+
+      - id: intervention.humanitarian.imperial-pretext
+        label: No; "humanitarian" war is the cover for imperial war
+        claim: >
+          Humanitarian intervention by the great powers is a pretext: they choose targets by
+          strategic and economic interest, and the wars they fight in the name of victims leave more
+          victims.
+        voiced: >
+          They bombed Yugoslavia for human rights and built a giant base in Kosovo. They saved Libya
+          and left slave markets in Tripoli. They wept for Iraqis and killed hundreds of thousands.
+          Look at whom they never rescue: the Palestinians, the Yemenis. That tells you what the
+          rescues are for.
+        you: >
+          You think humanitarian wars by great powers are a cover for imperial interests.
+        because: >
+          The selection gives it away: intervention happens against governments that resist the
+          core powers, never against allies who commit worse crimes. Chomsky showed that the Kosovo
+          bombing accelerated the expulsions it claimed to stop. Mamdani showed how the Darfur
+          campaign turned a complex civil war into a morality tale that served the war on terror.
+          The pattern repeats: atrocity stories, sometimes true, sometimes inflated, open the way to
+          bases, contracts and pliant governments.
+        against:
+          - from: liberalism.internationalist
+            text: >
+              Selectivity is a reason to intervene more consistently, not never. Telling Rwandans or
+              Bosnians that a rescue would have been imperialist is cold comfort to the dead.
+          - from: marxism.third-camp
+            text: >
+              Opposing imperial war does not oblige anyone to defend the governments it targets.
+              Milošević, Gaddafi and Assad were butchers in their own right; anti-imperialism of
+              fools stands with them.
+        sources:
+          - {author: Noam Chomsky, title: "The New Military Humanism: Lessons from Kosovo", year: 1999}
+          - {author: Jean Bricmont, title: "Humanitarian Imperialism: Using Human Rights to Sell War", year: 2005}
+          - {author: Mahmood Mamdani, title: "Saviors and Survivors: Darfur, Politics, and the War on Terror", year: 2009}
+          - {author: Horace Campbell, title: "Global NATO and the Catastrophic Failure in Libya", year: 2013}
+        traditions:
+          defining: []
+          typical: [marxism.ml, marxism.third-worldism, marxism.maoism, marxism.mlm, nationalism.bolivarianism, nationalism.pan-africanism, marxism.juche, marxism.dependency]
+          contested: [marxism.trotskyism, anarchism.communist]
+          rejects: [liberalism.internationalist, conservatism.neo, marxism.third-camp]
+        presupposes: []
+        excludes: [intervention.humanitarian.responsibility-to-protect, intervention.humanitarian.spread-liberty, imperialism.nature.no-such-thing]
+        tension: []
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Refusing the humanitarian case for war raises the political cost of military action
+            against periphery states that resist core capital, which protects their control over
+            resources and pricing; it gives no means of defending populations from their own rulers.
+          drain: reduces
+          law_of_value: none
+          disputed: >
+            Materialists divide: some (Achcar, third-camp Trotskyists) oppose both the intervention
+            and the targeted government and back popular movements against both; others hold that in
+            a war between the core and a periphery state, the periphery state must be defended
+            whatever its character.
+          consciousness: hegemonic
+
+      - id: intervention.humanitarian.sovereignty-first
+        label: No; non-interference is the rule for everyone
+        claim: >
+          No state may intervene militarily in another's internal affairs for any reason; mutual
+          respect for sovereignty and non-interference is the foundation of peace among unequal
+          states.
+        voiced: >
+          Mutual respect for sovereignty and territorial integrity, non-aggression, non-interference
+          in internal affairs. Each people solves its own problems. The moment you allow outsiders to
+          decide when your government has forfeited its rights, the strong will decide it for the
+          weak.
+        you: >
+          You think no country should intervene militarily inside another, whatever is happening
+          there.
+        because: >
+          The Five Principles of Peaceful Coexistence, agreed by China and India in 1954 and
+          carried into the Bandung Conference in 1955, are the charter of the formerly colonized:
+          after centuries of foreign rule justified by civilizing missions, non-interference is the
+          minimum guarantee. Intervention to "protect" has a colonial pedigree. A rule with
+          humanitarian exceptions will always be applied by the powerful.
+        against:
+          - from: nationalism.pan-africanism
+            text: >
+              The Organization of African Unity's non-interference let Amin and Bokassa slaughter
+              in peace. The African Union replaced it with a right to intervene in genocide and war
+              crimes, because sovereignty had become the shield of tyrants.
+          - from: liberalism.internationalist
+            text: >
+              Absolute sovereignty protects governments, not peoples. It told Rwanda's Tutsis that
+              their killers' government was off limits.
+        sources:
+          - {author: Governments of the People's Republic of China and the Republic of India, title: "Agreement on Trade and Intercourse between the Tibet Region of China and India (Panchsheel)", year: 1954}
+          - {author: Asian-African Conference, title: Final Communiqué of the Asian-African Conference of Bandung, year: 1955}
+        traditions:
+          defining: [marxism.scc]
+          typical: [nationalism.nasserism, nationalism.kemalism, marxism.juche, nationalism.eurasianism, libertarianism.minarchist, conservatism.paleo]
+          contested: [nationalism.pan-africanism, marxism.ml]
+          rejects: [liberalism.internationalist, conservatism.neo, anarchism.communist]
+        presupposes: [intl.sovereignty.nations-set-own-course]
+        excludes: [intl.sovereignty.conditional-on-rights, intervention.humanitarian.responsibility-to-protect, intervention.humanitarian.spread-liberty]
+        tension: []
+        analysis:
+          gains: [comprador-capital, industrial-capital, peripheral-workers]
+          pays: [finance-capital]
+          mechanism: >
+            A strict rule of non-interference shields periphery states that pursue their own
+            development from war and coerced opening, which protects their control of resources
+            from core capital; it equally shields the ruling groups within them from outside pressure
+            over how they treat their own workers and minorities.
+          drain: reduces
+          law_of_value: none
+          consciousness: hegemonic
+
+      - id: intervention.humanitarian.neighbors-not-empires
+        label: Only neighbors and the region may act; the old empires may not
+        claim: >
+          Where atrocities must be stopped, it should be done by neighboring states and regional
+          bodies of the Global South, not by former colonial powers whose interventions serve
+          themselves.
+        voiced: >
+          African solutions to African problems. When Tanzania marched into Uganda in 1979 it ended
+          Idi Amin. When Vietnam crossed into Cambodia it ended the Khmer Rouge. The West condemned
+          both, and kept the Khmer Rouge in the UN seat. Neighbors who live with the consequences
+          should act, not the old empires.
+        you: >
+          You think neighboring countries and regional bodies, not former empires, should stop
+          atrocities when it must be done.
+        because: >
+          The three interventions after 1945 that most clearly ended mass killing were by Southern
+          neighbors: India in East Pakistan in 1971, Vietnam in Cambodia in 1978–79 and Tanzania in
+          Uganda in 1979. The African Union's Constitutive Act of 2000 gave the Union a right to
+          intervene in genocide and war crimes, and ECOWAS forces acted in Liberia and Sierra Leone.
+          Neighbors bear the refugees and the spillover, and have less to gain from occupation.
+        against:
+          - from: marxism.scc
+            text: >
+              Once neighbors may invade to stop crimes, every regional power will discover crimes in
+              the neighbor it wants to dominate. Non-interference protects the small from the
+              middle-sized as much as from the great.
+          - from: marxism.trotskyism
+            text: >
+              Regional powers have interests too: Vietnam occupied Cambodia for a decade, Nigeria's
+              troops looted in Liberia, and Rwanda's and Uganda's armies plundered eastern Congo's
+              minerals while claiming to hunt génocidaires.
+        sources:
+          - {author: Nicholas J. Wheeler, title: "Saving Strangers: Humanitarian Intervention in International Society", year: 2000}
+          - {author: African Union, title: Constitutive Act of the African Union, year: 2000}
+        traditions:
+          defining: [nationalism.pan-africanism]
+          typical: [marxism.african-socialism, marxism.third-worldism, nationalism.decolonial]
+          contested: [marxism.scc, nationalism.nasserism]
+          rejects: [conservatism.neo]
+        presupposes: []
+        excludes: [intervention.humanitarian.spread-liberty]
+        tension: [intl.sovereignty.nations-set-own-course]
+        analysis:
+          gains: [peripheral-workers, peasantry, professional-managerial]
+          pays: [industrial-capital]
+          mechanism: >
+            Regional intervention keeps decisions over war in the periphery with states that do not
+            seek bases or concessions from it, reducing core leverage; regional powers' armies and
+            the officers and businesses around them can themselves extract resources from the
+            territory they enter.
+          drain: reduces
+          law_of_value: none
+          consciousness: hegemonic
+
+      - id: intervention.humanitarian.never-by-war
+        label: Never by war; stop the arms, take the refugees, intervene unarmed
+        claim: >
+          Atrocities should be resisted by non-violent means (arms embargoes, unarmed civilian
+          protection, open doors for refugees, mediation), because war kills more civilians than it
+          saves and feeds the next cycle of violence.
+        voiced: >
+          You cannot bomb people into peace. Stop selling the weapons, open the borders to the
+          fleeing, send unarmed protectors, talk to everyone. Every bomb dropped to save a village
+          kills someone else's village.
+        you: >
+          You think atrocities should be resisted without war: stop arms sales, shelter refugees,
+          intervene unarmed.
+        because: >
+          The great powers that propose humanitarian wars are usually the ones that armed the
+          killers. Tolstoy held that violence cannot cure violence, and Sharp documented hundreds of
+          methods of non-violent action that have defeated armed rulers. Unarmed civilian
+          protection teams have shielded threatened communities in Sri Lanka, South Sudan and
+          Colombia. Embargoes and refuge cost little and kill no one.
+        against:
+          - from: liberalism.internationalist
+            text: >
+              Unarmed protectors did not stop the Interahamwe or the forces at Srebrenica. Some
+              killers are stopped only by force, and refusing it leaves the victims to die with your
+              conscience clean.
+          - from: marxism.leninism
+            text: >
+              The oppressed have the right to defend themselves with arms. Pacifism preached to the
+              victims of massacre disarms them, not their killers.
+        sources:
+          - {author: Leo Tolstoy, title: The Kingdom of God Is Within You, year: 1894}
+          - {author: Gene Sharp, title: The Politics of Nonviolent Action, year: 1973}
+        traditions:
+          defining: []
+          typical: [anarchism.christian, nationalism.gandhian, religious.engaged-buddhism, ecology.deep-ecology]
+          contested: [anarchism.communist, socdem.democratic-socialism]
+          rejects: [conservatism.neo, liberalism.internationalist, marxism.leninism]
+        presupposes: []
+        excludes: [intervention.humanitarian.spread-liberty, intervention.humanitarian.responsibility-to-protect]
+        tension: []
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [industrial-capital]
+          mechanism: >
+            Arms embargoes and a refusal of war cut sales by core arms makers and remove a pretext for
+            military presence in the periphery; refuge for the fleeing shifts some cost to core
+            states; where killers are already armed, the position offers the victims no defense.
+          drain: reduces
+          law_of_value: none
+          consciousness: class-economic
+
+      - id: intervention.humanitarian.solidarity-from-below
+        label: Not states; arm and support the oppressed themselves
+        claim: >
+          The answer to massacre is not the intervention of states but direct solidarity with the
+          people resisting it: volunteers, funds, weapons for their own self-defense, open borders
+          for refugees, and workers refusing to load arms for their killers.
+        voiced: >
+          Don't wait for NATO or the UN. Volunteers went to Spain in 1936 and to Kobanî in 2014.
+          Dockers refuse to load weapons for apartheid and war. Send money, send medicine, send
+          yourself. The people being massacred have their own organizations; back them, not the
+          bombers.
+        you: >
+          You think atrocities should be resisted by solidarity with the people fighting back, not by
+          states intervening.
+        because: >
+          States intervene for their own reasons and leave when those reasons are served; peoples
+          who defend themselves remain. The International Brigades fought fascism in Spain while
+          the democracies embargoed the Republic. The defense of Kobanî in 2014 was organized by
+          the Kurdish movement itself, joined by volunteers. Dockworkers from Durban to Genoa have
+          blocked arms shipments. Solidarity from below keeps control with the victims.
+        against:
+          - from: marxism.ml
+            text: >
+              Volunteers do not defeat armies. Kobanî held because US air power bombed ISIS, which put
+              the Kurdish movement in alliance with an empire. Solidarity without a state behind it
+              ends up borrowing one.
+          - from: liberalism.internationalist
+            text: >
+              Arming one side in a civil war spreads weapons and prolongs the killing. The protection
+              of civilians is a job for accountable states, not for militias and volunteers.
+        sources:
+          - {author: George Orwell, title: Homage to Catalonia, year: 1938}
+          - {author: Gilbert Achcar, title: "The People Want: A Radical Exploration of the Arab Uprising", year: 2013}
+        traditions:
+          defining: []
+          typical: [anarchism.communist, anarchism.syndicalist, anarchism.confederalism, marxism.third-camp, anarchism.platformist, marxism.trotskyism]
+          contested: [marxism.luxemburgism]
+          rejects: [marxism.scc, liberalism.internationalist, conservatism.paleo]
+        presupposes: []
+        excludes: [intervention.humanitarian.sovereignty-first]
+        tension: []
+        analysis:
+          gains: [peripheral-workers, peasantry, core-workers]
+          pays: [industrial-capital, comprador-capital]
+          mechanism: >
+            Direct support for popular self-defense and refusal to handle arms put resistance and
+            supply under the control of workers and the threatened population rather than of states,
+            which denies arms makers and intervening powers their returns; it depends on movements
+            strong enough to act without state backing.
+          drain: reduces
+          law_of_value: none
+          disputed: >
+            Marxist-Leninists hold that solidarity outside states ends dependent on some state's
+            arms (as Kurdish forces did on US air power); anarchists and third-camp Marxists hold that
+            the movement's independence is the point.
+          consciousness: hegemonic
+
+  # ------------------------------------------------------------------
+  - id: aid.foreign
+    domain: world
+    layer: analysis
+    question: What does foreign aid do?
+    plain: When rich countries send aid to poor ones, what does it actually do?
+    short: foreign aid
+    importance: 2
+    region: world
+    positions:
+      - id: aid.foreign.saves-lives-give-more
+        label: It saves millions of lives; rich countries should give far more
+        claim: >
+          Foreign aid has eradicated diseases, vaccinated hundreds of millions and fed people in
+          famine; it works, and rich countries should meet the promise of 0.7 percent of national
+          income.
+        voiced: >
+          Smallpox is gone. Child deaths have halved in a generation. Aid did that, along with the
+          people who delivered it. The rich countries promised 0.7 percent of their income in 1970
+          and most still haven't paid. Keep the promise.
+        you: >
+          You think aid saves lives on a huge scale, and that rich countries should give much more.
+        because: >
+          Sachs argues that the poorest countries are stuck in a poverty trap (disease, poor soil,
+          no roads, no savings) that they cannot climb out of alone, and that a big push of aid in
+          health, farming and infrastructure lets them reach the first rung. Vaccine alliances,
+          malaria nets and AIDS treatment programs have saved millions of lives at low cost. Aid is
+          tiny next to rich countries' budgets; more of it would save more lives.
+        against:
+          - from: liberalism.chicago
+            text: >
+              The countries that escaped poverty, in East Asia, did so through trade and investment,
+              not aid. The most aided countries have grown least. A big push concentrates money in
+              governments that have every reason to keep it.
+          - from: marxism.third-worldism
+            text: >
+              The promise of 0.7 percent is a fraction of what flows the other way through debt,
+              profits and underpaid exports. Aid is the change handed back from the drain.
+        sources:
+          - {author: Commission on International Development, title: Partners in Development, year: 1969}
+          - {author: Jeffrey D. Sachs, title: "The End of Poverty: Economic Possibilities for Our Time", year: 2005}
+        traditions:
+          defining: []
+          typical: [liberalism.social, liberalism.internationalist, socdem.nordic, liberalism.progressive, socdem.third-way, conservatism.christian-democracy]
+          contested: [technology.effective-altruism]
+          rejects: [liberalism.chicago, liberalism.austrian, marxism.third-worldism, commonsense.look-after-your-own]
+        presupposes: [poverty.cause.geography]
+        excludes: [aid.foreign.dependency-and-theft]
+        tension: []
+        analysis:
+          gains: [peripheral-workers, peasantry, professional-managerial]
+          pays: [core-workers]
+          mechanism: >
+            Aid transfers a small share of core tax revenue to health, food and schooling in the
+            periphery, which raises survival and lowers the cost of reproducing labor there; it
+            employs a large professional sector in donor agencies and NGOs, and does not touch the
+            larger outflows of profit and interest.
+          drain: softens
+          law_of_value: suspends
+          consciousness: hegemonic
+
+      - id: aid.foreign.fund-what-works
+        label: Some aid works; fund what is proven, cut the rest
+        claim: >
+          Some aid programs are extremely cost-effective and others do nothing; donors should fund
+          only interventions proven by rigorous evidence, such as malaria nets, deworming and cash
+          transfers.
+        voiced: >
+          Stop arguing about whether aid works in general. Test it. A bed net costs a few dollars
+          and saves lives; a fancy project often saves none. Give to what the evidence says does the
+          most good per dollar, and often just give poor people cash.
+        you: >
+          You think aid should be judged program by program, and only proven programs funded.
+        because: >
+          Randomized trials, pioneered in development by Banerjee, Duflo and Kremer, can show which
+          programs change lives and which waste money. Cost differences between the best and the
+          average program are enormous, so choosing well matters more than giving more. Direct cash
+          transfers respect poor people's own judgment and often outperform programs designed for
+          them.
+        against:
+          - from: marxism.dependency
+            text: >
+              Trials measure what a bed net does in a village, not why the village is poor. Evidence-
+              based aid is very precise about small things and silent about land, trade and debt.
+          - from: liberalism.austrian
+            text: >
+              No trial in one district predicts what happens when a whole economy is run by donors.
+              Experts choosing for the poor, however rigorously, are still not the poor choosing.
+        sources:
+          - {author: Abhijit V. Banerjee and Esther Duflo, title: "Poor Economics: A Radical Rethinking of the Way to Fight Global Poverty", year: 2011}
+          - {author: Peter Singer, title: The Life You Can Save, year: 2009}
+          - {author: William MacAskill, title: Doing Good Better, year: 2015}
+        traditions:
+          defining: []
+          typical: [technology.effective-altruism, liberalism.technocratic, liberalism.utilitarian, technology.longtermism]
+          contested: [liberalism.social]
+          rejects: [marxism.dependency, marxism.third-worldism]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [peripheral-workers, peasantry, professional-managerial]
+          pays: []
+          mechanism: >
+            Evidence-tested aid raises the health and income gained per donor dollar and directs
+            cash to poor households; it builds an evaluation profession in the core and takes the
+            existing trade, debt and ownership structure as given.
+          drain: softens
+          law_of_value: none
+          consciousness: economic-corporate
+
+      - id: aid.foreign.dependency-and-theft
+        label: Aid feeds corruption and dependency and props up bad rulers
+        claim: >
+          Large aid flows go mainly to governments, where they fund corruption, prop up rulers who
+          need not answer to their own taxpayers, and crowd out local enterprise; aid keeps poor
+          countries poor.
+        voiced: >
+          Aid goes to the big men, and the big men buy villas in Europe. The donors know and keep
+          sending it. Meanwhile free food from abroad bankrupts our farmers and the NGOs hire our best
+          people as drivers. Africa doesn't need more aid; it needs to be left to trade.
+        you: >
+          You think aid mostly feeds corruption and dependency and keeps poor countries poor.
+        because: >
+          Moyo, a Zambian economist, argued that decades of aid to Africa coincided with slower
+          growth and more corruption, because governments that live on aid answer to donors, not
+          citizens. Easterly showed planners repeatedly failing where searchers in markets succeed.
+          Bauer argued as early as 1971 that aid strengthens governments against their own people.
+          Common sense in many recipient countries agrees: the money never reaches the village.
+        against:
+          - from: liberalism.social
+            text: >
+              Health aid has saved millions regardless of growth rates. Blaming aid for poverty
+              confuses cause and effect: aid goes to the poorest and most troubled places to begin
+              with.
+          - from: marxism.dependency
+            text: >
+              Moyo is right that aid binds, wrong that the market frees. The same donors' trade rules,
+              loans and firms tie these economies tighter than aid ever did.
+        sources:
+          - {author: P. T. Bauer, title: Dissent on Development, year: 1971}
+          - {author: William Easterly, title: The White Man's Burden, year: 2006}
+          - {author: Dambisa Moyo, title: "Dead Aid: Why Aid Is Not Working and How There Is a Better Way for Africa", year: 2009}
+        traditions:
+          defining: []
+          typical: [liberalism.chicago, liberalism.austrian, libertarianism.minarchist, libertarianism.ancap, commonsense.anti-politics, liberalism.classical]
+          contested: [nationalism.pan-africanism, commonsense.rigged]
+          rejects: [liberalism.social, socdem.nordic, liberalism.internationalist]
+        presupposes: [poverty.cause.bad-institutions]
+        excludes: [aid.foreign.saves-lives-give-more]
+        tension: []
+        analysis:
+          gains: [finance-capital, industrial-capital, comprador-capital]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >
+            Cutting aid in favor of trade and private investment removes public grants and leaves
+            periphery economies to finance through markets and foreign capital, on its terms; the
+            poorest lose health and food programs, while investors and the local firms that partner
+            with them gain access.
+          drain: sustains
+          law_of_value: extends
+          consciousness: hegemonic
+
+      - id: aid.foreign.charity-at-home
+        label: Why send money abroad when our own people are struggling?
+        claim: >
+          Money a rich country spends on foreign aid should go to its own struggling citizens first;
+          helping foreigners while neighbors go without is wrong.
+        voiced: >
+          Charity begins at home. There are kids in this town who can't afford a hot meal, and they
+          send billions overseas, half of it stolen. Fix our own roads and hospitals first, then we
+          can help the rest of the world.
+        you: >
+          You think a country should spend on its own struggling people before sending aid abroad.
+        because: >
+          A government's first duty is to its own citizens, who pay the taxes. When local schools,
+          hospitals and towns are decaying, foreign aid looks like politicians buying prestige
+          abroad with other people's money. Buchanan argued that a republic should mind its own
+          affairs and stop paying for the world.
+        against:
+          - from: technology.effective-altruism
+            text: >
+              Aid is well under one percent of most rich countries' budgets. Cutting it would barely
+              be noticed at home and would cost thousands of children's lives abroad.
+          - from: marxism.third-worldism
+            text: >
+              The struggling town and the poor country are squeezed by the same capital. Taking aid
+              from one to give to the other while profits flow untouched is robbing the poor to pay
+              the poor.
+        sources:
+          - {author: Patrick J. Buchanan, title: "A Republic, Not an Empire", year: 1999}
+        traditions:
+          defining: []
+          typical: [commonsense.look-after-your-own, conservatism.right-populism, conservatism.national, conservatism.paleo, commonsense.declinist, libertarianism.paleo]
+          contested: [socdem.labourism]
+          rejects: [technology.effective-altruism, liberalism.internationalist, conservatism.cst]
+        presupposes: [cs.own-first.our-people-first]
+        excludes: []
+        tension: []
+        analysis:
+          gains: [core-workers]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >
+            Cutting aid shifts a tiny share of core budgets nominally toward domestic spending, which
+            in practice is rarely spent on the poor at home; the periphery loses health and food
+            programs, while the larger flows of profit and interest northward are left untouched.
+          drain: sustains
+          law_of_value: none
+          consciousness: economic-corporate
+
+      - id: aid.foreign.instrument-of-power
+        label: Aid is a tool of the donor's power and business
+        claim: >
+          Foreign aid serves the donor's foreign policy and firms: it buys votes and bases, opens
+          markets, is tied to purchases from donor companies, and carries conditions that reshape
+          recipient economies.
+        voiced: >
+          Aid is not charity; it's a leash. Take the money and you buy their tractors, hire their
+          consultants, vote their way at the UN and open your markets. Refuse, and see how fast it
+          stops. Neo-colonialism wears a donor's badge.
+        you: >
+          You think aid serves the donor's power and business more than the people who receive it.
+        because: >
+          Morgenthau, no radical, wrote in 1962 that most foreign aid is a form of bribery serving
+          political ends. Much aid has been tied to purchases from donor firms, and food aid has
+          long served to dispose of donor surpluses and open markets. Nkrumah argued that aid was
+          a main instrument of neo-colonialism, leaving formally independent states governed from
+          outside. Hayter documented how World Bank and donor conditions pushed policy toward
+          foreign investors.
+        against:
+          - from: liberalism.social
+            text: >
+              Motives can be mixed and results still good. Aid given partly for influence has also
+              built clinics and trained teachers. Refusing it on principle costs the poor, not the
+              donors.
+          - from: liberalism.chicago
+            text: >
+              If aid is a leash, the answer is to drop it and trade; but the same critics usually
+              oppose open trade too.
+        sources:
+          - {author: Hans J. Morgenthau, title: A Political Theory of Foreign Aid, year: 1962}
+          - {author: Kwame Nkrumah, title: "Neo-Colonialism: The Last Stage of Imperialism", year: 1965}
+          - {author: Teresa Hayter, title: Aid as Imperialism, year: 1971}
+        traditions:
+          defining: []
+          typical: [marxism.dependency, marxism.ml, nationalism.pan-africanism, marxism.african-socialism, nationalism.bolivarianism, marxism.maoism]
+          contested: [nationalism.developmental-state]
+          rejects: [liberalism.internationalist, liberalism.social]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [industrial-capital, comprador-capital]
+          mechanism: >
+            Treating aid as an instrument of power leads recipients to refuse or renegotiate tied aid
+            and conditions, which weakens donor firms' guaranteed contracts and the local officials
+            who manage aid flows.
+          drain: reduces
+          law_of_value: none
+          consciousness: hegemonic
+
+      - id: aid.foreign.small-change-from-the-drain
+        label: Aid is small change returned from a much larger drain
+        claim: >
+          Aid is a small fraction of the wealth that flows from poor countries to rich ones every
+          year through debt service, profit, tax evasion and unequal exchange; it hides the drain
+          and presents the takers as givers.
+        voiced: >
+          For every dollar of aid that comes in, many more go out: interest, profits, illicit
+          flows, and labor and raw materials paid below their worth. They call it aid. It's a tip
+          left on a table they cleared.
+        you: >
+          You think aid is a small return on a much larger flow of wealth from poor countries to rich
+          ones.
+        because: >
+          Rodney showed how Africa's wealth was extracted under colonial rule. Hickel and colleagues
+          estimate that the drain through unequal exchange alone is many times larger than all aid
+          flowing south. When debt payments, profit remittances and capital flight are added, net
+          transfers have often run from poor countries to rich ones. Aid narratives make the rich
+          look generous and the poor look helpless; the real relation runs the other way.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Trade is not theft: exporters sell because the price beats their alternatives, and
+              profits pay for capital that would not otherwise come. Adding up "drains" counts gains
+              from trade as losses.
+          - from: technology.effective-altruism
+            text: >
+              Even if the drain is real, a bed net still saves a child this year. Waiting for the
+              world system to change is no reason to stop.
+        sources:
+          - {author: Walter Rodney, title: How Europe Underdeveloped Africa, year: 1972}
+          - {author: Jason Hickel, title: "The Divide: A Brief Guide to Global Inequality and Its Solutions", year: 2017}
+          - {author: "Jason Hickel, Christian Dorninger, Hanspeter Wieland and Intan Suwandi", title: "Imperialist appropriation in the world economy: Drain from the global South through unequal exchange, 1990–2015", year: 2022}
+        traditions:
+          defining: [marxism.third-worldism]
+          typical: [marxism.dependency, marxism.world-systems, nationalism.pan-africanism, ecology.degrowth, marxism.degrowth-communism, marxism.mlm]
+          contested: [marxism.third-camp]
+          rejects: [liberalism.chicago, liberalism.internationalist, liberalism.technocratic]
+        presupposes: [poverty.cause.drain, imperialism.nature.unequal-exchange-drain]
+        excludes: [poverty.cause.culture]
+        tension: []
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital, comprador-capital, core-workers]
+          mechanism: >
+            Naming the drain shifts demands from more aid to higher export prices, debt cancellation
+            and controls on profit and capital outflows, which cut the transfer to core firms and
+            bondholders and raise the cost of imported goods in the core.
+          drain: breaks
+          law_of_value: suspends
+          consciousness: hegemonic
+
+      - id: aid.foreign.duty-of-the-rich
+        label: Aid is a duty owed by rich peoples to poor ones
+        claim: >
+          Helping poor nations is a moral and religious duty of the rich, part of justice rather than
+          optional charity, and must serve the integral development of the whole person and every
+          people.
+        voiced: >
+          Development is the new name for peace. The superfluous wealth of rich countries should be
+          placed at the service of poor nations. This is not generosity; it is justice, and God will
+          judge the nations by it.
+        you: >
+          You think rich peoples owe help to poor ones as a matter of justice and faith.
+        because: >
+          Paul VI's Populorum Progressio taught that the goods of the earth are destined for all and
+          that rich nations have a triple duty: solidarity, social justice in trade, and universal
+          charity. Islamic zakat and sadaqa carry the same obligation across borders. Churches and
+          mosques have run hospitals and schools in poor countries for generations, often where no
+          state reached.
+        against:
+          - from: marxism.classical
+            text: >
+              Charity moralizes a relation of exploitation. The rich nations' "superfluous wealth"
+              came from somewhere, and duty to give some back leaves them owning the rest.
+          - from: liberalism.austrian
+            text: >
+              Duties of charity bind persons, not states. Compulsory aid paid from taxes is neither
+              charity nor justice; it is politics.
+        sources:
+          - {author: Pope Paul VI, title: Populorum Progressio, year: 1967}
+          - {author: Pope Benedict XVI, title: Caritas in Veritate, year: 2009}
+        traditions:
+          defining: [conservatism.cst]
+          typical: [conservatism.christian-democracy, religious.christian-socialism, religious.liberation-theology, religious.islamic-socialism, conservatism.distributism]
+          contested: [conservatism.evangelical-right]
+          rejects: [liberalism.austrian, libertarianism.objectivist]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [core-workers, professional-managerial]
+          mechanism: >
+            A duty framed as justice supports larger transfers, fairer commodity prices and debt
+            relief through church and state channels; it leaves ownership in the core in place and
+            routes much of the help through religious institutions.
+          drain: softens
+          law_of_value: regulates
+          consciousness: hegemonic
+
+  # ------------------------------------------------------------------
+  - id: debt.sovereign
+    domain: world
+    layer: horizon
+    question: Should poor countries' debts be repaid?
+    plain: When a poor country owes more than it can pay, should it pay anyway?
+    short: sovereign debt
+    importance: 3
+    region: world
+    positions:
+      - id: debt.sovereign.pay-what-you-owe
+        label: Yes; a debt is a promise, and defaulting ruins you
+        claim: >
+          Countries should repay what they borrowed; honoring contracts keeps credit flowing, and
+          default brings exclusion from markets, inflation and hardship that fall hardest on the poor.
+        voiced: >
+          You borrow, you pay. That's true for me and for a country. Default and nobody lends to you
+          again: no imports, no medicine, inflation eats your wages. The way out of debt is to stop
+          borrowing more than you can pay.
+        you: >
+          You think countries should repay their debts, because defaulting does more harm than paying.
+        because: >
+          Credit depends on trust: lenders lend cheaply only to borrowers who pay. Tomz shows that
+          over three centuries governments repaid largely to protect their reputation, and those that
+          defaulted paid in higher costs for years. Default cuts a country off from trade credit and
+          triggers currency collapse and inflation, which ruin wage earners and savers first.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              Many of these debts were contracted by unelected rulers, inflated by interest rates set
+              in Washington, and have been repaid several times over. "You borrow, you pay" was never
+              applied to the banks bailed out in 2008.
+          - from: conservatism.cst
+            text: >
+              No contract binds a people to let its children starve. Where repayment would
+              compromise basic needs, justice requires relief.
+        sources:
+          - {author: Michael Tomz, title: "Reputation and International Cooperation: Sovereign Debt across Three Centuries", year: 2007}
+          - {author: Carmen M. Reinhart and Kenneth S. Rogoff, title: "This Time Is Different: Eight Centuries of Financial Folly", year: 2009}
+        traditions:
+          defining: []
+          typical: [liberalism.chicago, liberalism.classical, liberalism.ordoliberal, commonsense.self-reliance, conservatism.fusionism, liberalism.technocratic]
+          contested: [liberalism.austrian]
+          rejects: [marxism.third-worldism, conservatism.cst, nationalism.bolivarianism, marxism.dependency]
+        presupposes: [development.path.integration]
+        excludes: [debt.sovereign.already-paid, debt.sovereign.jubilee]
+        tension: []
+        analysis:
+          gains: [finance-capital, comprador-capital]
+          pays: [peripheral-workers, peasantry, reserve-army]
+          mechanism: >
+            Full repayment transfers a share of periphery tax revenue and export earnings to core
+            bondholders and banks every year, financed by cuts to public spending and taxes on
+            consumption; local elites holding foreign assets or bonds are protected.
+          drain: sustains
+          law_of_value: extends
+          consciousness: hegemonic
+
+      - id: debt.sovereign.orderly-restructuring
+        label: Restructure unpayable debt through an orderly process
+        claim: >
+          When debt becomes unpayable it should be restructured promptly and fairly through an agreed
+          international process, with private and official creditors sharing losses, rather than
+          squeezed out of the population.
+        voiced: >
+          Unpayable debt won't be paid; the only question is how much damage is done first. We need
+          what companies have: a bankruptcy process. Write down the debt early, share the losses
+          among creditors, and let the country recover.
+        you: >
+          You think unpayable debts should be written down through a fair international process,
+          early and with all creditors sharing losses.
+        because: >
+          Delayed restructurings, from Latin America in the 1980s to Greece in 2010–15, deepened
+          depressions and ended with write-downs anyway. Firms have bankruptcy courts; countries
+          have only negotiations in which holdout funds can sue for full payment, as they did against
+          Argentina. The IMF itself proposed a sovereign restructuring mechanism in 2001–02, and
+          debt relief under the HIPC initiative freed funds for health and schools.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Make default easy and governments will borrow recklessly, knowing a restructuring
+              awaits. Lenders will then charge more to everyone.
+          - from: marxism.dependency
+            text: >
+              Orderly restructuring is designed to keep debtors paying as much as possible for as long
+              as possible. It comes with austerity conditions, and the debt rebuilds within a decade.
+        sources:
+          - {author: Joseph E. Stiglitz, title: Globalization and Its Discontents, year: 2002}
+          - {author: Anne O. Krueger, title: A New Approach to Sovereign Debt Restructuring, year: 2002}
+          - {author: "Martin Guzman, José Antonio Ocampo and Joseph E. Stiglitz (eds.)", title: "Too Little, Too Late: The Quest to Resolve Sovereign Debt Crises", year: 2016}
+        traditions:
+          defining: []
+          typical: [liberalism.social, liberalism.internationalist, socdem.keynesian, socdem.nordic, liberalism.technocratic, socdem.third-way]
+          contested: [liberalism.chicago]
+          rejects: [marxism.third-worldism]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [professional-managerial, peripheral-workers]
+          pays: [finance-capital]
+          mechanism: >
+            Timely write-downs reduce the share of periphery budgets paid to creditors and spread
+            losses to bondholders, while keeping countries inside the credit system and its
+            conditions, so debt service resumes at a lower level.
+          drain: softens
+          law_of_value: regulates
+          consciousness: hegemonic
+
+      - id: debt.sovereign.odious-debt
+        label: Debts run up by tyrants for themselves are void
+        claim: >
+          Debts contracted by rulers without the people's consent, for purposes that did not serve the
+          people, with lenders who knew it, are odious and should not be repaid by the people who
+          inherited them.
+        voiced: >
+          The general borrowed it, bought palaces and guns, and sent the rest to Switzerland. The
+          bankers knew. Now they want my children to pay it back? Audit every loan. What was stolen
+          is theirs to recover from the thief, not from us.
+        you: >
+          You think debts that rulers ran up for themselves, with lenders who knew it, should not be
+          repaid by the people.
+        because: >
+          The doctrine is old and was first used by the strong: the United States refused in 1898 to
+          let Cuba carry debts Spain had incurred to hold the island, and after 2003 it pressed
+          creditors to cancel most of Iraq's Saddam-era debt. Sack formulated the doctrine in 1927.
+          Ndikumana and Boyce found that much of Africa's debt financed capital flight by the
+          ruling elite. Ecuador's 2008 audit commission found much of its debt illegitimate, and the
+          government defaulted on those bonds and bought them back at a steep discount.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Every new government will declare its predecessors' debts odious. Lenders will price in
+              the risk, and the next honest government will pay for the doctrine.
+          - from: marxism.third-worldism
+            text: >
+              The doctrine sorts debts into clean and dirty and leaves the system of debt intact. Debts
+              contracted by elected governments under creditor pressure drain the South just as well.
+        sources:
+          - {author: Alexander Nahum Sack, title: "Les effets des transformations des États sur leurs dettes publiques et autres obligations financières", year: 1927}
+          - {author: Patricia Adams, title: "Odious Debts: Loose Lending, Corruption, and the Third World's Environmental Legacy", year: 1991}
+          - {author: Léonce Ndikumana and James K. Boyce, title: "Africa's Odious Debts: How Foreign Loans and Capital Flight Bled a Continent", year: 2011}
+        traditions:
+          defining: []
+          typical: [nationalism.bolivarianism, socdem.democratic-socialism, marxism.trotskyism, nationalism.pan-africanism, liberalism.republican, commonsense.rigged]
+          contested: [liberalism.internationalist]
+          rejects: [liberalism.chicago]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >
+            Voiding odious debt cancels part of the annual transfer to creditors and makes lenders
+            bear the cost of loans to rulers who looted them, which raises the risk of lending to
+            the comprador elites who sent the proceeds abroad.
+          drain: reduces
+          law_of_value: none
+          consciousness: class-economic
+
+      - id: debt.sovereign.jubilee
+        label: Cancel it; a jubilee for the poorest nations
+        claim: >
+          The debts of the poorest countries should be cancelled outright, as an act of justice and
+          mercy, so their peoples are freed from a burden they cannot bear.
+        voiced: >
+          Proclaim liberty throughout the land. In the jubilee year debts were forgiven and the
+          enslaved set free. Today the poorest nations pay more to their creditors than to their
+          clinics. Drop the debt.
+        you: >
+          You think the debts of the poorest countries should simply be cancelled.
+        because: >
+          The biblical jubilee cancelled debts every fiftieth year because societies knew debts
+          compound faster than people can pay. Graeber showed that ancient rulers regularly wiped
+          debts clean to prevent the poor from falling into bondage. John Paul II called for the
+          year 2000 to be a jubilee of debt relief, and the Jubilee 2000 campaign gathered over 20
+          million signatures and won the debt relief that followed, which put children into school
+          across Africa.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Cancellation without reform rewards bad governments and is followed by new borrowing.
+              Several countries relieved under the initiatives were back in distress within fifteen
+              years.
+          - from: marxism.third-worldism
+            text: >
+              Cancellation as mercy leaves creditors as benefactors. Without ending the conditions
+              that produce debt, a jubilee only resets the meter.
+        sources:
+          - {author: Pope John Paul II, title: Tertio Millennio Adveniente, year: 1994}
+          - {author: David Graeber, title: "Debt: The First 5,000 Years", year: 2011}
+        traditions:
+          defining: []
+          typical: [conservatism.cst, religious.christian-socialism, religious.liberation-theology, socdem.democratic-socialism, liberalism.progressive]
+          contested: [liberalism.social]
+          rejects: [liberalism.chicago, liberalism.ordoliberal]
+        presupposes: []
+        excludes: [debt.sovereign.pay-what-you-owe]
+        tension: []
+        analysis:
+          gains: [peripheral-workers, peasantry, reserve-army]
+          pays: [finance-capital]
+          mechanism: >
+            Cancellation removes debt service from the poorest budgets, freeing revenue for schools
+            and clinics, at a cost borne mainly by official creditors; it leaves in place the trade
+            and price structure that produces new debt.
+          drain: softens
+          law_of_value: none
+          consciousness: class-economic
+
+      - id: debt.sovereign.already-paid
+        label: No; the debt has been paid many times over; refuse it together
+        claim: >
+          The debt of poor countries is a mechanism of the drain, already repaid many times through
+          interest; it should be repudiated, ideally by debtor countries acting together.
+        voiced: >
+          The debt cannot be repaid, because if we don't pay, our lenders will not die. But if we
+          pay, we are going to die. We did not create this debt. It is a reconquest of Africa,
+          managed by those who colonized us. Let us refuse together.
+        you: >
+          You think poor countries' debts have been paid many times over, and should be refused
+          collectively.
+        because: >
+          Sankara told the Organization of African Unity in 1987 that the debt was a cleverly managed
+          reconquest, and that a united refusal was the only answer; he was killed three months
+          later. Haiti paid France an indemnity for its own independence until the mid-twentieth
+          century. Interest rate shocks set in Washington in 1979–82 multiplied Southern debts
+          overnight. Susan George documented how repayment drove austerity and hunger across the
+          South in the 1980s. Debt is the drain in financial form.
+        against:
+          - from: liberalism.technocratic
+            text: >
+              A country that repudiates is cut off from trade credit and investment for years.
+              Collective default has never held together; the first country to break ranks gets the
+              best terms.
+          - from: commonsense.self-reliance
+            text: >
+              Nobody forced them to borrow. Refusing to pay and blaming the lenders is how a country
+              loses all its credit, and its own people pay for it.
+        sources:
+          - {author: Thomas Sankara, title: "A United Front Against Debt (speech to the Organization of African Unity, Addis Ababa)", year: 1987}
+          - {author: Susan George, title: A Fate Worse Than Debt, year: 1988}
+        traditions:
+          defining: []
+          typical: [marxism.third-worldism, nationalism.pan-africanism, marxism.dependency, marxism.ml, marxism.african-socialism, marxism.maoism, nationalism.bolivarianism]
+          contested: [socdem.democratic-socialism]
+          rejects: [liberalism.chicago, liberalism.technocratic, liberalism.internationalist]
+        presupposes: [poverty.cause.drain, imperialism.nature.unequal-exchange-drain]
+        excludes: [debt.sovereign.pay-what-you-owe]
+        tension: []
+        analysis:
+          gains: [peripheral-workers, peasantry, reserve-army]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >
+            Collective repudiation ends the flow of interest from periphery budgets to core creditors
+            and removes the lever by which lenders impose austerity and opening; core banks and the
+            local elites who broker and hold the debt lose.
+          drain: breaks
+          law_of_value: suspends
+          consciousness: hegemonic
+
+      - id: debt.sovereign.creditors-eat-losses
+        label: Let bad loans fail; no bailouts for the lenders
+        claim: >
+          Lenders who make bad loans to governments should take the losses; public bailouts through
+          the IMF and creditor governments mainly rescue private banks and encourage reckless lending.
+        voiced: >
+          When Mexico or Argentina can't pay, the IMF lends them money to pay the banks. That's a
+          bailout for Wall Street dressed as aid. Let the lenders eat their losses and they'll lend
+          more carefully.
+        you: >
+          You think lenders should take the losses on bad loans to governments, without public
+          bailouts.
+        because: >
+          IMF rescues in Mexico in 1995, Asia in 1997 and Argentina in 2001 used public money to repay
+          private creditors in full, while the populations bore the austerity. That moral hazard
+          invites the next round of reckless lending. The Meltzer Commission, reporting to the US
+          Congress in 2000, recommended sharply limiting IMF lending for that reason.
+        against:
+          - from: liberalism.internationalist
+            text: >
+              Without a lender of last resort, a debt crisis becomes a banking collapse and a
+              depression. Letting it burn punishes the population more than the lenders.
+          - from: marxism.dependency
+            text: >
+              Ending bailouts without ending conditionality leaves the debtor alone with the
+              creditors' lawyers, as Argentina found when holdout funds won full payment in New York
+              courts.
+        sources:
+          - {author: International Financial Institution Advisory Commission, title: Report of the International Financial Institution Advisory Commission (Meltzer Report), year: 2000}
+        traditions:
+          defining: []
+          typical: [liberalism.austrian, libertarianism.paleo, libertarianism.ancap, libertarianism.minarchist, commonsense.rigged]
+          contested: [liberalism.chicago, conservatism.right-populism]
+          rejects: [liberalism.internationalist, liberalism.technocratic]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [peripheral-workers, petty-bourgeoisie]
+          pays: [finance-capital]
+          mechanism: >
+            Ending public rescues moves losses from taxpayers and debtor populations onto private
+            lenders, which raises the cost of lending to periphery governments; without other
+            protections it also exposes debtors to holdout litigation in core courts.
+          drain: softens
+          law_of_value: extends
+          consciousness: economic-corporate
+
+      - id: debt.sovereign.pay-off-to-be-free
+        label: Pay it off fast to be free of the creditors' conditions
+        claim: >
+          A nation should pay off its foreign debts as fast as possible, even at great sacrifice,
+          because debt is the leash by which foreign powers dictate policy.
+        voiced: >
+          Debt is chains. We pay the IMF to the last cent and show them the door; then nobody tells us
+          what to do with our budget. A country that owes is not sovereign.
+        you: >
+          You think a country should pay off foreign debt quickly to be free of creditors' control.
+        because: >
+          Perón declared economic independence in 1947 and paid off much of Argentina's foreign debt.
+          Brazil and Argentina repaid the IMF early in 2005–06 specifically to escape its conditions,
+          and Russia cleared its Paris Club debt early in 2006. Without debt, a government can choose
+          its own policies. Sacrifice now buys independence later.
+        against:
+          - from: marxism.ml
+            text: >
+              Romania paid off its whole foreign debt by 1989 by exporting food while its own people
+              went hungry and cold. Independence bought by squeezing your workers to pay the
+              creditors is the creditors' victory.
+          - from: liberalism.chicago
+            text: >
+              Hoarding reserves to repay early wastes capital that could be invested at home.
+              Countries that borrow wisely to invest grow faster than those that treat debt as shame.
+        sources:
+          - {author: Juan Domingo Perón, title: "Acta de la Declaración de la Independencia Económica", year: 1947}
+        traditions:
+          defining: []
+          typical: [nationalism.peronism, conservatism.national, nationalism.kemalism, conservatism.gaullism, nationalism.eurasianism]
+          contested: [nationalism.bolivarianism, commonsense.self-reliance]
+          rejects: [liberalism.chicago, marxism.third-worldism]
+        presupposes: [intl.sovereignty.nations-set-own-course]
+        excludes: []
+        tension: []
+        analysis:
+          gains: [industrial-capital, professional-managerial]
+          pays: [core-workers, peripheral-workers, peasantry]
+          mechanism: >
+            Rapid repayment transfers export earnings and fiscal surpluses to creditors in full, at the
+            cost of domestic wages and spending, in exchange for freedom from conditionality later;
+            the national state and domestic capital gain room to set policy once the debt is cleared.
+          drain: sustains
+          law_of_value: none
+          consciousness: hegemonic
+
+  # ------------------------------------------------------------------
+  - id: china.role
+    domain: world
+    layer: analysis
+    question: What is China doing in the world?
+    plain: China builds ports, lends billions and makes most of what we buy. What is it actually up to?
+    short: China's role in the world
+    importance: 3
+    region: world
+    positions:
+      - id: china.role.partner-that-builds
+        label: A partner that builds what the West never did
+        claim: >
+          China is a fellow Southern country that offers trade, loans and infrastructure on
+          equal terms without political conditions, and is developing peacefully alongside its
+          partners.
+        voiced: >
+          The Chinese build roads, railways and stadiums; the West sends lectures and conditions.
+          China does not tell us how to run our country. Peaceful development, win-win cooperation,
+          a community with a shared future for mankind.
+        you: >
+          You see China as a partner that builds infrastructure and trades without telling other
+          countries how to govern.
+        because: >
+          In two decades China financed and built more railways, ports, power plants and roads in
+          Africa, Asia and Latin America than Western lenders had in fifty years, without demanding
+          privatization or austerity. Brautigam's research found that the "debt trap" stories were
+          mostly unfounded. China lifted some 800 million of its own people out of extreme poverty
+          and has one overseas military base, against hundreds held by the United States. Surveys
+          across Africa find majorities see Chinese influence as positive.
+        against:
+          - from: liberalism.internationalist
+            text: >
+              Loans without conditions are loans without scrutiny. Chinese lending has financed
+              projects of doubtful value for governments that wanted no questions, and repayment
+              terms are kept secret.
+          - from: marxism.mlm
+            text: >
+              Win-win is what every rising capital says. Chinese firms pay African miners poor wages,
+              ship out raw ore and send home profits. Zambian miners shot by Chinese managers at
+              Collum in 2010 saw no partner.
+        sources:
+          - {author: Zheng Bijian, title: "China's 'Peaceful Rise' to Great-Power Status", year: 2005}
+          - {author: Xi Jinping, title: The Governance of China, year: 2014}
+          - {author: Deborah Brautigam, title: "The Dragon's Gift: The Real Story of China in Africa", year: 2009}
+        traditions:
+          defining: [marxism.scc]
+          typical: [nationalism.developmental-state, nationalism.pan-africanism, nationalism.bolivarianism, nationalism.three-principles]
+          contested: [marxism.ml, marxism.third-worldism]
+          rejects: [liberalism.internationalist, conservatism.neo, marxism.mlm, marxism.third-camp]
+        presupposes: []
+        excludes: [china.role.new-empire, china.role.one-party-rival]
+        tension: []
+        analysis:
+          gains: [peripheral-workers, comprador-capital, industrial-capital]
+          pays: [finance-capital]
+          mechanism: >
+            Chinese loans and construction give periphery governments an alternative to Western
+            lenders, which weakens the conditions those lenders could impose; Chinese state and
+            private firms earn on construction and secure raw materials, and the local elites who
+            negotiate the deals gain too.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            Materialists divide on China's class character. Arrighi (Adam Smith in Beijing) and Amin
+            (China 2013) read a market economy under a sovereign state project not reducible to
+            capitalism; Minqi Li, Ho-fung Hung and Au Loong-yu read a capitalist economy, Hung an
+            emerging empire, and Maoist parties call it social-imperialist.
+          consciousness: hegemonic
+
+      - id: china.role.counterweight
+        label: A sovereign power breaking the West's monopolies
+        claim: >
+          China's rise, led by a state that controls finance and land, breaks the core's monopolies
+          over technology, finance and infrastructure and gives the South room to develop; this is
+          why the core powers now target it.
+        voiced: >
+          For five hundred years the West held the monopolies. Now a formerly colonized country of a
+          billion and a half has broken the technology monopoly, offers credit outside the dollar
+          system, and cannot be sanctioned into line. That is why they call it a threat.
+        you: >
+          You think China's rise breaks the rich countries' grip on technology and finance, and gives
+          poor countries room to develop.
+        because: >
+          Amin held that the core rules through monopolies over technology, finance, resources, media
+          and weapons, and argued that China, by keeping land public and finance under state
+          control, had partially delinked from the world law of value. Arrighi read China's path as
+          market-based but not capitalist, since the state kept capital subordinate. Every challenge
+          to the monopolies, from Huawei to Chinese lending, has brought sanctions, tariffs and
+          military encirclement, as the frame of sovereign development predicts.
+        against:
+          - from: marxism.mlm
+            text: >
+              A rival monopoly is not the end of monopoly. Chinese capital exports capital, takes
+              superprofits and secures raw materials like any imperialist power. Choosing a better
+              master is not liberation.
+          - from: marxism.third-camp
+            text: >
+              Chinese workers are exploited by Chinese capitalists under a state that bans independent
+              unions. Calling it a counterweight asks workers to cheer their own bosses.
+        sources:
+          - {author: Samir Amin, title: China 2013, year: 2013}
+          - {author: Giovanni Arrighi, title: "Adam Smith in Beijing: Lineages of the Twenty-First Century", year: 2007}
+          - {author: Roland Boer, title: "Socialism with Chinese Characteristics: A Guide for Foreigners", year: 2021}
+        traditions:
+          defining: []
+          typical: [marxism.ml, marxism.third-worldism, nationalism.bolivarianism, marxism.juche, nationalism.eurasianism, marxism.dependency]
+          contested: [marxism.scc, marxism.world-systems]
+          rejects: [marxism.mlm, marxism.third-camp, marxism.trotskyism, liberalism.internationalist, conservatism.neo]
+        presupposes: [imperialism.nature.unequal-exchange-drain]
+        excludes: [china.role.new-empire]
+        tension: []
+        analysis:
+          gains: [peripheral-workers, peasantry, industrial-capital]
+          pays: [finance-capital, comprador-capital]
+          mechanism: >
+            Chinese technological catch-up and state-directed lending erode the rents core firms earn
+            from monopolies on technology and finance, and raise the prices periphery states can
+            demand for raw materials and contracts; core finance and the periphery brokers tied to it
+            lose leverage.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            The frame's line reads China by its direction and its place in the world system: its
+            sovereign development squeezes core monopolies. The dispute is open. Amin and Arrighi
+            support a non-capitalist or partly delinked reading; Minqi Li, Ho-fung Hung and Au
+            Loong-yu hold that China is capitalist and its firms exploit workers at home and abroad;
+            Maoist parties call it social-imperialist.
+          consciousness: hegemonic
+
+      - id: china.role.new-empire
+        label: A new empire, grabbing resources and trapping debtors
+        claim: >
+          China has become an imperial power: its firms export capital, take raw materials, exploit
+          foreign workers, and use loans to gain ports and leverage over indebted governments.
+        voiced: >
+          They come with loans, bring their own workers, ship out our copper and leave us the debt.
+          Sri Lanka handed over a port. It's the same old empire with a new flag. Social-imperialism:
+          socialist in words, imperialist in deeds.
+        you: >
+          You see China as a new imperial power taking resources and gaining leverage through debt.
+        because: >
+          China is the largest bilateral lender to many poor countries, and its state firms hold mines,
+          oil fields and ports across Africa, Asia and Latin America. Hung argues that China's
+          overaccumulated capital has had to go abroad, which makes it imperial in the Leninist sense.
+          Sri Lanka leased Hambantota port to a Chinese firm for 99 years in 2017. Zambian miners and
+          Ecuadorian communities have protested Chinese firms' wages and pollution.
+        against:
+          - from: marxism.scc
+            text: >
+              China has no colonies, fought no wars of conquest in forty years and holds a single
+              overseas base. Lending and investing on commercial terms is not imperialism, or every
+              trading nation is an empire.
+          - from: marxism.third-worldism
+            text: >
+              The "debt trap" story was largely invented: Brautigam's research found Hambantota was
+              leased to raise cash, not seized, and Sri Lanka owed far more to Western bondholders
+              than to China. Calling China an empire launders the real one.
+        sources:
+          - {author: Ho-fung Hung, title: "Clash of Empires: From 'Chimerica' to the 'New Cold War'", year: 2022}
+          - {author: Au Loong-yu, title: "China's Rise: Strength and Fragility", year: 2012}
+          - {author: Brahma Chellaney, title: China's Debt-Trap Diplomacy, year: 2017}
+        traditions:
+          defining: []
+          typical: [marxism.mlm, marxism.third-camp, marxism.trotskyism, marxism.hoxhaism, conservatism.neo, liberalism.internationalist]
+          contested: [marxism.left-communism, nationalism.ethnic]
+          rejects: [marxism.scc, marxism.ml, marxism.third-worldism]
+        presupposes: []
+        excludes: [china.role.partner-that-builds, china.role.counterweight]
+        tension: []
+        analysis:
+          gains: [core-workers, professional-managerial]
+          pays: [industrial-capital]
+          mechanism: >
+            Reading China as an empire supports opposition to Chinese investment and lending, which
+            in practice favors Western lenders and firms competing for the same contracts; from the
+            left it also backs workers and communities organizing against Chinese employers abroad.
+          drain: none
+          law_of_value: none
+          disputed: >
+            The dispute is unresolved among materialists: Hung, Au and Maoist parties hold that
+            China's capital export makes it imperialist; Amin, Arrighi and Third Worldists hold that
+            China does not draw value from the periphery on the scale of the core and that the label
+            serves the core's campaign against it.
+          consciousness: hegemonic
+
+      - id: china.role.one-party-rival
+        label: A one-party rival exporting its model and threatening the liberal order
+        claim: >
+          China is a one-party state that represses dissent at home, from Xinjiang to Hong Kong,
+          and seeks to reshape international rules in its favor; it is the main rival to the liberal
+          international order.
+        voiced: >
+          The Chinese Communist Party jails dissidents, interns Uyghurs by the hundreds of thousands,
+          crushed Hong Kong's freedoms, and sells surveillance to dictators. The free world must
+          stand together or the twenty-first century will be written in Beijing.
+        you: >
+          You see China as a one-party state that represses at home and threatens the liberal order
+          abroad.
+        because: >
+          Under Xi Jinping the party has tightened control at home, abolished presidential term
+          limits in 2018 and imposed a national security law on Hong Kong in 2020. UN human rights
+          officials found in 2022 that detentions in Xinjiang may amount to crimes against humanity.
+          Friedberg argues a rising one-party China cannot accept a liberal-led order and will seek
+          to displace it.
+        against:
+          - from: marxism.ml
+            text: >
+              The liberal order bombed Iraq, Libya and Yugoslavia, sanctioned whole peoples into
+              hunger and backed coups across the South. Its champions discovered human rights in
+              China the moment China began to compete.
+          - from: conservatism.paleo
+            text: >
+              It is not our business how China governs itself. Crusades to defend the liberal order
+              ended in Iraq and Afghanistan; a crusade against a nuclear power could end far worse.
+        sources:
+          - {author: Aaron L. Friedberg, title: "A Contest for Supremacy: China, America, and the Struggle for Mastery in Asia", year: 2011}
+          - {author: Elizabeth C. Economy, title: "The Third Revolution: Xi Jinping and the New Chinese State", year: 2018}
+        traditions:
+          defining: []
+          typical: [liberalism.internationalist, conservatism.neo, liberalism.progressive, conservatism.fusionism, socdem.third-way]
+          contested: [marxism.third-camp, conservatism.national]
+          rejects: [marxism.scc, marxism.ml, conservatism.paleo, marxism.third-worldism]
+        presupposes: []
+        excludes: [china.role.partner-that-builds]
+        tension: []
+        analysis:
+          gains: [industrial-capital, finance-capital, professional-managerial]
+          pays: [peripheral-workers, core-workers]
+          mechanism: >
+            Framing China as the rival of the liberal order justifies sanctions, technology export
+            bans and military buildup, which protect core firms' technology monopolies and raise
+            arms budgets; periphery countries are pressed to choose sides and lose the alternative
+            lender, and core consumers pay higher prices.
+          drain: sustains
+          law_of_value: none
+          consciousness: hegemonic
+
+      - id: china.role.took-our-jobs
+        label: China took our factories and our jobs
+        claim: >
+          China's rise came at the expense of industrial workers in other countries: by producing
+          cheaply, subsidizing its firms and manipulating trade, it took away factories and jobs.
+        voiced: >
+          Everything in the store says Made in China, and every factory in this town closed. They
+          cheated on trade, stole our technology, and our politicians let them. Bring the jobs home.
+        you: >
+          You think China took factories and jobs from other countries, with the help of their own
+          politicians.
+        because: >
+          Autor, Dorn and Hanson found that import competition from China after its 2001 entry into
+          the World Trade Organization cost the United States on the order of a million
+          manufacturing jobs and devastated the towns that lost them, with lasting falls in wages
+          and rises in disability and early death. Mexican, Central American and South African
+          textile workers lost jobs the same way. Subsidies and state banks gave Chinese firms
+          advantages no market competitor had.
+        against:
+          - from: marxism.third-worldism
+            text: >
+              China did not take the jobs; American and European firms moved them there to pay
+              Chinese workers a fraction of the wage. The profits went to Apple and Walmart
+              shareholders, not to Beijing.
+          - from: liberalism.chicago
+            text: >
+              Cheap imports raised every consumer's real income, and most manufacturing jobs were lost
+              to automation, not trade. Tariffs tax your own consumers to protect a few firms.
+        sources:
+          - {author: "David H. Autor, David Dorn and Gordon H. Hanson", title: "The China Syndrome: Local Labor Market Effects of Import Competition in the United States", year: 2013}
+          - {author: Peter Navarro and Greg Autry, title: "Death by China: Confronting the Dragon", year: 2011}
+        traditions:
+          defining: []
+          typical: [conservatism.national, conservatism.right-populism, commonsense.declinist, commonsense.look-after-your-own, socdem.labourism, conservatism.postliberal]
+          contested: [socdem.left-populism]
+          rejects: [liberalism.chicago, marxism.third-worldism, liberalism.technocratic]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [industrial-capital, core-workers]
+          pays: [peripheral-workers, finance-capital]
+          mechanism: >
+            Blaming China directs core workers' anger at a foreign state rather than the firms that
+            moved production, and supports tariffs that protect some core manufacturing and its
+            workers while raising prices; workers in China and other export economies lose orders.
+          drain: none
+          law_of_value: regulates
+          consciousness: economic-corporate
+
+      - id: china.role.workshop-of-core-capital
+        label: The workshop where cheap Chinese labor feeds core profits
+        claim: >
+          China's export boom rested on hundreds of millions of low-paid migrant workers producing
+          for Western and Japanese brands; much of the value they created was captured as profit and
+          cheap consumer goods in the rich countries.
+        voiced: >
+          The iPhone is designed in California and assembled in Shenzhen. Apple keeps the big margin;
+          the Foxconn worker who builds it earns a few hundred dollars a month, and in 2010 workers
+          were jumping from the dormitory roofs. The drain runs through China's factories.
+        you: >
+          You see China's factories as the place where cheap labor fed the profits of rich-country
+          firms.
+        because: >
+          Smith shows that the bulk of the price of goods made in China and sold in the North is
+          captured by Northern brands, retailers and governments as profit, rent and tax, not by
+          the workers who make them. Pun Ngai documented the dormitory labor regime of migrant women
+          from the countryside, denied urban residence rights. Minqi Li argues China was absorbed
+          into the capitalist world economy as a supplier of cheap labor, with the contradictions
+          that brings.
+        against:
+          - from: marxism.scc
+            text: >
+              The workshop was a stage, not a fate. Chinese wages have risen many times over, China
+              now leads in electric vehicles, batteries and solar, and the state used export earnings
+              to build the infrastructure and industry the core never let anyone else build.
+          - from: liberalism.chicago
+            text: >
+              Those "cheap" jobs paid more than farming and lifted hundreds of millions out of
+              poverty. Workers chose them over the alternatives, which is what development looks like.
+        sources:
+          - {author: Pun Ngai, title: "Made in China: Women Factory Workers in a Global Workplace", year: 2005}
+          - {author: Minqi Li, title: The Rise of China and the Demise of the Capitalist World Economy, year: 2008}
+          - {author: John Smith, title: Imperialism in the Twenty-First Century, year: 2016}
+        traditions:
+          defining: []
+          typical: [marxism.third-worldism, marxism.mlm, marxism.trotskyism, marxism.world-systems, marxism.autonomism]
+          contested: [marxism.scc, marxism.ml]
+          rejects: [liberalism.chicago, liberalism.technocratic]
+        presupposes: [imperialism.nature.unequal-exchange-drain]
+        excludes: []
+        tension: []
+        analysis:
+          gains: [peripheral-workers]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >
+            Seeing China's export sector as a site of the drain points to rising Chinese wages,
+            independent organizing and higher export prices, each of which cuts the margins of core
+            brands and retailers and raises core consumer prices.
+          drain: breaks
+          law_of_value: regulates
+          disputed: >
+            Readers who see the reform era as capitalist restoration (Li, Maoist parties) treat the
+            workshop as China's present; those who see a sovereign development path (Arrighi, Amin)
+            treat it as a stage China has used to climb out of the periphery.
+          consciousness: class-economic
+
+      - id: china.role.great-power-rivalry
+        label: Just another rising great power, heading for rivalry with the old one
+        claim: >
+          China is behaving as rising great powers always have, building military and economic power
+          to secure its region and interests; its clash with the United States follows from the
+          shifting balance of power, not from ideology.
+        voiced: >
+          Forget communism and democracy. A rising power always pushes against the reigning one, and
+          the reigning one always tries to stop it. Athens and Sparta, Germany and Britain, now China
+          and America. The question is whether they can avoid the war.
+        you: >
+          You see China as a rising great power whose rivalry with the US comes from power, not
+          ideology.
+        because: >
+          Mearsheimer argues that in a world without a world government, every great power seeks
+          regional dominance and to prevent others from achieving it, so China will try to dominate
+          Asia and the United States will try to contain it. Allison found that most cases of a
+          rising power challenging a ruling one in five centuries ended in war. Lenin's account of
+          inter-imperialist rivalry reaches a similar conclusion from capital's need for markets and
+          outlets.
+        against:
+          - from: marxism.scc
+            text: >
+              China has not fought a war since 1979 and seeks development, not hegemony. Treating
+              every rise as a threat is the self-fulfilling prophecy of those who want to block it.
+          - from: liberalism.internationalist
+            text: >
+              Regime type matters: liberal democracies rarely fight each other. Reducing the conflict
+              to power alone ignores that China's rulers want to make the world safe for one-party
+              rule.
+        sources:
+          - {author: John J. Mearsheimer, title: The Tragedy of Great Power Politics, year: 2001}
+          - {author: Graham Allison, title: "Destined for War: Can America and China Escape Thucydides's Trap?", year: 2017}
+          - {author: V. I. Lenin, title: "Imperialism, the Highest Stage of Capitalism", year: 1917}
+        traditions:
+          defining: []
+          typical: [conservatism.paleo, conservatism.gaullism, marxism.left-communism, marxism.third-camp, libertarianism.paleo]
+          contested: [marxism.trotskyism, conservatism.national]
+          rejects: [marxism.scc, marxism.third-worldism, liberalism.internationalist]
+        presupposes: []
+        excludes: []
+        tension: []
+        analysis:
+          gains: [industrial-capital]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >
+            Treating rivalry as inevitable justifies arms buildups and alliances on both sides, which
+            enlarge military budgets and arms makers' orders; working populations pay through taxes
+            and, if war comes, with their lives.
+          drain: none
+          law_of_value: none
+          disputed: >
+            Left communists and third-camp Marxists read both powers as imperialist and the rivalry as
+            inter-imperialist; Third Worldists hold that it is a core power blocking a periphery
+            country's rise, not a contest of equals.
+          consciousness: economic-corporate

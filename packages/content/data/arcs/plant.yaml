@@ -1,0 +1,450 @@
+id: arc.plant
+title: The Valley
+blurb: A closure letter, an envelope for the over-fifties, and a crane that has come for the presses.
+role: You run a press at a steel-tube plant and sit on its works council.
+place: A steel-tube plant in a valley town in Wallonia, Belgium
+start: arc.plant.01
+escalation: arc.plant.04
+pressure: [arc.plant.03]
+tags: [economy, strategy, nation, commonsense]
+nodes:
+  - id: arc.plant.01
+    type: scene
+    title: The letter
+    text: >
+      Monday, six a.m. shift change. A letter on the canteen board: the holding company in Luxembourg will
+      close the tube plant in nine months and move the lines to its plant in Slovakia. Three hundred and
+      forty jobs. Your father ran the same press you run. The works council meets at noon. You have a seat on it.
+    why: "This asks what you reach for first when the work disappears: collective action, a deal, a new owner, or your own way out."
+    premises:
+      - id: no-fight
+        text: The premise that a closure is something to fight. Firms close; that is how an economy renews itself.
+        evidence: [{position: firm.ownership.private-investors, w: 2}]
+    conditions:
+      - id: if-losing
+        text: It depends whether the plant actually loses money.
+        evidence: [{position: workplace.conflict.harmony-of-interests, w: 1}]
+    options:
+      - id: block
+        text: Stop the machines leaving. Without the presses there is no Slovakia.
+        set: {plan: fight}
+        evidence:
+          - {position: change.means.strike-and-direct-action, w: 3}
+          - {position: workplace.conflict.structural-antagonism, w: 1}
+        probe:
+          ask: What makes the machines worth stopping?
+          options:
+            - text: Decades of our work paid for them. They're more ours than the holding's.
+              cause: structures
+              evidence: [{position: workplace.conflict.structural-antagonism, w: 2}]
+            - text: They're the only leverage we have left.
+              cause: interests
+              evidence: [{position: unions.role.bargaining-agent, w: 1}, {position: change.means.strike-and-direct-action, w: 1}]
+            - text: This valley has made steel for a hundred and fifty years. Somebody has to say no.
+              cause: culture
+              evidence: [{position: cs.decline.sold-out, w: 1}]
+        consequence: The union calls a general assembly for Thursday. Management hires a security firm.
+        next: arc.plant.02a
+      - id: package
+        text: Get the best severance anyone in this valley has ever seen.
+        set: {plan: package}
+        evidence:
+          - {position: unions.role.bargaining-agent, w: 3}
+        consequence: Management agrees to talk money. It also starts talking money with each of you separately.
+        next: arc.plant.02b
+      - id: buyout
+        text: Find a buyer, or buy it ourselves. The order book is full.
+        set: {plan: buyout}
+        evidence:
+          - {position: firm.ownership.worker-cooperatives, w: 2}
+          - {position: firm.ownership.private-investors, w: 1}
+        consequence: An accountant from the cooperative federation offers to look at the books. The holding says the books are confidential.
+        next: arc.plant.02a
+      - id: minister
+        text: Call the minister. The government let this happen; it can make them stay.
+        set: {plan: state}
+        evidence:
+          - {position: cs.decline.sold-out, w: 2}
+          - {position: firm.ownership.state, w: 1}
+        consequence: The minister's office says every option is on the table. The table is two hours away in Namur.
+        next: arc.plant.02a
+      - id: cv
+        text: Update your CV tonight. Loyalty to a plant that isn't loyal to you is a bad trade.
+        set: {plan: leave}
+        evidence:
+          - {position: change.means.individual-exit, w: 3}
+        consequence: A recruiter in Liège has night shifts at a parcel depot, at two-thirds of your wage.
+        next: arc.plant.02b
+
+  - id: arc.plant.02a
+    type: voices
+    title: The canteen
+    text: >
+      Thursday's assembly spills into the canteen. Two colleagues have the floor and a tray of cold frites
+      between them. Everyone else is listening for who sounds like they have a plan.
+    voices:
+      - {name: Nadia, says: "The state rescued the banks in a weekend. It can take this plant and run it. Public steel for public railways."}
+      - {name: Gérard, says: "The owners broke faith with this town. Shame them out, and bring in an owner who knows a firm is a family with duties both ways."}
+    why: This asks who you think should own a plant like this one, and what you think went wrong.
+    premises:
+      - id: not-ours
+        text: The premise that workers get a say in who owns the plant.
+        evidence: [{position: property.private.natural-right, w: 2}]
+    options:
+      - id: nadia
+        text: Nadia.
+        cause: structures
+        evidence:
+          - {position: firm.ownership.state, w: 3}
+        next: arc.plant.03
+      - id: gerard
+        text: Gérard.
+        cause: individuals
+        evidence:
+          - {position: workplace.conflict.mutual-duties, w: 3}
+          - {position: firm.ownership.private-investors, w: 1}
+        next: arc.plant.03
+      - id: coop
+        text: Both miss it. Not the state, not a kinder boss. The people who run the presses should own them.
+        cause: structures
+        evidence:
+          - {position: firm.ownership.worker-cooperatives, w: 3}
+        next: arc.plant.03
+      - id: slovaks
+        text: Both miss it. The Slovaks get a third of our wage for the same tube. Until that changes, every plant here is next.
+        cause: structures
+        evidence:
+          - {position: labor.division.core-periphery, w: 3}
+          - {position: solidarity.basis.shared-class, w: 1}
+        next: arc.plant.03
+      - id: market
+        text: Both miss it. If tubes made here can't sell at a profit, no owner, public or private, can save them.
+        cause: structures
+        evidence:
+          - {position: firm.ownership.private-investors, w: 2}
+          - {position: workplace.conflict.harmony-of-interests, w: 1}
+        next: arc.plant.03
+
+  - id: arc.plant.02b
+    type: explanation
+    title: The annual report
+    text: >
+      The holding's annual report lands in your inbox, forwarded by someone in accounts. Record profit last
+      year. The Slovak plant pays a third of your wage for the same tube. The chairman's letter calls the
+      closure "a difficult decision to secure our future." Why is the plant really closing?
+    why: This asks why you think the plant is closing, and what kind of cause you reach for.
+    premises:
+      - id: no-hidden
+        text: The premise that there is a hidden reason. The chairman's letter is the reason.
+        evidence: [{position: workplace.conflict.harmony-of-interests, w: 1}]
+    options:
+      - id: profit
+        text: A profit isn't enough. It has to be the biggest profit, and the Slovak wage gives a bigger one.
+        cause: structures
+        evidence:
+          - {position: workplace.conflict.structural-antagonism, w: 3}
+        next: arc.plant.03
+      - id: chairman
+        text: The chairman is a greedy man who has never stood at a press in his life.
+        cause: individuals
+        evidence:
+          - {position: workplace.conflict.mutual-duties, w: 1}
+        next: arc.plant.03
+      - id: brussels
+        text: Brussels opened the doors to cheap labor and our politicians signed on the line.
+        cause: interests
+        evidence:
+          - {position: cs.decline.sold-out, w: 3}
+          - {position: labor.division.outsiders-undercut-us, w: 1}
+        next: arc.plant.03
+      - id: costs
+        text: Wages and taxes here priced us out. The unions pushed until the plant broke.
+        cause: interests
+        evidence:
+          - {position: unions.role.obstacle, w: 3}
+          - {position: labor.division.skill-and-effort, w: 1}
+        next: arc.plant.03
+      - id: nothing
+        text: Plants close. Nothing anyone in this valley did would have changed it.
+        cause: chance
+        evidence:
+          - {position: cs.not-political.keep-head-down, w: 1}
+        next: arc.plant.03
+
+  - id: arc.plant.03
+    type: pressure
+    title: The envelope
+    tests: solidarity.basis.shared-class
+    text: >
+      Management makes a new offer, one envelope at a time. Anyone over fifty who signs by Friday gets two
+      years' wages and a clause: no part in any action against the company. You are fifty-four. That is
+      €86,000 and a paid-off mortgage. If the over-fifties sign, the younger ones hold the gate alone.
+    why: This sets a large sum of your own money against the people beside you on the line.
+    conditions:
+      - id: family
+        text: It depends whether my family can manage without it.
+        evidence: [{position: change.means.individual-exit, w: 1}]
+    options:
+      - id: refuse
+        text: Don't sign. The envelope is there to split us.
+        pressure: principle
+        cost: You give up €86,000. The mortgage runs another eleven years.
+        set: {signed: false}
+        evidence:
+          - {position: solidarity.basis.shared-class, w: 3}
+        consequence: Thirty-one over-fifties sign anyway. Their names go round the floor by lunch.
+        next: arc.plant.04
+      - id: sign
+        text: Sign. You've given this place thirty-two years. Take what's yours.
+        pressure: interest
+        cost: Karim, twenty-nine, two kids, stops saying hello. The union loses a third of its oldest members.
+        set: {signed: true}
+        evidence:
+          - {position: change.means.individual-exit, w: 2}
+          - {position: unions.role.bargaining-agent, w: 1}
+        next: arc.plant.04
+      - id: sign-share
+        text: Sign, and put a quarter of it into the strike fund.
+        pressure: mixed
+        cost: You keep €64,000. The clause keeps you off the picket line, and some say the money is guilt.
+        set: {signed: true}
+        evidence:
+          - {position: solidarity.basis.shared-class, w: 1}
+          - {position: unions.role.bargaining-agent, w: 1}
+        next: arc.plant.04
+      - id: everyone
+        text: Refuse, and demand the same deal for every age, or nobody signs.
+        pressure: principle
+        cost: Management withdraws the envelopes on Friday. Your €86,000 is gone, maybe for nothing.
+        set: {signed: false}
+        evidence:
+          - {position: unions.role.class-organ, w: 3}
+        next: arc.plant.04
+
+  - id: arc.plant.04
+    type: escalation
+    title: The crane
+    recap: In a valley town in Wallonia, a tube plant is closing and its owners are shipping the machines abroad.
+    text: >
+      Five a.m. A court bailiff arrives with three flatbed trucks and a crane to take the presses to
+      Slovakia. Two hundred workers are sitting in the loading bay. Riot police form a line across the yard.
+      The mayor, who marched with you last month, asks everyone to let the law take its course. You are
+      standing between the crane and the bay.
+    why: The middle option is gone. This records which side you take when property and the people who work it collide.
+    options:
+      - id: sit
+        text: Sit down with them. The presses stay.
+        side: {axis: class, dir: dispossessed}
+        set: {held: true}
+        evidence:
+          - {position: change.means.strike-and-direct-action, w: 2}
+          - {position: workplace.conflict.structural-antagonism, w: 1}
+        consequence: The police hesitate, then pull back to wait for orders. The crane stays parked in the yard. The occupation begins.
+        next: [{if: {flag: {key: held, eq: true}}, to: arc.plant.05a}, {to: arc.plant.05b}]
+      - id: weld
+        text: Lock the gates and weld the bay doors shut. Nothing leaves until there's a buyer.
+        side: {axis: class, dir: dispossessed}
+        set: {held: true}
+        evidence:
+          - {position: change.means.strike-and-direct-action, w: 3}
+          - {position: property.private.natural-right, w: -2}
+        consequence: By noon the plant is occupied. The holding sues the union for damages, and you by name.
+        next: [{if: {flag: {key: held, eq: true}}, to: arc.plant.05a}, {to: arc.plant.05b}]
+      - id: step
+        text: Step aside. A court order is a court order, and the mayor is right.
+        side: {axis: class, dir: order}
+        set: {held: false}
+        evidence:
+          - {position: property.private.natural-right, w: 2}
+        consequence: The bay is cleared in forty minutes. Two arrests. The presses leave on the morning ferry.
+        next: [{if: {flag: {key: held, eq: true}}, to: arc.plant.05a}, {to: arc.plant.05b}]
+      - id: help
+        text: Help the crew load. The sooner the machines go, the sooner the severance is paid.
+        side: {axis: class, dir: order}
+        set: {held: false}
+        evidence:
+          - {position: property.private.natural-right, w: 1}
+          - {position: change.means.individual-exit, w: 2}
+        consequence: The trucks leave by eight. The severance is paid in March. Someone films you guiding the crane.
+        next: [{if: {flag: {key: held, eq: true}}, to: arc.plant.05a}, {to: arc.plant.05b}]
+      - id: home
+        text: Go home. This was decided in Luxembourg months ago.
+        side: {axis: class, dir: neither}
+        set: {held: false}
+        evidence:
+          - {position: cs.not-political.keep-head-down, w: 2}
+        consequence: You hear on the radio that the presses left by ferry. Your phone shows eleven missed calls.
+        next: [{if: {flag: {key: held, eq: true}}, to: arc.plant.05a}, {to: arc.plant.05b}]
+
+  - id: arc.plant.05a
+    type: tradeoff
+    title: Half a plant
+    text: >
+      Day nineteen of the occupation. The regional government has found an investor. He will restart one
+      line with 120 of the 340, at wages fifteen percent lower, and no union on site for three years. The
+      minister wants an answer by Monday. The assembly wants to know what you think.
+    why: This sets jobs now against the union that fought for them, and asks who should own what is left.
+    conditions:
+      - id: which-120
+        text: It depends who chooses the 120.
+        evidence: [{position: unions.role.bargaining-agent, w: 1}]
+    options:
+      - id: take
+        text: Take it. A hundred and twenty wages are a hundred and twenty families.
+        set: {deal: true}
+        evidence:
+          - {position: workplace.conflict.harmony-of-interests, w: 2}
+          - {position: unions.role.bargaining-agent, w: 1}
+        consequence: The investor picks the 120. Not one of them sat in the loading bay.
+        next: arc.plant.06
+      - id: union
+        text: No union, no deal. A plant without a union is a slower closure.
+        set: {deal: false}
+        evidence:
+          - {position: unions.role.class-organ, w: 3}
+        consequence: The investor walks. The occupation enters its second month and the strike fund its last week.
+        next: arc.plant.06
+      - id: public
+        text: Counter-offer. The region owns it, not an investor. It's public money either way.
+        set: {deal: false}
+        evidence:
+          - {position: firm.ownership.state, w: 3}
+        consequence: The minister says the treasury will not run a steel plant. A columnist calls the idea nostalgia.
+        next: arc.plant.06
+      - id: coop
+        text: Counter-offer. Lend the money to us instead, and we'll run it as a cooperative.
+        set: {deal: false}
+        evidence:
+          - {position: firm.ownership.worker-cooperatives, w: 3}
+        consequence: The cooperative federation backs the plan. The banks want the region to guarantee the loan. The region is thinking about it.
+        next: arc.plant.06
+      - id: rid
+        text: Take it, and good riddance to the union. The union drove the owners out in the first place.
+        set: {deal: true}
+        evidence:
+          - {position: unions.role.obstacle, w: 3}
+        consequence: The investor is delighted. Half the assembly stops speaking to you.
+        next: arc.plant.06
+
+  - id: arc.plant.05b
+    type: allocation
+    title: The fund
+    text: >
+      The plant is gone. The closure left a €3 million transition fund, and you sit on the committee that
+      divides it. The regional government has views. So do the parish priest, the food bank, and a man from
+      a logistics firm who would like a site with a rail spur. Divide ten points.
+    why: "This asks what a town should do after its industry leaves: bring capital back, own something itself, look after its own, or help people move on."
+    premises:
+      - id: no-fund
+        text: The premise that a fund can stand in for a plant.
+        evidence: [{position: change.means.strike-and-direct-action, w: 1}]
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: breaks
+          text: Tax breaks and a free site to bring in a new private employer
+          evidence: [{position: firm.ownership.private-investors, w: 1}]
+        - id: coop
+          text: Seed capital for former workers to start a cooperative on part of the site
+          evidence: [{position: firm.ownership.worker-cooperatives, w: 1}]
+        - id: bridge
+          text: Bridge pensions for everyone over fifty-five
+          evidence: [{position: unions.role.bargaining-agent, w: 1}]
+        - id: retrain
+          text: Retraining courses and moving grants for jobs elsewhere
+          evidence: [{position: change.means.individual-exit, w: 1}]
+        - id: sue
+          text: A legal fund to make the holding repay the subsidies it took
+          evidence: [{position: workplace.conflict.structural-antagonism, w: 1}]
+    options:
+      - id: done
+        text: Done
+        next: arc.plant.06
+
+  - id: arc.plant.06
+    type: line
+    title: The depot
+    text: >
+      A year on, a parcel depot opens beside the old plant. Four hundred jobs, most of them through
+      agencies. The council asks your former-workers' association whom it should press the depot to hire
+      first. Here is the list. Where do you draw the line?
+    cases:
+      - Former plant workers from the valley
+      - Anyone from the town, plant or not
+      - Belgians from other provinces
+      - Migrants who have lived in the town for ten years
+      - Workers posted from Romania by an agency, on Romanian social charges
+    why: This asks where you draw the edge of "our own" when jobs are scarce, and who you think undercuts whom.
+    premises:
+      - id: not-council
+        text: The premise that anyone but the employer should decide who it hires.
+        evidence: [{position: property.private.natural-right, w: 1}]
+    options:
+      - id: everyone
+        text: The whole list, on one contract and one wage. The agencies are the problem, not the Romanians.
+        evidence:
+          - {position: borders.migration.class-not-nation-link, w: 3}
+          - {position: solidarity.basis.shared-class, w: 1}
+        next: arc.plant.07
+      - id: residents
+        text: Everyone who lives here, wherever they were born. No posted workers on cheaper terms.
+        evidence:
+          - {position: borders.migration.restrict-for-workers, w: 3}
+        next: arc.plant.07
+      - id: belgians
+        text: Belgians first. This country built that site and should get the jobs on it.
+        evidence:
+          - {position: labor.division.outsiders-undercut-us, w: 3}
+        next: arc.plant.07
+      - id: plant-first
+        text: The plant's own people first. They lost the most.
+        evidence:
+          - {position: workplace.conflict.mutual-duties, w: 1}
+          - {position: unions.role.bargaining-agent, w: 1}
+        next: arc.plant.07
+      - id: no-line
+        text: No line. Hire whoever does the job best. A depot isn't a charity.
+        evidence:
+          - {position: labor.division.skill-and-effort, w: 3}
+        next: arc.plant.07
+
+  - id: arc.plant.07
+    type: explanation
+    title: The letter back
+    text: >
+      Two years on, a letter reaches your association from the union at the Slovak plant. The holding is
+      closing them too and moving the lines to Vietnam. They ask what the valley learned. What do you write back?
+    why: This asks what kind of cause you reach for when you explain what happened to the valley.
+    premises:
+      - id: no-lesson
+        text: The premise that there was anything to learn.
+        evidence: [{position: cs.not-political.keep-head-down, w: 1}]
+    options:
+      - id: capital
+        text: The money goes wherever the wage is lowest and will keep going. Only workers in all three countries together can stop it.
+        cause: structures
+        evidence:
+          - {position: labor.division.core-periphery, w: 2}
+          - {position: workplace.conflict.structural-antagonism, w: 2}
+      - id: politicians
+        text: We were sold out by our own politicians. Go after yours.
+        cause: interests
+        evidence:
+          - {position: cs.decline.sold-out, w: 3}
+      - id: owners
+        text: Owners used to belong to a town. Now they belong nowhere and owe nobody anything.
+        cause: culture
+        evidence:
+          - {position: workplace.conflict.mutual-duties, w: 2}
+      - id: market
+        text: Work goes where it's done cheapest. Learn a trade the next move can't take.
+        cause: structures
+        evidence:
+          - {position: labor.division.skill-and-effort, w: 1}
+          - {position: change.means.individual-exit, w: 2}
+      - id: nothing
+        text: Nothing worth writing. Keep your head down and your savings up.
+        cause: chance
+        evidence:
+          - {position: cs.not-political.keep-head-down, w: 3}

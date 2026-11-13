@@ -1,0 +1,205 @@
+# Thinkers: the conservative family (Burkean, reactionary, one-nation,
+# Catholic social teaching, distributism, traditionalist, neoconservative,
+# paleoconservative, national conservative).
+thinkers:
+  - id: thinker.burke
+    name: Edmund Burke
+    born: 1729
+    died: 1797
+    region: Ireland / Great Britain
+    traditions: [conservatism.burkean]
+    summary: >
+      Irish-born Whig statesman who defended the American colonists and prosecuted Warren Hastings for
+      abuses in India, then denounced the French Revolution as the wreck of inherited order by abstract
+      reason. He held that rights, institutions and authority are an inheritance tested by time.
+    argues:
+      - {position: authority.legitimacy.prescription, in: {author: Edmund Burke, title: Speech on the Reform of the Representation of the Commons in Parliament, year: 1782}}
+      - {position: hist.french-revolution.burkean-catastrophe, in: {author: Edmund Burke, title: Reflections on the Revolution in France, year: 1790}}
+      - {position: rights.basis.inheritance, in: {author: Edmund Burke, title: Reflections on the Revolution in France, year: 1790}}
+      - {position: reform.revolution.change-to-conserve, in: {author: Edmund Burke, title: Reflections on the Revolution in France, year: 1790}}
+      - {position: wage.nature.voluntary-exchange, in: {author: Edmund Burke, title: Thoughts and Details on Scarcity, year: 1800, note: "written 1795, published posthumously"}}
+
+  - id: thinker.de-maistre
+    name: Joseph de Maistre
+    born: 1753
+    died: 1821
+    region: Savoy / Russia
+    traditions: [conservatism.reactionary, conservatism.monarchist]
+    summary: >
+      Savoyard magistrate and diplomat who read the French Revolution as divine punishment, held that
+      constitutions are made by God and time rather than written by men, and defended throne, altar and
+      the executioner as the props of social order.
+    argues:
+      - {position: history.motor.providence, in: {author: Joseph de Maistre, title: Considerations on France, year: 1797}}
+      - {position: hist.french-revolution.war-on-faith, in: {author: Joseph de Maistre, title: Considerations on France, year: 1797}}
+      - {position: authority.legitimacy.divine-ordinance, in: {author: Joseph de Maistre, title: Essay on the Generative Principle of Political Constitutions, year: 1814}}
+      - {position: human.nature.fallen, in: {author: Joseph de Maistre, title: St Petersburg Dialogues, year: 1821}}
+
+  - id: thinker.disraeli
+    name: Benjamin Disraeli
+    born: 1804
+    died: 1881
+    region: United Kingdom
+    traditions: [conservatism.one-nation]
+    summary: >
+      British novelist and Conservative prime minister who described England as two nations, rich and poor,
+      and called on the landed class to take up its duties to the poor. In office he widened the male
+      franchise, passed public health and factory laws, and made Victoria Empress of India.
+    argues:
+      - {position: workplace.conflict.mutual-duties, in: {author: Benjamin Disraeli, title: "Sybil, or The Two Nations", year: 1845}}
+      - {position: reform.revolution.change-to-conserve, in: {author: Benjamin Disraeli, title: Speech at the Crystal Palace, year: 1872}}
+
+  - id: thinker.leo-xiii
+    name: Pope Leo XIII
+    born: 1810
+    died: 1903
+    region: Italy / Holy See
+    traditions: [conservatism.cst, conservatism.integralism]
+    summary: >
+      Pope from 1878 to 1903 whose encyclical on capital and labor founded modern Catholic social teaching:
+      private property is a natural right, socialism is rejected, and employers owe workers a wage that
+      keeps a family in frugal decency. He also taught that the state must publicly profess the true
+      religion.
+    argues:
+      - {position: state.nature.ordained-authority, in: {author: Pope Leo XIII, title: Diuturnum, year: 1881}}
+      - {position: democracy.form.confessional-state, in: {author: Pope Leo XIII, title: Immortale Dei, year: 1885}}
+      - {position: property.private.natural-right, in: {author: Pope Leo XIII, title: Rerum Novarum, year: 1891}}
+      - {position: wage.nature.just-wage, in: {author: Pope Leo XIII, title: Rerum Novarum, year: 1891}}
+      - {position: workplace.conflict.mutual-duties, in: {author: Pope Leo XIII, title: Rerum Novarum, year: 1891}}
+
+  - id: thinker.pius-xi
+    name: Pope Pius XI
+    born: 1857
+    died: 1939
+    region: Italy / Holy See
+    traditions: [conservatism.cst]
+    summary: >
+      Pope from 1922 to 1939 who restated Catholic social teaching after the 1929 crash, naming
+      subsidiarity as a principle and proposing vocational orders to replace class conflict. He signed the
+      Lateran Treaty with Mussolini's government in 1929 and later condemned both Nazism and communism in
+      separate encyclicals.
+    argues:
+      - {position: property.private.social-function, in: {author: Pope Pius XI, title: Quadragesimo Anno, year: 1931}}
+      - {position: federalism.scale.subsidiarity, in: {author: Pope Pius XI, title: Quadragesimo Anno, year: 1931}}
+      - {position: class.concept.functional-estates, in: {author: Pope Pius XI, title: Quadragesimo Anno, year: 1931}}
+
+  - id: thinker.chesterton
+    name: G. K. Chesterton
+    born: 1874
+    died: 1936
+    region: England
+    traditions: [conservatism.distributism]
+    summary: >
+      English writer and Catholic convert who, with Hilaire Belloc, argued that the trouble with capitalism
+      is too few capitalists, and that productive property, land above all, should be spread among as many
+      families as possible.
+    argues:
+      - {position: family.form.natural-institution, in: {author: G. K. Chesterton, title: The Superstition of Divorce, year: 1920}}
+      - {position: capitalism.nature.concentrated-ownership, in: {author: G. K. Chesterton, title: The Outline of Sanity, year: 1926}}
+      - {position: firm.ownership.small-proprietors, in: {author: G. K. Chesterton, title: The Outline of Sanity, year: 1926}}
+
+  - id: thinker.schmitt
+    name: Carl Schmitt
+    born: 1888
+    died: 1985
+    region: Germany
+    traditions: [conservatism.reactionary, fascism.nazism]
+    summary: >
+      German jurist who defined the sovereign as whoever decides on the exception and politics as the
+      distinction of friend and enemy. He joined the Nazi party in 1933, publicly justified the killings of
+      June 1934, and lost his party offices in 1936; he never recanted.
+    argues:
+      - {position: emergency.powers.sovereign-exception, in: {author: Carl Schmitt, title: Dictatorship, year: 1921}}
+      - {position: law.nature.sovereign-decision, in: {author: Carl Schmitt, title: "Political Theology: Four Chapters on the Concept of Sovereignty", year: 1922}}
+      - {position: conflict.nature.friend-enemy, in: {author: Carl Schmitt, title: The Concept of the Political, year: 1927}}
+      - {position: world.order.civilizational-poles, in: {author: Carl Schmitt, title: The Großraum Order of International Law with a Ban on Intervention for Spatially Foreign Powers, year: 1939}}
+
+  - id: thinker.oakeshott
+    name: Michael Oakeshott
+    born: 1901
+    died: 1990
+    region: England
+    traditions: [conservatism.burkean]
+    summary: >
+      English philosopher who attacked rationalism in politics, the belief that society can be run from a
+      book of technique, and described the conservative disposition as preferring the familiar to the
+      unknown and present enjoyment to utopian bliss.
+    argues:
+      - {position: knowledge.basis.tradition, in: {author: Michael Oakeshott, title: Rationalism in Politics, year: 1947}}
+      - {position: change.tempo.slow-and-organic, in: {author: Michael Oakeshott, title: Rationalism in Politics and Other Essays, year: 1962, note: "essay \"On Being Conservative\" (1956)"}}
+
+  - id: thinker.kirk
+    name: Russell Kirk
+    born: 1918
+    died: 1994
+    region: United States
+    traditions: [conservatism.traditionalist]
+    summary: >
+      American man of letters whose history of Anglo-American conservative thought gave the post-war
+      American right a lineage from Burke, built on transcendent moral order, prescription, and the
+      conviction that society needs orders and classes.
+    argues:
+      - {position: morality.basis.natural-law, in: {author: Russell Kirk, title: The Conservative Mind, year: 1953}}
+      - {position: equality.concept.natural-hierarchy, in: {author: Russell Kirk, title: The Conservative Mind, year: 1953}}
+      - {position: liberty.concept.ordered-liberty, in: {author: Russell Kirk, title: The Roots of American Order, year: 1974}}
+
+  - id: thinker.scruton
+    name: Roger Scruton
+    born: 1944
+    died: 2020
+    region: England
+    traditions: [conservatism.burkean, conservatism.traditionalist]
+    summary: >
+      English philosopher who defended conservatism as love of home, of settled institutions and of the
+      nation as a territorial community of strangers, and who argued that ecology is a conservative cause.
+      He helped run underground seminars for dissidents in communist Czechoslovakia.
+    argues:
+      - {position: morality.basis.tradition, in: {author: Roger Scruton, title: The Meaning of Conservatism, year: 1980}}
+      - {position: nation.belonging.assimilation, in: {author: Roger Scruton, title: The Need for Nations, year: 2004}}
+      - {position: growth.ecology.home-and-stewardship, in: {author: Roger Scruton, title: "Green Philosophy: How to Think Seriously About the Planet", year: 2012}}
+
+  - id: thinker.kagan
+    name: Robert Kagan
+    born: 1958
+    died: null
+    region: United States
+    traditions: [conservatism.neo, liberalism.internationalist]
+    summary: >
+      American historian and co-founder of the Project for the New American Century who argues that the
+      world order since 1945 rests on American military power, and that the main rivalry of the age is
+      between liberal democracies and autocracies.
+    argues:
+      - {position: war.militarism.peace-through-strength, in: {author: Robert Kagan, title: "Of Paradise and Power: America and Europe in the New World Order", year: 2003}}
+      - {position: contradiction.primary.democracy-vs-autocracy, in: {author: Robert Kagan, title: The Return of History and the End of Dreams, year: 2008}}
+      - {position: world.order.american-primacy, in: {author: Robert Kagan, title: The World America Made, year: 2012}}
+
+  - id: thinker.pat-buchanan
+    name: Pat Buchanan
+    born: 1938
+    died: null
+    region: United States
+    traditions: [conservatism.paleo, conservatism.right-populism]
+    summary: >
+      American speechwriter for Nixon and Reagan and three-time presidential candidate who opposed free
+      trade agreements, foreign wars and mass immigration, and warned that low birth rates and immigration
+      would end the West as a civilization.
+    argues:
+      - {position: tax.purpose.tariffs-for-the-nation, in: {author: Patrick J. Buchanan, title: The Great Betrayal, year: 1998}}
+      - {position: world.order.restraint, in: {author: Patrick J. Buchanan, title: "A Republic, Not an Empire", year: 1999}}
+      - {position: population.question.too-few-births, in: {author: Patrick J. Buchanan, title: The Death of the West, year: 2002}}
+      - {position: borders.migration.restrict-national, in: {author: Patrick J. Buchanan, title: State of Emergency, year: 2006}}
+
+  - id: thinker.hazony
+    name: Yoram Hazony
+    born: 1964
+    died: null
+    region: Israel / United States
+    traditions: [conservatism.national]
+    summary: >
+      Israeli-American philosopher and organizer of the National Conservatism conferences who argues that
+      a world of independent nation-states beats any universal empire or federation, and that public life
+      should rest on the nation's inherited religion.
+    argues:
+      - {position: nationalism.kinds.virtue-of-nations, in: {author: Yoram Hazony, title: The Virtue of Nationalism, year: 2018}}
+      - {position: intl.institutions.globalist-overreach, in: {author: Yoram Hazony, title: The Virtue of Nationalism, year: 2018}}
+      - {position: religion.public.heritage-establishment, in: {author: Yoram Hazony, title: "Conservatism: A Rediscovery", year: 2022}}
