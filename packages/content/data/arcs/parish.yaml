@@ -89,23 +89,26 @@ nodes:
         evidence:
           - {position: workplace.conflict.mutual-duties, w: 2}
           - {position: workplace.conflict.structural-antagonism, w: -2}
+        next: arc.parish.03
       - id: interests
         text: The cutters and the hacienda want opposite things. The hall just made it visible.
         cause: structures
         evidence:
           - {position: workplace.conflict.structural-antagonism, w: 3}
+        next: arc.parish.03
       - id: mammon
         text: Both sides have put money above God. Wealth is held in trust, and the trust is broken.
         cause: divine
         evidence:
           - {position: inequality.justice.stewardship, w: 3}
+        next: arc.parish.03
       - id: envy
         text: Envy. The cutters look at the big house and want it. That's older than any union.
         cause: nature
         evidence:
           - {position: property.private.natural-right, w: 2}
           - {position: wage.nature.just-wage, w: -1}
-    next: arc.parish.03
+        next: arc.parish.03
 
   - id: arc.parish.02b
     type: voices
@@ -124,24 +127,27 @@ nodes:
         evidence:
           - {position: cs.not-political.everything-political, w: 3}
           - {position: religion.public.prophetic-church, w: 2}
+        next: arc.parish.03
       - id: villaflor
         text: Mr. Villaflor. The land is the family's, and the church guards souls, not fields.
         cause: ideas
         evidence:
           - {position: property.private.natural-right, w: 2}
           - {position: cs.not-political.faith-above-politics, w: 2}
+        next: arc.parish.03
       - id: one-body
         text: Both miss it. Owner and cutter owe each other duties; the church should remind both.
         cause: divine
         evidence:
           - {position: solidarity.basis.one-body, w: 2}
           - {position: workplace.conflict.mutual-duties, w: 2}
+        next: arc.parish.03
       - id: tiller
         text: Both miss it. The question isn't the hall. It's why one family owns the town's land.
         cause: structures
         evidence:
           - {position: property.land.to-the-tiller, w: 3}
-    next: arc.parish.03
+        next: arc.parish.03
 
   - id: arc.parish.03
     type: pressure
@@ -213,31 +219,43 @@ nodes:
         evidence:
           - {position: wage.nature.just-wage, w: 3}
           - {position: property.private.social-function, w: 1}
+        next:
+          - {if: {flag: {key: pulpit, eq: side}}, to: arc.parish.05a}
+          - {to: arc.parish.05b}
       - id: reconcile
         text: Preach reconciliation. Owner and worker are one body, and hatred poisons both.
         set: {pulpit: peace}
         evidence:
           - {position: solidarity.basis.one-body, w: 3}
           - {position: workplace.conflict.mutual-duties, w: 1}
+        next:
+          - {if: {flag: {key: pulpit, eq: side}}, to: arc.parish.05a}
+          - {to: arc.parish.05b}
       - id: gospel
         text: Preach the day's Gospel and nothing else. The pulpit is not a picket line.
         set: {pulpit: peace}
         evidence:
           - {position: cs.not-political.faith-above-politics, w: 3}
+        next:
+          - {if: {flag: {key: pulpit, eq: side}}, to: arc.parish.05a}
+          - {to: arc.parish.05b}
       - id: name
         text: Name the mill and the rate from the pulpit. Silence is a side too.
         set: {pulpit: side}
         evidence:
           - {position: religion.public.prophetic-church, w: 2}
           - {position: cs.not-political.everything-political, w: 2}
+        next:
+          - {if: {flag: {key: pulpit, eq: side}}, to: arc.parish.05a}
+          - {to: arc.parish.05b}
       - id: property
         text: Preach that what a family has built is theirs, and coveting it is a sin. Somebody has to.
         set: {pulpit: peace}
         evidence:
           - {position: property.private.natural-right, w: 3}
-    next:
-      - {if: {flag: {key: pulpit, eq: side}}, to: arc.parish.05a}
-      - {to: arc.parish.05b}
+        next:
+          - {if: {flag: {key: pulpit, eq: side}}, to: arc.parish.05a}
+          - {to: arc.parish.05b}
 
   - id: arc.parish.05a
     type: verdict
@@ -258,26 +276,30 @@ nodes:
         evidence:
           - {position: violence.political.revolutionary, w: 3}
           - {position: religion.public.prophetic-church, w: 1}
+        next: arc.parish.06
       - id: bishops
         text: With the bishops. A priest stands with the poor, never with a gun.
         evidence:
           - {position: violence.political.never, w: 3}
           - {position: religion.public.prophetic-church, w: 1}
+        next: arc.parish.06
       - id: law
         text: With the bishops, because a bad law is still safer than armed men deciding who lives.
         evidence:
           - {position: law.nature.rule-of-law, w: 3}
           - {position: violence.political.never, w: 1}
+        next: arc.parish.06
       - id: disobey
         text: "Neither. Break the unjust law in the open, unarmed, and take the consequences."
         evidence:
           - {position: law.nature.natural-law, w: 3}
           - {position: violence.political.never, w: 1}
+        next: arc.parish.06
       - id: souls
         text: Against both. The bishops and the rebels both forgot that the church's business is souls.
         evidence:
           - {position: cs.not-political.faith-above-politics, w: 3}
-    next: arc.parish.06
+        next: arc.parish.06
 
   - id: arc.parish.05b
     type: line
@@ -299,22 +321,25 @@ nodes:
         evidence:
           - {position: cs.not-political.faith-above-politics, w: 2}
           - {position: law.nature.rule-of-law, w: 1}
+        next: arc.parish.06
       - id: after-3
         text: After the third. Tell the truth about the wage. Don't touch anyone's field.
         evidence:
           - {position: wage.nature.just-wage, w: 2}
           - {position: property.private.natural-right, w: 1}
+        next: arc.parish.06
       - id: after-4
         text: After the fourth. Idle land should feed people; that's what land is for. Hiding fugitives isn't.
         evidence:
           - {position: property.private.social-function, w: 3}
           - {position: law.nature.rule-of-law, w: 1}
+        next: arc.parish.06
       - id: all
         text: All six. A church that stops halfway has chosen the hacienda.
         evidence:
           - {position: religion.public.prophetic-church, w: 3}
           - {position: law.nature.natural-law, w: 1}
-    next: arc.parish.06
+        next: arc.parish.06
 
   - id: arc.parish.06
     type: escalation
@@ -372,17 +397,19 @@ nodes:
         text: Go. Obedience is a vow, not a convenience.
         evidence:
           - {position: authority.legitimacy.divine-ordinance, w: 3}
+        next: arc.parish.08
       - id: stay
         text: Refuse to leave until the harvest is in. Let the petition run.
         evidence:
           - {position: religion.public.prophetic-church, w: 2}
           - {position: law.nature.natural-law, w: 1}
+        next: arc.parish.08
       - id: theirs
         text: Go, and tell the cutters to drop the petition. The fight is theirs, not their priest's.
         evidence:
           - {position: workplace.conflict.structural-antagonism, w: 1}
           - {position: authority.legitimacy.divine-ordinance, w: 1}
-    next: arc.parish.08
+        next: arc.parish.08
 
   - id: arc.parish.07b
     type: scene
@@ -397,21 +424,24 @@ nodes:
         text: Report the posters to the police. If she's done nothing, the law will protect her.
         evidence:
           - {position: police.role.public-safety, w: 3}
+        next: arc.parish.08
       - id: hide
         text: Hide her in a convent in Bacolod, then go to the human rights office with the poster.
         evidence:
           - {position: police.role.public-safety, w: -2}
           - {position: religion.public.prophetic-church, w: 2}
+        next: arc.parish.08
       - id: quit
         text: Tell her to leave the union and say so publicly. Her name comes off; she lives.
         evidence:
           - {position: cs.not-political.dangerous, w: 3}
+        next: arc.parish.08
       - id: pulpit
         text: Read every name on that poster from the pulpit on Sunday, and say they are your parishioners.
         evidence:
           - {position: religion.public.prophetic-church, w: 2}
           - {position: cs.not-political.everything-political, w: 2}
-    next: arc.parish.08
+        next: arc.parish.08
 
   - id: arc.parish.08
     type: reason

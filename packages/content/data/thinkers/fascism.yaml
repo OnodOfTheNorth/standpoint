@@ -1,0 +1,111 @@
+# Thinkers: the fascist family, represented descriptively with their record
+# (Italian fascism, National Socialism, national syndicalism, Radical
+# Traditionalism, identitarianism / New Right, neo-reaction).
+thinkers:
+  - id: thinker.mussolini
+    name: Benito Mussolini
+    born: 1883
+    died: 1945
+    region: Italy
+    traditions: [fascism.italian]
+    summary: >
+      Italian socialist journalist turned founder of fascism, head of government from 1922 to 1943. His
+      government abolished opposition parties and free trade unions, conquered Ethiopia with poison gas,
+      passed antisemitic racial laws in 1938, and entered the Second World War as Hitler's ally; partisans
+      shot him in April 1945.
+    argues:
+      - {position: war.militarism.war-ennobles, in: {author: Benito Mussolini, title: The Doctrine of Fascism, year: 1932, note: "first part drafted by Giovanni Gentile"}}
+      - {position: workplace.conflict.nation-above-class, in: {author: Benito Mussolini, title: The Doctrine of Fascism, year: 1932}}
+      - {position: party.system.corporative, in: {author: Benito Mussolini, title: The Doctrine of Fascism, year: 1932}}
+
+  - id: thinker.gentile
+    name: Giovanni Gentile
+    born: 1875
+    died: 1944
+    region: Italy
+    traditions: [fascism.italian]
+    summary: >
+      Italian idealist philosopher, Mussolini's first education minister, who gave fascism its philosophy
+      of the ethical state: the individual is fully real only within the state, which embraces the whole
+      of life. Partisans killed him in Florence in 1944.
+    argues:
+      - {position: totalitarianism.concept.total-state-ideal, in: {author: Giovanni Gentile, title: Origins and Doctrine of Fascism, year: 1927}}
+      - {position: state.nature.organic-nation, in: {author: Giovanni Gentile, title: The Philosophic Basis of Fascism, year: 1928}}
+
+  - id: thinker.hitler
+    name: Adolf Hitler
+    born: 1889
+    died: 1945
+    region: Austria / Germany
+    traditions: [fascism.nazism]
+    summary: >
+      Austrian-born leader of the National Socialist party and dictator of Germany from 1933 to 1945. His
+      government destroyed the labor movement and all opposition, launched the Second World War in Europe,
+      and carried out the Holocaust, murdering six million Jews along with Roma, disabled people, Soviet
+      prisoners of war and others.
+    argues:
+      - {position: nation.belonging.descent, in: {author: Adolf Hitler, title: Mein Kampf, year: 1925}}
+      - {position: history.motor.peoples-in-struggle, in: {author: Adolf Hitler, title: Mein Kampf, year: 1925}}
+      - {position: capitalism.nature.usury-finance, in: {author: Adolf Hitler, title: Mein Kampf, year: 1925, note: "vol. 1, ch. 8, on Gottfried Feder's \"breaking of interest slavery\""}}
+      - {position: authority.legitimacy.leader-embodiment, in: {author: Adolf Hitler, title: Mein Kampf, year: 1925}}
+
+  - id: thinker.primo-de-rivera
+    name: José Antonio Primo de Rivera
+    born: 1903
+    died: 1936
+    region: Spain
+    traditions: [fascism.national-syndicalism]
+    summary: >
+      Spanish lawyer, son of the dictator Miguel Primo de Rivera, who founded the Falange in 1933 on a
+      program of national syndicalism, vertical unions and national unity above class and party. The
+      Republic executed him in November 1936; Franco's state then made the Falange its single party.
+    argues:
+      - {position: violence.political.regenerative, in: {author: José Antonio Primo de Rivera, title: Speech at the Founding of Falange Española, year: 1933}}
+      - {position: unions.role.national-labor, in: {author: José Antonio Primo de Rivera, title: Programmatic Norms of the Falange (the 27 Points), year: 1934}}
+      - {position: party.system.corporative, in: {author: José Antonio Primo de Rivera, title: Programmatic Norms of the Falange (the 27 Points), year: 1934}}
+      - {position: finance.control.nationalize-credit, in: {author: José Antonio Primo de Rivera, title: Programmatic Norms of the Falange (the 27 Points), year: 1934, note: "point 14: nationalization of banking"}}
+
+  - id: thinker.evola
+    name: Julius Evola
+    born: 1898
+    died: 1974
+    region: Italy
+    traditions: [fascism.traditionalist]
+    summary: >
+      Italian esotericist who held that modern history is a fall from a sacred, hierarchical order of priests,
+      warriors and castes. He criticized fascism from the right, worked with the SS's research bodies during
+      the war, and after 1945 became a reference for Italy's post-war radical right.
+    argues:
+      - {position: progress.idea.decline-from-tradition, in: {author: Julius Evola, title: Revolt Against the Modern World, year: 1934}}
+      - {position: caste.question.sacred-order, in: {author: Julius Evola, title: Revolt Against the Modern World, year: 1934}}
+      - {position: equality.concept.natural-hierarchy, in: {author: Julius Evola, title: Men Among the Ruins, year: 1953}}
+
+  - id: thinker.de-benoist
+    name: Alain de Benoist
+    born: 1943
+    died: null
+    region: France
+    traditions: [fascism.identitarian]
+    summary: >
+      French writer and founder of the Nouvelle Droite, who borrowed Gramsci's idea of cultural hegemony for
+      the right, defends the right of every people to keep its own identity on its own soil, and opposes
+      liberal universalism, the market society and American power. He rejects the fascist label.
+    argues:
+      - {position: culture.strategy.metapolitics, in: {author: Alain de Benoist, title: Les Idées à l'endroit, year: 1979}}
+      - {position: nationalism.kinds.ethnopluralism, in: {author: Alain de Benoist and Charles Champetier, title: "Manifesto for a European Renaissance", year: 1999}}
+      - {position: growth.ecology.degrowth, in: {author: Alain de Benoist, title: "Demain, la décroissance ! Penser l'écologie jusqu'au bout", year: 2007}}
+
+  - id: thinker.yarvin
+    name: Curtis Yarvin
+    born: 1973
+    died: null
+    region: United States
+    traditions: [fascism.neoreaction]
+    summary: >
+      American software engineer who, writing as Mencius Moldbug, argued that elected government is a
+      sham run by universities and the press, which he called "the Cathedral", and that states should be
+      run like corporations under a single executive, with citizens free only to exit.
+    argues:
+      - {position: state.relation.market-exit, in: {author: Mencius Moldbug (Curtis Yarvin), title: "Patchwork: A Positive Vision", year: 2008}}
+      - {position: ideology.formation.elite-indoctrination, in: {author: Mencius Moldbug (Curtis Yarvin), title: A Gentle Introduction to Unqualified Reservations, year: 2009}}
+      - {position: democracy.form.monarchy, in: {author: Mencius Moldbug (Curtis Yarvin), title: A Gentle Introduction to Unqualified Reservations, year: 2009}}

@@ -1,0 +1,106 @@
+# Thinkers: political ecologies and technology currents (deep ecology,
+# neo-Malthusianism, resource optimism, longtermism, transhumanism,
+# right accelerationism, effective accelerationism).
+thinkers:
+  - id: thinker.naess
+    name: Arne Naess
+    born: 1912
+    died: 2009
+    region: Norway
+    traditions: [ecology.deep-ecology]
+    summary: >
+      Norwegian philosopher and mountaineer who distinguished "shallow" environmentalism, aimed at human
+      health and affluence, from deep ecology, which holds that all living beings have value in themselves
+      and that human numbers and consumption must fall.
+    argues:
+      - {position: nature.value.intrinsic, in: {author: Arne Naess, title: "The Shallow and the Deep, Long-Range Ecology Movement: A Summary", year: 1973}}
+      - {position: growth.ecology.deep-ecology, in: {author: Arne Naess, title: "Ecology, Community and Lifestyle", year: 1989, note: "revised English edition of Økologi, samfunn og livsstil (1976)"}}
+      - {position: population.question.too-many, in: {author: Arne Naess, title: "Ecology, Community and Lifestyle", year: 1989, note: "the deep ecology platform, point 4"}}
+
+  - id: thinker.ehrlich
+    name: Paul R. Ehrlich
+    born: 1932
+    died: null
+    region: United States
+    traditions: [ecology.neo-malthusian]
+    summary: >
+      American biologist whose 1968 bestseller predicted mass famines in the 1970s and urged population
+      control, including aid conditioned on birth-rate targets. The famines he forecast did not occur on
+      that scale; he lost a famous 1980 wager on resource prices to Julian Simon.
+    argues:
+      - {position: population.question.too-many, in: {author: Paul R. Ehrlich, title: The Population Bomb, year: 1968}}
+      - {position: ecology.crisis-cause.too-many-people, in: {author: Paul R. Ehrlich and Anne H. Ehrlich, title: The Population Explosion, year: 1990}}
+
+  - id: thinker.julian-simon
+    name: Julian L. Simon
+    born: 1932
+    died: 1998
+    region: United States
+    traditions: [ecology.ecomodernism]
+    summary: >
+      American economist who argued that human ingenuity is the ultimate resource, that more people mean
+      more problem-solvers, and that warnings of resource exhaustion and ecological collapse were
+      overstated; he won his 1980 wager with Paul Ehrlich on metal prices.
+    argues:
+      - {position: population.question.people-are-the-resource, in: {author: Julian L. Simon, title: The Ultimate Resource, year: 1981}}
+      - {position: ecology.crisis-cause.overstated, in: {author: Julian L. Simon and Herman Kahn, title: "The Resourceful Earth: A Response to Global 2000", year: 1984}}
+
+  - id: thinker.bostrom
+    name: Nick Bostrom
+    born: 1973
+    died: null
+    region: Sweden / United Kingdom
+    traditions: [technology.longtermism, technology.transhumanism]
+    summary: >
+      Swedish philosopher who founded Oxford's Future of Humanity Institute, argued that risks of human
+      extinction outweigh most other moral concerns, and warned that a superintelligent machine could
+      escape human control. He also defends human enhancement.
+    argues:
+      - {position: accelerationism.question.differential, in: {author: Nick Bostrom, title: "Existential Risks: Analyzing Human Extinction Scenarios and Related Hazards", year: 2002}}
+      - {position: transhumanism.question.yes-free-choice, in: {author: Nick Bostrom, title: In Defense of Posthuman Dignity, year: 2005}}
+      - {position: ai.risk.existential, in: {author: Nick Bostrom, title: "Superintelligence: Paths, Dangers, Strategies", year: 2014}}
+
+  - id: thinker.land
+    name: Nick Land
+    born: 1962
+    died: null
+    region: United Kingdom / China
+    traditions: [technology.r-acc, fascism.neoreaction]
+    summary: >
+      English philosopher, formerly at Warwick, who treats capitalism as an inhuman intelligence assembling
+      itself and urges its acceleration past humanism. Later, from Shanghai, he joined neo-reaction,
+      arguing for exit from elected government.
+    argues:
+      - {position: ai.risk.capital-becomes-mind, in: {author: Nick Land, title: Machinic Desire, year: 1993}}
+      - {position: accelerationism.question.right-acc, in: {author: Nick Land, title: "Fanged Noumena: Collected Writings 1987–2007", year: 2011, note: "collects \"Meltdown\" (1994)"}}
+      - {position: state.relation.market-exit, in: {author: Nick Land, title: The Dark Enlightenment, year: 2012}}
+
+  - id: thinker.andreessen
+    name: Marc Andreessen
+    born: 1971
+    died: null
+    region: United States
+    traditions: [technology.e-acc]
+    summary: >
+      American software entrepreneur and venture capitalist who co-wrote the first widely used web browser
+      and now argues that technology and growth are the moral good, that AI will save the world, and that
+      regulation and caution are the real danger.
+    argues:
+      - {position: ai.risk.accelerate, in: {author: Marc Andreessen, title: Why AI Will Save the World, year: 2023}}
+      - {position: accelerationism.question.effective-acc, in: {author: Marc Andreessen, title: The Techno-Optimist Manifesto, year: 2023}}
+      - {position: energy.transition.nuclear-abundance, in: {author: Marc Andreessen, title: The Techno-Optimist Manifesto, year: 2023}}
+
+  - id: thinker.kurzweil
+    name: Ray Kurzweil
+    born: 1948
+    died: null
+    region: United States
+    traditions: [technology.transhumanism]
+    summary: >
+      American inventor and Google engineer who holds that information technology improves at an
+      exponential rate, and forecasts a merger of human and machine intelligence, the "Singularity",
+      around 2045.
+    argues:
+      - {position: technology.nature.liberation, in: {author: Ray Kurzweil, title: The Age of Spiritual Machines, year: 1999}}
+      - {position: history.motor.technology, in: {author: Ray Kurzweil, title: "The Singularity Is Near: When Humans Transcend Biology", year: 2005}}
+      - {position: transhumanism.question.yes-free-choice, in: {author: Ray Kurzweil, title: "The Singularity Is Near: When Humans Transcend Biology", year: 2005}}
