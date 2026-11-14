@@ -1,0 +1,716 @@
+# Tension rules: historical verdicts. Mostly principle-application: one yardstick, two cases.
+tensions:
+  # ---- coups and assemblies ----
+  - id: tension.coup-1917-coup-1973
+    type: principle-application
+    between: [hist.russian-revolution.minority-coup, hist.chile-1973.saved-from-communism]
+    when:
+      all:
+        - {holdsAny: [hist.russian-revolution.minority-coup, hist.russian-revolution.crime-of-ideology]}
+        - {holdsAny: [hist.chile-1973.saved-from-communism, hist.chile-1973.chicago-miracle]}
+    prompt: >
+      You call October 1917 a coup: an armed minority seized power and shut down the elected
+      assembly. You also say Chile's armed forces saved the country in 1973, when they bombed
+      the presidential palace, removed an elected president and closed congress for sixteen
+      years. What separates the two, apart from which side won?
+    explain: >
+      Both verdicts concern the armed seizure of power from an elected body. Condemning one
+      and approving the other requires a criterion other than the seizure itself.
+    resolutions:
+      - id: drop-chile
+        text: Nothing that I can defend. A coup is a coup; Chile's was one too.
+        kind: yield
+        revise: hist.chile-1973.saved-from-communism
+        evidence: [{position: hist.chile-1973.tragedy-of-polarization, w: 2}]
+      - id: drop-1917
+        text: Then 1917 was a revolution with a real base, not just a coup.
+        kind: yield
+        revise: hist.russian-revolution.minority-coup
+        evidence: [{position: hist.russian-revolution.degenerated-under-siege, w: 2}]
+      - id: both
+        text: >
+          Both, because what matters is what each led to. One led to seventy years of one-party
+          rule. The other handed power back through a vote by 1990.
+        kind: hold
+        evidence: [{position: hist.chile-1973.saved-from-communism, w: 2}, {position: hist.chile-1973.chicago-miracle, w: 1}]
+      - id: frame
+        text: >
+          The framing is wrong: Allende had already broken the constitution. Chile's own Chamber
+          of Deputies said so in August 1973, weeks before the army moved.
+        kind: reject
+        evidence: [{position: hist.chile-1973.saved-from-communism, w: 2}, {position: violence.political.resistance-to-tyranny, w: 1}]
+
+  - id: tension.assembly-closed-congress-closed
+    type: principle-application
+    between: [hist.ussr-early.besieged-necessity, hist.chile-1973.peaceful-road-destroyed]
+    when:
+      all:
+        - {holdsAny: [hist.ussr-early.besieged-necessity, hist.russian-revolution.new-civilization]}
+        - {holdsAny: [hist.chile-1973.peaceful-road-destroyed, hist.chile-1973.first-neoliberal-laboratory]}
+    prompt: >
+      You condemn Chile's armed forces for overthrowing an elected government and closing
+      congress. You defend the Bolsheviks, who dispersed the Constituent Assembly in January
+      1918 after losing its election badly. Both closed an elected body by force. What makes
+      one a crime and the other a necessity?
+    explain: >
+      Both cases end an elected assembly by armed force. Condemning one and defending the
+      other needs a criterion that is not the act itself: the class served, the threat faced,
+      or what came after.
+    resolutions:
+      - id: drop-1918
+        text: Nothing. Closing the Assembly was the first step on a bad road.
+        kind: yield
+        revise: hist.ussr-early.besieged-necessity
+        evidence: [{position: hist.russian-revolution.soviets-betrayed, w: 2}, {position: hist.ussr-early.workers-democracy-lost, w: 1}]
+      - id: both
+        text: >
+          Both, because the question is which class an act serves. One assembly was dispersed
+          to keep power in the soviets; the other coup killed thousands to restore the owners.
+        kind: hold
+        evidence: [{position: state.nature.class-instrument, w: 2}, {position: hist.chile-1973.first-neoliberal-laboratory, w: 1}]
+      - id: frame
+        text: >
+          The framing is wrong: Chile proves that elected bodies protect no one when capital
+          decides to strike. The lesson is to be ready, not to be shocked.
+        kind: reject
+        evidence: [{position: hist.chile-1973.peaceful-road-a-trap, w: 3}]
+
+  - id: tension.democracies-and-chile
+    type: principle-application
+    between: [contradiction.primary.democracy-vs-autocracy, hist.chile-1973.saved-from-communism]
+    when:
+      all:
+        - {holdsAny: [contradiction.primary.democracy-vs-autocracy, war.militarism.democratic-peace, world.order.liberal-order]}
+        - {holdsAny: [hist.chile-1973.saved-from-communism, hist.chile-1973.chicago-miracle, hist.indonesia-1965.cold-war-prize]}
+    prompt: >
+      You say the great divide of our time is between elected governments and autocracies. You
+      also count the 1973 coup in Chile, or the 1965 overthrow in Indonesia, as a gain: elected
+      or constitutional governments replaced by generals, with the support of the elected
+      governments of the West. Which side of your divide were they on?
+    explain: >
+      Framing world politics as electoral government against autocracy implies supporting the
+      former. Approving Cold War coups that replaced such governments with military rule
+      requires ranking another value, usually anti-communism, above it.
+    resolutions:
+      - id: drop-coups
+        text: The wrong side. Those coups were a betrayal of what the West says it stands for.
+        kind: yield
+        revise: hist.chile-1973.saved-from-communism
+        evidence: [{position: hist.cold-war.counter-revolution-in-the-south, w: 2}]
+      - id: drop-divide
+        text: The real divide was never ballots. It was communism or not.
+        kind: yield
+        revise: contradiction.primary.democracy-vs-autocracy
+        evidence: [{position: hist.cold-war.victory-over-evil, w: 2}]
+      - id: both
+        text: >
+          Both, because a communist victory would have ended elections for good. A military
+          interlude that returns to the ballot is the lesser evil.
+        kind: hold
+        evidence: [{position: hist.cold-war.containment-won, w: 2}, {position: siege.governance.national-security-state, w: 1}]
+      - id: frame
+        text: >
+          The framing is wrong: the divide was never between systems but between great powers.
+          Each backed its own generals.
+        kind: reject
+        evidence: [{position: hist.cold-war.security-rivalry, w: 2}, {position: hist.cold-war.two-superpowers, w: 1}]
+
+  # ---- the dead, counted twice ----
+  - id: tension.dead-counted-right
+    type: principle-application
+    between: [hist.indonesia-1965.nation-saved, hist.ussr-stalin.totalitarian-twin]
+    when:
+      all:
+        - {holdsAny: [hist.indonesia-1965.nation-saved, hist.indonesia-1965.developmental-birth, hist.indonesia-1965.cold-war-prize]}
+        - {holdsAny: [hist.ussr-stalin.totalitarian-twin, hist.china-mao.utopian-catastrophe, hist.russian-revolution.crime-of-ideology]}
+    prompt: >
+      You judge Stalin's and Mao's dead as the verdict on their whole projects. You judge the
+      killing of hundreds of thousands of Indonesians in 1965 and 1966 as the cost of a nation
+      saved or a poverty that fell after. Is the toll the verdict, or is the outcome? You have
+      used each rule once.
+    explain: >
+      Mass killing is treated as decisive in one set of cases and as a cost outweighed by
+      results in another. A single standard would apply either the toll or the outcome to all
+      of them.
+    resolutions:
+      - id: drop-indonesia
+        text: The toll. Indonesia's killings were a crime whatever came after.
+        kind: yield
+        revise: hist.indonesia-1965.nation-saved
+        evidence: [{position: hist.indonesia-1965.crime-against-humanity, w: 3}]
+      - id: both
+        text: >
+          Both, because the purpose differs. The Indonesian killings were a war against an
+          armed threat that ended; the communist terror was the system itself and never ended.
+        kind: hold
+        evidence: [{position: hist.indonesia-1965.nation-saved, w: 2}, {position: totalitarianism.concept.novel-form, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: I never said the killings were good. I said Indonesia stayed
+          out of the Soviet camp, which is a different claim.
+        kind: reject
+        evidence: [{position: hist.indonesia-1965.cold-war-prize, w: 2}]
+
+  - id: tension.dead-counted-left
+    type: principle-application
+    between: [hist.ussr-stalin.socialism-built, hist.indonesia-1965.crime-against-humanity]
+    when:
+      all:
+        - {holdsAny: [hist.ussr-stalin.socialism-built, hist.china-mao.achievements-primary, hist.china-mao.continuing-revolution]}
+        - {holdsAny: [hist.indonesia-1965.crime-against-humanity, hist.indonesia-1965.western-backed-extermination, hist.chile-1973.first-neoliberal-laboratory]}
+    prompt: >
+      You call the Indonesian killings of 1965, or Chile's terror after 1973, crimes that still
+      await justice. You call the Soviet 1930s, or China's great famine, a terrible price paid
+      for building socialism. Is mass death a crime, or a cost? You have used each word once.
+    explain: >
+      Mass killing and famine are judged by their victims in one set of cases and by their
+      historical results in another. A single standard would apply the same word to both.
+    resolutions:
+      - id: drop-necessity
+        text: A crime, both times. Building socialism did not require those deaths.
+        kind: yield
+        revise: hist.ussr-stalin.socialism-built
+        evidence: [{position: hist.ussr-stalin.crimes-not-necessary, w: 3}]
+      - id: both
+        text: >
+          Both, because one built an industry that broke the Nazi army under siege, and the
+          other destroyed a movement to open a country to foreign capital. Ends and enemies
+          differ, and so does the judgment.
+        kind: hold
+        evidence: [{position: hist.ussr-stalin.socialism-built, w: 2}, {position: siege.governance.revolutionary-dictatorship, w: 1}]
+      - id: frame
+        text: >
+          The framing is wrong: the numbers on the Soviet and Chinese side were inflated by the
+          Cold War. I am not comparing like with like.
+        kind: reject
+        evidence: [{position: totalitarianism.concept.cold-war-weapon, w: 3}]
+
+  # ---- empires and nations ----
+  - id: tension.captive-nations-civilizing-empire
+    type: principle-application
+    between: [hist.ussr-late.captive-nations-empire, hist.decolonization.empire-left-order]
+    when:
+      all:
+        - {holdsAny: [hist.ussr-late.captive-nations-empire, hist.ussr-stalin.war-on-faith-and-nations, hist.collapse-1989.peoples-revolutions]}
+        - {holdsAny: [hist.decolonization.empire-left-order, imperialism.nature.civilizing-order]}
+    prompt: >
+      You say the Soviet Union held the nations of Eastern Europe captive, and that their
+      escape was a liberation. You say the British and French empires left railways, law and
+      parliaments behind, and that much went wrong after they left. Moscow also built
+      railways. What makes one an empire of captives and the other an empire of order?
+    explain: >
+      Both judgments concern rule over other nations by a larger power. Treating one as
+      captivity and the other as order requires a criterion other than foreign rule itself.
+    resolutions:
+      - id: drop-civilizing
+        text: Nothing. Empire is rule over people who did not choose it, British or Soviet.
+        kind: yield
+        revise: hist.decolonization.empire-left-order
+        evidence: [{position: hist.decolonization.self-determination, w: 3}]
+      - id: drop-captive
+        text: The Soviet bloc also brought schools, industry and order. I was harsher than the record.
+        kind: yield
+        revise: hist.ussr-late.captive-nations-empire
+        evidence: [{position: hist.ussr-late.security-and-decency, w: 2}]
+      - id: both
+        text: >
+          Both, because the British left courts, a free press and elections that outlived them.
+          The Soviets left secret police and a ruined economy.
+        kind: hold
+        evidence: [{position: imperialism.nature.civilizing-order, w: 2}, {position: totalitarianism.concept.novel-form, w: 1}]
+      - id: frame
+        text: >
+          The framing is wrong: the Eastern bloc was not an empire in the economic sense. Moscow
+          subsidized its allies with cheap oil instead of draining them.
+        kind: reject
+        evidence: [{position: hist.ussr-late.rear-base-of-liberation, w: 2}]
+
+  - id: tension.decolonization-and-1989
+    type: principle-application
+    between: [hist.decolonization.liberation-won, hist.collapse-1989.counter-revolution]
+    when:
+      all:
+        - {holdsAny: [hist.decolonization.liberation-won, hist.decolonization.self-determination, nation.question.self-determination-leninist]}
+        - {holdsAny: [hist.collapse-1989.counter-revolution, hist.collapse-1989.geopolitical-catastrophe]}
+    prompt: >
+      You call decolonization the century's great liberation: nations breaking away from the
+      powers that ruled them. In 1990 and 1991 the Baltic peoples, Ukrainians and Georgians
+      broke away from Moscow, many by referendum and in the streets. You call that a
+      counter-revolution or a catastrophe. Why does the right of exit not cover them?
+    explain: >
+      Self-determination is the principle behind approval of decolonization. The breakup of
+      the Soviet Union also involved nations voting to leave a multinational state.
+    resolutions:
+      - id: drop-counter
+        text: It covers them. The breakup was their right, whatever came after.
+        kind: yield
+        revise: hist.collapse-1989.counter-revolution
+        evidence: [{position: hist.collapse-1989.peoples-revolutions, w: 2}, {position: hist.collapse-1989.shock-therapy-blunder, w: 1}]
+      - id: both
+        text: >
+          Both, because the African colonies left an empire that drained them, while the Soviet
+          republics left a union that invested in them. The exit delivered them to Western
+          capital and NATO.
+        kind: hold
+        evidence: [{position: hist.collapse-1989.counter-revolution, w: 2}, {position: hist.ussr-late.rear-base-of-liberation, w: 1}]
+      - id: frame
+        text: >
+          The framing is wrong: the peoples did not dissolve the Soviet Union; its own officials
+          did, so they could own what they ran.
+        kind: reject
+        evidence: [{position: hist.collapse-1989.bureaucracy-became-owners, w: 3}]
+
+  - id: tension.just-war-and-the-empire
+    type: principle-application
+    between: [hist.ww2.just-war-against-fascism, hist.decolonization.empire-left-order]
+    when:
+      all:
+        - {holds: hist.ww2.just-war-against-fascism}
+        - {holdsAny: [hist.decolonization.empire-left-order, imperialism.nature.civilizing-order]}
+    prompt: >
+      You call the Second World War a just war of liberal democracies against fascism. Britain
+      fought it while ruling India without Indian consent; millions starved in Bengal in 1943
+      while grain was still being shipped out. You also say the empire left order behind. Was
+      the war against conquest, or against someone else's conquest?
+    explain: >
+      Justifying the war as a defense of self-government against conquest sits uneasily with
+      the defense of colonial rule by one of the main belligerents. The tension concerns the
+      standard, not the reality of fascism.
+    resolutions:
+      - id: drop-empire
+        text: Against someone else's. The empire was its own crime, and the war doesn't clean it.
+        kind: yield
+        revise: hist.decolonization.empire-left-order
+        evidence: [{position: hist.ww2.war-of-empires, w: 2}, {position: hist.ww2.several-wars-in-one, w: 1}]
+      - id: drop-just
+        text: Then it was a war of empires, and the colonial soldiers had no stake in it.
+        kind: yield
+        revise: hist.ww2.just-war-against-fascism
+        evidence: [{position: hist.ww2.war-of-empires, w: 3}]
+      - id: both
+        text: >
+          Both, because the Nazi empire planned extermination, the British did not. A flawed
+          empire fighting a genocidal one is still on the right side.
+        kind: hold
+        evidence: [{position: hist.ww2.just-war-against-fascism, w: 2}, {position: hist.ww2.holocaust-rupture, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: the war was won by the Soviet people, not by empires on either
+          side.
+        kind: reject
+        evidence: [{position: hist.ww2.soviet-people-decisive, w: 3}]
+
+  - id: tension.non-aligned-but-soviet-base
+    type: logical
+    between: [hist.cold-war.non-alignment, hist.ussr-late.rear-base-of-liberation]
+    when:
+      all:
+        - {holdsAny: [hist.cold-war.non-alignment, hist.cold-war.two-superpowers]}
+        - {holds: hist.ussr-late.rear-base-of-liberation}
+    prompt: >
+      You say the Cold War was a quarrel of the two superpowers fought on Southern soil, and
+      that standing apart from both was right. You also say the Soviet Union was the rear base
+      of the South's liberation: the guns in Angola, the loans to Cuba, the vetoes at the UN.
+      Was it one of the quarrelers, or one of the liberators?
+    explain: >
+      Equidistance between the two blocs and a view of one bloc as the ally of liberation
+      cannot both describe the Soviet role. Holding both requires distinguishing periods,
+      places or motives.
+    resolutions:
+      - id: drop-equal
+        text: The liberators' side. The two camps were not equal for the colonized.
+        kind: yield
+        revise: hist.cold-war.non-alignment
+        evidence: [{position: hist.cold-war.two-camps, w: 3}]
+      - id: drop-base
+        text: The quarrelers. Its help came with its own interests and its own invasions.
+        kind: yield
+        revise: hist.ussr-late.rear-base-of-liberation
+        evidence: [{position: hist.cold-war.two-superpowers, w: 2}, {position: hist.ussr-late.capitalism-restored-1956, w: 1}]
+      - id: both
+        text: >
+          Both, because non-alignment was a strategy for the South, not a moral equation. Take
+          the Soviet guns, keep your own course; that is what Nasser and Nehru did.
+        kind: hold
+        evidence: [{position: hist.cold-war.non-alignment, w: 2}, {position: intl.sovereignty.nations-set-own-course, w: 1}]
+      - id: frame
+        text: >
+          The framing is wrong: the liberation was won by the colonized themselves. Whoever
+          sent guns was an ally of convenience.
+        kind: reject
+        evidence: [{position: hist.decolonization.liberation-won, w: 3}]
+
+  # ---- revolutions and their rights ----
+  - id: tension.rights-of-man-haiti
+    type: principle-application
+    between: [hist.french-revolution.rights-of-man, hist.haitian-revolution.ruinous-race-war]
+    when: {holdsAll: [hist.french-revolution.rights-of-man, hist.haitian-revolution.ruinous-race-war]}
+    prompt: >
+      You say the French Revolution gave the world the rights of man. In Saint-Domingue the
+      enslaved took those rights at their word, rose, abolished slavery and founded Haiti. You
+      call that a race war that ruined the richest colony in the world. Whose rights were the
+      rights of man?
+    explain: >
+      The Haitian Revolution applied the universal claims of 1789 to the enslaved. Approving
+      the claims while condemning their application in Haiti requires a reason the universal
+      did not reach there.
+    resolutions:
+      - id: drop-ruin
+        text: Everyone's. Haiti was the revolution that meant it.
+        kind: yield
+        revise: hist.haitian-revolution.ruinous-race-war
+        evidence: [{position: hist.haitian-revolution.universal-emancipation, w: 3}]
+      - id: drop-rights
+        text: Neither revolution delivered what it proclaimed. Abstract rights led to blood in both.
+        kind: yield
+        revise: hist.french-revolution.rights-of-man
+        evidence: [{position: hist.french-revolution.ideas-to-terror, w: 2}]
+      - id: both
+        text: >
+          Both, because I welcome the ends and mourn the means. Emancipation was right; the
+          massacres of 1804 and the ruin of the economy were not.
+        kind: hold
+        evidence: [{position: hist.haitian-revolution.ruinous-race-war, w: 1}, {position: violence.political.never, w: 1}]
+      - id: frame
+        text: >
+          The framing is wrong: Haiti wasn't ruined by its revolution. It was ruined by the debt
+          France forced on it in 1825 as the price of recognition.
+        kind: reject
+        evidence: [{position: hist.haitian-revolution.made-to-pay, w: 3}]
+
+  - id: tension.burke-and-regime-change
+    type: principle-application
+    between: [hist.french-revolution.burkean-catastrophe, intervention.humanitarian.spread-liberty]
+    when:
+      all:
+        - {holdsAny: [hist.french-revolution.burkean-catastrophe, hist.french-revolution.ideas-to-terror]}
+        - {holds: intervention.humanitarian.spread-liberty}
+    prompt: >
+      You say the French Revolution was a catastrophe: men with abstract principles tore up an
+      inherited order and got terror. You also back using military power to remove tyrants and
+      install liberal government abroad. Iraq in 2003 had an inherited order too. What did
+      the abstract principles get there?
+    explain: >
+      The Burkean case against 1789 is a case against remaking a society from first principles.
+      Armed promotion of liberal government abroad is an attempt to remake a society from first
+      principles, by outsiders.
+    resolutions:
+      - id: drop-spread
+        text: The same thing. Nations can't be rebuilt from a blueprint, by revolutionaries or by armies.
+        kind: yield
+        revise: intervention.humanitarian.spread-liberty
+        evidence: [{position: intervention.humanitarian.national-interest-only, w: 2}, {position: world.order.restraint, w: 2}]
+      - id: both
+        text: >
+          Both, because liberal government is not an abstraction but an inheritance, England's
+          and America's. Exporting a tested order is not the same as inventing one.
+        kind: hold
+        evidence: [{position: intervention.humanitarian.spread-liberty, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: Iraq failed on execution, not principle. Germany and Japan were
+          remade after 1945.
+        kind: reject
+        evidence: [{position: war.militarism.democratic-peace, w: 2}]
+
+  - id: tension.nonviolence-and-haiti
+    type: principle-application
+    between: [violence.political.never, hist.haitian-revolution.universal-emancipation]
+    when:
+      all:
+        - {holdsAny: [violence.political.never, hist.decolonization.nonviolent-victory]}
+        - {holdsAny: [hist.haitian-revolution.universal-emancipation, hist.haitian-revolution.black-sovereignty, hist.vietnamese-revolution.national-liberation]}
+    prompt: >
+      You say political violence is never right, and that nonviolence is also stronger. You
+      also honor a liberation that was won by arms: Haiti's enslaved, or Vietnam's long war.
+      Neither would have happened by marches. Do you honor what they won and not how they won
+      it, and is that possible?
+    explain: >
+      A principled rejection of political violence applies to armed liberation as well. Honoring
+      liberations won by arms requires separating ends from means, or making an exception.
+    resolutions:
+      - id: drop-never
+        text: Never was too strong. People held in slavery or under occupation may fight.
+        kind: yield
+        revise: violence.political.never
+        evidence: [{position: violence.political.anti-colonial, w: 3}]
+      - id: both
+        text: >
+          Both, because I can honor the courage and grieve the method. A liberation won by arms
+          carries its violence forward, and Haiti and Vietnam both paid for that.
+        kind: hold
+        evidence: [{position: violence.political.never, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: I never meant self-defense. The enslaved defending themselves
+          is not the violence I reject.
+        kind: reject
+        evidence: [{position: violence.political.self-defense, w: 3}]
+
+  - id: tension.venezuela-and-sanctions
+    type: principle-application
+    between: [hist.venezuela.socialism-wrecked-it, intl.sanctions.legitimate-tool]
+    when: {holdsAll: [hist.venezuela.socialism-wrecked-it, intl.sanctions.legitimate-tool]}
+    prompt: >
+      You say sanctions are a legitimate tool: they work by making an economy hurt. The US put
+      financial sanctions on Venezuela in 2017 and cut off its oil sales in 2019. You also say
+      the collapse was socialism's doing alone. If the sanctions did nothing, why impose them?
+      If they did something, how much of the collapse is theirs?
+    explain: >
+      Sanctions are justified by their effect on the target economy. Attributing an economy's
+      collapse entirely to its government's policy implies the sanctions imposed on it had no
+      effect.
+    resolutions:
+      - id: drop-alone
+        text: Not alone, then. Socialism wrecked it; sanctions finished the job, on purpose.
+        kind: yield
+        revise: hist.venezuela.socialism-wrecked-it
+        evidence: [{position: intl.sanctions.legitimate-tool, w: 1}]
+      - id: drop-sanctions
+        text: If sanctions hit whole peoples that hard, I can't call them a clean tool.
+        kind: yield
+        revise: intl.sanctions.legitimate-tool
+        evidence: [{position: intl.sanctions.targeted-for-rights, w: 2}]
+      - id: both
+        text: >
+          Both, because the collapse came first. Output was already falling in 2014, years before
+          the oil sanctions; they were aimed at the rulers who caused it.
+        kind: hold
+        evidence: [{position: hist.venezuela.socialism-wrecked-it, w: 2}, {position: intl.sanctions.targeted-for-rights, w: 1}]
+      - id: frame
+        text: >
+          The framing is wrong: it was neither socialism nor sanctions but oil. Any petro-state
+          collapses when the price falls by half.
+        kind: reject
+        evidence: [{position: hist.venezuela.petrostate, w: 3}]
+
+  # ---- settlement here and there ----
+  - id: tension.settlement-here-not-there
+    type: principle-application
+    between: [settler.colonialism.just-settlement, hist.nakba-1948.planned-expulsion]
+    when:
+      all:
+        - {holdsAny: [settler.colonialism.just-settlement, settler.colonialism.all-nations-conquest]}
+        - {holdsAny: [hist.nakba-1948.planned-expulsion, hist.nakba-1948.ongoing-structure]}
+    prompt: >
+      You say your own country's settlement was legitimate, or that every nation began in
+      conquest and the past is closed. You call the expulsion of some 700,000 Palestinians in
+      1948 a planned ethnic cleansing. Settlers came, the people already there were displaced,
+      a state was founded. What makes one founding closed and the other open?
+    explain: >
+      Both judgments concern the founding of a state through settlement and displacement.
+      Treating one as settled history and the other as a live wrong requires a criterion such
+      as date, method or present conditions.
+    resolutions:
+      - id: drop-closed
+        text: Nothing. If 1948 is still open, so is my own country's founding.
+        kind: yield
+        revise: settler.colonialism.just-settlement
+        evidence: [{position: settler.colonialism.historical-wrong-reconcile, w: 2}, {position: settler.colonialism.ongoing-structure, w: 1}]
+      - id: drop-nakba
+        text: Then 1948 belongs with the other foundings, a war, with expulsions on both sides.
+        kind: yield
+        revise: hist.nakba-1948.planned-expulsion
+        evidence: [{position: hist.nakba-1948.born-of-war, w: 2}]
+      - id: both
+        text: >
+          Both, because the Palestinians are still in camps, under occupation and denied return.
+          The difference is not the founding but that it never stopped.
+        kind: hold
+        evidence: [{position: hist.nakba-1948.ongoing-structure, w: 3}]
+      - id: frame
+        text: >
+          The framing is wrong: I'm not judging foundings at all. Every one was a crime; only
+          what can still be repaired matters.
+        kind: reject
+        evidence: [{position: settler.colonialism.decolonize-citizenship, w: 2}]
+
+  - id: tension.settlement-there-not-here
+    type: principle-application
+    between: [settler.colonialism.ongoing-structure, hist.nakba-1948.war-of-independence]
+    when:
+      all:
+        - {holdsAny: [settler.colonialism.ongoing-structure, settler.colonialism.land-back, settler.colonialism.historical-wrong-reconcile]}
+        - {holdsAny: [hist.nakba-1948.war-of-independence, hist.nakba-1948.redemption, hist.nakba-1948.population-exchange]}
+    prompt: >
+      You say settlement in your own country was a wrong that still shapes it, and that
+      something is owed to the peoples displaced. You call 1948 Israel's war of independence,
+      or a return, or an exchange of populations. About 700,000 Palestinians left or were
+      driven out and not let back. Why is what is owed here not owed there?
+    explain: >
+      Both judgments concern the founding of a state through settlement and displacement.
+      Treating one as an ongoing wrong and the other as legitimate independence requires a
+      criterion such as prior connection to the land, persecution or war.
+    resolutions:
+      - id: drop-independence
+        text: It is owed there too. The refugees and their children have a claim.
+        kind: yield
+        revise: hist.nakba-1948.war-of-independence
+        evidence: [{position: hist.nakba-1948.born-of-war, w: 1}, {position: palestine.question.liberal-two-states, w: 1}]
+      - id: both
+        text: >
+          Both, because Jews were returning to their own ancestral land, fleeing genocide, with
+          nowhere else to go. Settlers in the Americas had a home to leave from.
+        kind: hold
+        evidence: [{position: hist.nakba-1948.war-of-independence, w: 2}, {position: palestine.question.labor-zionist, w: 1}]
+      - id: frame
+        text: >
+          The framing is wrong: comparisons like this exist to delegitimize one state among
+          all others. I judge each case on its own history.
+        kind: reject
+        evidence: [{position: hist.nakba-1948.war-of-independence, w: 2}]
+
+  # ---- strategy and practice ----
+  - id: tension.new-deal-from-below-elections
+    type: strategy-horizon
+    between: [hist.new-deal.won-from-below, elections.role.main-road]
+    when:
+      all:
+        - {holdsAny: [hist.new-deal.won-from-below, welfare.state.drain-and-threat]}
+        - {holds: elections.role.main-road}
+    prompt: >
+      You say the New Deal, or the welfare state, was forced out of the owners by strikes,
+      occupations and the fear of revolution. You also say elections are the main road to
+      changing society. In your own account, the votes came after the strikes. Which is the
+      road, and which is the vehicle?
+    explain: >
+      An account of reform as won by mass pressure outside elections points to strikes and
+      organization as the cause. Holding elections as the main road ranks the instrument the
+      account treats as secondary.
+    resolutions:
+      - id: drop-elections
+        text: The strikes are the road. Elections ratify what was already won.
+        kind: yield
+        revise: elections.role.main-road
+        evidence: [{position: elections.role.organize-instead, w: 3}]
+      - id: drop-below
+        text: Roosevelt won elections and passed laws. The strikes were noise around that.
+        kind: yield
+        revise: hist.new-deal.won-from-below
+        evidence: [{position: hist.new-deal.saved-capitalism, w: 2}]
+      - id: both
+        text: >
+          Both, because pressure without a government to legislate wins nothing lasting. The
+          street makes the demand; the ballot makes it law.
+        kind: hold
+        evidence: [{position: reform.revolution.non-reformist-reforms, w: 2}, {position: elections.role.main-road, w: 1}]
+      - id: frame
+        text: >
+          The framing is wrong: the New Deal disarmed labor. Neither its strikes nor its votes
+          are a model.
+        kind: reject
+        evidence: [{position: hist.new-deal.disarmed-labor, w: 3}]
+
+  - id: tension.legal-road-lesson-legal-party
+    type: theory-practice
+    between: [hist.chile-1973.peaceful-road-a-trap, practice.party-member]
+    when:
+      all:
+        - {holdsAny: [hist.chile-1973.peaceful-road-a-trap, hist.indonesia-1965.fatal-legal-road]}
+        - {practice: practice.party-member}
+        - {not: {practice: practice.revolutionary-org}}
+    prompt: >
+      You draw the lesson of Chile in 1973 or Indonesia in 1965: a mass legal party that leaves
+      the old state intact gets crushed. You belong to a political party, and not to a
+      revolutionary organization. What does your own party plan to do the day the army stops
+      taking orders?
+    explain: >
+      The lesson drawn from Chile and Indonesia concerns the vulnerability of legal mass parties.
+      Membership in a legal party without a revolutionary tie places the respondent in the kind
+      of organization the lesson warns about.
+    resolutions:
+      - id: drop-lesson
+        text: Maybe the lesson is narrower. Those were Cold War cases; times have changed.
+        kind: yield
+        revise: hist.chile-1973.peaceful-road-a-trap
+        evidence: [{position: hist.chile-1973.peaceful-road-destroyed, w: 2}]
+      - id: both
+        text: >
+          Both, because you build the forces you have. A legal party is where the people are
+          now; the lesson is to win the ranks of the army and police, not to leave the party.
+        kind: hold
+        evidence: [{position: reform.revolution.non-reformist-reforms, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: my party is not on the left, and the lesson I drew is that
+          polarization destroys countries.
+        kind: reject
+        evidence: [{position: hist.chile-1973.tragedy-of-polarization, w: 3}]
+
+  - id: tension.won-from-below-no-strike
+    type: theory-practice
+    between: [hist.new-deal.won-from-below, practice.strike]
+    when:
+      all:
+        - {holdsAny: [hist.new-deal.won-from-below, hist.nordic-model.labor-tamed-capital, welfare.state.social-citizenship]}
+        - {classIs: [core-workers, peripheral-workers, professional-managerial]}
+        - {answered: {node: module.practice.acts}}
+        - {answered: {node: module.practice.orgs}}
+        - {not: {practiceAny: [practice.strike, practice.union-member]}}
+    prompt: >
+      You say what workers have, the pensions, the weekend, the public health care, was won by
+      organized labor. You work for a wage or salary. You are not in a union and have not been
+      on strike. If those gains were won, who is keeping them won now?
+    explain: >
+      An account of social rights as won by organized labor implies that their defense depends
+      on organized labor too. A wage earner who holds the account without a union tie relies on
+      others to do it.
+    resolutions:
+      - id: drop-below
+        text: Maybe they were granted more than won. Good governments did it.
+        kind: yield
+        revise: hist.new-deal.won-from-below
+        evidence: [{position: hist.new-deal.saved-capitalism, w: 2}]
+      - id: both
+        text: >
+          Both, because my workplace has no union, or a union would get me fired. I vote and
+          argue for the gains; that is what is open to me.
+        kind: hold
+        evidence: [{position: elections.role.lesser-evil, w: 1}]
+      - id: frame
+        text: >
+          The framing is wrong: unions now defend their own members, not the gains for
+          everyone. Joining one wouldn't defend the public hospital.
+        kind: reject
+        evidence: [{position: unions.role.core-privilege, w: 2}, {position: unions.role.bargaining-agent, w: 1}]
+      - id: join
+        text: Fair. It's time I joined one.
+        kind: yield
+        evidence: [{position: unions.role.class-organ, w: 2}]
+
+  - id: tension.zapatista-autonomy-no-practice
+    type: theory-practice
+    between: [hist.zapatistas.autonomy-without-power, practice.mutual-aid]
+    when:
+      all:
+        - {holdsAny: [hist.zapatistas.autonomy-without-power, state.relation.exit-and-build]}
+        - {answered: {node: module.practice.acts}}
+        - {answered: {node: module.practice.orgs}}
+        - {not: {practiceAny: [practice.mutual-aid, practice.community-org, practice.direct-action, practice.tenant-assoc, practice.peasant-movement]}}
+    prompt: >
+      You say change comes by building autonomy from below beside the state, as the Zapatistas
+      did in Chiapas, rather than by taking power. Autonomy is built: schools, clinics, food,
+      assemblies, every week. You take part in no mutual aid, community group or tenants'
+      association. Where is yours being built?
+    explain: >
+      The Zapatista strategy replaces the seizure of state power with the slow construction of
+      self-governing institutions. Holding it without taking part in any such institution
+      leaves the strategy with no practice.
+    resolutions:
+      - id: drop-view
+        text: Maybe I admire it more than I hold it. It worked in Chiapas; I live somewhere else.
+        kind: yield
+        revise: hist.zapatistas.autonomy-without-power
+        evidence: [{position: hist.zapatistas.dead-end-without-power, w: 2}]
+      - id: both
+        text: >
+          Both, because where I live there is nothing to join yet. Admiring a model is how you
+          learn what to start.
+        kind: hold
+        evidence: [{position: hist.zapatistas.autonomy-without-power, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: what I admire is an indigenous people winning dignity on its
+          own land, not a strategy for me to copy.
+        kind: reject
+        evidence: [{position: hist.zapatistas.indigenous-land-and-dignity, w: 3}]

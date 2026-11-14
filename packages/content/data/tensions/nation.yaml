@@ -1,0 +1,767 @@
+# Tension rules: nation, land, migration, belonging, settler colonialism.
+tensions:
+  # ---- the core wage worker with a national-populist program ----
+  - id: tension.core-worker-national-populist
+    type: position-consciousness
+    between: [borders.migration.restrict-national, solidarity.basis.shared-class]
+    when:
+      all:
+        - {worldIs: [core]}
+        - {classIs: [core-workers, reserve-army]}
+        - {holdsAny: [borders.migration.restrict-national, cs.own-first.our-people-first, welfare.state.for-our-own, borders.migration.remigration]}
+        - {holdsAny: [solidarity.basis.shared-class, workplace.conflict.structural-antagonism, unions.role.class-organ, cs.rigged.system-rigged]}
+    prompt: >
+      You work for wages in a rich country. You say working people are up against the people
+      who own the place. You also want fewer foreigners let in and citizens served first. The
+      woman from abroad on the next line works for the same boss, at a lower rate. Is she on
+      your side of the fight, or on his?
+    explain: >
+      A class account puts the line between employer and employed. A national account puts it
+      between citizen and foreigner. A migrant worker stands on opposite sides of the two
+      lines, and an employer gains whenever the second line divides the first.
+    resolutions:
+      - id: drop-national
+        text: She's on my side. Keeping her out or down only helps the boss pay us both less.
+        kind: yield
+        revise: borders.migration.restrict-national
+        evidence: [{position: borders.migration.class-not-nation-link, w: 3}]
+      - id: drop-class
+        text: My people come first. The boss is a problem; losing my country is a bigger one.
+        kind: yield
+        revise: solidarity.basis.shared-class
+        evidence: [{position: solidarity.basis.kinship-nation, w: 3}]
+      - id: both
+        text: >
+          Both, because she is here and he brought her. Organize everyone already on the line,
+          and stop the bosses importing the next batch to undercut us.
+        kind: hold
+        evidence: [{position: borders.migration.restrict-for-workers, w: 3}, {position: labor.division.outsiders-undercut-us, w: 1}]
+      - id: frame
+        text: >
+          The framing is wrong: it's not about her. It's about the culture of the country my
+          kids grow up in, which no union contract covers.
+        kind: reject
+        evidence: [{position: borders.migration.restrict-national, w: 2}, {position: cs.decline.outsiders, w: 1}]
+
+  - id: tension.divide-and-rule-but-restrict
+    type: principle-application
+    between: [labor.division.divide-and-rule, borders.migration.restrict-for-workers]
+    when: {holdsAll: [labor.division.divide-and-rule, borders.migration.restrict-for-workers]}
+    prompt: >
+      You say bosses stir up division, and that underneath all workers share one interest. You
+      also want migration limited to protect wages. The border puts workers on two sides of a
+      line and gives one side fewer rights than the other. Is that line a division the bosses
+      stirred up, or one you want kept?
+    explain: >
+      Limiting migration to protect wages treats foreign workers as competitors to be kept out.
+      The divide-and-rule account treats such divisions as an employer strategy. The two meet
+      at the border.
+    resolutions:
+      - id: drop-restrict
+        text: The line helps the bosses. Organize the workers who come instead of keeping them out.
+        kind: yield
+        revise: borders.migration.restrict-for-workers
+        evidence: [{position: borders.migration.class-not-nation-link, w: 3}]
+      - id: drop-divide
+        text: Interests aren't one underneath. A worker who will take half my wage is a real threat.
+        kind: yield
+        revise: labor.division.divide-and-rule
+        evidence: [{position: labor.division.outsiders-undercut-us, w: 3}]
+      - id: both
+        text: >
+          Both, because the bosses' strategy is the open labor market. Closing it takes away the
+          tool they divide us with; it is not a division of its own.
+        kind: hold
+        evidence: [{position: borders.migration.restrict-for-workers, w: 2}, {position: migration.cause.employer-demand, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: migration would mostly stop if rich countries stopped draining
+          poor ones. The fight is over what drives people out.
+        kind: reject
+        evidence: [{position: borders.migration.right-to-stay, w: 3}, {position: migration.cause.drain, w: 2}]
+
+  - id: tension.small-owner-monopoly-migrants
+    type: position-consciousness
+    between: [capitalism.nature.crony-corrupted, migration.cause.elite-replacement]
+    when:
+      all:
+        - {classIs: [petty-bourgeoisie]}
+        - {holdsAny: [capitalism.nature.crony-corrupted, capitalism.nature.concentrated-ownership, cs.rigged.system-rigged]}
+        - {holdsAny: [migration.cause.elite-replacement, cs.decline.outsiders, borders.migration.remigration, migration.cause.welfare-magnet]}
+    prompt: >
+      You run a small business or work for yourself. You say the big players rig the market
+      against people like you. You also say newcomers are the country's problem. The chain
+      that undercut your prices, the bank that set your loan and the platform that takes your
+      cut: which of them came on a boat?
+    explain: >
+      The pressures on small owners come mostly from larger capital through prices, credit
+      and rents. Anger at that pressure directed at migrants leaves those mechanisms in place.
+    resolutions:
+      - id: drop-migrants
+        text: None of them. I've been aiming at the wrong people.
+        kind: yield
+        revise: migration.cause.elite-replacement
+        evidence: [{position: capitalism.nature.concentrated-ownership, w: 2}]
+      - id: drop-rigged
+        text: The market isn't rigged so much as hard. I compete; I'll take my chances.
+        kind: yield
+        revise: capitalism.nature.crony-corrupted
+        evidence: [{position: capitalism.nature.free-exchange, w: 2}]
+      - id: both
+        text: >
+          Both, because it's the same people. The big firms want cheap labor and open borders,
+          and the newcomers are what they import.
+        kind: hold
+        evidence: [{position: migration.cause.employer-demand, w: 2}, {position: contradiction.primary.globalism-vs-nations, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: this isn't about my business. A country is more than a market,
+          and what's happening to it would bother me if I were rich.
+        kind: reject
+        evidence: [{position: cs.decline.outsiders, w: 2}, {position: nation.belonging.descent, w: 1}]
+
+  - id: tension.migrant-closes-door
+    type: position-consciousness
+    between: [borders.migration.restrict-national]
+    when:
+      all:
+        - {situation: {field: migrant, in: [naturalized, resident, refugee]}}
+        - {holdsAny: [borders.migration.restrict-national, borders.migration.remigration, nation.belonging.descent]}
+    prompt: >
+      You came to this country from somewhere else. You also say it should take in few
+      newcomers, or that belonging passes by descent. Someone like you, ten years ago, would
+      have been the newcomer that rule kept out. What makes the rule right now?
+    explain: >
+      Restriction and belonging by descent apply to arrivals as a category. A respondent who
+      arrived through migration stands inside the category the position excludes.
+    resolutions:
+      - id: drop-restrict
+        text: It isn't right. I'd be a hypocrite to close a door I walked through.
+        kind: yield
+        revise: borders.migration.restrict-national
+        evidence: [{position: borders.migration.democratic-control, w: 1}, {position: nation.belonging.citizenship, w: 2}]
+      - id: both
+        text: >
+          Both, because I came legally, learned the language and worked. I want the country I
+          joined kept, not changed into the one I left.
+        kind: hold
+        evidence: [{position: borders.migration.legal-and-contributing, w: 3}, {position: nation.belonging.assimilation, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: who I am doesn't settle what's right. A rule can be right even
+          when it would have cost me.
+        kind: reject
+        evidence: [{position: borders.migration.democratic-control, w: 2}]
+
+  # ---- faith, strangers and borders ----
+  - id: tension.stranger-and-border
+    type: principle-application
+    between: [cs.own-first.the-stranger-too, borders.migration.restrict-national]
+    when:
+      all:
+        - {holds: cs.own-first.the-stranger-too}
+        - {holdsAny: [borders.migration.restrict-national, borders.migration.remigration, migration.cause.welfare-magnet]}
+    prompt: >
+      You say your own include the neighbor in need and the stranger at the door. You also want
+      fewer strangers let through the country's door. The family on the other side of the fence
+      has walked a thousand kilometers. Is the border the edge of the door you meant?
+    explain: >
+      The duty to the stranger is a personal and religious duty in most traditions that
+      hold it. Restrictive migration policy applies at the scale of the state. Holding both
+      requires saying whether the duty reaches policy.
+    resolutions:
+      - id: drop-restrict
+        text: It isn't. If the stranger is my own, the law should treat them so.
+        kind: yield
+        revise: borders.migration.restrict-national
+        evidence: [{position: borders.migration.right-to-stay, w: 2}]
+      - id: drop-stranger
+        text: My duty starts with my own people. The stranger comes after.
+        kind: yield
+        revise: cs.own-first.the-stranger-too
+        evidence: [{position: cs.own-first.widening-circles, w: 3}]
+      - id: both
+        text: >
+          Both, because charity binds the person and prudence binds the ruler. I feed the stranger
+          at my door; the state guards the common good of everyone inside it.
+        kind: hold
+        evidence: [{position: borders.migration.democratic-control, w: 2}, {position: cs.own-first.widening-circles, w: 1}]
+      - id: frame
+        text: >
+          The framing is wrong: the deepest help is letting people stay home in peace. Stop the
+          wars and the plunder that drive them out.
+        kind: reject
+        evidence: [{position: borders.migration.right-to-stay, w: 2}, {position: migration.cause.war-persecution, w: 1}]
+
+  - id: tension.conquest-closed-door
+    type: principle-application
+    between: [settler.colonialism.all-nations-conquest, cs.decline.outsiders]
+    when:
+      all:
+        - {holdsAny: [settler.colonialism.all-nations-conquest, settler.colonialism.just-settlement]}
+        - {holdsAny: [cs.decline.outsiders, borders.migration.restrict-national, borders.migration.remigration]}
+    prompt: >
+      You say your country was founded by settlers who arrived and built something, and that
+      the past is the past. You also say today's newcomers are changing the country for the
+      worse. The people who lived here before the settlers said the same about them. Why does
+      the door close behind your arrival?
+    explain: >
+      A legitimate settlement argument treats arrival and transformation of a country as
+      acceptable. Opposition to present migration treats them as harm. Holding both requires
+      a difference between the two arrivals.
+    resolutions:
+      - id: drop-closed
+        text: It shouldn't. A country built by arrivals has no ground to stop the next ones.
+        kind: yield
+        revise: borders.migration.restrict-national
+        evidence: [{position: borders.migration.democratic-control, w: 1}, {position: nation.belonging.multicultural, w: 2}]
+      - id: drop-settlement
+        text: Maybe the first arrival wasn't so legitimate either.
+        kind: yield
+        revise: settler.colonialism.just-settlement
+        evidence: [{position: settler.colonialism.historical-wrong-reconcile, w: 2}]
+      - id: both
+        text: >
+          Both, because the settlers built the nation that exists now, with its own law and
+          culture. Newcomers are joining that nation, and it has the right to set the terms.
+        kind: hold
+        evidence: [{position: nation.belonging.assimilation, w: 2}, {position: borders.migration.democratic-control, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: every people that survived kept its land by holding it. That is
+          what we are doing now.
+        kind: reject
+        evidence: [{position: nationalism.kinds.ethnopluralism, w: 2}, {position: nation.belonging.descent, w: 2}]
+
+  - id: tension.land-back-own-house
+    type: position-consciousness
+    between: [settler.colonialism.land-back]
+    when:
+      all:
+        - {holdsAny: [settler.colonialism.land-back, settler.colonialism.expropriate-redistribute]}
+        - {situation: {field: settler, in: [settler-descended]}}
+        - {situation: {field: housing, in: [own-mortgage, own-outright, landlord]}}
+    prompt: >
+      You say land and jurisdiction should go back to the nations it was taken from. You are
+      descended from settlers, and you own the ground your house stands on. Does your title
+      deed go back too, or does "land back" mean someone else's land?
+    explain: >
+      Land return in a settler state involves the property held by settler descendants,
+      including homeowners. Supporting it as a homeowner means supporting a claim on one's own
+      asset, or limiting the claim to public and corporate land.
+    resolutions:
+      - id: drop-land-back
+        text: Return of public land and jurisdiction, yes. Homes, no. I meant less than I said.
+        kind: yield
+        revise: settler.colonialism.land-back
+        evidence: [{position: settler.colonialism.historical-wrong-reconcile, w: 2}, {position: indigenous.sovereignty.within-state-rights, w: 1}]
+      - id: both
+        text: >
+          Both, because land back is jurisdiction, not eviction. My house can sit under an
+          indigenous nation's law, and I can pay its rent and taxes.
+        kind: hold
+        evidence: [{position: indigenous.sovereignty.inherent-nationhood, w: 2}, {position: settler.colonialism.land-back, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: a family home is not where the land is held. Mines, ranches,
+          forests and crown land are, and that is where return starts.
+        kind: reject
+        evidence: [{position: indigenous.sovereignty.land-is-the-question, w: 2}]
+      - id: cond
+        text: Yes, if the nation whose land it is asks for it. Their call, not mine.
+        kind: condition
+        evidence: [{position: settler.colonialism.land-back, w: 3}]
+
+  # ---- self-determination applied ----
+  - id: tension.consent-and-occupation
+    type: principle-application
+    between: [nation.question.wilsonian, palestine.question.revisionist]
+    when:
+      all:
+        - {holdsAny: [nation.question.wilsonian, nation.question.civic]}
+        - {holdsAny: [palestine.question.revisionist, palestine.question.religious-zionist, palestine.question.christian-zionist]}
+    prompt: >
+      You say peoples should govern themselves by consent. You also hold that Jewish
+      sovereignty should cover the whole land between the river and the sea. Around three
+      million Palestinians in the West Bank live under Israeli military authority and cannot
+      vote for the government that decides their land, roads and water. Whose consent
+      governs them?
+    explain: >
+      Government by consent requires that the governed have a say in who governs them.
+      Sovereignty over territory whose inhabitants are not citizens leaves that requirement
+      unmet, unless the inhabitants are given citizenship or a state of their own.
+    resolutions:
+      - id: drop-whole-land
+        text: Then the land has to be divided, or the people given votes.
+        kind: yield
+        revise: palestine.question.revisionist
+        evidence: [{position: palestine.question.liberal-two-states, w: 2}, {position: palestine.question.labor-zionist, w: 1}]
+      - id: drop-consent
+        text: Consent is a fine principle for nations at peace. This one is at war.
+        kind: yield
+        revise: nation.question.wilsonian
+        evidence: [{position: palestine.question.revisionist, w: 2}]
+      - id: both
+        text: >
+          Both, because consent requires a partner that accepts your existence. Self-rule for
+          Palestinians now; full rights when the threat to Israel ends.
+        kind: hold
+        evidence: [{position: palestine.question.revisionist, w: 1}, {position: siege.governance.emergency-with-sunset, w: 1}]
+      - id: frame
+        text: >
+          The framing is wrong: this land was promised by God, and a promise of God is not
+          put to a vote.
+        kind: reject
+        evidence: [{position: palestine.question.religious-zionist, w: 3}]
+
+  - id: tension.liberation-and-consent
+    type: principle-application
+    between: [nation.question.wilsonian, palestine.question.liberation-of-all-palestine]
+    when:
+      all:
+        - {holdsAny: [nation.question.wilsonian, nation.question.civic, nation.question.self-determination-leninist]}
+        - {holdsAny: [palestine.question.liberation-of-all-palestine, palestine.question.islamist-resistance]}
+    prompt: >
+      You say peoples have the right to govern themselves. You also want all of Palestine
+      liberated, from the river to the sea. About seven million Jewish Israelis live there now,
+      most of them born there. In the Palestine you want, what is their place, and who asked
+      them?
+    explain: >
+      Self-determination is usually claimed for peoples, and Jewish Israelis are a settled
+      population of several generations. Liberating the whole territory requires saying
+      whether they are a people with that right, citizens of a new state, or neither.
+    resolutions:
+      - id: one-state
+        text: Equal citizens in one democratic state. Liberation ends a system, not a people.
+        kind: yield
+        revise: palestine.question.liberation-of-all-palestine
+        evidence: [{position: palestine.question.one-democratic-state, w: 3}]
+      - id: drop-consent
+        text: Settlers don't get a vote on decolonization. The colonized decide.
+        kind: yield
+        revise: nation.question.wilsonian
+        evidence: [{position: settler.colonialism.ongoing-structure, w: 2}]
+      - id: both
+        text: >
+          Both, because liberation is self-determination for the people that was expelled.
+          Those who stay as equals, without privilege, are welcome; the state that ranks them
+          is what goes.
+        kind: hold
+        evidence: [{position: palestine.question.liberation-of-all-palestine, w: 2}, {position: settler.colonialism.decolonize-citizenship, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: Palestine is a trust of the faith, and its order comes from God,
+          not from a count of who lives there.
+        kind: reject
+        evidence: [{position: palestine.question.islamist-resistance, w: 3}]
+
+  - id: tension.secession-except-kurds
+    type: principle-application
+    between: [nation.question.self-determination-leninist, hist.rojava.separatist-proxy]
+    when:
+      all:
+        - {holdsAny: [nation.question.self-determination-leninist, intl.sovereignty.oppressed-nations-first, nationalism.kinds.oppressed-oppressor]}
+        - {holdsAny: [hist.rojava.separatist-proxy, hist.rojava.pkk-threat]}
+    prompt: >
+      You say every oppressed nation may govern itself, and that oppressor states may not hold
+      it by force. You also call Kurdish self-rule in northern Syria a separatist project or a
+      security threat. The Kurds have been denied a state for a century. Why does the right
+      stop at them?
+    explain: >
+      The right of oppressed nations to self-determination is general. Excluding a stateless
+      people that claims it requires an argument about who the oppressor is, who backs the
+      claim, or whether this is a nation.
+    resolutions:
+      - id: drop-verdict
+        text: It doesn't stop. The Kurds have the same right as anyone.
+        kind: yield
+        revise: hist.rojava.separatist-proxy
+        evidence: [{position: hist.rojava.kurdish-self-determination, w: 3}]
+      - id: both
+        text: >
+          Both, because a national right exercised under a US garrison stops being self-
+          determination. Who protects you decides whom you serve.
+        kind: hold
+        evidence: [{position: hist.rojava.separatist-proxy, w: 2}, {position: contradiction.primary.imperialism-vs-oppressed, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: Syria is the oppressed nation here, under sanctions and
+          occupation. Breaking it up serves the empire, whoever does the breaking.
+        kind: reject
+        evidence: [{position: intl.sovereignty.nations-set-own-course, w: 2}]
+      - id: cond
+        text: Self-rule inside Syria, yes. A new state carved out by foreign armies, no.
+        kind: condition
+        evidence: [{position: indigenous.sovereignty.within-state-rights, w: 1}, {position: nation.question.cultural-autonomy, w: 2}]
+
+  - id: tension.oppressed-nation-all-bourgeois
+    type: position-consciousness
+    between: [nationalism.kinds.all-bourgeois]
+    when:
+      all:
+        - {situation: {field: nation-place, in: [oppressed-nation]}}
+        - {holdsAny: [nationalism.kinds.all-bourgeois, nation.question.no-abstract-right, intl.sovereignty.class-over-nation]}
+    prompt: >
+      Your people are ruled by another nation. You also say every nationalism ties workers to
+      their own bosses, and that national rights are a trap. When your language is banned in
+      school or your town is policed by another people's army, what do you tell your neighbors
+      to do about it?
+    explain: >
+      Rejection of nationalism as such treats oppressor and oppressed nationalisms alike. For
+      a member of an oppressed nation, it means opposing the movement that most of their own
+      people turn to against that oppression.
+    resolutions:
+      - id: drop-all-bourgeois
+        text: Fight it as a nation. The oppressed nation's struggle is different.
+        kind: yield
+        revise: nationalism.kinds.all-bourgeois
+        evidence: [{position: nationalism.kinds.oppressed-oppressor, w: 3}]
+      - id: both
+        text: >
+          Both, because our bosses will sell us the moment independence pays them. Fight the
+          oppression together with the workers of the ruling nation, never under our own owners.
+        kind: hold
+        evidence: [{position: nation.question.no-abstract-right, w: 2}, {position: solidarity.basis.shared-class, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: the nation-state is the trap. Self-government without a state,
+          community by community, is the answer.
+        kind: reject
+        evidence: [{position: nation.question.democratic-nation, w: 3}]
+
+  - id: tension.civic-but-descent
+    type: logical
+    between: [nationalism.kinds.civic-good-ethnic-bad, nation.belonging.descent]
+    when: {holdsAll: [nationalism.kinds.civic-good-ethnic-bad, nation.belonging.descent]}
+    prompt: >
+      You say civic patriotism is healthy and nationalism by blood is dangerous. You also say
+      belonging to the nation passes by descent. A child born here to parents from elsewhere
+      grows up speaking your language and voting in your elections. By your second rule,
+      which nation is hers?
+    explain: >
+      Civic nationalism defines the nation by shared institutions and citizenship. Belonging
+      by descent is the defining claim of ethnic nationalism. The two give different answers
+      for the children of immigrants.
+    resolutions:
+      - id: drop-descent
+        text: Ours. Birth and life here make her one of us.
+        kind: yield
+        revise: nation.belonging.descent
+        evidence: [{position: nation.belonging.citizenship, w: 3}]
+      - id: drop-civic
+        text: The civic story is a polite fiction. Peoples are real and they are inherited.
+        kind: yield
+        revise: nationalism.kinds.civic-good-ethnic-bad
+        evidence: [{position: nation.question.ethnic, w: 2}]
+      - id: both
+        text: >
+          Both, because descent is how most belonging passes and law is how newcomers enter it.
+          She can belong; it takes a generation, not a passport.
+        kind: hold
+        evidence: [{position: nation.belonging.assimilation, w: 3}]
+      - id: frame
+        text: >
+          The framing is wrong: nations are recent inventions. Neither blood nor law gives
+          them a natural claim on anyone.
+        kind: reject
+        evidence: [{position: nation.question.constructed, w: 3}]
+
+  - id: tension.open-borders-welfare
+    type: strategy-horizon
+    between: [borders.migration.open-borders, welfare.state.social-citizenship]
+    when:
+      all:
+        - {holdsAny: [borders.migration.open-borders, borders.migration.no-borders]}
+        - {holdsAny: [welfare.state.social-citizenship, welfare.conditions.universal-entitlement, health.care.national-service]}
+    prompt: >
+      You want borders open to anyone who wants to come. You also want universal welfare:
+      health care, pensions and housing for everyone who lives here. Both are generous. The
+      first makes "everyone who lives here" a number nobody can predict. What happens to the
+      second when that number doubles?
+    explain: >
+      Universal welfare states are financed by a bounded population of contributors. Open
+      borders remove the bound. Holding both requires an account of how the welfare state
+      survives, or of why its survival does not depend on the bound.
+    resolutions:
+      - id: drop-open
+        text: Open borders have to wait for a stronger welfare state. Managed entry for now.
+        kind: yield
+        revise: borders.migration.open-borders
+        evidence: [{position: borders.migration.democratic-control, w: 2}]
+      - id: drop-welfare
+        text: Then drop the welfare state. Open borders and a market economy fit together.
+        kind: yield
+        revise: welfare.state.social-citizenship
+        evidence: [{position: welfare.state.coercive-dependency, w: 2}, {position: borders.migration.open-borders, w: 2}]
+      - id: both
+        text: >
+          Both, because migrants are mostly young workers who pay in. Welfare states are running
+          out of workers, not out of money.
+        kind: hold
+        evidence: [{position: borders.migration.open-borders, w: 2}, {position: migration.cause.employer-demand, w: 1}]
+      - id: frame
+        text: >
+          The framing is wrong: the doubling is a scare. People leave home when they are forced
+          to; end the forcing and most stay.
+        kind: reject
+        evidence: [{position: borders.migration.right-to-stay, w: 3}]
+
+  # ---- land ----
+  - id: tension.land-to-tiller-estate
+    type: position-consciousness
+    between: [agrarian.question.land-to-the-tiller]
+    when:
+      all:
+        - {situation: {field: land, in: [own-farm-large]}}
+        - {holdsAny: [agrarian.question.land-to-the-tiller, agrarian.question.food-sovereignty, settler.colonialism.expropriate-redistribute]}
+    prompt: >
+      You say land belongs to those who work it. You own a large farm or estate that other
+      people work for wages. The land reform you describe has a surveyor, and the surveyor
+      starts at your fence. Do you hand over the deed?
+    explain: >
+      Land-to-the-tiller reforms redistribute estates worked by hired labor or tenants. The
+      respondent owns such an estate, so the principle names their own property.
+    resolutions:
+      - id: drop-tiller
+        text: Not mine. I farm it well, and breaking it up would feed fewer people.
+        kind: yield
+        revise: agrarian.question.land-to-the-tiller
+        evidence: [{position: agrarian.question.commercial-farms, w: 3}]
+      - id: hand-over
+        text: Yes. If I mean it, the workers here should own what they work.
+        kind: yield
+        evidence: [{position: agrarian.question.land-to-the-tiller, w: 3}]
+      - id: both
+        text: >
+          Both, because I work it too, and an owner who works the land is a tiller. The reform
+          is for absentee landlords, not for me.
+        kind: hold
+        evidence: [{position: agrarian.question.family-farm, w: 2}]
+      - id: cond
+        text: With fair compensation, yes. Without it, no.
+        kind: condition
+        evidence: [{position: emergency.powers.compensate-at-market, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: the land should pay its rent to everyone. Tax the land value
+          and it matters little who holds the deed.
+        kind: reject
+        evidence: [{position: agrarian.question.land-value-tax, w: 3}]
+
+  - id: tension.peasant-for-land-market
+    type: position-consciousness
+    between: [agrarian.question.commercial-farms]
+    when:
+      all:
+        - {classIs: [peasantry]}
+        - {holdsAny: [agrarian.question.commercial-farms, property.private.natural-right]}
+    prompt: >
+      You farm a small plot, your own or rented. You favor secure titles and a free market in
+      land. Titles let you borrow against your field, and sell it. After one bad harvest and
+      one loan, the buyer at the door is a company with five thousand hectares. Is the market
+      on your side?
+    explain: >
+      Formal titling and land markets let smallholders borrow and sell. Where credit is costly
+      and harvests are uncertain, they also let land concentrate in larger holdings through
+      distress sales.
+    resolutions:
+      - id: drop-market
+        text: Not after a bad harvest. Land should be protected from sale, held by the community.
+        kind: yield
+        revise: agrarian.question.commercial-farms
+        evidence: [{position: agrarian.question.communal-tenure, w: 2}, {position: agrarian.question.food-sovereignty, w: 2}]
+      - id: both
+        text: >
+          Both, because a title is the only thing that protects me from the chief, the official
+          and the company. Without one, they take it anyway.
+        kind: hold
+        evidence: [{position: agrarian.question.commercial-farms, w: 2}, {position: property.private.natural-right, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: the problem is credit, not the title. Give us public banks and
+          crop prices we can live on.
+        kind: reject
+        evidence: [{position: finance.control.public-banks, w: 2}, {position: agrarian.question.family-farm, w: 1}]
+
+  # ---- theory and practice ----
+  - id: tension.one-workforce-no-union
+    type: theory-practice
+    between: [borders.migration.class-not-nation-link, practice.union-member]
+    when:
+      all:
+        - {holds: borders.migration.class-not-nation-link}
+        - {answered: {node: module.practice.orgs}}
+        - {not: {practiceAny: [practice.union-member, practice.community-org, practice.revolutionary-org]}}
+    prompt: >
+      You say migrants and native-born workers should be organized as one workforce. That is
+      a job someone has to do: on the shop floor, in two or three languages, before the boss
+      plays one group against the other. You are in no union and no community organization.
+      Who is doing it?
+    explain: >
+      Joint organization of migrant and native workers is a practice carried out by unions
+      and community organizations. Holding it as a position without such a tie leaves it as a
+      preference about others' work.
+    resolutions:
+      - id: drop-view
+        text: Maybe it's more a hope than a program for me.
+        kind: yield
+        revise: borders.migration.class-not-nation-link
+        evidence: [{position: borders.migration.right-to-stay, w: 1}]
+      - id: both
+        text: >
+          Both, because there's no union where I work, or the one there won't take migrants.
+          The position comes first; the vehicle has to be built.
+        kind: hold
+        evidence: [{position: unions.role.core-privilege, w: 1}, {position: borders.migration.class-not-nation-link, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: I'm not a worker in that sense. I support it with votes,
+          money and argument.
+        kind: reject
+        evidence: [{position: elections.role.main-road, w: 1}]
+      - id: join
+        text: Fair. I'll join or start something at work.
+        kind: yield
+        evidence: [{position: change.agent.workers-as-class, w: 1}]
+
+  - id: tension.food-sovereignty-no-movement
+    type: theory-practice
+    between: [agrarian.question.food-sovereignty, practice.peasant-movement]
+    when:
+      all:
+        - {classIs: [peasantry, peripheral-workers]}
+        - {situation: {field: land, in: [own-farm-small, tenant-farmer, landless-rural]}}
+        - {holdsAny: [agrarian.question.food-sovereignty, agrarian.question.land-to-the-tiller]}
+        - {answered: {node: module.practice.orgs}}
+        - {not: {practice: practice.peasant-movement}}
+    prompt: >
+      You work the land, and you say it should belong to those who work it, growing food for
+      the country rather than for export. No landowner has ever handed land over because the
+      people working it agreed among themselves. You belong to no peasant or landless
+      movement. How does the land change hands?
+    explain: >
+      Land reform has historically come through organized peasant pressure or through the
+      state. A smallholder or rural worker who holds the principle without an organization
+      relies on the state to act.
+    resolutions:
+      - id: drop-view
+        text: Maybe it won't change hands. I'll work what I have.
+        kind: yield
+        revise: agrarian.question.land-to-the-tiller
+        evidence: [{position: change.possibility.power-always-wins, w: 2}]
+      - id: both
+        text: >
+          Both, because here the movements get people killed or bought. I'll vote for the
+          government that does the reform, and keep my head down until then.
+        kind: hold
+        evidence: [{position: state.relation.capture-and-use, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: our village holds and divides land together already. That is
+          an organization, just not one with a name.
+        kind: reject
+        evidence: [{position: agrarian.question.communal-tenure, w: 3}]
+
+  - id: tension.ummah-no-congregation
+    type: theory-practice
+    between: [nation.belonging.ummah, practice.religious-community]
+    when:
+      all:
+        - {holdsAny: [nation.belonging.ummah, internationalism.community-of-faith, solidarity.basis.one-body]}
+        - {answered: {node: module.practice.orgs}}
+        - {not: {practice: practice.religious-community}}
+    prompt: >
+      You say your true community is the community of faith, above nation and class. You
+      belong to no congregation: no mosque, church, temple or circle you show up at. A
+      community you never gather with is a hard thing to put first. Where is it, for you?
+    explain: >
+      Communities of faith are sustained by common worship and common obligations. Placing
+      such a community above all others without a congregation makes the belonging abstract.
+    resolutions:
+      - id: drop-view
+        text: Maybe faith is more my background than my community.
+        kind: yield
+        revise: nation.belonging.ummah
+        evidence: [{position: nation.belonging.citizenship, w: 1}]
+      - id: both
+        text: >
+          Both, because the community of faith is not a building. I pray, I give, I keep the
+          fast, and I am bound to believers I will never meet.
+        kind: hold
+        evidence: [{position: nation.belonging.ummah, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: the congregations near me have made their peace with power. I
+          keep my distance from them for the faith's sake.
+        kind: reject
+        evidence: [{position: state.relation.parallel-polis, w: 2}]
+
+  - id: tension.stranger-no-practice
+    type: theory-practice
+    between: [cs.own-first.the-stranger-too, practice.mutual-aid]
+    when:
+      all:
+        - {holds: cs.own-first.the-stranger-too}
+        - {answered: {node: module.practice.acts}}
+        - {answered: {node: module.practice.orgs}}
+        - {not: {practiceAny: [practice.mutual-aid, practice.community-org, practice.ngo, practice.donate, practice.charity-abroad, practice.religious-community]}}
+    prompt: >
+      You say your own include the neighbor in need and the stranger at the door. In the last
+      two years you have given to no cause, joined no aid network, and belong to no
+      congregation or community group. When did the stranger last knock?
+    explain: >
+      The duty to the stranger is a duty of practice. Held without giving, aid or a community
+      that carries it out, it remains a sentiment.
+    resolutions:
+      - id: drop-view
+        text: Fair. My circle is narrower than I said.
+        kind: yield
+        revise: cs.own-first.the-stranger-too
+        evidence: [{position: cs.own-first.widening-circles, w: 2}]
+      - id: both
+        text: >
+          Both, because what I do is not on your list. I took in a cousin, I drive a neighbor to
+          the clinic, I pay a stranger's bus fare. None of it has a name.
+        kind: hold
+        evidence: [{position: cs.own-first.the-stranger-too, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: duty to the stranger belongs to the whole society, through
+          public services, not to me alone.
+        kind: reject
+        evidence: [{position: welfare.state.social-citizenship, w: 2}]
+
+  - id: tension.resurgence-and-ballot
+    type: theory-practice
+    between: [indigenous.sovereignty.resurgence, practice.vote]
+    when:
+      all:
+        - {holdsAny: [indigenous.sovereignty.resurgence, indigenous.sovereignty.inherent-nationhood]}
+        - {practice: practice.vote}
+    prompt: >
+      You say indigenous nations hold their own sovereignty, and should turn away from the
+      settler state's recognition. You voted in the settler state's elections. Some nations
+      refuse to vote on exactly those grounds: a nation does not elect another nation's
+      government. What did your ballot say?
+    explain: >
+      Some indigenous nationalists refuse participation in settler elections as an act of
+      sovereignty. Voting in them treats the settler state as one's own government, at least
+      in part.
+    resolutions:
+      - id: drop-view
+        text: Maybe I'm a citizen with rights before I'm anything else, in practice.
+        kind: yield
+        revise: indigenous.sovereignty.resurgence
+        evidence: [{position: indigenous.sovereignty.within-state-rights, w: 2}]
+      - id: both
+        text: >
+          Both, because the settler state's government decides our water, our children and our
+          land whether we vote or not. Using its ballot against it is not consenting to it.
+        kind: hold
+        evidence: [{position: indigenous.sovereignty.inherent-nationhood, w: 2}, {position: elections.role.lesser-evil, w: 1}]
+      - id: frame
+        text: >
+          The framing is wrong: I am not from an indigenous nation. I support their sovereignty
+          from outside, as a citizen.
+        kind: reject
+        evidence: [{position: settler.colonialism.land-back, w: 1}]

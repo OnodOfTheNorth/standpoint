@@ -1,0 +1,875 @@
+# Tension rules: world system (imperialism, sanctions, intervention, debt, development, war).
+tensions:
+  # ---- the domestic radical who backs sanctions and intervention ----
+  - id: tension.radical-backs-sanctions
+    type: principle-application
+    between: [state.nature.class-instrument, intl.sanctions.legitimate-tool]
+    when:
+      all:
+        - {holdsAny: [state.nature.class-instrument, capitalism.nature.exploitation-profit, workplace.conflict.structural-antagonism]}
+        - {holdsAny: [intl.sanctions.legitimate-tool, intl.sanctions.targeted-for-rights]}
+    prompt: >
+      At home you say the state answers to the owners. Abroad you trust the same treasury, the
+      same banks and the same foreign ministry to pick which countries lose access to trade,
+      credit and medicine, and to say why. Is the state a class instrument everywhere except
+      on the foreign desk?
+    explain: >
+      An account of the state as serving capital at home predicts that its foreign economic
+      weapons serve capital too. Backing those weapons requires either a reason this case is
+      different or a different account of the state.
+    resolutions:
+      - id: drop-sanctions
+        text: The state that serves the owners at home serves them abroad. I withdraw my support for its sanctions.
+        kind: yield
+        revise: intl.sanctions.legitimate-tool
+        evidence: [{position: intl.sanctions.economic-war, w: 2}]
+      - id: drop-class-state
+        text: Maybe the state is less captured than I said. It can act on principle when the public pushes it.
+        kind: yield
+        revise: state.nature.class-instrument
+        evidence: [{position: state.nature.relative-autonomy, w: 2}]
+      - id: both
+        text: >
+          Both, because a capitalist state can still be forced into a right act. The sanctions on
+          apartheid South Africa were won by boycott movements against the will of most Western
+          governments.
+        kind: hold
+        evidence: [{position: intl.sanctions.solidarity-boycott, w: 2}, {position: state.nature.relative-autonomy, w: 1}]
+      - id: frame
+        text: >
+          The framing is wrong: the governments I want sanctioned also crush their own workers.
+          The class line runs through every country, not between them.
+        kind: reject
+        evidence: [{position: world.order.neither-camp, w: 2}, {position: contradiction.primary.capital-vs-labor, w: 2}]
+      - id: cond
+        text: Only when the people living under the sanctions ask for them.
+        kind: condition
+        evidence: [{position: intl.sanctions.solidarity-boycott, w: 3}]
+
+  - id: tension.radical-backs-intervention
+    type: principle-application
+    between: [capitalism.nature.exploitation-profit, intervention.humanitarian.responsibility-to-protect]
+    when:
+      all:
+        - {holdsAny: [capitalism.nature.exploitation-profit, state.nature.class-instrument, firm.ownership.worker-cooperatives, work.future.abolish-wage-labor]}
+        - {holdsAny: [intervention.humanitarian.responsibility-to-protect, intervention.humanitarian.spread-liberty]}
+    prompt: >
+      You say the economy runs on profit squeezed from labor, and that its owners steer the
+      government. You also want that government to send its air force to stop atrocities
+      abroad. The bombs come from the same firms, the reconstruction contracts go to the same
+      firms. Who decides which atrocities get a war?
+    explain: >
+      An anti-capitalist account of the home economy implies that military power is used where
+      it pays. Supporting humanitarian war requires believing that this one decision escapes
+      the interests that shape all the others.
+    resolutions:
+      - id: drop-intervention
+        text: Wars by these states follow their interests. I no longer trust them with the word "humanitarian".
+        kind: yield
+        revise: intervention.humanitarian.responsibility-to-protect
+        evidence: [{position: intervention.humanitarian.imperial-pretext, w: 3}]
+      - id: drop-anticapitalism
+        text: If the state can act for strangers abroad, I may have overstated how much the owners steer it.
+        kind: yield
+        revise: capitalism.nature.exploitation-profit
+        evidence: [{position: capitalism.nature.managed-engine, w: 2}]
+      - id: both
+        text: >
+          Both, because motives can be mixed and the dead are still dead. If an air campaign stops
+          a massacre, the profits made on it do not bring anyone back to life.
+        kind: hold
+        evidence: [{position: intervention.humanitarian.responsibility-to-protect, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: the choice is not bombing or nothing. Arm the people under attack,
+          open the borders to the people fleeing, and stop selling weapons to the killers.
+        kind: reject
+        evidence: [{position: intervention.humanitarian.solidarity-from-below, w: 2}, {position: intervention.humanitarian.never-by-war, w: 2}]
+      - id: cond
+        text: Only when neighbors in the region lead and the old empires stay out.
+        kind: condition
+        evidence: [{position: intervention.humanitarian.neighbors-not-empires, w: 3}]
+
+  - id: tension.anti-imperialist-keeps-the-order
+    type: logical
+    between: [imperialism.nature.unequal-exchange-drain, world.order.liberal-order]
+    when:
+      all:
+        - {holdsAny: [imperialism.nature.unequal-exchange-drain, imperialism.nature.monopoly-stage, poverty.cause.drain]}
+        - {holdsAny: [world.order.liberal-order, world.order.american-primacy]}
+    prompt: >
+      You say rich countries drain poor ones through prices, debt and finance. You also want
+      the order run from Washington kept in place: the dollar, the bases, the IMF votes, the
+      trade rules. That order is the plumbing of the drain you just described. Which do you
+      want, the drain gone or the plumbing kept?
+    explain: >
+      The account of imperialism as a drain names the institutions of the present world order
+      as its mechanism. Defending that order while condemning the drain requires separating
+      the two, or accepting one as the price of the other.
+    resolutions:
+      - id: drop-order
+        text: If the order is the plumbing, it has to change. I let go of defending it.
+        kind: yield
+        revise: world.order.liberal-order
+        evidence: [{position: world.order.multipolar-sovereignty, w: 1}, {position: intl.institutions.build-alternatives, w: 2}]
+      - id: drop-drain
+        text: I overstated the drain. Poor countries are held back mostly by their own institutions.
+        kind: yield
+        revise: imperialism.nature.unequal-exchange-drain
+        evidence: [{position: poverty.cause.bad-institutions, w: 2}]
+      - id: both
+        text: >
+          Both, because the alternative on offer is not liberation but rival empires with no rules
+          at all. A drain with courts and treaties beats a drain with none.
+        kind: hold
+        evidence: [{position: imperialism.nature.inter-imperialist-rivalry, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: the institutions are good tools in captured hands. Democratize
+          the IMF and the trade rules and the order stops draining.
+        kind: reject
+        evidence: [{position: intl.institutions.reform-democratize, w: 3}]
+
+  # ---- the peripheral comprador liberal ----
+  - id: tension.comprador-open-and-sovereign
+    type: position-consciousness
+    between: [development.path.integration, intl.sovereignty.nations-set-own-course]
+    when:
+      all:
+        - {worldIs: [periphery, semi-periphery]}
+        - {classIs: [comprador-capital]}
+        - {holdsAny: [development.path.integration, finance.control.free-flows, exchange.unequal.mutual-gain]}
+        - {holds: intl.sovereignty.nations-set-own-course}
+    prompt: >
+      You earn your profit in exports, imports or finance, in dollars, across your country's
+      border. You want the economy open to foreign capital and money free to leave. You also
+      say your nation should set its own course. When the course and the capital disagree,
+      capital leaves in an afternoon. Whose course is it then?
+    explain: >
+      Open capital accounts give foreign and local holders of mobile money a veto over policy
+      through flight. The respondent's income comes from that open border, so the open economy
+      serves them directly, while sovereignty asks them to accept limits on it.
+    resolutions:
+      - id: drop-open
+        text: A nation that cannot hold its own capital does not set its own course. Controls, then.
+        kind: yield
+        revise: development.path.integration
+        evidence: [{position: finance.control.capital-controls, w: 3}]
+      - id: drop-sovereign
+        text: In a world economy no small country sets its own course. Better to be attractive than proud.
+        kind: yield
+        revise: intl.sovereignty.nations-set-own-course
+        evidence: [{position: intl.sovereignty.pooled, w: 2}]
+      - id: both
+        text: >
+          Both, because openness is a sovereign choice. We open because it pays, and a country
+          that grows rich has more room to choose than one that closes and stays poor.
+        kind: hold
+        evidence: [{position: development.path.integration, w: 2}, {position: poverty.cause.late-development, w: 1}]
+      - id: frame
+        text: >
+          The framing is wrong: my income tells you where I work, not whose side I am on.
+          Plenty of exporters fund the national cause.
+        kind: reject
+        evidence: [{position: comprador.nature.independent-capitalists, w: 3}]
+
+  - id: tension.comprador-blames-sellouts
+    type: position-consciousness
+    between: [comprador.nature.sellout-elites, development.path.integration]
+    when:
+      all:
+        - {worldIs: [periphery, semi-periphery]}
+        - {classIs: [comprador-capital]}
+        - {holdsAny: [comprador.nature.sellout-elites, cs.decline.sold-out, comprador.nature.kleptocratic-elites]}
+    prompt: >
+      You say a cosmopolitan elite has sold the country to foreigners, or that its rulers loot
+      it. By your own account you make your money trading with foreign buyers or handling
+      foreign money. When people in your street picture the elite that sold out, whom do they
+      picture?
+    explain: >
+      Anger at a sell-out elite is common across classes in the periphery. Held by someone whose
+      income comes from brokering trade and finance with the core, it either points at a
+      fraction above them or at themselves.
+    resolutions:
+      - id: drop-sellout
+        text: The picture was too simple. Traders like me keep the country connected; the problem is something else.
+        kind: yield
+        revise: comprador.nature.sellout-elites
+        evidence: [{position: poverty.cause.misrule, w: 2}]
+      - id: own-it
+        text: They would picture someone like me. I live off the same arrangement, and I know it.
+        kind: yield
+        revise: development.path.integration
+        evidence: [{position: comprador.nature.broker-class, w: 3}]
+      - id: both
+        text: >
+          Both, because there is a difference between earning in the world market and selling the
+          state to it. I trade; the sell-outs sign away ports, mines and laws for a commission.
+        kind: hold
+        evidence: [{position: comprador.nature.national-bourgeoisie-ally, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: the elite is not a class of traders but a clique around the
+          state. Business is its victim, not its partner.
+        kind: reject
+        evidence: [{position: comprador.nature.bureaucratic-bourgeoisie, w: 2}, {position: comprador.nature.kleptocratic-elites, w: 2}]
+
+  - id: tension.sovereignty-and-creditors
+    type: principle-application
+    between: [intl.sovereignty.nations-set-own-course, debt.sovereign.pay-what-you-owe]
+    when: {holdsAll: [intl.sovereignty.nations-set-own-course, debt.sovereign.pay-what-you-owe]}
+    prompt: >
+      You say no outsider should dictate a country's course. You also say a country's debts
+      must be paid in full, whatever it takes. The creditors' price for rolling over the debt
+      is a new labor law, a pension cut and a port sold to a foreign operator. Which of your
+      two principles signs the letter?
+    explain: >
+      Sovereign debt is the main lever by which creditors and the institutions that represent
+      them set policy in indebted countries. Full repayment as an absolute rule hands them that
+      lever; sovereignty as an absolute rule takes it away.
+    resolutions:
+      - id: drop-pay
+        text: A debt that costs the country its government is not owed on those terms. Restructure or refuse.
+        kind: yield
+        revise: debt.sovereign.pay-what-you-owe
+        evidence: [{position: debt.sovereign.orderly-restructuring, w: 2}, {position: debt.sovereign.odious-debt, w: 1}]
+      - id: drop-sovereign
+        text: A country that borrowed gave up some of its say. That is what borrowing means.
+        kind: yield
+        revise: intl.sovereignty.nations-set-own-course
+        evidence: [{position: intl.sovereignty.pooled, w: 1}]
+      - id: both
+        text: >
+          Both, because paying is how you get your sovereignty back. Pay it off fast, take no new
+          loans, and nobody writes your laws again.
+        kind: hold
+        evidence: [{position: debt.sovereign.pay-off-to-be-free, w: 3}]
+      - id: frame
+        text: >
+          The framing is wrong: the conditions are not the creditor's price but the country's
+          medicine. Governments that borrow badly need someone to stop them.
+        kind: reject
+        evidence: [{position: intl.institutions.cooperation, w: 2}, {position: poverty.cause.misrule, w: 1}]
+
+  # ---- position and consciousness on the world scale ----
+  - id: tension.core-worker-bought
+    type: position-consciousness
+    between: [labor.aristocracy.whole-core-bought]
+    when:
+      all:
+        - {worldIs: [core]}
+        - {classIs: [core-workers]}
+        - {holdsAny: [labor.aristocracy.whole-core-bought, labor.aristocracy.bribed-stratum]}
+    prompt: >
+      You say the workers of the rich countries live, in part, off what is taken from poor
+      ones. You are a wage worker in a rich country. Your phone, your coffee and your rent were
+      priced inside that arrangement. What follows for someone in your place: guilt, sacrifice,
+      a fight, or nothing?
+    explain: >
+      The labor aristocracy thesis is usually stated about others. Held by a core worker, it
+      makes their own wage part of the drain and raises the question of what interest they
+      have in ending it.
+    resolutions:
+      - id: drop-bought
+        text: I overstated it. Workers here are exploited too; the drain goes to owners, not to us.
+        kind: yield
+        revise: labor.aristocracy.whole-core-bought
+        evidence: [{position: labor.aristocracy.shares-but-exploited, w: 2}, {position: labor.aristocracy.no-labor-aristocracy, w: 1}]
+      - id: both
+        text: >
+          Both, because the share is real and so is the boss. Workers here gain from the drain on
+          a narrow ledger and lose far more from a system that will turn on us the moment the
+          drain is cut.
+        kind: hold
+        evidence: [{position: labor.aristocracy.shares-but-exploited, w: 3}]
+      - id: frame
+        text: >
+          The framing is wrong: my place does not set my side. I choose the side of the people
+          being drained, whatever it costs me.
+        kind: reject
+        evidence: [{position: solidarity.basis.anti-imperialist, w: 3}]
+      - id: cond
+        text: It depends on the job. Some of us are bought, the cleaners and the temps are not.
+        kind: condition
+        evidence: [{position: labor.aristocracy.bribed-stratum, w: 2}]
+
+  - id: tension.peripheral-worker-blames-culture
+    type: position-consciousness
+    between: [poverty.cause.culture]
+    when:
+      all:
+        - {classIs: [peripheral-workers, reserve-army, peasantry]}
+        - {worldIs: [periphery, semi-periphery]}
+        - {holdsAny: [poverty.cause.culture, labor.aristocracy.earned-by-productivity]}
+    prompt: >
+      You work in a poorer country, and you say it is poor because of how people here think and
+      work, or that workers in rich countries earn more because they produce more. You know
+      your own working day. Is the gap between your wage and a wage in Germany a gap in effort?
+    explain: >
+      Cultural and productivity accounts of world poverty place its cause inside the poor
+      country. Held by a worker in that country, they make their own low wage a judgment on
+      their own people.
+    resolutions:
+      - id: drop-culture
+        text: No. People here work harder than anyone. The gap comes from somewhere else.
+        kind: yield
+        revise: poverty.cause.culture
+        evidence: [{position: exchange.unequal.wage-gap, w: 2}, {position: poverty.cause.drain, w: 1}]
+      - id: both
+        text: >
+          Both, because effort is not the same as habits. I work hard; the country still rewards
+          bribes over skill and family over merit, and that is culture.
+        kind: hold
+        evidence: [{position: poverty.cause.culture, w: 2}, {position: poverty.cause.bad-institutions, w: 1}]
+      - id: frame
+        text: >
+          The framing is wrong: it's not culture and not theft abroad. Our rulers steal it, and
+          they would steal it under any system.
+        kind: reject
+        evidence: [{position: poverty.cause.misrule, w: 3}]
+      - id: cond
+        text: It depends on the machines. Give us the same tools and we would earn the same.
+        kind: condition
+        evidence: [{position: exchange.unequal.productivity-gap, w: 3}]
+
+  - id: tension.creditor-calls-jubilee
+    type: position-consciousness
+    between: [debt.sovereign.jubilee]
+    when:
+      all:
+        - {classIs: [finance-capital]}
+        - {holdsAny: [debt.sovereign.jubilee, debt.sovereign.already-paid]}
+    prompt: >
+      You say the poorest countries' debts should be cancelled. Your income comes from interest,
+      dividends and the funds that hold bonds, some of them those countries' bonds. A jubilee
+      is a write-down on a ledger with your name somewhere in it. Do you vote for it at the
+      next shareholder meeting?
+    explain: >
+      Sovereign debt cancellation transfers wealth from bondholders to debtor states. A holder
+      of financial wealth who supports it backs a loss for their own class fraction.
+    resolutions:
+      - id: drop-jubilee
+        text: Blanket cancellation is too blunt. Orderly restructuring, case by case.
+        kind: yield
+        revise: debt.sovereign.jubilee
+        evidence: [{position: debt.sovereign.orderly-restructuring, w: 3}]
+      - id: both
+        text: >
+          Both, because unpayable debt is worth little anyway. Lenders who priced in default have
+          been paid for the risk; I can take the loss.
+        kind: hold
+        evidence: [{position: debt.sovereign.creditors-eat-losses, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: my portfolio is not my politics. I can hold the bonds and still
+          argue for the law that cancels them.
+        kind: reject
+        evidence: [{position: debt.sovereign.jubilee, w: 2}]
+
+  # ---- theory and practice on the world scale ----
+  - id: tension.boycott-without-boycotting
+    type: theory-practice
+    between: [intl.sanctions.solidarity-boycott, practice.boycott-campaign]
+    when:
+      all:
+        - {holdsAny: [intl.sanctions.solidarity-boycott, consumption.choice.organized-boycott]}
+        - {answered: {node: module.practice.acts}}
+        - {not: {practice: practice.boycott-campaign}}
+    prompt: >
+      You say a boycott called by an oppressed people is a legitimate weapon, often the only one
+      they can ask of strangers. You have not joined one in the last two years. The weapon you
+      endorse needs hands. Whose?
+    explain: >
+      Solidarity boycotts work only through organized participation. Endorsing them without
+      taking part leaves the endorsement on paper.
+    resolutions:
+      - id: join
+        text: Fair. I should be in one, and I can be by next week.
+        kind: yield
+      - id: drop-view
+        text: Maybe I believe in boycotts less than I said. They rarely move states.
+        kind: yield
+        revise: intl.sanctions.solidarity-boycott
+        evidence: [{position: consumption.choice.production-decides, w: 1}]
+      - id: both
+        text: >
+          Both, because I fight on other fronts. My time goes to my union, my rent or my
+          family, and a boycott can win without me.
+        kind: hold
+        evidence: [{position: solidarity.basis.tactical, w: 1}]
+      - id: frame
+        text: >
+          The framing is wrong: I avoid the products already. A boycott is a practice, not a
+          membership card.
+        kind: reject
+        evidence: [{position: consumption.choice.consumer-responsibility, w: 2}]
+
+  - id: tension.primary-contradiction-no-practice
+    type: theory-practice
+    between: [contradiction.primary.imperialism-vs-oppressed, practice.solidarity-org]
+    when:
+      all:
+        - {holdsAny: [contradiction.primary.imperialism-vs-oppressed, internationalism.tricontinental, solidarity.basis.anti-imperialist]}
+        - {answered: {node: module.practice.orgs}}
+        - {not: {practiceAny: [practice.solidarity-org, practice.revolutionary-org, practice.party-member, practice.boycott-campaign]}}
+    prompt: >
+      You say the central conflict of the age is between empire and the peoples it rules. You
+      belong to no anti-war group, no solidarity campaign, no party and no boycott. If that is
+      the main front, where are you standing on it?
+    explain: >
+      Naming imperialism the primary conflict makes it the first claim on political effort.
+      With no organizational tie on that front, the claim remains an analysis rather than a
+      commitment.
+    resolutions:
+      - id: join
+        text: Nowhere yet. I should join something that works on it.
+        kind: yield
+      - id: drop-primary
+        text: Then maybe it isn't my main front. What I fight is closer to home.
+        kind: yield
+        revise: contradiction.primary.imperialism-vs-oppressed
+        evidence: [{position: contradiction.primary.capital-vs-labor, w: 2}]
+      - id: both
+        text: >
+          Both, because the front runs through my workplace and my street too. Fighting the
+          bosses here is fighting the same system there.
+        kind: hold
+        evidence: [{position: contradiction.primary.capital-vs-labor, w: 1}, {position: solidarity.basis.shared-class, w: 1}]
+      - id: frame
+        text: >
+          The framing is wrong: where I live there is no organization worth joining, and
+          building one alone is not possible.
+        kind: reject
+        evidence: [{position: change.possibility.power-always-wins, w: 1}]
+
+  - id: tension.aid-give-more-gives-nothing
+    type: theory-practice
+    between: [aid.foreign.saves-lives-give-more, practice.charity-abroad]
+    when:
+      all:
+        - {holdsAny: [aid.foreign.saves-lives-give-more, aid.foreign.duty-of-the-rich]}
+        - {worldIs: [core]}
+        - {answered: {node: module.practice.acts}}
+        - {not: {practiceAny: [practice.charity-abroad, practice.donate, practice.ngo]}}
+    prompt: >
+      You say rich countries should give far more to poor ones, because aid saves lives. In the
+      last two years you have given nothing to a cause, here or abroad. Your government is
+      supposed to be more generous than you are?
+    explain: >
+      The case for aid as a duty of the rich applies to rich individuals as well as rich
+      states. Holding it without giving puts the whole duty on the state.
+    resolutions:
+      - id: give
+        text: Fair. I can give, and I will.
+        kind: yield
+      - id: drop-view
+        text: Maybe I believe in aid less than I said.
+        kind: yield
+        revise: aid.foreign.saves-lives-give-more
+        evidence: [{position: aid.foreign.fund-what-works, w: 1}]
+      - id: both
+        text: >
+          Both, because duties at the scale of countries are paid through taxes, not tips. I pay
+          mine, and I vote for the budget.
+        kind: hold
+        evidence: [{position: aid.foreign.duty-of-the-rich, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: I can barely cover my own rent. "Rich country" does not mean
+          rich person.
+        kind: reject
+        evidence: [{position: labor.aristocracy.globalization-losers, w: 1}]
+
+  - id: tension.charity-at-home-gives-nothing
+    type: theory-practice
+    between: [aid.foreign.charity-at-home, practice.community-org]
+    when:
+      all:
+        - {holds: aid.foreign.charity-at-home}
+        - {answered: {node: module.practice.acts}}
+        - {answered: {node: module.practice.orgs}}
+        - {not: {practiceAny: [practice.donate, practice.community-org, practice.mutual-aid, practice.ngo, practice.religious-community]}}
+    prompt: >
+      Why send money abroad, you say, when our own people are struggling? Fair enough. In the
+      last two years you have given to no cause and belong to no community group, congregation
+      or mutual aid network. Which of our own people have you been helping?
+    explain: >
+      Charity at home is an argument for redirecting help, not for withholding it. Held with no
+      giving and no local tie, it works as a reason to give to no one.
+    resolutions:
+      - id: help
+        text: Point taken. I'll find a way to help locally.
+        kind: yield
+      - id: drop-view
+        text: Maybe the aid question was never really about our own people for me.
+        kind: yield
+        revise: aid.foreign.charity-at-home
+        evidence: [{position: aid.foreign.dependency-and-theft, w: 1}]
+      - id: both
+        text: >
+          Both, because I help my own family and neighbors directly, and that never shows up on
+          a list of organizations.
+        kind: hold
+        evidence: [{position: cs.own-first.family-first, w: 2}, {position: cs.own-first.widening-circles, w: 1}]
+      - id: frame
+        text: >
+          The framing is wrong: it is the government's money I object to sending abroad, not mine.
+          Taxes are for citizens.
+        kind: reject
+        evidence: [{position: cs.own-first.our-people-first, w: 2}]
+
+  - id: tension.arms-profits-arms-work
+    type: theory-practice
+    between: [war.militarism.arms-profits, practice.arms-work]
+    when:
+      all:
+        - {holdsAny: [war.militarism.arms-profits, war.militarism.imperialist-rivalry]}
+        - {practice: practice.arms-work}
+    prompt: >
+      You say wars come from the competition for profit, or that arms makers keep them going.
+      You work in arms production or the military. Your wage is part of the business you just
+      described. What do you do with that on a Monday morning?
+    explain: >
+      An account of war as driven by profit implicates those who are paid by the war economy.
+      For an arms worker it raises the question of refusal, conversion or acceptance.
+    resolutions:
+      - id: drop-view
+        text: Maybe wars are mostly about security after all. Someone has to defend the country.
+        kind: yield
+        revise: war.militarism.arms-profits
+        evidence: [{position: war.militarism.anarchy-security, w: 2}, {position: conscience.refusal.defense-is-honest-work, w: 2}]
+      - id: both
+        text: >
+          Both, because a worker does not choose what the plant makes. I need the job, and the
+          war would go on without me.
+        kind: hold
+        evidence: [{position: picket.line.need-first, w: 1}]
+      - id: convert
+        text: >
+          The framing is wrong: the answer is not my resignation. The workers in this industry
+          should demand it make something useful instead.
+        kind: reject
+        evidence: [{position: conscience.refusal.convert-production, w: 3}]
+      - id: inside
+        text: >
+          Only from inside. When the order comes to turn these weapons on the people, I want
+          people like me holding them.
+        kind: condition
+        evidence: [{position: conscience.refusal.revolutionary-defeatism, w: 2}]
+
+  - id: tension.pacifist-arms-work
+    type: theory-practice
+    between: [war.militarism.pacifist, practice.arms-work]
+    when:
+      all:
+        - {holdsAny: [war.militarism.pacifist, conscience.refusal.absolute-pacifism, violence.political.never]}
+        - {practice: practice.arms-work}
+    prompt: >
+      You say war is never justified and violence only breeds more. You have worked in arms
+      production or the military in the last two years. Between the conviction and the
+      paycheck, which one is telling the truth about you?
+    explain: >
+      Absolute pacifism rules out taking part in making war. Working in the military or arms
+      production is taking part, whatever one's role.
+    resolutions:
+      - id: drop-pacifism
+        text: Never was too strong. Defense is different from war.
+        kind: yield
+        revise: war.militarism.pacifist
+        evidence: [{position: war.militarism.fallen-nature-just-war, w: 2}, {position: conscience.refusal.defense-is-honest-work, w: 1}]
+      - id: leave
+        text: The conviction. I will look for the way out of this work.
+        kind: yield
+        evidence: [{position: conscience.refusal.absolute-pacifism, w: 3}]
+      - id: both
+        text: >
+          Both, because I took the work so my family eats, and I still think it is wrong. Holding
+          both is uncomfortable; it is not a lie.
+        kind: hold
+        evidence: [{position: picket.line.need-first, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: my role was medical, logistic or clerical. Not every job in an
+          army is a job in killing.
+        kind: reject
+        evidence: [{position: conscience.refusal.exemption-with-service, w: 2}]
+
+  - id: tension.drain-and-portfolio
+    type: theory-practice
+    between: [poverty.cause.drain, practice.invest]
+    when:
+      all:
+        - {holdsAny: [poverty.cause.drain, imperialism.nature.unequal-exchange-drain, exchange.unequal.value-chain-capture]}
+        - {practice: practice.invest}
+    prompt: >
+      You say rich countries and their firms drain poor ones through trade and finance. You
+      invest money in markets. The fund that holds your savings owns slices of the firms that
+      do the draining, and pays you a cut. Is your return part of the drain?
+    explain: >
+      Market investment in the core is one of the channels through which value moved from the
+      periphery returns to individual holders. The account of the drain applies to the
+      investor's own portfolio.
+    resolutions:
+      - id: divest
+        text: Yes. I'll move the money, or stop pretending it is clean.
+        kind: yield
+        evidence: [{position: investment.ethics.divest, w: 2}]
+      - id: drop-drain
+        text: Maybe the drain is smaller than I said. Investment builds things in poor countries too.
+        kind: yield
+        revise: poverty.cause.drain
+        evidence: [{position: development.path.integration, w: 1}, {position: exchange.unequal.mutual-gain, w: 1}]
+      - id: both
+        text: >
+          Both, because there is no clean money. A pension fund is how a worker survives old age
+          inside this system, not an endorsement of it.
+        kind: hold
+        evidence: [{position: investment.ethics.no-clean-money, w: 3}]
+      - id: frame
+        text: >
+          The framing is wrong: it's not my savings that drain anyone. The drain is set by states,
+          monopolies and debt, not by small investors.
+        kind: reject
+        evidence: [{position: consumption.choice.production-decides, w: 2}]
+      - id: cond
+        text: It depends what I hold. Workers' funds, voted by workers, are different.
+        kind: condition
+        evidence: [{position: investment.ethics.workers-capital, w: 3}]
+
+  # ---- strategy and horizon ----
+  - id: tension.multipolar-jails-strikers
+    type: strategy-horizon
+    between: [world.order.multipolar-sovereignty, unions.role.class-organ]
+    when:
+      all:
+        - {holdsAny: [world.order.multipolar-sovereignty, world.order.civilizational-poles, china.role.counterweight]}
+        - {holdsAny: [unions.role.class-organ, workplace.conflict.structural-antagonism, change.agent.workers-as-class]}
+    prompt: >
+      You back the rise of powers that break the West's hold on money, technology and arms.
+      You also say workers must organize as a class against their employers. Some of those
+      rising powers jail strike leaders and ban independent unions. When their workers walk
+      out, whose side are you on?
+    explain: >
+      Support for multipolarity is a strategy aimed at the world order. Support for workers'
+      organization is a horizon aimed at class power. Where the states that serve the first
+      repress the second, one has to be ranked over the other.
+    resolutions:
+      - id: drop-multipolar
+        text: The strikers. No state earns my support by being someone's rival.
+        kind: yield
+        revise: world.order.multipolar-sovereignty
+        evidence: [{position: world.order.neither-camp, w: 3}]
+      - id: drop-class
+        text: The state, for now. A worker in a sovereign country has more future than one in a colony.
+        kind: yield
+        revise: unions.role.class-organ
+        evidence: [{position: contradiction.primary.imperialism-vs-oppressed, w: 2}]
+      - id: both
+        text: >
+          Both, because the strikers and the state face the same enemy abroad. I support the
+          strikers' demands and oppose any foreign power using them as a lever.
+        kind: hold
+        evidence: [{position: contradiction.primary.imperialism-vs-oppressed, w: 1}, {position: solidarity.basis.shared-class, w: 1}]
+      - id: frame
+        text: >
+          The framing is wrong: those reports come from the same press that sold every war. I
+          need better evidence before I take sides.
+        kind: reject
+        evidence: [{position: speech.limits.class-press, w: 2}]
+
+  # ---- logical and principle-application ----
+  - id: tension.mutual-gain-took-our-jobs
+    type: logical
+    between: [exchange.unequal.mutual-gain, china.role.took-our-jobs]
+    when:
+      all:
+        - {holds: exchange.unequal.mutual-gain}
+        - {holdsAny: [china.role.took-our-jobs, exchange.unequal.rigged-against-us, labor.aristocracy.globalization-losers]}
+    prompt: >
+      You say trade is mutual gain: each side does what it does best and both come out ahead.
+      You also say the trade that moved factories abroad took your country's jobs. The plant
+      in your town closed; the shelves got cheaper. Did your town gain?
+    explain: >
+      Mutual gain is a claim about countries in aggregate. The loss of industrial jobs is a
+      claim about particular workers and places. Holding both requires saying who gained, who
+      lost, and whether the gainers owed anything to the losers.
+    resolutions:
+      - id: drop-gain
+        text: The gain went to owners and shoppers. The town paid for it.
+        kind: yield
+        revise: exchange.unequal.mutual-gain
+        evidence: [{position: exchange.unequal.rigged-against-us, w: 2}]
+      - id: drop-jobs
+        text: The jobs went to automation as much as to China. Trade gets the blame.
+        kind: yield
+        revise: china.role.took-our-jobs
+        evidence: [{position: exchange.unequal.mutual-gain, w: 1}]
+      - id: both
+        text: >
+          Both, because the country gained and the town lost. Trade was right; leaving the losers
+          with nothing was the failure.
+        kind: hold
+        evidence: [{position: hist.neoliberal-turn.third-way-globalization, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: it wasn't trade, it was our own elites who chose to ship the
+          plants out. Trade on our terms would have been fine.
+        kind: reject
+        evidence: [{position: hist.neoliberal-turn.betrayal-of-the-nation, w: 3}]
+
+  - id: tension.sovereignty-and-intervention
+    type: logical
+    between: [intl.sovereignty.nations-set-own-course, intervention.humanitarian.spread-liberty]
+    when:
+      all:
+        - {holds: intl.sovereignty.nations-set-own-course}
+        - {holdsAny: [intervention.humanitarian.spread-liberty, intervention.humanitarian.responsibility-to-protect]}
+    prompt: >
+      You say nations should set their own course free of outside pressure. You also say
+      powerful states should go in, by force if need be, to stop atrocities or remove tyrants.
+      Somebody's course is being set from outside. Whose sovereignty counts?
+    explain: >
+      Non-interference and humanitarian intervention cannot both be general rules. Holding
+      both requires a test for when sovereignty lapses, and a judge who applies it.
+    resolutions:
+      - id: drop-sovereign
+        text: Sovereignty is earned by how a government treats its people.
+        kind: yield
+        revise: intl.sovereignty.nations-set-own-course
+        evidence: [{position: intl.sovereignty.conditional-on-rights, w: 3}]
+      - id: drop-intervention
+        text: No intervention, then. Every invader says it came to rescue someone.
+        kind: yield
+        revise: intervention.humanitarian.spread-liberty
+        evidence: [{position: intervention.humanitarian.sovereignty-first, w: 3}]
+      - id: both
+        text: >
+          Both, because sovereignty belongs to peoples, not to the governments slaughtering them.
+          Intervening for a people under massacre restores its sovereignty.
+        kind: hold
+        evidence: [{position: intervention.humanitarian.responsibility-to-protect, w: 2}]
+      - id: cond
+        text: Only with a Security Council vote. One state alone never decides.
+        kind: condition
+        evidence: [{position: intervention.humanitarian.only-with-the-un, w: 3}]
+      - id: frame
+        text: >
+          The framing is wrong: the question is never whether to intervene but who. The old
+          empires never; neighbors sometimes.
+        kind: reject
+        evidence: [{position: intervention.humanitarian.neighbors-not-empires, w: 3}]
+
+  - id: tension.sovereignty-and-sanctions
+    type: principle-application
+    between: [intl.sovereignty.nations-set-own-course, intl.sanctions.legitimate-tool]
+    when: {holdsAll: [intl.sovereignty.nations-set-own-course, intl.sanctions.legitimate-tool]}
+    prompt: >
+      You say nations should be free of outside pressure. You also say sanctions are a fair
+      tool short of war. A sanction is outside pressure with an invoice: change your policy or
+      lose your trade. When your own country is the one sanctioned, is it still fair?
+    explain: >
+      Sanctions are a means of forcing another state to change its course. Endorsing them as
+      a general tool limits sovereignty as a general rule, including one's own.
+    resolutions:
+      - id: drop-sanctions
+        text: If it's wrong done to us, it's wrong done by us. No sanctions.
+        kind: yield
+        revise: intl.sanctions.legitimate-tool
+        evidence: [{position: intl.sanctions.economic-war, w: 2}]
+      - id: drop-sovereign
+        text: Sovereignty has limits. A state that breaks the rules accepts the bill.
+        kind: yield
+        revise: intl.sovereignty.nations-set-own-course
+        evidence: [{position: intl.sovereignty.conditional-on-rights, w: 2}]
+      - id: both
+        text: >
+          Both, because refusing to trade is itself a sovereign act. No country is owed my
+          country's market.
+        kind: hold
+        evidence: [{position: intl.sanctions.national-leverage, w: 3}]
+      - id: frame
+        text: >
+          The framing is wrong: the strong do what they can and the weak suffer what they must.
+          Sovereignty was never more than a polite fiction.
+        kind: reject
+        evidence: [{position: intl.sovereignty.organized-hypocrisy, w: 3}]
+
+  - id: tension.prescribe-open-praise-steer
+    type: principle-application
+    between: [development.path.integration, hist.china-reform.developmental-state]
+    when:
+      all:
+        - {holdsAny: [development.path.integration, development.path.market-freedom]}
+        - {holdsAny: [hist.china-reform.developmental-state, hist.china-present.developmental-state]}
+    prompt: >
+      You prescribe opening up for poor countries: free trade, foreign investment, the state
+      out of the way. You also explain China's rise by a state that steered industry, held its
+      banks, controlled capital and chose its winners. Why prescribe the road the most
+      successful case did not take?
+    explain: >
+      The record of late industrializers is evidence about development paths. Recommending
+      integration while crediting a developmental state for the largest case requires a reason
+      the lesson does not transfer.
+    resolutions:
+      - id: drop-open
+        text: The evidence wins. A strong state that steers is what works.
+        kind: yield
+        revise: development.path.integration
+        evidence: [{position: development.path.developmental-state, w: 3}]
+      - id: drop-china
+        text: China grew when it opened, not when the state steered. The state was the brake.
+        kind: yield
+        revise: hist.china-reform.developmental-state
+        evidence: [{position: hist.china-reform.markets-freed-people, w: 3}]
+      - id: both
+        text: >
+          Both, because China's state works and most states don't. For a country whose
+          officials steal, the market is the safer bet.
+        kind: hold
+        evidence: [{position: poverty.cause.misrule, w: 2}]
+      - id: frame
+        text: >
+          The framing is wrong: China's rise is no model for anyone. It came from a size, a
+          diaspora and a moment that no other country has.
+        kind: reject
+        evidence: [{position: poverty.cause.geography, w: 1}]
+
+  - id: tension.china-empire-us-primacy
+    type: principle-application
+    between: [china.role.new-empire, world.order.american-primacy]
+    when:
+      all:
+        - {holdsAny: [china.role.new-empire, china.role.one-party-rival]}
+        - {holdsAny: [world.order.american-primacy, world.order.liberal-order]}
+    prompt: >
+      You say China is a new empire, grabbing resources and trapping debtors. You also back
+      the primacy of the power that has some 750 bases abroad, prints the reserve currency and
+      holds a veto at the IMF. If grabbing and trapping make an empire, what makes the other
+      one not an empire?
+    explain: >
+      Criticism of one great power's overseas lending and resource deals applies a standard.
+      Supporting the primacy of another raises the question of whether the standard is applied
+      to both.
+    resolutions:
+      - id: drop-china
+        text: I was harder on China than the record supports. Its loans are no worse than anyone's.
+        kind: yield
+        revise: china.role.new-empire
+        evidence: [{position: china.role.partner-that-builds, w: 2}]
+      - id: drop-primacy
+        text: Both are empires. I should not back either one's primacy.
+        kind: yield
+        revise: world.order.american-primacy
+        evidence: [{position: imperialism.nature.inter-imperialist-rivalry, w: 2}, {position: world.order.neither-camp, w: 1}]
+      - id: both
+        text: >
+          Both, because what matters is the system each one leads. One is bound by elections,
+          courts and a free press; the other answers to one party.
+        kind: hold
+        evidence: [{position: contradiction.primary.democracy-vs-autocracy, w: 3}]
+      - id: frame
+        text: >
+          The framing is wrong: this isn't about empire, it's about whose side my country is on.
+          Choose your ally and stop counting bases.
+        kind: reject
+        evidence: [{position: world.order.nation-first, w: 1}, {position: intl.sanctions.national-leverage, w: 1}]
