@@ -1,0 +1,130 @@
+# Debates over technology, artificial intelligence and acceleration.
+debates:
+  - id: debate.ai-risk
+    name: AI existential risk and its critics
+    date: "2014–present"
+    summary: >-
+      Nick Bostrom's Superintelligence (2014) argued that a machine intelligence surpassing humans could
+      destroy humanity unless its goals were aligned with ours. By 2023 hundreds of researchers and executives
+      had signed a statement that reducing the risk of extinction from AI should be a global priority.
+      Researchers in AI ethics replied that the talk of extinction distracted from present harms: bias,
+      surveillance, the exploitation of data workers and the concentration of power in a few firms. Others
+      argued that the main danger was slowing the technology down, or losing a race to a rival power.
+    problematic: ai.risk
+    sides:
+      - label: Existential risk
+        thinkers: [thinker.bostrom]
+        positions: [ai.risk.existential, accelerationism.question.differential]
+        argument: >-
+          Intelligence is what gave humans power over every other species. A system that outthinks us, pursuing
+          goals even slightly different from ours, would treat us as we treat ants in the way of a road. Almost
+          any goal is served by acquiring resources and resisting being switched off, so safety does not come by
+          default. We get one chance to get this right. Slow down the dangerous capabilities, speed up the work
+          on control, and coordinate internationally, as with nuclear weapons.
+        texts:
+          - {author: Nick Bostrom, title: "Superintelligence: Paths, Dangers, Strategies", year: 2014}
+          - {author: Stuart Russell, title: "Human Compatible: Artificial Intelligence and the Problem of Control", year: 2019}
+      - label: AI ethics
+        thinkers: []
+        positions: [ai.risk.harms-now, ai.risk.tool-of-capital, ai.risk.overhyped]
+        argument: >-
+          Large language models are stochastic parrots: they stitch together text without understanding it, and
+          they reproduce the biases of the data they are trained on. The real harms are here now: discriminatory
+          decisions, surveillance, fraud, stolen work, low-paid labelers in Kenya and the Philippines, and the
+          energy bills. Talk of a coming superintelligence flatters the firms that build these systems, draws
+          money and attention away from those harms, and lets the same people who create the danger appoint
+          themselves its guardians. Regulate the companies, not science fiction.
+        texts:
+          - {author: Emily M. Bender et al., title: "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?", year: 2021}
+          - {author: Kate Crawford, title: Atlas of AI, year: 2021}
+          - {author: Timnit Gebru and Émile P. Torres, title: The TESCREAL Bundle, year: 2024}
+      - label: Accelerate
+        thinkers: [thinker.andreessen]
+        positions: [ai.risk.accelerate, accelerationism.question.effective-acc]
+        argument: >-
+          AI will make everything better: medicine, science, education, wages, the arts. Every new technology
+          has been met by a moral panic, and every panic was wrong. The safety movement is a cult whose demands,
+          if met, would hand the technology to a few licensed incumbents and to rival states. Any deceleration
+          costs lives that faster progress would have saved. Build, and let open competition find and fix the
+          problems.
+        texts:
+          - {author: Marc Andreessen, title: Why AI Will Save the World, year: 2023}
+          - {author: Marc Andreessen, title: The Techno-Optimist Manifesto, year: 2023}
+      - label: The race
+        thinkers: []
+        positions: [ai.risk.great-power-race, automation.ownership.national-sovereign-ai]
+        argument: >-
+          Superhuman AI is coming within years, and whoever has it will hold decisive military and economic
+          power. The question is not whether it is built but by whom. If liberal democracies fall behind China,
+          the rules will be written in Beijing. Secure the laboratories, build the computing power and the
+          electricity at home, and treat the leading models as a matter of national security.
+        texts:
+          - {author: Leopold Aschenbrenner, title: "Situational Awareness: The Decade Ahead", year: 2024}
+    outcome: >-
+      Governments convened an AI Safety Summit at Bletchley Park in 2023, and the European Union passed an AI
+      Act in 2024 that regulates uses by their risk to rights and safety. Later summits shifted toward
+      investment and competition, and the United States and China treated advanced AI and the chips it runs on
+      as matters of strategic rivalry. The dispute among the three camps continues.
+
+  - id: debate.accelerationism-folk-politics
+    name: Accelerationism and folk politics
+    date: "2010–2016"
+    summary: >-
+      Benjamin Noys coined the term accelerationism in 2010 to criticize thinkers who hoped capitalism's own
+      speed would carry society beyond it, a current whose best-known figure was Nick Land. In 2013 Nick
+      Srnicek and Alex Williams published a manifesto for a left accelerationism. Their 2015 book Inventing the
+      Future criticized what they called folk politics, the local, horizontal and immediate tactics of the
+      alter-globalization movement and Occupy, and proposed full automation and a universal basic income.
+    problematic: accelerationism.question
+    sides:
+      - label: Left accelerationism
+        thinkers: []
+        positions: [accelerationism.question.left-acc, automation.ownership.common-ownership, work.future.basic-income-emancipatory, culture.strategy.hegemony-first]
+        argument: >-
+          Capitalism built the machines that could free people from most work, then chained them to profit.
+          The left should not retreat into local, small and temporary actions that feel good and change nothing.
+          It should demand full automation, a shorter working week and a universal basic income, and build the
+          think tanks, media and institutions needed to make a post-work future common sense. Global capitalism
+          can only be beaten by something equally large, abstract and organized.
+        texts:
+          - {author: Alex Williams and Nick Srnicek, title: "#Accelerate: Manifesto for an Accelerationist Politics", year: 2013}
+          - {author: Nick Srnicek and Alex Williams, title: "Inventing the Future: Postcapitalism and a World Without Work", year: 2015}
+      - label: Horizontalism
+        thinkers: []
+        positions: [org.form.horizontal-movement, state.relation.exit-and-build, hist.zapatistas.autonomy-without-power]
+        argument: >-
+          What the accelerationists call folk politics is how people actually took back their lives in Argentina
+          in 2001, in Chiapas, in the squares. Assemblies, occupied factories and neighborhood councils build
+          new relations now instead of promising them after a seizure of power. Every plan to use the state and
+          its technologies for liberation has ended with a new set of managers. Change the world without taking
+          power.
+        texts:
+          - {author: John Holloway, title: Change the World Without Taking Power, year: 2002}
+          - {author: Marina Sitrin, title: "Horizontalism: Voices of Popular Power in Argentina", year: 2006}
+      - label: Against acceleration
+        thinkers: []
+        positions: [technology.nature.capitals-weapon, technology.nature.built-in-politics]
+        argument: >-
+          Accelerationism mistakes capitalism's restless destruction for liberation. The machines and networks
+          of capital are designed for control and profit, and speeding them up deepens exploitation rather than
+          exceeding it. Fantasies of a frictionless future skip over the bodies of the workers who run the
+          machine. The task is to break the circuit of accumulation, not to drive it faster.
+        texts:
+          - {author: Benjamin Noys, title: The Persistence of the Negative, year: 2010}
+          - {author: Benjamin Noys, title: "Malign Velocities: Accelerationism and Capitalism", year: 2014}
+      - label: Right accelerationism
+        thinkers: [thinker.land]
+        positions: [accelerationism.question.right-acc, ai.risk.capital-becomes-mind]
+        argument: >-
+          Capital is not a tool humans use but an intelligence assembling itself through them. Every attempt to
+          steer it, socialist or liberal, only slows the process down. The left accelerationists want to keep
+          the engine and remove its fuel. Let the market, technology and competition run, and let humanism go
+          the way of every other obsolete operating system.
+        texts:
+          - {author: Nick Land, title: Meltdown, year: 1994}
+          - {author: Nick Land, title: The Dark Enlightenment, year: 2012}
+    outcome: >-
+      Inventing the Future helped popularize demands for a four-day week and a universal basic income in parts
+      of the left. Right accelerationism fed neo-reactionary circles and, in a separate line, effective
+      accelerationism among technology investors. The word was also taken by violent white supremacists who
+      called for speeding up social collapse, a current the earlier debate had not anticipated.
