@@ -178,7 +178,7 @@ nodes:
         text: From the home on. Keepsakes, yes. Wealth, no.
         evidence: [{position: property.inheritance.abolish, w: 3}]
       - id: capital
-        text: At the business. Personal things pass down. Capital should be socialized.
+        text: At the business. Personal things pass down. Capital should belong to everyone.
         evidence: [{position: property.inheritance.socialize-capital, w: 3}]
       - id: grant
         text: From the savings on, and the money goes into a grant every young adult gets.
@@ -238,7 +238,7 @@ nodes:
         cause: structures
         evidence: [{position: property.commons.expand-to-communism, w: 3}]
       - id: loggers
-        text: The office handed the other valley to loggers. The fight is against enclosure.
+        text: The office handed the other valley to loggers. The fight is against fencing off what was shared.
         cause: interests
         evidence: [{position: property.commons.defend-against-enclosure, w: 3}]
       - id: gift
@@ -251,12 +251,12 @@ nodes:
     title: The fence
     text: Two walkers stop at a fence on a hillside in northern England. Who's right?
     voices:
-      - {name: "Graham, farmer", says: "Without this fence the hill would be grazed bare in a summer. Nobody looks after what nobody owns."}
+      - {name: "Geoff, farmer", says: "Without this fence the hill would be grazed bare in a summer. Nobody looks after what nobody owns."}
       - {name: "Becky, rambler", says: "This was common land until 1790. The fence was theft, and it's still theft."}
     why: This asks what you think should be held in common.
     options:
       - id: graham
-        text: Graham. Give it an owner, and it gets looked after.
+        text: Geoff. Give it an owner, and it gets looked after.
         evidence: [{position: property.commons.enclose, w: 3}]
       - id: becky
         text: Becky. Enclosure was theft, and it's still going on.

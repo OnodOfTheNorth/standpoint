@@ -603,10 +603,11 @@ problematics:
           coherently inside unions and neighborhood movements, push them toward self-management, and resist both
           bureaucrats and party takeovers. Especifismo in Uruguay and Brazil built just such social insertion.
         against:
-          - from: anarchism.individualist
+          - from: anarchism.communist
             text: >
-              Collective responsibility and a shared line are a party in all but name. The Platform was rightly called
-              anarcho-Bolshevism by Malatesta and Voline.
+              Collective responsibility and a shared line are a party in all but name. Voline's group answered the
+              Platform that it was Bolshevism in anarchist dress, and Malatesta warned that its executive committee
+              would become a government over the members.
           - from: marxism.leninism
             text: >
               You have rebuilt the vanguard and refuse to call it one, so you will not take power when the moment comes.
@@ -615,8 +616,7 @@ problematics:
           - {author: "Errico Malatesta", title: "A Project of Anarchist Organisation", year: 1927}
         traditions:
           defining: [anarchism.platformist]
-          typical: [anarchism.communist]
-          contested: [anarchism.syndicalist]
+          contested: [anarchism.syndicalist, anarchism.communist]
           rejects: [anarchism.individualist, anarchism.insurrectionary]
         presupposes: []
         excludes: [org.form.no-organization]
@@ -1311,11 +1311,13 @@ problematics:
         tension: []
         tags: [elections]
         analysis:
-          gains: []
-          pays: []
+          gains: [petty-bourgeoisie]
+          pays: [core-workers, reserve-army]
           mechanism: >
-            Principled abstention withdraws consent symbolically but, where not backed by mass action, leaves electoral
-            outcomes to those who vote, typically older owners of property; the class effect depends on what is done instead.
+            Abstention already runs highest among workers, the unemployed and the young. Where principled boycott adds
+            to it without mass action behind it, the electorate tilts further toward older owners of homes and
+            businesses, and parties stop bidding for the abstainers' votes with wages, benefits or rent rules. Where it
+            accompanies a mass movement, as in Russia in 1905, its effect is that movement's.
           drain: none
           law_of_value: none
           disputed: >
@@ -1433,13 +1435,17 @@ problematics:
         tension: [cs.politicians.all-crooks]
         tags: [elections, common-sense]
         analysis:
-          gains: []
+          gains: [core-workers, reserve-army]
           pays: []
           mechanism: >
-            A norm of voting raises turnout among lower-income groups who otherwise abstain, which modestly shifts
-            policy toward them; it also binds them to the existing choice set, whose limits donors and parties fix.
+            A strong norm of voting raises turnout most among lower-income voters who otherwise abstain, so parties must
+            bid for them; after Australia made voting compulsory in 1924, the labour vote and pension spending rose.
+            The gain stays inside the existing choice set, whose limits are fixed by parties and their donors.
           drain: none
           law_of_value: none
+          disputed: >
+            Some political scientists find the policy effect of higher turnout small where parties offer similar
+            programs; anarchists hold that the habit of voting absorbs energy that direct action would use better.
           consciousness: economic-corporate
 
       - id: elections.role.plebiscite
@@ -1462,6 +1468,7 @@ problematics:
               Bonapartism: a leader balancing between classes, raised above them by the plebiscite, who in the end serves
               the owners while silencing the workers.
         sources:
+          - {author: "Charles de Gaulle", title: "Discours de Bayeux (Bayeux speech)", year: 1946}
           - {author: "Carl Schmitt", title: "The Crisis of Parliamentary Democracy", year: 1923}
           - {author: "Karl Marx", title: "The Eighteenth Brumaire of Louis Bonaparte", year: 1852, note: "a critical analysis of plebiscitary rule"}
         traditions:
