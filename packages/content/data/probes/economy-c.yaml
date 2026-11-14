@@ -69,10 +69,10 @@ nodes:
     why: This asks what you think makes property rightful.
     options:
       - id: landowner
-        text: The landowner. Long possession and family continuity are the real foundation.
+        text: The landowner. Three centuries of holding it, father to son, is what makes it his.
         evidence: [{position: property.private.inherited-order, w: 3}]
       - id: solicitor
-        text: The solicitor. Property is a convention, judged by what it does.
+        text: The solicitor. Property is a rule people made, and it's judged by what it does.
         evidence: [{position: property.private.convention, w: 3}]
       - id: god
         text: Both miss it. The land is God's. The family holds it in trust.
@@ -129,7 +129,7 @@ nodes:
     why: This asks whether you own yourself, and what you think follows.
     options:
       - id: hamish
-        text: Hamish. Self-ownership covers what you earn.
+        text: Hamish. If you own yourself, you own what you earn.
         evidence: [{position: property.self-ownership.full, w: 3}]
       - id: aroha
         text: Aroha. You own yourself; the earth belongs to everyone.
@@ -147,7 +147,7 @@ nodes:
         text: Both miss it. "Owning yourself" is what's left to people who own nothing else.
         evidence: [{position: property.self-ownership.social-individual, w: 3}]
       - id: rent
-        text: Both miss it. If Hamish owns himself, he can't rent himself to a boss. The firm's output should be the workers'.
+        text: Both miss it. If Hamish owns himself, he can't rent himself to a boss. What the firm makes should belong to its workers.
         evidence: [{position: property.self-ownership.inalienable, w: 3}]
 
   - id: probe.property.self-ownership.contract

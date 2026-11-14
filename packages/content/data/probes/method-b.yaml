@@ -32,7 +32,7 @@ nodes:
     type: voices
     title: The payday loan
     text: >
-      Nkechi, a cleaner in London, borrows £400 at an annual rate over 1,000 percent to cover rent. She knew
+      Abena, a cleaner in London, borrows £400 at an annual rate over 1,000 percent to cover rent. She knew
       the terms. Three people argue about whether she acted against her own interest.
     voices:
       - {name: "An economist", says: "She had options and took this one. That tells you what she valued. Respect it."}
@@ -45,7 +45,7 @@ nodes:
         cause: individuals
         evidence: [{position: interests.objective.revealed-preference, w: 3}]
       - id: priest
-        text: The priest. There's a real good for people, and usury works against it.
+        text: The priest. There's a real good for people, and lending like that works against it.
         cause: ideas
         evidence: [{position: interests.objective.common-good, w: 3}]
       - id: organizer
@@ -161,7 +161,7 @@ nodes:
         cause: ideas
         evidence: [{position: morality.basis.rights-and-consent, w: 3}]
       - id: class
-        text: Look at the exceptions. Every ruling class decides whose killing counts as murder and whose as order.
+        text: Look at the exceptions. Whoever rules decides whose killing counts as murder and whose as order.
         cause: structures
         evidence: [{position: morality.basis.historical-class, w: 3}]
       - id: custom
@@ -200,7 +200,7 @@ nodes:
           - {position: morality.basis.natural-law, w: 3}
           - {position: morality.basis.divine-command, w: 1}
       - id: lecturer
-        text: The lecturer. Power rests on consent, and lying voids it.
+        text: The lecturer. Power rests on people's consent, and lying breaks it.
         cause: ideas
         evidence: [{position: morality.basis.rights-and-consent, w: 3}]
       - id: whose-war
@@ -419,7 +419,7 @@ nodes:
     why: This asks what you think moves history, through three teachers with three answers.
     options:
       - id: osei
-        text: Mr. Osei. Class struggle over who produces and who takes.
+        text: Mr. Osei. The fight between the people who work and the people who own.
         cause: structures
         evidence: [{position: history.motor.class-struggle, w: 3}]
       - id: varga
@@ -427,7 +427,7 @@ nodes:
         cause: ideas
         evidence: [{position: history.motor.ideas, w: 3}]
       - id: tomas
-        text: Brother Tomás. Providence.
+        text: Brother Tomás. God's hand is in all of it.
         cause: divine
         evidence: [{position: history.motor.providence, w: 3}]
       - id: heroes

@@ -8,7 +8,7 @@ contradict each other, what you do when they cost something, and which tradition
 There are no axes and no label at the end. Every claim in the reading opens its evidence trail, and every
 entry in the ontology can be disputed.
 
-**Site:** https://onodofthenorth.github.io/standpoint/ (runs entirely in your browser: no accounts, no server,
+**Site:** https://www.panecology.com/standpoint/ (runs entirely in your browser: no accounts, no server,
 no telemetry, no third-party requests).
 
 ## Three modes

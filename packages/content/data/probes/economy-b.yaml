@@ -14,7 +14,7 @@ nodes:
         evidence: [{position: crisis.cause.shocks-and-errors, w: 3}]
     options:
       - id: profit
-        text: Profits on all that capital were falling. The building was where the money went to hide, until it couldn't.
+        text: Profits on all that money were falling. The building was where the money went to hide, until it couldn't.
         cause: structures
         evidence: [{position: crisis.cause.falling-profit, w: 3}]
       - id: wages
@@ -52,7 +52,7 @@ nodes:
     why: This asks what you think causes crises, through what you would do about one.
     options:
       - id: spend
-        text: Spend. Public works, lower interest rates, money in people's pockets. Restart demand.
+        text: Spend. Public works, lower interest rates, money in people's pockets. Get people buying again.
         evidence: [{position: crisis.cause.demand-failure, w: 3}]
       - id: let-fail
         text: Let the bad investments fail. Don't cut rates; cheap money caused this.
@@ -274,15 +274,15 @@ nodes:
 
   - id: probe.inequality.justice.dinner
     type: voices
-    title: The dinner party
-    text: At a dinner party in Santiago, two guests have stopped pretending to be polite. Who's right?
+    title: The christening
+    text: At a christening lunch in Santiago, two guests have stopped pretending to be polite. Who's right?
     voices:
       - {name: Doña Isabel, says: "Some people are born to lead and some to follow, and pretending otherwise ruins everybody."}
       - {name: "Camila, student", says: "Half of what anyone at this table owns was inherited. Tax it until we all start level."}
     why: This asks whether you think economic inequality is just.
     options:
       - id: isabel
-        text: Doña Isabel. A society needs its orders.
+        text: Doña Isabel. A society needs its ranks.
         evidence: [{position: inequality.justice.natural-hierarchy, w: 3}]
       - id: camila
         text: Camila. Inherited advantage is unjust.
@@ -375,7 +375,7 @@ nodes:
     why: This asks what you think the welfare state is for, by how you explain its decline.
     options:
       - id: threat-gone
-        text: The fear that paid for it is gone. After 1989 nobody feared revolution, and cheap imports got harder to keep cheap.
+        text: The fear that paid for it is gone. After 1989 nobody feared revolution, so nobody needed to buy the workers off.
         cause: structures
         evidence: [{position: welfare.state.drain-and-threat, w: 3}]
       - id: need-less

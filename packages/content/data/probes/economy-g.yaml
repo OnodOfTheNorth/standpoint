@@ -13,7 +13,7 @@ nodes:
         text: The best return, full stop. It's our retirement, not a political campaign.
         evidence: [{position: investment.ethics.returns-only, w: 3}]
       - id: esg
-        text: Score every company on climate, labor and governance risk. Well-run firms are better bets anyway.
+        text: Score every company on climate, labor and how honestly it's run. Well-run firms are better bets anyway.
         evidence: [{position: investment.ethics.esg-integration, w: 3}]
       - id: divest
         text: Sell the oil, the arms and the prison lender. Don't profit from harm.
@@ -72,7 +72,7 @@ nodes:
     why: This asks whether and how you think investment should follow values.
     options:
       - id: student
-        text: The student. Divest, and say why.
+        text: The student. Sell, and say why.
         evidence: [{position: investment.ethics.divest, w: 3}]
       - id: director
         text: The director. Stay in and push from inside.
@@ -81,7 +81,7 @@ nodes:
         text: Both miss it. The endowment's job is returns for scholarships, not statements.
         evidence: [{position: investment.ethics.returns-only, w: 3}]
       - id: risk
-        text: Both miss it. Weigh the reputational and legal risk like any other. That's just good investing.
+        text: Both miss it. Weigh the risk to the university's name, and in court, like any other. That's just good investing.
         evidence: [{position: investment.ethics.esg-integration, w: 3}]
       - id: faith
         text: Both miss it. Some money is simply forbidden to touch. The founders were clear about that.
@@ -90,7 +90,7 @@ nodes:
         text: Both miss it. The staff pension fund is the bigger pot. Put the staff in charge of it.
         evidence: [{position: investment.ethics.workers-capital, w: 3}]
       - id: no-clean
-        text: Both miss it. There's no clean return. The question is who owns production, not which shares you hold.
+        text: Both miss it. There's no clean return. The question is who owns the factories, not which shares you hold.
         evidence: [{position: investment.ethics.no-clean-money, w: 3}]
 
   # ---------------------------------------------------------------- work.status
@@ -116,7 +116,7 @@ nodes:
         text: Fund a drivers' cooperative app. Let them keep the commission.
         evidence: [{position: work.status.platform-cooperative, w: 3}]
       - id: piece
-        text: It's wage labor paid by the trip. Recognize their right to organize and strike.
+        text: It's a wage, paid by the trip. Recognize their right to organize and strike.
         evidence: [{position: work.status.piece-wage, w: 3}]
       - id: informal
         text: They're small entrepreneurs, like ojek drivers always were. Give them licences and simpler rules, not a boss.
@@ -127,15 +127,15 @@ nodes:
     title: The charging point
     text: Two delivery riders waiting at a charging point in Nairobi at midnight. Who's right?
     voices:
-      - {name: Brian, says: "I'm my own boss. I log on when I want. Nobody's shouting at me."}
-      - {name: Wanjiru, says: "The app is the boss. It sets the price, picks the route and fires you with a swipe."}
+      - {name: Otieno, says: "I'm my own boss. I log on when I want. Nobody's shouting at me."}
+      - {name: Akinyi, says: "The app is the boss. It sets the price, picks the route and fires you with a swipe."}
     why: This asks what you think a platform rider is.
     options:
       - id: brian
-        text: Brian. They're independent.
+        text: Otieno. They're their own bosses.
         evidence: [{position: work.status.independent-contractor, w: 3}]
       - id: wanjiru
-        text: Wanjiru. That's an employer, whatever the contract says.
+        text: Akinyi. That's an employer, whatever the contract says.
         evidence: [{position: work.status.employees, w: 2}, {position: work.status.piece-wage, w: 1}]
       - id: hustle
         text: Both miss it. People here always worked by the job. Give them papers and fewer fines, and they'll build businesses.
@@ -378,7 +378,7 @@ nodes:
     title: The loan apps
     text: >
       In Nairobi, millions of people have borrowed on phone apps, a few thousand shillings at a time, at
-      interest rates that add up to over a hundred percent a year. Your cousin has loans on four apps to pay
+      interest rates that add up to over a hundred percent a year. Your flatmate has loans on four apps to pay
       off the other three. Why do so many people borrow like this?
     why: This asks what you think household debt is, and what kind of cause you reach for.
     options:
@@ -387,11 +387,11 @@ nodes:
         cause: structures
         evidence: [{position: debt.household.wages-replaced-by-loans, w: 3}]
       - id: choices
-        text: People borrow for things they can't afford. Nobody forced your cousin.
+        text: People borrow for things they can't afford. Nobody forced your flatmate.
         cause: individuals
         evidence: [{position: debt.household.personal-responsibility, w: 3}]
       - id: banks
-        text: Banks won't touch people like your cousin. Expensive credit beats no credit and a loan shark.
+        text: Banks won't touch people like your flatmate. Expensive credit beats no credit and a loan shark.
         cause: interests
         evidence: [{position: debt.household.free-credit, w: 3}]
       - id: predators

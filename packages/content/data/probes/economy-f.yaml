@@ -172,17 +172,17 @@ nodes:
   - id: probe.money.nature.cousins
     type: voices
     title: Christmas dinner
-    text: Your uncle has had two glasses of wine and your cousin has just finished an economics degree. Who's right?
+    text: Gerry, your sister's husband, has had two glasses of wine. Your niece Ruth has just finished an economics degree. Who's right?
     voices:
-      - {name: Uncle Gerry, says: "Bitcoin, like gold, can't be printed. That's the point. Everything else is a con."}
-      - {name: Cousin Priya, says: "The government creates the money. It can never run out. Taxes are just how it stops prices running away."}
+      - {name: Gerry, says: "Bitcoin, like gold, can't be printed. That's the point. Everything else is a con."}
+      - {name: Ruth, says: "The government creates the money. It can never run out. Taxes are just how it stops prices running away."}
     why: This asks what you think money is, and who should issue it.
     options:
       - id: gerry
-        text: Uncle Gerry. Sound money has to be scarce.
+        text: Gerry. Sound money has to be scarce.
         evidence: [{position: money.nature.hard-money, w: 3}]
       - id: priya
-        text: Priya. Money is a creature of the state.
+        text: Ruth. The state makes the money, so it can't run out of it.
         evidence: [{position: money.nature.chartalist, w: 3}]
       - id: compete
         text: Both miss it. Let currencies compete and people choose.
@@ -194,7 +194,7 @@ nodes:
         text: Both miss it. Members' banks lending at cost would drive interest to nothing.
         evidence: [{position: money.nature.mutual-credit, w: 3}]
       - id: ladder
-        text: Priya's right for America. Most countries can't print dollars, and that's the catch.
+        text: Ruth's right for America. Most countries can't print dollars, and that's the catch.
         evidence: [{position: money.nature.currency-hierarchy, w: 3}]
 
   # ---------------------------------------------------------------- finance.control
@@ -402,10 +402,10 @@ nodes:
         text: Hajji Rafiq. Giving to the poor is a duty to God, not a fee to the state.
         evidence: [{position: tax.purpose.religious-duty, w: 3}]
       - id: farah
-        text: Dr. Farah. Taxes manage the currency.
+        text: Dr. Farah. Taxes are there to keep prices in check.
         evidence: [{position: tax.purpose.currency-tool, w: 3}]
       - id: class
-        text: Both miss it. Workers pay through every packet of tea, and the budget pays the bondholders. That's whose state it is.
+        text: Both miss it. Workers pay through every packet of tea, and the budget pays the lenders. That's whose state it is.
         evidence: [{position: tax.purpose.class-instrument, w: 3}]
       - id: theft
         text: Both miss it. Taxation is taking by force, blessed or not.

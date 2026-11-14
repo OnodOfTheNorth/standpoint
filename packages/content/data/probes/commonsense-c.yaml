@@ -60,17 +60,17 @@ nodes:
     text: Two guests at a wedding have found each other. Who's right?
     voices:
       - {name: Tomás, says: "The government should keep out of my bedroom and my wallet. Everything else follows from that."}
-      - {name: Grace, says: "A society has to say out loud what's right and wrong, or nobody will, and the kids grow up with nothing."}
+      - {name: Imelda, says: "A society has to say out loud what's right and wrong, or nobody will, and the kids grow up with nothing."}
     why: This asks whether people should be left alone, and what being left alone needs.
     options:
       - id: tomas
         text: Tomás. Live and let live.
         evidence: [{position: cs.live-let-live.leave-alone, w: 3}]
       - id: grace
-        text: Grace. Law and community have to uphold what's right.
+        text: Imelda. Law and community have to uphold what's right.
         evidence: [{position: cs.live-let-live.uphold-virtue, w: 3}]
       - id: split
-        text: Tomás at home, Grace in public. Both have half of it.
+        text: Tomás at home, Imelda in public. Both have half of it.
         evidence: [{position: cs.live-let-live.private-yes-public-standards, w: 3}]
       - id: means
         text: Both miss it. Being left alone means nothing on nine dollars an hour and two jobs.
@@ -157,7 +157,7 @@ nodes:
         text: The driver. There's a small group pulling the strings.
         evidence: [{position: cs.rigged.hidden-hand, w: 3}]
       - id: passenger
-        text: The passenger. It's basically fair.
+        text: The passenger. It's basically fair if you put the work in.
         evidence: [{position: cs.rigged.basically-fair, w: 3}]
       - id: no-curtain
         text: Both miss it. There's no curtain. The rules are in the open, written for owners.
@@ -176,7 +176,7 @@ nodes:
   - id: probe.cs.middle.cafe
     type: voices
     title: The café
-    text: Your cousins are arguing across the table about the minimum wage. Who's right?
+    text: Two old schoolfriends have stopped talking football and started on the minimum wage. Who's right?
     voices:
       - {name: Rafael, says: "Double it. Nobody can live on what they pay now."}
       - {name: Helena, says: "Double it and my café closes, and my three staff earn nothing."}

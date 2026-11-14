@@ -160,24 +160,24 @@ nodes:
       On the fringe of a climate summit, three delegates share a taxi. Who has the right answer to growth?
     voices:
       - {name: "An Indian trade negotiator", says: "Three hundred million of our people don't have reliable electricity. Don't lecture us about limits."}
-      - {name: "A Swedish degrowth economist", says: "Rich countries can't decouple fast enough. We need to use less, and live well on it."}
+      - {name: "A Swedish degrowth economist", says: "Rich countries can't cut emissions fast enough while they keep growing. We need to use less, and live well on it."}
       - {name: "A Danish wind-industry executive", says: "Look at our turbines. Growth and emissions have already come apart. Build more, faster."}
     why: This asks what you think should be done about growth and ecology, through three people in one taxi.
     options:
       - id: india
-        text: The negotiator. The South has the right to develop first.
+        text: The negotiator. Poor countries get to grow first.
         cause: interests
         evidence: [{position: growth.ecology.southern-right-to-develop, w: 3}]
       - id: sweden
-        text: The economist. Rich countries must shrink their use.
+        text: The economist. Rich countries have to use less.
         cause: structures
         evidence: [{position: growth.ecology.degrowth, w: 3}]
       - id: denmark
-        text: The executive. Green growth works.
+        text: The executive. Grow clean. It's already working.
         cause: ideas
         evidence: [{position: growth.ecology.green-growth, w: 3}]
       - id: plan
-        text: All three take the market as given. Plan production for need within limits.
+        text: All three take the market as given. Plan what gets made for what people need, within the planet's limits.
         cause: structures
         evidence: [{position: growth.ecology.ecosocialism, w: 3}]
       - id: tech
@@ -320,7 +320,7 @@ nodes:
     why: This asks whether you think population is the problem, through three guests with three answers.
     options:
       - id: demographer
-        text: The demographer. Development settles it.
+        text: The demographer. Countries get richer and it sorts itself out.
         cause: structures
         evidence: [{position: population.question.development-settles-it, w: 3}]
       - id: minister
@@ -439,13 +439,13 @@ nodes:
         cause: interests
         evidence: [{position: climate.justice.pay-us-to-leave-it, w: 3}]
       - id: usa
-        text: The American. Shared but differentiated, rich go first.
+        text: The American. Everyone acts, and the rich go first.
         cause: ideas
         evidence:
           - {position: climate.justice.shared-but-differentiated, w: 3}
           - {position: climate.justice.no-inherited-debt, w: 1}
       - id: debt
-        text: The American is dodging. The rich countries owe a climate debt to the South.
+        text: The American is dodging. The rich countries owe the poor ones for two centuries of smoke.
         cause: structures
         evidence: [{position: climate.justice.climate-debt, w: 3}]
       - id: firms

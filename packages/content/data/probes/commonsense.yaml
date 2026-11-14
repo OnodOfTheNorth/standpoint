@@ -171,7 +171,7 @@ nodes:
         text: Cash. It's his money and mine. The taxman didn't fix the boiler.
         evidence: [{position: cs.taxes.taken-by-force, w: 3}]
       - id: waste
-        text: Cash. They'd only waste it.
+        text: Cash. They'd only spend it on another roundabout.
         evidence: [{position: cs.taxes.taken-and-wasted, w: 3}]
       - id: big-firms
         text: Cash, and no guilt. The big firms dodge millions. Sixty from us is not the problem.
@@ -316,27 +316,27 @@ nodes:
 
   - id: probe.cs.own-first.cousin
     type: tradeoff
-    title: The cousin's car
+    title: The brother's car
     text: >
-      Your cousin needs 500 to fix his car or he loses his delivery job. You have exactly 500. A friend who
+      Your younger brother needs 500 to fix his car or he loses his delivery job. You have exactly 500. A friend who
       works for a health charity tells you 500 buys enough nets to protect about a hundred children for three
-      years. Your cousin doesn't know about the nets. Your friend doesn't know about the car.
+      years. Your brother doesn't know about the nets. Your friend doesn't know about the car.
     why: This asks whether those closest to you come first, and why.
     options:
       - id: cousin
-        text: The cousin. He's family. Nobody else will help him.
+        text: My brother. He's family. Nobody else will help him.
         evidence: [{position: cs.own-first.family-first, w: 3}]
       - id: nets
-        text: The nets. A hundred children against one car. A child far away counts as much as my cousin.
+        text: The nets. A hundred children against one car. A child far away counts as much as my brother.
         evidence: [{position: cs.own-first.no-favorites, w: 3}]
       - id: circles
-        text: The cousin this time. I owe more to him, and I'll give to the nets when I can.
+        text: My brother this time. I owe more to him, and I'll give to the nets when I can.
         evidence: [{position: cs.own-first.widening-circles, w: 3}]
       - id: neither
         text: Neither. 500 is my whole cushion. I can't help anyone if I'm the next one sinking.
         evidence: [{position: cs.own-first.yourself-first, w: 3}]
       - id: both-ours
-        text: The cousin, and I'd ask why a delivery company lets a broken car cost a man his job.
+        text: My brother, and I'd ask why a delivery company lets a broken car cost a man his job.
         evidence: [{position: cs.own-first.own-means-class, w: 2}, {position: cs.own-first.family-first, w: 1}]
 
   - id: probe.cs.own-first.budget
@@ -358,7 +358,7 @@ nodes:
         text: The wing, but keep a real share for the vaccines. Closest first, never only.
         evidence: [{position: cs.own-first.widening-circles, w: 3}]
       - id: false-choice
-        text: Neither question is mine. Make the people with yachts pay for both.
+        text: Wrong question. Make the people with yachts pay for both.
         evidence: [{position: cs.own-first.own-means-class, w: 3}]
       - id: mother
         text: The wing. My mother first, and I'm not going to pretend otherwise.

@@ -89,7 +89,7 @@ nodes:
         cause: culture
         evidence: [{position: society.units.families, w: 3}]
       - id: steel
-        text: The steelworker. Owners closed the works and a class went under together.
+        text: The steelworker. The owners closed the works and a whole town of workers went under together.
         cause: structures
         evidence: [{position: society.units.classes, w: 3}]
       - id: imam
@@ -114,8 +114,8 @@ nodes:
     type: scene
     title: The port is shut
     text: >
-      Dockworkers in Durban have struck for two weeks. Shelves are emptying, and fuel is up. Your
-      brother-in-law, who drives a delivery van, is furious. At Sunday lunch he asks what you make of it.
+      Dockworkers in Durban have struck for two weeks. Shelves are emptying, and fuel is up. Your oldest
+      friend, who drives a delivery van, is furious. He rings you on his break to ask what you make of it.
     why: This asks whether you see social conflict as a malfunction or as the engine of change.
     options:
       - id: engine
@@ -193,11 +193,11 @@ nodes:
         cause: structures
         evidence: [{position: conflict.nature.institutionalized, w: 3}]
       - id: theorist
-        text: The theorist. Politics needs real sides, openly contesting.
+        text: The theorist. Politics needs real sides, fighting in the open.
         cause: ideas
         evidence: [{position: conflict.nature.agonism, w: 3}]
       - id: bishop
-        text: The bishop. Classes should cooperate; division is a disorder.
+        text: The bishop. Rich and poor should work together. Division is a wound.
         cause: divine
         evidence: [{position: conflict.nature.organic-harmony, w: 3}]
       - id: class
@@ -258,7 +258,7 @@ nodes:
     why: This asks what you think human nature is, by how you read a real case.
     options:
       - id: natural
-        text: Because that's what people are. Without hierarchy and money in the way, we cooperate.
+        text: Because that's what people are. Without bosses and money in the way, we cooperate.
         cause: nature
         evidence: [{position: human.nature.good-corrupted, w: 3}]
       - id: raised
@@ -313,7 +313,7 @@ nodes:
         text: Some people are just more capable. Give them the running of it and spare the rest the meetings.
         evidence: [{position: human.nature.hierarchical, w: 3}]
       - id: formation
-        text: People are decent but need formation. Make the rules teach as well as govern.
+        text: People are decent but need guidance. Make the rules teach as well as govern.
         evidence: [{position: human.nature.sound-disposition, w: 3}]
       - id: groups
         text: Keep the groups small. People cooperate in bands and get suspicious in crowds.

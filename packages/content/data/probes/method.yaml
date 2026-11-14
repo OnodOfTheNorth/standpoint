@@ -6,7 +6,7 @@ nodes:
     text: >
       Your grandmother was born in 1935 in a village outside Oaxaca. Three of her nine children died before
       they could walk. Her great-grandchildren have phones, student loans and no village. At her ninetieth
-      birthday a cousin raises a glass and asks the table whether things have got better. Everyone looks at
+      birthday a grandson raises a glass and asks the table whether things have got better. Everyone looks at
       you.
     why: This asks whether you think history moves forward, and if so, how.
     options:
@@ -386,7 +386,7 @@ nodes:
         text: After the bakery. Beyond that you need leaders, and the best you can do is choose between teams of them.
         evidence: [{position: history.elites.competing-elites, w: 3}]
       - id: all
-        text: It never has to stop. Federate the councils upward and nobody needs to rule.
+        text: It never has to stop. Link the councils together, level by level, and nobody needs to rule.
         evidence: [{position: history.elites.can-be-abolished, w: 3}]
       - id: property
         text: Size isn't the issue. Ownership is. Where a few own everything, a few rule, at any size.
@@ -411,7 +411,7 @@ nodes:
     why: This asks whether you think elites always rule, through three people who say different things about it.
     options:
       - id: scientist
-        text: The political scientist. Competition among elites is the best a mass society gets.
+        text: The political scientist. Choosing between teams of leaders is the best a big country gets.
         cause: structures
         evidence: [{position: history.elites.competing-elites, w: 3}]
       - id: servant
