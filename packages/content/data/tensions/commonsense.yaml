@@ -1,0 +1,333 @@
+# Tension rules, common-sense formations.
+tensions:
+  # ---------------------------------------------------------------- theory-practice
+  - id: tension.all-crooks-but-vote
+    type: theory-practice
+    between: [cs.politicians.all-crooks, practice.vote]
+    when: {all: [{holds: cs.politicians.all-crooks}, {practice: practice.vote}]}
+    prompt: >
+      You say politicians are all the same, and all crooked. You vote. If they're all the same, what are you
+      choosing between?
+    explain: >
+      If politicians are interchangeable, voting is pointless; voting anyway implies some difference worth
+      an afternoon. The gap is common, and the answer shows where the respondent thinks the difference lies.
+    resolutions:
+      - {id: less-damage, text: "Both, because some crooks steal less. I vote to limit the damage.", kind: hold, evidence: [{position: elections.role.lesser-evil, w: 2}]}
+      - {id: duty, text: "Only out of duty. My grandparents couldn't vote; I go even when it's pointless.", kind: condition, evidence: [{position: elections.role.civic-duty, w: 2}]}
+      - {id: sides, text: "They're not all the same. Some are on our side, some on the side of whoever pays.", kind: yield, revise: cs.politicians.all-crooks, evidence: [{position: cs.politicians.differ-by-whom-they-serve, w: 2}]}
+      - {id: frame, text: "The framing is wrong: I vote against them. Throwing them out is the point.", kind: reject, evidence: [{position: elections.role.choose-and-remove-rulers, w: 2}]}
+
+  - id: tension.everything-political-inactive
+    type: theory-practice
+    between: [cs.not-political.everything-political, practice.none]
+    when:
+      all:
+        - {holds: cs.not-political.everything-political}
+        - {answered: {node: module.practice.acts, option: none}}
+        - {answered: {node: module.practice.orgs, option: none}}
+    prompt: >
+      You say everything is political, and staying out takes a side. In the last two years you've done none
+      of the political things on the list and belong to nothing. By your own rule, which side have you been
+      on?
+    explain: >
+      The position denies that standing aside is neutral. Applied to oneself, it turns a stretch of
+      inactivity into a choice, which the respondent may accept, explain or dispute.
+    resolutions:
+      - {id: survival, text: "Both, because I'm worn out, broke or caring for someone. Getting through is political too.", kind: hold, evidence: [{position: cs.not-political.it-finds-you, w: 1}]}
+      - {id: for-now, text: "Only for now. I've been active before and will be again.", kind: condition, evidence: [{position: cs.not-political.everything-political, w: 1}]}
+      - {id: not-everything, text: "Then I don't really believe it. Most of life isn't politics, and I'm glad of it.", kind: yield, revise: cs.not-political.everything-political, evidence: [{position: cs.not-political.keep-head-down, w: 2}]}
+      - {id: frame, text: "The framing is wrong: how I raise my kids and what I say at work are politics. Your list is too narrow.", kind: reject, evidence: [{position: cs.not-political.everything-political, w: 1}]}
+
+  - id: tension.head-down-but-struck
+    type: theory-practice
+    between: [cs.not-political.keep-head-down, practice.strike]
+    when:
+      all:
+        - {holdsAny: [cs.not-political.keep-head-down, cs.not-political.dangerous]}
+        - {practiceAny: [practice.strike, practice.protest, practice.union-activist, practice.direct-action]}
+    prompt: >
+      You say you keep your head down, work and look after your family; politics is for others. In the last
+      two years you have also struck, protested or organized. Was that not politics?
+    explain: >
+      Many people who reject politics take part in collective action over their pay, their street or their
+      children's school. They draw the line between politics (parties, talk, ideology) and fighting for what
+      is theirs. Where they draw it is information.
+    resolutions:
+      - {id: wages, text: "Both, because that was about my wages, not politics. Politics is parties and speeches.", kind: hold, evidence: [{position: cs.not-political.keep-head-down, w: 1}, {position: unions.role.bargaining-agent, w: 1}]}
+      - {id: when-hit, text: "Only when it hits my family directly. I don't go looking for it.", kind: condition, evidence: [{position: cs.not-political.it-finds-you, w: 2}]}
+      - {id: more-political, text: "Fair. I'm more political than I let on.", kind: yield, revise: cs.not-political.keep-head-down, evidence: [{position: change.possibility.organized-people-can, w: 2}]}
+      - {id: frame, text: "The framing is wrong: calling it politics is how outsiders take it over. We were defending ourselves.", kind: reject, evidence: [{position: unions.role.bargaining-agent, w: 1}]}
+
+  - id: tension.organize-ourselves-unorganized
+    type: theory-practice
+    between: [cs.clean-house.organize-ourselves, practice.none]
+    when:
+      all:
+        - {holds: cs.clean-house.organize-ourselves}
+        - {answered: {node: module.practice.orgs, option: none}}
+    prompt: >
+      You say no savior is coming and working people must organize and do it themselves. You belong to no
+      union, party, association or group. Who is the "ourselves" doing the organizing?
+    explain: >
+      Self-organization is a practical claim. Without any tie to an organization, it stays a view about what
+      others should do.
+    resolutions:
+      - {id: not-yet, text: "Both, because the right organization doesn't exist where I live. When it does, I'll be in it.", kind: hold, evidence: [{position: cs.clean-house.organize-ourselves, w: 1}]}
+      - {id: bad-enough, text: "Only once things get bad enough. People organize when they have to.", kind: condition, evidence: [{position: change.possibility.only-in-crisis, w: 2}]}
+      - {id: leader, text: "Then maybe I'm waiting for someone after all. A good leader would help.", kind: yield, revise: cs.clean-house.organize-ourselves, evidence: [{position: change.possibility.from-above, w: 2}]}
+      - {id: frame, text: "The framing is wrong: organizing isn't joining a group. I talk to my neighbors and coworkers every day.", kind: reject, evidence: [{position: solidarity.basis.mutual-aid, w: 1}]}
+
+  - id: tension.civic-duty-no-vote
+    type: theory-practice
+    between: [cs.not-political.civic-duty, practice.vote]
+    when:
+      all:
+        - {holds: cs.not-political.civic-duty}
+        - {answered: {node: module.practice.acts}}
+        - {not: {practice: practice.vote}}
+    prompt: >
+      You say a citizen has a duty to take part. In the last two years you haven't voted. What kept you away?
+    explain: >
+      Duty-based participation usually starts at the ballot box. The gap may be circumstance (no election,
+      no right to vote) or a quiet change of mind.
+    resolutions:
+      - {id: no-election, text: "There was no election, or I'm not allowed to vote where I live.", kind: condition, evidence: [{position: cs.not-political.civic-duty, w: 1}]}
+      - {id: none-deserved, text: "Both, because none of them deserved a vote. A duty to take part is not a duty to endorse.", kind: hold, evidence: [{position: elections.role.boycott-principle, w: 1}, {position: cs.politicians.all-crooks, w: 1}]}
+      - {id: lost-faith, text: "Honestly, I've stopped believing it makes a difference.", kind: yield, revise: cs.not-political.civic-duty, evidence: [{position: change.possibility.power-always-wins, w: 2}]}
+      - {id: frame, text: "The framing is wrong: I take part in other ways. Voting is the least of it.", kind: reject, evidence: [{position: elections.role.organize-instead, w: 2}]}
+
+  - id: tension.cronies-but-lobby
+    type: theory-practice
+    between: [cs.rigged.cronies, practice.lobby]
+    when: {all: [{holds: cs.rigged.cronies}, {practice: practice.lobby}]}
+    prompt: >
+      You say the system is rigged by government favors to big business. You lobby officials or fund
+      campaigns for your own business or sector. What's the difference between your lobbying and theirs?
+    explain: >
+      Crony capitalism is lobbying that works. An owner who condemns it and lobbies has to locate the line
+      between defending an interest and buying a favor.
+    resolutions:
+      - {id: self-defense, text: "Both, because I'm defending myself against rules the big players wrote. If I don't show up, they eat me.", kind: hold, evidence: [{position: cs.rigged.cronies, w: 1}]}
+      - {id: cuts-only, text: "Only to cut rules and taxes, never for subsidies or contracts.", kind: condition, evidence: [{position: allocation.mechanism.free-market, w: 1}]}
+      - {id: everyone-plays, text: "There isn't much difference. Everyone plays; the big ones play better.", kind: yield, revise: cs.rigged.cronies, evidence: [{position: cs.politicians.bought, w: 2}]}
+      - {id: frame, text: "The framing is wrong: lobbying isn't the problem. A state with so many favors to sell is.", kind: reject, evidence: [{position: state.relation.shrink, w: 2}]}
+
+  # ---------------------------------------------------------------- position-consciousness
+  - id: tension.worker-wants-businessman
+    type: position-consciousness
+    between: [cs.clean-house.outsider-businessman]
+    when: {all: [{holds: cs.clean-house.outsider-businessman}, {classIs: [core-workers, peripheral-workers, reserve-army]}]}
+    prompt: >
+      You want an outsider to run the country like a business. You work for wages, so you've seen a
+      business run from the inside. Who is it run for, and where were you on the chart?
+    explain: >
+      Running a state like a firm means one command, costs cut and the bottom line in charge; employees
+      know that discipline from below. Supporters answer that a businessman at least gets things done, and
+      politicians run the state for themselves.
+    resolutions:
+      - {id: delivers, text: "Both, because a good boss gets things done and looks after people who deliver. That's more than politicians do.", kind: hold, evidence: [{position: cs.clean-house.outsider-businessman, w: 1}, {position: cs.politicians.all-crooks, w: 1}]}
+      - {id: builder, text: "Only if he made his money building things, not shuffling it around.", kind: condition, evidence: [{position: profit.legitimacy.rent-not-profit, w: 1}]}
+      - {id: for-workers, text: "Fair. A business is run for its owners. I'd rather the country ran for the people who work in it.", kind: yield, revise: cs.clean-house.outsider-businessman, evidence: [{position: cs.clean-house.organize-ourselves, w: 2}]}
+      - {id: frame, text: "The framing is wrong: I don't mean run it for profit. I mean run it without the waste and the lying.", kind: reject, evidence: [{position: cs.rigged.system-rigged, w: 1}]}
+
+  - id: tension.owner-hard-work
+    type: position-consciousness
+    between: [cs.hard-work.effort-pays]
+    when: {all: [{holds: cs.hard-work.effort-pays}, {classIs: [industrial-capital, finance-capital, landed-capital, comprador-capital]}]}
+    prompt: >
+      You say work hard and you'll get ahead. Much of your income comes from owning: rent, profit, dividends.
+      Your property keeps earning while you sleep. Is that the hard work paying, or something else?
+    explain: >
+      Property income accrues to ownership whatever the owner's effort; wage income stops when the work
+      stops. Owners often describe their position through the work it took to acquire it. The answer
+      locates the effort: at the start, ongoing, or nowhere.
+    resolutions:
+      - {id: years, text: "Both, because I worked hard to get it. Owning is the reward for years of work and saving.", kind: hold, evidence: [{position: inequality.justice.earned-desert, w: 2}]}
+      - {id: inherited, text: "Only in my parents' case. They worked; I inherited, and I won't pretend otherwise.", kind: condition, evidence: [{position: cs.hard-work.depends-where-you-start, w: 2}]}
+      - {id: money-makes-money, text: "It's something else. Once you own enough, money makes money.", kind: yield, revise: cs.hard-work.effort-pays, evidence: [{position: cs.hard-work.depends-where-you-start, w: 1}, {position: cs.hard-work.others-profit, w: 1}]}
+      - {id: frame, text: "The framing is wrong: managing capital is hard work. Risk, decisions, sleepless nights.", kind: reject, evidence: [{position: value.source.entrepreneurial-risk, w: 2}]}
+
+  - id: tension.migrant-our-people-first
+    type: position-consciousness
+    between: [cs.own-first.our-people-first]
+    when:
+      all:
+        - {holdsAny: [cs.own-first.our-people-first, borders.migration.restrict-national]}
+        - {situation: {field: migrant, in: [resident, undocumented, refugee]}}
+    prompt: >
+      You say our people come first: citizens before foreigners. In the country where you live, you are not
+      a citizen. Applied here, the rule puts you at the back. Do you accept that?
+    explain: >
+      Migrants often hold restrictive views about later arrivals, or about the country they left. The rule
+      can be meant for one's home nation, applied everywhere with oneself at the back, or held with an
+      exception for those who came the approved way.
+    resolutions:
+      - {id: guest, text: "Both, because yes, I accept it. It's their country and I'm a guest. At home I'd want the same.", kind: hold, evidence: [{position: cs.own-first.our-people-first, w: 1}, {position: nationalism.kinds.ethnopluralism, w: 1}]}
+      - {id: right-way, text: "Only for people who come illegally or won't work. I came the right way.", kind: condition, evidence: [{position: borders.migration.legal-and-contributing, w: 2}]}
+      - {id: count-same, text: "Then the rule is wrong. People who live and work in a place should count the same there.", kind: yield, revise: cs.own-first.our-people-first, evidence: [{position: borders.migration.right-to-stay, w: 2}]}
+      - {id: frame, text: "The framing is wrong: by our people I mean my own community, wherever we live, not a passport.", kind: reject, evidence: [{position: solidarity.basis.kinship-nation, w: 1}]}
+
+  # ---------------------------------------------------------------- method in practice: villains versus structures
+  - id: tension.class-theory-greedy-few
+    type: logical
+    between: [class.concept.relation-to-production, cs.greed.most-decent-few-greedy]
+    when:
+      all:
+        - {holdsAny: [class.concept.relation-to-production, profit.legitimacy.unpaid-labor, capitalism.nature.exploitation-profit, history.motor.class-struggle]}
+        - {holds: cs.greed.most-decent-few-greedy}
+    prompt: >
+      You explain society by who owns and who works. You also say most people are decent and the greedy few
+      sit at the top. Swap the few for decent people. Do the owners behave any differently?
+    explain: >
+      A class account says owners act as they do because competition and profit require it; a villain
+      account says they act as they do because of who they are. The first predicts the same conduct from a
+      new owner, the second does not. Holding both leaves the working explanation in doubt.
+    resolutions:
+      - {id: selects, text: "Both, because the system selects for greed. The decent ones get beaten by the ruthless ones.", kind: hold, evidence: [{position: cs.greed.system-makes-greedy, w: 2}]}
+      - {id: cut-costs, text: "No. A decent owner still has to cut costs or go under. Character isn't the point.", kind: yield, revise: cs.greed.most-decent-few-greedy, evidence: [{position: cs.greed.system-makes-greedy, w: 2}]}
+      - {id: character, text: "Yes. In the end it comes down to the kind of people in charge.", kind: yield, revise: class.concept.relation-to-production, evidence: [{position: cs.greed.most-decent-few-greedy, w: 2}]}
+      - {id: frame, text: "The framing is wrong: character or system, the answer is the same. Take the property off them.", kind: reject, evidence: [{position: property.private.personal-vs-productive, w: 2}]}
+
+  - id: tension.class-theory-hidden-hand
+    type: logical
+    between: [class.concept.relation-to-production, cs.rigged.hidden-hand]
+    when:
+      all:
+        - {holdsAny: [class.concept.relation-to-production, capitalism.nature.exploitation-profit, history.motor.class-struggle, state.nature.class-instrument]}
+        - {holds: cs.rigged.hidden-hand}
+    prompt: >
+      You say society is shaped by who owns what. You also say a hidden group pulls the strings. If ownership
+      already explains who rules, what is the secret group for?
+    explain: >
+      A class account needs no conspiracy: owners rule in the open, through property, markets and law. A
+      hidden-hand account puts power in a secret circle. The cabal story has often been used to turn anger at
+      capital against a named minority, Jews above all; the old label for it is "the socialism of fools."
+    resolutions:
+      - {id: coordinate, text: "Both, because the rich do coordinate in private: clubs, boards, summits. That's class power organizing itself.", kind: hold, evidence: [{position: history.elites.ruling-class, w: 2}]}
+      - {id: in-the-open, text: "Fair. It's no secret. They do it in the open because they can.", kind: yield, revise: cs.rigged.hidden-hand, evidence: [{position: cs.rigged.working-as-designed, w: 2}]}
+      - {id: behind, text: "Ownership is a front. The real power sits behind it.", kind: yield, revise: class.concept.relation-to-production, evidence: [{position: cs.rigged.hidden-hand, w: 2}]}
+      - {id: frame, text: "The framing is wrong: some decisions really are made in secret. Naming who made them isn't a theory of everything.", kind: reject, evidence: [{position: cs.rigged.system-rigged, w: 1}]}
+
+  - id: tension.class-theory-all-crooks
+    type: logical
+    between: [state.nature.class-instrument, cs.politicians.all-crooks]
+    when:
+      all:
+        - {holdsAny: [class.concept.relation-to-production, state.nature.class-instrument, history.motor.class-struggle]}
+        - {holds: cs.politicians.all-crooks}
+    prompt: >
+      You say politics is about classes and who owns. You also say politicians are all the same, and all
+      crooked. If the trouble is crooks, an honest one would fix it. Would an honest one fix it?
+    explain: >
+      A class account of the state predicts that honest politicians in office serve the same interests as
+      crooked ones, because the economy sets their limits. A crookedness account predicts that clearing out
+      the crooks changes things. They point to different remedies.
+    resolutions:
+      - {id: job-corrupts, text: "Both, because the job corrupts whoever takes it. Honest ones don't last.", kind: hold, evidence: [{position: cs.politicians.office-makes-them, w: 2}]}
+      - {id: still-answers, text: "No. An honest one would still answer to the banks and the bosses. Crooked or not isn't the point.", kind: yield, revise: cs.politicians.all-crooks, evidence: [{position: cs.politicians.differ-by-whom-they-serve, w: 1}, {position: state.nature.class-instrument, w: 1}]}
+      - {id: clean-people, text: "Yes. Clean people in charge would make a real difference.", kind: yield, revise: state.nature.class-instrument, evidence: [{position: cs.clean-house.institutions-not-saviors, w: 2}]}
+      - {id: frame, text: "The framing is wrong: a few really do serve working people. That's why the rest gang up on them.", kind: reject, evidence: [{position: cs.politicians.differ-by-whom-they-serve, w: 2}]}
+
+  - id: tension.greedy-people-common-economy
+    type: logical
+    between: [cs.greed.everyone-greedy, allocation.mechanism.central-planning]
+    when:
+      all:
+        - {holds: cs.greed.everyone-greedy}
+        - {holdsAny: [allocation.mechanism.free-access, allocation.mechanism.central-planning, allocation.mechanism.participatory-planning, firm.ownership.worker-cooperatives, property.commons.expand-to-communism]}
+    prompt: >
+      You say people are basically greedy, out for number one. You also want an economy run in common:
+      plans, co-ops, or each according to need. If everyone's greedy, who runs it?
+    explain: >
+      Common ownership assumes people will cooperate, or that institutions can make them. A belief in fixed
+      greed makes that fragile. Those who hold both usually say greed is produced by circumstances, or that
+      rules must contain it.
+    resolutions:
+      - {id: why-we-need-it, text: "Both, because greed is why we need it. Leave greedy people a market and they'll take everything.", kind: hold, evidence: [{position: human.nature.self-interested, w: 1}]}
+      - {id: strict-rules, text: "Only with strict rules, checks and punishment for cheats. Not on trust.", kind: condition, evidence: [{position: human.nature.self-interested, w: 2}]}
+      - {id: system-makes, text: "People are greedy because the system rewards it. Change that and people change.", kind: yield, revise: cs.greed.everyone-greedy, evidence: [{position: cs.greed.system-makes-greedy, w: 2}, {position: human.nature.plastic-social, w: 1}]}
+      - {id: markets-fit, text: "Then markets are the only thing that works with people as they are.", kind: yield, revise: allocation.mechanism.central-planning, evidence: [{position: cs.greed.self-interest-harnessed, w: 2}]}
+      - {id: frame, text: "The framing is wrong: greedy people already run big firms and armies by plan. The only question is for whom.", kind: reject, evidence: [{position: allocation.mechanism.central-planning, w: 1}]}
+
+  - id: tension.no-classes-but-a-top
+    type: logical
+    between: [class.concept.no-such-thing, cs.rigged.system-rigged]
+    when:
+      all:
+        - {holds: class.concept.no-such-thing}
+        - {holdsAny: [cs.rigged.system-rigged, cs.rigged.working-as-designed, contradiction.primary.people-vs-elites]}
+    prompt: >
+      You say there are individuals, not classes. You also say the system is rigged by those at the top. Who
+      are "those at the top", if not a class?
+    explain: >
+      A rigged system implies a group with shared interests and the means to bend rules in its favor.
+      Individualists can answer that it is a coalition of individuals using the state; others reach for
+      elites, insiders or a cabal. The choice says what kind of top the respondent sees.
+    resolutions:
+      - {id: state-favors, text: "Both, because they're individuals who got hold of the state. Take away its favors and the top falls apart.", kind: hold, evidence: [{position: cs.rigged.cronies, w: 2}]}
+      - {id: call-it-class, text: "Fine, call them a class: the people who own most of everything.", kind: yield, revise: class.concept.no-such-thing, evidence: [{position: class.concept.relation-to-production, w: 1}, {position: class.concept.income-strata, w: 1}]}
+      - {id: political-class, text: "Only the political class: politicians and officials, not the rich as such.", kind: condition, evidence: [{position: class.concept.command-and-control, w: 1}]}
+      - {id: fair-enough, text: "Maybe it isn't rigged. Most people at the top got there fairly.", kind: yield, revise: cs.rigged.system-rigged, evidence: [{position: cs.rigged.basically-fair, w: 2}]}
+      - {id: frame, text: "The framing is wrong: the top is an elite, not a class. Some minority rules every society.", kind: reject, evidence: [{position: history.elites.iron-law, w: 2}]}
+
+  - id: tension.fair-deal-someone-else-rich
+    type: logical
+    between: [wage.nature.voluntary-exchange, cs.hard-work.others-profit]
+    when:
+      all:
+        - {holdsAny: [wage.nature.voluntary-exchange, workplace.conflict.harmony-of-interests]}
+        - {holds: cs.hard-work.others-profit}
+    prompt: >
+      You call the wage a fair deal that leaves both sides better off. You also say your hard work makes
+      someone else rich. If you both gain, why does it feel like only one of you does?
+    explain: >
+      The voluntary-exchange account says the wage pays what the work is worth to both parties; the
+      everyday sense that work enriches the employer says the worker gives more than is paid. Many people
+      hold both, which places them between two accounts of the wage.
+    resolutions:
+      - {id: better-end, text: "Both, because I agreed to the deal and would take it again. He just got the better end of it.", kind: hold, evidence: [{position: wage.nature.bargaining-power, w: 2}]}
+      - {id: more-than-paid, text: "It isn't fair. I make more than I'm paid; that's where his profit comes from.", kind: yield, revise: wage.nature.voluntary-exchange, evidence: [{position: wage.nature.price-of-labor-power, w: 2}]}
+      - {id: risk, text: "He took the risk and built the business. Of course he earns more from it.", kind: yield, revise: cs.hard-work.others-profit, evidence: [{position: profit.legitimacy.earned-reward, w: 2}]}
+      - {id: frame, text: "The framing is wrong: my employer is fine. It's the big money above him that gets rich.", kind: reject, evidence: [{position: capitalism.nature.usury-finance, w: 2}]}
+
+  - id: tension.left-alone-tough-leader
+    type: strategy-horizon
+    between: [cs.live-let-live.leave-alone, cs.clean-house.tough-leader]
+    when:
+      all:
+        - {holds: cs.live-let-live.leave-alone}
+        - {holdsAny: [cs.clean-house.tough-leader, cs.clean-house.army-steps-in]}
+    prompt: >
+      You want people left alone to live as they like. You also want a tough leader with a free hand to fix
+      things. A free hand for him is a short leash for someone. When he comes for people you'd leave alone,
+      what then?
+    explain: >
+      Leaving people alone requires limits on power; a leader with a free hand has none. People who hold
+      both usually expect the hand to fall on others: criminals, the corrupt, the political class.
+    resolutions:
+      - {id: others, text: "Both, because he'll go after criminals and crooks, not ordinary people. Then ordinary people finally get left alone.", kind: hold, evidence: [{position: cs.clean-house.tough-leader, w: 1}]}
+      - {id: short-time, text: "Only for a short time, to clean up, then back to normal.", kind: condition, evidence: [{position: emergency.powers.sovereign-exception, w: 1}]}
+      - {id: institutions, text: "Then no free hand. Strong courts and clean institutions, not one man.", kind: yield, revise: cs.clean-house.tough-leader, evidence: [{position: cs.clean-house.institutions-not-saviors, w: 2}]}
+      - {id: order-first, text: "Being left alone was always a luxury. Order and standards come first.", kind: yield, revise: cs.live-let-live.leave-alone, evidence: [{position: cs.live-let-live.private-yes-public-standards, w: 2}]}
+      - {id: frame, text: "The framing is wrong: right now crime and corruption leave nobody alone. A free hand is how you get the peace back.", kind: reject, evidence: [{position: cs.clean-house.tough-leader, w: 1}]}
+
+  - id: tension.jobs-gone-capital-free
+    type: logical
+    between: [cs.decline.jobs-gone, finance.control.free-flows]
+    when:
+      all:
+        - {holds: cs.decline.jobs-gone}
+        - {holdsAny: [finance.control.free-flows, allocation.mechanism.free-market, development.path.integration]}
+    prompt: >
+      You say the country went downhill when the good jobs and the industry left. You also want capital free
+      to go wherever it earns most. It went where it earned most. What would have kept it here?
+    explain: >
+      Since the 1970s industrial jobs have moved toward wherever labor and taxes cost less, under open trade
+      and capital flows. Defenders of open markets answer that cheaper goods and new work replaced them;
+      those who lost the jobs answer that the new work paid less.
+    resolutions:
+      - {id: red-tape, text: "Both, because it left over taxes, red tape and unions. Free it up and it comes back.", kind: hold, evidence: [{position: unions.role.obstacle, w: 1}, {position: work.future.flexible-markets, w: 1}]}
+      - {id: fair-trade, text: "Only with countries that play fair. Not with ones paying pennies.", kind: condition, evidence: [{position: tax.purpose.tariffs-for-the-nation, w: 2}]}
+      - {id: tie-down, text: "Then capital can't be free to leave. Tie it down: tariffs, controls, public ownership.", kind: yield, revise: finance.control.free-flows, evidence: [{position: work.future.dignity-of-work, w: 2}]}
+      - {id: never-coming, text: "The old jobs were never coming back. Nostalgia doesn't pay.", kind: yield, revise: cs.decline.jobs-gone, evidence: [{position: cs.decline.never-golden, w: 2}]}
+      - {id: frame, text: "The framing is wrong: it wasn't markets. The people at the top sold the country out.", kind: reject, evidence: [{position: cs.decline.sold-out, w: 2}]}

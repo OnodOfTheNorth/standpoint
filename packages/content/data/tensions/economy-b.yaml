@@ -1,0 +1,291 @@
+# Tension rules, economy domain (part two): logical, principle-application and strategy-horizon.
+tensions:
+  - id: tension.system-theory-villain-crisis
+    type: logical
+    between: [capitalism.nature.exploitation-profit, crisis.cause.greed-and-recklessness]
+    when:
+      all:
+        - {holdsAny: [capitalism.nature.exploitation-profit, class.concept.relation-to-production, crisis.cause.falling-profit, crisis.cause.underconsumption]}
+        - {holds: crisis.cause.greed-and-recklessness}
+    prompt: >
+      You describe the economy as a system that runs on profit from other people's work. When it crashes,
+      you blame greedy bankers and corrupt officials. If the bankers had been honest, would the crash not
+      have come?
+    explain: >
+      An account of capitalism by its structure predicts crises whoever is in charge; an account by greed
+      predicts them only when the wrong people are. Holding both explains the system with one theory and its
+      failures with another, and the second points toward replacing people rather than changing how the
+      economy runs.
+    resolutions:
+      - {id: faces, text: "Both, because the system rewards greed and puts the greediest in charge. The villains are the structure with faces on.", kind: hold, evidence: [{position: capitalism.nature.exploitation-profit, w: 1}, {position: crisis.cause.financial-instability, w: 1}]}
+      - {id: anyway, text: "It would have come anyway. Greed was the trigger, not the cause.", kind: yield, revise: crisis.cause.greed-and-recklessness, evidence: [{position: crisis.cause.falling-profit, w: 1}, {position: crisis.cause.financial-instability, w: 1}]}
+      - {id: people, text: "Honestly, it comes down to people. Decent people would run it differently.", kind: yield, revise: capitalism.nature.exploitation-profit, evidence: [{position: cs.greed.most-decent-few-greedy, w: 2}]}
+      - {id: frame, text: "The framing is wrong: naming culprits is how people get angry enough to act. The theory can wait.", kind: reject}
+
+  - id: tension.fair-wage-abolish-wages
+    type: strategy-horizon
+    between: [wage.nature.fair-days-pay, work.future.abolish-wage-labor]
+    when:
+      all:
+        - {holds: work.future.abolish-wage-labor}
+        - {holdsAny: [wage.nature.fair-days-pay, unions.role.bargaining-agent]}
+    prompt: >
+      You want the wage system abolished. You also want a fair day's wage for a fair day's work, and you'd
+      fight for it. Is a fair wage a step toward ending wages, or a way of making them bearable?
+    explain: >
+      Marx put the problem to trade unionists in 1865: instead of "a fair day's wage for a fair day's work"
+      they should write "abolition of the wages system" on their banner. The fight over pay builds
+      organization and confidence; it also settles people into the wage bargain.
+    resolutions:
+      - {id: steps, text: "Both, because people who never win a raise never believe they can win anything bigger.", kind: hold, evidence: [{position: reform.revolution.non-reformist-reforms, w: 2}, {position: unions.role.class-organ, w: 1}]}
+      - {id: slogan, text: "A fair wage is the real goal. Abolishing wages is a slogan.", kind: yield, revise: work.future.abolish-wage-labor, evidence: [{position: wage.nature.fair-days-pay, w: 2}]}
+      - {id: no-fair-wage, text: "There is no fair wage. Every raise is a better price for the same arrangement.", kind: yield, revise: wage.nature.fair-days-pay, evidence: [{position: wage.nature.wage-slavery, w: 2}]}
+      - {id: frame, text: "The framing is wrong: people need to eat this week. I don't rank their rent against a future.", kind: reject}
+
+  - id: tension.desert-and-inheritance
+    type: principle-application
+    between: [inequality.justice.earned-desert, property.inheritance.family-right]
+    when: {holdsAll: [inequality.justice.earned-desert, property.inheritance.family-right]}
+    prompt: >
+      You say people deserve what they earn by their own work. You also say passing wealth to your children
+      is a basic right. The child who inherits a fortune didn't work for it. Do they deserve it?
+    explain: >
+      Desert ties wealth to the effort of the person who has it; inheritance ties it to the effort of a
+      parent. Conservatives and libertarians usually answer through the parent: the right to give is part of
+      what was earned.
+    resolutions:
+      - {id: parent, text: "Both, because the parent earned it, and giving it away is part of owning it. The child's desert doesn't come into it.", kind: hold, evidence: [{position: property.inheritance.family-right, w: 1}, {position: inequality.justice.process-not-pattern, w: 2}]}
+      - {id: modest, text: "Only up to a point. A house and savings, yes. A dynasty, no.", kind: condition, evidence: [{position: property.inheritance.modest-yes-dynasties-no, w: 2}]}
+      - {id: tax, text: "Then large inheritances should be taxed hard, so everyone starts closer to even.", kind: yield, revise: property.inheritance.family-right, evidence: [{position: property.inheritance.heavy-tax, w: 2}]}
+      - {id: frame, text: "The framing is wrong: families, not individuals, work and save. The fortune is the family's.", kind: reject, evidence: [{position: society.units.families, w: 2}]}
+
+  - id: tension.luck-and-inheritance
+    type: logical
+    between: [inequality.justice.luck-unjust, property.inheritance.family-right]
+    when: {holdsAll: [inequality.justice.luck-unjust, property.inheritance.family-right]}
+    prompt: >
+      You say inequality from luck and inheritance is unjust. You also say passing wealth to your children
+      is a basic right. Your child's head start is someone else's bad luck. Which gives?
+    explain: >
+      Luck egalitarianism counts being born into money as unchosen luck, which is exactly what inheritance
+      passes on. Many hold both because the first is about strangers' fortunes and the second about their
+      own family.
+    resolutions:
+      - {id: tax-not-ban, text: "Both, because wanting to provide for your children is good even if the result is unequal. You tax it; you don't forbid it.", kind: hold, evidence: [{position: property.inheritance.heavy-tax, w: 1}, {position: property.inheritance.modest-yes-dynasties-no, w: 1}]}
+      - {id: big-only, text: "Only the big fortunes are unjust. Leaving your kids a house is fine.", kind: condition, evidence: [{position: property.inheritance.modest-yes-dynasties-no, w: 2}]}
+      - {id: stake, text: "Then inheritance isn't a basic right. Give every young adult a stake instead.", kind: yield, revise: property.inheritance.family-right, evidence: [{position: property.inheritance.universal-endowment, w: 2}]}
+      - {id: luck-is-life, text: "Luck is part of life. Not every unequal start is an injustice.", kind: yield, revise: inequality.justice.luck-unjust, evidence: [{position: inequality.justice.process-not-pattern, w: 2}]}
+      - {id: frame, text: "The framing is wrong: the injustice is in who owns production, not which child got lucky.", kind: reject, evidence: [{position: inequality.justice.class-exploitation, w: 2}]}
+
+  - id: tension.free-market-tariffs
+    type: principle-application
+    between: [allocation.mechanism.free-market, tax.purpose.tariffs-for-the-nation]
+    when: {holdsAll: [allocation.mechanism.free-market, tax.purpose.tariffs-for-the-nation]}
+    prompt: >
+      You want free markets and prices to run production. You also want tariffs on imports to build national
+      industry. A tariff is a price set by the state to steer buyers away from the cheaper seller. Where does
+      the market stop?
+    explain: >
+      Free trade follows from free markets in liberal economics; protection follows from treating the nation
+      as the economic unit (Hamilton, List). Holding both trusts the market inside the border and not across it.
+    resolutions:
+      - {id: rivals-cheat, text: "Both, because markets work inside a nation with rules and loyalties. Trade with rivals who cheat isn't a free market.", kind: hold, evidence: [{position: tax.purpose.tariffs-for-the-nation, w: 1}, {position: nationalism.kinds.virtue-of-nations, w: 1}]}
+      - {id: strategic, text: "Only for what a country needs in a war: steel, chips, medicine.", kind: condition, evidence: [{position: tax.purpose.tariffs-for-the-nation, w: 1}]}
+      - {id: national-economy, text: "Then I'm not really for free markets. I'm for a strong national economy.", kind: yield, revise: allocation.mechanism.free-market, evidence: [{position: allocation.mechanism.mixed-steered, w: 2}]}
+      - {id: drop-tariffs, text: "Fair. A tariff is a tax on your own people. Drop them.", kind: yield, revise: tax.purpose.tariffs-for-the-nation, evidence: [{position: tax.purpose.public-goods, w: 1}]}
+      - {id: frame, text: "The framing is wrong: markets were never the opposite of the state. Someone always writes the rules.", kind: reject, evidence: [{position: markets.nature.framed-tool, w: 2}]}
+
+  - id: tension.subjective-value-just-wage
+    type: principle-application
+    between: [value.source.subjective-utility, wage.nature.just-wage]
+    when:
+      all:
+        - {holds: value.source.subjective-utility}
+        - {holdsAny: [wage.nature.just-wage, wage.nature.fair-days-pay]}
+    prompt: >
+      You say value is whatever people want, and prices discover it. You also say a wage is fair only if it
+      keeps a family decently. If the market price of someone's work falls below that, which is wrong: the
+      price, or your idea of fair?
+    explain: >
+      Subjective value theory has no standard of a fair price beyond what buyer and seller agree. The
+      just-wage tradition (Leo XIII, Rerum Novarum, 1891) sets a floor from human need. Holding both means
+      saying what overrides the market, and who enforces it.
+    resolutions:
+      - {id: different-questions, text: "Both, because prices say what things are worth to buyers, not what a person is owed. Different questions.", kind: hold, evidence: [{position: wage.nature.just-wage, w: 1}, {position: markets.nature.moral-economy, w: 2}]}
+      - {id: not-by-law, text: "Only through employers' conscience, churches and charity, not by law. Force the price up and the job disappears.", kind: condition, evidence: [{position: welfare.state.subsidiarity, w: 2}]}
+      - {id: price-is-price, text: "The price is the price. If it's low, the answer is more skill or another job.", kind: yield, revise: wage.nature.just-wage, evidence: [{position: wage.nature.voluntary-exchange, w: 2}]}
+      - {id: floor, text: "Then the market can't be the judge of value. Something else has to set the floor.", kind: yield, revise: value.source.subjective-utility, evidence: [{position: wage.nature.bargaining-power, w: 1}]}
+      - {id: frame, text: "The framing is wrong: a decent employer pays a decent wage and still prospers. The conflict is on paper.", kind: reject, evidence: [{position: workplace.conflict.mutual-duties, w: 2}]}
+
+  - id: tension.plan-without-prices
+    type: logical
+    between: [allocation.mechanism.central-planning, calculation.debate.hayek-knowledge]
+    when:
+      all:
+        - {holds: allocation.mechanism.central-planning}
+        - {holdsAny: [calculation.debate.hayek-knowledge, calculation.debate.mises-impossible]}
+    prompt: >
+      You want production planned centrally. You also accept that the knowledge a plan needs only shows up
+      in market prices. Then what is your planner planning with?
+    explain: >
+      Mises (1920) and Hayek (1945) argued that a central plan lacks the prices it needs to compare costs. A
+      planner who grants the argument must either accept waste as a price worth paying or say what replaces
+      prices.
+    resolutions:
+      - {id: worse-but-better, text: "Both, because a plan can be worse at prices and better at what matters: full employment, no crashes, no hunger amid plenty.", kind: hold, evidence: [{position: calculation.debate.dobb-ex-ante, w: 2}]}
+      - {id: computers, text: "Only with modern computers and live data. The argument was about 1920.", kind: condition, evidence: [{position: calculation.debate.computational, w: 2}]}
+      - {id: big-things, text: "Then plan the big things and let markets handle the rest.", kind: yield, revise: allocation.mechanism.central-planning, evidence: [{position: allocation.mechanism.market-socialism, w: 1}, {position: allocation.mechanism.mixed-steered, w: 1}]}
+      - {id: wrong, text: "Then the argument is wrong. Planned economies industrialized and fought a world war.", kind: yield, revise: calculation.debate.hayek-knowledge, evidence: [{position: calculation.debate.dobb-ex-ante, w: 1}]}
+      - {id: frame, text: "The framing is wrong: planning is about who decides, not a calculation puzzle.", kind: reject, evidence: [{position: allocation.mechanism.participatory-planning, w: 1}]}
+
+  - id: tension.markets-are-exploitation
+    type: logical
+    between: [markets.nature.same-thing, capitalism.nature.exploitation-profit]
+    when: {holdsAll: [markets.nature.same-thing, capitalism.nature.exploitation-profit]}
+    prompt: >
+      You say capitalism is simply the free market. You also say it runs on profit taken from unpaid labor.
+      So the village market, the bazaar and the farm stall are all exploitation?
+    explain: >
+      Equating capitalism with markets is usually a free-market position; equating it with exploitation is
+      usually an anti-capitalist one. Together they make every sale a site of exploitation, which some
+      anarcho-communists accept and most Marxists reject: for Marx, capitalism begins when labor is for sale.
+    resolutions:
+      - {id: no-markets, text: "Both, yes. Wherever things are made to sell, profit grows back. I want no markets at all.", kind: hold, evidence: [{position: markets.nature.commodity-production-is-the-root, w: 2}, {position: allocation.mechanism.free-access, w: 1}]}
+      - {id: older, text: "No. Markets are old; capitalism starts when people must sell their labor to live.", kind: yield, revise: markets.nature.same-thing, evidence: [{position: markets.nature.older-than-capitalism, w: 2}]}
+      - {id: just-trade, text: "If it's just markets, profit is just trade. I take back the unpaid-labor part.", kind: yield, revise: capitalism.nature.exploitation-profit, evidence: [{position: capitalism.nature.free-exchange, w: 2}]}
+      - {id: frame, text: "The framing is wrong: I mean the economy we actually have, not stalls in a village.", kind: reject, evidence: [{position: capitalism.nature.concentrated-ownership, w: 1}]}
+
+  - id: tension.divide-and-rule-undercut
+    type: logical
+    between: [labor.division.divide-and-rule, labor.division.outsiders-undercut-us]
+    when: {holdsAll: [labor.division.divide-and-rule, labor.division.outsiders-undercut-us]}
+    prompt: >
+      You say bosses stir up division and underneath all workers share one interest. You also say outsiders
+      undercut your wages. Is the outsider one of the workers who share your interest, or one of the
+      divisions?
+    explain: >
+      Both statements are common in labor movements. The first treats division as manufactured; the second
+      treats one division as a real clash of interest. Which governs decides whether the answer is a joint
+      union or a closed door.
+    resolutions:
+      - {id: leash, text: "Both, because the boss uses them to undercut us. Our interest is the same, but right now he holds the leash.", kind: hold, evidence: [{position: labor.division.divide-and-rule, w: 1}, {position: borders.migration.class-not-nation-link, w: 2}]}
+      - {id: same-terms, text: "Only when they come in on worse terms. Same pay, same rights, and nobody is undercutting.", kind: condition, evidence: [{position: labor.division.contract-status-is-a-wedge, w: 2}]}
+      - {id: real-fight, text: "Then the interest isn't the same. People compete for jobs, and pretending otherwise doesn't help.", kind: yield, revise: labor.division.divide-and-rule, evidence: [{position: borders.migration.restrict-for-workers, w: 2}]}
+      - {id: drop-undercut, text: "Then I drop the undercutting line. They're doing what I'd do in their place.", kind: yield, revise: labor.division.outsiders-undercut-us, evidence: [{position: labor.division.divide-and-rule, w: 2}]}
+      - {id: frame, text: "The framing is wrong: some divisions are real, like skill. Not every difference is a trick.", kind: reject, evidence: [{position: labor.division.skill-and-effort, w: 2}]}
+
+  - id: tension.class-solidarity-closed-door
+    type: principle-application
+    between: [solidarity.basis.shared-class, borders.migration.restrict-for-workers]
+    when: {holdsAll: [solidarity.basis.shared-class, borders.migration.restrict-for-workers]}
+    prompt: >
+      You say solidarity rests on a shared position: same boss, same work, same fate. You also want migration
+      limited to protect wages. The migrant on the next line has the same boss and the same work. Is your
+      solidarity with them or against them?
+    explain: >
+      Limiting labor supply to protect wages has a long history in unions; so does organizing migrants into
+      them. The first defends the existing workforce's bargaining power; the second widens the class it
+      defends. Both claim class solidarity.
+    resolutions:
+      - {id: protect-all, text: "Both, because limiting the flow protects every worker already here, them included.", kind: hold, evidence: [{position: borders.migration.restrict-for-workers, w: 1}, {position: solidarity.basis.shared-class, w: 1}]}
+      - {id: hiring-hall, text: "Only while employers decide who comes and on what terms. Under union hiring, no limits.", kind: condition, evidence: [{position: labor.division.contract-status-is-a-wedge, w: 1}]}
+      - {id: border, text: "Then my solidarity ends at the border. I look after the workers I know.", kind: yield, revise: solidarity.basis.shared-class, evidence: [{position: solidarity.basis.kinship-nation, w: 2}]}
+      - {id: organize, text: "Then organize them, don't keep them out.", kind: yield, revise: borders.migration.restrict-for-workers, evidence: [{position: borders.migration.class-not-nation-link, w: 2}]}
+      - {id: frame, text: "The framing is wrong: people migrate because capital moves and countries are ruined. Neither view touches the cause.", kind: reject, evidence: [{position: migration.cause.drain, w: 2}]}
+
+  - id: tension.national-profit-exploitation
+    type: principle-application
+    between: [capitalism.nature.exploitation-profit, profit.legitimacy.national-development]
+    when: {holdsAll: [capitalism.nature.exploitation-profit, profit.legitimacy.national-development]}
+    prompt: >
+      You say profit is taken from unpaid labor. You also say profit is legitimate when it builds the
+      nation's industry. A worker in a national factory gives the same unpaid hours as one in a
+      foreign-owned plant. What makes the first legitimate?
+    explain: >
+      Theories of a national bourgeoisie, from the Comintern's 1920 colonial theses to Mao's New Democracy,
+      let native capital accumulate during the struggle against empire. Critics on the left (Trotsky's
+      permanent revolution, later Gunder Frank) answered that national capital ends as the empire's junior partner.
+    resolutions:
+      - {id: stays-here, text: "Both, because the surplus stays here and builds roads, plants and skills. Taken by foreigners, it's gone.", kind: hold, evidence: [{position: profit.legitimacy.national-development, w: 1}, {position: alliances.policy.national-front, w: 2}]}
+      - {id: directed, text: "Only for a period, under a state that directs investment and holds owners to a plan.", kind: condition, evidence: [{position: allocation.mechanism.mixed-steered, w: 2}]}
+      - {id: useful-not-legit, text: "Then it isn't legitimate, only useful for now. Exploitation is exploitation, whoever does it.", kind: yield, revise: profit.legitimacy.national-development, evidence: [{position: profit.legitimacy.unpaid-labor, w: 2}]}
+      - {id: builder-earns, text: "Then profit isn't simply unpaid labor. Whoever builds industry earns something.", kind: yield, revise: capitalism.nature.exploitation-profit, evidence: [{position: profit.legitimacy.earned-reward, w: 1}]}
+      - {id: frame, text: "The framing is wrong: the main exploiter is the empire draining us. Domestic profit is a later question.", kind: reject, evidence: [{position: contradiction.primary.imperialism-vs-oppressed, w: 2}]}
+
+  - id: tension.voluntary-wage-unions-obstacle
+    type: principle-application
+    between: [wage.nature.voluntary-exchange, unions.role.obstacle]
+    when: {holdsAll: [wage.nature.voluntary-exchange, unions.role.obstacle]}
+    prompt: >
+      You call the wage a fair, voluntary exchange. You also call unions an obstacle. A union is workers
+      agreeing to sell their work together, on terms they set. Isn't that a voluntary exchange too?
+    explain: >
+      Free-market thinkers split here. Some accept a voluntary union as lawful association and object only
+      to laws that compel employers to bargain or workers to join (Hayek). Others treat any collective
+      bargaining as a cartel in labor.
+    resolutions:
+      - {id: compulsion, text: "Both, because unions don't stay voluntary. They live on laws that force employers to bargain and workers to join.", kind: hold, evidence: [{position: unions.role.obstacle, w: 1}, {position: property.private.natural-right, w: 1}]}
+      - {id: pickets, text: "Only the ones with pickets and closed shops. A voluntary club bargaining fairly is fine by me.", kind: condition, evidence: [{position: wage.nature.voluntary-exchange, w: 1}]}
+      - {id: their-right, text: "Fair point. If workers freely join, that's their right.", kind: yield, revise: unions.role.obstacle, evidence: [{position: unions.role.bargaining-agent, w: 2}]}
+      - {id: not-voluntary, text: "Then maybe the wage was never that voluntary. A worker alone can't outwait an employer.", kind: yield, revise: wage.nature.voluntary-exchange, evidence: [{position: wage.nature.bargaining-power, w: 2}]}
+      - {id: frame, text: "The framing is wrong: a cartel is a cartel, whether bosses or workers form it.", kind: reject, evidence: [{position: wage.nature.marginal-product, w: 1}]}
+
+  - id: tension.small-owners-free-market
+    type: principle-application
+    between: [firm.ownership.small-proprietors, allocation.mechanism.free-market]
+    when: {holdsAll: [firm.ownership.small-proprietors, allocation.mechanism.free-market]}
+    prompt: >
+      You want productive property spread among many families and small owners. You also want free markets
+      to sort out production. Markets tend to reward size: the chain beats the shop, the agribusiness buys
+      the farm. What keeps your owners small and many?
+    explain: >
+      Distributists (Belloc, Chesterton) and agrarian republicans wanted wide ownership protected by law,
+      guilds and limits on size. Free-market thinkers answer that concentration comes mainly from state
+      favors, and open competition keeps firms small enough.
+    resolutions:
+      - {id: favors, text: "Both, because big firms grow on subsidies, bailouts and rules only they can afford. A real free market favors the small.", kind: hold, evidence: [{position: capitalism.nature.crony-corrupted, w: 2}]}
+      - {id: fenced, text: "Only with antitrust law and caps on size. Markets, but fenced.", kind: condition, evidence: [{position: allocation.mechanism.social-market, w: 2}]}
+      - {id: let-it-decide, text: "Then let the market decide. If the big firm serves people better, it wins.", kind: yield, revise: firm.ownership.small-proprietors, evidence: [{position: firm.ownership.private-investors, w: 2}]}
+      - {id: guilds, text: "Then markets need guilds, caps and protection for the small. Not free markets.", kind: yield, revise: allocation.mechanism.free-market, evidence: [{position: markets.nature.moral-economy, w: 2}]}
+      - {id: frame, text: "The framing is wrong: small owners are crushed by credit and land costs, not by markets as such.", kind: reject, evidence: [{position: capitalism.nature.usury-finance, w: 2}]}
+
+  - id: tension.self-ownership-closed-border
+    type: principle-application
+    between: [property.self-ownership.full, borders.migration.restrict-national]
+    when:
+      all:
+        - {holds: property.self-ownership.full}
+        - {holdsAny: [borders.migration.restrict-national, borders.migration.remigration]}
+    prompt: >
+      You say you own yourself fully, including what you earn. You also want low immigration to keep the
+      nation's culture intact. A landlord here wants to rent to a foreigner, an employer wants to hire one.
+      Whose property rights win?
+    explain: >
+      Libertarians divide here. Some hold that self-ownership implies free movement onto willing owners'
+      property (Caplan). Others (Hoppe) argue that in a fully private world owners would exclude, so public
+      borders should imitate that.
+    resolutions:
+      - {id: private-world, text: "Both, because in a fully private world owners would keep out whom they liked. Borders do that job for now.", kind: hold, evidence: [{position: borders.migration.restrict-national, w: 1}, {position: property.self-ownership.full, w: 1}]}
+      - {id: welfare, text: "Only while there's a welfare state for newcomers to draw on. Abolish that and open the door.", kind: condition, evidence: [{position: welfare.state.coercive-dependency, w: 2}]}
+      - {id: owner-decides, text: "Then the owner decides, not the state. Open the border to anyone invited.", kind: yield, revise: borders.migration.restrict-national, evidence: [{position: borders.migration.open-borders, w: 2}]}
+      - {id: people-claim, text: "Then self-ownership isn't the whole story. A people has a claim on its land too.", kind: yield, revise: property.self-ownership.full, evidence: [{position: property.self-ownership.relational, w: 2}]}
+      - {id: frame, text: "The framing is wrong: a nation is not a market. Property rights live inside a country; they don't decide who belongs to it.", kind: reject, evidence: [{position: nationalism.kinds.virtue-of-nations, w: 1}]}
+
+  - id: tension.natural-property-national-soil
+    type: logical
+    between: [property.private.natural-right, property.land.national-domain]
+    when: {holdsAll: [property.private.natural-right, property.land.national-domain]}
+    prompt: >
+      You say property is a natural right, prior to any state. You also say land and what lies under it
+      belong to the nation, not to foreigners. If a foreign buyer pays a willing owner a fair price, whose
+      right do you break?
+    explain: >
+      Natural-rights property makes title independent of nationality; national-domain property makes the
+      nation the final owner. Mexico's 1917 constitution (Article 27) vested the subsoil in the nation and
+      limited foreign landholding; libertarians call such claims confiscation.
+    resolutions:
+      - {id: common-property, text: "Both, because a nation is a people's property held in common. Individuals own within it.", kind: hold, evidence: [{position: property.self-ownership.relational, w: 1}, {position: property.land.national-domain, w: 1}]}
+      - {id: subsoil, text: "Only for the subsoil: oil and minerals. Farms and houses are private.", kind: condition, evidence: [{position: property.land.national-domain, w: 1}]}
+      - {id: sale-stands, text: "Then the sale stands. A right that stops at the border isn't natural.", kind: yield, revise: property.land.national-domain, evidence: [{position: property.land.freehold, w: 2}]}
+      - {id: granted, text: "Then property isn't prior to the nation. It's granted for the common good.", kind: yield, revise: property.private.natural-right, evidence: [{position: property.private.social-function, w: 2}]}
+      - {id: frame, text: "The framing is wrong: foreign capital doesn't buy as an equal. It buys with power ours doesn't have.", kind: reject, evidence: [{position: intl.sovereignty.nations-set-own-course, w: 2}]}

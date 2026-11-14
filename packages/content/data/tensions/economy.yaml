@@ -1,0 +1,425 @@
+# Tension rules, economy domain (part one): theory-practice and position-consciousness.
+# Absence of a practice is only tested once the practice module was answered.
+tensions:
+  # ---------------------------------------------------------------- theory-practice
+  - id: tension.union-organ-not-in-union
+    type: theory-practice
+    between: [unions.role.class-organ, practice.union-member]
+    when:
+      all:
+        - {holds: unions.role.class-organ}
+        - {answered: {node: module.practice.orgs}}
+        - {not: {practice: practice.union-member}}
+    prompt: >
+      You call unions the organs of the working class. You are not in one. What keeps you out?
+    explain: >
+      Treating unions as the class's own instrument implies taking part in one where you can. The gap may be
+      a fact about your work (no union to join, self-employment, a management job) or about how firmly the
+      view is held.
+    resolutions:
+      - {id: none-possible, text: "There is no union I could join where I work, or joining would get me fired.", kind: condition, evidence: [{position: unions.role.class-organ, w: 1}]}
+      - {id: elsewhere, text: "Both, because the class organizes in more places than the workplace. My time goes to a tenants' group, a party or my street.", kind: hold, evidence: [{position: unions.role.class-organ, w: 1}, {position: solidarity.basis.shared-class, w: 1}]}
+      - {id: bargaining, text: "Fair point. In practice I see unions as bargaining agents for their members, and I'm not one of them.", kind: yield, revise: unions.role.class-organ, evidence: [{position: unions.role.bargaining-agent, w: 2}]}
+      - {id: frame, text: "The framing is wrong: whether I carry a card says nothing about whether the claim is true.", kind: reject}
+
+  - id: tension.unpaid-labor-investor
+    type: theory-practice
+    between: [profit.legitimacy.unpaid-labor, practice.invest]
+    when: {all: [{holds: profit.legitimacy.unpaid-labor}, {practice: practice.invest}]}
+    prompt: >
+      You say profit is unpaid labor taken by owners. You also invest money in markets. Part of your return
+      is that profit. Whose labor is it?
+    explain: >
+      If profit is unpaid labor, a return on shares is a claim on that labor. Most people who invest do it
+      through a pension or savings account because nothing else covers old age. The tension is real either
+      way; what differs is how it is answered.
+    resolutions:
+      - {id: pension, text: "Only because it's a pension or savings I can't do without. I can't retire on principle.", kind: condition, evidence: [{position: profit.legitimacy.unpaid-labor, w: 1}]}
+      - {id: engels, text: "Both, because one person's purity changes nothing. What matters is which side I'm on and what the money does.", kind: hold, evidence: [{position: profit.legitimacy.unpaid-labor, w: 1}, {position: consumption.choice.production-decides, w: 1}]}
+      - {id: earned, text: "Then maybe profit isn't simply unpaid labor. My money took a risk too.", kind: yield, revise: profit.legitimacy.unpaid-labor, evidence: [{position: profit.legitimacy.earned-reward, w: 2}]}
+      - {id: frame, text: "The framing is wrong: a worker's savings in an index fund give no control over any firm. That isn't ownership in the sense that matters.", kind: reject, evidence: [{position: class.concept.relation-to-production, w: 1}]}
+
+  - id: tension.antagonism-manager
+    type: theory-practice
+    between: [workplace.conflict.structural-antagonism, practice.manage]
+    when: {all: [{holds: workplace.conflict.structural-antagonism}, {practice: practice.manage}]}
+    prompt: >
+      You say workers and owners have opposed interests built into the job. You also manage or discipline
+      other people's work. In the conflict you describe, which side is your job on?
+    explain: >
+      Supervision exists to get more work done for a set wage. A manager who holds the antagonism view
+      carries it into the daily job, where it has to be answered every time someone is written up.
+    resolutions:
+      - {id: squeezed, text: "Both, because I'm squeezed from both ends. I take orders too, and I shield my people where I can.", kind: hold, evidence: [{position: workplace.conflict.structural-antagonism, w: 1}, {position: class.concept.command-and-control, w: 1}]}
+      - {id: at-work, text: "At work I'm on the owners' side; that's what they pay me for. Off the clock, I'm not.", kind: condition, evidence: [{position: class.concept.command-and-control, w: 1}]}
+      - {id: partners, text: "Maybe it isn't built in. Most of the people I manage want the firm to do well too.", kind: yield, revise: workplace.conflict.structural-antagonism, evidence: [{position: workplace.conflict.partners-with-a-misunderstanding, w: 2}]}
+      - {id: frame, text: "The framing is wrong: work has to be coordinated in any economy, including one with no owners.", kind: reject, evidence: [{position: firm.ownership.worker-cooperatives, w: 1}]}
+
+  - id: tension.unions-obstacle-member
+    type: theory-practice
+    between: [unions.role.obstacle, practice.union-member]
+    when: {all: [{holds: unions.role.obstacle}, {practice: practice.union-member}]}
+    prompt: >
+      You see unions as an obstacle, to the firm, the economy or the individual. You are a member of one.
+    explain: >
+      Membership may be required by contract, kept as insurance, or kept for the raise it brings. Each
+      answer says something different about what the respondent thinks a union is.
+    resolutions:
+      - {id: required, text: "Only because I have to be. It comes with the job.", kind: condition, evidence: [{position: unions.role.obstacle, w: 1}]}
+      - {id: insurance, text: "Both, because the union exists anyway, so I take the legal cover and the raise. Refusing would only hurt me.", kind: hold, evidence: [{position: solidarity.basis.self-interest, w: 2}]}
+      - {id: worth-it, text: "Mine has been worth it. Maybe unions aren't the problem I thought.", kind: yield, revise: unions.role.obstacle, evidence: [{position: unions.role.bargaining-agent, w: 2}]}
+      - {id: frame, text: "The framing is wrong: membership isn't endorsement. People pay taxes to states they think are too big.", kind: reject}
+
+  - id: tension.free-market-lobby
+    type: theory-practice
+    between: [allocation.mechanism.free-market, practice.lobby]
+    when: {all: [{holds: allocation.mechanism.free-market}, {practice: practice.lobby}]}
+    prompt: >
+      You want free markets and prices to coordinate production. You also lobby officials or fund campaigns
+      for your business or sector. What are you asking them for?
+    explain: >
+      Lobbying usually seeks rules, contracts, tariffs or exemptions that a market would not deliver. It can
+      also defend a firm against rules others lobbied for. The answer separates the two.
+    resolutions:
+      - {id: defense, text: "Both, because I lobby to stop worse rules. If the state is in the room, I can't leave my chair empty.", kind: hold, evidence: [{position: capitalism.nature.crony-corrupted, w: 1}, {position: allocation.mechanism.free-market, w: 1}]}
+      - {id: only-cuts, text: "Only to remove a rule or a tax, never to win a favor.", kind: condition, evidence: [{position: allocation.mechanism.free-market, w: 1}]}
+      - {id: needs-help, text: "Honestly, the market alone wouldn't keep my sector alive. It needs some help.", kind: yield, revise: allocation.mechanism.free-market, evidence: [{position: allocation.mechanism.mixed-steered, w: 2}]}
+      - {id: frame, text: "The framing is wrong: telling officials what an industry needs is part of how a market society works.", kind: reject, evidence: [{position: markets.nature.framed-tool, w: 1}]}
+
+  - id: tension.mutual-aid-unpracticed
+    type: theory-practice
+    between: [solidarity.basis.mutual-aid, practice.mutual-aid]
+    when:
+      all:
+        - {holds: solidarity.basis.mutual-aid}
+        - {answered: {node: module.practice.acts}}
+        - {not: {practiceAny: [practice.mutual-aid, practice.community-org, practice.tenant-assoc]}}
+    prompt: >
+      You say solidarity is mutual aid, built in practice rather than declared. In the last two years you
+      haven't done mutual aid or belonged to a community group or tenants' association. Where is yours
+      being built?
+    explain: >
+      The position defines solidarity by the doing of it. Without some practice, what remains is sympathy,
+      which the position itself says is a different thing.
+    resolutions:
+      - {id: off-list, text: "Both, because it happens off your list: I feed a neighbor's kids, I drive people to the clinic. Nobody calls it an organization.", kind: hold, evidence: [{position: solidarity.basis.mutual-aid, w: 2}]}
+      - {id: no-time, text: "Only when I have time, and two jobs and a child leave me none.", kind: condition, evidence: [{position: solidarity.basis.mutual-aid, w: 1}]}
+      - {id: decency, text: "Then what I really hold is that solidarity is the decent thing to do. The practice part was a hope.", kind: yield, revise: solidarity.basis.mutual-aid, evidence: [{position: solidarity.basis.moral, w: 2}]}
+      - {id: frame, text: "The framing is wrong: a view of what solidarity is doesn't bind me to a schedule.", kind: reject}
+
+  - id: tension.class-agent-unorganized
+    type: theory-practice
+    between: [change.agent.workers-as-class, solidarity.basis.shared-class, practice.none]
+    when:
+      all:
+        - {holdsAny: [change.agent.workers-as-class, solidarity.basis.shared-class]}
+        - {answered: {node: module.practice.orgs, option: none}}
+    prompt: >
+      You say workers change things by acting together as a class, bound by a shared position. You belong
+      to no union, party or group of any kind. A class acts through organizations. Which one acts for you?
+    explain: >
+      Collective agency is the center of the position, and collective agency runs through organization.
+      Without any tie, the commitment stays an analysis of what other people do.
+    resolutions:
+      - {id: when-it-moves, text: "Both, because organizations come out of struggles, not before them. When it moves, I'll move.", kind: hold, evidence: [{position: change.possibility.only-in-crisis, w: 2}]}
+      - {id: nothing-here, text: "Only because there's nothing worth joining where I live. Show me one.", kind: condition, evidence: [{position: solidarity.basis.shared-class, w: 1}]}
+      - {id: sympathy, text: "Then my view is closer to sympathy. I think workers are in the right; I don't act as one.", kind: yield, revise: change.agent.workers-as-class, evidence: [{position: solidarity.basis.moral, w: 2}]}
+      - {id: join, text: "Fair. I should join something.", kind: yield}
+      - {id: frame, text: "The framing is wrong: getting the analysis right is worth something, and practice takes many shapes.", kind: reject}
+
+  - id: tension.antagonism-employer-assoc
+    type: theory-practice
+    between: [workplace.conflict.structural-antagonism, practice.employer-assoc]
+    when: {all: [{holds: workplace.conflict.structural-antagonism}, {practice: practice.employer-assoc}]}
+    prompt: >
+      You say workers and owners have opposed interests built into the job. You belong to an employers' or
+      business association, whose work is to win that conflict for owners. Is that a description or a
+      complaint?
+    explain: >
+      Many owners take the conflict as plain fact and organize for their side of it. Others hold it as a
+      critique while sitting on the other side. The answer separates a clear-eyed employer from a divided one.
+    resolutions:
+      - {id: description, text: "Both, as a description. Our interests differ; that's why we organize, same as they do.", kind: hold, evidence: [{position: workplace.conflict.pluralist-bargaining, w: 2}]}
+      - {id: against-big, text: "Only because a small firm alone gets crushed by suppliers, banks and the state. The association is about them, not my staff.", kind: condition, evidence: [{position: capitalism.nature.concentrated-ownership, w: 1}]}
+      - {id: face-to-face, text: "Then it isn't built in. In my firm we sort things out face to face.", kind: yield, revise: workplace.conflict.structural-antagonism, evidence: [{position: workplace.conflict.partners-with-a-misunderstanding, w: 2}]}
+      - {id: frame, text: "The framing is wrong: describing a conflict honestly doesn't commit me to either side of it.", kind: reject}
+
+  - id: tension.stewardship-no-giving
+    type: theory-practice
+    between: [inequality.justice.stewardship, practice.donate]
+    when:
+      all:
+        - {holds: inequality.justice.stewardship}
+        - {answered: {node: module.practice.acts}}
+        - {not: {practiceAny: [practice.donate, practice.charity-abroad, practice.mutual-aid, practice.ngo]}}
+    prompt: >
+      You hold that wealth is a gift held in trust for others. In the last two years you haven't donated,
+      given to charity abroad or taken part in mutual aid. Who is the trust for?
+    explain: >
+      Stewardship makes ownership conditional on use for others. The traditions that teach it, Christian,
+      Muslim and Jewish, also prescribe giving, much of it in forms no questionnaire records.
+    resolutions:
+      - {id: little, text: "Only those with wealth owe it. I have barely enough for my own.", kind: condition, evidence: [{position: inequality.justice.stewardship, w: 1}]}
+      - {id: unrecorded, text: "Both, because my giving isn't on your list: family, congregation, a neighbor's rent. The left hand shouldn't know.", kind: hold, evidence: [{position: inequality.justice.stewardship, w: 1}, {position: welfare.state.subsidiarity, w: 1}]}
+      - {id: mine, text: "Then what I really believe is that what I've earned is mine.", kind: yield, revise: inequality.justice.stewardship, evidence: [{position: inequality.justice.earned-desert, w: 2}]}
+      - {id: frame, text: "The framing is wrong: stewardship is about how a whole society uses wealth, not about my donations.", kind: reject, evidence: [{position: property.private.social-function, w: 2}]}
+
+  # ---------------------------------------------------------------- position-consciousness
+  - id: tension.employer-unpaid-labor
+    type: position-consciousness
+    between: [profit.legitimacy.unpaid-labor]
+    when:
+      all:
+        - {holdsAny: [profit.legitimacy.unpaid-labor, capitalism.nature.exploitation-profit]}
+        - {situation: {field: authority, in: [employs-few, employs-many]}}
+    prompt: >
+      You say profit comes from unpaid labor. You employ people, and part of your income is profit from
+      their work. By your own account, what are you taking, and from whom?
+    explain: >
+      Owners who hold the labor account of profit are not rare. Engels worked in and later co-owned his
+      family's Manchester mill for nearly twenty years while funding Marx. The position names the owner's
+      income as a claim on other people's work; the owner has to say what follows.
+    resolutions:
+      - {id: engels, text: "Both, because one owner going straight changes nothing. I pay above the going rate and put money where it helps change the rules.", kind: hold, evidence: [{position: profit.legitimacy.unpaid-labor, w: 1}, {position: change.agent.workers-as-class, w: 1}]}
+      - {id: hand-over, text: "Only for now. I mean to turn the firm over to the people who work in it.", kind: condition, evidence: [{position: firm.ownership.worker-cooperatives, w: 2}]}
+      - {id: my-work, text: "My profit is mostly pay for my own work and risk. That account fits big firms, not mine.", kind: yield, revise: profit.legitimacy.unpaid-labor, evidence: [{position: profit.legitimacy.fair-not-gouging, w: 2}]}
+      - {id: frame, text: "The framing is wrong: the system exploits, not me as a person. Guilt isn't an analysis.", kind: reject, evidence: [{position: capitalism.nature.exploitation-profit, w: 1}]}
+
+  - id: tension.landlord-socialist
+    type: position-consciousness
+    between: [property.private.personal-vs-productive]
+    when:
+      all:
+        - {holdsAny: [property.private.personal-vs-productive, property.private.possession-not-property, capitalism.nature.exploitation-profit]}
+        - {classIs: [landed-capital]}
+    prompt: >
+      You hold that what others need in order to live and work shouldn't be private property. You own
+      property that others pay you rent to live in or work on. By your own rule, is that personal property,
+      or the other kind?
+    explain: >
+      Personal property is what you use; private property in the sense the position means is what others
+      must pay you to use. A rental is the second kind on the position's own terms. Small landlords often
+      treat rent as their pension; the tension is between that need and the claim.
+    resolutions:
+      - {id: pension, text: "Both, because the rent is my old age. End private landlordism for everyone and I'll go along; I won't give up my pension alone.", kind: hold, evidence: [{position: property.private.personal-vs-productive, w: 1}, {position: consumption.choice.production-decides, w: 1}]}
+      - {id: decent, text: "Only while I charge below market and keep the place decent. The corporate landlords are the problem.", kind: condition, evidence: [{position: capitalism.nature.concentrated-ownership, w: 2}]}
+      - {id: sell, text: "Then I should sell it to the tenants at a fair price, or hand it to a housing co-op.", kind: yield, evidence: [{position: property.private.personal-vs-productive, w: 2}]}
+      - {id: small, text: "A small landlord is not a capitalist. I meant factories and banks, not one flat.", kind: yield, revise: property.private.personal-vs-productive, evidence: [{position: property.private.earned-is-mine, w: 2}]}
+      - {id: frame, text: "The framing is wrong: you can oppose a system you live inside. Nobody gets to wait outside it.", kind: reject}
+
+  - id: tension.landlord-rent-unearned
+    type: position-consciousness
+    between: [profit.legitimacy.rent-not-profit, value.source.land-and-labor]
+    when:
+      all:
+        - {holdsAny: [profit.legitimacy.rent-not-profit, value.source.land-and-labor, property.land.georgist-rent, tax.purpose.land-value]}
+        - {classIs: [landed-capital]}
+    prompt: >
+      You say rent is unearned: income from owning, not from working or building. Part of your income is
+      rent. Is that part unearned?
+    explain: >
+      Classical economists, Georgists and Marxists all treat ground rent as income that flows to ownership as
+      such. A landlord who holds the view is saying it about their own income, unless they can separate the
+      land from what they built and maintain on it.
+    resolutions:
+      - {id: improvements, text: "Only the land part. What I charge for the building, the repairs and my time is earned.", kind: condition, evidence: [{position: profit.legitimacy.rent-not-profit, w: 1}]}
+      - {id: tax-it, text: "Both, because I'd vote to tax it away. Until then I won't refuse what the law hands everyone.", kind: hold, evidence: [{position: tax.purpose.land-value, w: 2}]}
+      - {id: real-work, text: "Running property is real work. Rent pays for it like any other business.", kind: yield, revise: profit.legitimacy.rent-not-profit, evidence: [{position: profit.legitimacy.earned-reward, w: 2}]}
+      - {id: frame, text: "The framing is wrong: a view about the economy isn't a confession about my bank account.", kind: reject}
+
+  - id: tension.worker-blames-newcomers
+    type: position-consciousness
+    between: [labor.division.outsiders-undercut-us, borders.migration.restrict-national]
+    when:
+      all:
+        - {holdsAny: [labor.division.outsiders-undercut-us, borders.migration.restrict-national, borders.migration.remigration]}
+        - {classIs: [core-workers]}
+    prompt: >
+      You work for a wage, and you say newcomers drag it down. Someone hired them at that rate, and someone
+      pockets the gap between their pay and yours. In that picture, who is your problem?
+    explain: >
+      Wages in a trade fall when employers can hire people with fewer rights and less bargaining power.
+      Restricting migration and organizing migrants are two answers to the same fact: the first targets the
+      cheaper worker, the second targets the cheapness. Which one a worker reaches for decides their allies.
+    resolutions:
+      - {id: both, text: "Both, because the boss and the border are both problems. Stop the flow first, then deal with the boss.", kind: hold, evidence: [{position: borders.migration.restrict-for-workers, w: 2}]}
+      - {id: my-trade, text: "Only in some trades. In mine they really are used to undercut; in most jobs they aren't.", kind: condition, evidence: [{position: labor.division.outsiders-undercut-us, w: 1}]}
+      - {id: employer, text: "The employer. If they were in the union on the same pay, nobody could use them against us.", kind: yield, revise: labor.division.outsiders-undercut-us, evidence: [{position: borders.migration.class-not-nation-link, w: 2}]}
+      - {id: frame, text: "The framing is wrong: this isn't about wages. It's about whose country this is.", kind: reject, evidence: [{position: borders.migration.restrict-national, w: 2}]}
+
+  - id: tension.worker-welfare-for-our-own
+    type: position-consciousness
+    between: [welfare.state.for-our-own]
+    when: {all: [{holds: welfare.state.for-our-own}, {classIs: [core-workers, reserve-army]}]}
+    prompt: >
+      You want the welfare state kept for the people who built it and paid in. Newcomers shut out of it
+      still have to eat, so they take whatever job is going at whatever pay. Is that happening in your trade?
+    explain: >
+      A worker with no safety net cannot refuse a bad offer. Shutting migrants out of benefits makes them
+      cheaper and more pliable to employ, which lowers the floor for everyone in the same labor market.
+      Defenders answer that open access drains the fund and breaks voters' consent to pay for it.
+    resolutions:
+      - {id: trust, text: "Both, because the fund only survives if the people paying trust it. Open it to everyone and they'll vote it away.", kind: hold, evidence: [{position: welfare.state.for-our-own, w: 1}, {position: welfare.state.social-citizenship, w: 1}]}
+      - {id: fewer, text: "Only if fewer newcomers come. Then there's no pool of cheap labor to worry about.", kind: condition, evidence: [{position: borders.migration.restrict-for-workers, w: 2}]}
+      - {id: no-holes, text: "Then anyone working here should be covered here. A floor with holes in it isn't a floor.", kind: yield, revise: welfare.state.for-our-own, evidence: [{position: welfare.state.social-citizenship, w: 2}, {position: borders.migration.class-not-nation-link, w: 1}]}
+      - {id: frame, text: "The framing is wrong: it isn't about wages. Paying in creates a claim; turning up doesn't.", kind: reject, evidence: [{position: cs.taxes.paid-in, w: 2}]}
+
+  - id: tension.worker-nation-above-class
+    type: position-consciousness
+    between: [workplace.conflict.nation-above-class, unions.role.national-labor]
+    when:
+      all:
+        - {holdsAny: [workplace.conflict.nation-above-class, unions.role.national-labor]}
+        - {classIs: [core-workers, peripheral-workers]}
+    prompt: >
+      You live on a wage, and you say the fight between workers and bosses must give way to the nation. When
+      the nation's interest and your pay collide, someone decides which way it goes. In practice, who?
+    explain: >
+      Programs that put the nation above class usually fold unions into state bodies alongside employers
+      and restrict strikes. Under Mussolini independent unions were dissolved and wages fell; under Perón
+      unions were bound to the state and real wages rose in the first years. Who holds the state decides.
+    resolutions:
+      - {id: together, text: "Both, because a nation that pulls together can make the bosses pay. Divided workers get nothing.", kind: hold, evidence: [{position: workplace.conflict.nation-above-class, w: 1}, {position: change.agent.the-nation, w: 1}]}
+      - {id: right-government, text: "Only under a government that's really on the workers' side. Then the nation's interest and mine are the same.", kind: condition, evidence: [{position: unions.role.national-labor, w: 1}]}
+      - {id: strike, text: "If it comes to my pay or their profit, the nation doesn't come into it. I'd strike.", kind: yield, revise: workplace.conflict.nation-above-class, evidence: [{position: workplace.conflict.structural-antagonism, w: 2}]}
+      - {id: frame, text: "The framing is wrong: my pay and my country aren't things I trade against each other.", kind: reject}
+
+  - id: tension.professional-pay-band
+    type: position-consciousness
+    between: [inequality.justice.luck-unjust, tax.purpose.redistribute]
+    when:
+      all:
+        - {holdsAny: [inequality.justice.luck-unjust, tax.purpose.redistribute]}
+        - {classIs: [professional-managerial]}
+    prompt: >
+      You think inequality from luck and inheritance is unjust. Your salary rests partly on credentials, a
+      family that could afford them, and a license that limits who may do your work. Would you take a pay
+      cut to close the gap with the people below you?
+    explain: >
+      Professional pay is protected by degrees, licensing and scarcity, much of it passed down in families.
+      An egalitarianism that stops at the professional's own pay band redistributes from the very rich to
+      everyone except the professional.
+    resolutions:
+      - {id: yes, text: "Yes. If the gap is unjust, it's unjust in my office too.", kind: yield, evidence: [{position: inequality.justice.luck-unjust, w: 2}]}
+      - {id: tax-top, text: "Both, because cutting my pay alone helps nobody. Tax the top, raise the floor, and I'll pay my share.", kind: hold, evidence: [{position: tax.purpose.redistribute, w: 2}]}
+      - {id: earned, text: "My training was hard work, not luck. The principle is about inherited fortunes.", kind: yield, revise: inequality.justice.luck-unjust, evidence: [{position: inequality.justice.earned-desert, w: 2}]}
+      - {id: frame, text: "The framing is wrong: the real divide is between owners and everyone who works, me included.", kind: reject, evidence: [{position: inequality.justice.class-exploitation, w: 2}]}
+
+  - id: tension.small-owner-chains-and-newcomers
+    type: position-consciousness
+    between: [capitalism.nature.crony-corrupted, labor.division.outsiders-undercut-us]
+    when:
+      all:
+        - {classIs: [petty-bourgeoisie]}
+        - {holdsAny: [capitalism.nature.crony-corrupted, capitalism.nature.concentrated-ownership, capitalism.nature.usury-finance, markets.nature.anti-market]}
+        - {holdsAny: [labor.division.outsiders-undercut-us, borders.migration.restrict-national, borders.migration.remigration, migration.cause.welfare-magnet]}
+    prompt: >
+      You run a small business, and you say big firms and banks rig the market against people like you.
+      You also blame newcomers for what's gone wrong. The chains and the lenders set your prices and your
+      loan rate. Where do the newcomers come in?
+    explain: >
+      Small owners face monopoly suppliers, platforms and lenders on one side and labor costs on the other.
+      Anger at the first can be turned on migrants, who compete as workers and small traders but set no
+      prices. Restrictionist small owners answer that pressure from below is the one they can do something about.
+    resolutions:
+      - {id: both-ways, text: "Both, because both squeeze me: the chains from above, cheap competitors from below.", kind: hold, evidence: [{position: capitalism.nature.crony-corrupted, w: 1}, {position: labor.division.outsiders-undercut-us, w: 1}]}
+      - {id: rule-dodgers, text: "Only where newcomers open businesses that dodge the rules I have to follow.", kind: condition, evidence: [{position: labor.division.outsiders-undercut-us, w: 1}]}
+      - {id: wrong-target, text: "They don't set my supplier's prices or my loan rate. I've been aiming at the wrong people.", kind: yield, revise: labor.division.outsiders-undercut-us, evidence: [{position: capitalism.nature.concentrated-ownership, w: 2}]}
+      - {id: frame, text: "The framing is wrong: migration isn't about my business. It's about whether the country stays itself.", kind: reject, evidence: [{position: borders.migration.restrict-national, w: 2}]}
+
+  - id: tension.periphery-free-capital
+    type: position-consciousness
+    between: [finance.control.free-flows]
+    when: {all: [{holds: finance.control.free-flows}, {worldIs: [periphery, semi-periphery]}]}
+    prompt: >
+      You want capital to move freely to wherever it earns most. You live in a country where it can arrive
+      in a boom and leave in a week, taking the currency with it. When it leaves, who pays?
+    explain: >
+      Open capital accounts let money flow into poorer economies and out again when rich-country interest
+      rates move. Sudden outflows (Mexico 1994, Thailand and Indonesia 1997, Argentina 2001) crashed
+      currencies and wages. Defenders say controls trap savings, feed corruption and scare off investment.
+    resolutions:
+      - {id: need-it, text: "Both, because closing the door keeps out the investment we need. Nervous money beats no money.", kind: hold, evidence: [{position: finance.control.free-flows, w: 1}, {position: development.path.integration, w: 2}]}
+      - {id: reserves, text: "Only with a strong central bank and reserves to ride out the panics.", kind: condition, evidence: [{position: finance.control.prudential, w: 2}]}
+      - {id: controls, text: "Then we need controls. Money that can leave in a week is not investment, it's leverage over us.", kind: yield, revise: finance.control.free-flows, evidence: [{position: finance.control.capital-controls, w: 2}]}
+      - {id: frame, text: "The framing is wrong: the crises come from governments that print and borrow, not from capital moving.", kind: reject, evidence: [{position: poverty.cause.bad-institutions, w: 2}]}
+
+  - id: tension.drain-in-my-pension
+    type: position-consciousness
+    between: [profit.legitimacy.drain-superprofit, inequality.justice.global-drain]
+    when:
+      all:
+        - {holdsAny: [profit.legitimacy.drain-superprofit, inequality.justice.global-drain, labor.aristocracy.shares-but-exploited]}
+        - {worldIs: [core]}
+        - {situation: {field: assets, in: [financial-small, financial-large]}}
+    prompt: >
+      You say much of the profit in rich countries is drawn from poorer ones. Your savings or pension sit in
+      funds that own a slice of those profits. When miners abroad win a raise, your fund earns less. Which
+      side of that raise are you on?
+    explain: >
+      Savings and pension funds in rich countries hold shares in firms whose margins rest on cheap labor and
+      resources abroad. The position names a transfer; the savings put its holder on the receiving end,
+      however small the slice.
+    resolutions:
+      - {id: miners, text: "The miners'. I'd take the lower return.", kind: yield, evidence: [{position: inequality.justice.global-drain, w: 2}]}
+      - {id: crumbs, text: "Both, because my slice is crumbs next to what the owners take. Blame me last.", kind: hold, evidence: [{position: labor.aristocracy.shares-but-exploited, w: 2}]}
+      - {id: productivity, text: "Maybe the gap is mostly productivity, not extraction. Their wages will rise as they catch up.", kind: yield, revise: profit.legitimacy.drain-superprofit, evidence: [{position: labor.aristocracy.earned-by-productivity, w: 2}]}
+      - {id: switch, text: "Only until I can move it to a fund that doesn't invest that way.", kind: condition, evidence: [{position: consumption.choice.consumer-responsibility, w: 1}]}
+      - {id: frame, text: "The framing is wrong: I don't choose where my fund invests. Individuals don't set world prices.", kind: reject, evidence: [{position: consumption.choice.production-decides, w: 1}]}
+
+  - id: tension.tax-theft-transfers
+    type: position-consciousness
+    between: [tax.purpose.theft, cs.taxes.taken-by-force]
+    when:
+      all:
+        - {holdsAny: [tax.purpose.theft, cs.taxes.taken-by-force]}
+        - {situation: {field: income, in: [transfers]}}
+    prompt: >
+      You say taxation is theft. Part of your income is a pension, benefit or other payment that comes out
+      of taxes. Is that money stolen goods?
+    explain: >
+      Transfers are paid from taxes on others. Libertarians who receive them have a known reply: they paid
+      in under compulsion, so taking some back is restitution. The question is whether that reply covers
+      what they receive.
+    resolutions:
+      - {id: restitution, text: "Both, because I paid in for decades under threat. Taking some back is restitution, not theft.", kind: hold, evidence: [{position: tax.purpose.theft, w: 1}]}
+      - {id: up-to, text: "Only up to what I paid in. Past that, yes, it's other people's money.", kind: condition, evidence: [{position: cs.taxes.paid-in, w: 2}]}
+      - {id: dues, text: "Maybe it's more like dues than theft. You pay in, it comes back to you.", kind: yield, revise: tax.purpose.theft, evidence: [{position: cs.taxes.paid-in, w: 2}]}
+      - {id: frame, text: "The framing is wrong: a principle about what the state should do isn't a vow to live as if it already did.", kind: reject}
+
+  - id: tension.hard-money-debtor
+    type: position-consciousness
+    between: [money.nature.hard-money]
+    when:
+      all:
+        - {holds: money.nature.hard-money}
+        - {situation: {field: debt, in: [mortgage, student, consumer, business, crushing]}}
+    prompt: >
+      You want money hard, like gold, beyond the reach of governments. You also owe money. Under hard money,
+      prices tend to fall and a fixed debt gets heavier every year. Whom does that suit, you or your lender?
+    explain: >
+      Under a gold standard, falling prices raise the real weight of fixed debts; the American free-silver
+      movement of the 1890s was indebted farmers fighting exactly this. Hard-money advocates answer that
+      sound money stops the inflation that robs wage earners, and that cheap credit is what made the debt.
+    resolutions:
+      - {id: inflation-worse, text: "Both, because inflation robs me worse: my wages trail every price rise. I'd rather owe in money that holds its value.", kind: hold, evidence: [{position: money.nature.hard-money, w: 1}, {position: crisis.cause.credit-distortion, w: 1}]}
+      - {id: gradual, text: "Only once the debts are cleared. Change the money slowly, not overnight.", kind: condition, evidence: [{position: money.nature.hard-money, w: 1}]}
+      - {id: serve-borrowers, text: "If it makes my debt heavier every year, then no. Money should serve people who work and borrow.", kind: yield, revise: money.nature.hard-money, evidence: [{position: money.nature.chartalist, w: 1}, {position: finance.control.public-banks, w: 1}]}
+      - {id: frame, text: "The framing is wrong: I don't pick a money system for my own convenience. The question is whether governments can be trusted with it.", kind: reject, evidence: [{position: money.nature.hard-money, w: 1}]}
+
+  - id: tension.smallholder-freehold
+    type: position-consciousness
+    between: [property.land.freehold]
+    when: {all: [{holds: property.land.freehold}, {classIs: [peasantry]}]}
+    prompt: >
+      You want land held as ordinary property with secure titles. You farm a small plot. Titled land can be
+      sold, mortgaged, and lost after a bad harvest. In twenty years, who owns your valley?
+    explain: >
+      Titling lets smallholders borrow against land and protects them from eviction by officials. It also
+      lets land be bought up, so debt and bad years move it to larger owners and lenders. Hernando de Soto's
+      case for titling and the long record of dispossession through land markets are both real.
+    resolutions:
+      - {id: protection, text: "Both, because without a title anyone with a lawyer can take it. Paper is the only protection I have.", kind: hold, evidence: [{position: property.land.freehold, w: 2}]}
+      - {id: limits, text: "Only with limits: no sale to companies or outsiders, and a cap on how much one owner holds.", kind: condition, evidence: [{position: property.land.family-farm, w: 2}]}
+      - {id: village, text: "Then the land should stay with the village, worked and handed on, never sold.", kind: yield, revise: property.land.freehold, evidence: [{position: property.land.communal, w: 2}]}
+      - {id: frame, text: "The framing is wrong: farmers lose land to drought and crop prices, not to paperwork.", kind: reject}
