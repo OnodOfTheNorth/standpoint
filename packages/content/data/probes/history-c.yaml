@@ -1,0 +1,537 @@
+nodes:
+  # ---------------- hist.china-mao ----------------
+  - id: probe.hist.china-mao.1981-verdict
+    type: verdict
+    title: The party's verdict
+    text: >
+      Beijing, 1981. The Communist Party issues its official judgment on Mao, five years dead: his merits
+      primary, his errors secondary, the Cultural Revolution a grave error. Every school will teach it. You are
+      asked to sign. What do you do?
+    why: This asks how you judge China under Mao.
+    options:
+      - id: sign
+        text: Sign. Foundations laid, great achievements, grave errors late on. That is fair.
+        evidence: [{position: hist.china-mao.achievements-primary, w: 3}]
+      - id: too-harsh
+        text: Refuse. The Cultural Revolution was the high point, the masses against a new elite. This verdict buries it.
+        evidence: [{position: hist.china-mao.continuing-revolution, w: 3}]
+      - id: too-kind
+        text: Refuse. Tens of millions starved in the Great Leap. "Errors" is an obscene word for it.
+        evidence: [{position: hist.china-mao.utopian-catastrophe, w: 3}]
+      - id: health
+        text: Sign, for a different reason. Life expectancy went from about 35 to about 65. Weigh the famine against that.
+        evidence: [{position: hist.china-mao.basic-needs-revolution, w: 3}]
+      - id: squeeze
+        text: Refuse. It skips how the state squeezed peasants and workers to pay for steel.
+        evidence: [{position: hist.china-mao.bureaucratic-squeeze, w: 3}]
+      - id: stood-up
+        text: Sign. China was unified, independent and fought the Americans to a standstill in Korea. That outweighs the rest.
+        evidence: [{position: hist.china-mao.china-stood-up, w: 3}]
+      - id: civilization
+        text: Refuse. He made war on Confucius, on families, on temples. Nothing about that was secondary.
+        evidence: [{position: hist.china-mao.war-on-civilization, w: 3}]
+
+  - id: probe.hist.china-mao.doctor-and-writer
+    type: voices
+    title: Doctor and writer
+    text: Two people from the same Sichuan county describe the Mao years. Who is right?
+    voices:
+      - {name: "Liu, a retired barefoot doctor", says: "Before 1949 nobody in my village had seen a doctor. I vaccinated thousands of children. My mother learned to read at forty."}
+      - {name: "Chen, a novelist", says: "My grandparents starved in 1960 while grain went to the cities. In 1966 my father denounced his own teacher. Ask what that does to a family."}
+    why: This asks how you weigh China under Mao, through two lives.
+    options:
+      - id: liu
+        text: Liu. A revolution in health and schooling, with one catastrophe in it.
+        cause: structures
+        evidence: [{position: hist.china-mao.basic-needs-revolution, w: 3}]
+      - id: chen-famine
+        text: Chen. A utopian tyranny that killed millions chasing a dream.
+        cause: ideas
+        evidence: [{position: hist.china-mao.utopian-catastrophe, w: 3}]
+      - id: chen-family
+        text: Chen. Turning children against parents and teachers broke something older than the party.
+        cause: culture
+        evidence: [{position: hist.china-mao.war-on-civilization, w: 3}]
+      - id: both-merits
+        text: Both are true, and the doctor's side weighs more. Achievements first, errors second.
+        cause: individuals
+        evidence: [{position: hist.china-mao.achievements-primary, w: 3}]
+      - id: elite
+        text: Both miss what 1966 was for. Ordinary people were finally allowed to go after the party bosses.
+        cause: interests
+        evidence: [{position: hist.china-mao.continuing-revolution, w: 3}]
+      - id: squeeze
+        text: Both miss the grain prices. The state paid peasants little and sold steel dear. That built the factories.
+        cause: structures
+        evidence: [{position: hist.china-mao.bureaucratic-squeeze, w: 3}]
+      - id: nation
+        text: Both miss that China was whole and nobody's colony for the first time in a century.
+        cause: ideas
+        evidence: [{position: hist.china-mao.china-stood-up, w: 3}]
+
+  - id: probe.hist.china-mao.famine
+    type: explanation
+    title: The famine
+    text: >
+      Between 1959 and 1961, during the Great Leap Forward, China suffered a famine whose deaths are
+      estimated at between 15 and 45 million. What, above all, caused it?
+    why: This asks how you explain the Great Leap famine, and what kind of cause you reach for.
+    options:
+      - id: utopia
+        text: A utopian plan. Backyard furnaces, communal kitchens, crops planted by slogan.
+        cause: ideas
+        evidence: [{position: hist.china-mao.utopian-catastrophe, w: 3}]
+      - id: procurement
+        text: The state took grain on paper harvests to pay for industry, and officials lied upward to keep their jobs.
+        cause: interests
+        evidence: [{position: hist.china-mao.bureaucratic-squeeze, w: 3}]
+      - id: errors
+        text: Grave errors by a leadership that got most other things right.
+        cause: individuals
+        evidence: [{position: hist.china-mao.achievements-primary, w: 3}]
+      - id: alone
+        text: A country cut off by the West and dropped by Moscow tried to industrialize alone, in a hurry.
+        cause: structures
+        evidence: [{position: hist.china-mao.china-stood-up, w: 3}]
+      - id: villages
+        text: Smashing the family farm and the village's old ways destroyed what had kept people alive.
+        cause: culture
+        evidence: [{position: hist.china-mao.war-on-civilization, w: 3}]
+      - id: compare
+        text: Terrible, but over thirty years the clinics and food rations saved more lives than India's ordinary hunger cost.
+        cause: structures
+        evidence: [{position: hist.china-mao.basic-needs-revolution, w: 3}]
+      - id: bosses
+        text: Officials lying to protect themselves. Exactly the party elite the masses went after in 1966.
+        cause: interests
+        evidence: [{position: hist.china-mao.continuing-revolution, w: 3}]
+
+  # ---------------- hist.china-reform ----------------
+  - id: probe.hist.china-reform.shenzhen-1992
+    type: verdict
+    title: Shenzhen, 1992
+    text: >
+      Twelve years ago Shenzhen was a fishing town. Now there are cranes to the horizon. Deng Xiaoping tours
+      and tells officials to be bolder. On the assembly lines, girls from Sichuan work twelve-hour shifts
+      making toys for American shelves. Three years ago, tanks cleared Tiananmen Square. What are you looking
+      at?
+    why: This asks how you judge China's reform era.
+    options:
+      - id: primary-stage
+        text: Socialism building the forces it needs first. The party still holds the commanding heights.
+        evidence: [{position: hist.china-reform.primary-stage, w: 3}]
+      - id: restoration
+        text: Capitalism, restored by a Communist Party.
+        evidence: [{position: hist.china-reform.capitalist-restoration, w: 3}]
+      - id: markets
+        text: The state got out of the way and people got rich. That is all it ever takes.
+        evidence: [{position: hist.china-reform.markets-freed-people, w: 3}]
+      - id: developmental
+        text: A state steering its own industrialization, unlike Russia, which let the IMF steer.
+        evidence: [{position: hist.china-reform.developmental-state, w: 3}]
+      - id: workshop
+        text: Cheap labor turned into profits for companies on the other side of the Pacific.
+        evidence: [{position: hist.china-reform.workshop-of-the-world, w: 3}]
+      - id: tanks
+        text: Prosperity on condition of silence. The tanks are part of the deal.
+        evidence: [{position: hist.china-reform.prosperity-without-liberty, w: 3}]
+
+  - id: probe.hist.china-reform.owner-and-worker
+    type: voices
+    title: Dongguan and Shenyang
+    text: Two people describe the reform years. Who is right?
+    voices:
+      - {name: "Wang, a factory owner in Dongguan", says: "My parents were farmers who never saw a banknote. I employ four hundred people. Nobody gave us this. We were finally allowed to work."}
+      - {name: "Mei, a former steelworker in Shenyang", says: "In 1998 our state plant laid off thirty thousand. They took the flats, the clinic, the pension. Then a private buyer got the plant for nothing."}
+    why: This asks how you weigh China's reform era, through two people who lived it.
+    options:
+      - id: wang
+        text: Wang. Markets lifted China out of poverty.
+        cause: individuals
+        evidence: [{position: hist.china-reform.markets-freed-people, w: 3}]
+      - id: mei
+        text: Mei. The party restored capitalism and the workers paid.
+        cause: interests
+        evidence: [{position: hist.china-reform.capitalist-restoration, w: 3}]
+      - id: both-stage
+        text: Both are part of a socialist country building up its economy first. The hardship was the price of development.
+        cause: structures
+        evidence: [{position: hist.china-reform.primary-stage, w: 3}]
+      - id: state
+        text: Both miss the state. It decided which plants closed and which towns got the factories.
+        cause: structures
+        evidence: [{position: hist.china-reform.developmental-state, w: 3}]
+      - id: buyers
+        text: Both miss who bought what Wang's workers made, and how cheaply. The profits went abroad.
+        cause: interests
+        evidence: [{position: hist.china-reform.workshop-of-the-world, w: 3}]
+      - id: voice
+        text: Both miss that neither of them could say a word against it in public.
+        cause: ideas
+        evidence: [{position: hist.china-reform.prosperity-without-liberty, w: 3}]
+
+  - id: probe.hist.china-reform.china-vs-russia
+    type: explanation
+    title: China and Russia
+    text: >
+      In the 1990s Russia's economy shrank by about 40 percent. China's grew by about 10 percent a year. Both
+      had been planned economies run by communist parties. What, above all, explains the difference?
+    why: This asks how you explain China's reform-era growth, and what kind of cause you reach for.
+    options:
+      - id: gradual
+        text: China kept control of its banks, land and big firms, and opened slowly. Russia took shock therapy.
+        cause: structures
+        evidence: [{position: hist.china-reform.developmental-state, w: 3}]
+      - id: freed
+        text: China let millions of farmers and traders loose first. Enterprise did the rest.
+        cause: individuals
+        evidence: [{position: hist.china-reform.markets-freed-people, w: 3}]
+      - id: labor
+        text: China had hundreds of millions of cheap workers to rent to foreign capital. Russia had oil.
+        cause: interests
+        evidence: [{position: hist.china-reform.workshop-of-the-world, w: 3}]
+      - id: party
+        text: The Communist Party stayed in charge and used markets as a tool. In Russia the party gave up.
+        cause: structures
+        evidence: [{position: hist.china-reform.primary-stage, w: 3}]
+      - id: exploitation
+        text: China made capitalism work by squeezing workers harder. Growth is not socialism.
+        cause: interests
+        evidence: [{position: hist.china-reform.capitalist-restoration, w: 3}]
+      - id: order
+        text: China crushed its protests in 1989. Russia let its politics open. Order bought the growth.
+        cause: individuals
+        evidence: [{position: hist.china-reform.prosperity-without-liberty, w: 3}]
+
+  # ---------------- hist.china-present ----------------
+  - id: probe.hist.china-present.centenary
+    type: verdict
+    title: The centenary
+    text: >
+      2021. The Communist Party turns one hundred and declares absolute poverty abolished. Hong Kong's last
+      opposition newspaper has closed. Researchers estimate that hundreds of thousands, maybe over a million,
+      Uyghurs have passed through camps the state calls training centers. Chinese loans are building ports from
+      Pakistan to Kenya. What is China now?
+    why: This asks how you judge China since 2012.
+    options:
+      - id: socialism
+        text: A socialist country in a new era, ending poverty while others argue about it.
+        evidence: [{position: hist.china-present.new-era-socialism, w: 3}]
+      - id: rival
+        text: Capitalism run by a state, exporting capital like any rising imperial power.
+        evidence: [{position: hist.china-present.state-capitalist-rival, w: 3}]
+      - id: developmental
+        text: The most successful developmental state ever. Neither socialist nor liberal.
+        evidence: [{position: hist.china-present.developmental-state, w: 3}]
+      - id: threat
+        text: A one-party power that wants a world safe for one-party states.
+        evidence: [{position: hist.china-present.threat-to-liberal-order, w: 3}]
+      - id: anchor
+        text: The ports. For the first time in centuries, poor countries have someone else to borrow from.
+        evidence: [{position: hist.china-present.multipolar-anchor, w: 3}]
+      - id: civilization
+        text: An ancient civilization taking back its natural place. The last two centuries were the exception.
+        evidence: [{position: hist.china-present.civilization-state, w: 3}]
+      - id: camps
+        text: The camps. A state that can do that to a people is the main fact about it.
+        evidence: [{position: hist.china-present.surveillance-and-camps, w: 3}]
+      - id: cheat
+        text: The rival that took our factories, with our own bosses holding the door.
+        evidence: [{position: hist.china-present.mercantilist-cheat, w: 3}]
+
+  - id: probe.hist.china-present.nairobi-and-youngstown
+    type: voices
+    title: Nairobi and Youngstown
+    text: Two people on a radio phone-in describe what China means to them. Who is right?
+    voices:
+      - {name: "Achieng, an engineer in Nairobi", says: "China built our railway to Mombasa while Western lenders sent us lectures. Now we have choices."}
+      - {name: "Dave, a former steelworker in Youngstown", says: "My mill closed and the steel comes from China now. Our own executives shipped my job there and called it free trade."}
+    why: This asks how you weigh China's role since 2012, through two people it touches.
+    options:
+      - id: achieng
+        text: Achieng. China gives the South room to develop.
+        cause: interests
+        evidence: [{position: hist.china-present.multipolar-anchor, w: 3}]
+      - id: dave
+        text: Dave. A mercantilist rival took our industry with our elites' help.
+        cause: individuals
+        evidence: [{position: hist.china-present.mercantilist-cheat, w: 3}]
+      - id: socialism
+        text: Both miss the eight hundred million lifted out of poverty by a socialist plan.
+        cause: structures
+        evidence: [{position: hist.china-present.new-era-socialism, w: 3}]
+      - id: imperial
+        text: Both are describing an imperial power exporting capital. Kenya's railway loan is not charity.
+        cause: interests
+        evidence: [{position: hist.china-present.state-capitalist-rival, w: 3}]
+      - id: catch-up
+        text: Both are describing a developmental state catching up, as Japan and Korea did before.
+        cause: structures
+        evidence: [{position: hist.china-present.developmental-state, w: 3}]
+      - id: order
+        text: Both miss Hong Kong and Taiwan. The real stake is whether liberal democracy survives.
+        cause: ideas
+        evidence: [{position: hist.china-present.threat-to-liberal-order, w: 3}]
+      - id: xinjiang
+        text: Both miss Xinjiang, and the workers who disappear for organizing.
+        cause: ideas
+        evidence: [{position: hist.china-present.surveillance-and-camps, w: 3}]
+      - id: return
+        text: Both are watching an old civilization return to the center. It has been there before.
+        cause: culture
+        evidence: [{position: hist.china-present.civilization-state, w: 3}]
+
+  - id: probe.hist.china-present.confrontation
+    type: explanation
+    title: Collision course
+    text: >
+      Tariffs, chip bans, warships in the Taiwan Strait. The United States and China look set on a long
+      confrontation. What, above all, explains it?
+    why: This asks how you explain the US-China rivalry, and what kind of cause you reach for.
+    options:
+      - id: two-capitals
+        text: Two capitalisms fighting over markets, raw materials and profits. Old story.
+        cause: structures
+        evidence: [{position: hist.china-present.state-capitalist-rival, w: 3}]
+      - id: hegemony
+        text: Washington will not accept a world it does not run.
+        cause: interests
+        evidence: [{position: hist.china-present.multipolar-anchor, w: 3}]
+      - id: cheating
+        text: China cheated on trade for twenty years and Washington finally noticed.
+        cause: individuals
+        evidence: [{position: hist.china-present.mercantilist-cheat, w: 3}]
+      - id: systems
+        text: A one-party state and liberal democracies cannot share a world order for long.
+        cause: ideas
+        evidence: [{position: hist.china-present.threat-to-liberal-order, w: 3}]
+      - id: civilizations
+        text: An old civilization is reclaiming its place, and the newcomer on top resents it.
+        cause: culture
+        evidence: [{position: hist.china-present.civilization-state, w: 3}]
+      - id: socialism
+        text: A successful socialist country is a threat to capitalism just by existing.
+        cause: structures
+        evidence: [{position: hist.china-present.new-era-socialism, w: 3}]
+      - id: catch-up
+        text: Any state that catches up with the leader alarms it. Ask Germany in 1900 or Japan in 1985.
+        cause: structures
+        evidence: [{position: hist.china-present.developmental-state, w: 3}]
+      - id: conduct
+        text: It is about what China does at home, the camps and the surveillance. That makes it a threat.
+        cause: ideas
+        evidence: [{position: hist.china-present.surveillance-and-camps, w: 3}]
+
+  # ---------------- hist.yugoslavia ----------------
+  - id: probe.hist.yugoslavia.belgrade-1961
+    type: verdict
+    title: Belgrade, 1961
+    text: >
+      Tito hosts Nehru, Nasser, Sukarno and Nkrumah at the first summit of the Non-Aligned. At home, workers'
+      councils vote on their factories' budgets. Milovan Djilas, once Tito's deputy, sits in prison for a book
+      saying party officials had become a new ruling class. What are you looking at?
+    why: This asks how you judge socialist Yugoslavia.
+    options:
+      - id: councils
+        text: The councils. The furthest any country has gone in letting workers run their own firms.
+        evidence: [{position: hist.yugoslavia.self-management, w: 3}]
+      - id: non-aligned
+        text: The summit. A small country standing between the blocs and leading half the world with it.
+        evidence: [{position: hist.yugoslavia.non-aligned, w: 3}]
+      - id: djilas
+        text: The prisoner. He was right about the new class.
+        evidence: [{position: hist.yugoslavia.new-class, w: 3}]
+      - id: revisionism
+        text: A country that left the socialist camp for Western loans and markets. Capitalism by another name.
+        evidence: [{position: hist.yugoslavia.revisionist-capitalism, w: 3}]
+      - id: pricing
+        text: An experiment that will fail. Firms owned by nobody cannot price their capital.
+        evidence: [{position: hist.yugoslavia.labor-managed-failure, w: 3}]
+      - id: debt
+        text: A good thing built on borrowed money. Watch what the IMF does with it in twenty years.
+        evidence: [{position: hist.yugoslavia.undone-by-markets-and-debt, w: 3}]
+      - id: nations
+        text: A federation sitting on its nations. Wait until someone lifts the lid.
+        evidence: [{position: hist.yugoslavia.prison-of-nations, w: 3}]
+      - id: good-life
+        text: People who will remember these years as the best they had. Brotherhood and unity.
+        evidence: [{position: hist.yugoslavia.brotherhood-and-unity, w: 3}]
+
+  - id: probe.hist.yugoslavia.sarajevo-and-zagreb
+    type: voices
+    title: Sarajevo and Zagreb
+    text: Two people who grew up in Yugoslavia argue at a reunion. Who is right?
+    voices:
+      - {name: "Jasna, from Sarajevo", says: "We had jobs, seaside holidays, Serbs and Muslims and Croats at the same table. Then men with flags took it all."}
+      - {name: "Tomislav, from Zagreb", says: "When we asked for our own language and our own money in 1971, Belgrade purged a whole generation. We were a nation in a cage."}
+    why: This asks how you weigh socialist Yugoslavia, through two people who grew up in it.
+    options:
+      - id: jasna
+        text: Jasna. A good life lost in the wars.
+        cause: individuals
+        evidence: [{position: hist.yugoslavia.brotherhood-and-unity, w: 3}]
+      - id: tomislav
+        text: Tomislav. It was a prison of nations.
+        cause: culture
+        evidence: [{position: hist.yugoslavia.prison-of-nations, w: 3}]
+      - id: councils
+        text: Both miss the workers' councils, the most important thing it tried.
+        cause: structures
+        evidence: [{position: hist.yugoslavia.self-management, w: 3}]
+      - id: imf
+        text: Both miss the debt. By the 1980s the IMF was running the budget and the jobs went first.
+        cause: structures
+        evidence: [{position: hist.yugoslavia.undone-by-markets-and-debt, w: 3}]
+      - id: inflation
+        text: Both miss the economics. Worker-run firms paid themselves and borrowed the rest. Inflation hit 1,000 percent.
+        cause: ideas
+        evidence: [{position: hist.yugoslavia.labor-managed-failure, w: 3}]
+      - id: officials
+        text: Both miss who ran it. Party officials, who later became the nationalists with flags.
+        cause: interests
+        evidence: [{position: hist.yugoslavia.new-class, w: 3}]
+      - id: revisionism
+        text: Both miss that it stopped being socialist the day it took Western money.
+        cause: ideas
+        evidence: [{position: hist.yugoslavia.revisionist-capitalism, w: 3}]
+      - id: between
+        text: Both miss its place in the world. Between the blocs it mattered; once the Cold War ended, nobody needed it.
+        cause: interests
+        evidence: [{position: hist.yugoslavia.non-aligned, w: 3}]
+
+  - id: probe.hist.yugoslavia.why-broke
+    type: explanation
+    title: Why it broke
+    text: >
+      In 1984 Sarajevo hosted the Winter Olympics. By 1992 it was under siege, and Yugoslavia was gone. What,
+      above all, explains the break-up?
+    why: This asks how you explain the end of Yugoslavia, and what kind of cause you reach for.
+    options:
+      - id: debt
+        text: Debt and IMF austerity in the 1980s set the republics fighting over a shrinking pie.
+        cause: structures
+        evidence: [{position: hist.yugoslavia.undone-by-markets-and-debt, w: 3}]
+      - id: nations
+        text: The nations were held down, not reconciled. When the lid came off, they left.
+        cause: culture
+        evidence: [{position: hist.yugoslavia.prison-of-nations, w: 3}]
+      - id: men
+        text: A few ambitious men stoked hatred to win power. Ordinary people had been getting along.
+        cause: individuals
+        evidence: [{position: hist.yugoslavia.brotherhood-and-unity, w: 3}]
+      - id: economics
+        text: The economic model failed. No one owned the firms, so no one cared about losses.
+        cause: ideas
+        evidence: [{position: hist.yugoslavia.labor-managed-failure, w: 3}]
+      - id: officials
+        text: The party bosses saw the end coming and turned nationalist to stay in charge.
+        cause: interests
+        evidence: [{position: hist.yugoslavia.new-class, w: 3}]
+      - id: markets
+        text: Markets brought back rich republics and poor ones. Capitalism split the country.
+        cause: structures
+        evidence: [{position: hist.yugoslavia.revisionist-capitalism, w: 3}]
+      - id: cold-war
+        text: When the Cold War ended, the West no longer needed a buffer and stopped propping it up.
+        cause: interests
+        evidence: [{position: hist.yugoslavia.non-aligned, w: 3}]
+      - id: hollowed
+        text: It broke when the councils were hollowed out. Workers who no longer ran their plants stopped defending the country.
+        cause: structures
+        evidence: [{position: hist.yugoslavia.self-management, w: 3}]
+
+  # ---------------- hist.dprk ----------------
+  - id: probe.hist.dprk.famine
+    type: verdict
+    title: The hard march
+    text: >
+      1995 to 1998. Soviet aid is gone, floods wreck the harvest, the factories stop for want of fuel. Famine
+      kills somewhere between a quarter of a million and two million people. The state calls it the Arduous
+      March and keeps the army fed first. Looking at these years, what is this state?
+    why: This asks how you judge the Democratic People's Republic of Korea.
+    options:
+      - id: juche
+        text: A socialist country that survived alone, as it said it would. Self-reliance held.
+        evidence: [{position: hist.dprk.juche-socialism, w: 3}]
+      - id: siege
+        text: A small country under permanent siege since a war that flattened every city. It is still standing.
+        evidence: [{position: hist.dprk.besieged-survivor, w: 3}]
+      - id: tyranny
+        text: A hereditary dictatorship that fed its army and its camps while its people starved.
+        evidence: [{position: hist.dprk.hereditary-tyranny, w: 3}]
+      - id: dynasty
+        text: Not socialism. A nationalist royal family that uses red flags.
+        evidence: [{position: hist.dprk.national-dynasty, w: 3}]
+      - id: division
+        text: Half of a country cut in two by foreign armies in 1945. The division is the root of it.
+        evidence: [{position: hist.dprk.divided-nation, w: 3}]
+      - id: planning
+        text: Planning failing, in full. The satellite photos at night say it all.
+        evidence: [{position: hist.dprk.planning-failed, w: 3}]
+
+  - id: probe.hist.dprk.the-river
+    type: voices
+    title: Two Koreans
+    text: Two people in Seoul describe the North. Who is right?
+    voices:
+      - {name: "Min-ji, who crossed the river in 2010", says: "My uncle was sent to a camp for a joke about the leader. Three generations of the family went with him."}
+      - {name: "Mr. Cho, 88, born in Pyongyang", says: "My sister is on the other side. Foreign armies drew this line in 1945 and nobody asked us. Fix that, and the rest follows."}
+    why: This asks how you read North Korea, through two people who know it.
+    options:
+      - id: minji
+        text: Min-ji. It is a hereditary tyranny with prison camps.
+        cause: individuals
+        evidence: [{position: hist.dprk.hereditary-tyranny, w: 3}]
+      - id: cho
+        text: Mr. Cho. The division is the root problem.
+        cause: structures
+        evidence: [{position: hist.dprk.divided-nation, w: 3}]
+      - id: siege
+        text: Both miss the bombing that left no city standing and seventy years of sanctions since.
+        cause: interests
+        evidence: [{position: hist.dprk.besieged-survivor, w: 3}]
+      - id: juche
+        text: Both miss that it has stayed sovereign and socialist when stronger states did not.
+        cause: ideas
+        evidence: [{position: hist.dprk.juche-socialism, w: 3}]
+      - id: dynasty
+        text: Both miss what it is. A royal family that kept the red flag and dropped the rest.
+        cause: culture
+        evidence: [{position: hist.dprk.national-dynasty, w: 3}]
+      - id: plan
+        text: Both miss the economics. A planned economy, dark at night, beside a market one that glows.
+        cause: ideas
+        evidence: [{position: hist.dprk.planning-failed, w: 3}]
+
+  - id: probe.hist.dprk.reversal
+    type: explanation
+    title: The reversal
+    text: >
+      In 1945 the North had most of Korea's industry, and into the 1970s it was by most estimates richer per
+      head than the South. Today the South is many times richer. What, above all, explains the reversal?
+    why: This asks how you explain North Korea's fate, and what kind of cause you reach for.
+    options:
+      - id: plan
+        text: Central planning. It works for building steel mills, then it stops working.
+        cause: ideas
+        evidence: [{position: hist.dprk.planning-failed, w: 3}]
+      - id: siege
+        text: Sanctions, a permanent war footing, and the loss of every ally in 1991.
+        cause: interests
+        evidence: [{position: hist.dprk.besieged-survivor, w: 3}]
+      - id: family
+        text: One family runs it for itself and spends on palaces, missiles and guards.
+        cause: individuals
+        evidence: [{position: hist.dprk.hereditary-tyranny, w: 3}]
+      - id: division
+        text: The division deformed both halves. One became a garrison, the other an American client.
+        cause: structures
+        evidence: [{position: hist.dprk.divided-nation, w: 3}]
+      - id: choice
+        text: It chose independence over dependence. Poorer, but no foreign army on its soil.
+        cause: ideas
+        evidence: [{position: hist.dprk.juche-socialism, w: 3}]
+      - id: dynasty
+        text: It became a dynasty that cared about the nation's pride, not its workers. That is not socialism.
+        cause: culture
+        evidence: [{position: hist.dprk.national-dynasty, w: 3}]

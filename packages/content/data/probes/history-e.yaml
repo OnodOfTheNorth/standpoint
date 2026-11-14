@@ -1,0 +1,467 @@
+nodes:
+  # ---------------- hist.nordic-model ----------------
+  - id: probe.hist.nordic-model.funds-march
+    type: verdict
+    title: Stockholm, October 1983
+    text: >
+      Some 75,000 people, many of them business owners and managers, march against the wage-earner funds, a
+      union plan to move company shares slowly into funds run by workers. The funds pass in weakened form and
+      are scrapped in 1991. Within a decade Sweden cuts taxes, deregulates banks and opens schools to private
+      firms. What does this tell you about the Nordic model?
+    why: This asks how you judge the Nordic model, at the moment it was pushed furthest.
+    options:
+      - id: threshold
+        text: That it was a road to socialism, abandoned the moment capital struck back.
+        evidence: [{position: hist.nordic-model.stopped-at-the-threshold, w: 3}]
+      - id: tamed
+        text: Nothing much. Unions and votes had already tamed capitalism. The funds were a step too far.
+        evidence: [{position: hist.nordic-model.labor-tamed-capital, w: 3}]
+      - id: compromise
+        text: That it was always a deal. Labor got welfare, capital kept command. Touch command and the deal ends.
+        evidence: [{position: hist.nordic-model.class-compromise, w: 3}]
+      - id: markets
+        text: That the market reforms of the 1990s rescued a country that high taxes had nearly sunk.
+        evidence: [{position: hist.nordic-model.markets-built-it, w: 3}]
+      - id: one-people
+        text: Little. It worked because it was one people who trusted each other. Shares are a sideshow.
+        evidence: [{position: hist.nordic-model.one-people, w: 3}]
+      - id: periphery
+        text: Look at where Swedish firms made their profits. The welfare was partly paid from abroad.
+        evidence: [{position: hist.nordic-model.paid-by-the-periphery, w: 3}]
+
+  - id: probe.hist.nordic-model.why-equal
+    type: explanation
+    title: Why so equal
+    text: >
+      For most of the postwar era the Nordic countries were the most equal societies in the capitalist world,
+      and among the richest. What, above all, explains that?
+    why: This asks how you explain the Nordic model, and what kind of cause you reach for.
+    options:
+      - id: unions
+        text: Most workers in unions and labor parties in government for decades. Organized labor did it.
+        cause: structures
+        evidence: [{position: hist.nordic-model.labor-tamed-capital, w: 3}]
+      - id: deal
+        text: Capital agreed to share in return for keeping control of investment. A bargain, not a victory.
+        cause: interests
+        evidence: [{position: hist.nordic-model.class-compromise, w: 3}]
+      - id: trust
+        text: Small, homogeneous, high-trust nations. People pay for welfare when they know who gets it.
+        cause: culture
+        evidence: [{position: hist.nordic-model.one-people, w: 3}]
+      - id: trade
+        text: Free trade, secure property and export firms made them rich first. Welfare came after.
+        cause: ideas
+        evidence: [{position: hist.nordic-model.markets-built-it, w: 3}]
+      - id: drain
+        text: Cheap raw materials and profitable exports from a world tilted toward the rich countries.
+        cause: structures
+        evidence: [{position: hist.nordic-model.paid-by-the-periphery, w: 3}]
+      - id: pushed
+        text: Radical movements forced it, and the leaders stopped them before they reached ownership.
+        cause: interests
+        evidence: [{position: hist.nordic-model.stopped-at-the-threshold, w: 3}]
+
+  - id: probe.hist.nordic-model.nurse-and-founder
+    type: voices
+    title: Nurse and founder
+    text: Two Scandinavians are asked what made their countries work. Who is right?
+    voices:
+      - {name: "Kari, a nurse in Oslo", says: "Free university for my children, a union that sits across from the employers as an equal, and taxes I don't resent. We fought for every bit of it."}
+      - {name: "Johan, a founder in Stockholm", says: "Sweden got rich before the welfare state, from trade and enterprise. By the 1970s taxes were strangling it. The reforms of the 1990s saved it."}
+    why: This asks how you weigh the Nordic model, through two people who live in it.
+    options:
+      - id: kari
+        text: Kari. Organized labor tamed capitalism.
+        cause: structures
+        evidence: [{position: hist.nordic-model.labor-tamed-capital, w: 3}]
+      - id: johan
+        text: Johan. Markets built it and rescued it.
+        cause: ideas
+        evidence: [{position: hist.nordic-model.markets-built-it, w: 3}]
+      - id: trust
+        text: Both miss the foundation. It was one people with shared customs and high trust.
+        cause: culture
+        evidence: [{position: hist.nordic-model.one-people, w: 3}]
+      - id: owners
+        text: Both miss who still owns the big firms. The same families. It was a compromise with them.
+        cause: interests
+        evidence: [{position: hist.nordic-model.class-compromise, w: 3}]
+      - id: threshold
+        text: Kari's fight stopped short. When the unions went for ownership, the bosses marched and won.
+        cause: interests
+        evidence: [{position: hist.nordic-model.stopped-at-the-threshold, w: 3}]
+      - id: cobalt
+        text: Both miss where the phones, the coffee and the profits come from. Part of the bill is paid far away.
+        cause: structures
+        evidence: [{position: hist.nordic-model.paid-by-the-periphery, w: 3}]
+
+  # ---------------- hist.new-deal ----------------
+  - id: probe.hist.new-deal.1935
+    type: verdict
+    title: Washington, 1935
+    text: >
+      Congress passes the Social Security Act and the Wagner Act, which protects the right to form unions.
+      Farm laborers and domestic workers, most Black workers in the South among them, are left out of both. A
+      year earlier, general strikes shut down Minneapolis, San Francisco and Toledo. What is happening here?
+    why: This asks how you judge the New Deal.
+    options:
+      - id: saved
+        text: A reform that saves capitalism from itself and will build a middle class.
+        evidence: [{position: hist.new-deal.saved-capitalism, w: 3}]
+      - id: strikes
+        text: Concessions won by those strikes. Washington is buying peace.
+        evidence: [{position: hist.new-deal.won-from-below, w: 3}]
+      - id: prolonged
+        text: Government meddling that will keep the Depression going for years.
+        evidence: [{position: hist.new-deal.prolonged-the-depression, w: 3}]
+      - id: white
+        text: Read the exclusions. A welfare state built for white men.
+        evidence: [{position: hist.new-deal.white-new-deal, w: 3}]
+      - id: constitution
+        text: Washington taking powers the Constitution never gave it, and the courts will say so.
+        evidence: [{position: hist.new-deal.unconstitutional-centralization, w: 3}]
+      - id: disarmed
+        text: Capital rescuing itself and putting the unions on a leash, with the Democrats holding it.
+        evidence: [{position: hist.new-deal.disarmed-labor, w: 3}]
+
+  - id: probe.hist.new-deal.why
+    type: explanation
+    title: Why it happened
+    text: >
+      Before 1933 Washington had no national pensions, no unemployment insurance and no protection for
+      unions. Within three years it had all three. What, above all, explains the turn?
+    why: This asks how you explain the New Deal, and what kind of cause you reach for.
+    options:
+      - id: roosevelt
+        text: A wise president saw that capitalism had to be reformed to survive.
+        cause: individuals
+        evidence: [{position: hist.new-deal.saved-capitalism, w: 3}]
+      - id: fear
+        text: Strikes, marches and the fear of revolution. Nothing was given that was not taken.
+        cause: interests
+        evidence: [{position: hist.new-deal.won-from-below, w: 3}]
+      - id: leash
+        text: Business needed a way to channel the unions into one party and safe contracts.
+        cause: interests
+        evidence: [{position: hist.new-deal.disarmed-labor, w: 3}]
+      - id: bad-economics
+        text: Bad economics. Politicians assumed government could fix a slump that government policy had deepened.
+        cause: ideas
+        evidence: [{position: hist.new-deal.prolonged-the-depression, w: 3}]
+      - id: power-grab
+        text: A crisis used to seize powers Washington was never granted.
+        cause: ideas
+        evidence: [{position: hist.new-deal.unconstitutional-centralization, w: 3}]
+      - id: south
+        text: It passed only because Southern Democrats got Black workers left out. That bargain shaped it.
+        cause: structures
+        evidence: [{position: hist.new-deal.white-new-deal, w: 3}]
+
+  - id: probe.hist.new-deal.flint-and-kansas
+    type: voices
+    title: Flint and Kansas
+    text: Two grandchildren of the Depression argue at Thanksgiving. Who is right?
+    voices:
+      - {name: "Earl, a retired autoworker in Flint", says: "My grandfather sat in at the Fisher plant in 1937. That got us the union, and the union got us the house, the pension and the cabin."}
+      - {name: "Margaret, a farmer in Kansas", says: "In 1933 Washington paid farmers to kill six million piglets while people went hungry. Then the Supreme Court threw out the farm program. It was never legal."}
+    why: This asks how you weigh the New Deal, through two families it touched.
+    options:
+      - id: earl-won
+        text: Earl. Workers won it with their own hands.
+        cause: interests
+        evidence: [{position: hist.new-deal.won-from-below, w: 3}]
+      - id: earl-middle
+        text: Earl. It built the American middle class.
+        cause: individuals
+        evidence: [{position: hist.new-deal.saved-capitalism, w: 3}]
+      - id: margaret-econ
+        text: Margaret. Washington's meddling made the Depression longer.
+        cause: ideas
+        evidence: [{position: hist.new-deal.prolonged-the-depression, w: 3}]
+      - id: margaret-law
+        text: Margaret. It broke the Constitution's limits on federal power.
+        cause: ideas
+        evidence: [{position: hist.new-deal.unconstitutional-centralization, w: 3}]
+      - id: left-out
+        text: Both miss who was left out. Black farmhands and maids got neither Earl's pension nor Margaret's checks.
+        cause: structures
+        evidence: [{position: hist.new-deal.white-new-deal, w: 3}]
+      - id: leash
+        text: Earl's union traded the sit-down for a contract and a party. By 1947 it had a leash.
+        cause: interests
+        evidence: [{position: hist.new-deal.disarmed-labor, w: 3}]
+
+  # ---------------- hist.decolonization ----------------
+  - id: probe.hist.decolonization.accra-1957
+    type: verdict
+    title: Accra, midnight
+    text: >
+      6 March 1957. At midnight Kwame Nkrumah tells a crowd that Ghana is free forever. Cocoa prices are still
+      set in London. In 1965 he publishes a book called Neo-Colonialism. In 1966 he is overthrown while abroad.
+      What was this independence?
+    why: This asks how you judge decolonization.
+    options:
+      - id: flag
+        text: A flag and an anthem. The money, the prices and the debts stayed where they were.
+        evidence: [{position: hist.decolonization.flag-independence, w: 3}]
+      - id: liberation
+        text: The greatest liberation of the century, won by the colonized themselves.
+        evidence: [{position: hist.decolonization.liberation-won, w: 3}]
+      - id: order
+        text: Britain left railways, courts and a parliament. What went wrong after is mostly on the new rulers.
+        evidence: [{position: hist.decolonization.empire-left-order, w: 3}]
+      - id: equal
+        text: A people becoming a nation equal to any other. The UN seat matters.
+        evidence: [{position: hist.decolonization.self-determination, w: 3}]
+      - id: coloniality
+        text: Rule ended. The colonizer's language, schools and idea of who counts did not.
+        evidence: [{position: hist.decolonization.coloniality-remains, w: 3}]
+      - id: nonviolent
+        text: Strikes and boycotts, not guns. Proof of what nonviolent mass resistance can do.
+        evidence: [{position: hist.decolonization.nonviolent-victory, w: 3}]
+
+  - id: probe.hist.decolonization.why-ended
+    type: explanation
+    title: Why the empires ended
+    text: >
+      In 1945 European empires ruled about a third of the world's people. Thirty years later almost all of it
+      was gone. What, above all, explains that?
+    why: This asks how you explain decolonization, and what kind of cause you reach for.
+    options:
+      - id: fought
+        text: The colonized fought, in Algeria, Kenya, Vietnam, Angola, and made rule too costly.
+        cause: interests
+        evidence: [{position: hist.decolonization.liberation-won, w: 3}]
+      - id: nonviolence
+        text: Mass nonviolent movements, beginning with India's, made rule impossible.
+        cause: ideas
+        evidence: [{position: hist.decolonization.nonviolent-victory, w: 3}]
+      - id: form
+        text: Europe was broke and America wanted open markets. Empire changed form, not substance.
+        cause: structures
+        evidence: [{position: hist.decolonization.flag-independence, w: 3}]
+      - id: principle
+        text: Self-determination became the principle of the new world order. The age of empires was over.
+        cause: ideas
+        evidence: [{position: hist.decolonization.self-determination, w: 3}]
+      - id: handover
+        text: Britain, at least, chose to hand over with institutions in place. Where it went badly, the hurry was to blame.
+        cause: individuals
+        evidence: [{position: hist.decolonization.empire-left-order, w: 3}]
+      - id: did-not
+        text: They didn't end. The hierarchy moved into knowledge, language and race, where it still lives.
+        cause: culture
+        evidence: [{position: hist.decolonization.coloniality-remains, w: 3}]
+
+  - id: probe.hist.decolonization.nairobi-and-delhi
+    type: voices
+    title: Nairobi and Delhi
+    text: Two people from former British colonies talk about the empire. Who is right?
+    voices:
+      - {name: "Wanjiru, a teacher in Nairobi", says: "My grandfather was held in a British camp for years during the Emergency. Kenya was not given anything. It was taken back."}
+      - {name: "Rajiv, an engineer in Delhi", says: "The railways, the courts and English got me to California. The British were thieves, but they left things that work."}
+    why: This asks how you weigh decolonization, through two people who inherited it.
+    options:
+      - id: wanjiru
+        text: Wanjiru. Liberation was won by the colonized themselves.
+        cause: interests
+        evidence: [{position: hist.decolonization.liberation-won, w: 3}]
+      - id: rajiv
+        text: Rajiv. The empire left order behind, whatever else it did.
+        cause: individuals
+        evidence: [{position: hist.decolonization.empire-left-order, w: 3}]
+      - id: flag
+        text: Both miss who sets the price of Kenya's tea and India's loans. Independence stopped at the flag.
+        cause: structures
+        evidence: [{position: hist.decolonization.flag-independence, w: 3}]
+      - id: mind
+        text: Rajiv proves Wanjiru's point. He still measures himself by the colonizer's language.
+        cause: culture
+        evidence: [{position: hist.decolonization.coloniality-remains, w: 3}]
+      - id: nations
+        text: Both now have a nation of their own, equal in law to Britain. That is the achievement.
+        cause: ideas
+        evidence: [{position: hist.decolonization.self-determination, w: 3}]
+      - id: gandhi
+        text: Rajiv's India shows the better road. Nonviolent mass resistance won with fewer graves.
+        cause: ideas
+        evidence: [{position: hist.decolonization.nonviolent-victory, w: 3}]
+
+  # ---------------- hist.collapse-1989 ----------------
+  - id: probe.hist.collapse-1989.the-wall
+    type: verdict
+    title: 9 November 1989
+    text: >
+      A Politburo spokesman fumbles a question at a press conference, and by midnight crowds are walking
+      through the Berlin Wall. Within two years the Soviet Union is gone. Within five, Russian men's life
+      expectancy falls by about six years. What happened?
+    why: This asks how you judge the fall of the Eastern bloc and the Soviet Union.
+    options:
+      - id: peoples
+        text: Peoples' revolutions that won liberty and national independence.
+        evidence: [{position: hist.collapse-1989.peoples-revolutions, w: 3}]
+      - id: end-of-history
+        text: Liberal capitalism won the argument for good. There is no alternative left.
+        evidence: [{position: hist.collapse-1989.end-of-history, w: 3}]
+      - id: counter-revolution
+        text: A counter-revolution that restored capitalism and threw millions into poverty.
+        evidence: [{position: hist.collapse-1989.counter-revolution, w: 3}]
+      - id: sideways
+        text: A step sideways. State capitalism became private capitalism. Workers took orders before and after.
+        evidence: [{position: hist.collapse-1989.sideways-step, w: 3}]
+      - id: owners
+        text: The bureaucrats turned themselves into owners, exactly as Trotsky said they would.
+        evidence: [{position: hist.collapse-1989.bureaucracy-became-owners, w: 3}]
+      - id: great-state
+        text: A great state fell. That is the catastrophe, whatever its system.
+        evidence: [{position: hist.collapse-1989.geopolitical-catastrophe, w: 3}]
+      - id: shock
+        text: The old system deserved to end. Shock therapy is what killed those Russian men.
+        evidence: [{position: hist.collapse-1989.shock-therapy-blunder, w: 3}]
+
+  - id: probe.hist.collapse-1989.gdansk-and-tula
+    type: voices
+    title: Gdańsk and Tula
+    text: Two people who were thirty in 1989 look back. Who is right?
+    voices:
+      - {name: "Katarzyna, from Gdańsk", says: "Ten million of us joined Solidarity. We brought down the communists ourselves, and my daughter studies in Berlin without asking anyone's permission."}
+      - {name: "Sergei, from Tula", says: "In 1992 my savings vanished in a month. The factory director bought the plant with our vouchers. Then the wages stopped."}
+    why: This asks how you weigh 1989 to 1991, through two people who lived it.
+    options:
+      - id: katarzyna
+        text: Katarzyna. Peoples' revolutions won liberty and independence.
+        cause: ideas
+        evidence: [{position: hist.collapse-1989.peoples-revolutions, w: 3}]
+      - id: sergei-counter
+        text: Sergei. It was a counter-revolution that impoverished millions.
+        cause: interests
+        evidence: [{position: hist.collapse-1989.counter-revolution, w: 3}]
+      - id: sergei-director
+        text: Sergei's director is the story. The bureaucracy became the owners.
+        cause: interests
+        evidence: [{position: hist.collapse-1989.bureaucracy-became-owners, w: 3}]
+      - id: sergei-shock
+        text: Both are right. Ending the old system was good; shock therapy was the disaster.
+        cause: individuals
+        evidence: [{position: hist.collapse-1989.shock-therapy-blunder, w: 3}]
+      - id: winner
+        text: Both are living in the world that won. Liberal capitalism, with no alternative.
+        cause: ideas
+        evidence: [{position: hist.collapse-1989.end-of-history, w: 3}]
+      - id: sideways
+        text: Both still work for a boss. Only the name on the gate changed.
+        cause: structures
+        evidence: [{position: hist.collapse-1989.sideways-step, w: 3}]
+      - id: power
+        text: Both miss the great power that disappeared, and what NATO did with the space.
+        cause: interests
+        evidence: [{position: hist.collapse-1989.geopolitical-catastrophe, w: 3}]
+
+  - id: probe.hist.collapse-1989.life-expectancy
+    type: explanation
+    title: Six years of life
+    text: >
+      Between 1990 and 1994 Russian men's life expectancy fell from about 64 to about 58, one of the sharpest
+      peacetime drops ever recorded. What, above all, explains it?
+    why: This asks how you explain the aftermath of 1991, and what kind of cause you reach for.
+    options:
+      - id: shock
+        text: Shock therapy. Prices freed overnight, savings wiped out, factories sold in a fire sale.
+        cause: ideas
+        evidence: [{position: hist.collapse-1989.shock-therapy-blunder, w: 3}]
+      - id: restoration
+        text: Capitalism came back, and capitalism does not keep alive what it cannot profit from.
+        cause: structures
+        evidence: [{position: hist.collapse-1989.counter-revolution, w: 3}]
+      - id: state
+        text: A great state collapsed, and with it the order that held life together.
+        cause: structures
+        evidence: [{position: hist.collapse-1989.geopolitical-catastrophe, w: 3}]
+      - id: grab
+        text: The old officials grabbed everything worth owning and left the rest to rot.
+        cause: interests
+        evidence: [{position: hist.collapse-1989.bureaucracy-became-owners, w: 3}]
+      - id: old-bill
+        text: The old system's bill came due. Markets fixed what could be fixed, and life expectancy recovered.
+        cause: ideas
+        evidence: [{position: hist.collapse-1989.end-of-history, w: 3}]
+      - id: clean-break
+        text: Russia never broke cleanly with the communists. Poland and the Baltics did, and they recovered fastest.
+        cause: individuals
+        evidence: [{position: hist.collapse-1989.peoples-revolutions, w: 3}]
+      - id: safety-net
+        text: Workers lost the safety net and kept the boss. The exploitation was the same; the cover was gone.
+        cause: structures
+        evidence: [{position: hist.collapse-1989.sideways-step, w: 3}]
+
+  # ---------------- hist.neoliberal-turn ----------------
+  - id: probe.hist.neoliberal-turn.volcker
+    type: verdict
+    title: Twenty percent
+    text: >
+      October 1979. The US central bank starts pushing interest rates toward twenty percent. Inflation breaks.
+      So do factories, strikes and unions; unemployment passes ten percent. In 1982 Mexico cannot pay its
+      dollar debts, and Latin America's lost decade begins. In 1984 Washington rescues a failing Chicago bank.
+      What was this?
+    why: This asks how you judge the neoliberal turn.
+    options:
+      - id: class-power
+        text: A project to restore the power and income of capital. Breaking unions was the point.
+        evidence: [{position: hist.neoliberal-turn.restoring-class-power, w: 3}]
+      - id: debt
+        text: A counter-offensive against the South. Raise rates, and the debts do the disciplining.
+        evidence: [{position: hist.neoliberal-turn.debt-discipline-of-the-south, w: 3}]
+      - id: cure
+        text: A painful, necessary cure. It ended stagflation and set up twenty years of growth.
+        evidence: [{position: hist.neoliberal-turn.cure-for-stagflation, w: 3}]
+      - id: inevitable
+        text: Globalization was coming either way. The question was how to prepare people for it.
+        evidence: [{position: hist.neoliberal-turn.third-way-globalization, w: 3}]
+      - id: crony
+        text: Not free markets. A central bank steering the economy and a bailout for a bank. Corporatism.
+        evidence: [{position: hist.neoliberal-turn.crony-corporatism, w: 3}]
+      - id: betrayal
+        text: The start of elites selling off the nation's industry and its workers.
+        evidence: [{position: hist.neoliberal-turn.betrayal-of-the-nation, w: 3}]
+      - id: market-society
+        text: The market let loose on everything, including the towns and families it dissolved.
+        evidence: [{position: hist.neoliberal-turn.market-society, w: 3}]
+
+  - id: probe.hist.neoliberal-turn.why-then
+    type: explanation
+    title: Why then
+    text: >
+      For thirty years after 1945, governments in rich countries managed demand, tolerated strong unions and
+      taxed top incomes heavily. Then, within a few years around 1980, most of them changed course. What,
+      above all, explains the turn?
+    why: This asks how you explain the neoliberal turn, and what kind of cause you reach for.
+    options:
+      - id: stagflation
+        text: The old model stopped working. Inflation and unemployment together needed a new cure.
+        cause: ideas
+        evidence: [{position: hist.neoliberal-turn.cure-for-stagflation, w: 3}]
+      - id: profits
+        text: Profits had fallen and owners hit back. Wages and unions were the target.
+        cause: interests
+        evidence: [{position: hist.neoliberal-turn.restoring-class-power, w: 3}]
+      - id: south
+        text: The South was demanding a new economic order and fair prices. Debt was how it got answered.
+        cause: structures
+        evidence: [{position: hist.neoliberal-turn.debt-discipline-of-the-south, w: 3}]
+      - id: technology
+        text: Containers, computers and cheap flights made a global economy. Policy followed technology.
+        cause: structures
+        evidence: [{position: hist.neoliberal-turn.third-way-globalization, w: 3}]
+      - id: capture
+        text: Big business and the banks captured the governments and the central banks.
+        cause: interests
+        evidence: [{position: hist.neoliberal-turn.crony-corporatism, w: 3}]
+      - id: elites
+        text: The elites stopped thinking of themselves as part of the nation.
+        cause: individuals
+        evidence: [{position: hist.neoliberal-turn.betrayal-of-the-nation, w: 3}]
+      - id: values
+        text: Once faith, family and town lost their hold, nothing was left to resist the market.
+        cause: culture
+        evidence: [{position: hist.neoliberal-turn.market-society, w: 3}]

@@ -1,0 +1,515 @@
+nodes:
+  # ---------------- hist.ww2 ----------------
+  - id: probe.hist.ww2.1943
+    type: verdict
+    title: One year, 1943
+    text: >
+      February: the German Sixth Army surrenders at Stalingrad. April: the Jews of the Warsaw Ghetto rise
+      against deportation to Treblinka. Autumn: famine in British-ruled Bengal, while grain is shipped out,
+      heads toward some three million dead. Taken whole, what was this war?
+    why: This asks how you judge the Second World War.
+    options:
+      - id: just
+        text: A just war of the democracies and their allies against fascism. Everything else is detail.
+        evidence: [{position: hist.ww2.just-war-against-fascism, w: 3}]
+      - id: stalingrad
+        text: Stalingrad. The Soviet people broke the Nazi war machine; the rest fought its leftovers.
+        evidence: [{position: hist.ww2.soviet-people-decisive, w: 3}]
+      - id: several
+        text: Several wars at once. Against fascism, for empire, and for liberation, sometimes in one army.
+        evidence: [{position: hist.ww2.several-wars-in-one, w: 3}]
+      - id: both-sides
+        text: An imperialist war on both sides. Workers had no side to take.
+        evidence: [{position: hist.ww2.imperialist-on-both-sides, w: 3}]
+      - id: bengal
+        text: Bengal. A war of empires, fought with colonial soldiers and paid for with colonial famine.
+        evidence: [{position: hist.ww2.war-of-empires, w: 3}]
+      - id: holocaust
+        text: Treblinka. The Holocaust is what the war was, above all else.
+        evidence: [{position: hist.ww2.holocaust-rupture, w: 3}]
+      - id: total-war
+        text: Total war. Civilians on every side, from Leningrad to Dresden to Hiroshima, made into targets.
+        evidence: [{position: hist.ww2.nonviolent-witness, w: 3}]
+      - id: bolshevism
+        text: A European civil war against Bolshevism, forced on Germany by its enemies.
+        evidence: [{position: hist.ww2.crusade-against-bolshevism, w: 3}]
+
+  - id: probe.hist.ww2.kharkiv-and-lagos
+    type: voices
+    title: Two grandparents
+    text: Two veterans' grandchildren tell their grandparents' war. Who has it right?
+    voices:
+      - {name: "Vera, whose grandmother fought at Kharkiv", says: "Twenty-seven million Soviet dead. Four out of five German soldiers killed died on the Eastern Front. Everyone else arrived late."}
+      - {name: "Ade, whose grandfather served in Burma", says: "My grandfather fought for a king who ruled him. He came home to Lagos and was still a colonial subject. Whose freedom was it?"}
+    why: This asks how you weigh the Second World War, through two families who fought it.
+    options:
+      - id: vera
+        text: Vera. The Soviet people decided the war.
+        cause: structures
+        evidence: [{position: hist.ww2.soviet-people-decisive, w: 3}]
+      - id: ade
+        text: Ade. It was a war of empires, fought with colonial soldiers.
+        cause: interests
+        evidence: [{position: hist.ww2.war-of-empires, w: 3}]
+      - id: just
+        text: Both fought on the right side of a just war against fascism. That is what matters.
+        cause: ideas
+        evidence: [{position: hist.ww2.just-war-against-fascism, w: 3}]
+      - id: several
+        text: Both are right, because it was several wars in one.
+        cause: structures
+        evidence: [{position: hist.ww2.several-wars-in-one, w: 3}]
+      - id: no-side
+        text: Both were sent to die for their rulers. An imperialist war on every side.
+        cause: interests
+        evidence: [{position: hist.ww2.imperialist-on-both-sides, w: 3}]
+      - id: holocaust
+        text: Both leave out the six million murdered for being Jewish. That is the center of it.
+        cause: ideas
+        evidence: [{position: hist.ww2.holocaust-rupture, w: 3}]
+      - id: civilians
+        text: Both leave out the civilians, bombed and starved by every side.
+        cause: culture
+        evidence: [{position: hist.ww2.nonviolent-witness, w: 3}]
+      - id: wrong-war
+        text: Both fought the wrong war. The real one was against Bolshevism, and Germany fought it.
+        cause: ideas
+        evidence: [{position: hist.ww2.crusade-against-bolshevism, w: 3}]
+
+  - id: probe.hist.ww2.why
+    type: explanation
+    title: Why the war came
+    text: >
+      Twenty years after a war meant to end all wars, the world was at war again, on a larger scale. What,
+      above all, caused the Second World War?
+    why: This asks how you explain the Second World War, and what kind of cause you reach for.
+    options:
+      - id: aggression
+        text: Fascist aggression, and democracies too slow to stand up to it.
+        cause: ideas
+        evidence: [{position: hist.ww2.just-war-against-fascism, w: 3}]
+      - id: rivalry
+        text: Rival capitalist powers fighting over markets and colonies, as in 1914.
+        cause: structures
+        evidence: [{position: hist.ww2.imperialist-on-both-sides, w: 3}]
+      - id: late-empires
+        text: Germany, Italy and Japan wanted the empires Britain and France already had.
+        cause: interests
+        evidence: [{position: hist.ww2.war-of-empires, w: 3}]
+      - id: antisemitism
+        text: A movement whose core aim was the murder of the Jews took a great state.
+        cause: ideas
+        evidence: [{position: hist.ww2.holocaust-rupture, w: 3}]
+      - id: turn-east
+        text: London and Paris hoped Hitler would turn east and destroy the Soviet Union. Munich was that hope.
+        cause: interests
+        evidence: [{position: hist.ww2.soviet-people-decisive, w: 3}]
+      - id: many
+        text: Several causes for several wars. German conquest, Japanese empire, and colonies fighting their own war.
+        cause: structures
+        evidence: [{position: hist.ww2.several-wars-in-one, w: 3}]
+      - id: force
+        text: The worship of force, everywhere. Every side was ready to burn cities.
+        cause: culture
+        evidence: [{position: hist.ww2.nonviolent-witness, w: 3}]
+      - id: versailles
+        text: Versailles humiliated Germany and Bolshevism threatened it. It was pushed into the war.
+        cause: interests
+        evidence: [{position: hist.ww2.crusade-against-bolshevism, w: 3}]
+
+  # ---------------- hist.partition-india ----------------
+  - id: probe.hist.partition-india.august-1947
+    type: verdict
+    title: August 1947
+    text: >
+      India and Pakistan become independent at midnight. The border, drawn in five weeks by a British lawyer
+      who had never visited India, is published two days later. Within months, some fifteen million people
+      cross it and somewhere between a few hundred thousand and two million are killed. What was Partition?
+    why: This asks how you judge the Partition of India.
+    options:
+      - id: divide
+        text: The last act of British divide and rule.
+        evidence: [{position: hist.partition-india.divide-and-rule, w: 3}]
+      - id: homeland
+        text: A Muslim nation winning a homeland, and escaping life as a permanent minority.
+        evidence: [{position: hist.partition-india.muslim-homeland, w: 3}]
+      - id: vivisection
+        text: The vivisection of the motherland, forced by Muslim separatism.
+        evidence: [{position: hist.partition-india.vivisection, w: 3}]
+      - id: bargain
+        text: A deal among elites in a hurry for power, made over the heads of rising workers and peasants.
+        evidence: [{position: hist.partition-india.elite-bargain, w: 3}]
+      - id: suffering
+        text: Above all what ordinary people suffered, women most of all. The politics comes second.
+        evidence: [{position: hist.partition-india.the-peoples-suffering, w: 3}]
+      - id: better
+        text: A horror, and perhaps still better than a forced union that would have burned for decades.
+        evidence: [{position: hist.partition-india.separation-better, w: 3}]
+
+  - id: probe.hist.partition-india.lahore-and-amritsar
+    type: voices
+    title: Lahore and Amritsar
+    text: Two grandparents, fifty kilometers and one border apart, tell what 1947 was. Who is right?
+    voices:
+      - {name: "Kulsum, in Lahore", says: "In a united India we would always have been the minority, outvoted forever. We paid in blood, but we have our own country."}
+      - {name: "Harbans, in Amritsar", says: "My family farmed near Lyallpur for two hundred years. Mother India was cut in two because one party demanded it."}
+    why: This asks how you weigh Partition, through two people who crossed the border.
+    options:
+      - id: kulsum
+        text: Kulsum. Muslims won a homeland.
+        cause: ideas
+        evidence: [{position: hist.partition-india.muslim-homeland, w: 3}]
+      - id: harbans
+        text: Harbans. The motherland was cut apart by separatism.
+        cause: individuals
+        evidence: [{position: hist.partition-india.vivisection, w: 3}]
+      - id: british
+        text: Both miss the British, who spent ninety years teaching them to vote as Hindus and Muslims.
+        cause: structures
+        evidence: [{position: hist.partition-india.divide-and-rule, w: 3}]
+      - id: elites
+        text: Both miss the navy mutiny and the peasant risings of 1946. The leaders hurried to a deal before those spread.
+        cause: interests
+        evidence: [{position: hist.partition-india.elite-bargain, w: 3}]
+      - id: women
+        text: Both skip what happened on the trains and to the tens of thousands of women abducted. That is the story.
+        cause: chance
+        evidence: [{position: hist.partition-india.the-peoples-suffering, w: 3}]
+      - id: separation
+        text: Both are right, in a way. Two peoples who could not share a state are better apart.
+        cause: culture
+        evidence: [{position: hist.partition-india.separation-better, w: 3}]
+
+  - id: probe.hist.partition-india.why
+    type: explanation
+    title: Why two countries
+    text: >
+      In 1940 most Indian politicians still spoke of one free India. Seven years later there were two
+      countries. What, above all, explains Partition?
+    why: This asks how you explain Partition, and what kind of cause you reach for.
+    options:
+      - id: british
+        text: Britain built religion into politics with separate electorates, then left in a hurry.
+        cause: structures
+        evidence: [{position: hist.partition-india.divide-and-rule, w: 3}]
+      - id: nation
+        text: Muslims were a nation with their own history and law. They needed their own state.
+        cause: culture
+        evidence: [{position: hist.partition-india.muslim-homeland, w: 3}]
+      - id: league
+        text: Jinnah and the Muslim League chose separation and called for Direct Action to get it.
+        cause: individuals
+        evidence: [{position: hist.partition-india.vivisection, w: 3}]
+      - id: deal
+        text: Congress and League leaders wanted power fast, before the upsurge from below got out of hand.
+        cause: interests
+        evidence: [{position: hist.partition-india.elite-bargain, w: 3}]
+      - id: neighbors
+        text: Explanations come later. What happened was neighbors turning on neighbors, and nobody stopped it.
+        cause: chance
+        evidence: [{position: hist.partition-india.the-peoples-suffering, w: 3}]
+      - id: apart
+        text: The two communities had grown too far apart. Separation was the least bad ending.
+        cause: culture
+        evidence: [{position: hist.partition-india.separation-better, w: 3}]
+
+  # ---------------- hist.nakba-1948 ----------------
+  - id: probe.hist.nakba-1948.1948
+    type: verdict
+    title: "1948"
+    text: >
+      About 700,000 Palestinian Arabs flee or are driven from the land that becomes Israel; hundreds of their
+      villages are emptied and later razed. Israel bars their return. Five Arab armies invade the day after
+      Israel declares independence. Over the next two decades, a similar number of Jews leave Arab countries,
+      most for Israel. What happened in 1948?
+    why: This asks how you judge the events of 1947 to 1949 in Palestine.
+    options:
+      - id: planned
+        text: A planned ethnic cleansing of Palestine.
+        evidence: [{position: hist.nakba-1948.planned-expulsion, w: 3}]
+      - id: structure
+        text: Not one event. The start of a structure of dispossession that is still going on.
+        evidence: [{position: hist.nakba-1948.ongoing-structure, w: 3}]
+      - id: war
+        text: A tragedy born of war, not of a master plan. Flight, fear and some expulsions, all mixed.
+        evidence: [{position: hist.nakba-1948.born-of-war, w: 3}]
+      - id: independence
+        text: Israel's war of independence, a war for survival forced on it by those armies.
+        evidence: [{position: hist.nakba-1948.war-of-independence, w: 3}]
+      - id: exchange
+        text: One of that era's population exchanges, matched by the Jewish exodus from Arab lands.
+        evidence: [{position: hist.nakba-1948.population-exchange, w: 3}]
+      - id: redemption
+        text: The Jewish people returning to the land God promised them. A redemption.
+        evidence: [{position: hist.nakba-1948.redemption, w: 3}]
+
+  - id: probe.hist.nakba-1948.two-keys
+    type: voices
+    title: Two old people
+    text: Two people in their nineties, born a few hundred kilometers apart, describe 1948. Who is right?
+    voices:
+      - {name: "Abu Khalil, in a camp near Sidon", says: "I still have the key to our house near Safad. Soldiers came, we left for a few days, and we were never let back. That was the plan."}
+      - {name: "Miriam, in Haifa", says: "My family lived in Baghdad for two thousand years. In 1951 we left with one suitcase each and our citizenship stripped. Nobody calls that a catastrophe."}
+    why: This asks how you weigh 1948, through two people who were uprooted.
+    options:
+      - id: abu-khalil
+        text: Abu Khalil. It was a planned expulsion.
+        cause: interests
+        evidence: [{position: hist.nakba-1948.planned-expulsion, w: 3}]
+      - id: miriam
+        text: Miriam. It was a population exchange, and only one side gets remembered.
+        cause: structures
+        evidence: [{position: hist.nakba-1948.population-exchange, w: 3}]
+      - id: survival
+        text: Both are casualties of a war Israel did not choose and had to win.
+        cause: individuals
+        evidence: [{position: hist.nakba-1948.war-of-independence, w: 3}]
+      - id: born-of-war
+        text: Abu Khalil's story is real, but war, not a master plan, did most of it.
+        cause: chance
+        evidence: [{position: hist.nakba-1948.born-of-war, w: 3}]
+      - id: ongoing
+        text: Abu Khalil's grandchildren are still refugees. It is not over, so it is not a past event.
+        cause: structures
+        evidence: [{position: hist.nakba-1948.ongoing-structure, w: 3}]
+      - id: promise
+        text: Miriam came home. It was the return God promised.
+        cause: divine
+        evidence: [{position: hist.nakba-1948.redemption, w: 3}]
+
+  - id: probe.hist.nakba-1948.why-left
+    type: explanation
+    title: Why they left
+    text: >
+      Most Palestinian Arabs living in what became Israel were outside it by early 1949. Historians still
+      argue over why. What, above all, explains it?
+    why: This asks how you explain the Palestinian exodus of 1948, and what kind of cause you reach for.
+    options:
+      - id: design
+        text: The Zionist forces planned it and carried it out, village by village.
+        cause: interests
+        evidence: [{position: hist.nakba-1948.planned-expulsion, w: 3}]
+      - id: war
+        text: War did it. Fighting, panic, collapsing leadership, and expulsions decided on the spot.
+        cause: chance
+        evidence: [{position: hist.nakba-1948.born-of-war, w: 3}]
+      - id: arab-leaders
+        text: Arab leaders started a war to destroy Israel and told people to clear the way.
+        cause: individuals
+        evidence: [{position: hist.nakba-1948.war-of-independence, w: 3}]
+      - id: settler
+        text: A settler project needs the land without the natives. That logic did it, and still does.
+        cause: structures
+        evidence: [{position: hist.nakba-1948.ongoing-structure, w: 3}]
+      - id: era
+        text: The same thing as India, Poland and Greece in those years. Borders moved and people moved with them.
+        cause: structures
+        evidence: [{position: hist.nakba-1948.population-exchange, w: 3}]
+      - id: providence
+        text: Providence. The land was being returned to the people it was promised to.
+        cause: divine
+        evidence: [{position: hist.nakba-1948.redemption, w: 3}]
+
+  # ---------------- hist.indonesia-1965 ----------------
+  - id: probe.hist.indonesia-1965.october
+    type: verdict
+    title: Jakarta, October 1965
+    text: >
+      Junior officers kill six generals in the night. General Suharto blames the Communist Party, then the
+      largest outside the socialist countries. Over the next months, the army and allied militias kill
+      somewhere between half a million and a million people. US diplomats hand over names. Suharto rules for
+      thirty-two years. What happened?
+    why: This asks how you judge the Indonesian killings of 1965 and 1966.
+    options:
+      - id: extermination
+        text: A Western-backed extermination of the Left that opened Indonesia to foreign capital.
+        evidence: [{position: hist.indonesia-1965.western-backed-extermination, w: 3}]
+      - id: crime
+        text: A crime against humanity that has never been tried. Truth first.
+        evidence: [{position: hist.indonesia-1965.crime-against-humanity, w: 3}]
+      - id: saved
+        text: The nation saved from a communist coup. It was kill or be killed.
+        evidence: [{position: hist.indonesia-1965.nation-saved, w: 3}]
+      - id: unarmed
+        text: The price of a mass party with three million members and no means to defend them.
+        evidence: [{position: hist.indonesia-1965.fatal-legal-road, w: 3}]
+      - id: development
+        text: A terrible birth for a state that went on to cut poverty sharply.
+        evidence: [{position: hist.indonesia-1965.developmental-birth, w: 3}]
+      - id: cold-war
+        text: A Cold War victory that kept the biggest country in Southeast Asia out of the Eastern camp.
+        evidence: [{position: hist.indonesia-1965.cold-war-prize, w: 3}]
+
+  - id: probe.hist.indonesia-1965.east-java
+    type: voices
+    title: East Java
+    text: Two old people from the same district in East Java remember 1965. Who is right?
+    voices:
+      - {name: "Pak Hasan, once in a village militia", says: "They had lists of us too. The communists were taking land from the religious schools. If we had waited, it would have been our throats."}
+      - {name: "Ibu Sri, daughter of a teacher", says: "They took my father in November. For thirty years our identity cards were marked as a prisoner's family. No one has ever said sorry."}
+    why: This asks how you weigh 1965, through two people who lived through it.
+    options:
+      - id: hasan
+        text: Pak Hasan. The nation was saved; it was kill or be killed.
+        cause: interests
+        evidence: [{position: hist.indonesia-1965.nation-saved, w: 3}]
+      - id: sri
+        text: Ibu Sri. A crime against humanity that still awaits truth and justice.
+        cause: individuals
+        evidence: [{position: hist.indonesia-1965.crime-against-humanity, w: 3}]
+      - id: west
+        text: Both were pawns. The army and its Western backers wanted the Left gone and the country open.
+        cause: interests
+        evidence: [{position: hist.indonesia-1965.western-backed-extermination, w: 3}]
+      - id: legal
+        text: Ibu Sri's father belonged to a huge legal party that trusted the president to protect it. Fatal trust.
+        cause: structures
+        evidence: [{position: hist.indonesia-1965.fatal-legal-road, w: 3}]
+      - id: after
+        text: Both should look at what came after. Rice, roads, schools. Terrible, but it led somewhere.
+        cause: structures
+        evidence: [{position: hist.indonesia-1965.developmental-birth, w: 3}]
+      - id: prize
+        text: Both were on the front line of the Cold War. Indonesia stayed out of the communist camp. That decided it.
+        cause: ideas
+        evidence: [{position: hist.indonesia-1965.cold-war-prize, w: 3}]
+
+  - id: probe.hist.indonesia-1965.why-so-many
+    type: explanation
+    title: Why so many
+    text: >
+      The killings of 1965 and 1966 were among the largest mass murders of the century, and for decades
+      among the least discussed. What, above all, explains them?
+    why: This asks how you explain the Indonesian killings, and what kind of cause you reach for.
+    options:
+      - id: army-capital
+        text: The army wanted power and foreign companies wanted the oil and rubber. The Left stood in the way.
+        cause: interests
+        evidence: [{position: hist.indonesia-1965.western-backed-extermination, w: 3}]
+      - id: fear
+        text: Real fear of a communist takeover, after a real attempt on the army's leadership.
+        cause: ideas
+        evidence: [{position: hist.indonesia-1965.nation-saved, w: 3}]
+      - id: defenseless
+        text: The biggest communist party outside the socialist countries had no guns and no plan to resist.
+        cause: structures
+        evidence: [{position: hist.indonesia-1965.fatal-legal-road, w: 3}]
+      - id: impunity
+        text: Ordinary people were given permission and propaganda. Nobody was ever tried, so it was never confronted.
+        cause: culture
+        evidence: [{position: hist.indonesia-1965.crime-against-humanity, w: 3}]
+      - id: order
+        text: A poor country in chaos needed order before it could grow. The order came in the worst way.
+        cause: structures
+        evidence: [{position: hist.indonesia-1965.developmental-birth, w: 3}]
+      - id: dominoes
+        text: Southeast Asia was the Cold War's front. Washington and London could not afford to lose Indonesia.
+        cause: interests
+        evidence: [{position: hist.indonesia-1965.cold-war-prize, w: 3}]
+
+  # ---------------- hist.cold-war ----------------
+  - id: probe.hist.cold-war.october-1962
+    type: verdict
+    title: Thirteen days
+    text: >
+      October 1962. Soviet missiles in Cuba, American missiles in Turkey, a naval blockade, and for thirteen
+      days the world waits. The same decade: coups in Guatemala, Congo, Brazil and Indonesia, a war in
+      Vietnam, tanks in Budapest and Prague. Looking back, what was the Cold War?
+    why: This asks how you judge the Cold War.
+    options:
+      - id: containment
+        text: The defense of the West against Soviet expansion, won by containment and patience.
+        evidence: [{position: hist.cold-war.containment-won, w: 3}]
+      - id: evil
+        text: A moral struggle against communism, won by strength and faith.
+        evidence: [{position: hist.cold-war.victory-over-evil, w: 3}]
+      - id: south
+        text: Look at the coups. A US campaign to keep the South open, with the Soviet threat as cover.
+        evidence: [{position: hist.cold-war.counter-revolution-in-the-south, w: 3}]
+      - id: two-camps
+        text: A worldwide class struggle between the socialist camp and imperialism.
+        evidence: [{position: hist.cold-war.two-camps, w: 3}]
+      - id: two-empires
+        text: Two empires carving up the world. Budapest and Guatemala are the same story.
+        evidence: [{position: hist.cold-war.two-superpowers, w: 3}]
+      - id: non-aligned
+        text: A Northern quarrel fought on Southern soil. Countries that refused to pick a side were right.
+        evidence: [{position: hist.cold-war.non-alignment, w: 3}]
+      - id: security
+        text: Two great powers, each afraid of the other, kept from war by the bomb. Ideology was secondary.
+        evidence: [{position: hist.cold-war.security-rivalry, w: 3}]
+
+  - id: probe.hist.cold-war.berlin-and-jakarta
+    type: voices
+    title: Berlin and Jakarta
+    text: Two historians on a panel describe the Cold War. Who is right?
+    voices:
+      - {name: "Ruth, from Berlin", says: "My father flew the airlift in 1948. Containment kept half of Europe free without a world war, and in 1989 the other half freed itself."}
+      - {name: "Arief, from Jakarta", says: "It was only cold in Europe. In Asia, Africa and Latin America it was coups, death squads and millions dead, mostly to keep markets open."}
+    why: This asks how you weigh the Cold War, through two places that lived it differently.
+    options:
+      - id: ruth
+        text: Ruth. The West defended itself and won by containment.
+        cause: ideas
+        evidence: [{position: hist.cold-war.containment-won, w: 3}]
+      - id: ruth-moral
+        text: Ruth, and more. It was good against evil, and good won.
+        cause: divine
+        evidence: [{position: hist.cold-war.victory-over-evil, w: 3}]
+      - id: arief
+        text: Arief. It was a US campaign against revolution in the South.
+        cause: interests
+        evidence: [{position: hist.cold-war.counter-revolution-in-the-south, w: 3}]
+      - id: camps
+        text: Both miss that it was class struggle on a world scale, with a socialist camp on one side.
+        cause: structures
+        evidence: [{position: hist.cold-war.two-camps, w: 3}]
+      - id: two-empires
+        text: Both miss the other empire. Moscow had its own coups and tanks.
+        cause: interests
+        evidence: [{position: hist.cold-war.two-superpowers, w: 3}]
+      - id: nonaligned
+        text: Arief's countries were right to refuse both blocs, as the Non-Aligned tried to.
+        cause: ideas
+        evidence: [{position: hist.cold-war.non-alignment, w: 3}]
+      - id: security
+        text: Both moralize. It was two powers managing their fear, and deterrence held.
+        cause: structures
+        evidence: [{position: hist.cold-war.security-rivalry, w: 3}]
+
+  - id: probe.hist.cold-war.no-world-war
+    type: explanation
+    title: Why no third war
+    text: >
+      For forty years two powers aimed tens of thousands of nuclear weapons at each other, and never fought
+      directly. What, above all, explains that?
+    why: This asks how you explain the Cold War's shape, and what kind of cause you reach for.
+    options:
+      - id: deterrence
+        text: The bomb. Each side knew a direct war meant its own destruction.
+        cause: structures
+        evidence: [{position: hist.cold-war.security-rivalry, w: 3}]
+      - id: resolve
+        text: Western strength and resolve. Moscow advanced where it could and stopped where it met a wall.
+        cause: ideas
+        evidence: [{position: hist.cold-war.containment-won, w: 3}]
+      - id: moral
+        text: Because the free nations held firm until communism collapsed from its own lies.
+        cause: ideas
+        evidence: [{position: hist.cold-war.victory-over-evil, w: 3}]
+      - id: socialist-strength
+        text: The socialist camp's strength forced imperialism to hold back from a war it wanted.
+        cause: structures
+        evidence: [{position: hist.cold-war.two-camps, w: 3}]
+      - id: proxies
+        text: Two empires preferred to fight through other people's countries. Cheaper for them.
+        cause: interests
+        evidence: [{position: hist.cold-war.two-superpowers, w: 3}]
+      - id: it-did
+        text: There was a war. It was fought in the South, against the South. "Cold" is a European word.
+        cause: interests
+        evidence: [{position: hist.cold-war.counter-revolution-in-the-south, w: 3}]
+      - id: buffer
+        text: The countries that refused both blocs kept a space open between them.
+        cause: ideas
+        evidence: [{position: hist.cold-war.non-alignment, w: 3}]

@@ -1,0 +1,538 @@
+nodes:
+  # ---------------- hist.french-revolution ----------------
+  - id: probe.hist.french-revolution.august-1789
+    type: verdict
+    title: The night of 4 August
+    text: >
+      Versailles, August 1789. In one night the Assembly votes away the lords' privileges. Within weeks it
+      declares the rights of man. Within months it seizes the Church's land and sells it. Your cousin in
+      Saint-Domingue writes that the planters love the word liberty and want no talk of slaves. Looking back
+      from here, what is this revolution?
+    why: This asks how you judge the French Revolution, and what you think it was really about.
+    options:
+      - id: property
+        text: The moment the owners of money and land took the state from the owners of titles.
+        evidence: [{position: hist.french-revolution.bourgeois-revolution, w: 3}]
+      - id: rights
+        text: The birth of something every country now claims to honor. Rights belong to people, not kings.
+        evidence: [{position: hist.french-revolution.rights-of-man, w: 3}]
+      - id: abstract
+        text: A grand idea on paper that will need a guillotine to make people fit it.
+        evidence: [{position: hist.french-revolution.ideas-to-terror, w: 3}]
+      - id: inherited
+        text: The destruction of an order centuries in the making, by men who thought they could design a better one.
+        evidence: [{position: hist.french-revolution.burkean-catastrophe, w: 3}]
+      - id: church
+        text: Theft from the Church, and the first step toward priests on the scaffold.
+        evidence: [{position: hist.french-revolution.war-on-faith, w: 3}]
+      - id: unfinished
+        text: A start. The crowds that stormed the Bastille will want more than the lawyers are offering.
+        evidence: [{position: hist.french-revolution.unfinished-revolution, w: 3}]
+      - id: colony
+        text: Read your cousin's letter again. These rights stop at the water's edge.
+        evidence: [{position: hist.french-revolution.colonial-limit, w: 3}]
+
+  - id: probe.hist.french-revolution.two-letters
+    type: voices
+    title: Priest and cobbler
+    text: Two letters from 1793 turn up in an archive. Which writer saw the Revolution most clearly?
+    voices:
+      - {name: "Father Joseph, a Breton priest who refused the oath", says: "They took our land, then our bells, now they hunt priests in the hedges. The peasants of the Vendée rose for God, not for any lord."}
+      - {name: "Antoine, a Paris cobbler", says: "The rich merchants wanted a revolution against nobles, not against hunger. We forced the price ceiling on bread. Watch them take it back."}
+    why: This asks how you read the French Revolution, through the voices of two who lived it.
+    options:
+      - id: priest
+        text: The priest. It was a war on faith and the people who kept it.
+        cause: divine
+        evidence:
+          - {position: hist.french-revolution.war-on-faith, w: 3}
+          - {position: hist.french-revolution.burkean-catastrophe, w: 1}
+      - id: cobbler
+        text: The cobbler. The poor drove it furthest, and the propertied stopped it.
+        cause: interests
+        evidence: [{position: hist.french-revolution.unfinished-revolution, w: 3}]
+      - id: owners
+        text: Both miss the main thing. Feudal property fell and modern property took its place. That was the point.
+        cause: structures
+        evidence: [{position: hist.french-revolution.bourgeois-revolution, w: 3}]
+      - id: rights
+        text: Both miss the Declaration. Those rights outlived the priest and the cobbler and the Terror.
+        cause: ideas
+        evidence: [{position: hist.french-revolution.rights-of-man, w: 3}]
+      - id: logic
+        text: Both are watching the same machine. Once you rebuild society from theory, the hunting starts.
+        cause: ideas
+        evidence:
+          - {position: hist.french-revolution.ideas-to-terror, w: 3}
+          - {position: hist.french-revolution.burkean-catastrophe, w: 1}
+      - id: haiti
+        text: Both miss the enslaved half a million in Saint-Domingue, who had to take their rights themselves.
+        cause: structures
+        evidence: [{position: hist.french-revolution.colonial-limit, w: 3}]
+
+  - id: probe.hist.french-revolution.where-it-stops
+    type: line
+    title: How far it was right
+    text: >
+      Here is what the Revolution did, roughly in order. Read down the list. Where does it stop being
+      something you would defend?
+    cases:
+      - 1789 Lords' privileges abolished; Declaration of the Rights of Man
+      - 1789 Church lands seized and sold
+      - 1791 Workers' associations and strikes banned
+      - 1793 Price ceilings on bread; feudal dues cancelled without compensation
+      - 1793–94 The Terror, some 17,000 sentenced to death
+      - 1794 Slavery abolished, after the enslaved of Saint-Domingue rose
+      - 1802 Napoleon restores slavery
+    why: This asks where you draw the line on the French Revolution, and so what you think it was.
+    options:
+      - id: none
+        text: Nowhere. Touching the Church's land was already the crime.
+        evidence:
+          - {position: hist.french-revolution.war-on-faith, w: 3}
+          - {position: hist.french-revolution.burkean-catastrophe, w: 2}
+      - id: first
+        text: I'd defend the first line. After that, men with theories took over.
+        evidence:
+          - {position: hist.french-revolution.rights-of-man, w: 2}
+          - {position: hist.french-revolution.ideas-to-terror, w: 2}
+      - id: property
+        text: Through the land sales. The point was a new kind of owner, and the ban on strikes shows who it was for.
+        evidence: [{position: hist.french-revolution.bourgeois-revolution, w: 3}]
+      - id: ninety-three
+        text: The high point is 1793. The bread ceiling and the end of dues were the poor pushing it as far as it went.
+        evidence: [{position: hist.french-revolution.unfinished-revolution, w: 3}]
+      - id: slavery
+        text: Line six is the only one that made it universal, and Haitians forced it. Line seven tells you the rest.
+        evidence: [{position: hist.french-revolution.colonial-limit, w: 3}]
+      - id: all-but-terror
+        text: All of it except the Terror. The rights were sound; the killing betrayed them.
+        evidence: [{position: hist.french-revolution.rights-of-man, w: 3}]
+
+  # ---------------- hist.haitian-revolution ----------------
+  - id: probe.hist.haitian-revolution.gonaives
+    type: verdict
+    title: Gonaïves, 1804
+    text: >
+      1 January 1804. Generals who were once enslaved declare Saint-Domingue independent and rename it Haiti.
+      The French army is gone, beaten and fevered. The cane fields are burned, the planters dead or fled.
+      No government in the world will recognize the new country. What has just happened?
+    why: This asks how you judge the Haitian Revolution.
+    options:
+      - id: universal
+        text: The only revolution of its age that meant "all men" literally.
+        evidence: [{position: hist.haitian-revolution.universal-emancipation, w: 3}]
+      - id: nation
+        text: A Black nation founding itself, in a world run by slaveholders.
+        evidence: [{position: hist.haitian-revolution.black-sovereignty, w: 3}]
+      - id: french
+        text: Paris's ideals of 1789, carried across the ocean by people Paris never meant them for.
+        evidence: [{position: hist.haitian-revolution.republican-extension, w: 3}]
+      - id: cultivators
+        text: The field hands won. Now watch their own generals try to march them back into the cane.
+        evidence: [{position: hist.haitian-revolution.cultivators-revolt, w: 3}]
+      - id: ruin
+        text: The richest colony on earth reduced to ashes by a war of race against race.
+        evidence: [{position: hist.haitian-revolution.ruinous-race-war, w: 3}]
+      - id: bill
+        text: A victory the empires will make Haiti pay for. In 1825 France sends warships and an invoice.
+        evidence: [{position: hist.haitian-revolution.made-to-pay, w: 3}]
+
+  - id: probe.hist.haitian-revolution.labor-code
+    type: voices
+    title: Back to the cane
+    text: >
+      1801. Louverture's new constitution orders former slaves back to the plantations for wages, under army
+      supervision. Cultivators in the north rise against it. Two people argue the night before.
+    voices:
+      - {name: "Pierre, an officer", says: "If the plantations stop, we have no sugar to sell, no guns to buy, and France comes back with chains. The land must work."}
+      - {name: "Marie-Jeanne, a cultivator", says: "I did not burn the master's house to cut his cane for a general. Give me two acres and leave me alone."}
+    why: This asks whether you read the Haitian Revolution as a nation's founding or a fight inside it.
+    options:
+      - id: captain
+        text: The captain. Without exports there is no army, and without an army there is no Haiti.
+        cause: structures
+        evidence: [{position: hist.haitian-revolution.black-sovereignty, w: 3}]
+      - id: cultivator
+        text: Marie-Jeanne. The revolution was hers, and it kept being taken from her.
+        cause: interests
+        evidence: [{position: hist.haitian-revolution.cultivators-revolt, w: 3}]
+      - id: universal
+        text: Both are arguing over an emancipation no other country on earth had yet granted. That is the point.
+        cause: ideas
+        evidence: [{position: hist.haitian-revolution.universal-emancipation, w: 3}]
+      - id: republic
+        text: Both are arguing inside the French Republic's terms. It was 1789's promise, stretched further.
+        cause: ideas
+        evidence: [{position: hist.haitian-revolution.republican-extension, w: 3}]
+      - id: ruin
+        text: Both are standing in ruins. A colony that fed half of Europe's sugar was already gone.
+        cause: chance
+        evidence: [{position: hist.haitian-revolution.ruinous-race-war, w: 3}]
+      - id: empires
+        text: Both are right that the outside world never let it breathe. The empires decided this, not them.
+        cause: interests
+        evidence: [{position: hist.haitian-revolution.made-to-pay, w: 3}]
+
+  - id: probe.hist.haitian-revolution.why-poor
+    type: explanation
+    title: Two centuries later
+    text: >
+      Haiti was the second independent republic in the Americas. Today it is the poorest country in them.
+      What, above all, explains that?
+    why: This asks how you read Haiti's revolution through what came after, and what kind of cause you reach for.
+    options:
+      - id: indemnity
+        text: The 1825 indemnity to France, paid off for over a century, then US occupation from 1915 to 1934.
+        cause: interests
+        evidence: [{position: hist.haitian-revolution.made-to-pay, w: 3}]
+      - id: example
+        text: The empires could not forgive the example. A slave revolt that won had to be made to fail.
+        cause: interests
+        evidence:
+          - {position: hist.haitian-revolution.universal-emancipation, w: 2}
+          - {position: hist.haitian-revolution.made-to-pay, w: 1}
+      - id: rulers
+        text: Its own rulers. Generals and their heirs fought the peasants for the land from the first day.
+        cause: structures
+        evidence: [{position: hist.haitian-revolution.cultivators-revolt, w: 3}]
+      - id: sovereignty
+        text: Its sovereignty has never been left alone, from French gunboats to foreign peacekeepers.
+        cause: interests
+        evidence: [{position: hist.haitian-revolution.black-sovereignty, w: 3}]
+      - id: ruin
+        text: The war destroyed the economy and the people who knew how to run it. It never recovered.
+        cause: chance
+        evidence: [{position: hist.haitian-revolution.ruinous-race-war, w: 3}]
+      - id: institutions
+        text: It dropped the republic almost at once, for emperors and kings. The ideas were never rooted.
+        cause: ideas
+        evidence: [{position: hist.haitian-revolution.republican-extension, w: 3}]
+
+  # ---------------- hist.russian-revolution ----------------
+  - id: probe.hist.russian-revolution.assembly
+    type: verdict
+    title: One day of parliament
+    text: >
+      Petrograd, January 1918. The Constituent Assembly, elected by universal suffrage, meets for the first
+      time. The peasant socialists hold the most seats; the Bolsheviks about a quarter. After one session, the
+      guards close the doors and it never meets again. Where do you stand that morning?
+    why: This asks how you judge the Russian Revolution at one of its sharpest moments.
+    options:
+      - id: soviets
+        text: With the doors closed. The workers' councils already hold power. A parliament elected on old lists is a step back.
+        evidence: [{position: hist.russian-revolution.new-civilization, w: 3}]
+      - id: assembly
+        text: With the Assembly. It was the only freely elected body Russia ever had, shut by a party that lost.
+        evidence: [{position: hist.russian-revolution.minority-coup, w: 3}]
+      - id: councils
+        text: With neither. The councils should rule themselves, not the party and not the parliament.
+        evidence: [{position: hist.russian-revolution.soviets-betrayed, w: 3}]
+      - id: then-ok
+        text: With the Bolsheviks then. What went wrong came later, from civil war and a revolution left alone.
+        evidence: [{position: hist.russian-revolution.degenerated-under-siege, w: 3}]
+      - id: costume
+        text: It hardly matters. Whoever won had to build factories in a peasant country, which is capitalism's job.
+        evidence: [{position: hist.russian-revolution.bourgeois-in-socialist-costume, w: 3}]
+      - id: crime
+        text: Nowhere near any of them. This is the first day of a crime that will last seventy years.
+        evidence: [{position: hist.russian-revolution.crime-of-ideology, w: 3}]
+      - id: faith
+        text: In church. Russia lost its tsar and its faith in one year, and it will pay for both.
+        evidence: [{position: hist.russian-revolution.faith-and-nation, w: 3}]
+      - id: colonies
+        text: Looking east. What matters is that India, China and Vietnam are watching the empire's chain break.
+        evidence: [{position: hist.russian-revolution.anti-colonial-signal, w: 3}]
+
+  - id: probe.hist.russian-revolution.two-grandchildren
+    type: voices
+    title: Two inheritances
+    text: Two people at a conference describe what 1917 meant to their families. Who is closer?
+    voices:
+      - {name: "Lan, from Hanoi", says: "In 1920 a young Vietnamese in Paris read Lenin on the colonies and wept. For us, 1917 was the first time Europe said we should be free."}
+      - {name: "Olga, from Saint Petersburg", says: "My great-grandfather was a village priest. He was shot in 1937 and his church became a grain store. That is what 1917 meant."}
+    why: This asks how you weigh the Russian Revolution, through two family histories.
+    options:
+      - id: lan
+        text: Lan. Its biggest effect was on the colonies.
+        cause: structures
+        evidence: [{position: hist.russian-revolution.anti-colonial-signal, w: 3}]
+      - id: olga
+        text: Olga. It was a war on the Church and on Russia itself.
+        cause: divine
+        evidence: [{position: hist.russian-revolution.faith-and-nation, w: 3}]
+      - id: crime
+        text: Olga, but bigger than her family. The idea itself produced the camps.
+        cause: ideas
+        evidence: [{position: hist.russian-revolution.crime-of-ideology, w: 3}]
+      - id: civilization
+        text: Both miss the main thing. For the first time, workers ran a country. That changed every country after.
+        cause: structures
+        evidence: [{position: hist.russian-revolution.new-civilization, w: 3}]
+      - id: siege
+        text: Both are describing what it became after civil war and isolation, not what it was in 1917.
+        cause: structures
+        evidence: [{position: hist.russian-revolution.degenerated-under-siege, w: 3}]
+      - id: soviets
+        text: Both miss the councils of 1917, which the Bolshevik state crushed long before 1937.
+        cause: interests
+        evidence: [{position: hist.russian-revolution.soviets-betrayed, w: 3}]
+      - id: coup
+        text: Both miss how it started. A minority party seized power and spent decades justifying it.
+        cause: individuals
+        evidence: [{position: hist.russian-revolution.minority-coup, w: 3}]
+      - id: modernize
+        text: Both miss what it did. It industrialized a peasant country, as capitalism does elsewhere.
+        cause: structures
+        evidence: [{position: hist.russian-revolution.bourgeois-in-socialist-costume, w: 3}]
+
+  - id: probe.hist.russian-revolution.why-won
+    type: explanation
+    title: Why they won
+    text: >
+      In February 1917 the Bolsheviks were a small party with most leaders in exile. By November they held
+      Petrograd, and by 1921 all of Russia. What, above all, explains that?
+    why: This asks how you explain the Russian Revolution, and what kind of cause you reach for.
+    options:
+      - id: masses
+        text: Workers, soldiers and peasants wanted bread, peace and land. Only the Bolsheviks would give them all three.
+        cause: interests
+        evidence: [{position: hist.russian-revolution.new-civilization, w: 3}]
+      - id: lenin
+        text: Lenin. One man with a disciplined minority saw the moment and took it.
+        cause: individuals
+        evidence: [{position: hist.russian-revolution.minority-coup, w: 3}]
+      - id: weak-link
+        text: The war broke the empire at its weakest point. The chain of empires snapped where it was thinnest.
+        cause: structures
+        evidence: [{position: hist.russian-revolution.anti-colonial-signal, w: 3}]
+      - id: councils
+        text: The councils won it. The party then took the councils' victory for itself.
+        cause: interests
+        evidence: [{position: hist.russian-revolution.soviets-betrayed, w: 3}]
+      - id: backward
+        text: Russia needed modernizing, and the Bolsheviks were the force ruthless enough to do it.
+        cause: structures
+        evidence: [{position: hist.russian-revolution.bourgeois-in-socialist-costume, w: 3}]
+      - id: fanatics
+        text: A poisonous idea found fanatics willing to kill for it.
+        cause: ideas
+        evidence: [{position: hist.russian-revolution.crime-of-ideology, w: 3}]
+      - id: faith
+        text: Russia had drifted from God and from itself. The punishment came through the open door.
+        cause: divine
+        evidence: [{position: hist.russian-revolution.faith-and-nation, w: 3}]
+      - id: then-alone
+        text: The masses won it. Then Germany's revolution failed, and a lone, starving state decayed.
+        cause: structures
+        evidence: [{position: hist.russian-revolution.degenerated-under-siege, w: 3}]
+
+  # ---------------- hist.chinese-revolution ----------------
+  - id: probe.hist.chinese-revolution.1949
+    type: verdict
+    title: October 1949
+    text: >
+      Autumn 1949. A tenant in Hunan is told the land his family rented for generations is now his. A
+      shopkeeper in Shanghai keeps his shop, for now. Over a million soldiers and officials follow the
+      Nationalists to Taiwan. In the villages, landlords face mass meetings. What has happened?
+    why: This asks how you judge the Chinese Revolution.
+    options:
+      - id: new-democratic
+        text: Workers and peasants, led by the Communists, beat the landlords and the foreign powers together.
+        evidence: [{position: hist.chinese-revolution.new-democratic, w: 3}]
+      - id: wealth-power
+        text: Another chapter in a hundred-year fight, since the Opium Wars, to make China strong again.
+        evidence: [{position: hist.chinese-revolution.wealth-and-power, w: 3}]
+      - id: peasant-army
+        text: A peasant army won. The workers' revolution died in Shanghai in 1927 and never came back.
+        evidence: [{position: hist.chinese-revolution.betrayed-in-1927, w: 3}]
+      - id: state-capitalism
+        text: A national revolution that will build state-owned industry with a red flag over it.
+        evidence: [{position: hist.chinese-revolution.state-capitalist, w: 3}]
+      - id: conquest
+        text: A conquest. The legitimate Republic of China lost a war and moved to Taiwan.
+        evidence: [{position: hist.chinese-revolution.communist-conquest, w: 3}]
+      - id: killing
+        text: Those mass meetings will end with landlords shot by the hundreds of thousands. That is the story.
+        evidence: [{position: hist.chinese-revolution.tragedy-of-liberation, w: 3}]
+      - id: model
+        text: Proof that a peasant army can beat a modern state. Every colony will study this.
+        evidence: [{position: hist.chinese-revolution.peoples-war-model, w: 3}]
+      - id: mandate
+        text: A new dynasty. The old one lost the Mandate of Heaven, as old ones always do.
+        evidence: [{position: hist.chinese-revolution.mandate-of-heaven, w: 3}]
+
+  - id: probe.hist.chinese-revolution.grandparents
+    type: voices
+    title: Taipei and Hunan
+    text: Two grandparents, one on each side of the strait, tell you what 1949 was. Who is right?
+    voices:
+      - {name: "Grandmother Lin, in Taipei", says: "We lost a war, not an argument. The Republic lived on here, and here it became a country where people vote."}
+      - {name: "Grandfather Zhou, in Hunan", says: "Before, the landlord took half the harvest and the Japanese took the rest. After, my father ate."}
+    why: This asks how you read the Chinese Revolution through two family memories.
+    options:
+      - id: lin
+        text: Grandmother Lin. It was a conquest, and the better China survived on an island.
+        cause: individuals
+        evidence: [{position: hist.chinese-revolution.communist-conquest, w: 3}]
+      - id: zhou
+        text: Grandfather Zhou. The peasants and workers won, and they ate.
+        cause: interests
+        evidence: [{position: hist.chinese-revolution.new-democratic, w: 3}]
+      - id: dynasty
+        text: Both are telling the oldest Chinese story there is. Dynasties fall when they fail the people.
+        cause: culture
+        evidence: [{position: hist.chinese-revolution.mandate-of-heaven, w: 3}]
+      - id: strength
+        text: Both want the same thing, a strong China. They disagree only on which party could deliver it.
+        cause: ideas
+        evidence: [{position: hist.chinese-revolution.wealth-and-power, w: 3}]
+      - id: dead
+        text: Both leave out the millions who died in the campaigns that followed.
+        cause: individuals
+        evidence: [{position: hist.chinese-revolution.tragedy-of-liberation, w: 3}]
+      - id: shanghai
+        text: Both forget Shanghai, 1927, when the workers were massacred and the revolution changed hands.
+        cause: interests
+        evidence: [{position: hist.chinese-revolution.betrayed-in-1927, w: 3}]
+      - id: state-capital
+        text: Neither side ever ran a workers' state. One built state capitalism, the other private.
+        cause: structures
+        evidence: [{position: hist.chinese-revolution.state-capitalist, w: 3}]
+      - id: world
+        text: Both forget Vietnam, Algeria and the rest, who learned from Zhou's side how to win.
+        cause: structures
+        evidence: [{position: hist.chinese-revolution.peoples-war-model, w: 3}]
+
+  - id: probe.hist.chinese-revolution.why-won
+    type: explanation
+    title: Why the Communists won
+    text: >
+      In 1946 the Nationalists had more troops, an air force and American aid. Three years later they were
+      on Taiwan. What, above all, explains it?
+    why: This asks how you explain the Chinese Revolution, and what kind of cause you reach for.
+    options:
+      - id: land
+        text: The Communists gave peasants land. Peasant sons filled their army.
+        cause: interests
+        evidence: [{position: hist.chinese-revolution.new-democratic, w: 3}]
+      - id: strategy
+        text: Strategy. Surround the cities from the countryside, fight only when you can win.
+        cause: structures
+        evidence: [{position: hist.chinese-revolution.peoples-war-model, w: 3}]
+      - id: mandate
+        text: The Nationalists were corrupt and their money was worthless. They lost the Mandate.
+        cause: culture
+        evidence: [{position: hist.chinese-revolution.mandate-of-heaven, w: 3}]
+      - id: nationalism
+        text: The Communists fought Japan harder and looked like the party of the nation.
+        cause: ideas
+        evidence: [{position: hist.chinese-revolution.wealth-and-power, w: 3}]
+      - id: ruthless
+        text: Discipline, Soviet help and a willingness to kill that their rivals lacked.
+        cause: individuals
+        evidence:
+          - {position: hist.chinese-revolution.communist-conquest, w: 2}
+          - {position: hist.chinese-revolution.tragedy-of-liberation, w: 2}
+      - id: no-workers
+        text: Because it stopped being a workers' movement after 1927. A peasant army needs no cities to win.
+        cause: structures
+        evidence: [{position: hist.chinese-revolution.betrayed-in-1927, w: 3}]
+      - id: bosses
+        text: Business and officials wanted a strong state to build industry. The Communists offered one.
+        cause: interests
+        evidence: [{position: hist.chinese-revolution.state-capitalist, w: 3}]
+
+  # ---------------- hist.cuban-revolution ----------------
+  - id: probe.hist.cuban-revolution.october-1960
+    type: verdict
+    title: Havana, 1960
+    text: >
+      October 1960. The government takes over nearly every American-owned sugar mill, refinery and bank on
+      the island. The elections promised last year are postponed without a date. Literacy brigades head for
+      the mountains. Your uncle wonders whether his hardware store is next. What is this becoming?
+    why: This asks how you judge the Cuban Revolution.
+    options:
+      - id: marti
+        text: The independence Martí died for in 1895, finally finished.
+        evidence: [{position: hist.cuban-revolution.marti-completed, w: 3}]
+      - id: moral
+        text: A society trying to run on duty and conscience instead of money.
+        evidence: [{position: hist.cuban-revolution.new-human-being, w: 3}]
+      - id: betrayed
+        text: A revolution against a dictator, turning into a different dictatorship.
+        evidence: [{position: hist.cuban-revolution.betrayed-into-dictatorship, w: 3}]
+      - id: from-above
+        text: New owners. The bearded men and their officials replace Batista's, and workers still take orders.
+        evidence: [{position: hist.cuban-revolution.revolution-from-above, w: 3}]
+      - id: south
+        text: A small island daring the empire ninety miles away. Africa and Latin America will remember.
+        evidence: [{position: hist.cuban-revolution.armed-the-south, w: 3}]
+      - id: impoverished
+        text: The beginning of the end for one of the richest countries in Latin America.
+        evidence: [{position: hist.cuban-revolution.prosperity-destroyed, w: 3}]
+
+  - id: probe.hist.cuban-revolution.angola-and-miami
+    type: voices
+    title: Two debts
+    text: Two people tell you what Cuba means to them. Who has it right?
+    voices:
+      - {name: "Thandi, in Johannesburg", says: "Cuban troops fought apartheid's army in Angola in 1988. Two years later Mandela was free, and he went to Havana to say thank you."}
+      - {name: "Ramón, in Hialeah", says: "In 1968 they took every small business left, my father's pharmacy too. He stood in line for bread in his own country, then he left."}
+    why: This asks how you weigh the Cuban Revolution, through two people it touched.
+    options:
+      - id: thandi
+        text: Thandi. Cuba armed the South's liberation.
+        cause: interests
+        evidence: [{position: hist.cuban-revolution.armed-the-south, w: 3}]
+      - id: ramon-power
+        text: Ramón. A revolution that promised liberty ended up owning everything, people included.
+        cause: individuals
+        evidence: [{position: hist.cuban-revolution.betrayed-into-dictatorship, w: 3}]
+      - id: ramon-money
+        text: Ramón. They wrecked a working economy, down to the corner pharmacy.
+        cause: ideas
+        evidence: [{position: hist.cuban-revolution.prosperity-destroyed, w: 3}]
+      - id: marti
+        text: Both miss Cuba itself. It is a nation that finally stopped being someone's backyard.
+        cause: ideas
+        evidence: [{position: hist.cuban-revolution.marti-completed, w: 3}]
+      - id: che
+        text: Both miss the attempt to make people work for each other instead of for money. That was the real wager.
+        cause: ideas
+        evidence: [{position: hist.cuban-revolution.new-human-being, w: 3}]
+      - id: bureaucracy
+        text: Both miss who runs it. Not Ramón's father, not the cane cutters either. A party apparatus.
+        cause: structures
+        evidence: [{position: hist.cuban-revolution.revolution-from-above, w: 3}]
+
+  - id: probe.hist.cuban-revolution.blackouts
+    type: explanation
+    title: The blackouts
+    text: >
+      Havana, this year. The power cuts last half the day, the bread ration has shrunk, and young people
+      leave by the hundred thousand. What, above all, explains it?
+    why: This asks how you explain Cuba's present, and what kind of cause you reach for.
+    options:
+      - id: embargo
+        text: Sixty years of embargo. Punish a country for independence long enough and this is what you get.
+        cause: interests
+        evidence:
+          - {position: hist.cuban-revolution.marti-completed, w: 2}
+          - {position: hist.cuban-revolution.armed-the-south, w: 1}
+      - id: planning
+        text: Socialism. Take away prices and property and nothing gets made.
+        cause: ideas
+        evidence: [{position: hist.cuban-revolution.prosperity-destroyed, w: 3}]
+      - id: one-party
+        text: No one can vote them out, so nothing ever has to work.
+        cause: structures
+        evidence: [{position: hist.cuban-revolution.betrayed-into-dictatorship, w: 3}]
+      - id: apparatus
+        text: The people who run it answer upward, never to the workers. Officials protect officials.
+        cause: structures
+        evidence: [{position: hist.cuban-revolution.revolution-from-above, w: 3}]
+      - id: dollars
+        text: They gave up on conscience and chased tourist dollars. The old spirit was the strength.
+        cause: ideas
+        evidence: [{position: hist.cuban-revolution.new-human-being, w: 3}]

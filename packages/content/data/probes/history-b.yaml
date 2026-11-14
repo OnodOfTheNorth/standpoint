@@ -1,0 +1,523 @@
+nodes:
+  # ---------------- hist.vietnamese-revolution ----------------
+  - id: probe.hist.vietnamese-revolution.geneva
+    type: verdict
+    title: The election that wasn't
+    text: >
+      Geneva, July 1954. France, beaten at Dien Bien Phu, agrees to split Vietnam at the 17th parallel until
+      a national election in 1956. The election never happens. Eisenhower later writes that Ho Chi Minh would
+      probably have won about 80 percent. Twenty-one years of war follow. Where do you stand on what came next?
+    why: This asks how you judge the Vietnamese Revolution and the wars that followed.
+    options:
+      - id: liberation
+        text: One country fighting for independence and unity. The partition was the foreigners' idea.
+        evidence: [{position: hist.vietnamese-revolution.national-liberation, w: 3}]
+      - id: south-right
+        text: The South had every right not to be swallowed. Defending it was right; quitting was the failure.
+        evidence: [{position: hist.vietnamese-revolution.defensible-war-lost, w: 3}]
+      - id: two-states
+        text: By 1960 there were two states. What came in 1975 was the North conquering the South.
+        evidence: [{position: hist.vietnamese-revolution.northern-conquest, w: 3}]
+      - id: blunder
+        text: America picked up France's war without understanding it. A tragic mistake, start to finish.
+        evidence: [{position: hist.vietnamese-revolution.tragic-mistake, w: 3}]
+      - id: stopped
+        text: The leaders accepted half a country because Moscow and Beijing told them to. It kept stopping short.
+        evidence: [{position: hist.vietnamese-revolution.stalinists-stopped-short, w: 3}]
+      - id: dien-bien-phu
+        text: Look at Dien Bien Phu. Peasants hauling guns up mountains beat a European army. That was the lesson.
+        evidence: [{position: hist.vietnamese-revolution.peoples-war-proved, w: 3}]
+      - id: peasants
+        text: For the villages it meant two armies taking rice and sons, and bombs from both directions.
+        evidence: [{position: hist.vietnamese-revolution.both-sides-war-on-peasants, w: 3}]
+
+  - id: probe.hist.vietnamese-revolution.two-veterans
+    type: voices
+    title: Two veterans
+    text: Two veterans of opposite sides meet at a reunion organized by their grandchildren. Who is right?
+    voices:
+      - {name: "Bao, who fought for the South", says: "We had a country, a constitution, an army. Washington cut our ammunition and went home. Then came the camps and the boats."}
+      - {name: "Hoa, who fought for the Front", says: "My village was ours before the French, before the Americans. We fought thirty years so nobody could split it again."}
+    why: This asks how you read the Vietnam wars, through two people who fought them.
+    options:
+      - id: bao-defensible
+        text: Bao. It was a just war that was lost in Washington, not in Vietnam.
+        cause: individuals
+        evidence: [{position: hist.vietnamese-revolution.defensible-war-lost, w: 3}]
+      - id: bao-conquest
+        text: Bao. His country was conquered by the North, plain and simple.
+        cause: interests
+        evidence: [{position: hist.vietnamese-revolution.northern-conquest, w: 3}]
+      - id: hoa
+        text: Hoa. It was a national liberation war, and his side was the nation.
+        cause: ideas
+        evidence: [{position: hist.vietnamese-revolution.national-liberation, w: 3}]
+      - id: hoa-method
+        text: Hoa, and the way they did it matters most. A village army outlasted the strongest military on earth.
+        cause: structures
+        evidence: [{position: hist.vietnamese-revolution.peoples-war-proved, w: 3}]
+      - id: mistake
+        text: Both were used by a superpower that never should have come. It was a tragic American mistake.
+        cause: individuals
+        evidence: [{position: hist.vietnamese-revolution.tragic-mistake, w: 3}]
+      - id: villages
+        text: Both forget the farmers in between, who lost to whichever army came at night.
+        cause: structures
+        evidence: [{position: hist.vietnamese-revolution.both-sides-war-on-peasants, w: 3}]
+      - id: short
+        text: Hoa's side won, and then built a party state, not the workers' power it promised.
+        cause: interests
+        evidence: [{position: hist.vietnamese-revolution.stalinists-stopped-short, w: 3}]
+
+  - id: probe.hist.vietnamese-revolution.why-lost
+    type: explanation
+    title: Why America lost
+    text: >
+      The United States dropped more bombs on Indochina than all sides dropped in the Second World War, and
+      lost. What, above all, explains that?
+    why: This asks how you explain the Vietnam wars, and what kind of cause you reach for.
+    options:
+      - id: home-front
+        text: Politicians and protesters at home lost their nerve. The army was never beaten in the field.
+        cause: individuals
+        evidence: [{position: hist.vietnamese-revolution.defensible-war-lost, w: 3}]
+      - id: nationalism
+        text: You cannot bomb a people out of wanting their country back.
+        cause: ideas
+        evidence: [{position: hist.vietnamese-revolution.national-liberation, w: 3}]
+      - id: peoples-war
+        text: A war of villages, tunnels and patience beats a war of machines.
+        cause: structures
+        evidence: [{position: hist.vietnamese-revolution.peoples-war-proved, w: 3}]
+      - id: arrogance
+        text: Washington misread a civil war as a Cold War front. Arrogance and ignorance.
+        cause: individuals
+        evidence: [{position: hist.vietnamese-revolution.tragic-mistake, w: 3}]
+      - id: invasion
+        text: The North had Soviet and Chinese arms and no rules. In 1975 its tanks simply rolled south.
+        cause: interests
+        evidence: [{position: hist.vietnamese-revolution.northern-conquest, w: 3}]
+      - id: countryside
+        text: Both sides lost the farmers. The one that lost them more slowly won.
+        cause: structures
+        evidence: [{position: hist.vietnamese-revolution.both-sides-war-on-peasants, w: 3}]
+      - id: nationalist-army
+        text: America lost to a nationalist army, not to a workers' revolution. That had been killed off in 1945.
+        cause: interests
+        evidence: [{position: hist.vietnamese-revolution.stalinists-stopped-short, w: 3}]
+
+  # ---------------- hist.iranian-revolution ----------------
+  - id: probe.hist.iranian-revolution.february-1979
+    type: verdict
+    title: Tehran, February 1979
+    text: >
+      The Shah has fled. Oil workers' strikes cut his exports to nothing. Workers' councils run some
+      factories. Women in chadors and women in jeans marched side by side. Now Ayatollah Khomeini lands at
+      Mehrabad to a crowd of millions. What is this?
+    why: This asks how you judge the Iranian Revolution.
+    options:
+      - id: islamic
+        text: A people returning to God's law and throwing out a foreign-backed king.
+        evidence: [{position: hist.iranian-revolution.islamic-revolution, w: 3}]
+      - id: hijack
+        text: A revolution of everyone, about to be taken over by the clergy.
+        evidence: [{position: hist.iranian-revolution.hijacked, w: 3}]
+      - id: break
+        text: The end of America's policeman in the Gulf. 1953 is finally avenged.
+        evidence: [{position: hist.iranian-revolution.anti-imperialist-break, w: 3}]
+      - id: reaction
+        text: A modernizing country turning its clocks back by a thousand years.
+        evidence: [{position: hist.iranian-revolution.theocratic-reaction, w: 3}]
+      - id: red-shiism
+        text: The Islam of the poor and the martyrs, rising. The clerics will try to tame it.
+        evidence: [{position: hist.iranian-revolution.red-shiism-betrayed, w: 3}]
+      - id: owners
+        text: New owners. The bazaar and the clerics' foundations will take the Shah's factories, and the oil workers will still take orders.
+        evidence: [{position: hist.iranian-revolution.change-of-owners, w: 3}]
+
+  - id: probe.hist.iranian-revolution.two-women
+    type: voices
+    title: Two women, 1979
+    text: Two women who marched in 1978 tell you what they got. Who is right?
+    voices:
+      - {name: "Maryam, a nurse in Tehran", says: "Before, Americans ran our oil and our army. I nursed boys in the war with Iraq. Nobody gives us orders now."}
+      - {name: "Shirin, in Los Angeles", says: "My mother marched bareheaded for liberty. Two years later she had to cover her hair, and her friends were in Evin prison."}
+    why: This asks how you weigh the Iranian Revolution, through two women who made it.
+    options:
+      - id: maryam
+        text: Maryam. Iran broke free of American control. That outweighs the rest.
+        cause: interests
+        evidence: [{position: hist.iranian-revolution.anti-imperialist-break, w: 3}]
+      - id: shirin
+        text: Shirin. Her mother's revolution was stolen by the clergy.
+        cause: individuals
+        evidence: [{position: hist.iranian-revolution.hijacked, w: 3}]
+      - id: shirin-shah
+        text: Shirin, and further. Under the Shah her mother was a modern woman in a modernizing country.
+        cause: culture
+        evidence: [{position: hist.iranian-revolution.theocratic-reaction, w: 3}]
+      - id: gods-law
+        text: Both miss it. The people asked for an Islamic Republic in a referendum, and got it.
+        cause: divine
+        evidence: [{position: hist.iranian-revolution.islamic-revolution, w: 3}]
+      - id: shariati
+        text: Both miss the Islam of the oppressed that filled the streets. The clerics buried it.
+        cause: ideas
+        evidence: [{position: hist.iranian-revolution.red-shiism-betrayed, w: 3}]
+      - id: class
+        text: Both miss who owns things. The oil workers who brought down the Shah still don't.
+        cause: structures
+        evidence: [{position: hist.iranian-revolution.change-of-owners, w: 3}]
+
+  - id: probe.hist.iranian-revolution.why-clergy
+    type: explanation
+    title: Why the clergy won
+    text: >
+      In 1979 liberals, nationalists, Marxists and Islamic leftists all helped bring down the Shah. By 1983
+      the clergy held the state and the rest were in exile, prison or the grave. What, above all, explains
+      that?
+    why: This asks how you explain the outcome of the Iranian Revolution, and what kind of cause you reach for.
+    options:
+      - id: network
+        text: The clergy had a mosque in every neighborhood. The others had newspapers and cafés.
+        cause: structures
+        evidence: [{position: hist.iranian-revolution.hijacked, w: 3}]
+      - id: faith
+        text: The people wanted an Islamic government. The clergy did not seize it; they were given it.
+        cause: divine
+        evidence: [{position: hist.iranian-revolution.islamic-revolution, w: 3}]
+      - id: america
+        text: They stood firmest against America. The embassy crisis and the Iraqi invasion made them the nation.
+        cause: interests
+        evidence: [{position: hist.iranian-revolution.anti-imperialist-break, w: 3}]
+      - id: backlash
+        text: The Shah modernized faster than a traditional society could bear, and it snapped back.
+        cause: culture
+        evidence: [{position: hist.iranian-revolution.theocratic-reaction, w: 3}]
+      - id: captured
+        text: The people rose in the language of a just, revolutionary Islam. The clerics captured that language.
+        cause: ideas
+        evidence: [{position: hist.iranian-revolution.red-shiism-betrayed, w: 3}]
+      - id: bazaar
+        text: The bazaar merchants paid for them, and they paid the bazaar back with the Shah's property.
+        cause: interests
+        evidence: [{position: hist.iranian-revolution.change-of-owners, w: 3}]
+
+  # ---------------- hist.ussr-early ----------------
+  - id: probe.hist.ussr-early.kronstadt
+    type: verdict
+    title: Kronstadt, March 1921
+    text: >
+      The sailors of Kronstadt, heroes of 1917, demand new elections to the councils, freedom of speech for
+      socialist parties, and an end to grain requisitions. The government sends troops across the ice.
+      Thousands die. The same month, the party bans its own factions and adopts free trade for peasants.
+      Where do you stand?
+    why: This asks how you judge Soviet Russia in its first decade.
+    options:
+      - id: necessary
+        text: With the government. With the White armies barely beaten, a revolt in the fortress could have ended everything.
+        evidence: [{position: hist.ussr-early.besieged-necessity, w: 3}]
+      - id: sailors
+        text: With the sailors. They were the revolution; the Bolsheviks crushed them as they crushed Makhno in Ukraine.
+        evidence: [{position: hist.ussr-early.kronstadt-makhno, w: 3}]
+      - id: councils
+        text: With the sailors on elections. Once the party banned opposition, even inside itself, the councils were dead.
+        evidence: [{position: hist.ussr-early.workers-democracy-lost, w: 3}]
+      - id: nep
+        text: The sailors were right about the grain, and so was the party, a week too late. Trade with the peasants was the road.
+        evidence: [{position: hist.ussr-early.nep-road, w: 3}]
+      - id: terror
+        text: No surprise. The secret police had been shooting people since 1918. This was the system working.
+        evidence: [{position: hist.ussr-early.terror-state, w: 3}]
+      - id: bigger
+        text: Kronstadt is not the story. Divorce on request, legal abortion, schools in fifty languages. That is the story.
+        evidence: [{position: hist.ussr-early.social-experiment, w: 3}]
+
+  - id: probe.hist.ussr-early.textbook
+    type: allocation
+    title: Ten pages
+    text: >
+      You are writing a school textbook chapter on Soviet Russia from 1917 to 1928. You have ten pages. How
+      do you divide them?
+    why: This asks what you think mattered most in early Soviet Russia, by where you spend the pages.
+    allocate:
+      budget: 10
+      unit: pages
+      items:
+        - id: siege
+          text: Civil war and fourteen foreign armies
+          evidence: [{position: hist.ussr-early.besieged-necessity, w: 2}]
+        - id: cheka
+          text: The secret police, hostages and the Red Terror
+          evidence: [{position: hist.ussr-early.terror-state, w: 2}]
+        - id: kronstadt
+          text: Kronstadt, Makhno and the peasant risings
+          evidence: [{position: hist.ussr-early.kronstadt-makhno, w: 2}]
+        - id: factions
+          text: The councils hollowed out and the ban on factions
+          evidence: [{position: hist.ussr-early.workers-democracy-lost, w: 2}]
+        - id: nep
+          text: The New Economic Policy and the peasant market
+          evidence: [{position: hist.ussr-early.nep-road, w: 2}]
+        - id: women
+          text: Women's rights, mass literacy and schooling in the nations' own languages
+          evidence: [{position: hist.ussr-early.social-experiment, w: 2}]
+    options:
+      - {id: done, text: Done}
+
+  - id: probe.hist.ussr-early.tambov-and-petrograd
+    type: voices
+    title: Weaver and farmer
+    text: Two people describe the same years, 1920 and 1921. Who is right?
+    voices:
+      - {name: "Nadia, a Petrograd weaver", says: "I learned to read in a women's circle. I can divorce, I get leave when the baby comes. My mother had none of this."}
+      - {name: "Fyodor, a Tambov farmer", says: "They took our seed grain at gunpoint. When we rose, they took hostages and shot them. Then gas in the forests."}
+    why: This asks how you weigh early Soviet Russia, through two people who lived it.
+    options:
+      - id: nadia
+        text: Nadia. It was the boldest attempt yet to free women and nations.
+        cause: ideas
+        evidence: [{position: hist.ussr-early.social-experiment, w: 3}]
+      - id: fyodor
+        text: Fyodor. It was a terror state from the start.
+        cause: individuals
+        evidence: [{position: hist.ussr-early.terror-state, w: 3}]
+      - id: siege
+        text: Both describe a besieged country doing what survival required, the good and the hard.
+        cause: structures
+        evidence: [{position: hist.ussr-early.besieged-necessity, w: 3}]
+      - id: nep
+        text: Fyodor was proved right in 1921, when they stopped taking grain and let the market run.
+        cause: interests
+        evidence: [{position: hist.ussr-early.nep-road, w: 3}]
+      - id: councils
+        text: Both miss who decided. By then the party ran the councils, not the weavers.
+        cause: structures
+        evidence: [{position: hist.ussr-early.workers-democracy-lost, w: 3}]
+      - id: free-ukraine
+        text: Fyodor's revolt was the real revolution, like Makhno's in Ukraine. Both were crushed.
+        cause: interests
+        evidence: [{position: hist.ussr-early.kronstadt-makhno, w: 3}]
+
+  # ---------------- hist.ussr-stalin ----------------
+  - id: probe.hist.ussr-stalin.1932
+    type: verdict
+    title: Furnace and famine
+    text: >
+      1932. At Magnitogorsk in the Urals, a steel city rises from bare steppe in two years. In Ukraine and
+      Kazakhstan, officials take grain from villages that are starting to starve. Both are the same plan.
+      Nine years later, the steel will meet German tanks. What are you looking at?
+    why: This asks how you judge the Soviet Union under Stalin.
+    options:
+      - id: necessary
+        text: Socialism built under siege. The cost was terrible, and 1941 proved it was necessary.
+        evidence: [{position: hist.ussr-stalin.socialism-built, w: 3}]
+      - id: not-necessary
+        text: Real socialism being built, and a famine that was a crime and did not have to happen.
+        evidence: [{position: hist.ussr-stalin.crimes-not-necessary, w: 3}]
+      - id: bureaucracy
+        text: Workers' property run by a privileged bureaucracy that answers to nobody.
+        evidence: [{position: hist.ussr-stalin.degenerated-workers-state, w: 3}]
+      - id: state-capital
+        text: Capital accumulating, as everywhere, by squeezing workers and peasants. The boss is just the state.
+        evidence: [{position: hist.ussr-stalin.state-capitalism, w: 3}]
+      - id: twin
+        text: The same kind of thing as Hitler's Germany. A state that owns every person.
+        evidence: [{position: hist.ussr-stalin.totalitarian-twin, w: 3}]
+      - id: modernizer
+        text: A brutal dictatorship dragging a peasant country into the industrial age, as others did.
+        evidence: [{position: hist.ussr-stalin.developmental-dictatorship, w: 3}]
+      - id: great-power
+        text: Russia becoming a great power again. Hard times need hard rulers.
+        evidence: [{position: hist.ussr-stalin.great-power-builder, w: 3}]
+      - id: war-on-peasants
+        text: A war on the peasants, the churches and the nations. Ask the Ukrainians and Kazakhs.
+        evidence: [{position: hist.ussr-stalin.war-on-faith-and-nations, w: 3}]
+
+  - id: probe.hist.ussr-stalin.stalingrad-and-steppe
+    type: voices
+    title: Veteran and historian
+    text: Two people argue about the 1930s on a television panel. Who is right?
+    voices:
+      - {name: "Ivan, a Stalingrad veteran", says: "Without the factories of the five-year plans we would have fought tanks with rifles. My whole generation knew it."}
+      - {name: "Aigerim, a Kazakh historian", says: "Around a third of my people died in the famine of 1931 to 1933. Whatever was built, it was built on our graves."}
+    why: This asks how you weigh the Stalin years, through two people who remember them.
+    options:
+      - id: ivan-socialism
+        text: Ivan. Socialism was built and defended, whatever it cost.
+        cause: structures
+        evidence: [{position: hist.ussr-stalin.socialism-built, w: 3}]
+      - id: ivan-nation
+        text: Ivan. Russia became strong enough to win. That is what counts.
+        cause: individuals
+        evidence: [{position: hist.ussr-stalin.great-power-builder, w: 3}]
+      - id: aigerim
+        text: Aigerim. It was a war on peasants, faiths and nations.
+        cause: interests
+        evidence: [{position: hist.ussr-stalin.war-on-faith-and-nations, w: 3}]
+      - id: both-crimes
+        text: Both. The factories were needed; the famine was not.
+        cause: individuals
+        evidence: [{position: hist.ussr-stalin.crimes-not-necessary, w: 3}]
+      - id: both-modernizer
+        text: Both describe what any dictatorship does when it industrializes a peasant country in a hurry.
+        cause: structures
+        evidence: [{position: hist.ussr-stalin.developmental-dictatorship, w: 3}]
+      - id: twin
+        text: Both describe a state like Hitler's. One just happened to fight the other.
+        cause: ideas
+        evidence: [{position: hist.ussr-stalin.totalitarian-twin, w: 3}]
+      - id: usurpers
+        text: Both miss who ran it. A bureaucracy sat on top of the workers' property and called itself the revolution.
+        cause: interests
+        evidence: [{position: hist.ussr-stalin.degenerated-workers-state, w: 3}]
+      - id: accumulation
+        text: Both miss what it was. Accumulation of capital by a state class, paid for by workers and peasants.
+        cause: structures
+        evidence: [{position: hist.ussr-stalin.state-capitalism, w: 3}]
+
+  - id: probe.hist.ussr-stalin.terror
+    type: explanation
+    title: Why 1937
+    text: >
+      In 1937 and 1938 Soviet security services shot around 680,000 people by their own count, including most
+      of the party's founders and much of the army's command. What, above all, explains it?
+    why: This asks how you explain the Great Terror, and what kind of cause you reach for.
+    options:
+      - id: fifth-column
+        text: War was coming and there were real traitors. Innocents died in the hurry, as in every war.
+        cause: structures
+        evidence: [{position: hist.ussr-stalin.socialism-built, w: 3}]
+      - id: paranoia
+        text: Stalin's own paranoia. Socialism did not need it; one man did.
+        cause: individuals
+        evidence: [{position: hist.ussr-stalin.crimes-not-necessary, w: 3}]
+      - id: caste
+        text: A bureaucracy killing the old revolutionaries who remembered what it had betrayed.
+        cause: interests
+        evidence: [{position: hist.ussr-stalin.degenerated-workers-state, w: 3}]
+      - id: class
+        text: A new ruling class disciplining managers and workers alike, as bosses do with less paperwork.
+        cause: interests
+        evidence: [{position: hist.ussr-stalin.state-capitalism, w: 3}]
+      - id: total
+        text: A state that claims to own the whole person always needs enemies. The Nazis worked the same way.
+        cause: ideas
+        evidence: [{position: hist.ussr-stalin.totalitarian-twin, w: 3}]
+      - id: hurry
+        text: Rulers in a hurry to industrialize govern by fear. Russia's tsars did the same.
+        cause: structures
+        evidence:
+          - {position: hist.ussr-stalin.developmental-dictatorship, w: 2}
+          - {position: hist.ussr-stalin.great-power-builder, w: 2}
+      - id: nations
+        text: Look at who died. Priests, peasants, and whole nations, Poles, Koreans, Germans, by quota.
+        cause: interests
+        evidence: [{position: hist.ussr-stalin.war-on-faith-and-nations, w: 3}]
+
+  # ---------------- hist.ussr-late ----------------
+  - id: probe.hist.ussr-late.august-1968
+    type: verdict
+    title: August 1968
+    text: >
+      Warsaw Pact tanks roll into Prague and end the Prague Spring. The same month, Soviet ships unload
+      anti-aircraft missiles in Haiphong for Vietnam. In Novosibirsk, a family moves into its first flat with
+      hot water, after eleven years on the waiting list. Which of these is the Soviet Union?
+    why: This asks how you judge the Soviet Union after Stalin.
+    options:
+      - id: prague
+        text: Prague. An empire holding half of Europe, and its own nations, by force.
+        evidence: [{position: hist.ussr-late.captive-nations-empire, w: 3}]
+      - id: haiphong
+        text: Haiphong. Without those ships, Vietnam, Angola and the ANC would have had nothing to fight with.
+        evidence: [{position: hist.ussr-late.rear-base-of-liberation, w: 3}]
+      - id: flat
+        text: The flat. Work, housing, a pension, no fear of the rent. A decent life for ordinary people.
+        evidence: [{position: hist.ussr-late.security-and-decency, w: 3}]
+      - id: social-imperialism
+        text: Prague, because this was already capitalism. Since Khrushchev it had been an empire in red.
+        evidence: [{position: hist.ussr-late.capitalism-restored-1956, w: 3}]
+      - id: defended
+        text: All three are real socialism defending itself. The betrayal came twenty years later, from the top.
+        evidence: [{position: hist.ussr-late.real-socialism-betrayed, w: 3}]
+      - id: stagnation
+        text: Prague was the planners crushing the one serious attempt to fix the plan from within.
+        evidence: [{position: hist.ussr-late.bureaucratic-stagnation, w: 3}]
+      - id: waiting-list
+        text: The eleven years. An economy that could make missiles but not enough flats, kept going by oil.
+        evidence: [{position: hist.ussr-late.shortage-economy, w: 3}]
+
+  - id: probe.hist.ussr-late.samara-and-vilnius
+    type: voices
+    title: Samara and Vilnius
+    text: Two retired women describe the Soviet years at a family wedding. Who is right?
+    voices:
+      - {name: "Galina, a teacher in Samara", says: "We had work, a free flat, holidays by the sea. Nobody lay awake about the rent. Then it all went in a year."}
+      - {name: "Ona, a librarian in Vilnius", says: "My father was deported to Siberia in 1949. Until 1990 we were an occupied country that had to say thank you."}
+    why: This asks how you weigh the late Soviet Union, through two women who lived in it.
+    options:
+      - id: galina
+        text: Galina. Security, order and a decent life.
+        cause: structures
+        evidence: [{position: hist.ussr-late.security-and-decency, w: 3}]
+      - id: ona
+        text: Ona. It was an empire that held its nations captive.
+        cause: interests
+        evidence: [{position: hist.ussr-late.captive-nations-empire, w: 3}]
+      - id: betrayed
+        text: Galina, and it was taken from her by Gorbachev and the people at the top.
+        cause: individuals
+        evidence: [{position: hist.ussr-late.real-socialism-betrayed, w: 3}]
+      - id: since-56
+        text: Both lived under a capitalism that called itself socialist, ever since Khrushchev.
+        cause: ideas
+        evidence: [{position: hist.ussr-late.capitalism-restored-1956, w: 3}]
+      - id: bureaucrats
+        text: Both miss the bureaucracy that ran the plan for itself and let it rot.
+        cause: interests
+        evidence: [{position: hist.ussr-late.bureaucratic-stagnation, w: 3}]
+      - id: shortages
+        text: Both forget the queues. It could not make a decent car or computer. Oil paid the bills.
+        cause: structures
+        evidence: [{position: hist.ussr-late.shortage-economy, w: 3}]
+      - id: south
+        text: Both miss Hanoi, Luanda and Havana, where Moscow's weapons and wheat kept liberation alive.
+        cause: interests
+        evidence: [{position: hist.ussr-late.rear-base-of-liberation, w: 3}]
+
+  - id: probe.hist.ussr-late.slowdown
+    type: explanation
+    title: The slowdown
+    text: >
+      In the 1950s the Soviet economy grew faster than almost any in the world. By the early 1980s growth was
+      close to zero. What, above all, explains that?
+    why: This asks how you explain the late Soviet economy, and what kind of cause you reach for.
+    options:
+      - id: no-prices
+        text: Without real prices nobody knows what anything is worth. It could copy, not invent. Oil hid it.
+        cause: structures
+        evidence: [{position: hist.ussr-late.shortage-economy, w: 3}]
+      - id: bureaucracy
+        text: The officials who ran the plan cared about their privileges, not about output.
+        cause: interests
+        evidence: [{position: hist.ussr-late.bureaucratic-stagnation, w: 3}]
+      - id: profit
+        text: It went back to profit and bonuses for managers after 1956. Revisionism rotted it.
+        cause: ideas
+        evidence: [{position: hist.ussr-late.capitalism-restored-1956, w: 3}]
+      - id: traitors
+        text: It slowed, but it worked. The leaders who came after chose to tear it down.
+        cause: individuals
+        evidence: [{position: hist.ussr-late.real-socialism-betrayed, w: 3}]
+      - id: arms
+        text: The arms race and the cost of arming half the world's liberation movements.
+        cause: interests
+        evidence: [{position: hist.ussr-late.rear-base-of-liberation, w: 2}]
+      - id: empire
+        text: Holding Eastern Europe and its own nations down by force was ruinously expensive.
+        cause: interests
+        evidence: [{position: hist.ussr-late.captive-nations-empire, w: 3}]
+      - id: wrong-test
+        text: Growth is the wrong test. People had homes, jobs and safe streets. That is what an economy is for.
+        cause: structures
+        evidence: [{position: hist.ussr-late.security-and-decency, w: 3}]

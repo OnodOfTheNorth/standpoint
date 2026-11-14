@@ -1,0 +1,442 @@
+nodes:
+  # ---------------- hist.chile-1973 ----------------
+  - id: probe.hist.chile-1973.august-1973
+    type: verdict
+    title: Santiago, August 1973
+    text: >
+      A truck owners' strike has choked the country's supply for weeks. In the industrial belts, workers
+      occupy factories and ask the president for arms. The Chamber of Deputies declares the government in
+      breach of the constitution. General Pinochet has just been named army chief. Three weeks later the jets
+      come. Where do you stand?
+    why: This asks how you judge Chile under Allende and the coup of 1973.
+    options:
+      - id: destroyed
+        text: With the elected government. A road to socialism by votes, wrecked by Chile's owners and Washington.
+        evidence: [{position: hist.chile-1973.peaceful-road-destroyed, w: 3}]
+      - id: trap
+        text: With the workers asking for arms. The army was left intact, and the army decides.
+        evidence: [{position: hist.chile-1973.peaceful-road-a-trap, w: 3}]
+      - id: saved
+        text: With the Chamber. The country was heading for Cuba or civil war. The armed forces had to act.
+        evidence: [{position: hist.chile-1973.saved-from-communism, w: 3}]
+      - id: polarization
+        text: With nobody. Both sides tore up the rules, and the soldiers walked through the gap.
+        evidence: [{position: hist.chile-1973.tragedy-of-polarization, w: 3}]
+      - id: reforms
+        text: Uneasily with the coup. What it opened the way for, the reforms of the 1980s, made Chile the region's success.
+        evidence: [{position: hist.chile-1973.chicago-miracle, w: 3}]
+      - id: copper
+        text: Follow the copper. Allende nationalized it. The coup gave it back and turned Chile into a test site for the market.
+        evidence: [{position: hist.chile-1973.first-neoliberal-laboratory, w: 3}]
+
+  - id: probe.hist.chile-1973.two-chileans
+    type: voices
+    title: Fifty years on
+    text: On the fiftieth anniversary of the coup, two Chileans are interviewed. Who is right?
+    voices:
+      - {name: "Patricia, whose father disappeared in 1974", says: "He was a union delegate at a textile plant. They took him from the house. We never found him. That was what the coup was for."}
+      - {name: "Jorge, a Santiago businessman", says: "My father's farm was seized in 1972 and shops had no bread. By the 1990s poverty had fallen faster than anywhere in the region."}
+    why: This asks how you weigh Chile 1970 to 1973, through two people who lived it.
+    options:
+      - id: patricia
+        text: Patricia. A road to socialism by votes, destroyed by force.
+        cause: interests
+        evidence: [{position: hist.chile-1973.peaceful-road-destroyed, w: 3}]
+      - id: jorge-saved
+        text: Jorge. The country was saved from communism.
+        cause: individuals
+        evidence: [{position: hist.chile-1973.saved-from-communism, w: 3}]
+      - id: jorge-reforms
+        text: Jorge, on the economics. Whatever you think of 1973, the reforms worked.
+        cause: ideas
+        evidence: [{position: hist.chile-1973.chicago-miracle, w: 3}]
+      - id: both
+        text: Both lost something because both sides broke the rules. A tragedy of polarization.
+        cause: culture
+        evidence: [{position: hist.chile-1973.tragedy-of-polarization, w: 3}]
+      - id: trap
+        text: Patricia's father was disarmed by his own leaders' faith in the constitution. That was the trap.
+        cause: structures
+        evidence: [{position: hist.chile-1973.peaceful-road-a-trap, w: 3}]
+      - id: laboratory
+        text: Jorge's "reforms" were the point of Patricia's grief. Kill the unions, then privatize the pensions.
+        cause: structures
+        evidence: [{position: hist.chile-1973.first-neoliberal-laboratory, w: 3}]
+
+  # ---------------- hist.sankara ----------------
+  - id: probe.hist.sankara.october-1987
+    type: verdict
+    title: Ouagadougou, 1987
+    text: >
+      15 October 1987. Thomas Sankara, president for four years, is shot with twelve aides at a meeting. His
+      closest comrade, Blaise Compaoré, takes power and announces a "rectification" of the revolution. Three
+      months earlier, Sankara told the Organization of African Unity that Africa should not repay its debts.
+      What ended here?
+    why: This asks how you judge Burkina Faso's revolution under Sankara.
+    options:
+      - id: honest
+        text: Africa's most honest revolution. Self-reliant, for women, for the land.
+        evidence: [{position: hist.sankara.self-reliant-revolution, w: 3}]
+      - id: france
+        text: A revolution France and its friends could not afford. The debt speech sealed it.
+        evidence: [{position: hist.sankara.killed-by-francafrique, w: 3}]
+      - id: from-above
+        text: A sincere revolution run from the top, which had already lost the unions and the teachers.
+        evidence: [{position: hist.sankara.revolution-from-above, w: 3}]
+      - id: military
+        text: A military government with no elections. Charismatic, but it came by the gun and went the same way.
+        evidence: [{position: hist.sankara.military-dictatorship, w: 3}]
+      - id: rectify
+        text: A well-meant experiment that ignored economics. Someone had to correct course, though not like this.
+        evidence: [{position: hist.sankara.rectification-needed, w: 3}]
+
+  - id: probe.hist.sankara.market-and-school
+    type: voices
+    title: Seller and teacher
+    text: Two people in Ouagadougou remember the Sankara years. Who is right?
+    voices:
+      - {name: "Aminata, a market seller", says: "He banned forced marriage, put women in the cabinet, made ministers drive cheap cars. We planted ten million trees. Nobody had cared before."}
+      - {name: "Issa, a retired teacher", says: "When our union struck in 1984, they fired us by the thousand. The defense committees ran every street. Nobody voted for any of it."}
+    why: This asks how you weigh the Sankara years, through two people who lived them.
+    options:
+      - id: aminata
+        text: Aminata. It was the most honest revolution Africa has had.
+        cause: individuals
+        evidence: [{position: hist.sankara.self-reliant-revolution, w: 3}]
+      - id: issa-military
+        text: Issa. However charismatic, it was a military government without elections.
+        cause: structures
+        evidence: [{position: hist.sankara.military-dictatorship, w: 3}]
+      - id: issa-base
+        text: Issa, but read it right. It was sincere, and it was losing the very people it was for.
+        cause: structures
+        evidence: [{position: hist.sankara.revolution-from-above, w: 3}]
+      - id: france
+        text: Both miss Paris. Whatever its faults, the revolution was ended from outside.
+        cause: interests
+        evidence: [{position: hist.sankara.killed-by-francafrique, w: 3}]
+      - id: economics
+        text: Both miss the economics. Good intentions and price controls do not feed a country.
+        cause: ideas
+        evidence: [{position: hist.sankara.rectification-needed, w: 3}]
+
+  - id: probe.hist.sankara.why-killed
+    type: explanation
+    title: Why him
+    text: >
+      Sankara was killed at 37 by soldiers loyal to his best friend. Compaoré then ruled for 27 years. What,
+      above all, explains the killing?
+    why: This asks how you explain the end of Burkina Faso's revolution, and what kind of cause you reach for.
+    options:
+      - id: france
+        text: He refused the debts and the French franc zone's manners. France and its neighbors wanted him gone.
+        cause: interests
+        evidence: [{position: hist.sankara.killed-by-francafrique, w: 3}]
+      - id: base
+        text: He had alienated the unions, the chiefs and the officers. A revolution from above has nobody below to defend it.
+        cause: structures
+        evidence: [{position: hist.sankara.revolution-from-above, w: 3}]
+      - id: soldiers
+        text: Soldiers who take power by the gun lose it by the gun. That is how military rule ends.
+        cause: structures
+        evidence: [{position: hist.sankara.military-dictatorship, w: 3}]
+      - id: course
+        text: His comrades saw the economy failing and decided to change course. They did it the worst way.
+        cause: ideas
+        evidence: [{position: hist.sankara.rectification-needed, w: 3}]
+      - id: integrity
+        text: He was too honest. A man who rides a bicycle to work threatens everyone who rides in a Mercedes.
+        cause: individuals
+        evidence: [{position: hist.sankara.self-reliant-revolution, w: 3}]
+
+  # ---------------- hist.venezuela ----------------
+  - id: probe.hist.venezuela.january-2026
+    type: verdict
+    title: Caracas, January 2026
+    text: >
+      3 January 2026. US forces strike targets in Venezuela and seize Nicolás Maduro, flying him to New York
+      on drug charges. Since 2013 the economy has shrunk by about three quarters and close to eight million
+      people have left. The 2024 election result was never shown polling station by polling station. What do
+      you make of it all?
+    why: This asks how you judge Venezuela's Bolivarian process, from Chávez to now.
+    options:
+      - id: removed
+        text: A criminal state tied to drug trafficking, rightly removed. Long overdue.
+        evidence: [{position: hist.venezuela.criminal-state-removed, w: 3}]
+      - id: war
+        text: The last act of an economic war. Strangle a country with sanctions, then kidnap its president.
+        evidence: [{position: hist.venezuela.economic-war, w: 3}]
+      - id: wrecked
+        text: Populist socialism wrecked the richest country in South America and ended its elections. The rest follows.
+        evidence: [{position: hist.venezuela.socialism-wrecked-it, w: 3}]
+      - id: revolution
+        text: Whatever came later, a revolution that gave the oil money to the poor is what they are punishing.
+        evidence: [{position: hist.venezuela.bolivarian-revolution, w: 3}]
+      - id: communes
+        text: The real revolution was in the communes. The state at the top was always the problem.
+        evidence: [{position: hist.venezuela.communes-from-below, w: 3}]
+      - id: oil
+        text: A petro-state, before Chávez and after. When oil crashed, everything crashed.
+        evidence: [{position: hist.venezuela.petrostate, w: 3}]
+      - id: boliburguesia
+        text: A revolution eaten by a new rich class of generals and officials. Washington just took one of them.
+        evidence: [{position: hist.venezuela.bolibourgeoisie, w: 3}]
+
+  - id: probe.hist.venezuela.commune-and-madrid
+    type: voices
+    title: Lara and Madrid
+    text: Two Venezuelans talk about the last twenty-five years. Who is right?
+    voices:
+      - {name: "Yusmary, a commune spokeswoman in Lara", says: "Our commune grows corn, runs its own mill and decides in assembly. The ministry fought us harder than the opposition ever did."}
+      - {name: "Andrés, an engineer in Madrid", says: "I left in 2017 with one suitcase. My mother's pension buys two eggs. They took a rich country and burned it for slogans."}
+    why: This asks how you weigh Venezuela's Bolivarian process, through two people it shaped.
+    options:
+      - id: yusmary
+        text: Yusmary. The communes were the real revolution, held back by the state.
+        cause: structures
+        evidence: [{position: hist.venezuela.communes-from-below, w: 3}]
+      - id: andres
+        text: Andrés. Populist socialism wrecked the country.
+        cause: ideas
+        evidence: [{position: hist.venezuela.socialism-wrecked-it, w: 3}]
+      - id: andres-crime
+        text: Andrés, and worse. By the end it was a criminal racket with a flag.
+        cause: individuals
+        evidence: [{position: hist.venezuela.criminal-state-removed, w: 3}]
+      - id: oil
+        text: Both live in a country that never escaped oil. That decides everything.
+        cause: structures
+        evidence: [{position: hist.venezuela.petrostate, w: 3}]
+      - id: sanctions
+        text: Both miss the sanctions. Andrés's mother's pension shrank because Washington cut off the oil money.
+        cause: interests
+        evidence: [{position: hist.venezuela.economic-war, w: 3}]
+      - id: new-rich
+        text: Both miss the new rich in uniform who took the money meant for the communes.
+        cause: interests
+        evidence: [{position: hist.venezuela.bolibourgeoisie, w: 3}]
+      - id: before
+        text: Both forget what the barrios had before 1999. Nothing. The revolution gave them clinics and homes.
+        cause: interests
+        evidence: [{position: hist.venezuela.bolivarian-revolution, w: 3}]
+
+  - id: probe.hist.venezuela.collapse
+    type: explanation
+    title: The collapse
+    text: >
+      From 2013 Venezuela's economy shrank by about three quarters, one of the deepest collapses outside war in modern times. What,
+      above all, explains the collapse?
+    why: This asks how you explain Venezuela's collapse, and what kind of cause you reach for.
+    options:
+      - id: oil-price
+        text: Oil fell from over 100 dollars a barrel to under 50 in 2014, and oil was almost all it sold.
+        cause: structures
+        evidence: [{position: hist.venezuela.petrostate, w: 3}]
+      - id: sanctions
+        text: US sanctions from 2017 cut it off from credit and its own oil revenue.
+        cause: interests
+        evidence: [{position: hist.venezuela.economic-war, w: 3}]
+      - id: controls
+        text: Price controls, expropriations and printed money. Socialism does this everywhere.
+        cause: ideas
+        evidence: [{position: hist.venezuela.socialism-wrecked-it, w: 3}]
+      - id: theft
+        text: Officials and generals stole on a scale nobody had seen. Hundreds of billions vanished.
+        cause: interests
+        evidence: [{position: hist.venezuela.bolibourgeoisie, w: 3}]
+      - id: communes
+        text: The state never let production pass to the communes. It kept importing instead of building.
+        cause: structures
+        evidence: [{position: hist.venezuela.communes-from-below, w: 3}]
+      - id: price-of-trying
+        text: For ten years the poor got food, clinics and homes. The collapse is what the rich made them pay for it.
+        cause: interests
+        evidence: [{position: hist.venezuela.bolivarian-revolution, w: 3}]
+      - id: gang
+        text: A criminal clique looted the country and ran drugs. Ideology was a cover.
+        cause: individuals
+        evidence: [{position: hist.venezuela.criminal-state-removed, w: 3}]
+
+  # ---------------- hist.rojava ----------------
+  - id: probe.hist.rojava.kobani
+    type: verdict
+    title: Kobanî, 2015
+    text: >
+      January 2015. After four months of siege, Kurdish-led fighters, many of them women, drive the Islamic
+      State out of Kobanî with American air support. Turkish tanks watched from the border hill. Four years
+      later, the Americans pull back and Turkey moves in. What is this project?
+    why: This asks how you judge the self-administration of North and East Syria.
+    options:
+      - id: confederalism
+        text: A revolution of communes and women's liberation, without a nation-state. Something new.
+        evidence: [{position: hist.rojava.democratic-confederalism, w: 3}]
+      - id: self-rule
+        text: A people denied a state for a century, finally ruling themselves.
+        evidence: [{position: hist.rojava.kurdish-self-determination, w: 3}]
+      - id: proxy
+        text: An American-protected project that carved up Syria. Without the air support there is nothing.
+        evidence: [{position: hist.rojava.separatist-proxy, w: 3}]
+      - id: pkk
+        text: The PKK's Syrian branch, on Turkey's border. Turkey was right to watch.
+        evidence: [{position: hist.rojava.pkk-threat, w: 3}]
+      - id: one-party
+        text: Admirable in places, but one party runs it, and Arab towns and rival Kurds have complaints.
+        evidence: [{position: hist.rojava.one-party-autonomy, w: 3}]
+      - id: betrayed
+        text: The people who beat the Islamic State, then were dropped when they were no longer useful.
+        evidence: [{position: hist.rojava.heroes-betrayed, w: 3}]
+
+  - id: probe.hist.rojava.qamishli-and-border
+    type: voices
+    title: Either side of the wire
+    text: Two people who live a few kilometers apart, across the Turkish-Syrian border, describe the self-administration. Who is right?
+    voices:
+      - {name: "Hevin, a commune member in Qamishli", says: "Every council has a woman co-chair. Arabs, Kurds and Syriacs sit in the same assembly. Nobody here waited for a state to give us this."}
+      - {name: "Ahmet, a shopkeeper in Nusaybin", says: "Their posters show the same leader as the PKK, whose war killed forty thousand in Turkey. Call it what you like. They are the same organization."}
+    why: This asks how you read the self-administration, through two neighbors across a border.
+    options:
+      - id: hevin
+        text: Hevin. It is a revolution of communes and women's liberation.
+        cause: ideas
+        evidence: [{position: hist.rojava.democratic-confederalism, w: 3}]
+      - id: ahmet
+        text: Ahmet. It is a branch of the PKK and a threat to Turkey.
+        cause: interests
+        evidence: [{position: hist.rojava.pkk-threat, w: 3}]
+      - id: nation
+        text: Both miss the main thing. A stateless people won self-rule.
+        cause: ideas
+        evidence: [{position: hist.rojava.kurdish-self-determination, w: 3}]
+      - id: proxy
+        text: Both miss the American bases. Syria was partitioned and this was the price.
+        cause: interests
+        evidence: [{position: hist.rojava.separatist-proxy, w: 3}]
+      - id: one-party
+        text: Hevin's assemblies are real, and one party still holds the guns and conscripts the sons.
+        cause: structures
+        evidence: [{position: hist.rojava.one-party-autonomy, w: 3}]
+      - id: dropped
+        text: Both miss the eleven thousand who died fighting the Islamic State for everyone, then were left alone.
+        cause: individuals
+        evidence: [{position: hist.rojava.heroes-betrayed, w: 3}]
+
+  - id: probe.hist.rojava.why-dropped
+    type: explanation
+    title: Armed, then dropped
+    text: >
+      The United States armed and protected the Kurdish-led forces from 2014, then in October 2019 pulled its
+      troops back from the border as Turkey invaded. What, above all, explains that turn?
+    why: This asks how you explain the fate of the self-administration, and what kind of cause you reach for.
+    options:
+      - id: useful
+        text: They were useful against the Islamic State. Once it was beaten, they were expendable.
+        cause: interests
+        evidence: [{position: hist.rojava.heroes-betrayed, w: 3}]
+      - id: lever
+        text: It was always about holding a piece of Syria against Damascus and Iran. Plans changed.
+        cause: interests
+        evidence: [{position: hist.rojava.separatist-proxy, w: 3}]
+      - id: ally
+        text: Turkey is a NATO ally fighting a real insurgency. Arming the PKK's cousins was the mistake.
+        cause: interests
+        evidence: [{position: hist.rojava.pkk-threat, w: 3}]
+      - id: no-empire
+        text: No empire wants a revolution without a state. It was tolerated, never wanted.
+        cause: structures
+        evidence: [{position: hist.rojava.democratic-confederalism, w: 3}]
+      - id: kurds
+        text: Great powers have never backed Kurdish self-rule for long. 1920, 1975, 1991, 2019.
+        cause: structures
+        evidence: [{position: hist.rojava.kurdish-self-determination, w: 3}]
+      - id: party
+        text: Washington dealt with the party that held the guns, not the communes, and parties can be traded.
+        cause: structures
+        evidence: [{position: hist.rojava.one-party-autonomy, w: 3}]
+
+  # ---------------- hist.zapatistas ----------------
+  - id: probe.hist.zapatistas.new-year-1994
+    type: verdict
+    title: New Year, 1994
+    text: >
+      1 January 1994, the day the North American free trade agreement takes effect. Masked indigenous rebels
+      take San Cristóbal de las Casas and four other towns in Chiapas. Their first statement says "Enough!"
+      and calls the trade deal a death sentence. Twelve days of fighting follow, then a ceasefire. What is
+      this?
+    why: This asks how you judge the Zapatista movement.
+    options:
+      - id: autonomy
+        text: A new kind of politics. They will change their world without trying to take the state.
+        evidence: [{position: hist.zapatistas.autonomy-without-power, w: 3}]
+      - id: land
+        text: Indigenous people rising for their land and their dignity, against the trade deal and five hundred years.
+        evidence: [{position: hist.zapatistas.indigenous-land-and-dignity, w: 3}]
+      - id: dead-end
+        text: Brave and right, but a movement that will not take power will end up guarding a few valleys.
+        evidence: [{position: hist.zapatistas.dead-end-without-power, w: 3}]
+      - id: unnecessary
+        text: An armed rising Mexico did not need. The system was opening. Elections would come.
+        evidence: [{position: hist.zapatistas.unnecessary-insurgency, w: 3}]
+      - id: agitators
+        text: Outside radicals and activist priests using indigenous grievances for their own politics.
+        evidence: [{position: hist.zapatistas.outside-agitators, w: 3}]
+
+  - id: probe.hist.zapatistas.thirty-years
+    type: line
+    title: Thirty years of choices
+    text: >
+      Here are the Zapatistas' big choices, in order. Read down the list. Where do you stop agreeing with
+      them?
+    cases:
+      - 1994 Take up arms on the day the trade deal starts
+      - 1996 Sign accords on indigenous rights, which Congress never enacts
+      - 2001 March to Mexico City to address Congress
+      - 2003 Build their own councils, schools and clinics; refuse all government money
+      - 2006 Refuse to back any candidate for president
+      - 2023 Dissolve their councils into smaller community governments
+    why: This asks where you draw the line on the Zapatistas, and so what you think they were for.
+    options:
+      - id: none-arms
+        text: At the first line. The guns were never justified. Mexico was opening up.
+        evidence: [{position: hist.zapatistas.unnecessary-insurgency, w: 3}]
+      - id: none-outsiders
+        text: At the first line. Ordinary farmers did not plan that. Someone from outside did.
+        evidence: [{position: hist.zapatistas.outside-agitators, w: 3}]
+      - id: all
+        text: I don't stop. Refusing the state and governing themselves is the whole point.
+        evidence: [{position: hist.zapatistas.autonomy-without-power, w: 3}]
+      - id: twenty-o-six
+        text: At 2006. Building their own was right. Refusing to fight for power in Mexico City was the dead end.
+        evidence: [{position: hist.zapatistas.dead-end-without-power, w: 3}]
+      - id: land
+        text: The first two lines are what matter, land and rights. After that it is their business, not mine.
+        evidence: [{position: hist.zapatistas.indigenous-land-and-dignity, w: 3}]
+
+  - id: probe.hist.zapatistas.two-visitors
+    type: voices
+    title: Two visitors
+    text: Two people come back from Chiapas with opposite reports. Who is right?
+    voices:
+      - {name: "Lucía, a student from Mexico City", says: "They run their own schools and clinics, rotate every office, and nobody gets paid to govern. I've never seen anything like it."}
+      - {name: "Héctor, a lawyer in Tuxtla", says: "Thirty years later, Chiapas is still the poorest state, the cartels move in, and the comandantes are still masked. What did it win?"}
+    why: This asks how you weigh the Zapatistas, through two people who went to see.
+    options:
+      - id: lucia
+        text: Lucía. Autonomy from below is the achievement.
+        cause: ideas
+        evidence: [{position: hist.zapatistas.autonomy-without-power, w: 3}]
+      - id: hector-dead-end
+        text: Héctor. Heroic, but without power you cannot protect even your own valleys.
+        cause: structures
+        evidence: [{position: hist.zapatistas.dead-end-without-power, w: 3}]
+      - id: hector-unneeded
+        text: Héctor. The guns won nothing that votes and courts could not have.
+        cause: individuals
+        evidence: [{position: hist.zapatistas.unnecessary-insurgency, w: 3}]
+      - id: land
+        text: Both miss the land. They took back ranchers' land across Chiapas and farmed it. That was the point.
+        cause: interests
+        evidence: [{position: hist.zapatistas.indigenous-land-and-dignity, w: 3}]
+      - id: masks
+        text: Lucía's report shows who the audience is. City radicals and foreign activists, not the villagers.
+        cause: individuals
+        evidence: [{position: hist.zapatistas.outside-agitators, w: 3}]
