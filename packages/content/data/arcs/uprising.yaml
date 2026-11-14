@@ -67,18 +67,18 @@ nodes:
     title: At the gate
     text: Day three. Two hundred people at the station gate. Two of them are arguing about what comes next. Who's right?
     voices:
-      - {name: "Wanjiru, a church elder", says: "No stones. The moment a stone flies, Brian becomes a riot, and the man who killed him walks free."}
-      - {name: "Otieno, a boda rider", says: "We have marched politely for every Brian for twenty years. Polite marches get us funerals. They only count us when something burns."}
+      - {name: "Mama Njeri, a church elder", says: "No stones. The moment a stone flies, Brian becomes a riot, and the man who killed him walks free."}
+      - {name: "Kevo, a boda rider", says: "We have marched politely for every Brian for twenty years. Polite marches get us funerals. They only count us when something burns."}
     why: This asks when, if ever, you think force against the state is justified.
     options:
       - id: wanjiru
-        text: Wanjiru. Violence hands them the story and the excuse.
+        text: Mama Njeri. Violence hands them the story and the excuse.
         cause: ideas
         evidence:
           - {position: violence.political.never, w: 3}
         next: arc.uprising.03
       - id: otieno
-        text: Otieno. A state that kills its own people can't demand they stay polite.
+        text: Kevo. A state that kills its own people can't demand they stay polite.
         cause: interests
         evidence:
           - {position: violence.political.resistance-to-tyranny, w: 3}

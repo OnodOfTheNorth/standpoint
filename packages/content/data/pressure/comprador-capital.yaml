@@ -6,14 +6,14 @@ nodes:
     tests: property.land.national-domain
     gate: {classIs: [comprador-capital]}
     text: >
-      You own 12% of the country's biggest copper mine; a foreign group owns the rest, and your firm brokers
+      You own 12% of the country's biggest nickel mine; a foreign group owns the rest, and your firm brokers
       its contracts. The new government nationalizes the mine, offering book value, about a third of market,
       paid over fifteen years. The foreign group asks you to join its arbitration claim in Washington. The
       miners' union is marching in support of the law.
     why: This sets your stake against what you hold about who owns what is under the ground.
     premises:
       - id: bought-fairly
-        text: The premise that the copper belongs to anyone but whoever bought the rights to dig it.
+        text: The premise that the nickel belongs to anyone but whoever bought the rights to dig it.
         evidence: [{position: property.land.freehold, w: 2}, {position: property.private.natural-right, w: 1}]
     conditions:
       - id: if-run-well
