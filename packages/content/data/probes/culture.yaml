@@ -1,0 +1,374 @@
+nodes:
+  # ---------------- body.autonomy ----------------
+  - id: probe.body.autonomy.weeks
+    type: line
+    title: Where the line falls
+    text: >
+      Read down the list. Where, if anywhere, should the law stop allowing an abortion?
+    cases:
+      - Six weeks, after a failed contraceptive
+      - Ten weeks, after a rape
+      - Twelve weeks, because the couple cannot afford another child
+      - Twenty weeks, after a diagnosis of serious disability
+      - Twenty-four weeks, because the woman has changed her mind
+    why: This asks whose decision abortion is, and on what grounds, by where you draw the line.
+    options:
+      - id: none
+        text: Before the first case. A human life begins at conception, and the law must protect it.
+        evidence: [{position: body.autonomy.life-from-conception, w: 3}]
+      - id: early
+        text: Somewhere in the middle. Early and for serious reasons, yes. The later it gets, the more it weighs.
+        evidence: [{position: body.autonomy.graduated-sanctity, w: 3}]
+      - id: hers
+        text: No line for the law to draw. She decides, at every case on the list.
+        evidence: [{position: body.autonomy.womans-choice, w: 3}]
+      - id: afford
+        text: Look at case three. Nobody should end a pregnancy because they can't afford a child. Fix that too.
+        evidence: [{position: body.autonomy.reproductive-justice, w: 3}]
+      - id: public
+        text: Wherever the line is, it should be free in a public hospital. Otherwise only rich women have the right.
+        evidence: [{position: body.autonomy.free-legal-public, w: 3}]
+      - id: nation
+        text: The country's birth rate is the government's business. Set the law by what the nation needs.
+        evidence: [{position: body.autonomy.national-need, w: 3}]
+      - id: private
+        text: I wouldn't, but it's not mine to say, and it's not the government's either.
+        evidence: [{position: body.autonomy.private-matter, w: 3}]
+
+  - id: probe.body.autonomy.referendum
+    type: scene
+    title: The ballot
+    text: >
+      Your country holds a referendum on removing the constitutional ban on abortion. Your mother is
+      canvassing for no, your best friend for yes. The polling station is the school you went to. You have
+      the pencil in your hand.
+    why: This asks what you think about abortion, and on what grounds.
+    options:
+      - id: no-life
+        text: No. It's a child, and the constitution is there to protect the weakest.
+        evidence: [{position: body.autonomy.life-from-conception, w: 3}]
+      - id: yes-limits
+        text: Yes, with limits. Early on and for good reasons, it should be legal. Late on, much harder.
+        evidence: [{position: body.autonomy.graduated-sanctity, w: 3}]
+      - id: yes-body
+        text: Yes. It's her body. The state has no business in it.
+        evidence: [{position: body.autonomy.womans-choice, w: 3}]
+      - id: yes-and
+        text: Yes, and that's the easy part. Women also need the means to have the children they want.
+        evidence: [{position: body.autonomy.reproductive-justice, w: 3}]
+      - id: yes-free
+        text: Yes, and next campaign for it to be free in public clinics. Legal and unaffordable is half a right.
+        evidence: [{position: body.autonomy.free-legal-public, w: 3}]
+      - id: births
+        text: No. We have the lowest birth rate in our history. The country needs children more than referendums.
+        evidence: [{position: body.autonomy.national-need, w: 3}]
+      - id: stay-out
+        text: Yes, though I'd never have one. Keep the government out of it.
+        evidence: [{position: body.autonomy.private-matter, w: 3}]
+
+  - id: probe.body.autonomy.voices
+    type: voices
+    title: Three on the ward
+    text: >
+      A radio program visits a maternity hospital in Buenos Aires, a year after Argentina legalized abortion.
+      Three people talk to the reporter. Who is closest to right?
+    voices:
+      - {name: "A gynecologist", says: "Before, I treated women bleeding from back-street abortions. Now they come at eight weeks and go home. It's free, and it's safe."}
+      - {name: "A hospital chaplain", says: "Every ultrasound on this ward shows a child. Calling one of them a right doesn't change what it shows."}
+      - {name: "A midwife", says: "Half the women who come in for one would keep the baby if they had a flat and a job. Nobody asks them that."}
+    why: This asks what you think about abortion, through three people who work with it.
+    options:
+      - id: doctor
+        text: The gynecologist. Free, legal and public is what makes it real.
+        cause: structures
+        evidence:
+          - {position: body.autonomy.free-legal-public, w: 3}
+          - {position: body.autonomy.womans-choice, w: 1}
+      - id: chaplain
+        text: The chaplain. A child is a child from the start.
+        cause: divine
+        evidence: [{position: body.autonomy.life-from-conception, w: 3}]
+      - id: midwife
+        text: The midwife. The right to have children matters as much as the right not to.
+        cause: interests
+        evidence: [{position: body.autonomy.reproductive-justice, w: 3}]
+      - id: graded
+        text: The doctor and the chaplain are both partly right. Eight weeks and eight months are not the same thing.
+        cause: ideas
+        evidence: [{position: body.autonomy.graduated-sanctity, w: 3}]
+      - id: choice
+        text: All three are talking about the woman as if it were their decision. It's hers.
+        cause: individuals
+        evidence: [{position: body.autonomy.womans-choice, w: 3}]
+      - id: nation
+        text: All three forget the country. With births collapsing, the state has to care how many children are born.
+        cause: structures
+        evidence: [{position: body.autonomy.national-need, w: 3}]
+      - id: private
+        text: Should this even be on the radio? It's between a woman and her doctor.
+        cause: individuals
+        evidence: [{position: body.autonomy.private-matter, w: 3}]
+
+  # ---------------- race.nature ----------------
+  - id: probe.race.nature.wealth-gap
+    type: explanation
+    title: The wealth gap
+    text: >
+      In the United States the typical white household holds roughly six times the wealth of the typical
+      Black household. The gap has barely moved in forty years. What explains it?
+    why: This asks what you think race is and what explains racial inequality, and what kind of cause you reach for.
+    options:
+      - id: prejudice
+        text: Prejudice. Bosses, landlords and loan officers who still treat Black people worse.
+        cause: individuals
+        evidence: [{position: race.nature.prejudice, w: 3}]
+      - id: structural
+        text: Rules that still work against Black families even when no one involved is a racist. Zoning, school funding, credit scores.
+        cause: structures
+        evidence: [{position: race.nature.structural, w: 3}]
+      - id: capitalism
+        text: Slavery made race to justify cheap labor, and the economy built on it still ranks people.
+        cause: structures
+        evidence: [{position: race.nature.racial-capitalism, w: 3}]
+      - id: class
+        text: Mostly class. Poor white families are stuck too; race gets the headlines, class does the work.
+        cause: interests
+        evidence: [{position: race.nature.class-first, w: 3}]
+      - id: culture
+        text: Family structure, culture and decades of bad policy. Racism today explains less than people think.
+        cause: culture
+        evidence: [{position: race.nature.colorblind, w: 3}]
+      - id: genes
+        text: Partly inherited differences between groups. Saying so is unpopular, not false.
+        cause: nature
+        evidence: [{position: race.nature.hereditarian, w: 3}]
+      - id: sin
+        text: A sin against the one human family, compounded over generations and never repented.
+        cause: divine
+        evidence: [{position: race.nature.one-human-family, w: 3}]
+
+  - id: probe.race.nature.callbacks
+    type: scene
+    title: The two names
+    text: >
+      You run hiring at a logistics firm in São Paulo. An audit sends out identical CVs under different names.
+      The ones with names from the white, wealthy neighborhoods get many more callbacks than the ones that
+      sound Black and from the periphery. Your staff look at you. What does the audit show?
+    why: This asks what you think racial inequality is and where it comes from.
+    options:
+      - id: biased
+        text: Some of my recruiters are biased. Find them, train them or fire them.
+        evidence: [{position: race.nature.prejudice, w: 3}]
+      - id: system
+        text: Probably not one bad recruiter. Our filters, referrals and postcodes do it without anyone meaning to.
+        evidence: [{position: race.nature.structural, w: 3}]
+      - id: cheap
+        text: It shows who the economy is built to keep cheap. The periphery is where the cheap labor lives, by design.
+        evidence: [{position: race.nature.racial-capitalism, w: 3}]
+      - id: class
+        text: Look again. The audit tested neighborhoods as much as color. It's the poor we screen out.
+        evidence: [{position: race.nature.class-first, w: 3}]
+      - id: blind
+        text: Strip the names and addresses off every CV. Judge people as individuals and the problem goes.
+        evidence: [{position: race.nature.colorblind, w: 3}]
+      - id: brazil
+        text: Careful with American categories. We're a mixed people. Fix the hiring, but don't split the country by color.
+        evidence: [{position: race.nature.mixed-nation, w: 3}]
+      - id: one-family
+        text: It shows a sin we have to repent of. Every one of those applicants bears God's image.
+        evidence: [{position: race.nature.one-human-family, w: 3}]
+
+  - id: probe.race.nature.voices
+    type: voices
+    title: Carnival week
+    text: >
+      In Salvador da Bahia during carnival, three people argue on a crowded terrace about whether Brazil has a
+      race problem. Who is right?
+    voices:
+      - {name: "Seu Antônio, a retired schoolteacher", says: "We are all mixed here. Look at this street. Race is an American import; we are one Brazilian people."}
+      - {name: "Luana, a Black student activist", says: "Look who is dancing and who owns the boxes above the street. The color line runs through every bank and every police raid."}
+      - {name: "Pastor Gilberto", says: "God made one human family. Racism is a sin, and the answer is in the heart before it is in the law."}
+    why: This asks what you think race is, through three people in one of the most mixed countries on earth.
+    options:
+      - id: antonio
+        text: Seu Antônio. We are a mixed nation; dividing it by race divides it for nothing.
+        cause: culture
+        evidence: [{position: race.nature.mixed-nation, w: 3}]
+      - id: luana
+        text: Luana. The color line is built into the institutions.
+        cause: structures
+        evidence: [{position: race.nature.structural, w: 3}]
+      - id: gilberto
+        text: Pastor Gilberto. One human family, and racism is a sin.
+        cause: divine
+        evidence: [{position: race.nature.one-human-family, w: 3}]
+      - id: slavery
+        text: All three skip why race exists at all. It was made to rank labor, from the sugar plantations on.
+        cause: structures
+        evidence: [{position: race.nature.racial-capitalism, w: 3}]
+      - id: poor
+        text: All three skip the poor of every color. Class does more than race.
+        cause: interests
+        evidence: [{position: race.nature.class-first, w: 3}]
+      - id: people
+        text: Luana's boxes and raids are individual prejudice. Punish it where you find it.
+        cause: individuals
+        evidence: [{position: race.nature.prejudice, w: 3}]
+      - id: neither
+        text: Stop counting color. Treat each person as a person, and the gaps follow schooling and work.
+        cause: culture
+        evidence: [{position: race.nature.colorblind, w: 3}]
+      - id: nature
+        text: All three avoid the uncomfortable possibility that some group differences are partly inherited.
+        cause: nature
+        evidence: [{position: race.nature.hereditarian, w: 3}]
+
+  # ---------------- racism.remedy ----------------
+  - id: probe.racism.remedy.fund
+    type: allocation
+    title: The equality fund
+    text: >
+      A new government sets aside a large fund to close racial gaps in income, health and housing. You chair
+      the committee that splits it. You have ten points.
+    why: This asks what you think would end racial inequality, by where you put the money.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: law
+          text: Inspectors and courts to enforce anti-discrimination law
+          evidence: [{position: racism.remedy.equal-treatment-law, w: 2}]
+        - id: quotas
+          text: Reserved places in universities and public jobs
+          evidence: [{position: racism.remedy.targeted-redress, w: 2}]
+        - id: reparations
+          text: Direct payments to the descendants of the enslaved and the dispossessed
+          evidence: [{position: racism.remedy.reparations, w: 2}]
+        - id: universal
+          text: Free health care and public housing for every low-income family, whatever their color
+          evidence: [{position: racism.remedy.universal-programs, w: 2}]
+        - id: own
+          text: Community-owned banks, land trusts and schools run by the communities themselves
+          evidence: [{position: racism.remedy.self-determination, w: 2}]
+        - id: truth
+          text: A truth commission, a national apology and memorials
+          evidence: [{position: racism.remedy.reconciliation, w: 2}]
+        - id: growth
+          text: Return it as tax cuts and fewer business licenses in poor neighborhoods
+          evidence: [{position: racism.remedy.colorblind-markets, w: 2}]
+        - id: organize
+          text: Workers' and tenants' organizing to change who owns what. Nothing short of that will last
+          evidence: [{position: racism.remedy.end-racial-capitalism, w: 2}]
+    options:
+      - {id: done, text: Done}
+
+  - id: probe.racism.remedy.seat
+    type: tradeoff
+    title: The last seat
+    text: >
+      One place left in the medical faculty of a federal university in Brazil. Under the quota law it is
+      reserved for a Black student from a public school who scored 712. A white student from a private school
+      scored 748 and missed out. Her parents are suing. What is right?
+    why: This asks what you think would end racial inequality, through one contested place.
+    premises:
+      - id: schooling-only
+        text: The premise that score gaps between groups come from schooling alone.
+        evidence:
+          - {position: race.nature.hereditarian, w: 2}
+          - {position: race.nature.colorblind, w: 1}
+      - id: one-people
+        text: The premise that Brazilians can be sorted into Black and white at all. We are a mixed people.
+        evidence: [{position: race.nature.mixed-nation, w: 3}]
+    options:
+      - id: quota
+        text: The quota. A 36-point gap is the price of a century of unequal schools, and worth paying.
+        evidence: [{position: racism.remedy.targeted-redress, w: 3}]
+      - id: equal
+        text: The higher score. Equal treatment means no one wins or loses a seat for their color.
+        evidence: [{position: racism.remedy.equal-treatment-law, w: 3}]
+      - id: markets
+        text: The higher score, and stop trying to engineer outcomes. Growth and choice will lift the rest.
+        evidence: [{position: racism.remedy.colorblind-markets, w: 3}]
+      - id: universal
+        text: Wrong fight. Fix the public schools for every poor kid and you won't need to fight over one seat.
+        evidence: [{position: racism.remedy.universal-programs, w: 3}]
+      - id: owed
+        text: The seat is the least of it. What is owed for slavery is a debt, not a quota.
+        evidence: [{position: racism.remedy.reparations, w: 3}]
+      - id: own
+        text: Build our own universities and hospitals. Don't beg for seats in theirs.
+        evidence: [{position: racism.remedy.self-determination, w: 3}]
+      - id: system
+        text: Two girls fighting over one seat is the system working as designed. Scarcity is the problem.
+        evidence: [{position: racism.remedy.end-racial-capitalism, w: 3}]
+      - id: talk
+        text: Get the two families in a room. Healing starts when people hear each other.
+        evidence: [{position: racism.remedy.reconciliation, w: 3}]
+
+  - id: probe.racism.remedy.trc
+    type: verdict
+    title: Cape Town, 1996
+    text: >
+      South Africa, 1996. The Truth and Reconciliation Commission offers amnesty to those who confess
+      political crimes in full. Families hear how their children died. The land, the mines and the banks stay
+      where they were. Where do you stand?
+    why: This asks what you think would end racial inequality, through a real choice a country made.
+    options:
+      - id: heal
+        text: With the Commission. Truth and forgiveness spared the country a war.
+        evidence: [{position: racism.remedy.reconciliation, w: 3}]
+      - id: law
+        text: Equal rights in law came first, and they were the real achievement.
+        evidence: [{position: racism.remedy.equal-treatment-law, w: 3}]
+      - id: land
+        text: Against. Confession without land is a receipt for the theft. The wealth has to be returned.
+        evidence: [{position: racism.remedy.reparations, w: 3}]
+      - id: preference
+        text: Fine as far as it goes. Now hire, promote and award contracts to the people kept out for a century.
+        evidence: [{position: racism.remedy.targeted-redress, w: 3}]
+      - id: welfare
+        text: Skip the hearings and build houses, clinics and grants for every poor family.
+        evidence: [{position: racism.remedy.universal-programs, w: 3}]
+      - id: capital
+        text: A deal to keep the owners owning. Apartheid ended; the economy it built didn't.
+        evidence: [{position: racism.remedy.end-racial-capitalism, w: 3}]
+      - id: open
+        text: Let the economy open up and grow. Jobs will do what commissions can't.
+        evidence: [{position: racism.remedy.colorblind-markets, w: 3}]
+      - id: power
+        text: Black South Africans should build their own economic power and stop waiting on anyone's conscience.
+        evidence: [{position: racism.remedy.self-determination, w: 3}]
+
+  # ---------------- caste.question ----------------
+  - id: probe.caste.question.wedding
+    type: scene
+    title: The wedding
+    text: >
+      Your cousin in Pune wants to marry a man from a Dalit family. Her father refuses to attend. The family
+      WhatsApp group is on fire, and someone tags you. What do you write?
+    why: This asks what you think caste is and how it ends.
+    options:
+      - id: annihilate
+        text: Good for her. Marrying across caste is how it dies. The scriptures that ranked us should go with it.
+        evidence: [{position: caste.question.annihilation, w: 3}]
+      - id: heart
+        text: Uncle, untouchability is a sin. Change your heart. Duties can differ without anyone being lower.
+        evidence: [{position: caste.question.purify-hinduism, w: 3}]
+      - id: unity
+        text: We are all Hindus. Caste divides us when we should be one. Go to the wedding.
+        evidence: [{position: caste.question.hindu-unity, w: 3}]
+      - id: order
+        text: Her father has a point. Every community has its duties, and marriage keeps them.
+        evidence: [{position: caste.question.sacred-order, w: 3}]
+      - id: land
+        text: Weddings won't do it. As long as one caste owns the land and the other works it, caste stays.
+        evidence: [{position: caste.question.class-and-caste, w: 3}]
+      - id: law
+        text: She's an adult and the Constitution is on her side. If anyone threatens them, call the police.
+        evidence: [{position: caste.question.reservations-and-law, w: 3}]
+      - id: money
+        text: He runs a business and earns more than all of us. Money is dissolving caste faster than any law.
+        evidence: [{position: caste.question.market-dissolves, w: 3}]
+      - id: british
+        text: Half of what uncle calls tradition was frozen into law by British census clerks.
+        evidence: [{position: caste.question.colonial-hardening, w: 3}]

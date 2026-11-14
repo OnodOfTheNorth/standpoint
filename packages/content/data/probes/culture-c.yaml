@@ -1,0 +1,465 @@
+nodes:
+  # ---------------- family.form ----------------
+  - id: probe.family.form.three-parents
+    type: scene
+    title: Three on the certificate
+    text: >
+      Two women and their close friend, a man, are raising a child together. They ask the registry office to
+      put all three names on the birth certificate. The clerk refers it upward, and the case lands on your
+      desk at the ministry. What do you recommend?
+    why: This asks what you think the family is for and what form the law should recognize.
+    options:
+      - id: natural
+        text: No. A child has a mother and a father. The law should recognize the family as it is, not as adults wish it.
+        evidence: [{position: family.form.natural-institution, w: 3}]
+      - id: chosen
+        text: Yes. A family is the committed people raising a child. The law should recognize what's there.
+        evidence: [{position: family.form.chosen-plural, w: 3}]
+      - id: contract
+        text: Get the state out. Let them sign whatever contract they like and register it like any other.
+        evidence: [{position: family.form.private-contract, w: 3}]
+      - id: care
+        text: Names matter less than nurseries. If childcare were public, nobody would need three signatures to get by.
+        evidence: [{position: family.form.socialize-care, w: 3}]
+      - id: abolish
+        text: Yes, and why stop at three? Children belong to the whole community, not to owners on a form.
+        evidence: [{position: family.form.abolition, w: 3}]
+      - id: kin
+        text: Ask what their parents and grandparents say. A child belongs to a lineage, not just to whoever signs.
+        evidence: [{position: family.form.kin-and-lineage, w: 3}]
+      - id: births
+        text: Whatever raises the birth rate. The country needs children, and these three are having one.
+        evidence: [{position: family.form.nation-continuity, w: 3}]
+
+  - id: probe.family.form.marrying-less
+    type: explanation
+    title: Fewer weddings
+    text: >
+      From Seoul to Rome to Santiago, people marry later, marry less and have fewer children than their
+      parents did. South Korea now has fewer than one birth per woman. Why is the family changing like this?
+    why: This asks what you think the family is for, and what kind of cause you reach for.
+    options:
+      - id: decay
+        text: We stopped treating marriage as sacred and permanent. Take away the meaning and the institution goes.
+        cause: culture
+        evidence: [{position: family.form.natural-institution, w: 3}]
+      - id: choice
+        text: People have more choices, and many choose other kinds of family. That's fine.
+        cause: ideas
+        evidence: [{position: family.form.chosen-plural, w: 3}]
+      - id: state
+        text: Governments tangled marriage up in tax, benefits and courts until it became a liability. Get them out.
+        cause: structures
+        evidence: [{position: family.form.private-contract, w: 3}]
+      - id: work
+        text: Rent, sixty-hour weeks and no childcare. Make care public and people will have the families they want.
+        cause: structures
+        evidence: [{position: family.form.socialize-care, w: 3}]
+      - id: escape
+        text: Women, above all, are escaping a unit that ran on their unpaid labor. Good.
+        cause: interests
+        evidence: [{position: family.form.abolition, w: 3}]
+      - id: lineage
+        text: Young people moved away from their elders. Without the extended family, raising children alone is too hard.
+        cause: culture
+        evidence: [{position: family.form.kin-and-lineage, w: 3}]
+      - id: nation
+        text: A nation that stops having children stops existing. The state has failed to make it a priority.
+        cause: structures
+        evidence: [{position: family.form.nation-continuity, w: 3}]
+
+  - id: probe.family.form.voices
+    type: voices
+    title: The family dinner
+    text: >
+      A family dinner in Accra. The talk turns to whether the young cousins should marry, and how. Three
+      relatives hold forth. Who is right?
+    voices:
+      - {name: "Grandpa Kwame", says: "Marriage joins two families, not two people. Your ancestors and your aunties have a say."}
+      - {name: "Akosua, a lawyer", says: "Adults choose their partners and their families. The state's job is to treat every choice the same."}
+      - {name: "Uncle Yaw, a deacon", says: "One man, one woman, open to children, for life. That's not our custom; it's God's design."}
+    why: This asks what you think the family is for, through three relatives who disagree.
+    options:
+      - id: kwame
+        text: Grandpa Kwame. The family is a lineage with duties to the living and the dead.
+        cause: culture
+        evidence: [{position: family.form.kin-and-lineage, w: 3}]
+      - id: akosua
+        text: Akosua. Any committed bond adults choose.
+        cause: ideas
+        evidence: [{position: family.form.chosen-plural, w: 3}]
+      - id: yaw
+        text: Uncle Yaw. Marriage of man and woman, prior to the state.
+        cause: divine
+        evidence: [{position: family.form.natural-institution, w: 3}]
+      - id: contract
+        text: Akosua is nearly right. The state shouldn't treat choices the same; it shouldn't be involved at all.
+        cause: individuals
+        evidence: [{position: family.form.private-contract, w: 3}]
+      - id: kitchen
+        text: Look who cooked this dinner. Socialize that work and every one of these families gets freer.
+        cause: structures
+        evidence: [{position: family.form.socialize-care, w: 3}]
+      - id: property
+        text: All three are arguing about inheritance. The family as a private unit of property should go.
+        cause: structures
+        evidence: [{position: family.form.abolition, w: 3}]
+      - id: nation
+        text: All three forget that families are how a nation continues.
+        cause: nature
+        evidence: [{position: family.form.nation-continuity, w: 3}]
+
+  # ---------------- gender.basis ----------------
+  - id: probe.gender.basis.housework
+    type: explanation
+    title: Who does the dishes
+    text: >
+      In nearly every country with time-use surveys, women do far more of the unpaid cooking, cleaning and
+      care than men, often twice as much or more, including where both work full time. Why?
+    why: This asks what you think gender is, and what kind of cause you reach for.
+    options:
+      - id: created
+        text: Men and women are made differently, with different callings. Roles follow.
+        cause: divine
+        evidence: [{position: gender.basis.created-order, w: 3}]
+      - id: learned
+        text: Girls are taught to notice the mess and boys are taught not to. It's learned, and it can be unlearned.
+        cause: culture
+        evidence: [{position: gender.basis.social-roles, w: 3}]
+      - id: hierarchy
+        text: Because gender is a hierarchy built on sex. The roles exist to keep women in their place.
+        cause: structures
+        evidence: [{position: gender.basis.sex-class, w: 3}]
+      - id: appropriation
+        text: Because men as a group take women's time and labor. That relation is what makes them "men" and "women".
+        cause: interests
+        evidence: [{position: gender.basis.class-relation, w: 3}]
+      - id: performed
+        text: People act out the parts they've seen performed, every day, until the parts look natural.
+        cause: culture
+        evidence: [{position: gender.basis.performative, w: 3}]
+      - id: evolved
+        text: Partly evolved preferences, partly custom. On average men and women want somewhat different things.
+        cause: nature
+        evidence: [{position: gender.basis.evolved-differences, w: 3}]
+      - id: colonial
+        text: In many places that division was pressed in by colonial law and missions. Before, work was divided otherwise.
+        cause: structures
+        evidence: [{position: gender.basis.colonial-imposition, w: 3}]
+
+  - id: probe.gender.basis.id-card
+    type: scene
+    title: The letter on the card
+    text: >
+      Parliament is debating whether adults may change the sex marker on their identity card by simple
+      declaration. You sit on the committee drafting the bill. The chair wants a one-line position from each
+      member by Friday.
+    why: This asks what you think gender is.
+    options:
+      - id: created
+        text: No change. People are created male and female, and the card should say which.
+        evidence: [{position: gender.basis.created-order, w: 3}]
+      - id: identity
+        text: Yes. Gender is who a person knows themselves to be, and the card should match.
+        evidence: [{position: gender.basis.identity, w: 3}]
+      - id: sex-real
+        text: No. Sex is real and women's rights rest on it. Keep the marker as sex, not identity.
+        evidence: [{position: gender.basis.sex-class, w: 3}]
+      - id: drop
+        text: Drop the marker altogether. The state has no business sorting bodies into two boxes.
+        evidence: [{position: gender.basis.performative, w: 3}]
+      - id: roles
+        text: Record sex, and fight the expectations attached to it instead. A man can wear a dress without becoming a woman.
+        evidence: [{position: gender.basis.social-roles, w: 3}]
+      - id: evolved
+        text: Keep it. Sex differences are real, average and evolved, and some policies need to know.
+        evidence: [{position: gender.basis.evolved-differences, w: 3}]
+      - id: third
+        text: Add a third option. Plenty of our own peoples had more than two before the colonizers' census did.
+        evidence: [{position: gender.basis.colonial-imposition, w: 3}]
+      - id: class
+        text: The card doesn't matter. End the relation that turns one sex into servants of the other and the categories fade.
+        evidence: [{position: gender.basis.class-relation, w: 3}]
+
+  - id: probe.gender.basis.voices
+    type: voices
+    title: The panel
+    text: >
+      A public panel in Lagos on what "gender" means turns into a row. Three speakers take the microphone.
+      Who is right?
+    voices:
+      - {name: "A Yoruba sociologist", says: "In old Oyo, rank came from seniority, not anatomy. 'Man' and 'woman' as ranks arrived with the British."}
+      - {name: "A pastor", says: "God made them male and female. Every culture knew it before professors complicated it."}
+      - {name: "A trans activist", says: "I know who I am. I'm not asking anyone to agree with a theory. I'm asking to be called by my name."}
+    why: This asks what you think gender is, through three speakers who disagree.
+    options:
+      - id: sociologist
+        text: The sociologist. The rigid binary was a colonial import.
+        cause: structures
+        evidence: [{position: gender.basis.colonial-imposition, w: 3}]
+      - id: pastor
+        text: The pastor. Male and female are given.
+        cause: divine
+        evidence: [{position: gender.basis.created-order, w: 3}]
+      - id: activist
+        text: The activist. Gender is a person's sense of self.
+        cause: individuals
+        evidence: [{position: gender.basis.identity, w: 3}]
+      - id: roles
+        text: All three mix sex and roles. Sex is biology; the roles on top are learned.
+        cause: culture
+        evidence: [{position: gender.basis.social-roles, w: 3}]
+      - id: sex-class
+        text: All three skip women. Sex is real, and gender is the system that ranks it.
+        cause: structures
+        evidence: [{position: gender.basis.sex-class, w: 3}]
+      - id: performed
+        text: The sociologist is closest. Sex itself is sorted by society, and the sorting can loosen.
+        cause: culture
+        evidence: [{position: gender.basis.performative, w: 3}]
+      - id: labor
+        text: All three skip work. Who cooks and who eats first made "men" and "women" what they are.
+        cause: interests
+        evidence: [{position: gender.basis.class-relation, w: 3}]
+      - id: evolution
+        text: All three skip biology. Evolved average differences are real, with wide overlap.
+        cause: nature
+        evidence: [{position: gender.basis.evolved-differences, w: 3}]
+
+  # ---------------- feminism.subordination ----------------
+  - id: probe.feminism.subordination.promotion
+    type: explanation
+    title: The top floor
+    text: >
+      At a big accounting firm in Frankfurt, half the new hires for twenty years have been women. On the top
+      floor, the partners, four in five are men. Why?
+    why: This asks what you think explains the subordination of women, and what kind of cause you reach for.
+    options:
+      - id: bias
+        text: Bias at promotion time and habits that steer women away from ambition. Fix the rules and it closes.
+        cause: culture
+        evidence: [{position: feminism.subordination.barriers-and-bias, w: 3}]
+      - id: choice
+        text: Many women choose time with children over eighty-hour weeks. That's not subordination.
+        cause: nature
+        evidence: [{position: feminism.subordination.evolved-preference, w: 3}]
+      - id: home
+        text: Look at what the partners' wives do at home. Their unpaid labor is what lets the men work eighty hours.
+        cause: interests
+        evidence: [{position: feminism.subordination.domestic-exploitation, w: 3}]
+      - id: norm
+        text: The whole career is built on a male life as the norm. Women are judged by how well they imitate it.
+        cause: ideas
+        evidence: [{position: feminism.subordination.erased-difference, w: 3}]
+      - id: market
+        text: The question is wrong. Feminism sold women the eighty-hour week as liberation. Capital won both ways.
+        cause: structures
+        evidence: [{position: feminism.subordination.market-uprooted-women, w: 3}]
+      - id: reproduction
+        text: Someone has to raise the next workers, and the firm counts on women doing it for free.
+        cause: structures
+        evidence: [{position: feminism.subordination.social-reproduction, w: 3}]
+      - id: patriarchy
+        text: Men protect men. The firm is one small piece of a system of male power.
+        cause: structures
+        evidence: [{position: feminism.subordination.patriarchy, w: 3}]
+
+  - id: probe.feminism.subordination.voices
+    type: voices
+    title: Women's day
+    text: >
+      On International Women's Day, three women speak at a rally in Lahore. Whose account of what holds women
+      back is closest?
+    voices:
+      - {name: "A garment worker", says: "I work ten hours sewing for a European brand, then cook and clean for six. Both bosses take my time."}
+      - {name: "A Quran teacher", says: "God created us equal in worth. Men wrote the commentaries that turned that into chains."}
+      - {name: "A homemaker from a village", says: "The factory took my daughters and gave them nothing. When we farmed together, women had a place."}
+    why: This asks what you think explains women's subordination, through three women at one rally.
+    options:
+      - id: worker
+        text: The garment worker. Capitalism and empire run on women's paid and unpaid work.
+        cause: structures
+        evidence:
+          - {position: feminism.subordination.social-reproduction, w: 2}
+          - {position: feminism.subordination.colonial-and-imperial, w: 2}
+      - id: husband
+        text: The garment worker's second boss is the point. Husbands take wives' unpaid labor.
+        cause: interests
+        evidence: [{position: feminism.subordination.domestic-exploitation, w: 3}]
+      - id: teacher
+        text: The Quran teacher. Patriarchal readings, not faith itself.
+        cause: ideas
+        evidence: [{position: feminism.subordination.patriarchal-reading, w: 3}]
+      - id: homemaker
+        text: The homemaker. Industry broke the household and uprooted women.
+        cause: structures
+        evidence: [{position: feminism.subordination.market-uprooted-women, w: 3}]
+      - id: difference
+        text: All three are asking to be treated like men. Women's difference should be valued, not erased.
+        cause: ideas
+        evidence: [{position: feminism.subordination.erased-difference, w: 3}]
+      - id: complement
+        text: All three describe men failing their duty. Men and women have different callings, equal in worth.
+        cause: divine
+        evidence: [{position: feminism.subordination.no-subordination-complementarity, w: 3}]
+      - id: preference
+        text: In rich countries with equal law, the gaps mostly reflect what women choose. Fix the law here and see.
+        cause: nature
+        evidence:
+          - {position: feminism.subordination.evolved-preference, w: 3}
+          - {position: feminism.subordination.barriers-and-bias, w: 1}
+
+  - id: probe.feminism.subordination.root
+    type: reason
+    title: The root
+    text: >
+      Suppose you could pull up one root and women's subordination, wherever it exists, would wither. Which
+      root would you pull?
+    why: This asks what you think explains the subordination of women, by the root you choose.
+    options:
+      - id: laws
+        text: The laws and prejudices that kept women out of schools, property and office.
+        cause: culture
+        evidence: [{position: feminism.subordination.barriers-and-bias, w: 3}]
+      - id: violence
+        text: Male control of women's bodies, enforced by violence.
+        cause: structures
+        evidence: [{position: feminism.subordination.patriarchy, w: 3}]
+      - id: property
+        text: Private property in production. Men needed heirs, and women became the means.
+        cause: structures
+        evidence: [{position: feminism.subordination.private-property, w: 3}]
+      - id: housework
+        text: Husbands' claim on wives' unpaid work.
+        cause: interests
+        evidence: [{position: feminism.subordination.domestic-exploitation, w: 3}]
+      - id: norm
+        text: A culture that treats men as the measure of a human being.
+        cause: ideas
+        evidence: [{position: feminism.subordination.erased-difference, w: 3}]
+      - id: market
+        text: The wage economy that pulled work out of the home and left women choosing between children and survival.
+        cause: structures
+        evidence: [{position: feminism.subordination.market-uprooted-women, w: 3}]
+      - id: none
+        text: The premise. In countries with equal law, what's left is mostly different choices.
+        cause: nature
+        evidence: [{position: feminism.subordination.evolved-preference, w: 3}]
+
+  # ---------------- sexuality.politics ----------------
+  - id: probe.sexuality.politics.line
+    type: line
+    title: How far the law goes
+    text: >
+      Read down the list. Where should the law stop?
+    cases:
+      - Sex between adult men or adult women is not a crime
+      - Nobody can be fired for being gay
+      - Same-sex couples can register a civil partnership
+      - Same-sex couples can marry
+      - Same-sex couples can adopt
+      - Schools teach that gay families are ordinary families
+    why: This asks what you think law and society should say about sexuality, by where you draw the line.
+    options:
+      - id: natural
+        text: Early. The law should uphold marriage as man and woman, whatever people do in private.
+        evidence: [{position: sexuality.politics.natural-law, w: 3}]
+      - id: all
+        text: All of it. Equal rights and protection, the whole list.
+        evidence: [{position: sexuality.politics.equal-rights, w: 3}]
+      - id: state-out
+        text: The state shouldn't license anyone's marriage or write the curriculum. Ban nothing, mandate nothing.
+        evidence: [{position: sexuality.politics.state-out, w: 3}]
+      - id: private
+        text: The first two. What people do at home is their business. The rest I'd rather not have pushed on me.
+        evidence: [{position: sexuality.politics.live-and-let-live, w: 3}]
+      - id: ours
+        text: Our country sets its own line, by its own morals, not by what Brussels or Washington demands.
+        evidence: [{position: sexuality.politics.national-tradition, w: 3}]
+      - id: template
+        text: Decriminalize, yes. But this list is a foreign template, and pushing it from outside gets people hurt.
+        evidence: [{position: sexuality.politics.anti-imperial-critique, w: 3}]
+      - id: normal
+        text: The whole list asks permission to be normal. Liberation means not needing the norm.
+        evidence: [{position: sexuality.politics.queer-liberation, w: 3}]
+      - id: deeper
+        text: All of it, and that's the start. People are only free to love when nobody's housing depends on a family.
+        evidence: [{position: sexuality.politics.capitalism-and-liberation, w: 3}]
+
+  - id: probe.sexuality.politics.pride
+    type: voices
+    title: The bank float
+    text: >
+      This year's Pride march in Johannesburg is led by a float sponsored by a bank. Three marchers argue on
+      the pavement. Who's right?
+    voices:
+      - {name: "Sipho, an accountant", says: "Twenty years ago I could have been fired. Today my bank sponsors the parade. That's progress, and I'll take it."}
+      - {name: "Nandi, a student", says: "The same bank evicts people in Soweto. Our parents marched against apartheid and police, not for a logo."}
+      - {name: "Thandi, a nurse", says: "I don't need a float or a slogan. I need to walk home from this without being attacked."}
+    why: This asks what you think law and society should say about sexuality, through three people at one march.
+    options:
+      - id: sipho
+        text: Sipho. Equal rights, won and protected. The rest is detail.
+        cause: ideas
+        evidence: [{position: sexuality.politics.equal-rights, w: 3}]
+      - id: nandi
+        text: Nandi. Sexual liberation is tied up with ending the system that sponsors the float.
+        cause: structures
+        evidence: [{position: sexuality.politics.capitalism-and-liberation, w: 3}]
+      - id: radical
+        text: Nandi, and further. The point was never to be respectable.
+        cause: ideas
+        evidence: [{position: sexuality.politics.queer-liberation, w: 3}]
+      - id: thandi
+        text: Thandi. Leave people alone and keep them safe. Nobody needs a parade.
+        cause: individuals
+        evidence: [{position: sexuality.politics.live-and-let-live, w: 3}]
+      - id: state
+        text: The bank can sponsor what it likes. The state should just stay out of people's bedrooms and businesses.
+        cause: individuals
+        evidence: [{position: sexuality.politics.state-out, w: 3}]
+      - id: morals
+        text: All three are wrong. Marriage and family have a nature, and the law should say so.
+        cause: nature
+        evidence: [{position: sexuality.politics.natural-law, w: 3}]
+      - id: export
+        text: A Western-branded parade gives every politician in the region an excuse. Oppose the repression and the branding both.
+        cause: structures
+        evidence: [{position: sexuality.politics.anti-imperial-critique, w: 3}]
+      - id: ours
+        text: Every nation has its own morals. This one should decide for itself, not copy Amsterdam.
+        cause: culture
+        evidence: [{position: sexuality.politics.national-tradition, w: 3}]
+
+  - id: probe.sexuality.politics.embassy
+    type: tradeoff
+    title: The embassy flag
+    text: >
+      A Western embassy in a country that criminalizes gay sex flies the rainbow flag and ties a trade deal to
+      repeal. Local gay activists are split; some say it makes them targets. The government calls it
+      colonialism. Whose side are you on?
+    why: This asks what you think law and society should say about sexuality, when rights and sovereignty collide.
+    options:
+      - id: embassy
+        text: The embassy. Human rights are universal, and pressure works.
+        evidence: [{position: sexuality.politics.equal-rights, w: 3}]
+      - id: government
+        text: The government. Each nation defends its own morality.
+        evidence: [{position: sexuality.politics.national-tradition, w: 3}]
+      - id: activists
+        text: The activists who say it makes them targets. Repeal the law, and keep the foreign flags out of it.
+        evidence: [{position: sexuality.politics.anti-imperial-critique, w: 3}]
+      - id: law
+        text: The law the government defends reflects the truth about marriage. Foreign money doesn't change that.
+        evidence: [{position: sexuality.politics.natural-law, w: 3}]
+      - id: nobody
+        text: Nobody's. No government, local or foreign, should be in anyone's bedroom.
+        evidence:
+          - {position: sexuality.politics.state-out, w: 2}
+          - {position: sexuality.politics.live-and-let-live, w: 1}
+      - id: below
+        text: Neither flag nor statute. The people living it get to define their own lives, outside both.
+        evidence: [{position: sexuality.politics.queer-liberation, w: 3}]
+      - id: trade
+        text: Watch the trade deal. The embassy cares about markets, not gay people. Liberation won't come in a contract.
+        evidence: [{position: sexuality.politics.capitalism-and-liberation, w: 3}]

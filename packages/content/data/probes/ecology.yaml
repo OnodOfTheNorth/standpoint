@@ -1,0 +1,440 @@
+nodes:
+  # ---------------- nature.value ----------------
+  - id: probe.nature.value.mangroves
+    type: scene
+    title: The mangroves
+    text: >
+      A company wants to clear forty hectares of mangrove on the coast of Ecuador for shrimp ponds. It
+      promises two hundred jobs. The fishing families say the mangrove is where the fish breed. You sit on
+      the provincial board that grants the permit.
+    why: This asks whether you think nature has value in itself, and what kind of value.
+    options:
+      - id: use
+        text: Grant it. Land is there to feed and employ people, and two hundred jobs is a lot of families.
+        evidence: [{position: nature.value.for-human-use, w: 3}]
+      - id: price
+        text: Price it first. Count what the mangrove is worth in fish, storm protection and carbon. If the shrimp beat that, fine.
+        evidence: [{position: nature.value.natural-capital, w: 3}]
+      - id: intrinsic
+        text: Refuse. The mangrove and everything living in it has a right to exist, jobs or no jobs.
+        evidence: [{position: nature.value.intrinsic, w: 3}]
+      - id: kin
+        text: Ask the fishing families. They live with the mangrove as a relative, and they know what it gives and what it needs.
+        evidence: [{position: nature.value.kin-and-relation, w: 3}]
+      - id: creation
+        text: Refuse. It's God's creation, and we hold it in trust, not as owners.
+        evidence: [{position: nature.value.creation, w: 3}]
+      - id: metabolism
+        text: The question is who runs the exchange. Shrimp for export strips the coast; the same coast, worked by its people, can last.
+        evidence: [{position: nature.value.metabolism, w: 3}]
+      - id: homeland
+        text: Refuse. This coast belongs to the people who have always lived on it. Outsiders don't get to sell it.
+        evidence: [{position: nature.value.homeland-of-a-people, w: 3}]
+
+  - id: probe.nature.value.beetle
+    type: reason
+    title: The beetle
+    text: >
+      A rare beetle, found in one valley and nowhere else, is the only thing stopping a highway that would cut
+      an hour off thousands of commutes. Nobody eats it, sells it or has ever seen it. Should it count?
+    why: This asks what value, if any, you think nature has in itself.
+    options:
+      - id: itself
+        text: Yes. It has value in itself, whether anyone ever sees it or not.
+        cause: ideas
+        evidence: [{position: nature.value.intrinsic, w: 3}]
+      - id: people
+        text: No. Nature matters for what it does for people. The commuters matter more.
+        cause: interests
+        evidence: [{position: nature.value.for-human-use, w: 3}]
+      - id: price
+        text: Only as much as it's worth. Ask what people would pay to keep it, and compare.
+        cause: interests
+        evidence: [{position: nature.value.natural-capital, w: 3}]
+      - id: god
+        text: Yes. God made it and saw it was good. It isn't ours to erase.
+        cause: divine
+        evidence: [{position: nature.value.creation, w: 3}]
+      - id: kin
+        text: Yes. It's a relative of ours, and you don't erase a relative to save an hour.
+        cause: culture
+        evidence: [{position: nature.value.kin-and-relation, w: 3}]
+      - id: whole
+        text: The beetle matters as part of the valley that feeds the people. Wreck the one and you wreck the other.
+        cause: structures
+        evidence: [{position: nature.value.metabolism, w: 3}]
+      - id: soil
+        text: It counts because the valley is part of our homeland. A people that paves its land loses itself.
+        cause: nature
+        evidence: [{position: nature.value.homeland-of-a-people, w: 3}]
+
+  - id: probe.nature.value.voices
+    type: voices
+    title: Three on the river
+    text: >
+      In a village in Sarawak, a logging road is coming up the river. Three people talk on the jetty. Who
+      sees the forest rightly?
+    voices:
+      - {name: "Apai Jugah, a longhouse headman", says: "The forest is our grandmother. We take from her and we give back. The company only takes."}
+      - {name: "A forestry economist", says: "If carbon credits paid more than timber, the forest would stand. Put a price on it and the market will save it."}
+      - {name: "A district officer", says: "People here need schools and a clinic. Forests are for people, and the road brings both."}
+    why: This asks what value you think nature has, through three people on one river.
+    options:
+      - id: headman
+        text: The headman. Nature is kin, owed reciprocity.
+        cause: culture
+        evidence: [{position: nature.value.kin-and-relation, w: 3}]
+      - id: economist
+        text: The economist. Price it and it gets protected.
+        cause: interests
+        evidence: [{position: nature.value.natural-capital, w: 3}]
+      - id: officer
+        text: The officer. Nature is there to be used for people's good.
+        cause: interests
+        evidence: [{position: nature.value.for-human-use, w: 3}]
+      - id: itself
+        text: All three talk as if the forest were for someone. It has value of its own.
+        cause: ideas
+        evidence: [{position: nature.value.intrinsic, w: 3}]
+      - id: steward
+        text: All three forget whose forest it is. God's, given to us to keep.
+        cause: divine
+        evidence: [{position: nature.value.creation, w: 3}]
+      - id: labor
+        text: The headman is closest. Labor and land make wealth together; what matters is who runs the exchange and for what.
+        cause: structures
+        evidence: [{position: nature.value.metabolism, w: 3}]
+      - id: blood
+        text: The headman is closest for another reason. Land is a people's blood. Lose it and you lose the people.
+        cause: nature
+        evidence: [{position: nature.value.homeland-of-a-people, w: 3}]
+
+  # ---------------- energy.transition ----------------
+  - id: probe.energy.transition.budget
+    type: allocation
+    title: The transition fund
+    text: >
+      Your government has a large sum to spend on energy over ten years. You have ten points.
+    why: This asks who you think should pay for and own the energy transition.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: carbon
+          text: A carbon price, with the money returned to households, and private investors build the rest
+          evidence: [{position: energy.transition.market-led, w: 2}]
+        - id: public
+          text: A public power company, with guaranteed jobs for coal and oil workers
+          evidence: [{position: energy.transition.public-ownership, w: 2}]
+        - id: industry
+          text: Subsidies to build a national solar, battery and electric car industry
+          evidence: [{position: energy.transition.state-industrial-policy, w: 2}]
+        - id: coops
+          text: Grants for villages and cooperatives to own their own wind and solar
+          evidence: [{position: energy.transition.community-owned, w: 2}]
+        - id: cheap
+          text: Keep fuel subsidies so working people's bills don't rise
+          evidence: [{position: energy.transition.keep-energy-cheap, w: 2}]
+        - id: nuclear
+          text: A fleet of nuclear plants
+          evidence: [{position: energy.transition.nuclear-abundance, w: 2}]
+        - id: minerals
+          text: Refineries to process our own lithium and copper instead of exporting ore
+          evidence: [{position: energy.transition.resource-sovereignty, w: 2}]
+        - id: protect
+          text: Protecting the lands that would be mined for the batteries
+          evidence: [{position: energy.transition.no-to-green-extraction, w: 2}]
+    options:
+      - {id: done, text: Done}
+
+  - id: probe.energy.transition.salt-flat
+    type: scene
+    title: The salt flat
+    text: >
+      Jujuy, northern Argentina. Under the salt flats where Kolla communities have harvested salt for
+      centuries lies lithium for millions of car batteries in Europe and China. The province offers
+      concessions to foreign miners. The communities block the highway. You're a provincial legislator.
+    why: This asks who you think should own and pay for the energy transition, and who bears its costs.
+    options:
+      - id: market
+        text: Grant the concessions with environmental rules. Private investment is how the batteries get built.
+        evidence: [{position: energy.transition.market-led, w: 3}]
+      - id: sovereign
+        text: Nationalize the lithium and build battery plants here. We won't export raw salt again.
+        evidence: [{position: energy.transition.resource-sovereignty, w: 3}]
+      - id: no
+        text: Side with the blockade. These communities aren't a sacrifice zone for European electric cars.
+        evidence: [{position: energy.transition.no-to-green-extraction, w: 3}]
+      - id: community
+        text: The communities should own the mine, or decide whether there is one. Nobody else.
+        evidence: [{position: energy.transition.community-owned, w: 3}]
+      - id: state
+        text: A state company in partnership with industry, with a national plan for batteries and cars. Win the industry.
+        evidence:
+          - {position: energy.transition.state-industrial-policy, w: 2}
+          - {position: energy.transition.public-ownership, w: 1}
+      - id: cheap
+        text: Why are we in a hurry? Our gas fields work fine and keep bills low.
+        evidence: [{position: energy.transition.keep-energy-cheap, w: 3}]
+      - id: nuclear
+        text: Fewer batteries, more reactors. Argentina already builds them. That spares the salt flats.
+        evidence: [{position: energy.transition.nuclear-abundance, w: 3}]
+
+  - id: probe.energy.transition.coal-town
+    type: tradeoff
+    title: The plant closes
+    text: >
+      The coal plant that powers half your region and employs 1,800 people is to close in four years. Bills
+      will rise in the meantime. You can back one plan at the regional assembly.
+    why: This asks who you think should pay for the energy transition, and who should own what replaces coal.
+    options:
+      - id: public
+        text: The public utility takes over, builds the replacement and hires the 1,800 first.
+        evidence: [{position: energy.transition.public-ownership, w: 3}]
+      - id: market
+        text: Let the carbon price do its work. Investors will build cheaper solar, and new jobs will come.
+        evidence: [{position: energy.transition.market-led, w: 3}]
+      - id: keep
+        text: Keep it open. The bills and the jobs are real; the targets are someone else's.
+        evidence: [{position: energy.transition.keep-energy-cheap, w: 3}]
+      - id: nuclear
+        text: Replace it with a nuclear plant on the same site, same grid connection, same workforce retrained.
+        evidence: [{position: energy.transition.nuclear-abundance, w: 3}]
+      - id: factory
+        text: State money to bring a battery factory to town. Turn the closure into an industry.
+        evidence: [{position: energy.transition.state-industrial-policy, w: 3}]
+      - id: coop
+        text: Wind and solar owned by the towns themselves, so the profits stay here this time.
+        evidence: [{position: energy.transition.community-owned, w: 3}]
+      - id: minerals
+        text: Whatever we build, don't import the panels and the metals. Mine and make our own.
+        evidence:
+          - {position: energy.transition.resource-sovereignty, w: 2}
+          - {position: energy.transition.no-to-green-extraction, w: -1}
+
+  # ---------------- technology.nature ----------------
+  - id: probe.technology.nature.encryption
+    type: scene
+    title: The encryption bill
+    text: >
+      The government wants a back door into every encrypted messaging app, to catch traffickers and
+      terrorists. The app makers say they'll pull out of the country instead. You're asked to testify.
+    why: This asks whether you think technology is a tool, a weapon, a liberation or a threat.
+    options:
+      - id: escape
+        text: Against. Encryption is the one thing that lets ordinary people keep the state out. Code beats law.
+        evidence: [{position: technology.nature.code-escapes-control, w: 3}]
+      - id: neutral
+        text: For, with warrants. A tool is a tool. What matters is who's using it and for what.
+        evidence: [{position: technology.nature.neutral-tool, w: 3}]
+      - id: weapon
+        text: Against, and watch the companies too. Bosses and police will use any back door against strikers.
+        evidence: [{position: technology.nature.capitals-weapon, w: 3}]
+      - id: design
+        text: The design decides. Build the tools differently, owned by users, and the dilemma changes.
+        evidence: [{position: technology.nature.built-in-politics, w: 3}]
+      - id: monopoly
+        text: Neither the app makers nor our government. The apps are foreign, and their owners read everything anyway.
+        evidence: [{position: technology.nature.core-monopoly, w: 3}]
+      - id: autonomous
+        text: Neither side controls it any more. We built a machine of total surveillance and now we serve it.
+        evidence: [{position: technology.nature.autonomous-force, w: 3}]
+      - id: liberation
+        text: Against. Every new tool that spreads knowledge and speech has freed people. Don't break this one.
+        evidence: [{position: technology.nature.liberation, w: 3}]
+
+  - id: probe.technology.nature.warehouse
+    type: explanation
+    title: The handheld scanner
+    text: >
+      Warehouse pickers in Poland carry scanners that tell them the next shelf and time every step. Output per
+      worker has doubled in ten years; pay has not. Workers say the scanner is the boss. What is going on?
+    why: This asks what you think technology is, and what kind of cause you reach for.
+    options:
+      - id: neutral
+        text: A tool used badly. The same scanner could make the work easier with different management.
+        cause: individuals
+        evidence: [{position: technology.nature.neutral-tool, w: 3}]
+      - id: weapon
+        text: A weapon. It was bought to squeeze more work out of fewer people for the same pay.
+        cause: interests
+        evidence: [{position: technology.nature.capitals-weapon, w: 3}]
+      - id: built-in
+        text: Its politics are in the design. A scanner built by the workers would count different things.
+        cause: structures
+        evidence: [{position: technology.nature.built-in-politics, w: 3}]
+      - id: technique
+        text: Efficiency has a logic of its own. Once you can measure every step, you will, and people become parts.
+        cause: ideas
+        evidence: [{position: technology.nature.autonomous-force, w: 3}]
+      - id: core
+        text: The software and the profits sit in Seattle; the sweat sits in Poland. That's what the scanner does.
+        cause: structures
+        evidence: [{position: technology.nature.core-monopoly, w: 3}]
+      - id: liberation
+        text: A step toward full automation. In twenty years no human will pick shelves at all, and good riddance.
+        cause: ideas
+        evidence: [{position: technology.nature.liberation, w: 3}]
+      - id: exit
+        text: Learn to code. The same technology that tracks the picker lets anyone build a business from a laptop.
+        cause: individuals
+        evidence: [{position: technology.nature.code-escapes-control, w: 3}]
+
+  - id: probe.technology.nature.voices
+    type: voices
+    title: The village phone
+    text: >
+      Mobile money arrived in a Kenyan village fifteen years ago. Three people discuss what it did. Who is
+      right?
+    voices:
+      - {name: "Mama Wanjiru, a shopkeeper", says: "I used to hide cash under the mattress. Now I save, borrow and send money to my son in a second. It freed me."}
+      - {name: "A loan officer turned critic", says: "Then came the app lenders. Half the village owes money at rates nobody would accept face to face."}
+      - {name: "A software developer in Nairobi", says: "We built the platform, but the patents, the cloud and the profits mostly sit abroad."}
+    why: This asks what you think technology is, through three people and one invention.
+    options:
+      - id: freed
+        text: Mama Wanjiru. Technology is how people free themselves.
+        cause: ideas
+        evidence: [{position: technology.nature.liberation, w: 3}]
+      - id: debt
+        text: The critic. Every new tool becomes a way to extract from the people who use it.
+        cause: interests
+        evidence: [{position: technology.nature.capitals-weapon, w: 3}]
+      - id: abroad
+        text: The developer. Whoever owns the technology owns the country's dependence.
+        cause: structures
+        evidence: [{position: technology.nature.core-monopoly, w: 3}]
+      - id: neutral
+        text: All three describe one tool used well and badly. The phone is neutral.
+        cause: individuals
+        evidence: [{position: technology.nature.neutral-tool, w: 3}]
+      - id: design
+        text: The critic and the developer together. The lending was designed in, and it can be designed out.
+        cause: structures
+        evidence: [{position: technology.nature.built-in-politics, w: 3}]
+      - id: escape
+        text: Mama Wanjiru, but for a different reason. Money the government can't easily seize is real power.
+        cause: individuals
+        evidence: [{position: technology.nature.code-escapes-control, w: 3}]
+      - id: swallowed
+        text: All three are inside the machine. Village life now runs on the phone, and nobody chose that.
+        cause: ideas
+        evidence: [{position: technology.nature.autonomous-force, w: 3}]
+
+  # ---------------- automation.ownership ----------------
+  - id: probe.automation.ownership.port
+    type: scene
+    title: The automated terminal
+    text: >
+      The port authority in Valparaíso plans a fully automated container terminal. Remote cranes, driverless
+      trucks, a third of the dockers gone in five years. The union asks you, the city's representative, what
+      to demand.
+    why: This asks who you think should own automation, and who should get the gains.
+    options:
+      - id: investors
+        text: Let it go ahead. Whoever invests in the cranes owns the gains; cheaper shipping spreads them.
+        evidence: [{position: automation.ownership.investors-and-markets, w: 3}]
+      - id: bargain
+        text: Bargain hard. Retraining, no forced layoffs, and a share of the productivity in wages.
+        evidence: [{position: automation.ownership.bargain-and-share, w: 3}]
+      - id: common
+        text: The port should be public and the machines owned in common. Then fewer hours for everyone, not fewer dockers.
+        evidence: [{position: automation.ownership.common-ownership, w: 3}]
+      - id: dividend
+        text: Tax the terminal's gains and pay every citizen a dividend. Robots should pay us all.
+        evidence: [{position: automation.ownership.dividend, w: 3}]
+      - id: refuse
+        text: Refuse it. A port is a community of workers, not a server farm.
+        evidence: [{position: automation.ownership.refuse-it, w: 3}]
+      - id: engineers
+        text: Hand the planning to engineers, not owners or politicians. Run it for maximum output and share the abundance.
+        evidence: [{position: automation.ownership.engineers-plan, w: 3}]
+      - id: sovereign
+        text: Only if the software and the cranes are Chilean. Otherwise we're automating someone else's port.
+        evidence: [{position: automation.ownership.national-sovereign-ai, w: 3}]
+      - id: adapt
+        text: Tell the young dockers to retrain now. Nobody stops this; look out for yourself.
+        evidence: [{position: automation.ownership.adapt-or-lose, w: 3}]
+
+  - id: probe.automation.ownership.gains
+    type: allocation
+    title: The robot's wages
+    text: >
+      Automation in your country has raised output by a fifth in ten years without more workers. A new law
+      will decide where that extra output goes. You have ten points.
+    why: This asks who you think should get the gains from automation.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: profits
+          text: To the firms and investors who paid for the machines
+          evidence: [{position: automation.ownership.investors-and-markets, w: 2}]
+        - id: wages
+          text: To higher wages, through collective bargaining
+          evidence: [{position: automation.ownership.bargain-and-share, w: 2}]
+        - id: hours
+          text: To a shorter working week, with the machines owned in common
+          evidence: [{position: automation.ownership.common-ownership, w: 2}]
+        - id: dividend
+          text: To a public dividend paid equally to everyone
+          evidence: [{position: automation.ownership.dividend, w: 2}]
+        - id: plan
+          text: To an expert planning agency that reinvests it for abundance
+          evidence: [{position: automation.ownership.engineers-plan, w: 2}]
+        - id: national
+          text: To national computing power and chips, so we don't depend on foreign AI
+          evidence: [{position: automation.ownership.national-sovereign-ai, w: 2}]
+        - id: slow
+          text: To protecting crafts and jobs from machines that degrade them
+          evidence: [{position: automation.ownership.refuse-it, w: 2}]
+        - id: training
+          text: To personal retraining accounts, so each person can adapt
+          evidence: [{position: automation.ownership.adapt-or-lose, w: 2}]
+    options:
+      - {id: done, text: Done}
+
+  - id: probe.automation.ownership.voices
+    type: voices
+    title: The engineers' table
+    text: >
+      At a conference on AI in Bangalore, three speakers argue about who should own the machines that are
+      coming. Who is right?
+    voices:
+      - {name: "A venture capitalist", says: "We took the risk, we own the upside. Cheaper services are how everyone else gets their share."}
+      - {name: "An engineer from a public research lab", says: "Let the people who understand the systems run them for output, not profit. Politics and markets both get in the way."}
+      - {name: "A union leader from the call centers", says: "Two hundred thousand jobs in this city ride on this. Nothing goes in without our signature on the terms."}
+    why: This asks who you think should own automation and AI, through three people with stakes in it.
+    options:
+      - id: vc
+        text: The investor. Whoever invests owns it; markets spread the gains.
+        cause: interests
+        evidence: [{position: automation.ownership.investors-and-markets, w: 3}]
+      - id: engineer
+        text: The engineer. Let experts run it for abundance.
+        cause: ideas
+        evidence: [{position: automation.ownership.engineers-plan, w: 3}]
+      - id: union
+        text: The union leader. Workers bargain over new machines.
+        cause: interests
+        evidence: [{position: automation.ownership.bargain-and-share, w: 3}]
+      - id: common
+        text: All three are arguing over a private asset. Own it in common and cut everyone's hours.
+        cause: structures
+        evidence: [{position: automation.ownership.common-ownership, w: 3}]
+      - id: dividend
+        text: All three should agree on a dividend. Tax it and pay everyone.
+        cause: structures
+        evidence: [{position: automation.ownership.dividend, w: 3}]
+      - id: nation
+        text: All three forget the country. If the models are American, India owns nothing but the electricity bill.
+        cause: structures
+        evidence: [{position: automation.ownership.national-sovereign-ai, w: 3}]
+      - id: refuse
+        text: All three take it as given. Some of these machines shouldn't be built.
+        cause: ideas
+        evidence: [{position: automation.ownership.refuse-it, w: 3}]
+      - id: adapt
+        text: All three are fighting the tide. The smart move is to learn the new tools before your neighbor does.
+        cause: individuals
+        evidence: [{position: automation.ownership.adapt-or-lose, w: 3}]

@@ -1,0 +1,197 @@
+nodes:
+  # ---------------- tradition.modernity ----------------
+  - id: probe.tradition.modernity.old-quarter
+    type: scene
+    title: The old quarter
+    text: >
+      The city plans to clear the old market quarter, six centuries of alleys, workshops and a shrine, for a
+      metro station and offices. Families who have lived there for generations are split. You chair the
+      public hearing, and you must recommend something.
+    why: This asks how you weigh tradition against modernity.
+    options:
+      - id: slow
+        text: Don't clear it. Improve it slowly. Something that has worked for six centuries knows things a planner doesn't.
+        evidence: [{position: tradition.modernity.inherited-wisdom, w: 3}]
+      - id: build
+        text: Build the metro. Nostalgia is no reason to keep people in damp houses without sewers.
+        evidence: [{position: tradition.modernity.enlightenment, w: 3}]
+      - id: sacred
+        text: Keep the shrine at the center and rebuild the quarter around it. A city without a sacred heart is just traffic.
+        evidence: [{position: tradition.modernity.sacred-order, w: 3}]
+      - id: both
+        text: Put the metro under it and the sewers in, and keep the alleys, the trades and the language of the place.
+        evidence: [{position: tradition.modernity.selective-modernization, w: 3}]
+      - id: beyond
+        text: The real choice isn't old or new. Developers will clear it or sell it back as heritage. Let the residents own it.
+        evidence: [{position: tradition.modernity.transcend-both, w: 3}]
+      - id: theirs
+        text: Ask why "modern" always means a European-style business district. Let the quarter develop on its own terms.
+        evidence: [{position: tradition.modernity.decolonial, w: 3}]
+      - id: future
+        text: Clear it, and build something nobody has seen before. Cities that cling to the past become museums.
+        evidence: [{position: tradition.modernity.rupture, w: 3}]
+
+  - id: probe.tradition.modernity.meiji
+    type: verdict
+    title: Tokyo, 1868
+    text: >
+      Japan, 1868. American warships forced the ports open fifteen years ago. The new government sends
+      students to Europe for railways, cannons and law codes, and keeps the emperor at the center of a
+      reinvented national faith. Its slogan: Japanese spirit, Western technique. Where do you stand?
+    why: This asks how you weigh tradition against modernity, through a real choice a country made.
+    options:
+      - id: selective
+        text: With them. Take the machines, keep the soul. Any country facing gunboats should do the same.
+        evidence: [{position: tradition.modernity.selective-modernization, w: 3}]
+      - id: reason
+        text: Half right. The railways and law codes, yes. The god-emperor is the part that leads to disaster.
+        evidence: [{position: tradition.modernity.enlightenment, w: 3}]
+      - id: slow
+        text: Too fast. Tearing up the old order in a decade leaves people with nothing to stand on.
+        evidence: [{position: tradition.modernity.inherited-wisdom, w: 3}]
+      - id: sacred
+        text: Against. The moment you take their technique, their spirit comes with it. The old order was the point.
+        evidence: [{position: tradition.modernity.sacred-order, w: 3}]
+      - id: own-path
+        text: Against the frame. Japan was made to choose between being Europe and being conquered. That isn't a free choice.
+        evidence: [{position: tradition.modernity.decolonial, w: 3}]
+      - id: beyond
+        text: Watch who gains. Old lords become new bankers, and peasants become factory hands. Neither the old nor the new freed them.
+        evidence: [{position: tradition.modernity.transcend-both, w: 3}]
+      - id: rupture
+        text: Not far enough. Break with the past completely. Spirit is just what you call habits you're afraid to drop.
+        evidence: [{position: tradition.modernity.rupture, w: 3}]
+
+  - id: probe.tradition.modernity.voices
+    type: voices
+    title: Grandmother's recipes
+    text: >
+      Three people argue at a food festival in Lima about whether it matters that young Peruvians eat burgers
+      and skip the old festivals. Who has it right?
+    voices:
+      - {name: "A celebrated chef", says: "I took my grandmother's recipes, added a laboratory and sold them to the world. That's how a tradition survives."}
+      - {name: "A Quechua farmer", says: "You sell our potatoes as 'heritage' and pay us nothing for them. Your modernity and your tradition both come from Lima."}
+      - {name: "A software engineer", says: "Every generation thinks its grandparents' food was sacred. Let it go. Something new is coming."}
+    why: This asks how you weigh tradition and modernity, through three people at one festival.
+    options:
+      - id: chef
+        text: The chef. Keep your culture and modernize the rest.
+        cause: culture
+        evidence: [{position: tradition.modernity.selective-modernization, w: 3}]
+      - id: farmer
+        text: The farmer. Modernity is the capital's story; the Andes have their own path.
+        cause: structures
+        evidence: [{position: tradition.modernity.decolonial, w: 3}]
+      - id: engineer
+        text: The engineer. Break with the past.
+        cause: ideas
+        evidence: [{position: tradition.modernity.rupture, w: 3}]
+      - id: wisdom
+        text: All three are in a hurry. Old ways survive because they work. Leave them be.
+        cause: culture
+        evidence: [{position: tradition.modernity.inherited-wisdom, w: 3}]
+      - id: sacred
+        text: All three talk about food as if it were only food. The festivals were for God. That's what was lost.
+        cause: divine
+        evidence: [{position: tradition.modernity.sacred-order, w: 3}]
+      - id: reason
+        text: Judge each custom on its merits. Some festivals deserve to die, some recipes deserve to live.
+        cause: ideas
+        evidence: [{position: tradition.modernity.enlightenment, w: 3}]
+      - id: market
+        text: The farmer is closest. The market wrecks the old ways and sells the pieces back. Get past both.
+        cause: interests
+        evidence: [{position: tradition.modernity.transcend-both, w: 3}]
+
+  # ---------------- university.neutrality ----------------
+  - id: probe.university.neutrality.statement
+    type: scene
+    title: The senate vote
+    text: >
+      A war abroad is killing thousands. Students have camped on the lawn for three weeks demanding that the
+      university condemn it and sell its shares in an arms maker. You sit on the academic senate. The motion
+      is on the table.
+    why: This asks whether you think a university should take political stands.
+    options:
+      - id: neutral
+        text: Vote no. The university takes no stand, so every professor and student can take theirs.
+        evidence: [{position: university.neutrality.institutional-neutrality, w: 3}]
+      - id: witness
+        text: Vote yes. On a crime this grave, silence is a stand too.
+        evidence: [{position: university.neutrality.moral-witness, w: 3}]
+      - id: never-neutral
+        text: Vote yes, and then audit everything else. The endowment and the defense contracts were never neutral.
+        evidence: [{position: university.neutrality.already-serves-power, w: 3}]
+      - id: nation
+        text: Vote no. A public university serves the nation's development, and that means the nation's foreign policy too.
+        evidence: [{position: university.neutrality.nation-building, w: 3}]
+      - id: law
+        text: Vote no, and ask the state to clear the lawn. Universities that pick sides should lose public money.
+        evidence: [{position: university.neutrality.restore-by-law, w: 3}]
+      - id: faith
+        text: In a Catholic university, we already know where we stand on unjust war. Follow the teaching, not the camp.
+        evidence: [{position: university.neutrality.faith-mission, w: 3}]
+
+  - id: probe.university.neutrality.voices
+    type: voices
+    title: Three rectors
+    text: >
+      At a conference, three university rectors are asked what their institution is for. Who is right?
+    voices:
+      - {name: "The rector of a university in Dar es Salaam", says: "Peasants pay for our engineers. We owe them roads and doctors, not seminars on neutrality."}
+      - {name: "The rector of a Jesuit university in Bogotá", says: "We are not neutral and never pretended to be. We serve the truth our faith teaches, and we argue in the open."}
+      - {name: "The rector of a research university in Chicago", says: "Our job is to protect the argument, not to win it. The moment we take sides, we chill the dissenters."}
+    why: This asks what you think a university is for and whether it should take stands, through three rectors.
+    options:
+      - id: dar
+        text: Dar es Salaam. Serve the nation's development.
+        cause: interests
+        evidence: [{position: university.neutrality.nation-building, w: 3}]
+      - id: bogota
+        text: Bogotá. A university of faith serves its truth.
+        cause: divine
+        evidence: [{position: university.neutrality.faith-mission, w: 3}]
+      - id: chicago
+        text: Chicago. Institutional neutrality protects free argument.
+        cause: ideas
+        evidence: [{position: university.neutrality.institutional-neutrality, w: 3}]
+      - id: power
+        text: All three serve somebody. Ask who funds the research and who gets the graduates.
+        cause: structures
+        evidence: [{position: university.neutrality.already-serves-power, w: 3}]
+      - id: witness
+        text: All three dodge it. When something grave happens, a university that teaches ethics has to speak.
+        cause: ideas
+        evidence: [{position: university.neutrality.moral-witness, w: 3}]
+      - id: captured
+        text: The Chicago rector says neutrality, but look at who gets hired. Only law will restore balance.
+        cause: individuals
+        evidence: [{position: university.neutrality.restore-by-law, w: 3}]
+
+  - id: probe.university.neutrality.balance-law
+    type: tradeoff
+    title: The balance bill
+    text: >
+      The government proposes a law: public universities must close their diversity offices, report the
+      political spread of their hires, and discipline students who disrupt lectures. The faculty union calls
+      it a purge. Supporters call it a rescue. Where are you?
+    why: This asks whether and how you think universities should take political sides.
+    options:
+      - id: for
+        text: For it. The universities were captured, and the public that pays has a right to balance.
+        evidence: [{position: university.neutrality.restore-by-law, w: 3}]
+      - id: against-neutral
+        text: Against. Neutrality means no one, including the government, imposes a line on the campus.
+        evidence: [{position: university.neutrality.institutional-neutrality, w: 3}]
+      - id: against-witness
+        text: Against, loudly. A university that won't stand up to this has no business teaching courage.
+        evidence: [{position: university.neutrality.moral-witness, w: 3}]
+      - id: honest
+        text: At least it's honest. The university always served power; now the state just says so. Fight it.
+        evidence: [{position: university.neutrality.already-serves-power, w: 3}]
+      - id: priorities
+        text: A distraction. We need engineers and doctors. Spend the energy on that.
+        evidence: [{position: university.neutrality.nation-building, w: 3}]
+      - id: faith
+        text: Exempt religious universities. We have our own mission, and the state shouldn't set it either way.
+        evidence: [{position: university.neutrality.faith-mission, w: 3}]

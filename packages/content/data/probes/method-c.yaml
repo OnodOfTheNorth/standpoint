@@ -1,0 +1,320 @@
+nodes:
+  # ---------------- society.units ----------------
+  - id: probe.society.units.article-one
+    type: scene
+    title: Article one
+    text: >
+      Your country is writing a new constitution, and by a quirk of the seating plan you hold the pen for the
+      first sentence. It reads: "The ______ is the foundation of society." Everyone has an opinion. You have
+      to fill in the blank.
+    why: This asks what you think society is made of.
+    options:
+      - id: individual
+        text: The individual. Everything else is people choosing to cooperate.
+        evidence: [{position: society.units.individuals, w: 3}]
+      - id: family
+        text: The family. Nobody arrives in the world alone, and the household came before any state.
+        evidence: [{position: society.units.families, w: 3}]
+      - id: nation
+        text: The nation. One people, one body, of which we are all members.
+        evidence: [{position: society.units.nation-organism, w: 3}]
+      - id: workers
+        text: Write "working people", and say plainly that society is divided between those who work and those who own.
+        evidence: [{position: society.units.classes, w: 3}]
+      - id: person
+        text: The human person, living in family, neighborhood, trade and nation. Not one of them alone.
+        evidence: [{position: society.units.persons, w: 3}]
+      - id: faith
+        text: The community of believers. Our first bond is to God and to each other through him.
+        evidence: [{position: society.units.community-of-faith, w: 3}]
+      - id: blank
+        text: Leave it out. Any one word will erase someone, by race, by sex, by class or by nation.
+        evidence: [{position: society.units.interlocking-structures, w: 3}]
+
+  - id: probe.society.units.we
+    type: reason
+    title: Who is "we"?
+    text: >
+      Listen to yourself for a day. When you say "we" about anything bigger than your household, "we're being
+      squeezed", "we won", "we don't do that", who do you usually mean?
+    why: This asks what units you see society as made of, by the "we" you reach for.
+    options:
+      - id: me
+        text: Honestly, mostly me. "We" is a figure of speech.
+        cause: individuals
+        evidence: [{position: society.units.individuals, w: 3}]
+      - id: family
+        text: My family. The rest are circles around it.
+        cause: culture
+        evidence: [{position: society.units.families, w: 3}]
+      - id: country
+        text: My country, my people.
+        cause: nature
+        evidence: [{position: society.units.nation-organism, w: 3}]
+      - id: workers
+        text: People who work for a living, against the people who live off owning things.
+        cause: structures
+        evidence: [{position: society.units.classes, w: 3}]
+      - id: parish
+        text: It depends on the room. My family, my parish, my town, my country. Each is real.
+        cause: culture
+        evidence: [{position: society.units.persons, w: 3}]
+      - id: believers
+        text: Fellow believers, wherever they are.
+        cause: divine
+        evidence: [{position: society.units.community-of-faith, w: 3}]
+      - id: depends
+        text: It shifts. As a woman, as a Black person, as a tenant, as a migrant. No single "we" holds.
+        cause: structures
+        evidence: [{position: society.units.interlocking-structures, w: 3}]
+
+  - id: probe.society.units.no-such-thing
+    type: voices
+    title: No such thing
+    text: >
+      In a radio phone-in about loneliness, a caller says: "There's no such thing as society. There are
+      individual men and women and there are families." Two other callers answer. Who is right?
+    voices:
+      - {name: "The first caller, a shop owner", says: "Nobody owes you company. You build your own life and you choose your own friends."}
+      - {name: "A retired steelworker", says: "Rubbish. When the works closed, the whole town went lonely at once. That wasn't fifty thousand separate choices."}
+      - {name: "An imam", says: "Society is not a pile of individuals. It is a body of believers who owe each other."}
+    why: This asks what you think society is made of, through three callers who disagree.
+    options:
+      - id: shop
+        text: The shop owner. Only individuals act.
+        cause: individuals
+        evidence: [{position: society.units.individuals, w: 3}]
+      - id: families
+        text: The shop owner, but stress the second half. The family is the unit.
+        cause: culture
+        evidence: [{position: society.units.families, w: 3}]
+      - id: steel
+        text: The steelworker. Owners closed the works and a class went under together.
+        cause: structures
+        evidence: [{position: society.units.classes, w: 3}]
+      - id: imam
+        text: The imam. The community of faith comes first.
+        cause: divine
+        evidence: [{position: society.units.community-of-faith, w: 3}]
+      - id: nation
+        text: All three miss the nation. A people is a living thing, and it feels lonely when it's broken up.
+        cause: nature
+        evidence: [{position: society.units.nation-organism, w: 3}]
+      - id: nested
+        text: All three are right about a piece. Person, family, town, faith and country nest inside each other.
+        cause: culture
+        evidence: [{position: society.units.persons, w: 3}]
+      - id: many
+        text: All three pick one thread. Class, race, gender and nation are tangled; pull one and the others move.
+        cause: structures
+        evidence: [{position: society.units.interlocking-structures, w: 3}]
+
+  # ---------------- conflict.nature ----------------
+  - id: probe.conflict.nature.port-strike
+    type: scene
+    title: The port is shut
+    text: >
+      Dockworkers in Durban have struck for two weeks. Shelves are emptying, and fuel is up. Your
+      brother-in-law, who drives a delivery van, is furious. At Sunday lunch he asks what you make of it.
+    why: This asks whether you see social conflict as a malfunction or as the engine of change.
+    options:
+      - id: engine
+        text: That's how anything ever gets better. Workers and owners want opposite things, and this is what it looks like.
+        evidence: [{position: conflict.nature.engine-antagonism, w: 3}]
+      - id: harmony
+        text: Nobody wins here. Leave wages to the market and dockers and shippers both do better.
+        evidence: [{position: conflict.nature.market-harmony, w: 3}]
+      - id: heal
+        text: A sad thing. Employers and workers should sit at one table like family and find what's just.
+        evidence: [{position: conflict.nature.organic-harmony, w: 3}]
+      - id: channel
+        text: Normal. That's what bargaining and the labor courts are for. Let the process run.
+        evidence: [{position: conflict.nature.institutionalized, w: 3}]
+      - id: enemy
+        text: A strike that cripples the nation's port is sabotage. The nation's enemies are clapping.
+        evidence: [{position: conflict.nature.friend-enemy, w: 3}]
+      - id: sides
+        text: Good. Better an open fight with clear sides than everyone pretending to agree.
+        evidence: [{position: conflict.nature.agonism, w: 3}]
+      - id: stirred
+        text: The dockers and your van are on the same side. Someone stirred this up for their own ends.
+        evidence: [{position: conflict.nature.stirred-up, w: 3}]
+
+  - id: probe.conflict.nature.why
+    type: explanation
+    title: Why the fighting
+    text: >
+      Every society on record has had feuds, strikes, riots, schisms and civil wars. Some have far more than
+      others. What, at bottom, is social conflict?
+    why: This asks what you think social conflict is, and what kind of cause you reach for.
+    options:
+      - id: interests
+        text: Opposed interests built into how wealth is produced. It won't stop until that does.
+        cause: structures
+        evidence: [{position: conflict.nature.engine-antagonism, w: 3}]
+      - id: interference
+        text: Mostly a mistake. Left to free exchange, people's interests fit together. Politics breaks that.
+        cause: ideas
+        evidence: [{position: conflict.nature.market-harmony, w: 3}]
+      - id: disorder
+        text: A sickness of the social body, when the parts forget they belong to one whole.
+        cause: culture
+        evidence: [{position: conflict.nature.organic-harmony, w: 3}]
+      - id: normal
+        text: Normal and useful. Societies differ in how well they channel it.
+        cause: structures
+        evidence: [{position: conflict.nature.institutionalized, w: 3}]
+      - id: enemies
+        text: Peoples have enemies. It is permanent. The only question is which side you're on.
+        cause: nature
+        evidence: [{position: conflict.nature.friend-enemy, w: 3}]
+      - id: lifeblood
+        text: The stuff of politics. A society with no open conflict is one where someone has been silenced.
+        cause: ideas
+        evidence: [{position: conflict.nature.agonism, w: 3}]
+      - id: stirred
+        text: Mostly stirred up. People get along fine until someone gains from setting them at each other.
+        cause: individuals
+        evidence: [{position: conflict.nature.stirred-up, w: 3}]
+
+  - id: probe.conflict.nature.voices
+    type: voices
+    title: Too divided?
+    text: >
+      A TV panel asks whether the country has become too divided. Three guests answer. Who is right?
+    voices:
+      - {name: "A retired judge", says: "Disagreement is healthy. What's dangerous is when people stop trusting courts and elections to settle it."}
+      - {name: "A Belgian political theorist", says: "The problem is the opposite. Both big parties offer the same thing, so anger goes looking for a real fight."}
+      - {name: "A bishop", says: "Rich and poor, worker and employer, were made to need each other. Division is a wound, not a debate."}
+    why: This asks how you understand social conflict, through three guests with different views of it.
+    options:
+      - id: judge
+        text: The judge. Conflict is fine as long as institutions channel it.
+        cause: structures
+        evidence: [{position: conflict.nature.institutionalized, w: 3}]
+      - id: theorist
+        text: The theorist. Politics needs real sides, openly contesting.
+        cause: ideas
+        evidence: [{position: conflict.nature.agonism, w: 3}]
+      - id: bishop
+        text: The bishop. Classes should cooperate; division is a disorder.
+        cause: divine
+        evidence: [{position: conflict.nature.organic-harmony, w: 3}]
+      - id: class
+        text: All three avoid the real division, between those who own and those who work.
+        cause: interests
+        evidence: [{position: conflict.nature.engine-antagonism, w: 3}]
+      - id: market
+        text: All three overrate politics. Trade and work bring people together; politics divides them.
+        cause: ideas
+        evidence: [{position: conflict.nature.market-harmony, w: 3}]
+      - id: enemy
+        text: All three are soft. A nation is divided when it forgets who its enemies are.
+        cause: nature
+        evidence: [{position: conflict.nature.friend-enemy, w: 3}]
+      - id: tv
+        text: The division is on this panel, not in my street.
+        cause: individuals
+        evidence: [{position: conflict.nature.stirred-up, w: 3}]
+
+  # ---------------- human.nature ----------------
+  - id: probe.human.nature.blackout
+    type: scene
+    title: Three dark days
+    text: >
+      A storm knocks out power across your city for three days. No phones, no card payments, no traffic
+      lights. On the second night your neighbor asks what you expect to see on the streets tomorrow.
+    why: This asks what you think human nature is.
+    options:
+      - id: fallen
+        text: Some kindness, some looting. Remove the rules and you see the worst in some hearts, and some of it in every heart.
+        evidence: [{position: human.nature.fallen, w: 3}]
+      - id: self
+        text: People looking after their own. Not evil, just human. That's why rules matter.
+        evidence: [{position: human.nature.self-interested, w: 3}]
+      - id: depends
+        text: Depends on the city. Where people know each other they'll share. Where they don't, they won't.
+        evidence: [{position: human.nature.plastic-social, w: 3}]
+      - id: good
+        text: People sharing generators and cooking for strangers. That's what we're like when nobody is giving orders.
+        evidence: [{position: human.nature.good-corrupted, w: 3}]
+      - id: leaders
+        text: Someone will take charge on every block, and the others will be glad of it. People sort themselves.
+        evidence: [{position: human.nature.hierarchical, w: 3}]
+      - id: sound
+        text: Mostly decent people, if they've been raised and taught well. A good upbringing shows in the dark.
+        evidence: [{position: human.nature.sound-disposition, w: 3}]
+      - id: both
+        text: Both. Cooperation with your group, suspicion of the next one. We evolved for both.
+        evidence: [{position: human.nature.evolved, w: 3}]
+
+  - id: probe.human.nature.castaways
+    type: explanation
+    title: The castaways
+    text: >
+      In 1965 six boys from Tonga ran away in a stolen boat and were wrecked on an uninhabited island. When a
+      fishing captain found them fifteen months later they had a garden, a rota for keeping the fire lit, and
+      a rule that quarrels ended in time apart. Why did it go that way?
+    why: This asks what you think human nature is, by how you read a real case.
+    options:
+      - id: natural
+        text: Because that's what people are. Without hierarchy and money in the way, we cooperate.
+        cause: nature
+        evidence: [{position: human.nature.good-corrupted, w: 3}]
+      - id: raised
+        text: Because of how they were raised. Village boys from a church school. Another upbringing, another island.
+        cause: culture
+        evidence:
+          - {position: human.nature.plastic-social, w: 2}
+          - {position: human.nature.sound-disposition, w: 1}
+      - id: grace
+        text: Because they prayed and had a conscience. Sin was on that island too; they resisted it.
+        cause: divine
+        evidence: [{position: human.nature.fallen, w: 3}]
+      - id: needed
+        text: Because sharing was the only way each of them would survive. Self-interest, well understood.
+        cause: interests
+        evidence: [{position: human.nature.self-interested, w: 3}]
+      - id: leader
+        text: There will have been a leader among them. There always is, and that's why it worked.
+        cause: individuals
+        evidence: [{position: human.nature.hierarchical, w: 3}]
+      - id: evolved
+        text: A small group of boys who knew each other. We evolved for exactly that size of band.
+        cause: nature
+        evidence: [{position: human.nature.evolved, w: 3}]
+      - id: formed
+        text: Because they were formed well. Human nature is good, but it needs guidance to grow straight.
+        cause: culture
+        evidence: [{position: human.nature.sound-disposition, w: 3}]
+
+  - id: probe.human.nature.cooperative
+    type: tradeoff
+    title: The house rules
+    text: >
+      Sixty households are founding a housing cooperative in Montevideo. They'll share a laundry, a
+      workshop and a repair budget. You're drafting the rules. Every rule assumes something about the people
+      who'll live by it. Which assumption do you build in?
+    why: This asks what you think people are like, by what you design for.
+    options:
+      - id: interest
+        text: People look after themselves. Put locks on the workshop and fines for late payment.
+        evidence: [{position: human.nature.self-interested, w: 3}]
+      - id: trust
+        text: People are cooperative unless you treat them as suspects. Keep the rules few and the doors open.
+        evidence: [{position: human.nature.good-corrupted, w: 3}]
+      - id: shaped
+        text: The rules will make the people. Design for sharing and you'll get sharers in ten years.
+        evidence: [{position: human.nature.plastic-social, w: 3}]
+      - id: fallen
+        text: Even good people fail. Build in confession and forgiveness, and some checks for when they don't.
+        evidence: [{position: human.nature.fallen, w: 3}]
+      - id: rank
+        text: Some people are just more capable. Give them the running of it and spare the rest the meetings.
+        evidence: [{position: human.nature.hierarchical, w: 3}]
+      - id: formation
+        text: People are decent but need formation. Make the rules teach as well as govern.
+        evidence: [{position: human.nature.sound-disposition, w: 3}]
+      - id: groups
+        text: Keep the groups small. People cooperate in bands and get suspicious in crowds.
+        evidence: [{position: human.nature.evolved, w: 3}]

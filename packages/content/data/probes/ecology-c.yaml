@@ -1,0 +1,462 @@
+nodes:
+  # ---------------- ecology.crisis-cause ----------------
+  - id: probe.ecology.crisis-cause.amazon
+    type: explanation
+    title: The burning forest
+    text: >
+      Every dry season, fires clear tens of thousands of square kilometers of the Amazon. Most of the cleared
+      land becomes cattle pasture and soy fields, much of it for export. What, at bottom, is burning the
+      forest?
+    why: This asks what you think causes the ecological crisis, and what kind of cause you reach for.
+    options:
+      - id: profit
+        text: An economy that must grow for profit. Beef and soy pay more than standing trees, so the trees go.
+        cause: structures
+        evidence: [{position: ecology.crisis-cause.capital-accumulation, w: 3}]
+      - id: north
+        text: Rich countries' appetite. Their feedlots and their supermarkets eat the forest from a distance.
+        cause: structures
+        evidence: [{position: ecology.crisis-cause.core-appropriation, w: 3}]
+      - id: price
+        text: Nobody pays for the carbon or the rain the forest makes. Put a price on it and burning stops paying.
+        cause: interests
+        evidence: [{position: ecology.crisis-cause.market-failure, w: 3}]
+      - id: owners
+        text: Nobody owns most of it. Give clear titles and owners will protect what's theirs.
+        cause: structures
+        evidence: [{position: ecology.crisis-cause.missing-property-rights, w: 3}]
+      - id: people
+        text: Too many people needing too much food. The pressure has to go somewhere.
+        cause: nature
+        evidence: [{position: ecology.crisis-cause.too-many-people, w: 3}]
+      - id: mastery
+        text: The old human urge to conquer nature. It's in every bulldozer and every match.
+        cause: nature
+        evidence: [{position: ecology.crisis-cause.human-mastery, w: 3}]
+      - id: piety
+        text: A culture that forgot its debt to creation. People who still revere the land don't burn it like that.
+        cause: divine
+        evidence: [{position: ecology.crisis-cause.lost-piety, w: 3}]
+      - id: overstated
+        text: The numbers are exaggerated. Brazil has more forest than Europe ever kept, and farmers have to eat.
+        cause: individuals
+        evidence: [{position: ecology.crisis-cause.overstated, w: 3}]
+
+  - id: probe.ecology.crisis-cause.cod
+    type: scene
+    title: The empty sea
+    text: >
+      In 1992 the cod off Newfoundland, fished for five hundred years, collapsed. Thirty thousand people lost
+      their work overnight. Now the sardines off your coast are thinning. You sit on the fisheries board, and
+      the fleet owners, the small boats and the scientists all want something different.
+    why: This asks what you think causes ecological breakdown, by what you'd do to stop it.
+    options:
+      - id: quotas
+        text: Give each boat a tradeable share of the catch. Owners of a resource don't wreck it.
+        evidence: [{position: ecology.crisis-cause.missing-property-rights, w: 3}]
+      - id: tax
+        text: Charge for every tonne landed, at the cost to the stock. Make the damage show up in the price.
+        evidence: [{position: ecology.crisis-cause.market-failure, w: 3}]
+      - id: fleet
+        text: Ban the industrial trawlers. Fleets that have to repay their loans will fish to the last sardine.
+        evidence: [{position: ecology.crisis-cause.capital-accumulation, w: 3}]
+      - id: export
+        text: Stop the foreign factory ships and the export of fishmeal to feed Europe's salmon farms.
+        evidence: [{position: ecology.crisis-cause.core-appropriation, w: 3}]
+      - id: respect
+        text: Bring back the closed seasons and blessings of the fleet. The fishers who kept them never emptied the sea.
+        evidence: [{position: ecology.crisis-cause.lost-piety, w: 3}]
+      - id: more-mouths
+        text: There are three times as many boats as when my father fished. Too many people chasing too few fish.
+        evidence: [{position: ecology.crisis-cause.too-many-people, w: 3}]
+      - id: wait
+        text: Wait. Sardines come and go in cycles. Don't shut down a town for a bad few years.
+        evidence: [{position: ecology.crisis-cause.overstated, w: 3}]
+      - id: mastery
+        text: Sonar, satellites and nets a mile long. We built tools to take everything, and we used them.
+        evidence: [{position: ecology.crisis-cause.human-mastery, w: 3}]
+
+  - id: probe.ecology.crisis-cause.voices
+    type: voices
+    title: After the flood
+    text: >
+      A flood has drowned a district of Pakistan's Sindh province, one of many in recent years. In a relief
+      camp, three people argue about whose fault it is. Who is right?
+    voices:
+      - {name: "A hydrologist from Karachi", says: "We emit a fraction of a percent of the world's carbon. The rain was made in New York and Beijing."}
+      - {name: "A cleric from the camp mosque", says: "We cut the trees, filled the riverbeds with houses and forgot that the land is a trust. This is a reckoning."}
+      - {name: "A landowner's agent", says: "Floods have always come. The government should build better embankments and stop exaggerating."}
+    why: This asks what you think causes the ecological crisis, through three people in one relief camp.
+    options:
+      - id: hydrologist
+        text: The hydrologist. Rich countries took the atmosphere and the poor pay.
+        cause: structures
+        evidence: [{position: ecology.crisis-cause.core-appropriation, w: 3}]
+      - id: cleric
+        text: The cleric. We forgot our debt to creation.
+        cause: divine
+        evidence: [{position: ecology.crisis-cause.lost-piety, w: 3}]
+      - id: agent
+        text: The agent. It's exaggerated; build better and get on with it.
+        cause: individuals
+        evidence: [{position: ecology.crisis-cause.overstated, w: 3}]
+      - id: growth
+        text: All three skip the engine. An economy that must keep growing for profit, in Karachi too.
+        cause: structures
+        evidence: [{position: ecology.crisis-cause.capital-accumulation, w: 3}]
+      - id: price
+        text: All three skip the fix. Make polluters pay the cost of the damage and behavior changes.
+        cause: interests
+        evidence:
+          - {position: ecology.crisis-cause.market-failure, w: 2}
+          - {position: ecology.crisis-cause.missing-property-rights, w: 1}
+      - id: numbers
+        text: All three skip the camp itself. Two hundred million people on one river basin.
+        cause: nature
+        evidence: [{position: ecology.crisis-cause.too-many-people, w: 3}]
+      - id: control
+        text: The cleric is close. It's the human drive to master nature, in every dam and every smokestack.
+        cause: nature
+        evidence: [{position: ecology.crisis-cause.human-mastery, w: 3}]
+
+  # ---------------- growth.ecology ----------------
+  - id: probe.growth.ecology.manifesto
+    type: scene
+    title: The manifesto line
+    text: >
+      You are writing the one sentence on ecology in your party's manifesto. It has to fit on a leaflet, and
+      it will be quoted back at you for years. Which do you write?
+    why: This asks what you think should be done about growth and the ecological crisis.
+    options:
+      - id: green
+        text: "Keep growing, but clean: green jobs, green industry, green growth."
+        evidence: [{position: growth.ecology.green-growth, w: 3}]
+      - id: eco-mod
+        text: "More technology, less nature used: nuclear, lab meat, dense cities, and wild land given back."
+        evidence: [{position: growth.ecology.ecomodernism, w: 3}]
+      - id: degrowth
+        text: "Rich countries use less: less energy, less stuff, more time and more public goods."
+        evidence: [{position: growth.ecology.degrowth, w: 3}]
+      - id: plan
+        text: "Plan production for human need within the planet's limits, not for profit."
+        evidence: [{position: growth.ecology.ecosocialism, w: 3}]
+      - id: deep
+        text: "Shrink the human footprint, for the sake of all life, not only ours."
+        evidence: [{position: growth.ecology.deep-ecology, w: 3}]
+      - id: south
+        text: "We will develop first. The countries that burned the most can cut the most."
+        evidence: [{position: growth.ecology.southern-right-to-develop, w: 3}]
+      - id: grow
+        text: "Growth is the cure. Rich countries can afford to adapt and innovate; poor ones can't."
+        evidence: [{position: growth.ecology.growth-is-the-cure, w: 3}]
+      - id: home
+        text: "Conserve the land we love, our fields and rivers, not some planetary plan from above."
+        evidence: [{position: growth.ecology.home-and-stewardship, w: 3}]
+
+  - id: probe.growth.ecology.voices
+    type: voices
+    title: The summit fringe
+    text: >
+      On the fringe of a climate summit, three delegates share a taxi. Who has the right answer to growth?
+    voices:
+      - {name: "An Indian trade negotiator", says: "Three hundred million of our people don't have reliable electricity. Don't lecture us about limits."}
+      - {name: "A Swedish degrowth economist", says: "Rich countries can't decouple fast enough. We need to use less, and live well on it."}
+      - {name: "A Danish wind-industry executive", says: "Look at our turbines. Growth and emissions have already come apart. Build more, faster."}
+    why: This asks what you think should be done about growth and ecology, through three people in one taxi.
+    options:
+      - id: india
+        text: The negotiator. The South has the right to develop first.
+        cause: interests
+        evidence: [{position: growth.ecology.southern-right-to-develop, w: 3}]
+      - id: sweden
+        text: The economist. Rich countries must shrink their use.
+        cause: structures
+        evidence: [{position: growth.ecology.degrowth, w: 3}]
+      - id: denmark
+        text: The executive. Green growth works.
+        cause: ideas
+        evidence: [{position: growth.ecology.green-growth, w: 3}]
+      - id: plan
+        text: All three take the market as given. Plan production for need within limits.
+        cause: structures
+        evidence: [{position: growth.ecology.ecosocialism, w: 3}]
+      - id: tech
+        text: The executive, but go further. Nuclear, synthetic food and cities that free land for the wild.
+        cause: ideas
+        evidence: [{position: growth.ecology.ecomodernism, w: 3}]
+      - id: life
+        text: All three talk only of people. The other species deserve the room back.
+        cause: nature
+        evidence: [{position: growth.ecology.deep-ecology, w: 3}]
+      - id: richer
+        text: The negotiator is right for everyone. Richer societies are the ones that can cope. Grow.
+        cause: interests
+        evidence: [{position: growth.ecology.growth-is-the-cure, w: 3}]
+      - id: local
+        text: Summits are the problem. People protect the places they love, not the planet in the abstract.
+        cause: culture
+        evidence: [{position: growth.ecology.home-and-stewardship, w: 3}]
+
+  - id: probe.growth.ecology.tradeoff
+    type: tradeoff
+    title: The steel plant
+    text: >
+      A new steel plant would employ 6,000 people in a poor province and double its income in ten years. It
+      would also add as much carbon as a small European country. You have the final say on the permit.
+    why: This asks how you weigh growth against ecological limits.
+    options:
+      - id: build-green
+        text: Build it, with hydrogen furnaces and a carbon price, even if it costs more. Grow, but clean.
+        evidence: [{position: growth.ecology.green-growth, w: 3}]
+      - id: build
+        text: Build it as planned. The province's children matter more than a carbon ledger.
+        evidence:
+          - {position: growth.ecology.growth-is-the-cure, w: 2}
+          - {position: growth.ecology.southern-right-to-develop, w: 2}
+      - id: nuclear
+        text: Build it next to a nuclear plant. Clean power at scale is the answer, not less steel.
+        evidence: [{position: growth.ecology.ecomodernism, w: 3}]
+      - id: plan
+        text: Build it public, for railways and housing the country needs, not for export profit.
+        evidence: [{position: growth.ecology.ecosocialism, w: 3}]
+      - id: elsewhere
+        text: Build it here, and let the rich countries close theirs. They used up the carbon budget.
+        evidence: [{position: growth.ecology.southern-right-to-develop, w: 3}]
+      - id: refuse
+        text: Refuse. The rich world needs less steel, not more plants anywhere.
+        evidence: [{position: growth.ecology.degrowth, w: 3}]
+      - id: wild
+        text: Refuse. The hills it would strip are home to more than people.
+        evidence: [{position: growth.ecology.deep-ecology, w: 3}]
+      - id: ask
+        text: Ask the province. If the people who live there want it and will look after the land, it's theirs to decide.
+        evidence: [{position: growth.ecology.home-and-stewardship, w: 3}]
+
+  # ---------------- population.question ----------------
+  - id: probe.population.question.eight-billion
+    type: explanation
+    title: Eight billion
+    text: >
+      The world passed eight billion people in 2022. In much of Africa families are still large; in Korea,
+      Italy and China births have collapsed. Is population the problem?
+    why: This asks whether you think population is the problem, and what kind of cause you reach for.
+    options:
+      - id: too-many
+        text: Yes. Eight billion is too many for one planet, whatever we consume.
+        cause: nature
+        evidence: [{position: population.question.too-many, w: 3}]
+      - id: consumption
+        text: No. The richest tenth does most of the damage. It's what they consume, not how many poor people there are.
+        cause: structures
+        evidence: [{position: population.question.consumption-not-numbers, w: 3}]
+      - id: surplus
+        text: The "surplus" people are made by an economy that has no use for them. Nature didn't make them surplus.
+        cause: structures
+        evidence: [{position: population.question.surplus-made-by-capital, w: 3}]
+      - id: resource
+        text: No. Every person is a mind as well as a mouth. More people, more ideas.
+        cause: ideas
+        evidence: [{position: population.question.people-are-the-resource, w: 3}]
+      - id: too-few
+        text: Wrong way round. The crisis is empty cradles in Seoul and Rome.
+        cause: culture
+        evidence: [{position: population.question.too-few-births, w: 3}]
+      - id: plan
+        text: It's a question for planning. A state should set targets as part of its development.
+        cause: structures
+        evidence: [{position: population.question.plan-it, w: 3}]
+      - id: settles
+        text: It settles itself. Educate girls and raise incomes, and families shrink on their own.
+        cause: structures
+        evidence: [{position: population.question.development-settles-it, w: 3}]
+      - id: who
+        text: The numbers that worry me are the ones crossing our borders, not the world total.
+        cause: nature
+        evidence: [{position: population.question.the-wrong-people, w: 3}]
+
+  - id: probe.population.question.policy
+    type: scene
+    title: The birth policy
+    text: >
+      You're a health minister. Your country's population will double in twenty-five years, and schools are
+      already at sixty pupils a class. The cabinet wants a population policy by the end of the month.
+    why: This asks whether you think population is the problem and what, if anything, the state should do about it.
+    conditions:
+      - id: which-groups
+        text: It depends which communities are growing fastest.
+        evidence: [{position: population.question.the-wrong-people, w: 2}]
+    options:
+      - id: targets
+        text: A national plan with targets, free contraception everywhere and incentives for small families.
+        evidence: [{position: population.question.plan-it, w: 3}]
+      - id: girls
+        text: No targets. Keep girls in school and get mothers jobs. Births will fall on their own.
+        evidence: [{position: population.question.development-settles-it, w: 3}]
+      - id: build
+        text: Build more schools. A growing young population is an asset if you invest in it.
+        evidence: [{position: population.question.people-are-the-resource, w: 3}]
+      - id: cut
+        text: Cut births firmly. A poor country can't feed twice the people.
+        evidence: [{position: population.question.too-many, w: 3}]
+      - id: wealth
+        text: The question is who owns the land and the jobs. Fix that and nobody will be "too many".
+        evidence: [{position: population.question.surplus-made-by-capital, w: 3}]
+      - id: rich
+        text: Refuse the premise. Our children use a tenth of what a European child does. Tell Europe to cut.
+        evidence: [{position: population.question.consumption-not-numbers, w: 3}]
+      - id: later
+        text: Careful. Look at Korea. Push births down too far and you'll be begging for babies in thirty years.
+        evidence: [{position: population.question.too-few-births, w: 3}]
+
+  - id: probe.population.question.voices
+    type: voices
+    title: The talk show
+    text: >
+      A talk show in Milan on Italy's falling birth rate. Three guests. Who is right?
+    voices:
+      - {name: "A demographer", says: "Every rich country that educated women saw births fall. It's development, not decadence."}
+      - {name: "A family-policy minister", says: "A nation without children has no future. We should pay people to have them."}
+      - {name: "An ecologist", says: "Fewer Italians is the best news for the climate this year."}
+    why: This asks whether you think population is the problem, through three guests with three answers.
+    options:
+      - id: demographer
+        text: The demographer. Development settles it.
+        cause: structures
+        evidence: [{position: population.question.development-settles-it, w: 3}]
+      - id: minister
+        text: The minister. Too few births is the real crisis.
+        cause: culture
+        evidence: [{position: population.question.too-few-births, w: 3}]
+      - id: ecologist
+        text: The ecologist. Fewer people is good news.
+        cause: nature
+        evidence: [{position: population.question.too-many, w: 3}]
+      - id: consumption
+        text: The ecologist has it backwards. It's how much each Italian consumes, not how many there are.
+        cause: structures
+        evidence: [{position: population.question.consumption-not-numbers, w: 3}]
+      - id: jobs
+        text: Young Italians would have children if they had jobs and homes. The economy decides who is surplus.
+        cause: structures
+        evidence: [{position: population.question.surplus-made-by-capital, w: 3}]
+      - id: minds
+        text: All three treat people as a cost. People are the ultimate resource.
+        cause: ideas
+        evidence: [{position: population.question.people-are-the-resource, w: 3}]
+      - id: plan
+        text: All three wait for it to happen. A state should plan its population like anything else.
+        cause: structures
+        evidence: [{position: population.question.plan-it, w: 3}]
+      - id: replace
+        text: The minister is right, for a reason she won't say. If Italians don't have children, others will take their place.
+        cause: nature
+        evidence: [{position: population.question.the-wrong-people, w: 3}]
+
+  # ---------------- climate.justice ----------------
+  - id: probe.climate.justice.yasuni
+    type: verdict
+    title: Leave it in the ground
+    text: >
+      Ecuador, 2007. The president offers to leave nearly a billion barrels of oil under the Yasuní rainforest
+      if rich countries pay half its value into a fund. By 2013 only a sliver has been pledged, and he
+      announces drilling. Where do you stand?
+    why: This asks who you think owes what for climate change, through a real offer that failed.
+    options:
+      - id: pay
+        text: With the offer. If the world wants it in the ground, the world pays the people who own it.
+        evidence: [{position: climate.justice.pay-us-to-leave-it, w: 3}]
+      - id: debt
+        text: The rich countries should have paid in full, and more. They owe the South for two centuries of emissions.
+        evidence: [{position: climate.justice.climate-debt, w: 3}]
+      - id: drill
+        text: Drill. Nobody owes Ecuador for the past, and Ecuador owes its own people roads and hospitals.
+        evidence: [{position: climate.justice.no-inherited-debt, w: 3}]
+      - id: all-act
+        text: Everyone has to act. The rich should help more, but Ecuador should keep it in the ground anyway.
+        evidence: [{position: climate.justice.shared-but-differentiated, w: 3}]
+      - id: firms
+        text: Make the oil majors pay. They made the money; they can fund the forest.
+        evidence: [{position: climate.justice.the-rich-and-the-firms, w: 3}]
+      - id: earth
+        text: The forest isn't anyone's to sell or spare. The debt is to the earth herself.
+        evidence: [{position: climate.justice.owed-to-mother-earth, w: 3}]
+      - id: future
+        text: The real creditors aren't born yet. Drill and you're spending their inheritance.
+        evidence: [{position: climate.justice.future-generations, w: 3}]
+
+  - id: probe.climate.justice.bill
+    type: allocation
+    title: Splitting the bill
+    text: >
+      Adapting to climate change will cost the world's poorer countries hundreds of billions a year. You are
+      deciding who pays. You have ten points.
+    why: This asks who you think owes what for climate change.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: rich-states
+          text: Rich countries, in proportion to their historic emissions
+          evidence: [{position: climate.justice.climate-debt, w: 2}]
+        - id: all-states
+          text: Every country by its means, with the rich going first
+          evidence: [{position: climate.justice.shared-but-differentiated, w: 2}]
+        - id: firms
+          text: Fossil fuel firms and the richest one percent, wherever they live
+          evidence: [{position: climate.justice.the-rich-and-the-firms, w: 2}]
+        - id: own
+          text: Each country pays for its own; nobody inherits a debt
+          evidence: [{position: climate.justice.no-inherited-debt, w: 2}]
+        - id: future
+          text: A trust for future generations, funded before anything else
+          evidence: [{position: climate.justice.future-generations, w: 2}]
+        - id: earth
+          text: Restoring forests, rivers and soils, as a debt to the earth itself
+          evidence: [{position: climate.justice.owed-to-mother-earth, w: 2}]
+        - id: leave
+          text: Payments to oil and coal countries to leave reserves in the ground
+          evidence: [{position: climate.justice.pay-us-to-leave-it, w: 2}]
+    options:
+      - {id: done, text: Done}
+
+  - id: probe.climate.justice.voices
+    type: voices
+    title: The negotiating room
+    text: >
+      Three negotiators argue at two in the morning over the final text of a climate deal. Who is right?
+    voices:
+      - {name: "A Bolivian delegate", says: "You speak of tonnes and dollars. The debt is to Pachamama, and she does not take checks."}
+      - {name: "A Saudi delegate", says: "We will leave oil in the ground the day someone pays us what it is worth. Until then, we sell it."}
+      - {name: "An American delegate", says: "Everyone acts, rich countries lead and help. But nobody alive today owes for what their great-grandparents burned."}
+    why: This asks who you think owes what for climate change, through three people at the table.
+    options:
+      - id: bolivia
+        text: The Bolivian. The debt is owed to the earth itself.
+        cause: divine
+        evidence: [{position: climate.justice.owed-to-mother-earth, w: 3}]
+      - id: saudi
+        text: The Saudi. Producers will leave it if paid.
+        cause: interests
+        evidence: [{position: climate.justice.pay-us-to-leave-it, w: 3}]
+      - id: usa
+        text: The American. Shared but differentiated, rich go first.
+        cause: ideas
+        evidence:
+          - {position: climate.justice.shared-but-differentiated, w: 3}
+          - {position: climate.justice.no-inherited-debt, w: 1}
+      - id: debt
+        text: The American is dodging. The rich countries owe a climate debt to the South.
+        cause: structures
+        evidence: [{position: climate.justice.climate-debt, w: 3}]
+      - id: firms
+        text: All three speak for states. The bill belongs to the oil majors and the very rich, in every country.
+        cause: interests
+        evidence: [{position: climate.justice.the-rich-and-the-firms, w: 3}]
+      - id: each
+        text: The American, further. Each nation looks after its own. Nobody owes for the past.
+        cause: individuals
+        evidence: [{position: climate.justice.no-inherited-debt, w: 3}]
+      - id: unborn
+        text: All three argue about the past. The ones owed are the children not yet born.
+        cause: ideas
+        evidence: [{position: climate.justice.future-generations, w: 3}]

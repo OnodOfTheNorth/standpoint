@@ -1,0 +1,454 @@
+nodes:
+  # ---------------- interests.objective ----------------
+  - id: probe.interests.objective.water-vote
+    type: verdict
+    title: The water vote
+    text: >
+      Your country votes, 58 to 42, to sell the national water company. Every adult gets a one-time payment
+      worth about two months' wages. Within three years water bills have doubled. Did the majority act in
+      its own interest?
+    why: This asks whether you think people have real interests apart from what they choose.
+    options:
+      - id: chose
+        text: Yes, by definition. They wanted the money more than cheap water. Nobody gets to overrule that.
+        evidence: [{position: interests.objective.revealed-preference, w: 3}]
+      - id: mistaken
+        text: No. Working people traded a public asset for pocket money. They mistook their interest, and the buyers didn't.
+        evidence: [{position: interests.objective.class-interests, w: 3}]
+      - id: need
+        text: No. Water is a need, not a preference. No vote changes what a person needs to live.
+        evidence: [{position: interests.objective.basic-needs, w: 3}]
+      - id: common
+        text: No. Some goods belong to everyone, including the unborn. A majority can't sell what isn't only theirs.
+        evidence: [{position: interests.objective.common-good, w: 3}]
+      - id: nation
+        text: No. A country that sells its water to foreigners is weaker. That's the interest that counts.
+        evidence: [{position: interests.objective.national-interest, w: 3}]
+      - id: campaign
+        text: The question is wrong. The no side never made water a cause people felt as their own. That's how interests get made.
+        evidence: [{position: interests.objective.constructed, w: 3}]
+
+  - id: probe.interests.objective.loan
+    type: voices
+    title: The payday loan
+    text: >
+      Nkechi, a cleaner in London, borrows £400 at an annual rate over 1,000 percent to cover rent. She knew
+      the terms. Three people argue about whether she acted against her own interest.
+    voices:
+      - {name: "An economist", says: "She had options and took this one. That tells you what she valued. Respect it."}
+      - {name: "A parish priest", says: "Usury harms the borrower whatever she signed. Some things are bad for people even when they choose them."}
+      - {name: "A housing organizer", says: "She and every cleaner in the building pay rent to the same landlord and interest to the same lender. That's her interest, whether she sees it yet or not."}
+    why: This asks whether you think people have interests apart from their choices, through one loan.
+    options:
+      - id: economist
+        text: The economist. Her choice is her interest.
+        cause: individuals
+        evidence: [{position: interests.objective.revealed-preference, w: 3}]
+      - id: priest
+        text: The priest. There's a real good for people, and usury works against it.
+        cause: ideas
+        evidence: [{position: interests.objective.common-good, w: 3}]
+      - id: organizer
+        text: The organizer. Her interest is set by where she stands, landlord and lender on one side, her on the other.
+        cause: structures
+        evidence: [{position: interests.objective.class-interests, w: 3}]
+      - id: needs
+        text: All three miss the simple part. She needs a roof and enough to eat. Start from that.
+        cause: nature
+        evidence: [{position: interests.objective.basic-needs, w: 3}]
+      - id: country
+        text: All three miss that a country where cleaners borrow at 1,000 percent is a weak country.
+        cause: structures
+        evidence: [{position: interests.objective.national-interest, w: 3}]
+      - id: named
+        text: Her interest is whatever she comes to fight for. If tenants organize, it becomes rent. If not, nothing.
+        cause: ideas
+        evidence: [{position: interests.objective.constructed, w: 3}]
+
+  - id: probe.interests.objective.coal-town
+    type: tradeoff
+    title: The last mine
+    text: >
+      In a coal town in Mpumalanga, the last mine is slated to close. A government plan offers retraining and
+      a solar plant with fewer, cleaner jobs. Most of the miners say: keep the mine. The plan's author says
+      they are wrong about what's good for them. Who decides?
+    why: This asks whether people's real interests can differ from what they say they want.
+    options:
+      - id: miners
+        text: The miners. It's their lives and their lungs. Planners don't get to tell them what they want.
+        evidence: [{position: interests.objective.revealed-preference, w: 3}]
+      - id: class
+        text: The miners have a real interest in work that doesn't kill them, and the coal company has an interest in their fear. Both are real.
+        evidence: [{position: interests.objective.class-interests, w: 3}]
+      - id: needs
+        text: Look at what they need. Wages, health, a future for the children. Pick the plan that delivers that.
+        evidence: [{position: interests.objective.basic-needs, w: 3}]
+      - id: common
+        text: The town, the land and the next generation have a good of their own. That outranks both sides' wishes.
+        evidence: [{position: interests.objective.common-good, w: 3}]
+      - id: nation
+        text: Whichever gives the country cheaper power and fewer foreign debts. Individual towns come second.
+        evidence: [{position: interests.objective.national-interest, w: 3}]
+      - id: made
+        text: Neither has the answer yet. The miners' union will decide what the town's interest is by what it fights for.
+        evidence: [{position: interests.objective.constructed, w: 3}]
+
+  # ---------------- morality.basis ----------------
+  - id: probe.morality.basis.casino
+    type: reason
+    title: The casino
+    text: >
+      A company offers to build a casino in your town and fund a new hospital wing with part of the profits.
+      The council splits. You have the deciding vote, and the room wants to hear your reason as much as your
+      vote. What makes your answer right?
+    why: This asks where you think political right and wrong come from, by the reason you give.
+    options:
+      - id: nature
+        text: It feeds on a weakness that everyone, believer or not, can see is bad for people. No.
+        cause: nature
+        evidence: [{position: morality.basis.natural-law, w: 3}]
+      - id: god
+        text: Gambling is a sin. That settles it, hospital or not.
+        cause: divine
+        evidence: [{position: morality.basis.divine-command, w: 3}]
+      - id: sum
+        text: Count it up. Lives saved in the new wing against families ruined at the tables. Vote for the bigger number.
+        cause: interests
+        evidence: [{position: morality.basis.utility, w: 3}]
+      - id: consent
+        text: Adults may spend their money as they like. Yes, as long as nobody is forced in.
+        cause: ideas
+        evidence: [{position: morality.basis.rights-and-consent, w: 3}]
+      - id: whose
+        text: Ask who gains. Shareholders take from the poorest streets and hand back a ribbon-cutting. No.
+        cause: structures
+        evidence: [{position: morality.basis.historical-class, w: 3}]
+      - id: custom
+        text: This town has never been that kind of place. We know who we are. No.
+        cause: culture
+        evidence: [{position: morality.basis.tradition, w: 3}]
+      - id: strong
+        text: Yes. Towns that dare get hospitals. Towns that fret stay small.
+        cause: individuals
+        evidence: [{position: morality.basis.will-of-the-strong, w: 3}]
+      - id: decent
+        text: You don't need a theory. Fleecing your neighbors is just not decent.
+        cause: culture
+        evidence: [{position: morality.basis.decency, w: 3}]
+
+  - id: probe.morality.basis.murder
+    type: explanation
+    title: Why not kill
+    text: >
+      Nearly every society that has ever existed forbids killing a member of the community, and nearly every
+      one has made exceptions for war, execution or honor. What is behind the rule?
+    why: This asks where you think moral rules come from, and what kind of cause you reach for.
+    options:
+      - id: law
+        text: A law written into human nature. Reason finds it everywhere because it is there.
+        cause: nature
+        evidence: [{position: morality.basis.natural-law, w: 3}]
+      - id: god
+        text: God commanded it. The exceptions are where people disobeyed.
+        cause: divine
+        evidence: [{position: morality.basis.divine-command, w: 3}]
+      - id: welfare
+        text: Societies that allowed it fell apart. The rule exists because it makes everyone better off.
+        cause: interests
+        evidence: [{position: morality.basis.utility, w: 3}]
+      - id: pact
+        text: People agreed to give up killing in return for not being killed. It's a contract.
+        cause: ideas
+        evidence: [{position: morality.basis.rights-and-consent, w: 3}]
+      - id: class
+        text: Look at the exceptions. Every ruling class decides whose killing counts as murder and whose as order.
+        cause: structures
+        evidence: [{position: morality.basis.historical-class, w: 3}]
+      - id: custom
+        text: Communities learned it the hard way and passed it on. That's what morality is.
+        cause: culture
+        evidence: [{position: morality.basis.tradition, w: 3}]
+      - id: strong
+        text: The strong made the rule to keep order among their own, and kill whom they need to.
+        cause: individuals
+        evidence: [{position: morality.basis.will-of-the-strong, w: 3}]
+      - id: obvious
+        text: Because any normal person knows it's wrong. Some questions don't need an answer.
+        cause: nature
+        evidence: [{position: morality.basis.decency, w: 3}]
+
+  - id: probe.morality.basis.voices
+    type: voices
+    title: Three in a bar
+    text: >
+      A heated argument in a bar near the university about whether a government may lie to its people in a
+      war. Three voices carry. Who is right about what makes something right?
+    voices:
+      - {name: "A philosophy student", says: "Only consequences matter. If the lie saves more lives than it costs, tell it."}
+      - {name: "A Dominican friar", says: "Lying is wrong by its nature, whatever it buys. The good is not a sum."}
+      - {name: "A law lecturer", says: "Citizens never agreed to be lied to. A government that does breaks the terms of its own power."}
+    why: This asks where you think political right and wrong come from, through three people who disagree.
+    options:
+      - id: student
+        text: The student. Outcomes are what count.
+        cause: interests
+        evidence: [{position: morality.basis.utility, w: 3}]
+      - id: friar
+        text: The friar. Some things are wrong in themselves.
+        cause: nature
+        evidence:
+          - {position: morality.basis.natural-law, w: 3}
+          - {position: morality.basis.divine-command, w: 1}
+      - id: lecturer
+        text: The lecturer. Power rests on consent, and lying voids it.
+        cause: ideas
+        evidence: [{position: morality.basis.rights-and-consent, w: 3}]
+      - id: whose-war
+        text: All three skip whose war it is. A lie for a war of liberation and a lie for a war of plunder aren't the same lie.
+        cause: structures
+        evidence: [{position: morality.basis.historical-class, w: 3}]
+      - id: scripture
+        text: All three are reasoning their way to what was already commanded. God forbids false witness.
+        cause: divine
+        evidence: [{position: morality.basis.divine-command, w: 3}]
+      - id: tradition
+        text: All three think morality comes out of an argument. It comes out of a people's way of life.
+        cause: culture
+        evidence: [{position: morality.basis.tradition, w: 3}]
+      - id: winners
+        text: All three are naive. The winners decide afterwards what was right.
+        cause: individuals
+        evidence: [{position: morality.basis.will-of-the-strong, w: 3}]
+      - id: decent
+        text: Three degrees to say what my mother would say in one line. Don't lie to people.
+        cause: culture
+        evidence: [{position: morality.basis.decency, w: 3}]
+
+  # ---------------- change.possibility ----------------
+  - id: probe.change.possibility.flyer
+    type: scene
+    title: The bus route
+    text: >
+      The city is cutting the only bus line from your neighborhood to the hospital. A flyer on your door
+      announces a meeting Thursday at the community hall. You'd have to swap a shift to go. What do you do?
+    why: This asks whether you think ordinary people can change how things are run.
+    options:
+      - id: go
+        text: Go, and bring three neighbors. Enough people in one room can turn a city council around.
+        evidence: [{position: change.possibility.organized-people-can, w: 3}]
+      - id: pointless
+        text: Skip it. They've already decided. Meetings like that are there to let people shout.
+        evidence: [{position: change.possibility.power-always-wins, w: 3}]
+      - id: car
+        text: Skip it and start saving for a car. I can fix my own problem; I can't fix the city.
+        evidence: [{position: change.possibility.only-your-own-life, w: 3}]
+      - id: councillor
+        text: Write to the councillor. Things get done when someone capable up there decides to do them.
+        evidence: [{position: change.possibility.from-above, w: 3}]
+      - id: church
+        text: Organize rides from church. People helping people changes more than any council vote.
+        evidence: [{position: change.possibility.changed-hearts, w: 3}]
+      - id: wait
+        text: Go, but don't expect much. Real change comes when things break, and it isn't broken enough yet.
+        evidence: [{position: change.possibility.only-in-crisis, w: 3}]
+
+  - id: probe.change.possibility.eight-hours
+    type: explanation
+    title: Eight hours
+    text: >
+      In 1880 a factory day of twelve hours or more was normal almost everywhere. By 1940 dozens of countries,
+      from Mexico to the Soviet Union to France, had an eight-hour day in law. How did that happen?
+    why: This asks whether you think ordinary people can change how society runs, by how you explain a change that happened.
+    options:
+      - id: organized
+        text: Workers organized, struck and kept striking for fifty years until the law caught up.
+        cause: structures
+        evidence: [{position: change.possibility.organized-people-can, w: 3}]
+      - id: crisis
+        text: War and revolution. After 1917 owners everywhere were frightened, and gave ground to keep the rest.
+        cause: interests
+        evidence: [{position: change.possibility.only-in-crisis, w: 3}]
+      - id: leaders
+        text: Farsighted leaders and reformers who saw it would make industry stronger.
+        cause: individuals
+        evidence: [{position: change.possibility.from-above, w: 3}]
+      - id: suited
+        text: Machines made workers productive enough that owners could afford it. Power gave what cost it nothing.
+        cause: structures
+        evidence: [{position: change.possibility.power-always-wins, w: 3}]
+      - id: conscience
+        text: Consciences changed. Preachers and writers made people ashamed of child labor and the twelve-hour day.
+        cause: ideas
+        evidence: [{position: change.possibility.changed-hearts, w: 3}]
+      - id: mine
+        text: Good for them. What I can change is my own hours, by changing my job.
+        cause: individuals
+        evidence: [{position: change.possibility.only-your-own-life, w: 3}]
+
+  - id: probe.change.possibility.bus-stop
+    type: voices
+    title: After the count
+    text: >
+      The morning after an election in which turnout fell again, three people wait at a bus stop in
+      Johannesburg. Who is right?
+    voices:
+      - {name: "Thabo, a security guard", says: "New faces, same people behind them. I stopped voting in 2014. Nothing I do moves anything."}
+      - {name: "Lerato, a shop steward", says: "We got the wage floor raised by striking, not voting. Organized, we move things."}
+      - {name: "Mrs. Dlamini, a church elder", says: "Laws come and go. The country changes when people's hearts change, one family at a time."}
+    why: This asks whether you think ordinary people can change how society runs, through three people at a bus stop.
+    options:
+      - id: thabo
+        text: Thabo. The powerful always win in the end.
+        cause: structures
+        evidence: [{position: change.possibility.power-always-wins, w: 3}]
+      - id: lerato
+        text: Lerato. Organized people change things.
+        cause: interests
+        evidence: [{position: change.possibility.organized-people-can, w: 3}]
+      - id: dlamini
+        text: Mrs. Dlamini. Hearts first, then everything else.
+        cause: divine
+        evidence: [{position: change.possibility.changed-hearts, w: 3}]
+      - id: leader
+        text: All three are waiting for the wrong bus. Elect someone competent and let them work.
+        cause: individuals
+        evidence: [{position: change.possibility.from-above, w: 3}]
+      - id: own
+        text: All three are wasting their breath. Look after your own life. That's the part you control.
+        cause: individuals
+        evidence: [{position: change.possibility.only-your-own-life, w: 3}]
+      - id: crisis
+        text: Nothing moves until something breaks. Then all three will matter.
+        cause: chance
+        evidence: [{position: change.possibility.only-in-crisis, w: 3}]
+
+  # ---------------- history.motor ----------------
+  - id: probe.history.motor.rome
+    type: explanation
+    title: The fall of Rome
+    text: >
+      In the year 400 Rome ruled the Mediterranean. By 480 there was no emperor in the West. Historians have
+      offered over two hundred explanations. Which one do you reach for?
+    why: This asks what you think moves history, and what kind of cause you reach for.
+    options:
+      - id: class
+        text: Great landowners squeezed the peasants and dodged the taxes until no one would fight for the empire.
+        cause: structures
+        evidence: [{position: history.motor.class-struggle, w: 3}]
+      - id: ideas
+        text: Romans stopped believing in Rome. A new faith and new ideas pulled loyalty elsewhere.
+        cause: ideas
+        evidence: [{position: history.motor.ideas, w: 3}]
+      - id: men
+        text: A run of weak and murdered emperors at the moment strong ones were needed.
+        cause: individuals
+        evidence: [{position: history.motor.great-individuals, w: 3}]
+      - id: god
+        text: Empires rise and fall as God permits. Augustine wrote a whole book about it.
+        cause: divine
+        evidence: [{position: history.motor.providence, w: 3}]
+      - id: tech
+        text: Rome had stopped innovating. Its economy ran on slaves and muscle, and that hit a ceiling.
+        cause: structures
+        evidence: [{position: history.motor.technology, w: 3}]
+      - id: peoples
+        text: Younger, hungrier peoples pressed on the borders and won. That's how it has always gone.
+        cause: nature
+        evidence: [{position: history.motor.peoples-in-struggle, w: 3}]
+      - id: cycles
+        text: Every empire ages and decays. Rome's time was up.
+        cause: nature
+        evidence: [{position: history.motor.cycles, w: 3}]
+      - id: chance
+        text: Plague, bad harvests and a few lost battles. Roll the dice again and Rome survives.
+        cause: chance
+        evidence: [{position: history.motor.contingency, w: 3}]
+
+  - id: probe.history.motor.two-centuries
+    type: explanation
+    title: Why so fast
+    text: >
+      Human life changed more between 1800 and today than in the five thousand years before. Most people
+      then farmed. Most people now live in cities, and some carry the world's libraries in their pockets.
+      What drove it?
+    why: This asks what you think moves history, by how you explain the biggest change in it.
+    options:
+      - id: class
+        text: A new class of owners hiring wage workers, and the fight between them, remade everything.
+        cause: structures
+        evidence: [{position: history.motor.class-struggle, w: 3}]
+      - id: ideas
+        text: Ideas. Reason, science, liberty and the belief that the world could be improved.
+        cause: ideas
+        evidence: [{position: history.motor.ideas, w: 3}]
+      - id: inventors
+        text: A few thousand inventors, scientists and builders. Take them away and nothing happens.
+        cause: individuals
+        evidence: [{position: history.motor.great-individuals, w: 3}]
+      - id: machines
+        text: The steam engine, electricity, the chip. Technology leads and society follows.
+        cause: structures
+        evidence: [{position: history.motor.technology, w: 3}]
+      - id: conquest
+        text: One civilization outcompeted and conquered the rest.
+        cause: nature
+        evidence: [{position: history.motor.peoples-in-struggle, w: 3}]
+      - id: god
+        text: God's purposes work through history, including this part.
+        cause: divine
+        evidence: [{position: history.motor.providence, w: 3}]
+      - id: cycle
+        text: It's the upswing. Every civilization has one, and every one comes down.
+        cause: nature
+        evidence: [{position: history.motor.cycles, w: 3}]
+      - id: luck
+        text: Coal happened to lie near the surface in England. Much of it is luck.
+        cause: chance
+        evidence: [{position: history.motor.contingency, w: 3}]
+
+  - id: probe.history.motor.voices
+    type: voices
+    title: The history teachers
+    text: >
+      Three history teachers at the same school are asked what the one lesson of their subject is. Who is
+      right?
+    voices:
+      - {name: "Mr. Osei", says: "Who worked, who owned, and how they fought. Every chapter is that."}
+      - {name: "Ms. Varga", says: "Ideas. Change what people believe and you change what they build."}
+      - {name: "Brother Tomás", says: "History is the story of God's patience with us. Read it with that in mind."}
+    why: This asks what you think moves history, through three teachers with three answers.
+    options:
+      - id: osei
+        text: Mr. Osei. Class struggle over who produces and who takes.
+        cause: structures
+        evidence: [{position: history.motor.class-struggle, w: 3}]
+      - id: varga
+        text: Ms. Varga. Ideas move the world.
+        cause: ideas
+        evidence: [{position: history.motor.ideas, w: 3}]
+      - id: tomas
+        text: Brother Tomás. Providence.
+        cause: divine
+        evidence: [{position: history.motor.providence, w: 3}]
+      - id: heroes
+        text: All three skip the people who made the decisions. History is biography.
+        cause: individuals
+        evidence: [{position: history.motor.great-individuals, w: 3}]
+      - id: tools
+        text: All three skip the plough, the steam engine and the computer.
+        cause: structures
+        evidence: [{position: history.motor.technology, w: 3}]
+      - id: nations
+        text: All three skip the nations and civilizations rising and falling against each other.
+        cause: nature
+        evidence:
+          - {position: history.motor.peoples-in-struggle, w: 2}
+          - {position: history.motor.cycles, w: 1}
+      - id: wheel
+        text: The real lesson is that it all comes round again.
+        cause: nature
+        evidence: [{position: history.motor.cycles, w: 3}]
+      - id: none
+        text: There is no one lesson. Things happen, and we tell stories afterwards.
+        cause: chance
+        evidence: [{position: history.motor.contingency, w: 3}]

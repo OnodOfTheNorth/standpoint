@@ -1,0 +1,392 @@
+nodes:
+  # ---------------- care.work ----------------
+  - id: probe.care.work.mother
+    type: scene
+    title: Your mother forgets
+    text: >
+      Your mother, 81, has started leaving the gas on. She can't live alone any longer. You and your brother
+      both work full time; his wife works nights. The family meets at her kitchen table on Sunday. What do you
+      propose?
+    why: This asks who you think should do the work of care, and whether it should be paid.
+    options:
+      - id: family
+        text: One of us steps back from work and cares for her. That's what family is for, and the rest of us chip in.
+        evidence: [{position: care.work.family-vocation, w: 3}]
+      - id: buy
+        text: Pay for a good care home or a live-in carer. It's a service, and professionals do it better.
+        evidence: [{position: care.work.market-service, w: 3}]
+      - id: public
+        text: Push the council for the public home care she paid taxes for. If it's not there, that's the fight.
+        evidence: [{position: care.work.socialize, w: 3}]
+      - id: wage
+        text: Whoever cares for her should be paid for it, by the state. It's work, even when it's your mother.
+        evidence: [{position: care.work.wages-for-housework, w: 3}]
+      - id: migrant
+        text: Hire a carer from abroad, on a real contract with days off and a visa for her own children. Her mother is somebody's job too.
+        evidence: [{position: care.work.care-drain, w: 3}]
+      - id: income
+        text: If everyone had a basic income, one of us could just do it without going broke. That's the real answer.
+        evidence: [{position: care.work.unconditional-income, w: 3}]
+      - id: neighbors
+        text: Ask her street and her church. A rota of neighbors, and we take our turn for theirs.
+        evidence: [{position: care.work.community-reciprocity, w: 3}]
+
+  - id: probe.care.work.budget
+    type: allocation
+    title: The family budget
+    text: >
+      The finance ministry has a sum to spend on care for children and the old. You decide where it goes.
+      You have ten points.
+    why: This asks how you think the work of care should be organized and paid for.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: stay-home
+          text: A family allowance large enough for one parent to stay home
+          evidence: [{position: care.work.family-vocation, w: 2}]
+        - id: credits
+          text: Tax credits so families can buy the childcare and elder care they choose
+          evidence: [{position: care.work.market-service, w: 2}]
+        - id: public
+          text: Free public nurseries and elder care, with unionized staff on good pay
+          evidence: [{position: care.work.socialize, w: 2}]
+        - id: wages
+          text: A wage paid to whoever does the caring at home
+          evidence: [{position: care.work.wages-for-housework, w: 2}]
+        - id: migrants
+          text: Full labor rights, residence and family visas for migrant care workers
+          evidence: [{position: care.work.care-drain, w: 2}]
+        - id: basic
+          text: A basic income for every adult, no questions asked
+          evidence: [{position: care.work.unconditional-income, w: 2}]
+        - id: circles
+          text: Grants to neighborhood mutual-aid circles and care cooperatives
+          evidence: [{position: care.work.community-reciprocity, w: 2}]
+    options:
+      - {id: done, text: Done}
+
+  - id: probe.care.work.voices
+    type: voices
+    title: Sunday in the park
+    text: >
+      Sunday in Hong Kong's Central district. Thousands of domestic workers spend their one day off on
+      cardboard under the bank towers. A reporter asks three women about care. Who is right?
+    voices:
+      - {name: "Joy, a Filipina domestic worker", says: "I raise my employer's two boys. My own daughter in Batangas is raised by my sister. Somebody's children always pay."}
+      - {name: "Mrs. Leung, her employer, a lawyer", says: "Without Joy I couldn't work. She earns more here than at home. It's a fair deal for both of us."}
+      - {name: "Giulia, a visiting Italian feminist", says: "Housework makes every worker in those towers. It's the work nobody pays for, and that's where the profit starts."}
+    why: This asks who you think does the work of care and whether it should be paid, through three women who see it differently.
+    options:
+      - id: joy
+        text: Joy. Care flows from poor countries to rich households, and someone's children pay.
+        cause: structures
+        evidence: [{position: care.work.care-drain, w: 3}]
+      - id: leung
+        text: Mrs. Leung. A fair trade freely made, and it lets women work.
+        cause: individuals
+        evidence: [{position: care.work.market-service, w: 3}]
+      - id: giulia
+        text: Giulia. Unpaid care is the hidden foundation; demand wages for it.
+        cause: interests
+        evidence: [{position: care.work.wages-for-housework, w: 3}]
+      - id: home
+        text: All three skip the obvious. Children should be raised by their own mothers, and wages should make that possible.
+        cause: culture
+        evidence: [{position: care.work.family-vocation, w: 3}]
+      - id: public
+        text: All three need free public childcare. Then nobody has to import anyone's mother.
+        cause: structures
+        evidence: [{position: care.work.socialize, w: 3}]
+      - id: basic
+        text: Give everyone an income of their own and the whole deal changes.
+        cause: structures
+        evidence: [{position: care.work.unconditional-income, w: 3}]
+      - id: village
+        text: Look at Joy's sister. Kin and neighbors caring for each other is the thing that actually works.
+        cause: culture
+        evidence: [{position: care.work.community-reciprocity, w: 3}]
+
+  # ---------------- culture.war ----------------
+  - id: probe.culture.war.library-book
+    type: explanation
+    title: The library book
+    text: >
+      A picture book about a boy with two fathers is pulled from a school library in a small town. Within a
+      week it is the top story in a national election, ahead of rents, wages and the hospital waiting lists.
+      Why?
+    why: This asks whether you see the culture wars as real conflicts or a diversion, and what kind of cause you reach for.
+    options:
+      - id: real-right
+        text: Because parents sense that what children are taught decides what the nation becomes. It's the real fight.
+        cause: culture
+        evidence: [{position: culture.war.civilizational-struggle, w: 3}]
+      - id: real-left
+        text: Because families with two dads exist, and some people want them erased. It's a real fight about real people.
+        cause: ideas
+        evidence: [{position: culture.war.rights-against-reaction, w: 3}]
+      - id: diversion
+        text: Because it's cheaper for both parties to fight about a book than about rents and wages.
+        cause: interests
+        evidence: [{position: culture.war.manufactured-diversion, w: 3}]
+      - id: roots
+        text: Because the town lost its factory and its churches, and people fight about values when they've lost the ground under them.
+        cause: structures
+        evidence: [{position: culture.war.material-roots, w: 3}]
+      - id: elite
+        text: Because a small, credentialed elite has been deciding these things from above, and people are pushing back.
+        cause: ideas
+        evidence: [{position: culture.war.woke-elite, w: 3}]
+      - id: media
+        text: Because outrage gets clicks. Ask the town; most people there shrugged.
+        cause: individuals
+        evidence: [{position: culture.war.media-spectacle, w: 3}]
+      - id: copied
+        text: Because it's a copy of a fight from another country. Same book, same slogans, same donors, translated.
+        cause: structures
+        evidence: [{position: culture.war.exported-from-the-core, w: 3}]
+
+  - id: probe.culture.war.aid-and-bill
+    type: scene
+    title: The bill and the aid
+    text: >
+      Your parliament in Kampala debates a harsh bill against gay people. An American preacher spoke at its
+      launch. A European embassy warns that aid will be cut if it passes. The same month, fuel prices rise
+      by a third. Your cousin, an MP, asks what you'd do.
+    why: This asks whether you see a culture war as a real conflict, a diversion, or an import.
+    options:
+      - id: defend
+        text: Pass it. We defend our families and our faith, whatever Europe pays us.
+        evidence: [{position: culture.war.civilizational-struggle, w: 3}]
+      - id: oppose
+        text: Vote against. Gay Ugandans are Ugandans, and their safety isn't a foreign agenda.
+        evidence: [{position: culture.war.rights-against-reaction, w: 3}]
+      - id: fuel
+        text: Look at the calendar. This bill arrives the month fuel goes up. Ask who benefits.
+        evidence: [{position: culture.war.manufactured-diversion, w: 3}]
+      - id: imported
+        text: Both sides are imported. American preachers wrote half the bill and European diplomats wrote the threat.
+        evidence: [{position: culture.war.exported-from-the-core, w: 3}]
+      - id: roots
+        text: Young men without land or jobs, told their manhood is under threat. Fix that and the bill loses its crowd.
+        evidence: [{position: culture.war.material-roots, w: 3}]
+      - id: elites
+        text: A fight between two elites, the NGO class and the pulpit class. The market women aren't in it.
+        evidence:
+          - {position: culture.war.media-spectacle, w: 2}
+          - {position: culture.war.woke-elite, w: 1}
+
+  - id: probe.culture.war.training
+    type: voices
+    title: The workshop
+    text: >
+      Your employer, a bank in Toronto, makes everyone attend a half-day workshop on privilege. Afterwards,
+      three colleagues talk at the coffee machine. Who's right?
+    voices:
+      - {name: "Priya, from compliance", says: "They called fairness a white value and merit a myth. That isn't anti-racism. It's a new orthodoxy, and you can't question it."}
+      - {name: "Marcus, from the mailroom", says: "Funny how the bank that froze our wages for three years found money for this."}
+      - {name: "Dana, a branch manager", says: "My trans nephew was beaten up last month. If a workshop makes anyone here think twice, good."}
+    why: This asks how you read the culture wars, through three colleagues and one workshop.
+    options:
+      - id: priya
+        text: Priya. An elite ideology, imposed from above, against the liberal values it claims to defend.
+        cause: ideas
+        evidence: [{position: culture.war.woke-elite, w: 3}]
+      - id: marcus
+        text: Marcus. It's cheaper than a raise, and it keeps us arguing with each other.
+        cause: interests
+        evidence: [{position: culture.war.manufactured-diversion, w: 3}]
+      - id: dana
+        text: Dana. The struggle against bigotry is real, and the backlash is too.
+        cause: ideas
+        evidence: [{position: culture.war.rights-against-reaction, w: 3}]
+      - id: civilization
+        text: All three miss the stakes. This is about what we teach the next generation is true about men, women and the nation.
+        cause: culture
+        evidence: [{position: culture.war.civilizational-struggle, w: 3}]
+      - id: class
+        text: Priya and Dana are fighting about the professionals' moral language. Marcus is the only one talking about money. Both fights are real.
+        cause: structures
+        evidence: [{position: culture.war.material-roots, w: 3}]
+      - id: export
+        text: This workshop was written in California and will be translated for the bank's branches in Lagos and Manila.
+        cause: structures
+        evidence: [{position: culture.war.exported-from-the-core, w: 3}]
+      - id: shrug
+        text: None of them will remember this by Friday. Most people just get on with each other.
+        cause: individuals
+        evidence: [{position: culture.war.media-spectacle, w: 3}]
+
+  # ---------------- education.purpose ----------------
+  - id: probe.education.purpose.timetable
+    type: allocation
+    title: The timetable
+    text: >
+      A new secondary school gets to design its week from scratch. You have ten points to spread across what
+      the hours are for.
+    why: This asks what you think schooling is for, by how you spend its time.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: skills
+          text: Maths, coding and skills employers are hiring for
+          evidence: [{position: education.purpose.human-capital, w: 2}]
+        - id: nation
+          text: National history, language, anthem and civic duty
+          evidence: [{position: education.purpose.civic-pride, w: 2}]
+        - id: debate
+          text: Debate, philosophy and questioning sources, including the teachers
+          evidence: [{position: education.purpose.critical-citizens, w: 2}]
+        - id: world
+          text: Studying the pupils' own neighborhood, who owns it and how to change it
+          evidence: [{position: education.purpose.conscientization, w: 2}]
+        - id: work
+          text: Real work in a workshop or on a farm, alongside study
+          evidence: [{position: education.purpose.work-and-study, w: 2}]
+        - id: parents
+          text: Whatever each family chooses, including religious instruction, set by the parents
+          evidence: [{position: education.purpose.parental-authority, w: 2}]
+        - id: free
+          text: Unscheduled time for children to learn what they choose, or nothing at all
+          evidence: [{position: education.purpose.deschooling, w: 2}]
+    options:
+      - {id: done, text: Done}
+
+  - id: probe.education.purpose.drop-out
+    type: scene
+    title: She wants out
+    text: >
+      Your daughter is fifteen, clever and bored. She wants to leave school and spend her days building
+      furniture with her uncle and reading on her own. The headteacher says she's throwing away her future.
+      What do you say to her?
+    why: This asks what you think schooling is for.
+    options:
+      - id: jobs
+        text: Stay. The certificate is what employers look at. You can build furniture on weekends.
+        evidence: [{position: education.purpose.human-capital, w: 3}]
+      - id: mine
+        text: It's our decision as a family, not the headteacher's. Let's talk it over at home.
+        evidence: [{position: education.purpose.parental-authority, w: 3}]
+      - id: let-go
+        text: Go. Most of what matters is learned outside school anyway.
+        evidence: [{position: education.purpose.deschooling, w: 3}]
+      - id: both
+        text: The furniture is a real education. Schools should mix that kind of work in, not make kids choose.
+        evidence: [{position: education.purpose.work-and-study, w: 3}]
+      - id: think
+        text: Stay. School is where you learn to argue with people who aren't your uncle.
+        evidence: [{position: education.purpose.critical-citizens, w: 3}]
+      - id: belong
+        text: Stay. School is where you become part of the country, not just your family.
+        evidence: [{position: education.purpose.civic-pride, w: 3}]
+      - id: read-world
+        text: Stay, and ask why school bores you. A school that taught you to read your own world wouldn't.
+        evidence: [{position: education.purpose.conscientization, w: 3}]
+
+  - id: probe.education.purpose.voices
+    type: voices
+    title: Teachers' conference
+    text: >
+      At a teachers' conference in Havana, three delegates argue about what schools are for. Who has it?
+    voices:
+      - {name: "A Brazilian literacy teacher", says: "My adult students learned to read with the words 'land', 'wage' and 'slum'. They read the world before they read the word."}
+      - {name: "A Cuban rural school director", says: "Our pupils study in the morning and work in the fields in the afternoon. Nobody here grows up thinking hands are beneath heads."}
+      - {name: "A Singaporean ministry official", says: "We have no oil and no land. Our only resource is skilled people. Schools exist to make them."}
+    why: This asks what you think schooling is for, through three teachers with three answers.
+    options:
+      - id: brazil
+        text: The literacy teacher. Education is for the oppressed to understand their world and change it.
+        cause: structures
+        evidence: [{position: education.purpose.conscientization, w: 3}]
+      - id: cuba
+        text: The Cuban director. Unite study and productive work.
+        cause: structures
+        evidence: [{position: education.purpose.work-and-study, w: 3}]
+      - id: singapore
+        text: The Singaporean. Schools build the skills a country lives on.
+        cause: interests
+        evidence: [{position: education.purpose.human-capital, w: 3}]
+      - id: parents
+        text: All three speak for the state. Parents should decide what their children learn.
+        cause: individuals
+        evidence: [{position: education.purpose.parental-authority, w: 3}]
+      - id: citizens
+        text: All three miss loyalty. A school should make citizens who love their country.
+        cause: culture
+        evidence: [{position: education.purpose.civic-pride, w: 3}]
+      - id: doubt
+        text: All three want to fill children with something. Teach them to doubt, including their teachers.
+        cause: ideas
+        evidence: [{position: education.purpose.critical-citizens, w: 3}]
+      - id: unschool
+        text: All three run compulsory schools. Children learn best when nobody forces them.
+        cause: ideas
+        evidence: [{position: education.purpose.deschooling, w: 3}]
+
+  # ---------------- religion.public ----------------
+  - id: probe.religion.public.crucifix
+    type: scene
+    title: The wall above the board
+    text: >
+      A parent at your children's state school asks for the crucifix above the blackboard to come down. It
+      has hung there for sixty years. The board meets Tuesday, and you are on it.
+    why: This asks what place you think religion should have in public life.
+    options:
+      - id: equal
+        text: Take it down, and don't put anything else up. The state school belongs to every faith equally.
+        evidence: [{position: religion.public.separation, w: 3}]
+      - id: laic
+        text: Take it down, and the headscarves and prayer rooms too. Public institutions are secular, full stop.
+        evidence: [{position: religion.public.laicite, w: 3}]
+      - id: heritage
+        text: Leave it. It's part of who this country is. Nobody is forced to pray.
+        evidence: [{position: religion.public.heritage-establishment, w: 3}]
+      - id: divine
+        text: Leave it, and teach what it means. The law of God comes before the school board.
+        evidence: [{position: religion.public.divine-law, w: 3}]
+      - id: nation
+        text: Leave it. This is a Christian nation. Others are welcome to live here on those terms.
+        evidence: [{position: religion.public.faith-as-nation, w: 3}]
+      - id: prophetic
+        text: Honestly, the crucifix belongs with the poor more than over a blackboard. I'd rather the church fed the kids breakfast.
+        evidence: [{position: religion.public.prophetic-church, w: 3}]
+      - id: fade
+        text: Leave it or take it, it doesn't matter. When people stop needing consolation, the crucifix will come down on its own.
+        evidence: [{position: religion.public.withers-with-its-causes, w: 3}]
+
+  - id: probe.religion.public.why-faith
+    type: explanation
+    title: Full pews, empty pews
+    text: >
+      Churches are emptying in Denmark and filling in Nigeria. Mosques are full in Cairo, pews half full in
+      Mexico City and Pentecostal halls overflowing in São Paulo's outskirts. What explains where faith
+      grows?
+    why: This asks what place you think religion has in society, and what kind of cause you reach for.
+    options:
+      - id: misery
+        text: Faith grows where life is hardest. Give people security and it fades. It answers a need.
+        cause: structures
+        evidence: [{position: religion.public.withers-with-its-causes, w: 3}]
+      - id: truth
+        text: Faith grows where people are open to God, and fades where comfort makes them deaf.
+        cause: divine
+        evidence:
+          - {position: religion.public.divine-law, w: 2}
+          - {position: religion.public.heritage-establishment, w: 1}
+      - id: freedom
+        text: Faith thrives where the state leaves it alone. Established churches empty; free churches compete and fill.
+        cause: structures
+        evidence: [{position: religion.public.separation, w: 3}]
+      - id: poor
+        text: It grows where the church stands with the poor. Where it sided with power, people left.
+        cause: interests
+        evidence: [{position: religion.public.prophetic-church, w: 3}]
+      - id: identity
+        text: Where faith and nation are one, faith holds. Cut it from the nation and it dies.
+        cause: culture
+        evidence: [{position: religion.public.faith-as-nation, w: 3}]
+      - id: education
+        text: Education and science. Where reason enters public life, belief retreats to private life, where it belongs.
+        cause: ideas
+        evidence: [{position: religion.public.laicite, w: 3}]

@@ -1,0 +1,397 @@
+nodes:
+  # ---------------- hist.wwi-1914 ----------------
+  - id: probe.hist.wwi-1914.war-credits
+    type: verdict
+    title: The fourth of August
+    text: >
+      Berlin, 4 August 1914. You sit in the Reichstag for the socialist party. For years the party has
+      promised that workers will not shoot workers. Now the Russian army is mobilizing, and the chancellor
+      wants money for war. Your caucus has decided to vote yes, as a bloc. The roll call reaches your name.
+    why: This asks how you read the First World War, through the vote that split the socialist movement.
+    options:
+      - id: no
+        text: Vote no. This is a war among empires for colonies and markets, and workers have no side in it.
+        evidence: [{position: hist.wwi-1914.imperialist-war, w: 3}]
+      - id: yes
+        text: Vote yes. Cossacks are coming, and a workers' party that abandons its country in war deserves no country.
+        evidence: [{position: hist.wwi-1914.national-defense, w: 3}]
+      - id: kaiser
+        text: Vote no, but for a different reason. The Kaiser's government wanted this war, and I won't fund its gamble.
+        evidence: [{position: hist.wwi-1914.german-bid, w: 3}]
+      - id: trapped
+        text: Vote yes with a heavy heart. Nobody in any capital wanted this; the timetables have taken over.
+        evidence: [{position: hist.wwi-1914.sleepwalkers, w: 3}]
+      - id: colonies
+        text: Whatever I vote, ask who will be digging the trenches. Africans and Indians, promised things nobody means to give.
+        evidence: [{position: hist.wwi-1914.colonial-war, w: 3}]
+      - id: front
+        text: Leave the chamber and enlist. The parties are finished; the front will make a new nation out of us.
+        evidence: [{position: hist.wwi-1914.front-generation, w: 3}]
+      - id: abstain
+        text: Walk out. Whatever the vote, a million young men will die for a few hundred yards of mud.
+        evidence: [{position: hist.wwi-1914.pointless-slaughter, w: 3}]
+
+  - id: probe.hist.wwi-1914.why
+    type: explanation
+    title: Why it came
+    text: >
+      In July 1914 an archduke is shot in Sarajevo. Five weeks later the five largest powers in Europe are at
+      war, and they will drag in their colonies and half the world. Of all the ways to explain that, which
+      comes closest?
+    why: This asks what you think caused the First World War, and what kind of cause you reach for.
+    options:
+      - id: empires
+        text: The great powers had carved up the world and were fighting over the next carving. Sarajevo was a match.
+        cause: structures
+        evidence: [{position: hist.wwi-1914.imperialist-war, w: 3}]
+      - id: berlin
+        text: Germany's leaders gave Austria a blank cheque, knowing it meant a general war, and hoped to win Europe.
+        cause: individuals
+        evidence: [{position: hist.wwi-1914.german-bid, w: 3}]
+      - id: miscalc
+        text: Alliances, mobilization schedules and men misreading each other. Each step was reasonable. The sum was a disaster.
+        cause: chance
+        evidence: [{position: hist.wwi-1914.sleepwalkers, w: 3}]
+      - id: defend
+        text: Every nation saw an enemy at the border and did what any nation does. You defend yourself.
+        cause: nature
+        evidence: [{position: hist.wwi-1914.national-defense, w: 3}]
+      - id: old-world
+        text: The old world of merchants and parliaments had gone soft. Only a war could produce something new.
+        cause: ideas
+        evidence: [{position: hist.wwi-1914.front-generation, w: 3}]
+      - id: colonial
+        text: The empires had colonies to draw men and money from, so they could afford to go all the way.
+        cause: interests
+        evidence: [{position: hist.wwi-1914.colonial-war, w: 3}]
+      - id: vanity
+        text: Old men with medals and no imagination. That's all it ever takes.
+        cause: individuals
+        evidence: [{position: hist.wwi-1914.pointless-slaughter, w: 3}]
+
+  - id: probe.hist.wwi-1914.three-letters
+    type: voices
+    title: Three letters home
+    text: >
+      Three letters written in 1919 sit in an archive. Each writer went through the war. Whose letter says
+      what it really was?
+    voices:
+      - {name: "A Punjabi sepoy, after two winters in Flanders", says: "We were told we fight for the King and India will be rewarded. My brother is buried near Ypres. Now they fire on a crowd at Amritsar."}
+      - {name: "A Bavarian corporal, back from the front", says: "Out there a baker's son and a baron's son shared one trench. At home the politicians sold us out. The front was the real nation."}
+      - {name: "A Clydeside machinist, jailed in 1916", says: "Our bosses and their bosses fought over who would own Africa and Mesopotamia. We did the dying. Never again will I march for them."}
+    why: This asks how you judge the First World War, through those who went through it.
+    options:
+      - id: sepoy
+        text: The sepoy. For most of the world it was the empires' war, and the broken promise is the lesson.
+        cause: structures
+        evidence: [{position: hist.wwi-1914.colonial-war, w: 3}]
+      - id: corporal
+        text: The corporal. The trenches forged something real, and the people at home betrayed it.
+        cause: ideas
+        evidence: [{position: hist.wwi-1914.front-generation, w: 3}]
+      - id: machinist
+        text: The machinist. A war for owners, paid for by workers.
+        cause: interests
+        evidence: [{position: hist.wwi-1914.imperialist-war, w: 3}]
+      - id: none
+        text: All three are angrier than the facts allow. Nobody planned it; the diplomats lost control.
+        cause: chance
+        evidence: [{position: hist.wwi-1914.sleepwalkers, w: 3}]
+      - id: aggressor
+        text: All three leave out who started it. The Allies were stopping a German bid for Europe.
+        cause: individuals
+        evidence:
+          - {position: hist.wwi-1914.german-bid, w: 3}
+          - {position: hist.wwi-1914.national-defense, w: 1}
+      - id: dead
+        text: All three are right that they were used. Meaning is something survivors add afterwards.
+        cause: individuals
+        evidence: [{position: hist.wwi-1914.pointless-slaughter, w: 3}]
+      - id: duty
+        text: All three forget that their countries were attacked and they answered. That still counts.
+        cause: nature
+        evidence: [{position: hist.wwi-1914.national-defense, w: 3}]
+
+  # ---------------- hist.argentina-2001 ----------------
+  - id: probe.hist.argentina-2001.corralito
+    type: verdict
+    title: The pots
+    text: >
+      Buenos Aires, 19 December 2001. Your savings, in dollars, are frozen in the bank: you may take out 250
+      pesos a week. Tonight the president declares a state of siege. Your neighbors come out banging pots and
+      walk toward the Plaza de Mayo. By tomorrow he will flee by helicopter. What are you watching?
+    why: This asks how you read Argentina's collapse of 2001, and who you think it belonged to.
+    options:
+      - id: fund
+        text: The IMF's favorite pupil going bankrupt on the IMF's own program.
+        evidence: [{position: hist.argentina-2001.imf-neoliberal-collapse, w: 3}]
+      - id: state
+        text: A state that spent what it didn't have, and now grabs my savings to cover it.
+        evidence: [{position: hist.argentina-2001.too-much-state, w: 3}]
+      - id: people
+        text: People who are done being governed. Tomorrow there will be assemblies on every corner.
+        evidence: [{position: hist.argentina-2001.popular-power, w: 3}]
+      - id: plunder
+        text: The bill for twenty-five years of the rich borrowing abroad and wiring the money out. Theirs left last week.
+        evidence: [{position: hist.argentina-2001.financial-plunder, w: 3}]
+      - id: machine
+        text: A palace fight. Watch who organized the buses to the supermarkets, and who takes over next.
+        evidence: [{position: hist.argentina-2001.machine-managed, w: 3}]
+
+  - id: probe.hist.argentina-2001.why
+    type: explanation
+    title: Why it broke
+    text: >
+      In 1991 Argentina ties the peso one-to-one to the dollar. Inflation vanishes. By 2001 unemployment is
+      near a fifth, the debt cannot be paid, and the banks are shut. Which account of the fall comes
+      closest?
+    why: This asks what you think caused Argentina's collapse, and what kind of cause you reach for.
+    options:
+      - id: model
+        text: The model itself. A fixed peso, open capital and debt-funded imports. The Fund prescribed it and it killed the patient.
+        cause: structures
+        evidence: [{position: hist.argentina-2001.imf-neoliberal-collapse, w: 3}]
+      - id: spending
+        text: Governments, federal and provincial, kept spending more than they collected. No currency survives that.
+        cause: individuals
+        evidence: [{position: hist.argentina-2001.too-much-state, w: 3}]
+      - id: elite
+        text: Since 1976 the big groups made money from finance, not factories, and the state picked up their debts.
+        cause: interests
+        evidence: [{position: hist.argentina-2001.financial-plunder, w: 3}]
+      - id: parties
+        text: The political class. Once the money ran out, the factions fought over the wreck.
+        cause: individuals
+        evidence:
+          - {position: hist.argentina-2001.machine-managed, w: 2}
+          - {position: hist.argentina-2001.popular-power, w: 1}
+      - id: culture
+        text: A country that wants European living standards and Latin American tax-paying. It always ends the same.
+        cause: culture
+        evidence:
+          - {position: hist.argentina-2001.too-much-state, w: 2}
+          - {position: hist.argentina-2001.machine-managed, w: 1}
+
+  - id: probe.hist.argentina-2001.after
+    type: voices
+    title: What came after
+    text: >
+      Five presidents in two weeks, then default, devaluation and a long climb back. Three people who lived
+      through it argue in a café in 2006. Who has the lesson?
+    voices:
+      - {name: "Marta, who helped take over a closed ceramics plant", says: "The owners walked out. We kept the kilns going without them. Four years on, we still do."}
+      - {name: "Hugo, a retired dentist whose dollars became pesos", says: "They froze my savings, cut them by two thirds and called it policy. The state robbed the people who did everything right."}
+      - {name: "Raúl, a ward organizer for the governing party", says: "The assemblies? Gone in a year. The welfare plans go through our offices now. In this country the machine always lands on its feet."}
+    why: This asks what you think Argentina's crisis meant, and what you think survived it.
+    options:
+      - id: marta
+        text: Marta. People ran things themselves, and that experience doesn't go away.
+        cause: structures
+        evidence: [{position: hist.argentina-2001.popular-power, w: 3}]
+      - id: hugo
+        text: Hugo. The real crime was the state taking savers' money to cover its own spending.
+        cause: individuals
+        evidence: [{position: hist.argentina-2001.too-much-state, w: 3}]
+      - id: raul
+        text: Raúl. It was always the machine, before, during and after.
+        cause: interests
+        evidence: [{position: hist.argentina-2001.machine-managed, w: 3}]
+      - id: default
+        text: All three miss that the recovery started the day the country stopped paying and showed the Fund the door.
+        cause: structures
+        evidence: [{position: hist.argentina-2001.imf-neoliberal-collapse, w: 3}]
+      - id: moved-out
+        text: All three miss the people whose money was already in Miami before the freeze.
+        cause: interests
+        evidence: [{position: hist.argentina-2001.financial-plunder, w: 3}]
+
+  # ---------------- hist.bolivia-2019 ----------------
+  - id: probe.hist.bolivia-2019.army-chief
+    type: verdict
+    title: The army speaks
+    text: >
+      La Paz, 10 November 2019. Three weeks of protest over a disputed count. Police units have mutinied. An
+      audit by the Organization of American States has just reported irregularities. On television the army
+      commander suggests the president resign. That evening Evo Morales does. What just happened?
+    why: This asks how you judge Bolivia's crisis of 2019, at the moment the president fell.
+    options:
+      - id: coup
+        text: A coup. When the army tells an elected president to go, the rest is paperwork.
+        evidence: [{position: hist.bolivia-2019.coup, w: 3}]
+      - id: uprising
+        text: The citizens won. He lost a referendum, rigged a count, and the people refused to accept it.
+        evidence: [{position: hist.bolivia-2019.fraud-uprising, w: 3}]
+      - id: both
+        text: He broke the rules first, and then the army broke them worse.
+        evidence: [{position: hist.bolivia-2019.both-broke-the-rules, w: 3}]
+      - id: movements
+        text: One state fell and another, more openly racist, takes over. The movements should trust neither.
+        evidence: [{position: hist.bolivia-2019.neither-evo-nor-the-right, w: 3}]
+      - id: term
+        text: The people said no in 2016. A leader who won't leave ends like this, every time.
+        evidence: [{position: hist.bolivia-2019.term-limits, w: 3}]
+
+  - id: probe.hist.bolivia-2019.line
+    type: line
+    title: Where it broke
+    text: >
+      Here is the sequence, in order. Read down. Where, for you, did someone first break the rules that
+      matter?
+    cases:
+      - February 2016. Voters narrowly reject letting Morales run a fourth time.
+      - 2017. The constitutional court rules he may run anyway, as a human right.
+      - October 2019. The quick count pauses for a day; his lead jumps when it resumes.
+      - November 2019. The OAS audit alleges fraud; police units mutiny.
+      - The army commander suggests resignation; Morales leaves.
+      - A senator swears herself in as president without a quorum.
+      - Soldiers and police kill protesters at Sacaba and Senkata.
+    why: This asks where you locate the break in Bolivia's crisis of 2019, by where you draw the line.
+    options:
+      - id: first
+        text: At the first case. Ignore a referendum and you have broken the only rule that counts.
+        evidence: [{position: hist.bolivia-2019.term-limits, w: 3}]
+      - id: count
+        text: At the count. The fraud was the break; the rest followed from it.
+        evidence: [{position: hist.bolivia-2019.fraud-uprising, w: 3}]
+      - id: army
+        text: At the army. Whatever came before, uniforms deciding who governs is the break.
+        evidence: [{position: hist.bolivia-2019.coup, w: 3}]
+      - id: twice
+        text: Twice. At the court ruling, and again at the army.
+        evidence: [{position: hist.bolivia-2019.both-broke-the-rules, w: 3}]
+      - id: earlier
+        text: Earlier than the list. When his government drove a highway through indigenous land and beat the marchers who objected.
+        evidence: [{position: hist.bolivia-2019.neither-evo-nor-the-right, w: 3}]
+
+  - id: probe.hist.bolivia-2019.voices
+    type: voices
+    title: El Alto and the lowlands
+    text: >
+      A year later, three Bolivians argue about November 2019. Who sees it straight?
+    voices:
+      - {name: "Doña Felipa, a market vendor in El Alto", says: "They burned the wiphala flag and shot our boys at Senkata. Nobody calls it fraud when it happens to us."}
+      - {name: "Andrés, a student in Santa Cruz", says: "I blocked streets for twenty days because my vote was stolen. Nobody paid me. Call it a coup if you like."}
+      - {name: "Marcial, a lowland indigenous leader", says: "Evo's road went through our forest. The new crowd wants us gone altogether. We do not need either palace."}
+    why: This asks how you read Bolivia's crisis of 2019, through three people on different sides of it.
+    options:
+      - id: felipa
+        text: Felipa. Indigenous people elected a government and the army and the old elite threw it out.
+        cause: interests
+        evidence: [{position: hist.bolivia-2019.coup, w: 3}]
+      - id: andres
+        text: Andrés. Ordinary citizens defended their vote.
+        cause: ideas
+        evidence: [{position: hist.bolivia-2019.fraud-uprising, w: 3}]
+      - id: marcial
+        text: Marcial. The movements are on their own, whoever holds the palace.
+        cause: structures
+        evidence: [{position: hist.bolivia-2019.neither-evo-nor-the-right, w: 3}]
+      - id: two-wrongs
+        text: Felipa and Andrés are both partly right. That's the tragedy.
+        cause: individuals
+        evidence: [{position: hist.bolivia-2019.both-broke-the-rules, w: 3}]
+      - id: referendum
+        text: All three skip 2016. He was told no and ran anyway.
+        cause: individuals
+        evidence: [{position: hist.bolivia-2019.term-limits, w: 3}]
+
+  # ---------------- hist.martial-law-philippines ----------------
+  - id: probe.hist.martial-law-philippines.edsa
+    type: verdict
+    title: Four days on EDSA
+    text: >
+      Manila, February 1986. Marcos claims victory in a snap election; the bishops say it was stolen. Two
+      officers defect, and the Cardinal calls people onto the avenue to shield them. Nuns kneel in front of
+      tanks. You are on EDSA with a rosary someone pressed into your hand. What are you part of?
+    why: This asks how you judge the Marcos dictatorship, at the moment it fell.
+    options:
+      - id: end
+        text: The end of fourteen years of jails, torture and theft. We are getting our republic back.
+        evidence: [{position: hist.martial-law-philippines.dictatorship-and-plunder, w: 3}]
+      - id: grace
+        text: A miracle. Soldiers will not fire on people who pray. Conscience is winning without a shot.
+        evidence: [{position: hist.martial-law-philippines.people-power-grace, w: 3}]
+      - id: faces
+        text: A change of faces. The landlords stay, the bases stay, and Washington has picked a new partner.
+        evidence: [{position: hist.martial-law-philippines.us-client, w: 3}]
+      - id: mistake
+        text: A mistake. He gave us order and roads. The oligarchs are taking the country back.
+        evidence: [{position: hist.martial-law-philippines.golden-age, w: 3}]
+      - id: cronies
+        text: The bankruptcy of his friends. They looted the banks dry, and the economy took him down with them.
+        evidence: [{position: hist.martial-law-philippines.crony-capture, w: 3}]
+      - id: south
+        text: A Manila party. In Mindanao the army that is switching sides burned our villages.
+        evidence: [{position: hist.martial-law-philippines.moro-war, w: 3}]
+
+  - id: probe.hist.martial-law-philippines.why-fell
+    type: explanation
+    title: Why it fell
+    text: >
+      Marcos ruled by decree from 1972, and by 1986 he was flown out on an American aircraft. What, above
+      all, ended his rule?
+    why: This asks what you think brought down the Marcos dictatorship, and what kind of cause you reach for.
+    options:
+      - id: people
+        text: Filipinos who wanted their rights back and would not stop, from the jails to the avenue.
+        cause: ideas
+        evidence: [{position: hist.martial-law-philippines.dictatorship-and-plunder, w: 3}]
+      - id: faith
+        text: The Church and the faithful. It was a moral victory, given, not taken.
+        cause: divine
+        evidence: [{position: hist.martial-law-philippines.people-power-grace, w: 3}]
+      - id: patron
+        text: Washington decided he had become a liability and arranged a cleaner replacement.
+        cause: interests
+        evidence: [{position: hist.martial-law-philippines.us-client, w: 3}]
+      - id: debt
+        text: His friends' monopolies and debts sank the economy, and then the business class turned on him.
+        cause: structures
+        evidence: [{position: hist.martial-law-philippines.crony-capture, w: 3}]
+      - id: smear
+        text: A campaign by the old oligarch families and their newspapers, who wanted their power back.
+        cause: individuals
+        evidence: [{position: hist.martial-law-philippines.golden-age, w: 3}]
+      - id: war
+        text: Years of war in Mindanao and in the countryside had worn his army down long before EDSA.
+        cause: structures
+        evidence:
+          - {position: hist.martial-law-philippines.moro-war, w: 2}
+          - {position: hist.martial-law-philippines.us-client, w: 1}
+
+  - id: probe.hist.martial-law-philippines.voices
+    type: voices
+    title: The son's election
+    text: >
+      2022. The dictator's son is elected president by a landslide. Three people in one family argue about
+      it over dinner. Who is right?
+    voices:
+      - {name: "Lola Remedios, from Ilocos", says: "In those years there was rice, there was peace, there were bridges. The young only know what the newspapers say."}
+      - {name: "Tito Ben, detained in 1974", says: "They used electric wires on me at Camp Crame. The family took billions. And now we vote them back."}
+      - {name: "Ate Noraida, married in from Sulu", says: "You argue about Manila. In Jolo the army burned the town in 1974. Nobody in this house has ever asked me about that."}
+    why: This asks how you judge the Marcos years, through three people who remember them differently.
+    options:
+      - id: lola
+        text: Lola. It was a time of order and building, and the stories have been inflated.
+        cause: individuals
+        evidence: [{position: hist.martial-law-philippines.golden-age, w: 3}]
+      - id: tito
+        text: Tito Ben. Torture and theft, and a country that forgot.
+        cause: individuals
+        evidence: [{position: hist.martial-law-philippines.dictatorship-and-plunder, w: 3}]
+      - id: noraida
+        text: Noraida. For the Muslim south it was a war, and it still is not counted.
+        cause: structures
+        evidence: [{position: hist.martial-law-philippines.moro-war, w: 3}]
+      - id: classes
+        text: All three miss that the same landlord families and the same foreign patron ran things before, during and after.
+        cause: interests
+        evidence: [{position: hist.martial-law-philippines.us-client, w: 3}]
+      - id: korea
+        text: All three miss the economics. Korea had a dictator too and got steel mills. We got cronies.
+        cause: structures
+        evidence: [{position: hist.martial-law-philippines.crony-capture, w: 3}]
+      - id: forgive
+        text: All three need to remember how it ended. With rosaries, not rifles. That is worth more than revenge.
+        cause: divine
+        evidence: [{position: hist.martial-law-philippines.people-power-grace, w: 3}]

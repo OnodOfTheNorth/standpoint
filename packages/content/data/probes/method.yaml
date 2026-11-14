@@ -1,0 +1,436 @@
+nodes:
+  # ---------------- progress.idea ----------------
+  - id: probe.progress.idea.birthday
+    type: scene
+    title: The ninetieth birthday
+    text: >
+      Your grandmother was born in 1935 in a village outside Oaxaca. Three of her nine children died before
+      they could walk. Her great-grandchildren have phones, student loans and no village. At her ninetieth
+      birthday a cousin raises a glass and asks the table whether things have got better. Everyone looks at
+      you.
+    why: This asks whether you think history moves forward, and if so, how.
+    options:
+      - id: better
+        text: Of course. Fewer dead children, more schooling, longer lives. Science and trade did that, and they keep doing it.
+        evidence: [{position: progress.idea.steady-improvement, w: 3}]
+      - id: fought
+        text: Better, but nobody handed it over. Every clinic and every school was fought for, and the village paid.
+        evidence: [{position: progress.idea.through-contradiction, w: 3}]
+      - id: lost
+        text: Richer and emptier. She had a village, a church and a place. They have a feed.
+        evidence: [{position: progress.idea.decline-from-tradition, w: 3}]
+      - id: tools
+        text: Better medicine, same people. The century that made penicillin also made the bomb.
+        evidence: [{position: progress.idea.technical-not-moral, w: 3}]
+      - id: god
+        text: Better and worse, and that isn't the measure. History is going where God means it to go.
+        evidence: [{position: progress.idea.toward-promised-end, w: 3}]
+      - id: whose
+        text: Better by whose yardstick? The village counted wealth differently, and nobody asked it.
+        evidence: [{position: progress.idea.western-myth, w: 3}]
+      - id: borrowed
+        text: Better on credit. Her grandchildren's comfort is borrowed from the planet, and the bill is due.
+        evidence: [{position: progress.idea.within-limits, w: 3}]
+
+  - id: probe.progress.idea.life-expectancy
+    type: explanation
+    title: The long century
+    text: >
+      In 1900 a newborn anywhere on earth could expect about 32 years of life. Today it is over 70. In the
+      same stretch, two world wars, famines and the fastest destruction of forests ever recorded. What does
+      that tell you?
+    why: This asks what you think progress is, and what kind of cause you see behind it.
+    options:
+      - id: reason
+        text: That reason, science and markets work, slowly, and the disasters were the exceptions.
+        cause: ideas
+        evidence: [{position: progress.idea.steady-improvement, w: 3}]
+      - id: struggle
+        text: That gains come through conflict. Sewers, vaccines and pensions were won by people who organized for them.
+        cause: structures
+        evidence: [{position: progress.idea.through-contradiction, w: 3}]
+      - id: tools
+        text: That our tools improve and our hearts don't. Same species, better machines.
+        cause: nature
+        evidence: [{position: progress.idea.technical-not-moral, w: 3}]
+      - id: decline
+        text: That longer lives aren't fuller ones. We traded meaning for years.
+        cause: culture
+        evidence: [{position: progress.idea.decline-from-tradition, w: 3}]
+      - id: providence
+        text: That history has a direction, and it isn't ours to set.
+        cause: divine
+        evidence: [{position: progress.idea.toward-promised-end, w: 3}]
+      - id: story
+        text: That the rich world wrote the chart and put itself at the top of it.
+        cause: interests
+        evidence: [{position: progress.idea.western-myth, w: 3}]
+      - id: limits
+        text: That the gains were bought with coal and oil, and the next century inherits the cost.
+        cause: structures
+        evidence: [{position: progress.idea.within-limits, w: 3}]
+
+  - id: probe.progress.idea.voices
+    type: voices
+    title: Up and to the right
+    text: >
+      A panel at a book fair. The moderator asks one question: is humanity getting better? Who has it?
+    voices:
+      - {name: "An economist with a slideshow", says: "Every chart that matters goes up and to the right. Extreme poverty is down by most of a billion people in thirty years."}
+      - {name: "A Benedictine abbot", says: "We have more of everything except wisdom. A civilization that cannot say what a person is for is not advancing."}
+      - {name: "A Bolivian climate negotiator", says: "Your charts go up because you spend the atmosphere. We were never asked if we wanted your kind of progress."}
+    why: This asks whether you believe in progress, through three people who answer differently.
+    options:
+      - id: economist
+        text: The economist. The numbers are the numbers.
+        cause: ideas
+        evidence: [{position: progress.idea.steady-improvement, w: 3}]
+      - id: abbot
+        text: The abbot. Modern life has lost the thing that made life worth more.
+        cause: culture
+        evidence:
+          - {position: progress.idea.decline-from-tradition, w: 3}
+          - {position: progress.idea.toward-promised-end, w: 1}
+      - id: negotiator
+        text: The negotiator. It's one story, the rich world's, told as if it were everyone's.
+        cause: interests
+        evidence:
+          - {position: progress.idea.western-myth, w: 2}
+          - {position: progress.idea.within-limits, w: 2}
+      - id: fight
+        text: All three miss who did the work. The poverty fell where people fought for land, wages and schools.
+        cause: structures
+        evidence: [{position: progress.idea.through-contradiction, w: 3}]
+      - id: machines
+        text: The economist and the abbot are both right. Better machines, same old people.
+        cause: nature
+        evidence: [{position: progress.idea.technical-not-moral, w: 3}]
+      - id: end
+        text: All three are measuring the wrong thing. History ends where it was always going to end.
+        cause: divine
+        evidence: [{position: progress.idea.toward-promised-end, w: 3}]
+
+  # ---------------- knowledge.basis ----------------
+  - id: probe.knowledge.basis.minimum-wage
+    type: scene
+    title: Who do you believe?
+    text: >
+      Your province is about to raise the minimum wage by a fifth. Shopkeepers say it will close them.
+      Unions say it won't. You sit on the committee that advises the governor, and you get one afternoon to
+      decide whom to listen to.
+    why: This asks what you count as knowledge about how society works.
+    options:
+      - id: data
+        text: The economists with the data from places that already did it. Evidence first.
+        evidence: [{position: knowledge.basis.empirical-science, w: 3}]
+      - id: logic
+        text: I don't need a study. Raise the price of anything and people buy less of it.
+        evidence: [{position: knowledge.basis.first-principles, w: 3}]
+      - id: try
+        text: Try it, push it through, and learn from what happens. You find out by doing.
+        evidence: [{position: knowledge.basis.practice, w: 3}]
+      - id: earners
+        text: The people living on that wage. They know things about it no economist does.
+        evidence: [{position: knowledge.basis.standpoint, w: 3}]
+      - id: street
+        text: Walk down the high street and talk to people. Experts have been wrong before.
+        evidence: [{position: knowledge.basis.common-sense, w: 3}]
+      - id: caution
+        text: Go slowly. Arrangements that have lasted generations know something no theory does.
+        evidence: [{position: knowledge.basis.tradition, w: 3}]
+      - id: scripture
+        text: Scripture is plain that the worker's wage withheld cries out to heaven. Start there.
+        evidence: [{position: knowledge.basis.revelation, w: 3}]
+
+  - id: probe.knowledge.basis.changed-mind
+    type: reason
+    title: What changed your mind
+    text: >
+      Think of one time you changed your mind about how society works. Not a small thing. Something you used
+      to be sure of. What changed it?
+    why: This asks what kind of knowledge you actually trust, by what has moved you.
+    options:
+      - id: evidence
+        text: The evidence. I saw the numbers and couldn't argue with them.
+        cause: ideas
+        evidence: [{position: knowledge.basis.empirical-science, w: 3}]
+      - id: argument
+        text: An argument. Someone showed me my reasoning didn't hold.
+        cause: ideas
+        evidence: [{position: knowledge.basis.first-principles, w: 3}]
+      - id: doing
+        text: Doing something. A strike, a campaign, a job. Reality taught me what books didn't.
+        cause: structures
+        evidence: [{position: knowledge.basis.practice, w: 3}]
+      - id: bottom
+        text: Ending up on the wrong side of something. You see more from down there.
+        cause: interests
+        evidence: [{position: knowledge.basis.standpoint, w: 3}]
+      - id: elders
+        text: Getting older. My parents had it right, and it took me twenty years to see it.
+        cause: culture
+        evidence: [{position: knowledge.basis.tradition, w: 3}]
+      - id: faith
+        text: Faith. I read and prayed, and some things looked different afterwards.
+        cause: divine
+        evidence: [{position: knowledge.basis.revelation, w: 3}]
+      - id: eyes
+        text: My own eyes. I saw what was going on in my street and stopped believing the news.
+        cause: culture
+        evidence: [{position: knowledge.basis.common-sense, w: 3}]
+
+  - id: probe.knowledge.basis.voices
+    type: voices
+    title: The famine question
+    text: >
+      Three people argue on a radio show about why a district in their country went hungry last year. Whose
+      way of knowing do you trust?
+    voices:
+      - {name: "A statistician from the capital", says: "We ran the household surveys. Prices doubled and incomes didn't. Everything else is anecdote."}
+      - {name: "A farmer who leads a cooperative", says: "You learn why people go hungry by organizing them and seeing who stops you. We learned that."}
+      - {name: "A village elder", says: "Our grandparents kept seed in every house and never sold it all. The young forgot. No survey finds that."}
+    why: This asks what you count as knowledge about society, through three people who know differently.
+    options:
+      - id: stats
+        text: The statistician. Measure it, test it, and stop guessing.
+        cause: structures
+        evidence: [{position: knowledge.basis.empirical-science, w: 3}]
+      - id: farmer
+        text: The farmer. Knowledge that wasn't tested in a fight isn't worth much.
+        cause: interests
+        evidence:
+          - {position: knowledge.basis.practice, w: 3}
+          - {position: knowledge.basis.standpoint, w: 1}
+      - id: elder
+        text: The elder. Inherited experience outlasts every survey.
+        cause: culture
+        evidence: [{position: knowledge.basis.tradition, w: 3}]
+      - id: hungry
+        text: All three miss the people who went hungry. Ask them first.
+        cause: interests
+        evidence: [{position: knowledge.basis.standpoint, w: 3}]
+      - id: principles
+        text: All three skip the principle. Block trade and fix prices and you get hunger; you don't need a survey.
+        cause: ideas
+        evidence: [{position: knowledge.basis.first-principles, w: 3}]
+      - id: plain
+        text: Anyone who went to that district could have told you. Experts make simple things complicated.
+        cause: culture
+        evidence: [{position: knowledge.basis.common-sense, w: 3}]
+      - id: higher
+        text: A people that forgets God's law about the poor and the harvest goes hungry. That's older than all three.
+        cause: divine
+        evidence: [{position: knowledge.basis.revelation, w: 3}]
+
+  # ---------------- ideology.formation ----------------
+  - id: probe.ideology.formation.why-vote
+    type: explanation
+    title: Against himself?
+    text: >
+      Danny loads trucks for minimum wage in a town that lost its mill. He votes for the party that cut taxes
+      on the rich and wants to cut his unemployment benefit. His sister calls it voting against himself. Why
+      does Danny vote the way he does?
+    why: This asks how you think people come to hold their political views.
+    options:
+      - id: owners
+        text: The people who own the papers, the screens and the schools decide what seems normal. Danny is downstream.
+        cause: structures
+        evidence: [{position: ideology.formation.ruling-ideas, w: 3}]
+      - id: common
+        text: It's in everything he grew up with, at church, at work, in the jokes. Nobody had to tell him.
+        cause: culture
+        evidence: [{position: ideology.formation.hegemony, w: 3}]
+      - id: thought
+        text: Maybe he thought about it and disagrees with his sister. Adults are allowed to.
+        cause: ideas
+        evidence: [{position: ideology.formation.marketplace-of-ideas, w: 3}]
+      - id: media
+        text: His news comes from channels paid for by people who need him angry at the wrong things.
+        cause: interests
+        evidence: [{position: ideology.formation.manufactured-consent, w: 3}]
+      - id: escaped
+        text: Danny is the one who didn't swallow what the teachers, professors and celebrities keep pushing.
+        cause: ideas
+        evidence: [{position: ideology.formation.elite-indoctrination, w: 3}]
+      - id: tribe
+        text: Everyone he respects votes that way. He picked the team first and found reasons later.
+        cause: culture
+        evidence: [{position: ideology.formation.group-loyalty, w: 3}]
+      - id: interest
+        text: He thinks it pays. Lower taxes, fewer rules, a shot at his own business. People back what pays them.
+        cause: interests
+        evidence: [{position: ideology.formation.self-interest, w: 3}]
+
+  - id: probe.ideology.formation.newspaper
+    type: scene
+    title: The paper is sold
+    text: >
+      The only daily paper in your city of half a million is bought by a billionaire who owns a mining
+      company and a football club. The editor keeps her job. Your friend says nothing will change. Does it
+      matter?
+    why: This asks where you think people's political ideas come from, by how much you think ownership of the media matters.
+    options:
+      - id: owners
+        text: It matters a lot. Whoever owns the means of saying things sets the limits of what people think.
+        evidence: [{position: ideology.formation.ruling-ideas, w: 3}]
+      - id: filters
+        text: It matters. Nobody will be ordered to lie. The mining stories will just quietly stop running.
+        evidence: [{position: ideology.formation.manufactured-consent, w: 3}]
+      - id: deeper
+        text: Less than you'd think. What people take as obvious is made in kitchens, schools and churches, not one paper.
+        evidence: [{position: ideology.formation.hegemony, w: 3}]
+      - id: market
+        text: Not much. If the paper turns into his mouthpiece, readers will go elsewhere.
+        evidence: [{position: ideology.formation.marketplace-of-ideas, w: 3}]
+      - id: balance
+        text: Maybe it improves. The newsroom has leaned one way for years. An owner might finally hire someone different.
+        evidence: [{position: ideology.formation.elite-indoctrination, w: 3}]
+      - id: tribe
+        text: Not at all. People read what confirms what their side already thinks.
+        evidence: [{position: ideology.formation.group-loyalty, w: 3}]
+      - id: wallets
+        text: Papers don't make opinions. Wallets do. People believe what is good for them.
+        evidence: [{position: ideology.formation.self-interest, w: 3}]
+
+  - id: probe.ideology.formation.voices
+    type: voices
+    title: The young these days
+    text: >
+      A survey finds that young people in your country trust the army more than parliament, and markets less
+      than their parents did. Three commentators explain it. Who gets it right?
+    voices:
+      - {name: "A union educator", says: "Of course they distrust markets. Rent eats half their pay. Experience teaches faster than any professor."}
+      - {name: "A conservative columnist", says: "Twelve years of school and four of university, all teaching that their country is a crime scene. What did you expect?"}
+      - {name: "A data scientist", says: "They see what the feeds feed them. Whoever designs the feed designs the generation."}
+    why: This asks how you think political views form, through three accounts of the same survey.
+    options:
+      - id: educator
+        text: The union educator. People's views follow where they stand and what it costs them.
+        cause: interests
+        evidence:
+          - {position: ideology.formation.self-interest, w: 2}
+          - {position: ideology.formation.ruling-ideas, w: -1}
+      - id: columnist
+        text: The columnist. The classrooms did this.
+        cause: ideas
+        evidence: [{position: ideology.formation.elite-indoctrination, w: 3}]
+      - id: data
+        text: The data scientist. The people who own the media decide what a generation sees.
+        cause: structures
+        evidence: [{position: ideology.formation.manufactured-consent, w: 3}]
+      - id: hegemony
+        text: All three are partly right. Common sense is made in a hundred places at once, and some people work hard at making it.
+        cause: culture
+        evidence: [{position: ideology.formation.hegemony, w: 3}]
+      - id: owners
+        text: All three miss that the ruling ideas of any age are the ideas of whoever rules it.
+        cause: structures
+        evidence: [{position: ideology.formation.ruling-ideas, w: 3}]
+      - id: friends
+        text: All three overthink it. Young people think what their friends think.
+        cause: culture
+        evidence: [{position: ideology.formation.group-loyalty, w: 3}]
+      - id: debate
+        text: All three are patronizing. The young heard the arguments and made up their minds.
+        cause: ideas
+        evidence: [{position: ideology.formation.marketplace-of-ideas, w: 3}]
+
+  # ---------------- history.elites ----------------
+  - id: probe.history.elites.chauffeurs
+    type: scene
+    title: The party of bus drivers
+    text: >
+      Twenty years ago bus drivers, nurses and teachers founded a party in your city. It now runs the city.
+      Its leaders have chauffeurs, their children went to private schools, and the founding drivers are
+      retired. A young member asks you, over a beer, whether this always happens.
+    why: This asks whether you think rule by a few is inevitable, and if not, what stops it.
+    options:
+      - id: always
+        text: Always. Any organization that lasts ends up run by those who run it. That's not betrayal, it's physics.
+        evidence: [{position: history.elites.iron-law, w: 3}]
+      - id: vote
+        text: It happens. That's why there are other parties. Vote them out when they get fat.
+        evidence: [{position: history.elites.competing-elites, w: 3}]
+      - id: owners
+        text: The chauffeurs aren't the problem. The real rulers own the buses, the banks and the land, and they still do.
+        evidence: [{position: history.elites.ruling-class, w: 3}]
+      - id: no-leaders
+        text: It happens to parties. That's why you don't build one. Rotate everything, delegate nothing.
+        evidence: [{position: history.elites.can-be-abolished, w: 3}]
+      - id: best
+        text: Someone has to lead. The question is whether they're any good at it, not whether they used to drive a bus.
+        evidence: [{position: history.elites.rule-of-the-best, w: 3}]
+      - id: members
+        text: Only if the members let it. Recall them, cap their pay, and keep the union in charge of the party.
+        evidence: [{position: history.elites.curbed-by-mass-power, w: 3}]
+
+  - id: probe.history.elites.line
+    type: line
+    title: How big before bosses?
+    text: >
+      Read down the list, from small to large. Where does a group stop being able to govern itself without a
+      ruling few?
+    cases:
+      - A fishing crew of eight
+      - A village council of 300
+      - A cooperative bakery with 40 workers
+      - A union of 200,000
+      - A city of two million
+      - A country of a hundred million
+    why: This asks whether you think elites are inevitable, by where you draw the line.
+    options:
+      - id: none
+        text: Nowhere. Even the fishing crew has a skipper. A few always run things.
+        evidence: [{position: history.elites.iron-law, w: 3}]
+      - id: small
+        text: After the bakery. Beyond that you need leaders, and the best you can do is choose between teams of them.
+        evidence: [{position: history.elites.competing-elites, w: 3}]
+      - id: all
+        text: It never has to stop. Federate the councils upward and nobody needs to rule.
+        evidence: [{position: history.elites.can-be-abolished, w: 3}]
+      - id: property
+        text: Size isn't the issue. Ownership is. Where a few own everything, a few rule, at any size.
+        evidence: [{position: history.elites.ruling-class, w: 3}]
+      - id: merit
+        text: Wrong question. At every size the able should lead. Self-government by the unqualified is how ships sink.
+        evidence: [{position: history.elites.rule-of-the-best, w: 3}]
+      - id: checked
+        text: Past the union, you'll have leaders. Organized members can still keep them on a short leash.
+        evidence: [{position: history.elites.curbed-by-mass-power, w: 3}]
+
+  - id: probe.history.elites.voices
+    type: voices
+    title: Who should run things
+    text: >
+      Three guests on a late-night talk show are asked who really runs their country, and whether it could be
+      otherwise. Who has it right?
+    voices:
+      - {name: "A political scientist", says: "Elites compete for your vote. That's not a flaw. That's what elections are for."}
+      - {name: "A Singaporean civil servant", says: "We pick the ablest people by examination and pay them well. Government is a skill, not a popularity contest."}
+      - {name: "An anarchist bookbinder", says: "Every time someone says we need rulers, a ruler is standing behind them."}
+    why: This asks whether you think elites always rule, through three people who say different things about it.
+    options:
+      - id: scientist
+        text: The political scientist. Competition among elites is the best a mass society gets.
+        cause: structures
+        evidence: [{position: history.elites.competing-elites, w: 3}]
+      - id: servant
+        text: The civil servant. Choose the best and let them govern.
+        cause: ideas
+        evidence: [{position: history.elites.rule-of-the-best, w: 3}]
+      - id: bookbinder
+        text: The bookbinder. Rule by a few is a habit, not a law of nature.
+        cause: ideas
+        evidence: [{position: history.elites.can-be-abolished, w: 3}]
+      - id: iron
+        text: All three are describing the same thing. A few run it. They always will.
+        cause: nature
+        evidence: [{position: history.elites.iron-law, w: 3}]
+      - id: owners
+        text: All three skip who owns the country. The owners rule, whoever is on the show.
+        cause: interests
+        evidence: [{position: history.elites.ruling-class, w: 3}]
+      - id: unions
+        text: All three forget that the eight-hour day and the pension came from below. Organized people can tie their rulers' hands.
+        cause: structures
+        evidence: [{position: history.elites.curbed-by-mass-power, w: 3}]

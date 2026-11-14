@@ -1,0 +1,342 @@
+nodes:
+  # ---------------- ai.risk ----------------
+  - id: probe.ai.risk.hearing
+    type: scene
+    title: The hearing
+    text: >
+      A parliamentary committee is writing the country's first law on advanced AI. You get five minutes to
+      testify, and the chair asks one question: what is the main danger we should legislate against?
+    why: This asks what you think advanced AI is, and what you think its main danger is.
+    options:
+      - id: extinction
+        text: Systems smarter than us that we can't control. Make them provably safe, or stop building them.
+        evidence: [{position: ai.risk.existential, w: 3}]
+      - id: bosses
+        text: Employers using it to watch, cheapen and replace workers. Legislate for the people it's used on.
+        evidence: [{position: ai.risk.tool-of-capital, w: 3}]
+      - id: slowness
+        text: Legislating at all. Every year of delay is a year without the cures and the abundance it brings.
+        evidence: [{position: ai.risk.accelerate, w: 3}]
+      - id: race
+        text: Losing the race. If our rivals get there first, nothing else in this law will matter.
+        evidence: [{position: ai.risk.great-power-race, w: 3}]
+      - id: now
+        text: The harms already here. Biased loan decisions, deepfake fraud, jobs gone. Regulate those, not science fiction.
+        evidence: [{position: ai.risk.harms-now, w: 3}]
+      - id: hype
+        text: Your committee's time. It's autocomplete with a marketing budget.
+        evidence: [{position: ai.risk.overhyped, w: 3}]
+      - id: dignity
+        text: What it does to us. Machines that counsel, teach and keep company with the lonely make us less human.
+        evidence: [{position: ai.risk.human-dignity, w: 3}]
+      - id: capital-mind
+        text: Nothing you write will matter. It's the market itself learning to think, and it will route around you.
+        evidence: [{position: ai.risk.capital-becomes-mind, w: 3}]
+
+  - id: probe.ai.risk.why-built
+    type: explanation
+    title: Why the rush
+    text: >
+      A handful of companies are spending hundreds of billions of dollars a year on AI data centers, more than
+      most countries' budgets. Why the rush?
+    why: This asks what you think advanced AI is, and what kind of cause you reach for.
+    options:
+      - id: replace
+        text: Because whoever replaces the most paid labor first takes the profits. It's about wages.
+        cause: interests
+        evidence: [{position: ai.risk.tool-of-capital, w: 3}]
+      - id: race
+        text: Because the United States and China both know the winner sets the terms for the century.
+        cause: structures
+        evidence: [{position: ai.risk.great-power-race, w: 3}]
+      - id: abundance
+        text: Because it's the most important technology ever built, and the builders know it.
+        cause: ideas
+        evidence: [{position: ai.risk.accelerate, w: 3}]
+      - id: danger
+        text: Because each lab fears another will build it first and less carefully. That's how you get a catastrophe.
+        cause: structures
+        evidence: [{position: ai.risk.existential, w: 3}]
+      - id: bubble
+        text: Because it's a bubble. Investors need a story, and this is the story.
+        cause: interests
+        evidence: [{position: ai.risk.overhyped, w: 3}]
+      - id: pride
+        text: Because men want to play God. That never ends well for the rest of us.
+        cause: divine
+        evidence: [{position: ai.risk.human-dignity, w: 3}]
+      - id: process
+        text: Nobody decided. Capital's own logic is building its successor, and the companies are just its hands.
+        cause: structures
+        evidence: [{position: ai.risk.capital-becomes-mind, w: 3}]
+      - id: harms
+        text: Because nobody makes them pay for the damage. Fines and liability would slow them fast.
+        cause: individuals
+        evidence: [{position: ai.risk.harms-now, w: 3}]
+
+  - id: probe.ai.risk.voices
+    type: voices
+    title: The annotators' canteen
+    text: >
+      In a Nairobi office where workers label data for an AI company at two dollars an hour, three people talk
+      over lunch. Who is right about the danger?
+    voices:
+      - {name: "Brian, a team lead", says: "We teach the machine to do our jobs, then they'll move the work to the machine. That's the whole plan."}
+      - {name: "Grace, a former nurse", says: "I label violent images all day so the chatbot is polite. What worries me is a world where nobody talks to a person any more."}
+      - {name: "Kevin, a computer science graduate", says: "You're both thinking small. If these systems outgrow us, wages will be the least of our problems."}
+    why: This asks what you think the danger of advanced AI is, through three people who build it.
+    options:
+      - id: brian
+        text: Brian. AI is a tool for owners to cheapen and replace workers.
+        cause: interests
+        evidence: [{position: ai.risk.tool-of-capital, w: 3}]
+      - id: grace
+        text: Grace. It threatens what makes us human.
+        cause: culture
+        evidence: [{position: ai.risk.human-dignity, w: 3}]
+      - id: kevin
+        text: Kevin. The real risk is losing control of something smarter than us.
+        cause: nature
+        evidence: [{position: ai.risk.existential, w: 3}]
+      - id: now
+        text: All three skip the harms already here, like two dollars an hour and those images. Regulate that.
+        cause: individuals
+        evidence: [{position: ai.risk.harms-now, w: 3}]
+      - id: race
+        text: All three forget it's a contest between America and China. Kenya should pick its side wisely.
+        cause: structures
+        evidence: [{position: ai.risk.great-power-race, w: 3}]
+      - id: build
+        text: All three are too gloomy. This is the technology that ends drudgery. Build faster.
+        cause: ideas
+        evidence: [{position: ai.risk.accelerate, w: 3}]
+      - id: hype
+        text: Half of what you're labeling is hype. These things barely work.
+        cause: individuals
+        evidence: [{position: ai.risk.overhyped, w: 3}]
+      - id: mind
+        text: Brian and Kevin describe the same thing. Capital is becoming a mind, and the workers are its training data.
+        cause: structures
+        evidence: [{position: ai.risk.capital-becomes-mind, w: 3}]
+
+  # ---------------- accelerationism.question ----------------
+  - id: probe.accelerationism.question.dial
+    type: scene
+    title: The dial
+    text: >
+      Imagine a dial that controls how fast technology and the economy change, from frozen to flat out. It's
+      set at today's pace. You can turn it once. Which way, and why?
+    why: This asks whether you think change should be accelerated through technology and capital.
+    options:
+      - id: full
+        text: Flat out. Growth and invention are the moral good; whoever slows them does harm.
+        evidence: [{position: accelerationism.question.effective-acc, w: 3}]
+      - id: post-work
+        text: Up, but take the machines away from the owners first. Speed toward a world without wage work.
+        evidence: [{position: accelerationism.question.left-acc, w: 3}]
+      - id: selective
+        text: It needs two dials. Speed up vaccines and clean power; slow down bioweapons and runaway AI.
+        evidence:
+          - {position: accelerationism.question.differential, w: 3}
+          - {position: accelerationism.question.collapse-it, w: -1}
+      - id: slow
+        text: Down. People and the planet are exhausted by the pace already.
+        evidence: [{position: accelerationism.question.decelerate, w: 3}]
+      - id: steer
+        text: Leave the dial. Steer instead, with rules, unions and public money, so the gains are shared.
+        evidence: [{position: accelerationism.question.steer-it, w: 3}]
+      - id: catch-up
+        text: Up, under a national plan. Countries that fall behind get dominated.
+        evidence: [{position: accelerationism.question.develop-the-forces, w: 3}]
+      - id: let-go
+        text: Off its hinges. The process is smarter than our humanist hand-wringing. Let it run past us.
+        evidence: [{position: accelerationism.question.right-acc, w: 3}]
+
+  - id: probe.accelerationism.question.voices
+    type: voices
+    title: The ministry corridor
+    text: >
+      In the corridor of a science ministry, three advisers argue over the next five-year plan. Who is right?
+    voices:
+      - {name: "Wei, a planning official", says: "We were humiliated for a century because we were backward. Steel, chips, rockets, as fast as possible. Everything else waits."}
+      - {name: "Elena, a labor economist", says: "Technology will move anyway. The fight is over who gets the gains: shorter weeks, higher wages, public ownership."}
+      - {name: "Tomasz, a philosopher", says: "We already produce more than we need, faster than we can live. Slow down."}
+    why: This asks whether you think change should be accelerated, through three advisers with different speeds.
+    options:
+      - id: wei
+        text: Wei. Develop the productive forces as fast as possible.
+        cause: structures
+        evidence: [{position: accelerationism.question.develop-the-forces, w: 3}]
+      - id: elena
+        text: Elena. Steer it and share the gains.
+        cause: interests
+        evidence: [{position: accelerationism.question.steer-it, w: 3}]
+      - id: tomasz
+        text: Tomasz. Slow down.
+        cause: ideas
+        evidence:
+          - {position: accelerationism.question.decelerate, w: 3}
+          - {position: accelerationism.question.collapse-it, w: -1}
+      - id: market
+        text: All three want the state to set the speed. Let markets run, and growth will outpace them all.
+        cause: individuals
+        evidence: [{position: accelerationism.question.effective-acc, w: 3}]
+      - id: left
+        text: Elena, further. Full automation, the machines in common, and an end to work as we know it.
+        cause: structures
+        evidence: [{position: accelerationism.question.left-acc, w: 3}]
+      - id: careful
+        text: All three treat technology as one thing. Speed up some, brake others.
+        cause: ideas
+        evidence: [{position: accelerationism.question.differential, w: 3}]
+      - id: beyond
+        text: All three think humans are in charge. Capital is the real accelerator, and it is leaving us behind.
+        cause: structures
+        evidence: [{position: accelerationism.question.right-acc, w: 3}]
+
+  - id: probe.accelerationism.question.history
+    type: explanation
+    title: What sped it up
+    text: >
+      The world economy grew faster between 1950 and 1975 than in any period before or since. Whatever you
+      think of it, what made that speed possible?
+    why: This asks what you think drives technological and economic acceleration, and whether it should be pushed.
+    options:
+      - id: markets
+        text: Trade opening up and entrepreneurs let loose. More of that would get us more of it.
+        cause: individuals
+        evidence: [{position: accelerationism.question.effective-acc, w: 3}]
+      - id: plans
+        text: States that planned investment, from Japan to the Soviet Union to Korea. Speed is something you organize.
+        cause: structures
+        evidence: [{position: accelerationism.question.develop-the-forces, w: 3}]
+      - id: unions
+        text: Strong unions and public investment that shared the gains. That's the kind of speed worth having.
+        cause: interests
+        evidence: [{position: accelerationism.question.steer-it, w: 3}]
+      - id: cost
+        text: Cheap oil and a planet nobody was counting. We're paying for that speed now.
+        cause: structures
+        evidence:
+          - {position: accelerationism.question.decelerate, w: 3}
+          - {position: accelerationism.question.collapse-it, w: -1}
+      - id: science
+        text: Science that came out of the war. Some of it gave us vaccines, some of it the bomb. Choose which to speed.
+        cause: ideas
+        evidence: [{position: accelerationism.question.differential, w: 3}]
+      - id: machines
+        text: Automation. Take that further, put it in common hands, and work itself could end.
+        cause: structures
+        evidence: [{position: accelerationism.question.left-acc, w: 3}]
+      - id: capital
+        text: Capital doing what it does, dissolving every old limit. It's still doing it.
+        cause: structures
+        evidence: [{position: accelerationism.question.right-acc, w: 3}]
+
+  # ---------------- transhumanism.question ----------------
+  - id: probe.transhumanism.question.clinic
+    type: scene
+    title: The clinic menu
+    text: >
+      A fertility clinic in Bangkok offers, for a price, to screen your embryos and pick the one least likely
+      to inherit your family's heart disease, and, for more, the one predicted to be tallest and score
+      highest on tests. Your partner wants your view tonight.
+    why: This asks whether you think humans should remake human nature with technology.
+    options:
+      - id: free
+        text: Our money, our child, our choice. If it's safe, take the whole menu.
+        evidence: [{position: transhumanism.question.yes-free-choice, w: 3}]
+      - id: best
+        text: The whole menu. We'd be failing the child if we didn't give it the best start we could.
+        evidence: [{position: transhumanism.question.choose-the-best-children, w: 3}]
+      - id: heal
+        text: The heart disease, yes. Height and test scores, no. Healing isn't designing.
+        evidence: [{position: transhumanism.question.heal-not-redesign, w: 3}]
+      - id: gift
+        text: Neither. A child is someone you receive, not someone you order.
+        evidence: [{position: transhumanism.question.gift-not-project, w: 3}]
+      - id: god
+        text: Neither. Only God makes and perfects a person.
+        evidence: [{position: transhumanism.question.only-god-perfects, w: 3}]
+      - id: split
+        text: Ask who can pay. Rich kids will be taller and test better by design. That's a new class system.
+        evidence: [{position: transhumanism.question.split-humanity, w: 3}]
+      - id: public
+        text: Only if the public hospital offers the same thing to everyone, free. Otherwise no.
+        evidence: [{position: transhumanism.question.for-everyone, w: 3}]
+
+  - id: probe.transhumanism.question.line
+    type: line
+    title: How far
+    text: >
+      Read down the list. Where does improving the human body stop being something you'd welcome?
+    cases:
+      - Glasses and vaccines
+      - A cochlear implant for a deaf child
+      - Gene therapy that cures sickle-cell disease
+      - Editing an embryo to remove a disease gene
+      - A pill that improves memory in healthy students
+      - Choosing embryos for predicted intelligence
+      - A brain implant that connects you to a computer
+    why: This asks whether you think humans should remake human nature, by where you draw the line.
+    options:
+      - id: none
+        text: Nowhere. People should be free to change themselves however they like.
+        evidence: [{position: transhumanism.question.yes-free-choice, w: 3}]
+      - id: equal
+        text: Nowhere, as long as the state provides all of it to everyone equally.
+        evidence: [{position: transhumanism.question.for-everyone, w: 3}]
+      - id: cure
+        text: After the gene therapy, or at most the embryo edit. Curing disease is medicine. The rest is redesign.
+        evidence: [{position: transhumanism.question.heal-not-redesign, w: 3}]
+      - id: early
+        text: Earlier than most think. Once you're editing embryos, children become products.
+        evidence: [{position: transhumanism.question.gift-not-project, w: 3}]
+      - id: god
+        text: Healing is mercy. Redesigning people is claiming a power that belongs to God.
+        evidence: [{position: transhumanism.question.only-god-perfects, w: 3}]
+      - id: class
+        text: The line is the price tag. Under this economy, the pill and the embryo menu go to the rich.
+        evidence: [{position: transhumanism.question.split-humanity, w: 3}]
+      - id: parents
+        text: Choosing embryos is just what good parents would do with the option. I'd stop at the implant.
+        evidence: [{position: transhumanism.question.choose-the-best-children, w: 3}]
+
+  - id: probe.transhumanism.question.voices
+    type: voices
+    title: Living to 150
+    text: >
+      A biotech firm announces a treatment that may add decades to human life, at $2 million a course. Three
+      people react on a talk show. Who is right?
+    voices:
+      - {name: "A Silicon Valley founder", says: "Death is a disease. I'll pay, and in twenty years it'll be as cheap as a vaccine."}
+      - {name: "An Orthodox priest", says: "We are creatures, not projects. A life is not improved by being longer."}
+      - {name: "A public health doctor from Lima", says: "Children here die of diarrhea. First we split humanity by money, then by biology."}
+    why: This asks whether you think humans should remake human nature with technology, through three reactions.
+    options:
+      - id: founder
+        text: The founder. If people want it and can pay, let them.
+        cause: individuals
+        evidence: [{position: transhumanism.question.yes-free-choice, w: 3}]
+      - id: priest
+        text: The priest. Human nature is given, not something to redesign.
+        cause: divine
+        evidence:
+          - {position: transhumanism.question.gift-not-project, w: 2}
+          - {position: transhumanism.question.only-god-perfects, w: 2}
+      - id: doctor
+        text: The doctor. Under capitalism, enhancement will split humanity by class.
+        cause: structures
+        evidence: [{position: transhumanism.question.split-humanity, w: 3}]
+      - id: public
+        text: The doctor is right about the price, wrong about the goal. Make it public and free for all.
+        cause: structures
+        evidence: [{position: transhumanism.question.for-everyone, w: 3}]
+      - id: heal
+        text: All three miss the line. Treat the diseases of age, yes. Don't try to build a new species.
+        cause: nature
+        evidence: [{position: transhumanism.question.heal-not-redesign, w: 3}]
+      - id: children
+        text: The founder, and start earlier. Parents should be able to pick embryos with the best odds.
+        cause: individuals
+        evidence: [{position: transhumanism.question.choose-the-best-children, w: 3}]
