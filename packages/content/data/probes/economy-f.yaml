@@ -1,0 +1,418 @@
+nodes:
+  # ---------------------------------------------------------------- allocation.mechanism
+  - id: probe.allocation.mechanism.bread
+    type: scene
+    title: Who decides the bread
+    text: >
+      A city of two million needs bread every morning. Wheat, ovens, drivers, flour mills, and four thousand
+      shops. Somebody or something has to decide how much gets baked, where, and who gets it. If it were up
+      to you, what decides?
+    why: This asks how you think production should be coordinated.
+    options:
+      - id: market
+        text: Prices. Bakers bake what sells. Nobody needs to be in charge.
+        evidence: [{position: allocation.mechanism.free-market, w: 3}]
+      - id: social-market
+        text: Prices, inside firm rules on wages, quality and competition.
+        evidence: [{position: allocation.mechanism.social-market, w: 3}]
+      - id: plan
+        text: A planning office works out what the city needs and sets the mills and ovens to it.
+        evidence: [{position: allocation.mechanism.central-planning, w: 3}]
+      - id: councils
+        text: Bakers' and neighborhood councils plan it together, from below.
+        evidence: [{position: allocation.mechanism.participatory-planning, w: 3}]
+      - id: coops
+        text: Bakeries owned by their workers, competing for customers.
+        evidence: [{position: allocation.mechanism.market-socialism, w: 3}]
+      - id: free
+        text: People bake together and take what they need. No prices, no wages, no office.
+        evidence: [{position: allocation.mechanism.free-access, w: 3}]
+      - id: steer
+        text: Private bakeries, but the state builds the mills and steers where the investment goes.
+        evidence: [{position: allocation.mechanism.mixed-steered, w: 3}]
+
+  # ---------------------------------------------------------------- calculation.debate
+  - id: probe.calculation.debate.dam
+    type: scene
+    title: The planning office
+    text: >
+      A planning office, 1975. It must choose: a dam that floods three valleys and powers two cities, or
+      coal plants that need miners and poison the air, or neither and more tractors. There is no stock
+      market and no price for steel or land. How should the office decide?
+    why: This asks whether you think a planned economy can make rational choices, and how.
+    options:
+      - id: impossible
+        text: It can't. Without markets for steel and land there are no prices, and no way to compare the costs.
+        evidence: [{position: calculation.debate.mises-impossible, w: 3}]
+      - id: knowledge
+        text: It can't know enough. What the farmers, engineers and miners each know never reaches the office.
+        evidence: [{position: calculation.debate.hayek-knowledge, w: 3}]
+      - id: trial
+        text: Set prices for steel and land, watch for shortages and gluts, and adjust. Managers follow simple rules.
+        evidence: [{position: calculation.debate.lange-lerner-solved, w: 3}]
+      - id: in-kind
+        text: Compare them in kind. Tons of coal, hours of work, lungs, valleys, one beside another, without forcing them into one number.
+        evidence: [{position: calculation.debate.in-kind, w: 3}]
+      - id: ahead
+        text: Decide the big investment in advance. That's exactly what a plan does better than a market.
+        evidence: [{position: calculation.debate.dobb-ex-ante, w: 3}]
+      - id: computers
+        text: Today a computer could do the sums for every product in the country overnight.
+        evidence: [{position: calculation.debate.computational, w: 3}]
+      - id: incentives
+        text: The sums are the easy part. The trouble is managers who can't go bankrupt and so hoard everything.
+        evidence: [{position: calculation.debate.kornai-incentives, w: 3}]
+
+  - id: probe.calculation.debate.shelves
+    type: explanation
+    title: The empty shelves
+    text: >
+      Warsaw, 1981. A queue outside a butcher's shop since five in the morning. The factories met their plan
+      targets. The shelves are empty. Why?
+    why: This asks why you think planned economies ran short, and what kind of cause you reach for.
+    options:
+      - id: kornai
+        text: Firms that could never go bust hoarded workers and materials. The incentives made shortage normal.
+        cause: structures
+        evidence: [{position: calculation.debate.kornai-incentives, w: 3}]
+      - id: prices
+        text: No real prices, so no way to know what anything was worth. The plan was guessing.
+        cause: structures
+        evidence: [{position: calculation.debate.mises-impossible, w: 3}]
+      - id: knowledge
+        text: Nobody in an office can know what millions of shoppers and farmers know.
+        cause: ideas
+        evidence: [{position: calculation.debate.hayek-knowledge, w: 3}]
+      - id: frozen
+        text: They froze prices for years. A planning board that let prices move would have cleared the queue.
+        cause: individuals
+        evidence: [{position: calculation.debate.lange-lerner-solved, w: 3}]
+      - id: wrong-unit
+        text: They planned in tons and money totals instead of in the actual things people needed, item by item.
+        cause: ideas
+        evidence: [{position: calculation.debate.in-kind, w: 3}]
+      - id: investment
+        text: A plan's strength is deciding the big investments ahead, steel, power, housing. Poland got those. Meat counters were never its strong suit.
+        cause: structures
+        evidence: [{position: calculation.debate.dobb-ex-ante, w: 2}]
+
+  # ---------------------------------------------------------------- money.nature
+  - id: probe.money.nature.mattress
+    type: explanation
+    title: Dollars under the mattress
+    text: >
+      Your grandmother in Buenos Aires kept her savings in US dollars, under the mattress, for forty years.
+      She watched the peso lose thirteen zeros. She says it's simple. Why does money fail countries like
+      this?
+    why: This asks what you think money is and who should issue it, and what kind of cause you reach for.
+    options:
+      - id: printing
+        text: Governments print paper to pay their bills. Only money nobody can print is safe.
+        cause: individuals
+        evidence: [{position: money.nature.hard-money, w: 3}]
+      - id: dollar
+        text: The dollar sits on top. A country like ours has to earn it to pay its debts, and the peso always loses.
+        cause: structures
+        evidence: [{position: money.nature.currency-hierarchy, w: 3}]
+      - id: debts
+        text: A state can always pay in its own money. The trouble was debt in dollars, which it can't make.
+        cause: structures
+        evidence: [{position: money.nature.chartalist, w: 3}]
+      - id: deeper
+        text: Money just expresses who owns and who works. Fixing the money doesn't touch that.
+        cause: structures
+        evidence: [{position: money.nature.form-of-value, w: 3}]
+      - id: mutual
+        text: If producers ran their own mutual banks and lent at cost, nobody would need the state's money.
+        cause: ideas
+        evidence: [{position: money.nature.mutual-credit, w: 3}]
+      - id: rules
+        text: Politicians controlled the central bank. An independent one with a firm rule would have held.
+        cause: individuals
+        evidence: [{position: money.nature.rule-bound-central-bank, w: 3}]
+      - id: compete
+        text: People should have been free to use whatever money they trusted. She did, illegally.
+        cause: ideas
+        evidence: [{position: money.nature.competing-currencies, w: 3}]
+
+  - id: probe.money.nature.line
+    type: line
+    title: Fixing money
+    text: Going down this list, which would make money work for ordinary people?
+    cases:
+      - Back the currency with gold
+      - Let the central bank create money to pay for full employment
+      - A members' bank that lends to local producers at cost
+      - Ban interest on loans
+      - Leave the dollar for a regional currency
+    why: This asks what you think money is, and who should issue it.
+    options:
+      - id: gold
+        text: Only the gold. Money nobody can print.
+        evidence: [{position: money.nature.hard-money, w: 3}]
+      - id: create
+        text: The second. The state makes the money. The only limit is real resources.
+        evidence: [{position: money.nature.chartalist, w: 3}]
+      - id: members
+        text: The members' bank. Credit at cost, without bankers or the state.
+        evidence: [{position: money.nature.mutual-credit, w: 3}]
+      - id: interest
+        text: Banning interest. Money should serve production, not breed more money.
+        evidence: [{position: money.nature.anti-usury, w: 3}]
+      - id: regional
+        text: Leaving the dollar. Countries at the bottom of the currency ladder have to climb off it.
+        evidence: [{position: money.nature.currency-hierarchy, w: 3}]
+      - id: none
+        text: None of them. Money isn't where the power is. Ownership is.
+        evidence: [{position: money.nature.form-of-value, w: 3}]
+      - id: rule
+        text: None of them. An independent central bank with a clear rule is the best we know.
+        evidence: [{position: money.nature.rule-bound-central-bank, w: 3}]
+
+  - id: probe.money.nature.cousins
+    type: voices
+    title: Christmas dinner
+    text: Your uncle has had two glasses of wine and your cousin has just finished an economics degree. Who's right?
+    voices:
+      - {name: Uncle Gerry, says: "Bitcoin, like gold, can't be printed. That's the point. Everything else is a con."}
+      - {name: Cousin Priya, says: "The government creates the money. It can never run out. Taxes are just how it stops prices running away."}
+    why: This asks what you think money is, and who should issue it.
+    options:
+      - id: gerry
+        text: Uncle Gerry. Sound money has to be scarce.
+        evidence: [{position: money.nature.hard-money, w: 3}]
+      - id: priya
+        text: Priya. Money is a creature of the state.
+        evidence: [{position: money.nature.chartalist, w: 3}]
+      - id: compete
+        text: Both miss it. Let currencies compete and people choose.
+        evidence: [{position: money.nature.competing-currencies, w: 3}]
+      - id: value
+        text: Both miss it. Money measures who works and who owns. Change the money, nothing else changes.
+        evidence: [{position: money.nature.form-of-value, w: 3}]
+      - id: mutual
+        text: Both miss it. Members' banks lending at cost would drive interest to nothing.
+        evidence: [{position: money.nature.mutual-credit, w: 3}]
+      - id: ladder
+        text: Priya's right for America. Most countries can't print dollars, and that's the catch.
+        evidence: [{position: money.nature.currency-hierarchy, w: 3}]
+
+  # ---------------------------------------------------------------- finance.control
+  - id: probe.finance.control.failing-bank
+    type: scene
+    title: The failing bank
+    text: >
+      Friday night. Your country's second-largest bank has lost a fortune on bad loans. On Monday, either the
+      government acts or a third of the country's savings are frozen. You're the finance minister.
+    why: This asks whether and how you think finance should be controlled.
+    options:
+      - id: sell
+        text: Sell it to a foreign bank over the weekend. Let money go where it's best managed.
+        evidence: [{position: finance.control.free-flows, w: 3}]
+      - id: rescue
+        text: Rescue it with strict conditions, then write the rules that stop it happening again.
+        evidence: [{position: finance.control.prudential, w: 3}]
+      - id: controls
+        text: Shut the door on money leaving the country first. Then deal with the bank.
+        evidence: [{position: finance.control.capital-controls, w: 3}]
+      - id: one-bank
+        text: Take it, and the rest of them, into one public bank that lends by a plan.
+        evidence: [{position: finance.control.nationalize-credit, w: 3}]
+      - id: public-bank
+        text: Take it into public hands as a public bank, alongside the private ones.
+        evidence: [{position: finance.control.public-banks, w: 3}]
+      - id: fail
+        text: Protect the small savers, let the bank fail, and prosecute the bankers.
+        evidence: [{position: finance.control.no-bailouts, w: 3}]
+
+  # ---------------------------------------------------------------- work.future
+  - id: probe.work.future.port-fund
+    type: allocation
+    title: The port fund
+    text: >
+      Automated cranes have cut the dock workforce in your city by half. The city has a fund from the port's
+      profits. You have ten points to divide between proposals.
+    why: This asks what you think should happen to wage work.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: jobs
+          text: A public job at a decent wage for every ex-docker who wants one
+          evidence: [{position: work.future.job-guarantee, w: 2}]
+        - id: income
+          text: An unconditional monthly income for everyone in the city
+          evidence: [{position: work.future.basic-income-emancipatory, w: 2}]
+        - id: one-payment
+          text: Scrap the city's twelve benefit schemes for one simple cash payment
+          evidence: [{position: work.future.negative-income-tax, w: 3}]
+        - id: coop
+          text: Help the dockers buy the terminal as a cooperative
+          evidence: [{position: work.future.cooperatives, w: 2}]
+        - id: takeover
+          text: Back the dockers taking over the port and running it with no owners at all
+          evidence: [{position: work.future.abolish-wage-labor, w: 3}]
+        - id: week
+          text: A four-day week across the port at the same pay
+          evidence: [{position: work.future.shorter-hours, w: 2}]
+        - id: retrain
+          text: Retraining vouchers so people can find work wherever the market wants them
+          evidence: [{position: work.future.flexible-markets, w: 2}]
+        - id: industry
+          text: A new shipbuilding yard with union jobs
+          evidence: [{position: work.future.dignity-of-work, w: 2}]
+    options:
+      - {id: done, text: Done}
+
+  - id: probe.work.future.bus
+    type: voices
+    title: The night bus
+    text: Two cleaners on the night bus home, arguing about a news story. Who's right?
+    voices:
+      - {name: Marta, says: "Give everyone a basic income. Then you can tell a bad boss where to go."}
+      - {name: Kwame, says: "Give everyone a guaranteed job. Money for nothing makes people feel like nothing."}
+    why: This asks what you think should happen to wage work.
+    options:
+      - id: marta
+        text: Marta. An income nobody can take away.
+        evidence: [{position: work.future.basic-income-emancipatory, w: 3}]
+      - id: kwame
+        text: Kwame. A job for anyone who wants one.
+        evidence: [{position: work.future.job-guarantee, w: 3}]
+      - id: no-bosses
+        text: Both miss it. The problem is having to work for someone else. Workers should own and run it.
+        evidence: [{position: work.future.abolish-wage-labor, w: 3}]
+      - id: simple
+        text: Both miss it. Scrap the welfare maze and pay one simple cash top-up. Then get out of the way.
+        evidence: [{position: work.future.negative-income-tax, w: 3}]
+      - id: good-jobs
+        text: Both miss it. Bring back real industry and real union jobs. Then nobody needs either.
+        evidence: [{position: work.future.dignity-of-work, w: 3}]
+      - id: less
+        text: Both miss it. Work less, share the work out, and make rent and doctors cheap.
+        evidence: [{position: work.future.shorter-hours, w: 3}]
+
+  - id: probe.work.future.reform
+    type: tradeoff
+    title: Thirty schemes
+    text: >
+      Your country runs thirty different benefit schemes with six thousand staff to check eligibility.
+      A reform proposal: abolish them all and replace them with one monthly cash payment to anyone whose
+      income falls below a line, paid through the tax system. You get a vote.
+    why: This asks what you think should happen to wage work and the welfare that surrounds it.
+    options:
+      - id: yes
+        text: Yes. Simpler, cheaper, and people spend it as they choose.
+        evidence: [{position: work.future.negative-income-tax, w: 3}]
+      - id: further
+        text: Go further. Pay it to everyone, no line, on top of public services.
+        evidence: [{position: work.future.basic-income-emancipatory, w: 3}]
+      - id: jobs
+        text: No. Offer people work, not a cheque.
+        evidence: [{position: work.future.job-guarantee, w: 3}]
+      - id: neither
+        text: It's rearranging the deckchairs. As long as most people have to sell their work to live, nothing changes.
+        evidence: [{position: work.future.abolish-wage-labor, w: 3}]
+      - id: flexible
+        text: Yes, and free up hiring and firing too, so the jobs are there to take.
+        evidence: [{position: work.future.flexible-markets, w: 3}]
+      - id: industry
+        text: No. People want good jobs in real industry, not a payment from the tax office.
+        evidence: [{position: work.future.dignity-of-work, w: 3}]
+
+  # ---------------------------------------------------------------- tax.purpose
+  - id: probe.tax.purpose.why-pay
+    type: scene
+    title: Why do we pay?
+    text: >
+      Your twelve-year-old has her first summer job and has just seen tax taken off her first paycheck. She
+      wants to know what it's for, and she wants the real answer. You say:
+    why: This asks what you think taxes are for.
+    options:
+      - id: services
+        text: Roads, police, schools. Things we all need. Keep it low and simple.
+        evidence: [{position: tax.purpose.public-goods, w: 3}]
+      - id: fairer
+        text: So the people with the most pay the most, and things are fairer.
+        evidence: [{position: tax.purpose.redistribute, w: 3}]
+      - id: taking
+        text: Honestly? Because they can. It's taken from you, and you can't say no.
+        evidence: [{position: tax.purpose.theft, w: 3}]
+      - id: money
+        text: The government makes the money. Taxing some of it back keeps prices from running away.
+        evidence: [{position: tax.purpose.currency-tool, w: 3}]
+      - id: whose
+        text: Look at who gets taxed and who gets paid. It tells you whose government it is.
+        evidence: [{position: tax.purpose.class-instrument, w: 3}]
+      - id: zakat
+        text: The tax that matters is the share you owe the poor before God. That one isn't optional.
+        evidence: [{position: tax.purpose.religious-duty, w: 3}]
+      - id: land
+        text: It shouldn't come off your work at all. Tax the land, which nobody made.
+        evidence: [{position: tax.purpose.land-value, w: 3}]
+
+  - id: probe.tax.purpose.burden
+    type: allocation
+    title: Where it falls
+    text: >
+      You are redesigning your country's tax system from scratch. Ten points: where should most of the
+      burden fall?
+    why: This asks what you think taxes are for, by where you put them.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: broad
+          text: A flat, broad tax on income and spending, as low as possible
+          evidence: [{position: tax.purpose.public-goods, w: 2}]
+        - id: land
+          text: The value of land and natural resources
+          evidence: [{position: tax.purpose.land-value, w: 3}]
+        - id: imports
+          text: Tariffs on imports, to protect our industry
+          evidence: [{position: tax.purpose.tariffs-for-the-nation, w: 3}]
+        - id: capital
+          text: Big fortunes, profits and finance, off workers' backs
+          evidence: [{position: tax.purpose.class-instrument, w: 3}]
+        - id: religious
+          text: A religious levy on wealth, paid straight to the poor
+          evidence: [{position: tax.purpose.religious-duty, w: 3}]
+        - id: inflation
+          text: Whatever cools prices when they run hot. The state doesn't need tax to spend
+          evidence: [{position: tax.purpose.currency-tool, w: 3}]
+        - id: nothing
+          text: Nowhere. Pay for what you use, voluntarily
+          evidence: [{position: tax.purpose.theft, w: 3}]
+        - id: progressive
+          text: Steeply rising rates on high incomes
+          evidence: [{position: tax.purpose.redistribute, w: 2}]
+    options:
+      - {id: done, text: Done}
+
+  - id: probe.tax.purpose.debate
+    type: voices
+    title: The town hall
+    text: A televised town hall in Lahore on the new budget. Two people in the audience get the microphone. Who's right?
+    voices:
+      - {name: Hajji Rafiq, says: "Zakat on wealth, paid to the poor, is the only tax with God's blessing. The rest feeds the officials."}
+      - {name: Dr. Farah, says: "The state issues the rupee. It doesn't need your taxes to spend. Taxes are for holding prices down."}
+    why: This asks what you think taxes are for.
+    options:
+      - id: rafiq
+        text: Hajji Rafiq. Giving to the poor is a duty to God, not a fee to the state.
+        evidence: [{position: tax.purpose.religious-duty, w: 3}]
+      - id: farah
+        text: Dr. Farah. Taxes manage the currency.
+        evidence: [{position: tax.purpose.currency-tool, w: 3}]
+      - id: class
+        text: Both miss it. Workers pay through every packet of tea, and the budget pays the bondholders. That's whose state it is.
+        evidence: [{position: tax.purpose.class-instrument, w: 3}]
+      - id: theft
+        text: Both miss it. Taxation is taking by force, blessed or not.
+        evidence: [{position: tax.purpose.theft, w: 3}]
+      - id: tariffs
+        text: Both miss it. Tax imports and build our own industry, not people's wages.
+        evidence: [{position: tax.purpose.tariffs-for-the-nation, w: 3}]
+      - id: land
+        text: Both miss it. Tax the big landholdings. Their owners pay almost nothing.
+        evidence: [{position: tax.purpose.land-value, w: 3}]

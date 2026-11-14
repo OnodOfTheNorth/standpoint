@@ -1,0 +1,532 @@
+nodes:
+  # ---------------------------------------------------------------- investment.ethics
+  - id: probe.investment.ethics.pension-vote
+    type: scene
+    title: The pension vote
+    text: >
+      Your teachers' pension fund holds shares in an oil major, an arms maker and a bank that lends to
+      private prisons. For the first time, members get a vote on investment policy. Forty years of your
+      savings are in there. You vote for:
+    why: This asks whether you think savings should be invested according to values, and whose.
+    options:
+      - id: returns
+        text: The best return, full stop. It's our retirement, not a political campaign.
+        evidence: [{position: investment.ethics.returns-only, w: 3}]
+      - id: esg
+        text: Score every company on climate, labor and governance risk. Well-run firms are better bets anyway.
+        evidence: [{position: investment.ethics.esg-integration, w: 3}]
+      - id: divest
+        text: Sell the oil, the arms and the prison lender. Don't profit from harm.
+        evidence: [{position: investment.ethics.divest, w: 3}]
+      - id: faith
+        text: Screen out what faith forbids, the arms, the gambling, the interest, and invest in honest trade.
+        evidence: [{position: investment.ethics.faith-screens, w: 3}]
+      - id: vote
+        text: Keep the shares and use our votes at their annual meetings. Sell and someone worse buys them.
+        evidence: [{position: investment.ethics.shareholder-activism, w: 3}]
+      - id: ours
+        text: Put teachers in charge of the fund and invest in schools and housing for workers.
+        evidence: [{position: investment.ethics.workers-capital, w: 3}]
+      - id: no-clean
+        text: Shuffling shares changes nothing. Every return comes out of someone's unpaid work.
+        evidence: [{position: investment.ethics.no-clean-money, w: 3}]
+
+  - id: probe.investment.ethics.inheritance
+    type: scene
+    title: The adviser
+    text: >
+      Your aunt left you 30,000. The bank adviser, a cheerful man in a tie, slides four leaflets across the
+      desk: a plain index fund, a "sustainable" fund, a faith-compliant fund, and a fund that votes its
+      shares on climate and labor. "Or," he says, "the high-yield one." You say:
+    why: This asks whether you think your own money should follow your values.
+    options:
+      - id: index
+        text: The index fund. Cheapest, best return. My values I spend separately.
+        evidence: [{position: investment.ethics.returns-only, w: 3}]
+      - id: sustainable
+        text: The sustainable one. Companies that manage those risks will do better long term.
+        evidence: [{position: investment.ethics.esg-integration, w: 3}]
+      - id: faith
+        text: The faith fund. It's held in trust, and some things I won't profit from.
+        evidence: [{position: investment.ethics.faith-screens, w: 3}]
+      - id: voting
+        text: The one that votes its shares. Better to push from inside.
+        evidence: [{position: investment.ethics.shareholder-activism, w: 3}]
+      - id: none
+        text: None of them. It all comes from somebody's work. I'll pay off the mortgage and give to the strike fund.
+        evidence: [{position: investment.ethics.no-clean-money, w: 3}]
+      - id: union
+        text: Whatever my union's members' fund is doing. Workers' money should be steered by workers.
+        evidence: [{position: investment.ethics.workers-capital, w: 3}]
+      - id: out
+        text: Anything that doesn't own oil or weapons. I just want out of the worst.
+        evidence: [{position: investment.ethics.divest, w: 3}]
+
+  - id: probe.investment.ethics.endowment
+    type: voices
+    title: The endowment
+    text: The university council is meeting about its endowment. A student rep and the finance director face off. Who's right?
+    voices:
+      - {name: The student rep, says: "Sell every share in the weapons makers. Our name shouldn't be on that."}
+      - {name: The finance director, says: "If we sell, someone else buys, cheaper. Keep them and vote at the annual meeting."}
+    why: This asks whether and how you think investment should follow values.
+    options:
+      - id: student
+        text: The student. Divest, and say why.
+        evidence: [{position: investment.ethics.divest, w: 3}]
+      - id: director
+        text: The director. Stay in and push from inside.
+        evidence: [{position: investment.ethics.shareholder-activism, w: 3}]
+      - id: returns
+        text: Both miss it. The endowment's job is returns for scholarships, not statements.
+        evidence: [{position: investment.ethics.returns-only, w: 3}]
+      - id: risk
+        text: Both miss it. Weigh the reputational and legal risk like any other. That's just good investing.
+        evidence: [{position: investment.ethics.esg-integration, w: 3}]
+      - id: faith
+        text: Both miss it. Some money is simply forbidden to touch. The founders were clear about that.
+        evidence: [{position: investment.ethics.faith-screens, w: 3}]
+      - id: staff
+        text: Both miss it. The staff pension fund is the bigger pot. Put the staff in charge of it.
+        evidence: [{position: investment.ethics.workers-capital, w: 3}]
+      - id: no-clean
+        text: Both miss it. There's no clean return. The question is who owns production, not which shares you hold.
+        evidence: [{position: investment.ethics.no-clean-money, w: 3}]
+
+  # ---------------------------------------------------------------- work.status
+  - id: probe.work.status.jakarta
+    type: scene
+    title: The ojek law
+    text: >
+      Jakarta. Two million motorcycle taxi drivers now work through apps. The ministry is writing a law on
+      what they are, and you're on the drafting committee. The app companies, the drivers' associations and
+      the street vendors' union all have someone in the room. You propose:
+    why: This asks what you think a platform driver is.
+    options:
+      - id: contractor
+        text: They're independent contractors. They choose when and whether to work. Leave it.
+        evidence: [{position: work.status.independent-contractor, w: 3}]
+      - id: employees
+        text: They're employees. Minimum wage, sick pay, the lot.
+        evidence: [{position: work.status.employees, w: 3}]
+      - id: third
+        text: A new status, partner worker, with insurance and benefits that follow them between apps.
+        evidence: [{position: work.status.third-category, w: 3}]
+      - id: coop
+        text: Fund a drivers' cooperative app. Let them keep the commission.
+        evidence: [{position: work.status.platform-cooperative, w: 3}]
+      - id: piece
+        text: It's wage labor paid by the trip. Recognize their right to organize and strike.
+        evidence: [{position: work.status.piece-wage, w: 3}]
+      - id: informal
+        text: They're small entrepreneurs, like ojek drivers always were. Give them licences and simpler rules, not a boss.
+        evidence: [{position: work.status.informal-entrepreneurs, w: 3}]
+
+  - id: probe.work.status.charging
+    type: voices
+    title: The charging point
+    text: Two delivery riders waiting at a charging point in Nairobi at midnight. Who's right?
+    voices:
+      - {name: Brian, says: "I'm my own boss. I log on when I want. Nobody's shouting at me."}
+      - {name: Wanjiru, says: "The app is the boss. It sets the price, picks the route and fires you with a swipe."}
+    why: This asks what you think a platform rider is.
+    options:
+      - id: brian
+        text: Brian. They're independent.
+        evidence: [{position: work.status.independent-contractor, w: 3}]
+      - id: wanjiru
+        text: Wanjiru. That's an employer, whatever the contract says.
+        evidence: [{position: work.status.employees, w: 2}, {position: work.status.piece-wage, w: 1}]
+      - id: hustle
+        text: Both miss it. People here always worked by the job. Give them papers and fewer fines, and they'll build businesses.
+        evidence: [{position: work.status.informal-entrepreneurs, w: 3}]
+      - id: own
+        text: Both miss it. The riders should own the app.
+        evidence: [{position: work.status.platform-cooperative, w: 3}]
+      - id: middle
+        text: Both are half right. It's a new kind of work and needs its own rules.
+        evidence: [{position: work.status.third-category, w: 3}]
+
+  - id: probe.work.status.line
+    type: line
+    title: Whose worker?
+    text: Going down this list, who is somebody's employee?
+    cases:
+      - A street vendor selling phone credit
+      - A taxi driver renting a cab by the day from its owner
+      - A delivery rider whose app sets the price, the route and the rating
+      - A cleaner booked through an app by the hour
+    why: This asks where you think working for yourself ends and working for someone begins.
+    options:
+      - id: none
+        text: None of them. They all choose when and whether to work.
+        evidence: [{position: work.status.independent-contractor, w: 3}]
+      - id: app
+        text: The rider and the cleaner. The app is their employer.
+        evidence: [{position: work.status.employees, w: 3}]
+      - id: entrepreneurs
+        text: None of them. They're all entrepreneurs, and what they need is legal papers and simpler rules.
+        evidence: [{position: work.status.informal-entrepreneurs, w: 3}]
+      - id: between
+        text: The rider and the cleaner are something in between, and the law should say so.
+        evidence: [{position: work.status.third-category, w: 3}]
+      - id: piece
+        text: All but the vendor. They sell their work by the piece to someone who owns the cab or the app.
+        evidence: [{position: work.status.piece-wage, w: 3}]
+      - id: own
+        text: Wrong question. Whoever owns the app is the problem. The riders should own it.
+        evidence: [{position: work.status.platform-cooperative, w: 3}]
+
+  # ---------------------------------------------------------------- housing.tenure
+  - id: probe.housing.tenure.occupation
+    type: scene
+    title: The empty block
+    text: >
+      Johannesburg. An office block downtown has stood empty for four years, owned by a company in a tax
+      haven. Last month three hundred families moved in, rigged up water, and started a crèche on the
+      second floor. The owner has an eviction order. You're the city's housing official.
+    why: This asks what you think housing is, and who has a claim to it.
+    options:
+      - id: defend
+        text: Defend the families. Empty buildings belong to those who need them.
+        evidence: [{position: housing.tenure.occupy-empty, w: 3}]
+      - id: right
+        text: Stop the eviction until the city can house them. The constitution says housing is a right, and that's on us.
+        evidence: [{position: housing.tenure.right-to-housing, w: 3}]
+      - id: owner
+        text: Enforce the order. It's the owner's investment, and the law has to mean something.
+        evidence: [{position: housing.tenure.asset-and-investment, w: 3}]
+      - id: build
+        text: Enforce it, and scrap the rules that stop developers building. Shortages are made by permits.
+        evidence: [{position: housing.tenure.market-supply, w: 3}]
+      - id: buy
+        text: Buy the block for public housing and let the families stay as tenants.
+        evidence: [{position: housing.tenure.social-housing, w: 3}]
+      - id: sell
+        text: Help the families buy their flats on easy terms. Owners look after their homes.
+        evidence: [{position: housing.tenure.homeownership, w: 3}]
+      - id: organize
+        text: Back the families organizing as tenants, here and in every block like it.
+        evidence: [{position: housing.tenure.class-question, w: 3}]
+
+  - id: probe.housing.tenure.renewal
+    type: tradeoff
+    title: Thirty percent
+    text: >
+      Your lease renewal arrives. The rent goes up thirty percent, take it or leave by March. Your landlord is
+      a retired couple who say their costs are up too. The city council votes next week on rent control.
+      You have a slot to speak.
+    why: This asks what you think housing should be.
+    options:
+      - id: cap
+        text: Cap rents and limit evictions to real cause. Tenants need security to stay in their homes.
+        evidence: [{position: housing.tenure.rent-control, w: 3}]
+      - id: build
+        text: No cap. Caps choke supply. Let people build and rents will fall on their own.
+        evidence: [{position: housing.tenure.market-supply, w: 3}]
+      - id: own
+        text: Help renters like me buy. That's the only real security.
+        evidence: [{position: housing.tenure.homeownership, w: 3}]
+      - id: right
+        text: Housing should be a legal right, and the city should answer for it.
+        evidence: [{position: housing.tenure.right-to-housing, w: 3}]
+      - id: public
+        text: Build public housing at scale, enough to set the market.
+        evidence: [{position: housing.tenure.social-housing, w: 3}]
+      - id: business
+        text: No cap. The couple are entitled to a return on their investment.
+        evidence: [{position: housing.tenure.asset-and-investment, w: 3}]
+      - id: empties
+        text: There are four empty flats on my street. People should move into them.
+        evidence: [{position: housing.tenure.occupy-empty, w: 3}]
+
+  - id: probe.housing.tenure.nurse
+    type: explanation
+    title: The nurse's flat
+    text: >
+      A nurse in Dublin with twelve years' experience can't afford to rent a one-bedroom flat within an hour
+      of her hospital. Her parents bought a house on one wage in 1985. What happened?
+    why: This asks what you think housing is, and what kind of cause you reach for.
+    options:
+      - id: rules
+        text: Planning rules and objections stopped anyone building. Supply never kept up.
+        cause: structures
+        evidence: [{position: housing.tenure.market-supply, w: 3}]
+      - id: capital
+        text: Housing became an investment for funds and landlords. Her rent is their return.
+        cause: interests
+        evidence: [{position: housing.tenure.class-question, w: 3}]
+      - id: council
+        text: The state stopped building council houses in the 1980s and never started again.
+        cause: structures
+        evidence: [{position: housing.tenure.social-housing, w: 3}]
+      - id: no-protection
+        text: Landlords can raise rents as they like and evict at will. Tenants have no protection.
+        cause: interests
+        evidence: [{position: housing.tenure.rent-control, w: 3}]
+      - id: no-right
+        text: The country never treated a home as a right. It treated it as luck.
+        cause: ideas
+        evidence: [{position: housing.tenure.right-to-housing, w: 3}]
+      - id: empties
+        text: There are tens of thousands of empty homes. They're held as investments while people queue.
+        cause: interests
+        evidence: [{position: housing.tenure.occupy-empty, w: 3}]
+      - id: ladder
+        text: Governments stopped helping first-time buyers onto the ladder. Owning is what gave her parents security.
+        cause: ideas
+        evidence: [{position: housing.tenure.homeownership, w: 3}]
+
+  # ---------------------------------------------------------------- health.care
+  - id: probe.health.care.design
+    type: scene
+    title: The health system
+    text: >
+      A new government in Accra has asked you to design the country's health system. Most people pay at
+      the clinic, many see a herbalist first, and churches run a third of the hospitals. You have one page.
+      The core of it is:
+    why: This asks who you think should provide health care, and who should pay.
+    options:
+      - id: national
+        text: A national health service, free at the point of use, paid from taxes.
+        evidence: [{position: health.care.national-service, w: 3}]
+      - id: insurance
+        text: Compulsory insurance through non-profit funds, paid from wages, with public and private providers.
+        evidence: [{position: health.care.social-insurance, w: 3}]
+      - id: market
+        text: Let people buy insurance and choose providers. The state covers the poorest.
+        evidence: [{position: health.care.market-choice, w: 3}]
+      - id: fees
+        text: Keep a small fee. It's what keeps the drugs on the shelves.
+        evidence: [{position: health.care.user-fees, w: 3}]
+      - id: community
+        text: A health worker living in every village, focused on clean water and prevention.
+        evidence: [{position: health.care.socialized-community, w: 3}]
+      - id: churches
+        text: Back the churches, families and mutual societies that already do most of the caring.
+        evidence: [{position: health.care.mutual-aid, w: 3}]
+      - id: healers
+        text: Recognize and fund the herbalists most people see first, and keep their remedies out of foreign patents.
+        evidence: [{position: health.care.traditional-medicine, w: 3}]
+
+  - id: probe.health.care.conference
+    type: voices
+    title: Two doctors
+    text: Two doctors share a taxi from a health conference in Geneva. Who's right?
+    voices:
+      - {name: Dr. Weber, says: "Everyone insured through non-profit sickness funds, many providers competing. That's how Germany does it, and it works."}
+      - {name: Dr. Morales, says: "A family doctor living on every block, keeping people well before they get sick. That's how Cuba does it, and it works."}
+    why: This asks who you think should provide health care.
+    options:
+      - id: weber
+        text: Dr. Weber. Compulsory insurance, many providers.
+        evidence: [{position: health.care.social-insurance, w: 3}]
+      - id: morales
+        text: Dr. Morales. Public, preventive and in the community.
+        evidence: [{position: health.care.socialized-community, w: 3}]
+      - id: nhs
+        text: Both miss it. One national service, free when you need it, paid from taxes.
+        evidence: [{position: health.care.national-service, w: 3}]
+      - id: market
+        text: Both miss it. Let patients pay and choose, and providers compete on price.
+        evidence: [{position: health.care.market-choice, w: 3}]
+      - id: healers
+        text: Both miss it. Most of the world sees a traditional healer first. Neither system has room for them.
+        evidence: [{position: health.care.traditional-medicine, w: 3}]
+      - id: mutual
+        text: Both miss it. Families and churches cared for the sick long before either system.
+        evidence: [{position: health.care.mutual-aid, w: 3}]
+
+  - id: probe.health.care.district
+    type: allocation
+    title: The district budget
+    text: >
+      You run health for a rural district in Bolivia. The new budget arrives, smaller than promised. You have
+      ten points.
+    why: This asks who you think should provide health care, and who should pay.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: family-doctors
+          text: Doctors and nurses who live in the villages and focus on prevention
+          evidence: [{position: health.care.socialized-community, w: 2}]
+        - id: hospital
+          text: Make the district hospital free for everyone
+          evidence: [{position: health.care.national-service, w: 2}]
+        - id: funds
+          text: Pay the insurance contributions of poor families into the national funds
+          evidence: [{position: health.care.social-insurance, w: 3}]
+        - id: vouchers
+          text: Vouchers families can spend at any clinic, private or public
+          evidence: [{position: health.care.market-choice, w: 2}]
+        - id: healers
+          text: Train and pay the traditional healers and midwives people already trust
+          evidence: [{position: health.care.traditional-medicine, w: 3}]
+        - id: missions
+          text: Grants to the mission clinics already serving the poor
+          evidence: [{position: health.care.mutual-aid, w: 2}]
+        - id: fee
+          text: Keep a small fee at clinics and spend it on drugs
+          evidence: [{position: health.care.user-fees, w: 2}]
+    options:
+      - {id: done, text: Done}
+
+  # ---------------------------------------------------------------- debt.household
+  - id: probe.debt.household.app-loans
+    type: explanation
+    title: The loan apps
+    text: >
+      In Nairobi, millions of people have borrowed on phone apps, a few thousand shillings at a time, at
+      interest rates that add up to over a hundred percent a year. Your cousin has loans on four apps to pay
+      off the other three. Why do so many people borrow like this?
+    why: This asks what you think household debt is, and what kind of cause you reach for.
+    options:
+      - id: wages
+        text: Wages stopped covering rent and school fees. The apps fill the gap, and finance collects twice.
+        cause: structures
+        evidence: [{position: debt.household.wages-replaced-by-loans, w: 3}]
+      - id: choices
+        text: People borrow for things they can't afford. Nobody forced your cousin.
+        cause: individuals
+        evidence: [{position: debt.household.personal-responsibility, w: 3}]
+      - id: banks
+        text: Banks won't touch people like your cousin. Expensive credit beats no credit and a loan shark.
+        cause: interests
+        evidence: [{position: debt.household.free-credit, w: 3}]
+      - id: predators
+        text: Nobody polices the apps. Cap the rates and give people a way out.
+        cause: interests
+        evidence: [{position: debt.household.regulate-and-relieve, w: 3}]
+      - id: usury
+        text: Lending at interest to people in need is forbidden for a reason. This is why.
+        cause: divine
+        evidence: [{position: debt.household.usury-forbidden, w: 3}]
+      - id: collect
+        text: It's how the rich collect a second time from people already underpaid. Cancel it, and refuse together.
+        cause: interests
+        evidence: [{position: debt.household.cancel-and-refuse, w: 3}]
+
+  - id: probe.debt.household.cap
+    type: scene
+    title: The cap
+    text: >
+      Parliament is debating a cap on payday loan interest at 36 percent a year. The lenders say they'll
+      close half their shops. The church debt counselling service says half its clients owe more than a
+      year's wages. Your member of parliament asks constituents what to do.
+    why: This asks what you think is fair to charge ordinary borrowers, and what is owed.
+    options:
+      - id: no-cap
+        text: No cap. It just pushes the poor to loan sharks.
+        evidence: [{position: debt.household.free-credit, w: 3}]
+      - id: cap
+        text: Cap it, police the lenders, and give people a fresh start through bankruptcy.
+        evidence: [{position: debt.household.regulate-and-relieve, w: 3}]
+      - id: cancel
+        text: Cancel the debts outright, and back debtors who refuse to pay together.
+        evidence: [{position: debt.household.cancel-and-refuse, w: 3}]
+      - id: wages
+        text: A cap treats the symptom. Raise wages and nobody needs a payday loan.
+        evidence: [{position: debt.household.wages-replaced-by-loans, w: 3}]
+      - id: forbid
+        text: Interest on the needy should be forbidden altogether. Lend to share risk, not to profit.
+        evidence: [{position: debt.household.usury-forbidden, w: 3}]
+      - id: pay
+        text: No cap. People signed. They should pay what they agreed.
+        evidence: [{position: debt.household.personal-responsibility, w: 3}]
+
+  # ---------------------------------------------------------------- welfare.conditions
+  - id: probe.welfare.conditions.line
+    type: line
+    title: Strings attached
+    text: Going down this list, which help should come with conditions?
+    cases:
+      - A pension for a seventy-year-old
+      - A child allowance for every family
+      - Support for a widow with three children
+      - Unemployment money for a healthy twenty-five-year-old
+      - Cash for a poor mother with school-age children
+    why: This asks whether you think help from the state should come with conditions.
+    options:
+      - id: none
+        text: None of them. Support is a right, no tests and no sanctions.
+        evidence: [{position: welfare.conditions.unconditional, w: 3}]
+      - id: universal
+        text: None of them, and every family and pensioner gets them, rich or poor. Help for the poor alone becomes poor help.
+        evidence: [{position: welfare.conditions.universal-entitlement, w: 3}]
+      - id: idle
+        text: Only the twenty-five-year-old, and if he won't work, he gets nothing. The others deserve help.
+        evidence: [{position: welfare.conditions.deserving-poor, w: 3}]
+      - id: workfare
+        text: The twenty-five-year-old should work, train or search in return. Support with no obligation traps people.
+        evidence: [{position: welfare.conditions.workfare, w: 3}]
+      - id: school
+        text: The mother's cash should depend on the kids going to school and the clinic. That builds their future.
+        evidence: [{position: welfare.conditions.conditional-cash, w: 3}]
+      - id: cheap-work
+        text: Conditions aren't about fairness. They exist to push people into cheap jobs.
+        evidence: [{position: welfare.conditions.discipline-labor, w: 3}]
+      - id: neighbors
+        text: Most of this should be family, church and neighbors, who know who needs what.
+        evidence: [{position: welfare.conditions.charity-not-state, w: 3}]
+
+  - id: probe.welfare.conditions.minister
+    type: scene
+    title: The family grant
+    text: >
+      You're the social minister in Brasília. Eleven million poor families get a monthly cash grant, and
+      the budget is under attack. Congress will keep it only if you change something. You propose:
+    why: This asks whether you think help should come with conditions, and which.
+    options:
+      - id: school
+        text: Keep it tied to the children's school attendance and health checks. That's why it works.
+        evidence: [{position: welfare.conditions.conditional-cash, w: 3}]
+      - id: universal
+        text: Make it universal, every child, rich or poor. Then nobody can call it a handout.
+        evidence: [{position: welfare.conditions.universal-entitlement, w: 3}]
+      - id: work
+        text: Require able-bodied adults to work or train in return.
+        evidence: [{position: welfare.conditions.workfare, w: 3}]
+      - id: deserving
+        text: Cut it back to those who truly can't work, the old, the sick, the widows, the children.
+        evidence: [{position: welfare.conditions.deserving-poor, w: 3}]
+      - id: no-strings
+        text: Drop every condition and pay it to all as a basic income.
+        evidence: [{position: welfare.conditions.unconditional, w: 3}]
+      - id: parishes
+        text: Hand more of it to churches and local charities who know the families.
+        evidence: [{position: welfare.conditions.charity-not-state, w: 3}]
+      - id: organize
+        text: Refuse to bargain. Mobilize the families. They only touch it when the poor are quiet.
+        evidence: [{position: welfare.conditions.discipline-labor, w: 3}]
+
+  - id: probe.welfare.conditions.jobcentre
+    type: voices
+    title: The job centre
+    text: Two people waiting at a job centre in Manchester. One has just been sanctioned for missing an appointment. Who's right?
+    voices:
+      - {name: Dave, says: "Rules are rules. If you're fit to work, you should be looking. That's the deal."}
+      - {name: Shaz, says: "I missed it because the bus didn't come. Four weeks with nothing. The rules are there to break you."}
+    why: This asks whether you think help should come with conditions.
+    options:
+      - id: dave
+        text: Dave. Support in return for effort.
+        evidence: [{position: welfare.conditions.workfare, w: 3}]
+      - id: shaz
+        text: Shaz. The rules exist to drive people into cheap work.
+        evidence: [{position: welfare.conditions.discipline-labor, w: 3}]
+      - id: none
+        text: Both miss it. No tests, no sanctions. Pay it as a right.
+        evidence: [{position: welfare.conditions.unconditional, w: 3}]
+      - id: universal
+        text: Both miss it. If everyone got it, like a pension, nobody would be policing bus times.
+        evidence: [{position: welfare.conditions.universal-entitlement, w: 3}]
+      - id: deserving
+        text: Both miss it. Help the ones who can't work. The rest shouldn't be there at all.
+        evidence: [{position: welfare.conditions.deserving-poor, w: 3}]
+      - id: kids
+        text: Both miss it. Tie money to what helps kids, school and doctor, not to bus timetables.
+        evidence: [{position: welfare.conditions.conditional-cash, w: 3}]
+      - id: neighbors
+        text: Both miss it. A stranger with a clipboard can't tell need from idleness. Neighbors can.
+        evidence: [{position: welfare.conditions.charity-not-state, w: 3}]

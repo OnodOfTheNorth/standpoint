@@ -1,0 +1,419 @@
+nodes:
+  # ---------------------------------------------------------------- capitalism.nature
+  - id: probe.capitalism.nature.tshirt
+    type: explanation
+    title: The T-shirt
+    text: >
+      A T-shirt sells for €25 in Hamburg. The woman in Dhaka who sewed it was paid about 40 cents for her part.
+      The cotton came from Burkina Faso, the brand is registered in Amsterdam, and the profit is booked in
+      Ireland. What does this shirt tell you about the system that made it?
+    why: This asks what you think capitalism is, and what kind of cause you reach for.
+    options:
+      - id: world
+        text: That it's one world system. Comfort in Hamburg rests on cheap hands in Dhaka and cheap cotton in Burkina.
+        cause: structures
+        evidence: [{position: capitalism.nature.world-system, w: 3}]
+      - id: unpaid
+        text: That profit comes from the part of her day she isn't paid for. Same in Hamburg, only better paid.
+        cause: structures
+        evidence: [{position: capitalism.nature.exploitation-profit, w: 3}]
+      - id: trade
+        text: That trade works. The job beats her alternatives, the shirt is cheap here, and both sides chose it.
+        cause: ideas
+        evidence: [{position: capitalism.nature.free-exchange, w: 3}]
+      - id: rigged
+        text: That the trade deals and tax rulings are rigged for big brands. A real free market would compete that margin away.
+        cause: interests
+        evidence: [{position: capitalism.nature.crony-corrupted, w: 3}]
+      - id: owners
+        text: That the brand owns everything and she owns nothing. Spread the ownership and the shirt changes.
+        cause: structures
+        evidence: [{position: capitalism.nature.concentrated-ownership, w: 3}]
+      - id: manage
+        text: That the engine works but has no brakes. It needs rules on wages and safety, here and there.
+        cause: ideas
+        evidence: [{position: capitalism.nature.managed-engine, w: 3}]
+      - id: for-sale
+        text: That everything in it, the field, the village, her time, has been turned into something for sale.
+        cause: culture
+        evidence: [{position: capitalism.nature.market-society, w: 3}]
+
+  - id: probe.capitalism.nature.line
+    type: line
+    title: Where it starts
+    text: Going down this list, where does capitalism start?
+    cases:
+      - A village market where farmers sell their own vegetables
+      - A family bakery with two hired bakers
+      - A supermarket chain owned by a pension fund
+      - A copper mine in Zambia owned from London
+      - A hedge fund betting on the copper price
+    why: This asks what you think capitalism is, by where you see it begin.
+    premises:
+      - id: never-tried
+        text: The premise that any of this is capitalism. Real free markets, without state favors, exist nowhere.
+        evidence: [{position: capitalism.nature.crony-corrupted, w: 3}]
+    conditions:
+      - id: customs
+        text: It depends whether buying and selling is still bound by the village's customs, or has broken loose from them.
+        evidence: [{position: capitalism.nature.market-society, w: 3}]
+    options:
+      - id: market
+        text: At the village market. Free exchange is capitalism, and a good thing.
+        evidence: [{position: capitalism.nature.free-exchange, w: 3}]
+      - id: bakery
+        text: At the bakery. Once some work for wages so another can profit, that's it.
+        evidence: [{position: capitalism.nature.exploitation-profit, w: 3}]
+      - id: chain
+        text: At the chain. Small owners are fine. Capitalism is the few owning nearly everything.
+        evidence: [{position: capitalism.nature.concentrated-ownership, w: 3}]
+      - id: mine
+        text: At the mine. The point of the whole thing is what flows from Zambia to London.
+        evidence: [{position: capitalism.nature.world-system, w: 3}]
+      - id: fund
+        text: At the hedge fund. Making things is fine. Money making money is the problem.
+        evidence: [{position: capitalism.nature.usury-finance, w: 3}]
+      - id: all-managed
+        text: It's all capitalism, the market included, and all of it needs managing.
+        evidence: [{position: capitalism.nature.managed-engine, w: 3}]
+
+  - id: probe.capitalism.nature.textbook
+    type: scene
+    title: The textbook
+    text: >
+      Your daughter's economics textbook opens its chapter with: "Capitalism is an economic system." She
+      says that's useless and asks you to write a better first sentence in pencil. She will read it out in
+      class. You write:
+    why: This asks what you think capitalism is, in one sentence.
+    options:
+      - id: exchange
+        text: '"Capitalism is people freely trading and starting businesses."'
+        evidence: [{position: capitalism.nature.free-exchange, w: 3}]
+      - id: profit
+        text: '"Capitalism is production for profit by people who own the workplaces, from the work of people who don''t."'
+        evidence: [{position: capitalism.nature.exploitation-profit, w: 3}]
+      - id: world
+        text: '"Capitalism is a world system where rich countries live off the labor of poor ones."'
+        evidence: [{position: capitalism.nature.world-system, w: 3}]
+      - id: crony
+        text: '"Capitalism, as we have it, is big business and government in bed together."'
+        evidence: [{position: capitalism.nature.crony-corrupted, w: 3}]
+      - id: engine
+        text: '"Capitalism is a powerful engine that needs a firm hand on the wheel."'
+        evidence: [{position: capitalism.nature.managed-engine, w: 3}]
+      - id: few
+        text: '"Capitalism is when a few own the farms and factories and everyone else works for them."'
+        evidence: [{position: capitalism.nature.concentrated-ownership, w: 3}]
+      - id: sale
+        text: '"Capitalism is when land, work and money are all for sale, and family and faith come second."'
+        evidence: [{position: capitalism.nature.market-society, w: 3}]
+
+  # ---------------------------------------------------------------- value.source
+  - id: probe.value.source.penang
+    type: explanation
+    title: Two million
+    text: >
+      A small electronics firm in Penang made a profit of two million ringgit this year. Forty workers, one
+      founder, a rented site near the port, a bank loan. Where did the two million come from?
+    why: This asks where you think value and profit come from, and what kind of cause you reach for.
+    options:
+      - id: labor
+        text: From the forty. It's the work they did beyond what they were paid for.
+        cause: structures
+        evidence: [{position: value.source.labor, w: 3}]
+      - id: customers
+        text: From customers who wanted the chips more than the money they paid. Value is in the wanting.
+        cause: ideas
+        evidence: [{position: value.source.subjective-utility, w: 3}]
+      - id: contributions
+        text: Labor, capital and the site each earned roughly what they added. The profit is capital's share.
+        cause: structures
+        evidence: [{position: value.source.marginal-productivity, w: 3}]
+      - id: split
+        text: There was a surplus, and this year the founder got a big slice because the workers had no union.
+        cause: interests
+        evidence: [{position: value.source.surplus-distribution, w: 3}]
+      - id: rent
+        text: Mostly from the work, but a chunk is the rising value of a site near the port that the city made.
+        cause: structures
+        evidence: [{position: value.source.land-and-labor, w: 3}]
+      - id: just
+        text: From work and real risk, which is fine. Whatever went to the bank as interest wasn't earned.
+        cause: ideas
+        evidence: [{position: value.source.just-price, w: 3}]
+      - id: founder
+        text: From the founder seeing a gap nobody else saw and betting her house on it.
+        cause: individuals
+        evidence: [{position: value.source.entrepreneurial-risk, w: 3}]
+
+  - id: probe.value.source.tomatoes
+    type: voices
+    title: The tomato stall
+    text: A market in Lagos, a slow afternoon. An aunt and her nephew are arguing over the tomato price. Who's right?
+    voices:
+      - {name: Mama Nkechi, says: "These tomatoes are worth the work of growing them and carrying them here at four in the morning."}
+      - {name: Her nephew Tunde, says: "They're worth what somebody pays. Monday it's double, Friday it's half. Work has nothing to do with it."}
+    why: This asks where you think value comes from.
+    options:
+      - id: aunt
+        text: Mama Nkechi. The work is the value. The price swings around it.
+        evidence: [{position: value.source.labor, w: 3}]
+      - id: tunde
+        text: Tunde. Value is whatever people want, and the price finds it.
+        evidence: [{position: value.source.subjective-utility, w: 3}]
+      - id: risk
+        text: Both miss the trader who bought the crate at dawn not knowing Friday's price. The profit is hers for that risk.
+        evidence: [{position: value.source.entrepreneurial-risk, w: 3}]
+      - id: landlord
+        text: Both miss the man who owns the market ground and takes the stall rent for doing nothing.
+        evidence: [{position: value.source.land-and-labor, w: 3}]
+      - id: just
+        text: Both miss that a price can be fair or unfair to the grower and the buyer. That's what matters.
+        evidence: [{position: value.source.just-price, w: 3}]
+      - id: each
+        text: Both miss it. The land, the labor and the van each earn what they add.
+        evidence: [{position: value.source.marginal-productivity, w: 3}]
+      - id: power
+        text: Both miss who gets what. The split between grower, trucker and trader is settled by who has the power.
+        evidence: [{position: value.source.surplus-distribution, w: 3}]
+
+  - id: probe.value.source.earned
+    type: line
+    title: Earned?
+    text: Going down this list, which of these incomes are earned?
+    cases:
+      - A nurse's salary
+      - A shop owner's profit after paying her staff
+      - A landlord's rent on a flat he inherited
+      - A shareholder's dividend
+      - Interest on a bank deposit
+      - A currency trader's gains on a good week
+    why: This asks where you think income legitimately comes from, which says where you think value comes from.
+    options:
+      - id: all
+        text: All of them. Each is paid for what its labor, land or capital contributes.
+        evidence: [{position: value.source.marginal-productivity, w: 3}]
+      - id: risk
+        text: Wherever someone bore a real risk, the shop, the shares, the trade. The rest is wages or rent.
+        evidence: [{position: value.source.entrepreneurial-risk, w: 3}]
+      - id: nurse
+        text: Only the nurse's, and the shop owner's own labor. The rest comes out of other people's work.
+        evidence: [{position: value.source.labor, w: 3}]
+      - id: not-rent
+        text: Everything but the rent. Land values are made by the whole town, not the landlord.
+        evidence: [{position: value.source.land-and-labor, w: 3}]
+      - id: not-interest
+        text: The nurse, the shop owner, the shareholder who shares the risk. Not interest, not the trader.
+        evidence: [{position: value.source.just-price, w: 3}]
+      - id: power
+        text: Wrong question. How much each one gets is settled by power and law, not by merit.
+        evidence: [{position: value.source.surplus-distribution, w: 3}]
+      - id: prices
+        text: "Earned isn't the question. Each is a price someone agreed to pay."
+        evidence: [{position: value.source.subjective-utility, w: 3}]
+
+  # ---------------------------------------------------------------- class.concept
+  - id: probe.class.concept.brothers
+    type: voices
+    title: Two brothers
+    text: At a family wedding in Leeds, the plumber brother has had a few. Who's right?
+    voices:
+      - {name: "Darren, plumber", says: "I earn more than him and I'm still working class. He's a teacher. He's gone posh."}
+      - {name: "Martin, teacher", says: "I've got a pension and a degree, and you've got a van and two lads working for you. Which of us is the boss?"}
+    why: This asks what you think class is.
+    options:
+      - id: darren
+        text: Darren. Class is how you were raised, how you talk, what you're comfortable with.
+        evidence: [{position: class.concept.culture-and-upbringing, w: 3}]
+      - id: martin
+        text: Martin. Darren employs people. That's a different relation to the work.
+        evidence: [{position: class.concept.relation-to-production, w: 3}]
+      - id: command
+        text: Martin, but for a different reason. Darren gives orders and Martin takes them. That's the line.
+        evidence: [{position: class.concept.command-and-control, w: 3}]
+      - id: income
+        text: Darren's higher. He earns more. That's what class is.
+        evidence: [{position: class.concept.income-strata, w: 3}]
+      - id: market
+        text: Both are right about something. Martin's degree and pension, Darren's trade. Different market chances.
+        evidence: [{position: class.concept.market-situation-status, w: 3}]
+      - id: brothers
+        text: They're two brothers who made different choices. Class doesn't come into it.
+        evidence: [{position: class.concept.no-such-thing, w: 3}]
+      - id: callings
+        text: Different callings, both needed, both honorable. Nobody's above anybody.
+        evidence: [{position: class.concept.functional-estates, w: 3}]
+      - id: world
+        text: Both miss the man in Shenzhen who made their phones. Next to him, they're the same class.
+        evidence: [{position: class.concept.world-and-race, w: 3}]
+
+  - id: probe.class.concept.children
+    type: explanation
+    title: Like parent, like child
+    text: >
+      In most countries, the children of cleaners mostly end up in jobs like cleaning, and the children of
+      doctors mostly end up in jobs like medicine. There are exceptions, and everyone knows one. What mostly
+      explains the pattern?
+    why: This asks what you think class is and how it passes down, and what kind of cause you reach for.
+    options:
+      - id: culture
+        text: Upbringing. Accent, confidence, which fork to use, who your parents know.
+        cause: culture
+        evidence: [{position: class.concept.culture-and-upbringing, w: 3}]
+      - id: property
+        text: One family owns nothing but its ability to work, and that's what it passes on.
+        cause: structures
+        evidence: [{position: class.concept.relation-to-production, w: 3}]
+      - id: money
+        text: Money, plain and simple. Tutors and university cost money.
+        cause: interests
+        evidence: [{position: class.concept.income-strata, w: 3}]
+      - id: credentials
+        text: Credentials. What you can sell on the job market is mostly decided by the papers you hold.
+        cause: structures
+        evidence: [{position: class.concept.market-situation-status, w: 3}]
+      - id: orders
+        text: Some families give orders and some take them, and the habit is handed down.
+        cause: structures
+        evidence: [{position: class.concept.command-and-control, w: 3}]
+      - id: individuals
+        text: The pattern's overstated. People move up and down all the time on their own efforts.
+        cause: individuals
+        evidence: [{position: class.concept.no-such-thing, w: 3}]
+      - id: callings
+        text: Callings run in families, and a society needs both. That's not a problem to fix.
+        cause: culture
+        evidence: [{position: class.concept.functional-estates, w: 3}]
+      - id: race
+        text: It depends where and what color. Across the world the cleaning jobs go to particular peoples.
+        cause: structures
+        evidence: [{position: class.concept.world-and-race, w: 3}]
+
+  - id: probe.class.concept.turin
+    type: scene
+    title: The plant in Turin
+    text: >
+      An auto parts plant outside Turin. An owner who lives in Monaco. A plant manager. Six foremen. Three
+      hundred line workers on permanent contracts. Forty cleaners from Senegal and Peru, hired through a
+      subcontractor. You're asked to draw one line through this plant that matters most. Where?
+    why: This asks what you think class is, by where you draw the main dividing line.
+    options:
+      - id: owner
+        text: Between the owner and everyone else. One owns it; the rest sell their working day.
+        evidence: [{position: class.concept.relation-to-production, w: 3}]
+      - id: command
+        text: Between those who give orders, owner, manager, foremen, and those who take them.
+        evidence: [{position: class.concept.command-and-control, w: 3}]
+      - id: cleaners
+        text: Between the line workers and the cleaners. Nation and race split this plant more than anything.
+        evidence: [{position: class.concept.world-and-race, w: 3}]
+      - id: pay
+        text: There isn't one line. It's pay bands, from the cleaners up to Monaco.
+        evidence: [{position: class.concept.income-strata, w: 3}]
+      - id: degree
+        text: Between those with university and those without. You can hear it in the canteen.
+        evidence: [{position: class.concept.culture-and-upbringing, w: 3}]
+      - id: secure
+        text: Between the permanent contracts and the agency ones. Market position is what matters.
+        evidence: [{position: class.concept.market-situation-status, w: 3}]
+      - id: body
+        text: No line. It's one firm with different jobs, and each owes the others something.
+        evidence: [{position: class.concept.functional-estates, w: 3}]
+      - id: none
+        text: No line. Three hundred and fifty individuals.
+        evidence: [{position: class.concept.no-such-thing, w: 3}]
+
+  # ---------------------------------------------------------------- wage.nature
+  - id: probe.wage.nature.cebu
+    type: explanation
+    title: The call center
+    text: >
+      Your sister works at a call center in Cebu. Nine-hour night shifts, 18,000 pesos a month. The company
+      bills the American client about four times that for her seat. She asks you, not for the first time,
+      why her pay is what it is.
+    why: This asks what you think the wage is, and what kind of cause you reach for.
+    options:
+      - id: agreed
+        text: She agreed to it. It's the going rate, and nobody made her take the job.
+        cause: ideas
+        evidence: [{position: wage.nature.voluntary-exchange, w: 3}]
+      - id: keep
+        text: It's what it costs to keep her alive and working. Everything she produces past that is theirs.
+        cause: structures
+        evidence: [{position: wage.nature.price-of-labor-power, w: 3}]
+      - id: adds
+        text: It's roughly what she adds. The billing covers the building, the managers, the risk.
+        cause: structures
+        evidence: [{position: wage.nature.marginal-product, w: 3}]
+      - id: power
+        text: No union, ten applicants for every seat. That's the whole reason.
+        cause: interests
+        evidence: [{position: wage.nature.bargaining-power, w: 3}]
+      - id: family
+        text: Whatever the reason, it's unjust if it can't keep a family.
+        cause: ideas
+        evidence: [{position: wage.nature.just-wage, w: 3}]
+      - id: servitude
+        text: The number isn't the point. She rents out her nights to someone else's orders.
+        cause: structures
+        evidence: [{position: wage.nature.wage-slavery, w: 3}]
+      - id: boss
+        text: It's fair if it matches the work. Hers doesn't. Her boss is taking advantage.
+        cause: individuals
+        evidence: [{position: wage.nature.fair-days-pay, w: 3}]
+
+  - id: probe.wage.nature.two-offers
+    type: tradeoff
+    title: Two offers
+    text: >
+      Two offers on the same day. A bank in Nairobi: 90,000 shillings a month, fixed hours, a manager
+      checking your screen. Or your uncle's old taxi, yours to drive: maybe 60,000 a month, your own hours,
+      nobody's orders. Which, and why?
+    why: This asks what you think working for a wage is.
+    options:
+      - id: taxi
+        text: The taxi. Less money, but nobody owns my day.
+        evidence: [{position: wage.nature.wage-slavery, w: 3}]
+      - id: bank-fair
+        text: The bank. Good money for a good day's work, as long as they keep their side.
+        evidence: [{position: wage.nature.fair-days-pay, w: 3}]
+      - id: either
+        text: Either. Both are fair deals freely made. Pick what suits you.
+        evidence: [{position: wage.nature.voluntary-exchange, w: 3}]
+      - id: time
+        text: The bank, without illusions. They pay for my time, not for what I make in it.
+        evidence: [{position: wage.nature.price-of-labor-power, w: 3}]
+      - id: adds
+        text: The bank. It pays more because I'd add more there. That's what a wage tracks.
+        evidence: [{position: wage.nature.marginal-product, w: 3}]
+      - id: family
+        text: Whichever one keeps a family. That's the only test of a wage.
+        evidence: [{position: wage.nature.just-wage, w: 3}]
+
+  - id: probe.wage.nature.break
+    type: voices
+    title: The break room
+    text: Two warehouse pickers on their fifteen-minute break in Leipzig. Who's right?
+    voices:
+      - {name: Uwe, says: "All I want is a fair day's pay for a fair day's work. Most weeks I get it."}
+      - {name: Jana, says: "There's no such thing. Whatever they pay us, they keep what we make on top of it. That's the job."}
+    why: This asks what you think the wage is.
+    options:
+      - id: uwe
+        text: Uwe. A wage is fair when it matches the effort.
+        evidence: [{position: wage.nature.fair-days-pay, w: 3}]
+      - id: jana
+        text: Jana. The wage buys our time, and the rest is theirs.
+        evidence: [{position: wage.nature.price-of-labor-power, w: 3}]
+      - id: servitude
+        text: Both miss it. Spending your life under someone's orders isn't fair at any price.
+        evidence: [{position: wage.nature.wage-slavery, w: 3}]
+      - id: adds
+        text: Both miss it. Pay follows what each worker adds. Get more productive, get paid more.
+        evidence: [{position: wage.nature.marginal-product, w: 3}]
+      - id: agreed
+        text: Both miss it. They signed. A wage is what two sides agree.
+        evidence: [{position: wage.nature.voluntary-exchange, w: 3}]
+      - id: union
+        text: Both miss it. The wage is whatever the works council can squeeze out.
+        evidence: [{position: wage.nature.bargaining-power, w: 3}]

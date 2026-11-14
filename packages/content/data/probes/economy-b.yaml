@@ -1,0 +1,404 @@
+nodes:
+  # ---------------------------------------------------------------- crisis.cause
+  - id: probe.crisis.cause.coast
+    type: explanation
+    title: The ghost town
+    text: >
+      The Spanish coast, 2012. Half-built apartment blocks stand empty along the motorway, cranes rusting
+      on top. Your neighbor laid bricks there for eight years and has been out of work for three. In 2007
+      everyone said the boom would go on. Why did it end like this?
+    why: This asks what you think causes economic crises, and what kind of cause you reach for.
+    conditions:
+      - id: shock
+        text: It depends whether anything outside the market set it off. Markets usually right themselves.
+        evidence: [{position: crisis.cause.shocks-and-errors, w: 3}]
+    options:
+      - id: profit
+        text: Profits on all that capital were falling. The building was where the money went to hide, until it couldn't.
+        cause: structures
+        evidence: [{position: crisis.cause.falling-profit, w: 3}]
+      - id: wages
+        text: Wages were too low to buy what got built. The flats were sold on loans instead.
+        cause: structures
+        evidence: [{position: crisis.cause.underconsumption, w: 3}]
+      - id: demand
+        text: Spending stopped, and nobody stepped in to replace it. The government should have built instead.
+        cause: structures
+        evidence: [{position: crisis.cause.demand-failure, w: 3}]
+      - id: debt
+        text: Good years breed bigger debts, until the debts depend on prices that can only go up. They didn't.
+        cause: structures
+        evidence: [{position: crisis.cause.financial-instability, w: 3}]
+      - id: cheap-money
+        text: Interest rates were held too low for years. Cheap credit built towns nobody's savings could pay for.
+        cause: ideas
+        evidence: [{position: crisis.cause.credit-distortion, w: 3}]
+      - id: greed
+        text: Greedy bankers, crooked councillors and people borrowing for a second flat.
+        cause: individuals
+        evidence: [{position: crisis.cause.greed-and-recklessness, w: 3}]
+      - id: periphery
+        text: Watch who paid. The northern banks got their money back; the bill went south, as it always does.
+        cause: structures
+        evidence: [{position: crisis.cause.imperial-drain, w: 3}]
+
+  - id: probe.crisis.cause.minister
+    type: scene
+    title: First week
+    text: >
+      You've just become finance minister. Unemployment is up four points in a year, two banks are wobbling,
+      and the opposition is calling it the worst slump in a generation. Your officials want a decision by
+      Monday. What do you do first?
+    why: This asks what you think causes crises, through what you would do about one.
+    options:
+      - id: spend
+        text: Spend. Public works, lower interest rates, money in people's pockets. Restart demand.
+        evidence: [{position: crisis.cause.demand-failure, w: 3}]
+      - id: let-fail
+        text: Let the bad investments fail. Don't cut rates; cheap money caused this.
+        evidence: [{position: crisis.cause.credit-distortion, w: 3}]
+      - id: debts
+        text: Write down household debts and rein in the lenders before the next boom starts.
+        evidence: [{position: crisis.cause.financial-instability, w: 3}]
+      - id: hold
+        text: Hold steady. It was an oil price spike. Avoid the panicky mistakes that make it worse.
+        evidence: [{position: crisis.cause.shocks-and-errors, w: 3}]
+      - id: wages
+        text: Raise the minimum wage and pensions so people can buy what's sitting in warehouses.
+        evidence: [{position: crisis.cause.underconsumption, w: 3}]
+      - id: nothing
+        text: Nothing I do fixes it. Profits have to recover through a shakeout, or the whole setup has to change.
+        evidence: [{position: crisis.cause.falling-profit, w: 3}]
+      - id: jail
+        text: Prosecute the bankers who did this. Then the rest.
+        evidence: [{position: crisis.cause.greed-and-recklessness, w: 3}]
+      - id: creditors
+        text: Refuse the foreign lenders' terms. They'll try to make our workers pay for their losses.
+        evidence: [{position: crisis.cause.imperial-drain, w: 3}]
+
+  - id: probe.crisis.cause.bar
+    type: voices
+    title: After the closure
+    text: The plant closed in the slump. Two of its men are at the bar the next afternoon. Who's right?
+    voices:
+      - {name: Kofi, says: "Greedy bankers did this. Gambled with everyone's money and walked away rich."}
+      - {name: Sven, says: "The central bank printed cheap money for ten years. This is the hangover. Somebody had to pay."}
+    why: This asks what you think causes economic crises.
+    options:
+      - id: kofi
+        text: Kofi. Greed at the top.
+        evidence: [{position: crisis.cause.greed-and-recklessness, w: 3}]
+      - id: sven
+        text: Sven. Cheap money built a false boom.
+        evidence: [{position: crisis.cause.credit-distortion, w: 3}]
+      - id: demand
+        text: Both miss it. People stopped spending and nobody stepped in.
+        evidence: [{position: crisis.cause.demand-failure, w: 3}]
+      - id: debt
+        text: Both miss it. Debts pile up in every good year, by everyone. It's how booms work.
+        evidence: [{position: crisis.cause.financial-instability, w: 3}]
+      - id: wages
+        text: Both miss it. They kept our wages down until we couldn't buy what we made.
+        evidence: [{position: crisis.cause.underconsumption, w: 3}]
+      - id: profit
+        text: Both miss it. The new machines made profits fall across the board. A slump is how it resets.
+        evidence: [{position: crisis.cause.falling-profit, w: 3}]
+      - id: shock
+        text: Both miss it. The war sent energy prices through the roof. Bad luck, bad policy.
+        evidence: [{position: crisis.cause.shocks-and-errors, w: 3}]
+      - id: drain
+        text: Both miss it. When cheap metal and cheap labor from abroad stop being cheap, this is what happens here.
+        evidence: [{position: crisis.cause.imperial-drain, w: 3}]
+
+  # ---------------------------------------------------------------- markets.nature
+  - id: probe.markets.nature.line
+    type: line
+    title: Which are capitalism?
+    text: Going down this list, which of these are capitalism?
+    cases:
+      - Obsidian traded across the Mediterranean seven thousand years ago
+      - A souq in Aleppo in 1700
+      - A state-owned rice company in Vietnam selling on the open market
+      - A supermarket chain buying from ten thousand farmers on its own terms
+      - A stock exchange
+    why: This asks whether you think markets and capitalism are the same thing.
+    conditions:
+      - id: frame
+        text: It depends on the rules around each one. A market is a tool; the frame decides what it does.
+        evidence: [{position: markets.nature.framed-tool, w: 3}]
+    options:
+      - id: all
+        text: All of them. Free trade is capitalism, and it's as old as people.
+        evidence: [{position: markets.nature.same-thing, w: 3}]
+      - id: late
+        text: Only the last two. Capitalism starts when most people must sell their labor, not when people trade.
+        evidence: [{position: markets.nature.older-than-capitalism, w: 3}]
+      - id: monopoly
+        text: The supermarket and the exchange. The souq was a market; capitalism is the monopoly sitting on top.
+        evidence: [{position: markets.nature.anti-market, w: 3}]
+      - id: not-vietnam
+        text: Not the Vietnamese company. Markets can work for public ownership.
+        evidence: [{position: markets.nature.socialist-markets, w: 3}]
+      - id: seeds
+        text: The seeds are in all of them. Wherever goods are made for sale, capitalism grows back.
+        evidence: [{position: markets.nature.commodity-production-is-the-root, w: 3}]
+      - id: souq
+        text: Not the souq. It had fair prices and honest weights under God's law. Capitalism is the market without that.
+        evidence: [{position: markets.nature.moral-economy, w: 3}]
+
+  - id: probe.markets.nature.hanoi
+    type: verdict
+    title: Hanoi, 1986
+    text: >
+      Hanoi, 1986. The state shops are nearly empty and prices are rising several hundred percent a year.
+      The private stalls in the back streets are full. The party congress is debating whether to let farmers
+      and traders sell freely. You have a vote. Where would you have stood?
+    why: This asks what you think markets are, and whether they can serve something other than capitalism.
+    options:
+      - id: socialist
+        text: Let the markets in. With the land and the big firms public, markets serve the plan.
+        evidence: [{position: markets.nature.socialist-markets, w: 3}]
+      - id: retreat
+        text: Allow it to survive, but call it a retreat. Buying and selling will breed capitalism back.
+        evidence: [{position: markets.nature.commodity-production-is-the-root, w: 3}]
+      - id: honest
+        text: Let them in, and be honest that it's choosing capitalism. Markets and capitalism are one thing.
+        evidence: [{position: markets.nature.same-thing, w: 3}]
+      - id: labor
+        text: Let traders trade. Watch only one thing, whether people start having to sell their labor to live.
+        evidence: [{position: markets.nature.older-than-capitalism, w: 3}]
+      - id: frame
+        text: Let them in, inside a strong legal frame of courts, contracts, rules on what can be sold.
+        evidence: [{position: markets.nature.framed-tool, w: 3}]
+      - id: moral
+        text: Let them in under moral rules on prices and lending, as markets always ran before.
+        evidence: [{position: markets.nature.moral-economy, w: 3}]
+      - id: small
+        text: Let the small traders in, and stop any big monopoly forming above them.
+        evidence: [{position: markets.nature.anti-market, w: 3}]
+
+  - id: probe.markets.nature.stallholders
+    type: voices
+    title: Saturday market
+    text: Two stallholders at a farmers' market in Lyon, packing up. Who's right?
+    voices:
+      - {name: "Hélène, cheesemaker", says: "This is capitalism at its best. Small producers, real prices, customers choosing."}
+      - {name: "Karim, grower", says: "This isn't capitalism. Capitalism is the supermarket chain that wants all of us gone."}
+    why: This asks whether markets and capitalism are the same thing.
+    options:
+      - id: helene
+        text: Hélène. A market is capitalism.
+        evidence: [{position: markets.nature.same-thing, w: 3}]
+      - id: karim
+        text: Karim. Capitalism is the monopoly above the market.
+        evidence: [{position: markets.nature.anti-market, w: 3}]
+      - id: wage
+        text: Both miss it. Markets are old. Capitalism is when people have nothing to sell but their labor.
+        evidence: [{position: markets.nature.older-than-capitalism, w: 3}]
+      - id: seed
+        text: Both miss it. Every stall here is the supermarket chain fifty years younger.
+        evidence: [{position: markets.nature.commodity-production-is-the-root, w: 3}]
+      - id: coop
+        text: Both miss it. A cooperative could own the supermarket and it would still be a market.
+        evidence: [{position: markets.nature.socialist-markets, w: 3}]
+      - id: frame
+        text: Both miss it. It's the rules that decide whether the market stays like this.
+        evidence: [{position: markets.nature.framed-tool, w: 3}]
+      - id: moral
+        text: Both miss it. Honest weights and fair prices make a good market. That's morals, not economics.
+        evidence: [{position: markets.nature.moral-economy, w: 3}]
+
+  # ---------------------------------------------------------------- inequality.justice
+  - id: probe.inequality.justice.cleaner
+    type: explanation
+    title: Cleaner and doctor
+    text: >
+      A hospital cleaner in Zürich earns about four times as much as a junior doctor in Dhaka. Both work
+      long shifts. Neither chose where they were born. Why the gap, and is it just?
+    why: This asks whether you think economic inequality is just, and what kind of cause you reach for.
+    options:
+      - id: drain
+        text: It's not luck. Wealth flows from places like Dhaka to places like Zürich, and the gap is the flow.
+        cause: structures
+        evidence: [{position: inequality.justice.global-drain, w: 3}]
+      - id: luck
+        text: Pure luck of birth, and luck like that is unjust.
+        cause: chance
+        evidence: [{position: inequality.justice.luck-unjust, w: 3}]
+      - id: built
+        text: Generations in Switzerland built the institutions and the capital. The pay reflects it.
+        cause: culture
+        evidence: [{position: inequality.justice.earned-desert, w: 2}, {position: inequality.justice.process-not-pattern, w: 1}]
+      - id: owners
+        text: Wrong question. In both cities, who owns the hospitals decides more than where you were born.
+        cause: structures
+        evidence: [{position: inequality.justice.class-exploitation, w: 3}]
+      - id: ranks
+        text: Peoples and places differ, as people do. Trying to flatten that does more harm than good.
+        cause: nature
+        evidence: [{position: inequality.justice.natural-hierarchy, w: 3}]
+      - id: trust
+        text: Whoever has more holds it for those who have less. The Zürich cleaner owes something to Dhaka.
+        cause: divine
+        evidence: [{position: inequality.justice.stewardship, w: 3}]
+
+  - id: probe.inequality.justice.line
+    type: line
+    title: Where it turns unjust
+    text: Going down this list, where does inequality become unjust?
+    cases:
+      - A surgeon earns five times what the hospital porter earns
+      - A company boss earns three hundred times what the cleaner earns
+      - A duke inherits an estate, a title and a seat in the upper house
+      - The average Norwegian earns thirty times the average Malawian
+    why: This asks whether and when you think economic inequality is unjust.
+    options:
+      - id: none-ranks
+        text: None of them. Ranks, the duke's included, are part of what holds a society together.
+        evidence: [{position: inequality.justice.natural-hierarchy, w: 3}]
+      - id: duke
+        text: Only the duke. The others work for what they get.
+        evidence: [{position: inequality.justice.earned-desert, w: 3}]
+      - id: born
+        text: The duke and the Norwegian. Both were simply born into it.
+        evidence: [{position: inequality.justice.luck-unjust, w: 3}]
+      - id: owners
+        text: Wrong question. The boss and the duke own things. That's where all of it comes from.
+        evidence: [{position: inequality.justice.class-exploitation, w: 3}]
+      - id: last
+        text: The last one dwarfs the rest, and it was taken, not earned.
+        evidence: [{position: inequality.justice.global-drain, w: 3}]
+      - id: rules
+        text: None of them, if each came about by fair rules. The pattern doesn't matter.
+        evidence: [{position: inequality.justice.process-not-pattern, w: 3}]
+
+  - id: probe.inequality.justice.dinner
+    type: voices
+    title: The dinner party
+    text: At a dinner party in Santiago, two guests have stopped pretending to be polite. Who's right?
+    voices:
+      - {name: Doña Isabel, says: "Some people are born to lead and some to follow, and pretending otherwise ruins everybody."}
+      - {name: "Camila, student", says: "Half of what anyone at this table owns was inherited. Tax it until we all start level."}
+    why: This asks whether you think economic inequality is just.
+    options:
+      - id: isabel
+        text: Doña Isabel. A society needs its orders.
+        evidence: [{position: inequality.justice.natural-hierarchy, w: 3}]
+      - id: camila
+        text: Camila. Inherited advantage is unjust.
+        evidence: [{position: inequality.justice.luck-unjust, w: 3}]
+      - id: owners
+        text: Both miss it. As long as a few own the mines and the rest work them, inequality comes back.
+        evidence: [{position: inequality.justice.class-exploitation, w: 3}]
+      - id: world
+        text: Both miss it. The copper leaves Chile, and the biggest gap is between this country and the ones that buy it.
+        evidence: [{position: inequality.justice.global-drain, w: 3}]
+      - id: earned
+        text: Both miss it. Whoever works hard deserves what they get, whatever they started with.
+        evidence: [{position: inequality.justice.earned-desert, w: 3}]
+      - id: give
+        text: Both miss it. Wealth is held in trust. The question is what Isabel does with hers.
+        evidence: [{position: inequality.justice.stewardship, w: 3}]
+
+  # ---------------------------------------------------------------- welfare.state
+  - id: probe.welfare.state.why-built
+    type: explanation
+    title: Why they built it
+    text: >
+      Between 1945 and 1975, Western European countries built free health care, pensions, council housing
+      and unemployment insurance on a scale never seen before. Why then, and why there?
+    why: This asks what you think the welfare state is and whom it serves, and what kind of cause you reach for.
+    options:
+      - id: won
+        text: Organized workers won it, at the ballot box and on the picket line.
+        cause: interests
+        evidence: [{position: welfare.state.social-citizenship, w: 3}]
+      - id: empire
+        text: The colonies helped pay for it, and fear of the Russians and the communists did the rest.
+        cause: structures
+        evidence: [{position: welfare.state.drain-and-threat, w: 3}]
+      - id: both
+        text: Employers needed healthy, trained workers and quiet streets. It was also a real gain for workers.
+        cause: structures
+        evidence: [{position: welfare.state.capital-reproduction, w: 3}]
+      - id: floor
+        text: After two wars, people agreed nobody should fall below a decent floor.
+        cause: ideas
+        evidence: [{position: welfare.state.safety-net, w: 3}]
+      - id: families
+        text: Christian democrats built much of it to support families and churches, not replace them.
+        cause: ideas
+        evidence: [{position: welfare.state.subsidiarity, w: 3}]
+      - id: votes
+        text: Politicians found they could buy votes with other people's money.
+        cause: individuals
+        evidence: [{position: welfare.state.coercive-dependency, w: 3}]
+      - id: nation
+        text: Nations that had bled together decided to look after their own.
+        cause: culture
+        evidence: [{position: welfare.state.for-our-own, w: 3}]
+
+  - id: probe.welfare.state.voices
+    type: voices
+    title: The pension office
+    text: In the queue at the pension office in Antwerp, two retired men are passing the time. Who's right?
+    voices:
+      - {name: "Jef, ex-docker", says: "We won all this on the picket lines. Nobody gave us a thing."}
+      - {name: "Luc, ex-accountant", says: "It's there because employers need healthy workers and governments need quiet streets. Don't be sentimental."}
+    why: This asks what you think the welfare state is and whom it serves.
+    options:
+      - id: jef
+        text: Jef. It was won, and it's ours.
+        evidence: [{position: welfare.state.social-citizenship, w: 3}]
+      - id: luc
+        text: Luc. It serves the people who run things.
+        evidence: [{position: welfare.state.capital-reproduction, w: 2}]
+      - id: both
+        text: Both right. It keeps the system running, and it's still a gain worth defending.
+        evidence: [{position: welfare.state.capital-reproduction, w: 3}]
+      - id: congo
+        text: Both miss the Congo. A lot of Belgium's comfort was paid for there.
+        evidence: [{position: welfare.state.drain-and-threat, w: 3}]
+      - id: dependency
+        text: Both miss what it costs. It takes from workers and breeds dependency.
+        evidence: [{position: welfare.state.coercive-dependency, w: 3}]
+      - id: ours
+        text: Both miss who it's for. People who paid in, not people who just arrived.
+        evidence: [{position: welfare.state.for-our-own, w: 3}]
+
+  - id: probe.welfare.state.cutbacks
+    type: explanation
+    title: Why they cut it
+    text: >
+      Since about 1980, pensions have been trimmed, benefits tightened and hospitals squeezed in most rich
+      countries, under governments of every color. Why?
+    why: This asks what you think the welfare state is for, by how you explain its decline.
+    options:
+      - id: threat-gone
+        text: The threat that paid for it is gone. After 1989 nobody had to fear revolution, and the cheap supply from abroad is contested.
+        cause: structures
+        evidence: [{position: welfare.state.drain-and-threat, w: 3}]
+      - id: need-less
+        text: Employers need it less. With workers available worldwide, a healthy local workforce matters less.
+        cause: structures
+        evidence: [{position: welfare.state.capital-reproduction, w: 3}]
+      - id: unaffordable
+        text: It became unaffordable and bred dependency. The cuts were overdue.
+        cause: ideas
+        evidence: [{position: welfare.state.coercive-dependency, w: 3}]
+      - id: trim
+        text: It had grown past a floor into everything. Trimming it back to a floor is sensible.
+        cause: ideas
+        evidence: [{position: welfare.state.safety-net, w: 3}]
+      - id: weak-unions
+        text: The unions got weaker. What workers won, they lost when they stopped fighting for it.
+        cause: interests
+        evidence: [{position: welfare.state.social-citizenship, w: 3}]
+      - id: newcomers
+        text: People stopped backing it once they saw it going to newcomers who'd paid nothing in.
+        cause: culture
+        evidence: [{position: welfare.state.for-our-own, w: 3}]
+      - id: crowding
+        text: The state had crowded out families and parishes, and when it faltered there was nothing underneath.
+        cause: culture
+        evidence: [{position: welfare.state.subsidiarity, w: 3}]

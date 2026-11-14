@@ -1,0 +1,281 @@
+nodes:
+  # ---------------------------------------------------------------- property.private
+  - id: probe.property.private.empty-house
+    type: scene
+    title: The empty house
+    text: >
+      Barcelona. A family of five has moved into a flat that has stood empty for six years. It belongs to an
+      investment company that owns two hundred more like it. The company wants them out by Friday. You sit
+      on the neighborhood council, which has been asked for a view.
+    why: This asks what you think makes property rightful.
+    options:
+      - id: owner
+        text: Out. The company's right to its property comes before any council or law.
+        evidence: [{position: property.private.natural-right, w: 3}]
+      - id: user
+        text: The flat belongs to the people living in it. The company never used it, only owned it.
+        evidence: [{position: property.private.possession-not-property, w: 3}]
+      - id: law
+        text: Property is whatever the law makes it. If empty flats are a problem, change the law.
+        evidence: [{position: property.private.convention, w: 3}]
+      - id: trustee
+        text: Hoarding homes while children sleep outside breaks God's law. Owners are trustees, not masters.
+        evidence: [{position: property.private.trust-from-god, w: 3}]
+      - id: order
+        text: Out. If a settled title can be ignored, no family's home is safe.
+        evidence: [{position: property.private.inherited-order, w: 3}]
+      - id: obligation
+        text: Ownership has obligations. Tax empty homes until they're let, or requisition them.
+        evidence: [{position: property.private.social-function, w: 3}]
+
+  - id: probe.property.private.line
+    type: line
+    title: Rightly yours
+    text: Going down this list, where does "rightly yours" stop?
+    cases:
+      - Your toothbrush
+      - The house you live in
+      - The farm your grandfather left you, which you rent out
+      - Shares in a mining company
+      - Forty flats you let out
+    why: This asks what kind of property you think is rightful.
+    options:
+      - id: all
+        text: It doesn't stop. All of it, if it was got fairly. The right comes before any state.
+        evidence: [{position: property.private.natural-right, w: 3}]
+      - id: home
+        text: After the house. Personal things are yours. Farms, mines and rentals are another matter.
+        evidence: [{position: property.private.personal-vs-productive, w: 3}]
+      - id: use
+        text: After the house, or the farm if you work it yourself. Living off rent and dividends is taking.
+        evidence: [{position: property.private.possession-not-property, w: 3}]
+      - id: law
+        text: All of it, because the law says so. The law could say otherwise tomorrow.
+        evidence: [{position: property.private.convention, w: 3}]
+      - id: trust
+        text: None of it is fully yours. You hold all of it in trust, and the poor have a share in it.
+        evidence: [{position: property.private.trust-from-god, w: 3}]
+      - id: farm
+        text: The grandfather's farm most of all. Long holding is what makes property sound.
+        evidence: [{position: property.private.inherited-order, w: 3}]
+
+  - id: probe.property.private.estate
+    type: voices
+    title: Three hundred years
+    text: A dispute over a boundary hedge in County Meath has reached the solicitor's office. Who's right?
+    voices:
+      - {name: The old landowner, says: "This land has been in my family for three hundred years. That is what makes it mine."}
+      - {name: The young solicitor, says: "With respect, it's yours because the courts will enforce it. Property is a rule, not a relic."}
+    why: This asks what you think makes property rightful.
+    options:
+      - id: landowner
+        text: The landowner. Long possession and family continuity are the real foundation.
+        evidence: [{position: property.private.inherited-order, w: 3}]
+      - id: solicitor
+        text: The solicitor. Property is a convention, judged by what it does.
+        evidence: [{position: property.private.convention, w: 3}]
+      - id: god
+        text: Both miss it. The land is God's. The family holds it in trust.
+        evidence: [{position: property.private.trust-from-god, w: 3}]
+      - id: worker
+        text: Both miss it. It belongs to whoever works it, and the landowner doesn't.
+        evidence: [{position: property.private.possession-not-property, w: 3}]
+      - id: natural
+        text: Both miss it. It's his by right, from before any court existed.
+        evidence: [{position: property.private.natural-right, w: 3}]
+      - id: function
+        text: Both miss it. It's his, but ownership comes with obligations to the people around it.
+        evidence: [{position: property.private.social-function, w: 3}]
+
+  # ---------------------------------------------------------------- property.self-ownership
+  - id: probe.property.self-ownership.sell
+    type: line
+    title: What can you sell?
+    text: Going down this list, where should you stop being allowed to sell?
+    cases:
+      - An hour of your work
+      - Your hair
+      - A kidney
+      - Ten years of your working life on a contract you can't leave
+      - Yourself, for life
+    why: This asks whether you think you own yourself, and what follows from that.
+    options:
+      - id: none
+        text: Nowhere. It's my body and my life, the last one included.
+        evidence: [{position: property.self-ownership.full, w: 3}]
+      - id: hours
+        text: Before the first. Hair and kidney maybe, but nobody can take over responsibility for what I do.
+        evidence: [{position: property.self-ownership.inalienable, w: 3}]
+      - id: kidney
+        text: After the hair. My body isn't mine to sell. It's entrusted to me.
+        evidence: [{position: property.self-ownership.gods-creation, w: 3}]
+      - id: question
+        text: Wrong question. People who own nothing else are forced to sell the hour. That's what owning yourself means.
+        evidence: [{position: property.self-ownership.social-individual, w: 3}]
+      - id: family
+        text: After the hair. The rest isn't yours alone to sell. Your family and people have a claim.
+        evidence: [{position: property.self-ownership.relational, w: 3}]
+      - id: govern
+        text: After the kidney. Your body is yours to govern. That doesn't make it a thing you own and trade.
+        evidence: [{position: property.self-ownership.sovereign-not-owner, w: 3}]
+
+  - id: probe.property.self-ownership.wages
+    type: voices
+    title: Is it yours?
+    text: Two friends are doing their taxes at the kitchen table in Auckland. Who's right?
+    voices:
+      - {name: Hamish, says: "I own myself, so I own what I earn. Taxing my wages is forced labor with paperwork."}
+      - {name: Aroha, says: "Fine, you own yourself. You don't own the land or the oil. Pay the rest of us rent on those."}
+    why: This asks whether you own yourself, and what you think follows.
+    options:
+      - id: hamish
+        text: Hamish. Self-ownership covers what you earn.
+        evidence: [{position: property.self-ownership.full, w: 3}]
+      - id: aroha
+        text: Aroha. You own yourself; the earth belongs to everyone.
+        evidence: [{position: property.self-ownership.left-libertarian, w: 3}]
+      - id: separate
+        text: Both mix up two things. Your body and private life are yours. Your wages are another question.
+        evidence: [{position: property.self-ownership.sovereign-not-owner, w: 3}]
+      - id: god
+        text: Both miss it. Neither of them owns himself. They belong to God.
+        evidence: [{position: property.self-ownership.gods-creation, w: 3}]
+      - id: whanau
+        text: Both miss it. You belong to your family and your people before you belong to yourself.
+        evidence: [{position: property.self-ownership.relational, w: 3}]
+      - id: nothing-else
+        text: Both miss it. "Owning yourself" is what's left to people who own nothing else.
+        evidence: [{position: property.self-ownership.social-individual, w: 3}]
+      - id: rent
+        text: Both miss it. If Hamish owns himself, he can't rent himself to a boss. The firm's output should be the workers'.
+        evidence: [{position: property.self-ownership.inalienable, w: 3}]
+
+  - id: probe.property.self-ownership.contract
+    type: scene
+    title: Clause 14
+    text: >
+      Your new employment contract in Bangalore, clause 14: everything you invent, write or think of during
+      your employment, at work or at home, belongs to the company. Clause 15: you agree to follow all
+      lawful instructions. HR wants it signed today. You:
+    why: This asks what you think you own of yourself, and what a contract can take.
+    options:
+      - id: sign
+        text: Sign or walk. I own myself, so I can sell what I like on whatever terms I like.
+        evidence: [{position: property.self-ownership.full, w: 3}]
+      - id: void
+        text: Sign, knowing it's void. Nobody can hand over responsibility for their own work. What we make should be ours.
+        evidence: [{position: property.self-ownership.inalienable, w: 3}]
+      - id: no-choice
+        text: Sign, because I own nothing else to live on. That's what my "self-ownership" amounts to.
+        evidence: [{position: property.self-ownership.social-individual, w: 3}]
+      - id: conscience
+        text: Strike out anything that touches conscience or my Sundays. What I owe God isn't theirs to buy.
+        evidence: [{position: property.self-ownership.gods-creation, w: 3}]
+      - id: evenings
+        text: Strike out "at home." My evenings belong to my family, not to any company.
+        evidence: [{position: property.self-ownership.relational, w: 3}]
+      - id: private
+        text: Strike "at home" for a different reason. My private life is mine to govern. At work they can have the work.
+        evidence: [{position: property.self-ownership.sovereign-not-owner, w: 3}]
+      - id: share
+        text: Sign it. My own effort is mine, but the bigger fight is over land and resources, not clause 14.
+        evidence: [{position: property.self-ownership.left-libertarian, w: 3}]
+
+  # ---------------------------------------------------------------- property.land
+  - id: probe.property.land.constitution
+    type: scene
+    title: The land clause
+    text: >
+      Your country is writing a new constitution. You chair the drafting committee on land. Ten percent of
+      landowners hold most of the farmland, mining firms want concessions, and a third of the population
+      farms. The article you write will last a century. It says:
+    why: This asks who you think should own land.
+    options:
+      - id: freehold
+        text: Land is private property like any other. Secure titles, free to buy and sell.
+        evidence: [{position: property.land.freehold, w: 3}]
+      - id: tiller
+        text: Break up the large estates. Land to those who work it.
+        evidence: [{position: property.land.to-the-tiller, w: 3}]
+      - id: state
+        text: All land belongs to the state. Farms and households get rights to use it.
+        evidence: [{position: property.land.nationalize, w: 3}]
+      - id: village
+        text: Land belongs to the village or cooperative that works it, and can never be sold.
+        evidence: [{position: property.land.communal, w: 3}]
+      - id: return
+        text: Land is not property. What was taken from the first peoples goes back to them.
+        evidence: [{position: property.land.relational, w: 3}]
+      - id: families
+        text: Many family farms. Cap the size of holdings and keep corporations and funds out.
+        evidence: [{position: property.land.family-farm, w: 3}]
+      - id: nation
+        text: Land and what lies under it belong to the nation. No foreigner owns a meter of it.
+        evidence: [{position: property.land.national-domain, w: 3}]
+      - id: rent
+        text: Hold it privately, but tax its full rental value for the public, and scrap taxes on work.
+        evidence: [{position: property.land.georgist-rent, w: 3}]
+
+  - id: probe.property.land.fund
+    type: scene
+    title: The farmland deal
+    text: >
+      A foreign investment fund is buying 80,000 hectares of farmland in your province, land that villages
+      have grazed for generations without papers. The government calls it investment. The provincial
+      assembly has one vote on it. You have that vote.
+    why: This asks who you think land should belong to.
+    options:
+      - id: sale
+        text: Yes. A sale is a sale. Titles and investment will make that land productive.
+        evidence: [{position: property.land.freehold, w: 3}]
+      - id: foreign
+        text: No. National territory isn't for foreigners to own.
+        evidence: [{position: property.land.national-domain, w: 3}]
+      - id: cap
+        text: No. Cap holdings and keep corporations off farmland. It should be in many families' hands.
+        evidence: [{position: property.land.family-farm, w: 3}]
+      - id: commons
+        text: No. The villages hold it in common. It was never anyone's to sell.
+        evidence: [{position: property.land.communal, w: 3}]
+      - id: state
+        text: No. The state should own all land and lease use rights. Nobody should be able to sell it.
+        evidence: [{position: property.land.nationalize, w: 3}]
+      - id: belong
+        text: No. Those people belong to that land. You can't sell a relative.
+        evidence: [{position: property.land.relational, w: 3}]
+      - id: tax
+        text: Let them buy it, and tax its rent so heavily the public gets the value.
+        evidence: [{position: property.land.georgist-rent, w: 3}]
+
+  - id: probe.property.land.titles
+    type: voices
+    title: The titling offer
+    text: >
+      A village assembly in the Bolivian highlands. The government offers every household its own land title.
+      Two neighbors stand up. Who's right?
+    voices:
+      - {name: Doña Rosa, says: "With my own title I can get a loan, and nobody can take my field."}
+      - {name: Don Felipe, says: "With titles, in ten years the bank owns half the village. The community holds the land, and it is never sold."}
+    why: This asks who you think should own land.
+    options:
+      - id: rosa
+        text: Doña Rosa. A secure title is protection and credit.
+        evidence: [{position: property.land.freehold, w: 3}]
+      - id: felipe
+        text: Don Felipe. The community holds it, and it's never for sale.
+        evidence: [{position: property.land.communal, w: 3}]
+      - id: mother
+        text: Both miss it. The land isn't anyone's property. People belong to it.
+        evidence: [{position: property.land.relational, w: 3}]
+      - id: state
+        text: Both miss it. The state should own all land and grant use, so neither banks nor elders can sell it.
+        evidence: [{position: property.land.nationalize, w: 3}]
+      - id: cap
+        text: Rosa's titles, with a cap so nobody can buy up the village.
+        evidence: [{position: property.land.family-farm, w: 3}]
+      - id: rent
+        text: Rosa's titles, and a land tax so the rent goes back to everyone.
+        evidence: [{position: property.land.georgist-rent, w: 3}]
+      - id: nation
+        text: Both miss the mining company waiting at the edge. Make sure no foreigner can buy it, titled or not.
+        evidence: [{position: property.land.national-domain, w: 3}]

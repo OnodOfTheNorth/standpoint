@@ -1,0 +1,278 @@
+nodes:
+  # ---------------------------------------------------------------- property.ip
+  - id: probe.property.ip.drug
+    type: scene
+    title: The cancer drug
+    text: >
+      A new cancer drug costs $40,000 a year under patent. A generic maker in Hyderabad says it can make
+      the same pills for $300. Public universities did the early research; the compound came from a plant
+      Amazonian healers have used for centuries. You advise the health ministry. What do you recommend?
+    why: This asks whether you think ideas should be property, and whose.
+    options:
+      - id: owner
+        text: Respect the patent. The company made the drug. It's theirs, like a house.
+        evidence: [{position: property.ip.creators-property, w: 3}]
+      - id: bargain
+        text: Respect it, but negotiate. The patent is the deal that pays for the next drug. Maybe a shorter one.
+        evidence: [{position: property.ip.incentive-bargain, w: 3}]
+      - id: abolish
+        text: Ignore it. Nobody can own a formula. Let anyone make the pills.
+        evidence: [{position: property.ip.monopoly-abolish, w: 3}]
+      - id: open
+        text: The public paid for the science. Make the research open and the drug a shared good.
+        evidence: [{position: property.ip.knowledge-commons, w: 3}]
+      - id: copy
+        text: Make it here. Rich countries copied freely when they were catching up. Now it's our turn.
+        evidence: [{position: property.ip.technology-monopoly, w: 3}]
+      - id: healers
+        text: It came from the healers' plant. Whatever anyone earns on it is owed to them first.
+        evidence: [{position: property.ip.community-knowledge, w: 3}]
+
+  - id: probe.property.ip.line
+    type: line
+    title: Ownable?
+    text: Going down this list, which should be someone's property?
+    cases:
+      - A song you wrote
+      - A new vaccine
+      - A piece of software
+      - A variety of rice bred by farmers over centuries
+      - A cheaper way to make steel
+    why: This asks whether you think ideas should be property.
+    options:
+      - id: all
+        text: All of them, owned by whoever made them. The farmers included.
+        evidence: [{position: property.ip.creators-property, w: 3}]
+      - id: limited
+        text: The first three and the steel, for a limited time, as long as it gets more invented.
+        evidence: [{position: property.ip.incentive-bargain, w: 3}]
+      - id: none
+        text: None of them. You can't own an idea. Patents and copyright are state monopolies.
+        evidence: [{position: property.ip.monopoly-abolish, w: 3}]
+      - id: shared
+        text: None of them should be locked up. Share them and keep them shared with open licences.
+        evidence: [{position: property.ip.knowledge-commons, w: 3}]
+      - id: catch-up
+        text: Poor countries should be free to copy the vaccine and the steel, whatever the rules say.
+        evidence: [{position: property.ip.technology-monopoly, w: 3}]
+      - id: rice
+        text: The rice belongs to the farmers' communities, and nobody should be allowed to patent it.
+        evidence: [{position: property.ip.community-knowledge, w: 3}]
+
+  - id: probe.property.ip.album
+    type: voices
+    title: The pirated album
+    text: Two friends at a bar in Lagos. One has just found his album for sale on a market stall for 500 naira. Who's right?
+    voices:
+      - {name: "Seun, musician", says: "That's my work. Every copy on that stall is stolen from me."}
+      - {name: "Ifeoma, programmer", says: "Copying isn't stealing. You still have your song. Make your money from shows."}
+    why: This asks whether you think ideas should be property.
+    options:
+      - id: seun
+        text: Seun. A song is its maker's property.
+        evidence: [{position: property.ip.creators-property, w: 3}]
+      - id: ifeoma
+        text: Ifeoma. Copyright is a monopoly that shouldn't exist.
+        evidence: [{position: property.ip.monopoly-abolish, w: 3}]
+      - id: bargain
+        text: Both miss it. Copyright is a bargain to keep musicians making music. Set it to whatever works.
+        evidence: [{position: property.ip.incentive-bargain, w: 3}]
+      - id: commons
+        text: Both miss it. Music is made in common. Share it under rules that keep it shared.
+        evidence: [{position: property.ip.knowledge-commons, w: 3}]
+      - id: rent
+        text: Both miss it. Foreign labels and software firms use the same rules to collect rent from Nigeria.
+        evidence: [{position: property.ip.technology-monopoly, w: 3}]
+      - id: tradition
+        text: Both miss it. Half of Seun's rhythms come from the talking drum. Some of it belongs to the people who made those.
+        evidence: [{position: property.ip.community-knowledge, w: 3}]
+
+  # ---------------------------------------------------------------- property.inheritance
+  - id: probe.property.inheritance.vote
+    type: scene
+    title: Two estates
+    text: >
+      Two men on your street died the same month. One left his daughter a small house and 20,000 in savings.
+      The other left his son a factory with 300 employees and 200 million. Parliament is rewriting the
+      inheritance law. You have a vote.
+    why: This asks whether wealth should be inherited, and how much.
+    options:
+      - id: right
+        text: No tax on either. Passing things to your children is a basic right.
+        evidence: [{position: property.inheritance.family-right, w: 3}]
+      - id: modest
+        text: The house goes untaxed. The 200 million gets taxed hard. They aren't the same thing.
+        evidence: [{position: property.inheritance.modest-yes-dynasties-no, w: 3}]
+      - id: heavy
+        text: Tax both heavily above a low threshold. Each generation should start nearer equal.
+        evidence: [{position: property.inheritance.heavy-tax, w: 3}]
+      - id: endowment
+        text: Tax the big estate and give every eighteen-year-old a real sum to start with.
+        evidence: [{position: property.inheritance.universal-endowment, w: 3}]
+      - id: abolish
+        text: Abolish inheritance of wealth. Everyone starts with what society gives everyone.
+        evidence: [{position: property.inheritance.abolish, w: 3}]
+      - id: socialize
+        text: Let the daughter keep the house. The factory should belong to society, and then there's nothing to inherit.
+        evidence: [{position: property.inheritance.socialize-capital, w: 3}]
+      - id: sacred
+        text: Follow the shares set by religious law, divided among all the relatives. That spreads it out.
+        evidence: [{position: property.inheritance.fixed-shares, w: 3}]
+
+  - id: probe.property.inheritance.shop
+    type: tradeoff
+    title: The shop
+    text: >
+      Your grandmother wants to leave the family shop in Izmir to your eldest brother alone, to keep it
+      whole. Your two sisters object, loudly. Everyone turns to you over the tea glasses.
+    why: This asks what you think inheritance is, and who decides it.
+    options:
+      - id: hers
+        text: It's hers to leave as she likes. That's what family property means.
+        evidence: [{position: property.inheritance.family-right, w: 3}]
+      - id: shares
+        text: The law of our faith sets each heir's share. She can't hand it all to one.
+        evidence: [{position: property.inheritance.fixed-shares, w: 3}]
+      - id: fine
+        text: Fine, it's a shop, not a dynasty. Leave families alone on things this size.
+        evidence: [{position: property.inheritance.modest-yes-dynasties-no, w: 3}]
+      - id: everyone
+        text: Shame every kid in Izmir doesn't get a start like this. That's the real problem.
+        evidence: [{position: property.inheritance.universal-endowment, w: 3}]
+      - id: start-equal
+        text: If it were a big business, the state should take a large share. Nobody should start that far ahead.
+        evidence: [{position: property.inheritance.heavy-tax, w: 3}]
+      - id: nobody
+        text: Nobody should inherit a business, my brother included. Earn it or don't have it.
+        evidence: [{position: property.inheritance.abolish, w: 3}]
+      - id: small
+        text: A shop is small change. Inheritance only matters for big capital, and that should be owned in common.
+        evidence: [{position: property.inheritance.socialize-capital, w: 3}]
+
+  - id: probe.property.inheritance.line
+    type: line
+    title: What passes down
+    text: Going down this list, where should passing it to your children be taxed hard or stopped?
+    cases:
+      - A wedding ring
+      - The family home
+      - Half a million in savings
+      - A business with two hundred employees
+      - A billion-dollar fortune
+    why: This asks how much wealth you think should be inherited.
+    conditions:
+      - id: sacred
+        text: It depends what religious law prescribes for the heirs. That settles it.
+        evidence: [{position: property.inheritance.fixed-shares, w: 3}]
+    options:
+      - id: never
+        text: Nowhere. All of it is the family's to pass on.
+        evidence: [{position: property.inheritance.family-right, w: 3}]
+      - id: billion
+        text: At the business, or at least the billion. Below that, leave families alone.
+        evidence: [{position: property.inheritance.modest-yes-dynasties-no, w: 3}]
+      - id: savings
+        text: From the savings on, heavily. What your parents earned isn't yours.
+        evidence: [{position: property.inheritance.heavy-tax, w: 3}]
+      - id: home
+        text: From the home on. Keepsakes, yes. Wealth, no.
+        evidence: [{position: property.inheritance.abolish, w: 3}]
+      - id: capital
+        text: At the business. Personal things pass down. Capital should be socialized.
+        evidence: [{position: property.inheritance.socialize-capital, w: 3}]
+      - id: grant
+        text: From the savings on, and the money goes into a grant every young adult gets.
+        evidence: [{position: property.inheritance.universal-endowment, w: 3}]
+
+  # ---------------------------------------------------------------- property.commons
+  - id: probe.property.commons.fishery
+    type: scene
+    title: The fishing grounds
+    text: >
+      Off the Kerala coast, the catch has fallen by half in fifteen years. Trawlers from the big ports work
+      the same waters as the village boats. The fisheries board wants a plan. You're on it.
+    why: This asks what you think should be held in common, and by whom.
+    options:
+      - id: quotas
+        text: Give each boat a quota it owns and can sell. Owners look after what's theirs.
+        evidence: [{position: property.commons.enclose, w: 3}]
+      - id: villages
+        text: Let the fishing villages set the rules, as they did for centuries. They know these waters.
+        evidence: [{position: property.commons.self-governed, w: 3}]
+      - id: state
+        text: A public fisheries agency runs it, for everyone, not for profit.
+        evidence: [{position: property.commons.public-ownership, w: 3}]
+      - id: coops
+        text: Village cooperatives share the boats and the catch. Spread that until it's the whole coast.
+        evidence: [{position: property.commons.expand-to-communism, w: 3}]
+      - id: trawlers
+        text: Get the trawler companies out. They're the ones taking the sea from the villages.
+        evidence: [{position: property.commons.defend-against-enclosure, w: 3}]
+      - id: gift
+        text: The sea is a gift to all. Manage it so the poorest fisher eats, not just the biggest.
+        evidence: [{position: property.commons.universal-destination, w: 3}]
+
+  - id: probe.property.commons.forest
+    type: explanation
+    title: Two forests
+    text: >
+      In the hills of Nepal, a forest handed to a village forest group in the 1990s has grown back thick. The
+      next valley's forest, run from the district office, was logged bare. Why did one recover and not the
+      other?
+    why: This asks what you think works for shared resources, and what kind of cause you reach for.
+    options:
+      - id: rules
+        text: The villagers made their own rules and policed them. People manage what they share.
+        cause: structures
+        evidence: [{position: property.commons.self-governed, w: 3}]
+      - id: rights
+        text: The village got clear rights. Clear owners protect things. That's an argument for property.
+        cause: interests
+        evidence: [{position: property.commons.enclose, w: 3}]
+      - id: underfunded
+        text: The district office had no money or guards. A properly run public service would do as well.
+        cause: structures
+        evidence: [{position: property.commons.public-ownership, w: 3}]
+      - id: proof
+        text: It proves shared production works. Spread it from forests to everything.
+        cause: structures
+        evidence: [{position: property.commons.expand-to-communism, w: 3}]
+      - id: loggers
+        text: The office handed the other valley to loggers. The fight is against enclosure.
+        cause: interests
+        evidence: [{position: property.commons.defend-against-enclosure, w: 3}]
+      - id: gift
+        text: One village treated the forest as a gift held for everyone, children not yet born included.
+        cause: divine
+        evidence: [{position: property.commons.universal-destination, w: 3}]
+
+  - id: probe.property.commons.fence
+    type: voices
+    title: The fence
+    text: Two walkers stop at a fence on a hillside in northern England. Who's right?
+    voices:
+      - {name: "Graham, farmer", says: "Without this fence the hill would be grazed bare in a summer. Nobody looks after what nobody owns."}
+      - {name: "Becky, rambler", says: "This was common land until 1790. The fence was theft, and it's still theft."}
+    why: This asks what you think should be held in common.
+    options:
+      - id: graham
+        text: Graham. Give it an owner, and it gets looked after.
+        evidence: [{position: property.commons.enclose, w: 3}]
+      - id: becky
+        text: Becky. Enclosure was theft, and it's still going on.
+        evidence: [{position: property.commons.defend-against-enclosure, w: 3}]
+      - id: commoners
+        text: Both miss it. The commoners managed that hill with their own rules for centuries.
+        evidence: [{position: property.commons.self-governed, w: 3}]
+      - id: public
+        text: Both miss it. The public should own the hill and run it for everyone.
+        evidence: [{position: property.commons.public-ownership, w: 3}]
+      - id: everything
+        text: Both think too small. The commons should grow until it's the whole economy.
+        evidence: [{position: property.commons.expand-to-communism, w: 3}]
+      - id: given
+        text: Both miss it. The earth was given to everyone. Any owner holds it on that condition.
+        evidence: [{position: property.commons.universal-destination, w: 3}]
+      - id: not-for-sale
+        text: Some things shouldn't be bought and sold. A hillside is one.
+        evidence: [{position: property.commons.not-for-sale, w: 3}]

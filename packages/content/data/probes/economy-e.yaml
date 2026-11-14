@@ -1,0 +1,444 @@
+nodes:
+  # ---------------------------------------------------------------- workplace.conflict
+  - id: probe.workplace.conflict.steelworks
+    type: scene
+    title: The steelworks
+    text: >
+      A trade war. Steel prices abroad have collapsed and the national steelworks is losing money. The union
+      wants a raise to match inflation. The government asks both sides to drop the dispute, accept a state
+      arbitrator and ban strikes for two years, for the country's sake. You're on the union executive.
+    why: This asks whether you think workers and employers are on the same side, and what stands above them.
+    options:
+      - id: nation
+        text: Accept. Our quarrel is real, but the nation comes first and the state should settle it.
+        evidence: [{position: workplace.conflict.nation-above-class, w: 3}]
+      - id: strike
+        text: Refuse. "The country's sake" means the owners' sake. Our interests are opposed, trade war or not.
+        evidence: [{position: workplace.conflict.structural-antagonism, w: 3}]
+      - id: duties
+        text: Accept, if management opens the books and takes the same cut. Each side owes the other.
+        evidence: [{position: workplace.conflict.mutual-duties, w: 3}]
+      - id: bargain
+        text: Refuse the ban, accept mediation. Two organized sides bargaining is how this is meant to work.
+        evidence: [{position: workplace.conflict.pluralist-bargaining, w: 3}]
+      - id: depends
+        text: Depends on this management. If they've been straight with us, give them room. If not, no.
+        evidence: [{position: workplace.conflict.depends-on-the-boss, w: 3}]
+
+  - id: probe.workplace.conflict.shipyard
+    type: voices
+    title: Old Mr. Park
+    text: Two welders at a shipyard in Ulsan, on the bus home after the new owner's first month. Who's right?
+    voices:
+      - {name: "Mr. Choi, 30 years in", says: "Depends on the boss. Old Mr. Park looked after us. His son treats us like dirt."}
+      - {name: "Ms. Yoon, 3 years in", says: "It's not about which Park. Any owner has to squeeze us or the next yard eats him."}
+    why: This asks whether you think conflict at work comes from the people or from the job.
+    options:
+      - id: choi
+        text: Mr. Choi. A decent boss makes all the difference.
+        evidence: [{position: workplace.conflict.depends-on-the-boss, w: 3}]
+      - id: yoon
+        text: Ms. Yoon. The conflict is built in.
+        evidence: [{position: workplace.conflict.structural-antagonism, w: 3}]
+      - id: nation
+        text: Both miss it. Workers and owners are both Koreans. The state should hold the balance for the country.
+        evidence: [{position: workplace.conflict.nation-above-class, w: 3}]
+      - id: misunderstanding
+        text: Both miss it. The son is new. Sit down with him. Most of this is misunderstanding.
+        evidence: [{position: workplace.conflict.partners-with-a-misunderstanding, w: 3}]
+      - id: duties
+        text: Both miss it. Owner and worker owe each other duties. The son is failing his.
+        evidence: [{position: workplace.conflict.mutual-duties, w: 3}]
+      - id: union
+        text: Both miss it. It doesn't matter who's boss if the union is strong enough to bargain.
+        evidence: [{position: workplace.conflict.pluralist-bargaining, w: 3}]
+
+  - id: probe.workplace.conflict.line
+    type: line
+    title: The state steps in
+    text: Going down this list, where should the government stop stepping into disputes between workers and employers?
+    cases:
+      - Sends a mediator when talks break down
+      - Imposes binding arbitration in a port strike
+      - Bans strikes in the defense industries
+      - Bans all strikes and sets wages through a national labor charter
+    why: This asks whether you think workers and employers are on the same side, and who should hold the balance.
+    conditions:
+      - id: boss
+        text: It depends on the bosses. A decent employer doesn't need the government in the room.
+        evidence: [{position: workplace.conflict.depends-on-the-boss, w: 3}]
+    options:
+      - id: none
+        text: Before the first. Government should keep out of private contracts altogether.
+        evidence: [{position: workplace.conflict.harmony-of-interests, w: 3}]
+      - id: mediator
+        text: After the mediator. The two sides should fight it out themselves.
+        evidence: [{position: workplace.conflict.pluralist-bargaining, w: 3}]
+      - id: arbitration
+        text: After the arbitration. A government that bans strikes has picked the owners' side.
+        evidence: [{position: workplace.conflict.structural-antagonism, w: 3}]
+      - id: charter
+        text: Through the charter, if that's what the nation needs. Class war weakens everyone.
+        evidence: [{position: workplace.conflict.nation-above-class, w: 3}]
+      - id: duties
+        text: After the defense ban, and only if owners are bound by duties too.
+        evidence: [{position: workplace.conflict.mutual-duties, w: 3}]
+
+  # ---------------------------------------------------------------- labor.division
+  - id: probe.labor.division.pay-gap
+    type: explanation
+    title: The gap
+    text: >
+      In most countries, women in paid work earn noticeably less than men, and the gap widens sharply after
+      the first child. Your niece has just noticed it in her own payslip. Why is it there?
+    why: This asks what you think divides workers from each other, and what kind of cause you reach for.
+    options:
+      - id: unpaid
+        text: The unpaid work at home, the cooking, the kids, the parents, still lands on women, and employers count on it.
+        cause: structures
+        evidence: [{position: labor.division.paid-and-unpaid, w: 3}]
+      - id: choices
+        text: Different jobs and different hours, chosen freely. Pay follows the work.
+        cause: individuals
+        evidence: [{position: labor.division.skill-and-effort, w: 3}]
+      - id: cheapen
+        text: Employers pay women less because it drags everyone's wages down. Same trick as with migrants.
+        cause: interests
+        evidence: [{position: labor.division.divide-and-rule, w: 3}]
+      - id: men-gain
+        text: Men gain from it too, at work and at home, and plenty of them like it that way.
+        cause: interests
+        evidence: [{position: labor.division.race-caste-nation, w: 1}, {position: labor.division.paid-and-unpaid, w: 2}]
+
+  - id: probe.labor.division.hospital
+    type: scene
+    title: The strike vote
+    text: >
+      A hospital in São Paulo. The nurses can't agree on a strike. Some are permanent, some agency. Most of
+      the night shift is Black, most of the ward managers white. A third are mothers with no one at home to
+      cover. A few are Bolivian. You're the union rep. What's the split you have to deal with first?
+    why: This asks what you think divides workers.
+    options:
+      - id: mothers
+        text: The mothers. They can't strike or cover extra shifts because the work at home doesn't stop.
+        evidence: [{position: labor.division.paid-and-unpaid, w: 3}]
+      - id: race
+        text: The color line. The night shift carries the hardest work, and some on the day shift gain from that.
+        evidence: [{position: labor.division.race-caste-nation, w: 3}]
+      - id: management
+        text: Management. They play everyone off against each other. Underneath it's one interest.
+        evidence: [{position: labor.division.divide-and-rule, w: 3}]
+      - id: contracts
+        text: Agency versus permanent. That's the line the hospital will use.
+        evidence: [{position: labor.division.contract-status-is-a-wedge, w: 3}]
+      - id: bolivians
+        text: The Bolivians take less and work any hours. That undercuts all of us.
+        evidence: [{position: labor.division.outsiders-undercut-us, w: 3}]
+      - id: skill
+        text: There's no split to fix. Different skills, different pay, different shifts.
+        evidence: [{position: labor.division.skill-and-effort, w: 3}]
+
+  - id: probe.labor.division.nanny
+    type: explanation
+    title: Two families
+    text: >
+      In Hong Kong, Maricel raises a banker's two children six days a week. In a village outside Iloilo, her
+      own two children are raised by her mother on what she sends home. What divides Maricel from the
+      family she works for?
+    why: This asks what you think divides workers from each other, and what kind of cause you reach for.
+    options:
+      - id: care
+        text: Care work. It's unpaid when it's yours and cheap when it's someone else's, and women do nearly all of it.
+        cause: structures
+        evidence: [{position: labor.division.paid-and-unpaid, w: 3}]
+      - id: nation
+        text: Nationality. Her employers are workers too, and they gain from her passport being weaker than theirs.
+        cause: structures
+        evidence: [{position: labor.division.race-caste-nation, w: 3}]
+      - id: world
+        text: Rich country and poor country. The deepest line runs between Hong Kong and Iloilo.
+        cause: structures
+        evidence: [{position: labor.division.core-periphery, w: 3}]
+      - id: govts
+        text: Governments and agencies keep migrant and local workers apart so neither asks for more.
+        cause: interests
+        evidence: [{position: labor.division.divide-and-rule, w: 3}]
+      - id: undercut
+        text: Women like her let families skip hiring locals at local wages.
+        cause: interests
+        evidence: [{position: labor.division.outsiders-undercut-us, w: 3}]
+      - id: different-jobs
+        text: Nothing sinister. Different skills, different jobs, different pay. She chose it.
+        cause: individuals
+        evidence: [{position: labor.division.skill-and-effort, w: 3}]
+
+  # ---------------------------------------------------------------- solidarity.basis
+  - id: probe.solidarity.basis.day-pay
+    type: scene
+    title: A day's pay
+    text: >
+      Your union branch in Lyon is asked to donate a day's pay to striking dockworkers in Durban. The same
+      week, the parish is collecting for families on your own street who lost work when the bakery closed.
+      You can only afford one.
+    why: This asks what you think solidarity rests on.
+    options:
+      - id: street
+        text: The street. You stand with your own people first, or you end up standing with nobody.
+        evidence: [{position: solidarity.basis.kinship-nation, w: 3}]
+      - id: durban
+        text: Durban. Same ships, same kind of boss. Their fight is ours.
+        evidence: [{position: solidarity.basis.shared-class, w: 3}]
+      - id: leverage
+        text: Durban. If their port holds, ours is harder to break. It's leverage.
+        evidence: [{position: solidarity.basis.tactical, w: 3}]
+      - id: decent
+        text: Whichever's more desperate. It's just the decent thing.
+        evidence: [{position: solidarity.basis.moral, w: 3}]
+      - id: body
+        text: The parish. We are members of one body, and that body is right here.
+        evidence: [{position: solidarity.basis.one-body, w: 3}]
+      - id: mutual
+        text: The street, and I'll show up at the food table too. Solidarity is what you do with your hands.
+        evidence: [{position: solidarity.basis.mutual-aid, w: 3}]
+
+  - id: probe.solidarity.basis.association
+    type: voices
+    title: The hometown club
+    text: A Mexican hometown association in Los Angeles is deciding where this year's money goes. Who's right?
+    voices:
+      - {name: Don Arturo, says: "We send it to the village. A new roof for the school. That's who we are."}
+      - {name: Lupe, says: "The cleaners downtown are striking, half of them from Oaxaca and Guatemala. We back them first."}
+    why: This asks what you think solidarity rests on.
+    options:
+      - id: arturo
+        text: Don Arturo. Your own village and your own people first.
+        evidence: [{position: solidarity.basis.kinship-nation, w: 3}]
+      - id: lupe
+        text: Lupe. The cleaners are in the same position we are, wherever they're from.
+        evidence: [{position: solidarity.basis.shared-class, w: 3}]
+      - id: numbers
+        text: Lupe, for a practical reason. A win downtown raises wages for everyone in this room.
+        evidence: [{position: solidarity.basis.tactical, w: 2}, {position: solidarity.basis.self-interest, w: 1}]
+      - id: practice
+        text: Both, by doing, not by voting. Cook for the picket line and fix the roof.
+        evidence: [{position: solidarity.basis.mutual-aid, w: 3}]
+      - id: oppressed
+        text: Lupe. Mexicans and Guatemalans here are up against the same power that keeps their villages poor.
+        evidence: [{position: solidarity.basis.anti-imperialist, w: 3}]
+
+  - id: probe.solidarity.basis.assemblies
+    type: explanation
+    title: The soup kitchens
+    text: >
+      Buenos Aires, December 2001. The banks freeze accounts, the peso collapses, and within weeks neighborhood
+      assemblies and soup kitchens are running on every other block. What held them together?
+    why: This asks what you think solidarity rests on, and what kind of cause you reach for.
+    options:
+      - id: neighbors
+        text: Being neighbors, families and Argentines. People stand with their own.
+        cause: culture
+        evidence: [{position: solidarity.basis.kinship-nation, w: 3}]
+      - id: same-boat
+        text: Everyone was in the same position. Same frozen wages, same landlord, same banks.
+        cause: structures
+        evidence: [{position: solidarity.basis.shared-class, w: 3}]
+      - id: practice
+        text: The practice itself. You cook together, you trust each other, it grows.
+        cause: structures
+        evidence: [{position: solidarity.basis.mutual-aid, w: 3}]
+      - id: decency
+        text: Plain decency. People don't let neighbors go hungry.
+        cause: ideas
+        evidence: [{position: solidarity.basis.moral, w: 3}]
+      - id: parish
+        text: The parishes. Members of one body, as the priests kept saying.
+        cause: divine
+        evidence: [{position: solidarity.basis.one-body, w: 3}]
+      - id: need
+        text: Each one needed the others to eat. Cooperation is self-interest done well.
+        cause: interests
+        evidence: [{position: solidarity.basis.self-interest, w: 3}]
+
+  # ---------------------------------------------------------------- unions.role
+  - id: probe.unions.role.panel
+    type: voices
+    title: The panel
+    text: A labor conference in Geneva. Two union leaders share a panel, and it goes off script. Who's right?
+    voices:
+      - {name: "Jürgen, metalworkers' union, Germany", says: "We sit on company boards, set pay for the whole industry with the employers, and run apprenticeships. That is what a union is for."}
+      - {name: "Nazma, garment workers' union, Bangladesh", says: "And your federation backed the trade deal that keeps our wages at a hundred dollars a month."}
+    why: This asks what you think unions are for, and for whom.
+    options:
+      - id: jurgen
+        text: Jürgen. Unions are partners in running the economy.
+        evidence: [{position: unions.role.social-partner, w: 3}]
+      - id: nazma
+        text: Nazma. Rich-country unions often defend a better-paid layer at others' expense.
+        evidence: [{position: unions.role.core-privilege, w: 3}]
+      - id: class
+        text: Both miss it. A union is the organ of all workers as a class, Dhaka and Stuttgart alike.
+        evidence: [{position: unions.role.class-organ, w: 3}]
+      - id: members
+        text: Both miss it. A union bargains for its own members. Jürgen's job isn't Dhaka's wages.
+        evidence: [{position: unions.role.bargaining-agent, w: 3}]
+      - id: nation
+        text: Both miss it. Unions stand with their own nation's producers against foreign capital. Nazma should do the same.
+        evidence: [{position: unions.role.national-labor, w: 3}]
+      - id: obstacle
+        text: Both prove the point. Unions protect insiders and price everyone else out.
+        evidence: [{position: unions.role.obstacle, w: 3}]
+
+  - id: probe.unions.role.wage-council
+    type: scene
+    title: The wage council
+    text: >
+      You've just been elected head of the national union federation. The government offers the unions a
+      permanent seat on a national wage council with the employers' association, a say in pensions and
+      training, and in return, no national strikes for three years. The executive meets tomorrow.
+    why: This asks what you think unions are for.
+    conditions:
+      - id: who-covered
+        text: It depends whether the deal covers migrants and agency workers, or only those of us who already have it good.
+        evidence: [{position: unions.role.core-privilege, w: 2}, {position: unions.role.class-organ, w: 1}]
+    options:
+      - id: partner
+        text: Take it. Governing the economy with employers is what a strong union does.
+        evidence: [{position: unions.role.social-partner, w: 3}]
+      - id: nation
+        text: Take it. Workers and the nation's own industry rise together. Our fight is with foreign capital.
+        evidence: [{position: unions.role.national-labor, w: 3}]
+      - id: refuse
+        text: Refuse. We don't trade away the strike. A union is the class organized, not a ministry.
+        evidence: [{position: unions.role.class-organ, w: 3}]
+      - id: seed
+        text: Refuse. The union is the seed of a society run by workers. It doesn't sit on the bosses' councils.
+        evidence: [{position: unions.role.revolutionary-syndicate, w: 3}]
+      - id: members
+        text: Put the numbers to the members. If they get more by signing, sign.
+        evidence: [{position: unions.role.bargaining-agent, w: 3}]
+
+  - id: probe.unions.role.line
+    type: line
+    title: Which union fights?
+    text: Going down this list, which of these union campaigns do you back?
+    cases:
+      - A steelworkers' union backing tariffs on foreign steel
+      - A shipyard union backing a new submarine program to save jobs
+      - A union federation joining the government's national labor front
+      - Unions and employers jointly setting wages for the whole economy
+      - A union calling a general strike to bring the government down
+    why: This asks what you think unions are for.
+    options:
+      - id: privilege
+        text: Not the first two. That's a better-paid layer defending its own country's power at others' expense.
+        evidence: [{position: unions.role.core-privilege, w: 3}]
+      - id: nation
+        text: The first three. Defend our workers and our nation's industry.
+        evidence: [{position: unions.role.national-labor, w: 3}]
+      - id: partners
+        text: The fourth. That's what grown-up unions do.
+        evidence: [{position: unions.role.social-partner, w: 3}]
+      - id: strike
+        text: The last. A union's real job is to change who runs things.
+        evidence: [{position: unions.role.revolutionary-syndicate, w: 3}]
+      - id: members
+        text: Whichever the members vote for. A union serves its members.
+        evidence: [{position: unions.role.bargaining-agent, w: 3}]
+      - id: none
+        text: None. Unions shouldn't have that kind of power over the economy.
+        evidence: [{position: unions.role.obstacle, w: 3}]
+
+  # ---------------------------------------------------------------- profit.legitimacy
+  - id: probe.profit.legitimacy.phone
+    type: explanation
+    title: The thousand-dollar phone
+    text: >
+      A phone sells for $1,000. The workers who assemble it in Zhengzhou get under $10 of that. The minerals
+      come from Congo for a few dollars more. The brand keeps a margin of around 40 percent and books much of
+      it in a low-tax country. Where does that profit come from, and is it legitimate?
+    why: This asks whether you think profit is legitimate income, and what kind of cause you reach for.
+    options:
+      - id: drain
+        text: From paying workers and miners in poor countries far less than what they make is worth. Much of it is extracted.
+        cause: structures
+        evidence: [{position: profit.legitimacy.drain-superprofit, w: 3}]
+      - id: earned
+        text: From design, risk and making something people want. It's earned.
+        cause: ideas
+        evidence: [{position: profit.legitimacy.earned-reward, w: 3}]
+      - id: unpaid
+        text: From unpaid labor, the same as any profit. It's just more visible here.
+        cause: structures
+        evidence: [{position: profit.legitimacy.unpaid-labor, w: 3}]
+      - id: brand
+        text: Mostly from monopoly, the brand and the patents. That's rent, not honest profit.
+        cause: interests
+        evidence: [{position: profit.legitimacy.rent-not-profit, w: 3}]
+      - id: taxed
+        text: Fine as profit. Not fine dodging tax. Tax it fairly and share it, and I've no objection.
+        cause: interests
+        evidence: [{position: profit.legitimacy.incentive-taxed, w: 3}]
+      - id: wages-first
+        text: Not legitimate until the assemblers and miners earn a just wage. Then take a return.
+        cause: ideas
+        evidence: [{position: profit.legitimacy.common-good-first, w: 3}]
+      - id: home
+        text: The suppliers who reinvest in our own industry earn theirs fairly. The share shipped abroad doesn't build anything here.
+        cause: interests
+        evidence: [{position: profit.legitimacy.national-development, w: 3}]
+
+  - id: probe.profit.legitimacy.three-million
+    type: scene
+    title: Three million
+    text: >
+      You run a mid-sized outdoor clothing brand in Munich. A good year: three million euros profit. Your
+      jackets are sewn by a supplier in Chittagong. The board meets on Thursday to decide what to do with
+      the money. You propose:
+    why: This asks what you think makes profit legitimate.
+    options:
+      - id: dividend
+        text: A dividend. We took the risk, we built the brand, we earned it.
+        evidence: [{position: profit.legitimacy.earned-reward, w: 3}]
+      - id: suppliers
+        text: Pay Chittagong more. Most of that three million is the gap between what they're paid and what Munich pays.
+        evidence: [{position: profit.legitimacy.drain-superprofit, w: 3}]
+      - id: living-wage
+        text: A living wage at the supplier first. Then a modest return. In that order.
+        evidence: [{position: profit.legitimacy.common-good-first, w: 3}]
+      - id: share
+        text: Pay our taxes in full, raise staff wages, reinvest the rest. Profit's fine when it's shared.
+        evidence: [{position: profit.legitimacy.incentive-taxed, w: 3}]
+      - id: home
+        text: Build a factory in Saxony and bring the sewing home. Profit should build our own industry.
+        evidence: [{position: profit.legitimacy.national-development, w: 3}]
+      - id: modest
+        text: Keep prices where they are and the margin where it is. A fair profit, no more.
+        evidence: [{position: profit.legitimacy.fair-not-gouging, w: 3}]
+
+  - id: probe.profit.legitimacy.nickel
+    type: voices
+    title: The nickel smelter
+    text: A cabinet meeting in Jakarta. Two ministers disagree about the foreign companies smelting nickel on Sulawesi. Who's right?
+    voices:
+      - {name: The industry minister, says: "Let them make whatever profit they like, as long as the ore is smelted here and the profit builds our industry."}
+      - {name: The labor minister, says: "Their profit is what they don't pay our miners, and the price gap between here and the battery factories abroad."}
+    why: This asks what you think makes profit legitimate.
+    options:
+      - id: industry
+        text: The industry minister. Profit that builds the nation's industry is legitimate.
+        evidence: [{position: profit.legitimacy.national-development, w: 3}]
+      - id: labor
+        text: The labor minister. That profit is drained from Sulawesi.
+        evidence: [{position: profit.legitimacy.drain-superprofit, w: 3}]
+      - id: common-good
+        text: Both miss it. Profit is fine only after just wages and if the business serves the common good.
+        evidence: [{position: profit.legitimacy.common-good-first, w: 3}]
+      - id: taxed
+        text: Both miss it. Let them profit, and tax it properly. That's what builds schools.
+        evidence: [{position: profit.legitimacy.incentive-taxed, w: 3}]
+      - id: earned
+        text: Both miss it. They took the risk and built the smelters. The profit is theirs.
+        evidence: [{position: profit.legitimacy.earned-reward, w: 3}]
+      - id: unpaid
+        text: Both miss it. Indonesian owners would take the same unpaid labor. Profit is profit.
+        evidence: [{position: profit.legitimacy.unpaid-labor, w: 3}]

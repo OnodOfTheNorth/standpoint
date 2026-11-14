@@ -1,0 +1,250 @@
+nodes:
+  # ---------------------------------------------------------------- cs.live-let-live
+  - id: probe.cs.live-let-live.line
+    type: line
+    title: None of your business?
+    text: Going down this list, where does it stop being nobody else's business?
+    cases:
+      - A neighbor paints his house bright purple
+      - A couple lives together for years without marrying
+      - A man drinks alone every night and bothers nobody
+      - Two men kiss at the bus stop
+      - A shop on the high street sells pornography in the window
+      - A religious village takes its girls out of school at twelve
+    why: This asks how far you think people should be left alone, and who decides what is right.
+    premises:
+      - id: means
+        text: The premise that being left alone is the issue. Half this street can't afford to live as they like anyway.
+        evidence: [{position: cs.live-let-live.need-the-means, w: 3}]
+    options:
+      - id: none
+        text: None of it is my business while nobody else gets hurt. The schooling, maybe.
+        evidence: [{position: cs.live-let-live.leave-alone, w: 3}]
+      - id: public
+        text: Private life is theirs. The bus stop and the shop window are everybody's, and need standards.
+        evidence: [{position: cs.live-let-live.private-yes-public-standards, w: 3}]
+      - id: virtue
+        text: From the second on. Leaving people alone is how a society forgets what's right.
+        evidence: [{position: cs.live-let-live.uphold-virtue, w: 3}]
+      - id: village
+        text: All of it is their business, the village too. Outsiders shouldn't tell a community how to raise its daughters.
+        evidence: [{position: cs.live-let-live.let-communities-be, w: 3}]
+
+  - id: probe.cs.live-let-live.shop
+    type: scene
+    title: The council vote
+    text: >
+      Your town council is voting on whether to license a cannabis shop on the high street, between the
+      pharmacy and the bakery. Public comment, two minutes each. Your turn.
+    why: This asks whether people should be left to live as they like, and what that would take.
+    options:
+      - id: allow
+        text: License it. Adults, their own money, their own business.
+        evidence: [{position: cs.live-let-live.leave-alone, w: 3}]
+      - id: not-high-street
+        text: Do what you like at home. Not on the high street with a neon leaf in the window.
+        evidence: [{position: cs.live-let-live.private-yes-public-standards, w: 3}]
+      - id: no
+        text: No. A town should discourage what's bad for people, not license it.
+        evidence: [{position: cs.live-let-live.uphold-virtue, w: 3}]
+      - id: neighborhoods
+        text: Let each neighborhood decide. The church end won't want it, the student end will.
+        evidence: [{position: cs.live-let-live.let-communities-be, w: 3}]
+      - id: means
+        text: This town has no youth center and no jobs. The right to buy weed is a funny kind of liberty.
+        evidence: [{position: cs.live-let-live.need-the-means, w: 3}]
+
+  - id: probe.cs.live-let-live.voices
+    type: voices
+    title: The wedding table
+    text: Two guests at a wedding have found each other. Who's right?
+    voices:
+      - {name: Tomás, says: "The government should keep out of my bedroom and my wallet. Everything else follows from that."}
+      - {name: Grace, says: "A society has to say out loud what's right and wrong, or nobody will, and the kids grow up with nothing."}
+    why: This asks whether people should be left alone, and what being left alone needs.
+    options:
+      - id: tomas
+        text: Tomás. Live and let live.
+        evidence: [{position: cs.live-let-live.leave-alone, w: 3}]
+      - id: grace
+        text: Grace. Law and community have to uphold what's right.
+        evidence: [{position: cs.live-let-live.uphold-virtue, w: 3}]
+      - id: split
+        text: Tomás at home, Grace in public. Both have half of it.
+        evidence: [{position: cs.live-let-live.private-yes-public-standards, w: 3}]
+      - id: means
+        text: Both miss it. Being left alone means nothing on nine dollars an hour and two jobs.
+        evidence: [{position: cs.live-let-live.need-the-means, w: 3}]
+      - id: communities
+        text: Both miss it. Let each community keep its own ways, and keep the state out of all of them.
+        evidence: [{position: cs.live-let-live.let-communities-be, w: 3}]
+
+  # ---------------------------------------------------------------- cs.rigged
+  - id: probe.cs.rigged.bailout
+    type: explanation
+    title: Two buildings
+    text: >
+      The bank that lost billions on bad bets was rescued with public money in a weekend. The bakery down
+      the road missed three payments on its loan from that same bank, and the bank took the building. Why
+      the difference?
+    why: This asks whether you think the system is rigged, by whom, and how.
+    options:
+      - id: rigged
+        text: The people at the top write the rules for themselves. Simple as that.
+        cause: interests
+        evidence: [{position: cs.rigged.system-rigged, w: 3}]
+      - id: hidden
+        text: Look at who sits on the boards. Same few names behind the bank and the government.
+        cause: individuals
+        evidence: [{position: cs.rigged.hidden-hand, w: 3}]
+      - id: design
+        text: Nobody cheated. Rules made by owners protect big owners. It's working as designed.
+        cause: structures
+        evidence: [{position: cs.rigged.working-as-designed, w: 3}]
+      - id: fair
+        text: A failed bank takes your savings with it; a failed bakery doesn't. And the baker signed a contract.
+        cause: ideas
+        evidence: [{position: cs.rigged.basically-fair, w: 3}]
+      - id: cronies
+        text: Government rigged it. Without the bailout the market would have punished the bank, not the baker.
+        cause: interests
+        evidence: [{position: cs.rigged.cronies, w: 3}]
+      - id: abroad
+        text: When our banks failed, the foreign lenders made the whole country pay. Same game, bigger table.
+        cause: structures
+        evidence: [{position: cs.rigged.against-our-country, w: 3}]
+
+  - id: probe.cs.rigged.line
+    type: line
+    title: Which ones are rigged?
+    text: Going down this list, which ones show the game is rigged?
+    cases:
+      - A chief executive's son gets into the top university with middling grades
+      - A big firm pays a lower tax rate than its cleaners
+      - A bank is rescued while homeowners lose their houses
+      - Your country pays more in interest abroad than it spends on schools
+    why: This asks whether and how you think the system is rigged.
+    options:
+      - id: none
+        text: None of them. Each has an explanation, and most people get roughly what they put in.
+        evidence: [{position: cs.rigged.basically-fair, w: 3}]
+      - id: favors
+        text: The tax deal and the rescue. Government favors to the big boys. Markets aren't the problem.
+        evidence: [{position: cs.rigged.cronies, w: 3}]
+      - id: all
+        text: All four. The people at the top write the rules.
+        evidence: [{position: cs.rigged.system-rigged, w: 3}]
+      - id: legal
+        text: None of them is cheating. That's the rules doing exactly what they were written to do.
+        evidence: [{position: cs.rigged.working-as-designed, w: 3}]
+      - id: world
+        text: The last one is the big one. The world economy is rigged against countries like ours.
+        evidence: [{position: cs.rigged.against-our-country, w: 3}]
+      - id: families
+        text: All four, and if you dig you find the same few families behind each.
+        evidence: [{position: cs.rigged.hidden-hand, w: 3}]
+
+  - id: probe.cs.rigged.taxi
+    type: voices
+    title: The taxi
+    text: Stuck in traffic, your taxi driver and the other passenger are going at it. Who's right?
+    voices:
+      - {name: The driver, says: "It's all fixed. A few bankers and their friends run everything from behind a curtain. Elections are theatre."}
+      - {name: The passenger, says: "Rubbish. My father started with a cart. Anyone with a good idea and the nerve can make it here."}
+    why: This asks whether you think the system is rigged, and if so, by what.
+    options:
+      - id: driver
+        text: The driver. There's a small group pulling the strings.
+        evidence: [{position: cs.rigged.hidden-hand, w: 3}]
+      - id: passenger
+        text: The passenger. It's basically fair.
+        evidence: [{position: cs.rigged.basically-fair, w: 3}]
+      - id: no-curtain
+        text: Both miss it. There's no curtain. The rules are in the open, written for owners.
+        evidence: [{position: cs.rigged.working-as-designed, w: 3}]
+      - id: top
+        text: Rigged, yes, but no need for secrets. The people at the top just look after their own.
+        evidence: [{position: cs.rigged.system-rigged, w: 3}]
+      - id: government
+        text: Both miss it. It's the government handing favors to big companies. Free markets would be fair.
+        evidence: [{position: cs.rigged.cronies, w: 3}]
+      - id: world
+        text: Both miss it. The real rigging is between rich countries and countries like this one.
+        evidence: [{position: cs.rigged.against-our-country, w: 3}]
+
+  # ---------------------------------------------------------------- cs.middle
+  - id: probe.cs.middle.cafe
+    type: voices
+    title: The café
+    text: Your cousins are arguing across the table about the minimum wage. Who's right?
+    voices:
+      - {name: Rafael, says: "Double it. Nobody can live on what they pay now."}
+      - {name: Helena, says: "Double it and my café closes, and my three staff earn nothing."}
+    why: This asks whether you think the truth usually lies between two sides.
+    options:
+      - id: halfway
+        text: Both have a point. Raise it by half and everyone can live with that.
+        evidence: [{position: cs.middle.split-the-difference, w: 3}]
+      - id: evidence
+        text: Look at what happened in places that raised it. Whatever worked there.
+        evidence: [{position: cs.middle.pragmatic-center, w: 3}]
+      - id: sides
+        text: One of them is simply right, and splitting it is how you dodge saying which.
+        evidence: [{position: cs.middle.truth-takes-sides, w: 3}]
+      - id: steady
+        text: Raise it a little each year. Nothing in excess, nothing in a hurry.
+        evidence: [{position: cs.middle.measure-and-balance, w: 3}]
+      - id: dunno
+        text: I honestly don't know enough to say.
+        evidence: [{position: cs.middle.not-sure, w: 3}]
+
+  - id: probe.cs.middle.pollster
+    type: scene
+    title: Five out of ten
+    text: >
+      A pollster rings during dinner. On a scale of one to ten, how far do you agree that the government
+      should do more to reduce inequality? You hear yourself say "five." She asks why five.
+    why: This asks what landing in the middle means for you.
+    options:
+      - id: both
+        text: Both sides have a point. The truth is usually in between.
+        evidence: [{position: cs.middle.split-the-difference, w: 3}]
+      - id: works
+        text: I don't do left or right. It depends on what works.
+        evidence: [{position: cs.middle.pragmatic-center, w: 3}]
+      - id: balance
+        text: Too much of anything wrecks a country. Five is balance.
+        evidence: [{position: cs.middle.measure-and-balance, w: 3}]
+      - id: unsure
+        text: Honestly, because I hadn't thought about it and the pasta's going cold.
+        evidence: [{position: cs.middle.not-sure, w: 3}]
+      - id: never-five
+        text: I wouldn't say five. Not on a question like that.
+        evidence: [{position: cs.middle.truth-takes-sides, w: 3}]
+
+  - id: probe.cs.middle.line
+    type: line
+    title: Where the middle works
+    text: Going down this list, where is the middle answer the right one?
+    cases:
+      - How high the speed limit should be on the ring road
+      - How much to raise the minimum wage
+      - Whether children should work in factories
+      - Whether the earth is round
+    why: This asks when you think the truth lies between two sides, and when it doesn't.
+    options:
+      - id: first
+        text: Only the first. The rest have a right answer.
+        evidence: [{position: cs.middle.truth-takes-sides, w: 3}]
+      - id: two
+        text: The first two. Where people disagree in good faith, meet in the middle.
+        evidence: [{position: cs.middle.split-the-difference, w: 3}]
+      - id: evidence
+        text: Wrong way to ask. Look at the evidence on each one, not where the middle is.
+        evidence: [{position: cs.middle.pragmatic-center, w: 3}]
+      - id: step
+        text: Anywhere a thing can be done step by step. Go slow and keep things in proportion.
+        evidence: [{position: cs.middle.measure-and-balance, w: 3}]
+      - id: unsure
+        text: I'd need to know more about most of these, honestly.
+        evidence: [{position: cs.middle.not-sure, w: 3}]

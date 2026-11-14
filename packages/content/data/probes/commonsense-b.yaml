@@ -1,0 +1,369 @@
+nodes:
+  # ---------------------------------------------------------------- cs.not-political
+  - id: probe.cs.not-political.petition
+    type: scene
+    title: The petition
+    text: >
+      Your neighbor from the third floor is at the door with a clipboard. The water company wants to close
+      the local office and double the reconnection fee. There's a meeting Thursday in the community hall.
+      "You coming?"
+    why: This asks whether you think politics is something you can stay out of.
+    options:
+      - id: head-down
+        text: Not my thing. I work, I look after my kids, I pay the bill.
+        evidence: [{position: cs.not-political.keep-head-down, w: 3}]
+      - id: risky
+        text: The last man on this street who signed one of those lost his job. No.
+        evidence: [{position: cs.not-political.dangerous, w: 3}]
+      - id: finds-you
+        text: Normally no. But that's my water. I'll be there.
+        evidence: [{position: cs.not-political.it-finds-you, w: 3}]
+      - id: everything
+        text: Obviously. Staying home is a vote for the water company.
+        evidence: [{position: cs.not-political.everything-political, w: 3}]
+      - id: duty
+        text: Yes. Turning up is what being a citizen means.
+        evidence: [{position: cs.not-political.civic-duty, w: 3}]
+      - id: faith
+        text: I'll pray for you. I keep out of worldly quarrels.
+        evidence: [{position: cs.not-political.faith-above-politics, w: 3}]
+      - id: tea
+        text: I'll make the tea and help run the residents' committee. Just keep the party leaflets off the table.
+        evidence: [{position: cs.not-political.pitch-in-locally, w: 3}]
+
+  - id: probe.cs.not-political.line
+    type: line
+    title: How far in
+    text: Going down this list, where do you stop?
+    cases:
+      - Voting in the national election
+      - Sitting on the school parents' committee
+      - Helping run the funeral fund or the mosque or church fund
+      - Joining a political party
+      - Marching in a protest
+    why: This asks how far into public life you will go, and where you think politics begins.
+    conditions:
+      - id: if-it-hits
+        text: It depends whether it's touching my rent, my job or my prices.
+        evidence: [{position: cs.not-political.it-finds-you, w: 3}]
+    options:
+      - id: none
+        text: Before the first. None of it is for people like me.
+        evidence: [{position: cs.not-political.keep-head-down, w: 3}]
+      - id: local
+        text: After the funeral fund. That's being a neighbor. Parties and marches are something else.
+        evidence: [{position: cs.not-political.pitch-in-locally, w: 3}]
+      - id: duty
+        text: I'd go through to the party. A citizen owes the country more than grumbling.
+        evidence: [{position: cs.not-political.civic-duty, w: 3}]
+      - id: list
+        text: After the committee. Anything with a party name gets you on a list.
+        evidence: [{position: cs.not-political.dangerous, w: 3}]
+      - id: faith
+        text: Only where my faith asks me. My allegiance isn't to any of these.
+        evidence: [{position: cs.not-political.faith-above-politics, w: 3}]
+      - id: all
+        text: All of them, and the list is too short. Staying out is just siding with whoever's on top.
+        evidence: [{position: cs.not-political.everything-political, w: 3}]
+
+  - id: probe.cs.not-political.empty-hall
+    type: explanation
+    title: The empty hall
+    text: >
+      Two hundred flats in your block. Eleven people came to the meeting about the lift that has been broken
+      since March. The organizer asks you, over the leftover biscuits, why everyone else stayed home.
+    why: This asks why you think most people stay out of politics, and what kind of cause you reach for.
+    options:
+      - id: sense
+        text: They've got sense. Work and family first. Meetings don't fix lifts.
+        cause: culture
+        evidence: [{position: cs.not-political.keep-head-down, w: 3}]
+      - id: fear
+        text: They've seen what happens to people who stick their necks out.
+        cause: interests
+        evidence: [{position: cs.not-political.dangerous, w: 3}]
+      - id: not-yet
+        text: It hasn't hit them yet. Wait until it's their mother on the eleventh floor.
+        cause: interests
+        evidence: [{position: cs.not-political.it-finds-you, w: 3}]
+      - id: neutral
+        text: They think staying home is neutral. It's a vote for the landlord.
+        cause: structures
+        evidence: [{position: cs.not-political.everything-political, w: 3}]
+      - id: forgot
+        text: People have forgotten they owe something to the place they live.
+        cause: ideas
+        evidence: [{position: cs.not-political.civic-duty, w: 3}]
+      - id: elsewhere
+        text: Half of them were at the prayer meeting. Their hope isn't in a lift committee.
+        cause: divine
+        evidence: [{position: cs.not-political.faith-above-politics, w: 3}]
+      - id: other-places
+        text: They do turn up, at the football club and the burial society. They just don't call it politics.
+        cause: culture
+        evidence: [{position: cs.not-political.pitch-in-locally, w: 3}]
+
+  # ---------------------------------------------------------------- cs.politicians
+  - id: probe.cs.politicians.medicine
+    type: explanation
+    title: The price cap
+    text: >
+      Your member of parliament campaigned on cheap medicine. Your insulin costs 90 a month. Last week he
+      voted against a price cap. On the radio he says it was complicated. Why did he do it?
+    why: This asks what you think drives politicians, and what kind of cause you reach for.
+    options:
+      - id: crooks
+        text: They're all the same. Say anything to get in, then look after themselves.
+        cause: individuals
+        evidence: [{position: cs.politicians.all-crooks, w: 3}]
+      - id: money
+        text: Look up who paid for his campaign. You'll find a drug company.
+        cause: interests
+        evidence: [{position: cs.politicians.bought, w: 3}]
+      - id: bad-one
+        text: He's a bad one. Vote him out. There are honest people who'd have voted yes.
+        cause: individuals
+        evidence: [{position: cs.politicians.some-are-decent, w: 3}]
+      - id: side
+        text: His party has always been on the side of the people who own things. That's who he votes for.
+        cause: interests
+        evidence: [{position: cs.politicians.differ-by-whom-they-serve, w: 3}]
+      - id: seat
+        text: The job did it. Five years in that building and anyone ends up voting like that.
+        cause: structures
+        evidence: [{position: cs.politicians.office-makes-them, w: 3}]
+
+  - id: probe.cs.politicians.aunts
+    type: voices
+    title: Two aunts
+    text: Your aunts are arguing over the dishes about the local elections. Who's right?
+    voices:
+      - {name: Lourdes, says: "They're all the same. Crooks, every one. I haven't voted since 1998."}
+      - {name: Maribel, says: "Our councilwoman got the drains fixed in a month. Some are decent. You have to pick properly."}
+    why: This asks whether you think politicians differ, and if so, in what.
+    options:
+      - id: lourdes
+        text: Lourdes. They're all the same.
+        evidence: [{position: cs.politicians.all-crooks, w: 3}]
+      - id: maribel
+        text: Maribel. The person matters, so choose well.
+        evidence: [{position: cs.politicians.some-are-decent, w: 3}]
+      - id: money
+        text: Both miss it. Follow the money. Who paid for the councilwoman's posters?
+        evidence: [{position: cs.politicians.bought, w: 3}]
+      - id: sides
+        text: Both miss it. It's not honest or crooked, it's whose side they're on.
+        evidence: [{position: cs.politicians.differ-by-whom-they-serve, w: 3}]
+      - id: office
+        text: Both miss it. Give the councilwoman ten years and she'll be like the rest. It's the job.
+        evidence: [{position: cs.politicians.office-makes-them, w: 3}]
+
+  - id: probe.cs.politicians.nurse
+    type: scene
+    title: The nurse at the door
+    text: >
+      A woman knocks on a Saturday morning. She's a nurse at the district hospital, running for council, no
+      party money, leaflets printed at the library. She seems nice. She asks for your vote.
+    why: This asks what you think decides how a politician will behave once in office.
+    options:
+      - id: yes
+        text: She gets it. Honest people in office make a real difference.
+        evidence: [{position: cs.politicians.some-are-decent, w: 3}]
+      - id: two-terms
+        text: Nice woman. Give her two terms and see.
+        evidence: [{position: cs.politicians.office-makes-them, w: 3}]
+      - id: same
+        text: She'll be like the rest once she's in.
+        evidence: [{position: cs.politicians.all-crooks, w: 3}]
+      - id: who-pays
+        text: I ask who's paying for her campaign once the library printer runs out.
+        evidence: [{position: cs.politicians.bought, w: 3}]
+      - id: which-side
+        text: I ask whether she's with the tenants or the landlords. That tells me more than her face.
+        evidence: [{position: cs.politicians.differ-by-whom-they-serve, w: 3}]
+
+  # ---------------------------------------------------------------- cs.hard-work
+  - id: probe.cs.hard-work.nephew
+    type: scene
+    title: The nephew
+    text: >
+      Your nephew is seventeen, stacking shelves after school, saving for nothing in particular. In the car he
+      asks you, out of nowhere: "If I work really hard, will I be all right?" You have a red light's worth of
+      time to answer.
+    why: This asks whether you think hard work gets people ahead.
+    options:
+      - id: yes
+        text: Yes. Work hard, make good choices, and you'll get ahead. Most people who don't, didn't try.
+        evidence: [{position: cs.hard-work.effort-pays, w: 3}]
+      - id: used-to
+        text: It used to be enough. I'm not sure it is now. I did everything right and still rent.
+        evidence: [{position: cs.hard-work.not-anymore, w: 3}]
+      - id: start
+        text: It helps. But who your parents are and who you know will matter more. Don't take it personally.
+        evidence: [{position: cs.hard-work.depends-where-you-start, w: 3}]
+      - id: someone-else
+        text: You'll make someone rich. Make sure some of it is you.
+        evidence: [{position: cs.hard-work.others-profit, w: 3}]
+      - id: right
+        text: Work hard because it's right, not because it pays. Then you'll be all right whatever happens.
+        evidence: [{position: cs.hard-work.virtue-in-itself, w: 3}]
+      - id: blessed
+        text: Be faithful and work hard, and God will bless you. I've seen it.
+        evidence: [{position: cs.hard-work.god-rewards, w: 3}]
+
+  - id: probe.cs.hard-work.classmates
+    type: explanation
+    title: Two classmates
+    text: >
+      Two boys from the same class. Twenty years on, one owns a dental practice and a house with a pool. The
+      other drives a forklift on nights and rents a room. Both turned up to the reunion. What mostly explains
+      the difference?
+    why: This asks what you think decides who gets ahead, and what kind of cause you reach for.
+    options:
+      - id: effort
+        text: One worked harder and made better choices.
+        cause: individuals
+        evidence: [{position: cs.hard-work.effort-pays, w: 3}]
+      - id: start
+        text: One had parents who paid for tutors and knew a dentist. Start matters more than effort.
+        cause: structures
+        evidence: [{position: cs.hard-work.depends-where-you-start, w: 3}]
+      - id: era
+        text: Twenty years ago a forklift driver could still buy a house. Now he can't, however hard he works.
+        cause: structures
+        evidence: [{position: cs.hard-work.not-anymore, w: 3}]
+      - id: profit
+        text: The forklift driver works as hard. His nights make the warehouse owner rich, not him.
+        cause: interests
+        evidence: [{position: cs.hard-work.others-profit, w: 3}]
+      - id: blessing
+        text: Some are blessed. Blessing follows faith and diligence.
+        cause: divine
+        evidence: [{position: cs.hard-work.god-rewards, w: 3}]
+      - id: both-right
+        text: Wrong measure. If both work honestly, both are doing right. The pool isn't the point.
+        cause: ideas
+        evidence: [{position: cs.hard-work.virtue-in-itself, w: 3}]
+
+  - id: probe.cs.hard-work.grandfather
+    type: voices
+    title: Double shifts
+    text: The family is at your grandfather's house, the one he bought in 1979. It's come up again. Who's right?
+    voices:
+      - {name: Grandfather, says: "I came here with one suitcase. Double shifts for twelve years and I bought this house. Anyone can."}
+      - {name: His granddaughter, says: "I do double shifts too, Grandpa. This house now costs fourteen years of my wages."}
+    why: This asks whether you think hard work still gets people ahead, and why or why not.
+    options:
+      - id: grandfather
+        text: Grandfather. It's still there for anyone willing to graft.
+        evidence: [{position: cs.hard-work.effort-pays, w: 3}]
+      - id: granddaughter
+        text: The granddaughter. It worked then. It doesn't now.
+        evidence: [{position: cs.hard-work.not-anymore, w: 3}]
+      - id: start
+        text: Both miss that he arrived with a trade and she didn't. Where you start decides most of it.
+        evidence: [{position: cs.hard-work.depends-where-you-start, w: 3}]
+      - id: profit
+        text: Both miss who got rich off all those double shifts. It wasn't either of them.
+        evidence: [{position: cs.hard-work.others-profit, w: 3}]
+      - id: virtue
+        text: Both miss that the work was worth doing anyway. The house is a bonus.
+        evidence: [{position: cs.hard-work.virtue-in-itself, w: 3}]
+      - id: god
+        text: Grandfather, and he'll tell you he never missed a Sunday. Blessing follows faithfulness.
+        evidence: [{position: cs.hard-work.god-rewards, w: 3}]
+
+  # ---------------------------------------------------------------- cs.decline
+  - id: probe.cs.decline.main-street
+    type: explanation
+    title: Main street
+    text: >
+      You're back in your hometown for a funeral. Half the main street is boarded up, the cinema is a
+      betting shop, and the bakery is a vape store. Your uncle says it was a better place in his day. What
+      happened?
+    why: This asks whether you think things have got worse, and what kind of cause you reach for.
+    options:
+      - id: morals
+        text: Families fell apart, nobody goes to church, kids have no discipline. The shops followed.
+        cause: culture
+        evidence: [{position: cs.decline.moral-decay, w: 3}]
+      - id: jobs
+        text: The plant shut in 2003. Everything on this street was living off its wages.
+        cause: structures
+        evidence: [{position: cs.decline.jobs-gone, w: 3}]
+      - id: outsiders
+        text: The town changed too much, too fast, and nobody asked the people who live here.
+        cause: culture
+        evidence: [{position: cs.decline.outsiders, w: 3}]
+      - id: sold
+        text: The people at the top sold it all off to friends and moved the money abroad.
+        cause: interests
+        evidence: [{position: cs.decline.sold-out, w: 3}]
+      - id: public
+        text: It went downhill when they sold the state firm and the clinic started charging.
+        cause: structures
+        evidence: [{position: cs.decline.after-public-economy, w: 3}]
+      - id: memory
+        text: Your uncle forgets the outdoor toilets and the beatings at school. Most things are better now.
+        cause: ideas
+        evidence: [{position: cs.decline.never-golden, w: 3}]
+
+  - id: probe.cs.decline.bench
+    type: voices
+    title: The bench
+    text: Two old friends on a bench by the bus station have been having the same argument for thirty years. Who's right?
+    voices:
+      - {name: Ivan, says: "Under the old system everyone had work, a flat and two weeks by the sea. Then they sold it all and gave us debt."}
+      - {name: Petra, says: "Under the old system there was one kind of sausage and a queue for it. You remember the sea and forget the queue."}
+    why: This asks whether you think the country got worse, and why.
+    options:
+      - id: ivan
+        text: Ivan. Life got worse when the public economy was taken apart.
+        evidence: [{position: cs.decline.after-public-economy, w: 3}]
+      - id: petra
+        text: Petra. The good old days are mostly memory.
+        evidence: [{position: cs.decline.never-golden, w: 3}]
+      - id: jobs
+        text: Both miss it. The factories went to wherever wages are lowest, and the towns went with them.
+        evidence: [{position: cs.decline.jobs-gone, w: 3}]
+      - id: morals
+        text: Both miss it. People stopped marrying, stopped praying, stopped raising their kids right.
+        evidence: [{position: cs.decline.moral-decay, w: 3}]
+      - id: newcomers
+        text: Both miss it. The place changed around them and nobody asked them.
+        evidence: [{position: cs.decline.outsiders, w: 3}]
+      - id: sold
+        text: Both miss who did the selling. The same people who ran it before own it now.
+        evidence: [{position: cs.decline.sold-out, w: 3}]
+
+  - id: probe.cs.decline.bring-back
+    type: allocation
+    title: Bring one back
+    text: >
+      Someone gives you the power to bring back things from forty years ago, or to keep things as they are.
+      You have ten points.
+    why: This asks what, if anything, you think the country has lost.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: factory
+          text: The factory and the jobs that paid for a house on one wage
+          evidence: [{position: cs.decline.jobs-gone, w: 2}]
+        - id: church
+          text: Full churches and families that stayed together
+          evidence: [{position: cs.decline.moral-decay, w: 2}]
+        - id: town
+          text: The town as it was before the newcomers arrived
+          evidence: [{position: cs.decline.outsiders, w: 2}]
+        - id: public
+          text: The state firms, the free clinic and the fixed price of bread
+          evidence: [{position: cs.decline.after-public-economy, w: 2}]
+        - id: leaders
+          text: Leaders who hadn't yet sold the country to the highest bidder
+          evidence: [{position: cs.decline.sold-out, w: 2}]
+        - id: keep
+          text: Nothing. Keep today. The past was worse than people remember
+          evidence: [{position: cs.decline.never-golden, w: 3}]
+    options:
+      - {id: done, text: Done}

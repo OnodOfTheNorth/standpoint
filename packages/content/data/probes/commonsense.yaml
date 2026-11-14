@@ -1,0 +1,365 @@
+nodes:
+  # ---------------------------------------------------------------- cs.greed
+  - id: probe.cs.greed.shortage
+    type: explanation
+    title: The rice shortage
+    text: >
+      A bad harvest. Within a week the shop on your corner has doubled the price of rice, two families on
+      your street have filled their spare rooms with sacks, and the rest are queuing. Your aunt, in the
+      queue, says it shows what people are really like. What does it show?
+    why: This asks whether you think greed is in people, in the setup they live in, or somewhere else.
+    options:
+      - id: nature
+        text: Exactly what she says. Give anyone the chance and they grab. You or me too.
+        cause: nature
+        evidence: [{position: cs.greed.everyone-greedy, w: 3}]
+      - id: setup
+        text: That when it's grab or go hungry, people grab. Change the setup and people act differently.
+        cause: structures
+        evidence: [{position: cs.greed.system-makes-greedy, w: 3}]
+      - id: few
+        text: That most people queue politely. It's the wholesalers upstream who are getting rich.
+        cause: individuals
+        evidence: [{position: cs.greed.most-decent-few-greedy, w: 3}]
+      - id: price
+        text: Nothing bad. High prices are what bring rice in from the next province by Friday.
+        cause: interests
+        evidence: [{position: cs.greed.self-interest-harnessed, w: 3}]
+      - id: sin
+        text: That greed lives in every heart, and this is the week we find out whose conscience is awake.
+        cause: divine
+        evidence: [{position: cs.greed.a-sin-to-fight, w: 3}]
+      - id: ambition
+        text: Filling your spare room for your kids isn't greed. Wanting more is how families get through.
+        cause: culture
+        evidence: [{position: cs.greed.wanting-more-is-good, w: 3}]
+
+  - id: probe.cs.greed.line
+    type: line
+    title: Where greed starts
+    text: Going down this list, where does wanting more turn into greed?
+    cases:
+      - A cook who takes a second job to buy a car
+      - A baker who opens a second shop across town
+      - A landlord who raises the rent because the market lets him
+      - A bank boss who earns three hundred times what the cleaner earns
+      - A family that buys up all the flour in a shortage
+    why: This asks where you think ambition ends and greed begins, and who you suspect of it.
+    options:
+      - id: none
+        text: None of them. Wanting more is how anybody gets anywhere.
+        evidence: [{position: cs.greed.wanting-more-is-good, w: 3}]
+      - id: hoarders
+        text: Only the flour, maybe. The rest is people looking after themselves, and it keeps the shops open.
+        evidence: [{position: cs.greed.self-interest-harnessed, w: 3}]
+      - id: all
+        text: All of them, and the rest of us would do the same with the chance.
+        evidence: [{position: cs.greed.everyone-greedy, w: 3}]
+      - id: top
+        text: The landlord and the bank boss. A cook wanting a car is not the problem.
+        evidence: [{position: cs.greed.most-decent-few-greedy, w: 3}]
+      - id: rewards
+        text: Wrong question. The way things are set up rewards every one of those moves.
+        evidence: [{position: cs.greed.system-makes-greedy, w: 3}]
+      - id: heart
+        text: You can't tell from the list. Greed is in the heart, and any of them could be fighting it or not.
+        evidence: [{position: cs.greed.a-sin-to-fight, w: 3}]
+
+  - id: probe.cs.greed.honesty-box
+    type: scene
+    title: The honesty box
+    text: >
+      Your street runs a vegetable table with an honesty box. By the second month the takings are about a
+      third short of what's gone. The neighbors' group chat has opinions. You're the one who empties the box.
+      What do you do?
+    why: This asks what you expect from people when nobody is watching.
+    premises:
+      - id: no-problem
+        text: The premise that taking more than you paid for says something bad about people.
+        evidence: [{position: cs.greed.wanting-more-is-good, w: 2}]
+    options:
+      - id: lock
+        text: Lock and camera. Trust was a nice idea for about a week.
+        evidence: [{position: cs.greed.everyone-greedy, w: 3}]
+      - id: stall
+        text: Pay a teenager a cut to sit there. Give someone an interest in it and it runs itself.
+        evidence: [{position: cs.greed.self-interest-harnessed, w: 3}]
+      - id: free
+        text: The short ones are probably the ones who can't afford it. Make a free shelf for them.
+        evidence: [{position: cs.greed.system-makes-greedy, w: 3}]
+      - id: word
+        text: Most people pay. Find out who doesn't and have a quiet word with that one.
+        evidence: [{position: cs.greed.most-decent-few-greedy, w: 3}]
+      - id: note
+        text: Leave it open and put up a card that says someone is watching, and it isn't me.
+        evidence: [{position: cs.greed.a-sin-to-fight, w: 3}]
+      - id: sell
+        text: Let someone run it as their own little business. They'll want it to grow, and it will.
+        evidence: [{position: cs.greed.wanting-more-is-good, w: 2}, {position: cs.greed.self-interest-harnessed, w: 1}]
+
+  # ---------------------------------------------------------------- cs.taxes
+  - id: probe.cs.taxes.payslip
+    type: scene
+    title: The payslip
+    text: >
+      Sunday lunch. Your brother-in-law has seen your payslip on the fridge: 2,400 gross, 1,790 net. He
+      taps the gap with a fork and asks where the 610 went. Everyone waits. You say:
+    why: This asks whether you feel tax as something taken from you or something you put in.
+    options:
+      - id: wasted
+        text: Into potholes nobody fixes and a minister's new car.
+        evidence: [{position: cs.taxes.taken-and-wasted, w: 3}]
+      - id: force
+        text: Wherever they like. Nobody asked me. Try not paying and see what happens.
+        evidence: [{position: cs.taxes.taken-by-force, w: 3}]
+      - id: paid-in
+        text: Into my pension and Mum's hospital bed. I'll be getting it back, and I've earned it.
+        evidence: [{position: cs.taxes.paid-in, w: 3}]
+      - id: shared
+        text: Into the road you drove here on and the school your kids go to.
+        evidence: [{position: cs.taxes.price-of-civilization, w: 3}]
+      - id: dodge
+        text: Into the pot the big companies don't pay into. Mine comes out before I see it. Theirs goes to an island.
+        evidence: [{position: cs.taxes.workers-pay-rich-dodge, w: 3}]
+      - id: creditors
+        text: Into interest on loans some government took before I was born.
+        evidence: [{position: cs.taxes.squeezed-for-creditors, w: 3}]
+
+  - id: probe.cs.taxes.vat
+    type: explanation
+    title: Bread goes up
+    text: >
+      The government puts sales tax up from 15 to 18 percent on everything, bread and cooking gas included.
+      The finance minister says it was a hard decision. At the bus stop, nobody believes the minister. Why
+      did they really do it?
+    why: This asks what you think taxes are for, and what kind of cause you reach for to explain them.
+    options:
+      - id: lenders
+        text: The foreign lenders asked for it. The money goes straight back out as interest.
+        cause: structures
+        evidence: [{position: cs.taxes.squeezed-for-creditors, w: 3}]
+      - id: easy
+        text: Taxing bread is easy. Taxing the rich means fighting their lawyers.
+        cause: interests
+        evidence: [{position: cs.taxes.workers-pay-rich-dodge, w: 3}]
+      - id: stolen
+        text: They've spent it and stolen the rest, and now they want more.
+        cause: individuals
+        evidence: [{position: cs.taxes.taken-and-wasted, w: 3}]
+      - id: costs
+        text: Hospitals and teachers cost money. Somebody pays, and it was always going to be all of us.
+        cause: structures
+        evidence: [{position: cs.taxes.price-of-civilization, w: 3}]
+      - id: because-they-can
+        text: Because they can. A government takes what it can get away with.
+        cause: ideas
+        evidence: [{position: cs.taxes.taken-by-force, w: 3}]
+      - id: pensions
+        text: The pension fund is running dry, and people who paid in for forty years have to be paid.
+        cause: interests
+        evidence: [{position: cs.taxes.paid-in, w: 3}]
+
+  - id: probe.cs.taxes.cash-job
+    type: tradeoff
+    title: Cash or receipt
+    text: >
+      The plumber has fixed the boiler. 300 with a receipt, or 240 cash, and the receipt never existed.
+      He's a decent man with three kids. He doesn't mind either way. You've got 300 in your wallet.
+    why: This asks how you think about tax when paying it is a choice that costs you.
+    options:
+      - id: mine
+        text: Cash. It's his money and mine. The taxman didn't fix the boiler.
+        evidence: [{position: cs.taxes.taken-by-force, w: 3}]
+      - id: waste
+        text: Cash. They'd only waste it.
+        evidence: [{position: cs.taxes.taken-and-wasted, w: 3}]
+      - id: big-firms
+        text: Cash, and no guilt. The big firms dodge millions. Sixty from us is not the problem.
+        evidence: [{position: cs.taxes.workers-pay-rich-dodge, w: 3}]
+      - id: creditors
+        text: Cash. Every cent of tax this year goes to the lenders anyway.
+        evidence: [{position: cs.taxes.squeezed-for-creditors, w: 3}]
+      - id: his-pension
+        text: Receipt. He needs the contributions on his record for when his back gives out, and so do we all.
+        evidence: [{position: cs.taxes.paid-in, w: 3}]
+      - id: hospital
+        text: Receipt. Somebody pays for the hospital, and I'd rather it wasn't only other people.
+        evidence: [{position: cs.taxes.price-of-civilization, w: 3}]
+
+  # ---------------------------------------------------------------- cs.clean-house
+  - id: probe.cs.clean-house.bus-contract
+    type: scene
+    title: The bus contract
+    text: >
+      Third scandal this year: the governor's cousin won the bus contract, and the buses are worse than
+      before. At the market everyone agrees something has to change. They disagree on what. You've got the
+      floor for a minute.
+    why: This asks whether you think a savior, an institution, or ordinary people will fix corruption.
+    options:
+      - id: tough
+        text: We need someone with a free hand who locks them up, courts or no courts.
+        evidence: [{position: cs.clean-house.tough-leader, w: 3}]
+      - id: businessman
+        text: Put a businessman in. He's already rich, so nobody can buy him, and he knows how to run things.
+        evidence: [{position: cs.clean-house.outsider-businessman, w: 3}]
+      - id: army
+        text: The army ran this province once. Say what you like, the buses ran.
+        evidence: [{position: cs.clean-house.army-steps-in, w: 3}]
+      - id: all-out
+        text: All of them out, and no new governor. Let the neighborhoods run the buses.
+        evidence: [{position: cs.clean-house.throw-them-all-out, w: 3}]
+      - id: auditor
+        text: Give the auditor teeth and let the courts finish the case. Boring works.
+        evidence: [{position: cs.clean-house.institutions-not-saviors, w: 3}]
+      - id: organize
+        text: Nobody's coming to save us. Get the drivers and the riders organized and make it cost them.
+        evidence: [{position: cs.clean-house.organize-ourselves, w: 3}]
+      - id: godly
+        text: Elect people who fear God. The rot starts in the heart, not the timetable.
+        evidence: [{position: cs.clean-house.god-fearing-rule, w: 3}]
+
+  - id: probe.cs.clean-house.line
+    type: line
+    title: How far
+    text: A new leader promises to end the corruption. Going down the list, where do you stop backing them?
+    cases:
+      - Skips the usual tendering to get roads built in a year
+      - Fires the judges who keep freeing corrupt officials
+      - Rules by decree for a year, parliament suspended
+      - Hands the country to the army "until elections"
+    why: This asks how much power you would hand to one person or institution to clean up.
+    premises:
+      - id: nobody-on-top
+        text: The premise that anyone on top is the answer. They all have to go, and people run things themselves.
+        evidence: [{position: cs.clean-house.throw-them-all-out, w: 3}]
+      - id: us
+        text: The premise that a leader will do it. Only organized working people will.
+        evidence: [{position: cs.clean-house.organize-ourselves, w: 2}]
+    conditions:
+      - id: god
+        text: It depends whether they fear God and bring back moral law.
+        evidence: [{position: cs.clean-house.god-fearing-rule, w: 3}]
+      - id: outsider
+        text: It depends whether they come from outside politics, from business, owing the parties nothing.
+        evidence: [{position: cs.clean-house.outsider-businessman, w: 3}]
+    options:
+      - id: none
+        text: Before the first. Rules are what protect us from the next one.
+        evidence: [{position: cs.clean-house.institutions-not-saviors, w: 3}]
+      - id: roads
+        text: After the roads. Judges are where I stop.
+        evidence: [{position: cs.clean-house.institutions-not-saviors, w: 1}, {position: cs.clean-house.tough-leader, w: 1}]
+      - id: decree
+        text: After the decrees. A year of a free hand is what it takes. The army stays in barracks.
+        evidence: [{position: cs.clean-house.tough-leader, w: 3}]
+      - id: all
+        text: All of it, the army included, if it ends the rot.
+        evidence: [{position: cs.clean-house.army-steps-in, w: 3}]
+
+  - id: probe.cs.clean-house.voices
+    type: voices
+    title: The barbershop
+    text: Two men are waiting for a haircut and the radio is on. Who's right?
+    voices:
+      - {name: Anselmo, says: "What this country needs is a manager. Someone who's run a company and made payroll."}
+      - {name: Bilal, says: "What it needs is judges nobody can buy and an auditor nobody can sack. Not another man."}
+    why: This asks what you think fixes a corrupt government, a person, a rule, or something else.
+    options:
+      - id: anselmo
+        text: Anselmo. A businessman knows how to make things work.
+        evidence: [{position: cs.clean-house.outsider-businessman, w: 3}]
+      - id: bilal
+        text: Bilal. Institutions, not saviors.
+        evidence: [{position: cs.clean-house.institutions-not-saviors, w: 3}]
+      - id: tough
+        text: Both too soft. It needs a hard hand, and fast.
+        evidence: [{position: cs.clean-house.tough-leader, w: 3}]
+      - id: moral
+        text: Both miss that it's a moral rot. Godly people first, then the rest follows.
+        evidence: [{position: cs.clean-house.god-fearing-rule, w: 3}]
+      - id: organize
+        text: Both wait for someone else. People like us have to organize and do it.
+        evidence: [{position: cs.clean-house.organize-ourselves, w: 3}]
+      - id: out
+        text: Both miss it. The whole lot have to go, judges and managers too.
+        evidence: [{position: cs.clean-house.throw-them-all-out, w: 3}]
+
+  # ---------------------------------------------------------------- cs.own-first
+  - id: probe.cs.own-first.hundred
+    type: allocation
+    title: The spare hundred
+    text: >
+      For once there's a hundred left at the end of the month. Nobody else will know where it goes. You
+      have ten points.
+    why: This asks how far your circle of obligation reaches when the money is yours to give.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: sister
+          text: Your sister, who is behind on her rent
+          evidence: [{position: cs.own-first.family-first, w: 2}]
+        - id: savings
+          text: Your own savings, because nobody bails you out
+          evidence: [{position: cs.own-first.yourself-first, w: 2}]
+        - id: foodbank
+          text: The food bank at the church down the road
+          evidence: [{position: cs.own-first.the-stranger-too, w: 2}]
+        - id: nets
+          text: Malaria nets abroad, where a hundred saves the most lives
+          evidence: [{position: cs.own-first.no-favorites, w: 3}]
+        - id: strike
+          text: The strike fund of the bus drivers on the other side of town
+          evidence: [{position: cs.own-first.own-means-class, w: 2}]
+    options:
+      - {id: done, text: Done}
+
+  - id: probe.cs.own-first.cousin
+    type: tradeoff
+    title: The cousin's car
+    text: >
+      Your cousin needs 500 to fix his car or he loses his delivery job. You have exactly 500. A friend who
+      works for a health charity tells you 500 buys enough nets to protect about a hundred children for three
+      years. Your cousin doesn't know about the nets. Your friend doesn't know about the car.
+    why: This asks whether those closest to you come first, and why.
+    options:
+      - id: cousin
+        text: The cousin. He's family. Nobody else will help him.
+        evidence: [{position: cs.own-first.family-first, w: 3}]
+      - id: nets
+        text: The nets. A hundred children against one car. A child far away counts as much as my cousin.
+        evidence: [{position: cs.own-first.no-favorites, w: 3}]
+      - id: circles
+        text: The cousin this time. I owe more to him, and I'll give to the nets when I can.
+        evidence: [{position: cs.own-first.widening-circles, w: 3}]
+      - id: neither
+        text: Neither. 500 is my whole cushion. I can't help anyone if I'm the next one sinking.
+        evidence: [{position: cs.own-first.yourself-first, w: 3}]
+      - id: both-ours
+        text: The cousin, and I'd ask why a delivery company lets a broken car cost a man his job.
+        evidence: [{position: cs.own-first.own-means-class, w: 2}, {position: cs.own-first.family-first, w: 1}]
+
+  - id: probe.cs.own-first.budget
+    type: scene
+    title: One hospital
+    text: >
+      The health ministry has one budget line left. It can build the new hospital wing in your town, or
+      pay for vaccines abroad that would save about ten times as many lives. There's a public consultation.
+      Your mother has been on the waiting list for eight months.
+    why: This asks whether a government owes its own citizens first, and how far.
+    options:
+      - id: ours
+        text: The wing. A government's first duty is to its own people.
+        evidence: [{position: cs.own-first.our-people-first, w: 3}]
+      - id: vaccines
+        text: The vaccines. Ten lives are ten lives, wherever they are. Even with my mother waiting.
+        evidence: [{position: cs.own-first.no-favorites, w: 3}]
+      - id: rings
+        text: The wing, but keep a real share for the vaccines. Closest first, never only.
+        evidence: [{position: cs.own-first.widening-circles, w: 3}]
+      - id: false-choice
+        text: Neither question is mine. Make the people with yachts pay for both.
+        evidence: [{position: cs.own-first.own-means-class, w: 3}]
+      - id: mother
+        text: The wing. My mother first, and I'm not going to pretend otherwise.
+        evidence: [{position: cs.own-first.family-first, w: 3}]
