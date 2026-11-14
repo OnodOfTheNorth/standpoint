@@ -27,6 +27,7 @@ nodes:
         evidence:
           - {position: war.militarism.peace-through-strength, w: 2}
           - {position: work.future.dignity-of-work, w: 1}
+          - {position: conscience.refusal.defense-is-honest-work, w: 2}
         consequence: Your first Sunday pays for the boiler.
         next: arc.mobilization.02b
       - id: bonus
@@ -48,12 +49,14 @@ nodes:
         set: {asked: true}
         evidence:
           - {position: war.militarism.pacifist, w: 2}
+          - {position: conscience.refusal.convert-production, w: 1}
         consequence: The civilian line is being closed to free up floor space.
         next: arc.mobilization.02a
       - id: head
         text: Do the work and keep out of it. A shell is a shell.
         evidence:
           - {position: cs.not-political.keep-head-down, w: 3}
+          - {position: conscience.refusal.defense-is-honest-work, w: 1}
         consequence: You work four Sundays in a row. The mortgage gets easier.
         next: arc.mobilization.02b
 
@@ -117,12 +120,14 @@ nodes:
         cause: interests
         evidence:
           - {position: work.future.dignity-of-work, w: 2}
+          - {position: conscience.refusal.defense-is-honest-work, w: 2}
         next: arc.mobilization.03
       - id: sin
         text: Both miss it. War comes from the human heart, and a factory can't fix that. Only make what a just war needs.
         cause: divine
         evidence:
           - {position: war.militarism.fallen-nature-just-war, w: 3}
+          - {position: conscience.refusal.selective-objection, w: 1}
         next: arc.mobilization.03
 
   - id: arc.mobilization.03
@@ -183,6 +188,7 @@ nodes:
         side: {axis: empire, dir: order}
         evidence:
           - {position: internationalism.nation-first, w: 3}
+          - {position: conscience.refusal.duty-to-serve, w: 2}
         consequence: The trucks leave at 3 a.m. The prefect thanks "the workers who put France first."
         next: arc.mobilization.05b
       - id: gate
@@ -190,6 +196,7 @@ nodes:
         side: {axis: empire, dir: dispossessed}
         evidence:
           - {position: solidarity.basis.anti-imperialist, w: 3}
+          - {position: conscience.refusal.selective-objection, w: 2}
         probe:
           ask: What makes this the line?
           options:
@@ -240,6 +247,7 @@ nodes:
         evidence:
           - {position: work.future.dignity-of-work, w: 2}
           - {position: war.militarism.pacifist, w: 1}
+          - {position: conscience.refusal.convert-production, w: 3}
         consequence: Management says it will "study" conversion. The study takes two years.
         next: arc.mobilization.06
 
@@ -281,6 +289,7 @@ nodes:
         evidence:
           - {position: work.future.dignity-of-work, w: 1}
           - {position: war.militarism.anarchy-security, w: 2}
+          - {position: conscience.refusal.defense-is-honest-work, w: 1}
         next: arc.mobilization.06
 
   - id: arc.mobilization.06
@@ -297,21 +306,26 @@ nodes:
         evidence:
           - {position: internationalism.nation-first, w: 2}
           - {position: war.militarism.peace-through-strength, w: 1}
+          - {position: hist.wwi-1914.national-defense, w: 3}
         next: arc.mobilization.07
       - id: rivals
         text: Against it. It was a war between empires over colonies and markets. The workers had no side in it.
         evidence:
           - {position: war.militarism.imperialist-rivalry, w: 3}
+          - {position: hist.wwi-1914.imperialist-war, w: 3}
         next: arc.mobilization.07
       - id: refuse
         text: With the conscientious objectors. No war of that kind is worth a single conscript.
         evidence:
           - {position: war.militarism.pacifist, w: 3}
+          - {position: conscience.refusal.absolute-pacifism, w: 2}
+          - {position: hist.wwi-1914.pointless-slaughter, w: 1}
         next: arc.mobilization.07
       - id: grief
         text: With the vote, and with grief. A just defense can still be a slaughter, and it was.
         evidence:
           - {position: war.militarism.fallen-nature-just-war, w: 2}
+          - {position: hist.wwi-1914.national-defense, w: 1}
         next: arc.mobilization.07
 
   - id: arc.mobilization.07
@@ -352,3 +366,4 @@ nodes:
         cause: chance
         evidence:
           - {position: cs.not-political.keep-head-down, w: 2}
+          - {position: conscience.refusal.defense-is-honest-work, w: 1}

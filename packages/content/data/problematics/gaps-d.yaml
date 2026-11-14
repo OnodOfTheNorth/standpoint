@@ -1,0 +1,993 @@
+# Gaps, part 4 (history): 1914, Argentina 2001, Bolivia 2019, martial law in the Philippines.
+# Follows the shape of history.yaml: domain history, layer analysis, fine-grained readings rather than approval ratings.
+problematics:
+  # ------------------------------------------------------------------
+  - id: hist.wwi-1914
+    domain: history
+    layer: analysis
+    question: What was the First World War about, and what should have been done in 1914?
+    plain: >-
+      In August 1914 the great powers of Europe went to war, and most socialist parties voted to support their own governments.
+      Some 15 to 20 million people died, among them soldiers and laborers from the colonies. What was it, and where would you
+      have stood?
+    short: the war of 1914
+    importance: 2
+    region: history
+    positions:
+      - id: hist.wwi-1914.imperialist-war
+        label: A war among empires for colonies and markets; the war credits were a betrayal
+        claim: >-
+          The war was fought between rival empires over colonies, markets and spheres of investment. Workers had no side in
+          it, and the socialist leaders who voted for war credits betrayed the International's pledge to oppose it.
+        voiced: >-
+          "The war is a war for the division of the world, for the partition and repartition of colonies and spheres of
+          influence of finance capital. The leaders who voted the credits went over to the bourgeoisie."
+        you: You see the First World War as a war between empires, and socialist support for it as a betrayal.
+        because: >-
+          Lenin argued that capitalism had entered the stage of monopoly and finance capital, which drives the great powers
+          to divide and redivide the world by force; a war among them is a war for plunder on all sides. The Second
+          International had resolved at Stuttgart in 1907 and Basel in 1912 to oppose such a war. On 4 August 1914 most of
+          its parties voted for it.
+        against:
+          - from: socdem.revisionist
+            text: >-
+              Workers had homes and families in the path of invading armies. A party that told them their country did not
+              matter would have lost them.
+          - from: liberalism.internationalist
+            text: >-
+              Germany's leaders chose war; reducing it to capitalist rivalry lets the aggressor off and blames the victims
+              equally.
+        sources:
+          - {author: V. I. Lenin, title: "Imperialism, the Highest Stage of Capitalism", year: 1917}
+          - {author: V. I. Lenin and G. Zinoviev, title: Socialism and War, year: 1915}
+        traditions:
+          defining: [marxism.leninism]
+          typical: [marxism.ml, marxism.trotskyism, marxism.luxemburgism, marxism.left-communism, marxism.maoism]
+          contested: [marxism.council-communism]
+          rejects: [socdem.revisionist, conservatism.national, liberalism.internationalist]
+        presupposes: [war.militarism.imperialist-rivalry]
+        excludes: [hist.wwi-1914.national-defense]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >-
+            Reading 1914 as an imperialist war denies governments the support of their own workers in wars for markets and
+            colonies, and points that refusal at the ruling classes that profit from them.
+          drain: breaks
+          law_of_value: none
+          consciousness: hegemonic
+
+      - id: hist.wwi-1914.national-defense
+        label: Each nation defended itself, and workers were right to stand with it
+        claim: >-
+          When war came, each people faced invasion: the Germans feared the Tsar's armies, the French the Kaiser's. Workers
+          rightly stood with their nations, and the labor movement that did so won a place in the state it defended.
+        voiced: >-
+          "In the hour of danger we will not leave our own fatherland in the lurch. A victory of Russian despotism would put
+          everything at stake for our people and its freedom."
+        you: You think workers in 1914 were right to defend their own countries.
+        because: >-
+          The Social Democratic declaration of 4 August 1914, read by Haase, said the party would defend the country against
+          tsarist despotism. In France Jaurès's party joined the Union sacrée after the German invasion of Belgium and
+          France. The war brought unions into government, collective bargaining and, at its end, universal suffrage in
+          Germany and Britain.
+        against:
+          - from: marxism.leninism
+            text: >-
+              Every government claimed to be defending itself, which proves the claim meant nothing. Workers in uniform
+              killed each other for their bosses' colonies.
+          - from: marxism.third-worldism
+            text: >-
+              "Defense of the nation" meant defense of the empire. The French and British workers were defending their
+              countries' hold over Africa and India.
+        sources:
+          - {author: Hugo Haase for the SPD Reichstag group, title: "Declaration on the war credits, Reichstag, 4 August 1914", year: 1914}
+        traditions:
+          defining: []
+          typical: [socdem.revisionist, nationalism.civic, conservatism.national, socdem.labourism]
+          contested: [conservatism.burkean]
+          rejects: [marxism.leninism, marxism.luxemburgism, marxism.third-worldism]
+        presupposes: [internationalism.nation-first]
+        excludes: [hist.wwi-1914.imperialist-war]
+        analysis:
+          gains: [core-workers, industrial-capital]
+          pays: [peripheral-workers, peasantry]
+          mechanism: >-
+            Support for national defense brought organized labor in the core into partnership with its own state, winning
+            recognition and later concessions, while the war it backed was fought partly by colonial soldiers for the
+            empires that ruled them.
+          drain: sustains
+          law_of_value: none
+          consciousness: economic-corporate
+
+      - id: hist.wwi-1914.german-bid
+        label: Germany's leaders sought a war for continental dominance
+        claim: >-
+          The war was not an accident shared by all. Germany's leaders backed Austria-Hungary in July 1914 knowing it meant a
+          general war, and pursued war aims of domination in Europe; the Allies fought to stop them.
+        voiced: >-
+          "Germany grasped for world power. The September Programme of 1914 laid out an empire in Europe; the war was its
+          means."
+        you: You think Germany's leaders were chiefly responsible for starting the First World War.
+        because: >-
+          Fischer, working in the German archives, showed that Berlin gave Vienna a free hand in July 1914 knowing Russia and
+          France might fight, and that Chancellor Bethmann Hollweg's September Programme set out annexations and a German-led
+          Europe. The Versailles treaty's war guilt clause was crude, but the guilt was real.
+        against:
+          - from: liberalism.classical
+            text: >-
+              Clark shows that every capital made choices that led to war; singling out Berlin reads 1914 backwards from
+              1939.
+          - from: marxism.leninism
+            text: >-
+              Britain and France fought to keep the colonies they had seized earlier; the "defensive" powers held most of the
+              world already.
+        sources:
+          - {author: Fritz Fischer, title: "Germany's Aims in the First World War (Griff nach der Weltmacht)", year: 1961}
+        traditions:
+          defining: []
+          typical: [liberalism.internationalist, liberalism.social, conservatism.christian-democracy, socdem.keynesian]
+          contested: [conservatism.burkean]
+          rejects: [marxism.leninism, conservatism.paleo]
+        presupposes: [war.militarism.democratic-peace]
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [peripheral-workers]
+          mechanism: >-
+            Assigning guilt to one power vindicates the other empires' war and peace, including the reparations and colonial
+            redistribution of 1919, which handed Germany's colonies to the victors.
+          drain: sustains
+          law_of_value: none
+
+      - id: hist.wwi-1914.sleepwalkers
+        label: Nobody wanted it; alliances and miscalculation dragged Europe in
+        claim: >-
+          No single power planned the war. Statesmen in every capital, bound by alliances and mobilization timetables and
+          misreading each other, took steps that each seemed reasonable and together produced a catastrophe.
+        voiced: >-
+          "The protagonists of 1914 were sleepwalkers, watchful but unseeing, haunted by dreams, yet blind to the reality of
+          the horror they were about to bring into the world."
+        you: You think the First World War came from miscalculation and alliances that nobody controlled, not from one power's plan.
+        because: >-
+          Clark reconstructs the decisions of July 1914 in Vienna, Belgrade, St Petersburg, Paris, Berlin and London and finds
+          responsibility spread across all of them: Russia mobilized first, France encouraged it, Britain hesitated, Germany
+          gambled. The lesson is about the fragility of complex systems and the limits of foresight, not about villains or
+          economic laws.
+        against:
+          - from: marxism.leninism
+            text: >-
+              Sleepwalkers do not spend a decade in an arms race over colonies. The "accident" had been prepared by every
+              general staff in Europe.
+          - from: liberalism.internationalist
+            text: >-
+              Fischer's evidence of German war aims did not disappear; spreading the blame evenly erases the difference
+              between the risk-takers and the rest.
+        sources:
+          - {author: Christopher Clark, title: "The Sleepwalkers: How Europe Went to War in 1914", year: 2012}
+        traditions:
+          defining: []
+          typical: [conservatism.burkean, liberalism.classical, commonsense.anti-politics]
+          contested: [liberalism.internationalist]
+          rejects: [marxism.leninism, marxism.ml]
+        presupposes: [history.motor.contingency]
+        analysis:
+          gains: [professional-managerial]
+          pays: []
+          mechanism: >-
+            Explaining the war by miscalculation removes interests from the story, which leaves the arms firms, banks and
+            colonial rivalries of 1914 outside the question of responsibility.
+          drain: softens
+          law_of_value: none
+
+      - id: hist.wwi-1914.colonial-war
+        label: A European war fought with colonial bodies, and promises the empires broke
+        claim: >-
+          For most of the world the war was the empires' war, fought with Indian, African, Vietnamese and Chinese soldiers
+          and laborers, many conscripted, on promises of self-rule. When the empires broke those promises in 1919, the
+          colonies drew their own conclusions.
+        voiced: >-
+          "We sent a million men across the sea for the King. In 1919 they gave us the Rowlatt Act and the massacre at
+          Amritsar. The war taught us who the empire's freedom was for."
+        you: You see the First World War mainly as an imperial war fought with colonial lives, whose broken promises fed anti-colonial revolt.
+        because: >-
+          More than a million Indian soldiers served, and hundreds of thousands of Africans fought or carried loads, with
+          heavy losses among porters in East Africa; France recruited troops across West Africa and Indochina, and Britain
+          and France brought some 140,000 Chinese laborers to the Western Front. Manela shows how Wilson's talk of
+          self-determination raised hopes from Cairo to Beijing that Versailles dashed, sparking Egypt's 1919 revolution,
+          China's May Fourth Movement and India's mass movement.
+        against:
+          - from: liberalism.internationalist
+            text: >-
+              The war and the peace also created the League of Nations and the mandates system, which, however imperfectly,
+              began to subject colonial rule to international standards.
+          - from: marxism.leninism
+            text: >-
+              The colonial question is part of the imperialist character of the war, not a separate war; national
+              liberation needed the October Revolution to show the way.
+        sources:
+          - {author: Erez Manela, title: "The Wilsonian Moment: Self-Determination and the International Origins of Anticolonial Nationalism", year: 2007}
+        traditions:
+          defining: []
+          typical: [nationalism.decolonial, nationalism.pan-africanism, marxism.third-worldism, nationalism.three-principles, nationalism.gandhian]
+          contested: [marxism.leninism]
+          rejects: [liberalism.internationalist, conservatism.national]
+        presupposes: [imperialism.nature.monopoly-stage]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >-
+            Centering the colonies in 1914 turns the war into evidence for anti-colonial claims on the empires that recruited
+            colonial labor and land and refused self-rule in return.
+          drain: breaks
+          law_of_value: none
+
+      - id: hist.wwi-1914.front-generation
+        label: The trenches forged a new kind of man and a national community
+        claim: >-
+          The war swept away the old bourgeois world and forged, in the trenches, a generation of men bound by sacrifice
+          across class lines. Its true meaning was the national community of the front, betrayed by the politicians at home.
+        voiced: >-
+          "In the storm of steel a new race was born. The front knew no classes, only comrades; the parliament knew only
+          parties."
+        you: You see the trenches as having forged a national community of sacrifice that the politicians at home betrayed.
+        because: >-
+          Jünger's war memoir describes combat as an experience that remade the men who survived it. Veterans across Europe
+          felt that the comradeship of the front, which mixed classes, was more real than the parties and markets they came
+          home to. Mussolini's movement began among veterans, and the myth of the front became the founding myth of the
+          fascist movements.
+        against:
+          - from: liberalism.classical
+            text: >-
+              Remarque's soldiers found no new race in the trenches, only a lost generation. The myth of the front was made
+              afterward by those who wanted another war.
+          - from: marxism.ml
+            text: >-
+              The "community of the front" was officers from the estates commanding peasants and workers; its myth was
+              used to break the unions after the war.
+        sources:
+          - {author: Ernst Jünger, title: "Storm of Steel (In Stahlgewittern)", year: 1920}
+        traditions:
+          defining: [fascism.italian]
+          typical: [fascism.nazism, fascism.traditionalist, fascism.national-syndicalism]
+          rejects: [marxism.leninism, liberalism.classical, anarchism.christian]
+        presupposes: [war.militarism.war-ennobles]
+        analysis:
+          gains: [industrial-capital, landed-capital]
+          pays: [core-workers, peasantry]
+          mechanism: >-
+            The myth of the front replaced class with a hierarchy of sacrifice, which postwar movements used to mobilize
+            veterans and the petty bourgeoisie against strikes, unions and the left.
+          drain: sustains
+          law_of_value: none
+
+      - id: hist.wwi-1914.pointless-slaughter
+        label: A pointless slaughter; ordinary men sent to die for nothing
+        claim: >-
+          Whatever the diplomats said, the war was millions of young men sent to die in mud for a few hundred yards by
+          generals who stayed behind the lines. It proved nothing except that governments will spend their people's
+          lives.
+        voiced: "Lions led by donkeys. They told us it would be over by Christmas, and then they sent my grandfather's whole street over the top."
+        you: You see the First World War as a pointless slaughter of ordinary men by those in charge.
+        because: >-
+          On the first day of the Somme alone, the British army lost nearly 20,000 dead. Remarque's novel spoke for
+          soldiers on every side who came to see the enemy as men like themselves. Alan Clark's history of the 1915
+          offensives blamed generals who kept repeating failed attacks. Nothing the war decided was worth what it cost.
+        against:
+          - from: conservatism.burkean
+            text: >-
+              The "donkeys" myth ignores how fast the armies learned; by 1918 the Allies had a modern way of war and won it.
+              A defeat would not have been pointless.
+          - from: marxism.leninism
+            text: >-
+              It was not pointless to those who profited from it; calling it senseless hides whose sense it served.
+        sources:
+          - {author: Erich Maria Remarque, title: All Quiet on the Western Front, year: 1929}
+          - {author: Alan Clark, title: The Donkeys, year: 1961}
+        traditions:
+          defining: []
+          typical: [commonsense.anti-politics, anarchism.christian, nationalism.gandhian, commonsense.rigged]
+          contested: [liberalism.social]
+          rejects: [fascism.italian, conservatism.national]
+        presupposes: [war.militarism.pacifist]
+        analysis:
+          gains: []
+          pays: [industrial-capital]
+          mechanism: >-
+            Seeing the war as senseless breeds distrust of governments that send soldiers to die, which raises the cost of
+            mobilizing for later wars, without naming who gained from this one.
+          drain: softens
+          law_of_value: none
+
+  # ------------------------------------------------------------------
+  - id: hist.argentina-2001
+    domain: history
+    layer: analysis
+    question: What happened in Argentina's collapse of 2001?
+    plain: >-
+      After a decade of a peso pegged to the dollar, privatizations and foreign borrowing, Argentina froze bank deposits in
+      December 2001. Crowds banging pots brought down the president, the country defaulted on its debt, and half the population
+      fell into poverty. Unemployed workers blocked roads and workers took over closed factories. What was it?
+    short: Argentina 2001
+    importance: 2
+    region: history
+    positions:
+      - id: hist.argentina-2001.imf-neoliberal-collapse
+        label: The IMF's model pupil broke; default and a break with the Fund saved it
+        claim: >-
+          Argentina followed the IMF's program, the peg, privatization and open capital flows, and it collapsed under debt and
+          austerity. Recovery came only when the country defaulted, devalued, restructured its debt on its own terms and paid
+          off the Fund to be free of its conditions.
+        voiced: >-
+          "They told us to tighten our belts in a recession and the patient died. We did what they said and fell; we stopped
+          and grew. The dead don't pay debts."
+        you: You think the 2001 collapse was caused by the IMF's program, and breaking with it brought recovery.
+        because: >-
+          Stiglitz argues that the IMF pushed Argentina to keep the peg and cut spending in a deep recession, deepening the
+          slump. After the default and devaluation of 2002, the economy grew strongly for several years; the 2005
+          restructuring cut what bondholders were owed by about two-thirds, and in 2006 Argentina paid off its IMF debt
+          early to end the Fund's oversight.
+        against:
+          - from: liberalism.technocratic
+            text: >-
+              Mussa shows that the Fund's error was lending too long to a government that would not control its deficits.
+              The fiscal hole was Argentine.
+          - from: marxism.dependency
+            text: >-
+              The recovery rode a commodity boom and the same agribusiness and finance that ruled before; the debt came back,
+              and so did the Fund.
+        sources:
+          - {author: Joseph E. Stiglitz, title: Globalization and Its Discontents, year: 2002}
+        traditions:
+          defining: []
+          typical: [nationalism.peronism, socdem.keynesian, socdem.left-populism, nationalism.bolivarianism, marxism.dependency]
+          contested: [socdem.third-way]
+          rejects: [liberalism.chicago, liberalism.austrian, liberalism.technocratic]
+        presupposes: [hist.neoliberal-turn.debt-discipline-of-the-south]
+        excludes: [hist.argentina-2001.too-much-state]
+        analysis:
+          gains: [core-workers, petty-bourgeoisie, industrial-capital]
+          pays: [finance-capital]
+          mechanism: >-
+            Default and devaluation shifted losses onto foreign and domestic bondholders and made Argentine industry and
+            exports competitive again, restoring jobs while leaving ownership of land and industry as before.
+          drain: reduces
+          law_of_value: regulates
+
+      - id: hist.argentina-2001.too-much-state
+        label: A state that spent beyond its means; the peg only hid it
+        claim: >-
+          Argentina's federal and provincial governments spent more than they collected through the 1990s and borrowed
+          the difference. The peg could not survive deficits, and the deposit freeze and forced conversion of dollar savings
+          were the state confiscating its citizens' money.
+        voiced: >-
+          "The problem was never the market. It was a state that spends what it doesn't have and then steals your savings to
+          cover it. They put our dollars in a pen and handed back pesos."
+        you: You think Argentina collapsed because its governments spent beyond their means, and then took people's savings.
+        because: >-
+          Mussa, the IMF's chief economist at the time, argues the fatal failure was fiscal: public debt rose sharply in the
+          boom years when it should have fallen, so there was no room when the recession came. Edwards traces a long cycle of
+          Latin American populism that spends, inflates and defaults. Savers whose dollar deposits were forcibly converted
+          to pesos in 2002 lost much of their wealth.
+        against:
+          - from: socdem.keynesian
+            text: >-
+              Argentina's deficits in the late 1990s were modest; it was the recession, the peg and high interest rates that
+              made the debt explode. Cutting spending in a slump made it worse.
+          - from: nationalism.peronism
+            text: >-
+              Much of the debt was private debt taken over by the state, and much of the money borrowed left the country in
+              the suitcases of the rich.
+        sources:
+          - {author: Michael Mussa, title: "Argentina and the Fund: From Triumph to Tragedy", year: 2002}
+          - {author: Sebastian Edwards, title: "Left Behind: Latin America and the False Promise of Populism", year: 2010}
+        traditions:
+          defining: []
+          typical: [liberalism.chicago, liberalism.technocratic, liberalism.austrian, libertarianism.minarchist, libertarianism.ancap]
+          contested: [socdem.third-way]
+          rejects: [nationalism.peronism, socdem.keynesian, marxism.dependency]
+        presupposes: [debt.sovereign.pay-what-you-owe]
+        excludes: [hist.argentina-2001.imf-neoliberal-collapse]
+        analysis:
+          gains: [finance-capital, professional-managerial]
+          pays: [core-workers, reserve-army]
+          mechanism: >-
+            Locating the cause in public spending supports fiscal cuts and creditor claims, placing the adjustment on wages,
+            pensions and public employment.
+          drain: sustains
+          law_of_value: extends
+
+      - id: hist.argentina-2001.popular-power
+        label: "All of them must go: the people organized themselves"
+        claim: >-
+          December 2001 was a popular rebellion that showed people could run things themselves: neighborhood assemblies,
+          unemployed workers' movements, barter networks and factories taken over and run by their workers. The parties
+          returned and contained it, but the experience remained.
+        voiced: >-
+          "Que se vayan todos, que no quede ni uno solo. We didn't want new leaders; we wanted to make decisions in the
+          assembly on the corner and run the factory ourselves."
+        you: You see Argentina's 2001 rebellion as people organizing themselves without parties or bosses.
+        because: >-
+          Sitrin recorded how assemblies, piquetero movements and recovered factories practiced horizontal decision-making,
+          and Colectivo Situaciones wrote of a new social protagonism that rejected representation. Hundreds of firms
+          abandoned by their owners were run by their workers, some, like the Zanon ceramics plant, for decades. The
+          rebellion brought down a government without a party to lead it.
+        against:
+          - from: marxism.trotskyism
+            text: >-
+              Without a party and a program for power, the assemblies faded within a year and Peronism took back the
+              streets. Horizontalism let the state outlast the movement.
+          - from: liberalism.classical
+            text: >-
+              "All of them must go" left a vacuum filled by five presidents in two weeks. A country cannot be run from
+              street-corner assemblies.
+        sources:
+          - {author: Marina Sitrin, title: "Horizontalism: Voices of Popular Power in Argentina", year: 2006}
+          - {author: Colectivo Situaciones, title: "19 y 20: Apuntes para el nuevo protagonismo social", year: 2002}
+        traditions:
+          defining: [marxism.autonomism]
+          typical: [anarchism.communist, anarchism.syndicalist, zapatismo, commonsense.anti-politics]
+          contested: [marxism.trotskyism]
+          rejects: [nationalism.peronism, liberalism.classical, marxism.ml]
+        presupposes: [org.form.horizontal-movement]
+        analysis:
+          gains: [core-workers, reserve-army]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >-
+            Occupying abandoned factories and organizing the unemployed took production and relief out of owners' and
+            brokers' hands, until court rulings, subsidies and the return of party politics absorbed most of it.
+          drain: none
+          law_of_value: suspends
+          consciousness: class-economic
+
+      - id: hist.argentina-2001.financial-plunder
+        label: The bill for 25 years of financial plunder by the local elite
+        claim: >-
+          Since the 1976 dictatorship, Argentina's dominant groups made money not from production but by borrowing abroad,
+          lending at home at high rates and moving the profits out. The state took over their debts. 2001 was the bill, paid by
+          workers and savers while the money stayed abroad.
+        voiced: >-
+          "The debt was theirs and the hunger was ours. The same families that sent their dollars to Miami before the freeze
+          ran the country before and after."
+        you: You see 2001 as the end point of decades of financial plunder by Argentina's ruling groups, with the costs passed to the people.
+        because: >-
+          Basualdo traces a regime of financial valorization from 1976: large domestic groups and foreign creditors profited
+          from the gap between local and international interest rates, and capital flight roughly matched the growth of
+          foreign debt. The dictatorship's nationalization of private debt in 1982 and the privatizations of the 1990s
+          transferred public wealth to the same groups. Before the December freeze, large depositors withdrew billions.
+        against:
+          - from: liberalism.chicago
+            text: >-
+              Capital flees bad policy. Owners moved money abroad because they rightly expected the state to take it, as it
+              did.
+          - from: marxism.trotskyism
+            text: >-
+              Blaming a "financial" fraction lets the "productive" bosses and the Peronist bureaucracy off the hook; the
+              whole ruling class lived on the plunder.
+        sources:
+          - {author: Eduardo M. Basualdo, title: "Estudios de historia económica argentina: desde mediados del siglo XX a la actualidad", year: 2006}
+        traditions:
+          defining: []
+          typical: [marxism.dependency, nationalism.peronism, marxism.ml, nationalism.bolivarianism, socdem.left-populism]
+          contested: [marxism.trotskyism]
+          rejects: [liberalism.chicago, liberalism.technocratic]
+        presupposes: [comprador.nature.broker-class]
+        analysis:
+          gains: [core-workers, petty-bourgeoisie]
+          pays: [comprador-capital, finance-capital]
+          mechanism: >-
+            Naming the debt as the product of capital flight by a local financial bloc supports debt audits, capital controls
+            and claims against those who took money out, which challenges the alliance of local groups and foreign creditors.
+          drain: reduces
+          law_of_value: regulates
+          consciousness: hegemonic
+
+      - id: hist.argentina-2001.machine-managed
+        label: The fall was steered by party machines; politics as usual survived it
+        claim: >-
+          Much of what looked like spontaneous revolt, the looting in particular, was organized or tolerated by Peronist
+          brokers and police in a struggle among party factions. The same machine then took over the state and pacified the
+          poor with welfare plans handed out through its networks.
+        voiced: >-
+          "The punteros told us which supermarkets to hit and the police stood back. A week later the same people were
+          handing out the Jefes y Jefas plans."
+        you: You think much of 2001 was steered by party machines, which came out of it in charge.
+        because: >-
+          Auyero's study of the December looting shows that party brokers helped organize some of it and police let it
+          happen, as factions of Peronism fought over power. Duhalde's emergency Plan Jefes y Jefas de Hogar reached around two
+          million households, many through brokers and movements that became tied to the state. Kirchnerism rebuilt the
+          party's base from the ruins.
+        against:
+          - from: marxism.autonomism
+            text: >-
+              Brokers and police were part of it, but the assemblies and recovered factories were not organized by any
+              puntero; reducing 2001 to the machine erases the rebellion.
+          - from: nationalism.peronism
+            text: >-
+              The movement that "pacified" Argentina also fed it, put it back to work and paid off the IMF. Calling that a
+              machine is the contempt of the comfortable.
+        sources:
+          - {author: Javier Auyero, title: "Routine Politics and Violence in Argentina: The Gray Zone of State Power", year: 2007}
+        traditions:
+          defining: []
+          typical: [marxism.trotskyism, liberalism.technocratic, commonsense.rigged]
+          contested: [marxism.autonomism]
+          rejects: [nationalism.peronism]
+        presupposes: [clientelism.patronage.class-control]
+        analysis:
+          gains: [professional-managerial]
+          pays: [reserve-army]
+          mechanism: >-
+            Reading 2001 through the machine shows how relief channeled through brokers turned the unemployed back into
+            clients of the party that controlled the state.
+          drain: none
+          law_of_value: none
+
+  # ------------------------------------------------------------------
+  - id: hist.bolivia-2019
+    domain: history
+    layer: analysis
+    question: What happened in Bolivia in November 2019?
+    plain: >-
+      Evo Morales, Bolivia's first indigenous president, ran for a fourth term after losing a referendum on it. When he claimed
+      victory in October 2019, the opposition and an Organization of American States audit alleged fraud. After weeks of
+      protest, a police mutiny and the army chief's call to resign, he left, and security forces killed protesters at Sacaba and
+      Senkata. A coup, or an uprising?
+    short: Bolivia 2019
+    importance: 2
+    region: history
+    positions:
+      - id: hist.bolivia-2019.coup
+        label: A coup against an elected indigenous government
+        claim: >-
+          The police and army forced out an elected president, a self-proclaimed government took office without a quorum and
+          killed indigenous protesters, and the United States and the OAS backed it. The fraud claim was a pretext, later
+          disputed by independent statisticians.
+        voiced: >-
+          "When the army tells the president to go, it's a coup. They burned the wiphala, they massacred us at Senkata, and
+          they did it for the lithium and for the old masters of Santa Cruz."
+        you: You think Morales's fall in 2019 was a coup against an elected indigenous government.
+        because: >-
+          Farthing and Becker document how the police mutinied, the commander of the armed forces publicly "suggested" the
+          president resign, and Jeanine Áñez took office before a chamber lacking a quorum, then issued a decree shielding the
+          military as troops killed protesters. MIT researchers found no statistical evidence that the count was
+          manipulated. A year later the MAS won the rerun election with 55 percent.
+        against:
+          - from: liberalism.internationalist
+            text: >-
+              Morales overrode a referendum to run again, and the OAS audit found deliberate manipulation of tally sheets and
+              servers. A president who defies the constitution cannot hide behind it.
+          - from: nationalism.decolonial
+            text: >-
+              The MAS had already broken with indigenous movements over roads and mines; reducing the crisis to an imperial
+              plot erases those who opposed Evo from the left and from below.
+        sources:
+          - {author: Linda Farthing and Thomas Becker, title: "Coup: A Story of Violence and Resistance in Bolivia", year: 2021}
+        traditions:
+          defining: [nationalism.bolivarianism]
+          typical: [marxism.ml, nationalism.indigenous-sovereignty, marxism.third-worldism, socdem.left-populism, marxism.dependency]
+          contested: [nationalism.decolonial]
+          rejects: [liberalism.internationalist, conservatism.evangelical-right, conservatism.right-populism]
+        presupposes: [indigenous.sovereignty.plurinational-state]
+        excludes: [hist.bolivia-2019.fraud-uprising]
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: [comprador-capital, finance-capital]
+          mechanism: >-
+            Calling 2019 a coup defends the nationalized gas revenues and state control over lithium against the
+            agro-export elite of the east and foreign investors who stood to gain from Morales's fall.
+          drain: reduces
+          law_of_value: regulates
+
+      - id: hist.bolivia-2019.fraud-uprising
+        label: A citizens' uprising against fraud and an illegal fourth term
+        claim: >-
+          Morales lost a referendum on running again and ran anyway; the count was manipulated, and when the audit confirmed
+          it, citizens, police and finally the army refused to defend him. He resigned and constitutional succession followed.
+        voiced: >-
+          "Bolivia said no on 21 February 2016, and Evo ignored us. When he stole the election too, the people rose. That's not
+          a coup; that's a country defending its vote."
+        you: You think Morales fell to a popular uprising against electoral fraud and an unconstitutional fourth term.
+        because: >-
+          The OAS final audit reported deliberate manipulation, including hidden servers and altered tally sheets, and
+          concluded that the declared result could not be accepted. The 2016 referendum had rejected a fourth term; the
+          constitutional court overrode it by calling term limits a violation of Morales's human rights. Weeks of peaceful
+          protest preceded the police mutiny and the resignation.
+        against:
+          - from: nationalism.bolivarianism
+            text: >-
+              The OAS's statistics were refuted by independent researchers, and the "succession" was a senator sworn in by
+              a rump chamber who then sent the army against indigenous protesters.
+          - from: liberalism.social
+            text: >-
+              Whatever the count, a government that killed protesters at Sacaba and Senkata and shielded the troops by decree
+              cannot be called a restoration of constitutional rule.
+        sources:
+          - {author: Organization of American States, title: "Electoral Integrity Analysis: General Elections in the Plurinational State of Bolivia, October 20, 2019, Final Report", year: 2019}
+        traditions:
+          defining: []
+          typical: [conservatism.evangelical-right, conservatism.right-populism, liberalism.classical, conservatism.fusionism]
+          contested: [liberalism.internationalist]
+          rejects: [nationalism.bolivarianism, marxism.ml, nationalism.indigenous-sovereignty]
+        presupposes: [authority.legitimacy.consent]
+        excludes: [hist.bolivia-2019.coup]
+        analysis:
+          gains: [comprador-capital, landed-capital, finance-capital]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >-
+            The fraud reading legitimized a government drawn from the eastern agribusiness elite that moved to reopen gas and
+            lithium to foreign investors and rolled back the indigenous movement's hold on the state.
+          drain: sustains
+          law_of_value: extends
+
+      - id: hist.bolivia-2019.both-broke-the-rules
+        label: Morales overreached, and his removal was still forced and then bloody
+        claim: >-
+          Morales's defiance of the referendum and a flawed count gave the opposition its opening, but a president forced
+          out by the army, followed by a government that killed protesters, was not constitutional rule either. Both sides
+          broke it.
+        voiced: "Evo should never have run again. But you don't fix that by letting a general decide who governs and then shooting people at a gas plant."
+        you: You think Morales overreached, and his forced removal and the killings that followed were also wrong.
+        because: >-
+          The independent expert group of the Inter-American Commission on Human Rights found that security forces committed
+          massacres at Sacaba and Senkata and that the interim government's decree encouraged them. The same period also saw
+          violence by MAS supporters and against them. The defensible line is the constitution against everyone who broke it.
+        against:
+          - from: nationalism.bolivarianism
+            text: >-
+              "Both sides" puts an elected government that won the rerun with 55 percent on the same footing as the soldiers
+              who shot its voters.
+          - from: conservatism.right-populism
+            text: >-
+              Morales brought it on himself and on the country. Equal blame for those who defended the vote is a lawyer's
+              evasion.
+        sources:
+          - {author: "Interdisciplinary Group of Independent Experts (GIEI-Bolivia), Inter-American Commission on Human Rights", title: "Informe sobre los hechos de violencia y vulneración de los derechos humanos ocurridos entre el 1 de septiembre y el 31 de diciembre de 2019", year: 2021}
+        traditions:
+          defining: []
+          typical: [liberalism.social, liberalism.internationalist, socdem.democratic-socialism, socdem.third-way]
+          contested: [liberalism.classical]
+          rejects: [nationalism.bolivarianism, conservatism.right-populism]
+        presupposes: [law.nature.rule-of-law]
+        analysis:
+          gains: [professional-managerial]
+          pays: []
+          mechanism: >-
+            Treating the crisis as a breach of rules by both sides restores procedure as the standard, which leaves aside the
+            dispute over gas, land and lithium that set the classes of east and west against each other.
+          drain: none
+          law_of_value: none
+
+      - id: hist.bolivia-2019.neither-evo-nor-the-right
+        label: Neither the caudillo's state nor the racist right; movements stand alone
+        claim: >-
+          The MAS government had become a state of one leader that built roads through indigenous land and lived on mining
+          and gas; the right that replaced it was openly racist. The lesson is that indigenous and popular movements must
+          stay autonomous from any state that claims to speak for them.
+        voiced: >-
+          "Evo turned the movements into his ministries and the TIPNIS into a highway; the right brought the Bible and the
+          bullets. We are not his and we are not theirs."
+        you: You think 2019 showed that indigenous and popular movements must stay independent of both Morales and the right.
+        because: >-
+          Rivera Cusicanqui argues that the MAS's official indigenism used indigenous symbols while keeping colonial
+          structures and an economy of extraction. The government's 2011 attack on marchers defending the TIPNIS reserve
+          from a highway split the indigenous movement it rose from. When the right came for the state, those movements had
+          been weakened by the state that claimed them.
+        against:
+          - from: nationalism.bolivarianism
+            text: >-
+              Purity from the state is a luxury. The MAS government cut poverty and put indigenous people in power; standing
+              apart in November 2019 meant standing aside while the right took over.
+          - from: marxism.ml
+            text: >-
+              A poor country under imperial pressure needs its gas and lithium revenues to develop. Opposing extraction
+              in principle leaves the land to foreign companies.
+        sources:
+          - {author: Silvia Rivera Cusicanqui, title: "Ch'ixinakax utxiwa: una reflexión sobre prácticas y discursos descolonizadores", year: 2010}
+        traditions:
+          defining: []
+          typical: [nationalism.decolonial, anarchism.communalism, zapatismo, ecology.environmental-justice, feminism.decolonial]
+          contested: [nationalism.indigenous-sovereignty]
+          rejects: [nationalism.bolivarianism, conservatism.evangelical-right]
+        presupposes: [indigenous.sovereignty.autonomy-without-state]
+        analysis:
+          gains: [peasantry]
+          pays: [industrial-capital, comprador-capital]
+          mechanism: >-
+            Autonomy from the state puts indigenous land and water ahead of export revenues, which threatens mining and gas
+            firms and the state budgets that depend on them.
+          drain: reduces
+          law_of_value: none
+
+      - id: hist.bolivia-2019.term-limits
+        label: Whatever the count, he broke the people's no and brought it on himself
+        claim: >-
+          The people voted in 2016 not to let Morales run again. Every leader who will not leave ends like this. Fraud or no
+          fraud, a president who ignores a referendum has no one to blame for the crisis that follows.
+        voiced: "Nobody is indispensable. We said no and he ran anyway. That's what they all do once they get in."
+        you: You think Morales caused his own fall by ignoring the 2016 vote against another term.
+        because: >-
+          Bolivia's 2009 constitution, written under Morales, limited the president to two consecutive terms; the 2016
+          referendum rejected changing it. Term limits exist because power held too long corrupts any leader, of left or
+          right. The rest, the audit, the mutiny, the shootings, followed from that one decision.
+        against:
+          - from: nationalism.bolivarianism
+            text: >-
+              The referendum was swung by a fake scandal about a son who did not exist; the court ruled on the law. And term
+              limits are not a reason to let an army choose a president.
+          - from: liberalism.social
+            text: >-
+              Blaming the president for his own overthrow excuses those who killed protesters afterward.
+        sources:
+          - {author: Plurinational State of Bolivia, title: "Political Constitution of the State, article 168", year: 2009}
+        traditions:
+          defining: []
+          typical: [commonsense.anti-politics, liberalism.classical, liberalism.republican, conservatism.burkean]
+          contested: [liberalism.social]
+          rejects: [nationalism.bolivarianism]
+        presupposes: [cs.politicians.office-makes-them]
+        analysis:
+          gains: [professional-managerial]
+          pays: [peasantry]
+          mechanism: >-
+            Blaming the leader's ambition turns a conflict over gas, land and indigenous power into a matter of one man's
+            character, which leaves the forces that removed him outside the judgment.
+          drain: none
+          law_of_value: none
+
+  # ------------------------------------------------------------------
+  - id: hist.martial-law-philippines
+    domain: history
+    layer: analysis
+    question: What was Marcos's martial law in the Philippines, from 1972 to 1986?
+    plain: >-
+      In September 1972 President Ferdinand Marcos declared martial law, closed Congress and the press and ruled by decree. Tens
+      of thousands were detained and thousands killed, foreign debt soared and his family and friends grew rich. In 1986 the
+      People Power uprising drove him out. His son was elected president in 2022. What was it?
+    short: martial law in the Philippines
+    importance: 2
+    region: history
+    positions:
+      - id: hist.martial-law-philippines.dictatorship-and-plunder
+        label: A dictatorship of torture and plunder, ended by the people
+        claim: >-
+          Martial law was one man's seizure of power to stay beyond his last term. It jailed, tortured and killed thousands,
+          looted billions, and left a ruined economy; People Power in 1986 restored constitutional government.
+        voiced: "Never again, never forget. Seventy thousand jailed, thirty-four thousand tortured, thousands salvaged, and billions in Swiss banks."
+        you: You see Marcos's martial law as a dictatorship of torture and theft, rightly ended in 1986.
+        because: >-
+          Marcos, barred from a third term in 1973, declared martial law in 1972. Amnesty International and later
+          researchers, summarized by McCoy, counted some 70,000 imprisoned, 34,000 tortured and over 3,000 killed. Mijares,
+          once his press aide, described the conjugal rule of Ferdinand and Imelda from inside. The state later recognized
+          more than 11,000 victims under a 2013 reparations law.
+        against:
+          - from: marxism.mlm
+            text: >-
+              EDSA replaced one faction of landlords and compradors with another, under the same American patron; the
+              "restored democracy" kept the haciendas and the bases.
+          - from: commonsense.declinist
+            text: >-
+              Those were the years when the streets were safe and the country built things. Ask the people who lived then,
+              not the elite who lost power.
+        sources:
+          - {author: Alfred W. McCoy, title: "Policing America's Empire: The United States, the Philippines, and the Rise of the Surveillance State", year: 2009}
+          - {author: Primitivo Mijares, title: "The Conjugal Dictatorship of Ferdinand and Imelda Marcos", year: 1976}
+        traditions:
+          defining: []
+          typical: [liberalism.classical, liberalism.internationalist, conservatism.christian-democracy, liberalism.social, socdem.democratic-socialism]
+          contested: [marxism.mlm]
+          rejects: [commonsense.declinist]
+        presupposes: [authority.legitimacy.consent]
+        excludes: [hist.martial-law-philippines.golden-age]
+        analysis:
+          gains: [professional-managerial, petty-bourgeoisie]
+          pays: []
+          mechanism: >-
+            Framing martial law as personal dictatorship supports the restored constitutional order, whose elections and
+            courts returned power to the landed and business families Marcos had partly displaced.
+          drain: none
+          law_of_value: none
+
+      - id: hist.martial-law-philippines.golden-age
+        label: A golden age of order and building, smeared by its enemies
+        claim: >-
+          Martial law saved the country from communist insurgency and oligarchic chaos. It brought discipline, roads,
+          hospitals and rice self-sufficiency; the stories of abuse were exaggerated by the oligarchs and the left who lost
+          power.
+        voiced: >-
+          "We needed discipline and we got it. The New Society built the Cultural Center, the hospitals, the roads, and
+          the Philippines was respected. Then the oligarchs came back."
+        you: You see the martial law years as a time of order and development that critics exaggerate.
+        because: >-
+          Marcos's Notes on the New Society argued that liberal democracy in the Philippines had been a contest among
+          oligarchs that blocked reform, and that a strong state could break them, impose land reform and build. The New
+          People's Army and the Moro insurgency were real. The Green Revolution raised rice output, and many who lived through
+          the years remember safety and pride. Voters elected his son in 2022.
+        against:
+          - from: liberalism.classical
+            text: >-
+              The debt that paid for the buildings rose to more than twenty billion dollars and crashed the economy in 1983;
+              the "order" included thousands of the disappeared.
+          - from: marxism.mlm
+            text: >-
+              The dictatorship broke one set of oligarchs to hand their assets to its own cronies; land reform covered
+              rice and corn and spared the sugar and coconut estates of its friends.
+        sources:
+          - {author: Ferdinand E. Marcos, title: Notes on the New Society of the Philippines, year: 1973}
+        traditions:
+          defining: []
+          typical: [commonsense.declinist, conservatism.national, conservatism.right-populism]
+          contested: [nationalism.developmental-state]
+          rejects: [liberalism.classical, marxism.mlm, conservatism.christian-democracy]
+        presupposes: [siege.governance.national-security-state]
+        excludes: [hist.martial-law-philippines.dictatorship-and-plunder]
+        analysis:
+          gains: [comprador-capital, finance-capital]
+          pays: [peasantry, peripheral-workers]
+          mechanism: >-
+            The golden-age memory rehabilitates a state that borrowed abroad, suppressed unions and handed monopolies over
+            sugar and coconut to allies, and so legitimizes the same family and allies in power today.
+          drain: sustains
+          law_of_value: extends
+
+      - id: hist.martial-law-philippines.us-client
+        label: A US-backed dictatorship for landlords and compradors; EDSA changed the faces
+        claim: >-
+          Martial law was the dictatorship of the big landlords and comprador capitalists, armed and backed by the United
+          States to keep its bases and investments. People Power removed Marcos but left the same classes and the same
+          patron in charge, so the people's war goes on.
+        voiced: >-
+          "The US-Marcos dictatorship was fascist, and its fall changed only the face. The semi-colonial, semi-feudal system
+          remains, and so does the revolution against it."
+        you: You see martial law as a US-backed dictatorship of landlords and compradors, which 1986 did not end at its root.
+        because: >-
+          Guerrero's Philippine Society and Revolution analyzed the country as semi-colonial and semi-feudal, ruled by
+          landlords and compradors under US imperialism, and called for protracted people's war. Washington backed Marcos
+          for most of his rule because of Clark Air Base and Subic Bay, and flew him to Hawaii only when the army split.
+          After 1986 the bases stayed until 1991 and land reform left most estates intact.
+        against:
+          - from: liberalism.internationalist
+            text: >-
+              Millions, led by the Church and the middle classes, brought down Marcos without arms in four days; the armed
+              struggle had nothing to do with it.
+          - from: marxism.trotskyism
+            text: >-
+              The "semi-feudal" analysis is decades out of date; boycotting the 1986 election left the Party outside the
+              biggest popular movement in its history.
+        sources:
+          - {author: Amado Guerrero (José Maria Sison), title: Philippine Society and Revolution, year: 1970}
+        traditions:
+          defining: [marxism.mlm]
+          typical: [marxism.maoism, marxism.third-worldism, marxism.ml]
+          contested: [marxism.trotskyism]
+          rejects: [liberalism.internationalist, commonsense.declinist, conservatism.christian-democracy]
+        presupposes: [comprador.nature.broker-class]
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: [landed-capital, comprador-capital, finance-capital]
+          mechanism: >-
+            The comprador reading treats the postwar Philippine state as a broker of US and landlord interests, which justifies
+            the agrarian revolution against the estates and the foreign holdings it protects.
+          drain: breaks
+          law_of_value: none
+          consciousness: hegemonic
+
+      - id: hist.martial-law-philippines.crony-capture
+        label: Not a strong state but a captured one; cronies looted where Korea built industry
+        claim: >-
+          Martial law could have been a development dictatorship like South Korea's. It became booty capitalism instead: the
+          state was used to hand banks, monopolies and loans to the president's friends, and the economy collapsed under their
+          debts.
+        voiced: "Marcos had the power Park Chung-hee had. Park built steel and ships; Marcos built a coconut monopoly for his golf partner."
+        you: You see martial law as a state captured by cronies who looted it, where a different dictatorship might have built industry.
+        because: >-
+          Hutchcroft shows that the Philippine state was too weak against the families that plundered it, before and after
+          1972: banks were licensed to friends and used as private treasuries. Under martial law, monopolies over sugar and
+          coconuts went to allies, and state banks lent to crony firms that failed in the 1981–83 crisis. The country fell
+          behind neighbors it had led in the 1960s.
+        against:
+          - from: marxism.mlm
+            text: >-
+              Comparing Marcos to Park forgets that Korea's industrialization had a land reform behind it and Cold War aid
+              in front; the Philippine landlords were never broken because Washington needed them.
+          - from: liberalism.chicago
+            text: >-
+              The lesson is not that the dictatorship picked the wrong winners but that states should not pick winners at
+              all.
+        sources:
+          - {author: Paul D. Hutchcroft, title: "Booty Capitalism: The Politics of Banking in the Philippines", year: 1998}
+        traditions:
+          defining: []
+          typical: [nationalism.developmental-state, liberalism.technocratic, liberalism.social]
+          contested: [liberalism.chicago]
+          rejects: [marxism.mlm, commonsense.declinist]
+        presupposes: [development.path.developmental-state]
+        analysis:
+          gains: [professional-managerial, industrial-capital]
+          pays: [comprador-capital]
+          mechanism: >-
+            The crony-capture reading supports an autonomous technocratic state that disciplines landed and family
+            capital, which serves industrial capital and the professionals who would staff it.
+          drain: none
+          law_of_value: regulates
+
+      - id: hist.martial-law-philippines.moro-war
+        label: For the Bangsamoro, martial law was a war on their homeland
+        claim: >-
+          In Mindanao and Sulu martial law meant war: the army fought the Moro National Liberation Front, villages were
+          burned and tens of thousands died. For the Muslim south, the dictatorship was the latest stage of a conquest by
+          Manila and its settlers.
+        voiced: >-
+          "Jabidah, then martial law, then Malisbong. For the Bangsamoro, Marcos was not a dictator who took our democracy; he
+          was an army that took our land."
+        you: You see martial law above all as a war against the Muslim peoples of the southern Philippines.
+        because: >-
+          The 1968 killing of Muslim recruits at Corregidor, the Jabidah massacre, helped spark the Moro independence
+          movement, and the MNLF's war after 1972 became the bloodiest front of martial law. McKenna traces how Moro identity
+          was formed against Manila's rule and settler land claims. The 1976 Tripoli Agreement promised autonomy that came,
+          in full form, only with the Bangsamoro region in 2019.
+        against:
+          - from: marxism.mlm
+            text: >-
+              The Moro poor and the Christian settler poor were both exploited by the same landlords and logging companies;
+              a religious frame divides them.
+          - from: nationalism.civic
+            text: >-
+              The Philippines is one nation, and the southern war was a secession fought partly with foreign arms. Autonomy
+              within the republic, not separation, was the just answer.
+        sources:
+          - {author: Thomas M. McKenna, title: "Muslim Rulers and Rebels: Everyday Politics and Armed Separatism in the Southern Philippines", year: 1998}
+        traditions:
+          defining: []
+          typical: [nationalism.decolonial, nationalism.indigenous-sovereignty, religious.islamism-brotherhood]
+          contested: [marxism.mlm]
+          rejects: [nationalism.civic, conservatism.national]
+        presupposes: [settler.colonialism.ongoing-structure]
+        analysis:
+          gains: [peasantry]
+          pays: [landed-capital, industrial-capital]
+          mechanism: >-
+            Treating martial law as a war on the Bangsamoro grounds Moro claims to land and self-government against settler
+            titles and the logging, plantation and mining interests the army protected.
+          drain: reduces
+          law_of_value: none
+
+      - id: hist.martial-law-philippines.people-power-grace
+        label: Ended by prayer and the people; a moral victory without bloodshed
+        claim: >-
+          When Marcos stole the 1986 election, the bishops declared his rule without moral basis, and millions answered the
+          Cardinal's call to the streets with rosaries and flowers. Soldiers would not fire on nuns. It was a victory of
+          conscience over force.
+        voiced: >-
+          "A government that assumes or retains power through fraudulent means has no moral basis. We stood before the tanks
+          with our rosaries, and God answered."
+        you: You see the end of martial law as a moral and religious victory won without violence.
+        because: >-
+          The Catholic Bishops' Conference declared on 13 February 1986 that a government that holds power by fraud has no
+          moral basis, and Cardinal Sin called the faithful to EDSA when officers rebelled. For four days crowds shielded the
+          rebels with their bodies, and the dictatorship fell without a battle. Nonviolent action succeeded where years of
+          armed struggle had not.
+        against:
+          - from: marxism.mlm
+            text: >-
+              EDSA succeeded because the army split and Washington dropped Marcos; the prayers covered a transfer of power
+              among elites.
+          - from: liberalism.classical
+            text: >-
+              Credit the voters, the poll watchers and the defecting officers; making it a miracle sanctifies the
+              politicians who inherited it.
+        sources:
+          - {author: Catholic Bishops' Conference of the Philippines, title: Post-Election Statement, year: 1986}
+        traditions:
+          defining: []
+          typical: [conservatism.cst, conservatism.christian-democracy, nationalism.gandhian, religious.liberation-theology]
+          contested: [liberalism.classical]
+          rejects: [marxism.mlm, commonsense.declinist]
+        presupposes: [change.means.nonviolent-resistance]
+        analysis:
+          gains: [professional-managerial, petty-bourgeoisie]
+          pays: []
+          mechanism: >-
+            The religious reading credits the Church and the urban middle classes with the transition, which strengthened
+            their place in the restored order while the agrarian question stayed unresolved.
+          drain: none
+          law_of_value: none

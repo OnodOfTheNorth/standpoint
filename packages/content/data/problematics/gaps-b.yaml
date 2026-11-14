@@ -1,0 +1,1313 @@
+# Gaps, part 2: refusing war work, picket lines, investing by values, gig work status, patronage.
+problematics:
+  # ------------------------------------------------------------------
+  - id: conscience.refusal
+    domain: state
+    layer: priority
+    question: When may a person refuse to fight, or refuse to make weapons?
+    plain: If you are called up, ordered to fire, or offered a job building weapons, when is it right to say no?
+    short: refusing war and war work
+    importance: 2
+    positions:
+      - id: conscience.refusal.duty-to-serve
+        label: Citizens owe service when the country calls
+        claim: >-
+          A citizen who enjoys the protection of the state owes it service in war. Exemptions should be few and narrow;
+          a refusal to serve shifts the danger onto someone else's son.
+        voiced: "Every man who refuses the call sends another in his place. You don't get to pick your wars; you get to defend your country."
+        you: You think citizens owe military service when their country calls, with few exceptions.
+        because: >-
+          Machiavelli argued that a republic defended by its own citizens is stronger and freer than one defended by
+          mercenaries, and the citizen-soldier is the oldest guarantee that the people control the army. Socrates, in the
+          Crito, refuses to escape the laws that raised him even when they wrong him. If each person decides which wars
+          are just, there is no defense at all.
+        against:
+          - from: anarchism.christian
+            text: >-
+              No state can command a person to kill. Thou shalt not kill admits no exception for the government's
+              enemies.
+          - from: marxism.leninism
+            text: >-
+              "Defend the country" in an imperialist war means die for your own ruling class against workers in another
+              uniform.
+        sources:
+          - {author: Niccolò Machiavelli, title: The Art of War, year: 1521}
+          - {author: Plato, title: Crito, year: "c. -399"}
+        traditions:
+          defining: [nationalism.civic]
+          typical: [conservatism.national, conservatism.gaullism, liberalism.republican, nationalism.kemalism, commonsense.look-after-your-own]
+          contested: [conservatism.burkean, nationalism.zionism-labor]
+          rejects: [anarchism.christian, nationalism.gandhian, libertarianism.ancap, marxism.leninism]
+        excludes: [conscience.refusal.absolute-pacifism]
+        analysis:
+          gains: [industrial-capital, finance-capital]
+          pays: [core-workers, peripheral-workers, peasantry]
+          mechanism: >-
+            A general duty to serve supplies the state with soldiers at a conscript's wage, drawn mostly from workers and
+            peasants, for wars whose aims are set by those who command and finance them.
+          drain: sustains
+          law_of_value: none
+
+      - id: conscience.refusal.exemption-with-service
+        label: Respect sincere conscience with an exemption and civilian service
+        claim: >-
+          A person who sincerely cannot kill should be exempted from combat and given civilian service instead. A liberal
+          state does not force a person to act against conscience, but nobody escapes contributing.
+        voiced: "Conscience deserves respect, not prison. Let the objector serve in a hospital; the state loses a bad soldier and gains a good orderly."
+        you: You think sincere objectors should be exempted from fighting and do civilian service instead.
+        because: >-
+          Rawls treats conscientious refusal as a test a just constitution must pass: a society that respects persons as
+          free and equal cannot compel them to violate their deepest convictions. Most European states with conscription
+          granted alternative service after 1945. Exemption with service keeps the burden fair and the conscience free.
+        against:
+          - from: anarchism.christian
+            text: >-
+              Alternative service is still service to the war machine; the absolutist who refuses it altogether is the one
+              who takes conscience seriously.
+          - from: conservatism.national
+            text: >-
+              Every exemption becomes a loophole for the educated and well connected, who discover their consciences
+              when the draft arrives.
+        sources:
+          - {author: John Rawls, title: A Theory of Justice, year: 1971}
+        traditions:
+          defining: [liberalism.egalitarian]
+          typical: [liberalism.social, conservatism.christian-democracy, socdem.nordic, liberalism.progressive]
+          contested: [nationalism.civic]
+          rejects: [fascism.italian]
+        analysis:
+          gains: [professional-managerial]
+          pays: []
+          mechanism: >-
+            Exemptions protect individual objectors, most often from organized religious minorities and the educated, while
+            leaving the war, its aims and its burden on everyone else unchanged.
+          drain: none
+          law_of_value: none
+
+      - id: conscience.refusal.absolute-pacifism
+        label: Never kill, never serve, never build the weapons
+        claim: >-
+          Killing is wrong without exception. A person must refuse to fight, refuse alternative service that frees another
+          to fight, and refuse to make the instruments of war, whatever it costs them.
+        voiced: "The Kingdom of God is within you. No government can command me to kill my brother, and I will not make the gun that does it."
+        you: You think you must refuse any part in war, including making its weapons, whatever the cost.
+        because: >-
+          Tolstoy held that the Sermon on the Mount forbids violence absolutely and that the state, built on violence,
+          cannot command a Christian conscience. Gandhi argued that nonviolence is the stronger force because it refuses to
+          share the oppressor's means. Wars need willing hands; if enough people refuse, they cannot be fought.
+        against:
+          - from: marxism.leninism
+            text: >-
+              Pacifism disarms the oppressed and leaves the armed in power. The colonized did not win their freedom by
+              refusing to fight.
+          - from: conservatism.cst
+            text: >-
+              Christian teaching permits a just defense of the innocent; refusing to protect the neighbor from an aggressor
+              is not love.
+        sources:
+          - {author: Leo Tolstoy, title: The Kingdom of God Is Within You, year: 1894}
+          - {author: M. K. Gandhi, title: Hind Swaraj, year: 1909}
+        traditions:
+          defining: [anarchism.christian]
+          typical: [nationalism.gandhian, religious.engaged-buddhism]
+          contested: [anarchism.communist]
+          rejects: [marxism.leninism, conservatism.national, fascism.italian, nationalism.civic]
+        presupposes: [war.militarism.pacifist]
+        excludes: [conscience.refusal.duty-to-serve, conscience.refusal.defense-is-honest-work]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [industrial-capital]
+          mechanism: >-
+            Mass refusal withdraws the labor that armies and arms plants need; held by a few, it removes those few at their
+            own cost, and leaves the arms trade intact.
+          drain: reduces
+          law_of_value: none
+
+      - id: conscience.refusal.unlawful-orders
+        label: Soldiers must obey, except orders that are plainly unlawful
+        claim: >-
+          A soldier owes obedience to lawful orders and must refuse orders to commit crimes: to shoot the unarmed, torture
+          prisoners or attack civilians. "I was following orders" is no defense.
+        voiced: "The fact that a person acted pursuant to order of his Government or of a superior does not relieve him from responsibility under international law, provided a moral choice was in fact possible to him."
+        you: You think soldiers must obey lawful orders but are bound to refuse plainly criminal ones.
+        because: >-
+          The Nuremberg tribunal established, and the International Law Commission restated in 1950, that superior orders
+          do not excuse crimes under international law. Armies that train soldiers to refuse unlawful orders commit fewer
+          atrocities. The line between lawful and unlawful lets an army keep discipline and keep its honor.
+        against:
+          - from: anarchism.christian
+            text: >-
+              An army that drops bombs on cities by lawful order has drawn the line in the wrong place. The law of war
+              legalizes most of the killing.
+          - from: marxism.ml
+            text: >-
+              Who decides what is lawful? The courts of the victors. No soldier of a great power has been tried at
+              The Hague.
+        sources:
+          - {author: International Law Commission, title: "Principles of International Law Recognized in the Charter of the Nürnberg Tribunal and in the Judgment of the Tribunal", year: 1950}
+        traditions:
+          defining: [liberalism.internationalist]
+          typical: [liberalism.social, liberalism.classical, conservatism.christian-democracy, liberalism.republican]
+          contested: [conservatism.neo]
+          rejects: [fascism.nazism]
+        presupposes: [rights.basis.universal-consensus]
+        analysis:
+          gains: [professional-managerial]
+          pays: []
+          mechanism: >-
+            Drawing the line at unlawful orders constrains the worst conduct of armies while leaving the wars themselves,
+            and those who profit from them, inside the law.
+          drain: softens
+          law_of_value: none
+
+      - id: conscience.refusal.selective-objection
+        label: Refuse unjust wars, fight just ones
+        claim: >-
+          Conscience applies to particular wars. A citizen may, and sometimes must, refuse to fight in a war that is
+          unjust, while remaining willing to fight in a just one, and the law should recognize that.
+        voiced: "I am not a pacifist. I would have fought in 1940. I will not fight in this war."
+        you: You think a person may refuse to fight in an unjust war while being willing to fight in a just one.
+        because: >-
+          Just war teaching, from Augustine to Walzer, holds that some wars are just and others are not, and Walzer argues
+          the citizen has a real obligation to judge. Israeli reservists who refused to serve in Lebanon or the occupied
+          territories, and Americans who refused Vietnam while honoring the Second World War, applied exactly this test.
+          A conscience that judges every war the same is not judging.
+        against:
+          - from: nationalism.civic
+            text: >-
+              If each soldier decides which war is just, the army dissolves the moment a war becomes unpopular, which is
+              when it is most needed.
+          - from: anarchism.christian
+            text: >-
+              Every state declares its war just. Selective objection hands the decision back to the same just-war
+              arithmetic that blesses each new war.
+        sources:
+          - {author: Michael Walzer, title: "Obligations: Essays on Disobedience, War, and Citizenship", year: 1970}
+          - {author: Michael Walzer, title: Just and Unjust Wars, year: 1977}
+        traditions:
+          defining: []
+          typical: [conservatism.cst, liberalism.republican, socdem.democratic-socialism, religious.liberation-theology, liberalism.progressive]
+          contested: [liberalism.egalitarian]
+          rejects: [nationalism.civic, conservatism.national]
+        presupposes: [war.militarism.fallen-nature-just-war]
+        analysis:
+          gains: [peripheral-workers]
+          pays: [industrial-capital]
+          mechanism: >-
+            Refusing particular wars denies soldiers to the wars of conquest and occupation that the core fights in the
+            periphery, while leaving defense of the homeland intact.
+          drain: reduces
+          law_of_value: none
+
+      - id: conscience.refusal.revolutionary-defeatism
+        label: Don't desert alone; turn the guns on the war's makers
+        claim: >-
+          Individual refusal is a gesture. In a war between imperialist powers, workers in uniform should fraternize
+          across the trenches, organize inside the army and turn the war into a struggle against their own governments.
+        voiced: "The main enemy is at home. Not the conscientious objector's cell, but the soldiers' committee."
+        you: You think individual refusal is not enough and soldiers should organize to turn an imperialist war against those who started it.
+        because: >-
+          Lenin and Zinoviev argued in 1915 that socialists should work for the defeat of their own government in an
+          imperialist war and turn it into civil war. The Russian army of 1917 and the German sailors of 1918 ended the
+          war not by refusing one by one but by refusing together. A lone objector goes to prison; a regiment that refuses
+          ends the war.
+        against:
+          - from: anarchism.christian
+            text: >-
+              Turning an imperialist war into a civil war is still war, and its victims are still the poor. The cycle of
+              violence is not broken by new commanders.
+          - from: socdem.revisionist
+            text: >-
+              Workers have a country, and its defeat falls on them first; the defeatist slogan isolated the left from the
+              people it claimed to lead.
+        sources:
+          - {author: V. I. Lenin and G. Zinoviev, title: Socialism and War, year: 1915}
+        traditions:
+          defining: [marxism.leninism]
+          typical: [marxism.trotskyism, marxism.ml, marxism.left-communism, marxism.luxemburgism]
+          contested: [marxism.maoism]
+          rejects: [socdem.revisionist, anarchism.christian, nationalism.civic]
+        presupposes: [war.militarism.imperialist-rivalry]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [industrial-capital, finance-capital]
+          mechanism: >-
+            Organized refusal inside the army deprives a government of the force it needs both for foreign war and for
+            order at home, opening the question of state power.
+          drain: breaks
+          law_of_value: none
+          consciousness: hegemonic
+
+      - id: conscience.refusal.convert-production
+        label: Arms workers should refuse arms work and demand useful production
+        claim: >-
+          Workers who make weapons should use their skills and their union to convert the plant to socially useful products,
+          refusing the arms contracts but not the jobs, so that the factory survives the war economy.
+        voiced: "We can build kidney machines and heat pumps with the same hands and the same tools. We want the right to work on useful products."
+        you: You think workers in arms plants should push to turn production to useful things rather than just quit.
+        because: >-
+          In 1976 shop stewards at Lucas Aerospace drew up an alternative plan of some 150 products, from heat pumps to
+          dialysis machines, that their plants could make instead of military hardware. Arms work is capital-intensive and
+          creates fewer jobs per pound than civilian work. Conversion joins the worker's interest in a job to the
+          interest in peace.
+        against:
+          - from: liberalism.chicago
+            text: >-
+              If those products were profitable, firms would already make them. Workers designing products the market
+              does not want is a recipe for closure.
+          - from: marxism.leninism
+            text: >-
+              A conversion plan in one plant cannot stop a war economy; it needs power over the state that places the
+              orders.
+        sources:
+          - {author: Hilary Wainwright and Dave Elliott, title: "The Lucas Plan: A New Trade Unionism in the Making?", year: 1982}
+          - {author: Seymour Melman, title: "The Permanent War Economy: American Capitalism in Decline", year: 1974}
+        traditions:
+          defining: [socdem.democratic-socialism]
+          typical: [anarchism.syndicalist, ecology.degrowth, marxism.ecosocialism, religious.christian-socialism]
+          contested: [socdem.labourism]
+          rejects: [liberalism.chicago, conservatism.neo]
+        presupposes: [war.militarism.arms-profits]
+        analysis:
+          gains: [core-workers]
+          pays: [industrial-capital]
+          mechanism: >-
+            Conversion plans put workers' knowledge to work on use values and challenge management's right to decide what
+            the plant makes, cutting arms firms' guaranteed state revenue.
+          drain: reduces
+          law_of_value: suspends
+          consciousness: class-economic
+
+      - id: conscience.refusal.defense-is-honest-work
+        label: Making the country's defenses is honest, necessary work
+        claim: >-
+          A country needs an arms industry, and building tanks, ships and shells is honest skilled work. Someone has to do
+          it, and refusing the job only hands it to someone else, or to a foreign supplier.
+        voiced: "Good wages, a skilled trade, and you're keeping the country safe. If we don't build them, someone abroad will, and we'll be at their mercy."
+        you: You think working in the arms industry is honest work a country needs.
+        because: >-
+          Hamilton's Report on Manufactures argued that a nation must be able to supply its own means of defense, and every
+          country that has been blockaded learned it. Arms plants pay skilled wages in towns with few other employers.
+          Weapons deter as well as kill; the worker who builds them is no more responsible for a war than the farmer who
+          feeds the soldiers.
+        against:
+          - from: anarchism.christian
+            text: >-
+              The farmer feeds the soldier and the child alike; the shell has only one use. The hand that makes it shares in
+              what it does.
+          - from: socdem.democratic-socialism
+            text: >-
+              Those skilled wages come from public contracts that would employ more people building something else; the
+              job is a political choice, not a law of nature.
+        sources:
+          - {author: Alexander Hamilton, title: Report on Manufactures, year: 1791}
+        traditions:
+          defining: []
+          typical: [nationalism.developmental-state, conservatism.national, commonsense.self-reliance, commonsense.look-after-your-own, conservatism.neo]
+          contested: [socdem.labourism]
+          rejects: [anarchism.christian, nationalism.gandhian]
+        presupposes: [war.militarism.peace-through-strength]
+        excludes: [conscience.refusal.absolute-pacifism]
+        analysis:
+          gains: [industrial-capital, core-workers]
+          pays: [peripheral-workers]
+          mechanism: >-
+            Arms work secures wages for core workers out of state contracts and export sales, binding their livelihoods to
+            the arms firms and to the wars, often in the periphery, that their products are sold for.
+          drain: sustains
+          law_of_value: none
+          consciousness: economic-corporate
+
+  # ------------------------------------------------------------------
+  - id: picket.line
+    domain: strategy
+    layer: priority
+    question: Should you cross a picket line?
+    plain: Workers are on strike and standing at the gate. You need the shift, or the shop, or the service. Do you go in?
+    short: the picket line
+    importance: 2
+    positions:
+      - id: picket.line.never-cross
+        label: Never cross a picket line
+        claim: >-
+          A picket line is not crossed, ever, whatever it costs you. Crossing it breaks the only power workers have, and
+          a person who does it has taken the employer's side.
+        voiced: "Which side are you on? You don't cross a picket line. Not for a shift, not for a parcel, not for your mother."
+        you: You would never cross a picket line.
+        because: >-
+          A strike works only if production stops. Every person who crosses lets the employer hold out longer and so makes
+          the strike longer and costlier for everyone in it. Brecher's history of mass strikes shows that solidarity at the
+          gate decided almost every one. The cost of honoring the line is small beside what a broken strike costs a
+          generation of workers.
+        against:
+          - from: liberalism.classical
+            text: >-
+              Nobody may forbid another person to work. A picket that blocks the gate replaces persuasion with force.
+          - from: commonsense.look-after-your-own
+            text: >-
+              It's easy to never cross when the strike isn't costing you rent money. Principles are cheap for those who
+              can afford them.
+        sources:
+          - {author: Jeremy Brecher, title: Strike!, year: 1972}
+        traditions:
+          defining: [anarchism.syndicalist]
+          typical: [socdem.labourism, marxism.ml, marxism.trotskyism, socdem.democratic-socialism, marxism.autonomism]
+          contested: [commonsense.look-after-your-own]
+          rejects: [liberalism.classical, libertarianism.ancap, conservatism.fusionism]
+        presupposes: [solidarity.basis.shared-class]
+        excludes: [picket.line.right-to-work]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [industrial-capital, petty-bourgeoisie]
+          mechanism: >-
+            Holding the line keeps the stoppage complete, so the employer's losses mount until conceding costs less than
+            holding out.
+          drain: none
+          law_of_value: regulates
+          consciousness: class-economic
+
+      - id: picket.line.need-first
+        label: Need comes first; a picket line can't feed my children
+        claim: >-
+          Strikers have their reasons, but a person with rent due and children to feed may take the work. Unions that
+          never let some workers in cannot ask those workers to starve for them.
+        voiced: "The union never let my people in, never fought for us. Now they want me to stay home hungry so they can get a raise? I'll take the job."
+        you: You think a person in real need may cross a picket line, especially if the union never stood by them.
+        because: >-
+          Booker T. Washington wrote in 1913 that Black workers, shut out by craft unions, had every reason to take the
+          jobs unions refused them. Spero and Harris documented how exclusion turned excluded workers into strikebreakers
+          again and again. A principle that asks the poorest to pay for the gains of the better paid is not solidarity.
+        against:
+          - from: marxism.ml
+            text: >-
+              The employer who hires the excluded worker to break the strike will fire him when it ends. Exclusion is a
+              reason to fight for a union that admits everyone, not to help the boss beat it.
+          - from: anarchism.syndicalist
+            text: >-
+              The IWW organized everyone the craft unions refused, Black and immigrant workers first. The answer to a
+              bad union is one big union.
+        sources:
+          - {author: Booker T. Washington, title: "The Negro and the Labor Unions", year: 1913}
+          - {author: Sterling D. Spero and Abram L. Harris, title: "The Black Worker: The Negro and the Labor Movement", year: 1931}
+        traditions:
+          defining: [commonsense.look-after-your-own]
+          typical: [commonsense.self-reliance, nationalism.black-nationalism]
+          contested: [marxism.black-radical]
+          rejects: [anarchism.syndicalist, marxism.ml, socdem.labourism]
+        presupposes: [cs.own-first.family-first]
+        tension: [picket.line.never-cross]
+        analysis:
+          gains: [industrial-capital]
+          pays: [core-workers, reserve-army]
+          mechanism: >-
+            Workers driven by need into strikebreaking let employers defeat the strike; the excluded gain a job for the
+            duration and are usually dropped after, while the wage floor for all falls.
+          drain: none
+          law_of_value: extends
+          consciousness: economic-corporate
+          disputed: Black radical writers (Du Bois) held both that union racism made strikebreaking understandable and that it served employers; the debate is over where the blame falls, not the mechanism.
+
+      - id: picket.line.right-to-work
+        label: Everyone has the right to work; a picket may persuade, not block
+        claim: >-
+          Workers may strike, and others may decline to join them. No one should be blocked, threatened or shamed for going
+          to work, and employers may hire replacements.
+        voiced: "Your right to strike ends at my right to work. Persuade me if you can; don't stand in my way."
+        you: You think anyone may cross a picket line, and blocking them is wrong.
+        because: >-
+          Hayek argued that unions owe their power to coercion of other workers, permitted by law as no other private body
+          is permitted, and that this coercion, not bargaining, raises some wages at the expense of others. Freedom of
+          association includes freedom not to associate. A strike that needs to physically stop people has failed to
+          convince them.
+        against:
+          - from: socdem.labourism
+            text: >-
+              The "right to work" in a strike is the employer's right to break it. A single worker has no bargaining power;
+              the combination is what makes the contract fair.
+          - from: conservatism.cst
+            text: >-
+              Leo XIII defended workers' associations as a natural right; treating every picket as coercion forgets why
+              the weak combine.
+        sources:
+          - {author: F. A. Hayek, title: The Constitution of Liberty, year: 1960}
+          - {author: W. H. Hutt, title: The Theory of Collective Bargaining, year: 1930}
+        traditions:
+          defining: [liberalism.austrian]
+          typical: [liberalism.chicago, libertarianism.minarchist, libertarianism.ancap, conservatism.fusionism, liberalism.classical]
+          rejects: [anarchism.syndicalist, socdem.labourism, marxism.ml, conservatism.cst]
+        presupposes: [unions.role.obstacle]
+        excludes: [picket.line.never-cross]
+        analysis:
+          gains: [industrial-capital, finance-capital, petty-bourgeoisie]
+          pays: [core-workers, peripheral-workers]
+          mechanism: >-
+            Protecting replacement workers and individual crossers lets employers keep running through a strike, so the
+            strike's cost falls on the strikers and wage bargaining power drops.
+          drain: none
+          law_of_value: extends
+
+      - id: picket.line.union-coercion
+        label: Unions hold the public to ransom; the state must keep order at the gate
+        claim: >-
+          Mass pickets, secondary action and closed shops let union leaders coerce members and hold the public hostage. The
+          law should require ballots, ban secondary pickets and protect those who work, with the police enforcing it.
+        voiced: "The union barons don't run this country. Ballot your members, stay at your own gate, and let people get to work."
+        you: You think unions too easily coerce workers and the public, and the state should limit pickets and protect those who work.
+        because: >-
+          In Britain's winter of 1978–79, strikes left rubbish uncollected and the dead unburied; Thatcher's laws on ballots
+          and secondary picketing, and the defeat of the 1984–85 miners' strike, ended union power to shut the country
+          down. Most union members, given a secret ballot, vote more cautiously than their leaders. Order at the gate
+          protects the striker and the worker alike.
+        against:
+          - from: socdem.labourism
+            text: >-
+              The police at Orgreave were not protecting anyone's right to work; they were the state taking the
+              employer's side in a class dispute.
+          - from: conservatism.one-nation
+            text: >-
+              Breaking the unions broke the communities around the pits. A nation is not made whole by defeating a third
+              of it.
+        sources:
+          - {author: Margaret Thatcher, title: The Downing Street Years, year: 1993}
+        traditions:
+          defining: [conservatism.fusionism]
+          typical: [conservatism.right-populism, liberalism.chicago, conservatism.national]
+          contested: [conservatism.one-nation, conservatism.christian-democracy]
+          rejects: [socdem.labourism, marxism.ml, anarchism.syndicalist]
+        presupposes: [unions.role.obstacle]
+        excludes: [picket.line.never-cross]
+        analysis:
+          gains: [industrial-capital, finance-capital]
+          pays: [core-workers]
+          mechanism: >-
+            Legal limits on pickets and police protection of strikebreakers move the balance of a strike toward the
+            employer, which lowers wages and raises the share of income going to profit.
+          drain: none
+          law_of_value: extends
+
+      - id: picket.line.lawful-strikes-only
+        label: Honor a lawful strike; the law sets fair rules for both sides
+        claim: >-
+          A lawful strike deserves respect and should not be broken, but strikes need rules: notice, ballots, essential
+          services kept running, and disputes settled by negotiation and arbitration rather than by force at the gate.
+        voiced: "Workers have the right to organize and to strike, and employers to run their business. The law exists to keep the peace between them."
+        you: You think lawful strikes should be respected and disputes settled under fair rules for both sides.
+        because: >-
+          Rerum Novarum defended workers' associations while urging justice on employers and peace on workers; Christian
+          democratic and Nordic labor law built on that balance, with strong unions, binding agreements and peace clauses.
+          Where both sides accept the rules, strikes are rarer and wages higher than where every dispute is a war.
+        against:
+          - from: anarchism.syndicalist
+            text: >-
+              Every rule of a lawful strike was written to make strikes weaker; a strike that waits for permission has
+              already lost.
+          - from: liberalism.austrian
+            text: >-
+              Legal privileges for unions entrench the insiders and price outsiders out of work; the "balance" is a cartel
+              blessed by the state.
+        sources:
+          - {author: Leo XIII, title: Rerum Novarum, year: 1891}
+        traditions:
+          defining: [conservatism.christian-democracy]
+          typical: [conservatism.cst, socdem.nordic, liberalism.social, socdem.revisionist]
+          contested: [socdem.labourism]
+          rejects: [anarchism.syndicalist, liberalism.austrian]
+        presupposes: [unions.role.social-partner]
+        analysis:
+          gains: [core-workers, industrial-capital]
+          pays: [reserve-army]
+          mechanism: >-
+            Regulated strikes give organized workers a guaranteed share of productivity gains in exchange for labor peace,
+            stabilizing profits; workers outside the system have no lawful strike to call.
+          drain: none
+          law_of_value: regulates
+          consciousness: economic-corporate
+
+      - id: picket.line.win-the-scab
+        label: The strikebreaker is a worker to win over, not an enemy
+        claim: >-
+          People cross because they are desperate. The answer is to organize the unemployed and the excluded into the strike,
+          feed them from the strike fund and win them over, so the employer has no one to hire.
+        voiced: "Don't spit at the scab; sign him up. An unemployed man fed by the strike kitchen won't take the boss's job."
+        you: You think strikers should win over potential strikebreakers rather than just condemn them.
+        because: >-
+          In the Minneapolis Teamster strikes of 1934, organizers built an unemployed workers' auxiliary that marched with
+          the strikers instead of replacing them, and the strike won. The employer's last weapon is the reserve of people
+          with no work; a movement that organizes them takes it away.
+        against:
+          - from: commonsense.look-after-your-own
+            text: >-
+              The strike fund barely feeds the strikers; nobody has bread to spare for the people taking their jobs.
+          - from: liberalism.classical
+            text: >-
+              Organizing everyone into the strike is just a more thorough way of stopping people working on their own terms.
+        sources:
+          - {author: Farrell Dobbs, title: Teamster Rebellion, year: 1972}
+        traditions:
+          defining: [marxism.trotskyism]
+          typical: [marxism.ml, anarchism.syndicalist, marxism.black-radical, marxism.autonomism]
+          rejects: [liberalism.classical, liberalism.austrian]
+        presupposes: [change.agent.workers-as-class]
+        analysis:
+          gains: [core-workers, reserve-army]
+          pays: [industrial-capital]
+          mechanism: >-
+            Bringing the unemployed into the strike closes the employer's access to replacement labor and binds the
+            reserve army to the employed instead of setting them against each other.
+          drain: none
+          law_of_value: regulates
+          consciousness: class-economic
+
+  # ------------------------------------------------------------------
+  - id: investment.ethics
+    domain: economy
+    layer: priority
+    question: Should savings and pensions be invested according to values?
+    plain: Your pension fund owns shares in an arms maker, an oil major and a payday lender. Should it care?
+    short: ethical investment
+    importance: 1
+    positions:
+      - id: investment.ethics.returns-only
+        label: Investors should seek returns; values are for your own spending
+        claim: >-
+          A fund manager's duty is to earn the best return for the people whose money it is. Using their savings to pursue
+          social or political goals is spending other people's money on causes they did not choose.
+        voiced: "The social responsibility of business is to increase its profits. If you want to save the world, use your own money."
+        you: You think investment funds should aim only at returns, not at social or political goals.
+        because: >-
+          Friedman argued that a manager who spends shareholders' money on social causes is taxing them without their
+          consent. Pension savers need their money to grow; screens shrink the choice of investments and cost returns.
+          Ramaswamy argues that "stakeholder" investing lets a handful of asset managers impose their own politics on
+          companies through other people's savings.
+        against:
+          - from: liberalism.technocratic
+            text: >-
+              Climate, labor and governance risks are financial risks; a fiduciary who ignores them is not doing the job.
+          - from: conservatism.cst
+            text: >-
+              Every investment is a moral act. Money is not neutral; an owner answers for what his property does.
+        sources:
+          - {author: Milton Friedman, title: "The Social Responsibility of Business Is to Increase Its Profits", year: 1970}
+          - {author: Vivek Ramaswamy, title: "Woke, Inc.: Inside Corporate America's Social Justice Scam", year: 2021}
+        traditions:
+          defining: [liberalism.chicago]
+          typical: [libertarianism.minarchist, liberalism.austrian, libertarianism.objectivist, conservatism.national, conservatism.fusionism]
+          contested: [liberalism.classical]
+          rejects: [conservatism.cst, ecology.environmental-justice, socdem.nordic]
+        presupposes: [profit.legitimacy.earned-reward]
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [peripheral-workers, core-workers]
+          mechanism: >-
+            Investing for return alone sends savings, including workers' pensions, to whatever earns most, often low-wage
+            production and extraction in the periphery, and puts workers' retirements behind the profits made from them.
+          drain: sustains
+          law_of_value: extends
+
+      - id: investment.ethics.esg-integration
+        label: Weigh environmental and social risks; good practice pays long term
+        claim: >-
+          Environmental, social and governance factors affect long-term value. Investors should measure them, favor firms
+          that manage them well and report on them, because sustainable companies are better investments.
+        voiced: "Climate risk is investment risk. Long-term value means looking at more than next quarter's numbers."
+        you: You think investors should take environmental and social risks into account because it pays off in the long run.
+        because: >-
+          The UN-backed Principles for Responsible Investment, launched in 2006, now count signatories managing most of the
+          world's invested capital. Firms with poor safety, labor or environmental records face lawsuits, strikes,
+          regulation and stranded assets. Integrating these risks is simply better analysis.
+        against:
+          - from: liberalism.chicago
+            text: >-
+              If the risks were material, the market would already price them. ESG ratings are inconsistent, and funds
+              charge higher fees for the label.
+          - from: marxism.ecosocialism
+            text: >-
+              ESG funds hold the same oil majors as everyone else under a greener name; capital does not regulate itself
+              out of its most profitable lines.
+        sources:
+          - {author: United Nations Global Compact, title: "Who Cares Wins: Connecting Financial Markets to a Changing World", year: 2004}
+          - {author: UNEP Finance Initiative and UN Global Compact, title: Principles for Responsible Investment, year: 2006}
+        traditions:
+          defining: [ecology.green-growth]
+          typical: [liberalism.technocratic, socdem.third-way, liberalism.internationalist, liberalism.progressive]
+          contested: [liberalism.chicago]
+          rejects: [conservatism.national, marxism.ecosocialism, ecology.degrowth]
+        analysis:
+          gains: [finance-capital, professional-managerial]
+          pays: []
+          mechanism: >-
+            ESG integration channels capital toward firms with better ratings while leaving the ranking and the returns in
+            the hands of asset managers, who earn fees for the label; production and ownership are unchanged.
+          drain: none
+          law_of_value: regulates
+
+      - id: investment.ethics.divest
+        label: "Pull the money out of harm: divest"
+        claim: >-
+          Institutions should sell their holdings in industries that do grave harm, from apartheid South Africa to fossil
+          fuels to arms and occupation. Divestment withdraws legitimacy as well as money.
+        voiced: "If it's wrong to wreck the climate, it's wrong to profit from that wreckage. Divest."
+        you: You think funds and institutions should sell their stakes in industries that do serious harm.
+        because: >-
+          The campaign against apartheid pushed hundreds of universities, churches and cities to divest, isolating the
+          South African state. McKibben's math showed that fossil reserves on the books exceed what can be burned; the
+          divestment movement that followed treated those companies as tobacco firms had been. The Palestinian call for
+          boycott, divestment and sanctions asks the same of investors in occupation.
+        against:
+          - from: liberalism.chicago
+            text: >-
+              When you sell a share, someone else buys it, often cheaper. Divestment changes who owns a company, not what
+              it does.
+          - from: socdem.nordic
+            text: >-
+              An owner who sells loses his vote. Engagement from inside changes companies; exit only clears the
+              conscience.
+        sources:
+          - {author: Bill McKibben, title: "Global Warming's Terrifying New Math", year: 2012}
+          - {author: Palestinian civil society, title: "Palestinian Civil Society Call for Boycott, Divestment and Sanctions", year: 2005}
+        traditions:
+          defining: [ecology.environmental-justice]
+          typical: [nationalism.palestinian, liberalism.progressive, religious.liberation-theology, marxism.black-radical, ecology.degrowth]
+          contested: [socdem.democratic-socialism]
+          rejects: [liberalism.chicago, conservatism.national, nationalism.zionism-revisionist]
+        presupposes: [consumption.choice.organized-boycott]
+        excludes: [investment.ethics.returns-only]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [industrial-capital]
+          mechanism: >-
+            Divestment raises the political cost of an industry or state more than its cost of capital, and works when it
+            is part of a wider campaign that changes laws, contracts and sanctions.
+          drain: reduces
+          law_of_value: none
+
+      - id: investment.ethics.faith-screens
+        label: Invest only in what God permits
+        claim: >-
+          Money is held in trust. A believer's savings must avoid what faith forbids, such as interest, gambling, alcohol,
+          pornography or weapons, and should go to honest trade that benefits the community.
+        voiced: "Gain all you can, but not at the expense of your neighbor's body or soul. Wealth earned from sin is not blessed."
+        you: You think savings should be invested only in businesses your faith permits.
+        because: >-
+          Wesley's sermon on the use of money told Methodists to gain all they could without hurting their neighbor, and
+          Quakers and Methodists pioneered screened funds. Islamic finance excludes interest, gambling and forbidden goods
+          and requires profit and loss to be shared. Stewardship means the owner answers to God for what the money does.
+        against:
+          - from: liberalism.chicago
+            text: >-
+              Screens cost returns that pensioners need, and a religious board's list of sins is no business of a public
+              fund.
+          - from: marxism.classical
+            text: >-
+              A screened portfolio still lives on profit taken from labor; avoiding the liquor store leaves the sweatshop
+              untouched.
+        sources:
+          - {author: John Wesley, title: "The Use of Money (Sermon 50)", year: 1760}
+        traditions:
+          defining: []
+          typical: [conservatism.evangelical-right, religious.islamism-brotherhood, conservatism.cst, religious.post-islamism, religious.christian-socialism]
+          contested: [conservatism.integralism]
+          rejects: [liberalism.chicago, marxism.classical]
+        presupposes: [inequality.justice.stewardship]
+        analysis:
+          gains: [petty-bourgeoisie, finance-capital]
+          pays: []
+          mechanism: >-
+            Faith screens move savings away from a few forbidden sectors to the rest of the market, which builds separate
+            religious financial institutions without changing what most firms do to their workers.
+          drain: none
+          law_of_value: none
+          disputed: Islamic economists differ on whether Islamic finance is a real alternative to interest-based capital (early theorists like Baqir al-Sadr) or conventional finance relabeled (Timur Kuran).
+
+      - id: investment.ethics.shareholder-activism
+        label: Stay in and use your votes to change the company
+        claim: >-
+          Ethical investors should keep their shares and use them: file resolutions, vote against bad boards, and press
+          companies from inside on labor, climate and human rights.
+        voiced: "Owners have power. Sell and you're silent; stay and you get a vote, a voice at the meeting and a seat at the table."
+        you: You think ethical investors should use their ownership to push companies to change from within.
+        because: >-
+          Leon Sullivan, a Baptist minister on General Motors' board, wrote the Sullivan Principles in 1977 to make
+          American firms in South Africa desegregate their workplaces; religious shareholders filed resolutions for
+          decades. Activists have forced climate disclosures and replaced directors at oil majors. Exit leaves the company
+          to the investors who don't care.
+        against:
+          - from: ecology.environmental-justice
+            text: >-
+              Decades of engagement with oil companies have produced reports, not cuts. Engagement is how institutions
+              keep both the profits and the moral cover.
+          - from: marxism.ml
+            text: >-
+              Minority shareholders do not run companies; the activist is allowed to speak because nothing he says can
+              outvote the controlling owners.
+        sources:
+          - {author: Leon H. Sullivan, title: The Sullivan Principles, year: 1977}
+        traditions:
+          defining: []
+          typical: [liberalism.progressive, liberalism.social, conservatism.christian-democracy, religious.christian-socialism, socdem.third-way]
+          contested: [ecology.environmental-justice]
+          rejects: [liberalism.chicago, marxism.ml]
+        analysis:
+          gains: [finance-capital, professional-managerial]
+          pays: []
+          mechanism: >-
+            Engagement keeps the investor's returns while trading some influence over corporate conduct, so pressure stops
+            where it would cut the profits the investor holds the shares for.
+          drain: softens
+          law_of_value: regulates
+
+      - id: investment.ethics.workers-capital
+        label: Workers' pension funds should be controlled by workers and used for them
+        claim: >-
+          Pension funds hold workers' deferred wages. Unions and workers should control them and steer them into jobs,
+          housing and collective ownership, not into firms that cut those same workers' wages.
+        voiced: "It's our money. Why should our pensions buy the private equity firm that's closing our plant?"
+        you: You think workers should control their pension funds and invest them for workers' benefit.
+        because: >-
+          Meidner's plan for wage-earner funds proposed that part of company profits be paid as shares into union-run funds
+          until workers held a large part of Swedish industry. Blackburn shows that pension savings already own much of the
+          world's capital but are run by financiers. Control over that capital is control over investment.
+        against:
+          - from: liberalism.chicago
+            text: >-
+              Funds run by unions for political goals earn lower returns and pay smaller pensions; the members bear the
+              cost of the leaders' plans.
+          - from: marxism.left-communism
+            text: >-
+              Workers who own shares in their own exploitation become their own bosses' partners; the wage-earner fund is
+              capital with a union badge.
+        sources:
+          - {author: Rudolf Meidner, title: "Employee Investment Funds: An Approach to Collective Capital Formation", year: 1978}
+          - {author: Robin Blackburn, title: "Banking on Death, or Investing in Life: The History and Future of Pensions", year: 2002}
+        traditions:
+          defining: [socdem.nordic]
+          typical: [socdem.democratic-socialism, marxism.market-socialism, socdem.labourism]
+          contested: [marxism.trotskyism]
+          rejects: [liberalism.chicago, marxism.left-communism, libertarianism.ancap]
+        presupposes: [firm.ownership.worker-cooperatives]
+        analysis:
+          gains: [core-workers]
+          pays: [finance-capital]
+          mechanism: >-
+            Collective control over pension capital shifts investment decisions from asset managers to workers'
+            organizations; the funds still earn returns from investments abroad, so core pensions can rest on the same
+            drain.
+          drain: none
+          law_of_value: regulates
+          consciousness: class-economic
+
+      - id: investment.ethics.no-clean-money
+        label: There is no ethical return; profit comes from labor wherever you invest
+        claim: >-
+          Every return on capital, ethical or not, is a share of what workers produced and were not paid. Choosing a
+          cleaner portfolio does not change that; the question is who owns production, not which shares you hold.
+        voiced: "There is no ethical consumption under capitalism, and no ethical dividend either. Green funds pay out of the same wages."
+        you: You think no investment is truly ethical because all returns come from workers' labor.
+        because: >-
+          Marx showed that interest and dividends are portions of surplus value, divided among capitalists after it has
+          been extracted in production. An ethical fund still earns because someone works for less than they produce, often
+          in the periphery where wages are lowest. Ethical investment offers individual absolution where only collective
+          ownership changes anything.
+        against:
+          - from: socdem.nordic
+            text: >-
+              Workers' pensions have to be invested somewhere. Refusing to choose leaves the choice to financiers.
+          - from: ecology.environmental-justice
+            text: >-
+              Divestment helped end apartheid and has stalled fossil projects. Waiting for the end of capitalism is a way
+              of doing nothing now.
+        sources:
+          - {author: Karl Marx, title: "Capital, Volume III", year: 1894}
+        traditions:
+          defining: []
+          typical: [marxism.ml, marxism.trotskyism, marxism.left-communism, marxism.maoism, anarchism.communist]
+          contested: [marxism.ecosocialism]
+          rejects: [ecology.green-growth, liberalism.technocratic, socdem.nordic]
+        presupposes: [profit.legitimacy.unpaid-labor]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [finance-capital]
+          mechanism: >-
+            Refusing the idea of clean returns points at ownership rather than portfolio choice; held without organization,
+            it changes nothing about where savings go.
+          drain: reduces
+          law_of_value: none
+          consciousness: hegemonic
+
+  # ------------------------------------------------------------------
+  - id: work.status
+    domain: economy
+    layer: analysis
+    question: Is a platform driver or rider an employee, a contractor, or something else?
+    plain: The app tells you where to go, sets the price and can switch you off. Are you your own boss?
+    short: gig work status
+    importance: 2
+    positions:
+      - id: work.status.independent-contractor
+        label: Independent contractors who choose when and whether to work
+        claim: >-
+          Platform drivers and riders are self-employed. They choose their hours, work for several apps and can log off at
+          will; the platform is a marketplace connecting them to customers, not an employer.
+        voiced: "I log on when I want, I log off when I want. No boss, no shift. Don't take that away by making me an employee."
+        you: You think platform drivers and riders are independent contractors, not employees.
+        because: >-
+          Sundararajan argues that platforms create crowd-based capitalism, in which millions run small businesses through
+          a common marketplace. Surveys find many drivers value flexibility above all, and employment status would bring
+          shifts, schedules and fewer workers. Forcing the old employment model onto a new kind of work kills the work.
+        against:
+          - from: socdem.labourism
+            text: >-
+              A worker who cannot set the price, choose the customer or negotiate the terms, and can be deactivated by an
+              algorithm, is not a business. Flexibility is the right to be underpaid at any hour.
+          - from: marxism.autonomism
+            text: >-
+              The algorithm is the foreman. "Self-employed" is the old piece-wage with a new app.
+        sources:
+          - {author: Arun Sundararajan, title: "The Sharing Economy: The End of Employment and the Rise of Crowd-Based Capitalism", year: 2016}
+        traditions:
+          defining: [technology.cyberlibertarian]
+          typical: [liberalism.chicago, libertarianism.minarchist, liberalism.austrian, commonsense.self-reliance]
+          contested: [socdem.third-way]
+          rejects: [socdem.labourism, marxism.autonomism, anarchism.syndicalist]
+        presupposes: [wage.nature.voluntary-exchange]
+        excludes: [work.status.employees]
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [core-workers, reserve-army, peripheral-workers]
+          mechanism: >-
+            Contractor status moves the costs of vehicles, fuel, insurance, idle time and sickness onto the worker, while
+            the platform keeps control over prices and dispatch and pays no social contributions.
+          drain: none
+          law_of_value: extends
+
+      - id: work.status.employees
+        label: They are employees and need full employment rights
+        claim: >-
+          Platforms control the work through the app: they set prices, assign jobs, rate and discipline workers. That makes
+          them employers, and their workers are owed minimum wage, sick pay, holidays and the right to bargain.
+        voiced: "If the company sets the fare, decides who gets the job and can fire you by switching you off, it's your employer. Pay the minimum wage."
+        you: You think platform workers are employees and should have full employment rights.
+        because: >-
+          The UK Supreme Court held in 2021 that Uber drivers are workers, because Uber sets fares, terms and performance
+          rules. Prassl shows that platforms exercise more control than many traditional employers while denying all
+          responsibility. Employment law exists because the individual worker cannot bargain alone.
+        against:
+          - from: technology.cyberlibertarian
+            text: >-
+              Employment status brings shifts, caps on drivers and the loss of flexibility most drivers chose the work for.
+          - from: marxism.autonomism
+            text: >-
+              Courts grant status and companies find new loopholes; only organized workers stopping the app win anything
+              lasting.
+        sources:
+          - {author: UK Supreme Court, title: "Uber BV v Aslam", year: 2021}
+          - {author: Jeremias Prassl, title: "Humans as a Service: The Promise and Perils of Work in the Gig Economy", year: 2018}
+        traditions:
+          defining: [socdem.labourism]
+          typical: [socdem.nordic, socdem.democratic-socialism, liberalism.social, socdem.left-populism, conservatism.cst]
+          contested: [socdem.third-way]
+          rejects: [technology.cyberlibertarian, liberalism.chicago, libertarianism.ancap]
+        presupposes: [unions.role.bargaining-agent]
+        excludes: [work.status.independent-contractor]
+        analysis:
+          gains: [core-workers, reserve-army]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >-
+            Employment status puts minimum wages, sick pay and social contributions back on the platform, which shifts
+            income from investors to workers and raises the price of the service.
+          drain: none
+          law_of_value: regulates
+          consciousness: economic-corporate
+
+      - id: work.status.third-category
+        label: A new middle status with portable benefits
+        claim: >-
+          Gig work fits neither box. The law should create a third category, the independent or dependent worker, with
+          some protections and benefits that follow the worker from app to app, but without full employment.
+        voiced: "Flexibility and security aren't opposites. Give gig workers portable benefits and a floor, and keep the freedom to log off."
+        you: You think gig workers need a new legal status between employee and contractor, with portable benefits.
+        because: >-
+          Harris and Krueger proposed an "independent worker" status in 2015, with collective bargaining, tax withholding
+          and pooled benefits but not overtime or hours rules that make no sense when workers choose their own hours. A
+          middle status keeps the flexibility people value and ends the worst insecurity.
+        against:
+          - from: socdem.labourism
+            text: >-
+              A third category is a way to give workers fewer rights than employees by law. Italy's and Spain's
+              intermediate statuses were used to downgrade ordinary jobs.
+          - from: liberalism.chicago
+            text: >-
+              Every benefit mandated raises costs and cuts jobs; the middle status is the employee status by installments.
+        sources:
+          - {author: Seth D. Harris and Alan B. Krueger, title: "A Proposal for Modernizing Labor Laws for Twenty-First-Century Work: The \"Independent Worker\"", year: 2015}
+        traditions:
+          defining: [socdem.third-way]
+          typical: [liberalism.technocratic, liberalism.progressive, conservatism.christian-democracy]
+          contested: [socdem.labourism, liberalism.chicago]
+          rejects: [marxism.autonomism, anarchism.syndicalist]
+        analysis:
+          gains: [finance-capital, professional-managerial]
+          pays: [core-workers, reserve-army]
+          mechanism: >-
+            A middle status grants some protections while legalizing lower costs than employment, letting platforms keep
+            their model and labor costs below the employment standard.
+          drain: none
+          law_of_value: regulates
+
+      - id: work.status.platform-cooperative
+        label: The workers should own the app
+        claim: >-
+          The platform is just software. Drivers, riders and cleaners should own and run their own platforms as
+          cooperatives, so the commission goes to them and the rules are theirs.
+        voiced: "Uber doesn't own a single car. We own the cars. Build the app, own the app, and keep the twenty-five percent."
+        you: You think gig workers should own and run the platforms themselves as cooperatives.
+        because: >-
+          Scholz argues that platforms owned by their workers can do everything the corporate ones do, with democratic
+          governance and the profit kept by those who do the work. Cooperative taxi and delivery apps run in several
+          cities. The software is cheap; what the corporate platform owns is investor money and market control.
+        against:
+          - from: liberalism.chicago
+            text: >-
+              Platforms win by network effects bought with billions in investment; a cooperative with no capital cannot
+              compete with a free ride subsidized by venture funds.
+          - from: marxism.ml
+            text: >-
+              A worker-owned app still competes in a market that sets the fare; cooperatives in a capitalist market end
+              up exploiting themselves.
+        sources:
+          - {author: Trebor Scholz, title: "Platform Cooperativism: Challenging the Corporate Sharing Economy", year: 2016}
+        traditions:
+          defining: [anarchism.mutualist]
+          typical: [marxism.market-socialism, conservatism.distributism, socdem.democratic-socialism, libertarianism.left]
+          contested: [anarchism.communist]
+          rejects: [technology.cyberlibertarian, liberalism.chicago]
+        presupposes: [firm.ownership.worker-cooperatives]
+        analysis:
+          gains: [core-workers, petty-bourgeoisie]
+          pays: [finance-capital]
+          mechanism: >-
+            Cooperative ownership keeps the platform's commission with the workers, cutting out investors' returns, while
+            prices remain set by competition in the market.
+          drain: none
+          law_of_value: regulates
+
+      - id: work.status.piece-wage
+        label: It's wage labor paid by the piece; organize and strike
+        claim: >-
+          The legal label hides the oldest arrangement: wage work paid by the piece, with the boss's tools owned by the
+          worker. Status lawsuits help at the edges; the real answer is riders and drivers stopping the app together.
+        voiced: "Self-employed? We're paid by the drop and ruled by an algorithm. Log off together and see who's boss."
+        you: You think gig work is just wage labor paid by the job, and workers should organize and strike.
+        because: >-
+          Marx described piece wages as the form most suited to capitalism: it makes workers drive themselves and lets the
+          employer cut rates at will. Cant, who rode for Deliveroo, describes how riders organized wildcat strikes through
+          group chats across cities. In most of the South, wage work was never secure; the gig economy brings that
+          normality back to the core.
+        against:
+          - from: socdem.labourism
+            text: >-
+              Wildcat strikes win a week; employment law wins sick pay for every rider. Contempt for legal status throws
+              away the strongest tool workers have.
+          - from: technology.cyberlibertarian
+            text: >-
+              Riders choose the work because they like it; turning every app into a battlefield drives away the customers
+              who pay them.
+        sources:
+          - {author: Karl Marx, title: "Capital, Volume I", year: 1867}
+          - {author: Callum Cant, title: "Riding for Deliveroo: Resistance in the New Economy", year: 2019}
+        traditions:
+          defining: [marxism.autonomism]
+          typical: [marxism.trotskyism, anarchism.syndicalist, marxism.ml, marxism.council-communism]
+          contested: [socdem.labourism]
+          rejects: [technology.cyberlibertarian, liberalism.chicago, socdem.third-way]
+        presupposes: [wage.nature.price-of-labor-power]
+        excludes: [work.status.independent-contractor]
+        analysis:
+          gains: [core-workers, reserve-army, peripheral-workers]
+          pays: [finance-capital]
+          mechanism: >-
+            Treating gig work as wage labor points workers at collective stoppage of the platform, the one action that
+            cuts its revenue directly and forces up the rate per job.
+          drain: none
+          law_of_value: regulates
+          consciousness: class-economic
+
+      - id: work.status.informal-entrepreneurs
+        label: The informal worker is an entrepreneur held back by red tape
+        claim: >-
+          Most workers in the South have always worked informally, by the job, as vendors, drivers and builders. They are
+          entrepreneurs, and the app is one more tool; what they need is legal title and simpler rules, not employment.
+        voiced: "The informal sector is the people's spontaneous response to a state that would not let them work legally. Legalize them, don't hire them."
+        you: You think informal and gig workers are entrepreneurs who need simpler rules, not employment contracts.
+        because: >-
+          De Soto's study of Lima found that it took hundreds of days and many permits to register a small business
+          legally, so most people worked outside the law. Informal workers already run their own businesses; the reform
+          they need is cheap legal status, property title and credit. Employment rules designed for factories in rich
+          countries would make them illegal again.
+        against:
+          - from: marxism.dependency
+            text: >-
+              The "entrepreneur" selling phone cards on the street is a disguised wage worker for the distributor, part of
+              a reserve army the formal economy will not absorb. Title does not change that.
+          - from: socdem.labourism
+            text: >-
+              Informality is not choice; it is the absence of protection. Every labor movement began by demanding that
+              informal workers be covered.
+        sources:
+          - {author: Hernando de Soto, title: "The Other Path: The Invisible Revolution in the Third World", year: 1986}
+        traditions:
+          defining: []
+          typical: [liberalism.chicago, liberalism.austrian, libertarianism.minarchist, liberalism.technocratic, commonsense.self-reliance]
+          contested: [nationalism.peronism]
+          rejects: [marxism.dependency, socdem.labourism, marxism.ml]
+        presupposes: [development.path.market-freedom]
+        analysis:
+          gains: [petty-bourgeoisie, comprador-capital, finance-capital]
+          pays: [peripheral-workers, reserve-army]
+          mechanism: >-
+            Treating informal workers as entrepreneurs leaves them outside labor law while formalizing their property as
+            collateral, which brings them into credit markets and leaves the firms supplying and buying from them free of
+            employers' duties.
+          drain: sustains
+          law_of_value: extends
+
+  # ------------------------------------------------------------------
+  - id: clientelism.patronage
+    domain: state
+    layer: analysis
+    question: When a local boss trades jobs, favors and goods for votes, what is going on?
+    plain: The party man brings bags of food before the election and finds your cousin a job. Is that corruption, survival or community?
+    short: patronage politics
+    importance: 2
+    positions:
+      - id: clientelism.patronage.corruption
+        label: Corruption that destroys accountable government
+        claim: >-
+          Trading favors for votes corrupts politics. It turns citizens into clients, rewards loyalty over competence and
+          keeps the poor dependent, and it ends only with impartial institutions, merit-based civil service and the rule
+          of law.
+        voiced: "Patronage is the enemy of good government. Jobs should go by merit, benefits by right, and votes by conviction."
+        you: You see patronage politics as corruption that must be replaced by impartial institutions.
+        because: >-
+          Fukuyama argues that the passage from patrimonial to impersonal states, through merit-based bureaucracies like
+          the one Britain and the United States built in the nineteenth century, is the core of political development.
+          Rose-Ackerman shows how corruption and clientelism raise costs, deter investment and divert public money.
+          Programmatic parties that compete on policy serve the poor better than bosses who serve them one bag at a time.
+        against:
+          - from: commonsense.look-after-your-own
+            text: >-
+              The "impartial" bureaucracy never came to our street. The party man did. Easy for people with salaries to
+              call it corruption.
+          - from: marxism.ml
+            text: >-
+              The reformers who campaign against patronage want a state that serves investors impersonally; the poor lose
+              the one channel they had and gain nothing.
+        sources:
+          - {author: Francis Fukuyama, title: "Political Order and Political Decay", year: 2014}
+          - {author: Susan Rose-Ackerman, title: "Corruption and Government: Causes, Consequences, and Reform", year: 1999}
+        traditions:
+          defining: [liberalism.technocratic]
+          typical: [liberalism.internationalist, liberalism.classical, liberalism.progressive, socdem.third-way]
+          contested: [commonsense.anti-politics]
+          rejects: [commonsense.look-after-your-own]
+        presupposes: [law.nature.rule-of-law]
+        analysis:
+          gains: [professional-managerial, finance-capital]
+          pays: [reserve-army]
+          mechanism: >-
+            Good-governance reform replaces discretionary distribution by brokers with rule-bound agencies staffed by
+            credentialed professionals, which favors investors and the educated and removes a channel the poor used to
+            get goods from the state.
+          drain: softens
+          law_of_value: regulates
+
+      - id: clientelism.patronage.survival
+        label: For the poor, the patron is the one who shows up
+        claim: >-
+          Where the state does not deliver, the broker does. Trading a vote for food, medicine or a job is a rational way
+          for poor people to get through, and they are not fooled; they know exactly what they are trading.
+        voiced: "The politicians only come at election time. At least this one brings something. My vote is the only thing I have that they want."
+        you: You think poor people deal with patrons because it is how they survive, not because they are fooled.
+        because: >-
+          Auyero's study of a shantytown in Buenos Aires shows that Peronist brokers solve real problems, medicine, food,
+          a pension form, and that clients experience it as help from people they know. The vote is the poor's one asset
+          in politics, and selling it for what they need is not stupidity but calculation.
+        against:
+          - from: liberalism.technocratic
+            text: >-
+              Each household gets a bag; the community never gets the clinic or the road. Clientelism keeps the poor poor
+              so they stay clients.
+          - from: marxism.maoism
+            text: >-
+              Survival through the patron ties each family vertically to its exploiter and stops the poor uniting
+              horizontally against him.
+        sources:
+          - {author: Javier Auyero, title: "Poor People's Politics: Peronist Survival Networks and the Legacy of Evita", year: 2001}
+        traditions:
+          defining: []
+          typical: [commonsense.look-after-your-own, commonsense.anti-politics, commonsense.self-reliance]
+          contested: [nationalism.peronism]
+          rejects: [liberalism.technocratic, marxism.maoism]
+        presupposes: [cs.own-first.family-first]
+        analysis:
+          gains: [reserve-army, petty-bourgeoisie]
+          pays: [reserve-army]
+          mechanism: >-
+            Individual exchanges secure small goods for poor households at the price of their collective political
+            leverage, which brokers and the politicians above them keep.
+          drain: none
+          law_of_value: none
+          consciousness: economic-corporate
+
+      - id: clientelism.patronage.community-bond
+        label: A moral bond of loyalty and reciprocity, not a market
+        claim: >-
+          What outsiders call patronage is how many communities have always held together: the big man owes his people
+          protection and help, and they owe him loyalty. It is a moral relationship, and replacing it with a distant
+          bureaucracy leaves people alone.
+        voiced: "He is our patron. He came to my father's funeral, he paid for my daughter's school. Of course we vote for him. That's what loyalty means."
+        you: You see patron-client ties as a moral bond of loyalty and mutual obligation.
+        because: >-
+          Scott showed that peasant societies in Southeast Asia judged their patrons by a moral standard: a patron who
+          guaranteed subsistence in bad years was legitimate, one who did not was not. These bonds carried people through
+          famine and war. The anonymous market and state that replace them are colder, and often harsher.
+        against:
+          - from: marxism.maoism
+            text: >-
+              The landlord who paid for the funeral took half the harvest. "Reciprocity" between the one who owns the land
+              and the one who works it is a polite name for rent.
+          - from: liberalism.technocratic
+            text: >-
+              A bond that requires a person to vote as the patron says is not loyalty but dependence; the secret ballot
+              exists to break it.
+        sources:
+          - {author: James C. Scott, title: "The Moral Economy of the Peasant: Rebellion and Subsistence in Southeast Asia", year: 1976}
+          - {author: James C. Scott, title: "Patron-Client Politics and Political Change in Southeast Asia", year: 1972}
+        traditions:
+          defining: []
+          typical: [conservatism.traditionalist, conservatism.burkean, religious.confucian, nationalism.peronism]
+          contested: [anarchism.mutualist]
+          rejects: [liberalism.technocratic, marxism.maoism]
+        presupposes: [authority.legitimacy.protection]
+        analysis:
+          gains: [landed-capital, petty-bourgeoisie]
+          pays: [peasantry, reserve-army]
+          mechanism: >-
+            Reciprocity binds tenants and laborers to landlords and local bosses by personal obligation, securing their
+            labor and votes in return for minimal subsistence guarantees.
+          drain: none
+          law_of_value: none
+
+      - id: clientelism.patronage.machine-delivers
+        label: The party machine is how outsiders get a share of power
+        claim: >-
+          Political machines gave immigrants, the poor and minorities jobs, protection and a voice when the respectable
+          parties ignored them. The reformers who fight patronage usually want to take power back for their own class.
+        voiced: "I seen my opportunities and I took 'em. The machine found the immigrant a job, got his kid out of jail, and the good-government people called it corruption."
+        you: You think party machines that trade jobs for votes have given excluded groups a real share of power.
+        because: >-
+          Merton argued that the machine served functions the official structure failed to serve: welfare for the poor,
+          ladders for immigrants, access for business. Plunkitt of Tammany Hall described his work as looking after
+          people the reformers despised. From Chicago's ward organizations to Indian party networks, machines brought
+          outsiders into the state.
+        against:
+          - from: liberalism.technocratic
+            text: >-
+              The machine skims public money, hires incompetents and protects criminals; the poor pay most for the bad
+              services it delivers.
+          - from: marxism.trotskyism
+            text: >-
+              The machine lets the poor climb one at a time and keeps them from organizing as a class; its bosses broker
+              their votes to business.
+        sources:
+          - {author: William L. Riordon, title: "Plunkitt of Tammany Hall", year: 1905}
+          - {author: Robert K. Merton, title: Social Theory and Social Structure, year: 1949}
+        traditions:
+          defining: []
+          typical: [nationalism.peronism, commonsense.look-after-your-own, socdem.labourism]
+          contested: [socdem.left-populism]
+          rejects: [liberalism.technocratic, liberalism.progressive, marxism.trotskyism]
+        analysis:
+          gains: [petty-bourgeoisie, core-workers, reserve-army]
+          pays: [professional-managerial]
+          mechanism: >-
+            Machines distribute public jobs and contracts to loyal groups in return for votes, giving some of the excluded
+            a share of the state while brokers and allied businesses take the larger share.
+          drain: none
+          law_of_value: none
+          consciousness: economic-corporate
+
+      - id: clientelism.patronage.class-control
+        label: Vertical ties that keep the poor divided and ruled
+        claim: >-
+          Patronage binds the poor one by one to landlords, bosses and party brokers, splitting them along lines of kin,
+          caste and faction. It is how ruling classes rule the countryside and the slum, and it is broken by the poor
+          organizing on their own.
+        voiced: "Every bag of rice from the landlord's man buys a vote against your own class. Organize the poor peasants, and the patron has no clients."
+        you: You see patronage as a way ruling classes keep the poor divided, broken only by independent organization.
+        because: >-
+          Alavi showed that in South Asia the landlord's faction, built on kinship and patronage, mobilizes poor peasants
+          behind their own exploiters and cuts across class lines. The peasant unions and leagues that broke landlord power
+          did so by replacing vertical loyalty with horizontal organization.
+        against:
+          - from: commonsense.look-after-your-own
+            text: >-
+              The organizers come, hold meetings and leave. The patron is still there when the child is sick.
+          - from: conservatism.traditionalist
+            text: >-
+              Replacing every bond of loyalty with class organization leaves people with a party where they once had a
+              community.
+        sources:
+          - {author: Hamza Alavi, title: "Peasant Classes and Primordial Loyalties", year: 1973}
+        traditions:
+          defining: [marxism.maoism]
+          typical: [marxism.ml, marxism.mlm, marxism.trotskyism, nationalism.ambedkarite]
+          rejects: [conservatism.traditionalist, commonsense.look-after-your-own]
+        presupposes: [class.concept.relation-to-production]
+        excludes: [clientelism.patronage.community-bond]
+        analysis:
+          gains: [peasantry, reserve-army, peripheral-workers]
+          pays: [landed-capital, comprador-capital]
+          mechanism: >-
+            Independent organization of the poor removes the votes and labor that landlords and brokers command through
+            patronage, weakening their hold on local state power.
+          drain: reduces
+          law_of_value: none
+          consciousness: class-economic
+
+      - id: clientelism.patronage.big-state-spoils
+        label: Patronage grows where the state has spoils to hand out; shrink it
+        claim: >-
+          Clientelism flourishes because the state controls jobs, licenses, contracts and subsidies that politicians can
+          trade. Cut what the state hands out and the patron has nothing left to sell.
+        voiced: "When the government decides who gets the license, the job and the subsidy, of course people buy the politician. Take away the spoils."
+        you: You think patronage comes from a state with too much to hand out, and shrinking it is the cure.
+        because: >-
+          Buchanan and Tullock analyzed politicians and voters as self-interested exchangers; public choice theory
+          predicts that where the state allocates valuable goods by discretion, people will compete for them by buying
+          influence. Rent-seeking is the rational response to a state that creates rents. Markets allocate by price; nobody
+          bribes the supermarket.
+        against:
+          - from: socdem.nordic
+            text: >-
+              The Nordic states spend half of national income and are among the least clientelist in the world. The size of
+              the state is not the problem; its rules are.
+          - from: marxism.ml
+            text: >-
+              Privatization is the biggest patronage of all: the state's assets handed to well-connected buyers at a
+              discount, as Russia showed in the 1990s.
+        sources:
+          - {author: James M. Buchanan and Gordon Tullock, title: "The Calculus of Consent", year: 1962}
+        traditions:
+          defining: []
+          typical: [libertarianism.minarchist, liberalism.chicago, liberalism.austrian, libertarianism.ancap, libertarianism.paleo]
+          rejects: [socdem.nordic, marxism.ml]
+        presupposes: [state.relation.shrink]
+        analysis:
+          gains: [finance-capital, industrial-capital]
+          pays: [reserve-army, core-workers]
+          mechanism: >-
+            Shrinking discretionary state spending removes the goods brokers trade along with the public services the poor
+            relied on, and moves allocation of those goods to markets where income decides.
+          drain: sustains
+          law_of_value: extends

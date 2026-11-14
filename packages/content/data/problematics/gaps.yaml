@@ -1,0 +1,1176 @@
+# Gaps, part 1: housing tenure, health care, household debt, conditions on welfare.
+# Written to fill problematics that arcs and pressure scenes needed and had to stand in for.
+problematics:
+  # ------------------------------------------------------------------
+  - id: housing.tenure
+    domain: economy
+    layer: horizon
+    question: What should housing be, a right, a home you own, or an investment?
+    plain: Who should own the roof over your head, and on what terms should you live under it?
+    short: housing
+    importance: 2
+    positions:
+      - id: housing.tenure.right-to-housing
+        label: Housing is a right the state must guarantee to everyone
+        claim: >-
+          Adequate housing is a human right. The state must guarantee it by law, by whatever mix of building, subsidy and
+          regulation works, and a person evicted into the street has a claim against the state, not just bad luck.
+        voiced: "Nobody should sleep outside in a country with empty flats. Housing is a human right, and rights are enforced, not wished for."
+        you: You think everyone has a right to a decent home and the state is obliged to make sure they get one.
+        because: >-
+          A home is the precondition of everything else a person does: work, school, health, family, voting. The
+          International Covenant on Economic, Social and Cultural Rights (article 11) binds most states to the right to
+          adequate housing. Where it is made enforceable, as with Scotland's homelessness duties or Housing First
+          programs in Finland, street homelessness falls sharply, and it costs less than the shelters, emergency rooms
+          and prisons that absorb people without homes.
+        against:
+          - from: liberalism.chicago
+            text: >-
+              A "right" to a good that must be produced by someone else is a claim on other people's labor and land.
+              Declaring it does not build a single house; letting builders build does.
+          - from: marxism.classical
+            text: >-
+              A right to housing in a market where land and buildings are owned for profit becomes a subsidy to
+              landlords: the state pays the rent and the rent goes up.
+        sources:
+          - {author: United Nations General Assembly, title: "International Covenant on Economic, Social and Cultural Rights", year: 1966}
+          - {author: David Madden and Peter Marcuse, title: "In Defense of Housing: The Politics of Crisis", year: 2016}
+        traditions:
+          defining: [liberalism.social]
+          typical: [socdem.nordic, socdem.keynesian, liberalism.egalitarian, liberalism.progressive, conservatism.cst, religious.christian-socialism]
+          contested: [socdem.third-way]
+          rejects: [libertarianism.ancap, liberalism.austrian, liberalism.chicago]
+        excludes: [housing.tenure.asset-and-investment]
+        analysis:
+          gains: [reserve-army, core-workers, peripheral-workers]
+          pays: [landed-capital]
+          mechanism: >-
+            An enforceable right forces public budgets to house people the market leaves out, raising the floor for the
+            poorest tenants; where the state meets it through rent vouchers rather than its own stock, much of the
+            money flows on to landlords as rent.
+          drain: none
+          law_of_value: regulates
+          disputed: Marxists split over whether rights-based housing policy decommodifies housing or subsidizes landlords (Madden and Marcuse against Engels's pessimism).
+
+      - id: housing.tenure.social-housing
+        label: Build public and non-profit housing on a scale that sets the market
+        claim: >-
+          The state, cities and non-profit associations should build and own a large share of the housing stock and rent
+          it at cost, so that a public sector big enough to set rents for everyone sits beside the private market.
+        voiced: "Look at Vienna: most people live in council or cooperative flats, rents are low, and nobody thinks it strange. Build homes, not assets."
+        you: You think cities and the state should build and own housing on a large scale and rent it at cost.
+        because: >-
+          Red Vienna built some 60,000 municipal flats between 1919 and 1934, paid for by a housing tax, and Vienna's
+          public and cooperative sector still houses most of the city at rents well below those of comparable capitals.
+          Britain's councils built millions of homes after 1945. When a large share of homes is let at cost, private
+          landlords must compete with it, and rents across the city stay closer to the cost of building and keeping a
+          house rather than to what the scarcest tenant will pay.
+        against:
+          - from: conservatism.one-nation
+            text: >-
+              Estates built by planners became concentrations of poverty run by distant bureaucracies; people want to
+              own their front door.
+          - from: liberalism.chicago
+            text: >-
+              Public landlords ration by waiting list instead of price, lock tenants in place and are starved of
+              maintenance whenever budgets tighten.
+        sources:
+          - {author: Eve Blau, title: "The Architecture of Red Vienna, 1919–1934", year: 1999}
+          - {author: David Madden and Peter Marcuse, title: "In Defense of Housing: The Politics of Crisis", year: 2016}
+        traditions:
+          defining: [marxism.austromarxism, socdem.democratic-socialism]
+          typical: [socdem.nordic, socdem.labourism, socdem.keynesian, marxism.eurocommunism, conservatism.christian-democracy]
+          contested: [conservatism.one-nation, socdem.third-way]
+          rejects: [liberalism.chicago, libertarianism.minarchist, libertarianism.ancap]
+        tension: [housing.tenure.homeownership]
+        analysis:
+          gains: [core-workers, reserve-army]
+          pays: [landed-capital, finance-capital]
+          mechanism: >-
+            A large non-market stock competes with private landlords and cuts the ground rent and mortgage interest that
+            housing yields to owners and lenders, transferring that income to tenants as lower rents.
+          drain: none
+          law_of_value: suspends
+          consciousness: class-economic
+
+      - id: housing.tenure.rent-control
+        label: Protect tenants with rent control and security of tenure
+        claim: >-
+          Private renting can stay, but rents must be capped or tied to costs, evictions limited to real cause, and tenants
+          given security to stay in their homes.
+        voiced: "Your landlord didn't build the neighborhood. A tenant who pays on time should be able to stay, and the rent shouldn't jump because the area got popular."
+        you: You think private landlords should be allowed but rents capped and tenants protected from eviction.
+        because: >-
+          Housing is not like other goods: you cannot easily move, and the landlord knows it. Desmond's study of
+          Milwaukee shows eviction is a cause of poverty, not only a symptom: it costs jobs, schooling and health. Rent
+          stabilization keeps communities intact, stops landlords pocketing rises in land value they did nothing to create,
+          and gives tenants the security owners take for granted.
+        against:
+          - from: liberalism.chicago
+            text: >-
+              Price ceilings create shortages. Friedman and Stigler showed in 1946 that capped rents reduce the supply of
+              rental housing and hand the existing flats to whoever already holds them.
+          - from: marxism.classical
+            text: >-
+              Controls protect the tenants who already have a lease and leave the landlord's ownership untouched; the
+              owner waits for the law to change, and it does.
+        sources:
+          - {author: Matthew Desmond, title: "Evicted: Poverty and Profit in the American City", year: 2016}
+          - {author: Friedrich Engels, title: The Housing Question, year: 1872, note: "for the critique of the landlord's claim, not the remedy"}
+        traditions:
+          typical: [socdem.labourism, socdem.democratic-socialism, socdem.left-populism, liberalism.progressive, conservatism.cst]
+          contested: [liberalism.social, socdem.nordic]
+          rejects: [liberalism.chicago, liberalism.austrian, libertarianism.minarchist, libertarianism.ancap]
+        analysis:
+          gains: [core-workers, reserve-army, professional-managerial]
+          pays: [landed-capital, petty-bourgeoisie]
+          mechanism: >-
+            Caps shift part of the rising ground rent from landlord to sitting tenant; the gain goes to those already
+            housed, and small landlords, who cannot spread the loss, pay a larger share of it than large ones.
+          drain: none
+          law_of_value: regulates
+          consciousness: economic-corporate
+
+      - id: housing.tenure.market-supply
+        label: Let the market build; shortages are made by rules, not landlords
+        claim: >-
+          Housing is expensive because zoning, permits and rent rules stop people building it. Free up land use and let
+          prices signal where homes are needed, and supply will bring rents down.
+        voiced: "Want cheaper rent? Build more housing. Every rule that blocks a new building is a gift to the people who already own one."
+        you: You think housing costs too much because rules block building, and the market would fix it if allowed.
+        because: >-
+          Prices are high where building is restricted and lower where it is easy, as Glaeser shows comparing American
+          cities. Rent control, as Friedman and Stigler argued, shrinks supply and freezes people in place. New homes,
+          even expensive ones, free up older ones as people move up. The landlord who rents at market price is supplying
+          a service, and the one who cannot build is the one protected.
+        against:
+          - from: marxism.classical
+            text: >-
+              Builders build for the buyers who pay most, and land values capture any gain: where zoning is loosened,
+              landowners raise the price of the plot. Engels: the housing shortage is a product of capitalist cities,
+              not of rules.
+          - from: socdem.democratic-socialism
+            text: >-
+              Decades of "build more" have not housed the poor anywhere without public building; private builders stop
+              building when prices start to fall.
+        sources:
+          - {author: Milton Friedman and George J. Stigler, title: "Roofs or Ceilings? The Current Housing Problem", year: 1946}
+          - {author: Edward Glaeser, title: Triumph of the City, year: 2011}
+        traditions:
+          defining: [liberalism.chicago]
+          typical: [liberalism.austrian, libertarianism.minarchist, libertarianism.ancap, liberalism.technocratic, libertarianism.georgist]
+          contested: [socdem.third-way, liberalism.progressive]
+          rejects: [marxism.ml, socdem.democratic-socialism, anarchism.communist]
+        excludes: [housing.tenure.rent-control]
+        analysis:
+          gains: [industrial-capital, finance-capital, landed-capital]
+          pays: [reserve-army]
+          mechanism: >-
+            Deregulated land use raises what developers and lenders can earn per plot and leaves the poorest to wait for
+            older homes to filter down; ground rent stays with the landowner, now capitalized into denser buildings.
+          drain: none
+          law_of_value: extends
+          disputed: Georgists accept freer building only alongside a tax on land value, which would claim the rent this position leaves to owners.
+
+      - id: housing.tenure.asset-and-investment
+        label: A house is an investment, and letting it out is honest business
+        claim: >-
+          Property is how ordinary people build wealth and provide for old age. Buying a second flat to let is a sound
+          investment, the landlord provides a service, and rent is a fair return on money risked and upkeep paid.
+        voiced: "I worked thirty years for that flat. The rent is my pension. Nobody gave me anything, and nobody calls the bank a parasite for charging interest."
+        you: You see housing as an asset, and renting it out as a legitimate way to earn a living or a pension.
+        because: >-
+          Bricks and mortar have outlasted inflation, stock crashes and bankrupt pension funds. Kiyosaki taught a
+          generation that an asset is what puts money in your pocket, and a rented flat does. Landlords put up capital,
+          take the risk of damage and empty months, and maintain the building; without them, people who cannot or do not
+          want to buy would have nowhere to live.
+        against:
+          - from: libertarianism.georgist
+            text: >-
+              Most of what a house "earns" is the rising value of the land beneath it, created by the town around it, not
+              by the owner. That is rent, not a return on work.
+          - from: marxism.classical
+            text: >-
+              The landlord's "pension" is a claim on the tenant's wages. When housing becomes an investment, every
+              generation of workers pays more of its income to the one before it.
+        sources:
+          - {author: Robert T. Kiyosaki, title: Rich Dad Poor Dad, year: 1997}
+        traditions:
+          typical: [commonsense.self-reliance, commonsense.look-after-your-own, conservatism.fusionism, libertarianism.minarchist]
+          contested: [conservatism.burkean]
+          rejects: [libertarianism.georgist, marxism.ml, anarchism.communist, socdem.democratic-socialism]
+        excludes: [housing.tenure.right-to-housing]
+        analysis:
+          gains: [landed-capital, petty-bourgeoisie, finance-capital]
+          pays: [core-workers, reserve-army]
+          mechanism: >-
+            Treating homes as assets turns the wage of each tenant into income for owners and mortgage lenders, and
+            rising prices transfer wealth from younger renters to older owners and to the banks that lend against both.
+          drain: none
+          law_of_value: extends
+          consciousness: economic-corporate
+
+      - id: housing.tenure.homeownership
+        label: A nation of homeowners, every family with a stake
+        claim: >-
+          Every family should own its home. Ownership gives people independence, roots and a stake in the country, and
+          policy should help renters become owners, including by selling public housing to its tenants.
+        voiced: "A property-owning democracy: a man who owns his house owns a piece of his country and won't let it be wrecked."
+        you: You think the goal should be for every family to own its own home.
+        because: >-
+          Skelton coined the "property-owning democracy" to give working people a stake in the existing order and
+          independence from landlord and state alike; distributists wanted property widely spread for the same reason.
+          Owners look after their streets, stay put, raise children in stable places and are not at the mercy of a
+          landlord. Britain's right-to-buy let more than a million council tenants buy their homes.
+        against:
+          - from: socdem.democratic-socialism
+            text: >-
+              Right-to-buy sold off the public stock at a discount and never replaced it; much of it is now let back to
+              tenants by private landlords at several times the council rent.
+          - from: marxism.classical
+            text: >-
+              The mortgage is a thirty-year claim on the worker's wages by the bank, and an owner whose savings are a
+              house learns to vote for whatever keeps prices high.
+        sources:
+          - {author: Noel Skelton, title: Constructive Conservatism, year: 1924}
+          - {author: G. K. Chesterton, title: "The Outline of Sanity", year: 1926}
+        traditions:
+          defining: [conservatism.one-nation]
+          typical: [conservatism.distributism, conservatism.fusionism, conservatism.christian-democracy, commonsense.self-reliance, conservatism.national]
+          contested: [socdem.labourism]
+          rejects: [marxism.ml, anarchism.communist]
+        tension: [housing.tenure.social-housing]
+        analysis:
+          gains: [petty-bourgeoisie, professional-managerial, finance-capital, core-workers]
+          pays: [reserve-army]
+          mechanism: >-
+            Spreading ownership through mortgages ties workers' savings to house prices and their wages to debt service,
+            which aligns them with property values and with the banks; those who cannot buy pay rising rents to those who
+            did.
+          drain: none
+          law_of_value: extends
+          consciousness: economic-corporate
+
+      - id: housing.tenure.class-question
+        label: The housing crisis is built into capitalism; organize tenants as a class
+        claim: >-
+          Shortage and high rents are not policy mistakes but how land and buildings work when they are owned for profit.
+          Tenants must organize against landlords as workers do against employers, and housing is solved only by taking
+          land and buildings out of private ownership.
+        voiced: "The landlord and the boss take turns with your wages. A tenants' union is a union. And the housing question ends when the landlord does."
+        you: You see housing as a class question that tenants must fight collectively and that ends only with private ownership of housing.
+        because: >-
+          Engels argued against reformers in 1872 that housing shortage is a necessary product of capitalist cities: rents
+          rise with the land, and slum clearance only moves the slums. Rent takes a share of wages back for the owners of
+          land. Tenant movements from the Glasgow rent strike of 1915 to today's tenant unions win when they act as a
+          class, by withholding rent together.
+        against:
+          - from: socdem.nordic
+            text: >-
+              Vienna and Stockholm did not abolish private property to house their people; social housing built inside
+              capitalism did it.
+          - from: conservatism.one-nation
+            text: >-
+              Ownership, not class struggle, gave millions of working families security; tenants do not want a better
+              landlord in the state, they want their own front door.
+        sources:
+          - {author: Friedrich Engels, title: The Housing Question, year: 1872}
+          - {author: David Madden and Peter Marcuse, title: "In Defense of Housing: The Politics of Crisis", year: 2016}
+        traditions:
+          defining: [marxism.ml]
+          typical: [marxism.trotskyism, marxism.maoism, anarchism.communist, anarchism.syndicalist, marxism.autonomism]
+          contested: [socdem.democratic-socialism]
+          rejects: [liberalism.chicago, conservatism.one-nation, commonsense.self-reliance]
+        presupposes: [class.concept.relation-to-production]
+        excludes: [housing.tenure.asset-and-investment]
+        analysis:
+          gains: [core-workers, reserve-army, peripheral-workers]
+          pays: [landed-capital, finance-capital, petty-bourgeoisie]
+          mechanism: >-
+            Collective rent refusal and expropriation cut the ground rent and mortgage interest taken from wages, and
+            remove housing from the circuit of property values that finance lends against.
+          drain: none
+          law_of_value: suspends
+          consciousness: hegemonic
+
+      - id: housing.tenure.occupy-empty
+        label: Empty homes belong to those who need them; occupy them
+        claim: >-
+          Where houses stand empty and people sleep outside, occupying the empty building is just. Squatting and
+          self-built settlements are how the poor of the world have always housed themselves, and they should be defended.
+        voiced: "Housing for those who live in it. A house kept empty for speculation is a crime; living in it is not."
+        you: You think people in need are right to occupy empty buildings and land and make homes there.
+        because: >-
+          Colin Ward showed that people housing themselves, by squatting, self-build and occupation, have done more than
+          any housing ministry; across the cities of the South, as Mike Davis documents, most new housing is built by
+          its occupants on land they took. Brazil's homeless workers' movement and South Africa's shack dwellers occupy
+          land the market leaves empty. Use, not title, makes a home.
+        against:
+          - from: liberalism.classical
+            text: >-
+              Squatting is taking another person's property. Once title depends on who got there first, nobody can invest,
+              lend or build with confidence, the poor least of all.
+          - from: marxism.ml
+            text: >-
+              Occupations house a few and are evicted by the police; without power over land as a whole, squatting is
+              survival, not a solution.
+        sources:
+          - {author: Colin Ward, title: "Housing: An Anarchist Approach", year: 1976}
+          - {author: Mike Davis, title: Planet of Slums, year: 2006}
+        traditions:
+          defining: [anarchism.communist]
+          typical: [anarchism.insurrectionary, marxism.autonomism, religious.liberation-theology, zapatismo, anarchism.mutualist]
+          contested: [marxism.trotskyism]
+          rejects: [liberalism.classical, libertarianism.ancap, conservatism.burkean, commonsense.self-reliance]
+        presupposes: [property.private.personal-vs-productive]
+        excludes: [housing.tenure.asset-and-investment]
+        analysis:
+          gains: [reserve-army, peripheral-workers]
+          pays: [landed-capital]
+          mechanism: >-
+            Occupation takes land and buildings out of the rent circuit by direct use, transferring their use value to
+            those without wages enough to pay rent, until the owner gets the police to reverse it.
+          drain: none
+          law_of_value: suspends
+
+  # ------------------------------------------------------------------
+  - id: health.care
+    domain: economy
+    layer: horizon
+    question: Who should provide health care, and who should pay for it?
+    plain: When you get sick, who should treat you, and who should pay the bill?
+    short: health care
+    importance: 2
+    positions:
+      - id: health.care.national-service
+        label: A national health service, free at the point of use
+        claim: >-
+          Health care should be a public service paid from taxes, free when you use it, with hospitals publicly owned and
+          doctors and nurses employed by the public, like Britain's National Health Service.
+        voiced: "Illness is neither an indulgence for which people have to pay, nor an offence for which they should be penalised. No one should see a bill."
+        you: You want a public health service paid for by taxes and free whenever you need it.
+        because: >-
+          Bevan built the NHS in 1948 on the principle that care should follow need, not ability to pay. Single public
+          systems cover everyone at a lower share of national income than insurance markets, because they bargain as one
+          buyer, skip billing bureaucracy and keep insurers' profits out. Nobody is bankrupted by illness, and nobody stays
+          in a job only to keep their coverage.
+        against:
+          - from: liberalism.chicago
+            text: >-
+              A free good is rationed by queue instead of price. Waiting lists are the price a national service charges,
+              and it is paid in pain.
+          - from: marxism.ml
+            text: >-
+              The NHS buys its drugs and equipment from private monopolies and has been opened bit by bit to private
+              contractors; a public service inside a capitalist economy is always being taken back.
+        sources:
+          - {author: Aneurin Bevan, title: In Place of Fear, year: 1952}
+          - {author: William Beveridge, title: "Social Insurance and Allied Services", year: 1942}
+        traditions:
+          defining: [socdem.labourism]
+          typical: [socdem.nordic, socdem.democratic-socialism, socdem.keynesian, socdem.fabian, liberalism.social, conservatism.one-nation]
+          contested: [socdem.third-way]
+          rejects: [liberalism.chicago, libertarianism.minarchist, libertarianism.ancap]
+        excludes: [health.care.market-choice]
+        analysis:
+          gains: [core-workers, reserve-army, professional-managerial]
+          pays: [finance-capital]
+          mechanism: >-
+            Tax funding pools risk across the whole population and removes insurers and billing, transferring care to
+            those who could not pay; drug and equipment suppliers still sell to it at monopoly prices.
+          drain: none
+          law_of_value: suspends
+          consciousness: class-economic
+
+      - id: health.care.social-insurance
+        label: Compulsory social insurance through funds, with many providers
+        claim: >-
+          Everyone must be insured, through non-profit sickness funds paid from wages by workers and employers, with the
+          state covering those who cannot pay and providers both public and private, as in Germany or Japan.
+        voiced: "Solidarity and self-government: workers and employers run the funds together, everyone is covered, and the state sets the rules."
+        you: You want everyone covered through compulsory insurance funds, not a single state service.
+        because: >-
+          Bismarck's sickness insurance of 1883 began the oldest universal system, and Germany, the Netherlands, Japan
+          and others cover everyone through regulated funds. Reid's comparison shows these systems achieve universal care
+          with choice of doctor and shorter waits. Funds run jointly by unions and employers keep the system close to
+          those who pay into it, and the state guarantees, rather than runs.
+        against:
+          - from: socdem.labourism
+            text: >-
+              Tying care to contributions from wages makes it a workplace privilege; the unemployed and informal workers
+              are added only as an afterthought.
+          - from: liberalism.chicago
+            text: >-
+              Compulsory insurance with a regulated price is a national service in disguise, with the same overuse and the
+              same rising costs.
+        sources:
+          - {author: T. R. Reid, title: "The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care", year: 2009}
+        traditions:
+          defining: [conservatism.christian-democracy]
+          typical: [liberalism.ordoliberal, conservatism.cst, liberalism.social, socdem.revisionist]
+          contested: [socdem.labourism]
+          rejects: [libertarianism.ancap, libertarianism.minarchist]
+        analysis:
+          gains: [core-workers, professional-managerial, industrial-capital]
+          pays: [reserve-army]
+          mechanism: >-
+            Contributions taken from wages pool risk within the employed; employers gain a healthy workforce at shared
+            cost, and those outside formal work depend on residual state cover.
+          drain: none
+          law_of_value: regulates
+          consciousness: economic-corporate
+
+      - id: health.care.market-choice
+        label: Private insurance and competing providers; patients choose and pay
+        claim: >-
+          Health care should be bought and sold like other services: people buy insurance or pay directly from savings,
+          providers compete on price and quality, and the state helps only the poorest.
+        voiced: "It's your body and your money. When patients spend their own dollars, prices fall and quality rises, as in every other market."
+        you: You want health care left to private insurance and competing providers, with patients paying their own way.
+        because: >-
+          Third-party payment hides prices, so nobody shops and costs soar; Goodman and Musgrave argue that health
+          savings accounts let patients control their own money. Friedman showed that licensing restrictions protect
+          doctors' incomes, not patients. Where people pay, they weigh what care is worth, and competition drives the
+          innovation that made modern medicine.
+        against:
+          - from: liberalism.social
+            text: >-
+              Arrow showed in 1963 that medicine is not a normal market: the sick cannot shop, cannot judge quality and
+              cannot wait. Insurers profit by refusing those who need care most.
+          - from: socdem.labourism
+            text: >-
+              The country that tried this spends the most of any and leaves millions uninsured; medical debt is its
+              leading cause of bankruptcy.
+        sources:
+          - {author: John C. Goodman and Gerald L. Musgrave, title: "Patient Power: Solving America's Health Care Crisis", year: 1992}
+          - {author: Milton Friedman, title: Capitalism and Freedom, year: 1962}
+        traditions:
+          defining: [libertarianism.minarchist]
+          typical: [liberalism.chicago, liberalism.austrian, libertarianism.ancap, conservatism.fusionism, libertarianism.objectivist]
+          contested: [liberalism.classical]
+          rejects: [socdem.labourism, socdem.nordic, marxism.ml, conservatism.christian-democracy]
+        excludes: [health.care.national-service]
+        analysis:
+          gains: [finance-capital, industrial-capital, professional-managerial]
+          pays: [core-workers, reserve-army]
+          mechanism: >-
+            Paying by policy and price lets insurers and hospital chains earn on illness and lets care follow income, so the
+            healthy and well paid are served and the poor and sick are priced out.
+          drain: none
+          law_of_value: extends
+
+      - id: health.care.user-fees
+        label: Patients should pay something; fees keep clinics running
+        claim: >-
+          In poor countries public clinics cannot be free: modest charges for visits and medicines fund supplies, stop
+          waste and make health workers answer to patients, with exemptions for the poorest.
+        voiced: "Free care with no medicines is not free care. A small fee keeps the shelves stocked, and people value what they pay for."
+        you: You think patients in public clinics should pay a modest fee so the clinics have drugs and staff.
+        because: >-
+          The World Bank's 1987 agenda for health financing, and the Bamako Initiative the same year, argued that
+          clinics with no budget had empty shelves; small fees and community-run drug funds kept medicines in stock. Fees
+          discourage trivial visits and give communities a say over money they raised themselves.
+        against:
+          - from: socdem.labourism
+            text: >-
+              Wherever fees came in, the poorest stopped coming; when Uganda abolished them in 2001, clinic use jumped.
+              The exemptions never work.
+          - from: marxism.dependency
+            text: >-
+              Fees were imposed as a condition of structural adjustment loans, so that budgets cut for debt service
+              could be refilled from patients' pockets.
+        sources:
+          - {author: "John Akin, Nancy Birdsall and David de Ferranti (World Bank)", title: "Financing Health Services in Developing Countries: An Agenda for Reform", year: 1987}
+        traditions:
+          defining: [liberalism.technocratic]
+          typical: [liberalism.chicago, socdem.third-way]
+          contested: [conservatism.cst]
+          rejects: [marxism.dependency, socdem.labourism, marxism.ml, religious.liberation-theology]
+        presupposes: [development.path.integration]
+        excludes: [health.care.national-service]
+        analysis:
+          gains: [finance-capital]
+          pays: [peasantry, peripheral-workers, reserve-army]
+          mechanism: >-
+            Fees refill health budgets cut to service foreign debt with payments from the sick, so creditors are paid
+            first and the poorest stop seeking care.
+          drain: sustains
+          law_of_value: extends
+
+      - id: health.care.socialized-community
+        label: Health is made by society; public, preventive care rooted in communities
+        claim: >-
+          Most illness comes from living conditions. Health care should be public, aimed first at prevention, with
+          doctors and health workers living in the neighborhoods and villages they serve, as in Cuba's family doctors and
+          China's barefoot doctors.
+        voiced: "Medicine is a social science, and politics is nothing else but medicine on a large scale. Put the doctor in the barrio, not the barrio in the waiting room."
+        you: You want public health care built around prevention and health workers living in the communities they serve.
+        because: >-
+          Virchow, sent to investigate typhus in Upper Silesia in 1848, concluded the cure was democracy, education and
+          land. The Alma-Ata declaration of 1978 made primary care in communities the basis of health for all. Cuba,
+          a poor country under blockade, reached life expectancy and infant mortality close to the richest countries'
+          by putting a family doctor on every block and training doctors for the whole South.
+        against:
+          - from: liberalism.chicago
+            text: >-
+              Cuba's figures come with doctors paid a pittance, shortages of basic medicines and a state that sends its
+              doctors abroad as an export.
+          - from: liberalism.technocratic
+            text: >-
+              Health for all by 2000 was a slogan, not a plan; selective, measurable programs like vaccination did more
+              with the money available.
+        sources:
+          - {author: World Health Organization and UNICEF, title: Declaration of Alma-Ata, year: 1978}
+          - {author: Rudolf Virchow, title: "Report on the Typhus Epidemic in Upper Silesia", year: 1848}
+        traditions:
+          defining: [marxism.guevarism]
+          typical: [marxism.ml, marxism.maoism, religious.liberation-theology, nationalism.bolivarianism, ecology.environmental-justice]
+          contested: [socdem.democratic-socialism]
+          rejects: [liberalism.chicago, libertarianism.minarchist]
+        analysis:
+          gains: [peasantry, peripheral-workers, reserve-army, core-workers]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >-
+            Public prevention removes illness from the market for drugs and private treatment and delivers care by need,
+            cutting the share of national income that drug monopolies and insurers take from the sick.
+          drain: reduces
+          law_of_value: suspends
+          consciousness: hegemonic
+
+      - id: health.care.mutual-aid
+        label: Care through families, churches and mutual-aid societies, not the state
+        claim: >-
+          Care for the sick belongs first to families, religious orders, mission hospitals and members' mutual societies,
+          which know the people they help; the state should support them, not replace them.
+        voiced: "Before the welfare state, workers ran their own lodges and friendly societies and hired their own doctors. Charity and mutual aid built the hospitals."
+        you: You think care for the sick belongs first to families, churches and mutual-aid societies rather than the state.
+        because: >-
+          Beito documents how fraternal societies in the United States gave millions of workers sickness benefits and
+          lodge doctors before the state took over. Religious orders built most of the world's early hospitals and still
+          run much of the care in Africa. Subsidiarity holds that what a smaller community can do, a larger one should not
+          take over, because care given by people who know you is better care.
+        against:
+          - from: socdem.labourism
+            text: >-
+              Friendly societies covered the skilled worker in good health; the poor, the old and the chronically ill
+              were left to the charity ward. That is why the state stepped in.
+          - from: feminism.materialist
+            text: >-
+              "Families" means women, unpaid. Handing care back to the family hands it to wives and daughters.
+        sources:
+          - {author: David T. Beito, title: "From Mutual Aid to the Welfare State: Fraternal Societies and Social Services, 1890–1967", year: 2000}
+          - {author: Pius XI, title: Quadragesimo Anno, year: 1931}
+        traditions:
+          defining: [conservatism.distributism]
+          typical: [conservatism.cst, libertarianism.minarchist, libertarianism.paleo, conservatism.evangelical-right, anarchism.mutualist]
+          contested: [anarchism.communist]
+          rejects: [socdem.labourism, marxism.ml]
+        presupposes: [welfare.state.subsidiarity]
+        excludes: [health.care.national-service]
+        analysis:
+          gains: [petty-bourgeoisie, professional-managerial]
+          pays: [reserve-army, core-workers]
+          mechanism: >-
+            Shifting care from taxes to charity and membership lowers the tax claim on owners and leaves coverage tied to
+            what members, congregations and unpaid family carers can afford.
+          drain: none
+          law_of_value: none
+
+      - id: health.care.traditional-medicine
+        label: Put traditional and indigenous medicine on an equal footing
+        claim: >-
+          Health systems imported from the colonial powers ignore the healers most people in the South still use. Traditional
+          and indigenous medicine should be recognized, funded and integrated, and the knowledge kept out of foreign patents.
+        voiced: "Our grandmothers healed with what grows here. A health system that treats the yatiri and the vaidya as superstition was built to sell us someone else's pills."
+        you: You think traditional and indigenous medicine should be recognized and funded alongside, or instead of, Western medicine.
+        because: >-
+          Gandhi's Hind Swaraj attacked Western medicine as part of a civilization that made people dependent. Most people
+          in Africa and much of Asia consult traditional healers, who are present where doctors are not; Bolivia's 2009
+          constitution and India's ministry for traditional systems recognize them. Pharmaceutical firms have patented
+          remedies from indigenous knowledge without paying for it.
+        against:
+          - from: liberalism.technocratic
+            text: >-
+              Medicine is whatever works in trials. Remedies that pass belong in the pharmacy; the rest cost lives when
+              they replace treatment that works.
+          - from: marxism.ml
+            text: >-
+              Romanticizing the healer excuses the absence of hospitals. The poor deserve the same medicine as the rich.
+        sources:
+          - {author: M. K. Gandhi, title: Hind Swaraj, year: 1909}
+          - {author: World Health Organization, title: "WHO Traditional Medicine Strategy 2014–2023", year: 2013}
+        traditions:
+          defining: [nationalism.indigenous-sovereignty]
+          typical: [nationalism.gandhian, nationalism.decolonial, nationalism.hindutva, ecology.deep-ecology]
+          contested: [nationalism.bolivarianism, religious.engaged-buddhism]
+          rejects: [liberalism.technocratic, marxism.ml, technology.transhumanism]
+        presupposes: [development.path.post-development]
+        analysis:
+          gains: [peasantry, petty-bourgeoisie]
+          pays: [industrial-capital]
+          mechanism: >-
+            Recognition keeps healers' livelihoods and local remedies outside the patent system of the core drug firms;
+            where it replaces public hospitals rather than adding to them, the poor get the cheaper system.
+          drain: reduces
+          law_of_value: none
+          disputed: Materialists split between those who see indigenous medicine as resistance to pharmaceutical monopoly (decolonial and dependency writers) and those who see it as a cover for public underfunding (orthodox Marxist-Leninists).
+
+  # ------------------------------------------------------------------
+  - id: debt.household
+    domain: economy
+    layer: horizon
+    question: When ordinary people borrow, what is fair to charge, and what is owed?
+    plain: If you borrow to get through the month, start a stall or pay for school, what should the lender be allowed to do, and must you always pay?
+    short: household debt
+    importance: 2
+    positions:
+      - id: debt.household.personal-responsibility
+        label: You borrowed it, you pay it back
+        claim: >-
+          A loan is a promise. People should borrow only what they can repay, live within their means, and pay what they
+          owe; forgiving debt rewards the careless at the expense of those who saved.
+        voiced: "Live like no one else now so you can live like no one else later. Debt is a choice, and so is getting out of it."
+        you: You think people should honor their debts and avoid borrowing what they can't repay.
+        because: >-
+          Franklin's maxims, "he that goes a-borrowing goes a-sorrowing", carried a hard truth: debt makes you the servant
+          of the lender. Ramsey's millions of followers paid off their debts by budgeting and sacrifice. Credit works only
+          because promises are kept; a world where debts are cancelled is one where nobody will lend to the poor at all.
+        against:
+          - from: socdem.left-populism
+            text: >-
+              People borrow because wages do not cover rent, food and medicine. Calling that a choice blames the person
+              for the price of being poor.
+          - from: religious.liberation-theology
+            text: >-
+              Scripture commands a jubilee. A law that makes debts eternal treats the lender's claim as more sacred than
+              the borrower's life.
+        sources:
+          - {author: Benjamin Franklin, title: "The Way to Wealth", year: 1758}
+          - {author: Dave Ramsey, title: The Total Money Makeover, year: 2003}
+        traditions:
+          defining: [commonsense.self-reliance]
+          typical: [conservatism.evangelical-right, conservatism.fusionism, liberalism.classical, commonsense.look-after-your-own]
+          contested: [conservatism.cst]
+          rejects: [religious.liberation-theology, marxism.autonomism, anarchism.communist]
+        excludes: [debt.household.cancel-and-refuse]
+        analysis:
+          gains: [finance-capital]
+          pays: [core-workers, reserve-army, peripheral-workers]
+          mechanism: >-
+            Holding each borrower morally liable keeps the full stream of interest flowing to lenders and frames debt
+            taken on to cover low wages as a private failing rather than a transfer from wages to finance.
+          drain: none
+          law_of_value: extends
+
+      - id: debt.household.free-credit
+        label: Let lenders charge what the risk costs; caps cut the poor off
+        claim: >-
+          High-interest lenders, pawnshops and payday loans serve people banks will not touch. Interest caps do not make
+          them cheaper; they make them disappear, and the poor turn to loan sharks.
+        voiced: "Nobody forces anyone to take a payday loan. Ban it, and the single mother with a broken car has nowhere to go but the street lender."
+        you: You think lenders should be free to charge what the risk is worth, because caps leave the poor without credit.
+        because: >-
+          Bentham's Defence of Usury argued in 1787 that no adult should be prevented from borrowing on whatever terms they
+          judge best, and that usury laws push borrowers to worse lenders. Lending small sums to risky borrowers is costly;
+          high rates reflect defaults and administration, not greed. Where caps are imposed, legal small loans vanish.
+        against:
+          - from: liberalism.social
+            text: >-
+              Payday lenders earn most of their money from borrowers who roll over loans again and again; the business
+              model is the trap, not the service.
+          - from: religious.islamism-brotherhood
+            text: >-
+              To charge the needy for their need is riba, forbidden by God; a loan should be an act of help, not a
+              harvest.
+        sources:
+          - {author: Jeremy Bentham, title: Defence of Usury, year: 1787}
+        traditions:
+          defining: [liberalism.utilitarian]
+          typical: [liberalism.chicago, libertarianism.minarchist, libertarianism.ancap, liberalism.austrian]
+          rejects: [conservatism.cst, religious.islamism-brotherhood, socdem.labourism, liberalism.social]
+        excludes: [debt.household.usury-forbidden]
+        analysis:
+          gains: [finance-capital, petty-bourgeoisie]
+          pays: [reserve-army, core-workers, peripheral-workers]
+          mechanism: >-
+            Uncapped rates let lenders take a large share of the irregular incomes of the poorest households through fees
+            and rollovers, transferring wages to lending firms and pawnbrokers.
+          drain: none
+          law_of_value: extends
+
+      - id: debt.household.microcredit
+        label: Small loans let the poor, especially women, lift themselves up
+        claim: >-
+          The poor are creditworthy. Small loans to groups of borrowers, mostly women, let them start or grow a business,
+          and credit is the first step out of poverty without charity.
+        voiced: "Credit is a human right. Give a poor woman a small loan and she will repay it, and build a life with it."
+        you: You think small loans to poor people, especially women, are a way out of poverty.
+        because: >-
+          Yunus founded Grameen Bank in Bangladesh on the finding that poor village women repaid at very high rates when
+          they borrowed in groups that vouched for each other. Prahalad argued that the poor are a market and serving
+          them profitably is better than aid. Credit lets a person buy a cow, a sewing machine or stock for a stall, and
+          keeps the decision in her hands.
+        against:
+          - from: marxism.dependency
+            text: >-
+              Bateman shows that microcredit floods local markets with tiny competing businesses and displaces real
+              development; in Andhra Pradesh in 2010, over-indebted borrowers took their own lives. It finances
+              survival, not growth.
+          - from: liberalism.technocratic
+            text: >-
+              Randomized trials across six countries found modest effects of microcredit on business and no
+              transformative effect on poverty.
+        sources:
+          - {author: Muhammad Yunus, title: "Creating a World Without Poverty: Social Business and the Future of Capitalism", year: 2007}
+          - {author: C. K. Prahalad, title: "The Fortune at the Bottom of the Pyramid", year: 2004}
+        traditions:
+          defining: [liberalism.technocratic]
+          typical: [liberalism.internationalist, feminism.liberal, socdem.third-way, liberalism.progressive]
+          contested: [liberalism.chicago, technology.effective-altruism]
+          rejects: [marxism.dependency, marxism.ml, religious.islamism-brotherhood]
+        presupposes: [development.path.integration]
+        analysis:
+          gains: [finance-capital, petty-bourgeoisie]
+          pays: [peasantry, reserve-army]
+          mechanism: >-
+            Microloans draw interest from the household earnings of the rural and urban poor into lending institutions,
+            many funded from the core, while spreading tiny businesses that compete each other's prices down.
+          drain: sustains
+          law_of_value: extends
+          disputed: Some feminist economists hold that microcredit gives women real leverage within the household, whatever its macroeconomic effect (Naila Kabeer against Bateman).
+
+      - id: debt.household.usury-forbidden
+        label: Charging interest on the needy is forbidden; lend to share risk, not to profit
+        claim: >-
+          Lending to someone in need at interest is a sin. Credit should be an act of help, or a partnership that shares
+          profit and loss, as in Islamic finance and the Church's old law against usury.
+        voiced: "God has permitted trade and forbidden usury. Lend to your brother as a brother."
+        you: You think charging interest to people in need is wrong, and credit should share risk instead of profiting from it.
+        because: >-
+          Aquinas taught that charging for the use of money is to sell what does not exist; Benedict XIV's Vix Pervenit
+          of 1745 restated the prohibition. The Qur'an condemns riba. Lending that shares profit and loss binds lender to
+          borrower; lending at fixed interest lets the lender win whatever happens to the borrower.
+        against:
+          - from: liberalism.utilitarian
+            text: >-
+              Time has a price. Forbidding interest just drives lending underground, as Bentham showed, or into
+              fee-laden contracts that are interest by another name.
+          - from: marxism.classical
+            text: >-
+              Interest is a share of the profit taken from labor; condemning the lender while blessing the employer
+              mistakes the symptom for the disease.
+        sources:
+          - {author: Thomas Aquinas, title: "Summa Theologiae, II-II, q. 78", year: "c. 1270"}
+          - {author: Benedict XIV, title: Vix Pervenit, year: 1745}
+        traditions:
+          defining: [religious.islamism-brotherhood]
+          typical: [conservatism.distributism, conservatism.cst, religious.islamic-socialism, religious.islamism-khomeinist, conservatism.integralism]
+          contested: [religious.post-islamism]
+          rejects: [liberalism.utilitarian, liberalism.chicago, libertarianism.ancap]
+        presupposes: [money.nature.anti-usury]
+        excludes: [debt.household.free-credit]
+        analysis:
+          gains: [peasantry, petty-bourgeoisie, core-workers]
+          pays: [finance-capital]
+          mechanism: >-
+            A ban on interest shifts lenders' income from a fixed claim on the borrower toward shared profit, cutting what
+            finance takes from distressed households; in practice, Islamic banks often price the same return as markups.
+          drain: none
+          law_of_value: regulates
+
+      - id: debt.household.regulate-and-relieve
+        label: Cap rates, police lenders, and give people a fresh start
+        claim: >-
+          Lending to households needs rules: interest caps, honest disclosure, a regulator that stops predatory products,
+          and bankruptcy that lets a person start again.
+        voiced: "It's impossible to buy a toaster that has a one-in-five chance of bursting into flames, but you can refinance a home with a mortgage that has the same chance of putting the family on the street."
+        you: You want household lending tightly regulated, with interest caps and a fair way out through bankruptcy.
+        because: >-
+          Warren and Tyagi show that families go bankrupt not from luxury spending but from fixed costs of housing,
+          schooling and health that two incomes can no longer cover. Products sold to the desperate need the safety rules
+          every other product has. A fresh start in bankruptcy is old law: it frees a debtor to work again rather than
+          serve a creditor for life.
+        against:
+          - from: liberalism.chicago
+            text: >-
+              Every cap and rule closes off credit to the riskiest borrowers, who are the poorest; the regulator decides
+              who may borrow, and it decides against them.
+          - from: marxism.ml
+            text: >-
+              Regulation trims the worst lenders and keeps the system in which wages are too low to live on without
+              borrowing.
+        sources:
+          - {author: Elizabeth Warren and Amelia Warren Tyagi, title: "The Two-Income Trap: Why Middle-Class Parents Are Going Broke", year: 2003}
+        traditions:
+          defining: [liberalism.progressive]
+          typical: [liberalism.social, socdem.keynesian, socdem.left-populism, conservatism.christian-democracy]
+          contested: [socdem.third-way]
+          rejects: [liberalism.chicago, libertarianism.ancap]
+        analysis:
+          gains: [core-workers, professional-managerial, reserve-army]
+          pays: [finance-capital]
+          mechanism: >-
+            Caps and bankruptcy protection lower the share of household income that lenders can extract and limit how long
+            a creditor's claim can follow a debtor.
+          drain: none
+          law_of_value: regulates
+          consciousness: economic-corporate
+
+      - id: debt.household.cancel-and-refuse
+        label: Cancel the debts; debtors should refuse to pay together
+        claim: >-
+          Household debt is how the rich collect a second time from people whose wages were already too low. Debts should
+          be cancelled, and debtors should organize to refuse payment together, the way workers strike.
+        voiced: "Can't pay, won't pay. Alone, a debt is a burden; together, it is leverage."
+        you: You think household debts should be cancelled and debtors should organize to refuse payment.
+        because: >-
+          Graeber shows that debt cancellation is as old as debt: Mesopotamian kings proclaimed clean slates, and the Bible
+          commands a jubilee, because societies understood that unpayable debt breaks families and fields. The Debt
+          Collective organized students of collapsed for-profit colleges to strike on their loans and won cancellations.
+          A debtor alone is helpless; a million debtors are a power.
+        against:
+          - from: commonsense.self-reliance
+            text: >-
+              The person who scrimped to pay off their loan gets nothing, and the one who didn't gets everything. That is
+              not justice, it is a reward for not paying.
+          - from: liberalism.chicago
+            text: >-
+              Cancel debts and lenders stop lending to those whose debts were cancelled; the next generation pays for
+              this one's relief in credit it cannot get.
+        sources:
+          - {author: David Graeber, title: "Debt: The First 5,000 Years", year: 2011}
+          - {author: The Debt Collective, title: "Can't Pay, Won't Pay: The Case for Economic Disobedience and Debt Abolition", year: 2020}
+        traditions:
+          defining: [marxism.autonomism]
+          typical: [anarchism.communist, socdem.left-populism, religious.liberation-theology, socdem.democratic-socialism]
+          contested: [conservatism.cst]
+          rejects: [commonsense.self-reliance, liberalism.chicago, conservatism.fusionism]
+        presupposes: [change.possibility.organized-people-can]
+        excludes: [debt.household.personal-responsibility]
+        analysis:
+          gains: [core-workers, reserve-army, peripheral-workers, peasantry]
+          pays: [finance-capital]
+          mechanism: >-
+            Collective refusal turns millions of individual liabilities into a bargaining position and cancels claims that
+            finance holds on future wages.
+          drain: reduces
+          law_of_value: suspends
+          consciousness: class-economic
+
+      - id: debt.household.wages-replaced-by-loans
+        label: Household debt fills the gap left by stagnant wages; finance profits twice
+        claim: >-
+          Workers borrow because wages have stopped covering the cost of living, and finance now earns directly from
+          workers' incomes through mortgages, cards and loans. Debt is a symptom of the wage relation, and only higher
+          wages and public provision end it.
+        voiced: "First they hold your wages down, then they lend you the difference at twenty percent."
+        you: You think household debt exists because wages are too low, and that lenders profit from workers twice over.
+        because: >-
+          Lapavitsas calls it financial expropriation: banks and lenders make profit directly out of the personal incomes
+          of workers, who must borrow for housing, education and health once these are privatized. As wages stagnated
+          from the 1980s in the core and informal incomes never covered needs in the South, debt took their place. Cancel
+          one debt and the same gap produces the next.
+        against:
+          - from: liberalism.chicago
+            text: >-
+              Credit lets people buy a house or an education now and pay from higher future earnings. Most borrowers
+              are not victims; they are investing in themselves.
+          - from: marxism.autonomism
+            text: >-
+              Waiting for higher wages leaves debtors alone now. Debt itself is a front of struggle, and debtors can
+              organize where they stand.
+        sources:
+          - {author: Costas Lapavitsas, title: "Profiting Without Producing: How Finance Exploits Us All", year: 2013}
+        traditions:
+          defining: []
+          typical: [marxism.ml, marxism.trotskyism, marxism.social-reproduction, marxism.dependency, socdem.democratic-socialism]
+          contested: [marxism.autonomism]
+          rejects: [liberalism.chicago, commonsense.self-reliance]
+        presupposes: [wage.nature.price-of-labor-power]
+        analysis:
+          gains: [core-workers, reserve-army, peripheral-workers]
+          pays: [finance-capital]
+          mechanism: >-
+            Naming household debt as a wage problem points demands at employers and public provision rather than at
+            individual creditors, aiming to close the gap that lenders profit from.
+          drain: none
+          law_of_value: regulates
+          consciousness: class-economic
+
+  # ------------------------------------------------------------------
+  - id: welfare.conditions
+    domain: economy
+    layer: horizon
+    question: Should help from the state come with conditions?
+    plain: If you get money from the state because you can't make ends meet, should you have to work, look for work or meet other rules for it?
+    short: conditions on welfare
+    importance: 2
+    positions:
+      - id: welfare.conditions.workfare
+        label: Benefits in return for work or looking for work
+        claim: >-
+          Anyone able to work who receives benefits should be required to work, train or search for jobs in return.
+          Support without obligation traps people outside work.
+        voiced: "Something for something. The taxpayer who gets up at six to work deserves to know that the person on benefits is trying too."
+        you: You think people able to work should have to work or look for work to get benefits.
+        because: >-
+          Mead argued that welfare failed the poor not by being too small but by asking nothing of them, so it never
+          brought them into work, where income, habits and self-respect come from. Work requirements raised employment
+          among recipients in the 1990s. Obligation is a form of respect: it treats the claimant as a citizen with duties,
+          not a dependent.
+        against:
+          - from: socdem.nordic
+            text: >-
+              Sanctions push people into any job, however bad, and cut off the sick and caring who fail the paperwork;
+              training and good jobs do more than threats.
+          - from: marxism.ml
+            text: >-
+              Workfare supplies employers with labor at below the going wage and disciplines everyone else's wage with
+              the threat of it.
+        sources:
+          - {author: Lawrence M. Mead, title: "Beyond Entitlement: The Social Obligations of Citizenship", year: 1986}
+        traditions:
+          defining: [socdem.third-way]
+          typical: [conservatism.fusionism, liberalism.technocratic, conservatism.one-nation, commonsense.self-reliance]
+          contested: [socdem.labourism, conservatism.christian-democracy]
+          rejects: [socdem.nordic, marxism.ml, liberalism.egalitarian, libertarianism.left]
+        excludes: [welfare.conditions.unconditional]
+        analysis:
+          gains: [industrial-capital, petty-bourgeoisie]
+          pays: [reserve-army, core-workers]
+          mechanism: >-
+            Work requirements push the unemployed into the lowest-paid jobs on any terms, enlarging the supply of cheap
+            labor and weakening the bargaining position of those already employed.
+          drain: none
+          law_of_value: extends
+
+      - id: welfare.conditions.unconditional
+        label: Unconditional support; no tests, no sanctions
+        claim: >-
+          Support should be paid without conditions, as a right of citizenship or simply of being human: no job search
+          rules, no sanctions, no means test, ideally as a basic income for all.
+        voiced: "Give people money, and they spend it on what they need. The bureaucrats checking whether they deserve it cost more than the cheats."
+        you: You think state support should come with no conditions attached.
+        because: >-
+          Van Parijs argued that real liberty means having the means to do what you might want, including refusing a bad
+          job; an unconditional income gives everyone that power. Conditions cost more to police than they save, punish
+          the sick and caring, and humiliate claimants. Cash transfer experiments from Namibia to Kenya found people spent
+          unconditional money on food, school and business, not drink.
+        against:
+          - from: socdem.third-way
+            text: >-
+              Money for nothing breaks the bargain on which public support depends: voters will pay for those who try,
+              not for those who don't.
+          - from: marxism.ml
+            text: >-
+              A basic income, cut to what budgets allow, subsidizes low wages and replaces public services with cash;
+              it leaves ownership of production untouched.
+        sources:
+          - {author: Philippe Van Parijs, title: "Real Freedom for All: What (If Anything) Can Justify Capitalism?", year: 1995}
+        traditions:
+          defining: [libertarianism.left]
+          typical: [liberalism.egalitarian, marxism.autonomism, ecology.degrowth, technology.e-acc, socdem.democratic-socialism]
+          contested: [socdem.nordic, liberalism.chicago]
+          rejects: [socdem.third-way, conservatism.fusionism, commonsense.self-reliance]
+        presupposes: [work.future.basic-income-emancipatory]
+        excludes: [welfare.conditions.workfare, welfare.conditions.deserving-poor]
+        analysis:
+          gains: [reserve-army, core-workers, peripheral-workers]
+          pays: [industrial-capital, petty-bourgeoisie]
+          mechanism: >-
+            Unconditional income lets people refuse the worst jobs, raising the floor under wages; set too low and paid
+            for by cutting services, it can instead subsidize employers paying below subsistence.
+          drain: none
+          law_of_value: regulates
+
+      - id: welfare.conditions.deserving-poor
+        label: Help the deserving poor, not the able-bodied idle
+        claim: >-
+          Those who cannot work, the sick, the old, widows and children, deserve help. Those who can work and will not do
+          not, and giving them support undermines both them and the people who pay for it.
+        voiced: "If anyone is not willing to work, let him not eat. The widow and the orphan, yes. The man who won't get off the sofa, no."
+        you: You think help should go to those who can't work, not to those who won't.
+        because: >-
+          Scripture commands care for the widow and the orphan and warns that whoever will not work shall not eat.
+          Murray argued that welfare that pays regardless of conduct made it rational to stop working and stop marrying,
+          trapping the very people it meant to help. Telling deserving from undeserving is not cruelty; it keeps public
+          generosity alive.
+        against:
+          - from: socdem.labourism
+            text: >-
+              The line between deserving and undeserving was drawn by the 1834 Poor Law to make the workhouse worse than
+              the worst job. It has always been drawn to suit employers.
+          - from: religious.liberation-theology
+            text: >-
+              Jesus did not means-test the five thousand. The poor are not to be sorted; they are to be served.
+        sources:
+          - {author: Charles Murray, title: "Losing Ground: American Social Policy, 1950–1980", year: 1984}
+          - {author: Royal Commission into the Operation of the Poor Laws, title: "Report from His Majesty's Commissioners for Inquiring into the Administration and Practical Operation of the Poor Laws", year: 1834}
+        traditions:
+          defining: [conservatism.traditionalist]
+          typical: [conservatism.evangelical-right, commonsense.self-reliance, conservatism.fusionism, commonsense.declinist, conservatism.right-populism]
+          contested: [conservatism.cst]
+          rejects: [religious.liberation-theology, libertarianism.left, marxism.ml]
+        presupposes: [inequality.justice.earned-desert]
+        excludes: [welfare.conditions.unconditional]
+        analysis:
+          gains: [petty-bourgeoisie, industrial-capital]
+          pays: [reserve-army]
+          mechanism: >-
+            Sorting the poor into deserving and undeserving keeps the unemployed under pressure to take any work and
+            turns working taxpayers against claimants instead of employers.
+          drain: none
+          law_of_value: extends
+
+      - id: welfare.conditions.conditional-cash
+        label: Cash for poor families on condition that children go to school and the clinic
+        claim: >-
+          Pay poor families directly, mostly mothers, on condition that their children attend school and get health
+          checks. The cash relieves poverty now and the conditions build children's chances later.
+        voiced: "Bolsa Família put money in mothers' hands and children in classrooms. That's not charity; it's an investment in the next generation."
+        you: You support cash payments to poor families that require their children to attend school and see a doctor.
+        because: >-
+          Mexico's Progresa, designed by Santiago Levy in 1997, and Brazil's Bolsa Família reached tens of millions of
+          families cheaply, with evaluations showing more schooling and better child health. The World Bank's review
+          found conditions raised school enrollment beyond what cash alone did. Paying mothers directly bypasses local
+          bosses and middlemen.
+        against:
+          - from: libertarianism.left
+            text: >-
+              The poor know their own needs; the conditions add surveillance and punish families when a school or clinic
+              is too far away to reach.
+          - from: marxism.dependency
+            text: >-
+              Small transfers manage poverty cheaply while the wages, land and public services that would end it are left
+              as they are; they are structural adjustment with a human face.
+        sources:
+          - {author: Santiago Levy, title: "Progress Against Poverty: Sustaining Mexico's Progresa-Oportunidades Program", year: 2006}
+          - {author: Ariel Fiszbein and Norbert Schady, title: "Conditional Cash Transfers: Reducing Present and Future Poverty", year: 2009}
+        traditions:
+          defining: [liberalism.technocratic]
+          typical: [socdem.left-populism, socdem.third-way, liberalism.social, conservatism.christian-democracy]
+          contested: [nationalism.peronism]
+          rejects: [libertarianism.ancap, marxism.dependency]
+        analysis:
+          gains: [reserve-army, peasantry, peripheral-workers]
+          pays: [finance-capital]
+          mechanism: >-
+            Small, targeted transfers raise the consumption of the poorest at little fiscal cost and shift the cost of
+            schooling and health onto mothers' compliance, without touching wages or land.
+          drain: softens
+          law_of_value: regulates
+
+      - id: welfare.conditions.universal-entitlement
+        label: Universal entitlements for all citizens, not means-tested handouts for the poor
+        claim: >-
+          The best welfare is universal: pensions, child benefits, health and unemployment insurance as rights of every
+          citizen or contributor, without means tests or behavioral rules. Benefits for the poor alone become poor
+          benefits.
+        voiced: "A welfare state for everyone is a welfare state everyone defends. Means tests divide the middle from the poor and starve both."
+        you: You want welfare as universal entitlements for everyone, not tested and conditional help for the poor.
+        because: >-
+          Esping-Andersen showed that universalist Nordic systems decommodified labor most and won the most durable
+          support, because the middle classes used them too. Titmuss argued that services for the poor become poor
+          services. Without means tests there is no stigma, no poverty trap at the threshold, and no army of inspectors.
+        against:
+          - from: liberalism.technocratic
+            text: >-
+              Paying benefits to the rich is a waste of money that could go to the poor; targeting buys more poverty
+              reduction per dollar.
+          - from: marxism.dependency
+            text: >-
+              The universal Nordic welfare state rested on high export earnings in a world economy that drains the South;
+              it is a model for core countries, not for the world.
+        sources:
+          - {author: Gøsta Esping-Andersen, title: "The Three Worlds of Welfare Capitalism", year: 1990}
+          - {author: Richard M. Titmuss, title: "Commitment to Welfare", year: 1968}
+        traditions:
+          defining: [socdem.nordic]
+          typical: [socdem.labourism, socdem.democratic-socialism, socdem.keynesian, socdem.fabian]
+          contested: [conservatism.christian-democracy]
+          rejects: [liberalism.chicago, socdem.third-way, conservatism.fusionism]
+        presupposes: [welfare.state.social-citizenship]
+        excludes: [welfare.conditions.deserving-poor]
+        analysis:
+          gains: [core-workers, professional-managerial, reserve-army]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >-
+            Universal benefits remove the threat of destitution from the whole workforce, strengthening wage bargaining,
+            and bind the middle classes into defending the tax base that pays for them.
+          drain: none
+          law_of_value: regulates
+          consciousness: class-economic
+
+      - id: welfare.conditions.discipline-labor
+        label: Conditions exist to drive people into cheap work; fight them
+        claim: >-
+          The rules on welfare are not about fairness but about labor: relief expands when the poor are unruly and is cut
+          and loaded with conditions to push them back into low-wage work. Claimants should organize against the rules.
+        voiced: "Relief is given to quiet the poor and withdrawn to make them work. Every sanction is a wage cut for somebody."
+        you: You think welfare conditions exist to push poor people into cheap jobs, and claimants should organize against them.
+        because: >-
+          Piven and Cloward traced how relief expanded in moments of unrest, in the 1930s and the 1960s, and contracted
+          with work rules when order returned, from the Elizabethan poor law onward. The workhouse was made worse than the
+          worst job on purpose. The welfare rights movement won by organizing claimants to demand what they were owed.
+        against:
+          - from: socdem.third-way
+            text: >-
+              Most claimants want work, and help finding it is a service, not a punishment; treating every rule as
+              oppression leaves people stuck in poverty.
+          - from: conservatism.traditionalist
+            text: >-
+              Society has a right to expect effort from those it supports. A relief system with no expectations is not
+              compassion but abandonment.
+        sources:
+          - {author: Frances Fox Piven and Richard A. Cloward, title: "Regulating the Poor: The Functions of Public Welfare", year: 1971}
+        traditions:
+          defining: []
+          typical: [marxism.autonomism, socdem.democratic-socialism, marxism.trotskyism, marxism.ml, anarchism.communist]
+          rejects: [socdem.third-way, conservatism.traditionalist, commonsense.self-reliance]
+        presupposes: [welfare.state.capital-reproduction]
+        excludes: [welfare.conditions.workfare]
+        analysis:
+          gains: [reserve-army, core-workers]
+          pays: [industrial-capital, petty-bourgeoisie]
+          mechanism: >-
+            Organizing claimants against conditions keeps the unemployed from being forced to undercut wages, which
+            protects the bargaining position of employed workers too.
+          drain: none
+          law_of_value: regulates
+          consciousness: class-economic
+
+      - id: welfare.conditions.charity-not-state
+        label: Help belongs to families, churches and neighbors who know the person
+        claim: >-
+          Real help is personal. Churches, charities and neighbors can tell need from idleness and give what a person
+          needs, including a push; a state check given by strangers makes dependency, not recovery.
+        voiced: "Compassion means suffering with. A government check doesn't know your name, and it can't tell you to get sober."
+        you: You think help for the poor should come from families, churches and charities rather than the state.
+        because: >-
+          Olasky's history of American charity argues that nineteenth-century charities succeeded by knowing each case,
+          demanding effort and offering friendship, and that state welfare replaced this with impersonal payments that
+          asked nothing. The zakat committee and the parish know who is in need; the ministry does not.
+        against:
+          - from: socdem.labourism
+            text: >-
+              Charity depends on the giver's mood and money; it was the failure of private charity in the Depression that
+              built the welfare state.
+          - from: marxism.ml
+            text: >-
+              Charity lets the rich choose which poor to help, and on what terms of obedience.
+        sources:
+          - {author: Marvin Olasky, title: "The Tragedy of American Compassion", year: 1992}
+        traditions:
+          defining: [conservatism.evangelical-right]
+          typical: [libertarianism.minarchist, conservatism.traditionalist, libertarianism.paleo, conservatism.distributism]
+          contested: [conservatism.cst, religious.islamism-brotherhood]
+          rejects: [socdem.labourism, socdem.nordic, marxism.ml]
+        presupposes: [welfare.state.coercive-dependency]
+        analysis:
+          gains: [petty-bourgeoisie, industrial-capital, finance-capital]
+          pays: [reserve-army]
+          mechanism: >-
+            Replacing public entitlements with charity cuts the tax claim on property and leaves the poor dependent on the
+            judgment of donors, who can attach conditions of conduct.
+          drain: none
+          law_of_value: none

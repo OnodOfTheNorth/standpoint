@@ -20,7 +20,7 @@ nodes:
     premises:
       - id: take-or-leave
         text: The premise that anyone needs to say anything. The fare is the app's to set. Take it or leave it.
-        evidence: [{position: wage.nature.voluntary-exchange, w: 2}]
+        evidence: [{position: wage.nature.voluntary-exchange, w: 2}, {position: work.status.independent-contractor, w: 1}]
     conditions:
       - id: other-camps
         text: It depends what the other base camps do.
@@ -31,6 +31,7 @@ nodes:
         set: {route: strike}
         evidence:
           - {position: change.means.strike-and-direct-action, w: 3}
+          - {position: work.status.piece-wage, w: 1}
         probe:
           ask: What makes forty drivers who compete for the same orders a "we"?
           options:
@@ -95,24 +96,28 @@ nodes:
         cause: structures
         evidence:
           - {position: workplace.conflict.structural-antagonism, w: 3}
+          - {position: work.status.employees, w: 2}
         next: [{if: {flag: {key: route, eq: strike}}, to: arc.platform.03a}, {to: arc.platform.03b}]
       - id: owner
         text: A small businessman. I own my bike and my hours. Nobody clocks me in.
         cause: ideas
         evidence:
           - {position: wage.nature.voluntary-exchange, w: 3}
+          - {position: work.status.independent-contractor, w: 3}
         next: [{if: {flag: {key: route, eq: strike}}, to: arc.platform.03a}, {to: arc.platform.03b}]
       - id: program
         text: A servant. It gives the orders, sets the pay and fires without a hearing. It just calls itself a program.
         cause: interests
         evidence:
           - {position: workplace.conflict.private-government, w: 3}
+          - {position: work.status.piece-wage, w: 2}
         next: [{if: {flag: {key: route, eq: strike}}, to: arc.platform.03a}, {to: arc.platform.03b}]
       - id: partner
         text: A partner with a bad deal. Fix the terms and the partnership is fine.
         cause: interests
         evidence:
           - {position: workplace.conflict.harmony-of-interests, w: 2}
+          - {position: work.status.third-category, w: 2}
         next: [{if: {flag: {key: route, eq: strike}}, to: arc.platform.03a}, {to: arc.platform.03b}]
       - id: passing
         text: Someone between jobs. Nobody does this forever.
@@ -179,24 +184,28 @@ nodes:
         text: Take it. A wage, insurance and a pension are worth a shift pattern.
         evidence:
           - {position: work.future.dignity-of-work, w: 3}
+          - {position: work.status.employees, w: 3}
         consequence: Fifty thousand drivers start looking for other work. The ones who stay start looking at each other.
         next: arc.platform.04
       - id: cap
         text: Stay partners, but write a hard cap on the commission into law and enforce it.
         evidence:
           - {position: workplace.conflict.pluralist-bargaining, w: 2}
+          - {position: work.status.third-category, w: 2}
         consequence: The ministry likes the cap. The company finds three new fees that are not called commission.
         next: arc.platform.04
       - id: open
         text: Neither. Keep the door open. Fifty thousand people need the work more than anyone needs a pension.
         evidence:
           - {position: work.future.flexible-markets, w: 3}
+          - {position: work.status.independent-contractor, w: 2}
         consequence: The draft is shelved. Fares stay where the app put them.
         next: arc.platform.04
       - id: coop
         text: Neither. The drivers should own the app. A cooperative pays its members, not shareholders in Singapore.
         evidence:
           - {position: work.future.cooperatives, w: 3}
+          - {position: work.status.platform-cooperative, w: 3}
         consequence: Three base camps pledge money for a drivers' app. Nobody yet knows how to build one.
         next: arc.platform.04
 
@@ -221,6 +230,7 @@ nodes:
         cost: The queue goes to a camp in Cengkareng. The collectors take your motorbike from outside a mosque on Saturday.
         evidence:
           - {position: solidarity.basis.shared-class, w: 3}
+          - {position: picket.line.never-cross, w: 2}
         next: arc.platform.05
       - id: sign
         text: Sign. Your forty come first; the others have their own admins.
@@ -228,6 +238,7 @@ nodes:
         cost: Your forty earn half again as much. The other camps call you the app's dogs, and six of your drivers leave for them.
         evidence:
           - {position: solidarity.basis.self-interest, w: 2}
+          - {position: picket.line.need-first, w: 1}
         next: arc.platform.05
       - id: both
         text: Sign, take the queue, and walk out anyway when it counts.
@@ -289,6 +300,7 @@ nodes:
         evidence:
           - {position: solidarity.basis.self-interest, w: 2}
           - {position: change.means.individual-exit, w: 1}
+          - {position: picket.line.need-first, w: 1}
         consequence: You earn a week's money in one night. Somebody screenshots your green dot on the map.
         next: [{if: {flag: {key: joined, eq: true}}, to: arc.platform.06a}, {to: arc.platform.06b}]
 
@@ -394,6 +406,7 @@ nodes:
         cause: structures
         evidence:
           - {position: work.future.cooperatives, w: 3}
+          - {position: work.status.platform-cooperative, w: 3}
       - id: city
         text: The city owns it, like the buses, and runs it at cost.
         cause: structures
@@ -405,11 +418,13 @@ nodes:
         evidence:
           - {position: work.future.dignity-of-work, w: 2}
           - {position: workplace.conflict.pluralist-bargaining, w: 1}
+          - {position: work.status.employees, w: 2}
       - id: rival
         text: A second company. Competition is the only boss that listens.
         cause: interests
         evidence:
           - {position: work.future.flexible-markets, w: 2}
+          - {position: work.status.independent-contractor, w: 1}
       - id: out
         text: Nothing makes it decent. Save, buy a food stall, get out.
         cause: individuals

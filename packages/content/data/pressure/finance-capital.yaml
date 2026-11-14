@@ -14,7 +14,7 @@ nodes:
     premises:
       - id: no-sides
         text: The premise that a pension fund should take sides in a foreign conflict at all.
-        evidence: [{position: finance.control.free-flows, w: 1}, {position: intl.sanctions.counterproductive, w: 1}]
+        evidence: [{position: finance.control.free-flows, w: 1}, {position: intl.sanctions.counterproductive, w: 1}, {position: investment.ethics.returns-only, w: 2}]
     conditions:
       - id: if-asked
         text: It depends whether the occupied people themselves are really asking for it.
@@ -24,17 +24,17 @@ nodes:
         text: Advise selling all of it within six months.
         pressure: principle
         cost: Returns drop 0.4 points a year. Your fee falls by a third, and two trustees call you political.
-        evidence: [{position: intl.sanctions.solidarity-boycott, w: 2}, {position: intl.sovereignty.nations-set-own-course, w: 1}]
+        evidence: [{position: intl.sanctions.solidarity-boycott, w: 2}, {position: intl.sovereignty.nations-set-own-course, w: 1}, {position: investment.ethics.divest, w: 3}]
       - id: hold
         text: Advise holding. The fund's duty is to the pensioners' returns, not to foreign policy.
         pressure: interest
         cost: Your fee is safe. Members name you at the annual meeting, and the motion comes back next year.
-        evidence: [{position: finance.control.free-flows, w: 2}, {position: intl.sanctions.counterproductive, w: 1}]
+        evidence: [{position: finance.control.free-flows, w: 2}, {position: intl.sanctions.counterproductive, w: 1}, {position: investment.ethics.returns-only, w: 3}]
       - id: engage
         text: "Advise holding and \"engaging\": a letter to the finance ministry about human rights."
         pressure: mixed
         cost: Returns unchanged. The ministry replies politely; the occupation goes on, and so does the campaign.
-        evidence: [{position: intl.sovereignty.conditional-on-rights, w: 1}, {position: change.means.lawful-persuasion, w: 1}]
+        evidence: [{position: intl.sovereignty.conditional-on-rights, w: 1}, {position: change.means.lawful-persuasion, w: 1}, {position: investment.ethics.shareholder-activism, w: 2}]
       - id: wait-for-state
         text: Advise selling only if your own government imposes sanctions, so every fund sells together.
         pressure: mixed
@@ -121,4 +121,4 @@ nodes:
         text: Stay, oppose the tax, and give the same sum each year to causes you choose.
         pressure: mixed
         cost: About 240,000 a year leaves your hands, but you decide where it goes and nobody votes on it.
-        evidence: [{position: inequality.justice.stewardship, w: 2}, {position: welfare.state.subsidiarity, w: 1}]
+        evidence: [{position: inequality.justice.stewardship, w: 2}, {position: welfare.state.subsidiarity, w: 1}, {position: welfare.conditions.charity-not-state, w: 1}]

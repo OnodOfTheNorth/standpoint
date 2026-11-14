@@ -338,12 +338,13 @@ nodes:
     premises:
       - id: normal
         text: The premise that this is a bribe. It is how things have always been done here, and he is family, more or less.
-        evidence: [{position: family.form.kin-and-lineage, w: 1}]
+        evidence: [{position: family.form.kin-and-lineage, w: 1}, {position: clientelism.patronage.community-bond, w: 2}]
     options:
       - id: accept
         text: Accept. Your son is not a slogan.
         evidence:
           - {position: cs.own-first.family-first, w: 3}
+          - {position: clientelism.patronage.survival, w: 2}
         consequence: The money arrives in a week. So does a list of the teachers who haven't said yes yet.
         next: arc.family.07
       - id: secret
@@ -351,18 +352,21 @@ nodes:
         evidence:
           - {position: cs.rigged.system-rigged, w: 1}
           - {position: cs.own-first.family-first, w: 1}
+          - {position: clientelism.patronage.survival, w: 1}
         consequence: The money arrives. After the election, the party office counts the votes in your school's ballot box.
         next: arc.family.07
       - id: refuse
         text: Refuse, and campaign for the independents. All of them means all of them.
         evidence:
           - {position: cs.clean-house.throw-them-all-out, w: 3}
+          - {position: clientelism.patronage.corruption, w: 2}
         consequence: The independents win two seats. Your hearing is postponed, then postponed again.
         next: arc.family.07
       - id: union
         text: Refuse, and tell the teachers' union. If he is buying teachers, the union should know the price.
         evidence:
           - {position: unions.role.class-organ, w: 2}
+          - {position: clientelism.patronage.class-control, w: 1}
         consequence: The union publishes the offer. Three other schools had the same call.
         next: arc.family.07
 
@@ -400,6 +404,7 @@ nodes:
         cause: interests
         evidence:
           - {position: cs.rigged.system-rigged, w: 2}
+          - {position: clientelism.patronage.class-control, w: 1}
       - id: readers
         text: Not the faith. Men reading the faith.
         cause: ideas

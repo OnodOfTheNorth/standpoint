@@ -241,6 +241,7 @@ nodes:
         evidence:
           - {position: development.path.integration, w: 2}
           - {position: exchange.unequal.mutual-gain, w: 1}
+          - {position: picket.line.need-first, w: 1}
         consequence: Your team's queue moves. By Wednesday most of the floor follows. The client sends a thank-you to the minister.
         next: [{if: {flag: {key: stopped, eq: true}}, to: arc.annotators.06a}, {to: arc.annotators.06b}]
       - id: minister
@@ -249,6 +250,7 @@ nodes:
         set: {stopped: false}
         evidence:
           - {position: development.path.integration, w: 3}
+          - {position: picket.line.union-coercion, w: 1}
         consequence: The stoppage collapses by Wednesday. The firm puts your team's picture in its brochure.
         next: [{if: {flag: {key: stopped, eq: true}}, to: arc.annotators.06a}, {to: arc.annotators.06b}]
       - id: stop
@@ -258,6 +260,7 @@ nodes:
         evidence:
           - {position: unions.role.class-organ, w: 2}
           - {position: exchange.unequal.value-chain-capture, w: 1}
+          - {position: picket.line.never-cross, w: 1}
         consequence: The queue stays empty for six days. The chatbot's next update ships a week late, and nobody in San Francisco says why.
         next: [{if: {flag: {key: stopped, eq: true}}, to: arc.annotators.06a}, {to: arc.annotators.06b}]
       - id: publish
@@ -295,6 +298,7 @@ nodes:
         text: Ask them to refuse it, and demand one rate card for both cities. Same client, same queue.
         evidence:
           - {position: solidarity.basis.shared-class, w: 3}
+          - {position: picket.line.win-the-scab, w: 2}
         consequence: Manila agrees. The client finds a third site, in a country neither union has heard of.
         next: arc.annotators.07
       - id: take-it
@@ -302,6 +306,7 @@ nodes:
         evidence:
           - {position: development.path.integration, w: 1}
           - {position: exchange.unequal.mutual-gain, w: 1}
+          - {position: picket.line.need-first, w: 1}
         consequence: Manila takes it. Your union shrinks by half. The $2.40 holds for the half that's left.
         next: arc.annotators.07
       - id: sovereign

@@ -1,0 +1,717 @@
+# Gaps, part 3: holding police to account, a migrant's loyalty, the political university.
+problematics:
+  # ------------------------------------------------------------------
+  - id: police.accountability
+    domain: state
+    layer: strategy
+    question: When police do wrong, who should hold them to account, and how?
+    plain: An officer kills an unarmed man. Who should judge it, and what should change?
+    short: police accountability
+    importance: 2
+    positions:
+      - id: police.accountability.back-the-police
+        label: Back the police; constant second-guessing gets people killed
+        claim: >-
+          Officers make split-second decisions in danger. Existing law and internal review are enough; campaigns against
+          the police make officers hesitate, crime rises, and the poor neighborhoods that most need policing suffer first.
+        voiced: "When cops are afraid to do their jobs, it's the law-abiding residents of high-crime neighborhoods who pay with their lives."
+        you: You think police already face enough scrutiny and need public support more than new oversight.
+        because: >-
+          Mac Donald argues that after the protests of 2014 officers pulled back from proactive policing and homicides rose
+          in the cities that most needed protection. Most uses of force are lawful, and the rare wrongful one is dealt with
+          by courts. Officers who fear prosecution for every judgment call will stop making them, and criminals will notice.
+        against:
+          - from: marxism.black-radical
+            text: >-
+              "Backing the police" has meant acquitting officers in case after case on video. The neighborhoods
+              policed hardest are the ones whose residents protest.
+          - from: libertarianism.minarchist
+            text: >-
+              Every other citizen who kills someone faces a jury. Officers protected by qualified immunity and union rules
+              answer to nobody.
+        sources:
+          - {author: Heather Mac Donald, title: "The War on Cops", year: 2016}
+        traditions:
+          defining: [conservatism.right-populism]
+          typical: [conservatism.fusionism, conservatism.national, commonsense.declinist, conservatism.evangelical-right]
+          contested: [conservatism.burkean]
+          rejects: [marxism.black-radical, anarchism.communist, libertarianism.minarchist, liberalism.progressive]
+        presupposes: [police.role.order-maintenance]
+        excludes: [police.accountability.abolition]
+        analysis:
+          gains: [petty-bourgeoisie, landed-capital]
+          pays: [reserve-army, core-workers]
+          mechanism: >-
+            Shielding police from outside review keeps their discretion over the poor and racialized neighborhoods they
+            patrol intact, protecting property and order on owners' terms at the cost of those most often stopped.
+          drain: none
+          law_of_value: none
+
+      - id: police.accountability.professional-standards
+        label: Better training, internal discipline and body cameras
+        claim: >-
+          Police misconduct is best handled inside a professional service: clear rules on force, better training, body
+          cameras, early warning of problem officers and firm internal discipline.
+        voiced: "Professional police police themselves. Set the standard, train to it, record everything, and fire the ones who fail it."
+        you: You think police misconduct is best tackled by professional standards, training and internal discipline.
+        because: >-
+          The professional model of policing, laid out by O. W. Wilson, replaced political patronage forces with trained,
+          supervised officers. The 2015 presidential task force on policing recommended de-escalation training, data on use
+          of force and stronger internal review. Professionals know the job; outsiders who do not understand it make
+          worse rules.
+        against:
+          - from: liberalism.progressive
+            text: >-
+              Internal review clears officers in nearly every case. No profession can be trusted to judge its own members'
+              killings.
+          - from: anarchism.communist
+            text: >-
+              Training and cameras have been funded again and again after each killing; the budget grows and the killings
+              continue.
+        sources:
+          - {author: O. W. Wilson, title: Police Administration, year: 1950}
+          - {author: "President's Task Force on 21st Century Policing", title: Final Report of the President's Task Force on 21st Century Policing, year: 2015}
+        traditions:
+          defining: []
+          typical: [liberalism.technocratic, conservatism.one-nation, conservatism.christian-democracy, socdem.third-way, conservatism.burkean]
+          contested: [liberalism.social]
+          rejects: [anarchism.communist, marxism.black-radical]
+        presupposes: [police.role.public-safety]
+        analysis:
+          gains: [professional-managerial]
+          pays: []
+          mechanism: >-
+            Internal reform enlarges police budgets for training and technology and keeps judgment over misconduct inside
+            the force, leaving what police enforce and for whom unchanged.
+          drain: none
+          law_of_value: none
+
+      - id: police.accountability.civilian-oversight
+        label: Independent civilian oversight, prosecution and an end to legal shields
+        claim: >-
+          Police must answer to people outside the force: independent civilian review boards with real powers, special
+          prosecutors for killings by police, public records of misconduct, and no special legal immunity.
+        voiced: "No one is above the law, including the people who enforce it. An independent body, a real prosecutor, and the same courts as everyone else."
+        you: You want independent civilian bodies and the courts, not the police, to judge police misconduct.
+        because: >-
+          Walker's studies of citizen oversight show that external review increases public trust and, where it has power to
+          investigate and discipline, changes police practice. Countries from Northern Ireland to South Africa and Kenya
+          created independent police complaints bodies after periods of abuse. Accountability means judgment by someone
+          who does not share the uniform.
+        against:
+          - from: conservatism.right-populism
+            text: >-
+              Review boards staffed by activists put officers on trial for doing their jobs and drive the good ones out.
+          - from: anarchism.communist
+            text: >-
+              Oversight boards have existed for decades in American cities; they rarely discipline anyone, and they lend
+              the institution a legitimacy it does not deserve.
+        sources:
+          - {author: Samuel Walker, title: "Police Accountability: The Role of Citizen Oversight", year: 2001}
+        traditions:
+          defining: [liberalism.progressive]
+          typical: [liberalism.social, socdem.democratic-socialism, socdem.nordic, liberalism.egalitarian, liberalism.internationalist]
+          contested: [libertarianism.minarchist]
+          rejects: [conservatism.right-populism, anarchism.communist]
+        presupposes: [police.role.public-safety, law.nature.rule-of-law]
+        analysis:
+          gains: [core-workers, reserve-army, professional-managerial]
+          pays: []
+          mechanism: >-
+            External review adds legal checks on how force is used against the poor and racialized, while keeping the police
+            and their role in protecting property in place.
+          drain: none
+          law_of_value: none
+
+      - id: police.accountability.community-control
+        label: Put the police under the control of the neighborhoods they patrol
+        claim: >-
+          Police should be hired, directed and fired by elected councils of the neighborhoods they serve, and officers
+          should live there. Only community control makes police answer to the people they police.
+        voiced: "We want an immediate end to police brutality. The community must control the police in its own neighborhood, not the downtown power structure."
+        you: You think police should be controlled by elected councils of the neighborhoods they patrol.
+        because: >-
+          The Black Panther Party's program demanded an end to police brutality, and in 1971 the Panthers put community
+          control of police on the Berkeley ballot. An occupying force answers to whoever sends it; a force chosen by the
+          neighborhood answers to the neighborhood. The same principle runs through community policing assemblies in
+          Rojava and the Zapatista communities.
+        against:
+          - from: liberalism.progressive
+            text: >-
+              Neighborhood control means a patchwork of standards and a different justice on every block; equal rights
+              need one law.
+          - from: anarchism.communist
+            text: >-
+              Community-controlled police are still police. Changing who gives the orders does not change what policing
+              does.
+        sources:
+          - {author: Black Panther Party, title: "The Ten-Point Program", year: 1966}
+        traditions:
+          defining: [marxism.black-radical]
+          typical: [anarchism.communalism, anarchism.confederalism, nationalism.black-nationalism, zapatismo, nationalism.indigenous-sovereignty]
+          contested: [anarchism.communist]
+          rejects: [conservatism.right-populism, liberalism.technocratic]
+        presupposes: [police.role.colonial-occupation]
+        analysis:
+          gains: [reserve-army, core-workers]
+          pays: [landed-capital, petty-bourgeoisie]
+          mechanism: >-
+            Local control shifts command over policing from city and state authorities, which answer to property owners
+            and business, to residents of poor neighborhoods, changing whose interests policing protects.
+          drain: none
+          law_of_value: none
+          consciousness: hegemonic
+
+      - id: police.accountability.abolition
+        label: Accountability is a trap; shrink the police and fund what keeps people safe
+        claim: >-
+          Reforms and oversight have been tried for a century and the killings continue, because policing does what it was
+          built to do. Every reform grows police budgets. The answer is to cut them and move the money to housing, health
+          and community safety.
+        voiced: "Hope is a discipline. Defund the police. You can't reform an institution that's working exactly as designed."
+        you: You think police can't be made accountable, and money should move from police to other ways of keeping people safe.
+        because: >-
+          Vitale shows that each wave of reform since the 1960s, from training to community policing to body cameras, has
+          expanded police reach and budgets without reducing violence. Kaba argues that accountability through the
+          criminal system cannot work for an institution that is the criminal system. Mental health teams, violence
+          interrupters and housing prevent harm that police only respond to.
+        against:
+          - from: liberalism.social
+            text: >-
+              When police pull back, the poor are the ones left with violence; most residents of high-crime neighborhoods
+              want better policing, not none.
+          - from: marxism.ml
+            text: >-
+              Defunding without power over the state hands security to private guards for the rich. The question is which
+              class controls the force, not whether there is one.
+        sources:
+          - {author: Alex S. Vitale, title: The End of Policing, year: 2017}
+          - {author: Mariame Kaba, title: "We Do This 'Til We Free Us: Abolitionist Organizing and Transforming Justice", year: 2021}
+        traditions:
+          defining: [anarchism.communist]
+          typical: [marxism.black-radical, anarchism.insurrectionary, feminism.black, marxism.autonomism]
+          contested: [socdem.democratic-socialism]
+          rejects: [conservatism.right-populism, liberalism.technocratic, marxism.ml]
+        presupposes: [police.role.abolition]
+        excludes: [police.accountability.back-the-police, police.accountability.professional-standards]
+        analysis:
+          gains: [reserve-army, core-workers]
+          pays: [landed-capital, petty-bourgeoisie]
+          mechanism: >-
+            Moving budgets from police to services reduces the coercive management of the unemployed and racialized poor,
+            and owners of property lose a publicly funded guard.
+          drain: none
+          law_of_value: none
+
+      - id: police.accountability.personal-liability
+        label: Make officers personally liable like any other citizen
+        claim: >-
+          Police should have no special legal protections: end qualified immunity, make officers and their departments pay
+          damages, require liability insurance, and let juries judge them as they would anyone else.
+        voiced: "A badge is not a license. If you violate someone's rights, you pay, just like anyone else would."
+        you: You think police should lose special legal protections and pay personally when they violate people's rights.
+        because: >-
+          The state's agents are not above the law that binds everyone else. Rothbard argued that police are a service
+          and should answer for harm as any provider does. Qualified immunity, a doctrine made by judges, lets officers
+          escape suits unless an earlier court ruled on nearly identical facts. Price misconduct, and departments
+          will stop buying it.
+        against:
+          - from: conservatism.right-populism
+            text: >-
+              No one will take a job where one bad call can cost them their house. Liability will empty the ranks.
+          - from: marxism.black-radical
+            text: >-
+              Insurance prices risk; it does not change what police are for. The poorest will simply be policed by the
+              cheapest.
+        sources:
+          - {author: Murray N. Rothbard, title: "For a New Liberty: The Libertarian Manifesto", year: 1973}
+        traditions:
+          defining: [libertarianism.minarchist]
+          typical: [libertarianism.ancap, libertarianism.objectivist, liberalism.classical, libertarianism.paleo]
+          contested: [conservatism.fusionism]
+          rejects: [conservatism.right-populism]
+        presupposes: [rights.basis.natural-rights]
+        analysis:
+          gains: [petty-bourgeoisie, professional-managerial]
+          pays: []
+          mechanism: >-
+            Civil liability lets those with lawyers and standing recover damages for police abuse, which disciplines police
+            through costs while leaving their role in protecting property unchanged.
+          drain: none
+          law_of_value: extends
+
+  # ------------------------------------------------------------------
+  - id: migrant.loyalty
+    domain: nation
+    layer: horizon
+    question: Where does a migrant's loyalty belong?
+    plain: "You moved from one country to another. Who do you owe: the country you left, the one you live in, your people, your faith, your class?"
+    short: a migrant's loyalty
+    importance: 2
+    positions:
+      - id: migrant.loyalty.new-country-first
+        label: Those who settle here owe their loyalty here, undivided
+        claim: >-
+          A person who chooses a new country takes on its loyalty. Old ties can be cherished in private, but political
+          loyalty is owed to the country of citizenship, and divided loyalties weaken the nation.
+        voiced: "There is no room in this country for hyphenated Americanism. You came here; this is your country now. If you don't like it, nobody's stopping you going back."
+        you: You think migrants owe their loyalty undivided to their new country.
+        because: >-
+          Theodore Roosevelt warned in 1915 that a nation of hyphenated loyalties is no nation. Huntington argued that
+          large diasporas with dual citizenship and ties to nearby homelands assimilate more slowly and divide national
+          identity. A nation is a community of shared obligation; the obligation cannot be half held.
+        against:
+          - from: liberalism.egalitarian
+            text: >-
+              People can love two countries as they love two parents. Demanding a single loyalty treats migrants as suspects
+              and breaks families across borders.
+          - from: marxism.ml
+            text: >-
+              Loyalty to the flag of the country that recruited you for its low-wage jobs is loyalty to your employer's
+              state.
+        sources:
+          - {author: Theodore Roosevelt, title: "Americanism (address to the Knights of Columbus)", year: 1915}
+          - {author: Samuel P. Huntington, title: "Who Are We? The Challenges to America's National Identity", year: 2004}
+        traditions:
+          defining: [conservatism.national]
+          typical: [nationalism.civic, conservatism.right-populism, commonsense.look-after-your-own, conservatism.paleo]
+          contested: [liberalism.republican]
+          rejects: [liberalism.egalitarian, marxism.ml, religious.islamism-brotherhood]
+        presupposes: [nation.belonging.assimilation]
+        excludes: [migrant.loyalty.dual-belonging]
+        analysis:
+          gains: [industrial-capital, petty-bourgeoisie]
+          pays: [peripheral-workers]
+          mechanism: >-
+            Demanding single loyalty from migrants makes their residence conditional on political conformity, which weakens
+            their ability to organize, including with workers in the countries they came from.
+          drain: sustains
+          law_of_value: none
+
+      - id: migrant.loyalty.dual-belonging
+        label: You can belong to two countries at once
+        claim: >-
+          Migrants can be loyal citizens of their new country and keep real ties to the old one. Dual citizenship,
+          languages and communities are normal, and requiring a single loyalty serves nobody.
+        voiced: "I pay taxes here, my children go to school here, and I send money home. Why should I have to choose?"
+        you: You think migrants can belong to both their old and new countries.
+        because: >-
+          Kymlicka argues that accommodating minority cultures is compatible with, and strengthens, attachment to the
+          liberal state. Most states now allow dual citizenship. People with ties to two countries carry trade, language
+          and understanding between them; obeying the law and sharing in public life is all a liberal state can ask.
+        against:
+          - from: conservatism.national
+            text: >-
+              A citizen of two states votes in both and may be drafted by both. When their interests collide, one loyalty
+              wins, and the nation has a right to know which.
+          - from: marxism.ml
+            text: >-
+              "Belonging" in two countries usually means working in one for low wages and sending them to the other; the
+              question is who profits from both.
+        sources:
+          - {author: Will Kymlicka, title: "Multicultural Citizenship: A Liberal Theory of Minority Rights", year: 1995}
+        traditions:
+          defining: [liberalism.egalitarian]
+          typical: [liberalism.social, liberalism.progressive, socdem.nordic, liberalism.internationalist]
+          contested: [nationalism.civic]
+          rejects: [conservatism.national, conservatism.right-populism]
+        presupposes: [nation.belonging.multicultural]
+        excludes: [migrant.loyalty.new-country-first]
+        analysis:
+          gains: [professional-managerial, peripheral-workers]
+          pays: []
+          mechanism: >-
+            Dual belonging secures legal rights in both countries, which protects migrants' residence and remittance links
+            while leaving the wage gap that drives migration in place.
+          drain: none
+          law_of_value: none
+
+      - id: migrant.loyalty.homeland-first
+        label: Your first loyalty stays with the homeland and its people
+        claim: >-
+          Leaving does not end belonging. Emigrants remain part of their nation and owe it support: money sent home, votes,
+          defense of its interests abroad, and in time, return.
+        voiced: "We are a nation scattered, not a nation lost. Wherever you work, your people and your land are waiting for you."
+        you: You think a migrant's first loyalty stays with the homeland and its people.
+        because: >-
+          Garvey organized millions in the African diaspora around loyalty to Africa and redemption of the race. States from
+          the Philippines to Mexico to India court their emigrants, whose remittances outstrip foreign aid; Manila calls its
+          overseas workers modern heroes. A people divided by borders is still one people, and its strength abroad can
+          serve its land at home.
+        against:
+          - from: liberalism.egalitarian
+            text: >-
+              Treating emigrants as permanent servants of the homeland turns them into a source of foreign currency for
+              governments that failed to employ them.
+          - from: conservatism.national
+            text: >-
+              A community abroad that answers to a foreign government is a fifth column; host countries are right to
+              distrust it.
+        sources:
+          - {author: Marcus Garvey, title: "Philosophy and Opinions of Marcus Garvey", year: 1923}
+          - {author: Benedict Anderson, title: "Long-Distance Nationalism: World Capitalism and the Rise of Identity Politics", year: 1992}
+        traditions:
+          defining: [nationalism.black-nationalism]
+          typical: [nationalism.pan-africanism, nationalism.hindutva, nationalism.palestinian, nationalism.ethnic, nationalism.zionism-labor]
+          contested: [nationalism.civic]
+          rejects: [liberalism.egalitarian, conservatism.national, marxism.left-communism]
+        presupposes: [nation.belonging.descent]
+        analysis:
+          gains: [comprador-capital, peripheral-workers]
+          pays: [peripheral-workers]
+          mechanism: >-
+            Homeland loyalty keeps remittances flowing, which sustain families and balance-of-payments for sending states
+            whose economies export labor rather than employ it.
+          drain: softens
+          law_of_value: none
+          disputed: Whether remittances reduce the drain by returning wages to the periphery or sustain it by letting sending states avoid development is argued among dependency writers.
+
+      - id: migrant.loyalty.class-not-flag
+        label: A migrant's loyalty is to fellow workers, not to any flag
+        claim: >-
+          The migrant worker's real community is the working class, in the country they left and the one they work in.
+          Loyalty to either state ties them to the employers of that state; solidarity with workers ties them to each other.
+        voiced: "The workers have no country. The Filipino nurse and the Polish builder and the native-born cleaner have the same boss."
+        you: You think a migrant's loyalty belongs to fellow workers, not to either country's state.
+        because: >-
+          Marx and Engels wrote that the workers have no country, and migrant workers have always built unions across
+          nationality, from the Industrial Workers of the World to today's cleaners' and care workers' unions. Both the
+          sending and receiving state use loyalty to discipline migrants: one demands remittances, the other conformity.
+        against:
+          - from: nationalism.pan-africanism
+            text: >-
+              The migrant from a plundered country who tells it he has no country lets the plunder continue. The nation of
+              the oppressed is not the same as the nation of the oppressor.
+          - from: conservatism.national
+            text: >-
+              Real people do not live in a class; they live in a family, a town and a country. The slogan asks them to give
+              up the only loyalties they actually have.
+        sources:
+          - {author: Karl Marx and Friedrich Engels, title: Manifesto of the Communist Party, year: 1848}
+        traditions:
+          defining: []
+          typical: [marxism.trotskyism, marxism.left-communism, anarchism.syndicalist, marxism.luxemburgism, anarchism.communist]
+          contested: [marxism.third-worldism]
+          rejects: [conservatism.national, nationalism.ethnic, nationalism.pan-africanism]
+        presupposes: [nation.belonging.class-not-nation]
+        analysis:
+          gains: [peripheral-workers, core-workers]
+          pays: [industrial-capital]
+          mechanism: >-
+            Organizing migrants and native workers together removes the wage differential employers use to set them against
+            each other and raises the floor for both.
+          drain: reduces
+          law_of_value: regulates
+          consciousness: class-economic
+          disputed: Third Worldists hold that the national question of the migrant's homeland comes before cross-border class unity; Trotskyists and left communists hold the reverse.
+
+      - id: migrant.loyalty.community-of-faith
+        label: The believer's loyalty is to God and the community of faith
+        claim: >-
+          Every land is foreign and every land is home to a believer. Political loyalty is owed to whatever state one lives
+          in only as far as it allows the faith to be lived; the first loyalty is to God and to the community of believers.
+        voiced: "They dwell in their own countries, but only as sojourners; every foreign land is to them as their native country, and every land of their birth as a land of strangers."
+        you: You think a migrant's deepest loyalty belongs to God and the community of faith, not to any state.
+        because: >-
+          The Epistle to Diognetus describes Christians as citizens everywhere and strangers everywhere; Augustine taught
+          that the city of God is a pilgrim in every earthly city. Islam's ummah crosses every border. A migrant who
+          carries their faith is never fully uprooted, and states that demand total loyalty demand what belongs to God.
+        against:
+          - from: liberalism.republican
+            text: >-
+              A citizen who holds every law conditional on a religious authority is a citizen only in part; civic peace
+              needs one public law for all.
+          - from: marxism.classical
+            text: >-
+              The community of faith joins the employer and the employed at prayer and keeps them apart at work.
+        sources:
+          - {author: Anonymous, title: Epistle to Diognetus, year: "c. 150"}
+          - {author: Augustine of Hippo, title: The City of God, year: 426}
+        traditions:
+          defining: []
+          typical: [religious.islamism-brotherhood, conservatism.integralism, religious.salafism-quietist, conservatism.cst, religious.religious-zionism]
+          contested: [conservatism.evangelical-right]
+          rejects: [liberalism.republican, nationalism.civic, conservatism.national]
+        presupposes: [nation.belonging.ummah]
+        analysis:
+          gains: [petty-bourgeoisie]
+          pays: []
+          mechanism: >-
+            Faith communities give migrants mutual aid, credit and protection across borders, binding them to religious
+            institutions and the merchants and employers who lead them.
+          drain: none
+          law_of_value: none
+
+      - id: migrant.loyalty.no-one-owes-a-state
+        label: Nobody, migrant or native, owes loyalty to a state
+        claim: >-
+          Loyalty is owed to people one chooses, not to governments. A migrant owes the new state what any resident owes,
+          keeping contracts and respecting others' rights, and owes the old one nothing.
+        voiced: "The constitution has no authority over me; I never signed it. Why would a man who crossed a border owe more than one who was born here?"
+        you: You think nobody owes loyalty to a state, whether migrant or native.
+        because: >-
+          Spooner argued that a constitution signed by no living person cannot bind anyone, and that allegiance without
+          consent is a fiction. A migrant is a person who exercised the right to move and to contract. Demanding loyalty
+          from them, or from anyone, makes the state the owner of its residents.
+        against:
+          - from: conservatism.national
+            text: >-
+              No society survives on contracts alone. Those who take the protection of a country owe it more than they
+              signed.
+          - from: marxism.ml
+            text: >-
+              The migrant who owes no loyalty to anyone faces the employer and the border guard alone. Refusing collective
+              loyalty leaves only the market.
+        sources:
+          - {author: Lysander Spooner, title: "No Treason, No. VI: The Constitution of No Authority", year: 1870}
+        traditions:
+          defining: []
+          typical: [libertarianism.ancap, anarchism.individualist, libertarianism.objectivist, libertarianism.minarchist]
+          rejects: [conservatism.national, nationalism.civic, marxism.ml]
+        presupposes: [borders.migration.open-borders]
+        analysis:
+          gains: [industrial-capital, finance-capital]
+          pays: []
+          mechanism: >-
+            Treating migrants purely as contracting individuals frees them from state claims and also from collective
+            protection, which suits employers who hire across borders on individual terms.
+          drain: none
+          law_of_value: extends
+
+  # ------------------------------------------------------------------
+  - id: university.neutrality
+    domain: culture
+    layer: horizon
+    question: Should a university take political stands?
+    plain: Students occupy the lawn over a war. Should the university speak, divest, stay silent, or call the police?
+    short: the university and politics
+    importance: 2
+    positions:
+      - id: university.neutrality.institutional-neutrality
+        label: The university should stay neutral so its members can argue freely
+        claim: >-
+          A university is a community of scholars, not a political actor. It should take no collective stand on political
+          questions, so that every member can take any stand they like without the institution's weight against them.
+        voiced: "The university is the home and sponsor of critics; it is not itself the critic."
+        you: You think universities should take no institutional political positions so individuals can argue freely.
+        because: >-
+          The Kalven Report of 1967, written at the University of Chicago during the Vietnam War, held that a university's
+          neutrality protects the freedom of its faculty and students to dissent; a university that takes positions puts
+          pressure on those who disagree. Neutrality is not indifference, it is the condition of open inquiry.
+        against:
+          - from: marxism.western
+            text: >-
+              A university that takes military contracts and invests in arms makers is not neutral. "Neutrality" means
+              keeping the stands it already takes out of debate.
+          - from: conservatism.national
+            text: >-
+              Universities that claim neutrality have been captured by one side for decades; neutrality as a policy
+              protects the capture.
+        sources:
+          - {author: Harry Kalven Jr. et al., title: "Report on the University's Role in Political and Social Action (The Kalven Report)", year: 1967}
+        traditions:
+          defining: [liberalism.classical]
+          typical: [conservatism.burkean, liberalism.technocratic, liberalism.chicago, liberalism.republican]
+          contested: [liberalism.progressive]
+          rejects: [marxism.western, conservatism.national]
+        presupposes: [speech.limits.open-marketplace]
+        excludes: [university.neutrality.moral-witness]
+        analysis:
+          gains: [professional-managerial]
+          pays: []
+          mechanism: >-
+            Neutrality removes the university's investments, contracts and donors from collective debate, which preserves
+            the existing ties to state and business while protecting individual faculty speech.
+          drain: none
+          law_of_value: none
+
+      - id: university.neutrality.moral-witness
+        label: A university must speak and act on grave injustice
+        claim: >-
+          On grave injustice, silence is a stand. A university that teaches ethics must live by them: speak out, divest from
+          injustice and protect students who protest.
+        voiced: "Neutrality helps the oppressor, never the victim. A university that divested from apartheid can divest again."
+        you: You think universities must take stands and act against grave injustice.
+        because: >-
+          Universities divested from apartheid South Africa under student pressure in the 1980s, and history judged them
+          right. Giroux argues that higher education is a public good with a duty to democratic life, and that a market
+          university that claims neutrality has simply chosen the market's side.
+        against:
+          - from: liberalism.classical
+            text: >-
+              Who decides which injustices count? Every stand the institution takes silences the members who disagree, and
+              the next administration takes the opposite stand.
+          - from: conservatism.national
+            text: >-
+              "Moral witness" means a faculty of one political persuasion imposing its views with public money.
+        sources:
+          - {author: Henry A. Giroux, title: "Neoliberalism's War on Higher Education", year: 2014}
+        traditions:
+          defining: [liberalism.progressive]
+          typical: [socdem.democratic-socialism, religious.liberation-theology, ecology.environmental-justice, marxism.western]
+          contested: [liberalism.social]
+          rejects: [liberalism.classical, conservatism.national, conservatism.burkean]
+        presupposes: [education.purpose.critical-citizens]
+        excludes: [university.neutrality.institutional-neutrality]
+        analysis:
+          gains: [professional-managerial, peripheral-workers]
+          pays: [industrial-capital]
+          mechanism: >-
+            Institutional stands and divestment put the university's money and prestige against particular industries and
+            states, which raises their political cost where the campaign is joined to wider pressure.
+          drain: reduces
+          law_of_value: none
+
+      - id: university.neutrality.already-serves-power
+        label: The university already serves capital and the state; contest it
+        claim: >-
+          The university is not neutral and never was: it trains managers, runs military research, takes corporate money
+          and invests in arms. Students and university workers should fight over what it does, not pretend it stands
+          outside.
+        voiced: "There's a time when the operation of the machine becomes so odious that you've got to put your bodies upon the gears."
+        you: You think universities already serve business and the state, and students and staff should fight to change that.
+        because: >-
+          Chomsky argued in 1967 that intellectuals inside the university had become servants of state power in the Vietnam
+          War, and that their responsibility was to tell the truth and expose lies. Savio's Free Speech Movement attacked
+          the university as a knowledge factory for industry and government. Research budgets, boards and endowments show
+          whose institution it is.
+        against:
+          - from: liberalism.classical
+            text: >-
+              Occupations and disruption stop other students learning and teachers teaching; they replace argument with
+              force in the one place built for argument.
+          - from: conservatism.burkean
+            text: >-
+              A university that becomes a battleground loses what made it worth fighting over: the slow transmission of
+              knowledge from one generation to the next.
+        sources:
+          - {author: Noam Chomsky, title: "The Responsibility of Intellectuals", year: 1967}
+          - {author: Mario Savio, title: "Speech at Sproul Hall (\"Bodies upon the Gears\")", year: 1964}
+        traditions:
+          defining: [marxism.western]
+          typical: [anarchism.communist, marxism.autonomism, marxism.trotskyism, marxism.maoism, anarchism.syndicalist]
+          rejects: [liberalism.classical, conservatism.burkean, conservatism.national]
+        presupposes: [ideology.formation.hegemony]
+        analysis:
+          gains: [core-workers, peripheral-workers, professional-managerial]
+          pays: [industrial-capital]
+          mechanism: >-
+            Contesting the university's contracts, investments and governance aims to cut its service to arms firms and
+            corporate research, which depend on its labs and graduates.
+          drain: reduces
+          law_of_value: none
+          consciousness: hegemonic
+
+      - id: university.neutrality.nation-building
+        label: The university exists to serve the nation's development
+        claim: >-
+          A public university in a poor country is paid for by peasants and workers. It should train the doctors,
+          engineers and teachers the nation needs and serve national development, not imitate foreign campuses or stand
+          above politics.
+        voiced: "The university is not an ivory tower. Our students are paid for by peasants who will never see a classroom; they owe them their knowledge."
+        you: You think universities should serve their nation's development rather than stand aloof from it.
+        because: >-
+          Nyerere's Education for Self-Reliance argued that education in Tanzania must prepare people for the life and
+          work of their own society, not for escape to the cities or abroad. Universities in Korea, Cuba and China were
+          built to serve national plans and did. A university that claims neutrality in a poor country serves the
+          brain drain.
+        against:
+          - from: liberalism.classical
+            text: >-
+              A university told to serve the national plan is told what to think; the plan's mistakes then go unchallenged.
+          - from: marxism.western
+            text: >-
+              "The nation" usually means its government; national universities in many countries have purged their critics
+              in the name of development.
+        sources:
+          - {author: Julius K. Nyerere, title: Education for Self-Reliance, year: 1967}
+        traditions:
+          defining: [marxism.african-socialism]
+          typical: [nationalism.developmental-state, marxism.ml, nationalism.nasserism, marxism.scc, nationalism.kemalism]
+          contested: [nationalism.decolonial]
+          rejects: [liberalism.classical]
+        presupposes: [education.purpose.work-and-study]
+        analysis:
+          gains: [peasantry, peripheral-workers, professional-managerial]
+          pays: [comprador-capital]
+          mechanism: >-
+            Directing universities to national development keeps trained professionals and research at home and in service
+            of domestic industry, reducing the brain drain to core countries.
+          drain: reduces
+          law_of_value: regulates
+          consciousness: hegemonic
+
+      - id: university.neutrality.restore-by-law
+        label: The universities have been captured; the state must restore balance
+        claim: >-
+          Universities claim neutrality while teaching one ideology and hiring one side. Since the public pays, governments
+          should require balance: cut diversity bureaucracies, protect dissenting faculty, and police disruptive protests.
+        voiced: "We fund these institutions. They've become left-wing seminaries. It's time for the people's representatives to take them back."
+        you: You think universities have been captured by one ideology and governments should step in to restore balance.
+        because: >-
+          Bloom warned in 1987 that the American university had abandoned the search for truth for relativism and
+          political fashion. Rufo argues that critical theories captured universities through their bureaucracies, and that
+          only elected governments, through funding and boards, can restore their public mission. Public money comes with
+          public accountability.
+        against:
+          - from: liberalism.classical
+            text: >-
+              A government that dictates curricula and fires professors for their views is doing exactly what it accuses
+              the left of doing, with the power of the state behind it.
+          - from: marxism.western
+            text: >-
+              "Balance" imposed by a governor means silence on war and property and loyalty oaths for the faculty.
+        sources:
+          - {author: Allan Bloom, title: The Closing of the American Mind, year: 1987}
+          - {author: Christopher F. Rufo, title: "America's Cultural Revolution: How the Radical Left Conquered Everything", year: 2023}
+        traditions:
+          defining: [conservatism.national]
+          typical: [conservatism.right-populism, conservatism.postliberal, conservatism.evangelical-right, conservatism.paleo]
+          contested: [conservatism.fusionism]
+          rejects: [liberalism.classical, liberalism.progressive, marxism.western]
+        presupposes: [culture.war.woke-elite]
+        analysis:
+          gains: [petty-bourgeoisie, industrial-capital]
+          pays: [professional-managerial]
+          mechanism: >-
+            State control of public universities through funding and boards shifts power from faculty to politicians and
+            donors, narrowing teaching and research critical of property and nation.
+          drain: none
+          law_of_value: none
+
+      - id: university.neutrality.faith-mission
+        label: A university of faith serves the truth its faith teaches
+        claim: >-
+          A religious university is not neutral and should not pretend to be. It serves the truth revealed in its faith,
+          teaches the whole person, and takes moral positions in line with its tradition while welcoming open inquiry.
+        voiced: "Faith and reason are like two wings on which the human spirit rises to the contemplation of truth."
+        you: You think a religious university should serve the truths of its faith rather than claim neutrality.
+        because: >-
+          Newman argued that a university teaches universal knowledge, and theology belongs at its center; Ex Corde
+          Ecclesiae asks Catholic universities to keep their identity in teaching and research. The great universities
+          began as religious foundations. Neutrality about the highest things is itself a position, and a thin one.
+        against:
+          - from: liberalism.classical
+            text: >-
+              Inquiry bounded by doctrine is not free inquiry. A professor who must teach in line with a creed is a
+              catechist.
+          - from: marxism.western
+            text: >-
+              Religious universities take their stands on sex and the family and stay silent on wages and war.
+        sources:
+          - {author: John Henry Newman, title: The Idea of a University, year: 1852}
+          - {author: John Paul II, title: Ex Corde Ecclesiae, year: 1990}
+        traditions:
+          defining: []
+          typical: [conservatism.cst, conservatism.integralism, conservatism.evangelical-right, religious.islamism-brotherhood, religious.confucian]
+          contested: [religious.liberation-theology]
+          rejects: [liberalism.classical, marxism.western]
+        presupposes: [religion.public.heritage-establishment]
+        analysis:
+          gains: [professional-managerial]
+          pays: []
+          mechanism: >-
+            Religious universities reproduce the clergy, professionals and lay elites of their communities, and their
+            moral stands fall mostly on family and sexuality rather than on property.
+          drain: none
+          law_of_value: none

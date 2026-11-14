@@ -20,7 +20,7 @@ nodes:
     premises:
       - id: not-ours
         text: The premise that this is a university matter. Foreign policy is made in Canberra, not in an engineering faculty.
-        evidence: [{position: education.purpose.human-capital, w: 1}]
+        evidence: [{position: education.purpose.human-capital, w: 1}, {position: university.neutrality.institutional-neutrality, w: 2}]
     conditions:
       - id: what-kits
         text: It depends what the faculty's own research actually goes into.
@@ -31,6 +31,7 @@ nodes:
         set: {stance: talk}
         evidence:
           - {position: education.purpose.critical-citizens, w: 2}
+          - {position: university.neutrality.moral-witness, w: 1}
         consequence: They give you a chair and a list of eleven demands. Security logs your visit.
         next: arc.campus.02
       - id: suspend
@@ -38,6 +39,7 @@ nodes:
         set: {stance: talk}
         evidence:
           - {position: intervention.humanitarian.never-by-war, w: 2}
+          - {position: university.neutrality.moral-witness, w: 2}
         consequence: The vice-chancellor thanks you and does not take your advice. The firm hears about it by seven.
         next: arc.campus.02
       - id: hours
@@ -53,6 +55,7 @@ nodes:
         evidence:
           - {position: war.militarism.peace-through-strength, w: 2}
           - {position: world.order.american-primacy, w: 1}
+          - {position: university.neutrality.nation-building, w: 1}
         probe:
           ask: What makes the partnership worth defending?
           options:
@@ -72,6 +75,7 @@ nodes:
         set: {stance: order}
         evidence:
           - {position: education.purpose.human-capital, w: 1}
+          - {position: university.neutrality.institutional-neutrality, w: 1}
         consequence: The vice-chancellor reads your silence as support for whatever she does next.
         next: arc.campus.02
 
@@ -142,12 +146,14 @@ nodes:
         cause: ideas
         evidence:
           - {position: war.militarism.peace-through-strength, w: 2}
+          - {position: university.neutrality.institutional-neutrality, w: 2}
         next: arc.campus.04
       - id: weapons
         text: Both miss it. The question is not this war. It is a university designing weapons for anyone.
         cause: interests
         evidence:
           - {position: war.militarism.pacifist, w: 2}
+          - {position: university.neutrality.moral-witness, w: 1}
         next: arc.campus.04
       - id: the-un
         text: Both miss it. A dean and a firm shouldn't be deciding this. The UN should, and Australia should follow whatever it decides.
@@ -220,6 +226,7 @@ nodes:
         cost: Civilian money covers two students. Four lose their scholarships, and two of them have to leave the country by March.
         evidence:
           - {position: war.militarism.arms-profits, w: 3}
+          - {position: conscience.refusal.convert-production, w: 1}
         next: arc.campus.05
       - id: renew
         text: Renew. This is how the lab exists, and the work is radar, not bombs.
@@ -235,6 +242,7 @@ nodes:
         evidence:
           - {position: education.purpose.human-capital, w: 1}
           - {position: war.militarism.arms-profits, w: 1}
+          - {position: conscience.refusal.selective-objection, w: 1}
         next: arc.campus.05
 
   - id: arc.campus.05
@@ -254,6 +262,7 @@ nodes:
         set: {cleared: true}
         evidence:
           - {position: law.nature.rule-of-law, w: 3}
+          - {position: university.neutrality.institutional-neutrality, w: 1}
         consequence: The building is clear in forty minutes. Fourteen arrests. The helicopter gets its picture of you with the notice.
         next: [{if: {flag: {key: cleared, eq: true}}, to: arc.campus.06a}, {to: arc.campus.06b}]
       - id: read-ally
@@ -292,6 +301,7 @@ nodes:
         evidence:
           - {position: war.militarism.arms-profits, w: 2}
           - {position: war.militarism.imperialist-rivalry, w: 1}
+          - {position: university.neutrality.already-serves-power, w: 2}
         consequence: The occupiers walk out singing. The vice-chancellor says you had no authority to say it. The firm's lawyers agree.
         next: [{if: {flag: {key: cleared, eq: true}}, to: arc.campus.06a}, {to: arc.campus.06b}]
       - id: home
@@ -341,6 +351,7 @@ nodes:
         evidence:
           - {position: education.purpose.civic-pride, w: 2}
           - {position: law.nature.rule-of-law, w: 1}
+          - {position: university.neutrality.restore-by-law, w: 1}
         consequence: Four expulsions. Next semester, applications to the faculty rise. So do the tents.
         next: arc.campus.07
 
@@ -362,12 +373,14 @@ nodes:
         text: Cut the firm and replace it with nothing military, from anyone. A university should not design weapons.
         evidence:
           - {position: war.militarism.pacifist, w: 3}
+          - {position: conscience.refusal.absolute-pacifism, w: 1}
         consequence: The faculty loses a fifth of its research budget. Forty doctoral places become twelve.
         next: arc.campus.07
       - id: renew
         text: Renew. The country's security rests on the alliance, and the alliance rests on places like this.
         evidence:
           - {position: world.order.american-primacy, w: 3}
+          - {position: university.neutrality.nation-building, w: 1}
         consequence: The firm renews. The occupation returns within a month, now with staff in it.
         next: arc.campus.07
       - id: batteries
@@ -381,6 +394,7 @@ nodes:
         evidence:
           - {position: law.nature.rule-of-law, w: 2}
           - {position: intervention.humanitarian.never-by-war, w: 1}
+          - {position: conscience.refusal.selective-objection, w: 1}
         consequence: The firm accepts. No court rules within the life of the contract.
         next: arc.campus.07
 

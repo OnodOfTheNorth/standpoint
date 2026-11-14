@@ -20,7 +20,7 @@ nodes:
     premises:
       - id: no-loan
         text: The premise that Rahima should have been lent the money in the first place.
-        evidence: [{position: money.nature.anti-usury, w: 1}]
+        evidence: [{position: money.nature.anti-usury, w: 1}, {position: debt.household.usury-forbidden, w: 1}]
     conditions:
       - id: if-flood
         text: It depends whether the loss was her fault or the river's.
@@ -30,6 +30,7 @@ nodes:
         text: Ask the group to cover her. They signed for each other. That's what makes lending to them possible.
         evidence:
           - {position: capitalism.nature.free-exchange, w: 2}
+          - {position: debt.household.microcredit, w: 2}
         consequence: The group pays, grumbling. Two of them stop speaking to Rahima.
         next: arc.microfinance.02b
       - id: pocket
@@ -56,12 +57,14 @@ nodes:
         set: {soft: true}
         evidence:
           - {position: finance.control.prudential, w: 2}
+          - {position: debt.household.regulate-and-relieve, w: 2}
         consequence: The branch manager signs it, and writes your name on a separate list.
         next: arc.microfinance.02a
       - id: top-up
         text: Offer her a bigger loan to clear this one. She needs more capital, not less.
         evidence:
           - {position: poverty.cause.bad-institutions, w: 2}
+          - {position: debt.household.microcredit, w: 2}
         consequence: Rahima now owes ৳45,000 over two years. Your numbers look excellent.
         next: arc.microfinance.02b
       - id: example
@@ -69,6 +72,7 @@ nodes:
         evidence:
           - {position: inequality.justice.earned-desert, w: 2}
           - {position: cs.hard-work.effort-pays, w: 1}
+          - {position: debt.household.personal-responsibility, w: 2}
         consequence: Rahima pays on Thursday. Nobody asks where the money came from.
         next: arc.microfinance.02b
 
@@ -93,12 +97,14 @@ nodes:
         evidence:
           - {position: capitalism.nature.usury-finance, w: 2}
           - {position: money.nature.anti-usury, w: 1}
+          - {position: debt.household.usury-forbidden, w: 1}
         next: arc.microfinance.03
       - id: milk
         text: The dairies set the milk price, the lenders set the interest. Her work makes everyone money but her.
         cause: structures
         evidence:
           - {position: cs.hard-work.others-profit, w: 3}
+          - {position: debt.household.wages-replaced-by-loans, w: 1}
         next: arc.microfinance.03
       - id: husband
         text: Her husband. The loans are made to women, and the money is spent by men.
@@ -124,18 +130,21 @@ nodes:
         evidence:
           - {position: poverty.cause.bad-institutions, w: 2}
           - {position: feminism.subordination.barriers-and-bias, w: 1}
+          - {position: debt.household.microcredit, w: 3}
         next: arc.microfinance.03
       - id: imam
         text: The imam. Lend to the poor, by all means, but not for profit.
         cause: divine
         evidence:
           - {position: money.nature.anti-usury, w: 3}
+          - {position: debt.household.usury-forbidden, w: 3}
         next: arc.microfinance.03
       - id: land
         text: Both miss it. These women don't need loans. They need land and a decent price for what they make.
         cause: structures
         evidence:
           - {position: cs.hard-work.others-profit, w: 2}
+          - {position: debt.household.microcredit, w: -2}
         next: arc.microfinance.03
       - id: pool
         text: Both miss it. The women should pool their own savings and lend to each other, no outsiders.
@@ -160,6 +169,7 @@ nodes:
         cost: No bonus. The transfer goes to a colleague with 99.4 percent.
         evidence:
           - {position: profit.legitimacy.fair-not-gouging, w: 2}
+          - {position: debt.household.regulate-and-relieve, w: 1}
         next: arc.microfinance.04
       - id: sit
         text: Sit in the courtyard. She signed, and the money belongs to the other borrowers too.
@@ -168,6 +178,7 @@ nodes:
         evidence:
           - {position: profit.legitimacy.earned-reward, w: 1}
           - {position: inequality.justice.earned-desert, w: 1}
+          - {position: debt.household.personal-responsibility, w: 2}
         next: arc.microfinance.04
       - id: hour
         text: Sit for one hour, for the record, and leave without taking a taka.
@@ -193,12 +204,13 @@ nodes:
     premises:
       - id: no-line
         text: The premise that anyone but the borrower and lender should set the rate.
-        evidence: [{position: capitalism.nature.free-exchange, w: 2}]
+        evidence: [{position: capitalism.nature.free-exchange, w: 2}, {position: debt.household.free-credit, w: 2}]
     options:
       - id: nothing
         text: Only the first. Profit on a poor woman's debt is wrong, whoever takes it.
         evidence:
           - {position: money.nature.anti-usury, w: 3}
+          - {position: debt.household.usury-forbidden, w: 2}
         next: arc.microfinance.05
       - id: state
         text: Up to the second. Credit for the poor should be a public service, not a business.
@@ -209,16 +221,19 @@ nodes:
         text: Up to the third. Lending in the villages costs money. Cap the rate, regulate it, and let it run.
         evidence:
           - {position: finance.control.prudential, w: 3}
+          - {position: debt.household.regulate-and-relieve, w: 2}
         next: arc.microfinance.05
       - id: investors
         text: Up to the fourth. Without a return, the capital goes elsewhere and nobody lends at all.
         evidence:
           - {position: profit.legitimacy.earned-reward, w: 3}
+          - {position: debt.household.microcredit, w: 2}
         next: arc.microfinance.05
       - id: all
         text: All of them. Adults can choose. Competition brings the rates down faster than any rule.
         evidence:
           - {position: capitalism.nature.free-exchange, w: 3}
+          - {position: debt.household.free-credit, w: 3}
         next: arc.microfinance.05
 
   - id: arc.microfinance.05
@@ -238,6 +253,7 @@ nodes:
         evidence:
           - {position: profit.legitimacy.earned-reward, w: 2}
           - {position: poverty.cause.bad-institutions, w: 1}
+          - {position: debt.household.personal-responsibility, w: 1}
         consequence: Your centre pays 80 percent. Three women leave for Dhaka the following week.
         next: arc.microfinance.06
       - id: police
@@ -246,6 +262,7 @@ nodes:
         evidence:
           - {position: capitalism.nature.free-exchange, w: 2}
           - {position: inequality.justice.earned-desert, w: 1}
+          - {position: debt.household.personal-responsibility, w: 2}
         consequence: One woman's tin roof is taken in lieu of payment. It is photographed.
         next: arc.microfinance.06
       - id: warn
@@ -255,6 +272,7 @@ nodes:
         evidence:
           - {position: capitalism.nature.usury-finance, w: 2}
           - {position: cs.hard-work.others-profit, w: 1}
+          - {position: debt.household.cancel-and-refuse, w: 1}
         consequence: The chairman's men find empty houses on Tuesday. Your branch manager finds out who told.
         next: arc.microfinance.06
       - id: officers
@@ -263,6 +281,7 @@ nodes:
         set: {struck: true}
         evidence:
           - {position: solidarity.basis.shared-class, w: 3}
+          - {position: debt.household.cancel-and-refuse, w: 1}
         probe:
           ask: What do field officers and borrowers have in common?
           options:
@@ -360,6 +379,7 @@ nodes:
         evidence:
           - {position: capitalism.nature.free-exchange, w: 2}
           - {position: inequality.justice.earned-desert, w: 1}
+          - {position: debt.household.personal-responsibility, w: 1}
         consequence: Your centre's repayment rate is 100 percent this week. The daughter stops coming to the meetings.
         next: arc.microfinance.08
       - id: give
@@ -391,28 +411,33 @@ nodes:
         evidence:
           - {position: poverty.cause.bad-institutions, w: 1}
           - {position: cs.hard-work.effort-pays, w: 2}
+          - {position: debt.household.microcredit, w: 2}
       - id: usury
         text: Usury with a kind face. God forbade it for good reason.
         cause: divine
         evidence:
           - {position: money.nature.anti-usury, w: 2}
+          - {position: debt.household.usury-forbidden, w: 2}
       - id: pipeline
         text: A pipe from the poorest courtyards in the world to investors who have never seen one.
         cause: structures
         evidence:
           - {position: poverty.cause.drain, w: 2}
           - {position: capitalism.nature.usury-finance, w: 1}
+          - {position: debt.household.microcredit, w: -2}
       - id: wages
         text: A way to make poor women's work pay lenders and dairies, then send their daughters to the factories.
         cause: structures
         evidence:
           - {position: cs.hard-work.others-profit, w: 2}
+          - {position: debt.household.wages-replaced-by-loans, w: 1}
       - id: lazy
         text: Women who worked hard got ahead. Some just didn't want it enough.
         cause: culture
         evidence:
           - {position: poverty.cause.culture, w: 2}
           - {position: inequality.justice.earned-desert, w: 1}
+          - {position: debt.household.personal-responsibility, w: 1}
       - id: river
         text: Nothing a loan could fix. The river decides who keeps their land.
         cause: nature

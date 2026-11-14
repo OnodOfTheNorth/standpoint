@@ -58,7 +58,7 @@ nodes:
     premises:
       - id: home-not-investment
         text: The premise that a home is an investment whose value you are owed.
-        evidence: [{position: property.commons.not-for-sale, w: 2}]
+        evidence: [{position: property.commons.not-for-sale, w: 2}, {position: housing.tenure.asset-and-investment, w: -2}]
     conditions:
       - id: if-local
         text: It depends who gets the flats, local families or newcomers.
@@ -68,19 +68,19 @@ nodes:
         text: Speak for the flats at the planning hearing.
         pressure: principle
         cost: Your house may lose 20,000 or 30,000 in value. Two neighbours stop speaking to you.
-        evidence: [{position: welfare.state.social-citizenship, w: 2}, {position: property.commons.public-ownership, w: 1}]
+        evidence: [{position: welfare.state.social-citizenship, w: 2}, {position: property.commons.public-ownership, w: 1}, {position: housing.tenure.social-housing, w: 3}]
       - id: challenge
         text: Give 500 to the legal challenge.
         pressure: interest
         cost: The challenge delays the flats by three years and may kill them. The waiting list grows by 900 families.
-        evidence: [{position: cs.own-first.family-first, w: 2}, {position: property.private.natural-right, w: 1}]
+        evidence: [{position: cs.own-first.family-first, w: 2}, {position: property.private.natural-right, w: 1}, {position: housing.tenure.asset-and-investment, w: 2}]
       - id: smaller
         text: Back a "sensible" scheme. Fewer social flats, mixed with homes for sale.
         pressure: mixed
         cost: The plan shrinks to 90 social flats and 150 for sale. Your house price holds.
-        evidence: [{position: markets.nature.framed-tool, w: 1}, {position: welfare.state.safety-net, w: 1}]
+        evidence: [{position: markets.nature.framed-tool, w: 1}, {position: welfare.state.safety-net, w: 1}, {position: housing.tenure.homeownership, w: 1}]
       - id: elsewhere
         text: Back the flats, but on the old depot site across town instead.
         pressure: mixed
         cost: The depot site needs years of cleanup. The flats are not built this decade.
-        evidence: [{position: welfare.state.safety-net, w: 1}, {position: cs.own-first.family-first, w: 1}]
+        evidence: [{position: welfare.state.safety-net, w: 1}, {position: cs.own-first.family-first, w: 1}, {position: housing.tenure.social-housing, w: 1}]

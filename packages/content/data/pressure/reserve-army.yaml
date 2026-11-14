@@ -14,7 +14,7 @@ nodes:
     premises:
       - id: right-to-work
         text: The premise that a strike gives anyone the right to hold on to a job someone else needs.
-        evidence: [{position: unions.role.obstacle, w: 2}, {position: work.future.flexible-markets, w: 1}]
+        evidence: [{position: unions.role.obstacle, w: 2}, {position: work.future.flexible-markets, w: 1}, {position: picket.line.right-to-work, w: 3}]
     conditions:
       - id: if-cause
         text: It depends what the strike is about.
@@ -24,22 +24,22 @@ nodes:
         text: Turn it down.
         pressure: principle
         cost: Your benefits run out. You borrow from your sister to make the rent, and the agency stops calling.
-        evidence: [{position: solidarity.basis.shared-class, w: 2}, {position: unions.role.class-organ, w: 1}]
+        evidence: [{position: solidarity.basis.shared-class, w: 2}, {position: unions.role.class-organ, w: 1}, {position: picket.line.never-cross, w: 3}]
       - id: take
         text: Take the job. Your rent doesn't care about their strike.
         pressure: interest
         cost: Six weeks at double pay. When the strike settles you are let go, and the drivers know your face.
-        evidence: [{position: cs.own-first.yourself-first, w: 2}, {position: wage.nature.voluntary-exchange, w: 1}]
+        evidence: [{position: cs.own-first.yourself-first, w: 2}, {position: wage.nature.voluntary-exchange, w: 1}, {position: picket.line.need-first, w: 3}]
       - id: join-picket
         text: Turn it down, go to the picket line, and ask the strikers to put you on the list for when they win.
         pressure: mixed
         cost: The union takes your name. Your rent is still due on the first.
-        evidence: [{position: solidarity.basis.tactical, w: 2}, {position: change.means.strike-and-direct-action, w: 1}]
+        evidence: [{position: solidarity.basis.tactical, w: 2}, {position: change.means.strike-and-direct-action, w: 1}, {position: picket.line.win-the-scab, w: 2}]
       - id: inside
         text: Take the job, and tell the strikers what is going on inside.
         pressure: mixed
         cost: A week of double pay, until a supervisor sees you talking to the picket and you are out.
-        evidence: [{position: solidarity.basis.mutual-aid, w: 1}, {position: cs.own-first.widening-circles, w: 1}]
+        evidence: [{position: solidarity.basis.mutual-aid, w: 1}, {position: cs.own-first.widening-circles, w: 1}, {position: picket.line.need-first, w: 1}]
 
   - id: pressure.gig.weekend-bonus
     type: pressure
@@ -58,7 +58,7 @@ nodes:
     premises:
       - id: own-boss
         text: The premise that riders are workers at all, rather than people running their own small business.
-        evidence: [{position: work.future.flexible-markets, w: 2}, {position: property.self-ownership.full, w: 1}]
+        evidence: [{position: work.future.flexible-markets, w: 2}, {position: property.self-ownership.full, w: 1}, {position: work.status.independent-contractor, w: 3}]
     conditions:
       - id: if-enough
         text: It depends whether enough riders log off to win.
@@ -68,12 +68,12 @@ nodes:
         text: Log off for 48 hours and join the riders at the depot.
         pressure: principle
         cost: You lose two days' earnings and the bonus. For a month the orders go to the riders who worked.
-        evidence: [{position: change.means.strike-and-direct-action, w: 2}, {position: solidarity.basis.shared-class, w: 1}]
+        evidence: [{position: change.means.strike-and-direct-action, w: 2}, {position: solidarity.basis.shared-class, w: 1}, {position: work.status.piece-wage, w: 1}]
       - id: work
         text: Work the weekend and take the bonus.
         pressure: interest
         cost: You earn double for two days. The strike fails, and the new formula stays.
-        evidence: [{position: cs.own-first.yourself-first, w: 2}, {position: change.possibility.power-always-wins, w: 1}]
+        evidence: [{position: cs.own-first.yourself-first, w: 2}, {position: change.possibility.power-always-wins, w: 1}, {position: picket.line.need-first, w: 1}]
       - id: half
         text: Strike Saturday, work Sunday.
         pressure: mixed
@@ -99,27 +99,27 @@ nodes:
     premises:
       - id: owe-work
         text: The premise that people on benefits owe work in return.
-        evidence: [{position: welfare.state.social-citizenship, w: 2}, {position: work.future.basic-income-emancipatory, w: 1}]
+        evidence: [{position: welfare.state.social-citizenship, w: 2}, {position: work.future.basic-income-emancipatory, w: 1}, {position: welfare.conditions.unconditional, w: 2}]
     conditions:
       - id: if-real-job
         text: It depends whether the placement leads to a real job.
-        evidence: [{position: work.future.job-guarantee, w: 1}, {position: cs.hard-work.effort-pays, w: 1}]
+        evidence: [{position: work.future.job-guarantee, w: 1}, {position: cs.hard-work.effort-pays, w: 1}, {position: welfare.conditions.workfare, w: 1}]
     options:
       - id: refuse
         text: Refuse, with the claimants' union.
         pressure: principle
         cost: Your benefit stops for three months. The union's hardship fund covers about a fifth of it.
-        evidence: [{position: welfare.state.social-citizenship, w: 2}, {position: solidarity.basis.shared-class, w: 1}]
+        evidence: [{position: welfare.state.social-citizenship, w: 2}, {position: solidarity.basis.shared-class, w: 1}, {position: welfare.conditions.discipline-labor, w: 2}]
       - id: comply
         text: Do the placement. Eight weeks, then it's over.
         pressure: interest
         cost: You keep your benefit. The store fills its twelve empty jobs with placements like yours.
-        evidence: [{position: welfare.state.coercive-dependency, w: 1}, {position: cs.hard-work.virtue-in-itself, w: 1}]
+        evidence: [{position: welfare.state.coercive-dependency, w: 1}, {position: cs.hard-work.virtue-in-itself, w: 1}, {position: welfare.conditions.workfare, w: 1}]
       - id: comply-and-ask
         text: Do it, work hard, and ask the manager for a paid job at the end.
         pressure: mixed
         cost: The manager says there are no paid jobs. There is another placement starting in March.
-        evidence: [{position: cs.hard-work.effort-pays, w: 2}]
+        evidence: [{position: cs.hard-work.effort-pays, w: 2}, {position: welfare.conditions.workfare, w: 1}]
       - id: sick-note
         text: Get a doctor's note and wait it out.
         pressure: mixed

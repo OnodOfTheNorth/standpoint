@@ -14,7 +14,7 @@ nodes:
     premises:
       - id: lease-is-lease
         text: The premise that tenants can bargain over a rent they already signed for.
-        evidence: [{position: property.private.natural-right, w: 2}, {position: inequality.justice.process-not-pattern, w: 1}]
+        evidence: [{position: property.private.natural-right, w: 2}, {position: inequality.justice.process-not-pattern, w: 1}, {position: housing.tenure.asset-and-investment, w: 1}]
     conditions:
       - id: if-boiler
         text: It depends whether the boiler really is as bad as they say.
@@ -29,7 +29,7 @@ nodes:
         text: Fix the boiler, keep the rise, and don't renew the two organizers' leases when they end.
         pressure: interest
         cost: The strike breaks. You pay 4,000 in legal fees and the local paper prints your name.
-        evidence: [{position: property.private.natural-right, w: 2}, {position: change.means.strike-and-direct-action, w: -1}]
+        evidence: [{position: property.private.natural-right, w: 2}, {position: change.means.strike-and-direct-action, w: -1}, {position: housing.tenure.asset-and-investment, w: 1}]
       - id: one-by-one
         text: Fix the boiler, keep the rise, and refuse to deal with the association. Talk to each tenant alone.
         pressure: mixed
@@ -39,7 +39,7 @@ nodes:
         text: Sell the building to the investment fund that has been writing to you.
         pressure: interest
         cost: You clear the mortgage with a small gain. The fund raises rents 20%; the tenants have a new landlord to fight.
-        evidence: [{position: change.means.individual-exit, w: 2}, {position: firm.ownership.private-investors, w: 1}]
+        evidence: [{position: change.means.individual-exit, w: 2}, {position: firm.ownership.private-investors, w: 1}, {position: housing.tenure.asset-and-investment, w: 1}]
 
   - id: pressure.landlord.rent-freeze
     type: pressure
@@ -54,22 +54,22 @@ nodes:
     premises:
       - id: no-pension-from-rent
         text: The premise that rent is something a landlord earns.
-        evidence: [{position: profit.legitimacy.rent-not-profit, w: 2}]
+        evidence: [{position: profit.legitimacy.rent-not-profit, w: 2}, {position: housing.tenure.class-question, w: 2}]
     conditions:
       - id: if-building
         text: It depends whether the city also builds housing, or only caps rents.
-        evidence: [{position: markets.nature.framed-tool, w: 1}, {position: property.commons.public-ownership, w: 1}]
+        evidence: [{position: markets.nature.framed-tool, w: 1}, {position: property.commons.public-ownership, w: 1}, {position: housing.tenure.social-housing, w: 2}]
     options:
       - id: yes
         text: Vote yes.
         pressure: principle
         cost: The freeze passes. The flat loses about a fifth of its value, and your pension plan has a hole in it.
-        evidence: [{position: markets.nature.framed-tool, w: 2}, {position: property.private.social-function, w: 1}]
+        evidence: [{position: markets.nature.framed-tool, w: 2}, {position: property.private.social-function, w: 1}, {position: housing.tenure.rent-control, w: 3}]
       - id: no
         text: Vote no, and give money to the landlords' campaign.
         pressure: interest
         cost: The freeze fails by two points. At renewal you raise the rent 12%; your tenants start looking elsewhere.
-        evidence: [{position: property.private.natural-right, w: 2}, {position: markets.nature.framed-tool, w: -1}]
+        evidence: [{position: property.private.natural-right, w: 2}, {position: markets.nature.framed-tool, w: -1}, {position: housing.tenure.market-supply, w: 2}]
       - id: no-but-fair
         text: Vote no, and keep your own tenants' rent flat anyway.
         pressure: mixed
@@ -79,7 +79,7 @@ nodes:
         text: Sell before the vote, while prices hold.
         pressure: interest
         cost: You get out whole. The buyer wants it for short lets and gives your tenants two months' notice.
-        evidence: [{position: change.means.individual-exit, w: 2}, {position: cs.own-first.family-first, w: 1}]
+        evidence: [{position: change.means.individual-exit, w: 2}, {position: cs.own-first.family-first, w: 1}, {position: housing.tenure.asset-and-investment, w: 2}]
 
   - id: pressure.landlord.estate
     type: pressure

@@ -82,6 +82,7 @@ nodes:
         cause: structures
         evidence:
           - {position: profit.legitimacy.earned-reward, w: 2}
+          - {position: housing.tenure.asset-and-investment, w: 3}
         next: [{if: {flag: {key: talk, eq: true}}, to: arc.rentstrike.03a}, {to: arc.rentstrike.03b}]
       - id: owning
         text: Owners and banks collect money for owning, not for doing. It comes out of the wage.
@@ -89,6 +90,7 @@ nodes:
         evidence:
           - {position: profit.legitimacy.rent-not-profit, w: 3}
           - {position: cs.hard-work.others-profit, w: 1}
+          - {position: housing.tenure.class-question, w: 2}
         next: [{if: {flag: {key: talk, eq: true}}, to: arc.rentstrike.03a}, {to: arc.rentstrike.03b}]
       - id: nonpayers
         text: Tenants who don't pay. Everyone who pays covers the ones who don't.
@@ -133,6 +135,7 @@ nodes:
         evidence:
           - {position: property.private.natural-right, w: 2}
           - {position: profit.legitimacy.earned-reward, w: 1}
+          - {position: housing.tenure.asset-and-investment, w: 1}
         next: arc.rentstrike.04
       - id: not-for-sale
         text: Both miss it. Homes shouldn't be anyone's investment. Mine included.
@@ -140,6 +143,7 @@ nodes:
         evidence:
           - {position: property.commons.not-for-sale, w: 3}
           - {position: property.private.personal-vs-productive, w: 1}
+          - {position: housing.tenure.class-question, w: 2}
         next: arc.rentstrike.04
       - id: bank
         text: Both miss it. The bank takes a third of the rent before I see a cent. It's the bank's building.
@@ -272,6 +276,7 @@ nodes:
         evidence:
           - {position: police.role.class-repression, w: 2}
           - {position: property.commons.not-for-sale, w: 1}
+          - {position: housing.tenure.class-question, w: 1}
         consequence: The sheriff has never seen this before. Neither have the tenants. He withdraws to take advice.
         next: [{if: {flag: {key: evicted, eq: true}}, to: arc.rentstrike.06b}, {to: arc.rentstrike.06a}]
       - id: car
@@ -301,6 +306,7 @@ nodes:
         evidence:
           - {position: property.commons.not-for-sale, w: 2}
           - {position: property.private.personal-vs-productive, w: 2}
+          - {position: housing.tenure.social-housing, w: 1}
         consequence: The deal closes in five months. Gogo Mavis sends you a cake.
         next: arc.rentstrike.07
       - id: hold
@@ -308,6 +314,7 @@ nodes:
         evidence:
           - {position: profit.legitimacy.earned-reward, w: 2}
           - {position: property.private.natural-right, w: 1}
+          - {position: housing.tenure.asset-and-investment, w: 2}
         consequence: The strike goes into its fifth month. The bank sends a second order.
         next: arc.rentstrike.07
       - id: steward
@@ -341,12 +348,14 @@ nodes:
         evidence:
           - {position: profit.legitimacy.earned-reward, w: 1}
           - {position: property.private.social-function, w: 1}
+          - {position: housing.tenure.social-housing, w: 1}
         next: arc.rentstrike.07
       - id: free
         text: Let them have it free. They should never have been put out.
         evidence:
           - {position: inequality.justice.stewardship, w: 2}
           - {position: property.private.social-function, w: 1}
+          - {position: housing.tenure.right-to-housing, w: 2}
         next: arc.rentstrike.07
       - id: refuse
         text: Refuse. The court evicted them; it can't make me take them back.
@@ -376,6 +385,7 @@ nodes:
         cause: interests
         evidence:
           - {position: profit.legitimacy.earned-reward, w: 3}
+          - {position: housing.tenure.asset-and-investment, w: 2}
       - id: owns
         text: Owns. That's all. The bank and I get paid for owning, and the tenants pay for it.
         cause: structures
@@ -399,3 +409,4 @@ nodes:
         cause: structures
         evidence:
           - {position: property.commons.not-for-sale, w: 2}
+          - {position: housing.tenure.class-question, w: 2}
