@@ -1,0 +1,378 @@
+id: descent.feminisms
+title: Which liberation?
+blurb: For people with a view on women's place. Liberal, radical, Marxist, social-reproduction, Black, Islamic and complementarian answers, decided on housework, sex work, care chains and who counts as a woman.
+region: gender
+gate:
+  any:
+    - {weight: {position: feminism.subordination.patriarchy, gt: 0.25}}
+    - {weight: {position: feminism.subordination.private-property, gt: 0.25}}
+    - {weight: {position: feminism.subordination.barriers-and-bias, gt: 0.25}}
+    - {weight: {position: feminism.subordination.patriarchal-reading, gt: 0.25}}
+    - {weight: {position: feminism.subordination.no-subordination-complementarity, gt: 0.25}}
+    - {weight: {position: body.autonomy.womans-choice, gt: 0.25}}
+    - {weight: {position: body.autonomy.reproductive-justice, gt: 0.25}}
+    - {weight: {position: family.form.natural-institution, gt: 0.25}}
+    - {weight: {position: care.work.socialize, gt: 0.25}}
+    - {weight: {position: care.work.wages-for-housework, gt: 0.25}}
+entry: descent.feminisms.01
+nodes:
+  - id: descent.feminisms.01
+    type: explanation
+    title: The second shift
+    text: >
+      In almost every country that measures it, women do most of the unpaid cooking, cleaning and caring,
+      even in couples where both work full time. Why?
+    why: This asks what you think explains women's position, the question the feminisms first split on, and what kind of cause you reach for.
+    options:
+      - id: bias
+        text: Old expectations, unequal laws and habits learned in childhood. They are changing, slowly.
+        cause: ideas
+        evidence:
+          - {position: feminism.subordination.barriers-and-bias, w: 3}
+        next: descent.feminisms.02
+      - id: power
+        text: Men hold power over women, and the household is one place they use it.
+        cause: structures
+        evidence:
+          - {position: feminism.subordination.patriarchy, w: 3}
+        next: descent.feminisms.02
+      - id: capital
+        text: Employers need workers fed, cleaned and raised at no cost to themselves. Women do it for free.
+        cause: structures
+        evidence:
+          - {position: feminism.subordination.social-reproduction, w: 3}
+        next: descent.feminisms.02
+      - id: husbands
+        text: Husbands gain directly. Their wives' unpaid hours are their free time.
+        cause: interests
+        evidence:
+          - {position: feminism.subordination.domestic-exploitation, w: 3}
+        next: descent.feminisms.02
+      - id: whose
+        text: It depends whose house. Many women do other women's housework for low pay, and race and class decide which.
+        cause: structures
+        evidence:
+          - {position: feminism.subordination.interlocking, w: 3}
+        next: descent.feminisms.02
+      - id: order
+        text: Men and women are made for different work, and both kinds are honorable.
+        cause: divine
+        evidence:
+          - {position: feminism.subordination.no-subordination-complementarity, w: 3}
+        next: descent.feminisms.02
+      - id: choice
+        text: Different preferences, freely chosen. Nobody is forcing anyone.
+        cause: nature
+        evidence:
+          - {position: feminism.subordination.evolved-preference, w: 3}
+        next: descent.feminisms.02
+
+  - id: descent.feminisms.02
+    type: verdict
+    title: Padua, 1972
+    text: >
+      Padua, 1972. A small group of women launches a campaign: wages for housework, paid by the state. Not
+      because they want to stay home, they say, but because naming housework as work is the first step to
+      refusing it. Other feminists call it a trap that would tie women to the kitchen. Where would you have
+      stood?
+    why: This separates the main answers to unpaid care, from wages and socialization to the market, the family wage and a basic income.
+    options:
+      - id: wages
+        text: With the campaign. Unpaid work is the hidden foundation under every wage.
+        evidence:
+          - {position: care.work.wages-for-housework, w: 3}
+        next: descent.feminisms.03
+      - id: socialize
+        text: Against. Socialize it instead. Public nurseries, canteens and laundries, with men doing their share.
+        evidence:
+          - {position: care.work.socialize, w: 3}
+          - {position: family.form.socialize-care, w: 1}
+        next: descent.feminisms.03
+      - id: jobs
+        text: Against. Get women into paid work and buy in the services.
+        evidence:
+          - {position: care.work.market-service, w: 3}
+        next: descent.feminisms.03
+      - id: family
+        text: Against. Pay a family wage, so one parent can care at home with dignity.
+        evidence:
+          - {position: care.work.family-vocation, w: 3}
+        next: descent.feminisms.03
+      - id: income
+        text: Half right. A basic income for everyone, carer or not.
+        evidence:
+          - {position: care.work.unconditional-income, w: 3}
+        next: descent.feminisms.03
+
+  - id: descent.feminisms.03
+    type: line
+    title: The new law
+    text: >
+      Lawmakers are rewriting the law on selling sex. Going down this list, where should the law step in?
+    cases:
+      - An adult selling sex alone from her own flat
+      - Two women sharing a flat to work more safely
+      - A manager running a licensed brothel
+      - A man paying for sex
+      - A boyfriend who takes half her earnings
+      - Anyone who brings women across a border to sell sex
+    why: This asks how you see selling sex, as work, as male power, as sin or as poverty, which divides feminists sharply.
+    options:
+      - id: last-two
+        text: Only at the last two. Decriminalize the rest and give sex workers labor rights.
+        evidence:
+          - {position: body.autonomy.womans-choice, w: 2}
+          - {position: sexuality.politics.state-out, w: 1}
+        next: descent.feminisms.04
+      - id: last
+        text: Only at the last. Most women sell sex because of rent, debt and visas. Change those, not the vice laws.
+        evidence:
+          - {position: sexuality.politics.capitalism-and-liberation, w: 2}
+          - {position: feminism.subordination.social-reproduction, w: 1}
+        next: descent.feminisms.04
+      - id: buyer
+        text: From the fourth. Punish buyers and pimps, never the women. Paying for sex is men's power over women.
+        evidence:
+          - {position: feminism.subordination.patriarchy, w: 3}
+          - {position: gender.basis.sex-class, w: 1}
+        next: descent.feminisms.04
+      - id: border
+        text: Start with the border. Migrant women are criminalized twice, as sellers and as foreigners.
+        evidence:
+          - {position: feminism.subordination.interlocking, w: 2}
+          - {position: feminism.subordination.colonial-and-imperial, w: 1}
+        next: descent.feminisms.04
+      - id: all
+        text: From the first. Sex belongs in marriage, and the law should say so.
+        evidence:
+          - {position: sexuality.politics.natural-law, w: 3}
+        next: descent.feminisms.04
+
+  - id: descent.feminisms.04
+    type: voices
+    title: The support group
+    text: >
+      A community center wants to run a women-only support group. Two longtime volunteers disagree about who
+      it is for.
+    voices:
+      - {name: Ruth, says: "Women are oppressed because of our sex, from birth. A space for women means a space for people born female."}
+      - {name: Dani, says: "A woman is anyone who lives as one. Trans women face the same men and the same violence, and often worse."}
+    why: This asks what you think gender is, which now divides feminists as sharply as anything.
+    options:
+      - id: ruth
+        text: Ruth.
+        evidence:
+          - {position: gender.basis.sex-class, w: 3}
+        next: descent.feminisms.05
+      - id: dani
+        text: Dani.
+        evidence:
+          - {position: gender.basis.identity, w: 3}
+        next: descent.feminisms.05
+      - id: roles
+        text: Both have part of it. Sex is biology; the roles built on it are learned and can change.
+        evidence:
+          - {position: gender.basis.social-roles, w: 3}
+        next: descent.feminisms.05
+      - id: performed
+        text: Both miss that gender, and even sex, is something society makes and people perform.
+        evidence:
+          - {position: gender.basis.performative, w: 3}
+        next: descent.feminisms.05
+      - id: class
+        text: Both miss that "men" and "women" name a relation of exploitation, like boss and worker.
+        evidence:
+          - {position: gender.basis.class-relation, w: 3}
+        next: descent.feminisms.05
+      - id: colonial
+        text: Both are arguing over a binary that colonial rule imposed on many peoples.
+        evidence:
+          - {position: gender.basis.colonial-imposition, w: 3}
+        next: descent.feminisms.05
+      - id: created
+        text: Both miss that God made us male and female, and that settles it.
+        evidence:
+          - {position: gender.basis.created-order, w: 3}
+        next: descent.feminisms.05
+
+  - id: descent.feminisms.05
+    type: tradeoff
+    title: Grace
+    text: >
+      You and your partner both work long hours in Dubai. Grace, from the Philippines, lives in and looks
+      after your two children. She sends most of her pay home, where her mother looks after Grace's own two
+      children. She has not seen them in three years.
+    why: This asks how you see paid care that crosses borders, which separates liberal, socialist, decolonial and traditional answers.
+    options:
+      - id: fair
+        text: A fair deal. She earns far more than she could at home, and you can both work.
+        evidence:
+          - {position: care.work.market-service, w: 3}
+        next: descent.feminisms.06
+      - id: rights
+        text: Fine, if she has a real contract, her passport in her own hands, and days off.
+        evidence:
+          - {position: feminism.subordination.barriers-and-bias, w: 1}
+          - {position: care.work.market-service, w: 1}
+        next: descent.feminisms.06
+      - id: chain
+        text: Care flows from poor countries to rich households, and her children pay for it.
+        evidence:
+          - {position: care.work.care-drain, w: 3}
+        next: descent.feminisms.06
+      - id: public
+        text: It shouldn't be needed. Public childcare, here and in Manila, would end the arrangement.
+        evidence:
+          - {position: care.work.socialize, w: 3}
+        next: descent.feminisms.06
+      - id: home
+        text: One of you should be at home with your own children.
+        evidence:
+          - {position: care.work.family-vocation, w: 3}
+        next: descent.feminisms.06
+
+  - id: descent.feminisms.06
+    type: verdict
+    title: Boston, 1977
+    text: >
+      Boston, 1977. A collective of Black feminists publishes a statement: racial, sexual, class and
+      heterosexual oppression are interlocking, and Black women's liberation would require the destruction of
+      all of them. White feminists, Black nationalists and socialists each hear a challenge. Where would you
+      have stood?
+    why: This separates Black and intersectional feminism from radical, Marxist, liberal and decolonial feminisms.
+    options:
+      - id: interlock
+        text: With the collective. You cannot free women by fighting one oppression at a time.
+        evidence:
+          - {position: feminism.subordination.interlocking, w: 3}
+        next: descent.feminisms.07
+      - id: class
+        text: Close, but class comes first. The rest grows from property and exploitation.
+        evidence:
+          - {position: feminism.subordination.private-property, w: 2}
+          - {position: race.nature.class-first, w: 1}
+        next: descent.feminisms.07
+      - id: sisterhood
+        text: Sisterhood first. Women of every race face the same oppressor.
+        evidence:
+          - {position: feminism.subordination.patriarchy, w: 2}
+        next: descent.feminisms.07
+      - id: law
+        text: Their demands were just. Equal rights under the law is how you deliver them.
+        evidence:
+          - {position: feminism.subordination.barriers-and-bias, w: 2}
+          - {position: race.nature.prejudice, w: 1}
+        next: descent.feminisms.07
+      - id: empire
+        text: Right, and wider still. Women in the former colonies face empire as well.
+        evidence:
+          - {position: feminism.subordination.colonial-and-imperial, w: 3}
+        next: descent.feminisms.07
+
+  - id: descent.feminisms.07
+    type: scene
+    title: The board
+    text: >
+      Your mosque's women's group has studied the texts for a year. They argue that the reports used to keep
+      women off the mosque board are weak or misread, and they want two seats. The imam says men and women
+      have different, equally honored roles. The board meets on Friday.
+    why: This separates Islamic feminism, which argues from inside the faith, from complementarian, secular and live-and-let-live answers.
+    options:
+      - id: reread
+        text: Back the women. The faith is just; the readings were made by men.
+        evidence:
+          - {position: feminism.subordination.patriarchal-reading, w: 3}
+        next: descent.feminisms.08
+      - id: roles
+        text: Back the imam. Different roles are not lesser roles.
+        evidence:
+          - {position: feminism.subordination.no-subordination-complementarity, w: 3}
+        next: descent.feminisms.08
+      - id: secular
+        text: The trouble is religion in public life. Women's rights shouldn't wait on scholars.
+        evidence:
+          - {position: religion.public.laicite, w: 2}
+          - {position: feminism.subordination.barriers-and-bias, w: 1}
+        next: descent.feminisms.08
+      - id: theirs
+        text: It's their mosque. Outsiders and the law should stay out of it.
+        evidence:
+          - {position: religion.public.separation, w: 2}
+        next: descent.feminisms.08
+
+  - id: descent.feminisms.08
+    type: allocation
+    title: The bequest
+    text: >
+      A women's foundation receives a large bequest and asks you to set its priorities for the next ten
+      years. You have ten points.
+    why: This asks what you would actually spend a women's movement's resources on.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: pay
+          text: Enforcing equal pay and promotion laws
+          evidence: [{position: feminism.subordination.barriers-and-bias, w: 2}]
+        - id: shelters
+          text: Shelters and legal help for women escaping violence
+          evidence: [{position: feminism.subordination.patriarchy, w: 2}]
+        - id: childcare
+          text: Campaigning for free public childcare
+          evidence: [{position: care.work.socialize, w: 2}]
+        - id: domestic
+          text: Organizing domestic and care workers, many of them migrants
+          evidence: [{position: care.work.care-drain, w: 1}, {position: feminism.subordination.interlocking, w: 1}]
+        - id: wage
+          text: A carer's wage for everyone doing unpaid care
+          evidence: [{position: care.work.wages-for-housework, w: 2}]
+        - id: mothers
+          text: Support for mothers who choose to stay at home
+          evidence: [{position: care.work.family-vocation, w: 2}]
+        - id: reproductive
+          text: Abortion access, and the right to have children and raise them safely
+          evidence: [{position: body.autonomy.reproductive-justice, w: 2}]
+    options:
+      - id: done
+        text: Done
+        next: descent.feminisms.09
+
+  - id: descent.feminisms.09
+    type: reason
+    title: What it takes
+    text: >
+      Last question. What would women's liberation finally require, if you think it needs anything at all?
+    why: This asks what you think the end of women's subordination would take, and what kind of cause you reach for.
+    options:
+      - id: law
+        text: Equal laws, equal chances, and time for attitudes to catch up.
+        cause: ideas
+        evidence:
+          - {position: feminism.subordination.barriers-and-bias, w: 3}
+      - id: men
+        text: An end to men's power over women's bodies, sex and safety.
+        cause: structures
+        evidence:
+          - {position: feminism.subordination.patriarchy, w: 3}
+      - id: care
+        text: An economy that no longer runs on women's free care work.
+        cause: structures
+        evidence:
+          - {position: feminism.subordination.social-reproduction, w: 3}
+      - id: all
+        text: An end to racism, class rule and empire along with sexism. They fall together or not at all.
+        cause: structures
+        evidence:
+          - {position: feminism.subordination.interlocking, w: 2}
+          - {position: feminism.subordination.colonial-and-imperial, w: 1}
+      - id: faith
+        text: Justice from within the faith, by reading it as it was meant.
+        cause: divine
+        evidence:
+          - {position: feminism.subordination.patriarchal-reading, w: 3}
+      - id: dignity
+        text: Not liberation from the family but honor for it. Dignity for motherhood and a society that protects it.
+        cause: culture
+        evidence:
+          - {position: feminism.subordination.no-subordination-complementarity, w: 2}
+          - {position: feminism.subordination.market-uprooted-women, w: 1}

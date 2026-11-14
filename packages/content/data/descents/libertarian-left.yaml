@@ -1,0 +1,351 @@
+id: descent.libertarian-left
+title: Without masters
+blurb: For people who want change from below without a ruling party. Councils, unions, platforms, affinity groups or assemblies, decided on Kronstadt, Spain and Rojava.
+region: strategy
+gate:
+  any:
+    - {weight: {position: state.nature.hierarchy-as-such, gt: 0.25}}
+    - {weight: {position: elections.role.organize-instead, gt: 0.25}}
+    - {weight: {position: elections.role.boycott-principle, gt: 0.25}}
+    - {weight: {position: hist.ussr-early.workers-democracy-lost, gt: 0.25}}
+    - {weight: {position: siege.governance.class-democracy, gt: 0.25}}
+    - {weight: {position: firm.ownership.commons-community, gt: 0.25}}
+    - {weight: {position: org.form.workers-councils, gt: 0.25}}
+    - {weight: {position: state.relation.abolish-at-once, gt: 0.25}}
+    - {weight: {position: allocation.mechanism.free-access, gt: 0.25}}
+entry: descent.libertarian-left.01
+nodes:
+  - id: descent.libertarian-left.01
+    type: scene
+    title: The strike committees
+    text: >
+      The strike wave is a month old. Every big workplace in the city has a strike committee, and three
+      rival groups want to shape what comes next. At the coordinating meeting, a comrade proposes forming a
+      party to give the movement a head. What do you say?
+    why: This asks what organization you think change from below needs, which is the question these traditions split on.
+    options:
+      - id: councils
+        text: No party at the head. Federate the committees into councils. A party may argue, not rule.
+        evidence:
+          - {position: org.form.workers-councils, w: 3}
+          - {position: democracy.form.council, w: 1}
+        next: descent.libertarian-left.02
+      - id: union
+        text: We already have our organization. Build one big union; it becomes the skeleton of the new society.
+        evidence:
+          - {position: org.form.union-syndicalist, w: 3}
+          - {position: unions.role.revolutionary-syndicate, w: 2}
+        next: descent.libertarian-left.02
+      - id: specific
+        text: Not a party, but a tight anarchist organization with a shared line, working inside the committees.
+        evidence:
+          - {position: org.form.specific-anarchist-organization, w: 3}
+        next: descent.libertarian-left.02
+      - id: affinity
+        text: No formal organization at all. Small groups of people who trust each other, acting now.
+        evidence:
+          - {position: org.form.affinity-groups, w: 3}
+        next: descent.libertarian-left.02
+      - id: assemblies
+        text: Take it to the neighborhoods. Open assemblies where everyone who lives here decides.
+        evidence:
+          - {position: org.form.horizontal-movement, w: 2}
+          - {position: democracy.form.direct, w: 2}
+        next: descent.libertarian-left.02
+      - id: party
+        text: Yes. Without a party and a plan, this ends like every strike wave before it.
+        evidence:
+          - {position: org.form.vanguard-party, w: 3}
+        next: descent.libertarian-left.02
+
+  - id: descent.libertarian-left.02
+    type: voices
+    title: Union or council
+    text: >
+      Two old militants at the same table, arguing the question their movements split over a century ago.
+    voices:
+      - {name: "A syndicalist", says: "The union is built in daily fights over pay and hours. It teaches workers to run things. On the day, it simply takes over production."}
+      - {name: "A council communist", says: "Unions bargain over the price of labor, so they live inside capitalism and grow officials. Real power comes from councils that rise in the struggle and answer to their members."}
+    why: This separates anarcho-syndicalists from council communists, and both from communalists, insurrectionists and platformists.
+    options:
+      - id: syndicalist
+        text: The syndicalist.
+        evidence:
+          - {position: unions.role.revolutionary-syndicate, w: 3}
+          - {position: org.form.union-syndicalist, w: 1}
+        next: descent.libertarian-left.03
+      - id: council
+        text: The council communist.
+        evidence:
+          - {position: org.form.workers-councils, w: 3}
+          - {position: unions.role.revolutionary-syndicate, w: -1}
+        next: descent.libertarian-left.03
+      - id: town
+        text: Both forget that people live in towns, not only at work. The assembly of the whole community comes first.
+        evidence:
+          - {position: democracy.form.direct, w: 2}
+          - {position: firm.ownership.public-municipal, w: 1}
+        next: descent.libertarian-left.03
+      - id: permanent
+        text: Both forget that any permanent organization grows its own officials.
+        evidence:
+          - {position: org.form.affinity-groups, w: 2}
+          - {position: state.nature.hierarchy-as-such, w: 1}
+        next: descent.libertarian-left.03
+      - id: current
+        text: Both tools are fine. Without an organized anarchist current inside them, both drift.
+        evidence:
+          - {position: org.form.specific-anarchist-organization, w: 3}
+        next: descent.libertarian-left.03
+
+  - id: descent.libertarian-left.03
+    type: verdict
+    title: Kronstadt, 1921
+    text: >
+      March 1921. The sailors of Kronstadt, heroes of 1917, demand new soviet elections by secret ballot and
+      free speech for all socialist and anarchist parties. The Bolshevik government calls the revolt a
+      counter-revolution backed by émigrés and sends troops across the ice. Where would you have stood?
+    why: This separates anarchist and council-communist readings of Kronstadt from each other and from the Leninist defense of it.
+    options:
+      - id: sailors
+        text: With the sailors. Crushing them ended the revolution.
+        evidence:
+          - {position: hist.ussr-early.kronstadt-makhno, w: 3}
+        next: descent.libertarian-left.04
+      - id: deeper
+        text: With the sailors, but the deeper fault came earlier, when the party took the soviets' place.
+        evidence:
+          - {position: hist.ussr-early.workers-democracy-lost, w: 3}
+        next: descent.libertarian-left.04
+      - id: necessity
+        text: A tragic necessity. The civil war was barely over and the revolution was surrounded.
+        evidence:
+          - {position: hist.ussr-early.besieged-necessity, w: 3}
+        next: descent.libertarian-left.04
+      - id: plague
+        text: A plague on all of them. This is simply what revolutions do.
+        evidence:
+          - {position: hist.ussr-early.terror-state, w: 2}
+        next: descent.libertarian-left.04
+
+  - id: descent.libertarian-left.04
+    type: verdict
+    title: Barcelona, 1936
+    text: >
+      November 1936. The anarchist union runs much of Catalonia's industry and fields its own militias. To
+      get arms for the war against Franco, its leaders accept four seats in the Republic's government, and
+      the militias are being folded into a regular army. Where would you have stood?
+    why: This asks whether you put the war before the revolution, and what you think the anarchists should have done with power.
+    options:
+      - id: join
+        text: Join. Win the war first. A revolution is worthless if Franco wins.
+        evidence:
+          - {position: alliances.policy.popular-front, w: 3}
+        next: descent.libertarian-left.05
+      - id: refuse
+        text: Refuse. Push the revolution further. The collectives and the militias are how you win the war.
+        evidence:
+          - {position: siege.governance.armed-federation, w: 3}
+          - {position: state.relation.abolish-at-once, w: 1}
+        next: descent.libertarian-left.05
+      - id: junta
+        text: Refuse, and do what the Friends of Durruti later urged. A revolutionary junta of the unions and militias.
+        evidence:
+          - {position: siege.governance.armed-federation, w: 2}
+          - {position: org.form.specific-anarchist-organization, w: 2}
+        next: descent.libertarian-left.05
+      - id: party
+        text: The tragedy was having no revolutionary party ready to take the power lying in the street.
+        evidence:
+          - {position: org.form.vanguard-party, w: 2}
+          - {position: state.relation.smash-and-replace, w: 2}
+        next: descent.libertarian-left.05
+
+  - id: descent.libertarian-left.05
+    type: tradeoff
+    title: The invitation
+    text: >
+      Northeast Syria. Communes run neighborhoods, every office has a male and a female co-chair, and women's
+      units fight the Islamic State. The administration also conscripts young men, works with US forces, and
+      is led by one party. A friend asks you to come and help.
+    why: This separates democratic confederalists from anarchists who see a state in any administration, and both from anti-imperialist and nationalist readings of Rojava.
+    options:
+      - id: go
+        text: Go. Communes and women's liberation without a nation-state is what we have always wanted.
+        evidence:
+          - {position: hist.rojava.democratic-confederalism, w: 3}
+          - {position: democracy.form.direct, w: 1}
+        next: descent.libertarian-left.06
+      - id: honest
+        text: Go, and write honestly about the party's grip and the abuses.
+        evidence:
+          - {position: hist.rojava.one-party-autonomy, w: 3}
+        next: descent.libertarian-left.06
+      - id: state
+        text: Don't. Conscription, prisons and a ruling party make a state, whatever it calls itself.
+        evidence:
+          - {position: state.nature.hierarchy-as-such, w: 2}
+          - {position: hist.rojava.one-party-autonomy, w: 1}
+        next: descent.libertarian-left.06
+      - id: proxy
+        text: Don't. Whoever sits under US protection serves the US plan for Syria.
+        evidence:
+          - {position: hist.rojava.separatist-proxy, w: 3}
+        next: descent.libertarian-left.06
+      - id: people
+        text: Go. A stateless people defending itself has the right to win, whatever its program.
+        evidence:
+          - {position: hist.rojava.kurdish-self-determination, w: 3}
+        next: descent.libertarian-left.06
+
+  - id: descent.libertarian-left.06
+    type: line
+    title: The port
+    text: >
+      A wildcat strike at the container port. Going down this list, where would you stop?
+    cases:
+      - Walking out without union approval
+      - Occupying the terminal
+      - Slowing the cranes and losing the paperwork
+      - Disabling the cranes
+      - Smashing up the company's offices
+      - Arming the picket against strikebreakers
+    why: This asks how far direct action may go, which separates syndicalists, insurrectionists and others who share the same enemies.
+    options:
+      - id: none
+        text: Before the first. Strikes outside the rules hurt everyone.
+        evidence:
+          - {position: change.means.lawful-persuasion, w: 2}
+        next: descent.libertarian-left.07
+      - id: two
+        text: After the second. Mass action in the open is our strength.
+        evidence:
+          - {position: change.means.strike-and-direct-action, w: 3}
+          - {position: violence.political.never, w: 1}
+        next: descent.libertarian-left.07
+      - id: four
+        text: After the fourth. Sabotaging machines is an old union weapon. People are another matter.
+        evidence:
+          - {position: change.means.strike-and-direct-action, w: 3}
+          - {position: unions.role.revolutionary-syndicate, w: 1}
+        next: descent.libertarian-left.07
+      - id: defense
+        text: Skip the offices, keep the armed picket. Defense yes, wrecking no.
+        evidence:
+          - {position: violence.political.self-defense, w: 3}
+        next: descent.libertarian-left.07
+      - id: all
+        text: All of it, if the strikers choose it. Attack is how people learn their own strength.
+        evidence:
+          - {position: violence.political.revolutionary, w: 2}
+          - {position: org.form.affinity-groups, w: 1}
+        next: descent.libertarian-left.07
+
+  - id: descent.libertarian-left.07
+    type: tradeoff
+    title: Paris, 1926
+    text: >
+      Paris, 1926. Exiles from the Ukrainian anarchist army publish a platform: anarchists should form one
+      organization with a common line, a shared strategy, and collective responsibility for each other's
+      actions. Critics call it a party in all but name. Your group has to decide whether to sign.
+    why: This separates platformists from synthesis anarchists, insurrectionists, syndicalists and council communists on how anarchists should organize.
+    options:
+      - id: sign
+        text: Sign. We lost in Ukraine and Russia because we were scattered.
+        evidence:
+          - {position: org.form.specific-anarchist-organization, w: 3}
+        next: descent.libertarian-left.08
+      - id: federation
+        text: Don't sign. A loose federation of every anarchist tendency, each free to act.
+        evidence:
+          - {position: org.form.horizontal-movement, w: 2}
+          - {position: org.form.specific-anarchist-organization, w: -1}
+        next: descent.libertarian-left.08
+      - id: informal
+        text: Don't sign. Formal organization hardens into hierarchy. Stay informal.
+        evidence:
+          - {position: org.form.affinity-groups, w: 3}
+        next: descent.libertarian-left.08
+      - id: unions
+        text: Beside the point. The organization that matters is the union.
+        evidence:
+          - {position: org.form.union-syndicalist, w: 2}
+        next: descent.libertarian-left.08
+      - id: class
+        text: Beside the point. Organize the class, not the anarchists.
+        evidence:
+          - {position: org.form.workers-councils, w: 2}
+        next: descent.libertarian-left.08
+
+  - id: descent.libertarian-left.08
+    type: scene
+    title: The slate
+    text: >
+      Your town of 40,000 elects its council next spring. A group of neighbors wants to run on one promise:
+      hand the council's decisions to open neighborhood assemblies, and link up with towns that do the same.
+      They ask you to join the slate.
+    why: This separates communalists, who would contest town elections, from anarchists and council communists who would not, and from ordinary reformers.
+    options:
+      - id: run
+        text: Join. Turn the town hall into an assembly and federate the towns.
+        evidence:
+          - {position: democracy.form.direct, w: 3}
+          - {position: firm.ownership.public-municipal, w: 1}
+        next: descent.libertarian-left.09
+      - id: workplace
+        text: Decline. Power lies in production. Organize at work.
+        evidence:
+          - {position: elections.role.organize-instead, w: 2}
+          - {position: change.agent.workers-as-class, w: 1}
+        next: descent.libertarian-left.09
+      - id: never
+        text: Decline. Running for office feeds the state you mean to abolish.
+        evidence:
+          - {position: elections.role.boycott-principle, w: 3}
+        next: descent.libertarian-left.09
+      - id: outside
+        text: Decline the slate, but build the assemblies anyway, outside the town hall.
+        evidence:
+          - {position: state.relation.exit-and-build, w: 3}
+        next: descent.libertarian-left.09
+      - id: reforms
+        text: Join, and use the seats to win practical reforms.
+        evidence:
+          - {position: elections.role.main-road, w: 2}
+        next: descent.libertarian-left.09
+
+  - id: descent.libertarian-left.09
+    type: allocation
+    title: Through the winter
+    text: >
+      The old authorities in your region have collapsed. Something has to hold it together through the
+      winter: food, heat, defense. You have ten points to spread.
+    why: This asks which institutions you would actually trust with power once there is no state, and how much.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: councils
+          text: Federated workplace councils that run production
+          evidence: [{position: org.form.workers-councils, w: 2}]
+        - id: union
+          text: The union federation and its industrial branches
+          evidence: [{position: org.form.union-syndicalist, w: 2}]
+        - id: assemblies
+          text: Neighborhood assemblies and a confederation of towns
+          evidence: [{position: democracy.form.direct, w: 2}]
+        - id: militia
+          text: Elected militias answerable to the councils
+          evidence: [{position: siege.governance.armed-federation, w: 2}]
+        - id: federation
+          text: An organized anarchist federation arguing its line everywhere
+          evidence: [{position: org.form.specific-anarchist-organization, w: 2}]
+        - id: free
+          text: Nothing permanent. Free distribution, and groups that form and dissolve as needed
+          evidence: [{position: allocation.mechanism.free-access, w: 1}, {position: org.form.affinity-groups, w: 1}]
+        - id: government
+          text: A revolutionary government that can coordinate and defend
+          evidence: [{position: state.relation.smash-and-replace, w: 2}]
+    options:
+      - id: done
+        text: Done

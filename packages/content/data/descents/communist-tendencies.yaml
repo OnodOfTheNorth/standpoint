@@ -1,0 +1,365 @@
+id: descent.communist-tendencies
+title: Which communism?
+blurb: For people who think revolution is necessary. Moscow, Beijing, Trotsky or the councils, decided on the real splits of the last hundred years.
+region: strategy
+gate:
+  any:
+    - {weight: {position: state.nature.class-instrument, gt: 0.25}}
+    - {weight: {position: elections.role.tribune, gt: 0.25}}
+    - {weight: {position: party.system.leading-party, gt: 0.25}}
+    - {weight: {position: siege.governance.revolutionary-dictatorship, gt: 0.25}}
+    - {weight: {position: hist.ussr-early.besieged-necessity, gt: 0.25}}
+    - {weight: {position: hist.chile-1973.peaceful-road-a-trap, gt: 0.25}}
+    - {weight: {position: violence.political.revolutionary, gt: 0.25}}
+    - {weight: {position: org.form.vanguard-party, gt: 0.25}}
+    - {weight: {position: reform.revolution.revolution-necessary, gt: 0.25}}
+entry: descent.communist-tendencies.01
+nodes:
+  - id: descent.communist-tendencies.01
+    type: verdict
+    title: Moscow, 1925
+    text: >
+      Moscow, 1925. Lenin is dead. The German revolution everyone was counting on failed in 1923. The
+      country is ruined, mostly peasant, and surrounded. One faction says socialism can be built here,
+      alone. Another says it must spread abroad or die. A third says go slow, with the peasants and the
+      market. Where do you stand?
+    why: This places you in the founding split between socialism in one country and permanent revolution.
+    premises:
+      - id: not-socialist
+        text: The premise that this was a socialist revolution in the first place.
+        evidence: [{position: hist.russian-revolution.bourgeois-in-socialist-costume, w: 2}]
+    options:
+      - id: here
+        text: Build it here. Nobody is coming to help, so build industry and defend it.
+        evidence:
+          - {position: internationalism.socialism-in-one-country, w: 3}
+          - {position: hist.ussr-early.besieged-necessity, w: 1}
+        next: descent.communist-tendencies.02
+      - id: spread
+        text: Spread it or lose it. Socialism alone in a poor country breeds a bureaucracy.
+        evidence:
+          - {position: internationalism.permanent-revolution, w: 3}
+        next: descent.communist-tendencies.02
+      - id: slow
+        text: Go slow. Keep the market with the peasants and grow into socialism over decades.
+        evidence:
+          - {position: hist.ussr-early.nep-road, w: 3}
+        next: descent.communist-tendencies.02
+      - id: lost
+        text: It was already lost. The party had replaced the soviets, and no national road would bring them back.
+        evidence:
+          - {position: hist.ussr-early.workers-democracy-lost, w: 2}
+          - {position: internationalism.no-national-roads, w: 2}
+        next: descent.communist-tendencies.02
+
+  - id: descent.communist-tendencies.02
+    type: explanation
+    title: "1937"
+    text: >
+      1937 and 1938. By the security police's own records, about one and a half million people are
+      arrested and about 680,000 shot. Old Bolsheviks confess at public trials. Officers, managers and
+      ordinary workers disappear. Why did it happen?
+    why: This separates the main communist readings of the Stalin years, and asks what kind of cause you reach for.
+    premises:
+      - id: figures
+        text: The premise that these figures can be trusted.
+        evidence: [{position: totalitarianism.concept.cold-war-weapon, w: 1}, {position: hist.ussr-stalin.socialism-built, w: 1}]
+    options:
+      - id: siege
+        text: A real fifth column, a war coming, and a state that overreacted under siege.
+        cause: interests
+        evidence:
+          - {position: hist.ussr-stalin.socialism-built, w: 3}
+        next: descent.communist-tendencies.03
+      - id: caste
+        text: A bureaucratic caste destroying the old revolutionaries who could expose it.
+        cause: interests
+        evidence:
+          - {position: hist.ussr-stalin.degenerated-workers-state, w: 3}
+        next: descent.communist-tendencies.03
+      - id: class
+        text: A new ruling class disciplining its workers and managers, as any capitalist state would.
+        cause: structures
+        evidence:
+          - {position: hist.ussr-stalin.state-capitalism, w: 3}
+        next: descent.communist-tendencies.03
+      - id: error
+        text: Grave errors by one leader and his circle. Socialism was being built, but this was not needed.
+        cause: individuals
+        evidence:
+          - {position: hist.ussr-stalin.crimes-not-necessary, w: 3}
+        next: descent.communist-tendencies.03
+      - id: ideology
+        text: An ideology that treats people as material for history. The terror was built in.
+        cause: ideas
+        evidence:
+          - {position: hist.ussr-stalin.totalitarian-twin, w: 2}
+          - {position: totalitarianism.concept.novel-form, w: 1}
+        next: descent.communist-tendencies.03
+
+  - id: descent.communist-tendencies.03
+    type: verdict
+    title: The split
+    text: >
+      1963. Beijing and Moscow trade open letters. Moscow says nuclear weapons make peaceful coexistence with
+      the West the only sane course, and that peaceful roads to socialism are possible. Beijing says Moscow
+      has abandoned revolution and is restoring capitalism at home. Communist parties everywhere split.
+      Where do you stand?
+    why: This separates Marxist-Leninists loyal to Moscow from Maoists, Hoxhaists, Trotskyists and left communists on the Sino-Soviet split.
+    options:
+      - id: beijing
+        text: Beijing. After 1956, Moscow's leaders were steering the Soviet Union back toward capitalism.
+        evidence:
+          - {position: hist.ussr-late.capitalism-restored-1956, w: 3}
+          - {position: contradiction.primary.imperialism-vs-oppressed, w: 1}
+        next: descent.communist-tendencies.04
+      - id: moscow
+        text: Moscow. The socialist camp needed unity against imperialism, and Beijing broke it.
+        evidence:
+          - {position: hist.ussr-late.real-socialism-betrayed, w: 2}
+          - {position: hist.ussr-late.rear-base-of-liberation, w: 1}
+        next: descent.communist-tendencies.04
+      - id: tirana
+        text: Beijing then, and Albania later, when it broke with China too in 1978.
+        evidence:
+          - {position: hist.ussr-late.capitalism-restored-1956, w: 2}
+          - {position: hist.china-reform.capitalist-restoration, w: 2}
+        next: descent.communist-tendencies.04
+      - id: bureaucracies
+        text: Neither. Two bureaucracies fighting over turf, each misruling its own workers' state.
+        evidence:
+          - {position: hist.ussr-late.bureaucratic-stagnation, w: 2}
+          - {position: hist.china-mao.bureaucratic-squeeze, w: 2}
+        next: descent.communist-tendencies.04
+      - id: rivals
+        text: Neither. Two state capitalisms behaving like rival powers.
+        evidence:
+          - {position: imperialism.nature.inter-imperialist-rivalry, w: 2}
+          - {position: hist.ussr-stalin.state-capitalism, w: 2}
+        next: descent.communist-tendencies.04
+
+  - id: descent.communist-tendencies.04
+    type: voices
+    title: Shanghai, 1967
+    text: >
+      Shanghai, early 1967. Rebel workers have overthrown the city's party committee and proclaimed a
+      commune. Within weeks Beijing advises renaming it a revolutionary committee, with army officers and
+      party cadres seated alongside them. Two people argue in a factory canteen.
+    voices:
+      - {name: "A rebel worker", says: "The party grew its own bosses. We threw them out. The Chairman himself told us to bombard the headquarters."}
+      - {name: "A veteran engineer", says: "Our plant stopped for weeks. Good people were paraded in dunce caps. That isn't class struggle, it's settling scores."}
+    why: This separates the Maoist reading of the Cultural Revolution from the official Chinese verdict, the anti-bureaucratic left and the liberal reading.
+    options:
+      - id: rebel
+        text: The rebel. Capitalism was growing back inside the party, and only the masses could stop it.
+        evidence:
+          - {position: hist.china-mao.continuing-revolution, w: 3}
+        next: descent.communist-tendencies.05
+      - id: engineer
+        text: The engineer. Great achievements, then a grave error late in Mao's life.
+        evidence:
+          - {position: hist.china-mao.achievements-primary, w: 3}
+        next: descent.communist-tendencies.05
+      - id: commune
+        text: Both miss the commune. Workers ran a city, and Beijing put officers and cadres back on top.
+        evidence:
+          - {position: hist.china-mao.bureaucratic-squeeze, w: 2}
+          - {position: siege.governance.class-democracy, w: 2}
+        next: descent.communist-tendencies.05
+      - id: system
+        text: Both miss that the whole system bred this. It was a utopian tyranny.
+        evidence:
+          - {position: hist.china-mao.utopian-catastrophe, w: 3}
+        next: descent.communist-tendencies.05
+
+  - id: descent.communist-tendencies.05
+    type: scene
+    title: The borrowed school
+    text: >
+      A country of sixty million, most of them peasants renting land from a few families. The army has shot
+      strikers in the capital twice this year. Your organization meets in a borrowed school to decide where
+      to put its people for the next ten years.
+    why: This separates protracted people's war from urban insurrection, the transitional program, the national front and class against class.
+    options:
+      - id: countryside
+        text: The countryside. Build base areas with the peasants and an army of our own, and surround the cities. It will take decades.
+        evidence:
+          - {position: change.agent.peasants-and-oppressed-nations, w: 3}
+          - {position: change.tempo.protracted-struggle, w: 2}
+        next: descent.communist-tendencies.06
+      - id: cities
+        text: The cities. Root ourselves in the factories and be ready when a crisis lets the workers rise.
+        evidence:
+          - {position: change.agent.workers-as-class, w: 2}
+          - {position: change.tempo.seize-the-moment, w: 2}
+        next: descent.communist-tendencies.06
+      - id: demands
+        text: The unions. Fight for demands that start with wages and end with workers' control, so each fight points past capitalism.
+        evidence:
+          - {position: reform.revolution.non-reformist-reforms, w: 2}
+          - {position: change.agent.workers-as-class, w: 1}
+        next: descent.communist-tendencies.06
+      - id: front
+        text: A national front. Unite workers, peasants and patriotic business against the landlords and their foreign backers.
+        evidence:
+          - {position: alliances.policy.national-front, w: 3}
+        next: descent.communist-tendencies.06
+      - id: class
+        text: Workers only, against every faction of the owners, local or foreign. No fronts.
+        evidence:
+          - {position: alliances.policy.class-against-class, w: 3}
+          - {position: internationalism.no-national-roads, w: 1}
+        next: descent.communist-tendencies.06
+
+  - id: descent.communist-tendencies.06
+    type: scene
+    title: Election season
+    text: >
+      A general election. A big labor party has promised a lot and delivered little, and the far right is
+      gaining. Your group has a few thousand members and a weekly paper. What do you do with the election?
+    why: This separates the tribune, the united front, the popular front and principled abstention.
+    options:
+      - id: tribune
+        text: Run our own candidates and use the platform, win or lose.
+        evidence:
+          - {position: elections.role.tribune, w: 3}
+        next: descent.communist-tendencies.07
+      - id: united
+        text: Call for a labor vote and demand it break with the bosses. Let workers see what it does in office.
+        evidence:
+          - {position: alliances.policy.united-front, w: 3}
+        next: descent.communist-tendencies.07
+      - id: popular
+        text: Join a broad front with labor and the liberals to stop the far right.
+        evidence:
+          - {position: alliances.policy.popular-front, w: 3}
+        next: descent.communist-tendencies.07
+      - id: abstain
+        text: Denounce the whole circus. Parliament is the enemy's ground.
+        evidence:
+          - {position: elections.role.boycott-principle, w: 3}
+          - {position: alliances.policy.class-against-class, w: 1}
+        next: descent.communist-tendencies.07
+      - id: base
+        text: Ignore it. Build bases among the poorest and prepare for a long fight.
+        evidence:
+          - {position: change.tempo.protracted-struggle, w: 2}
+          - {position: elections.role.organize-instead, w: 1}
+        next: descent.communist-tendencies.07
+
+  - id: descent.communist-tendencies.07
+    type: line
+    title: Inside the party
+    text: >
+      Inside the party. Going down this list, where does a member's right to disagree end?
+    cases:
+      - Arguing against a proposal before the vote
+      - Publishing a dissenting article in the party paper
+      - Forming a faction with its own platform for the congress
+      - Criticizing the adopted line in public
+      - Organizing a split
+    why: This separates democratic centralism with a ban on factions from the factional rights Trotskyists defend and from those who reject party rule.
+    options:
+      - id: first
+        text: After the first. Debate freely, then act as one. Banning factions in 1921 was right.
+        evidence:
+          - {position: democracy.form.democratic-centralism, w: 3}
+          - {position: org.form.vanguard-party, w: 2}
+        next: descent.communist-tendencies.08
+      - id: third
+        text: After the third. Factions keep a party alive. Banning them was the first step to bureaucracy.
+        evidence:
+          - {position: party.system.soviet-pluralism, w: 2}
+          - {position: hist.russian-revolution.degenerated-under-siege, w: 1}
+        next: descent.communist-tendencies.08
+      - id: councils
+        text: Wrong question. No party should rule. Power belongs to workers' councils, where all tendencies argue.
+        evidence:
+          - {position: democracy.form.council, w: 3}
+          - {position: party.system.soviet-pluralism, w: 1}
+        next: descent.communist-tendencies.08
+      - id: all
+        text: All of it is fine. A party that cannot survive argument does not deserve to.
+        evidence:
+          - {position: org.form.broad-party, w: 2}
+        next: descent.communist-tendencies.08
+
+  - id: descent.communist-tendencies.08
+    type: explanation
+    title: China now
+    text: >
+      China today: hundreds of billionaires, a Communist Party of nearly a hundred million members, state
+      banks that steer investment, and urban wages several times what they were in 2000. What is it?
+    why: This separates the main readings of China today, the sharpest live dispute among communists.
+    options:
+      - id: socialist
+        text: Socialism at an early stage, using markets to develop under the party's leadership.
+        cause: structures
+        evidence:
+          - {position: hist.china-present.new-era-socialism, w: 3}
+          - {position: hist.china-reform.primary-stage, w: 1}
+        next: descent.communist-tendencies.09
+      - id: restored
+        text: Capitalism, restored after Mao died by the people he warned about.
+        cause: individuals
+        evidence:
+          - {position: hist.china-reform.capitalist-restoration, w: 3}
+        next: descent.communist-tendencies.09
+      - id: rival
+        text: State capitalism, and now an imperialist rival exporting capital.
+        cause: structures
+        evidence:
+          - {position: hist.china-present.state-capitalist-rival, w: 3}
+          - {position: china.role.new-empire, w: 1}
+        next: descent.communist-tendencies.09
+      - id: anchor
+        text: Whatever it is inside, it breaks the West's monopolies and gives the South room to move.
+        cause: interests
+        evidence:
+          - {position: hist.china-present.multipolar-anchor, w: 3}
+          - {position: china.role.counterweight, w: 1}
+        next: descent.communist-tendencies.09
+      - id: developmental
+        text: Neither label fits. A developmental state that did what South Korea did, only bigger.
+        cause: structures
+        evidence:
+          - {position: hist.china-present.developmental-state, w: 3}
+        next: descent.communist-tendencies.09
+
+  - id: descent.communist-tendencies.09
+    type: reason
+    title: What decides it
+    text: >
+      Every revolution of the last century fell, changed past recognition, or survived by compromise.
+      What, above all, decides whether a revolution stays socialist?
+    why: This asks what you think a revolution's fate turns on, and what kind of cause you reach for.
+    options:
+      - id: spread
+        text: Whether it spreads. Isolation is what kills it.
+        cause: structures
+        evidence:
+          - {position: internationalism.permanent-revolution, w: 2}
+          - {position: hist.russian-revolution.degenerated-under-siege, w: 2}
+      - id: line
+        text: Whether the party keeps a correct line and keeps fighting the new bourgeoisie inside itself.
+        cause: ideas
+        evidence:
+          - {position: hist.china-mao.continuing-revolution, w: 2}
+          - {position: democracy.form.democratic-centralism, w: 1}
+      - id: forces
+        text: Whether it survives the siege and builds up industry. The rest follows.
+        cause: structures
+        evidence:
+          - {position: state.relation.strengthen-then-wither, w: 2}
+          - {position: internationalism.socialism-in-one-country, w: 2}
+      - id: councils
+        text: Whether workers hold power themselves, in their own councils, not through a party.
+        cause: interests
+        evidence:
+          - {position: democracy.form.council, w: 2}
+          - {position: siege.governance.class-democracy, w: 2}
+      - id: never
+        text: Nothing decides it. A revolution that takes the state becomes the state.
+        cause: structures
+        evidence:
+          - {position: state.nature.hierarchy-as-such, w: 2}

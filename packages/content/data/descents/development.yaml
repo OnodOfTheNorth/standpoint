@@ -1,0 +1,410 @@
+id: descent.development
+title: Which road out?
+blurb: For people with a view on why poor countries are poor. Open markets, the developmental state, Arab socialism, an Islamic economy or delinking, decided on oil, Bandung, East Asia and Chinese loans.
+region: world
+gate:
+  any:
+    - {weight: {position: poverty.cause.drain, gt: 0.25}}
+    - {weight: {position: poverty.cause.bad-institutions, gt: 0.25}}
+    - {weight: {position: poverty.cause.colonial-legacy, gt: 0.25}}
+    - {weight: {position: development.path.integration, gt: 0.25}}
+    - {weight: {position: development.path.delinking, gt: 0.25}}
+    - {weight: {position: comprador.nature.broker-class, gt: 0.25}}
+    - {weight: {position: imperialism.nature.unequal-exchange-drain, gt: 0.25}}
+entry: descent.development.01
+nodes:
+  - id: descent.development.01
+    type: scene
+    title: The ministry
+    text: >
+      You become minister of the economy in a West African country of forty million. Cocoa and bauxite earn
+      most of the foreign currency, and their prices have fallen by a third in two years. Fuel is imported
+      and the debt is in dollars. Your first big decision sets the country's direction.
+    why: This asks which development path you would actually choose for a poor country.
+    premises:
+      - id: not-mine
+        text: The premise that one minister decides any of this.
+        evidence: [{position: comprador.nature.broker-class, w: 1}, {position: intl.institutions.creditor-instruments, w: 1}]
+    options:
+      - id: open
+        text: Open up. Free-trade zones, low taxes for investors, a welcome for foreign firms.
+        evidence:
+          - {position: development.path.integration, w: 3}
+        next: descent.development.02
+      - id: tariffs
+        text: Build factories behind tariffs and make here what we now import.
+        evidence:
+          - {position: development.path.import-substitution, w: 3}
+        next: descent.development.02
+      - id: steer
+        text: A strong state picks industries and gives them cheap credit, on condition they export or lose it.
+        evidence:
+          - {position: development.path.developmental-state, w: 3}
+        next: descent.development.02
+      - id: delink
+        text: Food first. Plan for our own needs, ration foreign currency, refuse terms set abroad.
+        evidence:
+          - {position: development.path.delinking, w: 3}
+        next: descent.development.02
+      - id: secure
+        text: Secure property, end the red tape and the subsidies, and get the state out of the way.
+        evidence:
+          - {position: development.path.market-freedom, w: 3}
+        next: descent.development.02
+      - id: faith
+        text: Build an economy on faith. No interest, alms for the poor as a duty, trade under moral law.
+        evidence:
+          - {position: money.nature.anti-usury, w: 2}
+          - {position: markets.nature.moral-economy, w: 2}
+        next: descent.development.02
+
+  - id: descent.development.02
+    type: explanation
+    title: Seoul and Accra
+    text: >
+      In 1960 South Korea was about as poor as Ghana. By 2000 it was among the rich countries, and Taiwan
+      had done much the same. Brazil and most of Africa had not. Why?
+    why: This asks how you explain the one big exception to world poverty, and what kind of cause you reach for.
+    options:
+      - id: markets
+        text: They opened to world markets and exported, while others hid behind tariffs.
+        cause: structures
+        evidence:
+          - {position: development.path.integration, w: 2}
+          - {position: poverty.cause.bad-institutions, w: 1}
+        next: descent.development.03
+      - id: state
+        text: Their states disciplined capital. Land reform, controlled credit, export targets, and punishment for failure.
+        cause: structures
+        evidence:
+          - {position: development.path.developmental-state, w: 3}
+        next: descent.development.03
+      - id: cold-war
+        text: They were front-line states in the Cold War. Washington sent aid, opened its market and allowed them what it forbade others.
+        cause: interests
+        evidence:
+          - {position: poverty.cause.drain, w: 2}
+        next: descent.development.03
+      - id: culture
+        text: Culture. Thrift, schooling and family discipline.
+        cause: culture
+        evidence:
+          - {position: poverty.cause.culture, w: 3}
+        next: descent.development.03
+      - id: rulers
+        text: Their rulers built rather than looted. Where rulers loot, nothing grows.
+        cause: individuals
+        evidence:
+          - {position: poverty.cause.misrule, w: 2}
+          - {position: poverty.cause.bad-institutions, w: 1}
+        next: descent.development.03
+
+  - id: descent.development.03
+    type: verdict
+    title: Abadan, 1951
+    text: >
+      Iran, 1951. Parliament nationalizes the British-owned oil company. Britain blockades Iranian oil and
+      the economy suffers. In 1953 a coup organized with British and American intelligence removes the prime
+      minister who led the nationalization. Where would you have stood in 1951?
+    why: This asks how you judge oil nationalization, and separates nationalist, Marxist, Islamist and liberal readings of it.
+    options:
+      - id: nationalize
+        text: With him. A nation's oil belongs to the nation, whatever it costs.
+        evidence:
+          - {position: intl.sovereignty.nations-set-own-course, w: 3}
+          - {position: nationalism.kinds.national-popular-front, w: 1}
+        next: descent.development.04
+      - id: further
+        text: With him, and further. Without land reform and an organized people, a nationalist premier was bound to fall.
+        evidence:
+          - {position: comprador.nature.broker-class, w: 2}
+          - {position: development.path.delinking, w: 1}
+        next: descent.development.04
+      - id: deal
+        text: Against. Negotiate a better split. The British had the tankers, the markets and the guns.
+        evidence:
+          - {position: development.path.integration, w: 2}
+        next: descent.development.04
+      - id: faith
+        text: With him until he lost the clergy. Independence needs the people's faith behind it, not only a premier.
+        evidence:
+          - {position: religion.public.divine-law, w: 2}
+          - {position: hist.iranian-revolution.islamic-revolution, w: 1}
+        next: descent.development.04
+      - id: lesson
+        text: The coup is the lesson. Any country that takes back its resources is punished by those who profit from them.
+        evidence:
+          - {position: imperialism.nature.unequal-exchange-drain, w: 2}
+          - {position: poverty.cause.drain, w: 1}
+        next: descent.development.04
+
+  - id: descent.development.04
+    type: verdict
+    title: Bandung, 1955
+    text: >
+      Bandung, Indonesia, 1955. Leaders of twenty-nine Asian and African states meet without the Europeans
+      or the superpowers. They call for an end to colonialism and for cooperation among themselves, and many
+      want to stand outside both Cold War blocs. Which road should that meeting have taken?
+    why: This separates non-aligned nationalism from Third Worldist internationalism, the Western camp, the community of faith and class-first internationalism.
+    options:
+      - id: nonaligned
+        text: Neither bloc. Sovereign nations trading and building together on their own terms.
+        evidence:
+          - {position: intl.sovereignty.nations-set-own-course, w: 2}
+          - {position: world.order.multipolar-sovereignty, w: 1}
+        next: descent.development.05
+      - id: tricontinental
+        text: Further. An alliance of the oppressed nations against imperialism, with the socialist states as allies.
+        evidence:
+          - {position: internationalism.tricontinental, w: 3}
+        next: descent.development.05
+      - id: west
+        text: With the West. Communism was the bigger danger to new nations.
+        evidence:
+          - {position: world.order.liberal-order, w: 2}
+        next: descent.development.05
+      - id: faith
+        text: As communities of faith, not as copies of European nation-states.
+        evidence:
+          - {position: internationalism.community-of-faith, w: 2}
+        next: descent.development.05
+      - id: class
+        text: Neither bloc, and not with the new rulers either. Workers in Asia and Africa had enemies at home too.
+        evidence:
+          - {position: nationalism.kinds.all-bourgeois, w: 2}
+          - {position: contradiction.primary.capital-vs-labor, w: 1}
+        next: descent.development.05
+
+  - id: descent.development.05
+    type: tradeoff
+    title: Cairo, 1962
+    text: >
+      Cairo, 1962. Your government has capped landholdings, given land to hundreds of thousands of peasant
+      families, and nationalized the banks, insurance and big industry. One national organization speaks
+      for workers, peasants, soldiers and national business. The Communists want their own party back. The
+      Muslim Brotherhood wants its mosques and schools back. What do you do?
+    why: This separates Nasserist and Arab socialist one-party nationalism from the Marxist, Islamist and liberal alternatives.
+    options:
+      - id: one
+        text: Keep one national organization. Class parties and religious parties tear a young nation apart.
+        evidence:
+          - {position: party.system.national-front-party, w: 3}
+          - {position: nationalism.kinds.national-popular-front, w: 1}
+        next: descent.development.06
+      - id: communists
+        text: Bring the Communists in as partners. Workers need their own voice inside the front.
+        evidence:
+          - {position: alliances.policy.national-front, w: 2}
+          - {position: unions.role.class-organ, w: 1}
+        next: descent.development.06
+      - id: workers
+        text: Neither. Workers and peasants need their own organizations, independent of the officers too.
+        evidence:
+          - {position: comprador.nature.bureaucratic-bourgeoisie, w: 2}
+          - {position: change.agent.workers-as-class, w: 1}
+        next: descent.development.06
+      - id: brotherhood
+        text: Let the Brotherhood back. The nation's soul is its faith, not a party's slogans.
+        evidence:
+          - {position: religion.public.divine-law, w: 2}
+          - {position: org.form.church-and-community, w: 1}
+        next: descent.development.06
+      - id: elections
+        text: Hold free elections and let them all compete.
+        evidence:
+          - {position: party.system.competitive-multiparty, w: 3}
+        next: descent.development.06
+
+  - id: descent.development.06
+    type: voices
+    title: The mill town
+    text: >
+      A union hall in a textile town. The country's mills are losing to cheap imports. Two speakers.
+    voices:
+      - {name: "A mill owner", says: "We want what you want: tariffs, cheap credit, foreign brands kept out. Our factories, your jobs. Stand with us against the importers and the IMF."}
+      - {name: "A union organizer", says: "The day a foreign brand offers him a joint venture, he'll take it and break our union to sweeten the deal. His kind sell out every time."}
+    why: This asks whether a poor country's own business class can be an ally against foreign capital, the old question of the national bourgeoisie.
+    options:
+      - id: owner
+        text: The owner. National business is an ally against empire, for now.
+        evidence:
+          - {position: comprador.nature.national-bourgeoisie-ally, w: 3}
+        next: descent.development.07
+      - id: organizer
+        text: The organizer. Local capital brokers foreign interests and takes its cut.
+        evidence:
+          - {position: comprador.nature.broker-class, w: 3}
+        next: descent.development.07
+      - id: officers
+        text: Both miss who really rules. The officers and officials who own the state itself.
+        evidence:
+          - {position: comprador.nature.bureaucratic-bourgeoisie, w: 3}
+        next: descent.development.07
+      - id: ordinary
+        text: Both miss that he's simply a capitalist building capitalism here. Bargain with him like any boss.
+        evidence:
+          - {position: comprador.nature.independent-capitalists, w: 3}
+        next: descent.development.07
+      - id: crooks
+        text: Both miss the politicians. They loot whatever business builds.
+        evidence:
+          - {position: comprador.nature.kleptocratic-elites, w: 3}
+        next: descent.development.07
+
+  - id: descent.development.07
+    type: tradeoff
+    title: The railway
+    text: >
+      Your country needs a railway from the mines to the port. Western lenders offer $600 million, tied to
+      reforms: privatize the water utility, cut fuel subsidies. A Chinese state bank offers $2 billion, no
+      reforms asked, repaid from mineral revenue and built by a Chinese firm. A Gulf fund offers
+      interest-free partnership finance for a share of the profits.
+    why: This asks whose money you trust, and what you think aid and loans from each direction actually do.
+    options:
+      - id: west
+        text: The Western package. The reforms are good for us anyway.
+        evidence:
+          - {position: intl.institutions.cooperation, w: 2}
+          - {position: development.path.integration, w: 1}
+        next: descent.development.08
+      - id: china
+        text: The Chinese loan. They build what the West never did, and they don't lecture.
+        evidence:
+          - {position: china.role.partner-that-builds, w: 3}
+        next: descent.development.08
+      - id: gulf
+        text: The partnership. Sharing profit and loss is fairer than charging interest.
+        evidence:
+          - {position: money.nature.anti-usury, w: 3}
+        next: descent.development.08
+      - id: none
+        text: None. Each is a tool of someone's power. Build it from our own savings, slowly.
+        evidence:
+          - {position: aid.foreign.instrument-of-power, w: 2}
+          - {position: development.path.delinking, w: 2}
+        next: descent.development.08
+      - id: not-china
+        text: Anything but the Chinese loan. A new empire collecting mines and ports as collateral.
+        evidence:
+          - {position: china.role.new-empire, w: 3}
+        next: descent.development.08
+
+  - id: descent.development.08
+    type: line
+    title: How far loose
+    text: >
+      How far should your country cut itself loose from the world market? Going down the list, where do
+      you stop?
+    cases:
+      - Tariffs on luxury cars and imported whisky
+      - Food self-sufficiency first, even where cash crops earn more dollars
+      - Controls on capital leaving the country
+      - A state monopoly on foreign trade
+      - Refusing IMF programs, whatever the cost
+      - Trading with friendly countries in anything but dollars
+    why: This asks how far you would take delinking, which separates dependency theorists and Third Worldists from developmental nationalists and liberals.
+    options:
+      - id: none
+        text: Before the first. Every barrier is a tax on the poor.
+        evidence:
+          - {position: exchange.unequal.mutual-gain, w: 3}
+        next: descent.development.09
+      - id: two
+        text: After the second. Protect industry and feed yourselves, but stay open to capital.
+        evidence:
+          - {position: development.path.import-substitution, w: 2}
+        next: descent.development.09
+      - id: three
+        text: After the third. Control capital and steer industry, but keep trading normally.
+        evidence:
+          - {position: development.path.developmental-state, w: 2}
+          - {position: finance.control.capital-controls, w: 2}
+        next: descent.development.09
+      - id: all
+        text: All of it. Our own needs come before world prices, all the way down.
+        evidence:
+          - {position: development.path.delinking, w: 3}
+          - {position: intl.institutions.creditor-instruments, w: 1}
+        next: descent.development.09
+      - id: elsewhere
+        text: The list misses the point. Measure progress by good lives on our own terms, not by trade.
+        evidence:
+          - {position: development.path.post-development, w: 3}
+        next: descent.development.09
+
+  - id: descent.development.09
+    type: explanation
+    title: Dhaka and Hamburg
+    text: >
+      A T-shirt sewn in Dhaka sells in Hamburg for many times what the woman who sewed it was paid. A
+      dockworker in Hamburg earns more in a day than she does in a month. Does he gain from her poverty?
+    why: This asks whether workers in rich countries share in the drain from poor ones, which separates Third Worldists from dependency theorists, Leninists and others.
+    options:
+      - id: whole
+        text: Yes. Workers in rich countries as a whole live off the drain, and their politics show it.
+        cause: structures
+        evidence:
+          - {position: labor.aristocracy.whole-core-bought, w: 3}
+        next: descent.development.10
+      - id: shares
+        text: Yes, he shares in it, and the same companies still exploit him.
+        cause: structures
+        evidence:
+          - {position: labor.aristocracy.shares-but-exploited, w: 3}
+        next: descent.development.10
+      - id: layer
+        text: Only a top layer and its union leaders are bought off. The rest are not.
+        cause: interests
+        evidence:
+          - {position: labor.aristocracy.bribed-stratum, w: 3}
+        next: descent.development.10
+      - id: productivity
+        text: No. He earns more because he produces more, with better machines.
+        cause: structures
+        evidence:
+          - {position: labor.aristocracy.earned-by-productivity, w: 3}
+        next: descent.development.10
+      - id: victims
+        text: No. They are both victims of the same companies, which moved the jobs to Dhaka in the first place.
+        cause: interests
+        evidence:
+          - {position: labor.aristocracy.globalization-losers, w: 2}
+          - {position: labor.aristocracy.no-labor-aristocracy, w: 1}
+        next: descent.development.10
+
+  - id: descent.development.10
+    type: reason
+    title: The word
+    text: >
+      Last one. When people in your country say they want development, what should the word mean?
+    why: This asks what you think development is for, which is where these traditions finally part.
+    options:
+      - id: growth
+        text: Rising incomes, open markets and a growing middle class.
+        cause: structures
+        evidence:
+          - {position: development.path.integration, w: 2}
+          - {position: poverty.cause.late-development, w: 1}
+      - id: power
+        text: A strong industrial nation that nobody can push around.
+        cause: interests
+        evidence:
+          - {position: development.path.developmental-state, w: 2}
+          - {position: intl.sovereignty.nations-set-own-course, w: 1}
+      - id: needs
+        text: The basic needs of the majority met first, on our terms, whatever the world market wants.
+        cause: interests
+        evidence:
+          - {position: development.path.delinking, w: 2}
+          - {position: poverty.cause.drain, w: 1}
+      - id: faith
+        text: A just society under God, where wealth serves the community.
+        cause: divine
+        evidence:
+          - {position: markets.nature.moral-economy, w: 2}
+          - {position: religion.public.divine-law, w: 1}
+      - id: refuse
+        text: Not "development" at all. Good lives on local terms, without copying the rich.
+        cause: culture
+        evidence:
+          - {position: development.path.post-development, w: 3}

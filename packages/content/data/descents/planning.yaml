@@ -1,0 +1,402 @@
+id: descent.planning
+title: Which plan?
+blurb: For people who want production planned or socially owned. Which kind of plan, who draws it up, and how it knows what anything is worth.
+region: planning
+gate:
+  any:
+    - {weight: {position: allocation.mechanism.central-planning, gt: 0.25}}
+    - {weight: {position: allocation.mechanism.market-socialism, gt: 0.25}}
+    - {weight: {position: allocation.mechanism.participatory-planning, gt: 0.25}}
+    - {weight: {position: firm.ownership.state, gt: 0.25}}
+    - {weight: {position: firm.ownership.commons-community, gt: 0.25}}
+    - {weight: {position: profit.legitimacy.unpaid-labor, gt: 0.25}}
+entry: descent.planning.01
+nodes:
+  - id: descent.planning.01
+    type: scene
+    title: The morning after
+    text: >
+      An election, a revolution or a strike that never ended: however it happened, the big firms now
+      belong to everyone. Tomorrow someone has to decide how many shoes, bricks and insulin doses get made,
+      and who gets them. You sit on the commission that drafts the system. What do you propose?
+    why: This asks which form of planning you have in mind when you say you want production planned.
+    premises:
+      - id: no-plan
+        text: The premise that anyone should be planning at all.
+        evidence: [{position: allocation.mechanism.free-market, w: 2}, {position: calculation.debate.hayek-knowledge, w: 1}]
+    conditions:
+      - id: size
+        text: It depends how big and how poor the country is.
+        evidence: [{position: planning.form.indicative, w: 1}, {position: calculation.debate.dobb-ex-ante, w: 1}]
+    options:
+      - id: office
+        text: A national planning office sets output targets for every major plant, balanced in physical quantities.
+        evidence:
+          - {position: planning.form.material-balances, w: 3}
+          - {position: allocation.mechanism.central-planning, w: 2}
+        next: descent.planning.02
+      - id: board
+        text: A planning board sets prices. Managers produce wherever the price covers cost. The board adjusts prices when shelves empty or pile up.
+        evidence:
+          - {position: planning.form.lange-board, w: 3}
+          - {position: allocation.mechanism.market-socialism, w: 2}
+        next: descent.planning.02
+      - id: self-managed
+        text: Each workplace is run by its elected council and trades with the others. The state plans only big investment.
+        evidence:
+          - {position: planning.form.self-management, w: 3}
+          - {position: firm.ownership.worker-cooperatives, w: 1}
+        next: descent.planning.02
+      - id: rounds
+        text: Councils of workers and of consumers propose, revise and negotiate the plan in rounds until it adds up.
+        evidence:
+          - {position: planning.form.participatory, w: 3}
+          - {position: allocation.mechanism.participatory-planning, w: 2}
+        next: descent.planning.02
+      - id: network
+        text: A computer network with live data from every plant, and goods costed in the hours of work they take.
+        evidence:
+          - {position: planning.form.cybernetic, w: 3}
+          - {position: calculation.debate.computational, w: 2}
+        next: descent.planning.02
+      - id: steer
+        text: Keep markets for most things. Plan the strategic sectors and steer investment through credit.
+        evidence:
+          - {position: planning.form.indicative, w: 3}
+          - {position: allocation.mechanism.mixed-steered, w: 2}
+        next: descent.planning.02
+
+  - id: descent.planning.02
+    type: voices
+    title: Vienna and after
+    text: >
+      An old argument that is still running. Two economists, sixteen years apart, on whether a planned
+      economy can know what anything is worth.
+    voices:
+      - {name: "An Austrian economist, 1920", says: "Without a market in factories, machines and land, they have no prices. Without prices, a planner choosing between a railway and a canal is guessing. Abolish the market in capital and you abolish rational economy."}
+      - {name: "A Polish economist, 1936", says: "A price is only the terms on which alternatives are offered. A planning board can set them, watch the stockpiles, and correct them by trial and error, as a market does, and faster."}
+    why: This places you in the calculation debate, the argument over whether planning can be rational without markets for capital.
+    options:
+      - id: austrian
+        text: The Austrian. Without private owners bidding for capital, nobody can price it.
+        evidence:
+          - {position: calculation.debate.mises-impossible, w: 3}
+        next: descent.planning.03
+      - id: polish
+        text: The Pole. Trial and error works for a board as well as for a market.
+        evidence:
+          - {position: calculation.debate.lange-lerner-solved, w: 3}
+        next: descent.planning.03
+      - id: knowledge
+        text: Both miss that the knowledge is scattered in millions of heads and only surfaces when people compete.
+        evidence:
+          - {position: calculation.debate.hayek-knowledge, w: 3}
+        next: descent.planning.03
+      - id: ex-ante
+        text: Both miss that a plan's advantage is deciding investment in advance, instead of finding out after the crash.
+        evidence:
+          - {position: calculation.debate.dobb-ex-ante, w: 3}
+        next: descent.planning.03
+      - id: in-kind
+        text: Both miss that you don't need one unit. Count tonnes, hours, hectares and lives, and choose.
+        evidence:
+          - {position: calculation.debate.in-kind, w: 3}
+        next: descent.planning.03
+      - id: computers
+        text: Both lacked computers. That arithmetic is now a few hours on a server.
+        evidence:
+          - {position: calculation.debate.computational, w: 3}
+        next: descent.planning.03
+
+  - id: descent.planning.03
+    type: explanation
+    title: One enormous nail
+    text: >
+      Soviet output grew fast in the 1930s and again in the 1950s. By the late 1970s growth has slowed to a
+      crawl. Shops run short of some goods while warehouses fill with others, and the old joke is about a
+      nail factory that met its tonnage target with one enormous nail. Why?
+    why: This asks what you think went wrong with Soviet planning, and what kind of cause you reach for.
+    options:
+      - id: prices
+        text: No real prices for capital. The planners were flying blind.
+        cause: structures
+        evidence:
+          - {position: calculation.debate.mises-impossible, w: 2}
+          - {position: hist.ussr-late.shortage-economy, w: 2}
+        next: descent.planning.04
+      - id: budgets
+        text: Firms that lost money were bailed out anyway. Nobody paid for waste.
+        cause: structures
+        evidence:
+          - {position: calculation.debate.kornai-incentives, w: 3}
+        next: descent.planning.04
+      - id: bureaucracy
+        text: A privileged bureaucracy ran the plan for itself, and no workers' control checked it.
+        cause: interests
+        evidence:
+          - {position: hist.ussr-late.bureaucratic-stagnation, w: 3}
+          - {position: planning.form.participatory, w: 1}
+        next: descent.planning.04
+      - id: revisionism
+        text: After 1956 the leaders brought back profit targets and market thinking. The rot was political.
+        cause: ideas
+        evidence:
+          - {position: hist.ussr-late.capitalism-restored-1956, w: 3}
+        next: descent.planning.04
+      - id: siege
+        text: Forty years of arms race. The best engineers built missiles, not washing machines.
+        cause: interests
+        evidence:
+          - {position: hist.ussr-late.real-socialism-betrayed, w: 2}
+          - {position: planning.form.material-balances, w: 1}
+        next: descent.planning.04
+      - id: tools
+        text: The economy outgrew paper and slide rules, and the tools never caught up.
+        cause: structures
+        evidence:
+          - {position: calculation.debate.computational, w: 2}
+          - {position: planning.form.cybernetic, w: 1}
+        next: descent.planning.04
+
+  - id: descent.planning.04
+    type: verdict
+    title: Yugoslavia, 1965
+    text: >
+      Yugoslavia, 1965. Factories are run by elected workers' councils. Now comes the reform: firms keep most
+      of their earnings, banks lend on commercial terms, and most prices are freed. Wages rise in the richer
+      republics. So does unemployment, and hundreds of thousands go to work in West Germany. Where would you
+      have stood?
+    why: This separates people who want workers' self-management in a market from those who want a central plan, and both from those who think neither can work.
+    conditions:
+      - id: regions
+        text: It depends whether the federation could keep the poorer republics from falling behind.
+        evidence: [{position: hist.yugoslavia.undone-by-markets-and-debt, w: 1}]
+    options:
+      - id: for
+        text: For it. Workers running their firms in a market is a socialism people actually want.
+        evidence:
+          - {position: hist.yugoslavia.self-management, w: 3}
+          - {position: planning.form.self-management, w: 2}
+        next: descent.planning.05
+      - id: debt
+        text: Against. Hand investment to banks and markets and you get regional gaps, foreign debt and, later, the IMF.
+        evidence:
+          - {position: hist.yugoslavia.undone-by-markets-and-debt, w: 3}
+          - {position: calculation.debate.dobb-ex-ante, w: 1}
+        next: descent.planning.05
+      - id: restoration
+        text: Against. Profit and the market were bringing capitalism back, red flag and all.
+        evidence:
+          - {position: hist.yugoslavia.revisionist-capitalism, w: 3}
+        next: descent.planning.05
+      - id: proof
+        text: It proves the point. Firms that nobody can buy or sell will never price capital properly.
+        evidence:
+          - {position: hist.yugoslavia.labor-managed-failure, w: 3}
+          - {position: calculation.debate.mises-impossible, w: 1}
+        next: descent.planning.05
+      - id: new-class
+        text: Councils on paper, party managers and bankers in fact. A new ruling class.
+        evidence:
+          - {position: hist.yugoslavia.new-class, w: 3}
+          - {position: allocation.mechanism.participatory-planning, w: 1}
+        next: descent.planning.05
+
+  - id: descent.planning.05
+    type: scene
+    title: The telex room
+    text: >
+      Santiago, October 1972. Truck owners have stopped work against the government and food is not moving.
+      You run a telex network, built with a British cybernetician, that links factories to a center in the
+      capital. During the strike it helped route the trucks still running. The strike will end. What do you
+      do with the network?
+    why: This asks whether you see planning as a matter of better information, of who holds authority, or of who controls the workplace.
+    options:
+      - id: backbone
+        text: Make it the backbone of national planning. Live data beats any market signal.
+        evidence:
+          - {position: planning.form.cybernetic, w: 3}
+          - {position: calculation.debate.computational, w: 2}
+        next: descent.planning.06
+      - id: floor
+        text: Put the terminals on the factory floor. The people who run the plant should read the data and decide.
+        evidence:
+          - {position: planning.form.participatory, w: 2}
+          - {position: planning.form.labor-time-councils, w: 2}
+        next: descent.planning.06
+      - id: cordones
+        text: The trucks moved because workers' committees seized and ran things. Back the committees, not the screens.
+        evidence:
+          - {position: allocation.mechanism.participatory-planning, w: 2}
+          - {position: hist.chile-1973.peaceful-road-a-trap, w: 1}
+        next: descent.planning.06
+      - id: authority
+        text: Useful, but data is not authority. A plan needs a central office with the power to enforce targets.
+        evidence:
+          - {position: planning.form.material-balances, w: 2}
+          - {position: allocation.mechanism.central-planning, w: 1}
+        next: descent.planning.06
+      - id: market
+        text: The lesson is that the government should not be running the trucks at all.
+        evidence:
+          - {position: calculation.debate.hayek-knowledge, w: 2}
+          - {position: allocation.mechanism.free-market, w: 2}
+        next: descent.planning.06
+
+  - id: descent.planning.06
+    type: line
+    title: Where the plan stops
+    text: >
+      Going down this list, where does central planning stop and something else take over: councils,
+      markets, households?
+    cases:
+      - Electricity and the grid
+      - Steel, cement and rail
+      - Bank credit and big investment
+      - Food staples and their prices
+      - Clothing and furniture
+      - Restaurants, hairdressers and repair shops
+    why: This asks how far you want central planning to reach, and what you would leave to other means.
+    options:
+      - id: none
+        text: Before the first. Planning none of it is the point.
+        evidence:
+          - {position: allocation.mechanism.free-market, w: 3}
+        next: descent.planning.07
+      - id: three
+        text: After the third. Plan energy, heavy industry and investment; let the rest compete.
+        evidence:
+          - {position: planning.form.indicative, w: 2}
+          - {position: calculation.debate.dobb-ex-ante, w: 1}
+        next: descent.planning.07
+      - id: four
+        text: After the fourth. Basic needs are planned; the rest is publicly owned firms competing in a market.
+        evidence:
+          - {position: planning.form.lange-board, w: 2}
+          - {position: allocation.mechanism.market-socialism, w: 2}
+        next: descent.planning.07
+      - id: five
+        text: After the fifth. Leave haircuts and repairs to co-ops and families; plan everything else.
+        evidence:
+          - {position: planning.form.material-balances, w: 3}
+          - {position: allocation.mechanism.central-planning, w: 1}
+        next: descent.planning.07
+      - id: below
+        text: All of it is planned, but by councils from below, not by a center.
+        evidence:
+          - {position: planning.form.participatory, w: 3}
+          - {position: allocation.mechanism.participatory-planning, w: 1}
+        next: descent.planning.07
+
+  - id: descent.planning.07
+    type: tradeoff
+    title: An hour is an hour
+    text: >
+      Your committee proposes paying everyone in labor-time credits: an hour worked earns an hour's worth of
+      goods, for the surgeon and the porter alike, and things are priced by the hours they take to make.
+      Senior nurses warn that some of their staff will stop taking night shifts and hard training.
+    why: This sets equality of reward against incentives, and asks how you think a planned economy gets work done.
+    options:
+      - id: equal
+        text: Equal hours, equal pay. Society paid for the training, so nobody's skill earns a premium.
+        evidence:
+          - {position: planning.form.cybernetic, w: 2}
+          - {position: planning.form.labor-time-councils, w: 2}
+        next: descent.planning.08
+      - id: differentials
+        text: Keep pay differences. People respond to incentives, under socialism too.
+        evidence:
+          - {position: calculation.debate.kornai-incentives, w: 2}
+          - {position: calculation.debate.lange-lerner-solved, w: 1}
+        next: descent.planning.08
+      - id: need
+        text: Skip credits for most things. Free housing, food, care and transport; share out the rest by need.
+        evidence:
+          - {position: allocation.mechanism.free-access, w: 3}
+        next: descent.planning.08
+      - id: cause
+        text: Pay matters less than you think. People work hard for a shared cause. Build that.
+        evidence:
+          - {position: planning.form.mass-line, w: 2}
+          - {position: hist.cuban-revolution.new-human-being, w: 2}
+        next: descent.planning.08
+      - id: wages
+        text: Let wages and prices form in markets. Anything else is guesswork in a lab coat.
+        evidence:
+          - {position: allocation.mechanism.free-market, w: 2}
+          - {position: calculation.debate.mises-impossible, w: 1}
+        next: descent.planning.08
+
+  - id: descent.planning.08
+    type: verdict
+    title: Anshan, 1960
+    text: >
+      China, 1960. The Soviet model puts each plant under one director answerable to a ministry. Now a steel
+      works at Anshan is held up as the model for a different charter: cadres do manual work, workers take
+      part in management, technicians and workers solve problems together. The same years bring the Great
+      Leap's famine. Which lesson do you take?
+    why: This separates a Maoist idea of planning by mobilization from Soviet-style planning, council planning and the market alternative.
+    options:
+      - id: charter
+        text: The charter. A plan works when workers and managers trade places and politics leads.
+        evidence:
+          - {position: planning.form.mass-line, w: 3}
+        next: descent.planning.09
+      - id: director
+        text: One director, clear responsibility, binding targets. The Leap shows what happens without discipline.
+        evidence:
+          - {position: planning.form.material-balances, w: 3}
+        next: descent.planning.09
+      - id: famine
+        text: The famine. Planning by campaign and quota, with no prices and no free press, kills.
+        evidence:
+          - {position: calculation.debate.hayek-knowledge, w: 2}
+          - {position: hist.china-mao.utopian-catastrophe, w: 2}
+        next: descent.planning.09
+      - id: producers
+        text: Neither. The charter still kept the party above the workers. Producers should run the plan outright.
+        evidence:
+          - {position: planning.form.labor-time-councils, w: 3}
+        next: descent.planning.09
+      - id: reform
+        text: What came after 1978. Plan the core, let markets handle the rest.
+        evidence:
+          - {position: planning.form.indicative, w: 2}
+          - {position: hist.china-reform.primary-stage, w: 2}
+        next: descent.planning.09
+
+  - id: descent.planning.09
+    type: allocation
+    title: Where power sits
+    text: >
+      Final design. You have ten points of authority to spread across the institutions that will run the
+      economy. Where does the power sit?
+    why: This asks how you would actually divide authority in a planned economy, between center, councils, firms and machines.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: office
+          text: A national planning office with binding targets
+          evidence: [{position: planning.form.material-balances, w: 2}]
+        - id: board
+          text: A price board that adjusts prices as stocks rise and fall
+          evidence: [{position: planning.form.lange-board, w: 2}]
+        - id: firms
+          text: Self-managed firms trading with each other
+          evidence: [{position: planning.form.self-management, w: 2}]
+        - id: councils
+          text: Federated workers' and consumers' councils that negotiate the plan
+          evidence: [{position: planning.form.participatory, w: 2}]
+        - id: network
+          text: An open computer system holding every plant's data and labor-time costs
+          evidence: [{position: planning.form.cybernetic, w: 2}]
+        - id: assemblies
+          text: Workplace assemblies and campaigns that check the planners
+          evidence: [{position: planning.form.mass-line, w: 1}, {position: planning.form.labor-time-councils, w: 1}]
+        - id: market
+          text: A private sector and ordinary markets for whatever is left
+          evidence: [{position: planning.form.indicative, w: 1}, {position: allocation.mechanism.mixed-steered, w: 1}]
+    options:
+      - id: done
+        text: Done

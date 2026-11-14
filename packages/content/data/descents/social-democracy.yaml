@@ -1,0 +1,360 @@
+id: descent.social-democracy
+title: Which reform?
+blurb: For people who want change through elections and unions. Social democracy, democratic socialism or the third way, decided on Bad Godesberg, the Meidner plan, Mitterrand's turn and Syriza's summer.
+region: strategy
+gate:
+  any:
+    - {weight: {position: elections.role.main-road, gt: 0.25}}
+    - {weight: {position: elections.role.lesser-evil, gt: 0.25}}
+    - {weight: {position: welfare.state.social-citizenship, gt: 0.25}}
+    - {weight: {position: tax.purpose.redistribute, gt: 0.25}}
+    - {weight: {position: finance.control.public-banks, gt: 0.25}}
+    - {weight: {position: hist.chile-1973.peaceful-road-destroyed, gt: 0.25}}
+    - {weight: {position: reform.revolution.reform-is-the-road, gt: 0.25}}
+    - {weight: {position: state.relation.capture-and-use, gt: 0.25}}
+entry: descent.social-democracy.01
+nodes:
+  - id: descent.social-democracy.01
+    type: verdict
+    title: Bad Godesberg, 1959
+    text: >
+      West Germany, 1959. The Social Democrats, out of power for a decade, drop Marxism from their program
+      and accept the market economy: "competition as far as possible, planning as far as necessary." Seven
+      years later they are in government. Was it the right call?
+    why: This separates social democrats, democratic socialists and the third way on whether the goal of changing ownership should be kept.
+    options:
+      - id: right
+        text: Right. Socialism means a fair share and real security, not owning every factory.
+        evidence:
+          - {position: reform.revolution.reform-is-the-road, w: 2}
+          - {position: allocation.mechanism.mixed-steered, w: 2}
+        next: descent.social-democracy.02
+      - id: further
+        text: Right, and they should have gone further. The market is the engine; the state equips people to use it.
+        evidence:
+          - {position: allocation.mechanism.social-market, w: 2}
+          - {position: reform.revolution.piecemeal-improvement, w: 2}
+        next: descent.social-democracy.02
+      - id: goal
+        text: Wrong. Take the reforms, yes, but drop the goal of changing who owns things and you end up managing capitalism.
+        evidence:
+          - {position: reform.revolution.non-reformist-reforms, w: 3}
+        next: descent.social-democracy.02
+      - id: honest
+        text: It only said out loud what social democracy had been since 1914.
+        evidence:
+          - {position: reform.revolution.revolution-necessary, w: 2}
+        next: descent.social-democracy.02
+
+  - id: descent.social-democracy.02
+    type: tradeoff
+    title: The funds
+    text: >
+      Sweden, 1976. The union confederation proposes that every large firm issue new shares each year, worth
+      a fifth of its profits, to funds run by the unions. Over a few decades, workers would own the firms.
+      Employers call it confiscation and start planning the biggest business protest in the country's
+      history. You lead the party.
+    why: This separates democratic socialists, who want ownership socialized, from social democrats who want capital taxed and bargained with, and both from critics on each side.
+    conditions:
+      - id: flight
+        text: It depends whether capital can simply leave the country.
+        evidence: [{position: finance.control.capital-controls, w: 1}]
+    options:
+      - id: full
+        text: Back it in full. This is how you finish what the welfare state started.
+        evidence:
+          - {position: firm.ownership.wage-earner-funds, w: 3}
+          - {position: hist.nordic-model.stopped-at-the-threshold, w: 2}
+        next: descent.social-democracy.03
+      - id: diluted
+        text: Pass a small version to keep the unions on side, and keep the bargain with business.
+        evidence:
+          - {position: firm.ownership.codetermination, w: 2}
+          - {position: hist.nordic-model.labor-tamed-capital, w: 2}
+        next: descent.social-democracy.03
+      - id: drop
+        text: Drop it. High taxes, strong unions and a good welfare state already deliver. Don't scare off investment.
+        evidence:
+          - {position: profit.legitimacy.incentive-taxed, w: 2}
+          - {position: firm.ownership.private-investors, w: 1}
+        next: descent.social-democracy.03
+      - id: trap
+        text: Drop it, because it was never socialism. Workers holding shares in firms that still hire them are still selling their labor.
+        evidence:
+          - {position: hist.nordic-model.class-compromise, w: 3}
+        next: descent.social-democracy.03
+
+  - id: descent.social-democracy.03
+    type: verdict
+    title: Paris, March 1983
+    text: >
+      France, March 1983. Two years ago the Socialists nationalized the big banks and industrial groups,
+      raised the minimum wage and lowered the retirement age to sixty. Since then: two devaluations,
+      capital flight, a growing trade deficit. Leave the European currency system and control capital, or
+      stay and cut. The President must choose this month. Your advice?
+    why: This asks what you do when capital punishes a reforming government, which separates the third way from the left of social democracy.
+    options:
+      - id: stay
+        text: Stay and cut. Living with the world economy is the price of governing a modern country.
+        evidence:
+          - {position: finance.control.free-flows, w: 2}
+          - {position: hist.neoliberal-turn.third-way-globalization, w: 2}
+        next: descent.social-democracy.04
+      - id: leave
+        text: Leave. Float the franc, control capital, protect industry. The program was elected; keep it.
+        evidence:
+          - {position: finance.control.capital-controls, w: 3}
+        next: descent.social-democracy.04
+      - id: europe
+        text: Stay, and fight for a social Europe. No single country can do this alone any more.
+        evidence:
+          - {position: intl.sovereignty.pooled, w: 2}
+          - {position: finance.control.prudential, w: 1}
+        next: descent.social-democracy.04
+      - id: credit
+        text: Go further. Take all credit into public hands and control foreign trade outright.
+        evidence:
+          - {position: finance.control.nationalize-credit, w: 3}
+        next: descent.social-democracy.04
+      - id: lesson
+        text: Either way, it proves capital cannot be reformed from a ministry.
+        evidence:
+          - {position: reform.revolution.revolution-necessary, w: 2}
+          - {position: hist.neoliberal-turn.restoring-class-power, w: 1}
+        next: descent.social-democracy.04
+
+  - id: descent.social-democracy.04
+    type: verdict
+    title: Athens, July 2015
+    text: >
+      Athens, July 2015. The banks are shut and cash machines pay out sixty euros a day. Voters have just
+      rejected the creditors' terms by 61 percent. Days later the government faces a choice: a third bailout
+      on harsher terms, or leaving the euro. Where would you have stood?
+    why: This asks what an elected left government should do when creditors overrule its voters.
+    options:
+      - id: sign
+        text: Sign. Leaving the euro overnight would have meant empty pharmacies. Live to fight again.
+        evidence:
+          - {position: debt.sovereign.orderly-restructuring, w: 2}
+          - {position: elections.role.lesser-evil, w: 1}
+        next: descent.social-democracy.05
+      - id: exit
+        text: Leave. Default, a national currency and capital controls. The voters said no.
+        evidence:
+          - {position: debt.sovereign.odious-debt, w: 2}
+          - {position: finance.control.capital-controls, w: 2}
+        next: descent.social-democracy.05
+      - id: europe
+        text: Sign, then organize across Europe to change the rules.
+        evidence:
+          - {position: intl.institutions.reform-democratize, w: 2}
+          - {position: intl.sovereignty.pooled, w: 1}
+        next: descent.social-democracy.05
+      - id: lesson
+        text: It proves elections cannot beat the creditors. Something other than a government is needed.
+        evidence:
+          - {position: reform.revolution.revolution-necessary, w: 2}
+          - {position: intl.institutions.creditor-instruments, w: 1}
+        next: descent.social-democracy.05
+      - id: pay
+        text: Greece borrowed the money. Paying it back is not a plot.
+        evidence:
+          - {position: debt.sovereign.pay-what-you-owe, w: 3}
+        next: descent.social-democracy.05
+
+  - id: descent.social-democracy.05
+    type: line
+    title: The manifesto
+    text: >
+      Your party is writing its manifesto. Going down the list, where does public ownership stop?
+    cases:
+      - Water and sewage
+      - Rail and buses
+      - The electricity grid and power stations
+      - One big public investment bank
+      - All the major banks
+      - The hundred largest companies
+    why: This asks how much of the economy you want publicly owned, which is where social democrats, democratic socialists and the third way part.
+    options:
+      - id: none
+        text: Before the first. Ownership doesn't matter much. Regulate well and let firms compete.
+        evidence:
+          - {position: firm.ownership.private-investors, w: 2}
+          - {position: finance.control.prudential, w: 1}
+        next: descent.social-democracy.06
+      - id: three
+        text: After the third. Natural monopolies belong to the public; the rest belongs in a regulated market.
+        evidence:
+          - {position: firm.ownership.public-municipal, w: 3}
+        next: descent.social-democracy.06
+      - id: four
+        text: After the fourth. Add a public bank to put money where private lenders won't.
+        evidence:
+          - {position: finance.control.public-banks, w: 3}
+        next: descent.social-democracy.06
+      - id: five
+        text: After the fifth. Whoever controls credit controls the economy.
+        evidence:
+          - {position: finance.control.nationalize-credit, w: 2}
+          - {position: firm.ownership.state, w: 1}
+        next: descent.social-democracy.06
+      - id: six
+        text: All of it, over time. That is what common ownership was supposed to mean.
+        evidence:
+          - {position: firm.ownership.state, w: 2}
+          - {position: firm.ownership.wage-earner-funds, w: 1}
+        next: descent.social-democracy.06
+
+  - id: descent.social-democracy.06
+    type: explanation
+    title: The collapse
+    text: >
+      In the 1970s social democratic parties governed much of Western Europe. By the 2010s several had
+      collapsed: Greece's PASOK fell under five percent of the vote in 2015, the French Socialist candidate
+      to about six percent in 2017. What happened?
+    why: This asks why you think social democracy declined, and what kind of cause you reach for.
+    options:
+      - id: capital
+        text: Once capital could move freely, it broke the postwar bargain, and the parties went along.
+        cause: interests
+        evidence:
+          - {position: hist.neoliberal-turn.restoring-class-power, w: 3}
+        next: descent.social-democracy.07
+      - id: leaders
+        text: The leaders abandoned their own voters for bankers and graduates.
+        cause: individuals
+        evidence:
+          - {position: contradiction.primary.people-vs-elites, w: 2}
+        next: descent.social-democracy.07
+      - id: periphery
+        text: The old bargain was paid for by growth, cheap oil and cheap goods from poor countries. That money ran out.
+        cause: structures
+        evidence:
+          - {position: hist.nordic-model.paid-by-the-periphery, w: 3}
+          - {position: welfare.state.drain-and-threat, w: 1}
+        next: descent.social-democracy.07
+      - id: times
+        text: The economy changed, toward services, trade and education. Parties that adapted survived.
+        cause: structures
+        evidence:
+          - {position: hist.neoliberal-turn.third-way-globalization, w: 3}
+        next: descent.social-democracy.07
+      - id: borders
+        text: Open borders broke the shared belonging a welfare state depends on.
+        cause: culture
+        evidence:
+          - {position: hist.nordic-model.one-people, w: 2}
+          - {position: welfare.state.for-our-own, w: 2}
+        next: descent.social-democracy.07
+      - id: failed
+        text: The model failed on its own terms in the 1970s. Inflation, strikes, debt. Voters noticed.
+        cause: structures
+        evidence:
+          - {position: hist.neoliberal-turn.cure-for-stagflation, w: 3}
+        next: descent.social-democracy.07
+
+  - id: descent.social-democracy.07
+    type: voices
+    title: Conference floor
+    text: >
+      A party conference after a third straight election defeat. Two speakers get the loudest applause.
+    voices:
+      - {name: "A modernizer", says: "The world economy is a fact, like the weather. Our job is to equip people for it: education, flexible markets, a safety net that gets people back to work. Win the center or lose forever."}
+      - {name: "A veteran organizer", says: "Our job is to shift power and wealth to working people. Strong unions, high taxes on the rich, public services that never ask what you earn. Stop apologizing."}
+    why: This separates the third way from classic social democracy, and both from democratic socialists and labor nationalists.
+    options:
+      - id: modernizer
+        text: The modernizer.
+        evidence:
+          - {position: hist.neoliberal-turn.third-way-globalization, w: 2}
+          - {position: work.future.flexible-markets, w: 2}
+        next: descent.social-democracy.08
+      - id: veteran
+        text: The veteran.
+        evidence:
+          - {position: welfare.state.social-citizenship, w: 2}
+          - {position: tax.purpose.redistribute, w: 2}
+        next: descent.social-democracy.08
+      - id: ownership
+        text: Both miss ownership. Until workers own a share of capital, every gain can be taken back.
+        evidence:
+          - {position: firm.ownership.wage-earner-funds, w: 2}
+          - {position: reform.revolution.non-reformist-reforms, w: 2}
+        next: descent.social-democracy.08
+      - id: industry
+        text: Both miss the towns that lost their factories. Bring industry home.
+        evidence:
+          - {position: work.future.dignity-of-work, w: 2}
+          - {position: exchange.unequal.rigged-against-us, w: 1}
+        next: descent.social-democracy.08
+
+  - id: descent.social-democracy.08
+    type: allocation
+    title: The first term
+    text: >
+      You win. Your government has ten points of political capital for its first term, and every point spent
+      on one fight is a fight you don't have.
+    why: This asks what you would actually spend a reforming government's strength on.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: services
+          text: Free universal childcare and health care
+          evidence: [{position: welfare.state.social-citizenship, w: 2}]
+        - id: jobs
+          text: A public job guarantee for anyone who wants work
+          evidence: [{position: work.future.job-guarantee, w: 2}]
+        - id: funds
+          text: Worker ownership funds in large firms
+          evidence: [{position: firm.ownership.wage-earner-funds, w: 2}]
+        - id: bank
+          text: A public investment bank
+          evidence: [{position: finance.control.public-banks, w: 2}]
+        - id: tax
+          text: A steeply progressive income and wealth tax
+          evidence: [{position: tax.purpose.redistribute, w: 2}]
+        - id: controls
+          text: Controls on the movement of capital
+          evidence: [{position: finance.control.capital-controls, w: 2}]
+        - id: confidence
+          text: A balanced budget and an independent central bank, to keep markets calm
+          evidence: [{position: money.nature.rule-bound-central-bank, w: 2}]
+        - id: skills
+          text: Retraining, school reform and a work-first benefits system
+          evidence: [{position: work.future.flexible-markets, w: 1}, {position: welfare.state.safety-net, w: 1}]
+    options:
+      - id: done
+        text: Done
+        next: descent.social-democracy.09
+
+  - id: descent.social-democracy.09
+    type: reason
+    title: What it's for
+    text: >
+      Last question. When the reforms are done, what was it all for?
+    why: This asks what end your reformism serves, which is the line between social democracy, democratic socialism and the third way.
+    options:
+      - id: tame
+        text: A capitalism tamed. Strong unions, a big welfare state, full employment.
+        cause: interests
+        evidence:
+          - {position: hist.nordic-model.labor-tamed-capital, w: 3}
+          - {position: reform.revolution.reform-is-the-road, w: 1}
+      - id: beyond
+        text: Getting beyond capitalism, step by step, without one great day of rupture.
+        cause: structures
+        evidence:
+          - {position: reform.revolution.non-reformist-reforms, w: 2}
+          - {position: hist.nordic-model.stopped-at-the-threshold, w: 2}
+      - id: opportunity
+        text: A market economy where nobody's start in life decides where they end up.
+        cause: ideas
+        evidence:
+          - {position: reform.revolution.piecemeal-improvement, w: 2}
+          - {position: inequality.justice.luck-unjust, w: 1}
+      - id: decent
+        text: A decent life for working people in this country. A good job, a home, a pension.
+        cause: interests
+        evidence:
+          - {position: work.future.dignity-of-work, w: 3}
