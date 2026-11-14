@@ -60,9 +60,13 @@ describe('analysis: situation and politics diverge', () => {
   });
 
   // intervention.humanitarian.responsibility-to-protect is reached only by descent.liberalisms.04 and three
-  // probes, none of which Survey schedules for this persona, so tension.radical-backs-intervention cannot
-  // fire in Survey. Content coverage gap (ANOMALIES).
-  it.todo('(b) the same radical meets tension.radical-backs-intervention in Survey (needs intervention reachable outside the liberal descent)');
+  // probes. Survey's tension probe slot asks one of those probes because the rule's other half (a domestic
+  // class program) already holds.
+  it('(b) the same radical meets tension.radical-backs-intervention in Survey', () => {
+    const p = radicalInterventionist;
+    expect(run(p).engine.state.answers.some((a) => a.node.startsWith('probe.intervention.humanitarian.'))).toBe(true);
+    expect(tensionFound(p, 'tension.radical-backs-intervention')).toBe(true);
+  });
 
   it('(b) control: an anti-imperialist radical draws no left-at-home finding', () => {
     expect(ids(ml)).not.toContain('primary.left-at-home');

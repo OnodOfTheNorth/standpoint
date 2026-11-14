@@ -8,7 +8,7 @@
  *   4. stop if the mode's decision budget is spent
  *   5. a detected tension, as a challenge (within the mode's quota)
  *   6. a requested descent
- *   7. the next slot of the mode's template (arc, pressure, practice, ...)
+ *   7. the next slot of the mode's template (arc, pressure, practice, targeted probe, ...)
  *   8. the node with the highest expected resolution of remaining fog
  */
 import type { Bundle, Cond, Node } from '@standpoint/content/schema';
@@ -19,12 +19,16 @@ import { holdings } from './holdings.js';
 import { jitter } from './rng.js';
 import { keystones, liveTensions } from './structure.js';
 import { ORIGIN_OPTIONS } from './state.js';
+import { arcPositions, descentPositions, discrimination, holdingsRelevance, keystoneAdjacency, situationRelevance, tensionCloseness } from './relevance.js';
 
-type Slot = 'arc' | 'pressure' | 'escalation' | 'practice' | 'trajectory' | 'descent' | 'origin' | 'probe';
+type Slot = 'arc' | 'pressure' | 'escalation' | 'practice' | 'trajectory' | 'descent' | 'origin' | 'probe' | 'probe-tension' | 'probe-split' | 'probe-keystone';
 
 const TEMPLATES: Record<Mode, Slot[]> = {
   sketch: ['pressure', 'escalation', 'practice'],
-  survey: ['practice', 'arc', 'pressure', 'arc', 'trajectory', 'descent', 'arc', 'pressure', 'origin', 'practice', 'trajectory', 'origin', 'descent'],
+  // Three targeted probes follow the first descent, once arcs and descent have made holdings firm: one that
+  // could complete a half-met tension rule, one that splits the nearest traditions, one next to a keystone.
+  // Plain probe slots, ranked by fog, made Survey worse; these are ranked by purpose (relevance.ts).
+  survey: ['practice', 'arc', 'pressure', 'arc', 'trajectory', 'descent', 'probe-tension', 'probe-split', 'probe-keystone', 'arc', 'pressure', 'origin', 'practice', 'trajectory', 'origin', 'descent'],
   excavation: ['practice', 'arc', 'pressure', 'trajectory', 'arc', 'descent', 'origin', 'practice', 'trajectory', 'arc', 'pressure', 'origin', 'descent'],
 };
 const CHALLENGE_QUOTA: Record<Mode, number> = { sketch: 1, survey: 4, excavation: Infinity };
@@ -66,6 +70,29 @@ export function gain(b: Bundle, s: State, n: Node): number {
   return g;
 }
 
+/**
+ * Arc relevance. Fog alone gave every respondent the same first arc (the parish arc touches the most open
+ * ground of any), so fog gain is scaled by how well the arc's setting matches the Situation and practice
+ * (relevance.ts) and by how much of its ground the respondent's nearest traditions take a stand on.
+ * Tuned on the persona suite (42 personas): eleven distinct first arcs instead of one. Holdings weights
+ * below about 0.8 let later arcs drift to settings that only match the Situation, which cost the
+ * self-reliant shopkeeper its keystones and the domestic radical its "with the empire abroad" reading.
+ */
+const ARC_SITUATION = 1;
+const ARC_HOLDINGS = 1;
+/**
+ * Descent relevance from holdings: the share of the descent's ground on which the respondent's nearest
+ * traditions take a stand. Complements the gate-based weight below; without it a liberal went into the
+ * conservatism descent because its gate opened on one incidental holding.
+ */
+const DESCENT_HOLDINGS = 1;
+/**
+ * In Survey, an arc or descent is not started with fewer than this many decisions left in the budget: it
+ * would run several prompts past the budget, and the reading would rest on half a story. The remaining
+ * template slots (pressure, origin, practice, trajectory) or a probe take its place.
+ */
+const ARC_FIT = 4;
+
 function arcScore(b: Bundle, s: State, arcId: string): number {
   const arc = b.arcs[arcId]!;
   let g = 0;
@@ -74,7 +101,8 @@ function arcScore(b: Bundle, s: State, arcId: string): number {
   // variety: prefer arcs on ground not yet covered by finished arcs
   const doneTags = new Set(s.arcsStarted.flatMap((a) => b.arcs[a]?.tags ?? []));
   const overlap = arc.tags.length ? arc.tags.filter((t) => doneTags.has(t)).length / arc.tags.length : 0;
-  return g * (1 - 0.4 * overlap);
+  const rel = 1 + ARC_SITUATION * situationRelevance(s, arcId) + ARC_HOLDINGS * holdingsRelevance(b, s, arcPositions(b, arcId));
+  return g * (1 - 0.4 * overlap) * rel;
 }
 
 /** Positions a gate condition tests, collected recursively (negated branches excluded). */
@@ -154,7 +182,7 @@ export function candidates(b: Bundle, s: State, kind: Slot): Candidate[] {
         if (!eligible(b, s, n)) continue;
         let g = 0;
         for (const id of d.nodes) g += gain(b, s, b.nodes[id]!);
-        out.push({ kind, id: d.id, score: (g / Math.sqrt(d.nodes.length)) * (1 + DESCENT_RELEVANCE * descentRelevance(b, s, d.gate)) + j(d.id) });
+        out.push({ kind, id: d.id, score: (g / Math.sqrt(d.nodes.length)) * (1 + DESCENT_RELEVANCE * descentRelevance(b, s, d.gate)) * (1 + DESCENT_HOLDINGS * holdingsRelevance(b, s, descentPositions(b, d.id))) + j(d.id) });
       }
       break;
     case 'origin':
@@ -170,6 +198,19 @@ export function candidates(b: Bundle, s: State, kind: Slot): Candidate[] {
         out.push({ kind, id, score: gain(b, s, n) + j(id) });
       }
       break;
+    case 'probe-tension':
+    case 'probe-split':
+    case 'probe-keystone': {
+      // only probes that serve the slot's purpose; if none does, the slot falls back to the plain fog ranking
+      const f = kind === 'probe-tension' ? tensionCloseness : kind === 'probe-split' ? discrimination : keystoneAdjacency;
+      for (const id of b.probes) {
+        const n = b.nodes[id];
+        if (!eligible(b, s, n)) continue;
+        const r = f(b, s, n);
+        if (r > 0) out.push({ kind, id, score: gain(b, s, n) * r + j(id) });
+      }
+      break;
+    }
   }
   out.sort((a, z) => z.score - a.score || a.id.localeCompare(z.id));
   return out;
@@ -192,6 +233,9 @@ function doneCount(b: Bundle, s: State, k: Slot): number {
     case 'origin':
       return s.kinds.origin ?? 0;
     case 'probe':
+    case 'probe-tension':
+    case 'probe-split':
+    case 'probe-keystone':
       return s.kinds.probe ?? 0;
   }
 }
@@ -248,9 +292,12 @@ export function nextPrompt(b: Bundle, s: State): NextStep {
   // 7. template slots
   const need: Partial<Record<Slot, number>> = {};
   for (const slot of TEMPLATES[s.mode]) {
-    need[slot] = (need[slot] ?? 0) + 1;
-    if (doneCount(b, s, slot) >= need[slot]!) continue;
-    const p = promptFor(b, s, slot);
+    // targeted probe slots share one count: the n-th probe slot is filled once n probes are answered
+    const fam: Slot = slot.startsWith('probe') ? 'probe' : slot;
+    need[fam] = (need[fam] ?? 0) + 1;
+    if (doneCount(b, s, slot) >= need[fam]!) continue;
+    if (s.mode === 'survey' && (slot === 'arc' || slot === 'descent') && target - s.decisions < ARC_FIT) continue;
+    const p = promptFor(b, s, slot) ?? (fam === 'probe' ? promptFor(b, s, 'probe') : null);
     if (p) return ret(p);
   }
   // 8. fill

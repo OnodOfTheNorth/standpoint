@@ -152,7 +152,9 @@ export const declinist: Persona = {
   onTension: 'yield',
   origin: 'work',
   declineRate: 0.25,
-  // cs.decline.* is reached only by probes and the conservatism descent; Survey schedules no probes.
+  // cs.decline.* is reached only by three probes and the conservatism descent. Survey now asks three targeted
+  // probes, but none of them lands on cs.decline for this persona (its nearest traditions are liberal and
+  // self-reliance ones, so neither the split nor the keystone slot points there), so no keystone is asserted.
   expect: [],
 };
 

@@ -168,9 +168,9 @@ export const islamist: Persona = {
   onTension: 'hold',
   origin: 'faith',
   // Brotherhood-defining positions are reached only through the microfinance and family arcs and the
-  // religious-politics and development descents, none of which Survey selects for this persona (content
-  // coverage gap, see ANOMALIES). No keystone is asserted; the run, reading and Nasserist pair still are.
-  expect: [],
+  // religious-politics and development descents. Survey reaches them since arc choice weighs the Situation
+  // (devout Sunni, periphery) and descent choice weighs the nearest traditions.
+  expect: ['religion.public.divine-law', 'debt.household.usury-forbidden', 'history.motor.providence'],
 };
 
 export const socialLiberal: Persona = {
