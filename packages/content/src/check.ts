@@ -117,7 +117,7 @@ for (const file of files) {
   if (kind === 'traditions') for (const t of (raw as { traditions?: { id: string }[] }).traditions ?? []) if (!traditionIds.has(t.id)) errs.push(`tradition ${t.id} not in registry`);
   const local = new Set<string>();
   if (kind === 'problematics') for (const p of (raw as { problematics?: { positions?: { id: string }[] }[] }).problematics ?? []) for (const x of p.positions ?? []) local.add(x.id);
-  for (const p of posRefs) if (!knownPositions.has(p) && !local.has(p)) errs.push(`unknown position "${p}"`);
+  for (const p of posRefs) if (!knownPositions.has(p) && !local.has(p) && !knownPractice.has(p)) errs.push(`unknown position "${p}"`);
   for (const n of narrator) {
     const hits = loadedTerms(n.val);
     if (hits.length) errs.push(`narrator-voice loaded term(s) [${hits.join(', ')}] in ${n.field}: "${n.val.slice(0, 90)}…"`);
