@@ -95,7 +95,7 @@ nodes:
         text: Both miss that donors give where it suits donors. Look at who gets the contracts.
         evidence: [{position: aid.foreign.instrument-of-power, w: 3}]
       - id: drain
-        text: Both miss the bigger flow. Malawi pays out more in debt service and profits than it gets in aid.
+        text: Both miss the bigger flow. Malawi pays out more in debt payments and profits than it gets in aid.
         evidence: [{position: aid.foreign.small-change-from-the-drain, w: 3}]
       - id: home
         text: Both miss the people paying for it. Our own towns need that money.
@@ -155,7 +155,7 @@ nodes:
         text: All of it, and fast, so the country never has to beg again.
         evidence: [{position: debt.sovereign.pay-off-to-be-free, w: 3}]
       - id: two
-        text: Through two. Beyond that the debt is unpayable and should be restructured.
+        text: Through two. Beyond that the debt is unpayable and should be renegotiated.
         evidence: [{position: debt.sovereign.orderly-restructuring, w: 3}]
       - id: lenders
         text: None. The lenders took the risk. They take the loss.
@@ -177,7 +177,7 @@ nodes:
       After Argentina's 2001 default, a fund bought its bonds for cents and later won a New York court order
       to be paid in full. Two people argue about it. Who is right?
     voices:
-      - {name: "Lucía, a teacher in Rosario", says: "They bought our bonds for pennies after the crash, and a judge in New York made us pay them in full. My salary paid for that."}
+      - {name: "Silvina, a teacher in Rosario", says: "They bought our bonds for pennies after the crash, and a judge in New York made us pay them in full. My salary paid for that."}
       - {name: "Mark, a pension fund manager in Chicago", says: "My members are firefighters. A country that walks away from its bonds is walking away from them."}
     why: This asks whether you think poor countries' debts should be repaid, through both sides of one.
     options:
@@ -185,7 +185,7 @@ nodes:
         text: Mark. Debts are owed to real people, and they should be paid.
         evidence: [{position: debt.sovereign.pay-what-you-owe, w: 3}]
       - id: lucia
-        text: Lucía. That debt has been paid many times over. Debtors should refuse it together.
+        text: Silvina. That debt has been paid many times over. Debtors should refuse it together.
         evidence: [{position: debt.sovereign.already-paid, w: 3}]
       - id: court
         text: Both miss what's needed, a bankruptcy court for countries so holdouts can't wreck a deal.
@@ -286,7 +286,7 @@ nodes:
     why: This asks what you think China is doing in the world, by where your worry starts.
     options:
       - id: none
-        text: None of it. That's what a builder does, and the South needs builders.
+        text: None of it. That's what a builder does, and poor countries need builders.
         evidence: [{position: china.role.partner-that-builds, w: 3}]
       - id: breaks
         text: None of it. Every item breaks a monopoly the West held for a century.

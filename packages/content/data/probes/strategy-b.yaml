@@ -21,7 +21,7 @@ nodes:
         cause: interests
         evidence: [{position: fascism.nature.petty-bourgeois-mass-movement, w: 3}]
       - id: consent
-        text: The old rulers could no longer win consent and the left couldn't take over. Force filled the gap.
+        text: The old rulers could no longer win people over, and the left couldn't take over. Force filled the gap.
         cause: structures
         evidence: [{position: fascism.nature.crisis-of-hegemony, w: 3}]
       - id: invited
@@ -77,13 +77,13 @@ nodes:
         text: The first two. Fascism is a mass movement driven by a myth of national rebirth, not just any dictatorship.
         evidence: [{position: fascism.nature.palingenetic-ultranationalism, w: 3}]
       - id: four
-        text: The first four. Wherever finance and big capital drop parliament and rule by open terror.
+        text: The first four. Wherever the banks and big business drop parliament and rule by open terror.
         evidence: [{position: fascism.nature.finance-capital-dictatorship, w: 3}]
       - id: mass
         text: The first two, and maybe the last. It needs a mass movement of the desperate middle, used by big business.
         evidence: [{position: fascism.nature.petty-bourgeois-mass-movement, w: 3}]
       - id: consent
-        text: Any of them where the rulers had lost consent and turned to force to hold things together.
+        text: Any of them where the rulers had lost the public's goodwill and turned to force to hold things together.
         evidence: [{position: fascism.nature.crisis-of-hegemony, w: 3}]
       - id: reds
         text: The first four. Each arose to stop communism, and copied communist methods to do it.
@@ -117,7 +117,7 @@ nodes:
         evidence: [{position: fascism.nature.empty-insult, w: 3}]
     options:
       - id: bianchi
-        text: Bianchi. Big capital's open dictatorship.
+        text: Bianchi. Big business's open dictatorship.
         cause: interests
         evidence: [{position: fascism.nature.finance-capital-dictatorship, w: 3}]
       - id: conti
@@ -143,7 +143,7 @@ nodes:
           - {position: fascism.nature.reaction-to-bolshevism, w: 3}
           - {position: fascism.nature.totalitarian-twin, w: 1}
       - id: twin
-        text: Both miss that it was the same species as Soviet communism, a party claiming all of life.
+        text: Neither. It was the same species as Soviet communism, a party claiming all of life.
         cause: ideas
         evidence: [{position: fascism.nature.totalitarian-twin, w: 3}]
       - id: colonial
@@ -387,7 +387,7 @@ nodes:
         cause: structures
         evidence: [{position: culture.strategy.long-march, w: 3}]
       - id: ideas
-        text: Both miss it. Win the experts and opinion-makers; the rest follows.
+        text: Neither. Win the experts and opinion-makers; the rest follows.
         cause: ideas
         evidence: [{position: culture.strategy.ideas-and-think-tanks, w: 3}]
       - id: party
@@ -399,7 +399,7 @@ nodes:
         cause: interests
         evidence: [{position: culture.strategy.build-own-institutions, w: 3}]
       - id: judges
-        text: Both miss it. Elections come and go. Judges sit for thirty years.
+        text: Look at the courts. Elections come and go. Judges sit for thirty years.
         cause: structures
         evidence: [{position: culture.strategy.courts-and-law-schools, w: 3}]
 
@@ -505,12 +505,12 @@ nodes:
     text: >
       Two flatmates in Nairobi argue over a delivery of cheap imported clothes. Who's right?
     voices:
-      - {name: Wanjiru, says: "Those clothes are why the mills here closed. Buy Kenyan, even if it costs more."}
+      - {name: Njeri, says: "Those clothes are why the mills here closed. Buy Kenyan, even if it costs more."}
       - {name: Otieno, says: "I buy what I can afford and what I like. Nobody's going to tell me what to wear."}
     why: This asks whether you think what you buy changes the world, and how.
     options:
       - id: wanjiru
-        text: Wanjiru. Buy local and national.
+        text: Njeri. Buy local and national.
         cause: interests
         evidence: [{position: consumption.choice.buy-local-and-national, w: 3}]
       - id: otieno
@@ -518,7 +518,7 @@ nodes:
         cause: individuals
         evidence: [{position: consumption.choice.consumer-sovereignty, w: 3}]
       - id: ethical
-        text: Wanjiru, for a broader reason. What you buy shapes how workers everywhere are treated.
+        text: Njeri, for a broader reason. What you buy shapes how workers everywhere are treated.
         cause: ideas
         evidence: [{position: consumption.choice.consumer-responsibility, w: 3}]
       - id: trade
@@ -530,6 +530,6 @@ nodes:
         cause: structures
         evidence: [{position: consumption.choice.organized-boycott, w: 3}]
       - id: less
-        text: Both miss it. Buy less of everything. Contentment is worth more than another shirt.
+        text: Neither. Buy less of everything. Contentment is worth more than another shirt.
         cause: ideas
         evidence: [{position: consumption.choice.simplicity-as-virtue, w: 3}]

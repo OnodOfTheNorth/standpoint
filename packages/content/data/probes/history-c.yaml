@@ -65,7 +65,7 @@ nodes:
         cause: structures
         evidence: [{position: hist.china-mao.bureaucratic-squeeze, w: 3}]
       - id: nation
-        text: Both miss that China was whole and nobody's colony for the first time in a century.
+        text: Look at the map. China was whole and nobody's colony for the first time in a century.
         cause: ideas
         evidence: [{position: hist.china-mao.china-stood-up, w: 3}]
 
@@ -118,7 +118,7 @@ nodes:
     why: This asks how you judge China's reform era.
     options:
       - id: primary-stage
-        text: Socialism building the forces it needs first. The party still holds the commanding heights.
+        text: Socialism building up its strength first. The party still controls the banks, the land and big industry.
         evidence: [{position: hist.china-reform.primary-stage, w: 3}]
       - id: restoration
         text: Capitalism, restored by a Communist Party.
@@ -166,7 +166,7 @@ nodes:
         cause: interests
         evidence: [{position: hist.china-reform.workshop-of-the-world, w: 3}]
       - id: voice
-        text: Both miss that neither of them could say a word against it in public.
+        text: Notice that neither of them could say a word against it in public.
         cause: ideas
         evidence: [{position: hist.china-reform.prosperity-without-liberty, w: 3}]
 
@@ -175,7 +175,7 @@ nodes:
     title: China and Russia
     text: >
       In the 1990s Russia's economy shrank by about 40 percent. China's grew by about 10 percent a year. Both
-      had been planned economies run by communist parties. What, above all, explains the difference?
+      had been planned economies run by communist parties. Why the gap?
     why: This asks how you explain China's reform-era growth, and what kind of cause you reach for.
     options:
       - id: gradual
@@ -187,7 +187,7 @@ nodes:
         cause: individuals
         evidence: [{position: hist.china-reform.markets-freed-people, w: 3}]
       - id: labor
-        text: China had hundreds of millions of cheap workers to rent to foreign capital. Russia had oil.
+        text: China had hundreds of millions of cheap workers to rent to foreign companies. Russia had oil.
         cause: interests
         evidence: [{position: hist.china-reform.workshop-of-the-world, w: 3}]
       - id: party
@@ -218,10 +218,10 @@ nodes:
         text: A socialist country in a new era, ending poverty while others argue about it.
         evidence: [{position: hist.china-present.new-era-socialism, w: 3}]
       - id: rival
-        text: Capitalism run by a state, exporting capital like any rising imperial power.
+        text: Capitalism run by a state, lending and investing abroad like any rising empire.
         evidence: [{position: hist.china-present.state-capitalist-rival, w: 3}]
       - id: developmental
-        text: The most successful developmental state ever. Neither socialist nor liberal.
+        text: The most successful state-steered catch-up in history. Neither socialist nor liberal.
         evidence: [{position: hist.china-present.developmental-state, w: 3}]
       - id: threat
         text: A one-party power that wants a world safe for one-party states.
@@ -242,18 +242,18 @@ nodes:
   - id: probe.hist.china-present.nairobi-and-youngstown
     type: voices
     title: Nairobi and Youngstown
-    text: Two people on a radio phone-in describe what China means to them. Who is right?
+    text: Two people write to the same magazine about what China means to them. Who is right?
     voices:
       - {name: "Achieng, an engineer in Nairobi", says: "China built our railway to Mombasa while Western lenders sent us lectures. Now we have choices."}
       - {name: "Dave, a former steelworker in Youngstown", says: "My mill closed and the steel comes from China now. Our own executives shipped my job there and called it free trade."}
     why: This asks how you weigh China's role since 2012, through two people it touches.
     options:
       - id: achieng
-        text: Achieng. China gives the South room to develop.
+        text: Achieng. China gives poor countries room to grow.
         cause: interests
         evidence: [{position: hist.china-present.multipolar-anchor, w: 3}]
       - id: dave
-        text: Dave. A mercantilist rival took our industry with our elites' help.
+        text: Dave. A rival that games trade took our industry, with our own executives' help.
         cause: individuals
         evidence: [{position: hist.china-present.mercantilist-cheat, w: 3}]
       - id: socialism
@@ -261,11 +261,11 @@ nodes:
         cause: structures
         evidence: [{position: hist.china-present.new-era-socialism, w: 3}]
       - id: imperial
-        text: Both are describing an imperial power exporting capital. Kenya's railway loan is not charity.
+        text: Both are describing a rising empire lending and investing abroad. Kenya's railway loan is not charity.
         cause: interests
         evidence: [{position: hist.china-present.state-capitalist-rival, w: 3}]
       - id: catch-up
-        text: Both are describing a developmental state catching up, as Japan and Korea did before.
+        text: Both are describing a state-steered economy catching up, as Japan and Korea did before.
         cause: structures
         evidence: [{position: hist.china-present.developmental-state, w: 3}]
       - id: order
@@ -286,11 +286,11 @@ nodes:
     title: Collision course
     text: >
       Tariffs, chip bans, warships in the Taiwan Strait. The United States and China look set on a long
-      confrontation. What, above all, explains it?
+      confrontation. What is driving it?
     why: This asks how you explain the US-China rivalry, and what kind of cause you reach for.
     options:
       - id: two-capitals
-        text: Two capitalisms fighting over markets, raw materials and profits. Old story.
+        text: Two capitalist powers fighting over markets, raw materials and profits. Old story.
         cause: structures
         evidence: [{position: hist.china-present.state-capitalist-rival, w: 3}]
       - id: hegemony
@@ -345,7 +345,7 @@ nodes:
         text: A country that left the socialist camp for Western loans and markets. Capitalism by another name.
         evidence: [{position: hist.yugoslavia.revisionist-capitalism, w: 3}]
       - id: pricing
-        text: An experiment that will fail. Firms owned by nobody cannot price their capital.
+        text: An experiment that will fail. Firms owned by nobody have no owner who loses when they waste money.
         evidence: [{position: hist.yugoslavia.labor-managed-failure, w: 3}]
       - id: debt
         text: A good thing built on borrowed money. Watch what the IMF does with it in twenty years.
@@ -360,7 +360,7 @@ nodes:
   - id: probe.hist.yugoslavia.sarajevo-and-zagreb
     type: voices
     title: Sarajevo and Zagreb
-    text: Two people who grew up in Yugoslavia argue at a reunion. Who is right?
+    text: Two people who grew up in Yugoslavia argue on a night train to Belgrade. Who is right?
     voices:
       - {name: "Jasna, from Sarajevo", says: "We had jobs, seaside holidays, Serbs and Muslims and Croats at the same table. Then men with flags took it all."}
       - {name: "Tomislav, from Zagreb", says: "When we asked for our own language and our own money in 1971, Belgrade purged a whole generation. We were a nation in a cage."}
@@ -383,7 +383,7 @@ nodes:
         cause: structures
         evidence: [{position: hist.yugoslavia.undone-by-markets-and-debt, w: 3}]
       - id: inflation
-        text: Both miss the economics. Worker-run firms paid themselves and borrowed the rest. Inflation hit 1,000 percent.
+        text: Look at the books. Worker-run firms paid themselves and borrowed the rest. Inflation hit 1,000 percent.
         cause: ideas
         evidence: [{position: hist.yugoslavia.labor-managed-failure, w: 3}]
       - id: officials
@@ -391,7 +391,7 @@ nodes:
         cause: interests
         evidence: [{position: hist.yugoslavia.new-class, w: 3}]
       - id: revisionism
-        text: Both miss that it stopped being socialist the day it took Western money.
+        text: It stopped being socialist the day it took Western money.
         cause: ideas
         evidence: [{position: hist.yugoslavia.revisionist-capitalism, w: 3}]
       - id: between
@@ -403,8 +403,8 @@ nodes:
     type: explanation
     title: Why it broke
     text: >
-      In 1984 Sarajevo hosted the Winter Olympics. By 1992 it was under siege, and Yugoslavia was gone. What,
-      above all, explains the break-up?
+      In 1984 Sarajevo hosted the Winter Olympics. By 1992 it was under siege, and Yugoslavia was gone. Why
+      did it break?
     why: This asks how you explain the end of Yugoslavia, and what kind of cause you reach for.
     options:
       - id: debt
@@ -466,7 +466,7 @@ nodes:
         text: Half of a country cut in two by foreign armies in 1945. The division is the root of it.
         evidence: [{position: hist.dprk.divided-nation, w: 3}]
       - id: planning
-        text: Planning failing, in full. The satellite photos at night say it all.
+        text: Central planning failing in full view. The satellite photos at night say it all.
         evidence: [{position: hist.dprk.planning-failed, w: 3}]
 
   - id: probe.hist.dprk.the-river
@@ -495,7 +495,7 @@ nodes:
         cause: ideas
         evidence: [{position: hist.dprk.juche-socialism, w: 3}]
       - id: dynasty
-        text: Both miss what it is. A royal family that kept the red flag and dropped the rest.
+        text: It's a royal family that kept the red flag and dropped the rest.
         cause: culture
         evidence: [{position: hist.dprk.national-dynasty, w: 3}]
       - id: plan
@@ -508,7 +508,7 @@ nodes:
     title: The reversal
     text: >
       In 1945 the North had most of Korea's industry, and into the 1970s it was by most estimates richer per
-      head than the South. Today the South is many times richer. What, above all, explains the reversal?
+      head than the South. Today the South is many times richer. What turned it around?
     why: This asks how you explain North Korea's fate, and what kind of cause you reach for.
     options:
       - id: plan

@@ -99,11 +99,11 @@ nodes:
         cause: structures
         evidence: [{position: violence.political.state-monopoly, w: 3}]
       - id: class
-        text: Both miss it. The soldiers protect owners. Only a revolution that wins the soldiers over ends this.
+        text: Neither. The soldiers protect owners. Only a revolution that wins the soldiers over ends this.
         cause: structures
         evidence: [{position: violence.political.revolutionary, w: 3}]
       - id: foreign
-        text: Both miss it. Those are an occupier's soldiers. A colonized people may fight back.
+        text: Ask whose soldiers they are. If they're an occupier's, a colonized people may fight back.
         cause: structures
         evidence: [{position: violence.political.anti-colonial, w: 3}]
       - id: faith
@@ -193,7 +193,7 @@ nodes:
         cause: ideas
         evidence: [{position: speech.limits.open-marketplace, w: 3}]
       - id: second
-        text: The second editor. Foreign-funded propaganda under siege can be restricted.
+        text: The second editor. In a country under siege, foreign-funded propaganda can be restricted.
         cause: structures
         evidence: [{position: speech.limits.information-sovereignty, w: 3}]
       - id: class
@@ -209,7 +209,7 @@ nodes:
         cause: structures
         evidence: [{position: speech.limits.no-platform, w: 3}]
       - id: morals
-        text: Both miss it. The real limit is morality. What insults the faith and corrupts families should be restrained.
+        text: Neither. The real limit is morality. What insults the faith and corrupts families should be restrained.
         cause: divine
         evidence: [{position: speech.limits.protect-the-sacred, w: 3}]
 
@@ -337,10 +337,10 @@ nodes:
 
   - id: probe.party.system.cafe
     type: voices
-    title: The café argument
+    title: Thirty parties
     text: >
-      A café in Tunis, 2012. Thirty parties have registered for the first free elections in decades. Two
-      friends argue over coffee. Who's right?
+      Outside the central market in Tunis, 2012. Thirty parties have registered for the first free elections
+      in decades. Two friends argue on a bench. Who's right?
     voices:
       - {name: Amel, says: "Thirty parties is wonderful. Let them all compete. If they're bad, we throw them out in four years."}
       - {name: Karim, says: "Thirty parties is thirty machines dividing us. Every one has a patron. We need people who answer to us, not to a party."}
@@ -355,7 +355,7 @@ nodes:
         cause: interests
         evidence: [{position: party.system.partyless, w: 3}]
       - id: one-front
-        text: Neither. A nation in transition needs one broad national party, then argue inside it.
+        text: Neither. A new nation needs one broad national party, then argue inside it.
         cause: structures
         evidence: [{position: party.system.national-front-party, w: 3}]
       - id: leading
@@ -479,15 +479,15 @@ nodes:
         cause: interests
         evidence: [{position: authority.legitimacy.class-content, w: 3}]
       - id: custom
-        text: Both miss it. The village has its own ways and elders; authority that grew here outranks any newcomer.
+        text: Neither. The village has its own ways and elders; authority that grew here outranks any newcomer.
         cause: culture
         evidence: [{position: authority.legitimacy.prescription, w: 3}]
       - id: heaven
-        text: Both miss it. Authority comes from God, and the officer answers to Him as much as the village does.
+        text: Both forget who stands above them all. Authority comes from God, and the officer answers to Him as much as the village does.
         cause: divine
         evidence: [{position: authority.legitimacy.divine-ordinance, w: 3}]
       - id: leader
-        text: Both miss it. Officers don't matter. What matters is whether the nation's leader truly speaks for the people.
+        text: Both look too low. Officers don't matter. What matters is whether the nation's leader truly speaks for the people.
         cause: individuals
         evidence: [{position: authority.legitimacy.leader-embodiment, w: 3}]
       - id: none

@@ -47,7 +47,7 @@ nodes:
       tell him what to do. Who's right?
     voices:
       - {name: "Uncle Hernán", says: "You owe the army eighteen months. Your grandfather did it, I did it. The country doesn't run on excuses."}
-      - {name: "Aunt Lucía", says: "Refuse. The court says conscience counts. Do social service at the hospital and keep your hands clean."}
+      - {name: "Aunt Beatriz", says: "Refuse. The court says conscience counts. Do social service at the hospital and keep your hands clean."}
     why: This asks what a citizen owes when the state calls him to arms, and where conscience comes in.
     options:
       - id: hernan
@@ -55,7 +55,7 @@ nodes:
         cause: culture
         evidence: [{position: conscience.refusal.duty-to-serve, w: 3}]
       - id: lucia
-        text: Lucía. Respect his conscience, and let him serve the country another way.
+        text: Beatriz. Respect his conscience, and let him serve the country another way.
         cause: ideas
         evidence: [{position: conscience.refusal.exemption-with-service, w: 3}]
       - id: orders
@@ -63,7 +63,7 @@ nodes:
         cause: ideas
         evidence: [{position: conscience.refusal.unlawful-orders, w: 3}]
       - id: pacifist
-        text: Lucía doesn't go far enough. No uniform of any kind, armed or not, whatever it costs him.
+        text: Beatriz doesn't go far enough. No uniform of any kind, armed or not, whatever it costs him.
         cause: ideas
         evidence:
           - {position: conscience.refusal.absolute-pacifism, w: 3}
@@ -293,11 +293,11 @@ nodes:
         cause: individuals
         evidence: [{position: police.accountability.professional-standards, w: 3}]
       - id: neighborhood
-        text: Both miss it. The neighborhood itself should control who polices it.
+        text: Neither. The neighborhood itself should control who polices it.
         cause: structures
         evidence: [{position: police.accountability.community-control, w: 3}]
       - id: fewer
-        text: Both miss it. The answer is fewer police, not better-watched police.
+        text: Wrong argument. The answer is fewer police, not better-watched police.
         cause: structures
         evidence: [{position: police.accountability.abolition, w: 3}]
       - id: courts
@@ -418,7 +418,7 @@ nodes:
         cause: structures
         evidence: [{position: rights.basis.membership, w: 3}]
       - id: inherited
-        text: Both miss it. Rights are liberties handed down and tested over generations.
+        text: Both forget the past. Rights are liberties handed down and tested over generations.
         cause: culture
         evidence: [{position: rights.basis.inheritance, w: 3}]
       - id: useful
@@ -512,7 +512,7 @@ nodes:
       disagree about what being free amounts to. Who's right?
     voices:
       - {name: Sipho, says: "We can vote, speak, travel, own a house. Nobody can lock us up for our views. That is freedom, and we won it."}
-      - {name: Thandi, says: "The same families own the mines and the land. A vote doesn't feed you. We are free on paper."}
+      - {name: Lindiwe, says: "The same families own the mines and the land. A vote doesn't feed you. We are free on paper."}
     why: This asks what liberty means to you once the obvious chains are gone.
     options:
       - id: sipho
@@ -520,11 +520,11 @@ nodes:
         cause: ideas
         evidence: [{position: liberty.concept.non-interference, w: 3}]
       - id: thandi-means
-        text: Thandi. Without land, work and health, liberty is a word.
+        text: Lindiwe. Without land, work and health, liberty is a word.
         cause: structures
         evidence: [{position: liberty.concept.capability, w: 3}]
       - id: thandi-control
-        text: Thandi, further. Liberty is working people controlling the mines and the land together.
+        text: Lindiwe, further. Liberty is working people controlling the mines and the land together.
         cause: structures
         evidence: [{position: liberty.concept.collective-mastery, w: 3}]
       - id: equals
@@ -532,11 +532,11 @@ nodes:
         cause: structures
         evidence: [{position: liberty.concept.social-anarchist, w: 3}]
       - id: foreign
-        text: Both miss it. The mines answer to London and New York. The nation isn't free yet.
+        text: Both miss where the mines answer to, London and New York. The nation isn't free yet.
         cause: structures
         evidence: [{position: liberty.concept.national-liberation, w: 3}]
       - id: virtue
-        text: Both miss it. A people is free when it lives by law and decency, and that has to be built.
+        text: Neither. A people is free when it lives by law and decency, and that has to be built.
         cause: culture
         evidence: [{position: liberty.concept.ordered-liberty, w: 3}]
       - id: god

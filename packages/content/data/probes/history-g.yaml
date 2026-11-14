@@ -148,7 +148,7 @@ nodes:
     why: This asks what you think caused Argentina's collapse, and what kind of cause you reach for.
     options:
       - id: model
-        text: The model itself. A fixed peso, open capital and debt-funded imports. The Fund prescribed it and it killed the patient.
+        text: The model itself. A fixed peso, money free to come and go, imports paid with debt. The Fund prescribed it and it killed the patient.
         cause: structures
         evidence: [{position: hist.argentina-2001.imf-neoliberal-collapse, w: 3}]
       - id: spending
@@ -225,7 +225,7 @@ nodes:
         text: He broke the rules first, and then the army broke them worse.
         evidence: [{position: hist.bolivia-2019.both-broke-the-rules, w: 3}]
       - id: movements
-        text: One state fell and another, more openly racist, takes over. The movements should trust neither.
+        text: One government fell and another, more openly racist, takes over. The movements should trust neither.
         evidence: [{position: hist.bolivia-2019.neither-evo-nor-the-right, w: 3}]
       - id: term
         text: The people said no in 2016. A leader who won't leave ends like this, every time.
@@ -270,7 +270,7 @@ nodes:
       A year later, three Bolivians argue about November 2019. Who sees it straight?
     voices:
       - {name: "Doña Felipa, a market vendor in El Alto", says: "They burned the wiphala flag and shot our boys at Senkata. Nobody calls it fraud when it happens to us."}
-      - {name: "Andrés, a student in Santa Cruz", says: "I blocked streets for twenty days because my vote was stolen. Nobody paid me. Call it a coup if you like."}
+      - {name: "Mauricio, a student in Santa Cruz", says: "I blocked streets for twenty days because my vote was stolen. Nobody paid me. Call it a coup if you like."}
       - {name: "Marcial, a lowland indigenous leader", says: "Evo's road went through our forest. The new crowd wants us gone altogether. We do not need either palace."}
     why: This asks how you read Bolivia's crisis of 2019, through three people on different sides of it.
     options:
@@ -279,7 +279,7 @@ nodes:
         cause: interests
         evidence: [{position: hist.bolivia-2019.coup, w: 3}]
       - id: andres
-        text: Andrés. Ordinary citizens defended their vote.
+        text: Mauricio. Ordinary citizens defended their vote.
         cause: ideas
         evidence: [{position: hist.bolivia-2019.fraud-uprising, w: 3}]
       - id: marcial
@@ -287,7 +287,7 @@ nodes:
         cause: structures
         evidence: [{position: hist.bolivia-2019.neither-evo-nor-the-right, w: 3}]
       - id: two-wrongs
-        text: Felipa and Andrés are both partly right. That's the tragedy.
+        text: Felipa and Mauricio are both partly right. That's the tragedy.
         cause: individuals
         evidence: [{position: hist.bolivia-2019.both-broke-the-rules, w: 3}]
       - id: referendum
@@ -328,8 +328,8 @@ nodes:
     type: explanation
     title: Why it fell
     text: >
-      Marcos ruled by decree from 1972, and by 1986 he was flown out on an American aircraft. What, above
-      all, ended his rule?
+      Marcos ruled by decree from 1972, and by 1986 he was flown out on an American aircraft. What
+      ended his rule?
     why: This asks what you think brought down the Marcos dictatorship, and what kind of cause you reach for.
     options:
       - id: people

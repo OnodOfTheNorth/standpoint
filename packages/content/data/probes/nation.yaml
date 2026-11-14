@@ -22,7 +22,7 @@ nodes:
         text: It's a game. My side is the people I work with at the depot, Moroccan, French and Malian.
         evidence: [{position: migrant.loyalty.class-not-flag, w: 3}]
       - id: faith
-        text: Tonight I'll cheer the players who bow in prayer after they score. My real belonging is to the faith, not to either flag.
+        text: Tonight I cheer the players who bow in prayer after they score. My belonging is the faith, not a flag.
         evidence: [{position: migrant.loyalty.community-of-faith, w: 3}]
       - id: nobody
         text: It's football. I owe neither state anything, and neither does anyone else in this building.
@@ -62,7 +62,7 @@ nodes:
   - id: probe.migrant.loyalty.dubai-gothenburg
     type: voices
     title: Nurse and councillor
-    text: Two people are interviewed for a story about where migrants belong. Who has it right?
+    text: Two people write to the same advice column about where migrants belong. Who has it right?
     voices:
       - {name: "Marites, a nurse from Iloilo working in Dubai", says: "Every month I send half my pay home. The Philippines is my country. I'm only working here."}
       - {name: "Oskar, a city councillor in Gothenburg whose parents came from Turkey", says: "You live here, you vote here, your loyalty is here. My parents understood that."}
@@ -78,7 +78,7 @@ nodes:
         text: Both, at once. People hold two countries without strain.
         evidence: [{position: migrant.loyalty.dual-belonging, w: 3}]
       - id: agency
-        text: Both miss the recruiting agency that took Marites's fees and the employer in Dubai. Her side is other workers, there and here.
+        text: Both miss the agency that took Marites's fees, and her employer. Her side is other workers, there and here.
         evidence: [{position: migrant.loyalty.class-not-flag, w: 3}]
       - id: faith
         text: Both miss God. A believer is at home in any land and owes a state only what the faith allows.
@@ -113,7 +113,7 @@ nodes:
         text: Those farms were built by their owners' work. Seizing them was theft, and the hunger proved it.
         evidence: [{position: settler.colonialism.just-settlement, w: 3}]
       - id: categories
-        text: The trouble is "settler" and "native" as political categories at all. One citizenry, one land law.
+        text: The trouble is sorting people into settler and native at all. One citizenry, one land law.
         evidence: [{position: settler.colonialism.decolonize-citizenship, w: 3}]
       - id: flag
         text: Independence changed the flag, not who held the land. Until that changes the colony goes on.
@@ -201,7 +201,7 @@ nodes:
         text: The hereditary chiefs. Their authority is older than Canada's and was never handed over.
         evidence: [{position: indigenous.sovereignty.inherent-nationhood, w: 3}]
       - id: consent
-        text: The community, through a proper consent process with real power to say no. The council's deal is part of that.
+        text: The whole community, with a real power to say no. The council's deal is part of that, not the end of it.
         evidence: [{position: indigenous.sovereignty.within-state-rights, w: 3}]
       - id: courts
         text: Canada's courts and Parliament, the same as for any landowner.
@@ -294,7 +294,7 @@ nodes:
   - id: probe.agrarian.question.parana-mato-grosso
     type: voices
     title: Settler and soy farmer
-    text: Two Brazilian farmers are put on the same television panel. Who has it right?
+    text: Two Brazilian farmers are quoted side by side in the same newspaper. Who has it right?
     voices:
       - {name: "Edinalva, from a landless workers' settlement in Paraná", says: "We occupied land nobody was using. Now it feeds three hundred families, and we grow without poisons."}
       - {name: "Rodrigo, a soy farmer in Mato Grosso", says: "Brazil feeds the world because farms like mine are big, mechanized and efficient. Occupations scare off investment."}
@@ -319,7 +319,7 @@ nodes:
         text: Both are too small. Large collective farms planned with industry would out-produce them both.
         evidence: [{position: agrarian.question.collective-farms, w: 3}]
       - id: communal
-        text: Both are standing on someone's common land. Indigenous and quilombo communities held it first, and not to sell.
+        text: Both are standing on someone's common land. Indigenous peoples and the descendants of runaway slaves held it first, and not to sell.
         evidence: [{position: agrarian.question.communal-tenure, w: 3}]
 
   # ---------------- borders.migration ----------------

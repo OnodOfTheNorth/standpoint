@@ -24,7 +24,7 @@ nodes:
           text: A state development bank that lends to firms only if they hit export targets
           evidence: [{position: development.path.developmental-state, w: 2}]
         - id: delink
-          text: Food self-sufficiency, capital controls, and no IMF conditions
+          text: Food self-sufficiency, controls on money leaving the country, and no IMF conditions
           evidence: [{position: development.path.delinking, w: 2}]
         - id: plan
           text: Take banks and plantations into public hands and draw up a five-year plan for power and steel
@@ -57,7 +57,7 @@ nodes:
         text: Open selectively, the Korean way. The state picks industries, keeps control of credit and pushes them to export.
         evidence: [{position: development.path.developmental-state, w: 3}]
       - id: refuse
-        text: Refuse the conditions. Ration imports, control capital and set your own priorities, whatever it costs.
+        text: Refuse the conditions. Ration imports, stop money leaving and set your own priorities, whatever it costs.
         evidence: [{position: development.path.delinking, w: 3}]
       - id: plan
         text: The plan wasn't the problem, the half-measures were. Take the rest into public hands and plan properly.
@@ -89,7 +89,7 @@ nodes:
         text: Through three, as long as the firms have to compete abroad.
         evidence: [{position: development.path.developmental-state, w: 3}]
       - id: four
-        text: Through four. Protect home industry and own the commanding heights.
+        text: Through four. Protect home industry and own the big industries.
         evidence: [{position: development.path.import-substitution, w: 3}]
       - id: five
         text: Through five. Control over foreign currency is what lets a country set its own course.
@@ -111,7 +111,7 @@ nodes:
     why: This asks what you think the main conflict of our era is, and what kind of cause you reach for.
     options:
       - id: empire
-        text: The Empire and the Rest. The rich core against the nations it drained.
+        text: The Empire and the Rest. The rich countries against the nations they drained.
         cause: structures
         evidence: [{position: contradiction.primary.imperialism-vs-oppressed, w: 3}]
       - id: three
@@ -156,7 +156,7 @@ nodes:
     why: This asks what you think the main conflict of our era is, by what you put first.
     options:
       - id: sanctions
-        text: Western sanctions strangle another Southern economy that tried to go its own way.
+        text: Western sanctions strangle another poor economy that tried to go its own way.
         evidence: [{position: contradiction.primary.imperialism-vs-oppressed, w: 3}]
       - id: g77
         text: The poor countries' bloc refuses to take sides between Washington and Beijing, and courts Europe and Japan.
@@ -243,7 +243,7 @@ nodes:
         text: "A few great powers, each minding its own backyard. Price: if you live in someone's backyard, hard luck."
         evidence: [{position: world.order.restraint, w: 3}]
       - id: multipolar
-        text: "Many centers, so no single one can sanction or squeeze the South. Price: no referee either."
+        text: "Many centers, so no single one can sanction or squeeze the poor countries. Price: no referee either."
         evidence: [{position: world.order.multipolar-sovereignty, w: 3}]
       - id: civilizations
         text: "Great civilizations, each sovereign in its own sphere, each with its own ways. Price: minorities in the wrong sphere."
@@ -252,7 +252,7 @@ nodes:
         text: "No order at all. Each country minds its own business. Price: small countries are on their own."
         evidence: [{position: world.order.nation-first, w: 3}]
       - id: workers
-        text: "Workers' movements across borders, loyal to no great capital. Price: it doesn't exist yet."
+        text: "Workers' movements across borders, loyal to no great power. Price: it doesn't exist yet."
         evidence: [{position: world.order.neither-camp, w: 3}]
       - id: parliament
         text: "A world parliament with global taxes. Price: a government even further from you."
@@ -311,7 +311,7 @@ nodes:
         text: Abstain. The war is wrong, but pushing NATO to Russia's border was reckless. Great powers have backyards.
         evidence: [{position: world.order.restraint, w: 3}]
       - id: abstain-iraq
-        text: Abstain. Where was this vote over Iraq? The South won't be drafted into the West's quarrels.
+        text: Abstain. Where was this vote over Iraq? Poor countries won't be drafted into the West's quarrels.
         evidence: [{position: world.order.multipolar-sovereignty, w: 3}]
       - id: abstain-civilization
         text: Abstain. Russia is defending its own civilization's sphere against the West's.
@@ -353,7 +353,7 @@ nodes:
         cause: structures
         evidence: [{position: intl.institutions.reform-democratize, w: 3}]
       - id: own
-        text: Proof that the South needs its own lender of last resort.
+        text: Proof that poor countries need an emergency lender of their own.
         cause: structures
         evidence: [{position: intl.institutions.build-alternatives, w: 3}]
       - id: overreach
@@ -387,7 +387,7 @@ nodes:
         text: Both are half right. Keep the WTO and give poor countries equal weight in writing the rules.
         evidence: [{position: intl.institutions.reform-democratize, w: 3}]
       - id: bloc
-        text: Both miss the alternative. The South should build its own trade bloc and stop asking Geneva.
+        text: Both miss the alternative. Poor countries should build its own trade bloc and stop asking Geneva.
         evidence: [{position: intl.institutions.build-alternatives, w: 3}]
       - id: nobody
         text: Both miss the real issue. Nobody in Geneva should tell India how to feed its people.
@@ -427,7 +427,7 @@ nodes:
         text: The list itself is the problem. Two and four are how the creditors collect.
         evidence: [{position: intl.institutions.creditor-instruments, w: 3}]
       - id: south
-        text: Let the South's own development banks do the first. Skip the rest.
+        text: Let poor countries' own development banks do the first. Skip the rest.
         evidence: [{position: intl.institutions.build-alternatives, w: 3}]
 
   # ---------------- intl.sanctions ----------------
@@ -466,17 +466,17 @@ nodes:
   - id: probe.intl.sanctions.tehran-madrid
     type: voices
     title: Pharmacist and exile
-    text: A pharmacist in Tehran and a Venezuelan exile in Madrid are asked the same question on a podcast. Do sanctions work? Who is right?
+    text: A pharmacist in Tehran and a Venezuelan exile in Madrid are asked the same question by a news site. Do sanctions work? Who is right?
     voices:
       - {name: "Reza, a pharmacist in Tehran", says: "Sanctions don't touch the generals. They touch my insulin shipments, because no bank will handle the payment."}
-      - {name: "Marta, a Venezuelan exile in Madrid", says: "Sanctions are the only pressure on the people who stole our elections. Lift them and you reward the thieves."}
+      - {name: "Daniela, a Venezuelan exile in Madrid", says: "Sanctions are the only pressure on the people who stole our elections. Lift them and you reward the thieves."}
     why: This asks when you think sanctions are legitimate, through two people who live with them.
     options:
       - id: reza
         text: Reza. Sanctions are a siege on a whole people.
         evidence: [{position: intl.sanctions.economic-war, w: 3}]
       - id: marta
-        text: Marta. Without them the only options are war or nothing.
+        text: Daniela. Without them the only options are war or nothing.
         evidence: [{position: intl.sanctions.legitimate-tool, w: 3}]
       - id: target
         text: Both are right. Go after the officials and their money, and leave the insulin alone.

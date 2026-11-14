@@ -115,7 +115,7 @@ nodes:
         text: Workers' parties, liberals and the middle classes together, to defend basic rights from the real danger.
         evidence: [{position: alliances.policy.popular-front, w: 3}]
       - id: alone
-        text: No one. Alliances with reformist leaders always sell out the base. Stay independent.
+        text: No one. Deals with cautious party leaders always sell out the members. Stay independent.
         evidence: [{position: alliances.policy.class-against-class, w: 3}]
       - id: national
         text: Workers, farmers and local business owners, together against the foreign banks and their friends here.
@@ -158,7 +158,7 @@ nodes:
         text: With the landless laborers and the poor of every region, whatever their party.
         evidence: [{position: alliances.policy.rainbow-coalition, w: 3}]
       - id: national
-        text: With whoever would unite workers, peasants and national business against the foreign mining and power companies.
+        text: With whoever would unite workers, peasants and local business against the foreign mining and power companies.
         evidence: [{position: alliances.policy.national-front, w: 3}]
 
   - id: probe.alliances.policy.union-hall
@@ -197,7 +197,7 @@ nodes:
         cause: culture
         evidence: [{position: alliances.policy.fusion-of-the-right, w: 3}]
       - id: national
-        text: Both miss it. Unite workers and local owners against the corporations that moved the plants abroad.
+        text: Neither. Unite workers and local owners against the corporations that moved the plants abroad.
         cause: interests
         evidence: [{position: alliances.policy.national-front, w: 2}]
 
@@ -376,9 +376,9 @@ nodes:
 
   - id: probe.change.tempo.organizers
     type: voices
-    title: Two organizers
+    title: Two leaders
     text: >
-      Two organizers of a landless farmworkers' movement in Brazil argue in a tent at an occupied estate.
+      Two leaders of a landless farmworkers' movement in Brazil argue in a tent at an occupied estate.
       Who's right?
     voices:
       - {name: Raimunda, says: "The government is weak, the courts are split, the press is distracted. Occupy twenty estates this month. This chance won't come again."}
@@ -394,7 +394,7 @@ nodes:
         cause: structures
         evidence: [{position: change.tempo.protracted-struggle, w: 3}]
       - id: law
-        text: Neither. Win land reform law step by step, one law at a time.
+        text: Neither. Win land reform through the law, one bill at a time.
         cause: structures
         evidence: [{position: change.tempo.inevitability-of-gradualness, w: 3}]
       - id: organic
@@ -430,7 +430,7 @@ nodes:
         text: Break up the old state and build a new one from workers' councils.
         evidence: [{position: state.relation.smash-and-replace, w: 3}]
       - id: strong
-        text: Take power and build a strong state. It can wither once our enemies are gone, not before.
+        text: Take power and build a strong state. It can fade away once our enemies are gone, not before.
         evidence: [{position: state.relation.strengthen-then-wither, w: 3}]
       - id: abolish
         text: Abolish it outright. Free federations of communes, and no new state in between.
@@ -442,7 +442,7 @@ nodes:
         text: Withdraw into communities of faith and virtue, and let the hostile mainstream go its way.
         evidence: [{position: state.relation.parallel-polis, w: 3}]
       - id: markets
-        text: Exit through markets, new currencies and new jurisdictions it can't reach.
+        text: Exit through markets, new currencies and places it can't reach.
         evidence: [{position: state.relation.market-exit, w: 3}]
       - id: restore
         text: Take it back from the people who hijacked it and restore it to the nation.
@@ -470,10 +470,10 @@ nodes:
         text: A revolution under that much pressure needs a strong state of its own before anything else.
         evidence: [{position: state.relation.strengthen-then-wither, w: 3}]
       - id: abolish
-        text: Any state, old or new, would have crushed the workers' cordones in the end. Abolish it.
+        text: Any state, old or new, would have crushed the workers' factory committees in the end. Abolish it.
         evidence: [{position: state.relation.abolish-at-once, w: 3}]
       - id: build
-        text: Don't bet on the state at all. Build autonomy in the factories and towns beside it.
+        text: Don't bet on the state at all. Build self-rule in the factories and towns beside it.
         evidence: [{position: state.relation.exit-and-build, w: 3}]
       - id: restore
         text: The state had been hijacked by a faction. The task was to restore it to its proper role.
@@ -500,7 +500,7 @@ nodes:
     why: This asks what you think should be done with the existing state.
     options:
       - id: ernesto
-        text: Ernesto. Build autonomy beside the state.
+        text: Ernesto. Build our own beside the state.
         cause: structures
         evidence: [{position: state.relation.exit-and-build, w: 3}]
       - id: lupita
@@ -528,7 +528,7 @@ nodes:
         cause: individuals
         evidence: [{position: state.relation.restore, w: 3}]
       - id: shrink
-        text: Both miss it. Shrink the state so there's less for anyone to fight over.
+        text: Neither. Shrink the state so there's less for anyone to fight over.
         cause: structures
         evidence:
           - {position: state.relation.shrink, w: 3}

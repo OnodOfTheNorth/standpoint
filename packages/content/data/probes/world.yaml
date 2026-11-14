@@ -11,11 +11,11 @@ nodes:
     why: This asks what you think imperialism is, if it is anything at all.
     options:
       - id: monopoly
-        text: Giant firms and banks that outgrew their home markets and now send capital wherever returns are highest.
+        text: Giant firms and banks that outgrew their home markets and now invest wherever returns are highest.
         cause: structures
         evidence: [{position: imperialism.nature.monopoly-stage, w: 3}]
       - id: pump
-        text: A pump. Value made here on low wages ends up as profit and cheap wire in the rich countries.
+        text: A pump. Work done here on low wages ends up as profit and cheap wire in the rich countries.
         cause: structures
         evidence: [{position: imperialism.nature.unequal-exchange-drain, w: 3}]
       - id: contest
@@ -130,7 +130,7 @@ nodes:
     title: Why Malawi
     text: >
       Malawi. Most families farm a hectare or less. Tobacco is the main export, sold at auction at prices set
-      by a few foreign buyers. Under British rule it was run as a labor reserve for the mines of Rhodesia and
+      by a few foreign buyers. Under British rule it was run as a pool of cheap labor for the mines of Rhodesia and
       South Africa. It has no coast. Ask ten people why it is one of the poorest countries on earth. What
       do you say?
     why: This asks why you think poor countries are poor, and what kind of cause you reach for.
@@ -295,7 +295,7 @@ nodes:
         cause: structures
         evidence: [{position: labor.aristocracy.shares-but-exploited, w: 3}]
       - id: whole
-        text: Part of the Melbourne wage is paid out of Dhaka. The whole gap is the drain.
+        text: Part of the Melbourne wage is paid out of Dhaka. The whole gap is wealth flowing one way.
         cause: structures
         evidence: [{position: labor.aristocracy.whole-core-bought, w: 3}]
       - id: top
@@ -334,7 +334,7 @@ nodes:
         text: Down to the cleaner. Everyone in the rich country gains something, and all but the shareholder are still exploited.
         evidence: [{position: labor.aristocracy.shares-but-exploited, w: 3}]
       - id: all-core
-        text: Down to the cleaner, plainly. The whole working class of the rich countries is paid out of the drain.
+        text: Down to the cleaner, plainly. The whole working class of the rich countries is paid partly out of the poor ones.
         evidence: [{position: labor.aristocracy.whole-core-bought, w: 3}]
       - id: foreman
         text: The foreman is the clearest case. In a settler country, race made a whole layer of workers into partners.
@@ -411,7 +411,7 @@ nodes:
         cause: structures
         evidence: [{position: comprador.nature.transnational-fraction, w: 3}]
       - id: ally
-        text: There are Nigerian industrialists trying to refine at home against the importers and the foreign majors. Back them.
+        text: There are Nigerian industrialists trying to refine at home against the importers and the foreign oil giants. Back them.
         cause: interests
         evidence: [{position: comprador.nature.national-bourgeoisie-ally, w: 3}]
       - id: capitalism
@@ -426,18 +426,18 @@ nodes:
   - id: probe.comprador.nature.nairobi-voices
     type: voices
     title: Organizer and owner
-    text: Two people on a Nairobi panel about who really runs Kenya. Who has it right?
+    text: Two people on a Nairobi talk show argue about who really runs Kenya. Who has it right?
     voices:
-      - {name: "Wanjiru, a union organizer", says: "Our rulers are middlemen. They sell the tea, the ports, the debt, and take a cut every time."}
+      - {name: "Akinyi, a union organizer", says: "Our rulers are middlemen. They sell the tea, the ports, the debt, and take a cut every time."}
       - {name: "David, who owns a furniture factory", says: "Don't lump me in with them. Cheap imports and foreign loans are killing my business too."}
     why: This asks how you see the ruling class of a poor country, and whether any part of it stands with the nation.
     options:
       - id: wanjiru
-        text: Wanjiru. The rulers broker the country to foreign capital and live on the commission.
+        text: Akinyi. The rulers sell the country to foreign companies and live on the commission.
         cause: interests
         evidence: [{position: comprador.nature.broker-class, w: 3}]
       - id: david-ally
-        text: David. Owners like him are squeezed by foreign capital too, and can be allies against it.
+        text: David. Owners like him are squeezed by foreign companies and lenders too, and can be allies against it.
         cause: interests
         evidence: [{position: comprador.nature.national-bourgeoisie-ally, w: 3}]
       - id: david-capitalist
@@ -453,7 +453,7 @@ nodes:
         cause: individuals
         evidence: [{position: comprador.nature.kleptocratic-elites, w: 3}]
       - id: dubai
-        text: Both miss that David's investors are in Dubai and London. Foreign and national capital are one thing now.
+        text: Both miss that David's investors are in Dubai and London. Foreign and local money are one thing now.
         cause: structures
         evidence: [{position: comprador.nature.transnational-fraction, w: 3}]
       - id: values
@@ -474,7 +474,7 @@ nodes:
         text: The ore exporters and their foreign buyers will fight. They are the real ruling class here.
         evidence: [{position: comprador.nature.broker-class, w: 3}]
       - id: industrialists
-        text: Domestic industrialists will back you. Make them your ally.
+        text: Local factory owners will back you. Make them your ally.
         evidence: [{position: comprador.nature.national-bourgeoisie-ally, w: 3}]
       - id: transnational
         text: The smelters will be foreign-financed with Jakarta partners. One class either way. Nobody is on the nation's side.
@@ -489,5 +489,5 @@ nodes:
         text: Indonesian firms will build smelters because it pays. That's capitalism doing its job.
         evidence: [{position: comprador.nature.independent-capitalists, w: 3}]
       - id: technocrats
-        text: Western-funded think tanks and Jakarta's foreign-trained technocrats will howl. They never liked national industry.
+        text: Western-funded think tanks and Jakarta's foreign-trained economists will howl. They never liked national industry.
         evidence: [{position: comprador.nature.sellout-elites, w: 3}]

@@ -12,7 +12,7 @@ nodes:
         text: The people who do the work. When they act together, everything stops and everything can change.
         evidence: [{position: change.agent.workers-as-class, w: 3}]
       - id: peasants
-        text: The rural poor and the dominated nations of the South. That's where most of humanity is.
+        text: The rural poor and the poor nations. That's where most of humanity is.
         evidence: [{position: change.agent.peasants-and-oppressed-nations, w: 3}]
       - id: people
         text: Ordinary people, united against the little group at the top.
@@ -52,7 +52,7 @@ nodes:
         cause: individuals
         evidence: [{position: change.agent.leaders-and-elites, w: 3}]
       - id: people
-        text: Both miss it. The whole people rose against a small ruling group.
+        text: Neither. The whole people rose against a small ruling group.
         cause: interests
         evidence: [{position: change.agent.the-people-against-the-elite, w: 3}]
       - id: many
@@ -64,7 +64,7 @@ nodes:
         cause: divine
         evidence: [{position: change.agent.the-faithful, w: 3}]
       - id: nation
-        text: Both miss it. A nation found itself, Black and white, and chose to become one.
+        text: Neither. A nation found itself, Black and white, and chose to become one.
         cause: culture
         evidence: [{position: change.agent.the-nation, w: 3}]
       - id: south
@@ -91,7 +91,7 @@ nodes:
           text: Organized workers.
           evidence: [{position: change.agent.workers-as-class, w: 2}]
         - id: south
-          text: Peasants and the peoples of the global South.
+          text: Peasants and the peoples of the poor countries.
           evidence: [{position: change.agent.peasants-and-oppressed-nations, w: 2}]
         - id: people
           text: Ordinary people against the elite.
@@ -166,23 +166,23 @@ nodes:
       of them, two neighbors argue about what to build. Who's right?
     voices:
       - {name: Graciela, says: "No more parties. This assembly, every corner like it, linked up, nobody leading. We decide everything here."}
-      - {name: Raúl, says: "Assemblies fade in a year. We need a party that lasts, with a program, organizers and discipline, or the old bosses come back."}
+      - {name: Esteban, says: "Assemblies fade in a year. We need a party that lasts, with a program, organizers and discipline, or the old bosses come back."}
     why: This asks what kind of organization you think change needs.
     options:
       - id: graciela
-        text: Graciela. Horizontal assemblies, linked together.
+        text: Graciela. Open assemblies, linked together, nobody leading.
         cause: structures
         evidence: [{position: org.form.horizontal-movement, w: 3}]
       - id: raul
-        text: Raúl. A disciplined party with a program.
+        text: Esteban. A disciplined party with a program.
         cause: structures
         evidence: [{position: org.form.vanguard-party, w: 3}]
       - id: mass
-        text: Raúl, but a big party rooted in daily life, not a small disciplined one.
+        text: Esteban, but a big party rooted in daily life, not a small disciplined one.
         cause: structures
         evidence: [{position: org.form.mass-party, w: 3}]
       - id: broad
-        text: Raúl, but broad. A party that holds many views and can win a majority.
+        text: Esteban, but broad. A party that holds many views and can win a majority.
         cause: structures
         evidence: [{position: org.form.broad-party, w: 3}]
       - id: councils
@@ -198,7 +198,7 @@ nodes:
         cause: culture
         evidence: [{position: org.form.church-and-community, w: 3}]
       - id: firm
-        text: Both miss it. What saved people was the barter clubs and small businesses they started.
+        text: Neither. What saved people was the barter clubs and small businesses they started.
         cause: individuals
         evidence: [{position: org.form.firm-and-market, w: 3}]
       - id: alone
@@ -237,7 +237,7 @@ nodes:
           text: A network building workers' councils in workplaces.
           evidence: [{position: org.form.workers-councils, w: 2}]
         - id: assemblies
-          text: Horizontal movements and neighborhood assemblies.
+          text: Leaderless movements and neighborhood assemblies.
           evidence: [{position: org.form.horizontal-movement, w: 2}]
         - id: church
           text: My church and local associations.
@@ -266,7 +266,7 @@ nodes:
         text: It proves the road works. Step by step, through elections and unions, toward socialism.
         evidence: [{position: reform.revolution.reform-is-the-road, w: 3}]
       - id: revolution
-        text: It proves the limit. The moment reform touched ownership, capital struck back. Revolution is necessary.
+        text: It proves the limit. The moment reform touched ownership, the owners struck back. Revolution is necessary.
         evidence: [{position: reform.revolution.revolution-necessary, w: 3}]
       - id: funds
         text: The funds were the right idea. Reforms that shift power toward a break, not just more welfare.
@@ -342,7 +342,7 @@ nodes:
         cause: structures
         evidence: [{position: reform.revolution.non-reformist-reforms, w: 3}]
       - id: conserve
-        text: Both miss it. Reform is good when it keeps society from tearing itself apart.
+        text: Neither. Reform is good when it keeps society from tearing itself apart.
         cause: culture
         evidence: [{position: reform.revolution.change-to-conserve, w: 3}]
       - id: restore
@@ -449,7 +449,7 @@ nodes:
         cause: structures
         evidence: [{position: elections.role.organize-instead, w: 3}]
       - id: paola-boycott
-        text: Paola, further. Voting itself legitimizes them. Refuse on principle.
+        text: Paola, further. Voting itself props them up. Refuse on principle.
         cause: interests
         evidence: [{position: elections.role.boycott-principle, w: 3}]
       - id: duty
@@ -469,7 +469,7 @@ nodes:
         cause: interests
         evidence: [{position: elections.role.tribune, w: 3}]
       - id: plebiscite
-        text: Both miss it. Elect a strong leader with a huge mandate, and let him clean house.
+        text: Neither. Elect a strong leader with a huge mandate, and let him clean house.
         cause: individuals
         evidence: [{position: elections.role.plebiscite, w: 3}]
 
