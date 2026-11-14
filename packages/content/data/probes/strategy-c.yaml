@@ -1,0 +1,505 @@
+nodes:
+  # ---------------- change.agent ----------------
+  - id: probe.change.agent.microphone
+    type: scene
+    title: The microphone
+    text: >
+      A radio reporter stops you outside the market and pushes a microphone at you. "Everyone says this
+      country needs to change. Who's actually going to change it?" You have ten seconds.
+    why: This asks who you think makes change happen.
+    options:
+      - id: workers
+        text: The people who do the work. When they act together, everything stops and everything can change.
+        evidence: [{position: change.agent.workers-as-class, w: 3}]
+      - id: peasants
+        text: The rural poor and the dominated nations of the South. That's where most of humanity is.
+        evidence: [{position: change.agent.peasants-and-oppressed-nations, w: 3}]
+      - id: people
+        text: Ordinary people, united against the little group at the top.
+        evidence: [{position: change.agent.the-people-against-the-elite, w: 3}]
+      - id: builders
+        text: People who build things. Entrepreneurs and inventors change more than any movement.
+        evidence: [{position: change.agent.entrepreneurs-and-individuals, w: 3}]
+      - id: leaders
+        text: Capable leaders. Crowds don't run countries.
+        evidence: [{position: change.agent.leaders-and-elites, w: 3}]
+      - id: faithful
+        text: Believers. It starts in people's souls, and grows from the church outward.
+        evidence: [{position: change.agent.the-faithful, w: 3}]
+      - id: many
+        text: Women, workers, minorities, indigenous people, all of them together, nobody in charge.
+        evidence: [{position: change.agent.many-oppressed, w: 3}]
+      - id: nation
+        text: The whole nation, pulling together and leaving class quarrels aside.
+        evidence: [{position: change.agent.the-nation, w: 3}]
+
+  - id: probe.change.agent.who-ended-it
+    type: voices
+    title: Who ended it?
+    text: >
+      Two grandparents in Soweto argue at a birthday party about who really ended apartheid. Who's right?
+    voices:
+      - {name: Gogo Nomsa, says: "The miners and factory workers. When the unions struck in the eighties, the money men in Johannesburg went to Lusaka to talk."}
+      - {name: Mkhulu Themba, says: "Mandela. One man in a cell for twenty-seven years, and the whole world watching him. Without him there would have been a bloodbath."}
+    why: This asks who you think makes change, by how you explain a change you know.
+    options:
+      - id: nomsa
+        text: Nomsa. The workers, acting as a class.
+        cause: structures
+        evidence: [{position: change.agent.workers-as-class, w: 3}]
+      - id: themba
+        text: Themba. Great leaders make the difference.
+        cause: individuals
+        evidence: [{position: change.agent.leaders-and-elites, w: 3}]
+      - id: people
+        text: Both miss it. The whole people rose against a small ruling group.
+        cause: interests
+        evidence: [{position: change.agent.the-people-against-the-elite, w: 3}]
+      - id: many
+        text: Both miss it. Students, churches, women's groups, unions, townships, all together.
+        cause: structures
+        evidence: [{position: change.agent.many-oppressed, w: 3}]
+      - id: faith
+        text: Both miss the churches. Faith kept people going when everything else was banned.
+        cause: divine
+        evidence: [{position: change.agent.the-faithful, w: 3}]
+      - id: nation
+        text: Both miss it. A nation found itself, Black and white, and chose to become one.
+        cause: culture
+        evidence: [{position: change.agent.the-nation, w: 3}]
+      - id: south
+        text: Both miss Angola and the frontline states. Africa's liberation movements broke the army's confidence.
+        cause: structures
+        evidence: [{position: change.agent.peasants-and-oppressed-nations, w: 3}]
+      - id: market
+        text: Both miss the businessmen. Sanctions and a stalled economy made apartheid bad for business.
+        cause: interests
+        evidence: [{position: change.agent.entrepreneurs-and-individuals, w: 2}]
+
+  - id: probe.change.agent.hopes
+    type: allocation
+    title: Where your hope goes
+    text: >
+      Forget what you wish were true. Looking at the next thirty years, who do you actually expect to change
+      the world most? You have ten points.
+    why: This asks who you think makes change, when you have to bet.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: workers
+          text: Organized workers.
+          evidence: [{position: change.agent.workers-as-class, w: 2}]
+        - id: south
+          text: Peasants and the peoples of the global South.
+          evidence: [{position: change.agent.peasants-and-oppressed-nations, w: 2}]
+        - id: people
+          text: Ordinary people against the elite.
+          evidence: [{position: change.agent.the-people-against-the-elite, w: 2}]
+        - id: builders
+          text: Entrepreneurs, engineers and inventors.
+          evidence: [{position: change.agent.entrepreneurs-and-individuals, w: 2}]
+        - id: leaders
+          text: Capable leaders and well-trained officials.
+          evidence: [{position: change.agent.leaders-and-elites, w: 2}]
+        - id: faithful
+          text: Communities of faith.
+          evidence: [{position: change.agent.the-faithful, w: 2}]
+        - id: many
+          text: Coalitions of oppressed groups.
+          evidence: [{position: change.agent.many-oppressed, w: 2}]
+        - id: nation
+          text: Nations acting as one.
+          evidence: [{position: change.agent.the-nation, w: 2}]
+    options:
+      - id: done
+        text: Done
+
+  # ---------------- org.form ----------------
+  - id: probe.org.form.tuesdays
+    type: scene
+    title: Your Tuesday evenings
+    text: >
+      You've decided to stop complaining and do something. You have Tuesday evenings free and a little money.
+      Where do they go?
+    why: This asks through what kind of organization you think change happens.
+    options:
+      - id: vanguard
+        text: A disciplined party of committed revolutionaries, with a clear line and real commitments.
+        evidence: [{position: org.form.vanguard-party, w: 3}]
+      - id: mass
+        text: A big workers' party with its own papers, clubs, sports teams and summer camps. A world of its own.
+        evidence: [{position: org.form.mass-party, w: 3}]
+      - id: broad
+        text: The big tent party that can actually win, arguments and all.
+        evidence: [{position: org.form.broad-party, w: 3}]
+      - id: union
+        text: The union. It fights the boss now and could run the place later.
+        evidence: [{position: org.form.union-syndicalist, w: 3}]
+      - id: councils
+        text: Building a workers' council at my job, elected on the floor, to take decisions out of management's hands.
+        evidence: [{position: org.form.workers-councils, w: 3}]
+      - id: anarchist
+        text: An anarchist federation with a shared program, working inside wider movements.
+        evidence: [{position: org.form.specific-anarchist-organization, w: 3}]
+      - id: affinity
+        text: A small group of friends I trust completely. No leaders, no membership lists.
+        evidence: [{position: org.form.affinity-groups, w: 3}]
+      - id: assemblies
+        text: The open neighborhood assembly, where anyone can come and nobody is in charge.
+        evidence: [{position: org.form.horizontal-movement, w: 3}]
+      - id: church
+        text: My parish, the residents' association, the families on my street.
+        evidence: [{position: org.form.church-and-community, w: 3}]
+      - id: firm
+        text: Starting a business that solves a real problem. People choose it or they don't.
+        evidence: [{position: org.form.firm-and-market, w: 3}]
+      - id: alone
+        text: Nowhere. I'll act on my own conscience. Groups end up serving themselves.
+        evidence: [{position: org.form.no-organization, w: 3}]
+
+  - id: probe.org.form.buenos-aires
+    type: voices
+    title: After the crash
+    text: >
+      Buenos Aires, 2002. The economy has collapsed, and neighborhood assemblies meet on every corner. In one
+      of them, two neighbors argue about what to build. Who's right?
+    voices:
+      - {name: Graciela, says: "No more parties. This assembly, every corner like it, linked up, nobody leading. We decide everything here."}
+      - {name: Raúl, says: "Assemblies fade in a year. We need a party that lasts, with a program, organizers and discipline, or the old bosses come back."}
+    why: This asks what kind of organization you think change needs.
+    options:
+      - id: graciela
+        text: Graciela. Horizontal assemblies, linked together.
+        cause: structures
+        evidence: [{position: org.form.horizontal-movement, w: 3}]
+      - id: raul
+        text: Raúl. A disciplined party with a program.
+        cause: structures
+        evidence: [{position: org.form.vanguard-party, w: 3}]
+      - id: mass
+        text: Raúl, but a big party rooted in daily life, not a small disciplined one.
+        cause: structures
+        evidence: [{position: org.form.mass-party, w: 3}]
+      - id: broad
+        text: Raúl, but broad. A party that holds many views and can win a majority.
+        cause: structures
+        evidence: [{position: org.form.broad-party, w: 3}]
+      - id: councils
+        text: Both miss the occupied factories. Workers' councils at the workplace are where power is.
+        cause: structures
+        evidence: [{position: org.form.workers-councils, w: 3}]
+      - id: union
+        text: Both miss it. The unions are the organization that lasts and fights.
+        cause: structures
+        evidence: [{position: org.form.union-syndicalist, w: 3}]
+      - id: parish
+        text: Both miss the parish soup kitchens. The church and families held this city together.
+        cause: culture
+        evidence: [{position: org.form.church-and-community, w: 3}]
+      - id: firm
+        text: Both miss it. What saved people was the barter clubs and small businesses they started.
+        cause: individuals
+        evidence: [{position: org.form.firm-and-market, w: 3}]
+      - id: alone
+        text: Both will end up arguing about procedure. Look after your family and act on your conscience.
+        cause: individuals
+        evidence: [{position: org.form.no-organization, w: 3}]
+      - id: anarchist
+        text: Graciela, with a core. An anarchist organization with a shared line, working inside the assemblies.
+        cause: structures
+        evidence: [{position: org.form.specific-anarchist-organization, w: 3}]
+
+  - id: probe.org.form.dues
+    type: allocation
+    title: Your dues
+    text: >
+      You can afford fifty dollars a month for politics, and you want to put it where it changes most. Divide
+      ten points.
+    why: This asks through what kind of organization you think change comes.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: vanguard
+          text: A disciplined revolutionary party.
+          evidence: [{position: org.form.vanguard-party, w: 2}]
+        - id: mass
+          text: A mass workers' party with its own press and clubs.
+          evidence: [{position: org.form.mass-party, w: 2}]
+        - id: broad
+          text: A broad party that can win elections.
+          evidence: [{position: org.form.broad-party, w: 2}]
+        - id: union
+          text: My union's strike fund.
+          evidence: [{position: org.form.union-syndicalist, w: 2}]
+        - id: councils
+          text: A network building workers' councils in workplaces.
+          evidence: [{position: org.form.workers-councils, w: 2}]
+        - id: assemblies
+          text: Horizontal movements and neighborhood assemblies.
+          evidence: [{position: org.form.horizontal-movement, w: 2}]
+        - id: church
+          text: My church and local associations.
+          evidence: [{position: org.form.church-and-community, w: 2}]
+        - id: firm
+          text: Investing in a startup or my own business.
+          evidence: [{position: org.form.firm-and-market, w: 2}]
+        - id: keep
+          text: Keeping it. My conscience doesn't need a membership card.
+          evidence: [{position: org.form.no-organization, w: 2}]
+    options:
+      - id: done
+        text: Done
+
+  # ---------------- reform.revolution ----------------
+  - id: probe.reform.revolution.sweden
+    type: verdict
+    title: Sweden, 1932 to 1976
+    text: >
+      Sweden. The Social Democrats govern for forty-four years in a row, building one of the most equal
+      societies on earth through elections and unions. In 1976, a plan to transfer company ownership to
+      union-run funds splits the country, and they lose power. What do you make of it?
+    why: This asks whether you think reform or revolution is the road, and to where.
+    options:
+      - id: road
+        text: It proves the road works. Step by step, through elections and unions, toward socialism.
+        evidence: [{position: reform.revolution.reform-is-the-road, w: 3}]
+      - id: revolution
+        text: It proves the limit. The moment reform touched ownership, capital struck back. Revolution is necessary.
+        evidence: [{position: reform.revolution.revolution-necessary, w: 3}]
+      - id: funds
+        text: The funds were the right idea. Reforms that shift power toward a break, not just more welfare.
+        evidence: [{position: reform.revolution.non-reformist-reforms, w: 3}]
+      - id: piecemeal
+        text: The forty years were good; the grand plan at the end was the mistake. Improve things, skip the goal.
+        evidence: [{position: reform.revolution.piecemeal-improvement, w: 3}]
+      - id: conserve
+        text: It worked because it conserved. Wise reform kept the monarchy, the firms and social peace intact.
+        evidence: [{position: reform.revolution.change-to-conserve, w: 3}]
+      - id: restore
+        text: It dissolved family, church and nation into the welfare office. That needs undoing, not praising.
+        evidence: [{position: reform.revolution.restoration, w: 3}]
+      - id: national
+        text: The "people's home" was the right idea, a nation above class. It should have broken with both liberals and Marxists.
+        evidence: [{position: reform.revolution.national-revolution, w: 3}]
+
+  - id: probe.reform.revolution.manifesto
+    type: scene
+    title: The manifesto
+    text: >
+      You're on the committee writing your movement's founding manifesto. Everything is agreed except one
+      sentence about how you'll get what you want. Which version do you vote for?
+    why: This asks whether you think change comes by reform, revolution, or something else.
+    options:
+      - id: road
+        text: '"Through elections and unions, one reform at a time, we will build a fair economy."'
+        evidence: [{position: reform.revolution.reform-is-the-road, w: 3}]
+      - id: revolution
+        text: '"No reform will change who rules. Only a revolution will."'
+        evidence: [{position: reform.revolution.revolution-necessary, w: 3}]
+      - id: build
+        text: '"Every reform we win must build our power toward the break that is coming."'
+        evidence: [{position: reform.revolution.non-reformist-reforms, w: 3}]
+      - id: practical
+        text: '"We will fix what is broken, one problem at a time, with no grand plan."'
+        evidence: [{position: reform.revolution.piecemeal-improvement, w: 3}]
+      - id: conserve
+        text: '"We reform in order to preserve what is good in our inheritance."'
+        evidence: [{position: reform.revolution.change-to-conserve, w: 3}]
+      - id: restore
+        text: '"We will undo the false revolutions of the modern age and restore the true order."'
+        evidence: [{position: reform.revolution.restoration, w: 3}]
+      - id: national
+        text: '"A national revolution, against both liberal decay and Marxist class war, to remake our people."'
+        evidence: [{position: reform.revolution.national-revolution, w: 3}]
+
+  - id: probe.reform.revolution.uncle
+    type: voices
+    title: The uncle
+    text: >
+      A family lunch in Santiago. Your uncle was jailed after the 1973 coup; your cousin works for a center-left
+      minister. They're arguing again. Who's right?
+    voices:
+      - {name: "Your uncle", says: "Allende tried reform and they bombed the palace. They'll never let you vote away their property. Only a revolution changes who rules."}
+      - {name: "Your cousin", says: "We cut poverty by two-thirds since 1990, one law at a time. That's what change looks like, not your barricades."}
+    why: This asks whether you think reform or revolution is the road.
+    options:
+      - id: uncle
+        text: The uncle. Revolution is necessary.
+        cause: interests
+        evidence: [{position: reform.revolution.revolution-necessary, w: 3}]
+      - id: cousin-road
+        text: The cousin. Reform, step by step, is the road to a fair economy.
+        cause: structures
+        evidence: [{position: reform.revolution.reform-is-the-road, w: 3}]
+      - id: cousin-piecemeal
+        text: The cousin, but drop the talk of socialism. Just keep fixing things.
+        cause: structures
+        evidence: [{position: reform.revolution.piecemeal-improvement, w: 3}]
+      - id: both
+        text: Both half right. Win reforms that build the power to change who rules.
+        cause: structures
+        evidence: [{position: reform.revolution.non-reformist-reforms, w: 3}]
+      - id: conserve
+        text: Both miss it. Reform is good when it keeps society from tearing itself apart.
+        cause: culture
+        evidence: [{position: reform.revolution.change-to-conserve, w: 3}]
+      - id: restore
+        text: Both miss it. What Chile lost was faith and family, and no reform or revolution restores that. Restoration does.
+        cause: divine
+        evidence: [{position: reform.revolution.restoration, w: 3}]
+      - id: national
+        text: Both are stuck in left and right. The nation needs its own revolution against both.
+        cause: culture
+        evidence: [{position: reform.revolution.national-revolution, w: 3}]
+
+  # ---------------- elections.role ----------------
+  - id: probe.elections.role.polling-station
+    type: scene
+    title: The polling station
+    text: >
+      Election day in Johannesburg. The queue at the school hall is two hours long. None of the parties
+      excites you. Your neighbor is sitting it out on principle; your aunt has been in line since six. What do
+      you do, and why?
+    why: This asks what you think elections are for.
+    options:
+      - id: main
+        text: Vote for the party with the best program. This is how the country gets changed.
+        evidence: [{position: elections.role.main-road, w: 3}]
+      - id: lesser
+        text: Vote for the least bad, to keep the worst out.
+        evidence: [{position: elections.role.lesser-evil, w: 3}]
+      - id: tribune
+        text: Vote for the small radical party. They won't govern, but they'll be heard in parliament.
+        evidence: [{position: elections.role.tribune, w: 3}]
+      - id: boycott
+        text: Sit it out on principle, like the neighbor. Voting gives the whole thing a legitimacy it doesn't deserve.
+        evidence: [{position: elections.role.boycott-principle, w: 3}]
+      - id: organize
+        text: Vote quickly if you like, then go to the tenants' meeting. That's where things actually change.
+        evidence: [{position: elections.role.organize-instead, w: 3}]
+      - id: remove
+        text: Vote to throw the incumbents out. Being able to do that without a gun is the whole point.
+        evidence: [{position: elections.role.choose-and-remove-rulers, w: 3}]
+      - id: duty
+        text: Queue with your aunt. People died for this vote; you owe it, whatever the choice.
+        evidence: [{position: elections.role.civic-duty, w: 3}]
+      - id: leader
+        text: Vote for the leader who can actually get things done, and give him a big enough majority to do it.
+        evidence: [{position: elections.role.plebiscite, w: 3}]
+
+  - id: probe.elections.role.why-elections
+    type: explanation
+    title: Why elections?
+    text: >
+      Nearly every government on earth now holds elections of some kind, including many that never lose them.
+      What are elections actually for?
+    why: This asks what you think elections do.
+    options:
+      - id: main
+        text: To let the majority change how society runs. They're the main road.
+        cause: structures
+        evidence: [{position: elections.role.main-road, w: 3}]
+      - id: remove
+        text: To let people remove rulers without bloodshed. That alone is worth everything.
+        cause: structures
+        evidence: [{position: elections.role.choose-and-remove-rulers, w: 3}]
+      - id: duty
+        text: To bind citizens to their country. Voting is a duty, like jury service.
+        cause: culture
+        evidence: [{position: elections.role.civic-duty, w: 3}]
+      - id: plebiscite
+        text: To give a leader the people's mandate to act for the nation over the heads of parties and courts.
+        cause: individuals
+        evidence: [{position: elections.role.plebiscite, w: 3}]
+      - id: legitimacy
+        text: To make people consent to a system run for the few. Refuse to take part.
+        cause: interests
+        evidence: [{position: elections.role.boycott-principle, w: 3}]
+      - id: platform
+        text: Mostly theater, but a stage. Use it to speak, not to govern.
+        cause: interests
+        evidence: [{position: elections.role.tribune, w: 3}]
+      - id: secondary
+        text: They register power built elsewhere. Build it in workplaces and neighborhoods first.
+        cause: structures
+        evidence: [{position: elections.role.organize-instead, w: 3}]
+      - id: harm
+        text: To pick who does less damage. That's about all.
+        cause: interests
+        evidence: [{position: elections.role.lesser-evil, w: 3}]
+
+  - id: probe.elections.role.sisters
+    type: voices
+    title: Two sisters
+    text: >
+      Mexico City, the night before a presidential election. Two sisters argue in the kitchen. Who's right?
+    voices:
+      - {name: Mariana, says: "I vote every time. Not because they're good, but because my vote is the only way to fire them."}
+      - {name: Paola, says: "I'm not voting. The cartels and the businessmen pick the candidates; we pick the costume. I'll be at the water committee."}
+    why: This asks what you think elections are for, and what else matters.
+    options:
+      - id: mariana
+        text: Mariana. Elections let you remove rulers peacefully.
+        cause: structures
+        evidence: [{position: elections.role.choose-and-remove-rulers, w: 3}]
+      - id: paola-organize
+        text: Paola. Real power is built in committees like hers, not at the ballot box.
+        cause: structures
+        evidence: [{position: elections.role.organize-instead, w: 3}]
+      - id: paola-boycott
+        text: Paola, further. Voting itself legitimizes them. Refuse on principle.
+        cause: interests
+        evidence: [{position: elections.role.boycott-principle, w: 3}]
+      - id: duty
+        text: Mariana, but for a simpler reason. It's a duty, full stop.
+        cause: culture
+        evidence: [{position: elections.role.civic-duty, w: 3}]
+      - id: lesser
+        text: Mariana, roughly. Vote for whoever does less harm.
+        cause: interests
+        evidence: [{position: elections.role.lesser-evil, w: 3}]
+      - id: main
+        text: Both too cynical. Win the election with a real program, and you change the country.
+        cause: structures
+        evidence: [{position: elections.role.main-road, w: 3}]
+      - id: tribune
+        text: Both miss it. Run your own candidate, to be heard, not to win.
+        cause: interests
+        evidence: [{position: elections.role.tribune, w: 3}]
+      - id: plebiscite
+        text: Both miss it. Elect a strong leader with a huge mandate, and let him clean house.
+        cause: individuals
+        evidence: [{position: elections.role.plebiscite, w: 3}]
+
+  # ---------------- allocation.mechanism ----------------
+  - id: probe.allocation.mechanism.bread-and-buses
+    type: scene
+    title: Bread and buses
+    text: >
+      A city of three million has to decide how to supply its bread, buses and housing for the next decade.
+      You're on the commission. Which system do you back?
+    why: This asks how you think production should be coordinated, by plan, market or something else.
+    options:
+      - id: market
+        text: Let firms compete and prices decide. Nobody can plan a city's breakfast better than its bakers and buyers.
+        evidence: [{position: allocation.mechanism.free-market, w: 3}]
+      - id: social
+        text: Competing firms, inside firm rules on wages, rents and safety, with a welfare floor.
+        evidence: [{position: allocation.mechanism.social-market, w: 3}]
+      - id: mixed
+        text: Private bakeries, public buses, and a city investment bank steering housing where it's needed.
+        evidence: [{position: allocation.mechanism.mixed-steered, w: 3}]
+      - id: central
+        text: A planning office sets output for bread, buses and housing from the city's needs, not profit.
+        evidence: [{position: allocation.mechanism.central-planning, w: 3}]
+      - id: market-socialism
+        text: Worker-owned and public firms competing in a market. No private owners, but prices still work.
+        evidence: [{position: allocation.mechanism.market-socialism, w: 3}]
+      - id: councils
+        text: Workers' and neighborhood councils propose and negotiate the plan from below, round after round.
+        evidence: [{position: allocation.mechanism.participatory-planning, w: 3}]
+      - id: free
+        text: Bread and buses free to all. Each gives what they can and takes what they need.
+        evidence: [{position: allocation.mechanism.free-access, w: 3}]

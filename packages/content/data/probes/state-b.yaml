@@ -1,0 +1,437 @@
+nodes:
+  # ---------------- equality.concept ----------------
+  - id: probe.equality.concept.how-far
+    type: line
+    title: Equal how far?
+    text: Going down this list, how far does a society have to go before you'd call it equal enough?
+    cases:
+      - The same laws for rich and poor
+      - Free, good schools for every child
+      - University places reserved for castes and groups long shut out
+      - A top tax rate of 70 percent to fund the poorest
+      - No private ownership of factories and land
+    why: This asks what kind of equality matters to you.
+    options:
+      - id: none
+        text: Not even the list. People are unequal by nature, and a society works best with ranks and the best at the top.
+        evidence:
+          - {position: equality.concept.natural-hierarchy, w: 3}
+          - {position: equality.concept.before-the-law, w: -1}
+      - id: one
+        text: The first. Equal rules for everyone; what people make of them is their business.
+        evidence: [{position: equality.concept.before-the-law, w: 3}]
+      - id: two
+        text: Through the second. A fair start, then let the best rise.
+        evidence: [{position: equality.concept.opportunity, w: 3}]
+      - id: three
+        text: Through the third. Equality has to be won between castes, races and sexes, not only between individuals.
+        evidence: [{position: equality.concept.group-substantive, w: 3}]
+      - id: four
+        text: Through the fourth, and only as far as the worst off keep gaining.
+        evidence: [{position: equality.concept.difference-principle, w: 3}]
+      - id: five
+        text: All five. While some own and others work for them, the rest is decoration.
+        evidence: [{position: equality.concept.classless, w: 3}]
+      - id: dignity
+        text: The list misses it. Everyone is equal before God; stations in life differ, and no one should go without.
+        evidence: [{position: equality.concept.equal-dignity, w: 3}]
+      - id: masters
+        text: The list misses it. What matters is that nobody can boss, humiliate or look down on anybody else.
+        evidence: [{position: equality.concept.relational, w: 3}]
+
+  - id: probe.equality.concept.quota
+    type: voices
+    title: The entrance exam
+    text: >
+      A public university in Salvador da Bahia reserves half its places for students from public schools,
+      with a share for Black and indigenous applicants. Two students argue in the canteen. Who's right?
+    voices:
+      - {name: Lucas, says: "Same exam, same rules, may the best win. Anything else is treating people unequally."}
+      - {name: Jéssica, says: "Three centuries of slavery don't vanish because the exam is the same. The quota is what equality looks like here."}
+    why: This asks what kind of equality you think justice requires.
+    options:
+      - id: lucas
+        text: Lucas. Equal rules, and nothing more.
+        cause: ideas
+        evidence: [{position: equality.concept.before-the-law, w: 3}]
+      - id: jessica
+        text: Jéssica. Equality between groups has to be built on purpose.
+        cause: structures
+        evidence: [{position: equality.concept.group-substantive, w: 3}]
+      - id: schools
+        text: Neither. Fix the public schools so the exam is a fair race, then let the best win it.
+        cause: structures
+        evidence: [{position: equality.concept.opportunity, w: 3}]
+      - id: poorest
+        text: Whichever rule does most for the poorest students. Judge it by them.
+        cause: interests
+        evidence: [{position: equality.concept.difference-principle, w: 3}]
+      - id: classless
+        text: Both are fighting over seats at a table someone else owns. The real split is between owners and workers.
+        cause: structures
+        evidence: [{position: equality.concept.classless, w: 3}]
+      - id: ranks
+        text: Both miss it. Not everyone is suited to university, and a society needs people in every station.
+        cause: nature
+        evidence: [{position: equality.concept.natural-hierarchy, w: 3}]
+      - id: dignity
+        text: Both miss it. Equal dignity matters more than equal seats, and a good society cares for those who don't get in.
+        cause: divine
+        evidence: [{position: equality.concept.equal-dignity, w: 3}]
+      - id: relational
+        text: Both miss it. The question is whether graduates go on to lord it over everyone else.
+        cause: structures
+        evidence: [{position: equality.concept.relational, w: 3}]
+
+  - id: probe.equality.concept.pay-scale
+    type: scene
+    title: The pay scale
+    text: >
+      You sit on the board of a 300-member cooperative in Kerala that makes coir mats and now runs a small
+      software unit. The engineers want triple the cleaners' pay. The members vote next week on a pay rule.
+      Which do you propose?
+    why: This asks what kind of equality you build when you have the power to set the rules.
+    options:
+      - id: same
+        text: Everyone the same, cleaners and engineers alike. Nobody's hour is worth more.
+        evidence:
+          - {position: equality.concept.classless, w: 2}
+          - {position: equality.concept.relational, w: 1}
+      - id: rules
+        text: Pay what each job fetches outside. Same rules for all; no special treatment.
+        evidence:
+          - {position: equality.concept.before-the-law, w: 2}
+          - {position: equality.concept.opportunity, w: 1}
+      - id: worst-off
+        text: Higher engineer pay only if it keeps the software unit alive and so raises the cleaners' pay too.
+        evidence: [{position: equality.concept.difference-principle, w: 3}]
+      - id: seats
+        text: A modest spread, and reserved board seats for Dalit and women members.
+        evidence: [{position: equality.concept.group-substantive, w: 3}]
+      - id: no-bosses
+        text: Pay can differ a little, but nobody gives orders without being elected and recallable.
+        evidence: [{position: equality.concept.relational, w: 3}]
+      - id: training
+        text: Free training for any member who wants to move up, then promote on merit.
+        evidence: [{position: equality.concept.opportunity, w: 3}]
+      - id: need
+        text: Pay families by need. The member with five children gets more. Roles differ; dignity doesn't.
+        evidence: [{position: equality.concept.equal-dignity, w: 3}]
+      - id: lead
+        text: Let the most capable lead and earn more. A cooperative where nobody stands out goes nowhere.
+        evidence: [{position: equality.concept.natural-hierarchy, w: 3}]
+
+  # ---------------- law.nature ----------------
+  - id: probe.law.nature.river
+    type: scene
+    title: The river decree
+    text: >
+      A drought. The governor of your province suspends the water law by decree and diverts the river to the
+      capital. The high court rules he can't. He does it anyway, and the army backs him. Farmers downstream
+      ask you, the village schoolteacher, what the law now is. What do you tell them?
+    why: This asks what you think law is.
+    options:
+      - id: decision
+        text: Whatever the governor decided. When the rules run out, whoever decides is who rules.
+        evidence: [{position: law.nature.sovereign-decision, w: 3}]
+      - id: court
+        text: The court's ruling. If the governor isn't bound by the law, nobody is.
+        evidence: [{position: law.nature.rule-of-law, w: 3}]
+      - id: command
+        text: Whatever the recognized authority lays down. Which authority that is now is the question, not whether it's fair.
+        evidence: [{position: law.nature.positive-command, w: 3}]
+      - id: class
+        text: Whatever serves the capital's factories and the big estates. It always was.
+        evidence: [{position: law.nature.class-will, w: 3}]
+      - id: weapon
+        text: The court ruling is a weapon. Use it, in the courts and in the newspapers, while it still cuts.
+        evidence: [{position: law.nature.contested-terrain, w: 3}]
+      - id: custom
+        text: The water customs the villages have kept for generations. Decrees and courts come and go.
+        evidence: [{position: law.nature.inherited-custom, w: 3}]
+      - id: god
+        text: Water is God's gift to all. A rule that denies it to the farmers is no law, whoever signs it.
+        evidence:
+          - {position: law.nature.divine-law, w: 3}
+          - {position: law.nature.natural-law, w: 1}
+
+  - id: probe.law.nature.lahore
+    type: voices
+    title: Two professors
+    text: >
+      A first-year law lecture in Lahore turns into an argument between the two professors who share it.
+      Who's right?
+    voices:
+      - {name: "Professor Rana", says: "Law is what the legislature enacts and the courts enforce. Whether it is just is a question for your conscience, not for this course."}
+      - {name: "Professor Siddiqui", says: "Law is God's. Parliament may only apply and fill in the Sharia; it may not overrule it."}
+    why: This asks what makes something law, and what gives it a claim on you.
+    options:
+      - id: rana
+        text: Professor Rana.
+        cause: structures
+        evidence: [{position: law.nature.positive-command, w: 3}]
+      - id: siddiqui
+        text: Professor Siddiqui.
+        cause: divine
+        evidence: [{position: law.nature.divine-law, w: 3}]
+      - id: unjust
+        text: Both miss it. An unjust statute isn't law at all, whoever passes it and whatever book it cites.
+        cause: ideas
+        evidence: [{position: law.nature.natural-law, w: 3}]
+      - id: binds
+        text: Rana, almost. Law is general rules that bind the rulers as well as the ruled. That's what makes it law.
+        cause: ideas
+        evidence: [{position: law.nature.rule-of-law, w: 3}]
+      - id: class
+        text: Both miss it. Law is the will of whoever owns the land and the mills, written up as rules for everyone.
+        cause: interests
+        evidence: [{position: law.nature.class-will, w: 3}]
+      - id: custom
+        text: Both miss it. Law grows out of custom over generations; legislators and scholars only write it down.
+        cause: culture
+        evidence: [{position: law.nature.inherited-custom, w: 3}]
+      - id: decision
+        text: Both miss it. Behind every law is whoever decides when it counts. The general, not the professor.
+        cause: individuals
+        evidence: [{position: law.nature.sovereign-decision, w: 3}]
+      - id: terrain
+        text: Both miss it. Law serves the powerful, but it binds them too, and the weak can use that.
+        cause: structures
+        evidence: [{position: law.nature.contested-terrain, w: 2}]
+
+  - id: probe.law.nature.changes
+    type: explanation
+    title: When law changes
+    text: >
+      In 1833 Britain abolished slavery in most of its colonies. In 2018 India's Supreme Court struck down the
+      colonial-era law against gay sex. When law changes like this, what has really changed?
+    why: This asks what you think law is, by how you explain its changes.
+    options:
+      - id: command
+        text: The authority changed its command. That is all a law ever is.
+        cause: structures
+        evidence: [{position: law.nature.positive-command, w: 3}]
+      - id: justice
+        text: The law caught up with a justice it had always violated.
+        cause: ideas
+        evidence: [{position: law.nature.natural-law, w: 3}]
+      - id: interests
+        text: The balance of interests shifted, and the rulers' will shifted with it.
+        cause: interests
+        evidence: [{position: law.nature.class-will, w: 3}]
+      - id: fought
+        text: People fought inside the courts and won, because law sometimes binds even the powerful.
+        cause: structures
+        evidence: [{position: law.nature.contested-terrain, w: 3}]
+      - id: custom
+        text: Custom moved first and the law followed, slowly, as it should.
+        cause: culture
+        evidence: [{position: law.nature.inherited-custom, w: 3}]
+      - id: god
+        text: Each change has to be judged by God's law. Some move toward it, some away from it.
+        cause: divine
+        evidence: [{position: law.nature.divine-law, w: 3}]
+      - id: decided
+        text: Someone with the final say decided. Law follows decisions, not the other way round.
+        cause: individuals
+        evidence: [{position: law.nature.sovereign-decision, w: 3}]
+      - id: principle
+        text: Judges applied general principles that bind everyone, the old lawmakers included.
+        cause: ideas
+        evidence: [{position: law.nature.rule-of-law, w: 2}]
+
+  # ---------------- police.role ----------------
+  - id: probe.police.role.break-ins
+    type: scene
+    title: The break-ins
+    text: >
+      Break-ins on your street in Cape Town have tripled this year. When you call the police they come four
+      hours later, if at all. The residents' association meets tonight in the church hall. What do you argue
+      for?
+    why: This asks what you think the police are for, and what you'd put in their place.
+    options:
+      - id: patrols
+        text: More police and more patrols. Without them, everything else falls apart.
+        evidence: [{position: police.role.order-maintenance, w: 3}]
+      - id: accountable
+        text: Demand the station answer to us, with response times, a named officer, a complaints line that works.
+        evidence: [{position: police.role.public-safety, w: 3}]
+      - id: private
+        text: Hire a private security company. Pay for a service that actually shows up.
+        evidence: [{position: police.role.private-security, w: 3}]
+      - id: patrol
+        text: Organize our own street patrol, armed if it must be, answerable to this hall and no one else.
+        evidence: [{position: police.role.workers-militia, w: 3}]
+      - id: property
+        text: Notice who gets the fast response. Police come quickly in the rich suburbs because they guard property, not us.
+        evidence: [{position: police.role.class-repression, w: 3}]
+      - id: occupied
+        text: The police treat this area as territory to control, not people to protect. Expect nothing from them.
+        evidence: [{position: police.role.colonial-occupation, w: 3}]
+      - id: build
+        text: Lights, youth jobs and a crisis team. Safety comes from those, not from more police of any kind.
+        evidence: [{position: police.role.abolition, w: 3}]
+
+  - id: probe.police.role.why-police
+    type: explanation
+    title: Why police?
+    text: >
+      Most cities on earth had no police force in the modern sense until the 1800s. Then, within a century,
+      almost all of them did. Why?
+    why: This asks what you think the police are for, by how you explain why they exist.
+    options:
+      - id: safety
+        text: Growing cities needed a public service to protect people and keep the peace.
+        cause: structures
+        evidence: [{position: police.role.public-safety, w: 3}]
+      - id: order
+        text: Without someone holding back disorder, crowded cities would have collapsed.
+        cause: nature
+        evidence: [{position: police.role.order-maintenance, w: 3}]
+      - id: property
+        text: Factory owners needed someone to protect their property and break strikes.
+        cause: interests
+        evidence: [{position: police.role.class-repression, w: 3}]
+      - id: colonies
+        text: Empires built forces to control conquered and enslaved people, then brought the methods home.
+        cause: structures
+        evidence: [{position: police.role.colonial-occupation, w: 3}]
+      - id: monopoly
+        text: States took over a job that private watchmen and guards did, and did it worse.
+        cause: structures
+        evidence: [{position: police.role.private-security, w: 3}]
+      - id: disarm
+        text: Rulers wanted the armed people disarmed and a paid force in their place. The people's militia was the older way.
+        cause: interests
+        evidence: [{position: police.role.workers-militia, w: 3}]
+      - id: abolition
+        text: They grew to manage the poor, and they've never made poor neighborhoods safe. Something else could.
+        cause: structures
+        evidence: [{position: police.role.abolition, w: 2}]
+
+  - id: probe.police.role.safety-budget
+    type: allocation
+    title: The safety budget
+    text: >
+      You chair the safety committee of a city of two million. Next year's safety budget is fixed. Divide ten
+      points between these.
+    why: This asks what you think keeps people safe, and who should do it.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: patrols
+          text: More officers and patrols in high-crime areas.
+          evidence: [{position: police.role.order-maintenance, w: 2}]
+        - id: community
+          text: Neighborhood officers, a complaints authority and better training.
+          evidence: [{position: police.role.public-safety, w: 2}]
+        - id: contracts
+          text: Vouchers so neighborhoods can hire competing private security firms.
+          evidence: [{position: police.role.private-security, w: 2}]
+        - id: guard
+          text: Residents' guards elected and controlled by neighborhood assemblies.
+          evidence: [{position: police.role.workers-militia, w: 2}]
+        - id: withdraw
+          text: Pull the police out of the indigenous and informal settlements and fund their own guard.
+          evidence:
+            - {position: police.role.colonial-occupation, w: 2}
+            - {position: police.role.workers-militia, w: 1}
+        - id: services
+          text: Housing, clinics and youth programs instead of policing.
+          evidence: [{position: police.role.abolition, w: 2}]
+    options:
+      - id: done
+        text: Done
+
+  # ---------------- prisons.purpose ----------------
+  - id: probe.prisons.purpose.marco
+    type: scene
+    title: Marco
+    text: >
+      Marco is nineteen. He held a knife to a delivery rider in Naples and took his motorbike. Nobody was
+      hurt. It's his second offense. You are on the panel that recommends what happens to him. What do you
+      recommend?
+    why: This asks what you think prison is for, and whether it should exist.
+    options:
+      - id: deserve
+        text: Prison, for as long as the crime deserves. He chose; he pays.
+        evidence: [{position: prisons.purpose.retribution, w: 3}]
+      - id: deter
+        text: Prison long enough that the next nineteen-year-old thinks twice, and the street gets a rest from him.
+        evidence: [{position: prisons.purpose.deterrence, w: 3}]
+      - id: rehab
+        text: Prison with school, a trade and a parole officer who knows his name.
+        evidence: [{position: prisons.purpose.rehabilitation, w: 3}]
+      - id: labor
+        text: Useful work and political education. Let him build something and understand why he went wrong.
+        evidence: [{position: prisons.purpose.reform-through-labor, w: 3}]
+      - id: repair
+        text: Sit him down with the rider and the neighborhood, and make him repair the harm.
+        evidence: [{position: prisons.purpose.restorative, w: 3}]
+      - id: abolish
+        text: Not prison. Prisons store the young men the economy threw away. Fix that instead.
+        evidence: [{position: prisons.purpose.abolition, w: 3}]
+
+  - id: probe.prisons.purpose.budget
+    type: allocation
+    title: The prison budget
+    text: >
+      The justice ministry in Bogotá has a fixed budget for everything that happens after a conviction. You
+      have ten points.
+    why: This asks what you think punishment should achieve.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: cells
+          text: Enough cells for full sentences, served in full.
+          evidence: [{position: prisons.purpose.retribution, w: 2}]
+        - id: secure
+          text: Secure prisons for the dangerous and fast, certain sentencing.
+          evidence: [{position: prisons.purpose.deterrence, w: 2}]
+        - id: schools
+          text: Schools, trades and treatment inside, and support on release.
+          evidence: [{position: prisons.purpose.rehabilitation, w: 2}]
+        - id: work
+          text: Work brigades and political study for offenders.
+          evidence: [{position: prisons.purpose.reform-through-labor, w: 2}]
+        - id: circles
+          text: Community circles where offenders meet victims and make amends.
+          evidence: [{position: prisons.purpose.restorative, w: 2}]
+        - id: close
+          text: Closing prisons and spending the money on housing and jobs.
+          evidence: [{position: prisons.purpose.abolition, w: 2}]
+    options:
+      - id: done
+        text: Done
+
+  - id: probe.prisons.purpose.gacaca
+    type: verdict
+    title: Rwanda, 2002
+    text: >
+      Rwanda, 2002. After the 1994 genocide, more than 100,000 suspects are held in jails built for a fraction
+      of that. The government sends most cases to village courts, where neighbors judge, and many who confess
+      get reduced sentences and community work. Where would you have stood?
+    why: This asks what punishment is for, at the hardest possible test.
+    options:
+      - id: full
+        text: Against. Reduced sentences for killers insult the dead. Justice means full punishment.
+        evidence: [{position: prisons.purpose.retribution, w: 3}]
+      - id: deter
+        text: Long sentences for the organizers, whatever happens to the rest, so nobody ever tries it again.
+        evidence: [{position: prisons.purpose.deterrence, w: 3}]
+      - id: village
+        text: For. Truth told to neighbors and harm repaired is how people live side by side again.
+        evidence: [{position: prisons.purpose.restorative, w: 3}]
+      - id: return
+        text: For, with training and supervision. The country needs these men back as working citizens.
+        evidence: [{position: prisons.purpose.rehabilitation, w: 3}]
+      - id: rebuild
+        text: For the community work most of all. Let them rebuild what they burned and learn why it happened.
+        evidence:
+          - {position: prisons.purpose.reform-through-labor, w: 3}
+          - {position: prisons.purpose.restorative, w: 1}
+      - id: cages
+        text: The jails were never going to make anyone safer. What prevents it happening again is outside any prison.
+        evidence: [{position: prisons.purpose.abolition, w: 3}]

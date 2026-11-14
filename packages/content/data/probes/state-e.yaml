@@ -1,0 +1,133 @@
+nodes:
+  # ---------------- democracy.form ----------------
+  - id: probe.democracy.form.convention
+    type: scene
+    title: The convention
+    text: >
+      After years of unrest, your country holds a convention to decide how it will be governed. You have one
+      speech. The hall is waiting. What do you propose?
+    why: This asks what form you think rule by the people, or rule at all, should take.
+    options:
+      - id: parliament
+        text: Elected representatives, competing parties and a constitution that limits whoever wins.
+        evidence: [{position: democracy.form.representative, w: 3}]
+      - id: councils
+        text: Councils of delegates elected at workplaces and neighborhoods, recallable at any time.
+        evidence: [{position: democracy.form.council, w: 3}]
+      - id: direct
+        text: Let the people decide the big questions themselves, in assemblies and referendums.
+        evidence: [{position: democracy.form.direct, w: 3}]
+      - id: party
+        text: Elected councils led by one working-class party that argues freely and then acts as one.
+        evidence: [{position: democracy.form.democratic-centralism, w: 3}]
+      - id: lot
+        text: A citizens' assembly chosen by lot, like a jury, to deliberate and decide.
+        evidence: [{position: democracy.form.sortition, w: 3}]
+      - id: knowers
+        text: Votes weighted toward people who pass a basic test on the issues. Ignorance shouldn't count as much.
+        evidence: [{position: democracy.form.epistocracy, w: 3}]
+      - id: merit
+        text: Officials chosen by exams and a long record, then judged by whether people's lives get better.
+        evidence: [{position: democracy.form.political-meritocracy, w: 3}]
+      - id: crown
+        text: A monarch above the parties, to hold the nation together while politicians come and go.
+        evidence: [{position: democracy.form.monarchy, w: 3}]
+      - id: jurist
+        text: Elected bodies that govern within God's law, with a senior jurist to keep them within it.
+        evidence: [{position: democracy.form.guardianship-of-jurist, w: 3}]
+      - id: faith
+        text: A state that publicly acknowledges the true faith and orders its laws toward it.
+        evidence: [{position: democracy.form.confessional-state, w: 3}]
+
+  - id: probe.democracy.form.design
+    type: allocation
+    title: Design a government
+    text: >
+      You are designing how a country of fifty million makes its laws. Power is fixed. Divide ten points
+      among these bodies.
+    why: This asks which forms of government you trust with power, and how much.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: parliament
+          text: A parliament elected from competing parties.
+          evidence: [{position: democracy.form.representative, w: 2}]
+        - id: councils
+          text: A congress of workplace and neighborhood councils.
+          evidence: [{position: democracy.form.council, w: 2}]
+        - id: referendums
+          text: Binding referendums any group of citizens can trigger.
+          evidence: [{position: democracy.form.direct, w: 2}]
+        - id: lot
+          text: A chamber of citizens chosen by lot.
+          evidence: [{position: democracy.form.sortition, w: 2}]
+        - id: experts
+          text: Extra votes for those who pass a test of basic political knowledge.
+          evidence: [{position: democracy.form.epistocracy, w: 2}]
+        - id: exams
+          text: A civil service chosen by exam, promoted on results.
+          evidence: [{position: democracy.form.political-meritocracy, w: 2}]
+        - id: crown
+          text: A hereditary monarch with reserve powers.
+          evidence: [{position: democracy.form.monarchy, w: 2}]
+        - id: party
+          text: A leading party that sets the direction for the councils.
+          evidence: [{position: democracy.form.democratic-centralism, w: 2}]
+        - id: jurists
+          text: A council of religious jurists that can veto laws against God's law.
+          evidence: [{position: democracy.form.guardianship-of-jurist, w: 2}]
+        - id: church
+          text: An established church whose teaching shapes law on family and education.
+          evidence: [{position: democracy.form.confessional-state, w: 2}]
+    options:
+      - id: done
+        text: Done
+
+  - id: probe.democracy.form.two-systems
+    type: voices
+    title: Two systems
+    text: >
+      A dinner in Singapore. A visiting Indian journalist and a Singaporean civil servant argue about whose
+      country is better governed. Who's right?
+    voices:
+      - {name: "The journalist", says: "We're chaotic, but nine hundred million people vote, and we throw out governments that fail. You can't."}
+      - {name: "The civil servant", says: "Our ministers are chosen for ability and judged by results: housing, schools, clean streets. Votes every five years don't guarantee competence."}
+    why: This asks what form you think government by the people should take, if any.
+    options:
+      - id: journalist
+        text: The journalist. Competing parties and the power to remove them.
+        cause: ideas
+        evidence: [{position: democracy.form.representative, w: 3}]
+      - id: servant
+        text: The civil servant. Choose rulers by ability and judge them by results.
+        cause: structures
+        evidence: [{position: democracy.form.political-meritocracy, w: 3}]
+      - id: knowledge
+        text: Somewhere between. Everyone votes, but informed voters should count for more.
+        cause: ideas
+        evidence: [{position: democracy.form.epistocracy, w: 3}]
+      - id: lot
+        text: Both miss it. Pick ordinary citizens by lot and let them decide. No campaigns, no exams.
+        cause: structures
+        evidence: [{position: democracy.form.sortition, w: 3}]
+      - id: councils
+        text: Both miss it. Real power belongs in councils at the workplaces, not in parliaments or ministries.
+        cause: structures
+        evidence:
+          - {position: democracy.form.council, w: 3}
+          - {position: democracy.form.direct, w: 1}
+      - id: party
+        text: Both miss it. Without a disciplined working-class party leading, both systems serve owners.
+        cause: interests
+        evidence: [{position: democracy.form.democratic-centralism, w: 3}]
+      - id: crown
+        text: Both miss it. A monarch above politics gives a nation the continuity neither ballots nor exams can.
+        cause: culture
+        evidence: [{position: democracy.form.monarchy, w: 3}]
+      - id: god
+        text: Both miss it. Government must answer to God's law first, whatever its method.
+        cause: divine
+        evidence:
+          - {position: democracy.form.confessional-state, w: 2}
+          - {position: democracy.form.guardianship-of-jurist, w: 2}

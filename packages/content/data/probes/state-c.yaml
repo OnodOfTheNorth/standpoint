@@ -1,0 +1,583 @@
+nodes:
+  # ---------------- violence.political ----------------
+  - id: probe.violence.political.line
+    type: line
+    title: Who may fight?
+    text: Going down this list, where do you stop thinking the people taking up arms are in the right?
+    cases:
+      - Villagers arm themselves after police ignore raids by a landowner's gunmen
+      - Algerians take up arms against French rule, 1954
+      - Citizens rise against a ruler who cancelled elections and jails opponents
+      - Workers seize the factories and barracks of a capital in a revolution
+      - A movement attacks government offices to defend its faith
+    why: This asks when, if ever, you think political violence is justified, and by whom.
+    options:
+      - id: none
+        text: Before the first. Violence is wrong, and organized nonviolence wins more anyway.
+        evidence: [{position: violence.political.never, w: 3}]
+      - id: state
+        text: None of them where courts and ballots exist. Force belongs to the lawful state and nobody else.
+        evidence: [{position: violence.political.state-monopoly, w: 3}]
+      - id: one
+        text: After the first. A community the state won't protect may defend itself, and no more.
+        evidence: [{position: violence.political.self-defense, w: 3}]
+      - id: two
+        text: After the second. The colonized may fight for their liberation.
+        evidence: [{position: violence.political.anti-colonial, w: 3}]
+      - id: three
+        text: After the third. When a tyrant closes every peaceful door, the people may break it down.
+        evidence: [{position: violence.political.resistance-to-tyranny, w: 3}]
+      - id: four
+        text: After the fourth. Owners don't hand over power at the ballot box.
+        evidence: [{position: violence.political.revolutionary, w: 3}]
+      - id: five
+        text: All five. When the faith itself is under attack, fighting for it is a duty.
+        evidence: [{position: violence.political.religious-duty, w: 3}]
+      - id: renew
+        text: The list is too timid. A people unwilling to fight for anything is already dying.
+        evidence: [{position: violence.political.regenerative, w: 3}]
+
+  - id: probe.violence.political.sharpeville
+    type: verdict
+    title: South Africa, 1961
+    text: >
+      South Africa, 1961. A year after police shot dead 69 protesters at Sharpeville, and with the ANC banned,
+      its leaders form an armed wing and begin sabotage. Black South Africans cannot vote. Where would you have
+      stood?
+    why: This asks when you think armed struggle is justified, at a real juncture.
+    options:
+      - id: never
+        text: Against. Boycotts, strikes and mass defiance would have won, with fewer graves.
+        evidence: [{position: violence.political.never, w: 3}]
+      - id: law
+        text: Against. Political aims are pursued through law and pressure; arms belong to the state, even a bad one.
+        evidence: [{position: violence.political.state-monopoly, w: 2}]
+      - id: colonized
+        text: For. A people ruled by settlers and denied the vote may take up arms.
+        evidence: [{position: violence.political.anti-colonial, w: 3}]
+      - id: tyranny
+        text: For. When every peaceful road is closed, resistance to tyranny is a right.
+        evidence: [{position: violence.political.resistance-to-tyranny, w: 3}]
+      - id: revolution
+        text: For, and it should have aimed at the mine owners as well as the government.
+        evidence: [{position: violence.political.revolutionary, w: 3}]
+      - id: defend
+        text: Only to defend the townships from police raids. Nothing beyond that.
+        evidence: [{position: violence.political.self-defense, w: 3}]
+      - id: faith
+        text: For, if the churches and mosques judged it a just war. Fighting can be a duty before God.
+        evidence: [{position: violence.political.religious-duty, w: 2}]
+      - id: forge
+        text: For. A nation is forged in struggle. A people that only petitions stays weak.
+        evidence: [{position: violence.political.regenerative, w: 2}]
+
+  - id: probe.violence.political.funeral
+    type: voices
+    title: After the funeral
+    text: >
+      Two brothers walk home from the funeral of a cousin shot by soldiers at a protest. Neither will forgive
+      it. They disagree on what comes next. Who's right?
+    voices:
+      - {name: Elder brother, says: "If we pick up guns, they win; they have more. We march again, bigger, and we never give them the excuse."}
+      - {name: Younger brother, says: "We marched. They shot. Anyone who still says march is asking for more funerals."}
+    why: This asks when, if ever, you think violence against those in power is justified.
+    options:
+      - id: elder
+        text: The elder. Nonviolence is right, and it's stronger.
+        cause: ideas
+        evidence: [{position: violence.political.never, w: 3}]
+      - id: younger-defend
+        text: The younger, but only to defend the next march, not to attack.
+        cause: interests
+        evidence: [{position: violence.political.self-defense, w: 3}]
+      - id: younger-tyranny
+        text: The younger. A government that shoots its own people has lost any claim to be obeyed.
+        cause: ideas
+        evidence: [{position: violence.political.resistance-to-tyranny, w: 3}]
+      - id: courts
+        text: Neither. Go to the courts and the next election. Force is the state's business.
+        cause: structures
+        evidence: [{position: violence.political.state-monopoly, w: 3}]
+      - id: class
+        text: Both miss it. The soldiers protect owners. Only a revolution that wins the soldiers over ends this.
+        cause: structures
+        evidence: [{position: violence.political.revolutionary, w: 3}]
+      - id: foreign
+        text: Both miss it. Those are an occupier's soldiers. A colonized people may fight back.
+        cause: structures
+        evidence: [{position: violence.political.anti-colonial, w: 3}]
+      - id: faith
+        text: Both miss it. If they are attacking believers for their faith, defending it is a religious duty.
+        cause: divine
+        evidence: [{position: violence.political.religious-duty, w: 3}]
+      - id: renew
+        text: The younger, and more. Struggle is what makes a people strong again.
+        cause: culture
+        evidence: [{position: violence.political.regenerative, w: 3}]
+
+  # ---------------- speech.limits ----------------
+  - id: probe.speech.limits.line
+    type: line
+    title: What may be said?
+    text: Going down this list, which would you allow the authorities, or anyone, to stop?
+    cases:
+      - A newspaper calls the president a liar
+      - A cartoon mocks God and the prophets
+      - A party hands out leaflets denying a genocide
+      - A TV channel funded by a foreign government pushes its line in an election
+      - A billionaire buys the main newspaper and fires its critics
+    why: This asks whether speech and press should ever be restricted, and by whom.
+    options:
+      - id: none
+        text: None. Answer bad speech with more speech.
+        evidence: [{position: speech.limits.open-marketplace, w: 3}]
+      - id: sacred
+        text: The second. Mocking God wrongs everyone who believes, and public decency matters.
+        evidence: [{position: speech.limits.protect-the-sacred, w: 3}]
+      - id: dignity
+        text: The third, by law. Denying a genocide attacks the dignity of its victims and the constitutional order.
+        evidence: [{position: speech.limits.dignity-limits, w: 3}]
+      - id: foreign
+        text: The fourth. A country may protect its elections from a foreign state's money.
+        evidence: [{position: speech.limits.information-sovereignty, w: 3}]
+      - id: owner
+        text: The last is the real censorship. While owners decide who gets printed, their press is free and nobody else's is.
+        evidence: [{position: speech.limits.class-press, w: 3}]
+      - id: platform
+        text: No law against any of it. But people should stop the fascist leaflets being handed out, themselves.
+        evidence: [{position: speech.limits.no-platform, w: 3}]
+
+  - id: probe.speech.limits.hall
+    type: scene
+    title: The town hall booking
+    text: >
+      A far-right party has booked the municipal hall in your town in Saxony for a rally on Saturday. Its
+      leader has said migrants are "a disease." You are on the town council. Requests are landing in your
+      inbox. What do you do?
+    why: This asks who, if anyone, should limit speech, and on what grounds.
+    options:
+      - id: let
+        text: Let it go ahead. Bad ideas lose in the open; banning them makes martyrs.
+        evidence: [{position: speech.limits.open-marketplace, w: 3}]
+      - id: ban
+        text: Ask the courts to ban the rally. Hate speech and attacks on the constitution are not protected opinions.
+        evidence: [{position: speech.limits.dignity-limits, w: 3}]
+      - id: block
+        text: Let the law stand, and help the unions and churches fill the square so the rally can't happen.
+        evidence: [{position: speech.limits.no-platform, w: 3}]
+      - id: money
+        text: Find out who funds them. If it's foreign money, that's the thing to stop.
+        evidence: [{position: speech.limits.information-sovereignty, w: 3}]
+      - id: media
+        text: Ignore the rally. The bigger problem is that three owners decide what the whole country reads about migrants.
+        evidence: [{position: speech.limits.class-press, w: 3}]
+      - id: morals
+        text: Free speech has limits, but they're about decency and faith. Insulting people isn't the same as attacking God.
+        evidence:
+          - {position: speech.limits.protect-the-sacred, w: 2}
+          - {position: speech.limits.open-marketplace, w: 1}
+
+  - id: probe.speech.limits.editors
+    type: voices
+    title: Two editors
+    text: >
+      At a press conference in Caracas, two editors argue after a foreign-funded TV station loses its license.
+      Who's right?
+    voices:
+      - {name: "An editor from the closed station", says: "Today it's us. Tomorrow it's anyone who criticizes the government. A free press means you put up with what you hate."}
+      - {name: "An editor from a community radio station", says: "That station backed a coup and was paid from abroad. A country under siege has the right to defend itself."}
+    why: This asks who may restrict speech and press, and under what conditions.
+    options:
+      - id: first
+        text: The first editor. Let everything be said.
+        cause: ideas
+        evidence: [{position: speech.limits.open-marketplace, w: 3}]
+      - id: second
+        text: The second editor. Foreign-funded propaganda under siege can be restricted.
+        cause: structures
+        evidence: [{position: speech.limits.information-sovereignty, w: 3}]
+      - id: class
+        text: The second, for a deeper reason. Private media serve their owners; a workers' state may close those that serve the old owners.
+        cause: interests
+        evidence: [{position: speech.limits.class-press, w: 3}]
+      - id: courts
+        text: Neither. Independent courts, not governments, should decide what goes too far, by fixed constitutional rules.
+        cause: structures
+        evidence: [{position: speech.limits.dignity-limits, w: 3}]
+      - id: people
+        text: Neither. Never let the state censor. Organized people can refuse to give the coup-backers a platform themselves.
+        cause: structures
+        evidence: [{position: speech.limits.no-platform, w: 3}]
+      - id: morals
+        text: Both miss it. The real limit is morality. What insults the faith and corrupts families should be restrained.
+        cause: divine
+        evidence: [{position: speech.limits.protect-the-sacred, w: 3}]
+
+  # ---------------- emergency.powers ----------------
+  - id: probe.emergency.powers.cyclone
+    type: scene
+    title: After the cyclone
+    text: >
+      A cyclone flattens half of Chittagong's coastal districts. The public hospitals are overflowing; two private
+      hospitals have empty beds and charge more than a month's wage a night. The government wants to take
+      them over, impose a curfew and postpone the local elections. You're in the cabinet meeting. What do you
+      argue?
+    why: This asks what should give way in an emergency, and who decides.
+    options:
+      - id: take
+        text: Take the hospitals now. Need comes before property in a disaster.
+        evidence: [{position: emergency.powers.need-overrides-property, w: 3}]
+      - id: pay
+        text: Take the beds, but pay the owners fair value and go through the courts afterward.
+        evidence: [{position: emergency.powers.compensate-at-market, w: 3}]
+      - id: voluntary
+        text: Take nothing. Let the hospitals charge and let charities pay for the poor; seizures make the next disaster worse.
+        evidence: [{position: emergency.powers.voluntary-only, w: 3}]
+      - id: rights
+        text: Take the beds if you must, but the elections and the courts stay. That's when they matter most.
+        evidence: [{position: emergency.powers.civil-liberties-hold, w: 3}]
+      - id: decide
+        text: All of it, and more. In a real emergency someone must act beyond the rulebook, and that's the government.
+        evidence: [{position: emergency.powers.sovereign-exception, w: 3}]
+      - id: keep
+        text: Take the hospitals and don't give them back. If they're public in a disaster, they can be public after.
+        evidence: [{position: emergency.powers.permanent-socialization, w: 3}]
+      - id: neighbors
+        text: Get out of the way. The neighborhoods are already organizing rescues better than any ministry.
+        evidence: [{position: emergency.powers.mutual-aid, w: 3}]
+
+  - id: probe.emergency.powers.line
+    type: line
+    title: How far?
+    text: A pandemic is killing thousands a week. Going down this list, where should the government stop?
+    cases:
+      - Order factories to make masks and ventilators, at a set price
+      - Close shops, churches and schools for two months
+      - Track every phone to trace contacts
+      - Postpone the national election by a year
+      - Rule by decree, with no court review, until the minister says it's over
+    why: This asks what you think should give way in an emergency, and what never should.
+    options:
+      - id: none
+        text: Before the first. Price controls and orders cause shortages. Let prices, firms and charity respond.
+        evidence: [{position: emergency.powers.voluntary-only, w: 3}]
+      - id: one
+        text: After the first, and only with fair payment and a court to appeal to.
+        evidence: [{position: emergency.powers.compensate-at-market, w: 3}]
+      - id: two
+        text: After the second or third. But elections and courts never stop, emergency or not.
+        evidence: [{position: emergency.powers.civil-liberties-hold, w: 3}]
+      - id: all
+        text: All of it if the danger is real. Someone has to be able to act beyond the law.
+        evidence: [{position: emergency.powers.sovereign-exception, w: 3}]
+      - id: keep
+        text: The first, and keep the factories making them under public ownership afterward.
+        evidence: [{position: emergency.powers.permanent-socialization, w: 3}]
+      - id: need
+        text: As far as saving lives needs, on property. Not one inch on the election.
+        evidence:
+          - {position: emergency.powers.need-overrides-property, w: 2}
+          - {position: emergency.powers.civil-liberties-hold, w: 1}
+
+  # ---------------- party.system ----------------
+  - id: probe.party.system.charter
+    type: scene
+    title: The charter
+    text: >
+      Independence, or the revolution, has come, depending on who's telling it. You are one of forty people
+      drafting the new country's charter. The hardest chapter is political parties. Which do you fight for?
+    why: This asks how you think political power should be organized among parties, or without them.
+    options:
+      - id: many
+        text: As many parties as want to run, in free elections, so those in power can be thrown out.
+        evidence: [{position: party.system.competitive-multiparty, w: 3}]
+      - id: leading
+        text: One leading party of the working people, with allied parties in a front around it.
+        evidence: [{position: party.system.leading-party, w: 3}]
+      - id: workers
+        text: Only parties of working people, but several of them, competing freely for the councils.
+        evidence: [{position: party.system.soviet-pluralism, w: 3}]
+      - id: national
+        text: One national party, to hold the tribes and faiths together, with real contests for seats inside it.
+        evidence: [{position: party.system.national-front-party, w: 3}]
+      - id: none
+        text: No parties at all. Voters choose people, not machines, and recall them when they fail.
+        evidence: [{position: party.system.partyless, w: 3}]
+      - id: trades
+        text: Represent people by their trades and professions, farmers, teachers, workers, owners, not by party.
+        evidence: [{position: party.system.corporative, w: 3}]
+
+  - id: probe.party.system.tanzania
+    type: verdict
+    title: Tanzania, 1965
+    text: >
+      Tanzania, 1965. The ruling party makes itself the only legal party, arguing that a poor, new country
+      with over a hundred ethnic groups cannot afford division. Inside it, two party candidates compete for
+      each parliamentary seat, and voters often throw out ministers. Where would you have stood?
+    why: This asks how you judge a one-party system, by a real case.
+    options:
+      - id: for
+        text: For. One national party above tribe and faction, with real choice inside it.
+        evidence: [{position: party.system.national-front-party, w: 3}]
+      - id: against
+        text: Against. Without rival parties, nothing stops the party from becoming the state.
+        evidence: [{position: party.system.competitive-multiparty, w: 3}]
+      - id: class
+        text: For, if the party is truly a party of workers and peasants leading a broad front.
+        evidence: [{position: party.system.leading-party, w: 3}]
+      - id: plural
+        text: Against. Socialism needs several workers' parties competing, or debate dies.
+        evidence: [{position: party.system.soviet-pluralism, w: 3}]
+      - id: partyless
+        text: Closer than most. Better still to drop the party and let people elect whoever they trust.
+        evidence: [{position: party.system.partyless, w: 3}]
+      - id: estates
+        text: Both party models miss it. Represent the farmers, workers and traders as bodies, in one chamber of the nation.
+        evidence: [{position: party.system.corporative, w: 3}]
+
+  - id: probe.party.system.cafe
+    type: voices
+    title: The café argument
+    text: >
+      A café in Tunis, 2012. Thirty parties have registered for the first free elections in decades. Two
+      friends argue over coffee. Who's right?
+    voices:
+      - {name: Amel, says: "Thirty parties is wonderful. Let them all compete. If they're bad, we throw them out in four years."}
+      - {name: Karim, says: "Thirty parties is thirty machines dividing us. Every one has a patron. We need people who answer to us, not to a party."}
+    why: This asks what you think parties are for, and whether a country needs several, one or none.
+    options:
+      - id: amel
+        text: Amel.
+        cause: ideas
+        evidence: [{position: party.system.competitive-multiparty, w: 3}]
+      - id: karim
+        text: Karim.
+        cause: interests
+        evidence: [{position: party.system.partyless, w: 3}]
+      - id: one-front
+        text: Neither. A nation in transition needs one broad national party, then argue inside it.
+        cause: structures
+        evidence: [{position: party.system.national-front-party, w: 3}]
+      - id: leading
+        text: Neither. Working people need one party of their own to lead the rest.
+        cause: interests
+        evidence: [{position: party.system.leading-party, w: 3}]
+      - id: workers
+        text: Amel, partly. Many parties, yes, but parties of working people, not of owners.
+        cause: interests
+        evidence: [{position: party.system.soviet-pluralism, w: 3}]
+      - id: trades
+        text: Both miss it. People should be represented by their trades and communities, not by any party.
+        cause: culture
+        evidence: [{position: party.system.corporative, w: 3}]
+
+  # ---------------- authority.legitimacy ----------------
+  - id: probe.authority.legitimacy.obey
+    type: explanation
+    title: Why obey?
+    text: >
+      A tax inspector knocks on the door of your shop. You pay, as most people do. Set aside fear of a fine.
+      What, if anything, gives the government the right to ask?
+    why: This asks what you think makes authority legitimate.
+    options:
+      - id: consent
+        text: We consented to it. We elect it and can throw it out.
+        cause: ideas
+        evidence: [{position: authority.legitimacy.consent, w: 3}]
+      - id: protect
+        text: It keeps the peace. Whoever protects you has a claim on you, as long as they do.
+        cause: interests
+        evidence: [{position: authority.legitimacy.protection, w: 3}]
+      - id: old
+        text: It has stood a long time, and things that last have earned some trust.
+        cause: culture
+        evidence: [{position: authority.legitimacy.prescription, w: 3}]
+      - id: god
+        text: Authority comes from God, and binds the ruler to rule justly too.
+        cause: divine
+        evidence: [{position: authority.legitimacy.divine-ordinance, w: 3}]
+      - id: results
+        text: It has the right while it makes people's lives better. Fail, and the right is gone.
+        cause: interests
+        evidence: [{position: authority.legitimacy.mandate-of-heaven, w: 3}]
+      - id: class
+        text: Ask whom the taxes serve. A government of the working majority has that right; a government of owners doesn't.
+        cause: interests
+        evidence: [{position: authority.legitimacy.class-content, w: 3}]
+      - id: leader
+        text: A leader who truly speaks for the people has that right, more than any parliament.
+        cause: individuals
+        evidence: [{position: authority.legitimacy.leader-embodiment, w: 3}]
+      - id: nothing
+        text: Nothing does, unless it can justify itself, and the inspector's boss mostly can't.
+        cause: structures
+        evidence: [{position: authority.legitimacy.justify-or-dismantle, w: 3}]
+
+  - id: probe.authority.legitimacy.claims
+    type: line
+    title: Who has the right?
+    text: >
+      Five rulers in five countries. Going down the list, which of them have a real right to be obeyed?
+    cases:
+      - A king whose family has reigned for four hundred years, never elected
+      - A party that took power in a revolution and has raised incomes every year since
+      - A general who ended a civil war and keeps the roads safe
+      - A president elected with 51 percent of the vote
+      - A council of clerics who rule by scripture
+    why: This asks what makes authority legitimate, by where you grant it.
+    options:
+      - id: elected
+        text: Only the president. Consent is the only title to rule.
+        evidence: [{position: authority.legitimacy.consent, w: 3}]
+      - id: king
+        text: The king, above all. Long-standing authority has a claim no election can match.
+        evidence: [{position: authority.legitimacy.prescription, w: 3}]
+      - id: results
+        text: The party, while incomes keep rising. Rulers are judged by the people's welfare.
+        evidence: [{position: authority.legitimacy.mandate-of-heaven, w: 3}]
+      - id: general
+        text: The general, as long as the roads stay safe. Protection earns obedience.
+        evidence: [{position: authority.legitimacy.protection, w: 3}]
+      - id: clerics
+        text: The clerics, if they rule truly by God's law.
+        evidence: [{position: authority.legitimacy.divine-ordinance, w: 3}]
+      - id: class
+        text: Whichever serves workers and peasants, and I'd need to know that before the rest.
+        evidence: [{position: authority.legitimacy.class-content, w: 3}]
+      - id: leader
+        text: None of them by their method. The right belongs to a leader the people recognize as their own voice.
+        evidence: [{position: authority.legitimacy.leader-embodiment, w: 3}]
+      - id: none
+        text: None of them. Every one of those claims needs justifying, and none survives the asking.
+        evidence: [{position: authority.legitimacy.justify-or-dismantle, w: 3}]
+
+  - id: probe.authority.legitimacy.village
+    type: voices
+    title: The new district officer
+    text: >
+      A new district officer arrives in a village in Shandong. Two elders argue that evening about whether the
+      village should listen to him. Who's right?
+    voices:
+      - {name: "Old Wang", says: "Officials come and go. If he fixes the irrigation and keeps the price of grain fair, he has the right to command. If not, he doesn't."}
+      - {name: "Old Li", says: "We never chose him. Nobody here voted for him. Why should we obey someone we didn't choose?"}
+    why: This asks what makes an authority legitimate.
+    options:
+      - id: wang
+        text: Old Wang. Judge rulers by the people's welfare.
+        cause: interests
+        evidence: [{position: authority.legitimacy.mandate-of-heaven, w: 3}]
+      - id: li
+        text: Old Li. Without consent there's no right to rule.
+        cause: ideas
+        evidence: [{position: authority.legitimacy.consent, w: 3}]
+      - id: protect
+        text: Wang, roughly. If he keeps order and the village safe, that is enough.
+        cause: interests
+        evidence: [{position: authority.legitimacy.protection, w: 3}]
+      - id: class
+        text: Both miss it. The question is whether his government serves the peasants and workers or the new rich.
+        cause: interests
+        evidence: [{position: authority.legitimacy.class-content, w: 3}]
+      - id: custom
+        text: Both miss it. The village has its own ways and elders; authority that grew here outranks any newcomer.
+        cause: culture
+        evidence: [{position: authority.legitimacy.prescription, w: 3}]
+      - id: heaven
+        text: Both miss it. Authority comes from God, and the officer answers to Him as much as the village does.
+        cause: divine
+        evidence: [{position: authority.legitimacy.divine-ordinance, w: 3}]
+      - id: leader
+        text: Both miss it. Officers don't matter. What matters is whether the nation's leader truly speaks for the people.
+        cause: individuals
+        evidence: [{position: authority.legitimacy.leader-embodiment, w: 3}]
+      - id: none
+        text: Both are too kind to him. Let him justify every order, and let the village run itself where he can't.
+        cause: structures
+        evidence: [{position: authority.legitimacy.justify-or-dismantle, w: 3}]
+
+  # ---------------- federalism.scale ----------------
+  - id: probe.federalism.scale.schools
+    type: scene
+    title: Who runs the schools?
+    text: >
+      Your country is rewriting who controls schooling. In your region most families speak a language the
+      capital doesn't. Teachers are paid late, and the curriculum is set two thousand kilometers away. Where
+      should the power sit?
+    why: This asks whether power should sit locally or centrally, and why.
+    options:
+      - id: subsidiarity
+        text: With each town and its parents, and the higher levels help only with what towns can't do alone.
+        evidence: [{position: federalism.scale.subsidiarity, w: 3}]
+      - id: compete
+        text: With the provinces, competing. Families can move to whichever one runs schools best.
+        evidence: [{position: federalism.scale.states-and-exit, w: 3}]
+      - id: center
+        text: With the capital. Only a strong center guarantees every child the same rights and stops local bosses.
+        evidence: [{position: federalism.scale.strong-center, w: 3}]
+      - id: nation
+        text: With our region, as a self-governing nation, teaching in our own language.
+        evidence: [{position: federalism.scale.multinational-federation, w: 3}]
+      - id: assemblies
+        text: With the school's own assembly of teachers and parents, federating upward only as far as they choose.
+        evidence: [{position: federalism.scale.confederal-communes, w: 3}]
+      - id: global
+        text: Set basic standards above all governments, through binding international agreements, then let regions run them.
+        evidence: [{position: federalism.scale.global-governance, w: 3}]
+
+  - id: probe.federalism.scale.taxes
+    type: allocation
+    title: Where the money sits
+    text: >
+      A new federal constitution has to say who collects and spends the taxes. Divide ten points among the
+      levels of government.
+    why: This asks where you think power should sit, by where you put the money.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: assemblies
+          text: Neighborhood and village assemblies, with recallable delegates to the levels above.
+          evidence: [{position: federalism.scale.confederal-communes, w: 2}]
+        - id: towns
+          text: Town councils, with higher levels stepping in only to help.
+          evidence: [{position: federalism.scale.subsidiarity, w: 2}]
+        - id: provinces
+          text: Competing provinces that set their own taxes, so people can move.
+          evidence: [{position: federalism.scale.states-and-exit, w: 2}]
+        - id: nations
+          text: The national and language regions, each self-governing.
+          evidence: [{position: federalism.scale.multinational-federation, w: 2}]
+        - id: center
+          text: The central government, to equalize and plan for the whole country.
+          evidence: [{position: federalism.scale.strong-center, w: 2}]
+        - id: global
+          text: Pooled funds and rules above the nation, for climate, health and tax havens.
+          evidence: [{position: federalism.scale.global-governance, w: 2}]
+    options:
+      - id: done
+        text: Done
+
+  - id: probe.federalism.scale.india-1956
+    type: verdict
+    title: India, 1956
+    text: >
+      India, 1956. After protests and a hunger strike to the death in Madras, the government redraws the
+      states along language lines: Telugu speakers in one, Malayalam speakers in another. Many in Delhi warn
+      it will break up the country. Where would you have stood?
+    why: This asks how you think power should be divided between the center and the parts.
+    options:
+      - id: for
+        text: For. A country of many nations holds together by letting each govern itself in its own language.
+        evidence: [{position: federalism.scale.multinational-federation, w: 3}]
+      - id: against
+        text: Against. A young country needed a strong center to build industry and hold rights equal everywhere.
+        evidence: [{position: federalism.scale.strong-center, w: 3}]
+      - id: lower
+        text: For, and keep going down. Power should sit with districts and villages, with the states only helping.
+        evidence: [{position: federalism.scale.subsidiarity, w: 3}]
+      - id: compete
+        text: For. More states means more experiments, and people can move to the ones that work.
+        evidence: [{position: federalism.scale.states-and-exit, w: 3}]
+      - id: villages
+        text: Both sides miss it. Power should rise from village councils federating upward, not be handed down from Delhi.
+        evidence: [{position: federalism.scale.confederal-communes, w: 3}]

@@ -1,0 +1,535 @@
+nodes:
+  # ---------------- fascism.nature ----------------
+  - id: probe.fascism.nature.why-won
+    type: explanation
+    title: Why it won
+    text: >
+      Mussolini was made prime minister in 1922; Hitler was made chancellor in 1933. Neither won a majority in
+      a free vote. Both were appointed. Why did fascism come to power?
+    why: This asks what you think fascism is, by how you explain its rise.
+    premises:
+      - id: insult
+        text: The premise that "fascism" still names something definite. Today it's mostly an insult.
+        evidence: [{position: fascism.nature.empty-insult, w: 2}]
+    options:
+      - id: finance
+        text: Big business and the banks, facing crisis and strong unions, dropped parliament and paid for open terror.
+        cause: interests
+        evidence: [{position: fascism.nature.finance-capital-dictatorship, w: 3}]
+      - id: small
+        text: Ruined shopkeepers, clerks and veterans became a mass movement, and big business used it to smash the unions.
+        cause: interests
+        evidence: [{position: fascism.nature.petty-bourgeois-mass-movement, w: 3}]
+      - id: consent
+        text: The old rulers could no longer win consent and the left couldn't take over. Force filled the gap.
+        cause: structures
+        evidence: [{position: fascism.nature.crisis-of-hegemony, w: 3}]
+      - id: invited
+        text: Conservative elites invited them in, thinking they could control them. They couldn't.
+        cause: individuals
+        evidence: [{position: fascism.nature.paxton-process, w: 3}]
+      - id: fear
+        text: Fear of communism. After 1917, the propertied backed anyone willing to copy the Bolsheviks' methods against them.
+        cause: interests
+        evidence: [{position: fascism.nature.reaction-to-bolshevism, w: 3}]
+      - id: myth
+        text: A myth captured millions. The nation is rotting and must be purged and reborn.
+        cause: ideas
+        evidence: [{position: fascism.nature.palingenetic-ultranationalism, w: 3}]
+      - id: twin
+        text: Mass politics after the war bred single parties seeking total control. Red or black, the same thing.
+        cause: ideas
+        evidence: [{position: fascism.nature.totalitarian-twin, w: 3}]
+      - id: colonial
+        text: Europe had done all this in its colonies for a century. Now it did it at home.
+        cause: structures
+        evidence: [{position: fascism.nature.colonialism-come-home, w: 3}]
+      - id: left
+        text: It was a socialist movement. State control of industry, a workers' party, attacks on capitalism. A creature of the left.
+        cause: ideas
+        evidence: [{position: fascism.nature.a-form-of-socialism, w: 3}]
+      - id: rebirth
+        text: The nation rose above class war and liberal selfishness and was reborn as one body. That's why millions followed.
+        cause: culture
+        evidence: [{position: fascism.nature.national-rebirth-self-view, w: 3}]
+
+  - id: probe.fascism.nature.which-fascist
+    type: line
+    title: Which ones?
+    text: Going down this list, which would you call fascist?
+    cases:
+      - Italy under Mussolini, 1925
+      - Germany under Hitler, 1935
+      - Spain under Franco, 1940
+      - Chile under Pinochet, 1975
+      - A party today that wins votes promising mass deportations
+    why: This asks what you mean by fascism, by where you apply the word.
+    premises:
+      - id: insult
+        text: The premise that the word still means anything; it's thrown at anyone people dislike.
+        evidence: [{position: fascism.nature.empty-insult, w: 3}]
+    conditions:
+      - id: elites
+        text: It depends whether conservative elites hand a radical movement power, and whether it then radicalizes.
+        evidence: [{position: fascism.nature.paxton-process, w: 3}]
+    options:
+      - id: two-myth
+        text: The first two. Fascism is a mass movement driven by a myth of national rebirth, not just any dictatorship.
+        evidence: [{position: fascism.nature.palingenetic-ultranationalism, w: 3}]
+      - id: four
+        text: The first four. Wherever finance and big capital drop parliament and rule by open terror.
+        evidence: [{position: fascism.nature.finance-capital-dictatorship, w: 3}]
+      - id: mass
+        text: The first two, and maybe the last. It needs a mass movement of the desperate middle, used by big business.
+        evidence: [{position: fascism.nature.petty-bourgeois-mass-movement, w: 3}]
+      - id: consent
+        text: Any of them where the rulers had lost consent and turned to force to hold things together.
+        evidence: [{position: fascism.nature.crisis-of-hegemony, w: 3}]
+      - id: reds
+        text: The first four. Each arose to stop communism, and copied communist methods to do it.
+        evidence: [{position: fascism.nature.reaction-to-bolshevism, w: 3}]
+      - id: twin
+        text: The first two, along with Stalin's Soviet Union. One family of total states.
+        evidence: [{position: fascism.nature.totalitarian-twin, w: 3}]
+      - id: colonial
+        text: All five. Deportations, camps and emergency rule are what empires did abroad, coming home.
+        evidence: [{position: fascism.nature.colonialism-come-home, w: 3}]
+      - id: socialist
+        text: The first two. National socialism was socialism. Franco and Pinochet were something else.
+        evidence: [{position: fascism.nature.a-form-of-socialism, w: 3}]
+      - id: rebirth
+        text: Only the first, honestly named. A national revival above class and party, which its enemies slandered.
+        evidence: [{position: fascism.nature.national-rebirth-self-view, w: 3}]
+
+  - id: probe.fascism.nature.historians
+    type: voices
+    title: Two historians
+    text: >
+      A radio debate in Rome on the centenary of the March on Rome. Two historians disagree about what they
+      are commemorating. Who's right?
+    voices:
+      - {name: "Professor Bianchi", says: "Follow the money. Landowners and industrialists paid the squads that burned the union halls. Fascism was their answer to the red years."}
+      - {name: "Professor Conti", says: "Follow the ideas. Fascism was a revolutionary creed of national rebirth, and its followers believed it. Money doesn't explain faith."}
+    why: This asks what you think fascism is.
+    premises:
+      - id: insult
+        text: The premise that this matters now. The word has become an insult for anyone you dislike.
+        evidence: [{position: fascism.nature.empty-insult, w: 3}]
+    options:
+      - id: bianchi
+        text: Bianchi. Big capital's open dictatorship.
+        cause: interests
+        evidence: [{position: fascism.nature.finance-capital-dictatorship, w: 3}]
+      - id: conti
+        text: Conti. A myth of national rebirth.
+        cause: ideas
+        evidence: [{position: fascism.nature.palingenetic-ultranationalism, w: 3}]
+      - id: both-classes
+        text: Both. Big money paid; the ruined middle classes marched. You need both halves.
+        cause: interests
+        evidence: [{position: fascism.nature.petty-bourgeois-mass-movement, w: 3}]
+      - id: hegemony
+        text: Both miss the deadlock. The liberal order couldn't rule and the left couldn't replace it.
+        cause: structures
+        evidence: [{position: fascism.nature.crisis-of-hegemony, w: 3}]
+      - id: king
+        text: Both miss the king and the generals. The establishment let them in.
+        cause: individuals
+        evidence: [{position: fascism.nature.paxton-process, w: 3}]
+      - id: reds
+        text: Both miss Moscow. It was a reaction to the Bolsheviks, mirroring them.
+        cause: ideas
+        evidence:
+          - {position: fascism.nature.reaction-to-bolshevism, w: 3}
+          - {position: fascism.nature.totalitarian-twin, w: 1}
+      - id: twin
+        text: Both miss that it was the same species as Soviet communism, a party claiming all of life.
+        cause: ideas
+        evidence: [{position: fascism.nature.totalitarian-twin, w: 3}]
+      - id: colonial
+        text: Both miss Libya and Ethiopia. Italy perfected these methods in Africa first.
+        cause: structures
+        evidence: [{position: fascism.nature.colonialism-come-home, w: 3}]
+      - id: left
+        text: Both miss that Mussolini came from the socialist party, and never stopped being a socialist of a kind.
+        cause: individuals
+        evidence: [{position: fascism.nature.a-form-of-socialism, w: 3}]
+      - id: self
+        text: Conti, and more. It was a genuine national awakening, whatever was done in its name later.
+        cause: culture
+        evidence: [{position: fascism.nature.national-rebirth-self-view, w: 3}]
+
+  # ---------------- fascism.response ----------------
+  - id: probe.fascism.response.march
+    type: scene
+    title: The march
+    text: >
+      A party whose leaders have praised the old dictatorship is polling at 30 percent and has announced a
+      torchlight march through the immigrant quarter of your city on Saturday. Your union branch meets
+      tonight. What do you propose?
+    why: This asks how you think the far right should be fought.
+    options:
+      - id: united
+        text: Every union and workers' party together, on the street, with stewards ready to defend the quarter.
+        evidence: [{position: fascism.response.workers-united-front, w: 3}]
+      - id: popular
+        text: Unite everyone who defends the republic, from the churches to the liberals to the left.
+        evidence: [{position: fascism.response.popular-front, w: 3}]
+      - id: confront
+        text: Block the route. Deny them the streets, whatever it takes.
+        evidence: [{position: fascism.response.confront-in-the-street, w: 3}]
+      - id: ban
+        text: Ask the courts to ban the march and the party. The constitution allows it.
+        evidence: [{position: fascism.response.militant-democracy, w: 3}]
+      - id: debate
+        text: Let them march. Debate them in public; banning them makes them martyrs.
+        evidence: [{position: fascism.response.answer-with-speech, w: 3}]
+      - id: conditions
+        text: Skip the counter-march. Fight for the jobs and housing whose absence they feed on.
+        evidence: [{position: fascism.response.remove-the-conditions, w: 3}]
+      - id: empire
+        text: Go after the roots, the border raids and police in this quarter and the wars abroad they cheer for.
+        evidence: [{position: fascism.response.fight-empire-at-the-root, w: 3}]
+      - id: overblown
+        text: Stay home. Thirty percent of voters aren't fascists, and calling them that is why they vote this way.
+        evidence: [{position: fascism.response.threat-overblown, w: 3}]
+
+  - id: probe.fascism.response.germany-1932
+    type: verdict
+    title: Germany, 1932
+    text: >
+      Germany, November 1932. The Nazis are the largest party. The Social Democrats and Communists together have more
+      votes, but the Communists call the Social Democrats "social fascists" and the Social Democrats call the
+      Communists a menace. Where would you have stood?
+    why: This asks how you think fascism should be fought, at the juncture where it mattered most.
+    options:
+      - id: united
+        text: For a united front of both workers' parties and the unions, with armed self-defense. Now.
+        evidence: [{position: fascism.response.workers-united-front, w: 3}]
+      - id: popular
+        text: For a broad front of everyone loyal to the republic, Catholics and liberals included.
+        evidence: [{position: fascism.response.popular-front, w: 3}]
+      - id: ban
+        text: For banning the Nazi party and its storm troopers outright, as the republic had the power to do.
+        evidence: [{position: fascism.response.militant-democracy, w: 3}]
+      - id: street
+        text: For driving the storm troopers off the streets, block by block.
+        evidence: [{position: fascism.response.confront-in-the-street, w: 3}]
+      - id: jobs
+        text: For ending the austerity and mass unemployment that were feeding them.
+        evidence: [{position: fascism.response.remove-the-conditions, w: 3}]
+      - id: empire
+        text: For going at the root, the empire-building and the colonial racism they promised to revive.
+        evidence: [{position: fascism.response.fight-empire-at-the-root, w: 3}]
+      - id: speech
+        text: For meeting them in argument and at the ballot box. Repression helped them pose as victims.
+        evidence: [{position: fascism.response.answer-with-speech, w: 3}]
+
+  - id: probe.fascism.response.budget
+    type: allocation
+    title: The antifascist budget
+    text: >
+      A foundation has given your coalition a large grant "to stop the far right" over the next five years.
+      Divide ten points.
+    why: This asks what you think actually defeats fascism, or whether it needs defeating.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: united
+          text: Joint union and workers' party committees, with trained stewards for self-defense.
+          evidence: [{position: fascism.response.workers-united-front, w: 2}]
+        - id: front
+          text: A broad pro-republic alliance, churches and liberals included.
+          evidence: [{position: fascism.response.popular-front, w: 2}]
+        - id: street
+          text: Mobilizing to confront every far-right march.
+          evidence: [{position: fascism.response.confront-in-the-street, w: 2}]
+        - id: lawyers
+          text: Lawyers to get far-right parties banned under the constitution.
+          evidence: [{position: fascism.response.militant-democracy, w: 2}]
+        - id: debates
+          text: Public debates and fact-checking to beat their arguments.
+          evidence: [{position: fascism.response.answer-with-speech, w: 2}]
+        - id: jobs
+          text: Campaigns for jobs, housing and public services in neglected towns.
+          evidence: [{position: fascism.response.remove-the-conditions, w: 2}]
+        - id: roots
+          text: Campaigns against border raids, police violence and wars abroad.
+          evidence: [{position: fascism.response.fight-empire-at-the-root, w: 2}]
+        - id: return
+          text: Give it back. The threat is exaggerated.
+          evidence: [{position: fascism.response.threat-overblown, w: 2}]
+    options:
+      - id: done
+        text: Done
+
+  # ---------------- internationalism ----------------
+  - id: probe.internationalism.small-island
+    type: scene
+    title: The small island
+    text: >
+      A revolution wins on a Caribbean island of ten million. Its neighbor is the largest power on earth. The
+      new government's first congress debates foreign policy. You have the floor. What do you say?
+    why: This asks whether you think change can succeed in one country, or only beyond it.
+    options:
+      - id: one-country
+        text: Build socialism here, with our own hands. We can do it even surrounded.
+        evidence: [{position: internationalism.socialism-in-one-country, w: 3}]
+      - id: spread
+        text: Spread it or die. A revolution alone on an island will degenerate or be crushed.
+        evidence: [{position: internationalism.permanent-revolution, w: 3}]
+      - id: tricontinental
+        text: Stand with every colonized and dominated nation, Africa, Asia, Latin America, each breaking free and helping the rest.
+        evidence: [{position: internationalism.tricontinental, w: 3}]
+      - id: no-national
+        text: Don't call it national liberation. The island's bosses are bosses too. Only the world's workers together can win.
+        evidence: [{position: internationalism.no-national-roads, w: 3}]
+      - id: nation
+        text: Look after the island. Other countries' revolutions are their business.
+        evidence: [{position: internationalism.nation-first, w: 3}]
+      - id: rules
+        text: Join the international institutions and trade agreements. Rules are a small country's best protection.
+        evidence: [{position: internationalism.liberal-global-order, w: 3}]
+      - id: faith
+        text: Our real community is the faith, across every border. Build bonds there first.
+        evidence: [{position: internationalism.community-of-faith, w: 3}]
+
+  - id: probe.internationalism.havana-1966
+    type: verdict
+    title: Havana, 1966
+    text: >
+      Havana, January 1966. Delegates from Asia, Africa and Latin America meet at the Tricontinental Conference
+      and pledge mutual support, including for armed liberation movements. Moscow and Beijing both send
+      delegations, eyeing each other. Where would you have stood?
+    why: This asks what kind of internationalism, if any, you think change needs.
+    options:
+      - id: for
+        text: With the conference. The oppressed nations, together, are the force that changes the world.
+        evidence: [{position: internationalism.tricontinental, w: 3}]
+      - id: moscow
+        text: With the established socialist states. Build socialism securely where it exists, then help others.
+        evidence: [{position: internationalism.socialism-in-one-country, w: 3}]
+      - id: permanent
+        text: With the revolutions, but they need to spread to the industrial countries or they'll all be isolated.
+        evidence: [{position: internationalism.permanent-revolution, w: 3}]
+      - id: workers
+        text: Against. National liberation hands power to local elites. Only the international working class matters.
+        evidence: [{position: internationalism.no-national-roads, w: 3}]
+      - id: un
+        text: Against. Progress for poor countries comes through the UN, trade and international law, not guns.
+        evidence: [{position: internationalism.liberal-global-order, w: 3}]
+      - id: nation
+        text: Against. Each nation should fix its own house. Grand alliances just bring the superpowers in.
+        evidence: [{position: internationalism.nation-first, w: 3}]
+      - id: faith
+        text: Against. The faithful across these continents share more than any secular bloc could offer.
+        evidence: [{position: internationalism.community-of-faith, w: 3}]
+
+  # ---------------- culture.strategy ----------------
+  - id: probe.culture.strategy.donor
+    type: scene
+    title: The donor
+    text: >
+      A wealthy sympathizer offers your movement fifty million dollars over ten years, on one condition: you
+      put it all into one strategy. The board meets tomorrow. What do you argue for?
+    why: This asks where you think a political fight is won first, in culture, in institutions, or in power.
+    options:
+      - id: hegemony
+        text: Win common sense first. Newspapers, schools, unions, everyday life. Power follows consent.
+        evidence: [{position: culture.strategy.hegemony-first, w: 3}]
+      - id: march
+        text: Put our people into the universities, the civil service and the newsrooms, and change them from inside.
+        evidence: [{position: culture.strategy.long-march, w: 3}]
+      - id: thinktanks
+        text: Think tanks and scholarships. Have the ideas ready when the next crisis hits.
+        evidence: [{position: culture.strategy.ideas-and-think-tanks, w: 3}]
+      - id: meta
+        text: Films, music, churches, social media. Politics is downstream of culture.
+        evidence: [{position: culture.strategy.metapolitics, w: 3}]
+      - id: power
+        text: Take power first, then remake schools and media with it. Culture follows power.
+        evidence: [{position: culture.strategy.power-first, w: 3}]
+      - id: entry
+        text: Join one of the big parties en masse and take it over from within.
+        evidence: [{position: culture.strategy.entryism, w: 3}]
+      - id: build
+        text: Build our own schools, clinics and food banks. Meet needs, earn trust.
+        evidence: [{position: culture.strategy.build-own-institutions, w: 3}]
+      - id: courts
+        text: Law schools and the bench. Train the lawyers, place the judges, and the change lasts.
+        evidence: [{position: culture.strategy.courts-and-law-schools, w: 3}]
+
+  - id: probe.culture.strategy.two-strategists
+    type: voices
+    title: Two strategists
+    text: >
+      Two strategists of a movement that keeps losing elections argue on a podcast. Who's right?
+    voices:
+      - {name: Ana, says: "We lose because we lost the culture forty years ago. The other side built schools, churches, radio. We built press releases."}
+      - {name: Ben, says: "Culture follows power. Win the government and the textbooks change by Christmas. Nobody ever won a culture war out of power."}
+    why: This asks where you think political change is won first.
+    options:
+      - id: ana
+        text: Ana. Win the culture and common sense first.
+        cause: culture
+        evidence: [{position: culture.strategy.hegemony-first, w: 3}]
+      - id: ben
+        text: Ben. Take power first.
+        cause: structures
+        evidence: [{position: culture.strategy.power-first, w: 3}]
+      - id: meta
+        text: Ana, further. Stories, music and religion matter more than any policy paper.
+        cause: culture
+        evidence: [{position: culture.strategy.metapolitics, w: 3}]
+      - id: institutions
+        text: Both miss it. Get into the universities, ministries and media and change them from inside.
+        cause: structures
+        evidence: [{position: culture.strategy.long-march, w: 3}]
+      - id: ideas
+        text: Both miss it. Win the experts and opinion-makers; the rest follows.
+        cause: ideas
+        evidence: [{position: culture.strategy.ideas-and-think-tanks, w: 3}]
+      - id: party
+        text: Ben, but the shortcut is to take over an existing big party from inside.
+        cause: structures
+        evidence: [{position: culture.strategy.entryism, w: 3}]
+      - id: own
+        text: Both miss it. Build your own clinics, schools and mutual aid. People trust who feeds them.
+        cause: interests
+        evidence: [{position: culture.strategy.build-own-institutions, w: 3}]
+      - id: judges
+        text: Both miss it. Elections come and go. Judges sit for thirty years.
+        cause: structures
+        evidence: [{position: culture.strategy.courts-and-law-schools, w: 3}]
+
+  - id: probe.culture.strategy.decade
+    type: allocation
+    title: The next ten years
+    text: >
+      You're planning your movement's next decade with a fixed number of organizers. Where should they go? You
+      have ten points.
+    why: This asks where you think change is won first.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: hegemony
+          text: Neighborhoods, workplaces and popular media, shifting common sense.
+          evidence: [{position: culture.strategy.hegemony-first, w: 2}]
+        - id: march
+          text: Careers inside universities, ministries and newsrooms.
+          evidence: [{position: culture.strategy.long-march, w: 2}]
+        - id: thinktanks
+          text: Think tanks, journals and policy shops.
+          evidence: [{position: culture.strategy.ideas-and-think-tanks, w: 2}]
+        - id: meta
+          text: Film, music, faith communities and online culture.
+          evidence: [{position: culture.strategy.metapolitics, w: 2}]
+        - id: power
+          text: Winning state power as fast as possible.
+          evidence: [{position: culture.strategy.power-first, w: 2}]
+        - id: entry
+          text: Joining and taking over a major party.
+          evidence: [{position: culture.strategy.entryism, w: 2}]
+        - id: own
+          text: Our own schools, clinics and mutual aid.
+          evidence: [{position: culture.strategy.build-own-institutions, w: 2}]
+        - id: courts
+          text: Law schools, legal networks and judgeships.
+          evidence: [{position: culture.strategy.courts-and-law-schools, w: 2}]
+    options:
+      - id: done
+        text: Done
+
+  # ---------------- consumption.choice ----------------
+  - id: probe.consumption.choice.shelf
+    type: scene
+    title: The coffee shelf
+    text: >
+      Supermarket, Tuesday evening. The fair-trade coffee costs twice as much as the store brand. Next to them
+      is a bag from a roaster two streets away, in between on price. Your child is pulling at your sleeve.
+      Which do you take, and why?
+    why: This asks whether you think what you buy changes the world.
+    options:
+      - id: fair
+        text: The fair-trade one. Every purchase is a vote for how farmers are treated.
+        evidence: [{position: consumption.choice.consumer-responsibility, w: 3}]
+      - id: cheap
+        text: The cheap one, without guilt. Owners decide what's produced and how; my shopping changes nothing.
+        evidence: [{position: consumption.choice.production-decides, w: 3}]
+      - id: whatever
+        text: Whatever I like. That's how the market works, and nobody should lecture shoppers.
+        evidence: [{position: consumption.choice.consumer-sovereignty, w: 3}]
+      - id: local
+        text: The local roaster. Keep the money and the jobs in the neighborhood.
+        evidence: [{position: consumption.choice.buy-local-and-national, w: 3}]
+      - id: less
+        text: None. We drink too much coffee anyway. Wanting less is right, whatever it changes.
+        evidence: [{position: consumption.choice.simplicity-as-virtue, w: 3}]
+      - id: boycott
+        text: Whatever's cheap, unless the farmworkers' union has called a boycott. Then I follow it.
+        evidence: [{position: consumption.choice.organized-boycott, w: 3}]
+
+  - id: probe.consumption.choice.montgomery
+    type: verdict
+    title: Montgomery, 1955
+    text: >
+      Montgomery, Alabama, 1955. Black residents boycott the city buses for 381 days. They walk, share cars and
+      ride with Black taxi drivers charging bus fares, until the courts end segregated seating. What does this
+      show about the power of buying and not buying?
+    why: This asks whether you think consumer choices change things, and how.
+    options:
+      - id: organized
+        text: Boycotts work when they're organized, with clear demands and discipline. Scattered choices don't.
+        evidence: [{position: consumption.choice.organized-boycott, w: 3}]
+      - id: each
+        text: Every person's choice to walk added up. Your own choices matter.
+        evidence: [{position: consumption.choice.consumer-responsibility, w: 3}]
+      - id: production
+        text: It worked because Black riders were most of the bus company's fares. Most shopping gives you no lever like that.
+        evidence: [{position: consumption.choice.production-decides, w: 3}]
+      - id: sovereign
+        text: Customers rule. The company learned it, and the market would have ended segregation sooner if allowed.
+        evidence: [{position: consumption.choice.consumer-sovereignty, w: 3}]
+      - id: own
+        text: The car pools and Black taxis showed it. Keep your money in your own community.
+        evidence: [{position: consumption.choice.buy-local-and-national, w: 3}]
+      - id: walking
+        text: The walking itself. Going without, with dignity, was a moral witness before it was a tactic.
+        evidence: [{position: consumption.choice.simplicity-as-virtue, w: 3}]
+
+  - id: probe.consumption.choice.flatmates
+    type: voices
+    title: Two flatmates
+    text: >
+      Two flatmates in Nairobi argue over a delivery of cheap imported clothes. Who's right?
+    voices:
+      - {name: Wanjiru, says: "Those clothes are why the mills here closed. Buy Kenyan, even if it costs more."}
+      - {name: Otieno, says: "I buy what I can afford and what I like. Nobody's going to tell me what to wear."}
+    why: This asks whether you think what you buy changes the world, and how.
+    options:
+      - id: wanjiru
+        text: Wanjiru. Buy local and national.
+        cause: interests
+        evidence: [{position: consumption.choice.buy-local-and-national, w: 3}]
+      - id: otieno
+        text: Otieno. The shopper decides, and that's how it should be.
+        cause: individuals
+        evidence: [{position: consumption.choice.consumer-sovereignty, w: 3}]
+      - id: ethical
+        text: Wanjiru, for a broader reason. What you buy shapes how workers everywhere are treated.
+        cause: ideas
+        evidence: [{position: consumption.choice.consumer-responsibility, w: 3}]
+      - id: trade
+        text: Both miss it. Trade deals and factory owners decided this, not shoppers.
+        cause: structures
+        evidence: [{position: consumption.choice.production-decides, w: 3}]
+      - id: union
+        text: Both miss it. Alone it's nothing. Organized, with the garment unions, a boycott could bite.
+        cause: structures
+        evidence: [{position: consumption.choice.organized-boycott, w: 3}]
+      - id: less
+        text: Both miss it. Buy less of everything. Contentment is worth more than another shirt.
+        cause: ideas
+        evidence: [{position: consumption.choice.simplicity-as-virtue, w: 3}]

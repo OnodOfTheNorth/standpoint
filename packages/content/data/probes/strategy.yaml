@@ -1,0 +1,535 @@
+nodes:
+  # ---------------- picket.line ----------------
+  - id: probe.picket.line.hospital-gate
+    type: scene
+    title: The hospital gate
+    text: >
+      The nurses at the hospital where you work as an agency cleaner are on strike. It's a legal strike; the
+      union balloted. There are twenty people at the gate with placards. Your agency says no shift, no pay,
+      and you're two weeks from rent. What do you do?
+    why: This asks what you think a picket line asks of you, and what you'd do at one.
+    options:
+      - id: never
+        text: Turn around. You don't cross a picket line. Ever.
+        evidence: [{position: picket.line.never-cross, w: 3}]
+      - id: need
+        text: Cross, with your head down. A picket line can't pay your rent.
+        evidence: [{position: picket.line.need-first, w: 3}]
+      - id: right
+        text: Cross. They have a right to strike and you have a right to work. They may try to persuade you, nothing more.
+        evidence: [{position: picket.line.right-to-work, w: 3}]
+      - id: lawful
+        text: Stay home. It's a lawful strike, and the law sets fair rules for both sides. You'd respect an illegal one less.
+        evidence: [{position: picket.line.lawful-strikes-only, w: 3}]
+      - id: police
+        text: Cross, and if they block you, call the police. Patients shouldn't be held hostage by a union.
+        evidence: [{position: picket.line.union-coercion, w: 3}]
+      - id: talk
+        text: Stop and talk to them. If they'll fight for the cleaners too, you're with them.
+        evidence: [{position: picket.line.win-the-scab, w: 3}]
+
+  - id: probe.picket.line.bus
+    type: voices
+    title: The bus
+    text: >
+      Johannesburg. A bus carrying replacement workers stops at the gate of a striking car plant. A striker
+      and a replacement worker shout at each other through the window. Who's right?
+    voices:
+      - {name: "The striker", says: "You're taking the bread from my children's mouths. When this is over, everyone will know your name."}
+      - {name: "The replacement worker", says: "Your children? I've had no job for two years. Your strike is my first wage."}
+    why: This asks how you see strikes, strikebreakers and the picket line.
+    options:
+      - id: striker
+        text: The striker. Crossing the line is betrayal, whatever the reason.
+        cause: interests
+        evidence: [{position: picket.line.never-cross, w: 3}]
+      - id: replacement
+        text: The replacement worker. His children need feeding too.
+        cause: interests
+        evidence: [{position: picket.line.need-first, w: 3}]
+      - id: both-workers
+        text: Both are workers. The striker should be talking to him, not threatening him. Win him over.
+        cause: structures
+        evidence: [{position: picket.line.win-the-scab, w: 3}]
+      - id: rights
+        text: The replacement worker has every right to the job. Threats like that are why pickets need policing.
+        cause: individuals
+        evidence:
+          - {position: picket.line.union-coercion, w: 3}
+          - {position: picket.line.right-to-work, w: 1}
+      - id: free
+        text: Both have rights. Strike if you like, work if you like, and nobody blocks anybody.
+        cause: ideas
+        evidence: [{position: picket.line.right-to-work, w: 3}]
+      - id: rules
+        text: It depends on the law. If the strike is lawful, replacement workers shouldn't be bused in at all.
+        cause: structures
+        evidence: [{position: picket.line.lawful-strikes-only, w: 3}]
+
+  - id: probe.picket.line.who-crosses
+    type: line
+    title: Who may cross?
+    text: Going down this list, who do you think does nothing wrong by crossing a picket line?
+    cases:
+      - A shopper crossing into a supermarket whose staff are on strike
+      - A manager going in to keep the computers running
+      - A single mother on a zero-hours contract
+      - A union member, when the strike broke the law
+      - A worker hired from outside just for the strike
+    why: This asks what you think a picket line asks of people, and of whom.
+    options:
+      - id: none
+        text: None of them. A picket line means don't cross, for everyone.
+        evidence: [{position: picket.line.never-cross, w: 3}]
+      - id: all
+        text: All of them. Nobody should be blocked from going to work or to the shops.
+        evidence:
+          - {position: picket.line.right-to-work, w: 3}
+          - {position: picket.line.union-coercion, w: 1}
+      - id: mother
+        text: The single mother, for certain. You can't ask someone with nothing to go without.
+        evidence: [{position: picket.line.need-first, w: 3}]
+      - id: illegal
+        text: The union member, if the strike broke the law. Respect lawful strikes; don't reward unlawful ones.
+        evidence: [{position: picket.line.lawful-strikes-only, w: 3}]
+      - id: police
+        text: All of them, and the police should make sure pickets don't stand in their way.
+        evidence: [{position: picket.line.union-coercion, w: 3}]
+      - id: win
+        text: The question's wrong. The pickets should be trying to bring every one of them over, not judging them.
+        evidence: [{position: picket.line.win-the-scab, w: 3}]
+
+  # ---------------- alliances.policy ----------------
+  - id: probe.alliances.policy.partners
+    type: scene
+    title: The partners
+    text: >
+      Your movement has grown fast, but not fast enough to win the national election alone. Three months to
+      go. Everyone has a list of possible partners. Whom do you argue for?
+    why: This asks with whom you think a movement should ally, and against whom.
+    options:
+      - id: united
+        text: The other workers' parties and unions, on concrete fights, each keeping its own banner.
+        evidence: [{position: alliances.policy.united-front, w: 3}]
+      - id: popular
+        text: Workers' parties, liberals and the middle classes together, to defend basic rights from the real danger.
+        evidence: [{position: alliances.policy.popular-front, w: 3}]
+      - id: alone
+        text: No one. Alliances with reformist leaders always sell out the base. Stay independent.
+        evidence: [{position: alliances.policy.class-against-class, w: 3}]
+      - id: national
+        text: Workers, farmers and local business owners, together against the foreign banks and their friends here.
+        evidence: [{position: alliances.policy.national-front, w: 3}]
+      - id: center
+        text: The sensible parties of center-left and center-right, against the fringes on both sides.
+        evidence: [{position: alliances.policy.center-coalition, w: 3}]
+      - id: right
+        text: Churchgoers, small business and patriots, against the people who look down on all three.
+        evidence: [{position: alliances.policy.fusion-of-the-right, w: 3}]
+      - id: rainbow
+        text: The poor of every color, origin and faith, around rent, wages and hospitals.
+        evidence: [{position: alliances.policy.rainbow-coalition, w: 3}]
+
+  - id: probe.alliances.policy.spain-1936
+    type: verdict
+    title: Spain, 1936
+    text: >
+      Spain, February 1936. Socialists, communists, left republicans and Catalan parties run together as the
+      Popular Front and win. The anarchist union, for once, does not campaign against voting. On the other side, the
+      Catholic right, monarchists and landowners run together. Where would you have stood?
+    why: This asks what alliances you think a movement should make, at a real juncture.
+    options:
+      - id: popular
+        text: With the Popular Front. Against what was coming, every democrat belonged together.
+        evidence: [{position: alliances.policy.popular-front, w: 3}]
+      - id: united
+        text: With the workers' parties in common action, but not tied to the liberal republicans' program.
+        evidence: [{position: alliances.policy.united-front, w: 3}]
+      - id: independent
+        text: Against the alliance. Tying workers to liberal politicians disarmed them for the fight that followed.
+        evidence: [{position: alliances.policy.class-against-class, w: 3}]
+      - id: right
+        text: With the united right. Faith, property and nation together against revolution.
+        evidence: [{position: alliances.policy.fusion-of-the-right, w: 3}]
+      - id: center
+        text: With neither bloc. A coalition of the center might have prevented the war.
+        evidence: [{position: alliances.policy.center-coalition, w: 3}]
+      - id: poor
+        text: With the landless laborers and the poor of every region, whatever their party.
+        evidence: [{position: alliances.policy.rainbow-coalition, w: 3}]
+      - id: national
+        text: With whoever would unite workers, peasants and national business against the foreign mining and power companies.
+        evidence: [{position: alliances.policy.national-front, w: 3}]
+
+  - id: probe.alliances.policy.union-hall
+    type: voices
+    title: The union hall
+    text: >
+      A union hall in Ohio, the week after a far-right candidate wins the county. Two organizers argue about
+      who to work with next time. Who's right?
+    voices:
+      - {name: Denise, says: "We go to every Black church, every Latino tenants' group, every white trailer park. Same rent, same boss. That's the coalition."}
+      - {name: Mike, says: "We go to the Democrats, the Chamber of Commerce, the Republicans who hate him. Whoever stops this guy."}
+    why: This asks with whom you think a movement should ally.
+    options:
+      - id: denise
+        text: Denise. The poor of every background, around what they share.
+        cause: structures
+        evidence: [{position: alliances.policy.rainbow-coalition, w: 3}]
+      - id: mike
+        text: Mike. Everyone sensible, against the fringe.
+        cause: individuals
+        evidence: [{position: alliances.policy.center-coalition, w: 3}]
+      - id: popular
+        text: Mike, but led by labor. Workers with liberals and the middle class, to defend basic rights.
+        cause: structures
+        evidence: [{position: alliances.policy.popular-front, w: 3}]
+      - id: united
+        text: Neither. Get every union and workers' group into common action, and let the parties follow.
+        cause: interests
+        evidence: [{position: alliances.policy.united-front, w: 3}]
+      - id: alone
+        text: Neither. Allying with the Democrats is how labor got here. Build independently.
+        cause: interests
+        evidence: [{position: alliances.policy.class-against-class, w: 3}]
+      - id: right
+        text: Both miss why he won. Faith, small business and patriotism together is a real majority.
+        cause: culture
+        evidence: [{position: alliances.policy.fusion-of-the-right, w: 3}]
+      - id: national
+        text: Both miss it. Unite workers and local owners against the corporations that moved the plants abroad.
+        cause: interests
+        evidence: [{position: alliances.policy.national-front, w: 2}]
+
+  # ---------------- change.means ----------------
+  - id: probe.change.means.valley
+    type: scene
+    title: The valley
+    text: >
+      A mining company has a permit to open a pit above your village in the Peruvian Andes. It will take the
+      river. The village assembly meets. Everyone agrees on stopping it; nobody agrees on how. What do you
+      argue for?
+    why: This asks by what means you think change should be pursued.
+    options:
+      - id: leave
+        text: Negotiate the best compensation and move. You won't beat a mining company.
+        evidence: [{position: change.means.individual-exit, w: 3}]
+      - id: blockade
+        text: Block the road. No trucks in, no trucks out, until the permit is withdrawn.
+        evidence: [{position: change.means.strike-and-direct-action, w: 3}]
+      - id: arms
+        text: If the police come shooting, the village must be armed and ready.
+        evidence: [{position: change.means.armed-struggle, w: 3}]
+      - id: nonviolent
+        text: Mass nonviolent resistance. Marches, sit-ins, a hunger strike. Make the world watch.
+        evidence: [{position: change.means.nonviolent-resistance, w: 3}]
+      - id: lobby
+        text: Elect a mayor who opposes it, lobby Lima, run a campaign.
+        evidence: [{position: change.means.lawful-persuasion, w: 3}]
+      - id: court
+        text: Hire lawyers. The consultation was flawed, and the courts can strike the permit down.
+        evidence: [{position: change.means.law-and-courts, w: 3}]
+      - id: witness
+        text: Pray, keep vigil at the church, and live so plainly that the company's workers are ashamed.
+        evidence: [{position: change.means.example-and-conversion, w: 3}]
+
+  - id: probe.change.means.line
+    type: line
+    title: How far would you go?
+    text: >
+      You believe your government is doing something gravely wrong, and the next election is three years off.
+      Going down this list, where do you stop?
+    cases:
+      - Write to your representative and vote
+      - Sue the government in court
+      - March, and refuse to pay a tax that funds it
+      - Join a general strike that shuts down the ports
+      - Take up arms
+    why: This asks what means you think are right for changing things, and where you stop.
+    options:
+      - id: before
+        text: Before the list. Change yourself and live rightly; hearts change before laws do.
+        evidence: [{position: change.means.example-and-conversion, w: 3}]
+      - id: one
+        text: After the first. Argue, vote, campaign. That's the job.
+        evidence: [{position: change.means.lawful-persuasion, w: 3}]
+      - id: two
+        text: After the second. The courts are the strongest lever there is.
+        evidence: [{position: change.means.law-and-courts, w: 3}]
+      - id: three
+        text: After the third. Mass civil disobedience, but never violence.
+        evidence: [{position: change.means.nonviolent-resistance, w: 3}]
+      - id: four
+        text: After the fourth. Stop the economy and they have to listen.
+        evidence: [{position: change.means.strike-and-direct-action, w: 3}]
+      - id: five
+        text: All five, if they answer with violence.
+        evidence: [{position: change.means.armed-struggle, w: 3}]
+      - id: leave
+        text: None of it. If it's that bad, I'd move somewhere better.
+        evidence: [{position: change.means.individual-exit, w: 3}]
+
+  - id: probe.change.means.week
+    type: allocation
+    title: Your movement's week
+    text: >
+      Your movement has a hundred committed members and ten hours each per week. How should the time go? You
+      have ten points.
+    why: This asks which means of change you put your effort into.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: campaign
+          text: Canvassing, lobbying and election campaigns.
+          evidence: [{position: change.means.lawful-persuasion, w: 2}]
+        - id: lawyers
+          text: Legal cases and court challenges.
+          evidence: [{position: change.means.law-and-courts, w: 2}]
+        - id: strikes
+          text: Building toward strikes and occupations.
+          evidence: [{position: change.means.strike-and-direct-action, w: 2}]
+        - id: civil
+          text: Training for mass nonviolent civil disobedience.
+          evidence: [{position: change.means.nonviolent-resistance, w: 2}]
+        - id: defense
+          text: Preparing to defend ourselves by force if it comes to that.
+          evidence: [{position: change.means.armed-struggle, w: 2}]
+        - id: witness
+          text: Prayer, service and living by example.
+          evidence: [{position: change.means.example-and-conversion, w: 2}]
+        - id: own
+          text: Members' own lives, careers and moving somewhere better.
+          evidence: [{position: change.means.individual-exit, w: 2}]
+    options:
+      - id: done
+        text: Done
+
+  # ---------------- change.tempo ----------------
+  - id: probe.change.tempo.mandate
+    type: scene
+    title: The mandate
+    text: >
+      Your side has just won a big majority on a promise to change how the country runs. You chair the
+      transition team. The first cabinet meeting is tomorrow. How fast do you go?
+    why: This asks how fast you think deep change should come.
+    options:
+      - id: now
+        text: Everything in the first hundred days. Windows like this close, and the other side regroups.
+        evidence: [{position: change.tempo.seize-the-moment, w: 3}]
+      - id: shock
+        text: All at once. Half-measures leave everyone suffering the old system and the new.
+        evidence: [{position: change.tempo.shock-therapy, w: 3}]
+      - id: one-reform
+        text: One reform at a time, each one popular enough to survive the next election.
+        evidence: [{position: change.tempo.inevitability-of-gradualness, w: 3}]
+      - id: organic
+        text: Slowly. Fix what's broken, keep what works, and let people adjust.
+        evidence: [{position: change.tempo.slow-and-organic, w: 3}]
+      - id: long
+        text: Treat this as one battle in a war of decades. Use the term to build strength, not to spend it.
+        evidence: [{position: change.tempo.protracted-struggle, w: 3}]
+      - id: ripe
+        text: Don't force it. Prepare, and act when conditions are ripe; going early is how movements get crushed.
+        evidence: [{position: change.tempo.wait-for-conditions, w: 3}]
+      - id: climate
+        text: Whatever the climate requires. The deadline is physics, not your re-election.
+        evidence: [{position: change.tempo.ecological-deadline, w: 3}]
+
+  - id: probe.change.tempo.coal
+    type: line
+    title: The coal timetable
+    text: >
+      Your country gets seventy percent of its power from coal, and two hundred thousand jobs depend on it.
+      Going down this list of timetables, which do you back?
+    cases:
+      - Close every coal plant within two years
+      - Close them all within the decade
+      - One plant at a time over thirty years, each with a deal for its workers
+      - When cheaper alternatives make coal die on its own
+      - When the movement is strong enough to take the whole energy sector into its hands
+    why: This asks how fast you think change should come, with a concrete clock.
+    options:
+      - id: two
+        text: Two years. Slow transitions never finish.
+        evidence:
+          - {position: change.tempo.shock-therapy, w: 3}
+          - {position: change.tempo.ecological-deadline, w: 1}
+      - id: decade
+        text: The decade. The climate sets the deadline, not the politicians.
+        evidence: [{position: change.tempo.ecological-deadline, w: 3}]
+      - id: gradual
+        text: One plant at a time. Each step accepted before the next.
+        evidence: [{position: change.tempo.inevitability-of-gradualness, w: 3}]
+      - id: organic
+        text: Let it happen as towns adapt. Forced timetables wreck communities.
+        evidence: [{position: change.tempo.slow-and-organic, w: 3}]
+      - id: ripe
+        text: When conditions are there, cheaper power and a movement ready. Prepare until then.
+        evidence: [{position: change.tempo.wait-for-conditions, w: 3}]
+      - id: long
+        text: The last. Who owns energy is a fight of decades, and you build for it.
+        evidence: [{position: change.tempo.protracted-struggle, w: 3}]
+      - id: seize
+        text: Whenever the next crisis opens a window. Have the plan ready and move all at once then.
+        evidence: [{position: change.tempo.seize-the-moment, w: 3}]
+
+  - id: probe.change.tempo.organizers
+    type: voices
+    title: Two organizers
+    text: >
+      Two organizers of a landless farmworkers' movement in Brazil argue in a tent at an occupied estate.
+      Who's right?
+    voices:
+      - {name: Raimunda, says: "The government is weak, the courts are split, the press is distracted. Occupy twenty estates this month. This chance won't come again."}
+      - {name: Severino, says: "We've lasted forty years by being patient. Twenty occupations and we lose everything. Build the schools and cooperatives first."}
+    why: This asks how fast you think change should come.
+    options:
+      - id: raimunda
+        text: Raimunda. Seize the moment.
+        cause: chance
+        evidence: [{position: change.tempo.seize-the-moment, w: 3}]
+      - id: severino
+        text: Severino. A long struggle, built patiently.
+        cause: structures
+        evidence: [{position: change.tempo.protracted-struggle, w: 3}]
+      - id: law
+        text: Neither. Win land reform law step by step, one law at a time.
+        cause: structures
+        evidence: [{position: change.tempo.inevitability-of-gradualness, w: 3}]
+      - id: organic
+        text: Neither. Change in the countryside should come slowly, through custom and agreement.
+        cause: culture
+        evidence: [{position: change.tempo.slow-and-organic, w: 3}]
+      - id: all
+        text: Both are too timid. Redistribute it all at once and let the courts catch up.
+        cause: individuals
+        evidence: [{position: change.tempo.shock-therapy, w: 3}]
+      - id: ripe
+        text: Severino, for a different reason. Conditions aren't ripe; prepare until they are.
+        cause: structures
+        evidence: [{position: change.tempo.wait-for-conditions, w: 3}]
+      - id: climate
+        text: Both miss the clock. The forests and the climate won't wait forty years for anyone.
+        cause: nature
+        evidence: [{position: change.tempo.ecological-deadline, w: 3}]
+
+  # ---------------- state.relation ----------------
+  - id: probe.state.relation.millions
+    type: scene
+    title: A million members
+    text: >
+      Your movement now has a million members and the government is wobbling. At the national assembly,
+      delegates must decide one thing: what do we do with the state?
+    why: This asks what you think a movement should do with the existing state.
+    options:
+      - id: capture
+        text: Win the next election and use the ministries, police and courts as they are.
+        evidence: [{position: state.relation.capture-and-use, w: 3}]
+      - id: smash
+        text: Break up the old state and build a new one from workers' councils.
+        evidence: [{position: state.relation.smash-and-replace, w: 3}]
+      - id: strong
+        text: Take power and build a strong state. It can wither once our enemies are gone, not before.
+        evidence: [{position: state.relation.strengthen-then-wither, w: 3}]
+      - id: abolish
+        text: Abolish it outright. Free federations of communes, and no new state in between.
+        evidence: [{position: state.relation.abolish-at-once, w: 3}]
+      - id: autonomy
+        text: Ignore it. Build our own self-governing communities beside it.
+        evidence: [{position: state.relation.exit-and-build, w: 3}]
+      - id: faith
+        text: Withdraw into communities of faith and virtue, and let the hostile mainstream go its way.
+        evidence: [{position: state.relation.parallel-polis, w: 3}]
+      - id: markets
+        text: Exit through markets, new currencies and new jurisdictions it can't reach.
+        evidence: [{position: state.relation.market-exit, w: 3}]
+      - id: restore
+        text: Take it back from the people who hijacked it and restore it to the nation.
+        evidence: [{position: state.relation.restore, w: 3}]
+      - id: shrink
+        text: Cut it back to defense, courts and police, and hand the rest back to people.
+        evidence: [{position: state.relation.shrink, w: 3}]
+
+  - id: probe.state.relation.chile
+    type: verdict
+    title: Chile, 1970
+    text: >
+      Chile, 1970. Salvador Allende wins the presidency and sets out to build socialism through the existing
+      constitution, parliament and army, nationalizing copper and banks. Three years later the army bombs
+      the presidential palace. Looking back, what was the lesson?
+    why: This asks what you think a movement should do with the existing state.
+    options:
+      - id: capture
+        text: The road was right. Win the state and use it; the coup was a crime, not a refutation.
+        evidence: [{position: state.relation.capture-and-use, w: 3}]
+      - id: smash
+        text: The old state, army included, had to be broken and replaced. Allende left it standing and it killed him.
+        evidence: [{position: state.relation.smash-and-replace, w: 3}]
+      - id: strong
+        text: A revolution under that much pressure needs a strong state of its own before anything else.
+        evidence: [{position: state.relation.strengthen-then-wither, w: 3}]
+      - id: abolish
+        text: Any state, old or new, would have crushed the workers' cordones in the end. Abolish it.
+        evidence: [{position: state.relation.abolish-at-once, w: 3}]
+      - id: build
+        text: Don't bet on the state at all. Build autonomy in the factories and towns beside it.
+        evidence: [{position: state.relation.exit-and-build, w: 3}]
+      - id: restore
+        text: The state had been hijacked by a faction. The task was to restore it to its proper role.
+        evidence: [{position: state.relation.restore, w: 3}]
+      - id: shrink
+        text: Allende's state grew too big. The answer is a smaller state that nobody can use that way.
+        evidence: [{position: state.relation.shrink, w: 3}]
+      - id: faith
+        text: Neither side. People of faith should build their own communities apart from both.
+        evidence: [{position: state.relation.parallel-polis, w: 3}]
+      - id: exit
+        text: Neither side. Build outside any state's reach, with markets and contracts no general can seize.
+        evidence: [{position: state.relation.market-exit, w: 3}]
+
+  - id: probe.state.relation.cousins
+    type: voices
+    title: The cousins
+    text: >
+      A family wedding in Chiapas. Two cousins, both fed up with the government, argue at the back of the hall.
+      Who's right?
+    voices:
+      - {name: Ernesto, says: "Stop asking the government for anything. We run our own schools, our own clinics, our own justice. Let them come and look."}
+      - {name: Lupita, says: "Run for office. Win the municipality, then the state. A school we run on our own is fine; a ministry we run is better."}
+    why: This asks what you think should be done with the existing state.
+    options:
+      - id: ernesto
+        text: Ernesto. Build autonomy beside the state.
+        cause: structures
+        evidence: [{position: state.relation.exit-and-build, w: 3}]
+      - id: lupita
+        text: Lupita. Win the state and use it.
+        cause: structures
+        evidence: [{position: state.relation.capture-and-use, w: 3}]
+      - id: smash
+        text: Both stop short. The old state must be broken and replaced by a workers' state.
+        cause: structures
+        evidence: [{position: state.relation.smash-and-replace, w: 3}]
+      - id: abolish
+        text: Ernesto, further. No state at all, ever, not even a new one.
+        cause: structures
+        evidence: [{position: state.relation.abolish-at-once, w: 3}]
+      - id: strong
+        text: Lupita, further. Take the whole state and make it strong enough to survive its enemies.
+        cause: interests
+        evidence: [{position: state.relation.strengthen-then-wither, w: 3}]
+      - id: faith
+        text: Ernesto, nearly. The parish and the family should build their own world apart from a hostile one.
+        cause: divine
+        evidence: [{position: state.relation.parallel-polis, w: 3}]
+      - id: restore
+        text: Both miss it. The state belongs to the nation; throw out the people who stole it and restore it.
+        cause: individuals
+        evidence: [{position: state.relation.restore, w: 3}]
+      - id: shrink
+        text: Both miss it. Shrink the state so there's less for anyone to fight over.
+        cause: structures
+        evidence:
+          - {position: state.relation.shrink, w: 3}
+          - {position: state.relation.market-exit, w: 1}

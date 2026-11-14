@@ -1,0 +1,545 @@
+nodes:
+  # ---------------- conscience.refusal ----------------
+  - id: probe.conscience.refusal.call-up-line
+    type: line
+    title: The call-up
+    text: >
+      Your country is at war on its border and brings back conscription. Going down this list, where does a
+      conscript stop owing the call?
+    cases:
+      - Hold the line against the invading army
+      - Drive a supply truck or work as a medic behind the lines
+      - Work a shift at the shell factory
+      - Cross the border and occupy the enemy's capital
+      - Guard a camp of detained enemy civilians
+    why: This asks when, if ever, a person may refuse to fight or to make the weapons.
+    options:
+      - id: never
+        text: Nowhere. Once the country calls, you go where it sends you and leave the war's justice to those elected to judge it.
+        evidence:
+          - {position: conscience.refusal.duty-to-serve, w: 3}
+          - {position: conscience.refusal.defense-is-honest-work, w: 1}
+      - id: after-three
+        text: After the third. Defending your country is a duty; invading somebody else's is a war you may refuse.
+        evidence: [{position: conscience.refusal.selective-objection, w: 3}]
+      - id: orders
+        text: Serve through all of it, but refuse any order to mistreat the people in that camp. That's a crime, not a duty.
+        evidence:
+          - {position: conscience.refusal.unlawful-orders, w: 3}
+          - {position: conscience.refusal.duty-to-serve, w: 1}
+      - id: conscience
+        text: Wherever a sincere conscience stops you, as long as you do some civilian service instead.
+        evidence: [{position: conscience.refusal.exemption-with-service, w: 3}]
+      - id: before-one
+        text: Before the first. Killing is wrong, and so is making the shells that do it.
+        evidence:
+          - {position: conscience.refusal.absolute-pacifism, w: 3}
+          - {position: conscience.refusal.convert-production, w: 1}
+      - id: turn
+        text: The list is the wrong question. Conscripts on both sides should stop shooting each other and turn on whoever started it.
+        evidence: [{position: conscience.refusal.revolutionary-defeatism, w: 3}]
+
+  - id: probe.conscience.refusal.cousins
+    type: voices
+    title: The letter
+    text: >
+      Bogotá. Your cousin has just received his call-up letter: eighteen months. Over dinner, two relatives
+      tell him what to do. Who's right?
+    voices:
+      - {name: "Uncle Hernán", says: "You owe the army eighteen months. Your grandfather did it, I did it. The country doesn't run on excuses."}
+      - {name: "Aunt Lucía", says: "Refuse. The court says conscience counts. Do social service at the hospital and keep your hands clean."}
+    why: This asks what a citizen owes when the state calls him to arms, and where conscience comes in.
+    options:
+      - id: hernan
+        text: Hernán. Service is owed, not chosen.
+        cause: culture
+        evidence: [{position: conscience.refusal.duty-to-serve, w: 3}]
+      - id: lucia
+        text: Lucía. Respect his conscience, and let him serve the country another way.
+        cause: ideas
+        evidence: [{position: conscience.refusal.exemption-with-service, w: 3}]
+      - id: orders
+        text: Hernán, mostly. Serve, but know in advance which orders you'd refuse. Some things no sergeant can command.
+        cause: ideas
+        evidence: [{position: conscience.refusal.unlawful-orders, w: 3}]
+      - id: pacifist
+        text: Lucía doesn't go far enough. No uniform of any kind, armed or not, whatever it costs him.
+        cause: ideas
+        evidence:
+          - {position: conscience.refusal.absolute-pacifism, w: 3}
+          - {position: conscience.refusal.exemption-with-service, w: -1}
+      - id: which-war
+        text: It depends which war. Fight if the country is attacked; refuse to be sent against poor farmers in someone's land dispute.
+        cause: interests
+        evidence: [{position: conscience.refusal.selective-objection, w: 3}]
+      - id: inside
+        text: Both miss it. Go in, and talk to the other conscripts. Wars end when soldiers stop fighting for the people who sent them.
+        cause: structures
+        evidence: [{position: conscience.refusal.revolutionary-defeatism, w: 3}]
+
+  - id: probe.conscience.refusal.shell-contract
+    type: scene
+    title: The shell contract
+    text: >
+      You run a lathe at a plant in Pune that makes tractor parts. Orders are down and layoffs are rumored.
+      Then the defense ministry offers a contract for artillery shells that would keep every machine busy for
+      three years. The union meets tonight. What do you say?
+    why: This asks whether making weapons is honest work, and when a worker may refuse it.
+    conditions:
+      - id: lawful
+        text: It depends whether the shells will be used within the laws of war.
+        evidence: [{position: conscience.refusal.unlawful-orders, w: 2}]
+      - id: whose-war
+        text: It depends whether the country is defending itself or attacking someone.
+        evidence: [{position: conscience.refusal.selective-objection, w: 2}]
+    options:
+      - id: take
+        text: Take it. Making the country's defenses is honest work, and the jobs are real.
+        evidence: [{position: conscience.refusal.defense-is-honest-work, w: 3}]
+      - id: duty
+        text: If the country needs shells, we make shells. That's what citizens owe.
+        evidence:
+          - {position: conscience.refusal.duty-to-serve, w: 2}
+          - {position: conscience.refusal.defense-is-honest-work, w: 1}
+      - id: convert
+        text: Refuse as a union, and demand the plant build something useful instead, like pumps for the farms.
+        evidence: [{position: conscience.refusal.convert-production, w: 3}]
+      - id: move
+        text: Ask to be moved to the tractor line. You won't stop the others, but you won't make shells yourself.
+        evidence: [{position: conscience.refusal.exemption-with-service, w: 2}]
+      - id: quit
+        text: Quit if it goes through. You won't make weapons, whatever happens to your job.
+        evidence: [{position: conscience.refusal.absolute-pacifism, w: 3}]
+      - id: organize
+        text: Take the work and organize the floor. If the war turns out to be for someone's profits, the shells can stop at the gate.
+        evidence: [{position: conscience.refusal.revolutionary-defeatism, w: 2}]
+
+  # ---------------- clientelism.patronage ----------------
+  - id: probe.clientelism.patronage.rice-bags
+    type: explanation
+    title: The rice bags
+    text: >
+      On the edge of Recife, the councillor's people hand out rice, school fees and jobs at the water company
+      before every election. The same family has won the district for thirty years. Why does this work?
+    why: This asks what you think patronage politics is, and what kind of cause you reach for.
+    options:
+      - id: corruption
+        text: Weak institutions let crooks buy power. Every bag of rice is a bribe paid with public money.
+        cause: individuals
+        evidence: [{position: clientelism.patronage.corruption, w: 3}]
+      - id: survival
+        text: The councillor's people are the only ones who show up when a child is sick. Nobody is fooled; they're surviving.
+        cause: interests
+        evidence: [{position: clientelism.patronage.survival, w: 3}]
+      - id: bond
+        text: It's a relationship, not a sale. The family knows everyone, people owe each other, and that's how trust works there.
+        cause: culture
+        evidence: [{position: clientelism.patronage.community-bond, w: 3}]
+      - id: class
+        text: It keeps the poor tied one by one to a boss, so they never organize together against the people on top.
+        cause: structures
+        evidence: [{position: clientelism.patronage.class-control, w: 3}]
+      - id: spoils
+        text: The state has too many jobs and contracts to hand out. Shrink what it controls and there's nothing left to trade.
+        cause: structures
+        evidence: [{position: clientelism.patronage.big-state-spoils, w: 3}]
+      - id: machine
+        text: Because it delivers. It's how families without money or connections get a job and a say.
+        cause: interests
+        evidence: [{position: clientelism.patronage.machine-delivers, w: 3}]
+
+  - id: probe.clientelism.patronage.roads-office
+    type: scene
+    title: The roads office
+    text: >
+      You're 24 and out of work in Mombasa. The ward boss offers you a job at the county roads office, starting
+      Monday, if you canvass for his candidate until the vote. Your mother says he paid for your father's
+      funeral. What do you do?
+    why: This asks how you see the trade of jobs for votes when it is offered to you.
+    options:
+      - id: take
+        text: Take it. Principles don't pay rent, and he's offering what the government never has.
+        evidence:
+          - {position: clientelism.patronage.survival, w: 3}
+          - {position: clientelism.patronage.machine-delivers, w: 1}
+      - id: loyal
+        text: Take it and work hard for him. He stood by your family; you don't forget that.
+        evidence: [{position: clientelism.patronage.community-bond, w: 3}]
+      - id: report
+        text: Refuse, and report it. This is how public money turns into private loyalty.
+        evidence: [{position: clientelism.patronage.corruption, w: 3}]
+      - id: organize
+        text: Refuse, and go find the other jobless young men he's been buying one at a time.
+        evidence: [{position: clientelism.patronage.class-control, w: 3}]
+      - id: spoils
+        text: Refuse. The real problem is a county with so many jobs to give away that this is how they get filled.
+        evidence: [{position: clientelism.patronage.big-state-spoils, w: 3}]
+      - id: inside
+        text: Take it, then make sure people from your estate get the next ten jobs. That's how outsiders get in.
+        evidence: [{position: clientelism.patronage.machine-delivers, w: 3}]
+
+  - id: probe.clientelism.patronage.favor-line
+    type: line
+    title: Favor or fix?
+    text: Going down this list, where does a politician's help turn into something you'd call wrong?
+    cases:
+      - The councillor's office helps a widow fill in her pension forms
+      - The party pays for a funeral in the neighborhood
+      - Supporters get jobs at the market authority
+      - Food parcels arrive with the candidate's face on them the week before the vote
+      - Families who voted the wrong way lose their market stall
+    why: This asks where you draw the line between help, loyalty and corruption in local politics.
+    options:
+      - id: three
+        text: At the third. Any public job handed out for loyalty is corruption.
+        evidence: [{position: clientelism.patronage.corruption, w: 3}]
+      - id: last
+        text: Only the last. The rest is how politics has always worked among people who know each other.
+        evidence:
+          - {position: clientelism.patronage.community-bond, w: 2}
+          - {position: clientelism.patronage.machine-delivers, w: 2}
+      - id: coercion
+        text: Where the poor are threatened, not where they're helped. If the parcels feed people, blame whoever left them hungry.
+        evidence: [{position: clientelism.patronage.survival, w: 3}]
+      - id: two
+        text: At the second. The whole list is one thing, keeping the poor grateful, dependent and in line.
+        evidence: [{position: clientelism.patronage.class-control, w: 3}]
+      - id: smaller
+        text: The line misses it. Give the state fewer jobs and less money to hand out, and the whole list shrinks.
+        evidence: [{position: clientelism.patronage.big-state-spoils, w: 3}]
+
+  # ---------------- police.accountability ----------------
+  - id: probe.police.accountability.video
+    type: scene
+    title: The video
+    text: >
+      A phone video shows an officer in your city kneeling on a handcuffed man's back until he stops moving.
+      The man is in hospital. The department announces it will investigate itself. What should happen now?
+    why: This asks who you think should hold the police to account, and how.
+    options:
+      - id: back
+        text: Wait for the facts. A video is forty seconds of a long night, and officers need to know the public is behind them.
+        evidence: [{position: police.accountability.back-the-police, w: 3}]
+      - id: standards
+        text: Let the internal review run, then discipline him, retrain the unit and put cameras on every officer.
+        evidence: [{position: police.accountability.professional-standards, w: 3}]
+      - id: civilian
+        text: Take it out of the department's hands. An independent board, a real prosecutor, no special legal shield.
+        evidence: [{position: police.accountability.civilian-oversight, w: 3}]
+      - id: community
+        text: The neighborhoods he patrols should have an elected board that can fire him and his chief.
+        evidence: [{position: police.accountability.community-control, w: 3}]
+      - id: abolition
+        text: Reviews never change anything. Cut the department's budget and send other people to calls like this one.
+        evidence: [{position: police.accountability.abolition, w: 3}]
+      - id: sue
+        text: The man should sue him personally, like anyone else who hurt someone. His house on the line, not the taxpayers' money.
+        evidence: [{position: police.accountability.personal-liability, w: 3}]
+
+  - id: probe.police.accountability.settlement
+    type: allocation
+    title: After the settlement
+    text: >
+      Your city just paid a large settlement over a death in police custody. The council sets aside ten
+      million for "never again" and asks residents how to divide it. You have ten points.
+    why: This asks what you think actually makes police answerable when they do wrong.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: support
+          text: Better pay, counseling and backup for officers, so fewer burn out and lash out.
+          evidence: [{position: police.accountability.back-the-police, w: 2}]
+        - id: training
+          text: Training, body cameras and a tougher internal affairs unit.
+          evidence: [{position: police.accountability.professional-standards, w: 2}]
+        - id: board
+          text: An independent investigators' office with its own prosecutor.
+          evidence: [{position: police.accountability.civilian-oversight, w: 2}]
+        - id: councils
+          text: Elected neighborhood boards that hire and fire local commanders.
+          evidence: [{position: police.accountability.community-control, w: 2}]
+        - id: alternatives
+          text: Crisis teams, youth jobs and housing, paid for by shrinking the force.
+          evidence: [{position: police.accountability.abolition, w: 2}]
+        - id: lawyers
+          text: Legal aid for people suing individual officers for damages.
+          evidence: [{position: police.accountability.personal-liability, w: 2}]
+    options:
+      - id: done
+        text: Done
+
+  - id: probe.police.accountability.checkpoint
+    type: voices
+    title: After the checkpoint
+    text: >
+      São Paulo. At a public hearing after a teenager is shot at a police checkpoint, two people take the
+      microphone. Who's right?
+    voices:
+      - {name: "A sergeant with twenty years on the force", says: "Every new rule makes my officers hesitate, and hesitation gets them killed. Back them or lose them."}
+      - {name: "The teenager's mother", says: "The police investigated the police and found nothing. Someone outside the force has to judge this."}
+    why: This asks who you think should judge the police when they do wrong.
+    options:
+      - id: sergeant
+        text: The sergeant. Officers in danger need support, not suspicion.
+        cause: interests
+        evidence: [{position: police.accountability.back-the-police, w: 3}]
+      - id: mother
+        text: The mother. An independent body, and prosecution when it's warranted.
+        cause: structures
+        evidence: [{position: police.accountability.civilian-oversight, w: 3}]
+      - id: both-better
+        text: Both want better police. Train them properly, film everything, and fire the bad ones fast.
+        cause: individuals
+        evidence: [{position: police.accountability.professional-standards, w: 3}]
+      - id: neighborhood
+        text: Both miss it. The neighborhood itself should control who polices it.
+        cause: structures
+        evidence: [{position: police.accountability.community-control, w: 3}]
+      - id: fewer
+        text: Both miss it. The answer is fewer police, not better-watched police.
+        cause: structures
+        evidence: [{position: police.accountability.abolition, w: 3}]
+      - id: courts
+        text: The mother, and the courts are the place. No immunity; officers pay damages themselves.
+        cause: individuals
+        evidence:
+          - {position: police.accountability.personal-liability, w: 3}
+          - {position: police.accountability.civilian-oversight, w: 1}
+
+  # ---------------- rights.basis ----------------
+  - id: probe.rights.basis.widow
+    type: explanation
+    title: The widow's field
+    text: >
+      In a village in Malawi, a widow is told by her late husband's brothers and a local official that the
+      field she has farmed for twenty years is no longer hers. If she has a right to it, where does that right
+      come from?
+    why: This asks where you think rights come from.
+    options:
+      - id: natural
+        text: From being a person who worked that land. It was hers before any official had a say.
+        cause: nature
+        evidence: [{position: rights.basis.natural-rights, w: 3}]
+      - id: natural-law
+        text: From the moral law God built into human nature. Her right comes with her duty to feed her children.
+        cause: divine
+        evidence: [{position: rights.basis.natural-law-duties, w: 3}]
+      - id: utility
+        text: From a rule that makes everyone better off. Secure land means more food and fewer feuds.
+        cause: interests
+        evidence: [{position: rights.basis.utility, w: 3}]
+      - id: struggle
+        text: From nowhere, until the village women organize and make the brothers and the official back down.
+        cause: interests
+        evidence: [{position: rights.basis.won-in-struggle, w: 3}]
+      - id: custom
+        text: From the customs her people built and handed down. If they protect widows, that's her title.
+        cause: culture
+        evidence: [{position: rights.basis.inheritance, w: 3}]
+      - id: membership
+        text: From the country she belongs to. A right no state will enforce is only a wish.
+        cause: structures
+        evidence: [{position: rights.basis.membership, w: 3}]
+      - id: revealed
+        text: From God's revealed law, which gives a widow her share whatever the brothers say.
+        cause: divine
+        evidence: [{position: rights.basis.revealed-law, w: 3}]
+      - id: universal
+        text: From the equal dignity of every human being, which the world's nations have written down and signed.
+        cause: ideas
+        evidence: [{position: rights.basis.universal-consensus, w: 3}]
+
+  - id: probe.rights.basis.preamble
+    type: scene
+    title: The preamble
+    text: >
+      You sit on the drafting committee for a new constitution in Tunis. Everyone agrees on the list of
+      rights. The fight is over the first sentence, the one that says where they come from. Which do you vote
+      for?
+    why: This asks what you think grounds rights, when you have to put it in writing.
+    options:
+      - id: natural
+        text: '"These rights belong to every person by nature; this constitution recognizes them and grants none."'
+        evidence: [{position: rights.basis.natural-rights, w: 3}]
+      - id: revealed
+        text: '"These rights are given by God, and no law may contradict His law."'
+        evidence: [{position: rights.basis.revealed-law, w: 3}]
+      - id: natural-law
+        text: '"Every right carries a duty, and both serve the common good under the moral law."'
+        evidence: [{position: rights.basis.natural-law-duties, w: 3}]
+      - id: struggle
+        text: '"These rights were won by the people in the streets and will be kept by the people."'
+        evidence: [{position: rights.basis.won-in-struggle, w: 3}]
+      - id: membership
+        text: '"These are the rights citizens of this republic guarantee to one another."'
+        evidence: [{position: rights.basis.membership, w: 3}]
+      - id: universal
+        text: '"In line with the Universal Declaration and the treaties this country has signed."'
+        evidence: [{position: rights.basis.universal-consensus, w: 3}]
+      - id: inheritance
+        text: '"Drawing on the liberties and customs our ancestors handed down."'
+        evidence: [{position: rights.basis.inheritance, w: 3}]
+      - id: utility
+        text: Skip the grand sentence. Rights are rules we keep because they work; say so, or say nothing.
+        evidence: [{position: rights.basis.utility, w: 3}]
+
+  - id: probe.rights.basis.two-lawyers
+    type: voices
+    title: Two lawyers
+    text: >
+      Two human rights lawyers share a taxi in Manila after losing a case. They're arguing about what they're
+      even defending. Who's right?
+    voices:
+      - {name: Teresa, says: "Rights are written in our nature. Governments don't hand them out; they can only respect them or trample them."}
+      - {name: Paolo, says: "Every right you have, somebody went on strike or to prison for. Rights are what organized people can hold onto."}
+    why: This asks where rights come from, and so what you are defending when you defend them.
+    options:
+      - id: teresa
+        text: Teresa.
+        cause: nature
+        evidence: [{position: rights.basis.natural-rights, w: 3}]
+      - id: paolo
+        text: Paolo.
+        cause: interests
+        evidence: [{position: rights.basis.won-in-struggle, w: 3}]
+      - id: god
+        text: Teresa, nearly. Nature has an author, and rights come with duties to the common good.
+        cause: divine
+        evidence:
+          - {position: rights.basis.natural-law-duties, w: 3}
+          - {position: rights.basis.revealed-law, w: 1}
+      - id: scripture
+        text: Neither. Rights come from God's revealed law, not from nature or from strikes.
+        cause: divine
+        evidence: [{position: rights.basis.revealed-law, w: 3}]
+      - id: citizens
+        text: Both miss it. A right means something only when your own country stands behind it.
+        cause: structures
+        evidence: [{position: rights.basis.membership, w: 3}]
+      - id: inherited
+        text: Both miss it. Rights are liberties handed down and tested over generations.
+        cause: culture
+        evidence: [{position: rights.basis.inheritance, w: 3}]
+      - id: useful
+        text: Both are too grand. Rights are useful conventions we keep because they make life better.
+        cause: interests
+        evidence: [{position: rights.basis.utility, w: 3}]
+      - id: world
+        text: Both miss the agreement the world's nations made after 1945 on equal human dignity.
+        cause: ideas
+        evidence: [{position: rights.basis.universal-consensus, w: 3}]
+
+  # ---------------- liberty.concept ----------------
+  - id: probe.liberty.concept.rafael
+    type: scene
+    title: Is Rafael free?
+    text: >
+      Rafael drives for a ride app in Mexico City. No boss, no fixed hours, nobody tells him what to do. He
+      works seventy hours a week to pay off the car, and the app can switch him off without saying why. Is
+      Rafael free?
+    why: This asks what you mean by liberty.
+    options:
+      - id: yes
+        text: Yes. Nobody forces him. A hard choice is still a choice.
+        evidence: [{position: liberty.concept.non-interference, w: 3}]
+      - id: mercy
+        text: No. He's at the mercy of an app that can cut him off for any reason. That's the opposite of free.
+        evidence: [{position: liberty.concept.non-domination, w: 3}]
+      - id: means
+        text: Not really. Without savings, rest or health cover, he can't actually live any other way.
+        evidence: [{position: liberty.concept.capability, w: 3}]
+      - id: mastery
+        text: No. He sells his life by the hour, and the people who drive have no say over how any of it runs.
+        evidence: [{position: liberty.concept.collective-mastery, w: 3}]
+      - id: together
+        text: No one is free alone. He'd be free among drivers who run it together as equals.
+        evidence: [{position: liberty.concept.social-anarchist, w: 3}]
+      - id: ordered
+        text: Free enough. Liberty is the chance to live honestly and well, and hard honest work isn't servitude.
+        evidence: [{position: liberty.concept.ordered-liberty, w: 3}]
+      - id: foreign
+        text: Ask who owns the app and the car loan. While foreign companies own them, no Mexican is free.
+        evidence: [{position: liberty.concept.national-liberation, w: 3}]
+      - id: god
+        text: His freedom depends on whether he serves God or serves the app and the money.
+        evidence: [{position: liberty.concept.servitude-to-god-alone, w: 3}]
+
+  - id: probe.liberty.concept.clause
+    type: allocation
+    title: The liberty clause
+    text: >
+      You are helping write the opening article of a constitution, the one on liberty. The committee wants
+      to know what to stress. You have ten points.
+    why: This asks which kinds of liberty you put first when you must choose.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: alone
+          text: Government and others keep out of your life and property.
+          evidence: [{position: liberty.concept.non-interference, w: 2}]
+        - id: no-master
+          text: No person, boss or official may hold arbitrary power over you.
+          evidence: [{position: liberty.concept.non-domination, w: 2}]
+        - id: means
+          text: Health, schooling and income so you can actually do what you choose.
+          evidence: [{position: liberty.concept.capability, w: 2}]
+        - id: control
+          text: Working people together control how the economy runs.
+          evidence: [{position: liberty.concept.collective-mastery, w: 2}]
+        - id: virtue
+          text: Liberty under law, family and virtue, not license to do anything.
+          evidence: [{position: liberty.concept.ordered-liberty, w: 2}]
+        - id: nation
+          text: The nation's independence from foreign powers comes before all else.
+          evidence: [{position: liberty.concept.national-liberation, w: 2}]
+        - id: equals
+          text: No rulers at all; liberty exists only among equals.
+          evidence: [{position: liberty.concept.social-anarchist, w: 2}]
+        - id: god
+          text: No human authority may demand the obedience owed to God alone.
+          evidence: [{position: liberty.concept.servitude-to-god-alone, w: 2}]
+    options:
+      - id: done
+        text: Done
+
+  - id: probe.liberty.concept.prison-and-market
+    type: voices
+    title: The old friends
+    text: >
+      Two old friends meet in Johannesburg, both jailed under apartheid, both free for thirty years now. They
+      disagree about what being free amounts to. Who's right?
+    voices:
+      - {name: Sipho, says: "We can vote, speak, travel, own a house. Nobody can lock us up for our views. That is freedom, and we won it."}
+      - {name: Thandi, says: "The same families own the mines and the land. A vote doesn't feed you. We are free on paper."}
+    why: This asks what liberty means to you once the obvious chains are gone.
+    options:
+      - id: sipho
+        text: Sipho. Liberty is not being interfered with, and they have that now.
+        cause: ideas
+        evidence: [{position: liberty.concept.non-interference, w: 3}]
+      - id: thandi-means
+        text: Thandi. Without land, work and health, liberty is a word.
+        cause: structures
+        evidence: [{position: liberty.concept.capability, w: 3}]
+      - id: thandi-control
+        text: Thandi, further. Liberty is working people controlling the mines and the land together.
+        cause: structures
+        evidence: [{position: liberty.concept.collective-mastery, w: 3}]
+      - id: equals
+        text: Both stop short. Nobody is free while anyone rules over anyone, the state included.
+        cause: structures
+        evidence: [{position: liberty.concept.social-anarchist, w: 3}]
+      - id: foreign
+        text: Both miss it. The mines answer to London and New York. The nation isn't free yet.
+        cause: structures
+        evidence: [{position: liberty.concept.national-liberation, w: 3}]
+      - id: virtue
+        text: Both miss it. A people is free when it lives by law and decency, and that has to be built.
+        cause: culture
+        evidence: [{position: liberty.concept.ordered-liberty, w: 3}]
+      - id: god
+        text: Both miss it. Real freedom is bowing to no master but God, and neither party nor mine owner is God.
+        cause: divine
+        evidence: [{position: liberty.concept.servitude-to-god-alone, w: 3}]

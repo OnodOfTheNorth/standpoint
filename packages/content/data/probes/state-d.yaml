@@ -1,0 +1,388 @@
+nodes:
+  # ---------------- totalitarianism.concept ----------------
+  - id: probe.totalitarianism.concept.why-alike
+    type: explanation
+    title: Why alike?
+    text: >
+      Germany in 1938 and the Soviet Union in 1938 both had one party, secret police, camps and a leader's
+      face on every wall. Why the resemblance?
+    why: This asks whether you think "totalitarianism" is a real category, and what you think explains it.
+    options:
+      - id: novel
+        text: They were a new kind of rule. Terror plus an ideology claiming all of life, over people torn from every other tie.
+        cause: ideas
+        evidence: [{position: totalitarianism.concept.novel-form, w: 3}]
+      - id: checklist
+        text: Both fit the same checklist, which ordinary dictatorships don't. That's why some dictatorships can reform and these couldn't.
+        cause: structures
+        evidence: [{position: totalitarianism.concept.syndrome-model, w: 3}]
+      - id: planning
+        text: Both ran the economy from the center. Control the economy and you end up controlling everything.
+        cause: structures
+        evidence: [{position: totalitarianism.concept.road-from-planning, w: 3}]
+      - id: religion
+        text: Both were secular religions, with scriptures, saints, heretics and a promised paradise.
+        cause: ideas
+        evidence: [{position: totalitarianism.concept.political-religion, w: 3}]
+      - id: godless
+        text: Both came from a world that had stopped believing in God and made a god of the state.
+        cause: divine
+        evidence: [{position: totalitarianism.concept.godless-modernity, w: 3}]
+      - id: bureaucracy
+        text: Both were ruled by a new bureaucratic class, whatever their flags said about workers or the nation.
+        cause: structures
+        evidence: [{position: totalitarianism.concept.bureaucratic-class, w: 3}]
+      - id: all-states
+        text: Every state reaches for total control. These two just got further than the others.
+        cause: structures
+        evidence: [{position: totalitarianism.concept.all-states, w: 3}]
+      - id: weapon
+        text: The resemblance is staged. The comparison puts the side that beat Hitler next to Hitler and leaves the colonial empires out.
+        cause: interests
+        evidence: [{position: totalitarianism.concept.cold-war-weapon, w: 3}]
+      - id: ideal
+        text: The question assumes "total" is an accusation. A state that embraces the whole life of the nation is the highest form.
+        cause: ideas
+        evidence: [{position: totalitarianism.concept.total-state-ideal, w: 3}]
+
+  - id: probe.totalitarianism.concept.which-fit
+    type: line
+    title: Which fit the word?
+    text: >
+      Going down this list, which of these would you call "totalitarian"?
+    cases:
+      - Germany, 1938
+      - The Soviet Union, 1937
+      - Spain under Franco, 1950
+      - Chile under Pinochet, 1975
+      - China, 2020
+      - The United States, 2020, with its mass phone surveillance
+    why: This asks what the word "totalitarian" means to you, by where you apply it.
+    options:
+      - id: two
+        text: The first two only. A new form of rule, unlike the military dictatorships.
+        evidence: [{position: totalitarianism.concept.novel-form, w: 3}]
+      - id: two-and-china
+        text: The first two and China. Franco and Pinochet left society alone and could hand over power; communist states can't.
+        evidence: [{position: totalitarianism.concept.syndrome-model, w: 3}]
+      - id: planned
+        text: Any of them that planned the economy from the center. That's where it starts.
+        evidence: [{position: totalitarianism.concept.road-from-planning, w: 3}]
+      - id: faith
+        text: Those whose rulers demanded faith, not just obedience.
+        evidence: [{position: totalitarianism.concept.political-religion, w: 3}]
+      - id: godless
+        text: Those that drove God out of public life. The secular democracies are only slower.
+        evidence: [{position: totalitarianism.concept.godless-modernity, w: 3}]
+      - id: bureaucratic
+        text: The first two, for the same reason. A bureaucratic class in power, whatever its flag.
+        evidence: [{position: totalitarianism.concept.bureaucratic-class, w: 3}]
+      - id: all
+        text: All six, by degree. Every state tends that way.
+        evidence: [{position: totalitarianism.concept.all-states, w: 3}]
+      - id: weapon
+        text: Notice who gets a pass. The word was built to put Moscow beside Berlin and leave Santiago out.
+        evidence: [{position: totalitarianism.concept.cold-war-weapon, w: 3}]
+      - id: ideal
+        text: None, as an insult. A state that orders the whole nation is an aim, not a crime.
+        evidence: [{position: totalitarianism.concept.total-state-ideal, w: 3}]
+
+  - id: probe.totalitarianism.concept.museum
+    type: voices
+    title: The museum
+    text: >
+      Vilnius. A museum shows Nazi and Soviet occupation in the same rooms, under one word. Two visitors
+      argue at the exit. Who's right?
+    voices:
+      - {name: "A Lithuanian retiree", says: "My grandfather was taken by the Germans, my father by the Soviets. Same knock on the door. Of course it's one word."}
+      - {name: "A Russian student", says: "The Soviets lost twenty-seven million beating the Nazis. Putting them side by side is politics, not history."}
+    why: This asks whether "totalitarianism" names something real that joins fascism and communism.
+    options:
+      - id: retiree
+        text: The retiree. The same new kind of rule, by terror and ideology.
+        cause: ideas
+        evidence: [{position: totalitarianism.concept.novel-form, w: 3}]
+      - id: student
+        text: The student. The word is a political weapon from the Cold War.
+        cause: interests
+        evidence: [{position: totalitarianism.concept.cold-war-weapon, w: 3}]
+      - id: checklist
+        text: The retiree, and the important line runs between these two and ordinary authoritarian governments.
+        cause: structures
+        evidence: [{position: totalitarianism.concept.syndrome-model, w: 3}]
+      - id: planning
+        text: The retiree. Both were collectivisms; once the state owns the economy, it owns you.
+        cause: structures
+        evidence: [{position: totalitarianism.concept.road-from-planning, w: 3}]
+      - id: religion
+        text: Both miss it. Each was a false religion that demanded belief, not only obedience.
+        cause: ideas
+        evidence: [{position: totalitarianism.concept.political-religion, w: 3}]
+      - id: godless
+        text: Both miss it. Both grew from a Europe that had abandoned God.
+        cause: divine
+        evidence: [{position: totalitarianism.concept.godless-modernity, w: 3}]
+      - id: bureaucratic
+        text: Both miss it. Stalin's state had betrayed the workers and was run by a bureaucratic class, like fascism. Oppose both.
+        cause: structures
+        evidence: [{position: totalitarianism.concept.bureaucratic-class, w: 3}]
+      - id: all
+        text: Both miss it. The museum should have a third room for what every state does when it can.
+        cause: structures
+        evidence: [{position: totalitarianism.concept.all-states, w: 3}]
+      - id: ideal
+        text: Both are ashamed of the wrong thing. A state that unites a whole people is not a crime.
+        cause: ideas
+        evidence: [{position: totalitarianism.concept.total-state-ideal, w: 3}]
+
+  # ---------------- siege.governance ----------------
+  - id: probe.siege.governance.sabotage
+    type: scene
+    title: Under pressure
+    text: >
+      You're a minister in a newly elected government. Six months in, the currency is under attack, food
+      trucks are being hijacked, an armed group funded from abroad holds two border towns, and the biggest TV
+      channel calls daily for the army to act. What do you propose to cabinet?
+    why: This asks how you think a government should rule when it is under siege.
+    options:
+      - id: constitution
+        text: Nothing outside the constitution. Courts, press, elections, all of it. That is our defense.
+        evidence: [{position: siege.governance.constitutional-order, w: 3}]
+      - id: sunset
+        text: A ninety-day state of emergency, limited to the border towns, renewed only by a parliamentary vote.
+        evidence: [{position: siege.governance.emergency-with-sunset, w: 3}]
+      - id: dictatorship
+        text: Close the channel, arrest the organizers, rule by decree. The revolution defends itself or dies.
+        evidence: [{position: siege.governance.revolutionary-dictatorship, w: 3}]
+      - id: councils
+        text: Hand power to elected workers' and neighborhood councils, and let them defend what they run.
+        evidence: [{position: siege.governance.class-democracy, w: 3}]
+      - id: militias
+        text: Arm the neighborhoods and villages as federated militias. No new security ministry.
+        evidence: [{position: siege.governance.armed-federation, w: 3}]
+      - id: security
+        text: Let the army and the security services take charge until the threat is gone.
+        evidence: [{position: siege.governance.national-security-state, w: 3}]
+      - id: mobilize
+        text: Arm and organize supporters, and keep the elections on schedule. Win both fights.
+        evidence: [{position: siege.governance.mobilize-and-elect, w: 3}]
+
+  - id: probe.siege.governance.nicaragua
+    type: verdict
+    title: Nicaragua, 1982
+    text: >
+      Nicaragua, 1982. Armed groups trained and funded by the United States attack from Honduras. The
+      Sandinista government declares a state of emergency, censors the opposition paper La Prensa, and
+      promises elections for 1984. Where would you have stood?
+    why: This asks how a government under siege should rule, by a real case.
+    options:
+      - id: constitution
+        text: Against the emergency. Censorship hands the enemy the argument. Keep every right.
+        evidence: [{position: siege.governance.constitutional-order, w: 3}]
+      - id: sunset
+        text: For, if it was limited, overseen and ended on a fixed date.
+        evidence: [{position: siege.governance.emergency-with-sunset, w: 3}]
+      - id: dictatorship
+        text: For, and it didn't go far enough. Under attack, the revolution must rule as a dictatorship of the working people.
+        evidence: [{position: siege.governance.revolutionary-dictatorship, w: 3}]
+      - id: pretext
+        text: The siege was real, and so was the habit of using it to silence critics. Both things are true.
+        evidence: [{position: siege.governance.siege-as-pretext, w: 3}]
+      - id: elect
+        text: Arm the people and hold the elections anyway. That is the answer they can't sabotage.
+        evidence: [{position: siege.governance.mobilize-and-elect, w: 3}]
+      - id: militia
+        text: Defend it through the peasant militias and local councils, not a stronger central state.
+        evidence: [{position: siege.governance.armed-federation, w: 3}]
+      - id: democracy
+        text: Defend it with the broadest workers' councils, not with censors.
+        evidence: [{position: siege.governance.class-democracy, w: 2}]
+
+  - id: probe.siege.governance.measures
+    type: line
+    title: How far under siege?
+    text: Your country is blockaded and an armed group backed from abroad is attacking. Going down this list, where do you stop?
+    cases:
+      - Ration fuel and food
+      - Ban demonstrations near military sites
+      - Detain suspected collaborators for thirty days without charge
+      - Close newspapers that call for invasion
+      - Postpone elections until the war ends
+    why: This asks what a government under siege may do, and for how long.
+    options:
+      - id: one
+        text: After the first. Rights and courts keep working; anything more and you become what you're fighting.
+        evidence: [{position: siege.governance.constitutional-order, w: 3}]
+      - id: sunset
+        text: As far as needed, but every measure expires in ninety days unless parliament renews it.
+        evidence: [{position: siege.governance.emergency-with-sunset, w: 3}]
+      - id: all
+        text: All five. A revolution under siege rules as a dictatorship or doesn't survive.
+        evidence: [{position: siege.governance.revolutionary-dictatorship, w: 3}]
+      - id: security
+        text: All five, and put the generals in charge of them.
+        evidence: [{position: siege.governance.national-security-state, w: 3}]
+      - id: suspicious
+        text: Any of them, and watch who benefits. Rulers love a siege that never ends.
+        evidence: [{position: siege.governance.siege-as-pretext, w: 3}]
+      - id: arm
+        text: Skip the list. Arm the villages and let the councils decide what defense needs.
+        evidence: [{position: siege.governance.armed-federation, w: 3}]
+
+  # ---------------- state.nature ----------------
+  - id: probe.state.nature.bailout
+    type: explanation
+    title: The bailout
+    text: >
+      In 2008 governments in the rich countries found trillions to rescue their banks within weeks, money they
+      had said for years did not exist for hospitals. Why?
+    why: This asks what you think the state is, by how you explain what it did.
+    options:
+      - id: neutral
+        text: To protect everyone's savings and jobs. A state acts for the whole public, and the banks were holding it hostage.
+        cause: structures
+        evidence: [{position: state.nature.neutral-arbiter, w: 3}]
+      - id: class
+        text: The state belongs to the class that owns the banks. It acted for its owners.
+        cause: interests
+        evidence: [{position: state.nature.class-instrument, w: 3}]
+      - id: system
+        text: To save the system as a whole, even while fining a few bankers. It's the system's caretaker, not the bankers' puppet.
+        cause: structures
+        evidence: [{position: state.nature.relative-autonomy, w: 3}]
+      - id: captured
+        text: Bank insiders had captured the treasury and the regulators. That's what went wrong.
+        cause: individuals
+        evidence: [{position: state.nature.captured, w: 3}]
+      - id: theft
+        text: That's what states do. Take from taxpayers by force and hand it to the well-connected.
+        cause: structures
+        evidence: [{position: state.nature.organized-aggression, w: 3}]
+      - id: small
+        text: Big governments always end up serving the powerful. Keep the state small and there's less to grab.
+        cause: structures
+        evidence: [{position: state.nature.necessary-evil, w: 3}]
+      - id: order
+        text: A banking collapse means chaos. Keeping order is the state's first job, before fairness.
+        cause: structures
+        evidence: [{position: state.nature.sovereign-order, w: 3}]
+      - id: lever
+        text: Because workers' parties weren't strong enough to make it nationalize the banks instead. Win the state and it acts differently.
+        cause: interests
+        evidence: [{position: state.nature.democratic-lever, w: 3}]
+      - id: engine
+        text: A state protects its national economy against rivals. Letting your banks die hands the field to foreigners.
+        cause: interests
+        evidence: [{position: state.nature.developmental, w: 3}]
+
+  - id: probe.state.nature.land-claim
+    type: voices
+    title: The land claim
+    text: >
+      Outside a courthouse in Manitoba, after a judge rejects a First Nation's claim to land a mining company
+      wants, two people speak to reporters. Who's right?
+    voices:
+      - {name: "A band councillor", says: "This state was built on our land and it still exists to keep it. The court did its job."}
+      - {name: "A government lawyer", says: "The court weighed the evidence and applied the law. The state belongs to every citizen, the First Nation included."}
+    why: This asks what you think the state is.
+    options:
+      - id: councillor
+        text: The councillor. A settler state is an apparatus for holding taken land.
+        cause: structures
+        evidence: [{position: state.nature.settler-structure, w: 3}]
+      - id: lawyer
+        text: The lawyer. The state is an umpire, and umpires make calls people don't like.
+        cause: ideas
+        evidence: [{position: state.nature.neutral-arbiter, w: 3}]
+      - id: mining
+        text: Both miss the mining company. The state serves whoever owns the mines.
+        cause: interests
+        evidence: [{position: state.nature.class-instrument, w: 3}]
+      - id: balance
+        text: Both half right. The state protects the whole system and gives ground when pushed hard enough. Push harder.
+        cause: structures
+        evidence: [{position: state.nature.relative-autonomy, w: 3}]
+      - id: final
+        text: Both miss it. Someone has to hold the final say over land and force, or there's endless war. That's the state.
+        cause: structures
+        evidence: [{position: state.nature.sovereign-order, w: 3}]
+      - id: whole
+        text: Both miss it. The state is the whole people organized as one, and it can't have two nations inside it.
+        cause: culture
+        evidence: [{position: state.nature.organic-nation, w: 3}]
+      - id: god
+        text: Both miss it. Authority is given by God for the common good, and it owes justice to the First Nation too.
+        cause: divine
+        evidence: [{position: state.nature.ordained-authority, w: 3}]
+      - id: win
+        text: Both miss it. The state reflects who's organized. Indigenous and labor voters together could win it and change the law.
+        cause: interests
+        evidence: [{position: state.nature.democratic-lever, w: 3}]
+      - id: develop
+        text: Both miss it. The state's job is to develop the country. The question is whether the mine does that, and for whom.
+        cause: interests
+        evidence: [{position: state.nature.developmental, w: 3}]
+
+  - id: probe.state.nature.job-offer
+    type: scene
+    title: The job offer
+    text: >
+      Your daughter has been offered a job at the national ministry: secure, decent pay, a pension. Over dinner
+      she asks you, "What would I actually be serving?" What do you tell her?
+    why: This asks what you think the state is, in the plainest terms you'd use at home.
+    options:
+      - id: public
+        text: The public. All of us, as fairly as she can manage.
+        evidence: [{position: state.nature.neutral-arbiter, w: 3}]
+      - id: owners
+        text: The people who own the country. Take the job, but don't kid yourself.
+        evidence: [{position: state.nature.class-instrument, w: 3}]
+      - id: system
+        text: The system as a whole. Sometimes even against the rich, so it can keep going.
+        evidence: [{position: state.nature.relative-autonomy, w: 3}]
+      - id: nation
+        text: The nation. One people, organized, above every party and class.
+        evidence: [{position: state.nature.organic-nation, w: 3}]
+      - id: god
+        text: An authority God gave for the common good. Serve it honestly and it's a vocation.
+        evidence: [{position: state.nature.ordained-authority, w: 3}]
+      - id: order
+        text: Order. Without someone keeping it, nothing else in the country works.
+        evidence: [{position: state.nature.sovereign-order, w: 3}]
+      - id: lever
+        text: Whoever wins elections. Join it, because it's a lever and we're trying to win it.
+        evidence: [{position: state.nature.democratic-lever, w: 3}]
+      - id: build
+        text: The country's catch-up. Roads, power, factories nobody else would build.
+        evidence: [{position: state.nature.developmental, w: 3}]
+      - id: chain
+        text: A chain of command. It will make you a boss, whoever's on top.
+        evidence: [{position: state.nature.hierarchy-as-such, w: 3}]
+      - id: land
+        text: Depends where we live. Here, a state that still exists to hold land taken from its first peoples.
+        evidence: [{position: state.nature.settler-structure, w: 3}]
+
+  - id: probe.state.nature.mabo
+    type: verdict
+    title: Australia, 1992
+    text: >
+      Australia, 1992. The High Court rules that Australia was never empty land and that native title can
+      survive. It also rules that the Crown's sovereignty itself cannot be questioned in an Australian court.
+      What does the ruling show you?
+    why: This asks what you think the state is, by how you read one of its rulings.
+    options:
+      - id: settler
+        text: That the state can admit almost anything except that the land was taken. Holding it is what the state is for.
+        evidence: [{position: state.nature.settler-structure, w: 3}]
+      - id: justice
+        text: That a fair court can correct an old injustice. The state can be a just umpire.
+        evidence: [{position: state.nature.neutral-arbiter, w: 3}]
+      - id: give
+        text: That the state gives ground to keep the whole arrangement stable. Real concession, real limit.
+        evidence: [{position: state.nature.relative-autonomy, w: 3}]
+      - id: mining
+        text: Watch what happened next. Parliament cut native title back once mining companies objected.
+        evidence: [{position: state.nature.class-instrument, w: 3}]
+      - id: sovereign
+        text: That no court can question the power that created it. That's what a state is.
+        evidence: [{position: state.nature.sovereign-order, w: 3}]
