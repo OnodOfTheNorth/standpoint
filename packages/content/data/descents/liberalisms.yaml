@@ -1,0 +1,358 @@
+id: descent.liberalisms
+title: Which liberalism?
+blurb: For people who put rights, rules and markets with limits first. Classical, Rawlsian, ordoliberal, republican, technocratic or internationalist, tested on fairness, the euro, central banks, intervention and Europe.
+region: state
+gate:
+  any:
+    - {weight: {position: law.nature.rule-of-law, gt: 0.25}}
+    - {weight: {position: change.means.lawful-persuasion, gt: 0.25}}
+    - {weight: {position: siege.governance.constitutional-order, gt: 0.25}}
+    - {weight: {position: intl.institutions.cooperation, gt: 0.25}}
+    - {weight: {position: intl.sovereignty.conditional-on-rights, gt: 0.25}}
+    - {weight: {position: markets.nature.framed-tool, gt: 0.25}}
+    - {holdsAny: [finance.control.prudential, poverty.cause.bad-institutions, alliances.policy.center-coalition, borders.migration.democratic-control, police.role.public-safety]}
+entry: descent.liberalisms.01
+nodes:
+  - id: descent.liberalisms.01
+    type: voices
+    title: The ticket
+    text: >
+      A basketball star signs a contract: 25 cents from every ticket goes to him. A million fans pay
+      gladly. By spring he is far richer than anyone else in town. Two philosophers disagree about whether
+      anything unfair has happened.
+    voices:
+      - name: Robert
+        says: "Everyone started with fair shares and every step was voluntary. Whatever comes from just steps is just. To undo it, you have to forbid capitalist acts between consenting adults."
+      - name: John
+        says: "Choose the rules before you know whether you'll be the star or the usher. You'd allow inequality only where it makes the worst-off better off."
+    why: This is Nozick against Rawls, the central quarrel inside liberalism about distribution.
+    options:
+      - id: robert
+        text: Robert. Fairness is about how it happened, not how it turned out.
+        evidence:
+          - {position: inequality.justice.process-not-pattern, w: 3}
+        next: descent.liberalisms.02
+      - id: john
+        text: John. Nobody earned their talents or their starting point.
+        evidence:
+          - {position: equality.concept.difference-principle, w: 3}
+          - {position: inequality.justice.luck-unjust, w: 2}
+        next: descent.liberalisms.02
+      - id: domination
+        text: Both miss the real question, whether the star's money lets him order other people around.
+        evidence:
+          - {position: equality.concept.relational, w: 3}
+          - {position: liberty.concept.non-domination, w: 1}
+        next: descent.liberalisms.02
+      - id: owners
+        text: Both miss that the owners of the team and the arena make more than the star.
+        evidence:
+          - {position: inequality.justice.class-exploitation, w: 3}
+        next: descent.liberalisms.02
+      - id: desert
+        text: He worked harder than anyone for that talent. He deserves it.
+        evidence:
+          - {position: inequality.justice.earned-desert, w: 3}
+        next: descent.liberalisms.02
+
+  - id: descent.liberalisms.02
+    type: verdict
+    title: Athens
+    text: >
+      Greece, July 2015. Voters reject the creditors' bailout terms by 61 percent. Banks are shut and
+      withdrawals capped at 60 euros a day. A week later the government accepts harsher terms to stay in
+      the euro. You sit at the Eurogroup table. What should have happened?
+    why: The Greek crisis divides ordoliberals, technocrats, federalists and those who put national sovereignty first.
+    conditions:
+      - id: if-lied
+        text: It depends whether Greece had lied about its accounts to get in.
+        evidence: [{position: debt.sovereign.pay-what-you-owe, w: 1}]
+    options:
+      - id: rules
+        text: Rules are rules. A shared currency only works if every member keeps its budget in order.
+        evidence:
+          - {position: debt.sovereign.pay-what-you-owe, w: 2}
+          - {position: markets.nature.framed-tool, w: 2}
+        next: descent.liberalisms.03
+      - id: restructure
+        text: Write down the debt in an orderly way, tie it to reforms, and keep Greece in.
+        evidence:
+          - {position: debt.sovereign.orderly-restructuring, w: 3}
+          - {position: intl.institutions.cooperation, w: 1}
+        next: descent.liberalisms.03
+      - id: union
+        text: The euro needs a common budget and common debt. Finish building the union.
+        evidence:
+          - {position: intl.sovereignty.pooled, w: 3}
+          - {position: federalism.scale.global-governance, w: 1}
+        next: descent.liberalisms.03
+      - id: lenders
+        text: The banks lent recklessly. Let the lenders take the losses.
+        evidence:
+          - {position: debt.sovereign.creditors-eat-losses, w: 3}
+        next: descent.liberalisms.03
+      - id: exit
+        text: The people voted. Leave the euro, default and run your own currency.
+        evidence:
+          - {position: intl.sovereignty.nations-set-own-course, w: 2}
+          - {position: debt.sovereign.already-paid, w: 1}
+        next: descent.liberalisms.03
+
+  - id: descent.liberalisms.03
+    type: line
+    title: The bank
+    text: >
+      Which of these should an independent central bank decide, out of reach of elected politicians?
+      Going down the list, where do you stop?
+    cases:
+      - Setting the interest rate
+      - Deciding which banks get rescued in a panic
+      - Buying government bonds to hold down borrowing costs
+      - Buying corporate bonds
+      - Setting climate rules for bank lending
+      - Funding a public jobs program
+    why: This asks who should control money, which divides rule-bound liberals from Austrians and from those who want money under elected control.
+    options:
+      - id: none
+        text: Before the first. No central bank at all. Gold or competing currencies.
+        evidence:
+          - {position: money.nature.hard-money, w: 2}
+          - {position: money.nature.competing-currencies, w: 2}
+        next: descent.liberalisms.04
+      - id: one
+        text: After the first. A rule-bound bank sets rates for stable prices; everything else is politics.
+        evidence:
+          - {position: money.nature.rule-bound-central-bank, w: 3}
+        next: descent.liberalisms.04
+      - id: three
+        text: After the third. In a crisis, experts must be free to act fast.
+        evidence:
+          - {position: money.nature.rule-bound-central-bank, w: 1}
+          - {position: finance.control.prudential, w: 2}
+        next: descent.liberalisms.04
+      - id: elected
+        text: None of them should be out of elected hands. Money is a public tool; parliament should direct it.
+        evidence:
+          - {position: money.nature.chartalist, w: 3}
+        next: descent.liberalisms.04
+
+  - id: descent.liberalisms.04
+    type: verdict
+    title: Benghazi
+    text: >
+      March 2011. Libyan government forces close on Benghazi, and the UN Security Council authorizes "all
+      necessary measures" to protect civilians. NATO aircraft strike for seven months. Gaddafi is caught
+      and killed. Libya breaks apart among armed groups. Where do you stand?
+    why: Libya tested the responsibility to protect, and split liberal internationalists from realists, legalists and anti-imperialists.
+    options:
+      - id: r2p
+        text: It was right. Sovereignty does not cover massacre, and Benghazi was saved.
+        evidence:
+          - {position: intervention.humanitarian.responsibility-to-protect, w: 3}
+        next: descent.liberalisms.05
+      - id: mandate
+        text: Protecting civilians was lawful. Turning it into overthrowing the government was not.
+        evidence:
+          - {position: intervention.humanitarian.only-with-the-un, w: 3}
+        next: descent.liberalisms.05
+      - id: interest
+        text: It was not our fight. Fight only where vital interests are at stake.
+        evidence:
+          - {position: intervention.humanitarian.national-interest-only, w: 3}
+        next: descent.liberalisms.05
+      - id: pretext
+        text: Humanitarian language for a war over oil and a disobedient government.
+        evidence:
+          - {position: intervention.humanitarian.imperial-pretext, w: 3}
+        next: descent.liberalisms.05
+      - id: liberty
+        text: Right, and we should have stayed to build representative institutions.
+        evidence:
+          - {position: intervention.humanitarian.spread-liberty, w: 3}
+        next: descent.liberalisms.05
+
+  - id: descent.liberalisms.05
+    type: scene
+    title: The union
+    text: >
+      Your country holds a referendum on joining a union of neighbors: one market, one court for
+      disputes, free movement of people, and later perhaps one currency. You lead the campaign for your
+      party. What line do you take?
+    why: This separates federalist, ordoliberal, classical and republican liberals, and all of them from nationalists.
+    options:
+      - id: federal
+        text: Join, and push for a federal union with its own budget. Our problems are bigger than our borders.
+        evidence:
+          - {position: intl.sovereignty.pooled, w: 3}
+          - {position: federalism.scale.global-governance, w: 2}
+        next: descent.liberalisms.06
+      - id: rules
+        text: Join, if the rules bind everyone. Competition law, no bailouts, and an independent bank.
+        evidence:
+          - {position: allocation.mechanism.social-market, w: 2}
+          - {position: money.nature.rule-bound-central-bank, w: 2}
+        next: descent.liberalisms.06
+      - id: market
+        text: The market, yes. The court and the bureaucracy, no. Trade, don't merge.
+        evidence:
+          - {position: exchange.unequal.mutual-gain, w: 2}
+          - {position: intl.institutions.globalist-overreach, w: 1}
+        next: descent.liberalisms.06
+      - id: accountable
+        text: Only if our parliament can hold it to account. Rule by unelected officials is still rule by masters.
+        evidence:
+          - {position: liberty.concept.non-domination, w: 3}
+        next: descent.liberalisms.06
+      - id: out
+        text: Stay out. A nation governs itself or it doesn't.
+        evidence:
+          - {position: intl.sovereignty.nations-set-own-course, w: 3}
+        next: descent.liberalisms.06
+
+  - id: descent.liberalisms.06
+    type: tradeoff
+    title: The app
+    text: >
+      Your employer installs an app that logs every bathroom break and grades your tone on calls. It is
+      legal. You signed a contract that allows it. You could quit, but rent is due and the other firms in
+      town use the same app.
+    why: This separates classical liberty as non-interference from republican liberty as non-domination, and both from the technocrat and the Rawlsian.
+    options:
+      - id: signed
+        text: You signed it. Nobody forces you to stay. That's what liberty means.
+        evidence:
+          - {position: liberty.concept.non-interference, w: 3}
+          - {position: wage.nature.voluntary-exchange, w: 2}
+        next: descent.liberalisms.07
+      - id: master
+        text: Living at someone's beck and call is servitude, even if you signed. The law should limit what a boss may command.
+        evidence:
+          - {position: workplace.conflict.private-government, w: 3}
+          - {position: liberty.concept.non-domination, w: 2}
+        next: descent.liberalisms.07
+      - id: evidence
+        text: Study it. If the data say it harms health or output more than it helps, regulate it.
+        evidence:
+          - {position: knowledge.basis.empirical-science, w: 3}
+        next: descent.liberalisms.07
+      - id: power
+        text: Liberty means real options. Strengthen workers' bargaining power and benefits so quitting is possible.
+        evidence:
+          - {position: liberty.concept.capability, w: 3}
+        next: descent.liberalisms.07
+      - id: union
+        text: Organize and make them take it out.
+        evidence:
+          - {position: workplace.conflict.structural-antagonism, w: 2}
+          - {position: unions.role.class-organ, w: 1}
+        next: descent.liberalisms.07
+
+  - id: descent.liberalisms.07
+    type: explanation
+    title: The gap
+    text: >
+      In 1960 Ghana and South Korea had similar incomes per person. Today South Korea's is roughly ten
+      times higher. What mainly explains the gap?
+    why: This asks for an account of world poverty, which divides liberals among themselves and from their critics.
+    options:
+      - id: institutions
+        text: Korea built institutions that rewarded investment. Ghana's rewarded whoever held power.
+        cause: structures
+        evidence:
+          - {position: poverty.cause.bad-institutions, w: 3}
+        next: descent.liberalisms.08
+      - id: misrule
+        text: Ghana's rulers looted and meddled with the economy. Korea's let business work.
+        cause: individuals
+        evidence:
+          - {position: poverty.cause.misrule, w: 3}
+        next: descent.liberalisms.08
+      - id: stage
+        text: Korea started earlier on the same road. Ghana is catching up.
+        cause: chance
+        evidence:
+          - {position: poverty.cause.late-development, w: 3}
+        next: descent.liberalisms.08
+      - id: cold-war
+        text: Korea was a Cold War front line, with American aid, open markets and land reform. Ghana got cocoa prices.
+        cause: structures
+        evidence:
+          - {position: poverty.cause.drain, w: 2}
+          - {position: development.path.import-substitution, w: 1}
+        next: descent.liberalisms.08
+      - id: culture
+        text: Culture. Some societies prize work, saving and schooling more.
+        cause: culture
+        evidence:
+          - {position: poverty.cause.culture, w: 3}
+        next: descent.liberalisms.08
+
+  - id: descent.liberalisms.08
+    type: scene
+    title: The ban
+    text: >
+      A party that says it will replace the constitution and strip citizenship from naturalized
+      minorities is polling at 22 percent. The constitutional court can ban it if the government applies.
+      You are the interior minister.
+    why: This separates liberals who defend liberal democracy by banning its enemies from those who rely on open debate.
+    options:
+      - id: ban
+        text: Apply. A constitution that can be voted out of existence is not worth having.
+        evidence:
+          - {position: fascism.response.militant-democracy, w: 3}
+          - {position: speech.limits.dignity-limits, w: 2}
+        next: descent.liberalisms.09
+      - id: debate
+        text: Don't. Banning a fifth of the electorate's choice makes them martyrs. Beat them in argument.
+        evidence:
+          - {position: fascism.response.answer-with-speech, w: 3}
+          - {position: speech.limits.open-marketplace, w: 2}
+        next: descent.liberalisms.09
+      - id: causes
+        text: Don't bother with courts. Fix the housing and wages that feed it.
+        evidence:
+          - {position: fascism.response.remove-the-conditions, w: 3}
+        next: descent.liberalisms.09
+      - id: overblown
+        text: Don't. Calling a fifth of voters a threat is the real danger here.
+        evidence:
+          - {position: fascism.response.threat-overblown, w: 3}
+        next: descent.liberalisms.09
+
+  - id: descent.liberalisms.09
+    type: reason
+    title: The core
+    text: >
+      Last question. If you had to name the one thing liberalism is for, what is it?
+    why: This asks for the root of your liberalism.
+    options:
+      - id: alone
+        text: Keeping government off people's backs.
+        evidence:
+          - {position: liberty.concept.non-interference, w: 3}
+        end: true
+      - id: fair
+        text: Rules fair to everyone, especially those who start with least.
+        evidence:
+          - {position: equality.concept.difference-principle, w: 3}
+        end: true
+      - id: frame
+        text: Competitive markets inside a strong legal order, so no private power gets too big.
+        evidence:
+          - {position: allocation.mechanism.social-market, w: 3}
+        end: true
+      - id: nobody
+        text: That nobody lives at the mercy of anybody else.
+        evidence:
+          - {position: liberty.concept.non-domination, w: 3}
+        end: true
+      - id: works
+        text: Whatever the evidence shows works, without ideology.
+        evidence:
+          - {position: cs.middle.pragmatic-center, w: 3}
+        end: true
+      - id: world
+        text: A world governed by rules instead of force.
+        evidence:
+          - {position: internationalism.liberal-global-order, w: 3}
+        end: true

@@ -1,0 +1,410 @@
+id: descent.libertarian
+title: How little state?
+blurb: For people who put property and voluntary exchange first. Minarchist or anarcho-capitalist, and what about land, ideas, money and borders?
+region: state
+gate:
+  any:
+    - {weight: {position: property.private.natural-right, gt: 0.25}}
+    - {weight: {position: capitalism.nature.free-exchange, gt: 0.25}}
+    - {holdsAny: [state.nature.organized-aggression, state.nature.necessary-evil, tax.purpose.theft, capitalism.nature.crony-corrupted, welfare.state.coercive-dependency]}
+entry: descent.libertarian.01
+nodes:
+  - id: descent.libertarian.01
+    type: line
+    title: The minimum
+    text: >
+      Start from nothing and add back only what has to be paid for by tax. Going down this list,
+      where do you stop?
+    cases:
+      - Courts that settle disputes over contracts and property
+      - Police
+      - An army
+      - Roads and water mains
+      - A floor of schooling for every child
+      - A cash payment to every citizen
+    why: This separates people who want a small state from people who want none, and both from those who fund the state another way.
+    premises:
+      - id: tax-is-theft
+        text: The premise that anything may be paid for by taking people's money.
+        evidence: [{position: tax.purpose.theft, w: 3}, {position: state.nature.organized-aggression, w: 2}]
+    options:
+      - id: none
+        text: Before the first. Courts and police can be bought from competing firms like anything else.
+        evidence:
+          - {position: state.nature.organized-aggression, w: 3}
+          - {position: police.role.private-security, w: 3}
+        next: descent.libertarian.02
+      - id: three
+        text: After the army. Courts, police, defense. Everything else is someone's business, not the state's.
+        evidence:
+          - {position: state.nature.necessary-evil, w: 3}
+          - {position: state.relation.shrink, w: 3}
+        next: descent.libertarian.02
+      - id: four
+        text: After roads. Some public goods really are public, so tax lightly and broadly to pay for them.
+        evidence:
+          - {position: tax.purpose.public-goods, w: 3}
+        next: descent.libertarian.02
+      - id: rent
+        text: After schooling, but tax only land, never work. The ground rent pays for all of it.
+        evidence:
+          - {position: tax.purpose.land-value, w: 3}
+          - {position: property.land.georgist-rent, w: 2}
+        next: descent.libertarian.02
+      - id: all
+        text: All six. The payment is everyone's share of an earth nobody made.
+        evidence:
+          - {position: property.self-ownership.left-libertarian, w: 3}
+          - {position: automation.ownership.dividend, w: 1}
+        next: descent.libertarian.02
+
+  - id: descent.libertarian.02
+    type: scene
+    title: The plot
+    text: >
+      You bought a vacant lot on the edge of Nairobi for 4 million shillings. You did nothing with it.
+      The city ran a commuter rail line past it with public money, and now a developer offers you 40
+      million. Your neighbors, who paid for the line, gain nothing.
+    why: This asks whose the rise in land value is, which divides the libertarian right from Georgists and left-libertarians.
+    conditions:
+      - id: if-title-clean
+        text: It depends whether the original title was acquired fairly, all the way back.
+        evidence: [{position: property.private.natural-right, w: 1}, {position: settler.colonialism.historical-wrong-reconcile, w: 1}]
+    options:
+      - id: mine
+        text: Mine. I took the risk of buying, and a title is a title.
+        evidence:
+          - {position: property.land.freehold, w: 3}
+          - {position: property.private.natural-right, w: 2}
+        next: descent.libertarian.03
+      - id: rent-back
+        text: Keep the plot, but the jump in value should be taxed back. I didn't make it; the city did.
+        evidence:
+          - {position: property.land.georgist-rent, w: 3}
+          - {position: tax.purpose.land-value, w: 2}
+        next: descent.libertarian.03
+      - id: share
+        text: Land is the one thing nobody made. Its value belongs to everyone equally, paid out as a dividend.
+        evidence:
+          - {position: property.self-ownership.left-libertarian, w: 3}
+          - {position: property.land.georgist-rent, w: 1}
+        next: descent.libertarian.03
+      - id: use
+        text: An empty lot is nobody's. Land belongs to whoever works it, not whoever bought paper.
+        evidence:
+          - {position: property.land.to-the-tiller, w: 2}
+          - {position: property.private.possession-not-property, w: 2}
+        next: descent.libertarian.03
+      - id: earned
+        text: Fair or not, I'd take the 40 million. Anyone would.
+        evidence:
+          - {position: property.private.earned-is-mine, w: 1}
+          - {position: cs.greed.everyone-greedy, w: 2}
+        next: descent.libertarian.03
+
+  - id: descent.libertarian.03
+    type: voices
+    title: The patent
+    text: >
+      In 2001, thirty-nine drug companies drop a lawsuit against South Africa's government over a law
+      letting it import cheap generic AIDS drugs. Two people argue about what the companies owned.
+    voices:
+      - name: Vera, a drug researcher
+        says: "Twelve years and a billion dollars to make that molecule. It is ours as surely as a factory is. Copying it is theft."
+      - name: Tomás, a software developer
+        says: "An idea can be copied without taking anything from you. A patent is a monopoly the state hands out and enforces with guns."
+    why: This asks whether ideas can be property, which splits objectivists and minarchists from anarcho-capitalists, and both from the South's critics.
+    premises:
+      - id: no-ownership
+        text: The premise that the question is about ownership at all, while people are dying.
+        evidence: [{position: emergency.powers.need-overrides-property, w: 2}]
+    options:
+      - id: vera
+        text: Vera. A mind's work is property like anything else.
+        evidence:
+          - {position: property.ip.creators-property, w: 3}
+        next: descent.libertarian.04
+      - id: tomas
+        text: Tomás. Abolish patents and copyright; they are state grants, not rights.
+        evidence:
+          - {position: property.ip.monopoly-abolish, w: 3}
+          - {position: property.private.natural-right, w: 1}
+        next: descent.libertarian.04
+      - id: bargain
+        text: "Neither. A patent is a deal, a limited monopoly in exchange for invention. Twenty years, then it is everyone's."
+        evidence:
+          - {position: property.ip.incentive-bargain, w: 3}
+        next: descent.libertarian.04
+      - id: core
+        text: Both miss that patents are how rich countries keep poor ones paying. Copy and produce.
+        evidence:
+          - {position: property.ip.technology-monopoly, w: 3}
+          - {position: technology.nature.core-monopoly, w: 2}
+        next: descent.libertarian.04
+      - id: commons
+        text: Both miss that knowledge builds on knowledge. Make it a shared commons, publicly funded.
+        evidence:
+          - {position: property.ip.knowledge-commons, w: 3}
+        next: descent.libertarian.04
+
+  - id: descent.libertarian.04
+    type: verdict
+    title: The charter city
+    text: >
+      Honduras, 2013: a law lets private zones write their own rules and run their own courts and
+      security. One opens on the island of Roatán in 2020. In 2022 Congress repeals the law. The
+      investors file an arbitration claim against Honduras for about $10.7 billion. Who is in the right?
+    why: This puts private law, courts and security against a nation's sovereignty, a line inside the libertarian right.
+    conditions:
+      - id: if-residents
+        text: It depends what the people already living on the island agreed to.
+        evidence: [{position: authority.legitimacy.consent, w: 2}]
+    options:
+      - id: investors
+        text: The investors. They built under a contract, and a parliament cannot tear up contracts.
+        evidence:
+          - {position: law.nature.rule-of-law, w: 2}
+          - {position: property.private.natural-right, w: 2}
+        next: descent.libertarian.05
+      - id: exit
+        text: The zone. People should be free to exit into competing jurisdictions, and this was one.
+        evidence:
+          - {position: state.relation.market-exit, w: 3}
+          - {position: federalism.scale.states-and-exit, w: 2}
+        next: descent.libertarian.05
+      - id: monopoly
+        text: Honduras. Law and force need one final authority; a privately owned court is a lord's court.
+        evidence:
+          - {position: state.nature.necessary-evil, w: 2}
+          - {position: police.role.private-security, w: -2}
+        next: descent.libertarian.05
+      - id: nation
+        text: Honduras. Its land and law are not for sale to foreign investors.
+        evidence:
+          - {position: property.land.national-domain, w: 3}
+          - {position: intl.sovereignty.nations-set-own-course, w: 2}
+        next: descent.libertarian.05
+
+  - id: descent.libertarian.05
+    type: tradeoff
+    title: The border
+    text: >
+      A ship of eight hundred job-seekers docks. Your country still has a welfare state, public schools
+      and public streets. Nobody aboard has a criminal record. Nobody here invited them, either.
+    why: This asks whether libertarian principles open the border or close it, which divides open-border libertarians from paleolibertarians.
+    premises:
+      - id: public-streets
+        text: The premise that the state owns the streets and can admit anyone onto them.
+        evidence: [{position: nation.question.secession-by-consent, w: 1}, {position: state.nature.organized-aggression, w: 1}]
+    options:
+      - id: open
+        text: Let them land. Moving to work for a willing employer harms no one's rights.
+        evidence:
+          - {position: borders.migration.open-borders, w: 3}
+        next: descent.libertarian.06
+      - id: open-later
+        text: Open the border, but only once there is no welfare to draw on.
+        evidence:
+          - {position: borders.migration.open-borders, w: 1}
+          - {position: welfare.state.coercive-dependency, w: 2}
+        next: descent.libertarian.06
+      - id: covenant
+        text: Turn the ship back. In a private-property order, owners and communities would choose who enters. Until then, the state should choose as they would.
+        evidence:
+          - {position: borders.migration.restrict-national, w: 2}
+          - {position: nation.question.secession-by-consent, w: 1}
+        next: descent.libertarian.06
+      - id: jobs
+        text: Admit the ones with job offers, on visas the state sets.
+        evidence:
+          - {position: borders.migration.managed-labor, w: 3}
+        next: descent.libertarian.06
+      - id: legal
+        text: Welcome if they come the legal way, work and fit in.
+        evidence:
+          - {position: borders.migration.legal-and-contributing, w: 3}
+        next: descent.libertarian.06
+
+  - id: descent.libertarian.06
+    type: explanation
+    title: The crash
+    text: >
+      2008. Lehman Brothers fails, credit freezes, and unemployment in the United States doubles inside
+      two years. What, mainly, caused it?
+    why: This asks for an account of crisis, which separates Austrians from Chicago and both from Keynesians and Marxists.
+    options:
+      - id: austrian
+        text: The Federal Reserve held interest rates too low for too long. Cheap credit built a false boom; the bust was the correction.
+        cause: structures
+        evidence:
+          - {position: crisis.cause.credit-distortion, w: 3}
+        next: descent.libertarian.07
+      - id: chicago
+        text: A housing shock, made into a depression when the central bank let the money supply shrink.
+        cause: chance
+        evidence:
+          - {position: crisis.cause.shocks-and-errors, w: 3}
+        next: descent.libertarian.07
+      - id: minsky
+        text: Stable times make lenders reckless. The debt built up until it broke, as it always does.
+        cause: structures
+        evidence:
+          - {position: crisis.cause.financial-instability, w: 3}
+        next: descent.libertarian.07
+      - id: profit
+        text: Profits in production had been weak for decades. Debt papered over it until it couldn't.
+        cause: structures
+        evidence:
+          - {position: crisis.cause.falling-profit, w: 2}
+          - {position: crisis.cause.underconsumption, w: 1}
+        next: descent.libertarian.07
+      - id: greed
+        text: Greedy bankers and the politicians who let them do it.
+        cause: individuals
+        evidence:
+          - {position: crisis.cause.greed-and-recklessness, w: 3}
+        next: descent.libertarian.07
+
+  - id: descent.libertarian.07
+    type: scene
+    title: The currency
+    text: >
+      You are economy minister. Prices are rising forty percent a year and people keep their savings in
+      dollars under the mattress. Parliament will pass one monetary law of your choosing.
+    why: This asks what money should be and who should issue it, the line between Austrians, Chicago and the rest.
+    options:
+      - id: gold
+        text: Tie the currency to gold. Money no government can print is money people can trust.
+        evidence:
+          - {position: money.nature.hard-money, w: 3}
+        next: descent.libertarian.08
+      - id: compete
+        text: Let people use any money they like, dollars, gold, Bitcoin. Close the central bank.
+        evidence:
+          - {position: money.nature.competing-currencies, w: 3}
+          - {position: money.nature.hard-money, w: 1}
+        next: descent.libertarian.08
+      - id: rule
+        text: An independent central bank with one job, a fixed inflation target, out of politicians' reach.
+        evidence:
+          - {position: money.nature.rule-bound-central-bank, w: 3}
+        next: descent.libertarian.08
+      - id: sovereign
+        text: Keep the currency public and controlled. Restrict capital flight, and spend to put idle people to work.
+        evidence:
+          - {position: money.nature.chartalist, w: 2}
+          - {position: finance.control.capital-controls, w: 2}
+        next: descent.libertarian.08
+
+  - id: descent.libertarian.08
+    type: verdict
+    title: Santiago
+    text: >
+      Chile, 1975. A military junta has dissolved Congress, banned parties and jailed or killed thousands.
+      Economists trained in Chicago now run its economy: privatization, open trade, a cut in spending.
+      Visiting in 1981, Hayek tells a Chilean paper he prefers "a liberal dictator to democratic government lacking
+      liberalism." Where do you stand?
+    why: This is a real juncture where market liberalism took power by force. It splits libertarians from each other and from everyone else.
+    options:
+      - id: miracle
+        text: The reforms worked. Chile became the richest country in South America per head. The junta was the price.
+        evidence:
+          - {position: hist.chile-1973.chicago-miracle, w: 3}
+        next: descent.libertarian.09
+      - id: saved
+        text: The army saved Chile from becoming Cuba. The economics was secondary.
+        evidence:
+          - {position: hist.chile-1973.saved-from-communism, w: 3}
+        next: descent.libertarian.09
+      - id: aggression
+        text: You cannot build a free market with torture. Good policy does not wash out aggression.
+        evidence:
+          - {position: hist.chile-1973.chicago-miracle, w: -2}
+          - {position: rights.basis.natural-rights, w: 2}
+        next: descent.libertarian.09
+      - id: lab
+        text: A coup for the copper firms and the rich, and the first test of a program later sold everywhere.
+        evidence:
+          - {position: hist.chile-1973.first-neoliberal-laboratory, w: 3}
+        next: descent.libertarian.09
+      - id: tragedy
+        text: Both sides broke the rules before 1973. A tragedy, not a model.
+        evidence:
+          - {position: hist.chile-1973.tragedy-of-polarization, w: 3}
+        next: descent.libertarian.09
+
+  - id: descent.libertarian.09
+    type: verdict
+    title: The chainsaw
+    text: >
+      Argentina, December 2023. A self-described anarcho-capitalist wins the presidency promising to take
+      a chainsaw to the state. He halves the peso's value and cuts spending hard. Within a year, monthly
+      inflation falls from about 25 percent to under 3. Poverty passes 50 percent in early 2024, then
+      falls below 40. He keeps the central bank. What is this?
+    why: This asks how you judge a libertarian holding state power, which divides purists, pragmatists and opponents.
+    options:
+      - id: proof
+        text: Proof the medicine works. The pain was the bill for decades of printing money.
+        evidence:
+          - {position: hist.neoliberal-turn.cure-for-stagflation, w: 3}
+          - {position: capitalism.nature.free-exchange, w: 1}
+        next: descent.libertarian.10
+      - id: half
+        text: A good start, but he still runs a central bank, a tax office and an army. The state is still the state.
+        evidence:
+          - {position: state.nature.organized-aggression, w: 2}
+          - {position: money.nature.competing-currencies, w: 2}
+        next: descent.libertarian.10
+      - id: creditors
+        text: The old adjustment program under a new name. Workers and pensioners paid; creditors got paid.
+        evidence:
+          - {position: hist.neoliberal-turn.debt-discipline-of-the-south, w: 3}
+          - {position: intl.institutions.creditor-instruments, w: 1}
+        next: descent.libertarian.10
+      - id: class
+        text: A transfer from wages to capital, carried out with votes.
+        evidence:
+          - {position: hist.neoliberal-turn.restoring-class-power, w: 3}
+        next: descent.libertarian.10
+      - id: anyone
+        text: Any government that stops inflation gets my vote, whatever it calls itself.
+        evidence:
+          - {position: cs.middle.pragmatic-center, w: 2}
+        next: descent.libertarian.10
+
+  - id: descent.libertarian.10
+    type: reason
+    title: The ground
+    text: >
+      One last question. When you defend a free market, what is the argument underneath?
+    why: This asks what grounds your libertarianism, which separates natural-rights, consequentialist and left-libertarian versions.
+    options:
+      - id: rights
+        text: People own themselves and what they make. Taking it is wrong, whatever the results.
+        evidence:
+          - {position: property.self-ownership.full, w: 3}
+          - {position: rights.basis.natural-rights, w: 2}
+        end: true
+      - id: results
+        text: It works better than anything else tried. If something worked better, I'd switch.
+        evidence:
+          - {position: property.private.convention, w: 3}
+          - {position: rights.basis.utility, w: 2}
+        end: true
+      - id: knowledge
+        text: Nobody knows enough to run an economy. Prices carry what no planner can know.
+        evidence:
+          - {position: calculation.debate.hayek-knowledge, w: 3}
+        end: true
+      - id: equal
+        text: Free people owning themselves, with the earth's value shared equally. Markets without landlords.
+        evidence:
+          - {position: property.self-ownership.left-libertarian, w: 3}
+          - {position: profit.legitimacy.rent-not-profit, w: 2}
+        end: true
+      - id: leave
+        text: Mostly, I just want to be left alone.
+        evidence:
+          - {position: liberty.concept.non-interference, w: 2}
+          - {position: cs.live-let-live.leave-alone, w: 1}
+        end: true

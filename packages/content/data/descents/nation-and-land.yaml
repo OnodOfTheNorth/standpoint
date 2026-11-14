@@ -1,0 +1,369 @@
+id: descent.nation-and-land
+title: Whose land, whose nation?
+blurb: For people for whom nation and land are live questions. Land back or reconciliation, one state or two, which nationalisms, who belongs, and who should farm.
+region: nation
+gate:
+  any:
+    - {weight: {position: settler.colonialism.land-back, gt: 0.25}}
+    - {weight: {position: settler.colonialism.ongoing-structure, gt: 0.25}}
+    - {weight: {position: settler.colonialism.historical-wrong-reconcile, gt: 0.25}}
+    - {weight: {position: settler.colonialism.just-settlement, gt: 0.25}}
+    - {weight: {position: settler.colonialism.all-nations-conquest, gt: 0.25}}
+    - {weight: {position: nationalism.kinds.oppressed-oppressor, gt: 0.25}}
+    - {weight: {position: agrarian.question.land-to-the-tiller, gt: 0.25}}
+    - {holdsAny: [indigenous.sovereignty.inherent-nationhood, borders.migration.restrict-national]}
+entry: descent.nation-and-land.01
+nodes:
+  - id: descent.nation-and-land.01
+    type: verdict
+    title: The pipeline
+    text: >
+      British Columbia, 2020. A gas pipeline crosses Wet'suwet'en territory that was never ceded by
+      treaty. The elected band councils along the route have signed benefit deals. The hereditary chiefs
+      say no and their supporters block the road. Police clear the camps. Rail lines across Canada are
+      blockaded in solidarity.
+      Who has the right to say yes?
+    why: This separates land back, reconciliation within the state, equal citizenship and the settlement's defenders.
+    options:
+      - id: chiefs
+        text: The hereditary chiefs. It is their nation's land, and Canada never acquired it.
+        evidence:
+          - {position: settler.colonialism.land-back, w: 3}
+          - {position: indigenous.sovereignty.inherent-nationhood, w: 2}
+        next: descent.nation-and-land.02
+      - id: councils
+        text: The elected councils signed. Consent was given; honor the deals and share the revenue.
+        evidence:
+          - {position: indigenous.sovereignty.within-state-rights, w: 3}
+        next: descent.nation-and-land.02
+      - id: reconcile
+        text: Neither side alone. Stop the work, negotiate, compensate, and move toward reconciliation.
+        evidence:
+          - {position: settler.colonialism.historical-wrong-reconcile, w: 3}
+        next: descent.nation-and-land.02
+      - id: one-law
+        text: Parliament. One country, one law for everyone, whatever happened two centuries ago.
+        evidence:
+          - {position: settler.colonialism.all-nations-conquest, w: 2}
+          - {position: indigenous.sovereignty.equal-citizenship, w: 3}
+        next: descent.nation-and-land.02
+      - id: built
+        text: Canada. The settlers built this country fairly, and the courts have ruled.
+        evidence:
+          - {position: settler.colonialism.just-settlement, w: 3}
+        next: descent.nation-and-land.02
+
+  - id: descent.nation-and-land.02
+    type: line
+    title: What goes back
+    text: >
+      A court has found that a nation's title to its territory was never extinguished. Going down this
+      list, what should return to the nation's control?
+    cases:
+      - A sacred mountain now leased to a ski resort
+      - Unused public land
+      - A national park
+      - The rivers and the right to dam them
+      - A farm owned by one settler family for five generations
+      - The downtown of the city built on the territory
+    why: This measures how far land return goes, and what it would mean for those living there now.
+    premises:
+      - id: race
+        text: The premise that rights should differ by ancestry at all.
+        evidence: [{position: indigenous.sovereignty.equal-citizenship, w: 3}]
+    options:
+      - id: none
+        text: None of it by right. Pay compensation, and give reserves full private title they can sell.
+        evidence:
+          - {position: indigenous.sovereignty.private-title, w: 3}
+        next: descent.nation-and-land.03
+      - id: sacred
+        text: The mountain and some public land. Repair what can be repaired without displacing anyone.
+        evidence:
+          - {position: settler.colonialism.historical-wrong-reconcile, w: 3}
+        next: descent.nation-and-land.03
+      - id: public
+        text: Everything public, the first four, with real jurisdiction. Private holders stay under the nation's law.
+        evidence:
+          - {position: indigenous.sovereignty.inherent-nationhood, w: 3}
+          - {position: settler.colonialism.land-back, w: 2}
+        next: descent.nation-and-land.03
+      - id: all
+        text: All of it. The structure that took it is still running. Ending it is the point.
+        evidence:
+          - {position: settler.colonialism.ongoing-structure, w: 3}
+          - {position: settler.colonialism.land-back, w: 3}
+        next: descent.nation-and-land.03
+      - id: common
+        text: Drop the settler and native categories altogether. One political community, with land for whoever works it.
+        evidence:
+          - {position: settler.colonialism.decolonize-citizenship, w: 3}
+        next: descent.nation-and-land.03
+
+  - id: descent.nation-and-land.03
+    type: voices
+    title: River and sea
+    text: >
+      Two people who both say they want peace in Israel and Palestine disagree about its shape.
+    voices:
+      - name: Dalia
+        says: "Two states on the 1967 lines, with land swaps and a shared Jerusalem. Two peoples, two flags. It's the only deal either side can sign."
+      - name: Karim
+        says: "The settlements ended that. There is already one state from the river to the sea. The question is whether everyone in it votes."
+    why: This separates two-state and one-state positions from Zionist, Islamist and liberation positions.
+    options:
+      - id: dalia
+        text: Dalia.
+        evidence:
+          - {position: palestine.question.liberal-two-states, w: 3}
+        next: descent.nation-and-land.04
+      - id: dalia-return
+        text: Dalia, but with the refugees' right to return.
+        evidence:
+          - {position: palestine.question.plo-state, w: 3}
+        next: descent.nation-and-land.04
+      - id: karim
+        text: Karim. One state, equal rights, one person one vote.
+        evidence:
+          - {position: palestine.question.one-democratic-state, w: 3}
+        next: descent.nation-and-land.04
+      - id: sovereignty
+        text: Both miss that the land is the Jewish people's, and must be held by strength.
+        evidence:
+          - {position: palestine.question.revisionist, w: 3}
+        next: descent.nation-and-land.04
+      - id: liberation
+        text: Both miss that it is a colonial occupation. Liberate all of Palestine and return all refugees.
+        evidence:
+          - {position: palestine.question.liberation-of-all-palestine, w: 3}
+        next: descent.nation-and-land.04
+      - id: islamic
+        text: Both miss that Palestine is a trust for all Muslims. Resistance until it is free.
+        evidence:
+          - {position: palestine.question.islamist-resistance, w: 3}
+        next: descent.nation-and-land.04
+
+  - id: descent.nation-and-land.04
+    type: verdict
+    title: Kirkuk
+    text: >
+      Iraqi Kurdistan, September 2017. In a referendum on independence, about 93 percent vote yes.
+      Baghdad calls it illegal. Within a month Iraqi forces retake Kirkuk and its oil fields, and the
+      Kurdish government backs down. Who was in the right?
+    why: This asks who has the right to self-determination, which divides Leninists, liberals, libertarians, confederalists and internationalists.
+    options:
+      - id: secede
+        text: The Kurds. A nation that has been oppressed has the right to its own state.
+        evidence:
+          - {position: nation.question.self-determination-leninist, w: 3}
+        next: descent.nation-and-land.05
+      - id: any
+        text: The Kurds, and so would any province or village that voted to leave.
+        evidence:
+          - {position: nation.question.secession-by-consent, w: 3}
+        next: descent.nation-and-land.05
+      - id: law
+        text: Baghdad. Self-determination works through law and negotiation, not a unilateral vote.
+        evidence:
+          - {position: nation.question.wilsonian, w: 2}
+          - {position: law.nature.rule-of-law, w: 1}
+        next: descent.nation-and-land.05
+      - id: no-state
+        text: Neither. A new state just builds a new border. Self-government without a state is the way.
+        evidence:
+          - {position: nation.question.democratic-nation, w: 3}
+        next: descent.nation-and-land.05
+      - id: workers
+        text: Neither. Kurdish and Arab workers have more in common with each other than with their rulers.
+        evidence:
+          - {position: nation.question.no-abstract-right, w: 3}
+        next: descent.nation-and-land.05
+
+  - id: descent.nation-and-land.05
+    type: scene
+    title: Two flags
+    text: >
+      A cup final in a European capital. Fans of an Algerian club wave their flag; home fans wave theirs.
+      A columnist writes that both are "the same tribal passion." You are asked to reply in two hundred
+      words.
+    why: This asks whether nationalism is one thing or depends on who oppresses whom.
+    options:
+      - id: different
+        text: Not the same. One flag belonged to a colony, the other to the empire that ruled it.
+        evidence:
+          - {position: nationalism.kinds.oppressed-oppressor, w: 3}
+        next: descent.nation-and-land.06
+      - id: same-bosses
+        text: The same. Every flag ties workers to their own bosses.
+        evidence:
+          - {position: nationalism.kinds.all-bourgeois, w: 3}
+        next: descent.nation-and-land.06
+      - id: civic
+        text: Love of your country's institutions is healthy. Blood and soil is not. Judge each flag by which it means.
+        evidence:
+          - {position: nationalism.kinds.civic-good-ethnic-bad, w: 3}
+        next: descent.nation-and-land.06
+      - id: both-good
+        text: Both are good. Every people should love its own.
+        evidence:
+          - {position: nationalism.kinds.virtue-of-nations, w: 3}
+        next: descent.nation-and-land.06
+      - id: homelands
+        text: Both are good, each in its own homeland. Theirs is in Algeria.
+        evidence:
+          - {position: nationalism.kinds.ethnopluralism, w: 3}
+        next: descent.nation-and-land.06
+      - id: passion
+        text: The columnist is right. All nationalism is a dangerous passion.
+        evidence:
+          - {position: nationalism.kinds.cosmopolitan, w: 3}
+        next: descent.nation-and-land.06
+
+  - id: descent.nation-and-land.06
+    type: tradeoff
+    title: Two passports
+    text: >
+      The citizenship office opens two files on the same morning. Ana was born abroad; her grandparents
+      left this country sixty years ago, and she doesn't speak the language. Malik was born here to
+      parents on work visas, and speaks nothing else. The law gives one of them a passport automatically.
+      Which should it be?
+    why: This separates civic from ethnic ideas of the nation.
+    options:
+      - id: malik
+        text: Malik. Born here, raised here, belongs here.
+        evidence:
+          - {position: nation.belonging.citizenship, w: 3}
+          - {position: nation.question.civic, w: 2}
+        next: descent.nation-and-land.07
+      - id: ana
+        text: Ana. A nation is a people, and she is of it wherever she was born.
+        evidence:
+          - {position: nation.belonging.descent, w: 3}
+          - {position: nation.question.ethnic, w: 2}
+        next: descent.nation-and-land.07
+      - id: tests
+        text: Neither automatically. Both can belong once they take on the language, history and loyalty. Malik is nearly there.
+        evidence:
+          - {position: nation.belonging.assimilation, w: 3}
+        next: descent.nation-and-land.07
+      - id: both
+        text: Both, and Malik keeps his parents' culture too.
+        evidence:
+          - {position: nation.belonging.multicultural, w: 3}
+        next: descent.nation-and-land.07
+      - id: class
+        text: Passports sort workers for employers. The border, not the file, is the problem.
+        evidence:
+          - {position: nation.belonging.class-not-nation, w: 3}
+        next: descent.nation-and-land.07
+
+  - id: descent.nation-and-land.07
+    type: allocation
+    title: The estate
+    text: >
+      A bankrupt plantation of 40,000 hectares passes to the state's land agency. Eight thousand
+      landless families live around it, and you chair the board. Divide ten points.
+    why: This asks who should own and work the land in the countryside.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: tiller
+          text: Plots with title to the families who work them
+          evidence: [{position: agrarian.question.land-to-the-tiller, w: 2}]
+        - id: coop
+          text: One large cooperative farm, planned with the regional food plan
+          evidence: [{position: agrarian.question.collective-farms, w: 2}]
+        - id: commons
+          text: Land held by the village, allotted by use and never sold
+          evidence: [{position: agrarian.question.communal-tenure, w: 2}]
+        - id: agroecology
+          text: Peasant agroecology for local food, with seed banks and no export crops
+          evidence: [{position: agrarian.question.food-sovereignty, w: 2}]
+        - id: investor
+          text: Lease to a commercial grower that will employ the families
+          evidence: [{position: agrarian.question.commercial-farms, w: 2}]
+        - id: lvt
+          text: Open leases to anyone, paying an annual land-value charge to the public
+          evidence: [{position: agrarian.question.land-value-tax, w: 2}]
+    options:
+      - id: done
+        text: Done
+        next: descent.nation-and-land.08
+
+  - id: descent.nation-and-land.08
+    type: explanation
+    title: How it was taken
+    text: >
+      Across three centuries, settlers took most of the land of the Americas, Australia and southern
+      Africa from the peoples living there. Why did it happen?
+    why: This asks what you think drove settler colonialism, and what kind of cause you reach for.
+    options:
+      - id: structure
+        text: Settlers came to stay, and staying needed the land empty of its owners. It was the point, not an accident.
+        cause: structures
+        evidence:
+          - {position: settler.colonialism.ongoing-structure, w: 3}
+        next: descent.nation-and-land.09
+      - id: conquest
+        text: Every nation on earth was founded by someone taking land from someone else. This is just recent.
+        cause: nature
+        evidence:
+          - {position: settler.colonialism.all-nations-conquest, w: 3}
+        next: descent.nation-and-land.09
+      - id: profit
+        text: Land, gold and cotton were worth fortunes to companies and crowns in Europe.
+        cause: interests
+        evidence:
+          - {position: settler.colonialism.ongoing-structure, w: 1}
+          - {position: imperialism.nature.monopoly-stage, w: 1}
+        next: descent.nation-and-land.09
+      - id: racism
+        text: Europeans believed other peoples were less than human.
+        cause: ideas
+        evidence:
+          - {position: settler.colonialism.historical-wrong-reconcile, w: 2}
+        next: descent.nation-and-land.09
+      - id: improve
+        text: People farmed and built where land lay idle. Often it was traded or won fairly.
+        cause: individuals
+        evidence:
+          - {position: settler.colonialism.just-settlement, w: 3}
+        next: descent.nation-and-land.09
+
+  - id: descent.nation-and-land.09
+    type: verdict
+    title: The Act
+    text: >
+      South Africa, January 2025. Thirty years after apartheid, most private farmland is still owned by
+      white South Africans. The president signs an Expropriation Act that allows the state, in some cases,
+      to take land for public interest with nil compensation. What should happen next?
+    why: This puts land restitution against property and the settlement, in the country where it is most live.
+    options:
+      - id: expropriate
+        text: Use it widely. Take the land without paying and give it to the people it was taken from.
+        evidence:
+          - {position: settler.colonialism.expropriate-redistribute, w: 3}
+        end: true
+      - id: tiller
+        text: Use it on idle and speculative land, and give title to the black farmers who work it.
+        evidence:
+          - {position: agrarian.question.land-to-the-tiller, w: 2}
+          - {position: property.private.social-function, w: 1}
+        end: true
+      - id: market
+        text: Repeal it. Willing buyer, willing seller. Seizures wreck farming and scare off investment.
+        evidence:
+          - {position: property.land.freehold, w: 3}
+          - {position: agrarian.question.commercial-farms, w: 1}
+        end: true
+      - id: reconcile
+        text: Use it rarely and through the courts. Restitution and reconciliation, not seizure.
+        evidence:
+          - {position: settler.colonialism.historical-wrong-reconcile, w: 3}
+        end: true
+      - id: one-people
+        text: Stop asking who is a settler and who is native. Redistribute to the landless, whoever they are.
+        evidence:
+          - {position: settler.colonialism.decolonize-citizenship, w: 3}
+        end: true

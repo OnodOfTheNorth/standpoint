@@ -1,0 +1,387 @@
+id: descent.ecology-technology
+title: Growth, limits and machines
+blurb: For people with a stake in ecology or technology. Degrowth or ecomodernism, ecosocialism or green growth, deep ecology or population limits; accelerate, steer, share or refuse the machines.
+region: ecology
+gate:
+  any:
+    - {weight: {position: ecology.crisis-cause.capital-accumulation, gt: 0.25}}
+    - {weight: {position: ecology.crisis-cause.too-many-people, gt: 0.25}}
+    - {weight: {position: nature.value.kin-and-relation, gt: 0.25}}
+    - {weight: {position: energy.transition.market-led, gt: 0.25}}
+    - {weight: {position: climate.justice.climate-debt, gt: 0.25}}
+    - {weight: {position: technology.nature.liberation, gt: 0.25}}
+    - {weight: {position: technology.nature.capitals-weapon, gt: 0.25}}
+    - {holdsAny: [technology.nature.autonomous-force, ai.risk.accelerate, ai.risk.tool-of-capital, automation.ownership.common-ownership, automation.ownership.refuse-it, ecology.crisis-cause.lost-piety]}
+entry: descent.ecology-technology.01
+nodes:
+  - id: descent.ecology-technology.01
+    type: scene
+    title: The plan
+    text: >
+      You chair your country's climate commission. Parliament has committed to halving emissions by 2035
+      and will pass whichever plan you put first. The fuel lobby, the unions and the farmers are all in
+      the gallery.
+    why: This separates green growth, ecomodernism, degrowth and ecosocialism by what each would actually do.
+    premises:
+      - id: overstated
+        text: The premise that emissions need halving at all.
+        evidence: [{position: ecology.crisis-cause.overstated, w: 3}]
+    options:
+      - id: price
+        text: Put a rising price on carbon and let private investment find the cheapest cuts.
+        evidence:
+          - {position: energy.transition.market-led, w: 3}
+          - {position: growth.ecology.green-growth, w: 2}
+        next: descent.ecology-technology.02
+      - id: nuclear
+        text: Build nuclear plants and new grids at speed. Use more clean energy, not less energy.
+        evidence:
+          - {position: energy.transition.nuclear-abundance, w: 3}
+          - {position: growth.ecology.ecomodernism, w: 2}
+        next: descent.ecology-technology.02
+      - id: less
+        text: Use less. A shorter work week, fewer flights, goods built to last, and an end to advertising-driven buying.
+        evidence:
+          - {position: growth.ecology.degrowth, w: 3}
+          - {position: work.future.shorter-hours, w: 1}
+        next: descent.ecology-technology.02
+      - id: public
+        text: Take energy into public ownership and plan the switch, with a job guaranteed for every worker it displaces.
+        evidence:
+          - {position: energy.transition.public-ownership, w: 3}
+          - {position: growth.ecology.ecosocialism, w: 2}
+        next: descent.ecology-technology.02
+      - id: cheap
+        text: Don't make working people pay. Keep fuel cheap and adapt as we go.
+        evidence:
+          - {position: energy.transition.keep-energy-cheap, w: 3}
+          - {position: growth.ecology.growth-is-the-cure, w: 1}
+        next: descent.ecology-technology.02
+
+  - id: descent.ecology-technology.02
+    type: voices
+    title: More or less
+    text: >
+      Two people who both take climate change seriously argue at a conference.
+    voices:
+      - name: Hana, an ecological economist
+        says: "Rich countries can't decouple fast enough. We have to shrink energy and material use, share the work, and stop measuring success by GDP."
+      - name: Leo, an energy engineer
+        says: "Shrinking is a dead end that nobody will vote for. The answer is abundance: nuclear, solar, dense cities, farms that use less land, so nature gets more."
+    why: Degrowth against ecomodernism is the main fight in ecological politics, and others think both miss something.
+    options:
+      - id: hana
+        text: Hana.
+        evidence:
+          - {position: growth.ecology.degrowth, w: 3}
+        next: descent.ecology-technology.03
+      - id: leo
+        text: Leo.
+        evidence:
+          - {position: growth.ecology.ecomodernism, w: 3}
+        next: descent.ecology-technology.03
+      - id: ownership
+        text: Both miss that the question is who owns production and what it's planned for.
+        evidence:
+          - {position: growth.ecology.ecosocialism, w: 3}
+          - {position: ecology.crisis-cause.capital-accumulation, w: 1}
+        next: descent.ecology-technology.03
+      - id: south
+        text: Both miss that the South has the right to develop first, and should.
+        evidence:
+          - {position: growth.ecology.southern-right-to-develop, w: 3}
+        next: descent.ecology-technology.03
+      - id: life
+        text: Both treat nature as a resource. Other living things have a claim of their own.
+        evidence:
+          - {position: growth.ecology.deep-ecology, w: 3}
+          - {position: nature.value.intrinsic, w: 2}
+        next: descent.ecology-technology.03
+      - id: home
+        text: Both want to plan the planet. Look after the land where you live.
+        evidence:
+          - {position: growth.ecology.home-and-stewardship, w: 3}
+        next: descent.ecology-technology.03
+
+  - id: descent.ecology-technology.03
+    type: explanation
+    title: The cause
+    text: >
+      The world's wild animal populations have fallen by more than half since 1970, and the climate is
+      the warmest in recorded history. What, at bottom, is causing it?
+    why: This asks for an account of the ecological crisis, and what kind of cause you reach for.
+    options:
+      - id: profit
+        text: An economy that has to keep growing for profit, or stall.
+        cause: structures
+        evidence:
+          - {position: ecology.crisis-cause.capital-accumulation, w: 3}
+        next: descent.ecology-technology.04
+      - id: north
+        text: Rich countries taking the South's land, labor and share of the atmosphere.
+        cause: structures
+        evidence:
+          - {position: ecology.crisis-cause.core-appropriation, w: 3}
+        next: descent.ecology-technology.04
+      - id: price
+        text: Damage nobody pays for. Put a price on it and markets will fix the rest.
+        cause: interests
+        evidence:
+          - {position: ecology.crisis-cause.market-failure, w: 3}
+        next: descent.ecology-technology.04
+      - id: people
+        text: Too many people on one planet.
+        cause: nature
+        evidence:
+          - {position: ecology.crisis-cause.too-many-people, w: 3}
+        next: descent.ecology-technology.04
+      - id: mastery
+        text: The human urge to master nature rather than live inside it.
+        cause: ideas
+        evidence:
+          - {position: ecology.crisis-cause.human-mastery, w: 3}
+        next: descent.ecology-technology.04
+      - id: piety
+        text: We forgot that the earth is a gift and not our property.
+        cause: divine
+        evidence:
+          - {position: ecology.crisis-cause.lost-piety, w: 3}
+        next: descent.ecology-technology.04
+
+  - id: descent.ecology-technology.04
+    type: line
+    title: Numbers
+    text: >
+      A government believes its population is growing too fast for its land and water. Going down this
+      list, where do you stop?
+    cases:
+      - Free contraception and girls kept in school to eighteen
+      - Cash for families who stop at two children
+      - Higher taxes for families with more than two
+      - A legal limit of one child per couple, as China had from 1980 to 2015
+      - Sterilization targets for each district, as in India in 1976
+    why: This separates neo-Malthusians from those who think population is not the problem, or the wrong problem.
+    premises:
+      - id: too-few
+        text: The premise that there are too many people. The crisis is too few births.
+        evidence: [{position: population.question.too-few-births, w: 3}]
+    options:
+      - id: none
+        text: Before the first. People are the resource. More minds, more solutions.
+        evidence:
+          - {position: population.question.people-are-the-resource, w: 3}
+        next: descent.ecology-technology.05
+      - id: one
+        text: After the first. Development and women's choices settle the rest on their own.
+        evidence:
+          - {position: population.question.development-settles-it, w: 3}
+        next: descent.ecology-technology.05
+      - id: three
+        text: After the third. Incentives yes, force no.
+        evidence:
+          - {position: population.question.too-many, w: 2}
+          - {position: population.question.plan-it, w: 1}
+        next: descent.ecology-technology.05
+      - id: four
+        text: After the fourth. China's limit was harsh, but the numbers had to be planned.
+        evidence:
+          - {position: population.question.plan-it, w: 3}
+          - {position: population.question.too-many, w: 2}
+        next: descent.ecology-technology.05
+      - id: rich
+        text: The whole list is aimed at the wrong people. One rich family burns more than a village.
+        evidence:
+          - {position: population.question.consumption-not-numbers, w: 3}
+        next: descent.ecology-technology.05
+
+  - id: descent.ecology-technology.05
+    type: scene
+    title: The valley
+    text: >
+      A dam on a river in northern Laos would power two million homes without coal and earn the
+      government export income. It would flood a valley where four villages farm, and the only habitat of
+      a small fish found nowhere else on earth. You have the deciding vote.
+    why: This separates deep ecology from ecomodernism, market environmentalism and indigenous and village claims.
+    options:
+      - id: build
+        text: Build it. Clean power for millions outweighs a valley and a fish.
+        evidence:
+          - {position: nature.value.for-human-use, w: 3}
+          - {position: growth.ecology.ecomodernism, w: 1}
+        next: descent.ecology-technology.06
+      - id: offset
+        text: Build it, but pay the villages well and fund protection for a larger valley elsewhere.
+        evidence:
+          - {position: nature.value.natural-capital, w: 3}
+        next: descent.ecology-technology.06
+      - id: fish
+        text: Don't. A species has a right to exist that no number of homes outweighs.
+        evidence:
+          - {position: nature.value.intrinsic, w: 3}
+        next: descent.ecology-technology.06
+      - id: villages
+        text: Only if the villages consent and own a share of it. The river is theirs before it is the state's.
+        evidence:
+          - {position: energy.transition.community-owned, w: 2}
+          - {position: nature.value.kin-and-relation, w: 2}
+        next: descent.ecology-technology.06
+      - id: export
+        text: Don't. The power is for export to richer neighbors. It's another sacrifice zone.
+        evidence:
+          - {position: energy.transition.no-to-green-extraction, w: 3}
+        next: descent.ecology-technology.06
+
+  - id: descent.ecology-technology.06
+    type: voices
+    title: The model
+    text: >
+      A lab is about to release a much more capable AI model. Two people who both work in the field argue
+      about whether it should.
+    voices:
+      - name: Dev, a startup founder
+        says: "Every year we delay, people die of diseases this could cure. The danger is slowing down. Build."
+      - name: Miriam, a safety researcher
+        says: "Something that might outthink us all needs brakes before speed. If we get this wrong there is no second try."
+    why: This separates effective accelerationism from longtermist safety, and both from those who ask who owns it, what it costs now, or whether it should exist.
+    options:
+      - id: dev
+        text: Dev.
+        evidence:
+          - {position: ai.risk.accelerate, w: 3}
+          - {position: accelerationism.question.effective-acc, w: 2}
+        next: descent.ecology-technology.07
+      - id: miriam
+        text: Miriam.
+        evidence:
+          - {position: ai.risk.existential, w: 3}
+          - {position: accelerationism.question.differential, w: 2}
+        next: descent.ecology-technology.07
+      - id: owners
+        text: Both miss who owns it. It will be used to cheapen and watch workers, whatever the speed.
+        evidence:
+          - {position: ai.risk.tool-of-capital, w: 3}
+        next: descent.ecology-technology.07
+      - id: now
+        text: Both miss the harms already here, fraud, bias and lost jobs. Regulate those.
+        evidence:
+          - {position: ai.risk.harms-now, w: 3}
+        next: descent.ecology-technology.07
+      - id: hype
+        text: Both are selling something. It's autocomplete with a marketing budget.
+        evidence:
+          - {position: ai.risk.overhyped, w: 3}
+        next: descent.ecology-technology.07
+      - id: human
+        text: Both miss what it does to us. Some things should be done by people or not at all.
+        evidence:
+          - {position: ai.risk.human-dignity, w: 3}
+        next: descent.ecology-technology.07
+
+  - id: descent.ecology-technology.07
+    type: scene
+    title: The cranes
+    text: >
+      You load ships at the port of Santos. The operator is installing automated cranes that will cut the
+      crews from 900 to 300 over three years. The union meets tonight. You have the floor for two
+      minutes.
+    why: This separates left accelerationists, neo-Luddites, bargainers and those who accept the market's verdict.
+    options:
+      - id: own
+        text: Don't fight the cranes. Fight for them. Socialize them and cut the week to three days for all of us.
+        evidence:
+          - {position: automation.ownership.common-ownership, w: 3}
+          - {position: accelerationism.question.left-acc, w: 2}
+        next: descent.ecology-technology.08
+      - id: stop
+        text: Strike until the cranes are scrapped. A port is a community, not a machine.
+        evidence:
+          - {position: automation.ownership.refuse-it, w: 3}
+          - {position: accelerationism.question.decelerate, w: 1}
+        next: descent.ecology-technology.08
+      - id: bargain
+        text: Bargain. No layoffs, retraining, and a share of the savings in our wages.
+        evidence:
+          - {position: automation.ownership.bargain-and-share, w: 3}
+        next: descent.ecology-technology.08
+      - id: dividend
+        text: Let them automate, and tax the gains into a payment for everyone.
+        evidence:
+          - {position: automation.ownership.dividend, w: 3}
+        next: descent.ecology-technology.08
+      - id: adapt
+        text: Nobody stops machines. Learn to run them before someone else does.
+        evidence:
+          - {position: automation.ownership.adapt-or-lose, w: 3}
+        next: descent.ecology-technology.08
+
+  - id: descent.ecology-technology.08
+    type: verdict
+    title: The frames
+    text: >
+      England, 1811 to 1816. Textile workers in the Midlands and the North smash the new stocking frames
+      and power looms that cut their pay. Parliament makes frame-breaking punishable by death and sends
+      troops. Where would you have stood?
+    why: The Luddites are the oldest test of what technology is, and whom it serves.
+    options:
+      - id: luddites
+        text: With the Luddites. The machines were weapons against them, used by the owners.
+        evidence:
+          - {position: technology.nature.capitals-weapon, w: 3}
+        next: descent.ecology-technology.09
+      - id: owners
+        text: With the mill owners. The machines made cloth cheap for millions of people.
+        evidence:
+          - {position: technology.nature.liberation, w: 3}
+        next: descent.ecology-technology.09
+      - id: law
+        text: With neither. The machine was neutral. The law that left workers with nothing was the problem.
+        evidence:
+          - {position: technology.nature.neutral-tool, w: 3}
+        next: descent.ecology-technology.09
+      - id: design
+        text: The machines were built to break the old trades. Machines can be built differently.
+        evidence:
+          - {position: technology.nature.built-in-politics, w: 3}
+        next: descent.ecology-technology.09
+      - id: force
+        text: The Luddites saw early what we live with now. Technology runs on its own logic, and it is swallowing us.
+        evidence:
+          - {position: technology.nature.autonomous-force, w: 3}
+        next: descent.ecology-technology.09
+
+  - id: descent.ecology-technology.09
+    type: tradeoff
+    title: The billion
+    text: >
+      A foundation has one billion dollars. It can buy bed nets and malaria medicine, saving roughly
+      200,000 lives over a decade. Or it can fund research to make advanced AI safe for the billions not
+      yet born. You sit on the board.
+    why: This separates near-term effective altruists, longtermists and those who reject the frame.
+    premises:
+      - id: billionaire
+        text: The premise that a private foundation should be deciding this.
+        evidence: [{position: tax.purpose.redistribute, w: 2}]
+    options:
+      - id: nets
+        text: The nets. Lives we can certainly save now beat lives we might save later.
+        evidence:
+          - {position: morality.basis.utility, w: 3}
+          - {position: aid.foreign.fund-what-works, w: 2}
+        end: true
+      - id: future
+        text: The research. The future holds far more people than the present, and they count just as much.
+        evidence:
+          - {position: climate.justice.future-generations, w: 3}
+          - {position: ai.risk.existential, w: 2}
+        end: true
+      - id: build
+        text: Neither. Give it to builders. Growth and new technology save more lives than charity.
+        evidence:
+          - {position: accelerationism.question.effective-acc, w: 3}
+        end: true
+      - id: debt
+        text: Neither. Malaria persists because the South is kept poor. Charity treats the symptom.
+        evidence:
+          - {position: aid.foreign.small-change-from-the-drain, w: 2}
+          - {position: poverty.cause.drain, w: 2}
+        end: true

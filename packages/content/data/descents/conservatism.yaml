@@ -1,0 +1,374 @@
+id: descent.conservatism
+title: What are you conserving?
+blurb: For people on the right. Burkean, one-nation, neoconservative, paleoconservative or national conservative, tested on wars, tariffs, borders, welfare and faith.
+region: state
+gate:
+  any:
+    - {weight: {position: tradition.modernity.inherited-wisdom, gt: 0.25}}
+    - {weight: {position: war.militarism.peace-through-strength, gt: 0.25}}
+    - {weight: {position: borders.migration.restrict-national, gt: 0.25}}
+    - {weight: {position: police.role.order-maintenance, gt: 0.25}}
+    - {holdsAny: [cs.own-first.our-people-first, cs.own-first.widening-circles, culture.war.civilizational-struggle, welfare.state.for-our-own, hist.neoliberal-turn.betrayal-of-the-nation]}
+entry: descent.conservatism.01
+nodes:
+  - id: descent.conservatism.01
+    type: verdict
+    title: Baghdad
+    text: >
+      March 2003. The United States and Britain invade Iraq without a Security Council resolution
+      authorizing force. The case made is weapons of mass destruction and the chance to plant
+      representative government in the Arab world. You are a conservative member of parliament. How do
+      you vote?
+    why: The Iraq war split the right more cleanly than any other event of its generation.
+    conditions:
+      - id: if-weapons
+        text: It depends whether the weapons are really there.
+        evidence: [{position: intervention.humanitarian.national-interest-only, w: 2}]
+    options:
+      - id: neo
+        text: Yes. Remove a tyrant and let liberty take root. Strength used for good is still good.
+        evidence:
+          - {position: intervention.humanitarian.spread-liberty, w: 3}
+          - {position: world.order.american-primacy, w: 2}
+        next: descent.conservatism.02
+      - id: realist
+        text: No. Saddam was contained and the balance of power held. Toppling him hands the region to Iran.
+        evidence:
+          - {position: world.order.restraint, w: 3}
+          - {position: war.militarism.anarchy-security, w: 2}
+        next: descent.conservatism.02
+      - id: burke
+        text: No. You cannot rebuild a society from a blueprint drawn in Washington. Institutions grow; they aren't installed.
+        evidence:
+          - {position: tradition.modernity.inherited-wisdom, w: 3}
+          - {position: change.tempo.slow-and-organic, w: 2}
+        next: descent.conservatism.02
+      - id: paleo
+        text: No. A republic, not an empire. Our sons and our money stay home.
+        evidence:
+          - {position: world.order.nation-first, w: 3}
+          - {position: war.militarism.arms-profits, w: 1}
+        next: descent.conservatism.02
+      - id: ally
+        text: Yes. When your oldest ally goes to war, you stand with it.
+        evidence:
+          - {position: world.order.liberal-order, w: 2}
+          - {position: war.militarism.peace-through-strength, w: 1}
+        next: descent.conservatism.02
+
+  - id: descent.conservatism.02
+    type: scene
+    title: The mill
+    text: >
+      Ten years on. You hold a seat in a northern steel town. Imported steel sells at a price your mill
+      can't match, and the owners say they will close it in March. Eleven hundred jobs. The town voted for
+      you by four hundred.
+    why: This separates free-trade conservatives from national conservatives and one-nation Tories.
+    options:
+      - id: tariff
+        text: Tariff the imports. A country that cannot make its own steel is not a country.
+        evidence:
+          - {position: tax.purpose.tariffs-for-the-nation, w: 3}
+          - {position: exchange.unequal.rigged-against-us, w: 2}
+        next: descent.conservatism.03
+      - id: market
+        text: Let it close. Cheap steel helps every other business, and the market is telling us something.
+        evidence:
+          - {position: exchange.unequal.mutual-gain, w: 3}
+          - {position: capitalism.nature.free-exchange, w: 2}
+        next: descent.conservatism.03
+      - id: bridge
+        text: Keep it open with public money and a seat for the workers on the board while the town retools.
+        evidence:
+          - {position: work.future.dignity-of-work, w: 3}
+          - {position: firm.ownership.codetermination, w: 2}
+        next: descent.conservatism.03
+      - id: china
+        text: Tariff, and say plainly that the cheap steel comes from a rival that cheats.
+        evidence:
+          - {position: hist.china-present.mercantilist-cheat, w: 3}
+          - {position: intl.sanctions.national-leverage, w: 1}
+        next: descent.conservatism.03
+
+  - id: descent.conservatism.03
+    type: line
+    title: Who comes in
+    text: >
+      Your party is writing its immigration policy. Going down this list, where do you stop saying yes?
+    cases:
+      - A surgeon from Manila with a hospital job waiting
+      - A family fleeing the war in Syria
+      - A seasonal fruit picker from Morocco
+      - A student who wants to stay and work after graduating
+      - A cousin joining relatives already here
+      - A man who crossed without papers ten years ago and has worked ever since
+    why: This separates national conservatives from economic conservatives, Christian conservatives and the identitarian right.
+    premises:
+      - id: numbers
+        text: The premise that it's about individuals rather than total numbers.
+        evidence: [{position: borders.migration.restrict-national, w: 2}]
+    options:
+      - id: legal
+        text: Yes to all who came legally and work. The last one has to go back and apply.
+        evidence:
+          - {position: borders.migration.legal-and-contributing, w: 3}
+        next: descent.conservatism.04
+      - id: surgeon
+        text: The surgeon, and the refugees for a time. Beyond that, a nation has the right to stay itself.
+        evidence:
+          - {position: borders.migration.restrict-national, w: 3}
+          - {position: nationalism.kinds.virtue-of-nations, w: 1}
+        next: descent.conservatism.04
+      - id: economy
+        text: The first four. Let in who the economy needs, set by the numbers each year.
+        evidence:
+          - {position: borders.migration.managed-labor, w: 3}
+        next: descent.conservatism.04
+      - id: wages
+        text: The surgeon and the refugees. The rest undercut wages for people already here.
+        evidence:
+          - {position: borders.migration.restrict-for-workers, w: 3}
+          - {position: labor.division.outsiders-undercut-us, w: 1}
+        next: descent.conservatism.04
+      - id: stranger
+        text: All six. Welcome the stranger. The ten-year worker is already one of us.
+        evidence:
+          - {position: borders.migration.democratic-control, w: 1}
+          - {position: solidarity.basis.one-body, w: 2}
+        next: descent.conservatism.04
+      - id: none
+        text: None of them, and some already here should be paid to go home.
+        evidence:
+          - {position: borders.migration.remigration, w: 3}
+        next: descent.conservatism.04
+
+  - id: descent.conservatism.04
+    type: allocation
+    title: The budget
+    text: >
+      Your party wins. The treasury finds room for one big package. Divide ten points among these.
+    why: Where a conservative government spends shows which conservatism it is.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: tax
+          text: Cut income and business taxes
+          evidence: [{position: welfare.state.coercive-dependency, w: 2}, {position: tax.purpose.public-goods, w: 1}]
+        - id: pensions
+          text: Protect pensions and the public health service
+          evidence: [{position: capitalism.nature.managed-engine, w: 2}]
+        - id: families
+          text: Cash for married parents with children
+          evidence: [{position: family.form.nation-continuity, w: 2}]
+        - id: defense
+          text: Defense, to two and a half percent of national income
+          evidence: [{position: war.militarism.peace-through-strength, w: 2}]
+        - id: border
+          text: Border enforcement and deportations
+          evidence: [{position: borders.migration.restrict-national, w: 2}]
+        - id: churches
+          text: Grants to churches, charities and local councils that care for the poor
+          evidence: [{position: welfare.state.subsidiarity, w: 2}]
+    options:
+      - id: done
+        text: Done
+        next: descent.conservatism.05
+
+  - id: descent.conservatism.05
+    type: voices
+    title: Kyiv
+    text: >
+      February 2022. Russia invades Ukraine in full. A year later two conservatives argue over the aid
+      package on a late-night panel.
+    voices:
+      - name: Margaret, a former defense minister
+        says: "If Putin wins, he won't stop at Ukraine. Arm Kyiv until Russia leaves. Weakness is what invites war."
+      - name: Walter, a magazine editor
+        says: "It's not our border and not our money. Our own towns are falling apart. Negotiate, and spend at home."
+    why: This asks how the right sees power abroad, which divides hawks, restrainers and nationalists.
+    options:
+      - id: margaret
+        text: Margaret.
+        evidence:
+          - {position: war.militarism.peace-through-strength, w: 3}
+          - {position: world.order.american-primacy, w: 1}
+        next: descent.conservatism.06
+      - id: walter
+        text: Walter.
+        evidence:
+          - {position: world.order.nation-first, w: 3}
+          - {position: internationalism.nation-first, w: 1}
+        next: descent.conservatism.06
+      - id: expansion
+        text: Both miss that NATO's march east provoked it. Great powers have spheres, like it or not.
+        evidence:
+          - {position: world.order.restraint, w: 3}
+          - {position: war.militarism.anarchy-security, w: 1}
+        next: descent.conservatism.06
+      - id: europe
+        text: Both miss that Europe should defend itself, not lean on America either way.
+        evidence:
+          - {position: intl.sovereignty.nations-set-own-course, w: 2}
+          - {position: war.militarism.peace-through-strength, w: 1}
+        next: descent.conservatism.06
+      - id: rivals
+        text: Both miss that it's a war between two sets of rulers, paid for by conscripts.
+        evidence:
+          - {position: war.militarism.imperialist-rivalry, w: 3}
+        next: descent.conservatism.06
+
+  - id: descent.conservatism.06
+    type: explanation
+    title: The turn
+    text: >
+      Between 2016 and 2024, right-wing parties across much of the world moved away from free trade and
+      toward tariffs, borders and a war on "elites." Why?
+    why: This asks what moved the right, and what kind of cause you reach for.
+    options:
+      - id: betrayal
+        text: Elites shipped the factories abroad and let wages fall. Voters finally noticed.
+        cause: interests
+        evidence:
+          - {position: hist.neoliberal-turn.betrayal-of-the-nation, w: 3}
+          - {position: labor.aristocracy.globalization-losers, w: 2}
+        next: descent.conservatism.07
+      - id: culture
+        text: A culture was being dismantled, faith, family and nation, and people refused.
+        cause: culture
+        evidence:
+          - {position: culture.war.civilizational-struggle, w: 3}
+          - {position: cs.decline.moral-decay, w: 1}
+        next: descent.conservatism.07
+      - id: market
+        text: The market was let loose on everything people valued, and the right finally saw it.
+        cause: structures
+        evidence:
+          - {position: hist.neoliberal-turn.market-society, w: 3}
+          - {position: capitalism.nature.market-society, w: 2}
+        next: descent.conservatism.07
+      - id: leaders
+        text: A few talented demagogues found a winning formula and others copied it.
+        cause: individuals
+        evidence:
+          - {position: history.motor.great-individuals, w: 2}
+        next: descent.conservatism.07
+      - id: channel
+        text: Owners needed someone to blame for falling living standards, and migrants were handy.
+        cause: interests
+        evidence:
+          - {position: culture.war.manufactured-diversion, w: 3}
+        next: descent.conservatism.07
+
+  - id: descent.conservatism.07
+    type: scene
+    title: The commandments
+    text: >
+      Your state legislature votes to hang the Ten Commandments in every public school classroom, as
+      Louisiana did in 2024. You chair the committee that has to sign off.
+    why: This separates Christian nationalists, establishment conservatives, and conservatives who want the church kept clear of the state.
+    options:
+      - id: yes-heritage
+        text: Sign. This is the moral root of our law, and children should know it.
+        evidence:
+          - {position: religion.public.heritage-establishment, w: 3}
+        next: descent.conservatism.08
+      - id: yes-nation
+        text: Sign, and go further. This is a Christian nation and the law should say so.
+        evidence:
+          - {position: religion.public.faith-as-nation, w: 2}
+          - {position: culture.war.civilizational-struggle, w: 2}
+        next: descent.conservatism.08
+      - id: no-church
+        text: Don't sign. When the state takes up the faith, it is the faith that gets corrupted.
+        evidence:
+          - {position: religion.public.separation, w: 3}
+        next: descent.conservatism.08
+      - id: no-state
+        text: Don't sign. Schools are not the government's pulpit; parents teach faith.
+        evidence:
+          - {position: education.purpose.parental-authority, w: 2}
+          - {position: religion.public.separation, w: 1}
+        next: descent.conservatism.08
+
+  - id: descent.conservatism.08
+    type: verdict
+    title: The pits
+    text: >
+      Britain, 1984. The government plans to close twenty pits. The miners strike for a year. Police
+      ride into pickets at Orgreave. The strike breaks; within a decade most coalfields are gone, and with
+      them the towns' main employers. Where would you have stood?
+    why: The miners' strike divides market conservatives from one-nation and traditionalist conservatives.
+    options:
+      - id: thatcher
+        text: With the government. The union was holding the country hostage to uneconomic pits.
+        evidence:
+          - {position: unions.role.obstacle, w: 3}
+          - {position: hist.neoliberal-turn.cure-for-stagflation, w: 2}
+        next: descent.conservatism.09
+      - id: one-nation
+        text: With neither. Close them slowly, with new work found first. You don't wreck your own people.
+        evidence:
+          - {position: workplace.conflict.mutual-duties, w: 2}
+          - {position: work.future.dignity-of-work, w: 2}
+        next: descent.conservatism.09
+      - id: communities
+        text: The pits were communities older than the market. Destroying them was a conservative failure.
+        evidence:
+          - {position: hist.neoliberal-turn.market-society, w: 3}
+          - {position: tradition.modernity.inherited-wisdom, w: 1}
+        next: descent.conservatism.09
+      - id: miners
+        text: With the miners. It was a class war, and the state was on one side.
+        evidence:
+          - {position: police.role.class-repression, w: 2}
+          - {position: hist.neoliberal-turn.restoring-class-power, w: 2}
+        next: descent.conservatism.09
+      - id: order
+        text: With the police. Whatever the cause, you cannot let mobs rule the roads.
+        evidence:
+          - {position: police.role.order-maintenance, w: 3}
+        next: descent.conservatism.09
+
+  - id: descent.conservatism.09
+    type: reason
+    title: The thing kept
+    text: >
+      Last question. When you say you are conservative, what, above all, are you keeping?
+    why: This asks what your conservatism is for, the root that separates its schools.
+    options:
+      - id: institutions
+        text: Institutions that took centuries to grow, and that no clever plan can replace.
+        evidence:
+          - {position: tradition.modernity.inherited-wisdom, w: 3}
+          - {position: knowledge.basis.tradition, w: 2}
+        end: true
+      - id: nation
+        text: The nation, its people, its borders, its way of life.
+        evidence:
+          - {position: nationalism.kinds.virtue-of-nations, w: 3}
+          - {position: cs.own-first.our-people-first, w: 1}
+        end: true
+      - id: god
+        text: God's order, which modern life has turned its back on.
+        evidence:
+          - {position: tradition.modernity.sacred-order, w: 3}
+        end: true
+      - id: enterprise
+        text: Free enterprise and limited government against the people who want to run your life.
+        evidence:
+          - {position: capitalism.nature.free-exchange, w: 2}
+          - {position: state.relation.shrink, w: 2}
+        end: true
+      - id: peace
+        text: The peace between classes. One nation, not two.
+        evidence:
+          - {position: conflict.nature.organic-harmony, w: 3}
+          - {position: reform.revolution.change-to-conserve, w: 2}
+        end: true
+      - id: america
+        text: The West's strength, and the order it built after 1945.
+        evidence:
+          - {position: world.order.american-primacy, w: 2}
+          - {position: hist.cold-war.victory-over-evil, w: 2}
+        end: true

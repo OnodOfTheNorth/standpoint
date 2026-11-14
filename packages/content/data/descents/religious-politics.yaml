@@ -1,0 +1,366 @@
+id: descent.religious-politics
+title: God and the state
+blurb: For people whose faith shapes their politics. Integralism or two kingdoms, Christian democracy or liberation theology, Brotherhood or quietism, Zionism religious or refused, and Hindutva.
+region: religion
+gate:
+  any:
+    - {weight: {position: history.motor.providence, gt: 0.25}}
+    - {weight: {position: religion.public.divine-law, gt: 0.25}}
+    - {weight: {position: religion.public.prophetic-church, gt: 0.25}}
+    - {weight: {position: solidarity.basis.one-body, gt: 0.25}}
+    - {weight: {position: inequality.justice.stewardship, gt: 0.25}}
+    - {holdsAny: [cs.not-political.faith-above-politics, religion.public.faith-as-nation, body.autonomy.life-from-conception, family.form.natural-institution, authority.legitimacy.divine-ordinance]}
+entry: descent.religious-politics.01
+nodes:
+  - id: descent.religious-politics.01
+    type: line
+    title: How far
+    text: >
+      Your country is rewriting its constitution and the religious question is open. Going down this
+      list, where do you stop?
+    cases:
+      - A national day of prayer
+      - Public money for religious schools
+      - Religious courts for marriage and inheritance, for believers who choose them
+      - A law against blasphemy
+      - One faith named as the religion of the state
+      - Senior clergy able to strike down laws that contradict scripture
+    why: This measures how far you want faith to reach into the state, from separation to rule by religious law.
+    premises:
+      - id: my-faith
+        text: The premise that it's fine as long as it's the true faith. It depends entirely on which religion.
+        evidence: [{position: religion.public.divine-law, w: 2}]
+    options:
+      - id: none
+        text: Before the first. Keep religion and state apart, and protect every faith equally.
+        evidence:
+          - {position: religion.public.separation, w: 3}
+        next: descent.religious-politics.02
+      - id: laic
+        text: Before the first, and keep religion out of public schools and offices too.
+        evidence:
+          - {position: religion.public.laicite, w: 3}
+        next: descent.religious-politics.02
+      - id: two
+        text: After the second. The nation's faith can shape public life without forcing anyone.
+        evidence:
+          - {position: religion.public.heritage-establishment, w: 3}
+        next: descent.religious-politics.02
+      - id: five
+        text: After the fifth. A state should confess the true faith and order its law toward it.
+        evidence:
+          - {position: democracy.form.confessional-state, w: 3}
+          - {position: religion.public.divine-law, w: 1}
+        next: descent.religious-politics.02
+      - id: all
+        text: All six. God's law stands above any parliament, and those who know it must guard it.
+        evidence:
+          - {position: religion.public.divine-law, w: 3}
+          - {position: democracy.form.guardianship-of-jurist, w: 2}
+        next: descent.religious-politics.02
+
+  - id: descent.religious-politics.02
+    type: voices
+    title: Two swords
+    text: >
+      A seminary debate, late at night. Two Christians disagree about what a government owes to God.
+    voices:
+      - name: Father Aurelio, a Catholic theologian
+        says: "The temporal power must be ordered to the spiritual, as the body to the soul. A state that is neutral about God is not neutral. It just worships something else."
+      - name: Pastor Ingrid, a Lutheran
+        says: "God rules the world with two hands. The sword, through magistrates, keeps order. The Word, through the church, saves souls. Mix them and you ruin both."
+    why: This separates integralists from two-kingdoms Christians, and both from Christian democrats and liberation theologians.
+    options:
+      - id: aurelio
+        text: Father Aurelio.
+        evidence:
+          - {position: democracy.form.confessional-state, w: 2}
+          - {position: state.nature.ordained-authority, w: 3}
+        next: descent.religious-politics.03
+      - id: ingrid
+        text: Pastor Ingrid.
+        evidence:
+          - {position: religion.public.separation, w: 2}
+          - {position: authority.legitimacy.divine-ordinance, w: 2}
+        next: descent.religious-politics.03
+      - id: votes
+        text: Both miss that a Christian people can shape its laws through votes and parties, without a throne or a wall.
+        evidence:
+          - {position: religion.public.heritage-establishment, w: 2}
+          - {position: alliances.policy.center-coalition, w: 1}
+        next: descent.religious-politics.03
+      - id: poor
+        text: Both miss that the church belongs with the poor, not beside whoever holds the sword.
+        evidence:
+          - {position: religion.public.prophetic-church, w: 3}
+        next: descent.religious-politics.03
+
+  - id: descent.religious-politics.03
+    type: scene
+    title: The ranch
+    text: >
+      Pernambuco, Brazil. Two hundred landless families occupy a cattle ranch that has stood idle for
+      eleven years. The owner wants them out. They have asked you, the bishop, to say Mass on the land on
+      Sunday. The governor's office has asked you not to.
+    why: This separates liberation theology from Catholic social teaching, Christian democracy and a faith kept out of politics.
+    options:
+      - id: mass
+        text: Say Mass on the land. God stands with the poor, and so must the church.
+        evidence:
+          - {position: religion.public.prophetic-church, w: 3}
+          - {position: emergency.powers.need-overrides-property, w: 2}
+        next: descent.religious-politics.04
+      - id: mediate
+        text: Don't go. Press the state to expropriate the idle land lawfully. Property carries a social mortgage.
+        evidence:
+          - {position: property.private.social-function, w: 3}
+        next: descent.religious-politics.04
+      - id: party
+        text: Stay out of it. Back a land reform bill in congress through the Christian parties.
+        evidence:
+          - {position: property.private.social-function, w: 2}
+          - {position: alliances.policy.center-coalition, w: 2}
+        next: descent.religious-politics.04
+      - id: law
+        text: Tell the families to leave. Taking another's land is theft, whatever his sins.
+        evidence:
+          - {position: property.private.natural-right, w: 3}
+        next: descent.religious-politics.04
+      - id: pray
+        text: Pray for everyone and say nothing. The church's work is souls, not land titles.
+        evidence:
+          - {position: cs.not-political.faith-above-politics, w: 3}
+        next: descent.religious-politics.04
+
+  - id: descent.religious-politics.04
+    type: verdict
+    title: Tehran
+    text: >
+      Iran, 1979. A revolution of students, bazaar merchants, workers, leftists and clergy drives out the
+      Shah. A referendum approves a constitution that places a senior jurist above every elected office.
+      Ali Shariati, who preached Shiism as a faith of the oppressed, died two years before. What was it?
+    why: The Iranian Revolution divides Khomeinists, Islamic socialists, liberals and monarchists.
+    options:
+      - id: islamic
+        text: An Islamic revolution that restored God's law and won Iran back from foreign control.
+        evidence:
+          - {position: hist.iranian-revolution.islamic-revolution, w: 3}
+        next: descent.religious-politics.05
+      - id: red
+        text: A rising of the oppressed in Islam's own language, betrayed by clerics who took the state.
+        evidence:
+          - {position: hist.iranian-revolution.red-shiism-betrayed, w: 3}
+        next: descent.religious-politics.05
+      - id: hijacked
+        text: A broad popular revolution that the clergy hijacked.
+        evidence:
+          - {position: hist.iranian-revolution.hijacked, w: 3}
+        next: descent.religious-politics.05
+      - id: break
+        text: Whatever else it was, it broke America's hold on Iran.
+        evidence:
+          - {position: hist.iranian-revolution.anti-imperialist-break, w: 3}
+        next: descent.religious-politics.05
+      - id: reaction
+        text: A step back into theocracy from a country that was modernizing.
+        evidence:
+          - {position: hist.iranian-revolution.theocratic-reaction, w: 3}
+        next: descent.religious-politics.05
+
+  - id: descent.religious-politics.05
+    type: verdict
+    title: Cairo
+    text: >
+      Egypt, 2012. Mohamed Morsi of the Muslim Brotherhood wins the presidency in a runoff.
+      A year later, after huge protests, the army removes him. The Salafi Nour party stands beside the
+      generals as they announce it. Weeks later, security forces clear the Brotherhood's sit-ins and kill
+      hundreds. Where do you stand?
+    why: Egypt in 2013 set the Brotherhood, Salafi quietism, secularists and Islamic socialists against each other.
+    options:
+      - id: brotherhood
+        text: Morsi was elected. Overthrowing him by force was a crime against the people's choice.
+        evidence:
+          - {position: authority.legitimacy.consent, w: 2}
+          - {position: religion.public.divine-law, w: 1}
+        next: descent.religious-politics.06
+      - id: nour
+        text: Nour was right. Avoid civil strife among Muslims and accept the ruler. Protect the call to faith.
+        evidence:
+          - {position: cs.not-political.faith-above-politics, w: 2}
+          - {position: authority.legitimacy.protection, w: 2}
+        next: descent.religious-politics.06
+      - id: army
+        text: The army saved Egypt from becoming a religious state.
+        evidence:
+          - {position: religion.public.laicite, w: 3}
+        next: descent.religious-politics.06
+      - id: rich
+        text: The Brotherhood and the generals both served the rich. The poor got nothing either way.
+        evidence:
+          - {position: property.private.trust-from-god, w: 1}
+          - {position: comprador.nature.broker-class, w: 2}
+        next: descent.religious-politics.06
+      - id: hearts
+        text: Politics was the Brotherhood's mistake. Change hearts first and the state follows.
+        evidence:
+          - {position: change.possibility.changed-hearts, w: 3}
+        next: descent.religious-politics.06
+
+  - id: descent.religious-politics.06
+    type: tradeoff
+    title: The papers
+    text: >
+      Jerusalem, June 2024. Israel's Supreme Court rules that yeshiva students must be drafted. Your son
+      is nineteen and studies Torah all day. His call-up papers arrive on Thursday.
+    why: This separates religious Zionism from Haredi refusal of the state, and both from secular and anti-occupation positions.
+    options:
+      - id: settle
+        text: He serves, and then he settles in Judea and Samaria. Defending and settling the land is a commandment.
+        evidence:
+          - {position: palestine.question.religious-zionist, w: 3}
+        next: descent.religious-politics.07
+      - id: refuse-state
+        text: He refuses. A Jewish state before the Messiah is rebellion against God, and its army is no place for a soul.
+        evidence:
+          - {position: palestine.question.haredi-anti-zionist, w: 3}
+        next: descent.religious-politics.07
+      - id: torah
+        text: He keeps learning. Torah protects this people more than tanks do. We are not against the state; we just don't serve it.
+        evidence:
+          - {position: palestine.question.haredi-anti-zionist, w: 1}
+          - {position: cs.not-political.faith-above-politics, w: 2}
+        next: descent.religious-politics.07
+      - id: serve
+        text: He serves. A citizen of a Jewish and democratic state carries its burdens like everyone else.
+        evidence:
+          - {position: palestine.question.labor-zionist, w: 3}
+        next: descent.religious-politics.07
+      - id: occupation
+        text: He refuses, because of what the army does in Gaza and the West Bank.
+        evidence:
+          - {position: palestine.question.one-democratic-state, w: 2}
+          - {position: palestine.question.diasporist-jewish, w: 1}
+        next: descent.religious-politics.07
+
+  - id: descent.religious-politics.07
+    type: verdict
+    title: Ayodhya
+    text: >
+      January 2024. India's prime minister leads the consecration of a temple to Ram at Ayodhya, on the
+      site of a mosque that a crowd tore down in 1992. The Supreme Court awarded the site to the temple in
+      2019 and gave Muslims land elsewhere. Millions watch. What is this?
+    why: Ayodhya divides Hindutva from Nehruvian secularism, Gandhian thought and the Ambedkarite tradition.
+    options:
+      - id: reclaim
+        text: A civilization taking back what was taken from it. Hindus are this nation.
+        evidence:
+          - {position: religion.public.faith-as-nation, w: 3}
+          - {position: nation.belonging.civilizational, w: 2}
+        next: descent.religious-politics.08
+      - id: court
+        text: The courts decided. Build it and move on.
+        evidence:
+          - {position: law.nature.rule-of-law, w: 2}
+        next: descent.religious-politics.08
+      - id: secular
+        text: The head of a secular state has no business consecrating a temple.
+        evidence:
+          - {position: religion.public.separation, w: 3}
+        next: descent.religious-politics.08
+      - id: caste
+        text: Hindu unity is a way to stop people asking about caste. Ambedkar saw it coming.
+        evidence:
+          - {position: caste.question.annihilation, w: 3}
+          - {position: caste.question.hindu-unity, w: -2}
+        next: descent.religious-politics.08
+      - id: gandhi
+        text: Gandhi's Ram belonged to every Indian. A temple raised on a broken mosque does not.
+        evidence:
+          - {position: religion.public.faith-as-nation, w: -2}
+          - {position: violence.political.never, w: 1}
+        next: descent.religious-politics.08
+
+  - id: descent.religious-politics.08
+    type: explanation
+    title: The return
+    text: >
+      In 1960 many people expected religion to fade from politics. Since 1979, from Tehran to Texas to
+      Delhi, it has come back hard. Why?
+    why: This asks what you think drives religious politics, and what kind of cause you reach for.
+    options:
+      - id: failed
+        text: Secular nationalism and socialism promised bread and dignity and didn't deliver. Faith filled the gap.
+        cause: structures
+        evidence:
+          - {position: religion.public.withers-with-its-causes, w: 2}
+        next: descent.religious-politics.09
+      - id: empty
+        text: Modern life left people empty, and they went home to God.
+        cause: culture
+        evidence:
+          - {position: tradition.modernity.sacred-order, w: 3}
+        next: descent.religious-politics.09
+      - id: god
+        text: God has not abandoned His people. Revival comes in His time.
+        cause: divine
+        evidence:
+          - {position: history.motor.providence, w: 3}
+        next: descent.religious-politics.09
+      - id: funded
+        text: Washington and its allies funded religious movements against the left for forty years.
+        cause: interests
+        evidence:
+          - {position: hist.cold-war.counter-revolution-in-the-south, w: 3}
+        next: descent.religious-politics.09
+      - id: clinics
+        text: Churches and mosques ran the clinics and schools the state walked away from.
+        cause: structures
+        evidence:
+          - {position: culture.strategy.build-own-institutions, w: 2}
+          - {position: welfare.state.subsidiarity, w: 1}
+        next: descent.religious-politics.09
+
+  - id: descent.religious-politics.09
+    type: tradeoff
+    title: The ballot
+    text: >
+      Two candidates. The first will outlaw abortion and cut food aid to poor families. The second will
+      expand food aid and keep abortion legal. There is no third.
+    why: This separates the evangelical right from Catholic social teaching and the religious left.
+    premises:
+      - id: no-third
+        text: The premise that a Christian must choose between these two at all.
+        evidence: [{position: cs.not-political.faith-above-politics, w: 2}]
+    options:
+      - id: first
+        text: The first. Life comes before everything, and charity is the church's job, not the state's.
+        evidence:
+          - {position: body.autonomy.life-from-conception, w: 3}
+          - {position: welfare.state.subsidiarity, w: 1}
+        probe:
+          ask: And the food aid?
+          options:
+            - text: Families and churches should feed the poor, not the state.
+              evidence: [{position: welfare.state.subsidiarity, w: 2}]
+            - text: Aid breeds dependency.
+              evidence: [{position: welfare.state.coercive-dependency, w: 2}]
+            - text: It hurts. But one is killing and the other isn't.
+              evidence: [{position: body.autonomy.life-from-conception, w: 1}]
+        end: true
+      - id: second
+        text: The second. The hungry child is here, now. Jesus fed people.
+        evidence:
+          - {position: religion.public.prophetic-church, w: 2}
+          - {position: inequality.justice.stewardship, w: 1}
+        end: true
+      - id: neither
+        text: Neither. Life is one cloth, from the womb to the table, and both betray it.
+        evidence:
+          - {position: body.autonomy.life-from-conception, w: 2}
+          - {position: wage.nature.just-wage, w: 1}
+        end: true
+      - id: choice
+        text: The second, gladly. The state has no business in that decision.
+        evidence:
+          - {position: body.autonomy.womans-choice, w: 3}
+        end: true
