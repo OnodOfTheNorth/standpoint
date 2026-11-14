@@ -1,0 +1,257 @@
+tensions:
+  - id: tension.state-class-instrument-captured
+    type: logical
+    between: [state.nature.class-instrument, state.nature.captured]
+    when: {holdsAll: [state.nature.class-instrument, state.nature.captured]}
+    prompt: >
+      You say the state is an organ of class rule. You also say it was meant to serve the public and
+      insiders captured it. The first says the state does what it was built to do. The second says it was
+      hijacked by the wrong people. If the right people walked in tomorrow, would it serve you?
+    explain: >
+      One account explains the state by the property relations it defends; the other by the corruption of
+      the people running it. The first expects the same results whoever holds office. The second expects a
+      clean-out to fix it. They predict different things and call for different strategies.
+    resolutions:
+      - {id: structure, text: "No. Capture is the wrong word. It isn't hijacked; it's working for its owners as designed.", kind: yield, revise: state.nature.captured, evidence: [{position: cs.rigged.working-as-designed, w: 2}, {position: state.nature.class-instrument, w: 1}]}
+      - {id: insiders, text: "The class talk goes too far. It's specific people and their donors. Throw them out and it works.", kind: yield, revise: state.nature.class-instrument, evidence: [{position: cs.rigged.system-rigged, w: 2}, {position: cs.politicians.bought, w: 1}]}
+      - {id: both, text: "Both, because the class rules through people. Capture is how class rule looks up close: names, donors, revolving doors.", kind: hold, evidence: [{position: state.nature.relative-autonomy, w: 1}, {position: state.nature.class-instrument, w: 1}]}
+      - {id: frame, text: "The framing is wrong: 'captured' was shorthand. I wasn't offering a theory of the state.", kind: reject}
+
+  - id: tension.state-small-state-strong-police
+    type: principle-application
+    between: [state.nature.necessary-evil, police.role.order-maintenance]
+    when: {holdsAll: [state.nature.necessary-evil, police.role.order-maintenance]}
+    prompt: >
+      You want the state small and on a short leash. You also want police strong enough to hold back
+      disorder, because without them everything collapses. The police are the part of the state that
+      carries a gun and a warrant. Why is that the part you trust with a long leash?
+    explain: >
+      Distrust of state power is the core of the first position; the second asks for the state's coercive
+      arm to be strong and free to act. The minimal-state answer is that protection of persons and property
+      is the one job the state exists for, and the tension is over how much discretion that job needs.
+    resolutions:
+      - {id: core-job, text: "Both, because keeping order is the state's one real job. Small state means it does that and nothing else.", kind: hold, evidence: [{position: state.nature.necessary-evil, w: 1}, {position: state.relation.shrink, w: 2}]}
+      - {id: leash-police, text: "Then the police need the short leash too: warrants, limits, real accountability.", kind: yield, revise: police.role.order-maintenance, evidence: [{position: police.role.public-safety, w: 2}]}
+      - {id: private, text: "Fair. Security is a service; better to buy it from firms that can be fired.", kind: yield, revise: police.role.order-maintenance, evidence: [{position: police.role.private-security, w: 3}]}
+      - {id: frame, text: "The framing is wrong: order isn't state power. It's what makes a free life possible at all.", kind: reject, evidence: [{position: liberty.concept.ordered-liberty, w: 2}]}
+      - {id: depends, text: "Only where the disorder is real. In a quiet town, the leash should be short.", kind: condition, evidence: [{position: police.role.public-safety, w: 1}]}
+
+  - id: tension.state-free-speech-sacred
+    type: logical
+    between: [speech.limits.open-marketplace, speech.limits.protect-the-sacred]
+    when: {holdsAll: [speech.limits.open-marketplace, speech.limits.protect-the-sacred]}
+    prompt: >
+      You say let everything be said and answer bad speech with more speech. You also say speech must not
+      attack God, the faith or public morals. A man on a bus shelter poster mocks the prophet, or the
+      Virgin, or the flag. Do you answer him, or take the poster down?
+    explain: >
+      The first position leaves every limit to argument; the second puts some things beyond argument by
+      law or custom. Whoever holds both has to say where the line falls and why the sacred is not just one
+      more opinion to answer.
+    resolutions:
+      - {id: answer, text: "Answer him. Offense is the price of open speech, and faith can defend itself.", kind: yield, revise: speech.limits.protect-the-sacred, evidence: [{position: speech.limits.open-marketplace, w: 2}]}
+      - {id: remove, text: "Take it down. Some things a decent society does not put on bus shelters.", kind: yield, revise: speech.limits.open-marketplace, evidence: [{position: speech.limits.protect-the-sacred, w: 2}, {position: cs.live-let-live.private-yes-public-standards, w: 1}]}
+      - {id: both, text: "Both, because open debate needs a shared floor. Argue anything; don't spit on what holds people together.", kind: hold, evidence: [{position: liberty.concept.ordered-liberty, w: 2}]}
+      - {id: custom, text: "Only by custom, never by law. Shame him; don't fine him.", kind: condition, evidence: [{position: law.nature.inherited-custom, w: 1}, {position: speech.limits.open-marketplace, w: 1}]}
+      - {id: frame, text: "The framing is wrong: mockery isn't speech in the sense that matters. It's an insult, not an argument.", kind: reject}
+
+  - id: tension.state-class-press-open-speech
+    type: principle-application
+    between: [speech.limits.class-press, speech.limits.open-marketplace]
+    when: {holdsAll: [speech.limits.class-press, speech.limits.open-marketplace]}
+    prompt: >
+      You say that while owners hold the press, press freedom is the owners' freedom. You also say let
+      everything be said and answer it with more speech. Now your side wins power. The biggest channel in
+      the country, owned by three families, calls for your overthrow every night. Do you answer it, or
+      take it?
+    explain: >
+      The first position says formal openness hides unequal ownership of the means of speaking; the second
+      treats openness as enough. In opposition the two sit together easily. In power one has to give: leave
+      the owners' channel alone, or change who owns it.
+    resolutions:
+      - {id: answer, text: "Answer it. A government that seizes the hostile channel has started down a road I know.", kind: yield, revise: speech.limits.class-press, evidence: [{position: speech.limits.open-marketplace, w: 2}, {position: emergency.powers.civil-liberties-hold, w: 1}]}
+      - {id: take, text: "Take it, and hand it to the journalists and the public. Open speech means opening the presses.", kind: yield, revise: speech.limits.open-marketplace, evidence: [{position: speech.limits.class-press, w: 2}]}
+      - {id: both, text: "Both, because I'd change ownership, not content: break up the families' hold, fund many voices, censor nobody.", kind: hold, evidence: [{position: speech.limits.class-press, w: 1}, {position: speech.limits.open-marketplace, w: 1}]}
+      - {id: siege, text: "Only if it's funded from abroad during a real siege. Otherwise leave it.", kind: condition, evidence: [{position: speech.limits.information-sovereignty, w: 2}]}
+      - {id: frame, text: "The framing is wrong: I demand open speech from a state I don't control. That's a tactic, not a theory.", kind: reject, evidence: [{position: law.nature.contested-terrain, w: 1}]}
+
+  - id: tension.state-abolition-retribution
+    type: principle-application
+    between: [prisons.purpose.abolition, prisons.purpose.retribution]
+    when: {holdsAll: [prisons.purpose.abolition, prisons.purpose.retribution]}
+    prompt: >
+      You say prisons manage the poor and should go. You also say the guilty must pay. The officer who
+      killed a man on camera walks free; the mining boss who ignored the warnings walks free. You want them
+      in a cell. Is the cell wrong, or only wrong for the wrong people?
+    explain: >
+      Abolition rejects the prison as an institution; retribution asks for punishment the guilty deserve.
+      Many people hold abolition for the poor and punishment for the powerful. The tension is whether the
+      objection is to prison or to who goes there.
+    resolutions:
+      - {id: no-cell, text: "The cell is wrong for everyone. Make them face the family, pay, lose the badge forever. No cage.", kind: yield, revise: prisons.purpose.retribution, evidence: [{position: prisons.purpose.restorative, w: 2}, {position: prisons.purpose.abolition, w: 1}]}
+      - {id: cells-for-some, text: "Then I'm not an abolitionist. I want prisons that hold the right people.", kind: yield, revise: prisons.purpose.abolition, evidence: [{position: prisons.purpose.retribution, w: 2}]}
+      - {id: both, text: "Both, because prisons as they are cage the poor. Holding the powerful to account is a different job, and it needs some form of confinement.", kind: hold, evidence: [{position: law.nature.class-will, w: 1}]}
+      - {id: transition, text: "Only for now. Until the powerful can't buy their way out, I'll take the cell for them.", kind: condition, evidence: [{position: law.nature.contested-terrain, w: 1}]}
+      - {id: frame, text: "The framing is wrong: wanting them to pay isn't wanting a prison. Pay can mean many things.", kind: reject}
+
+  - id: tension.state-monopoly-resistance
+    type: logical
+    between: [violence.political.state-monopoly, violence.political.resistance-to-tyranny]
+    when: {holdsAll: [violence.political.state-monopoly, violence.political.resistance-to-tyranny]}
+    prompt: >
+      You say only the lawful state may use force; citizens have the ballot. You also say the people may
+      rise against a tyrant who breaks the compact. Somebody has to decide when the compact is broken. If
+      it's the people, the monopoly is conditional. If it's the courts, they work for the tyrant. Who
+      decides?
+    explain: >
+      The first position gives the state sole legitimate force; the second reserves a right of armed
+      resistance. Lockean liberals hold both: the monopoly is delegated and returns to the people when it
+      is abused. The open question is who judges the abuse.
+    resolutions:
+      - {id: people, text: "The people decide, when the abuse is long and plain. The monopoly was always on loan.", kind: hold, evidence: [{position: authority.legitimacy.consent, w: 2}, {position: violence.political.resistance-to-tyranny, w: 1}]}
+      - {id: never, text: "Then I drop the right to rise. Once you allow it, every losing side claims tyranny.", kind: yield, revise: violence.political.resistance-to-tyranny, evidence: [{position: violence.political.state-monopoly, w: 2}, {position: state.nature.sovereign-order, w: 1}]}
+      - {id: monopoly-goes, text: "Then I drop the monopoly. Force belongs to whoever defends the community.", kind: yield, revise: violence.political.state-monopoly, evidence: [{position: violence.political.self-defense, w: 2}]}
+      - {id: elections-end, text: "Only when elections are abolished. While the ballot works, it's the ballot.", kind: condition, evidence: [{position: elections.role.choose-and-remove-rulers, w: 2}]}
+      - {id: frame, text: "The framing is wrong: it's the exception that proves the rule, not a contradiction.", kind: reject}
+
+  - id: tension.state-representatives-all-crooks
+    type: principle-application
+    between: [democracy.form.representative, cs.politicians.all-crooks]
+    when: {holdsAll: [democracy.form.representative, cs.politicians.all-crooks]}
+    prompt: >
+      You say the right form of government is elected representatives and competing parties. You also say
+      politicians are all the same, and all crooked. So the right system reliably fills itself with crooks.
+      What makes it right?
+    explain: >
+      Representative government depends on voters being able to tell candidates apart and reward the
+      better ones. If every candidate is equally corrupt, the mechanism that justifies the form fails. The
+      common answer is that it limits the damage rather than selects the good.
+    resolutions:
+      - {id: limit, text: "Both, because crooks you can vote out beat crooks you can't. It's damage control, not virtue.", kind: hold, evidence: [{position: elections.role.choose-and-remove-rulers, w: 2}, {position: human.nature.self-interested, w: 1}]}
+      - {id: some-decent, text: "Not all of them. Some are decent, and the system lets you find them.", kind: yield, revise: cs.politicians.all-crooks, evidence: [{position: cs.politicians.some-are-decent, w: 2}]}
+      - {id: other-form, text: "Then the form is wrong. Pick people by lot, or let them decide directly.", kind: yield, revise: democracy.form.representative, evidence: [{position: democracy.form.sortition, w: 1}, {position: democracy.form.direct, w: 1}]}
+      - {id: office, text: "Only because of the money. Take the money out and the form works.", kind: condition, evidence: [{position: cs.politicians.bought, w: 2}]}
+      - {id: frame, text: "The framing is wrong: 'all crooks' is how people talk, not a political theory.", kind: reject}
+
+  - id: tension.state-liberties-property-yields
+    type: principle-application
+    between: [emergency.powers.civil-liberties-hold, emergency.powers.need-overrides-property]
+    when: {holdsAll: [emergency.powers.civil-liberties-hold, emergency.powers.need-overrides-property]}
+    prompt: >
+      You say rights must hold in an emergency, because that's when they matter. You also say that in a
+      real emergency, need overrides property. A flood: the state takes a hotel for the homeless and bans
+      a march past it. The owner says his rights should hold too. Which rights are the ones that hold?
+    explain: >
+      The positions agree that emergencies are when rights are tested but disagree about which rights.
+      Holding both sorts property apart from speech, assembly and due process. The owner's reply is that
+      property is the right the others stand on.
+    resolutions:
+      - {id: sort, text: "Both, because property in a building isn't a civil liberty. Speech and courts hold; the hotel doesn't.", kind: hold, evidence: [{position: property.private.social-function, w: 2}]}
+      - {id: owner, text: "The owner has a point. Take the hotel, pay him fair value, and keep it all inside the law.", kind: yield, revise: emergency.powers.need-overrides-property, evidence: [{position: emergency.powers.compensate-at-market, w: 3}]}
+      - {id: march, text: "Then the march can wait too. A real emergency suspends more than property.", kind: yield, revise: emergency.powers.civil-liberties-hold, evidence: [{position: emergency.powers.sovereign-exception, w: 1}]}
+      - {id: keep, text: "Only while the water is up. When the flood ends, the hotel goes back.", kind: condition, evidence: [{position: emergency.powers.compensate-at-market, w: 1}]}
+      - {id: frame, text: "The framing is wrong: nobody should ban the march. The state shouldn't be in the hotel either; neighbors should.", kind: reject, evidence: [{position: emergency.powers.mutual-aid, w: 2}]}
+
+  - id: tension.state-councils-leading-party
+    type: strategy-horizon
+    between: [democracy.form.council, party.system.leading-party]
+    when: {holdsAll: [democracy.form.council, party.system.leading-party]}
+    prompt: >
+      You want rule by workers' councils of recallable delegates. You also want one leading party of the
+      working people. The council in Ward 4 votes, clearly and freely, against the party's grain quota. Who
+      wins?
+    explain: >
+      Councils place the decision with elected, recallable delegates; a leading party places the line with
+      the party. While they agree, the arrangement looks seamless. When they disagree, one of them is the
+      real authority. Kronstadt in 1921 is the standing example both sides argue over.
+    resolutions:
+      - {id: council, text: "The council. If the party can't win the vote, it should lose it.", kind: yield, revise: party.system.leading-party, evidence: [{position: party.system.soviet-pluralism, w: 2}, {position: democracy.form.council, w: 1}]}
+      - {id: party, text: "The party. A ward sees its own granary; the party sees the whole country and the siege.", kind: yield, revise: democracy.form.council, evidence: [{position: democracy.form.democratic-centralism, w: 2}, {position: siege.governance.revolutionary-dictatorship, w: 1}]}
+      - {id: both, text: "Both, because the party leads by persuading inside the councils, not by overruling them. If it can't persuade, it has work to do.", kind: hold, evidence: [{position: democracy.form.council, w: 1}, {position: party.system.leading-party, w: 1}]}
+      - {id: siege, text: "Only under siege does the party decide. In peace, the council.", kind: condition, evidence: [{position: siege.governance.revolutionary-dictatorship, w: 1}]}
+      - {id: frame, text: "The framing is wrong: the councils and the party aren't rivals. The party is the councils' best members.", kind: reject}
+
+  - id: tension.state-police-repression-landlord
+    type: position-consciousness
+    between: [police.role.class-repression, police.role.abolition]
+    when:
+      all:
+        - {holdsAny: [police.role.class-repression, police.role.abolition]}
+        - {any: [{classIs: [landed-capital]}, {situation: {field: housing, in: [landlord]}}]}
+    prompt: >
+      You say the police exist to protect property and keep working people in line. You rent property out.
+      When a tenant stops paying and won't leave, the last step is an officer at the door. Is that the
+      police doing the job you describe, for you?
+    explain: >
+      A landlord's rent rests on the power to evict, and eviction rests in the end on the police and the
+      courts. A critique of policing as protection of property applies to the property the holder owns,
+      however small.
+    resolutions:
+      - {id: never-evict, text: "Then I won't use it. If a tenant can't pay, we work it out; I won't call the police on anyone.", kind: hold, evidence: [{position: police.role.class-repression, w: 1}, {position: housing.tenure.rent-control, w: 1}]}
+      - {id: small, text: "That critique is about big owners and the poor. A landlord with one flat needs the law like anyone.", kind: yield, revise: police.role.class-repression, evidence: [{position: police.role.public-safety, w: 2}]}
+      - {id: both, text: "Both, because I live inside a system I want to end. Seeing it clearly from the owner's side is part of seeing it.", kind: hold, evidence: [{position: police.role.class-repression, w: 1}]}
+      - {id: sell, text: "Fair. I should get out of being a landlord.", kind: yield, evidence: [{position: housing.tenure.social-housing, w: 1}]}
+      - {id: frame, text: "The framing is wrong: owning a flat doesn't decide my politics. The argument is right or wrong on its own.", kind: reject}
+
+  - id: tension.state-order-reserve-army
+    type: position-consciousness
+    between: [police.role.order-maintenance]
+    when: {all: [{holds: police.role.order-maintenance}, {classIs: [reserve-army]}]}
+    prompt: >
+      You back the police holding back disorder; without them, everything collapses. You're out of steady
+      work. People without steady work are the ones most often stopped, searched and moved along. When the
+      police hold back disorder, who do they mean?
+    explain: >
+      Order-maintenance policing concentrates on the street, the corner and the unemployed, since that is
+      where disorder is defined and seen. People at the bottom of the labor market are also the likeliest
+      victims of street crime. Both facts sit in the same life.
+    resolutions:
+      - {id: victims, text: "Both, because I'm also the one who gets robbed. Rich people have walls; I have the police.", kind: hold, evidence: [{position: police.role.order-maintenance, w: 1}, {position: police.role.public-safety, w: 1}]}
+      - {id: accountable, text: "Then police should protect us, not watch us. Make them answer to the neighborhood.", kind: yield, revise: police.role.order-maintenance, evidence: [{position: police.role.public-safety, w: 2}]}
+      - {id: for-them, text: "Fair. They keep people like me in line for people who own things.", kind: yield, revise: police.role.order-maintenance, evidence: [{position: police.role.class-repression, w: 2}]}
+      - {id: depends, text: "Only if they leave the decent ones alone. I've got nothing to hide.", kind: condition, evidence: [{position: police.role.order-maintenance, w: 1}]}
+      - {id: frame, text: "The framing is wrong: being out of work isn't who I am. I don't see the police through my job status.", kind: reject}
+
+  - id: tension.state-captured-lobbyist
+    type: theory-practice
+    between: [state.nature.captured, cs.rigged.cronies, practice.lobby]
+    when:
+      all:
+        - {holdsAny: [state.nature.captured, cs.rigged.cronies]}
+        - {practice: practice.lobby}
+    prompt: >
+      You say the state has been captured by insiders and that favors to business rig the game. You lobby
+      officials or fund campaigns for your own business or sector. From the outside, what's the difference
+      between capture and you?
+    explain: >
+      Capture works through exactly the channels the respondent uses: access, funding, pressure on
+      officials. The holder's reply is usually that small players must defend themselves from big ones in
+      the same room; the question is whether that differs in kind or only in size.
+    resolutions:
+      - {id: defense, text: "Both, because I lobby to survive the people who captured it. Disarming alone helps nobody.", kind: hold, evidence: [{position: state.nature.captured, w: 1}]}
+      - {id: quit, text: "Fair. I should stop, and back rules that stop everyone.", kind: yield, evidence: [{position: cs.clean-house.institutions-not-saviors, w: 2}]}
+      - {id: normal, text: "Then 'capture' is too strong. Every interest presses the state. That's how it works.", kind: yield, revise: state.nature.captured, evidence: [{position: state.nature.neutral-arbiter, w: 1}, {position: conflict.nature.institutionalized, w: 2}]}
+      - {id: cuts, text: "Only to cut rules and taxes, never to win a subsidy.", kind: condition, evidence: [{position: cs.rigged.cronies, w: 1}, {position: state.relation.shrink, w: 1}]}
+      - {id: frame, text: "The framing is wrong: telling officials what my trade needs is information, not capture.", kind: reject}
+
+  - id: tension.state-direct-democracy-absent
+    type: theory-practice
+    between: [democracy.form.direct, practice.community-org, practice.tenant-assoc]
+    when:
+      all:
+        - {holds: democracy.form.direct}
+        - {not: {practiceAny: [practice.community-org, practice.tenant-assoc, practice.union-activist, practice.peasant-movement, practice.party-member]}}
+    prompt: >
+      You want the people to decide directly, in assemblies and referendums. You don't sit in any assembly
+      now: no neighborhood meeting, tenants' group, union branch or movement. Direct rule means long
+      evenings in rooms with neighbors. Would you be in the room?
+    explain: >
+      Direct self-government asks for time and attendance from everyone. The meetings that exist now are
+      the nearest sample of that life. The common answer is that people don't attend meetings without
+      power, and would attend ones that decide things.
+    resolutions:
+      - {id: power, text: "Both, because today's meetings decide nothing. Give the assembly real power and I'll be there.", kind: hold, evidence: [{position: democracy.form.direct, w: 1}]}
+      - {id: referendum, text: "I mean referendums, mostly. Vote on the big questions; don't make me sit through the small ones.", kind: condition, evidence: [{position: democracy.form.direct, w: 1}]}
+      - {id: delegate, text: "Fair. I'd rather choose someone to sit there for me.", kind: yield, revise: democracy.form.direct, evidence: [{position: democracy.form.representative, w: 2}]}
+      - {id: lot, text: "Then pick people by lot. Not everyone can go, but anyone could.", kind: yield, revise: democracy.form.direct, evidence: [{position: democracy.form.sortition, w: 2}]}
+      - {id: frame, text: "The framing is wrong: you don't have to live the system now to want it later.", kind: reject}

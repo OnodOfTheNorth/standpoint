@@ -1,0 +1,294 @@
+tensions:
+  - id: tension.strategy-stateless-strong-state
+    type: strategy-horizon
+    between: [state.relation.strengthen-then-wither, history.elites.can-be-abolished, federalism.scale.confederal-communes]
+    when:
+      all:
+        - {holds: state.relation.strengthen-then-wither}
+        - {holdsAny: [history.elites.can-be-abolished, federalism.scale.confederal-communes]}
+    prompt: >
+      You want a society with no rulers, run from below. You also want a strong state first, to wither
+      once the siege ends. Every state so far has found a siege to point to, and the people running it have
+      jobs, offices and pensions. Who, exactly, votes to wither?
+    explain: >
+      The horizon has no state; the road builds a stronger one. The defense is that a weak revolution is
+      crushed from outside. The objection, from anarchists since Bakunin, is that the people who run a
+      strong state become a stratum with an interest in keeping it.
+    resolutions:
+      - {id: siege, text: "Both, because a weak state gets overthrown and then there's nothing to wither. The siege is real; ask the people under it.", kind: hold, evidence: [{position: siege.governance.revolutionary-dictatorship, w: 2}, {position: state.relation.strengthen-then-wither, w: 1}]}
+      - {id: abolish, text: "Fair. The state you build is the state you get. Build the communes now, without it.", kind: yield, revise: state.relation.strengthen-then-wither, evidence: [{position: state.relation.abolish-at-once, w: 2}, {position: state.relation.exit-and-build, w: 1}]}
+      - {id: horizon-goes, text: "Then the stateless part is a distant hope. What I really want is a strong workers' state.", kind: yield, revise: history.elites.can-be-abolished, evidence: [{position: history.elites.ruling-class, w: 2}]}
+      - {id: checks, text: "Only with built-in brakes: recall, workers' wages for officials, armed councils.", kind: condition, evidence: [{position: siege.governance.class-democracy, w: 2}]}
+      - {id: frame, text: "The framing is wrong: withering isn't a vote. It happens as classes disappear and there's nothing left to rule.", kind: reject, evidence: [{position: history.motor.class-struggle, w: 1}]}
+
+  - id: tension.strategy-class-state-ballot
+    type: strategy-horizon
+    between: [state.nature.class-instrument, state.relation.capture-and-use]
+    when: {holdsAll: [state.nature.class-instrument, state.relation.capture-and-use]}
+    prompt: >
+      You say the state is an organ of class rule. You also say: win the government and use the state as
+      it is. Your party wins. The generals, the central bank, the courts and the senior civil service were
+      there before you and expect to be there after. Whose organ are they now?
+    explain: >
+      If the state's form follows the property it defends, a new cabinet inherits an apparatus built for
+      the old owners. Winning office then changes who sits at the top, not whose instrument it is. The
+      reply is that the state reflects the balance of forces and can be bent.
+    resolutions:
+      - {id: lever, text: "Then the state isn't simply theirs. It reflects who's organized, and we can win it as a lever.", kind: yield, revise: state.nature.class-instrument, evidence: [{position: state.nature.democratic-lever, w: 3}]}
+      - {id: smash, text: "Fair. Winning office isn't winning power. The old apparatus has to be replaced.", kind: yield, revise: state.relation.capture-and-use, evidence: [{position: state.relation.smash-and-replace, w: 3}]}
+      - {id: both, text: "Both, because winning the government is the first step. Then you reshape the army and the bank, piece by piece, with the people behind you.", kind: hold, evidence: [{position: reform.revolution.non-reformist-reforms, w: 2}]}
+      - {id: army, text: "Only if the army stays out. Where it doesn't, the ballot road ends.", kind: condition, evidence: [{position: state.nature.relative-autonomy, w: 1}]}
+      - {id: frame, text: "The framing is wrong: 'use as it is' means start from it, not leave it untouched.", kind: reject}
+
+  - id: tension.strategy-reform-capital-flight
+    type: strategy-horizon
+    between: [reform.revolution.reform-is-the-road, property.private.personal-vs-productive]
+    when: {holdsAll: [reform.revolution.reform-is-the-road, property.private.personal-vs-productive]}
+    prompt: >
+      You want production out of private hands, and you want to get there one reform at a time. The day
+      after your first big reform passes, money leaves: the currency drops twelve percent, investment stops,
+      the shops run short. The next election is in three years. What's the next step?
+    explain: >
+      A gradual road gives owners time to respond while they still hold capital and credit. Chile in
+      1972 and France in 1983 are the standard cases. The reform road needs an answer to capital that moves
+      faster than legislatures.
+    resolutions:
+      - {id: controls, text: "Both, because the next reform is capital controls and a public bank. Gradual doesn't mean unarmed.", kind: hold, evidence: [{position: finance.control.capital-controls, w: 2}, {position: finance.control.nationalize-credit, w: 1}]}
+      - {id: rupture, text: "Fair. One reform at a time loses. When you move against property, you move fast.", kind: yield, revise: reform.revolution.reform-is-the-road, evidence: [{position: reform.revolution.revolution-necessary, w: 2}, {position: change.tempo.seize-the-moment, w: 1}]}
+      - {id: mixed, text: "Then I aim lower: a mixed economy that keeps investors in the room.", kind: yield, revise: property.private.personal-vs-productive, evidence: [{position: capitalism.nature.managed-engine, w: 2}]}
+      - {id: mobilize, text: "Only with workers organized enough to keep the plants running when owners walk.", kind: condition, evidence: [{position: change.agent.workers-as-class, w: 2}]}
+      - {id: frame, text: "The framing is wrong: capital flight is a story told to stop reforms. Most of it is bluff.", kind: reject}
+
+  - id: tension.strategy-horizontal-scale
+    type: strategy-horizon
+    between: [org.form.horizontal-movement, change.tempo.ecological-deadline]
+    when: {holdsAll: [org.form.horizontal-movement, change.tempo.ecological-deadline]}
+    prompt: >
+      You want change made by open assemblies with no leaders. You also say the climate sets the deadline,
+      not politics. Rebuilding a continent's power grid in fifteen years means decisions across three
+      hundred million people, fast. How many assemblies is that, and who settles it when they disagree?
+    explain: >
+      Assemblies give everyone a voice and take time; a hard deadline needs coordination at very large
+      scale. Horizontal movements answer with federation and delegation. Critics answer that federations
+      either grow a center or stall.
+    resolutions:
+      - {id: federate, text: "Both, because assemblies federate: mandated delegates, councils of councils. Scale doesn't need bosses.", kind: hold, evidence: [{position: federalism.scale.confederal-communes, w: 2}]}
+      - {id: plan, text: "Fair. A deadline that big needs a plan and someone empowered to carry it out.", kind: yield, revise: org.form.horizontal-movement, evidence: [{position: growth.ecology.ecosocialism, w: 1}, {position: org.form.mass-party, w: 1}]}
+      - {id: local, text: "Then I let go of the grand deadline. Do what each place can; that's what's real.", kind: yield, revise: change.tempo.ecological-deadline, evidence: [{position: growth.ecology.home-and-stewardship, w: 1}, {position: energy.transition.community-owned, w: 2}]}
+      - {id: both-tools, text: "Only for movements. Governing the grid is a different job, and assemblies should push the people doing it.", kind: condition, evidence: [{position: energy.transition.public-ownership, w: 1}]}
+      - {id: frame, text: "The framing is wrong: speed comes from millions acting at once, not from a center giving orders.", kind: reject}
+
+  - id: tension.strategy-vanguard-self-emancipation
+    type: strategy-horizon
+    between: [org.form.vanguard-party, change.agent.workers-as-class]
+    when: {holdsAll: [org.form.vanguard-party, change.agent.workers-as-class]}
+    prompt: >
+      You say the working class, acting as a class, makes change. You also want a disciplined party of the
+      most committed to lead it. The workers at the bus depot vote for a deal the party calls a sellout.
+      Whose call is it?
+    explain: >
+      Self-emancipation puts the decision with the class; the vanguard puts the line with an organized
+      minority. Luxemburg pressed this against Lenin in 1904. Leninists answer that the party is the
+      class's most conscious part and leads by winning trust, not by command.
+    resolutions:
+      - {id: lead, text: "Both, because the party leads by argument. The workers decide; the party fights to win them over next time.", kind: hold, evidence: [{position: org.form.vanguard-party, w: 1}, {position: change.agent.workers-as-class, w: 1}]}
+      - {id: workers, text: "The workers' call, every time. The party should be one voice among many, not a general staff.", kind: yield, revise: org.form.vanguard-party, evidence: [{position: org.form.workers-councils, w: 2}, {position: org.form.mass-party, w: 1}]}
+      - {id: party, text: "The party's. Left to themselves, workers settle for a better wage.", kind: yield, revise: change.agent.workers-as-class, evidence: [{position: org.form.vanguard-party, w: 2}, {position: ideology.formation.ruling-ideas, w: 1}]}
+      - {id: crisis, text: "Only in a crisis does the party's call override. In a dispute over a contract, it's theirs.", kind: condition, evidence: [{position: change.possibility.only-in-crisis, w: 1}]}
+      - {id: frame, text: "The framing is wrong: a vanguard that's at odds with the class has already failed. They aren't two sides.", kind: reject}
+
+  - id: tension.strategy-lesser-evil-revolution
+    type: strategy-horizon
+    between: [elections.role.lesser-evil, reform.revolution.revolution-necessary]
+    when: {holdsAll: [elections.role.lesser-evil, reform.revolution.revolution-necessary]}
+    prompt: >
+      You say reforms can't change who rules; it takes a revolution. You also vote for the lesser evil to
+      stop the greater. Every election has a greater evil on the ballot. When does the vote for the lesser
+      one stop, and the work on the other thing start?
+    explain: >
+      A lesser-evil vote is cheap, but it ties energy and loyalty to the parties the revolutionary position
+      says cannot deliver. The counter is that conditions for organizing are worse under the greater evil,
+      so voting buys space.
+    resolutions:
+      - {id: space, text: "Both, because a vote takes ten minutes. It buys room to organize, and I organize the rest of the year.", kind: hold, evidence: [{position: elections.role.organize-instead, w: 2}]}
+      - {id: stop, text: "Fair. It never stops on its own. I'll vote for our own candidates or not at all.", kind: yield, revise: elections.role.lesser-evil, evidence: [{position: elections.role.tribune, w: 2}]}
+      - {id: reform, text: "Then maybe I'm a reformer who talks big. The lesser evil is the real choice I make.", kind: yield, revise: reform.revolution.revolution-necessary, evidence: [{position: reform.revolution.non-reformist-reforms, w: 1}, {position: reform.revolution.piecemeal-improvement, w: 1}]}
+      - {id: fascist, text: "Only when the greater evil is fascism. Otherwise they're the same.", kind: condition, evidence: [{position: fascism.response.popular-front, w: 1}]}
+      - {id: frame, text: "The framing is wrong: voting and revolution are different activities on different scales. One doesn't use up the other.", kind: reject}
+
+  - id: tension.strategy-fascism-elites-popular-front
+    type: strategy-horizon
+    between: [fascism.nature.paxton-process, fascism.response.popular-front]
+    when: {holdsAll: [fascism.nature.paxton-process, fascism.response.popular-front]}
+    prompt: >
+      You say fascism wins power through a deal with conservative elites. You also want to fight it with a
+      front of everyone who defends the republic, conservatives included. The people you invite into the
+      front are the people who made the last deal. What stops them making the next one?
+    explain: >
+      On this account the gate to power is held by establishment conservatives. A broad front gives them a
+      place on the anti-fascist side, which may keep the gate shut or may only delay the deal. Germany in
+      1933 and France in 1936 are both cited.
+    resolutions:
+      - {id: hold-gate, text: "Both, because that's the point. If they're in the front, they're not at the table with the fascists.", kind: hold, evidence: [{position: alliances.policy.popular-front, w: 2}]}
+      - {id: workers, text: "Fair. A front of workers' organizations, armed to defend itself, with no conservatives in it.", kind: yield, revise: fascism.response.popular-front, evidence: [{position: fascism.response.workers-united-front, w: 3}]}
+      - {id: movement, text: "Then I misread fascism. It's a mass movement first; elites come late. Fight the movement.", kind: yield, revise: fascism.nature.paxton-process, evidence: [{position: fascism.nature.palingenetic-ultranationalism, w: 1}, {position: fascism.response.confront-in-the-street, w: 1}]}
+      - {id: only-anti, text: "Only conservatives who have already broken with them in public. Others stay out.", kind: condition, evidence: [{position: alliances.policy.center-coalition, w: 1}]}
+      - {id: frame, text: "The framing is wrong: elites decide nothing alone. Remove the misery that feeds the movement and there's no deal to make.", kind: reject, evidence: [{position: fascism.response.remove-the-conditions, w: 2}]}
+
+  - id: tension.strategy-militant-democracy-open-speech
+    type: logical
+    between: [fascism.response.militant-democracy, speech.limits.open-marketplace]
+    when: {holdsAll: [fascism.response.militant-democracy, speech.limits.open-marketplace]}
+    prompt: >
+      You say answer bad speech with more speech. You also say the constitution should ban parties that
+      would abolish it. A party polling twenty percent says the constitution should go. Is that speech to
+      answer, or a party to ban?
+    explain: >
+      The marketplace of ideas lets all views compete; militant democracy removes some from competition to
+      protect the competition itself. Germany's postwar constitution is the model. Holding both requires a
+      line between saying and organizing.
+    resolutions:
+      - {id: line, text: "Both, because people may say it; a party may not organize to do it. Speech is free; conspiracy to end the vote isn't.", kind: hold, evidence: [{position: fascism.response.militant-democracy, w: 1}, {position: speech.limits.dignity-limits, w: 1}]}
+      - {id: answer, text: "Answer it. Banning a fifth of voters' choice makes them martyrs and makes the ban a weapon.", kind: yield, revise: fascism.response.militant-democracy, evidence: [{position: fascism.response.answer-with-speech, w: 3}]}
+      - {id: ban, text: "Ban it. Open debate was never meant to include the people who'd close it.", kind: yield, revise: speech.limits.open-marketplace, evidence: [{position: speech.limits.dignity-limits, w: 2}]}
+      - {id: violence, text: "Only if it uses or plans violence. Words alone, no ban.", kind: condition, evidence: [{position: speech.limits.open-marketplace, w: 1}]}
+      - {id: frame, text: "The framing is wrong: who decides which party threatens the constitution? Whoever holds the courts. That's the real question.", kind: reject, evidence: [{position: law.nature.class-will, w: 1}]}
+
+  - id: tension.strategy-boycott-but-voted
+    type: theory-practice
+    between: [elections.role.boycott-principle, practice.vote]
+    when: {all: [{holds: elections.role.boycott-principle}, {practice: practice.vote}]}
+    prompt: >
+      You refuse to vote on principle. You also told us you vote. Which one is the principle?
+    explain: >
+      A principled boycott is a public refusal; voting is participation. People reconcile them by voting
+      in some contests and boycotting others, or by treating abstention as an ideal they don't keep.
+    resolutions:
+      - {id: local, text: "Both, because I vote locally, on things I can see, and boycott the national show.", kind: hold, evidence: [{position: elections.role.organize-instead, w: 1}]}
+      - {id: vote, text: "Then the boycott is a mood, not a principle. I vote.", kind: yield, revise: elections.role.boycott-principle, evidence: [{position: elections.role.lesser-evil, w: 1}]}
+      - {id: stop, text: "Fair. I'll stop voting.", kind: yield, evidence: [{position: elections.role.boycott-principle, w: 2}]}
+      - {id: referendum, text: "Only on referendums. Choosing rulers I refuse; answering a question I'll do.", kind: condition, evidence: [{position: democracy.form.direct, w: 1}]}
+      - {id: frame, text: "The framing is wrong: a boycott is a tactic for a moment. Holding one view doesn't bind every election.", kind: reject}
+
+  - id: tension.strategy-civic-duty-no-vote
+    type: theory-practice
+    between: [elections.role.civic-duty, practice.vote]
+    when: {all: [{holds: elections.role.civic-duty}, {not: {practice: practice.vote}}]}
+    prompt: >
+      You say voting is a citizen's duty. You don't vote. What gets in the way?
+    explain: >
+      The position makes voting an obligation, not a choice. Not voting while holding it signals either
+      obstacles (no papers, shifts, distance, a suppressed vote) or a duty that is honored in speech.
+    resolutions:
+      - {id: blocked, text: "Both, because I can't: no papers, wrong district, or a shift that runs past closing.", kind: hold, evidence: [{position: elections.role.civic-duty, w: 1}]}
+      - {id: nothing, text: "Then it's not a duty I feel. None of them are worth it.", kind: yield, revise: elections.role.civic-duty, evidence: [{position: cs.politicians.all-crooks, w: 2}]}
+      - {id: will, text: "Fair. I should vote.", kind: yield}
+      - {id: real-choice, text: "Only when there's a real choice. When there isn't, the duty lapses.", kind: condition, evidence: [{position: cs.politicians.differ-by-whom-they-serve, w: 1}]}
+      - {id: frame, text: "The framing is wrong: duty is about the whole citizenry, not every one of us every time.", kind: reject}
+
+  - id: tension.strategy-organized-people-nothing
+    type: theory-practice
+    between: [change.possibility.organized-people-can, practice.none]
+    when:
+      all:
+        - {holds: change.possibility.organized-people-can}
+        - {practice: practice.none}
+        - {not: {holdsAny: [change.agent.workers-as-class, solidarity.basis.shared-class]}}
+    prompt: >
+      You say organized people can change how society runs. You also say you do nothing political at
+      present. Organized by whom?
+    explain: >
+      The position credits organization with power; reporting no practice puts the holder outside every
+      organization. People explain the gap by time, fear, distance, or a sense that nothing worth joining
+      exists yet.
+    resolutions:
+      - {id: later, text: "Both, because I've done my part before, and I will again. Life has seasons.", kind: hold, evidence: [{position: change.possibility.organized-people-can, w: 1}]}
+      - {id: nothing-here, text: "Only because nothing near me is worth joining. Show me one that works.", kind: condition, evidence: [{position: change.possibility.only-in-crisis, w: 1}]}
+      - {id: power-wins, text: "Then I believe it in principle. In practice I expect power to win.", kind: yield, revise: change.possibility.organized-people-can, evidence: [{position: change.possibility.power-always-wins, w: 2}]}
+      - {id: own-life, text: "I meant it about other people. My part is my own life and family.", kind: yield, revise: change.possibility.organized-people-can, evidence: [{position: change.possibility.only-your-own-life, w: 2}, {position: cs.not-political.keep-head-down, w: 1}]}
+      - {id: frame, text: "The framing is wrong: you asked what's true, not what I do. Those are separate questions.", kind: reject}
+
+  - id: tension.strategy-revolution-only-online
+    type: theory-practice
+    between: [reform.revolution.revolution-necessary, practice.post-online]
+    when:
+      all:
+        - {holds: reform.revolution.revolution-necessary}
+        - {practice: practice.post-online}
+        - {not: {practiceAny: [practice.union-member, practice.union-activist, practice.party-member, practice.revolutionary-org, practice.tenant-assoc, practice.community-org, practice.peasant-movement, practice.strike, practice.direct-action, practice.protest, practice.mutual-aid]}}
+    prompt: >
+      You say reforms can't change who rules; it takes a revolution. Your political practice is posting.
+      No union, no party, no tenants' group, no picket. A revolution is millions of people doing things in
+      the same week. Where are you in that week?
+    explain: >
+      The revolutionary position demands the most organization of any strategy. Posting reaches people but
+      builds no organization by itself. The usual reply is that conditions don't allow more yet, and that
+      ideas have to spread before anyone moves.
+    resolutions:
+      - {id: ideas-first, text: "Both, because the ideas have to spread first. I'm doing the part that can be done now.", kind: hold, evidence: [{position: culture.strategy.hegemony-first, w: 2}]}
+      - {id: join, text: "Fair. I should be in something.", kind: yield, evidence: [{position: org.form.mass-party, w: 1}]}
+      - {id: wait, text: "Only until things break open. Nobody joins a revolution in a quiet year.", kind: condition, evidence: [{position: change.possibility.only-in-crisis, w: 2}, {position: change.tempo.wait-for-conditions, w: 1}]}
+      - {id: sympathy, text: "Then it's a conviction I hold, not a strategy I follow.", kind: yield, revise: reform.revolution.revolution-necessary, evidence: [{position: change.possibility.power-always-wins, w: 1}]}
+      - {id: frame, text: "The framing is wrong: you can't see what I do offline from a checklist.", kind: reject}
+
+  - id: tension.strategy-tenant-organizer-landlord
+    type: position-consciousness
+    between: [housing.tenure.class-question, housing.tenure.rent-control]
+    when:
+      all:
+        - {holdsAny: [housing.tenure.class-question, housing.tenure.rent-control, housing.tenure.occupy-empty]}
+        - {any: [{classIs: [landed-capital]}, {situation: {field: housing, in: [landlord]}}]}
+    prompt: >
+      You say tenants should organize and that rents must be held down by law. You're a landlord. The
+      tenants' association in your building sends a letter: rent freeze, repairs within thirty days, or a
+      strike. Do you sign their demands, or call your lawyer?
+    explain: >
+      Tenant organizing aims at the income of landlords as a group, and the respondent receives that
+      income. The usual reply is that a small landlord who charges fairly is not the target. The tenants'
+      letter does not usually draw that line.
+    resolutions:
+      - {id: sign, text: "Sign. If I mean it, the freeze applies to me first.", kind: hold, evidence: [{position: housing.tenure.rent-control, w: 2}]}
+      - {id: lawyer, text: "Call the lawyer. Tenant power is for corporate landlords; I'm a pensioner with a mortgage.", kind: yield, revise: housing.tenure.class-question, evidence: [{position: housing.tenure.asset-and-investment, w: 2}]}
+      - {id: both, text: "Both, because I'd bargain with them like a decent employer bargains with a union: in good faith, and on the other side.", kind: hold, evidence: [{position: unions.role.bargaining-agent, w: 1}, {position: housing.tenure.rent-control, w: 1}]}
+      - {id: sell, text: "Then I should sell to the tenants as a co-op.", kind: yield, evidence: [{position: housing.tenure.social-housing, w: 1}]}
+      - {id: frame, text: "The framing is wrong: I want the law changed for everyone. Volunteering alone changes nothing.", kind: reject, evidence: [{position: consumption.choice.production-decides, w: 1}]}
+
+  - id: tension.strategy-entrepreneurs-wage-earner
+    type: position-consciousness
+    between: [change.agent.entrepreneurs-and-individuals]
+    when: {all: [{holds: change.agent.entrepreneurs-and-individuals}, {classIs: [core-workers, peripheral-workers]}]}
+    prompt: >
+      You say change comes from free individuals, entrepreneurs and inventors. You work for a wage. In your
+      account of how things get better, are you one of the people doing it, or one of the people it
+      happens to?
+    explain: >
+      The position gives agency to founders and owners. For a wage earner it can be an aspiration, a
+      judgment that their own role is supporting, or an account in which workers benefit from others'
+      enterprise without acting themselves.
+    resolutions:
+      - {id: aspire, text: "Both, because I won't be on a wage forever. I'm saving to start my own.", kind: hold, evidence: [{position: cs.hard-work.effort-pays, w: 2}]}
+      - {id: individuals, text: "Both, because every worker is an individual making choices. I change things by how I work.", kind: hold, evidence: [{position: society.units.individuals, w: 2}]}
+      - {id: workers, text: "Fair. People like me only get anything when we push together.", kind: yield, revise: change.agent.entrepreneurs-and-individuals, evidence: [{position: change.agent.workers-as-class, w: 2}]}
+      - {id: frame, text: "The framing is wrong: whose wage I take doesn't decide who moves the world.", kind: reject}
+
+  - id: tension.strategy-workers-agent-manager
+    type: position-consciousness
+    between: [change.agent.workers-as-class]
+    when:
+      all:
+        - {holds: change.agent.workers-as-class}
+        - {classIs: [professional-managerial]}
+        - {not: {holds: workplace.conflict.structural-antagonism}}
+    prompt: >
+      You say working people, acting as a class, make change. You're a salaried professional or manager.
+      When the workers you know start acting as a class, a demand for the hours, the pay scale, the right
+      to say no lands on your desk. Which side of the desk are you on?
+    explain: >
+      Professionals and managers sell their labor but also organize and discipline others' labor for the
+      employer. When workers act collectively, the professional-managerial layer is asked to administer the
+      response. That position is a real fork, not a slur.
+    resolutions:
+      - {id: worker, text: "Both, because I sell my labor too. I'd be organizing my own floor.", kind: hold, evidence: [{position: change.agent.workers-as-class, w: 1}, {position: solidarity.basis.shared-class, w: 1}]}
+      - {id: ally, text: "Both, because my job is to be useful to them: skills, information, a word in the right meeting.", kind: hold, evidence: [{position: solidarity.basis.moral, w: 2}]}
+      - {id: manager, text: "Then it's not my class. I sympathize, but I'm on the other side of that desk.", kind: yield, revise: change.agent.workers-as-class, evidence: [{position: change.agent.many-oppressed, w: 1}, {position: workplace.conflict.partners-with-a-misunderstanding, w: 1}]}
+      - {id: frame, text: "The framing is wrong: my job isn't my politics. I'm judged on what I back, not where I sit.", kind: reject}

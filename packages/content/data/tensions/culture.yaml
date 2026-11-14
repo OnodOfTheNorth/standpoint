@@ -1,0 +1,238 @@
+tensions:
+  - id: tension.culture-separation-heritage
+    type: logical
+    between: [religion.public.separation, religion.public.heritage-establishment]
+    when: {holdsAll: [religion.public.separation, religion.public.heritage-establishment]}
+    prompt: >
+      You say religion and state should be separate, every faith protected equally. You also say the
+      nation's faith should shape public life, without coercing anyone. The public school sets its holidays
+      by one faith's calendar and opens assemblies with its prayer. A family of another faith complains.
+      Separate, or heritage?
+    explain: >
+      Separation treats all faiths as equal before public institutions; establishment by heritage gives one
+      faith a public place the others lack. Many people hold both by treating the majority faith as
+      culture rather than religion. The minority family rarely sees it that way.
+    resolutions:
+      - {id: separate, text: "Separate. Drop the prayer; keep the holidays only if everyone gets theirs.", kind: yield, revise: religion.public.heritage-establishment, evidence: [{position: religion.public.separation, w: 2}]}
+      - {id: heritage, text: "Heritage. A nation has a history, and a guest doesn't rewrite the host's calendar.", kind: yield, revise: religion.public.separation, evidence: [{position: religion.public.heritage-establishment, w: 2}, {position: tradition.modernity.inherited-wisdom, w: 1}]}
+      - {id: both, text: "Both, because a calendar is culture, not coercion. Nobody has to pray; the child can step out.", kind: hold, evidence: [{position: religion.public.heritage-establishment, w: 1}, {position: religion.public.separation, w: 1}]}
+      - {id: secular, text: "Only a fully secular school solves it. No prayers, no faith's calendar, for anyone.", kind: condition, evidence: [{position: religion.public.laicite, w: 2}]}
+      - {id: frame, text: "The framing is wrong: separation was meant to protect religion from the state, not to scrub faith from public life.", kind: reject, evidence: [{position: religion.public.heritage-establishment, w: 1}]}
+
+  - id: tension.culture-class-first-reparations
+    type: logical
+    between: [race.nature.class-first, racism.remedy.reparations]
+    when: {holdsAll: [race.nature.class-first, racism.remedy.reparations]}
+    prompt: >
+      You say race is an ideology and the real inequality is class. You also want reparations for slavery
+      and colonial plunder, paid to the descendants. A white miner and a Black miner earn the same and live
+      on the same street. Only one of them gets the check. On a class-first view, why?
+    explain: >
+      Reparations are owed by descent and racial history; a class-first analysis groups people by their
+      relation to work and property. The hold-both answer is that the wealth gap passed down by race is
+      itself a class fact, so repairing it is class politics.
+    resolutions:
+      - {id: wealth, text: "Both, because the stolen wealth is a class fact. The miners earn the same, but one family's land and savings were taken. That's property, not skin.", kind: hold, evidence: [{position: race.nature.racial-capitalism, w: 2}]}
+      - {id: universal, text: "Fair. Universal programs for every worker, and the gap closes from the bottom.", kind: yield, revise: racism.remedy.reparations, evidence: [{position: racism.remedy.universal-programs, w: 3}]}
+      - {id: race-real, text: "Then race isn't just an ideology. It's a structure of its own, and class-first misses it.", kind: yield, revise: race.nature.class-first, evidence: [{position: race.nature.structural, w: 2}]}
+      - {id: states, text: "Only if the paying is done by states and firms that profited, not by the white miner.", kind: condition, evidence: [{position: racism.remedy.reparations, w: 1}]}
+      - {id: frame, text: "The framing is wrong: reparations are about plunder between nations as much as individuals. Read it as empire, not race.", kind: reject, evidence: [{position: race.nature.racial-capitalism, w: 1}]}
+
+  - id: tension.culture-critical-vs-civic
+    type: principle-application
+    between: [education.purpose.critical-citizens, education.purpose.civic-pride]
+    when: {holdsAll: [education.purpose.critical-citizens, education.purpose.civic-pride]}
+    prompt: >
+      You want schools to teach children to think for themselves and question authority. You also want
+      schools to form loyal citizens proud of a shared history. A fourteen-year-old's essay argues that the
+      national hero was a slaver and the founding war a land grab. Does she get an A?
+    explain: >
+      Critical schooling licenses students to reach unwelcome conclusions about the nation; civic schooling
+      aims at attachment to it. Most curricula hold both and resolve the conflict case by case, usually
+      where the national story is touched.
+    resolutions:
+      - {id: a, text: "An A if it's well argued. Pride that can't survive an essay isn't worth teaching.", kind: yield, revise: education.purpose.civic-pride, evidence: [{position: education.purpose.critical-citizens, w: 2}]}
+      - {id: c, text: "She's fourteen. First teach her what the country is, then let her pick at it.", kind: yield, revise: education.purpose.critical-citizens, evidence: [{position: education.purpose.civic-pride, w: 2}, {position: tradition.modernity.inherited-wisdom, w: 1}]}
+      - {id: both, text: "Both, because a citizen who knows the worst and still belongs is the real goal. Pride with eyes open.", kind: hold, evidence: [{position: education.purpose.critical-citizens, w: 1}, {position: education.purpose.civic-pride, w: 1}]}
+      - {id: depends, text: "Only if she's right about the facts. Then yes.", kind: condition, evidence: [{position: knowledge.basis.empirical-science, w: 1}]}
+      - {id: frame, text: "The framing is wrong: 'question authority' became the official authority. That essay is the new loyalty test.", kind: reject, evidence: [{position: ideology.formation.elite-indoctrination, w: 2}]}
+
+  - id: tension.culture-parents-vs-civic
+    type: principle-application
+    between: [education.purpose.parental-authority, education.purpose.civic-pride]
+    when: {holdsAll: [education.purpose.parental-authority, education.purpose.civic-pride]}
+    prompt: >
+      You say parents decide and schools act for them. You also want schools to form citizens with a
+      shared language, history and pride. A group of parents wants their children taught in their own
+      language, with their own heroes, and opts them out of the national history class. The parents
+      decide?
+    explain: >
+      Parental authority places the final say with families; civic formation places it with the nation.
+      When the parents share the majority's culture, the two coincide. When they don't, one gives way.
+    resolutions:
+      - {id: parents, text: "The parents decide. The state has no business shaping other people's children.", kind: yield, revise: education.purpose.civic-pride, evidence: [{position: education.purpose.parental-authority, w: 2}, {position: cs.live-let-live.let-communities-be, w: 1}]}
+      - {id: nation, text: "The nation decides this one. A common language isn't optional.", kind: yield, revise: education.purpose.parental-authority, evidence: [{position: education.purpose.civic-pride, w: 2}, {position: nation.belonging.assimilation, w: 1}]}
+      - {id: both, text: "Both, because parents add; they don't subtract. Their language at home and on weekends, the shared history for all.", kind: hold, evidence: [{position: federalism.scale.subsidiarity, w: 1}]}
+      - {id: minority-nation, text: "Only if they're a nation of their own, with a history here. Then yes.", kind: condition, evidence: [{position: federalism.scale.multinational-federation, w: 2}]}
+      - {id: frame, text: "The framing is wrong: parents who share our values aren't the same case as parents who don't. I never said otherwise.", kind: reject}
+
+  - id: tension.culture-market-care-women
+    type: principle-application
+    between: [feminism.subordination.barriers-and-bias, care.work.market-service]
+    when: {holdsAll: [feminism.subordination.barriers-and-bias, care.work.market-service]}
+    prompt: >
+      You say women are held back by barriers and bias, and that buying care frees them to work. The
+      nanny who frees the lawyer is a woman too. She left her own two children with her mother in Manila
+      to do it. Who freed her?
+    explain: >
+      Buying care moves the work from one woman to another who is paid less and often comes from a poorer
+      country. The liberal answer is that she chose the job and earns more than at home. The critique is
+      that the barrier was moved down the line, not removed.
+    resolutions:
+      - {id: choice, text: "Both, because she chose it and sends home more than she'd earn there. That's her own advance.", kind: hold, evidence: [{position: care.work.market-service, w: 1}, {position: development.path.integration, w: 1}]}
+      - {id: socialize, text: "Fair. Care should be a public service, well paid, not a private chain of women.", kind: yield, revise: care.work.market-service, evidence: [{position: care.work.socialize, w: 3}]}
+      - {id: drain, text: "Then it's a drain: care flows from poor countries to rich homes.", kind: yield, revise: care.work.market-service, evidence: [{position: care.work.care-drain, w: 3}]}
+      - {id: fair-pay, text: "Only if she's paid properly, with papers and rights.", kind: condition, evidence: [{position: care.work.market-service, w: 1}]}
+      - {id: frame, text: "The framing is wrong: the fathers did no care in either house. Ask why it's always a woman.", kind: reject, evidence: [{position: feminism.subordination.patriarchy, w: 2}]}
+
+  - id: tension.culture-tradition-vs-market
+    type: principle-application
+    between: [tradition.modernity.inherited-wisdom, capitalism.nature.free-exchange]
+    when:
+      all:
+        - {holds: capitalism.nature.free-exchange}
+        - {holdsAny: [tradition.modernity.inherited-wisdom, family.form.natural-institution]}
+    prompt: >
+      You want inherited institutions kept: the family, the parish, the town. You also back free exchange
+      and private enterprise. The chain store opens Sundays, the factory moves, the young move to the city
+      for work, both parents take second jobs. Nobody voted; the market did it. Which do you defend?
+    explain: >
+      Markets reward mobility, flexible hours and the dissolution of whatever slows exchange, including
+      local and family ties. Fusionist conservatism holds both by blaming the state, not the market, for
+      cultural decay. Critics from the right and left say the market does the dissolving.
+    resolutions:
+      - {id: state, text: "Both, because the state did the damage: welfare, taxes, schools. Free markets and strong families grew up together.", kind: hold, evidence: [{position: welfare.state.coercive-dependency, w: 2}]}
+      - {id: limits, text: "Fair. Markets need fences: Sunday closing, family wages, protected towns.", kind: yield, revise: capitalism.nature.free-exchange, evidence: [{position: property.private.social-function, w: 2}, {position: care.work.family-vocation, w: 1}]}
+      - {id: market, text: "Then let the old forms go. If people leave, they chose something better.", kind: yield, revise: tradition.modernity.inherited-wisdom, evidence: [{position: cs.live-let-live.leave-alone, w: 1}, {position: capitalism.nature.free-exchange, w: 1}]}
+      - {id: local, text: "Only local markets of owners and families. The giants are the problem, not trade.", kind: condition, evidence: [{position: capitalism.nature.crony-corrupted, w: 1}, {position: firm.ownership.small-proprietors, w: 2}]}
+      - {id: frame, text: "The framing is wrong: traditions that need protection from free people weren't strong ones.", kind: reject}
+
+  - id: tension.culture-divine-law-no-congregation
+    type: theory-practice
+    between: [religion.public.divine-law, practice.religious-community]
+    when:
+      all:
+        - {holds: religion.public.divine-law}
+        - {not: {practiceAny: [practice.religious-community, practice.prayer]}}
+    prompt: >
+      You say God's law stands above the state and government must serve true religion. You belong to no
+      congregation and you don't pray for political ends. Who, in your life, keeps God's law?
+    explain: >
+      A politics of divine law usually rests on a community of believers who live it and press for it.
+      Holding it apart from any congregation can mean private devotion, distance from local clergy, or a
+      view held as identity more than practice.
+    resolutions:
+      - {id: private, text: "Both, because faith is between me and God. I don't need a building to know what's right.", kind: hold, evidence: [{position: religion.public.divine-law, w: 1}]}
+      - {id: corrupt, text: "Only because the clergy near me have made peace with the world. I won't sit under them.", kind: condition, evidence: [{position: religion.public.divine-law, w: 1}]}
+      - {id: heritage, text: "Then it's more about who we are than what God commands. Faith as our nation's way.", kind: yield, revise: religion.public.divine-law, evidence: [{position: religion.public.faith-as-nation, w: 2}]}
+      - {id: return, text: "Fair. I should go back.", kind: yield, evidence: [{position: change.agent.the-faithful, w: 1}]}
+      - {id: frame, text: "The framing is wrong: you counted the wrong things. Belief isn't measured in attendance.", kind: reject}
+
+  - id: tension.culture-withers-churchgoer
+    type: theory-practice
+    between: [religion.public.withers-with-its-causes, practice.religious-community]
+    when: {all: [{holds: religion.public.withers-with-its-causes}, {practice: practice.religious-community}]}
+    prompt: >
+      You say religion will fade once the misery it answers is gone. You belong to a congregation. Is
+      yours the kind that fades?
+    explain: >
+      The position treats faith as a response to suffering that will lose its hold when suffering ends.
+      Belonging to a congregation while holding it can mean faith held anyway, a community kept for its
+      own sake, or a place to organize where people already are.
+    resolutions:
+      - {id: organize, text: "Both, because the congregation is where people are. I go for them and I organize there.", kind: hold, evidence: [{position: religion.public.prophetic-church, w: 1}, {position: culture.strategy.build-own-institutions, w: 1}]}
+      - {id: faith, text: "Fair. My faith isn't a symptom. It will outlast any misery.", kind: yield, revise: religion.public.withers-with-its-causes, evidence: [{position: religion.public.prophetic-church, w: 2}]}
+      - {id: family, text: "Only for family. I go because my mother goes.", kind: condition, evidence: [{position: society.units.families, w: 1}]}
+      - {id: frame, text: "The framing is wrong: the claim is about societies over generations, not about me on a Sunday.", kind: reject, evidence: [{position: history.motor.class-struggle, w: 1}]}
+
+  - id: tension.culture-own-institutions-none
+    type: theory-practice
+    between: [culture.strategy.build-own-institutions, racism.remedy.self-determination, practice.community-org]
+    when:
+      all:
+        - {holdsAny: [culture.strategy.build-own-institutions, racism.remedy.self-determination]}
+        - {not: {practiceAny: [practice.community-org, practice.mutual-aid, practice.religious-community, practice.tenant-assoc, practice.union-member, practice.union-activist, practice.peasant-movement]}}
+    prompt: >
+      You say the way forward is to build your own institutions: schools, clinics, mutual aid, an economy
+      of your own. You're not part of any of them now: no community group, congregation, tenants'
+      association or union. Who's building them?
+    explain: >
+      The strategy is concrete by design: it asks for institutions built by hand, now. Without any tie to
+      one, it stays an idea about what others should do. The usual reasons are time, distance and the lack
+      of anything worth joining nearby.
+    resolutions:
+      - {id: work, text: "Both, because building takes many forms. I spend, hire and mentor inside my own community.", kind: hold, evidence: [{position: consumption.choice.buy-local-and-national, w: 1}, {position: racism.remedy.self-determination, w: 1}]}
+      - {id: none-near, text: "Only because there's nothing near me yet. Someone has to start one.", kind: condition, evidence: [{position: culture.strategy.build-own-institutions, w: 1}]}
+      - {id: join, text: "Fair. I should be in one.", kind: yield}
+      - {id: state, text: "Then I'm really counting on the state to do it, with the right laws.", kind: yield, revise: culture.strategy.build-own-institutions, evidence: [{position: racism.remedy.equal-treatment-law, w: 1}, {position: elections.role.main-road, w: 1}]}
+      - {id: frame, text: "The framing is wrong: knowing what should be built is a contribution too.", kind: reject}
+
+  - id: tension.culture-caste-dominant
+    type: position-consciousness
+    between: [caste.question.class-and-caste, caste.question.annihilation]
+    when:
+      all:
+        - {holdsAny: [caste.question.class-and-caste, caste.question.annihilation]}
+        - {situation: {field: caste, in: [dominant]}}
+    prompt: >
+      You say caste must end, through land and an end to graded rank. You were born into a dominant caste.
+      In most villages the land in question belongs to families like yours, and the marriages that keep
+      caste going are arranged by them. What changes in your own family first?
+    explain: >
+      Caste persists through landholding and endogamous marriage, both managed within families. An
+      anti-caste position held from a dominant caste asks the holder's own kin to give up land, rank and
+      control of marriage. Ambedkar named inter-caste marriage as the real solvent.
+    resolutions:
+      - {id: marriage, text: "Both, because I'd marry, and let my children marry, across the line. That's where it starts.", kind: hold, evidence: [{position: caste.question.annihilation, w: 2}]}
+      - {id: land, text: "Both, because I back land reform even when it's our land. That's what the position means.", kind: hold, evidence: [{position: caste.question.class-and-caste, w: 2}, {position: property.land.to-the-tiller, w: 1}]}
+      - {id: heart, text: "Then end untouchability by changing hearts. Taking land splits the village.", kind: yield, revise: caste.question.annihilation, evidence: [{position: caste.question.purify-hinduism, w: 2}]}
+      - {id: law, text: "Only by law and reservations. Families change slowly; the state can act now.", kind: condition, evidence: [{position: caste.question.reservations-and-law, w: 2}]}
+      - {id: frame, text: "The framing is wrong: where I was born doesn't decide what I can see. Some of the sharpest critics came from inside.", kind: reject}
+
+  - id: tension.culture-enlightenment-periphery
+    type: position-consciousness
+    between: [tradition.modernity.enlightenment]
+    when: {all: [{holds: tradition.modernity.enlightenment}, {worldIs: [periphery]}]}
+    prompt: >
+      You say judge every tradition by reason and evidence; modernity is liberation. In your country,
+      modernity arrived with soldiers, a railway to the coast, and a mission school that taught that your
+      grandparents' gods were lies. Was that liberation?
+    explain: >
+      For much of the periphery, the modern state, science and schooling came through colonial rule.
+      Enlightenment positions held there must separate the ideas from the conquest that delivered them.
+      Anti-colonial modernizers from Nehru to Nkrumah did exactly that.
+    resolutions:
+      - {id: separate, text: "Both, because science isn't Europe's property. The empire brought it with a gun; we keep the science and drop the gun.", kind: hold, evidence: [{position: tradition.modernity.enlightenment, w: 1}, {position: tradition.modernity.selective-modernization, w: 1}]}
+      - {id: own-path, text: "Fair. 'Modernity' was their story. We have our own ways of reasoning.", kind: yield, revise: tradition.modernity.enlightenment, evidence: [{position: tradition.modernity.decolonial, w: 3}]}
+      - {id: selective, text: "Then take the science and the industry, and keep our own values.", kind: yield, revise: tradition.modernity.enlightenment, evidence: [{position: tradition.modernity.selective-modernization, w: 3}]}
+      - {id: socialism, text: "Only modernity without the owners. Capitalism brought it, and something else has to finish it.", kind: condition, evidence: [{position: tradition.modernity.transcend-both, w: 2}]}
+      - {id: frame, text: "The framing is wrong: the mission school wasn't reason. The Enlightenment would have judged it too.", kind: reject}
+
+  - id: tension.culture-war-diversion-and-backlash
+    type: logical
+    between: [culture.war.manufactured-diversion, culture.war.rights-against-reaction]
+    when: {holdsAll: [culture.war.manufactured-diversion, culture.war.rights-against-reaction]}
+    prompt: >
+      You say the culture war is stoked by elites to divide workers and hide the economy. You also say it's
+      a real struggle for the rights of the oppressed against a backlash. Next month's march is about a
+      bathroom law. Do you march, or say it's a diversion?
+    explain: >
+      If the conflict is a diversion, fighting in it plays the elites' game; if it is a real struggle,
+      staying out abandons people under attack. Holding both often means the diversion lies in how the
+      conflict is staged, not in the rights at stake.
+    resolutions:
+      - {id: both, text: "Both, because the rights are real and the staging is a diversion. I march, and I talk about rent on the way.", kind: hold, evidence: [{position: culture.war.material-roots, w: 2}]}
+      - {id: march, text: "March. Calling it a diversion is how people walk away from those under attack.", kind: yield, revise: culture.war.manufactured-diversion, evidence: [{position: culture.war.rights-against-reaction, w: 2}]}
+      - {id: economy, text: "Skip it. Win on wages and housing, and the rest follows.", kind: yield, revise: culture.war.rights-against-reaction, evidence: [{position: culture.war.manufactured-diversion, w: 2}, {position: racism.remedy.universal-programs, w: 1}]}
+      - {id: local, text: "Only if people here are actually affected. Imported fights, no.", kind: condition, evidence: [{position: culture.war.exported-from-the-core, w: 1}]}
+      - {id: frame, text: "The framing is wrong: most people aren't fighting at all. It's a show for television.", kind: reject, evidence: [{position: culture.war.media-spectacle, w: 2}]}

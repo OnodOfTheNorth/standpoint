@@ -1,0 +1,249 @@
+tensions:
+  - id: tension.ecology-sovereignty-vs-no-extraction
+    type: strategy-horizon
+    between: [energy.transition.resource-sovereignty, energy.transition.no-to-green-extraction]
+    when: {holdsAll: [energy.transition.resource-sovereignty, energy.transition.no-to-green-extraction]}
+    prompt: >
+      You say mineral countries must own and process their own lithium and cobalt. You also say no new
+      sacrifice zones for the North's green cars. The state lithium company finally has the plant, the
+      price and the buyers. The salt flat it needs is grazing land for four villages that voted no. Dig?
+    explain: >
+      Resource sovereignty turns national ownership of minerals into development; refusing new extraction
+      protects the communities that live on the deposits. The national project and the local one collide
+      on the same ground. Bolivia's lithium is the standing case.
+    resolutions:
+      - {id: dig, text: "Dig, on the nation's terms, with the villages paid and in the company. Sovereignty means using what we own.", kind: yield, revise: energy.transition.no-to-green-extraction, evidence: [{position: energy.transition.resource-sovereignty, w: 2}, {position: development.path.import-substitution, w: 1}]}
+      - {id: no, text: "Don't dig. A national flag on the mine doesn't make it their choice.", kind: yield, revise: energy.transition.resource-sovereignty, evidence: [{position: energy.transition.no-to-green-extraction, w: 2}, {position: development.path.post-development, w: 1}]}
+      - {id: both, text: "Both, because the line I draw is foreign extraction. Ours goes slower, smaller, and only where the villages agree.", kind: hold, evidence: [{position: energy.transition.community-owned, w: 1}, {position: energy.transition.resource-sovereignty, w: 1}]}
+      - {id: consent, text: "Only with the villages' consent. If they say no, the nation waits.", kind: condition, evidence: [{position: indigenous.sovereignty.plurinational-state, w: 1}]}
+      - {id: frame, text: "The framing is wrong: the real problem is the North's demand. Cut that and nobody needs to choose.", kind: reject, evidence: [{position: growth.ecology.degrowth, w: 2}]}
+
+  - id: tension.ecology-ecosocialism-cheap-fuel
+    type: principle-application
+    between: [growth.ecology.ecosocialism, energy.transition.keep-energy-cheap]
+    when: {holdsAll: [growth.ecology.ecosocialism, energy.transition.keep-energy-cheap]}
+    prompt: >
+      You want production planned for need within ecological limits. You also say keep oil, gas and coal;
+      don't make working people pay. The coal plant employs your cousin and heats the town cheaply. Within
+      limits, it has to close. What's the plan for Monday?
+    explain: >
+      Ecological limits mean ending fossil fuels on a schedule; the cost falls first on workers and towns
+      that depend on them. Holding both commits the holder to a transition that protects incomes, and the
+      question is whether that exists or is promised.
+    resolutions:
+      - {id: transition, text: "Both, because the plan is the guarantee: same wage, new job, the town keeps its heat. Close it when that's built, not before.", kind: hold, evidence: [{position: energy.transition.public-ownership, w: 2}]}
+      - {id: cheap, text: "Then limits come second. People need heat now, not a plan.", kind: yield, revise: growth.ecology.ecosocialism, evidence: [{position: energy.transition.keep-energy-cheap, w: 2}, {position: ecology.crisis-cause.overstated, w: 1}]}
+      - {id: close, text: "Fair. It closes. Workers get a guarantee, but not cheap coal.", kind: yield, revise: energy.transition.keep-energy-cheap, evidence: [{position: growth.ecology.ecosocialism, w: 2}]}
+      - {id: south, text: "Only in rich countries. Poor countries burn what they need until the rich have cut.", kind: condition, evidence: [{position: growth.ecology.southern-right-to-develop, w: 2}]}
+      - {id: frame, text: "The framing is wrong: the rich and the firms should pay for the change, not workers. Cheap for us, costly for them.", kind: reject, evidence: [{position: climate.justice.the-rich-and-the-firms, w: 2}]}
+
+  - id: tension.ecology-deadline-vs-gradualness
+    type: strategy-horizon
+    between: [change.tempo.ecological-deadline, change.tempo.inevitability-of-gradualness]
+    when: {holdsAll: [change.tempo.ecological-deadline, change.tempo.inevitability-of-gradualness]}
+    prompt: >
+      You say the climate sets the deadline, not politics. You also say change comes gradually, one reform
+      at a time. Reforms come at the pace of elections and committees. The deadline comes at the pace of
+      physics. Which one gives?
+    explain: >
+      Gradualism depends on time to build consent; a hard physical deadline does not wait for it. Holding
+      both bets that reforms can be sped up enough, or that the deadline is softer than its strictest
+      readings.
+    resolutions:
+      - {id: faster, text: "Both, because gradual doesn't mean slow. Big reforms, fast, through the normal channels. It has been done in wartime.", kind: hold, evidence: [{position: energy.transition.state-industrial-policy, w: 2}]}
+      - {id: deadline, text: "Fair. The deadline wins. If politics can't keep up, politics has to break.", kind: yield, revise: change.tempo.inevitability-of-gradualness, evidence: [{position: change.tempo.seize-the-moment, w: 2}]}
+      - {id: gradual, text: "Then the deadline is softer than people say. We adapt as we go.", kind: yield, revise: change.tempo.ecological-deadline, evidence: [{position: growth.ecology.growth-is-the-cure, w: 1}, {position: growth.ecology.green-growth, w: 1}]}
+      - {id: tech, text: "Only if technology does the fast part. Policy just has to clear the way.", kind: condition, evidence: [{position: growth.ecology.ecomodernism, w: 2}]}
+      - {id: frame, text: "The framing is wrong: there's no single deadline. Every tenth of a degree matters, so every reform counts.", kind: reject}
+
+  - id: tension.ecology-creation-overstated
+    type: principle-application
+    between: [nature.value.creation, ecology.crisis-cause.overstated]
+    when: {holdsAll: [nature.value.creation, ecology.crisis-cause.overstated]}
+    prompt: >
+      You say nature is God's creation, held by us in trust. You also say the ecological crisis is
+      exaggerated. A steward who is told the house is on fire usually goes to look. Have you looked?
+    explain: >
+      Stewardship makes care for creation a duty owed to its owner. Doubt about the crisis is compatible
+      with that duty only if the steward has weighed the evidence and found the damage small. Laudato si'
+      (2015) argued the opposite from the same premise.
+    resolutions:
+      - {id: steward, text: "Both, because a steward also guards against panic. I tend my land and refuse the fear sold by people who want power.", kind: hold, evidence: [{position: growth.ecology.home-and-stewardship, w: 2}]}
+      - {id: real, text: "Fair. If it's creation, the damage is a sin, whatever the scale. I'll take it seriously.", kind: yield, revise: ecology.crisis-cause.overstated, evidence: [{position: ecology.crisis-cause.lost-piety, w: 2}]}
+      - {id: use, text: "Then creation is given for our use first. Stewardship means making it fruitful.", kind: yield, revise: nature.value.creation, evidence: [{position: nature.value.for-human-use, w: 2}]}
+      - {id: local, text: "Only the global claims are overstated. The river behind my house is real, and I'd fight for it.", kind: condition, evidence: [{position: growth.ecology.home-and-stewardship, w: 1}]}
+      - {id: frame, text: "The framing is wrong: God promised never again to destroy the earth. Faith and alarm don't mix.", kind: reject, evidence: [{position: history.motor.providence, w: 1}]}
+
+  - id: tension.ecology-tradition-accelerate
+    type: logical
+    between: [tradition.modernity.inherited-wisdom, accelerationism.question.effective-acc]
+    when:
+      all:
+        - {holds: tradition.modernity.inherited-wisdom}
+        - {holdsAny: [accelerationism.question.effective-acc, ai.risk.accelerate]}
+    prompt: >
+      You say change slowly; inherited institutions hold more wisdom than any plan. You also say build
+      faster; technology and growth are the good and slowing them is the danger. A machine that rewrites
+      how children learn, how people work and court, ships next month. Slow, or fast?
+    explain: >
+      Burkean caution distrusts deliberate, rapid change to institutions; techno-optimism treats rapid
+      technical change as good in itself. Technology changes institutions without a vote. Holding both
+      requires a line between changes made by planners and changes made by markets and inventors.
+    resolutions:
+      - {id: market, text: "Both, because I distrust planners, not inventors. Change people choose one purchase at a time is organic change.", kind: hold, evidence: [{position: capitalism.nature.free-exchange, w: 1}, {position: accelerationism.question.effective-acc, w: 1}]}
+      - {id: slow, text: "Slow. A machine that remakes childhood is exactly what caution is for.", kind: yield, revise: accelerationism.question.effective-acc, evidence: [{position: accelerationism.question.decelerate, w: 2}, {position: ai.risk.human-dignity, w: 1}]}
+      - {id: fast, text: "Fast. Tradition was always just the old technology. Let the new one win.", kind: yield, revise: tradition.modernity.inherited-wisdom, evidence: [{position: tradition.modernity.rupture, w: 2}]}
+      - {id: race, text: "Only because rivals won't wait. If we slow down, they shape the world.", kind: condition, evidence: [{position: ai.risk.great-power-race, w: 2}]}
+      - {id: frame, text: "The framing is wrong: institutions that are truly wise will absorb the machine. Only weak ones need protecting.", kind: reject}
+
+  - id: tension.ecology-consumer-responsibility-unpracticed
+    type: theory-practice
+    between: [consumption.choice.consumer-responsibility, practice.ethical-consumption]
+    when: {all: [{holds: consumption.choice.consumer-responsibility}, {not: {practice: practice.ethical-consumption}}]}
+    prompt: >
+      You say changing what you buy changes the world. You don't shop ethically or avoid any brands. What
+      did you buy this week that changed it?
+    explain: >
+      The position locates power at the checkout. Not acting on it can reflect cost, time, distrust of
+      labels, or a belief held about other people's spending more than one's own.
+    resolutions:
+      - {id: cost, text: "Both, because I can't afford to. The ethical version costs double. The principle is right; my wallet isn't.", kind: hold, evidence: [{position: consumption.choice.consumer-responsibility, w: 1}]}
+      - {id: start, text: "Fair. I should start.", kind: yield}
+      - {id: organized, text: "Then it only works organized. One person's cart does nothing; a boycott does.", kind: yield, revise: consumption.choice.consumer-responsibility, evidence: [{position: consumption.choice.organized-boycott, w: 2}]}
+      - {id: production, text: "Then it's not really true. What gets made is decided before I reach the shop.", kind: yield, revise: consumption.choice.consumer-responsibility, evidence: [{position: consumption.choice.production-decides, w: 2}]}
+      - {id: frame, text: "The framing is wrong: I don't advertise what I buy. Not on a label list doesn't mean not doing it.", kind: reject}
+
+  - id: tension.ecology-production-decides-ethical-shopper
+    type: theory-practice
+    between: [consumption.choice.production-decides, practice.ethical-consumption]
+    when: {all: [{holds: consumption.choice.production-decides}, {practice: practice.ethical-consumption}]}
+    prompt: >
+      You say production decides and consumer choice is a diversion. You shop ethically and avoid certain
+      brands. If the checkout is a diversion, why are you standing at it?
+    explain: >
+      The position denies that buying choices change much. Shopping ethically anyway can be personal
+      integrity, a habit that costs little, or a sign that the holder half-believes the opposite.
+    resolutions:
+      - {id: hands, text: "Both, because I won't put my money in their hands if I can help it. It's about clean hands, not a theory of change.", kind: hold, evidence: [{position: consumption.choice.simplicity-as-virtue, w: 1}]}
+      - {id: works, text: "Fair. It does something. Not much alone, but it counts.", kind: yield, revise: consumption.choice.production-decides, evidence: [{position: consumption.choice.consumer-responsibility, w: 2}]}
+      - {id: organized, text: "Only when it's a campaign with workers behind it. Then it's a weapon, not a lifestyle.", kind: condition, evidence: [{position: consumption.choice.organized-boycott, w: 2}]}
+      - {id: frame, text: "The framing is wrong: a principle about what changes society isn't a rule for my shopping list.", kind: reject}
+
+  - id: tension.ecology-common-automation-investor
+    type: theory-practice
+    between: [automation.ownership.common-ownership, ai.risk.tool-of-capital, practice.invest]
+    when:
+      all:
+        - {holdsAny: [automation.ownership.common-ownership, ai.risk.tool-of-capital]}
+        - {practice: practice.invest}
+    prompt: >
+      You say the machines and the AI should be owned in common, because in owners' hands they cheapen and
+      replace workers. You invest in markets. The index fund in your account holds the firms building
+      them, and its returns rise when payrolls fall. Whose side of the trade are you on?
+    explain: >
+      Broad market funds are heavily weighted to the firms whose automation the position opposes, so the
+      holder gains a little from what they object to. Most holders reach these funds through pensions they
+      did not design. The question is whether that changes the picture.
+    resolutions:
+      - {id: pension, text: "Both, because it's my pension. I didn't build the system; I just can't retire on principle.", kind: hold, evidence: [{position: automation.ownership.common-ownership, w: 1}]}
+      - {id: divest, text: "Fair. I'll move it to something that doesn't bet against workers.", kind: yield, evidence: [{position: consumption.choice.organized-boycott, w: 1}]}
+      - {id: dividend, text: "Then shared ownership through funds is the answer. Everyone holds shares; everyone gets the gains.", kind: yield, revise: automation.ownership.common-ownership, evidence: [{position: automation.ownership.dividend, w: 2}]}
+      - {id: law, text: "Only until the law changes. Then everyone's fund goes, mine with it.", kind: condition, evidence: [{position: consumption.choice.production-decides, w: 1}]}
+      - {id: frame, text: "The framing is wrong: a few shares don't make me an owner of anything. The owners are the people who control the votes.", kind: reject, evidence: [{position: capitalism.nature.concentrated-ownership, w: 1}]}
+
+  - id: tension.ecology-climate-debt-core
+    type: position-consciousness
+    between: [climate.justice.climate-debt]
+    when: {all: [{holds: climate.justice.climate-debt}, {worldIs: [core]}]}
+    prompt: >
+      You say the rich countries owe a climate debt to the South. You live in one. Paid honestly, the debt
+      shows up as higher fuel prices, taxes, or flights you don't take. Whose name is on the bill?
+    explain: >
+      The debt is owed by countries, but paid through the incomes and prices of the people who live in
+      them. A core resident who holds it accepts some share of the cost, or argues that it should fall on
+      owners and firms rather than workers.
+    resolutions:
+      - {id: owners, text: "Both, because the debt belongs to the firms and the rich who made the money. The bus driver's name isn't on it.", kind: hold, evidence: [{position: climate.justice.the-rich-and-the-firms, w: 2}]}
+      - {id: mine, text: "Mine too. I'll pay my share, and I'll vote for the party that makes me.", kind: hold, evidence: [{position: climate.justice.climate-debt, w: 2}]}
+      - {id: shared, text: "Then not a debt, but a shared job. Everyone acts; the rich go first and help.", kind: yield, revise: climate.justice.climate-debt, evidence: [{position: climate.justice.shared-but-differentiated, w: 2}]}
+      - {id: frame, text: "The framing is wrong: a debt between peoples is settled by changing the world economy, not by my holiday.", kind: reject, evidence: [{position: imperialism.nature.unequal-exchange-drain, w: 1}]}
+
+  - id: tension.ecology-degrowth-core-worker
+    type: position-consciousness
+    between: [growth.ecology.degrowth]
+    when: {all: [{holds: growth.ecology.degrowth}, {classIs: [core-workers]}]}
+    prompt: >
+      You say rich countries should shrink their use of energy and materials. You work for a wage in one.
+      The last time the economy shrank, it shrank your hours first. Why would this time be different?
+    explain: >
+      Degrowth proposes planned contraction of rich-country throughput with guaranteed livelihoods. Every
+      contraction workers have lived through has been unplanned, and wage earners paid first. The position
+      has to show how the shrinkage would fall elsewhere.
+    resolutions:
+      - {id: planned, text: "Both, because a recession is shrinking by accident. Planned, it cuts private jets and ads, with shorter hours and secure pay.", kind: hold, evidence: [{position: growth.ecology.degrowth, w: 1}, {position: work.future.job-guarantee, w: 1}]}
+      - {id: green, text: "Fair. Workers need growth. Make it clean and keep the jobs.", kind: yield, revise: growth.ecology.degrowth, evidence: [{position: growth.ecology.green-growth, w: 2}]}
+      - {id: plan, text: "Then what I want is a planned economy, not shrinking as such.", kind: yield, revise: growth.ecology.degrowth, evidence: [{position: growth.ecology.ecosocialism, w: 3}]}
+      - {id: rich, text: "Only for the rich. My consumption isn't the problem.", kind: condition, evidence: [{position: population.question.consumption-not-numbers, w: 1}]}
+      - {id: frame, text: "The framing is wrong: my wage isn't my politics. I can want what's right for the planet against my own paycheck.", kind: reject}
+
+  - id: tension.ecology-too-many-people-core
+    type: position-consciousness
+    between: [ecology.crisis-cause.too-many-people, population.question.too-many]
+    when:
+      all:
+        - {holdsAny: [ecology.crisis-cause.too-many-people, population.question.too-many]}
+        - {worldIs: [core]}
+    prompt: >
+      You say the planet has too many people. You live in a rich country, where one person uses as much
+      energy as ten or twenty people where births are highest. If the problem is people, which people?
+    explain: >
+      Population growth today is concentrated in poor countries with tiny per-person emissions; footprint
+      is concentrated in rich ones. The population account, held from the core, places the problem on
+      others. The holder may answer that numbers multiply whatever the footprint.
+    resolutions:
+      - {id: multiply, text: "Both, because numbers multiply whatever comes next. As poor countries get richer, every extra person counts.", kind: hold, evidence: [{position: population.question.too-many, w: 1}, {position: population.question.development-settles-it, w: 1}]}
+      - {id: consumption, text: "Fair. It's the consumption of the rich, not the numbers of the poor.", kind: yield, revise: ecology.crisis-cause.too-many-people, evidence: [{position: population.question.consumption-not-numbers, w: 3}]}
+      - {id: us-too, text: "Only if it applies to us too. Fewer people in rich countries would help most.", kind: condition, evidence: [{position: growth.ecology.deep-ecology, w: 1}]}
+      - {id: system, text: "Then the problem is the economy, not people. It needs growth; it makes the waste.", kind: yield, revise: ecology.crisis-cause.too-many-people, evidence: [{position: ecology.crisis-cause.capital-accumulation, w: 2}]}
+      - {id: frame, text: "The framing is wrong: I meant everyone, here and there. I wasn't pointing anywhere.", kind: reject}
+
+  - id: tension.method-class-struggle-great-men
+    type: principle-application
+    between: [history.motor.class-struggle, history.motor.great-individuals]
+    when: {holdsAll: [history.motor.class-struggle, history.motor.great-individuals]}
+    prompt: >
+      You say class struggle over production moves history. You also say great individuals move it. A
+      revolution wins and its leader dies. If he made it happen, it dies with him. If the class made it
+      happen, someone else steps up. Which do you expect?
+    explain: >
+      Class struggle explains events by the collective interests and conflicts of groups; great
+      individuals explains them by the will and talent of particular people. Plekhanov's answer was that
+      individuals shape the form of events whose direction classes set. The two give different forecasts
+      when the individual is gone.
+    resolutions:
+      - {id: class, text: "Someone else steps up. Leaders are produced by the movement, not the other way round.", kind: yield, revise: history.motor.great-individuals, evidence: [{position: history.motor.class-struggle, w: 2}]}
+      - {id: leader, text: "It dies with him, more or less. Without the right person, the moment passes.", kind: yield, revise: history.motor.class-struggle, evidence: [{position: history.motor.great-individuals, w: 2}, {position: history.motor.contingency, w: 1}]}
+      - {id: both, text: "Both, because the class sets the direction and the individual decides how fast and in what shape. Swap the leader and you get a different revolution, not none.", kind: hold, evidence: [{position: history.motor.class-struggle, w: 1}, {position: history.motor.great-individuals, w: 1}]}
+      - {id: crisis, text: "Only in a crisis does one person matter that much. In normal times, it's the classes.", kind: condition, evidence: [{position: change.possibility.only-in-crisis, w: 1}]}
+      - {id: frame, text: "The framing is wrong: nothing moves history in that sense. It's contingent all the way down.", kind: reject, evidence: [{position: history.motor.contingency, w: 2}]}
+
+  - id: tension.method-engine-conflict-stirred-up
+    type: logical
+    between: [conflict.nature.engine-antagonism, conflict.nature.stirred-up]
+    when:
+      all:
+        - {holdsAny: [conflict.nature.engine-antagonism, history.motor.class-struggle]}
+        - {holds: conflict.nature.stirred-up}
+    prompt: >
+      You say conflict between classes is the engine of change. You also say most conflict is stirred up
+      by politicians and the media. A strike breaks out at the port. Is it the engine turning over, or
+      somebody stirring?
+    explain: >
+      One account roots conflict in opposed interests that exist whether or not anyone names them; the
+      other treats it as manufactured by agitators and broadcasters. The first expects conflict to return
+      whoever speaks; the second expects calm if the stirring stops.
+    resolutions:
+      - {id: engine, text: "The engine. Agitators only find what's already there. Nobody strikes over nothing.", kind: yield, revise: conflict.nature.stirred-up, evidence: [{position: conflict.nature.engine-antagonism, w: 2}]}
+      - {id: stirred, text: "Then most conflict really is stirred. The class war line was too strong.", kind: yield, revise: conflict.nature.engine-antagonism, evidence: [{position: conflict.nature.stirred-up, w: 2}, {position: conflict.nature.institutionalized, w: 1}]}
+      - {id: both, text: "Both, because the class conflict is real and the TV conflicts are fake. The strike is real; the outrage of the week isn't.", kind: hold, evidence: [{position: culture.war.manufactured-diversion, w: 2}]}
+      - {id: frame, text: "The framing is wrong: interests are real, and someone still has to organize them. Stirring is half of how the engine runs.", kind: reject, evidence: [{position: change.possibility.organized-people-can, w: 1}]}
