@@ -287,15 +287,38 @@ export function primary(b: Bundle, s: State, loc: Location): Claim[] {
     confidence: Math.min(1, mass / 2) * Math.max(0.3, worldRes),
   });
 
-  // Left at home, with the drain abroad.
+  // The comprador: a peripheral owner whose income comes from the joint between the national economy and the core.
+  const peripheral = loc.world === 'periphery' || loc.world === 'semi-periphery';
+  if (loc.primary === 'comprador-capital' && peripheral && mass >= 0.4 && D < -0.1) {
+    const sus = drainHs.filter((h) => DRAIN_VALUE[b.positions[h.position]!.analysis.drain] < 0).sort((a, z) => z.weight - a.weight).slice(0, 3);
+    out.push({
+      id: 'primary.comprador',
+      section: 'primary',
+      headline: 'You live in the periphery by brokering its trade with the core, and the positions you hold would keep that channel open.',
+      body: [
+        `You live by ${listJoin(loc.basis)}. Comprador capital earns at the joint between the national economy and the core: exports priced abroad, imports, finance in hard currency. The drain passes through that joint, and your income is a share of what passes. Your positions would keep it open, which serves your own income and costs the workers and peasants whose output leaves the country underpriced.`,
+      ],
+      mechanism: sus.map((h) => mechanismOf(b, h.position)),
+      evidence: [{ kind: 'situation', id: 'location', label: `${CLASS_NAMES['comprador-capital']} (from: ${listJoin(loc.basis)})` }, ...sus.map((h) => posRef(b, h.position))],
+      confidence: Math.min(1, mass / 2),
+    });
+  }
+
+  // Left at home, with the drain abroad. The overall stance above averages every holding, and domestic
+  // positions that push against the market are tagged as reducing the drain, so a domestic radical always
+  // looks anti-drain on that average. These two findings set the domestic program beside the stance on the
+  // world economy itself: the holdings in the world domain.
+  const worldHs = drainHs.filter((h) => b.problematics[h.problematic]!.domain === 'world');
+  const wMass = worldHs.reduce((a, h) => a + h.weight, 0);
+  const DW = wMass ? worldHs.reduce((a, h) => a + h.weight * DRAIN_VALUE[b.positions[h.position]!.analysis.drain], 0) / wMass : 0;
   const domestic = hs.filter((h) => {
     const d = b.problematics[h.problematic]!.domain;
     return (d === 'economy' || d === 'state') && b.positions[h.position]!.analysis.law_of_value !== 'none';
   });
   const dm = domestic.reduce((a, h) => a + h.weight, 0);
   const dv = dm ? domestic.reduce((a, h) => a + h.weight * LOV_VALUE[b.positions[h.position]!.analysis.law_of_value], 0) / dm : 0;
-  if (dm >= 0.8 && dv >= 0.35 && mass >= 0.4 && D <= -0.2) {
-    const sus = drainHs.filter((h) => DRAIN_VALUE[b.positions[h.position]!.analysis.drain] < 0).slice(0, 3);
+  if (dm >= 0.8 && dv >= 0.35 && wMass >= 0.4 && DW <= -0.2) {
+    const sus = worldHs.filter((h) => DRAIN_VALUE[b.positions[h.position]!.analysis.drain] < 0).slice(0, 3);
     out.push({
       id: 'primary.left-at-home',
       section: 'primary',
@@ -306,11 +329,11 @@ export function primary(b: Bundle, s: State, loc: Location): Claim[] {
       mechanism: sus.map((h) => mechanismOf(b, h.position)),
       evidence: [...domestic.slice(0, 2), ...sus].map((h) => posRef(b, h.position)),
       disputed: LABOR_ARISTOCRACY_DISPUTE,
-      confidence: Math.min(1, (dm + mass) / 4),
+      confidence: Math.min(1, (dm + wMass) / 4),
     });
   }
-  if (dm >= 0.8 && dv <= -0.35 && mass >= 0.4 && D >= 0.3) {
-    const red = drainHs.filter((h) => DRAIN_VALUE[b.positions[h.position]!.analysis.drain] > 0).slice(0, 3);
+  if (dm >= 0.8 && dv <= -0.35 && wMass >= 0.4 && DW >= 0.3) {
+    const red = worldHs.filter((h) => DRAIN_VALUE[b.positions[h.position]!.analysis.drain] > 0).slice(0, 3);
     out.push({
       id: 'primary.market-at-home-anti-drain',
       section: 'primary',
@@ -318,7 +341,7 @@ export function primary(b: Bundle, s: State, loc: Location): Claim[] {
       body: ['Your domestic program extends commodification, while your positions on the world economy would cut the flow from periphery to core, usually by withdrawing the core state from intervention and empire.'],
       mechanism: red.map((h) => mechanismOf(b, h.position)),
       evidence: red.map((h) => posRef(b, h.position)),
-      confidence: Math.min(1, (dm + mass) / 4),
+      confidence: Math.min(1, (dm + wMass) / 4),
     });
   }
   return out;
@@ -614,25 +637,69 @@ export function motion(b: Bundle, s: State): Claim[] {
     });
   }
   // conditions that would push further
-  const push: string[] = [];
+  // Each condition carries a short form for the headline, so the headline names the strongest lever
+  // instead of announcing a list.
+  const push: { short: string; text: string }[] = [];
+  const mech: string[] = [];
+  const ev: EvidenceRef[] = [];
   if (principal) {
     const r = b.tensions[principal.rule]!;
-    const sides = r.between.map((x) => b.positions[x]?.label ?? b.practice[x]?.text ?? x);
-    push.push(`A situation that forces the choice between ${listJoin(sides.map((x) => `“${x}”`))} will move you one way or the other; the evidence cannot yet say which.`);
+    const sides = r.between.map((x) => `“${b.positions[x]?.label ?? b.practice[x]?.text ?? x}”`);
+    const faced = s.tensions[principal.rule];
+    const record =
+      faced?.kind === 'hold'
+        ? 'So far you hold both with a reason; a situation that makes holding both costly decides it.'
+        : faced?.kind === 'reject'
+          ? 'You rejected the framing when it was put to you; a situation does not ask whether the framing is fair.'
+          : faced?.kind === 'yield'
+            ? 'You let one side give way when it was put to you, and the other is still live in your answers.'
+            : 'The evidence cannot yet say which way you would go.';
+    push.push({
+      short: `a situation that forces you to choose between ${listJoin(sides)}`,
+      text: `A situation that forces the choice between ${listJoin(sides)} will move you one way or the other. ${record}`,
+    });
+    mech.push(stripPeriod(r.explain) + '.');
+    ev.push({ kind: 'tension', id: principal.rule, label: 'principal' });
+  }
+  const lost = s.pressures.filter((p) => p.outcome === 'interest');
+  const kept = s.pressures.filter((p) => p.outcome === 'principle');
+  if (lost.length) {
+    const what = [...new Set(lost.map((p) => b.positions[p.tests]?.label ?? p.tests))].slice(0, 2).map((x) => `“${x}”`);
+    push.push({
+      short: `a change in your own material stake, which decided ${lost.length} of your ${s.pressures.length} costly choices`,
+      text: `Where holding a principle cost you, your interest decided ${lost.length} of ${s.pressures.length} times (${listJoin(what)} gave way). A change in your situation that removes that stake, or raises it, would move those commitments further than any argument.`,
+    });
+    ev.push(...lost.slice(0, 3).map((p) => ({ kind: 'pressure' as const, id: p.node, label: 'interest' })));
+  } else if (kept.length && kept.length === s.pressures.length) {
+    push.push({
+      short: 'a higher price on principles that have held so far',
+      text: `Your principles held every time they cost you (${kept.length} of ${kept.length}). What would test them further is a larger cost than these scenes named.`,
+    });
   }
   const lean = s.sides.filter((x) => x.dir === 'neither' || x.dir === 'declined').length;
-  if (lean) push.push('A crisis in which standing aside is itself costly would push you toward a side you have so far refused.');
-  if (!orgs.length) push.push('Joining any collective body would harden whichever of your commitments that body carries; you have none yet.');
-  const notFaced = ['principle', 'interest'].length && !s.pressures.length;
-  if (notFaced) push.push('A collision between your principles and your own material interest has not yet been tested.');
+  if (lean)
+    push.push({
+      short: 'a crisis in which standing aside costs you',
+      text: `You took neither side in ${lean} escalation${lean === 1 ? '' : 's'}. A crisis in which standing aside is itself costly would push you toward a side you have so far refused.`,
+    });
+  if (!orgs.length)
+    push.push({
+      short: 'joining a collective body, which would harden what that body carries',
+      text: 'Joining any collective body would harden whichever of your commitments that body carries; you have none yet.',
+    });
+  if (!s.pressures.length)
+    push.push({
+      short: 'a first collision between your principles and your own interest',
+      text: 'A collision between your principles and your own material interest has not yet been tested.',
+    });
   if (push.length)
     out.push({
       id: 'motion.conditions',
       section: 'motion',
-      headline: 'What would push you further.',
-      body: push,
-      mechanism: [],
-      evidence: principal ? [{ kind: 'tension', id: principal.rule, label: 'principal' }] : [],
+      headline: `What would push you further: ${push[0]!.short}.`,
+      body: push.map((p) => p.text),
+      mechanism: mech,
+      evidence: ev,
       confidence: 0.5,
     });
   return out;
@@ -760,6 +827,55 @@ export function anomalies(b: Bundle, s: State, loc: Location, claims: Claim[]): 
       mechanism: [],
       evidence: [{ kind: 'situation', id: 'location', label: own }],
       confidence: 0.6,
+    });
+  }
+  // Tension rules of the position-consciousness kind fire on Situation and holdings together: each one that
+  // is live, or was put to the respondent, is a concrete case of politics diverging from position.
+  const liveIds = new Set(liveTensions(b, s).map((t) => t.rule));
+  const pcRules = Object.values(b.tensions).filter((t) => t.type === 'position-consciousness' && (liveIds.has(t.id) || s.tensions[t.id]));
+  const hs = held(b, s);
+  const heldSet = new Set(hs.map((h) => h.position));
+  for (const r of pcRules) {
+    const faced = s.tensions[r.id];
+    const between = r.between.filter((x) => b.positions[x]);
+    const yours = between.filter((x) => heldSet.has(x));
+    const shown = (yours.length ? yours : between).map((x) => `“${b.positions[x]!.label}”`);
+    const handled = !faced
+      ? 'It has not been put to you yet.'
+      : faced.kind === 'yield'
+        ? 'When it was put to you, one side gave way.'
+        : faced.kind === 'hold'
+          ? 'When it was put to you, you held both and gave a reason.'
+          : faced.kind === 'reject'
+            ? 'When it was put to you, you rejected the framing. The instrument records that and keeps the finding: it rests on your situation and your holdings, not on the framing.'
+            : faced.kind === 'condition'
+              ? 'When it was put to you, you made it conditional.'
+              : 'When it was put to you, you declined to answer.';
+    out.push({
+      id: `anomaly.${r.id}`,
+      section: 'anomalies',
+      headline: own
+        ? `Where you stand and what you hold collide: you live by ${listJoin(loc.basis)}, and you hold ${listJoin(shown)}.`
+        : `What you hold collides with your situation: ${listJoin(shown)}.`,
+      body: [handled],
+      mechanism: [stripPeriod(r.explain) + '.'],
+      evidence: [
+        ...(own ? [{ kind: 'situation' as const, id: 'location', label: `${CLASS_NAMES[own]} (from: ${listJoin(loc.basis)})` }] : []),
+        { kind: 'tension' as const, id: r.id, label: faced ? faced.kind : 'live' },
+        ...between.map((x) => posRef(b, x)),
+      ],
+      confidence: faced ? 0.8 : 0.6,
+    });
+  }
+  if (own === 'comprador-capital' && (loc.world === 'periphery' || loc.world === 'semi-periphery') && (have('primary.opposes-in-words') || have('primary.opposes-in-practice'))) {
+    out.push({
+      id: 'anomaly.comprador-against-drain',
+      section: 'anomalies',
+      headline: 'Your income comes from brokering trade with the core, and your positions would cut the flow you broker.',
+      body: ['The frame predicts that comprador capital defends the channel its income passes through. Yours would narrow it. This is a test of the frame: national conviction, a bet on a domestic market, or something else outweighs the position.'],
+      mechanism: [],
+      evidence: [{ kind: 'situation', id: 'location', label: own }],
+      confidence: 0.7,
     });
   }
   if (have('method.gap-idealist') || have('method.gap-materialist')) {

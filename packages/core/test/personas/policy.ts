@@ -37,6 +37,8 @@ export interface Persona {
   underPressure?: 'principle' | 'interest' | 'mixed';
   /** the kind of cause it reaches for when nothing in its targets decides */
   reachesFor?: string;
+  /** how hard the persona pulls toward its `reachesFor` cause in explanation nodes and reason probes (default 0.5) */
+  causeBias?: number;
   /** tension rules: hold both, yield, or reject the framing */
   onTension?: 'yield' | 'hold' | 'reject';
   /** origin answer for keystones */
@@ -45,6 +47,34 @@ export interface Persona {
   expect?: string[];
   /** a fraction of prompts answered with "decline" (0..1), for incoherent and disengaged personas */
   declineRate?: number;
+  /**
+   * Home tradition(s). Where no explicit target bears on an option, the persona leans on how the bundle
+   * tags positions for these traditions (defining +0.6, typical +0.3, rejects -0.6), so it answers the way
+   * its tradition would instead of picking arbitrarily. Explicit targets always override the prior.
+   */
+  traditions?: string[];
+}
+
+const PRIOR = { defining: 0.6, typical: 0.3, rejects: -0.6 } as const;
+const effCache = new WeakMap<Persona, Record<string, number>>();
+
+/** Explicit targets plus the tradition prior. */
+export function effectiveTargets(b: Bundle, persona: Persona): Record<string, number> {
+  const c = effCache.get(persona);
+  if (c) return c;
+  const t: Record<string, number> = {};
+  if (persona.traditions?.length) {
+    for (const p of Object.values(b.positions)) {
+      let v = 0;
+      for (const tr of persona.traditions) {
+        for (const k of ['defining', 'typical', 'rejects'] as const) if (p.traditions[k]?.includes(tr)) v += PRIOR[k];
+      }
+      if (v) t[p.id] = v / persona.traditions.length;
+    }
+  }
+  Object.assign(t, persona.targets);
+  effCache.set(persona, t);
+  return t;
 }
 
 type Scored = { id: string; score: number; side?: string; pressure?: string; cause?: string };
@@ -57,7 +87,7 @@ function score(ev: Evidence[] | undefined, targets: Record<string, number>): num
 
 /** Per-option evidence for any prompt, looked up from the bundle. */
 function scoreOptions(b: Bundle, p: Prompt, persona: Persona): { options: Scored[]; premises: Scored[]; conditions: Scored[] } {
-  const t = persona.targets;
+  const t = effectiveTargets(b, persona);
   if (p.kind === 'challenge') {
     const rule = b.tensions[p.id.slice('challenge:'.length)]!;
     return {
@@ -93,11 +123,23 @@ function hash(s: string): number {
   return (h >>> 0) / 4294967296;
 }
 
+/** FNV-1a with a final avalanche, so that ids differing only in their last characters spread evenly. */
+function unit(s: string): number {
+  let h = 2166136261;
+  for (let i = 0; i < s.length; i++) h = Math.imul(h ^ s.charCodeAt(i), 16777619);
+  h ^= h >>> 16;
+  h = Math.imul(h, 0x85ebca6b);
+  h ^= h >>> 13;
+  h = Math.imul(h, 0xc2b2ae35);
+  h ^= h >>> 16;
+  return (h >>> 0) / 4294967296;
+}
+
 export function decide(b: Bundle, p: Prompt, persona: Persona) {
-  if (persona.declineRate && hash(persona.id + p.id) < persona.declineRate && p.kind === 'node') return { node: p.id, affordance: 'decline' as const };
+  if (persona.declineRate && unit(persona.id + p.id) < persona.declineRate && p.kind === 'node') return { node: p.id, affordance: 'decline' as const };
   if (p.allocate) {
     const n = b.nodes[p.id]!;
-    const raw = n.allocate!.items.map((it) => ({ id: it.id, s: Math.max(0, score(it.evidence, persona.targets)) + 0.01 }));
+    const raw = n.allocate!.items.map((it) => ({ id: it.id, s: Math.max(0, score(it.evidence, effectiveTargets(b, persona))) + 0.01 }));
     const total = raw.reduce((a, z) => a + z.s, 0);
     const alloc: Record<string, number> = {};
     let left = p.allocate.budget;
@@ -117,7 +159,7 @@ export function decide(b: Bundle, p: Prompt, persona: Persona) {
   for (const o of options) {
     if (o.side && persona.breaks && o.side === persona.breaks) o.score += 0.75;
     if (o.pressure && persona.underPressure && o.pressure === persona.underPressure) o.score += 0.75;
-    if (o.cause && persona.reachesFor && o.cause === persona.reachesFor) o.score += 0.5;
+    if (o.cause && persona.reachesFor && o.cause === persona.reachesFor) o.score += persona.causeBias ?? 0.5;
   }
   options.sort((a, z) => z.score - a.score || a.id.localeCompare(z.id));
   const best = options[0];

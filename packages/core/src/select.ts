@@ -11,7 +11,7 @@
  *   7. the next slot of the mode's template (arc, pressure, practice, ...)
  *   8. the node with the highest expected resolution of remaining fog
  */
-import type { Bundle, Node } from '@standpoint/content/schema';
+import type { Bundle, Cond, Node } from '@standpoint/content/schema';
 import type { Mode, Prompt, State } from './types.js';
 import { MODE_TARGET } from './types.js';
 import { evaluate } from './cond.js';
@@ -77,6 +77,35 @@ function arcScore(b: Bundle, s: State, arcId: string): number {
   return g * (1 - 0.4 * overlap);
 }
 
+/** Positions a gate condition tests, collected recursively (negated branches excluded). */
+function gatePositions(c: Cond | undefined, out: Set<string> = new Set()): Set<string> {
+  if (!c) return out;
+  if ('holds' in c) out.add(c.holds);
+  else if ('holdsAll' in c) c.holdsAll.forEach((p) => out.add(p));
+  else if ('holdsAny' in c) c.holdsAny.forEach((p) => out.add(p));
+  else if ('weight' in c && c.weight.gt !== undefined) out.add(c.weight.position);
+  else if ('all' in c) c.all.forEach((x) => gatePositions(x, out));
+  else if ('any' in c) c.any.forEach((x) => gatePositions(x, out));
+  return out;
+}
+
+/**
+ * How strongly the evidence points into a gated descent: the firmest holding among the positions its gate
+ * tests. Gates open easily once a few scenes have been answered, and fog alone then decides: a Catholic
+ * integralist went into the liberal or libertarian descent rather than the religious one, and a Maoist into
+ * the libertarian one rather than the communist one, because that ground was emptier. A descent exists to
+ * go deeper where the evidence already points (brief 5.2), so relevance scales the fog gain. The weight is
+ * moderate: much larger values let incidental holdings pull respondents into the wrong region (tuned on
+ * the persona suite; 0.2 to 0.5 behave the same there).
+ */
+const DESCENT_RELEVANCE = 0.35;
+function descentRelevance(b: Bundle, s: State, gate: Cond | undefined): number {
+  const h = holdings(b, s);
+  let m = 0;
+  for (const p of gatePositions(gate)) m = Math.max(m, h.byPosition[p]?.weight ?? 0);
+  return m;
+}
+
 function eligible(b: Bundle, s: State, n: Node | undefined): n is Node {
   return !!n && !s.visited.has(n.id) && evaluate(b, s, n.gate);
 }
@@ -125,7 +154,7 @@ export function candidates(b: Bundle, s: State, kind: Slot): Candidate[] {
         if (!eligible(b, s, n)) continue;
         let g = 0;
         for (const id of d.nodes) g += gain(b, s, b.nodes[id]!);
-        out.push({ kind, id: d.id, score: g / Math.sqrt(d.nodes.length) + j(d.id) });
+        out.push({ kind, id: d.id, score: (g / Math.sqrt(d.nodes.length)) * (1 + DESCENT_RELEVANCE * descentRelevance(b, s, d.gate)) + j(d.id) });
       }
       break;
     case 'origin':
