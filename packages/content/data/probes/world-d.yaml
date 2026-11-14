@@ -1,0 +1,308 @@
+nodes:
+  # ---------------- aid.foreign ----------------
+  - id: probe.aid.foreign.aid-budget
+    type: allocation
+    title: The aid budget
+    text: >
+      Your country's foreign aid budget is up for review, and you get to shape it. Spread ten points across
+      what you would do with the money. Zero is allowed anywhere.
+    why: This asks what you think foreign aid does, by where you would put it.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: more
+          text: More of everything, vaccines, food, clinics, until we give 0.7 percent of national income
+          evidence: [{position: aid.foreign.saves-lives-give-more, w: 2}]
+        - id: proven
+          text: Only programs proven in trials, like malaria nets and deworming
+          evidence: [{position: aid.foreign.fund-what-works, w: 2}]
+        - id: cut
+          text: Cut aid to governments, which mostly feeds corruption
+          evidence: [{position: aid.foreign.dependency-and-theft, w: 2}]
+        - id: home
+          text: Bring it home, to pensions and hospitals here
+          evidence: [{position: aid.foreign.charity-at-home, w: 2}]
+        - id: leverage
+          text: Aid that wins us ports, votes and contracts for our firms
+          evidence: [{position: aid.foreign.instrument-of-power, w: 2}]
+        - id: debt
+          text: Cancel poor countries' debts and stop tax dodging instead of giving aid
+          evidence: [{position: aid.foreign.small-change-from-the-drain, w: 2}]
+        - id: missions
+          text: Church and mission hospitals and schools, as a duty the rich owe the poor
+          evidence: [{position: aid.foreign.duty-of-the-rich, w: 2}]
+    options:
+      - {id: done, text: Done}
+
+  - id: probe.aid.foreign.port-au-prince
+    type: explanation
+    title: After the earthquake
+    text: >
+      Haiti, 2010. An earthquake kills well over a hundred thousand people. Donors pledge billions. Years
+      later, much of the money has gone to foreign contractors and charities, and very little passed through
+      Haitian hands. Why did so much aid leave so little behind?
+    why: This asks what you think foreign aid does, and what kind of cause you reach for.
+    options:
+      - id: power
+        text: It was never mainly for Haiti. It paid the donors' own contractors and served their politics.
+        cause: interests
+        evidence: [{position: aid.foreign.instrument-of-power, w: 3}]
+      - id: theft
+        text: Aid always disappears into corruption and dependency. Haiti just made it visible.
+        cause: individuals
+        evidence: [{position: aid.foreign.dependency-and-theft, w: 3}]
+      - id: proven
+        text: Too much went to vague projects. Fund what's proven, like clean water and vaccines, and cut the rest.
+        cause: ideas
+        evidence: [{position: aid.foreign.fund-what-works, w: 3}]
+      - id: more
+        text: It did save lives, with field hospitals, water and food. Rebuilding a country needed far more.
+        cause: chance
+        evidence: [{position: aid.foreign.saves-lives-give-more, w: 3}]
+      - id: drain
+        text: Haiti spent over a century paying France for its own independence. Aid is small change against that.
+        cause: structures
+        evidence: [{position: aid.foreign.small-change-from-the-drain, w: 3}]
+      - id: home
+        text: We had our own people sleeping in the streets that winter. Charity begins at home.
+        cause: interests
+        evidence: [{position: aid.foreign.charity-at-home, w: 3}]
+      - id: duty
+        text: The failure doesn't cancel the duty. Give through people who live among the poor, like the churches.
+        cause: divine
+        evidence: [{position: aid.foreign.duty-of-the-rich, w: 3}]
+
+  - id: probe.aid.foreign.lilongwe-lagos
+    type: voices
+    title: Nurse and economist
+    text: A nurse and an economist debate aid on a pan-African radio show. Who is right?
+    voices:
+      - {name: "Chipo, a nurse in Lilongwe", says: "The HIV drugs in my clinic are paid for by foreign donors. Cut them and my patients die. It's that simple."}
+      - {name: "Tunde, an economist in Lagos", says: "Aid lets our governments ignore their own taxpayers. Sixty years of it and we're still waiting."}
+    why: This asks what you think foreign aid does, through two people who see it up close.
+    options:
+      - id: chipo-more
+        text: Chipo. Aid works and the rich countries should give far more.
+        evidence: [{position: aid.foreign.saves-lives-give-more, w: 3}]
+      - id: chipo-proven
+        text: Chipo, but only because that program is proven. Fund the ones like it and cut the rest.
+        evidence: [{position: aid.foreign.fund-what-works, w: 3}]
+      - id: tunde
+        text: Tunde. Aid props up bad rulers and crowds out everything local.
+        evidence: [{position: aid.foreign.dependency-and-theft, w: 3}]
+      - id: donors
+        text: Both miss that donors give where it suits donors. Look at who gets the contracts.
+        evidence: [{position: aid.foreign.instrument-of-power, w: 3}]
+      - id: drain
+        text: Both miss the bigger flow. Malawi pays out more in debt service and profits than it gets in aid.
+        evidence: [{position: aid.foreign.small-change-from-the-drain, w: 3}]
+      - id: home
+        text: Both miss the people paying for it. Our own towns need that money.
+        evidence: [{position: aid.foreign.charity-at-home, w: 3}]
+      - id: duty
+        text: Both treat it as a calculation. It's a duty the rich owe the poor, whether it pays off or not.
+        evidence: [{position: aid.foreign.duty-of-the-rich, w: 3}]
+
+  # ---------------- debt.sovereign ----------------
+  - id: probe.debt.sovereign.quito-2008
+    type: verdict
+    title: Quito, 2008
+    text: >
+      Ecuador, 2008. A government audit commission calls much of the foreign debt illegitimate, run up under
+      earlier governments on terms that served lenders. The president stops paying on about three billion
+      dollars of bonds, then buys them back cheaply after their price collapses. Where do you stand?
+    why: This asks whether you think poor countries' debts should be repaid, at a case where one refused.
+    options:
+      - id: pay
+        text: A promise is a promise. Default once and the country pays for it for a generation.
+        evidence: [{position: debt.sovereign.pay-what-you-owe, w: 3}]
+      - id: process
+        text: Wrong way round. Negotiate with creditors through a proper process instead of springing it on them.
+        evidence: [{position: debt.sovereign.orderly-restructuring, w: 3}]
+      - id: odious
+        text: Right. Debts signed by earlier rulers for their friends' benefit don't bind the people.
+        evidence: [{position: debt.sovereign.odious-debt, w: 3}]
+      - id: together
+        text: Right, and every debtor should do it together. The debt has been paid many times over in interest.
+        evidence: [{position: debt.sovereign.already-paid, w: 3}]
+      - id: risk
+        text: Fine by me. The bondholders bought risk. Let them eat it, and no bailouts.
+        evidence: [{position: debt.sovereign.creditors-eat-losses, w: 3}]
+      - id: jubilee
+        text: It shouldn't need a default. The poorest countries' debts should simply be forgiven.
+        evidence: [{position: debt.sovereign.jubilee, w: 3}]
+      - id: free
+        text: Wrong. Pay it off early, as Brazil and Argentina paid off the IMF in 2005 and 2006, and be nobody's servant.
+        evidence: [{position: debt.sovereign.pay-off-to-be-free, w: 3}]
+
+  - id: probe.debt.sovereign.what-to-cut
+    type: line
+    title: What to give up
+    text: A poor country's debt payments have doubled. Going down this list, how much should it sacrifice to keep paying?
+    cases:
+      - Raise sales tax by two points
+      - Freeze teachers' pay for three years
+      - Cut the subsidies on fuel and maize meal
+      - Sell the state copper company to foreign buyers
+      - Spend more on interest than on health and schools together
+    why: This asks whether you think poor countries' debts should be repaid, and at what price.
+    options:
+      - id: all
+        text: All of it if needed. Defaulting would be worse.
+        evidence: [{position: debt.sovereign.pay-what-you-owe, w: 3}]
+      - id: fast
+        text: All of it, and fast, so the country never has to beg again.
+        evidence: [{position: debt.sovereign.pay-off-to-be-free, w: 3}]
+      - id: two
+        text: Through two. Beyond that the debt is unpayable and should be restructured.
+        evidence: [{position: debt.sovereign.orderly-restructuring, w: 3}]
+      - id: lenders
+        text: None. The lenders took the risk. They take the loss.
+        evidence: [{position: debt.sovereign.creditors-eat-losses, w: 3}]
+      - id: what-for
+        text: It depends what the money was for. If the last government stole it, none.
+        evidence: [{position: debt.sovereign.odious-debt, w: 3}]
+      - id: cancel
+        text: None. Debts of countries this poor should be cancelled.
+        evidence: [{position: debt.sovereign.jubilee, w: 3}]
+      - id: refuse
+        text: None, and the debtor countries should refuse together.
+        evidence: [{position: debt.sovereign.already-paid, w: 3}]
+
+  - id: probe.debt.sovereign.holdouts
+    type: voices
+    title: Teacher and fund manager
+    text: >
+      After Argentina's 2001 default, a fund bought its bonds for cents and later won a New York court order
+      to be paid in full. Two people argue about it. Who is right?
+    voices:
+      - {name: "Lucía, a teacher in Rosario", says: "They bought our bonds for pennies after the crash, and a judge in New York made us pay them in full. My salary paid for that."}
+      - {name: "Mark, a pension fund manager in Chicago", says: "My members are firefighters. A country that walks away from its bonds is walking away from them."}
+    why: This asks whether you think poor countries' debts should be repaid, through both sides of one.
+    options:
+      - id: mark
+        text: Mark. Debts are owed to real people, and they should be paid.
+        evidence: [{position: debt.sovereign.pay-what-you-owe, w: 3}]
+      - id: lucia
+        text: Lucía. That debt has been paid many times over. Debtors should refuse it together.
+        evidence: [{position: debt.sovereign.already-paid, w: 3}]
+      - id: court
+        text: Both miss what's needed, a bankruptcy court for countries so holdouts can't wreck a deal.
+        evidence: [{position: debt.sovereign.orderly-restructuring, w: 3}]
+      - id: junta
+        text: Both miss where the debt began. Much of it was run up by the military junta. That debt was never the people's.
+        evidence: [{position: debt.sovereign.odious-debt, w: 3}]
+      - id: risk
+        text: Mark's fund chose the risk. No bailouts, no rescues. Let lenders lose.
+        evidence: [{position: debt.sovereign.creditors-eat-losses, w: 3}]
+      - id: jubilee
+        text: Both miss mercy. Forgive the debts of the poorest countries outright.
+        evidence: [{position: debt.sovereign.jubilee, w: 3}]
+      - id: free
+        text: Both miss the lesson. Pay off every creditor fast and never owe anyone again.
+        evidence: [{position: debt.sovereign.pay-off-to-be-free, w: 3}]
+
+  # ---------------- china.role ----------------
+  - id: probe.china.role.hambantota
+    type: explanation
+    title: The port lease
+    text: >
+      Sri Lanka, 2017. A port built with Chinese loans at Hambantota loses money. The government leases it
+      to a Chinese state firm for 99 years for about 1.1 billion dollars, and uses the cash on other debts.
+      What does this tell you about China in the world?
+    why: This asks what you think China is doing in the world, and what kind of cause you reach for.
+    options:
+      - id: trap
+        text: A debt trap. Lend, wait, take the port.
+        cause: interests
+        evidence: [{position: china.role.new-empire, w: 3}]
+      - id: partner
+        text: Most of Sri Lanka's debt was owed to Western bondholders. China built a port no one else would finance.
+        cause: structures
+        evidence: [{position: china.role.partner-that-builds, w: 3}]
+      - id: counter
+        text: Whatever the deal, China's presence means Colombo can bargain with someone besides the IMF and Washington.
+        cause: structures
+        evidence: [{position: china.role.counterweight, w: 3}]
+      - id: one-party
+        text: A one-party state buying footholds across the Indian Ocean. The rules follow the money.
+        cause: ideas
+        evidence: [{position: china.role.one-party-rival, w: 3}]
+      - id: rising
+        text: Rising powers always do this. Britain took ports too. It's rivalry with America, nothing unique.
+        cause: structures
+        evidence: [{position: china.role.great-power-rivalry, w: 3}]
+      - id: workshop
+        text: Look past the port to the ships. They carry goods made by low-paid Chinese workers for Western brands.
+        cause: structures
+        evidence: [{position: china.role.workshop-of-core-capital, w: 3}]
+      - id: jobs
+        text: Can't speak for Sri Lanka. In my town it was the factory that went to China.
+        cause: interests
+        evidence: [{position: china.role.took-our-jobs, w: 3}]
+
+  - id: probe.china.role.shenzhen-carolina
+    type: voices
+    title: Shenzhen and Carolina
+    text: A former assembly worker in China and a former furniture worker in the United States are interviewed for the same documentary. Who sees China most clearly?
+    voices:
+      - {name: "Li Wei, who assembled phones in Shenzhen", says: "Twelve hours a day for a phone I could not afford. The name on the box was American."}
+      - {name: "Debbie, from North Carolina", says: "Our furniture plant closed in 2003. The work went to China and it never came back."}
+    why: This asks what you think China is doing in the world, through two workers at either end of its rise.
+    options:
+      - id: li
+        text: Li Wei. China was the workshop where Western brands made their profits on cheap labor.
+        evidence: [{position: china.role.workshop-of-core-capital, w: 3}]
+      - id: debbie
+        text: Debbie. China took our factories and our jobs.
+        evidence: [{position: china.role.took-our-jobs, w: 3}]
+      - id: builds
+        text: Both miss that those factories lifted hundreds of millions out of poverty, and now China builds roads and railways across Africa.
+        evidence: [{position: china.role.partner-that-builds, w: 3}]
+      - id: counter
+        text: Both miss what the factories built. A state strong enough to break the West's hold on technology and finance.
+        evidence: [{position: china.role.counterweight, w: 3}]
+      - id: strike
+        text: Both miss that Li Wei couldn't form an independent union. A one-party state is the story.
+        evidence: [{position: china.role.one-party-rival, w: 3}]
+      - id: empire
+        text: Both are out of date. Now China runs mines in Zambia and Congo and does to others what was done to it.
+        evidence: [{position: china.role.new-empire, w: 3}]
+      - id: rising
+        text: Both are watching a big power rise, the way America once rose against Britain. It always ends in rivalry.
+        evidence: [{position: china.role.great-power-rivalry, w: 3}]
+
+  - id: probe.china.role.which-worry
+    type: line
+    title: Which of these worries you
+    text: Going down this list of things China does abroad, where does it start to worry you?
+    cases:
+      - Building a railway in Kenya on loans
+      - Running copper mines in Zambia
+      - Making most of the world's solar panels at prices nobody else can match
+      - Building islands with airstrips in the South China Sea
+      - Selling surveillance cameras and software to governments
+    why: This asks what you think China is doing in the world, by where your worry starts.
+    options:
+      - id: none
+        text: None of it. That's what a builder does, and the South needs builders.
+        evidence: [{position: china.role.partner-that-builds, w: 3}]
+      - id: breaks
+        text: None of it. Every item breaks a monopoly the West held for a century.
+        evidence: [{position: china.role.counterweight, w: 3}]
+      - id: two
+        text: From two on. Mines abroad and military islands are what empires do.
+        evidence: [{position: china.role.new-empire, w: 3}]
+      - id: five
+        text: Five is the one. A one-party state exporting its methods.
+        evidence: [{position: china.role.one-party-rival, w: 3}]
+      - id: three-jobs
+        text: Three. Subsidized and dumped on us, and there goes our industry.
+        evidence: [{position: china.role.took-our-jobs, w: 3}]
+      - id: three-workshop
+        text: Three is the old story. China as the world's factory, on low wages, mostly for other people's profits.
+        evidence: [{position: china.role.workshop-of-core-capital, w: 3}]
+      - id: normal
+        text: All normal for a rising power. Worry about the rivalry, not the list.
+        evidence: [{position: china.role.great-power-rivalry, w: 3}]

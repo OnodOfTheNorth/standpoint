@@ -1,0 +1,447 @@
+nodes:
+  # ---------------- migrant.loyalty ----------------
+  - id: probe.migrant.loyalty.semi-final
+    type: scene
+    title: The semi-final
+    text: >
+      Paris, December 2022. Morocco plays France in the World Cup semi-final. You were born in Casablanca,
+      have lived in Paris for twenty years and carry a French passport. Your daughter, born here, asks which
+      side you are on. The whole building can hear your answer through the walls.
+    why: This asks where you think a migrant's loyalty belongs.
+    options:
+      - id: france
+        text: France. I chose it. It's my country now.
+        evidence: [{position: migrant.loyalty.new-country-first, w: 3}]
+      - id: both
+        text: Both. I'll cheer every goal and sleep fine either way.
+        evidence: [{position: migrant.loyalty.dual-belonging, w: 3}]
+      - id: morocco
+        text: Morocco. You don't stop being Moroccan because you changed your address.
+        evidence: [{position: migrant.loyalty.homeland-first, w: 3}]
+      - id: depot
+        text: It's a game. My side is the people I work with at the depot, Moroccan, French and Malian.
+        evidence: [{position: migrant.loyalty.class-not-flag, w: 3}]
+      - id: faith
+        text: Tonight I'll cheer the players who bow in prayer after they score. My real belonging is to the faith, not to either flag.
+        evidence: [{position: migrant.loyalty.community-of-faith, w: 3}]
+      - id: nobody
+        text: It's football. I owe neither state anything, and neither does anyone else in this building.
+        evidence: [{position: migrant.loyalty.no-one-owes-a-state, w: 3}]
+
+  - id: probe.migrant.loyalty.what-to-ask
+    type: line
+    title: What the state may ask
+    text: Going down this list, how much may a country ask of the people it naturalizes?
+    cases:
+      - Pass a language test
+      - Swear an oath of allegiance
+      - Give up the old passport
+      - Stop voting in the birth country's elections
+      - Serve in the army, even against the birth country
+    why: This asks where you think a migrant's loyalty belongs, by how much a state may demand.
+    options:
+      - id: all
+        text: All five. Citizenship is a choice, and a choice means giving something up.
+        evidence: [{position: migrant.loyalty.new-country-first, w: 3}]
+      - id: two
+        text: The first two. Asking people to choose is asking them to cut off half of themselves.
+        evidence: [{position: migrant.loyalty.dual-belonging, w: 3}]
+      - id: keep
+        text: Only the language test. The passport, the vote and the bond with the homeland stay.
+        evidence: [{position: migrant.loyalty.homeland-first, w: 3}]
+      - id: oaths
+        text: None. These are oaths to a state that will deport you when it suits. Loyalty is for fellow workers.
+        evidence: [{position: migrant.loyalty.class-not-flag, w: 3}]
+      - id: god
+        text: Whatever doesn't conflict with God's law. The oath stops there.
+        evidence: [{position: migrant.loyalty.community-of-faith, w: 3}]
+      - id: contracts
+        text: None. Keep your contracts and leave others alone. That's all anyone owes, native or not.
+        evidence: [{position: migrant.loyalty.no-one-owes-a-state, w: 3}]
+
+  - id: probe.migrant.loyalty.dubai-gothenburg
+    type: voices
+    title: Nurse and councillor
+    text: Two people are interviewed for a story about where migrants belong. Who has it right?
+    voices:
+      - {name: "Marites, a nurse from Iloilo working in Dubai", says: "Every month I send half my pay home. The Philippines is my country. I'm only working here."}
+      - {name: "Oskar, a city councillor in Gothenburg whose parents came from Turkey", says: "You live here, you vote here, your loyalty is here. My parents understood that."}
+    why: This asks where you think a migrant's loyalty belongs, through two people who answer it differently.
+    options:
+      - id: marites
+        text: Marites. Leaving doesn't end belonging to your people.
+        evidence: [{position: migrant.loyalty.homeland-first, w: 3}]
+      - id: oskar
+        text: Oskar. Where you settle is where your loyalty goes.
+        evidence: [{position: migrant.loyalty.new-country-first, w: 3}]
+      - id: both
+        text: Both, at once. People hold two countries without strain.
+        evidence: [{position: migrant.loyalty.dual-belonging, w: 3}]
+      - id: agency
+        text: Both miss the recruiting agency that took Marites's fees and the employer in Dubai. Her side is other workers, there and here.
+        evidence: [{position: migrant.loyalty.class-not-flag, w: 3}]
+      - id: faith
+        text: Both miss God. A believer is at home in any land and owes a state only what the faith allows.
+        evidence: [{position: migrant.loyalty.community-of-faith, w: 3}]
+      - id: nobody
+        text: Both assume someone is owed loyalty. No state is, migrant or native.
+        evidence: [{position: migrant.loyalty.no-one-owes-a-state, w: 3}]
+
+  # ---------------- settler.colonialism ----------------
+  - id: probe.settler.colonialism.zimbabwe-2000
+    type: verdict
+    title: Zimbabwe, 2000
+    text: >
+      Zimbabwe, 2000. Twenty years after independence, a few thousand mostly white commercial farmers still
+      hold much of the best land. War veterans occupy farms; the government seizes them, paying only for
+      buildings and improvements, not the land. Farm output falls hard in the years after. Where do you stand?
+    why: This asks what you think is owed where a nation was founded by settlement, at a case where land changed hands.
+    options:
+      - id: expropriate
+        text: Right in principle. Land taken by conquest goes back without paying the conqueror.
+        evidence: [{position: settler.colonialism.expropriate-redistribute, w: 3}]
+      - id: communities
+        text: Right that the land had to go back, wrong that party men got it. Communities should hold it and govern it themselves.
+        evidence: [{position: settler.colonialism.land-back, w: 3}]
+      - id: reconcile
+        text: The wrong was real. The fix should have been negotiated purchase, compensation and a commission, not seizures.
+        evidence: [{position: settler.colonialism.historical-wrong-reconcile, w: 3}]
+      - id: equal
+        text: Their grandparents took it, they didn't. Every country was conquered once. Equal citizens now.
+        evidence: [{position: settler.colonialism.all-nations-conquest, w: 3}]
+      - id: built
+        text: Those farms were built by their owners' work. Seizing them was theft, and the hunger proved it.
+        evidence: [{position: settler.colonialism.just-settlement, w: 3}]
+      - id: categories
+        text: The trouble is "settler" and "native" as political categories at all. One citizenry, one land law.
+        evidence: [{position: settler.colonialism.decolonize-citizenship, w: 3}]
+      - id: flag
+        text: Independence changed the flag, not who held the land. Until that changes the colony goes on.
+        evidence: [{position: settler.colonialism.ongoing-structure, w: 3}]
+
+  - id: probe.settler.colonialism.the-voice
+    type: voices
+    title: Elder and farmer
+    text: >
+      Australia, 2023. A referendum to give Aboriginal and Torres Strait Islander people a Voice to
+      Parliament fails, about sixty to forty. Two people who voted no, for opposite reasons, talk afterwards.
+      Who is right?
+    voices:
+      - {name: "June, an Aboriginal elder", says: "We never ceded this land. A voice that only advises the people who took it is not what we are owed."}
+      - {name: "Greg, a wheat farmer in Western Australia", says: "My family has farmed here five generations. I'm not a settler, I'm Australian, and everyone should be equal under one law."}
+    why: This asks what you think is owed where a nation was founded by settlement, through two people who rejected the same offer.
+    options:
+      - id: land-back
+        text: June, and what is owed is land and law handed back.
+        evidence: [{position: settler.colonialism.land-back, w: 3}]
+      - id: structure
+        text: June. It never ended. The state exists by holding that land.
+        evidence: [{position: settler.colonialism.ongoing-structure, w: 3}]
+      - id: equal
+        text: Greg. Equal citizens, no separate treatment, whoever's ancestors did what.
+        evidence: [{position: settler.colonialism.all-nations-conquest, w: 3}]
+      - id: built
+        text: Greg, and more. His family turned that land into farms by their own work. That founding was legitimate.
+        evidence: [{position: settler.colonialism.just-settlement, w: 3}]
+      - id: treaty
+        text: Both miss the way through. Treaty, truth-telling and compensation, then go forward together.
+        evidence: [{position: settler.colonialism.historical-wrong-reconcile, w: 3}]
+      - id: categories
+        text: Both are stuck in the colonial labels. Drop settler and native and build one community.
+        evidence: [{position: settler.colonialism.decolonize-citizenship, w: 3}]
+      - id: estates
+        text: Both miss the big pastoral leases. Take them and give them to whoever needs land.
+        evidence: [{position: settler.colonialism.expropriate-redistribute, w: 3}]
+
+  # ---------------- indigenous.sovereignty ----------------
+  - id: probe.indigenous.sovereignty.bolivia-2009
+    type: verdict
+    title: La Paz, 2009
+    text: >
+      Bolivia, 2009. Voters approve a new constitution. The country becomes the Plurinational State of
+      Bolivia, recognizing thirty-six indigenous nations, their languages and their own forms of
+      self-government and justice. Where do you stand?
+    why: This asks whether you think indigenous peoples hold sovereignty, and in what form.
+    options:
+      - id: plurinational
+        text: Right. Where indigenous peoples are most of the country, they should refound and run the state.
+        evidence: [{position: indigenous.sovereignty.plurinational-state, w: 3}]
+      - id: nation-to-nation
+        text: Better than before, but indigenous nations aren't departments of any state. Nation to nation.
+        evidence: [{position: indigenous.sovereignty.inherent-nationhood, w: 3}]
+      - id: autonomy
+        text: Good where it gives autonomy and a real veto over mines on their land, inside one Bolivia.
+        evidence: [{position: indigenous.sovereignty.within-state-rights, w: 3}]
+      - id: estates
+        text: Words in a constitution change little. Break up the big estates of the east and the question is answered.
+        evidence: [{position: indigenous.sovereignty.land-is-the-question, w: 3}]
+      - id: without
+        text: Any state, plurinational or not, will end up drilling. Communities should govern themselves without it.
+        evidence: [{position: indigenous.sovereignty.autonomy-without-state, w: 3}]
+      - id: resurgence
+        text: Recognition from La Paz is still recognition from a state. Go back to the land and the language.
+        evidence: [{position: indigenous.sovereignty.resurgence, w: 3}]
+      - id: one-law
+        text: One law for all. Sorting citizens by ancestry divides the country.
+        evidence: [{position: indigenous.sovereignty.equal-citizenship, w: 3}]
+      - id: title
+        text: Collective land keeps families poor. Let them own and sell their own plots.
+        evidence: [{position: indigenous.sovereignty.private-title, w: 3}]
+
+  - id: probe.indigenous.sovereignty.pipeline
+    type: scene
+    title: The gas line
+    text: >
+      Northern British Columbia. A gas pipeline will cross your nation's territory. The elected band council
+      signed a benefits deal. The hereditary chiefs refuse. Police have cleared a camp on the access road.
+      Your cousin, home from the city, asks you who decides. You live here. What do you tell her?
+    why: This asks whether you think indigenous peoples hold sovereignty, and who exercises it.
+    options:
+      - id: chiefs
+        text: The hereditary chiefs. Their authority is older than Canada's and was never handed over.
+        evidence: [{position: indigenous.sovereignty.inherent-nationhood, w: 3}]
+      - id: consent
+        text: The community, through a proper consent process with real power to say no. The council's deal is part of that.
+        evidence: [{position: indigenous.sovereignty.within-state-rights, w: 3}]
+      - id: courts
+        text: Canada's courts and Parliament, the same as for any landowner.
+        evidence: [{position: indigenous.sovereignty.equal-citizenship, w: 3}]
+      - id: title
+        text: Whoever owns the land. Give families title and let them strike their own deals.
+        evidence: [{position: indigenous.sovereignty.private-title, w: 3}]
+      - id: camp
+        text: The people in that camp, living on the land. Not Ottawa's councils, not its courts.
+        evidence: [{position: indigenous.sovereignty.resurgence, w: 3}]
+      - id: assembly
+        text: The people in assembly, not chiefs or councils, and no state's permission.
+        evidence: [{position: indigenous.sovereignty.autonomy-without-state, w: 3}]
+      - id: owners
+        text: Ask who owns the gas company. While energy is private, every nation's land is for sale.
+        evidence: [{position: indigenous.sovereignty.land-is-the-question, w: 3}]
+      - id: refound
+        text: This needs a different Canada, with indigenous nations written into the constitution and sharing power over energy.
+        evidence: [{position: indigenous.sovereignty.plurinational-state, w: 3}]
+
+  - id: probe.indigenous.sovereignty.how-much
+    type: line
+    title: How much self-rule
+    text: Going down this list, how much self-government should an indigenous people inside an existing country have?
+    cases:
+      - Their own schools in their own language
+      - Their own police and courts for their members
+      - A veto over mines and dams on their land
+      - Their own passports
+      - A seat as a nation at the UN
+    why: This asks whether you think indigenous peoples hold sovereignty, by how much self-rule you would grant.
+    options:
+      - id: none
+        text: None of it. One law and one school system for everyone.
+        evidence: [{position: indigenous.sovereignty.equal-citizenship, w: 3}]
+      - id: individuals
+        text: Nothing by group. Let individuals own their land and decide for themselves.
+        evidence: [{position: indigenous.sovereignty.private-title, w: 3}]
+      - id: three
+        text: Through three, inside the existing country.
+        evidence: [{position: indigenous.sovereignty.within-state-rights, w: 3}]
+      - id: three-share
+        text: Through three, plus a real share in running the whole state.
+        evidence: [{position: indigenous.sovereignty.plurinational-state, w: 3}]
+      - id: all
+        text: All five. They were nations before the state existed.
+        evidence: [{position: indigenous.sovereignty.inherent-nationhood, w: 3}]
+      - id: permission
+        text: The list asks the state's permission. Skip the list and live it.
+        evidence: [{position: indigenous.sovereignty.resurgence, w: 3}]
+      - id: assemblies
+        text: The first three, run by community assemblies, never by a government of their own.
+        evidence: [{position: indigenous.sovereignty.autonomy-without-state, w: 3}]
+      - id: land
+        text: The list leaves out the land. Without it back, schools and police are decoration.
+        evidence: [{position: indigenous.sovereignty.land-is-the-question, w: 3}]
+
+  # ---------------- agrarian.question ----------------
+  - id: probe.agrarian.question.ethiopia
+    type: scene
+    title: The land commission
+    text: >
+      Ethiopia. Since 1975 all land has belonged to the state. Farmers may use it and pass it to their
+      children, but may not sell or mortgage it. Meanwhile large tracts have been leased to foreign
+      investors. A land commission asks for your recommendation. What do you write?
+    why: This asks who you think should own and work the land in the countryside.
+    options:
+      - id: title
+        text: Full, tradeable title. Let land go to the best farmers. The towns will absorb the rest.
+        evidence: [{position: agrarian.question.commercial-farms, w: 3}]
+      - id: family
+        text: Title to families, with caps on holdings and no sales to companies.
+        evidence: [{position: agrarian.question.family-farm, w: 3}]
+      - id: tiller
+        text: Keep it with those who farm it, and break up the big investor leases among them.
+        evidence: [{position: agrarian.question.land-to-the-tiller, w: 3}]
+      - id: collective
+        text: Join plots into large cooperative farms with machines and a plan.
+        evidence: [{position: agrarian.question.collective-farms, w: 3}]
+      - id: food
+        text: End the leases to foreign agribusiness. Seeds, water and land to smallholders farming their own way.
+        evidence: [{position: agrarian.question.food-sovereignty, w: 3}]
+      - id: tax
+        text: Let people hold it as they like, and collect the land's rental value for the public.
+        evidence: [{position: agrarian.question.land-value-tax, w: 3}]
+      - id: custom
+        text: Give it back to villages and lineages to allot by custom.
+        evidence: [{position: agrarian.question.communal-tenure, w: 3}]
+
+  - id: probe.agrarian.question.parana-mato-grosso
+    type: voices
+    title: Settler and soy farmer
+    text: Two Brazilian farmers are put on the same television panel. Who has it right?
+    voices:
+      - {name: "Edinalva, from a landless workers' settlement in Paraná", says: "We occupied land nobody was using. Now it feeds three hundred families, and we grow without poisons."}
+      - {name: "Rodrigo, a soy farmer in Mato Grosso", says: "Brazil feeds the world because farms like mine are big, mechanized and efficient. Occupations scare off investment."}
+    why: This asks who you think should own and work the land, through two farmers with opposite answers.
+    options:
+      - id: tiller
+        text: Edinalva. Land to those who work it.
+        evidence: [{position: agrarian.question.land-to-the-tiller, w: 3}]
+      - id: agroecology
+        text: Edinalva, and the poisons are the point. Peasants should control seeds, water and how food is grown.
+        evidence: [{position: agrarian.question.food-sovereignty, w: 3}]
+      - id: rodrigo
+        text: Rodrigo. Secure title and big efficient farms.
+        evidence: [{position: agrarian.question.commercial-farms, w: 3}]
+      - id: family
+        text: Both miss the family farmer in between, who owns a decent plot and answers to nobody.
+        evidence: [{position: agrarian.question.family-farm, w: 3}]
+      - id: tax
+        text: Both miss the land tax. Tax idle land at its value and nobody needs to occupy anything.
+        evidence: [{position: agrarian.question.land-value-tax, w: 3}]
+      - id: collective
+        text: Both are too small. Large collective farms planned with industry would out-produce them both.
+        evidence: [{position: agrarian.question.collective-farms, w: 3}]
+      - id: communal
+        text: Both are standing on someone's common land. Indigenous and quilombo communities held it first, and not to sell.
+        evidence: [{position: agrarian.question.communal-tenure, w: 3}]
+
+  # ---------------- borders.migration ----------------
+  - id: probe.borders.migration.who-stays
+    type: line
+    title: Who may stay
+    text: Going down this list, where do you stop saying the person should be allowed to stay?
+    cases:
+      - A doctor recruited from Nigeria
+      - A Syrian family fleeing war
+      - A Moroccan fruit picker on a six-month visa
+      - A Honduran who crossed without papers and has worked here ten years
+      - A man who overstayed his visa and has a theft conviction
+    why: This asks who you think should be allowed to come and stay.
+    options:
+      - id: open
+        text: All of them. People should be free to move and work where they like.
+        evidence: [{position: borders.migration.open-borders, w: 3}]
+      - id: no-borders
+        text: All of them, and the list is the problem. No one is illegal. No deportations.
+        evidence: [{position: borders.migration.no-borders, w: 3}]
+      - id: legal
+        text: The doctor, the picker, the family if properly vetted. Not those who broke the rules.
+        evidence: [{position: borders.migration.legal-and-contributing, w: 3}]
+      - id: managed
+        text: The doctor and the picker, on terms the state sets and the economy needs.
+        evidence: [{position: borders.migration.managed-labor, w: 3}]
+      - id: vote
+        text: Whatever voters decide through their own law, with refugees protected.
+        evidence: [{position: borders.migration.democratic-control, w: 3}]
+      - id: wages
+        text: Fewer recruited doctors and pickers. Employers use them to avoid paying or training locals.
+        evidence: [{position: borders.migration.restrict-for-workers, w: 3}]
+      - id: few
+        text: The family and maybe the doctor, in small numbers, if they become one of us.
+        evidence: [{position: borders.migration.restrict-national, w: 3}]
+      - id: return
+        text: None of them for good. Even the settled ones should go home.
+        evidence: [{position: borders.migration.remigration, w: 3}]
+      - id: rights
+        text: All of them with equal rights, and stop the wars and debts that sent them.
+        evidence: [{position: borders.migration.right-to-stay, w: 3}]
+      - id: union
+        text: Whatever the rules, sign them all up for the union.
+        evidence: [{position: borders.migration.class-not-nation-link, w: 3}]
+
+  - id: probe.borders.migration.johannesburg
+    type: scene
+    title: The papers check
+    text: >
+      Johannesburg. A group goes door to door demanding to see shop workers' papers, saying Zimbabweans and
+      Malawians take South African jobs. You own a small hardware shop with two Zimbabwean employees. The
+      group is at your door. Your neighbors are watching. What do you say?
+    why: This asks who you think should be allowed to come and stay, when the question arrives at your door.
+    options:
+      - id: employers
+        text: They have a point about wages. Bosses hire migrants to pay less. Go after the employers, not my staff.
+        evidence: [{position: borders.migration.restrict-for-workers, w: 3}]
+      - id: cohesion
+        text: Too many came too fast, and something here has frayed. Fewer newcomers. But not like this.
+        evidence: [{position: borders.migration.restrict-national, w: 3}]
+      - id: permits
+        text: My workers have permits and pay tax. Legal is legal.
+        evidence: [{position: borders.migration.legal-and-contributing, w: 3}]
+      - id: union
+        text: Get my workers and these men into the same union. Then nobody undercuts anybody.
+        evidence: [{position: borders.migration.class-not-nation-link, w: 3}]
+      - id: no-papers
+        text: Nobody should need papers to work. The border is what makes them cheap.
+        evidence: [{position: borders.migration.no-borders, w: 3}]
+      - id: region
+        text: Southern Africa should be one labor market, people moving freely like goods do.
+        evidence: [{position: borders.migration.open-borders, w: 3}]
+      - id: send
+        text: They're right. Send them back and let Zimbabwe sort itself out.
+        evidence: [{position: borders.migration.remigration, w: 3}]
+      - id: visas
+        text: Proper work visas for jobs we can't fill. The rest go.
+        evidence: [{position: borders.migration.managed-labor, w: 3}]
+      - id: parliament
+        text: Parliament sets the rules, not crowds at the door.
+        evidence: [{position: borders.migration.democratic-control, w: 3}]
+      - id: rights
+        text: Equal rights here, and an end to what is emptying Zimbabwe.
+        evidence: [{position: borders.migration.right-to-stay, w: 3}]
+
+  - id: probe.borders.migration.calais
+    type: voices
+    title: Builder and asylum seeker
+    text: Two people are interviewed for the same news segment on migration to Britain. Who has it right?
+    voices:
+      - {name: "Paweł, a Polish builder in London", says: "I came legally, I work, I pay tax. People who come on small boats are jumping the queue."}
+      - {name: "Aisha, a Sudanese woman in a camp near Calais", says: "There is no queue from Sudan. Show me the legal route and I will take it."}
+    why: This asks who you think should be allowed to come and stay, through two people who came different ways.
+    options:
+      - id: pawel
+        text: Paweł. Come properly, work and pay in, and you're welcome.
+        evidence: [{position: borders.migration.legal-and-contributing, w: 3}]
+      - id: aisha
+        text: Aisha. Equal rights for her, and an end to the war that sent her.
+        evidence: [{position: borders.migration.right-to-stay, w: 3}]
+      - id: open
+        text: Aisha, and the answer is to let people move freely. Britain would gain from it too.
+        evidence: [{position: borders.migration.open-borders, w: 3}]
+      - id: abolish
+        text: Aisha. Borders are what make people illegal. Abolish them.
+        evidence: [{position: borders.migration.no-borders, w: 3}]
+      - id: voters
+        text: Both miss that voters decide this, through Parliament, fairly and humanely.
+        evidence: [{position: borders.migration.democratic-control, w: 3}]
+      - id: wages
+        text: Both miss Paweł's wages. Builders' pay has stalled because employers can always find someone cheaper.
+        evidence: [{position: borders.migration.restrict-for-workers, w: 3}]
+      - id: nation
+        text: Both miss the country itself. A nation needs lower numbers to stay a nation.
+        evidence: [{position: borders.migration.restrict-national, w: 3}]
+      - id: points
+        text: Both miss what Britain needs. Builders and nurses, chosen on points, and nobody else.
+        evidence: [{position: borders.migration.managed-labor, w: 3}]
+      - id: home
+        text: Both should go home eventually, Paweł included.
+        evidence: [{position: borders.migration.remigration, w: 3}]
+      - id: together
+        text: Both are workers. Organize them together and the queue argument disappears.
+        evidence: [{position: borders.migration.class-not-nation-link, w: 3}]

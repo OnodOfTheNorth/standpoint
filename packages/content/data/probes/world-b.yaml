@@ -1,0 +1,492 @@
+nodes:
+  # ---------------- development.path ----------------
+  - id: probe.development.path.kampala-budget
+    type: allocation
+    title: The first budget
+    text: >
+      A new government takes office in Kampala. Coffee is the main export, most people farm, and the
+      treasury is thin. You get ten points to spend on a development strategy. Spread them as you like.
+    why: This asks how you think a poor country should develop, by what you fund.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: zones
+          text: Export zones with tax breaks for foreign investors
+          evidence: [{position: development.path.integration, w: 2}]
+        - id: titles
+          text: Land titles for smallholders and an end to licenses and red tape for traders
+          evidence: [{position: development.path.market-freedom, w: 2}]
+        - id: tariffs
+          text: Tariffs and state credit to build a home industry in textiles, tractors and medicines
+          evidence: [{position: development.path.import-substitution, w: 2}]
+        - id: devbank
+          text: A state development bank that lends to firms only if they hit export targets
+          evidence: [{position: development.path.developmental-state, w: 2}]
+        - id: delink
+          text: Food self-sufficiency, capital controls, and no IMF conditions
+          evidence: [{position: development.path.delinking, w: 2}]
+        - id: plan
+          text: Take banks and plantations into public hands and draw up a five-year plan for power and steel
+          evidence: [{position: development.path.planned-industrialization, w: 2}]
+        - id: villages
+          text: Village councils, seed banks and local markets, with no aim of catching up with anyone
+          evidence: [{position: development.path.post-development, w: 2}]
+    options:
+      - {id: done, text: Done}
+
+  - id: probe.development.path.delhi-1991
+    type: verdict
+    title: New Delhi, 1991
+    text: >
+      New Delhi, July 1991. India's reserves cover about three weeks of imports, and gold has been flown to
+      London as security for loans. The IMF will lend if India cuts tariffs, opens to foreign investors and
+      scraps the licenses that govern what factories may make. You are in the cabinet room. Where do you stand?
+    why: This asks how you think a poor country should develop, at a real turning point.
+    options:
+      - id: open
+        text: Take it and go further. Forty years of licenses kept India poor.
+        evidence: [{position: development.path.integration, w: 3}, {position: development.path.market-freedom, w: 1}]
+      - id: get-out
+        text: Scrap the licenses, but don't swap Delhi's bureaucrats for the IMF's. Get every state out of the way.
+        evidence: [{position: development.path.market-freedom, w: 3}]
+      - id: protect
+        text: Borrow to get through, but keep the tariffs. India built its own steel, trucks and drugs behind them.
+        evidence: [{position: development.path.import-substitution, w: 3}]
+      - id: korea
+        text: Open selectively, the Korean way. The state picks industries, keeps control of credit and pushes them to export.
+        evidence: [{position: development.path.developmental-state, w: 3}]
+      - id: refuse
+        text: Refuse the conditions. Ration imports, control capital and set your own priorities, whatever it costs.
+        evidence: [{position: development.path.delinking, w: 3}]
+      - id: plan
+        text: The plan wasn't the problem, the half-measures were. Take the rest into public hands and plan properly.
+        evidence: [{position: development.path.planned-industrialization, w: 3}]
+      - id: gandhi
+        text: Wrong question. Gandhi never asked how fast India could catch up with Britain. Villages first.
+        evidence: [{position: development.path.post-development, w: 3}]
+
+  - id: probe.development.path.how-much-state
+    type: line
+    title: How much state
+    text: Going down this list, where should the government of a poor country stop?
+    cases:
+      - Building roads, ports and power lines
+      - Setting high tariffs on imported cars
+      - Lending cheap to chosen firms that must hit export targets
+      - Owning the steel mill and the oil company
+      - Controlling all foreign currency and deciding what may be imported
+      - Owning the land and planning every factory
+    why: This asks how you think a poor country should develop, by where you draw the line on the state.
+    options:
+      - id: none
+        text: Not even the first. Private firms can build toll roads. The state is the obstacle.
+        evidence: [{position: development.path.market-freedom, w: 3}]
+      - id: one
+        text: The first, then open the doors to trade and investors.
+        evidence: [{position: development.path.integration, w: 3}]
+      - id: three
+        text: Through three, as long as the firms have to compete abroad.
+        evidence: [{position: development.path.developmental-state, w: 3}]
+      - id: four
+        text: Through four. Protect home industry and own the commanding heights.
+        evidence: [{position: development.path.import-substitution, w: 3}]
+      - id: five
+        text: Through five. Control over foreign currency is what lets a country set its own course.
+        evidence: [{position: development.path.delinking, w: 3}]
+      - id: six
+        text: All of it. Plan the whole economy.
+        evidence: [{position: development.path.planned-industrialization, w: 3}]
+      - id: ladder
+        text: Wrong ladder. The question isn't how much state, it's whether catching up is the goal at all.
+        evidence: [{position: development.path.post-development, w: 3}]
+
+  # ---------------- contradiction.primary ----------------
+  - id: probe.contradiction.primary.chapter-title
+    type: explanation
+    title: The chapter title
+    text: >
+      A history of the 2020s is written in the year 2100. The chapter covering your lifetime gets one title.
+      Which title would be most accurate?
+    why: This asks what you think the main conflict of our era is, and what kind of cause you reach for.
+    options:
+      - id: empire
+        text: The Empire and the Rest. The rich core against the nations it drained.
+        cause: structures
+        evidence: [{position: contradiction.primary.imperialism-vs-oppressed, w: 3}]
+      - id: three
+        text: Two Giants and the South. The superpowers contended, and the poor countries, with the middle powers, held the balance.
+        cause: interests
+        evidence: [{position: contradiction.primary.three-worlds, w: 3}]
+      - id: class
+        text: Owners and Workers. The same story as always, on a world scale.
+        cause: structures
+        evidence: [{position: contradiction.primary.capital-vs-labor, w: 3}]
+      - id: war
+        text: The Road to the Great War. Rival powers arming for a fight over the world.
+        cause: interests
+        evidence: [{position: contradiction.primary.inter-imperialist-war, w: 3}]
+      - id: autocracy
+        text: Open Societies Under Siege. Liberal democracies against the autocracies.
+        cause: ideas
+        evidence: [{position: contradiction.primary.democracy-vs-autocracy, w: 3}]
+      - id: civilizations
+        text: The Return of Civilizations. Faith and culture redraw the map.
+        cause: culture
+        evidence: [{position: contradiction.primary.civilizations, w: 3}]
+      - id: globalists
+        text: Nations Against the Globalists. Peoples taking their countries back from a borderless elite.
+        cause: ideas
+        evidence: [{position: contradiction.primary.globalism-vs-nations, w: 3}]
+      - id: many
+        text: The Many and the Few. Ordinary people against the billionaires who bought the governments.
+        cause: individuals
+        evidence: [{position: contradiction.primary.people-vs-elites, w: 3}]
+      - id: planet
+        text: The Planet Pushes Back. Everything else was a sideshow to the heat.
+        cause: nature
+        evidence: [{position: contradiction.primary.ecological, w: 3}]
+
+  - id: probe.contradiction.primary.front-page
+    type: scene
+    title: The front page
+    text: >
+      You edit a daily paper in Jakarta. Tonight the front page has room for one lead story. Whatever you
+      pick tells readers what matters most in the world right now. Which story leads?
+    why: This asks what you think the main conflict of our era is, by what you put first.
+    options:
+      - id: sanctions
+        text: Western sanctions strangle another Southern economy that tried to go its own way.
+        evidence: [{position: contradiction.primary.imperialism-vs-oppressed, w: 3}]
+      - id: g77
+        text: The poor countries' bloc refuses to take sides between Washington and Beijing, and courts Europe and Japan.
+        evidence: [{position: contradiction.primary.three-worlds, w: 3}]
+      - id: strike
+        text: Nickel smelter workers strike against the owners, local and foreign alike.
+        evidence: [{position: contradiction.primary.capital-vs-labor, w: 3}]
+      - id: navy
+        text: American and Chinese warships face off in the South China Sea.
+        evidence: [{position: contradiction.primary.inter-imperialist-war, w: 3}]
+      - id: election
+        text: A neighbor's election is stolen while the autocrats of the world congratulate the winner.
+        evidence: [{position: contradiction.primary.democracy-vs-autocracy, w: 3}]
+      - id: blasphemy
+        text: A row over a burned Quran in Europe sets off protests across the Muslim world.
+        evidence: [{position: contradiction.primary.civilizations, w: 3}]
+      - id: global-body
+        text: Parliament rejects rules written by a global body nobody here voted for.
+        evidence: [{position: contradiction.primary.globalism-vs-nations, w: 3}]
+      - id: billionaire
+        text: Leaked files show the country's richest families paid less tax than their drivers.
+        evidence: [{position: contradiction.primary.people-vs-elites, w: 3}]
+      - id: flood
+        text: North Jakarta floods again, and the government confirms the capital will move.
+        evidence: [{position: contradiction.primary.ecological, w: 3}]
+
+  - id: probe.contradiction.primary.ten-years
+    type: allocation
+    title: Ten years to give
+    text: >
+      You have ten years of working life to give to the fights of your time, and no more. Spread ten points
+      over the fights you think decide the century.
+    why: This asks what you think the main conflict of our era is, by where you would spend yourself.
+    allocate:
+      budget: 10
+      unit: years
+      items:
+        - id: empire
+          text: Poor nations against the rich powers that drain them
+          evidence: [{position: contradiction.primary.imperialism-vs-oppressed, w: 2}]
+        - id: three
+          text: The poor countries uniting to hold the balance between two superpowers
+          evidence: [{position: contradiction.primary.three-worlds, w: 2}]
+        - id: class
+          text: Workers against owners, in every country
+          evidence: [{position: contradiction.primary.capital-vs-labor, w: 2}]
+        - id: war
+          text: Stopping a war between the great powers
+          evidence: [{position: contradiction.primary.inter-imperialist-war, w: 2}]
+        - id: autocracy
+          text: Defending liberal democracies against autocracies
+          evidence: [{position: contradiction.primary.democracy-vs-autocracy, w: 2}]
+        - id: civilizations
+          text: Defending your civilization, its faith and its ways
+          evidence: [{position: contradiction.primary.civilizations, w: 2}]
+        - id: nations
+          text: Taking power back from global elites to your own nation
+          evidence: [{position: contradiction.primary.globalism-vs-nations, w: 2}]
+        - id: elites
+          text: Ordinary people against the super-rich
+          evidence: [{position: contradiction.primary.people-vs-elites, w: 2}]
+        - id: planet
+          text: Halting climate breakdown and extinction
+          evidence: [{position: contradiction.primary.ecological, w: 2}]
+    options:
+      - {id: done, text: Done}
+
+  # ---------------- world.order ----------------
+  - id: probe.world.order.which-2050
+    type: tradeoff
+    title: The 2050 map
+    text: >
+      It is 2050. You can choose the world your grandchildren grow up in, but each comes with a price
+      printed on it. Which do you take?
+    why: This asks what world order you want, and which price you are willing to pay for it.
+    options:
+      - id: liberal
+        text: "Today's order renewed. Alliances, open trade, common rules. Price: Washington decides when the rules apply."
+        evidence: [{position: world.order.liberal-order, w: 3}]
+      - id: primacy
+        text: "One superpower nobody dares challenge. Price: its wars, its bases and its bills."
+        evidence: [{position: world.order.american-primacy, w: 3}]
+      - id: balance
+        text: "A few great powers, each minding its own backyard. Price: if you live in someone's backyard, hard luck."
+        evidence: [{position: world.order.restraint, w: 3}]
+      - id: multipolar
+        text: "Many centers, so no single one can sanction or squeeze the South. Price: no referee either."
+        evidence: [{position: world.order.multipolar-sovereignty, w: 3}]
+      - id: civilizations
+        text: "Great civilizations, each sovereign in its own sphere, each with its own ways. Price: minorities in the wrong sphere."
+        evidence: [{position: world.order.civilizational-poles, w: 3}]
+      - id: none
+        text: "No order at all. Each country minds its own business. Price: small countries are on their own."
+        evidence: [{position: world.order.nation-first, w: 3}]
+      - id: workers
+        text: "Workers' movements across borders, loyal to no great capital. Price: it doesn't exist yet."
+        evidence: [{position: world.order.neither-camp, w: 3}]
+      - id: parliament
+        text: "A world parliament with global taxes. Price: a government even further from you."
+        evidence: [{position: world.order.cosmopolitan-governance, w: 3}]
+
+  - id: probe.world.order.warsaw-delhi
+    type: voices
+    title: Warsaw and Delhi
+    text: Two people at a conference in Singapore argue about who should run the world. Who has it right?
+    voices:
+      - {name: "Kasia, a Polish defense analyst", says: "Without American troops, Russian tanks would be in Warsaw. I know which order I prefer."}
+      - {name: "Rahul, an Indian diplomat", says: "We buy Russian oil, sell to America, sit in BRICS and in the Quad. Nobody gives us orders. That's what a world of many powers looks like, and it suits us."}
+    why: This asks what world order you want, through two people from countries that chose differently.
+    options:
+      - id: kasia-rules
+        text: Kasia, and it isn't only the tanks. It's the alliances and rules that come with them.
+        evidence: [{position: world.order.liberal-order, w: 3}]
+      - id: kasia-strength
+        text: Kasia. Strength deters, and only American strength is big enough.
+        evidence: [{position: world.order.american-primacy, w: 3}]
+      - id: rahul
+        text: Rahul. Many centers of power give countries like India room to breathe.
+        evidence: [{position: world.order.multipolar-sovereignty, w: 3}]
+      - id: spheres
+        text: Both miss that great powers will always have spheres. Accept it and avoid the crusades.
+        evidence: [{position: world.order.restraint, w: 3}]
+      - id: neither
+        text: Both are choosing which master to serve. Workers in Warsaw and Delhi owe neither capital anything.
+        evidence: [{position: world.order.neither-camp, w: 3}]
+      - id: mind
+        text: Both miss the simple answer. Every nation looks after itself and leaves the others alone.
+        evidence: [{position: world.order.nation-first, w: 3}]
+      - id: civilization
+        text: Rahul is close. India is a civilization, not a market, and civilizations should rule their own spheres.
+        evidence: [{position: world.order.civilizational-poles, w: 3}]
+      - id: global
+        text: Both miss climate, pandemics and finance. Those need democratic institutions above nations.
+        evidence: [{position: world.order.cosmopolitan-governance, w: 3}]
+
+  - id: probe.world.order.un-vote-2022
+    type: verdict
+    title: The March 2022 vote
+    text: >
+      New York, 2 March 2022. The UN General Assembly votes to condemn Russia's invasion of Ukraine. 141
+      countries vote yes, 5 vote no, and 35 abstain, India, China and South Africa among them. You hold your
+      country's card. What do you do, and why?
+    why: This asks what world order you want, at a vote where the world split.
+    options:
+      - id: yes-rules
+        text: Yes. Invading a neighbor breaks the one rule that protects small countries.
+        evidence: [{position: world.order.liberal-order, w: 3}]
+      - id: yes-strength
+        text: Yes, and say it plainly. This is what happens when America looks weak.
+        evidence: [{position: world.order.american-primacy, w: 3}]
+      - id: abstain-spheres
+        text: Abstain. The war is wrong, but pushing NATO to Russia's border was reckless. Great powers have backyards.
+        evidence: [{position: world.order.restraint, w: 3}]
+      - id: abstain-iraq
+        text: Abstain. Where was this vote over Iraq? The South won't be drafted into the West's quarrels.
+        evidence: [{position: world.order.multipolar-sovereignty, w: 3}]
+      - id: abstain-civilization
+        text: Abstain. Russia is defending its own civilization's sphere against the West's.
+        evidence: [{position: world.order.civilizational-poles, w: 3}]
+      - id: abstain-ours
+        text: Abstain and stay out of it. Not our war.
+        evidence: [{position: world.order.nation-first, w: 3}]
+      - id: yes-both
+        text: Yes, then table a second motion against NATO. Both camps send workers to die.
+        evidence: [{position: world.order.neither-camp, w: 3}]
+      - id: yes-veto
+        text: Yes, and then campaign to abolish the veto so the UN can act next time.
+        evidence: [{position: world.order.cosmopolitan-governance, w: 3}]
+
+  # ---------------- intl.institutions ----------------
+  - id: probe.intl.institutions.colombo
+    type: explanation
+    title: Colombo, 2022
+    text: >
+      Colombo, 2022. Sri Lanka defaults on its foreign debt. Queues for fuel run for kilometers. The IMF agrees
+      a loan of about three billion dollars, conditional on tax rises, subsidy cuts and a deal with creditors.
+      What is the IMF doing here?
+    why: This asks what you think international financial institutions are for.
+    options:
+      - id: job
+        text: Its job. Somebody has to lend when nobody else will, and conditions are the price of the money.
+        cause: interests
+        evidence: [{position: intl.institutions.cooperation, w: 3}]
+      - id: washington
+        text: Whatever Washington and its friends want this year. Compare how it treats their allies.
+        cause: interests
+        evidence: [{position: intl.institutions.power-instruments, w: 3}]
+      - id: creditors
+        text: Making sure the bondholders get paid, out of Sri Lankans' tax rises.
+        cause: structures
+        evidence: [{position: intl.institutions.creditor-instruments, w: 3}]
+      - id: votes
+        text: Needed, but rich countries hold the votes. Give borrowers a real say and the conditions change.
+        cause: structures
+        evidence: [{position: intl.institutions.reform-democratize, w: 3}]
+      - id: own
+        text: Proof that the South needs its own lender of last resort.
+        cause: structures
+        evidence: [{position: intl.institutions.build-alternatives, w: 3}]
+      - id: overreach
+        text: Unelected officials in Washington writing a sovereign country's budget.
+        cause: ideas
+        evidence: [{position: intl.institutions.globalist-overreach, w: 3}]
+      - id: hazard
+        text: Bailing out lenders who lent recklessly. Next time they'll lend recklessly again.
+        cause: interests
+        evidence: [{position: intl.institutions.moral-hazard, w: 3}]
+
+  - id: probe.intl.institutions.grain-voices
+    type: voices
+    title: Grain and Geneva
+    text: India's public grain stocks are challenged at the World Trade Organization. Two people argue on television. Who has it right?
+    voices:
+      - {name: "Lakshmi, a farm union leader from Punjab", says: "The trade rules say India's support for its farmers is too high, while America and Europe pour billions into theirs. The rules were written by the rich."}
+      - {name: "Tom, a trade lawyer in Geneva", says: "Without the WTO, big countries would simply bully small ones. Rules protect the weak, even when they bind them."}
+    why: This asks what you think international institutions are for, through a fight over food.
+    options:
+      - id: tom
+        text: Tom. Shared rules are what let countries trade without fighting.
+        evidence: [{position: intl.institutions.cooperation, w: 3}]
+      - id: lakshmi
+        text: Lakshmi. The rules enforce the claims of the rich countries and their agribusiness.
+        evidence: [{position: intl.institutions.creditor-instruments, w: 3}]
+      - id: power
+        text: Both miss that the rules hold only when the great powers want them. Washington froze the WTO's appeals court in 2019 by blocking judges.
+        evidence: [{position: intl.institutions.power-instruments, w: 3}]
+      - id: reform
+        text: Both are half right. Keep the WTO and give poor countries equal weight in writing the rules.
+        evidence: [{position: intl.institutions.reform-democratize, w: 3}]
+      - id: bloc
+        text: Both miss the alternative. The South should build its own trade bloc and stop asking Geneva.
+        evidence: [{position: intl.institutions.build-alternatives, w: 3}]
+      - id: nobody
+        text: Both miss the real issue. Nobody in Geneva should tell India how to feed its people.
+        evidence: [{position: intl.institutions.globalist-overreach, w: 3}]
+      - id: scrap
+        text: Scrap the lot. Subsidies everywhere are the problem, and bureaucracies that bail out bad policy keep them alive.
+        evidence: [{position: intl.institutions.moral-hazard, w: 2}]
+
+  - id: probe.intl.institutions.what-allowed
+    type: line
+    title: What they may do
+    text: Going down this list, where should international bodies stop?
+    cases:
+      - Lend dollars to a country in crisis
+      - Require budget cuts in return for the loan
+      - Rule that a country's farm subsidies break trade law
+      - Enforce medicine patents in poor countries
+      - Send peacekeepers without the host government's consent
+    why: This asks what you think international institutions are for, by how much power you would give them.
+    options:
+      - id: none
+        text: None of it. Abolish them. Every bailout rewards someone's mistake.
+        evidence: [{position: intl.institutions.moral-hazard, w: 3}]
+      - id: one
+        text: Only the first, and only on request, without conditions. Anything more overrides nations.
+        evidence: [{position: intl.institutions.globalist-overreach, w: 3}]
+      - id: two
+        text: Through two. Lending without conditions is throwing money away.
+        evidence: [{position: intl.institutions.cooperation, w: 3}]
+      - id: four-reformed
+        text: Through four, if borrowers and poor countries had equal votes.
+        evidence: [{position: intl.institutions.reform-democratize, w: 3}]
+      - id: whatever
+        text: Draw the line anywhere. They'll do whatever their biggest shareholders want.
+        evidence: [{position: intl.institutions.power-instruments, w: 3}]
+      - id: collect
+        text: The list itself is the problem. Two and four are how the creditors collect.
+        evidence: [{position: intl.institutions.creditor-instruments, w: 3}]
+      - id: south
+        text: Let the South's own development banks do the first. Skip the rest.
+        evidence: [{position: intl.institutions.build-alternatives, w: 3}]
+
+  # ---------------- intl.sanctions ----------------
+  - id: probe.intl.sanctions.which-fair
+    type: line
+    title: Which sanctions are fair
+    text: Going down this list, where do you stop calling it a fair way to pressure a government?
+    cases:
+      - Freezing the foreign bank accounts of a general accused of massacres
+      - Banning arms sales to a government at war
+      - A boycott of South African goods called for by the ANC against apartheid
+      - Cutting a country off from dollar payments
+      - Banning exports of equipment that might have military use, including for medicine
+      - A full trade embargo lasting sixty years
+    why: This asks when you think economic sanctions are legitimate, by where you draw the line.
+    options:
+      - id: all
+        text: All of it can be fair if the target is bad enough. It's that or war.
+        evidence: [{position: intl.sanctions.legitimate-tool, w: 3}]
+      - id: two
+        text: Through two. Hit the guilty, never the population.
+        evidence: [{position: intl.sanctions.targeted-for-rights, w: 3}]
+      - id: three
+        text: Only three. A boycott the oppressed ask for is solidarity. The rest is the strong besieging the weak.
+        evidence: [{position: intl.sanctions.solidarity-boycott, w: 3}]
+      - id: none
+        text: None from great powers. Even the asset freezes are the first step of a siege.
+        evidence: [{position: intl.sanctions.economic-war, w: 3}]
+      - id: ours
+        text: Any of them, when it protects our industry and security. None of them as a moral crusade.
+        evidence: [{position: intl.sanctions.national-leverage, w: 3}]
+      - id: pointless
+        text: Don't bother. They rarely work, and our exporters lose the market to someone else.
+        evidence: [{position: intl.sanctions.counterproductive, w: 3}]
+
+  - id: probe.intl.sanctions.tehran-madrid
+    type: voices
+    title: Pharmacist and exile
+    text: A pharmacist in Tehran and a Venezuelan exile in Madrid are asked the same question on a podcast. Do sanctions work? Who is right?
+    voices:
+      - {name: "Reza, a pharmacist in Tehran", says: "Sanctions don't touch the generals. They touch my insulin shipments, because no bank will handle the payment."}
+      - {name: "Marta, a Venezuelan exile in Madrid", says: "Sanctions are the only pressure on the people who stole our elections. Lift them and you reward the thieves."}
+    why: This asks when you think sanctions are legitimate, through two people who live with them.
+    options:
+      - id: reza
+        text: Reza. Sanctions are a siege on a whole people.
+        evidence: [{position: intl.sanctions.economic-war, w: 3}]
+      - id: marta
+        text: Marta. Without them the only options are war or nothing.
+        evidence: [{position: intl.sanctions.legitimate-tool, w: 3}]
+      - id: target
+        text: Both are right. Go after the officials and their money, and leave the insulin alone.
+        evidence: [{position: intl.sanctions.targeted-for-rights, w: 3}]
+      - id: fail
+        text: Both miss the record. Sanctions rarely change governments. They rally people around them and make smugglers rich.
+        evidence: [{position: intl.sanctions.counterproductive, w: 3}]
+      - id: who-asks
+        text: Both miss the real test. Did the people under the boot ask for it, or did a foreign capital decide?
+        evidence: [{position: intl.sanctions.solidarity-boycott, w: 3}]
+      - id: oil
+        text: Both miss our own interest. Oil prices, our firms, our leverage. Decide on that.
+        evidence: [{position: intl.sanctions.national-leverage, w: 3}]

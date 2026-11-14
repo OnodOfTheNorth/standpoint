@@ -1,0 +1,493 @@
+nodes:
+  # ---------------- imperialism.nature ----------------
+  - id: probe.imperialism.nature.copper-town
+    type: explanation
+    title: The copper town
+    text: >
+      Kitwe, on Zambia's Copperbelt. The mine belongs to a company listed abroad. Copper leaves by rail for
+      the port at Dar es Salaam; profits leave by bank transfer. The town hospital has been waiting two years
+      for a new generator. Your nephew, home from university, calls all this imperialism. What, if anything,
+      is he naming?
+    why: This asks what you think imperialism is, if it is anything at all.
+    options:
+      - id: monopoly
+        text: Giant firms and banks that outgrew their home markets and now send capital wherever returns are highest.
+        cause: structures
+        evidence: [{position: imperialism.nature.monopoly-stage, w: 3}]
+      - id: pump
+        text: A pump. Value made here on low wages ends up as profit and cheap wire in the rich countries.
+        cause: structures
+        evidence: [{position: imperialism.nature.unequal-exchange-drain, w: 3}]
+      - id: contest
+        text: A contest. Western, Chinese and Gulf firms are fighting over who gets the copper, and the town is the prize.
+        cause: interests
+        evidence: [{position: imperialism.nature.inter-imperialist-rivalry, w: 3}]
+      - id: policy
+        text: Bad decisions by governments abroad, which could just as easily make better ones.
+        cause: ideas
+        evidence: [{position: imperialism.nature.foreign-policy-choice, w: 3}]
+      - id: nothing
+        text: Nothing. A company invested, built a mine, pays wages and taxes. For the generator, ask Lusaka.
+        cause: individuals
+        evidence: [{position: imperialism.nature.no-such-thing, w: 3}]
+      - id: built
+        text: Outsiders built the railway, the mine and the hospital. Empire did real harm, and it also built this town.
+        cause: culture
+        evidence: [{position: imperialism.nature.civilizing-order, w: 3}]
+      - id: knowledge
+        text: The deeper thing. Whose language the contract is in, whose degree counts as expertise, whose ways count as backward.
+        cause: culture
+        evidence: [{position: imperialism.nature.coloniality, w: 3}]
+      - id: global
+        text: The real empire is the web of lenders, charities and global rules telling Zambia how to live.
+        cause: ideas
+        evidence: [{position: imperialism.nature.globalist-project, w: 3}]
+
+  - id: probe.imperialism.nature.which-count
+    type: line
+    title: Which of these counts
+    text: Going down this list, where do you stop calling it imperialism?
+    cases:
+      - A country invades its neighbor and annexes a province
+      - A great power keeps military bases in fifty countries
+      - A rich country's central bank raises rates and a poor country's debt payments double
+      - A drug patent keeps a medicine in Kenya at forty times what it costs to make
+      - A chocolate firm pays Ivorian cocoa farmers less than it costs them to grow the beans
+      - A university course built in Europe is taught in Lagos as simply "the" curriculum
+      - A UN human rights body condemns a country's marriage law
+    why: This asks what you count as imperialism, by where you draw the line.
+    options:
+      - id: one
+        text: Only the first. Imperialism is conquest. The rest is trade, banking and diplomacy.
+        evidence: [{position: imperialism.nature.no-such-thing, w: 3}]
+      - id: two-choice
+        text: The first two. It is what governments choose to do with armies, and they could stop.
+        evidence: [{position: imperialism.nature.foreign-policy-choice, w: 3}]
+      - id: two-powers
+        text: The first two, whoever does them. Russia, America, China. It is great powers carving up the map.
+        evidence: [{position: imperialism.nature.inter-imperialist-rivalry, w: 3}]
+      - id: bases-good
+        text: The first, yes. The bases keep sea lanes open and courts working. Empire has its uses.
+        evidence: [{position: imperialism.nature.civilizing-order, w: 3}]
+      - id: four
+        text: Through four. Finance and patents are the weapons now. Armies are the backup.
+        evidence: [{position: imperialism.nature.monopoly-stage, w: 3}]
+      - id: five
+        text: Through five. Bases, rates, patents and cocoa prices are one system moving wealth one way.
+        evidence: [{position: imperialism.nature.unequal-exchange-drain, w: 3}, {position: imperialism.nature.monopoly-stage, w: 1}]
+      - id: six
+        text: All the way to six. The curriculum is the part that lasts longest.
+        evidence: [{position: imperialism.nature.coloniality, w: 3}]
+      - id: seven
+        text: Skip to seven. Lecturing other nations about their own laws is the empire of our day.
+        evidence: [{position: imperialism.nature.globalist-project, w: 3}]
+
+  - id: probe.imperialism.nature.accra-voices
+    type: voices
+    title: Unionist and diplomat
+    text: Two people in an Accra hotel bar argue about whether the empire ever left. Who has it right?
+    voices:
+      - {name: "Ama, a trade unionist", says: "Our cocoa built London's chocolate houses. Now there are no soldiers, only prices set in London and New York. Same result."}
+      - {name: "Graham, a retired British diplomat", says: "We left in 1957. Since then Ghana has made its own choices, good and bad. Calling every price imperialism explains nothing."}
+    why: This asks what you think imperialism is, through two people who disagree about it.
+    options:
+      - id: ama
+        text: Ama. The flag came down, the flow of wealth didn't change direction.
+        cause: structures
+        evidence: [{position: imperialism.nature.unequal-exchange-drain, w: 3}]
+      - id: graham
+        text: Graham. Empire ended with independence. The rest is excuses.
+        cause: individuals
+        evidence: [{position: imperialism.nature.no-such-thing, w: 3}]
+      - id: graham-built
+        text: Graham, and he's too modest. The British left courts, schools and a civil service that still work.
+        cause: culture
+        evidence: [{position: imperialism.nature.civilizing-order, w: 3}]
+      - id: banks
+        text: Both miss the banks and the giant firms behind the prices. That's where the power sits.
+        cause: structures
+        evidence: [{position: imperialism.nature.monopoly-stage, w: 3}]
+      - id: rivals
+        text: Both are living in the past. Today the big powers are fighting each other over Africa.
+        cause: interests
+        evidence: [{position: imperialism.nature.inter-imperialist-rivalry, w: 3}]
+      - id: policy
+        text: Ama's right about the harm, Graham's right that it could stop. It's policy. Change the policy.
+        cause: ideas
+        evidence: [{position: imperialism.nature.foreign-policy-choice, w: 3}]
+      - id: english
+        text: Both miss that they're arguing in English, by British rules of debate. That's the empire that stayed.
+        cause: culture
+        evidence: [{position: imperialism.nature.coloniality, w: 3}]
+      - id: imf
+        text: Both miss the new empire. The IMF and the foreign charities tell Ghana what to believe and how to live.
+        cause: ideas
+        evidence: [{position: imperialism.nature.globalist-project, w: 3}]
+
+  # ---------------- poverty.cause ----------------
+  - id: probe.poverty.cause.malawi
+    type: explanation
+    title: Why Malawi
+    text: >
+      Malawi. Most families farm a hectare or less. Tobacco is the main export, sold at auction at prices set
+      by a few foreign buyers. Under British rule it was run as a labor reserve for the mines of Rhodesia and
+      South Africa. It has no coast. Ask ten people why it is one of the poorest countries on earth. What
+      do you say?
+    why: This asks why you think poor countries are poor, and what kind of cause you reach for.
+    options:
+      - id: drain
+        text: Its tobacco is sold cheap, its debts are paid dear. Wealth leaves faster than it is made.
+        cause: structures
+        evidence: [{position: poverty.cause.drain, w: 3}]
+      - id: institutions
+        text: Its rules let small elites grab what others produce. Fix property rights and courts first.
+        cause: structures
+        evidence: [{position: poverty.cause.bad-institutions, w: 3}]
+      - id: stage
+        text: It is earlier on the same road everyone walked. Give it time and investment and it will climb.
+        cause: chance
+        evidence: [{position: poverty.cause.late-development, w: 3}]
+      - id: culture
+        text: Habits of work, saving and trust beyond the family decide this, and they take generations to change.
+        cause: culture
+        evidence: [{position: poverty.cause.culture, w: 3}]
+      - id: geography
+        text: No coast, malaria, thin soils. Everything costs more there, and always has.
+        cause: nature
+        evidence: [{position: poverty.cause.geography, w: 3}]
+      - id: colonial
+        text: It was built to export men and tobacco, and the roads still run that way.
+        cause: structures
+        evidence: [{position: poverty.cause.colonial-legacy, w: 3}]
+      - id: rulers
+        text: Its rulers have stolen, printed money and scared off investors. Get out of the way and people will prosper.
+        cause: individuals
+        evidence: [{position: poverty.cause.misrule, w: 3}]
+
+  # ---------------- exchange.unequal ----------------
+  - id: probe.exchange.unequal.dhaka-shirt
+    type: explanation
+    title: The twenty-euro shirt
+    text: >
+      A shirt sewn in a Dhaka factory sells in Hamburg for twenty euros. The woman who sewed it was paid well
+      under one euro for it. The brand, the shop, the shipper and the landlord in Hamburg took the rest. Is
+      this an equal trade?
+    why: This asks whether you think trade between rich and poor countries is an equal exchange, and why.
+    options:
+      - id: gain
+        text: Both sides gain. The job beats the paddy field, and the shopper gets a cheap shirt.
+        cause: interests
+        evidence: [{position: exchange.unequal.mutual-gain, w: 3}]
+      - id: wage
+        text: Her hour at the machine is worth a fraction of a Hamburg hour at the same machine. That gap is the trade.
+        cause: structures
+        evidence: [{position: exchange.unequal.wage-gap, w: 3}]
+      - id: brand
+        text: The brand owns the logo and the customers. Any factory can be swapped for another, so the brand keeps the money.
+        cause: structures
+        evidence: [{position: exchange.unequal.value-chain-capture, w: 3}]
+      - id: productivity
+        text: Germany's economy is simply more productive overall. The cheap shirt reflects Bangladesh being behind.
+        cause: structures
+        evidence: [{position: exchange.unequal.productivity-gap, w: 3}]
+      - id: fair
+        text: Unfair, but fixable. Living-wage clauses, a fair-trade label and enforced safety rules.
+        cause: ideas
+        evidence: [{position: exchange.unequal.fair-trade-fixable, w: 3}]
+      - id: ours
+        text: The loser is the German textile worker whose job went to Dhaka.
+        cause: interests
+        evidence: [{position: exchange.unequal.rigged-against-us, w: 3}]
+      - id: raw
+        text: Bangladesh is lucky to sell shirts. Countries selling raw jute or cotton have it worse. Their prices sink every decade.
+        cause: structures
+        evidence: [{position: exchange.unequal.terms-of-trade, w: 3}]
+
+  - id: probe.exchange.unequal.geneva-1964
+    type: verdict
+    title: Geneva, 1964
+    text: >
+      Geneva, 1964, the first UN conference on trade and development. Poor countries argue that the prices of
+      their raw exports keep falling against the machines they import. They demand price agreements and
+      tariff preferences. Rich-country delegates reply that fixing prices helps nobody. You have a seat. Where
+      do you stand?
+    why: This asks how you judge trade between rich and poor countries, at a moment when it was openly argued.
+    options:
+      - id: prices
+        text: With the poor countries. Cocoa buys fewer tractors every decade. That's the whole problem.
+        evidence: [{position: exchange.unequal.terms-of-trade, w: 3}]
+      - id: rich
+        text: With the rich delegates. Fix prices and you get gluts, black markets and less trade for everyone.
+        evidence: [{position: exchange.unequal.mutual-gain, w: 3}]
+      - id: wages
+        text: Prices aren't the root. The same hour of work earns ten times more on one side of the border.
+        evidence: [{position: exchange.unequal.wage-gap, w: 3}]
+      - id: productivity
+        text: Price deals won't help. Countries that don't raise productivity will lose on whatever they sell.
+        evidence: [{position: exchange.unequal.productivity-gap, w: 3}]
+      - id: chain
+        text: The fight that matters is over who owns processing, shipping and brands, not the price of beans.
+        evidence: [{position: exchange.unequal.value-chain-capture, w: 3}]
+      - id: rules
+        text: Agreements and fairer rules, yes. Trade can be made fair if the rules are.
+        evidence: [{position: exchange.unequal.fair-trade-fixable, w: 3}]
+      - id: home
+        text: Careful. Preferences for their exports mean cheap imports that close our own mills.
+        evidence: [{position: exchange.unequal.rigged-against-us, w: 3}]
+
+  - id: probe.exchange.unequal.kumasi-leicester
+    type: voices
+    title: Farmer and millhand
+    text: A cocoa farmer and a laid-off textile worker are put on the same radio phone-in. Who is right about trade?
+    voices:
+      - {name: "Kofi, a cocoa farmer near Kumasi", says: "Every year the bar costs more in the shops and my beans buy less. Fertilizer, school fees, a bicycle. Everything we buy goes up faster than what we sell."}
+      - {name: "Sharon, a former mill worker in Leicester", says: "Our mill closed and the work went to Bangladesh. Trade is rigged all right. Rigged against us."}
+    why: This asks how you see trade between rich and poor countries, through two people on opposite ends of it.
+    options:
+      - id: kofi
+        text: Kofi. What raw-material countries sell keeps falling against what they buy.
+        cause: structures
+        evidence: [{position: exchange.unequal.terms-of-trade, w: 3}]
+      - id: sharon
+        text: Sharon. Our own workers are the ones paying for cheap imports.
+        cause: interests
+        evidence: [{position: exchange.unequal.rigged-against-us, w: 3}]
+      - id: both-wrong
+        text: Both are wrong. Without trade, Kofi has no buyer and Sharon pays double for everything.
+        cause: interests
+        evidence: [{position: exchange.unequal.mutual-gain, w: 3}]
+      - id: middle
+        text: Both miss the firms in the middle, the grinders and the brands. They take the cut from both.
+        cause: structures
+        evidence: [{position: exchange.unequal.value-chain-capture, w: 3}]
+      - id: tools
+        text: Both miss productivity. Kofi farms by hand and Sharon's mill was old. The modern beat the obsolete.
+        cause: structures
+        evidence: [{position: exchange.unequal.productivity-gap, w: 3}]
+      - id: hour
+        text: Both miss the hour. An hour of Kofi's work is priced at a tenth of an hour of Sharon's.
+        cause: structures
+        evidence: [{position: exchange.unequal.wage-gap, w: 3}]
+      - id: fix
+        text: Both are right, and better rules would help both. Fair prices for Kofi, labor standards that protect Sharon.
+        cause: ideas
+        evidence: [{position: exchange.unequal.fair-trade-fixable, w: 3}]
+
+  # ---------------- labor.aristocracy ----------------
+  - id: probe.labor.aristocracy.melbourne-dhaka
+    type: explanation
+    title: One hour, four days
+    text: >
+      A warehouse worker in Melbourne earns in one hour about what a garment worker in Dhaka earns in four
+      days. Some of what the Melbourne worker unpacks was sewn in Dhaka. Why is the gap so wide?
+    why: This asks whether you think workers in rich countries gain from the world economy, and how.
+    options:
+      - id: productive
+        text: Melbourne has forklifts, scanners and schooling. Each hour there produces more.
+        cause: structures
+        evidence: [{position: labor.aristocracy.earned-by-productivity, w: 3}]
+      - id: fought
+        text: Australian workers fought for every dollar, through unions and strikes. Nobody handed it to them.
+        cause: interests
+        evidence: [{position: labor.aristocracy.no-labor-aristocracy, w: 3}]
+      - id: both
+        text: Both are exploited. But the Melbourne worker's cheap phone and shirts are made on the Dhaka wage.
+        cause: structures
+        evidence: [{position: labor.aristocracy.shares-but-exploited, w: 3}]
+      - id: whole
+        text: Part of the Melbourne wage is paid out of Dhaka. The whole gap is the drain.
+        cause: structures
+        evidence: [{position: labor.aristocracy.whole-core-bought, w: 3}]
+      - id: top
+        text: Most of that warehouse floor is just getting by. It's the union officials and senior tradesmen who've been bought.
+        cause: interests
+        evidence: [{position: labor.aristocracy.bribed-stratum, w: 3}]
+      - id: losers
+        text: Ask the Melbourne worker if they feel like a winner. The factory jobs left and the rent doubled.
+        cause: interests
+        evidence: [{position: labor.aristocracy.globalization-losers, w: 3}]
+      - id: land
+        text: Start with the land the warehouse stands on. The Australian worker's share was built on taking it.
+        cause: structures
+        evidence: [{position: labor.aristocracy.settler-class, w: 3}]
+
+  - id: probe.labor.aristocracy.who-gains
+    type: line
+    title: Who gains from empire
+    text: Going down this list, where do you stop saying the person gains from the way the world economy runs?
+    cases:
+      - A shareholder in a mining company with mines in Peru
+      - A union official at a weapons plant with export contracts
+      - A skilled machinist at a car plant in Stuttgart
+      - A part-time cleaner at the same plant
+      - A white farm foreman in 1950s Rhodesia
+      - A Filipina care worker in Toronto
+    why: This asks whether workers in rich countries benefit from imperialism, and which ones.
+    options:
+      - id: shareholder
+        text: Only the shareholder. Every worker on the list is exploited and gains nothing from anyone abroad.
+        evidence: [{position: labor.aristocracy.no-labor-aristocracy, w: 3}]
+      - id: official
+        text: The shareholder and the union official. The rank and file are just exploited.
+        evidence: [{position: labor.aristocracy.bribed-stratum, w: 3}]
+      - id: cleaner
+        text: Down to the cleaner. Everyone in the rich country gains something, and all but the shareholder are still exploited.
+        evidence: [{position: labor.aristocracy.shares-but-exploited, w: 3}]
+      - id: all-core
+        text: Down to the cleaner, plainly. The whole working class of the rich countries is paid out of the drain.
+        evidence: [{position: labor.aristocracy.whole-core-bought, w: 3}]
+      - id: foreman
+        text: The foreman is the clearest case. In a settler country, race made a whole layer of workers into partners.
+        evidence: [{position: labor.aristocracy.settler-class, w: 3}]
+      - id: nobody
+        text: Nobody gains from anybody. Each earns what their skill and tools make their work worth.
+        evidence: [{position: labor.aristocracy.earned-by-productivity, w: 3}]
+      - id: losing
+        text: The machinist and the cleaner are the ones losing. Their jobs are moving east.
+        evidence: [{position: labor.aristocracy.globalization-losers, w: 3}]
+
+  - id: probe.labor.aristocracy.rand-1922
+    type: explanation
+    title: The Rand, 1922
+    text: >
+      Johannesburg, 1922. The mine owners plan to give some skilled jobs to Black miners at lower pay. White
+      miners strike and take up arms. One of their banners reads "Workers of the world, unite and fight for a
+      white South Africa." The army crushes the revolt. Why did white workers fight for the color bar?
+    why: This asks how you explain workers who defend a privileged place, and what kind of cause you reach for.
+    options:
+      - id: settler
+        text: In a settler country, white workers were a privileged layer on conquered land, defending their place.
+        cause: structures
+        evidence: [{position: labor.aristocracy.settler-class, w: 3}]
+      - id: upper
+        text: They were the upper layer, the skilled men. The owners had bought them with higher pay, and now wanted it back.
+        cause: interests
+        evidence: [{position: labor.aristocracy.bribed-stratum, w: 3}]
+      - id: empire
+        text: They were the empire's workforce in miniature. Their pay, like British workers' pay, came out of Black labor.
+        cause: structures
+        evidence: [{position: labor.aristocracy.whole-core-bought, w: 3}, {position: labor.aristocracy.settler-class, w: 1}]
+      - id: divide
+        text: The owners used race to divide miners and cut wages. The real line was owners against all miners.
+        cause: interests
+        evidence: [{position: labor.aristocracy.no-labor-aristocracy, w: 3}]
+      - id: both
+        text: Both. They were exploited by the mine owners and lived off the color bar at the same time.
+        cause: structures
+        evidence: [{position: labor.aristocracy.shares-but-exploited, w: 3}]
+      - id: skill
+        text: Skilled men expected skilled pay and feared being undercut. The fear was ugly, the logic ordinary.
+        cause: nature
+        evidence: [{position: labor.aristocracy.earned-by-productivity, w: 3}]
+      - id: losers
+        text: They were what workers about to lose jobs to cheaper labor always are. Ask a Detroit autoworker in 1985.
+        cause: interests
+        evidence: [{position: labor.aristocracy.globalization-losers, w: 3}]
+
+  # ---------------- comprador.nature ----------------
+  - id: probe.comprador.nature.petrol
+    type: explanation
+    title: Crude out, petrol in
+    text: >
+      For decades Nigeria exported crude oil and imported most of its petrol, because its own refineries
+      barely worked. Billions went on fuel subsidies. Import licenses made fortunes. Who runs this
+      arrangement, and for whom?
+    why: This asks who you think rules in poor countries, and in whose interest.
+    options:
+      - id: brokers
+        text: Importers, traders and officials who live off the import license. A working refinery would end their business.
+        cause: interests
+        evidence: [{position: comprador.nature.broker-class, w: 3}]
+      - id: thieves
+        text: Thieves. Officials pocket the subsidy money and buy flats in London.
+        cause: individuals
+        evidence: [{position: comprador.nature.kleptocratic-elites, w: 3}]
+      - id: state
+        text: Whoever controls the state oil company is the ruling class. Public office is the property.
+        cause: structures
+        evidence: [{position: comprador.nature.bureaucratic-bourgeoisie, w: 3}]
+      - id: one-class
+        text: The Lagos billionaire and the oil major's executive are the same class now. Same banks, same schools.
+        cause: structures
+        evidence: [{position: comprador.nature.transnational-fraction, w: 3}]
+      - id: ally
+        text: There are Nigerian industrialists trying to refine at home against the importers and the foreign majors. Back them.
+        cause: interests
+        evidence: [{position: comprador.nature.national-bourgeoisie-ally, w: 3}]
+      - id: capitalism
+        text: Nigerian capitalists are building refineries, cement works and banks. Capitalism is coming home, slowly.
+        cause: interests
+        evidence: [{position: comprador.nature.independent-capitalists, w: 3}]
+      - id: sellouts
+        text: A class schooled abroad that sneers at its own people and does whatever foreign advisers say.
+        cause: culture
+        evidence: [{position: comprador.nature.sellout-elites, w: 3}]
+
+  - id: probe.comprador.nature.nairobi-voices
+    type: voices
+    title: Organizer and owner
+    text: Two people on a Nairobi panel about who really runs Kenya. Who has it right?
+    voices:
+      - {name: "Wanjiru, a union organizer", says: "Our rulers are middlemen. They sell the tea, the ports, the debt, and take a cut every time."}
+      - {name: "David, who owns a furniture factory", says: "Don't lump me in with them. Cheap imports and foreign loans are killing my business too."}
+    why: This asks how you see the ruling class of a poor country, and whether any part of it stands with the nation.
+    options:
+      - id: wanjiru
+        text: Wanjiru. The rulers broker the country to foreign capital and live on the commission.
+        cause: interests
+        evidence: [{position: comprador.nature.broker-class, w: 3}]
+      - id: david-ally
+        text: David. Owners like him are squeezed by foreign capital too, and can be allies against it.
+        cause: interests
+        evidence: [{position: comprador.nature.national-bourgeoisie-ally, w: 3}]
+      - id: david-capitalist
+        text: David is just a capitalist building capitalism at home. That's what development looks like.
+        cause: interests
+        evidence: [{position: comprador.nature.independent-capitalists, w: 3}]
+      - id: state
+        text: Both miss that the big fortunes are made through the state. Office, permits and public firms.
+        cause: structures
+        evidence: [{position: comprador.nature.bureaucratic-bourgeoisie, w: 3}]
+      - id: steal
+        text: Both are overthinking it. The people at the top steal.
+        cause: individuals
+        evidence: [{position: comprador.nature.kleptocratic-elites, w: 3}]
+      - id: dubai
+        text: Both miss that David's investors are in Dubai and London. Foreign and national capital are one thing now.
+        cause: structures
+        evidence: [{position: comprador.nature.transnational-fraction, w: 3}]
+      - id: values
+        text: Both miss the real elite. Foreign-educated, foreign-funded, contemptuous of ordinary Kenyans' faith and ways.
+        cause: culture
+        evidence: [{position: comprador.nature.sellout-elites, w: 3}]
+
+  - id: probe.comprador.nature.nickel-ban
+    type: scene
+    title: The nickel ban
+    text: >
+      Jakarta. You advise a government about to ban exports of raw nickel ore, so smelters have to be built
+      at home. Before the announcement, the minister asks you one thing. Who will fight this, and who will
+      back it?
+    why: This asks who you think holds power in a resource-exporting country, and whose side they are on.
+    options:
+      - id: exporters
+        text: The ore exporters and their foreign buyers will fight. They are the real ruling class here.
+        evidence: [{position: comprador.nature.broker-class, w: 3}]
+      - id: industrialists
+        text: Domestic industrialists will back you. Make them your ally.
+        evidence: [{position: comprador.nature.national-bourgeoisie-ally, w: 3}]
+      - id: transnational
+        text: The smelters will be foreign-financed with Jakarta partners. One class either way. Nobody is on the nation's side.
+        evidence: [{position: comprador.nature.transnational-fraction, w: 3}]
+      - id: permits
+        text: The officials who issue the permits will decide. Whoever holds the state holds the business.
+        evidence: [{position: comprador.nature.bureaucratic-bourgeoisie, w: 3}]
+      - id: bribes
+        text: Expect bribes. Whoever pays most gets the smelter licenses.
+        evidence: [{position: comprador.nature.kleptocratic-elites, w: 3}]
+      - id: build
+        text: Indonesian firms will build smelters because it pays. That's capitalism doing its job.
+        evidence: [{position: comprador.nature.independent-capitalists, w: 3}]
+      - id: technocrats
+        text: Western-funded think tanks and Jakarta's foreign-trained technocrats will howl. They never liked national industry.
+        evidence: [{position: comprador.nature.sellout-elites, w: 3}]

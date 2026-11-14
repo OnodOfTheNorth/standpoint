@@ -1,0 +1,332 @@
+nodes:
+  # ---------------- intl.sovereignty ----------------
+  - id: probe.intl.sovereignty.guatemala-1954
+    type: verdict
+    title: Guatemala, 1954
+    text: >
+      Guatemala, 1954. An elected government has handed unused land on the big estates, much of it owned by
+      the United Fruit Company, to peasant families. A small exile army, armed and organized by the CIA,
+      crosses from Honduras. The president resigns. Where would you have stood?
+    why: This asks when you think a nation's right to set its own course holds, at a real case.
+    options:
+      - id: own-course
+        text: Guatemala had every right to its land reform. No outside power may overturn it, for any reason.
+        evidence: [{position: intl.sovereignty.nations-set-own-course, w: 3}]
+      - id: conditional
+        text: The government was elected and massacring nobody, so its sovereignty held in full. Had it been, that would change things.
+        evidence: [{position: intl.sovereignty.conditional-on-rights, w: 3}]
+      - id: pooled
+        text: This is why small countries need a regional bloc strong enough to make a coup expensive.
+        evidence: [{position: intl.sovereignty.pooled, w: 3}]
+      - id: hypocrisy
+        text: Sovereignty belongs to those who can defend it. Guatemala couldn't. That's how it has always worked.
+        evidence: [{position: intl.sovereignty.organized-hypocrisy, w: 3}]
+      - id: oppressed
+        text: A small nation defending itself against the power next door is exactly where sovereignty is sacred. The big power's claims count for nothing.
+        evidence: [{position: intl.sovereignty.oppressed-nations-first, w: 3}]
+      - id: class
+        text: The flag is beside the point. It was peasants against a fruit company and its officers. Peasants everywhere should have backed them.
+        evidence: [{position: intl.sovereignty.class-over-nation, w: 3}]
+      - id: god
+        text: Neither Washington nor Guatemala City is sovereign. Only God is, and both governments answer to His law.
+        evidence: [{position: intl.sovereignty.god-alone, w: 3}]
+
+  - id: probe.intl.sovereignty.how-much-pressure
+    type: line
+    title: How much pressure
+    text: Going down this list of things other countries might do to yours, where does it stop being acceptable?
+    cases:
+      - A neighbor publicly criticizes your election
+      - A regional bloc suspends your membership after a coup
+      - Foreign governments fund your opposition parties
+      - A great power freezes your central bank's reserves
+      - An international court indicts your head of state
+      - Foreign troops land to stop a massacre
+    why: This asks how far you think a nation's right to be left alone goes, by where you draw the line.
+    options:
+      - id: one
+        text: Only the first. Criticism is talk. Everything after it is interference.
+        evidence: [{position: intl.sovereignty.nations-set-own-course, w: 3}]
+      - id: two
+        text: Through two. If you joined the bloc, its rules bind you. That's the point of joining.
+        evidence: [{position: intl.sovereignty.pooled, w: 3}]
+      - id: depends
+        text: Any of them can be right, depending on what your government is doing to its own people.
+        evidence: [{position: intl.sovereignty.conditional-on-rights, w: 3}]
+      - id: decoration
+        text: The list is decoration. Whoever is strong does all six and calls it law.
+        evidence: [{position: intl.sovereignty.organized-hypocrisy, w: 3}]
+      - id: who
+        text: Ask who is doing it to whom. Old empires doing any of this to former colonies is out of bounds. The reverse isn't.
+        evidence: [{position: intl.sovereignty.oppressed-nations-first, w: 3}]
+      - id: workers
+        text: None of this is about workers. Let governments fight over sovereignty. Look for allies across the border.
+        evidence: [{position: intl.sovereignty.class-over-nation, w: 3}]
+      - id: god
+        text: Rulers are under judgment, but the judge is God's law, not a foreign court or a foreign army.
+        evidence: [{position: intl.sovereignty.god-alone, w: 3}]
+
+  - id: probe.intl.sovereignty.warrant
+    type: voices
+    title: The warrant
+    text: >
+      An international court has issued an arrest warrant for a foreign head of state who is invited to a
+      summit in Johannesburg. Two lawyers argue about it on the radio. Who is right?
+    voices:
+      - {name: "Amina, a lawyer in Nairobi", says: "No one is above the law. If the court issues a warrant, a member state must arrest him, whoever he is."}
+      - {name: "Bheki, a government lawyer in Pretoria", says: "For twenty years that court indicted almost nobody but Africans. A sovereign state decides who visits it."}
+    why: This asks how far you think sovereignty goes when it collides with international law.
+    options:
+      - id: amina
+        text: Amina. A government's claim to be left alone ends where atrocity begins.
+        evidence: [{position: intl.sovereignty.conditional-on-rights, w: 3}]
+      - id: bheki
+        text: Bheki. Each nation sets its own course. Nobody outside gets a veto.
+        evidence: [{position: intl.sovereignty.nations-set-own-course, w: 3}]
+      - id: union
+        text: Both miss the African Union. Decide it together as a region and you can't be bullied or ignored.
+        evidence: [{position: intl.sovereignty.pooled, w: 3}]
+      - id: power
+        text: Both miss that law follows power. The court indicts whoever the strong allow it to.
+        evidence: [{position: intl.sovereignty.organized-hypocrisy, w: 3}]
+      - id: colony
+        text: Bheki, and for a deeper reason. A former colony is never obliged to take orders from its old masters' courts.
+        evidence: [{position: intl.sovereignty.oppressed-nations-first, w: 3}]
+      - id: class
+        text: Both are arguing over which ruler gets arrested. Workers have no stake in either government's sovereignty.
+        evidence: [{position: intl.sovereignty.class-over-nation, w: 3}]
+      - id: god
+        text: Both miss the only judge above rulers. Sovereignty belongs to God.
+        evidence: [{position: intl.sovereignty.god-alone, w: 3}]
+
+  # ---------------- war.militarism ----------------
+  - id: probe.war.militarism.arming
+    type: explanation
+    title: The spending curve
+    text: >
+      World military spending has risen almost every year for a decade, past 2.7 trillion dollars in 2024,
+      more than at any time since records began. Every government says it is arming for defense. Why are
+      they all arming at once?
+    why: This asks why you think wars happen and what military power is for, and what kind of cause you reach for.
+    options:
+      - id: anarchy
+        text: Nobody rules over states. Each one's defense looks like a threat to the next, so all of them arm.
+        cause: structures
+        evidence: [{position: war.militarism.anarchy-security, w: 3}]
+      - id: rivalry
+        text: Capitals are competing for markets, minerals and routes, and their states are arming to back them.
+        cause: interests
+        evidence: [{position: war.militarism.imperialist-rivalry, w: 3}]
+      - id: profits
+        text: Arms makers profit from every budget, and they lobby for the next one.
+        cause: interests
+        evidence: [{position: war.militarism.arms-profits, w: 3}]
+      - id: deter
+        text: Aggressors moved first. Rearming is how the rest keep them from trying again.
+        cause: individuals
+        evidence: [{position: war.militarism.peace-through-strength, w: 3}]
+      - id: autocracies
+        text: Governments that answer to no voter are on the march. Liberal democracies are catching up.
+        cause: ideas
+        evidence: [{position: war.militarism.democratic-peace, w: 3}]
+      - id: sin
+        text: Fear, pride and greed. Human beings are fallen, and the sword comes back in every age.
+        cause: divine
+        evidence: [{position: war.militarism.fallen-nature-just-war, w: 3}]
+      - id: violence
+        text: Weapons beget weapons. Every rifle bought makes the next war more likely.
+        cause: ideas
+        evidence: [{position: war.militarism.pacifist, w: 3}]
+      - id: vitality
+        text: Nations are waking up from a long sleep of comfort. A people that won't arm has stopped believing in itself.
+        cause: culture
+        evidence: [{position: war.militarism.war-ennobles, w: 3}]
+
+  - id: probe.war.militarism.tokyo-2022
+    type: verdict
+    title: Tokyo, 2022
+    text: >
+      Tokyo, December 2022. The government plans to double defense spending by 2027, ending decades at
+      about one percent of national income. Article 9 of the constitution renounces war. You sit in the
+      Diet. How do you vote, and why?
+    why: This asks what you think military power is for, at a real decision.
+    options:
+      - id: strength
+        text: Yes. China and North Korea respect strength, and nothing else.
+        evidence: [{position: war.militarism.peace-through-strength, w: 3}]
+      - id: security
+        text: Yes, with regret. Nobody else will guarantee Japan, and every neighbor is reasoning the same way.
+        evidence: [{position: war.militarism.anarchy-security, w: 3}]
+      - id: democracies
+        text: Yes, alongside the other liberal democracies. The danger comes from governments that answer to nobody.
+        evidence: [{position: war.militarism.democratic-peace, w: 3}]
+      - id: contracts
+        text: No. Watch which firms get the contracts.
+        evidence: [{position: war.militarism.arms-profits, w: 3}]
+      - id: drafted
+        text: No. This is Japan being drafted into America's contest with China over markets and sea lanes.
+        evidence: [{position: war.militarism.imperialist-rivalry, w: 3}]
+      - id: article9
+        text: No. Article 9 kept Japan out of war for seventy-seven years. Keep it.
+        evidence: [{position: war.militarism.pacifist, w: 3}]
+      - id: limits
+        text: Yes, for defense only and under strict limits. Sin makes the sword necessary, never glorious.
+        evidence: [{position: war.militarism.fallen-nature-just-war, w: 3}]
+      - id: spine
+        text: Yes, and more. A nation that will not fight has lost its spine.
+        evidence: [{position: war.militarism.war-ennobles, w: 3}]
+
+  - id: probe.war.militarism.which-wars
+    type: line
+    title: Which wars
+    text: Going down this list, where do you stop being willing to back your own country?
+    cases:
+      - Defending its own border when invaded
+      - Arming a neighbor fighting off an invasion
+      - Striking first when an attack looks imminent
+      - Helping overthrow a government that threatens an ally
+      - Securing an oil field abroad
+      - A war to restore national greatness and lost lands
+    why: This asks what you think military power is for, by where you draw the line.
+    options:
+      - id: none
+        text: None. Not even the first.
+        evidence: [{position: war.militarism.pacifist, w: 3}]
+      - id: just
+        text: The first two, maybe three, under strict rules of conduct.
+        evidence: [{position: war.militarism.fallen-nature-just-war, w: 3}]
+      - id: three
+        text: Through three. The readiness to strike first is what stops anyone attacking.
+        evidence: [{position: war.militarism.peace-through-strength, w: 3}]
+      - id: any
+        text: Any of them, if security demands it. That's how states have always worked.
+        evidence: [{position: war.militarism.anarchy-security, w: 3}]
+      - id: who
+        text: It depends who is fighting. Liberal democracies can be trusted with three and four. Others can't.
+        evidence: [{position: war.militarism.democratic-peace, w: 3}]
+      - id: upside
+        text: The list is upside down. Five is the real reason behind most of the others.
+        evidence: [{position: war.militarism.imperialist-rivalry, w: 3}]
+      - id: contractors
+        text: Every rung pays the same contractors. That's why the ladder keeps getting climbed.
+        evidence: [{position: war.militarism.arms-profits, w: 3}]
+      - id: all
+        text: All of them, six included. A nation proves itself on the field.
+        evidence: [{position: war.militarism.war-ennobles, w: 3}]
+
+  # ---------------- intervention.humanitarian ----------------
+  - id: probe.intervention.humanitarian.rwanda
+    type: verdict
+    title: Kigali, 1994
+    text: >
+      Rwanda, April 1994. Killings of Tutsi and of Hutu who refuse to join spread across the country. In two
+      weeks the UN Security Council cuts its peacekeeping force from about 2,500 to 270. By July, some
+      800,000 people are dead. You are on the Council. What should have happened?
+    why: This asks when, if ever, you think outside powers should intervene to stop atrocities.
+    options:
+      - id: protect
+        text: Send troops, with or without permission. Sovereignty doesn't cover genocide.
+        evidence: [{position: intervention.humanitarian.responsibility-to-protect, w: 3}]
+      - id: rebuild
+        text: Send troops, stop it, and stay to build a government that won't let it happen again.
+        evidence: [{position: intervention.humanitarian.spread-liberty, w: 3}]
+      - id: council
+        text: The Council should have authorized force. Without that, no one should go.
+        evidence: [{position: intervention.humanitarian.only-with-the-un, w: 3}]
+      - id: interest
+        text: Terrible, but no vital interest of ours was at stake. It wasn't our soldiers' fight.
+        evidence: [{position: intervention.humanitarian.national-interest-only, w: 3}]
+      - id: pretext
+        text: Notice that the powers who found no troops for Rwanda always find them for places with oil. Mercy is never the reason.
+        evidence: [{position: intervention.humanitarian.imperial-pretext, w: 3}]
+      - id: never
+        text: Even here, no outside army. Once you allow it, every great power will find its own genocide to stop.
+        evidence: [{position: intervention.humanitarian.sovereignty-first, w: 3}]
+      - id: region
+        text: African states should have acted, not France and Belgium, whose record in Rwanda was part of the problem.
+        evidence: [{position: intervention.humanitarian.neighbors-not-empires, w: 3}]
+      - id: unarmed
+        text: Jam the hate radio, embargo the weapons, open the borders, and put unarmed observers in every town.
+        evidence: [{position: intervention.humanitarian.never-by-war, w: 3}]
+      - id: arm
+        text: Back the people being killed. In the end a Rwandan rebel army stopped it, not anyone's air force.
+        evidence: [{position: intervention.humanitarian.solidarity-from-below, w: 3}]
+
+  - id: probe.intervention.humanitarian.libya
+    type: voices
+    title: Benghazi, 2011
+    text: Two people look back on the 2011 intervention in Libya. Who has it right?
+    voices:
+      - {name: "Fatima, from Benghazi", says: "Gaddafi's tanks were at the edge of the city and he promised no mercy. The planes saved us. I don't care whose they were."}
+      - {name: "Kwame, a former African Union envoy", says: "The African Union had a peace plan. NATO turned a no-fly zone into overthrowing the government, and Libya has been in pieces ever since."}
+    why: This asks when you think outside powers should intervene to stop atrocities, through a case that still divides people.
+    options:
+      - id: fatima
+        text: Fatima. When a city is about to be massacred, sovereignty doesn't stop the rescue.
+        evidence: [{position: intervention.humanitarian.responsibility-to-protect, w: 3}]
+      - id: finish
+        text: Fatima, and removing him was right too. The mistake was leaving without helping build what came next.
+        evidence: [{position: intervention.humanitarian.spread-liberty, w: 3}]
+      - id: kwame
+        text: Kwame. The region should have handled it, not the old colonial powers.
+        evidence: [{position: intervention.humanitarian.neighbors-not-empires, w: 3}]
+      - id: oil
+        text: Kwame, and he's being polite. It was about oil and power from the start.
+        evidence: [{position: intervention.humanitarian.imperial-pretext, w: 3}]
+      - id: mandate
+        text: Both miss the law. The UN authorized protecting civilians, and NATO went beyond the mandate.
+        evidence: [{position: intervention.humanitarian.only-with-the-un, w: 3}]
+      - id: ours
+        text: Both miss the bill. Our countries got nothing but refugees and a mess. No vital interest, no war.
+        evidence: [{position: intervention.humanitarian.national-interest-only, w: 3}]
+      - id: nobody
+        text: Both miss the principle. No outside state should have gone in at all.
+        evidence: [{position: intervention.humanitarian.sovereignty-first, w: 3}]
+      - id: bombs
+        text: Both miss that bombs and the guns flooding in made it worse. Embargo, mediation and open borders save more lives.
+        evidence: [{position: intervention.humanitarian.never-by-war, w: 3}]
+      - id: libyans
+        text: Both miss the Libyans who rose up. They needed help from people abroad, not from NATO's command.
+        evidence: [{position: intervention.humanitarian.solidarity-from-below, w: 3}]
+
+  - id: probe.intervention.humanitarian.how-far
+    type: line
+    title: How far to go
+    text: A government abroad is massacring a minority. Going down this list, where should the rest of the world stop?
+    cases:
+      - Speeches at the UN
+      - Taking in the refugees
+      - An arms embargo on the killers
+      - Sending weapons to the people defending themselves
+      - A no-fly zone approved by the UN
+      - Ground troops without UN approval
+      - Occupying the country to build a new government
+    why: This asks how far you think outside powers should go to stop atrocities, by where you draw the line.
+    options:
+      - id: three
+        text: Through three. Nothing that kills.
+        evidence: [{position: intervention.humanitarian.never-by-war, w: 3}]
+      - id: four
+        text: Through four. Arm them and let them win their own fight.
+        evidence: [{position: intervention.humanitarian.solidarity-from-below, w: 3}]
+      - id: five
+        text: Through five. The UN Charter is the line.
+        evidence: [{position: intervention.humanitarian.only-with-the-un, w: 3}]
+      - id: six
+        text: Through six, if that's what it takes to stop the killing.
+        evidence: [{position: intervention.humanitarian.responsibility-to-protect, w: 3}]
+      - id: seven
+        text: All seven. Stopping a massacre without changing the government just schedules the next one.
+        evidence: [{position: intervention.humanitarian.spread-liberty, w: 3}]
+      - id: two
+        text: Only the first two. Everything after that is meddling in another state's affairs.
+        evidence: [{position: intervention.humanitarian.sovereignty-first, w: 3}]
+      - id: interest
+        text: Take refugees if you like. No soldiers unless our own security is at stake.
+        evidence: [{position: intervention.humanitarian.national-interest-only, w: 3}]
+      - id: pretext
+        text: The list doesn't matter. The great powers will pick whichever step serves them and call it mercy.
+        evidence: [{position: intervention.humanitarian.imperial-pretext, w: 3}]
+      - id: region
+        text: Up to six, done by neighboring states and regional bodies, never by former colonial powers.
+        evidence: [{position: intervention.humanitarian.neighbors-not-empires, w: 3}]

@@ -1,0 +1,536 @@
+nodes:
+  # ---------------- migration.cause ----------------
+  - id: probe.migration.cause.pirogues
+    type: explanation
+    title: The pirogues
+    text: >
+      Mbour, Senegal. Long wooden fishing boats that once went out for sardinella now leave at night for the
+      Canary Islands, a week or more across open sea. Foreign trawlers fish the same waters under licenses
+      the government sold. Some of the passengers are from Mali, further inland. Why are they going?
+    why: This asks why you think people migrate, and what kind of cause you reach for.
+    options:
+      - id: drain
+        text: The trawlers took the fish under deals signed far away. The wealth went north first, and the people followed it.
+        cause: structures
+        evidence: [{position: migration.cause.drain, w: 3}]
+      - id: choice
+        text: A fisherman earns a fraction of what he'd earn in Spain. He's making a rational bet.
+        cause: individuals
+        evidence: [{position: migration.cause.individual-choice, w: 3}]
+      - id: demand
+        text: Spanish farms and kitchens need hands, and everyone on that beach knows it.
+        cause: interests
+        evidence: [{position: migration.cause.employer-demand, w: 3}]
+      - id: climate
+        text: The sea is warming and the fish are moving. The ocean itself is pushing them out.
+        cause: nature
+        evidence: [{position: migration.cause.climate, w: 3}]
+      - id: war
+        text: Look at the Malians. Many in those boats are fleeing the fighting in the Sahel, not the fishing.
+        cause: chance
+        evidence: [{position: migration.cause.war-persecution, w: 3}]
+      - id: plan
+        text: Brussels and big business want cheaper, more pliable people. The boats are the policy.
+        cause: individuals
+        evidence: [{position: migration.cause.elite-replacement, w: 3}]
+      - id: welfare
+        text: Europe gives newcomers housing and benefits that a fisherman could never earn at home.
+        cause: interests
+        evidence: [{position: migration.cause.welfare-magnet, w: 3}]
+
+  - id: probe.migration.cause.leipzig
+    type: voices
+    title: Pensioner and pharmacist
+    text: Leipzig, ten years after 2015. A pensioner and a refugee are seated together at a town hall meeting. Who has it right about why people came?
+    voices:
+      - {name: "Herr Becker, a retired machinist", says: "They come because Germany pays. Flat, benefits, doctor. Where else would you go?"}
+      - {name: "Rasha, a pharmacist from Aleppo", says: "I came because a barrel bomb hit my street. I would give anything to have my pharmacy in Aleppo back."}
+    why: This asks why you think people migrate, through two people who see the same arrivals differently.
+    options:
+      - id: becker
+        text: Herr Becker. Generous benefits pull people in.
+        cause: interests
+        evidence: [{position: migration.cause.welfare-magnet, w: 3}]
+      - id: rasha
+        text: Rasha. People run from war and persecution.
+        cause: chance
+        evidence: [{position: migration.cause.war-persecution, w: 3}]
+      - id: industry
+        text: Both miss German industry. Employers wanted workers and said so publicly.
+        cause: interests
+        evidence: [{position: migration.cause.employer-demand, w: 3}]
+      - id: wages
+        text: Both miss the simple part. People move to where they can earn more and live better.
+        cause: individuals
+        evidence: [{position: migration.cause.individual-choice, w: 3}]
+      - id: replace
+        text: Both miss the plan. Leaders want to replace Germans with people who will work cheaper and complain less.
+        cause: individuals
+        evidence: [{position: migration.cause.elite-replacement, w: 3}]
+      - id: drought
+        text: Both miss the years of drought in Syria that drove farmers into the cities before the war.
+        cause: nature
+        evidence: [{position: migration.cause.climate, w: 3}]
+      - id: drain
+        text: Both miss the wars, debts and trade that bleed the whole region. The people follow the wealth.
+        cause: structures
+        evidence: [{position: migration.cause.drain, w: 3}]
+
+  - id: probe.migration.cause.weights
+    type: allocation
+    title: What moves people
+    text: >
+      About 280 million people live outside the country they were born in. Spread ten points across the
+      causes, according to how much each one explains.
+    why: This asks why you think people migrate, by how you weigh the causes.
+    allocate:
+      budget: 10
+      unit: points
+      items:
+        - id: choice
+          text: Individuals choosing better wages and chances
+          evidence: [{position: migration.cause.individual-choice, w: 2}]
+        - id: drain
+          text: Wealth drained from poor countries to rich ones
+          evidence: [{position: migration.cause.drain, w: 2}]
+        - id: demand
+          text: Employers in rich countries recruiting cheap labor
+          evidence: [{position: migration.cause.employer-demand, w: 2}]
+        - id: war
+          text: War, persecution and collapsing governments
+          evidence: [{position: migration.cause.war-persecution, w: 2}]
+        - id: climate
+          text: Drought, floods and failing land
+          evidence: [{position: migration.cause.climate, w: 2}]
+        - id: plan
+          text: A deliberate plan by elites to replace native populations
+          evidence: [{position: migration.cause.elite-replacement, w: 2}]
+        - id: welfare
+          text: Welfare and benefits in rich countries
+          evidence: [{position: migration.cause.welfare-magnet, w: 2}]
+    options:
+      - {id: done, text: Done}
+
+  # ---------------- palestine.question ----------------
+  - id: probe.palestine.question.oslo
+    type: verdict
+    title: Washington, 1993
+    text: >
+      September 1993. Rabin and Arafat shake hands on the White House lawn. Under the Oslo Accords, Israel
+      and the PLO recognize each other and a Palestinian Authority is set up. Borders, Jerusalem, settlements
+      and refugees are left for later talks. Where would you have stood?
+    why: This asks what you think is just in Palestine and Israel, at a moment when a settlement seemed close.
+    options:
+      - id: rabin
+        text: With Rabin. Trade land for peace and keep Israel Jewish and democratic.
+        evidence: [{position: palestine.question.labor-zionist, w: 3}]
+      - id: strength
+        text: Against. Judea and Samaria belong to the Jewish people. You don't hand them to the PLO.
+        evidence: [{position: palestine.question.revisionist, w: 3}]
+      - id: commandment
+        text: Against. No government may give away land God promised. Settling it is a commandment.
+        evidence: [{position: palestine.question.religious-zionist, w: 3}]
+      - id: prophecy
+        text: Against. God gave the land to Israel, and a Christian stands with that promise.
+        evidence: [{position: palestine.question.christian-zionist, w: 3}]
+      - id: two-states
+        text: For, as the first step to two states on the 1967 lines.
+        evidence: [{position: palestine.question.liberal-two-states, w: 3}]
+      - id: arafat
+        text: For, with Arafat. A state in the West Bank and Gaza with Jerusalem as its capital, and the right of return kept.
+        evidence: [{position: palestine.question.plo-state, w: 3}]
+      - id: all
+        text: Against. It accepted the loss of 78 percent of Palestine and put the refugees off indefinitely.
+        evidence: [{position: palestine.question.liberation-of-all-palestine, w: 3}]
+      - id: resistance
+        text: Against. The land is not anyone's to sign away, and resistance goes on until it is free.
+        evidence: [{position: palestine.question.islamist-resistance, w: 3}]
+      - id: one-state
+        text: Against, in the end. Partition can't work. One state, with equal votes for everyone.
+        evidence: [{position: palestine.question.one-democratic-state, w: 3}]
+      - id: messiah
+        text: Beside the point. A Jewish state before the Messiah should not exist, with or without Oslo.
+        evidence: [{position: palestine.question.haredi-anti-zionist, w: 3}]
+      - id: diaspora
+        text: Beside the point. Jewish safety comes from equality where Jews live, not from any state.
+        evidence: [{position: palestine.question.diasporist-jewish, w: 3}]
+
+  - id: probe.palestine.question.two-grandchildren
+    type: voices
+    title: Two grandchildren
+    text: Two grandchildren of people uprooted around 1948 speak on the same panel. Who is right about what justice requires?
+    voices:
+      - {name: "Noa, a teacher in Tel Aviv whose grandparents left Baghdad in 1951", says: "My grandparents were stripped of everything and had nowhere else to go. A Jewish state is the only guarantee we have."}
+      - {name: "Khalil, a pharmacist in Shatila camp in Lebanon whose grandparents fled Jaffa in 1948", says: "I still have the key to a house in Jaffa. I am not asking for a flag. I am asking to go home."}
+    why: This asks what you think is just in Palestine and Israel, through two people whose families were both uprooted.
+    options:
+      - id: noa-deal
+        text: Noa. A Jewish state, and a deal with the Palestinians that keeps it Jewish and democratic.
+        evidence: [{position: palestine.question.labor-zionist, w: 3}]
+      - id: noa-strength
+        text: Noa, and the whole land, held by strength. Concessions only invite the next war.
+        evidence: [{position: palestine.question.revisionist, w: 3}]
+      - id: noa-redemption
+        text: Noa, and more than she says. The return to the whole land is redemption unfolding.
+        evidence: [{position: palestine.question.religious-zionist, w: 3}]
+      - id: prophecy
+        text: Noa. Her state is prophecy fulfilled, and Christians should stand with it.
+        evidence: [{position: palestine.question.christian-zionist, w: 3}]
+      - id: khalil-all
+        text: Khalil. Return for every refugee, and all of Palestine free.
+        evidence: [{position: palestine.question.liberation-of-all-palestine, w: 3}]
+      - id: khalil-islamic
+        text: Khalil. It is Islamic land, and it is never surrendered.
+        evidence: [{position: palestine.question.islamist-resistance, w: 3}]
+      - id: two-states
+        text: Both. Two states side by side, with a negotiated answer for the refugees.
+        evidence: [{position: palestine.question.liberal-two-states, w: 3}]
+      - id: plo
+        text: Khalil's right of return, inside a deal for a Palestinian state beside Israel.
+        evidence: [{position: palestine.question.plo-state, w: 3}]
+      - id: one
+        text: Both miss that they could share one country, with equal votes.
+        evidence: [{position: palestine.question.one-democratic-state, w: 3}]
+      - id: equality
+        text: Both miss that Noa's grandparents' safety should have come from equality in Baghdad, and still should, everywhere.
+        evidence: [{position: palestine.question.diasporist-jewish, w: 3}]
+      - id: exile
+        text: Both miss the Torah. A Jewish state before the Messiah is forbidden, whatever it promises.
+        evidence: [{position: palestine.question.haredi-anti-zionist, w: 3}]
+
+  - id: probe.palestine.question.why-no-peace
+    type: explanation
+    title: Why no peace
+    text: There has been no settled peace between Israelis and Palestinians since 1948. Why, above all?
+    why: This asks what you think is just in Palestine and Israel, and what kind of cause you reach for.
+    options:
+      - id: refused
+        text: Palestinian leaders turned down every compromise offered, in 1947, in 2000, in 2008.
+        cause: individuals
+        evidence: [{position: palestine.question.labor-zionist, w: 3}]
+      - id: never-accepted
+        text: The Arab side never accepted a Jewish state on any border. Only strength keeps the peace.
+        cause: ideas
+        evidence: [{position: palestine.question.revisionist, w: 3}]
+      - id: redemption
+        text: The land is holy and redemption is not negotiable. Peace comes when Israel settles it whole.
+        cause: divine
+        evidence: [{position: palestine.question.religious-zionist, w: 3}]
+      - id: plan
+        text: The land is at the center of God's plan, and the nations resist it.
+        cause: divine
+        evidence: [{position: palestine.question.christian-zionist, w: 3}]
+      - id: hardliners
+        text: Hardliners on both sides, Rabin's assassin and the bombers alike, killed every compromise.
+        cause: individuals
+        evidence: [{position: palestine.question.liberal-two-states, w: 3}]
+      - id: settlements
+        text: The occupation and the settlements kept growing while the talks went nowhere.
+        cause: structures
+        evidence: [{position: palestine.question.plo-state, w: 3}]
+      - id: settler
+        text: A settler state cannot make peace with the people it displaced.
+        cause: structures
+        evidence: [{position: palestine.question.liberation-of-all-palestine, w: 3}]
+      - id: resistance
+        text: The land was taken, and what is taken by force is ended by resistance, not talks.
+        cause: divine
+        evidence: [{position: palestine.question.islamist-resistance, w: 3}]
+      - id: partition
+        text: Partition itself was the mistake. Two peoples on one land need one state.
+        cause: structures
+        evidence: [{position: palestine.question.one-democratic-state, w: 3}]
+      - id: oath
+        text: Founding the state broke the oath to wait for the Messiah. Endless war is the result.
+        cause: divine
+        evidence: [{position: palestine.question.haredi-anti-zionist, w: 3}]
+      - id: ethnic-state
+        text: An ethnic state has to rule over the people it excludes. Peace needs equality, not a Jewish state.
+        cause: structures
+        evidence: [{position: palestine.question.diasporist-jewish, w: 3}]
+
+  # ---------------- nation.question ----------------
+  - id: probe.nation.question.catalonia
+    type: verdict
+    title: Barcelona, 2017
+    text: >
+      Catalonia, October 2017. The regional government holds an independence referendum that Spain's courts
+      have banned. Police raid polling stations. About 43 percent turn out and 90 percent of them vote yes.
+      Madrid suspends the region's self-government. Where do you stand?
+    why: This asks what you think a nation is, and who has the right to decide its borders.
+    options:
+      - id: right
+        text: The right to leave must be defended, by Spaniards above all, whatever they think of independence.
+        evidence: [{position: nation.question.self-determination-leninist, w: 3}]
+      - id: neither
+        text: Neither flag. Barcelona's bosses and Madrid's both want the workers' loyalty.
+        evidence: [{position: nation.question.no-abstract-right, w: 3}]
+      - id: test
+        text: Catalans share a language, a territory, an economy and a culture. A nation in every sense. That settles it.
+        evidence: [{position: nation.question.stalin-definition, w: 3}]
+      - id: culture
+        text: Give Catalan schools, media and culture full self-rule. Borders aren't needed for that.
+        evidence: [{position: nation.question.cultural-autonomy, w: 3}]
+      - id: agreed
+        text: Peoples may choose their government, but by agreement and law. A negotiated vote, like Scotland's in 2014.
+        evidence: [{position: nation.question.wilsonian, w: 3}]
+      - id: citizens
+        text: Spain's citizens as a whole decide Spain's borders. Catalans are Spanish citizens.
+        evidence: [{position: nation.question.civic, w: 3}]
+      - id: people
+        text: A people with its own tongue and memory has a right to its own state.
+        evidence: [{position: nation.question.ethnic, w: 3}]
+      - id: invented
+        text: Both the Catalan and the Spanish nation were made by schools and newspapers. Neither has a natural right.
+        evidence: [{position: nation.question.constructed, w: 3}]
+      - id: towns
+        text: If they vote to leave, let them. And if a Catalan town votes to stay in Spain, let it.
+        evidence: [{position: nation.question.secession-by-consent, w: 3}]
+      - id: confederation
+        text: The nation-state is the problem. Self-government in a confederation of communities, with no new state.
+        evidence: [{position: nation.question.democratic-nation, w: 3}]
+
+  - id: probe.nation.question.who-gets-a-state
+    type: line
+    title: Who gets a state
+    text: Going down this list, which groups have a right to a state of their own?
+    cases:
+      - Kurds, some thirty million people across four states
+      - Tamils in the north and east of Sri Lanka
+      - Scots
+      - Somaliland, self-governing since 1991
+      - A rich region that wants to stop paying for poorer ones
+      - A mountain village that votes to join the neighboring country
+    why: This asks what you think a nation is and who has the right to self-determination, by where you draw the line.
+    options:
+      - id: peoples
+        text: Any people with its own descent, language and history. The first three, at least.
+        evidence: [{position: nation.question.ethnic, w: 3}]
+      - id: check
+        text: Those with a language, territory, economy and culture together. Check each case against all four.
+        evidence: [{position: nation.question.stalin-definition, w: 3}]
+      - id: oppressed
+        text: Every nation held inside another state has the right to leave. The rich region and the village are just rows about money.
+        evidence: [{position: nation.question.self-determination-leninist, w: 3}]
+      - id: all
+        text: All six, the village included. Whoever votes to go, goes.
+        evidence: [{position: nation.question.secession-by-consent, w: 3}]
+      - id: citizens
+        text: None on ancestry. Only by agreement of the whole country's citizens.
+        evidence: [{position: nation.question.civic, w: 3}]
+      - id: law
+        text: Those whose cases can be settled peacefully through negotiation and international law.
+        evidence: [{position: nation.question.wilsonian, w: 3}]
+      - id: depends
+        text: No fixed line. Back whatever outcome unites workers. It varies case by case.
+        evidence: [{position: nation.question.no-abstract-right, w: 3}]
+      - id: schools
+        text: None need a state. All of them need control of their own schools and culture.
+        evidence: [{position: nation.question.cultural-autonomy, w: 3}]
+      - id: invented
+        text: Being a "people" gives no right at all. These are all recently invented identities.
+        evidence: [{position: nation.question.constructed, w: 3}]
+      - id: kurds
+        text: None should get a state. Some Kurds already show the alternative, self-government without one.
+        evidence: [{position: nation.question.democratic-nation, w: 3}]
+
+  - id: probe.nation.question.kohima-delhi
+    type: voices
+    title: Kohima and Delhi
+    text: A Naga student and an Indian civil servant meet at a seminar. Who has it right?
+    voices:
+      - {name: "Neiko, a student in Kohima", says: "We were never part of India. Our leaders declared independence on 14 August 1947, a day before India did."}
+      - {name: "Sanjay, a civil servant in Delhi", says: "India is a union of citizens, not of tribes. If every group could leave, there would be no India."}
+    why: This asks what you think a nation is and who has the right to self-determination, through one long-running dispute.
+    options:
+      - id: defend
+        text: Neiko, and Indians above all should defend her right to leave.
+        evidence: [{position: nation.question.self-determination-leninist, w: 3}]
+      - id: people
+        text: Neiko. A people with its own descent and history has a right to its own state.
+        evidence: [{position: nation.question.ethnic, w: 3}]
+      - id: sanjay
+        text: Sanjay. The nation is its citizens, whatever their ancestry.
+        evidence: [{position: nation.question.civic, w: 3}]
+      - id: consent
+        text: Both miss the way to settle it, consent through negotiation and law.
+        evidence: [{position: nation.question.wilsonian, w: 3}]
+      - id: culture
+        text: Both miss the middle. Full cultural self-rule for Nagas, inside India.
+        evidence: [{position: nation.question.cultural-autonomy, w: 3}]
+      - id: test
+        text: Apply the test. A shared language, territory, economy and culture. Do the Naga peoples have one common language?
+        evidence: [{position: nation.question.stalin-definition, w: 3}]
+      - id: invented
+        text: Both miss that "Naga" and "Indian" are both recent inventions.
+        evidence: [{position: nation.question.constructed, w: 3}]
+      - id: districts
+        text: Let any district vote, and let it go its own way.
+        evidence: [{position: nation.question.secession-by-consent, w: 3}]
+      - id: workers
+        text: Both miss that a Naga worker and an Indian worker have the same boss problem.
+        evidence: [{position: nation.question.no-abstract-right, w: 3}]
+      - id: stateless
+        text: Both want a state. Peoples can govern themselves without one, Naga or Indian.
+        evidence: [{position: nation.question.democratic-nation, w: 3}]
+
+  # ---------------- nationalism.kinds ----------------
+  - id: probe.nationalism.kinds.which-same
+    type: line
+    title: Same thing or not
+    text: Going down this list, which of these are the same kind of thing?
+    cases:
+      - Algerians fighting French rule in 1954
+      - Indians burning British cloth in the 1920s
+      - A European government campaigning to keep the country for its own ethnic people
+      - Flags on every porch on a national holiday
+      - Britain voting to leave the European Union
+    why: This asks whether you think nationalism is one thing, or depends on who is oppressing whom.
+    options:
+      - id: split
+        text: The first two are something else entirely from the third. The oppressed and the oppressor.
+        evidence: [{position: nationalism.kinds.oppressed-oppressor, w: 3}]
+      - id: all-bosses
+        text: All the same. Each ties workers to their own ruling class. Look who ran Algeria afterwards.
+        evidence: [{position: nationalism.kinds.all-bourgeois, w: 3}]
+      - id: porch
+        text: The porch flags are fine. The ethnic campaign is where it turns.
+        evidence: [{position: nationalism.kinds.civic-good-ethnic-bad, w: 3}]
+      - id: passion
+        text: All the same passion, more or less dangerous. Trade and law should cross borders instead.
+        evidence: [{position: nationalism.kinds.cosmopolitan, w: 3}]
+      - id: healthy
+        text: All healthy. Nations wanting to govern themselves. The danger is empires and global bodies.
+        evidence: [{position: nationalism.kinds.virtue-of-nations, w: 3}]
+      - id: homelands
+        text: All fine if each people keeps its own homeland. Algerians were right for the same reason that European government is.
+        evidence: [{position: nationalism.kinds.ethnopluralism, w: 3}]
+      - id: front
+        text: The Algerian front was right to unite workers, merchants and landowners against France.
+        evidence: [{position: nationalism.kinds.national-popular-front, w: 3}]
+
+  - id: probe.nationalism.kinds.accra-hamburg
+    type: voices
+    title: Teacher and historian
+    text: A retired teacher in Accra and a historian in Hamburg exchange letters in a newspaper. Who is right?
+    voices:
+      - {name: "Abena, a retired teacher in Accra", says: "Nkrumah's nationalism freed us. Don't put it in the same box as Europe's."}
+      - {name: "Jürgen, a historian in Hamburg", says: "Every nationalism promises liberation and ends in exclusion. I know where it leads."}
+    why: This asks whether you think nationalism is one thing or many, through two people with different histories of it.
+    options:
+      - id: abena
+        text: Abena. The nationalism of the colonized and of the colonizer are opposites.
+        evidence: [{position: nationalism.kinds.oppressed-oppressor, w: 3}]
+      - id: front
+        text: Abena, and all classes were right to unite behind it against the empire.
+        evidence: [{position: nationalism.kinds.national-popular-front, w: 3}]
+      - id: jurgen
+        text: Jürgen. It's one passion, and it leads to walls.
+        evidence: [{position: nationalism.kinds.cosmopolitan, w: 3}]
+      - id: civic
+        text: Both miss the real line. Loyalty to shared institutions is healthy. Loyalty to blood is the danger.
+        evidence: [{position: nationalism.kinds.civic-good-ethnic-bad, w: 3}]
+      - id: nations
+        text: Both miss that a world of free nations is the best order. The enemy is empire, old or new.
+        evidence: [{position: nationalism.kinds.virtue-of-nations, w: 3}]
+      - id: homelands
+        text: Both miss the point. Ghana for Ghanaians, Germany for Germans, each people in its own homeland.
+        evidence: [{position: nationalism.kinds.ethnopluralism, w: 3}]
+      - id: bosses
+        text: Both miss who ran Ghana after. New bosses. Workers have no nation.
+        evidence: [{position: nationalism.kinds.all-bourgeois, w: 3}]
+
+  # ---------------- nation.belonging ----------------
+  - id: probe.nation.belonging.tokyo
+    type: line
+    title: Who is Japanese
+    text: Going down this list of people living in Japan, where do you stop saying they belong to the nation?
+    cases:
+      - A child born in Tokyo to Filipino parents
+      - A Brazilian of Japanese descent who speaks no Japanese
+      - A Korean family in Japan for four generations, without citizenship
+      - A naturalized former American who speaks fluent Japanese
+    why: This asks who you think belongs to the nation.
+    options:
+      - id: passport
+        text: Whoever holds the passport, by birth or naturalization, fully and equally.
+        evidence: [{position: nation.belonging.citizenship, w: 3}]
+      - id: blood
+        text: The Brazilian, plainly. Descent makes you Japanese, wherever you were born.
+        evidence: [{position: nation.belonging.descent, w: 3}]
+      - id: lives-it
+        text: The American who speaks it and lives it. Language and custom make you Japanese.
+        evidence: [{position: nation.belonging.assimilation, w: 3}]
+      - id: all
+        text: All of them, the Korean family keeping its names and schools included.
+        evidence: [{position: nation.belonging.multicultural, w: 3}]
+      - id: work
+        text: Wrong question. They all work for the same companies. That's what they share.
+        evidence: [{position: nation.belonging.class-not-nation, w: 3}]
+      - id: ummah
+        text: For a Muslim among them, this question comes second. The first belonging is to the community of believers.
+        evidence: [{position: nation.belonging.ummah, w: 3}]
+      - id: sacred
+        text: Those for whom this land is both ancestral and sacred, its shrines and its line of emperors.
+        evidence: [{position: nation.belonging.civilizational, w: 3}]
+
+  - id: probe.nation.belonging.varanasi-kolkata
+    type: voices
+    title: Shopkeeper and lawyer
+    text: India's 2019 citizenship law fast-tracks persecuted non-Muslim migrants from three neighboring countries. Two people argue about it. Who is right?
+    voices:
+      - {name: "Rakesh, a shopkeeper in Varanasi", says: "India is the land of our ancestors and our gods. Hindus fleeing persecution belong here. Where else is their home?"}
+      - {name: "Farzana, a lawyer in Kolkata", says: "The constitution speaks of citizens, not religions. My family has been here three hundred years."}
+    why: This asks who you think belongs to the nation, through a real dispute over citizenship.
+    options:
+      - id: rakesh
+        text: Rakesh. Those for whom India is both fatherland and holy land belong first.
+        evidence: [{position: nation.belonging.civilizational, w: 3}]
+      - id: farzana
+        text: Farzana. Belonging is a legal bond, not a faith.
+        evidence: [{position: nation.belonging.citizenship, w: 3}]
+      - id: many
+        text: Both miss that India is many cultures, each with its own rights in schools and language.
+        evidence: [{position: nation.belonging.multicultural, w: 3}]
+      - id: ummah
+        text: Both miss the believer's real community, which is the worldwide community of faith.
+        evidence: [{position: nation.belonging.ummah, w: 3}]
+      - id: adopt
+        text: Both miss that anyone can be Indian who takes on its common culture and loyalty, whatever their origin.
+        evidence: [{position: nation.belonging.assimilation, w: 3}]
+      - id: descent
+        text: Both miss the old rule. An Indian is someone born of Indians, wherever they live.
+        evidence: [{position: nation.belonging.descent, w: 3}]
+      - id: class
+        text: Both miss that this law divides workers who share everything that matters.
+        evidence: [{position: nation.belonging.class-not-nation, w: 3}]
+
+  - id: probe.nation.belonging.the-test
+    type: scene
+    title: The citizenship test
+    text: >
+      Your country is rewriting its citizenship test, and the committee has given you one line to fill. Every
+      applicant for the next twenty years will have to meet it. What do you write?
+    why: This asks who you think belongs to the nation, by what you would require.
+    options:
+      - id: residence
+        text: Nothing beyond residence and a clean record. Belonging is the legal bond.
+        evidence: [{position: nation.belonging.citizenship, w: 3}]
+      - id: descent
+        text: Children of citizens abroad pass without a test. Everyone else faces a much higher bar.
+        evidence: [{position: nation.belonging.descent, w: 3}]
+      - id: language
+        text: Fluent language, and real knowledge of the nation's history and customs.
+        evidence: [{position: nation.belonging.assimilation, w: 3}]
+      - id: laws
+        text: Know the laws and your rights. Your culture is your own business.
+        evidence: [{position: nation.belonging.multicultural, w: 3}]
+      - id: scrap
+        text: Scrap the test. It sorts workers for employers.
+        evidence: [{position: nation.belonging.class-not-nation, w: 3}]
+      - id: ummah
+        text: Write what you like. For a Muslim applicant, the first belonging is to the community of believers, not to a passport.
+        evidence: [{position: nation.belonging.ummah, w: 3}]
+      - id: reverence
+        text: Reverence for the land's faith and history, not just its laws.
+        evidence: [{position: nation.belonging.civilizational, w: 3}]
