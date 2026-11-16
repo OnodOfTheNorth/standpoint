@@ -64,6 +64,7 @@ function twoAccountClaims(
   ownContrib: { position: string; w: number }[],
   sitRef: EvidenceRef,
   conf: number,
+  vsCapital = 'against capital',
 ): Claim[] {
   const d = drainAccount(b, hs);
   if (d.mass < 0.4) return [];
@@ -77,10 +78,10 @@ function twoAccountClaims(
   let headline: string;
   if (forClass && reduces) {
     id = 'serves.two-accounts.class-against-drain';
-    headline = `Your program serves your class against capital and costs you your share of the drain.`;
+    headline = `Your program serves your class${vsCapital ? ` ${vsCapital}` : ''} and costs you your share of the drain.`;
   } else if (forClass && defends) {
     id = 'serves.two-accounts.both';
-    headline = `Your program serves you on both accounts: it backs ${who} against capital at home and defends the drain that cheapens what your pay buys.`;
+    headline = `Your program serves you on both accounts: it backs ${who}${vsCapital ? ` ${vsCapital}` : ''} at home and defends the drain that cheapens what your pay buys.`;
   } else if (defends) {
     id = 'serves.two-accounts.drain-against-class';
     headline = againstClass
@@ -180,9 +181,13 @@ export function serves(b: Bundle, s: State, loc: Location): Claim[] {
   const costs = ownContrib.filter((c) => c.w < 0).slice(0, 3);
   const benefits = ownContrib.filter((c) => c.w > 0).slice(0, 3);
   const isCapital = CAPITAL.includes(own);
+  // "against capital" only when the program actually charges capital; a professional program that also
+  // advantages finance and industry serves its class alongside capital, not against it
+  const capV = ((cv.v['finance-capital'] ?? 0) + (cv.v['industrial-capital'] ?? 0)) / 2;
+  const vsCapital = capV < -0.1 ? 'against capital' : capV > 0.1 ? 'alongside capital' : '';
   // A core worker has two accounts: as a seller of labor power, and as a beneficiary of the drain.
   const twoAccounts = loc.world === 'core' && CORE_CLASSES.includes(own);
-  if (twoAccounts) out.push(...twoAccountClaims(b, hs, own, ownV, ownContrib, sitRef, conf));
+  if (twoAccounts) out.push(...twoAccountClaims(b, hs, own, ownV, ownContrib, sitRef, conf, vsCapital));
   if (ownV < -0.3) {
     out.push({
       id: 'serves.against-own',
@@ -206,7 +211,7 @@ export function serves(b: Bundle, s: State, loc: Location): Claim[] {
       id: 'serves.with-own',
       section: 'serves',
       headline: twoAccounts
-        ? `As a seller of labor power, your politics track your own position: they serve ${CLASS_SHORT[own]} against capital.`
+        ? `As a seller of labor power, your politics track your own position: they serve ${CLASS_SHORT[own]}${vsCapital ? ` ${vsCapital}` : ''}.`
         : `Your politics track your own position: they serve ${CLASS_SHORT[own]}, which is where you stand.`,
       body: [
         isCapital
@@ -232,8 +237,11 @@ export function serves(b: Bundle, s: State, loc: Location): Claim[] {
   // ---- named patterns
   // A wage earner carrying a landlord's program.
   if (LABOR.includes(own) && cv.v['landed-capital'] > 0.4) {
-    const ps = cv.contrib['landed-capital'].filter((c) => c.w > 0).slice(0, 3);
-    out.push({
+    // only positions about land, housing and property returns make a landlord's program; a position that
+    // gains landed capital by leaving things as they are (keeping one's head down, nation first) does not
+    const LAND = /^(property.(land|private|inheritance|commons)|housing.|agrarian.|debt.household|cs.housing)/;
+    const ps = cv.contrib['landed-capital'].filter((c) => c.w > 0 && LAND.test(b.positions[c.position]!.problematic)).slice(0, 3);
+    if (ps.length) out.push({
       id: 'serves.landlord-program',
       section: 'serves',
       headline: `You live by ${listJoin(loc.basis)} and carry a landlord's program.`,
@@ -254,6 +262,9 @@ export function serves(b: Bundle, s: State, loc: Location): Claim[] {
     const a = b.positions[h.position]!.analysis;
     return (
       a.pays.some((c) => c === 'peripheral-workers' || c === 'reserve-army') &&
+      // the cost falls only on the bottom: a position that also charges core workers or small owners is not
+      // a grievance turned downward (refusing to vote, for instance, costs everyone who relies on the vote)
+      a.pays.every((c) => c === 'peripheral-workers' || c === 'reserve-army' || c === 'peasantry') &&
       a.gains.some((c) => c === 'core-workers' || c === 'petty-bourgeoisie') &&
       !a.gains.some((c) => CAPITAL.includes(c)) &&
       !a.pays.some((c) => CAPITAL.includes(c))
