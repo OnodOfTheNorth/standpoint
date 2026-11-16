@@ -1,6 +1,6 @@
 id: descent.ecology-technology
 title: Growth, limits and machines
-blurb: For people with a stake in ecology or technology. Degrowth or ecomodernism, ecosocialism or green growth, deep ecology or population limits; accelerate, steer, share or refuse the machines.
+blurb: For people with a stake in ecology or technology. Who owns production, the land and the machines, who pays for the damage, and where the surplus goes.
 region: ecology
 gate:
   any:
@@ -11,7 +11,7 @@ gate:
     - {weight: {position: climate.justice.climate-debt, gt: 0.25}}
     - {weight: {position: technology.nature.liberation, gt: 0.25}}
     - {weight: {position: technology.nature.capitals-weapon, gt: 0.25}}
-    - {holdsAny: [technology.nature.autonomous-force, ai.risk.accelerate, ai.risk.tool-of-capital, automation.ownership.common-ownership, automation.ownership.refuse-it, ecology.crisis-cause.lost-piety]}
+    - {holdsAny: [technology.nature.autonomous-force, ai.stake.accelerate, ai.stake.tool-of-capital, automation.ownership.common-ownership, automation.ownership.refuse-it, ecology.crisis-cause.lost-piety]}
 entry: descent.ecology-technology.01
 nodes:
   - id: descent.ecology-technology.01
@@ -21,7 +21,7 @@ nodes:
       You chair your country's climate commission. Parliament has committed to halving emissions by 2035
       and will pass whichever plan you put first. The fuel lobby, the unions and the farmers are all in
       the gallery.
-    why: This separates green growth, ecomodernism, degrowth and ecosocialism by what each would actually do.
+    why: This asks what you would do first, and whom it would make pay.
     premises:
       - id: overstated
         text: The premise that emissions need halving at all.
@@ -43,6 +43,7 @@ nodes:
         text: Use less. A shorter work week, fewer flights, goods built to last, and an end to advertising-driven buying.
         evidence:
           - {position: growth.ecology.degrowth, w: 3}
+          - {position: growth.ecology.degrowth-communism, w: 2}
           - {position: work.future.shorter-hours, w: 1}
         next: descent.ecology-technology.02
       - id: public
@@ -50,12 +51,19 @@ nodes:
         evidence:
           - {position: energy.transition.public-ownership, w: 3}
           - {position: growth.ecology.ecosocialism, w: 2}
+          - {position: growth.ecology.socialist-abundance, w: 2}
         next: descent.ecology-technology.02
       - id: cheap
         text: Don't make working people pay. Keep fuel cheap and adapt as we go.
         evidence:
           - {position: energy.transition.keep-energy-cheap, w: 3}
           - {position: growth.ecology.growth-is-the-cure, w: 1}
+        next: descent.ecology-technology.02
+      - id: debt
+        text: Halve ours and pay what we owe. Finance and patent-free technology for the countries we flooded, and no offsets bought in the South.
+        evidence:
+          - {position: climate.justice.climate-debt, w: 3}
+          - {position: ecology.crisis-cause.core-appropriation, w: 1}
         next: descent.ecology-technology.02
 
   - id: descent.ecology-technology.02
@@ -68,28 +76,38 @@ nodes:
         says: "Rich countries can't decouple fast enough. We have to shrink energy and material use, share the work, and stop measuring success by GDP."
       - name: Leo, an energy engineer
         says: "Shrinking is a dead end that nobody will vote for. The answer is abundance: nuclear, solar, dense cities, farms that use less land, so nature gets more."
-    why: Degrowth against ecomodernism is the main fight in ecological politics, and others think both miss something.
+    why: Hana and Leo argue over how much rich countries should produce; this asks whether you accept that question or ask who owns production and who pays.
     options:
       - id: hana
         text: Hana.
         evidence:
           - {position: growth.ecology.degrowth, w: 3}
+          - {position: growth.ecology.degrowth-communism, w: 1}
         next: descent.ecology-technology.03
       - id: leo
         text: Leo.
         evidence:
           - {position: growth.ecology.ecomodernism, w: 3}
+          - {position: growth.ecology.socialist-abundance, w: 1}
         next: descent.ecology-technology.03
       - id: ownership
         text: Both miss that the question is who owns production and what it's planned for.
         evidence:
           - {position: growth.ecology.ecosocialism, w: 3}
+          - {position: growth.ecology.socialist-abundance, w: 2}
+          - {position: growth.ecology.degrowth-communism, w: 1}
           - {position: ecology.crisis-cause.capital-accumulation, w: 1}
         next: descent.ecology-technology.03
       - id: south
         text: Both miss that the South has the right to develop first, and should.
         evidence:
           - {position: growth.ecology.southern-right-to-develop, w: 3}
+        next: descent.ecology-technology.03
+      - id: delink
+        text: Both talk only about what rich countries produce. The South should break with their terms of trade, give the land to the peasants and plan for its own needs, while the North shrinks and pays.
+        evidence:
+          - {position: growth.ecology.sovereign-planned-south, w: 3}
+          - {position: ecology.crisis-cause.core-appropriation, w: 1}
         next: descent.ecology-technology.03
       - id: life
         text: Both treat nature as a resource. Other living things have a claim of their own.
@@ -101,6 +119,7 @@ nodes:
         text: Both want to plan the planet. Look after the land where you live.
         evidence:
           - {position: growth.ecology.home-and-stewardship, w: 3}
+          - {position: growth.ecology.communities-decide, w: 1}
         next: descent.ecology-technology.03
 
   - id: descent.ecology-technology.03
@@ -160,7 +179,7 @@ nodes:
       - Higher taxes for families with more than two
       - A legal limit of one child per couple, as China had from 1980 to 2015
       - Sterilization targets for each district, as in India in 1976
-    why: This separates neo-Malthusians from those who think population is not the problem, or the wrong problem.
+    why: This asks where you would stop on coercion, and whether you think the numbers are the problem at all.
     premises:
       - id: too-few
         text: The premise that there are too many people. The crisis is too few births.
@@ -193,6 +212,11 @@ nodes:
         evidence:
           - {position: population.question.consumption-not-numbers, w: 3}
         next: descent.ecology-technology.05
+      - id: owners
+        text: The list starts in the wrong place. Give families land, pensions and secure work and births fall. "Too many" means too many for the owners.
+        evidence:
+          - {position: population.question.surplus-made-by-capital, w: 3}
+        next: descent.ecology-technology.05
 
   - id: descent.ecology-technology.05
     type: scene
@@ -201,7 +225,7 @@ nodes:
       A dam on a river in northern Laos would power two million homes without coal and earn the
       government export income. It would flood a valley where four villages farm, and the only habitat of
       a small fish found nowhere else on earth. You have the deciding vote.
-    why: This separates deep ecology from ecomodernism, market environmentalism and indigenous and village claims.
+    why: This separates deep ecology from ecomodernism, market environmentalism, and Indigenous and village claims, and asks who the power is for.
     options:
       - id: build
         text: Build it. Clean power for millions outweighs a valley and a fish.
@@ -235,46 +259,59 @@ nodes:
     type: voices
     title: The model
     text: >
-      A lab is about to release a much more capable AI model. Two people who both work in the field argue
-      about whether it should.
+      A lab is about to release a much more capable AI model. Three people who worked on it argue about
+      whether it should.
     voices:
       - name: Dev, a startup founder
         says: "Every year we delay, people die of diseases this could cure. The danger is slowing down. Build."
       - name: Miriam, a safety researcher
         says: "Something that might outthink us all needs brakes before speed. If we get this wrong there is no second try."
-    why: This separates effective accelerationism from longtermist safety, and both from those who ask who owns it, what it costs now, or whether it should exist.
+      - name: Wanjiku, a content moderator in Nairobi
+        says: "I spent a year teaching it to refuse. Release it or don't; the shares stay in California and my contract ends in March."
+    why: Dev and Miriam argue about speed and safety and both leave the lab's owners in charge; this asks whether you accept that.
     options:
       - id: dev
         text: Dev.
         evidence:
-          - {position: ai.risk.accelerate, w: 3}
+          - {position: ai.stake.accelerate, w: 3}
           - {position: accelerationism.question.effective-acc, w: 2}
         next: descent.ecology-technology.07
       - id: miriam
         text: Miriam.
         evidence:
-          - {position: ai.risk.existential, w: 3}
+          - {position: ai.stake.existential, w: 3}
           - {position: accelerationism.question.differential, w: 2}
         next: descent.ecology-technology.07
       - id: owners
         text: Both miss who owns it. It will be used to cheapen and watch workers, whatever the speed.
         evidence:
-          - {position: ai.risk.tool-of-capital, w: 3}
+          - {position: ai.stake.tool-of-capital, w: 3}
         next: descent.ecology-technology.07
       - id: now
         text: Both miss the harms already here, fraud, bias and lost jobs. Regulate those.
         evidence:
-          - {position: ai.risk.harms-now, w: 3}
+          - {position: ai.stake.harms-now, w: 3}
         next: descent.ecology-technology.07
       - id: hype
         text: Both are selling something. It's autocomplete with a marketing budget.
         evidence:
-          - {position: ai.risk.overhyped, w: 3}
+          - {position: ai.stake.overhyped, w: 3}
         next: descent.ecology-technology.07
       - id: human
         text: Both miss what it does to us. Some things should be done by people or not at all.
         evidence:
-          - {position: ai.risk.human-dignity, w: 3}
+          - {position: ai.stake.human-dignity, w: 3}
+        next: descent.ecology-technology.07
+      - id: toll
+        text: Both miss where it is built. Two countries own the models and the chips; the labelling and the cobalt come from everywhere else, and so does the rent.
+        evidence:
+          - {position: ai.stake.core-rent, w: 3}
+        next: descent.ecology-technology.07
+      - id: wanjiku
+        text: Wanjiku.
+        evidence:
+          - {position: ai.stake.core-rent, w: 2}
+          - {position: ai.stake.tool-of-capital, w: 2}
         next: descent.ecology-technology.07
 
   - id: descent.ecology-technology.07
@@ -312,6 +349,11 @@ nodes:
         text: Nobody stops machines. Learn to run them before someone else does.
         evidence:
           - {position: automation.ownership.adapt-or-lose, w: 3}
+        next: descent.ecology-technology.08
+      - id: chain
+        text: Call the dockers in Shanghai and Rotterdam and the workers who build the cranes. Bargained port by port, the operator plays us off against each other.
+        evidence:
+          - {position: automation.ownership.whole-chain-workers, w: 3}
         next: descent.ecology-technology.08
 
   - id: descent.ecology-technology.08
@@ -372,7 +414,7 @@ nodes:
         text: The research. The future holds far more people than the present, and they count just as much.
         evidence:
           - {position: climate.justice.future-generations, w: 3}
-          - {position: ai.risk.existential, w: 2}
+          - {position: ai.stake.existential, w: 2}
         end: true
       - id: build
         text: Neither. Give it to builders. Growth and new technology save more lives than charity.

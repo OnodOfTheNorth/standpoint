@@ -20,6 +20,7 @@ thinkers:
       - {position: gender.basis.sex-class, in: {author: Shulamith Firestone, title: "The Dialectic of Sex", year: 1970}}
       - {position: family.form.abolition, in: {author: Shulamith Firestone, title: "The Dialectic of Sex", year: 1970}}
       - {position: technology.nature.liberation, in: {author: Shulamith Firestone, title: "The Dialectic of Sex", year: 1970, note: "artificial reproduction as liberation"}}
+      - {position: transhumanism.question.for-everyone, in: {author: Shulamith Firestone, title: "The Dialectic of Sex", year: 1970, note: "reproductive technology under collective control, freeing women from childbearing"}}
 
   - id: thinker.davis
     name: Angela Y. Davis
@@ -32,6 +33,7 @@ thinkers:
       - {position: feminism.subordination.interlocking, in: {author: Angela Y. Davis, title: "Women, Race & Class", year: 1981}}
       - {position: care.work.socialize, in: {author: Angela Y. Davis, title: "Women, Race & Class", year: 1981, note: "chapter 'The Approaching Obsolescence of Housework'"}}
       - {position: prisons.purpose.abolition, in: {author: Angela Y. Davis, title: "Are Prisons Obsolete?", year: 2003}}
+      - {position: police.role.abolition, in: {author: "Angela Y. Davis, Gina Dent, Erica R. Meiners and Beth E. Richie", title: "Abolition. Feminism. Now.", year: 2022}}
 
   - id: thinker.fraser
     name: Nancy Fraser
@@ -44,3 +46,370 @@ thinkers:
       - {position: feminism.subordination.social-reproduction, in: {author: Nancy Fraser, title: "Contradictions of Capital and Care", year: 2016}}
       - {position: change.agent.many-oppressed, in: {author: Cinzia Arruzza, Tithi Bhattacharya and Nancy Fraser, title: "Feminism for the 99%: A Manifesto", year: 2019}}
       - {position: ecology.crisis-cause.capital-accumulation, in: {author: Nancy Fraser, title: "Cannibal Capitalism", year: 2022}}
+      - {position: culture.war.material-roots, in: {author: Nancy Fraser, title: "The Old Is Dying and the New Cannot Be Born: From Progressive Neoliberalism to Trump and Beyond", year: 2019}}
+
+  # ---------------- liberal feminism ----------------
+  - id: thinker.wollstonecraft
+    name: Mary Wollstonecraft
+    born: 1759
+    died: 1797
+    region: England
+    traditions: [feminism.liberal]
+    summary: English writer and schoolteacher in the radical circle around the publisher Joseph Johnson. She answered Burke's attack on the French Revolution and then argued that women's apparent weakness was the product of an education designed to make them pleasing to men.
+    argues:
+      - {position: rights.basis.natural-rights, in: {author: Mary Wollstonecraft, title: "A Vindication of the Rights of Men", year: 1790}}
+      - {position: feminism.subordination.barriers-and-bias, in: {author: Mary Wollstonecraft, title: "A Vindication of the Rights of Woman", year: 1792}}
+      - {position: gender.basis.social-roles, in: {author: Mary Wollstonecraft, title: "A Vindication of the Rights of Woman", year: 1792, note: "the traits called feminine are produced by education and dependence"}}
+
+  - id: thinker.friedan
+    name: Betty Friedan
+    born: 1921
+    died: 2006
+    region: United States
+    traditions: [feminism.liberal]
+    summary: American journalist whose survey of college-educated housewives named "the problem that has no name". She co-founded the National Organization for Women in 1966 and campaigned for equal employment, the Equal Rights Amendment and legal abortion.
+    argues:
+      - {position: feminism.subordination.barriers-and-bias, in: {author: Betty Friedan, title: "The Feminine Mystique", year: 1963}}
+      - {position: care.work.market-service, in: {author: Betty Friedan, title: "The Feminine Mystique", year: 1963, note: "women's way out of the home is education and a career, with housework reduced and shared"}}
+
+  - id: thinker.nussbaum
+    name: Martha Nussbaum
+    born: 1947
+    died: null
+    region: United States
+    traditions: [feminism.liberal, liberalism.egalitarian]
+    summary: American philosopher at the University of Chicago who developed, with Amartya Sen, the capabilities approach, and applied it to the lives of poor women in India. She holds that justice requires securing for each person a threshold of central human capabilities.
+    argues:
+      - {position: liberty.concept.capability, in: {author: Martha C. Nussbaum, title: "Women and Human Development: The Capabilities Approach", year: 2000}}
+      - {position: sexuality.politics.equal-rights, in: {author: Martha C. Nussbaum, title: "From Disgust to Humanity: Sexual Orientation and Constitutional Law", year: 2010}}
+
+  # ---------------- radical and gender-critical feminism ----------------
+  - id: thinker.millett
+    name: Kate Millett
+    born: 1934
+    died: 2017
+    region: United States
+    traditions: [feminism.radical]
+    summary: American artist and writer whose doctoral thesis, published as Sexual Politics, read the relation between the sexes as a political relation of dominance maintained through socialization, the family, religion and literature.
+    argues:
+      - {position: feminism.subordination.patriarchy, in: {author: Kate Millett, title: "Sexual Politics", year: 1970}}
+      - {position: gender.basis.social-roles, in: {author: Kate Millett, title: "Sexual Politics", year: 1970, note: "temperament and role are learned, not given by sex"}}
+
+  - id: thinker.dworkin
+    name: Andrea Dworkin
+    born: 1946
+    died: 2005
+    region: United States
+    traditions: [feminism.radical]
+    summary: American writer and campaigner who held that pornography and prostitution are central practices of male power over women. With Catharine MacKinnon she drafted the 1983 Minneapolis ordinance treating pornography as a violation of women's civil rights.
+    argues:
+      - {position: feminism.subordination.patriarchy, in: {author: Andrea Dworkin, title: "Pornography: Men Possessing Women", year: 1981}}
+
+  - id: thinker.mackinnon
+    name: Catharine A. MacKinnon
+    born: 1946
+    died: null
+    region: United States
+    traditions: [feminism.radical]
+    summary: American legal scholar who framed sexual harassment as sex discrimination in law. She argues that sexuality is to feminism what work is to Marxism, and that the liberal state, by treating unequal sexes as already equal, enforces men's power.
+    argues:
+      - {position: feminism.subordination.patriarchy, in: {author: Catharine A. MacKinnon, title: "Toward a Feminist Theory of the State", year: 1989}}
+
+  - id: thinker.jeffreys
+    name: Sheila Jeffreys
+    born: 1948
+    died: null
+    region: Britain / Australia
+    traditions: [feminism.radical, feminism.gender-critical]
+    summary: British-born radical lesbian feminist who taught political science at the University of Melbourne. She has written against the sexual revolution, beauty practices and prostitution, and argues that gender is a hierarchy to be abolished rather than adopted as an identity.
+    argues:
+      - {position: feminism.subordination.patriarchy, in: {author: Sheila Jeffreys, title: "Anticlimax: A Feminist Perspective on the Sexual Revolution", year: 1990}}
+      - {position: gender.basis.sex-class, in: {author: Sheila Jeffreys, title: "Gender Hurts: A Feminist Analysis of the Politics of Transgenderism", year: 2014}}
+
+  - id: thinker.stock
+    name: Kathleen Stock
+    born: 1972
+    died: null
+    region: Britain
+    traditions: [feminism.gender-critical]
+    summary: British philosopher who resigned from the University of Sussex in 2021 after protests over her views. She argues that biological sex is real and politically important, and that gender identity should not replace sex in law, statistics or single-sex spaces.
+    argues:
+      - {position: gender.basis.sex-class, in: {author: Kathleen Stock, title: "Material Girls: Why Reality Matters for Feminism", year: 2021, note: "on sex-based rights and spaces; Stock does not call for abolishing gender as such"}}
+
+  # ---------------- socialist, Marxist and materialist feminism ----------------
+  - id: thinker.zetkin
+    name: Clara Zetkin
+    born: 1857
+    died: 1933
+    region: Germany
+    traditions: [marxism.classical, marxism.leninism]
+    summary: German teacher who led the socialist women's movement of the Second International, edited its paper Die Gleichheit, and proposed International Women's Day in 1910. She joined the Communist Party of Germany and sat on the Executive of the Communist International.
+    argues:
+      - {position: feminism.subordination.private-property, in: {author: Clara Zetkin, title: "Only in Conjunction with the Proletarian Woman Will Socialism Be Victorious", year: 1896, note: "speech at the SPD party congress in Gotha"}}
+      - {position: fascism.nature.petty-bourgeois-mass-movement, in: {author: Clara Zetkin, title: "The Struggle against Fascism", year: 1923, note: "report to the enlarged Executive of the Communist International"}}
+
+  - id: thinker.kollontai
+    name: Alexandra Kollontai
+    born: 1872
+    died: 1952
+    region: Russia
+    traditions: [marxism.leninism]
+    summary: Russian revolutionary who became People's Commissar of Social Welfare in 1917 and led the Bolshevik women's department. She argued for socialized housework and free unions of love, spoke for the Workers' Opposition in 1921, and then served as a Soviet diplomat.
+    argues:
+      - {position: feminism.subordination.private-property, in: {author: Alexandra Kollontai, title: "The Social Basis of the Woman Question", year: 1909}}
+      - {position: family.form.socialize-care, in: {author: Alexandra Kollontai, title: "Communism and the Family", year: 1920}}
+      - {position: sexuality.politics.capitalism-and-liberation, in: {author: Alexandra Kollontai, title: "Make Way for Winged Eros: A Letter to Working Youth", year: 1923}}
+      - {position: hist.ussr-early.workers-democracy-lost, in: {author: Alexandra Kollontai, title: "The Workers' Opposition", year: 1921}}
+
+  - id: thinker.beauvoir
+    name: Simone de Beauvoir
+    born: 1908
+    died: 1986
+    region: France
+    traditions: [feminism.materialist]
+    summary: French existentialist philosopher whose study The Second Sex argued that woman has been made the Other of man. In the 1970s she joined the women's liberation movement, wrote the Manifesto of the 343 for legal abortion, and directed the journal Questions féministes with Christine Delphy.
+    argues:
+      - {position: gender.basis.social-roles, in: {author: Simone de Beauvoir, title: "The Second Sex", year: 1949, note: "One is not born, but rather becomes, a woman"}}
+      - {position: body.autonomy.womans-choice, in: {author: Simone de Beauvoir, title: "Manifesto of the 343", year: 1971, note: "published in Le Nouvel Observateur"}}
+
+  - id: thinker.delphy
+    name: Christine Delphy
+    born: 1941
+    died: null
+    region: France
+    traditions: [feminism.materialist]
+    summary: French sociologist and co-founder of the women's liberation movement in France, who named the current materialist feminism. She argues that women's unpaid work in marriage is appropriated in a domestic mode of production, and that men and women are classes produced by that relation.
+    argues:
+      - {position: feminism.subordination.domestic-exploitation, in: {author: Christine Delphy, title: "The Main Enemy", year: 1970, note: "French: L'ennemi principal"}}
+      - {position: gender.basis.class-relation, in: {author: Christine Delphy, title: "Rethinking Sex and Gender", year: 1993, note: "Women's Studies International Forum"}}
+
+  - id: thinker.federici
+    name: Silvia Federici
+    born: 1942
+    died: null
+    region: Italy / United States
+    traditions: [marxism.social-reproduction, marxism.autonomism]
+    summary: Italian-born scholar and co-founder of the International Feminist Collective and the Wages for Housework campaign, who taught in Nigeria and New York. She traces the subjugation of women's bodies and reproductive work to the primitive accumulation that founded capitalism.
+    argues:
+      - {position: care.work.wages-for-housework, in: {author: Silvia Federici, title: "Wages Against Housework", year: 1975}}
+      - {position: feminism.subordination.social-reproduction, in: {author: Silvia Federici, title: "Caliban and the Witch: Women, the Body and Primitive Accumulation", year: 2004}}
+      - {position: property.commons.expand-to-communism, in: {author: Silvia Federici, title: "Re-enchanting the World: Feminism and the Politics of the Commons", year: 2018}}
+      - {position: debt.household.cancel-and-refuse, in: {author: Silvia Federici, title: "Re-enchanting the World: Feminism and the Politics of the Commons", year: 2018, note: "essay \"From Commoning to Debt: Financialization, Microcredit, and the Changing Architecture of Capital Accumulation\"; debt as class rule, and debt resistance led by women in the South"}}
+      - {position: nature.value.free-gift-of-subsistence, in: {author: "Silvia Federici", title: "Caliban and the Witch: Women, the Body and Primitive Accumulation", year: 2004}}
+
+  - id: thinker.vogel
+    name: Lise Vogel
+    born: 1938
+    died: null
+    region: United States
+    traditions: [marxism.social-reproduction]
+    summary: American sociologist and former civil rights worker whose book on Marxism and women's oppression located that oppression in the private household's role in reproducing labor power. It became the founding text of social reproduction theory.
+    argues:
+      - {position: feminism.subordination.social-reproduction, in: {author: Lise Vogel, title: "Marxism and the Oppression of Women: Toward a Unitary Theory", year: 1983}}
+      - {position: labor.division.paid-and-unpaid, in: {author: Lise Vogel, title: "Marxism and the Oppression of Women: Toward a Unitary Theory", year: 1983, note: "the domestic component of necessary labor"}}
+
+  - id: thinker.bhattacharya
+    name: Tithi Bhattacharya
+    region: India / United States
+    traditions: [marxism.social-reproduction]
+    summary: Indian-born historian of South Asia at Purdue University and an organizer of the International Women's Strike in the United States. She argues that the work of producing and sustaining workers belongs inside the analysis of class, not beside it.
+    argues:
+      - {position: feminism.subordination.social-reproduction, in: {author: Tithi Bhattacharya (ed.), title: "Social Reproduction Theory: Remapping Class, Recentering Oppression", year: 2017}}
+      - {position: change.agent.many-oppressed, in: {author: Cinzia Arruzza, Tithi Bhattacharya and Nancy Fraser, title: "Feminism for the 99%: A Manifesto", year: 2019}}
+
+  - id: thinker.iris-young
+    name: Iris Marion Young
+    born: 1949
+    died: 2006
+    region: United States
+    traditions: [feminism.materialist]
+    summary: American political philosopher who began as a socialist feminist critic of dual-systems theory. She analyzed oppression as exploitation, marginalization, powerlessness, cultural imperialism and violence, and defended group representation for oppressed groups.
+    argues:
+      - {position: equality.concept.group-substantive, in: {author: Iris Marion Young, title: "Justice and the Politics of Difference", year: 1990}}
+      - {position: feminism.subordination.interlocking, in: {author: Iris Marion Young, title: "Unruly Categories: A Critique of Nancy Fraser's Dual Systems Theory", year: 1997, note: "New Left Review 222"}}
+
+  - id: thinker.petchesky
+    name: Rosalind Pollack Petchesky
+    region: United States
+    traditions: [feminism.materialist]
+    summary: American political scientist at Hunter College and the City University of New York who wrote a socialist-feminist account of abortion politics, and later worked on international reproductive and sexual rights.
+    argues:
+      - {position: body.autonomy.free-legal-public, in: {author: Rosalind Pollack Petchesky, title: "Abortion and Woman's Choice: The State, Sexuality, and Reproductive Freedom", year: 1984, note: "reproductive freedom requires public funding and the social conditions of childbearing, not legality alone"}}
+
+  - id: thinker.parrenas
+    name: Rhacel Salazar Parreñas
+    region: Philippines / United States
+    traditions: [feminism.materialist]
+    summary: Filipina American sociologist who studied Filipina domestic workers in Rome and Los Angeles. She named the international division of reproductive labor, in which migrant women care for rich households while poorer women care for the migrants' own families.
+    argues:
+      - {position: care.work.care-drain, in: {author: Rhacel Salazar Parreñas, title: "Servants of Globalization: Women, Migration, and Domestic Work", year: 2001}}
+      - {position: migration.cause.employer-demand, in: {author: Rhacel Salazar Parreñas, title: "Servants of Globalization: Women, Migration, and Domestic Work", year: 2001, note: "demand for low-wage domestic and care work in global cities pulls Filipina migrants"}}
+
+  # ---------------- Black feminism ----------------
+  - id: thinker.claudia-jones
+    name: Claudia Jones
+    born: 1915
+    died: 1964
+    region: Trinidad / United States / Britain
+    traditions: [marxism.ml, marxism.black-radical]
+    summary: Trinidad-born Communist who led the Communist Party USA's women's work until her deportation in 1955. In London she founded the West Indian Gazette and the Caribbean carnival that became the Notting Hill Carnival.
+    argues:
+      - {position: feminism.subordination.interlocking, in: {author: Claudia Jones, title: "An End to the Neglect of the Problems of the Negro Woman!", year: 1949, note: "Political Affairs; the triple oppression of Black women as workers, as Black people and as women"}}
+      - {position: labor.division.race-caste-nation, in: {author: Claudia Jones, title: "An End to the Neglect of the Problems of the Negro Woman!", year: 1949}}
+
+  - id: thinker.combahee
+    name: Combahee River Collective
+    born: 1974
+    died: 1980
+    region: Boston, United States
+    traditions: [feminism.black]
+    summary: Black lesbian socialist feminist group in Boston whose members included Barbara Smith, Beverly Smith and Demita Frazier. Its 1977 statement held that the major systems of oppression are interlocking, and that the liberation of Black women requires the destruction of capitalism, imperialism and patriarchy.
+    argues:
+      - {position: feminism.subordination.interlocking, in: {author: Combahee River Collective, title: "A Black Feminist Statement", year: 1977}}
+
+  - id: thinker.hooks
+    name: bell hooks
+    born: 1952
+    died: 2021
+    region: United States
+    traditions: [feminism.black]
+    summary: American writer and teacher, born Gloria Jean Watkins in Kentucky, who criticized the women's movement for taking the lives of white middle-class women as the norm. She defined feminism as a movement to end sexism, sexist exploitation and oppression.
+    argues:
+      - {position: feminism.subordination.interlocking, in: {author: bell hooks, title: "Ain't I a Woman: Black Women and Feminism", year: 1981}}
+      - {position: body.autonomy.reproductive-justice, in: {author: bell hooks, title: "Feminism Is for Everybody: Passionate Politics", year: 2000, note: "chapter on reproductive rights"}}
+
+  - id: thinker.crenshaw
+    name: Kimberlé Crenshaw
+    born: 1959
+    died: null
+    region: United States
+    traditions: [feminism.black]
+    summary: American legal scholar at UCLA and Columbia who coined the term intersectionality to describe how anti-discrimination law failed Black women. She was a founder of critical race theory.
+    argues:
+      - {position: feminism.subordination.interlocking, in: {author: Kimberlé Crenshaw, title: "Demarginalizing the Intersection of Race and Sex", year: 1989, note: "University of Chicago Legal Forum"}}
+      - {position: race.nature.structural, in: {author: "Kimberlé Crenshaw, Neil Gotanda, Gary Peller and Kendall Thomas (eds.)", title: "Critical Race Theory: The Key Writings That Formed the Movement", year: 1995}}
+
+  - id: thinker.collins
+    name: Patricia Hill Collins
+    born: 1948
+    died: null
+    region: United States
+    traditions: [feminism.black]
+    summary: American sociologist who described race, class, gender and sexuality as a matrix of domination, and argued that Black women's everyday knowledge is a standpoint from which that matrix can be seen.
+    argues:
+      - {position: feminism.subordination.interlocking, in: {author: Patricia Hill Collins, title: "Black Feminist Thought: Knowledge, Consciousness, and the Politics of Empowerment", year: 1990}}
+
+  - id: thinker.ross
+    name: Loretta Ross
+    born: 1953
+    died: null
+    region: United States
+    traditions: [feminism.black]
+    summary: American organizer and a founder of SisterSong, the Women of Color Reproductive Justice Collective. She helped frame reproductive justice, which joins the right not to have children with the right to have them and to raise them in safety.
+    argues:
+      - {position: body.autonomy.reproductive-justice, in: {author: Loretta J. Ross and Rickie Solinger, title: "Reproductive Justice: An Introduction", year: 2017}}
+
+  - id: thinker.kaba
+    name: Mariame Kaba
+    region: United States
+    traditions: [feminism.black]
+    summary: American organizer, founder of Project NIA in Chicago, who works against youth incarceration and gendered violence. She argues that prisons and police produce harm rather than safety and should be replaced, step by step, by community institutions.
+    argues:
+      - {position: prisons.purpose.abolition, in: {author: Mariame Kaba, title: "We Do This 'Til We Free Us: Abolitionist Organizing and Transforming Justice", year: 2021}}
+      - {position: police.role.abolition, in: {author: Mariame Kaba, title: "We Do This 'Til We Free Us: Abolitionist Organizing and Transforming Justice", year: 2021}}
+      - {position: police.accountability.abolition, in: {author: Mariame Kaba, title: "We Do This 'Til We Free Us: Abolitionist Organizing and Transforming Justice", year: 2021}}
+
+  # ---------------- difference feminism and queer theory ----------------
+  - id: thinker.irigaray
+    name: Luce Irigaray
+    born: 1930
+    died: null
+    region: Belgium / France
+    traditions: [feminism.difference]
+    summary: Belgian-born philosopher and psychoanalyst, expelled from the Lacanian school after her first major book. She argues that Western philosophy and language take the masculine as the universal subject, leaving no place for a feminine subject of its own.
+    argues:
+      - {position: feminism.subordination.erased-difference, in: {author: Luce Irigaray, title: "Speculum of the Other Woman", year: 1974}}
+
+  - id: thinker.gilligan
+    name: Carol Gilligan
+    born: 1936
+    died: null
+    region: United States
+    traditions: [feminism.difference]
+    summary: American psychologist who showed that theories of moral development had been built on studies of boys and men. She described an ethic of care, attentive to relationships and responsibility, that those theories ranked as immature.
+    argues:
+      - {position: feminism.subordination.erased-difference, in: {author: Carol Gilligan, title: "In a Different Voice: Psychological Theory and Women's Development", year: 1982}}
+
+  - id: thinker.butler
+    name: Judith Butler
+    born: 1956
+    died: null
+    region: United States
+    traditions: [feminism.queer]
+    summary: American philosopher at Berkeley who argues that gender is produced by repeated acts under social norms, not expressed from an inner essence. Butler answered Nancy Fraser that the regulation of sexuality is part of how capitalism reproduces itself, not a merely cultural matter.
+    argues:
+      - {position: gender.basis.performative, in: {author: Judith Butler, title: "Gender Trouble: Feminism and the Subversion of Identity", year: 1990}}
+      - {position: sexuality.politics.capitalism-and-liberation, in: {author: Judith Butler, title: "Merely Cultural", year: 1997, note: "Social Text 52/53"}}
+      - {position: culture.war.rights-against-reaction, in: {author: Judith Butler, title: "Who's Afraid of Gender?", year: 2024}}
+
+  - id: thinker.sedgwick
+    name: Eve Kosofsky Sedgwick
+    born: 1950
+    died: 2009
+    region: United States
+    traditions: [feminism.queer]
+    summary: American literary scholar who argued that the definition of homosexual against heterosexual structures modern Western culture as a whole, and that the closet organizes knowledge and ignorance far beyond gay lives.
+    argues:
+      - {position: sexuality.politics.queer-liberation, in: {author: Eve Kosofsky Sedgwick, title: "Epistemology of the Closet", year: 1990}}
+
+  # ---------------- Third World and postcolonial feminism ----------------
+  - id: thinker.jayawardena
+    name: Kumari Jayawardena
+    born: 1931
+    region: Sri Lanka
+    traditions: [feminism.decolonial]
+    summary: Sri Lankan political scientist and historian of the labor and left movements in Ceylon. She showed that feminism in Asia and the Middle East arose inside anti-imperialist and nationalist struggles and was not an import from the West.
+    argues:
+      - {position: feminism.subordination.colonial-and-imperial, in: {author: Kumari Jayawardena, title: "Feminism and Nationalism in the Third World", year: 1986}}
+
+  - id: thinker.mohanty
+    name: Chandra Talpade Mohanty
+    born: 1955
+    died: null
+    region: India / United States
+    traditions: [feminism.decolonial]
+    summary: Indian-born scholar at Syracuse University who criticized Western feminist writing for producing a single "Third World woman" as passive victim. She calls for a feminist solidarity built on the common position of women workers in global capitalism.
+    argues:
+      - {position: feminism.subordination.colonial-and-imperial, in: {author: Chandra Talpade Mohanty, title: "Under Western Eyes: Feminist Scholarship and Colonial Discourses", year: 1984, note: "boundary 2"}}
+      - {position: labor.division.core-periphery, in: {author: Chandra Talpade Mohanty, title: "Feminism Without Borders: Decolonizing Theory, Practicing Solidarity", year: 2003, note: "chapter Women Workers and Capitalist Scripts"}}
+
+  - id: thinker.spivak
+    name: Gayatri Chakravorty Spivak
+    born: 1942
+    died: null
+    region: India / United States
+    traditions: [feminism.decolonial]
+    summary: Indian literary theorist at Columbia, translator of Derrida, and teacher in rural schools in West Bengal. She argued that the subaltern woman is spoken for both by colonial reformers and by native patriarchy, summed up as "white men saving brown women from brown men".
+    argues:
+      - {position: feminism.subordination.colonial-and-imperial, in: {author: Gayatri Chakravorty Spivak, title: "Can the Subaltern Speak?", year: 1988}}
+
+  - id: thinker.oyewumi
+    name: Oyèrónkẹ́ Oyěwùmí
+    region: Nigeria / United States
+    traditions: [feminism.decolonial]
+    summary: Nigerian sociologist at Stony Brook University. She argues that precolonial Yorùbá society ranked people by seniority rather than by sex, and that "women" as a subordinate social category was introduced by colonial rule and the missions.
+    argues:
+      - {position: gender.basis.colonial-imposition, in: {author: Oyèrónkẹ́ Oyěwùmí, title: "The Invention of Women: Making an African Sense of Western Gender Discourses", year: 1997}}
+
+  # ---------------- against feminism ----------------
+  - id: thinker.schlafly
+    name: Phyllis Schlafly
+    born: 1924
+    died: 2016
+    region: United States
+    traditions: [conservatism.fusionism]
+    summary: American lawyer and Goldwater activist who led the STOP ERA campaign that defeated the Equal Rights Amendment and founded the Eagle Forum. She argued that the amendment would strip wives and mothers of the legal protections and support the law owed them.
+    argues:
+      - {position: gender.basis.created-order, in: {author: Phyllis Schlafly, title: "The Power of the Positive Woman", year: 1977}}
+      - {position: family.form.natural-institution, in: {author: Phyllis Schlafly, title: "The Power of the Positive Woman", year: 1977}}
+      - {position: care.work.family-vocation, in: {author: Phyllis Schlafly, title: "The Power of the Positive Woman", year: 1977}}

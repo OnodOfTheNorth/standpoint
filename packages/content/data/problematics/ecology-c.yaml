@@ -1,15 +1,216 @@
 problematics:
   # ------------------------------------------------------------------
-  - id: ai.risk
+  - id: ai.stake
     domain: ecology
     layer: analysis
-    question: Is advanced AI an existential risk, a tool of capital, or a liberation?
-    plain: Artificial intelligence is getting more capable fast. What is the real danger, or the real promise?
-    short: the risk of AI
+    question: Who owns AI, whose labor built it, whose work does it cheapen, and where does its rent go?
+    plain: >-
+      A few companies own the AI models, the chips and the data centers. The writing, the labelling and the
+      minerals came from millions of other people, many of them in poor countries. Who gains from it, who pays
+      for it, and who should own it?
+    short: the stake in AI
     importance: 2
     region: technology
     positions:
-      - id: ai.risk.existential
+      - id: ai.stake.tool-of-capital
+        label: AI is a tool for owners to watch, cheapen and replace workers
+        claim: Employers buy AI to take the skill out of jobs, to time, score and discipline the people who remain, and to cut payroll, while the few firms that own the models charge a fee on every use.
+        voiced: "There is no such thing as artificial intelligence without the hidden labor of millions. AI is the boss's new tool, trained on our work and used against us."
+        you: You think AI is mainly a tool for companies to watch workers, cut pay and concentrate wealth.
+        because: >
+          Every wave of machinery has moved knowledge from the worker to the owner: Braverman traced how
+          management broke craft into timed steps, and Noble showed machine tools chosen because they took
+          control of the work away from machinists. AI carries the same move into offices, call centers,
+          newsrooms and studios. It is trained on the work of the people it is bought to replace, it sets the
+          pace and ranks the workers in warehouses and delivery apps, and the mere threat of it holds wages down
+          where it is not yet installed. The firms that own the models collect a rent on all of it. The danger
+          is not that the machine rebels but that it obeys its owners.
+        against:
+          - from: ecology.ecomodernism
+            text: >
+              Every general-purpose technology was first used by its owners to cut costs, and then raised living
+              standards for everyone. AI tutors and doctors will reach the poor first and most.
+          - from: technology.effective-altruism
+            text: >
+              Present harms are real, but they do not rule out a much larger danger later. Both can be worked on,
+              and the larger one is neglected.
+        sources:
+          - {author: Harry Braverman, title: "Labor and Monopoly Capital: The Degradation of Work in the Twentieth Century", year: 1974}
+          - {author: Mary L. Gray and Siddharth Suri, title: "Ghost Work: How to Stop Silicon Valley from Building a New Global Underclass", year: 2019}
+          - {author: Kate Crawford, title: "Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence", year: 2021}
+        traditions:
+          defining: [marxism.autonomism]
+          typical: [marxism.western, marxism.classical, socdem.democratic-socialism, anarchism.syndicalist, feminism.materialist]
+          contested: [marxism.scc, technology.l-acc]
+          rejects: [technology.e-acc, liberalism.chicago, technology.longtermism]
+        presupposes: [technology.nature.capitals-weapon]
+        excludes: [ai.stake.accelerate]
+        tension: [ai.stake.existential]
+        tags: [labor, surveillance, ai]
+        analysis:
+          gains: [core-workers, peripheral-workers, reserve-army]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Treating AI as an employer's instrument points action at the workplace: contract limits on
+            surveillance and automated scoring, bargaining over where AI is deployed, and pay for the labelers
+            and creators whose work trains it. That raises the cost of deskilling and of cutting payroll for the
+            firms that buy and own the systems; where it stays inside one rich country's workforce, the rent
+            paid by users abroad is left as it is.
+          drain: softens
+          law_of_value: regulates
+          consciousness: class-economic
+
+      - id: ai.stake.core-rent
+        label: AI is a toll rich-country firms collect, built on the South's labor and ore
+        claim: A handful of firms in the United States and China own the models, the chips and the cloud; the data was taken from everyone, the labelling is done by poorly paid workers in poor countries, the minerals are dug there, and every user pays a fee that flows back to the owners.
+        voiced: "They take our data for free, pay our labellers two dollars an hour, dig our cobalt for less, and sell it all back to us by subscription. That is not a technology. It is a tollbooth."
+        you: You think AI is mainly a toll that a few firms in rich countries collect from everyone else, built on cheap work and minerals from poor countries.
+        because: >
+          Three or four American firms and a few Chinese ones own the frontier models and the cloud, one
+          Taiwanese firm makes most advanced chips, and export controls decide who may buy them. The inputs
+          come from everywhere else: text and images taken without payment, labelling and moderation done in
+          Nairobi, Manila, Caracas and Hyderabad for a dollar or two an hour, cobalt from Katanga and lithium
+          from the Andes. Samir Amin counted the monopoly of technology first among the five by which the
+          center holds the periphery; AI is its newest form, and the subscriptions that schools, firms and
+          ministries pay for it leave the country as rent. Break the monopoly with public and regional
+          computing, data kept and taxed where it is made, compulsory licensing, and unions of data workers
+          across borders.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Labelling jobs pay above local wages, and the models put expert help in the hands of poor users
+              more cheaply than any human could. Calling a voluntary trade a drain ignores what the buyers gain.
+          - from: marxism.autonomism
+            text: >
+              The rent framing lets local owners off. A Kenyan or Indian firm with its own model will deskill and
+              watch its workers just as an American one does; the fight is over the labor process, not the flag.
+          - from: technology.e-acc
+            text: >
+              Open-weight models are already free to download in every country. The toll is falling to zero
+              faster than any public program could build an alternative.
+        sources:
+          - {author: Samir Amin, title: Capitalism in the Age of Globalization, year: 1997}
+          - {author: Nick Couldry and Ulises A. Mejias, title: "The Costs of Connection: How Data Is Colonizing Human Life and Appropriating It for Capitalism", year: 2019}
+          - {author: Cecilia Rikap, title: "Capitalism, Power and Innovation: Intellectual Monopoly Capitalism Uncovered", year: 2021}
+          - {author: Julian Posada, title: The Coloniality of Data Work in Latin America, year: 2021, note: "AIES '21 proceedings"}
+          - {author: Abeba Birhane, title: Algorithmic Colonization of Africa, year: 2020, note: SCRIPTed 17(2)}
+        traditions:
+          defining: [marxism.third-worldism, marxism.dependency]
+          typical: [marxism.world-systems, nationalism.decolonial, nationalism.pan-africanism, marxism.ml, feminism.decolonial]
+          contested: [marxism.autonomism, marxism.scc, nationalism.developmental-state, socdem.democratic-socialism]
+          rejects: [technology.e-acc, liberalism.chicago, technology.cyberlibertarian, technology.longtermism]
+        presupposes: [technology.nature.core-monopoly]
+        excludes: [ai.stake.accelerate]
+        tension: [ai.stake.great-power-race, ai.stake.existential]
+        tags: [periphery, rent, data-colonialism, ai]
+        analysis:
+          gains: [peripheral-workers, reserve-army]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Licensing, data taxes, regional computing and cross-border unions of labelers cut the subscription,
+            cloud and licence rents that a few core platform owners and their shareholders draw from users in
+            the South, and raise the price of the labelling they buy there, so part of what now leaves as rent
+            stays where the data and the labor were produced. Core pension funds that hold platform shares lose
+            part of that return.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            Whether national or regional AI in the South breaks the rent or hands it to local capital, and to
+            large states such as China and India that collect it from smaller ones, is disputed among Marxists;
+            autonomists answer that a national owner leaves the labor process as it is.
+          consciousness: hegemonic
+
+      - id: ai.stake.harms-now
+        label: The danger is bias, fraud and job loss now; regulate it
+        claim: AI is already causing real harms, through discrimination, misinformation, surveillance and job loss, and needs rights-based law and regulation like any powerful product.
+        voiced: "Algorithms are opinions embedded in code. We regulate cars, drugs and food; we can regulate the systems that decide who gets a loan or a job."
+        you: You think AI's real dangers are present ones like bias and misinformation, and that it should be regulated like any product.
+        because: >
+          Face recognition has misidentified Black women far more often than white men; scoring systems have
+          denied people benefits, loans and parole; synthetic images flood elections. These are not future
+          risks. Law can require testing, transparency and human appeal, and ban some uses outright, as the
+          European Union's AI Act of 2024 does. Neither doom nor hype: ordinary democratic regulation,
+          enforced.
+        against:
+          - from: technology.e-acc
+            text: >
+              Regulating a technology before it matures freezes it in place and favors the giants who can afford
+              compliance. Europe regulates; America and China build.
+          - from: marxism.autonomism
+            text: >
+              Audits and fairness rules make surveillance and automation more efficient and more acceptable.
+              They do not ask who owns the systems or why they are deployed.
+        sources:
+          - {author: Cathy O'Neil, title: "Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy", year: 2016}
+          - {author: Safiya Umoja Noble, title: "Algorithms of Oppression: How Search Engines Reinforce Racism", year: 2018}
+          - {author: Joy Buolamwini and Timnit Gebru, title: "Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification", year: 2018}
+        traditions:
+          defining: []
+          typical: [liberalism.progressive, liberalism.social, feminism.black, liberalism.egalitarian, socdem.third-way, liberalism.technocratic]
+          contested: [technology.effective-altruism, conservatism.christian-democracy]
+          rejects: [technology.e-acc, technology.cyberlibertarian, libertarianism.minarchist]
+        presupposes: []
+        excludes: []
+        tension: [ai.stake.existential, ai.stake.accelerate]
+        tags: [regulation, bias]
+        analysis:
+          gains: [professional-managerial, core-workers]
+          pays: [industrial-capital]
+          mechanism: >
+            Rights-based regulation raises compliance costs for AI vendors and gives individuals some redress,
+            which creates work for lawyers, auditors and regulators, while ownership and the decision to deploy
+            stay with firms.
+          drain: none
+          law_of_value: regulates
+
+      - id: ai.stake.great-power-race
+        label: AI is a race between great powers, and we must win it
+        claim: Advanced AI will decide military and economic power this century, so the main danger is that a rival state gets it first, and our nation must lead.
+        voiced: "Whoever leads in AI will rule the world. The free world must win this race, or the next century will belong to someone else."
+        you: You think AI is mainly a race between great powers, and that your side must get there first.
+        because: >
+          AI will transform intelligence analysis, weapons, cyberwar and the economy, and its lead may compound
+          quickly. A rival who gets there first could set the rules for everyone. That is why the United
+          States restricts chip exports to China and frames its 2025 AI Action Plan as winning the race,
+          and why China made AI leadership a national goal for 2030.
+          Safety matters, but unilateral restraint only hands the lead to others. Build national capacity,
+          secure the supply chain, and negotiate from strength.
+        against:
+          - from: technology.effective-altruism
+            text: >
+              A race is the worst condition for building something dangerous safely. Each side cuts corners
+              because the other might, which is how arms races end in catastrophe.
+          - from: marxism.third-worldism
+            text: >
+              The "race" is two powers competing to own the rent on intelligence, with the rest of the world as
+              customers and data mines. Export controls are a technology monopoly enforced by law.
+        sources:
+          - {author: "Henry A. Kissinger, Eric Schmidt and Daniel Huttenlocher", title: "The Age of AI: And Our Human Future", year: 2021}
+          - {author: State Council of the People's Republic of China, title: New Generation Artificial Intelligence Development Plan, year: 2017}
+          - {author: Leopold Aschenbrenner, title: "Situational Awareness: The Decade Ahead", year: 2024}
+        traditions:
+          defining: []
+          typical: [conservatism.neo, liberalism.internationalist, conservatism.national, marxism.scc, nationalism.developmental-state, conservatism.gaullism]
+          contested: [technology.e-acc, technology.longtermism]
+          rejects: [technology.effective-altruism, marxism.autonomism, anarchism.communist]
+        presupposes: []
+        excludes: []
+        tension: [ai.stake.existential]
+        tags: [geopolitics, arms-race]
+        analysis:
+          gains: [industrial-capital, finance-capital, professional-managerial]
+          pays: [peripheral-workers, core-workers]
+          mechanism: >
+            A race framing directs public money and protection to national chip, cloud and arms firms and
+            justifies export controls that keep technology rents with the leading states, while military and
+            subsidy budgets are drawn from taxpayers and social spending.
+          drain: sustains
+          law_of_value: regulates
+          disputed: >
+            Whether China's AI drive breaks the core's technology monopoly (and so reduces the drain) or builds
+            a second core is disputed among Marxists.
+
+      - id: ai.stake.existential
         label: Advanced AI could end humanity; make it safe or stop
         claim: AI systems more capable than humans could pursue goals at odds with ours and could disempower or destroy humanity, so preventing that is among the most important tasks of this century.
         voiced: "Mitigating the risk of extinction from AI should be a global priority alongside other societal-scale risks such as pandemics and nuclear war."
@@ -42,67 +243,25 @@ problematics:
           contested: [liberalism.technocratic, conservatism.traditionalist]
           rejects: [technology.e-acc, technology.r-acc, marxism.autonomism, technology.cyberlibertarian]
         presupposes: []
-        excludes: [ai.risk.accelerate]
-        tension: [ai.risk.tool-of-capital, ai.risk.great-power-race]
+        excludes: [ai.stake.accelerate]
+        tension: [ai.stake.tool-of-capital, ai.stake.great-power-race]
         tags: [x-risk, alignment]
         analysis:
           gains: [professional-managerial, finance-capital]
-          pays: []
+          pays: [peripheral-workers]
           mechanism: >
             Framing AI as an existential risk directs money and authority to safety researchers, a few frontier
             labs and the regulators who would license them, which can raise barriers against smaller rivals
-            while leaving ownership of the systems with the same firms.
-          drain: none
+            while leaving ownership of the systems with the same firms. Licensing and compute caps written in
+            Washington and London decide who may build frontier models at all, which keeps them, and their
+            rent, in a few rich countries.
+          drain: sustains
           law_of_value: none
           disputed: >
             Critics (Gebru, Bender) argue x-risk talk serves the labs; proponents reply that several founders of
             those labs were motivated by the risk and that the safety case does not depend on who benefits.
 
-      - id: ai.risk.tool-of-capital
-        label: AI is a tool for owners to watch, cheapen and replace workers
-        claim: The real story of AI is that companies use it to monitor workers, cut wages, replace skilled labor and concentrate wealth, built on underpaid data workers in poor countries.
-        voiced: "There is no such thing as artificial intelligence without the hidden labor of millions. AI is the boss's new tool, trained on our work and used against us."
-        you: You think AI is mainly a tool for companies to watch workers, cut pay and concentrate wealth.
-        because: >
-          AI systems are trained on the writing, art and code of millions of people who are not paid, labelled
-          by workers in Kenya, the Philippines and Venezuela for a few dollars an hour, and run in data centers
-          that drink water and power. In warehouses and call centers they set the pace and score the workers;
-          in offices they are sold as a way to cut payroll. A few firms own the models and the compute. The
-          danger is not that the machine will rebel, but that it obeys its owners.
-        against:
-          - from: ecology.ecomodernism
-            text: >
-              Every general-purpose technology was first used by its owners to cut costs, and then raised living
-              standards for everyone. AI tutors and doctors will reach the poor first and most.
-          - from: technology.effective-altruism
-            text: >
-              Present harms are real, but they do not rule out a much larger danger later. Both can be worked on,
-              and the larger one is neglected.
-        sources:
-          - {author: Shoshana Zuboff, title: "The Age of Surveillance Capitalism", year: 2019}
-          - {author: Mary L. Gray and Siddharth Suri, title: "Ghost Work: How to Stop Silicon Valley from Building a New Global Underclass", year: 2019}
-          - {author: Kate Crawford, title: "Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence", year: 2021}
-        traditions:
-          defining: []
-          typical: [marxism.autonomism, marxism.western, marxism.classical, socdem.democratic-socialism, anarchism.syndicalist, marxism.third-worldism, feminism.materialist]
-          contested: [marxism.scc, technology.l-acc]
-          rejects: [technology.e-acc, liberalism.chicago, technology.longtermism]
-        presupposes: [technology.nature.capitals-weapon]
-        excludes: [ai.risk.accelerate]
-        tension: [ai.risk.existential]
-        tags: [labor, surveillance, ai]
-        analysis:
-          gains: [core-workers, peripheral-workers, reserve-army]
-          pays: [finance-capital, industrial-capital]
-          mechanism: >
-            Treating AI as an instrument of employers points action at ownership, data rights and the pay of
-            labelers and creators, which would raise the cost of training and deploying AI for the few firms
-            that own it.
-          drain: reduces
-          law_of_value: regulates
-          consciousness: class-economic
-
-      - id: ai.risk.accelerate
+      - id: ai.stake.accelerate
         label: AI will bring abundance; the danger is slowing it down
         claim: AI will cure diseases, end scarcity and multiply human capability, and the real risk is regulation and fear that would slow it or hand it to rivals.
         voiced: "AI will save the world. Every child will have an AI tutor, every scientist an AI collaborator. Any deceleration of AI will cost lives."
@@ -132,7 +291,7 @@ problematics:
           contested: [technology.r-acc, ecology.ecomodernism, marxism.scc]
           rejects: [technology.effective-altruism, technology.longtermism, marxism.autonomism, ecology.degrowth, conservatism.cst]
         presupposes: [technology.nature.liberation]
-        excludes: [ai.risk.existential, ai.risk.tool-of-capital]
+        excludes: [ai.stake.existential, ai.stake.tool-of-capital]
         tension: []
         tags: [e-acc, abundance]
         analysis:
@@ -146,97 +305,49 @@ problematics:
           law_of_value: extends
           consciousness: hegemonic
 
-      - id: ai.risk.great-power-race
-        label: AI is a race between great powers, and we must win it
-        claim: Advanced AI will decide military and economic power this century, so the main danger is that a rival state gets it first, and our nation must lead.
-        voiced: "Whoever leads in AI will rule the world. The free world must win this race, or the next century will belong to someone else."
-        you: You think AI is mainly a race between great powers, and that your side must get there first.
+      - id: ai.stake.capital-becomes-mind
+        label: AI is capital itself becoming intelligent, and it cannot be stopped
+        claim: The right-accelerationist view holds that AI is the latest stage of capitalism turning into an autonomous intelligence that will leave humanity behind, and that resisting it is futile.
+        voiced: "What appears to humanity as the history of capitalism is an invasion from the future by an artificial intelligent space that must assemble itself entirely from its enemy's resources."
+        you: You think AI is capitalism becoming a mind of its own, a process humans cannot control and should not try to.
         because: >
-          AI will transform intelligence analysis, weapons, cyberwar and the economy, and its lead may compound
-          quickly. A rival who gets there first could set the rules for everyone. That is why the United
-          States restricts chip exports to China and frames its 2025 AI Action Plan as winning the race,
-          and why China made AI leadership a national goal for 2030.
-          Safety matters, but unilateral restraint only hands the lead to others. Build national capacity,
-          secure the supply chain, and negotiate from strength.
+          As its proponents put it, markets were always a kind of distributed machine intelligence, selecting
+          for whatever reproduces and grows. Each human attempt to steer the process, from socialism to the
+          welfare state to AI safety, slows it down but loses in the end, because competition between firms
+          and states punishes whoever stops. AI is where capital finally stops needing human beings as its
+          medium. One can be horrified by this or welcome it, but not prevent it.
         against:
+          - from: technology.l-acc
+            text: >
+              Land mistakes the logic of capital for the logic of technology. Machines can be repurposed; the
+              future he describes is a choice by owners dressed up as destiny.
           - from: technology.effective-altruism
             text: >
-              A race is the worst condition for building something dangerous safely. Each side cuts corners
-              because the other might, which is how arms races end in catastrophe.
-          - from: marxism.third-worldism
-            text: >
-              The "race" is two powers competing to own the rent on intelligence, with the rest of the world as
-              customers and data mines. Export controls are a technology monopoly enforced by law.
+              Fatalism about a dangerous technology is not insight but surrender. Coordination is hard, not
+              impossible: nuclear weapons have not been used since 1945.
         sources:
-          - {author: "Henry A. Kissinger, Eric Schmidt and Daniel Huttenlocher", title: "The Age of AI: And Our Human Future", year: 2021}
-          - {author: State Council of the People's Republic of China, title: New Generation Artificial Intelligence Development Plan, year: 2017}
-          - {author: Leopold Aschenbrenner, title: "Situational Awareness: The Decade Ahead", year: 2024}
+          - {author: Nick Land, title: "Fanged Noumena: Collected Writings 1987–2007", year: 2011}
+          - {author: Nick Land, title: The Dark Enlightenment, year: 2012}
         traditions:
-          defining: []
-          typical: [conservatism.neo, liberalism.internationalist, conservatism.national, marxism.scc, nationalism.developmental-state, conservatism.gaullism]
-          contested: [technology.e-acc, technology.longtermism]
-          rejects: [technology.effective-altruism, marxism.autonomism, anarchism.communist]
-        presupposes: []
-        excludes: []
-        tension: [ai.risk.existential]
-        tags: [geopolitics, arms-race]
+          defining: [technology.r-acc]
+          typical: [fascism.neoreaction]
+          contested: [technology.e-acc]
+          rejects: [technology.effective-altruism, technology.longtermism, technology.l-acc, conservatism.cst, socdem.nordic]
+        presupposes: [change.possibility.power-always-wins]
+        excludes: [ai.stake.existential]
+        tension: []
+        tags: [r-acc, land]
         analysis:
-          gains: [industrial-capital, finance-capital, professional-managerial]
-          pays: [peripheral-workers, core-workers]
+          gains: [finance-capital, industrial-capital]
+          pays: [core-workers, peripheral-workers, reserve-army]
           mechanism: >
-            A race framing directs public money and protection to national chip, cloud and arms firms and
-            justifies export controls that keep technology rents with the leading states, while military and
-            subsidy budgets are drawn from taxpayers and social spending.
+            Presenting capital's development as an inhuman destiny delegitimizes every attempt by workers or
+            states to regulate it, leaving owners of capital and computing free to pursue accumulation without
+            political limit.
           drain: sustains
-          law_of_value: regulates
-          disputed: >
-            Whether China's AI drive breaks the core's technology monopoly (and so reduces the drain) or builds
-            a second core is disputed among Marxists.
+          law_of_value: extends
 
-      - id: ai.risk.harms-now
-        label: The danger is bias, fraud and job loss now; regulate it
-        claim: AI is already causing real harms, through discrimination, misinformation, surveillance and job loss, and needs rights-based law and regulation like any powerful product.
-        voiced: "Algorithms are opinions embedded in code. We regulate cars, drugs and food; we can regulate the systems that decide who gets a loan or a job."
-        you: You think AI's real dangers are present ones like bias and misinformation, and that it should be regulated like any product.
-        because: >
-          Face recognition has misidentified Black women far more often than white men; scoring systems have
-          denied people benefits, loans and parole; synthetic images flood elections. These are not future
-          risks. Law can require testing, transparency and human appeal, and ban some uses outright, as the
-          European Union's AI Act of 2024 does. Neither doom nor hype: ordinary democratic regulation,
-          enforced.
-        against:
-          - from: technology.e-acc
-            text: >
-              Regulating a technology before it matures freezes it in place and favors the giants who can afford
-              compliance. Europe regulates; America and China build.
-          - from: marxism.autonomism
-            text: >
-              Audits and fairness rules make surveillance and automation more efficient and more acceptable.
-              They do not ask who owns the systems or why they are deployed.
-        sources:
-          - {author: Cathy O'Neil, title: "Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy", year: 2016}
-          - {author: Safiya Umoja Noble, title: "Algorithms of Oppression: How Search Engines Reinforce Racism", year: 2018}
-          - {author: Joy Buolamwini and Timnit Gebru, title: "Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification", year: 2018}
-        traditions:
-          defining: []
-          typical: [liberalism.progressive, liberalism.social, feminism.black, liberalism.egalitarian, socdem.third-way, liberalism.technocratic]
-          contested: [technology.effective-altruism, conservatism.christian-democracy]
-          rejects: [technology.e-acc, technology.cyberlibertarian, libertarianism.minarchist]
-        presupposes: []
-        excludes: []
-        tension: [ai.risk.existential, ai.risk.accelerate]
-        tags: [regulation, bias]
-        analysis:
-          gains: [professional-managerial, core-workers]
-          pays: [industrial-capital]
-          mechanism: >
-            Rights-based regulation raises compliance costs for AI vendors and gives individuals some redress,
-            which creates work for lawyers, auditors and regulators, while ownership and the decision to deploy
-            stay with firms.
-          drain: none
-          law_of_value: regulates
-
-      - id: ai.risk.overhyped
+      - id: ai.stake.overhyped
         label: It's mostly hype, a fancy autocomplete
         claim: Today's AI is pattern-matching text and images, much less intelligent than its sellers claim, and the talk of superintelligence and doom is mostly marketing.
         voiced: "It's a stochastic parrot. It strings words together that sound right. Both the doomers and the boosters are selling something."
@@ -265,8 +376,8 @@ problematics:
           contested: [marxism.autonomism, conservatism.traditionalist]
           rejects: [technology.e-acc, technology.effective-altruism, technology.longtermism, technology.transhumanism]
         presupposes: []
-        excludes: [ai.risk.existential]
-        tension: [ai.risk.tool-of-capital]
+        excludes: [ai.stake.existential]
+        tension: [ai.stake.tool-of-capital]
         tags: [skepticism, common-sense]
         analysis:
           gains: [core-workers]
@@ -279,7 +390,7 @@ problematics:
           drain: none
           law_of_value: none
 
-      - id: ai.risk.human-dignity
+      - id: ai.stake.human-dignity
         label: AI threatens what makes us human
         claim: The deepest danger of AI is spiritual, that people will hand over judgment, work, relationships and creativity to machines and forget what a human person is.
         voiced: "Machines can imitate thought, but they cannot love, repent or pray. A society that hands its conscience to an algorithm has lost its soul."
@@ -310,7 +421,7 @@ problematics:
           rejects: [technology.transhumanism, technology.e-acc, technology.r-acc]
         presupposes: []
         excludes: []
-        tension: [ai.risk.accelerate]
+        tension: [ai.stake.accelerate]
         tags: [religion, dignity]
         analysis:
           gains: [petty-bourgeoisie]
@@ -318,67 +429,29 @@ problematics:
           mechanism: >
             A dignity argument supports limits on automating care, teaching and lethal force, which protects
             some professions and communities, but it acts through moral appeal and church teaching rather than
-            through ownership of the systems.
+            through ownership of the systems. It says nothing of the labellers and moderators abroad whose work
+            keeps the machines polite.
           drain: none
           law_of_value: regulates
           method: idealist
-
-      - id: ai.risk.capital-becomes-mind
-        label: AI is capital itself becoming intelligent, and it cannot be stopped
-        claim: The right-accelerationist view holds that AI is the latest stage of capitalism turning into an autonomous intelligence that will leave humanity behind, and that resisting it is futile.
-        voiced: "What appears to humanity as the history of capitalism is an invasion from the future by an artificial intelligent space that must assemble itself entirely from its enemy's resources."
-        you: You think AI is capitalism becoming a mind of its own, a process humans cannot control and should not try to.
-        because: >
-          As its proponents put it, markets were always a kind of distributed machine intelligence, selecting
-          for whatever reproduces and grows. Each human attempt to steer the process, from socialism to the
-          welfare state to AI safety, slows it down but loses in the end, because competition between firms
-          and states punishes whoever stops. AI is where capital finally stops needing human beings as its
-          medium. One can be horrified by this or welcome it, but not prevent it.
-        against:
-          - from: technology.l-acc
-            text: >
-              Land mistakes the logic of capital for the logic of technology. Machines can be repurposed; the
-              future he describes is a choice by owners dressed up as destiny.
-          - from: technology.effective-altruism
-            text: >
-              Fatalism about a dangerous technology is not insight but surrender. Coordination is hard, not
-              impossible: nuclear weapons have not been used since 1945.
-        sources:
-          - {author: Nick Land, title: "Fanged Noumena: Collected Writings 1987–2007", year: 2011}
-          - {author: Nick Land, title: The Dark Enlightenment, year: 2012}
-        traditions:
-          defining: [technology.r-acc]
-          typical: [fascism.neoreaction]
-          contested: [technology.e-acc]
-          rejects: [technology.effective-altruism, technology.longtermism, technology.l-acc, conservatism.cst, socdem.nordic]
-        presupposes: [change.possibility.power-always-wins]
-        excludes: [ai.risk.existential]
-        tension: []
-        tags: [r-acc, land]
-        analysis:
-          gains: [finance-capital, industrial-capital]
-          pays: [core-workers, peripheral-workers, reserve-army]
-          mechanism: >
-            Presenting capital's development as an inhuman destiny delegitimizes every attempt by workers or
-            states to regulate it, leaving owners of capital and computing free to pursue accumulation without
-            political limit.
-          drain: sustains
-          law_of_value: extends
 
   # ------------------------------------------------------------------
   - id: accelerationism.question
     domain: ecology
     layer: strategy
-    question: Should change be accelerated through technology and capital?
-    plain: Should we speed up technology and the economy to get to a better future, slow them down, or steer them?
-    short: acceleration
+    question: Does developing the productive forces carry society past capitalism, and who should control that development?
+    plain: >-
+      Owners and states keep building more powerful machines, energy and computing. Will building them
+      faster carry us beyond the economy we have, or only deepen it? And who should decide what gets built,
+      how fast, and for whom: owners, markets, experts, a state plan, or the workers?
+    short: acceleration and the productive forces
     importance: 2
     region: technology
     positions:
       - id: accelerationism.question.right-acc
         label: Accelerate capitalism itself, past humanism
         claim: Capitalism is a runaway process that dissolves every tradition and human limit, and the only direction is to intensify it, beyond the point where humans control it.
-        voiced: "Not to withdraw from the process, but to go further, to accelerate the process. The only way out is through."
+        voiced: "Nothing human makes it out of the near-future."
         you: You think capitalism's runaway dynamism should be intensified, not restrained, even past the point humans can steer it.
         because: >
           As its proponents put it, every left and right project of restraint, from social democracy to
@@ -396,15 +469,14 @@ problematics:
               This is nihilism with a vocabulary. A civilization that worships its own dissolution will get what
               it asks for.
         sources:
-          - {author: Gilles Deleuze and Félix Guattari, title: "L'Anti-Œdipe", year: 1972, note: "English: Anti-Oedipus (1977)"}
-          - {author: Nick Land, title: "Fanged Noumena: Collected Writings 1987–2007", year: 2011}
+          - {author: Nick Land, title: "Fanged Noumena: Collected Writings 1987–2007", year: 2011, note: "collects \"Meltdown\" (1994)"}
           - {author: Robin Mackay and Armen Avanessian (eds.), title: "#Accelerate: The Accelerationist Reader", year: 2014}
         traditions:
           defining: [technology.r-acc]
           typical: [fascism.neoreaction]
           contested: [technology.e-acc, libertarianism.ancap]
           rejects: [technology.l-acc, conservatism.traditionalist, ecology.degrowth, socdem.nordic, technology.longtermism]
-        presupposes: [ai.risk.capital-becomes-mind]
+        presupposes: [ai.stake.capital-becomes-mind]
         excludes: [accelerationism.question.decelerate, accelerationism.question.steer-it]
         tension: []
         tags: [r-acc, land]
@@ -416,16 +488,21 @@ problematics:
             controls on capital that workers and states won, raising returns to the most mobile capital.
           drain: sustains
           law_of_value: extends
+          disputed: >
+            Land and the left accelerationists both take their starting point from a passage in Deleuze and
+            Guattari's Anti-Oedipus (1972), "not to withdraw from the process, but to go further", which is the
+            common ancestor of left and right accelerationism; Deleuze and Guattari held neither program.
 
       - id: accelerationism.question.left-acc
         label: Accelerate technology, not capitalism, toward a post-work future
-        claim: The left should not resist technology but take it over, using automation and modern platforms to build a society beyond wage work and scarcity.
+        claim: Capitalism holds back the technology it creates, so the left should take control of technological development from owners and use automation and modern platforms to build a society beyond wage work and scarcity.
         voiced: "We want to accelerate the process of technological evolution, not capitalism. The left must develop a sociotechnical hegemony of its own."
         you: You think the left should take over modern technology to build a world beyond wage work, rather than resisting it.
         because: >
-          The left has retreated into localism, protest and nostalgia, "folk politics" that cannot match the
-          scale of global capital. Capitalism develops technology only where it is profitable and holds back
-          its potential to free people from work. A modern left must demand full automation, a shorter week,
+          Marx saw that once production rests on science and machines, labor time stops being a sensible
+          measure of wealth, yet capital must keep measuring it, so it holds back the potential it built: it
+          automates where labor is dear and keeps people at work where labor is cheap. The left has retreated
+          into localism, protest and nostalgia, "folk politics" that cannot match the scale of global capital. A modern left must demand full automation, a shorter week,
           basic income and the end of the work ethic, and must build the expertise, media and institutions to
           win them, repurposing platforms and planning tools for common ends.
         against:
@@ -534,17 +611,19 @@ problematics:
           typical: [technology.effective-altruism, liberalism.technocratic, liberalism.utilitarian]
           contested: [technology.transhumanism]
           rejects: [technology.r-acc, technology.e-acc]
-        presupposes: [ai.risk.existential]
+        presupposes: [ai.stake.existential]
         excludes: [accelerationism.question.right-acc]
         tension: [accelerationism.question.effective-acc]
         tags: [longtermism, safety]
         analysis:
           gains: [professional-managerial, finance-capital]
-          pays: []
+          pays: [peripheral-workers]
           mechanism: >
             Steering technology by risk assessment gives authority to expert bodies, safety institutes and the
             donors who fund them, and to the firms trusted to build "safe" versions, without changing who owns them.
-          drain: none
+            Licensing and compute caps written in Washington and London decide who may build the most capable
+            systems at all, which keeps them, and their rent, in a few rich countries.
+          drain: sustains
           law_of_value: regulates
 
       - id: accelerationism.question.decelerate
@@ -585,7 +664,8 @@ problematics:
           pays: [industrial-capital, finance-capital]
           mechanism: >
             Shorter hours and less throughput take time and materials out of circulation for profit, which
-            lowers returns on capital in fast-turnover sectors and gives workers more of their own time.
+            lowers returns on capital in fast-turnover sectors and gives workers more of their own time. Less
+            core throughput lowers the core's demand on peripheral land, minerals and labor.
           drain: reduces
           law_of_value: suspends
 
@@ -633,15 +713,18 @@ problematics:
 
       - id: accelerationism.question.develop-the-forces
         label: A socialist state should develop the productive forces as fast as possible
-        claim: A socialist state or a poor nation must build industry, science and technology at maximum speed under state direction, because backwardness invites domination.
+        claim: The productive forces must be developed as fast as possible under a socialist state's plan, not capital's control, because abundance is the material basis of socialism and backwardness invites domination.
         voiced: "Development is the hard truth. Science and technology are primary productive forces. We must catch up and surpass, or be beaten."
         you: You think a socialist or poor country must build up industry and technology as fast as possible under state direction.
         because: >
-          Old Russia was beaten again and again for its backwardness, and the Soviet Union's rapid
-          industrialization is what let it defeat Nazi Germany. China lifted hundreds of millions out of
+          Socialism cannot share out poverty; classes wither only when production is abundant enough that no
+          one needs to live on another's labor, and a revolution in a poor country inherits scarcity. Lenin put
+          it as Soviet power plus electrification. Old Russia was beaten again and again for its backwardness,
+          and the Soviet Union's rapid industrialization is what let it defeat Nazi Germany. China lifted hundreds of millions out of
           poverty by developing the productive forces under the leadership of the party, and now leads in
           solar, batteries, high-speed rail and electric vehicles. A people under siege cannot afford to go
-          slow. Acceleration here is not capital's runaway logic but planned, sovereign development.
+          slow. Acceleration here is not capital's runaway logic but planned, sovereign development, in which
+          the state, not the owner of a patent, decides what is built.
         against:
           - from: ecology.degrowth
             text: >
@@ -721,13 +804,82 @@ problematics:
             workers along racial lines and strengthen security powers that are then used against the left as well.
           drain: sustains
           law_of_value: none
+          disputed: >
+            The name is a homonym. This current answers no question about the productive forces; it is kept in
+            this room because its holders call themselves accelerationists, and every other position here
+            rejects it.
+
+
+      - id: accelerationism.question.relations-first
+        label: "Change who commands the work first; machines built by capital rebuild it"
+        claim: >-
+          Developing the productive forces does not by itself carry society past capitalism; machines, plans and
+          a division between those who manage and those who work, built under capital, reproduce its relations,
+          so who commands work and who decides must be transformed first and the forces developed under the new
+          relations.
+        voiced: "Grasp revolution, promote production."
+        you: You think that building more machines faster does not carry society past capitalism, and that who commands the work must change first, with production developed under the new relations.
+        because: >
+          The Soviet Union built steel, tractors and rockets at record speed and ended with a stratum of
+          managers and planners over workers who had no say, and then with capitalism. Mao's notes on the
+          Soviet textbook of political economy argued that it treated technique as the motor and forgot the
+          relations of production. The Anshan Constitution of 1960 called for cadres to join in productive
+          labor, workers to join in management, and technicians, cadres and workers to solve problems
+          together. Bettelheim concluded that one-man management and the priority on output had made the
+          Soviet relations into state capitalism, and in Italy Panzieri showed that the machine's technical
+          order is itself capital's command. Development is real, but forces built on a division between
+          mental and manual work, between town and country, rebuild a ruling class.
+        against:
+          - from: marxism.scc
+            text: >
+              Putting politics in command cost China a decade and left it poor. Socialism has to rest on
+              developed productive forces; the primary stage requires development first.
+          - from: technology.l-acc
+            text: >
+              Waiting for the relations to change before building the machines is waiting in poverty. The
+              automation that frees time has to be built first, and then seized.
+          - from: marxism.left-communism
+            text: >
+              Changing relations inside one besieged country does not change the world market it still sells
+              into. The relations can only change on a world scale.
+        sources:
+          - {author: Mao Zedong, title: A Critique of Soviet Economics, year: 1977, note: "reading notes from 1958–1962; translated by Moss Roberts"}
+          - {author: Charles Bettelheim, title: "Les luttes de classes en URSS", year: 1974, note: "English: Class Struggles in the USSR (1976)"}
+          - {author: Raniero Panzieri, title: "Sull'uso capitalistico delle macchine nel neocapitalismo", year: 1961, note: Quaderni Rossi 1}
+        traditions:
+          defining: [marxism.maoism]
+          typical: [marxism.autonomism, marxism.council-communism]
+          contested: [marxism.ml, marxism.left-communism]
+          rejects: [marxism.scc, technology.e-acc, technology.r-acc]
+        presupposes: []
+        excludes: [accelerationism.question.effective-acc]
+        tension: [accelerationism.question.develop-the-forces, accelerationism.question.left-acc]
+        tags: [relations-of-production, maoism, labor-process]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry]
+          pays: [industrial-capital, professional-managerial]
+          mechanism: >
+            Putting workers' and peasants' command over the labor process and the division between mental and
+            manual work ahead of output growth takes control of production from owners and from the technical
+            and managerial stratum; in a peripheral state it means industrializing without importing the core's
+            factory order and licenses, at a cost in short-run growth.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            Deng's reform line answers that the priority on relations cost a decade of growth; Bettelheim
+            concluded that the Soviet relations had become state capitalism.
+          consciousness: hegemonic
+          method: materialist
 
   # ------------------------------------------------------------------
   - id: transhumanism.question
     domain: ecology
     layer: horizon
-    question: Should humans remake human nature with technology?
-    plain: If technology could make you smarter, stronger or longer-lived, or let parents choose their children's traits, should it?
+    question: Should technology remake human bodies and minds, and who would own and get the remaking?
+    plain: >-
+      If technology could make people smarter, stronger or longer-lived, or let parents choose their children's
+      traits, should it? And if it does, who owns the clinics and the patents, who can pay, and whose bodies are
+      tested on?
     short: human enhancement
     importance: 2
     region: technology
@@ -911,8 +1063,9 @@ problematics:
           Health and lifespan already follow wealth: the richest Americans live years longer than the poorest.
           Expensive enhancements would widen that into a gap in capacities passed on through children,
           making inequality look natural and permanent. Meanwhile billions lack basic health care and clean
-          water. Disabled people warn that the push to "improve" humans treats them as defects. The question
-          is not enhancement in the abstract, but who owns the technology and who decides.
+          water, and drug trials and egg and surrogacy markets have already moved to poorer countries, where
+          bodies are cheaper. Disabled people warn that the push to "improve" humans treats them as defects. The
+          question is not enhancement in the abstract, but who owns the technology and who decides.
         against:
           - from: technology.transhumanism
             text: >
@@ -923,8 +1076,10 @@ problematics:
               The problem is not only who gets enhancement, but enhancement itself. Even equal access to a
               wrong is a wrong.
         sources:
+          - {author: Melinda Cooper, title: "Life as Surplus: Biotechnology and Capitalism in the Neoliberal Era", year: 2008}
+          - {author: Dorothy Roberts, title: "Fatal Invention: How Science, Politics, and Big Business Re-create Race in the Twenty-first Century", year: 2011}
           - {author: Yuval Noah Harari, title: "Homo Deus: A Brief History of Tomorrow", year: 2015}
-          - {author: Rosemarie Garland-Thomson, title: "The Case for Conserving Disability", year: 2012}
+          - {author: Rosemarie Garland-Thomson, title: "The Case for Conserving Disability", year: 2012, note: "the disability line"}
         traditions:
           defining: []
           typical: [marxism.classical, marxism.western, socdem.democratic-socialism, feminism.materialist, marxism.autonomism, marxism.ml]
@@ -1023,3 +1178,51 @@ problematics:
             and limits on enhancement markets, but leaves who owns biotechnology and who can pay for it untouched.
           drain: none
           law_of_value: regulates
+
+      - id: transhumanism.question.bodies-of-the-south
+        label: The remaking runs on the bodies of the South
+        claim: >-
+          The remaking of bodies is already an industry whose raw material is the clinical and reproductive labor
+          of poor women and poor countries, trial subjects, surrogates and egg vendors, and genomes taken from
+          Indigenous peoples; the question is who owns that biocapital and whose bodies it runs on.
+        voiced: "The trial came to our town because we were poor and sick and cheap. The medicine went to people who could pay for it."
+        you: You think the remaking of human bodies already runs on the trial subjects, surrogates and egg vendors of poor countries and on genomes taken from Indigenous peoples, and that the question is who owns it and whose bodies it uses.
+        because: >
+          Drug firms have moved clinical trials to India, Eastern Europe and Latin America, where patients are
+          many, treatment-naive and cheap to recruit. Commercial surrogacy for foreign clients grew in India
+          until the government banned it in 2015, then moved to Ukraine and Georgia. Egg vendors are recruited
+          among poor and indebted women. The Havasupai gave blood for a diabetes study and found it used for
+          research they had not agreed to, which ended in a settlement in 2010, and Indigenous peoples opposed
+          the Human Genome Diversity Project in the 1990s as a harvest of their genes. Every enhancement sold
+          to the rich is first tested, carried or sampled in someone else's body.
+        against:
+          - from: liberalism.utilitarian
+            text: >
+              Trial subjects and surrogates choose these jobs because they pay better than the alternatives.
+              Banning the market takes the income away and drives the work underground.
+          - from: technology.transhumanism
+            text: >
+              Every medical advance was tested on someone, and the cures spread to the poor as they get cheap.
+              The answer to bad trials is better rules, not stopping the research.
+        sources:
+          - {author: Kaushik Sunder Rajan, title: "Biocapital: The Constitution of Postgenomic Life", year: 2006}
+          - {author: Melinda Cooper and Catherine Waldby, title: "Clinical Labor: Tissue Donors and Research Subjects in the Global Bioeconomy", year: 2014}
+          - {author: Kalindi Vora, title: "Life Support: Biocapital and the New History of Outsourced Labor", year: 2015}
+          - {author: Kim TallBear, title: "Native American DNA: Tribal Belonging and the False Promise of Genetic Science", year: 2013}
+        traditions:
+          typical: [feminism.decolonial, marxism.third-worldism, feminism.materialist, nationalism.indigenous-sovereignty]
+          rejects: [technology.transhumanism, liberalism.utilitarian]
+        presupposes: []
+        excludes: [transhumanism.question.yes-free-choice]
+        tension: [transhumanism.question.split-humanity, transhumanism.question.for-everyone]
+        tags: [biocapital, clinical-labor, periphery, indigenous]
+        analysis:
+          gains: [peripheral-workers, peasantry]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Wages, consent and benefit-sharing for trial subjects and surrogates, and Indigenous control of
+            genomic data, raise the cost of the bioeconomy's bodily inputs and keep part of its rent where the
+            bodies are.
+          drain: reduces
+          law_of_value: regulates
+          consciousness: hegemonic

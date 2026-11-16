@@ -1,0 +1,645 @@
+# Political economy: the calculation and planning debates, market socialism, Austro-Marxism,
+# Fabianism, Keynesian and post-Keynesian economics, and their marginalist and liberal rivals.
+thinkers:
+  # ---- The socialist side of the calculation and planning debates
+  - id: thinker.lange
+    name: Oskar Lange
+    born: 1904
+    died: 1965
+    region: Poland / United States
+    traditions: [marxism.market-socialism]
+    summary: >
+      Polish economist who answered Mises in 1936 with a model in which a central planning board sets
+      prices by trial and error, as a market auctioneer would. He returned to socialist Poland after 1945,
+      served on its planning bodies, and later argued that electronic computers could do the board's work.
+    argues:
+      - {position: calculation.debate.lange-lerner-solved, in: {author: Oskar Lange, title: "On the Economic Theory of Socialism", year: 1936, note: "Review of Economic Studies, 1936-37; book edition with Fred M. Taylor, 1938"}}
+      - {position: planning.form.lange-board, in: {author: Oskar Lange, title: "On the Economic Theory of Socialism", year: 1936}}
+      - {position: allocation.mechanism.market-socialism, in: {author: Oskar Lange, title: "On the Economic Theory of Socialism", year: 1936}}
+      - {position: calculation.debate.computational, in: {author: Oskar Lange, title: "The Computer and the Market", year: 1967, note: "in C. H. Feinstein, ed., Socialism, Capitalism and Economic Growth"}}
+
+  - id: thinker.lerner
+    name: Abba Lerner
+    born: 1903
+    died: 1982
+    region: Bessarabia / Britain / United States
+    traditions: [socdem.keynesian]
+    summary: >
+      Economist raised in London's East End who worked out the pricing rules of a socialist economy with
+      Lange and then turned Keynes's theory into "functional finance": the state should set its spending
+      and taxes by their effect on employment and prices, not by the size of the deficit.
+    argues:
+      - {position: calculation.debate.lange-lerner-solved, in: {author: Abba P. Lerner, title: "The Economics of Control", year: 1944}}
+      - {position: tax.purpose.currency-tool, in: {author: Abba P. Lerner, title: "Functional Finance and the Federal Debt", year: 1943, note: "Social Research 10(1)"}}
+
+  - id: thinker.dobb
+    name: Maurice Dobb
+    born: 1900
+    died: 1976
+    region: England
+    traditions: [marxism.ml]
+    summary: >
+      Cambridge economist and member of the Communist Party of Great Britain for over fifty years. He
+      argued that planning's advantage lies in coordinating investment decisions in advance, which markets
+      cannot do, and traced the origin of capitalism to class struggle inside English feudalism.
+    argues:
+      - {position: calculation.debate.dobb-ex-ante, in: {author: Maurice Dobb, title: "Economic Theory and the Problems of a Socialist Economy", year: 1933, note: "Economic Journal 43"}}
+      - {position: value.source.labor, in: {author: Maurice Dobb, title: "Political Economy and Capitalism", year: 1937}}
+      - {position: history.motor.class-struggle, in: {author: Maurice Dobb, title: "Studies in the Development of Capitalism", year: 1946}}
+
+  - id: thinker.neurath
+    name: Otto Neurath
+    born: 1882
+    died: 1945
+    region: Austria / Netherlands / England
+    traditions: [marxism.austromarxism]
+    summary: >
+      Viennese philosopher and economist, head of the central economic office of the Bavarian Soviet
+      Republic in 1919, later a leader of the Vienna Circle and of Red Vienna's housing and adult-education
+      work. He held that a socialist economy should plan in kind, comparing physical quantities and needs
+      directly without a single unit of account, which provoked Mises's 1920 essay.
+    argues:
+      - {position: calculation.debate.in-kind, in: {author: Otto Neurath, title: "Through War Economy to Economy in Kind", year: 1919, note: "Durch die Kriegswirtschaft zur Naturalwirtschaft"}}
+      - {position: allocation.mechanism.central-planning, in: {author: Otto Neurath, title: "Through War Economy to Economy in Kind", year: 1919}}
+
+  - id: thinker.preobrazhensky
+    name: Yevgeni Preobrazhensky
+    born: 1886
+    died: 1937
+    region: Russia
+    traditions: [marxism.trotskyism]
+    summary: >
+      Bolshevik economist, co-author with Bukharin of The ABC of Communism and a leader of the Left
+      Opposition. He argued that a backward workers' state had to industrialize by "primitive socialist
+      accumulation," drawing a surplus from the peasant and private sectors into state industry. He was
+      shot in 1937.
+    argues:
+      - {position: development.path.planned-industrialization, in: {author: E. A. Preobrazhensky, title: "The New Economics", year: 1926}}
+      - {position: allocation.mechanism.central-planning, in: {author: E. A. Preobrazhensky, title: "The New Economics", year: 1926}}
+
+  - id: thinker.mandel
+    name: Ernest Mandel
+    born: 1923
+    died: 1995
+    region: Belgium
+    traditions: [marxism.trotskyism]
+    summary: >
+      Belgian economist and leader of the Fourth International. He explained the postwar boom and its end
+      by long waves in the rate of profit, held that unequal exchange arises from productivity gaps between
+      national capitals, and defended democratic planning against Alec Nove's market socialism.
+    argues:
+      - {position: crisis.cause.falling-profit, in: {author: Ernest Mandel, title: "Late Capitalism", year: 1972, note: "German original Der Spätkapitalismus"}}
+      - {position: exchange.unequal.productivity-gap, in: {author: Ernest Mandel, title: "Late Capitalism", year: 1972, note: "ch. 11, on unequal exchange"}}
+      - {position: allocation.mechanism.central-planning, in: {author: Ernest Mandel, title: "In Defence of Socialist Planning", year: 1986, note: "New Left Review I/159; planning by democratically elected councils, against bureaucratic planning"}}
+      - {position: hist.ww2.several-wars-in-one, in: {author: Ernest Mandel, title: The Meaning of the Second World War, year: 1986}}
+      - {position: state.relation.smash-and-replace, in: {author: "Ernest Mandel", title: "From Stalinism to Eurocommunism: The Bitter Fruits of 'Socialism in One Country'", year: 1978}}
+
+  - id: thinker.albert
+    name: Michael Albert
+    born: 1947
+    died: null
+    region: United States
+    traditions: [anarchism.communist]
+    summary: >
+      American activist, co-founder of South End Press and Z Magazine, who developed participatory
+      economics with Robin Hahnel: councils of workers and consumers plan through rounds of proposals,
+      with balanced job complexes and pay for effort, without markets or a central planner.
+    argues:
+      - {position: planning.form.participatory, in: {author: Michael Albert and Robin Hahnel, title: "The Political Economy of Participatory Economics", year: 1991}}
+      - {position: allocation.mechanism.participatory-planning, in: {author: Michael Albert, title: "Parecon: Life After Capitalism", year: 2003}}
+
+  - id: thinker.hahnel
+    name: Robin Hahnel
+    born: 1946
+    died: null
+    region: United States
+    traditions: [anarchism.communist]
+    summary: >
+      American economist who taught at American University and built the formal model of participatory
+      economics with Michael Albert. He has defended it against market socialists and against claims that
+      planning without markets cannot handle information.
+    argues:
+      - {position: planning.form.participatory, in: {author: Michael Albert and Robin Hahnel, title: "The Political Economy of Participatory Economics", year: 1991}}
+      - {position: allocation.mechanism.participatory-planning, in: {author: Robin Hahnel, title: "Economic Justice and Democracy: From Competition to Cooperation", year: 2005}}
+
+  # ---- Market socialism and self-management
+  - id: thinker.nove
+    name: Alec Nove
+    born: 1915
+    died: 1994
+    region: Russia / Scotland
+    traditions: [marxism.market-socialism]
+    summary: >
+      Petrograd-born economist of the Soviet economy at the University of Glasgow. He argued that central
+      planning of millions of products had failed on its own terms and proposed a "feasible socialism" of
+      state, social and cooperative firms trading in markets, with planning kept for investment.
+    argues:
+      - {position: allocation.mechanism.market-socialism, in: {author: Alec Nove, title: "The Economics of Feasible Socialism", year: 1983}}
+      - {position: markets.nature.socialist-markets, in: {author: Alec Nove, title: "The Economics of Feasible Socialism", year: 1983}}
+
+  - id: thinker.horvat
+    name: Branko Horvat
+    born: 1928
+    died: 2000
+    region: Croatia / Yugoslavia
+    traditions: [marxism.market-socialism]
+    summary: >
+      Yugoslav economist and theorist of workers' self-management, founder of the Institute of Economic
+      Sciences in Belgrade. He argued that social property run by elected workers' councils, coordinated
+      by markets and indicative planning, was the form of socialism that ended both private and state
+      command over labor.
+    argues:
+      - {position: planning.form.self-management, in: {author: Branko Horvat, title: "The Political Economy of Socialism: A Marxist Social Theory", year: 1982}}
+      - {position: firm.ownership.worker-cooperatives, in: {author: Branko Horvat, title: "Towards a Theory of Planned Economy", year: 1964}}
+
+  - id: thinker.kornai
+    name: János Kornai
+    born: 1928
+    died: 2021
+    region: Hungary
+    traditions: [liberalism.technocratic]
+    summary: >
+      Hungarian economist, a Communist in his youth and a reform economist after 1956, who explained the
+      chronic shortages of planned economies by the "soft budget constraint": state firms that cannot go
+      bankrupt hoard inputs and expand without limit. After 1989 he advised a rapid move to private
+      ownership and markets.
+    argues:
+      - {position: calculation.debate.kornai-incentives, in: {author: János Kornai, title: "The Soft Budget Constraint", year: 1986, note: "Kyklos 39(1)"}}
+      - {position: hist.ussr-late.shortage-economy, in: {author: János Kornai, title: "Economics of Shortage", year: 1980}}
+
+  - id: thinker.roemer
+    name: John Roemer
+    born: 1945
+    died: null
+    region: United States
+    traditions: [marxism.analytical]
+    summary: >
+      American economist and leading analytical Marxist, who derived exploitation and class from unequal
+      ownership of productive assets using general-equilibrium models. He proposed a market socialism of
+      coupon shares that every citizen receives and cannot sell for cash.
+    argues:
+      - {position: class.concept.relation-to-production, in: {author: John E. Roemer, title: "A General Theory of Exploitation and Class", year: 1982}}
+      - {position: allocation.mechanism.market-socialism, in: {author: John E. Roemer, title: "A Future for Socialism", year: 1994}}
+      - {position: inequality.justice.luck-unjust, in: {author: John E. Roemer, title: "Equality of Opportunity", year: 1998}}
+
+  - id: thinker.cohen
+    name: G. A. Cohen
+    born: 1941
+    died: 2009
+    region: Canada / England
+    traditions: [marxism.analytical]
+    summary: >
+      Canadian philosopher raised in a Communist Jewish family in Montreal, later Chichele Professor at
+      Oxford. He defended Marx's theory of history as a functional explanation from the growth of the
+      productive forces, and then turned to answering Nozick's case for self-ownership.
+    argues:
+      - {position: history.motor.technology, in: {author: G. A. Cohen, title: "Karl Marx's Theory of History: A Defence", year: 1978}}
+      - {position: property.self-ownership.social-individual, in: {author: G. A. Cohen, title: "Self-Ownership, Freedom, and Equality", year: 1995, note: "Cohen rejects the self-ownership thesis as the root of libertarian inequality"}}
+      - {position: technology.nature.forces-serve-owners, in: {author: "G. A. Cohen", title: "Karl Marx's Theory of History: A Defence", year: 1978}}
+
+  # ---- Austro-Marxism
+  - id: thinker.hilferding
+    name: Rudolf Hilferding
+    born: 1877
+    died: 1941
+    region: Austria / Germany
+    traditions: [marxism.austromarxism]
+    summary: >
+      Vienna-trained doctor and economist who became the leading economist of German Social Democracy and
+      twice German finance minister. His Finance Capital analysed the fusion of bank and industrial capital
+      and the export of capital; he died in Gestapo custody in Paris.
+    argues:
+      - {position: imperialism.nature.monopoly-stage, in: {author: Rudolf Hilferding, title: "Finance Capital", year: 1910}}
+      - {position: finance.control.nationalize-credit, in: {author: Rudolf Hilferding, title: "Finance Capital", year: 1910, note: "ch. 25: seizing the six great Berlin banks would bring the main branches of industry under social control"}}
+
+  - id: thinker.otto-bauer
+    name: Otto Bauer
+    born: 1881
+    died: 1938
+    region: Austria
+    traditions: [marxism.austromarxism]
+    summary: >
+      Leader of Austrian Social Democracy between the wars and its chief theorist. He defined nations as
+      communities of character formed by a shared history and proposed national cultural autonomy for the
+      peoples of the Habsburg state, organized by persons rather than territory.
+    argues:
+      - {position: nation.question.cultural-autonomy, in: {author: Otto Bauer, title: "The Question of Nationalities and Social Democracy", year: 1907}}
+
+  # ---- Fabianism
+  - id: thinker.sidney-webb
+    name: Sidney Webb
+    born: 1859
+    died: 1947
+    region: England
+    traditions: [socdem.fabian]
+    summary: >
+      Civil servant turned Fabian organizer, co-founder of the London School of Economics and author of the
+      Labour Party's 1918 Clause IV. With Beatrice Webb he wrote the founding histories of British trade
+      unionism and argued for socialism through municipal and parliamentary reform.
+    argues:
+      - {position: change.tempo.inevitability-of-gradualness, in: {author: Sidney Webb, title: "Presidential address to the Labour Party conference", year: 1923, note: "source of the phrase 'the inevitability of gradualness'"}}
+      - {position: firm.ownership.public-municipal, in: {author: Sidney Webb, title: "The London Programme", year: 1891}}
+      - {position: unions.role.bargaining-agent, in: {author: Sidney and Beatrice Webb, title: "Industrial Democracy", year: 1897}}
+
+  - id: thinker.beatrice-webb
+    name: Beatrice Webb
+    born: 1858
+    died: 1943
+    region: England
+    traditions: [socdem.fabian]
+    summary: >
+      Social investigator from a railway-owning family who worked on Charles Booth's survey of London
+      poverty, coined the term "collective bargaining," and wrote the Minority Report of the 1909 Poor Law
+      Commission, which proposed a national minimum in place of the workhouse.
+    argues:
+      - {position: unions.role.bargaining-agent, in: {author: Sidney and Beatrice Webb, title: "Industrial Democracy", year: 1897}}
+      - {position: hist.ussr-stalin.socialism-built, in: {author: Sidney and Beatrice Webb, title: "Soviet Communism: A New Civilisation?", year: 1935}}
+
+  # ---- Keynesian, post-Keynesian and Cambridge economics
+  - id: thinker.kalecki
+    name: Michał Kalecki
+    born: 1899
+    died: 1970
+    region: Poland / England
+    traditions: [socdem.post-keynesian]
+    summary: >
+      Polish economist who worked out a theory of effective demand from Marx's reproduction schemes,
+      independently of Keynes, and explained the division of income between wages and profits by the
+      degree of monopoly. He warned in 1943 that business would oppose lasting full employment because it
+      weakens the threat of the sack.
+    argues:
+      - {position: crisis.cause.demand-failure, in: {author: Michał Kalecki, title: "Essays in the Theory of Economic Fluctuations", year: 1939}}
+      - {position: value.source.surplus-distribution, in: {author: Michał Kalecki, title: "Theory of Economic Dynamics", year: 1954}}
+      - {position: workplace.conflict.structural-antagonism, in: {author: Michał Kalecki, title: "Political Aspects of Full Employment", year: 1943, note: "Political Quarterly 14(4)"}}
+      - {position: comprador.nature.bureaucratic-bourgeoisie, in: {author: Michał Kalecki, title: "Observations on Social and Economic Aspects of 'Intermediate Regimes'", year: 1964, note: "on India and Egypt: a lower-middle class ruling through state capitalism"}}
+
+  - id: thinker.joan-robinson
+    name: Joan Robinson
+    born: 1903
+    died: 1983
+    region: England
+    traditions: [socdem.post-keynesian]
+    summary: >
+      Cambridge economist in Keynes's circle who developed the theory of imperfect competition and led the
+      Cambridge, England side of the capital controversy, arguing that the "quantity of capital" cannot be
+      measured independently of the rate of profit, so marginal productivity cannot explain distribution.
+    argues:
+      - {position: value.source.surplus-distribution, in: {author: Joan Robinson, title: "The Production Function and the Theory of Capital", year: 1953, note: "Review of Economic Studies 21(2), 1953-54"}}
+      - {position: crisis.cause.demand-failure, in: {author: Joan Robinson, title: "The Accumulation of Capital", year: 1956}}
+
+  - id: thinker.sraffa
+    name: Piero Sraffa
+    born: 1898
+    died: 1983
+    region: Italy / England
+    traditions: [socdem.post-keynesian]
+    summary: >
+      Italian economist and friend of Gramsci who left Fascist Italy for Cambridge, edited Ricardo's works,
+      and revived the classical surplus approach: given the techniques in use, the wage and the profit rate
+      vary inversely, and their level is settled outside the price system.
+    argues:
+      - {position: value.source.surplus-distribution, in: {author: Piero Sraffa, title: "Production of Commodities by Means of Commodities", year: 1960}}
+
+  - id: thinker.kaldor
+    name: Nicholas Kaldor
+    born: 1908
+    died: 1986
+    region: Hungary / England
+    traditions: [socdem.keynesian, socdem.post-keynesian]
+    summary: >
+      Budapest-born Cambridge economist and adviser to Labour governments and to governments in India,
+      Ghana and elsewhere on tax reform. He held that money is created by bank lending in response to
+      demand, and led the attack on Thatcher-era monetarism.
+    argues:
+      - {position: crisis.cause.demand-failure, in: {author: Nicholas Kaldor, title: "The Scourge of Monetarism", year: 1982}}
+      - {position: tax.purpose.redistribute, in: {author: Nicholas Kaldor, title: "Indian Tax Reform: Report of a Survey", year: 1956, note: "proposes annual wealth, expenditure and gift taxes"}}
+
+  - id: thinker.minsky
+    name: Hyman Minsky
+    born: 1919
+    died: 1996
+    region: United States
+    traditions: [socdem.post-keynesian]
+    summary: >
+      American economist who argued that stability breeds instability: in good years firms and banks move
+      from hedge finance to speculative and Ponzi finance until a fall in asset prices forces a crash. He
+      proposed that the state act as employer of last resort.
+    argues:
+      - {position: crisis.cause.financial-instability, in: {author: Hyman P. Minsky, title: "Stabilizing an Unstable Economy", year: 1986}}
+      - {position: work.future.job-guarantee, in: {author: Hyman P. Minsky, title: "Stabilizing an Unstable Economy", year: 1986, note: "the government as employer of last resort"}}
+
+  - id: thinker.kelton
+    name: Stephanie Kelton
+    born: 1969
+    died: null
+    region: United States
+    traditions: [socdem.post-keynesian]
+    summary: >
+      American economist of Modern Monetary Theory and adviser to Bernie Sanders's presidential campaigns.
+      She argues that a government issuing its own currency is limited by inflation and real resources,
+      not by revenue, and proposes a federal job guarantee.
+    argues:
+      - {position: money.nature.chartalist, in: {author: Stephanie Kelton, title: "The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy", year: 2020}}
+      - {position: tax.purpose.currency-tool, in: {author: Stephanie Kelton, title: "The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy", year: 2020}}
+      - {position: work.future.job-guarantee, in: {author: Stephanie Kelton, title: "The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy", year: 2020}}
+
+  - id: thinker.myrdal
+    name: Gunnar Myrdal
+    born: 1898
+    died: 1987
+    region: Sweden
+    traditions: [socdem.nordic]
+    summary: >
+      Swedish economist and Social Democratic minister who, with Alva Myrdal, shaped Swedish family policy
+      in the 1930s. He argued that market forces cause cumulative divergence between rich and poor regions
+      and countries, and that the welfare state needs national planning of investment.
+    argues:
+      - {position: welfare.state.social-citizenship, in: {author: Gunnar Myrdal, title: "Beyond the Welfare State: Economic Planning in the Welfare States and its International Implications", year: 1960}}
+      - {position: planning.form.indicative, in: {author: Gunnar Myrdal, title: "Beyond the Welfare State: Economic Planning in the Welfare States and its International Implications", year: 1960}}
+      - {position: development.path.import-substitution, in: {author: Gunnar Myrdal, title: "Economic Theory and Under-Developed Regions", year: 1957, note: "cumulative causation; the case for protection and state planning in poor countries"}}
+
+  - id: thinker.samuelson
+    name: Paul Samuelson
+    born: 1915
+    died: 2009
+    region: United States
+    traditions: [liberalism.social]
+    summary: >
+      MIT economist and author of the most widely used postwar textbook, the leading figure of the
+      "neoclassical synthesis" of Keynesian macroeconomics with marginalist price theory. He defended the
+      aggregate production function against Cambridge, England, and in 1966 conceded the reswitching point.
+    argues:
+      - {position: value.source.marginal-productivity, in: {author: Paul A. Samuelson, title: "Parable and Realism in Capital Theory: The Surrogate Production Function", year: 1962, note: "Review of Economic Studies 29(3)"}}
+      - {position: exchange.unequal.mutual-gain, in: {author: Paul A. Samuelson, title: "The Gains from International Trade", year: 1939, note: "Canadian Journal of Economics and Political Science 5(2)"}}
+
+  # ---- Classical political economy's heirs and rivals
+  - id: thinker.polanyi
+    name: Karl Polanyi
+    born: 1886
+    died: 1964
+    region: Hungary / Austria / England / Canada
+    traditions: [religious.christian-socialism]
+    summary: >
+      Hungarian economic historian, a journalist in Red Vienna and a Christian socialist in 1930s England.
+      He argued that the self-regulating market made land, labor and money into fictitious commodities and
+      that society's defence against it, through protection and regulation, made up the "double movement."
+    argues:
+      - {position: capitalism.nature.market-society, in: {author: Karl Polanyi, title: "The Great Transformation", year: 1944}}
+      - {position: markets.nature.older-than-capitalism, in: {author: Karl Polanyi, title: "The Economy as Instituted Process", year: 1957, note: "in Polanyi, Arensberg and Pearson, eds., Trade and Market in the Early Empires"}}
+
+  - id: thinker.schumpeter
+    name: Joseph Schumpeter
+    born: 1883
+    died: 1950
+    region: Austria / United States
+    traditions: [liberalism.classical]
+    summary: >
+      Austrian economist, briefly finance minister of the Austrian Republic in 1919, later at Harvard. He
+      located profit in the innovating entrepreneur's temporary monopoly, explained imperialism as a
+      survival of pre-capitalist warrior classes, and predicted that capitalism's own success would carry
+      it into socialism.
+    argues:
+      - {position: value.source.entrepreneurial-risk, in: {author: Joseph A. Schumpeter, title: "The Theory of Economic Development", year: 1911, note: "profit from innovation, competed away by imitators"}}
+      - {position: imperialism.nature.foreign-policy-choice, in: {author: Joseph A. Schumpeter, title: "The Sociology of Imperialisms", year: 1919}}
+      - {position: history.elites.competing-elites, in: {author: Joseph A. Schumpeter, title: "Capitalism, Socialism and Democracy", year: 1942, note: "democracy as competition between leaders for the people's vote"}}
+
+  - id: thinker.weber
+    name: Max Weber
+    born: 1864
+    died: 1920
+    region: Germany
+    traditions: [liberalism.social]
+    summary: >
+      German sociologist and liberal nationalist, a founder of the German Democratic Party in 1918. He
+      defined class by shared life chances in markets for goods and labor, distinct from status and party,
+      and argued that socialist planning in kind could not calculate rationally.
+    argues:
+      - {position: class.concept.market-situation-status, in: {author: Max Weber, title: "Economy and Society", year: 1922, note: "Part One, ch. 4, and Part Two, 'Class, Status, Party'"}}
+      - {position: calculation.debate.mises-impossible, in: {author: Max Weber, title: "Economy and Society", year: 1922, note: "Part One, ch. 2, §12, against Neurath's calculation in kind, written independently of Mises"}}
+
+  - id: thinker.hobson
+    name: J. A. Hobson
+    born: 1858
+    died: 1940
+    region: England
+    traditions: [liberalism.social]
+    summary: >
+      English New Liberal economist and journalist who reported on the Boer War. He argued that
+      underconsumption at home, caused by unequal income, drove investors to seek outlets abroad, and that
+      imperialism served a small class of financiers that redistribution could disarm.
+    argues:
+      - {position: crisis.cause.underconsumption, in: {author: A. F. Mummery and J. A. Hobson, title: "The Physiology of Industry", year: 1889}}
+      - {position: imperialism.nature.foreign-policy-choice, in: {author: J. A. Hobson, title: "Imperialism: A Study", year: 1902}}
+
+  - id: thinker.bohm-bawerk
+    name: Eugen von Böhm-Bawerk
+    born: 1851
+    died: 1914
+    region: Austria
+    traditions: [liberalism.austrian]
+    summary: >
+      Austrian economist and three times finance minister of the Habsburg state. He explained interest by
+      time preference and the productivity of roundabout production, and argued that Marx's third volume
+      contradicted the first by abandoning the labor theory of value in the theory of prices.
+    argues:
+      - {position: value.source.subjective-utility, in: {author: Eugen von Böhm-Bawerk, title: "Karl Marx and the Close of His System", year: 1896}}
+      - {position: profit.legitimacy.earned-reward, in: {author: Eugen von Böhm-Bawerk, title: "The Positive Theory of Capital", year: 1889, note: "interest as the price of time, not deduction from labor"}}
+
+  - id: thinker.knight
+    name: Frank Knight
+    born: 1885
+    died: 1972
+    region: United States
+    traditions: [liberalism.chicago]
+    summary: >
+      Founder of the Chicago school of economics and teacher of Friedman, Stigler and Buchanan. He
+      distinguished measurable risk from true uncertainty and held that profit is the reward for bearing
+      uncertainty that cannot be insured.
+    argues:
+      - {position: value.source.entrepreneurial-risk, in: {author: Frank H. Knight, title: "Risk, Uncertainty and Profit", year: 1921}}
+
+  - id: thinker.becker
+    name: Gary Becker
+    born: 1930
+    died: 2014
+    region: United States
+    traditions: [liberalism.chicago]
+    summary: >
+      Chicago economist who extended price theory to schooling, discrimination, crime and the family. He
+      treated workers' skills as human capital, so that wage differences reflect differences in
+      investment in training and in the productivity it yields.
+    argues:
+      - {position: wage.nature.marginal-product, in: {author: Gary S. Becker, title: "Human Capital", year: 1964}}
+      - {position: education.purpose.human-capital, in: {author: Gary S. Becker, title: Human Capital, year: 1964}}
+      - {position: prisons.purpose.deterrence, in: {author: Gary S. Becker, title: "Crime and Punishment: An Economic Approach", year: 1968}}
+
+  - id: thinker.eucken
+    name: Walter Eucken
+    born: 1891
+    died: 1950
+    region: Germany
+    traditions: [liberalism.ordoliberal]
+    summary: >
+      Freiburg economist and founder of the Freiburg school. He argued that both laissez-faire and central
+      planning end in concentrations of private or state power, and that the state must build and guard a
+      competitive order through law, stable money and the breaking of monopolies.
+    argues:
+      - {position: markets.nature.framed-tool, in: {author: Walter Eucken, title: "Principles of Economic Policy", year: 1952, note: "Grundsätze der Wirtschaftspolitik, posthumous"}}
+      - {position: allocation.mechanism.social-market, in: {author: Walter Eucken, title: "Principles of Economic Policy", year: 1952}}
+
+  - id: thinker.gaffney
+    name: Mason Gaffney
+    born: 1923
+    died: 2020
+    region: United States
+    traditions: [libertarianism.georgist]
+    summary: >
+      American land economist at the University of California, Riverside. He argued that neoclassical
+      economics was shaped around 1900 to fold land into capital and bury Henry George's case for taxing
+      land rent.
+    argues:
+      - {position: value.source.land-and-labor, in: {author: Mason Gaffney and Fred Harrison, title: "The Corruption of Economics", year: 1994}}
+      - {position: tax.purpose.land-value, in: {author: Mason Gaffney and Fred Harrison, title: "The Corruption of Economics", year: 1994}}
+
+  # ---- Inequality, rent and the entrepreneurial state
+  - id: thinker.piketty
+    name: Thomas Piketty
+    born: 1971
+    died: null
+    region: France
+    traditions: [socdem.democratic-socialism]
+    summary: >
+      French economist who built long-run series of income and wealth from tax records and argued that
+      when the return on capital exceeds growth, inherited wealth concentrates. He proposes a
+      "participatory socialism" of progressive wealth taxes, a capital endowment for every young adult and
+      shared power in firms.
+    argues:
+      - {position: tax.purpose.redistribute, in: {author: Thomas Piketty, title: "Capital in the Twenty-First Century", year: 2014, note: "French original 2013"}}
+      - {position: property.inheritance.universal-endowment, in: {author: Thomas Piketty, title: "Capital and Ideology", year: 2020, note: "French original 2019"}}
+      - {position: firm.ownership.codetermination, in: {author: Thomas Piketty, title: "Capital and Ideology", year: 2020}}
+
+  - id: thinker.mazzucato
+    name: Mariana Mazzucato
+    born: 1968
+    died: null
+    region: Italy / United States / England
+    traditions: [liberalism.progressive]
+    summary: >
+      Italian-American economist at University College London who argues that the state has led the
+      riskiest investment behind modern technology, and that finance and platform firms often extract
+      value created elsewhere while national accounts count it as production.
+    argues:
+      - {position: profit.legitimacy.rent-not-profit, in: {author: Mariana Mazzucato, title: "The Value of Everything: Making and Taking in the Global Economy", year: 2018}}
+      - {position: allocation.mechanism.mixed-steered, in: {author: Mariana Mazzucato, title: "The Entrepreneurial State", year: 2013}}
+
+  - id: thinker.stiglitz
+    name: Joseph Stiglitz
+    born: 1943
+    died: null
+    region: United States
+    traditions: [liberalism.progressive]
+    summary: >
+      American economist of imperfect information and chief economist of the World Bank from 1997 to 2000.
+      He blamed the IMF's austerity and capital-market opening for deepening the Asian and Russian crises
+      and defended controls on short-term capital flows.
+    argues:
+      - {position: intl.institutions.reform-democratize, in: {author: Joseph E. Stiglitz, title: "Globalization and Its Discontents", year: 2002}}
+      - {position: finance.control.prudential, in: {author: Joseph E. Stiglitz, title: "Globalization and Its Discontents", year: 2002}}
+      - {position: hist.collapse-1989.shock-therapy-blunder, in: {author: Joseph E. Stiglitz, title: Globalization and Its Discontents, year: 2002, note: "chapter 5, who lost Russia?"}}
+
+  # ---- Third Way
+  - id: thinker.giddens
+    name: Anthony Giddens
+    born: 1938
+    died: null
+    region: England
+    traditions: [socdem.third-way]
+    summary: >
+      British sociologist and director of the London School of Economics who gave New Labour its theory.
+      He argued that globalization had ended old social democracy and proposed a "social investment state"
+      on the rule "no rights without responsibilities."
+    argues:
+      - {position: welfare.conditions.workfare, in: {author: Anthony Giddens, title: "The Third Way: The Renewal of Social Democracy", year: 1998}}
+      - {position: hist.neoliberal-turn.third-way-globalization, in: {author: Anthony Giddens, title: "The Third Way: The Renewal of Social Democracy", year: 1998}}
+
+  - id: thinker.blair
+    name: Tony Blair
+    born: 1953
+    died: null
+    region: Britain
+    traditions: [socdem.third-way]
+    summary: >
+      Leader of the British Labour Party from 1994 and prime minister from 1997 to 2007, who rewrote Clause
+      IV in 1995 to drop the commitment to common ownership. With Gerhard Schröder he set out a program of
+      flexible labor markets and welfare tied to work.
+    argues:
+      - {position: work.future.flexible-markets, in: {author: Tony Blair and Gerhard Schröder, title: "Europe: The Third Way / Die Neue Mitte", year: 1999}}
+      - {position: hist.neoliberal-turn.third-way-globalization, in: {author: Tony Blair, title: "Speech to the Labour Party conference, Brighton", year: 2005, note: "'You might as well debate whether autumn should follow summer'"}}
+
+  # ---- The welfare state: whose, and on what conditions
+  - id: thinker.beveridge
+    name: William Beveridge
+    born: 1879
+    died: 1963
+    region: India / England
+    traditions: [liberalism.social]
+    summary: >
+      British Liberal economist and director of the London School of Economics whose 1942 report proposed
+      national insurance against want, sickness and old age, a national health service and full employment,
+      the plan on which the postwar Labour government built the British welfare state.
+    argues:
+      - {position: health.care.national-service, in: {author: William Beveridge, title: "Social Insurance and Allied Services", year: 1942, note: "Assumption B, a comprehensive health service"}}
+      - {position: crisis.cause.demand-failure, in: {author: William H. Beveridge, title: "Full Employment in a Free Society", year: 1944}}
+
+  - id: thinker.oconnor
+    name: James O'Connor
+    born: 1930
+    died: 2019
+    region: United States
+    traditions: [marxism.ecosocialism]
+    summary: >
+      American Marxist economist at the University of California, Santa Cruz, and founder of the journal
+      Capitalism Nature Socialism. He argued that the state must both aid accumulation and buy legitimacy,
+      and that spending on both outruns the taxes capital will bear, producing a fiscal crisis.
+    argues:
+      - {position: tax.purpose.class-instrument, in: {author: James O'Connor, title: "The Fiscal Crisis of the State", year: 1973}}
+      - {position: welfare.state.capital-reproduction, in: {author: James O'Connor, title: "The Fiscal Crisis of the State", year: 1973}}
+
+  - id: thinker.piven
+    name: Frances Fox Piven
+    born: 1932
+    died: null
+    region: Canada / United States
+    traditions: [socdem.democratic-socialism]
+    summary: >
+      American political scientist at the City University of New York and organizer in the welfare rights
+      movement. With Richard Cloward she argued that relief expands to quiet disorder among the poor and
+      contracts to drive them back into low-wage work, and that poor people win concessions by disruption.
+    argues:
+      - {position: welfare.conditions.discipline-labor, in: {author: Frances Fox Piven and Richard A. Cloward, title: "Regulating the Poor: The Functions of Public Welfare", year: 1971}}
+      - {position: hist.new-deal.won-from-below, in: {author: Frances Fox Piven and Richard A. Cloward, title: "Poor People's Movements: Why They Succeed, How They Fail", year: 1977}}
+
+  - id: thinker.korpi
+    name: Walter Korpi
+    region: Sweden
+    traditions: [socdem.nordic]
+    summary: >
+      Swedish sociologist at the Swedish Institute for Social Research who explained welfare states by the
+      organized power of labor. With Joakim Palme he showed that universal programs reduce poverty more
+      than benefits targeted at the poor, because they keep the middle classes paying in and defending
+      them.
+    argues:
+      - {position: welfare.conditions.universal-entitlement, in: {author: Walter Korpi and Joakim Palme, title: "The Paradox of Redistribution and Strategies of Equality", year: 1998, note: "American Sociological Review 63(5)"}}
+      - {position: welfare.state.social-citizenship, in: {author: Walter Korpi, title: "The Democratic Class Struggle", year: 1983}}
+      - {position: history.elites.curbed-by-mass-power, in: {author: Walter Korpi, title: The Democratic Class Struggle, year: 1983}}
+
+  - id: thinker.levy
+    name: Santiago Levy
+    region: Mexico
+    traditions: [liberalism.technocratic]
+    summary: >
+      Mexican economist and deputy finance minister from 1994 to 2000 who designed Progresa, later
+      Oportunidades, the cash transfer paid to poor mothers on condition of school attendance and health
+      checks, which was copied across Latin America and beyond.
+    argues:
+      - {position: welfare.conditions.conditional-cash, in: {author: Santiago Levy, title: "Progress Against Poverty: Sustaining Mexico's Progresa-Oportunidades Program", year: 2006}}

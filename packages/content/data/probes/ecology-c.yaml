@@ -126,7 +126,7 @@ nodes:
     text: >
       You are writing the one sentence on ecology in your party's manifesto. It has to fit on a leaflet, and
       it will be quoted back at you for years. Which do you write?
-    why: This asks what you think should be done about growth and the ecological crisis.
+    why: This asks who you think should decide what is produced, and whether it should grow or shrink.
     options:
       - id: green
         text: "Keep growing, but clean: green jobs, green industry, green growth."
@@ -152,17 +152,30 @@ nodes:
       - id: home
         text: "Conserve the land we love, our fields and rivers, not some planetary plan from above."
         evidence: [{position: growth.ecology.home-and-stewardship, w: 3}]
+      - id: abundance
+        text: "Take energy off the owners and build clean power big: cheaper bills, more homes, secure jobs. More for working people, not less."
+        evidence: [{position: growth.ecology.socialist-abundance, w: 3}]
+      - id: commune
+        text: "Slow down: take production into common hands, make housing, transport and care free, and stop making what only profit needs."
+        evidence: [{position: growth.ecology.degrowth-communism, w: 3}]
+      - id: land
+        text: "No mine, dam or plantation without the consent of the people who live there. Living well on the land, not growth."
+        evidence: [{position: growth.ecology.communities-decide, w: 3}]
+      - id: delink
+        text: "Break with the debt and the trade terms, give the land to those who work it, and plan our industry for our own needs. The rich countries shrink and pay."
+        evidence: [{position: growth.ecology.sovereign-planned-south, w: 3}]
 
   - id: probe.growth.ecology.voices
     type: voices
     title: The summit fringe
     text: >
-      On the fringe of a climate summit, three delegates share a taxi. Who has the right answer to growth?
+      On the fringe of a climate summit, three delegates share a taxi. Who is right about what should be made,
+      and who should decide?
     voices:
       - {name: "An Indian trade negotiator", says: "Three hundred million of our people don't have reliable electricity. Don't lecture us about limits."}
       - {name: "A Swedish degrowth economist", says: "Rich countries can't cut emissions fast enough while they keep growing. We need to use less, and live well on it."}
       - {name: "A Danish wind-industry executive", says: "Look at our turbines. Growth and emissions have already come apart. Build more, faster."}
-    why: This asks what you think should be done about growth and ecology, through three people in one taxi.
+    why: This asks who you think should decide what is produced, and whether it should grow, through three people in one taxi.
     options:
       - id: india
         text: The negotiator. Poor countries get to grow first.
@@ -171,7 +184,7 @@ nodes:
       - id: sweden
         text: The economist. Rich countries have to use less.
         cause: structures
-        evidence: [{position: growth.ecology.degrowth, w: 3}]
+        evidence: [{position: growth.ecology.degrowth, w: 3}, {position: growth.ecology.degrowth-communism, w: 1}]
       - id: denmark
         text: The executive. Grow clean. It's already working.
         cause: ideas
@@ -179,7 +192,7 @@ nodes:
       - id: plan
         text: All three take the market as given. Plan what gets made for what people need, within the planet's limits.
         cause: structures
-        evidence: [{position: growth.ecology.ecosocialism, w: 3}]
+        evidence: [{position: growth.ecology.ecosocialism, w: 3}, {position: growth.ecology.socialist-abundance, w: 1}, {position: growth.ecology.degrowth-communism, w: 1}]
       - id: tech
         text: The executive, but go further. Nuclear, synthetic food and cities that free land for the wild.
         cause: ideas
@@ -195,15 +208,22 @@ nodes:
       - id: local
         text: Summits are the problem. People protect the places they love, not the planet in the abstract.
         cause: culture
-        evidence: [{position: growth.ecology.home-and-stewardship, w: 3}]
+        evidence: [{position: growth.ecology.home-and-stewardship, w: 3}, {position: growth.ecology.communities-decide, w: 1}]
+      - id: delink
+        text: The negotiator is half right. Grow, yes, but not with our own billionaires selling ore and coal to the North. Delink, give the land to the peasants, plan for our needs, and make the North shrink and pay.
+        cause: structures
+        evidence:
+          - {position: growth.ecology.sovereign-planned-south, w: 3}
+          - {position: growth.ecology.southern-right-to-develop, w: 1}
 
   - id: probe.growth.ecology.tradeoff
     type: tradeoff
     title: The steel plant
     text: >
-      A new steel plant would employ 6,000 people in a poor province and double its income in ten years. It
-      would also add as much carbon as a small European country. You have the final say on the permit.
-    why: This asks how you weigh growth against ecological limits.
+      A new steel plant would employ 6,000 people in a poor province and double its income in ten years. A
+      foreign steel group would own it and export most of the slab. It would also add as much carbon as a
+      small European country. You have the final say on the permit.
+    why: This asks who you think should decide what gets produced, for whom, and whether it should grow.
     options:
       - id: build-green
         text: Build it, with hydrogen furnaces and a carbon price, even if it costs more. Grow, but clean.
@@ -218,19 +238,24 @@ nodes:
         evidence: [{position: growth.ecology.ecomodernism, w: 3}]
       - id: plan
         text: Build it public, for railways and housing the country needs, not for export profit.
-        evidence: [{position: growth.ecology.ecosocialism, w: 3}]
+        evidence: [{position: growth.ecology.ecosocialism, w: 3}, {position: growth.ecology.socialist-abundance, w: 2}]
       - id: elsewhere
         text: Build it here, and let the rich countries close theirs. They used up the carbon budget.
         evidence: [{position: growth.ecology.southern-right-to-develop, w: 3}]
       - id: refuse
         text: Refuse. The rich world needs less steel, not more plants anywhere.
-        evidence: [{position: growth.ecology.degrowth, w: 3}]
+        evidence: [{position: growth.ecology.degrowth, w: 3}, {position: growth.ecology.degrowth-communism, w: 1}]
       - id: wild
         text: Refuse. The hills it would strip are home to more than people.
         evidence: [{position: growth.ecology.deep-ecology, w: 3}]
       - id: ask
         text: Ask the province. If the people who live there want it and will look after the land, it's theirs to decide.
-        evidence: [{position: growth.ecology.home-and-stewardship, w: 3}]
+        evidence: [{position: growth.ecology.home-and-stewardship, w: 3}, {position: growth.ecology.communities-decide, w: 2}]
+      - id: own-plan
+        text: Not this plant. Build steel under our own plan, for our rails and houses, without the foreign group's licences, and make the rich countries cut theirs and pay for the clean furnaces.
+        evidence:
+          - {position: growth.ecology.sovereign-planned-south, w: 3}
+          - {position: growth.ecology.ecosocialism, w: 1}
 
   # ---------------- population.question ----------------
   - id: probe.population.question.eight-billion
@@ -238,15 +263,15 @@ nodes:
     title: Eight billion
     text: >
       The world passed eight billion people in 2022. In much of Africa families are still large; in Korea,
-      Italy and China births have collapsed. Is population the problem?
-    why: This asks whether you think population is the problem, and what kind of cause you reach for.
+      Italy and China births have collapsed. Who, if anyone, is too many?
+    why: This asks whom you count as too many, and whose births or whose consumption you would target, and what kind of cause you reach for.
     options:
       - id: too-many
-        text: Yes. Eight billion is too many for one planet, whatever we consume.
+        text: All of us, past a point. Eight billion is too many for one planet, whatever we consume.
         cause: nature
         evidence: [{position: population.question.too-many, w: 3}]
       - id: consumption
-        text: No. The richest tenth does most of the damage. It's what they consume, not how many poor people there are.
+        text: The richest tenth, if anyone. They do most of the damage. It's what they consume, not how many poor people there are.
         cause: structures
         evidence: [{position: population.question.consumption-not-numbers, w: 3}]
       - id: surplus
@@ -254,7 +279,7 @@ nodes:
         cause: structures
         evidence: [{position: population.question.surplus-made-by-capital, w: 3}]
       - id: resource
-        text: No. Every person is a mind as well as a mouth. More people, more ideas.
+        text: Nobody. Every person is a mind as well as a mouth. More people, more ideas.
         cause: ideas
         evidence: [{position: population.question.people-are-the-resource, w: 3}]
       - id: too-few
@@ -280,7 +305,7 @@ nodes:
     text: >
       You're a health minister. Your country's population will double in twenty-five years, and schools are
       already at sixty pupils a class. The cabinet wants a population policy by the end of the month.
-    why: This asks whether you think population is the problem and what, if anything, the state should do about it.
+    why: This asks whom you think a population policy should land on, and what, if anything, the state should do.
     conditions:
       - id: which-groups
         text: It depends which communities are growing fastest.
@@ -317,7 +342,7 @@ nodes:
       - {name: "A demographer", says: "Every rich country that educated women saw births fall. It's development, not decadence."}
       - {name: "A family-policy minister", says: "A nation without children has no future. We should pay people to have them."}
       - {name: "An ecologist", says: "Fewer Italians is the best news for the climate this year."}
-    why: This asks whether you think population is the problem, through three guests with three answers.
+    why: This asks whom you count as too many, and whose births or whose consumption you would target, through three guests with three answers.
     options:
       - id: demographer
         text: The demographer. Countries get richer and it sorts itself out.
@@ -376,7 +401,7 @@ nodes:
         evidence: [{position: climate.justice.shared-but-differentiated, w: 3}]
       - id: firms
         text: Make the oil majors pay. They made the money; they can fund the forest.
-        evidence: [{position: climate.justice.the-rich-and-the-firms, w: 3}]
+        evidence: [{position: climate.justice.the-rich-and-the-firms, w: 3}, {position: climate.justice.expropriate-fossil-capital, w: 1}]
       - id: earth
         text: The forest isn't anyone's to sell or spare. The debt is to the earth herself.
         evidence: [{position: climate.justice.owed-to-mother-earth, w: 3}]
@@ -416,6 +441,12 @@ nodes:
         - id: leave
           text: Payments to oil and coal countries to leave reserves in the ground
           evidence: [{position: climate.justice.pay-us-to-leave-it, w: 2}]
+        - id: seize
+          text: The cash and assets of fossil companies taken into public ownership, their reserves written off
+          evidence: [{position: climate.justice.expropriate-fossil-capital, w: 2}]
+        - id: move
+          text: Visas, work and citizens' rights in the rich countries for people driven out by floods, drought and heat
+          evidence: [{position: climate.justice.open-the-borders, w: 2}]
     options:
       - {id: done, text: Done}
 
@@ -460,3 +491,13 @@ nodes:
         text: All three argue about the past. The ones owed are the children not yet born.
         cause: ideas
         evidence: [{position: climate.justice.future-generations, w: 3}]
+      - id: seize
+        text: All three treat the oil as somebody's property to be paid for. Take the oil companies over and shut the wells.
+        cause: structures
+        evidence: [{position: climate.justice.expropriate-fossil-capital, w: 3}]
+      - id: borders
+        text: All three talk about money and oil. Your countries are building walls against the people your smoke drives out. Part of the debt is paid by letting them in, as citizens.
+        cause: structures
+        evidence:
+          - {position: climate.justice.open-the-borders, w: 3}
+          - {position: climate.justice.climate-debt, w: 1}

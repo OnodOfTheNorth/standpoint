@@ -1,0 +1,492 @@
+id: descent.fascist-family
+title: Which right?
+blurb: For people on the nationalist, traditionalist or identitarian right. Fascism, national syndicalism, the clerical corporate state, Perón, identitarians, ecofascists and neo-reaction, separated on unions, owners, empire and who belongs.
+region: nation
+gate:
+  any:
+    - {weight: {position: fascism.nature.national-rebirth-self-view, gt: 0.25}}
+    - {weight: {position: workplace.conflict.nation-above-class, gt: 0.25}}
+    - {weight: {position: state.nature.organic-nation, gt: 0.25}}
+    - {weight: {position: nationalism.kinds.ethnopluralism, gt: 0.25}}
+    - {weight: {position: migration.cause.elite-replacement, gt: 0.25}}
+    - {weight: {position: nation.belonging.descent, gt: 0.25}}
+    - {weight: {position: borders.migration.remigration, gt: 0.25}}
+    - {weight: {position: contradiction.primary.globalism-vs-nations, gt: 0.25}}
+    - {weight: {position: tradition.modernity.sacred-order, gt: 0.25}}
+    - {weight: {position: authority.legitimacy.leader-embodiment, gt: 0.25}}
+    - {weight: {position: fascism.response.threat-overblown, gt: 0.25}}
+    - {holdsAny: [cs.clean-house.tough-leader, cs.rigged.hidden-hand, reform.revolution.national-revolution, reform.revolution.restoration, religion.public.faith-as-nation, nation.question.ethnic, state.relation.market-exit]}
+entry: descent.fascist-family.01
+nodes:
+  - id: descent.fascist-family.01
+    type: verdict
+    title: Rome, 1922
+    text: >
+      Italy, October 1922. For two years armed squads, paid partly by landowners, have burned union halls
+      and socialist printing presses across the Po valley. Now thousands of blackshirts march on Rome. The
+      king refuses to sign the decree for martial law and asks Mussolini to form a government. Where would
+      you have stood?
+    why: The march on Rome separates fascists, the conservatives who let them in, the conservatives who would have stopped them, and the left they were aimed at.
+    options:
+      - id: march
+        text: With the march. Veterans of the trenches saving a nation worn out by strikes and a parliament of talkers.
+        evidence:
+          - {position: fascism.nature.national-rebirth-self-view, w: 3}
+          - {position: hist.wwi-1914.front-generation, w: 2}
+        next: descent.fascist-family.02
+      - id: squads
+        text: With the squads, not the deal. The day he took office he sold the revolution to the king, the Church and the industrialists.
+        evidence:
+          - {position: reform.revolution.national-revolution, w: 3}
+          - {position: unions.role.national-labor, w: 1}
+        next: descent.fascist-family.02
+      - id: king
+        text: With the king. Better to bring him inside and tame him than risk civil war or a red government.
+        evidence:
+          - {position: police.role.order-maintenance, w: 2}
+          - {position: reform.revolution.change-to-conserve, w: 1}
+        next: descent.fascist-family.02
+      - id: constitution
+        text: Against. The army should have stopped them at the gates. A government made by squads is no government.
+        evidence:
+          - {position: violence.political.state-monopoly, w: 3}
+          - {position: tradition.modernity.inherited-wisdom, w: 1}
+        next: descent.fascist-family.02
+      - id: leagues
+        text: Against, with the workers who armed to defend their halls. The owners paid for the squads, and the march was the bill.
+        evidence:
+          - {position: fascism.response.workers-united-front, w: 2}
+          - {position: fascism.nature.finance-capital-dictatorship, w: 1}
+          - {position: fascism.nature.petty-bourgeois-mass-movement, w: 1}
+        next: descent.fascist-family.02
+
+  - id: descent.fascist-family.02
+    type: scene
+    title: The harvest wage
+    text: >
+      Andalusia, 1941. The war is won. Estates the Republic handed to day laborers are back with their
+      owners. Strikes are a crime, and the only union is the state's, owners and laborers enrolled together
+      by branch under the Falange. You are its delegate for the district. Bread is scarce. The biggest
+      landowner asks you to approve a harvest wage below last year's.
+    why: This asks who the corporate state's one union served, which separates Francoists, national syndicalists, Catholic corporatists, market conservatives and the left.
+    options:
+      - id: approve
+        text: Approve it. The war was fought so that owner and laborer serve Spain together, without strikes. Hunger passes.
+        evidence:
+          - {position: conflict.nature.organic-harmony, w: 2}
+          - {position: workplace.conflict.nation-above-class, w: 2}
+        next: descent.fascist-family.03
+      - id: falange
+        text: Refuse. National syndicalism promised the land to those who work it and the banks to the nation. Franco gave the estates back.
+        evidence:
+          - {position: unions.role.national-labor, w: 3}
+          - {position: reform.revolution.national-revolution, w: 1}
+        next: descent.fascist-family.03
+      - id: family-wage
+        text: Refuse the cut. A Christian owner owes his laborers a wage that keeps a family, and the Church should say so.
+        evidence:
+          - {position: workplace.conflict.mutual-duties, w: 3}
+        next: descent.fascist-family.03
+      - id: free
+        text: Scrap the state union. Owner and laborer should bargain freely, and the harvest should set the wage.
+        evidence:
+          - {position: workplace.conflict.harmony-of-interests, w: 2}
+          - {position: unions.role.obstacle, w: 1}
+        next: descent.fascist-family.03
+      - id: own-union
+        text: Refuse. A union the owner joins and the state runs is the owner's union. The laborers need their own, and the land.
+        evidence:
+          - {position: unions.role.class-organ, w: 2}
+          - {position: workplace.conflict.structural-antagonism, w: 2}
+        next: descent.fascist-family.03
+
+  - id: descent.fascist-family.03
+    type: verdict
+    title: Vienna, 1934
+    text: >
+      Austria, February 1934. Parliament has been suspended for a year. Police raid a socialist office in
+      Linz and its guard fights back. Within days the army shells the Karl-Marx-Hof workers' flats in Vienna,
+      and the socialist party and the free unions are banned. In May a constitution issued "in the name of
+      God" sets up a Catholic state of estates. Where do you stand?
+    why: The Austrian corporate state separates clerical corporatists, pan-German Nazis, conservatives of order, Christian democrats and the left.
+    options:
+      - id: estates
+        text: With the chancellor. A Christian Austria ordered by estates is the only wall against both Marx and Hitler.
+        evidence:
+          - {position: class.concept.functional-estates, w: 2}
+          - {position: religion.public.divine-law, w: 2}
+          - {position: party.system.corporative, w: 1}
+        next: descent.fascist-family.04
+      - id: reich
+        text: Against him. Austria is German, and its place is in one Reich with Germany.
+        evidence:
+          - {position: nation.belonging.descent, w: 2}
+          - {position: society.units.nation-organism, w: 2}
+        next: descent.fascist-family.04
+      - id: order
+        text: With the government against the armed rising, then back to parliament as soon as order holds.
+        evidence:
+          - {position: siege.governance.emergency-with-sunset, w: 3}
+          - {position: police.role.order-maintenance, w: 1}
+        next: descent.fascist-family.04
+      - id: christian-democrat
+        text: Against. A Catholic party that shells workers' homes has made the Church the owners' chaplain. Keep parliament.
+        evidence:
+          - {position: party.system.competitive-multiparty, w: 2}
+          - {position: workplace.conflict.mutual-duties, w: 1}
+        next: descent.fascist-family.04
+      - id: defenders
+        text: With the defenders of the flats. Workers had to hold their homes and their unions or lose both.
+        evidence:
+          - {position: fascism.response.workers-united-front, w: 3}
+          - {position: police.role.class-repression, w: 1}
+        next: descent.fascist-family.04
+
+  - id: descent.fascist-family.04
+    type: verdict
+    title: Addis Ababa, 1936
+    text: >
+      May 1936. Italian armies take Addis Ababa after seven months, using mustard gas on soldiers and
+      villages. Mussolini proclaims an empire and promises Italian peasants land in the Ethiopian highlands.
+      The League of Nations' sanctions left out oil. You sit in a European parliament the week the war
+      ends. What do you say?
+    why: This asks where the colony stands in your politics, which separates imperial fascists, colonial conservatives, ethnopluralists, realists, liberal internationalists and anti-colonialists.
+    options:
+      - id: empire
+        text: A young nation has the right to an empire, as Britain and France took theirs. Italy's peasants need land.
+        evidence:
+          - {position: interests.objective.national-interest, w: 2}
+          - {position: conflict.nature.friend-enemy, w: 1}
+          - {position: war.militarism.war-ennobles, w: 1}
+        next: descent.fascist-family.05
+      - id: civilizing
+        text: Regret the gas and accept the result. Ethiopia still held slaves, and European rule brings roads and order.
+        evidence:
+          - {position: imperialism.nature.civilizing-order, w: 3}
+        next: descent.fascist-family.05
+      - id: own-soil
+        text: Condemn it. Every people should rule its own soil, and Ethiopians are no exception.
+        evidence:
+          - {position: nationalism.kinds.ethnopluralism, w: 2}
+          - {position: intl.sovereignty.nations-set-own-course, w: 1}
+        next: descent.fascist-family.05
+      - id: quiet
+        text: Say little. Keep Rome on side against Berlin. Ethiopia is not worth a European war.
+        evidence:
+          - {position: world.order.restraint, w: 2}
+          - {position: war.militarism.anarchy-security, w: 1}
+        next: descent.fascist-family.05
+      - id: embargo
+        text: Demand the oil embargo. If the League lets this pass, every aggressor learns the lesson.
+        evidence:
+          - {position: intl.institutions.cooperation, w: 2}
+          - {position: war.militarism.democratic-peace, w: 1}
+        next: descent.fascist-family.05
+      - id: come-home
+        text: Say it plainly. Europe did this across Africa for fifty years. Now a European does it in the open, and it will come home.
+        evidence:
+          - {position: fascism.nature.colonialism-come-home, w: 3}
+        next: descent.fascist-family.05
+
+  - id: descent.fascist-family.05
+    type: explanation
+    title: Why it won
+    text: >
+      Italy in 1922, Germany in 1933. Within a few years both governments had abolished the independent
+      unions, left the big firms in private hands, and promised their people land abroad: Ethiopia, and
+      "living space" in the East. Why did fascism come to power?
+    why: This asks what you think fascism was, and what kind of cause you reach for.
+    premises:
+      - id: insult
+        text: The premise that "fascism" names anything alive today rather than an insult.
+        evidence: [{position: fascism.nature.empty-insult, w: 2}, {position: fascism.response.threat-overblown, w: 1}]
+    options:
+      - id: rebirth
+        text: A beaten, divided nation found a faith that united it above party and class.
+        cause: ideas
+        evidence:
+          - {position: fascism.nature.national-rebirth-self-view, w: 3}
+        next: descent.fascist-family.06
+      - id: owners
+        text: The biggest owners and banks needed the labor movement broken, and paid for the men who broke it.
+        cause: interests
+        evidence:
+          - {position: fascism.nature.finance-capital-dictatorship, w: 3}
+        next: descent.fascist-family.06
+      - id: middle
+        text: Ruined shopkeepers, clerks and farmers, squeezed between big capital and the unions, were made into a battering ram.
+        cause: structures
+        evidence:
+          - {position: fascism.nature.petty-bourgeois-mass-movement, w: 3}
+        next: descent.fascist-family.06
+      - id: invited
+        text: Conservative elites invited them in to stop the left, sure they could control them.
+        cause: interests
+        evidence:
+          - {position: fascism.nature.paxton-process, w: 3}
+        next: descent.fascist-family.06
+      - id: bolshevism
+        text: It answered the Russian revolution, copying its methods to stop it spreading west.
+        cause: ideas
+        evidence:
+          - {position: fascism.nature.reaction-to-bolshevism, w: 3}
+        next: descent.fascist-family.06
+      - id: colonial
+        text: Europe turned the methods of its colonies on its own continent.
+        cause: structures
+        evidence:
+          - {position: fascism.nature.colonialism-come-home, w: 3}
+        next: descent.fascist-family.06
+      - id: socialism
+        text: They were socialists of the nation. Planning, state control and war on the market.
+        cause: ideas
+        evidence:
+          - {position: fascism.nature.a-form-of-socialism, w: 3}
+        next: descent.fascist-family.06
+
+  - id: descent.fascist-family.06
+    type: voices
+    title: Buenos Aires, 1946
+    text: >
+      Argentina, February 1946, election week. As labor secretary, Perón has backed strikes, decreed a
+      year-end bonus and paid holidays, and watched union rolls soar. The United States has published a
+      Blue Book calling his circle Nazi collaborators. Two men argue in a café.
+    voices:
+      - name: A railway worker
+        says: "Fascist? Before him the bosses had the police and we had nothing. Now we have the union, the bonus and the holidays."
+      - name: A socialist editor
+        says: "He copied Mussolini's labor charter. A union tied to the state is on a leash, and he holds it."
+    why: This asks where the national-popular movements of the South stand next to fascism, and separates Peronists, the left that fought them, the fascist right and liberals.
+    options:
+      - id: worker
+        text: The worker.
+        evidence:
+          - {position: nationalism.kinds.national-popular-front, w: 3}
+          - {position: unions.role.national-labor, w: 1}
+        next: descent.fascist-family.07
+      - id: editor
+        text: The editor.
+        evidence:
+          - {position: unions.role.class-organ, w: 2}
+          - {position: party.system.competitive-multiparty, w: 1}
+        next: descent.fascist-family.07
+      - id: foreign
+        text: Both miss the British railways and meat-packers. Whoever takes on foreign owners gets called a fascist in London and Washington.
+        evidence:
+          - {position: intl.sovereignty.nations-set-own-course, w: 2}
+          - {position: cs.rigged.against-our-country, w: 1}
+        next: descent.fascist-family.07
+      - id: further
+        text: Both miss that he stops halfway. A nation above class needs a corporate state, not elections.
+        evidence:
+          - {position: party.system.corporative, w: 2}
+          - {position: workplace.conflict.nation-above-class, w: 2}
+        next: descent.fascist-family.07
+      - id: bill
+        text: Both miss the bill. Wages raised by decree, paid from the farmers' surplus and printed money, end in inflation.
+        evidence:
+          - {position: capitalism.nature.free-exchange, w: 2}
+          - {position: unions.role.obstacle, w: 1}
+        next: descent.fascist-family.07
+
+  - id: descent.fascist-family.07
+    type: line
+    title: One of us
+    text: >
+      Take a European country. Going down this list, where do you stop calling the person one of us?
+    cases:
+      - A farmer whose family has worked the same valley for four hundred years
+      - A grandson of Algerian miners, born here, serving in the army
+      - A Polish plumber, five years here, who speaks the language well
+      - A nurse born in Nigeria, naturalized, in church every Sunday
+      - A Syrian refugee family, here two years
+      - A banker of old local stock who calls himself a citizen of the world
+    why: This asks what makes someone belong to the nation, which separates civic, assimilationist, religious, ethnic and identitarian nationalists from those who reject the nation as the line.
+    options:
+      - id: papers
+        text: Everyone born here or naturalized. The passport settles it.
+        evidence:
+          - {position: nation.belonging.citizenship, w: 3}
+        next: descent.fascist-family.08
+      - id: assimilate
+        text: Whoever takes on the language, the culture and the loyalty, wherever their grandparents came from.
+        evidence:
+          - {position: nation.belonging.assimilation, w: 3}
+        next: descent.fascist-family.08
+      - id: faith
+        text: Those who share the nation's faith. The nurse belongs more than the banker.
+        evidence:
+          - {position: religion.public.faith-as-nation, w: 2}
+          - {position: nation.belonging.civilizational, w: 1}
+        next: descent.fascist-family.08
+      - id: blood
+        text: The farmer and the banker. A nation is a people of common descent, and papers don't change that.
+        evidence:
+          - {position: nation.belonging.descent, w: 3}
+          - {position: nation.question.ethnic, w: 2}
+        next: descent.fascist-family.08
+      - id: homelands
+        text: The farmer and the banker. The others belong too, to their own peoples, and should return to them.
+        evidence:
+          - {position: nationalism.kinds.ethnopluralism, w: 2}
+          - {position: borders.migration.remigration, w: 2}
+        next: descent.fascist-family.08
+      - id: class
+        text: Wrong list. Most of them sell their labor to a few owners, the banker among them. That line matters more than birth.
+        evidence:
+          - {position: nation.belonging.class-not-nation, w: 3}
+        next: descent.fascist-family.08
+
+  - id: descent.fascist-family.08
+    type: voices
+    title: The hostel
+    text: >
+      A small town in eastern France. The last factory has closed; its machines went to Romania. The same
+      month a hostel for asylum seekers opens in the old barracks. At the town meeting, two speakers.
+    voices:
+      - name: A young identitarian
+        says: "Look around. They close our factories and fill our towns. It's no accident. Our rulers are replacing us with people who work cheaper and vote as told."
+      - name: A national conservative deputy
+        says: "No plot, just greed. Bosses want cheap labor and governments let them. Cut the numbers, bring the factories home, and pay families to have children."
+    why: This asks what you think drives migration, which separates identitarians, national conservatives, right populists, ecofascists, Christian conservatives and the left.
+    conditions:
+      - id: if-benefits
+        text: It depends whether they come to work or to live on benefits.
+        evidence: [{position: migration.cause.welfare-magnet, w: 2}, {position: welfare.state.for-our-own, w: 1}]
+    options:
+      - id: identitarian
+        text: The identitarian.
+        evidence:
+          - {position: migration.cause.elite-replacement, w: 3}
+          - {position: cs.rigged.hidden-hand, w: 1}
+        next: descent.fascist-family.09
+      - id: deputy
+        text: The deputy.
+        evidence:
+          - {position: migration.cause.employer-demand, w: 2}
+          - {position: family.form.nation-continuity, w: 2}
+        next: descent.fascist-family.09
+      - id: same-road
+        text: Both miss that the machines and the migrants travel the same road. Capital goes where labor is cheap and pulls cheap labor here.
+        evidence:
+          - {position: migration.cause.drain, w: 3}
+          - {position: borders.migration.class-not-nation-link, w: 1}
+        next: descent.fascist-family.09
+      - id: soil
+        text: Both miss the land. More people means more concrete over fields and forest. A people needs its soil, and soil has limits.
+        evidence:
+          - {position: nature.value.homeland-of-a-people, w: 2}
+          - {position: ecology.crisis-cause.too-many-people, w: 2}
+        next: descent.fascist-family.09
+      - id: war
+        text: Both miss who is in the hostel. Families running from wars in Sudan and Afghanistan. Help them as you would want help.
+        evidence:
+          - {position: migration.cause.war-persecution, w: 3}
+        next: descent.fascist-family.09
+
+  - id: descent.fascist-family.09
+    type: verdict
+    title: The charter city
+    text: >
+      Honduras, 2022. On a Caribbean island, investors run a private city with its own courts and tax code,
+      under a law that let them set up charter zones. A new congress repeals the law. The company sues the
+      state for nearly eleven billion dollars, about a third of the country's yearly output. Which side are
+      you on?
+    why: This separates neo-reaction from national conservatives, the third position, traditionalists, market conservatives and the left, on who should own a territory and its law.
+    options:
+      - id: company
+        text: The company. Let governments compete like firms, and let whoever dislikes the rules leave.
+        evidence:
+          - {position: state.relation.market-exit, w: 3}
+          - {position: history.elites.rule-of-the-best, w: 1}
+        next: descent.fascist-family.10
+      - id: sovereign
+        text: Congress. Foreign money carving out national soil and its own courts is a betrayal, whatever it promises.
+        evidence:
+          - {position: intl.sovereignty.nations-set-own-course, w: 3}
+          - {position: imperialism.nature.globalist-project, w: 1}
+        next: descent.fascist-family.10
+      - id: usury
+        text: Congress. This is finance's dream, owning the soil and the people on it, with the nation answering to its lenders.
+        evidence:
+          - {position: capitalism.nature.usury-finance, w: 3}
+          - {position: contradiction.primary.globalism-vs-nations, w: 1}
+        next: descent.fascist-family.10
+      - id: decline
+        text: Neither. A merchants' city under merchants' law is the end of a long decline. Neither money nor the mass vote should rule.
+        evidence:
+          - {position: tradition.modernity.sacred-order, w: 2}
+          - {position: progress.idea.decline-from-tradition, w: 2}
+        next: descent.fascist-family.10
+      - id: contract
+        text: The company, on the law. A state that tears up its contracts scares off every investor it will ever need.
+        evidence:
+          - {position: development.path.market-freedom, w: 2}
+        next: descent.fascist-family.10
+      - id: creditors
+        text: Congress, and further. Land and law were handed to foreign investors, and the treaty court is the creditors' court.
+        evidence:
+          - {position: intl.institutions.creditor-instruments, w: 3}
+          - {position: imperialism.nature.unequal-exchange-drain, w: 1}
+        next: descent.fascist-family.10
+
+  - id: descent.fascist-family.10
+    type: reason
+    title: Set right
+    text: >
+      Last one. Picture the country set right. What, above all, has been restored?
+    why: This asks what your politics is finally for, which is where these currents part.
+    options:
+      - id: rebirth
+        text: A nation reborn, disciplined and united above class and party, ready to fight.
+        evidence:
+          - {position: fascism.nature.national-rebirth-self-view, w: 3}
+          - {position: society.units.nation-organism, w: 1}
+        end: true
+      - id: producers
+        text: A nation of producers, where the union and not the bank runs the economy.
+        evidence:
+          - {position: unions.role.national-labor, w: 2}
+          - {position: capitalism.nature.usury-finance, w: 2}
+        end: true
+      - id: people
+        text: Our people in our homeland, as every people should have its own.
+        evidence:
+          - {position: nationalism.kinds.ethnopluralism, w: 3}
+          - {position: nation.belonging.descent, w: 1}
+        end: true
+      - id: sacred
+        text: A sacred order and its ranks, above the merchant and the crowd.
+        evidence:
+          - {position: tradition.modernity.sacred-order, w: 3}
+          - {position: inequality.justice.natural-hierarchy, w: 1}
+        end: true
+      - id: soil
+        text: The land itself, and a people rooted in it, fewer and closer to nature.
+        evidence:
+          - {position: nature.value.homeland-of-a-people, w: 3}
+          - {position: ecology.crisis-cause.too-many-people, w: 1}
+        end: true
+      - id: able
+        text: Rule by the able, with no pretense that the masses govern.
+        evidence:
+          - {position: history.elites.rule-of-the-best, w: 3}
+          - {position: inequality.justice.natural-hierarchy, w: 1}
+        end: true
+      - id: sovereignty
+        text: A country that governs itself again, its borders, its industry and its laws, taken back from the insiders.
+        evidence:
+          - {position: contradiction.primary.globalism-vs-nations, w: 3}
+          - {position: state.nature.captured, w: 1}
+        end: true
+      - id: institutions
+        text: Institutions that took centuries to grow, kept safe from every movement that promises a new man.
+        evidence:
+          - {position: tradition.modernity.inherited-wisdom, w: 3}
+        end: true
+      - id: owners
+        text: None of these. A country set right is one where those who do the work own what they work.
+        evidence:
+          - {position: contradiction.primary.capital-vs-labor, w: 2}
+          - {position: class.concept.relation-to-production, w: 1}
+        end: true

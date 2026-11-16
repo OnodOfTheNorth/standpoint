@@ -1,0 +1,766 @@
+# Thinkers: technology currents and their critics (longtermism, effective altruism,
+# transhumanism, accelerationisms, technocracy, cyberlibertarianism), the labor-process
+# and planning traditions, and the critics of data colonialism in the periphery.
+thinkers:
+  # ---------------- labor process and the capitalist use of machines ----------------
+  - id: thinker.braverman
+    name: Harry Braverman
+    born: 1920
+    died: 1976
+    region: United States
+    traditions: [marxism.classical]
+    summary: >
+      American coppersmith, socialist organizer and later editor at Monthly Review Press. He argued that
+      monopoly capital redesigns work to separate the planning of a task from its doing, moving skill and
+      knowledge from workers to management and to machines.
+    argues:
+      - {position: technology.nature.capitals-weapon, in: {author: Harry Braverman, title: "Labor and Monopoly Capital: The Degradation of Work in the Twentieth Century", year: 1974}}
+      - {position: workplace.conflict.structural-antagonism, in: {author: Harry Braverman, title: "Labor and Monopoly Capital: The Degradation of Work in the Twentieth Century", year: 1974}}
+
+  - id: thinker.noble
+    name: David F. Noble
+    born: 1945
+    died: 2010
+    region: United States / Canada
+    traditions: [marxism.western]
+    summary: >
+      American historian of technology who taught at MIT and York University. He showed that numerically
+      controlled machine tools were chosen over record-playback alternatives because they moved control of
+      production from machinists to management, and he defended the Luddites' resistance to machines used
+      against workers.
+    argues:
+      - {position: technology.nature.capitals-weapon, in: {author: David F. Noble, title: "Forces of Production: A Social History of Industrial Automation", year: 1984}}
+      - {position: automation.ownership.refuse-it, in: {author: David F. Noble, title: "Progress Without People: In Defense of Luddism", year: 1993}}
+
+  - id: thinker.panzieri
+    name: Raniero Panzieri
+    born: 1921
+    died: 1964
+    region: Italy
+    traditions: [marxism.autonomism]
+    summary: >
+      Italian socialist who left the leadership of the Socialist Party to found the journal Quaderni Rossi in
+      1961, the starting point of operaismo. Reading Marx's Capital against the "objectivism" of the official
+      left, he argued that machinery under capital is not a neutral force held back by private property but is
+      shaped by capital's command over labor, so that socialism cannot simply take it over unchanged.
+    argues:
+      - {position: accelerationism.question.relations-first, in: {author: Raniero Panzieri, title: "Sull'uso capitalistico delle macchine nel neocapitalismo", year: 1961, note: "Quaderni Rossi 1; in English as \"The Capitalist Use of Machinery: Marx Versus the 'Objectivists'\""}}
+      - {position: technology.nature.capitals-weapon, in: {author: Raniero Panzieri, title: "Sull'uso capitalistico delle macchine nel neocapitalismo", year: 1961, note: Quaderni Rossi 1}}
+
+  - id: thinker.pasquinelli
+    name: Matteo Pasquinelli
+    region: Italy / Germany
+    traditions: [marxism.autonomism]
+    summary: >
+      Italian philosopher of technology working in the operaista tradition. He argues that artificial
+      intelligence was modeled not on the brain but on the division of labor, from Babbage's analysis of the
+      factory to today's pattern recognition, and that it serves to measure, automate and discipline the
+      collective intelligence of workers.
+    argues:
+      - {position: ai.stake.tool-of-capital, in: {author: Matteo Pasquinelli, title: "The Eye of the Master: A Social History of Artificial Intelligence", year: 2023}}
+      - {position: technology.nature.capitals-weapon, in: {author: Matteo Pasquinelli, title: "The Eye of the Master: A Social History of Artificial Intelligence", year: 2023}}
+
+  - id: thinker.crawford
+    name: Kate Crawford
+    region: Australia / United States
+    traditions: [liberalism.progressive]
+    summary: >
+      Australian scholar of the social effects of computing, at the University of Southern California and
+      Microsoft Research. She argues that AI is an extractive industry built from minerals, energy, cheap
+      human labor and captured data, and that in the workplace it is used to time, track and manage workers.
+    argues:
+      - {position: ai.stake.tool-of-capital, in: {author: Kate Crawford, title: "Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence", year: 2021, note: "chapter 2, \"Labor\""}}
+      - {position: ai.stake.core-rent, in: {author: Kate Crawford, title: "Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence", year: 2021, note: "chapter 1, \"Earth\", on the mines"}}
+
+  # ---------------- data colonialism and the periphery ----------------
+  - id: thinker.couldry
+    name: Nick Couldry
+    born: 1958
+    died: null
+    region: United Kingdom
+    traditions: [nationalism.decolonial]
+    summary: >
+      British sociologist of media at the London School of Economics. With Ulises Mejias he argues that the
+      continuous extraction of data from human life is a new stage of colonialism, an appropriation of
+      resources that serves capitalism as the land grabs of earlier centuries did.
+    argues:
+      - {position: ai.stake.core-rent, in: {author: Nick Couldry and Ulises A. Mejias, title: "The Costs of Connection: How Data Is Colonizing Human Life and Appropriating It for Capitalism", year: 2019}}
+      - {position: technology.nature.core-monopoly, in: {author: Ulises A. Mejias and Nick Couldry, title: "Data Grab: The New Colonialism of Big Tech and How to Fight Back", year: 2024}}
+
+  - id: thinker.mejias
+    name: Ulises A. Mejias
+    region: Mexico / United States
+    traditions: [nationalism.decolonial]
+    summary: >
+      Mexican-born scholar of communication at the State University of New York, Oswego. With Nick Couldry
+      he developed the theory of data colonialism and co-founded the Tierra Común network of researchers and
+      activists in Latin America.
+    argues:
+      - {position: ai.stake.core-rent, in: {author: Nick Couldry and Ulises A. Mejias, title: "The Costs of Connection: How Data Is Colonizing Human Life and Appropriating It for Capitalism", year: 2019}}
+      - {position: technology.nature.core-monopoly, in: {author: Ulises A. Mejias and Nick Couldry, title: "Data Grab: The New Colonialism of Big Tech and How to Fight Back", year: 2024}}
+
+  - id: thinker.birhane
+    name: Abeba Birhane
+    region: Ethiopia / Ireland
+    traditions: [nationalism.decolonial]
+    summary: >
+      Ethiopian cognitive scientist working in Dublin. She argues that the push to digitize Africa by
+      Western technology firms is a corporate form of colonialism, which imposes systems built elsewhere,
+      extracts African data and blocks local alternatives.
+    argues:
+      - {position: ai.stake.core-rent, in: {author: Abeba Birhane, title: Algorithmic Colonization of Africa, year: 2020, note: SCRIPTed 17(2)}}
+      - {position: technology.nature.core-monopoly, in: {author: Abeba Birhane, title: Algorithmic Colonization of Africa, year: 2020, note: SCRIPTed 17(2)}}
+
+  - id: thinker.ricaurte
+    name: Paola Ricaurte
+    region: Mexico
+    traditions: [nationalism.decolonial, feminism.decolonial]
+    summary: >
+      Mexican media scholar at the Tecnológico de Monterrey and co-founder of Tierra Común. She argues that
+      data systems extend the coloniality of power over bodies, territories and knowledge in the South, and
+      calls for data practices built from the communities they describe.
+    argues:
+      - {position: ai.stake.core-rent, in: {author: Paola Ricaurte, title: "Data Epistemologies, The Coloniality of Power, and Resistance", year: 2019, note: Television & New Media 20(4)}}
+      - {position: technology.nature.built-in-politics, in: {author: Paola Ricaurte, title: "Data Epistemologies, The Coloniality of Power, and Resistance", year: 2019, note: "proposes alternative data epistemologies"}}
+
+  - id: thinker.posada
+    name: Julian Posada
+    region: Colombia / United States
+    traditions: [nationalism.decolonial]
+    summary: >
+      Colombian sociologist of data work. His studies of Venezuelan workers labelling data for machine
+      learning through crowdsourcing platforms show requesters in rich countries and workers in the South,
+      a global division of labor justified by ideas from the North.
+    argues:
+      - {position: ai.stake.core-rent, in: {author: Julian Posada, title: The Coloniality of Data Work in Latin America, year: 2021, note: "AIES '21 proceedings"}}
+      - {position: ai.stake.tool-of-capital, in: {author: Milagros Miceli and Julian Posada, title: The Data-Production Dispositif, year: 2022, note: "Proceedings of the ACM on Human-Computer Interaction (CSCW2)"}}
+
+  - id: thinker.rikap
+    name: Cecilia Rikap
+    region: Argentina / United Kingdom
+    traditions: [marxism.dependency]
+    summary: >
+      Argentine economist at University College London. She argues that the largest firms are now
+      "intellectual monopolies" whose profits rest on owning knowledge and data produced by others, from
+      universities to subcontractors, and that this concentrates rents in the United States and China.
+    argues:
+      - {position: technology.nature.core-monopoly, in: {author: Cecilia Rikap, title: "Capitalism, Power and Innovation: Intellectual Monopoly Capitalism Uncovered", year: 2021}}
+      - {position: property.ip.technology-monopoly, in: {author: Cecilia Rikap, title: "Capitalism, Power and Innovation: Intellectual Monopoly Capitalism Uncovered", year: 2021}}
+      - {position: ai.stake.core-rent, in: {author: Cecilia Rikap, title: "Capitalism, Power and Innovation: Intellectual Monopoly Capitalism Uncovered", year: 2021, note: "on the AI and cloud monopolies of Amazon, Microsoft and Google"}}
+
+  - id: thinker.herrera
+    name: Amílcar Herrera
+    born: 1920
+    died: 1995
+    region: Argentina / Brazil
+    traditions: [marxism.dependency]
+    summary: >
+      Argentine geologist and a founder of Latin American thinking on science and technology policy. He
+      argued that the region's science was cut off from its production because its economies were dependent,
+      and he led the Bariloche world model, which answered The Limits to Growth by locating the obstacles in
+      the social order rather than in physical limits.
+    argues:
+      - {position: technology.nature.core-monopoly, in: {author: Amílcar Herrera, title: Ciencia y política en América Latina, year: 1971}}
+      - {position: ecology.crisis-cause.core-appropriation, in: {author: Amílcar O. Herrera et al., title: "Catastrophe or New Society? A Latin American World Model", year: 1976}}
+
+  # ---------------- the workers along the chain: assembly, click-work, labelling ----------------
+  - id: thinker.pun-ngai
+    name: Pun Ngai
+    region: China / Hong Kong
+    traditions: [marxism.classical]
+    summary: >
+      Sociologist of labor at the University of Hong Kong who has studied China's export factories since the
+      1990s, from the women of the Shenzhen electronics plants to the Foxconn lines that assemble the iPhone.
+      With Jenny Chan and Mark Selden she traced how Apple's prices and deadlines set the pace and pay on the
+      Chinese lines, and followed the workers' resistance and the campaigns that linked them to students and
+      consumers abroad.
+    argues:
+      - {position: automation.ownership.whole-chain-workers, in: {author: "Jenny Chan, Mark Selden and Pun Ngai", title: "Dying for an iPhone: Apple, Foxconn, and the Lives of China's Workers", year: 2020}}
+      - {position: technology.nature.capitals-weapon, in: {author: "Jenny Chan, Mark Selden and Pun Ngai", title: "Dying for an iPhone: Apple, Foxconn, and the Lives of China's Workers", year: 2020, note: "on the assembly lines at Foxconn"}}
+
+  - id: thinker.jack-qiu
+    name: Jack Linchuan Qiu
+    region: China / Hong Kong / Singapore
+    traditions: [marxism.world-systems]
+    summary: >
+      Chinese scholar of communication, long at the Chinese University of Hong Kong. Drawing on the history of
+      slavery and on world-systems analysis, he describes the alliance of Apple and Foxconn as a system
+      of work running from the mines to the assembly lines, and calls for a movement of workers and users to abolish
+      it, as the abolitionists once joined producers and consumers against slave-grown sugar.
+    argues:
+      - {position: automation.ownership.whole-chain-workers, in: {author: Jack Linchuan Qiu, title: "Goodbye iSlave: A Manifesto for Digital Abolition", year: 2016}}
+      - {position: ai.stake.core-rent, in: {author: Jack Linchuan Qiu, title: "Goodbye iSlave: A Manifesto for Digital Abolition", year: 2016, note: "on the value captured by the brand owner from the assembly and mining labor"}}
+
+  - id: thinker.casilli
+    name: Antonio A. Casilli
+    region: Italy / France
+    traditions: [marxism.autonomism]
+    summary: >
+      Italian sociologist at the Institut Polytechnique de Paris. He argues that automation does not replace
+      human work but breaks it into "click-work" done by users and by poorly paid micro-workers, many of them
+      in Madagascar, Kenya, India and the Philippines, and that this digital labor must be recognized, paid
+      and organized.
+    argues:
+      - {position: ai.stake.tool-of-capital, in: {author: Antonio A. Casilli, title: "En attendant les robots: Enquête sur le travail du clic", year: 2019}}
+      - {position: automation.ownership.whole-chain-workers, in: {author: Antonio A. Casilli, title: "En attendant les robots: Enquête sur le travail du clic", year: 2019, note: "click-work subcontracted from France to Madagascar and other French-speaking countries"}}
+
+  - id: thinker.miceli
+    name: Milagros Miceli
+    region: Argentina / Germany
+    traditions: [nationalism.decolonial]
+    summary: >
+      Argentine sociologist and computer scientist at the Weizenbaum Institute in Berlin and the Distributed
+      AI Research Institute. Her fieldwork with data annotators in Argentina, Bulgaria, Kenya and Syria shows
+      how the firms that commission data set the categories and the pace, and she argues that supporting the
+      annotators' cross-border organizing should be the first task of any ethics of AI.
+    argues:
+      - {position: automation.ownership.whole-chain-workers, in: {author: "Adrienne Williams, Milagros Miceli and Timnit Gebru", title: The Exploited Labor Behind Artificial Intelligence, year: 2022, note: Noema}}
+      - {position: ai.stake.core-rent, in: {author: "Adrienne Williams, Milagros Miceli and Timnit Gebru", title: The Exploited Labor Behind Artificial Intelligence, year: 2022, note: Noema}}
+
+  # ---------------- biocapital: whose bodies the remaking runs on ----------------
+  - id: thinker.melinda-cooper
+    name: Melinda Cooper
+    region: Australia
+    traditions: [feminism.materialist]
+    summary: >
+      Australian sociologist at the Australian National University who writes on biotechnology, finance and
+      the family under neoliberalism. With Catherine Waldby she argued that surrogates, egg vendors and drug
+      trial subjects perform "clinical labor", a form of work the bioeconomy outsources to poor women and poor
+      countries while calling it altruism or volunteering.
+    argues:
+      - {position: transhumanism.question.bodies-of-the-south, in: {author: Melinda Cooper and Catherine Waldby, title: "Clinical Labor: Tissue Donors and Research Subjects in the Global Bioeconomy", year: 2014}}
+
+  - id: thinker.vora
+    name: Kalindi Vora
+    region: United States
+    traditions: [feminism.decolonial]
+    summary: >
+      American scholar of feminist science and technology studies, at Yale. Studying Indian call centers and surrogacy
+      hospitals, she argues that the vital energy of Indian workers, including the gestational work of
+      surrogates, is extracted to sustain life and comfort in the United States, continuing a colonial
+      division of labor.
+    argues:
+      - {position: transhumanism.question.bodies-of-the-south, in: {author: Kalindi Vora, title: "Life Support: Biocapital and the New History of Outsourced Labor", year: 2015}}
+
+  - id: thinker.sunder-rajan
+    name: Kaushik Sunder Rajan
+    region: India / United States
+    traditions: [marxism.western]
+    summary: >
+      Indian anthropologist at the University of Chicago. His fieldwork in genomics and drug development in
+      the United States and India shows biotechnology organized by capital, with Indian patients recruited as
+      trial subjects for drugs owned and sold elsewhere.
+    argues:
+      - {position: transhumanism.question.bodies-of-the-south, in: {author: Kaushik Sunder Rajan, title: "Biocapital: The Constitution of Postgenomic Life", year: 2006}}
+
+  - id: thinker.tallbear
+    name: Kim TallBear
+    region: United States / Canada
+    traditions: [nationalism.indigenous-sovereignty]
+    summary: >
+      Sisseton-Wahpeton Oyate scholar at the University of Alberta. She argues that genetic research on Native
+      Americans takes their blood and DNA for science and markets they do not control, revives old racial
+      definitions of tribes, and can undermine tribal claims to land and membership.
+    argues:
+      - {position: transhumanism.question.bodies-of-the-south, in: {author: Kim TallBear, title: "Native American DNA: Tribal Belonging and the False Promise of Genetic Science", year: 2013}}
+
+  - id: thinker.dorothy-roberts
+    name: Dorothy Roberts
+    region: United States
+    traditions: [feminism.black]
+    summary: >
+      American legal scholar and sociologist at the University of Pennsylvania. She argues that genetic and
+      reproductive technologies sold by biotech firms re-create race as biology and fold selection into
+      privatized health care, so that access to them follows the existing divisions of class and race.
+    argues:
+      - {position: transhumanism.question.split-humanity, in: {author: Dorothy Roberts, title: "Fatal Invention: How Science, Politics, and Big Business Re-create Race in the Twenty-first Century", year: 2011}}
+      - {position: transhumanism.question.split-humanity, in: {author: Dorothy Roberts, title: "Race, Gender, and Genetic Technologies: A New Reproductive Dystopia?", year: 2009, note: Signs 34}}
+
+  # ---------------- planning, cybernetics and the calculation debate ----------------
+  - id: thinker.beer
+    name: Stafford Beer
+    born: 1926
+    died: 2002
+    region: United Kingdom / Chile
+    traditions: [socdem.democratic-socialism]
+    summary: >
+      British management cybernetician who designed Project Cybersyn for Salvador Allende's Popular Unity
+      government in 1971–73, a network linking nationalized factories to a planning room by telex and daily
+      production data. He argued that control systems can be designed to spread decisions down to workers
+      rather than concentrate them.
+    argues:
+      - {position: planning.form.cybernetic, in: {author: Stafford Beer, title: Brain of the Firm, year: 1981, note: "second edition; chapters 16–20 recount the Chilean project"}}
+      - {position: technology.nature.built-in-politics, in: {author: Stafford Beer, title: Designing Freedom, year: 1974, note: "1973 CBC Massey Lectures"}}
+
+  - id: thinker.cockshott
+    name: Paul Cockshott
+    born: 1952
+    died: null
+    region: United Kingdom (Scotland)
+    traditions: [marxism.classical]
+    summary: >
+      Scottish computer scientist at the University of Glasgow. With Allin Cottrell he argued that modern
+      computers make it possible to plan an economy in labor-time units, paying workers in labor certificates
+      and letting consumer demand guide output, and that this answers the Austrian claim that planning cannot
+      calculate.
+    argues:
+      - {position: calculation.debate.computational, in: {author: W. Paul Cockshott and Allin Cottrell, title: Towards a New Socialism, year: 1993}}
+      - {position: planning.form.cybernetic, in: {author: W. Paul Cockshott and Allin Cottrell, title: Towards a New Socialism, year: 1993}}
+      - {position: allocation.mechanism.central-planning, in: {author: W. Paul Cockshott and Allin Cottrell, title: Towards a New Socialism, year: 1993, note: "planning in labor time with direct democracy"}}
+
+  - id: thinker.cottrell
+    name: Allin Cottrell
+    region: United Kingdom (Scotland) / United States
+    traditions: [marxism.classical]
+    summary: >
+      Scottish economist at Wake Forest University in the United States. With Paul Cockshott he argued for
+      a planned economy calculated in labor time by computer, and defended it against Mises and Hayek in
+      the socialist calculation debate.
+    argues:
+      - {position: calculation.debate.computational, in: {author: W. Paul Cockshott and Allin Cottrell, title: Towards a New Socialism, year: 1993}}
+      - {position: planning.form.cybernetic, in: {author: W. Paul Cockshott and Allin Cottrell, title: Towards a New Socialism, year: 1993}}
+
+  - id: thinker.morozov
+    name: Evgeny Morozov
+    born: 1984
+    died: null
+    region: Belarus / Italy
+    traditions: [socdem.democratic-socialism]
+    summary: >
+      Belarusian-born writer on technology and politics. He criticized "solutionism", the habit of treating
+      political problems as engineering puzzles for apps, and later argued that the data infrastructure now
+      owned by platforms could be used for non-market coordination under public control.
+    argues:
+      - {position: technology.nature.built-in-politics, in: {author: Evgeny Morozov, title: "To Save Everything, Click Here: The Folly of Technological Solutionism", year: 2013}}
+      - {position: calculation.debate.computational, in: {author: Evgeny Morozov, title: "Digital Socialism? The Calculation Debate in the Age of Big Data", year: 2019, note: "New Left Review 116/117; argues for digital feedback infrastructure as a non-market discovery procedure"}}
+
+  # ---------------- left accelerationism ----------------
+  - id: thinker.srnicek
+    name: Nick Srnicek
+    region: Canada / United Kingdom
+    traditions: [technology.l-acc]
+    summary: >
+      Canadian political theorist at King's College London. With Alex Williams he wrote the manifesto of
+      left accelerationism and Inventing the Future, which called for full automation, a shorter working
+      week and a basic income, and he later analysed platform firms as owners of data monopolies.
+    argues:
+      - {position: accelerationism.question.left-acc, in: {author: Alex Williams and Nick Srnicek, title: "#Accelerate: Manifesto for an Accelerationist Politics", year: 2013}}
+      - {position: automation.ownership.common-ownership, in: {author: Nick Srnicek and Alex Williams, title: "Inventing the Future: Postcapitalism and a World Without Work", year: 2015}}
+      - {position: work.future.basic-income-emancipatory, in: {author: Nick Srnicek and Alex Williams, title: "Inventing the Future: Postcapitalism and a World Without Work", year: 2015}}
+
+  - id: thinker.alex-williams
+    name: Alex Williams
+    region: United Kingdom
+    traditions: [technology.l-acc]
+    summary: >
+      British political theorist who co-wrote the 2013 accelerationist manifesto and Inventing the Future
+      with Nick Srnicek. They argued that the left had retreated into "folk politics" and must build its own
+      hegemony around a post-work future.
+    argues:
+      - {position: accelerationism.question.left-acc, in: {author: Alex Williams and Nick Srnicek, title: "#Accelerate: Manifesto for an Accelerationist Politics", year: 2013}}
+      - {position: automation.ownership.common-ownership, in: {author: Nick Srnicek and Alex Williams, title: "Inventing the Future: Postcapitalism and a World Without Work", year: 2015}}
+      - {position: culture.strategy.hegemony-first, in: {author: Nick Srnicek and Alex Williams, title: "Inventing the Future: Postcapitalism and a World Without Work", year: 2015}}
+
+  - id: thinker.bastani
+    name: Aaron Bastani
+    region: United Kingdom
+    traditions: [technology.l-acc]
+    summary: >
+      British writer and co-founder of the left media outlet Novara Media. He argued that falling costs of
+      information, energy, labor and resources make a post-scarcity society possible if the technologies
+      are owned in common.
+    argues:
+      - {position: automation.ownership.common-ownership, in: {author: Aaron Bastani, title: "Fully Automated Luxury Communism: A Manifesto", year: 2019}}
+      - {position: accelerationism.question.left-acc, in: {author: Aaron Bastani, title: "Fully Automated Luxury Communism: A Manifesto", year: 2019}}
+
+  # ---------------- sharing the gains: basic income ----------------
+  - id: thinker.van-parijs
+    name: Philippe Van Parijs
+    born: 1951
+    died: null
+    region: Belgium
+    traditions: [libertarianism.left]
+    summary: >
+      Belgian philosopher at the University of Louvain and a founder of the Basic Income Earth Network. He
+      argues that real freedom requires the means to do what one might want, and that a just society pays
+      every member the highest sustainable unconditional basic income, which a capitalist economy can fund.
+    argues:
+      - {position: automation.ownership.dividend, in: {author: Philippe Van Parijs, title: "Real Freedom for All: What (if Anything) Can Justify Capitalism?", year: 1995}}
+      - {position: work.future.basic-income-emancipatory, in: {author: Philippe Van Parijs and Yannick Vanderborght, title: "Basic Income: A Radical Proposal for a Free Society and a Sane Economy", year: 2017}}
+
+  # ---------------- critics of technique ----------------
+  - id: thinker.ellul
+    name: Jacques Ellul
+    born: 1912
+    died: 1994
+    region: France
+    traditions: [anarchism.christian]
+    summary: >
+      French Protestant sociologist and lay theologian at Bordeaux. He held that "technique", the search for
+      the one most efficient method in every field, had become autonomous and reshapes politics, work and
+      thought to its needs, under capitalism and socialism alike.
+    argues:
+      - {position: technology.nature.autonomous-force, in: {author: Jacques Ellul, title: "La Technique ou l'enjeu du siècle", year: 1954, note: "English: The Technological Society (1964)"}}
+      - {position: accelerationism.question.decelerate, in: {author: Jacques Ellul, title: "La Technique ou l'enjeu du siècle", year: 1954}}
+
+  - id: thinker.illich
+    name: Ivan Illich
+    born: 1926
+    died: 2002
+    region: Austria / Mexico
+    traditions: [anarchism.christian]
+    summary: >
+      Vienna-born Catholic priest who founded a research center in Cuernavaca, Mexico. He argued that beyond
+      a certain scale tools, schools, medicine and fast transport stop serving people and begin to rule them,
+      and called for "convivial" tools that users control.
+    argues:
+      - {position: technology.nature.autonomous-force, in: {author: Ivan Illich, title: Tools for Conviviality, year: 1973}}
+      - {position: accelerationism.question.decelerate, in: {author: Ivan Illich, title: Energy and Equity, year: 1974}}
+      - {position: education.purpose.deschooling, in: {author: Ivan Illich, title: Deschooling Society, year: 1971}}
+
+  - id: thinker.mumford
+    name: Lewis Mumford
+    born: 1895
+    died: 1990
+    region: United States
+    traditions: [anarchism.green]
+    summary: >
+      American historian of cities and technology and a regionalist. He distinguished small-scale
+      "democratic" technics from the "authoritarian" megamachine of centralized power and argued that the
+      second had dominated since the first empires.
+    argues:
+      - {position: technology.nature.built-in-politics, in: {author: Lewis Mumford, title: Authoritarian and Democratic Technics, year: 1964, note: Technology and Culture 5(1)}}
+      - {position: technology.nature.autonomous-force, in: {author: Lewis Mumford, title: "The Myth of the Machine: Technics and Human Development", year: 1967}}
+
+  - id: thinker.zerzan
+    name: John Zerzan
+    born: 1943
+    died: null
+    region: United States
+    traditions: [anarchism.primitivist]
+    summary: >
+      American anarchist writer in Eugene, Oregon. He argues that domination began with symbolic culture,
+      agriculture and the division of labor, that technology is the materialized form of that division, and
+      that liberation means its dismantling.
+    argues:
+      - {position: technology.nature.autonomous-force, in: {author: John Zerzan, title: Elements of Refusal, year: 1988}}
+      - {position: automation.ownership.refuse-it, in: {author: John Zerzan, title: Elements of Refusal, year: 1988}}
+
+  - id: thinker.winner
+    name: Langdon Winner
+    born: 1944
+    died: null
+    region: United States
+    traditions: [liberalism.republican]
+    summary: >
+      American political theorist of technology at Rensselaer Polytechnic Institute. He argued that
+      artifacts embody political arrangements, as when low parkway bridges kept buses off Long Island roads,
+      and that citizens should deliberate over technology as they do over laws.
+    argues:
+      - {position: technology.nature.built-in-politics, in: {author: Langdon Winner, title: "Do Artifacts Have Politics?", year: 1980, note: Daedalus 109(1)}}
+
+  # ---------------- liberal and AI-ethics critics ----------------
+  - id: thinker.zuboff
+    name: Shoshana Zuboff
+    born: 1951
+    died: null
+    region: United States
+    traditions: [liberalism.progressive]
+    summary: >
+      American social psychologist, emerita at Harvard Business School. She argues that "surveillance
+      capitalism" claims human experience as free raw material for behavioral prediction, that it is a rogue
+      form of capitalism rather than an effect of technology, and that democratic law must outlaw it.
+    argues:
+      - {position: ai.stake.harms-now, in: {author: Shoshana Zuboff, title: "The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power", year: 2019}}
+      - {position: accelerationism.question.steer-it, in: {author: Shoshana Zuboff, title: "The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power", year: 2019, note: "the digital future can be reclaimed by democratic law"}}
+
+  - id: thinker.gebru
+    name: Timnit Gebru
+    region: Ethiopia / United States
+    traditions: [feminism.black]
+    summary: >
+      Ethiopian-born computer scientist who co-led Google's ethical AI team until her dismissal in 2020 and
+      founded the Distributed AI Research Institute. Her work showed face-analysis systems failing most often
+      on dark-skinned women, and she argues that talk of superintelligence serves the firms building AI and
+      hides present harms.
+    argues:
+      - {position: ai.stake.harms-now, in: {author: Joy Buolamwini and Timnit Gebru, title: "Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification", year: 2018}}
+      - {position: ai.stake.overhyped, in: {author: "Emily M. Bender, Timnit Gebru, Angelina McMillan-Major and Shmargaret Shmitchell", title: "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?", year: 2021}}
+      - {position: automation.ownership.whole-chain-workers, in: {author: "Adrienne Williams, Milagros Miceli and Timnit Gebru", title: The Exploited Labor Behind Artificial Intelligence, year: 2022, note: "Noema; calls for support of data workers' transnational organizing"}}
+
+  - id: thinker.bender
+    name: Emily M. Bender
+    region: United States
+    traditions: [liberalism.progressive]
+    summary: >
+      American computational linguist at the University of Washington. She argues that large language
+      models produce plausible text without understanding, that "AI" is largely a marketing term, and that
+      the real harms are data theft, surveillance and the devaluing of skilled work.
+    argues:
+      - {position: ai.stake.overhyped, in: {author: "Emily M. Bender, Timnit Gebru, Angelina McMillan-Major and Shmargaret Shmitchell", title: "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?", year: 2021}}
+      - {position: ai.stake.harms-now, in: {author: Emily M. Bender and Alex Hanna, title: "The AI Con: How to Fight Big Tech's Hype and Create the Future We Want", year: 2025}}
+
+  # ---------------- effective altruism and longtermism ----------------
+  - id: thinker.ord
+    name: Toby Ord
+    born: 1979
+    died: null
+    region: Australia / United Kingdom
+    traditions: [technology.effective-altruism, technology.longtermism]
+    summary: >
+      Australian philosopher at Oxford who co-founded Giving What We Can. He estimates the risk of human
+      extinction this century at about one in six, with unaligned AI the largest single source, and argues
+      that protecting humanity's long-term potential is a defining task of the age.
+    argues:
+      - {position: ai.stake.existential, in: {author: Toby Ord, title: "The Precipice: Existential Risk and the Future of Humanity", year: 2020}}
+      - {position: accelerationism.question.differential, in: {author: Toby Ord, title: "The Precipice: Existential Risk and the Future of Humanity", year: 2020}}
+
+  - id: thinker.macaskill
+    name: William MacAskill
+    born: 1987
+    died: null
+    region: United Kingdom
+    traditions: [technology.effective-altruism, technology.longtermism]
+    summary: >
+      Scottish philosopher at Oxford and a founder of the effective altruism movement. He argues that people
+      should use evidence and reason to do the most good they can with their money and careers, and that the
+      interests of future generations should weigh heavily in present choices.
+    argues:
+      - {position: aid.foreign.fund-what-works, in: {author: William MacAskill, title: "Doing Good Better: Effective Altruism and a Radical New Way to Make a Difference", year: 2015}}
+      - {position: accelerationism.question.differential, in: {author: William MacAskill, title: What We Owe the Future, year: 2022}}
+      - {position: ai.stake.existential, in: {author: William MacAskill, title: What We Owe the Future, year: 2022}}
+      - {position: climate.justice.future-generations, in: {author: William MacAskill, title: What We Owe the Future, year: 2022, note: "the chapters on climate change and long-run risk"}}
+
+  - id: thinker.singer
+    name: Peter Singer
+    born: 1946
+    died: null
+    region: Australia / United States
+    traditions: [liberalism.utilitarian, technology.effective-altruism]
+    summary: >
+      Australian utilitarian philosopher at Princeton. He argued in 1972 that the affluent are obliged to
+      give to prevent starvation wherever it occurs, and later helped found effective altruism as the
+      practice of giving where it does the most good.
+    argues:
+      - {position: cs.own-first.no-favorites, in: {author: Peter Singer, title: "Famine, Affluence, and Morality", year: 1972, note: Philosophy & Public Affairs 1(3)}}
+      - {position: aid.foreign.fund-what-works, in: {author: Peter Singer, title: "The Most Good You Can Do: How Effective Altruism Is Changing Ideas About Living Ethically", year: 2015}}
+
+  # ---------------- the owners' debate: existential risk, acceleration, the Singularity ----------------
+  - id: thinker.bostrom
+    name: Nick Bostrom
+    born: 1973
+    died: null
+    region: Sweden / United Kingdom
+    traditions: [technology.longtermism, technology.transhumanism]
+    summary: >
+      Swedish philosopher who founded Oxford's Future of Humanity Institute, argued that risks of human
+      extinction outweigh most other moral concerns, and warned that a superintelligent machine could
+      escape human control. He also defends human enhancement.
+    argues:
+      - {position: accelerationism.question.differential, in: {author: Nick Bostrom, title: "Existential Risks: Analyzing Human Extinction Scenarios and Related Hazards", year: 2002}}
+      - {position: transhumanism.question.yes-free-choice, in: {author: Nick Bostrom, title: In Defense of Posthuman Dignity, year: 2005}}
+      - {position: ai.stake.existential, in: {author: Nick Bostrom, title: "Superintelligence: Paths, Dangers, Strategies", year: 2014}}
+
+  - id: thinker.land
+    name: Nick Land
+    born: 1962
+    died: null
+    region: United Kingdom / China
+    traditions: [technology.r-acc, fascism.neoreaction]
+    summary: >
+      English philosopher, formerly at Warwick, who treats capitalism as an inhuman intelligence assembling
+      itself and urges its acceleration past humanism. Later, from Shanghai, he joined neo-reaction,
+      arguing for exit from elected government.
+    argues:
+      - {position: ai.stake.capital-becomes-mind, in: {author: Nick Land, title: Machinic Desire, year: 1993}}
+      - {position: accelerationism.question.right-acc, in: {author: Nick Land, title: "Fanged Noumena: Collected Writings 1987–2007", year: 2011, note: "collects \"Meltdown\" (1994)"}}
+      - {position: state.relation.market-exit, in: {author: Nick Land, title: The Dark Enlightenment, year: 2012}}
+
+  - id: thinker.garton
+    name: Vincent Garton
+    region: United Kingdom
+    traditions: [technology.r-acc]
+    summary: >
+      British historian of political thought, trained at Cambridge, and a leading voice of "unconditional
+      accelerationism" in the late 2010s. Following Land, he held that capital is a process no party or state
+      can steer, and that politics which tries to direct it, left or right, should give way to letting it run.
+    argues:
+      - {position: accelerationism.question.right-acc, in: {author: Vincent Garton, title: Unconditional Accelerationism as Antipraxis, year: 2017, note: "Cyclonograph blog, 12 June 2017"}}
+
+  - id: thinker.andreessen
+    name: Marc Andreessen
+    born: 1971
+    died: null
+    region: United States
+    traditions: [technology.e-acc]
+    summary: >
+      American software entrepreneur and venture capitalist who co-wrote the first widely used web browser
+      and now argues that technology and growth are the moral good, that AI will save the world, and that
+      regulation and caution are the real danger.
+    argues:
+      - {position: ai.stake.accelerate, in: {author: Marc Andreessen, title: Why AI Will Save the World, year: 2023}}
+      - {position: accelerationism.question.effective-acc, in: {author: Marc Andreessen, title: The Techno-Optimist Manifesto, year: 2023}}
+      - {position: energy.transition.nuclear-abundance, in: {author: Marc Andreessen, title: The Techno-Optimist Manifesto, year: 2023}}
+
+  - id: thinker.kurzweil
+    name: Ray Kurzweil
+    born: 1948
+    died: null
+    region: United States
+    traditions: [technology.transhumanism]
+    summary: >
+      American inventor and Google engineer who holds that information technology improves at an
+      exponential rate, and forecasts a merger of human and machine intelligence, the "Singularity",
+      around 2045.
+    argues:
+      - {position: technology.nature.liberation, in: {author: Ray Kurzweil, title: The Age of Spiritual Machines, year: 1999}}
+      - {position: history.motor.technology, in: {author: Ray Kurzweil, title: "The Singularity Is Near: When Humans Transcend Biology", year: 2005}}
+      - {position: transhumanism.question.yes-free-choice, in: {author: Ray Kurzweil, title: "The Singularity Is Near: When Humans Transcend Biology", year: 2005}}
+
+  # ---------------- cyberlibertarianism ----------------
+  - id: thinker.barlow
+    name: John Perry Barlow
+    born: 1947
+    died: 2018
+    region: United States
+    traditions: [technology.cyberlibertarian]
+    summary: >
+      Wyoming rancher, Grateful Dead lyricist and co-founder of the Electronic Frontier Foundation. His 1996
+      declaration told governments they had no sovereignty in cyberspace, and he argued that copyright could
+      not survive the digital copying of ideas.
+    argues:
+      - {position: technology.nature.code-escapes-control, in: {author: John Perry Barlow, title: A Declaration of the Independence of Cyberspace, year: 1996}}
+      - {position: property.ip.monopoly-abolish, in: {author: John Perry Barlow, title: The Economy of Ideas, year: 1994, note: "Wired, March 1994; reissued as Selling Wine Without Bottles"}}
+
+  - id: thinker.timothy-may
+    name: Timothy C. May
+    born: 1951
+    died: 2018
+    region: United States
+    traditions: [technology.cyberlibertarian]
+    summary: >
+      American physicist at Intel and a founder of the cypherpunks mailing list. He argued that public-key
+      cryptography and anonymous digital money would let individuals trade and communicate beyond the reach
+      of states and would erode their power to tax and regulate.
+    argues:
+      - {position: technology.nature.code-escapes-control, in: {author: Timothy C. May, title: The Crypto Anarchist Manifesto, year: 1988}}
+      - {position: state.relation.market-exit, in: {author: Timothy C. May, title: The Crypto Anarchist Manifesto, year: 1988}}
+
+  # ---------------- technocracy ----------------
+  - id: thinker.howard-scott
+    name: Howard Scott
+    born: 1890
+    died: 1970
+    region: United States
+    traditions: [technology.technocracy]
+    summary: >
+      American engineer who led Technocracy Incorporated from 1933. He argued that the price system could no
+      longer distribute the output of energy-intensive industry and should be replaced by production run by
+      engineers and accounted in units of energy.
+    argues:
+      - {position: automation.ownership.engineers-plan, in: {author: Howard Scott and others, title: Introduction to Technocracy, year: 1933}}
+
+  - id: thinker.hubbert
+    name: M. King Hubbert
+    born: 1903
+    died: 1989
+    region: United States
+    traditions: [technology.technocracy]
+    summary: >
+      American geophysicist, a leading member of Technocracy Incorporated in the 1930s and later the
+      originator of the theory of peak oil. He wrote most of the movement's study course, which proposed
+      energy accounting in place of money.
+    argues:
+      - {position: automation.ownership.engineers-plan, in: {author: M. King Hubbert, title: Technocracy Study Course, year: 1934}}
+
+  # ---------------- transhumanism and e/acc ----------------
+  - id: thinker.james-hughes
+    name: James Hughes
+    born: 1961
+    died: null
+    region: United States
+    traditions: [technology.transhumanism]
+    summary: >
+      American sociologist and bioethicist, a former director of the World Transhumanist Association. He
+      argues for "democratic transhumanism": enhancement technologies regulated for safety and provided
+      universally through public health systems, so they reduce inequality rather than deepen it.
+    argues:
+      - {position: transhumanism.question.for-everyone, in: {author: James Hughes, title: "Citizen Cyborg: Why Democratic Societies Must Respond to the Redesigned Human of the Future", year: 2004}}
+
+  - id: thinker.savulescu
+    name: Julian Savulescu
+    born: 1963
+    died: null
+    region: Australia / United Kingdom
+    traditions: [liberalism.utilitarian]
+    summary: >
+      Australian bioethicist at Oxford and later Singapore. He argues that parents have a moral reason to
+      select, among the embryos available to them, the child expected to have the best life, and defends
+      human enhancement more broadly.
+    argues:
+      - {position: transhumanism.question.choose-the-best-children, in: {author: Julian Savulescu, title: "Procreative Beneficence: Why We Should Select the Best Children", year: 2001, note: Bioethics 15(5-6)}}
+
+  - id: thinker.max-more
+    name: Max More
+    born: 1964
+    died: null
+    region: United Kingdom / United States
+    traditions: [technology.transhumanism]
+    summary: >
+      British-born philosopher who founded the Extropy Institute and gave transhumanism its modern
+      definition. He argues that people should use science to overcome aging and other limits of biology,
+      by their own choice.
+    argues:
+      - {position: transhumanism.question.yes-free-choice, in: {author: Max More, title: "Transhumanism: Toward a Futurist Philosophy", year: 1990, note: "Extropy 6"}}
+
+  - id: thinker.verdon
+    name: Guillaume Verdon
+    region: Canada / United States
+    traditions: [technology.e-acc]
+    summary: >
+      Canadian physicist, formerly a quantum computing engineer at Google and founder of the AI hardware firm
+      Extropic, who under the name "Beff Jezos" launched effective accelerationism in 2022. He holds that
+      growth in energy use and computation is the direction of the universe and should be maximized.
+    argues:
+      - {position: accelerationism.question.effective-acc, in: {author: "Beff Jezos (Guillaume Verdon) and bayeslord", title: "Notes on e/acc principles and tenets", year: 2022, note: Substack}}
+      - {position: ai.stake.accelerate, in: {author: "Beff Jezos (Guillaume Verdon) and bayeslord", title: "Notes on e/acc principles and tenets", year: 2022, note: Substack}}
+
+  # ---------------- named in the technology debates ----------------
+  - id: thinker.aschenbrenner
+    name: Leopold Aschenbrenner
+    region: Germany / United States
+    traditions: [conservatism.neo]
+    summary: >
+      German-born former researcher on OpenAI's superalignment team who now runs an investment fund. His
+      2024 essay predicted machine intelligence beyond human level within the decade and called for the
+      United States to treat it as a national-security project, secure the laboratories against China and
+      build the computing at home.
+    argues:
+      - {position: ai.stake.great-power-race, in: {author: Leopold Aschenbrenner, title: "Situational Awareness: The Decade Ahead", year: 2024}}
+      - {position: automation.ownership.national-sovereign-ai, in: {author: Leopold Aschenbrenner, title: "Situational Awareness: The Decade Ahead", year: 2024, note: "a government-led \"Project\" to build AGI"}}
+
+  - id: thinker.noys
+    name: Benjamin Noys
+    region: United Kingdom
+    traditions: [marxism.western]
+    summary: >
+      British critical theorist at the University of Chichester who coined the term accelerationism in 2010
+      to criticize it. He argues that the fantasy of speeding capitalism past itself mistakes its destructive
+      dynamism for liberation and skips over the labor that machines discipline.
+    argues:
+      - {position: technology.nature.capitals-weapon, in: {author: Benjamin Noys, title: "Malign Velocities: Accelerationism and Capitalism", year: 2014}}
+
+  - id: thinker.holloway
+    name: John Holloway
+    born: 1947
+    died: null
+    region: Ireland / Mexico
+    traditions: [marxism.autonomism]
+    summary: >
+      Dublin-born Marxist sociologist at the Autonomous University of Puebla, Mexico, whose work grew out of
+      the Zapatista rising. He argues that seizing the state reproduces the power it opposes, and that
+      revolution happens in the cracks where people refuse capitalist work and organize otherwise.
+    argues:
+      - {position: state.relation.exit-and-build, in: {author: John Holloway, title: "Change the World Without Taking Power: The Meaning of Revolution Today", year: 2002}}
+      - {position: org.form.horizontal-movement, in: {author: John Holloway, title: Crack Capitalism, year: 2010}}
+      - {position: hist.zapatistas.autonomy-without-power, in: {author: John Holloway, title: "Change the World Without Taking Power: The Meaning of Revolution Today", year: 2002}}

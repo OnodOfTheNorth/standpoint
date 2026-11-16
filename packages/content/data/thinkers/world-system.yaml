@@ -1,0 +1,557 @@
+# The world system: dependency, structuralism, unequal exchange and the drain, and opposite them
+# modernization theory, institutionalism, the case against aid and the case for integration.
+thinkers:
+  # ---- Structuralism and dependency in Latin America
+  - id: thinker.prebisch
+    name: Raúl Prebisch
+    born: 1901
+    died: 1986
+    region: Argentina / Chile
+    traditions: [marxism.dependency]
+    summary: >
+      Argentine central banker who led the UN Economic Commission for Latin America from 1950 and was the
+      first secretary-general of UNCTAD. He argued that the terms of trade of primary exporters decline
+      against manufactures, so the periphery must industrialize, and pressed for new trade rules for the
+      South.
+    argues:
+      - {position: exchange.unequal.terms-of-trade, in: {author: Raúl Prebisch, title: "The Economic Development of Latin America and Its Principal Problems", year: 1950}}
+      - {position: development.path.import-substitution, in: {author: Raúl Prebisch, title: "The Economic Development of Latin America and Its Principal Problems", year: 1950}}
+      - {position: intl.institutions.build-alternatives, in: {author: Raúl Prebisch, title: "Towards a New Trade Policy for Development", year: 1964, note: "report to the first UNCTAD conference"}}
+
+  - id: thinker.hans-singer
+    name: Hans Singer
+    born: 1910
+    died: 2006
+    region: Germany / England
+    traditions: [socdem.keynesian]
+    summary: >
+      German-born student of Keynes who left Nazi Germany and worked for the United Nations on development
+      finance. Independently of Prebisch he showed that the gains from trade and foreign investment in raw
+      materials accrued mainly to the investing countries.
+    argues:
+      - {position: exchange.unequal.terms-of-trade, in: {author: H. W. Singer, title: "The Distribution of Gains between Investing and Borrowing Countries", year: 1950, note: "American Economic Review 40(2)"}}
+
+  - id: thinker.furtado
+    name: Celso Furtado
+    born: 1920
+    died: 2004
+    region: Brazil
+    traditions: [marxism.dependency]
+    summary: >
+      Brazilian economist at ECLA, head of the development agency for the Northeast and planning minister
+      under Goulart, exiled after the 1964 coup. He argued that underdevelopment is not a stage before
+      development but a structure produced by the same expansion of capitalism.
+    argues:
+      - {position: development.path.import-substitution, in: {author: Celso Furtado, title: "The Economic Growth of Brazil", year: 1959, note: "Formação Econômica do Brasil"}}
+
+  - id: thinker.frank
+    name: Andre Gunder Frank
+    born: 1929
+    died: 2005
+    region: Germany / Chile / United States
+    traditions: [marxism.dependency]
+    summary: >
+      Berlin-born economist trained in Chicago who taught in Chile until the 1973 coup. He argued that
+      Latin America had been capitalist since the conquest and that the "development of underdevelopment"
+      followed from its place in a chain of metropoles and satellites, ruled locally by a dependent
+      "lumpenbourgeoisie."
+    argues:
+      - {position: poverty.cause.drain, in: {author: Andre Gunder Frank, title: "Capitalism and Underdevelopment in Latin America", year: 1967}}
+      - {position: capitalism.nature.world-system, in: {author: Andre Gunder Frank, title: "Capitalism and Underdevelopment in Latin America", year: 1967}}
+      - {position: comprador.nature.broker-class, in: {author: Andre Gunder Frank, title: "Lumpenbourgeoisie: Lumpendevelopment", year: 1972}}
+
+  - id: thinker.dos-santos
+    name: Theotônio dos Santos
+    born: 1936
+    died: 2018
+    region: Brazil / Chile / Mexico
+    traditions: [marxism.dependency]
+    summary: >
+      Brazilian economist and a founder of Marxist dependency theory at the University of Chile's Center
+      for Socio-Economic Studies. He defined dependence as a situation in which the economy of one group
+      of countries is conditioned by the expansion of another, and traced its colonial, financial-industrial
+      and technological forms.
+    argues:
+      - {position: poverty.cause.drain, in: {author: Theotonio Dos Santos, title: "The Structure of Dependence", year: 1970, note: "American Economic Review 60(2)"}}
+
+  - id: thinker.marini
+    name: Ruy Mauro Marini
+    born: 1932
+    died: 1997
+    region: Brazil / Chile / Mexico
+    traditions: [marxism.dependency]
+    summary: >
+      Brazilian Marxist exiled after 1964, a member of Chile's Revolutionary Left Movement (MIR) until the
+      1973 coup. He argued that peripheral capital offsets the value lost in unequal exchange by the
+      super-exploitation of labor, paying workers below the value of their labor power, and named Brazil's
+      regional expansion "subimperialism."
+    argues:
+      - {position: profit.legitimacy.drain-superprofit, in: {author: Ruy Mauro Marini, title: "Dialéctica de la dependencia", year: 1973}}
+      - {position: poverty.cause.drain, in: {author: Ruy Mauro Marini, title: "Dialéctica de la dependencia", year: 1973}}
+
+  - id: thinker.cardoso
+    name: Fernando Henrique Cardoso
+    born: 1931
+    died: null
+    region: Brazil
+    traditions: [marxism.dependency, socdem.third-way]
+    summary: >
+      Brazilian sociologist who argued with Enzo Faletto that dependency could coexist with industrial
+      growth, as local capital allied with multinational firms in "associated-dependent development."
+      As president of Brazil from 1995 to 2002 he stabilized the currency, privatized state firms and
+      opened the economy.
+    argues:
+      - {position: comprador.nature.transnational-fraction, in: {author: Fernando Henrique Cardoso, title: "Associated-Dependent Development: Theoretical and Practical Implications", year: 1973, note: "in Alfred Stepan, ed., Authoritarian Brazil"}}
+      - {position: development.path.integration, in: {author: Fernando Henrique Cardoso, title: "Charting a New Course: The Politics of Globalization and Social Transformation", year: 2001}}
+
+  - id: thinker.baran
+    name: Paul Baran
+    born: 1909
+    died: 1964
+    region: Ukraine / Germany / United States
+    traditions: [marxism.dependency]
+    summary: >
+      Economist born in Mykolaiv who worked in Moscow and Frankfurt before settling at Stanford. He argued
+      that the surplus of poor countries is drained abroad or wasted by landlords, merchants and compradors,
+      so only socialist planning could mobilize it for development; with Sweezy he wrote Monopoly Capital.
+    argues:
+      - {position: poverty.cause.drain, in: {author: Paul A. Baran, title: "The Political Economy of Growth", year: 1957}}
+      - {position: development.path.planned-industrialization, in: {author: Paul A. Baran, title: "The Political Economy of Growth", year: 1957}}
+      - {position: war.militarism.arms-profits, in: {author: Paul A. Baran and Paul M. Sweezy, title: "Monopoly Capital", year: 1966}}
+
+  - id: thinker.magdoff
+    name: Harry Magdoff
+    born: 1913
+    died: 2006
+    region: United States
+    traditions: [marxism.dependency]
+    summary: >
+      American economist who worked in New Deal planning agencies and later co-edited Monthly Review with
+      Paul Sweezy. He documented how US foreign investment, aid and finance after 1945 served American
+      firms' access to raw materials and markets.
+    argues:
+      - {position: imperialism.nature.monopoly-stage, in: {author: Harry Magdoff, title: "The Age of Imperialism: The Economics of U.S. Foreign Policy", year: 1969}}
+      - {position: aid.foreign.instrument-of-power, in: {author: Harry Magdoff, title: "The Age of Imperialism: The Economics of U.S. Foreign Policy", year: 1969}}
+
+  # ---- World-systems analysis
+  - id: thinker.arrighi
+    name: Giovanni Arrighi
+    born: 1937
+    died: 2009
+    region: Italy / Rhodesia / Tanzania / United States
+    traditions: [marxism.world-systems]
+    summary: >
+      Italian economist who began his work on labor supplies in Rhodesia and taught in Dar es Salaam,
+      later at Binghamton and Johns Hopkins. He traced successive cycles of accumulation led by Genoa,
+      Holland, Britain and the United States, each ending in financial expansion, and saw in East Asia's
+      rise a possible shift of the system's centre.
+    argues:
+      - {position: capitalism.nature.world-system, in: {author: Giovanni Arrighi, title: "The Long Twentieth Century: Money, Power, and the Origins of Our Times", year: 1994}}
+      - {position: china.role.counterweight, in: {author: Giovanni Arrighi, title: "Adam Smith in Beijing: Lineages of the Twenty-First Century", year: 2007}}
+
+  - id: thinker.hung
+    name: Ho-fung Hung
+    died: null
+    region: Hong Kong / United States
+    traditions: [marxism.world-systems]
+    summary: >
+      Hong Kong-born sociologist at Johns Hopkins and a student of Arrighi. He argues that China's boom
+      rested on cheap migrant labor producing exports for Western markets, and that the US-China conflict
+      grows out of rivalry between their corporations, as among the great powers around 1900.
+    argues:
+      - {position: china.role.workshop-of-core-capital, in: {author: Ho-fung Hung, title: "The China Boom: Why China Will Not Rule the World", year: 2015}}
+      - {position: china.role.great-power-rivalry, in: {author: Ho-fung Hung, title: "Clash of Empires: From 'Chimerica' to the 'New Cold War'", year: 2022}}
+      - {position: hist.china-present.state-capitalist-rival, in: {author: Ho-fung Hung, title: "Clash of Empires: From 'Chimerica' to the 'New Cold War'", year: 2022}}
+
+  # ---- The drain and unequal exchange today
+  - id: thinker.utsa-patnaik
+    name: Utsa Patnaik
+    born: 1945
+    died: null
+    region: India
+    traditions: [marxism.third-worldism]
+    summary: >
+      Indian economist at Jawaharlal Nehru University who works on the agrarian question, food security and
+      colonial transfers. She estimated the drain of wealth from India to Britain between 1765 and 1938 at
+      about 45 trillion dollars at present values, and with Prabhat Patnaik argues that imperialism rests on
+      keeping down the incomes of the tropical periphery.
+    argues:
+      - {position: poverty.cause.drain, in: {author: Utsa Patnaik, title: "Revisiting the 'Drain', or Transfers from India to Britain in the Context of Global Diffusion of Capitalism", year: 2017, note: "in Shubhra Chakrabarti and Utsa Patnaik, eds., Agrarian and Other Histories"}}
+      - {position: imperialism.nature.unequal-exchange-drain, in: {author: Utsa Patnaik and Prabhat Patnaik, title: "A Theory of Imperialism", year: 2017}}
+      - {position: growth.ecology.sovereign-planned-south, in: {author: "Utsa Patnaik and Prabhat Patnaik", title: "Capital and Imperialism: Theory, History, and the Present", year: 2021}}
+
+  - id: thinker.prabhat-patnaik
+    name: Prabhat Patnaik
+    born: 1945
+    died: null
+    region: India
+    traditions: [marxism.third-worldism]
+    summary: >
+      Indian economist at Jawaharlal Nehru University and vice-chairman of Kerala's State Planning Board
+      from 2006 to 2011. He argues that the value of money in the core is stabilized by a reserve army of
+      labor and by "income deflation" imposed on the periphery, so that crises in the core are pushed onto
+      the South.
+    argues:
+      - {position: money.nature.currency-hierarchy, in: {author: Prabhat Patnaik, title: "The Value of Money", year: 2009}}
+      - {position: crisis.cause.imperial-drain, in: {author: Utsa Patnaik and Prabhat Patnaik, title: "A Theory of Imperialism", year: 2017}}
+      - {position: imperialism.nature.unequal-exchange-drain, in: {author: Utsa Patnaik and Prabhat Patnaik, title: "A Theory of Imperialism", year: 2017}}
+
+  - id: thinker.john-smith
+    name: John Smith
+    region: England
+    traditions: [marxism.third-worldism]
+    summary: >
+      British political economist at Kingston University. Through the T-shirt, the iPhone and coffee he
+      argues that the shift of production to low-wage countries has made the super-exploitation of Southern
+      labor a main source of the profits and consumption of the core, hidden by GDP accounts that book the
+      value at the point of sale.
+    argues:
+      - {position: labor.division.core-periphery, in: {author: John Smith, title: "Imperialism in the Twenty-First Century: Globalization, Super-Exploitation, and Capitalism's Final Crisis", year: 2016, note: "global labour arbitrage"}}
+      - {position: profit.legitimacy.drain-superprofit, in: {author: John Smith, title: "Imperialism in the Twenty-First Century: Globalization, Super-Exploitation, and Capitalism's Final Crisis", year: 2016}}
+      - {position: imperialism.nature.unequal-exchange-drain, in: {author: John Smith, title: "Imperialism in the Twenty-First Century: Globalization, Super-Exploitation, and Capitalism's Final Crisis", year: 2016}}
+
+  - id: thinker.cope
+    name: Zak Cope
+    region: England
+    traditions: [marxism.third-worldism]
+    summary: >
+      British political economist who argued that value transfers from the periphery have raised the
+      working class of the rich countries as a whole into a labor aristocracy whose wages and social
+      benefits exceed the value it produces.
+    argues:
+      - {position: labor.aristocracy.whole-core-bought, in: {author: Zak Cope, title: "Divided World Divided Class: Global Political Economy and the Stratification of Labour Under Capitalism", year: 2012}}
+      - {position: class.concept.world-and-race, in: {author: Zak Cope, title: "Divided World Divided Class: Global Political Economy and the Stratification of Labour Under Capitalism", year: 2012}}
+      - {position: welfare.state.drain-and-threat, in: {author: Zak Cope, title: "Divided World Divided Class: Global Political Economy and the Stratification of Labour Under Capitalism", year: 2012}}
+      - {position: inequality.justice.global-drain, in: {author: Zak Cope, title: "The Wealth of (Some) Nations: Imperialism and the Mechanics of Value Transfer", year: 2019}}
+
+  - id: thinker.suwandi
+    name: Intan Suwandi
+    region: Indonesia / United States
+    traditions: [marxism.dependency]
+    summary: >
+      Indonesian sociologist at Illinois State University. Using unit labor costs and case studies of
+      Indonesian suppliers, she shows how the surplus produced by workers in global value chains ends up
+      with lead firms in the North and their intermediaries in the South.
+    argues:
+      - {position: exchange.unequal.value-chain-capture, in: {author: Intan Suwandi, title: "Value Chains: The New Economic Imperialism", year: 2019}}
+      - {position: profit.legitimacy.drain-superprofit, in: {author: Intan Suwandi, title: "Value Chains: The New Economic Imperialism", year: 2019}}
+
+  - id: thinker.payer
+    name: Cheryl Payer
+    born: 1940
+    died: 2001
+    region: United States
+    traditions: [marxism.dependency]
+    summary: >
+      American political economist who studied the IMF's standby arrangements in Asia, Africa and Latin
+      America. She argued that IMF and World Bank lending traps borrowers in debt and forces them to open
+      their economies to foreign capital.
+    argues:
+      - {position: intl.institutions.creditor-instruments, in: {author: Cheryl Payer, title: "The Debt Trap: The International Monetary Fund and the Third World", year: 1974}}
+      - {position: aid.foreign.instrument-of-power, in: {author: Cheryl Payer, title: "The World Bank: A Critical Analysis", year: 1982}}
+
+  - id: thinker.hayter
+    name: Teresa Hayter
+    born: 1940
+    died: null
+    region: England
+    traditions: [marxism.trotskyism]
+    summary: >
+      British writer commissioned to study World Bank and aid-agency policy in Latin America, whose report
+      was refused by its sponsor and published as Aid as Imperialism. She documented how donors used aid
+      as leverage over borrowers' economic policies, and later campaigned against immigration detention.
+    argues:
+      - {position: aid.foreign.instrument-of-power, in: {author: Teresa Hayter, title: "Aid as Imperialism", year: 1971}}
+
+  - id: thinker.toussaint
+    name: Éric Toussaint
+    born: 1954
+    died: null
+    region: Belgium
+    traditions: [marxism.trotskyism]
+    summary: >
+      Belgian historian and spokesperson of the Committee for the Abolition of Illegitimate Debts (CADTM),
+      a member of the Fourth International. He argues that the debts of the South have been repaid many
+      times over in interest, and has led audits proposing repudiation in Ecuador and Greece.
+    argues:
+      - {position: debt.sovereign.already-paid, in: {author: Éric Toussaint, title: "Your Money or Your Life: The Tyranny of Global Finance", year: 1999}}
+      - {position: debt.sovereign.odious-debt, in: {author: Éric Toussaint, title: "The Debt System: A History of Sovereign Debts and their Repudiation", year: 2019}}
+      - {position: aid.foreign.small-change-from-the-drain, in: {author: Damien Millet and Éric Toussaint, title: "Debt, the IMF, and the World Bank: Sixty Questions, Sixty Answers", year: 2010}}
+      - {position: hist.neoliberal-turn.debt-discipline-of-the-south, in: {author: Éric Toussaint, title: "Your Money or Your Life: The Tyranny of Global Finance", year: 1999}}
+
+  # ---- Developmental states
+  - id: thinker.amsden
+    name: Alice Amsden
+    born: 1943
+    died: 2012
+    region: United States
+    traditions: [nationalism.developmental-state]
+    summary: >
+      American economist at MIT who studied South Korea's industrialization. She argued that late
+      industrializers grew not by getting prices right but by deliberately getting them "wrong," trading
+      subsidies to firms for performance standards in exports and output.
+    argues:
+      - {position: development.path.developmental-state, in: {author: Alice H. Amsden, title: "Asia's Next Giant: South Korea and Late Industrialization", year: 1989}}
+      - {position: development.path.import-substitution, in: {author: Alice H. Amsden, title: "The Rise of 'The Rest': Challenges to the West from Late-Industrializing Economies", year: 2001}}
+
+  - id: thinker.chang
+    name: Ha-Joon Chang
+    born: 1963
+    died: null
+    region: South Korea / England
+    traditions: [nationalism.developmental-state]
+    summary: >
+      Korean economist at Cambridge and later SOAS. He argues that Britain and the United States grew rich
+      behind tariffs and subsidies and now "kick away the ladder" by forbidding the same policies to poor
+      countries through the IMF, World Bank and WTO.
+    argues:
+      - {position: development.path.developmental-state, in: {author: Ha-Joon Chang, title: "Kicking Away the Ladder: Development Strategy in Historical Perspective", year: 2002}}
+      - {position: intl.institutions.reform-democratize, in: {author: Ha-Joon Chang, title: "Bad Samaritans: The Myth of Free Trade and the Secret History of Capitalism", year: 2007}}
+      - {position: property.ip.technology-monopoly, in: {author: "Ha-Joon Chang", title: "Kicking Away the Ladder: Development Strategy in Historical Perspective", year: 2002}}
+
+  # ---- Imperialism as pioneer, the transition debate
+  - id: thinker.warren
+    name: Bill Warren
+    died: 1978
+    region: England
+    traditions: [marxism.classical]
+    summary: >
+      British Marxist economist who returned to Marx's view that capitalism, imperialism included, develops
+      the productive forces wherever it spreads. He argued that capitalist industrialization was advancing
+      in the former colonies and that dependency theory was a nationalist myth.
+    argues:
+      - {position: comprador.nature.independent-capitalists, in: {author: Bill Warren, title: "Imperialism: Pioneer of Capitalism", year: 1980, note: "posthumous, edited by John Sender"}}
+      - {position: poverty.cause.late-development, in: {author: Bill Warren, title: "Imperialism: Pioneer of Capitalism", year: 1980}}
+
+  - id: thinker.wood
+    name: Ellen Meiksins Wood
+    born: 1942
+    died: 2016
+    region: United States / Canada / England
+    traditions: [marxism.western]
+    summary: >
+      American-born political theorist at York University in Toronto and an editor of New Left Review and
+      Monthly Review. With Robert Brenner she developed "political Marxism," locating capitalism's origin in
+      the market dependence imposed on English agrarian producers, and argued that the new imperialism works
+      through economic compulsion enforced by a system of states.
+    argues:
+      - {position: markets.nature.older-than-capitalism, in: {author: Ellen Meiksins Wood, title: "The Origin of Capitalism", year: 1999}}
+
+  # ---- Opposite: modernization, institutions, integration, the case against aid
+  - id: thinker.rostow
+    name: W. W. Rostow
+    born: 1916
+    died: 2003
+    region: United States
+    traditions: [liberalism.internationalist]
+    summary: >
+      American economic historian and national security adviser to President Johnson during the Vietnam
+      War. He argued that every society passes through five stages of growth to high mass consumption, and
+      offered this as a non-communist road for poor countries.
+    argues:
+      - {position: poverty.cause.late-development, in: {author: W. W. Rostow, title: "The Stages of Economic Growth: A Non-Communist Manifesto", year: 1960}}
+
+  - id: thinker.acemoglu
+    name: Daron Acemoglu
+    born: 1967
+    died: null
+    region: Turkey / United States
+    traditions: [liberalism.technocratic]
+    summary: >
+      Turkish-American economist at MIT. With James Robinson and Simon Johnson he argues that countries
+      prosper under inclusive institutions and stay poor under extractive ones, and that colonizers built
+      extractive institutions where they did not settle.
+    argues:
+      - {position: poverty.cause.bad-institutions, in: {author: Daron Acemoglu and James A. Robinson, title: "Why Nations Fail: The Origins of Power, Prosperity, and Poverty", year: 2012}}
+      - {position: poverty.cause.colonial-legacy, in: {author: Daron Acemoglu, Simon Johnson and James A. Robinson, title: "The Colonial Origins of Comparative Development: An Empirical Investigation", year: 2001, note: "American Economic Review 91(5)"}}
+
+  - id: thinker.sachs
+    name: Jeffrey Sachs
+    born: 1954
+    died: null
+    region: United States
+    traditions: [liberalism.technocratic]
+    summary: >
+      American economist who advised Bolivia, Poland and Russia on rapid stabilization and market reform,
+      then directed the UN Millennium Project. He argues that geography and disease trap the poorest
+      countries and that large aid can lift them out, and has become a critic of US sanctions and wars.
+    argues:
+      - {position: change.tempo.shock-therapy, in: {author: Jeffrey Sachs, title: "Poland's Jump to the Market Economy", year: 1993}}
+      - {position: aid.foreign.saves-lives-give-more, in: {author: Jeffrey D. Sachs, title: "The End of Poverty: Economic Possibilities for Our Time", year: 2005}}
+      - {position: poverty.cause.geography, in: {author: John Luke Gallup, Jeffrey D. Sachs and Andrew D. Mellinger, title: "Geography and Economic Development", year: 1999, note: "International Regional Science Review 22(2)"}}
+      - {position: intl.sanctions.economic-war, in: {author: Mark Weisbrot and Jeffrey Sachs, title: "Economic Sanctions as Collective Punishment: The Case of Venezuela", year: 2019, note: "CEPR report"}}
+
+  - id: thinker.bhagwati
+    name: Jagdish Bhagwati
+    born: 1934
+    died: null
+    region: India / United States
+    traditions: [liberalism.technocratic]
+    summary: >
+      Indian-born trade economist at Columbia who criticized India's licensing and import controls and
+      defended free trade against both protectionists and anti-globalization movements, while opposing
+      free capital mobility.
+    argues:
+      - {position: exchange.unequal.mutual-gain, in: {author: Jagdish Bhagwati, title: "In Defense of Globalization", year: 2004}}
+      - {position: development.path.integration, in: {author: Jagdish Bhagwati, title: "In Defense of Globalization", year: 2004}}
+
+  - id: thinker.peter-bauer
+    name: Peter Bauer
+    born: 1915
+    died: 2002
+    region: Hungary / England
+    traditions: [liberalism.classical]
+    summary: >
+      Budapest-born economist at the London School of Economics who studied the rubber trade of Malaya and
+      the produce trade of West Africa. He argued that poor people develop by trading and saving, and that
+      official aid enlarges governments and their controls at the expense of the people it claims to help.
+    argues:
+      - {position: aid.foreign.dependency-and-theft, in: {author: P. T. Bauer, title: "Dissent on Development", year: 1971}}
+      - {position: development.path.market-freedom, in: {author: P. T. Bauer, title: "Dissent on Development", year: 1971}}
+
+  - id: thinker.moyo
+    name: Dambisa Moyo
+    born: 1969
+    died: null
+    region: Zambia / United States
+    traditions: [liberalism.classical]
+    summary: >
+      Zambian economist who worked at the World Bank and Goldman Sachs. She argues that decades of aid to
+      African governments have fed corruption and dependence, and that African states should finance
+      themselves through bond markets, trade and foreign investment.
+    argues:
+      - {position: aid.foreign.dependency-and-theft, in: {author: Dambisa Moyo, title: "Dead Aid: Why Aid Is Not Working and How There Is a Better Way for Africa", year: 2009}}
+      - {position: growth.ecology.sovereign-planned-south, in: {author: "Sam Moyo and Paris Yeros (eds.)", title: "Reclaiming the Land: The Resurgence of Rural Movements in Africa, Asia and Latin America", year: 2005}}
+
+  - id: thinker.krueger
+    name: Anne Krueger
+    born: 1934
+    died: null
+    region: United States
+    traditions: [liberalism.technocratic]
+    summary: >
+      American trade economist who coined "rent-seeking," was chief economist of the World Bank in the
+      1980s and first deputy managing director of the IMF from 2001 to 2006. She proposed a statutory
+      mechanism for restructuring unpayable sovereign debt.
+    argues:
+      - {position: debt.sovereign.orderly-restructuring, in: {author: Anne O. Krueger, title: "A New Approach to Sovereign Debt Restructuring", year: 2002, note: "IMF pamphlet"}}
+      - {position: development.path.integration, in: {author: Anne O. Krueger, title: "The Political Economy of the Rent-Seeking Society", year: 1974, note: "American Economic Review 64(3); the case against import controls"}}
+
+  - id: thinker.nephew
+    name: Richard Nephew
+    region: United States
+    traditions: [liberalism.internationalist]
+    summary: >
+      American official who designed sanctions on Iran at the State Department and the National Security
+      Council. He argues that sanctions work when the pain they inflict is calibrated, escalated and tied to
+      clear demands that can be met.
+    argues:
+      - {position: intl.sanctions.legitimate-tool, in: {author: Richard Nephew, title: "The Art of Sanctions: A View from the Field", year: 2017}}
+
+  - id: thinker.pape
+    name: Robert Pape
+    died: null
+    region: United States
+    traditions: [conservatism.realism]
+    summary: >
+      American political scientist at the University of Chicago who works on coercion, air power and
+      suicide terrorism. He found that economic sanctions rarely achieve their political goals because
+      target states absorb the pain and nationalism rallies around them.
+    argues:
+      - {position: intl.sanctions.counterproductive, in: {author: Robert A. Pape, title: "Why Economic Sanctions Do Not Work", year: 1997, note: "International Security 22(2)"}}
+
+  - id: thinker.huntington
+    name: Samuel P. Huntington
+    born: 1927
+    died: 2008
+    region: United States
+    traditions: [conservatism.realism]
+    summary: >
+      Harvard political scientist and adviser to the US government on Vietnam and national security. He
+      argued that after the Cold War the main lines of conflict would run between civilizations defined
+      chiefly by religion.
+    argues:
+      - {position: contradiction.primary.civilizations, in: {author: Samuel P. Huntington, title: "The Clash of Civilizations and the Remaking of World Order", year: 1996}}
+      - {position: world.order.civilizational-poles, in: {author: Samuel P. Huntington, title: "The Clash of Civilizations and the Remaking of World Order", year: 1996, note: "core states keeping order within their civilizations"}}
+      - {position: culture.war.civilizational-struggle, in: {author: Samuel P. Huntington, title: "Who Are We? The Challenges to America's National Identity", year: 2004}}
+      - {position: migrant.loyalty.new-country-first, in: {author: "Samuel P. Huntington", title: "Who Are We? The Challenges to America's National Identity", year: 2004}}
+
+  - id: thinker.post
+    name: Charles Post
+    region: United States
+    traditions: [marxism.third-camp]
+    summary: >
+      American Marxist historian at the City University of New York and member of the socialist group
+      Solidarity. He argues that the higher wages of workers in rich countries come from higher
+      productivity and struggle, not from imperialist superprofits, and that reformism comes from the union
+      bureaucracy and the ebb of struggle.
+    argues:
+      - {position: labor.aristocracy.no-labor-aristocracy, in: {author: Charlie Post, title: "Exploring Working-Class Consciousness: A Critique of the Theory of the 'Labour-Aristocracy'", year: 2010, note: "Historical Materialism 18(4)"}}
+
+  - id: thinker.arendt
+    name: Hannah Arendt
+    born: 1906
+    died: 1975
+    region: Germany / United States
+    traditions: [liberalism.republican]
+    summary: >
+      German-Jewish political theorist who fled Nazi Germany and settled in New York. She held that
+      totalitarianism was a new form of rule by terror and ideology over atomized masses, and that violence
+      can destroy power but never create it, against Fanon and Sartre.
+    argues:
+      - {position: totalitarianism.concept.novel-form, in: {author: Hannah Arendt, title: "The Origins of Totalitarianism", year: 1951}}
+      - {position: rights.basis.membership, in: {author: Hannah Arendt, title: The Origins of Totalitarianism, year: 1951, note: "chapter 9: the right to have rights"}}
+
+  # ---- Humanitarian intervention and the causes of war
+  - id: thinker.evans
+    name: Gareth Evans
+    born: 1944
+    died: null
+    region: Australia
+    traditions: [liberalism.internationalist]
+    summary: >
+      Australian Labor foreign minister and later president of the International Crisis Group, who
+      co-chaired the 2001 commission that formulated the responsibility to protect.
+    argues:
+      - {position: intervention.humanitarian.responsibility-to-protect, in: {author: Gareth Evans, title: "The Responsibility to Protect: Ending Mass Atrocity Crimes Once and For All", year: 2008}}
+
+  - id: thinker.chomsky
+    name: Noam Chomsky
+    born: 1928
+    died: null
+    region: United States
+    traditions: [anarchism.syndicalist]
+    summary: >
+      American linguist and anarcho-syndicalist critic of US foreign policy. He argued that the NATO war over
+      Kosovo, like earlier interventions, was chosen by strategic interest and justified by a selective
+      humanitarian language that ignored atrocities committed by allies.
+    argues:
+      - {position: intervention.humanitarian.imperial-pretext, in: {author: Noam Chomsky, title: "The New Military Humanism: Lessons from Kosovo", year: 1999}}
+      - {position: hist.cold-war.counter-revolution-in-the-south, in: {author: Noam Chomsky, title: Deterring Democracy, year: 1991}}
+      - {position: ideology.formation.manufactured-consent, in: {author: Edward S. Herman and Noam Chomsky, title: "Manufacturing Consent: The Political Economy of the Mass Media", year: 1988}}
+
+  - id: thinker.mearsheimer
+    name: John Mearsheimer
+    born: 1947
+    died: null
+    region: United States
+    traditions: [conservatism.realism]
+    summary: >
+      American political scientist at the University of Chicago and theorist of offensive realism. He holds
+      that in an international system without a sovereign, great powers seek regional hegemony, and that
+      crusades for liberal values abroad weaken the states that wage them.
+    argues:
+      - {position: war.militarism.anarchy-security, in: {author: John J. Mearsheimer, title: "The Tragedy of Great Power Politics", year: 2001}}
+      - {position: intervention.humanitarian.national-interest-only, in: {author: John J. Mearsheimer, title: "The Great Delusion: Liberal Dreams and International Realities", year: 2018}}
+
+  - id: thinker.gabor
+    name: Daniela Gabor
+    region: Romania / England
+    traditions: [socdem.post-keynesian]
+    summary: >
+      Romanian-born macro-finance economist at the University of the West of England. She argues that the
+      World Bank, the UN and the G20 now organize development around making assets in the South safe for
+      global portfolio investors, with the state bearing the risks: a "Wall Street Consensus" that narrows
+      room for a developmental state.
+    argues:
+      - {position: intl.institutions.creditor-instruments, in: {author: Daniela Gabor, title: "The Wall Street Consensus", year: 2021, note: "Development and Change 52(3)"}}

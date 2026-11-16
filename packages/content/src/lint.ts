@@ -294,10 +294,51 @@ export function lintBundle(b: Bundle, errors: string[], warnings: string[], know
     tensions: Object.keys(b.tensions).length,
   };
   for (const k of Object.keys(FLOORS) as (keyof typeof FLOORS)[]) if (fl[k] < FLOORS[k]) coverage(`floor: ${k} ${fl[k]} < ${FLOORS[k]}`);
+  const tc = thinkerCoverage(b);
+  const tcN = tc.traditions.length + tc.problematics.length + tc.debates.length;
+  if (tcN) coverage(`thinker coverage: ${tcN} gap(s) (${tc.traditions.length} traditions, ${tc.problematics.length} problematics, ${tc.debates.length} debate sides); run npx tsx src/thinker-report.ts`);
   if (b.trunk.length < 6) coverage(`trunk has ${b.trunk.length} nodes; needs about 8`);
 }
 
 function isTerminal(n: Node, arcNodes: string[], _N: Record<string, Node>) {
   // the last listed node of an arc may end without explicit "end"
   return arcNodes[arcNodes.length - 1] === n.id;
+}
+
+/**
+ * Thinker coverage rules (phase 2 brief, section 6). Returned as messages so the
+ * compiler can report them and `src/thinker-report.ts` can list the gaps.
+ * - every leaf tradition outside the common-sense family has >= 2 thinkers;
+ * - every problematic has thinkers arguing >= 3 of its positions, and where a
+ *   materialist position exists (one defined by a Marxist tradition) one of them
+ *   is argued by someone;
+ * - every debate side names at least one thinker who has an entry.
+ */
+export function thinkerCoverage(b: Bundle): { traditions: string[]; problematics: string[]; debates: string[] } {
+  const argued = new Map<string, number>();
+  for (const th of Object.values(b.thinkers))
+    for (const a of th.argues) argued.set(a.position, (argued.get(a.position) ?? 0) + 1);
+  const traditions: string[] = [];
+  for (const t of Object.values(b.traditions)) {
+    if (!t.leaf || t.family === 'commonsense') continue;
+    if (t.thinkers.length < 2) traditions.push(`tradition ${t.id}: ${t.thinkers.length} thinker(s), needs 2`);
+  }
+  const problematics: string[] = [];
+  for (const pr of Object.values(b.problematics)) {
+    if (pr.domain === 'commonsense') continue; // common-sense formations are exempt
+    const withThinker = pr.positions.filter((p) => argued.has(p));
+    if (withThinker.length < 3)
+      problematics.push(`problematic ${pr.id}: thinkers on ${withThinker.length} position(s), needs 3`);
+    const materialist = pr.positions.filter((p) =>
+      (b.positions[p]?.traditions.defining ?? []).some((t) => t.startsWith('marxism.')),
+    );
+    if (materialist.length && !materialist.some((p) => argued.has(p)))
+      problematics.push(`problematic ${pr.id}: no thinker on its materialist position(s) ${materialist.join(', ')}`);
+  }
+  const debates: string[] = [];
+  for (const d of Object.values(b.debates))
+    d.sides.forEach((s, i) => {
+      if (!s.thinkers.some((t) => b.thinkers[t])) debates.push(`debate ${d.id} side ${i + 1} (${s.label}): no thinker with an entry`);
+    });
+  return { traditions, problematics, debates };
 }

@@ -3,14 +3,17 @@ problematics:
   - id: nature.value
     domain: ecology
     layer: method
-    question: Does nature have value in itself?
-    plain: Is a forest worth protecting because of what it does for people, or because it matters on its own?
-    short: the value of nature
+    question: Whose is nature, and what is it for?
+    plain: >-
+      A forest can be timber on a company balance sheet, a carbon credit sold abroad, a commons that feeds a
+      village, a relative, God's creation, or wilderness fenced off for its own sake. What is it, and who has the
+      right to decide what is done with it?
+    short: what nature is and who decides its use
     importance: 2
     region: ecology
     positions:
       - id: nature.value.intrinsic
-        label: Yes, all life has value in itself
+        label: All life has value in itself
         claim: Living things and ecosystems have value of their own, whether or not they are useful to human beings.
         voiced: "The well-being and flourishing of human and non-human life on earth have value in themselves, independent of the usefulness of the non-human world for human purposes."
         you: You think plants, animals and ecosystems matter for their own sake, not only because they are useful to people.
@@ -326,12 +329,74 @@ problematics:
           drain: sustains
           law_of_value: none
 
+      - id: nature.value.free-gift-of-subsistence
+        label: "Nature, like women's and peasants' unpaid work, is what capital takes for free"
+        claim: >-
+          Capital counts as wealth only what it can sell, and grows by taking for free what keeps life going:
+          soils, forests and water, the unpaid household and subsistence work done mostly by women, and the
+          land and labor of colonies. Defending nature means defending the subsistence of those who do that work.
+        voiced: "Women, nature and the colonies are what this economy takes without paying. It calls them free, and builds its wealth on them."
+        you: You think capital grows by taking nature, women's unpaid work and the subsistence of peasants for free, and that defending nature means defending the people who keep life going.
+        because: >
+          The price of a shrimp or a soybean leaves out the mangrove that bred the fish, the soil that took
+          centuries to form, and the work of the women who fetch the water, grow the family's food and raise
+          the next generation of workers for nothing. Mies traced how the European witch hunts, the
+          housewife and the colonies were made in the same centuries, as ways of getting labor and land
+          without paying for them. Today the pattern is visible in the Chipko women who held the Himalayan
+          forests against the contractors, in the fishing and shellfish-gathering women of the Ecuadorian
+          mangroves, and in the peasant women whose seed and common land are enclosed by agribusiness. Counting
+          only what sells makes this work and this nature invisible, so the remedy is not a price but the
+          defense of subsistence, commons and land against enclosure.
+        against:
+          - from: feminism.liberal
+            text: >
+              Women won their freedom through wages, schooling and contraception, and by leaving the farm and
+              the household. Praising subsistence keeps peasant women in the hardest work there is.
+          - from: marxism.ml
+            text: >
+              Subsistence is not the alternative to capitalism. Socialized production, public kitchens and
+              nurseries and the electrified farm free women from household drudgery; going back to the
+              village economy does not.
+          - from: ecology.green-growth
+            text: >
+              What is unpriced is overused. Put a value on ecosystem services and on care, and markets and
+              budgets will stop treating them as free.
+        sources:
+          - {author: Carolyn Merchant, title: "The Death of Nature: Women, Ecology and the Scientific Revolution", year: 1980}
+          - {author: Maria Mies, title: "Patriarchy and Accumulation on a World Scale: Women in the International Division of Labour", year: 1986}
+          - {author: Maria Mies and Vandana Shiva, title: Ecofeminism, year: 1993}
+          - {author: Ariel Salleh, title: "Ecofeminism as Politics: Nature, Marx and the Postmodern", year: 1997}
+          - {author: Silvia Federici, title: "Caliban and the Witch: Women, the Body and Primitive Accumulation", year: 2004}
+        traditions:
+          defining: [feminism.materialist]
+          typical: [feminism.decolonial, ecology.environmental-justice, marxism.world-systems, marxism.degrowth-communism]
+          contested: [marxism.ecosocialism, feminism.difference]
+          rejects: [ecology.green-growth, ecology.ecomodernism, liberalism.chicago]
+        presupposes: [labor.division.paid-and-unpaid]
+        excludes: []
+        tension: [nature.value.natural-capital, nature.value.metabolism]
+        tags: [ecofeminism, subsistence, unpaid-work, periphery]
+        analysis:
+          gains: [peasantry, peripheral-workers, reserve-army]
+          pays: [landed-capital, industrial-capital, finance-capital]
+          mechanism: >
+            Counting subsistence and unpaid reproductive work as the base of wealth backs peasant women's
+            claims to land, water and commons against enclosure, and raises the cost of the cheap food, raw
+            materials and labor power the core draws from the South.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            Ecosocialists in the Foster line answer that Marx's account of the metabolic rift already covers
+            unpaid nature; Mies and Salleh reply that it leaves out the reproductive work that holds the
+            metabolism together.
+          method: materialist
+
   # ------------------------------------------------------------------
   - id: energy.transition
     domain: ecology
     layer: horizon
     question: Who should pay for and own the energy transition?
-    plain: The world must switch from coal, oil and gas. Who pays for the new grids and plants, and who owns them when it's done?
+    plain: The world must switch from coal, oil and gas. Who pays for the new grids, plants and mines, who owns them when it's done, and whose land are the minerals dug from?
     short: the energy transition
     importance: 2
     region: ecology
@@ -421,8 +486,10 @@ problematics:
           mechanism: >
             Public ownership removes generation and grids from private returns, so energy rents flow to the
             public budget and lower bills, while job guarantees protect fossil-sector workers; the losers are
-            the shareholders and lenders of energy firms.
-          drain: softens
+            the shareholders and lenders of energy firms. The copper, lithium and cobalt are still bought at
+            world prices from peripheral mines, so the drain on the mining regions continues unless the terms
+            change.
+          drain: sustains
           law_of_value: suspends
           disputed: >
             Third Worldists argue national public ownership in the core leaves the mineral drain intact unless
@@ -610,6 +677,8 @@ problematics:
           mechanism: >
             Local ownership moves the income from generation from utilities and their shareholders to
             cooperatives, farmers and municipalities; members with land, roofs or savings to invest gain most.
+            The panels, turbines and batteries are bought from the same world supply chains, so local ownership
+            in the core leaves the mining and assembly at the periphery as they are.
           drain: none
           law_of_value: regulates
 
@@ -695,8 +764,9 @@ problematics:
           mechanism: >
             State-backed nuclear programs channel public finance to reactor builders and engineering firms and
             secure steady skilled jobs, while uranium mining and waste siting fall on Indigenous and peripheral
-            communities from Niger to Saskatchewan.
-          drain: softens
+            communities from Niger to Saskatchewan. Niger's uranium fed French reactors for decades on terms set
+            by the French state firm.
+          drain: sustains
           law_of_value: regulates
           disputed: >
             Ecomodernist socialists (Huber, Phillips) see public nuclear as a workers' program; ecosocialists
@@ -707,9 +777,11 @@ problematics:
   - id: technology.nature
     domain: ecology
     layer: analysis
-    question: Is technology a neutral tool, capital's weapon, a liberation, or a threat?
-    plain: When a new machine or app arrives, is it just a tool, or does it come with someone's interests built in?
-    short: the nature of technology
+    question: Whose instrument is technology, and whose interests are built into it?
+    plain: >-
+      When a new machine or app arrives, who decided it should exist, who owns it, and whom is it built to serve
+      or to control, here and in the countries where it is made?
+    short: whose instrument technology is
     importance: 2
     region: technology
     positions:
@@ -742,12 +814,12 @@ problematics:
           contested: [marxism.ml, technology.effective-altruism]
           rejects: [marxism.autonomism, anarchism.christian, anarchism.primitivist, technology.r-acc]
         presupposes: []
-        excludes: [technology.nature.capitals-weapon, technology.nature.autonomous-force]
+        excludes: [technology.nature.capitals-weapon, technology.nature.autonomous-force, technology.nature.forces-serve-owners]
         tension: [technology.nature.built-in-politics]
         tags: [common-sense, neutrality]
         analysis:
           gains: [industrial-capital, professional-managerial]
-          pays: []
+          pays: [core-workers, peripheral-workers]
           mechanism: >
             Treating technology as neutral leaves its design and introduction to the firms that pay for it,
             and limits public response to after-the-fact rules on misuse, so owners decide what is built and
@@ -789,7 +861,7 @@ problematics:
           rejects: [technology.e-acc, liberalism.chicago, liberalism.austrian, technology.cyberlibertarian]
         presupposes: [workplace.conflict.structural-antagonism]
         excludes: [technology.nature.neutral-tool]
-        tension: [technology.nature.liberation]
+        tension: [technology.nature.liberation, technology.nature.forces-serve-owners]
         tags: [labor-process, automation]
         analysis:
           gains: [core-workers, peripheral-workers, reserve-army]
@@ -797,8 +869,10 @@ problematics:
           mechanism: >
             Seeing technology as a weapon of control lets workers contest its design, pace and introduction
             at the workplace, through bargaining or refusal, which cuts the cost savings owners expect from
-            new machines.
-          drain: none
+            new machines. The same contest at the Southern assembly and labelling sites, where design is
+            imported and the pace is set abroad, is the one that touches the drain; won only in the core it
+            pushes the work to sites where it is not contested.
+          drain: softens
           law_of_value: regulates
           consciousness: class-economic
 
@@ -931,7 +1005,7 @@ problematics:
         tags: [periphery, intellectual-property, monopoly]
         analysis:
           gains: [peripheral-workers, industrial-capital]
-          pays: [finance-capital, industrial-capital]
+          pays: [finance-capital]
           mechanism: >
             Breaking technology monopolies, by compulsory licensing, reverse engineering and state research,
             cuts the royalties and brand rents that core firms collect on goods made in the South and lets
@@ -940,7 +1014,8 @@ problematics:
           law_of_value: regulates
           disputed: >
             Marxists dispute whether China's rise in technology breaks the core monopoly (Amin's late view,
-            Arrighi) or creates a new core (Ho-fung Hung and others).
+            Arrighi) or creates a new core (Ho-fung Hung and others). The industrial capital that gains is
+            the periphery's; the patent and licensing income lost is the core's.
           consciousness: hegemonic
 
       - id: technology.nature.code-escapes-control
@@ -1032,12 +1107,70 @@ problematics:
           drain: none
           law_of_value: regulates
 
+      - id: technology.nature.forces-serve-owners
+        label: "Machines multiply what labor can do; whoever owns them decides whom that serves"
+        claim: >-
+          Technology raises the productive power of labor; under capital that power becomes profit, speed-up
+          and unemployment, and under common ownership the same machines and methods would shorten work and
+          raise living standards, so the fight is over ownership, not over the design of the machine.
+        voiced: "We must organise in Russia the study and teaching of the Taylor system and systematically try it out and adapt it to our own ends."
+        you: You think machines raise what labor can produce, and that who owns them decides whether that means unemployment or shorter hours and a better life.
+        because: >
+          Marx distinguished the machine from its capitalist use: the same loom that throws weavers out of
+          work could shorten everyone's day. The Soviet electrification plan, China's first five-year plans
+          and Cuba's mechanized harvest took the most advanced technique available and put it under public
+          ownership, and countries that refused it stayed poor and were dominated by those that had it. A
+          poor country cannot decline the tractor, the power station or the computer because capital
+          designed them first. What has to change is who owns them and who gets what they produce.
+        against:
+          - from: marxism.autonomism
+            text: >
+              The machine is capital's plan for the worker made of steel. Panzieri showed that the factory's
+              technical order is its command; nationalize it and the same despotism runs on.
+          - from: anarchism.christian
+            text: >
+              Technique has its own logic of efficiency, under any owner. The Soviet factory was as much a
+              machine for using up people as the American one.
+          - from: marxism.maoism
+            text: >
+              Taking over the plant leaves the division between those who manage and those who work. Without
+              changing that, the new owners become a new class.
+        sources:
+          - {author: Karl Marx, title: "Capital, Volume I", year: 1867, note: "chapter 15, on the capitalist employment of machinery"}
+          - {author: V. I. Lenin, title: The Immediate Tasks of the Soviet Government, year: 1918}
+          - {author: G. A. Cohen, title: "Karl Marx's Theory of History: A Defence", year: 1978}
+        traditions:
+          defining: [marxism.ml]
+          typical: [marxism.scc, marxism.classical, marxism.trotskyism, technology.l-acc]
+          contested: [socdem.democratic-socialism]
+          rejects: [marxism.autonomism, anarchism.primitivist, anarchism.christian, technology.e-acc]
+        presupposes: []
+        excludes: [technology.nature.neutral-tool]
+        tension: [technology.nature.capitals-weapon, technology.nature.built-in-politics, technology.nature.autonomous-force]
+        tags: [ownership, productive-forces, orthodox]
+        analysis:
+          gains: [core-workers, peripheral-workers]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            It directs struggle at ownership of plant and patents, and in a peripheral state it backs importing
+            the most advanced technique to catch up; it leaves the factory order intact, so a socialized firm
+            inherits capital's labor process.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            Braverman and Noble answer that design is where ownership is already at work; Lenin and Cohen
+            answer that the design follows the relations and changes with them.
+          consciousness: hegemonic
+          method: materialist
+
   # ------------------------------------------------------------------
   - id: automation.ownership
     domain: ecology
     layer: horizon
     question: Who should own automation and AI, and who gets the gains?
-    plain: If robots and software can do much of the work, who should own them, and what happens to the people whose jobs they take?
+    plain: >-
+      If robots and software can do much of the work, who should own them, what happens to the people whose
+      jobs they take, and what of the workers in other countries who mine, assemble and train them?
     short: the ownership of automation
     importance: 3
     region: technology
@@ -1169,8 +1302,10 @@ problematics:
           pays: [finance-capital, industrial-capital]
           mechanism: >
             Common ownership of automated capital turns productivity gains into shorter hours and free goods
-            rather than profit, removing returns on platforms and machines from their present owners.
-          drain: reduces
+            rather than profit, removing returns on platforms and machines from their present owners. The
+            hardware still comes from peripheral mines and assembly lines; unless common ownership reaches
+            them, the core's free time rests on their working day.
+          drain: softens
           law_of_value: abolishes
           disputed: >
             Third Worldists note that the hardware of automation depends on mining and assembly in the
@@ -1260,7 +1395,7 @@ problematics:
           mechanism: >
             Refusal through strikes, contract terms and bans blocks the cost savings owners expect from new
             technology, protecting existing wages and skills; groups with leverage, such as unionized writers,
-            gain most.
+            gain most, and a refusal won in one country can push the work to cheaper sites abroad.
           drain: none
           law_of_value: regulates
           consciousness: economic-corporate
@@ -1288,7 +1423,7 @@ problematics:
         sources:
           - {author: Thorstein Veblen, title: The Engineers and the Price System, year: 1921}
           - {author: "Technocracy, Inc.", title: Technocracy Study Course, year: 1934}
-          - {author: Eden Medina, title: "Cybernetic Revolutionaries: Technology and Politics in Allende's Chile", year: 2011}
+          - {author: Eden Medina, title: "Cybernetic Revolutionaries: Technology and Politics in Allende's Chile", year: 2011, note: "contrasting case: Cybersyn was designed for workers' participation, not rule by experts"}
         traditions:
           defining: [technology.technocracy]
           typical: [liberalism.technocratic, religious.political-meritocracy]
@@ -1303,7 +1438,8 @@ problematics:
           pays: [finance-capital, core-workers]
           mechanism: >
             Handing production to technical experts displaces owners' control over output and prices, but also
-            excludes workers from decisions, concentrating authority in a stratum of engineers and managers.
+            excludes workers from decisions, concentrating authority in a stratum of engineers and managers; it
+            says nothing of the imported machines and materials a national plan would still pay for.
           drain: none
           law_of_value: suspends
 
@@ -1390,7 +1526,64 @@ problematics:
           mechanism: >
             Individual adaptation means workers compete with each other for retraining and the remaining jobs,
             which leaves owners to set the terms of automation and keep its gains while workers bear the cost
-            of retraining and relocation.
+            of retraining and relocation, in the core and in the outsourcing hubs alike.
           drain: none
           law_of_value: extends
           consciousness: economic-corporate
+
+      - id: automation.ownership.whole-chain-workers
+        label: "The workers along the whole chain, mine to label queue, claim it together"
+        claim: >-
+          The gains of automation are produced by miners, assemblers, data labellers and moderators across the
+          South as much as by the workers it displaces where it is installed, so ownership or bargaining settled
+          inside one country leaves most of its makers out; the claim has to be organized across the supply chain.
+        voiced: "The phone was dug in Kolwezi, built in Shenzhen and taught to talk in Nairobi. Its owners bargain with each of us alone. We bargain together or not at all."
+        you: You think the workers who mine, assemble and train the machines across the South have as much claim on automation's gains as those it displaces, and must organize together across the chain.
+        because: >
+          An AI model or a robot arm is the last link of a chain: cobalt and copper dug in Congo and Zambia,
+          chips and handsets assembled at Foxconn plants in Shenzhen and Zhengzhou, images and text labelled
+          by click-workers in Kenya, Venezuela, the Philippines and Madagascar. Each site is bargained with
+          alone, and when one organizes or goes to court the work moves to the next. Content moderators in
+          Nairobi, who sued over pay and trauma, formed the African Content Moderators Union in 2023. A deal
+          over automation struck in Detroit or Bangalore, or a national AI program, leaves those workers out.
+          Only organization across the whole chain can stop owners playing one site against another.
+        against:
+          - from: nationalism.developmental-state
+            text: >
+              Cross-border bargaining raises costs at exactly the sites where poor countries compete for
+              jobs. Build national industry and climb the chain first; solidarity will not build a fab.
+          - from: liberalism.chicago
+            text: >
+              Supply-chain unions would price the poorest workers out of the jobs that are their first step
+              up. The click-work and assembly pay more than the alternatives open to them.
+          - from: socdem.labourism
+            text: >
+              Unions bargain where they have members and a contract. A claim spread across ten countries
+              and no employer in common wins nothing for anyone.
+        sources:
+          - {author: "Jenny Chan, Mark Selden and Pun Ngai", title: "Dying for an iPhone: Apple, Foxconn, and the Lives of China's Workers", year: 2020}
+          - {author: Jack Linchuan Qiu, title: "Goodbye iSlave: A Manifesto for Digital Abolition", year: 2016}
+          - {author: Antonio A. Casilli, title: "En attendant les robots: Enquête sur le travail du clic", year: 2019}
+          - {author: Mary L. Gray and Siddharth Suri, title: "Ghost Work: How to Stop Silicon Valley from Building a New Global Underclass", year: 2019}
+        traditions:
+          typical: [marxism.third-worldism, anarchism.syndicalist, marxism.autonomism, feminism.decolonial, marxism.world-systems]
+          contested: [nationalism.developmental-state, socdem.labourism]
+          rejects: [liberalism.chicago, technology.e-acc]
+        presupposes: []
+        excludes: [automation.ownership.investors-and-markets]
+        tension: [automation.ownership.national-sovereign-ai, automation.ownership.bargain-and-share]
+        tags: [supply-chain, internationalism, periphery, data-work]
+        analysis:
+          gains: [peripheral-workers, core-workers, reserve-army]
+          pays: [finance-capital, industrial-capital]
+          mechanism: >
+            Organizing across sites removes the owners' power to play one country's workers against another's,
+            raising labor costs along the chain and claiming part of the platform and hardware rent where it
+            is produced.
+          drain: reduces
+          law_of_value: regulates
+          disputed: >
+            Developmental-state economists answer that wage gains at the bottom of the chain push assembly to
+            poorer sites; Chan, Selden and Pun answer that relocation is the owners' threat, and only
+            organization at every site removes it.
+          consciousness: hegemonic

@@ -1,0 +1,874 @@
+# Thinkers: political ecologies. Ecosocialism and degrowth communism, degrowth and steady-state
+# economics, the environmentalism of the poor and climate debt, Indigenous and religious accounts of
+# nature, green growth and ecomodernism, neo-Malthusianism and ecofascism, resource optimism.
+thinkers:
+  # ---------------- the materialist core: metabolism, accumulation, the drain ----------------
+  - id: thinker.foster
+    name: John Bellamy Foster
+    born: 1953
+    died: null
+    region: United States
+    traditions: [marxism.ecosocialism]
+    summary: >
+      American sociologist and editor of Monthly Review who recovered Marx's concept of the metabolic rift,
+      the break that capitalist production opens in the exchange of matter between society and the earth.
+      He holds that the ecological crisis follows from capital's need to accumulate without limit.
+    argues:
+      - {position: nature.value.metabolism, in: {author: John Bellamy Foster, title: "Marx's Theory of Metabolic Rift: Classical Foundations for Environmental Sociology", year: 1999, note: American Journal of Sociology}}
+      - {position: ecology.crisis-cause.capital-accumulation, in: {author: John Bellamy Foster, title: "Marx's Ecology: Materialism and Nature", year: 2000}}
+      - {position: growth.ecology.ecosocialism, in: {author: John Bellamy Foster, title: "The Ecological Revolution: Making Peace with the Planet", year: 2009}}
+
+  - id: thinker.saito
+    name: Kohei Saito
+    born: 1987
+    died: null
+    region: Japan
+    traditions: [marxism.degrowth-communism]
+    summary: >
+      Japanese Marxist philosopher who edits Marx's natural-science notebooks for the collected works. He
+      argues that the late Marx broke with the idea that developing the productive forces leads to emancipation,
+      and that only communism can deliberately slow production down; his 2020 book on the subject sold over
+      half a million copies in Japan.
+    argues:
+      - {position: nature.value.metabolism, in: {author: Kohei Saito, title: "Karl Marx's Ecosocialism: Capital, Nature, and the Unfinished Critique of Political Economy", year: 2017}}
+      - {position: ecology.crisis-cause.capital-accumulation, in: {author: Kohei Saito, title: "Hitoshinsei no 'Shihonron'", year: 2020, note: "English: Slow Down: The Degrowth Manifesto (2024)"}}
+      - {position: growth.ecology.degrowth-communism, in: {author: Kohei Saito, title: "Marx in the Anthropocene: Towards the Idea of Degrowth Communism", year: 2023}}
+
+  - id: thinker.malm
+    name: Andreas Malm
+    born: 1977
+    died: null
+    region: Sweden
+    traditions: [marxism.ecosocialism]
+    summary: >
+      Swedish human ecologist who traced global warming to the choice of British mill owners for coal-fired
+      steam over water power, because steam let them move to where labor was cheap and disciplined. He
+      argues that states should seize fossil fuel companies under emergency powers and wind them down.
+    argues:
+      - {position: ecology.crisis-cause.capital-accumulation, in: {author: Andreas Malm, title: "Fossil Capital: The Rise of Steam Power and the Roots of Global Warming", year: 2016}}
+      - {position: growth.ecology.ecosocialism, in: {author: Andreas Malm, title: "Corona, Climate, Chronic Emergency: War Communism in the Twenty-First Century", year: 2020}}
+      - {position: climate.justice.expropriate-fossil-capital, in: {author: Andreas Malm, title: "Corona, Climate, Chronic Emergency: War Communism in the Twenty-First Century", year: 2020, note: "proposes nationalizing all private fossil fuel companies"}}
+
+  - id: thinker.lowy
+    name: Michael Löwy
+    born: 1938
+    died: null
+    region: Brazil / France
+    traditions: [marxism.ecosocialism]
+    summary: >
+      Brazilian-French sociologist of the Fourth International tradition who co-wrote the Ecosocialist
+      Manifesto of 2001 with Joel Kovel. He has also written on liberation theology as a movement of the
+      Latin American poor.
+    argues:
+      - {position: growth.ecology.ecosocialism, in: {author: Joel Kovel and Michael Löwy, title: An Ecosocialist Manifesto, year: 2001}}
+      - {position: ecology.crisis-cause.capital-accumulation, in: {author: Michael Löwy, title: "Ecosocialism: A Radical Alternative to Capitalist Catastrophe", year: 2015}}
+      - {position: religion.public.prophetic-church, in: {author: Michael Löwy, title: "The War of Gods: Religion and Politics in Latin America", year: 1996}}
+
+  - id: thinker.moore
+    name: Jason W. Moore
+    born: 1971
+    died: null
+    region: United States
+    traditions: [marxism.world-systems]
+    summary: >
+      American world-historian, a student of Giovanni Arrighi, who reads capitalism as a way of organizing
+      nature. He argues that capital has grown by appropriating "cheap natures" (food, energy, raw materials
+      and unpaid work) at its frontiers, and proposes the name Capitalocene for the age.
+    argues:
+      - {position: ecology.crisis-cause.capital-accumulation, in: {author: Jason W. Moore, title: "Capitalism in the Web of Life: Ecology and the Accumulation of Capital", year: 2015}}
+      - {position: ecology.crisis-cause.core-appropriation, in: {author: Raj Patel and Jason W. Moore, title: "A History of the World in Seven Cheap Things", year: 2017}}
+
+  - id: thinker.hickel
+    name: Jason Hickel
+    born: 1982
+    died: null
+    region: Eswatini / United Kingdom / Spain
+    traditions: [ecology.degrowth, marxism.degrowth-communism]
+    summary: >
+      Economic anthropologist raised in Eswatini who measures the drain of labor, land and materials from
+      the global South to the North through unequal exchange. He argues that rich countries must plan to
+      reduce their energy and material use, inside a democratic ecosocialist economy, so the South can
+      meet its needs.
+    argues:
+      - {position: poverty.cause.drain, in: {author: Jason Hickel, title: "The Divide: A Brief Guide to Global Inequality and Its Solutions", year: 2017}}
+      - {position: growth.ecology.degrowth, in: {author: Jason Hickel, title: "Less Is More: How Degrowth Will Save the World", year: 2020}}
+      - {position: climate.justice.climate-debt, in: {author: Jason Hickel, title: "Quantifying national responsibility for climate breakdown: an equality-based attribution approach for carbon dioxide emissions in excess of the planetary boundary", year: 2020, note: The Lancet Planetary Health}}
+      - {position: ecology.crisis-cause.core-appropriation, in: {author: "Jason Hickel, Daniel W. O'Neill, Andrew L. Fanning and Huzaifa Zoomkawala", title: "National responsibility for ecological breakdown: a fair-shares assessment of resource use, 1970–2017", year: 2022, note: The Lancet Planetary Health}}
+      - {position: imperialism.nature.unequal-exchange-drain, in: {author: "Jason Hickel, Christian Dorninger, Hanspeter Wieland and Intan Suwandi", title: "Imperialist appropriation in the world economy: Drain from the global South through unequal exchange, 1990–2015", year: 2022, note: Global Environmental Change}}
+
+  - id: thinker.ajl
+    name: Max Ajl
+    region: United States / Tunisia
+    traditions: [marxism.third-worldism]
+    summary: >
+      Sociologist based in Tunisia, associated with the Tunisian Observatory for Food Sovereignty and the
+      Environment, who criticizes Northern Green New Deals for leaving the South's mines and fields out. He
+      argues for climate debt reparations, agroecology and national sovereignty in the South.
+    argues:
+      - {position: climate.justice.climate-debt, in: {author: Max Ajl, title: A People's Green New Deal, year: 2021}}
+      - {position: agrarian.question.food-sovereignty, in: {author: Max Ajl, title: A People's Green New Deal, year: 2021}}
+      - {position: growth.ecology.sovereign-planned-south, in: {author: Max Ajl, title: A People's Green New Deal, year: 2021, note: "delinking, land reform and planned Southern development, with the North cutting throughput and paying"}}
+
+  - id: thinker.commoner
+    name: Barry Commoner
+    born: 1917
+    died: 2012
+    region: United States
+    traditions: [socdem.democratic-socialism]
+    summary: >
+      American biologist and campaigner against atmospheric nuclear testing who showed that postwar
+      pollution came from profitable new production technologies rather than from population growth. He
+      ran for president of the United States in 1980 for the Citizens Party on a program of social
+      control of production.
+    argues:
+      - {position: ecology.crisis-cause.capital-accumulation, in: {author: Barry Commoner, title: "The Closing Circle: Nature, Man, and Technology", year: 1971}}
+      - {position: population.question.surplus-made-by-capital, in: {author: Barry Commoner, title: "The Closing Circle: Nature, Man, and Technology", year: 1971, note: "chapter on population and affluence: high fertility follows from colonial poverty and falls with security"}}
+      - {position: energy.transition.public-ownership, in: {author: Barry Commoner, title: "The Poverty of Power: Energy and the Economic Crisis", year: 1976}}
+
+  - id: thinker.gorz
+    name: André Gorz
+    born: 1923
+    died: 2007
+    region: Austria / France
+    traditions: [marxism.ecosocialism]
+    summary: >
+      Austrian-born French social philosopher, co-founder of Le Nouvel Observateur, who joined Marxism to
+      political ecology in the 1970s and used the word décroissance in 1972. He argued for a sharp cut in
+      working time and an income detached from employment.
+    argues:
+      - {position: growth.ecology.degrowth, in: {author: André Gorz, title: Écologie et politique, year: 1975, note: "English: Ecology as Politics (1980)"}}
+      - {position: work.future.shorter-hours, in: {author: André Gorz, title: Adieux au prolétariat, year: 1980, note: "English: Farewell to the Working Class (1982)"}}
+      - {position: work.future.basic-income-emancipatory, in: {author: André Gorz, title: "Misères du présent, richesse du possible", year: 1997, note: "English: Reclaiming Work (1999)"}}
+
+  # ---------------- degrowth and the economics of limits ----------------
+  - id: thinker.kallis
+    name: Giorgos Kallis
+    born: 1972
+    died: null
+    region: Greece / Spain
+    traditions: [ecology.degrowth]
+    summary: >
+      Greek ecological economist at the Autonomous University of Barcelona and a leading writer of the
+      degrowth current. He argues that limits are a collective choice of self-restraint, and that rich
+      societies can live well with less through shared public goods and shorter hours.
+    argues:
+      - {position: growth.ecology.degrowth, in: {author: Giorgos Kallis, title: Degrowth, year: 2018}}
+      - {position: progress.idea.within-limits, in: {author: Giorgos Kallis, title: "Limits: Why Malthus Was Wrong and Why Environmentalists Should Care", year: 2019}}
+      - {position: work.future.shorter-hours, in: {author: "Giorgos Kallis, Susan Paulson, Giacomo D'Alisa and Federico Demaria", title: The Case for Degrowth, year: 2020}}
+
+  - id: thinker.latouche
+    name: Serge Latouche
+    born: 1940
+    died: null
+    region: France
+    traditions: [ecology.degrowth]
+    summary: >
+      French economist and anthropologist, a critic of development aid in Africa, who made décroissance a
+      political slogan in France in the 2000s. He argues that the idea of development exported Western
+      economism and that rich societies must leave the religion of growth.
+    argues:
+      - {position: development.path.post-development, in: {author: Serge Latouche, title: L'Occidentalisation du monde, year: 1989, note: "English: The Westernization of the World (1996)"}}
+      - {position: progress.idea.western-myth, in: {author: Serge Latouche, title: L'Occidentalisation du monde, year: 1989}}
+      - {position: growth.ecology.degrowth, in: {author: Serge Latouche, title: Petit traité de la décroissance sereine, year: 2007, note: "English: Farewell to Growth (2009)"}}
+
+  - id: thinker.georgescu-roegen
+    name: Nicholas Georgescu-Roegen
+    born: 1906
+    died: 1994
+    region: Romania / United States
+    traditions: [ecology.degrowth]
+    summary: >
+      Romanian-American mathematician and economist who applied the entropy law to economics: production
+      degrades low-entropy matter and energy that cannot be recovered. His bioeconomic program called for
+      an end to growth, less consumption in rich countries and a gradual fall in world population; a 1979
+      French collection of his essays was titled Demain la décroissance.
+    argues:
+      - {position: progress.idea.within-limits, in: {author: Nicholas Georgescu-Roegen, title: The Entropy Law and the Economic Process, year: 1971}}
+      - {position: growth.ecology.degrowth, in: {author: Nicholas Georgescu-Roegen, title: Energy and Economic Myths, year: 1975, note: Southern Economic Journal}}
+      - {position: population.question.too-many, in: {author: Nicholas Georgescu-Roegen, title: Energy and Economic Myths, year: 1975, note: "the bioeconomic program"}}
+
+  - id: thinker.daly
+    name: Herman Daly
+    born: 1938
+    died: 2022
+    region: United States
+    traditions: [ecology.degrowth]
+    summary: >
+      American economist, a student of Georgescu-Roegen and later at the World Bank, who founded
+      steady-state economics: an economy whose throughput of matter and energy is held within what the
+      biosphere can regenerate and absorb. He treated degrowth in rich countries as the path to a steady
+      state.
+    argues:
+      - {position: progress.idea.within-limits, in: {author: Herman E. Daly, title: Steady-State Economics, year: 1977}}
+      - {position: nature.value.natural-capital, in: {author: Herman E. Daly and John B. Cobb Jr., title: "For the Common Good: Redirecting the Economy toward Community, the Environment, and a Sustainable Future", year: 1989}}
+      - {position: growth.ecology.degrowth, in: {author: Herman E. Daly, title: "Beyond Growth: The Economics of Sustainable Development", year: 1996}}
+
+  - id: thinker.soper
+    name: Kate Soper
+    born: 1943
+    died: null
+    region: United Kingdom
+    traditions: [ecology.degrowth]
+    summary: >
+      English philosopher, long on the editorial board of New Left Review and Radical Philosophy, who
+      argues for an "alternative hedonism": that a life with less work and less consumption in rich
+      countries would be more pleasurable, not a sacrifice.
+    argues:
+      - {position: growth.ecology.degrowth, in: {author: Kate Soper, title: "Post-Growth Living: For an Alternative Hedonism", year: 2020}}
+
+  # ---------------- the environmentalism of the poor, climate debt, the South ----------------
+  - id: thinker.martinez-alier
+    name: Joan Martínez-Alier
+    born: 1939
+    died: null
+    region: Catalonia (Spain)
+    traditions: [ecology.environmental-justice]
+    summary: >
+      Catalan ecological economist and historian of agrarian conflict who named the "environmentalism of
+      the poor": the struggles of peasants, fishers and Indigenous peoples against mines, dams and
+      plantations that take their means of life. He developed the idea of an ecological debt owed by the
+      North to the South.
+    argues:
+      - {position: ecology.crisis-cause.core-appropriation, in: {author: Joan Martinez-Alier, title: "The Environmentalism of the Poor: A Study of Ecological Conflicts and Valuation", year: 2002}}
+      - {position: climate.justice.climate-debt, in: {author: Joan Martinez-Alier, title: "The Environmentalism of the Poor: A Study of Ecological Conflicts and Valuation", year: 2002, note: "chapter on ecological debt"}}
+      - {position: growth.ecology.degrowth, in: {author: "Joan Martínez-Alier, Unai Pascual, Franck-Dominique Vivien and Edwin Zaccai", title: "Sustainable de-growth: Mapping the context, criticisms and future prospects of an emergent paradigm", year: 2010, note: Ecological Economics}}
+
+  - id: thinker.guha
+    name: Ramachandra Guha
+    born: 1958
+    died: null
+    region: India
+    traditions: [ecology.environmental-justice]
+    summary: >
+      Indian historian who wrote the history of the Chipko movement of Himalayan villagers against
+      commercial forestry, and in 1989 criticized American deep ecology from the standpoint of Indian
+      peasants evicted for wildlife reserves. He holds that the overconsumption of the rich countries and
+      of Southern elites is the main threat to the earth.
+    argues:
+      - {position: property.commons.defend-against-enclosure, in: {author: Ramachandra Guha, title: "The Unquiet Woods: Ecological Change and Peasant Resistance in the Himalaya", year: 1989}}
+      - {position: ecology.crisis-cause.core-appropriation, in: {author: Ramachandra Guha, title: "Radical American Environmentalism and Wilderness Preservation: A Third World Critique", year: 1989, note: Environmental Ethics}}
+
+  - id: thinker.shiva
+    name: Vandana Shiva
+    born: 1952
+    died: null
+    region: India
+    traditions: [ecology.environmental-justice, feminism.decolonial]
+    summary: >
+      Indian physicist and campaigner who founded the Research Foundation for Science, Technology and
+      Ecology and the seed-saving network Navdanya. She argues that colonial and corporate development is
+      "maldevelopment" that destroys the subsistence work of women and peasants, and opposes patents on
+      seeds and life.
+    argues:
+      - {position: development.path.post-development, in: {author: Vandana Shiva, title: "Staying Alive: Women, Ecology and Development", year: 1988}}
+      - {position: agrarian.question.food-sovereignty, in: {author: Vandana Shiva, title: "The Violence of the Green Revolution: Third World Agriculture, Ecology and Politics", year: 1991}}
+      - {position: property.commons.defend-against-enclosure, in: {author: Vandana Shiva, title: "Biopiracy: The Plunder of Nature and Knowledge", year: 1997}}
+      - {position: growth.ecology.communities-decide, in: {author: Vandana Shiva, title: "Earth Democracy: Justice, Sustainability, and Peace", year: 2005}}
+      - {position: nature.value.free-gift-of-subsistence, in: {author: Vandana Shiva, title: "Staying Alive: Women, Ecology and Development", year: 1988}}
+      - {position: property.ip.community-knowledge, in: {author: "Vandana Shiva", title: "Biopiracy: The Plunder of Nature and Knowledge", year: 1997}}
+
+  - id: thinker.mies
+    name: Maria Mies
+    born: 1931
+    died: 2023
+    region: Germany / India
+    traditions: [feminism.materialist]
+    summary: >
+      German sociologist of the Bielefeld school who studied women lace-makers in India and argued that
+      capital accumulates by treating women's work, colonies and nature alike as free resources to be
+      appropriated. With Vandana Shiva she wrote the founding text of materialist ecofeminism.
+    argues:
+      - {position: feminism.subordination.colonial-and-imperial, in: {author: Maria Mies, title: "Patriarchy and Accumulation on a World Scale: Women in the International Division of Labour", year: 1986}}
+      - {position: ecology.crisis-cause.core-appropriation, in: {author: Maria Mies and Vandana Shiva, title: Ecofeminism, year: 1993}}
+      - {position: nature.value.free-gift-of-subsistence, in: {author: Maria Mies, title: "Patriarchy and Accumulation on a World Scale: Women in the International Division of Labour", year: 1986}}
+
+  - id: thinker.merchant
+    name: Carolyn Merchant
+    born: 1936
+    died: null
+    region: United States
+    traditions: [feminism.materialist]
+    summary: >
+      American historian of science at Berkeley. She argued that the scientific revolution and the rise of
+      commerce replaced an image of the earth as a living mother with one of dead matter to be mastered, and
+      that the same shift sanctioned the domination of nature and of women.
+    argues:
+      - {position: nature.value.free-gift-of-subsistence, in: {author: Carolyn Merchant, title: "The Death of Nature: Women, Ecology and the Scientific Revolution", year: 1980}}
+
+  - id: thinker.salleh
+    name: Ariel Salleh
+    born: 1944
+    died: null
+    region: Australia
+    traditions: [feminism.materialist, marxism.ecosocialism]
+    summary: >
+      Australian sociologist and a founder of the Movement Against Uranium Mining. She argues that capital
+      draws on a "meta-industrial" class of mothers, peasants and gatherers whose unpaid work regenerates life
+      and nature, and that an embodied materialism joins ecology, feminism, socialism and the postcolonial
+      struggle.
+    argues:
+      - {position: nature.value.free-gift-of-subsistence, in: {author: Ariel Salleh, title: "Ecofeminism as Politics: Nature, Marx and the Postmodern", year: 1997}}
+
+  - id: thinker.narain
+    name: Sunita Narain
+    born: 1961
+    died: null
+    region: India
+    traditions: [ecology.environmental-justice]
+    summary: >
+      Indian environmentalist and director of the Centre for Science and Environment in Delhi. With Anil
+      Agarwal she argued in 1991 that counting the survival emissions of the poor alongside the luxury
+      emissions of the rich was "environmental colonialism", and that each person has an equal claim on the
+      atmosphere.
+    argues:
+      - {position: climate.justice.climate-debt, in: {author: Anil Agarwal and Sunita Narain, title: "Global Warming in an Unequal World: A Case of Environmental Colonialism", year: 1991}}
+      - {position: growth.ecology.southern-right-to-develop, in: {author: Anil Agarwal and Sunita Narain, title: "Global Warming in an Unequal World: A Case of Environmental Colonialism", year: 1991}}
+
+  - id: thinker.agarwal
+    name: Anil Agarwal
+    born: 1947
+    died: 2002
+    region: India
+    traditions: [ecology.environmental-justice]
+    summary: >
+      Indian engineer and journalist who founded the Centre for Science and Environment in 1980 and its
+      citizens' reports on the state of India's environment. He argued for equal per-person shares of the
+      atmosphere and against Northern accounting that blamed the South's rice paddies and cattle.
+    argues:
+      - {position: climate.justice.climate-debt, in: {author: Anil Agarwal and Sunita Narain, title: "Global Warming in an Unequal World: A Case of Environmental Colonialism", year: 1991}}
+      - {position: growth.ecology.southern-right-to-develop, in: {author: Anil Agarwal and Sunita Narain, title: "Global Warming in an Unequal World: A Case of Environmental Colonialism", year: 1991}}
+
+  - id: thinker.indira-gandhi
+    name: Indira Gandhi
+    born: 1917
+    died: 1984
+    region: India
+    traditions: [nationalism.developmental-state]
+    summary: >
+      Prime minister of India from 1966 to 1977 and from 1980 until her assassination in 1984, who
+      nationalized the banks and ruled by decree during the Emergency of 1975 to 1977, when mass
+      sterilization campaigns were carried out. At the Stockholm conference of 1972 she asked whether
+      poverty and need were not the greatest polluters, and told the industrial countries not to preach to
+      those they had colonized.
+    argues:
+      - {position: growth.ecology.southern-right-to-develop, in: {author: Indira Gandhi, title: "Address to the United Nations Conference on the Human Environment", year: 1972, note: "Stockholm, 14 June 1972; published in India as Man and Environment"}}
+
+  - id: thinker.mendes
+    name: Chico Mendes
+    born: 1944
+    died: 1988
+    region: Brazil
+    traditions: [ecology.environmental-justice]
+    summary: >
+      Rubber tapper and union leader in Acre, in the Brazilian Amazon, who organized standoffs (empates)
+      against ranchers clearing the forest and proposed extractive reserves held for the use of the forest
+      peoples. He was murdered by a rancher's son in December 1988.
+    argues:
+      - {position: property.commons.defend-against-enclosure, in: {author: Chico Mendes, title: "Fight for the Forest: Chico Mendes in His Own Words", year: 1989, note: "interviews; additional material by Tony Gross"}}
+      - {position: agrarian.question.communal-tenure, in: {author: Chico Mendes, title: "Fight for the Forest: Chico Mendes in His Own Words", year: 1989, note: "the extractive reserve proposal"}}
+      - {position: growth.ecology.communities-decide, in: {author: Chico Mendes, title: "Fight for the Forest: Chico Mendes in His Own Words", year: 1989}}
+
+  - id: thinker.saro-wiwa
+    name: Ken Saro-Wiwa
+    born: 1941
+    died: 1995
+    region: Nigeria
+    traditions: [nationalism.indigenous-sovereignty, ecology.environmental-justice]
+    summary: >
+      Ogoni writer and leader of the Movement for the Survival of the Ogoni People, which demanded control
+      of Ogoni land and a share of the oil drawn from it, and campaigned against Shell's spills and gas
+      flares in the Niger Delta. The military government of Sani Abacha hanged him and eight other Ogoni
+      leaders in 1995 after a trial widely condemned as unjust.
+    argues:
+      - {position: ecology.crisis-cause.core-appropriation, in: {author: Ken Saro-Wiwa, title: "Genocide in Nigeria: The Ogoni Tragedy", year: 1992}}
+      - {position: comprador.nature.broker-class, in: {author: Ken Saro-Wiwa, title: "Genocide in Nigeria: The Ogoni Tragedy", year: 1992, note: "Shell, the federal military governments and the ruling ethnic majority"}}
+
+  - id: thinker.maathai
+    name: Wangari Maathai
+    born: 1940
+    died: 2011
+    region: Kenya
+    traditions: [ecology.environmental-justice]
+    summary: >
+      Kenyan biologist who founded the Green Belt Movement in 1977, through which rural women planted tens of
+      millions of trees, and who was beaten and jailed for opposing land grabs under Daniel arap Moi. In
+      2004 she became the first African woman awarded the Nobel Peace Prize.
+    argues:
+      - {position: property.commons.defend-against-enclosure, in: {author: Wangari Maathai, title: "Unbowed: A Memoir", year: 2006, note: "the 1998 to 1999 campaign against the sale of Karura Forest"}}
+      - {position: poverty.cause.misrule, in: {author: Wangari Maathai, title: The Challenge for Africa, year: 2009}}
+      - {position: nature.value.creation, in: {author: Wangari Maathai, title: "Replenishing the Earth: Spiritual Values for Healing Ourselves and the World", year: 2010}}
+
+  - id: thinker.morales
+    name: Evo Morales
+    born: 1959
+    died: null
+    region: Bolivia
+    traditions: [nationalism.indigenous-sovereignty, nationalism.bolivarianism]
+    summary: >
+      Aymara coca growers' leader and head of the Movement for Socialism, president of Bolivia from 2006 to
+      2019, whose government nationalized gas, wrote a plurinational constitution and passed a law on the
+      rights of Mother Earth while expanding gas and mining. In 2010 he convened the World People's
+      Conference on Climate Change in Cochabamba.
+    argues:
+      - {position: ecology.crisis-cause.capital-accumulation, in: {author: Evo Morales, title: "Climate Change: Save the Planet from Capitalism", year: 2008, note: "statement sent to the UN climate conference in Poznań"}}
+      - {position: climate.justice.climate-debt, in: {author: Evo Morales, title: "Climate Change: Save the Planet from Capitalism", year: 2008, note: "calls on developed countries to recognize their historical ecological debt"}}
+      - {position: climate.justice.owed-to-mother-earth, in: {author: World People's Conference on Climate Change and the Rights of Mother Earth, title: "People's Agreement of Cochabamba", year: 2010, note: "convened and opened by Morales"}}
+      - {position: energy.transition.resource-sovereignty, in: {author: Government of Bolivia (Evo Morales), title: Decreto Supremo 29496, year: 2008, note: "1 April 2008; made the state's own industrialization of the Uyuni salt flat's lithium a national priority, through a wholly state-owned project"}}
+
+  - id: thinker.correa
+    name: Rafael Correa
+    born: 1963
+    died: null
+    region: Ecuador
+    traditions: [nationalism.bolivarianism]
+    summary: >
+      Economist and president of Ecuador from 2007 to 2017, who renegotiated oil contracts and defaulted on
+      part of the foreign debt as illegitimate. In 2007 he offered to leave the oil under the Yasuní park in
+      the ground if rich countries paid half its value; in 2013, with little money pledged, he opened it to
+      drilling.
+    argues:
+      - {position: climate.justice.pay-us-to-leave-it, in: {author: Rafael Correa, title: "Address to the United Nations High-Level Event on Climate Change", year: 2007, note: "24 September 2007, presenting the Yasuní-ITT Initiative"}}
+
+  - id: thinker.svampa
+    name: Maristella Svampa
+    region: Argentina
+    traditions: [ecology.environmental-justice]
+    summary: >
+      Argentine sociologist at CONICET and the National University of La Plata. She named the "commodities
+      consensus": the agreement of left and right governments in Latin America after 2000 to fund the state
+      by exporting ore, oil and soy, which multiplied conflicts over land and water and drew communities into
+      what she calls an eco-territorial turn of resistance.
+    argues:
+      - {position: energy.transition.no-to-green-extraction, in: {author: Maristella Svampa, title: "Neo-extractivism in Latin America: Socio-environmental Conflicts, the Territorial Turn, and New Political Narratives", year: 2019}}
+
+  - id: thinker.gudynas
+    name: Eduardo Gudynas
+    region: Uruguay
+    traditions: [ecology.environmental-justice, ecology.degrowth]
+    summary: >
+      Uruguayan researcher at the Latin American Centre for Social Ecology (CLAES). He argues that the
+      "progressive" extractivism of the Pink Tide governments kept the export of raw materials at the center
+      of the economy, and that a transition out of extractivism requires the right of communities to refuse
+      mines and oil wells.
+    argues:
+      - {position: energy.transition.no-to-green-extraction, in: {author: Eduardo Gudynas, title: "Extractivisms: Politics, Economy and Ecology", year: 2020}}
+
+  - id: thinker.hamouchene
+    name: Hamza Hamouchene
+    region: Algeria / United Kingdom
+    traditions: [marxism.third-worldism, ecology.environmental-justice]
+    summary: >
+      Algerian researcher and activist with the Transnational Institute. He argues that the North's energy
+      transition is extending colonial relations to renewables, with solar and wind farms and green hydrogen
+      projects in North Africa built on its land and water to supply Europe.
+    argues:
+      - {position: energy.transition.no-to-green-extraction, in: {author: Hamza Hamouchene and Katie Sandwell (eds.), title: "Dismantling Green Colonialism: Energy and Climate Justice in the Arab Region", year: 2023}}
+
+  - id: thinker.walia
+    name: Harsha Walia
+    region: Canada
+    traditions: [anarchism.communist, nationalism.decolonial]
+    summary: >
+      South Asian organizer and writer in Vancouver, a founder of No One Is Illegal there. She argues that
+      borders are instruments of capital accumulation and labor control, which produce the cheap and
+      deportable migrant, and that the people displaced by war, debt and climate change have a right to move.
+    argues:
+      - {position: climate.justice.open-the-borders, in: {author: Harsha Walia, title: "Border and Rule: Global Migration, Capitalism, and the Rise of Racist Nationalism", year: 2021}}
+      - {position: borders.migration.no-borders, in: {author: "Harsha Walia", title: "Undoing Border Imperialism", year: 2013}}
+
+  - id: thinker.achiume
+    name: E. Tendayi Achiume
+    region: Zambia / United States
+    traditions: [nationalism.decolonial]
+    summary: >
+      Zambian legal scholar at UCLA and from 2017 to 2022 the UN Special Rapporteur on racism. She argues that
+      colonialism bound the colonized countries and the colonial powers into one political community that still exists, so
+      migration from the former colonies to the former metropoles is a form of decolonization, and the rich
+      countries have no right to exclude those migrants.
+    argues:
+      - {position: climate.justice.open-the-borders, in: {author: E. Tendayi Achiume, title: Migration as Decolonization, year: 2019, note: Stanford Law Review 71}}
+
+  # ---------------- the ecomodernist left and the Green New Deal ----------------
+  - id: thinker.huber
+    name: Matthew T. Huber
+    region: United States
+    traditions: [marxism.ecosocialism]
+    summary: >
+      American Marxist geographer who studies oil and fertilizer as industries of capital. He argues that
+      climate politics is a class struggle against the owners of fossil capital, to be won by organized
+      industrial and energy workers through public ownership of power, not by a professional-class politics
+      of footprints and restraint.
+    argues:
+      - {position: growth.ecology.socialist-abundance, in: {author: Matthew T. Huber, title: "Climate Change as Class War: Building Socialism on a Warming Planet", year: 2022}}
+      - {position: energy.transition.public-ownership, in: {author: Matthew T. Huber, title: "Climate Change as Class War: Building Socialism on a Warming Planet", year: 2022}}
+      - {position: consumption.choice.production-decides, in: {author: Matthew T. Huber, title: "Climate Change as Class War: Building Socialism on a Warming Planet", year: 2022}}
+
+  - id: thinker.phillips
+    name: Leigh Phillips
+    region: United Kingdom / Canada
+    traditions: [socdem.democratic-socialism]
+    summary: >
+      British-Canadian science journalist who defends growth, industry and progress from the left against
+      what he calls austerity ecology. With Michal Rozworski he argues that the internal planning of giant
+      firms shows a whole economy could be planned.
+    argues:
+      - {position: growth.ecology.socialist-abundance, in: {author: Leigh Phillips, title: "Austerity Ecology and the Collapse-Porn Addicts: A Defence of Growth, Progress, Industry and Stuff", year: 2015}}
+      - {position: technology.nature.forces-serve-owners, in: {author: Leigh Phillips, title: "Austerity Ecology and the Collapse-Porn Addicts: A Defence of Growth, Progress, Industry and Stuff", year: 2015}}
+      - {position: calculation.debate.computational, in: {author: Leigh Phillips and Michal Rozworski, title: "The People's Republic of Walmart: How the World's Biggest Corporations Are Laying the Foundation for Socialism", year: 2019}}
+
+  - id: thinker.pollin
+    name: Robert Pollin
+    born: 1950
+    died: null
+    region: United States
+    traditions: [socdem.keynesian]
+    summary: >
+      American economist at the Political Economy Research Institute in Amherst who designs public
+      investment programs for clean energy country by country. He argues for "egalitarian green growth":
+      investing 1.5 to 2 percent of world output each year in efficiency and renewables, against both
+      market gradualism and degrowth.
+    argues:
+      - {position: energy.transition.state-industrial-policy, in: {author: Robert Pollin, title: "Greening the Global Economy", year: 2015}}
+      - {position: growth.ecology.green-growth, in: {author: Robert Pollin, title: "De-Growth vs a Green New Deal", year: 2018, note: New Left Review 112}}
+
+  - id: thinker.klein
+    name: Naomi Klein
+    born: 1970
+    died: null
+    region: Canada
+    traditions: [socdem.democratic-socialism]
+    summary: >
+      Canadian journalist who argued that deregulated capitalism and a habitable climate are at war, and
+      that fossil fuel firms and the rich must pay for the transition. She was an early advocate of a Green
+      New Deal joining climate policy to public jobs and services.
+    argues:
+      - {position: ecology.crisis-cause.capital-accumulation, in: {author: Naomi Klein, title: "This Changes Everything: Capitalism vs. the Climate", year: 2014}}
+      - {position: climate.justice.the-rich-and-the-firms, in: {author: Naomi Klein, title: "This Changes Everything: Capitalism vs. the Climate", year: 2014}}
+      - {position: energy.transition.public-ownership, in: {author: Naomi Klein, title: "On Fire: The (Burning) Case for a Green New Deal", year: 2019}}
+
+  - id: thinker.riofrancos
+    name: Thea Riofrancos
+    region: United States
+    traditions: [socdem.democratic-socialism]
+    summary: >
+      American political scientist who studies the conflict in Ecuador between the left's resource
+      nationalism and the anti-extraction movements of Indigenous and campesino communities, and the
+      lithium frontier of the energy transition. She co-wrote a socialist program for a Green New Deal.
+    argues:
+      - {position: energy.transition.public-ownership, in: {author: "Kate Aronoff, Alyssa Battistoni, Daniel Aldana Cohen and Thea Riofrancos", title: "A Planet to Win: Why We Need a Green New Deal", year: 2019}}
+
+  - id: thinker.scheer
+    name: Hermann Scheer
+    born: 1944
+    died: 2010
+    region: Germany
+    traditions: [socdem.democratic-socialism]
+    summary: >
+      German Social Democratic member of the Bundestag and president of EUROSOLAR who drafted Germany's
+      feed-in law of 2000, which guaranteed prices for power from small producers. He argued that sun and
+      wind, unlike coal, oil and uranium, cannot be monopolized, so the transition should be built by
+      municipalities, cooperatives and households rather than the large utilities.
+    argues:
+      - {position: energy.transition.community-owned, in: {author: Hermann Scheer, title: "Energie-Autonomie: Der Durchbruch zu erneuerbaren Energien", year: 2005, note: "English: Energy Autonomy (2006)"}}
+
+  # ---------------- green growth and ecomodernism ----------------
+  - id: thinker.nordhaus
+    name: William Nordhaus
+    born: 1941
+    died: null
+    region: United States
+    traditions: [ecology.green-growth]
+    summary: >
+      American economist at Yale who built the first integrated models of climate and the economy and
+      shared the 2018 Nobel memorial prize in economics. He argues that a rising, globally harmonized carbon
+      price is the efficient remedy for the external cost of emissions.
+    argues:
+      - {position: energy.transition.market-led, in: {author: William Nordhaus, title: "A Question of Balance: Weighing the Options on Global Warming Policies", year: 2008}}
+      - {position: ecology.crisis-cause.market-failure, in: {author: William Nordhaus, title: "The Climate Casino: Risk, Uncertainty, and Economics for a Warming World", year: 2013}}
+      - {position: growth.ecology.green-growth, in: {author: William Nordhaus, title: "The Climate Casino: Risk, Uncertainty, and Economics for a Warming World", year: 2013}}
+
+  - id: thinker.stern
+    name: Nicholas Stern
+    born: 1946
+    died: null
+    region: United Kingdom
+    traditions: [ecology.green-growth]
+    summary: >
+      British economist, former chief economist of the World Bank, whose 2006 review for the British
+      Treasury called climate change the greatest market failure the world has seen. He argues that strong
+      early action is cheaper than delay and can drive a new wave of growth.
+    argues:
+      - {position: ecology.crisis-cause.market-failure, in: {author: Nicholas Stern, title: "The Economics of Climate Change: The Stern Review", year: 2006}}
+      - {position: climate.justice.shared-but-differentiated, in: {author: Nicholas Stern, title: "A Blueprint for a Safer Planet: How to Manage Climate Change and Create a New Era of Progress and Prosperity", year: 2009}}
+      - {position: growth.ecology.green-growth, in: {author: Nicholas Stern, title: "Why Are We Waiting? The Logic, Urgency, and Promise of Tackling Climate Change", year: 2015}}
+
+  - id: thinker.shellenberger
+    name: Michael Shellenberger
+    born: 1971
+    died: null
+    region: United States
+    traditions: [ecology.ecomodernism]
+    summary: >
+      American writer and campaigner, co-founder of the Breakthrough Institute, who argues that nuclear
+      power, intensive farming and urbanization let humanity use less of nature, and that environmental
+      alarmism hurts the poor. He later ran for governor of California and turned to campaigns against
+      censorship.
+    argues:
+      - {position: growth.ecology.ecomodernism, in: {author: "John Asafu-Adjaye, Linus Blomqvist, Stewart Brand and others", title: An Ecomodernist Manifesto, year: 2015, note: "Shellenberger is a co-author"}}
+      - {position: energy.transition.nuclear-abundance, in: {author: Michael Shellenberger, title: "Apocalypse Never: Why Environmental Alarmism Hurts Us All", year: 2020}}
+      - {position: ecology.crisis-cause.overstated, in: {author: Michael Shellenberger, title: "Apocalypse Never: Why Environmental Alarmism Hurts Us All", year: 2020}}
+
+  - id: thinker.ted-nordhaus
+    name: Ted Nordhaus
+    born: 1965
+    died: null
+    region: United States
+    traditions: [ecology.ecomodernism]
+    summary: >
+      American co-founder and director of the Breakthrough Institute. With Shellenberger he argued in 2004
+      that environmentalism had failed by preaching limits, and that public investment in technology and
+      abundance would cut emissions faster.
+    argues:
+      - {position: growth.ecology.ecomodernism, in: {author: Ted Nordhaus and Michael Shellenberger, title: "Break Through: From the Death of Environmentalism to the Politics of Possibility", year: 2007}}
+      - {position: energy.transition.nuclear-abundance, in: {author: "John Asafu-Adjaye, Linus Blomqvist, Stewart Brand and others", title: An Ecomodernist Manifesto, year: 2015, note: "Nordhaus is a co-author"}}
+
+  # ---------------- resource optimism and skepticism ----------------
+  - id: thinker.julian-simon
+    name: Julian L. Simon
+    born: 1932
+    died: 1998
+    region: United States
+    traditions: [liberalism.chicago]
+    summary: >
+      American economist and Cato Institute fellow who argued that human ingenuity in free markets is the
+      ultimate resource, that more people mean more problem-solvers, and that warnings of resource
+      exhaustion and ecological collapse were overstated; he won his 1980 wager with Paul Ehrlich on metal
+      prices.
+    argues:
+      - {position: population.question.people-are-the-resource, in: {author: Julian L. Simon, title: The Ultimate Resource, year: 1981}}
+      - {position: growth.ecology.growth-is-the-cure, in: {author: Julian L. Simon, title: The Ultimate Resource, year: 1981}}
+      - {position: ecology.crisis-cause.overstated, in: {author: Julian L. Simon and Herman Kahn, title: "The Resourceful Earth: A Response to Global 2000", year: 1984}}
+
+  - id: thinker.terry-anderson
+    name: Terry L. Anderson
+    region: United States
+    traditions: [liberalism.chicago]
+    summary: >
+      American economist at Montana State University, the Property and Environment Research Center and the
+      Hoover Institution. He argues that resources are wasted where nobody holds a secure, tradeable right to
+      them, and that markets in water, fisheries and land protect the environment better than regulation.
+    argues:
+      - {position: ecology.crisis-cause.missing-property-rights, in: {author: Terry L. Anderson and Donald R. Leal, title: Free Market Environmentalism, year: 1991}}
+
+  - id: thinker.lomborg
+    name: Bjørn Lomborg
+    born: 1965
+    died: null
+    region: Denmark
+    traditions: [liberalism.utilitarian]
+    summary: >
+      Danish political scientist and head of the Copenhagen Consensus Center, which ranks policies by
+      cost-benefit analysis. He accepts that warming is real and human-caused but argues that its costs are
+      exaggerated, that rapid cuts cost more than they save, and that money spent on growth, health and
+      innovation does more good for the poor.
+    argues:
+      - {position: ecology.crisis-cause.overstated, in: {author: Bjørn Lomborg, title: The Skeptical Environmentalist, year: 2001, note: "Danish original Verdens sande tilstand (1998)"}}
+      - {position: climate.justice.no-inherited-debt, in: {author: Bjørn Lomborg, title: "Cool It: The Skeptical Environmentalist's Guide to Global Warming", year: 2007}}
+      - {position: growth.ecology.growth-is-the-cure, in: {author: Bjørn Lomborg, title: "False Alarm: How Climate Change Panic Costs Us Trillions, Hurts the Poor, and Fails to Fix the Planet", year: 2020}}
+
+  - id: thinker.epstein
+    name: Alex Epstein
+    region: United States
+    traditions: [libertarianism.objectivist]
+    summary: >
+      American writer, formerly of the Ayn Rand Institute, who founded the Center for Industrial Progress.
+      He argues that human flourishing is the only standard of value, that nature has no value apart from
+      human use, and that cheap oil, coal and gas are what make the world safe to live in.
+    argues:
+      - {position: energy.transition.keep-energy-cheap, in: {author: Alex Epstein, title: The Moral Case for Fossil Fuels, year: 2014}}
+      - {position: nature.value.for-human-use, in: {author: Alex Epstein, title: "Fossil Future: Why Global Human Flourishing Requires More Oil, Coal, and Natural Gas, Not Less", year: 2022}}
+      - {position: growth.ecology.growth-is-the-cure, in: {author: Alex Epstein, title: "Fossil Future: Why Global Human Flourishing Requires More Oil, Coal, and Natural Gas, Not Less", year: 2022}}
+
+  # ---------------- limits, population, Malthus ----------------
+  - id: thinker.ehrlich
+    name: Paul R. Ehrlich
+    born: 1932
+    died: 2026
+    region: United States
+    traditions: [ecology.neo-malthusian]
+    summary: >
+      American biologist whose 1968 bestseller predicted mass famines in the 1970s and urged population
+      control, including aid conditioned on birth-rate targets. The famines he forecast did not occur on
+      that scale; he lost a famous 1980 wager on resource prices to Julian Simon.
+    argues:
+      - {position: population.question.too-many, in: {author: Paul R. Ehrlich, title: The Population Bomb, year: 1968}}
+      - {position: ecology.crisis-cause.too-many-people, in: {author: Paul R. Ehrlich and Anne H. Ehrlich, title: The Population Explosion, year: 1990}}
+
+  - id: thinker.hardin
+    name: Garrett Hardin
+    born: 1915
+    died: 2003
+    region: United States
+    traditions: [ecology.neo-malthusian]
+    summary: >
+      American ecologist whose 1968 essay argued that open-access commons are always overused, and that the
+      freedom to breed is intolerable. He later opposed food aid and immigration as feeding population
+      growth, a line the far right has since claimed.
+    argues:
+      - {position: property.commons.enclose, in: {author: Garrett Hardin, title: "The Tragedy of the Commons", year: 1968, note: Science}}
+      - {position: population.question.too-many, in: {author: Garrett Hardin, title: "The Tragedy of the Commons", year: 1968, note: Science}}
+
+  - id: thinker.meadows
+    name: Donella H. Meadows
+    born: 1941
+    died: 2001
+    region: United States
+    traditions: [ecology.neo-malthusian]
+    summary: >
+      American systems scientist and lead author of the report to the Club of Rome that modeled world
+      population, industrial output, food and pollution, and found that continued exponential growth would
+      overshoot the earth's limits within a century unless deliberately stopped.
+    argues:
+      - {position: progress.idea.within-limits, in: {author: "Donella H. Meadows, Dennis L. Meadows, Jørgen Randers and William W. Behrens III", title: The Limits to Growth, year: 1972}}
+      - {position: ecology.crisis-cause.too-many-people, in: {author: "Donella H. Meadows, Dennis L. Meadows, Jørgen Randers and William W. Behrens III", title: The Limits to Growth, year: 1972}}
+
+  - id: thinker.hartmann
+    name: Betsy Hartmann
+    region: United States
+    traditions: [feminism.materialist, ecology.environmental-justice]
+    summary: >
+      American scholar of population and development at Hampshire College who documented coercive
+      population programs in Bangladesh, India and elsewhere. She argues that population control blames poor
+      women's fertility for poverty and environmental damage produced by unequal ownership and consumption.
+    argues:
+      - {position: population.question.consumption-not-numbers, in: {author: Betsy Hartmann, title: "Reproductive Rights and Wrongs: The Global Politics of Population Control", year: 1987}}
+
+  # ---------------- nature as intrinsic value, kin, creation, home ----------------
+  - id: thinker.naess
+    name: Arne Naess
+    born: 1912
+    died: 2009
+    region: Norway
+    traditions: [ecology.deep-ecology]
+    summary: >
+      Norwegian philosopher and mountaineer who distinguished "shallow" environmentalism, aimed at human
+      health and affluence, from deep ecology, which holds that all living beings have value in themselves
+      and that human numbers and consumption must fall.
+    argues:
+      - {position: nature.value.intrinsic, in: {author: Arne Naess, title: "The Shallow and the Deep, Long-Range Ecology Movement: A Summary", year: 1973}}
+      - {position: growth.ecology.deep-ecology, in: {author: Arne Naess, title: "Ecology, Community and Lifestyle", year: 1989, note: "revised English edition of Økologi, samfunn og livsstil (1976)"}}
+      - {position: population.question.too-many, in: {author: Arne Naess, title: "Ecology, Community and Lifestyle", year: 1989, note: "the deep ecology platform, point 4"}}
+
+  - id: thinker.macy
+    name: Joanna Macy
+    born: 1929
+    died: 2025
+    region: United States
+    traditions: [religious.engaged-buddhism, ecology.deep-ecology]
+    summary: >
+      American Buddhist scholar and teacher who joined systems theory and Buddhist teaching on dependent
+      co-arising to deep ecology, and devised group practices for facing ecological grief. She held that the
+      self extends to the whole living world.
+    argues:
+      - {position: nature.value.intrinsic, in: {author: "John Seed, Joanna Macy, Pat Fleming and Arne Naess", title: "Thinking Like a Mountain: Towards a Council of All Beings", year: 1988}}
+      - {position: ecology.crisis-cause.human-mastery, in: {author: Joanna Macy, title: World as Lover, World as Self, year: 1991}}
+
+  - id: thinker.kimmerer
+    name: Robin Wall Kimmerer
+    born: 1953
+    died: null
+    region: United States (Citizen Potawatomi Nation)
+    traditions: [nationalism.indigenous-sovereignty]
+    summary: >
+      Potawatomi botanist at the State University of New York who joins plant science to Anishinaabe
+      teaching. She argues that land, plants and animals are relatives owed reciprocity and gratitude, and
+      that a gift economy, not a market, is the right way to share what the earth gives.
+    argues:
+      - {position: nature.value.kin-and-relation, in: {author: Robin Wall Kimmerer, title: "Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants", year: 2013}}
+      - {position: property.commons.not-for-sale, in: {author: Robin Wall Kimmerer, title: "The Serviceberry: Abundance and Reciprocity in the Natural World", year: 2024}}
+
+  - id: thinker.pope-francis
+    name: Pope Francis (Jorge Mario Bergoglio)
+    born: 1936
+    died: 2025
+    region: Argentina / Vatican
+    traditions: [conservatism.cst]
+    summary: >
+      Argentine Jesuit, archbishop of Buenos Aires and pope from 2013 to 2025. His 2015 encyclical on the
+      environment taught that the cry of the earth and the cry of the poor are one, criticized the
+      technocratic paradigm and the deified market, and named an ecological debt of the North to the South.
+    argues:
+      - {position: ecology.crisis-cause.lost-piety, in: {author: Pope Francis, title: "Laudato Si': On Care for Our Common Home", year: 2015}}
+      - {position: nature.value.creation, in: {author: Pope Francis, title: "Laudato Si': On Care for Our Common Home", year: 2015}}
+      - {position: climate.justice.climate-debt, in: {author: Pope Francis, title: "Laudato Si': On Care for Our Common Home", year: 2015, note: "paragraph 51, on the ecological debt between North and South"}}
+      - {position: ai.stake.human-dignity, in: {author: Pope Francis, title: Artificial Intelligence and Peace, year: 2024, note: "Message for the 57th World Day of Peace, 1 January 2024"}}
+
+  - id: thinker.berry
+    name: Wendell Berry
+    born: 1934
+    died: null
+    region: United States
+    traditions: [conservatism.traditionalist]
+    summary: >
+      Kentucky farmer, poet and essayist who argues that industrial agriculture and agribusiness destroyed
+      the family farm and rural community along with the soil. He defends small, settled, locally owned
+      farming and a religious sense of the land as a gift.
+    argues:
+      - {position: growth.ecology.home-and-stewardship, in: {author: Wendell Berry, title: "The Unsettling of America: Culture and Agriculture", year: 1977}}
+      - {position: agrarian.question.family-farm, in: {author: Wendell Berry, title: "The Unsettling of America: Culture and Agriculture", year: 1977}}
+      - {position: ecology.crisis-cause.lost-piety, in: {author: Wendell Berry, title: "The Gift of Good Land: Further Essays Cultural and Agricultural", year: 1981}}
+
+  # ---------------- green anarchism ----------------
+  - id: thinker.starhawk
+    name: Starhawk (Miriam Simos)
+    born: 1951
+    died: null
+    region: United States
+    traditions: [anarchism.green, anarchism.feminist]
+    summary: >
+      American ecofeminist writer, pagan teacher and direct-action organizer in the anti-nuclear and
+      anti-globalization movements. She contrasts "power-over", the domination of nature, women and the
+      poor, with power that comes from within and between people.
+    argues:
+      - {position: ecology.crisis-cause.human-mastery, in: {author: Starhawk, title: "Dreaming the Dark: Magic, Sex and Politics", year: 1982}}
+
+  - id: thinker.perlman
+    name: Fredy Perlman
+    born: 1934
+    died: 1985
+    region: Czechoslovakia / United States
+    traditions: [anarchism.green]
+    summary: >
+      Czech-born American writer and printer of the Detroit anarchist milieu around Black and Red and the
+      Fifth Estate. In his last book he described civilization as Leviathan, an artificial beast that has
+      enclosed its human parts since the first states, and celebrated the peoples who resisted it.
+    argues:
+      - {position: technology.nature.autonomous-force, in: {author: Fredy Perlman, title: "Against His-Story, Against Leviathan!", year: 1983}}
+
+  # ---------------- ecofascism ----------------
+  - id: thinker.linkola
+    name: Pentti Linkola
+    born: 1932
+    died: 2020
+    region: Finland
+    traditions: [fascism.ecofascism, ecology.deep-ecology]
+    summary: >
+      Finnish fisherman, ornithologist and writer who called for an authoritarian ecological state to cut
+      human numbers and consumption by force, and welcomed wars and famines as reducing population. He
+      rejected elected government and economic growth as incompatible with the survival of life.
+    argues:
+      - {position: population.question.too-many, in: {author: Pentti Linkola, title: Voisiko elämä voittaa, year: 2004, note: "English: Can Life Prevail? (2009)"}}
+      - {position: growth.ecology.deep-ecology, in: {author: Pentti Linkola, title: Voisiko elämä voittaa, year: 2004, note: "English: Can Life Prevail? (2009)"}}
+
+  - id: thinker.savitri-devi
+    name: Savitri Devi (Maximiani Portas)
+    born: 1905
+    died: 1982
+    region: France / India
+    traditions: [fascism.ecofascism]
+    summary: >
+      French-born Nazi propagandist who settled in India, worshipped Hitler as an avatar and joined Aryan
+      racial doctrine to a life-centred rejection of human privilege over animals and nature. After 1945 she
+      helped found neo-Nazi networks, and ecofascist currents still cite her.
+    argues:
+      - {position: nature.value.intrinsic, in: {author: Savitri Devi, title: The Impeachment of Man, year: 1959, note: "written 1945 to 1946"}}

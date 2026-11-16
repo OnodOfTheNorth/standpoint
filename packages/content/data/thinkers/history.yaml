@@ -1,0 +1,187 @@
+# Historians, participants and writers on the historical-assessment problematics (Argentina 2001,
+# Bolivia 2019, Philippine martial law, Iran 1979, Yugoslavia, Sankara, Rojava, the Nordic model,
+# Indonesia 1965, Haiti). Added by the gapsA pass; every post-1990 work checked against a catalogue,
+# publisher or journal record. Where a writer has no self-declared school, the tradition given is the
+# one whose frame the work argues in (see .claude/p2-notes-gapsA.md).
+thinkers:
+  # ---- Argentina 2001
+  - id: thinker.auyero
+    name: Javier Auyero
+    region: Argentina / United States
+    traditions: [liberalism.social]
+    summary: Argentine sociologist who studies clientelism and the urban poor in Buenos Aires. His study of the December 2001 lootings traced them to the "gray zone" where Peronist brokers, party activists and the police meet.
+    argues:
+      - {position: hist.argentina-2001.machine-managed, in: {author: Javier Auyero, title: "Routine Politics and Violence in Argentina: The Gray Zone of State Power", year: 2007}}
+
+  - id: thinker.mussa
+    name: Michael Mussa
+    born: 1944
+    died: 2012
+    region: United States
+    traditions: [liberalism.technocratic]
+    summary: University of Chicago economist and chief economist of the International Monetary Fund from 1991 to 2001. He argued that Argentina's collapse came first from the failure of its federal and provincial governments to run a responsible fiscal policy under the peg.
+    argues:
+      - {position: hist.argentina-2001.too-much-state, in: {author: Michael Mussa, title: "Argentina and the Fund: From Triumph to Tragedy", year: 2002}}
+
+  # ---- Bolivia 2019
+  - id: thinker.moldiz
+    name: Hugo Moldiz Mercado
+    born: 1964
+    region: Bolivia
+    traditions: [marxism.ml]
+    summary: Bolivian Marxist journalist and editor of La Época, and minister of government under Evo Morales in 2015. He argued that the events of November 2019 were a coup carried out by the police, the army and the civic right with the backing of the United States and the OAS.
+    argues:
+      - {position: hist.bolivia-2019.coup, in: {author: Hugo Moldiz Mercado, title: "Golpe de Estado en Bolivia: La soledad de Evo Morales", year: 2020, note: "Ocean Sur; prologue by Atilio Borón"}}
+
+  - id: thinker.lehoucq
+    name: Fabrice Lehoucq
+    region: United States
+    traditions: [liberalism.classical]
+    summary: Political scientist who studies elections, fraud and constitutional rule in Latin America. He argued that Morales fell not to a military coup but to a citizen revolt set off by his bid for a fourth term against the 2016 referendum and a disputed count.
+    argues:
+      - {position: hist.bolivia-2019.term-limits, in: {author: Fabrice Lehoucq, title: "Bolivia's Citizen Revolt", year: 2020, note: "Journal of Democracy 31(3); holds that whether fraud decided the first round may never be known"}}
+
+  # ---- Philippine martial law
+  - id: thinker.robles
+    name: Raissa Robles
+    region: Philippines
+    traditions: [liberalism.social]
+    summary: Filipino journalist who has reported on the Marcos family and the Philippine state for decades. Her history of martial law documents the detentions, torture and killings of 1972–86 and explains the declaration as Marcos's way to stay in power beyond his last term.
+    argues:
+      - {position: hist.martial-law-philippines.dictatorship-and-plunder, in: {author: Raissa Robles, title: "Marcos Martial Law: Never Again", year: 2016}}
+
+  # ---- Iran 1979
+  - id: thinker.ebadi
+    name: Shirin Ebadi
+    born: 1947
+    region: Iran
+    traditions: [feminism.islamic]
+    summary: One of Iran's first women judges, who supported the revolution of 1979 and was removed from the bench when the new authorities barred women from judging. She became a human rights lawyer defending women and children and received the Nobel Peace Prize in 2003.
+    argues:
+      - {position: hist.iranian-revolution.hijacked, in: {author: Shirin Ebadi with Azadeh Moaveni, title: "Iran Awakening: A Memoir of Revolution and Hope", year: 2006}}
+
+  # ---- Yugoslavia
+  - id: thinker.woodward
+    name: Susan L. Woodward
+    region: United States
+    traditions: [liberalism.social]
+    summary: American political scientist of Yugoslavia who served with the UN mission in Bosnia. She argued that the federation broke up not from ancient hatreds but from economic decline, foreign debt and the IMF austerity program of the 1980s, which set republic against republic.
+    argues:
+      - {position: hist.yugoslavia.undone-by-markets-and-debt, in: {author: Susan L. Woodward, title: "Balkan Tragedy: Chaos and Dissolution after the Cold War", year: 1995}}
+
+  - id: thinker.sirc
+    name: Ljubo Sirc
+    born: 1920
+    died: 2016
+    region: Slovenia / United Kingdom
+    traditions: [liberalism.classical]
+    summary: Slovene economist, imprisoned by the Yugoslav authorities after 1947, who taught at Glasgow. He argued that self-managed firms without owners invested badly, paid out inflationary incomes and ran up debts, so that Yugoslav market socialism could not work.
+    argues:
+      - {position: hist.yugoslavia.labor-managed-failure, in: {author: Ljubo Sirc, title: The Yugoslav Economy under Self-Management, year: 1979}}
+
+  # ---- Sankara
+  - id: thinker.jaffre
+    name: Bruno Jaffré
+    region: France
+    traditions: [marxism.third-worldism]
+    summary: French engineer and writer, Sankara's principal biographer, who campaigned for the opening of French archives on his killing. He traced the assassination to Compaoré's circle and to a wider plot of regional and Françafrique interests for whom Sankara was an obstacle.
+    argues:
+      - {position: hist.sankara.killed-by-francafrique, in: {author: Bruno Jaffré, title: "Who Killed Thomas Sankara?", year: 2018, note: "in Amber Murrey (ed.), A Certain Amount of Madness: The Life, Politics and Legacies of Thomas Sankara"}}
+
+  - id: thinker.harsch
+    name: Ernest Harsch
+    region: United States
+    traditions: [marxism.trotskyism]
+    summary: American writer on Africa, in the 1970s for the socialist weekly Intercontinental Press and later for the United Nations, who wrote the first English biography of Sankara. He argued that the revolution's initiative came largely from the ruling council and the army, and that its clashes with unions and teachers weakened it.
+    argues:
+      - {position: hist.sankara.revolution-from-above, in: {author: Ernest Harsch, title: "The legacies of Thomas Sankara: a revolutionary experience in retrospect", year: 2013, note: "Review of African Political Economy 40(137)"}}
+
+  # ---- Rojava
+  - id: thinker.lemmon
+    name: Gayle Tzemach Lemmon
+    region: United States
+    traditions: [liberalism.internationalist]
+    summary: American journalist and Council on Foreign Relations fellow who wrote on women fighters in Afghanistan and Syria. Her account of the Kurdish women's units follows them from Kobani to Raqqa and to the Turkish offensive that followed the American pullback.
+    argues:
+      - {position: hist.rojava.heroes-betrayed, in: {author: Gayle Tzemach Lemmon, title: "The Daughters of Kobani: A Story of Rebellion, Courage, and Justice", year: 2021}}
+
+  - id: thinker.al-shami
+    name: Leila al-Shami
+    region: Syria / United Kingdom
+    traditions: [anarchism.communist]
+    summary: British-Syrian anarchist writer who worked with human rights activists in Damascus. Her history of the Syrian revolution, written with Robin Yassin-Kassab, credits the councils of northern Syria but reports the PYD shutting out rival parties and displacing Arab villagers.
+    argues:
+      - {position: hist.rojava.one-party-autonomy, in: {author: Robin Yassin-Kassab and Leila al-Shami, title: "Burning Country: Syrians in Revolution and War", year: 2016}}
+
+  # ---- The Nordic model
+  - id: thinker.esping-andersen
+    name: Gøsta Esping-Andersen
+    born: 1947
+    region: Denmark
+    traditions: [socdem.nordic]
+    summary: Danish sociologist of the welfare state. He argued that Scandinavian social democracy came to power by building cross-class majorities and used the state to take health, income security and services out of the market.
+    argues:
+      - {position: hist.nordic-model.labor-tamed-capital, in: {author: Gøsta Esping-Andersen, title: "Politics Against Markets: The Social Democratic Road to Power", year: 1985}}
+      - {position: welfare.state.social-citizenship, in: {author: Gøsta Esping-Andersen, title: The Three Worlds of Welfare Capitalism, year: 1990}}
+
+  - id: thinker.pontusson
+    name: Jonas Pontusson
+    region: Sweden / Switzerland
+    traditions: [socdem.democratic-socialism]
+    summary: Swedish political economist of social democracy. He traced how Swedish labor's push in the 1970s for control over investment, culminating in the wage-earner funds, met business resistance and ended in retreat.
+    argues:
+      - {position: hist.nordic-model.stopped-at-the-threshold, in: {author: Jonas Pontusson, title: "Radicalization and Retreat in Swedish Social Democracy", year: 1987, note: "New Left Review I/165"}}
+      - {position: hist.nordic-model.stopped-at-the-threshold, in: {author: Jonas Pontusson, title: "The Limits of Social Democracy: Investment Politics in Sweden", year: 1992}}
+
+  - id: thinker.lauesen
+    name: Torkil Lauesen
+    region: Denmark
+    traditions: [marxism.third-worldism]
+    summary: Danish anti-imperialist, member of a Copenhagen group that robbed banks in the 1970s and 80s to fund Palestinian and African liberation movements, for which he was imprisoned. He argues that the Scandinavian welfare states were built on value transferred from the global South through trade and production chains.
+    argues:
+      - {position: hist.nordic-model.paid-by-the-periphery, in: {author: Torkil Lauesen, title: "Riding the Wave: Sweden's Integration into the Imperialist World System", year: 2021}}
+      - {position: welfare.state.drain-and-threat, in: {author: Torkil Lauesen, title: "The Global Perspective: Reflections on Imperialism and Resistance", year: 2018}}
+
+  - id: thinker.sanandaji
+    name: Nima Sanandaji
+    region: Iran / Sweden
+    traditions: [liberalism.classical]
+    summary: Swedish writer of Kurdish origin and free-market policy analyst. He argued that Nordic equality and growth predated the welfare state and came from open markets and social norms, and that the high-tax era of the 1970s damaged them.
+    argues:
+      - {position: hist.nordic-model.markets-built-it, in: {author: Nima Sanandaji, title: "Scandinavian Unexceptionalism: Culture, Markets and the Failure of Third-Way Socialism", year: 2015}}
+
+  # ---- Indonesia 1965
+  - id: thinker.bevins
+    name: Vincent Bevins
+    region: United States / Brazil
+    traditions: [socdem.democratic-socialism]
+    summary: American journalist who reported from Brazil and Southeast Asia. His history of the 1965 killings in Indonesia shows the United States supplying lists, money and support to the army, and traces how the method was copied across the South.
+    argues:
+      - {position: hist.indonesia-1965.western-backed-extermination, in: {author: Vincent Bevins, title: "The Jakarta Method: Washington's Anticommunist Crusade and the Mass Murder Program that Shaped Our World", year: 2020}}
+
+  - id: thinker.sudisman
+    name: Sudisman
+    born: 1920
+    died: 1968
+    region: Indonesia
+    traditions: [marxism.maoism]
+    summary: Member of the Communist Party of Indonesia's political bureau who led it underground after the army killed Aidit. The self-criticism he co-wrote in 1966 blamed the party's destruction on its peaceful, parliamentary line and its reliance on Sukarno; he was captured that December and executed in 1968.
+    argues:
+      - {position: hist.indonesia-1965.fatal-legal-road, in: {author: Political Bureau of the Central Committee of the PKI, title: "Build the PKI Along the Marxist-Leninist Line to Lead the People's Democratic Revolution in Indonesia", year: 1966, note: "self-criticism of September 1966, co-written by Sudisman"}}
+
+  - id: thinker.wieringa
+    name: Saskia E. Wieringa
+    region: Netherlands
+    traditions: [feminism.materialist]
+    summary: Dutch scholar of gender and sexual politics in Indonesia who wrote on the destruction of the Gerwani women's movement in 1965. She chaired the International People's Tribunal on 1965, which found the Indonesian state responsible for crimes against humanity.
+    argues:
+      - {position: hist.indonesia-1965.crime-against-humanity, in: {author: "Saskia E. Wieringa, Jess Melvin and Annie Pohlman (eds.)", title: The International People's Tribunal for 1965 and the Indonesian Genocide, year: 2019}}
+
+  # ---- Haiti
+  - id: thinker.laurent-dubois
+    name: Laurent Dubois
+    region: United States
+    traditions: [liberalism.republican]
+    summary: Historian of the French Caribbean and the Haitian Revolution. He argued that the 1825 indemnity France imposed for recognition, and the loans taken to pay it, locked Haiti into a century of debt that shaped its later poverty.
+    argues:
+      - {position: hist.haitian-revolution.made-to-pay, in: {author: Laurent Dubois, title: "Haiti: The Aftershocks of History", year: 2012}}

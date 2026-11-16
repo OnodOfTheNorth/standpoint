@@ -34,6 +34,7 @@ thinkers:
     argues:
       - {position: prisons.purpose.abolition, in: {author: Peter Kropotkin, title: "In Russian and French Prisons", year: 1887}}
       - {position: allocation.mechanism.free-access, in: {author: Peter Kropotkin, title: "The Conquest of Bread", year: 1892}}
+      - {position: care.work.community-reciprocity, in: {author: Peter Kropotkin, title: "The Conquest of Bread", year: 1892, note: "chapter \"Agreeable Work\": housework freed from women's drudgery by machines and free association"}}
       - {position: education.purpose.work-and-study, in: {author: Peter Kropotkin, title: "Fields, Factories and Workshops", year: 1899}}
       - {position: solidarity.basis.mutual-aid, in: {author: Peter Kropotkin, title: "Mutual Aid: A Factor of Evolution", year: 1902}}
       - {position: human.nature.good-corrupted, in: {author: Peter Kropotkin, title: "Mutual Aid: A Factor of Evolution", year: 1902}}
@@ -73,6 +74,7 @@ thinkers:
       - {position: nation.question.constructed, in: {author: Rudolf Rocker, title: "Nationalism and Culture", year: 1937}}
       - {position: unions.role.revolutionary-syndicate, in: {author: Rudolf Rocker, title: "Anarcho-Syndicalism: Theory and Practice", year: 1938}}
       - {position: change.means.strike-and-direct-action, in: {author: Rudolf Rocker, title: "Anarcho-Syndicalism: Theory and Practice", year: 1938}}
+      - {position: nation.belonging.class-not-nation, in: {author: Rudolf Rocker, title: Nationalism and Culture, year: 1937, note: "the nation as a creation of the state and its ruling minorities; workers' solidarity crosses it"}}
 
   - id: thinker.bookchin
     name: Murray Bookchin
@@ -83,6 +85,7 @@ thinkers:
     summary: American social ecologist who traced the domination of nature to hierarchy among humans and proposed libertarian municipalism, a confederation of directly governed towns.
     argues:
       - {position: technology.nature.liberation, in: {author: Murray Bookchin, title: "Post-Scarcity Anarchism", year: 1971}}
+      - {position: automation.ownership.common-ownership, in: {author: Murray Bookchin, title: "Post-Scarcity Anarchism", year: 1971, note: "\"Towards a Liberatory Technology\" (1965)"}}
       - {position: democracy.form.direct, in: {author: Murray Bookchin, title: "The Rise of Urbanization and the Decline of Citizenship", year: 1987}}
       - {position: ecology.crisis-cause.capital-accumulation, in: {author: Murray Bookchin, title: "Remaking Society", year: 1989}}
       - {position: federalism.scale.confederal-communes, in: {author: Murray Bookchin, title: "The Meaning of Confederalism", year: 1990}}
@@ -110,3 +113,289 @@ thinkers:
       - {position: indigenous.sovereignty.autonomy-without-state, in: {author: EZLN (Subcomandante Insurgente Marcos), title: "Sixth Declaration of the Lacandon Jungle", year: 2005}}
       - {position: state.relation.exit-and-build, in: {author: EZLN (Subcomandante Insurgente Marcos), title: "Sixth Declaration of the Lacandon Jungle", year: 2005}}
       - {position: elections.role.organize-instead, in: {author: EZLN (Subcomandante Insurgente Marcos), title: "Sixth Declaration of the Lacandon Jungle", year: 2005}}
+
+  # ---------------- individualist and mutualist anarchism ----------------
+  - id: thinker.stirner
+    name: Max Stirner
+    born: 1806
+    died: 1856
+    region: Germany
+    traditions: [anarchism.individualist]
+    summary: Pen name of Johann Kaspar Schmidt, a Berlin schoolteacher in the Young Hegelian circle. His one major book held that the state, God, humanity, morality and society are "spooks" to which the individual is sacrificed, and proposed in their place voluntary unions of egoists.
+    argues:
+      - {position: state.nature.hierarchy-as-such, in: {author: Max Stirner, title: "The Ego and Its Own", year: 1844, note: "German: Der Einzige und sein Eigentum, dated 1845"}}
+      - {position: org.form.affinity-groups, in: {author: Max Stirner, title: "The Ego and Its Own", year: 1844, note: "the union of egoists, held together only by each member's own interest"}}
+
+  - id: thinker.tucker
+    name: Benjamin Tucker
+    born: 1854
+    died: 1939
+    region: United States
+    traditions: [anarchism.individualist, anarchism.mutualist]
+    summary: American editor of the journal Liberty from 1881 to 1908 and translator of Proudhon. He held that interest, rent and profit are tributes made possible by state-granted monopolies of money, land, tariffs and patents, and that free competition in banking would abolish them.
+    argues:
+      - {position: money.nature.mutual-credit, in: {author: Benjamin R. Tucker, title: "State Socialism and Anarchism", year: 1886}}
+      - {position: state.nature.organized-aggression, in: {author: Benjamin R. Tucker, title: "Instead of a Book, by a Man Too Busy to Write One", year: 1893, note: "the state defined as the embodiment of the principle of invasion"}}
+      - {position: property.ip.monopoly-abolish, in: {author: Benjamin R. Tucker, title: Instead of a Book, year: 1893, note: "the patent monopoly as one of the four monopolies; the copyright debate in Liberty"}}
+
+  - id: thinker.carson
+    name: Kevin Carson
+    born: 1963
+    died: null
+    region: United States
+    traditions: [anarchism.mutualist]
+    summary: American writer at the Center for a Stateless Society who revived mutualism. He argues that capitalism rests on state privilege over land, credit and patents, and that without it production would pass to cooperatives and small-scale networked workshops.
+    argues:
+      - {position: property.private.possession-not-property, in: {author: Kevin A. Carson, title: "Studies in Mutualist Political Economy", year: 2007, note: "first circulated online in 2004"}}
+      - {position: firm.ownership.worker-cooperatives, in: {author: Kevin A. Carson, title: "Studies in Mutualist Political Economy", year: 2007}}
+
+  - id: thinker.bob-black
+    name: Bob Black
+    born: 1951
+    died: null
+    region: United States
+    traditions: [anarchism.individualist]
+    summary: American writer of the post-left current that drew on Stirner's egoism and the Situationists. He called for abolishing work in favor of a life of freely chosen play, and answered Murray Bookchin's attack on "lifestyle anarchism".
+    argues:
+      - {position: work.future.abolish-wage-labor, in: {author: Bob Black, title: "The Abolition of Work", year: 1985}}
+
+  # ---------------- anarchist communism ----------------
+  - id: thinker.landauer
+    name: Gustav Landauer
+    born: 1870
+    died: 1919
+    region: Germany
+    traditions: [anarchism.communist]
+    summary: German Jewish writer and translator who held that the state is a relationship between people, to be dissolved by building other relationships. He founded the Socialist Bund to start socialist settlements, joined the Bavarian Council Republic in 1919 and was killed by Freikorps soldiers.
+    argues:
+      - {position: state.relation.exit-and-build, in: {author: Gustav Landauer, title: "For Socialism", year: 1911, note: "German: Aufruf zum Sozialismus"}}
+      - {position: culture.strategy.build-own-institutions, in: {author: Gustav Landauer, title: "For Socialism", year: 1911, note: "socialist settlements and cooperatives built now, beside the state"}}
+
+  - id: thinker.goldman
+    name: Emma Goldman
+    born: 1869
+    died: 1940
+    region: Lithuania / United States
+    traditions: [anarchism.communist, anarchism.feminist]
+    summary: Lithuanian-born Jewish anarchist who edited Mother Earth in New York, campaigned for birth control and against conscription, and was deported to Soviet Russia in 1919. She left in 1921 after Kronstadt and wrote against the Bolshevik state.
+    argues:
+      - {position: prisons.purpose.abolition, in: {author: Emma Goldman, title: "Prisons: A Social Crime and Failure", year: 1910, note: "in Anarchism and Other Essays"}}
+      - {position: sexuality.politics.capitalism-and-liberation, in: {author: Emma Goldman, title: "The Traffic in Women", year: 1910, note: "in Anarchism and Other Essays; prostitution as a product of women's economic exploitation"}}
+      - {position: hist.ussr-early.kronstadt-makhno, in: {author: Emma Goldman, title: "My Disillusionment in Russia", year: 1923}}
+
+  - id: thinker.parsons
+    name: Lucy Parsons
+    born: 1851
+    died: 1942
+    region: United States
+    traditions: [anarchism.communist, anarchism.syndicalist]
+    summary: Texas-born organizer of Black, Mexican and Native American descent, wife of the Haymarket martyr Albert Parsons. She organized Chicago's working women and the unemployed, and spoke at the founding convention of the Industrial Workers of the World in 1905.
+    argues:
+      - {position: violence.political.revolutionary, in: {author: Lucy Parsons, title: "To Tramps", year: 1884, note: "The Alarm"}}
+      - {position: change.means.strike-and-direct-action, in: {author: Lucy Parsons, title: "Speech to the founding convention of the Industrial Workers of the World", year: 1905, note: "the strike in which workers stay in and take possession of the means of production"}}
+
+  - id: thinker.voline
+    name: Voline
+    born: 1882
+    died: 1945
+    region: Russia / France
+    traditions: [anarchism.communist]
+    summary: Pen name of Vsevolod Eikhenbaum, a Russian anarchist who led the Nabat confederation in Ukraine and served in the cultural section of Makhno's army. In exile in Paris he opposed the Platform and wrote a history of the revolution from the anarchist side.
+    argues:
+      - {position: hist.ussr-early.kronstadt-makhno, in: {author: Voline, title: "The Unknown Revolution", year: 1947}}
+      - {position: state.nature.hierarchy-as-such, in: {author: Voline, title: "The Unknown Revolution", year: 1947, note: "the Bolshevik state as a new ruling caste"}}
+
+  - id: thinker.graeber
+    name: David Graeber
+    born: 1961
+    died: 2020
+    region: United States / Britain
+    traditions: [anarchism.communist]
+    summary: American anthropologist who taught at Yale and the London School of Economics and took part in the alter-globalization movement and Occupy Wall Street. He argued that debt has been the moral language of domination since the first states, and that much paid work in rich countries is socially pointless.
+    argues:
+      - {position: org.form.horizontal-movement, in: {author: David Graeber, title: "The New Anarchists", year: 2002, note: "New Left Review 13"}}
+      - {position: debt.household.cancel-and-refuse, in: {author: David Graeber, title: "Debt: The First 5,000 Years", year: 2011, note: "closing call for a jubilee cancelling sovereign and consumer debt"}}
+      - {position: work.future.basic-income-emancipatory, in: {author: David Graeber, title: "Bullshit Jobs: A Theory", year: 2018}}
+
+  - id: thinker.kristian-williams
+    name: Kristian Williams
+    region: United States
+    traditions: [anarchism.communist]
+    summary: American anarchist writer in Portland, Oregon, who traced American policing to slave patrols and the control of the industrial working class. He argues that the core function of police is to control populations likely to rebel.
+    argues:
+      - {position: police.role.class-repression, in: {author: Kristian Williams, title: "Our Enemies in Blue: Police and Power in America", year: 2004}}
+
+  # ---------------- anarchists of the South ----------------
+  - id: thinker.flores-magon
+    name: Ricardo Flores Magón
+    born: 1873
+    died: 1922
+    region: Mexico / United States
+    traditions: [anarchism.communist]
+    summary: Mexican journalist who edited Regeneración and led the Mexican Liberal Party against Porfirio Díaz from exile in the United States. Under the slogan Tierra y Libertad the party called for land taken in common by those who work it; he died in Leavenworth penitentiary.
+    argues:
+      - {position: property.land.communal, in: {author: Organizing Junta of the Mexican Liberal Party (Ricardo Flores Magón and others), title: "Manifesto of 23 September 1911", year: 1911}}
+      - {position: state.relation.abolish-at-once, in: {author: Organizing Junta of the Mexican Liberal Party (Ricardo Flores Magón and others), title: "Manifesto of 23 September 1911", year: 1911}}
+
+  - id: thinker.shifu
+    name: Liu Shifu
+    born: 1884
+    died: 1915
+    region: China
+    traditions: [anarchism.communist]
+    summary: Chinese revolutionary from Guangdong, known by his adopted name Shifu, who left the Tongmenghui for anarchism and founded the paper Minsheng (The People's Voice) in Guangzhou and Shanghai. He organized the first anarchist groups and labor unions in South China.
+    argues:
+      - {position: allocation.mechanism.free-access, in: {author: Liu Shifu, title: "Goals and Methods of the Anarchist-Communist Party", year: 1914, note: "Minsheng, July 1914"}}
+      - {position: state.relation.abolish-at-once, in: {author: Liu Shifu, title: "Goals and Methods of the Anarchist-Communist Party", year: 1914}}
+
+  - id: thinker.kotoku
+    name: Kōtoku Shūsui
+    born: 1871
+    died: 1911
+    region: Japan
+    traditions: [anarchism.communist]
+    summary: Japanese journalist who co-founded the Heimin Shimbun against the Russo-Japanese War and translated the Communist Manifesto. After prison and a stay in California he turned the Japanese socialist movement toward anarchism, and was executed in the High Treason Incident.
+    argues:
+      - {position: change.means.strike-and-direct-action, in: {author: Kōtoku Shūsui, title: "The Change in My Thinking", year: 1907, note: "Heimin Shimbun, 5 February 1907; direct action and the general strike"}}
+      - {position: elections.role.organize-instead, in: {author: Kōtoku Shūsui, title: "The Change in My Thinking", year: 1907}}
+
+  - id: thinker.abad-de-santillan
+    name: Diego Abad de Santillán
+    born: 1897
+    died: 1983
+    region: Spain / Argentina
+    traditions: [anarchism.communist, anarchism.syndicalist]
+    summary: Spanish-born anarchist raised in Argentina, an editor of La Protesta and a voice of the Argentine Regional Workers' Federation (FORA). Back in Spain he was a leader of the FAI and the CNT and served as economy councillor of the Generalitat in 1936.
+    argues:
+      - {position: allocation.mechanism.participatory-planning, in: {author: Diego Abad de Santillán, title: "El organismo económico de la revolución", year: 1936, note: "English: After the Revolution; federated councils of producers in place of market and state"}}
+
+  # ---------------- syndicalism and platformism ----------------
+  - id: thinker.pelloutier
+    name: Fernand Pelloutier
+    born: 1867
+    died: 1901
+    region: France
+    traditions: [anarchism.syndicalist]
+    summary: French journalist who led the Federation of Bourses du Travail, the local labor exchanges that organized workers' education, placement and mutual aid. He urged anarchists to enter the unions and saw the bourses as the cells of a society without a state.
+    argues:
+      - {position: unions.role.revolutionary-syndicate, in: {author: Fernand Pelloutier, title: "L'anarchisme et les syndicats ouvriers", year: 1895}}
+      - {position: org.form.union-syndicalist, in: {author: Fernand Pelloutier, title: "Histoire des Bourses du travail", year: 1902, note: "published after his death"}}
+
+  - id: thinker.pouget
+    name: Émile Pouget
+    born: 1860
+    died: 1931
+    region: France
+    traditions: [anarchism.syndicalist]
+    summary: French anarchist editor of Le Père Peinard and assistant secretary of the General Confederation of Labour (CGT) from 1901 to 1908, one of the authors of its revolutionary syndicalism. He wrote on direct action, sabotage and the general strike.
+    argues:
+      - {position: change.means.strike-and-direct-action, in: {author: Émile Pouget, title: "L'Action directe", year: 1910}}
+      - {position: org.form.union-syndicalist, in: {author: Émile Pataud and Émile Pouget, title: "Comment nous ferons la révolution", year: 1909}}
+
+  - id: thinker.arshinov
+    name: Peter Arshinov
+    born: 1887
+    died: 1937
+    region: Ukraine / Russia
+    traditions: [anarchism.platformist]
+    summary: Ukrainian metalworker and anarchist who met Makhno in prison and edited the Makhnovist movement's press. In Paris he co-edited Dielo Truda and the Organizational Platform; he returned to the Soviet Union in 1935 and was shot in the purges.
+    argues:
+      - {position: hist.ussr-early.kronstadt-makhno, in: {author: Peter Arshinov, title: "History of the Makhnovist Movement 1918–1921", year: 1923}}
+      - {position: org.form.specific-anarchist-organization, in: {author: Dielo Truda group (Nestor Makhno, Peter Arshinov, Ida Mett and others), title: "Organisational Platform of the General Union of Anarchists (Draft)", year: 1926}}
+
+  # ---------------- insurrectionary anarchism ----------------
+  - id: thinker.galleani
+    name: Luigi Galleani
+    born: 1861
+    died: 1931
+    region: Italy / United States
+    traditions: [anarchism.insurrectionary]
+    summary: Italian anarchist who edited Cronaca Sovversiva among immigrant workers in Vermont and Massachusetts and was deported to Italy in 1919. He opposed formal anarchist organization in favor of autonomous groups and individual and collective revolt.
+    argues:
+      - {position: org.form.affinity-groups, in: {author: Luigi Galleani, title: "La fine dell'anarchismo?", year: 1925, note: "English: The End of Anarchism?"}}
+
+  - id: thinker.bonanno
+    name: Alfredo M. Bonanno
+    born: 1937
+    died: 2023
+    region: Italy
+    traditions: [anarchism.insurrectionary]
+    summary: Italian anarchist editor and publisher in Catania, imprisoned for his writings and later for a robbery. He rejected both the formal anarchist federation and the armed party of the Red Brigades, and argued for informal affinity groups that attack capital and the state now.
+    argues:
+      - {position: violence.political.revolutionary, in: {author: Alfredo M. Bonanno, title: "Armed Joy", year: 1977, note: "Italian: La gioia armata"}}
+      - {position: org.form.affinity-groups, in: {author: Alfredo M. Bonanno, title: "The Anarchist Tension", year: 1996, note: "English edition Elephant Editions, 1998"}}
+
+  # ---------------- anarcha-feminism ----------------
+  - id: thinker.de-cleyre
+    name: Voltairine de Cleyre
+    born: 1866
+    died: 1912
+    region: United States
+    traditions: [anarchism.feminist, anarchism.individualist]
+    summary: American anarchist writer and teacher of immigrant workers in Philadelphia, who moved from individualism to an anarchism without adjectives. She wrote against marriage as sexual slavery and defended direct action as the everyday method of working people.
+    argues:
+      - {position: feminism.subordination.patriarchy, in: {author: Voltairine de Cleyre, title: "Sex Slavery", year: 1890}}
+      - {position: change.means.strike-and-direct-action, in: {author: Voltairine de Cleyre, title: "Direct Action", year: 1912}}
+
+  - id: thinker.sanchez-saornil
+    name: Lucía Sánchez Saornil
+    born: 1895
+    died: 1970
+    region: Spain
+    traditions: [anarchism.feminist]
+    summary: Spanish poet and telephone worker in the CNT who in 1936 co-founded Mujeres Libres, the anarchist women's organization of the Spanish revolution, with Mercedes Comaposada and Amparo Poch y Gascón. She argued that male domination persisted inside the libertarian movement and needed women's own organization.
+    argues:
+      - {position: feminism.subordination.patriarchy, in: {author: Lucía Sánchez Saornil, title: "La cuestión femenina en nuestros medios", year: 1935, note: "series in Solidaridad Obrera; the woman question is not settled by the economic revolution alone"}}
+
+  # ---------------- communalism, confederalism and primitivism ----------------
+  - id: thinker.biehl
+    name: Janet Biehl
+    born: 1953
+    died: null
+    region: United States
+    traditions: [anarchism.communalism]
+    summary: American writer and Murray Bookchin's companion and collaborator, who set out libertarian municipalism for a general audience and later wrote his biography. She left social ecology in 2011, and has since written in support of the Rojava revolution.
+    argues:
+      - {position: democracy.form.direct, in: {author: Janet Biehl, title: "The Politics of Social Ecology: Libertarian Municipalism", year: 1998}}
+      - {position: federalism.scale.confederal-communes, in: {author: Janet Biehl, title: "The Politics of Social Ecology: Libertarian Municipalism", year: 1998}}
+
+  - id: thinker.dirik
+    name: Dilar Dirik
+    region: Kurdistan / Britain
+    traditions: [anarchism.confederalism]
+    summary: Kurdish sociologist at the University of Oxford who studies the Kurdistan women's movement from its origins in the PKK to the women's councils and defense units of Rojava. She presents women's autonomous organization as the core of democratic confederalism.
+    argues:
+      - {position: hist.rojava.democratic-confederalism, in: {author: Dilar Dirik, title: "The Kurdish Women's Movement: History, Theory, Practice", year: 2022}}
+      - {position: feminism.subordination.patriarchy, in: {author: Dilar Dirik, title: "The Kurdish Women's Movement: History, Theory, Practice", year: 2022}}
+
+  - id: thinker.kevin-tucker
+    name: Kevin Tucker
+    region: United States
+    traditions: [anarchism.primitivist]
+    summary: American anarcho-primitivist writer and editor of the journals Species Traitor and Black and Green Review. He argues that domestication and agriculture began the domination that industrial technology completes.
+    argues:
+      - {position: technology.nature.autonomous-force, in: {author: Kevin Tucker, title: "For Wildness and Anarchy", year: 2010}}
+
+  # ---------------- Christian anarchism ----------------
+  - id: thinker.tolstoy
+    name: Leo Tolstoy
+    born: 1828
+    died: 1910
+    region: Russia
+    traditions: [anarchism.christian]
+    summary: Russian novelist who after a religious crisis read the Sermon on the Mount as a command never to resist evil by force. He concluded that the state, resting on armies, courts and prisons, is incompatible with Christianity, and was excommunicated by the Orthodox Church in 1901.
+    argues:
+      - {position: violence.political.never, in: {author: Leo Tolstoy, title: "The Kingdom of God Is Within You", year: 1894}}
+      - {position: conscience.refusal.absolute-pacifism, in: {author: Leo Tolstoy, title: "The Kingdom of God Is Within You", year: 1894}}
+
+  - id: thinker.day
+    name: Dorothy Day
+    born: 1897
+    died: 1980
+    region: United States
+    traditions: [anarchism.christian]
+    summary: American journalist and former socialist who co-founded the Catholic Worker movement with Peter Maurin in 1933, with its newspaper, houses of hospitality and farms. She held to pacifism through the Second World War and was jailed repeatedly for civil disobedience.
+    argues:
+      - {position: conscience.refusal.absolute-pacifism, in: {author: Dorothy Day, title: "Our Country Passes from Undeclared War to Declared War; We Continue Our Christian Pacifist Stand", year: 1942, note: "The Catholic Worker, January 1942"}}
+      - {position: religion.public.prophetic-church, in: {author: Dorothy Day, title: "The Long Loneliness", year: 1952}}
+      - {position: care.work.community-reciprocity, in: {author: Dorothy Day, title: "Loaves and Fishes", year: 1963, note: "the houses of hospitality"}}

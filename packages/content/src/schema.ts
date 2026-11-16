@@ -442,6 +442,13 @@ export const TensionRule = z.object({
   id: Id,
   type: z.enum(TENSION_TYPES),
   between: z.array(Id).min(1), // positions (or practice/situation ids) in tension
+  /** rules expressing one contradiction share a family: one challenge per family per session */
+  family: z.string().optional(),
+  /**
+   * position-consciousness rules: the holdings that defy what the frame predicts for the situation in `when`.
+   * An anomaly is reported only when one of them is held; a holding the frame predicts is never an anomaly.
+   */
+  defies: z.array(Id).optional(),
   when: Cond,
   prompt: z.string().min(20),
   explain: z.string().min(20), // the instrument's plain account of the tension

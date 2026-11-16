@@ -82,6 +82,7 @@ nodes:
         cause: structures
         evidence:
           - {position: technology.nature.core-monopoly, w: 3}
+          - {position: ai.stake.core-rent, w: 2}
         next: [{if: {flag: {key: route, eq: open}}, to: arc.annotators.03a}, {to: arc.annotators.03b}]
       - id: wages
         text: Wages here are low, and the work goes wherever the wages are lowest. The profit is the difference.
@@ -182,7 +183,7 @@ nodes:
       - id: name-it
         text: Write down what it is. A machine built by the workers to replace the workers.
         evidence:
-          - {position: ai.risk.tool-of-capital, w: 3}
+          - {position: ai.stake.tool-of-capital, w: 3}
         consequence: The memo is accurate. Your manager asks you to rewrite it in a more constructive tone.
         next: arc.annotators.04
 
@@ -334,7 +335,7 @@ nodes:
     premises:
       - id: bubble
         text: The premise that anyone earned it. A valuation is a bet, not a fact.
-        evidence: [{position: technology.nature.neutral-tool, w: 1}]
+        evidence: [{position: ai.stake.overhyped, w: 1}]
     options:
       - id: founders
         text: The founders, the engineers and the investors who took the risk. Labelling is a commodity.
@@ -347,18 +348,20 @@ nodes:
         cause: structures
         evidence:
           - {position: exchange.unequal.value-chain-capture, w: 3}
+          - {position: automation.ownership.whole-chain-workers, w: 1}
         next: arc.annotators.07
       - id: chips
         text: Whoever owns the chips, the cloud and the patents. Everything else can be bought cheap.
         cause: structures
         evidence:
           - {position: technology.nature.core-monopoly, w: 3}
+          - {position: ai.stake.core-rent, w: 2}
         next: arc.annotators.07
       - id: maybe-right
         text: It may well end poverty. The money is a bet on that, and it might pay off for us too.
         cause: ideas
         evidence:
-          - {position: ai.risk.accelerate, w: 3}
+          - {position: ai.stake.accelerate, w: 3}
         next: arc.annotators.07
 
   - id: arc.annotators.07
@@ -375,7 +378,7 @@ nodes:
         evidence: [{position: cs.not-political.keep-head-down, w: 1}]
     options:
       - id: tool
-        text: A tool. Like any tool, it depends who holds it.
+        text: A tool. It depends how people use it.
         cause: ideas
         evidence:
           - {position: technology.nature.neutral-tool, w: 3}
@@ -383,19 +386,26 @@ nodes:
         text: A machine for owners to watch, cheapen and replace people like us.
         cause: structures
         evidence:
-          - {position: ai.risk.tool-of-capital, w: 3}
+          - {position: ai.stake.tool-of-capital, w: 3}
       - id: rent
         text: Something the rich countries own and we rent back, like the tea we grow and buy back in boxes.
         cause: structures
         evidence:
-          - {position: technology.nature.core-monopoly, w: 3}
+          - {position: ai.stake.core-rent, w: 3}
+          - {position: technology.nature.core-monopoly, w: 2}
       - id: progress
         text: Progress. It will take her further than it took me.
         cause: ideas
         evidence:
-          - {position: ai.risk.accelerate, w: 2}
+          - {position: ai.stake.accelerate, w: 2}
       - id: should-not
         text: Something people should not have made. A machine that talks like a person takes something only God gives.
         cause: divine
         evidence:
-          - {position: ai.risk.human-dignity, w: 3}
+          - {position: ai.stake.human-dignity, w: 3}
+      - id: owned
+        text: Something that does the work of a thousand of us. Whoever owns it decides whether that means shorter days for everyone or no jobs for us.
+        cause: interests
+        evidence:
+          - {position: technology.nature.forces-serve-owners, w: 3}
+          - {position: ai.stake.tool-of-capital, w: 1}

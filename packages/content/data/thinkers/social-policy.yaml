@@ -1,0 +1,289 @@
+# Thinkers: social policy, work, housing, health, debt, investment, patronage, strikes and refusal.
+# Written to give names to the positions on these problematics, rivals and materialist side alike.
+thinkers:
+  # ---------------- War work, strikes and refusal ----------------
+  - id: thinker.walzer
+    name: Michael Walzer
+    born: 1935
+    died: null
+    region: United States
+    traditions: [communitarianism, socdem.democratic-socialism]
+    summary: >
+      American political theorist and long-time co-editor of Dissent. He holds that each social good has its
+      own sphere and its own criteria of distribution, that membership in a political community is the first
+      good the community distributes, and that wars are judged by a shared moral language of just causes and
+      just conduct.
+    argues:
+      - {position: conscience.refusal.selective-objection, in: {author: Michael Walzer, title: "Obligations: Essays on Disobedience, War, and Citizenship", year: 1970}}
+      - {position: borders.migration.democratic-control, in: {author: Michael Walzer, title: "Spheres of Justice: A Defense of Pluralism and Equality", year: 1983, note: "chapter 2, Membership"}}
+
+  - id: thinker.wainwright
+    name: Hilary Wainwright
+    born: 1949
+    died: null
+    region: Britain
+    traditions: [socdem.democratic-socialism]
+    summary: >
+      British socialist feminist writer, co-author of Beyond the Fragments and founding editor of Red Pepper.
+      With Dave Elliott she documented the plan drawn up in 1976 by shop stewards at Lucas Aerospace to
+      convert the arms plants to socially useful products, and she argues for forms of democratic planning
+      that draw on the practical knowledge of workers.
+    argues:
+      - {position: conscience.refusal.convert-production, in: {author: Hilary Wainwright and Dave Elliott, title: "The Lucas Plan: A New Trade Unionism in the Making?", year: 1982}}
+
+  - id: thinker.dobbs
+    name: Farrell Dobbs
+    born: 1907
+    died: 1983
+    region: United States
+    traditions: [marxism.trotskyism]
+    summary: >
+      Coal-yard worker who became a leader of the 1934 Minneapolis Teamsters strikes run by Local 574 and its
+      Trotskyist organizers, then national secretary of the Socialist Workers Party. His four-volume history
+      of the Teamster struggles describes how the union organized the unemployed and the farmers into the
+      strike so that the employers could not use them to break it.
+    argues:
+      - {position: picket.line.win-the-scab, in: {author: Farrell Dobbs, title: Teamster Rebellion, year: 1972, note: "the 1934 strikes: the unemployed and the farmers drawn into the strike rather than recruited to break it"}}
+
+  # ---------------- Platform and informal work ----------------
+  - id: thinker.cant
+    name: Callum Cant
+    region: Britain
+    traditions: [marxism.autonomism]
+    summary: >
+      British writer and researcher who worked as a Deliveroo rider in Brighton and helped organize couriers
+      there. His workers' inquiry, in the operaista tradition, follows how riders paid by the drop built
+      networks across the app's isolation and struck without the official unions.
+    argues:
+      - {position: work.status.piece-wage, in: {author: Callum Cant, title: "Riding for Deliveroo: Resistance in the New Economy", year: 2019}}
+
+  - id: thinker.prassl
+    name: Jeremias Prassl
+    region: Germany / Britain
+    traditions: [liberalism.social]
+    summary: >
+      Professor of law at the University of Oxford who writes on employment law and the gig economy. He argues
+      that platforms are employers presented as marketplaces, and that most gig work falls within employment
+      law and its protections.
+    argues:
+      - {position: work.status.employees, in: {author: Jeremias Prassl, title: "Humans as a Service: The Promise and Perils of Work in the Gig Economy", year: 2018}}
+
+  - id: thinker.alan-krueger
+    name: Alan B. Krueger
+    born: 1960
+    died: 2019
+    region: United States
+    traditions: [liberalism.technocratic]
+    summary: >
+      Princeton labor economist and chair of the Council of Economic Advisers under Obama from 2011 to 2013.
+      With Seth Harris he proposed a new legal category of "independent worker" between employee and
+      contractor, with some protections, pooled benefits and a right to bargain collectively.
+    argues:
+      - {position: work.status.third-category, in: {author: Seth D. Harris and Alan B. Krueger, title: "A Proposal for Modernizing Labor Laws for Twenty-First-Century Work: The \"Independent Worker\"", year: 2015, note: "Hamilton Project discussion paper"}}
+
+  - id: thinker.de-soto
+    name: Hernando de Soto
+    born: 1941
+    died: null
+    region: Peru
+    traditions: [liberalism.classical]
+    summary: >
+      Peruvian economist who founded the Instituto Libertad y Democracia in Lima. He argues that the informal
+      vendors, builders and transport workers of the South are entrepreneurs kept outside the law by
+      mercantilist regulation, and that formal title to their property and businesses would unlock capital.
+    argues:
+      - {position: work.status.informal-entrepreneurs, in: {author: Hernando de Soto, title: "The Other Path: The Invisible Revolution in the Third World", year: 1986, note: "first published in Spanish as El otro sendero"}}
+
+  # ---------------- Savings, pensions and investment ----------------
+  - id: thinker.blackburn
+    name: Robin Blackburn
+    born: 1940
+    died: null
+    region: Britain
+    traditions: [socdem.democratic-socialism]
+    summary: >
+      British historian of New World slavery and long-time editor at New Left Review. In his work on pensions
+      he argues that pension funds are workers' deferred wages controlled by financial managers, and proposes
+      funds under social and worker control, financed by a levy on corporate shares on the model of Meidner.
+    argues:
+      - {position: investment.ethics.workers-capital, in: {author: Robin Blackburn, title: "Banking on Death, or Investing in Life: The History and Future of Pensions", year: 2002}}
+
+  - id: thinker.barghouti
+    name: Omar Barghouti
+    born: 1964
+    died: null
+    region: Palestine
+    traditions: [nationalism.palestinian]
+    summary: >
+      Palestinian activist, a founder of the Palestinian Campaign for the Academic and Cultural Boycott of
+      Israel in 2004 and of the Boycott, Divestment and Sanctions movement launched by Palestinian civil
+      society in 2005. He argues that, as with apartheid South Africa, boycott and divestment can force an end
+      to occupation, colonization and apartheid.
+    argues:
+      - {position: investment.ethics.divest, in: {author: Omar Barghouti, title: "Boycott, Divestment, Sanctions: The Global Struggle for Palestinian Rights", year: 2011}}
+      - {position: consumption.choice.organized-boycott, in: {author: Omar Barghouti, title: "Boycott, Divestment, Sanctions: The Global Struggle for Palestinian Rights", year: 2011}}
+
+  # ---------------- Patronage ----------------
+  - id: thinker.rose-ackerman
+    name: Susan Rose-Ackerman
+    born: 1942
+    died: null
+    region: United States
+    traditions: [liberalism.technocratic]
+    summary: >
+      Yale professor of law and political science who analyzes corruption with the tools of economics. She
+      argues that bribery and patronage arise where officials hold discretion over scarce benefits, and are
+      reduced by cutting that discretion, paying and selecting officials on merit, and holding them to account.
+    argues:
+      - {position: clientelism.patronage.corruption, in: {author: Susan Rose-Ackerman, title: "Corruption and Government: Causes, Consequences, and Reform", year: 1999}}
+
+  - id: thinker.alavi
+    name: Hamza Alavi
+    born: 1921
+    died: 2003
+    region: India / Pakistan / Britain
+    traditions: [marxism.dependency]
+    summary: >
+      Pakistani Marxist sociologist who analyzed the post-colonial state as overdeveloped in relation to the
+      classes of the society it rules, and the agrarian structure of Punjab. He argued that kinship and faction
+      ties, through which landlords mobilize their dependants, cut across peasant class solidarity and are a
+      form of class domination, not a survival of tradition.
+    argues:
+      - {position: clientelism.patronage.class-control, in: {author: Hamza Alavi, title: Peasant Classes and Primordial Loyalties, year: 1973, note: "Journal of Peasant Studies 1(1)"}}
+
+  - id: thinker.james-buchanan
+    name: James M. Buchanan
+    born: 1919
+    died: 2013
+    region: United States
+    traditions: [liberalism.chicago]
+    summary: >
+      Founder with Gordon Tullock of the Virginia school of public choice, awarded the economics Nobel in 1986.
+      He analyzed politicians and officials as self-interested agents trading votes and favors, and argued
+      for constitutional limits on what majorities and the state can hand out.
+    argues:
+      - {position: clientelism.patronage.big-state-spoils, in: {author: James M. Buchanan and Gordon Tullock, title: "The Calculus of Consent: Logical Foundations of Constitutional Democracy", year: 1962, note: "vote-trading and logrolling over particular benefits"}}
+
+  # ---------------- Housing ----------------
+  - id: thinker.colin-ward
+    name: Colin Ward
+    born: 1924
+    died: 2010
+    region: Britain
+    traditions: [anarchism.communist]
+    summary: >
+      British anarchist writer and editor of the journal Anarchy, in the line of Kropotkin. He wrote on
+      squatters, self-builders, allotments and tenant control, arguing that people housing themselves and
+      running their own dwellings do better than either landlords or the council bureaucracy.
+    argues:
+      - {position: housing.tenure.occupy-empty, in: {author: Colin Ward, title: "Housing: An Anarchist Approach", year: 1976}}
+
+  - id: thinker.rolnik
+    name: Raquel Rolnik
+    born: 1956
+    died: null
+    region: Brazil
+    traditions: [socdem.democratic-socialism]
+    summary: >
+      Brazilian architect and urbanist at the University of São Paulo, national secretary for urban programs
+      in Lula's Ministry of Cities, and UN Special Rapporteur on adequate housing from 2008 to 2014. She argues
+      that the export of homeownership and mortgage finance has turned housing from a right into a financial
+      asset, at the cost of evictions from Rio to Kazakhstan.
+    argues:
+      - {position: housing.tenure.right-to-housing, in: {author: Raquel Rolnik, title: "Urban Warfare: Housing under the Empire of Finance", year: 2019, note: "first published in Portuguese as Guerra dos lugares, 2015"}}
+
+  # ---------------- Health ----------------
+  - id: thinker.bevan
+    name: Aneurin Bevan
+    born: 1897
+    died: 1960
+    region: Wales
+    traditions: [socdem.labourism]
+    summary: >
+      Welsh miner and union militant who became minister of health in the Attlee government and founded the
+      National Health Service in 1948, nationalizing the hospitals and making care free at the point of use.
+      He resigned in 1951 over charges for teeth and spectacles introduced to pay for rearmament.
+    argues:
+      - {position: health.care.national-service, in: {author: Aneurin Bevan, title: In Place of Fear, year: 1952}}
+
+  - id: thinker.laurell
+    name: Asa Cristina Laurell
+    born: 1943
+    died: null
+    region: Sweden / Mexico
+    traditions: [socdem.democratic-socialism]
+    summary: >
+      Swedish-born Mexican physician and sociologist of Latin American social medicine, which studies health
+      and disease as social and class processes; a founder of ALAMES in 1984. As Mexico City's health
+      secretary from 2000 to 2006 she built free, tax-funded services and medicines for the uninsured, against
+      federal reforms based on voluntary insurance and fees.
+    argues:
+      - {position: health.care.national-service, in: {author: Asa Cristina Laurell, title: "What Does Latin American Social Medicine Do When It Governs? The Case of the Mexico City Government", year: 2003, note: "American Journal of Public Health 93(12)"}}
+
+  - id: thinker.birdsall
+    name: Nancy Birdsall
+    born: 1946
+    died: null
+    region: United States
+    traditions: [liberalism.technocratic]
+    summary: >
+      Economist at the World Bank and later founding president of the Center for Global Development. Her
+      co-authored World Bank study of 1987 recommended charging users of public health services in poor
+      countries, with exemptions for the poorest, together with insurance and decentralization.
+    argues:
+      - {position: health.care.user-fees, in: {author: "John Akin, Nancy Birdsall and David de Ferranti", title: "Financing Health Services in Developing Countries: An Agenda for Reform", year: 1987, note: "World Bank policy study"}}
+
+  - id: thinker.beito
+    name: David T. Beito
+    born: 1956
+    died: null
+    region: United States
+    traditions: [libertarianism.minarchist]
+    summary: >
+      American historian at the University of Alabama who studied fraternal and mutual aid societies. He
+      argues that lodges providing sickness insurance, doctors and orphanages to working people were
+      displaced by the welfare state and by organized medicine, not by their own failure.
+    argues:
+      - {position: health.care.mutual-aid, in: {author: David T. Beito, title: "From Mutual Aid to the Welfare State: Fraternal Societies and Social Services, 1890–1967", year: 2000}}
+
+  # ---------------- Household debt ----------------
+  - id: thinker.yunus
+    name: Muhammad Yunus
+    born: 1940
+    died: null
+    region: Bangladesh
+    traditions: [liberalism.technocratic]
+    summary: >
+      Bangladeshi economist who founded the Grameen Bank, which lends small sums to groups of poor borrowers,
+      mostly women, and shared the 2006 Nobel Peace Prize with it. He proposes "social business" in place of
+      both charity and profit-maximizing firms, and in 2024 became head of Bangladesh's interim government.
+    argues:
+      - {position: debt.household.microcredit, in: {author: Muhammad Yunus, title: "Creating a World Without Poverty: Social Business and the Future of Capitalism", year: 2007}}
+
+  - id: thinker.elizabeth-warren
+    name: Elizabeth Warren
+    born: 1949
+    died: null
+    region: United States
+    traditions: [liberalism.progressive]
+    summary: >
+      Harvard bankruptcy law professor who proposed and set up the Consumer Financial Protection Bureau, and
+      a senator for Massachusetts from 2013. She argues that middle-class families go bankrupt from fixed
+      costs of housing, health and schooling, and that lending to households needs a regulator.
+    argues:
+      - {position: debt.household.regulate-and-relieve, in: {author: Elizabeth Warren and Amelia Warren Tyagi, title: "The Two-Income Trap: Why Middle-Class Parents Are Going Broke", year: 2003}}
+
+  # ---------------- Intellectual property ----------------
+  - id: thinker.posner
+    name: Richard A. Posner
+    born: 1939
+    died: null
+    region: United States
+    traditions: [liberalism.chicago]
+    summary: >
+      Judge of the U.S. Court of Appeals for the Seventh Circuit from 1981 to 2017 and a founder of the
+      economic analysis of law. He treats legal rules as means to efficiency, and with William Landes argued
+      that intellectual property should be set to balance incentives to create against the costs of
+      monopoly.
+    argues:
+      - {position: property.ip.incentive-bargain, in: {author: William M. Landes and Richard A. Posner, title: The Economic Structure of Intellectual Property Law, year: 2003}}

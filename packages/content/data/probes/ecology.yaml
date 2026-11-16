@@ -7,7 +7,7 @@ nodes:
       A company wants to clear forty hectares of mangrove on the coast of Ecuador for shrimp ponds. It
       promises two hundred jobs. The fishing families say the mangrove is where the fish breed. You sit on
       the provincial board that grants the permit.
-    why: This asks whether you think nature has value in itself, and what kind of value.
+    why: This asks whose you think the coast is, and what you think nature is for.
     options:
       - id: use
         text: Grant it. Land is there to feed and employ people, and two hundred jobs is a lot of families.
@@ -26,10 +26,17 @@ nodes:
         evidence: [{position: nature.value.creation, w: 3}]
       - id: metabolism
         text: The question is who works the coast, and for whom. Shrimp for export strips it; worked by its own people, it can last.
-        evidence: [{position: nature.value.metabolism, w: 3}]
+        evidence:
+          - {position: nature.value.metabolism, w: 3}
+          - {position: nature.value.free-gift-of-subsistence, w: 1}
       - id: homeland
-        text: Refuse. This coast belongs to the people who have always lived on it. Outsiders don't get to sell it.
+        text: Refuse. This coast is the soil of our blood. Neither foreign companies nor the migrants who come for their jobs belong on it.
         evidence: [{position: nature.value.homeland-of-a-people, w: 3}]
+      - id: subsistence
+        text: Refuse. The mangrove feeds these families for nothing, and the women who gather shellfish in it do work no company counts. The shrimp ponds would take both for free.
+        evidence:
+          - {position: nature.value.free-gift-of-subsistence, w: 3}
+          - {position: nature.value.natural-capital, w: -1}
 
   - id: probe.nature.value.beetle
     type: reason
@@ -37,7 +44,7 @@ nodes:
     text: >
       A rare beetle, found in one valley and nowhere else, is the only thing stopping a highway that would cut
       an hour off thousands of commutes. Nobody eats it, sells it or has ever seen it. Should it count?
-    why: This asks what value, if any, you think nature has in itself.
+    why: This asks what value, if any, you think nature has in itself, and who pays when it is counted or left out.
     options:
       - id: itself
         text: Yes. It has value in itself, whether anyone ever sees it or not.
@@ -64,9 +71,13 @@ nodes:
         cause: structures
         evidence: [{position: nature.value.metabolism, w: 3}]
       - id: soil
-        text: It counts because the valley is part of our homeland. A people that paves its land loses itself.
+        text: It counts because the valley is our people's blood and soil. A nation that paves its land and fills it with strangers dies.
         cause: nature
         evidence: [{position: nature.value.homeland-of-a-people, w: 3}]
+      - id: unpaid
+        text: The valley's water and soil feed the farms below for nothing, and the women who work those farms are paid nothing either. The highway's sums count neither. That's how the cheap hour gets made.
+        cause: structures
+        evidence: [{position: nature.value.free-gift-of-subsistence, w: 3}]
 
   - id: probe.nature.value.voices
     type: voices
@@ -78,7 +89,7 @@ nodes:
       - {name: "Apai Jugah, a longhouse headman", says: "The forest is our grandmother. We take from her and we give back. The company only takes."}
       - {name: "A forestry economist", says: "If carbon credits paid more than timber, the forest would stand. Put a price on it and the market will save it."}
       - {name: "A district officer", says: "People here need schools and a clinic. Forests are for people, and the road brings both."}
-    why: This asks what value you think nature has, through three people on one river.
+    why: This asks whose you think the forest is and what it is for, through three people on one river.
     options:
       - id: headman
         text: The headman. The forest is family. You take from it and you give back.
@@ -105,9 +116,15 @@ nodes:
         cause: structures
         evidence: [{position: nature.value.metabolism, w: 3}]
       - id: blood
-        text: The headman is closest for another reason. Land is a people's blood. Lose it and you lose the people.
+        text: All three miss that a forest belongs to one people, by blood. Keep the loggers out, and the newcomers too.
         cause: nature
         evidence: [{position: nature.value.homeland-of-a-people, w: 3}]
+      - id: women
+        text: The headman is closest, but ask the women. They gather, plant and feed the longhouse from the forest, unpaid. The company takes the forest and their work for free.
+        cause: structures
+        evidence:
+          - {position: nature.value.free-gift-of-subsistence, w: 3}
+          - {position: nature.value.kin-and-relation, w: 1}
 
   # ---------------- energy.transition ----------------
   - id: probe.energy.transition.budget
@@ -219,7 +236,7 @@ nodes:
     text: >
       The government wants a back door into every encrypted messaging app, to catch traffickers and
       terrorists. The app makers say they'll pull out of the country instead. You're asked to testify.
-    why: This asks whether you think technology is a tool, a weapon, a liberation or a threat.
+    why: This asks whose instrument you think a technology is, and whose interests are built into it.
     options:
       - id: escape
         text: Against. Encryption is the one thing that lets ordinary people keep the state out. Code beats law.
@@ -242,6 +259,9 @@ nodes:
       - id: liberation
         text: Against. Every new tool that spreads knowledge and speech has freed people. Don't break this one.
         evidence: [{position: technology.nature.liberation, w: 3}]
+      - id: owners
+        text: The fight isn't over the code. Put the networks and the platforms in public hands, and the same encryption serves the people who use it.
+        evidence: [{position: technology.nature.forces-serve-owners, w: 3}]
 
   - id: probe.technology.nature.warehouse
     type: explanation
@@ -249,7 +269,7 @@ nodes:
     text: >
       Warehouse pickers in Poland carry scanners that tell them the next shelf and time every step. Output per
       worker has doubled in ten years; pay has not. Workers say the scanner is the boss. What is going on?
-    why: This asks what you think technology is, and what kind of cause you reach for.
+    why: This asks whose instrument you think a technology is, whose interests are built into it, and what kind of cause you reach for.
     options:
       - id: neutral
         text: A tool used badly. The same scanner could make the work easier with different management.
@@ -278,7 +298,13 @@ nodes:
       - id: exit
         text: Learn to code. The same technology that tracks the picker lets anyone build a business from a laptop.
         cause: individuals
-        evidence: [{position: technology.nature.code-escapes-control, w: 3}]
+        evidence: [{position: automation.ownership.adapt-or-lose, w: 3}]
+      - id: owned
+        text: The scanner really did double what a picker can do. That's progress, and the owners pocket it. The same scanner in a warehouse the workers own means a shorter shift.
+        cause: interests
+        evidence:
+          - {position: technology.nature.forces-serve-owners, w: 3}
+          - {position: technology.nature.built-in-politics, w: -1}
 
   - id: probe.technology.nature.voices
     type: voices
@@ -290,7 +316,7 @@ nodes:
       - {name: "Mama Wanjiru, a shopkeeper", says: "I used to hide cash under the mattress. Now I save, borrow and send money to my son in a second. It freed me."}
       - {name: "A loan officer turned critic", says: "Then came the app lenders. Half the village owes money at rates nobody would accept face to face."}
       - {name: "A software developer in Nairobi", says: "We built the platform, but the patents, the cloud and the profits mostly sit abroad."}
-    why: This asks what you think technology is, through three people and one invention.
+    why: This asks whose instrument you think a technology is, and whose interests are built into it, through three people and one invention.
     options:
       - id: freed
         text: Mama Wanjiru. Technology is how people free themselves.
@@ -320,6 +346,10 @@ nodes:
         text: All three are inside the machine. Village life now runs on the phone, and nobody chose that.
         cause: ideas
         evidence: [{position: technology.nature.autonomous-force, w: 3}]
+      - id: ownership
+        text: Mama Wanjiru and the developer are both right. The phone made everyone's money work harder; who owns the network decides who gets that.
+        cause: interests
+        evidence: [{position: technology.nature.forces-serve-owners, w: 3}]
 
   # ---------------- automation.ownership ----------------
   - id: probe.automation.ownership.port
@@ -355,6 +385,9 @@ nodes:
       - id: adapt
         text: Tell the young dockers to retrain now. Nobody stops this; look out for yourself.
         evidence: [{position: automation.ownership.adapt-or-lose, w: 3}]
+      - id: chain
+        text: Bargain along the whole chain, with the crane builders in China and the miners who dug the copper. Port by port, they play us off against each other.
+        evidence: [{position: automation.ownership.whole-chain-workers, w: 3}]
 
   - id: probe.automation.ownership.gains
     type: allocation
@@ -391,6 +424,9 @@ nodes:
         - id: training
           text: To personal retraining accounts, so each person can adapt
           evidence: [{position: automation.ownership.adapt-or-lose, w: 2}]
+        - id: chain
+          text: To the workers abroad who mine, assemble and label for the machines, through bargaining across the supply chain
+          evidence: [{position: automation.ownership.whole-chain-workers, w: 2}]
     options:
       - {id: done, text: Done}
 
@@ -438,3 +474,8 @@ nodes:
         text: All three are fighting the tide. The smart move is to learn the new tools before your neighbor does.
         cause: individuals
         evidence: [{position: automation.ownership.adapt-or-lose, w: 3}]
+      - id: chain
+        text: All three talk about Bangalore. The models were labelled in Nairobi and the chips dug out in Congo. Bargain with all of them or with none.
+        cause: structures
+        evidence: [{position: automation.ownership.whole-chain-workers, w: 3}]
+

@@ -1,0 +1,70 @@
+# Roots that several traditions fight over. The registry has no tradition that holds these
+# thinkers on their own terms; each gets the nearest honest fit, and the summary names who else claims them.
+thinkers:
+  - id: thinker.hobbes
+    name: Thomas Hobbes
+    born: 1588
+    died: 1679
+    region: England
+    traditions: [liberalism.classical]
+    summary: >
+      English philosopher of the civil war years. He held that without a common power people live in a war of
+      all against all, that individuals authorize an absolute sovereign to secure peace, and that their
+      obligation lasts only as long as the sovereign can protect them. Liberals claim him for the contract and
+      the individual, realists and defenders of strong states for sovereignty; he predates the liberal
+      tradition the registry assigns him.
+    argues:
+      - {position: state.nature.sovereign-order, in: {author: Thomas Hobbes, title: Leviathan, year: 1651}}
+      - {position: authority.legitimacy.protection, in: {author: Thomas Hobbes, title: Leviathan, year: 1651, note: "chapter 21: obligation lasts as long as the power by which the sovereign is able to protect"}}
+
+  - id: thinker.rousseau
+    name: Jean-Jacques Rousseau
+    born: 1712
+    died: 1778
+    region: Geneva / France
+    traditions: [liberalism.republican]
+    summary: >
+      Genevan writer who argued that private property and civilization bred inequality and dependence, and
+      that only a community ruled by the general will of citizens who make their own laws can make people
+      free. Jacobins, democrats and socialists took him as a founder; liberal critics such as Constant and
+      Talmon blamed him for revolutionary terror.
+    argues:
+      - {position: democracy.form.direct, in: {author: Jean-Jacques Rousseau, title: The Social Contract, year: 1762, note: "Book III, chapter 15: sovereignty cannot be represented"}}
+      - {position: equality.concept.relational, in: {author: Jean-Jacques Rousseau, title: The Social Contract, year: 1762, note: "Book II, chapter 11: no citizen rich enough to buy another, none so poor as to be forced to sell himself"}}
+      - {position: progress.idea.technical-not-moral, in: {author: Jean-Jacques Rousseau, title: Discourse on the Sciences and Arts, year: 1750}}
+
+  - id: thinker.hegel
+    name: G. W. F. Hegel
+    born: 1770
+    died: 1831
+    region: Germany
+    traditions: [liberalism.classical]
+    summary: >
+      German philosopher who held that history is the progress of spirit's consciousness of its own liberty, advancing
+      through conflict, and that this liberty is made actual in the modern constitutional state above civil
+      society. His heirs split: the Right Hegelians defended the Prussian state, the Young Hegelians and Marx
+      turned his dialectic against it, and Italian Fascism's philosopher Gentile built on his idea of the
+      state. The registry has no Hegelian tradition; he is placed with the constitutional liberals of the
+      Prussian reform era.
+    argues:
+      - {position: rights.basis.membership, in: {author: G. W. F. Hegel, title: Elements of the Philosophy of Right, year: 1820, note: "abstract right becomes actual only in the ethical life of the state"}}
+      - {position: progress.idea.through-contradiction, in: {author: G. W. F. Hegel, title: Lectures on the Philosophy of History, year: 1837, note: "history as the slaughter-bench on which the happiness of peoples is sacrificed; published posthumously from lectures of 1822–31"}}
+      - {position: state.nature.organic-nation, in: {author: G. W. F. Hegel, title: Elements of the Philosophy of Right, year: 1820, note: "the state as the actuality of the ethical idea, an organism above the particular interests of civil society"}}
+
+  - id: thinker.nietzsche
+    name: Friedrich Nietzsche
+    born: 1844
+    died: 1900
+    region: Germany / Switzerland
+    traditions: [conservatism.reactionary]
+    summary: >
+      German philologist and philosopher who attacked Christianity, democratic equality and socialism as forms of a
+      slave morality born of resentment, and held that every elevation of humanity has been the work of an
+      aristocratic society. His sister edited his papers for German nationalists and the Nazis claimed him;
+      anarchists, existentialists and the postwar left read him as a critic of all authority. The registry
+      places this aristocratic radical, who despised the throne-and-altar right, with reaction as the
+      nearest fit.
+    argues:
+      - {position: equality.concept.natural-hierarchy, in: {author: Friedrich Nietzsche, title: Beyond Good and Evil, year: 1886, note: "section 257"}}
+      - {position: morality.basis.will-of-the-strong, in: {author: Friedrich Nietzsche, title: On the Genealogy of Morality, year: 1887, note: "first essay, the slave revolt in morality"}}
+      - {position: history.elites.rule-of-the-best, in: {author: Friedrich Nietzsche, title: Beyond Good and Evil, year: 1886, note: "section 258: a good aristocracy accepts the sacrifice of countless people for its sake"}}

@@ -179,7 +179,7 @@ problematics:
         sources:
           - {author: Ronald Coase, title: "The Problem of Social Cost", year: 1960}
           - {author: Terry L. Anderson and Donald R. Leal, title: Free Market Environmentalism, year: 1991}
-          - {author: Garrett Hardin, title: "The Tragedy of the Commons", year: 1968}
+          - {author: Garrett Hardin, title: "The Tragedy of the Commons", year: 1968, note: "named private property and state coercion as the two remedies"}
         traditions:
           defining: [libertarianism.minarchist]
           typical: [libertarianism.ancap, liberalism.chicago, liberalism.austrian, libertarianism.objectivist]
@@ -284,12 +284,14 @@ problematics:
         tags: [worldview, deep-ecology]
         analysis:
           gains: [professional-managerial]
-          pays: []
+          pays: [peasantry, peripheral-workers]
           mechanism: >
             Locating the cause in a shared human worldview spreads responsibility evenly across owners and
             workers, rich and poor countries, so no class is made to pay and remedies run through changes of
-            attitude and lifestyle chosen mainly by educated core consumers.
-          drain: none
+            attitude and lifestyle chosen mainly by educated core consumers; and by charging the South's
+            peasants with the same "attitude" as the core's owners it removes the case for payment from North
+            to South.
+          drain: sustains
           law_of_value: none
           disputed: >
             Some materialists (Merchant, Moore) argue that the worldview of mastery was itself produced by
@@ -395,9 +397,12 @@ problematics:
   - id: growth.ecology
     domain: ecology
     layer: horizon
-    question: Green growth, ecomodernism, degrowth, ecosocialism or deep ecology?
-    plain: To stop wrecking the planet, should the economy keep growing, grow differently, or shrink, and who decides?
-    short: growth and ecology
+    question: Who decides what is produced, and should production grow or shrink?
+    plain: >-
+      Whoever owns the oil fields, the mines, the farms and the factories decides today what gets made and how
+      much. To stop wrecking the planet, should production keep growing, grow in other directions, or shrink,
+      and who should decide: investors, governments, workers, or the communities that live with the damage?
+    short: who decides what is produced and how much
     importance: 3
     region: ecology
     positions:
@@ -473,7 +478,7 @@ problematics:
         sources:
           - {author: "John Asafu-Adjaye, Linus Blomqvist, Stewart Brand and others", title: An Ecomodernist Manifesto, year: 2015}
           - {author: Stewart Brand, title: "Whole Earth Discipline: An Ecopragmatist Manifesto", year: 2009}
-          - {author: Leigh Phillips, title: "Austerity Ecology and the Collapse-Porn Addicts: A Defence of Growth, Progress, Industry and Stuff", year: 2015}
+          - {author: Ted Nordhaus and Michael Shellenberger, title: "Break Through: From the Death of Environmentalism to the Politics of Possibility", year: 2007}
           - {author: Michael Shellenberger, title: "Apocalypse Never: Why Environmental Alarmism Hurts Us All", year: 2020}
         traditions:
           defining: [ecology.ecomodernism]
@@ -494,9 +499,9 @@ problematics:
           drain: sustains
           law_of_value: extends
           disputed: >
-            Ecomodernist socialists (Huber, Phillips) argue public ownership of abundant energy is the
-            winning workers' program; ecosocialists (Foster, Saito) answer that abundance under capital
-            only accelerates throughput.
+            The ecomodernist left (Huber, Phillips) shares the goal of abundance but holds that it can only be
+            built by taking energy out of private hands and planning it publicly; ecosocialists
+            (Foster, Saito) answer that abundance under capital only accelerates throughput.
 
       - id: growth.ecology.degrowth
         label: "Degrowth: rich countries shrink their use of energy and materials"
@@ -524,10 +529,9 @@ problematics:
           - {author: Jason Hickel, title: "Less Is More: How Degrowth Will Save the World", year: 2020}
           - {author: "Giacomo D'Alisa, Federico Demaria and Giorgos Kallis (eds.)", title: "Degrowth: A Vocabulary for a New Era", year: 2014}
           - {author: Serge Latouche, title: Petit traité de la décroissance sereine, year: 2007, note: "English: Farewell to Growth (2009)"}
-          - {author: Kohei Saito, title: "Hitoshinsei no 'Shihonron'", year: 2020, note: "English: Slow Down: The Degrowth Manifesto (2024)"}
         traditions:
-          defining: [ecology.degrowth, marxism.degrowth-communism]
-          typical: [anarchism.communalism, anarchism.green, religious.engaged-buddhism, nationalism.gandhian]
+          defining: [ecology.degrowth]
+          typical: [marxism.degrowth-communism, anarchism.communalism, anarchism.green, religious.engaged-buddhism, nationalism.gandhian]
           contested: [marxism.ecosocialism, ecology.environmental-justice, ecology.deep-ecology]
           rejects: [ecology.green-growth, ecology.ecomodernism, technology.e-acc, liberalism.chicago, conservatism.right-populism]
         presupposes: [ecology.crisis-cause.capital-accumulation]
@@ -573,16 +577,16 @@ problematics:
         sources:
           - {author: Joel Kovel and Michael Löwy, title: An Ecosocialist Manifesto, year: 2001}
           - {author: John Bellamy Foster, title: "The Ecological Revolution: Making Peace with the Planet", year: 2009}
-          - {author: Matthew T. Huber, title: "Climate Change as Class War: Building Socialism on a Warming Planet", year: 2022}
+          - {author: Michael Löwy, title: "Ecosocialism: A Radical Alternative to Capitalist Catastrophe", year: 2015}
           - {author: Andreas Malm, title: "Corona, Climate, Chronic Emergency: War Communism in the Twenty-First Century", year: 2020}
         traditions:
           defining: [marxism.ecosocialism]
           typical: [socdem.democratic-socialism, marxism.trotskyism, marxism.ml, religious.liberation-theology, nationalism.bolivarianism]
           contested: [marxism.degrowth-communism, marxism.scc, ecology.degrowth]
           rejects: [ecology.green-growth, liberalism.austrian, liberalism.chicago, libertarianism.minarchist]
-        presupposes: [ecology.crisis-cause.capital-accumulation, allocation.mechanism.central-planning]
+        presupposes: [ecology.crisis-cause.capital-accumulation, allocation.mechanism.participatory-planning]
         excludes: [growth.ecology.green-growth, growth.ecology.growth-is-the-cure]
-        tension: [growth.ecology.degrowth, growth.ecology.ecomodernism]
+        tension: [growth.ecology.degrowth, growth.ecology.ecomodernism, growth.ecology.socialist-abundance, growth.ecology.degrowth-communism]
         tags: [planning, public-ownership]
         analysis:
           gains: [core-workers, peripheral-workers, peasantry, reserve-army]
@@ -596,6 +600,118 @@ problematics:
           disputed: >
             Whether core ecosocialist programs reduce the drain depends on how they source minerals and price
             Southern exports: Hickel and Third Worldists press this point against national Green New Deals.
+          consciousness: hegemonic
+
+      - id: growth.ecology.socialist-abundance
+        label: Socialize energy and build clean abundance for working people
+        claim: Energy and heavy industry should be taken out of private hands and run publicly, to build clean power on a scale that gives working people more, not less, in cheap electricity, housing, transit and secure jobs.
+        voiced: "The problem isn't that workers consume too much. It's that capital owns the power plants. Socialize energy, build it big, and promise people more."
+        you: You think energy should be taken out of private hands and built on a huge scale, so that working people get more security and comfort while emissions fall.
+        because: >
+          Most emissions are decided where production is owned, in power plants, steel mills, cement works and
+          fertilizer plants, not in the shopping baskets of workers who control neither their wages nor their
+          heating. Private owners will not build clean power fast enough, because cheap, abundant electricity
+          earns thin and uncertain returns. A public build-out, like the rural electrification and public power
+          programs of the twentieth century, can cut emissions and deliver material gains in the same stroke. A
+          politics of footprints, sacrifice and less speaks to the educated middle strata and repels the
+          workers in energy, construction and industry whose organized power is the only force able to beat the
+          owners of fossil capital.
+        against:
+          - from: marxism.degrowth-communism
+            text: >
+              Abundance in the core means more copper, lithium and land taken from the South. Every expansion of
+              the productive forces under any owner has turned efficiency into more throughput; a socialism that
+              promises the rich countries more stuff repeats the rift it claims to close.
+          - from: marxism.third-worldism
+            text: >
+              A national program for the comfort of core workers, built with Southern minerals bought at
+              world prices, is social imperialism with solar panels. Ask who mines the cobalt for the public grid.
+        sources:
+          - {author: Matthew T. Huber, title: "Climate Change as Class War: Building Socialism on a Warming Planet", year: 2022}
+          - {author: Leigh Phillips, title: "Austerity Ecology and the Collapse-Porn Addicts: A Defence of Growth, Progress, Industry and Stuff", year: 2015}
+          - {author: Aaron Bastani, title: "Fully Automated Luxury Communism: A Manifesto", year: 2019}
+        traditions:
+          defining: [socdem.democratic-socialism]
+          typical: [marxism.ecosocialism, marxism.ml, marxism.trotskyism, socdem.labourism, technology.l-acc]
+          contested: [ecology.ecomodernism, marxism.scc, socdem.left-populism]
+          rejects: [ecology.degrowth, marxism.degrowth-communism, ecology.deep-ecology, anarchism.primitivist, liberalism.chicago]
+        presupposes: [ecology.crisis-cause.capital-accumulation]
+        excludes: [growth.ecology.degrowth, growth.ecology.deep-ecology, growth.ecology.degrowth-communism]
+        tension: [growth.ecology.ecosocialism, growth.ecology.southern-right-to-develop]
+        tags: [abundance, public-ownership, class]
+        analysis:
+          gains: [core-workers, reserve-army]
+          pays: [finance-capital, landed-capital, industrial-capital, peripheral-workers]
+          mechanism: >
+            Public ownership moves energy rents from shareholders and the owners of fossil reserves to public
+            budgets and lower bills, and a build-out at scale gives construction and industrial workers in the
+            core secure jobs; the copper, lithium and nickel it needs are still bought at world prices from
+            peripheral mines, so unless the program also changes those terms its material base is paid for by
+            mine workers and the communities around the pits.
+          drain: sustains
+          law_of_value: suspends
+          disputed: >
+            Huber holds that winning power for core workers is the precondition for changing the terms on which
+            the South supplies the transition; Hickel and Ajl answer that a program built on expanding core
+            material use cannot be squared with the South's claim on the remaining carbon and mineral space.
+          consciousness: class-economic
+
+      - id: growth.ecology.degrowth-communism
+        label: "Degrowth communism: abolish capital in order to slow down"
+        claim: Only an economy no longer run for profit can deliberately shrink, so slowing down in the rich countries requires taking production into common ownership, taking essentials out of the market, and planning democratically for use.
+        voiced: "Degrowth without communism is a wish, and communism without degrowth repeats the productivism that broke the planet. Slow down, and own it in common."
+        you: You think rich economies must produce less on purpose, and that this is only possible once production is owned in common and run for use rather than profit.
+        because: >
+          Capital cannot slow down: a firm that stops expanding is undercut and a stagnant capitalist economy
+          means unemployment and austerity, so degrowth inside capitalism is a recession. Capital also creates
+          scarcity on purpose, enclosing water, land, housing and knowledge so that people must work and buy;
+          restoring them as commons gives a different abundance that needs less output. Marx's late notebooks on
+          soil science and on communal village societies show him abandoning the faith that developing the
+          productive forces leads to freedom. The program follows: commons in place of commodities, a shorter
+          working week, priority to care and essential work, an end to the split between mental and manual
+          labor, and an end to the rich countries' way of life that pushes its costs onto the South.
+        against:
+          - from: socdem.democratic-socialism
+            text: >
+              Asking workers who cannot pay the rent to want less is a politics of the professional class.
+              Communism was always the promise of abundance; trading it for restraint will never build the
+              majority it needs.
+          - from: marxism.ml
+            text: >
+              Marx never renounced the development of the productive forces, and reading a conversion into his
+              reading notes is wishful philology. A socialism that refuses to grow leaves the South without the
+              steel, power and machines it lacks.
+          - from: liberalism.austrian
+            text: >
+              Take prices away from essentials and nobody knows what is scarce. A commons run without prices or
+              owners is rationing by committee, with queues where markets would have brought supply.
+        sources:
+          - {author: Kohei Saito, title: "Karl Marx's Ecosocialism: Capital, Nature, and the Unfinished Critique of Political Economy", year: 2017}
+          - {author: Kohei Saito, title: "Hitoshinsei no 'Shihonron'", year: 2020, note: "English: Slow Down: The Degrowth Manifesto (2024)"}
+          - {author: Kohei Saito, title: "Marx in the Anthropocene: Towards the Idea of Degrowth Communism", year: 2023}
+        traditions:
+          defining: [marxism.degrowth-communism]
+          typical: [ecology.degrowth, anarchism.communalism, marxism.autonomism]
+          contested: [marxism.ecosocialism, marxism.third-worldism]
+          rejects: [ecology.green-growth, ecology.ecomodernism, technology.e-acc, technology.l-acc, marxism.scc, liberalism.austrian]
+        presupposes: [ecology.crisis-cause.capital-accumulation, capitalism.nature.exploitation-profit]
+        excludes: [growth.ecology.green-growth, growth.ecology.ecomodernism, growth.ecology.growth-is-the-cure, growth.ecology.socialist-abundance]
+        tension: [growth.ecology.ecosocialism, growth.ecology.southern-right-to-develop]
+        tags: [degrowth, communism, commons]
+        analysis:
+          gains: [peripheral-workers, peasantry, reserve-army]
+          pays: [finance-capital, industrial-capital, landed-capital]
+          mechanism: >
+            Common ownership and decommodified essentials remove the owners' power to decide investment and
+            write off the paper value of fossil reserves, land and housing; cutting core throughput ends the
+            core's claim on the South's underpriced land, minerals and labor, while core workers trade cheap
+            commodity consumption for free housing, transport, care and time.
+          drain: breaks
+          law_of_value: abolishes
+          disputed: >
+            Foster's school accepts planned degrowth but rejects Saito's claim that Marx broke with his earlier
+            view of the productive forces; Huber argues the program has no base among the workers who would have
+            to carry it out.
           consciousness: hegemonic
 
       - id: growth.ecology.deep-ecology
@@ -736,6 +852,61 @@ problematics:
           drain: sustains
           law_of_value: extends
 
+      - id: growth.ecology.communities-decide
+        label: The people on the land decide, and the aim is living well, not growth
+        claim: Decisions over mines, dams, plantations and growth belong to the peasant, Indigenous and local communities who live on the land, and the aim is not growth or development but living well with the land, as in the Andean idea of buen vivir.
+        voiced: "You call it development. We call it the end of our river. Ask us first, and accept the answer no."
+        you: You think the people who live on the land, above all peasants and Indigenous communities, should decide whether mines, dams and plantations go ahead, and that the aim is living well, not growth.
+        because: >
+          Every growth plan on offer, green, red or ecomodern, is drawn up in a capital city and built on
+          someone else's land. The lithium of the Andean salt flats, the dams of the Narmada, the soy of the
+          Cerrado and the oil of the Niger Delta are taken from communities who get the damage and none of the
+          say, whoever owns the company. The same communities have kept forests and rivers alive for
+          centuries. Buen vivir in the Andes, village self-rule in Gandhi's India and the Zapatista
+          communities share a refusal of an economy measured by output, and a demand for self-government over
+          land and water. Free, prior and informed consent, written into international law in 1989 and 2007,
+          should be a veto, not a consultation.
+        against:
+          - from: marxism.ml
+            text: >
+              A thousand local vetoes cannot build a power grid or a railway, and the village that refuses the
+              mine still needs the hospital it would pay for. Without planning at the scale of the nation the
+              poor stay poor, and foreign capital bargains with each community alone.
+          - from: nationalism.developmental-state
+            text: >
+              What lies under a nation's soil belongs to the nation, not to whoever lives on top of it. A veto
+              for every locality hands the country's development to the best-organized group and to the
+              foreign foundations that fund it.
+        sources:
+          - {author: International Labour Organization, title: "Indigenous and Tribal Peoples Convention (No. 169)", year: 1989}
+          - {author: Arturo Escobar, title: "Encountering Development: The Making and Unmaking of the Third World", year: 1995}
+          - {author: Vandana Shiva, title: "Earth Democracy: Justice, Sustainability, and Peace", year: 2005}
+          - {author: United Nations, title: United Nations Declaration on the Rights of Indigenous Peoples, year: 2007}
+        traditions:
+          defining: [nationalism.indigenous-sovereignty]
+          typical: [nationalism.decolonial, zapatismo, ecology.environmental-justice, nationalism.gandhian, anarchism.green]
+          contested: [ecology.degrowth, marxism.mariategui, ecology.deep-ecology]
+          rejects: [nationalism.developmental-state, marxism.scc, ecology.ecomodernism, ecology.green-growth, liberalism.chicago]
+        presupposes: []
+        excludes: [growth.ecology.growth-is-the-cure]
+        tension: [growth.ecology.southern-right-to-develop, growth.ecology.socialist-abundance, growth.ecology.ecosocialism]
+        tags: [periphery, indigenous, post-extractivism]
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: [comprador-capital, industrial-capital, finance-capital]
+          mechanism: >
+            A community veto over extraction raises the cost and risk of mines, dams and plantations for the
+            firms and state agencies that supply raw materials to the core, and keeps land and water in the use
+            of those who work them; it does not by itself change world prices or who owns the industries that
+            use the ore, so supply can move to the next territory without a veto.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            Riofrancos shows the left governments of Ecuador and Bolivia and the movements that elected them
+            splitting on exactly this; Mariáteguist Marxists see the Andean commune as a base for socialism,
+            developmentalists see it as a brake on industrialization.
+          consciousness: class-economic
+
       - id: growth.ecology.home-and-stewardship
         label: Conserve the home, not plan the planet
         claim: Environmental care should be rooted in love of home, local custom and responsible ownership, not in global targets and international bureaucracies.
@@ -782,18 +953,82 @@ problematics:
             Some ecosocialists see an ally in conservative localism against agribusiness; others (Malm,
             Zetkin Collective) warn that attachment to homeland is the bridge to nationalist ecology.
 
+      - id: growth.ecology.sovereign-planned-south
+        label: "Delink and plan the South's own development; the North shrinks and pays"
+        claim: >-
+          The South should break with the core's terms of trade and finance, carry out land reform and food
+          sovereignty, and plan industry and energy under popular control for its own needs, neither as the
+          core's green quarry nor under a national bourgeoisie, while the rich countries cut their throughput
+          and pay their ecological debt.
+        voiced: "Our land feeds Europe's cattle and our mines charge its cars. Take them back, plan for our own people, and let the North cut its own use and pay what it owes."
+        you: You think the South should break with the core's terms of trade, give land to those who work it and plan its own development for its people, while the rich countries shrink their use and pay.
+        because: >
+          The South has exported cheap land, minerals and labor to the core for five centuries, and still
+          does: the soy and beef of the Amazon, the cobalt of Congo and the lithium of the Andes now go to
+          the North's green transition at world prices set there. Growth on those terms reproduces the drain,
+          and growth run by a national bourgeoisie in partnership with core firms reproduces it at home, as
+          the oil states and the mining booms showed. Degrowth in the North alone leaves the South's
+          dependence as it is. The alternative is to delink: subordinate trade and finance to a plan for
+          domestic needs, carry out land reform so that peasants feed the country instead of exporting to
+          pay debt, build industry and energy under popular control, and make the rich countries cut their
+          material use and pay the ecological debt.
+        against:
+          - from: nationalism.developmental-state
+            text: >
+              Korea, Taiwan and China grew by exporting into core markets and learning from foreign firms,
+              not by cutting themselves off. Delinking is a recipe for staying poor.
+          - from: liberalism.chicago
+            text: >
+              Every attempt at self-reliance, from Burma to Tanzania's villagization, cut incomes. Trade
+              according to comparative advantage is how poor countries got richer.
+          - from: ecology.degrowth
+            text: >
+              Planned industrialization in the South still adds carbon and mines. The planet cannot carry a
+              second round of heavy industry, whoever plans it.
+        sources:
+          - {author: Samir Amin, title: "Delinking: Towards a Polycentric World", year: 1985, note: "French original La déconnexion; English 1990"}
+          - {author: Max Ajl, title: "A People's Green New Deal", year: 2021}
+          - {author: Utsa Patnaik and Prabhat Patnaik, title: "Capital and Imperialism: Theory, History, and the Present", year: 2021}
+          - {author: Sam Moyo and Paris Yeros (eds.), title: "Reclaiming the Land: The Resurgence of Rural Movements in Africa, Asia and Latin America", year: 2005}
+        traditions:
+          defining: [marxism.third-worldism]
+          typical: [marxism.dependency, marxism.maoism, marxism.african-socialism, nationalism.pan-africanism, marxism.mariategui]
+          contested: [nationalism.developmental-state, ecology.degrowth]
+          rejects: [ecology.green-growth, ecology.ecomodernism, liberalism.chicago]
+        presupposes: [poverty.cause.drain]
+        excludes: [growth.ecology.green-growth, growth.ecology.growth-is-the-cure]
+        tension: [growth.ecology.southern-right-to-develop, growth.ecology.degrowth]
+        tags: [delinking, land-reform, periphery, planning]
+        analysis:
+          gains: [peasantry, peripheral-workers]
+          pays: [finance-capital, industrial-capital, comprador-capital, core-workers]
+          mechanism: >
+            Delinking and land reform take the South's land, minerals and labor out of supply to the core at
+            world prices and out of the hands of the comprador fractions that broker them; core firms and core
+            consumers lose the cheap inputs.
+          drain: breaks
+          law_of_value: suspends
+          disputed: >
+            Developmental-state economists point to East Asian export growth; Amin answered that Korea and
+            Taiwan grew on Cold War aid and land reform, and that China's delinked decades built the base it
+            later opened.
+          consciousness: hegemonic
+
   # ------------------------------------------------------------------
   - id: population.question
     domain: ecology
     layer: analysis
-    question: Is population the problem?
-    plain: Are there too many people on earth, too few being born, or is the number of people the wrong question?
+    question: Who is counted as too many, and who pays for the answer?
+    plain: >-
+      Some say there are too many people for the planet, some that too few children are being born, some that
+      "surplus" people are made by how land and work are owned. Whose births and whose numbers get blamed, and
+      who carries the cost of the policy that follows?
     short: the population question
     importance: 2
     region: ecology
     positions:
       - id: population.question.too-many
-        label: Yes, there are too many people
+        label: There are too many people for the planet
         claim: Human numbers have outgrown what the earth can support for long, and the world should bring births down by choice before nature does it by famine and collapse.
         voiced: "Whatever your cause, it's a lost cause without population control."
         you: You think there are too many people for the planet and that the world should actively bring birth rates down.
@@ -1011,8 +1246,10 @@ problematics:
           mechanism: >
             Pronatalist policy secures a future labor supply and housing demand for employers and property
             owners, and puts the unpaid work of raising it on families, above all on women; where it is joined
-            to closed borders it frames the shortage as a national rather than a class question.
-          drain: none
+            to closed borders it frames the shortage as a national rather than a class question. Where the gap
+            is filled by migration, the core takes adult workers whose upbringing and training the periphery
+            paid for, a drain of care and skill.
+          drain: sustains
           law_of_value: none
           disputed: >
             Social reproduction theorists (Bhattacharya) read the birth-rate panic as capital's worry about
@@ -1090,8 +1327,9 @@ problematics:
               Births fall by themselves when land reform, pensions and women's work arrive. Coercion treats
               the effect as the cause and lands on the poorest families.
         sources:
-          - {author: Susan Greenhalgh, title: "Just One Child: Science and Policy in Deng's China", year: 2008}
-          - {author: Matthew Connelly, title: "Fatal Misconception: The Struggle to Control World Population", year: 2008}
+          - {author: Song Jian and Yu Jingyuan, title: Population System Control, year: 1988, note: "the cybernetic case behind China's birth-planning targets"}
+          - {author: Susan Greenhalgh, title: "Just One Child: Science and Policy in Deng's China", year: 2008, note: "a critic; traces the rule to Song Jian's projections"}
+          - {author: Matthew Connelly, title: "Fatal Misconception: The Struggle to Control World Population", year: 2008, note: "a critic of coercive population control"}
         traditions:
           defining: []
           typical: [marxism.scc, nationalism.developmental-state, liberalism.technocratic, technology.technocracy]
@@ -1161,8 +1399,11 @@ problematics:
   - id: climate.justice
     domain: ecology
     layer: horizon
-    question: Who owes what for climate change?
-    plain: The heating was caused by some and is suffered by others. Who should pay, and to whom?
+    question: Who owes for the heating, and how is the debt settled?
+    plain: >-
+      Most of the carbon was burned in the industrial core, by firms whose owners grew rich on it; most of the
+      damage falls on the South and on the poor. Who should pay, to whom, and in what: money, cuts, land, or
+      control of the fuel itself?
     short: climate justice
     importance: 2
     region: ecology
@@ -1311,6 +1552,56 @@ problematics:
             Hickel and Third Worldists accept the class focus but insist that most core workers fall in the
             global top fifth of emitters; Huber replies that this splits the class that must win the transition.
           consciousness: class-economic
+
+      - id: climate.justice.expropriate-fossil-capital
+        label: No payment settles it while the same firms own the fuel; take them over
+        claim: Taxes and transfers leave the oil, gas and coal in the hands of firms whose value depends on burning it, so the debt can only be settled by taking fossil companies into public ownership, winding down their extraction and turning their assets to repair.
+        voiced: "You cannot tax a company into not being an oil company. Nationalize them, shut the wells, and put the engineers to work pulling carbon back out."
+        you: You think the fossil fuel companies must be taken out of private hands and wound down, because no tax or payment stops owners from burning what they own.
+        because: >
+          The proven reserves of the oil, gas and coal companies, private and state-owned, hold several times
+          more carbon than can be burned within any safe limit, and their share prices count on burning it. A
+          tax or a liability suit is a cost they pass on or fight for decades; a payment to the South leaves the
+          wells open. Only an owner who does not need the profit can decide to leave the fuel underground. Taking
+          the companies over, as states took over railways, mines and banks in emergencies, lets the public
+          write off the reserves, guarantee the workers' pay, and turn the firms' engineers and cash to carbon
+          removal and to repair in the places that were damaged most.
+        against:
+          - from: liberalism.chicago
+            text: >
+              Nationalized oil companies are already the largest producers on earth, from Saudi Aramco to
+              Pemex, and they drill as hard as any private firm. Changing the owner does not change the demand.
+          - from: marxism.third-worldism
+            text: >
+              Nationalizing Exxon and Total in the North turns the core's fossil rent into core state revenue.
+              The debt to the South is still unpaid unless the proceeds and the technology flow there.
+        sources:
+          - {author: Andreas Malm, title: "Corona, Climate, Chronic Emergency: War Communism in the Twenty-First Century", year: 2020}
+          - {author: Andreas Malm and Wim Carton, title: "Seize the Means of Carbon Removal: The Political Economy of Direct Air Capture", year: 2021, note: Historical Materialism}
+          - {author: Matthew T. Huber, title: "Climate Change as Class War: Building Socialism on a Warming Planet", year: 2022}
+        traditions:
+          defining: [marxism.ecosocialism]
+          typical: [marxism.leninism, marxism.trotskyism, marxism.ml, socdem.democratic-socialism, marxism.degrowth-communism]
+          contested: [marxism.third-worldism, socdem.left-populism, ecology.environmental-justice]
+          rejects: [liberalism.chicago, libertarianism.minarchist, ecology.green-growth, conservatism.right-populism]
+        presupposes: [ecology.crisis-cause.capital-accumulation, capitalism.nature.exploitation-profit]
+        excludes: [climate.justice.no-inherited-debt]
+        tension: [climate.justice.the-rich-and-the-firms, climate.justice.pay-us-to-leave-it]
+        tags: [nationalization, fossil-capital, public-ownership]
+        analysis:
+          gains: [core-workers, peripheral-workers, peasantry, reserve-army]
+          pays: [finance-capital, industrial-capital, landed-capital, comprador-capital]
+          mechanism: >
+            Expropriation writes off the paper value of fossil reserves held by shareholders, banks and pension
+            funds and ends the rent the owners and their licensing states collect, while workers keep their pay;
+            whether the drain falls depends on where the proceeds of the seized assets go, to core treasuries or
+            to repair and transfers in the South.
+          drain: reduces
+          law_of_value: suspends
+          disputed: >
+            Malm grounds it in the emergency powers states used in 2020; Third Worldists and Ajl insist that
+            core nationalization without reparations to the South settles nothing owed to it.
+          consciousness: hegemonic
 
       - id: climate.justice.no-inherited-debt
         label: Nobody owes for the past; each nation looks after its own
@@ -1469,9 +1760,9 @@ problematics:
               Oil revenue has made petro-states dependent on one export, the world price and foreign
               companies. The resource curse is dependency in another form, and leaving it intact is no development.
         sources:
-          - {author: Alberto Acosta, title: "La maldición de la abundancia", year: 2009}
-          - {author: Terry Lynn Karl, title: "The Paradox of Plenty: Oil Booms and Petro-States", year: 1997}
-          - {author: Fernando Coronil, title: "The Magical State: Nature, Money, and Modernity in Venezuela", year: 1997}
+          - {author: Government of Ecuador, title: Yasuní-ITT Initiative, year: 2007}
+          - {author: Yemi Osinbajo, title: "The Divestment Delusion: Why Banning Fossil Fuel Investments Would Crush Africa", year: 2021, note: Foreign Affairs}
+          - {author: African Union, title: African Common Position on Energy Access and Just Transition, year: 2022}
         traditions:
           defining: []
           typical: [nationalism.bolivarianism, nationalism.developmental-state, marxism.arab-socialism, nationalism.nasserism]
@@ -1493,4 +1784,61 @@ problematics:
           disputed: >
             Third Worldists distinguish oil nationalism, which recaptured rent from core firms (Mexico 1938,
             Iraq 1972, Venezuela), from comprador petro-states; whether a given producer is one or the other
-            is contested case by case.
+            is contested case by case. Critics of the petro-state model (Acosta, Karl, Coronil) answer that
+            oil rent breeds dependency on one export whoever collects it.
+
+
+      - id: climate.justice.open-the-borders
+        label: Part of the debt is paid in the right to move
+        claim: >-
+          The rich countries are fencing themselves against the people their emissions displace; settling the
+          debt includes the freedom of those people to move, live and work in the countries that grew rich on
+          the carbon, with the rights of citizens.
+        voiced: "We are here because you were there. Your smoke flooded our fields; your walls will not keep out the people it drove off them."
+        you: You think part of the climate debt is paid by letting the people that heating displaces move, live and work in the rich countries, with full rights.
+        because: >
+          Floods, drought and heat already drive millions from their land each year, almost all of them in
+          countries that did least to heat the planet. The rich countries' answer has been walls, camps,
+          naval patrols and deals that pay Turkey, Libya and Morocco to hold people back, a growing industry
+          of its own. Money for adaptation reaches states and contractors; it does not reach the family whose
+          land is under water. The wealth made from the carbon is in the North, and so are the jobs, the
+          pensions and the public goods it paid for. A debt owed to people is settled by letting them reach
+          it, as citizens, not as deportable labor.
+        against:
+          - from: conservatism.national
+            text: >
+              A nation that cannot decide who enters is not a nation. No debt, real or imagined, obliges a
+              people to give up its own country.
+          - from: marxism.third-worldism
+            text: >
+              Open doors to the North drain the South of the nurses, engineers and young workers it paid to
+              raise. The debt should be paid where the damage is, so people need not leave.
+          - from: socdem.labourism
+            text: >
+              Without strong unions and enforced wage floors, more workers in the same labor market lets
+              employers cut pay. Rights first, then movement.
+        sources:
+          - {author: E. Tendayi Achiume, title: Migration as Decolonization, year: 2019, note: Stanford Law Review 71}
+          - {author: Harsha Walia, title: "Border and Rule: Global Migration, Capitalism, and the Rise of Racist Nationalism", year: 2021}
+          - {author: Todd Miller, title: "Storming the Wall: Climate Change, Migration, and Homeland Security", year: 2017}
+        traditions:
+          typical: [ecology.environmental-justice, nationalism.decolonial, anarchism.communist]
+          contested: [marxism.third-worldism, socdem.labourism]
+          rejects: [conservatism.national, fascism.ecofascism, commonsense.look-after-your-own]
+        presupposes: []
+        excludes: [climate.justice.no-inherited-debt]
+        tension: [climate.justice.pay-us-to-leave-it]
+        tags: [migration, borders, periphery, displacement]
+        analysis:
+          gains: [peripheral-workers, reserve-army]
+          pays: [industrial-capital, landed-capital]
+          mechanism: >
+            Free movement with equal rights lets workers displaced from the hottest regions claim core wages
+            and core public goods, and ends the deportability that lets farm, construction and care employers
+            pay migrants below the going rate; it lowers the premium that core citizenship carries.
+          drain: softens
+          law_of_value: regulates
+          disputed: >
+            Third Worldists warn that open borders drain the South of its trained workers; Walia and Achiume
+            answer that borders, not movement, create the cheap and deportable migrant.
+          consciousness: hegemonic

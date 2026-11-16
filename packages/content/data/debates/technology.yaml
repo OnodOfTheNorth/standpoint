@@ -9,12 +9,14 @@ debates:
       had signed a statement that reducing the risk of extinction from AI should be a global priority.
       Researchers in AI ethics replied that the talk of extinction distracted from present harms: bias,
       surveillance, the exploitation of data workers and the concentration of power in a few firms. Others
-      argued that the main danger was slowing the technology down, or losing a race to a rival power.
-    problematic: ai.risk
+      argued that the main danger was slowing the technology down, or losing a race to a rival power. Writers
+      from and on the global South answered all of them that AI is a monopoly rent built on the South's data,
+      labor and minerals.
+    problematic: ai.stake
     sides:
       - label: Existential risk
-        thinkers: [thinker.bostrom]
-        positions: [ai.risk.existential, accelerationism.question.differential]
+        thinkers: [thinker.bostrom, thinker.ord, thinker.macaskill]
+        positions: [ai.stake.existential, accelerationism.question.differential]
         argument: >-
           Intelligence is what gave humans power over every other species. A system that outthinks us, pursuing
           goals even slightly different from ours, would treat us as we treat ants in the way of a road. Almost
@@ -25,8 +27,8 @@ debates:
           - {author: Nick Bostrom, title: "Superintelligence: Paths, Dangers, Strategies", year: 2014}
           - {author: Stuart Russell, title: "Human Compatible: Artificial Intelligence and the Problem of Control", year: 2019}
       - label: AI ethics
-        thinkers: []
-        positions: [ai.risk.harms-now, ai.risk.tool-of-capital, ai.risk.overhyped]
+        thinkers: [thinker.gebru, thinker.bender]
+        positions: [ai.stake.harms-now, ai.stake.tool-of-capital, ai.stake.overhyped]
         argument: >-
           Large language models are stochastic parrots: they stitch together text without understanding it, and
           they reproduce the biases of the data they are trained on. The real harms are here now: discriminatory
@@ -39,8 +41,8 @@ debates:
           - {author: Kate Crawford, title: Atlas of AI, year: 2021}
           - {author: Timnit Gebru and Émile P. Torres, title: The TESCREAL Bundle, year: 2024}
       - label: Accelerate
-        thinkers: [thinker.andreessen]
-        positions: [ai.risk.accelerate, accelerationism.question.effective-acc]
+        thinkers: [thinker.andreessen, thinker.verdon]
+        positions: [ai.stake.accelerate, accelerationism.question.effective-acc]
         argument: >-
           AI will make everything better: medicine, science, education, wages, the arts. Every new technology
           has been met by a moral panic, and every panic was wrong. The safety movement is a cult whose demands,
@@ -51,8 +53,8 @@ debates:
           - {author: Marc Andreessen, title: Why AI Will Save the World, year: 2023}
           - {author: Marc Andreessen, title: The Techno-Optimist Manifesto, year: 2023}
       - label: The race
-        thinkers: []
-        positions: [ai.risk.great-power-race, automation.ownership.national-sovereign-ai]
+        thinkers: [thinker.aschenbrenner]
+        positions: [ai.stake.great-power-race, automation.ownership.national-sovereign-ai]
         argument: >-
           Superhuman AI is coming within years, and whoever has it will hold decisive military and economic
           power. The question is not whether it is built but by whom. If liberal democracies fall behind China,
@@ -60,11 +62,26 @@ debates:
           electricity at home, and treat the leading models as a matter of national security.
         texts:
           - {author: Leopold Aschenbrenner, title: "Situational Awareness: The Decade Ahead", year: 2024}
+      - label: Data colonialism
+        thinkers: [thinker.couldry, thinker.mejias, thinker.birhane, thinker.rikap, thinker.posada]
+        positions: [ai.stake.core-rent, technology.nature.core-monopoly, property.ip.technology-monopoly]
+        argument: >-
+          All three of the other camps argue over the machine and leave out who owns it and where it is built.
+          A few firms in the United States and China own the models, the cloud and the chip designs. The data is
+          taken from everyone, the labelling and moderation are done in Nairobi, Manila and Caracas for a dollar
+          or two an hour, and the cobalt and lithium are dug in Congo and the Andes. Every school and ministry
+          that uses the result pays a subscription that leaves the country. That is a monopoly rent, the newest
+          form of the core's monopoly on technology. Break it with public and regional computing, data kept and
+          taxed where it is made, and unions of data workers across borders.
+        texts:
+          - {author: Nick Couldry and Ulises A. Mejias, title: "The Costs of Connection: How Data Is Colonizing Human Life and Appropriating It for Capitalism", year: 2019}
+          - {author: Abeba Birhane, title: Algorithmic Colonization of Africa, year: 2020}
+          - {author: Cecilia Rikap, title: "Capitalism, Power and Innovation: Intellectual Monopoly Capitalism Uncovered", year: 2021}
     outcome: >-
       Governments convened an AI Safety Summit at Bletchley Park in 2023, and the European Union passed an AI
       Act in 2024 that regulates uses by their risk to rights and safety. Later summits shifted toward
       investment and competition, and the United States and China treated advanced AI and the chips it runs on
-      as matters of strategic rivalry. The dispute among the three camps continues.
+      as matters of strategic rivalry. Content moderators and data labellers working in Nairobi for American platforms voted to form a union in 2023. The dispute continues.
 
   - id: debate.accelerationism-folk-politics
     name: Accelerationism and folk politics
@@ -78,7 +95,7 @@ debates:
     problematic: accelerationism.question
     sides:
       - label: Left accelerationism
-        thinkers: []
+        thinkers: [thinker.srnicek, thinker.alex-williams]
         positions: [accelerationism.question.left-acc, automation.ownership.common-ownership, work.future.basic-income-emancipatory, culture.strategy.hegemony-first]
         argument: >-
           Capitalism built the machines that could free people from most work, then chained them to profit.
@@ -90,7 +107,7 @@ debates:
           - {author: Alex Williams and Nick Srnicek, title: "#Accelerate: Manifesto for an Accelerationist Politics", year: 2013}
           - {author: Nick Srnicek and Alex Williams, title: "Inventing the Future: Postcapitalism and a World Without Work", year: 2015}
       - label: Horizontalism
-        thinkers: []
+        thinkers: [thinker.holloway]
         positions: [org.form.horizontal-movement, state.relation.exit-and-build, hist.zapatistas.autonomy-without-power]
         argument: >-
           What the accelerationists call folk politics is how people actually took back their lives in Argentina
@@ -102,7 +119,7 @@ debates:
           - {author: John Holloway, title: Change the World Without Taking Power, year: 2002}
           - {author: Marina Sitrin, title: "Horizontalism: Voices of Popular Power in Argentina", year: 2006}
       - label: Against acceleration
-        thinkers: []
+        thinkers: [thinker.noys]
         positions: [technology.nature.capitals-weapon, technology.nature.built-in-politics]
         argument: >-
           Accelerationism mistakes capitalism's restless destruction for liberation. The machines and networks
@@ -114,7 +131,7 @@ debates:
           - {author: Benjamin Noys, title: "Malign Velocities: Accelerationism and Capitalism", year: 2014}
       - label: Right accelerationism
         thinkers: [thinker.land]
-        positions: [accelerationism.question.right-acc, ai.risk.capital-becomes-mind]
+        positions: [accelerationism.question.right-acc, ai.stake.capital-becomes-mind]
         argument: >-
           Capital is not a tool humans use but an intelligence assembling itself through them. Every attempt to
           steer it, socialist or liberal, only slows the process down. The left accelerationists want to keep

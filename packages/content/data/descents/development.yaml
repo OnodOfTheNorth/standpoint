@@ -376,7 +376,7 @@ nodes:
     type: reason
     title: The word
     text: >
-      Last one. When people in your country say they want development, what should the word mean?
+      When people in your country say they want development, what should the word mean?
     why: This asks what you think development is for, which is where these traditions finally part.
     options:
       - id: growth
@@ -385,26 +385,80 @@ nodes:
         evidence:
           - {position: development.path.integration, w: 2}
           - {position: poverty.cause.late-development, w: 1}
+        next: descent.development.11
       - id: power
         text: A strong industrial nation that nobody can push around.
         cause: interests
         evidence:
           - {position: development.path.developmental-state, w: 2}
           - {position: intl.sovereignty.nations-set-own-course, w: 1}
+        next: descent.development.11
       - id: needs
         text: The basic needs of the majority met first, on our terms, whatever the world market wants.
         cause: interests
         evidence:
           - {position: development.path.delinking, w: 2}
           - {position: poverty.cause.drain, w: 1}
+        next: descent.development.11
       - id: faith
         text: A just society under God, where wealth serves the community.
         cause: divine
         evidence:
           - {position: markets.nature.moral-economy, w: 2}
           - {position: religion.public.divine-law, w: 1}
+        next: descent.development.11
       - id: refuse
         text: Not "development" at all. Good lives on local terms, without copying the rich.
         cause: culture
         evidence:
           - {position: development.path.post-development, w: 3}
+        next: descent.development.11
+
+  - id: descent.development.11
+    type: explanation
+    title: The phone
+    text: >
+      Last one. A 2011 study of the iPhone found that the company that designed it kept more than half of
+      its sale price as profit. The workers in China who assembled it got under two percent. Why does so
+      little stay where the phone is made?
+    why: This asks how you think value moves between rich and poor countries, which separates the law of worldwide value, the monopoly account, value-chain and terms-of-trade theories, Marxist productivity accounts and the liberal view.
+    options:
+      - id: wages
+        text: The factory is as productive as any in the world, but the pay is a fraction. Same work, less wage, and the difference flows north.
+        cause: structures
+        evidence:
+          - {position: exchange.unequal.wage-gap, w: 3}
+          - {position: imperialism.nature.unequal-exchange-drain, w: 1}
+      - id: monopolies
+        text: The rich countries hold the monopolies that set the prices. Patents, the dollar, finance, and the guns behind them.
+        cause: structures
+        evidence:
+          - {position: technology.nature.core-monopoly, w: 2}
+          - {position: money.nature.currency-hierarchy, w: 2}
+      - id: chain
+        text: The brand owns the chain. It plays a thousand suppliers against each other and books the profit at home.
+        cause: interests
+        evidence:
+          - {position: exchange.unequal.value-chain-capture, w: 3}
+      - id: stage
+        text: It is the old story of coffee and copper. Whoever sells the low stage trades worse every decade against whoever sells the high one.
+        cause: structures
+        evidence:
+          - {position: exchange.unequal.terms-of-trade, w: 3}
+      - id: capital
+        text: The more productive capital undersells the less productive everywhere. The Chinese worker and the Californian one are bled by the same owners.
+        cause: structures
+        evidence:
+          - {position: exchange.unequal.productivity-gap, w: 3}
+      - id: design
+        text: Design and engineering create most of the value. Assembly is the easy part, and China gains jobs it would not otherwise have.
+        cause: structures
+        evidence:
+          - {position: exchange.unequal.mutual-gain, w: 2}
+          - {position: development.path.integration, w: 1}
+      - id: climb
+        text: China is still climbing. Korea and Taiwan began with assembly and ended making the chips.
+        cause: structures
+        evidence:
+          - {position: development.path.developmental-state, w: 2}
+          - {position: poverty.cause.late-development, w: 1}

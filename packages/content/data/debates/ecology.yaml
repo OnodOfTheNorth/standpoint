@@ -12,7 +12,7 @@ debates:
     problematic: growth.ecology
     sides:
       - label: Degrowth
-        thinkers: []
+        thinkers: [thinker.hickel, thinker.kallis, thinker.latouche, thinker.soper]
         positions: [growth.ecology.degrowth, ecology.crisis-cause.capital-accumulation, progress.idea.within-limits, work.future.shorter-hours]
         argument: >-
           Green growth is a hope, not a finding. Where rich countries have cut emissions while growing, they have
@@ -26,7 +26,7 @@ debates:
           - {author: Jason Hickel, title: "Less Is More: How Degrowth Will Save the World", year: 2020}
           - {author: Jason Hickel and Giorgos Kallis, title: Is Green Growth Possible?, year: 2020}
       - label: Ecomodernism
-        thinkers: []
+        thinkers: [thinker.shellenberger, thinker.ted-nordhaus]
         positions: [growth.ecology.ecomodernism, energy.transition.nuclear-abundance, technology.nature.liberation]
         argument: >-
           Humanity has always used less land and fewer resources per person as it grew richer: cities, intensive
@@ -35,10 +35,10 @@ debates:
           poor for the planet is neither just nor going to happen. Abundance is the cure for environmental damage,
           not its cause.
         texts:
-          - {author: John Asafu-Adjei et al., title: An Ecomodernist Manifesto, year: 2015}
+          - {author: John Asafu-Adjaye et al., title: An Ecomodernist Manifesto, year: 2015}
           - {author: Michael Shellenberger and Ted Nordhaus, title: The Death of Environmentalism, year: 2004}
       - label: Green growth
-        thinkers: []
+        thinkers: [thinker.stern, thinker.nordhaus, thinker.pollin]
         positions: [growth.ecology.green-growth, energy.transition.market-led, ecology.crisis-cause.market-failure]
         argument: >-
           Pollution is damage nobody pays for. Put a price on carbon, remove subsidies to fossil fuels, invest in
@@ -49,8 +49,8 @@ debates:
           - {author: OECD, title: Towards Green Growth, year: 2011}
           - {author: Nicholas Stern, title: The Economics of Climate Change, year: 2006}
       - label: Pro-growth ecosocialism
-        thinkers: []
-        positions: [growth.ecology.ecosocialism, energy.transition.public-ownership, consumption.choice.production-decides]
+        thinkers: [thinker.huber, thinker.phillips]
+        positions: [growth.ecology.socialist-abundance, energy.transition.public-ownership, consumption.choice.production-decides]
         argument: >-
           Degrowth speaks the language of sacrifice to workers who already have too little, and will lose them.
           The problem is not that people consume too much but that capital owns the power plants and decides
@@ -101,8 +101,8 @@ debates:
         texts:
           - {author: Julian L. Simon, title: The Ultimate Resource, year: 1981}
       - label: Commoner
-        thinkers: []
-        positions: [population.question.consumption-not-numbers, ecology.crisis-cause.capital-accumulation]
+        thinkers: [thinker.commoner]
+        positions: [population.question.surplus-made-by-capital, population.question.consumption-not-numbers, ecology.crisis-cause.capital-accumulation]
         argument: >-
           Pollution in the United States rose far faster after 1945 than population did. The cause was new
           production technology chosen because it was profitable: synthetic chemicals, detergents, heavy
@@ -130,7 +130,7 @@ debates:
     problematic: nature.value
     sides:
       - label: Deep ecology
-        thinkers: [thinker.naess]
+        thinkers: [thinker.naess, thinker.macy]
         positions: [nature.value.intrinsic, growth.ecology.deep-ecology, ecology.crisis-cause.human-mastery, population.question.too-many]
         argument: >-
           The flourishing of non-human life has value in itself, whatever its use to us. Humans have no right to
@@ -154,7 +154,7 @@ debates:
           - {author: Murray Bookchin, title: The Ecology of Freedom, year: 1982}
           - {author: Murray Bookchin, title: "Social Ecology versus Deep Ecology: A Challenge for the Ecology Movement", year: 1987}
       - label: Environmentalism of the poor
-        thinkers: []
+        thinkers: [thinker.guha, thinker.martinez-alier]
         positions: [ecology.crisis-cause.core-appropriation, property.commons.self-governed]
         argument: >-
           Deep ecology's love of wilderness is an American export with harmful effects in India, where tiger

@@ -80,7 +80,7 @@ tensions:
     when:
       all:
         - {holds: tradition.modernity.inherited-wisdom}
-        - {holdsAny: [accelerationism.question.effective-acc, ai.risk.accelerate]}
+        - {holdsAny: [accelerationism.question.effective-acc, ai.stake.accelerate]}
     prompt: >
       You say change slowly; inherited institutions hold more wisdom than any plan. You also say build
       faster; technology and growth are the good and slowing them is the danger. A machine that rewrites
@@ -91,9 +91,9 @@ tensions:
       requires a line between changes made by planners and changes made by markets and inventors.
     resolutions:
       - {id: market, text: "Both, because I distrust planners, not inventors. Change people choose one purchase at a time is organic change.", kind: hold, evidence: [{position: capitalism.nature.free-exchange, w: 1}, {position: accelerationism.question.effective-acc, w: 1}]}
-      - {id: slow, text: "Slow. A machine that remakes childhood is exactly what caution is for.", kind: yield, revise: accelerationism.question.effective-acc, evidence: [{position: accelerationism.question.decelerate, w: 2}, {position: ai.risk.human-dignity, w: 1}]}
+      - {id: slow, text: "Slow. A machine that remakes childhood is exactly what caution is for.", kind: yield, revise: accelerationism.question.effective-acc, evidence: [{position: accelerationism.question.decelerate, w: 2}, {position: ai.stake.human-dignity, w: 1}]}
       - {id: fast, text: "Fast. Tradition was always just the old technology. Let the new one win.", kind: yield, revise: tradition.modernity.inherited-wisdom, evidence: [{position: tradition.modernity.rupture, w: 2}]}
-      - {id: race, text: "Only because rivals won't wait. If we slow down, they shape the world.", kind: condition, evidence: [{position: ai.risk.great-power-race, w: 2}]}
+      - {id: race, text: "Only because rivals won't wait. If we slow down, they shape the world.", kind: condition, evidence: [{position: ai.stake.great-power-race, w: 2}]}
       - {id: frame, text: "The framing is wrong: institutions that are truly wise will absorb the machine. Only weak ones need protecting.", kind: reject}
 
   - id: tension.ecology-consumer-responsibility-unpracticed
@@ -131,10 +131,10 @@ tensions:
 
   - id: tension.ecology-common-automation-investor
     type: theory-practice
-    between: [automation.ownership.common-ownership, ai.risk.tool-of-capital, practice.invest]
+    between: [automation.ownership.common-ownership, ai.stake.tool-of-capital, practice.invest]
     when:
       all:
-        - {holdsAny: [automation.ownership.common-ownership, ai.risk.tool-of-capital]}
+        - {holdsAny: [automation.ownership.common-ownership, ai.stake.tool-of-capital]}
         - {practice: practice.invest}
     prompt: >
       You say the machines and the AI should be owned in common, because in owners' hands they cheapen and
