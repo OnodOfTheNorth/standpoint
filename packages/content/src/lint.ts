@@ -128,6 +128,10 @@ export function lintBundle(b: Bundle, errors: string[], warnings: string[], know
     for (const a of th.argues) {
       pos(a.position, `thinker ${th.id} argues`);
       if (!a.in.author || !a.in.title || a.in.year === undefined) errors.push(`thinker ${th.id}: argues edge without full source`);
+      // an edge rests on the primary work or names the secondary one: a note that admits second-hand reading needs `via`
+      const secondHand = /secondary|as reported|according to|summar(y|ies) of|not read|did not read|not seen/i;
+      if (!a.via && (secondHand.test(a.in.note ?? '') || secondHand.test(a.note ?? ''))) errors.push(`thinker ${th.id} argues ${a.position}: the note says the primary was not read; add via naming the secondary work`);
+      if (a.via && (!a.via.author || !a.via.title || a.via.year === undefined)) errors.push(`thinker ${th.id} argues ${a.position}: via without full source`);
     }
   }
   for (const e of Object.values(b.events)) {
@@ -321,7 +325,8 @@ export function thinkerCoverage(b: Bundle): { traditions: string[]; problematics
   const traditions: string[] = [];
   for (const t of Object.values(b.traditions)) {
     if (!t.leaf || t.family === 'commonsense') continue;
-    if (t.thinkers.length < 2) traditions.push(`tradition ${t.id}: ${t.thinkers.length} thinker(s), needs 2`);
+    const need = t.oneAuthor ? 1 : 2; // one-author exception, flagged in the entry
+    if (t.thinkers.length < need) traditions.push(`tradition ${t.id}: ${t.thinkers.length} thinker(s), needs ${need}`);
   }
   const problematics: string[] = [];
   for (const pr of Object.values(b.problematics)) {

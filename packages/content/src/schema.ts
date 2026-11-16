@@ -234,13 +234,20 @@ export const Tradition = z.object({
     disputed: z.string().optional(),
   }),
   thinkers: z.array(Id).default([]),
+  /**
+   * Set only when the tradition is one author's work (e.g. Land's right accelerationism): it then needs one
+   * thinker instead of two. The text says why. Use sparingly; thinker-report lists every use.
+   */
+  oneAuthor: z.string().min(20).optional(),
   keyTexts: z.array(Source).default([]),
 });
 export type Tradition = z.infer<typeof Tradition>;
 
 export const Argues = z.object({
   position: Id,
-  in: Source,
+  in: Source, // the primary work in which the thinker argues the position
+  /** the secondary work the attribution rests on, when the primary was not read; shown as "as reported in" */
+  via: Source.optional(),
   note: z.string().optional(),
 });
 

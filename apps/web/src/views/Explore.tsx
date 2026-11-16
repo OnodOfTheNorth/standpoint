@@ -334,6 +334,12 @@ function Detail({ kind, id }: { kind: string; id: string }) {
           {th.argues.map((a, i) => (
             <li key={i}>
               <PLink id={a.position} /> — in <cite>{a.in.title}</cite> ({a.in.year})
+              {a.via && (
+                <span class="muted">
+                  {' '}
+                  as reported in {a.via.author}, <cite>{a.via.title}</cite> ({a.via.year})
+                </span>
+              )}
             </li>
           ))}
         </ul>

@@ -225,12 +225,12 @@ export function neighbors(b: Bundle, s: State, limit = 6) {
   const h = holdings(b, s);
   const out = [];
   for (const t of Object.values(b.thinkers)) {
-    const agree: { position: string; in: Source }[] = [];
+    const agree: { position: string; in: Source; via?: Source }[] = [];
     const part: { position: string; yours: string; in: Source }[] = [];
     for (const a of t.argues) {
       const hp = h.byPosition[a.position];
       if (!hp) continue;
-      if (hp.weight >= HOLD_THRESHOLD) agree.push({ position: a.position, in: a.in });
+      if (hp.weight >= HOLD_THRESHOLD) agree.push({ position: a.position, in: a.in, ...(a.via ? { via: a.via } : {}) });
       else {
         const prs = h.byProblematic[hp.problematic]!;
         const top = prs.holdings[0];

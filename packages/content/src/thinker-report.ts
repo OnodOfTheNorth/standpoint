@@ -9,6 +9,10 @@ for (const k of ['traditions', 'problematics', 'debates'] as const) {
   console.log(`## ${k}: ${c[k].length} gap(s)`);
   for (const m of c[k]) console.log(m);
 }
+const one = (Object.values(b.traditions) as any[]).filter((t) => t.oneAuthor);
+console.log(`
+## one-author exceptions: ${one.length}`);
+for (const t of one) console.log(`${t.id} (${t.thinkers.join(', ')}): ${t.oneAuthor}`);
 const th = Object.values(b.thinkers) as any[];
 const ps = Object.keys(b.positions).length;
 const argued = new Set(th.flatMap((t) => t.argues.map((a: any) => a.position)));

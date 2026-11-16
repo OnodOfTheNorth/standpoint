@@ -259,7 +259,7 @@ function MapTabs({ r, editable }: { r: Result; editable: boolean }) {
                   <a href={`#/explore/thinker/${n.thinker}`}>{n.name}</a>
                 </p>
                 <p>
-                  With them on: {n.agree.map((a) => `${P(a.position)?.label} (${a.in.title}, ${a.in.year})`).join('; ')}
+                  With them on: {n.agree.map((a) => `${P(a.position)?.label} (${a.in.title}, ${a.in.year}${a.via ? `, as reported in ${a.via.author}, ${a.via.title}, ${a.via.year}` : ''})`).join('; ')}
                 </p>
                 {n.part.length > 0 && <p class="muted">You part on: {n.part.map((a) => `${P(a.position)?.label} — you hold “${P(a.yours)?.label}”`).join('; ')}</p>}
               </li>

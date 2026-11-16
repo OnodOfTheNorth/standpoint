@@ -119,6 +119,7 @@ export function vocabularyTriples(base: string): Triple[] {
   prop('breaksWith', 'breaks with', sp('Tradition'), sp('Tradition'), 'Split.');
   prop('takesSide', 'takes side', sp('Position'), sp('Debate'), 'Position takes a side in a debate.');
   prop('argues', 'argues', sp('Thinker'), sp('Position'), 'Thinker argues position (see sp:Argument for the text).');
+  prop('via', 'as reported in', sp('Argument'), NS.dcterms + 'BibliographicResource', 'The secondary work an argument edge rests on when the primary was not read.');
   prop('gains', 'class that gains', sp('Position'), sp('SocialClass'), 'Class that gains if the position prevails.');
   prop('pays', 'class that pays', sp('Position'), sp('SocialClass'), 'Class that pays if the position prevails.');
   prop('holdsPosition', 'holds position', sp('Holding'), sp('Position'), 'The position a holding is about.');
@@ -193,6 +194,7 @@ export function ontologyTriples(b: Bundle): Triple[] {
     th.argues.forEach((a, i) => {
       const arg = `${s}/argument/${i}`;
       t.push([s, sp('argues'), I(iri(base, 'position', a.position))], [arg, NS.rdf + 'type', I(sp('Argument'))], [arg, sp('thinker'), I(s)], [arg, sp('position'), I(iri(base, 'position', a.position))], [arg, sp('in'), I(textIri(a.in))]);
+      if (a.via) t.push([arg, sp('via'), I(textIri(a.via))]);
     });
   }
   for (const e of Object.values(b.events)) {
@@ -300,7 +302,7 @@ export function ontologyJsonLd(b: Bundle) {
       keyTexts: t.keyTexts,
     });
   for (const th of Object.values(b.thinkers))
-    graph.push({ id: iri(base, 'thinker', th.id), type: 'Thinker', label: th.name, summary: th.summary, memberOf: th.traditions.map((t) => iri(base, 'tradition', t)), argues: th.argues.map((a) => ({ position: iri(base, 'position', a.position), in: a.in })) });
+    graph.push({ id: iri(base, 'thinker', th.id), type: 'Thinker', label: th.name, summary: th.summary, memberOf: th.traditions.map((t) => iri(base, 'tradition', t)), argues: th.argues.map((a) => ({ position: iri(base, 'position', a.position), in: a.in, ...(a.via ? { via: a.via } : {}) })) });
   for (const e of Object.values(b.events)) graph.push({ id: iri(base, 'event', e.id), type: 'Event', label: e.name, date: e.date, place: e.place, summary: e.summary, assessedBy: e.problematic ? iri(base, 'problematic', e.problematic) : undefined });
   for (const d of Object.values(b.debates)) graph.push({ id: iri(base, 'debate', d.id), type: 'Debate', label: d.name, date: d.date, summary: d.summary, sides: d.sides });
   return { ...jsonLdContext(base), '@id': base.replace(/\/$/, ''), version: b.ontologyVersion, '@graph': graph };
