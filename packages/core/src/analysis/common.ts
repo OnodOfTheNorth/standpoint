@@ -16,6 +16,8 @@ export interface Claim {
   body: string[];
   mechanism: string[];
   evidence: EvidenceRef[];
+  /** a ledger of scenes or sides behind the claim (pressure, crisis); shown with the evidence, not as mechanism */
+  record?: string[];
   disputed?: string;
   confidence: number;
   dispute?: { text: string; at?: string };

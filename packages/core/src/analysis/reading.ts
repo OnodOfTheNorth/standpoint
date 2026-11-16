@@ -38,6 +38,78 @@ export function mechanismOf(b: Bundle, pid: string): string {
   return `${p.label}: ${stripPeriod(p.analysis.mechanism)}.`;
 }
 
+/** Classes that, in a core country, both sell labor power and draw on the drain through what their pay buys. */
+const CORE_CLASSES: ClassId[] = ['core-workers', 'professional-managerial', 'reserve-army'];
+
+/** The drain account of a set of holdings: mean drain effect, weighted, and the positions that carry it. */
+export function drainAccount(b: Bundle, hs: { position: string; weight: number }[]) {
+  const dh = hs.filter((h) => b.positions[h.position]!.analysis.drain !== 'none');
+  const mass = dh.reduce((a, h) => a + h.weight, 0);
+  const D = mass ? dh.reduce((a, h) => a + h.weight * DRAIN_VALUE[b.positions[h.position]!.analysis.drain], 0) / mass : 0;
+  const top = [...dh].sort((a, z) => Math.abs(DRAIN_VALUE[b.positions[z.position]!.analysis.drain]) * z.weight - Math.abs(DRAIN_VALUE[b.positions[a.position]!.analysis.drain]) * a.weight || a.position.localeCompare(z.position));
+  return { D, mass, top };
+}
+
+/**
+ * The frame's central claim about the core working class: its members have two interests that can part.
+ * As sellers of labor power they gain from anything that raises their share against capital. As residents
+ * of the core, part of what their pay buys rests on the drain. A program can serve the first account and cost
+ * the second, or defend the second while conceding the first.
+ */
+function twoAccountClaims(
+  b: Bundle,
+  hs: { position: string; weight: number }[],
+  own: ClassId,
+  labor: number,
+  ownContrib: { position: string; w: number }[],
+  sitRef: EvidenceRef,
+  conf: number,
+): Claim[] {
+  const d = drainAccount(b, hs);
+  if (d.mass < 0.4) return [];
+  const reduces = d.D > 0.2;
+  const defends = d.D < -0.1;
+  if (!reduces && !defends) return [];
+  const forClass = labor > 0.3;
+  const againstClass = labor < -0.3;
+  const who = CLASS_SHORT[own];
+  let id: string;
+  let headline: string;
+  if (forClass && reduces) {
+    id = 'serves.two-accounts.class-against-drain';
+    headline = `Your program serves your class against capital and costs you your share of the drain.`;
+  } else if (forClass && defends) {
+    id = 'serves.two-accounts.both';
+    headline = `Your program serves you on both accounts: it backs ${who} against capital at home and defends the drain that cheapens what your pay buys.`;
+  } else if (defends) {
+    id = 'serves.two-accounts.drain-against-class';
+    headline = againstClass
+      ? `Your program defends your share of the drain while conceding to capital at home.`
+      : `Your program defends your share of the drain and asks little of capital at home.`;
+  } else {
+    id = 'serves.two-accounts.neither';
+    headline = againstClass
+      ? `Your program costs you on both accounts: it gives ground to capital at home and would cut the drain your pay draws on.`
+      : `Your program would cut the drain your pay draws on and asks little of capital at home.`;
+  }
+  const laborLine = ownContrib.find((c) => (forClass ? c.w > 0 : c.w < 0));
+  const drainLine = d.top.find((h) => (reduces ? DRAIN_VALUE[b.positions[h.position]!.analysis.drain] > 0 : DRAIN_VALUE[b.positions[h.position]!.analysis.drain] < 0));
+  return [
+    {
+      id,
+      section: 'serves',
+      headline,
+      body: [
+        'You have two interests here. As a seller of labor power, you gain from anything that raises your share against your employer. As someone paid in a core country, part of what your pay buys rests on goods, materials and labor from the periphery priced below their value. A program can serve one account and cost the other.',
+      ],
+      mechanism: [laborLine && mechanismOf(b, laborLine.position), drainLine && `${mechanismOf(b, drainLine.position)} (${b.positions[drainLine.position]!.analysis.drain})`].filter((x): x is string => !!x),
+      evidence: [sitRef, ...[laborLine?.position, drainLine?.position].filter((x): x is string => !!x).map((p) => posRef(b, p))],
+      disputed: LABOR_ARISTOCRACY_DISPUTE,
+      confidence: conf,
+    },
+  ];
+}
+
 /* ------------------------------------------------------------------ */
 /* 1. Whom do your politics serve?                                      */
 /* ------------------------------------------------------------------ */
@@ -108,13 +180,18 @@ export function serves(b: Bundle, s: State, loc: Location): Claim[] {
   const costs = ownContrib.filter((c) => c.w < 0).slice(0, 3);
   const benefits = ownContrib.filter((c) => c.w > 0).slice(0, 3);
   const isCapital = CAPITAL.includes(own);
+  // A core worker has two accounts: as a seller of labor power, and as a beneficiary of the drain.
+  const twoAccounts = loc.world === 'core' && CORE_CLASSES.includes(own);
+  if (twoAccounts) out.push(...twoAccountClaims(b, hs, own, ownV, ownContrib, sitRef, conf));
   if (ownV < -0.3) {
     out.push({
       id: 'serves.against-own',
       section: 'serves',
       headline: isCapital
         ? `You hold a program that would cost your own class: you live by ${listJoin(loc.basis)}, and your positions, if they prevailed, would take from ${CLASS_SHORT[own]}.`
-        : `Your politics would cost your own class. You live by ${listJoin(loc.basis)}; the sum of your positions charges ${CLASS_SHORT[own]}.`,
+        : twoAccounts
+          ? `As a seller of labor power, your politics would cost your own class. You live by ${listJoin(loc.basis)}; the sum of your positions charges ${CLASS_SHORT[own]}.`
+          : `Your politics would cost your own class. You live by ${listJoin(loc.basis)}; the sum of your positions charges ${CLASS_SHORT[own]}.`,
       body: [
         isCapital
           ? 'An owner who backs the movement that would expropriate owners is acting against their class interest. The frame expects this rarely and treats it as a finding: something in your history, conviction or organization outweighs your position.'
@@ -128,7 +205,9 @@ export function serves(b: Bundle, s: State, loc: Location): Claim[] {
     out.push({
       id: 'serves.with-own',
       section: 'serves',
-      headline: `Your politics track your own position: they serve ${CLASS_SHORT[own]}, which is where you stand.`,
+      headline: twoAccounts
+        ? `As a seller of labor power, your politics track your own position: they serve ${CLASS_SHORT[own]} against capital.`
+        : `Your politics track your own position: they serve ${CLASS_SHORT[own]}, which is where you stand.`,
       body: [
         isCapital
           ? 'Your program would protect or extend the returns your own income depends on.'
@@ -142,7 +221,7 @@ export function serves(b: Bundle, s: State, loc: Location): Claim[] {
     out.push({
       id: 'serves.mixed-own',
       section: 'serves',
-      headline: `Your politics pull both ways on your own class: some of what you hold serves ${CLASS_SHORT[own]}, some costs it.`,
+      headline: `${twoAccounts ? 'As a seller of labor power, your' : 'Your'} politics pull both ways on your own class: some of what you hold serves ${CLASS_SHORT[own]}, some costs it.`,
       body: ['Where commitments cut against each other on your own interest, the pressure scenes are the place to watch which way you break.'],
       mechanism: [...benefits.slice(0, 2), ...costs.slice(0, 2)].map((c) => mechanismOf(b, c.position)),
       evidence: [sitRef, ...[...benefits.slice(0, 2), ...costs.slice(0, 2)].map((c) => posRef(b, c.position))],
@@ -352,8 +431,8 @@ export function primary(b: Bundle, s: State, loc: Location): Claim[] {
 /* ------------------------------------------------------------------ */
 
 export function underPressure(b: Bundle, s: State): Claim[] {
-  const ps = s.pressures;
-  if (!ps.length)
+  const all = s.pressures;
+  if (!all.length)
     return [
       {
         id: 'pressure.none',
@@ -365,31 +444,42 @@ export function underPressure(b: Bundle, s: State): Claim[] {
         confidence: 0,
       },
     ];
-  const count = (k: string) => ps.filter((p) => p.outcome === k).length;
-  const held_ = count('principle');
-  const won = count('interest');
-  const mixed = count('mixed');
-  const evaded = count('evaded');
-  const lines = ps.map((p) => {
+  const own = all.filter((p) => p.ownShoes);
+  const role = all.filter((p) => !p.ownShoes);
+  const verdict = (o: string) => (o === 'principle' ? 'principle held' : o === 'interest' ? 'interest won' : o === 'mixed' ? 'split the difference' : 'stepped around the choice');
+  const line = (p: (typeof all)[number]) => {
     const n = b.nodes[p.node];
     const opt = n?.options.find((o) => o.id === p.option);
     const what = b.positions[p.tests]?.label ?? p.tests;
-    const verdict = p.outcome === 'principle' ? 'principle held' : p.outcome === 'interest' ? 'interest won' : p.outcome === 'mixed' ? 'split the difference' : 'stepped around the choice';
-    return `${n?.title ?? 'A pressure scene'}: testing “${what}”, ${verdict}${opt ? ` (“${opt.text}”)` : ''}${p.cost ? `. Cost: ${stripPeriod(p.cost)}.` : '.'}`;
-  });
+    return `${n?.title ?? 'A pressure scene'}: testing “${what}”, ${verdict(p.outcome)}${opt ? ` (“${opt.text}”)` : ''}${p.cost ? `. Cost: ${stripPeriod(p.cost)}.` : '.'}`;
+  };
+  const tally = (ps: typeof all) => {
+    const c = (k: string) => ps.filter((p) => p.outcome === k).length;
+    return { held: c('principle'), won: c('interest'), mixed: c('mixed'), evaded: c('evaded'), n: ps.length };
+  };
+  const t = tally(own);
+  const r = tally(role);
   let headline: string;
-  if (held_ === ps.length) headline = `Where it cost you, principle held every time (${held_} of ${ps.length}).`;
-  else if (won === ps.length) headline = `Where principle and interest collided, interest won every time (${won} of ${ps.length}).`;
-  else headline = `Where it cost you, principle held ${held_} of ${ps.length} times; interest won ${won}${mixed ? `, ${mixed} split` : ''}${evaded ? `, ${evaded} evaded` : ''}.`;
+  if (!own.length) headline = `No scene has yet put a principle you hold against your own interest. In roles you played, principle held ${r.held} of ${r.n}.`;
+  else if (t.held === t.n) headline = `In your own shoes, where it cost you, principle held every time (${t.held} of ${t.n}).`;
+  else if (t.won === t.n) headline = `In your own shoes, where principle and interest collided, interest won every time (${t.won} of ${t.n}).`;
+  else headline = `In your own shoes, where it cost you, principle held ${t.held} of ${t.n} times; interest won ${t.won}${t.mixed ? `, ${t.mixed} split` : ''}${t.evaded ? `, ${t.evaded} evaded` : ''}.`;
+  const body = [
+    'In your own shoes: scenes set in the situation you reported, testing a principle you hold. In a role: scenes inside a story where you played someone else. Only the first is a record of what holding your principles costs you.',
+  ];
+  if (role.length && own.length) body.push(`In a role, principle held ${r.held} of ${r.n}.`);
   return [
     {
       id: 'pressure.record',
       section: 'pressure',
       headline,
-      body: ['Each line names the principle the scene tested and what you chose when holding it had a stated price.'],
-      mechanism: lines,
-      evidence: ps.map((p) => ({ kind: 'pressure' as const, id: p.node, label: p.outcome })),
-      confidence: Math.min(1, ps.length / 3),
+      body,
+      mechanism: [
+        'A pressure scene names what holding the principle will cost you. Choosing the principle anyway shows it is a commitment; letting it go shows where your interest sets its limit.',
+      ],
+      record: [...own.map((p) => `In your own shoes. ${line(p)}`), ...role.map((p) => `In a role. ${line(p)}`)],
+      evidence: all.map((p) => ({ kind: 'pressure' as const, id: p.node, label: `${p.ownShoes ? 'own shoes' : 'role'}: ${p.outcome}` })),
+      confidence: Math.min(1, own.length / 2),
     },
   ];
 }
@@ -397,6 +487,62 @@ export function underPressure(b: Bundle, s: State): Claim[] {
 /* ------------------------------------------------------------------ */
 /* 4. When the center fails                                             */
 /* ------------------------------------------------------------------ */
+
+type Lean = 'dis' | 'order' | 'neither' | 'split' | null;
+type Tally = { order: number; dis: number; neither: number };
+function tallyOf(xs: State['sides'], axis: 'class' | 'empire'): Tally {
+  const by = (dir: string) => xs.filter((x) => x.axis === axis && x.dir === dir).length;
+  return { order: by('order'), dis: by('dispossessed'), neither: by('neither') + by('declined') };
+}
+function leanOf(x: Tally): Lean {
+  return x.order + x.dis + x.neither === 0 ? null : x.dis > x.order && x.dis >= x.neither ? 'dis' : x.order > x.dis && x.order >= x.neither ? 'order' : x.neither > 0 && x.neither >= Math.max(x.order, x.dis) ? 'neither' : 'split';
+}
+const SYMPATHY_PHRASE = {
+  class: { dis: 'with labor and the dispossessed', order: 'with property and order', neither: 'with neither side', split: 'with different sides' },
+  empire: { dis: 'with the colonized and the periphery', order: 'with the empire', neither: 'with neither side', split: 'with different sides' },
+} as const;
+
+/**
+ * Stated sympathy against sides taken. What you make of a strike is an opinion; only escalations, where the
+ * middle option disappears, count as taking a side. The gap between the two is a finding of its own.
+ */
+function sympathyGap(b: Bundle, s: State): Claim[] {
+  const sy = s.sympathies ?? [];
+  if (!sy.length) return [];
+  const out: Claim[] = [];
+  for (const axis of ['class', 'empire'] as const) {
+    const said = leanOf(tallyOf(sy, axis));
+    const did = leanOf(tallyOf(s.sides, axis));
+    if (!said || said === 'split' || said === 'neither') continue;
+    if (did === said) continue;
+    const where = axis === 'class' ? 'at home' : 'between empire and colony';
+    const headline =
+      did === null
+        ? `In opinion you side ${SYMPATHY_PHRASE[axis][said]} ${where}; no escalation has yet asked you to take that side when it counts.`
+        : `In opinion you side ${SYMPATHY_PHRASE[axis][said]} ${where}; when the middle option disappeared, you ${did === 'neither' ? 'stood aside' : `sided ${SYMPATHY_PHRASE[axis][did]}`}.`;
+    out.push({
+      id: `crisis.sympathy-gap.${axis}`,
+      section: 'crisis',
+      headline,
+      body: [
+        did === null
+          ? 'Stated sympathy is what you make of a conflict from outside it. It is recorded separately from the sides you take, because the two often part.'
+          : 'Stated sympathy is what you make of a conflict from outside it; an escalation asks what you do when you are in it. Yours part here, and the second predicts more.',
+      ],
+      mechanism: sy
+        .filter((x) => x.axis === axis)
+        .slice(0, 2)
+        .map((x) => {
+          const n = b.nodes[x.node];
+          const o = n?.options.find((op) => op.id === x.option);
+          return `Stated: ${n?.title ?? x.node}, “${o?.text ?? x.option}”.`;
+        }),
+      evidence: sy.filter((x) => x.axis === axis).map((x) => ({ kind: 'node' as const, id: x.node, label: `sympathy, ${x.axis}: ${x.dir}` })),
+      confidence: did === null ? 0.4 : 0.7,
+    });
+  }
+  return out;
+}
 
 export function crisis(b: Bundle, s: State): Claim[] {
   const sides = s.sides;
@@ -406,11 +552,12 @@ export function crisis(b: Bundle, s: State): Claim[] {
         id: 'crisis.none',
         section: 'crisis',
         headline: 'No escalation has run yet, so your tendency under crisis is unknown.',
-        body: ['Every arc ends in a moment where the middle option disappears. That choice predicts more about a person’s politics than any opinion question.'],
+        body: ['Every arc ends in a moment where the middle option disappears. That choice predicts more about a person’s politics than any opinion question. Opinions about conflicts you watched from outside are reported separately as stated sympathy.'],
         mechanism: [],
         evidence: [],
         confidence: 0,
       },
+      ...sympathyGap(b, s),
     ];
   const by = (axis: 'class' | 'empire', dir: string) => sides.filter((x) => x.axis === axis && x.dir === dir).length;
   const cls = { order: by('class', 'order'), dis: by('class', 'dispossessed'), neither: by('class', 'neither') + by('class', 'declined') };
@@ -447,10 +594,14 @@ export function crisis(b: Bundle, s: State): Claim[] {
       section: 'crisis',
       headline,
       body,
-      mechanism: lines,
+      mechanism: [
+        'An escalation removes the middle option: each choice left helps one side of the conflict prevail. Which side you help when you cannot help both is the best predictor the instrument has of what you would do in a real crisis.',
+      ],
+      record: lines,
       evidence: sides.map((x) => ({ kind: 'side' as const, id: x.node, label: `${x.axis}: ${x.dir}` })),
       confidence: Math.min(1, sides.length / 3),
     },
+    ...sympathyGap(b, s),
   ];
 }
 
@@ -555,14 +706,22 @@ export function motion(b: Bundle, s: State): Claim[] {
   // contradictions
   if (live.length || confronted.length) {
     const pr = principal ? b.tensions[principal.rule] : undefined;
+    // one entry per family: several rules that express one contradiction are reported once
+    const families = [...new Map(live.map((t) => [t.family, t])).values()];
+    const label = (t: { rule: string; family: string }) =>
+      t.family === 'no-vehicle' ? 'commitments that need a collective body, and none to act through' : b.tensions[t.rule]!.between.map((x) => b.positions[x]?.label ?? b.practice[x]?.text ?? x).join(' / ');
     out.push({
       id: 'motion.contradictions',
       section: 'motion',
       headline: pr
-        ? `Your principal contradiction: ${stripPeriod(pr.explain)}.`
+        ? principal!.family === 'no-vehicle'
+          ? 'Your principal contradiction is between what you hold and what you do: every strategic commitment you hold names a collective agent, and you belong to none.'
+          : pr.type === 'theory-practice'
+            ? `Your principal contradiction is between what you hold and what you do: ${lcFirst(stripPeriod(pr.explain))}.`
+            : `Your principal contradiction: ${stripPeriod(pr.explain)}.`
         : `You have faced ${confronted.length} contradiction${confronted.length === 1 ? '' : 's'}; none is live now.`,
       body: [
-        `${live.length} live tension${live.length === 1 ? '' : 's'}: ${live.length ? listJoin(live.slice(0, 5).map((t) => `“${b.tensions[t.rule]!.between.map((x) => b.positions[x]?.label ?? b.practice[x]?.text ?? x).join(' / ')}” (${t.principal ? 'principal' : 'secondary'})`)) : 'none'}.`,
+        `${families.length} live contradiction${families.length === 1 ? '' : 's'}: ${families.length ? listJoin(families.slice(0, 5).map((t) => `“${label(t)}” (${t.principal ? 'principal' : 'secondary'})`)) : 'none'}.`,
         ...(confronted.length
           ? [
               `How you handled the ones you faced: ${listJoin(
@@ -642,7 +801,16 @@ export function motion(b: Bundle, s: State): Claim[] {
   const push: { short: string; text: string }[] = [];
   const mech: string[] = [];
   const ev: EvidenceRef[] = [];
-  if (principal) {
+  if (principal && principal.family === 'no-vehicle') {
+    // a theory-practice contradiction is not resolved by a situation forcing a choice between a view and a
+    // practice; it is resolved by acting or by revising the view
+    push.push({
+      short: 'joining the kind of collective body your commitments already assume',
+      text: 'Your strategic commitments assume a collective agent that you are not part of. Joining one would either harden those commitments or show you which of them you hold only as views about what other people should do.',
+    });
+    mech.push(stripPeriod(b.tensions[principal.rule]!.explain) + '.');
+    ev.push({ kind: 'tension', id: principal.rule, label: 'principal' });
+  } else if (principal) {
     const r = b.tensions[principal.rule]!;
     const sides = r.between.map((x) => `“${b.positions[x]?.label ?? b.practice[x]?.text ?? x}”`);
     const faced = s.tensions[principal.rule];
@@ -661,16 +829,17 @@ export function motion(b: Bundle, s: State): Claim[] {
     mech.push(stripPeriod(r.explain) + '.');
     ev.push({ kind: 'tension', id: principal.rule, label: 'principal' });
   }
-  const lost = s.pressures.filter((p) => p.outcome === 'interest');
-  const kept = s.pressures.filter((p) => p.outcome === 'principle');
+  const ownPs = s.pressures.filter((p) => p.ownShoes);
+  const lost = ownPs.filter((p) => p.outcome === 'interest');
+  const kept = ownPs.filter((p) => p.outcome === 'principle');
   if (lost.length) {
     const what = [...new Set(lost.map((p) => b.positions[p.tests]?.label ?? p.tests))].slice(0, 2).map((x) => `“${x}”`);
     push.push({
-      short: `a change in your own material stake, which decided ${lost.length} of your ${s.pressures.length} costly choices`,
-      text: `Where holding a principle cost you, your interest decided ${lost.length} of ${s.pressures.length} times (${listJoin(what)} gave way). A change in your situation that removes that stake, or raises it, would move those commitments further than any argument.`,
+      short: `a change in your own material stake, which decided ${lost.length} of your ${ownPs.length} costly choices`,
+      text: `Where holding a principle cost you, your interest decided ${lost.length} of ${ownPs.length} times (${listJoin(what)} gave way). A change in your situation that removes that stake, or raises it, would move those commitments further than any argument.`,
     });
     ev.push(...lost.slice(0, 3).map((p) => ({ kind: 'pressure' as const, id: p.node, label: 'interest' })));
-  } else if (kept.length && kept.length === s.pressures.length) {
+  } else if (kept.length && kept.length === ownPs.length) {
     push.push({
       short: 'a higher price on principles that have held so far',
       text: `Your principles held every time they cost you (${kept.length} of ${kept.length}). What would test them further is a larger cost than these scenes named.`,
@@ -682,12 +851,12 @@ export function motion(b: Bundle, s: State): Claim[] {
       short: 'a crisis in which standing aside costs you',
       text: `You took neither side in ${lean} escalation${lean === 1 ? '' : 's'}. A crisis in which standing aside is itself costly would push you toward a side you have so far refused.`,
     });
-  if (!orgs.length)
+  if (!orgs.length && principal?.family !== 'no-vehicle')
     push.push({
       short: 'joining a collective body, which would harden what that body carries',
       text: 'Joining any collective body would harden whichever of your commitments that body carries; you have none yet.',
     });
-  if (!s.pressures.length)
+  if (!ownPs.length)
     push.push({
       short: 'a first collision between your principles and your own interest',
       text: 'A collision between your principles and your own material interest has not yet been tested.',
@@ -765,6 +934,31 @@ export function organization(b: Bundle, s: State): Claim[] {
 /* Anomalies: where you defy what the frame predicts                    */
 /* ------------------------------------------------------------------ */
 
+/** Positions a condition refers to (holds, holdsAny, holdsAll, weight), recursively. */
+function condPositions(c: unknown, out: string[] = []): string[] {
+  if (!c || typeof c !== 'object') return out;
+  const o = c as Record<string, unknown>;
+  if (typeof o.holds === 'string') out.push(o.holds);
+  for (const k of ['holdsAny', 'holdsAll'] as const) if (Array.isArray(o[k])) out.push(...(o[k] as string[]));
+  if (o.weight && typeof (o.weight as { position?: string }).position === 'string') out.push((o.weight as { position: string }).position);
+  for (const k of ['all', 'any'] as const) if (Array.isArray(o[k])) for (const x of o[k] as unknown[]) condPositions(x, out);
+  return out;
+}
+
+/**
+ * Whether holding position x, under rule r, defies the frame's prediction for the respondent's class. An
+ * explicit `defies` list on the rule decides. Without one, a holding is predicted (not an anomaly) when it
+ * gains the respondent's own class and, for a class that lives by its labor, charges no other such class.
+ */
+export function defiesFrame(b: Bundle, r: { defies?: string[] }, x: string, own: ClassId | null | undefined): boolean {
+  if (r.defies) return r.defies.includes(x);
+  const a = b.positions[x]?.analysis;
+  if (!a || !own) return true;
+  // an owner is predicted to hold what gains its class; a worker, what gains its class without charging other workers
+  const predicted = a.gains.includes(own) && (CAPITAL.includes(own) || !a.pays.some((c) => LABOR.includes(c)));
+  return !predicted;
+}
+
 export function anomalies(b: Bundle, s: State, loc: Location, claims: Claim[]): Claim[] {
   const out: Claim[] = [];
   const have = (id: string) => claims.some((c) => c.id === id);
@@ -838,8 +1032,12 @@ export function anomalies(b: Bundle, s: State, loc: Location, claims: Claim[]): 
   for (const r of pcRules) {
     const faced = s.tensions[r.id];
     const between = r.between.filter((x) => b.positions[x]);
-    const yours = between.filter((x) => heldSet.has(x));
-    const shown = (yours.length ? yours : between).map((x) => `“${b.positions[x]!.label}”`);
+    // Only a holding that defies what the frame predicts for this situation is an anomaly. A holding the
+    // frame predicts (a wage earner holding that solidarity rests on a shared position) never is.
+    const referenced = [...new Set([...between, ...condPositions(r.when)])].filter((x) => b.positions[x]);
+    const defying = referenced.filter((x) => heldSet.has(x) && defiesFrame(b, r, x, own));
+    if (!defying.length) continue;
+    const shown = defying.map((x) => `“${b.positions[x]!.label}”`);
     const handled = !faced
       ? 'It has not been put to you yet.'
       : faced.kind === 'yield'
@@ -968,6 +1166,15 @@ export function reading(b: Bundle, s: State): Claim[] {
     ...organization(b, s),
   ];
   claims.push(...anomalies(b, s, loc, claims));
+  // Each claim carries at most two mechanism lines, chosen for that claim: a line already shown under an
+  // earlier claim is not repeated (brief 2.6).
+  // Specific findings (anomalies) claim their lines first; a general claim drops a line already used.
+  const shown = new Set<string>();
+  const order = [...claims.filter((c) => c.section === 'anomalies'), ...claims.filter((c) => c.section !== 'anomalies')];
+  for (const c of order) {
+    c.mechanism = c.mechanism.filter((m) => !shown.has(m)).slice(0, 2);
+    for (const m of c.mechanism) shown.add(m);
+  }
   // attach disputes
   for (const c of claims) {
     const d = [...s.disputes].reverse().find((x) => x.claim === c.id);

@@ -48,8 +48,42 @@ export function keystones(b: Bundle, s: State, limit = 5): Keystone[] {
 
 export interface LiveTension {
   rule: string;
+  family: string;
   principal: boolean;
   weight: number;
+}
+
+/** Practices whose absence means the respondent belongs to no collective body that could act. */
+const VEHICLE_PRACTICES = new Set([
+  'practice.none',
+  'practice.union-member',
+  'practice.party-member',
+  'practice.community-org',
+  'practice.solidarity-org',
+  'practice.peasant-movement',
+  'practice.tenant-assoc',
+  'practice.mutual-aid',
+  'practice.strike',
+  'practice.boycott-campaign',
+]);
+
+/**
+ * The family a tension rule belongs to. Rules in one family express one contradiction, so a session gets at
+ * most one challenge per family and the principal contradiction is chosen among families. A rule's explicit
+ * `family` wins; otherwise a theory-practice rule about a missing collective body belongs to "no-vehicle",
+ * another theory-practice rule to its practice, and any other rule is its own family.
+ */
+export function tensionFamily(b: Bundle, id: string): string {
+  const t = b.tensions[id];
+  if (!t) return id;
+  const explicit = (t as { family?: string }).family;
+  if (explicit) return explicit;
+  if (t.type === 'theory-practice') {
+    const p = t.between.find((x) => x.startsWith('practice.'));
+    if (p && VEHICLE_PRACTICES.has(p)) return 'no-vehicle';
+    if (p) return `practice:${p}`;
+  }
+  return id;
 }
 
 /** Tension rules whose condition currently holds. */
@@ -71,10 +105,20 @@ export function liveTensions(b: Bundle, s: State): LiveTension[] {
       weight += (h.byPosition[p]?.weight ?? 0) * imp;
       if (ks.has(p)) keystone = true;
     }
-    out.push({ rule: t.id, principal: keystone, weight: weight + (keystone ? 2 : 0) });
+    out.push({ rule: t.id, family: tensionFamily(b, t.id), principal: false, weight: weight + (keystone ? 2 : 0) });
   }
   out.sort((a, z) => z.weight - a.weight || a.rule.localeCompare(z.rule));
-  if (out.length && !out.some((x) => x.principal)) out[0]!.principal = true;
+  // The principal contradiction is chosen among families, by how many keystones the family touches
+  // (then by weight); within the winning family, its heaviest rule stands for it.
+  const fam = new Map<string, { keys: Set<string>; weight: number; top: LiveTension }>();
+  for (const x of out) {
+    let f = fam.get(x.family);
+    if (!f) fam.set(x.family, (f = { keys: new Set(), weight: 0, top: x }));
+    f.weight += x.weight;
+    for (const p of b.tensions[x.rule]!.between) if (ks.has(p)) f.keys.add(p);
+  }
+  const best = [...fam.entries()].sort((a, z) => z[1].keys.size - a[1].keys.size || z[1].weight - a[1].weight || a[0].localeCompare(z[0]))[0];
+  if (best) best[1].top.principal = true;
   return out;
 }
 

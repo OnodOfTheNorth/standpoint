@@ -130,3 +130,59 @@ describe('analysis: reading quality', () => {
     }
   });
 });
+
+describe('analysis: phase 2 reading defects', () => {
+  // 2.5: a holding the frame predicts for the respondent's situation is never reported as an anomaly.
+  it('predicted holdings never appear under anomalies (all personas)', async () => {
+    const { leftPersonas } = await import('./left.js');
+    const { rightPersonas } = await import('./right.js');
+    const { otherPersonas } = await import('./other.js');
+    const { incoherentPersonas } = await import('./incoherent.js');
+    const { divergentPersonas } = await import('./divergent.js');
+    const { defiesFrame } = await import('../../src/analysis/reading.js');
+    const { location } = await import('../../src/situation.js');
+    for (const p of [...leftPersonas, ...rightPersonas, ...otherPersonas, ...incoherentPersonas, ...divergentPersonas]) {
+      const r = run(p);
+      const own = location(r.engine.state).primary;
+      for (const c of r.result.reading.filter((x) => x.id.startsWith('anomaly.tension.'))) {
+        const rule = b.tensions[c.id.slice('anomaly.'.length)]!;
+        for (const [pid, pos] of Object.entries(b.positions)) {
+          if (!c.headline.includes(`“${pos.label}”`)) continue;
+          expect(defiesFrame(b, rule, pid, own), `${p.id}: ${c.id} quotes predicted holding ${pid}`).toBe(true);
+        }
+      }
+    }
+  });
+
+  // 2.4: only escalations count as sides taken
+  it('sides come only from escalation nodes; sided opinions are stated sympathy', () => {
+    const r = run(democraticSocialist);
+    for (const x of r.engine.state.sides) expect(b.nodes[x.node]!.type).toBe('escalation');
+    for (const x of r.engine.state.sympathies) expect(b.nodes[x.node]!.type).not.toBe('escalation');
+  });
+
+  // 2.6: at most two mechanism lines per claim, none repeated across claims
+  it('each claim has at most two mechanism lines and no line repeats across claims', () => {
+    for (const p of [democraticSocialist, nationalPopulistWorker, ml, trotskyist]) {
+      const seen = new Set<string>();
+      for (const c of claims(p)) {
+        expect(c.mechanism.length, `${p.id} ${c.id}`).toBeLessThanOrEqual(2);
+        for (const m of c.mechanism) {
+          expect(seen.has(m), `${p.id} ${c.id} repeats: ${m.slice(0, 60)}`).toBe(false);
+          seen.add(m);
+        }
+      }
+    }
+  });
+
+  // 2.1: the pressure headline counts only scenes in the respondent's own shoes
+  it('pressure ledger separates own shoes from roles', () => {
+    for (const p of [democraticSocialist, nationalPopulistWorker, ml]) {
+      const c = claims(p).find((x) => x.id === 'pressure.record');
+      if (!c) continue;
+      const own = run(p).engine.state.pressures.filter((x) => x.ownShoes).length;
+      if (own) expect(c.headline).toMatch(/own shoes/);
+      else expect(c.headline).toMatch(/No scene has yet put a principle you hold against your own interest/);
+    }
+  });
+});

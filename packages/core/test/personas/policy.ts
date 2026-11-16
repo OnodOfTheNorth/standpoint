@@ -45,6 +45,8 @@ export interface Persona {
   origin?: string;
   /** the positions it must hold at the end of a Survey (keystone recovery) */
   expect?: string[];
+  /** positions its own tradition contradicts: the suite asserts it never holds them */
+  never?: string[];
   /** a fraction of prompts answered with "decline" (0..1), for incoherent and disengaged personas */
   declineRate?: number;
   /**
@@ -135,6 +137,15 @@ function unit(s: string): number {
   return (h >>> 0) / 4294967296;
 }
 
+/** Per-persona answer statistics: decisions scored, decisions with no signal at all, near ties. */
+export interface DecisionStats { scored: number; noSignal: number; nearTie: number; noSignalNodes: string[] }
+export const decisionStats = new Map<string, DecisionStats>();
+function stat(persona: Persona): DecisionStats {
+  let x = decisionStats.get(persona.id);
+  if (!x) decisionStats.set(persona.id, (x = { scored: 0, noSignal: 0, nearTie: 0, noSignalNodes: [] }));
+  return x;
+}
+
 export function decide(b: Bundle, p: Prompt, persona: Persona) {
   if (persona.declineRate && unit(persona.id + p.id) < persona.declineRate && p.kind === 'node') return { node: p.id, affordance: 'decline' as const };
   if (p.allocate) {
@@ -163,6 +174,17 @@ export function decide(b: Bundle, p: Prompt, persona: Persona) {
   }
   options.sort((a, z) => z.score - a.score || a.id.localeCompare(z.id));
   const best = options[0];
+  const st = stat(persona);
+  st.scored++;
+  const signal = options.some((o) => Math.abs(o.score) > 1e-9) || premises.some((x) => Math.abs(x.score) > 1e-9) || conditions.some((x) => Math.abs(x.score) > 1e-9);
+  if (!signal) {
+    // Nothing in the persona bears on any option: a real respondent would say none of these fit,
+    // not pick whichever option sorts first.
+    st.noSignal++;
+    st.noSignalNodes.push(p.id);
+    return { node: p.id, affordance: 'none' as const, text: 'none of these fits me' };
+  }
+  if (options.length > 1 && options[0]!.score - options[1]!.score < 0.1) st.nearTie++;
   const bestPremise = [...premises].sort((a, z) => z.score - a.score)[0];
   const bestCondition = [...conditions].sort((a, z) => z.score - a.score)[0];
   if (bestPremise && bestPremise.score > Math.max(1, best?.score ?? 0)) return { node: p.id, affordance: 'reject' as const, premise: bestPremise.id };

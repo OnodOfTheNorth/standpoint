@@ -64,7 +64,15 @@ export interface PressureRecord {
   outcome: 'principle' | 'interest' | 'mixed' | 'evaded';
   option: string;
   cost?: string;
+  /**
+   * True when the scene is set in the respondent's own Situation (a situation-gated pressure scene outside
+   * any arc); false when the respondent plays a role inside an arc. The headline counts only own shoes.
+   */
+  ownShoes: boolean;
 }
+
+/** An opinion about a conflict (a trunk or probe question), as distinct from taking a side in an escalation. */
+export type SympathyRecord = SideRecord;
 
 export interface SideRecord {
   node: string;
@@ -119,7 +127,10 @@ export interface State {
   currentDescent?: string;
   causes: Record<Cause, number>;
   causeTrail: { node: string; cause: Cause; label: string }[];
+  /** sides taken in escalations only: the moments where the middle option disappears */
   sides: SideRecord[];
+  /** stated sympathy: sided options outside escalations (what you make of a strike is an opinion) */
+  sympathies: SympathyRecord[];
   pressures: PressureRecord[];
   tensions: Record<string, TensionRecord>;
   trajectory: Record<string, string | string[]>;

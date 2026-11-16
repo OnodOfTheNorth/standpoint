@@ -64,6 +64,7 @@ export interface Result {
   disputes: State['disputes'];
   pressures: State['pressures'];
   sides: State['sides'];
+  sympathies: State['sympathies'];
   causes: State['causes'];
   trajectory: State['trajectory'];
   practice: string[];
@@ -160,7 +161,7 @@ export function computeResult(b: Bundle, session: Session, opts: { now?: string;
     },
     portrait: M.portrait(b, s),
     graph: M.graph(b, s, ks),
-    affinities: aff.slice(0, 15),
+    affinities: M.displayAffinities(b, s, aff).slice(0, 15),
     lineage: M.lineageTree(b, aff),
     record: M.record(b, s),
     neighbors: M.neighbors(b, s),
@@ -172,6 +173,7 @@ export function computeResult(b: Bundle, session: Session, opts: { now?: string;
     disputes: s.disputes,
     pressures: s.pressures,
     sides: s.sides,
+    sympathies: s.sympathies,
     causes: s.causes,
     trajectory: s.trajectory,
     practice: [...s.practice],

@@ -23,6 +23,7 @@ import {
   type Session,
   type Result,
 } from '@standpoint/core';
+import { blind } from './blind.js';
 import { exportResult, ontologyJsonLd, ontologyTurtle, type ExportFormat } from '@standpoint/ontology';
 
 const bundle = bundleJson as unknown as Bundle;
@@ -46,6 +47,8 @@ Usage:
   standpoint result <session.json> [--format json|jsonld|ttl|graphml|md|reading]
   standpoint compare <a.json> <b.json>     (sessions or results)
   standpoint diff <older.json> <newer.json>
+  standpoint blind start|show|answer <run.json> ...
+      Blind validation runs: one step per call, only what a person sees (see apps/cli/src/blind.ts).
   standpoint lookup <id>
   standpoint search <words...>
   standpoint ontology [--format ttl|jsonld]
@@ -87,6 +90,7 @@ function readingText(r: Result): string {
     L.push(`[${c.section}] ${c.headline}`);
     for (const p of c.body) L.push(`    ${p}`);
     for (const m of c.mechanism) L.push(`    · ${m}`);
+    for (const r of c.record ?? []) L.push(`    - ${r}`);
     if (c.disputed) L.push(`    (disputed among materialists) ${c.disputed}`);
     L.push('');
   }
@@ -360,6 +364,13 @@ async function main() {
       return interactive(flags);
     case 'jsonl':
       return jsonl(flags);
+    case 'blind':
+      try {
+        return void stdout.write(blind(bundle, pos.slice(1), flags) + '\n');
+      } catch (err) {
+        stderr.write(`${(err as Error).message}\n`);
+        return exit(1);
+      }
     case 'batch':
       return batch(flags);
     case 'result': {

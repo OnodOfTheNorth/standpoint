@@ -50,7 +50,7 @@ export function portrait(b: Bundle, s: State): string[] {
   const pr = [...s.practice].map((p) => b.practice[p]).filter(Boolean);
   const orgs = pr.filter((p) => p!.kind === 'organization');
   const acts = pr.filter((p) => p!.kind !== 'organization' && p!.kind !== 'none');
-  const ps = s.pressures;
+  const ps = s.pressures.filter((p) => p.ownShoes);
   let what = 'What you do. ';
   if (!s.practiceAnswered) what += 'You have not been asked yet.';
   else if (!pr.length) what += 'By your own account, nothing political at present: no organization and no regular collective action.';
@@ -58,7 +58,7 @@ export function portrait(b: Bundle, s: State): string[] {
     what += `${orgs.length ? `You belong to ${listJoin(orgs.map((p) => lcFirst(p!.text)))}. ` : 'You belong to no political organization. '}${acts.length ? `You ${listJoin(acts.map((p) => lcFirst(p!.text)))}.` : ''}`;
   if (ps.length) {
     const held_ = ps.filter((p) => p.outcome === 'principle').length;
-    what += ` When a principle cost you something, it held ${held_} of ${ps.length} times.`;
+    what += ` When a principle you hold cost you something in your own situation, it held ${held_} of ${ps.length} times.`;
   }
   paras.push(what.trim());
   return paras;
@@ -129,6 +129,31 @@ export interface Affinity {
   score: number;
   agreements: { position: string; centrality: string }[];
   breaks: { position: string; yours?: string; why: string }[];
+  /** share of the tradition's defining positions on problematics this session resolved (0..1) */
+  resolved?: number;
+}
+
+/** Below this share of a tradition's defining ground resolved, it is not shown among nearest traditions. */
+export const AFFINITY_MIN_RESOLVED = 0.3;
+
+/**
+ * Nearest traditions for display. Raw affinity counts agreements wherever they fall, so a tradition whose
+ * defining ground the session never reached can rank high on shared typical positions alone ("13 agreements,
+ * 0 breaks"). Here each score is scaled by the share of the tradition's defining positions the session
+ * resolved, and traditions below AFFINITY_MIN_RESOLVED are hidden.
+ */
+export function displayAffinities(b: Bundle, s: State, aff: Affinity[]): Affinity[] {
+  const h = holdings(b, s);
+  const defining = new Map<string, string[]>();
+  for (const p of Object.values(b.positions)) for (const t of p.traditions.defining ?? []) (defining.get(t) ?? defining.set(t, []).get(t)!).push(p.id);
+  return aff
+    .map((a) => {
+      const ds = defining.get(a.tradition) ?? [];
+      const res = ds.length ? ds.filter((p) => (h.byProblematic[b.positions[p]!.problematic]?.resolution ?? 0) >= 0.5).length / ds.length : 0;
+      return { ...a, resolved: Math.round(res * 100) / 100, score: a.score * (0.25 + 0.75 * res) };
+    })
+    .filter((a) => (a.resolved ?? 0) >= AFFINITY_MIN_RESOLVED)
+    .sort((a, z) => z.score - a.score || a.tradition.localeCompare(z.tradition));
 }
 
 const CENT = { defining: 3, typical: 2, contested: 1 } as const;

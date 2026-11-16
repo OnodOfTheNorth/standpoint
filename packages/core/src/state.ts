@@ -45,6 +45,7 @@ export function emptyState(session: Pick<Session, 'mode' | 'respondent' | 'seed'
     causes: Object.fromEntries(CAUSES.map((c) => [c, 0])) as State['causes'],
     causeTrail: [],
     sides: [],
+    sympathies: [],
     pressures: [],
     tensions: {},
     trajectory: {},
@@ -326,7 +327,7 @@ function applyAnswer(b: Bundle, s: State, ev: AnswerEvent) {
       const axis = n.options.find((o) => o.side)?.side?.axis ?? 'class';
       s.sides.push({ node: n.id, arc: n.arc, axis, dir: 'declined', option: ev.affordance });
     }
-    if (n.type === 'pressure' && n.tests) s.pressures.push({ node: n.id, tests: n.tests, outcome: 'evaded', option: ev.affordance });
+    if (n.type === 'pressure' && n.tests) s.pressures.push({ node: n.id, tests: n.tests, outcome: 'evaded', option: ev.affordance, ownShoes: !n.arc });
     if (n.type === 'practice') s.practiceAnswered++;
     // the story continues along the first option's path
     chosen = undefined;
@@ -360,8 +361,8 @@ function applyAnswer(b: Bundle, s: State, ev: AnswerEvent) {
       s.causes[o.cause]++;
       s.causeTrail.push({ node: n.id, cause: o.cause, label: o.text });
     }
-    if (o.side) s.sides.push({ node: n.id, arc: n.arc, axis: o.side.axis, dir: o.side.dir, option: o.id });
-    if (o.pressure && n.tests) s.pressures.push({ node: n.id, tests: n.tests, outcome: o.pressure, option: o.id, cost: o.cost });
+    if (o.side) (n.type === 'escalation' ? s.sides : s.sympathies).push({ node: n.id, arc: n.arc, axis: o.side.axis, dir: o.side.dir, option: o.id });
+    if (o.pressure && n.tests) s.pressures.push({ node: n.id, tests: n.tests, outcome: o.pressure, option: o.id, cost: o.cost, ownShoes: !n.arc });
     if (o.set) Object.assign(s.flags, o.set);
     if (o.practice) for (const p of o.practice) if (p !== 'practice.none') s.practice.add(p);
     if (o.value !== undefined && n.field) {

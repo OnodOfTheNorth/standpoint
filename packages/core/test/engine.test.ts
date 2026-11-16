@@ -108,7 +108,10 @@ describe('engine', () => {
     expect(r.portrait.length).toBeGreaterThanOrEqual(4);
     expect(r.situation.location.primary).toBe('core-workers');
     expect(r.sides.length).toBeGreaterThan(0);
-    expect(r.pressures.length).toBe(1);
+    // the pressure scene runs only if the principle it tests is held; when it runs it is in the respondent's own shoes
+    const heldTested = holdings(b, e.state).held.some((h) => h.position === 'welfare.state.decommodify');
+    expect(r.pressures.length).toBeLessThanOrEqual(heldTested ? 1 : 0);
+    for (const p of r.pressures) expect(p.ownShoes).toBe(true);
     expect(profileMarkdown(b, r)).toContain('# Political profile');
     expect(glyphSvg(b, r)).toContain('<svg');
   });

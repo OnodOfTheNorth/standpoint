@@ -9,7 +9,8 @@ import { describe, it, expect } from 'vitest';
 import type { Mode } from '../../src/index.js';
 import { holdings } from '../../src/index.js';
 import { affinities } from '../../src/analysis/map.js';
-import { realBundle, runPersona, type Persona } from './policy.js';
+import { writeFileSync, mkdirSync } from 'node:fs';
+import { realBundle, runPersona, decisionStats, type Persona } from './policy.js';
 import { leftPersonas } from './left.js';
 import { rightPersonas } from './right.js';
 import { otherPersonas } from './other.js';
@@ -73,6 +74,14 @@ describe('persona suite: Survey', () => {
       for (const c of r.result.reading) expect(c.headline.length, c.id).toBeGreaterThan(0);
     });
 
+    if (p.never?.length) {
+      it(`${p.id}: never holds a position its tradition contradicts`, () => {
+        const r = run(p.id);
+        const bad = p.never!.filter((x) => r.held.has(x));
+        expect(bad, `holds ${bad.join(', ')}`).toEqual([]);
+      });
+    }
+
     if (p.expect?.length) {
       it(`${p.id}: recovers most keystones`, () => {
         const r = run(p.id);
@@ -82,6 +91,22 @@ describe('persona suite: Survey', () => {
       });
     }
   }
+});
+
+describe('persona suite: no-signal report', () => {
+  it('writes the no-signal rate per persona (Survey) to test-results/persona-signal.json', () => {
+    const rows = ALL.map((p) => {
+      decisionStats.delete(p.id);
+      cache.delete(`${p.id}:survey`);
+      run(p.id);
+      const st = decisionStats.get(p.id)!;
+      return { persona: p.id, scored: st.scored, noSignal: st.noSignal, rate: Math.round((1000 * st.noSignal) / Math.max(1, st.scored)) / 10, nearTie: st.nearTie, nodes: st.noSignalNodes };
+    });
+    const tot = rows.reduce((a, r) => ({ scored: a.scored + r.scored, noSignal: a.noSignal + r.noSignal, nearTie: a.nearTie + r.nearTie }), { scored: 0, noSignal: 0, nearTie: 0 });
+    mkdirSync('test-results', { recursive: true });
+    writeFileSync('test-results/persona-signal.json', JSON.stringify({ total: tot, rows }, null, 2));
+    expect(rows.length).toBe(ALL.length);
+  });
 });
 
 describe('persona suite: other modes', () => {

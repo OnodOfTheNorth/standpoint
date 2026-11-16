@@ -17,7 +17,7 @@ import { MODE_TARGET } from './types.js';
 import { evaluate } from './cond.js';
 import { holdings } from './holdings.js';
 import { jitter } from './rng.js';
-import { keystones, liveTensions } from './structure.js';
+import { keystones, liveTensions, tensionFamily } from './structure.js';
 import { ORIGIN_OPTIONS } from './state.js';
 import { arcPositions, descentPositions, discrimination, holdingsRelevance, keystoneAdjacency, situationRelevance, tensionCloseness } from './relevance.js';
 
@@ -159,13 +159,19 @@ export function candidates(b: Bundle, s: State, kind: Slot): Candidate[] {
         out.push({ kind, id: n.id, score: gain(b, s, n) + j(n.id) });
       }
       break;
-    case 'pressure':
+    case 'pressure': {
+      // A pressure scene tests a principle against the respondent's own interest, so it is eligible only
+      // when the respondent holds the principle it tests; one that tests a keystone ranks first.
+      const h = holdings(b, s);
+      const ks = new Set(keystones(b, s, 5).map((k) => k.position));
       for (const id of b.pressure) {
         const n = b.nodes[id];
         if (!eligible(b, s, n)) continue;
-        out.push({ kind, id, score: gain(b, s, n) + (n.gate ? 1 : 0) + j(id) });
+        if (!n.tests || !h.byPosition[n.tests] || !h.held.some((x) => x.position === n.tests)) continue;
+        out.push({ kind, id, score: gain(b, s, n) + (n.gate ? 1 : 0) + (ks.has(n.tests) ? 2 : 0) + j(id) });
       }
       break;
+    }
     case 'practice':
     case 'trajectory':
       for (const id of b.modules) {
@@ -276,10 +282,10 @@ export function nextPrompt(b: Bundle, s: State): NextStep {
   const target = MODE_TARGET[s.mode];
   if (s.decisions >= target) return ret(null, 'budget');
 
-  // 5. challenges
+  // 5. challenges: one per tension family per session, never two in a row
   const used = s.kinds.challenge ?? 0;
-  if (used < CHALLENGE_QUOTA[s.mode]) {
-    const live = liveTensions(b, s).filter((t) => !s.tensions[t.rule]);
+  if (used < CHALLENGE_QUOTA[s.mode] && !lastWasChallenge(s)) {
+    const live = openChallenges(b, s);
     if (live.length) return ret(challengePrompt(b, s, live[0]!.rule));
   }
   // 6. requested descents
@@ -314,12 +320,24 @@ export function nextPrompt(b: Bundle, s: State): NextStep {
       const p = promptFor(b, s, c.kind as Slot);
       if (p) return ret(p);
     }
-    const live = liveTensions(b, s).filter((t) => !s.tensions[t.rule]);
+    const live = lastWasChallenge(s) ? [] : openChallenges(b, s);
     if (live.length) return ret(challengePrompt(b, s, live[0]!.rule));
     return ret(null, 'exhausted');
   }
   const p = promptFor(b, s, 'probe') ?? promptFor(b, s, 'pressure') ?? promptFor(b, s, 'descent') ?? promptFor(b, s, 'arc');
   return ret(p, 'exhausted');
+}
+
+/** Live tensions whose family has not yet been put to the respondent. */
+function openChallenges(b: Bundle, s: State) {
+  const faced = new Set(Object.keys(s.tensions).map((r) => tensionFamily(b, r)));
+  return liveTensions(b, s).filter((t) => !s.tensions[t.rule] && !faced.has(t.family));
+}
+
+/** True when the last answered prompt was a challenge or a reason probe that followed one. */
+function lastWasChallenge(s: State): boolean {
+  const last = s.answers.at(-1);
+  return !!last && (last.node.startsWith('challenge:') || (last.node.endsWith('#probe') && last.node.startsWith('challenge:')));
 }
 
 function promptFor(b: Bundle, s: State, slot: Slot): Prompt | null {
