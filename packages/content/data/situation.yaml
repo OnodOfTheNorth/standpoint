@@ -10,8 +10,9 @@ situation:
       - {id: salary, text: A salary}
       - {id: profit, text: Profit from a business I own}
       - {id: rent, text: Rent from property I own}
-      - {id: interest, text: Interest, dividends or investment returns}
-      - {id: transfers, text: Pensions, benefits or other transfers}
+      - {id: interest, text: "Interest, dividends or investment returns"}
+      - {id: pension, text: A pension from past work}
+      - {id: transfers, text: Benefits or other transfers}
       - {id: own-account, text: Working for myself with no employees}
       - {id: care, text: Unpaid care work in a household that someone else's income supports}
   - id: authority
@@ -20,7 +21,7 @@ situation:
     options:
       - {id: none, text: No}
       - {id: supervises, text: I supervise a few people but don't hire or fire}
-      - {id: manages, text: I manage people, including hiring and firing}
+      - {id: manages, text: "I manage people, including hiring and firing"}
       - {id: employs-few, text: I employ a handful of people in my own business}
       - {id: employs-many, text: I own or run a firm that employs many people}
   - id: employment
@@ -29,29 +30,29 @@ situation:
     options:
       - {id: permanent, text: Permanent and fairly secure}
       - {id: temporary, text: Temporary or on contract}
-      - {id: precarious, text: Gig, informal or day-to-day}
+      - {id: precarious, text: "Gig, informal or day-to-day"}
       - {id: unemployed, text: Unemployed and looking}
       - {id: student, text: Student}
       - {id: retired, text: Retired}
-      - {id: not-in-labor-force, text: Not working for pay, not looking}
+      - {id: not-in-labor-force, text: "Not working for pay, not looking"}
   - id: sector
     group: class
     question: What kind of work is it, mostly?
     options:
-      - {id: agriculture, text: Farming, fishing or forestry}
-      - {id: extraction, text: Mining, oil or gas}
+      - {id: agriculture, text: "Farming, fishing or forestry"}
+      - {id: extraction, text: "Mining, oil or gas"}
       - {id: manufacturing, text: Manufacturing}
-      - {id: logistics, text: Transport, warehousing or delivery}
+      - {id: logistics, text: "Transport, warehousing or delivery"}
       - {id: construction, text: Construction}
-      - {id: retail-hospitality, text: Retail, restaurants or hotels}
+      - {id: retail-hospitality, text: "Retail, restaurants or hotels"}
       - {id: care-health, text: Health or care work}
       - {id: education, text: Teaching}
       - {id: public-professional, text: Public administration or a professional public service}
-      - {id: professional, text: Law, medicine, consulting or another licensed profession}
+      - {id: professional, text: "Law, medicine, consulting or another licensed profession"}
       - {id: tech, text: Software or technology}
-      - {id: finance, text: Banking, finance or insurance}
-      - {id: trade, text: Import, export or wholesale trade}
-      - {id: military-police, text: Military, police or security}
+      - {id: finance, text: "Banking, finance or insurance"}
+      - {id: trade, text: "Import, export or wholesale trade"}
+      - {id: military-police, text: "Military, police or security"}
       - {id: domestic, text: Domestic work in other people's homes}
       - {id: informal, text: Street vending or other informal work}
       - {id: none, text: None of these or no work}
@@ -71,7 +72,8 @@ situation:
       - {id: land, text: Farmland or other land}
   - id: debt
     group: class
-    question: What about debt?
+    multi: true
+    question: What about debt? Pick all that apply.
     options:
       - {id: none, text: None to speak of}
       - {id: mortgage, text: A mortgage}
@@ -84,11 +86,11 @@ situation:
     question: Do you rent or own your home?
     options:
       - {id: rent, text: I rent from a private landlord}
-      - {id: social-housing, text: I rent from the state, a council or a cooperative}
+      - {id: social-housing, text: "I rent from the state, a council or a cooperative"}
       - {id: own-mortgage, text: I own it with a mortgage}
       - {id: own-outright, text: I own it outright}
-      - {id: landlord, text: I own it, and I'm also a landlord to others}
-      - {id: family, text: With family, not paying market rent}
+      - {id: landlord, text: "I own it, and I'm also a landlord to others"}
+      - {id: family, text: "With family, not paying market rent"}
       - {id: insecure, text: Insecurely or without a home}
   - id: union
     group: class
@@ -97,7 +99,7 @@ situation:
       - {id: member, text: Yes}
       - {id: former, text: I used to be}
       - {id: never, text: No}
-      - {id: none-possible, text: There is no union I could join, or unions are suppressed where I work}
+      - {id: none-possible, text: "There is no union I could join, or unions are suppressed where I work"}
   - id: land
     group: class
     question: If you live from the land, how?
@@ -121,7 +123,7 @@ situation:
     options:
       - {id: oppressor-nation, text: My nation rules or has ruled over others}
       - {id: oppressed-nation, text: My people are ruled by or subordinated to another nation}
-      - {id: neither, text: Neither, really}
+      - {id: neither, text: "Neither, really"}
       - {id: unsure, text: I don't think about it that way}
   - id: settler
     group: group
@@ -137,7 +139,7 @@ situation:
     options:
       - {id: citizen-born, text: Citizen by birth}
       - {id: naturalized, text: Citizen by naturalization}
-      - {id: resident, text: Legal resident, not a citizen}
+      - {id: resident, text: "Legal resident, not a citizen"}
       - {id: undocumented, text: Without papers}
       - {id: refugee, text: Refugee or asylum seeker}
   - id: racialized
@@ -231,7 +233,7 @@ situation:
     question: Whose labor is it trained on? Pick all that apply.
     options:
       - {id: public-writing, text: Writing published by millions of people}
-      - {id: licensed-works, text: Licensed books, code and media}
+      - {id: licensed-works, text: "Licensed books, code and media"}
       - {id: annotators, text: Paid annotators and raters}
       - {id: user-data, text: Conversations with its users}
       - {id: unknown, text: Unknown}
@@ -272,7 +274,7 @@ practice:
   - {id: practice.party-member, text: A political party, kind: organization, collective: true}
   - {id: practice.revolutionary-org, text: A revolutionary organization, kind: organization, collective: true, side: labor}
   - {id: practice.tenant-assoc, text: A tenants' association, kind: organization, collective: true, side: labor}
-  - {id: practice.religious-community, text: A church, mosque, temple or other congregation, kind: organization, collective: true}
+  - {id: practice.religious-community, text: "A church, mosque, temple or other congregation", kind: organization, collective: true}
   - {id: practice.employer-assoc, text: An employers' or business association, kind: organization, collective: true, side: capital}
   - {id: practice.professional-body, text: A professional association, kind: organization, collective: true}
   - {id: practice.community-org, text: A neighborhood or community organization, kind: organization, collective: true}
@@ -283,7 +285,7 @@ practice:
   - {id: practice.mutual-aid, text: Take part in mutual aid, kind: action, collective: true, side: labor}
   - {id: practice.strike, text: Have gone on strike, kind: action, collective: true, side: labor}
   - {id: practice.protest, text: Go to protests and demonstrations, kind: action, collective: true}
-  - {id: practice.direct-action, text: Take part in occupations, blockades or other direct action, kind: action, collective: true}
+  - {id: practice.direct-action, text: "Take part in occupations, blockades or other direct action", kind: action, collective: true}
   - {id: practice.boycott-campaign, text: Take part in organized boycott and divestment campaigns aimed at firms or states abroad, kind: action, collective: true, drain: reduces}
   - {id: practice.study-group, text: Belong to a reading or study group, kind: action, collective: true}
   - {id: practice.donate, text: Donate to causes, kind: individual, collective: false}

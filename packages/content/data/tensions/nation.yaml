@@ -200,6 +200,8 @@ tensions:
       all:
         - {holdsAny: [settler.colonialism.all-nations-conquest, settler.colonialism.just-settlement]}
         - {holdsAny: [cs.decline.outsiders, borders.migration.restrict-national, borders.migration.remigration]}
+        # the prompt speaks of a settler country; it does not apply to someone indigenous to the land
+        - {not: {situation: {field: settler, in: [indigenous]}}}
     prompt: >
       You say your country was founded by settlers who arrived and built something, and that
       the past is the past. You also say today's newcomers are changing the country for the

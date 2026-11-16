@@ -45,6 +45,17 @@ function load<T>(file: string, schema: z.ZodType<T, z.ZodTypeDef, unknown>, erro
     errors.push(`${rel(file)}: YAML parse error: ${(e as Error).message.split('\n')[0]}`);
     return null;
   }
+  // an unquoted comma inside a flow mapping ({id: x, text: A, B}) ends the value and turns the rest into a
+  // key with no value, which the schema silently drops: the respondent sees a truncated label
+  const stray = (o: unknown, path: string): void => {
+    if (Array.isArray(o)) return o.forEach((x, i) => stray(x, `${path}.${i}`));
+    if (o && typeof o === 'object')
+      for (const [k, v] of Object.entries(o as Record<string, unknown>)) {
+        if (v === null && !['died', 'born', 'parent'].includes(k)) errors.push(`${rel(file)}: ${path}: "${k}" has no value; quote the value before it if it contains a comma`);
+        stray(v, `${path}.${k}`);
+      }
+  };
+  stray(raw, '');
   const r = schema.safeParse(raw);
   if (!r.success) {
     for (const issue of r.error.issues.slice(0, 25)) {

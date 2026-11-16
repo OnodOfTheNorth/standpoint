@@ -114,9 +114,21 @@ export function location(s: State): Location {
     cands.push(periphery ? 'peripheral-workers' : 'core-workers');
     basis.push(`wage work${world ? ` in a ${world} country` : ''}`);
   }
-  if (income.includes('transfers') || arr(sit.employment)[0] === 'unemployed' || arr(sit.employment)[0] === 'precarious') {
+  // a pension from past work is a deferred wage or salary: the pensioner keeps the class of the work it came
+  // from. Before the Situation form split pensions from benefits, "transfers" + retired meant a pension.
+  const retired = arr(sit.employment)[0] === 'retired';
+  if (income.includes('pension') || (income.includes('transfers') && retired)) {
+    if (authority === 'manages' || authority === 'employs-many' || authority === 'supervises' || sector === 'professional' || sector === 'public-professional' || sector === 'tech') {
+      cands.push('professional-managerial');
+      basis.push('a pension from past professional or managerial work');
+    } else {
+      cands.push(periphery ? 'peripheral-workers' : 'core-workers');
+      basis.push('a pension from past wage work');
+    }
+  }
+  if ((income.includes('transfers') && !retired) || arr(sit.employment)[0] === 'unemployed' || arr(sit.employment)[0] === 'precarious') {
     cands.push('reserve-army');
-    basis.push('unemployment, precarious work or dependence on transfers');
+    basis.push('unemployment, precarious work or dependence on benefits');
   }
   if (income.includes('care') && !cands.length) {
     cands.push(periphery ? 'peripheral-workers' : 'core-workers');
